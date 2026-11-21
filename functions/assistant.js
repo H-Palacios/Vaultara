@@ -158,6 +158,9 @@ const LIFE_EVENTS = [
   "lostWallet",
 ];
 const KEPT_IN = ["wallet", "bag", "car", "phoneCase", "home", "travelPouch"];
+// Answers a plan can start with, after a colon: car buy or sell, job start or
+// leave, lostWallet lost or stolen.
+const LIFE_VARIANTS = ["buy", "sell", "start", "leave", "lost", "stolen"];
 const SCREENS_V7 = [...SCREENS, "life_events", "life_event"];
 
 // Tutorials the app can play. Only clients on protocol 8 can open them.
@@ -203,6 +206,7 @@ const RECORD_FIELDS = [
   "leadDays",
   "issuedIn",
   "provider",
+  "lostLine",
 ];
 
 const RECORD_FIELD_NAMES = [
@@ -218,6 +222,7 @@ const RECORD_FIELD_NAMES = [
   "person",
   "locked",
   "in_wallet",
+  "lost_card_number",
 ];
 
 const DATE_PATTERN = /^(\d{4})-(\d{2})-(\d{2})$/;
@@ -262,6 +267,10 @@ const RECORD_FIELD_PROPERTIES = {
   person: { type: "string", description: "Who the record belongs to: \"me\" or a name from list_people." },
   locked: { type: "boolean", description: "Lock the record so the phone's fingerprint, face or screen lock is needed to see it." },
   in_wallet: { type: "boolean", description: "The card or document is kept in the user's wallet (used by Lost my wallet)." },
+  lost_card_number: {
+    type: "string",
+    description: "The phone number to call to block this card when it is lost or stolen, as the user or their bank gives it (digits, spaces, + and brackets). Empty clears it. Lost my wallet shows a call button with it.",
+  },
 };
 
 const READ_TOOLS = [
@@ -720,6 +729,15 @@ const TOOLS_V12 = [
   SUGGEST_REPLIES,
 ];
 const NAMES_V12 = new Set(TOOLS_V12.map((t) => t.name));
+// Protocol 13: Ask Vaultara reads and changes life plans and Lost my wallet.
+const LIFE = require("./assistant-life")({ admin, str, toMillis, logger, LOCKED_LABEL });
+const LIFE_EVENT_KEY_V13 = /^[a-zA-Z]+(:[a-zA-Z]+)?$/;
+const TOOLS_V13 = [
+  ...TOOLS_V12.filter((t) => t.name !== "suggest_replies"),
+  ...LIFE.TOOLS,
+  SUGGEST_REPLIES,
+];
+const NAMES_V13 = new Set(TOOLS_V13.map((t) => t.name));
 let webSearchOff = false;
 
 // Sent when a turn ended with no words and no card.
@@ -1017,10 +1035,15 @@ class UserData {
         if (data.finishedAt) continue;
         if (!LIFE_EVENTS.includes(data.event)) continue;
         const date = toMillis(data.date);
+        const summary = data.summary && typeof data.summary === "object" ? data.summary : null;
         plans.push({
           event: data.event,
           date: date === null ? null : isoDay(dayNumber(date, this.offset)),
           country: typeof data.country === "string" && COUNTRY_PATTERN.test(data.country) ? data.country : null,
+          variant: typeof data.variant === "string" ? data.variant : null,
+          done: Number.isInteger(summary?.done) ? summary.done : null,
+          total: Number.isInteger(summary?.total) ? summary.total : null,
+          next: str(summary?.next, 160) || null,
         });
       }
       return plans.slice(0, 10);
@@ -1134,6 +1157,7 @@ class UserData {
       issuedIn: countryCode(data.issuedIn),
       // A locked record keeps who it is with private, like its name.
       provider: data.locked === true ? null : str(data.provider, 60) || null,
+      lostLine: str(data.lostLine, 40) || null,
     };
   }
 
@@ -1171,6 +1195,7 @@ class UserData {
       out.repeats_every_months = record.repeatMonths;
       out.in_wallet = record.inWallet;
       out.kept_in = record.keptIn;
+      if (record.lostLine) out.lost_card_number = record.lostLine;
       if (!record.locked) {
         out.reminder_days_before = record.reminderDays;
         out.renewal_takes_days = record.leadDays;
@@ -1389,6 +1414,14 @@ async function parseRecordFields(ctx, input, { record = null, creating = false }
     out.inWallet = input.in_wallet;
   }
 
+  if (has(input, "lost_card_number")) {
+    if (!ctx.v13) return { error: "This version of the app cannot save a lost card number from chat yet. Tell the user to update Vaultara, or to add it in the record." };
+    const raw = typeof input.lost_card_number === "string" ? input.lost_card_number : "";
+    const line = raw.replace(/[^0-9+()\s-]/g, "").replace(/\s+/g, " ").trim().slice(0, 40);
+    if (raw.trim() && (line.replace(/\D/g, "").length < 3)) return { error: "lost_card_number must be a phone number." };
+    out.lostLine = line || null;
+  }
+
   return { fields: out };
 }
 
@@ -1414,6 +1447,7 @@ function dropUnchanged(record, fields) {
   same("repeatMonths", record.repeatMonths);
   same("locked", record.locked);
   same("inWallet", record.inWallet);
+  same("lostLine", record.lostLine || null);
   if (!record.locked && has(out, "personId") && out.personId === record.holderId) {
     delete out.personId;
     delete out.person;
@@ -1988,9 +2022,13 @@ async function openScreen(ctx, input, actions) {
     if (!TUTORIALS.includes(tutorial)) return { error: `Give the tutorial key as id: ${TUTORIALS.join(", ")}.` };
     action.id = tutorial;
   } else if (screen === "life_event") {
-    const event = str(input?.id);
-    if (!LIFE_EVENTS.includes(event)) return { error: `Give the life event key as id: ${LIFE_EVENTS.join(", ")}.` };
-    action.id = event;
+    const raw = str(input?.id);
+    const [event, variant] = ctx.v13 && LIFE_EVENT_KEY_V13.test(raw) ? raw.split(":") : [raw, null];
+    if (!LIFE_EVENTS.includes(event) || (ctx.v13 && event === "lostPhone")) {
+      return { error: `Give the life event key as id: ${LIFE_EVENTS.filter((e) => e !== "lostPhone").join(", ")}.` };
+    }
+    if (variant && !LIFE_VARIANTS.includes(variant)) return { error: `The answer after the colon must be one of: ${LIFE_VARIANTS.join(", ")}.` };
+    action.id = variant ? `${event}:${variant}` : event;
   } else if (screen === "record") {
     const record = await ctx.findRecord(input?.id);
     if (!record) return { error: "Give the record id from list_records." };
@@ -2087,7 +2125,9 @@ async function runTool(ctx, name, input, actions, allowed) {
         const handled = ctx.v10 ? await V10.run(ctx, name, input, actions) : undefined;
         if (handled !== undefined) return handled;
         const coached = ctx.v12 ? await COACH.run(ctx, name, input, actions) : undefined;
-        return coached === undefined ? { error: "Unknown tool." } : coached;
+        if (coached !== undefined) return coached;
+        const life = ctx.v13 ? await LIFE.run(ctx, name, input) : undefined;
+        return life === undefined ? { error: "Unknown tool." } : life;
       }
     }
   } catch (err) {
@@ -2158,7 +2198,9 @@ function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = f
   }
   if (v7) {
     lines.push(
-      "Life events: when the user says something big is happening or happened (moving house, buying or selling a home, a new name, getting married or divorced, a baby, buying or selling a car, a new job or leaving one, starting studies, retiring, moving to another country, a child turning 16 or 18, looking after a parent, a death in the family, a lost or stolen phone, a lost or stolen wallet or purse, losing a job, or a fire, flood or break-in at home), say in one or two sentences what usually needs updating and call open_screen with screen life_event and the event key, so they can start a plan. Vaultara then lists their own records to update, what may be missing, and reminds them around the date. The plans in progress are in the dynamic facts; do not start a second plan for the same event, open it instead. For a death in the family or a lost job, be brief and kind. For a lost or stolen phone, tell them to block the SIM card and banking first. For a lost or stolen wallet (key lostWallet), tell them to block their bank cards first; Vaultara shows a call button for each card that has its lost card number saved, keeps the police case number, and reminds them to check their statements after 30, 60 and 90 days. kept_in on a record says where the user keeps it (wallet, bag, car, phoneCase, home or travelPouch)."
+      ctx.v13
+        ? "Life events: when the user says something big is happening or happened (moving house, selling a home, a new name, getting married or divorced, a baby, buying or selling a car, a new job, leaving or losing a job, starting studies, retiring, moving to another country, a child turning 16 or 18, looking after a parent, a death in the family, a lost or stolen wallet or purse, or a fire, flood or break-in at home), say in one or two sentences what usually needs updating and call open_screen with screen life_event and the event key, so they can start a plan. Buying a home is the key homeBuy and losing a job is jobLoss; in the app they are answers under Moving and Job. When you already know the answer, add it after a colon: lostWallet:stolen or lostWallet:lost, job:start or job:leave, car:buy or car:sell. There is no plan for a lost phone any more: tell them to block the SIM card with their network and their banking apps with the bank first. Plans in progress are in the dynamic facts with their progress and next step; do not start a second plan for the same event, open it instead. For what is left, what to do next or anything about a plan, call get_life_plan and answer from it, naming the records and steps. When the user says they did something in a plan (blocked a card, got a case number, replaced a document, did a step, found the wallet), save it with update_life_plan and say in a few words what you changed. For a death in the family or a lost job, be brief and kind. Lost my wallet (key lostWallet): tell them to block their bank cards first; each card with a lost card number saved has a call button, and Vaultara notes when it was called. When the user gives a card's lost card number, save it with propose_update_record and lost_card_number. Vaultara keeps the police case number and reminds them to check their statements after 30, 60 and 90 days. kept_in on a record says where the user keeps it (wallet, bag, car, phoneCase, home or travelPouch)."
+        : "Life events: when the user says something big is happening or happened (moving house, buying or selling a home, a new name, getting married or divorced, a baby, buying or selling a car, a new job or leaving one, starting studies, retiring, moving to another country, a child turning 16 or 18, looking after a parent, a death in the family, a lost or stolen phone, a lost or stolen wallet or purse, losing a job, or a fire, flood or break-in at home), say in one or two sentences what usually needs updating and call open_screen with screen life_event and the event key, so they can start a plan. Vaultara then lists their own records to update, what may be missing, and reminds them around the date. The plans in progress are in the dynamic facts; do not start a second plan for the same event, open it instead. For a death in the family or a lost job, be brief and kind. For a lost or stolen phone, tell them to block the SIM card and banking first. For a lost or stolen wallet (key lostWallet), tell them to block their bank cards first; Vaultara shows a call button for each card that has its lost card number saved, keeps the police case number, and reminds them to check their statements after 30, 60 and 90 days. kept_in on a record says where the user keeps it (wallet, bag, car, phoneCase, home or travelPouch)."
     );
   }
   if (v10) {
@@ -2208,9 +2250,11 @@ function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false,
   }
   if (v7) {
     const plans = (ctx.lifePlanList || []).map((p) => {
-      const parts = [p.event];
+      const parts = [p.variant ? `${p.event} (${p.variant})` : p.event];
       if (p.date) parts.push(`on ${p.date}`);
       if (p.country) parts.push(`to ${p.country}`);
+      if (ctx.v13 && p.total !== null) parts.push(`${p.done} of ${p.total} done`);
+      if (ctx.v13 && p.next) parts.push(`next: ${p.next}`);
       return parts.join(" ");
     });
     dynamic.push(
@@ -2336,7 +2380,9 @@ async function stepFor(ctx, name, input) {
       const step = ctx.v10 ? await V10.step(ctx, name, input) : undefined;
       if (step !== undefined && step !== null) return step;
       const coached = ctx.v12 ? await COACH.step(ctx, name, input) : undefined;
-      return coached === undefined ? step ?? null : coached;
+      if (coached !== undefined) return coached;
+      const life = ctx.v13 ? await LIFE.step(ctx, name) : undefined;
+      return life === undefined ? step ?? null : life;
     }
   }
 }
@@ -2560,6 +2606,7 @@ exports.askVaultara = onCall(
     const v6 = version >= 6 && intent === "chat";
     const v11 = version >= 11 && intent === "chat";
     const v12 = version >= 12 && intent === "chat";
+    const v13 = version >= 13 && intent === "chat";
     const v7 = version >= 7 && intent === "chat";
     const v8 = version >= 8 && intent === "chat";
     const v9 = version >= 9;
@@ -2601,15 +2648,16 @@ exports.askVaultara = onCall(
     ctx.v10 = v10;
     ctx.v11 = v11;
     ctx.v12 = v12;
+    ctx.v13 = v13;
     ctx.talk = v12 && request.data?.mode === "talk";
     ctx.webSearch = v12 && !webSearchOff && process.env.ASSISTANT_WEB_SEARCH !== "off";
     ctx.learned = v11 ? await ctx.learnedWords() : [];
     ctx.lifePlanList = v7 ? await ctx.activeLifePlans() : [];
     const system = systemPrompt(ctx, lang, intent, v2, v3, v4, v5, v6, v7, v10);
-    const baseTools = v12 ? TOOLS_V12 : v11 ? TOOLS_V11 : v10 ? TOOLS_V10 : v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
+    const baseTools = v13 ? TOOLS_V13 : v12 ? TOOLS_V12 : v11 ? TOOLS_V11 : v10 ? TOOLS_V10 : v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
     const groupTools = v9 ? withGroupsV9(baseTools) : baseTools;
     const tools = ctx.webSearch ? [...groupTools, COACH_MODULE.WEB_SEARCH_TOOL] : groupTools;
-    const allowed = v12 ? NAMES_V12 : v11 ? NAMES_V11 : v10 ? NAMES_V10 : v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
+    const allowed = v13 ? NAMES_V13 : v12 ? NAMES_V12 : v11 ? NAMES_V11 : v10 ? NAMES_V10 : v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
     const progress = new RunProgress(uid, v3 ? runId : null);
     let replies = [];
     const conversation = messages.map((m) => ({ role: m.role, content: m.content }));

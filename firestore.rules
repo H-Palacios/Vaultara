@@ -220,12 +220,14 @@ service cloud.firestore {
         && d.updatedAt == request.time;
     }
 
+    // A life plan. summary is what Ask Vaultara reads about the plan,
+    // written by the app; calls are when each card's bank was called.
     function validLifePlan() {
       let d = request.resource.data;
       return d.keys().hasOnly(['event', 'date', 'people', 'country', 'createdAt',
                                'finishedAt', 'statuses', 'start', 'skipped', 'updatedAt',
                                'variant', 'tasksDone', 'custom', 'caseNumber',
-                               'places', 'foundAt'])
+                               'places', 'foundAt', 'calls', 'summary'])
         && d.event in ['moving', 'homeBuy', 'homeSell', 'nameChange', 'marriage',
                        'divorce', 'baby', 'car', 'job', 'studies', 'retiring',
                        'country', 'childAdult', 'bereavement', 'lostPhone',
@@ -236,6 +238,10 @@ service cloud.firestore {
         && (!('caseNumber' in d) || (d.caseNumber is string && d.caseNumber.size() <= 40))
         && (!('places' in d) || (d.places is list && d.places.size() <= 6))
         && (!('foundAt' in d) || d.foundAt == null || d.foundAt is timestamp)
+        && (!('calls' in d) || (d.calls is map && d.calls.size() <= 80))
+        && (!('summary' in d) || (d.summary is map && d.summary.size() <= 6
+            && (!('records' in d.summary) || (d.summary.records is list && d.summary.records.size() <= 80))
+            && (!('steps' in d.summary) || (d.summary.steps is list && d.summary.steps.size() <= 60))))
         && (!('custom' in d) || (d.custom is list && d.custom.size() <= 20))
         && (!('date' in d) || d.date == null || d.date is timestamp)
         && d.people is list && d.people.size() > 0 && d.people.size() <= 26
@@ -681,7 +687,7 @@ service cloud.firestore {
       match /lifePlans/{planId} {
         allow read: if isOwner(uid);
         allow delete: if isOwner(uid);
-        allow create, update: if isOwner(uid) && smallDoc(16) && validLifePlan();
+        allow create, update: if isOwner(uid) && smallDoc(18) && validLifePlan();
       }
 
       match /items/{itemId} {
