@@ -7110,6 +7110,44 @@ class AppLocalizationsMn extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Өөрийн алхам нэмэх';
 
   @override
+  String get lifePlanWhoToTell => 'Хэнд мэдэгдэх вэ';
+
+  @override
+  String get lifePlanTellHeading => 'Мэдэгдэх байгууллагууд:';
+
+  @override
+  String get lifePlanTellAddress => 'Сайн байна уу, би нүүсэн. Миний дансны хаягийг үүгээр шинэчилнэ үү: [шинэ хаяг]. Баярлалаа.';
+
+  @override
+  String get lifePlanTellName => 'Сайн байна уу, миний нэр өөрчлөгдсөн. Миний дансны нэрийг үүгээр шинэчилнэ үү: [шинэ нэр]. Шаардлагатай бол нотлох баримт илгээж болно. Баярлалаа.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Өмнөх удаагийн өөрийн алхмуудыг нэмэх ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Таны ажилд юу болж байна вэ?';
+
+  @override
+  String get lifeVariantJobLost => 'Би ажлаа алдсан';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Түрээслэх үү, худалдаж авах уу?';
+
+  @override
+  String get lifeVariantMoveRent => 'Түрээс эсвэл бусад';
+
+  @override
+  String get lifeVariantMoveBuy => 'Байр худалдаж авах';
+
+  @override
+  String get assistantStepLifePlan => 'Таны төлөвлөгөөг шалгаж байна';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Таны төлөвлөгөөг шинэчилж байна';
+
+  @override
   String get lifePlanOwnStepHint => 'Жишээ нь: Сургуульд мэдэгдэх';
 
   @override
@@ -7120,9 +7158,6 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Уншихыг зогсоох';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Энэ утсанд чангаар унших боломжгүй.';
 
   @override
   String get lifePlanProofPack => 'Нотлох багц үүсгэх';
@@ -7420,6 +7455,57 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Хэргийн дугаар хуулагдлаа';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Залгасан $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return '$name-г хаах дугаар';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Банк бүрийн албан ёсны сайтаас. Картан дээрх дугаар өөр бол түүнийг ашигла.';
+
+  @override
+  String get lostWalletBankNotListed => 'Миний банк жагсаалтад алга';
+
+  @override
+  String get lostWalletNumberSaved => 'Хаах дугаар хадгалагдлаа';
+
+  @override
+  String get lostWalletPickCard => 'Карт бүрт дугаар нэм';
+
+  @override
+  String get lostWalletSheetButton => 'Яаралтай хуудас';
+
+  @override
+  String get lostWalletSheetHint => 'Бүх картын хаах дугаар нэг хуудсанд, хэвлэх эсвэл хэтэвчнээс тусад нь хадгалах.';
+
+  @override
+  String get lostWalletSheetTitle => 'Картын яаралтай хуудас';
+
+  @override
+  String get lostWalletSheetIntro => 'Үүнийг хэтэвч, утаснаас тусад нь хадгал. Алдвал картаа хаахын тулд эдгээр дугаар руу залга.';
+
+  @override
+  String get lostWalletSheetCard => 'Карт';
+
+  @override
+  String get lostWalletSheetWhose => 'Хэний';
+
+  @override
+  String get lostWalletSheetEnds => 'Төгсгөл';
+
+  @override
+  String get lostWalletSheetCall => 'Залгах дугаар';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Үүсгэсэн $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Хэргийн дугаар хадгалагдсан';

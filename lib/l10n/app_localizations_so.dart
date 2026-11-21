@@ -7119,6 +7119,44 @@ class AppLocalizationsSo extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Ku dar tallaabadaada';
 
   @override
+  String get lifePlanWhoToTell => 'Yaa la ogeysiinayaa';
+
+  @override
+  String get lifePlanTellHeading => 'Hay\'adaha la ogeysiinayo:';
+
+  @override
+  String get lifePlanTellAddress => 'Salaan, waan guuray. Fadlan cinwaanka akoonkayga u beddela: [cinwaan cusub]. Mahadsanid.';
+
+  @override
+  String get lifePlanTellName => 'Salaan, magacaygii waa is beddelay. Fadlan magaca akoonkayga u beddela: [magac cusub]. Waan soo diri karaa caddayn haddii loo baahdo. Mahadsanid.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Ku dar tallaabooyinkaygii markii hore ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Maxaa ka dhacaya shaqadaada?';
+
+  @override
+  String get lifeVariantJobLost => 'Shaqadaydii waan waayay';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Ma kiraysanaysaa mise waad iibsanaysaa?';
+
+  @override
+  String get lifeVariantMoveRent => 'Kiro ama wax kale';
+
+  @override
+  String get lifeVariantMoveBuy => 'Iibsashada guri';
+
+  @override
+  String get assistantStepLifePlan => 'Qorshahaaga waa la hubinayaa';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Qorshahaaga waa la cusboonaysiinayaa';
+
+  @override
   String get lifePlanOwnStepHint => 'Tusaale: U sheeg dugsiga';
 
   @override
@@ -7129,9 +7167,6 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Jooji akhriska';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Kor u akhrintu kuma jirto taleefankan.';
 
   @override
   String get lifePlanProofPack => 'Samee xirmada caddaynta';
@@ -7429,6 +7464,57 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Lambarka kiiska waa la koobiyeeyay';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'La wacay $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Lambarka lagu xannibo $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Laga soo qaaday bogga bangi kasta. Haddii lambarka kaarkaagu ka duwan yahay, isticmaal kaas.';
+
+  @override
+  String get lostWalletBankNotListed => 'Bangigaygu kuma jiro liiska';
+
+  @override
+  String get lostWalletNumberSaved => 'Lambarka xannibaadda waa la keydiyay';
+
+  @override
+  String get lostWalletPickCard => 'Ku dar lambar kaar kasta';
+
+  @override
+  String get lostWalletSheetButton => 'Warqadda degdegga';
+
+  @override
+  String get lostWalletSheetHint => 'Lambarka xannibaadda kaar kasta hal bog, si loo daabaco ama looga fogeeyo boorsada.';
+
+  @override
+  String get lostWalletSheetTitle => 'Warqadda kaararka degdegga';
+
+  @override
+  String get lostWalletSheetIntro => 'Ka fogee boorsada iyo taleefanka. Haddii ay lumaan, wac lambarradan si aad u xannibto kaararkaaga.';
+
+  @override
+  String get lostWalletSheetCard => 'Kaar';
+
+  @override
+  String get lostWalletSheetWhose => 'Kuma leh';
+
+  @override
+  String get lostWalletSheetEnds => 'Ku dhammaada';
+
+  @override
+  String get lostWalletSheetCall => 'Lambarka la wacayo';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'La sameeyay $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Lambarka kiiska waa la kaydiyay';

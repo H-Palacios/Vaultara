@@ -7120,6 +7120,44 @@ class AppLocalizationsHa extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Ƙara matakinka';
 
   @override
+  String get lifePlanWhoToTell => 'Wa za a sanar';
+
+  @override
+  String get lifePlanTellHeading => 'Ƙungiyoyin da za a sanar:';
+
+  @override
+  String get lifePlanTellAddress => 'Sannu, na koma wani wuri. Don Allah ku sabunta adireshin asusuna zuwa: [sabon adireshi]. Na gode.';
+
+  @override
+  String get lifePlanTellName => 'Sannu, sunana ya canja. Don Allah ku sabunta sunan asusuna zuwa: [sabon suna]. Zan iya aika shaida idan ana buƙata. Na gode.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Ƙara matakaina na baya ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Me ke faruwa da aikinka?';
+
+  @override
+  String get lifeVariantJobLost => 'Na rasa aikina';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Haya kake yi ko saye?';
+
+  @override
+  String get lifeVariantMoveRent => 'Haya ko wani abu';
+
+  @override
+  String get lifeVariantMoveBuy => 'Sayen gida';
+
+  @override
+  String get assistantStepLifePlan => 'Ana duba shirinka';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Ana sabunta shirinka';
+
+  @override
   String get lifePlanOwnStepHint => 'Misali: Sanar da makaranta';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Dakatar da karatu';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Karatu da ƙarfi ba ya samuwa a wannan wayar.';
 
   @override
   String get lifePlanProofPack => 'Ƙirƙiri fakitin shaida';
@@ -7430,6 +7465,57 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'An kwafi lambar shari\'a';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'An kira $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Lambar toshe $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Daga gidan yanar gizon kowane banki. Idan lambar da ke kan katinka ta bambanta, yi amfani da ita.';
+
+  @override
+  String get lostWalletBankNotListed => 'Bankina ba ya cikin jerin';
+
+  @override
+  String get lostWalletNumberSaved => 'An adana lambar toshewa';
+
+  @override
+  String get lostWalletPickCard => 'Ƙara lamba ga kowane kati';
+
+  @override
+  String get lostWalletSheetButton => 'Takardar gaggawa';
+
+  @override
+  String get lostWalletSheetHint => 'Lambar toshe kowane kati a shafi ɗaya, don bugawa ko ajiyewa nesa da jakar kuɗinka.';
+
+  @override
+  String get lostWalletSheetTitle => 'Takardar katunan gaggawa';
+
+  @override
+  String get lostWalletSheetIntro => 'Ajiye ta nesa da jakar kuɗi da wayarka. Idan sun ɓace, kira waɗannan lambobin don toshe katunanka.';
+
+  @override
+  String get lostWalletSheetCard => 'Kati';
+
+  @override
+  String get lostWalletSheetWhose => 'Na wa';
+
+  @override
+  String get lostWalletSheetEnds => 'Ya ƙare da';
+
+  @override
+  String get lostWalletSheetCall => 'Lambar da za a kira';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'An yi a $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'An ajiye lambar ƙara';

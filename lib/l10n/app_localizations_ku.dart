@@ -7120,6 +7120,44 @@ class AppLocalizationsKu extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Gava xwe zêde bike';
 
   @override
+  String get lifePlanWhoToTell => 'Divê ji kê re were gotin';
+
+  @override
+  String get lifePlanTellHeading => 'Rêxistinên ku divê were agahdarkirin:';
+
+  @override
+  String get lifePlanTellAddress => 'Silav, min mal bar kir. Ji kerema xwe navnîşana hesabê min bikin: [navnîşana nû]. Spas.';
+
+  @override
+  String get lifePlanTellName => 'Silav, navê min guherî. Ji kerema xwe navê hesabê min bikin: [navê nû]. Ger hewce be ez dikarim belgeyê bişînim. Spas.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Gavên min ên cara borî zêde bike ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Di karê te de çi diqewime?';
+
+  @override
+  String get lifeVariantJobLost => 'Min karê xwe winda kir';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Tu kirê dikî an dikirî?';
+
+  @override
+  String get lifeVariantMoveRent => 'Kirê an tiştekî din';
+
+  @override
+  String get lifeVariantMoveBuy => 'Kirîna malê';
+
+  @override
+  String get assistantStepLifePlan => 'Plana te tê kontrolkirin';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Plana te tê nûkirin';
+
+  @override
   String get lifePlanOwnStepHint => 'Mînak: Dibistanê agahdar bike';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Xwendinê rawestîne';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Xwendina bi deng li ser vê telefonê tune ye.';
 
   @override
   String get lifePlanProofPack => 'Pakêta delîlan çêke';
@@ -7430,6 +7465,57 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Hejmara dosyayê hat kopîkirin';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Hate gazîkirin $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Hejmara astengkirina $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Ji malpera her bankê. Ger hejmara li ser karta te cuda be, wê bikar bîne.';
+
+  @override
+  String get lostWalletBankNotListed => 'Banka min ne di lîsteyê de ye';
+
+  @override
+  String get lostWalletNumberSaved => 'Hejmara astengkirinê hat tomarkirin';
+
+  @override
+  String get lostWalletPickCard => 'Ji bo her kartê hejmarekê zêde bike';
+
+  @override
+  String get lostWalletSheetButton => 'Rûpela acîl';
+
+  @override
+  String get lostWalletSheetHint => 'Hejmara astengkirina her kartê di rûpelekê de, ji bo çapkirin an dûrî cizdanê hilanînê.';
+
+  @override
+  String get lostWalletSheetTitle => 'Rûpela kartên acîl';
+
+  @override
+  String get lostWalletSheetIntro => 'Wê dûrî cizdan û telefona xwe biparêze. Ger winda bibin, ji bo astengkirina kartan li van hejmaran bigere.';
+
+  @override
+  String get lostWalletSheetCard => 'Kart';
+
+  @override
+  String get lostWalletSheetWhose => 'Yê kê';
+
+  @override
+  String get lostWalletSheetEnds => 'Bi dawî dibe';
+
+  @override
+  String get lostWalletSheetCall => 'Hejmara gazîkirinê';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Hate çêkirin $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Hejmara dosyayê hate tomarkirin';

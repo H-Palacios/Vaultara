@@ -7257,6 +7257,44 @@ class AppLocalizationsLt extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Pridėti savo žingsnį';
 
   @override
+  String get lifePlanWhoToTell => 'Kam pranešti';
+
+  @override
+  String get lifePlanTellHeading => 'Organizacijos, kurioms reikia pranešti:';
+
+  @override
+  String get lifePlanTellAddress => 'Laba diena, persikrausčiau. Prašau pakeisti adresą mano paskyroje į: [naujas adresas]. Ačiū.';
+
+  @override
+  String get lifePlanTellName => 'Laba diena, mano vardas pasikeitė. Prašau pakeisti vardą mano paskyroje į: [naujas vardas]. Jei reikia, galiu atsiųsti įrodymą. Ačiū.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Pridėti mano žingsnius iš praėjusio karto ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Kas vyksta su jūsų darbu?';
+
+  @override
+  String get lifeVariantJobLost => 'Netekau darbo';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Nuomojatės ar perkate?';
+
+  @override
+  String get lifeVariantMoveRent => 'Nuoma ar kita';
+
+  @override
+  String get lifeVariantMoveBuy => 'Perku būstą';
+
+  @override
+  String get assistantStepLifePlan => 'Tikrinamas jūsų planas';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Atnaujinamas jūsų planas';
+
+  @override
   String get lifePlanOwnStepHint => 'Pavyzdžiui: Pranešti mokyklai';
 
   @override
@@ -7267,9 +7305,6 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Sustabdyti skaitymą';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Šiame telefone skaitymas garsiai nepasiekiamas.';
 
   @override
   String get lifePlanProofPack => 'Sukurti įrodymų paketą';
@@ -7569,6 +7604,57 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Bylos numeris nukopijuotas';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Skambinta $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Numeris kortelei $name užblokuoti';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Iš kiekvieno banko svetainės. Jei kortelėje kitas numeris, naudokite jį.';
+
+  @override
+  String get lostWalletBankNotListed => 'Mano banko sąraše nėra';
+
+  @override
+  String get lostWalletNumberSaved => 'Blokavimo numeris išsaugotas';
+
+  @override
+  String get lostWalletPickCard => 'Pridėkite numerį kiekvienai kortelei';
+
+  @override
+  String get lostWalletSheetButton => 'Skubios pagalbos lapas';
+
+  @override
+  String get lostWalletSheetHint => 'Kiekvienos kortelės blokavimo numeris viename puslapyje – atsispausdinti ar laikyti atskirai nuo piniginės.';
+
+  @override
+  String get lostWalletSheetTitle => 'Kortelių skubios pagalbos lapas';
+
+  @override
+  String get lostWalletSheetIntro => 'Laikykite jį atskirai nuo piniginės ir telefono. Jei jie dingtų, skambinkite šiais numeriais kortelėms užblokuoti.';
+
+  @override
+  String get lostWalletSheetCard => 'Kortelė';
+
+  @override
+  String get lostWalletSheetWhose => 'Kieno';
+
+  @override
+  String get lostWalletSheetEnds => 'Baigiasi';
+
+  @override
+  String get lostWalletSheetCall => 'Numeris skambinti';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Sukurta $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Bylos numeris išsaugotas';

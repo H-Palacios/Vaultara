@@ -8556,6 +8556,59 @@
   "@lifePlanAddOwnStep": {
     "description": "Button and dialog title to add a step to a life event plan."
   },
+  "lifePlanWhoToTell": "Who to tell",
+  "@lifePlanWhoToTell": {
+    "description": "Plan menu (moving, a new name): shares the organisations to tell and a message."
+  },
+  "lifePlanTellHeading": "Organisations to tell:",
+  "@lifePlanTellHeading": {
+    "description": "First line of the shared Who to tell text."
+  },
+  "lifePlanTellAddress": "Hello, I have moved. Please update the address on my account to: [new address]. Thank you.",
+  "@lifePlanTellAddress": {
+    "description": "Message to send organisations after moving. Keep the square brackets."
+  },
+  "lifePlanTellName": "Hello, my name has changed. Please update the name on my account to: [new name]. I can send proof if you need it. Thank you.",
+  "@lifePlanTellName": {
+    "description": "Message to send organisations after a name change. Keep the square brackets."
+  },
+  "lifePlanReuseSteps": "Add my own steps from last time ({count})",
+  "@lifePlanReuseSteps": {
+    "description": "Start sheet: copies the own steps of the last finished plan for the same event.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lifeVariantJobAnyQuestion": "What is happening with your job?",
+  "@lifeVariantJobAnyQuestion": {
+    "description": "Start sheet question for the Job plan with three answers."
+  },
+  "lifeVariantJobLost": "I lost my job",
+  "@lifeVariantJobLost": {
+    "description": "Job plan answer that starts the job loss plan."
+  },
+  "lifeVariantMoveQuestion": "Are you renting or buying?",
+  "@lifeVariantMoveQuestion": {
+    "description": "Start sheet question for the Moving plan."
+  },
+  "lifeVariantMoveRent": "Renting or other",
+  "@lifeVariantMoveRent": {
+    "description": "Moving plan answer."
+  },
+  "lifeVariantMoveBuy": "Buying a home",
+  "@lifeVariantMoveBuy": {
+    "description": "Moving plan answer that starts the home buying plan."
+  },
+  "assistantStepLifePlan": "Checking your plan",
+  "@assistantStepLifePlan": {
+    "description": "Ask Vaultara progress line while it reads a life plan."
+  },
+  "assistantStepLifePlanUpdate": "Updating your plan",
+  "@assistantStepLifePlanUpdate": {
+    "description": "Ask Vaultara progress line while it changes a life plan."
+  },
   "lifePlanOwnStepHint": "For example: Tell the school",
   "@lifePlanOwnStepHint": {
     "description": "Hint in the field for a step the user adds."
@@ -8571,10 +8624,6 @@
   "lifePlanStopReading": "Stop reading",
   "@lifePlanStopReading": {
     "description": "Button that stops reading a life event plan aloud."
-  },
-  "lifePlanReadAloudUnavailable": "Reading aloud is not available on this phone.",
-  "@lifePlanReadAloudUnavailable": {
-    "description": "Shown when text to speech is not available."
   },
   "lifePlanProofPack": "Make a proof pack",
   "@lifePlanProofPack": {
@@ -8964,6 +9013,81 @@
   "lostWalletCaseCopied": "Case number copied",
   "@lostWalletCaseCopied": {
     "description": "Shown after copying the police case number."
+  },
+  "lostWalletCalledAt": "Called {time}",
+  "@lostWalletCalledAt": {
+    "description": "Lost wallet: under a card, when its bank was last called from the plan. {time} is a day and time.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletAddNumberTitle": "Number to block {name}",
+  "@lostWalletAddNumberTitle": {
+    "description": "Title of the sheet that picks the bank for a card. {name} is the card name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletAddNumberHint": "From each bank's own website. If the number on your card is different, use that one.",
+  "@lostWalletAddNumberHint": {
+    "description": "Under the title of the bank picker."
+  },
+  "lostWalletBankNotListed": "My bank is not listed",
+  "@lostWalletBankNotListed": {
+    "description": "Bank picker: opens the card to type the number."
+  },
+  "lostWalletNumberSaved": "Block number saved",
+  "@lostWalletNumberSaved": {
+    "description": "Confirmation after a bank was picked."
+  },
+  "lostWalletPickCard": "Add a number for each card",
+  "@lostWalletPickCard": {
+    "description": "Title of the list of cards without a lost card number."
+  },
+  "lostWalletSheetButton": "Emergency sheet",
+  "@lostWalletSheetButton": {
+    "description": "Wallet screen: makes a one-page PDF of block numbers."
+  },
+  "lostWalletSheetHint": "Every card's block number on one page, to print or keep away from your wallet.",
+  "@lostWalletSheetHint": {
+    "description": "Under the Emergency sheet button."
+  },
+  "lostWalletSheetTitle": "Emergency card sheet",
+  "@lostWalletSheetTitle": {
+    "description": "Title on the emergency sheet PDF."
+  },
+  "lostWalletSheetIntro": "Keep this away from your wallet and phone. If they go missing, call these numbers to block your cards.",
+  "@lostWalletSheetIntro": {
+    "description": "First line on the emergency sheet PDF."
+  },
+  "lostWalletSheetCard": "Card",
+  "@lostWalletSheetCard": {
+    "description": "Column heading on the emergency sheet."
+  },
+  "lostWalletSheetWhose": "Whose",
+  "@lostWalletSheetWhose": {
+    "description": "Column heading on the emergency sheet: who the card belongs to."
+  },
+  "lostWalletSheetEnds": "Ends in",
+  "@lostWalletSheetEnds": {
+    "description": "Column heading on the emergency sheet: last four characters of the card number."
+  },
+  "lostWalletSheetCall": "Number to call",
+  "@lostWalletSheetCall": {
+    "description": "Column heading on the emergency sheet."
+  },
+  "lostWalletSheetMade": "Made on {date}",
+  "@lostWalletSheetMade": {
+    "description": "Footer of the emergency sheet. {date} is a date.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
   },
   "lostWalletCaseSaved": "Case number saved",
   "@lostWalletCaseSaved": {

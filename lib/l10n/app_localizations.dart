@@ -12235,6 +12235,78 @@ abstract class AppLocalizations {
   /// **'Add your own step'**
   String get lifePlanAddOwnStep;
 
+  /// Plan menu (moving, a new name): shares the organisations to tell and a message.
+  ///
+  /// In en, this message translates to:
+  /// **'Who to tell'**
+  String get lifePlanWhoToTell;
+
+  /// First line of the shared Who to tell text.
+  ///
+  /// In en, this message translates to:
+  /// **'Organisations to tell:'**
+  String get lifePlanTellHeading;
+
+  /// Message to send organisations after moving. Keep the square brackets.
+  ///
+  /// In en, this message translates to:
+  /// **'Hello, I have moved. Please update the address on my account to: [new address]. Thank you.'**
+  String get lifePlanTellAddress;
+
+  /// Message to send organisations after a name change. Keep the square brackets.
+  ///
+  /// In en, this message translates to:
+  /// **'Hello, my name has changed. Please update the name on my account to: [new name]. I can send proof if you need it. Thank you.'**
+  String get lifePlanTellName;
+
+  /// Start sheet: copies the own steps of the last finished plan for the same event.
+  ///
+  /// In en, this message translates to:
+  /// **'Add my own steps from last time ({count})'**
+  String lifePlanReuseSteps(int count);
+
+  /// Start sheet question for the Job plan with three answers.
+  ///
+  /// In en, this message translates to:
+  /// **'What is happening with your job?'**
+  String get lifeVariantJobAnyQuestion;
+
+  /// Job plan answer that starts the job loss plan.
+  ///
+  /// In en, this message translates to:
+  /// **'I lost my job'**
+  String get lifeVariantJobLost;
+
+  /// Start sheet question for the Moving plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you renting or buying?'**
+  String get lifeVariantMoveQuestion;
+
+  /// Moving plan answer.
+  ///
+  /// In en, this message translates to:
+  /// **'Renting or other'**
+  String get lifeVariantMoveRent;
+
+  /// Moving plan answer that starts the home buying plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Buying a home'**
+  String get lifeVariantMoveBuy;
+
+  /// Ask Vaultara progress line while it reads a life plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Checking your plan'**
+  String get assistantStepLifePlan;
+
+  /// Ask Vaultara progress line while it changes a life plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Updating your plan'**
+  String get assistantStepLifePlanUpdate;
+
   /// Hint in the field for a step the user adds.
   ///
   /// In en, this message translates to:
@@ -12258,12 +12330,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Stop reading'**
   String get lifePlanStopReading;
-
-  /// Shown when text to speech is not available.
-  ///
-  /// In en, this message translates to:
-  /// **'Reading aloud is not available on this phone.'**
-  String get lifePlanReadAloudUnavailable;
 
   /// Opens Proof pack with the records of a life event plan ticked.
   ///
@@ -12780,6 +12846,96 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Case number copied'**
   String get lostWalletCaseCopied;
+
+  /// Lost wallet: under a card, when its bank was last called from the plan. {time} is a day and time.
+  ///
+  /// In en, this message translates to:
+  /// **'Called {time}'**
+  String lostWalletCalledAt(String time);
+
+  /// Title of the sheet that picks the bank for a card. {name} is the card name.
+  ///
+  /// In en, this message translates to:
+  /// **'Number to block {name}'**
+  String lostWalletAddNumberTitle(String name);
+
+  /// Under the title of the bank picker.
+  ///
+  /// In en, this message translates to:
+  /// **'From each bank\'s own website. If the number on your card is different, use that one.'**
+  String get lostWalletAddNumberHint;
+
+  /// Bank picker: opens the card to type the number.
+  ///
+  /// In en, this message translates to:
+  /// **'My bank is not listed'**
+  String get lostWalletBankNotListed;
+
+  /// Confirmation after a bank was picked.
+  ///
+  /// In en, this message translates to:
+  /// **'Block number saved'**
+  String get lostWalletNumberSaved;
+
+  /// Title of the list of cards without a lost card number.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a number for each card'**
+  String get lostWalletPickCard;
+
+  /// Wallet screen: makes a one-page PDF of block numbers.
+  ///
+  /// In en, this message translates to:
+  /// **'Emergency sheet'**
+  String get lostWalletSheetButton;
+
+  /// Under the Emergency sheet button.
+  ///
+  /// In en, this message translates to:
+  /// **'Every card\'s block number on one page, to print or keep away from your wallet.'**
+  String get lostWalletSheetHint;
+
+  /// Title on the emergency sheet PDF.
+  ///
+  /// In en, this message translates to:
+  /// **'Emergency card sheet'**
+  String get lostWalletSheetTitle;
+
+  /// First line on the emergency sheet PDF.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep this away from your wallet and phone. If they go missing, call these numbers to block your cards.'**
+  String get lostWalletSheetIntro;
+
+  /// Column heading on the emergency sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Card'**
+  String get lostWalletSheetCard;
+
+  /// Column heading on the emergency sheet: who the card belongs to.
+  ///
+  /// In en, this message translates to:
+  /// **'Whose'**
+  String get lostWalletSheetWhose;
+
+  /// Column heading on the emergency sheet: last four characters of the card number.
+  ///
+  /// In en, this message translates to:
+  /// **'Ends in'**
+  String get lostWalletSheetEnds;
+
+  /// Column heading on the emergency sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Number to call'**
+  String get lostWalletSheetCall;
+
+  /// Footer of the emergency sheet. {date} is a date.
+  ///
+  /// In en, this message translates to:
+  /// **'Made on {date}'**
+  String lostWalletSheetMade(String date);
 
   /// Confirmation.
   ///

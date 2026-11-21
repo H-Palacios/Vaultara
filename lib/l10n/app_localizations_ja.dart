@@ -7053,6 +7053,44 @@ class AppLocalizationsJa extends AppLocalizations {
   String get lifePlanAddOwnStep => '手順を追加';
 
   @override
+  String get lifePlanWhoToTell => '連絡する先';
+
+  @override
+  String get lifePlanTellHeading => '連絡が必要な組織：';
+
+  @override
+  String get lifePlanTellAddress => 'お世話になっております。引っ越しました。アカウントの住所を次に変更してください：［新しい住所］。よろしくお願いいたします。';
+
+  @override
+  String get lifePlanTellName => 'お世話になっております。氏名が変わりました。アカウントの氏名を次に変更してください：［新しい氏名］。必要であれば証明書をお送りします。よろしくお願いいたします。';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return '前回の自分のステップを追加（$count）';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'お仕事はどうなりますか？';
+
+  @override
+  String get lifeVariantJobLost => '仕事を失った';
+
+  @override
+  String get lifeVariantMoveQuestion => '賃貸ですか、購入ですか？';
+
+  @override
+  String get lifeVariantMoveRent => '賃貸・その他';
+
+  @override
+  String get lifeVariantMoveBuy => '家を購入';
+
+  @override
+  String get assistantStepLifePlan => 'プランを確認しています';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'プランを更新しています';
+
+  @override
   String get lifePlanOwnStepHint => '例：学校に伝える';
 
   @override
@@ -7063,9 +7101,6 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => '読み上げを停止';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'このスマホでは読み上げを利用できません。';
 
   @override
   String get lifePlanProofPack => '証明書パックを作成';
@@ -7362,6 +7397,57 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => '受理番号をコピーしました';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return '$timeに電話済み';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return '$nameの停止番号';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => '各銀行の公式サイトから。カードに別の番号が書かれていれば、そちらを使ってください。';
+
+  @override
+  String get lostWalletBankNotListed => '銀行が一覧にない';
+
+  @override
+  String get lostWalletNumberSaved => '停止番号を保存しました';
+
+  @override
+  String get lostWalletPickCard => 'カードごとに番号を追加';
+
+  @override
+  String get lostWalletSheetButton => '緊急シート';
+
+  @override
+  String get lostWalletSheetHint => 'すべてのカードの停止番号を1ページに。印刷するか、財布とは別に保管してください。';
+
+  @override
+  String get lostWalletSheetTitle => 'カード緊急シート';
+
+  @override
+  String get lostWalletSheetIntro => '財布や電話とは別の場所に保管してください。なくしたときは、これらの番号に電話してカードを停止します。';
+
+  @override
+  String get lostWalletSheetCard => 'カード';
+
+  @override
+  String get lostWalletSheetWhose => '持ち主';
+
+  @override
+  String get lostWalletSheetEnds => '末尾';
+
+  @override
+  String get lostWalletSheetCall => '電話番号';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return '$date作成';
+  }
 
   @override
   String get lostWalletCaseSaved => '受理番号を保存しました';

@@ -7070,6 +7070,44 @@ class AppLocalizationsYo extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Fi ìgbésẹ̀ tìrẹ kún un';
 
   @override
+  String get lifePlanWhoToTell => 'Àwọn tí o máa sọ fún';
+
+  @override
+  String get lifePlanTellHeading => 'Àwọn àjọ tí o máa sọ fún:';
+
+  @override
+  String get lifePlanTellAddress => 'Ẹ n lẹ, mo ti kó lọ. Ẹ jọ̀wọ́ ẹ yí àdírẹ́sì inú àkáǹtì mi padà sí: [àdírẹ́sì tuntun]. Ẹ ṣé.';
+
+  @override
+  String get lifePlanTellName => 'Ẹ n lẹ, orúkọ mi ti yí padà. Ẹ jọ̀wọ́ ẹ yí orúkọ inú àkáǹtì mi padà sí: [orúkọ tuntun]. Mo lè fi ẹ̀rí ránṣẹ́ tí ó bá pọndandan. Ẹ ṣé.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Fi àwọn ìgbésẹ̀ mi ti ìgbà tó kọjá kún un ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Kí ló ń ṣẹlẹ̀ sí iṣẹ́ rẹ?';
+
+  @override
+  String get lifeVariantJobLost => 'Mo pàdánù iṣẹ́ mi';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Ṣé o ń háyà ni tàbí o ń rà?';
+
+  @override
+  String get lifeVariantMoveRent => 'Ilé háyà tàbí òmíràn';
+
+  @override
+  String get lifeVariantMoveBuy => 'Rírà ilé';
+
+  @override
+  String get assistantStepLifePlan => 'À ń ṣàyẹ̀wò ètò rẹ';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'À ń ṣe àtúnṣe ètò rẹ';
+
+  @override
   String get lifePlanOwnStepHint => 'Fún àpẹẹrẹ: Sọ fún ilé-ìwé';
 
   @override
@@ -7080,9 +7118,6 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Dá kíkà dúró';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Kíkà sókè kò sí lórí fóònù yìí.';
 
   @override
   String get lifePlanProofPack => 'Ṣe àpò ẹ̀rí';
@@ -7380,6 +7415,57 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'A ti ṣe ẹ̀dà nọ́mbà ẹjọ́';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Ti pè $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Nọ́mbà láti dí $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Láti ojú-òpó báǹkì kọ̀ọ̀kan. Bí nọ́mbà tó wà lórí káàdì rẹ bá yàtọ̀, lo ìyẹn.';
+
+  @override
+  String get lostWalletBankNotListed => 'Báǹkì mi kò sí nínú àkójọ';
+
+  @override
+  String get lostWalletNumberSaved => 'A ti fi nọ́mbà ìdínà pamọ́';
+
+  @override
+  String get lostWalletPickCard => 'Fi nọ́mbà kún káàdì kọ̀ọ̀kan';
+
+  @override
+  String get lostWalletSheetButton => 'Ìwé pàjáwìrì';
+
+  @override
+  String get lostWalletSheetHint => 'Nọ́mbà ìdínà gbogbo káàdì ní ojú-ìwé kan, láti tẹ̀ jáde tàbí fi pamọ́ jìnnà sí àpamọ́wọ́ rẹ.';
+
+  @override
+  String get lostWalletSheetTitle => 'Ìwé káàdì pàjáwìrì';
+
+  @override
+  String get lostWalletSheetIntro => 'Fi pamọ́ jìnnà sí àpamọ́wọ́ àti fóònù rẹ. Bí wọ́n bá sọnù, pe àwọn nọ́mbà wọ̀nyí láti dí káàdì rẹ.';
+
+  @override
+  String get lostWalletSheetCard => 'Káàdì';
+
+  @override
+  String get lostWalletSheetWhose => 'Ti ta ni';
+
+  @override
+  String get lostWalletSheetEnds => 'Parí sí';
+
+  @override
+  String get lostWalletSheetCall => 'Nọ́mbà láti pè';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'A ṣe é ní $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'A ti fi nọ́mbà ẹjọ́ pamọ́';

@@ -7135,6 +7135,44 @@ class AppLocalizationsEn extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Add your own step';
 
   @override
+  String get lifePlanWhoToTell => 'Who to tell';
+
+  @override
+  String get lifePlanTellHeading => 'Organisations to tell:';
+
+  @override
+  String get lifePlanTellAddress => 'Hello, I have moved. Please update the address on my account to: [new address]. Thank you.';
+
+  @override
+  String get lifePlanTellName => 'Hello, my name has changed. Please update the name on my account to: [new name]. I can send proof if you need it. Thank you.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Add my own steps from last time ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'What is happening with your job?';
+
+  @override
+  String get lifeVariantJobLost => 'I lost my job';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Are you renting or buying?';
+
+  @override
+  String get lifeVariantMoveRent => 'Renting or other';
+
+  @override
+  String get lifeVariantMoveBuy => 'Buying a home';
+
+  @override
+  String get assistantStepLifePlan => 'Checking your plan';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Updating your plan';
+
+  @override
   String get lifePlanOwnStepHint => 'For example: Tell the school';
 
   @override
@@ -7145,9 +7183,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Stop reading';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Reading aloud is not available on this phone.';
 
   @override
   String get lifePlanProofPack => 'Make a proof pack';
@@ -7448,6 +7483,57 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Case number copied';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Called $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Number to block $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'From each bank\'s own website. If the number on your card is different, use that one.';
+
+  @override
+  String get lostWalletBankNotListed => 'My bank is not listed';
+
+  @override
+  String get lostWalletNumberSaved => 'Block number saved';
+
+  @override
+  String get lostWalletPickCard => 'Add a number for each card';
+
+  @override
+  String get lostWalletSheetButton => 'Emergency sheet';
+
+  @override
+  String get lostWalletSheetHint => 'Every card\'s block number on one page, to print or keep away from your wallet.';
+
+  @override
+  String get lostWalletSheetTitle => 'Emergency card sheet';
+
+  @override
+  String get lostWalletSheetIntro => 'Keep this away from your wallet and phone. If they go missing, call these numbers to block your cards.';
+
+  @override
+  String get lostWalletSheetCard => 'Card';
+
+  @override
+  String get lostWalletSheetWhose => 'Whose';
+
+  @override
+  String get lostWalletSheetEnds => 'Ends in';
+
+  @override
+  String get lostWalletSheetCall => 'Number to call';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Made on $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Case number saved';

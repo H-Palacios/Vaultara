@@ -7120,6 +7120,44 @@ class AppLocalizationsEu extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Gehitu zure urratsa';
 
   @override
+  String get lifePlanWhoToTell => 'Nori jakinarazi';
+
+  @override
+  String get lifePlanTellHeading => 'Jakinarazi beharreko erakundeak:';
+
+  @override
+  String get lifePlanTellAddress => 'Kaixo, etxez aldatu naiz. Mesedez, eguneratu nire kontuko helbidea honetara: [helbide berria]. Eskerrik asko.';
+
+  @override
+  String get lifePlanTellName => 'Kaixo, izena aldatu dut. Mesedez, eguneratu nire kontuko izena honetara: [izen berria]. Behar baduzue, froga bidal dezaket. Eskerrik asko.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Gehitu aurreko aldiko nire urratsak ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Zer gertatzen da zure lanarekin?';
+
+  @override
+  String get lifeVariantJobLost => 'Lana galdu dut';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Alokatzen ala erosten ari zara?';
+
+  @override
+  String get lifeVariantMoveRent => 'Alokairua edo beste bat';
+
+  @override
+  String get lifeVariantMoveBuy => 'Etxebizitza erostea';
+
+  @override
+  String get assistantStepLifePlan => 'Zure plana begiratzen';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Zure plana eguneratzen';
+
+  @override
   String get lifePlanOwnStepHint => 'Adibidez: Eskolari jakinarazi';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Utzi irakurtzeari';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Ozen irakurtzea ez dago erabilgarri mugikor honetan.';
 
   @override
   String get lifePlanProofPack => 'Sortu froga-paketea';
@@ -7433,6 +7468,57 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Kasu-zenbakia kopiatuta';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Deituta $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return '$name blokeatzeko zenbakia';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Banku bakoitzaren webgunetik. Txartelean beste zenbaki bat badago, erabili hori.';
+
+  @override
+  String get lostWalletBankNotListed => 'Nire bankua ez dago zerrendan';
+
+  @override
+  String get lostWalletNumberSaved => 'Blokeatzeko zenbakia gordeta';
+
+  @override
+  String get lostWalletPickCard => 'Gehitu zenbaki bat txartel bakoitzeko';
+
+  @override
+  String get lostWalletSheetButton => 'Larrialdi-orria';
+
+  @override
+  String get lostWalletSheetHint => 'Txartel bakoitzaren blokeatzeko zenbakia orri batean, inprimatzeko edo zorrotik urrun gordetzeko.';
+
+  @override
+  String get lostWalletSheetTitle => 'Larrialdietarako txartelen orria';
+
+  @override
+  String get lostWalletSheetIntro => 'Gorde zorrotik eta telefonotik urrun. Galtzen badira, deitu zenbaki hauetara txartelak blokeatzeko.';
+
+  @override
+  String get lostWalletSheetCard => 'Txartela';
+
+  @override
+  String get lostWalletSheetWhose => 'Norena';
+
+  @override
+  String get lostWalletSheetEnds => 'Amaiera';
+
+  @override
+  String get lostWalletSheetCall => 'Deitzeko zenbakia';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Egina: $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Salaketa-zenbakia gordeta';

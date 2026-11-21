@@ -7120,6 +7120,44 @@ class AppLocalizationsEl extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Προσθέστε δικό σας βήμα';
 
   @override
+  String get lifePlanWhoToTell => 'Ποιους να ενημερώσετε';
+
+  @override
+  String get lifePlanTellHeading => 'Οργανισμοί που πρέπει να ενημερώσετε:';
+
+  @override
+  String get lifePlanTellAddress => 'Γεια σας, μετακόμισα. Παρακαλώ ενημερώστε τη διεύθυνση στον λογαριασμό μου σε: [νέα διεύθυνση]. Ευχαριστώ.';
+
+  @override
+  String get lifePlanTellName => 'Γεια σας, το όνομά μου άλλαξε. Παρακαλώ ενημερώστε το όνομα στον λογαριασμό μου σε: [νέο όνομα]. Μπορώ να στείλω αποδεικτικό αν χρειάζεται. Ευχαριστώ.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Προσθήκη των δικών μου βημάτων από την προηγούμενη φορά ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Τι συμβαίνει με τη δουλειά σας;';
+
+  @override
+  String get lifeVariantJobLost => 'Έχασα τη δουλειά μου';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Νοικιάζετε ή αγοράζετε;';
+
+  @override
+  String get lifeVariantMoveRent => 'Ενοίκιο ή άλλο';
+
+  @override
+  String get lifeVariantMoveBuy => 'Αγορά σπιτιού';
+
+  @override
+  String get assistantStepLifePlan => 'Έλεγχος του πλάνου σας';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Ενημέρωση του πλάνου σας';
+
+  @override
   String get lifePlanOwnStepHint => 'Για παράδειγμα: Ενημερώστε το σχολείο';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Διακοπή ανάγνωσης';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Η ανάγνωση φωναχτά δεν είναι διαθέσιμη σε αυτό το κινητό.';
 
   @override
   String get lifePlanProofPack => 'Δημιουργία φακέλου αποδείξεων';
@@ -7433,6 +7468,57 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Ο αριθμός υπόθεσης αντιγράφηκε';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Κλήση $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Αριθμός για μπλοκάρισμα: $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Από τον ιστότοπο κάθε τράπεζας. Αν ο αριθμός στην κάρτα σας είναι διαφορετικός, χρησιμοποιήστε αυτόν.';
+
+  @override
+  String get lostWalletBankNotListed => 'Η τράπεζά μου δεν είναι στη λίστα';
+
+  @override
+  String get lostWalletNumberSaved => 'Ο αριθμός μπλοκαρίσματος αποθηκεύτηκε';
+
+  @override
+  String get lostWalletPickCard => 'Προσθέστε αριθμό για κάθε κάρτα';
+
+  @override
+  String get lostWalletSheetButton => 'Φύλλο έκτακτης ανάγκης';
+
+  @override
+  String get lostWalletSheetHint => 'Ο αριθμός μπλοκαρίσματος κάθε κάρτας σε μία σελίδα, για εκτύπωση ή φύλαξη μακριά από το πορτοφόλι.';
+
+  @override
+  String get lostWalletSheetTitle => 'Φύλλο καρτών έκτακτης ανάγκης';
+
+  @override
+  String get lostWalletSheetIntro => 'Κρατήστε το μακριά από το πορτοφόλι και το κινητό. Αν χαθούν, καλέστε αυτούς τους αριθμούς για να μπλοκάρετε τις κάρτες.';
+
+  @override
+  String get lostWalletSheetCard => 'Κάρτα';
+
+  @override
+  String get lostWalletSheetWhose => 'Ποιανού';
+
+  @override
+  String get lostWalletSheetEnds => 'Λήγει σε';
+
+  @override
+  String get lostWalletSheetCall => 'Αριθμός κλήσης';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Δημιουργήθηκε $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Ο αριθμός αποθηκεύτηκε';

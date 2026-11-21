@@ -7114,6 +7114,44 @@ class AppLocalizationsFil extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Magdagdag ng sariling hakbang';
 
   @override
+  String get lifePlanWhoToTell => 'Sino ang sasabihan';
+
+  @override
+  String get lifePlanTellHeading => 'Mga organisasyong dapat sabihan:';
+
+  @override
+  String get lifePlanTellAddress => 'Hello, lumipat na ako. Pakipalitan ang address sa account ko sa: [bagong address]. Salamat.';
+
+  @override
+  String get lifePlanTellName => 'Hello, nagbago na ang pangalan ko. Pakipalitan ang pangalan sa account ko sa: [bagong pangalan]. Makakapagpadala ako ng patunay kung kailangan. Salamat.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Idagdag ang sarili kong mga hakbang mula noong nakaraan ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Ano ang nangyayari sa trabaho mo?';
+
+  @override
+  String get lifeVariantJobLost => 'Nawalan ako ng trabaho';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Nangungupahan ka ba o bumibili?';
+
+  @override
+  String get lifeVariantMoveRent => 'Upa o iba pa';
+
+  @override
+  String get lifeVariantMoveBuy => 'Bumibili ng bahay';
+
+  @override
+  String get assistantStepLifePlan => 'Tinitingnan ang plano mo';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Ina-update ang plano mo';
+
+  @override
   String get lifePlanOwnStepHint => 'Halimbawa: Sabihan ang paaralan';
 
   @override
@@ -7124,9 +7162,6 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Itigil ang pagbasa';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Hindi available ang pagbasa nang malakas sa phone na ito.';
 
   @override
   String get lifePlanProofPack => 'Gumawa ng pakete ng patunay';
@@ -7424,6 +7459,57 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Nakopya ang case number';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Tinawagan $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Numero para i-block ang $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Mula sa sariling website ng bawat bangko. Kung iba ang numero sa card mo, iyon ang gamitin.';
+
+  @override
+  String get lostWalletBankNotListed => 'Wala sa listahan ang bangko ko';
+
+  @override
+  String get lostWalletNumberSaved => 'Na-save ang block number';
+
+  @override
+  String get lostWalletPickCard => 'Magdagdag ng numero sa bawat card';
+
+  @override
+  String get lostWalletSheetButton => 'Emergency sheet';
+
+  @override
+  String get lostWalletSheetHint => 'Ang block number ng bawat card sa isang pahina, para i-print o itago malayo sa wallet mo.';
+
+  @override
+  String get lostWalletSheetTitle => 'Emergency card sheet';
+
+  @override
+  String get lostWalletSheetIntro => 'Itago ito malayo sa wallet at phone mo. Kapag nawala ang mga ito, tawagan ang mga numerong ito para i-block ang mga card.';
+
+  @override
+  String get lostWalletSheetCard => 'Card';
+
+  @override
+  String get lostWalletSheetWhose => 'Kanino';
+
+  @override
+  String get lostWalletSheetEnds => 'Nagtatapos sa';
+
+  @override
+  String get lostWalletSheetCall => 'Numerong tatawagan';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Ginawa noong $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Na-save ang numero ng kaso';

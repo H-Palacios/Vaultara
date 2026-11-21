@@ -7171,6 +7171,44 @@ class AppLocalizationsHe extends AppLocalizations {
   String get lifePlanAddOwnStep => 'הוספת צעד משלך';
 
   @override
+  String get lifePlanWhoToTell => 'למי לספר';
+
+  @override
+  String get lifePlanTellHeading => 'גופים שצריך לעדכן:';
+
+  @override
+  String get lifePlanTellAddress => 'שלום, עברתי דירה. אנא עדכנו את הכתובת בחשבון שלי ל: [כתובת חדשה]. תודה.';
+
+  @override
+  String get lifePlanTellName => 'שלום, שמי השתנה. אנא עדכנו את השם בחשבון שלי ל: [שם חדש]. אוכל לשלוח אישור אם צריך. תודה.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'הוסף את הצעדים שלי מהפעם הקודמת ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'מה קורה עם העבודה שלך?';
+
+  @override
+  String get lifeVariantJobLost => 'איבדתי את העבודה';
+
+  @override
+  String get lifeVariantMoveQuestion => 'שוכרים או קונים?';
+
+  @override
+  String get lifeVariantMoveRent => 'שכירות או אחר';
+
+  @override
+  String get lifeVariantMoveBuy => 'קונים בית';
+
+  @override
+  String get assistantStepLifePlan => 'בודק את התוכנית שלך';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'מעדכן את התוכנית שלך';
+
+  @override
   String get lifePlanOwnStepHint => 'לדוגמה: לעדכן את בית הספר';
 
   @override
@@ -7181,9 +7219,6 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'עצירת ההקראה';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'הקראה לא זמינה בטלפון הזה.';
 
   @override
   String get lifePlanProofPack => 'יצירת חבילת הוכחות';
@@ -7482,6 +7517,57 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'מספר התיק הועתק';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'התקשרת $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'מספר לחסימת $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'מהאתר של כל בנק. אם המספר על הכרטיס שלך שונה, השתמשו בו.';
+
+  @override
+  String get lostWalletBankNotListed => 'הבנק שלי לא ברשימה';
+
+  @override
+  String get lostWalletNumberSaved => 'מספר החסימה נשמר';
+
+  @override
+  String get lostWalletPickCard => 'הוסיפו מספר לכל כרטיס';
+
+  @override
+  String get lostWalletSheetButton => 'דף חירום';
+
+  @override
+  String get lostWalletSheetHint => 'מספר החסימה של כל כרטיס בדף אחד, להדפסה או לשמירה הרחק מהארנק.';
+
+  @override
+  String get lostWalletSheetTitle => 'דף כרטיסים לחירום';
+
+  @override
+  String get lostWalletSheetIntro => 'שמרו אותו הרחק מהארנק ומהטלפון. אם הם נעלמים, התקשרו למספרים האלה כדי לחסום את הכרטיסים.';
+
+  @override
+  String get lostWalletSheetCard => 'כרטיס';
+
+  @override
+  String get lostWalletSheetWhose => 'של מי';
+
+  @override
+  String get lostWalletSheetEnds => 'מסתיים ב';
+
+  @override
+  String get lostWalletSheetCall => 'מספר לחיוג';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'נוצר ב-$date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'מספר התיק נשמר';

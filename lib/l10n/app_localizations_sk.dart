@@ -7249,6 +7249,44 @@ class AppLocalizationsSk extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Pridať vlastný krok';
 
   @override
+  String get lifePlanWhoToTell => 'Koho informovať';
+
+  @override
+  String get lifePlanTellHeading => 'Organizácie, ktoré treba informovať:';
+
+  @override
+  String get lifePlanTellAddress => 'Dobrý deň, presťahoval/a som sa. Prosím, zmeňte adresu na mojom účte na: [nová adresa]. Ďakujem.';
+
+  @override
+  String get lifePlanTellName => 'Dobrý deň, zmenilo sa mi meno. Prosím, zmeňte meno na mojom účte na: [nové meno]. V prípade potreby pošlem doklad. Ďakujem.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Pridať moje kroky z minula ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Čo sa deje s vašou prácou?';
+
+  @override
+  String get lifeVariantJobLost => 'Prišiel/prišla som o prácu';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Prenajímate si alebo kupujete?';
+
+  @override
+  String get lifeVariantMoveRent => 'Nájom alebo iné';
+
+  @override
+  String get lifeVariantMoveBuy => 'Kupujem bývanie';
+
+  @override
+  String get assistantStepLifePlan => 'Kontrolujem váš plán';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Aktualizujem váš plán';
+
+  @override
   String get lifePlanOwnStepHint => 'Napríklad: Dať vedieť škole';
 
   @override
@@ -7259,9 +7297,6 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Zastaviť čítanie';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Čítanie nahlas nie je na tomto telefóne dostupné.';
 
   @override
   String get lifePlanProofPack => 'Vytvoriť balík dokladov';
@@ -7561,6 +7596,57 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Číslo prípadu skopírované';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Volané $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Číslo na blokovanie: $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Z webu každej banky. Ak je na karte iné číslo, použite ho.';
+
+  @override
+  String get lostWalletBankNotListed => 'Moja banka v zozname nie je';
+
+  @override
+  String get lostWalletNumberSaved => 'Číslo na blokovanie uložené';
+
+  @override
+  String get lostWalletPickCard => 'Pridajte číslo ku každej karte';
+
+  @override
+  String get lostWalletSheetButton => 'Núdzový list';
+
+  @override
+  String get lostWalletSheetHint => 'Číslo na blokovanie každej karty na jednej strane, na vytlačenie alebo uloženie mimo peňaženky.';
+
+  @override
+  String get lostWalletSheetTitle => 'Núdzový list kariet';
+
+  @override
+  String get lostWalletSheetIntro => 'Uchovávajte ho mimo peňaženky a telefónu. Ak sa stratia, zavolajte na tieto čísla a karty zablokujte.';
+
+  @override
+  String get lostWalletSheetCard => 'Karta';
+
+  @override
+  String get lostWalletSheetWhose => 'Čia';
+
+  @override
+  String get lostWalletSheetEnds => 'Končí na';
+
+  @override
+  String get lostWalletSheetCall => 'Číslo na zavolanie';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Vytvorené $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Číslo uložené';

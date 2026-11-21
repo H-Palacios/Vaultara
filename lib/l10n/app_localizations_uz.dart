@@ -7120,6 +7120,44 @@ class AppLocalizationsUz extends AppLocalizations {
   String get lifePlanAddOwnStep => 'O\'z qadamingizni qo\'shing';
 
   @override
+  String get lifePlanWhoToTell => 'Kimga xabar berish kerak';
+
+  @override
+  String get lifePlanTellHeading => 'Xabar berish kerak bo‘lgan tashkilotlar:';
+
+  @override
+  String get lifePlanTellAddress => 'Assalomu alaykum, men ko‘chib o‘tdim. Iltimos, hisobimdagi manzilni quyidagiga o‘zgartiring: [yangi manzil]. Rahmat.';
+
+  @override
+  String get lifePlanTellName => 'Assalomu alaykum, ismim o‘zgardi. Iltimos, hisobimdagi ismni quyidagiga o‘zgartiring: [yangi ism]. Kerak bo‘lsa, dalil yubora olaman. Rahmat.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'O‘tgan safargi o‘z qadamlarimni qo‘shish ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Ishingizda nima bo‘lyapti?';
+
+  @override
+  String get lifeVariantJobLost => 'Ishimdan ayrildim';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Ijaraga olasizmi yoki sotib olasizmi?';
+
+  @override
+  String get lifeVariantMoveRent => 'Ijara yoki boshqa';
+
+  @override
+  String get lifeVariantMoveBuy => 'Uy sotib olish';
+
+  @override
+  String get assistantStepLifePlan => 'Rejangiz tekshirilmoqda';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Rejangiz yangilanmoqda';
+
+  @override
   String get lifePlanOwnStepHint => 'Masalan: Maktabga xabar berish';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'O\'qishni to\'xtatish';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Bu telefonda ovoz chiqarib o\'qish mavjud emas.';
 
   @override
   String get lifePlanProofPack => 'Isbot toʻplamini yarating';
@@ -7430,6 +7465,57 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Ish raqami nusxalandi';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Qo‘ng‘iroq qilindi $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return '${name}ni bloklash raqami';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Har bir bankning o‘z saytidan. Kartangizdagi raqam boshqacha bo‘lsa, o‘shani ishlating.';
+
+  @override
+  String get lostWalletBankNotListed => 'Bankim ro‘yxatda yo‘q';
+
+  @override
+  String get lostWalletNumberSaved => 'Bloklash raqami saqlandi';
+
+  @override
+  String get lostWalletPickCard => 'Har bir karta uchun raqam qo‘shing';
+
+  @override
+  String get lostWalletSheetButton => 'Favqulodda varaq';
+
+  @override
+  String get lostWalletSheetHint => 'Har bir kartaning bloklash raqami bitta sahifada — chop etish yoki hamyondan alohida saqlash uchun.';
+
+  @override
+  String get lostWalletSheetTitle => 'Kartalar favqulodda varag‘i';
+
+  @override
+  String get lostWalletSheetIntro => 'Uni hamyon va telefondan alohida saqlang. Yo‘qolsa, kartalarni bloklash uchun shu raqamlarga qo‘ng‘iroq qiling.';
+
+  @override
+  String get lostWalletSheetCard => 'Karta';
+
+  @override
+  String get lostWalletSheetWhose => 'Kimniki';
+
+  @override
+  String get lostWalletSheetEnds => 'Oxirgi raqamlar';
+
+  @override
+  String get lostWalletSheetCall => 'Qo‘ng‘iroq raqami';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Yaratilgan $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Ish raqami saqlandi';

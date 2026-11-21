@@ -7184,6 +7184,44 @@ class AppLocalizationsLv extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Pievienot savu soli';
 
   @override
+  String get lifePlanWhoToTell => 'Kam paziņot';
+
+  @override
+  String get lifePlanTellHeading => 'Organizācijas, kurām jāpaziņo:';
+
+  @override
+  String get lifePlanTellAddress => 'Labdien, esmu pārcēlies/pārcēlusies. Lūdzu, nomainiet adresi manā kontā uz: [jaunā adrese]. Paldies.';
+
+  @override
+  String get lifePlanTellName => 'Labdien, mans vārds ir mainījies. Lūdzu, nomainiet vārdu manā kontā uz: [jaunais vārds]. Ja vajag, varu nosūtīt apliecinājumu. Paldies.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Pievienot manus soļus no iepriekšējās reizes ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Kas notiek ar tavu darbu?';
+
+  @override
+  String get lifeVariantJobLost => 'Es zaudēju darbu';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Tu īrē vai pērc?';
+
+  @override
+  String get lifeVariantMoveRent => 'Īre vai cits';
+
+  @override
+  String get lifeVariantMoveBuy => 'Pērku mājokli';
+
+  @override
+  String get assistantStepLifePlan => 'Pārbauda tavu plānu';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Atjaunina tavu plānu';
+
+  @override
   String get lifePlanOwnStepHint => 'Piemēram: Paziņot skolai';
 
   @override
@@ -7194,9 +7232,6 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Pārtraukt lasīšanu';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Šajā telefonā skaļa lasīšana nav pieejama.';
 
   @override
   String get lifePlanProofPack => 'Izveidot pierādījumu komplektu';
@@ -7495,6 +7530,57 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Lietas numurs nokopēts';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Zvanīts $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Numurs, lai bloķētu $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'No katras bankas vietnes. Ja uz kartes ir cits numurs, izmanto to.';
+
+  @override
+  String get lostWalletBankNotListed => 'Manas bankas nav sarakstā';
+
+  @override
+  String get lostWalletNumberSaved => 'Bloķēšanas numurs saglabāts';
+
+  @override
+  String get lostWalletPickCard => 'Pievieno numuru katrai kartei';
+
+  @override
+  String get lostWalletSheetButton => 'Ārkārtas lapa';
+
+  @override
+  String get lostWalletSheetHint => 'Katras kartes bloķēšanas numurs vienā lapā – izdrukāšanai vai glabāšanai atsevišķi no maka.';
+
+  @override
+  String get lostWalletSheetTitle => 'Karšu ārkārtas lapa';
+
+  @override
+  String get lostWalletSheetIntro => 'Glabā to atsevišķi no maka un telefona. Ja tie pazūd, zvani uz šiem numuriem, lai bloķētu kartes.';
+
+  @override
+  String get lostWalletSheetCard => 'Karte';
+
+  @override
+  String get lostWalletSheetWhose => 'Kam pieder';
+
+  @override
+  String get lostWalletSheetEnds => 'Beidzas ar';
+
+  @override
+  String get lostWalletSheetCall => 'Numurs, uz kuru zvanīt';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Izveidots $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Lietas numurs saglabāts';

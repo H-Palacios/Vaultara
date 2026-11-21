@@ -7301,6 +7301,44 @@ class AppLocalizationsGa extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Cuir do chéim féin leis';
 
   @override
+  String get lifePlanWhoToTell => 'Cé a insint dóibh';
+
+  @override
+  String get lifePlanTellHeading => 'Eagraíochtaí le hinsint dóibh:';
+
+  @override
+  String get lifePlanTellAddress => 'Dia duit, d\'aistrigh mé teach. Nuashonraigh an seoladh ar mo chuntas go: [seoladh nua], le do thoil. Go raibh maith agat.';
+
+  @override
+  String get lifePlanTellName => 'Dia duit, d\'athraigh m\'ainm. Nuashonraigh an t-ainm ar mo chuntas go: [ainm nua], le do thoil. Is féidir liom cruthúnas a sheoladh más gá. Go raibh maith agat.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Cuir mo chéimeanna féin ón uair dheireanach leis ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Cad atá ag tarlú le do phost?';
+
+  @override
+  String get lifeVariantJobLost => 'Chaill mé mo phost';
+
+  @override
+  String get lifeVariantMoveQuestion => 'An bhfuil tú ag cíos nó ag ceannach?';
+
+  @override
+  String get lifeVariantMoveRent => 'Cíos nó eile';
+
+  @override
+  String get lifeVariantMoveBuy => 'Ag ceannach tí';
+
+  @override
+  String get assistantStepLifePlan => 'Do phlean á sheiceáil';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Do phlean á nuashonrú';
+
+  @override
   String get lifePlanOwnStepHint => 'Mar shampla: Inis don scoil';
 
   @override
@@ -7311,9 +7349,6 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Stop ag léamh';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Níl léamh os ard ar fáil ar an nguthán seo.';
 
   @override
   String get lifePlanProofPack => 'Déan paca cruthúnais';
@@ -7611,6 +7646,57 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Uimhir an cháis cóipeáilte';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Glaodh $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Uimhir chun bac a chur ar $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Ó shuíomh gréasáin gach bainc. Má tá uimhir eile ar do chárta, úsáid í sin.';
+
+  @override
+  String get lostWalletBankNotListed => 'Níl mo bhanc ar an liosta';
+
+  @override
+  String get lostWalletNumberSaved => 'Uimhir bhlocála sábháilte';
+
+  @override
+  String get lostWalletPickCard => 'Cuir uimhir le gach cárta';
+
+  @override
+  String get lostWalletSheetButton => 'Bileog éigeandála';
+
+  @override
+  String get lostWalletSheetHint => 'Uimhir bhlocála gach cárta ar leathanach amháin, le priontáil nó le coinneáil i bhfad ó do sparán.';
+
+  @override
+  String get lostWalletSheetTitle => 'Bileog éigeandála cártaí';
+
+  @override
+  String get lostWalletSheetIntro => 'Coinnigh í i bhfad ó do sparán agus do ghuthán. Má imíonn siad, glaoigh ar na huimhreacha seo chun bac a chur ar do chártaí.';
+
+  @override
+  String get lostWalletSheetCard => 'Cárta';
+
+  @override
+  String get lostWalletSheetWhose => 'Cé leis';
+
+  @override
+  String get lostWalletSheetEnds => 'Críochnaíonn le';
+
+  @override
+  String get lostWalletSheetCall => 'Uimhir le glaoch';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Déanta $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Uimhir cháis sábháilte';

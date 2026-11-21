@@ -7120,6 +7120,44 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get lifePlanAddOwnStep => 'هەنگاوی خۆت زیاد بکە';
 
   @override
+  String get lifePlanWhoToTell => 'بە کێ بڵێیت';
+
+  @override
+  String get lifePlanTellHeading => 'ئەو دامەزراوانەی دەبێت ئاگادار بکرێنەوە:';
+
+  @override
+  String get lifePlanTellAddress => 'سڵاو، من گواستوومەتەوە. تکایە ناونیشانی ئەکاونتەکەم بگۆڕن بۆ: [ناونیشانی نوێ]. سوپاس.';
+
+  @override
+  String get lifePlanTellName => 'سڵاو، ناوم گۆڕاوە. تکایە ناوی ئەکاونتەکەم بگۆڕن بۆ: [ناوی نوێ]. ئەگەر پێویست بێت دەتوانم بەڵگە بنێرم. سوپاس.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'هەنگاوەکانی خۆم لە جاری پێشوو زیاد بکە ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'چی لە کارەکەتدا ڕوودەدات؟';
+
+  @override
+  String get lifeVariantJobLost => 'کارەکەم لەدەستدا';
+
+  @override
+  String get lifeVariantMoveQuestion => 'بەکرێ دەگریت یان دەیکڕیت؟';
+
+  @override
+  String get lifeVariantMoveRent => 'کرێ یان شتێکی تر';
+
+  @override
+  String get lifeVariantMoveBuy => 'کڕینی خانوو';
+
+  @override
+  String get assistantStepLifePlan => 'پلانەکەت دەپشکنرێت';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'پلانەکەت نوێ دەکرێتەوە';
+
+  @override
   String get lifePlanOwnStepHint => 'بۆ نموونە: قوتابخانە ئاگادار بکەرەوە';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'خوێندنەوە ڕابگرە';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'خوێندنەوە بە دەنگی بەرز لەم مۆبایلەدا بەردەست نییە.';
 
   @override
   String get lifePlanProofPack => 'پاکێتی بەڵگە دروست بکە';
@@ -7430,6 +7465,57 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'ژمارەی دۆسیە کۆپی کرا';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'پەیوەندی کرا $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'ژمارەی بلۆککردنی $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'لە ماڵپەڕی هەر بانکێک. ئەگەر ژمارەی سەر کارتەکەت جیاوازە، ئەوە بەکاربهێنە.';
+
+  @override
+  String get lostWalletBankNotListed => 'بانکەکەم لە لیستەکەدا نییە';
+
+  @override
+  String get lostWalletNumberSaved => 'ژمارەی بلۆککردن پاشەکەوت کرا';
+
+  @override
+  String get lostWalletPickCard => 'ژمارەیەک بۆ هەر کارتێک زیاد بکە';
+
+  @override
+  String get lostWalletSheetButton => 'پەڕەی فریاکەوتن';
+
+  @override
+  String get lostWalletSheetHint => 'ژمارەی بلۆککردنی هەموو کارتەکان لە یەک پەڕەدا، بۆ چاپکردن یان دوور لە جزدان.';
+
+  @override
+  String get lostWalletSheetTitle => 'پەڕەی کارتی فریاکەوتن';
+
+  @override
+  String get lostWalletSheetIntro => 'ئەمە دوور لە جزدان و مۆبایلەکەت بهێڵەوە. ئەگەر ون بوون، بۆ بلۆککردنی کارتەکان پەیوەندی بەم ژمارانە بکە.';
+
+  @override
+  String get lostWalletSheetCard => 'کارت';
+
+  @override
+  String get lostWalletSheetWhose => 'هی کێ';
+
+  @override
+  String get lostWalletSheetEnds => 'کۆتایی بە';
+
+  @override
+  String get lostWalletSheetCall => 'ژمارەی پەیوەندی';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'دروستکرا لە $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'ژمارەی دۆسیە پاشەکەوت کرا';

@@ -7144,6 +7144,44 @@ class AppLocalizationsEs extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Añadir un paso propio';
 
   @override
+  String get lifePlanWhoToTell => 'A quién avisar';
+
+  @override
+  String get lifePlanTellHeading => 'Organizaciones a las que avisar:';
+
+  @override
+  String get lifePlanTellAddress => 'Hola, me he mudado. Por favor, actualicen la dirección de mi cuenta a: [nueva dirección]. Gracias.';
+
+  @override
+  String get lifePlanTellName => 'Hola, he cambiado de nombre. Por favor, actualicen el nombre de mi cuenta a: [nuevo nombre]. Puedo enviar un comprobante si lo necesitan. Gracias.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Añadir mis pasos de la última vez ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => '¿Qué pasa con tu trabajo?';
+
+  @override
+  String get lifeVariantJobLost => 'He perdido mi trabajo';
+
+  @override
+  String get lifeVariantMoveQuestion => '¿Alquilas o compras?';
+
+  @override
+  String get lifeVariantMoveRent => 'Alquiler u otro';
+
+  @override
+  String get lifeVariantMoveBuy => 'Compro una vivienda';
+
+  @override
+  String get assistantStepLifePlan => 'Revisando tu plan';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Actualizando tu plan';
+
+  @override
   String get lifePlanOwnStepHint => 'Por ejemplo: Avisar al colegio';
 
   @override
@@ -7154,9 +7192,6 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Dejar de leer';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'La lectura en voz alta no está disponible en este móvil.';
 
   @override
   String get lifePlanProofPack => 'Crear un paquete de pruebas';
@@ -7457,6 +7492,57 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Número de caso copiado';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Llamada $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Número para bloquear $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'De la web de cada banco. Si el número de tu tarjeta es otro, usa ese.';
+
+  @override
+  String get lostWalletBankNotListed => 'Mi banco no está en la lista';
+
+  @override
+  String get lostWalletNumberSaved => 'Número de bloqueo guardado';
+
+  @override
+  String get lostWalletPickCard => 'Añade un número para cada tarjeta';
+
+  @override
+  String get lostWalletSheetButton => 'Hoja de emergencia';
+
+  @override
+  String get lostWalletSheetHint => 'El número de bloqueo de cada tarjeta en una página, para imprimir o guardar lejos de la cartera.';
+
+  @override
+  String get lostWalletSheetTitle => 'Hoja de tarjetas de emergencia';
+
+  @override
+  String get lostWalletSheetIntro => 'Guárdala lejos de tu cartera y tu móvil. Si se pierden, llama a estos números para bloquear tus tarjetas.';
+
+  @override
+  String get lostWalletSheetCard => 'Tarjeta';
+
+  @override
+  String get lostWalletSheetWhose => 'De quién';
+
+  @override
+  String get lostWalletSheetEnds => 'Termina en';
+
+  @override
+  String get lostWalletSheetCall => 'Número al que llamar';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Hecha el $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Número de denuncia guardado';

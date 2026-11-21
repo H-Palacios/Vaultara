@@ -7120,6 +7120,44 @@ class AppLocalizationsTa extends AppLocalizations {
   String get lifePlanAddOwnStep => 'உங்கள் படியைச் சேருங்கள்';
 
   @override
+  String get lifePlanWhoToTell => 'யாருக்குத் தெரிவிக்க வேண்டும்';
+
+  @override
+  String get lifePlanTellHeading => 'தெரிவிக்க வேண்டிய நிறுவனங்கள்:';
+
+  @override
+  String get lifePlanTellAddress => 'வணக்கம், நான் வீடு மாறிவிட்டேன். என் கணக்கின் முகவரியை இதற்கு மாற்றவும்: [புதிய முகவரி]. நன்றி.';
+
+  @override
+  String get lifePlanTellName => 'வணக்கம், என் பெயர் மாறியுள்ளது. என் கணக்கின் பெயரை இதற்கு மாற்றவும்: [புதிய பெயர்]. தேவைப்பட்டால் சான்று அனுப்ப முடியும். நன்றி.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'கடந்த முறை என் சொந்தப் படிகளைச் சேர் ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'உங்கள் வேலையில் என்ன நடக்கிறது?';
+
+  @override
+  String get lifeVariantJobLost => 'எனக்கு வேலை போய்விட்டது';
+
+  @override
+  String get lifeVariantMoveQuestion => 'வாடகைக்கா, வாங்குகிறீர்களா?';
+
+  @override
+  String get lifeVariantMoveRent => 'வாடகை அல்லது பிற';
+
+  @override
+  String get lifeVariantMoveBuy => 'வீடு வாங்குதல்';
+
+  @override
+  String get assistantStepLifePlan => 'உங்கள் திட்டம் சரிபார்க்கப்படுகிறது';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'உங்கள் திட்டம் புதுப்பிக்கப்படுகிறது';
+
+  @override
   String get lifePlanOwnStepHint => 'எ.கா.: பள்ளிக்குத் தெரிவியுங்கள்';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'படிப்பதை நிறுத்து';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'இந்த போனில் உரக்கப் படிக்கும் வசதி இல்லை.';
 
   @override
   String get lifePlanProofPack => 'சான்றுத் தொகுப்பை உருவாக்குங்கள்';
@@ -7430,6 +7465,57 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'வழக்கு எண் நகலெடுக்கப்பட்டது';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'அழைக்கப்பட்டது $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return '$name முடக்கும் எண்';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'ஒவ்வொரு வங்கியின் இணையதளத்திலிருந்து. உங்கள் அட்டையில் வேறு எண் இருந்தால் அதைப் பயன்படுத்துங்கள்.';
+
+  @override
+  String get lostWalletBankNotListed => 'என் வங்கி பட்டியலில் இல்லை';
+
+  @override
+  String get lostWalletNumberSaved => 'முடக்கும் எண் சேமிக்கப்பட்டது';
+
+  @override
+  String get lostWalletPickCard => 'ஒவ்வொரு அட்டைக்கும் எண் சேர்க்கவும்';
+
+  @override
+  String get lostWalletSheetButton => 'அவசரத் தாள்';
+
+  @override
+  String get lostWalletSheetHint => 'எல்லா அட்டைகளின் முடக்கும் எண்களும் ஒரே பக்கத்தில், அச்சிட அல்லது பணப்பையிலிருந்து தனியாக வைக்க.';
+
+  @override
+  String get lostWalletSheetTitle => 'அவசர அட்டைத் தாள்';
+
+  @override
+  String get lostWalletSheetIntro => 'இதைப் பணப்பை மற்றும் தொலைபேசியிலிருந்து தனியாக வையுங்கள். தொலைந்தால் அட்டைகளை முடக்க இந்த எண்களை அழையுங்கள்.';
+
+  @override
+  String get lostWalletSheetCard => 'அட்டை';
+
+  @override
+  String get lostWalletSheetWhose => 'யாருடையது';
+
+  @override
+  String get lostWalletSheetEnds => 'கடைசி இலக்கங்கள்';
+
+  @override
+  String get lostWalletSheetCall => 'அழைக்க வேண்டிய எண்';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'உருவாக்கியது $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'வழக்கு எண் சேமிக்கப்பட்டது';

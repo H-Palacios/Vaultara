@@ -7191,6 +7191,44 @@ class AppLocalizationsRo extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Adăugați un pas propriu';
 
   @override
+  String get lifePlanWhoToTell => 'Pe cine să anunți';
+
+  @override
+  String get lifePlanTellHeading => 'Instituții de anunțat:';
+
+  @override
+  String get lifePlanTellAddress => 'Bună ziua, m-am mutat. Vă rog să actualizați adresa din contul meu în: [adresa nouă]. Mulțumesc.';
+
+  @override
+  String get lifePlanTellName => 'Bună ziua, mi s-a schimbat numele. Vă rog să actualizați numele din contul meu în: [numele nou]. Pot trimite o dovadă dacă e nevoie. Mulțumesc.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Adaugă pașii mei de data trecută ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Ce se întâmplă cu jobul tău?';
+
+  @override
+  String get lifeVariantJobLost => 'Mi-am pierdut jobul';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Închiriezi sau cumperi?';
+
+  @override
+  String get lifeVariantMoveRent => 'Chirie sau altceva';
+
+  @override
+  String get lifeVariantMoveBuy => 'Cumpăr o locuință';
+
+  @override
+  String get assistantStepLifePlan => 'Se verifică planul tău';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Se actualizează planul tău';
+
+  @override
   String get lifePlanOwnStepHint => 'De exemplu: Anunțați școala';
 
   @override
@@ -7201,9 +7239,6 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Oprește citirea';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Citirea cu voce tare nu e disponibilă pe acest telefon.';
 
   @override
   String get lifePlanProofPack => 'Creați un pachet de dovezi';
@@ -7505,6 +7540,57 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Numărul dosarului a fost copiat';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Apelat $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Număr pentru blocarea $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'De pe site-ul fiecărei bănci. Dacă pe card e alt număr, folosește-l pe acela.';
+
+  @override
+  String get lostWalletBankNotListed => 'Banca mea nu e în listă';
+
+  @override
+  String get lostWalletNumberSaved => 'Număr de blocare salvat';
+
+  @override
+  String get lostWalletPickCard => 'Adaugă un număr pentru fiecare card';
+
+  @override
+  String get lostWalletSheetButton => 'Foaie de urgență';
+
+  @override
+  String get lostWalletSheetHint => 'Numărul de blocare al fiecărui card pe o pagină, de tipărit sau de ținut departe de portofel.';
+
+  @override
+  String get lostWalletSheetTitle => 'Foaie de urgență pentru carduri';
+
+  @override
+  String get lostWalletSheetIntro => 'Păstreaz-o departe de portofel și telefon. Dacă dispar, sună la aceste numere ca să blochezi cardurile.';
+
+  @override
+  String get lostWalletSheetCard => 'Card';
+
+  @override
+  String get lostWalletSheetWhose => 'Al cui';
+
+  @override
+  String get lostWalletSheetEnds => 'Se termină în';
+
+  @override
+  String get lostWalletSheetCall => 'Număr de apelat';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Creată pe $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Număr de dosar salvat';

@@ -7120,6 +7120,44 @@ class AppLocalizationsHy extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Ավելացնել ձեր քայլը';
 
   @override
+  String get lifePlanWhoToTell => 'Ում տեղեկացնել';
+
+  @override
+  String get lifePlanTellHeading => 'Կազմակերպություններ, որոնց պետք է տեղեկացնել՝';
+
+  @override
+  String get lifePlanTellAddress => 'Բարև ձեզ, ես տեղափոխվել եմ։ Խնդրում եմ թարմացնել իմ հաշվի հասցեն՝ [նոր հասցե]։ Շնորհակալություն։';
+
+  @override
+  String get lifePlanTellName => 'Բարև ձեզ, իմ անունը փոխվել է։ Խնդրում եմ թարմացնել իմ հաշվի անունը՝ [նոր անուն]։ Անհրաժեշտության դեպքում կուղարկեմ ապացույց։ Շնորհակալություն։';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Ավելացնել նախորդ անգամվա իմ քայլերը ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Ի՞նչ է կատարվում ձեր աշխատանքի հետ';
+
+  @override
+  String get lifeVariantJobLost => 'Կորցրել եմ աշխատանքս';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Վարձակալո՞ւմ եք, թե՞ գնում';
+
+  @override
+  String get lifeVariantMoveRent => 'Վարձակալություն կամ այլ';
+
+  @override
+  String get lifeVariantMoveBuy => 'Տուն եմ գնում';
+
+  @override
+  String get assistantStepLifePlan => 'Ձեր պլանը ստուգվում է';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Ձեր պլանը թարմացվում է';
+
+  @override
   String get lifePlanOwnStepHint => 'Օրինակ՝ տեղեկացնել դպրոցին';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Դադարեցնել ընթերցումը';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Բարձրաձայն ընթերցումը հասանելի չէ այս հեռախոսում։';
 
   @override
   String get lifePlanProofPack => 'Ստեղծել ապացույցների փաթեթ';
@@ -7430,6 +7465,57 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Գործի համարը պատճենվեց';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Զանգահարվել է $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return '$name-ի արգելափակման համարը';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Յուրաքանչյուր բանկի կայքից։ Եթե քարտի վրայի համարը տարբեր է, օգտագործեք այն։';
+
+  @override
+  String get lostWalletBankNotListed => 'Իմ բանկը ցանկում չէ';
+
+  @override
+  String get lostWalletNumberSaved => 'Արգելափակման համարը պահվեց';
+
+  @override
+  String get lostWalletPickCard => 'Ավելացրեք համար յուրաքանչյուր քարտի համար';
+
+  @override
+  String get lostWalletSheetButton => 'Արտակարգ թերթ';
+
+  @override
+  String get lostWalletSheetHint => 'Բոլոր քարտերի արգելափակման համարները մեկ էջում՝ տպելու կամ դրամապանակից հեռու պահելու համար։';
+
+  @override
+  String get lostWalletSheetTitle => 'Արտակարգ իրավիճակի քարտերի թերթ';
+
+  @override
+  String get lostWalletSheetIntro => 'Պահեք այն դրամապանակից և հեռախոսից հեռու։ Եթե կորչեն, զանգահարեք այս համարներով՝ քարտերը արգելափակելու համար։';
+
+  @override
+  String get lostWalletSheetCard => 'Քարտ';
+
+  @override
+  String get lostWalletSheetWhose => 'Ում';
+
+  @override
+  String get lostWalletSheetEnds => 'Վերջանում է';
+
+  @override
+  String get lostWalletSheetCall => 'Զանգի համար';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Ստեղծվել է $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Գործի համարը պահպանվեց';

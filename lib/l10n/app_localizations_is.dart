@@ -7119,6 +7119,44 @@ class AppLocalizationsIs extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Bæta við eigin skrefi';
 
   @override
+  String get lifePlanWhoToTell => 'Hverjum á að segja frá';
+
+  @override
+  String get lifePlanTellHeading => 'Stofnanir sem þarf að láta vita:';
+
+  @override
+  String get lifePlanTellAddress => 'Halló, ég er flutt/ur. Vinsamlegast uppfærið heimilisfangið á reikningnum mínum í: [nýtt heimilisfang]. Takk.';
+
+  @override
+  String get lifePlanTellName => 'Halló, nafnið mitt hefur breyst. Vinsamlegast uppfærið nafnið á reikningnum mínum í: [nýtt nafn]. Ég get sent staðfestingu ef þarf. Takk.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Bæta við mínum eigin skrefum frá síðast ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Hvað er að gerast í vinnunni þinni?';
+
+  @override
+  String get lifeVariantJobLost => 'Ég missti vinnuna';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Ertu að leigja eða kaupa?';
+
+  @override
+  String get lifeVariantMoveRent => 'Leiga eða annað';
+
+  @override
+  String get lifeVariantMoveBuy => 'Að kaupa heimili';
+
+  @override
+  String get assistantStepLifePlan => 'Skoða áætlunina þína';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Uppfæri áætlunina þína';
+
+  @override
   String get lifePlanOwnStepHint => 'Til dæmis: Láta skólann vita';
 
   @override
@@ -7129,9 +7167,6 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Hætta lestri';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Upplestur er ekki í boði í þessum síma.';
 
   @override
   String get lifePlanProofPack => 'Búa til skjalapakka';
@@ -7429,6 +7464,57 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Málsnúmer afritað';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Hringt $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Númer til að loka $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Af vef hvers banka. Ef númerið á kortinu þínu er annað, notaðu það.';
+
+  @override
+  String get lostWalletBankNotListed => 'Bankinn minn er ekki á listanum';
+
+  @override
+  String get lostWalletNumberSaved => 'Lokunarnúmer vistað';
+
+  @override
+  String get lostWalletPickCard => 'Bættu við númeri fyrir hvert kort';
+
+  @override
+  String get lostWalletSheetButton => 'Neyðarblað';
+
+  @override
+  String get lostWalletSheetHint => 'Lokunarnúmer allra korta á einni síðu, til að prenta eða geyma fjarri veskinu.';
+
+  @override
+  String get lostWalletSheetTitle => 'Neyðarblað fyrir kort';
+
+  @override
+  String get lostWalletSheetIntro => 'Geymdu það fjarri veski og síma. Ef þau týnast, hringdu í þessi númer til að loka kortunum.';
+
+  @override
+  String get lostWalletSheetCard => 'Kort';
+
+  @override
+  String get lostWalletSheetWhose => 'Hver á';
+
+  @override
+  String get lostWalletSheetEnds => 'Endar á';
+
+  @override
+  String get lostWalletSheetCall => 'Númer til að hringja í';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Búið til $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Málsnúmer vistað';

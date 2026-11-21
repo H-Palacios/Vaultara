@@ -7120,6 +7120,44 @@ class AppLocalizationsAm extends AppLocalizations {
   String get lifePlanAddOwnStep => 'የራስህን ደረጃ አክል';
 
   @override
+  String get lifePlanWhoToTell => 'ለማን ማሳወቅ';
+
+  @override
+  String get lifePlanTellHeading => 'የሚነገራቸው ድርጅቶች፦';
+
+  @override
+  String get lifePlanTellAddress => 'ሰላም፣ ቤት ቀይሬያለሁ። እባክዎ በሂሳቤ ላይ ያለውን አድራሻ ወደዚህ ይቀይሩ፦ [አዲስ አድራሻ]። እናመሰግናለን።';
+
+  @override
+  String get lifePlanTellName => 'ሰላም፣ ስሜ ተቀይሯል። እባክዎ በሂሳቤ ላይ ያለውን ስም ወደዚህ ይቀይሩ፦ [አዲስ ስም]። ካስፈለገ ማስረጃ መላክ እችላለሁ። እናመሰግናለን።';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'ካለፈው ጊዜ የራሴን ደረጃዎች አክል ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'በስራዎ ምን እየሆነ ነው?';
+
+  @override
+  String get lifeVariantJobLost => 'ስራዬን አጣሁ';
+
+  @override
+  String get lifeVariantMoveQuestion => 'እየተከራዩ ነው ወይስ እየገዙ?';
+
+  @override
+  String get lifeVariantMoveRent => 'ኪራይ ወይም ሌላ';
+
+  @override
+  String get lifeVariantMoveBuy => 'ቤት መግዛት';
+
+  @override
+  String get assistantStepLifePlan => 'ዕቅድዎን በማየት ላይ';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'ዕቅድዎን በማዘመን ላይ';
+
+  @override
   String get lifePlanOwnStepHint => 'ለምሳሌ፦ ለትምህርት ቤቱ አሳውቅ';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'ማንበብ አቁም';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'ጮክ ብሎ ማንበብ በዚህ ስልክ ላይ አይገኝም።';
 
   @override
   String get lifePlanProofPack => 'የማስረጃ ጥቅል አዘጋጅ';
@@ -7430,6 +7465,57 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'የጉዳይ ቁጥር ተቀድቷል';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return '$time ተደውሏል';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return '$nameን ለማገድ የሚደወል ቁጥር';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'ከእያንዳንዱ ባንክ ድረ-ገጽ የተወሰደ። በካርድዎ ላይ ያለው ቁጥር የተለየ ከሆነ እሱን ይጠቀሙ።';
+
+  @override
+  String get lostWalletBankNotListed => 'ባንኬ በዝርዝሩ ውስጥ የለም';
+
+  @override
+  String get lostWalletNumberSaved => 'የማገጃ ቁጥር ተቀምጧል';
+
+  @override
+  String get lostWalletPickCard => 'ለእያንዳንዱ ካርድ ቁጥር ያክሉ';
+
+  @override
+  String get lostWalletSheetButton => 'የአደጋ ጊዜ ወረቀት';
+
+  @override
+  String get lostWalletSheetHint => 'የእያንዳንዱ ካርድ የማገጃ ቁጥር በአንድ ገጽ፣ ለማተም ወይም ከቦርሳዎ ርቆ ለማስቀመጥ።';
+
+  @override
+  String get lostWalletSheetTitle => 'የአደጋ ጊዜ የካርድ ወረቀት';
+
+  @override
+  String get lostWalletSheetIntro => 'ይህን ከቦርሳዎና ከስልክዎ ርቀው ያስቀምጡ። ከጠፉ ካርዶችዎን ለማገድ እነዚህን ቁጥሮች ይደውሉ።';
+
+  @override
+  String get lostWalletSheetCard => 'ካርድ';
+
+  @override
+  String get lostWalletSheetWhose => 'የማን';
+
+  @override
+  String get lostWalletSheetEnds => 'የመጨረሻ አሃዞች';
+
+  @override
+  String get lostWalletSheetCall => 'የሚደወል ቁጥር';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'የተሰራው $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'የጉዳይ ቁጥር ተቀምጧል';

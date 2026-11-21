@@ -7120,6 +7120,44 @@ class AppLocalizationsAz extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Öz addımınızı əlavə edin';
 
   @override
+  String get lifePlanWhoToTell => 'Kimə bildirmək lazımdır';
+
+  @override
+  String get lifePlanTellHeading => 'Bildirilməli təşkilatlar:';
+
+  @override
+  String get lifePlanTellAddress => 'Salam, mən köçmüşəm. Zəhmət olmasa hesabımdakı ünvanı yeniləyin: [yeni ünvan]. Təşəkkür edirəm.';
+
+  @override
+  String get lifePlanTellName => 'Salam, adım dəyişib. Zəhmət olmasa hesabımdakı adı yeniləyin: [yeni ad]. Lazım olsa, sübut göndərə bilərəm. Təşəkkür edirəm.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Keçən dəfəki öz addımlarımı əlavə et ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'İşinizdə nə baş verir?';
+
+  @override
+  String get lifeVariantJobLost => 'İşimi itirdim';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Kirayə edirsiniz, yoxsa alırsınız?';
+
+  @override
+  String get lifeVariantMoveRent => 'Kirayə və ya digər';
+
+  @override
+  String get lifeVariantMoveBuy => 'Ev almaq';
+
+  @override
+  String get assistantStepLifePlan => 'Planınız yoxlanılır';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Planınız yenilənir';
+
+  @override
   String get lifePlanOwnStepHint => 'Məsələn: Məktəbə bildirin';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Oxumağı dayandır';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Bu telefonda səsli oxuma mövcud deyil.';
 
   @override
   String get lifePlanProofPack => 'Sübut paketi yaradın';
@@ -7430,6 +7465,57 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'İş nömrəsi kopyalandı';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Zəng edilib: $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return '$name bloklamaq üçün nömrə';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Hər bankın öz saytından. Kartınızdakı nömrə fərqlidirsə, onu istifadə edin.';
+
+  @override
+  String get lostWalletBankNotListed => 'Bankım siyahıda yoxdur';
+
+  @override
+  String get lostWalletNumberSaved => 'Bloklama nömrəsi saxlanıldı';
+
+  @override
+  String get lostWalletPickCard => 'Hər kart üçün nömrə əlavə edin';
+
+  @override
+  String get lostWalletSheetButton => 'Təcili vərəq';
+
+  @override
+  String get lostWalletSheetHint => 'Hər kartın bloklama nömrəsi bir səhifədə — çap etmək və ya pul kisəsindən ayrı saxlamaq üçün.';
+
+  @override
+  String get lostWalletSheetTitle => 'Təcili kart vərəqi';
+
+  @override
+  String get lostWalletSheetIntro => 'Bunu pul kisəniz və telefonunuzdan ayrı saxlayın. İtsələr, kartları bloklamaq üçün bu nömrələrə zəng edin.';
+
+  @override
+  String get lostWalletSheetCard => 'Kart';
+
+  @override
+  String get lostWalletSheetWhose => 'Kimin';
+
+  @override
+  String get lostWalletSheetEnds => 'Son rəqəmlər';
+
+  @override
+  String get lostWalletSheetCall => 'Zəng ediləcək nömrə';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Hazırlanıb: $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'İş nömrəsi saxlanıldı';

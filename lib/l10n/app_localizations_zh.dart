@@ -7065,6 +7065,44 @@ class AppLocalizationsZh extends AppLocalizations {
   String get lifePlanAddOwnStep => '添加自己的步骤';
 
   @override
+  String get lifePlanWhoToTell => '需要通知谁';
+
+  @override
+  String get lifePlanTellHeading => '需要通知的机构：';
+
+  @override
+  String get lifePlanTellAddress => '您好，我已搬家。请将我账户上的地址更新为：[新地址]。谢谢。';
+
+  @override
+  String get lifePlanTellName => '您好，我的姓名已更改。请将我账户上的姓名更新为：[新姓名]。如有需要我可以提供证明。谢谢。';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return '添加我上次自己的步骤（$count）';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => '你的工作发生了什么？';
+
+  @override
+  String get lifeVariantJobLost => '我失业了';
+
+  @override
+  String get lifeVariantMoveQuestion => '你是租房还是买房？';
+
+  @override
+  String get lifeVariantMoveRent => '租房或其他';
+
+  @override
+  String get lifeVariantMoveBuy => '买房';
+
+  @override
+  String get assistantStepLifePlan => '正在查看你的计划';
+
+  @override
+  String get assistantStepLifePlanUpdate => '正在更新你的计划';
+
+  @override
   String get lifePlanOwnStepHint => '例如：通知学校';
 
   @override
@@ -7075,9 +7113,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => '停止朗读';
-
-  @override
-  String get lifePlanReadAloudUnavailable => '这部手机不支持朗读。';
 
   @override
   String get lifePlanProofPack => '制作证明材料包';
@@ -7374,6 +7409,57 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => '已复制案件编号';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return '已拨打 $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return '冻结$name的电话';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => '来自各银行官网。如果卡上印的号码不同，请以卡上为准。';
+
+  @override
+  String get lostWalletBankNotListed => '我的银行不在列表中';
+
+  @override
+  String get lostWalletNumberSaved => '已保存挂失电话';
+
+  @override
+  String get lostWalletPickCard => '为每张卡添加电话';
+
+  @override
+  String get lostWalletSheetButton => '应急表';
+
+  @override
+  String get lostWalletSheetHint => '所有卡的挂失电话印在一页上，可打印或与钱包分开保存。';
+
+  @override
+  String get lostWalletSheetTitle => '银行卡应急表';
+
+  @override
+  String get lostWalletSheetIntro => '请与钱包和手机分开保存。如果它们丢失，拨打这些电话冻结你的卡。';
+
+  @override
+  String get lostWalletSheetCard => '卡片';
+
+  @override
+  String get lostWalletSheetWhose => '持有人';
+
+  @override
+  String get lostWalletSheetEnds => '尾号';
+
+  @override
+  String get lostWalletSheetCall => '拨打电话';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return '制作于 $date';
+  }
 
   @override
   String get lostWalletCaseSaved => '已保存报案编号';
@@ -16601,6 +16687,44 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get lifePlanAddOwnStep => '添加自己的步骤';
 
   @override
+  String get lifePlanWhoToTell => '需要通知谁';
+
+  @override
+  String get lifePlanTellHeading => '需要通知的机构：';
+
+  @override
+  String get lifePlanTellAddress => '您好，我已搬家。请将我账户上的地址更新为：[新地址]。谢谢。';
+
+  @override
+  String get lifePlanTellName => '您好，我的姓名已更改。请将我账户上的姓名更新为：[新姓名]。如有需要我可以提供证明。谢谢。';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return '添加我上次自己的步骤（$count）';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => '你的工作发生了什么？';
+
+  @override
+  String get lifeVariantJobLost => '我失业了';
+
+  @override
+  String get lifeVariantMoveQuestion => '你是租房还是买房？';
+
+  @override
+  String get lifeVariantMoveRent => '租房或其他';
+
+  @override
+  String get lifeVariantMoveBuy => '买房';
+
+  @override
+  String get assistantStepLifePlan => '正在查看你的计划';
+
+  @override
+  String get assistantStepLifePlanUpdate => '正在更新你的计划';
+
+  @override
   String get lifePlanOwnStepHint => '例如：通知学校';
 
   @override
@@ -16611,9 +16735,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get lifePlanStopReading => '停止朗读';
-
-  @override
-  String get lifePlanReadAloudUnavailable => '这部手机不支持朗读。';
 
   @override
   String get lifePlanProofPack => '制作证明材料包';
@@ -16910,6 +17031,57 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get lostWalletCaseCopied => '已复制案件编号';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return '已拨打 $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return '冻结$name的电话';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => '来自各银行官网。如果卡上印的号码不同，请以卡上为准。';
+
+  @override
+  String get lostWalletBankNotListed => '我的银行不在列表中';
+
+  @override
+  String get lostWalletNumberSaved => '已保存挂失电话';
+
+  @override
+  String get lostWalletPickCard => '为每张卡添加电话';
+
+  @override
+  String get lostWalletSheetButton => '应急表';
+
+  @override
+  String get lostWalletSheetHint => '所有卡的挂失电话印在一页上，可打印或与钱包分开保存。';
+
+  @override
+  String get lostWalletSheetTitle => '银行卡应急表';
+
+  @override
+  String get lostWalletSheetIntro => '请与钱包和手机分开保存。如果它们丢失，拨打这些电话冻结你的卡。';
+
+  @override
+  String get lostWalletSheetCard => '卡片';
+
+  @override
+  String get lostWalletSheetWhose => '持有人';
+
+  @override
+  String get lostWalletSheetEnds => '尾号';
+
+  @override
+  String get lostWalletSheetCall => '拨打电话';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return '制作于 $date';
+  }
 
   @override
   String get lostWalletCaseSaved => '已保存报案编号';
@@ -26137,6 +26309,44 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get lifePlanAddOwnStep => '新增自己的步驟';
 
   @override
+  String get lifePlanWhoToTell => '需要通知誰';
+
+  @override
+  String get lifePlanTellHeading => '需要通知的機構：';
+
+  @override
+  String get lifePlanTellAddress => '您好，我已搬家。請將我帳戶上的地址更新為：［新地址］。謝謝。';
+
+  @override
+  String get lifePlanTellName => '您好，我的姓名已更改。請將我帳戶上的姓名更新為：［新姓名］。如有需要可提供證明。謝謝。';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return '加入我上次自己的步驟（$count）';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => '你的工作有什麼變化？';
+
+  @override
+  String get lifeVariantJobLost => '我失業了';
+
+  @override
+  String get lifeVariantMoveQuestion => '你是租屋還是買房？';
+
+  @override
+  String get lifeVariantMoveRent => '租屋或其他';
+
+  @override
+  String get lifeVariantMoveBuy => '買房';
+
+  @override
+  String get assistantStepLifePlan => '正在查看你的計畫';
+
+  @override
+  String get assistantStepLifePlanUpdate => '正在更新你的計畫';
+
+  @override
   String get lifePlanOwnStepHint => '例如：通知學校';
 
   @override
@@ -26147,9 +26357,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get lifePlanStopReading => '停止朗讀';
-
-  @override
-  String get lifePlanReadAloudUnavailable => '這支手機不支援朗讀。';
 
   @override
   String get lifePlanProofPack => '製作證明資料包';
@@ -26446,6 +26653,57 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get lostWalletCaseCopied => '已複製案件編號';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return '已撥打 $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return '停用$name的電話';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => '來自各銀行官網。如果卡上印的號碼不同，請以卡上為準。';
+
+  @override
+  String get lostWalletBankNotListed => '我的銀行不在列表中';
+
+  @override
+  String get lostWalletNumberSaved => '已儲存掛失電話';
+
+  @override
+  String get lostWalletPickCard => '為每張卡新增電話';
+
+  @override
+  String get lostWalletSheetButton => '緊急清單';
+
+  @override
+  String get lostWalletSheetHint => '所有卡的掛失電話印在一頁上，可列印或與皮夾分開保存。';
+
+  @override
+  String get lostWalletSheetTitle => '卡片緊急清單';
+
+  @override
+  String get lostWalletSheetIntro => '請與皮夾和手機分開保存。如果它們遺失，撥打這些電話停用你的卡。';
+
+  @override
+  String get lostWalletSheetCard => '卡片';
+
+  @override
+  String get lostWalletSheetWhose => '持有人';
+
+  @override
+  String get lostWalletSheetEnds => '末四碼';
+
+  @override
+  String get lostWalletSheetCall => '撥打電話';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return '製作於 $date';
+  }
 
   @override
   String get lostWalletCaseSaved => '已儲存報案編號';

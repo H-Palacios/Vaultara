@@ -7120,6 +7120,44 @@ class AppLocalizationsNl extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Eigen stap toevoegen';
 
   @override
+  String get lifePlanWhoToTell => 'Wie je moet laten weten';
+
+  @override
+  String get lifePlanTellHeading => 'Organisaties die het moeten weten:';
+
+  @override
+  String get lifePlanTellAddress => 'Hallo, ik ben verhuisd. Wilt u het adres op mijn account wijzigen in: [nieuw adres]. Dank u wel.';
+
+  @override
+  String get lifePlanTellName => 'Hallo, mijn naam is veranderd. Wilt u de naam op mijn account wijzigen in: [nieuwe naam]. Ik kan een bewijs sturen als dat nodig is. Dank u wel.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Mijn eigen stappen van de vorige keer toevoegen ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Wat gebeurt er met je baan?';
+
+  @override
+  String get lifeVariantJobLost => 'Ik ben mijn baan kwijt';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Huur je of koop je?';
+
+  @override
+  String get lifeVariantMoveRent => 'Huur of anders';
+
+  @override
+  String get lifeVariantMoveBuy => 'Een huis kopen';
+
+  @override
+  String get assistantStepLifePlan => 'Je plan wordt bekeken';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Je plan wordt bijgewerkt';
+
+  @override
   String get lifePlanOwnStepHint => 'Bijvoorbeeld: School inlichten';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Stoppen met voorlezen';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Voorlezen is niet beschikbaar op deze telefoon.';
 
   @override
   String get lifePlanProofPack => 'Bewijspakket maken';
@@ -7433,6 +7468,57 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Zaaknummer gekopieerd';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Gebeld $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Nummer om $name te blokkeren';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Van de eigen website van elke bank. Staat er een ander nummer op je pas, gebruik dat.';
+
+  @override
+  String get lostWalletBankNotListed => 'Mijn bank staat er niet bij';
+
+  @override
+  String get lostWalletNumberSaved => 'Blokkeernummer opgeslagen';
+
+  @override
+  String get lostWalletPickCard => 'Voeg een nummer toe voor elke pas';
+
+  @override
+  String get lostWalletSheetButton => 'Noodblad';
+
+  @override
+  String get lostWalletSheetHint => 'Het blokkeernummer van elke pas op één pagina, om te printen of los van je portemonnee te bewaren.';
+
+  @override
+  String get lostWalletSheetTitle => 'Noodblad voor passen';
+
+  @override
+  String get lostWalletSheetIntro => 'Bewaar het los van je portemonnee en telefoon. Raken ze weg, bel dan deze nummers om je passen te blokkeren.';
+
+  @override
+  String get lostWalletSheetCard => 'Pas';
+
+  @override
+  String get lostWalletSheetWhose => 'Van wie';
+
+  @override
+  String get lostWalletSheetEnds => 'Eindigt op';
+
+  @override
+  String get lostWalletSheetCall => 'Te bellen nummer';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Gemaakt op $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Nummer opgeslagen';

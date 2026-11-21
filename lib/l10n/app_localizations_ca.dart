@@ -7120,6 +7120,44 @@ class AppLocalizationsCa extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Afegeix un pas propi';
 
   @override
+  String get lifePlanWhoToTell => 'A qui avisar';
+
+  @override
+  String get lifePlanTellHeading => 'Organitzacions a qui avisar:';
+
+  @override
+  String get lifePlanTellAddress => 'Hola, m\'he mudat. Si us plau, actualitzeu l\'adreça del meu compte a: [nova adreça]. Gràcies.';
+
+  @override
+  String get lifePlanTellName => 'Hola, he canviat de nom. Si us plau, actualitzeu el nom del meu compte a: [nou nom]. Puc enviar-ne una prova si cal. Gràcies.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Afegeix els meus passos de l\'última vegada ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Què passa amb la teva feina?';
+
+  @override
+  String get lifeVariantJobLost => 'He perdut la feina';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Llogues o compres?';
+
+  @override
+  String get lifeVariantMoveRent => 'Lloguer o una altra cosa';
+
+  @override
+  String get lifeVariantMoveBuy => 'Compro un habitatge';
+
+  @override
+  String get assistantStepLifePlan => 'Comprovant el teu pla';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Actualitzant el teu pla';
+
+  @override
   String get lifePlanOwnStepHint => 'Per exemple: Avisar l\'escola';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Deixa de llegir';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'La lectura en veu alta no està disponible en aquest mòbil.';
 
   @override
   String get lifePlanProofPack => 'Crea un paquet de proves';
@@ -7433,6 +7468,57 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Número de cas copiat';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Trucat $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Número per bloquejar $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'De la web de cada banc. Si el número de la targeta és diferent, fes servir aquest.';
+
+  @override
+  String get lostWalletBankNotListed => 'El meu banc no hi és';
+
+  @override
+  String get lostWalletNumberSaved => 'Número de bloqueig desat';
+
+  @override
+  String get lostWalletPickCard => 'Afegeix un número per a cada targeta';
+
+  @override
+  String get lostWalletSheetButton => 'Full d\'emergència';
+
+  @override
+  String get lostWalletSheetHint => 'El número de bloqueig de cada targeta en una pàgina, per imprimir o guardar lluny de la cartera.';
+
+  @override
+  String get lostWalletSheetTitle => 'Full de targetes d\'emergència';
+
+  @override
+  String get lostWalletSheetIntro => 'Guarda\'l lluny de la cartera i del mòbil. Si es perden, truca a aquests números per bloquejar les targetes.';
+
+  @override
+  String get lostWalletSheetCard => 'Targeta';
+
+  @override
+  String get lostWalletSheetWhose => 'De qui';
+
+  @override
+  String get lostWalletSheetEnds => 'Acaba en';
+
+  @override
+  String get lostWalletSheetCall => 'Número per trucar';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Fet el $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Número de denúncia desat';

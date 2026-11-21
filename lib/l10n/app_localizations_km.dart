@@ -7063,6 +7063,44 @@ class AppLocalizationsKm extends AppLocalizations {
   String get lifePlanAddOwnStep => 'បន្ថែមជំហានផ្ទាល់ខ្លួន';
 
   @override
+  String get lifePlanWhoToTell => 'អ្នកដែលត្រូវប្រាប់';
+
+  @override
+  String get lifePlanTellHeading => 'អង្គភាពដែលត្រូវប្រាប់៖';
+
+  @override
+  String get lifePlanTellAddress => 'សួស្ដី ខ្ញុំបានផ្លាស់ទីលំនៅ។ សូមធ្វើបច្ចុប្បន្នភាពអាសយដ្ឋាននៅលើគណនីខ្ញុំទៅ៖ [អាសយដ្ឋានថ្មី]។ សូមអរគុណ។';
+
+  @override
+  String get lifePlanTellName => 'សួស្ដី ឈ្មោះរបស់ខ្ញុំបានផ្លាស់ប្ដូរ។ សូមធ្វើបច្ចុប្បន្នភាពឈ្មោះនៅលើគណនីខ្ញុំទៅ៖ [ឈ្មោះថ្មី]។ ខ្ញុំអាចផ្ញើភស្តុតាងបាន ប្រសិនបើត្រូវការ។ សូមអរគុណ។';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'បន្ថែមជំហានផ្ទាល់ខ្លួនពីលើកមុន ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'តើមានអ្វីកើតឡើងចំពោះការងាររបស់អ្នក?';
+
+  @override
+  String get lifeVariantJobLost => 'ខ្ញុំបាត់បង់ការងារ';
+
+  @override
+  String get lifeVariantMoveQuestion => 'តើអ្នកជួល ឬទិញ?';
+
+  @override
+  String get lifeVariantMoveRent => 'ជួល ឬផ្សេងទៀត';
+
+  @override
+  String get lifeVariantMoveBuy => 'ទិញផ្ទះ';
+
+  @override
+  String get assistantStepLifePlan => 'កំពុងពិនិត្យគម្រោងរបស់អ្នក';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'កំពុងធ្វើបច្ចុប្បន្នភាពគម្រោងរបស់អ្នក';
+
+  @override
   String get lifePlanOwnStepHint => 'ឧទាហរណ៍៖ ប្រាប់សាលា';
 
   @override
@@ -7073,9 +7111,6 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'ឈប់អាន';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'ការអានឮៗមិនមាននៅលើទូរស័ព្ទនេះទេ។';
 
   @override
   String get lifePlanProofPack => 'បង្កើតកញ្ចប់ភស្តុតាង';
@@ -7372,6 +7407,57 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'បានចម្លងលេខករណី';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'បានហៅ $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'លេខសម្រាប់បិទ $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'ពីគេហទំព័ររបស់ធនាគារនីមួយៗ។ បើលេខនៅលើកាតរបស់អ្នកខុសគ្នា សូមប្រើលេខនោះ។';
+
+  @override
+  String get lostWalletBankNotListed => 'ធនាគាររបស់ខ្ញុំមិនមានក្នុងបញ្ជី';
+
+  @override
+  String get lostWalletNumberSaved => 'បានរក្សាទុកលេខបិទ';
+
+  @override
+  String get lostWalletPickCard => 'បន្ថែមលេខសម្រាប់កាតនីមួយៗ';
+
+  @override
+  String get lostWalletSheetButton => 'សន្លឹកបន្ទាន់';
+
+  @override
+  String get lostWalletSheetHint => 'លេខបិទកាតនីមួយៗក្នុងមួយទំព័រ សម្រាប់បោះពុម្ព ឬរក្សាទុកឆ្ងាយពីកាបូប។';
+
+  @override
+  String get lostWalletSheetTitle => 'សន្លឹកកាតបន្ទាន់';
+
+  @override
+  String get lostWalletSheetIntro => 'រក្សាទុកវាឆ្ងាយពីកាបូប និងទូរសព្ទ។ បើវាបាត់ ហៅលេខទាំងនេះដើម្បីបិទកាតរបស់អ្នក។';
+
+  @override
+  String get lostWalletSheetCard => 'កាត';
+
+  @override
+  String get lostWalletSheetWhose => 'របស់អ្នកណា';
+
+  @override
+  String get lostWalletSheetEnds => 'បញ្ចប់ដោយ';
+
+  @override
+  String get lostWalletSheetCall => 'លេខត្រូវហៅ';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'បានធ្វើនៅ $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'បានរក្សាទុកលេខករណី';

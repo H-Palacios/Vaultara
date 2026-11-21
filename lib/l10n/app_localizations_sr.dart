@@ -7188,6 +7188,44 @@ class AppLocalizationsSr extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Додајте свој корак';
 
   @override
+  String get lifePlanWhoToTell => 'Кога обавестити';
+
+  @override
+  String get lifePlanTellHeading => 'Организације које треба обавестити:';
+
+  @override
+  String get lifePlanTellAddress => 'Поштовани, преселио/ла сам се. Молим вас да адресу на мом налогу промените у: [нова адреса]. Хвала.';
+
+  @override
+  String get lifePlanTellName => 'Поштовани, променио/ла сам име. Молим вас да име на мом налогу промените у: [ново име]. Могу послати доказ ако треба. Хвала.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Додај моје кораке од прошлог пута ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Шта се дешава са вашим послом?';
+
+  @override
+  String get lifeVariantJobLost => 'Изгубио/ла сам посао';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Изнајмљујете или купујете?';
+
+  @override
+  String get lifeVariantMoveRent => 'Закуп или друго';
+
+  @override
+  String get lifeVariantMoveBuy => 'Купујем дом';
+
+  @override
+  String get assistantStepLifePlan => 'Проверавам ваш план';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Ажурирам ваш план';
+
+  @override
   String get lifePlanOwnStepHint => 'На пример: Обавестите школу';
 
   @override
@@ -7198,9 +7236,6 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Заустави читање';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Читање наглас није доступно на овом телефону.';
 
   @override
   String get lifePlanProofPack => 'Направите пакет доказа';
@@ -7499,6 +7534,57 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Број случаја је копиран';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Позвано $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Број за блокирање: $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Са сајта сваке банке. Ако је број на картици другачији, користите њега.';
+
+  @override
+  String get lostWalletBankNotListed => 'Моја банка није на листи';
+
+  @override
+  String get lostWalletNumberSaved => 'Број за блокирање сачуван';
+
+  @override
+  String get lostWalletPickCard => 'Додајте број за сваку картицу';
+
+  @override
+  String get lostWalletSheetButton => 'Лист за хитне случајеве';
+
+  @override
+  String get lostWalletSheetHint => 'Број за блокирање сваке картице на једној страни, за штампу или чување даље од новчаника.';
+
+  @override
+  String get lostWalletSheetTitle => 'Лист картица за хитне случајеве';
+
+  @override
+  String get lostWalletSheetIntro => 'Чувајте га даље од новчаника и телефона. Ако нестану, позовите ове бројеве да блокирате картице.';
+
+  @override
+  String get lostWalletSheetCard => 'Картица';
+
+  @override
+  String get lostWalletSheetWhose => 'Чија';
+
+  @override
+  String get lostWalletSheetEnds => 'Завршава се на';
+
+  @override
+  String get lostWalletSheetCall => 'Број за позив';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Направљено $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Број пријаве сачуван';
@@ -16882,6 +16968,44 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get lifePlanAddOwnStep => 'Додајте свој корак';
 
   @override
+  String get lifePlanWhoToTell => 'Кога обавестити';
+
+  @override
+  String get lifePlanTellHeading => 'Организације које треба обавестити:';
+
+  @override
+  String get lifePlanTellAddress => 'Поштовани, преселио/ла сам се. Молим вас да адресу на мом налогу промените у: [нова адреса]. Хвала.';
+
+  @override
+  String get lifePlanTellName => 'Поштовани, променио/ла сам име. Молим вас да име на мом налогу промените у: [ново име]. Могу послати доказ ако треба. Хвала.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Додај моје кораке од прошлог пута ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Шта се дешава са вашим послом?';
+
+  @override
+  String get lifeVariantJobLost => 'Изгубио/ла сам посао';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Изнајмљујете или купујете?';
+
+  @override
+  String get lifeVariantMoveRent => 'Закуп или друго';
+
+  @override
+  String get lifeVariantMoveBuy => 'Купујем дом';
+
+  @override
+  String get assistantStepLifePlan => 'Проверавам ваш план';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Ажурирам ваш план';
+
+  @override
   String get lifePlanOwnStepHint => 'На пример: Обавестите школу';
 
   @override
@@ -16892,9 +17016,6 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get lifePlanStopReading => 'Заустави читање';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Читање наглас није доступно на овом телефону.';
 
   @override
   String get lifePlanProofPack => 'Направите пакет доказа';
@@ -17193,6 +17314,57 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get lostWalletCaseCopied => 'Број случаја је копиран';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Позвано $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Број за блокирање: $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Са сајта сваке банке. Ако је број на картици другачији, користите њега.';
+
+  @override
+  String get lostWalletBankNotListed => 'Моја банка није на листи';
+
+  @override
+  String get lostWalletNumberSaved => 'Број за блокирање сачуван';
+
+  @override
+  String get lostWalletPickCard => 'Додајте број за сваку картицу';
+
+  @override
+  String get lostWalletSheetButton => 'Лист за хитне случајеве';
+
+  @override
+  String get lostWalletSheetHint => 'Број за блокирање сваке картице на једној страни, за штампу или чување даље од новчаника.';
+
+  @override
+  String get lostWalletSheetTitle => 'Лист картица за хитне случајеве';
+
+  @override
+  String get lostWalletSheetIntro => 'Чувајте га даље од новчаника и телефона. Ако нестану, позовите ове бројеве да блокирате картице.';
+
+  @override
+  String get lostWalletSheetCard => 'Картица';
+
+  @override
+  String get lostWalletSheetWhose => 'Чија';
+
+  @override
+  String get lostWalletSheetEnds => 'Завршава се на';
+
+  @override
+  String get lostWalletSheetCall => 'Број за позив';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Направљено $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Број пријаве сачуван';
@@ -26572,6 +26744,44 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get lifePlanAddOwnStep => 'Dodajte svoj korak';
 
   @override
+  String get lifePlanWhoToTell => 'Koga obavestiti';
+
+  @override
+  String get lifePlanTellHeading => 'Organizacije koje treba obavestiti:';
+
+  @override
+  String get lifePlanTellAddress => 'Poštovani, preselio/la sam se. Molim vas da adresu na mom nalogu promenite u: [nova adresa]. Hvala.';
+
+  @override
+  String get lifePlanTellName => 'Poštovani, promenio/la sam ime. Molim vas da ime na mom nalogu promenite u: [novo ime]. Mogu poslati dokaz ako treba. Hvala.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Dodaj moje korake od prošlog puta ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Šta se dešava sa vašim poslom?';
+
+  @override
+  String get lifeVariantJobLost => 'Izgubio/la sam posao';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Iznajmljujete ili kupujete?';
+
+  @override
+  String get lifeVariantMoveRent => 'Zakup ili drugo';
+
+  @override
+  String get lifeVariantMoveBuy => 'Kupujem dom';
+
+  @override
+  String get assistantStepLifePlan => 'Proveravam vaš plan';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Ažuriram vaš plan';
+
+  @override
   String get lifePlanOwnStepHint => 'Na primer: Obavestite školu';
 
   @override
@@ -26582,9 +26792,6 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get lifePlanStopReading => 'Zaustavi čitanje';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Čitanje naglas nije dostupno na ovom telefonu.';
 
   @override
   String get lifePlanProofPack => 'Napravite paket dokaza';
@@ -26883,6 +27090,57 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get lostWalletCaseCopied => 'Broj slučaja je kopiran';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Pozvano $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Broj za blokiranje: $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Sa sajta svake banke. Ako je broj na kartici drugačiji, koristite njega.';
+
+  @override
+  String get lostWalletBankNotListed => 'Moja banka nije na listi';
+
+  @override
+  String get lostWalletNumberSaved => 'Broj za blokiranje sačuvan';
+
+  @override
+  String get lostWalletPickCard => 'Dodajte broj za svaku karticu';
+
+  @override
+  String get lostWalletSheetButton => 'List za hitne slučajeve';
+
+  @override
+  String get lostWalletSheetHint => 'Broj za blokiranje svake kartice na jednoj strani, za štampu ili čuvanje dalje od novčanika.';
+
+  @override
+  String get lostWalletSheetTitle => 'List kartica za hitne slučajeve';
+
+  @override
+  String get lostWalletSheetIntro => 'Čuvajte ga dalje od novčanika i telefona. Ako nestanu, pozovite ove brojeve da blokirate kartice.';
+
+  @override
+  String get lostWalletSheetCard => 'Kartica';
+
+  @override
+  String get lostWalletSheetWhose => 'Čija';
+
+  @override
+  String get lostWalletSheetEnds => 'Završava se na';
+
+  @override
+  String get lostWalletSheetCall => 'Broj za poziv';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Napravljeno $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Broj prijave sačuvan';

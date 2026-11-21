@@ -7120,6 +7120,44 @@ class AppLocalizationsNn extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Legg til eige steg';
 
   @override
+  String get lifePlanWhoToTell => 'Kven som skal få beskjed';
+
+  @override
+  String get lifePlanTellHeading => 'Organisasjonar som skal få beskjed:';
+
+  @override
+  String get lifePlanTellAddress => 'Hei, eg har flytta. Ver venleg og oppdater adressa på kontoen min til: [ny adresse]. Takk.';
+
+  @override
+  String get lifePlanTellName => 'Hei, namnet mitt er endra. Ver venleg og oppdater namnet på kontoen min til: [nytt namn]. Eg kan sende dokumentasjon om nødvendig. Takk.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Legg til mine eigne steg frå sist ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Kva skjer med jobben din?';
+
+  @override
+  String get lifeVariantJobLost => 'Eg mista jobben';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Leiger eller kjøper du?';
+
+  @override
+  String get lifeVariantMoveRent => 'Leige eller anna';
+
+  @override
+  String get lifeVariantMoveBuy => 'Kjøper bustad';
+
+  @override
+  String get assistantStepLifePlan => 'Sjekkar planen din';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Oppdaterer planen din';
+
+  @override
   String get lifePlanOwnStepHint => 'Til dømes: Sei frå til skulen';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Stopp opplesing';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Opplesing er ikkje tilgjengeleg på denne telefonen.';
 
   @override
   String get lifePlanProofPack => 'Lag ein dokumentpakke';
@@ -7433,6 +7468,57 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Saksnummer kopiert';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Ringt $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Nummer for å sperre $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Frå nettsidene til kvar bank. Står det eit anna nummer på kortet ditt, bruk det.';
+
+  @override
+  String get lostWalletBankNotListed => 'Banken min står ikkje på lista';
+
+  @override
+  String get lostWalletNumberSaved => 'Sperrenummer lagra';
+
+  @override
+  String get lostWalletPickCard => 'Legg til eit nummer for kvart kort';
+
+  @override
+  String get lostWalletSheetButton => 'Naudark';
+
+  @override
+  String get lostWalletSheetHint => 'Sperrenummeret til kvart kort på éi side, til å skrive ut eller ha borte frå lommeboka.';
+
+  @override
+  String get lostWalletSheetTitle => 'Naudark for kort';
+
+  @override
+  String get lostWalletSheetIntro => 'Ta vare på det borte frå lommebok og telefon. Viss dei blir borte, ring desse nummera for å sperre korta.';
+
+  @override
+  String get lostWalletSheetCard => 'Kort';
+
+  @override
+  String get lostWalletSheetWhose => 'Kven sitt';
+
+  @override
+  String get lostWalletSheetEnds => 'Sluttar på';
+
+  @override
+  String get lostWalletSheetCall => 'Nummer å ringje';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Laga $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Saksnummer lagra';

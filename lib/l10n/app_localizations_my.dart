@@ -7063,6 +7063,44 @@ class AppLocalizationsMy extends AppLocalizations {
   String get lifePlanAddOwnStep => 'ကိုယ်ပိုင်အဆင့် ထည့်ပါ';
 
   @override
+  String get lifePlanWhoToTell => 'အသိပေးရမည့်သူများ';
+
+  @override
+  String get lifePlanTellHeading => 'အသိပေးရမည့် အဖွဲ့အစည်းများ-';
+
+  @override
+  String get lifePlanTellAddress => 'မင်္ဂလာပါ၊ ကျွန်ုပ် အိမ်ပြောင်းထားပါသည်။ ကျွန်ုပ်၏ အကောင့်လိပ်စာကို ဤသို့ ပြင်ပေးပါ- [လိပ်စာအသစ်]။ ကျေးဇူးတင်ပါသည်။';
+
+  @override
+  String get lifePlanTellName => 'မင်္ဂလာပါ၊ ကျွန်ုပ်၏ အမည် ပြောင်းသွားပါသည်။ ကျွန်ုပ်၏ အကောင့်အမည်ကို ဤသို့ ပြင်ပေးပါ- [အမည်အသစ်]။ လိုအပ်ပါက အထောက်အထား ပို့ပေးနိုင်ပါသည်။ ကျေးဇူးတင်ပါသည်။';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'ယခင်အကြိမ်က ကိုယ်ပိုင်အဆင့်များ ထည့်ရန် ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'သင့်အလုပ်မှာ ဘာဖြစ်နေပါသလဲ?';
+
+  @override
+  String get lifeVariantJobLost => 'အလုပ်ပြုတ်သွားသည်';
+
+  @override
+  String get lifeVariantMoveQuestion => 'ငှားမလား ဝယ်မလား?';
+
+  @override
+  String get lifeVariantMoveRent => 'ငှားရမ်းခြင်း သို့မဟုတ် အခြား';
+
+  @override
+  String get lifeVariantMoveBuy => 'အိမ်ဝယ်ခြင်း';
+
+  @override
+  String get assistantStepLifePlan => 'သင့်အစီအစဉ်ကို စစ်ဆေးနေသည်';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'သင့်အစီအစဉ်ကို အပ်ဒိတ်လုပ်နေသည်';
+
+  @override
   String get lifePlanOwnStepHint => 'ဥပမာ - ကျောင်းကို ပြောပါ';
 
   @override
@@ -7073,9 +7111,6 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'ဖတ်ခြင်း ရပ်ပါ';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'ဤဖုန်းတွင် အသံထွက်ဖတ်ခြင်း မရနိုင်ပါ။';
 
   @override
   String get lifePlanProofPack => 'သက်သေအထောက်အထား အစုံ ပြုလုပ်ပါ';
@@ -7372,6 +7407,57 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'အမှုနံပါတ် ကူးယူပြီးပါပြီ';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'ခေါ်ပြီး $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return '$name ပိတ်ရန် နံပါတ်';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'ဘဏ်တစ်ခုချင်းစီ၏ ဝက်ဘ်ဆိုက်မှ ဖြစ်သည်။ ကတ်ပေါ်ရှိ နံပါတ် ကွဲပြားပါက ၎င်းကို သုံးပါ။';
+
+  @override
+  String get lostWalletBankNotListed => 'ကျွန်ုပ်၏ဘဏ် စာရင်းတွင် မရှိပါ';
+
+  @override
+  String get lostWalletNumberSaved => 'ပိတ်ရန်နံပါတ် သိမ်းပြီးပါပြီ';
+
+  @override
+  String get lostWalletPickCard => 'ကတ်တိုင်းအတွက် နံပါတ်ထည့်ပါ';
+
+  @override
+  String get lostWalletSheetButton => 'အရေးပေါ် စာရွက်';
+
+  @override
+  String get lostWalletSheetHint => 'ကတ်တိုင်း၏ ပိတ်ရန်နံပါတ်ကို စာမျက်နှာတစ်ခုတွင်၊ ပုံနှိပ်ရန် သို့မဟုတ် ပိုက်ဆံအိတ်နှင့် ဝေးဝေး သိမ်းရန်။';
+
+  @override
+  String get lostWalletSheetTitle => 'အရေးပေါ် ကတ်စာရွက်';
+
+  @override
+  String get lostWalletSheetIntro => 'ပိုက်ဆံအိတ်နှင့် ဖုန်းနှင့် ဝေးဝေး သိမ်းပါ။ ပျောက်သွားပါက ကတ်များပိတ်ရန် ဤနံပါတ်များကို ခေါ်ပါ။';
+
+  @override
+  String get lostWalletSheetCard => 'ကတ်';
+
+  @override
+  String get lostWalletSheetWhose => 'ဘယ်သူ့ဟာ';
+
+  @override
+  String get lostWalletSheetEnds => 'နောက်ဆုံးဂဏန်း';
+
+  @override
+  String get lostWalletSheetCall => 'ခေါ်ရမည့်နံပါတ်';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'ပြုလုပ်သည့်ရက် $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'အမှုနံပါတ် သိမ်းပြီး';

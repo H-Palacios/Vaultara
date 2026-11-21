@@ -7060,6 +7060,44 @@ class AppLocalizationsId extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Tambah langkah sendiri';
 
   @override
+  String get lifePlanWhoToTell => 'Siapa yang perlu diberi tahu';
+
+  @override
+  String get lifePlanTellHeading => 'Organisasi yang perlu diberi tahu:';
+
+  @override
+  String get lifePlanTellAddress => 'Halo, saya sudah pindah. Mohon perbarui alamat di akun saya menjadi: [alamat baru]. Terima kasih.';
+
+  @override
+  String get lifePlanTellName => 'Halo, nama saya sudah berubah. Mohon perbarui nama di akun saya menjadi: [nama baru]. Saya bisa mengirim bukti jika diperlukan. Terima kasih.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Tambahkan langkah saya dari terakhir kali ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Apa yang terjadi dengan pekerjaan Anda?';
+
+  @override
+  String get lifeVariantJobLost => 'Saya kehilangan pekerjaan';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Menyewa atau membeli?';
+
+  @override
+  String get lifeVariantMoveRent => 'Sewa atau lainnya';
+
+  @override
+  String get lifeVariantMoveBuy => 'Membeli rumah';
+
+  @override
+  String get assistantStepLifePlan => 'Memeriksa rencana Anda';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Memperbarui rencana Anda';
+
+  @override
   String get lifePlanOwnStepHint => 'Misalnya: Beri tahu sekolah';
 
   @override
@@ -7070,9 +7108,6 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Berhenti membaca';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Fitur bacakan tidak tersedia di ponsel ini.';
 
   @override
   String get lifePlanProofPack => 'Buat paket bukti';
@@ -7369,6 +7404,57 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Nomor kasus disalin';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Ditelepon $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Nomor untuk memblokir $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Dari situs resmi tiap bank. Jika nomor di kartu Anda berbeda, gunakan itu.';
+
+  @override
+  String get lostWalletBankNotListed => 'Bank saya tidak ada di daftar';
+
+  @override
+  String get lostWalletNumberSaved => 'Nomor blokir disimpan';
+
+  @override
+  String get lostWalletPickCard => 'Tambahkan nomor untuk tiap kartu';
+
+  @override
+  String get lostWalletSheetButton => 'Lembar darurat';
+
+  @override
+  String get lostWalletSheetHint => 'Nomor blokir setiap kartu dalam satu halaman, untuk dicetak atau disimpan jauh dari dompet.';
+
+  @override
+  String get lostWalletSheetTitle => 'Lembar kartu darurat';
+
+  @override
+  String get lostWalletSheetIntro => 'Simpan jauh dari dompet dan ponsel. Jika hilang, hubungi nomor-nomor ini untuk memblokir kartu Anda.';
+
+  @override
+  String get lostWalletSheetCard => 'Kartu';
+
+  @override
+  String get lostWalletSheetWhose => 'Milik';
+
+  @override
+  String get lostWalletSheetEnds => 'Berakhiran';
+
+  @override
+  String get lostWalletSheetCall => 'Nomor untuk ditelepon';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Dibuat $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Nomor laporan disimpan';

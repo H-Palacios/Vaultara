@@ -7120,6 +7120,44 @@ class AppLocalizationsXh extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Yongeza elakho inyathelo';
 
   @override
+  String get lifePlanWhoToTell => 'Ngubani ekufuneka umxelele';
+
+  @override
+  String get lifePlanTellHeading => 'Imibutho ekufuneka uyixelele:';
+
+  @override
+  String get lifePlanTellAddress => 'Molo, ndifudukile. Nceda nihlaziye idilesi kwi-akhawunti yam ibe: [idilesi entsha]. Enkosi.';
+
+  @override
+  String get lifePlanTellName => 'Molo, igama lam litshintshile. Nceda nihlaziye igama kwi-akhawunti yam libe: [igama elitsha]. Ndingathumela ubungqina ukuba kuyafuneka. Enkosi.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Yongeza amanyathelo am angaphambili ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Kwenzeka ntoni ngomsebenzi wakho?';
+
+  @override
+  String get lifeVariantJobLost => 'Ndiphulukene nomsebenzi';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Uqesha okanye uyathenga?';
+
+  @override
+  String get lifeVariantMoveRent => 'Ukuqesha okanye okunye';
+
+  @override
+  String get lifeVariantMoveBuy => 'Ukuthenga ikhaya';
+
+  @override
+  String get assistantStepLifePlan => 'Kujongwa isicwangciso sakho';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Kuhlaziywa isicwangciso sakho';
+
+  @override
   String get lifePlanOwnStepHint => 'Umzekelo: Xelela isikolo';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Yeka ukufunda';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Ukufunda ngokuvakalayo akufumaneki kule fowuni.';
 
   @override
   String get lifePlanProofPack => 'Yenza ipakethe yobungqina';
@@ -7430,6 +7465,57 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Inombolo yetyala ikhutshelwe';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Kufowunwe $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Inombolo yokuvala i-$name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Kwiwebhusayithi yebhanki nganye. Ukuba inombolo ekhadini lakho yahlukile, sebenzisa leyo.';
+
+  @override
+  String get lostWalletBankNotListed => 'Ibhanki yam ayikho kuluhlu';
+
+  @override
+  String get lostWalletNumberSaved => 'Inombolo yokuvala igciniwe';
+
+  @override
+  String get lostWalletPickCard => 'Yongeza inombolo kwikhadi ngalinye';
+
+  @override
+  String get lostWalletSheetButton => 'Iphepha likaxakeka';
+
+  @override
+  String get lostWalletSheetHint => 'Inombolo yokuvala yekhadi ngalinye kwiphepha elinye, ukuze uyiprinte okanye uyigcine kude nesipaji.';
+
+  @override
+  String get lostWalletSheetTitle => 'Iphepha lamakhadi likaxakeka';
+
+  @override
+  String get lostWalletSheetIntro => 'Ligcine kude nesipaji nefowuni. Ukuba ziyalahleka, fowunela ezi nombolo ukuze uvale amakhadi akho.';
+
+  @override
+  String get lostWalletSheetCard => 'Ikhadi';
+
+  @override
+  String get lostWalletSheetWhose => 'Ngelikabani';
+
+  @override
+  String get lostWalletSheetEnds => 'Liphela ngo';
+
+  @override
+  String get lostWalletSheetCall => 'Inombolo yokufowuna';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Lenziwe $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Inombolo yetyala igciniwe';

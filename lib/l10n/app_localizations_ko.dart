@@ -7065,6 +7065,44 @@ class AppLocalizationsKo extends AppLocalizations {
   String get lifePlanAddOwnStep => '내 단계 추가';
 
   @override
+  String get lifePlanWhoToTell => '알릴 곳';
+
+  @override
+  String get lifePlanTellHeading => '알려야 할 곳:';
+
+  @override
+  String get lifePlanTellAddress => '안녕하세요, 이사했습니다. 제 계정의 주소를 다음으로 변경해 주세요: [새 주소]. 감사합니다.';
+
+  @override
+  String get lifePlanTellName => '안녕하세요, 이름이 바뀌었습니다. 제 계정의 이름을 다음으로 변경해 주세요: [새 이름]. 필요하시면 증빙을 보내드리겠습니다. 감사합니다.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return '지난번 내 단계 추가하기 ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => '직장에 무슨 일이 있나요?';
+
+  @override
+  String get lifeVariantJobLost => '일자리를 잃었어요';
+
+  @override
+  String get lifeVariantMoveQuestion => '임대인가요, 구매인가요?';
+
+  @override
+  String get lifeVariantMoveRent => '임대 또는 기타';
+
+  @override
+  String get lifeVariantMoveBuy => '집 구매';
+
+  @override
+  String get assistantStepLifePlan => '계획을 확인하는 중';
+
+  @override
+  String get assistantStepLifePlanUpdate => '계획을 업데이트하는 중';
+
+  @override
   String get lifePlanOwnStepHint => '예: 학교에 알리기';
 
   @override
@@ -7075,9 +7113,6 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => '읽기 중지';
-
-  @override
-  String get lifePlanReadAloudUnavailable => '이 휴대폰에서는 소리 내어 읽기를 사용할 수 없어요.';
 
   @override
   String get lifePlanProofPack => '증빙 패키지 만들기';
@@ -7374,6 +7409,57 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => '사건 번호를 복사했어요';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return '$time에 전화함';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return '$name 정지 번호';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => '각 은행 공식 웹사이트에서 가져왔어요. 카드에 다른 번호가 있으면 그 번호를 쓰세요.';
+
+  @override
+  String get lostWalletBankNotListed => '내 은행이 목록에 없어요';
+
+  @override
+  String get lostWalletNumberSaved => '정지 번호를 저장했어요';
+
+  @override
+  String get lostWalletPickCard => '카드마다 번호 추가하기';
+
+  @override
+  String get lostWalletSheetButton => '비상 시트';
+
+  @override
+  String get lostWalletSheetHint => '모든 카드의 정지 번호를 한 장에 담았어요. 인쇄하거나 지갑과 따로 보관하세요.';
+
+  @override
+  String get lostWalletSheetTitle => '카드 비상 시트';
+
+  @override
+  String get lostWalletSheetIntro => '지갑과 휴대폰과 떨어진 곳에 보관하세요. 잃어버리면 이 번호로 전화해 카드를 정지하세요.';
+
+  @override
+  String get lostWalletSheetCard => '카드';
+
+  @override
+  String get lostWalletSheetWhose => '소유자';
+
+  @override
+  String get lostWalletSheetEnds => '끝자리';
+
+  @override
+  String get lostWalletSheetCall => '전화번호';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return '$date 작성';
+  }
 
   @override
   String get lostWalletCaseSaved => '사건 번호 저장됨';

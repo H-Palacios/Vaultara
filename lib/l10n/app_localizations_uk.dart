@@ -7263,6 +7263,44 @@ class AppLocalizationsUk extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Додати свій крок';
 
   @override
+  String get lifePlanWhoToTell => 'Кому повідомити';
+
+  @override
+  String get lifePlanTellHeading => 'Організації, яким треба повідомити:';
+
+  @override
+  String get lifePlanTellAddress => 'Добрий день, я переїхав(ла). Будь ласка, змініть адресу в моєму акаунті на: [нова адреса]. Дякую.';
+
+  @override
+  String get lifePlanTellName => 'Добрий день, у мене змінилося ім\'я. Будь ласка, змініть ім\'я в моєму акаунті на: [нове ім\'я]. За потреби можу надіслати підтвердження. Дякую.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Додати мої кроки з минулого разу ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Що відбувається з вашою роботою?';
+
+  @override
+  String get lifeVariantJobLost => 'Я втратив(ла) роботу';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Орендуєте чи купуєте?';
+
+  @override
+  String get lifeVariantMoveRent => 'Оренда або інше';
+
+  @override
+  String get lifeVariantMoveBuy => 'Купую житло';
+
+  @override
+  String get assistantStepLifePlan => 'Перевіряємо ваш план';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Оновлюємо ваш план';
+
+  @override
   String get lifePlanOwnStepHint => 'Наприклад: Повідомити школу';
 
   @override
@@ -7273,9 +7311,6 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Зупинити читання';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Читання вголос недоступне на цьому телефоні.';
 
   @override
   String get lifePlanProofPack => 'Створити пакет підтверджень';
@@ -7575,6 +7610,57 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Номер справи скопійовано';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Дзвінок $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Номер для блокування: $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'З сайту кожного банку. Якщо на картці інший номер, використовуйте його.';
+
+  @override
+  String get lostWalletBankNotListed => 'Мого банку немає в списку';
+
+  @override
+  String get lostWalletNumberSaved => 'Номер для блокування збережено';
+
+  @override
+  String get lostWalletPickCard => 'Додайте номер для кожної картки';
+
+  @override
+  String get lostWalletSheetButton => 'Екстрений аркуш';
+
+  @override
+  String get lostWalletSheetHint => 'Номери для блокування всіх карток на одній сторінці — роздрукувати або зберігати окремо від гаманця.';
+
+  @override
+  String get lostWalletSheetTitle => 'Екстрений аркуш карток';
+
+  @override
+  String get lostWalletSheetIntro => 'Зберігайте його окремо від гаманця й телефона. Якщо вони зникнуть, дзвоніть на ці номери, щоб заблокувати картки.';
+
+  @override
+  String get lostWalletSheetCard => 'Картка';
+
+  @override
+  String get lostWalletSheetWhose => 'Чия';
+
+  @override
+  String get lostWalletSheetEnds => 'Останні цифри';
+
+  @override
+  String get lostWalletSheetCall => 'Куди дзвонити';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Створено $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Номер заяви збережено';

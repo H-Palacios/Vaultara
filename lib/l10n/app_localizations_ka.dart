@@ -7120,6 +7120,44 @@ class AppLocalizationsKa extends AppLocalizations {
   String get lifePlanAddOwnStep => 'საკუთარი ნაბიჯის დამატება';
 
   @override
+  String get lifePlanWhoToTell => 'ვის აცნობოთ';
+
+  @override
+  String get lifePlanTellHeading => 'ორგანიზაციები, რომლებსაც უნდა აცნობოთ:';
+
+  @override
+  String get lifePlanTellAddress => 'გამარჯობა, საცხოვრებელი შევიცვალე. გთხოვთ, ჩემს ანგარიშზე მისამართი შეცვალოთ: [ახალი მისამართი]. გმადლობთ.';
+
+  @override
+  String get lifePlanTellName => 'გამარჯობა, სახელი შევიცვალე. გთხოვთ, ჩემს ანგარიშზე სახელი შეცვალოთ: [ახალი სახელი]. საჭიროების შემთხვევაში დამადასტურებელს გამოგიგზავნით. გმადლობთ.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'წინა ჯერის ჩემი ნაბიჯების დამატება ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'რა ხდება თქვენს სამსახურთან?';
+
+  @override
+  String get lifeVariantJobLost => 'სამსახური დავკარგე';
+
+  @override
+  String get lifeVariantMoveQuestion => 'ქირაობთ თუ ყიდულობთ?';
+
+  @override
+  String get lifeVariantMoveRent => 'ქირა ან სხვა';
+
+  @override
+  String get lifeVariantMoveBuy => 'სახლის ყიდვა';
+
+  @override
+  String get assistantStepLifePlan => 'თქვენი გეგმის შემოწმება';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'თქვენი გეგმის განახლება';
+
+  @override
   String get lifePlanOwnStepHint => 'მაგალითად: სკოლას შევატყობინო';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'წაკითხვის შეჩერება';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'ამ ტელეფონზე ხმამაღლა წაკითხვა მიუწვდომელია.';
 
   @override
   String get lifePlanProofPack => 'მტკიცებულებების ნაკრების შექმნა';
@@ -7430,6 +7465,57 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'საქმის ნომერი დაკოპირდა';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'დაირეკა $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return '$name-ის დაბლოკვის ნომერი';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'თითოეული ბანკის საიტიდან. თუ ბარათზე სხვა ნომერია, ის გამოიყენეთ.';
+
+  @override
+  String get lostWalletBankNotListed => 'ჩემი ბანკი სიაში არ არის';
+
+  @override
+  String get lostWalletNumberSaved => 'დაბლოკვის ნომერი შენახულია';
+
+  @override
+  String get lostWalletPickCard => 'დაამატეთ ნომერი თითოეულ ბარათს';
+
+  @override
+  String get lostWalletSheetButton => 'საგანგებო ფურცელი';
+
+  @override
+  String get lostWalletSheetHint => 'ყველა ბარათის დაბლოკვის ნომერი ერთ გვერდზე, დასაბეჭდად ან საფულისგან მოშორებით შესანახად.';
+
+  @override
+  String get lostWalletSheetTitle => 'ბარათების საგანგებო ფურცელი';
+
+  @override
+  String get lostWalletSheetIntro => 'შეინახეთ საფულისა და ტელეფონისგან მოშორებით. თუ დაიკარგება, დარეკეთ ამ ნომრებზე ბარათების დასაბლოკად.';
+
+  @override
+  String get lostWalletSheetCard => 'ბარათი';
+
+  @override
+  String get lostWalletSheetWhose => 'ვისი';
+
+  @override
+  String get lostWalletSheetEnds => 'ბოლოვდება';
+
+  @override
+  String get lostWalletSheetCall => 'დასარეკი ნომერი';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'შექმნილია $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'საქმის ნომერი შენახულია';

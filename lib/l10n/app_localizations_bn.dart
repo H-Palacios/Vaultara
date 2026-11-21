@@ -7120,6 +7120,44 @@ class AppLocalizationsBn extends AppLocalizations {
   String get lifePlanAddOwnStep => 'নিজের ধাপ যোগ করুন';
 
   @override
+  String get lifePlanWhoToTell => 'কাকে জানাতে হবে';
+
+  @override
+  String get lifePlanTellHeading => 'যেসব প্রতিষ্ঠানকে জানাতে হবে:';
+
+  @override
+  String get lifePlanTellAddress => 'নমস্কার, আমি ঠিকানা বদলেছি। অনুগ্রহ করে আমার অ্যাকাউন্টের ঠিকানা এটিতে আপডেট করুন: [নতুন ঠিকানা]। ধন্যবাদ।';
+
+  @override
+  String get lifePlanTellName => 'নমস্কার, আমার নাম বদলেছে। অনুগ্রহ করে আমার অ্যাকাউন্টের নাম এটিতে আপডেট করুন: [নতুন নাম]। প্রয়োজনে প্রমাণ পাঠাতে পারি। ধন্যবাদ।';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'গতবারের আমার নিজের ধাপগুলো যোগ করুন ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'আপনার কাজে কী হচ্ছে?';
+
+  @override
+  String get lifeVariantJobLost => 'আমি চাকরি হারিয়েছি';
+
+  @override
+  String get lifeVariantMoveQuestion => 'আপনি ভাড়া নিচ্ছেন নাকি কিনছেন?';
+
+  @override
+  String get lifeVariantMoveRent => 'ভাড়া বা অন্য কিছু';
+
+  @override
+  String get lifeVariantMoveBuy => 'বাড়ি কিনছি';
+
+  @override
+  String get assistantStepLifePlan => 'আপনার প্ল্যান দেখা হচ্ছে';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'আপনার প্ল্যান আপডেট হচ্ছে';
+
+  @override
   String get lifePlanOwnStepHint => 'যেমন: স্কুলকে জানান';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'পড়া থামান';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'এই ফোনে জোরে পড়ার সুবিধা নেই।';
 
   @override
   String get lifePlanProofPack => 'প্রমাণ প্যাক তৈরি করুন';
@@ -7430,6 +7465,57 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'কেস নম্বর কপি হয়েছে';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'কল করা হয়েছে $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return '$name ব্লক করার নম্বর';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'প্রতিটি ব্যাংকের নিজস্ব ওয়েবসাইট থেকে। আপনার কার্ডের নম্বর আলাদা হলে সেটি ব্যবহার করুন।';
+
+  @override
+  String get lostWalletBankNotListed => 'আমার ব্যাংক তালিকায় নেই';
+
+  @override
+  String get lostWalletNumberSaved => 'ব্লক নম্বর সংরক্ষিত হয়েছে';
+
+  @override
+  String get lostWalletPickCard => 'প্রতিটি কার্ডের নম্বর যোগ করুন';
+
+  @override
+  String get lostWalletSheetButton => 'জরুরি শিট';
+
+  @override
+  String get lostWalletSheetHint => 'প্রতিটি কার্ডের ব্লক নম্বর এক পাতায়, প্রিন্ট করতে বা মানিব্যাগ থেকে দূরে রাখতে।';
+
+  @override
+  String get lostWalletSheetTitle => 'জরুরি কার্ড শিট';
+
+  @override
+  String get lostWalletSheetIntro => 'এটি মানিব্যাগ ও ফোন থেকে দূরে রাখুন। হারিয়ে গেলে কার্ড ব্লক করতে এই নম্বরগুলোতে কল করুন।';
+
+  @override
+  String get lostWalletSheetCard => 'কার্ড';
+
+  @override
+  String get lostWalletSheetWhose => 'কার';
+
+  @override
+  String get lostWalletSheetEnds => 'শেষ সংখ্যা';
+
+  @override
+  String get lostWalletSheetCall => 'কল করার নম্বর';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'তৈরি $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'কেস নম্বর সেভ হয়েছে';

@@ -7053,6 +7053,44 @@ class AppLocalizationsTh extends AppLocalizations {
   String get lifePlanAddOwnStep => 'เพิ่มขั้นตอนของคุณเอง';
 
   @override
+  String get lifePlanWhoToTell => 'ใครที่ต้องแจ้ง';
+
+  @override
+  String get lifePlanTellHeading => 'หน่วยงานที่ต้องแจ้ง:';
+
+  @override
+  String get lifePlanTellAddress => 'สวัสดีค่ะ/ครับ ฉันย้ายที่อยู่แล้ว กรุณาเปลี่ยนที่อยู่ในบัญชีของฉันเป็น: [ที่อยู่ใหม่] ขอบคุณค่ะ/ครับ';
+
+  @override
+  String get lifePlanTellName => 'สวัสดีค่ะ/ครับ ชื่อของฉันเปลี่ยนแล้ว กรุณาเปลี่ยนชื่อในบัญชีของฉันเป็น: [ชื่อใหม่] ส่งหลักฐานให้ได้หากต้องการ ขอบคุณค่ะ/ครับ';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'เพิ่มขั้นตอนของฉันจากครั้งก่อน ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'เกิดอะไรขึ้นกับงานของคุณ?';
+
+  @override
+  String get lifeVariantJobLost => 'ฉันตกงาน';
+
+  @override
+  String get lifeVariantMoveQuestion => 'เช่าหรือซื้อ?';
+
+  @override
+  String get lifeVariantMoveRent => 'เช่าหรืออื่นๆ';
+
+  @override
+  String get lifeVariantMoveBuy => 'ซื้อบ้าน';
+
+  @override
+  String get assistantStepLifePlan => 'กำลังตรวจแผนของคุณ';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'กำลังอัปเดตแผนของคุณ';
+
+  @override
   String get lifePlanOwnStepHint => 'เช่น แจ้งโรงเรียน';
 
   @override
@@ -7063,9 +7101,6 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'หยุดอ่าน';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'โทรศัพท์เครื่องนี้ไม่รองรับการอ่านออกเสียง';
 
   @override
   String get lifePlanProofPack => 'สร้างชุดเอกสารยืนยัน';
@@ -7362,6 +7397,57 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'คัดลอกหมายเลขคดีแล้ว';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'โทรแล้ว $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'เบอร์อายัด $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'จากเว็บไซต์ของแต่ละธนาคาร หากเบอร์บนบัตรของคุณต่างออกไป ให้ใช้เบอร์นั้น';
+
+  @override
+  String get lostWalletBankNotListed => 'ธนาคารของฉันไม่อยู่ในรายการ';
+
+  @override
+  String get lostWalletNumberSaved => 'บันทึกเบอร์อายัดแล้ว';
+
+  @override
+  String get lostWalletPickCard => 'เพิ่มเบอร์สำหรับบัตรแต่ละใบ';
+
+  @override
+  String get lostWalletSheetButton => 'แผ่นฉุกเฉิน';
+
+  @override
+  String get lostWalletSheetHint => 'เบอร์อายัดของบัตรทุกใบในหน้าเดียว สำหรับพิมพ์หรือเก็บแยกจากกระเป๋าเงิน';
+
+  @override
+  String get lostWalletSheetTitle => 'แผ่นบัตรฉุกเฉิน';
+
+  @override
+  String get lostWalletSheetIntro => 'เก็บแยกจากกระเป๋าเงินและโทรศัพท์ หากหาย โทรเบอร์เหล่านี้เพื่ออายัดบัตร';
+
+  @override
+  String get lostWalletSheetCard => 'บัตร';
+
+  @override
+  String get lostWalletSheetWhose => 'ของใคร';
+
+  @override
+  String get lostWalletSheetEnds => 'ลงท้ายด้วย';
+
+  @override
+  String get lostWalletSheetCall => 'เบอร์ที่ต้องโทร';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'สร้างเมื่อ $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'บันทึกเลขที่แจ้งความแล้ว';

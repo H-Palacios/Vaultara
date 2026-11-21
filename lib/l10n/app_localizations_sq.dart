@@ -7120,6 +7120,44 @@ class AppLocalizationsSq extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Shto hapin tënd';
 
   @override
+  String get lifePlanWhoToTell => 'Kë të njoftoni';
+
+  @override
+  String get lifePlanTellHeading => 'Institucionet që duhen njoftuar:';
+
+  @override
+  String get lifePlanTellAddress => 'Përshëndetje, jam zhvendosur. Ju lutem përditësoni adresën në llogarinë time në: [adresa e re]. Faleminderit.';
+
+  @override
+  String get lifePlanTellName => 'Përshëndetje, emri im ka ndryshuar. Ju lutem përditësoni emrin në llogarinë time në: [emri i ri]. Mund të dërgoj provë nëse duhet. Faleminderit.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Shto hapat e mi nga herën e kaluar ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Çfarë po ndodh me punën tuaj?';
+
+  @override
+  String get lifeVariantJobLost => 'E humba punën';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Po merrni me qira apo po blini?';
+
+  @override
+  String get lifeVariantMoveRent => 'Qira ose tjetër';
+
+  @override
+  String get lifeVariantMoveBuy => 'Blej shtëpi';
+
+  @override
+  String get assistantStepLifePlan => 'Po kontrollohet plani juaj';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Po përditësohet plani juaj';
+
+  @override
   String get lifePlanOwnStepHint => 'Për shembull: Njofto shkollën';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Ndalo leximin';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Leximi me zë nuk është i disponueshëm në këtë telefon.';
 
   @override
   String get lifePlanProofPack => 'Krijo një paketë dëshmish';
@@ -7433,6 +7468,57 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Numri i çështjes u kopjua';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Telefonuar $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Numri për të bllokuar $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Nga faqja e çdo banke. Nëse numri në kartë është tjetër, përdor atë.';
+
+  @override
+  String get lostWalletBankNotListed => 'Banka ime nuk është në listë';
+
+  @override
+  String get lostWalletNumberSaved => 'Numri i bllokimit u ruajt';
+
+  @override
+  String get lostWalletPickCard => 'Shto një numër për çdo kartë';
+
+  @override
+  String get lostWalletSheetButton => 'Fletë urgjence';
+
+  @override
+  String get lostWalletSheetHint => 'Numri i bllokimit i çdo karte në një faqe, për ta printuar ose mbajtur larg portofolit.';
+
+  @override
+  String get lostWalletSheetTitle => 'Fletë urgjence për kartat';
+
+  @override
+  String get lostWalletSheetIntro => 'Mbaje larg portofolit dhe telefonit. Nëse humbasin, telefono këta numra për të bllokuar kartat.';
+
+  @override
+  String get lostWalletSheetCard => 'Karta';
+
+  @override
+  String get lostWalletSheetWhose => 'E kujt';
+
+  @override
+  String get lostWalletSheetEnds => 'Mbaron me';
+
+  @override
+  String get lostWalletSheetCall => 'Numri për të telefonuar';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Bërë më $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Numri u ruajt';

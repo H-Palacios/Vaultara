@@ -7065,6 +7065,44 @@ class AppLocalizationsMs extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Tambah langkah sendiri';
 
   @override
+  String get lifePlanWhoToTell => 'Siapa yang perlu dimaklumkan';
+
+  @override
+  String get lifePlanTellHeading => 'Organisasi yang perlu dimaklumkan:';
+
+  @override
+  String get lifePlanTellAddress => 'Helo, saya sudah berpindah. Sila kemas kini alamat akaun saya kepada: [alamat baharu]. Terima kasih.';
+
+  @override
+  String get lifePlanTellName => 'Helo, nama saya telah berubah. Sila kemas kini nama akaun saya kepada: [nama baharu]. Saya boleh hantar bukti jika perlu. Terima kasih.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Tambah langkah saya dari kali lepas ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Apa yang berlaku dengan kerja anda?';
+
+  @override
+  String get lifeVariantJobLost => 'Saya hilang kerja';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Menyewa atau membeli?';
+
+  @override
+  String get lifeVariantMoveRent => 'Sewa atau lain-lain';
+
+  @override
+  String get lifeVariantMoveBuy => 'Membeli rumah';
+
+  @override
+  String get assistantStepLifePlan => 'Menyemak pelan anda';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Mengemas kini pelan anda';
+
+  @override
   String get lifePlanOwnStepHint => 'Contohnya: Beritahu sekolah';
 
   @override
@@ -7075,9 +7113,6 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Berhenti membaca';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Baca dengan kuat tidak tersedia di telefon ini.';
 
   @override
   String get lifePlanProofPack => 'Buat pek bukti';
@@ -7374,6 +7409,57 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Nombor kes disalin';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Dipanggil $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Nombor untuk menyekat $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Daripada laman web setiap bank. Jika nombor pada kad anda berbeza, gunakan nombor itu.';
+
+  @override
+  String get lostWalletBankNotListed => 'Bank saya tiada dalam senarai';
+
+  @override
+  String get lostWalletNumberSaved => 'Nombor sekatan disimpan';
+
+  @override
+  String get lostWalletPickCard => 'Tambah nombor untuk setiap kad';
+
+  @override
+  String get lostWalletSheetButton => 'Helaian kecemasan';
+
+  @override
+  String get lostWalletSheetHint => 'Nombor sekatan setiap kad dalam satu halaman, untuk dicetak atau disimpan jauh dari dompet.';
+
+  @override
+  String get lostWalletSheetTitle => 'Helaian kad kecemasan';
+
+  @override
+  String get lostWalletSheetIntro => 'Simpan jauh dari dompet dan telefon. Jika hilang, hubungi nombor ini untuk menyekat kad anda.';
+
+  @override
+  String get lostWalletSheetCard => 'Kad';
+
+  @override
+  String get lostWalletSheetWhose => 'Milik';
+
+  @override
+  String get lostWalletSheetEnds => 'Berakhir dengan';
+
+  @override
+  String get lostWalletSheetCall => 'Nombor untuk dihubungi';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Dibuat $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Nombor laporan disimpan';

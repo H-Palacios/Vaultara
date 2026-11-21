@@ -7120,6 +7120,44 @@ class AppLocalizationsKy extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Өз кадамыңызды кошуу';
 
   @override
+  String get lifePlanWhoToTell => 'Кимге билдириш керек';
+
+  @override
+  String get lifePlanTellHeading => 'Билдирүү керек болгон уюмдар:';
+
+  @override
+  String get lifePlanTellAddress => 'Саламатсызбы, мен көчүп кеттим. Сураныч, аккаунтумдагы даректи мындай өзгөртүңүз: [жаңы дарек]. Рахмат.';
+
+  @override
+  String get lifePlanTellName => 'Саламатсызбы, атым өзгөрдү. Сураныч, аккаунтумдагы атты мындай өзгөртүңүз: [жаңы ат]. Керек болсо далил жибере алам. Рахмат.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Акыркы жолку өз кадамдарымды кошуу ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Жумушуңузда эмне болуп жатат?';
+
+  @override
+  String get lifeVariantJobLost => 'Жумушумдан айрылдым';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Ижарага аласызбы же сатып аласызбы?';
+
+  @override
+  String get lifeVariantMoveRent => 'Ижара же башка';
+
+  @override
+  String get lifeVariantMoveBuy => 'Үй сатып алуу';
+
+  @override
+  String get assistantStepLifePlan => 'Планыңыз текшерилүүдө';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Планыңыз жаңыртылууда';
+
+  @override
   String get lifePlanOwnStepHint => 'Мисалы: Мектепке билдирүү';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Окууну токтотуу';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Бул телефондо үн чыгарып окуу жеткиликсиз.';
 
   @override
   String get lifePlanProofPack => 'Далилдер топтомун түзүү';
@@ -7430,6 +7465,57 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Иш номери көчүрүлдү';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Чалынды $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return '$name бөгөттөө номери';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Ар бир банктын сайтынан. Картаңыздагы номер башка болсо, ошону колдонуңуз.';
+
+  @override
+  String get lostWalletBankNotListed => 'Банкым тизмеде жок';
+
+  @override
+  String get lostWalletNumberSaved => 'Бөгөттөө номери сакталды';
+
+  @override
+  String get lostWalletPickCard => 'Ар бир картага номер кошуңуз';
+
+  @override
+  String get lostWalletSheetButton => 'Шашылыш барак';
+
+  @override
+  String get lostWalletSheetHint => 'Ар бир картанын бөгөттөө номери бир бетте — басып чыгаруу же капчыктан бөлөк сактоо үчүн.';
+
+  @override
+  String get lostWalletSheetTitle => 'Карталардын шашылыш барагы';
+
+  @override
+  String get lostWalletSheetIntro => 'Аны капчык менен телефондон бөлөк сактаңыз. Жоголсо, карталарды бөгөттөө үчүн бул номерлерге чалыңыз.';
+
+  @override
+  String get lostWalletSheetCard => 'Карта';
+
+  @override
+  String get lostWalletSheetWhose => 'Кимдики';
+
+  @override
+  String get lostWalletSheetEnds => 'Акыркы сандары';
+
+  @override
+  String get lostWalletSheetCall => 'Чала турган номер';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Түзүлгөн $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Иш номери сакталды';

@@ -7120,6 +7120,44 @@ class AppLocalizationsSw extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Ongeza hatua yako';
 
   @override
+  String get lifePlanWhoToTell => 'Wa kuwajulisha';
+
+  @override
+  String get lifePlanTellHeading => 'Mashirika ya kujulisha:';
+
+  @override
+  String get lifePlanTellAddress => 'Habari, nimehama. Tafadhali sasisheni anwani ya akaunti yangu kuwa: [anwani mpya]. Asante.';
+
+  @override
+  String get lifePlanTellName => 'Habari, jina langu limebadilika. Tafadhali sasisheni jina la akaunti yangu kuwa: [jina jipya]. Naweza kutuma uthibitisho ikihitajika. Asante.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Ongeza hatua zangu za mara ya mwisho ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Nini kinaendelea na kazi yako?';
+
+  @override
+  String get lifeVariantJobLost => 'Nimepoteza kazi yangu';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Unakodisha au unanunua?';
+
+  @override
+  String get lifeVariantMoveRent => 'Kukodi au vingine';
+
+  @override
+  String get lifeVariantMoveBuy => 'Kununua nyumba';
+
+  @override
+  String get assistantStepLifePlan => 'Inaangalia mpango wako';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Inasasisha mpango wako';
+
+  @override
   String get lifePlanOwnStepHint => 'Kwa mfano: Ijulishe shule';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Acha kusoma';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Kusoma kwa sauti hakupatikani kwenye simu hii.';
 
   @override
   String get lifePlanProofPack => 'Tengeneza kifurushi cha uthibitisho';
@@ -7430,6 +7465,57 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Nambari ya kesi imenakiliwa';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Imepigwa $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Nambari ya kuzuia $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Kutoka tovuti ya kila benki. Ikiwa nambari kwenye kadi yako ni tofauti, tumia hiyo.';
+
+  @override
+  String get lostWalletBankNotListed => 'Benki yangu haipo kwenye orodha';
+
+  @override
+  String get lostWalletNumberSaved => 'Nambari ya kuzuia imehifadhiwa';
+
+  @override
+  String get lostWalletPickCard => 'Ongeza nambari kwa kila kadi';
+
+  @override
+  String get lostWalletSheetButton => 'Karatasi ya dharura';
+
+  @override
+  String get lostWalletSheetHint => 'Nambari ya kuzuia kila kadi kwenye ukurasa mmoja, ili uchapishe au uweke mbali na pochi.';
+
+  @override
+  String get lostWalletSheetTitle => 'Karatasi ya kadi za dharura';
+
+  @override
+  String get lostWalletSheetIntro => 'Iweke mbali na pochi na simu. Zikipotea, piga nambari hizi kuzuia kadi zako.';
+
+  @override
+  String get lostWalletSheetCard => 'Kadi';
+
+  @override
+  String get lostWalletSheetWhose => 'Ya nani';
+
+  @override
+  String get lostWalletSheetEnds => 'Inaishia na';
+
+  @override
+  String get lostWalletSheetCall => 'Nambari ya kupiga';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Imetengenezwa $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Nambari ya kesi imehifadhiwa';

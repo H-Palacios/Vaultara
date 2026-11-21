@@ -7119,6 +7119,44 @@ class AppLocalizationsSv extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Lägg till eget steg';
 
   @override
+  String get lifePlanWhoToTell => 'Vem du ska meddela';
+
+  @override
+  String get lifePlanTellHeading => 'Organisationer att meddela:';
+
+  @override
+  String get lifePlanTellAddress => 'Hej, jag har flyttat. Uppdatera gärna adressen på mitt konto till: [ny adress]. Tack.';
+
+  @override
+  String get lifePlanTellName => 'Hej, mitt namn har ändrats. Uppdatera gärna namnet på mitt konto till: [nytt namn]. Jag kan skicka underlag om ni behöver. Tack.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Lägg till mina egna steg från förra gången ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Vad händer med ditt jobb?';
+
+  @override
+  String get lifeVariantJobLost => 'Jag har förlorat jobbet';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Hyr eller köper du?';
+
+  @override
+  String get lifeVariantMoveRent => 'Hyra eller annat';
+
+  @override
+  String get lifeVariantMoveBuy => 'Köper bostad';
+
+  @override
+  String get assistantStepLifePlan => 'Kollar din plan';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Uppdaterar din plan';
+
+  @override
   String get lifePlanOwnStepHint => 'Till exempel: Meddela skolan';
 
   @override
@@ -7129,9 +7167,6 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Sluta läsa upp';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Uppläsning är inte tillgänglig på den här mobilen.';
 
   @override
   String get lifePlanProofPack => 'Skapa ett intygspaket';
@@ -7432,6 +7467,57 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Ärendenummer kopierat';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Ringt $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Nummer för att spärra $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Från varje banks egen webbplats. Står ett annat nummer på kortet, använd det.';
+
+  @override
+  String get lostWalletBankNotListed => 'Min bank finns inte med';
+
+  @override
+  String get lostWalletNumberSaved => 'Spärrnummer sparat';
+
+  @override
+  String get lostWalletPickCard => 'Lägg till ett nummer för varje kort';
+
+  @override
+  String get lostWalletSheetButton => 'Nödblad';
+
+  @override
+  String get lostWalletSheetHint => 'Spärrnumret för varje kort på en sida, att skriva ut eller förvara skilt från plånboken.';
+
+  @override
+  String get lostWalletSheetTitle => 'Nödblad för kort';
+
+  @override
+  String get lostWalletSheetIntro => 'Förvara det skilt från plånbok och telefon. Om de försvinner, ring dessa nummer för att spärra korten.';
+
+  @override
+  String get lostWalletSheetCard => 'Kort';
+
+  @override
+  String get lostWalletSheetWhose => 'Vems';
+
+  @override
+  String get lostWalletSheetEnds => 'Slutar på';
+
+  @override
+  String get lostWalletSheetCall => 'Nummer att ringa';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Skapat $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Diarienummer sparat';

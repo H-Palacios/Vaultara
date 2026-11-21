@@ -7070,6 +7070,44 @@ class AppLocalizationsIg extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Tinye nzọụkwụ nke gị';
 
   @override
+  String get lifePlanWhoToTell => 'Ndị a ga-agwa';
+
+  @override
+  String get lifePlanTellHeading => 'Òtù ndị a ga-agwa:';
+
+  @override
+  String get lifePlanTellAddress => 'Ndewo, akwagala m ebe obibi. Biko gbanwee adreesị dị na akaụntụ m ka ọ bụrụ: [adreesị ọhụrụ]. Daalụ.';
+
+  @override
+  String get lifePlanTellName => 'Ndewo, aha m agbanweela. Biko gbanwee aha dị na akaụntụ m ka ọ bụrụ: [aha ọhụrụ]. Enwere m ike iziga ihe akaebe ma ọ dị mkpa. Daalụ.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Tinye nzọụkwụ m nke oge gara aga ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Gịnị na-eme n\'ọrụ gị?';
+
+  @override
+  String get lifeVariantJobLost => 'Ọrụ m efuola';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Ị na-agbazite ka ị na-azụ?';
+
+  @override
+  String get lifeVariantMoveRent => 'Mgbazinye ma ọ bụ ihe ọzọ';
+
+  @override
+  String get lifeVariantMoveBuy => 'Ịzụ ụlọ';
+
+  @override
+  String get assistantStepLifePlan => 'Na-elele atụmatụ gị';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Na-emelite atụmatụ gị';
+
+  @override
   String get lifePlanOwnStepHint => 'Dịka ọmụmaatụ: Gwa ụlọ akwụkwọ';
 
   @override
@@ -7080,9 +7118,6 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Kwụsị ịgụ';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Ịgụ n\'olu dara ụda adịghị na ekwentị a.';
 
   @override
   String get lifePlanProofPack => 'Mepụta ngwugwu ihe akaebe';
@@ -7380,6 +7415,57 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'E depụtaghachiri nọmba okwu';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Akpọrọ $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Nọmba iji gbochie $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Site na weebụsaịtị nke ụlọ akụ ọ bụla. Ọ bụrụ na nọmba dị na kaadị gị dị iche, jiri ya.';
+
+  @override
+  String get lostWalletBankNotListed => 'Ụlọ akụ m anọghị na ndepụta';
+
+  @override
+  String get lostWalletNumberSaved => 'Echekwala nọmba mgbochi';
+
+  @override
+  String get lostWalletPickCard => 'Tinye nọmba maka kaadị ọ bụla';
+
+  @override
+  String get lostWalletSheetButton => 'Mpempe akwụkwọ mberede';
+
+  @override
+  String get lostWalletSheetHint => 'Nọmba mgbochi kaadị ọ bụla n\'otu peeji, iji bipụta ma ọ bụ debe ya n\'ebe dị anya n\'obere akpa ego gị.';
+
+  @override
+  String get lostWalletSheetTitle => 'Mpempe akwụkwọ kaadị mberede';
+
+  @override
+  String get lostWalletSheetIntro => 'Debe ya n\'ebe dị anya n\'obere akpa ego na ekwentị gị. Ọ bụrụ na ha efuo, kpọọ nọmba ndị a iji gbochie kaadị gị.';
+
+  @override
+  String get lostWalletSheetCard => 'Kaadị';
+
+  @override
+  String get lostWalletSheetWhose => 'Nke onye';
+
+  @override
+  String get lostWalletSheetEnds => 'Na-ejedebe na';
+
+  @override
+  String get lostWalletSheetCall => 'Nọmba a ga-akpọ';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Emere na $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Echekwala nọmba okwu';

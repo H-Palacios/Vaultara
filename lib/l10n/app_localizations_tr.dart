@@ -7120,6 +7120,44 @@ class AppLocalizationsTr extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Kendi adımınızı ekleyin';
 
   @override
+  String get lifePlanWhoToTell => 'Kime haber verilecek';
+
+  @override
+  String get lifePlanTellHeading => 'Haber verilecek kurumlar:';
+
+  @override
+  String get lifePlanTellAddress => 'Merhaba, taşındım. Lütfen hesabımdaki adresi şununla güncelleyin: [yeni adres]. Teşekkürler.';
+
+  @override
+  String get lifePlanTellName => 'Merhaba, adım değişti. Lütfen hesabımdaki adı şununla güncelleyin: [yeni ad]. Gerekirse belge gönderebilirim. Teşekkürler.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Geçen seferki kendi adımlarımı ekle ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'İşinde neler oluyor?';
+
+  @override
+  String get lifeVariantJobLost => 'İşimi kaybettim';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Kiralıyor musun, satın mı alıyorsun?';
+
+  @override
+  String get lifeVariantMoveRent => 'Kira veya diğer';
+
+  @override
+  String get lifeVariantMoveBuy => 'Ev satın alıyorum';
+
+  @override
+  String get assistantStepLifePlan => 'Planın kontrol ediliyor';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Planın güncelleniyor';
+
+  @override
   String get lifePlanOwnStepHint => 'Örneğin: Okula haber ver';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Okumayı durdur';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Bu telefonda sesli okuma kullanılamıyor.';
 
   @override
   String get lifePlanProofPack => 'Kanıt paketi oluşturun';
@@ -7430,6 +7465,57 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Dosya numarası kopyalandı';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Arandı $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return '$name engelleme numarası';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Her bankanın kendi sitesinden. Kartında başka bir numara varsa onu kullan.';
+
+  @override
+  String get lostWalletBankNotListed => 'Bankam listede yok';
+
+  @override
+  String get lostWalletNumberSaved => 'Engelleme numarası kaydedildi';
+
+  @override
+  String get lostWalletPickCard => 'Her kart için numara ekle';
+
+  @override
+  String get lostWalletSheetButton => 'Acil durum sayfası';
+
+  @override
+  String get lostWalletSheetHint => 'Her kartın engelleme numarası tek sayfada; yazdırmak ya da cüzdandan ayrı tutmak için.';
+
+  @override
+  String get lostWalletSheetTitle => 'Acil durum kart sayfası';
+
+  @override
+  String get lostWalletSheetIntro => 'Bunu cüzdanından ve telefonundan ayrı tut. Kaybolurlarsa kartlarını engellemek için bu numaraları ara.';
+
+  @override
+  String get lostWalletSheetCard => 'Kart';
+
+  @override
+  String get lostWalletSheetWhose => 'Kimin';
+
+  @override
+  String get lostWalletSheetEnds => 'Son haneler';
+
+  @override
+  String get lostWalletSheetCall => 'Aranacak numara';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Oluşturuldu: $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Dosya numarası kaydedildi';

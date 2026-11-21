@@ -7065,6 +7065,44 @@ class AppLocalizationsVi extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Thêm bước của bạn';
 
   @override
+  String get lifePlanWhoToTell => 'Cần báo cho ai';
+
+  @override
+  String get lifePlanTellHeading => 'Các tổ chức cần báo:';
+
+  @override
+  String get lifePlanTellAddress => 'Xin chào, tôi đã chuyển nhà. Vui lòng cập nhật địa chỉ trong tài khoản của tôi thành: [địa chỉ mới]. Cảm ơn.';
+
+  @override
+  String get lifePlanTellName => 'Xin chào, tôi đã đổi tên. Vui lòng cập nhật tên trong tài khoản của tôi thành: [tên mới]. Tôi có thể gửi giấy tờ chứng minh nếu cần. Cảm ơn.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Thêm các bước của tôi từ lần trước ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Công việc của bạn thế nào?';
+
+  @override
+  String get lifeVariantJobLost => 'Tôi bị mất việc';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Bạn thuê hay mua?';
+
+  @override
+  String get lifeVariantMoveRent => 'Thuê hoặc khác';
+
+  @override
+  String get lifeVariantMoveBuy => 'Mua nhà';
+
+  @override
+  String get assistantStepLifePlan => 'Đang kiểm tra kế hoạch của bạn';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Đang cập nhật kế hoạch của bạn';
+
+  @override
   String get lifePlanOwnStepHint => 'Ví dụ: Báo cho trường học';
 
   @override
@@ -7075,9 +7113,6 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Dừng đọc';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Điện thoại này không hỗ trợ đọc to.';
 
   @override
   String get lifePlanProofPack => 'Tạo bộ hồ sơ chứng minh';
@@ -7374,6 +7409,57 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Đã sao chép số hồ sơ';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Đã gọi $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Số để khóa $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Lấy từ trang web của từng ngân hàng. Nếu số trên thẻ của bạn khác, hãy dùng số đó.';
+
+  @override
+  String get lostWalletBankNotListed => 'Ngân hàng của tôi không có trong danh sách';
+
+  @override
+  String get lostWalletNumberSaved => 'Đã lưu số khóa thẻ';
+
+  @override
+  String get lostWalletPickCard => 'Thêm số cho từng thẻ';
+
+  @override
+  String get lostWalletSheetButton => 'Tờ khẩn cấp';
+
+  @override
+  String get lostWalletSheetHint => 'Số khóa của mọi thẻ trên một trang, để in hoặc cất riêng khỏi ví.';
+
+  @override
+  String get lostWalletSheetTitle => 'Tờ thẻ khẩn cấp';
+
+  @override
+  String get lostWalletSheetIntro => 'Cất riêng khỏi ví và điện thoại. Nếu bị mất, hãy gọi các số này để khóa thẻ.';
+
+  @override
+  String get lostWalletSheetCard => 'Thẻ';
+
+  @override
+  String get lostWalletSheetWhose => 'Của ai';
+
+  @override
+  String get lostWalletSheetEnds => 'Số cuối';
+
+  @override
+  String get lostWalletSheetCall => 'Số cần gọi';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Tạo ngày $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Đã lưu số hồ sơ';

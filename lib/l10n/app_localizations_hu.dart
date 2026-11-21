@@ -7120,6 +7120,44 @@ class AppLocalizationsHu extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Saját lépés hozzáadása';
 
   @override
+  String get lifePlanWhoToTell => 'Kit kell értesíteni';
+
+  @override
+  String get lifePlanTellHeading => 'Értesítendő szervezetek:';
+
+  @override
+  String get lifePlanTellAddress => 'Jó napot, elköltöztem. Kérem, módosítsák a fiókom címét erre: [új cím]. Köszönöm.';
+
+  @override
+  String get lifePlanTellName => 'Jó napot, megváltozott a nevem. Kérem, módosítsák a fiókom nevét erre: [új név]. Szükség esetén igazolást küldök. Köszönöm.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'A legutóbbi saját lépéseim hozzáadása ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Mi történik a munkáddal?';
+
+  @override
+  String get lifeVariantJobLost => 'Elvesztettem a munkám';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Bérelsz vagy veszel?';
+
+  @override
+  String get lifeVariantMoveRent => 'Bérlés vagy más';
+
+  @override
+  String get lifeVariantMoveBuy => 'Lakást veszek';
+
+  @override
+  String get assistantStepLifePlan => 'Terv ellenőrzése';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Terv frissítése';
+
+  @override
   String get lifePlanOwnStepHint => 'Például: Szólni az iskolának';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Felolvasás leállítása';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'A felolvasás nem érhető el ezen a telefonon.';
 
   @override
   String get lifePlanProofPack => 'Igazolási csomag készítése';
@@ -7430,6 +7465,57 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Ügyszám másolva';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Hívva: $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Letiltási szám: $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Minden bank saját oldaláról. Ha a kártyádon más szám áll, azt használd.';
+
+  @override
+  String get lostWalletBankNotListed => 'A bankom nincs a listán';
+
+  @override
+  String get lostWalletNumberSaved => 'Letiltási szám mentve';
+
+  @override
+  String get lostWalletPickCard => 'Adj meg számot minden kártyához';
+
+  @override
+  String get lostWalletSheetButton => 'Vészhelyzeti lap';
+
+  @override
+  String get lostWalletSheetHint => 'Minden kártya letiltási száma egy oldalon, kinyomtatva vagy a pénztárcától külön tartva.';
+
+  @override
+  String get lostWalletSheetTitle => 'Vészhelyzeti kártyalap';
+
+  @override
+  String get lostWalletSheetIntro => 'Tartsd külön a pénztárcától és a telefontól. Ha eltűnnek, hívd ezeket a számokat a kártyák letiltásához.';
+
+  @override
+  String get lostWalletSheetCard => 'Kártya';
+
+  @override
+  String get lostWalletSheetWhose => 'Kié';
+
+  @override
+  String get lostWalletSheetEnds => 'Végződés';
+
+  @override
+  String get lostWalletSheetCall => 'Hívandó szám';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Készült: $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Ügyszám mentve';

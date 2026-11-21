@@ -7120,6 +7120,44 @@ class AppLocalizationsTe extends AppLocalizations {
   String get lifePlanAddOwnStep => 'మీ దశను జోడించండి';
 
   @override
+  String get lifePlanWhoToTell => 'ఎవరికి చెప్పాలి';
+
+  @override
+  String get lifePlanTellHeading => 'చెప్పాల్సిన సంస్థలు:';
+
+  @override
+  String get lifePlanTellAddress => 'నమస్తే, నేను ఇల్లు మారాను. దయచేసి నా ఖాతాలోని చిరునామాను ఇలా మార్చండి: [కొత్త చిరునామా]. ధన్యవాదాలు.';
+
+  @override
+  String get lifePlanTellName => 'నమస్తే, నా పేరు మారింది. దయచేసి నా ఖాతాలోని పేరును ఇలా మార్చండి: [కొత్త పేరు]. అవసరమైతే రుజువు పంపగలను. ధన్యవాదాలు.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'గతసారి నా సొంత దశలను జోడించండి ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'మీ ఉద్యోగంలో ఏం జరుగుతోంది?';
+
+  @override
+  String get lifeVariantJobLost => 'నా ఉద్యోగం పోయింది';
+
+  @override
+  String get lifeVariantMoveQuestion => 'అద్దెకా, కొంటున్నారా?';
+
+  @override
+  String get lifeVariantMoveRent => 'అద్దె లేదా ఇతర';
+
+  @override
+  String get lifeVariantMoveBuy => 'ఇల్లు కొనడం';
+
+  @override
+  String get assistantStepLifePlan => 'మీ ప్లాన్ చూస్తున్నాం';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'మీ ప్లాన్ అప్‌డేట్ చేస్తున్నాం';
+
+  @override
   String get lifePlanOwnStepHint => 'ఉదా: పాఠశాలకు తెలియజేయండి';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'చదవడం ఆపండి';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'ఈ ఫోన్‌లో బిగ్గరగా చదివే సౌకర్యం లేదు.';
 
   @override
   String get lifePlanProofPack => 'రుజువుల ప్యాక్ తయారు చేయండి';
@@ -7430,6 +7465,57 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'కేసు నంబర్ కాపీ అయింది';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'కాల్ చేశారు $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return '$name బ్లాక్ చేసే నంబర్';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'ప్రతి బ్యాంక్ సొంత వెబ్‌సైట్ నుండి. మీ కార్డుపై వేరే నంబర్ ఉంటే అదే వాడండి.';
+
+  @override
+  String get lostWalletBankNotListed => 'నా బ్యాంక్ జాబితాలో లేదు';
+
+  @override
+  String get lostWalletNumberSaved => 'బ్లాక్ నంబర్ సేవ్ అయింది';
+
+  @override
+  String get lostWalletPickCard => 'ప్రతి కార్డుకు నంబర్ జోడించండి';
+
+  @override
+  String get lostWalletSheetButton => 'అత్యవసర షీట్';
+
+  @override
+  String get lostWalletSheetHint => 'ప్రతి కార్డు బ్లాక్ నంబర్ ఒకే పేజీలో, ప్రింట్ చేయడానికి లేదా పర్సుకు దూరంగా ఉంచడానికి.';
+
+  @override
+  String get lostWalletSheetTitle => 'అత్యవసర కార్డ్ షీట్';
+
+  @override
+  String get lostWalletSheetIntro => 'దీన్ని పర్సు, ఫోన్‌కు దూరంగా ఉంచండి. పోతే కార్డులను బ్లాక్ చేయడానికి ఈ నంబర్లకు కాల్ చేయండి.';
+
+  @override
+  String get lostWalletSheetCard => 'కార్డు';
+
+  @override
+  String get lostWalletSheetWhose => 'ఎవరిది';
+
+  @override
+  String get lostWalletSheetEnds => 'చివరి అంకెలు';
+
+  @override
+  String get lostWalletSheetCall => 'కాల్ చేయాల్సిన నంబర్';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'తయారు చేసింది $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'కేసు నంబర్ సేవ్ అయింది';

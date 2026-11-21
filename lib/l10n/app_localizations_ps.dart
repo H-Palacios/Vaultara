@@ -7120,6 +7120,44 @@ class AppLocalizationsPs extends AppLocalizations {
   String get lifePlanAddOwnStep => 'خپل ګام ورزیات کړئ';
 
   @override
+  String get lifePlanWhoToTell => 'چا ته خبر ورکړئ';
+
+  @override
+  String get lifePlanTellHeading => 'هغه ادارې چې باید خبر شي:';
+
+  @override
+  String get lifePlanTellAddress => 'سلام، ما کور بدل کړی. مهرباني وکړئ زما د حساب پته دې ته بدله کړئ: [نوې پته]. مننه.';
+
+  @override
+  String get lifePlanTellName => 'سلام، زما نوم بدل شوی. مهرباني وکړئ زما د حساب نوم دې ته بدل کړئ: [نوی نوم]. که اړتیا وي، ثبوت لېږلی شم. مننه.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'له تېر ځل څخه خپل ګامونه ورزیات کړه ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'ستاسو په دنده کې څه پېښېږي؟';
+
+  @override
+  String get lifeVariantJobLost => 'ما خپله دنده له لاسه ورکړه';
+
+  @override
+  String get lifeVariantMoveQuestion => 'کرایه کوئ که پېرئ؟';
+
+  @override
+  String get lifeVariantMoveRent => 'کرایه یا بل څه';
+
+  @override
+  String get lifeVariantMoveBuy => 'د کور پېرل';
+
+  @override
+  String get assistantStepLifePlan => 'ستاسو پلان کتل کېږي';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'ستاسو پلان تازه کېږي';
+
+  @override
   String get lifePlanOwnStepHint => 'د بېلګې په توګه: ښوونځي ته ووایئ';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'لوستل ودروئ';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'په دې ټیلیفون کې په لوړ غږ لوستل نشته.';
 
   @override
   String get lifePlanProofPack => 'د ثبوت کڅوړه جوړه کړئ';
@@ -7430,6 +7465,57 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'د قضیې شمېره کاپي شوه';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'زنګ ووهل شو $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'د $name بندولو شمېره';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'د هر بانک له خپلې وېبپاڼې. که ستاسو په کارت بله شمېره وي، هغه وکاروئ.';
+
+  @override
+  String get lostWalletBankNotListed => 'زما بانک په لېست کې نشته';
+
+  @override
+  String get lostWalletNumberSaved => 'د بندولو شمېره خوندي شوه';
+
+  @override
+  String get lostWalletPickCard => 'د هر کارت لپاره شمېره ورزیاته کړئ';
+
+  @override
+  String get lostWalletSheetButton => 'بیړنۍ پاڼه';
+
+  @override
+  String get lostWalletSheetHint => 'د هر کارت د بندولو شمېره په یوه پاڼه کې، د چاپ لپاره یا له بټوې لرې ساتلو لپاره.';
+
+  @override
+  String get lostWalletSheetTitle => 'د کارتونو بیړنۍ پاڼه';
+
+  @override
+  String get lostWalletSheetIntro => 'دا له بټوې او تلیفون څخه لرې وساتئ. که ورک شي، د کارتونو بندولو لپاره دې شمېرو ته زنګ ووهئ.';
+
+  @override
+  String get lostWalletSheetCard => 'کارت';
+
+  @override
+  String get lostWalletSheetWhose => 'د چا';
+
+  @override
+  String get lostWalletSheetEnds => 'پای یې';
+
+  @override
+  String get lostWalletSheetCall => 'د زنګ شمېره';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'جوړه شوې $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'د قضیې شمېره خوندي شوه';

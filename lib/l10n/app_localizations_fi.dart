@@ -7120,6 +7120,44 @@ class AppLocalizationsFi extends AppLocalizations {
   String get lifePlanAddOwnStep => 'Lisää oma vaihe';
 
   @override
+  String get lifePlanWhoToTell => 'Kenelle kertoa';
+
+  @override
+  String get lifePlanTellHeading => 'Organisaatiot, joille pitää kertoa:';
+
+  @override
+  String get lifePlanTellAddress => 'Hei, olen muuttanut. Päivittäkää tilini osoitteeksi: [uusi osoite]. Kiitos.';
+
+  @override
+  String get lifePlanTellName => 'Hei, nimeni on muuttunut. Päivittäkää tilini nimeksi: [uusi nimi]. Voin lähettää todisteen tarvittaessa. Kiitos.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'Lisää omat vaiheeni viime kerralta ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'Mitä työllesi tapahtuu?';
+
+  @override
+  String get lifeVariantJobLost => 'Menetin työni';
+
+  @override
+  String get lifeVariantMoveQuestion => 'Vuokraatko vai ostatko?';
+
+  @override
+  String get lifeVariantMoveRent => 'Vuokra tai muu';
+
+  @override
+  String get lifeVariantMoveBuy => 'Ostan kodin';
+
+  @override
+  String get assistantStepLifePlan => 'Tarkistetaan suunnitelmaasi';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'Päivitetään suunnitelmaasi';
+
+  @override
   String get lifePlanOwnStepHint => 'Esimerkiksi: Ilmoita koululle';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'Lopeta lukeminen';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'Ääneen lukeminen ei ole käytettävissä tässä puhelimessa.';
 
   @override
   String get lifePlanProofPack => 'Luo todistepaketti';
@@ -7433,6 +7468,57 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'Tapausnumero kopioitu';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'Soitettu $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'Numero kortin $name sulkemiseen';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'Kunkin pankin omilta sivuilta. Jos kortissasi on eri numero, käytä sitä.';
+
+  @override
+  String get lostWalletBankNotListed => 'Pankkini ei ole listalla';
+
+  @override
+  String get lostWalletNumberSaved => 'Sulkunumero tallennettu';
+
+  @override
+  String get lostWalletPickCard => 'Lisää numero jokaiselle kortille';
+
+  @override
+  String get lostWalletSheetButton => 'Hätälista';
+
+  @override
+  String get lostWalletSheetHint => 'Jokaisen kortin sulkunumero yhdellä sivulla, tulostettavaksi tai lompakosta erillään säilytettäväksi.';
+
+  @override
+  String get lostWalletSheetTitle => 'Korttien hätälista';
+
+  @override
+  String get lostWalletSheetIntro => 'Säilytä se erillään lompakosta ja puhelimesta. Jos ne katoavat, soita näihin numeroihin korttien sulkemiseksi.';
+
+  @override
+  String get lostWalletSheetCard => 'Kortti';
+
+  @override
+  String get lostWalletSheetWhose => 'Kenen';
+
+  @override
+  String get lostWalletSheetEnds => 'Päättyy';
+
+  @override
+  String get lostWalletSheetCall => 'Soitettava numero';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'Tehty $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'Ilmoitusnumero tallennettu';

@@ -7119,6 +7119,44 @@ class AppLocalizationsSi extends AppLocalizations {
   String get lifePlanAddOwnStep => 'ඔබේම පියවරක් එක් කරන්න';
 
   @override
+  String get lifePlanWhoToTell => 'කාටද දැනුම් දිය යුත්තේ';
+
+  @override
+  String get lifePlanTellHeading => 'දැනුම් දිය යුතු ආයතන:';
+
+  @override
+  String get lifePlanTellAddress => 'ආයුබෝවන්, මම පදිංචිය වෙනස් කළා. කරුණාකර මගේ ගිණුමේ ලිපිනය මෙයට වෙනස් කරන්න: [නව ලිපිනය]. ස්තූතියි.';
+
+  @override
+  String get lifePlanTellName => 'ආයුබෝවන්, මගේ නම වෙනස් වුණා. කරුණාකර මගේ ගිණුමේ නම මෙයට වෙනස් කරන්න: [නව නම]. අවශ්‍ය නම් සාක්ෂි එවන්න පුළුවන්. ස්තූතියි.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'පසුගිය වතාවේ මගේ පියවර එක් කරන්න ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'ඔබේ රැකියාවට මොකද වෙන්නේ?';
+
+  @override
+  String get lifeVariantJobLost => 'මට රැකියාව අහිමි වුණා';
+
+  @override
+  String get lifeVariantMoveQuestion => 'කුලියටද මිලදී ගන්නේද?';
+
+  @override
+  String get lifeVariantMoveRent => 'කුලිය හෝ වෙනත්';
+
+  @override
+  String get lifeVariantMoveBuy => 'නිවසක් මිලදී ගැනීම';
+
+  @override
+  String get assistantStepLifePlan => 'ඔබේ සැලැස්ම පරීක්ෂා කරමින්';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'ඔබේ සැලැස්ම යාවත්කාලීන කරමින්';
+
+  @override
   String get lifePlanOwnStepHint => 'උදා: පාසලට දන්වන්න';
 
   @override
@@ -7129,9 +7167,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'කියවීම නවත්වන්න';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'මෙම දුරකථනයේ හඬ නගා කියවීම නොමැත.';
 
   @override
   String get lifePlanProofPack => 'සාක්ෂි පැකේජයක් සාදන්න';
@@ -7429,6 +7464,57 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'නඩු අංකය පිටපත් කළා';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'ඇමතුවා $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return '$name අවහිර කිරීමේ අංකය';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'එක් එක් බැංකුවේ වෙබ් අඩවියෙන්. ඔබේ කාඩ්පතේ වෙනත් අංකයක් තිබේ නම් එය භාවිත කරන්න.';
+
+  @override
+  String get lostWalletBankNotListed => 'මගේ බැංකුව ලැයිස්තුවේ නැත';
+
+  @override
+  String get lostWalletNumberSaved => 'අවහිර කිරීමේ අංකය සුරැකිණි';
+
+  @override
+  String get lostWalletPickCard => 'සෑම කාඩ්පතකටම අංකයක් එක් කරන්න';
+
+  @override
+  String get lostWalletSheetButton => 'හදිසි පත්‍රිකාව';
+
+  @override
+  String get lostWalletSheetHint => 'සෑම කාඩ්පතකම අවහිර අංකය එක් පිටුවක, මුද්‍රණය කිරීමට හෝ පසුම්බියෙන් ඈතින් තබා ගැනීමට.';
+
+  @override
+  String get lostWalletSheetTitle => 'හදිසි කාඩ්පත් පත්‍රිකාව';
+
+  @override
+  String get lostWalletSheetIntro => 'මෙය පසුම්බියෙන් සහ දුරකථනයෙන් ඈතින් තබන්න. ඒවා නැති වුවහොත් කාඩ්පත් අවහිර කිරීමට මෙම අංකවලට අමතන්න.';
+
+  @override
+  String get lostWalletSheetCard => 'කාඩ්පත';
+
+  @override
+  String get lostWalletSheetWhose => 'කාගේ';
+
+  @override
+  String get lostWalletSheetEnds => 'අවසාන ඉලක්කම්';
+
+  @override
+  String get lostWalletSheetCall => 'ඇමතිය යුතු අංකය';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'සෑදුවේ $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'නඩු අංකය සුරැකිණි';

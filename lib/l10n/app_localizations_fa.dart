@@ -7120,6 +7120,44 @@ class AppLocalizationsFa extends AppLocalizations {
   String get lifePlanAddOwnStep => 'قدم خودتان را اضافه کنید';
 
   @override
+  String get lifePlanWhoToTell => 'به چه کسانی خبر دهید';
+
+  @override
+  String get lifePlanTellHeading => 'سازمان‌هایی که باید خبر دهید:';
+
+  @override
+  String get lifePlanTellAddress => 'سلام، من جابه‌جا شده‌ام. لطفاً نشانی حسابم را به این تغییر دهید: [نشانی جدید]. سپاس.';
+
+  @override
+  String get lifePlanTellName => 'سلام، نامم تغییر کرده است. لطفاً نام حسابم را به این تغییر دهید: [نام جدید]. در صورت نیاز می‌توانم مدرک بفرستم. سپاس.';
+
+  @override
+  String lifePlanReuseSteps(int count) {
+    return 'افزودن قدم‌های خودم از دفعه قبل ($count)';
+  }
+
+  @override
+  String get lifeVariantJobAnyQuestion => 'در کارتان چه اتفاقی می‌افتد؟';
+
+  @override
+  String get lifeVariantJobLost => 'کارم را از دست دادم';
+
+  @override
+  String get lifeVariantMoveQuestion => 'اجاره می‌کنید یا می‌خرید؟';
+
+  @override
+  String get lifeVariantMoveRent => 'اجاره یا موارد دیگر';
+
+  @override
+  String get lifeVariantMoveBuy => 'خرید خانه';
+
+  @override
+  String get assistantStepLifePlan => 'در حال بررسی برنامه شما';
+
+  @override
+  String get assistantStepLifePlanUpdate => 'در حال به‌روزرسانی برنامه شما';
+
+  @override
   String get lifePlanOwnStepHint => 'مثلاً: به مدرسه اطلاع دهید';
 
   @override
@@ -7130,9 +7168,6 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get lifePlanStopReading => 'توقف خواندن';
-
-  @override
-  String get lifePlanReadAloudUnavailable => 'بلند خواندن در این گوشی در دسترس نیست.';
 
   @override
   String get lifePlanProofPack => 'ساخت بسته مدارک';
@@ -7430,6 +7465,57 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get lostWalletCaseCopied => 'شماره پرونده کپی شد';
+
+  @override
+  String lostWalletCalledAt(String time) {
+    return 'تماس گرفته شد $time';
+  }
+
+  @override
+  String lostWalletAddNumberTitle(String name) {
+    return 'شماره مسدود کردن $name';
+  }
+
+  @override
+  String get lostWalletAddNumberHint => 'از وب‌سایت خود هر بانک. اگر شماره روی کارت شما فرق دارد، از آن استفاده کنید.';
+
+  @override
+  String get lostWalletBankNotListed => 'بانک من در فهرست نیست';
+
+  @override
+  String get lostWalletNumberSaved => 'شماره مسدودسازی ذخیره شد';
+
+  @override
+  String get lostWalletPickCard => 'برای هر کارت شماره اضافه کنید';
+
+  @override
+  String get lostWalletSheetButton => 'برگه اضطراری';
+
+  @override
+  String get lostWalletSheetHint => 'شماره مسدودسازی همه کارت‌ها در یک صفحه، برای چاپ یا نگه‌داری دور از کیف پول.';
+
+  @override
+  String get lostWalletSheetTitle => 'برگه اضطراری کارت‌ها';
+
+  @override
+  String get lostWalletSheetIntro => 'آن را دور از کیف پول و تلفن نگه دارید. اگر گم شدند، برای مسدود کردن کارت‌ها با این شماره‌ها تماس بگیرید.';
+
+  @override
+  String get lostWalletSheetCard => 'کارت';
+
+  @override
+  String get lostWalletSheetWhose => 'مال چه کسی';
+
+  @override
+  String get lostWalletSheetEnds => 'رقم‌های آخر';
+
+  @override
+  String get lostWalletSheetCall => 'شماره تماس';
+
+  @override
+  String lostWalletSheetMade(String date) {
+    return 'ساخته‌شده در $date';
+  }
 
   @override
   String get lostWalletCaseSaved => 'شماره پرونده ذخیره شد';
