@@ -144,8 +144,9 @@ class LifePlan {
   static List<String> cleanPlaces(Object? value) {
     if (value is! List) return const <String>[];
     final out = <String>[];
-    for (final item in value) {
-      if (item is String &&
+    for (final raw in value) {
+      final item = KeptIn.clean(raw);
+      if (item != null &&
           KeptIn.carried.contains(item) &&
           !out.contains(item)) {
         out.add(item);

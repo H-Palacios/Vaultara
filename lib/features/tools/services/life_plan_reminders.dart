@@ -9,6 +9,7 @@ import 'package:vaultara/features/reminders/services/reminder_scheduler.dart';
 import 'package:vaultara/features/tools/data/life_plan.dart';
 import 'package:vaultara/features/tools/logic/life_events.dart';
 import 'package:vaultara/features/tools/logic/life_plan_items.dart';
+import 'package:vaultara/features/tools/logic/life_tasks.dart';
 import 'package:vaultara/features/tools/view/life_plan_text.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
@@ -194,6 +195,35 @@ class LifePlanReminders {
     }
   }
 
+  /// A lost (not stolen) wallet: the cards were frozen, which can be
+  /// undone. The day after, if it has not turned up, remind the user to
+  /// cancel them and order new ones. Uses the plan's first slot, which a
+  /// lost wallet never needs, because its date is the day it went missing.
+  static Future<bool> _scheduleStillMissing(
+    AppLocalizations loc,
+    LifePlan plan,
+    DateTime today,
+  ) async {
+    if (plan.event != LifeEvent.lostWallet ||
+        plan.variant != LifeEvents.variantLost ||
+        plan.isFound ||
+        plan.tasksDone.contains(LifeTask.walletCancelIfMissing.name)) {
+      return false;
+    }
+    final from = Dates.only(plan.date ?? plan.createdAt);
+    final day = DateTime(from.year, from.month, from.day + 1);
+    if (!day.isAfter(today)) return false;
+    await ReminderScheduler.scheduleOnDay(
+      id: idFor(plan.id, 0),
+      title: loc.lostWalletStillMissingTitle,
+      body: loc.lostWalletStillMissingBody,
+      day: day,
+      channelId: _channelId,
+      channelName: _channelName,
+    );
+    return true;
+  }
+
   static void refreshSoon([List<LifePlan>? plans]) {
     if (plans != null) _latest = plans;
     _debounce?.cancel();
@@ -238,6 +268,9 @@ class LifePlanReminders {
         _scheduled.add(plan.id);
       }
       if (plan.isFinished) continue;
+      if (await _scheduleStillMissing(loc, plan, today)) {
+        _scheduled.add(plan.id);
+      }
       final view = LifePlanItems.build(plan, records, extraLabels: labels);
       if (view.total > 0 && view.left == 0) continue;
       final title = LifePlanText.notificationTitle(loc, plan);

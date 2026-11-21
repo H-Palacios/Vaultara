@@ -7,6 +7,9 @@ class KeptIn {
   static const String wallet = 'wallet';
   static const String bag = 'bag';
   static const String car = 'car';
+
+  /// No longer offered: a phone-case wallet is a wallet. Records saved with
+  /// it count as [wallet].
   static const String phoneCase = 'phoneCase';
   static const String home = 'home';
   static const String travelPouch = 'travelPouch';
@@ -15,7 +18,6 @@ class KeptIn {
   static const List<String> values = <String>[
     wallet,
     bag,
-    phoneCase,
     travelPouch,
     car,
     home,
@@ -23,13 +25,7 @@ class KeptIn {
 
   /// Places that can be lost or stolen with what is in them. Home is where
   /// things are safe, so it is never one of them.
-  static const List<String> carried = <String>[
-    wallet,
-    bag,
-    phoneCase,
-    travelPouch,
-    car,
-  ];
+  static const List<String> carried = <String>[wallet, bag, travelPouch, car];
 
   /// Groups that are blocked with a phone call when lost, so the editor
   /// asks for the number.
@@ -43,6 +39,7 @@ class KeptIn {
 
   static String? clean(Object? value) {
     if (value is! String) return null;
+    if (value == phoneCase) return wallet;
     return values.contains(value) ? value : null;
   }
 

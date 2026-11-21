@@ -69,6 +69,9 @@ enum LifeTask {
   walletTransport,
   walletLoyalty,
   walletInsurance,
+  // Added later: stored by name, so new steps go at the end.
+  walletFreezeLost,
+  walletCancelIfMissing,
 }
 
 /// What a task can open in the app, so the user does not have to find it.
@@ -218,10 +221,19 @@ class LifeTasks {
         ];
       case LifeEvent.lostWallet:
         final stolen = variant == LifeEvents.variantStolen;
+        // Stolen: block everything and report it straight away. Lost: freeze
+        // the cards, which can be undone if it turns up, look for it, and
+        // only cancel and replace if it is still missing.
         return <LifeTask>[
-          LifeTask.walletFreezeCards,
-          if (stolen) LifeTask.reportToPolice else LifeTask.walletRetrace,
-          if (!stolen) LifeTask.reportToPolice,
+          if (stolen) ...[
+            LifeTask.walletFreezeCards,
+            LifeTask.reportToPolice,
+          ] else ...[
+            LifeTask.walletFreezeLost,
+            LifeTask.walletRetrace,
+            LifeTask.walletCancelIfMissing,
+            LifeTask.reportToPolice,
+          ],
           LifeTask.walletFraudAlert,
           LifeTask.walletStatements,
           // One step for the new bank card everywhere it is used (debit
@@ -271,6 +283,7 @@ class LifeTasks {
       task == LifeTask.disasterSafePlace ||
       task == LifeTask.jobUnemployment ||
       task == LifeTask.walletFreezeCards ||
+      task == LifeTask.walletFreezeLost ||
       task == LifeTask.walletRetrace;
 
   static LifeTaskLink link(LifeTask task) {
@@ -402,6 +415,10 @@ class LifeTasks {
         return loc.lifeTaskWalletFreezeCards;
       case LifeTask.walletRetrace:
         return loc.lifeTaskWalletRetrace;
+      case LifeTask.walletFreezeLost:
+        return loc.lifeTaskWalletFreezeLost;
+      case LifeTask.walletCancelIfMissing:
+        return loc.lifeTaskWalletCancelIfMissing;
       case LifeTask.walletFraudAlert:
         return loc.lifeTaskWalletFraudAlert;
       case LifeTask.walletStatements:

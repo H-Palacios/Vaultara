@@ -14,8 +14,6 @@ class KeptInText {
         return loc.keptInBag;
       case KeptIn.car:
         return loc.keptInCar;
-      case KeptIn.phoneCase:
-        return loc.keptInPhoneCase;
       case KeptIn.home:
         return loc.keptInHome;
       case KeptIn.travelPouch:
@@ -32,8 +30,6 @@ class KeptInText {
         return Icons.shopping_bag_rounded;
       case KeptIn.car:
         return Icons.directions_car_rounded;
-      case KeptIn.phoneCase:
-        return Icons.smartphone_rounded;
       case KeptIn.home:
         return Icons.home_rounded;
       case KeptIn.travelPouch:

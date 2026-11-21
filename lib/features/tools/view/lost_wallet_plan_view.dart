@@ -162,24 +162,54 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
   }
 
   void _toggleRecord(LifeRecordItem item) {
-    _mark(item, item.isDone ? null : LifePlanText.statusFor(item.rule.action));
+    if (item.isDone) {
+      _mark(item, null);
+      return;
+    }
+    _markDone(item, LifePlanText.statusFor(item.rule.action));
+  }
+
+  /// Marks a card done (blocked, not needed) and offers Undo.
+  void _markDone(LifeRecordItem item, LifeItemStatus status) {
+    _mark(item, status);
+    _offerUndo(() => _mark(item, null));
   }
 
   void _toggleTask(LifeTaskItem item) {
     final task = item.task;
     if (task != null) {
       unawaited(_save(_current.withTask(task.name, !item.done)));
+      if (!item.done) {
+        _offerUndo(() => unawaited(_save(_current.withTask(task.name, false))));
+      }
       return;
     }
     final custom = item.custom;
     if (custom == null) return;
-    unawaited(
+    void setDone(bool done) => unawaited(
       _save(
         _current.withCustom(<LifeCustomTask>[
           for (final t in _current.custom)
-            t.id == custom.id ? t.copyWith(done: !t.done) : t,
+            t.id == custom.id ? t.copyWith(done: done) : t,
         ]),
       ),
+    );
+    setDone(!item.done);
+    if (!item.done) _offerUndo(() => setDone(false));
+  }
+
+  /// Something ticked moves to Done further down, so a tap by mistake
+  /// would look like it vanished. The message undoes it in one tap.
+  void _offerUndo(VoidCallback undo) {
+    final loc = AppLocalizations.of(context)!;
+    ActionFeedbackSnackbar.show(
+      context,
+      loc.lostWalletMarkedDone,
+      icon: Icons.task_alt_rounded,
+      actionLabel: loc.assistantUndo,
+      onAction: () {
+        if (mounted) undo();
+      },
     );
   }
 
@@ -760,7 +790,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
           case 'open':
             _openRecord(item);
           case 'notNeeded':
-            _mark(item, LifeItemStatus.notNeeded);
+            _markDone(item, LifeItemStatus.notNeeded);
         }
       },
       itemBuilder: (_) => [
@@ -790,7 +820,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
             WalletDoneCircle(
               done: false,
               label: loc.lostWalletBlocked,
-              onTap: () => _mark(item, LifeItemStatus.cancelled),
+              onTap: () => _markDone(item, LifeItemStatus.cancelled),
             ),
             const SizedBox(width: 10),
             Expanded(
@@ -839,7 +869,8 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
                         ),
                       FilledButton.tonalIcon(
                         style: _compact,
-                        onPressed: () => _mark(item, LifeItemStatus.cancelled),
+                        onPressed: () =>
+                            _markDone(item, LifeItemStatus.cancelled),
                         icon: const Icon(Icons.check_rounded, size: 18),
                         label: Text(loc.lostWalletBlocked),
                       ),
