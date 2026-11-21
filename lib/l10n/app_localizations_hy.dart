@@ -716,12 +716,6 @@ class AppLocalizationsHy extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Ինչպես նաև հիշեցումներ, որոնք ավելի հաճախակի են դառնում վերջնաժամկետի մոտենալուն պես';
 
   @override
-  String get editorReminderLabel => 'Հիշեցում';
-
-  @override
-  String get editorReminderSelectOptional => 'Ընտրեք հիշեցում (ըստ ցանկության)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Ժամկետից $days օր առաջ';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Քարտն ավարտվում է 4728-ով։ Հիմնական ծախսերի քարտ։ Կապված է հիմնական ընթացիկ հաշվին։';
 
   @override
-  String get tutorialSetReminderField => 'Սահմանեք հիշեցում՝ նախքան որևէ գրառման ժամկետի լրանալը ծանուցում ստանալու համար։ Հպեք «Հիշեցում» դաշտին՝ տարբերակները տեսնելու համար։';
-
-  @override
   String get reminderTitle => 'Հիշեցում';
-
-  @override
-  String get reminderFreeSection => 'Անվճար';
-
-  @override
-  String get reminderPremiumSection => 'Պրեմիում';
 
   @override
   String get reminderNone => 'Առանց հիշեցման';
@@ -939,45 +924,6 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Մուտքագրեք անհատական օրերի քանակ';
-
-  @override
-  String get reminderCascadeTitle => 'Կասկադային հիշեցումներ';
-
-  @override
-  String get reminderCascadeSubtitle => 'Ստացեք բազմաթիվ ծանուցումներ՝ նախքան գրառման ժամկետը կլրանա';
-
-  @override
-  String get reminderPremiumRequired => 'Այս գործառույթը հասանելի է Premium օգտատերերի համար։';
-
-  @override
-  String get reminderUpgradeCta => 'Անցնել Premium-ի';
-
-  @override
-  String get tutorialReminderFreeSection => 'Հիշեցման այս տարբերակները հասանելի են բոլորին։ Ընտրեք մեկը՝ ծանուցում ստանալու համար։';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Այս տարբերակները բացվում են Premium-ով՝ ժամկետից առաջ ավելի ճշգրիտ ժամանակացույցի համար։';
-
-  @override
-  String get tutorialReminderApplyFree => 'Հպեք «Կիրառել»՝ ձեր հիշեցման ընտրությունը պահպանելու համար։';
-
-  @override
-  String get tutorialReminderPresets => 'Ընտրեք նախադրված ժամանակ՝ ցանկացած գրառման ժամկետից առաջ ծանուցվելու համար։';
-
-  @override
-  String get tutorialReminderCustomDays => 'Սահմանեք ձեր սեփական ճշգրիտ օրերի քանակը ժամկետից առաջ։';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Հպեք «Կիրառել»՝ ձեր հիշեցման ընտրությունը պահպանելու համար։';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Կասկադն ուղարկում է բազմաթիվ ծանուցումներ՝ նախքան գրառման ժամկետը կլրանա։ Հասանելի է Premium-ով։';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Կասկադն ուղարկում է բազմաթիվ ծանուցումներ՝ նախքան գրառման ժամկետը կլրանա։';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara-ն ընդգծում է այն, ինչը ձեր ուշադրության կարիքն ունի՝ շուտով լրացող ժամկետով գրառումներ, բացակայող հիշեցումներ և առաջիկա զբաղված շաբաթներ։';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Նախընտրում եք լսե՞լ։ Լսեք ձեր դիտարկումները բարձրաձայն ընթերցմամբ և դադարեցրեք ցանկացած պահի։';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Հպեք հիշեցման դաշտին՝ տեսնելու, թե ինչպես են աշխատում հիշեցումները։';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Հիշեցումները հաշվվում են ժամկետի ավարտից և Նորացման ժամկետից։ Կարող եք դրանք անջատել այստեղ։';
@@ -3512,9 +3455,6 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Լրացուցիչ մանրամասներ բաժնում են հավելյալները՝ նշումներ, կրկնություն, նորացման ժամանակ, ում գրառումն է, կողպում, դրամապանակ և լուսանկարներ։ Բացեք միայն երբ պետք լինի։';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Կրկնություն տարբերակը ամսաթիվը առաջ է տանում բաժանորդագրությունների համար։ Նորացումը տևում է մոտավորապես դաշտը Vaultara-ին ասում է, թե որքան է տևում նորացումը, որպեսզի հիշեցումները սկսվեն բավականաչափ վաղ։';
 
   @override
   String get tutorialAddRecordProtect => 'Կողպեք գրառումը, որպեսզի ցուցադրելուց առաջ պահանջվի ձեր մատնահետքը կամ էկրանի կողպումը։ Քարտերը նշեք որպես Իմ դրամապանակում և ավելացրեք փաստաթղթի լուսանկարներ։';

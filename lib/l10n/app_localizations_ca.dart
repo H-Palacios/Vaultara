@@ -716,12 +716,6 @@ class AppLocalizationsCa extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'A més de recordatoris que es tornen més freqüents a mesura que s\'acosta el termini';
 
   @override
-  String get editorReminderLabel => 'Recordatori';
-
-  @override
-  String get editorReminderSelectOptional => 'Selecciona un recordatori (opcional)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dies abans de caducar';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Targeta acabada en 4728. Targeta de despesa principal. Vinculada al compte corrent principal.';
 
   @override
-  String get tutorialSetReminderField => 'Configura un recordatori per rebre una notificació abans que caduqui qualsevol registre. Toca el camp Recordatori per veure les opcions.';
-
-  @override
   String get reminderTitle => 'Recordatori';
-
-  @override
-  String get reminderFreeSection => 'Gratuït';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Sense recordatori';
@@ -939,45 +924,6 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Introdueix dies personalitzats';
-
-  @override
-  String get reminderCascadeTitle => 'Recordatoris en cascada';
-
-  @override
-  String get reminderCascadeSubtitle => 'Rep múltiples notificacions abans que caduqui un registre';
-
-  @override
-  String get reminderPremiumRequired => 'Aquesta funció està disponible per als usuaris Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Actualitza a Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Aquestes opcions de recordatori estan disponibles per a tothom. Tria\'n una per rebre una notificació.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Aquestes opcions es desbloquegen amb Premium per a un temps més precís abans de caducar.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Toca Aplica per desar la teva elecció de recordatori.';
-
-  @override
-  String get tutorialReminderPresets => 'Tria un temps predefinit per ser notificat abans que caduqui qualsevol registre.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Estableix el teu propi nombre exacte de dies abans de caducar.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Toca Aplica per desar la teva elecció de recordatori.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'La cascada envia múltiples notificacions abans que caduqui un registre. Disponible amb Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'La cascada envia múltiples notificacions abans que caduqui un registre.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara destaca el que necessita la teva atenció: registres que caduquen aviat, recordatoris que falten i setmanes atrafegades per venir.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Prefereixes escoltar? Fes que et llegeixin les estadístiques en veu alta i posa-les en pausa quan vulguis.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Toca el camp de recordatori per veure com funcionen els recordatoris.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Els recordatoris es calculen a partir de la data de venciment i el Temps de renovació. Aquí els pots desactivar.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Més detalls conté els extres: notes, repetició, temps de renovació, de qui és el registre, bloqueig, cartera i fotos. Obre\'l només quan el necessitis.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Es repeteix mou la data cap endavant per a les subscripcions. La renovació triga uns indica a Vaultara quant temps porta renovar, perquè els recordatoris comencin amb prou antelació.';
 
   @override
   String get tutorialAddRecordProtect => 'Bloqueja un registre perquè et demani l\'empremta digital o el bloqueig de pantalla abans de mostrar-lo. Marca les targetes com A la meva cartera i afegeix fotos del document.';

@@ -382,8 +382,6 @@
   "planFeatureUnlimitedCategories": "Unlimited custom categories",
   "planFeatureAdvancedReminderTiming": "Set exactly when each reminder arrives",
   "planFeatureAutomaticFollowUps": "Plus reminders that get more frequent as the deadline nears",
-  "editorReminderLabel": "Reminder",
-  "editorReminderSelectOptional": "Select a reminder (optional)",
   "editorReminderDaysBefore": "{days} days before expiry",
   "editorFreeItemsCount": "Free items: {used}/{limit}",
   "@editorReminderDaysBefore": {
@@ -489,10 +487,7 @@
   "tutorialAddRecordSave": "Tap Save to add the record to your list.",
   "tutorialSampleRecordName": "Visa Debit Card",
   "tutorialSampleRecordNotes": "Card ending 4728. Primary spending card. Linked to main current account.",
-  "tutorialSetReminderField": "Set a reminder to receive a notification before any record expires. Tap the Reminder field to see the options.",
   "reminderTitle": "Reminder",
-  "reminderFreeSection": "Free",
-  "reminderPremiumSection": "Premium",
   "reminderNone": "No reminder",
   "reminderOnExpiry": "On expiry",
   "reminderDaysBefore": "{days, plural, one{{days} day before} other{{days} days before}}",
@@ -503,25 +498,11 @@
       }
     }
   },
-  "reminderCustomDaysTitle": "Enter custom days",
-  "reminderCascadeTitle": "Cascade reminders",
-  "reminderCascadeSubtitle": "Receive multiple notifications before a record expires",
-  "reminderPremiumRequired": "This feature is available for Premium users.",
-  "reminderUpgradeCta": "Upgrade to Premium",
-  "tutorialReminderFreeSection": "These reminder options are available for everyone. Pick one to receive a notification.",
-  "tutorialReminderPremiumSection": "These options unlock with Premium for more precise timing before expiry.",
-  "tutorialReminderApplyFree": "Tap Apply to save your reminder choice.",
-  "tutorialReminderPresets": "Choose a preset time to be notified before any record expires.",
-  "tutorialReminderCustomDays": "Set your own exact number of days before expiry.",
-  "tutorialReminderApplyPremium": "Tap Apply to save your reminder choice.",
-  "tutorialReminderCascadeFree": "Cascade sends multiple notifications before a record expires. Available with Premium.",
-  "tutorialReminderCascadePremium": "Cascade sends multiple notifications before a record expires.",
   "tutorialInsightsSmartCard": "Vaultara highlights what needs your attention: records expiring soon, missing reminders, and busy weeks ahead.",
   "tutorialInsightsTimeline": "The timeline shows when your records expire across the year, with arrows to switch between years.",
   "tutorialInsightsSampleRecordTwo": "British Passport",
   "tutorialInsightsSampleRecordThree": "BUPA Health Insurance",
   "tutorialAudio": "Prefer to listen? Have your insights read aloud, and pause any time.",
-  "tutorialAddRecordReminderTour": "Tap the reminder field to see how reminders work.",
   "tutorialAddRecordReminderSolo": "Reminders are worked out from the expiry date and Renewal time. You can turn them off here.",
   "remindersSectionTitle": "Reminders",
   "@remindersSectionTitle": {
@@ -3869,10 +3850,6 @@
   "tutorialAddRecordMoreDetails": "More details holds the extras: notes, repeat, renewal time, whose record it is, lock, wallet and photos. Open it only when you need it.",
   "@tutorialAddRecordMoreDetails": {
     "description": "Tutorial message over the More details header in the add record form."
-  },
-  "tutorialAddRecordRepeat": "Repeat moves the date forward for subscriptions. Renewal takes about tells Vaultara how long renewing takes, so reminders start early enough.",
-  "@tutorialAddRecordRepeat": {
-    "description": "Tutorial message over the Repeat and Renewal takes about fields in the add record form."
   },
   "tutorialAddRecordProtect": "Lock a record to ask for your fingerprint or screen lock before showing it. Mark cards as In my wallet, and add photos of the document.",
   "@tutorialAddRecordProtect": {

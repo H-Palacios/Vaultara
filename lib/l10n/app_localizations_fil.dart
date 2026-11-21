@@ -716,12 +716,6 @@ class AppLocalizationsFil extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Dagdag pa ang mga paalala na mas nagiging madalas habang papalapit ang deadline';
 
   @override
-  String get editorReminderLabel => 'Paalala';
-
-  @override
-  String get editorReminderSelectOptional => 'Pumili ng paalala (opsyonal)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days araw bago mag-expire';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Kard na nagtatapos sa 4728. Pangunahing kard para sa gastos. Nakakonekta sa pangunahing current account.';
 
   @override
-  String get tutorialSetReminderField => 'Mag-set ng paalala upang makatanggap ng abiso bago mag-expire ang anumang rekord. I-tap ang Paalala na field para makita ang mga opsyon.';
-
-  @override
   String get reminderTitle => 'Paalala';
-
-  @override
-  String get reminderFreeSection => 'Libre';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Walang paalala';
@@ -939,45 +924,6 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Ilagay ang custom na araw';
-
-  @override
-  String get reminderCascadeTitle => 'Cascade na paalala';
-
-  @override
-  String get reminderCascadeSubtitle => 'Tumanggap ng maraming abiso bago mag-expire ang isang rekord';
-
-  @override
-  String get reminderPremiumRequired => 'Ang feature na ito ay available para sa mga Premium user.';
-
-  @override
-  String get reminderUpgradeCta => 'Mag-upgrade sa Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Available ang mga opsyon ng paalala na ito para sa lahat. Pumili ng isa para makatanggap ng abiso.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Nabubuksan ang mga opsyon na ito gamit ang Premium para sa mas tumpak na timing bago mag-expire.';
-
-  @override
-  String get tutorialReminderApplyFree => 'I-tap ang Ilapat para i-save ang iyong pagpili ng paalala.';
-
-  @override
-  String get tutorialReminderPresets => 'Pumili ng preset na oras para maabisuhan bago mag-expire ang anumang rekord.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Itakda ang sariling eksaktong bilang ng araw bago mag-expire.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'I-tap ang Ilapat para i-save ang iyong pagpili ng paalala.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Nagpapadala ang cascade ng maraming abiso bago mag-expire ang isang rekord. Available gamit ang Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Nagpapadala ang cascade ng maraming abiso bago mag-expire ang isang rekord.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Ini-highlight ng Vaultara ang mga bagay na nangangailangan ng iyong pansin: mga rekord na malapit nang mag-expire, kulang na paalala, at mga abalang linggo sa hinaharap.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Mas gusto mong makinig? Iparinig nang malakas ang iyong mga insight, at i-pause anumang oras.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'I-tap ang field ng paalala para makita kung paano gumagana ang mga paalala.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Kinakalkula ang mga paalala mula sa petsa ng pag-expire at Tagal ng pag-renew. Maaari mo itong i-off dito.';
@@ -3510,9 +3453,6 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Nasa Higit pang detalye ang mga dagdag: mga tala, umuulit, oras ng pag-renew, kung kanino ang rekord, lock, wallet at mga litrato. Buksan lang ito kapag kailangan mo.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Inililipat ng Umuulit ang petsa pasulong para sa mga subscription. Sinasabi ng Tumatagal ang pag-renew nang mga sa Vaultara kung gaano katagal ang pag-renew, para maaga ang simula ng mga paalala.';
 
   @override
   String get tutorialAddRecordProtect => 'I-lock ang rekord para hingin ang fingerprint o screen lock mo bago ito ipakita. Markahan ang mga card bilang Nasa wallet ko, at magdagdag ng mga litrato ng dokumento.';

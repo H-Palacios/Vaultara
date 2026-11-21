@@ -718,12 +718,6 @@ class AppLocalizationsRo extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'În plus, mementouri care devin mai frecvente pe măsură ce termenul limită se apropie';
 
   @override
-  String get editorReminderLabel => 'Memento';
-
-  @override
-  String get editorReminderSelectOptional => 'Selectează un memento (opțional)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days zile înainte de expirare';
   }
@@ -913,16 +907,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Card care se termină cu 4728. Card principal de cheltuieli. Conectat la contul curent principal.';
 
   @override
-  String get tutorialSetReminderField => 'Setează un memento pentru a primi o notificare înainte de expirarea oricărei înregistrări. Apasă câmpul Memento pentru a vedea opțiunile.';
-
-  @override
   String get reminderTitle => 'Memento';
-
-  @override
-  String get reminderFreeSection => 'Gratuit';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Fără memento';
@@ -943,45 +928,6 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Introdu zile personalizate';
-
-  @override
-  String get reminderCascadeTitle => 'Memento-uri în cascadă';
-
-  @override
-  String get reminderCascadeSubtitle => 'Primește mai multe notificări înainte ca o înregistrare să expire';
-
-  @override
-  String get reminderPremiumRequired => 'Această funcție este disponibilă pentru utilizatorii Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Treci la Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Aceste opțiuni de memento sunt disponibile pentru toți. Alege una pentru a primi o notificare.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Aceste opțiuni se deblochează cu Premium pentru o programare mai precisă înainte de expirare.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Apasă Aplică pentru a salva alegerea mementoului.';
-
-  @override
-  String get tutorialReminderPresets => 'Alege un timp presetat pentru a fi notificat înainte de expirarea oricărei înregistrări.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Setează propriul număr exact de zile înainte de expirare.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Apasă Aplică pentru a salva alegerea mementoului.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Cascada trimite mai multe notificări înainte ca o înregistrare să expire. Disponibil cu Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Cascada trimite mai multe notificări înainte ca o înregistrare să expire.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara evidențiază ce necesită atenția ta: înregistrări care expiră în curând, mementouri lipsă și săptămâni aglomerate care urmează.';
 
   @override
@@ -995,9 +941,6 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Preferi să asculți? Lasă-ți analizele să fie citite cu voce tare și pune pe pauză oricând.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Atinge câmpul de memento pentru a vedea cum funcționează mementourile.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Mementourile se calculează de la data expirării și Timpul de reînnoire. Le poți dezactiva aici.';
@@ -3549,9 +3492,6 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Mai multe detalii conține opțiunile suplimentare: note, repetare, timpul de reînnoire, a cui este înregistrarea, blocare, portofel și fotografii. Deschide-l doar când ai nevoie.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Se repetă mută data înainte pentru abonamente. Reînnoirea durează cam îi spune lui Vaultara cât durează reînnoirea, ca mementourile să înceapă destul de devreme.';
 
   @override
   String get tutorialAddRecordProtect => 'Blochează o înregistrare ca să ți se ceară amprenta sau blocarea ecranului înainte de a fi afișată. Marchează cardurile cu În portofelul meu și adaugă fotografii ale documentului.';

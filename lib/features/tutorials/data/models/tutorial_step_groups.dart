@@ -11,27 +11,18 @@ class TutorialStepGroups {
     TutorialStep.addRecordGroup,
     TutorialStep.addRecordName,
     TutorialStep.addRecordExpiry,
-    TutorialStep.addRecordMoreDetails,
-    TutorialStep.addRecordRepeat,
-    TutorialStep.addRecordProtect,
     TutorialStep.addRecordReminder,
+    TutorialStep.addRecordMoreDetails,
+    TutorialStep.addRecordProtect,
     TutorialStep.addRecordSave,
   ];
 
-  static const List<TutorialStep> setReminderFree = [
-    TutorialStep.setReminderField,
-    TutorialStep.reminderFreeSection,
-    TutorialStep.reminderPremiumSection,
-    TutorialStep.reminderCascadeLocked,
-    TutorialStep.reminderApplyFree,
-  ];
-
-  static const List<TutorialStep> setReminderPremium = [
-    TutorialStep.setReminderField,
-    TutorialStep.reminderPresets,
-    TutorialStep.reminderCustomDays,
-    TutorialStep.reminderCascadeToggle,
-    TutorialStep.reminderApplyPremium,
+  /// The reminders section of the record sheet, in the order it reads. The
+  /// full tour shows these in place of addRecordReminder.
+  static const List<TutorialStep> reminders = [
+    TutorialStep.remindersSection,
+    TutorialStep.remindersDates,
+    TutorialStep.remindersOwnDates,
   ];
 
   static const List<TutorialStep> insights = [
@@ -96,8 +87,7 @@ class TutorialStepGroups {
 
   static List<TutorialStep> stepsFor(TutorialStep step) {
     if (addRecord.contains(step)) return addRecord;
-    if (setReminderFree.contains(step)) return setReminderFree;
-    if (setReminderPremium.contains(step)) return setReminderPremium;
+    if (reminders.contains(step)) return reminders;
     if (insights.contains(step)) return insights;
     if (travelWithTrip.contains(step)) return travelWithTrip;
     if (travelFree.contains(step)) return travelFree;
@@ -108,9 +98,7 @@ class TutorialStepGroups {
 
   static String? tutorialIdFor(TutorialStep step) {
     if (addRecord.contains(step)) return TutorialIds.addRecord;
-    if (setReminderFree.contains(step) || setReminderPremium.contains(step)) {
-      return TutorialIds.reminders;
-    }
+    if (reminders.contains(step)) return TutorialIds.reminders;
     if (insights.contains(step)) return TutorialIds.insights;
     if (travelWithTrip.contains(step) || travelFree.contains(step)) {
       return TutorialIds.travel;

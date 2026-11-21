@@ -717,12 +717,6 @@ class AppLocalizationsHr extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Kao i podsjetnici koji postaju učestaliji kako se bliži rok';
 
   @override
-  String get editorReminderLabel => 'Podsjetnik';
-
-  @override
-  String get editorReminderSelectOptional => 'Odaberite podsjetnik (neobavezno)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dana prije isteka';
   }
@@ -912,16 +906,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Kartica završava na 4728. Primarna kartica za potrošnju. Povezana s glavnim tekućim računom.';
 
   @override
-  String get tutorialSetReminderField => 'Postavite podsjetnik za primanje obavijesti prije isteka bilo kojeg zapisa. Dodirnite polje Podsjetnik da vidite opcije.';
-
-  @override
   String get reminderTitle => 'Podsjetnik';
-
-  @override
-  String get reminderFreeSection => 'Besplatno';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Bez podsjetnika';
@@ -941,45 +926,6 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Unesite prilagođene dane';
-
-  @override
-  String get reminderCascadeTitle => 'Kaskadni podsjetnici';
-
-  @override
-  String get reminderCascadeSubtitle => 'Primajte više obavijesti prije isteka zapisa';
-
-  @override
-  String get reminderPremiumRequired => 'Ova značajka dostupna je Premium korisnicima.';
-
-  @override
-  String get reminderUpgradeCta => 'Nadogradi na Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Ove opcije podsjetnika dostupne su svima. Odaberite jednu za primanje obavijesti.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Ove opcije se otključavaju s Premium za precizniji tajming prije isteka.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Dodirnite Primijeni da biste spremili svoj izbor podsjetnika.';
-
-  @override
-  String get tutorialReminderPresets => 'Odaberite unaprijed određeno vrijeme za obavijest prije isteka bilo kojeg zapisa.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Postavite vlastiti točan broj dana prije isteka.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Dodirnite Primijeni da biste spremili svoj izbor podsjetnika.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Kaskada šalje više obavijesti prije isteka zapisa. Dostupno s Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Kaskada šalje više obavijesti prije isteka zapisa.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara ističe ono što treba vašu pozornost: zapisi koji uskoro istječu, nedostajući podsjetnici i predstojeći užurbani tjedni.';
 
   @override
@@ -993,9 +939,6 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Radije slušate? Neka vam se uvidi čitaju naglas i pauzirajte bilo kada.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Dodirnite polje podsjetnika da vidite kako podsjetnici rade.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Podsjetnici se izračunavaju iz datuma isteka i Vremena obnove. Ovdje ih možete isključiti.';
@@ -3541,9 +3484,6 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Više pojedinosti sadrži dodatke: bilješke, ponavljanje, vrijeme obnove, čiji je zapis, zaključavanje, novčanik i fotografije. Otvorite ga samo kad vam zatreba.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Ponavljanje pomiče datum naprijed za pretplate. Obnova traje otprilike govori Vaultari koliko obnova traje, pa podsjetnici počinju dovoljno rano.';
 
   @override
   String get tutorialAddRecordProtect => 'Zaključajte zapis da se prije prikaza traži otisak prsta ili zaključavanje zaslona. Kartice označite kao U mom novčaniku i dodajte fotografije dokumenta.';

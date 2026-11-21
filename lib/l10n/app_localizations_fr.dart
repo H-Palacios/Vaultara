@@ -716,12 +716,6 @@ class AppLocalizationsFr extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'De plus, les rappels se font plus fréquents à l\'approche de la date limite';
 
   @override
-  String get editorReminderLabel => 'Rappel';
-
-  @override
-  String get editorReminderSelectOptional => 'Sélectionner un rappel (facultatif)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days jours avant l’expiration';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Carte se terminant par 4728. Carte de dépense principale. Liée au compte courant principal.';
 
   @override
-  String get tutorialSetReminderField => 'Configurez un rappel pour recevoir une notification avant l\'expiration d\'un enregistrement. Appuyez sur le champ Rappel pour voir les options.';
-
-  @override
   String get reminderTitle => 'Rappel';
-
-  @override
-  String get reminderFreeSection => 'Gratuit';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Aucun rappel';
@@ -939,45 +924,6 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Entrez des jours personnalisés';
-
-  @override
-  String get reminderCascadeTitle => 'Rappels en cascade';
-
-  @override
-  String get reminderCascadeSubtitle => 'Recevez plusieurs notifications avant qu\'un enregistrement n\'expire';
-
-  @override
-  String get reminderPremiumRequired => 'Cette fonctionnalité est disponible pour les utilisateurs Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Passer à Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Ces options de rappel sont disponibles pour tous. Choisissez-en une pour recevoir une notification.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Ces options se débloquent avec Premium pour choisir plus précisément le moment des rappels avant l\'expiration.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Appuyez sur Appliquer pour enregistrer votre choix de rappel.';
-
-  @override
-  String get tutorialReminderPresets => 'Choisissez un temps prédéfini pour être notifié avant l\'expiration de tout enregistrement.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Définissez votre propre nombre exact de jours avant l\'expiration.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Appuyez sur Appliquer pour enregistrer votre choix de rappel.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'La cascade envoie plusieurs notifications avant qu\'un enregistrement n\'expire. Disponible avec Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'La cascade envoie plusieurs notifications avant qu\'un enregistrement n\'expire.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara met en évidence ce qui nécessite votre attention : enregistrements arrivant à expiration, rappels manquants et semaines chargées à venir.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Vous préférez écouter ? Faites lire vos analyses à voix haute et mettez en pause à tout moment.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Touchez le champ de rappel pour voir comment fonctionnent les rappels.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Les rappels sont calculés à partir de la date d\'expiration et du Délai de renouvellement. Vous pouvez les désactiver ici.';
@@ -3517,9 +3460,6 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Plus de détails contient les extras : notes, répétition, durée du renouvellement, à qui appartient l’enregistrement, verrouillage, portefeuille et photos. Ouvrez-le seulement si vous en avez besoin.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Répétition fait avancer la date pour les abonnements. Le renouvellement prend environ indique à Vaultara combien de temps prend le renouvellement, pour que les rappels commencent assez tôt.';
 
   @override
   String get tutorialAddRecordProtect => 'Verrouillez un enregistrement pour demander votre empreinte ou le verrouillage d’écran avant de l’afficher. Marquez les cartes Dans mon portefeuille et ajoutez des photos du document.';

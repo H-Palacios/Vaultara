@@ -716,12 +716,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => '临近截止日期时，提醒会自动变得更加频繁';
 
   @override
-  String get editorReminderLabel => '提醒';
-
-  @override
-  String get editorReminderSelectOptional => '选择提醒（可选）';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '到期前 $days 天';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tutorialSampleRecordNotes => '卡号尾数为 4728。主要消费卡。与主活期账户关联。';
 
   @override
-  String get tutorialSetReminderField => '设置提醒以在任何记录到期之前接收通知。点击提醒字段查看选项。';
-
-  @override
   String get reminderTitle => '提醒';
-
-  @override
-  String get reminderFreeSection => '免费';
-
-  @override
-  String get reminderPremiumSection => '高级版';
 
   @override
   String get reminderNone => '无提醒';
@@ -938,45 +923,6 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => '输入自定义天数';
-
-  @override
-  String get reminderCascadeTitle => '级联提醒';
-
-  @override
-  String get reminderCascadeSubtitle => '在记录到期前接收多个通知';
-
-  @override
-  String get reminderPremiumRequired => '此功能适用于高级版用户。';
-
-  @override
-  String get reminderUpgradeCta => '升级到高级版';
-
-  @override
-  String get tutorialReminderFreeSection => '这些提醒选项适用于所有人。选择一个以接收通知。';
-
-  @override
-  String get tutorialReminderPremiumSection => '这些选项可通过高级版解锁,以在到期前获得更精确的时机。';
-
-  @override
-  String get tutorialReminderApplyFree => '点击应用以保存您的提醒选择。';
-
-  @override
-  String get tutorialReminderPresets => '选择预设时间,以便在任何记录到期前收到通知。';
-
-  @override
-  String get tutorialReminderCustomDays => '在到期前设置您自己的确切天数。';
-
-  @override
-  String get tutorialReminderApplyPremium => '点击应用以保存您的提醒选择。';
-
-  @override
-  String get tutorialReminderCascadeFree => '级联在记录到期前发送多个通知。可通过高级版使用。';
-
-  @override
-  String get tutorialReminderCascadePremium => '级联在记录到期前发送多个通知。';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara 突出显示需要您关注的内容:即将到期的记录、缺少的提醒以及即将到来的繁忙周。';
 
   @override
@@ -990,9 +936,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get tutorialAudio => '喜欢用听的吗？让系统朗读您的洞察，随时可暂停。';
-
-  @override
-  String get tutorialAddRecordReminderTour => '点击提醒字段，了解提醒的运作方式。';
 
   @override
   String get tutorialAddRecordReminderSolo => '提醒根据到期日和续期所需时间计算。你可以在这里关闭提醒。';
@@ -3491,9 +3434,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => '更多详情里放着其他内容：备注、重复、续期所需时间、记录属于谁、锁定、钱包和照片。需要时再打开。';
-
-  @override
-  String get tutorialAddRecordRepeat => '重复会为订阅把日期往后顺延。续期大约需要告诉 Vaultara 续期要花多久，让提醒提前足够早开始。';
 
   @override
   String get tutorialAddRecordProtect => '锁定记录后，显示前会要求验证指纹或屏幕锁。把卡片标记为在我的钱包里，并添加证件的照片。';
@@ -10464,12 +10404,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get planFeatureAutomaticFollowUps => '此外，临近截止日期时提醒会越来越频繁';
 
   @override
-  String get editorReminderLabel => '提醒';
-
-  @override
-  String get editorReminderSelectOptional => '选择提醒（可选）';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '到期前 $days 天';
   }
@@ -10652,16 +10586,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tutorialSampleRecordNotes => '卡号尾数为 4728。主要消费卡。与主活期账户关联。';
 
   @override
-  String get tutorialSetReminderField => '设置提醒以在任何记录到期之前接收通知。点击提醒字段查看选项。';
-
-  @override
   String get reminderTitle => '提醒';
-
-  @override
-  String get reminderFreeSection => '免费';
-
-  @override
-  String get reminderPremiumSection => '高级版';
 
   @override
   String get reminderNone => '无提醒';
@@ -10680,45 +10605,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   }
 
   @override
-  String get reminderCustomDaysTitle => '输入自定义天数';
-
-  @override
-  String get reminderCascadeTitle => '级联提醒';
-
-  @override
-  String get reminderCascadeSubtitle => '在记录到期前接收多个通知';
-
-  @override
-  String get reminderPremiumRequired => '此功能适用于高级版用户。';
-
-  @override
-  String get reminderUpgradeCta => '升级到高级版';
-
-  @override
-  String get tutorialReminderFreeSection => '这些提醒选项适用于所有人。选择一个以接收通知。';
-
-  @override
-  String get tutorialReminderPremiumSection => '这些选项可通过高级版解锁,以在到期前获得更精确的时机。';
-
-  @override
-  String get tutorialReminderApplyFree => '点击应用以保存您的提醒选择。';
-
-  @override
-  String get tutorialReminderPresets => '选择预设时间,以便在任何记录到期前收到通知。';
-
-  @override
-  String get tutorialReminderCustomDays => '在到期前设置您自己的确切天数。';
-
-  @override
-  String get tutorialReminderApplyPremium => '点击应用以保存您的提醒选择。';
-
-  @override
-  String get tutorialReminderCascadeFree => '级联在记录到期前发送多个通知。可通过高级版使用。';
-
-  @override
-  String get tutorialReminderCascadePremium => '级联在记录到期前发送多个通知。';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara 突出显示需要您关注的内容:即将到期的记录、缺少的提醒以及即将到来的繁忙周。';
 
   @override
@@ -10732,9 +10618,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get tutorialAudio => '喜欢用听的吗？让系统朗读您的洞察，随时可暂停。';
-
-  @override
-  String get tutorialAddRecordReminderTour => '点击提醒字段，了解提醒的运作方式。';
 
   @override
   String get tutorialAddRecordReminderSolo => '提醒根据到期日和续期所需时间计算。你可以在这里关闭提醒。';
@@ -13227,9 +13110,6 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get tutorialAddRecordMoreDetails => '更多详情里是额外选项：备注、重复、续期时间、记录属于谁、锁定、钱包和照片。需要时再打开即可。';
-
-  @override
-  String get tutorialAddRecordRepeat => '重复会为订阅类记录自动顺延日期。续期大约需要用来告诉 Vaultara 续期要花多久，让提醒提前足够的时间开始。';
 
   @override
   String get tutorialAddRecordProtect => '锁定记录后，显示前会要求验证指纹或屏幕锁。可以把卡片标记为在我的钱包里，也可以添加证件照片。';
@@ -20200,12 +20080,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get planFeatureAutomaticFollowUps => '臨近截止日期時，提醒會自動變得更頻繁';
 
   @override
-  String get editorReminderLabel => '提醒';
-
-  @override
-  String get editorReminderSelectOptional => '選擇提醒（可選）';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '到期前 $days 天';
   }
@@ -20388,16 +20262,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tutorialSampleRecordNotes => '卡號末四碼為 4728。主要消費卡。與主要活期帳戶連結。';
 
   @override
-  String get tutorialSetReminderField => '設定提醒以在任何記錄到期之前接收通知。點擊提醒欄位查看選項。';
-
-  @override
   String get reminderTitle => '提醒';
-
-  @override
-  String get reminderFreeSection => '免費';
-
-  @override
-  String get reminderPremiumSection => '進階版';
 
   @override
   String get reminderNone => '無提醒';
@@ -20416,45 +20281,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
-  String get reminderCustomDaysTitle => '輸入自訂天數';
-
-  @override
-  String get reminderCascadeTitle => '串聯提醒';
-
-  @override
-  String get reminderCascadeSubtitle => '在記錄到期前接收多個通知';
-
-  @override
-  String get reminderPremiumRequired => '此功能適用於進階版使用者。';
-
-  @override
-  String get reminderUpgradeCta => '升級至進階版';
-
-  @override
-  String get tutorialReminderFreeSection => '這些提醒選項適用於所有人。選擇一個以接收通知。';
-
-  @override
-  String get tutorialReminderPremiumSection => '這些選項可透過進階版解鎖，以在到期前獲得更精確的時機。';
-
-  @override
-  String get tutorialReminderApplyFree => '點擊套用以儲存您的提醒選擇。';
-
-  @override
-  String get tutorialReminderPresets => '選擇預設時間,以便在任何記錄到期前收到通知。';
-
-  @override
-  String get tutorialReminderCustomDays => '在到期前設定您自己的確切天數。';
-
-  @override
-  String get tutorialReminderApplyPremium => '點擊套用以儲存您的提醒選擇。';
-
-  @override
-  String get tutorialReminderCascadeFree => '串聯在記錄到期前發送多個通知。可透過進階版使用。';
-
-  @override
-  String get tutorialReminderCascadePremium => '串聯在記錄到期前發送多個通知。';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara 突顯需要您關注的內容:即將到期的記錄、缺少的提醒以及即將到來的繁忙週。';
 
   @override
@@ -20468,9 +20294,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get tutorialAudio => '喜歡用聽的嗎？讓系統朗讀您的洞察，隨時可暫停。';
-
-  @override
-  String get tutorialAddRecordReminderTour => '點擊提醒欄位，了解提醒的運作方式。';
 
   @override
   String get tutorialAddRecordReminderSolo => '提醒會依到期日和續期所需時間計算。你可以在這裡關閉提醒。';
@@ -22963,9 +22786,6 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get tutorialAddRecordMoreDetails => '更多詳細資料收納了額外選項：備註、重複、續期所需時間、這筆記錄屬於誰、鎖定、錢包和照片。需要時再開啟即可。';
-
-  @override
-  String get tutorialAddRecordRepeat => '重複會為訂閱項目把日期往後推。續期大約需要會告訴 Vaultara 續期要花多久，讓提醒提早到足夠的時間開始。';
 
   @override
   String get tutorialAddRecordProtect => '鎖定記錄後，顯示前會先要求您的指紋或螢幕鎖定。把卡片標記為在我的錢包中，並新增證件的照片。';

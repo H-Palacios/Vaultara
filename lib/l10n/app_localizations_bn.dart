@@ -716,12 +716,6 @@ class AppLocalizationsBn extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'সাথে থাকছে এমন রিমাইন্ডার যা ডেডলাইন এগিয়ে আসার সাথে সাথে ঘন ঘন আসতে থাকে';
 
   @override
-  String get editorReminderLabel => 'রিমাইন্ডার';
-
-  @override
-  String get editorReminderSelectOptional => 'রিমাইন্ডার নির্বাচন করুন (ঐচ্ছিক)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'মেয়াদ শেষের $days দিন আগে';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'কার্ড 4728 দিয়ে শেষ। প্রাথমিক খরচের কার্ড। মূল চলতি অ্যাকাউন্টের সাথে সংযুক্ত।';
 
   @override
-  String get tutorialSetReminderField => 'কোনো রেকর্ডের মেয়াদ শেষ হওয়ার আগে বিজ্ঞপ্তি পেতে একটি রিমাইন্ডার সেট করুন। বিকল্পগুলি দেখতে রিমাইন্ডার ক্ষেত্রে ট্যাপ করুন।';
-
-  @override
   String get reminderTitle => 'রিমাইন্ডার';
-
-  @override
-  String get reminderFreeSection => 'বিনামূল্যে';
-
-  @override
-  String get reminderPremiumSection => 'প্রিমিয়াম';
 
   @override
   String get reminderNone => 'কোনো রিমাইন্ডার নেই';
@@ -939,45 +924,6 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'কাস্টম দিন লিখুন';
-
-  @override
-  String get reminderCascadeTitle => 'ক্যাসকেড রিমাইন্ডার';
-
-  @override
-  String get reminderCascadeSubtitle => 'রেকর্ডের মেয়াদ শেষ হওয়ার আগে একাধিক বিজ্ঞপ্তি পান';
-
-  @override
-  String get reminderPremiumRequired => 'এই বৈশিষ্ট্য প্রিমিয়াম ব্যবহারকারীদের জন্য উপলব্ধ।';
-
-  @override
-  String get reminderUpgradeCta => 'প্রিমিয়ামে আপগ্রেড করুন';
-
-  @override
-  String get tutorialReminderFreeSection => 'এই রিমাইন্ডার বিকল্পগুলি সবার জন্য উপলব্ধ। একটি বিজ্ঞপ্তি পেতে একটি বেছে নিন।';
-
-  @override
-  String get tutorialReminderPremiumSection => 'এই বিকল্পগুলি প্রিমিয়ামের সাথে আরও নির্ভুল সময়ের জন্য আনলক হয়।';
-
-  @override
-  String get tutorialReminderApplyFree => 'আপনার রিমাইন্ডার পছন্দ সংরক্ষণ করতে প্রয়োগ করুন এ ট্যাপ করুন।';
-
-  @override
-  String get tutorialReminderPresets => 'যেকোনো রেকর্ডের মেয়াদ শেষ হওয়ার আগে অবহিত হওয়ার জন্য একটি প্রিসেট সময় বেছে নিন।';
-
-  @override
-  String get tutorialReminderCustomDays => 'মেয়াদ শেষ হওয়ার আগে আপনার নিজের সঠিক দিনের সংখ্যা সেট করুন।';
-
-  @override
-  String get tutorialReminderApplyPremium => 'আপনার রিমাইন্ডার পছন্দ সংরক্ষণ করতে প্রয়োগ করুন এ ট্যাপ করুন।';
-
-  @override
-  String get tutorialReminderCascadeFree => 'রেকর্ডের মেয়াদ শেষ হওয়ার আগে ক্যাসকেড একাধিক বিজ্ঞপ্তি পাঠায়। প্রিমিয়ামের সাথে উপলব্ধ।';
-
-  @override
-  String get tutorialReminderCascadePremium => 'রেকর্ডের মেয়াদ শেষ হওয়ার আগে ক্যাসকেড একাধিক বিজ্ঞপ্তি পাঠায়।';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara আপনার মনোযোগ প্রয়োজন এমন বিষয়গুলি হাইলাইট করে: শীঘ্রই মেয়াদ শেষ হওয়া রেকর্ড, অনুপস্থিত রিমাইন্ডার এবং সামনের ব্যস্ত সপ্তাহ।';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'শুনতে চান? আপনার অন্তর্দৃষ্টিগুলো সশব্দে পড়ে শোনান, আর যেকোনো সময় থামান।';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'রিমাইন্ডার কীভাবে কাজ করে তা দেখতে রিমাইন্ডার ক্ষেত্রে ট্যাপ করুন।';
 
   @override
   String get tutorialAddRecordReminderSolo => 'রিমাইন্ডার মেয়াদ শেষের তারিখ ও নবায়নের সময় থেকে হিসাব করা হয়। আপনি এখানে সেগুলো বন্ধ করতে পারেন।';
@@ -3512,9 +3455,6 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'আরও বিবরণ-এ বাড়তি বিষয়গুলো আছে: নোট, পুনরাবৃত্তি, নবায়নের সময়, রেকর্ডটি কার, লক, ওয়ালেট ও ছবি। দরকার হলেই এটি খুলুন।';
-
-  @override
-  String get tutorialAddRecordRepeat => 'পুনরাবৃত্তি সাবস্ক্রিপশনের জন্য তারিখ এগিয়ে দেয়। নবায়নে সময় লাগে প্রায় Vaultara-কে জানায় নবায়নে কত সময় লাগে, যাতে রিমাইন্ডার যথেষ্ট আগে শুরু হয়।';
 
   @override
   String get tutorialAddRecordProtect => 'রেকর্ড লক করলে দেখানোর আগে আপনার আঙুলের ছাপ বা স্ক্রিন লক চাওয়া হবে। কার্ডগুলো আমার ওয়ালেটে হিসেবে চিহ্নিত করুন এবং নথির ছবি যোগ করুন।';

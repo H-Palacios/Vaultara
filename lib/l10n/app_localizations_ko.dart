@@ -716,12 +716,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => '마감일이 다가올수록 알림 빈도가 높아지는 추가 알림 기능';
 
   @override
-  String get editorReminderLabel => '알림';
-
-  @override
-  String get editorReminderSelectOptional => '알림 선택 (선택 사항)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '만료 $days일 전';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tutorialSampleRecordNotes => '4728로 끝나는 카드. 주요 지출 카드. 주 당좌 계좌에 연결됨.';
 
   @override
-  String get tutorialSetReminderField => '기록가 만료되기 전에 알림을 받으려면 알림을 설정하세요. 옵션을 보려면 알림 필드를 탭하세요.';
-
-  @override
   String get reminderTitle => '알림';
-
-  @override
-  String get reminderFreeSection => '무료';
-
-  @override
-  String get reminderPremiumSection => '프리미엄';
 
   @override
   String get reminderNone => '알림 없음';
@@ -938,45 +923,6 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => '사용자 지정 일수 입력';
-
-  @override
-  String get reminderCascadeTitle => '캐스케이드 알림';
-
-  @override
-  String get reminderCascadeSubtitle => '기록가 만료되기 전에 여러 알림 받기';
-
-  @override
-  String get reminderPremiumRequired => '이 기능은 프리미엄 사용자에게 제공됩니다.';
-
-  @override
-  String get reminderUpgradeCta => '프리미엄으로 업그레이드';
-
-  @override
-  String get tutorialReminderFreeSection => '이러한 알림 옵션은 모든 사용자가 사용할 수 있습니다. 알림을 받으려면 하나를 선택하세요.';
-
-  @override
-  String get tutorialReminderPremiumSection => '이 옵션은 만료 전 보다 정확한 타이밍을 위해 프리미엄으로 잠금 해제됩니다.';
-
-  @override
-  String get tutorialReminderApplyFree => '알림 선택을 저장하려면 적용을 탭하세요.';
-
-  @override
-  String get tutorialReminderPresets => '기록가 만료되기 전에 알림을 받으려면 사전 설정된 시간을 선택하세요.';
-
-  @override
-  String get tutorialReminderCustomDays => '만료 전 자신만의 정확한 일수를 설정하세요.';
-
-  @override
-  String get tutorialReminderApplyPremium => '알림 선택을 저장하려면 적용을 탭하세요.';
-
-  @override
-  String get tutorialReminderCascadeFree => '캐스케이드는 기록가 만료되기 전에 여러 알림을 보냅니다. 프리미엄에서 사용 가능합니다.';
-
-  @override
-  String get tutorialReminderCascadePremium => '캐스케이드는 기록가 만료되기 전에 여러 알림을 보냅니다.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara는 주의가 필요한 것을 강조 표시합니다: 곧 만료되는 기록, 누락된 알림, 다가오는 바쁜 주.';
 
   @override
@@ -990,9 +936,6 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get tutorialAudio => '듣는 것이 편하신가요? 인사이트를 소리 내어 읽어 주고 언제든지 일시정지할 수 있습니다.';
-
-  @override
-  String get tutorialAddRecordReminderTour => '알림이 어떻게 작동하는지 보려면 알림 필드를 탭하세요.';
 
   @override
   String get tutorialAddRecordReminderSolo => '알림은 만료일과 갱신 소요 기간으로 계산됩니다. 여기에서 끌 수 있습니다.';
@@ -3491,9 +3434,6 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => '추가 정보에는 메모, 반복, 갱신에 걸리는 시간, 누구의 기록인지, 잠금, 지갑, 사진 같은 추가 항목이 있습니다. 필요할 때만 여세요.';
-
-  @override
-  String get tutorialAddRecordRepeat => '반복은 구독처럼 날짜를 앞으로 옮깁니다. 갱신에 걸리는 시간은 갱신에 얼마나 걸리는지 Vaultara에 알려 주어, 알림이 충분히 일찍 시작되게 합니다.';
 
   @override
   String get tutorialAddRecordProtect => '기록을 잠그면 보여 주기 전에 지문이나 화면 잠금을 요청합니다. 카드는 내 지갑에 있음으로 표시하고, 문서 사진을 추가하세요.';

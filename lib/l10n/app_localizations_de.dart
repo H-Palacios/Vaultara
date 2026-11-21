@@ -716,12 +716,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Plus Erinnerungen, die sich häufen, je näher die Frist rückt';
 
   @override
-  String get editorReminderLabel => 'Erinnerung';
-
-  @override
-  String get editorReminderSelectOptional => 'Erinnerung auswählen (optional)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days Tage vor Ablauf';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Karte endet auf 4728. Primäre Ausgabenkarte. Verknüpft mit dem Hauptgirokonto.';
 
   @override
-  String get tutorialSetReminderField => 'Richte eine Erinnerung ein, um vor Ablauf eines Eintrags eine Benachrichtigung zu erhalten. Tippe auf das Erinnerungsfeld, um die Optionen zu sehen.';
-
-  @override
   String get reminderTitle => 'Erinnerung';
-
-  @override
-  String get reminderFreeSection => 'Kostenlos';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Keine Erinnerung';
@@ -939,45 +924,6 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Benutzerdefinierte Tage eingeben';
-
-  @override
-  String get reminderCascadeTitle => 'Gestaffelte Erinnerungen';
-
-  @override
-  String get reminderCascadeSubtitle => 'Mehrere Benachrichtigungen erhalten, bevor ein Eintrag abläuft';
-
-  @override
-  String get reminderPremiumRequired => 'Diese Funktion ist für Premium-Nutzer verfügbar.';
-
-  @override
-  String get reminderUpgradeCta => 'Auf Premium upgraden';
-
-  @override
-  String get tutorialReminderFreeSection => 'Diese Erinnerungsoptionen sind für alle verfügbar. Wähle eine aus, um eine Benachrichtigung zu erhalten.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Diese Optionen werden mit Premium für präzisere Zeitplanung vor Ablauf freigeschaltet.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Tippe auf Anwenden, um deine Erinnerungsauswahl zu speichern.';
-
-  @override
-  String get tutorialReminderPresets => 'Wähle eine voreingestellte Zeit, um vor Ablauf eines Eintrags benachrichtigt zu werden.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Lege deine eigene genaue Anzahl von Tagen vor Ablauf fest.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Tippe auf Anwenden, um deine Erinnerungsauswahl zu speichern.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Kaskade sendet mehrere Benachrichtigungen, bevor ein Eintrag abläuft. Verfügbar mit Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Kaskade sendet mehrere Benachrichtigungen, bevor ein Eintrag abläuft.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara hebt hervor, was deine Aufmerksamkeit benötigt: bald ablaufende Einträge, fehlende Erinnerungen und arbeitsreiche Wochen.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Lieber zuhören? Lass dir deine Einblicke vorlesen und pausiere jederzeit.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Tippe auf das Erinnerungsfeld, um zu sehen, wie Erinnerungen funktionieren.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Erinnerungen werden aus dem Ablaufdatum und der Verlängerungsdauer berechnet. Hier kannst du sie ausschalten.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Unter Weitere Details findest du die Extras: Notizen, Wiederholung, Verlängerungsdauer, wessen Eintrag es ist, Sperre, Geldbörse und Fotos. Öffne es nur, wenn du es brauchst.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Wiederholung setzt das Datum bei Abos weiter. Die Verlängerung dauert etwa sagt Vaultara, wie lange eine Verlängerung dauert, damit die Erinnerungen früh genug beginnen.';
 
   @override
   String get tutorialAddRecordProtect => 'Sperre einen Eintrag, damit vor dem Anzeigen dein Fingerabdruck oder die Bildschirmsperre verlangt wird. Markiere Karten mit In meiner Geldbörse und füge Fotos des Dokuments hinzu.';

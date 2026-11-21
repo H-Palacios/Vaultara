@@ -716,12 +716,6 @@ class AppLocalizationsGl extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Ademais, lembretes que se volven máis frecuentes a medida que se achega o prazo límite';
 
   @override
-  String get editorReminderLabel => 'Lembrete';
-
-  @override
-  String get editorReminderSelectOptional => 'Seleccionar lembrete (opcional)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days días antes da caducidade';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Tarxeta rematada en 4728. Tarxeta principal de gasto. Vinculada á conta corrente principal.';
 
   @override
-  String get tutorialSetReminderField => 'Configura un lembrete para recibir unha notificación antes de que caduque calquera rexistro. Toca o campo Lembrete para ver as opcións.';
-
-  @override
   String get reminderTitle => 'Lembrete';
-
-  @override
-  String get reminderFreeSection => 'Gratuíto';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Sen lembrete';
@@ -939,45 +924,6 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Introduce días personalizados';
-
-  @override
-  String get reminderCascadeTitle => 'Lembretes en cascada';
-
-  @override
-  String get reminderCascadeSubtitle => 'Recibe múltiples notificacións antes de que caduque un rexistro';
-
-  @override
-  String get reminderPremiumRequired => 'Esta función está dispoñible para usuarios Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Actualizar a Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Estas opcións de lembrete están dispoñibles para todos. Escolle unha para recibir unha notificación.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Estas opcións desbloquéanse con Premium para un tempo máis preciso antes de caducar.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Toca Aplicar para gardar a túa elección de lembrete.';
-
-  @override
-  String get tutorialReminderPresets => 'Escolle un tempo predefinido para ser notificado antes de que caduque calquera rexistro.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Establece o teu propio número exacto de días antes de caducar.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Toca Aplicar para gardar a túa elección de lembrete.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'A cascada envía múltiples notificacións antes de que caduque un rexistro. Dispoñible con Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'A cascada envía múltiples notificacións antes de que caduque un rexistro.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara destaca o que precisa a túa atención: rexistros que caducan en breve, lembretes que faltan e semanas ocupadas por vir.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Prefires escoitar? Deixa que che lean as estatísticas en voz alta e deténas cando queiras.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Toca o campo de lembrete para ver como funcionan os lembretes.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Os lembretes calcúlanse a partir da data de vencemento e o Tempo de renovación. Aquí podes desactivalos.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Máis detalles garda os extras: notas, repítese, tempo de renovación, de quen é o rexistro, bloqueo, carteira e fotos. Ábreo só cando o necesites.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Repítese move a data cara adiante nas subscricións. A renovación leva aproximadamente indícalle a Vaultara canto tarda renovar, para que os lembretes comecen con tempo.';
 
   @override
   String get tutorialAddRecordProtect => 'Bloquea un rexistro para pedir a túa impresión dixital ou o bloqueo de pantalla antes de mostralo. Marca as tarxetas como Na miña carteira e engade fotos do documento.';

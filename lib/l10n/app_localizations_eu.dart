@@ -716,12 +716,6 @@ class AppLocalizationsEu extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Gehi epea hurbildu ahala maizago bihurtzen diren gogorarazleak';
 
   @override
-  String get editorReminderLabel => 'Gogorarazlea';
-
-  @override
-  String get editorReminderSelectOptional => 'Hautatu gogorarazle bat (aukerakoa)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Iraungi baino $days egun lehenago';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tutorialSampleRecordNotes => '4728 amaieradun txartela. Gastu-txartel nagusia. Kontu korronte nagusiari lotuta.';
 
   @override
-  String get tutorialSetReminderField => 'Ezarri gogorarazle bat edozein erregistro iraungi aurretik jakinarazpena jasotzeko. Sakatu Gogorarazlea eremua aukerak ikusteko.';
-
-  @override
   String get reminderTitle => 'Gogorarazlea';
-
-  @override
-  String get reminderFreeSection => 'Doakoa';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Gogorarazlerik ez';
@@ -939,45 +924,6 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Idatzi egun pertsonalizatuak';
-
-  @override
-  String get reminderCascadeTitle => 'Kaskadako gogorarazleak';
-
-  @override
-  String get reminderCascadeSubtitle => 'Jaso hainbat jakinarazpen erregistro bat iraungi aurretik';
-
-  @override
-  String get reminderPremiumRequired => 'Eginbide hau Premium erabiltzaileentzat dago erabilgarri.';
-
-  @override
-  String get reminderUpgradeCta => 'Eguneratu Premium-era';
-
-  @override
-  String get tutorialReminderFreeSection => 'Gogorarazle-aukera hauek guztientzat daude erabilgarri. Aukeratu bat jakinarazpena jasotzeko.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Aukera hauek Premium-ekin desblokeatzen dira, iraungitzearen aurreko denbora zehatzago doitzeko.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Sakatu Aplikatu zure gogorarazle-aukera gordetzeko.';
-
-  @override
-  String get tutorialReminderPresets => 'Aukeratu aurrez ezarritako denbora bat edozein erregistro iraungi aurretik jakinarazpena jasotzeko.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Ezarri zeuk iraungitzearen aurreko egun kopuru zehatza.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Sakatu Aplikatu zure gogorarazle-aukera gordetzeko.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Kaskadak hainbat jakinarazpen bidaltzen ditu erregistro bat iraungi aurretik. Premium-ekin erabilgarri.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Kaskadak hainbat jakinarazpen bidaltzen ditu erregistro bat iraungi aurretik.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultarak zure arreta behar duena nabarmentzen du: laster iraungiko diren erregistroak, gogorarazlerik gabeak eta datozen aste lanpetuak.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Nahiago duzu entzun? Entzun zure ikuspegiak ozen irakurrita, eta pausatu noiznahi.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Sakatu gogorarazlearen eremua gogorarazleek nola funtzionatzen duten ikusteko.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Gogorarazleak iraungitze-datatik eta Berritze-denboratik kalkulatzen dira. Hemen desaktiba ditzakezu.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Xehetasun gehiago atalean gainerakoak daude: oharrak, errepikapena, berritzeko denbora, norena den erregistroa, blokeoa, zorroa eta argazkiak. Ireki behar duzunean bakarrik.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Errepikapena aukerak data aurrera mugitzen du harpidetzetarako. Berritzeak gutxi gorabehera atalak Vaultarari esaten dio zenbat denbora behar duen berritzeak, gogorarazleak behar adina goiz hasteko.';
 
   @override
   String get tutorialAddRecordProtect => 'Blokeatu erregistro bat erakutsi aurretik hatz-marka edo pantailaren blokeoa eskatzeko. Markatu txartelak Nire zorroan gisa, eta gehitu dokumentuaren argazkiak.';

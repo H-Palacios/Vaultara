@@ -716,12 +716,6 @@ class AppLocalizationsTa extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'மேலும் காலக்கெடு நெருங்க நெருங்க அடிக்கடி வரும் நினைவூட்டல்கள்';
 
   @override
-  String get editorReminderLabel => 'நினைவூட்டல்';
-
-  @override
-  String get editorReminderSelectOptional => 'நினைவூட்டலை தேர்ந்தெடுக்கவும் (விருப்பம்)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'காலாவதிக்கு $days நாட்களுக்கு முன்';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get tutorialSampleRecordNotes => '4728 இல் முடிவடையும் அட்டை. முதன்மை செலவு அட்டை. முதன்மை நடப்பு கணக்குடன் இணைக்கப்பட்டுள்ளது.';
 
   @override
-  String get tutorialSetReminderField => 'எந்தவொரு பதிவும் காலாவதியாகும் முன் அறிவிப்பைப் பெற ஒரு நினைவூட்டலை அமைக்கவும். விருப்பங்களைக் காண நினைவூட்டல் புலத்தைத் தட்டவும்.';
-
-  @override
   String get reminderTitle => 'நினைவூட்டல்';
-
-  @override
-  String get reminderFreeSection => 'இலவசம்';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'நினைவூட்டல் இல்லை';
@@ -939,45 +924,6 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'தனிப்பயன் நாட்களை உள்ளிடவும்';
-
-  @override
-  String get reminderCascadeTitle => 'தொடர் நினைவூட்டல்கள்';
-
-  @override
-  String get reminderCascadeSubtitle => 'பதிவு காலாவதியாகும் முன் பல அறிவிப்புகளைப் பெறவும்';
-
-  @override
-  String get reminderPremiumRequired => 'இந்த அம்சம் Premium பயனர்களுக்குக் கிடைக்கிறது.';
-
-  @override
-  String get reminderUpgradeCta => 'Premium-க்கு மேம்படுத்தவும்';
-
-  @override
-  String get tutorialReminderFreeSection => 'இந்த நினைவூட்டல் விருப்பங்கள் அனைவருக்கும் கிடைக்கின்றன. அறிவிப்பைப் பெற ஒன்றைத் தேர்ந்தெடுக்கவும்.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'இந்த விருப்பங்கள் காலாவதியாகும் முன் மேலும் துல்லியமான நேரத்திற்காக Premium உடன் திறக்கப்படுகின்றன.';
-
-  @override
-  String get tutorialReminderApplyFree => 'உங்கள் நினைவூட்டல் தேர்வைச் சேமிக்க பயன்படுத்து என்பதைத் தட்டவும்.';
-
-  @override
-  String get tutorialReminderPresets => 'எந்தவொரு பதிவும் காலாவதியாகும் முன் அறிவிக்கப்பட முன்னமைக்கப்பட்ட நேரத்தைத் தேர்ந்தெடுக்கவும்.';
-
-  @override
-  String get tutorialReminderCustomDays => 'காலாவதியாகும் முன் உங்கள் சொந்த சரியான நாட்களின் எண்ணிக்கையை அமைக்கவும்.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'உங்கள் நினைவூட்டல் தேர்வைச் சேமிக்க பயன்படுத்து என்பதைத் தட்டவும்.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'தொடர் நினைவூட்டல்கள், பதிவு காலாவதியாகும் முன் பல அறிவிப்புகளை அனுப்பும். Premium உடன் கிடைக்கிறது.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'தொடர் நினைவூட்டல்கள், பதிவு காலாவதியாகும் முன் பல அறிவிப்புகளை அனுப்பும்.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara உங்கள் கவனத்தை ஈர்ப்பதை முன்னிலைப்படுத்துகிறது: விரைவில் காலாவதியாகும் பதிவுகள், விடுபட்ட நினைவூட்டல்கள், மற்றும் வரவிருக்கும் பிஸியான வாரங்கள்.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'கேட்பதை விரும்புகிறீர்களா? உங்கள் தகவல்களை உரக்கப் படிக்கச் செய்யுங்கள், எப்போது வேண்டுமானாலும் இடைநிறுத்துங்கள்.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'நினைவூட்டல்கள் எப்படி வேலை செய்கின்றன என்பதைப் பார்க்க நினைவூட்டல் புலத்தைத் தட்டவும்.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'நினைவூட்டல்கள் காலாவதி தேதி மற்றும் புதுப்பிப்பு நேரத்திலிருந்து கணக்கிடப்படுகின்றன. அவற்றை இங்கே அணைக்கலாம்.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'மேலும் விவரங்கள் பகுதியில் கூடுதல் விருப்பங்கள் உள்ளன: குறிப்புகள், மீண்டும் வருதல், புதுப்பிக்க ஆகும் நேரம், பதிவு யாருடையது, பூட்டு, பணப்பை, புகைப்படங்கள். தேவைப்படும்போது மட்டும் திறங்கள்.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'மீண்டும் வருதல் சந்தாக்களுக்குத் தேதியை முன்னால் நகர்த்தும். புதுப்பிக்க ஆகும் நேரம் சுமார் என்பது புதுப்பிக்க எவ்வளவு நேரம் ஆகும் என்பதை Vaultara-வுக்குச் சொல்லும், அதனால் நினைவூட்டல்கள் போதுமான முன்கூட்டியே தொடங்கும்.';
 
   @override
   String get tutorialAddRecordProtect => 'ஒரு பதிவைப் பூட்டினால், அதைக் காட்டுவதற்கு முன் உங்கள் கைரேகை அல்லது திரைப் பூட்டு கேட்கப்படும். அட்டைகளை என் பணப்பையில் எனக் குறியிட்டு, ஆவணத்தின் புகைப்படங்களைச் சேருங்கள்.';

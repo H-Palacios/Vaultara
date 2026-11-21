@@ -716,12 +716,6 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'لەگەڵ بیرخەرەوەکانی تر کە چڕییەکەیان زیاتر دەبێت کاتێک وادەی کۆتایی نزیک دەبێتەوە';
 
   @override
-  String get editorReminderLabel => 'بیرخستنەوە';
-
-  @override
-  String get editorReminderSelectOptional => 'بیرخستنەوە هەڵبژێرە (ئیختیاری)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days ڕۆژ پێش بەسەرچوون';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'کارت کۆتایی دێت بە 4728. کارتی سەرەکی خەرجی. بەستراوە بە حسابی سەرەکی جاری.';
 
   @override
-  String get tutorialSetReminderField => 'بیرخەرەوەیەک دابنێ بۆ وەرگرتنی ئاگاداری پێش بەسەرچوونی هەر تۆمارێک. کلیک لە خانەی بیرخەرەوە بکە بۆ بینینی هەڵبژاردنەکان.';
-
-  @override
   String get reminderTitle => 'بیرخەرەوە';
-
-  @override
-  String get reminderFreeSection => 'بێبەرامبەر';
-
-  @override
-  String get reminderPremiumSection => 'پرێمیۆم';
 
   @override
   String get reminderNone => 'بیرخەرەوە نییە';
@@ -939,45 +924,6 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'ڕۆژە تایبەتەکان بنووسە';
-
-  @override
-  String get reminderCascadeTitle => 'بیرخەرەوە کاسکادییەکان';
-
-  @override
-  String get reminderCascadeSubtitle => 'چەند ئاگاداریەک وەربگرە پێش ئەوەی تۆمار بەسەربچێت';
-
-  @override
-  String get reminderPremiumRequired => 'ئەم تایبەتمەندییە بۆ بەکارهێنەرانی پرێمیۆم بەردەستە.';
-
-  @override
-  String get reminderUpgradeCta => 'بەرەو پرێمیۆم بەرزکەرەوە';
-
-  @override
-  String get tutorialReminderFreeSection => 'ئەم هەڵبژاردنە بیرخەرەوانە بۆ هەموو کەس بەردەستە. یەکێک هەڵبژێرە بۆ وەرگرتنی ئاگاداری.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'ئەم هەڵبژاردنانە لەگەڵ پرێمیۆم دەکرێنەوە بۆ کاتی ورد پێش بەسەرچوون.';
-
-  @override
-  String get tutorialReminderApplyFree => 'کلیک لە جێبەجێبکە بکە بۆ پاشەکەوتکردنی هەڵبژاردنی بیرخەرەوەکەت.';
-
-  @override
-  String get tutorialReminderPresets => 'کاتێکی پێش دیاریکراو هەڵبژێرە بۆ ئاگاداربوونەوە پێش بەسەرچوونی هەر تۆمارێک.';
-
-  @override
-  String get tutorialReminderCustomDays => 'ژمارەی وردی ڕۆژەکانی خۆت دابنێ پێش بەسەرچوون.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'کلیک لە جێبەجێبکە بکە بۆ پاشەکەوتکردنی هەڵبژاردنی بیرخەرەوەکەت.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'کاسکاد چەند ئاگاداریەک دەنێرێت پێش ئەوەی تۆمار بەسەربچێت. لەگەڵ پرێمیۆم بەردەستە.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'کاسکاد چەند ئاگاداریەک دەنێرێت پێش ئەوەی تۆمار بەسەربچێت.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara ئەوە ڕوون دەکاتەوە کە پێویستی بە سەرنجی تۆ هەیە: تۆمارەکانی کە بەم زووانە بەسەردەچن، بیرخەرەوانی نەبوو و هەفتانی سەرقاڵی داهاتوو.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'دەنگت پێخۆشە؟ با تێگەیشتنەکانت بە دەنگی بەرز بخوێنرێنەوە، و هەر کاتێک بوەستێنە.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'کلیک لە خانەی بیرخەرەوە بکە بۆ بینینی چۆنیەتی کارکردنیان.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'بیرخەرەوەکان لە ڕۆژی بەسەرچوون و کاتی نوێکردنەوە دەژمێردرێن. لێرە دەتوانیت بیانکوژێنیتەوە.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'وردەکاری زیاتر شتە زیادەکانی تێدایە: تێبینی، دووبارەبوونەوە، ماوەی نوێکردنەوە، ئەم تۆمارە هی کێیە، قفڵ، جزدان و وێنەکان. تەنها کاتێک پێویستت پێی بوو بیکەرەوە.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'دووبارەبوونەوە بەروار دەباتە پێشەوە بۆ بەشداریکردنەکان. ماوەی نوێکردنەوە نزیکەی بە Vaultara دەڵێت نوێکردنەوە چەند کات دەخایەنێت، تا بیرخەرەوەکان بەپێویستی زوو دەست پێبکەن.';
 
   @override
   String get tutorialAddRecordProtect => 'ئەم تۆمارە قفڵ بکە تا پێش پیشاندانی پەنجەمۆر یان قفڵی شاشەکەت بپرسێت. کارتەکان وەک لە جزدانەکەمدا دیاری بکە و وێنەی بەڵگەنامەکە زیاد بکە.';

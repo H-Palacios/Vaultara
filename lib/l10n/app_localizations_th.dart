@@ -716,12 +716,6 @@ class AppLocalizationsTh extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'พร้อมระบบแจ้งเตือนที่จะถี่ขึ้นเมื่อใกล้ถึงวันครบกำหนด';
 
   @override
-  String get editorReminderLabel => 'การแจ้งเตือน';
-
-  @override
-  String get editorReminderSelectOptional => 'เลือกการแจ้งเตือน (ไม่บังคับ)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'ก่อนหมดอายุ $days วัน';
   }
@@ -904,16 +898,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'บัตรลงท้ายด้วย 4728 บัตรใช้จ่ายหลัก เชื่อมต่อกับบัญชีกระแสรายวันหลัก';
 
   @override
-  String get tutorialSetReminderField => 'ตั้งค่าการเตือนเพื่อรับการแจ้งเตือนก่อนที่รายการใดจะหมดอายุ แตะช่องการเตือนเพื่อดูตัวเลือก';
-
-  @override
   String get reminderTitle => 'การเตือน';
-
-  @override
-  String get reminderFreeSection => 'ฟรี';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'ไม่มีการเตือน';
@@ -932,45 +917,6 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'ป้อนวันที่กำหนดเอง';
-
-  @override
-  String get reminderCascadeTitle => 'การเตือนต่อเนื่อง';
-
-  @override
-  String get reminderCascadeSubtitle => 'รับการแจ้งเตือนหลายครั้งก่อนที่รายการจะหมดอายุ';
-
-  @override
-  String get reminderPremiumRequired => 'คุณสมบัตินี้พร้อมใช้งานสำหรับผู้ใช้ Premium';
-
-  @override
-  String get reminderUpgradeCta => 'อัปเกรดเป็น Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'ตัวเลือกการเตือนเหล่านี้พร้อมใช้งานสำหรับทุกคน เลือกหนึ่งเพื่อรับการแจ้งเตือน';
-
-  @override
-  String get tutorialReminderPremiumSection => 'ตัวเลือกเหล่านี้ปลดล็อกด้วย Premium สำหรับจังหวะเวลาที่แม่นยำยิ่งขึ้นก่อนหมดอายุ';
-
-  @override
-  String get tutorialReminderApplyFree => 'แตะ นำไปใช้ เพื่อบันทึกตัวเลือกการเตือนของคุณ';
-
-  @override
-  String get tutorialReminderPresets => 'เลือกเวลาที่ตั้งไว้ล่วงหน้าเพื่อรับการแจ้งเตือนก่อนที่รายการใดจะหมดอายุ';
-
-  @override
-  String get tutorialReminderCustomDays => 'ตั้งค่าจำนวนวันที่แม่นยำของคุณเองก่อนหมดอายุ';
-
-  @override
-  String get tutorialReminderApplyPremium => 'แตะ นำไปใช้ เพื่อบันทึกตัวเลือกการเตือนของคุณ';
-
-  @override
-  String get tutorialReminderCascadeFree => 'การเตือนต่อเนื่องจะส่งการแจ้งเตือนหลายครั้งก่อนที่รายการจะหมดอายุ ใช้งานได้ด้วย Premium';
-
-  @override
-  String get tutorialReminderCascadePremium => 'การเตือนต่อเนื่องจะส่งการแจ้งเตือนหลายครั้งก่อนที่รายการจะหมดอายุ';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara เน้นสิ่งที่ต้องการความสนใจของคุณ: รายการที่ใกล้จะหมดอายุ การเตือนที่ขาดหายไป และสัปดาห์ที่ยุ่งที่กำลังจะมาถึง';
 
   @override
@@ -984,9 +930,6 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'ชอบฟังมากกว่าไหม? ให้อ่านข้อมูลเชิงลึกของคุณออกเสียง และหยุดชั่วคราวได้ทุกเมื่อ';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'แตะช่องการเตือนเพื่อดูว่าการเตือนทำงานอย่างไร';
 
   @override
   String get tutorialAddRecordReminderSolo => 'การแจ้งเตือนคำนวณจากวันหมดอายุและระยะเวลาต่ออายุ คุณปิดได้ที่นี่';
@@ -3479,9 +3422,6 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => '“รายละเอียดเพิ่มเติม” มีส่วนเสริม ได้แก่ บันทึก ทำซ้ำ เวลาต่ออายุ รายการเป็นของใคร ล็อก กระเป๋าสตางค์ และรูปภาพ เปิดเมื่อจำเป็นเท่านั้น';
-
-  @override
-  String get tutorialAddRecordRepeat => '“ทำซ้ำ” เลื่อนวันที่ไปข้างหน้าสำหรับการสมัครสมาชิก “การต่ออายุใช้เวลาประมาณ” บอก Vaultara ว่าการต่ออายุใช้เวลานานเท่าไร เพื่อให้การแจ้งเตือนเริ่มเร็วพอ';
 
   @override
   String get tutorialAddRecordProtect => 'ล็อกรายการเพื่อให้ขอลายนิ้วมือหรือการล็อกหน้าจอก่อนแสดง ทำเครื่องหมายบัตรเป็น “ในกระเป๋าสตางค์ของฉัน” และเพิ่มรูปภาพของเอกสาร';

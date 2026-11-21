@@ -716,12 +716,6 @@ class AppLocalizationsGa extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Chomh maith le meabhrúcháin a thagann níos minice de réir mar a thagann an spriocdháta níos gaire';
 
   @override
-  String get editorReminderLabel => 'Meabhrúchán';
-
-  @override
-  String get editorReminderSelectOptional => 'Roghnaigh meabhrúchán (roghnach)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days lá roimh éag';
   }
@@ -913,16 +907,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Cárta a chríochnaíonn le 4728. Príomhchárta caiteachais. Nasctha leis an bpríomhchuntas reatha.';
 
   @override
-  String get tutorialSetReminderField => 'Socraigh meabhrúchán chun fógra a fháil sula rachaidh aon taifead in éag. Tapáil an réimse Meabhrúcháin chun na roghanna a fheiceáil.';
-
-  @override
   String get reminderTitle => 'Meabhrúchán';
-
-  @override
-  String get reminderFreeSection => 'Saor in Aisce';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Gan meabhrúchán';
@@ -942,45 +927,6 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Cuir isteach laethanta saincheaptha';
-
-  @override
-  String get reminderCascadeTitle => 'Meabhrúcháin chascáide';
-
-  @override
-  String get reminderCascadeSubtitle => 'Faigh iliomad fógraí sula dtéann taifead in éag';
-
-  @override
-  String get reminderPremiumRequired => 'Tá an ghné seo ar fáil d\'úsáideoirí Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Uasghrádú go Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Tá na roghanna meabhrúcháin seo ar fáil do gach duine. Roghnaigh ceann chun fógra a fháil.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Díghlasáiltear na roghanna seo le Premium le haghaidh uainiú níos cruinne roimh éag.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Tapáil Cuir i bhfeidhm chun do rogha meabhrúcháin a shábháil.';
-
-  @override
-  String get tutorialReminderPresets => 'Roghnaigh am réamhshocraithe le fógra a fháil roimh do thaifead ar bith dul in éag.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Socraigh do lá cruinn féin roimh éag.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Tapáil Cuir i bhfeidhm chun do rogha meabhrúcháin a shábháil.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Seolann cascáid iliomad fógraí sula dtéann taifead in éag. Ar fáil le Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Seolann cascáid iliomad fógraí sula dtéann taifead in éag.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Cuireann Vaultara béim ar an méid a bhfuil d\'aird uait: taifid a rachaidh in éag go luath, meabhrúcháin ar iarraidh, agus seachtainí gnóthacha romhainn.';
 
   @override
@@ -994,9 +940,6 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Ar fearr leat éisteacht? Lig do do léargais a léamh os ard, agus cuir ar sos am ar bith.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Tapáil an réimse meabhrúcháin le feiceáil conas a oibríonn meabhrúcháin.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Ríomhtar meabhrúcháin ón dáta éaga agus ón Am athnuachana. Is féidir leat iad a mhúchadh anseo.';
@@ -3603,9 +3546,6 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Tá na breiseanna i Tuilleadh sonraí: nótaí, athdhéanamh, am athnuachana, cé leis an taifead, glas, sparán agus grianghraif. Ná hoscail é ach nuair a bhíonn sé ag teastáil.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Cuireann Athdhéanann an dáta ar aghaidh do shuibscríbhinní. Insíonn Tógann athnuachan thart ar do Vaultara cá fhad a thógann an athnuachan, ionas go gcuirfear tús leis na meabhrúcháin go luath go leor.';
 
   @override
   String get tutorialAddRecordProtect => 'Cuir glas ar thaifead chun do mhéarloirg nó glas an scáileáin a iarraidh sula dtaispeánfar é. Marcáil cártaí mar I mo sparán, agus cuir grianghraif den doiciméad leis.';

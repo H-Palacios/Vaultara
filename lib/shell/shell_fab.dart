@@ -74,6 +74,7 @@ void openAddRecord(
         subcategoryName: draft.subcategoryName,
         notes: draft.notes,
         reminderOffsetDays: draft.reminderOffsetDays,
+        reminderSteps: draft.reminderSteps,
         holderId: draft.holderId,
         renewalCost: draft.renewalCost,
         costCurrency: draft.costCurrency,
@@ -117,7 +118,11 @@ void openAddRecord(
   if (startedFromTutorial) {
     Future.delayed(const Duration(milliseconds: 350), () {
       if (!context.mounted) return;
-      TutorialController.instance.start(TutorialStep.addRecordScan);
+      // The plan decides the text of the reminder steps in the full tour.
+      TutorialController.instance.start(
+        TutorialStep.addRecordScan,
+        isPremium: shell.isPremium,
+      );
     });
   }
 }

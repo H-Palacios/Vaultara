@@ -14,6 +14,10 @@ class TutorialOverlay extends StatelessWidget {
   final Rect? highlightRect;
   final bool isPremium;
   final bool isFullTour;
+
+  /// True on the reminder steps of the full tour, where the last one leads
+  /// back into Add Record instead of finishing.
+  final bool continuesTour;
   final bool blockTouches;
 
   const TutorialOverlay({
@@ -25,6 +29,7 @@ class TutorialOverlay extends StatelessWidget {
     required this.highlightRect,
     this.isPremium = false,
     this.isFullTour = false,
+    this.continuesTour = false,
     this.blockTouches = false,
   });
 
@@ -41,30 +46,19 @@ class TutorialOverlay extends StatelessWidget {
 
     final bool isFabStep = step == TutorialStep.addRecordFab;
     final bool isSaveStep = step == TutorialStep.addRecordSave;
-    final bool isSetReminderFieldStep = step == TutorialStep.setReminderField;
-    final bool isApplyStep =
-        step == TutorialStep.reminderApplyFree ||
-        step == TutorialStep.reminderApplyPremium;
-
-    final bool isReminderTourStep =
-        isFullTour && step == TutorialStep.addRecordReminder;
 
     final bool forcedBelow =
         step == TutorialStep.insightsSmartCard ||
         step == TutorialStep.insightsSpeaker ||
         step == TutorialStep.addRecordScan;
 
-    final bool showNext =
-        !isFabStep &&
-        !isSaveStep &&
-        !isSetReminderFieldStep &&
-        !isApplyStep &&
-        !isReminderTourStep;
+    final bool showNext = !isFabStep && !isSaveStep;
 
     final List<TutorialStep> group = steps.isNotEmpty
         ? steps
         : TutorialStepGroups.stepsFor(step);
-    final bool isLastStep = group.isNotEmpty && group.last == step;
+    final bool isLastStep =
+        group.isNotEmpty && group.last == step && !continuesTour;
 
     final Rect screenRect = Rect.fromLTWH(
       0,
@@ -84,7 +78,7 @@ class TutorialOverlay extends StatelessWidget {
         );
         tapHole = fabHole;
         overlayPath.addOval(fabHole);
-      } else if (isSaveStep || isApplyStep) {
+      } else if (isSaveStep) {
         final Rect hole = _buttonHole(target);
         tapHole = hole;
         overlayPath.addRRect(
@@ -289,34 +283,20 @@ class TutorialOverlay extends StatelessWidget {
         return loc.tutorialAddRecordExpiry;
       case TutorialStep.addRecordMoreDetails:
         return loc.tutorialAddRecordMoreDetails2;
-      case TutorialStep.addRecordRepeat:
-        return loc.tutorialAddRecordRepeat;
       case TutorialStep.addRecordProtect:
         return loc.tutorialAddRecordProtect2;
       case TutorialStep.addRecordReminder:
-        return isFullTour
-            ? loc.tutorialAddRecordReminderTour
-            : loc.tutorialAddRecordReminderSolo;
+        return loc.tutorialAddRecordReminderSolo;
       case TutorialStep.addRecordSave:
         return loc.tutorialAddRecordSave;
-      case TutorialStep.setReminderField:
-        return loc.tutorialSetReminderField;
-      case TutorialStep.reminderFreeSection:
-        return loc.tutorialReminderFreeSection;
-      case TutorialStep.reminderPremiumSection:
-        return loc.tutorialReminderPremiumSection;
-      case TutorialStep.reminderCascadeLocked:
-        return loc.tutorialReminderCascadeFree;
-      case TutorialStep.reminderApplyFree:
-        return loc.tutorialReminderApplyFree;
-      case TutorialStep.reminderPresets:
-        return loc.tutorialReminderPresets;
-      case TutorialStep.reminderCustomDays:
-        return loc.tutorialReminderCustomDays;
-      case TutorialStep.reminderCascadeToggle:
-        return loc.tutorialReminderCascadePremium;
-      case TutorialStep.reminderApplyPremium:
-        return loc.tutorialReminderApplyPremium;
+      case TutorialStep.remindersSection:
+        return loc.tutorialRemindersSection;
+      case TutorialStep.remindersDates:
+        return loc.tutorialRemindersDates;
+      case TutorialStep.remindersOwnDates:
+        return isPremium
+            ? loc.tutorialRemindersOwnDatesPremium
+            : loc.tutorialRemindersOwnDatesFree;
       case TutorialStep.insightsSmartCard:
         return loc.tutorialInsightsSmartCard;
       case TutorialStep.insightsSpeaker:

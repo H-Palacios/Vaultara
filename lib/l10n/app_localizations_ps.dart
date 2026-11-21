@@ -716,12 +716,6 @@ class AppLocalizationsPs extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'سربېره پر دې، هغه یادونې چې د پای نېټې په نږدې کېدو سره ډېرېږي';
 
   @override
-  String get editorReminderLabel => 'یادونه';
-
-  @override
-  String get editorReminderSelectOptional => 'یادونه وټاکئ (اختیاري)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days ورځې د پای څخه مخکې';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'کارت چې په 4728 پای ته رسیږي. اصلي مصرف کارت. د اصلي جاري حساب سره تړل شوی.';
 
   @override
-  String get tutorialSetReminderField => 'د هر ریکارډ د پای نیټې څخه مخکې د خبرتیا ترلاسه کولو لپاره یادونه تنظیم کړئ. اختیارات لیدو لپاره د یادونې ساحې باندې ټک وکړئ.';
-
-  @override
   String get reminderTitle => 'یادونه';
-
-  @override
-  String get reminderFreeSection => 'وړیا';
-
-  @override
-  String get reminderPremiumSection => 'پریمیم';
 
   @override
   String get reminderNone => 'هیڅ یادونه نشته';
@@ -939,45 +924,6 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'دودیزې ورځې دننه کړئ';
-
-  @override
-  String get reminderCascadeTitle => 'کاسکاډ یادونې';
-
-  @override
-  String get reminderCascadeSubtitle => 'د ریکارډ د پای نیټې څخه مخکې څو خبرتیاوې ترلاسه کړئ';
-
-  @override
-  String get reminderPremiumRequired => 'دا ځانګړتیا د پریمیم کاروونکو لپاره شتون لري.';
-
-  @override
-  String get reminderUpgradeCta => 'پریمیم ته لوړ کړئ';
-
-  @override
-  String get tutorialReminderFreeSection => 'دا د یادونې انتخابونه د ټولو لپاره شتون لري. د خبرتیا ترلاسه کولو لپاره یو غوره کړئ.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'دا انتخابونه د پرېمیم سره د پای نیټې څخه مخکې د ډیرو دقیقو وختونو لپاره خلاصیږي.';
-
-  @override
-  String get tutorialReminderApplyFree => 'د خپل د یادونې انتخاب خوندي کولو لپاره پلي کول ټک وکړئ.';
-
-  @override
-  String get tutorialReminderPresets => 'د هر ریکارډ د پای نیټې څخه مخکې د خبر کیدو لپاره یو مخکې ټاکل شوی وخت غوره کړئ.';
-
-  @override
-  String get tutorialReminderCustomDays => 'د پای نیټې څخه مخکې د خپل دقیق ورځو شمیر تنظیم کړئ.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'د خپل د یادونې انتخاب خوندي کولو لپاره پلي کول ټک وکړئ.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'کاسکیډ د ریکارډ د پای نیټې څخه مخکې څو خبرتیاوې لیږي. د پرېمیم سره شتون لري.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'کاسکیډ د ریکارډ د پای نیټې څخه مخکې څو خبرتیاوې لیږي.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara هغه څه په ډاګه کوي چې ستاسو پام ته اړتیا لري: هغه ریکارډونه چې ژر به پای ته ورسیږي، ورک شوي یادونې، او د راتلونکو بوختو اونیو.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'اورېدل غوره بولئ؟ پرېږدئ ستاسو نظرونه په لوړ غږ ولوستل شي، او هر وخت یې ودروئ.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'د یادونې ساحه کېکاږئ ترڅو وګورئ چې یادونې څنګه کار کوي.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'یادونې د پای ته رسېدو له نېټې او د نوي کولو له وخت حسابېږي. تاسو یې دلته بندولی شئ.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'نور جزئیات اضافي شیان لري: یادښتونه، تکرارېږي، د نوي کولو وخت، ریکارډ د چا دی، قلف، کیف او عکسونه. یوازې هغه وخت یې پرانیزئ چې اړتیا ورته ولرئ.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'تکرارېږي د ګډونونو لپاره نېټه مخته وړي. نوي کول نږدې Vaultara ته وايي چې نوي کول څومره وخت نیسي، څو یادونې په کافي وخت پیل شي.';
 
   @override
   String get tutorialAddRecordProtect => 'یو ریکارډ قلف کړئ چې د ښودلو دمخه ستاسو د ګوتو نخښه یا د سکرین قلف وغواړي. کارتونه د زما په کیف کې په توګه نښه کړئ، او د سند عکسونه اضافه کړئ.';

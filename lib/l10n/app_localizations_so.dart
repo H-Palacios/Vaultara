@@ -716,12 +716,6 @@ class AppLocalizationsSo extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Oo lagu daray xusuusiyeyaal sii badanaya marka waqtiga kama dambaysta ah soo dhowaado';
 
   @override
-  String get editorReminderLabel => 'Xasuusin';
-
-  @override
-  String get editorReminderSelectOptional => 'Dooro xasuusin (ikhtiyaar)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days maalmood ka hor dhicista';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Kaarka ku dhammaanaya 4728. Kaarka kharashka aasaasiga ah. Ku xiran akoonka guud ee ugu weyn.';
 
   @override
-  String get tutorialSetReminderField => 'U dhig xasuusin si aad u hesho ogeysiin ka hor inta uusan dhicin diiwaan kasta. Taabo goobta Xasuusinta si aad u aragto doorashooyinka.';
-
-  @override
   String get reminderTitle => 'Xasuusin';
-
-  @override
-  String get reminderFreeSection => 'Bilaash';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Xasuusin ma leh';
@@ -939,45 +924,6 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Geli maalmo gaar ah';
-
-  @override
-  String get reminderCascadeTitle => 'Xasuusinta taxaneed';
-
-  @override
-  String get reminderCascadeSubtitle => 'Hel ogeysiisyo badan ka hor inta uusan diiwaanku dhicin';
-
-  @override
-  String get reminderPremiumRequired => 'Sifadan waxaa loo heli karaa isticmaalayaasha Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'U cusboonaysii Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Xulashooyinkan xasuusinta way heli karaan qof kasta. Mid dooro si aad u hesho ogeysiin.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Xulashooyinkani waxay furmayaan Premium si loo helo waqti sax ah ka hor dhicida.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Taabo Codso si aad u kaydiso xulashadaada xasuusinta.';
-
-  @override
-  String get tutorialReminderPresets => 'Dooro waqti hore loo dejiyay si loogu ogeysiiyo ka hor dhicida diiwaan kasta.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Dej tirada saxda ah ee maalmaha aad rabto ka hor dhicida.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Taabo Codso si aad u kaydiso xulashadaada xasuusinta.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Xasuusinta taxanaha ah waxay dirtaa ogeysiisyo badan ka hor inta uusan diiwaanku dhicin. Waxaa lagu heli karaa Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Xasuusinta taxanaha ah waxay dirtaa ogeysiisyo badan ka hor inta uusan diiwaanku dhicin.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara wuxuu iftiiminayaa waxyaabaha u baahan feejignaantaada: diiwaannada dhawaan dhici doona, xasuusinta maqan, iyo toddobaadyada mashquulka ah ee soo socda.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Ma doorbidaa inaad dhegaysato? U ogolow falanqayntaada in kor loogu akhriyo, oo goor kasta jooji.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Taabo goobta xusuusinta si aad u aragto sida xusuusinta u shaqeeyaan.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Xusuusinta waxaa laga xisaabiyaa taariikhda dhicitaanka iyo Waqtiga cusboonaysiinta. Halkan waad ka dami kartaa.';
@@ -3511,9 +3454,6 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Faahfaahin dheeraad ah waxay haysaa waxyaabaha dheeraadka ah: qoraallo, ku celcelin, waqtiga cusboonaysiinta, diiwaanku waa kuwa, quful, boorsada iyo sawirro. Fur marka aad u baahan tahay oo keliya.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Ku celcelin wuxuu taariikhda hore u dhaafiyaa diiwaannada lacag bixinta soo noqnoqda leh. Cusboonaysiintu waxay qaadataa qiyaastii wuxuu Vaultara u sheegaa inta cusboonaysiintu qaadato, si xusuusintu u bilowdo waqti ku filan.';
 
   @override
   String get tutorialAddRecordProtect => 'Quful diiwaan si loogu weydiiyo faraha ama quful shaashadda ka hor intaan la muujin. U calaamadee kaararka sida Boorsadayda ku jira, oo ku dar sawirrada dukumentiga.';

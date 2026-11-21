@@ -716,12 +716,6 @@ class AppLocalizationsMl extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'കൂടാതെ, സമയപരിധി അടുക്കുന്തോറും കൂടുതൽ തവണ എത്തുന്ന റിമൈൻഡറുകളും';
 
   @override
-  String get editorReminderLabel => 'റിമൈൻഡർ';
-
-  @override
-  String get editorReminderSelectOptional => 'ഒരു റിമൈൻഡർ തിരഞ്ഞെടുക്കുക (ഓപ്‌ഷണൽ)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'കാലഹരണത്തിന് $days ദിവസം മുമ്പ്';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get tutorialSampleRecordNotes => '4728-ൽ അവസാനിക്കുന്ന കാർഡ്. പ്രധാന ചെലവ് കാർഡ്. പ്രധാന കറന്റ് അക്കൗണ്ടുമായി ലിങ്ക് ചെയ്‌തിരിക്കുന്നു.';
 
   @override
-  String get tutorialSetReminderField => 'ഏതെങ്കിലും റെക്കോർഡ് കാലഹരണപ്പെടുന്നതിന് മുമ്പ് അറിയിപ്പ് ലഭിക്കാൻ ഒരു റിമൈൻഡർ സജ്ജീകരിക്കുക. ഓപ്‌ഷനുകൾ കാണാൻ റിമൈൻഡർ ഫീൽഡിൽ ടാപ്പ് ചെയ്യുക.';
-
-  @override
   String get reminderTitle => 'റിമൈൻഡർ';
-
-  @override
-  String get reminderFreeSection => 'സൗജന്യം';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'റിമൈൻഡർ വേണ്ട';
@@ -939,45 +924,6 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'ഇഷ്‌ടാനുസൃത ദിവസങ്ങൾ നൽകുക';
-
-  @override
-  String get reminderCascadeTitle => 'റിമൈൻഡർ ശ്രേണി';
-
-  @override
-  String get reminderCascadeSubtitle => 'ഒരു റെക്കോർഡ് കാലഹരണപ്പെടുന്നതിന് മുമ്പ് ഒന്നിലധികം അറിയിപ്പുകൾ നേടുക';
-
-  @override
-  String get reminderPremiumRequired => 'ഈ ഫീച്ചർ Premium ഉപയോക്താക്കൾക്ക് ലഭ്യമാണ്.';
-
-  @override
-  String get reminderUpgradeCta => 'Premium-ലേക്ക് അപ്‌ഗ്രേഡ് ചെയ്യുക';
-
-  @override
-  String get tutorialReminderFreeSection => 'ഈ റിമൈൻഡർ ഓപ്‌ഷനുകൾ എല്ലാവർക്കും ലഭ്യമാണ്. അറിയിപ്പ് ലഭിക്കാൻ ഒന്ന് തിരഞ്ഞെടുക്കുക.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'കാലഹരണത്തിന് മുമ്പ് കൂടുതൽ കൃത്യമായ സമയക്രമത്തിനായി ഈ ഓപ്‌ഷനുകൾ Premium-ൽ അൺലോക്ക് ചെയ്യാം.';
-
-  @override
-  String get tutorialReminderApplyFree => 'നിങ്ങളുടെ റിമൈൻഡർ തിരഞ്ഞെടുപ്പ് സംരക്ഷിക്കാൻ “പ്രയോഗിക്കുക” ടാപ്പ് ചെയ്യുക.';
-
-  @override
-  String get tutorialReminderPresets => 'ഏതെങ്കിലും റെക്കോർഡ് കാലഹരണപ്പെടുന്നതിന് മുമ്പ് അറിയിപ്പ് ലഭിക്കാൻ മുൻകൂട്ടി സജ്ജീകരിച്ച ഒരു സമയം തിരഞ്ഞെടുക്കുക.';
-
-  @override
-  String get tutorialReminderCustomDays => 'കാലഹരണത്തിന് എത്ര ദിവസം മുമ്പ് എന്ന് കൃത്യമായി സ്വയം സജ്ജീകരിക്കുക.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'നിങ്ങളുടെ റിമൈൻഡർ തിരഞ്ഞെടുപ്പ് സംരക്ഷിക്കാൻ “പ്രയോഗിക്കുക” ടാപ്പ് ചെയ്യുക.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'റിമൈൻഡർ ശ്രേണി ഒരു റെക്കോർഡ് കാലഹരണപ്പെടുന്നതിന് മുമ്പ് ഒന്നിലധികം അറിയിപ്പുകൾ അയയ്‌ക്കുന്നു. Premium-ൽ ലഭ്യമാണ്.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'റിമൈൻഡർ ശ്രേണി ഒരു റെക്കോർഡ് കാലഹരണപ്പെടുന്നതിന് മുമ്പ് ഒന്നിലധികം അറിയിപ്പുകൾ അയയ്‌ക്കുന്നു.';
-
-  @override
   String get tutorialInsightsSmartCard => 'നിങ്ങളുടെ ശ്രദ്ധ ആവശ്യമുള്ളവ Vaultara എടുത്തുകാണിക്കുന്നു: ഉടൻ കാലഹരണപ്പെടുന്ന റെക്കോർഡുകൾ, റിമൈൻഡർ ഇല്ലാത്തവ, വരാനിരിക്കുന്ന തിരക്കേറിയ ആഴ്‌ചകൾ.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'കേൾക്കാനാണോ ഇഷ്‌ടം? നിങ്ങളുടെ ഉൾക്കാഴ്ചകൾ ഉറക്കെ വായിച്ചുകേൾക്കാം, എപ്പോൾ വേണമെങ്കിലും താൽക്കാലികമായി നിർത്താം.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'റിമൈൻഡറുകൾ എങ്ങനെ പ്രവർത്തിക്കുന്നുവെന്ന് കാണാൻ റിമൈൻഡർ ഫീൽഡിൽ ടാപ്പ് ചെയ്യുക.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'റിമൈൻഡറുകൾ കാലഹരണ തീയതിയും പുതുക്കൽ സമയവും വെച്ച് കണക്കാക്കുന്നു. ഇവിടെ അവ ഓഫാക്കാം.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'കൂടുതൽ വിവരങ്ങളിൽ അധിക കാര്യങ്ങൾ ഉണ്ട്: കുറിപ്പുകൾ, ആവർത്തനം, പുതുക്കലിനുള്ള സമയം, റെക്കോർഡ് ആരുടേതാണ്, ലോക്ക്, വാലറ്റ്, ഫോട്ടോകൾ. ആവശ്യമുള്ളപ്പോൾ മാത്രം തുറക്കുക.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'സബ്സ്ക്രിപ്ഷനുകൾക്കായി ആവർത്തനം തീയതി മുന്നോട്ട് നീക്കുന്നു. പുതുക്കാൻ ഏകദേശം എടുക്കുന്ന സമയം പുതുക്കാൻ എത്ര സമയമെടുക്കുമെന്ന് Vaultara-യെ അറിയിക്കുന്നു, അങ്ങനെ റിമൈൻഡറുകൾ വേണ്ടത്ര നേരത്തെ തുടങ്ങും.';
 
   @override
   String get tutorialAddRecordProtect => 'ഒരു റെക്കോർഡ് ലോക്ക് ചെയ്താൽ കാണിക്കുന്നതിന് മുമ്പ് നിങ്ങളുടെ വിരലടയാളമോ സ്ക്രീൻ ലോക്കോ ചോദിക്കും. കാർഡുകൾ എന്റെ വാലറ്റിൽ എന്ന് അടയാളപ്പെടുത്തുക, രേഖയുടെ ഫോട്ടോകളും ചേർക്കുക.';

@@ -716,12 +716,6 @@ class AppLocalizationsFa extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'به همراه یادآورهایی که با نزدیک شدن به مهلت مقرر، فرکانس بیشتری پیدا می‌کنند';
 
   @override
-  String get editorReminderLabel => 'یادآور';
-
-  @override
-  String get editorReminderSelectOptional => 'یک یادآور انتخاب کنید (اختیاری)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days روز قبل از انقضا';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'کارت با پایان 4728. کارت خرج اصلی. متصل به حساب جاری اصلی.';
 
   @override
-  String get tutorialSetReminderField => 'برای دریافت اعلان قبل از انقضای هر رکورد یک یادآوری تنظیم کنید. برای مشاهده گزینه‌ها روی فیلد یادآوری ضربه بزنید.';
-
-  @override
   String get reminderTitle => 'یادآوری';
-
-  @override
-  String get reminderFreeSection => 'رایگان';
-
-  @override
-  String get reminderPremiumSection => 'پریمیوم';
 
   @override
   String get reminderNone => 'بدون یادآوری';
@@ -939,45 +924,6 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'روزهای دلخواه را وارد کنید';
-
-  @override
-  String get reminderCascadeTitle => 'یادآوری‌های آبشاری';
-
-  @override
-  String get reminderCascadeSubtitle => 'قبل از انقضای رکورد چندین اعلان دریافت کنید';
-
-  @override
-  String get reminderPremiumRequired => 'این ویژگی برای کاربران پریمیوم در دسترس است.';
-
-  @override
-  String get reminderUpgradeCta => 'ارتقا به پریمیوم';
-
-  @override
-  String get tutorialReminderFreeSection => 'این گزینه‌های یادآوری برای همه در دسترس هستند. یکی را برای دریافت اعلان انتخاب کنید.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'این گزینه‌ها با پریمیوم برای زمان‌بندی دقیق‌تر قبل از انقضا باز می‌شوند.';
-
-  @override
-  String get tutorialReminderApplyFree => 'برای ذخیره انتخاب یادآوری، روی اعمال ضربه بزنید.';
-
-  @override
-  String get tutorialReminderPresets => 'یک زمان از پیش تعیین شده برای مطلع شدن قبل از انقضای هر رکورد انتخاب کنید.';
-
-  @override
-  String get tutorialReminderCustomDays => 'تعداد روزهای دقیق خود را قبل از انقضا تنظیم کنید.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'برای ذخیره انتخاب یادآوری، روی اعمال ضربه بزنید.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'آبشاری قبل از انقضای رکورد چندین اعلان ارسال می‌کند. با پریمیوم در دسترس است.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'آبشاری قبل از انقضای رکورد چندین اعلان ارسال می‌کند.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara آنچه را که به توجه شما نیاز دارد برجسته می‌کند: رکوردهایی که به زودی منقضی می‌شوند، رکوردهای بدون یادآور و هفته‌های شلوغ پیش رو.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'شنیدن را ترجیح می‌دهید؟ بگذارید بینش‌هایتان با صدای بلند خوانده شوند و هر زمان خواستید مکث کنید.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'روی فیلد یادآوری بزنید تا ببینید یادآوری‌ها چگونه کار می‌کنند.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'یادآوری‌ها از تاریخ انقضا و زمان تمدید محاسبه می‌شوند. می‌توانید آن‌ها را اینجا خاموش کنید.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'جزئیات بیشتر شامل موارد اضافی است: یادداشت‌ها، تکرار، زمان تمدید، رکورد مال چه کسی است، قفل، کیف پول و عکس‌ها. فقط وقتی لازم دارید بازش کنید.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'تکرار تاریخ را برای اشتراک‌ها جلو می‌برد. تمدید حدوداً این مدت طول می‌کشد به Vaultara می‌گوید تمدید چقدر زمان می‌برد تا یادآوری‌ها به‌اندازه کافی زود شروع شوند.';
 
   @override
   String get tutorialAddRecordProtect => 'یک رکورد را قفل کنید تا پیش از نمایش، اثر انگشت یا قفل صفحه شما را بخواهد. کارت‌ها را به‌صورت در کیف پول من علامت بزنید و از مدرک عکس اضافه کنید.';

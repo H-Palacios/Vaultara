@@ -720,12 +720,6 @@ class AppLocalizationsCs extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'A navíc připomenutí, která jsou s blížícím se termínem častější';
 
   @override
-  String get editorReminderLabel => 'Připomínka';
-
-  @override
-  String get editorReminderSelectOptional => 'Vyberte připomínku (volitelné)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dní před vypršením';
   }
@@ -915,16 +909,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Karta končící 4728. Primární karta pro výdaje. Propojená s hlavním běžným účtem.';
 
   @override
-  String get tutorialSetReminderField => 'Nastavte připomenutí, abyste dostali oznámení před vypršením platnosti jakéhokoli záznamu. Klepnutím na pole Připomenutí zobrazíte možnosti.';
-
-  @override
   String get reminderTitle => 'Připomenutí';
-
-  @override
-  String get reminderFreeSection => 'Zdarma';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Žádné připomenutí';
@@ -946,45 +931,6 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Zadejte vlastní dny';
-
-  @override
-  String get reminderCascadeTitle => 'Kaskádová připomenutí';
-
-  @override
-  String get reminderCascadeSubtitle => 'Přijímejte více oznámení před vypršením záznamu';
-
-  @override
-  String get reminderPremiumRequired => 'Tato funkce je dostupná pro Premium uživatele.';
-
-  @override
-  String get reminderUpgradeCta => 'Přejít na Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Tyto možnosti připomenutí jsou k dispozici všem. Vyberte jednu pro příjem oznámení.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Tyto možnosti se odemknou s Premium pro přesnější časování před vypršením.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Klepnutím na Použít uložte svůj výběr připomenutí.';
-
-  @override
-  String get tutorialReminderPresets => 'Vyberte přednastavený čas pro oznámení před vypršením libovolného záznamu.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Nastavte si vlastní přesný počet dní před vypršením.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Klepnutím na Použít uložte svůj výběr připomenutí.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Kaskáda odesílá více oznámení před vypršením záznamu. K dispozici s Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Kaskáda odesílá více oznámení před vypršením záznamu.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara zvýrazňuje, co potřebuje vaši pozornost: záznamy, které brzy vyprší, chybějící připomenutí a nadcházející rušné týdny.';
 
   @override
@@ -998,9 +944,6 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Raději posloucháte? Nechte si přehledy přečíst nahlas a kdykoli je pozastavte.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Klepnutím na pole připomenutí zjistíte, jak připomenutí fungují.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Připomínky se počítají od data vypršení a Doby obnovy. Tady je můžete vypnout.';
@@ -3584,9 +3527,6 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Další podrobnosti skrývají to ostatní: poznámky, opakování, dobu obnovy, čí je záznam, zámek, peněženku a fotky. Otevřete je, jen když je potřebujete.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Opakování posouvá datum dopředu u předplatných. Obnova trvá asi říká aplikaci Vaultara, jak dlouho obnova trvá, aby připomínky začaly dost brzy.';
 
   @override
   String get tutorialAddRecordProtect => 'Zamkněte záznam, aby se před zobrazením vyžadoval otisk prstu nebo zámek obrazovky. Karty označte jako V mé peněžence a přidejte fotky dokladu.';

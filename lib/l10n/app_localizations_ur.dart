@@ -716,12 +716,6 @@ class AppLocalizationsUr extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'مزید برآں ایسی یاد دہانیاں جو ڈیڈ لائن قریب آنے پر بار بار آتی ہیں';
 
   @override
-  String get editorReminderLabel => 'یاد دہانی';
-
-  @override
-  String get editorReminderSelectOptional => 'یاد دہانی منتخب کریں (اختیاری)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'اختتام سے $days دن پہلے';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'کارڈ 4728 پر ختم ہوتا ہے۔ بنیادی اخراجات کا کارڈ۔ مرکزی جاری کھاتے سے منسلک۔';
 
   @override
-  String get tutorialSetReminderField => 'کسی بھی ریکارڈ کی میعاد ختم ہونے سے پہلے اطلاع حاصل کرنے کے لیے ایک یاد دہانی سیٹ کریں۔ اختیارات دیکھنے کے لیے یاد دہانی فیلڈ پر ٹیپ کریں۔';
-
-  @override
   String get reminderTitle => 'یاد دہانی';
-
-  @override
-  String get reminderFreeSection => 'مفت';
-
-  @override
-  String get reminderPremiumSection => 'پریمیم';
 
   @override
   String get reminderNone => 'کوئی یاد دہانی نہیں';
@@ -939,45 +924,6 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'حسب ضرورت دن درج کریں';
-
-  @override
-  String get reminderCascadeTitle => 'جھڑی یاد دہانیاں';
-
-  @override
-  String get reminderCascadeSubtitle => 'ریکارڈ کی میعاد ختم ہونے سے پہلے متعدد اطلاعات حاصل کریں';
-
-  @override
-  String get reminderPremiumRequired => 'یہ خصوصیت پریمیم صارفین کے لیے دستیاب ہے۔';
-
-  @override
-  String get reminderUpgradeCta => 'پریمیم میں اپ گریڈ کریں';
-
-  @override
-  String get tutorialReminderFreeSection => 'یہ یاد دہانی کے اختیارات سب کے لیے دستیاب ہیں۔ اطلاع حاصل کرنے کے لیے ایک کا انتخاب کریں۔';
-
-  @override
-  String get tutorialReminderPremiumSection => 'یہ اختیارات میعاد ختم ہونے سے پہلے زیادہ درست وقت کے لیے پریمیم کے ساتھ کھلتے ہیں۔';
-
-  @override
-  String get tutorialReminderApplyFree => 'اپنی یاد دہانی کے انتخاب کو محفوظ کرنے کے لیے لاگو کریں پر ٹیپ کریں۔';
-
-  @override
-  String get tutorialReminderPresets => 'کسی بھی ریکارڈ کی میعاد ختم ہونے سے پہلے مطلع کرنے کے لیے پیش سیٹ وقت منتخب کریں۔';
-
-  @override
-  String get tutorialReminderCustomDays => 'میعاد ختم ہونے سے پہلے اپنے دنوں کی درست تعداد سیٹ کریں۔';
-
-  @override
-  String get tutorialReminderApplyPremium => 'اپنی یاد دہانی کے انتخاب کو محفوظ کرنے کے لیے لاگو کریں پر ٹیپ کریں۔';
-
-  @override
-  String get tutorialReminderCascadeFree => 'کیسکیڈ ریکارڈ کی میعاد ختم ہونے سے پہلے متعدد اطلاعات بھیجتا ہے۔ پریمیم کے ساتھ دستیاب ہے۔';
-
-  @override
-  String get tutorialReminderCascadePremium => 'کیسکیڈ ریکارڈ کی میعاد ختم ہونے سے پہلے متعدد اطلاعات بھیجتا ہے۔';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara ان چیزوں کو نمایاں کرتا ہے جن پر آپ کی توجہ درکار ہے: جلد ختم ہونے والے ریکارڈز، غائب یاد دہانیاں، اور آنے والے مصروف ہفتے۔';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'سننا پسند کرتے ہیں؟ اپنی بصیرتیں بلند آواز میں پڑھوائیں، اور کسی بھی وقت روک دیں۔';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'یاد دہانیاں کیسے کام کرتی ہیں یہ دیکھنے کے لیے یاد دہانی فیلڈ پر ٹیپ کریں۔';
 
   @override
   String get tutorialAddRecordReminderSolo => 'یاد دہانیاں میعاد ختم ہونے کی تاریخ اور تجدید کے وقت سے طے ہوتی ہیں۔ آپ انہیں یہاں بند کر سکتے ہیں۔';
@@ -3512,9 +3455,6 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'مزید تفصیلات میں اضافی چیزیں ہیں: نوٹس، تکرار، تجدید کا وقت، ریکارڈ کس کا ہے، لاک، بٹوا اور تصاویر۔ اسے صرف ضرورت پڑنے پر کھولیں۔';
-
-  @override
-  String get tutorialAddRecordRepeat => 'تکرار سبسکرپشنز کے لیے تاریخ آگے بڑھاتا ہے۔ تجدید میں تقریباً اتنا وقت لگتا ہے Vaultara کو بتاتا ہے کہ تجدید میں کتنا وقت لگتا ہے، تاکہ یاد دہانیاں کافی پہلے شروع ہوں۔';
 
   @override
   String get tutorialAddRecordProtect => 'ریکارڈ کو لاک کریں تاکہ اسے دکھانے سے پہلے آپ کی فنگر پرنٹ یا اسکرین لاک مانگی جائے۔ کارڈز کو میرے بٹوے میں کے طور پر نشان زد کریں، اور دستاویز کی تصاویر شامل کریں۔';

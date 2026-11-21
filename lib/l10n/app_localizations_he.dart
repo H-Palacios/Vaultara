@@ -716,12 +716,6 @@ class AppLocalizationsHe extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'פלוס תזכורות שהופכות לתכופות יותר ככל שהדדליין מתקרב';
 
   @override
-  String get editorReminderLabel => 'תזכורת';
-
-  @override
-  String get editorReminderSelectOptional => 'בחר תזכורת (אופציונלי)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days ימים לפני התפוגה';
   }
@@ -912,16 +906,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'כרטיס המסתיים ב-4728. כרטיס הוצאות ראשי. מקושר לחשבון עובר ושב ראשי.';
 
   @override
-  String get tutorialSetReminderField => 'הגדר תזכורת כדי לקבל התראה לפני שפג תוקף של רשומה כלשהי. הקש על שדה התזכורת כדי לראות את האפשרויות.';
-
-  @override
   String get reminderTitle => 'תזכורת';
-
-  @override
-  String get reminderFreeSection => 'חינם';
-
-  @override
-  String get reminderPremiumSection => 'פרימיום';
 
   @override
   String get reminderNone => 'אין תזכורת';
@@ -941,45 +926,6 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'הזן ימים מותאמים';
-
-  @override
-  String get reminderCascadeTitle => 'תזכורות מדורגות';
-
-  @override
-  String get reminderCascadeSubtitle => 'קבל מספר התראות לפני שרשומה פוגה';
-
-  @override
-  String get reminderPremiumRequired => 'תכונה זו זמינה למשתמשי פרימיום.';
-
-  @override
-  String get reminderUpgradeCta => 'שדרג לפרימיום';
-
-  @override
-  String get tutorialReminderFreeSection => 'אפשרויות תזכורת אלה זמינות לכולם. בחר אחת כדי לקבל התראה.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'אפשרויות אלה נפתחות עם פרימיום לתזמון מדויק יותר לפני התפוגה.';
-
-  @override
-  String get tutorialReminderApplyFree => 'הקש על החל כדי לשמור את בחירת התזכורת שלך.';
-
-  @override
-  String get tutorialReminderPresets => 'בחר זמן מוגדר מראש כדי לקבל התראה לפני שרשומה כלשהי תפוג.';
-
-  @override
-  String get tutorialReminderCustomDays => 'הגדר מספר ימים מדויק משלך לפני התפוגה.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'הקש על החל כדי לשמור את בחירת התזכורת שלך.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'מדורג שולח מספר התראות לפני שרשומה פוגה. זמין עם פרימיום.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'מדורג שולח מספר התראות לפני שרשומה פוגה.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara מדגישה את מה שדורש את תשומת ליבך: רשומות שפוגות בקרוב, תזכורות חסרות ושבועות עמוסים לפניך.';
 
   @override
@@ -993,9 +939,6 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'מעדיף להאזין? תן לתובנות שלך להיקרא בקול, והשהה בכל רגע.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'הקש על שדה התזכורת כדי לראות איך תזכורות עובדות.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'התזכורות מחושבות מתאריך התפוגה ומזמן החידוש. אפשר לכבות אותן כאן.';
@@ -3548,9 +3491,6 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'בפרטים נוספים נמצאים הדברים הנוספים: הערות, חוזר, זמן חידוש, של מי הרשומה, נעילה, ארנק ותמונות. פתח אותם רק כשצריך.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'חוזר מקדם את התאריך עבור מנויים. החידוש לוקח בערך אומר ל־Vaultara כמה זמן לוקח לחדש, כדי שהתזכורות יתחילו מוקדם מספיק.';
 
   @override
   String get tutorialAddRecordProtect => 'נעל רשומה כדי שיבקשו את טביעת האצבע או נעילת המסך שלך לפני שהיא תוצג. סמן כרטיסים כ־בארנק שלי, והוסף תמונות של המסמך.';

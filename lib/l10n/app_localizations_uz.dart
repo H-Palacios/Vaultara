@@ -716,12 +716,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Shuningdek, muddat tugashi yaqinlashgan sari tez-tez keladigan eslatmalar';
 
   @override
-  String get editorReminderLabel => 'Eslatma';
-
-  @override
-  String get editorReminderSelectOptional => 'Eslatmani tanlang (ixtiyoriy)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Muddat tugashidan $days kun oldin';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Karta raqami 4728 bilan tugaydi. Asosiy xarajat kartasi. Asosiy joriy hisobga bogʻlangan.';
 
   @override
-  String get tutorialSetReminderField => 'Har qanday yozuvning muddati tugashidan oldin bildirishnoma olish uchun eslatma oʻrnating. Variantlarni koʻrish uchun Eslatma maydonini bosing.';
-
-  @override
   String get reminderTitle => 'Eslatma';
-
-  @override
-  String get reminderFreeSection => 'Bepul';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Eslatmasiz';
@@ -939,45 +924,6 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Kunlar sonini kiriting';
-
-  @override
-  String get reminderCascadeTitle => 'Eslatmalar zanjiri';
-
-  @override
-  String get reminderCascadeSubtitle => 'Yozuv muddati tugashidan oldin bir nechta bildirishnoma oling';
-
-  @override
-  String get reminderPremiumRequired => 'Bu funksiya Premium foydalanuvchilari uchun.';
-
-  @override
-  String get reminderUpgradeCta => 'Premiumga oʻtish';
-
-  @override
-  String get tutorialReminderFreeSection => 'Bu eslatma variantlari hamma uchun mavjud. Bildirishnoma olish uchun birini tanlang.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Bu variantlar Premium bilan ochiladi va muddat tugashidan oldingi vaqtni aniqroq belgilash imkonini beradi.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Eslatma tanlovingizni saqlash uchun Qoʻllash tugmasini bosing.';
-
-  @override
-  String get tutorialReminderPresets => 'Har qanday yozuvning muddati tugashidan oldin bildirishnoma olish uchun tayyor vaqtni tanlang.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Muddat tugashidan oldingi kunlar sonini oʻzingiz aniq belgilang.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Eslatma tanlovingizni saqlash uchun Qoʻllash tugmasini bosing.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Eslatmalar zanjiri yozuv muddati tugashidan oldin bir nechta bildirishnoma yuboradi. Premium bilan mavjud.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Eslatmalar zanjiri yozuv muddati tugashidan oldin bir nechta bildirishnoma yuboradi.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara eʼtiboringizni talab qiladigan narsalarni ajratib koʻrsatadi: muddati yaqinda tugaydigan yozuvlar, eslatmasiz yozuvlar va oldindagi band haftalar.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Tinglashni afzal koʻrasizmi? Tahlillaringizni ovoz chiqarib oʻqitib oling va istalgan vaqtda toʻxtatib turing.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Eslatmalar qanday ishlashini koʻrish uchun eslatma maydonini bosing.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Eslatmalar muddat tugash sanasi va Yangilash muddatidan hisoblanadi. Ularni shu yerda oʻchirishingiz mumkin.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Batafsil boʻlimida qoʻshimchalar bor: izohlar, takrorlanish, uzaytirish vaqti, yozuv kimniki ekani, qulf, hamyon va suratlar. Uni faqat kerak boʻlganda oching.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Takrorlanish obunalar uchun sanani oldinga suradi. Uzaytirish taxminan Vaultaraga uzaytirish qancha vaqt olishini bildiradi, shunda eslatmalar yetarlicha erta boshlanadi.';
 
   @override
   String get tutorialAddRecordProtect => 'Yozuvni qulflang, shunda uni koʻrsatishdan oldin barmoq izi yoki ekran qulfi soʻraladi. Kartalarni Hamyonimda deb belgilang va hujjat suratlarini qoʻshing.';

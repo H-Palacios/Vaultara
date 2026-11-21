@@ -716,12 +716,6 @@ class AppLocalizationsTe extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'అంతేకాకుండా గడువు తేదీ దగ్గరపడే కొద్దీ మరింత తరచుగా వచ్చే రిమైండర్‌లు';
 
   @override
-  String get editorReminderLabel => 'రిమైండర్';
-
-  @override
-  String get editorReminderSelectOptional => 'రిమైండర్‌ను ఎంచుకోండి (ఐచ్ఛికం)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'గడువుకు $days రోజులు ముందు';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get tutorialSampleRecordNotes => '4728 తో ముగిసే కార్డు. ప్రధాన ఖర్చు కార్డు. ప్రధాన కరెంట్ ఖాతాకు లింక్ చేయబడింది.';
 
   @override
-  String get tutorialSetReminderField => 'ఏదైనా రికార్డు గడువు ముగియకముందు నోటిఫికేషన్ అందుకోవడానికి రిమైండర్‌ను సెట్ చేయండి. ఎంపికలను చూడటానికి రిమైండర్ ఫీల్డ్‌ను నొక్కండి.';
-
-  @override
   String get reminderTitle => 'రిమైండర్';
-
-  @override
-  String get reminderFreeSection => 'ఉచితం';
-
-  @override
-  String get reminderPremiumSection => 'ప్రీమియం';
 
   @override
   String get reminderNone => 'రిమైండర్ లేదు';
@@ -939,45 +924,6 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'అనుకూల రోజులను నమోదు చేయండి';
-
-  @override
-  String get reminderCascadeTitle => 'క్యాస్కేడ్ రిమైండర్‌లు';
-
-  @override
-  String get reminderCascadeSubtitle => 'రికార్డ్ గడువు ముగియకముందు అనేక నోటిఫికేషన్‌లను స్వీకరించండి';
-
-  @override
-  String get reminderPremiumRequired => 'ఈ ఫీచర్ ప్రీమియం వినియోగదారులకు అందుబాటులో ఉంది.';
-
-  @override
-  String get reminderUpgradeCta => 'ప్రీమియంకు అప్‌గ్రేడ్ చేయండి';
-
-  @override
-  String get tutorialReminderFreeSection => 'ఈ రిమైండర్ ఎంపికలు అందరికీ అందుబాటులో ఉన్నాయి. నోటిఫికేషన్ అందుకోవడానికి ఒకదాన్ని ఎంచుకోండి.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'ఈ ఎంపికలు గడువుకు ముందు మరింత ఖచ్చితమైన సమయం కోసం Premium తో అన్‌లాక్ అవుతాయి.';
-
-  @override
-  String get tutorialReminderApplyFree => 'మీ రిమైండర్ ఎంపికను సేవ్ చేయడానికి వర్తించు నొక్కండి.';
-
-  @override
-  String get tutorialReminderPresets => 'ఏదైనా రికార్డ్ గడువు ముగియకముందు తెలియజేయడానికి ప్రీసెట్ సమయాన్ని ఎంచుకోండి.';
-
-  @override
-  String get tutorialReminderCustomDays => 'గడువుకు ముందు మీ స్వంత ఖచ్చితమైన రోజుల సంఖ్యను సెట్ చేయండి.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'మీ రిమైండర్ ఎంపికను సేవ్ చేయడానికి వర్తించు నొక్కండి.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'రికార్డ్ గడువు ముగియకముందు క్యాస్కేడ్ రిమైండర్‌లు అనేక నోటిఫికేషన్‌లను పంపుతాయి. Premium తో అందుబాటులో ఉంది.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'రికార్డ్ గడువు ముగియకముందు క్యాస్కేడ్ రిమైండర్‌లు అనేక నోటిఫికేషన్‌లను పంపుతాయి.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara మీ దృష్టికి కావలసిన వాటిని హైలైట్ చేస్తుంది: త్వరలో గడువు ముగిసే రికార్డులు, తప్పిపోయిన రిమైండర్‌లు, మరియు రాబోయే బిజీ వారాలు.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'వినడం ఇష్టమా? మీ అంతర్దృష్టులను గట్టిగా చదివించండి, ఎప్పుడైనా పాజ్ చేయండి.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'రిమైండర్‌లు ఎలా పనిచేస్తాయో చూడటానికి రిమైండర్ ఫీల్డ్‌ను నొక్కండి.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'రిమైండర్లు గడువు తేదీ మరియు పునరుద్ధరణ సమయం నుండి లెక్కించబడతాయి. మీరు వాటిని ఇక్కడ ఆఫ్ చేయవచ్చు.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'మరిన్ని వివరాలలో అదనపు అంశాలు ఉంటాయి: గమనికలు, పునరావృతం, పునరుద్ధరణ సమయం, ఇది ఎవరి రికార్డు, లాక్, పర్సు మరియు ఫోటోలు. అవసరమైనప్పుడు మాత్రమే దీన్ని తెరవండి.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'పునరావృతం సబ్‌స్క్రిప్షన్‌ల కోసం తేదీని ముందుకు జరుపుతుంది. పునరుద్ధరణకు సుమారుగా పడుతుంది అనేది పునరుద్ధరణకు ఎంత సమయం పడుతుందో Vaultara కు చెబుతుంది, తద్వారా రిమైండర్లు తగినంత ముందుగా మొదలవుతాయి.';
 
   @override
   String get tutorialAddRecordProtect => 'రికార్డును చూపే ముందు మీ వేలిముద్ర లేదా స్క్రీన్ లాక్ అడగడానికి దాన్ని లాక్ చేయండి. కార్డ్‌లను నా పర్సులో గా గుర్తించండి, మరియు పత్రం ఫోటోలను జోడించండి.';

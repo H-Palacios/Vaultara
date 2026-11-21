@@ -716,12 +716,6 @@ class AppLocalizationsHa extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Da kuma tunatarwa waɗanda ke ƙaruwa yayin da lokacin ƙarshe ke gabatowa';
 
   @override
-  String get editorReminderLabel => 'Tunatarwa';
-
-  @override
-  String get editorReminderSelectOptional => 'Zaɓi tunatarwa (na zaɓi)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days kwanaki kafin ƙarewa';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Kati mai ƙarewa da 4728. Katin farko na kashe kuɗi. Haɗe da babban asusun ajiya.';
 
   @override
-  String get tutorialSetReminderField => 'Saita tunatarwa don karɓar sanarwa kafin ƙarewar kowane rikodin. Danna filin Tunatarwa don ganin zaɓuɓɓukan.';
-
-  @override
   String get reminderTitle => 'Tunatarwa';
-
-  @override
-  String get reminderFreeSection => 'Kyauta';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Babu tunatarwa';
@@ -939,45 +924,6 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Shigar da kwanaki na musamman';
-
-  @override
-  String get reminderCascadeTitle => 'Tunatarwa masu jera';
-
-  @override
-  String get reminderCascadeSubtitle => 'Karɓi sanarwa da yawa kafin rikodi ya ƙare';
-
-  @override
-  String get reminderPremiumRequired => 'Wannan fasalin yana samuwa ga masu amfani da Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Haɓaka zuwa Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Waɗannan zaɓuɓɓukan tunatarwa suna samuwa ga kowa. Zaɓi ɗaya don karɓar sanarwa.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Waɗannan zaɓuɓɓukan suna buɗe tare da Premium don ƙarin daidaitaccen lokaci kafin ƙarewa.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Danna Aiwatar don adana zaɓin tunatarwarka.';
-
-  @override
-  String get tutorialReminderPresets => 'Zaɓi lokacin da aka riga aka saita don a sanar da kai kafin kowane rikodin ya ƙare.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Saita naka daidaitaccen adadin kwanaki kafin ƙarewa.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Danna Aiwatar don adana zaɓin tunatarwarka.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Tunatarwa masu jera suna aika sanarwa da yawa kafin rikodi ya ƙare. Ana samu tare da Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Tunatarwa masu jera suna aika sanarwa da yawa kafin rikodi ya ƙare.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara yana bayyana abin da kake buƙatar mai da hankali kansa: rikodin da za su ƙare nan ba da jimawa ba, tunatarwar da suka ɓace, da mako mai zuwa na aiki tuƙuru.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Ka fi son sauraro? Bar a karanta maka nazarinka da babbar murya, ka dakata a kowane lokaci.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Danna filin tunatarwa don ganin yadda tunatarwa ke aiki.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Ana lissafa tunatarwa daga ranar ƙarewa da Lokacin sabuntawa. Za ka iya kashe su a nan.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Ƙarin bayani yana ɗauke da ƙarin abubuwa: bayanan kula, maimaitawa, lokacin sabuntawa, rikodin wane ne, kulle, jakar kuɗi da hotuna. Buɗe shi kawai idan kana buƙata.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Maimaitawa tana tura kwanan wata gaba don biyan kuɗi na lokaci-lokaci. Sabuntawa tana ɗaukar kusan tana gaya wa Vaultara tsawon lokacin da sabuntawa ke ɗauka, don tunatarwa ta fara da wuri.';
 
   @override
   String get tutorialAddRecordProtect => 'Kulle rikodi don a nemi yatsan hannunka ko kulle allo kafin a nuna shi. Yi wa katuna alama da A jakar kuɗina, ka ƙara hotunan takardar.';

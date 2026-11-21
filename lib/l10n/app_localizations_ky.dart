@@ -716,12 +716,6 @@ class AppLocalizationsKy extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Андан сырткары, мөөнөт жакындаган сайын бат-баттан келе турган эскертүүлөр';
 
   @override
-  String get editorReminderLabel => 'Эскертүү';
-
-  @override
-  String get editorReminderSelectOptional => 'Эскертүүнү тандаңыз (милдеттүү эмес)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Мөөнөткө $days күн калганда';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Карта 4728 менен аяктайт. Негизги чыгаша картасы. Негизги учурдагы эсепке байланган.';
 
   @override
-  String get tutorialSetReminderField => 'Кайсы бир жазуунун мөөнөтү бүтө электе билдирүү алуу үчүн эскертүү орнотуңуз. Опцияларды көрүү үчүн Эскертүү талаасын таптаңыз.';
-
-  @override
   String get reminderTitle => 'Эскертүү';
-
-  @override
-  String get reminderFreeSection => 'Бекер';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Эскертүү жок';
@@ -939,45 +924,6 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Ыңгайлаштырылган күндөрдү киргизиңиз';
-
-  @override
-  String get reminderCascadeTitle => 'Каскаддуу эскертүүлөр';
-
-  @override
-  String get reminderCascadeSubtitle => 'Жазуунун мөөнөтү бүткөнгө чейин бир нече билдирүү алыңыз';
-
-  @override
-  String get reminderPremiumRequired => 'Бул функция Premium колдонуучулар үчүн жеткиликтүү.';
-
-  @override
-  String get reminderUpgradeCta => 'Premiumга жаңыртуу';
-
-  @override
-  String get tutorialReminderFreeSection => 'Бул эскертүү параметрлери баарына жеткиликтүү. Билдирүү алуу үчүн бирин тандаңыз.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Бул параметрлер мөөнөтү бүткөнгө чейин так убакытты алуу үчүн Premium менен ачылат.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Эскертүү тандооңузду сактоо үчүн Колдонуу баскычын таптаңыз.';
-
-  @override
-  String get tutorialReminderPresets => 'Кайсы бир жазуунун мөөнөтү бүткөнгө чейин билдирүү алуу үчүн алдын ала белгиленген убакытты тандаңыз.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Мөөнөтү бүткөнгө чейин өз так күндөр санын коюңуз.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Эскертүү тандооңузду сактоо үчүн Колдонуу баскычын таптаңыз.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Каскад жазуунун мөөнөтү бүткөнгө чейин бир нече билдирүү жөнөтөт. Premium менен жеткиликтүү.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Каскад жазуунун мөөнөтү бүткөнгө чейин бир нече билдирүү жөнөтөт.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara көңүл буруу керек болгон нерселерди белгилейт: жакында мөөнөтү бүткөн жазуулар, жетишпеген эскертүүлөр жана алдыдагы бош эмес жумалар.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Угууну каалайсызбы? Аналитикаңызды үн менен окутуп, каалаган убакта тындырыңыз.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Эскертүүлөр кантип иштээрин көрүү үчүн эскертүү талаасын басыңыз.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Эскертүүлөр бүтүү күнүнөн жана Жаңылоо убактысынан эсептелет. Аларды бул жерден өчүрө аласыз.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Кошумча маалымат кошумча нерселерди камтыйт: эскертмелер, кайталоо, жаңылоо убактысы, жазуу кимдики экени, кулпу, капчык жана сүрөттөр. Аны керек болгондо гана ачыңыз.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Кайталоо жазылуулар үчүн күндү алдыга жылдырат. Жаңылоо болжол менен талаасы Vaultara колдонмосуна жаңылоо канча убакыт алаарын айтат, ошондо эскертүүлөр жетиштүү эрте башталат.';
 
   @override
   String get tutorialAddRecordProtect => 'Жазууну кулпулаңыз, ошондо ал көрсөтүлөрдөн мурун манжа изиңиз же экран кулпуңуз суралат. Карталарды Капчыгымда деп белгилеп, документтин сүрөттөрүн кошуңуз.';

@@ -716,12 +716,6 @@ class AppLocalizationsAf extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Plus herinneringe wat meer gereeld word soos die sperdatum nader kom';
 
   @override
-  String get editorReminderLabel => 'Herinnering';
-
-  @override
-  String get editorReminderSelectOptional => 'Kies \'n herinnering (opsioneel)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dae voor verval';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Kaart wat eindig op 4728. Primêre bestedingskaart. Gekoppel aan hooflopende rekening.';
 
   @override
-  String get tutorialSetReminderField => 'Stel \'n herinnering om \'n kennisgewing te ontvang voordat enige rekord verval. Tik op die Herinnering-veld om die opsies te sien.';
-
-  @override
   String get reminderTitle => 'Herinnering';
-
-  @override
-  String get reminderFreeSection => 'Gratis';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Geen herinnering';
@@ -939,45 +924,6 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Voer pasgemaakte dae in';
-
-  @override
-  String get reminderCascadeTitle => 'Kaskade-herinneringe';
-
-  @override
-  String get reminderCascadeSubtitle => 'Ontvang veelvuldige kennisgewings voordat \'n rekord verval';
-
-  @override
-  String get reminderPremiumRequired => 'Hierdie funksie is beskikbaar vir Premium-gebruikers.';
-
-  @override
-  String get reminderUpgradeCta => 'Gradeer op na Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Hierdie herinneringsopsies is vir almal beskikbaar. Kies een om \'n kennisgewing te ontvang.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Hierdie opsies word met Premium ontsluit vir meer presiese tydsberekening voor verval.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Tik op Pas toe om jou herinneringskeuse te stoor.';
-
-  @override
-  String get tutorialReminderPresets => 'Kies \'n voorafgestelde tyd om in kennis gestel te word voordat enige rekord verval.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Stel jou eie presiese aantal dae voor verval.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Tik op Pas toe om jou herinneringskeuse te stoor.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Kaskade stuur veelvuldige kennisgewings voordat \'n rekord verval. Beskikbaar met Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Kaskade stuur veelvuldige kennisgewings voordat \'n rekord verval.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara lig uit wat jou aandag benodig: rekords wat binnekort verval, ontbrekende herinneringe, en besige weke wat voorlê.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Verkies jy om te luister? Laat jou insigte hardop lees, en onderbreek enige tyd.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Tik op die herinneringsveld om te sien hoe herinneringe werk.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Herinneringe word uit die vervaldatum en Hernuwingstyd bereken. Jy kan dit hier afskakel.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Meer besonderhede bevat die ekstras: notas, herhaal, hernuwingstyd, wie se rekord dit is, slot, beursie en foto\'s. Maak dit net oop as jy dit nodig het.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Herhaal skuif die datum vorentoe vir intekeninge. Hernuwing neem ongeveer vertel Vaultara hoe lank hernuwing neem, sodat herinneringe vroeg genoeg begin.';
 
   @override
   String get tutorialAddRecordProtect => 'Sluit \'n rekord sodat jou vingerafdruk of skermslot gevra word voordat dit wys. Merk kaarte as In my beursie, en voeg foto\'s van die dokument by.';

@@ -716,12 +716,6 @@ class AppLocalizationsHi extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'साथ ही ऐसे रिमाइंडर्स जो डेडलाइन नज़दीक आने पर और बार-बार आते हैं';
 
   @override
-  String get editorReminderLabel => 'रिमाइंडर';
-
-  @override
-  String get editorReminderSelectOptional => 'रिमाइंडर चुनें (वैकल्पिक)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'समाप्ति से $days दिन पहले';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get tutorialSampleRecordNotes => '4728 पर समाप्त होने वाला कार्ड। प्राथमिक खर्च कार्ड। मुख्य चालू खाते से जुड़ा।';
 
   @override
-  String get tutorialSetReminderField => 'किसी भी रिकॉर्ड की समाप्ति से पहले सूचना प्राप्त करने के लिए एक रिमाइंडर सेट करें। विकल्प देखने के लिए रिमाइंडर फ़ील्ड पर टैप करें।';
-
-  @override
   String get reminderTitle => 'रिमाइंडर';
-
-  @override
-  String get reminderFreeSection => 'मुफ़्त';
-
-  @override
-  String get reminderPremiumSection => 'प्रीमियम';
 
   @override
   String get reminderNone => 'कोई रिमाइंडर नहीं';
@@ -939,45 +924,6 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'कस्टम दिन दर्ज करें';
-
-  @override
-  String get reminderCascadeTitle => 'कैस्केड रिमाइंडर';
-
-  @override
-  String get reminderCascadeSubtitle => 'रिकॉर्ड समाप्त होने से पहले कई सूचनाएं प्राप्त करें';
-
-  @override
-  String get reminderPremiumRequired => 'यह सुविधा प्रीमियम उपयोगकर्ताओं के लिए उपलब्ध है।';
-
-  @override
-  String get reminderUpgradeCta => 'प्रीमियम में अपग्रेड करें';
-
-  @override
-  String get tutorialReminderFreeSection => 'ये रिमाइंडर विकल्प सभी के लिए उपलब्ध हैं। सूचना प्राप्त करने के लिए एक चुनें।';
-
-  @override
-  String get tutorialReminderPremiumSection => 'ये विकल्प समाप्ति से पहले अधिक सटीक समय के लिए प्रीमियम के साथ अनलॉक होते हैं।';
-
-  @override
-  String get tutorialReminderApplyFree => 'अपनी रिमाइंडर पसंद सहेजने के लिए लागू करें पर टैप करें।';
-
-  @override
-  String get tutorialReminderPresets => 'किसी भी रिकॉर्ड की समाप्ति से पहले सूचित होने के लिए एक प्रीसेट समय चुनें।';
-
-  @override
-  String get tutorialReminderCustomDays => 'समाप्ति से पहले अपने स्वयं के दिनों की सटीक संख्या सेट करें।';
-
-  @override
-  String get tutorialReminderApplyPremium => 'अपनी रिमाइंडर पसंद सहेजने के लिए लागू करें पर टैप करें।';
-
-  @override
-  String get tutorialReminderCascadeFree => 'कैस्केड रिकॉर्ड समाप्त होने से पहले कई सूचनाएं भेजता है। प्रीमियम के साथ उपलब्ध।';
-
-  @override
-  String get tutorialReminderCascadePremium => 'कैस्केड रिकॉर्ड समाप्त होने से पहले कई सूचनाएं भेजता है।';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara उन चीज़ों को हाइलाइट करता है जिन पर आपका ध्यान चाहिए: जल्द ही समाप्त होने वाले रिकॉर्ड, गुम रिमाइंडर और आगे आने वाले व्यस्त सप्ताह।';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'सुनना पसंद करते हैं? अपनी जानकारियाँ ज़ोर से पढ़वाएँ, और कभी भी रोकें।';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'रिमाइंडर कैसे काम करते हैं यह देखने के लिए रिमाइंडर फ़ील्ड पर टैप करें।';
 
   @override
   String get tutorialAddRecordReminderSolo => 'रिमाइंडर समाप्ति तारीख और नवीनीकरण के समय से तय होते हैं। आप उन्हें यहाँ बंद कर सकते हैं।';
@@ -3512,9 +3455,6 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => '“और विवरण” में अतिरिक्त चीज़ें हैं: नोट्स, दोहराव, नवीनीकरण का समय, रिकॉर्ड किसका है, लॉक, बटुआ और फ़ोटो। इसे तभी खोलें जब आपको ज़रूरत हो।';
-
-  @override
-  String get tutorialAddRecordRepeat => '“दोहराव” सब्सक्रिप्शन के लिए तारीख आगे बढ़ा देता है। “नवीनीकरण में लगने वाला समय” Vaultara को बताता है कि नवीनीकरण में कितना समय लगता है, ताकि रिमाइंडर समय रहते शुरू हों।';
 
   @override
   String get tutorialAddRecordProtect => 'किसी रिकॉर्ड को दिखाने से पहले आपका फ़िंगरप्रिंट या स्क्रीन लॉक माँगने के लिए उसे लॉक करें। कार्ड को “मेरे बटुए में” के रूप में चिह्नित करें, और दस्तावेज़ की फ़ोटो जोड़ें।';

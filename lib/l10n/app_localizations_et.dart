@@ -716,12 +716,6 @@ class AppLocalizationsEt extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Lisaks meeldetuletused, mis muutuvad tähtaja lähenedes sagedasemaks';
 
   @override
-  String get editorReminderLabel => 'Meeldetuletus';
-
-  @override
-  String get editorReminderSelectOptional => 'Vali meeldetuletus (valikuline)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days päeva enne aegumist';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Kaart lõpeb numbriga 4728. Peamine kulutuste kaart. Seotud peamise arvelduskontoga.';
 
   @override
-  String get tutorialSetReminderField => 'Määra meeldetuletus, et saada teavitus enne mis tahes kirje aegumist. Puuduta meeldetuletuse välja, et näha valikuid.';
-
-  @override
   String get reminderTitle => 'Meeldetuletus';
-
-  @override
-  String get reminderFreeSection => 'Tasuta';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Meeldetuletust pole';
@@ -939,45 +924,6 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Sisesta kohandatud päevad';
-
-  @override
-  String get reminderCascadeTitle => 'Kaskaadmeeldetuletused';
-
-  @override
-  String get reminderCascadeSubtitle => 'Saa mitu teavitust enne kirje aegumist';
-
-  @override
-  String get reminderPremiumRequired => 'See funktsioon on saadaval Premium-kasutajatele.';
-
-  @override
-  String get reminderUpgradeCta => 'Uuenda Premiumile';
-
-  @override
-  String get tutorialReminderFreeSection => 'Need meeldetuletuste valikud on saadaval kõigile. Vali üks teavituse saamiseks.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Need valikud avanevad Premium\'iga täpsemaks ajastuseks enne aegumist.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Puuduta Rakenda, et salvestada oma meeldetuletuse valik.';
-
-  @override
-  String get tutorialReminderPresets => 'Vali eelseadistatud aeg, et saada teavitus enne mis tahes kirje aegumist.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Määra enne aegumist oma täpne päevade arv.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Puuduta Rakenda, et salvestada oma meeldetuletuse valik.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Kaskaad saadab mitu teavitust enne kirje aegumist. Saadaval Premium\'iga.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Kaskaad saadab mitu teavitust enne kirje aegumist.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara toob esile, mis vajab sinu tähelepanu: peagi aeguvad kirjed, puuduvad meeldetuletused ja tulevased hõivatud nädalad.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Kas eelistad kuulata? Lase oma ülevaated valjusti ette lugeda ja peata igal ajal.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Puuduta meeldetuletuse välja, et näha, kuidas meeldetuletused töötavad.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Meeldetuletused arvutatakse aegumiskuupäevast ja Uuendamise ajast. Siin saad need välja lülitada.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Rohkem üksikasju sisaldab lisasid: märkmed, kordus, uuendamise aeg, kelle kirje see on, lukk, rahakott ja fotod. Ava see ainult siis, kui seda vaja on.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Kordub nihutab kuupäeva edasi tellimuste jaoks. Uuendamine võtab umbes ütleb Vaultarale, kui kaua uuendamine aega võtab, et meeldetuletused algaksid piisavalt vara.';
 
   @override
   String get tutorialAddRecordProtect => 'Lukusta kirje, et enne selle näitamist küsitaks sinu sõrmejälge või ekraanilukku. Märgi kaardid valikuga Minu rahakotis ja lisa dokumendist fotosid.';

@@ -716,12 +716,6 @@ class AppLocalizationsIt extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Inoltre promemoria che diventano più frequenti all\'avvicinarsi della scadenza';
 
   @override
-  String get editorReminderLabel => 'Promemoria';
-
-  @override
-  String get editorReminderSelectOptional => 'Seleziona promemoria (opzionale)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days giorni prima della scadenza';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Carta terminante con 4728. Carta di spesa principale. Collegata al conto corrente principale.';
 
   @override
-  String get tutorialSetReminderField => 'Imposta un promemoria per ricevere una notifica prima della scadenza di un record. Tocca il campo Promemoria per vedere le opzioni.';
-
-  @override
   String get reminderTitle => 'Promemoria';
-
-  @override
-  String get reminderFreeSection => 'Gratuito';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Nessun promemoria';
@@ -939,45 +924,6 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Inserisci giorni personalizzati';
-
-  @override
-  String get reminderCascadeTitle => 'Promemoria a cascata';
-
-  @override
-  String get reminderCascadeSubtitle => 'Ricevi più notifiche prima che un record scada';
-
-  @override
-  String get reminderPremiumRequired => 'Questa funzione è disponibile per gli utenti Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Passa a Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Queste opzioni di promemoria sono disponibili per tutti. Scegline una per ricevere una notifica.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Queste opzioni si sbloccano con Premium per una tempistica più precisa prima della scadenza.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Tocca Applica per salvare la tua scelta di promemoria.';
-
-  @override
-  String get tutorialReminderPresets => 'Scegli un tempo preimpostato per essere notificato prima della scadenza di qualsiasi record.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Imposta il tuo numero esatto di giorni prima della scadenza.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Tocca Applica per salvare la tua scelta di promemoria.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'La cascata invia più notifiche prima che un record scada. Disponibile con Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'La cascata invia più notifiche prima che un record scada.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara evidenzia ciò che richiede la tua attenzione: record in scadenza, promemoria mancanti e settimane impegnative in arrivo.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Preferisci ascoltare? Fatti leggere le analisi ad alta voce e metti in pausa quando vuoi.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Tocca il campo del promemoria per vedere come funzionano i promemoria.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'I promemoria sono calcolati dalla data di scadenza e dal Tempo di rinnovo. Qui puoi disattivarli.';
@@ -3516,9 +3459,6 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Altri dettagli contiene gli extra: note, ripetizione, tempo di rinnovo, di chi è il record, blocco, portafoglio e foto. Aprilo solo quando ti serve.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Ripetizione sposta la data in avanti per gli abbonamenti. Il rinnovo richiede circa dice a Vaultara quanto tempo serve per rinnovare, così i promemoria partono abbastanza presto.';
 
   @override
   String get tutorialAddRecordProtect => 'Blocca un record per chiedere l\'impronta digitale o il blocco schermo prima di mostrarlo. Segna le carte come Nel mio portafoglio e aggiungi le foto del documento.';

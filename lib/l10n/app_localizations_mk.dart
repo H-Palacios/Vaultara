@@ -716,12 +716,6 @@ class AppLocalizationsMk extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Плус потсетници кои стануваат почести како што се приближува крајниот рок';
 
   @override
-  String get editorReminderLabel => 'Потсетник';
-
-  @override
-  String get editorReminderSelectOptional => 'Изберете потсетник (опционално)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days дена пред истек';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Картичка што завршува со 4728. Примарна картичка за трошење. Поврзана со главната тековна сметка.';
 
   @override
-  String get tutorialSetReminderField => 'Поставете потсетник за да добиете известување пред да истече кој било запис. Допрете го полето Потсетник за да ги видите опциите.';
-
-  @override
   String get reminderTitle => 'Потсетник';
-
-  @override
-  String get reminderFreeSection => 'Бесплатно';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Без потсетник';
@@ -939,45 +924,6 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Внесете прилагодени денови';
-
-  @override
-  String get reminderCascadeTitle => 'Каскадни потсетници';
-
-  @override
-  String get reminderCascadeSubtitle => 'Примајте повеќе известувања пред да истече запис';
-
-  @override
-  String get reminderPremiumRequired => 'Оваа функција е достапна за Premium корисниците.';
-
-  @override
-  String get reminderUpgradeCta => 'Надградете на Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Овие опции за потсетник се достапни за сите. Изберете една за да добиете известување.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Овие опции се отклучуваат со Premium за попрецизно време пред истекување.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Допрете Примени за да го зачувате изборот на потсетник.';
-
-  @override
-  String get tutorialReminderPresets => 'Изберете претходно поставено време за известување пред истекување на кој било запис.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Поставете свој точен број денови пред истекување.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Допрете Примени за да го зачувате изборот на потсетник.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Каскада испраќа повеќе известувања пред да истече запис. Достапно со Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Каскада испраќа повеќе известувања пред да истече запис.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara нагласува што бара ваше внимание: записи што наскоро истекуваат, недостасувачки потсетници и претстојни зафатени недели.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Претпочитате да слушате? Дозволете вашите увиди да ви се читаат на глас и паузирајте во секое време.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Допрете го полето за потсетник за да видите како функционираат потсетниците.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Потсетниците се пресметуваат од датумот на истекување и Времето за обновување. Тука можете да ги исклучите.';
@@ -3510,9 +3453,6 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Повеќе детали ги содржи додатоците: белешки, повторување, време за обновување, чиј е записот, заклучување, паричник и фотографии. Отворете го само кога ви треба.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Повторување го поместува датумот напред за претплати. Обновувањето трае приближно му кажува на Vaultara колку трае обновувањето, за потсетниците да почнат доволно рано.';
 
   @override
   String get tutorialAddRecordProtect => 'Заклучете запис за да бара отпечаток или заклучување на екранот пред да се прикаже. Означете ги картичките како Во мојот паричник и додајте фотографии од документот.';

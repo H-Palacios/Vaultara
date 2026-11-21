@@ -21,7 +21,6 @@ import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 import 'package:vaultara/features/tutorials/data/models/add_record_tutorial_sample.dart';
 import 'package:vaultara/core/data/preset_catalog.dart';
 import 'package:vaultara/core/util/text_normaliser.dart';
-import 'package:vaultara/features/reminders/view/reminder_selector_sheet.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
 import 'package:vaultara/features/tutorials/services/add_record_tutorial_sample_accessor.dart';
@@ -59,7 +58,7 @@ import 'package:vaultara/features/records/logic/record_details.dart';
 import 'package:vaultara/features/records/view/editor/editor_repeat_lock.dart';
 import 'package:vaultara/features/records/logic/record_lock.dart';
 import 'package:vaultara/features/records/view/editor/editor_notes_expiry_fields.dart';
-import 'package:vaultara/features/records/view/editor/editor_reminder_tile.dart';
+import 'package:vaultara/features/records/view/editor/editor_reminders_section.dart';
 import 'package:vaultara/features/records/view/editor/editor_scan_section.dart';
 import 'package:vaultara/features/household/data/household_repository.dart';
 import 'package:vaultara/features/household/view/household_share_tile.dart';
@@ -193,6 +192,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
   String? selectedCategoryKey;
   String? selectedSubcategory;
   int? reminderOffsetDays;
+  List<int>? reminderSteps;
   bool reminderTouched = false;
   String? holderId;
   double? renewalCost;
@@ -246,12 +246,18 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
   final GlobalKey nameFieldKey = GlobalKey();
   final GlobalKey notesFieldKey = GlobalKey();
   final GlobalKey expiryFieldKey = GlobalKey();
-  final GlobalKey reminderFieldKey = GlobalKey();
+  final GlobalKey remindersSectionKey = GlobalKey();
+  final GlobalKey reminderDatesKey = GlobalKey();
+  final GlobalKey ownRemindersKey = GlobalKey();
   final GlobalKey saveButtonKey = GlobalKey();
   final GlobalKey moreDetailsKey = GlobalKey();
-  final GlobalKey repeatLeadKey = GlobalKey();
   final GlobalKey protectKey = GlobalKey();
   bool tutorialMoreOpen = false;
+
+  /// Set once the reminder tutorial has started, so the sheet closes when it
+  /// ends, and while the sheet is already closing so it does not close twice.
+  bool _reminderTourStarted = false;
+  bool _closing = false;
 
   @override
   void initState() {
@@ -282,7 +288,10 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
         widget.subcategoryKey ??
         widget.subcategoryName;
 
-    reminderOffsetDays = draft?.reminderOffsetDays;
+    reminderOffsetDays = draft == null
+        ? RecordDefaults.reminderDays
+        : draft.reminderOffsetDays;
+    reminderSteps = draft?.reminderSteps;
     reminderTouched = draft?.reminderOffsetDays != null;
     holderId = draft?.holderId ?? widget.initialHolderId;
     repeatMonths = draft?.repeatMonths;
@@ -311,14 +320,19 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       _applyPrefill(prefill);
     }
 
-    if (isTutorialMode) {
-      selectedCategoryKey = AddRecordTutorialSample.categoryKey;
-      selectedSubcategory = AddRecordTutorialSample.subcategoryKey;
+    if (isAnyTutorialMode) {
+      // The reminder dates need an expiry date and a renewal time to show,
+      // so both tutorials fill in the same sample record.
       expiryDate = AddRecordTutorialSampleAccessor.expiryDate();
       expiryController.text = expiryDate!.toIso8601String().substring(0, 10);
       reminderOffsetDays = AddRecordTutorialSample.reminderOffsetDays;
+      reminderSteps = null;
       reminderTouched = true;
       leadDays = AddRecordTutorialSample.leadDays;
+    }
+    if (isTutorialMode) {
+      selectedCategoryKey = AddRecordTutorialSample.categoryKey;
+      selectedSubcategory = AddRecordTutorialSample.subcategoryKey;
       keptIn = AddRecordTutorialSample.inWallet ? KeptIn.wallet : null;
     }
     moreDetailsOpen =
@@ -328,7 +342,6 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
         lostLineController.text.trim().isNotEmpty ||
         providerController.text.trim().isNotEmpty ||
         referenceController.text.trim().isNotEmpty ||
-        leadDays != null ||
         notesController.text.trim().isNotEmpty ||
         (renewalCost ?? 0) > 0 ||
         holderId != null ||
@@ -352,8 +365,12 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
         if (mounted) _scanSharedFile(sharedPath);
       });
     }
-    if (isReminderTutorialMode) {
+    if (isAnyTutorialMode) {
+      // The full tour shows the reminder steps from inside Add Record.
       _registerReminderTutorialKeys();
+    }
+    if (isReminderTutorialMode) {
+      TutorialController.instance.addListener(_onReminderTutorialChanged);
     }
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -369,7 +386,11 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
         await WidgetsBinding.instance.endOfFrame;
         await WidgetsBinding.instance.endOfFrame;
         if (!mounted) return;
-        TutorialController.instance.start(TutorialStep.setReminderField);
+        _reminderTourStarted = true;
+        TutorialController.instance.start(
+          TutorialStep.remindersSection,
+          isPremium: isPremium,
+        );
       });
     }
   }
@@ -407,6 +428,9 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       _unregisterAddRecordTutorialKeys();
     }
     if (isReminderTutorialMode) {
+      TutorialController.instance.removeListener(_onReminderTutorialChanged);
+    }
+    if (isAnyTutorialMode) {
       _unregisterReminderTutorialKeys();
     }
     if (isAnyTutorialMode && !TutorialController.instance.isFullTour) {
@@ -460,16 +484,23 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
   void _onTutorialStepChanged() {
     if (!mounted || tutorialMoreOpen) return;
     final step = TutorialController.instance.currentStep;
-    if (step == TutorialStep.addRecordRepeat ||
-        step == TutorialStep.addRecordProtect) {
+    if (step == TutorialStep.addRecordProtect) {
       setState(() => tutorialMoreOpen = true);
     }
+  }
+
+  /// The reminder tutorial runs on this sheet. When it finishes or is
+  /// cancelled from its card, the sheet closes with it.
+  void _onReminderTutorialChanged() {
+    if (!mounted || _closing || !_reminderTourStarted) return;
+    if (TutorialController.instance.isActive) return;
+    _closing = true;
+    Navigator.pop(context);
   }
 
   void _registerAddRecordTutorialKeys() {
     TutorialController.instance
       ..register(TutorialStep.addRecordMoreDetails, moreDetailsKey)
-      ..register(TutorialStep.addRecordRepeat, repeatLeadKey)
       ..register(TutorialStep.addRecordProtect, protectKey)
       ..register(TutorialStep.addRecordScan, scanButtonKey)
       ..register(TutorialStep.addRecordCategory, categoryFieldKey)
@@ -477,14 +508,13 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       ..register(TutorialStep.addRecordName, nameFieldKey)
       ..register(TutorialStep.addRecordNotes, notesFieldKey)
       ..register(TutorialStep.addRecordExpiry, expiryFieldKey)
-      ..register(TutorialStep.addRecordReminder, reminderFieldKey)
+      ..register(TutorialStep.addRecordReminder, remindersSectionKey)
       ..register(TutorialStep.addRecordSave, saveButtonKey);
   }
 
   void _unregisterAddRecordTutorialKeys() {
     TutorialController.instance
       ..unregister(TutorialStep.addRecordMoreDetails, moreDetailsKey)
-      ..unregister(TutorialStep.addRecordRepeat, repeatLeadKey)
       ..unregister(TutorialStep.addRecordProtect, protectKey)
       ..unregister(TutorialStep.addRecordScan)
       ..unregister(TutorialStep.addRecordCategory)
@@ -497,26 +527,37 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
   }
 
   void _registerReminderTutorialKeys() {
-    TutorialController.instance.register(
-      TutorialStep.setReminderField,
-      reminderFieldKey,
-    );
+    TutorialController.instance
+      ..register(TutorialStep.remindersSection, remindersSectionKey)
+      ..register(TutorialStep.remindersDates, reminderDatesKey)
+      ..register(TutorialStep.remindersOwnDates, ownRemindersKey);
   }
 
   void _unregisterReminderTutorialKeys() {
-    TutorialController.instance.unregister(TutorialStep.setReminderField);
+    TutorialController.instance
+      ..unregister(TutorialStep.remindersSection, remindersSectionKey)
+      ..unregister(TutorialStep.remindersDates, reminderDatesKey)
+      ..unregister(TutorialStep.remindersOwnDates, ownRemindersKey);
   }
 
-  String _reminderSummary(AppLocalizations loc) {
-    if (reminderOffsetDays == null) {
-      return reminderTouched
-          ? loc.editorReminderNone
-          : loc.editorReminderSelectOptional;
-    }
-    if (reminderOffsetDays == 0) {
-      return loc.editorReminderOnExpiry;
-    }
-    return loc.editorReminderDaysBefore(reminderOffsetDays!);
+  /// Reminders on or off. Off clears everything that would remind,
+  /// renewal time included, since renewal time also starts reminders.
+  /// Back on starts from the usual week before expiry.
+  void _onRemindersSwitched(bool on) {
+    setState(() {
+      reminderTouched = true;
+      _leadTouched = true;
+      reminderSteps = null;
+      if (on) {
+        reminderOffsetDays = RecordDefaults.reminderDays;
+        leadDays ??= selectedSubcategory == null
+            ? null
+            : RecordDefaults.forGroup(selectedSubcategory!).leadDays;
+      } else {
+        reminderOffsetDays = null;
+        leadDays = null;
+      }
+    });
   }
 
   String _categoryLabelForKey(BuildContext ctx, String key) {
@@ -1411,6 +1452,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
   }
 
   void _onCancelPressed() {
+    _closing = true;
     if (isTutorialMode) {
       _unregisterAddRecordTutorialKeys();
       TutorialController.instance.cancel();
@@ -1420,50 +1462,6 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       TutorialController.instance.cancel();
     }
     Navigator.pop(context);
-  }
-
-  Future<void> _onReminderFieldTapped() async {
-    final bool fullTour = TutorialController.instance.isFullTour;
-
-    if (isTutorialMode && !fullTour) return;
-
-    if (isReminderTutorialMode) {
-      _unregisterReminderTutorialKeys();
-      TutorialController.instance.end();
-      await Future<void>.delayed(const Duration(milliseconds: 100));
-    }
-
-    if (isTutorialMode && fullTour) {
-      TutorialController.instance.end();
-      await Future<void>.delayed(const Duration(milliseconds: 100));
-    }
-
-    if (!mounted) return;
-
-    final result = await showReminderSelectorSheet(
-      context: context,
-      isPremium: isPremium,
-      initialDays: reminderOffsetDays,
-      isTutorialMode: isReminderTutorialMode || (isTutorialMode && fullTour),
-    );
-
-    if (!mounted) return;
-
-    setState(() {
-      reminderTouched = true;
-      reminderOffsetDays = result;
-    });
-
-    if (isReminderTutorialMode && mounted) {
-      Navigator.pop(context);
-      return;
-    }
-
-    if (isTutorialMode && fullTour && mounted) {
-      await Future<void>.delayed(const Duration(milliseconds: 150));
-      if (!mounted) return;
-      TutorialController.instance.advanceToSaveStep();
-    }
   }
 
   Future<void> _onSavePressed() async {
@@ -1483,6 +1481,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       return;
     }
     if (isReminderTutorialMode) {
+      _closing = true;
       _unregisterReminderTutorialKeys();
       TutorialController.instance.end();
       Navigator.pop(context);
@@ -1561,6 +1560,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
               ? null
               : notesController.text.trim(),
           reminderOffsetDays: reminderOffsetDays,
+          reminderSteps: reminderSteps,
           reminderChanged: reminderTouched,
           expiryChanged: true,
           holderId: holderId,
@@ -1647,6 +1647,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       selectedCategoryKey,
       selectedSubcategory,
       reminderOffsetDays,
+      reminderSteps?.join(','),
       holderId,
       renewalCost,
       costCurrency,
@@ -1729,7 +1730,6 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       keptIn != null,
       providerController.text.trim().isNotEmpty,
       referenceController.text.trim().isNotEmpty,
-      leadDays != null,
       notesController.text.trim().isNotEmpty,
       renewalCost != null && renewalCost! > 0,
       holderId != null,
@@ -1776,36 +1776,19 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
         ),
         const SizedBox(height: 10),
       ],
-      if (showExtras) ...[
-        KeyedSubtree(
-          key: repeatLeadKey,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              // Only for things that renew by themselves (subscriptions,
-              // policies, memberships), or a record that already uses it.
-              if (repeatMonths != null ||
-                  RecordDetails.renewsByItself(selectedSubcategory)) ...[
-                EditorRepeatField(
-                  value: repeatMonths,
-                  enabled: !isSaving,
-                  onChanged: (value) => setState(() {
-                    _repeatTouched = true;
-                    repeatMonths = value;
-                  }),
-                ),
-                const SizedBox(height: 10),
-              ],
-              EditorLeadField(
-                value: leadDays,
-                enabled: !isSaving,
-                onChanged: (value) => setState(() {
-                  _leadTouched = true;
-                  leadDays = value;
-                }),
-              ),
-            ],
-          ),
+      // Only for things that renew by themselves (subscriptions, policies,
+      // memberships), or a record that already uses it. Renewal time moved
+      // to the reminders section, since it decides when reminders start.
+      if (showExtras &&
+          (repeatMonths != null ||
+              RecordDetails.renewsByItself(selectedSubcategory))) ...[
+        EditorRepeatField(
+          value: repeatMonths,
+          enabled: !isSaving,
+          onChanged: (value) => setState(() {
+            _repeatTouched = true;
+            repeatMonths = value;
+          }),
         ),
         const SizedBox(height: 10),
       ],
@@ -2074,10 +2057,35 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
                             ],
                           ),
                         ),
-                        EditorReminderTile(
-                          fieldKey: reminderFieldKey,
-                          summary: _reminderSummary(loc),
-                          onTap: _onReminderFieldTapped,
+                        IgnorePointer(
+                          ignoring: isAnyTutorialMode,
+                          child: EditorRemindersSection(
+                            expiryDate: expiryDate,
+                            offsetDays: reminderOffsetDays,
+                            leadDays: leadDays,
+                            steps: reminderSteps,
+                            isPremium: isPremium,
+                            enabled: !isSaving,
+                            sectionKey: remindersSectionKey,
+                            datesKey: reminderDatesKey,
+                            ownDatesKey: ownRemindersKey,
+                            onEnabledChanged: _onRemindersSwitched,
+                            onLeadChanged: (value) => setState(() {
+                              _leadTouched = true;
+                              reminderTouched = true;
+                              leadDays = value;
+                            }),
+                            onStepsChanged: (steps) => setState(() {
+                              reminderTouched = true;
+                              reminderSteps = steps;
+                              // Other screens read the closest reminder from
+                              // the offset, so it follows the own days.
+                              if (steps != null) {
+                                reminderOffsetDays = steps.last;
+                              }
+                            }),
+                            onUpgrade: () => openPlans(context),
+                          ),
                         ),
                         if (showShared)
                           HouseholdShareTile(
@@ -2094,7 +2102,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
                             child: EditorMoreDetails(
                               expanded: isTutorialMode
                                   ? tutorialMoreOpen
-                                  : (moreDetailsOpen || isReminderTutorialMode),
+                                  : moreDetailsOpen,
                               filledCount: extrasFilled,
                               onToggle: (open) =>
                                   setState(() => moreDetailsOpen = open),

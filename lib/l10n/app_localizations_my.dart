@@ -714,12 +714,6 @@ class AppLocalizationsMy extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'သတ်မှတ်ရက် နီးလာသည်နှင့်အမျှ ပိုမိုမကြာခဏ ရောက်လာသော သတိပေးချက်များလည်း ပါဝင်သည်';
 
   @override
-  String get editorReminderLabel => 'သတိပေးချက်';
-
-  @override
-  String get editorReminderSelectOptional => 'သတိပေးချက် ရွေးပါ (ချန်လှပ်နိုင်)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'သက်တမ်းကုန်ရက် မတိုင်မီ $days ရက်';
   }
@@ -908,16 +902,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'နောက်ဆုံးဂဏန်း 4728 ရှိသော ကတ်။ အဓိက သုံးစွဲသည့်ကတ်။ ပင်မ ငွေစာရင်းနှင့် ချိတ်ဆက်ထားသည်။';
 
   @override
-  String get tutorialSetReminderField => 'မှတ်တမ်းတစ်ခုခု သက်တမ်းမကုန်မီ အကြောင်းကြားချက် ရရှိရန် သတိပေးချက် သတ်မှတ်ပါ။ ရွေးစရာများကို ကြည့်ရန် သတိပေးချက် အကွက်ကို တို့ပါ။';
-
-  @override
   String get reminderTitle => 'သတိပေးချက်';
-
-  @override
-  String get reminderFreeSection => 'အခမဲ့';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'သတိပေးချက် မရှိ';
@@ -936,45 +921,6 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'စိတ်ကြိုက် ရက်များ ထည့်ပါ';
-
-  @override
-  String get reminderCascadeTitle => 'အဆင့်ဆင့် သတိပေးချက်များ';
-
-  @override
-  String get reminderCascadeSubtitle => 'မှတ်တမ်းတစ်ခု သက်တမ်းမကုန်မီ အကြောင်းကြားချက် အများအပြား ရယူပါ';
-
-  @override
-  String get reminderPremiumRequired => 'ဤလုပ်ဆောင်ချက်ကို Premium အသုံးပြုသူများ သုံးနိုင်သည်။';
-
-  @override
-  String get reminderUpgradeCta => 'Premium သို့ အဆင့်မြှင့်ရန်';
-
-  @override
-  String get tutorialReminderFreeSection => 'ဤသတိပေးချက် ရွေးစရာများကို လူတိုင်း သုံးနိုင်သည်။ အကြောင်းကြားချက် ရရှိရန် တစ်ခု ရွေးပါ။';
-
-  @override
-  String get tutorialReminderPremiumSection => 'ဤရွေးစရာများကို Premium ဖြင့် ရရှိပြီး သက်တမ်းကုန်ရက် မတိုင်မီ အချိန်ကို ပိုတိကျစွာ သတ်မှတ်နိုင်သည်။';
-
-  @override
-  String get tutorialReminderApplyFree => 'သင့်သတိပေးချက် ရွေးချယ်မှုကို သိမ်းရန် \'အသုံးချရန်\' ကို တို့ပါ။';
-
-  @override
-  String get tutorialReminderPresets => 'မှတ်တမ်းတစ်ခုခု သက်တမ်းမကုန်မီ အကြောင်းကြားရန် ကြိုတင်သတ်မှတ်ထားသော အချိန်တစ်ခု ရွေးပါ။';
-
-  @override
-  String get tutorialReminderCustomDays => 'သက်တမ်းကုန်ရက် မတိုင်မီ ရက်အရေအတွက်ကို ကိုယ်တိုင် အတိအကျ သတ်မှတ်ပါ။';
-
-  @override
-  String get tutorialReminderApplyPremium => 'သင့်သတိပေးချက် ရွေးချယ်မှုကို သိမ်းရန် \'အသုံးချရန်\' ကို တို့ပါ။';
-
-  @override
-  String get tutorialReminderCascadeFree => 'အဆင့်ဆင့် သတိပေးချက်သည် မှတ်တမ်းတစ်ခု သက်တမ်းမကုန်မီ အကြောင်းကြားချက် အများအပြား ပို့ပေးသည်။ Premium ဖြင့် သုံးနိုင်သည်။';
-
-  @override
-  String get tutorialReminderCascadePremium => 'အဆင့်ဆင့် သတိပေးချက်သည် မှတ်တမ်းတစ်ခု သက်တမ်းမကုန်မီ အကြောင်းကြားချက် အများအပြား ပို့ပေးသည်။';
-
-  @override
   String get tutorialInsightsSmartCard => 'သင် ဂရုစိုက်ရမည့်အရာများကို Vaultara က မီးမောင်းထိုးပြသည်: မကြာမီ သက်တမ်းကုန်မည့် မှတ်တမ်းများ၊ သတိပေးချက် မရှိသည်များနှင့် ရှေ့တွင် အလုပ်များမည့် အပတ်များ။';
 
   @override
@@ -988,9 +934,6 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'နားထောင်ရသည်ကို ပိုနှစ်သက်ပါသလား။ သင့်သုံးသပ်ချက်များကို အသံထွက် ဖတ်ပြစေပြီး အချိန်မရွေး ခေတ္တရပ်နိုင်သည်။';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'သတိပေးချက်များ အလုပ်လုပ်ပုံကို ကြည့်ရန် သတိပေးချက် အကွက်ကို တို့ပါ။';
 
   @override
   String get tutorialAddRecordReminderSolo => 'သတိပေးချက်များကို သက်တမ်းကုန်ရက်နှင့် သက်တမ်းတိုးချိန်မှ တွက်ချက်ပါသည်။ ဤနေရာတွင် ပိတ်နိုင်ပါသည်။';
@@ -3489,9 +3432,6 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => '“နောက်ထပ် အသေးစိတ်” တွင် အပိုများ ပါသည်။ မှတ်စုများ၊ ထပ်တလဲလဲ၊ သက်တမ်းတိုးချိန်၊ မှတ်တမ်းသည် မည်သူ့အတွက်လဲ၊ လော့ခ်၊ ပိုက်ဆံအိတ်နှင့် ဓာတ်ပုံများ။ လိုအပ်မှသာ ဖွင့်ပါ။';
-
-  @override
-  String get tutorialAddRecordRepeat => '“ထပ်တလဲလဲ” သည် စာရင်းသွင်းမှုများအတွက် ရက်စွဲကို ရှေ့သို့ ရွှေ့ပေးသည်။ “သက်တမ်းတိုးရန် ကြာချိန် ခန့်မှန်းခြေ” က သက်တမ်းတိုးရန် ကြာချိန်ကို Vaultara အား ပြောပြပြီး သတိပေးချက်များကို အချိန်မီ စတင်စေသည်။';
 
   @override
   String get tutorialAddRecordProtect => 'မှတ်တမ်းကို မပြမီ သင့်လက်ဗွေ သို့မဟုတ် ဖန်သားပြင်လော့ခ် တောင်းစေရန် လော့ခ်ချပါ။ ကတ်များကို “ကျွန်ုပ်၏ ပိုက်ဆံအိတ်ထဲတွင်” ဟု မှတ်ပြီး စာရွက်စာတမ်း၏ ဓာတ်ပုံများ ထည့်ပါ။';

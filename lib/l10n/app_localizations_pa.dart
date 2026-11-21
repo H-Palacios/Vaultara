@@ -716,12 +716,6 @@ class AppLocalizationsPa extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'ਇਸਦੇ ਨਾਲ ਹੀ ਅਜਿਹੇ ਰਿਮਾਈਂਡਰ ਜੋ ਡੈੱਡਲਾਈਨ ਨੇੜੇ ਆਉਣ \'ਤੇ ਹੋਰ ਵਾਰ-ਵਾਰ ਆਉਂਦੇ ਹਨ';
 
   @override
-  String get editorReminderLabel => 'ਰਿਮਾਈਂਡਰ';
-
-  @override
-  String get editorReminderSelectOptional => 'ਰਿਮਾਈਂਡਰ ਚੁਣੋ (ਇੱਛਿਕ)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'ਮਿਆਦ ਤੋਂ $days ਦਿਨ ਪਹਿਲਾਂ';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get tutorialSampleRecordNotes => '4728 ਨਾਲ ਖਤਮ ਹੋਣ ਵਾਲਾ ਕਾਰਡ। ਮੁੱਖ ਖਰਚੇ ਦਾ ਕਾਰਡ। ਮੁੱਖ ਚਾਲੂ ਖਾਤੇ ਨਾਲ ਜੋੜਿਆ ਗਿਆ।';
 
   @override
-  String get tutorialSetReminderField => 'ਕਿਸੇ ਵੀ ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ ਪਹਿਲਾਂ ਸੂਚਨਾ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਇੱਕ ਰਿਮਾਈਂਡਰ ਸੈੱਟ ਕਰੋ। ਵਿਕਲਪ ਵੇਖਣ ਲਈ ਰਿਮਾਈਂਡਰ ਫੀਲਡ \'ਤੇ ਟੈਪ ਕਰੋ।';
-
-  @override
   String get reminderTitle => 'ਰਿਮਾਈਂਡਰ';
-
-  @override
-  String get reminderFreeSection => 'ਮੁਫ਼ਤ';
-
-  @override
-  String get reminderPremiumSection => 'ਪ੍ਰੀਮੀਅਮ';
 
   @override
   String get reminderNone => 'ਕੋਈ ਰਿਮਾਈਂਡਰ ਨਹੀਂ';
@@ -939,45 +924,6 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'ਕਸਟਮ ਦਿਨ ਦਰਜ ਕਰੋ';
-
-  @override
-  String get reminderCascadeTitle => 'ਕੈਸਕੇਡ ਰਿਮਾਈਂਡਰ';
-
-  @override
-  String get reminderCascadeSubtitle => 'ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ ਪਹਿਲਾਂ ਕਈ ਸੂਚਨਾਵਾਂ ਪ੍ਰਾਪਤ ਕਰੋ';
-
-  @override
-  String get reminderPremiumRequired => 'ਇਹ ਵਿਸ਼ੇਸ਼ਤਾ ਪ੍ਰੀਮੀਅਮ ਉਪਭੋਗਤਾਵਾਂ ਲਈ ਉਪਲਬਧ ਹੈ।';
-
-  @override
-  String get reminderUpgradeCta => 'ਪ੍ਰੀਮੀਅਮ ਵਿੱਚ ਅੱਪਗ੍ਰੇਡ ਕਰੋ';
-
-  @override
-  String get tutorialReminderFreeSection => 'ਇਹ ਰਿਮਾਈਂਡਰ ਵਿਕਲਪ ਸਾਰਿਆਂ ਲਈ ਉਪਲਬਧ ਹਨ। ਸੂਚਨਾ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਇੱਕ ਚੁਣੋ।';
-
-  @override
-  String get tutorialReminderPremiumSection => 'ਇਹ ਵਿਕਲਪ ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ ਪਹਿਲਾਂ ਵਧੇਰੇ ਸਹੀ ਸਮੇਂ ਲਈ ਪ੍ਰੀਮੀਅਮ ਨਾਲ ਅਨਲੌਕ ਹੁੰਦੇ ਹਨ।';
-
-  @override
-  String get tutorialReminderApplyFree => 'ਆਪਣੀ ਰਿਮਾਈਂਡਰ ਚੋਣ ਸੰਭਾਲਣ ਲਈ ਲਾਗੂ ਕਰੋ \'ਤੇ ਟੈਪ ਕਰੋ।';
-
-  @override
-  String get tutorialReminderPresets => 'ਕਿਸੇ ਵੀ ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ ਪਹਿਲਾਂ ਸੂਚਿਤ ਕੀਤੇ ਜਾਣ ਲਈ ਇੱਕ ਪ੍ਰੀਸੈੱਟ ਸਮਾਂ ਚੁਣੋ।';
-
-  @override
-  String get tutorialReminderCustomDays => 'ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ ਪਹਿਲਾਂ ਆਪਣੀ ਸਹੀ ਦਿਨਾਂ ਦੀ ਗਿਣਤੀ ਸੈੱਟ ਕਰੋ।';
-
-  @override
-  String get tutorialReminderApplyPremium => 'ਆਪਣੀ ਰਿਮਾਈਂਡਰ ਚੋਣ ਸੰਭਾਲਣ ਲਈ ਲਾਗੂ ਕਰੋ \'ਤੇ ਟੈਪ ਕਰੋ।';
-
-  @override
-  String get tutorialReminderCascadeFree => 'ਕੈਸਕੇਡ ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ ਪਹਿਲਾਂ ਕਈ ਸੂਚਨਾਵਾਂ ਭੇਜਦਾ ਹੈ। ਪ੍ਰੀਮੀਅਮ ਨਾਲ ਉਪਲਬਧ।';
-
-  @override
-  String get tutorialReminderCascadePremium => 'ਕੈਸਕੇਡ ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਪੁੱਗਣ ਤੋਂ ਪਹਿਲਾਂ ਕਈ ਸੂਚਨਾਵਾਂ ਭੇਜਦਾ ਹੈ।';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara ਉਹ ਚੀਜ਼ਾਂ ਹਾਈਲਾਈਟ ਕਰਦਾ ਹੈ ਜਿਨ੍ਹਾਂ \'ਤੇ ਤੁਹਾਡਾ ਧਿਆਨ ਚਾਹੀਦਾ ਹੈ: ਜਲਦੀ ਖਤਮ ਹੋਣ ਵਾਲੇ ਰਿਕਾਰਡ, ਗੁੰਮ ਰਿਮਾਈਂਡਰ, ਅਤੇ ਆ ਰਹੇ ਵਿਅਸਤ ਹਫ਼ਤੇ।';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'ਸੁਣਨਾ ਪਸੰਦ ਹੈ? ਆਪਣੀਆਂ ਜਾਣਕਾਰੀਆਂ ਉੱਚੀ ਆਵਾਜ਼ ਵਿੱਚ ਪੜ੍ਹਵਾਓ, ਅਤੇ ਕਿਸੇ ਵੀ ਵੇਲੇ ਰੋਕੋ।';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'ਰਿਮਾਈਂਡਰ ਕਿਵੇਂ ਕੰਮ ਕਰਦੇ ਹਨ ਇਹ ਵੇਖਣ ਲਈ ਰਿਮਾਈਂਡਰ ਖੇਤਰ \'ਤੇ ਟੈਪ ਕਰੋ।';
 
   @override
   String get tutorialAddRecordReminderSolo => 'ਰਿਮਾਈਂਡਰ ਮਿਆਦ ਖ਼ਤਮ ਹੋਣ ਦੀ ਤਾਰੀਖ਼ ਅਤੇ ਨਵੀਨੀਕਰਨ ਦੇ ਸਮੇਂ ਤੋਂ ਗਿਣੇ ਜਾਂਦੇ ਹਨ। ਤੁਸੀਂ ਇਨ੍ਹਾਂ ਨੂੰ ਇੱਥੇ ਬੰਦ ਕਰ ਸਕਦੇ ਹੋ।';
@@ -3512,9 +3455,6 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => '“ਹੋਰ ਵੇਰਵੇ” ਵਿੱਚ ਵਾਧੂ ਚੀਜ਼ਾਂ ਹਨ: ਨੋਟਸ, ਦੁਹਰਾਓ, ਨਵੀਨੀਕਰਨ ਦਾ ਸਮਾਂ, ਰਿਕਾਰਡ ਕਿਸਦਾ ਹੈ, ਲੌਕ, ਬਟੂਆ ਅਤੇ ਫ਼ੋਟੋਆਂ। ਇਸਨੂੰ ਉਦੋਂ ਹੀ ਖੋਲ੍ਹੋ ਜਦੋਂ ਲੋੜ ਹੋਵੇ।';
-
-  @override
-  String get tutorialAddRecordRepeat => '“ਦੁਹਰਾਓ” ਸਬਸਕ੍ਰਿਪਸ਼ਨਾਂ ਲਈ ਤਾਰੀਖ ਨੂੰ ਅੱਗੇ ਵਧਾ ਦਿੰਦਾ ਹੈ। “ਨਵੀਨੀਕਰਨ ਵਿੱਚ ਲੱਗਣ ਵਾਲਾ ਸਮਾਂ” Vaultara ਨੂੰ ਦੱਸਦਾ ਹੈ ਕਿ ਨਵੀਨੀਕਰਨ ਵਿੱਚ ਕਿੰਨਾ ਸਮਾਂ ਲੱਗਦਾ ਹੈ, ਤਾਂ ਜੋ ਰਿਮਾਈਂਡਰ ਕਾਫ਼ੀ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਹੋਣ।';
 
   @override
   String get tutorialAddRecordProtect => 'ਕਿਸੇ ਰਿਕਾਰਡ ਨੂੰ ਵਿਖਾਉਣ ਤੋਂ ਪਹਿਲਾਂ ਤੁਹਾਡੀ ਫਿੰਗਰਪ੍ਰਿੰਟ ਜਾਂ ਸਕ੍ਰੀਨ ਲੌਕ ਮੰਗਣ ਲਈ ਉਸਨੂੰ ਲੌਕ ਕਰੋ। ਕਾਰਡਾਂ ਨੂੰ “ਮੇਰੇ ਬਟੂਏ ਵਿੱਚ” ਵਜੋਂ ਚਿੰਨ੍ਹਿਤ ਕਰੋ, ਅਤੇ ਦਸਤਾਵੇਜ਼ ਦੀਆਂ ਫ਼ੋਟੋਆਂ ਜੋੜੋ।';

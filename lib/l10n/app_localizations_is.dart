@@ -716,12 +716,6 @@ class AppLocalizationsIs extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Auk þess áminningar sem verða tíðari þegar fresturinn nálgast';
 
   @override
-  String get editorReminderLabel => 'Áminning';
-
-  @override
-  String get editorReminderSelectOptional => 'Veldu áminningu (valkvætt)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dögum fyrir fyrningu';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Kort endar á 4728. Aðal eyðslukort. Tengt við aðalreikning.';
 
   @override
-  String get tutorialSetReminderField => 'Stilltu áminningu til að fá tilkynningu áður en færsla rennur út. Snertu Áminningarreitinn til að sjá valkostina.';
-
-  @override
   String get reminderTitle => 'Áminning';
-
-  @override
-  String get reminderFreeSection => 'Ókeypis';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Engin áminning';
@@ -939,45 +924,6 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Sláðu inn sérsniðna daga';
-
-  @override
-  String get reminderCascadeTitle => 'Fossandi áminningar';
-
-  @override
-  String get reminderCascadeSubtitle => 'Fáðu margar tilkynningar áður en færsla rennur út';
-
-  @override
-  String get reminderPremiumRequired => 'Þessi eiginleiki er í boði fyrir Premium notendur.';
-
-  @override
-  String get reminderUpgradeCta => 'Uppfæra í Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Þessir áminningarvalkostir eru í boði fyrir alla. Veldu einn til að fá tilkynningu.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Þessir valkostir opnast með Premium fyrir nákvæmari tímasetningu fyrir fyrningu.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Ýttu á Beita til að vista áminningarval þitt.';
-
-  @override
-  String get tutorialReminderPresets => 'Veldu forstilltan tíma til að fá tilkynningu áður en færsla rennur út.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Stilltu þinn eigin nákvæma fjölda daga fyrir fyrningu.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Ýttu á Beita til að vista áminningarval þitt.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Foss sendir margar tilkynningar áður en færsla rennur út. Í boði með Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Foss sendir margar tilkynningar áður en færsla rennur út.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara sýnir hvað þarfnast athygli þinnar: færslur sem renna út bráðum, vantandi áminningar og annasamar vikur framundan.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Viltu frekar hlusta? Láttu lesa innsýn þína upphátt og gerðu hlé hvenær sem er.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Ýttu á áminningarreitinn til að sjá hvernig áminningar virka.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Áminningar eru reiknaðar út frá gildislokum og Endurnýjunartíma. Þú getur slökkt á þeim hér.';
@@ -3511,9 +3454,6 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Nánari upplýsingar geymir aukaatriðin: athugasemdir, endurtekningu, endurnýjunartíma, hver á færsluna, læsingu, veski og myndir. Opnaðu það aðeins þegar þú þarft.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Endurtekning færir dagsetninguna áfram fyrir áskriftir. Endurnýjun tekur um það bil segir Vaultara hve langan tíma endurnýjun tekur, svo áminningar byrji nógu snemma.';
 
   @override
   String get tutorialAddRecordProtect => 'Læstu færslu til að biðja um fingrafar eða skjálás áður en hún er sýnd. Merktu kort sem Í veskinu mínu og bættu við myndum af skjalinu.';

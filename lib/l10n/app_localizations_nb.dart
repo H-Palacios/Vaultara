@@ -716,12 +716,6 @@ class AppLocalizationsNb extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Pluss påminnelser som blir hyppigere etter hvert som fristen nærmer seg';
 
   @override
-  String get editorReminderLabel => 'Påminnelse';
-
-  @override
-  String get editorReminderSelectOptional => 'Velg påminnelse (valgfritt)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dager før utløp';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsNb extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Kort som slutter på 4728. Primært forbrukerkort. Koblet til hovedbrukskonto.';
 
   @override
-  String get tutorialSetReminderField => 'Sett opp en påminnelse for å motta et varsel før en oppføring utløper. Trykk på Påminnelse-feltet for å se alternativene.';
-
-  @override
   String get reminderTitle => 'Påminnelse';
-
-  @override
-  String get reminderFreeSection => 'Gratis';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Ingen påminnelse';
@@ -939,45 +924,6 @@ class AppLocalizationsNb extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Angi egendefinerte dager';
-
-  @override
-  String get reminderCascadeTitle => 'Kaskadepåminnelser';
-
-  @override
-  String get reminderCascadeSubtitle => 'Motta flere varsler før en oppføring utløper';
-
-  @override
-  String get reminderPremiumRequired => 'Denne funksjonen er tilgjengelig for Premium-brukere.';
-
-  @override
-  String get reminderUpgradeCta => 'Oppgrader til Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Disse påminnelsesalternativene er tilgjengelige for alle. Velg ett for å motta et varsel.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Disse alternativene låses opp med Premium for mer presis timing før utløp.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Trykk på Bruk for å lagre påminnelsesvalget ditt.';
-
-  @override
-  String get tutorialReminderPresets => 'Velg et forhåndsinnstilt tidspunkt for å bli varslet før en oppføring utløper.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Angi ditt eget nøyaktige antall dager før utløp.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Trykk på Bruk for å lagre påminnelsesvalget ditt.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Kaskade sender flere varsler før en oppføring utløper. Tilgjengelig med Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Kaskade sender flere varsler før en oppføring utløper.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara fremhever hva som trenger din oppmerksomhet: oppføringer som snart utløper, manglende påminnelser og travle uker fremover.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Foretrekker du å lytte? Få innsiktene dine lest opp, og sett på pause når som helst.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Trykk på påminnelsesfeltet for å se hvordan påminnelser fungerer.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Påminnelser regnes ut fra utløpsdatoen og Fornyelsestid. Du kan slå dem av her.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Flere detaljer inneholder ekstrafunksjonene: notater, gjentas, fornyelsestid, hvem oppføringen tilhører, lås, lommebok og bilder. Åpne den bare når du trenger det.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Gjentas flytter datoen fremover for abonnementer. Fornyelse tar omtrent forteller Vaultara hvor lang tid fornyelsen tar, så påminnelsene starter tidlig nok.';
 
   @override
   String get tutorialAddRecordProtect => 'Lås en oppføring for å be om fingeravtrykk eller skjermlås før den vises. Merk kort med I lommeboken min, og legg til bilder av dokumentet.';

@@ -716,12 +716,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'بالإضافة إلى تذكيرات تزداد تكرارًا مع اقتراب الموعد النهائي';
 
   @override
-  String get editorReminderLabel => 'تذكير';
-
-  @override
-  String get editorReminderSelectOptional => 'حدد تذكير (اختياري)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'قبل انتهاء الصلاحية بـ$days أيام';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'بطاقة تنتهي 4728. بطاقة الإنفاق الأساسية. مرتبطة بالحساب الجاري الرئيسي.';
 
   @override
-  String get tutorialSetReminderField => 'قم بتعيين تذكير لتلقي إشعار قبل انتهاء صلاحية أي سجل. اضغط على حقل التذكير لرؤية الخيارات.';
-
-  @override
   String get reminderTitle => 'تذكير';
-
-  @override
-  String get reminderFreeSection => 'مجاني';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'لا يوجد تذكير';
@@ -942,45 +927,6 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'أدخل أيام مخصصة';
-
-  @override
-  String get reminderCascadeTitle => 'تذكيرات التسلسل';
-
-  @override
-  String get reminderCascadeSubtitle => 'تلقي إشعارات متعددة قبل انتهاء صلاحية السجل';
-
-  @override
-  String get reminderPremiumRequired => 'هذه الميزة متاحة لمستخدمي Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'الترقية إلى Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'خيارات التذكير هذه متاحة للجميع. اختر واحدة لتلقي إشعار.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'هذه الخيارات تفتح مع Premium للحصول على توقيت أكثر دقة قبل انتهاء الصلاحية.';
-
-  @override
-  String get tutorialReminderApplyFree => 'اضغط على «تطبيق» لحفظ اختيار التذكير.';
-
-  @override
-  String get tutorialReminderPresets => 'اختر وقتًا محددًا مسبقًا لتلقي إشعار قبل انتهاء صلاحية أي سجل.';
-
-  @override
-  String get tutorialReminderCustomDays => 'قم بتعيين عدد الأيام الخاصة بك بالضبط قبل انتهاء الصلاحية.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'اضغط على «تطبيق» لحفظ اختيار التذكير.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'التسلسل يرسل إشعارات متعددة قبل انتهاء صلاحية السجل. متوفر مع Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'التسلسل يرسل إشعارات متعددة قبل انتهاء صلاحية السجل.';
-
-  @override
   String get tutorialInsightsSmartCard => 'يُبرز Vaultara ما يحتاج إلى انتباهك: السجلات التي تنتهي صلاحيتها قريبًا، والتذكيرات المفقودة، والأسابيع المزدحمة القادمة.';
 
   @override
@@ -994,9 +940,6 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'تفضّل الاستماع؟ استمع إلى رؤاك بصوت عالٍ، وأوقفها مؤقتًا في أي وقت.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'اضغط على حقل التذكير لمعرفة كيفية عمل التذكيرات.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'تُحسب التذكيرات من تاريخ الانتهاء ومدة التجديد. يمكنك إيقافها من هنا.';
@@ -3623,9 +3566,6 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'مزيد من التفاصيل فيه الإضافات: الملاحظات والتكرار ووقت التجديد ولمن هذا السجل والقفل والمحفظة والصور. افتحه عند الحاجة فقط.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'التكرار ينقل التاريخ إلى الأمام للاشتراكات. يستغرق التجديد نحو يخبر Vaultara بالمدة التي يستغرقها التجديد، لتبدأ التذكيرات مبكرًا بما يكفي.';
 
   @override
   String get tutorialAddRecordProtect => 'استخدم قفل هذا السجل لطلب بصمتك أو قفل الشاشة قبل عرض السجل. علّم البطاقات بخيار في محفظتي، وأضف صورًا للمستند.';

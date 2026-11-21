@@ -716,12 +716,6 @@ class AppLocalizationsYo extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Pẹ̀lú àwọn olùránnilétí tí ń yára dé bí ọjọ́ ìparí ṣe ń súnmọ́';
 
   @override
-  String get editorReminderLabel => 'Iranti';
-
-  @override
-  String get editorReminderSelectOptional => 'Yan iranti (ayanfẹ́)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Ọjọ́ $days ṣáájú ipari';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Kaadi ti o pari ni 4728. Kaadi akọkọ fun inawo. So mọ akọọlẹ akọkọ.';
 
   @override
-  String get tutorialSetReminderField => 'Ṣeto iranti lati gba iwifunni ṣaaju ki eyikeyi igbasilẹ pari. Tẹ aaye Iranti lati wo awọn aṣayan.';
-
-  @override
   String get reminderTitle => 'Iranti';
-
-  @override
-  String get reminderFreeSection => 'Ọfẹ';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Ko si iranti';
@@ -939,45 +924,6 @@ class AppLocalizationsYo extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Tẹ awọn ọjọ aṣa';
-
-  @override
-  String get reminderCascadeTitle => 'Awọn iranti alẹsẹsẹ';
-
-  @override
-  String get reminderCascadeSubtitle => 'Gba awọn iwifunni pupọ ṣaaju ki igbasilẹ to pari';
-
-  @override
-  String get reminderPremiumRequired => 'Ẹya yii wa fun awọn olumulo Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Ṣe igbesoke si Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Awọn aṣayan iranti wọnyi wa fun gbogbo eniyan. Yan ọkan lati gba iwifunni.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Awọn aṣayan wọnyi ṣii pẹlu Premium fun akoko deede diẹ sii ṣaaju ipari.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Tẹ Waye lati fi yiyan iranti rẹ pamọ.';
-
-  @override
-  String get tutorialReminderPresets => 'Yan akoko ti a ti ṣeto tẹlẹ lati gba iwifunni ṣaaju ki igbasilẹ eyikeyi to pari.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Ṣeto nọmba deede ti ọjọ rẹ ṣaaju ipari.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Tẹ Waye lati fi yiyan iranti rẹ pamọ.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Awọn iranti alẹsẹsẹ n fi awọn iwifunni pupọ ranṣẹ ṣaaju ki igbasilẹ to pari. Wa pẹlu Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Awọn iranti alẹsẹsẹ n fi awọn iwifunni pupọ ranṣẹ ṣaaju ki igbasilẹ to pari.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara ń tọka si ohun tí ó nílò akiyesi rẹ: awọn igbasilẹ tí yóò pari láìpẹ, awọn iranti tí ó sonu, àti awọn ọsẹ̀ tí ń bọ tí ó kúnnú iṣẹ́.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'O fẹ́ láti tẹ́tí sí i? Jẹ́ kí a ka àwọn ìjìnlẹ̀ rẹ sókè, kí o sì dúró sí i nígbàkúùgbà.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Tẹ àyè ìránnilétí láti rí bí àwọn ìránnilétí ṣe ń ṣiṣẹ́.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'A ń ṣírò àwọn iranti láti ọjọ́ ìparí àti Àkókò isọdọtun. O lè pa wọ́n níbí.';
@@ -3492,9 +3435,6 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Àlàyé síwájú sí i ní àwọn àfikún nínú: àwọn àkọsílẹ̀, ìtúnṣẹlẹ̀, àkókò isọdọtun, ti ẹni tí igbasilẹ náà jẹ́, títì, àpamọ́wọ́ àti àwọn fọ́tò. Ṣí i nígbà tí o bá nílò rẹ̀ nìkan.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Ìtúnṣẹlẹ̀ máa ń gbé ọjọ́ síwájú fún àwọn ìforúkọsílẹ̀. Isọdọtun máa ń gba nǹkan bí ń sọ fún Vaultara bí isọdọtun ṣe gùn tó, kí àwọn iranti lè bẹ̀rẹ̀ ní kùtùkùtù tó.';
 
   @override
   String get tutorialAddRecordProtect => 'Tì igbasilẹ kan kí ó béèrè àtẹ̀ka ọwọ́ rẹ tàbí títì ojú-ìbòjú kí ó tó hàn. Samisi àwọn káàdì bí Nínú àpamọ́wọ́ mi, kí o sì ṣafikun àwọn fọ́tò ìwé náà.';

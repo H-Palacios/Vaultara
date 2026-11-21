@@ -716,12 +716,6 @@ class AppLocalizationsLv extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Kā arī atgādinājumi, kas kļūst biežāki, tuvojoties termiņam';
 
   @override
-  String get editorReminderLabel => 'Atgādinājums';
-
-  @override
-  String get editorReminderSelectOptional => 'Izvēlieties atgādinājumu (pēc izvēles)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dienas pirms derīguma';
   }
@@ -911,16 +905,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Karte beidzas ar 4728. Galvenā tēriņu karte. Saistīta ar galveno norēķinu kontu.';
 
   @override
-  String get tutorialSetReminderField => 'Iestatiet atgādinājumu, lai saņemtu paziņojumu pirms jebkura ieraksta derīguma termiņa beigām. Pieskarieties Atgādinājuma laukam, lai redzētu iespējas.';
-
-  @override
   String get reminderTitle => 'Atgādinājums';
-
-  @override
-  String get reminderFreeSection => 'Bezmaksas';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Nav atgādinājuma';
@@ -940,45 +925,6 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Ievadiet pielāgotas dienas';
-
-  @override
-  String get reminderCascadeTitle => 'Kaskādes atgādinājumi';
-
-  @override
-  String get reminderCascadeSubtitle => 'Saņemiet vairākus paziņojumus pirms ieraksta derīguma termiņa beigām';
-
-  @override
-  String get reminderPremiumRequired => 'Šī funkcija ir pieejama Premium lietotājiem.';
-
-  @override
-  String get reminderUpgradeCta => 'Jaunināt uz Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Šīs atgādinājumu opcijas pieejamas visiem. Izvēlieties vienu, lai saņemtu paziņojumu.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Šīs opcijas atbloķējas ar Premium precīzākam laikam pirms derīguma termiņa.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Pieskarieties Piemērot, lai saglabātu atgādinājuma izvēli.';
-
-  @override
-  String get tutorialReminderPresets => 'Izvēlieties iepriekš iestatītu laiku, lai saņemtu paziņojumu pirms jebkura ieraksta derīguma termiņa beigām.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Iestatiet savu precīzu dienu skaitu pirms derīguma termiņa.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Pieskarieties Piemērot, lai saglabātu atgādinājuma izvēli.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Kaskāde sūta vairākus paziņojumus pirms ieraksta derīguma termiņa beigām. Pieejams ar Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Kaskāde sūta vairākus paziņojumus pirms ieraksta derīguma termiņa beigām.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara izceļ to, kas prasa jūsu uzmanību: drīz beigsies ieraksti, trūkstoši atgādinājumi un gaidāmās aizņemtās nedēļas.';
 
   @override
@@ -992,9 +938,6 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Vai labāk klausīties? Ļaujiet saviem ieskatiem tikt nolasītiem skaļi un apturiet jebkurā brīdī.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Pieskarieties atgādinājuma laukam, lai redzētu, kā darbojas atgādinājumi.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Atgādinājumi tiek aprēķināti no derīguma beigu datuma un Atjaunošanas laika. Šeit tos varat izslēgt.';
@@ -3542,9 +3485,6 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Vairāk informācijas satur papildu iespējas: piezīmes, atkārtošanu, atjaunošanas laiku, kam ieraksts pieder, bloķēšanu, maku un foto. Atveriet to tikai tad, kad tas nepieciešams.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Atkārtošana pārbīda datumu uz priekšu abonementiem. Atjaunošana aizņem aptuveni norāda Vaultara, cik ilgi aizņem atjaunošana, lai atgādinājumi sāktos pietiekami agri.';
 
   @override
   String get tutorialAddRecordProtect => 'Bloķējiet ierakstu, lai pirms tā parādīšanas tiktu prasīts pirksta nospiedums vai ekrāna bloķēšana. Atzīmējiet kartes kā Manā makā un pievienojiet dokumenta foto.';

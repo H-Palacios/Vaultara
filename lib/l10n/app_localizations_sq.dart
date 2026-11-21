@@ -716,12 +716,6 @@ class AppLocalizationsSq extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Plus kujtesa që bëhen më të shpeshta sa më shumë afrohet afati';
 
   @override
-  String get editorReminderLabel => 'Kujtesa';
-
-  @override
-  String get editorReminderSelectOptional => 'Zgjidhni një kujtesë (opsionale)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days ditë para skadimit';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Karta që mbaron me 4728. Karta kryesore e shpenzimeve. E lidhur me llogarinë rrjedhëse kryesore.';
 
   @override
-  String get tutorialSetReminderField => 'Vendosni një kujtesë për të marrë njoftim para se çdo regjistrim të skadojë. Prekni fushën Kujtesa për të parë opsionet.';
-
-  @override
   String get reminderTitle => 'Kujtesa';
-
-  @override
-  String get reminderFreeSection => 'Falas';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Pa kujtesë';
@@ -939,45 +924,6 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Shkruani ditë të personalizuara';
-
-  @override
-  String get reminderCascadeTitle => 'Kujtesa kaskadë';
-
-  @override
-  String get reminderCascadeSubtitle => 'Merrni njoftime të shumëfishta para se një regjistrim të skadojë';
-
-  @override
-  String get reminderPremiumRequired => 'Kjo veçori është e disponueshme për përdoruesit Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Kalo në Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Këto opsione kujtese janë të disponueshme për të gjithë. Zgjidhni një për të marrë njoftim.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Këto opsione zhbllokohen me Premium për kohëzim më të saktë para skadimit.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Prekni Zbato për të ruajtur zgjedhjen tuaj të kujtesës.';
-
-  @override
-  String get tutorialReminderPresets => 'Zgjidhni një kohë të paracaktuar për t\'u njoftuar para se çdo regjistrim të skadojë.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Vendosni numrin tuaj të saktë të ditëve para skadimit.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Prekni Zbato për të ruajtur zgjedhjen tuaj të kujtesës.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Kaskada dërgon njoftime të shumëfishta para se një regjistrim të skadojë. E disponueshme me Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Kaskada dërgon njoftime të shumëfishta para se një regjistrim të skadojë.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara nxjerr në pah atë që kërkon vëmendjen tuaj: regjistrime që skadojnë së shpejti, kujtesa që mungojnë dhe javë të ngarkuara në vijim.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Preferoni të dëgjoni? Lërini analizat tuaja të lexohen me zë dhe ndaloni në çdo moment.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Prekni fushën e kujtesës për të parë si funksionojnë kujtesat.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Kujtesat llogariten nga data e skadimit dhe Koha e rinovimit. Mund t\'i çaktivizoni këtu.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Më shumë detaje përmban gjërat shtesë: shënime, përsëritje, kohën e rinovimit, i kujt është regjistrimi, kyçjen, portofolin dhe fotot. Hapeni vetëm kur ju duhet.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Përsëritet e çon datën përpara për abonimet. Rinovimi zgjat afërsisht i tregon Vaultara-s sa zgjat rinovimi, që kujtesat të nisin sa duhet herët.';
 
   @override
   String get tutorialAddRecordProtect => 'Kyçeni një regjistrim që t\'ju kërkohet shenja e gishtit ose kyçja e ekranit para se të shfaqet. Shënoni kartat si Në portofolin tim dhe shtoni foto të dokumentit.';

@@ -716,12 +716,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Además de recordatorios que se vuelven más frecuentes a medida que se acerca la fecha límite';
 
   @override
-  String get editorReminderLabel => 'Recordatorio';
-
-  @override
-  String get editorReminderSelectOptional => 'Selecciona un recordatorio (opcional)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days días antes del vencimiento';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Tarjeta terminada en 4728. Tarjeta principal de gasto. Vinculada a la cuenta corriente principal.';
 
   @override
-  String get tutorialSetReminderField => 'Configura un recordatorio para recibir una notificación antes de que venza cualquier registro. Toca el campo Recordatorio para ver las opciones.';
-
-  @override
   String get reminderTitle => 'Recordatorio';
-
-  @override
-  String get reminderFreeSection => 'Gratis';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Sin recordatorio';
@@ -939,45 +924,6 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Introduce días personalizados';
-
-  @override
-  String get reminderCascadeTitle => 'Recordatorios en cascada';
-
-  @override
-  String get reminderCascadeSubtitle => 'Recibe múltiples notificaciones antes de que venza un registro';
-
-  @override
-  String get reminderPremiumRequired => 'Esta función está disponible para usuarios Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Actualizar a Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Estas opciones de recordatorio están disponibles para todos. Elige una para recibir una notificación.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Estas opciones se desbloquean con Premium para un tiempo más preciso antes del vencimiento.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Toca Aplicar para guardar tu elección de recordatorio.';
-
-  @override
-  String get tutorialReminderPresets => 'Elige un tiempo predefinido para ser notificado antes de que venza cualquier registro.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Establece tu propio número exacto de días antes del vencimiento.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Toca Aplicar para guardar tu elección de recordatorio.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'La cascada envía múltiples notificaciones antes de que venza un registro. Disponible con Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'La cascada envía múltiples notificaciones antes de que venza un registro.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara destaca lo que necesita tu atención: registros que caducan pronto, recordatorios que faltan y semanas ocupadas por venir.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get tutorialAudio => '¿Prefieres escuchar? Deja que te lean tus estadísticas en voz alta y pausa cuando quieras.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Toca el campo de recordatorio para ver cómo funcionan los recordatorios.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Los recordatorios se calculan a partir de la fecha de vencimiento y el Tiempo de renovación. Aquí puedes desactivarlos.';
@@ -3527,9 +3470,6 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Más detalles guarda los extras: notas, repetición, tiempo de renovación, de quién es el registro, bloqueo, cartera y fotos. Ábrelo solo cuando lo necesites.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Se repite mueve la fecha hacia adelante en las suscripciones. La renovación tarda unos le dice a Vaultara cuánto tarda renovar, para que los recordatorios empiecen con tiempo suficiente.';
 
   @override
   String get tutorialAddRecordProtect => 'Bloquea un registro para que pida tu huella o el bloqueo de pantalla antes de mostrarlo. Marca las tarjetas como En mi cartera y añade fotos del documento.';

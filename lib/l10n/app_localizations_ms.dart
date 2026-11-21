@@ -716,12 +716,6 @@ class AppLocalizationsMs extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Ditambah peringatan yang menjadi lebih kerap apabila tarikh akhir semakin hampir';
 
   @override
-  String get editorReminderLabel => 'Peringatan';
-
-  @override
-  String get editorReminderSelectOptional => 'Pilih peringatan (pilihan)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days hari sebelum luput';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Kad berakhir dengan 4728. Kad perbelanjaan utama. Dipautkan ke akaun semasa utama.';
 
   @override
-  String get tutorialSetReminderField => 'Tetapkan peringatan untuk menerima pemberitahuan sebelum sebarang rekod tamat tempoh. Ketik medan Peringatan untuk melihat pilihan.';
-
-  @override
   String get reminderTitle => 'Peringatan';
-
-  @override
-  String get reminderFreeSection => 'Percuma';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Tiada peringatan';
@@ -938,45 +923,6 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Masukkan hari tersuai';
-
-  @override
-  String get reminderCascadeTitle => 'Peringatan mengalir';
-
-  @override
-  String get reminderCascadeSubtitle => 'Terima beberapa pemberitahuan sebelum rekod tamat tempoh';
-
-  @override
-  String get reminderPremiumRequired => 'Ciri ini tersedia untuk pengguna Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Naik taraf ke Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Pilihan peringatan ini tersedia untuk semua orang. Pilih satu untuk menerima pemberitahuan.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Pilihan ini dibuka dengan Premium untuk masa yang lebih tepat sebelum tamat tempoh.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Ketik Guna untuk menyimpan pilihan peringatan anda.';
-
-  @override
-  String get tutorialReminderPresets => 'Pilih masa pratetap untuk diberi tahu sebelum sebarang rekod tamat tempoh.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Tetapkan bilangan hari tepat anda sendiri sebelum tamat tempoh.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Ketik Guna untuk menyimpan pilihan peringatan anda.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Peringatan mengalir menghantar beberapa pemberitahuan sebelum rekod tamat tempoh. Tersedia dengan Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Peringatan mengalir menghantar beberapa pemberitahuan sebelum rekod tamat tempoh.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara menyerlahkan perkara yang memerlukan perhatian anda: rekod yang akan tamat tempoh, peringatan yang hilang, dan minggu sibuk yang akan datang.';
 
   @override
@@ -990,9 +936,6 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Lebih suka mendengar? Biarkan wawasan anda dibacakan dengan kuat, dan jeda bila-bila masa.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Ketik medan peringatan untuk melihat cara peringatan berfungsi.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Peringatan dikira daripada tarikh tamat tempoh dan Masa pembaharuan. Anda boleh mematikannya di sini.';
@@ -3491,9 +3434,6 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Butiran lanjut mengandungi perkara tambahan: nota, ulangan, masa pembaharuan, rekod siapa, kunci, dompet dan gambar. Buka hanya apabila anda perlu.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Ulangan menggerakkan tarikh ke hadapan untuk langganan. Pembaharuan mengambil masa kira-kira memberitahu Vaultara berapa lama pembaharuan mengambil masa, supaya peringatan bermula cukup awal.';
 
   @override
   String get tutorialAddRecordProtect => 'Kunci rekod untuk meminta cap jari atau kunci skrin anda sebelum ia dipaparkan. Tandakan kad sebagai Dalam dompet saya, dan tambah gambar dokumen.';

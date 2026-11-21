@@ -716,12 +716,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Além de lembretes que se tornam mais frequentes à medida que o prazo se aproxima';
 
   @override
-  String get editorReminderLabel => 'Lembrete';
-
-  @override
-  String get editorReminderSelectOptional => 'Selecionar lembrete (opcional)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dias antes da expiração';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Cartão terminado em 4728. Cartão principal de despesas. Ligado à conta corrente principal.';
 
   @override
-  String get tutorialSetReminderField => 'Configure um lembrete para receber uma notificação antes que qualquer registo expire. Toque no campo Lembrete para ver as opções.';
-
-  @override
   String get reminderTitle => 'Lembrete';
-
-  @override
-  String get reminderFreeSection => 'Gratuito';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Sem lembrete';
@@ -939,45 +924,6 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Introduza dias personalizados';
-
-  @override
-  String get reminderCascadeTitle => 'Lembretes em cascata';
-
-  @override
-  String get reminderCascadeSubtitle => 'Receba várias notificações antes de um registo caducar';
-
-  @override
-  String get reminderPremiumRequired => 'Esta funcionalidade está disponível para utilizadores Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Atualizar para Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Estas opções de lembrete estão disponíveis para todos. Escolha uma para receber uma notificação.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Estas opções ficam disponíveis com o Premium para escolher com mais precisão quando ser avisado antes da validade.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Toque em Aplicar para guardar a sua escolha de lembrete.';
-
-  @override
-  String get tutorialReminderPresets => 'Escolha um tempo predefinido para ser notificado antes da validade de qualquer registo.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Defina o seu próprio número exato de dias antes da validade.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Toque em Aplicar para guardar a sua escolha de lembrete.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'A cascata envia várias notificações antes de um registo caducar. Disponível com Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'A cascata envia várias notificações antes de um registo caducar.';
-
-  @override
   String get tutorialInsightsSmartCard => 'O Vaultara destaca o que precisa da sua atenção: registos a expirar em breve, lembretes em falta e semanas ocupadas à sua frente.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Prefere ouvir? Deixe que as suas análises sejam lidas em voz alta e pause quando quiser.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Toque no campo de lembrete para ver como funcionam os lembretes.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Os lembretes são calculados a partir da data de validade e do Tempo de renovação. Pode desativá-los aqui.';
@@ -3513,9 +3456,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Mais detalhes reúne os extras: notas, repete, tempo de renovação, de quem é o registo, bloqueio, carteira e fotos. Abra-o apenas quando precisar.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Repete avança a data nas subscrições. A renovação demora cerca de diz ao Vaultara quanto tempo demora renovar, para os lembretes começarem a tempo.';
 
   @override
   String get tutorialAddRecordProtect => 'Bloqueie um registo para pedir a sua impressão digital ou o bloqueio de ecrã antes de o mostrar. Marque os cartões como Na minha carteira e adicione fotos do documento.';

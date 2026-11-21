@@ -716,12 +716,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'さらに、期限が近づくにつれて頻度が高くなるリマインダー機能も搭載';
 
   @override
-  String get editorReminderLabel => 'リマインダー';
-
-  @override
-  String get editorReminderSelectOptional => 'リマインダーを選択（任意）';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '有効期限の$days日前';
   }
@@ -904,16 +898,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tutorialSampleRecordNotes => '4728で終わるカード。主な支出カード。メインの当座預金口座にリンク。';
 
   @override
-  String get tutorialSetReminderField => '記録の有効期限が切れる前に通知を受け取るためにリマインダーを設定します。オプションを表示するにはリマインダーフィールドをタップしてください。';
-
-  @override
   String get reminderTitle => 'リマインダー';
-
-  @override
-  String get reminderFreeSection => '無料';
-
-  @override
-  String get reminderPremiumSection => 'プレミアム';
 
   @override
   String get reminderNone => 'リマインダーなし';
@@ -932,45 +917,6 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'カスタム日数を入力';
-
-  @override
-  String get reminderCascadeTitle => 'カスケードリマインダー';
-
-  @override
-  String get reminderCascadeSubtitle => '記録の有効期限が切れる前に複数の通知を受け取る';
-
-  @override
-  String get reminderPremiumRequired => 'この機能はプレミアムユーザー向けです。';
-
-  @override
-  String get reminderUpgradeCta => 'プレミアムにアップグレード';
-
-  @override
-  String get tutorialReminderFreeSection => 'これらのリマインダーオプションは誰でも利用できます。通知を受け取るには1つ選択してください。';
-
-  @override
-  String get tutorialReminderPremiumSection => 'これらのオプションは、有効期限前のより正確なタイミングのためにプレミアムでロック解除されます。';
-
-  @override
-  String get tutorialReminderApplyFree => '適用をタップしてリマインダーの選択を保存します。';
-
-  @override
-  String get tutorialReminderPresets => '記録の有効期限が切れる前に通知を受け取るためのプリセット時間を選択します。';
-
-  @override
-  String get tutorialReminderCustomDays => '有効期限前の独自の正確な日数を設定します。';
-
-  @override
-  String get tutorialReminderApplyPremium => '適用をタップしてリマインダーの選択を保存します。';
-
-  @override
-  String get tutorialReminderCascadeFree => 'カスケードは記録の有効期限が切れる前に複数の通知を送信します。プレミアムで利用可能です。';
-
-  @override
-  String get tutorialReminderCascadePremium => 'カスケードは記録の有効期限が切れる前に複数の通知を送信します。';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultaraは注意が必要なものを強調表示します:間もなく期限切れになる記録、不足しているリマインダー、そして今後の忙しい週。';
 
   @override
@@ -984,9 +930,6 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get tutorialAudio => '聞く方がよいですか？インサイトを音声で読み上げ、いつでも一時停止できます。';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'リマインダーの仕組みを見るには、リマインダー欄をタップしてください。';
 
   @override
   String get tutorialAddRecordReminderSolo => 'リマインダーは有効期限と更新にかかる期間から計算されます。ここでオフにできます。';
@@ -3479,9 +3422,6 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'その他の詳細には、メモ、繰り返し、更新にかかる期間、誰の記録か、ロック、財布、写真があります。必要なときだけ開いてください。';
-
-  @override
-  String get tutorialAddRecordRepeat => '繰り返しは、サブスクリプションの日付を先に進めます。更新にかかる期間の目安は、更新にどれくらいかかるかをVaultaraに伝え、リマインダーが十分早く始まるようにします。';
 
   @override
   String get tutorialAddRecordProtect => '記録をロックすると、表示する前に指紋または画面ロックを求めます。カードは「財布に入れている」に設定し、書類の写真を追加しましょう。';

@@ -716,12 +716,6 @@ class AppLocalizationsIg extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Gbakwunyere ihe ncheta na-abawanye ugboro ugboro ka oge ngwụcha na-abịaru nso';
 
   @override
-  String get editorReminderLabel => 'Ncheta';
-
-  @override
-  String get editorReminderSelectOptional => 'Họrọ ncheta (nhọpụta)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days ụbọchị tupu ngwụcha';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Kaadị na-akwụsị na 4728. Kaadị mmefu isi. Ejikọtara ya na akaụntụ isi.';
 
   @override
-  String get tutorialSetReminderField => 'Debe ihe ncheta iji nweta ọkwa tupu ndekọ ọ bụla akwụsị. Pịa ubi Ihe Ncheta ka ị hụ nhọrọ ndị dị.';
-
-  @override
   String get reminderTitle => 'Ihe ncheta';
-
-  @override
-  String get reminderFreeSection => 'N\'efu';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Enweghị ihe ncheta';
@@ -939,45 +924,6 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Tinye ụbọchị nkeonwe';
-
-  @override
-  String get reminderCascadeTitle => 'Ncheta n\'usoro';
-
-  @override
-  String get reminderCascadeSubtitle => 'Nweta ọtụtụ ọkwa tupu ndekọ akwụsị';
-
-  @override
-  String get reminderPremiumRequired => 'Njirimara a dị maka ndị ọrụ Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Kwalite gaa na Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Nhọrọ ihe ncheta ndị a dịịrị onye ọ bụla. Họrọ otu iji nweta ọkwa.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Nhọrọ ndị a na-emeghepe na Premium maka oge ziri ezi tupu ngwụcha.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Pịa Tinye iji chekwaa nhọrọ ihe ncheta gị.';
-
-  @override
-  String get tutorialReminderPresets => 'Họrọ oge ebutu iji mata tupu ndekọ ọ bụla akwụsị.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Setịpụ ọnụọgụ ụbọchị nke gị tupu ngwụcha.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Pịa Tinye iji chekwaa nhọrọ ihe ncheta gị.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Ncheta n\'usoro na-eziga ọtụtụ ọkwa tupu ndekọ akwụsị. Dị na Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Ncheta n\'usoro na-eziga ọtụtụ ọkwa tupu ndekọ akwụsị.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara na-egosipụta ihe chọrọ nlebara anya gị: ndekọ ndị ga-akwụsị n\'oge na-adịghị anya, ihe ncheta ndị furu efu, na izu ndị na-abịa nke jupụtara n\'ọrụ.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Ị na-ahọrọ ige ntị? Kwe ka a gụọ nghọta gị n\'olu dara ụda, kwụsịtụ mgbe ọ bụla.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Pịa mpaghara ncheta iji hụ ka ncheta si arụ ọrụ.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'A na-agbakọ ihe ncheta site n\'ụbọchị njedebe na Oge imegharị. Ị nwere ike ịgbanyụ ha ebe a.';
@@ -3492,9 +3435,6 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Nkọwa ndị ọzọ nwere ihe ndị ọzọ: ndetu, ọ na-emeghachi, oge imegharị, onye nwe ndekọ, mkpọchi, akpa ego na foto. Meghee ya naanị mgbe ị chọrọ ya.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Ọ na-emeghachi na-ebuga ụbọchị n\'ihu maka ndebanye aha. Imegharị na-ewe ihe dị ka na-agwa Vaultara ogologo oge imegharị na-ewe, ka ihe ncheta malite n\'oge.';
 
   @override
   String get tutorialAddRecordProtect => 'Kpọchie ndekọ ka e jụọ mkpịsị aka gị ma ọ bụ mkpọchi ihuenyo tupu ọ gosi. Kaa kaadị dị ka Dị n\'akpa ego m, tinyekwa foto nke ihe odide ahụ.';

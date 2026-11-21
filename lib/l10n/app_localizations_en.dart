@@ -716,12 +716,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Plus reminders that get more frequent as the deadline nears';
 
   @override
-  String get editorReminderLabel => 'Reminder';
-
-  @override
-  String get editorReminderSelectOptional => 'Select a reminder (optional)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days days before expiry';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Card ending 4728. Primary spending card. Linked to main current account.';
 
   @override
-  String get tutorialSetReminderField => 'Set a reminder to receive a notification before any record expires. Tap the Reminder field to see the options.';
-
-  @override
   String get reminderTitle => 'Reminder';
-
-  @override
-  String get reminderFreeSection => 'Free';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'No reminder';
@@ -939,45 +924,6 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Enter custom days';
-
-  @override
-  String get reminderCascadeTitle => 'Cascade reminders';
-
-  @override
-  String get reminderCascadeSubtitle => 'Receive multiple notifications before a record expires';
-
-  @override
-  String get reminderPremiumRequired => 'This feature is available for Premium users.';
-
-  @override
-  String get reminderUpgradeCta => 'Upgrade to Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'These reminder options are available for everyone. Pick one to receive a notification.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'These options unlock with Premium for more precise timing before expiry.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Tap Apply to save your reminder choice.';
-
-  @override
-  String get tutorialReminderPresets => 'Choose a preset time to be notified before any record expires.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Set your own exact number of days before expiry.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Tap Apply to save your reminder choice.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Cascade sends multiple notifications before a record expires. Available with Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Cascade sends multiple notifications before a record expires.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara highlights what needs your attention: records expiring soon, missing reminders, and busy weeks ahead.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Prefer to listen? Have your insights read aloud, and pause any time.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Tap the reminder field to see how reminders work.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Reminders are worked out from the expiry date and Renewal time. You can turn them off here.';
@@ -3533,9 +3476,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'More details holds the extras: notes, repeat, renewal time, whose record it is, lock, wallet and photos. Open it only when you need it.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Repeat moves the date forward for subscriptions. Renewal takes about tells Vaultara how long renewing takes, so reminders start early enough.';
 
   @override
   String get tutorialAddRecordProtect => 'Lock a record to ask for your fingerprint or screen lock before showing it. Mark cards as In my wallet, and add photos of the document.';

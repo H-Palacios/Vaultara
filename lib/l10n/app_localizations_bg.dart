@@ -716,12 +716,6 @@ class AppLocalizationsBg extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Плюс напомняния, които зачестяват с наближаването на крайния срок';
 
   @override
-  String get editorReminderLabel => 'Напомняне';
-
-  @override
-  String get editorReminderSelectOptional => 'Изберете напомняне (по избор)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days дни преди изтичането';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Карта, завършваща на 4728. Основна карта за плащания. Свързана с основната разплащателна сметка.';
 
   @override
-  String get tutorialSetReminderField => 'Задайте напомняне, за да получите известие, преди някой запис да изтече. Докоснете полето „Напомняне“, за да видите опциите.';
-
-  @override
   String get reminderTitle => 'Напомняне';
-
-  @override
-  String get reminderFreeSection => 'Безплатен';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Без напомняне';
@@ -939,45 +924,6 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Въведете собствен брой дни';
-
-  @override
-  String get reminderCascadeTitle => 'Каскада от напомняния';
-
-  @override
-  String get reminderCascadeSubtitle => 'Получавайте няколко известия, преди запис да изтече';
-
-  @override
-  String get reminderPremiumRequired => 'Тази функция е достъпна за потребителите на Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Надградете до Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Тези опции за напомняне са достъпни за всички. Изберете една, за да получите известие.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Тези опции се отключват с Premium за по-точно време преди изтичането.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Докоснете „Прилагане“, за да запазите избраното напомняне.';
-
-  @override
-  String get tutorialReminderPresets => 'Изберете стандартен срок за известие, преди някой запис да изтече.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Задайте собствен точен брой дни преди изтичането.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Докоснете „Прилагане“, за да запазите избраното напомняне.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Каскадата изпраща няколко известия, преди запис да изтече. Достъпна е с Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Каскадата изпраща няколко известия, преди запис да изтече.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara показва какво изисква вниманието ви: записи, които изтичат скоро, липсващи напомняния и натоварени седмици напред.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Предпочитате да слушате? Чуйте анализите си на глас и ги поставяйте на пауза по всяко време.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Докоснете полето за напомняне, за да видите как работят напомнянията.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Напомнянията се изчисляват от датата на изтичане и Времето за подновяване. Можете да ги изключите тук.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Още подробности съдържа допълненията: бележки, повторение, време за подновяване, чий е записът, заключване, портфейл и снимки. Отваряйте го само когато ви трябва.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Повторение премества датата напред при абонаменти. Подновяването отнема около казва на Vaultara колко време отнема подновяването, за да започват напомнянията достатъчно рано.';
 
   @override
   String get tutorialAddRecordProtect => 'Заключете запис, за да иска пръстов отпечатък или заключване на екрана, преди да го покаже. Отбелязвайте картите като В моя портфейл и добавяйте снимки на документа.';

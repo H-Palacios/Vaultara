@@ -716,12 +716,6 @@ class AppLocalizationsNe extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'साथै समयसीमा नजिकिँदै जाँदा झन् धेरै आउने रिमाइन्डरहरू';
 
   @override
-  String get editorReminderLabel => 'रिमाइन्डर';
-
-  @override
-  String get editorReminderSelectOptional => 'रिमाइन्डर छान्नुहोस् (वैकल्पिक)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'म्याद समाप्त हुनु भन्दा $days दिन अघि';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get tutorialSampleRecordNotes => '4728 मा अन्त्य हुने कार्ड। प्राथमिक खर्च कार्ड। मुख्य चालु खातासँग जोडिएको।';
 
   @override
-  String get tutorialSetReminderField => 'कुनै पनि रेकर्डको म्याद समाप्त हुनु अघि सूचना प्राप्त गर्न रिमाइन्डर सेट गर्नुहोस्। विकल्पहरू हेर्न रिमाइन्डर फिल्डमा ट्याप गर्नुहोस्।';
-
-  @override
   String get reminderTitle => 'रिमाइन्डर';
-
-  @override
-  String get reminderFreeSection => 'निःशुल्क';
-
-  @override
-  String get reminderPremiumSection => 'प्रिमियम';
 
   @override
   String get reminderNone => 'कुनै रिमाइन्डर छैन';
@@ -939,45 +924,6 @@ class AppLocalizationsNe extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'अनुकूलन दिनहरू प्रविष्ट गर्नुहोस्';
-
-  @override
-  String get reminderCascadeTitle => 'क्यास्केड रिमाइन्डरहरू';
-
-  @override
-  String get reminderCascadeSubtitle => 'रेकर्डको म्याद समाप्त हुनु अघि धेरै सूचनाहरू प्राप्त गर्नुहोस्';
-
-  @override
-  String get reminderPremiumRequired => 'यो सुविधा प्रिमियम प्रयोगकर्ताहरूका लागि उपलब्ध छ।';
-
-  @override
-  String get reminderUpgradeCta => 'प्रिमियममा अपग्रेड गर्नुहोस्';
-
-  @override
-  String get tutorialReminderFreeSection => 'यी रिमाइन्डर विकल्पहरू सबैका लागि उपलब्ध छन्। सूचना प्राप्त गर्न एउटा छान्नुहोस्।';
-
-  @override
-  String get tutorialReminderPremiumSection => 'यी विकल्पहरू म्याद समाप्ति अघि थप सटीक समयका लागि प्रिमियमसँग अनलक हुन्छन्।';
-
-  @override
-  String get tutorialReminderApplyFree => 'आफ्नो रिमाइन्डर छनोट सुरक्षित गर्न लागू गर्नुहोस् मा ट्याप गर्नुहोस्।';
-
-  @override
-  String get tutorialReminderPresets => 'कुनै पनि रेकर्डको म्याद समाप्ति अघि सूचित हुनको लागि प्रीसेट समय छान्नुहोस्।';
-
-  @override
-  String get tutorialReminderCustomDays => 'म्याद समाप्ति अघि आफ्नै सटीक दिनको संख्या सेट गर्नुहोस्।';
-
-  @override
-  String get tutorialReminderApplyPremium => 'आफ्नो रिमाइन्डर छनोट सुरक्षित गर्न लागू गर्नुहोस् मा ट्याप गर्नुहोस्।';
-
-  @override
-  String get tutorialReminderCascadeFree => 'क्यास्केडले रेकर्डको म्याद समाप्त हुनु अघि धेरै सूचनाहरू पठाउँछ। प्रिमियमसँग उपलब्ध।';
-
-  @override
-  String get tutorialReminderCascadePremium => 'क्यास्केडले रेकर्डको म्याद समाप्त हुनु अघि धेरै सूचनाहरू पठाउँछ।';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara ले तपाईंको ध्यान चाहिने कुराहरू हाइलाइट गर्छ: चाँडै समाप्त हुने रेकर्डहरू, हराइरहेका रिमाइन्डरहरू, र आउँदै गरेका व्यस्त हप्ताहरू।';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'सुन्न रुचाउनुहुन्छ? आफ्ना अन्तर्दृष्टि ठूलो स्वरमा पढाउनुहोस्, र जुनसुकै बेला रोक्नुहोस्।';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'रिमाइन्डरहरू कसरी काम गर्छन् हेर्न रिमाइन्डर फिल्डमा ट्याप गर्नुहोस्।';
 
   @override
   String get tutorialAddRecordReminderSolo => 'रिमाइन्डरहरू म्याद सकिने मिति र नवीकरण समयबाट गणना गरिन्छन्। तपाईं यहाँ बन्द गर्न सक्नुहुन्छ।';
@@ -3512,9 +3455,6 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'थप विवरणमा अतिरिक्त कुरा हुन्छन्: नोटहरू, दोहोरिने, नवीकरणको समय, रेकर्ड कसको हो, लक, वालेट र फोटो। चाहिँदा मात्र खोल्नुहोस्।';
-
-  @override
-  String get tutorialAddRecordRepeat => 'दोहोरिने ले सदस्यताका लागि मिति अगाडि सार्छ। नवीकरण गर्न लगभग ले नवीकरण गर्न कति समय लाग्छ भनेर Vaultara लाई बताउँछ, ताकि रिमाइन्डर पर्याप्त चाँडो सुरु होऊन्।';
 
   @override
   String get tutorialAddRecordProtect => 'रेकर्ड लक गर्नुहोस्, ताकि देखाउनु अगाडि औँठाछाप वा स्क्रिन लक सोधियोस्। कार्डहरूलाई मेरो वालेटमा चिनो लगाउनुहोस्, र कागजातको फोटो थप्नुहोस्।';

@@ -716,12 +716,6 @@ class AppLocalizationsHu extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Ráadásul az emlékeztetők gyakoribbá válnak, ahogy közeledik a határidő';
 
   @override
-  String get editorReminderLabel => 'Emlékeztető';
-
-  @override
-  String get editorReminderSelectOptional => 'Válasszon emlékeztetőt (opcionális)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days nappal a lejárat előtt';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'A kártya 4728-cal végződik. Elsődleges költési kártya. A fő folyószámlához kapcsolva.';
 
   @override
-  String get tutorialSetReminderField => 'Állítson be emlékeztetőt, hogy értesítést kapjon egy bejegyzés lejárta előtt. Koppintson az Emlékeztető mezőre a lehetőségek megtekintéséhez.';
-
-  @override
   String get reminderTitle => 'Emlékeztető';
-
-  @override
-  String get reminderFreeSection => 'Ingyenes';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Nincs emlékeztető';
@@ -939,45 +924,6 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Adjon meg egyéni napokat';
-
-  @override
-  String get reminderCascadeTitle => 'Kaszkád emlékeztetők';
-
-  @override
-  String get reminderCascadeSubtitle => 'Több értesítést kap, mielőtt egy bejegyzés lejár';
-
-  @override
-  String get reminderPremiumRequired => 'Ez a funkció Premium felhasználók számára érhető el.';
-
-  @override
-  String get reminderUpgradeCta => 'Frissítés Premium verzióra';
-
-  @override
-  String get tutorialReminderFreeSection => 'Ezek az emlékeztető opciók mindenki számára elérhetők. Válasszon egyet az értesítés fogadásához.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Ezek az opciók Premiummal oldódnak fel a pontosabb időzítéshez a lejárat előtt.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Koppintson az Alkalmaz gombra az emlékeztető választásának mentéséhez.';
-
-  @override
-  String get tutorialReminderPresets => 'Válasszon egy előre beállított időt, hogy értesítést kapjon egy bejegyzés lejárta előtt.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Állítsa be saját pontos napszámát a lejárat előtt.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Koppintson az Alkalmaz gombra az emlékeztető választásának mentéséhez.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'A kaszkád több értesítést küld, mielőtt egy bejegyzés lejár. Premiummal elérhető.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'A kaszkád több értesítést küld, mielőtt egy bejegyzés lejár.';
-
-  @override
   String get tutorialInsightsSmartCard => 'A Vaultara kiemeli, mi igényli a figyelmét: hamarosan lejáró bejegyzések, hiányzó emlékeztetők és a közelgő elfoglalt hetek.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Inkább hallgatná? Olvastassa fel a betekintéseit, és szüneteltesse bármikor.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Koppintson az emlékeztető mezőre, hogy lássa, hogyan működnek az emlékeztetők.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Az emlékeztetők a lejárati dátumból és a Megújítási időből számolódnak. Itt kikapcsolhatja őket.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'A További részletek alatt vannak az extrák: jegyzetek, ismétlődés, megújítási idő, kié a bejegyzés, zár, pénztárca és fotók. Csak akkor nyissa meg, ha szüksége van rájuk.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Az Ismétlődés előreviszi a dátumot az előfizetéseknél. A megújítás nagyjából ennyi ideig tart mező megadja a Vaultarának, mennyi ideig tart a megújítás, hogy az emlékeztetők elég korán kezdődjenek.';
 
   @override
   String get tutorialAddRecordProtect => 'Zárolja a bejegyzést, hogy megjelenítés előtt ujjlenyomatot vagy képernyőzárat kérjen. Jelölje meg a kártyákat A pénztárcámban van, és adjon hozzá fotókat a dokumentumról.';

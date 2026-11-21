@@ -716,12 +716,6 @@ class AppLocalizationsKa extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'პლუს შეხსენებები, რომლებიც უფრო ხშირდება ვადის მოახლოებასთან ერთად';
 
   @override
-  String get editorReminderLabel => 'შეხსენება';
-
-  @override
-  String get editorReminderSelectOptional => 'აირჩიეთ შეხსენება (სურვილისამებრ)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days დღით ადრე ვადამდე';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'ბარათი მთავრდება 4728-ით. ძირითადი ხარჯების ბარათი. დაკავშირებულია ძირითად მიმდინარე ანგარიშთან.';
 
   @override
-  String get tutorialSetReminderField => 'დააყენეთ შეხსენება, რომ მიიღოთ შეტყობინება ნებისმიერი ჩანაწერის ვადის გასვლამდე. შეეხეთ შეხსენების ველს ვარიანტების სანახავად.';
-
-  @override
   String get reminderTitle => 'შეხსენება';
-
-  @override
-  String get reminderFreeSection => 'უფასო';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'შეხსენების გარეშე';
@@ -939,45 +924,6 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'შეიყვანეთ მორგებული დღეები';
-
-  @override
-  String get reminderCascadeTitle => 'კასკადური შეხსენებები';
-
-  @override
-  String get reminderCascadeSubtitle => 'მიიღეთ რამდენიმე შეტყობინება ჩანაწერის ვადის გასვლამდე';
-
-  @override
-  String get reminderPremiumRequired => 'ეს ფუნქცია ხელმისაწვდომია Premium მომხმარებლებისთვის.';
-
-  @override
-  String get reminderUpgradeCta => 'განაახლეთ Premium-ზე';
-
-  @override
-  String get tutorialReminderFreeSection => 'ეს შეხსენების ვარიანტები ხელმისაწვდომია ყველასთვის. აირჩიეთ ერთი შეტყობინების მისაღებად.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'ეს ვარიანტები იხსნება Premium-ით ვადის გასვლამდე უფრო ზუსტი დროისთვის.';
-
-  @override
-  String get tutorialReminderApplyFree => 'შეეხეთ გამოყენება შეხსენების არჩევანის შესანახად.';
-
-  @override
-  String get tutorialReminderPresets => 'აირჩიეთ წინასწარ დაყენებული დრო ნებისმიერი ჩანაწერის ვადის გასვლამდე შეტყობინების მისაღებად.';
-
-  @override
-  String get tutorialReminderCustomDays => 'დააყენეთ თქვენი საკუთარი ზუსტი დღეების რაოდენობა ვადის გასვლამდე.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'შეეხეთ გამოყენება შეხსენების არჩევანის შესანახად.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'კასკადი აგზავნის რამდენიმე შეტყობინებას ჩანაწერის ვადის გასვლამდე. ხელმისაწვდომია Premium-ით.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'კასკადი აგზავნის რამდენიმე შეტყობინებას ჩანაწერის ვადის გასვლამდე.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara ხაზს უსვამს იმას, რაც თქვენს ყურადღებას საჭიროებს: მალე ვადაგასული ჩანაწერები, ჩანაწერები შეხსენების გარეშე და მოახლოებული დაკავებული კვირები.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'გირჩევნიათ მოსმენა? მიეცით საშუალება, თქვენი ანალიზი ხმამაღლა წაიკითხოს და ნებისმიერ დროს დააპაუზეთ.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'შეეხეთ შეხსენების ველს, რომ ნახოთ, როგორ მუშაობს შეხსენებები.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'შეხსენებები ითვლება ვადის გასვლის თარიღიდან და განახლების დროიდან. აქ შეგიძლიათ მათი გამორთვა.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'დამატებითი დეტალები შეიცავს დამატებით ველებს: შენიშვნები, გამეორება, განახლების დრო, ვის ეკუთვნის ჩანაწერი, დაბლოკვა, საფულე და ფოტოები. გახსენით მხოლოდ საჭიროების შემთხვევაში.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'გამეორება თარიღს წინ სწევს გამოწერებისთვის. განახლებას სჭირდება დაახლოებით ეუბნება Vaultara-ს, რამდენ ხანს გრძელდება განახლება, რომ შეხსენებები საკმარისად ადრე დაიწყოს.';
 
   @override
   String get tutorialAddRecordProtect => 'დაბლოკეთ ჩანაწერი, რომ ჩვენებამდე მოგთხოვოთ თითის ანაბეჭდი ან ეკრანის დაბლოკვა. მონიშნეთ ბარათები როგორც ჩემს საფულეში და დაამატეთ დოკუმენტის ფოტოები.';

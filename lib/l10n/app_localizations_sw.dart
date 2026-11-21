@@ -716,12 +716,6 @@ class AppLocalizationsSw extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Pamoja na vikumbusho vinavyoongezeka kadri tarehe ya mwisho inavyokaribia';
 
   @override
-  String get editorReminderLabel => 'Kikumbusho';
-
-  @override
-  String get editorReminderSelectOptional => 'Chagua kikumbusho (hiari)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Siku $days kabla ya mwisho';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Kadi inayoishia na 4728. Kadi kuu ya matumizi. Imeunganishwa na akaunti kuu ya sasa.';
 
   @override
-  String get tutorialSetReminderField => 'Weka ukumbusho ili kupokea arifa kabla rekodi yoyote haijaisha muda. Gonga sehemu ya Ukumbusho ili kuona chaguo.';
-
-  @override
   String get reminderTitle => 'Ukumbusho';
-
-  @override
-  String get reminderFreeSection => 'Bila malipo';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Hakuna ukumbusho';
@@ -939,45 +924,6 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Ingiza siku maalum';
-
-  @override
-  String get reminderCascadeTitle => 'Ukumbusho wa mfululizo';
-
-  @override
-  String get reminderCascadeSubtitle => 'Pokea arifa nyingi kabla ya rekodi kumalizika';
-
-  @override
-  String get reminderPremiumRequired => 'Kipengele hiki kinapatikana kwa watumiaji wa Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Boresha kwenda Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Chaguzi hizi za ukumbusho zinapatikana kwa kila mtu. Chagua moja ili kupokea arifa.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Chaguzi hizi zinafunguka na Premium kwa muda sahihi zaidi kabla ya kumalizika.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Gonga Tekeleza ili kuhifadhi chaguo la ukumbusho wako.';
-
-  @override
-  String get tutorialReminderPresets => 'Chagua muda uliopangwa awali ili kuarifiwa kabla rekodi yoyote haijaisha muda.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Weka idadi yako halisi ya siku kabla ya kumalizika.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Gonga Tekeleza ili kuhifadhi chaguo la ukumbusho wako.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Ukumbusho wa mfululizo hutuma arifa nyingi kabla ya rekodi kumalizika. Inapatikana na Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Ukumbusho wa mfululizo hutuma arifa nyingi kabla ya rekodi kumalizika.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara huangazia kile kinachohitaji uangalifu wako: rekodi zinazokaribia kumalizika muda, vikumbusho vinavyokosekana, na wiki zenye shughuli nyingi zijazo.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Unapendelea kusikiliza? Ruhusu maarifa yako yasomwe kwa sauti, na usitishe wakati wowote.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Gusa sehemu ya ukumbusho ili kuona jinsi vikumbusho vinavyofanya kazi.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Vikumbusho huhesabiwa kutoka tarehe ya kuisha na Muda wa kuhuisha. Unaweza kuvizima hapa.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Maelezo zaidi yana mambo ya ziada: vidokezo, inajirudia, muda wa kuhuisha, rekodi ni ya nani, kufunga, pochi na picha. Yafungue unapoyahitaji tu.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Inajirudia husogeza tarehe mbele kwa usajili. Kuhuisha huchukua takribani huiambia Vaultara kuhuisha huchukua muda gani, ili vikumbusho vianze mapema vya kutosha.';
 
   @override
   String get tutorialAddRecordProtect => 'Funga rekodi ili iombe alama ya kidole au kufuli ya skrini kabla ya kuionyesha. Weka alama kwenye kadi kama Kwenye pochi yangu, na ongeza picha za hati.';

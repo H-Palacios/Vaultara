@@ -716,12 +716,6 @@ class AppLocalizationsTr extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Ayrıca son tarih yaklaştıkça daha sık gelen hatırlatıcılar';
 
   @override
-  String get editorReminderLabel => 'Hatırlatıcı';
-
-  @override
-  String get editorReminderSelectOptional => 'Hatırlatıcı seçin (isteğe bağlı)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Son kullanmadan $days gün önce';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get tutorialSampleRecordNotes => '4728 ile biten kart. Birincil harcama kartı. Ana vadesiz hesaba bağlı.';
 
   @override
-  String get tutorialSetReminderField => 'Herhangi bir kaydın süresi dolmadan önce bildirim almak için bir hatırlatıcı ayarlayın. Seçenekleri görmek için Hatırlatıcı alanına dokunun.';
-
-  @override
   String get reminderTitle => 'Hatırlatıcı';
-
-  @override
-  String get reminderFreeSection => 'Ücretsiz';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Hatırlatıcı yok';
@@ -939,45 +924,6 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Özel gün girin';
-
-  @override
-  String get reminderCascadeTitle => 'Kademeli hatırlatıcılar';
-
-  @override
-  String get reminderCascadeSubtitle => 'Bir kayıt sona ermeden önce birden fazla bildirim alın';
-
-  @override
-  String get reminderPremiumRequired => 'Bu özellik Premium kullanıcıları için mevcuttur.';
-
-  @override
-  String get reminderUpgradeCta => 'Premium\'a yükselt';
-
-  @override
-  String get tutorialReminderFreeSection => 'Bu hatırlatıcı seçenekleri herkes için kullanılabilir. Bildirim almak için birini seçin.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Bu seçenekler, son kullanma tarihinden önce daha kesin zamanlama için Premium ile açılır.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Hatırlatıcı seçiminizi kaydetmek için Uygula\'ya dokunun.';
-
-  @override
-  String get tutorialReminderPresets => 'Herhangi bir kayıt sona ermeden önce bildirim almak için önceden ayarlanmış bir zaman seçin.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Son kullanma tarihinden önce kendi tam gün sayınızı ayarlayın.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Hatırlatıcı seçiminizi kaydetmek için Uygula\'ya dokunun.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Kademeli, bir kayıt sona ermeden önce birden fazla bildirim gönderir. Premium ile kullanılabilir.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Kademeli, bir kayıt sona ermeden önce birden fazla bildirim gönderir.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara dikkatinizi gerektiren şeyleri vurgular: yakında sona erecek kayıtlar, eksik hatırlatıcılar ve yaklaşan yoğun haftalar.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Dinlemeyi mi tercih edersiniz? Analizlerinizi sesli okutun ve istediğiniz zaman duraklatın.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Hatırlatıcıların nasıl çalıştığını görmek için hatırlatıcı alanına dokunun.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Hatırlatıcılar bitiş tarihinden ve Yenileme süresinden hesaplanır. Onları buradan kapatabilirsin.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Daha fazla ayrıntı bölümü ekstraları içerir: notlar, tekrar, yenileme süresi, kaydın kime ait olduğu, kilit, cüzdan ve fotoğraflar. Yalnızca ihtiyacınız olduğunda açın.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Tekrar, abonelikler için tarihi ileri taşır. Yenileme yaklaşık şu kadar sürer, Vaultara\'ya yenilemenin ne kadar sürdüğünü söyler; böylece hatırlatıcılar yeterince erken başlar.';
 
   @override
   String get tutorialAddRecordProtect => 'Bir kaydı kilitleyin; gösterilmeden önce parmak izi veya ekran kilidi istesin. Kartları Cüzdanımda olarak işaretleyin ve belgenin fotoğraflarını ekleyin.';

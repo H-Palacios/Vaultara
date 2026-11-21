@@ -716,12 +716,6 @@ class AppLocalizationsGu extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'ઉપરાંત, ડેડલાઇન નજીક આવે તેમ વધુ વાર આવતા રિમાઇન્ડર';
 
   @override
-  String get editorReminderLabel => 'રિમાઇન્ડર';
-
-  @override
-  String get editorReminderSelectOptional => 'રિમાઇન્ડર પસંદ કરો (વૈકલ્પિક)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'સમાપ્તિના $days દિવસ પહેલાં';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsGu extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'છેલ્લા અંક 4728 વાળું કાર્ડ. ખર્ચ માટેનું મુખ્ય કાર્ડ. મુખ્ય કરન્ટ એકાઉન્ટ સાથે લિંક કરેલું.';
 
   @override
-  String get tutorialSetReminderField => 'કોઈ પણ રેકોર્ડ સમાપ્ત થાય તે પહેલાં નોટિફિકેશન મેળવવા માટે રિમાઇન્ડર સેટ કરો. વિકલ્પો જોવા માટે રિમાઇન્ડર ફીલ્ડ પર ટૅપ કરો.';
-
-  @override
   String get reminderTitle => 'રિમાઇન્ડર';
-
-  @override
-  String get reminderFreeSection => 'મફત';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'કોઈ રિમાઇન્ડર નહીં';
@@ -939,45 +924,6 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'કસ્ટમ દિવસ દાખલ કરો';
-
-  @override
-  String get reminderCascadeTitle => 'તબક્કાવાર રિમાઇન્ડર';
-
-  @override
-  String get reminderCascadeSubtitle => 'રેકોર્ડ સમાપ્ત થાય તે પહેલાં એકથી વધુ નોટિફિકેશન મેળવો';
-
-  @override
-  String get reminderPremiumRequired => 'આ સુવિધા Premium વપરાશકર્તાઓ માટે ઉપલબ્ધ છે.';
-
-  @override
-  String get reminderUpgradeCta => 'Premium પર અપગ્રેડ કરો';
-
-  @override
-  String get tutorialReminderFreeSection => 'આ રિમાઇન્ડર વિકલ્પો બધા માટે ઉપલબ્ધ છે. નોટિફિકેશન મેળવવા માટે કોઈ એક પસંદ કરો.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'સમાપ્તિ પહેલાં વધુ ચોક્કસ સમય માટે આ વિકલ્પો Premium સાથે અનલૉક થાય છે.';
-
-  @override
-  String get tutorialReminderApplyFree => 'તમારી રિમાઇન્ડરની પસંદગી સાચવવા માટે લાગુ કરો પર ટૅપ કરો.';
-
-  @override
-  String get tutorialReminderPresets => 'કોઈ પણ રેકોર્ડ સમાપ્ત થાય તે પહેલાં નોટિફિકેશન મેળવવા માટે પ્રીસેટ સમય પસંદ કરો.';
-
-  @override
-  String get tutorialReminderCustomDays => 'સમાપ્તિ પહેલાંના દિવસોની તમારી પોતાની ચોક્કસ સંખ્યા સેટ કરો.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'તમારી રિમાઇન્ડરની પસંદગી સાચવવા માટે લાગુ કરો પર ટૅપ કરો.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'તબક્કાવાર રિમાઇન્ડર રેકોર્ડ સમાપ્ત થાય તે પહેલાં એકથી વધુ નોટિફિકેશન મોકલે છે. Premium સાથે ઉપલબ્ધ.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'તબક્કાવાર રિમાઇન્ડર રેકોર્ડ સમાપ્ત થાય તે પહેલાં એકથી વધુ નોટિફિકેશન મોકલે છે.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara બતાવે છે કે શેના પર તમારું ધ્યાન જરૂરી છે: ટૂંક સમયમાં સમાપ્ત થતા રેકોર્ડ, ખૂટતા રિમાઇન્ડર અને આગળના વ્યસ્ત અઠવાડિયા.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'સાંભળવું વધુ ગમે છે? તમારી ઇન્સાઇટ મોટેથી સાંભળો અને ગમે ત્યારે થોભાવો.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'રિમાઇન્ડર કેવી રીતે કામ કરે છે તે જોવા માટે રિમાઇન્ડર ફીલ્ડ પર ટૅપ કરો.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'રિમાઇન્ડર સમાપ્તિ તારીખ અને રિન્યૂના સમય પરથી ગણાય છે. તમે તેને અહીં બંધ કરી શકો છો.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'વધુ વિગતોમાં વધારાની બાબતો છે: નોંધો, પુનરાવર્તન, રિન્યૂ કરવાનો સમય, રેકોર્ડ કોનો છે, લૉક, વૉલેટ અને ફોટા. જરૂર પડે ત્યારે જ તેને ખોલો.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'પુનરાવર્તન સબ્સ્ક્રિપ્શન માટે તારીખ આગળ વધારે છે. રિન્યૂ કરવામાં લગભગ આટલો સમય લાગે છે Vaultaraને કહે છે કે રિન્યૂ કરવામાં કેટલો સમય લાગે છે, જેથી રિમાઇન્ડર પૂરતા વહેલા શરૂ થાય.';
 
   @override
   String get tutorialAddRecordProtect => 'રેકોર્ડ લૉક કરો જેથી તે બતાવતા પહેલાં તમારી ફિંગરપ્રિન્ટ કે સ્ક્રીન લૉક માગવામાં આવે. કાર્ડને મારા વૉલેટમાં તરીકે ચિહ્નિત કરો, અને દસ્તાવેજના ફોટા ઉમેરો.';

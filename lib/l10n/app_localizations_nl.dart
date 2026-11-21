@@ -716,12 +716,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Plus herinneringen die vaker komen naarmate de vervaldatum dichterbij komt';
 
   @override
-  String get editorReminderLabel => 'Herinnering';
-
-  @override
-  String get editorReminderSelectOptional => 'Selecteer herinnering (optioneel)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dagen vóór vervaldatum';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Kaart eindigt op 4728. Primaire uitgavenkaart. Gekoppeld aan hoofdbetaalrekening.';
 
   @override
-  String get tutorialSetReminderField => 'Stel een herinnering in om een melding te ontvangen voordat een record verloopt. Tik op het Herinnering-veld om de opties te zien.';
-
-  @override
   String get reminderTitle => 'Herinnering';
-
-  @override
-  String get reminderFreeSection => 'Gratis';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Geen herinnering';
@@ -939,45 +924,6 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Voer aangepaste dagen in';
-
-  @override
-  String get reminderCascadeTitle => 'Cascade-herinneringen';
-
-  @override
-  String get reminderCascadeSubtitle => 'Ontvang meerdere meldingen voordat een record verloopt';
-
-  @override
-  String get reminderPremiumRequired => 'Deze functie is beschikbaar voor Premium-gebruikers.';
-
-  @override
-  String get reminderUpgradeCta => 'Upgraden naar Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Deze herinneringsopties zijn beschikbaar voor iedereen. Kies er een om een melding te ontvangen.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Deze opties worden ontgrendeld met Premium voor preciezere timing vóór vervaldatum.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Tik op Toepassen om je herinneringskeuze op te slaan.';
-
-  @override
-  String get tutorialReminderPresets => 'Kies een vooraf ingestelde tijd om op de hoogte te worden gebracht voordat een record verloopt.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Stel je eigen exacte aantal dagen in vóór vervaldatum.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Tik op Toepassen om je herinneringskeuze op te slaan.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Cascade stuurt meerdere meldingen voordat een record verloopt. Beschikbaar met Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Cascade stuurt meerdere meldingen voordat een record verloopt.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara benadrukt wat je aandacht nodig heeft: records die binnenkort verlopen, ontbrekende herinneringen en drukke weken die eraan komen.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Liever luisteren? Laat je inzichten hardop voorlezen en pauzeer wanneer je wilt.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Tik op het herinneringsveld om te zien hoe herinneringen werken.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Herinneringen worden berekend vanaf de vervaldatum en de Verlengingstijd. Je kunt ze hier uitzetten.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Meer details bevat de extra\'s: notities, herhaling, vernieuwingstijd, van wie het record is, vergrendeling, portemonnee en foto\'s. Open het alleen wanneer je het nodig hebt.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Herhaling zet de datum vooruit voor abonnementen. Vernieuwen duurt ongeveer vertelt Vaultara hoe lang vernieuwen duurt, zodat herinneringen vroeg genoeg beginnen.';
 
   @override
   String get tutorialAddRecordProtect => 'Vergrendel een record om je vingerafdruk of schermvergrendeling te vragen voordat het wordt getoond. Markeer kaarten als In mijn portemonnee en voeg foto\'s van het document toe.';

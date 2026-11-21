@@ -86,12 +86,39 @@ class TutorialController extends ChangeNotifier {
     notifyListeners();
   }
 
-  void advanceToSaveStep() {
-    start(
-      TutorialStep.addRecordSave,
-      group: TutorialStepGroups.stepsFor(TutorialStep.addRecordSave),
-    );
+  /// In the full tour, Add Record hands over to the reminder steps where it
+  /// would show its own reminder step, and takes back over after them.
+  /// Returns true when it moved the tutorial on.
+  bool _fullTourHandOver(int index) {
+    if (!_fullTour) return false;
+    final group = _activeGroup;
+    final bool inAddRecord = identical(group, TutorialStepGroups.addRecord);
+    if (inAddRecord &&
+        index + 1 < group.length &&
+        group[index + 1] == TutorialStep.addRecordReminder) {
+      TutorialVoice.stop();
+      start(
+        TutorialStepGroups.reminders.first,
+        isPremium: _isPremium,
+        group: TutorialStepGroups.reminders,
+      );
+      return true;
+    }
+    if (identical(group, TutorialStepGroups.reminders) &&
+        index == group.length - 1) {
+      final addRecord = TutorialStepGroups.addRecord;
+      final resume = addRecord.indexOf(TutorialStep.addRecordReminder) + 1;
+      TutorialVoice.stop();
+      start(addRecord[resume], isPremium: _isPremium, group: addRecord);
+      return true;
+    }
+    return false;
   }
+
+  /// Whether the step after this one continues the full tour, so the card
+  /// says Next instead of Finish at the end of the reminder steps.
+  bool get continuesTour =>
+      _fullTour && identical(_activeGroup, TutorialStepGroups.reminders);
 
   void next() {
     if (_currentStep == null || _activeGroup.isEmpty) {
@@ -99,6 +126,7 @@ class TutorialController extends ChangeNotifier {
       return;
     }
     final int index = _activeGroup.indexOf(_currentStep!);
+    if (index >= 0 && _fullTourHandOver(index)) return;
     if (index < 0 || index >= _activeGroup.length - 1) {
       _terminate();
       return;
@@ -241,6 +269,7 @@ class TutorialController extends ChangeNotifier {
       highlightRect: rect,
       isPremium: _isPremium,
       isFullTour: _fullTour,
+      continuesTour: continuesTour,
       blockTouches: blocks,
     );
   }

@@ -716,12 +716,6 @@ class AppLocalizationsFi extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Lisäksi muistutukset, jotka tihenevät määräajan lähestyessä';
 
   @override
-  String get editorReminderLabel => 'Muistutus';
-
-  @override
-  String get editorReminderSelectOptional => 'Valitse muistutus (valinnainen)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days päivää ennen vanhenemista';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Kortti päättyy 4728. Ensisijainen ostoskortti. Yhdistetty pääkäyttötilille.';
 
   @override
-  String get tutorialSetReminderField => 'Aseta muistutus saadaksesi ilmoituksen ennen minkä tahansa tietueen vanhentumista. Napauta Muistutus-kenttää nähdäksesi vaihtoehdot.';
-
-  @override
   String get reminderTitle => 'Muistutus';
-
-  @override
-  String get reminderFreeSection => 'Ilmainen';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Ei muistutusta';
@@ -939,45 +924,6 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Syötä mukautetut päivät';
-
-  @override
-  String get reminderCascadeTitle => 'Kaskadimuistutukset';
-
-  @override
-  String get reminderCascadeSubtitle => 'Vastaanota useita ilmoituksia ennen tietueen vanhenemista';
-
-  @override
-  String get reminderPremiumRequired => 'Tämä ominaisuus on saatavilla Premium-käyttäjille.';
-
-  @override
-  String get reminderUpgradeCta => 'Päivitä Premiumiin';
-
-  @override
-  String get tutorialReminderFreeSection => 'Nämä muistutusvaihtoehdot ovat kaikkien saatavilla. Valitse yksi saadaksesi ilmoituksen.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Nämä vaihtoehdot avataan Premiumilla tarkempaan ajoitukseen ennen vanhentumista.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Napauta Käytä tallentaaksesi muistutusvalintasi.';
-
-  @override
-  String get tutorialReminderPresets => 'Valitse esiasetettu aika saadaksesi ilmoituksen ennen minkä tahansa tietueen vanhentumista.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Aseta oma tarkka päivien määrä ennen vanhentumista.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Napauta Käytä tallentaaksesi muistutusvalintasi.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Kaskadi lähettää useita ilmoituksia ennen tietueen vanhenemista. Saatavilla Premiumilla.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Kaskadi lähettää useita ilmoituksia ennen tietueen vanhenemista.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara korostaa, mikä tarvitsee huomiotasi: pian vanhenevat tietueet, puuttuvat muistutukset ja tulevat kiireiset viikot.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Kuunteletko mieluummin? Anna sovelluksen lukea oivallukset ääneen ja keskeytä milloin tahansa.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Napauta muistutuskenttää nähdäksesi, miten muistutukset toimivat.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Muistutukset lasketaan vanhenemispäivästä ja Uusimisajasta. Voit poistaa ne käytöstä tästä.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Lisätiedot sisältää lisäasetukset: muistiinpanot, toistuvuuden, uusimisajan, kenen tietue on kyseessä, lukituksen, lompakon ja kuvat. Avaa se vain, kun tarvitset sitä.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Toistuu siirtää päivämäärää eteenpäin tilauksille. Uusiminen kestää noin kertoo Vaultaralle, kuinka kauan uusiminen vie, jotta muistutukset alkavat riittävän ajoissa.';
 
   @override
   String get tutorialAddRecordProtect => 'Lukitse tietue, niin sormenjälkeäsi tai näytön lukitusta kysytään ennen sen näyttämistä. Merkitse kortit kohtaan Lompakossani ja lisää asiakirjasta kuvia.';

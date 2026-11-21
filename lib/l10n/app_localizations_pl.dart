@@ -720,12 +720,6 @@ class AppLocalizationsPl extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Dodatkowo przypomnienia, które stają się częstsze w miarę zbliżania się terminu';
 
   @override
-  String get editorReminderLabel => 'Przypomnienie';
-
-  @override
-  String get editorReminderSelectOptional => 'Wybierz przypomnienie (opcjonalnie)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dni przed wygaśnięciem';
   }
@@ -916,16 +910,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Karta kończąca się na 4728. Podstawowa karta do wydatków. Powiązana z głównym rachunkiem bieżącym.';
 
   @override
-  String get tutorialSetReminderField => 'Ustaw przypomnienie, aby otrzymać powiadomienie przed wygaśnięciem dowolnego rekordu. Dotknij pola Przypomnienie, aby zobaczyć opcje.';
-
-  @override
   String get reminderTitle => 'Przypomnienie';
-
-  @override
-  String get reminderFreeSection => 'Bezpłatne';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Brak przypomnienia';
@@ -947,45 +932,6 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Wprowadź niestandardowe dni';
-
-  @override
-  String get reminderCascadeTitle => 'Przypomnienia kaskadowe';
-
-  @override
-  String get reminderCascadeSubtitle => 'Otrzymuj wiele powiadomień przed wygaśnięciem rekordu';
-
-  @override
-  String get reminderPremiumRequired => 'Ta funkcja jest dostępna dla użytkowników Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Przejdź na Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Te opcje przypomnień są dostępne dla wszystkich. Wybierz jedną, aby otrzymać powiadomienie.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Te opcje odblokowują się z Premium dla dokładniejszego czasu przed wygaśnięciem.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Dotknij Zastosuj, aby zapisać swój wybór przypomnienia.';
-
-  @override
-  String get tutorialReminderPresets => 'Wybierz zdefiniowany czas, aby otrzymać powiadomienie przed wygaśnięciem dowolnego rekordu.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Ustaw własną dokładną liczbę dni przed wygaśnięciem.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Dotknij Zastosuj, aby zapisać swój wybór przypomnienia.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Kaskada wysyła wiele powiadomień przed wygaśnięciem rekordu. Dostępna z Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Kaskada wysyła wiele powiadomień przed wygaśnięciem rekordu.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara podkreśla to, co wymaga Twojej uwagi: rekordy wygasające wkrótce, brakujące przypomnienia i nadchodzące pracowite tygodnie.';
 
   @override
@@ -999,9 +945,6 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Wolisz słuchać? Pozwól, aby Twoje statystyki zostały odczytane na głos, i wstrzymaj je w dowolnej chwili.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Dotknij pola przypomnienia, aby zobaczyć, jak działają przypomnienia.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Przypomnienia są liczone od daty ważności i Czasu odnowienia. Możesz je tutaj wyłączyć.';
@@ -3594,9 +3537,6 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Więcej szczegółów zawiera dodatki: notatki, powtarzanie, czas odnowienia, czyj to rekord, blokadę, portfel i zdjęcia. Otwieraj to tylko wtedy, gdy potrzebujesz.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Powtarzanie przesuwa datę do przodu w przypadku subskrypcji. Odnowienie trwa około mówi Vaultarze, ile trwa odnowienie, żeby przypomnienia zaczynały się dość wcześnie.';
 
   @override
   String get tutorialAddRecordProtect => 'Zablokuj rekord, aby przed pokazaniem wymagał odcisku palca lub blokady ekranu. Oznacz karty jako W moim portfelu i dodaj zdjęcia dokumentu.';

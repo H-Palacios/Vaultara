@@ -716,12 +716,6 @@ class AppLocalizationsId extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Ditambah pengingat yang menjadi lebih sering saat tenggat waktu mendekat';
 
   @override
-  String get editorReminderLabel => 'Pengingat';
-
-  @override
-  String get editorReminderSelectOptional => 'Pilih pengingat (opsional)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days hari sebelum kedaluwarsa';
   }
@@ -904,16 +898,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Kartu berakhir dengan 4728. Kartu pengeluaran utama. Terhubung ke rekening giro utama.';
 
   @override
-  String get tutorialSetReminderField => 'Atur pengingat untuk menerima notifikasi sebelum catatan kedaluwarsa. Ketuk kolom Pengingat untuk melihat opsi.';
-
-  @override
   String get reminderTitle => 'Pengingat';
-
-  @override
-  String get reminderFreeSection => 'Gratis';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Tanpa pengingat';
@@ -933,45 +918,6 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Masukkan hari kustom';
-
-  @override
-  String get reminderCascadeTitle => 'Pengingat berjenjang';
-
-  @override
-  String get reminderCascadeSubtitle => 'Terima beberapa notifikasi sebelum catatan kedaluwarsa';
-
-  @override
-  String get reminderPremiumRequired => 'Fitur ini tersedia untuk pengguna Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Tingkatkan ke Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Opsi pengingat ini tersedia untuk semua orang. Pilih satu untuk menerima notifikasi.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Opsi ini terbuka dengan Premium untuk waktu yang lebih tepat sebelum kedaluwarsa.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Ketuk Terapkan untuk menyimpan pilihan pengingat Anda.';
-
-  @override
-  String get tutorialReminderPresets => 'Pilih waktu preset untuk diberi tahu sebelum catatan apa pun kedaluwarsa.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Atur jumlah hari yang tepat Anda sendiri sebelum kedaluwarsa.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Ketuk Terapkan untuk menyimpan pilihan pengingat Anda.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Kaskade mengirim beberapa notifikasi sebelum catatan kedaluwarsa. Tersedia dengan Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Kaskade mengirim beberapa notifikasi sebelum catatan kedaluwarsa.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara menyoroti apa yang membutuhkan perhatian Anda: catatan yang segera kedaluwarsa, pengingat yang hilang, dan minggu-minggu sibuk mendatang.';
 
   @override
@@ -985,9 +931,6 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Lebih suka mendengarkan? Biarkan wawasan Anda dibacakan, dan jeda kapan saja.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Ketuk bidang pengingat untuk melihat cara kerja pengingat.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Pengingat dihitung dari tanggal kedaluwarsa dan Waktu perpanjangan. Anda dapat mematikannya di sini.';
@@ -3486,9 +3429,6 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Detail lainnya berisi tambahan: catatan, berulang, waktu perpanjangan, catatan ini milik siapa, kunci, dompet, dan foto. Buka hanya saat Anda membutuhkannya.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Berulang memajukan tanggal untuk langganan. Perpanjangan memakan waktu sekitar memberi tahu Vaultara berapa lama perpanjangan berlangsung, agar pengingat dimulai cukup awal.';
 
   @override
   String get tutorialAddRecordProtect => 'Kunci catatan agar diminta sidik jari atau kunci layar Anda sebelum ditampilkan. Tandai kartu sebagai Ada di dompet saya, dan tambahkan foto dokumen.';

@@ -720,12 +720,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'А также напоминания, которые становятся чаще по мере приближения дедлайна';
 
   @override
-  String get editorReminderLabel => 'Напоминание';
-
-  @override
-  String get editorReminderSelectOptional => 'Выберите напоминание (необязательно)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'За $days дн. до окончания срока действия';
   }
@@ -916,16 +910,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Карта заканчивается на 4728. Основная карта для расходов. Привязана к основному текущему счёту.';
 
   @override
-  String get tutorialSetReminderField => 'Настройте напоминание, чтобы получать уведомление до истечения срока любой записи. Нажмите на поле Напоминание, чтобы увидеть варианты.';
-
-  @override
   String get reminderTitle => 'Напоминание';
-
-  @override
-  String get reminderFreeSection => 'Бесплатно';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Без напоминания';
@@ -947,45 +932,6 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Введите пользовательские дни';
-
-  @override
-  String get reminderCascadeTitle => 'Каскадные напоминания';
-
-  @override
-  String get reminderCascadeSubtitle => 'Получайте несколько уведомлений до истечения срока записи';
-
-  @override
-  String get reminderPremiumRequired => 'Эта функция доступна пользователям Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Обновить до Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Эти параметры напоминания доступны всем. Выберите один, чтобы получить уведомление.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Эти параметры разблокируются с Premium для более точного времени перед истечением срока.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Нажмите Применить, чтобы сохранить выбор напоминания.';
-
-  @override
-  String get tutorialReminderPresets => 'Выберите предустановленное время для получения уведомления до истечения срока любой записи.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Установите собственное точное количество дней до истечения срока.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Нажмите Применить, чтобы сохранить выбор напоминания.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Каскад отправляет несколько уведомлений до истечения срока записи. Доступно с Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Каскад отправляет несколько уведомлений до истечения срока записи.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara выделяет то, что требует вашего внимания: записи, срок которых скоро истекает, отсутствующие напоминания и предстоящие загруженные недели.';
 
   @override
@@ -999,9 +945,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Предпочитаете слушать? Пусть ваши аналитические данные читаются вслух, и ставьте на паузу в любой момент.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Нажмите на поле напоминания, чтобы увидеть, как работают напоминания.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Напоминания рассчитываются от даты окончания и Срока продления. Здесь их можно выключить.';
@@ -3589,9 +3532,6 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'В разделе Подробнее собраны дополнительные поля: заметки, повтор, время продления, чья это запись, блокировка, кошелёк и фото. Открывайте его только когда он нужен.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Повтор переносит дату вперёд для подписок. Поле Продление занимает примерно сообщает Vaultara, сколько времени занимает продление, чтобы напоминания приходили достаточно рано.';
 
   @override
   String get tutorialAddRecordProtect => 'Заблокируйте запись, чтобы перед показом запрашивался отпечаток пальца или блокировка экрана. Отметьте карты как В моём кошельке и добавьте фото документа.';

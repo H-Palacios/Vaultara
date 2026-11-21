@@ -720,12 +720,6 @@ class AppLocalizationsUk extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'А також нагадування, які стають частішими в міру наближення дедлайну';
 
   @override
-  String get editorReminderLabel => 'Нагадування';
-
-  @override
-  String get editorReminderSelectOptional => 'Оберіть нагадування (необов’язково)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'За $days днів до закінчення';
   }
@@ -916,16 +910,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Картка закінчується на 4728. Основна картка для витрат. Прив\'язана до основного поточного рахунку.';
 
   @override
-  String get tutorialSetReminderField => 'Налаштуйте нагадування, щоб отримувати сповіщення до закінчення терміну дії будь-якого запису. Торкніться поля Нагадування, щоб побачити варіанти.';
-
-  @override
   String get reminderTitle => 'Нагадування';
-
-  @override
-  String get reminderFreeSection => 'Безкоштовно';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Без нагадування';
@@ -947,45 +932,6 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Введіть довільні дні';
-
-  @override
-  String get reminderCascadeTitle => 'Каскадні нагадування';
-
-  @override
-  String get reminderCascadeSubtitle => 'Отримуйте кілька сповіщень до закінчення терміну запису';
-
-  @override
-  String get reminderPremiumRequired => 'Ця функція доступна для користувачів Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Оновити до Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Ці параметри нагадування доступні всім. Виберіть один, щоб отримати сповіщення.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Ці параметри розблоковуються з Premium для точнішого часу до закінчення терміну.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Торкніться Застосувати, щоб зберегти ваш вибір нагадування.';
-
-  @override
-  String get tutorialReminderPresets => 'Виберіть попередньо встановлений час, щоб отримувати сповіщення до закінчення терміну будь-якого запису.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Встановіть власну точну кількість днів до закінчення терміну.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Торкніться Застосувати, щоб зберегти ваш вибір нагадування.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Каскад надсилає кілька сповіщень до закінчення терміну запису. Доступно з Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Каскад надсилає кілька сповіщень до закінчення терміну запису.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara виділяє те, що потребує вашої уваги: записи, термін яких скоро спливає, відсутні нагадування та майбутні насичені тижні.';
 
   @override
@@ -999,9 +945,6 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Волієте слухати? Нехай ваші аналітичні дані читаються вголос, і призупиняйте будь-коли.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Торкніться поля нагадування, щоб побачити, як працюють нагадування.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Нагадування розраховуються від дати закінчення та Терміну продовження. Тут їх можна вимкнути.';
@@ -3587,9 +3530,6 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'У розділі Більше деталей зібрано додаткове: нотатки, повторення, час продовження, чий це запис, блокування, гаманець і фото. Відкривайте його, лише коли потрібно.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Повторення переносить дату вперед для підписок. Продовження займає приблизно повідомляє Vaultara, скільки триває продовження, щоб нагадування починалися достатньо рано.';
 
   @override
   String get tutorialAddRecordProtect => 'Заблокуйте запис, щоб перед показом він запитував відбиток пальця або блокування екрана. Позначайте картки як У моєму гаманці й додавайте фото документа.';

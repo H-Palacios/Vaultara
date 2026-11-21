@@ -716,12 +716,6 @@ class AppLocalizationsLo extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'ພ້ອມທັງການເຕືອນທີ່ຈະຖີ່ຂຶ້ນເມື່ອໃກ້ຮອດກຳນົດເວລາ';
 
   @override
-  String get editorReminderLabel => 'ການເຕືອນ';
-
-  @override
-  String get editorReminderSelectOptional => 'ເລືອກການເຕືອນ (ທາງເລືອກ)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days ມື້ກ່ອນໝົດອາຍຸ';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'ບັດລົງທ້າຍດ້ວຍ 4728. ບັດຄ່າໃຊ້ຈ່າຍຫຼັກ. ເຊື່ອມກັບບັນຊີກະແສລາຍວັນຫຼັກ.';
 
   @override
-  String get tutorialSetReminderField => 'ຕັ້ງການເຕືອນເພື່ອຮັບການແຈ້ງເຕືອນກ່ອນທີ່ບັນທຶກໃດຈະໝົດອາຍຸ. ແຕະຊ່ອງການເຕືອນເພື່ອເບິ່ງທາງເລືອກ.';
-
-  @override
   String get reminderTitle => 'ການເຕືອນ';
-
-  @override
-  String get reminderFreeSection => 'ຟຣີ';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'ບໍ່ມີການເຕືອນ';
@@ -938,45 +923,6 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'ໃສ່ວັນທີ່ກຳນົດເອງ';
-
-  @override
-  String get reminderCascadeTitle => 'ການເຕືອນເປັນຂັ້ນ';
-
-  @override
-  String get reminderCascadeSubtitle => 'ຮັບການແຈ້ງເຕືອນຫຼາຍຄັ້ງກ່ອນທີ່ບັນທຶກຈະໝົດອາຍຸ';
-
-  @override
-  String get reminderPremiumRequired => 'ຄຸນສົມບັດນີ້ມີໃຫ້ຜູ້ໃຊ້ Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'ອັບເກຣດເປັນ Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'ຕົວເລືອກການເຕືອນເຫຼົ່ານີ້ມີໃຫ້ທຸກຄົນ. ເລືອກໜຶ່ງເພື່ອຮັບການແຈ້ງເຕືອນ.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'ຕົວເລືອກເຫຼົ່ານີ້ປົດລັອກດ້ວຍ Premium ສຳລັບຈັງຫວະທີ່ແມ່ນຍຳກວ່າກ່ອນໝົດອາຍຸ.';
-
-  @override
-  String get tutorialReminderApplyFree => 'ແຕະ ນຳໃຊ້ ເພື່ອບັນທຶກທາງເລືອກການເຕືອນຂອງທ່ານ.';
-
-  @override
-  String get tutorialReminderPresets => 'ເລືອກເວລາທີ່ຕັ້ງໄວ້ລ່ວງໜ້າເພື່ອຮັບການແຈ້ງເຕືອນກ່ອນທີ່ບັນທຶກໃດຈະໝົດອາຍຸ.';
-
-  @override
-  String get tutorialReminderCustomDays => 'ຕັ້ງຄ່າຈຳນວນວັນທີ່ແມ່ນຍຳຂອງທ່ານເອງກ່ອນໝົດອາຍຸ.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'ແຕະ ນຳໃຊ້ ເພື່ອບັນທຶກທາງເລືອກການເຕືອນຂອງທ່ານ.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'ຄາສເຄດສົ່ງການແຈ້ງເຕືອນຫຼາຍຄັ້ງກ່ອນທີ່ບັນທຶກຈະໝົດອາຍຸ. ມີໃຫ້ດ້ວຍ Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'ຄາສເຄດສົ່ງການແຈ້ງເຕືອນຫຼາຍຄັ້ງກ່ອນທີ່ບັນທຶກຈະໝົດອາຍຸ.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara ໄຮໄລ້ສິ່ງທີ່ຕ້ອງການຄວາມສົນໃຈຂອງທ່ານ: ບັນທຶກທີ່ຈະໝົດອາຍຸໃນໄວໆນີ້, ການເຕືອນທີ່ຂາດຫາຍໄປ, ແລະອາທິດທີ່ຫຍຸ້ງທີ່ຈະມາເຖິງ.';
 
   @override
@@ -990,9 +936,6 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'ມັກຟັງບໍ? ໃຫ້ອ່ານຂໍ້ມູນວິເຄາະຂອງທ່ານອອກສຽງ ແລະ ຢຸດຊົ່ວຄາວໄດ້ທຸກເມື່ອ.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'ແຕະຊ່ອງເຕືອນເພື່ອເບິ່ງວ່າການເຕືອນເຮັດວຽກແນວໃດ.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'ການເຕືອນຄິດໄລ່ຈາກວັນໝົດອາຍຸ ແລະ ໄລຍະເວລາຕໍ່ອາຍຸ. ທ່ານສາມາດປິດໄດ້ທີ່ນີ້.';
@@ -3491,9 +3434,6 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'ລາຍລະອຽດເພີ່ມເຕີມມີສິ່ງເພີ່ມເຕີມ: ໝາຍເຫດ, ເຮັດຊ້ຳ, ເວລາຕໍ່ອາຍຸ, ບັນທຶກນັ້ນເປັນຂອງໃຜ, ການລັອກ, ກະເປົາເງິນ ແລະ ຮູບ. ເປີດເມື່ອຕ້ອງການເທົ່ານັ້ນ.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'ເຮັດຊ້ຳ ຍ້າຍວັນທີໄປຂ້າງໜ້າສຳລັບການສະໝັກສະມາຊິກ. ການຕໍ່ອາຍຸໃຊ້ເວລາປະມານ ບອກ Vaultara ວ່າການຕໍ່ອາຍຸໃຊ້ເວລາດົນເທົ່າໃດ ເພື່ອໃຫ້ການເຕືອນເລີ່ມກ່ອນຢ່າງພໍ.';
 
   @override
   String get tutorialAddRecordProtect => 'ລັອກບັນທຶກເພື່ອໃຫ້ຖາມລາຍນິ້ວມືຫຼືການລັອກໜ້າຈໍກ່ອນສະແດງ. ໝາຍບັດວ່າ ຢູ່ໃນກະເປົາເງິນຂອງຂ້ອຍ ແລະ ເພີ່ມຮູບຂອງເອກະສານ.';

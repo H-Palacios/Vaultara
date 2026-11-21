@@ -716,12 +716,6 @@ class AppLocalizationsZu extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Kuhlanganise nezikhumbuzo ezifika njalo njengoba usuku lokugcina lusondela';
 
   @override
-  String get editorReminderLabel => 'Isikhumbuzo';
-
-  @override
-  String get editorReminderSelectOptional => 'Khetha isikhumbuzo (okuzikhethela)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Izinsuku $days ngaphambi kokuphela';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Ikhadi eliphela ngo-4728. Ikhadi eliyinhloko lezindleko. Lixhunywe ku-akhawunti eyinhloko yamanje.';
 
   @override
-  String get tutorialSetReminderField => 'Setha isikhumbuzo ukuze uthole isaziso ngaphambi kokuba noma iyiphi irekhodi iphelelwe. Thepha inkambu yeSikhumbuzo ukubona izinketho.';
-
-  @override
   String get reminderTitle => 'Isikhumbuzo';
-
-  @override
-  String get reminderFreeSection => 'Mahhala';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Alukho isikhumbuzo';
@@ -939,45 +924,6 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Faka izinsuku ezizakho';
-
-  @override
-  String get reminderCascadeTitle => 'Izikhumbuzo ezilandelanayo';
-
-  @override
-  String get reminderCascadeSubtitle => 'Thola izaziso eziningi ngaphambi kokuba irekhodi iphelelwe';
-
-  @override
-  String get reminderPremiumRequired => 'Lesi sici siyatholakala kubasebenzisi be-Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Thuthukisela ku-Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Lezi zinketho zesikhumbuzo ziyatholakala kuwo wonke umuntu. Khetha esisodwa ukuze uthole isaziso.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Lezi zinketho zivulwa nge-Premium ukuze uthole isikhathi esiqondile ngaphambi kokuphelelwa.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Thepha u-Sebenzisa ukuze ugcine ukukhetha kwakho kwesikhumbuzo.';
-
-  @override
-  String get tutorialReminderPresets => 'Khetha isikhathi esisethiwe kusengaphambili ukuze waziswe ngaphambi kokuba noma iyiphi irekhodi iphelelwe.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Setha inombolo yakho eqondile yezinsuku ngaphambi kokuphelelwa.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Thepha u-Sebenzisa ukuze ugcine ukukhetha kwakho kwesikhumbuzo.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Izikhumbuzo ezilandelanayo zithumela izaziso eziningi ngaphambi kokuba irekhodi iphelelwe. Ziyatholakala nge-Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Izikhumbuzo ezilandelanayo zithumela izaziso eziningi ngaphambi kokuba irekhodi iphelelwe.';
-
-  @override
   String get tutorialInsightsSmartCard => 'I-Vaultara igqamisa lokho okudinga ukunakwa kwakho: amarekhodi azophelelwa maduze, izikhumbuzo ezingekho, namasonto amatasa azayo.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Uyakuthanda yini ukulalela? Vumela imininingwane yakho ifundwe ngokuzwakalayo, futhi umise noma nini.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Thepha inkambu yesikhumbuzo ukuze ubone ukuthi izikhumbuzo zisebenza kanjani.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Izikhumbuzo zibalwa kusukela osukwini lokuphelelwa yisikhathi nakuSikhathi sokuvuselela. Ungazicisha lapha.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Imininingwane eyengeziwe ibamba okwengeziwe: amanothi, iyaphindwa, isikhathi sokuvuselela, ukuthi irekhodi liyikabani, ukukhiya, isikhwama nezithombe. Yivule kuphela uma uyidinga.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Iyaphindwa ihambisa usuku phambili kwezinkokhelo ezibhalisiwe. Ukuvuselela kuthatha cishe kuyatshela i-Vaultara ukuthi ukuvuselela kuthatha isikhathi esingakanani, ukuze izikhumbuzo ziqale kusenesikhathi.';
 
   @override
   String get tutorialAddRecordProtect => 'Khiya irekhodi ukuze licelwe isigxivizo somunwe noma ukukhiya isikrini ngaphambi kokulibonisa. Maka amakhadi njengo Esikhwameni sami, bese wengeza izithombe zedokhumenti.';

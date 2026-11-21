@@ -716,12 +716,6 @@ class AppLocalizationsKk extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Сонымен қатар, мерзім жақындаған сайын жиілей түсетін еске салғыштар';
 
   @override
-  String get editorReminderLabel => 'Еске салғыш';
-
-  @override
-  String get editorReminderSelectOptional => 'Еске салғышты таңдаңыз (міндетті емес)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Мерзімге $days күн қалғанда';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Картаның соңы 4728. Негізгі шығыс картасы. Негізгі ағымдағы шотқа байланыстырылған.';
 
   @override
-  String get tutorialSetReminderField => 'Кез келген жазбаның мерзімі бітпей тұрып хабарландыру алу үшін еске салғышты орнатыңыз. Опцияларды көру үшін Еске салғыш өрісін түртіңіз.';
-
-  @override
   String get reminderTitle => 'Еске салғыш';
-
-  @override
-  String get reminderFreeSection => 'Тегін';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Еске салғыш жоқ';
@@ -939,45 +924,6 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Реттелген күндерді енгізіңіз';
-
-  @override
-  String get reminderCascadeTitle => 'Каскадты еске салғыштар';
-
-  @override
-  String get reminderCascadeSubtitle => 'Жазбаның мерзімі бітпей тұрып бірнеше хабарландыру алыңыз';
-
-  @override
-  String get reminderPremiumRequired => 'Бұл мүмкіндік Premium пайдаланушылар үшін қолжетімді.';
-
-  @override
-  String get reminderUpgradeCta => 'Premium нұсқасына жаңарту';
-
-  @override
-  String get tutorialReminderFreeSection => 'Бұл еске салғыш опциялары барлығына қолжетімді. Хабарландыру алу үшін біреуін таңдаңыз.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Бұл опциялар мерзімі бітпей тұрып дәлірек уақыт үшін Premium-мен ашылады.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Еске салғыш таңдауын сақтау үшін Қолдану түймесін түртіңіз.';
-
-  @override
-  String get tutorialReminderPresets => 'Кез келген жазбаның мерзімі бітпей тұрып хабарландыру алу үшін алдын ала орнатылған уақытты таңдаңыз.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Мерзімі бітпей тұрып өз дәл күндер санын орнатыңыз.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Еске салғыш таңдауын сақтау үшін Қолдану түймесін түртіңіз.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Каскад жазбаның мерзімі бітпей тұрып бірнеше хабарландыру жібереді. Premium-мен қолжетімді.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Каскад жазбаның мерзімі бітпей тұрып бірнеше хабарландыру жібереді.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara назарыңызды талап ететін нәрсені ерекшелейді: жақында мерзімі бітетін жазбалар, жоқ еске салғыштар және алдағы бос емес апталар.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Тыңдағанды қалайсыз ба? Талдауларыңызды дауыстап оқытыңыз және кез келген уақытта кідіртіңіз.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Еске салғыштардың қалай жұмыс істейтінін көру үшін еске салғыш өрісін түртіңіз.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Еске салғыштар біту күні мен Жаңарту уақытынан есептеледі. Оларды осы жерде өшіре аласыз.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Қосымша мәліметтер бөлімінде қосымша нәрселер бар: ескертпелер, қайталану, жаңарту уақыты, жазба кімдікі екені, құлып, әмиян және фотолар. Оны тек қажет болғанда ашыңыз.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Қайталану жазылымдар үшін күнді алға жылжытады. Жаңартуға кететін уақыт шамамен Vaultara-ға жаңартуға қанша уақыт кететінін айтады, сонда еске салғыштар жеткілікті ерте басталады.';
 
   @override
   String get tutorialAddRecordProtect => 'Жазбаны құлыптасаңыз, оны көрсетер алдында саусақ ізі немесе экран құлпы сұралады. Карталарды Әмиянымда деп белгілеп, құжаттың фотоларын қосыңыз.';

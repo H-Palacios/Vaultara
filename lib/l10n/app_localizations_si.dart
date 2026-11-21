@@ -716,12 +716,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'මීට අමතරව අවසාන දිනය ආසන්න වන විට නිතර නිතර ලැබෙන මතක් කිරීම්';
 
   @override
-  String get editorReminderLabel => 'මතක් කිරීම';
-
-  @override
-  String get editorReminderSelectOptional => 'මතක් කිරීම තෝරන්න (විකල්ප)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'කල් ඉකුත් වීමට දින $daysකට පෙර';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tutorialSampleRecordNotes => '4728 න් අවසන් වන කාඩ්පත. ප්‍රාථමික වියදම් කාඩ්පත. ප්‍රධාන ජංගම ගිණුමට සම්බන්ධයි.';
 
   @override
-  String get tutorialSetReminderField => 'ඕනෑම වාර්තාවක් කල් ඉකුත් වීමට පෙර දැනුම්දීමක් ලබා ගැනීමට මතක් කිරීමක් සකසන්න. විකල්ප බැලීමට මතක් කිරීමේ ක්ෂේත්‍රය තට්ටු කරන්න.';
-
-  @override
   String get reminderTitle => 'මතක් කිරීම';
-
-  @override
-  String get reminderFreeSection => 'නොමිලේ';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'මතක් කිරීමක් නැත';
@@ -939,45 +924,6 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'අභිරුචි දින ඇතුළත් කරන්න';
-
-  @override
-  String get reminderCascadeTitle => 'කැස්කේඩ් මතක් කිරීම්';
-
-  @override
-  String get reminderCascadeSubtitle => 'වාර්තාවක් කල් ඉකුත් වීමට පෙර දැනුම්දීම් කිහිපයක් ලබා ගන්න';
-
-  @override
-  String get reminderPremiumRequired => 'මෙම විශේෂාංගය Premium පරිශීලකයන් සඳහා ලබා ගත හැකිය.';
-
-  @override
-  String get reminderUpgradeCta => 'Premium වෙත උත්ශ්‍රේණි කරන්න';
-
-  @override
-  String get tutorialReminderFreeSection => 'මෙම මතක් කිරීමේ විකල්ප සියලුම දෙනාට ලබා ගත හැකිය. දැනුම්දීමක් ලබා ගැනීමට එකක් තෝරන්න.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'මෙම විකල්ප කල් ඉකුත් වීමට පෙර වඩාත් නිරවද්‍ය කාලය සඳහා Premium සමඟ අගුළු ඇරෙයි.';
-
-  @override
-  String get tutorialReminderApplyFree => 'ඔබේ මතක් කිරීමේ තේරීම සුරැකීමට යොදන්න මත තට්ටු කරන්න.';
-
-  @override
-  String get tutorialReminderPresets => 'ඕනෑම වාර්තාවක් කල් ඉකුත් වීමට පෙර දැනුම් දීමට පෙර සකසන ලද කාලයක් තෝරන්න.';
-
-  @override
-  String get tutorialReminderCustomDays => 'කල් ඉකුත් වීමට පෙර ඔබේම නිරවද්‍ය දින ගණන සකසන්න.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'ඔබේ මතක් කිරීමේ තේරීම සුරැකීමට යොදන්න මත තට්ටු කරන්න.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'කැස්කේඩය වාර්තාවක් කල් ඉකුත් වීමට පෙර දැනුම්දීම් කිහිපයක් යවයි. Premium සමඟ ලබා ගත හැකිය.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'කැස්කේඩය වාර්තාවක් කල් ඉකුත් වීමට පෙර දැනුම්දීම් කිහිපයක් යවයි.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara ඔබේ අවධානය අවශ්‍ය දේ ඉස්මතු කරයි: ඉක්මනින් කල් ඉකුත් වන වාර්තා, නොමැති මතක් කිරීම්, සහ ඉදිරි කාර්යබහුල සති.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'අහන්න කැමතිද? ඔබේ විශ්ලේෂණ හඬ නඟා කියවන්න සලස්වන්න, ඕනෑම වේලාවක විරාමය දෙන්න.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'මතක් කිරීම් ක්‍රියා කරන ආකාරය බැලීමට මතක් කිරීමේ ක්ෂේත්‍රය තට්ටු කරන්න.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'මතක් කිරීම් කල් ඉකුත් දිනය සහ අලුත් කිරීමේ කාලයෙන් ගණනය කෙරේ. ඔබට ඒවා මෙතැනින් අක්‍රිය කළ හැක.';
@@ -3511,9 +3454,6 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => '“තවත් විස්තර” හි අමතර දේවල් ඇත: සටහන්, පුනරාවර්තනය, අලුත් කිරීමේ කාලය, වාර්තාව කාගේද, අගුල, පසුම්බිය සහ ඡායාරූප. ඔබට අවශ්‍ය වූ විට පමණක් එය විවෘත කරන්න.';
-
-  @override
-  String get tutorialAddRecordRepeat => '“පුනරාවර්තනය” දායකත්ව සඳහා දිනය ඉදිරියට ගෙන යයි. “අලුත් කිරීමට ගත වන කාලය ආසන්න වශයෙන්” මගින් අලුත් කිරීමට කොපමණ කාලයක් ගත වේදැයි Vaultara ට කියයි, එවිට මතක් කිරීම් ප්‍රමාණවත් තරම් කලින් ආරම්භ වේ.';
 
   @override
   String get tutorialAddRecordProtect => 'වාර්තාවක් පෙන්වීමට පෙර ඔබේ ඇඟිලි සලකුණ හෝ තිර අගුල ඉල්ලීමට එය අගුළු දමන්න. කාඩ්පත් “මගේ පසුම්බියේ” ලෙස සලකුණු කර, ලේඛනයේ ඡායාරූප එක් කරන්න.';

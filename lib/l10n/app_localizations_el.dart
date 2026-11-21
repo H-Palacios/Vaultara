@@ -716,12 +716,6 @@ class AppLocalizationsEl extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Επιπλέον υπενθυμίσεις που γίνονται πιο συχνές καθώς πλησιάζει η προθεσμία';
 
   @override
-  String get editorReminderLabel => 'Υπενθύμιση';
-
-  @override
-  String get editorReminderSelectOptional => 'Επιλέξτε υπενθύμιση (προαιρετικό)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days ημέρες πριν από τη λήξη';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Κάρτα που λήγει σε 4728. Κύρια κάρτα δαπανών. Συνδεδεμένη με τον κύριο τρέχοντα λογαριασμό.';
 
   @override
-  String get tutorialSetReminderField => 'Ορίστε μια υπενθύμιση για να λάβετε ειδοποίηση πριν λήξει οποιαδήποτε εγγραφή. Πατήστε στο πεδίο Υπενθύμιση για να δείτε τις επιλογές.';
-
-  @override
   String get reminderTitle => 'Υπενθύμιση';
-
-  @override
-  String get reminderFreeSection => 'Δωρεάν';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Χωρίς υπενθύμιση';
@@ -939,45 +924,6 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Εισάγετε προσαρμοσμένες ημέρες';
-
-  @override
-  String get reminderCascadeTitle => 'Κλιμακωτές υπενθυμίσεις';
-
-  @override
-  String get reminderCascadeSubtitle => 'Λάβετε πολλαπλές ειδοποιήσεις πριν λήξει μια εγγραφή';
-
-  @override
-  String get reminderPremiumRequired => 'Αυτή η λειτουργία είναι διαθέσιμη για χρήστες Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Αναβάθμιση σε Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Αυτές οι επιλογές υπενθύμισης είναι διαθέσιμες για όλους. Επιλέξτε μία για να λάβετε ειδοποίηση.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Αυτές οι επιλογές ξεκλειδώνονται με Premium για πιο ακριβή χρονισμό πριν τη λήξη.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Πατήστε Εφαρμογή για να αποθηκεύσετε την επιλογή υπενθύμισης.';
-
-  @override
-  String get tutorialReminderPresets => 'Επιλέξτε προκαθορισμένο χρόνο για να ειδοποιηθείτε πριν λήξει οποιαδήποτε εγγραφή.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Ορίστε τον δικό σας ακριβή αριθμό ημερών πριν τη λήξη.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Πατήστε Εφαρμογή για να αποθηκεύσετε την επιλογή υπενθύμισης.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Οι κλιμακωτές υπενθυμίσεις στέλνουν πολλαπλές ειδοποιήσεις πριν λήξει μια εγγραφή. Διαθέσιμες με Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Οι κλιμακωτές υπενθυμίσεις στέλνουν πολλαπλές ειδοποιήσεις πριν λήξει μια εγγραφή.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Το Vaultara τονίζει τι χρειάζεται την προσοχή σας: εγγραφές που λήγουν σύντομα, υπενθυμίσεις που λείπουν και πολυάσχολες εβδομάδες που έρχονται.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Προτιμάτε να ακούτε; Ακούστε τις πληροφορίες σας να διαβάζονται δυνατά και κάντε παύση όποτε θέλετε.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Πατήστε το πεδίο υπενθύμισης για να δείτε πώς λειτουργούν οι υπενθυμίσεις.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Οι υπενθυμίσεις υπολογίζονται από την ημερομηνία λήξης και τον Χρόνο ανανέωσης. Μπορείτε να τις απενεργοποιήσετε εδώ.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Οι Περισσότερες λεπτομέρειες περιέχουν τα πρόσθετα: σημειώσεις, επανάληψη, χρόνο ανανέωσης, σε ποιον ανήκει η εγγραφή, κλείδωμα, πορτοφόλι και φωτογραφίες. Ανοίξτε τες μόνο όταν τις χρειάζεστε.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Η Επανάληψη μετακινεί την ημερομηνία μπροστά για συνδρομές. Η ρύθμιση Η ανανέωση διαρκεί περίπου λέει στο Vaultara πόσο χρόνο παίρνει η ανανέωση, ώστε οι υπενθυμίσεις να ξεκινούν αρκετά νωρίς.';
 
   @override
   String get tutorialAddRecordProtect => 'Κλειδώστε μια εγγραφή ώστε να ζητά το δακτυλικό σας αποτύπωμα ή το κλείδωμα οθόνης πριν εμφανιστεί. Σημειώστε τις κάρτες ως Στο πορτοφόλι μου και προσθέστε φωτογραφίες του εγγράφου.';

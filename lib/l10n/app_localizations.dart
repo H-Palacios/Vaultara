@@ -1549,18 +1549,6 @@ abstract class AppLocalizations {
   /// **'Plus reminders that get more frequent as the deadline nears'**
   String get planFeatureAutomaticFollowUps;
 
-  /// No description provided for @editorReminderLabel.
-  ///
-  /// In en, this message translates to:
-  /// **'Reminder'**
-  String get editorReminderLabel;
-
-  /// No description provided for @editorReminderSelectOptional.
-  ///
-  /// In en, this message translates to:
-  /// **'Select a reminder (optional)'**
-  String get editorReminderSelectOptional;
-
   /// No description provided for @editorReminderDaysBefore.
   ///
   /// In en, this message translates to:
@@ -1909,29 +1897,11 @@ abstract class AppLocalizations {
   /// **'Card ending 4728. Primary spending card. Linked to main current account.'**
   String get tutorialSampleRecordNotes;
 
-  /// No description provided for @tutorialSetReminderField.
-  ///
-  /// In en, this message translates to:
-  /// **'Set a reminder to receive a notification before any record expires. Tap the Reminder field to see the options.'**
-  String get tutorialSetReminderField;
-
   /// No description provided for @reminderTitle.
   ///
   /// In en, this message translates to:
   /// **'Reminder'**
   String get reminderTitle;
-
-  /// No description provided for @reminderFreeSection.
-  ///
-  /// In en, this message translates to:
-  /// **'Free'**
-  String get reminderFreeSection;
-
-  /// No description provided for @reminderPremiumSection.
-  ///
-  /// In en, this message translates to:
-  /// **'Premium'**
-  String get reminderPremiumSection;
 
   /// No description provided for @reminderNone.
   ///
@@ -1950,84 +1920,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{days, plural, one{{days} day before} other{{days} days before}}'**
   String reminderDaysBefore(int days);
-
-  /// No description provided for @reminderCustomDaysTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Enter custom days'**
-  String get reminderCustomDaysTitle;
-
-  /// No description provided for @reminderCascadeTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Cascade reminders'**
-  String get reminderCascadeTitle;
-
-  /// No description provided for @reminderCascadeSubtitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Receive multiple notifications before a record expires'**
-  String get reminderCascadeSubtitle;
-
-  /// No description provided for @reminderPremiumRequired.
-  ///
-  /// In en, this message translates to:
-  /// **'This feature is available for Premium users.'**
-  String get reminderPremiumRequired;
-
-  /// No description provided for @reminderUpgradeCta.
-  ///
-  /// In en, this message translates to:
-  /// **'Upgrade to Premium'**
-  String get reminderUpgradeCta;
-
-  /// No description provided for @tutorialReminderFreeSection.
-  ///
-  /// In en, this message translates to:
-  /// **'These reminder options are available for everyone. Pick one to receive a notification.'**
-  String get tutorialReminderFreeSection;
-
-  /// No description provided for @tutorialReminderPremiumSection.
-  ///
-  /// In en, this message translates to:
-  /// **'These options unlock with Premium for more precise timing before expiry.'**
-  String get tutorialReminderPremiumSection;
-
-  /// No description provided for @tutorialReminderApplyFree.
-  ///
-  /// In en, this message translates to:
-  /// **'Tap Apply to save your reminder choice.'**
-  String get tutorialReminderApplyFree;
-
-  /// No description provided for @tutorialReminderPresets.
-  ///
-  /// In en, this message translates to:
-  /// **'Choose a preset time to be notified before any record expires.'**
-  String get tutorialReminderPresets;
-
-  /// No description provided for @tutorialReminderCustomDays.
-  ///
-  /// In en, this message translates to:
-  /// **'Set your own exact number of days before expiry.'**
-  String get tutorialReminderCustomDays;
-
-  /// No description provided for @tutorialReminderApplyPremium.
-  ///
-  /// In en, this message translates to:
-  /// **'Tap Apply to save your reminder choice.'**
-  String get tutorialReminderApplyPremium;
-
-  /// No description provided for @tutorialReminderCascadeFree.
-  ///
-  /// In en, this message translates to:
-  /// **'Cascade sends multiple notifications before a record expires. Available with Premium.'**
-  String get tutorialReminderCascadeFree;
-
-  /// No description provided for @tutorialReminderCascadePremium.
-  ///
-  /// In en, this message translates to:
-  /// **'Cascade sends multiple notifications before a record expires.'**
-  String get tutorialReminderCascadePremium;
 
   /// No description provided for @tutorialInsightsSmartCard.
   ///
@@ -2058,12 +1950,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Prefer to listen? Have your insights read aloud, and pause any time.'**
   String get tutorialAudio;
-
-  /// No description provided for @tutorialAddRecordReminderTour.
-  ///
-  /// In en, this message translates to:
-  /// **'Tap the reminder field to see how reminders work.'**
-  String get tutorialAddRecordReminderTour;
 
   /// No description provided for @tutorialAddRecordReminderSolo.
   ///
@@ -6114,12 +6000,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'More details holds the extras: notes, repeat, renewal time, whose record it is, lock, wallet and photos. Open it only when you need it.'**
   String get tutorialAddRecordMoreDetails;
-
-  /// Tutorial message over the Repeat and Renewal takes about fields in the add record form.
-  ///
-  /// In en, this message translates to:
-  /// **'Repeat moves the date forward for subscriptions. Renewal takes about tells Vaultara how long renewing takes, so reminders start early enough.'**
-  String get tutorialAddRecordRepeat;
 
   /// Tutorial message over the Lock this record, In my wallet and photos area in the add record form.
   ///

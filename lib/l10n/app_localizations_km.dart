@@ -714,12 +714,6 @@ class AppLocalizationsKm extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'បូករួមទាំងការរំលឹកដែលកាន់តែញឹកញាប់ នៅពេលការផុតកំណត់កាន់តែខិតជិតមកដល់';
 
   @override
-  String get editorReminderLabel => 'ការរំលឹក';
-
-  @override
-  String get editorReminderSelectOptional => 'ជ្រើសរើសការរំលឹក (ស្រេចចិត្ត)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days ថ្ងៃមុនការផុតកំណត់';
   }
@@ -908,16 +902,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'កាតលេខចុងក្រោយ 4728។ កាតចំណាយចម្បង។ ភ្ជាប់ជាមួយគណនីចរន្តចម្បង។';
 
   @override
-  String get tutorialSetReminderField => 'កំណត់ការរំលឹក ដើម្បីទទួលការជូនដំណឹងមុនពេលកំណត់ត្រាណាមួយផុតកំណត់។ ចុចលើវាល «ការរំលឹក» ដើម្បីមើលជម្រើស។';
-
-  @override
   String get reminderTitle => 'ការរំលឹក';
-
-  @override
-  String get reminderFreeSection => 'ឥតគិតថ្លៃ';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'គ្មានការរំលឹក';
@@ -936,45 +921,6 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'បញ្ចូលចំនួនថ្ងៃផ្ទាល់ខ្លួន';
-
-  @override
-  String get reminderCascadeTitle => 'ការរំលឹកជាដំណាក់កាល';
-
-  @override
-  String get reminderCascadeSubtitle => 'ទទួលការជូនដំណឹងច្រើនដង មុនពេលកំណត់ត្រាផុតកំណត់';
-
-  @override
-  String get reminderPremiumRequired => 'មុខងារនេះមានសម្រាប់អ្នកប្រើ Premium។';
-
-  @override
-  String get reminderUpgradeCta => 'ដំឡើងកម្រិតទៅ Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'ជម្រើសការរំលឹកទាំងនេះមានសម្រាប់អ្នករាល់គ្នា។ ជ្រើសរើសមួយ ដើម្បីទទួលការជូនដំណឹង។';
-
-  @override
-  String get tutorialReminderPremiumSection => 'ជម្រើសទាំងនេះត្រូវបានដោះសោជាមួយ Premium សម្រាប់ការកំណត់ពេលវេលាកាន់តែច្បាស់លាស់មុនការផុតកំណត់។';
-
-  @override
-  String get tutorialReminderApplyFree => 'ចុច «អនុវត្ត» ដើម្បីរក្សាទុកជម្រើសការរំលឹករបស់អ្នក។';
-
-  @override
-  String get tutorialReminderPresets => 'ជ្រើសរើសពេលវេលាដែលកំណត់ជាមុន ដើម្បីទទួលការជូនដំណឹងមុនពេលកំណត់ត្រាណាមួយផុតកំណត់។';
-
-  @override
-  String get tutorialReminderCustomDays => 'កំណត់ចំនួនថ្ងៃជាក់លាក់ផ្ទាល់ខ្លួនរបស់អ្នក មុនការផុតកំណត់។';
-
-  @override
-  String get tutorialReminderApplyPremium => 'ចុច «អនុវត្ត» ដើម្បីរក្សាទុកជម្រើសការរំលឹករបស់អ្នក។';
-
-  @override
-  String get tutorialReminderCascadeFree => 'ការរំលឹកជាដំណាក់កាល ផ្ញើការជូនដំណឹងច្រើនដង មុនពេលកំណត់ត្រាផុតកំណត់។ មានជាមួយ Premium។';
-
-  @override
-  String get tutorialReminderCascadePremium => 'ការរំលឹកជាដំណាក់កាល ផ្ញើការជូនដំណឹងច្រើនដង មុនពេលកំណត់ត្រាផុតកំណត់។';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara បង្ហាញអ្វីដែលត្រូវការការយកចិត្តទុកដាក់ពីអ្នក៖ កំណត់ត្រាដែលជិតផុតកំណត់ ការរំលឹកដែលខ្វះ និងសប្ដាហ៍មមាញឹកនាពេលខាងមុខ។';
 
   @override
@@ -988,9 +934,6 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'ចូលចិត្តស្ដាប់ជាង? ស្ដាប់ការយល់ដឹងរបស់អ្នកជាសំឡេង ហើយផ្អាកបានគ្រប់ពេល។';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'ចុចលើវាលការរំលឹក ដើម្បីមើលពីរបៀបដែលការរំលឹកដំណើរការ។';
 
   @override
   String get tutorialAddRecordReminderSolo => 'ការរំលឹកត្រូវបានគណនាពីកាលបរិច្ឆេទផុតកំណត់ និងរយៈពេលបន្តសុពលភាព។ អ្នកអាចបិទវានៅទីនេះ។';
@@ -3489,9 +3432,6 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'ព័ត៌មានលម្អិតបន្ថែម មានរបស់បន្ថែម៖ កំណត់ចំណាំ ធ្វើឡើងវិញ ពេលបន្តសុពលភាព កំណត់ត្រាជារបស់នរណា សោ កាបូប និងរូបថត។ បើកវាតែនៅពេលអ្នកត្រូវការប៉ុណ្ណោះ។';
-
-  @override
-  String get tutorialAddRecordRepeat => 'ធ្វើឡើងវិញ រុញកាលបរិច្ឆេទទៅមុខសម្រាប់ការជាវ។ ការបន្តសុពលភាពចំណាយពេលប្រហែល ប្រាប់ Vaultara ថាការបន្តសុពលភាពចំណាយពេលប៉ុន្មាន ដើម្បីឱ្យការរំលឹកចាប់ផ្តើមទាន់ពេល។';
 
   @override
   String get tutorialAddRecordProtect => 'ចាក់សោកំណត់ត្រា ដើម្បីឱ្យវាសុំស្នាមម្រាមដៃ ឬសោអេក្រង់របស់អ្នកមុនពេលបង្ហាញ។ សម្គាល់កាតថា នៅក្នុងកាបូបរបស់ខ្ញុំ ហើយបន្ថែមរូបថតនៃឯកសារ។';

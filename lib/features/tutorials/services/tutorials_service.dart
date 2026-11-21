@@ -69,7 +69,7 @@ class TutorialsService {
         title: t.tutorialsRemindersTitle,
         subtitle: t.tutorialsRemindersSubtitle,
         group: TutorialGroup.basics,
-        steps: TutorialStepGroups.setReminderFree.length,
+        steps: TutorialStepGroups.reminders.length,
       ),
       Tutorial(
         id: TutorialIds.renew,

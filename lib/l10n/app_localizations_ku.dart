@@ -716,12 +716,6 @@ class AppLocalizationsKu extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Plus bîrxistinên ku her ku dem nêzîk dibe pirtir dibin';
 
   @override
-  String get editorReminderLabel => 'Bîrxistin';
-
-  @override
-  String get editorReminderSelectOptional => 'Bîrxistinekê hilbijêre (bijarî)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days roj berî bidawîbûnê';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Kart bi 4728 diqede. Karta sereke ya xerckirinê. Bi hesabê sereke yê rojane ve girêdayî ye.';
 
   @override
-  String get tutorialSetReminderField => 'Bîrxistinekê dayne ji bo wergirtina agahdariyê berî bidawîbûna her tomarekê. Li qada Bîrxistinê bitikîne ji bo dîtina hilbijartinan.';
-
-  @override
   String get reminderTitle => 'Bîrxistin';
-
-  @override
-  String get reminderFreeSection => 'Belaş';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Bê bîrxistin';
@@ -939,45 +924,6 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Rojên taybet binivîse';
-
-  @override
-  String get reminderCascadeTitle => 'Bîrxistinên kaskad';
-
-  @override
-  String get reminderCascadeSubtitle => 'Berî ku tomarek bidawî bibe çend agahdariyan werbigire';
-
-  @override
-  String get reminderPremiumRequired => 'Ev taybetmendî ji bo bikarhênerên Premium berdest e.';
-
-  @override
-  String get reminderUpgradeCta => 'Derbasî Premium bibe';
-
-  @override
-  String get tutorialReminderFreeSection => 'Ev hilbijartinên bîrxistinê ji bo her kesî berdest in. Yekê hilbijêre ji bo wergirtina agahdariyê.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Ev hilbijartin bi Premium re vedibin ji bo dema hûrtir berî bidawîbûnê.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Li Bicîh bîne bitikîne ji bo qeydkirina hilbijartina bîrxistinê.';
-
-  @override
-  String get tutorialReminderPresets => 'Demeke pêşdiyarkirî hilbijêre ji bo agahdarbûna berî bidawîbûna her tomarekê.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Hejmara rojan a xwe ya rast berî bidawîbûnê dayne.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Li Bicîh bîne bitikîne ji bo qeydkirina hilbijartina bîrxistinê.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Kaskad çend agahdariyan dişîne berî ku tomarek bidawî bibe. Bi Premium re berdest e.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Kaskad çend agahdariyan dişîne berî ku tomarek bidawî bibe.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara ya ku hewceyî baldariya te ye ronî dike: tomarên ku zû bidawî dibin, bîrxistinên kêm û hefteyên tijî yên pêş.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Deng bi te xweş e? Bila têgihiştinên te bi dengekî bilind bên xwendin, û her dem rawestîne.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Li qada bîrxistinê bitikîne da ku bibînî ka çawa dixebitin.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Bîrxistin ji dîroka qedandinê û Dema nûkirinê têne hesibandin. Tu dikarî li vir wan bigirî.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Hûrguliyên din tiştên zêde digire: nîşe, dubarebûn, dema nûkirinê, tomar a kê ye, qefl, cizdan û wêne. Tenê gava ku hewce be veke.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Dubarebûn dîrokê ji bo abonetiyan pêşve dibe. Nûkirin bi qasî ji Vaultara re dibêje nûkirin çiqas dikişîne, da ku bîrxistin têra xwe zû dest pê bikin.';
 
   @override
   String get tutorialAddRecordProtect => 'Tomarekê qefl bike da ku beriya nîşandanê şopa tilî an qefla ekranê bipirse. Kartan wekî Di cizdanê min de nîşan bike û wêneyên belgeyê zêde bike.';

@@ -716,12 +716,6 @@ class AppLocalizationsMr extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'तसेच अंतिम तारीख जवळ येईल तसे अधिक वारंवार येणारे रिमाइंडर';
 
   @override
-  String get editorReminderLabel => 'रिमाइंडर';
-
-  @override
-  String get editorReminderSelectOptional => 'रिमाइंडर निवडा (पर्यायी)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'मुदतसमाप्तीच्या $days दिवस आधी';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsMr extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'कार्डचे शेवटचे अंक 4728. खर्चासाठीचे मुख्य कार्ड. मुख्य चालू खात्याशी लिंक केलेले.';
 
   @override
-  String get tutorialSetReminderField => 'कोणत्याही नोंदीची मुदत संपण्यापूर्वी सूचना मिळवण्यासाठी रिमाइंडर सेट करा. पर्याय पाहण्यासाठी रिमाइंडर फील्डवर टॅप करा.';
-
-  @override
   String get reminderTitle => 'रिमाइंडर';
-
-  @override
-  String get reminderFreeSection => 'विनामूल्य';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'रिमाइंडर नाही';
@@ -939,45 +924,6 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'कस्टम दिवस एंटर करा';
-
-  @override
-  String get reminderCascadeTitle => 'रिमाइंडर मालिका';
-
-  @override
-  String get reminderCascadeSubtitle => 'नोंदीची मुदत संपण्यापूर्वी एकाधिक सूचना मिळवा';
-
-  @override
-  String get reminderPremiumRequired => 'हे वैशिष्ट्य Premium वापरकर्त्यांसाठी उपलब्ध आहे.';
-
-  @override
-  String get reminderUpgradeCta => 'Premium वर अपग्रेड करा';
-
-  @override
-  String get tutorialReminderFreeSection => 'हे रिमाइंडर पर्याय सर्वांसाठी उपलब्ध आहेत. सूचना मिळवण्यासाठी एक पर्याय निवडा.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'मुदतसमाप्तीपूर्वी अधिक नेमक्या वेळेसाठी हे पर्याय Premium सह अनलॉक होतात.';
-
-  @override
-  String get tutorialReminderApplyFree => 'तुमची रिमाइंडरची निवड सेव्ह करण्यासाठी लागू करा वर टॅप करा.';
-
-  @override
-  String get tutorialReminderPresets => 'कोणत्याही नोंदीची मुदत संपण्यापूर्वी सूचना मिळवण्यासाठी पूर्वनिर्धारित वेळ निवडा.';
-
-  @override
-  String get tutorialReminderCustomDays => 'मुदतसमाप्तीपूर्वीच्या दिवसांची नेमकी संख्या स्वतः सेट करा.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'तुमची रिमाइंडरची निवड सेव्ह करण्यासाठी लागू करा वर टॅप करा.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'नोंदीची मुदत संपण्यापूर्वी रिमाइंडर मालिका एकाधिक सूचना पाठवते. Premium सह उपलब्ध.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'नोंदीची मुदत संपण्यापूर्वी रिमाइंडर मालिका एकाधिक सूचना पाठवते.';
-
-  @override
   String get tutorialInsightsSmartCard => 'तुम्ही कशाकडे लक्ष द्यायला हवे ते Vaultara ठळकपणे दाखवते: लवकरच मुदत संपणाऱ्या नोंदी, रिमाइंडर नसलेल्या नोंदी आणि पुढचे व्यस्त आठवडे.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'ऐकायला आवडेल? तुमचे इनसाइट्स मोठ्याने वाचून घ्या आणि कधीही थांबवा.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'रिमाइंडर कसे काम करतात ते पाहण्यासाठी रिमाइंडर फील्डवर टॅप करा.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'रिमाइंडर मुदत संपण्याची तारीख आणि नूतनीकरणाचा वेळ यावरून ठरतात. तुम्ही ते इथे बंद करू शकता.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'अधिक तपशील मध्ये अतिरिक्त गोष्टी आहेत: टिपा, पुनरावृत्ती, नूतनीकरणाचा वेळ, नोंद कोणाची आहे, लॉक, पाकीट आणि फोटो. गरज असेल तेव्हाच ते उघडा.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'पुनरावृत्ती सबस्क्रिप्शनसाठी तारीख पुढे सरकवते. नूतनीकरणाला लागणारा वेळ साधारण हे Vaultara ला सांगते की नूतनीकरणाला किती वेळ लागतो, म्हणजे रिमाइंडर पुरेसे आधी सुरू होतात.';
 
   @override
   String get tutorialAddRecordProtect => 'नोंद लॉक केल्यास ती दाखवण्यापूर्वी तुमचे फिंगरप्रिंट किंवा स्क्रीन लॉक विचारले जाते. कार्डे माझ्या पाकिटात म्हणून चिन्हांकित करा आणि कागदपत्राचे फोटो जोडा.';

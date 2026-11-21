@@ -716,12 +716,6 @@ class AppLocalizationsAz extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Üstəlik, son tarix yaxınlaşdıqca daha tez-tez gələn xatırlatmalar';
 
   @override
-  String get editorReminderLabel => 'Xatırlatma';
-
-  @override
-  String get editorReminderSelectOptional => 'Xatırlatma seçin (istəyə görə)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Bitmə tarixindən $days gün əvvəl';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Kartın son rəqəmləri 4728. Əsas xərc kartı. Əsas cari hesaba bağlıdır.';
 
   @override
-  String get tutorialSetReminderField => 'Hər hansı sənədin müddəti bitməzdən əvvəl bildiriş almaq üçün xatırlatma qurun. Seçimləri görmək üçün “Xatırlatma” sahəsinə toxunun.';
-
-  @override
   String get reminderTitle => 'Xatırlatma';
-
-  @override
-  String get reminderFreeSection => 'Pulsuz';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Xatırlatma yoxdur';
@@ -939,45 +924,6 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Fərdi günləri daxil edin';
-
-  @override
-  String get reminderCascadeTitle => 'Pilləli xatırlatmalar';
-
-  @override
-  String get reminderCascadeSubtitle => 'Sənədin müddəti bitməzdən əvvəl bir neçə bildiriş alın';
-
-  @override
-  String get reminderPremiumRequired => 'Bu funksiya Premium istifadəçiləri üçündür.';
-
-  @override
-  String get reminderUpgradeCta => 'Premium-a keç';
-
-  @override
-  String get tutorialReminderFreeSection => 'Bu xatırlatma seçimləri hamı üçün əlçatandır. Bildiriş almaq üçün birini seçin.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Bu seçimlər Premium ilə açılır və bitmə tarixindən əvvəl daha dəqiq vaxt təyin etməyə imkan verir.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Xatırlatma seçiminizi yadda saxlamaq üçün “Tətbiq et” düyməsinə toxunun.';
-
-  @override
-  String get tutorialReminderPresets => 'Hər hansı sənədin müddəti bitməzdən əvvəl bildiriş almaq üçün hazır vaxt seçin.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Bitmə tarixindən əvvəlki günlərin dəqiq sayını özünüz təyin edin.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Xatırlatma seçiminizi yadda saxlamaq üçün “Tətbiq et” düyməsinə toxunun.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Pilləli xatırlatma sənədin müddəti bitməzdən əvvəl bir neçə bildiriş göndərir. Premium ilə əlçatandır.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Pilləli xatırlatma sənədin müddəti bitməzdən əvvəl bir neçə bildiriş göndərir.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara diqqətinizi tələb edənləri önə çıxarır: müddəti tezliklə bitən sənədlər, xatırlatması olmayanlar və qarşıdakı gərgin həftələr.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Dinləmək istəyirsiniz? Təhlillərinizi səsli oxudun və istənilən vaxt dayandırın.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Xatırlatmaların necə işlədiyini görmək üçün xatırlatma sahəsinə toxunun.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Xatırlatmalar bitmə tarixinə və Yeniləmə müddətinə görə hesablanır. Onları burada söndürə bilərsiniz.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Ətraflı məlumat əlavələri saxlayır: qeydlər, təkrar, müddətin uzadılması vaxtı, sənədin kimə aid olduğu, kilid, cüzdan və şəkillər. Yalnız lazım olanda açın.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Təkrar abunəliklər üçün tarixi irəli çəkir. Müddətin uzadılması təxminən sahəsi Vaultara-ya uzatmanın nə qədər vaxt apardığını bildirir ki, xatırlatmalar kifayət qədər tez başlasın.';
 
   @override
   String get tutorialAddRecordProtect => 'Sənədi kilidləyin ki, göstərməzdən əvvəl barmaq izi və ya ekran kilidi istənsin. Kartları Cüzdanımdadır kimi qeyd edin və sənədin şəkillərini əlavə edin.';

@@ -716,12 +716,6 @@ class AppLocalizationsSk extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'A navyše pripomienky, ktoré sú s blížiacim sa termínom častejšie';
 
   @override
-  String get editorReminderLabel => 'Pripomienka';
-
-  @override
-  String get editorReminderSelectOptional => 'Vyberte pripomienku (voliteľné)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days dní pred vypršaním';
   }
@@ -911,16 +905,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Karta končiaca na 4728. Primárna karta na výdavky. Prepojená s hlavným bežným účtom.';
 
   @override
-  String get tutorialSetReminderField => 'Nastavte pripomienku, aby ste dostali upozornenie pred vypršaním platnosti akéhokoľvek záznamu. Klepnutím na pole Pripomienka zobrazíte možnosti.';
-
-  @override
   String get reminderTitle => 'Pripomienka';
-
-  @override
-  String get reminderFreeSection => 'Zdarma';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Bez pripomienky';
@@ -941,45 +926,6 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Zadajte vlastné dni';
-
-  @override
-  String get reminderCascadeTitle => 'Kaskádové pripomienky';
-
-  @override
-  String get reminderCascadeSubtitle => 'Prijímajte viacero oznámení pred vypršaním záznamu';
-
-  @override
-  String get reminderPremiumRequired => 'Táto funkcia je k dispozícii pre používateľov Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Prejsť na Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Tieto možnosti pripomienok sú k dispozícii pre všetkých. Vyberte jednu na prijatie upozornenia.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Tieto možnosti sa odomknú s Premium pre presnejší čas pred vypršaním.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Klepnutím na Použiť uložte svoj výber pripomienky.';
-
-  @override
-  String get tutorialReminderPresets => 'Vyberte prednastavený čas na upozornenie pred vypršaním akéhokoľvek záznamu.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Nastavte si vlastný presný počet dní pred vypršaním.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Klepnutím na Použiť uložte svoj výber pripomienky.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Kaskáda odosiela viacero oznámení pred vypršaním záznamu. K dispozícii s Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Kaskáda odosiela viacero oznámení pred vypršaním záznamu.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara zvýrazňuje to, čo potrebuje vašu pozornosť: záznamy, ktoré čoskoro vypršia, chýbajúce pripomienky a nadchádzajúce rušné týždne.';
 
   @override
@@ -993,9 +939,6 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Radšej počúvate? Nechajte si prehľady prečítať nahlas a kedykoľvek ich pozastavte.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Ťuknite na pole pripomienky a pozrite sa, ako pripomienky fungujú.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Pripomienky sa počítajú od dátumu vypršania a Času obnovenia. Tu ich môžete vypnúť.';
@@ -3573,9 +3516,6 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Ďalšie podrobnosti obsahujú doplnky: poznámky, opakovanie, čas obnovenia, čí je záznam, zámok, peňaženku a fotky. Otvorte ich, len keď ich potrebujete.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Opakovanie posúva dátum dopredu pri predplatných. Obnovenie trvá približne hovorí Vaultare, ako dlho obnovenie trvá, aby pripomienky začali dostatočne skoro.';
 
   @override
   String get tutorialAddRecordProtect => 'Zamknite záznam, aby sa pred zobrazením vyžiadal odtlačok prsta alebo zámka obrazovky. Karty označte ako V mojej peňaženke a pridajte fotky dokladu.';

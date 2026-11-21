@@ -716,12 +716,6 @@ class AppLocalizationsLt extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Taip pat priminimai, kurie dažnėja artėjant galutiniam terminui';
 
   @override
-  String get editorReminderLabel => 'Priminimas';
-
-  @override
-  String get editorReminderSelectOptional => 'Pasirinkite priminimą (nebūtina)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return '$days d. iki galiojimo pabaigos';
   }
@@ -912,16 +906,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Kortelė baigiasi 4728. Pagrindinė išlaidų kortelė. Susieta su pagrindine einamąja sąskaita.';
 
   @override
-  String get tutorialSetReminderField => 'Nustatykite priminimą, kad gautumėte pranešimą prieš baigiantis bet kurio įrašo galiojimo laikui. Bakstelėkite Priminimo lauką, kad pamatytumėte parinktis.';
-
-  @override
   String get reminderTitle => 'Priminimas';
-
-  @override
-  String get reminderFreeSection => 'Nemokamai';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Nėra priminimo';
@@ -943,45 +928,6 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Įveskite pasirinktines dienas';
-
-  @override
-  String get reminderCascadeTitle => 'Kaskadiniai priminimai';
-
-  @override
-  String get reminderCascadeSubtitle => 'Gaukite kelis pranešimus prieš baigiantis įrašo galiojimo laikui';
-
-  @override
-  String get reminderPremiumRequired => 'Ši funkcija prieinama Premium vartotojams.';
-
-  @override
-  String get reminderUpgradeCta => 'Atnaujinti į Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Šios priminimo parinktys prieinamos visiems. Pasirinkite vieną, kad gautumėte pranešimą.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Šios parinktys atrakinamos su Premium tikslesniam laikui prieš galiojimo pabaigą.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Bakstelėkite Taikyti, kad išsaugotumėte priminimo pasirinkimą.';
-
-  @override
-  String get tutorialReminderPresets => 'Pasirinkite iš anksto nustatytą laiką, kad gautumėte pranešimą prieš baigiantis bet kurio įrašo galiojimo laikui.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Nustatykite savo tikslų dienų skaičių prieš galiojimo pabaigą.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Bakstelėkite Taikyti, kad išsaugotumėte priminimo pasirinkimą.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Kaskada siunčia kelis pranešimus prieš baigiantis įrašo galiojimo laikui. Prieinama su Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Kaskada siunčia kelis pranešimus prieš baigiantis įrašo galiojimo laikui.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara išryškina, kas reikalauja jūsų dėmesio: netrukus baigsiantys galioti įrašai, trūkstami priminimai ir artėjančios užimtos savaitės.';
 
   @override
@@ -995,9 +941,6 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Norite klausytis? Leiskite įžvalgas perskaityti garsiai ir bet kada pristabdykite.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Bakstelėkite priminimo lauką, kad pamatytumėte, kaip veikia priminimai.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Priminimai skaičiuojami nuo galiojimo pabaigos datos ir Atnaujinimo laiko. Čia galite juos išjungti.';
@@ -3581,9 +3524,6 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Skiltyje Daugiau informacijos rasite papildomus laukus: pastabas, kartojimą, atnaujinimo laiką, kieno tai įrašas, užraktą, piniginę ir nuotraukas. Atidarykite ją tik prireikus.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Kartojimas perkelia datą į priekį prenumeratoms. Atnaujinimas trunka apie nurodo Vaultara, kiek laiko trunka atnaujinimas, kad priminimai prasidėtų pakankamai anksti.';
 
   @override
   String get tutorialAddRecordProtect => 'Užrakinkite įrašą, kad prieš jį parodant būtų paprašyta piršto antspaudo arba ekrano užrakto. Pažymėkite korteles kaip Mano piniginėje ir pridėkite dokumento nuotraukas.';

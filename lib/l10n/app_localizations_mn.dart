@@ -716,12 +716,6 @@ class AppLocalizationsMn extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Мөн эцсийн хугацаа дөхөх тусам давтамж нь нэмэгдэх сануулгууд';
 
   @override
-  String get editorReminderLabel => 'Сануулга';
-
-  @override
-  String get editorReminderSelectOptional => 'Сануулга сонгох (сонголтоор)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Хугацаанаас $days хоногийн өмнө';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get tutorialSampleRecordNotes => '4728-аар төгссөн карт. Үндсэн зарлагын карт. Үндсэн харилцах данстай холбогдсон.';
 
   @override
-  String get tutorialSetReminderField => 'Ямар нэг бичлэгийн хугацаа дуусахаас өмнө мэдэгдэл авахын тулд сануулга тохируулна уу. Сонголтуудыг харахын тулд Сануулга талбарыг товшино уу.';
-
-  @override
   String get reminderTitle => 'Сануулга';
-
-  @override
-  String get reminderFreeSection => 'Үнэгүй';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Сануулга байхгүй';
@@ -938,45 +923,6 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Захиалгат өдрүүдийг оруулна уу';
-
-  @override
-  String get reminderCascadeTitle => 'Каскадын сануулгууд';
-
-  @override
-  String get reminderCascadeSubtitle => 'Бичлэгийн хугацаа дуусахаас өмнө олон мэдэгдэл авах';
-
-  @override
-  String get reminderPremiumRequired => 'Энэ функц нь Premium хэрэглэгчдэд боломжтой.';
-
-  @override
-  String get reminderUpgradeCta => 'Premium руу шинэчлэх';
-
-  @override
-  String get tutorialReminderFreeSection => 'Эдгээр сануулгын сонголтууд бүх хэрэглэгчдэд байдаг. Мэдэгдэл авахын тулд нэгийг сонгоно уу.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Эдгээр сонголтууд дуусахаас өмнөх илүү нарийн цагийн хувьд Premium-ээр нээгддэг.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Сануулгын сонголтоо хадгалахын тулд Хэрэглэх дээр товшино уу.';
-
-  @override
-  String get tutorialReminderPresets => 'Аль ч бичлэгийн хугацаа дуусахаас өмнө мэдэгдэл авахын тулд урьдчилан тохируулсан цагийг сонгоно уу.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Дуусахаас өмнө өөрийн яг өдрийн тоог тохируулна уу.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Сануулгын сонголтоо хадгалахын тулд Хэрэглэх дээр товшино уу.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Каскад бичлэгийн хугацаа дуусахаас өмнө олон мэдэгдэл илгээдэг. Premium-тэй хамт боломжтой.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Каскад бичлэгийн хугацаа дуусахаас өмнө олон мэдэгдэл илгээдэг.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara таны анхаарал шаардсан зүйлсийг онцолж харуулна: удахгүй дуусах бичлэгүүд, дутуу сануулгууд, ирж буй завгүй долоо хоногууд.';
 
   @override
@@ -990,9 +936,6 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Сонсох нь дээр үү? Дүн шинжилгээгээ чангаар уншуулж, хүссэн үедээ түр зогсоох боломжтой.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Сануулга хэрхэн ажилладагийг харахын тулд сануулгын талбарыг товшино уу.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Сануулгыг дуусах огноо болон Сунгах хугацаанаас тооцдог. Эндээс унтрааж болно.';
@@ -3511,9 +3454,6 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Дэлгэрэнгүй хэсэгт нэмэлт зүйлс байна: тэмдэглэл, давталт, сунгах хугацаа, бичлэг хэнных, түгжээ, түрийвч, зураг. Хэрэгтэй үедээ л нээгээрэй.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Давталт нь захиалгын огноог урагшлуулдаг. Сунгахад ойролцоогоор нь Vaultara-д сунгахад хэр удаан болохыг хэлдэг тул сануулга хангалттай эрт эхэлнэ.';
 
   @override
   String get tutorialAddRecordProtect => 'Бичлэгийг түгжвэл харуулахын өмнө хурууны хээ эсвэл дэлгэцийн түгжээ асууна. Картуудыг Миний түрийвчинд гэж тэмдэглэж, баримтын зургийг нэмээрэй.';

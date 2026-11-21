@@ -716,12 +716,6 @@ class AppLocalizationsVi extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'Cùng với các nhắc nhở xuất hiện thường xuyên hơn khi đến gần hạn chót';
 
   @override
-  String get editorReminderLabel => 'Nhắc nhở';
-
-  @override
-  String get editorReminderSelectOptional => 'Chọn nhắc nhở (tùy chọn)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'Trước $days ngày';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'Thẻ kết thúc bằng 4728. Thẻ chi tiêu chính. Liên kết với tài khoản vãng lai chính.';
 
   @override
-  String get tutorialSetReminderField => 'Đặt lời nhắc để nhận thông báo trước khi bất kỳ bản ghi nào hết hạn. Nhấn vào trường Lời nhắc để xem các tùy chọn.';
-
-  @override
   String get reminderTitle => 'Lời nhắc';
-
-  @override
-  String get reminderFreeSection => 'Miễn phí';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'Không có lời nhắc';
@@ -938,45 +923,6 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'Nhập ngày tùy chỉnh';
-
-  @override
-  String get reminderCascadeTitle => 'Lời nhắc theo chuỗi';
-
-  @override
-  String get reminderCascadeSubtitle => 'Nhận nhiều thông báo trước khi một bản ghi hết hạn';
-
-  @override
-  String get reminderPremiumRequired => 'Tính năng này khả dụng cho người dùng Premium.';
-
-  @override
-  String get reminderUpgradeCta => 'Nâng cấp lên Premium';
-
-  @override
-  String get tutorialReminderFreeSection => 'Các tùy chọn lời nhắc này có sẵn cho mọi người. Chọn một để nhận thông báo.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'Các tùy chọn này mở khóa với Premium để có thời gian chính xác hơn trước khi hết hạn.';
-
-  @override
-  String get tutorialReminderApplyFree => 'Nhấn Áp dụng để lưu lựa chọn lời nhắc của bạn.';
-
-  @override
-  String get tutorialReminderPresets => 'Chọn thời gian được đặt trước để được thông báo trước khi bất kỳ bản ghi nào hết hạn.';
-
-  @override
-  String get tutorialReminderCustomDays => 'Đặt số ngày chính xác của riêng bạn trước khi hết hạn.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'Nhấn Áp dụng để lưu lựa chọn lời nhắc của bạn.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'Lời nhắc theo chuỗi gửi nhiều thông báo trước khi một bản ghi hết hạn. Có sẵn với Premium.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'Lời nhắc theo chuỗi gửi nhiều thông báo trước khi một bản ghi hết hạn.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara làm nổi bật những gì cần sự chú ý của bạn: các bản ghi sắp hết hạn, lời nhắc bị thiếu và những tuần bận rộn sắp tới.';
 
   @override
@@ -990,9 +936,6 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'Bạn thích nghe hơn? Hãy để thông tin chi tiết của bạn được đọc to, và tạm dừng bất cứ lúc nào.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'Chạm vào trường nhắc nhở để xem cách nhắc nhở hoạt động.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'Lời nhắc được tính từ ngày hết hạn và Thời gian gia hạn. Bạn có thể tắt chúng tại đây.';
@@ -3491,9 +3434,6 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'Thêm chi tiết chứa các mục bổ sung: ghi chú, lặp lại, thời gian gia hạn, bản ghi của ai, khóa, ví và ảnh. Chỉ mở khi bạn cần.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'Lặp lại đẩy ngày tới cho các gói đăng ký. Việc gia hạn mất khoảng cho Vaultara biết gia hạn mất bao lâu, để lời nhắc bắt đầu đủ sớm.';
 
   @override
   String get tutorialAddRecordProtect => 'Khóa một bản ghi để yêu cầu vân tay hoặc khóa màn hình của bạn trước khi hiển thị. Đánh dấu thẻ là Trong ví của tôi, và thêm ảnh của giấy tờ.';

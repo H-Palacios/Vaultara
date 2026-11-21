@@ -1,19 +1,15 @@
 import 'package:flutter/material.dart';
 
 import 'package:vaultara/l10n/app_localizations.dart';
-import 'package:vaultara/features/reminders/logic/cascade_validator.dart';
+import 'package:vaultara/features/reminders/logic/own_reminder_validator.dart';
 import 'package:vaultara/features/reminders/view/widgets/day_picker_panel.dart';
 
-/* The cascade schedule: an ordered list of follow-up reminders.
+/* A Premium user's own reminder days, one row each.
 
-Each row expands into the same DayPickerPanel the Custom row uses. Editing in
-place matters more here than anywhere else in the sheet, because a step's
-value only means something relative to the steps around it. A dialog covered
-exactly the list the user needed to see.
-
-Which row is open is decided by the sheet, so a cascade step and the Custom
-row can never be expanded at once. */
-class CascadeEditor extends StatelessWidget {
+Each row opens the same DayPickerPanel in place, because a day only means
+something next to the days around it. Which row is open is decided by the
+parent, so only one is open at a time. */
+class OwnRemindersEditor extends StatelessWidget {
   final List<int> steps;
 
   /// Index of the row showing its picker, or null when all are collapsed.
@@ -21,20 +17,20 @@ class CascadeEditor extends StatelessWidget {
 
   final ValueChanged<int> onToggleExpanded;
 
-  /// A step's value changed. The sheet validates and stores.
+  /// A day changed. The parent stores it.
   final void Function(int index, int days) onChanged;
 
   final ValueChanged<int> onRemove;
   final VoidCallback onAdd;
 
-  /// False when CascadeService.canAdd says the list is full.
+  /// False when OwnReminderSteps.canAdd says the list is full.
   final bool canAdd;
 
   final int min;
   final int max;
   final List<int> quickPicks;
 
-  const CascadeEditor({
+  const OwnRemindersEditor({
     super.key,
     required this.steps,
     required this.expandedIndex,
@@ -48,14 +44,14 @@ class CascadeEditor extends StatelessWidget {
     this.quickPicks = const [],
   });
 
-  /// Maps a validation issue to copy. The validator has no localisations, so
+  /// Maps a validation issue to text. The validator has no localisations, so
   /// the mapping lives here with the rest of the view.
-  String? _issueMessage(AppLocalizations loc, CascadeStepIssue? issue) {
+  String? _issueMessage(AppLocalizations loc, OwnReminderIssue? issue) {
     return switch (issue) {
       null => null,
-      CascadeStepIssue.duplicate => loc.reminderCascadeDuplicate,
-      CascadeStepIssue.belowMinimum => loc.reminderCascadeOutOfRange(min, max),
-      CascadeStepIssue.aboveMaximum => loc.reminderCascadeOutOfRange(min, max),
+      OwnReminderIssue.duplicate => loc.reminderCascadeDuplicate,
+      OwnReminderIssue.belowMinimum => loc.reminderCascadeOutOfRange(min, max),
+      OwnReminderIssue.aboveMaximum => loc.reminderCascadeOutOfRange(min, max),
     };
   }
 
@@ -68,16 +64,16 @@ class CascadeEditor extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         for (int i = 0; i < steps.length; i++)
-          _CascadeRow(
+          _OwnReminderRow(
             position: i,
             days: steps[i],
             expanded: expandedIndex == i,
-            // The first step is the base reminder the rest follow from, so
-            // it can't be removed while the cascade is on.
-            removable: i != 0,
+            // At least one reminder stays. Turning reminders off is the
+            // switch above, not removing the last row.
+            removable: steps.length > 1,
             errorText: _issueMessage(
               loc,
-              CascadeValidator.validate(
+              OwnReminderValidator.validate(
                 steps: steps,
                 index: i,
                 candidate: steps[i],
@@ -107,8 +103,8 @@ class CascadeEditor extends StatelessWidget {
   }
 }
 
-/// One row of the cascade: the summary line, and its picker when open.
-class _CascadeRow extends StatelessWidget {
+/// One reminder: the summary line, and its picker when open.
+class _OwnReminderRow extends StatelessWidget {
   final int position;
   final int days;
   final bool expanded;
@@ -123,7 +119,7 @@ class _CascadeRow extends StatelessWidget {
   final int max;
   final List<int> quickPicks;
 
-  const _CascadeRow({
+  const _OwnReminderRow({
     required this.position,
     required this.days,
     required this.expanded,

@@ -716,12 +716,6 @@ class AppLocalizationsKn extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'ಜೊತೆಗೆ, ಗಡುವು ಸಮೀಪಿಸಿದಂತೆ ಹೆಚ್ಚು ಆಗಾಗ್ಗೆ ಬರುವ ರಿಮೈಂಡರ್‌ಗಳು';
 
   @override
-  String get editorReminderLabel => 'ರಿಮೈಂಡರ್';
-
-  @override
-  String get editorReminderSelectOptional => 'ರಿಮೈಂಡರ್ ಆಯ್ಕೆಮಾಡಿ (ಐಚ್ಛಿಕ)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'ಮುಕ್ತಾಯಕ್ಕೆ $days ದಿನಗಳ ಮೊದಲು';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get tutorialSampleRecordNotes => '4728 ರಲ್ಲಿ ಕೊನೆಗೊಳ್ಳುವ ಕಾರ್ಡ್. ಮುಖ್ಯ ಖರ್ಚಿನ ಕಾರ್ಡ್. ಪ್ರಮುಖ ಚಾಲ್ತಿ ಖಾತೆಗೆ ಲಿಂಕ್ ಮಾಡಲಾಗಿದೆ.';
 
   @override
-  String get tutorialSetReminderField => 'ಯಾವುದೇ ದಾಖಲೆ ಮುಕ್ತಾಯಗೊಳ್ಳುವ ಮೊದಲು ಅಧಿಸೂಚನೆ ಪಡೆಯಲು ರಿಮೈಂಡರ್ ಹೊಂದಿಸಿ. ಆಯ್ಕೆಗಳನ್ನು ನೋಡಲು ರಿಮೈಂಡರ್ ಫೀಲ್ಡ್ ಅನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ.';
-
-  @override
   String get reminderTitle => 'ರಿಮೈಂಡರ್';
-
-  @override
-  String get reminderFreeSection => 'ಉಚಿತ';
-
-  @override
-  String get reminderPremiumSection => 'Premium';
 
   @override
   String get reminderNone => 'ರಿಮೈಂಡರ್ ಇಲ್ಲ';
@@ -939,45 +924,6 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'ಕಸ್ಟಮ್ ದಿನಗಳನ್ನು ನಮೂದಿಸಿ';
-
-  @override
-  String get reminderCascadeTitle => 'ಸರಣಿ ರಿಮೈಂಡರ್‌ಗಳು';
-
-  @override
-  String get reminderCascadeSubtitle => 'ದಾಖಲೆ ಮುಕ್ತಾಯಗೊಳ್ಳುವ ಮೊದಲು ಹಲವು ಅಧಿಸೂಚನೆಗಳನ್ನು ಪಡೆಯಿರಿ';
-
-  @override
-  String get reminderPremiumRequired => 'ಈ ಫೀಚರ್ Premium ಬಳಕೆದಾರರಿಗೆ ಲಭ್ಯವಿದೆ.';
-
-  @override
-  String get reminderUpgradeCta => 'Premium ಗೆ ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಿ';
-
-  @override
-  String get tutorialReminderFreeSection => 'ಈ ರಿಮೈಂಡರ್ ಆಯ್ಕೆಗಳು ಎಲ್ಲರಿಗೂ ಲಭ್ಯವಿವೆ. ಅಧಿಸೂಚನೆ ಪಡೆಯಲು ಒಂದನ್ನು ಆಯ್ಕೆಮಾಡಿ.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'ಮುಕ್ತಾಯಕ್ಕೆ ಮೊದಲು ಹೆಚ್ಚು ನಿಖರವಾದ ಸಮಯಕ್ಕಾಗಿ ಈ ಆಯ್ಕೆಗಳು Premium ನೊಂದಿಗೆ ಅನ್‌ಲಾಕ್ ಆಗುತ್ತವೆ.';
-
-  @override
-  String get tutorialReminderApplyFree => 'ನಿಮ್ಮ ರಿಮೈಂಡರ್ ಆಯ್ಕೆಯನ್ನು ಸೇವ್ ಮಾಡಲು \"ಅನ್ವಯಿಸಿ\" ಟ್ಯಾಪ್ ಮಾಡಿ.';
-
-  @override
-  String get tutorialReminderPresets => 'ಯಾವುದೇ ದಾಖಲೆ ಮುಕ್ತಾಯಗೊಳ್ಳುವ ಮೊದಲು ಅಧಿಸೂಚನೆ ಪಡೆಯಲು ಮೊದಲೇ ಹೊಂದಿಸಿದ ಸಮಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ.';
-
-  @override
-  String get tutorialReminderCustomDays => 'ಮುಕ್ತಾಯಕ್ಕೆ ಎಷ್ಟು ದಿನ ಮೊದಲು ಎಂಬ ನಿಖರ ಸಂಖ್ಯೆಯನ್ನು ನೀವೇ ಹೊಂದಿಸಿ.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'ನಿಮ್ಮ ರಿಮೈಂಡರ್ ಆಯ್ಕೆಯನ್ನು ಸೇವ್ ಮಾಡಲು \"ಅನ್ವಯಿಸಿ\" ಟ್ಯಾಪ್ ಮಾಡಿ.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'ಸರಣಿ ರಿಮೈಂಡರ್ ದಾಖಲೆ ಮುಕ್ತಾಯಗೊಳ್ಳುವ ಮೊದಲು ಹಲವು ಅಧಿಸೂಚನೆಗಳನ್ನು ಕಳುಹಿಸುತ್ತದೆ. Premium ನೊಂದಿಗೆ ಲಭ್ಯವಿದೆ.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'ಸರಣಿ ರಿಮೈಂಡರ್ ದಾಖಲೆ ಮುಕ್ತಾಯಗೊಳ್ಳುವ ಮೊದಲು ಹಲವು ಅಧಿಸೂಚನೆಗಳನ್ನು ಕಳುಹಿಸುತ್ತದೆ.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara ನಿಮ್ಮ ಗಮನ ಬೇಕಾದವುಗಳನ್ನು ಹೈಲೈಟ್ ಮಾಡುತ್ತದೆ: ಶೀಘ್ರದಲ್ಲೇ ಮುಕ್ತಾಯಗೊಳ್ಳುವ ದಾಖಲೆಗಳು, ಇಲ್ಲದಿರುವ ರಿಮೈಂಡರ್‌ಗಳು ಮತ್ತು ಮುಂದಿನ ಬಿಡುವಿಲ್ಲದ ವಾರಗಳು.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'ಕೇಳಲು ಇಷ್ಟವೇ? ನಿಮ್ಮ ಒಳನೋಟಗಳನ್ನು ಗಟ್ಟಿಯಾಗಿ ಕೇಳಿ, ಯಾವಾಗ ಬೇಕಾದರೂ ವಿರಾಮಗೊಳಿಸಿ.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'ರಿಮೈಂಡರ್‌ಗಳು ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತವೆ ಎಂದು ನೋಡಲು ರಿಮೈಂಡರ್ ಫೀಲ್ಡ್ ಅನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'ರಿಮೈಂಡರ್‌ಗಳನ್ನು ಅವಧಿ ಮುಗಿಯುವ ದಿನಾಂಕ ಮತ್ತು ನವೀಕರಣ ಸಮಯದಿಂದ ಲೆಕ್ಕ ಹಾಕಲಾಗುತ್ತದೆ. ನೀವು ಅವುಗಳನ್ನು ಇಲ್ಲಿ ಆಫ್ ಮಾಡಬಹುದು.';
@@ -3512,9 +3455,6 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => 'ಇನ್ನಷ್ಟು ವಿವರಗಳಲ್ಲಿ ಹೆಚ್ಚುವರಿ ಅಂಶಗಳಿವೆ: ಟಿಪ್ಪಣಿಗಳು, ಪುನರಾವರ್ತನೆ, ನವೀಕರಣ ಸಮಯ, ದಾಖಲೆ ಯಾರದು, ಲಾಕ್, ವಾಲೆಟ್ ಮತ್ತು ಫೋಟೋಗಳು. ನಿಮಗೆ ಅಗತ್ಯವಿದ್ದಾಗ ಮಾತ್ರ ಇದನ್ನು ತೆರೆಯಿರಿ.';
-
-  @override
-  String get tutorialAddRecordRepeat => 'ಪುನರಾವರ್ತನೆ ಚಂದಾದಾರಿಕೆಗಳಿಗಾಗಿ ದಿನಾಂಕವನ್ನು ಮುಂದಕ್ಕೆ ಸರಿಸುತ್ತದೆ. ನವೀಕರಣಕ್ಕೆ ಸುಮಾರು ಬೇಕಾಗುವ ಸಮಯ ನವೀಕರಿಸಲು ಎಷ್ಟು ಸಮಯ ಬೇಕು ಎಂದು Vaultara ಗೆ ಹೇಳುತ್ತದೆ, ಆದ್ದರಿಂದ ರಿಮೈಂಡರ್‌ಗಳು ಸಾಕಷ್ಟು ಮುಂಚೆ ಪ್ರಾರಂಭವಾಗುತ್ತವೆ.';
 
   @override
   String get tutorialAddRecordProtect => 'ದಾಖಲೆಯನ್ನು ತೋರಿಸುವ ಮೊದಲು ನಿಮ್ಮ ಫಿಂಗರ್‌ಪ್ರಿಂಟ್ ಅಥವಾ ಸ್ಕ್ರೀನ್ ಲಾಕ್ ಕೇಳುವಂತೆ ಅದನ್ನು ಲಾಕ್ ಮಾಡಿ. ಕಾರ್ಡ್‌ಗಳನ್ನು ನನ್ನ ವಾಲೆಟ್‌ನಲ್ಲಿ ಎಂದು ಗುರುತಿಸಿ, ಮತ್ತು ದಾಖಲೆಯ ಫೋಟೋಗಳನ್ನು ಸೇರಿಸಿ.';

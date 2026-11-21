@@ -716,12 +716,6 @@ class AppLocalizationsAm extends AppLocalizations {
   String get planFeatureAutomaticFollowUps => 'በተጨማሪም የማለቂያው ቀን ሲቃረብ የሚደጋገሙ አስታዋሾች';
 
   @override
-  String get editorReminderLabel => 'አስታዋሽ';
-
-  @override
-  String get editorReminderSelectOptional => 'አስታዋሽ ይምረጡ (አማራጭ)';
-
-  @override
   String editorReminderDaysBefore(int days) {
     return 'ከማብቂያ $days ቀናት በፊት';
   }
@@ -910,16 +904,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get tutorialSampleRecordNotes => 'በ 4728 የሚያልቅ ካርድ. ዋና የወጪ ካርድ. ከዋናው የአሁን ሂሳብ ጋር የተገናኘ.';
 
   @override
-  String get tutorialSetReminderField => 'ማንኛውም መዝገብ ጊዜው ከማብቃቱ በፊት ማሳወቂያ ለመቀበል አስታዋሽ ያዘጋጁ. አማራጮቹን ለማየት የአስታዋሽ መስኩን መታ ያድርጉ.';
-
-  @override
   String get reminderTitle => 'አስታዋሽ';
-
-  @override
-  String get reminderFreeSection => 'ነጻ';
-
-  @override
-  String get reminderPremiumSection => 'ፕሪሚየም';
 
   @override
   String get reminderNone => 'አስታዋሽ የለም';
@@ -939,45 +924,6 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get reminderCustomDaysTitle => 'ብጁ ቀናት ያስገቡ';
-
-  @override
-  String get reminderCascadeTitle => 'ተከታታይ አስታዋሾች';
-
-  @override
-  String get reminderCascadeSubtitle => 'መዝገብ ጊዜው ከማብቃቱ በፊት በርካታ ማሳወቂያዎችን ይቀበሉ';
-
-  @override
-  String get reminderPremiumRequired => 'ይህ ባህሪ ለፕሪሚየም ተጠቃሚዎች ይገኛል.';
-
-  @override
-  String get reminderUpgradeCta => 'ወደ ፕሪሚየም ያሻሽሉ';
-
-  @override
-  String get tutorialReminderFreeSection => 'እነዚህ የአስታዋሽ አማራጮች ለሁሉም ይገኛሉ. ማሳወቂያ ለመቀበል አንዱን ይምረጡ.';
-
-  @override
-  String get tutorialReminderPremiumSection => 'እነዚህ አማራጮች ከማብቂያ በፊት ለበለጠ ትክክለኛ የጊዜ አወሳሰን በፕሪሚየም ይከፈታሉ.';
-
-  @override
-  String get tutorialReminderApplyFree => 'የአስታዋሽ ምርጫዎን ለማስቀመጥ ተግብርን መታ ያድርጉ.';
-
-  @override
-  String get tutorialReminderPresets => 'ማንኛውም መዝገብ ጊዜው ከማብቃቱ በፊት እንዲያሳውቅዎ አስቀድሞ የተዘጋጀ ጊዜ ይምረጡ.';
-
-  @override
-  String get tutorialReminderCustomDays => 'ከማብቂያ በፊት የራስዎን ትክክለኛ የቀናት ብዛት ያዘጋጁ.';
-
-  @override
-  String get tutorialReminderApplyPremium => 'የአስታዋሽ ምርጫዎን ለማስቀመጥ ተግብርን መታ ያድርጉ.';
-
-  @override
-  String get tutorialReminderCascadeFree => 'ተከታታይ አስታዋሾች መዝገብ ጊዜው ከማብቃቱ በፊት በርካታ ማሳወቂያዎችን ይልካሉ. በፕሪሚየም ይገኛል.';
-
-  @override
-  String get tutorialReminderCascadePremium => 'ተከታታይ አስታዋሾች መዝገብ ጊዜው ከማብቃቱ በፊት በርካታ ማሳወቂያዎችን ይልካሉ.';
-
-  @override
   String get tutorialInsightsSmartCard => 'Vaultara ትኩረትዎን የሚሹ ነገሮችን ያጎላል፦ በቅርቡ ጊዜያቸው የሚያበቁ መዝገቦች፣ የጎደሉ አስታዋሾች እና ወደፊት ያሉ የተጨናነቁ ሳምንታት.';
 
   @override
@@ -991,9 +937,6 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get tutorialAudio => 'ማዳመጥ ይመርጣሉ? ግንዛቤዎችዎ ጮክ ተብለው እንዲነበቡ ያድርጉ፣ እና በማንኛውም ጊዜ ባሉበት ያቁሙ.';
-
-  @override
-  String get tutorialAddRecordReminderTour => 'አስታዋሾች እንዴት እንደሚሰሩ ለማየት የአስታዋሽ መስኩን መታ ያድርጉ.';
 
   @override
   String get tutorialAddRecordReminderSolo => 'አስታዋሾች ከማብቂያ ቀኑ እና ከእድሳት ጊዜ ይሰላሉ። እዚህ ማጥፋት ይችላሉ።';
@@ -3512,9 +3455,6 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get tutorialAddRecordMoreDetails => '“ተጨማሪ ዝርዝሮች” ተጨማሪዎቹን ይይዛል፡ ማስታወሻዎች፣ መደጋገም፣ የእድሳት ጊዜ፣ የማን መዝገብ እንደሆነ፣ መቆለፊያ፣ የኪስ ቦርሳ እና ፎቶዎች። ሲፈልጉ ብቻ ይክፈቱት።';
-
-  @override
-  String get tutorialAddRecordRepeat => 'መደጋገም ለምዝገባዎች ቀኑን ወደ ፊት ያንቀሳቅሳል። እድሳት በግምት የሚወስደው ማደስ ምን ያህል ጊዜ እንደሚወስድ ለVaultara ይነግራል፣ ስለዚህ አስታዋሾች በበቂ ጊዜ ይጀምራሉ።';
 
   @override
   String get tutorialAddRecordProtect => 'መዝገብን ከማሳየትዎ በፊት የጣት አሻራዎን ወይም የማያ ገጽ መቆለፊያዎን እንዲጠይቅ ይቆልፉት። ካርዶችን “በኪስ ቦርሳዬ ውስጥ” ብለው ምልክት ያድርጉ፣ እና የሰነዱን ፎቶዎች ያክሉ።';
