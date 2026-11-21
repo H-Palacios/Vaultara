@@ -753,6 +753,18 @@ class AppLocalizationsPs extends AppLocalizations {
   String get snackPremiumRestored => 'پریمیم بېرته راوګرځول شو';
 
   @override
+  String get snackFamilyEnabled => 'د کورنۍ پلان فعال شو';
+
+  @override
+  String get snackBusinessEnabled => 'د سوداګرۍ پلان فعال شو';
+
+  @override
+  String get snackFamilyRestored => 'د کورنۍ پلان بېرته راوګرځول شو';
+
+  @override
+  String get snackBusinessRestored => 'د سوداګرۍ پلان بېرته راوګرځول شو';
+
+  @override
   String get passwordNeedLower => 'باید کوچنی توری ولري';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsPs extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'ړنګ شوی ریکارډ';
 
   @override
-  String get leadLabel => 'نوي کول نږدې';
+  String get leadLabel => 'د نوي کولو وخت';
 
   @override
   String get leadHelper => 'Vaultara دومره وختي یادونه پیلوي چې تاسو په وخت نوی کړای شئ.';
 
   @override
-  String get leadNotSet => 'ډاډه نه یم';
+  String get leadHelperNotSet => 'نوي کول معمولاً څومره وخت نیسي، څو یادونې په وخت پیل شي.';
+
+  @override
+  String get leadNotSet => 'نه دی ټاکل شوی';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get lifeVariantStolen => 'غلا شوې';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'که د بانک اپ دا اسانتیا لري، کارتونه په هغې کې کنګل کړئ';
+  String get lifeTaskWalletFreezeCards => 'خپل کارتونه د بانک په اپ کې کنګل کړئ';
 
   @override
   String get lifeTaskWalletRetrace => 'وروستیو ځایونو ته زنګ ووهئ چې هلته وئ او د ورکو شیانو په اړه وپوښتئ';
@@ -7374,6 +7389,34 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'د قضیې یا حوالې شمېره';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'ایا تاسو $name بند کړ؟';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'بل: $name بند کړئ';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'بل: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'بل: $name بدل کړئ';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'پیل شو: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'د قضیې شمېره کاپي شوه';
 
   @override
   String get lostWalletCaseSaved => 'د قضیې شمېره خوندي شوه';

@@ -753,6 +753,18 @@ class AppLocalizationsKo extends AppLocalizations {
   String get snackPremiumRestored => '프리미엄이 복원되었습니다';
 
   @override
+  String get snackFamilyEnabled => '가족 요금제가 활성화되었습니다';
+
+  @override
+  String get snackBusinessEnabled => '비즈니스 요금제가 활성화되었습니다';
+
+  @override
+  String get snackFamilyRestored => '가족 요금제가 복원되었습니다';
+
+  @override
+  String get snackBusinessRestored => '비즈니스 요금제가 복원되었습니다';
+
+  @override
   String get passwordNeedLower => '소문자를 포함해야 합니다';
 
   @override
@@ -2748,13 +2760,16 @@ class AppLocalizationsKo extends AppLocalizations {
   String get sharedLinksUnknownRecord => '삭제된 기록';
 
   @override
-  String get leadLabel => '갱신에 걸리는 시간';
+  String get leadLabel => '갱신 소요 기간';
 
   @override
   String get leadHelper => 'Vaultara가 제때 갱신할 수 있도록 충분히 일찍 알려 드립니다.';
 
   @override
-  String get leadNotSet => '잘 모르겠음';
+  String get leadHelperNotSet => '갱신에 보통 걸리는 기간이에요. 알림이 충분히 일찍 시작되도록 합니다.';
+
+  @override
+  String get leadNotSet => '설정 안 됨';
 
   @override
   String leadWeeks(int weeks) {
@@ -7143,7 +7158,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get lifeVariantStolen => '도난';
 
   @override
-  String get lifeTaskWalletFreezeCards => '은행 앱에 잠금 기능이 있으면 카드를 일시 정지하세요';
+  String get lifeTaskWalletFreezeCards => '은행 앱에서 카드를 일시 정지하세요';
 
   @override
   String get lifeTaskWalletRetrace => '마지막으로 들른 곳에 전화해 분실물을 문의하세요';
@@ -7318,6 +7333,34 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => '사건 또는 접수 번호';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return '$name을(를) 정지했나요?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return '다음: $name 정지하기';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return '다음: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return '다음: $name 재발급하기';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return '시작: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => '사건 번호를 복사했어요';
 
   @override
   String get lostWalletCaseSaved => '사건 번호 저장됨';

@@ -753,6 +753,18 @@ class AppLocalizationsLv extends AppLocalizations {
   String get snackPremiumRestored => 'Premium atjaunots';
 
   @override
+  String get snackFamilyEnabled => 'Ģimenes plāns aktivizēts';
+
+  @override
+  String get snackBusinessEnabled => 'Uzņēmumu plāns aktivizēts';
+
+  @override
+  String get snackFamilyRestored => 'Ģimenes plāns atjaunots';
+
+  @override
+  String get snackBusinessRestored => 'Uzņēmumu plāns atjaunots';
+
+  @override
   String get passwordNeedLower => 'Jāietver mazais burts';
 
   @override
@@ -2765,13 +2777,16 @@ class AppLocalizationsLv extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Dzēsts ieraksts';
 
   @override
-  String get leadLabel => 'Atjaunošana aizņem aptuveni';
+  String get leadLabel => 'Atjaunošanas laiks';
 
   @override
   String get leadHelper => 'Vaultara sāk atgādināt pietiekami agri, lai varētu atjaunot laikā.';
 
   @override
-  String get leadNotSet => 'Nezinu';
+  String get leadHelperNotSet => 'Cik ilgi parasti aizņem atjaunošana, lai atgādinājumi sāktos laikus.';
+
+  @override
+  String get leadNotSet => 'Nav iestatīts';
 
   @override
   String leadWeeks(int weeks) {
@@ -7264,7 +7279,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get lifeVariantStolen => 'Nozagts';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Iesaldē kartes bankas lietotnē, ja tā to ļauj';
+  String get lifeTaskWalletFreezeCards => 'Iesaldē kartes bankas lietotnē';
 
   @override
   String get lifeTaskWalletRetrace => 'Piezvani uz pēdējām vietām, kur biji, un pajautā atrasto mantu birojā';
@@ -7439,6 +7454,34 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Lietas vai atsauces numurs';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Vai bloķējāt $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Tālāk: bloķējiet $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Tālāk: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Tālāk: aizstājiet $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Sākts: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Lietas numurs nokopēts';
 
   @override
   String get lostWalletCaseSaved => 'Lietas numurs saglabāts';

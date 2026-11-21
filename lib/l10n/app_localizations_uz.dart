@@ -753,6 +753,18 @@ class AppLocalizationsUz extends AppLocalizations {
   String get snackPremiumRestored => 'Premium tiklandi';
 
   @override
+  String get snackFamilyEnabled => 'Family tarifi yoqildi';
+
+  @override
+  String get snackBusinessEnabled => 'Business tarifi yoqildi';
+
+  @override
+  String get snackFamilyRestored => 'Family tarifi tiklandi';
+
+  @override
+  String get snackBusinessRestored => 'Business tarifi tiklandi';
+
+  @override
   String get passwordNeedLower => 'Kichik harf boʻlishi kerak';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsUz extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Oʻchirilgan yozuv';
 
   @override
-  String get leadLabel => 'Uzaytirish taxminan';
+  String get leadLabel => 'Yangilash muddati';
 
   @override
   String get leadHelper => 'Vaultara oʻz vaqtida uzaytirishingiz uchun sizga erta eslatib turadi.';
 
   @override
-  String get leadNotSet => 'Bilmayman';
+  String get leadHelperNotSet => 'Yangilash odatda qancha vaqt olishi, eslatmalar o‘z vaqtida boshlanishi uchun.';
+
+  @override
+  String get leadNotSet => 'Belgilanmagan';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get lifeVariantStolen => 'O\'g\'irlandi';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Bank ilovasida imkon bo\'lsa, kartalarni muzlating';
+  String get lifeTaskWalletFreezeCards => 'Kartalarni bank ilovasida muzlating';
 
   @override
   String get lifeTaskWalletRetrace => 'Oxirgi bo\'lgan joylaringizga qo\'ng\'iroq qilib, yo\'qolgan buyumlar haqida so\'rang';
@@ -7374,6 +7389,34 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Ish yoki ma\'lumotnoma raqami';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return '$name bloklandimi?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Keyingi: ${name}ni bloklang';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Keyingi: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Keyingi: ${name}ni almashtiring';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Boshlangan: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Ish raqami nusxalandi';
 
   @override
   String get lostWalletCaseSaved => 'Ish raqami saqlandi';

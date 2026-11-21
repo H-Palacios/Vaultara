@@ -753,6 +753,18 @@ class AppLocalizationsSw extends AppLocalizations {
   String get snackPremiumRestored => 'Premium imerejeshwa';
 
   @override
+  String get snackFamilyEnabled => 'Mpango wa Familia umewezeshwa';
+
+  @override
+  String get snackBusinessEnabled => 'Mpango wa Biashara umewezeshwa';
+
+  @override
+  String get snackFamilyRestored => 'Mpango wa Familia umerejeshwa';
+
+  @override
+  String get snackBusinessRestored => 'Mpango wa Biashara umerejeshwa';
+
+  @override
   String get passwordNeedLower => 'Lazima iwe na herufi ndogo';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsSw extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Rekodi iliyofutwa';
 
   @override
-  String get leadLabel => 'Kuhuisha huchukua takribani';
+  String get leadLabel => 'Muda wa kuhuisha';
 
   @override
   String get leadHelper => 'Vaultara huanza kukukumbusha mapema vya kutosha ili uhuishe kwa wakati.';
 
   @override
-  String get leadNotSet => 'Sijui';
+  String get leadHelperNotSet => 'Muda ambao kuhuisha huchukua kwa kawaida, ili vikumbusho vianze mapema vya kutosha.';
+
+  @override
+  String get leadNotSet => 'Haijawekwa';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get lifeVariantStolen => 'Imeibiwa';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Gandisha kadi zako kwenye programu ya benki ikiwa inaruhusu';
+  String get lifeTaskWalletFreezeCards => 'Gandisha kadi zako kwenye programu ya benki';
 
   @override
   String get lifeTaskWalletRetrace => 'Piga simu sehemu za mwisho ulizokuwa na uulize vitu vilivyopotea';
@@ -7374,6 +7389,34 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Nambari ya kesi au marejeleo';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Umezuia $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Inayofuata: zuia $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Inayofuata: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Inayofuata: badilisha $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Ilianza: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Nambari ya kesi imenakiliwa';
 
   @override
   String get lostWalletCaseSaved => 'Nambari ya kesi imehifadhiwa';

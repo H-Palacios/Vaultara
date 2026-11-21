@@ -753,6 +753,18 @@ class AppLocalizationsLt extends AppLocalizations {
   String get snackPremiumRestored => 'Premium atkurtas';
 
   @override
+  String get snackFamilyEnabled => 'Šeimos planas įjungtas';
+
+  @override
+  String get snackBusinessEnabled => 'Verslo planas įjungtas';
+
+  @override
+  String get snackFamilyRestored => 'Šeimos planas atkurtas';
+
+  @override
+  String get snackBusinessRestored => 'Verslo planas atkurtas';
+
+  @override
   String get passwordNeedLower => 'Turi būti mažoji raidė';
 
   @override
@@ -2787,13 +2799,16 @@ class AppLocalizationsLt extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Ištrintas įrašas';
 
   @override
-  String get leadLabel => 'Atnaujinimas trunka apie';
+  String get leadLabel => 'Atnaujinimo laikas';
 
   @override
   String get leadHelper => 'Vaultara primena pakankamai anksti, kad spėtumėte atnaujinti laiku.';
 
   @override
-  String get leadNotSet => 'Nežinau';
+  String get leadHelperNotSet => 'Kiek paprastai trunka atnaujinimas, kad priminimai prasidėtų pakankamai anksti.';
+
+  @override
+  String get leadNotSet => 'Nenustatyta';
 
   @override
   String leadWeeks(int weeks) {
@@ -7338,7 +7353,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get lifeVariantStolen => 'Pavogta';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Užšaldykite korteles banko programėlėje, jei ji tai leidžia';
+  String get lifeTaskWalletFreezeCards => 'Užšaldykite korteles banko programėlėje';
 
   @override
   String get lifeTaskWalletRetrace => 'Paskambinkite į paskutines vietas, kur buvote, ir paklauskite rastų daiktų biure';
@@ -7513,6 +7528,34 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Bylos ar nuorodos numeris';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Ar užblokavote $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Toliau: užblokuokite $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Toliau: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Toliau: pakeiskite $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Pradėta: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Bylos numeris nukopijuotas';
 
   @override
   String get lostWalletCaseSaved => 'Bylos numeris išsaugotas';

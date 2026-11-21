@@ -753,6 +753,18 @@ class AppLocalizationsMn extends AppLocalizations {
   String get snackPremiumRestored => 'Premium сэргээгдсэн';
 
   @override
+  String get snackFamilyEnabled => 'Гэр бүлийн багц идэвхжсэн';
+
+  @override
+  String get snackBusinessEnabled => 'Бизнес багц идэвхжсэн';
+
+  @override
+  String get snackFamilyRestored => 'Гэр бүлийн багц сэргээгдсэн';
+
+  @override
+  String get snackBusinessRestored => 'Бизнес багц сэргээгдсэн';
+
+  @override
   String get passwordNeedLower => 'Жижиг үсэг агуулсан байх ёстой';
 
   @override
@@ -2751,13 +2763,16 @@ class AppLocalizationsMn extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Устгасан бичлэг';
 
   @override
-  String get leadLabel => 'Сунгахад ойролцоогоор';
+  String get leadLabel => 'Сунгах хугацаа';
 
   @override
   String get leadHelper => 'Vaultara таныг хугацаанд нь сунгаж амжихаар хангалттай эрт сануулж эхэлнэ.';
 
   @override
-  String get leadNotSet => 'Мэдэхгүй';
+  String get leadHelperNotSet => 'Сунгахад ихэвчлэн хэр удаан болдог вэ, сануулга цагтаа эхлэхийн тулд.';
+
+  @override
+  String get leadNotSet => 'Тохируулаагүй';
 
   @override
   String leadWeeks(int weeks) {
@@ -7189,7 +7204,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get lifeVariantStolen => 'Хулгайлагдсан';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Банкны апп боломжтой бол картуудаа түр хаа';
+  String get lifeTaskWalletFreezeCards => 'Банкны аппад картуудаа түр хаа';
 
   @override
   String get lifeTaskWalletRetrace => 'Сүүлд очсон газруудаа залгаж, гээгдсэн эд зүйлсийн талаар асуу';
@@ -7364,6 +7379,34 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Хэргийн эсвэл лавлагааны дугаар';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return '$name-г хаасан уу?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Дараа нь: $name-г хаа';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Дараа нь: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Дараа нь: $name-г солиулах';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Эхэлсэн: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Хэргийн дугаар хуулагдлаа';
 
   @override
   String get lostWalletCaseSaved => 'Хэргийн дугаар хадгалагдсан';

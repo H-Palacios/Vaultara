@@ -753,6 +753,18 @@ class AppLocalizationsGa extends AppLocalizations {
   String get snackPremiumRestored => 'Premium athchóirithe';
 
   @override
+  String get snackFamilyEnabled => 'Plean Teaghlaigh gníomhachtaithe';
+
+  @override
+  String get snackBusinessEnabled => 'Plean Gnó gníomhachtaithe';
+
+  @override
+  String get snackFamilyRestored => 'Plean Teaghlaigh athchóirithe';
+
+  @override
+  String get snackBusinessRestored => 'Plean Gnó athchóirithe';
+
+  @override
   String get passwordNeedLower => 'Caithfidh litir bheag a bheith ann';
 
   @override
@@ -2800,13 +2812,16 @@ class AppLocalizationsGa extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Taifead scriosta';
 
   @override
-  String get leadLabel => 'Tógann athnuachan thart ar';
+  String get leadLabel => 'Am athnuachana';
 
   @override
   String get leadHelper => 'Tosaíonn Vaultara ag cur i gcuimhne duit in am trátha chun go n-athnuafaidh tú in am.';
 
   @override
-  String get leadNotSet => 'Níl a fhios agam';
+  String get leadHelperNotSet => 'An fad a thógann athnuachan de ghnáth, ionas go dtosaíonn meabhrúcháin luath go leor.';
+
+  @override
+  String get leadNotSet => 'Gan socrú';
 
   @override
   String leadWeeks(int weeks) {
@@ -7380,7 +7395,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get lifeVariantStolen => 'Goidte';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Reoigh do chártaí in aip do bhainc má cheadaíonn sí é';
+  String get lifeTaskWalletFreezeCards => 'Reoigh do chártaí in aip do bhainc';
 
   @override
   String get lifeTaskWalletRetrace => 'Glaoigh ar na háiteanna deireanacha a raibh tú agus fiafraigh faoi earraí caillte';
@@ -7555,6 +7570,34 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Uimhir cháis nó tagartha';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Ar chuir tú bac ar $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Ar aghaidh: cuir bac ar $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Ar aghaidh: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Ar aghaidh: athsholáthair $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Tosaithe: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Uimhir an cháis cóipeáilte';
 
   @override
   String get lostWalletCaseSaved => 'Uimhir cháis sábháilte';

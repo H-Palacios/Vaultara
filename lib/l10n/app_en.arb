@@ -410,6 +410,22 @@
   "ok": "OK",
   "snackPremiumEnabled": "Premium enabled",
   "snackPremiumRestored": "Premium restored",
+  "snackFamilyEnabled": "Family plan enabled",
+  "@snackFamilyEnabled": {
+    "description": "Shown after buying the Family plan."
+  },
+  "snackBusinessEnabled": "Business plan enabled",
+  "@snackBusinessEnabled": {
+    "description": "Shown after buying the Business plan."
+  },
+  "snackFamilyRestored": "Family plan restored",
+  "@snackFamilyRestored": {
+    "description": "Shown after Restore purchases brings back the Family plan."
+  },
+  "snackBusinessRestored": "Business plan restored",
+  "@snackBusinessRestored": {
+    "description": "Shown after Restore purchases brings back the Business plan."
+  },
   "passwordNeedLower": "Must contain a lowercase letter",
   "passwordNeedUpper": "Must contain an uppercase letter",
   "passwordNeedNumber": "Must contain a number",
@@ -2824,7 +2840,7 @@
   "@sharedLinksUnknownRecord": {
     "description": "Shown instead of a record name when the record no longer exists"
   },
-  "leadLabel": "Renewal takes about",
+  "leadLabel": "Renewal time",
   "@leadLabel": {
     "description": "Form field label: how long renewing this document usually takes"
   },
@@ -2832,7 +2848,11 @@
   "@leadHelper": {
     "description": "Helper text under the field"
   },
-  "leadNotSet": "Not sure",
+  "leadHelperNotSet": "How long renewing usually takes, so reminders start early enough.",
+  "@leadHelperNotSet": {
+    "description": "Record editor: help under the Renewal time picker while nothing is chosen."
+  },
+  "leadNotSet": "Not set",
   "@leadNotSet": {
     "description": "Dropdown option when the user does not know"
   },
@@ -8658,7 +8678,7 @@
   "@lifeVariantStolen": {
     "description": "Answer: the wallet was stolen."
   },
-  "lifeTaskWalletFreezeCards": "Freeze your cards in your banking app if it has a freeze switch",
+  "lifeTaskWalletFreezeCards": "Freeze your cards in your banking app",
   "@lifeTaskWalletFreezeCards": {
     "description": "A step in a lost wallet plan. Imperative, short."
   },
@@ -8880,6 +8900,55 @@
   "lostWalletCaseLabel": "Case or reference number",
   "@lostWalletCaseLabel": {
     "description": "Text field label."
+  },
+  "lostWalletDidBlock": "Did you block {name}?",
+  "@lostWalletDidBlock": {
+    "description": "Lost wallet: asked when coming back to the app after calling a bank. {name} is the card name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletNextBlock": "Next: block {name}",
+  "@lostWalletNextBlock": {
+    "description": "Lost wallet status card: the next thing to do. {name} is a card name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletNextStep": "Next: {step}",
+  "@lostWalletNextStep": {
+    "description": "Lost wallet status card: the next thing to do. {step} is a step such as \"Report it to the police\".",
+    "placeholders": {
+      "step": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletNextReplace": "Next: replace {name}",
+  "@lostWalletNextReplace": {
+    "description": "Lost wallet status card: the next thing to do. {name} is a document name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletStarted": "Started {time}",
+  "@lostWalletStarted": {
+    "description": "Lost wallet status card: how long ago the plan started. {time} is relative, e.g. \"25 minutes ago\".",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "lostWalletCaseCopied": "Case number copied",
+  "@lostWalletCaseCopied": {
+    "description": "Shown after copying the police case number."
   },
   "lostWalletCaseSaved": "Case number saved",
   "@lostWalletCaseSaved": {

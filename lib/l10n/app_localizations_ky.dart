@@ -753,6 +753,18 @@ class AppLocalizationsKy extends AppLocalizations {
   String get snackPremiumRestored => 'Premium калыбына келтирилди';
 
   @override
+  String get snackFamilyEnabled => 'Үй-бүлө планы иштетилди';
+
+  @override
+  String get snackBusinessEnabled => 'Бизнес планы иштетилди';
+
+  @override
+  String get snackFamilyRestored => 'Үй-бүлө планы калыбына келтирилди';
+
+  @override
+  String get snackBusinessRestored => 'Бизнес планы калыбына келтирилди';
+
+  @override
   String get passwordNeedLower => 'Кичине тамга болушу керек';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsKy extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Өчүрүлгөн жазуу';
 
   @override
-  String get leadLabel => 'Жаңылоо болжол менен';
+  String get leadLabel => 'Жаңылоо убактысы';
 
   @override
   String get leadHelper => 'Vaultara убагында жаңылоо үчүн жетиштүү эрте эскертип баштайт.';
 
   @override
-  String get leadNotSet => 'Билбейм';
+  String get leadHelperNotSet => 'Жаңылоо адатта канча убакыт алат, эскертмелер өз убагында башталышы үчүн.';
+
+  @override
+  String get leadNotSet => 'Коюлган эмес';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get lifeVariantStolen => 'Уурдалды';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Банк колдонмосунда мүмкүнчүлүк болсо, карталарды тоңдуруңуз';
+  String get lifeTaskWalletFreezeCards => 'Карталарды банк колдонмосунда тоңдуруңуз';
 
   @override
   String get lifeTaskWalletRetrace => 'Акыркы барган жерлериңизге чалып, жоголгон буюмдар тууралуу сураңыз';
@@ -7374,6 +7389,34 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Иш же маалымдама номери';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return '$name бөгөттөлдүбү?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Кийинки: $name бөгөттөңүз';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Кийинки: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Кийинки: $name алмаштырыңыз';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Башталды: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Иш номери көчүрүлдү';
 
   @override
   String get lostWalletCaseSaved => 'Иш номери сакталды';

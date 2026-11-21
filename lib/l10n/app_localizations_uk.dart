@@ -757,6 +757,18 @@ class AppLocalizationsUk extends AppLocalizations {
   String get snackPremiumRestored => 'Premium відновлено';
 
   @override
+  String get snackFamilyEnabled => 'Сімейний план увімкнено';
+
+  @override
+  String get snackBusinessEnabled => 'Бізнес-план увімкнено';
+
+  @override
+  String get snackFamilyRestored => 'Сімейний план відновлено';
+
+  @override
+  String get snackBusinessRestored => 'Бізнес-план відновлено';
+
+  @override
   String get passwordNeedLower => 'Потрібна мала літера';
 
   @override
@@ -2793,13 +2805,16 @@ class AppLocalizationsUk extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Видалений запис';
 
   @override
-  String get leadLabel => 'Продовження займає приблизно';
+  String get leadLabel => 'Термін продовження';
 
   @override
   String get leadHelper => 'Vaultara починає нагадувати достатньо рано, щоб ви встигли продовжити вчасно.';
 
   @override
-  String get leadNotSet => 'Не знаю';
+  String get leadHelperNotSet => 'Скільки зазвичай триває продовження, щоб нагадування починалися завчасно.';
+
+  @override
+  String get leadNotSet => 'Не вказано';
 
   @override
   String leadWeeks(int weeks) {
@@ -7344,7 +7359,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get lifeVariantStolen => 'Вкрадено';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Заморозьте картки в банківському застосунку, якщо він це вміє';
+  String get lifeTaskWalletFreezeCards => 'Заморозьте картки в банківському застосунку';
 
   @override
   String get lifeTaskWalletRetrace => 'Зателефонуйте в останні місця, де ви були, і запитайте в бюро знахідок';
@@ -7519,6 +7534,34 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Номер справи або заяви';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Ви заблокували $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Далі: заблокуйте $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Далі: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Далі: замініть $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Розпочато: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Номер справи скопійовано';
 
   @override
   String get lostWalletCaseSaved => 'Номер заяви збережено';

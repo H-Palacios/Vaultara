@@ -753,6 +753,18 @@ class AppLocalizationsPa extends AppLocalizations {
   String get snackPremiumRestored => 'ਪ੍ਰੀਮੀਅਮ ਬਹਾਲ ਹੋ ਗਿਆ';
 
   @override
+  String get snackFamilyEnabled => 'ਪਰਿਵਾਰ ਪਲਾਨ ਚਾਲੂ ਹੋ ਗਿਆ';
+
+  @override
+  String get snackBusinessEnabled => 'ਬਿਜ਼ਨਸ ਪਲਾਨ ਚਾਲੂ ਹੋ ਗਿਆ';
+
+  @override
+  String get snackFamilyRestored => 'ਪਰਿਵਾਰ ਪਲਾਨ ਬਹਾਲ ਹੋ ਗਿਆ';
+
+  @override
+  String get snackBusinessRestored => 'ਬਿਜ਼ਨਸ ਪਲਾਨ ਬਹਾਲ ਹੋ ਗਿਆ';
+
+  @override
   String get passwordNeedLower => 'ਘੱਟੋ-ਘੱਟ ਇੱਕ ਛੋਟਾ ਅੱਖਰ ਲਾਜ਼ਮੀ ਹੈ';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsPa extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'ਹਟਾਇਆ ਗਿਆ ਰਿਕਾਰਡ';
 
   @override
-  String get leadLabel => 'ਨਵੀਨੀਕਰਨ ਵਿੱਚ ਲੱਗਣ ਵਾਲਾ ਸਮਾਂ';
+  String get leadLabel => 'ਨਵੀਨੀਕਰਨ ਦਾ ਸਮਾਂ';
 
   @override
   String get leadHelper => 'Vaultara ਤੁਹਾਨੂੰ ਇੰਨੀ ਜਲਦੀ ਯਾਦ ਕਰਾਉਣਾ ਸ਼ੁਰੂ ਕਰਦਾ ਹੈ ਕਿ ਤੁਸੀਂ ਸਮੇਂ ਸਿਰ ਨਵੀਨੀਕਰਨ ਕਰ ਸਕੋ।';
 
   @override
-  String get leadNotSet => 'ਪਤਾ ਨਹੀਂ';
+  String get leadHelperNotSet => 'ਨਵੀਨੀਕਰਨ ਵਿੱਚ ਆਮ ਤੌਰ \'ਤੇ ਕਿੰਨਾ ਸਮਾਂ ਲੱਗਦਾ ਹੈ, ਤਾਂ ਜੋ ਰਿਮਾਈਂਡਰ ਸਮੇਂ ਸਿਰ ਸ਼ੁਰੂ ਹੋਣ।';
+
+  @override
+  String get leadNotSet => 'ਸੈੱਟ ਨਹੀਂ';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get lifeVariantStolen => 'ਚੋਰੀ ਹੋਇਆ';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'ਜੇ ਬੈਂਕ ਐਪ ਵਿੱਚ ਸਹੂਲਤ ਹੈ ਤਾਂ ਕਾਰਡ ਫ੍ਰੀਜ਼ ਕਰੋ';
+  String get lifeTaskWalletFreezeCards => 'ਬੈਂਕ ਐਪ ਵਿੱਚ ਆਪਣੇ ਕਾਰਡ ਫ੍ਰੀਜ਼ ਕਰੋ';
 
   @override
   String get lifeTaskWalletRetrace => 'ਆਖ਼ਰੀ ਥਾਵਾਂ ਤੇ ਫ਼ੋਨ ਕਰੋ ਜਿੱਥੇ ਤੁਸੀਂ ਗਏ ਸੀ ਅਤੇ ਗੁੰਮ ਹੋਈਆਂ ਚੀਜ਼ਾਂ ਬਾਰੇ ਪੁੱਛੋ';
@@ -7374,6 +7389,34 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'ਕੇਸ ਜਾਂ ਹਵਾਲਾ ਨੰਬਰ';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'ਕੀ ਤੁਸੀਂ $name ਬਲੌਕ ਕੀਤਾ?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'ਅੱਗੇ: $name ਬਲੌਕ ਕਰੋ';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'ਅੱਗੇ: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'ਅੱਗੇ: $name ਬਦਲਵਾਓ';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'ਸ਼ੁਰੂ: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'ਕੇਸ ਨੰਬਰ ਕਾਪੀ ਹੋਇਆ';
 
   @override
   String get lostWalletCaseSaved => 'ਕੇਸ ਨੰਬਰ ਸੇਵ ਹੋਇਆ';

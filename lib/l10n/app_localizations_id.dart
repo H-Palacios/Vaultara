@@ -753,6 +753,18 @@ class AppLocalizationsId extends AppLocalizations {
   String get snackPremiumRestored => 'Premium dipulihkan';
 
   @override
+  String get snackFamilyEnabled => 'Paket Keluarga diaktifkan';
+
+  @override
+  String get snackBusinessEnabled => 'Paket Bisnis diaktifkan';
+
+  @override
+  String get snackFamilyRestored => 'Paket Keluarga dipulihkan';
+
+  @override
+  String get snackBusinessRestored => 'Paket Bisnis dipulihkan';
+
+  @override
   String get passwordNeedLower => 'Harus mengandung huruf kecil';
 
   @override
@@ -2743,13 +2755,16 @@ class AppLocalizationsId extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Catatan yang dihapus';
 
   @override
-  String get leadLabel => 'Perpanjangan memakan waktu sekitar';
+  String get leadLabel => 'Waktu perpanjangan';
 
   @override
   String get leadHelper => 'Vaultara mengingatkan Anda cukup awal agar perpanjangan tepat waktu.';
 
   @override
-  String get leadNotSet => 'Tidak yakin';
+  String get leadHelperNotSet => 'Berapa lama perpanjangan biasanya berlangsung, agar pengingat dimulai cukup awal.';
+
+  @override
+  String get leadNotSet => 'Belum diatur';
 
   @override
   String leadWeeks(int weeks) {
@@ -7138,7 +7153,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get lifeVariantStolen => 'Dicuri';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Bekukan kartu di aplikasi bank jika tersedia';
+  String get lifeTaskWalletFreezeCards => 'Bekukan kartu di aplikasi bank';
 
   @override
   String get lifeTaskWalletRetrace => 'Hubungi tempat terakhir yang Anda kunjungi dan tanyakan barang hilang';
@@ -7313,6 +7328,34 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Nomor kasus atau referensi';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Sudah memblokir $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Berikutnya: blokir $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Berikutnya: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Berikutnya: ganti $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Dimulai: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Nomor kasus disalin';
 
   @override
   String get lostWalletCaseSaved => 'Nomor laporan disimpan';

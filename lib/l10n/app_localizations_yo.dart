@@ -753,6 +753,18 @@ class AppLocalizationsYo extends AppLocalizations {
   String get snackPremiumRestored => 'Premium ti pada';
 
   @override
+  String get snackFamilyEnabled => 'Ètò Ẹbí ti muu ṣiṣẹ';
+
+  @override
+  String get snackBusinessEnabled => 'Ètò Iṣòwò ti muu ṣiṣẹ';
+
+  @override
+  String get snackFamilyRestored => 'Ètò Ẹbí ti pada';
+
+  @override
+  String get snackBusinessRestored => 'Ètò Iṣòwò ti pada';
+
+  @override
   String get passwordNeedLower => 'Gbọdọ ni lẹta kekere';
 
   @override
@@ -2749,13 +2761,16 @@ class AppLocalizationsYo extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Igbasilẹ tí a parẹ́';
 
   @override
-  String get leadLabel => 'Isọdọtun máa ń gba nǹkan bí';
+  String get leadLabel => 'Àkókò isọdọtun';
 
   @override
   String get leadHelper => 'Vaultara máa bẹ̀rẹ̀ sí í rán ọ létí ní kùtùkùtù kí o lè sọ ọ́ di tuntun ní àkókò.';
 
   @override
-  String get leadNotSet => 'N kò mọ̀';
+  String get leadHelperNotSet => 'Bí isọdọtun ṣe máa ń pẹ́ tó, kí àwọn ìránnilétí lè bẹ̀rẹ̀ ní àkókò.';
+
+  @override
+  String get leadNotSet => 'A kò tíì ṣètò';
 
   @override
   String leadWeeks(int weeks) {
@@ -7149,7 +7164,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get lifeVariantStolen => 'Wọ́n jí i';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Dì àwọn káàdì rẹ nínú áàpù báǹkì rẹ tí ó bá ní àṣàyàn yẹn';
+  String get lifeTaskWalletFreezeCards => 'Dì àwọn káàdì rẹ nínú áàpù báǹkì rẹ';
 
   @override
   String get lifeTaskWalletRetrace => 'Pe àwọn ibi tí o lọ kẹ́yìn kí o sì béèrè nípa ohun tó sọnù';
@@ -7324,6 +7339,34 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Nọ́mbà ẹjọ́ tàbí ìtọ́kasí';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Ṣé o ti dí $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Èyí tó kàn: dí $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Èyí tó kàn: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Èyí tó kàn: rọ́pò $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Bẹ̀rẹ̀: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'A ti ṣe ẹ̀dà nọ́mbà ẹjọ́';
 
   @override
   String get lostWalletCaseSaved => 'A ti fi nọ́mbà ẹjọ́ pamọ́';

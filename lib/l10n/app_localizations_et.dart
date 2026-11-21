@@ -753,6 +753,18 @@ class AppLocalizationsEt extends AppLocalizations {
   String get snackPremiumRestored => 'Premium taastatud';
 
   @override
+  String get snackFamilyEnabled => 'Family pakett aktiveeritud';
+
+  @override
+  String get snackBusinessEnabled => 'Business pakett aktiveeritud';
+
+  @override
+  String get snackFamilyRestored => 'Family pakett taastatud';
+
+  @override
+  String get snackBusinessRestored => 'Business pakett taastatud';
+
+  @override
   String get passwordNeedLower => 'Peab sisaldama väiketähte';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsEt extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Kustutatud kirje';
 
   @override
-  String get leadLabel => 'Uuendamine võtab umbes';
+  String get leadLabel => 'Uuendamise aeg';
 
   @override
   String get leadHelper => 'Vaultara hakkab sind varakult meelde tuletama, et jõuaksid õigel ajal uuendada.';
 
   @override
-  String get leadNotSet => 'Ei tea';
+  String get leadHelperNotSet => 'Kui kaua uuendamine tavaliselt võtab, et meeldetuletused algaksid piisavalt vara.';
+
+  @override
+  String get leadNotSet => 'Määramata';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get lifeVariantStolen => 'Varastatud';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Külmuta kaardid pangarakenduses, kui see seda võimaldab';
+  String get lifeTaskWalletFreezeCards => 'Külmuta kaardid pangarakenduses';
 
   @override
   String get lifeTaskWalletRetrace => 'Helista viimastesse kohtadesse, kus käisid, ja küsi leiubüroost';
@@ -7377,6 +7392,34 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Menetlus- või viitenumber';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Kas blokeerisid $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Järgmiseks: blokeeri $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Järgmiseks: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Järgmiseks: asenda $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Alustatud: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Juhtumi number kopeeritud';
 
   @override
   String get lostWalletCaseSaved => 'Number salvestatud';

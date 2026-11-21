@@ -753,6 +753,18 @@ class AppLocalizationsVi extends AppLocalizations {
   String get snackPremiumRestored => 'Premium đã được khôi phục';
 
   @override
+  String get snackFamilyEnabled => 'Gói Gia đình đã được kích hoạt';
+
+  @override
+  String get snackBusinessEnabled => 'Gói Doanh nghiệp đã được kích hoạt';
+
+  @override
+  String get snackFamilyRestored => 'Gói Gia đình đã được khôi phục';
+
+  @override
+  String get snackBusinessRestored => 'Gói Doanh nghiệp đã được khôi phục';
+
+  @override
   String get passwordNeedLower => 'Phải chứa chữ thường';
 
   @override
@@ -2748,13 +2760,16 @@ class AppLocalizationsVi extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Bản ghi đã xóa';
 
   @override
-  String get leadLabel => 'Việc gia hạn mất khoảng';
+  String get leadLabel => 'Thời gian gia hạn';
 
   @override
   String get leadHelper => 'Vaultara bắt đầu nhắc bạn đủ sớm để bạn gia hạn kịp thời.';
 
   @override
-  String get leadNotSet => 'Chưa chắc';
+  String get leadHelperNotSet => 'Thời gian gia hạn thường mất bao lâu, để nhắc nhở bắt đầu đủ sớm.';
+
+  @override
+  String get leadNotSet => 'Chưa đặt';
 
   @override
   String leadWeeks(int weeks) {
@@ -7143,7 +7158,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get lifeVariantStolen => 'Bị trộm';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Tạm khóa thẻ trong ứng dụng ngân hàng nếu có';
+  String get lifeTaskWalletFreezeCards => 'Tạm khóa thẻ trong ứng dụng ngân hàng';
 
   @override
   String get lifeTaskWalletRetrace => 'Gọi đến những nơi bạn đến gần nhất và hỏi về đồ thất lạc';
@@ -7318,6 +7333,34 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Số hồ sơ hoặc số tham chiếu';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Bạn đã khóa $name chưa?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Tiếp theo: khóa $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Tiếp theo: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Tiếp theo: làm lại $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Bắt đầu: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Đã sao chép số hồ sơ';
 
   @override
   String get lostWalletCaseSaved => 'Đã lưu số hồ sơ';

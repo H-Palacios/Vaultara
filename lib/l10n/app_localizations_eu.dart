@@ -753,6 +753,18 @@ class AppLocalizationsEu extends AppLocalizations {
   String get snackPremiumRestored => 'Premium leheneratuta';
 
   @override
+  String get snackFamilyEnabled => 'Familia plana gaituta';
+
+  @override
+  String get snackBusinessEnabled => 'Enpresa plana gaituta';
+
+  @override
+  String get snackFamilyRestored => 'Familia plana leheneratuta';
+
+  @override
+  String get snackBusinessRestored => 'Enpresa plana leheneratuta';
+
+  @override
   String get passwordNeedLower => 'Letra xehe bat izan behar du';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsEu extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Ezabatutako erregistroa';
 
   @override
-  String get leadLabel => 'Berritzeak gutxi gorabehera';
+  String get leadLabel => 'Berritze-denbora';
 
   @override
   String get leadHelper => 'Vaultarak nahikoa goiz hasten da gogoratzen, garaiz berritu ahal izan dezazun.';
 
   @override
-  String get leadNotSet => 'Ez dakit';
+  String get leadHelperNotSet => 'Berritzeak normalean zenbat irauten duen, gogorarazpenak garaiz has daitezen.';
+
+  @override
+  String get leadNotSet => 'Ezarri gabe';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get lifeVariantStolen => 'Lapurtuta';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Izoztu txartelak bankuaren aplikazioan, aukera hori badu';
+  String get lifeTaskWalletFreezeCards => 'Izoztu txartelak bankuaren aplikazioan';
 
   @override
   String get lifeTaskWalletRetrace => 'Deitu egon zaren azken lekuetara eta galdetu galdutako objektuetan';
@@ -7377,6 +7392,34 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Kasu- edo erreferentzia-zenbakia';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Blokeatu duzu $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Hurrengoa: blokeatu $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Hurrengoa: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Hurrengoa: ordeztu $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Hasita: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Kasu-zenbakia kopiatuta';
 
   @override
   String get lostWalletCaseSaved => 'Salaketa-zenbakia gordeta';

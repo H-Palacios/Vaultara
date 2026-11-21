@@ -751,6 +751,18 @@ class AppLocalizationsMy extends AppLocalizations {
   String get snackPremiumRestored => 'Premium ပြန်ယူပြီးပါပြီ';
 
   @override
+  String get snackFamilyEnabled => 'မိသားစု အစီအစဉ် ဖွင့်ပြီးပါပြီ';
+
+  @override
+  String get snackBusinessEnabled => 'စီးပွားရေး အစီအစဉ် ဖွင့်ပြီးပါပြီ';
+
+  @override
+  String get snackFamilyRestored => 'မိသားစု အစီအစဉ် ပြန်ယူပြီးပါပြီ';
+
+  @override
+  String get snackBusinessRestored => 'စီးပွားရေး အစီအစဉ် ပြန်ယူပြီးပါပြီ';
+
+  @override
   String get passwordNeedLower => 'စာလုံးအသေး ပါရမည်';
 
   @override
@@ -2746,13 +2758,16 @@ class AppLocalizationsMy extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'ဖျက်ပြီးသော မှတ်တမ်း';
 
   @override
-  String get leadLabel => 'သက်တမ်းတိုးရန် ကြာချိန် ခန့်မှန်းခြေ';
+  String get leadLabel => 'သက်တမ်းတိုးချိန်';
 
   @override
   String get leadHelper => 'အချိန်မီ သက်တမ်းတိုးနိုင်ရန် Vaultara က လုံလောက်စွာ စောစောကပင် သတိပေးမည်။';
 
   @override
-  String get leadNotSet => 'မသေချာပါ';
+  String get leadHelperNotSet => 'သက်တမ်းတိုးရန် ပုံမှန်ကြာချိန်၊ သတိပေးချက်များ စောစီးစွာ စတင်နိုင်ရန်။';
+
+  @override
+  String get leadNotSet => 'မသတ်မှတ်ရသေး';
 
   @override
   String leadWeeks(int weeks) {
@@ -7141,7 +7156,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get lifeVariantStolen => 'ခိုးခံရသည်';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'ဘဏ်အက်ပ်တွင် ရွေးချယ်စရာရှိပါက ကတ်များကို ခဏရပ်ထားပါ';
+  String get lifeTaskWalletFreezeCards => 'ဘဏ်အက်ပ်တွင် ကတ်များကို ခဏရပ်ထားပါ';
 
   @override
   String get lifeTaskWalletRetrace => 'နောက်ဆုံးရောက်ခဲ့သည့်နေရာများကို ဖုန်းဆက်ပြီး ပျောက်ပစ္စည်းအကြောင်း မေးပါ';
@@ -7316,6 +7331,34 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'အမှု သို့မဟုတ် ရည်ညွှန်းနံပါတ်';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return '$name ကို ပိတ်ပြီးပြီလား?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'နောက်တစ်ခု- $name ကို ပိတ်ပါ';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'နောက်တစ်ခု- $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'နောက်တစ်ခု- $name ကို အသစ်လဲပါ';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'စတင်ချိန်- $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'အမှုနံပါတ် ကူးယူပြီးပါပြီ';
 
   @override
   String get lostWalletCaseSaved => 'အမှုနံပါတ် သိမ်းပြီး';

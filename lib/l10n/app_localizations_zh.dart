@@ -753,6 +753,18 @@ class AppLocalizationsZh extends AppLocalizations {
   String get snackPremiumRestored => '高级版已恢复';
 
   @override
+  String get snackFamilyEnabled => '家庭版已启用';
+
+  @override
+  String get snackBusinessEnabled => '企业版已启用';
+
+  @override
+  String get snackFamilyRestored => '家庭版已恢复';
+
+  @override
+  String get snackBusinessRestored => '企业版已恢复';
+
+  @override
   String get passwordNeedLower => '必须包含小写字母';
 
   @override
@@ -2748,13 +2760,16 @@ class AppLocalizationsZh extends AppLocalizations {
   String get sharedLinksUnknownRecord => '已删除的记录';
 
   @override
-  String get leadLabel => '续期大约需要';
+  String get leadLabel => '续期所需时间';
 
   @override
   String get leadHelper => 'Vaultara 会提前开始提醒你，让你有足够时间按时续期。';
 
   @override
-  String get leadNotSet => '不确定';
+  String get leadHelperNotSet => '续期通常需要多久，以便提醒足够早地开始。';
+
+  @override
+  String get leadNotSet => '未设置';
 
   @override
   String leadWeeks(int weeks) {
@@ -7143,7 +7158,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get lifeVariantStolen => '被盗';
 
   @override
-  String get lifeTaskWalletFreezeCards => '如果银行 App 支持，先在 App 中锁定卡片';
+  String get lifeTaskWalletFreezeCards => '在银行 App 中锁定你的卡片';
 
   @override
   String get lifeTaskWalletRetrace => '打电话给最近去过的地方，询问失物招领';
@@ -7318,6 +7333,34 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => '案件或参考编号';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return '你冻结 $name 了吗？';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return '下一步：冻结 $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return '下一步：$step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return '下一步：补办 $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return '开始于：$time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => '已复制案件编号';
 
   @override
   String get lostWalletCaseSaved => '已保存报案编号';
@@ -10251,6 +10294,18 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get snackPremiumRestored => '高级版已恢复';
 
   @override
+  String get snackFamilyEnabled => '家庭版已启用';
+
+  @override
+  String get snackBusinessEnabled => '企业版已启用';
+
+  @override
+  String get snackFamilyRestored => '家庭版已恢复';
+
+  @override
+  String get snackBusinessRestored => '企业版已恢复';
+
+  @override
   String get passwordNeedLower => '必须包含小写字母';
 
   @override
@@ -12234,13 +12289,16 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get sharedLinksUnknownRecord => '已删除的记录';
 
   @override
-  String get leadLabel => '续期大约需要';
+  String get leadLabel => '续期所需时间';
 
   @override
   String get leadHelper => 'Vaultara 会提前提醒您，让您有足够时间按时续期。';
 
   @override
-  String get leadNotSet => '不确定';
+  String get leadHelperNotSet => '续期通常需要多久，以便提醒足够早地开始。';
+
+  @override
+  String get leadNotSet => '未设置';
 
   @override
   String leadWeeks(int weeks) {
@@ -16629,7 +16687,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get lifeVariantStolen => '被盗';
 
   @override
-  String get lifeTaskWalletFreezeCards => '如果银行 App 支持，先在 App 中锁定卡片';
+  String get lifeTaskWalletFreezeCards => '在银行 App 中锁定你的卡片';
 
   @override
   String get lifeTaskWalletRetrace => '打电话给最近去过的地方，询问失物招领';
@@ -16804,6 +16862,34 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get lostWalletCaseLabel => '案件或参考编号';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return '你冻结 $name 了吗？';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return '下一步：冻结 $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return '下一步：$step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return '下一步：补办 $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return '开始于：$time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => '已复制案件编号';
 
   @override
   String get lostWalletCaseSaved => '已保存报案编号';
@@ -19737,6 +19823,18 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get snackPremiumRestored => '已恢復進階版';
 
   @override
+  String get snackFamilyEnabled => '已啟用家庭版';
+
+  @override
+  String get snackBusinessEnabled => '已啟用商務版';
+
+  @override
+  String get snackFamilyRestored => '已恢復家庭版';
+
+  @override
+  String get snackBusinessRestored => '已恢復商務版';
+
+  @override
   String get passwordNeedLower => '必須包含小寫字母';
 
   @override
@@ -21720,13 +21818,16 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get sharedLinksUnknownRecord => '已刪除的記錄';
 
   @override
-  String get leadLabel => '續期大約需要';
+  String get leadLabel => '續期所需時間';
 
   @override
   String get leadHelper => 'Vaultara 會提早提醒您，讓您來得及續期。';
 
   @override
-  String get leadNotSet => '不確定';
+  String get leadHelperNotSet => '續期通常需要多久，以便提醒能及早開始。';
+
+  @override
+  String get leadNotSet => '未設定';
 
   @override
   String leadWeeks(int weeks) {
@@ -26115,7 +26216,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get lifeVariantStolen => '被偷';
 
   @override
-  String get lifeTaskWalletFreezeCards => '如果銀行 App 支援，先在 App 中暫停卡片';
+  String get lifeTaskWalletFreezeCards => '在銀行 App 中暫停你的卡片';
 
   @override
   String get lifeTaskWalletRetrace => '打電話給最近去過的地方，詢問失物招領';
@@ -26290,6 +26391,34 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get lostWalletCaseLabel => '案件或參考編號';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return '你停用 $name 了嗎？';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return '下一步：停用 $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return '下一步：$step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return '下一步：補辦 $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return '開始於：$time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => '已複製案件編號';
 
   @override
   String get lostWalletCaseSaved => '已儲存報案編號';

@@ -753,6 +753,18 @@ class AppLocalizationsJa extends AppLocalizations {
   String get snackPremiumRestored => 'プレミアムが復元されました';
 
   @override
+  String get snackFamilyEnabled => 'ファミリープランが有効になりました';
+
+  @override
+  String get snackBusinessEnabled => 'ビジネスプランが有効になりました';
+
+  @override
+  String get snackFamilyRestored => 'ファミリープランが復元されました';
+
+  @override
+  String get snackBusinessRestored => 'ビジネスプランが復元されました';
+
+  @override
   String get passwordNeedLower => '小文字を含める必要があります';
 
   @override
@@ -2736,13 +2748,16 @@ class AppLocalizationsJa extends AppLocalizations {
   String get sharedLinksUnknownRecord => '削除された記録';
 
   @override
-  String get leadLabel => '更新にかかる期間の目安';
+  String get leadLabel => '更新にかかる期間';
 
   @override
   String get leadHelper => '更新が間に合うよう、Vaultaraが早めにお知らせを始めます。';
 
   @override
-  String get leadNotSet => 'わからない';
+  String get leadHelperNotSet => '更新にふだんかかる期間です。リマインダーを早めに始めるために使います。';
+
+  @override
+  String get leadNotSet => '未設定';
 
   @override
   String leadWeeks(int weeks) {
@@ -7131,7 +7146,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get lifeVariantStolen => '盗難';
 
   @override
-  String get lifeTaskWalletFreezeCards => '銀行アプリにロック機能があればカードを一時停止する';
+  String get lifeTaskWalletFreezeCards => '銀行アプリでカードを一時停止する';
 
   @override
   String get lifeTaskWalletRetrace => '最後に立ち寄った場所に電話して遺失物を問い合わせる';
@@ -7306,6 +7321,34 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => '受理番号または参照番号';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return '$nameを停止しましたか？';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return '次：$nameを停止する';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return '次：$step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return '次：$nameを再発行する';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return '開始：$time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => '受理番号をコピーしました';
 
   @override
   String get lostWalletCaseSaved => '受理番号を保存しました';

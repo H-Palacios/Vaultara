@@ -753,6 +753,18 @@ class AppLocalizationsSl extends AppLocalizations {
   String get snackPremiumRestored => 'Premium obnovljen';
 
   @override
+  String get snackFamilyEnabled => 'Družinski paket omogočen';
+
+  @override
+  String get snackBusinessEnabled => 'Poslovni paket omogočen';
+
+  @override
+  String get snackFamilyRestored => 'Družinski paket obnovljen';
+
+  @override
+  String get snackBusinessRestored => 'Poslovni paket obnovljen';
+
+  @override
   String get passwordNeedLower => 'Vsebovati mora malo črko';
 
   @override
@@ -2786,13 +2798,16 @@ class AppLocalizationsSl extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Izbrisan zapis';
 
   @override
-  String get leadLabel => 'Obnova traja približno';
+  String get leadLabel => 'Čas obnove';
 
   @override
   String get leadHelper => 'Vaultara vas začne opominjati dovolj zgodaj, da lahko obnovite pravočasno.';
 
   @override
-  String get leadNotSet => 'Ne vem';
+  String get leadHelperNotSet => 'Kako dolgo obnova običajno traja, da se opomniki začnejo dovolj zgodaj.';
+
+  @override
+  String get leadNotSet => 'Ni nastavljeno';
 
   @override
   String leadWeeks(int weeks) {
@@ -7337,7 +7352,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get lifeVariantStolen => 'Ukradena';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Zamrznite kartice v bančni aplikaciji, če to omogoča';
+  String get lifeTaskWalletFreezeCards => 'Zamrznite kartice v bančni aplikaciji';
 
   @override
   String get lifeTaskWalletRetrace => 'Pokličite zadnja mesta, kjer ste bili, in vprašajte pri izgubljenih predmetih';
@@ -7512,6 +7527,34 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Številka zadeve ali sklic';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Ste blokirali $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Naprej: blokirajte $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Naprej: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Naprej: zamenjajte $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Začeto: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Številka zadeve kopirana';
 
   @override
   String get lostWalletCaseSaved => 'Številka shranjena';

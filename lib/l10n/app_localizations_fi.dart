@@ -753,6 +753,18 @@ class AppLocalizationsFi extends AppLocalizations {
   String get snackPremiumRestored => 'Premium palautettu';
 
   @override
+  String get snackFamilyEnabled => 'Family-tilaus otettu käyttöön';
+
+  @override
+  String get snackBusinessEnabled => 'Business-tilaus otettu käyttöön';
+
+  @override
+  String get snackFamilyRestored => 'Family-tilaus palautettu';
+
+  @override
+  String get snackBusinessRestored => 'Business-tilaus palautettu';
+
+  @override
   String get passwordNeedLower => 'Täytyy sisältää pienen kirjaimen';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsFi extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Poistettu tietue';
 
   @override
-  String get leadLabel => 'Uusiminen kestää noin';
+  String get leadLabel => 'Uusimisaika';
 
   @override
   String get leadHelper => 'Vaultara alkaa muistuttaa sinua riittävän ajoissa, jotta ehdit uusia.';
 
   @override
-  String get leadNotSet => 'En ole varma';
+  String get leadHelperNotSet => 'Kuinka kauan uusiminen yleensä kestää, jotta muistutukset alkavat ajoissa.';
+
+  @override
+  String get leadNotSet => 'Ei asetettu';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get lifeVariantStolen => 'Varastettu';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Jäädytä korttisi pankkisovelluksessa, jos se onnistuu';
+  String get lifeTaskWalletFreezeCards => 'Jäädytä korttisi pankkisovelluksessa';
 
   @override
   String get lifeTaskWalletRetrace => 'Soita viimeisiin paikkoihin, joissa kävit, ja kysy löytötavaroista';
@@ -7377,6 +7392,34 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Ilmoitus- tai viitenumero';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Suljitko $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Seuraavaksi: sulje $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Seuraavaksi: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Seuraavaksi: korvaa $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Aloitettu: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Tapausnumero kopioitu';
 
   @override
   String get lostWalletCaseSaved => 'Ilmoitusnumero tallennettu';

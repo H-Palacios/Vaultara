@@ -755,6 +755,18 @@ class AppLocalizationsRo extends AppLocalizations {
   String get snackPremiumRestored => 'Premium restaurat';
 
   @override
+  String get snackFamilyEnabled => 'Planul Familie activat';
+
+  @override
+  String get snackBusinessEnabled => 'Planul Business activat';
+
+  @override
+  String get snackFamilyRestored => 'Planul Familie restaurat';
+
+  @override
+  String get snackBusinessRestored => 'Planul Business restaurat';
+
+  @override
   String get passwordNeedLower => 'Trebuie să conțină o literă mică';
 
   @override
@@ -2772,13 +2784,16 @@ class AppLocalizationsRo extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Înregistrare ștearsă';
 
   @override
-  String get leadLabel => 'Reînnoirea durează cam';
+  String get leadLabel => 'Timp de reînnoire';
 
   @override
   String get leadHelper => 'Vaultara începe să îți amintească destul de devreme ca să reînnoiești la timp.';
 
   @override
-  String get leadNotSet => 'Nu știu';
+  String get leadHelperNotSet => 'Cât durează de obicei reînnoirea, ca mementourile să înceapă destul de devreme.';
+
+  @override
+  String get leadNotSet => 'Nesetat';
 
   @override
   String leadWeeks(int weeks) {
@@ -7271,7 +7286,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get lifeVariantStolen => 'Furat';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Îngheață cardurile în aplicația băncii, dacă permite';
+  String get lifeTaskWalletFreezeCards => 'Îngheață cardurile în aplicația băncii';
 
   @override
   String get lifeTaskWalletRetrace => 'Sună în ultimele locuri unde ai fost și întreabă la obiecte pierdute';
@@ -7449,6 +7464,34 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Număr de dosar sau de referință';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Ai blocat $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Urmează: blochează $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Urmează: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Urmează: înlocuiește $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Început: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Numărul dosarului a fost copiat';
 
   @override
   String get lostWalletCaseSaved => 'Număr de dosar salvat';

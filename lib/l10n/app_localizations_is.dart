@@ -753,6 +753,18 @@ class AppLocalizationsIs extends AppLocalizations {
   String get snackPremiumRestored => 'Premium endurheimt';
 
   @override
+  String get snackFamilyEnabled => 'Fjölskylduáskrift virk';
+
+  @override
+  String get snackBusinessEnabled => 'Fyrirtækjaáskrift virk';
+
+  @override
+  String get snackFamilyRestored => 'Fjölskylduáskrift endurheimt';
+
+  @override
+  String get snackBusinessRestored => 'Fyrirtækjaáskrift endurheimt';
+
+  @override
   String get passwordNeedLower => 'Verður að innihalda lítinn staf';
 
   @override
@@ -2751,13 +2763,16 @@ class AppLocalizationsIs extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Eydd færsla';
 
   @override
-  String get leadLabel => 'Endurnýjun tekur um það bil';
+  String get leadLabel => 'Endurnýjunartími';
 
   @override
   String get leadHelper => 'Vaultara byrjar að minna þig á nógu snemma til að endurnýja í tæka tíð.';
 
   @override
-  String get leadNotSet => 'Veit ekki';
+  String get leadHelperNotSet => 'Hve langan tíma endurnýjun tekur venjulega, svo áminningar byrji nógu snemma.';
+
+  @override
+  String get leadNotSet => 'Ekki stillt';
 
   @override
   String leadWeeks(int weeks) {
@@ -7198,7 +7213,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get lifeVariantStolen => 'Stolið';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Frystu kortin í bankaappinu ef það býður upp á það';
+  String get lifeTaskWalletFreezeCards => 'Frystu kortin í bankaappinu';
 
   @override
   String get lifeTaskWalletRetrace => 'Hringdu á síðustu staðina sem þú varst á og spurðu um óskilamuni';
@@ -7373,6 +7388,34 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Mála- eða tilvísunarnúmer';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Lokaðirðu $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Næst: lokaðu $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Næst: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Næst: endurnýjaðu $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Hafið: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Málsnúmer afritað';
 
   @override
   String get lostWalletCaseSaved => 'Málsnúmer vistað';

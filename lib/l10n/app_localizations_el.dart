@@ -753,6 +753,18 @@ class AppLocalizationsEl extends AppLocalizations {
   String get snackPremiumRestored => 'Το Premium επαναφέρθηκε';
 
   @override
+  String get snackFamilyEnabled => 'Το Οικογενειακό πρόγραμμα ενεργοποιήθηκε';
+
+  @override
+  String get snackBusinessEnabled => 'Το Επαγγελματικό πρόγραμμα ενεργοποιήθηκε';
+
+  @override
+  String get snackFamilyRestored => 'Το Οικογενειακό πρόγραμμα επαναφέρθηκε';
+
+  @override
+  String get snackBusinessRestored => 'Το Επαγγελματικό πρόγραμμα επαναφέρθηκε';
+
+  @override
   String get passwordNeedLower => 'Πρέπει να περιέχει πεζό γράμμα';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsEl extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Διαγραμμένη εγγραφή';
 
   @override
-  String get leadLabel => 'Η ανανέωση διαρκεί περίπου';
+  String get leadLabel => 'Χρόνος ανανέωσης';
 
   @override
   String get leadHelper => 'Το Vaultara ξεκινά να σας υπενθυμίζει αρκετά νωρίς ώστε να ανανεώσετε εγκαίρως.';
 
   @override
-  String get leadNotSet => 'Δεν ξέρω';
+  String get leadHelperNotSet => 'Πόσο διαρκεί συνήθως η ανανέωση, ώστε οι υπενθυμίσεις να ξεκινούν έγκαιρα.';
+
+  @override
+  String get leadNotSet => 'Δεν έχει οριστεί';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get lifeVariantStolen => 'Κλάπηκε';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Παγώστε τις κάρτες στην εφαρμογή της τράπεζας, αν το επιτρέπει';
+  String get lifeTaskWalletFreezeCards => 'Παγώστε τις κάρτες σας στην εφαρμογή της τράπεζας';
 
   @override
   String get lifeTaskWalletRetrace => 'Τηλεφωνήστε στα τελευταία μέρη που πήγατε και ρωτήστε στα απολεσθέντα';
@@ -7377,6 +7392,34 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Αριθμός υπόθεσης ή αναφοράς';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Μπλοκάρατε την κάρτα $name;';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Επόμενο: μπλοκάρετε $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Επόμενο: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Επόμενο: αντικαταστήστε $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Ξεκίνησε: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Ο αριθμός υπόθεσης αντιγράφηκε';
 
   @override
   String get lostWalletCaseSaved => 'Ο αριθμός αποθηκεύτηκε';

@@ -753,6 +753,18 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get snackPremiumRestored => 'پرێمیۆم گەڕێندرایەوە';
 
   @override
+  String get snackFamilyEnabled => 'پلانی خێزان چالاککرا';
+
+  @override
+  String get snackBusinessEnabled => 'پلانی بازرگانی چالاککرا';
+
+  @override
+  String get snackFamilyRestored => 'پلانی خێزان گەڕێندرایەوە';
+
+  @override
+  String get snackBusinessRestored => 'پلانی بازرگانی گەڕێندرایەوە';
+
+  @override
   String get passwordNeedLower => 'دەبێت پیتی بچووک هەبێت';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'تۆماری سڕاوە';
 
   @override
-  String get leadLabel => 'ماوەی نوێکردنەوە نزیکەی';
+  String get leadLabel => 'کاتی نوێکردنەوە';
 
   @override
   String get leadHelper => 'Vaultara بە زوویی بیرت دەخاتەوە تا بە کات نوێی بکەیتەوە.';
 
   @override
-  String get leadNotSet => 'دڵنیا نیم';
+  String get leadHelperNotSet => 'نوێکردنەوە بە زۆری چەند دەخایەنێت، بۆ ئەوەی بیرخستنەوەکان زوو دەست پێبکەن.';
+
+  @override
+  String get leadNotSet => 'دانەنراوە';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get lifeVariantStolen => 'دزرا';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'ئەگەر ئەپی بانکەکەت ڕێگە دەدات، کارتەکانت تێیدا بەستە';
+  String get lifeTaskWalletFreezeCards => 'کارتەکانت لە ئەپی بانکەکەت بەستە';
 
   @override
   String get lifeTaskWalletRetrace => 'پەیوەندی بە دوایین شوێنەکانەوە بکە کە لێی بوویت و پرسیار لە شتە ونبووەکان بکە';
@@ -7374,6 +7389,34 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'ژمارەی دۆسیە یان ئاماژە';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'ئایا $nameت بلۆک کرد؟';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'دواتر: $name بلۆک بکە';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'دواتر: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'دواتر: $name بگۆڕە';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'دەستپێکرد: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'ژمارەی دۆسیە کۆپی کرا';
 
   @override
   String get lostWalletCaseSaved => 'ژمارەی دۆسیە پاشەکەوت کرا';

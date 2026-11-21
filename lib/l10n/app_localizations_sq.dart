@@ -753,6 +753,18 @@ class AppLocalizationsSq extends AppLocalizations {
   String get snackPremiumRestored => 'Premium u rikthye';
 
   @override
+  String get snackFamilyEnabled => 'Plani Familja u aktivizua';
+
+  @override
+  String get snackBusinessEnabled => 'Plani Biznes u aktivizua';
+
+  @override
+  String get snackFamilyRestored => 'Plani Familja u rikthye';
+
+  @override
+  String get snackBusinessRestored => 'Plani Biznes u rikthye';
+
+  @override
   String get passwordNeedLower => 'Duhet të përmbajë një shkronjë të vogël';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsSq extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Regjistrim i fshirë';
 
   @override
-  String get leadLabel => 'Rinovimi zgjat afërsisht';
+  String get leadLabel => 'Koha e rinovimit';
 
   @override
   String get leadHelper => 'Vaultara ju kujton mjaftueshëm herët që të rinovoni në kohë.';
 
   @override
-  String get leadNotSet => 'Nuk e di';
+  String get leadHelperNotSet => 'Sa zgjat zakonisht rinovimi, që kujtesat të nisin mjaft herët.';
+
+  @override
+  String get leadNotSet => 'Pa caktuar';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get lifeVariantStolen => 'Vjedhur';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Ngrij kartat në aplikacionin e bankës nëse e lejon';
+  String get lifeTaskWalletFreezeCards => 'Ngrij kartat në aplikacionin e bankës';
 
   @override
   String get lifeTaskWalletRetrace => 'Telefono vendet e fundit ku ke qenë dhe pyet te sendet e humbura';
@@ -7377,6 +7392,34 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Numri i çështjes ose i referencës';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'E bllokove $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Më pas: blloko $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Më pas: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Më pas: zëvendëso $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Filloi: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Numri i çështjes u kopjua';
 
   @override
   String get lostWalletCaseSaved => 'Numri u ruajt';

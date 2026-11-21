@@ -753,6 +753,18 @@ class AppLocalizationsHa extends AppLocalizations {
   String get snackPremiumRestored => 'An dawo da Premium';
 
   @override
+  String get snackFamilyEnabled => 'An kunna tsarin Iyali';
+
+  @override
+  String get snackBusinessEnabled => 'An kunna tsarin Kasuwanci';
+
+  @override
+  String get snackFamilyRestored => 'An dawo da tsarin Iyali';
+
+  @override
+  String get snackBusinessRestored => 'An dawo da tsarin Kasuwanci';
+
+  @override
   String get passwordNeedLower => 'Dole ne ya ƙunshi ƙaramin harafi';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsHa extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Rikodin da aka goge';
 
   @override
-  String get leadLabel => 'Sabuntawa tana ɗaukar kusan';
+  String get leadLabel => 'Lokacin sabuntawa';
 
   @override
   String get leadHelper => 'Vaultara tana fara tuna maka da wuri domin ka sabunta a kan lokaci.';
 
   @override
-  String get leadNotSet => 'Ban tabbata ba';
+  String get leadHelperNotSet => 'Tsawon lokacin da sabuntawa ke ɗauka yawanci, don tunatarwa su fara da wuri.';
+
+  @override
+  String get leadNotSet => 'Ba a saita ba';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get lifeVariantStolen => 'An sace shi';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Ka daskarar da katunanka a manhajar bankinka idan tana da wannan zaɓi';
+  String get lifeTaskWalletFreezeCards => 'Ka daskarar da katunanka a manhajar bankinka';
 
   @override
   String get lifeTaskWalletRetrace => 'Ka kira wuraren ƙarshe da ka je kuma ka tambayi kayan da suka ɓace';
@@ -7374,6 +7389,34 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Lambar ƙara ko ta nuni';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Ka toshe $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Na gaba: toshe $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Na gaba: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Na gaba: maye gurbin $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'An fara: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'An kwafi lambar shari\'a';
 
   @override
   String get lostWalletCaseSaved => 'An ajiye lambar ƙara';

@@ -753,6 +753,18 @@ class AppLocalizationsHe extends AppLocalizations {
   String get snackPremiumRestored => 'פרימיום שוחזר';
 
   @override
+  String get snackFamilyEnabled => 'התוכנית המשפחתית הופעלה';
+
+  @override
+  String get snackBusinessEnabled => 'התוכנית העסקית הופעלה';
+
+  @override
+  String get snackFamilyRestored => 'התוכנית המשפחתית שוחזרה';
+
+  @override
+  String get snackBusinessRestored => 'התוכנית העסקית שוחזרה';
+
+  @override
   String get passwordNeedLower => 'חייב להכיל אות קטנה';
 
   @override
@@ -2784,13 +2796,16 @@ class AppLocalizationsHe extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'רשומה שנמחקה';
 
   @override
-  String get leadLabel => 'החידוש לוקח בערך';
+  String get leadLabel => 'זמן חידוש';
 
   @override
   String get leadHelper => 'התזכורות של Vaultara מתחילות מוקדם מספיק כדי שתספיק לחדש בזמן.';
 
   @override
-  String get leadNotSet => 'לא ידוע';
+  String get leadHelperNotSet => 'כמה זמן החידוש לוקח בדרך כלל, כדי שהתזכורות יתחילו מספיק מוקדם.';
+
+  @override
+  String get leadNotSet => 'לא הוגדר';
 
   @override
   String leadWeeks(int weeks) {
@@ -7251,7 +7266,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get lifeVariantStolen => 'נגנב';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'הקפיאו את הכרטיסים באפליקציית הבנק אם יש בה אפשרות כזו';
+  String get lifeTaskWalletFreezeCards => 'הקפיאו את הכרטיסים באפליקציית הבנק';
 
   @override
   String get lifeTaskWalletRetrace => 'התקשרו למקומות האחרונים שהייתם בהם ושאלו על אבדות';
@@ -7426,6 +7441,34 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'מספר תיק או אסמכתה';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'חסמת את $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'הבא: לחסום את $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'הבא: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'הבא: להחליף את $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'התחיל: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'מספר התיק הועתק';
 
   @override
   String get lostWalletCaseSaved => 'מספר התיק נשמר';

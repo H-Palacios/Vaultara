@@ -753,6 +753,18 @@ class AppLocalizationsHy extends AppLocalizations {
   String get snackPremiumRestored => 'Premium-ը վերականգնված է';
 
   @override
+  String get snackFamilyEnabled => 'Ընտանեկան պլանը միացված է';
+
+  @override
+  String get snackBusinessEnabled => 'Բիզնես պլանը միացված է';
+
+  @override
+  String get snackFamilyRestored => 'Ընտանեկան պլանը վերականգնված է';
+
+  @override
+  String get snackBusinessRestored => 'Բիզնես պլանը վերականգնված է';
+
+  @override
   String get passwordNeedLower => 'Պետք է պարունակի փոքրատառ';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsHy extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Ջնջված գրառում';
 
   @override
-  String get leadLabel => 'Նորացումը տևում է մոտավորապես';
+  String get leadLabel => 'Նորացման ժամկետ';
 
   @override
   String get leadHelper => 'Vaultara-ն սկսում է հիշեցնել ձեզ բավական շուտ, որպեսզի ժամանակին նորացնեք։';
 
   @override
-  String get leadNotSet => 'Չգիտեմ';
+  String get leadHelperNotSet => 'Որքան է սովորաբար տևում նորացումը, որպեսզի հիշեցումները ժամանակին սկսվեն։';
+
+  @override
+  String get leadNotSet => 'Նշված չէ';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get lifeVariantStolen => 'Գողացել են';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Եթե բանկի հավելվածը թույլ է տալիս, սառեցրեք քարտերը';
+  String get lifeTaskWalletFreezeCards => 'Սառեցրեք քարտերը բանկի հավելվածում';
 
   @override
   String get lifeTaskWalletRetrace => 'Զանգեք վերջին վայրերը, որտեղ եղել եք, և հարցրեք կորած իրերի մասին';
@@ -7374,6 +7389,34 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Գործի կամ հղման համար';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Արգելափակե՞լ եք $name-ը';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Հաջորդը՝ արգելափակեք $name-ը';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Հաջորդը՝ $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Հաջորդը՝ փոխարինեք $name-ը';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Սկսվել է՝ $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Գործի համարը պատճենվեց';
 
   @override
   String get lostWalletCaseSaved => 'Գործի համարը պահպանվեց';

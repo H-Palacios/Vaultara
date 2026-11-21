@@ -753,6 +753,18 @@ class AppLocalizationsMs extends AppLocalizations {
   String get snackPremiumRestored => 'Premium telah dipulihkan';
 
   @override
+  String get snackFamilyEnabled => 'Pelan Keluarga telah diaktifkan';
+
+  @override
+  String get snackBusinessEnabled => 'Pelan Perniagaan telah diaktifkan';
+
+  @override
+  String get snackFamilyRestored => 'Pelan Keluarga telah dipulihkan';
+
+  @override
+  String get snackBusinessRestored => 'Pelan Perniagaan telah dipulihkan';
+
+  @override
   String get passwordNeedLower => 'Mesti mengandungi huruf kecil';
 
   @override
@@ -2748,13 +2760,16 @@ class AppLocalizationsMs extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Rekod yang dipadam';
 
   @override
-  String get leadLabel => 'Pembaharuan mengambil masa kira-kira';
+  String get leadLabel => 'Masa pembaharuan';
 
   @override
   String get leadHelper => 'Vaultara mula mengingatkan anda cukup awal supaya anda sempat memperbaharui.';
 
   @override
-  String get leadNotSet => 'Tidak pasti';
+  String get leadHelperNotSet => 'Berapa lama pembaharuan biasanya mengambil masa, supaya peringatan bermula cukup awal.';
+
+  @override
+  String get leadNotSet => 'Belum ditetapkan';
 
   @override
   String leadWeeks(int weeks) {
@@ -7143,7 +7158,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get lifeVariantStolen => 'Dicuri';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Bekukan kad dalam aplikasi bank jika ada pilihan itu';
+  String get lifeTaskWalletFreezeCards => 'Bekukan kad anda dalam aplikasi bank';
 
   @override
   String get lifeTaskWalletRetrace => 'Hubungi tempat terakhir yang anda pergi dan tanya tentang barang hilang';
@@ -7318,6 +7333,34 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Nombor kes atau rujukan';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Sudah sekat $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Seterusnya: sekat $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Seterusnya: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Seterusnya: ganti $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Dimulakan: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Nombor kes disalin';
 
   @override
   String get lostWalletCaseSaved => 'Nombor laporan disimpan';

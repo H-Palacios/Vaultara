@@ -753,6 +753,18 @@ class AppLocalizationsSk extends AppLocalizations {
   String get snackPremiumRestored => 'Premium obnovené';
 
   @override
+  String get snackFamilyEnabled => 'Rodinný plán aktivovaný';
+
+  @override
+  String get snackBusinessEnabled => 'Firemný plán aktivovaný';
+
+  @override
+  String get snackFamilyRestored => 'Rodinný plán obnovený';
+
+  @override
+  String get snackBusinessRestored => 'Firemný plán obnovený';
+
+  @override
   String get passwordNeedLower => 'Musí obsahovať malé písmeno';
 
   @override
@@ -2785,13 +2797,16 @@ class AppLocalizationsSk extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Odstránený záznam';
 
   @override
-  String get leadLabel => 'Obnovenie trvá približne';
+  String get leadLabel => 'Čas obnovenia';
 
   @override
   String get leadHelper => 'Vaultara vám začne pripomínať dostatočne skoro, aby ste stihli obnoviť včas.';
 
   @override
-  String get leadNotSet => 'Neviem';
+  String get leadHelperNotSet => 'Ako dlho obnovenie zvyčajne trvá, aby pripomienky začali dostatočne skoro.';
+
+  @override
+  String get leadNotSet => 'Nenastavené';
 
   @override
   String leadWeeks(int weeks) {
@@ -7330,7 +7345,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get lifeVariantStolen => 'Ukradnutá';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Zmrazte karty v bankovej aplikácii, ak to umožňuje';
+  String get lifeTaskWalletFreezeCards => 'Zmrazte karty v bankovej aplikácii';
 
   @override
   String get lifeTaskWalletRetrace => 'Zavolajte na posledné miesta, kde ste boli, a opýtajte sa na straty a nálezy';
@@ -7505,6 +7520,34 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Číslo prípadu alebo referenčné číslo';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Zablokovali ste $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Ďalej: zablokujte $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Ďalej: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Ďalej: nahraďte $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Začaté: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Číslo prípadu skopírované';
 
   @override
   String get lostWalletCaseSaved => 'Číslo uložené';

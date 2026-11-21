@@ -753,6 +753,18 @@ class AppLocalizationsGl extends AppLocalizations {
   String get snackPremiumRestored => 'Premium restaurado';
 
   @override
+  String get snackFamilyEnabled => 'Plan Familia activado';
+
+  @override
+  String get snackBusinessEnabled => 'Plan Empresa activado';
+
+  @override
+  String get snackFamilyRestored => 'Plan Familia restaurado';
+
+  @override
+  String get snackBusinessRestored => 'Plan Empresa restaurado';
+
+  @override
   String get passwordNeedLower => 'Debe conter unha letra minúscula';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsGl extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Rexistro eliminado';
 
   @override
-  String get leadLabel => 'A renovación leva aproximadamente';
+  String get leadLabel => 'Tempo de renovación';
 
   @override
   String get leadHelper => 'Vaultara empeza a lembrarche con tempo suficiente para renovar a tempo.';
 
   @override
-  String get leadNotSet => 'Non o sei';
+  String get leadHelperNotSet => 'Canto adoita levar a renovación, para que os recordatorios comecen con tempo.';
+
+  @override
+  String get leadNotSet => 'Sen definir';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get lifeVariantStolen => 'Roubada';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Conxela as tarxetas na app do banco se o permite';
+  String get lifeTaskWalletFreezeCards => 'Conxela as tarxetas na app do banco';
 
   @override
   String get lifeTaskWalletRetrace => 'Chama aos últimos sitios onde estiveches e pregunta en obxectos perdidos';
@@ -7377,6 +7392,34 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Número de denuncia ou referencia';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Bloqueaches $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Seguinte: bloquea $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Seguinte: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Seguinte: substitúe $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Comezou: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Número de caso copiado';
 
   @override
   String get lostWalletCaseSaved => 'Número de denuncia gardado';

@@ -753,6 +753,18 @@ class AppLocalizationsKa extends AppLocalizations {
   String get snackPremiumRestored => 'Premium აღდგა';
 
   @override
+  String get snackFamilyEnabled => 'საოჯახო გეგმა გააქტიურდა';
+
+  @override
+  String get snackBusinessEnabled => 'ბიზნეს გეგმა გააქტიურდა';
+
+  @override
+  String get snackFamilyRestored => 'საოჯახო გეგმა აღდგა';
+
+  @override
+  String get snackBusinessRestored => 'ბიზნეს გეგმა აღდგა';
+
+  @override
   String get passwordNeedLower => 'უნდა შეიცავდეს პატარა ასოს';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsKa extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'წაშლილი ჩანაწერი';
 
   @override
-  String get leadLabel => 'განახლებას სჭირდება დაახლოებით';
+  String get leadLabel => 'განახლების დრო';
 
   @override
   String get leadHelper => 'Vaultara შეგახსენებთ საკმარისად ადრე, რომ დროულად განაახლოთ.';
 
   @override
-  String get leadNotSet => 'არ ვიცი';
+  String get leadHelperNotSet => 'რამდენ ხანს სჭირდება განახლებას ჩვეულებრივ, რომ შეხსენებები დროულად დაიწყოს.';
+
+  @override
+  String get leadNotSet => 'არ არის მითითებული';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get lifeVariantStolen => 'მოიპარეს';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'თუ ბანკის აპი იძლევა საშუალებას, გაყინეთ ბარათები';
+  String get lifeTaskWalletFreezeCards => 'გაყინეთ ბარათები ბანკის აპში';
 
   @override
   String get lifeTaskWalletRetrace => 'დარეკეთ ბოლო ადგილებში, სადაც იყავით, და იკითხეთ დაკარგული ნივთების შესახებ';
@@ -7374,6 +7389,34 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'საქმის ან მითითების ნომერი';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'დაბლოკეთ $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'შემდეგი: დაბლოკეთ $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'შემდეგი: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'შემდეგი: შეცვალეთ $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'დაიწყო: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'საქმის ნომერი დაკოპირდა';
 
   @override
   String get lostWalletCaseSaved => 'საქმის ნომერი შენახულია';

@@ -757,6 +757,18 @@ class AppLocalizationsRu extends AppLocalizations {
   String get snackPremiumRestored => 'Premium восстановлен';
 
   @override
+  String get snackFamilyEnabled => 'Семейный план включён';
+
+  @override
+  String get snackBusinessEnabled => 'Бизнес-план включён';
+
+  @override
+  String get snackFamilyRestored => 'Семейный план восстановлен';
+
+  @override
+  String get snackBusinessRestored => 'Бизнес-план восстановлен';
+
+  @override
   String get passwordNeedLower => 'Должна быть строчная буква';
 
   @override
@@ -2795,13 +2807,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Удалённая запись';
 
   @override
-  String get leadLabel => 'Продление занимает примерно';
+  String get leadLabel => 'Срок продления';
 
   @override
   String get leadHelper => 'Vaultara начинает напоминать заранее, чтобы вы успели продлить вовремя.';
 
   @override
-  String get leadNotSet => 'Не знаю';
+  String get leadHelperNotSet => 'Сколько обычно занимает продление, чтобы напоминания начинались заранее.';
+
+  @override
+  String get leadNotSet => 'Не указано';
 
   @override
   String leadWeeks(int weeks) {
@@ -7346,7 +7361,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get lifeVariantStolen => 'Украден';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Заморозьте карты в банковском приложении, если оно это умеет';
+  String get lifeTaskWalletFreezeCards => 'Заморозьте карты в банковском приложении';
 
   @override
   String get lifeTaskWalletRetrace => 'Позвоните в последние места, где вы были, и спросите в бюро находок';
@@ -7521,6 +7536,34 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Номер дела или заявления';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Вы заблокировали $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Дальше: заблокируйте $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Дальше: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Дальше: замените $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Начато: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Номер дела скопирован';
 
   @override
   String get lostWalletCaseSaved => 'Номер заявления сохранён';

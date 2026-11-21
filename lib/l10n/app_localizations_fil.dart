@@ -753,6 +753,18 @@ class AppLocalizationsFil extends AppLocalizations {
   String get snackPremiumRestored => 'Naibalik ang Premium';
 
   @override
+  String get snackFamilyEnabled => 'Na-activate ang Family plan';
+
+  @override
+  String get snackBusinessEnabled => 'Na-activate ang Business plan';
+
+  @override
+  String get snackFamilyRestored => 'Naibalik ang Family plan';
+
+  @override
+  String get snackBusinessRestored => 'Naibalik ang Business plan';
+
+  @override
   String get passwordNeedLower => 'Dapat may maliit na titik';
 
   @override
@@ -2750,13 +2762,16 @@ class AppLocalizationsFil extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Natanggal na rekord';
 
   @override
-  String get leadLabel => 'Tumatagal ang pag-renew nang mga';
+  String get leadLabel => 'Tagal ng pag-renew';
 
   @override
   String get leadHelper => 'Maaga kang paalalahanan ng Vaultara para makapag-renew ka sa oras.';
 
   @override
-  String get leadNotSet => 'Hindi sigurado';
+  String get leadHelperNotSet => 'Gaano katagal karaniwang inaabot ang pag-renew, para maagang magsimula ang mga paalala.';
+
+  @override
+  String get leadNotSet => 'Hindi nakatakda';
 
   @override
   String leadWeeks(int weeks) {
@@ -7193,7 +7208,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get lifeVariantStolen => 'Ninakaw';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'I-freeze ang mga card sa banking app kung may opsyon ito';
+  String get lifeTaskWalletFreezeCards => 'I-freeze ang mga card mo sa banking app';
 
   @override
   String get lifeTaskWalletRetrace => 'Tawagan ang mga huling lugar na pinuntahan mo at magtanong tungkol sa mga nawalang gamit';
@@ -7368,6 +7383,34 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Numero ng kaso o reference';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Na-block mo na ba ang $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Susunod: i-block ang $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Susunod: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Susunod: palitan ang $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Sinimulan: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Nakopya ang case number';
 
   @override
   String get lostWalletCaseSaved => 'Na-save ang numero ng kaso';

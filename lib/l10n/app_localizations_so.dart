@@ -753,6 +753,18 @@ class AppLocalizationsSo extends AppLocalizations {
   String get snackPremiumRestored => 'Premium waa la soo celiyay';
 
   @override
+  String get snackFamilyEnabled => 'Qorshaha Family waa la hawlgeliyay';
+
+  @override
+  String get snackBusinessEnabled => 'Qorshaha Business waa la hawlgeliyay';
+
+  @override
+  String get snackFamilyRestored => 'Qorshaha Family waa la soo celiyay';
+
+  @override
+  String get snackBusinessRestored => 'Qorshaha Business waa la soo celiyay';
+
+  @override
   String get passwordNeedLower => 'Waa inuu lahaadaa xaraf yar';
 
   @override
@@ -2751,13 +2763,16 @@ class AppLocalizationsSo extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Diiwaan la tirtiray';
 
   @override
-  String get leadLabel => 'Cusboonaysiintu waxay qaadataa qiyaastii';
+  String get leadLabel => 'Waqtiga cusboonaysiinta';
 
   @override
   String get leadHelper => 'Vaultara wuxuu bilaabayaa inuu ku xasuusiyo goor ku filan si aad wakhtigeeda ugu cusboonaysiiso.';
 
   @override
-  String get leadNotSet => 'Ma aqaan';
+  String get leadHelperNotSet => 'Inta cusboonaysiintu caadi ahaan qaadato, si xusuusiyeyaashu u bilaabmaan goor hore.';
+
+  @override
+  String get leadNotSet => 'Lama dejin';
 
   @override
   String leadWeeks(int weeks) {
@@ -7198,7 +7213,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get lifeVariantStolen => 'La xaday';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Ku qabooji kaararkaaga app-ka bangigaaga haddii uu leeyahay';
+  String get lifeTaskWalletFreezeCards => 'Ku qabooji kaararkaaga app-ka bangigaaga';
 
   @override
   String get lifeTaskWalletRetrace => 'Wac meelihii ugu dambeeyay ee aad joogtay oo weydii alaabta lumay';
@@ -7373,6 +7388,34 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Lambarka kiiska ama tixraaca';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Ma xannibtay $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Xiga: xannib $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Xiga: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Xiga: beddel $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Bilaabmay: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Lambarka kiiska waa la koobiyeeyay';
 
   @override
   String get lostWalletCaseSaved => 'Lambarka kiiska waa la kaydiyay';

@@ -753,6 +753,18 @@ class AppLocalizationsAm extends AppLocalizations {
   String get snackPremiumRestored => 'ፕሪሚየም ተመልሷል';
 
   @override
+  String get snackFamilyEnabled => 'የቤተሰብ ዕቅድ ነቅቷል';
+
+  @override
+  String get snackBusinessEnabled => 'የንግድ ዕቅድ ነቅቷል';
+
+  @override
+  String get snackFamilyRestored => 'የቤተሰብ ዕቅድ ተመልሷል';
+
+  @override
+  String get snackBusinessRestored => 'የንግድ ዕቅድ ተመልሷል';
+
+  @override
   String get passwordNeedLower => 'ትንሽ ፊደል መያዝ አለበት';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsAm extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'የተሰረዘ መዝገብ';
 
   @override
-  String get leadLabel => 'እድሳት በግምት የሚወስደው';
+  String get leadLabel => 'የእድሳት ጊዜ';
 
   @override
   String get leadHelper => 'Vaultara በጊዜ ለማደስ በቂ ጊዜ ቀድሞ ማሳሰብ ይጀምራል።';
 
   @override
-  String get leadNotSet => 'እርግጠኛ አይደለሁም';
+  String get leadHelperNotSet => 'እድሳት ብዙውን ጊዜ ምን ያህል እንደሚወስድ፣ ማሳሰቢያዎች በበቂ ጊዜ እንዲጀምሩ።';
+
+  @override
+  String get leadNotSet => 'አልተቀናበረም';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get lifeVariantStolen => 'ተሰረቀ';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'የባንክ መተግበሪያዎ ካለው ካርዶችዎን በዚያ ያግዱ';
+  String get lifeTaskWalletFreezeCards => 'ካርዶችዎን በባንክ መተግበሪያዎ ውስጥ ያግዱ';
 
   @override
   String get lifeTaskWalletRetrace => 'የመጨረሻ የነበሩባቸውን ቦታዎች ይደውሉ እና ስለጠፉ ዕቃዎች ይጠይቁ';
@@ -7374,6 +7389,34 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'የጉዳይ ወይም የማጣቀሻ ቁጥር';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return '$nameን አግደዋል?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'ቀጣይ፦ $nameን ያግዱ';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'ቀጣይ፦ $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'ቀጣይ፦ $nameን ይተኩ';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'የተጀመረው፦ $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'የጉዳይ ቁጥር ተቀድቷል';
 
   @override
   String get lostWalletCaseSaved => 'የጉዳይ ቁጥር ተቀምጧል';

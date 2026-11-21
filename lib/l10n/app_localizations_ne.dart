@@ -753,6 +753,18 @@ class AppLocalizationsNe extends AppLocalizations {
   String get snackPremiumRestored => 'प्रिमियम पुनर्स्थापना गरियो';
 
   @override
+  String get snackFamilyEnabled => 'परिवार योजना सक्रिय गरियो';
+
+  @override
+  String get snackBusinessEnabled => 'व्यवसाय योजना सक्रिय गरियो';
+
+  @override
+  String get snackFamilyRestored => 'परिवार योजना पुनर्स्थापना गरियो';
+
+  @override
+  String get snackBusinessRestored => 'व्यवसाय योजना पुनर्स्थापना गरियो';
+
+  @override
   String get passwordNeedLower => 'सानो अक्षर समावेश हुनुपर्छ';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsNe extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'हटाइएको रेकर्ड';
 
   @override
-  String get leadLabel => 'नवीकरण गर्न लगभग';
+  String get leadLabel => 'नवीकरण समय';
 
   @override
   String get leadHelper => 'समयमै नवीकरण गर्न सकियोस् भनेर Vaultara ले चाँडै सम्झाउन थाल्छ।';
 
   @override
-  String get leadNotSet => 'थाहा छैन';
+  String get leadHelperNotSet => 'नवीकरण गर्न सामान्यतया कति समय लाग्छ, ताकि रिमाइन्डरहरू समयमै सुरु होऊन्।';
+
+  @override
+  String get leadNotSet => 'सेट गरिएको छैन';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get lifeVariantStolen => 'चोरी भयो';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'बैंक एपमा सुविधा छ भने कार्डहरू फ्रिज गर्नुहोस्';
+  String get lifeTaskWalletFreezeCards => 'बैंक एपमा आफ्ना कार्डहरू फ्रिज गर्नुहोस्';
 
   @override
   String get lifeTaskWalletRetrace => 'अन्तिम पटक गएका ठाउँहरूमा फोन गर्नुहोस् र हराएका सामानबारे सोध्नुहोस्';
@@ -7374,6 +7389,34 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'मुद्दा वा सन्दर्भ नम्बर';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'के तपाईंले $name ब्लक गर्नुभयो?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'अर्को: $name ब्लक गर्नुहोस्';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'अर्को: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'अर्को: $name बदल्नुहोस्';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'सुरु: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'मुद्दा नम्बर कपी भयो';
 
   @override
   String get lostWalletCaseSaved => 'मुद्दा नम्बर सेभ भयो';

@@ -753,6 +753,18 @@ class AppLocalizationsKu extends AppLocalizations {
   String get snackPremiumRestored => 'Premium hat vegerandin';
 
   @override
+  String get snackFamilyEnabled => 'Plana Malbatê hat çalakkirin';
+
+  @override
+  String get snackBusinessEnabled => 'Plana Karsaziyê hat çalakkirin';
+
+  @override
+  String get snackFamilyRestored => 'Plana Malbatê hat vegerandin';
+
+  @override
+  String get snackBusinessRestored => 'Plana Karsaziyê hat vegerandin';
+
+  @override
   String get passwordNeedLower => 'Divê tîpeke biçûk hebe';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsKu extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Tomara jêbirî';
 
   @override
-  String get leadLabel => 'Nûkirin bi qasî';
+  String get leadLabel => 'Dema nûkirinê';
 
   @override
   String get leadHelper => 'Vaultara bi têra xwe zû dest bi bîranînan dike da ku tu bikaribî di wextê xwe de nû bikî.';
 
   @override
-  String get leadNotSet => 'Nizanim';
+  String get leadHelperNotSet => 'Nûkirin bi gelemperî çiqas dem digire, da ku bîranîn têra xwe zû dest pê bikin.';
+
+  @override
+  String get leadNotSet => 'Nehatiye danîn';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get lifeVariantStolen => 'Hate dizîn';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Ger sepana bankê destûr bide, kartên xwe tê de bicemidîne';
+  String get lifeTaskWalletFreezeCards => 'Kartên xwe di sepana bankê de bicemidîne';
 
   @override
   String get lifeTaskWalletRetrace => 'Li cihên dawî yên ku tu lê bûyî telefon bike û li tiştên windabûyî bipirse';
@@ -7374,6 +7389,34 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Hejmara dosyayê an referansê';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Te $name asteng kir?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Paşê: $name asteng bike';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Paşê: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Paşê: $name biguherîne';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Dest pê kir: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Hejmara dosyayê hat kopîkirin';
 
   @override
   String get lostWalletCaseSaved => 'Hejmara dosyayê hate tomarkirin';

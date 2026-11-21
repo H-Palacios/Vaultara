@@ -754,6 +754,18 @@ class AppLocalizationsSr extends AppLocalizations {
   String get snackPremiumRestored => 'Premium враћен';
 
   @override
+  String get snackFamilyEnabled => 'Породични план омогућен';
+
+  @override
+  String get snackBusinessEnabled => 'Пословни план омогућен';
+
+  @override
+  String get snackFamilyRestored => 'Породични план враћен';
+
+  @override
+  String get snackBusinessRestored => 'Пословни план враћен';
+
+  @override
   String get passwordNeedLower => 'Мора садржати мало слово';
 
   @override
@@ -2769,13 +2781,16 @@ class AppLocalizationsSr extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Обрисан запис';
 
   @override
-  String get leadLabel => 'Обнова траје отприлике';
+  String get leadLabel => 'Време обнове';
 
   @override
   String get leadHelper => 'Vaultara вас почиње подсећати довољно рано да обнову завршите на време.';
 
   @override
-  String get leadNotSet => 'Не знам';
+  String get leadHelperNotSet => 'Колико обнова обично траје, како би подсетници почели довољно рано.';
+
+  @override
+  String get leadNotSet => 'Није постављено';
 
   @override
   String leadWeeks(int weeks) {
@@ -7268,7 +7283,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get lifeVariantStolen => 'Украден';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Замрзните картице у апликацији банке ако то омогућава';
+  String get lifeTaskWalletFreezeCards => 'Замрзните картице у апликацији банке';
 
   @override
   String get lifeTaskWalletRetrace => 'Позовите последња места на којима сте били и питајте за изгубљене ствари';
@@ -7443,6 +7458,34 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Број предмета или референтни број';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Да ли сте блокирали $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Следеће: блокирајте $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Следеће: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Следеће: замените $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Започето: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Број случаја је копиран';
 
   @override
   String get lostWalletCaseSaved => 'Број пријаве сачуван';
@@ -10398,6 +10441,18 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get snackPremiumRestored => 'Premium враћен';
 
   @override
+  String get snackFamilyEnabled => 'Породични план омогућен';
+
+  @override
+  String get snackBusinessEnabled => 'Пословни план омогућен';
+
+  @override
+  String get snackFamilyRestored => 'Породични план враћен';
+
+  @override
+  String get snackBusinessRestored => 'Пословни план враћен';
+
+  @override
   String get passwordNeedLower => 'Мора садржати мало слово';
 
   @override
@@ -12413,13 +12468,16 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get sharedLinksUnknownRecord => 'Обрисан запис';
 
   @override
-  String get leadLabel => 'Обнова траје отприлике';
+  String get leadLabel => 'Време обнове';
 
   @override
   String get leadHelper => 'Vaultara почиње да вас подсећа довољно рано да обновите на време.';
 
   @override
-  String get leadNotSet => 'Не знам';
+  String get leadHelperNotSet => 'Колико обнова обично траје, како би подсетници почели довољно рано.';
+
+  @override
+  String get leadNotSet => 'Није постављено';
 
   @override
   String leadWeeks(int weeks) {
@@ -16912,7 +16970,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get lifeVariantStolen => 'Украден';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Замрзните картице у апликацији банке ако то омогућава';
+  String get lifeTaskWalletFreezeCards => 'Замрзните картице у апликацији банке';
 
   @override
   String get lifeTaskWalletRetrace => 'Позовите последња места на којима сте били и питајте за изгубљене ствари';
@@ -17087,6 +17145,34 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get lostWalletCaseLabel => 'Број предмета или референтни број';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Да ли сте блокирали $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Следеће: блокирајте $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Следеће: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Следеће: замените $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Започето: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Број случаја је копиран';
 
   @override
   String get lostWalletCaseSaved => 'Број пријаве сачуван';
@@ -20042,6 +20128,18 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get snackPremiumRestored => 'Premium vraćen';
 
   @override
+  String get snackFamilyEnabled => 'Porodični plan omogućen';
+
+  @override
+  String get snackBusinessEnabled => 'Poslovni plan omogućen';
+
+  @override
+  String get snackFamilyRestored => 'Porodični plan vraćen';
+
+  @override
+  String get snackBusinessRestored => 'Poslovni plan vraćen';
+
+  @override
   String get passwordNeedLower => 'Mora sadržati malo slovo';
 
   @override
@@ -22057,13 +22155,16 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get sharedLinksUnknownRecord => 'Obrisan zapis';
 
   @override
-  String get leadLabel => 'Obnova traje otprilike';
+  String get leadLabel => 'Vreme obnove';
 
   @override
   String get leadHelper => 'Vaultara vas počinje podsećati dovoljno rano da obnovite na vreme.';
 
   @override
-  String get leadNotSet => 'Ne znam';
+  String get leadHelperNotSet => 'Koliko obnova obično traje, kako bi podsetnici počeli dovoljno rano.';
+
+  @override
+  String get leadNotSet => 'Nije postavljeno';
 
   @override
   String leadWeeks(int weeks) {
@@ -26552,7 +26653,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get lifeVariantStolen => 'Ukraden';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Zamrznite kartice u aplikaciji banke ako to omogućava';
+  String get lifeTaskWalletFreezeCards => 'Zamrznite kartice u aplikaciji banke';
 
   @override
   String get lifeTaskWalletRetrace => 'Pozovite poslednja mesta na kojima ste bili i pitajte za izgubljene stvari';
@@ -26727,6 +26828,34 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get lostWalletCaseLabel => 'Broj predmeta ili referentni broj';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Da li ste blokirali $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Sledeće: blokirajte $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Sledeće: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Sledeće: zamenite $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Započeto: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Broj slučaja je kopiran';
 
   @override
   String get lostWalletCaseSaved => 'Broj prijave sačuvan';

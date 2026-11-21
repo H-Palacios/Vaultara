@@ -753,6 +753,18 @@ class AppLocalizationsNn extends AppLocalizations {
   String get snackPremiumRestored => 'Premium gjenoppretta';
 
   @override
+  String get snackFamilyEnabled => 'Familieabonnementet er aktivert';
+
+  @override
+  String get snackBusinessEnabled => 'Business-abonnementet er aktivert';
+
+  @override
+  String get snackFamilyRestored => 'Familieabonnementet er gjenoppretta';
+
+  @override
+  String get snackBusinessRestored => 'Business-abonnementet er gjenoppretta';
+
+  @override
   String get passwordNeedLower => 'Må innehalde ein liten bokstav';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsNn extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Sletta oppføring';
 
   @override
-  String get leadLabel => 'Fornying tek omtrent';
+  String get leadLabel => 'Fornyingstid';
 
   @override
   String get leadHelper => 'Vaultara minner deg på det tidleg nok til at du rekk å forny.';
 
   @override
-  String get leadNotSet => 'Veit ikkje';
+  String get leadHelperNotSet => 'Kor lang tid fornying vanlegvis tek, slik at påminningar startar tidleg nok.';
+
+  @override
+  String get leadNotSet => 'Ikkje sett';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsNn extends AppLocalizations {
   String get lifeVariantStolen => 'Stolen';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Frys korta i bankappen om han har det';
+  String get lifeTaskWalletFreezeCards => 'Frys korta dine i bankappen';
 
   @override
   String get lifeTaskWalletRetrace => 'Ring dei siste stadene du var, og spør etter hittegods';
@@ -7377,6 +7392,34 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Saks- eller referansenummer';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Har du sperra $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Neste: sperr $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Neste: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Neste: erstatt $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Starta: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Saksnummer kopiert';
 
   @override
   String get lostWalletCaseSaved => 'Saksnummer lagra';

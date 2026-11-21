@@ -753,6 +753,18 @@ class AppLocalizationsHu extends AppLocalizations {
   String get snackPremiumRestored => 'Premium visszaállítva';
 
   @override
+  String get snackFamilyEnabled => 'Family csomag engedélyezve';
+
+  @override
+  String get snackBusinessEnabled => 'Üzleti csomag engedélyezve';
+
+  @override
+  String get snackFamilyRestored => 'Family csomag visszaállítva';
+
+  @override
+  String get snackBusinessRestored => 'Üzleti csomag visszaállítva';
+
+  @override
   String get passwordNeedLower => 'Kisbetűt kell tartalmaznia';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsHu extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Törölt bejegyzés';
 
   @override
-  String get leadLabel => 'A megújítás nagyjából ennyi ideig tart';
+  String get leadLabel => 'Megújítási idő';
 
   @override
   String get leadHelper => 'A Vaultara elég korán elkezdi az emlékeztetőket, hogy időben megújíthassa.';
 
   @override
-  String get leadNotSet => 'Nem tudom';
+  String get leadHelperNotSet => 'Mennyi ideig tart általában a megújítás, hogy az emlékeztetők időben induljanak.';
+
+  @override
+  String get leadNotSet => 'Nincs megadva';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get lifeVariantStolen => 'Ellopták';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Fagyaszd be a kártyáidat a banki appban, ha tudja';
+  String get lifeTaskWalletFreezeCards => 'Fagyaszd be a kártyáidat a banki appban';
 
   @override
   String get lifeTaskWalletRetrace => 'Hívd fel a legutóbbi helyeket, ahol jártál, és kérdezz a talált tárgyaknál';
@@ -7374,6 +7389,34 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Ügy- vagy hivatkozási szám';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Letiltottad: $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Következő: tiltsd le: $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Következő: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Következő: pótold: $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Elkezdve: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Ügyszám másolva';
 
   @override
   String get lostWalletCaseSaved => 'Ügyszám mentve';

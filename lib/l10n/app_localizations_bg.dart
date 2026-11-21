@@ -753,6 +753,18 @@ class AppLocalizationsBg extends AppLocalizations {
   String get snackPremiumRestored => 'Premium е възстановен';
 
   @override
+  String get snackFamilyEnabled => 'Планът Family е включен';
+
+  @override
+  String get snackBusinessEnabled => 'Планът Business е включен';
+
+  @override
+  String get snackFamilyRestored => 'Планът Family е възстановен';
+
+  @override
+  String get snackBusinessRestored => 'Планът Business е възстановен';
+
+  @override
   String get passwordNeedLower => 'Трябва да съдържа малка буква';
 
   @override
@@ -2752,13 +2764,16 @@ class AppLocalizationsBg extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Изтрит запис';
 
   @override
-  String get leadLabel => 'Подновяването отнема около';
+  String get leadLabel => 'Време за подновяване';
 
   @override
   String get leadHelper => 'Vaultara започва да ви напомня достатъчно рано, за да подновите навреме.';
 
   @override
-  String get leadNotSet => 'Не знам';
+  String get leadHelperNotSet => 'Колко време обикновено отнема подновяването, за да започнат напомнянията навреме.';
+
+  @override
+  String get leadNotSet => 'Не е зададено';
 
   @override
   String leadWeeks(int weeks) {
@@ -7199,7 +7214,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get lifeVariantStolen => 'Откраднат';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Замразете картите в банковото приложение, ако то го позволява';
+  String get lifeTaskWalletFreezeCards => 'Замразете картите си в банковото приложение';
 
   @override
   String get lifeTaskWalletRetrace => 'Обадете се на последните места, където сте били, и питайте за изгубени вещи';
@@ -7374,6 +7389,34 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Номер на преписка или референтен номер';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Блокирахте ли $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Следва: блокирайте $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Следва: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Следва: подменете $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Започнато: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'Номерът на случая е копиран';
 
   @override
   String get lostWalletCaseSaved => 'Номерът е запазен';

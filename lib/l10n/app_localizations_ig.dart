@@ -753,6 +753,18 @@ class AppLocalizationsIg extends AppLocalizations {
   String get snackPremiumRestored => 'E weghachiri Premium';
 
   @override
+  String get snackFamilyEnabled => 'A kwadoro atụmatụ Ezinụlọ';
+
+  @override
+  String get snackBusinessEnabled => 'A kwadoro atụmatụ Azụmahịa';
+
+  @override
+  String get snackFamilyRestored => 'E weghachiri atụmatụ Ezinụlọ';
+
+  @override
+  String get snackBusinessRestored => 'E weghachiri atụmatụ Azụmahịa';
+
+  @override
   String get passwordNeedLower => 'Ga-enwe mkpụrụedemede nta';
 
   @override
@@ -2749,13 +2761,16 @@ class AppLocalizationsIg extends AppLocalizations {
   String get sharedLinksUnknownRecord => 'Ndekọ ehichapụrụ';
 
   @override
-  String get leadLabel => 'Imegharị na-ewe ihe dị ka';
+  String get leadLabel => 'Oge imegharị';
 
   @override
   String get leadHelper => 'Vaultara na-amalite icheta gị n\'oge zuru ezu ka i megharịa n\'oge.';
 
   @override
-  String get leadNotSet => 'Amaghị m';
+  String get leadHelperNotSet => 'Ogologo oge imegharị na-ewekarị, ka ihe ncheta bido n\'oge.';
+
+  @override
+  String get leadNotSet => 'Edobeghị';
 
   @override
   String leadWeeks(int weeks) {
@@ -7149,7 +7164,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get lifeVariantStolen => 'E zuru ya';
 
   @override
-  String get lifeTaskWalletFreezeCards => 'Kpọnwụọ kaadị gị n\'ime ngwa ụlọ akụ gị ma ọ nwere nhọrọ ahụ';
+  String get lifeTaskWalletFreezeCards => 'Kpọnwụọ kaadị gị n\'ime ngwa ụlọ akụ gị';
 
   @override
   String get lifeTaskWalletRetrace => 'Kpọọ ebe ikpeazụ ị gara ma jụọ maka ihe furu efu';
@@ -7324,6 +7339,34 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get lostWalletCaseLabel => 'Nọmba okwu ma ọ bụ ntụaka';
+
+  @override
+  String lostWalletDidBlock(String name) {
+    return 'Ị gbochiri $name?';
+  }
+
+  @override
+  String lostWalletNextBlock(String name) {
+    return 'Ọzọ: gbochie $name';
+  }
+
+  @override
+  String lostWalletNextStep(String step) {
+    return 'Ọzọ: $step';
+  }
+
+  @override
+  String lostWalletNextReplace(String name) {
+    return 'Ọzọ: dochie $name';
+  }
+
+  @override
+  String lostWalletStarted(String time) {
+    return 'Malitere: $time';
+  }
+
+  @override
+  String get lostWalletCaseCopied => 'E depụtaghachiri nọmba okwu';
 
   @override
   String get lostWalletCaseSaved => 'Echekwala nọmba okwu';

@@ -1615,6 +1615,30 @@ abstract class AppLocalizations {
   /// **'Premium restored'**
   String get snackPremiumRestored;
 
+  /// Shown after buying the Family plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Family plan enabled'**
+  String get snackFamilyEnabled;
+
+  /// Shown after buying the Business plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Business plan enabled'**
+  String get snackBusinessEnabled;
+
+  /// Shown after Restore purchases brings back the Family plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Family plan restored'**
+  String get snackFamilyRestored;
+
+  /// Shown after Restore purchases brings back the Business plan.
+  ///
+  /// In en, this message translates to:
+  /// **'Business plan restored'**
+  String get snackBusinessRestored;
+
   /// No description provided for @passwordNeedLower.
   ///
   /// In en, this message translates to:
@@ -4990,7 +5014,7 @@ abstract class AppLocalizations {
   /// Form field label: how long renewing this document usually takes
   ///
   /// In en, this message translates to:
-  /// **'Renewal takes about'**
+  /// **'Renewal time'**
   String get leadLabel;
 
   /// Helper text under the field
@@ -4999,10 +5023,16 @@ abstract class AppLocalizations {
   /// **'Vaultara starts reminding you early enough to renew in time.'**
   String get leadHelper;
 
+  /// Record editor: help under the Renewal time picker while nothing is chosen.
+  ///
+  /// In en, this message translates to:
+  /// **'How long renewing usually takes, so reminders start early enough.'**
+  String get leadHelperNotSet;
+
   /// Dropdown option when the user does not know
   ///
   /// In en, this message translates to:
-  /// **'Not sure'**
+  /// **'Not set'**
   String get leadNotSet;
 
   /// Duration in weeks, for example 2 weeks
@@ -12376,7 +12406,7 @@ abstract class AppLocalizations {
   /// A step in a lost wallet plan. Imperative, short.
   ///
   /// In en, this message translates to:
-  /// **'Freeze your cards in your banking app if it has a freeze switch'**
+  /// **'Freeze your cards in your banking app'**
   String get lifeTaskWalletFreezeCards;
 
   /// A step in a lost wallet plan. Imperative, short.
@@ -12684,6 +12714,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Case or reference number'**
   String get lostWalletCaseLabel;
+
+  /// Lost wallet: asked when coming back to the app after calling a bank. {name} is the card name.
+  ///
+  /// In en, this message translates to:
+  /// **'Did you block {name}?'**
+  String lostWalletDidBlock(String name);
+
+  /// Lost wallet status card: the next thing to do. {name} is a card name.
+  ///
+  /// In en, this message translates to:
+  /// **'Next: block {name}'**
+  String lostWalletNextBlock(String name);
+
+  /// Lost wallet status card: the next thing to do. {step} is a step such as "Report it to the police".
+  ///
+  /// In en, this message translates to:
+  /// **'Next: {step}'**
+  String lostWalletNextStep(String step);
+
+  /// Lost wallet status card: the next thing to do. {name} is a document name.
+  ///
+  /// In en, this message translates to:
+  /// **'Next: replace {name}'**
+  String lostWalletNextReplace(String name);
+
+  /// Lost wallet status card: how long ago the plan started. {time} is relative, e.g. "25 minutes ago".
+  ///
+  /// In en, this message translates to:
+  /// **'Started {time}'**
+  String lostWalletStarted(String time);
+
+  /// Shown after copying the police case number.
+  ///
+  /// In en, this message translates to:
+  /// **'Case number copied'**
+  String get lostWalletCaseCopied;
 
   /// Confirmation.
   ///
