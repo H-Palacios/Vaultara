@@ -672,7 +672,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Išplėstiniai priminimai atrakinti.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Atrakinkite išplėstinius priminimus ir neribotą tvarkymą.';
+  String get profile_premium_upgrade_subtitle => 'Klauskite Vaultara, kelionių planai, neriboti įrašai ir nuotraukos.';
 
   @override
   String get profile_manage_cancel_hint => 'Valdykite arba atšaukite bet kada per Google Play.';
@@ -831,7 +831,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get profileTutorialsTitle => 'Pamokos';
 
   @override
-  String get profileTutorialsSubtitle => 'Naršyti Programėlės Pamokas';
+  String get profileTutorialsSubtitle => 'Trumpi ekskursai su gidu po kiekvieną funkciją';
 
   @override
   String get tutorialsScreenTitle => 'Pamokos';
@@ -931,6 +931,9 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Laiko juosta rodo, kada per metus baigsis jūsų įrašų galiojimas, su rodyklėmis metams perjungti.';
+
+  @override
+  String get tutorialInsightsCosts => 'Įrašykite, kiek kainuoja kiekvienas atnaujinimas, ir Vaultara suskaičiuos, kiek išleidžiate kasmet ir kurie mėnesiai brangiausi.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Britanijos Pasas';
@@ -7863,6 +7866,9 @@ class AppLocalizationsLt extends AppLocalizations {
   String get tutorialsPaidBadge => 'Mokami planai';
 
   @override
+  String get tutorialsInYourPlan => 'Jūsų plane';
+
+  @override
   String get tutorialsPaidNote => 'Tai galite peržiūrėti su bet kuriuo planu. Pačiai funkcijai reikia mokamo plano.';
 
   @override
@@ -7943,7 +7949,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get tourHome4Title => 'Pagalba vienu palietimu';
 
   @override
-  String get tourHome4Body => 'Kibirkšties mygtukas atidaro „Klauskite Vaultara“. Jūsų nuotrauka atidaro profilį, nustatymus ir mokymus.';
+  String get tourHome4Body => 'Kibirkšties mygtukas atidaro „Klauskite Vaultara“. Šalia esantis profilio mygtukas atidaro profilį, nustatymus ir mokymus.';
 
   @override
   String get tourRenew1Title => 'Gaunate priminimą';
@@ -8088,6 +8094,11 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Atidarykite įrašą ir bendrinkite nuorodą, kuri rodo tik tą įrašą ir nieko daugiau.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Bet kuriame įraše bakstelėkite ⋮ ir pasirinkite $action. Nuoroda rodo tik tą įrašą, nieko daugiau.';
+  }
 
   @override
   String get tourShare2Title => 'Įrodymų paketas';

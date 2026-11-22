@@ -672,7 +672,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Дэвшилтэт сануулгууд нээгдсэн.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Дэвшилтэт сануулга болон хязгааргүй зохион байгуулалтыг нээнэ үү.';
+  String get profile_premium_upgrade_subtitle => 'Vaultara-аас асуух, аяллын төлөвлөгөө, хязгааргүй бүртгэл ба зураг.';
 
   @override
   String get profile_manage_cancel_hint => 'Google Play-ээр дамжуулан хүссэн үедээ удирдах эсвэл цуцлах боломжтой.';
@@ -829,7 +829,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get profileTutorialsTitle => 'Хичээлүүд';
 
   @override
-  String get profileTutorialsSubtitle => 'Апп Хичээлүүдийг Үзэх';
+  String get profileTutorialsSubtitle => 'Онцлог бүрийн богино хөтөчтэй аялал';
 
   @override
   String get tutorialsScreenTitle => 'Хичээлүүд';
@@ -926,6 +926,9 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Цаг хугацааны шугам таны бичлэгүүд жилийн туршид хэзээ дуусахыг харуулж, жилүүдийн хооронд шилжих сумтай.';
+
+  @override
+  String get tutorialInsightsCosts => 'Сунгалт бүрийн үнийг нэмбэл Vaultara жил бүрийн зардал болон хамгийн үнэтэй сарууд нэгтгэнэ.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Британийн Паспорт';
@@ -7712,6 +7715,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get tutorialsPaidBadge => 'Төлбөртэй багцууд';
 
   @override
+  String get tutorialsInYourPlan => 'Таны багцад багтсан';
+
+  @override
   String get tutorialsPaidNote => 'Үүнийг ямар ч багцаар үзэж болно. Боломжийг ашиглахад төлбөртэй багц шаардлагатай.';
 
   @override
@@ -7792,7 +7798,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get tourHome4Title => 'Нэг товшилтоор тусламж';
 
   @override
-  String get tourHome4Body => 'Гялбааны товч «Vaultara-аас асуух»-г нээнэ. Таны зураг профайл, тохиргоо, зааварчилгааг нээнэ.';
+  String get tourHome4Body => 'Гялбааны товч «Vaultara-аас асуух»-г нээнэ. Хажууд нь байгаа профайлын товч профайл, тохиргоо, зааварчилгааг нээнэ.';
 
   @override
   String get tourRenew1Title => 'Сануулга ирнэ';
@@ -7937,6 +7943,11 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Бүртгэлийг нээж, зөвхөн тэр бүртгэлийг харуулах холбоос хуваалцана уу, өөр юу ч биш.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Аль ч бүртгэл дээр ⋮ дарж $action сонгоно уу. Холбоос зөвхөн тэр бүртгэлийг харуулна, өөр юу ч биш.';
+  }
 
   @override
   String get tourShare2Title => 'Нотлох багц';

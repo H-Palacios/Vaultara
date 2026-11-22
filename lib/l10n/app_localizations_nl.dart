@@ -672,7 +672,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Geavanceerde herinneringen ontgrendeld.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Ontgrendel geavanceerde herinneringen en onbeperkte organisatie.';
+  String get profile_premium_upgrade_subtitle => 'Vraag Vaultara, reisplannen, onbeperkt items en foto\'s.';
 
   @override
   String get profile_manage_cancel_hint => 'Beheer of annuleer op elk moment via Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get profileTutorialsTitle => 'Tutorials';
 
   @override
-  String get profileTutorialsSubtitle => 'Blader Door App-tutorials';
+  String get profileTutorialsSubtitle => 'Korte rondleidingen door elke functie';
 
   @override
   String get tutorialsScreenTitle => 'Tutorials';
@@ -927,6 +927,9 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'De tijdlijn toont wanneer je records tijdens het jaar verlopen, met pijlen om tussen jaren te wisselen.';
+
+  @override
+  String get tutorialInsightsCosts => 'Vul in wat elke verlenging kost en Vaultara telt op wat je elk jaar uitgeeft en welke maanden het duurst zijn.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Brits Paspoort';
@@ -7726,6 +7729,9 @@ class AppLocalizationsNl extends AppLocalizations {
   String get tutorialsPaidBadge => 'Betaalde abonnementen';
 
   @override
+  String get tutorialsInYourPlan => 'In je abonnement';
+
+  @override
   String get tutorialsPaidNote => 'Je kunt dit met elk abonnement bekijken. Voor de functie zelf heb je een betaald abonnement nodig.';
 
   @override
@@ -7806,7 +7812,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get tourHome4Title => 'Hulp met één tik';
 
   @override
-  String get tourHome4Body => 'De glinsterknop opent ‘Vraag Vaultara’. Je foto opent je profiel, instellingen en tutorials.';
+  String get tourHome4Body => 'De glinsterknop opent ‘Vraag Vaultara’. De profielknop ernaast opent je profiel, instellingen en tutorials.';
 
   @override
   String get tourRenew1Title => 'Er komt een herinnering';
@@ -7951,6 +7957,11 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Open een item en deel een link die alleen dat item toont, verder niets.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Tik bij een item op ⋮ en kies $action. De link toont alleen dat item, verder niets.';
+  }
 
   @override
   String get tourShare2Title => 'Bewijspakket';

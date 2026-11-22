@@ -672,7 +672,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get profile_premium_active_subtitle => '고급 알림이 활성화되었습니다.';
 
   @override
-  String get profile_premium_upgrade_subtitle => '고급 알림과 무제한 정리를 이용하세요.';
+  String get profile_premium_upgrade_subtitle => 'Vaultara에 물어보기, 여행 계획, 무제한 기록과 사진.';
 
   @override
   String get profile_manage_cancel_hint => 'Google Play에서 언제든지 관리하거나 취소할 수 있습니다.';
@@ -829,7 +829,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get profileTutorialsTitle => '튜토리얼';
 
   @override
-  String get profileTutorialsSubtitle => '앱 튜토리얼 둘러보기';
+  String get profileTutorialsSubtitle => '모든 기능을 짧게 안내하는 가이드 투어';
 
   @override
   String get tutorialsScreenTitle => '튜토리얼';
@@ -926,6 +926,9 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => '타임라인은 기록이 연중 언제 만료되는지 보여주며, 화살표로 연도 간 전환이 가능합니다.';
+
+  @override
+  String get tutorialInsightsCosts => '갱신마다 드는 비용을 입력하면 Vaultara가 매년 쓰는 금액과 가장 비싼 달을 계산해 줘요.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => '영국 여권';
@@ -7665,6 +7668,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tutorialsPaidBadge => '유료 요금제';
 
   @override
+  String get tutorialsInYourPlan => '내 요금제에 포함됨';
+
+  @override
   String get tutorialsPaidNote => '어떤 요금제에서도 볼 수 있어요. 기능을 쓰려면 유료 요금제가 필요해요.';
 
   @override
@@ -7745,7 +7751,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tourHome4Title => '탭 한 번으로 도움';
 
   @override
-  String get tourHome4Body => '반짝이 버튼으로 \'Vaultara에 물어보기\'이(가) 열려요. 프로필 사진을 누르면 프로필, 설정, 튜토리얼이 열려요.';
+  String get tourHome4Body => '반짝이 버튼으로 \'Vaultara에 물어보기\'이(가) 열려요. 옆에 있는 프로필 버튼을 누르면 프로필, 설정, 튜토리얼이 열려요.';
 
   @override
   String get tourRenew1Title => '알림이 와요';
@@ -7890,6 +7896,11 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get tourShare1Body => '기록을 열고 그 기록만 보이는 링크를 공유하세요. 다른 건 보이지 않아요.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return '기록에서 ⋮을 누르고 \'$action\'을(를) 선택하세요. 링크에는 그 기록만 보이고 다른 건 보이지 않아요.';
+  }
 
   @override
   String get tourShare2Title => '증빙 패키지';

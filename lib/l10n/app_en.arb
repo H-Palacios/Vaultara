@@ -368,7 +368,7 @@
   "profile_premium_active_title": "Premium is active",
   "profile_premium_upgrade_title": "Upgrade to Premium",
   "profile_premium_active_subtitle": "Advanced reminders unlocked.",
-  "profile_premium_upgrade_subtitle": "Unlock advanced reminders and unlimited organisation.",
+  "profile_premium_upgrade_subtitle": "Ask Vaultara, travel plans, unlimited records and photos.",
   "profile_manage_cancel_hint": "Manage or cancel anytime in Google Play.",
   "profile_manage_subscription_button": "Manage subscription",
   "plansTitle": "Plans",
@@ -462,7 +462,7 @@
   },
   "profileHeaderTitle": "Profile",
   "profileTutorialsTitle": "Tutorials",
-  "profileTutorialsSubtitle": "Browse App Tutorials",
+  "profileTutorialsSubtitle": "Short guided tours of every feature",
   "tutorialsScreenTitle": "Tutorials",
   "tutorialsFullTourTitle": "Take the Full Tour",
   "tutorialsFullTourSubtitle": "Walk through Vaultara from start to finish",
@@ -510,6 +510,10 @@
   },
   "tutorialInsightsSmartCard": "Vaultara highlights what needs your attention: records expiring soon, missing reminders, and busy weeks ahead.",
   "tutorialInsightsTimeline": "The timeline shows when your records expire across the year, with arrows to switch between years.",
+  "tutorialInsightsCosts": "Add what each renewal costs and Vaultara adds up what you spend each year, and which months cost the most.",
+  "@tutorialInsightsCosts": {
+    "description": "Insights tutorial step that points at the renewal costs card."
+  },
   "tutorialInsightsSampleRecordTwo": "British Passport",
   "tutorialInsightsSampleRecordThree": "BUPA Health Insurance",
   "tutorialAudio": "Prefer to listen? Have your insights read aloud, and pause any time.",
@@ -9450,6 +9454,10 @@
   "@tutorialsPaidBadge": {
     "description": "Badge on a tutorial for a paid feature."
   },
+  "tutorialsInYourPlan": "In your plan",
+  "@tutorialsInYourPlan": {
+    "description": "Chip on a tutorial whose feature the user's plan already includes. Short."
+  },
   "tutorialsPaidNote": "You can watch this on any plan. Using the feature needs a paid plan.",
   "@tutorialsPaidNote": {
     "description": "Note at the end of a tutorial for a paid feature."
@@ -9562,7 +9570,7 @@
   "@tourHome4Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "tourHome4Body": "The sparkle button opens Ask Vaultara. Your picture opens your profile, settings and tutorials.",
+  "tourHome4Body": "The sparkle button opens Ask Vaultara. The profile button next to it opens your profile, settings and tutorials.",
   "@tourHome4Body": {
     "description": "Text of a tutorial step."
   },
@@ -9757,6 +9765,15 @@
   "tourShare1Body": "Open a record and share a link that shows only that record, nothing else.",
   "@tourShare1Body": {
     "description": "Text of a tutorial step."
+  },
+  "tourShare1BodyMenu": "On any record, tap ⋮ and choose {action}. The link shows only that record, nothing else.",
+  "@tourShare1BodyMenu": {
+    "description": "Sharing tutorial step. {action} is the record menu item that shares a link, such as \"Share secure link\". ⋮ is the record menu button.",
+    "placeholders": {
+      "action": {
+        "type": "String"
+      }
+    }
   },
   "tourShare2Title": "Proof pack",
   "@tourShare2Title": {

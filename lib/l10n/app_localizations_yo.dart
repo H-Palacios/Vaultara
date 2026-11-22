@@ -672,7 +672,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Awọn iranti ilọsiwaju ti ṣii.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Ṣii awọn iranti ilọsiwaju ati iṣeto ailopin.';
+  String get profile_premium_upgrade_subtitle => 'Béèrè Vaultara, ètò ìrìn-àjò, àwọn àkọsílẹ̀ àti fọ́tò láìní òpin.';
 
   @override
   String get profile_manage_cancel_hint => 'Ṣakoso tabi fagilee nigbakugba lori Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get profileTutorialsTitle => 'Àwọn Ìtọ́nisọ́nà';
 
   @override
-  String get profileTutorialsSubtitle => 'Ṣàwárí Àwọn Ìtọ́nisọ́nà Ẹ̀rọ';
+  String get profileTutorialsSubtitle => 'Ìrìn-àjò ìtọ́sọ́nà kúkúrú fún gbogbo ẹ̀yà';
 
   @override
   String get tutorialsScreenTitle => 'Àwọn Ìtọ́nisọ́nà';
@@ -927,6 +927,9 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Ìlà àkókò ń fihan nigba tí àwọn igbasilẹ rẹ yóò pari ni gbogbo ọdún, pẹlu awọn ọfa lati yipada laarin ọdún.';
+
+  @override
+  String get tutorialInsightsCosts => 'Ṣàfikún iye tí ìsọdọ̀tun kọ̀ọ̀kan ń ná, Vaultara yóò ṣírò ohun tí o ń ná lọ́dọọdún àti àwọn oṣù tó gbówó jù.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Iwe Irinna ti Britain';
@@ -7671,6 +7674,9 @@ class AppLocalizationsYo extends AppLocalizations {
   String get tutorialsPaidBadge => 'Awọn eto ti a sanwo fun';
 
   @override
+  String get tutorialsInYourPlan => 'Nínú ètò rẹ';
+
+  @override
   String get tutorialsPaidNote => 'O le wo eyi pẹlu eto eyikeyi. Ẹya naa funrararẹ nilo eto ti a sanwo fun.';
 
   @override
@@ -7751,7 +7757,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get tourHome4Title => 'Iranlọwọ ni fifọwọkan kan';
 
   @override
-  String get tourHome4Body => 'Bọtini itanna ṣi «Béèrè Vaultara». Fọto rẹ ṣi profaili, awọn eto ati awọn ikẹkọ rẹ.';
+  String get tourHome4Body => 'Bọtini itanna ṣi «Béèrè Vaultara». Bọtini profaili tó wà lẹ́gbẹ̀ẹ́ rẹ̀ ṣi profaili, awọn eto ati awọn ikẹkọ rẹ.';
 
   @override
   String get tourRenew1Title => 'Iranti kan de';
@@ -7896,6 +7902,11 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Ṣi igbasilẹ kan ki o pin ọna asopọ ti o fi igbasilẹ yẹn nikan han, ko si ohun miiran.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Lórí àkọsílẹ̀ èyíkéyìí, tẹ ⋮ kí o sì yan $action. Ọ̀nà asopọ̀ náà ń fi àkọsílẹ̀ yẹn nìkan hàn, kò sí nǹkan míì.';
+  }
 
   @override
   String get tourShare2Title => 'Àpò ẹ̀rí';

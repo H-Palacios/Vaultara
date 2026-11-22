@@ -672,7 +672,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get profile_premium_active_subtitle => 'ਐਡਵਾਂਸਡ ਰਿਮਾਈਂਡਰ ਚਾਲੂ ਹੋ ਚੁੱਕੇ ਹਨ।';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'ਐਡਵਾਂਸਡ ਰਿਮਾਈਂਡਰ ਅਤੇ ਅਸੀਮਿਤ ਸੰਗਠਨ ਖੋਲ੍ਹੋ।';
+  String get profile_premium_upgrade_subtitle => 'Vaultara ਨੂੰ ਪੁੱਛੋ, ਯਾਤਰਾ ਯੋਜਨਾਵਾਂ, ਅਸੀਮਤ ਰਿਕਾਰਡ ਅਤੇ ਫ਼ੋਟੋਆਂ।';
 
   @override
   String get profile_manage_cancel_hint => 'Google Play ਵਿੱਚ ਕਿਸੇ ਵੀ ਵੇਲੇ ਮੈਨੇਜ ਜਾਂ ਰੱਦ ਕਰੋ।';
@@ -829,7 +829,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get profileTutorialsTitle => 'ਟਿਊਟੋਰਿਅਲ';
 
   @override
-  String get profileTutorialsSubtitle => 'ਐਪ ਟਿਊਟੋਰਿਅਲ ਬ੍ਰਾਊਜ਼ ਕਰੋ';
+  String get profileTutorialsSubtitle => 'ਹਰ ਫ਼ੀਚਰ ਦੇ ਛੋਟੇ ਗਾਈਡਡ ਟੂਰ';
 
   @override
   String get tutorialsScreenTitle => 'ਟਿਊਟੋਰਿਅਲ';
@@ -927,6 +927,9 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'ਟਾਈਮਲਾਈਨ ਦਿਖਾਉਂਦੀ ਹੈ ਕਿ ਤੁਹਾਡੇ ਰਿਕਾਰਡ ਸਾਲ ਦੌਰਾਨ ਕਦੋਂ ਖਤਮ ਹੁੰਦੇ ਹਨ, ਸਾਲਾਂ ਵਿਚਕਾਰ ਬਦਲਣ ਲਈ ਤੀਰਾਂ ਨਾਲ।';
+
+  @override
+  String get tutorialInsightsCosts => 'ਹਰ ਨਵੀਨੀਕਰਨ ਦੀ ਲਾਗਤ ਜੋੜੋ, Vaultara ਹਰ ਸਾਲ ਦਾ ਤੁਹਾਡਾ ਖ਼ਰਚ ਅਤੇ ਸਭ ਤੋਂ ਮਹਿੰਗੇ ਮਹੀਨੇ ਜੋੜਦਾ ਹੈ।';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'ਬ੍ਰਿਟਿਸ਼ ਪਾਸਪੋਰਟ';
@@ -7722,6 +7725,9 @@ class AppLocalizationsPa extends AppLocalizations {
   String get tutorialsPaidBadge => 'ਭੁਗਤਾਨ ਵਾਲੇ ਪਲਾਨ';
 
   @override
+  String get tutorialsInYourPlan => 'ਤੁਹਾਡੇ ਪਲਾਨ ਵਿੱਚ';
+
+  @override
   String get tutorialsPaidNote => 'ਤੁਸੀਂ ਇਹ ਕਿਸੇ ਵੀ ਪਲਾਨ ਨਾਲ ਦੇਖ ਸਕਦੇ ਹੋ। ਸੁਵਿਧਾ ਲਈ ਭੁਗਤਾਨ ਵਾਲਾ ਪਲਾਨ ਲੋੜੀਂਦਾ ਹੈ।';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get tourHome4Title => 'ਇੱਕ ਟੈਪ ਵਿੱਚ ਮਦਦ';
 
   @override
-  String get tourHome4Body => 'ਸਪਾਰਕਲ ਬਟਨ «Vaultara ਨੂੰ ਪੁੱਛੋ» ਖੋਲ੍ਹਦਾ ਹੈ। ਤੁਹਾਡੀ ਫ਼ੋਟੋ ਪ੍ਰੋਫ਼ਾਈਲ, ਸੈਟਿੰਗਾਂ ਅਤੇ ਟਿਊਟੋਰੀਅਲ ਖੋਲ੍ਹਦੀ ਹੈ।';
+  String get tourHome4Body => 'ਸਪਾਰਕਲ ਬਟਨ «Vaultara ਨੂੰ ਪੁੱਛੋ» ਖੋਲ੍ਹਦਾ ਹੈ। ਇਸਦੇ ਨਾਲ ਵਾਲਾ ਪ੍ਰੋਫ਼ਾਈਲ ਬਟਨ ਪ੍ਰੋਫ਼ਾਈਲ, ਸੈਟਿੰਗਾਂ ਅਤੇ ਟਿਊਟੋਰੀਅਲ ਖੋਲ੍ਹਦਾ ਹੈ।';
 
   @override
   String get tourRenew1Title => 'ਰੀਮਾਈਂਡਰ ਆਉਂਦਾ ਹੈ';
@@ -7947,6 +7953,11 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'ਰਿਕਾਰਡ ਖੋਲ੍ਹੋ ਅਤੇ ਅਜਿਹਾ ਲਿੰਕ ਸਾਂਝਾ ਕਰੋ ਜੋ ਸਿਰਫ਼ ਉਹੀ ਰਿਕਾਰਡ ਦਿਖਾਏ, ਹੋਰ ਕੁਝ ਨਹੀਂ।';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'ਕਿਸੇ ਵੀ ਰਿਕਾਰਡ \'ਤੇ ⋮ ਟੈਪ ਕਰੋ ਅਤੇ $action ਚੁਣੋ। ਲਿੰਕ ਸਿਰਫ਼ ਉਹੀ ਰਿਕਾਰਡ ਦਿਖਾਉਂਦਾ ਹੈ, ਹੋਰ ਕੁਝ ਨਹੀਂ।';
+  }
 
   @override
   String get tourShare2Title => 'ਸਬੂਤ ਪੈਕ';

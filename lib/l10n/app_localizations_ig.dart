@@ -672,7 +672,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get profile_premium_active_subtitle => 'E meghere ncheta dị elu.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Meghee ncheta dị elu na nhazi na-enweghị oke.';
+  String get profile_premium_upgrade_subtitle => 'Jụọ Vaultara, atụmatụ njem, ndekọ na foto na-enweghị oke.';
 
   @override
   String get profile_manage_cancel_hint => 'Jikwaa ma ọ bụ kagbuo n’oge ọ bụla na Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get profileTutorialsTitle => 'Nkuzi';
 
   @override
-  String get profileTutorialsSubtitle => 'Chọgharịa Nkuzi Ngwa';
+  String get profileTutorialsSubtitle => 'Njem nduzi dị mkpirikpi nke njirimara ọ bụla';
 
   @override
   String get tutorialsScreenTitle => 'Nkuzi';
@@ -927,6 +927,9 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Usoro oge na-egosi mgbe ndekọ gị ga-akwụsị n\'ime afọ, jiri akụ maka ịgbanwe n\'etiti afọ.';
+
+  @override
+  String get tutorialInsightsCosts => 'Tinye ego mmeghari ọ bụla na-efu, Vaultara ga-agbakọ ihe ị na-emefu kwa afọ na ọnwa ndị kacha dị oke ọnụ.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Paspọtụ Britain';
@@ -7671,6 +7674,9 @@ class AppLocalizationsIg extends AppLocalizations {
   String get tutorialsPaidBadge => 'Atụmatụ ịkwụ ụgwọ';
 
   @override
+  String get tutorialsInYourPlan => 'N\'ime atụmatụ gị';
+
+  @override
   String get tutorialsPaidNote => 'Ị nwere ike ilele nke a na atụmatụ ọ bụla. Atụmatụ ahụ n\'onwe ya chọrọ atụmatụ akwụ ụgwọ.';
 
   @override
@@ -7751,7 +7757,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get tourHome4Title => 'Enyemaka n\'otu mmetụ';
 
   @override
-  String get tourHome4Body => 'Bọtịnụ ọkụ na-emepe «Jụọ Vaultara». Foto gị na-emepe profaịlụ, ntọala na nkuzi gị.';
+  String get tourHome4Body => 'Bọtịnụ ọkụ na-emepe «Jụọ Vaultara». Bọtịnụ profaịlụ dị n\'akụkụ ya na-emepe profaịlụ, ntọala na nkuzi gị.';
 
   @override
   String get tourRenew1Title => 'Ncheta bịara';
@@ -7896,6 +7902,11 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Mepee ndekọ ma kekọrịta njikọ na-egosi naanị ndekọ ahụ, ọ dịghị ihe ọzọ.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Na ndekọ ọ bụla, pịa ⋮ ma họrọ $action. Njikọ ahụ na-egosi naanị ndekọ ahụ, ọ dịghị ihe ọzọ.';
+  }
 
   @override
   String get tourShare2Title => 'Ngwugwu ihe akaebe';

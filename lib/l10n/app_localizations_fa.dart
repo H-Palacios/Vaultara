@@ -672,7 +672,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get profile_premium_active_subtitle => 'یادآورهای پیشرفته فعال شده‌اند.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'یادآورهای پیشرفته و سازماندهی نامحدود را فعال کنید.';
+  String get profile_premium_upgrade_subtitle => 'از Vaultara بپرسید، برنامه‌های سفر، سوابق و عکس‌های نامحدود.';
 
   @override
   String get profile_manage_cancel_hint => 'در هر زمان از طریق Google Play مدیریت یا لغو کنید.';
@@ -829,7 +829,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get profileTutorialsTitle => 'آموزش‌ها';
 
   @override
-  String get profileTutorialsSubtitle => 'مرور آموزش‌های برنامه';
+  String get profileTutorialsSubtitle => 'تورهای راهنمای کوتاه برای هر ویژگی';
 
   @override
   String get tutorialsScreenTitle => 'آموزش‌ها';
@@ -927,6 +927,9 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'خط زمانی نشان می‌دهد که رکوردهای شما در طول سال چه زمانی منقضی می‌شوند، با فلش‌هایی برای جابجایی بین سال‌ها.';
+
+  @override
+  String get tutorialInsightsCosts => 'هزینه هر تمدید را وارد کنید تا Vaultara جمع هزینه‌های هر سال و گران‌ترین ماه‌ها را نشان دهد.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'پاسپورت بریتانیایی';
@@ -7722,6 +7725,9 @@ class AppLocalizationsFa extends AppLocalizations {
   String get tutorialsPaidBadge => 'طرح‌های پولی';
 
   @override
+  String get tutorialsInYourPlan => 'در طرح شما';
+
+  @override
   String get tutorialsPaidNote => 'این را با هر طرحی می‌توانید ببینید. خود قابلیت به طرح پولی نیاز دارد.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get tourHome4Title => 'کمک با یک ضربه';
 
   @override
-  String get tourHome4Body => 'دکمه جرقه «از Vaultara بپرسید» را باز می‌کند. عکس شما نمایه، تنظیمات و آموزش‌ها را باز می‌کند.';
+  String get tourHome4Body => 'دکمه جرقه «از Vaultara بپرسید» را باز می‌کند. دکمه نمایه کنار آن، نمایه، تنظیمات و آموزش‌ها را باز می‌کند.';
 
   @override
   String get tourRenew1Title => 'یادآوری می‌رسد';
@@ -7947,6 +7953,11 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'یک مورد را باز کنید و پیوندی بفرستید که فقط همان را نشان می‌دهد، نه چیز دیگری.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'در هر سابقه، روی ⋮ بزنید و $action را انتخاب کنید. پیوند فقط همان سابقه را نشان می‌دهد، نه چیز دیگری.';
+  }
 
   @override
   String get tourShare2Title => 'بسته مدارک';

@@ -672,7 +672,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Gogorarazle aurreratuak desblokeatuta.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Desblokeatu gogorarazle aurreratuak eta antolaketa mugagabea.';
+  String get profile_premium_upgrade_subtitle => 'Galdetu Vaultarari, bidaia-planak, erregistro eta argazki mugagabeak.';
 
   @override
   String get profile_manage_cancel_hint => 'Kudeatu edo utzi noiznahi Google Play-n.';
@@ -829,7 +829,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get profileTutorialsTitle => 'Tutorialak';
 
   @override
-  String get profileTutorialsSubtitle => 'Arakatu aplikazioaren tutorialak';
+  String get profileTutorialsSubtitle => 'Eginbide bakoitzaren bisita gidatu laburrak';
 
   @override
   String get tutorialsScreenTitle => 'Tutorialak';
@@ -927,6 +927,9 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Kronologiak zure erregistroak urtean zehar noiz iraungitzen diren erakusten du, urte batetik bestera aldatzeko geziekin.';
+
+  @override
+  String get tutorialInsightsCosts => 'Gehitu berritze bakoitzak zenbat balio duen, eta Vaultarak urtero zenbat gastatzen duzun eta zein hilabete diren garestienak kalkulatzen du.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Britainiar pasaportea';
@@ -7726,6 +7729,9 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tutorialsPaidBadge => 'Ordainpeko planak';
 
   @override
+  String get tutorialsInYourPlan => 'Zure planean';
+
+  @override
   String get tutorialsPaidNote => 'Edozein planarekin ikus dezakezu. Funtzioa erabiltzeko ordainpeko plana behar da.';
 
   @override
@@ -7806,7 +7812,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tourHome4Title => 'Laguntza ukitu batera';
 
   @override
-  String get tourHome4Body => 'Distira-botoiak «Galdetu Vaultarari» irekitzen du. Zure argazkiak profila, ezarpenak eta tutorialak irekitzen ditu.';
+  String get tourHome4Body => 'Distira-botoiak «Galdetu Vaultarari» irekitzen du. Ondoko profil-botoiak profila, ezarpenak eta tutorialak irekitzen ditu.';
 
   @override
   String get tourRenew1Title => 'Oroigarri bat iristen da';
@@ -7951,6 +7957,11 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Ireki erregistro bat eta partekatu erregistro hori bakarrik erakusten duen esteka bat.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Edozein erregistrotan, sakatu ⋮ eta aukeratu $action. Estekak erregistro hori bakarrik erakusten du, besterik ez.';
+  }
 
   @override
   String get tourShare2Title => 'Froga-paketea';

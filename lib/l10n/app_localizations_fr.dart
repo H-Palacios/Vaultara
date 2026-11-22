@@ -672,7 +672,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Rappels avancés débloqués.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Débloquez des rappels avancés et une organisation illimitée.';
+  String get profile_premium_upgrade_subtitle => 'Demander à Vaultara, plans de voyage, fiches et photos illimitées.';
 
   @override
   String get profile_manage_cancel_hint => 'Gérez ou annulez à tout moment sur Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get profileTutorialsTitle => 'Tutoriels';
 
   @override
-  String get profileTutorialsSubtitle => 'Parcourir les Tutoriels de l\'Application';
+  String get profileTutorialsSubtitle => 'De courtes visites guidées de chaque fonction';
 
   @override
   String get tutorialsScreenTitle => 'Tutoriels';
@@ -927,6 +927,9 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'La chronologie montre quand vos enregistrements expirent au cours de l\'année, avec des flèches pour changer d\'année.';
+
+  @override
+  String get tutorialInsightsCosts => 'Indiquez le coût de chaque renouvellement : Vaultara calcule vos dépenses de l\'année et les mois les plus chers.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Passeport Britannique';
@@ -7736,6 +7739,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get tutorialsPaidBadge => 'Formules payantes';
 
   @override
+  String get tutorialsInYourPlan => 'Inclus dans votre forfait';
+
+  @override
   String get tutorialsPaidNote => 'Vous pouvez regarder ceci avec n\'importe quelle formule. La fonction elle-même nécessite une formule payante.';
 
   @override
@@ -7816,7 +7822,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get tourHome4Title => 'L\'aide à portée de main';
 
   @override
-  String get tourHome4Body => 'Le bouton étincelle ouvre « Demander à Vaultara ». Votre photo ouvre votre profil, les réglages et les tutoriels.';
+  String get tourHome4Body => 'Le bouton étincelle ouvre « Demander à Vaultara ». Le bouton de profil à côté ouvre votre profil, les réglages et les tutoriels.';
 
   @override
   String get tourRenew1Title => 'Un rappel arrive';
@@ -7961,6 +7967,11 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Ouvrez un élément et partagez un lien qui montre uniquement cet élément, rien d\'autre.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Sur une fiche, touchez ⋮ puis choisissez $action. Le lien n\'affiche que cette fiche, rien d\'autre.';
+  }
 
   @override
   String get tourShare2Title => 'Dossier justificatif';

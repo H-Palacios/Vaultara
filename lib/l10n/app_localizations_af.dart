@@ -672,7 +672,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Gevorderde herinneringe ontsluit.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Ontsluit gevorderde herinneringe en onbeperkte organisasie.';
+  String get profile_premium_upgrade_subtitle => 'Vra Vaultara, reisplanne, onbeperkte rekords en foto\'s.';
 
   @override
   String get profile_manage_cancel_hint => 'Bestuur of kanselleer enige tyd in Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get profileTutorialsTitle => 'Tutoriale';
 
   @override
-  String get profileTutorialsSubtitle => 'Blaai deur toep-tutoriale';
+  String get profileTutorialsSubtitle => 'Kort gidstoere van elke funksie';
 
   @override
   String get tutorialsScreenTitle => 'Tutoriale';
@@ -927,6 +927,9 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Die tydlyn wys wanneer jou rekords deur die jaar verval, met pyltjies om tussen jare te wissel.';
+
+  @override
+  String get tutorialInsightsCosts => 'Voeg by wat elke hernuwing kos, en Vaultara tel op wat jy elke jaar spandeer en watter maande die duurste is.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Britse paspoort';
@@ -7726,6 +7729,9 @@ class AppLocalizationsAf extends AppLocalizations {
   String get tutorialsPaidBadge => 'Betaalde planne';
 
   @override
+  String get tutorialsInYourPlan => 'In jou plan';
+
+  @override
   String get tutorialsPaidNote => 'Jy kan dit met enige plan kyk. Die funksie self vereis \'n betaalde plan.';
 
   @override
@@ -7806,7 +7812,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get tourHome4Title => 'Hulp met een tik';
 
   @override
-  String get tourHome4Body => 'Die vonkknoppie maak \"Vra Vaultara\" oop. Jou foto maak jou profiel, instellings en tutoriale oop.';
+  String get tourHome4Body => 'Die vonkknoppie maak \"Vra Vaultara\" oop. Die profielknoppie langsaan maak jou profiel, instellings en tutoriale oop.';
 
   @override
   String get tourRenew1Title => '\'n Herinnering kom';
@@ -7951,6 +7957,11 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Maak \'n inskrywing oop en deel \'n skakel wat net daardie inskrywing wys, niks anders nie.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Tik op enige rekord op ⋮ en kies $action. Die skakel wys net daardie rekord, niks anders nie.';
+  }
 
   @override
   String get tourShare2Title => 'Bewyspakket';

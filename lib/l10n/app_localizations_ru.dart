@@ -676,7 +676,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Расширенные напоминания разблокированы.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Разблокируйте расширенные напоминания и неограниченную организацию.';
+  String get profile_premium_upgrade_subtitle => 'Спросите Vaultara, планы поездок, неограниченные записи и фото.';
 
   @override
   String get profile_manage_cancel_hint => 'Управляйте или отменяйте в любое время через Google Play.';
@@ -835,7 +835,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get profileTutorialsTitle => 'Руководства';
 
   @override
-  String get profileTutorialsSubtitle => 'Просмотр Руководств Приложения';
+  String get profileTutorialsSubtitle => 'Короткие обзоры каждой функции';
 
   @override
   String get tutorialsScreenTitle => 'Руководства';
@@ -935,6 +935,9 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Временная шкала показывает, когда истекает срок ваших записей в течение года, со стрелками для переключения между годами.';
+
+  @override
+  String get tutorialInsightsCosts => 'Укажите стоимость каждого продления, и Vaultara посчитает расходы за каждый год и самые дорогие месяцы.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Британский Паспорт';
@@ -7871,6 +7874,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get tutorialsPaidBadge => 'Платные тарифы';
 
   @override
+  String get tutorialsInYourPlan => 'Входит в ваш план';
+
+  @override
   String get tutorialsPaidNote => 'Посмотреть можно на любом тарифе. Для самой функции нужен платный тариф.';
 
   @override
@@ -7951,7 +7957,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get tourHome4Title => 'Помощь в одно касание';
 
   @override
-  String get tourHome4Body => 'Кнопка с искрой открывает «Спросите Vaultara». Ваше фото открывает профиль, настройки и обучение.';
+  String get tourHome4Body => 'Кнопка с искрой открывает «Спросите Vaultara». Кнопка профиля рядом открывает профиль, настройки и обучение.';
 
   @override
   String get tourRenew1Title => 'Приходит напоминание';
@@ -8096,6 +8102,11 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Откройте запись и поделитесь ссылкой, которая показывает только эту запись и ничего больше.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'В любой записи нажмите ⋮ и выберите «$action». Ссылка показывает только эту запись и ничего больше.';
+  }
 
   @override
   String get tourShare2Title => 'Пакет документов';

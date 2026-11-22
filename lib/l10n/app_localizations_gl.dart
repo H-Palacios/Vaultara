@@ -672,7 +672,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Lembretes avanzados desbloqueados.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Desbloquea lembretes avanzados e organización ilimitada.';
+  String get profile_premium_upgrade_subtitle => 'Pregunta a Vaultara, plans de viaxe, rexistros e fotos ilimitados.';
 
   @override
   String get profile_manage_cancel_hint => 'Xestiona ou cancela en calquera momento en Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get profileTutorialsTitle => 'Titoriais';
 
   @override
-  String get profileTutorialsSubtitle => 'Explora os titoriais da aplicación';
+  String get profileTutorialsSubtitle => 'Visitas guiadas breves de cada función';
 
   @override
   String get tutorialsScreenTitle => 'Titoriais';
@@ -927,6 +927,9 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'A liña de tempo mostra cando caducan os teus rexistros ao longo do ano, con frechas para cambiar entre anos.';
+
+  @override
+  String get tutorialInsightsCosts => 'Engade o que custa cada renovación e Vaultara suma o que gastas cada ano e que meses custan máis.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Pasaporte Británico';
@@ -7726,6 +7729,9 @@ class AppLocalizationsGl extends AppLocalizations {
   String get tutorialsPaidBadge => 'Plans de pago';
 
   @override
+  String get tutorialsInYourPlan => 'No teu plan';
+
+  @override
   String get tutorialsPaidNote => 'Podes velo con calquera plan. Usar a función require un plan de pago.';
 
   @override
@@ -7806,7 +7812,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String get tourHome4Title => 'Axuda a un toque';
 
   @override
-  String get tourHome4Body => 'O botón de faísca abre «Pregunta a Vaultara». A túa foto abre o perfil, os axustes e os titoriais.';
+  String get tourHome4Body => 'O botón de faísca abre «Pregunta a Vaultara». O botón de perfil do lado abre o perfil, os axustes e os titoriais.';
 
   @override
   String get tourRenew1Title => 'Chega un recordatorio';
@@ -7951,6 +7957,11 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Abre un rexistro e comparte unha ligazón que só amosa ese rexistro, nada máis.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'En calquera rexistro, toca ⋮ e escolle $action. A ligazón só mostra ese rexistro, nada máis.';
+  }
 
   @override
   String get tourShare2Title => 'Paquete de probas';

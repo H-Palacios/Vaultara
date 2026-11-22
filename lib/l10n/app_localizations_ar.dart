@@ -672,7 +672,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get profile_premium_active_subtitle => 'تم فتح التذكيرات المتقدمة.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'فتح التذكيرات المتقدمة والتنظيم غير المحدود.';
+  String get profile_premium_upgrade_subtitle => 'اسأل Vaultara، خطط السفر، سجلات وصور بلا حدود.';
 
   @override
   String get profile_manage_cancel_hint => 'إدارة أو إلغاء في أي وقت في Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get profileTutorialsTitle => 'دروس';
 
   @override
-  String get profileTutorialsSubtitle => 'استعراض دروس التطبيق';
+  String get profileTutorialsSubtitle => 'جولات إرشادية قصيرة لكل ميزة';
 
   @override
   String get tutorialsScreenTitle => 'دروس';
@@ -930,6 +930,9 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'يظهر الجدول الزمني عندما تنتهي صلاحية سجلاتك عبر السنة، مع الأسهم للتبديل بين السنوات.';
+
+  @override
+  String get tutorialInsightsCosts => 'أضف تكلفة كل تجديد، وسيحسب Vaultara ما تنفقه كل عام وأي الأشهر هي الأغلى.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'جواز السفر البريطاني';
@@ -7947,6 +7950,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tutorialsPaidBadge => 'الخطط المدفوعة';
 
   @override
+  String get tutorialsInYourPlan => 'ضمن خطتك';
+
+  @override
   String get tutorialsPaidNote => 'يمكنك مشاهدة هذا مع أي خطة. أما الميزة نفسها فتتطلب خطة مدفوعة.';
 
   @override
@@ -8027,7 +8033,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tourHome4Title => 'مساعدة بلمسة واحدة';
 
   @override
-  String get tourHome4Body => 'زر الشرارة يفتح «اسأل Vaultara». وصورتك تفتح ملفك الشخصي والإعدادات والدروس.';
+  String get tourHome4Body => 'زر الشرارة يفتح «اسأل Vaultara». وزر الملف الشخصي بجانبه يفتح ملفك الشخصي والإعدادات والدروس.';
 
   @override
   String get tourRenew1Title => 'يصل تذكير';
@@ -8172,6 +8178,11 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'افتح سجلاً وشارك رابطاً يعرض هذا السجل فقط ولا شيء غيره.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'في أي سجل، اضغط ⋮ واختر $action. يعرض الرابط ذلك السجل فقط، ولا شيء غيره.';
+  }
 
   @override
   String get tourShare2Title => 'حزمة الإثبات';

@@ -672,7 +672,7 @@ class AppLocalizationsMr extends AppLocalizations {
   String get profile_premium_active_subtitle => 'प्रगत रिमाइंडर अनलॉक झाले.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'प्रगत रिमाइंडर आणि अमर्याद व्यवस्थापन अनलॉक करा.';
+  String get profile_premium_upgrade_subtitle => 'Vaultara ला विचारा, प्रवास योजना, अमर्याद नोंदी आणि फोटो.';
 
   @override
   String get profile_manage_cancel_hint => 'Google Play मध्ये कधीही व्यवस्थापित करा किंवा रद्द करा.';
@@ -829,7 +829,7 @@ class AppLocalizationsMr extends AppLocalizations {
   String get profileTutorialsTitle => 'ट्युटोरियल';
 
   @override
-  String get profileTutorialsSubtitle => 'ॲपमधील ट्युटोरियल पाहा';
+  String get profileTutorialsSubtitle => 'प्रत्येक वैशिष्ट्याचे छोटे मार्गदर्शित दौरे';
 
   @override
   String get tutorialsScreenTitle => 'ट्युटोरियल';
@@ -927,6 +927,9 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'वर्षभरात तुमच्या नोंदींची मुदत कधी संपते ते टाइमलाइन दाखवते, आणि वर्ष बदलण्यासाठी बाण असतात.';
+
+  @override
+  String get tutorialInsightsCosts => 'प्रत्येक नूतनीकरणाचा खर्च जोडा, Vaultara दरवर्षीचा तुमचा खर्च आणि सर्वात महाग महिने मोजते.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'ब्रिटिश पासपोर्ट';
@@ -7722,6 +7725,9 @@ class AppLocalizationsMr extends AppLocalizations {
   String get tutorialsPaidBadge => 'सशुल्क प्लॅन';
 
   @override
+  String get tutorialsInYourPlan => 'तुमच्या प्लॅनमध्ये';
+
+  @override
   String get tutorialsPaidNote => 'हे तुम्ही कोणत्याही प्लॅनवर पाहू शकता. वैशिष्ट्यासाठी सशुल्क प्लॅन आवश्यक आहे.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsMr extends AppLocalizations {
   String get tourHome4Title => 'एका टॅपमध्ये मदत';
 
   @override
-  String get tourHome4Body => 'स्पार्कल बटण «Vaultara ला विचारा» उघडते. तुमचा फोटो प्रोफाइल, सेटिंग्ज आणि ट्यूटोरियल उघडतो.';
+  String get tourHome4Body => 'स्पार्कल बटण «Vaultara ला विचारा» उघडते. त्याच्या शेजारचे प्रोफाइल बटण प्रोफाइल, सेटिंग्ज आणि ट्यूटोरियल उघडते.';
 
   @override
   String get tourRenew1Title => 'स्मरणपत्र येते';
@@ -7947,6 +7953,11 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'रेकॉर्ड उघडा आणि फक्त तोच रेकॉर्ड दाखवणारी लिंक शेअर करा, दुसरे काही नाही.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'कोणत्याही नोंदीवर ⋮ टॅप करा आणि $action निवडा. लिंक फक्त तीच नोंद दाखवते, दुसरे काहीही नाही.';
+  }
 
   @override
   String get tourShare2Title => 'पुरावा पॅक';

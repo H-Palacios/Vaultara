@@ -672,7 +672,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get profile_premium_active_subtitle => 'උසස් මතක් කිරීම් සක්‍රීයයි.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'උසස් මතක් කිරීම් සහ සීමාවක් නැති සංවිධානය අගුළු හැරන්න.';
+  String get profile_premium_upgrade_subtitle => 'Vaultara ගෙන් අසන්න, සංචාර සැලසුම්, අසීමිත වාර්තා සහ ඡායාරූප.';
 
   @override
   String get profile_manage_cancel_hint => 'Google Play තුළ ඕනෑම වේලාවක කළමනාකරණය හෝ අවලංගු කරන්න.';
@@ -829,7 +829,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get profileTutorialsTitle => 'නිබන්ධන';
 
   @override
-  String get profileTutorialsSubtitle => 'යෙදුම් නිබන්ධන පිරික්සන්න';
+  String get profileTutorialsSubtitle => 'සෑම විශේෂාංගයකම කෙටි මඟපෙන්වීම් චාරිකා';
 
   @override
   String get tutorialsScreenTitle => 'නිබන්ධන';
@@ -927,6 +927,9 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'කාල රේඛාව ඔබේ වාර්තා වසර පුරා කවදා කල් ඉකුත් වන්නේද යන්න පෙන්වයි, වසර අතර මාරු කිරීමට ඊතල සමඟ.';
+
+  @override
+  String get tutorialInsightsCosts => 'සෑම අලුත් කිරීමකම පිරිවැය එක් කරන්න, Vaultara සෑම වසරකම ඔබේ වියදම සහ වැඩිම වියදම් මාස ගණනය කරයි.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'බ්‍රිතාන්‍ය ගමන් බලපත්‍රය';
@@ -7721,6 +7724,9 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tutorialsPaidBadge => 'ගෙවන සැලසුම්';
 
   @override
+  String get tutorialsInYourPlan => 'ඔබේ සැලැස්මේ ඇත';
+
+  @override
   String get tutorialsPaidNote => 'ඕනෑම සැලසුමකින් මෙය නැරඹිය හැක. විශේෂාංගයට ගෙවන සැලසුමක් අවශ්‍යයි.';
 
   @override
@@ -7801,7 +7807,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tourHome4Title => 'එක් තට්ටුවකින් උදව්';
 
   @override
-  String get tourHome4Body => 'දීප්ති බොත්තම «Vaultara ගෙන් අසන්න» විවෘත කරයි. ඔබේ ඡායාරූපය පැතිකඩ, සැකසීම් සහ නිබන්ධන විවෘත කරයි.';
+  String get tourHome4Body => 'දීප්ති බොත්තම «Vaultara ගෙන් අසන්න» විවෘත කරයි. ඒ අසල ඇති පැතිකඩ බොත්තම පැතිකඩ, සැකසීම් සහ නිබන්ධන විවෘත කරයි.';
 
   @override
   String get tourRenew1Title => 'සිහිකැඳවීමක් පැමිණේ';
@@ -7946,6 +7952,11 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'වාර්තාවක් විවෘත කර එම වාර්තාව පමණක් පෙන්වන සබැඳියක් බෙදාගන්න, වෙන කිසිවක් නැත.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'ඕනෑම වාර්තාවක ⋮ තට්ටු කර $action තෝරන්න. සබැඳිය පෙන්වන්නේ එම වාර්තාව පමණයි, වෙන කිසිවක් නොවේ.';
+  }
 
   @override
   String get tourShare2Title => 'සාක්ෂි පැකේජය';

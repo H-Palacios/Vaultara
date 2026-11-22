@@ -672,7 +672,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get profile_premium_active_subtitle => 'అధునాతన రిమైండర్లు ప్రారంభించబడ్డాయి.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'అధునాతన రిమైండర్లు మరియు అపరిమిత నిర్వహణను అన్లాక్ చేయండి.';
+  String get profile_premium_upgrade_subtitle => 'Vaultaraను అడగండి, ప్రయాణ ప్రణాళికలు, అపరిమిత రికార్డులు మరియు ఫోటోలు.';
 
   @override
   String get profile_manage_cancel_hint => 'Google Play ద్వారా ఎప్పుడైనా నిర్వహించండి లేదా రద్దు చేయండి.';
@@ -829,7 +829,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get profileTutorialsTitle => 'ట్యుటోరియల్స్';
 
   @override
-  String get profileTutorialsSubtitle => 'యాప్ ట్యుటోరియల్‌లను బ్రౌజ్ చేయండి';
+  String get profileTutorialsSubtitle => 'ప్రతి ఫీచర్ యొక్క చిన్న గైడెడ్ టూర్లు';
 
   @override
   String get tutorialsScreenTitle => 'ట్యుటోరియల్స్';
@@ -927,6 +927,9 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'టైమ్‌లైన్ మీ రికార్డులు సంవత్సరమంతా ఎప్పుడు గడువు ముగుస్తుందో చూపిస్తుంది, సంవత్సరాల మధ్య మారడానికి బాణాలతో.';
+
+  @override
+  String get tutorialInsightsCosts => 'ప్రతి పునరుద్ధరణ ఖర్చును జోడించండి, Vaultara ప్రతి సంవత్సరం మీ ఖర్చును మరియు అత్యంత ఖరీదైన నెలలను లెక్కిస్తుంది.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'బ్రిటిష్ పాస్‌పోర్ట్';
@@ -7722,6 +7725,9 @@ class AppLocalizationsTe extends AppLocalizations {
   String get tutorialsPaidBadge => 'చెల్లింపు ప్లాన్‌లు';
 
   @override
+  String get tutorialsInYourPlan => 'మీ ప్లాన్‌లో ఉంది';
+
+  @override
   String get tutorialsPaidNote => 'ఏ ప్లాన్‌తోనైనా దీన్ని చూడవచ్చు. ఫీచర్‌కు చెల్లింపు ప్లాన్ అవసరం.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get tourHome4Title => 'ఒక్క ట్యాప్‌లో సహాయం';
 
   @override
-  String get tourHome4Body => 'స్పార్కిల్ బటన్ «Vaultaraను అడగండి» తెరుస్తుంది. మీ ఫోటో ప్రొఫైల్, సెట్టింగ్‌లు మరియు ట్యుటోరియల్‌లను తెరుస్తుంది.';
+  String get tourHome4Body => 'స్పార్కిల్ బటన్ «Vaultaraను అడగండి» తెరుస్తుంది. దాని పక్కన ఉన్న ప్రొఫైల్ బటన్ ప్రొఫైల్, సెట్టింగ్‌లు మరియు ట్యుటోరియల్‌లను తెరుస్తుంది.';
 
   @override
   String get tourRenew1Title => 'రిమైండర్ వస్తుంది';
@@ -7947,6 +7953,11 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'రికార్డ్ తెరిచి ఆ రికార్డ్‌ను మాత్రమే చూపే లింక్ షేర్ చేయండి, మరేమీ కాదు.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'ఏ రికార్డ్‌లోనైనా ⋮ నొక్కి $action ఎంచుకోండి. లింక్ ఆ రికార్డ్‌ను మాత్రమే చూపిస్తుంది, ఇంకేమీ కాదు.';
+  }
 
   @override
   String get tourShare2Title => 'రుజువుల ప్యాక్';

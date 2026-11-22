@@ -672,7 +672,7 @@ class AppLocalizationsGu extends AppLocalizations {
   String get profile_premium_active_subtitle => 'ઍડવાન્સ રિમાઇન્ડર અનલૉક થયા.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'ઍડવાન્સ રિમાઇન્ડર અને અમર્યાદિત વ્યવસ્થા અનલૉક કરો.';
+  String get profile_premium_upgrade_subtitle => 'Vaultara ને પૂછો, પ્રવાસ યોજનાઓ, અમર્યાદિત રેકોર્ડ અને ફોટા.';
 
   @override
   String get profile_manage_cancel_hint => 'Google Playમાં ગમે ત્યારે મેનેજ કરો અથવા રદ કરો.';
@@ -829,7 +829,7 @@ class AppLocalizationsGu extends AppLocalizations {
   String get profileTutorialsTitle => 'ટ્યુટોરિયલ';
 
   @override
-  String get profileTutorialsSubtitle => 'ઍપના ટ્યુટોરિયલ જુઓ';
+  String get profileTutorialsSubtitle => 'દરેક સુવિધાના ટૂંકા માર્ગદર્શિત પ્રવાસ';
 
   @override
   String get tutorialsScreenTitle => 'ટ્યુટોરિયલ';
@@ -927,6 +927,9 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'ટાઇમલાઇન બતાવે છે કે વર્ષ દરમિયાન તમારા રેકોર્ડ ક્યારે સમાપ્ત થાય છે, અને તીર વડે તમે એક વર્ષથી બીજા વર્ષ પર જઈ શકો છો.';
+
+  @override
+  String get tutorialInsightsCosts => 'દરેક નવીકરણનો ખર્ચ ઉમેરો અને Vaultara દર વર્ષે તમારો ખર્ચ અને કયા મહિના સૌથી મોંઘા છે તે ગણે છે.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'બ્રિટિશ પાસપોર્ટ';
@@ -7722,6 +7725,9 @@ class AppLocalizationsGu extends AppLocalizations {
   String get tutorialsPaidBadge => 'પેઇડ પ્લાન';
 
   @override
+  String get tutorialsInYourPlan => 'તમારા પ્લાનમાં';
+
+  @override
   String get tutorialsPaidNote => 'તમે કોઈપણ પ્લાન સાથે આ જોઈ શકો છો. સુવિધા માટે પેઇડ પ્લાન જરૂરી છે.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsGu extends AppLocalizations {
   String get tourHome4Title => 'એક ટૅપમાં મદદ';
 
   @override
-  String get tourHome4Body => 'સ્પાર્કલ બટન «Vaultara ને પૂછો» ખોલે છે. તમારો ફોટો પ્રોફાઇલ, સેટિંગ્સ અને ટ્યુટોરિયલ ખોલે છે.';
+  String get tourHome4Body => 'સ્પાર્કલ બટન «Vaultara ને પૂછો» ખોલે છે. તેની બાજુનું પ્રોફાઇલ બટન પ્રોફાઇલ, સેટિંગ્સ અને ટ્યુટોરિયલ ખોલે છે.';
 
   @override
   String get tourRenew1Title => 'રિમાઇન્ડર આવે છે';
@@ -7947,6 +7953,11 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'રેકોર્ડ ખોલો અને એવી લિંક શેર કરો જે ફક્ત એ જ રેકોર્ડ બતાવે, બીજું કંઈ નહીં.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'કોઈપણ રેકોર્ડ પર ⋮ ટૅપ કરો અને $action પસંદ કરો. લિંક ફક્ત તે રેકોર્ડ બતાવે છે, બીજું કંઈ નહીં.';
+  }
 
   @override
   String get tourShare2Title => 'પુરાવા પૅક';

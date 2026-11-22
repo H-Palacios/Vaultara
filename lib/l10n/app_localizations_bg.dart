@@ -672,7 +672,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Разширените напомняния са отключени.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Отключете разширени напомняния и неограничена организация.';
+  String get profile_premium_upgrade_subtitle => 'Питайте Vaultara, планове за пътуване, неограничени записи и снимки.';
 
   @override
   String get profile_manage_cancel_hint => 'Управлявайте или откажете абонамента по всяко време в Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get profileTutorialsTitle => 'Уроци';
 
   @override
-  String get profileTutorialsSubtitle => 'Разгледайте уроците за приложението';
+  String get profileTutorialsSubtitle => 'Кратки обиколки с насоки за всяка функция';
 
   @override
   String get tutorialsScreenTitle => 'Уроци';
@@ -927,6 +927,9 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Времевата линия показва кога изтичат записите ви през годината, а със стрелките превключвате между годините.';
+
+  @override
+  String get tutorialInsightsCosts => 'Добавете колко струва всяко подновяване и Vaultara събира колко харчите всяка година и кои месеци са най-скъпи.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Британски паспорт';
@@ -7722,6 +7725,9 @@ class AppLocalizationsBg extends AppLocalizations {
   String get tutorialsPaidBadge => 'Платени планове';
 
   @override
+  String get tutorialsInYourPlan => 'Във вашия план';
+
+  @override
   String get tutorialsPaidNote => 'Можете да видите това с всеки план. За самата функция е нужен платен план.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get tourHome4Title => 'Помощ с едно докосване';
 
   @override
-  String get tourHome4Body => 'Бутонът с искра отваря „Питайте Vaultara“. Снимката ви отваря профила, настройките и уроците.';
+  String get tourHome4Body => 'Бутонът с искра отваря „Питайте Vaultara“. Бутонът за профил до него отваря профила, настройките и уроците.';
 
   @override
   String get tourRenew1Title => 'Идва напомняне';
@@ -7947,6 +7953,11 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Отворете запис и споделете връзка, която показва само този запис и нищо друго.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'На всеки запис докоснете ⋮ и изберете $action. Връзката показва само този запис и нищо друго.';
+  }
 
   @override
   String get tourShare2Title => 'Пакет с доказателства';

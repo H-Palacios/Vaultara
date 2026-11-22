@@ -672,7 +672,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get profile_premium_active_subtitle => 'بیرخستنەوە پێشکەوتووەکان کراوەن.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'بیرخستنەوە پێشکەوتووەکان و ڕێکخستنی بێسنوور بکەرەوە.';
+  String get profile_premium_upgrade_subtitle => 'لە Vaultara بپرسە، پلانی گەشت، تۆماری بێسنوور و وێنە.';
 
   @override
   String get profile_manage_cancel_hint => 'لە Google Play هەرکات بەڕێوەی ببە یان هەڵیبوەشێنەوە.';
@@ -829,7 +829,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get profileTutorialsTitle => 'ڕێبەرەکان';
 
   @override
-  String get profileTutorialsSubtitle => 'گەڕان بەناو ڕێبەرەکانی ئەپ';
+  String get profileTutorialsSubtitle => 'گەشتی ڕێنمایی کورت بۆ هەموو تایبەتمەندییەک';
 
   @override
   String get tutorialsScreenTitle => 'ڕێبەرەکان';
@@ -927,6 +927,9 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'هێڵی کاتەکە پیشان دەدات کە کاتێک تۆمارەکانت لە درێژایی ساڵدا بەسەردەچن، بە تیرەکانەوە بۆ گۆڕین لە نێوان ساڵەکاندا.';
+
+  @override
+  String get tutorialInsightsCosts => 'تێچووی هەر نوێکردنەوەیەک زیاد بکە، Vaultara ئەوەی هەموو ساڵێک خەرجی دەکەیت و گرانترین مانگەکان کۆ دەکاتەوە.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'پاسپۆرتی بەریتانی';
@@ -7722,6 +7725,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get tutorialsPaidBadge => 'پلانە پارەدارەکان';
 
   @override
+  String get tutorialsInYourPlan => 'لە پلانەکەتدایە';
+
+  @override
   String get tutorialsPaidNote => 'دەتوانیت ئەمە بە هەر پلانێک ببینیت. تایبەتمەندییەکە خۆی پلانی پارەداری دەوێت.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get tourHome4Title => 'یارمەتی بە یەک دەستلێدان';
 
   @override
-  String get tourHome4Body => 'دوگمەی پریشک «لە Vaultara بپرسە» دەکاتەوە. وێنەکەت پرۆفایل، ڕێکخستنەکان و فێرکارییەکان دەکاتەوە.';
+  String get tourHome4Body => 'دوگمەی پریشک «لە Vaultara بپرسە» دەکاتەوە. دوگمەی پرۆفایلی تەنیشتی پرۆفایل، ڕێکخستنەکان و فێرکارییەکان دەکاتەوە.';
 
   @override
   String get tourRenew1Title => 'بیرخەرەوەیەک دێت';
@@ -7947,6 +7953,11 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'تۆمارێک بکەرەوە و بەستەرێک هاوبەش بکە کە تەنها ئەو تۆمارە پیشان دەدات، هیچی تر.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'لە هەر تۆمارێکدا ⋮ دابگرە و $action هەڵبژێرە. بەستەرەکە تەنها ئەو تۆمارە پیشان دەدات، هیچی تر.';
+  }
 
   @override
   String get tourShare2Title => 'پاکێتی بەڵگە';

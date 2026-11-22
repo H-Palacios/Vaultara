@@ -672,7 +672,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get profile_premium_active_subtitle => 'תזכורות מתקדמות הופעלו.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'פתח תזכורות מתקדמות וארגון ללא הגבלה.';
+  String get profile_premium_upgrade_subtitle => 'שאל את Vaultara, תוכניות נסיעה, רשומות ותמונות ללא הגבלה.';
 
   @override
   String get profile_manage_cancel_hint => 'ניתן לנהל או לבטל בכל עת דרך Google Play.';
@@ -831,7 +831,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get profileTutorialsTitle => 'מדריכים';
 
   @override
-  String get profileTutorialsSubtitle => 'עיין במדריכי האפליקציה';
+  String get profileTutorialsSubtitle => 'סיורים מודרכים קצרים בכל תכונה';
 
   @override
   String get tutorialsScreenTitle => 'מדריכים';
@@ -929,6 +929,9 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'ציר הזמן מראה מתי הרשומות שלך פוגות במהלך השנה, עם חצים למעבר בין שנים.';
+
+  @override
+  String get tutorialInsightsCosts => 'הוסיפו כמה עולה כל חידוש, ו-Vaultara מחשב כמה אתם מוציאים בכל שנה ואילו חודשים הכי יקרים.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'דרכון בריטי';
@@ -7775,6 +7778,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tutorialsPaidBadge => 'תוכניות בתשלום';
 
   @override
+  String get tutorialsInYourPlan => 'כלול בתוכנית שלך';
+
+  @override
   String get tutorialsPaidNote => 'אפשר לצפות בזה בכל תוכנית. התכונה עצמה דורשת תוכנית בתשלום.';
 
   @override
@@ -7855,7 +7861,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tourHome4Title => 'עזרה בהקשה אחת';
 
   @override
-  String get tourHome4Body => 'כפתור הניצוץ פותח את „שאל את Vaultara”. התמונה שלכם פותחת את הפרופיל, ההגדרות וההדרכות.';
+  String get tourHome4Body => 'כפתור הניצוץ פותח את „שאל את Vaultara”. כפתור הפרופיל שלידו פותח את הפרופיל, ההגדרות וההדרכות.';
 
   @override
   String get tourRenew1Title => 'מגיעה תזכורת';
@@ -8000,6 +8006,11 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'פתחו רשומה ושתפו קישור שמציג רק אותה, ותו לא.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'בכל רשומה, הקישו על ⋮ ובחרו $action. הקישור מציג רק את הרשומה הזו, שום דבר אחר.';
+  }
 
   @override
   String get tourShare2Title => 'חבילת הוכחות';

@@ -672,7 +672,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Xusuusiyeyaasha horumarsan waa la furay.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Fur xusuusiyeyaasha horumarsan iyo abaabul aan xad lahayn.';
+  String get profile_premium_upgrade_subtitle => 'Weydii Vaultara, qorshayaasha safarka, diiwaanno iyo sawirro aan xad lahayn.';
 
   @override
   String get profile_manage_cancel_hint => 'Maamul ama jooji wakhti kasta Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get profileTutorialsTitle => 'Casharrada';
 
   @override
-  String get profileTutorialsSubtitle => 'Baar Casharrada Abka';
+  String get profileTutorialsSubtitle => 'Socdaallo hagid gaaban oo astaan kasta ah';
 
   @override
   String get tutorialsScreenTitle => 'Casharrada';
@@ -927,6 +927,9 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Xariiqda wakhtiga waxay muujinaysaa marka diiwaannadaadu dhici doonaan sanadka oo dhan, iyada oo leh fallaarooyin lagu beddelo sannadaha.';
+
+  @override
+  String get tutorialInsightsCosts => 'Ku dar qiimaha cusboonaysiin kasta, Vaultara wuxuu isku daraa waxa aad sannad walba ku bixiso iyo bilaha ugu qaalisan.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Baasaboor Ingiriisi';
@@ -7721,6 +7724,9 @@ class AppLocalizationsSo extends AppLocalizations {
   String get tutorialsPaidBadge => 'Qorshayaal lacag ah';
 
   @override
+  String get tutorialsInYourPlan => 'Qorshahaaga ku jira';
+
+  @override
   String get tutorialsPaidNote => 'Waxaad tan ku daawan kartaa qorshe kasta. Astaanta lafteedu waxay u baahan tahay qorshe lacag ah.';
 
   @override
@@ -7801,7 +7807,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get tourHome4Title => 'Caawimo hal taabasho';
 
   @override
-  String get tourHome4Body => 'Badhanka dhimbiisha wuxuu furaa «Weydii Vaultara». Sawirkaagu wuxuu furaa astaantaada, dejimaha iyo casharrada.';
+  String get tourHome4Body => 'Badhanka dhimbiisha wuxuu furaa «Weydii Vaultara». Badhanka astaanta ee ku xiga wuxuu furaa astaantaada, dejimaha iyo casharrada.';
 
   @override
   String get tourRenew1Title => 'Xusuusin ayaa timid';
@@ -7946,6 +7952,11 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Fur diiwaan oo la wadaag xiriiriye muujinaya kaliya diiwaankaas, wax kale ma jiraan.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Diiwaan kasta, taabo ⋮ oo dooro $action. Linkigu wuxuu muujiyaa oo keliya diiwaankaas, wax kale maya.';
+  }
 
   @override
   String get tourShare2Title => 'Xirmada caddaynta';

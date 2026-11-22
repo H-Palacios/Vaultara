@@ -672,7 +672,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get profile_premium_active_subtitle => 'جدید یاد دہانیاں فعال ہو گئی ہیں۔';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'جدید یاد دہانیاں اور لامحدود تنظیم کھولیں۔';
+  String get profile_premium_upgrade_subtitle => 'Vaultara سے پوچھیں، سفری منصوبے، لامحدود ریکارڈ اور تصاویر۔';
 
   @override
   String get profile_manage_cancel_hint => 'Google Play پر کسی بھی وقت منظم یا منسوخ کریں۔';
@@ -829,7 +829,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get profileTutorialsTitle => 'ٹیوٹوریلز';
 
   @override
-  String get profileTutorialsSubtitle => 'ایپ ٹیوٹوریلز دیکھیں';
+  String get profileTutorialsSubtitle => 'ہر فیچر کے مختصر رہنما دورے';
 
   @override
   String get tutorialsScreenTitle => 'ٹیوٹوریلز';
@@ -927,6 +927,9 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'ٹائم لائن دکھاتی ہے کہ آپ کے ریکارڈز سال بھر میں کب ختم ہوتے ہیں، سالوں کے درمیان تبدیل کرنے کے لیے تیروں کے ساتھ۔';
+
+  @override
+  String get tutorialInsightsCosts => 'ہر تجدید کی لاگت شامل کریں، Vaultara ہر سال کا آپ کا خرچ اور سب سے مہنگے مہینے جوڑ کر دکھاتا ہے۔';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'برطانوی پاسپورٹ';
@@ -7722,6 +7725,9 @@ class AppLocalizationsUr extends AppLocalizations {
   String get tutorialsPaidBadge => 'ادا شدہ پلانز';
 
   @override
+  String get tutorialsInYourPlan => 'آپ کے پلان میں شامل';
+
+  @override
   String get tutorialsPaidNote => 'آپ یہ کسی بھی پلان کے ساتھ دیکھ سکتے ہیں۔ خصوصیت کے لیے ادا شدہ پلان ضروری ہے۔';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get tourHome4Title => 'ایک ٹیپ میں مدد';
 
   @override
-  String get tourHome4Body => 'چمک والا بٹن «Vaultara سے پوچھیں» کھولتا ہے۔ آپ کی تصویر پروفائل، ترتیبات اور سبق کھولتی ہے۔';
+  String get tourHome4Body => 'چمک والا بٹن «Vaultara سے پوچھیں» کھولتا ہے۔ اس کے ساتھ والا پروفائل بٹن پروفائل، ترتیبات اور سبق کھولتا ہے۔';
 
   @override
   String get tourRenew1Title => 'یاددہانی آتی ہے';
@@ -7947,6 +7953,11 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'ریکارڈ کھولیں اور ایسا لنک شیئر کریں جو صرف وہی ریکارڈ دکھائے، اور کچھ نہیں۔';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'کسی بھی ریکارڈ پر ⋮ تھپتھپائیں اور $action منتخب کریں۔ لنک صرف وہی ریکارڈ دکھاتا ہے، اور کچھ نہیں۔';
+  }
 
   @override
   String get tourShare2Title => 'ثبوت کا پیک';

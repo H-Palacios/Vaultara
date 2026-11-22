@@ -672,7 +672,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get profile_premium_active_subtitle => 'የላቁ አስታዋሾች ተከፍተዋል.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'የላቁ አስታዋሾችን እና ያልተገደበ አደረጃጀትን ይክፈቱ.';
+  String get profile_premium_upgrade_subtitle => 'Vaultaraን ይጠይቁ፣ የጉዞ ዕቅዶች፣ ያልተገደቡ መዝገቦች እና ፎቶዎች።';
 
   @override
   String get profile_manage_cancel_hint => 'በGoogle Play በማንኛውም ጊዜ ያስተዳድሩ ወይም ይሰርዙ.';
@@ -829,7 +829,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get profileTutorialsTitle => 'አጋዥ ስልጠናዎች';
 
   @override
-  String get profileTutorialsSubtitle => 'የመተግበሪያ አጋዥ ስልጠናዎችን ያስሱ';
+  String get profileTutorialsSubtitle => 'የእያንዳንዱ ባህሪ አጭር የተመራ ጉብኝት';
 
   @override
   String get tutorialsScreenTitle => 'አጋዥ ስልጠናዎች';
@@ -927,6 +927,9 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'የጊዜ መስመሩ መዝገቦችዎ በዓመቱ ውስጥ መቼ ጊዜያቸው እንደሚያበቃ ያሳያል፣ በዓመታት መካከል ለመቀያየር ቀስቶች አሉት.';
+
+  @override
+  String get tutorialInsightsCosts => 'እያንዳንዱ እድሳት የሚያስከፍለውን ያክሉ፣ Vaultara በየዓመቱ የሚያወጡትን እና በጣም ውድ የሆኑትን ወራት ያሰላል።';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'የብሪታንያ ፓስፖርት';
@@ -7722,6 +7725,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get tutorialsPaidBadge => 'የሚከፈልባቸው ዕቅዶች';
 
   @override
+  String get tutorialsInYourPlan => 'በዕቅድዎ ውስጥ';
+
+  @override
   String get tutorialsPaidNote => 'ይህን በማንኛውም ዕቅድ ማየት ይችላሉ። ባህሪው ራሱ የሚከፈልበት ዕቅድ ይፈልጋል።';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get tourHome4Title => 'እርዳታ በአንድ መታ';
 
   @override
-  String get tourHome4Body => 'የብልጭታ አዝራሩ «Vaultaraን ይጠይቁ»ን ይከፍታል። ፎቶዎ መገለጫዎን፣ ቅንብሮችን እና መማሪያዎችን ይከፍታል።';
+  String get tourHome4Body => 'የብልጭታ አዝራሩ «Vaultaraን ይጠይቁ»ን ይከፍታል። ከጎኑ ያለው የመገለጫ አዝራር መገለጫዎን፣ ቅንብሮችን እና መማሪያዎችን ይከፍታል።';
 
   @override
   String get tourRenew1Title => 'አስታዋሽ ይመጣል';
@@ -7947,6 +7953,11 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'መዝገብ ይክፈቱ እና ያንን መዝገብ ብቻ የሚያሳይ አገናኝ ያጋሩ፣ ሌላ ምንም።';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'በማንኛውም መዝገብ ላይ ⋮ ን ይንኩ እና $action ን ይምረጡ። ሊንኩ ያንን መዝገብ ብቻ ያሳያል፣ ሌላ ምንም አያሳይም።';
+  }
 
   @override
   String get tourShare2Title => 'የማስረጃ ጥቅል';

@@ -672,7 +672,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Meabhrúcháin ardleibhéil díghlasáilte.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Díghlasáil meabhrúcháin ardleibhéil agus eagrú gan teorainn.';
+  String get profile_premium_upgrade_subtitle => 'Fiafraigh de Vaultara, pleananna taistil, taifid agus grianghraif gan teorainn.';
 
   @override
   String get profile_manage_cancel_hint => 'Bainistigh nó cealaigh am ar bith ar Google Play.';
@@ -832,7 +832,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get profileTutorialsTitle => 'Ranganna Teagaisc';
 
   @override
-  String get profileTutorialsSubtitle => 'Brabhsáil Ranganna Teagaisc na hAipe';
+  String get profileTutorialsSubtitle => 'Turais threoraithe ghearra ar gach gné';
 
   @override
   String get tutorialsScreenTitle => 'Ranganna Teagaisc';
@@ -930,6 +930,9 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Léiríonn an amlíne cathain a théann do thaifid in éag i rith na bliana, le saigheada chun aistriú idir na blianta.';
+
+  @override
+  String get tutorialInsightsCosts => 'Cuir isteach costas gach athnuachana agus suimíonn Vaultara a chaitheann tú gach bliain agus na míonna is costasaí.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Pas Briotanach';
@@ -7906,6 +7909,9 @@ class AppLocalizationsGa extends AppLocalizations {
   String get tutorialsPaidBadge => 'Pleananna íoctha';
 
   @override
+  String get tutorialsInYourPlan => 'I do phlean';
+
+  @override
   String get tutorialsPaidNote => 'Is féidir é seo a fheiceáil le haon phlean. Teastaíonn plean íoctha don ghné féin.';
 
   @override
@@ -7986,7 +7992,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get tourHome4Title => 'Cabhair le haon tapáil';
 
   @override
-  String get tourHome4Body => 'Osclaíonn an cnaipe spréiche «Fiafraigh de Vaultara». Osclaíonn do ghrianghraf do phróifíl, socruithe agus ranganna teagaisc.';
+  String get tourHome4Body => 'Osclaíonn an cnaipe spréiche «Fiafraigh de Vaultara». Osclaíonn an cnaipe próifíle in aice leis do phróifíl, socruithe agus ranganna teagaisc.';
 
   @override
   String get tourRenew1Title => 'Tagann meabhrúchán';
@@ -8131,6 +8137,11 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Oscail taifead agus comhroinn nasc nach dtaispeánann ach an taifead sin, rud ar bith eile.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Ar aon taifead, tapáil ⋮ agus roghnaigh $action. Ní thaispeánann an nasc ach an taifead sin, rud ar bith eile.';
+  }
 
   @override
   String get tourShare2Title => 'Paca cruthúnais';

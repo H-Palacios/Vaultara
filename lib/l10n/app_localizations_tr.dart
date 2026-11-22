@@ -672,7 +672,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Gelişmiş hatırlatıcılar açıldı.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Gelişmiş hatırlatıcıları ve sınırsız düzenlemeyi açın.';
+  String get profile_premium_upgrade_subtitle => 'Vaultara\'ya Sor, seyahat planları, sınırsız kayıt ve fotoğraf.';
 
   @override
   String get profile_manage_cancel_hint => 'Google Play üzerinden istediğiniz zaman yönetin veya iptal edin.';
@@ -829,7 +829,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get profileTutorialsTitle => 'Eğitimler';
 
   @override
-  String get profileTutorialsSubtitle => 'Uygulama Eğitimlerine Göz Atın';
+  String get profileTutorialsSubtitle => 'Her özellik için kısa rehberli turlar';
 
   @override
   String get tutorialsScreenTitle => 'Eğitimler';
@@ -927,6 +927,9 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Zaman çizelgesi, kayıtlarınızın yıl boyunca ne zaman sona ereceğini gösterir, yıllar arasında geçiş için oklarla.';
+
+  @override
+  String get tutorialInsightsCosts => 'Her yenilemenin maliyetini ekleyin; Vaultara her yıl ne kadar harcadığınızı ve en pahalı ayları hesaplar.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'İngiliz Pasaportu';
@@ -7722,6 +7725,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String get tutorialsPaidBadge => 'Ücretli planlar';
 
   @override
+  String get tutorialsInYourPlan => 'Planınıza dahil';
+
+  @override
   String get tutorialsPaidNote => 'Bunu her planla izleyebilirsin. Özelliğin kendisi ücretli plan gerektirir.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get tourHome4Title => 'Tek dokunuşla yardım';
 
   @override
-  String get tourHome4Body => 'Kıvılcım düğmesi “Vaultara\'ya Sor” ekranını açar. Fotoğrafın profilini, ayarları ve eğitimleri açar.';
+  String get tourHome4Body => 'Kıvılcım düğmesi “Vaultara\'ya Sor” ekranını açar. Yanındaki profil düğmesi profilini, ayarları ve eğitimleri açar.';
 
   @override
   String get tourRenew1Title => 'Hatırlatıcı gelir';
@@ -7947,6 +7953,11 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Bir kaydı aç ve yalnızca o kaydı gösteren, başka hiçbir şey göstermeyen bir bağlantı paylaş.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Herhangi bir kayıtta ⋮ simgesine dokunun ve $action seçin. Bağlantı yalnızca o kaydı gösterir, başka hiçbir şeyi değil.';
+  }
 
   @override
   String get tourShare2Title => 'Kanıt paketi';

@@ -672,7 +672,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Promemoria avanzati sbloccati.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Sblocca promemoria avanzati e organizzazione illimitata.';
+  String get profile_premium_upgrade_subtitle => 'Chiedi a Vaultara, piani di viaggio, record e foto illimitati.';
 
   @override
   String get profile_manage_cancel_hint => 'Gestisci o annulla in qualsiasi momento su Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get profileTutorialsTitle => 'Tutorial';
 
   @override
-  String get profileTutorialsSubtitle => 'Sfoglia i Tutorial dell\'App';
+  String get profileTutorialsSubtitle => 'Brevi visite guidate di ogni funzione';
 
   @override
   String get tutorialsScreenTitle => 'Tutorial';
@@ -927,6 +927,9 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'La cronologia mostra quando scadono i tuoi record durante l\'anno, con frecce per passare tra gli anni.';
+
+  @override
+  String get tutorialInsightsCosts => 'Aggiungi quanto costa ogni rinnovo e Vaultara somma quanto spendi ogni anno e quali mesi costano di più.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Passaporto Britannico';
@@ -7733,6 +7736,9 @@ class AppLocalizationsIt extends AppLocalizations {
   String get tutorialsPaidBadge => 'Piani a pagamento';
 
   @override
+  String get tutorialsInYourPlan => 'Nel tuo piano';
+
+  @override
   String get tutorialsPaidNote => 'Puoi guardarlo con qualsiasi piano. Per usare la funzione serve un piano a pagamento.';
 
   @override
@@ -7813,7 +7819,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get tourHome4Title => 'Aiuto a portata di tocco';
 
   @override
-  String get tourHome4Body => 'Il pulsante scintilla apre «Chiedi a Vaultara». La tua foto apre profilo, impostazioni e tutorial.';
+  String get tourHome4Body => 'Il pulsante scintilla apre «Chiedi a Vaultara». Il pulsante del profilo accanto apre profilo, impostazioni e tutorial.';
 
   @override
   String get tourRenew1Title => 'Arriva un promemoria';
@@ -7958,6 +7964,11 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Apri un elemento e condividi un link che mostra solo quell\'elemento, nient\'altro.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Su qualsiasi record, tocca ⋮ e scegli $action. Il link mostra solo quel record, nient\'altro.';
+  }
 
   @override
   String get tourShare2Title => 'Pacchetto di prova';

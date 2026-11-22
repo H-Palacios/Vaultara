@@ -672,7 +672,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Kujtesat e avancuara janë zhbllokuar.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Zhbllokoni kujtesa të avancuara dhe organizim të pakufizuar.';
+  String get profile_premium_upgrade_subtitle => 'Pyet Vaultara, plane udhëtimi, regjistrime dhe foto pa kufi.';
 
   @override
   String get profile_manage_cancel_hint => 'Menaxhoni ose anuloni në çdo kohë në Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get profileTutorialsTitle => 'Udhëzuesit';
 
   @override
-  String get profileTutorialsSubtitle => 'Shfletoni udhëzuesit e aplikacionit';
+  String get profileTutorialsSubtitle => 'Udhëtime të shkurtra me udhëzues për çdo veçori';
 
   @override
   String get tutorialsScreenTitle => 'Udhëzuesit';
@@ -927,6 +927,9 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Kronologjia tregon kur skadojnë regjistrimet tuaja gjatë vitit, me shigjeta për të kaluar mes viteve.';
+
+  @override
+  String get tutorialInsightsCosts => 'Shto sa kushton çdo rinovim dhe Vaultara mbledh sa shpenzon çdo vit dhe cilët muaj kushtojnë më shumë.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Pasaportë britanike';
@@ -7726,6 +7729,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tutorialsPaidBadge => 'Plane me pagesë';
 
   @override
+  String get tutorialsInYourPlan => 'Në planin tënd';
+
+  @override
   String get tutorialsPaidNote => 'Mund ta shikosh këtë me çdo plan. Vetë veçoria kërkon plan me pagesë.';
 
   @override
@@ -7806,7 +7812,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tourHome4Title => 'Ndihmë me një prekje';
 
   @override
-  String get tourHome4Body => 'Butoni me shkëndijë hap «Pyet Vaultara». Fotoja jote hap profilin, cilësimet dhe udhëzuesit.';
+  String get tourHome4Body => 'Butoni me shkëndijë hap «Pyet Vaultara». Butoni i profilit pranë tij hap profilin, cilësimet dhe udhëzuesit.';
 
   @override
   String get tourRenew1Title => 'Vjen një kujtesë';
@@ -7951,6 +7957,11 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Hap një regjistrim dhe ndaj një lidhje që tregon vetëm atë regjistrim, asgjë tjetër.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Në çdo regjistrim, prek ⋮ dhe zgjidh $action. Lidhja tregon vetëm atë regjistrim, asgjë tjetër.';
+  }
 
   @override
   String get tourShare2Title => 'Paketa e dëshmive';

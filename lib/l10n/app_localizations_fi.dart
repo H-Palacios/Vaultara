@@ -672,7 +672,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Edistyneet muistutukset käytössä.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Avaa edistyneet muistutukset ja rajaton järjestely.';
+  String get profile_premium_upgrade_subtitle => 'Kysy Vaultaralta, matkasuunnitelmat, rajattomasti tietueita ja kuvia.';
 
   @override
   String get profile_manage_cancel_hint => 'Hallitse tai peru milloin tahansa Google Playssa.';
@@ -829,7 +829,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get profileTutorialsTitle => 'Oppaat';
 
   @override
-  String get profileTutorialsSubtitle => 'Selaa Sovelluksen Oppaita';
+  String get profileTutorialsSubtitle => 'Lyhyet opastetut kierrokset jokaisesta toiminnosta';
 
   @override
   String get tutorialsScreenTitle => 'Oppaat';
@@ -927,6 +927,9 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Aikajana näyttää, milloin tietueesi vanhenevat vuoden aikana, nuolilla vuosien välillä siirtymistä varten.';
+
+  @override
+  String get tutorialInsightsCosts => 'Lisää, mitä kukin uusinta maksaa, niin Vaultara laskee, paljonko kulutat vuosittain ja mitkä kuukaudet ovat kalleimpia.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Brittiläinen Passi';
@@ -7726,6 +7729,9 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tutorialsPaidBadge => 'Maksulliset tilaukset';
 
   @override
+  String get tutorialsInYourPlan => 'Tilauksessasi';
+
+  @override
   String get tutorialsPaidNote => 'Voit katsoa tämän millä tahansa tilauksella. Itse ominaisuus vaatii maksullisen tilauksen.';
 
   @override
@@ -7806,7 +7812,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tourHome4Title => 'Apua yhdellä napautuksella';
 
   @override
-  String get tourHome4Body => 'Kipinäpainike avaa kohdan ”Kysy Vaultaralta”. Kuvasi avaa profiilin, asetukset ja opetusohjelmat.';
+  String get tourHome4Body => 'Kipinäpainike avaa kohdan ”Kysy Vaultaralta”. Sen vieressä oleva profiilipainike avaa profiilin, asetukset ja opetusohjelmat.';
 
   @override
   String get tourRenew1Title => 'Muistutus tulee';
@@ -7951,6 +7957,11 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Avaa tietue ja jaa linkki, joka näyttää vain sen tietueen, ei mitään muuta.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Napauta missä tahansa tietueessa ⋮ ja valitse $action. Linkki näyttää vain sen tietueen, ei mitään muuta.';
+  }
 
   @override
   String get tourShare2Title => 'Todistepaketti';

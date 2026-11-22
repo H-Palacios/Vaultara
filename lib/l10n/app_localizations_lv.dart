@@ -672,7 +672,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Paplašinātie atgādinājumi ir aktivizēti.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Atbloķējiet paplašinātos atgādinājumus un neierobežotu organizēšanu.';
+  String get profile_premium_upgrade_subtitle => 'Jautāt Vaultara, ceļojumu plāni, neierobežoti ieraksti un foto.';
 
   @override
   String get profile_manage_cancel_hint => 'Pārvaldiet vai atceliet jebkurā laikā Google Play.';
@@ -830,7 +830,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get profileTutorialsTitle => 'Pamācības';
 
   @override
-  String get profileTutorialsSubtitle => 'Pārlūkot Lietotnes Pamācības';
+  String get profileTutorialsSubtitle => 'Īsas vadītas tūres par katru funkciju';
 
   @override
   String get tutorialsScreenTitle => 'Pamācības';
@@ -928,6 +928,9 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Laika skala rāda, kad gada laikā beigsies jūsu ierakstu derīguma termiņš, ar bultiņām, lai pārslēgtos starp gadiem.';
+
+  @override
+  String get tutorialInsightsCosts => 'Pievieno, cik maksā katra atjaunošana, un Vaultara saskaita, cik tu tērē katru gadu un kuri mēneši ir dārgākie.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Lielbritānijas Pase';
@@ -7788,6 +7791,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tutorialsPaidBadge => 'Maksas plāni';
 
   @override
+  String get tutorialsInYourPlan => 'Tavā plānā';
+
+  @override
   String get tutorialsPaidNote => 'To var apskatīt ar jebkuru plānu. Pašai funkcijai vajadzīgs maksas plāns.';
 
   @override
@@ -7868,7 +7874,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tourHome4Title => 'Palīdzība ar vienu pieskārienu';
 
   @override
-  String get tourHome4Body => 'Dzirksteles poga atver “Jautāt Vaultara”. Tavs foto atver profilu, iestatījumus un pamācības.';
+  String get tourHome4Body => 'Dzirksteles poga atver “Jautāt Vaultara”. Blakus esošā profila poga atver profilu, iestatījumus un pamācības.';
 
   @override
   String get tourRenew1Title => 'Pienāk atgādinājums';
@@ -8013,6 +8019,11 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Atver ierakstu un kopīgo saiti, kas rāda tikai šo ierakstu un neko citu.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Jebkurā ierakstā pieskaries ⋮ un izvēlies $action. Saite rāda tikai šo ierakstu, neko citu.';
+  }
 
   @override
   String get tourShare2Title => 'Pierādījumu komplekts';

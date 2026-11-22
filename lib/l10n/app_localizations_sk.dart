@@ -672,7 +672,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Pokročilé pripomienky sú odomknuté.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Odomknite pokročilé pripomienky a neobmedzenú organizáciu.';
+  String get profile_premium_upgrade_subtitle => 'Opýtajte sa Vaultary, plány ciest, neobmedzené záznamy a fotky.';
 
   @override
   String get profile_manage_cancel_hint => 'Spravujte alebo zrušte kedykoľvek v Google Play.';
@@ -830,7 +830,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get profileTutorialsTitle => 'Návody';
 
   @override
-  String get profileTutorialsSubtitle => 'Prehľadávať Návody k Aplikácii';
+  String get profileTutorialsSubtitle => 'Krátke sprievodcovské prehliadky každej funkcie';
 
   @override
   String get tutorialsScreenTitle => 'Návody';
@@ -929,6 +929,9 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Časová os ukazuje, kedy vaše záznamy počas roka vypršia, so šípkami na prepínanie medzi rokmi.';
+
+  @override
+  String get tutorialInsightsCosts => 'Pridajte, koľko stojí každé obnovenie, a Vaultara sčíta, koľko každý rok minete a ktoré mesiace sú najdrahšie.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Britský Pas';
@@ -7855,6 +7858,9 @@ class AppLocalizationsSk extends AppLocalizations {
   String get tutorialsPaidBadge => 'Platené predplatné';
 
   @override
+  String get tutorialsInYourPlan => 'Vo vašom pláne';
+
+  @override
   String get tutorialsPaidNote => 'Pozrieť si to môžete s akýmkoľvek predplatným. Samotná funkcia vyžaduje platené predplatné.';
 
   @override
@@ -7935,7 +7941,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get tourHome4Title => 'Pomoc jedným ťuknutím';
 
   @override
-  String get tourHome4Body => 'Tlačidlo s iskrou otvorí „Opýtajte sa Vaultary“. Vaša fotka otvorí profil, nastavenia a návody.';
+  String get tourHome4Body => 'Tlačidlo s iskrou otvorí „Opýtajte sa Vaultary“. Tlačidlo profilu vedľa neho otvorí profil, nastavenia a návody.';
 
   @override
   String get tourRenew1Title => 'Príde pripomienka';
@@ -8080,6 +8086,11 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Otvorte záznam a zdieľajte odkaz, ktorý ukazuje len tento záznam, nič viac.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Pri ľubovoľnom zázname ťuknite na ⋮ a vyberte $action. Odkaz ukáže iba tento záznam, nič iné.';
+  }
 
   @override
   String get tourShare2Title => 'Balík dokladov';

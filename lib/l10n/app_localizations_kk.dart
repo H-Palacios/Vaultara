@@ -672,7 +672,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Кеңейтілген еске салғыштар ашылды.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Кеңейтілген еске салғыштар мен шексіз ұйымдастыруды ашыңыз.';
+  String get profile_premium_upgrade_subtitle => 'Vaultara-дан сұрау, сапар жоспарлары, шексіз жазбалар мен фотолар.';
 
   @override
   String get profile_manage_cancel_hint => 'Google Play арқылы кез келген уақытта басқаруға немесе бас тартуға болады.';
@@ -829,7 +829,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get profileTutorialsTitle => 'Оқулықтар';
 
   @override
-  String get profileTutorialsSubtitle => 'Қолданба Оқулықтарын Шолу';
+  String get profileTutorialsSubtitle => 'Әр мүмкіндікке арналған қысқа нұсқаулық турлар';
 
   @override
   String get tutorialsScreenTitle => 'Оқулықтар';
@@ -927,6 +927,9 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Уақыт шкаласы жазбаларыңыздың жыл бойы қашан бітетінін көрсетеді, жылдар арасында ауысу үшін көрсеткілермен.';
+
+  @override
+  String get tutorialInsightsCosts => 'Әр жаңартудың құнын қосыңыз, Vaultara жыл сайынғы шығыныңызды және ең қымбат айларды есептейді.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Британдық Төлқұжат';
@@ -7722,6 +7725,9 @@ class AppLocalizationsKk extends AppLocalizations {
   String get tutorialsPaidBadge => 'Ақылы жоспарлар';
 
   @override
+  String get tutorialsInYourPlan => 'Жоспарыңызда бар';
+
+  @override
   String get tutorialsPaidNote => 'Мұны кез келген жоспармен көре аласыз. Мүмкіндіктің өзі ақылы жоспарды талап етеді.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get tourHome4Title => 'Бір түртумен көмек';
 
   @override
-  String get tourHome4Body => 'Ұшқын түймесі «Vaultara-дан сұрау» ашады. Фотоңыз профильді, параметрлерді және оқулықтарды ашады.';
+  String get tourHome4Body => 'Ұшқын түймесі «Vaultara-дан сұрау» ашады. Жанындағы профиль түймесі профильді, параметрлерді және оқулықтарды ашады.';
 
   @override
   String get tourRenew1Title => 'Еске салғыш келеді';
@@ -7947,6 +7953,11 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Жазбаны ашып, тек сол жазбаны көрсететін сілтемемен бөлісіңіз, басқа ештеңе жоқ.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Кез келген жазбада ⋮ түртіп, $action таңдаңыз. Сілтеме тек сол жазбаны көрсетеді, басқа ештеңені емес.';
+  }
 
   @override
   String get tourShare2Title => 'Растау топтамасы';

@@ -670,7 +670,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get profile_premium_active_subtitle => 'အဆင့်မြင့် သတိပေးချက်များ ရရှိပြီ။';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'အဆင့်မြင့် သတိပေးချက်များနှင့် အကန့်အသတ်မဲ့ စီစဉ်မှုကို ရယူပါ။';
+  String get profile_premium_upgrade_subtitle => 'Vaultara ကို မေးရန်၊ ခရီးစဉ်အစီအစဉ်များ၊ အကန့်အသတ်မရှိ မှတ်တမ်းနှင့် ဓာတ်ပုံများ။';
 
   @override
   String get profile_manage_cancel_hint => 'Google Play တွင် အချိန်မရွေး စီမံနိုင် သို့မဟုတ် ပယ်ဖျက်နိုင်သည်။';
@@ -827,7 +827,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get profileTutorialsTitle => 'သင်ခန်းစာများ';
 
   @override
-  String get profileTutorialsSubtitle => 'အက်ပ် သင်ခန်းစာများ ကြည့်ရန်';
+  String get profileTutorialsSubtitle => 'လုပ်ဆောင်ချက်တိုင်းအတွက် လမ်းညွှန်ခရီးတိုများ';
 
   @override
   String get tutorialsScreenTitle => 'သင်ခန်းစာများ';
@@ -924,6 +924,9 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'အချိန်လိုင်းသည် တစ်နှစ်တာအတွင်း သင့်မှတ်တမ်းများ သက်တမ်းကုန်မည့်အချိန်ကို ပြသပြီး မြှားများဖြင့် နှစ်များအကြား ပြောင်းနိုင်သည်။';
+
+  @override
+  String get tutorialInsightsCosts => 'သက်တမ်းတိုးတိုင်း၏ ကုန်ကျစရိတ်ကို ထည့်ပါ၊ Vaultara က နှစ်စဉ်သုံးစွဲငွေနှင့် အကုန်အကျအများဆုံးလများကို ပေါင်းပေးသည်။';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'ဗြိတိန် နိုင်ငံကူးလက်မှတ်';
@@ -7663,6 +7666,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String get tutorialsPaidBadge => 'ငွေပေးရသော အစီအစဉ်များ';
 
   @override
+  String get tutorialsInYourPlan => 'သင့်အစီအစဉ်တွင် ပါဝင်သည်';
+
+  @override
   String get tutorialsPaidNote => 'မည်သည့်အစီအစဉ်ဖြင့်မဆို ဤအရာကို ကြည့်နိုင်သည်။ လုပ်ဆောင်ချက်ကိုယ်တိုင်အတွက် ငွေပေးအစီအစဉ် လိုသည်။';
 
   @override
@@ -7743,7 +7749,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get tourHome4Title => 'တစ်ချက်နှိပ်ဖြင့် အကူအညီ';
 
   @override
-  String get tourHome4Body => 'မီးပွားခလုတ်က «Vaultara ကို မေးရန်» ကို ဖွင့်သည်။ သင့်ဓာတ်ပုံက ပရိုဖိုင်၊ ဆက်တင်နှင့် သင်ခန်းစာများကို ဖွင့်သည်။';
+  String get tourHome4Body => 'မီးပွားခလုတ်က «Vaultara ကို မေးရန်» ကို ဖွင့်သည်။ ၎င်းဘေးရှိ ပရိုဖိုင်ခလုတ်က ပရိုဖိုင်၊ ဆက်တင်နှင့် သင်ခန်းစာများကို ဖွင့်သည်။';
 
   @override
   String get tourRenew1Title => 'သတိပေးချက် ရောက်လာသည်';
@@ -7888,6 +7894,11 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'မှတ်တမ်းဖွင့်ပြီး ထိုမှတ်တမ်းကိုသာ ပြသည့် လင့်ခ်ကို မျှဝေပါ၊ အခြားမရှိ။';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'မည်သည့်မှတ်တမ်းတွင်မဆို ⋮ ကိုနှိပ်ပြီး $action ကို ရွေးပါ။ လင့်ခ်သည် ထိုမှတ်တမ်းကိုသာ ပြသပြီး အခြားဘာမျှ မပြပါ။';
+  }
 
   @override
   String get tourShare2Title => 'သက်သေအထောက်အထား အစုံ';

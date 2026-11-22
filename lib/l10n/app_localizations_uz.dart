@@ -672,7 +672,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Kengaytirilgan eslatmalar ochildi.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Kengaytirilgan eslatmalar va cheksiz tartiblash imkoniyatini oching.';
+  String get profile_premium_upgrade_subtitle => 'Vaultaradan soʻrang, sayohat rejalari, cheksiz yozuvlar va rasmlar.';
 
   @override
   String get profile_manage_cancel_hint => 'Google Play orqali istalgan vaqtda boshqaring yoki bekor qiling.';
@@ -829,7 +829,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get profileTutorialsTitle => 'Qoʻllanmalar';
 
   @override
-  String get profileTutorialsSubtitle => 'Ilova qoʻllanmalarini koʻrish';
+  String get profileTutorialsSubtitle => 'Har bir funksiya boʻyicha qisqa yoʻriqnoma sayohatlari';
 
   @override
   String get tutorialsScreenTitle => 'Qoʻllanmalar';
@@ -927,6 +927,9 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Vaqt chizigʻi yil davomida yozuvlaringiz muddati qachon tugashini koʻrsatadi, yillar orasida oʻtish uchun strelkalar bor.';
+
+  @override
+  String get tutorialInsightsCosts => 'Har bir yangilash narxini qoʻshing, Vaultara har yili qancha sarflashingizni va eng qimmat oylarni hisoblaydi.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Britaniya pasporti';
@@ -7722,6 +7725,9 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tutorialsPaidBadge => 'Pullik tariflar';
 
   @override
+  String get tutorialsInYourPlan => 'Rejangizga kiritilgan';
+
+  @override
   String get tutorialsPaidNote => 'Buni istalgan tarifda koʻrish mumkin. Funksiyaning oʻzi pullik tarif talab qiladi.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tourHome4Title => 'Bir bosishda yordam';
 
   @override
-  String get tourHome4Body => 'Uchqun tugmasi «Vaultaradan soʻrang» ni ochadi. Rasmingiz profil, sozlamalar va darsliklarni ochadi.';
+  String get tourHome4Body => 'Uchqun tugmasi «Vaultaradan soʻrang» ni ochadi. Uning yonidagi profil tugmasi profil, sozlamalar va darsliklarni ochadi.';
 
   @override
   String get tourRenew1Title => 'Eslatma keladi';
@@ -7947,6 +7953,11 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Yozuvni oching va faqat oʻsha yozuvni koʻrsatadigan havolani ulashing, boshqa hech narsa yoʻq.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Istalgan yozuvda ⋮ ni bosing va $action ni tanlang. Havola faqat shu yozuvni koʻrsatadi, boshqa hech narsani emas.';
+  }
 
   @override
   String get tourShare2Title => 'Isbot toʻplami';

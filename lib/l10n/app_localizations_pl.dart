@@ -676,7 +676,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Zaawansowane przypomnienia odblokowane.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Odblokuj zaawansowane przypomnienia i nieograniczoną organizację.';
+  String get profile_premium_upgrade_subtitle => 'Zapytaj Vaultara, plany podróży, nielimitowane wpisy i zdjęcia.';
 
   @override
   String get profile_manage_cancel_hint => 'Zarządzaj lub anuluj w dowolnym momencie w Google Play.';
@@ -835,7 +835,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get profileTutorialsTitle => 'Samouczki';
 
   @override
-  String get profileTutorialsSubtitle => 'Przeglądaj Samouczki Aplikacji';
+  String get profileTutorialsSubtitle => 'Krótkie przewodniki po każdej funkcji';
 
   @override
   String get tutorialsScreenTitle => 'Samouczki';
@@ -935,6 +935,9 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Oś czasu pokazuje, kiedy Twoje rekordy wygasają w ciągu roku, ze strzałkami do przełączania między latami.';
+
+  @override
+  String get tutorialInsightsCosts => 'Dodaj koszt każdego odnowienia, a Vaultara zsumuje, ile wydajesz co roku i które miesiące są najdroższe.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Brytyjski Paszport';
@@ -7876,6 +7879,9 @@ class AppLocalizationsPl extends AppLocalizations {
   String get tutorialsPaidBadge => 'Plany płatne';
 
   @override
+  String get tutorialsInYourPlan => 'W Twoim planie';
+
+  @override
   String get tutorialsPaidNote => 'Możesz to obejrzeć w każdym planie. Sama funkcja wymaga planu płatnego.';
 
   @override
@@ -7956,7 +7962,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get tourHome4Title => 'Pomoc jednym dotknięciem';
 
   @override
-  String get tourHome4Body => 'Przycisk z iskrą otwiera „Zapytaj Vaultara”. Twoje zdjęcie otwiera profil, ustawienia i samouczki.';
+  String get tourHome4Body => 'Przycisk z iskrą otwiera „Zapytaj Vaultara”. Przycisk profilu obok otwiera profil, ustawienia i samouczki.';
 
   @override
   String get tourRenew1Title => 'Przychodzi przypomnienie';
@@ -8101,6 +8107,11 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Otwórz wpis i udostępnij link, który pokazuje tylko ten wpis, nic więcej.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Na dowolnym wpisie stuknij ⋮ i wybierz $action. Link pokazuje tylko ten wpis, nic więcej.';
+  }
 
   @override
   String get tourShare2Title => 'Pakiet dowodów';

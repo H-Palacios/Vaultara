@@ -672,7 +672,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Pengingat lanjutan telah dibuka.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Buka pengingat lanjutan dan pengorganisasian tanpa batas.';
+  String get profile_premium_upgrade_subtitle => 'Tanya Vaultara, rencana perjalanan, catatan dan foto tanpa batas.';
 
   @override
   String get profile_manage_cancel_hint => 'Kelola atau batalkan kapan saja di Google Play.';
@@ -823,7 +823,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get profileTutorialsTitle => 'Tutorial';
 
   @override
-  String get profileTutorialsSubtitle => 'Jelajahi Tutorial Aplikasi';
+  String get profileTutorialsSubtitle => 'Tur terpandu singkat untuk setiap fitur';
 
   @override
   String get tutorialsScreenTitle => 'Tutorial';
@@ -921,6 +921,9 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Garis waktu menunjukkan kapan catatan Anda kedaluwarsa sepanjang tahun, dengan panah untuk beralih antar tahun.';
+
+  @override
+  String get tutorialInsightsCosts => 'Tambahkan biaya setiap perpanjangan, dan Vaultara menjumlahkan pengeluaran Anda setiap tahun dan bulan mana yang paling mahal.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Paspor Inggris';
@@ -7660,6 +7663,9 @@ class AppLocalizationsId extends AppLocalizations {
   String get tutorialsPaidBadge => 'Paket berbayar';
 
   @override
+  String get tutorialsInYourPlan => 'Termasuk dalam paket Anda';
+
+  @override
   String get tutorialsPaidNote => 'Anda dapat menonton ini dengan paket apa pun. Fiturnya sendiri memerlukan paket berbayar.';
 
   @override
@@ -7740,7 +7746,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get tourHome4Title => 'Bantuan dengan satu ketukan';
 
   @override
-  String get tourHome4Body => 'Tombol kilau membuka «Tanya Vaultara». Foto Anda membuka profil, pengaturan, dan tutorial.';
+  String get tourHome4Body => 'Tombol kilau membuka «Tanya Vaultara». Tombol profil di sebelahnya membuka profil, pengaturan, dan tutorial.';
 
   @override
   String get tourRenew1Title => 'Pengingat datang';
@@ -7885,6 +7891,11 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Buka catatan dan bagikan tautan yang hanya menampilkan catatan itu, tidak ada yang lain.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Di catatan mana pun, ketuk ⋮ lalu pilih $action. Tautan hanya menampilkan catatan itu, tidak ada yang lain.';
+  }
 
   @override
   String get tourShare2Title => 'Paket bukti';

@@ -670,7 +670,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get profile_premium_active_subtitle => 'បានដោះសោការរំលឹកកម្រិតខ្ពស់។';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'ដោះសោការរំលឹកកម្រិតខ្ពស់ និងការរៀបចំគ្មានដែនកំណត់។';
+  String get profile_premium_upgrade_subtitle => 'សួរ Vaultara ផែនការធ្វើដំណើរ កំណត់ត្រា និងរូបថតគ្មានដែនកំណត់។';
 
   @override
   String get profile_manage_cancel_hint => 'គ្រប់គ្រង ឬបោះបង់បានគ្រប់ពេលនៅក្នុង Google Play។';
@@ -827,7 +827,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get profileTutorialsTitle => 'មេរៀនណែនាំ';
 
   @override
-  String get profileTutorialsSubtitle => 'រុករកមេរៀនណែនាំអំពីកម្មវិធី';
+  String get profileTutorialsSubtitle => 'ដំណើរណែនាំខ្លីៗសម្រាប់មុខងារនីមួយៗ';
 
   @override
   String get tutorialsScreenTitle => 'មេរៀនណែនាំ';
@@ -924,6 +924,9 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'បន្ទាត់ពេលវេលាបង្ហាញពីពេលដែលកំណត់ត្រារបស់អ្នកផុតកំណត់ពេញមួយឆ្នាំ ដោយមានព្រួញសម្រាប់ប្ដូររវាងឆ្នាំ។';
+
+  @override
+  String get tutorialInsightsCosts => 'បញ្ចូលតម្លៃនៃការបន្តនីមួយៗ ហើយ Vaultara នឹងបូកចំណាយរបស់អ្នកប្រចាំឆ្នាំ និងខែណាដែលថ្លៃជាងគេ។';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'លិខិតឆ្លងដែនអង់គ្លេស';
@@ -7663,6 +7666,9 @@ class AppLocalizationsKm extends AppLocalizations {
   String get tutorialsPaidBadge => 'គម្រោងបង់ប្រាក់';
 
   @override
+  String get tutorialsInYourPlan => 'នៅក្នុងគម្រោងរបស់អ្នក';
+
+  @override
   String get tutorialsPaidNote => 'អ្នកអាចមើលវាជាមួយគម្រោងណាក៏បាន។ មុខងារខ្លួនឯងត្រូវការគម្រោងបង់ប្រាក់។';
 
   @override
@@ -7743,7 +7749,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get tourHome4Title => 'ជំនួយដោយចុចតែម្ដង';
 
   @override
-  String get tourHome4Body => 'ប៊ូតុងផ្កាភ្លើងបើក «សួរ Vaultara»។ រូបថតរបស់អ្នកបើកប្រវត្តិរូប ការកំណត់ និងមេរៀន។';
+  String get tourHome4Body => 'ប៊ូតុងផ្កាភ្លើងបើក «សួរ Vaultara»។ ប៊ូតុងប្រវត្តិរូបនៅក្បែរវាបើកប្រវត្តិរូប ការកំណត់ និងមេរៀន។';
 
   @override
   String get tourRenew1Title => 'មានការរំលឹក';
@@ -7888,6 +7894,11 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'បើកកំណត់ត្រា ហើយចែករំលែកតំណដែលបង្ហាញតែកំណត់ត្រានោះ គ្មានអ្វីផ្សេង។';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'នៅលើកំណត់ត្រាណាមួយ ចុច ⋮ ហើយជ្រើស $action។ តំណបង្ហាញតែកំណត់ត្រានោះប៉ុណ្ណោះ គ្មានអ្វីផ្សេងទៀតទេ។';
+  }
 
   @override
   String get tourShare2Title => 'កញ្ចប់ភស្តុតាង';

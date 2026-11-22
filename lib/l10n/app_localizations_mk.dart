@@ -672,7 +672,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Напредните потсетници се отклучени.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Отклучете напредни потсетници и неограничена организација.';
+  String get profile_premium_upgrade_subtitle => 'Прашајте го Vaultara, планови за патување, неограничени записи и фотографии.';
 
   @override
   String get profile_manage_cancel_hint => 'Управувајте или откажете во секое време преку Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get profileTutorialsTitle => 'Упатства';
 
   @override
-  String get profileTutorialsSubtitle => 'Прегледајте ги упатствата за апликацијата';
+  String get profileTutorialsSubtitle => 'Кратки водени тури низ секоја функција';
 
   @override
   String get tutorialsScreenTitle => 'Упатства';
@@ -927,6 +927,9 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Временската линија покажува кога вашите записи истекуваат во текот на годината, со стрелки за префрлување помеѓу години.';
+
+  @override
+  String get tutorialInsightsCosts => 'Додајте колку чини секое обновување и Vaultara собира колку трошите секоја година и кои месеци се најскапи.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Британски пасош';
@@ -7720,6 +7723,9 @@ class AppLocalizationsMk extends AppLocalizations {
   String get tutorialsPaidBadge => 'Платени пакети';
 
   @override
+  String get tutorialsInYourPlan => 'Во вашиот план';
+
+  @override
   String get tutorialsPaidNote => 'Ова можете да го погледнете со секој пакет. За самата функција е потребен платен пакет.';
 
   @override
@@ -7800,7 +7806,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get tourHome4Title => 'Помош со еден допир';
 
   @override
-  String get tourHome4Body => 'Копчето со искра отвора „Прашајте го Vaultara“. Вашата фотографија отвора профил, поставки и упатства.';
+  String get tourHome4Body => 'Копчето со искра отвора „Прашајте го Vaultara“. Копчето за профил до него отвора профил, поставки и упатства.';
 
   @override
   String get tourRenew1Title => 'Пристигнува потсетник';
@@ -7945,6 +7951,11 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Отворете запис и споделете врска што го прикажува само тој запис, ништо друго.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'На кој било запис допрете ⋮ и изберете $action. Линкот го прикажува само тој запис, ништо друго.';
+  }
 
   @override
   String get tourShare2Title => 'Пакет со докази';

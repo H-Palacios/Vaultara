@@ -672,7 +672,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get profile_premium_active_subtitle => '高度なリマインダーが利用可能です。';
 
   @override
-  String get profile_premium_upgrade_subtitle => '高度なリマインダーと無制限の整理機能を利用できます。';
+  String get profile_premium_upgrade_subtitle => 'Vaultaraに聞く、旅行プラン、無制限の記録と写真。';
 
   @override
   String get profile_manage_cancel_hint => 'Google Playでいつでも管理または解約できます。';
@@ -823,7 +823,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get profileTutorialsTitle => 'チュートリアル';
 
   @override
-  String get profileTutorialsSubtitle => 'アプリのチュートリアルを見る';
+  String get profileTutorialsSubtitle => '各機能を短く案内するガイドツアー';
 
   @override
   String get tutorialsScreenTitle => 'チュートリアル';
@@ -920,6 +920,9 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'タイムラインは、記録が1年を通していつ期限切れになるかを示し、年を切り替える矢印があります。';
+
+  @override
+  String get tutorialInsightsCosts => '更新ごとの費用を入力すると、Vaultaraが毎年の支出と費用がかさむ月を集計します。';
 
   @override
   String get tutorialInsightsSampleRecordTwo => '英国パスポート';
@@ -7653,6 +7656,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tutorialsPaidBadge => '有料プラン';
 
   @override
+  String get tutorialsInYourPlan => 'ご利用中のプランに含まれています';
+
+  @override
   String get tutorialsPaidNote => 'どのプランでも視聴できます。機能を使うには有料プランが必要です。';
 
   @override
@@ -7733,7 +7739,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tourHome4Title => 'ワンタップでヘルプ';
 
   @override
-  String get tourHome4Body => 'きらきらボタンで「Vaultaraに聞く」が開きます。プロフィール写真からはプロフィール、設定、チュートリアルを開けます。';
+  String get tourHome4Body => 'きらきらボタンで「Vaultaraに聞く」が開きます。その隣のプロフィールボタンからはプロフィール、設定、チュートリアルを開けます。';
 
   @override
   String get tourRenew1Title => 'リマインダーが届く';
@@ -7878,6 +7884,11 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get tourShare1Body => '記録を開き、その記録だけを表示するリンクを共有します。それ以外は表示されません。';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return '記録の ⋮ をタップして「$action」を選びます。リンクにはその記録だけが表示され、ほかは何も見えません。';
+  }
 
   @override
   String get tourShare2Title => '証明書パック';

@@ -672,7 +672,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Napredni opomniki so odklenjeni.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Odklenite napredne opomnike in neomejeno organizacijo.';
+  String get profile_premium_upgrade_subtitle => 'Vprašaj Vaultaro, načrti potovanj, neomejeni zapisi in fotografije.';
 
   @override
   String get profile_manage_cancel_hint => 'Upravljajte ali prekličite kadar koli v Google Play.';
@@ -831,7 +831,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get profileTutorialsTitle => 'Vodniki';
 
   @override
-  String get profileTutorialsSubtitle => 'Brskaj po Vodnikih Aplikacije';
+  String get profileTutorialsSubtitle => 'Kratki vodeni ogledi vsake funkcije';
 
   @override
   String get tutorialsScreenTitle => 'Vodniki';
@@ -931,6 +931,9 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Časovnica prikazuje, kdaj vaši zapisi potečejo v letu, s puščicami za preklop med leti.';
+
+  @override
+  String get tutorialInsightsCosts => 'Dodajte, koliko stane vsaka obnova, in Vaultara sešteje, koliko porabite vsako leto in kateri meseci so najdražji.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Britanski Potni List';
@@ -7862,6 +7865,9 @@ class AppLocalizationsSl extends AppLocalizations {
   String get tutorialsPaidBadge => 'Plačljivi paketi';
 
   @override
+  String get tutorialsInYourPlan => 'V vašem paketu';
+
+  @override
   String get tutorialsPaidNote => 'To si lahko ogledate s katerim koli paketom. Za samo funkcijo potrebujete plačljiv paket.';
 
   @override
@@ -7942,7 +7948,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get tourHome4Title => 'Pomoč z enim dotikom';
 
   @override
-  String get tourHome4Body => 'Gumb z iskro odpre »Vprašaj Vaultaro«. Vaša fotografija odpre profil, nastavitve in vodiče.';
+  String get tourHome4Body => 'Gumb z iskro odpre »Vprašaj Vaultaro«. Gumb profila zraven odpre profil, nastavitve in vodiče.';
 
   @override
   String get tourRenew1Title => 'Pride opomnik';
@@ -8087,6 +8093,11 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Odprite zapis in delite povezavo, ki prikaže samo ta zapis, nič drugega.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Pri katerem koli zapisu tapnite ⋮ in izberite $action. Povezava prikaže samo ta zapis, nič drugega.';
+  }
 
   @override
   String get tourShare2Title => 'Paket dokazil';

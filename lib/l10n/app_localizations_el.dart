@@ -672,7 +672,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Οι προηγμένες υπενθυμίσεις είναι διαθέσιμες.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Ξεκλειδώστε προηγμένες υπενθυμίσεις και απεριόριστη οργάνωση.';
+  String get profile_premium_upgrade_subtitle => 'Ρωτήστε το Vaultara, σχέδια ταξιδιού, απεριόριστες εγγραφές και φωτογραφίες.';
 
   @override
   String get profile_manage_cancel_hint => 'Διαχείριση ή ακύρωση οποιαδήποτε στιγμή στο Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get profileTutorialsTitle => 'Οδηγοί';
 
   @override
-  String get profileTutorialsSubtitle => 'Περιήγηση στους Οδηγούς Εφαρμογής';
+  String get profileTutorialsSubtitle => 'Σύντομες ξεναγήσεις σε κάθε λειτουργία';
 
   @override
   String get tutorialsScreenTitle => 'Οδηγοί';
@@ -927,6 +927,9 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Το χρονοδιάγραμμα δείχνει πότε λήγουν οι εγγραφές σας κατά τη διάρκεια του έτους, με βέλη για εναλλαγή μεταξύ ετών.';
+
+  @override
+  String get tutorialInsightsCosts => 'Προσθέστε πόσο κοστίζει κάθε ανανέωση και το Vaultara αθροίζει τι ξοδεύετε κάθε χρόνο και ποιοι μήνες κοστίζουν περισσότερο.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Βρετανικό Διαβατήριο';
@@ -7726,6 +7729,9 @@ class AppLocalizationsEl extends AppLocalizations {
   String get tutorialsPaidBadge => 'Επί πληρωμή προγράμματα';
 
   @override
+  String get tutorialsInYourPlan => 'Στο πρόγραμμά σας';
+
+  @override
   String get tutorialsPaidNote => 'Μπορείτε να το δείτε με οποιοδήποτε πρόγραμμα. Η ίδια η λειτουργία απαιτεί πρόγραμμα επί πληρωμή.';
 
   @override
@@ -7806,7 +7812,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get tourHome4Title => 'Βοήθεια με ένα πάτημα';
 
   @override
-  String get tourHome4Body => 'Το κουμπί με τη σπίθα ανοίγει το «Ρωτήστε το Vaultara». Η φωτογραφία σας ανοίγει το προφίλ, τις ρυθμίσεις και τους οδηγούς.';
+  String get tourHome4Body => 'Το κουμπί με τη σπίθα ανοίγει το «Ρωτήστε το Vaultara». Το κουμπί προφίλ δίπλα του ανοίγει το προφίλ, τις ρυθμίσεις και τους οδηγούς.';
 
   @override
   String get tourRenew1Title => 'Έρχεται υπενθύμιση';
@@ -7951,6 +7957,11 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Ανοίξτε μια εγγραφή και μοιραστείτε σύνδεσμο που δείχνει μόνο αυτήν, τίποτε άλλο.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Σε οποιαδήποτε εγγραφή, πατήστε ⋮ και επιλέξτε $action. Ο σύνδεσμος δείχνει μόνο αυτή την εγγραφή, τίποτα άλλο.';
+  }
 
   @override
   String get tourShare2Title => 'Φάκελος αποδείξεων';

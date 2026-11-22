@@ -672,7 +672,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Avancerade påminnelser är upplåsta.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Lås upp avancerade påminnelser och obegränsad organisering.';
+  String get profile_premium_upgrade_subtitle => 'Fråga Vaultara, reseplaner, obegränsat med poster och bilder.';
 
   @override
   String get profile_manage_cancel_hint => 'Hantera eller avsluta när som helst på Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get profileTutorialsTitle => 'Guider';
 
   @override
-  String get profileTutorialsSubtitle => 'Bläddra Bland App-guider';
+  String get profileTutorialsSubtitle => 'Korta guidade turer genom varje funktion';
 
   @override
   String get tutorialsScreenTitle => 'Guider';
@@ -927,6 +927,9 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Tidslinjen visar när dina poster går ut under året, med pilar för att växla mellan år.';
+
+  @override
+  String get tutorialInsightsCosts => 'Lägg till vad varje förnyelse kostar så räknar Vaultara ut vad du lägger varje år och vilka månader som kostar mest.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Brittiskt Pass';
@@ -7725,6 +7728,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get tutorialsPaidBadge => 'Betalabonnemang';
 
   @override
+  String get tutorialsInYourPlan => 'Ingår i din plan';
+
+  @override
   String get tutorialsPaidNote => 'Du kan titta på det här med alla abonnemang. Själva funktionen kräver ett betalabonnemang.';
 
   @override
@@ -7805,7 +7811,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get tourHome4Title => 'Hjälp med ett tryck';
 
   @override
-  String get tourHome4Body => 'Gnistknappen öppnar ”Fråga Vaultara”. Din bild öppnar profilen, inställningarna och guiderna.';
+  String get tourHome4Body => 'Gnistknappen öppnar ”Fråga Vaultara”. Profilknappen bredvid öppnar profilen, inställningarna och guiderna.';
 
   @override
   String get tourRenew1Title => 'En påminnelse kommer';
@@ -7950,6 +7956,11 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Öppna en post och dela en länk som bara visar den posten, inget annat.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Tryck på ⋮ på en post och välj $action. Länken visar bara den posten, inget annat.';
+  }
 
   @override
   String get tourShare2Title => 'Intygspaket';

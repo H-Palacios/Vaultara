@@ -672,7 +672,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get profile_premium_active_subtitle => 'გაუმჯობესებული შეხსენებები ჩართულია.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'გახსენით გაუმჯობესებული შეხსენებები და შეუზღუდავი ორგანიზება.';
+  String get profile_premium_upgrade_subtitle => 'ჰკითხეთ Vaultara-ს, მოგზაურობის გეგმები, შეუზღუდავი ჩანაწერები და ფოტოები.';
 
   @override
   String get profile_manage_cancel_hint => 'მართეთ ან გააუქმეთ ნებისმიერ დროს Google Play-ში.';
@@ -829,7 +829,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get profileTutorialsTitle => 'სახელმძღვანელოები';
 
   @override
-  String get profileTutorialsSubtitle => 'დაათვალიერეთ აპლიკაციის სახელმძღვანელოები';
+  String get profileTutorialsSubtitle => 'მოკლე გზამკვლევი ტურები ყველა ფუნქციისთვის';
 
   @override
   String get tutorialsScreenTitle => 'სახელმძღვანელოები';
@@ -927,6 +927,9 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'დროის ხაზი აჩვენებს როდის იწურება თქვენი ჩანაწერების ვადა წლის განმავლობაში, ისრებით წლებს შორის გადართვისთვის.';
+
+  @override
+  String get tutorialInsightsCosts => 'დაამატეთ თითოეული განახლების ფასი და Vaultara დაითვლის, რამდენს ხარჯავთ ყოველწლიურად და რომელი თვეებია ყველაზე ძვირი.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'ბრიტანული პასპორტი';
@@ -7722,6 +7725,9 @@ class AppLocalizationsKa extends AppLocalizations {
   String get tutorialsPaidBadge => 'ფასიანი გეგმები';
 
   @override
+  String get tutorialsInYourPlan => 'თქვენს გეგმაშია';
+
+  @override
   String get tutorialsPaidNote => 'ამის ნახვა ნებისმიერი გეგმით შეგიძლიათ. თავად ფუნქციას ფასიანი გეგმა სჭირდება.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get tourHome4Title => 'დახმარება ერთი შეხებით';
 
   @override
-  String get tourHome4Body => 'ნაპერწკლის ღილაკი ხსნის «ჰკითხეთ Vaultara-ს»-ს. თქვენი ფოტო ხსნის პროფილს, პარამეტრებს და გაკვეთილებს.';
+  String get tourHome4Body => 'ნაპერწკლის ღილაკი ხსნის «ჰკითხეთ Vaultara-ს»-ს. გვერდით მდებარე პროფილის ღილაკი ხსნის პროფილს, პარამეტრებს და გაკვეთილებს.';
 
   @override
   String get tourRenew1Title => 'შეხსენება მოდის';
@@ -7947,6 +7953,11 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'გახსენით ჩანაწერი და გააზიარეთ ბმული, რომელიც მხოლოდ ამ ჩანაწერს აჩვენებს, სხვას არაფერს.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'ნებისმიერ ჩანაწერზე შეეხეთ ⋮-ს და აირჩიეთ $action. ბმული აჩვენებს მხოლოდ ამ ჩანაწერს, სხვას არაფერს.';
+  }
 
   @override
   String get tourShare2Title => 'მტკიცებულებების ნაკრები';

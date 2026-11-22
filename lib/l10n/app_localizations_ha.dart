@@ -672,7 +672,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get profile_premium_active_subtitle => 'An buɗe tunatarwa masu ci gaba.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Buɗe tunatarwa masu ci gaba da tsari mara iyaka.';
+  String get profile_premium_upgrade_subtitle => 'Tambayi Vaultara, tsare-tsaren tafiya, bayanai da hotuna marasa iyaka.';
 
   @override
   String get profile_manage_cancel_hint => 'Gudanar ko soke a kowane lokaci ta Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get profileTutorialsTitle => 'Darussa';
 
   @override
-  String get profileTutorialsSubtitle => 'Duba Darussan Manhaja';
+  String get profileTutorialsSubtitle => 'Gajerun rangadi masu jagora na kowane fasali';
 
   @override
   String get tutorialsScreenTitle => 'Darussa';
@@ -927,6 +927,9 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Layin lokaci yana nuna lokacin da rikodinka za su ƙare cikin shekara, tare da kibiyoyi don sauyawa tsakanin shekaru.';
+
+  @override
+  String get tutorialInsightsCosts => 'Ƙara kuɗin kowace sabuntawa kuma Vaultara zai haɗa abin da kake kashewa kowace shekara da watannin da suka fi tsada.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Fasfo na Biritaniya';
@@ -7722,6 +7725,9 @@ class AppLocalizationsHa extends AppLocalizations {
   String get tutorialsPaidBadge => 'Tsare-tsaren biya';
 
   @override
+  String get tutorialsInYourPlan => 'A cikin tsarinka';
+
+  @override
   String get tutorialsPaidNote => 'Kana iya kallon wannan da kowane tsari. Fasalin kansa yana buƙatar tsarin biya.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get tourHome4Title => 'Taimako da taɓawa ɗaya';
 
   @override
-  String get tourHome4Body => 'Maɓallin walƙiya yana buɗe «Tambayi Vaultara». Hotonka yana buɗe bayananka, saitunan da koyarwa.';
+  String get tourHome4Body => 'Maɓallin walƙiya yana buɗe «Tambayi Vaultara». Maɓallin bayanan martaba da ke kusa da shi yana buɗe bayananka, saitunan da koyarwa.';
 
   @override
   String get tourRenew1Title => 'Tunatarwa ta zo';
@@ -7947,6 +7953,11 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Buɗe bayani ka raba hanyar haɗi da ke nuna wannan bayanin kawai, babu wani abu.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'A kowane bayani, matsa ⋮ ka zaɓi $action. Hanyar haɗin tana nuna wannan bayanin kawai, ba komai ba.';
+  }
 
   @override
   String get tourShare2Title => 'Fakitin shaida';

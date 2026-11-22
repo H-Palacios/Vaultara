@@ -672,7 +672,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Təkmil xatırlatmalar açıqdır.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Təkmil xatırlatmaları və limitsiz nizamlamanı açın.';
+  String get profile_premium_upgrade_subtitle => 'Vaultara-dan soruş, səyahət planları, limitsiz qeydlər və fotolar.';
 
   @override
   String get profile_manage_cancel_hint => 'İstənilən vaxt Google Play-də idarə edin və ya ləğv edin.';
@@ -829,7 +829,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get profileTutorialsTitle => 'Təlimatlar';
 
   @override
-  String get profileTutorialsSubtitle => 'Tətbiq təlimatlarına baxın';
+  String get profileTutorialsSubtitle => 'Hər funksiya üçün qısa bələdçi turlar';
 
   @override
   String get tutorialsScreenTitle => 'Təlimatlar';
@@ -927,6 +927,9 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Zaman xətti il ərzində sənədlərinizin müddətinin nə vaxt bitdiyini göstərir, illəri dəyişmək üçün oxlar var.';
+
+  @override
+  String get tutorialInsightsCosts => 'Hər yeniləmənin qiymətini əlavə edin, Vaultara hər il nə qədər xərclədiyinizi və hansı ayların ən baha olduğunu hesablayır.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Britaniya pasportu';
@@ -7722,6 +7725,9 @@ class AppLocalizationsAz extends AppLocalizations {
   String get tutorialsPaidBadge => 'Ödənişli planlar';
 
   @override
+  String get tutorialsInYourPlan => 'Planınıza daxildir';
+
+  @override
   String get tutorialsPaidNote => 'Bunu istənilən planla izləyə bilərsiniz. Funksiyanın özü ödənişli plan tələb edir.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get tourHome4Title => 'Bir toxunuşla kömək';
 
   @override
-  String get tourHome4Body => 'Parıltı düyməsi «Vaultara-dan soruş» açır. Fotonuz profili, ayarları və dərslikləri açır.';
+  String get tourHome4Body => 'Parıltı düyməsi «Vaultara-dan soruş» açır. Yanındakı profil düyməsi profili, ayarları və dərslikləri açır.';
 
   @override
   String get tourRenew1Title => 'Xatırlatma gəlir';
@@ -7947,6 +7953,11 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Qeydi açın və yalnız o qeydi göstərən link paylaşın, başqa heç nə.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'İstənilən qeyddə ⋮ toxunun və $action seçin. Keçid yalnız həmin qeydi göstərir, başqa heç nəyi.';
+  }
 
   @override
   String get tourShare2Title => 'Sübut paketi';

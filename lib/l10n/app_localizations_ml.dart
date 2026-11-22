@@ -672,7 +672,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get profile_premium_active_subtitle => 'വിപുലമായ റിമൈൻഡറുകൾ അൺലോക്ക് ചെയ്‌തു.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'വിപുലമായ റിമൈൻഡറുകളും പരിധിയില്ലാത്ത ചിട്ടപ്പെടുത്തലും അൺലോക്ക് ചെയ്യുക.';
+  String get profile_premium_upgrade_subtitle => 'Vaultara-യോട് ചോദിക്കുക, യാത്രാ പ്ലാനുകൾ, പരിധിയില്ലാത്ത റെക്കോർഡുകളും ഫോട്ടോകളും.';
 
   @override
   String get profile_manage_cancel_hint => 'Google Play-യിൽ എപ്പോൾ വേണമെങ്കിലും മാനേജ് ചെയ്യുകയോ റദ്ദാക്കുകയോ ചെയ്യാം.';
@@ -829,7 +829,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get profileTutorialsTitle => 'ട്യൂട്ടോറിയലുകൾ';
 
   @override
-  String get profileTutorialsSubtitle => 'ആപ്പ് ട്യൂട്ടോറിയലുകൾ ബ്രൗസ് ചെയ്യുക';
+  String get profileTutorialsSubtitle => 'ഓരോ ഫീച്ചറിന്റെയും ചെറിയ ഗൈഡഡ് ടൂറുകൾ';
 
   @override
   String get tutorialsScreenTitle => 'ട്യൂട്ടോറിയലുകൾ';
@@ -927,6 +927,9 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'വർഷത്തിലുടനീളം നിങ്ങളുടെ റെക്കോർഡുകൾ എപ്പോൾ കാലഹരണപ്പെടുന്നുവെന്ന് ടൈംലൈൻ കാണിക്കുന്നു, വർഷങ്ങൾ മാറാൻ അമ്പടയാളങ്ങളുമുണ്ട്.';
+
+  @override
+  String get tutorialInsightsCosts => 'ഓരോ പുതുക്കലിന്റെയും ചെലവ് ചേർക്കൂ, Vaultara ഓരോ വർഷത്തെയും നിങ്ങളുടെ ചെലവും ഏറ്റവും ചെലവേറിയ മാസങ്ങളും കണക്കാക്കും.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'ബ്രിട്ടീഷ് പാസ്‌പോർട്ട്';
@@ -7722,6 +7725,9 @@ class AppLocalizationsMl extends AppLocalizations {
   String get tutorialsPaidBadge => 'പണമടച്ചുള്ള പ്ലാനുകൾ';
 
   @override
+  String get tutorialsInYourPlan => 'നിങ്ങളുടെ പ്ലാനിൽ';
+
+  @override
   String get tutorialsPaidNote => 'ഏത് പ്ലാനിലും ഇത് കാണാം. ഫീച്ചറിന് പണമടച്ചുള്ള പ്ലാൻ ആവശ്യമാണ്.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get tourHome4Title => 'ഒറ്റ ടാപ്പിൽ സഹായം';
 
   @override
-  String get tourHome4Body => 'സ്പാർക്കിൾ ബട്ടൺ «Vaultara-യോട് ചോദിക്കുക» തുറക്കുന്നു. നിങ്ങളുടെ ഫോട്ടോ പ്രൊഫൈൽ, ക്രമീകരണങ്ങൾ, ട്യൂട്ടോറിയലുകൾ തുറക്കുന്നു.';
+  String get tourHome4Body => 'സ്പാർക്കിൾ ബട്ടൺ «Vaultara-യോട് ചോദിക്കുക» തുറക്കുന്നു. അതിനടുത്തുള്ള പ്രൊഫൈൽ ബട്ടൺ പ്രൊഫൈൽ, ക്രമീകരണങ്ങൾ, ട്യൂട്ടോറിയലുകൾ തുറക്കുന്നു.';
 
   @override
   String get tourRenew1Title => 'ഓർമ്മപ്പെടുത്തൽ വരുന്നു';
@@ -7947,6 +7953,11 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'റെക്കോർഡ് തുറന്ന് ആ റെക്കോർഡ് മാത്രം കാണിക്കുന്ന ലിങ്ക് പങ്കിടുക, മറ്റൊന്നുമില്ല.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'ഏത് റെക്കോർഡിലും ⋮ ടാപ്പ് ചെയ്ത് $action തിരഞ്ഞെടുക്കുക. ലിങ്ക് ആ റെക്കോർഡ് മാത്രം കാണിക്കുന്നു, മറ്റൊന്നുമില്ല.';
+  }
 
   @override
   String get tourShare2Title => 'തെളിവ് പായ്ക്ക്';

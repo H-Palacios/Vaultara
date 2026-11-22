@@ -672,7 +672,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Vikumbusho vya hali ya juu vimefunguliwa.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Fungua vikumbusho vya hali ya juu na mpangilio usio na kikomo.';
+  String get profile_premium_upgrade_subtitle => 'Uliza Vaultara, mipango ya safari, rekodi na picha bila kikomo.';
 
   @override
   String get profile_manage_cancel_hint => 'Dhibiti au ghairi wakati wowote kupitia Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get profileTutorialsTitle => 'Mafunzo';
 
   @override
-  String get profileTutorialsSubtitle => 'Vinjari Mafunzo ya Programu';
+  String get profileTutorialsSubtitle => 'Ziara fupi za mwongozo za kila kipengele';
 
   @override
   String get tutorialsScreenTitle => 'Mafunzo';
@@ -927,6 +927,9 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Ratiba ya matukio inaonyesha wakati rekodi zako zinapomalizika muda mwakani, ikiwa na mishale ya kubadilisha kati ya miaka.';
+
+  @override
+  String get tutorialInsightsCosts => 'Ongeza gharama ya kila usasishaji na Vaultara itajumlisha unachotumia kila mwaka na miezi yenye gharama kubwa zaidi.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Pasipoti ya Uingereza';
@@ -7722,6 +7725,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tutorialsPaidBadge => 'Mipango ya kulipia';
 
   @override
+  String get tutorialsInYourPlan => 'Katika mpango wako';
+
+  @override
   String get tutorialsPaidNote => 'Unaweza kutazama hili kwa mpango wowote. Kipengele chenyewe kinahitaji mpango wa kulipia.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tourHome4Title => 'Msaada kwa mguso mmoja';
 
   @override
-  String get tourHome4Body => 'Kitufe cha cheche hufungua «Uliza Vaultara». Picha yako hufungua wasifu, mipangilio na mafunzo.';
+  String get tourHome4Body => 'Kitufe cha cheche hufungua «Uliza Vaultara». Kitufe cha wasifu kilicho kando yake hufungua wasifu, mipangilio na mafunzo.';
 
   @override
   String get tourRenew1Title => 'Kikumbusho kinafika';
@@ -7947,6 +7953,11 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Fungua rekodi na ushiriki kiungo kinachoonyesha rekodi hiyo pekee, si kingine.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Kwenye rekodi yoyote, gusa ⋮ kisha uchague $action. Kiungo kinaonyesha rekodi hiyo tu, si kingine.';
+  }
 
   @override
   String get tourShare2Title => 'Kifurushi cha uthibitisho';

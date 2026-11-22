@@ -672,7 +672,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get profile_premium_active_subtitle => 'উন্নত রিমাইন্ডার সক্রিয়।';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'উন্নত রিমাইন্ডার ও সীমাহীন সংগঠন আনলক করুন।';
+  String get profile_premium_upgrade_subtitle => 'Vaultara-কে জিজ্ঞাসা করুন, ভ্রমণ পরিকল্পনা, সীমাহীন রেকর্ড ও ছবি।';
 
   @override
   String get profile_manage_cancel_hint => 'Google Play থেকে যেকোনো সময় পরিচালনা বা বাতিল করুন।';
@@ -829,7 +829,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get profileTutorialsTitle => 'টিউটোরিয়াল';
 
   @override
-  String get profileTutorialsSubtitle => 'অ্যাপ টিউটোরিয়াল ব্রাউজ করুন';
+  String get profileTutorialsSubtitle => 'প্রতিটি ফিচারের ছোট গাইডেড ট্যুর';
 
   @override
   String get tutorialsScreenTitle => 'টিউটোরিয়াল';
@@ -927,6 +927,9 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'টাইমলাইন সারা বছর জুড়ে আপনার রেকর্ডগুলি কখন মেয়াদ শেষ হয় তা দেখায়, বছরের মধ্যে পরিবর্তন করার জন্য তীর সহ।';
+
+  @override
+  String get tutorialInsightsCosts => 'প্রতিটি নবায়নের খরচ যোগ করুন, Vaultara প্রতি বছর আপনার খরচ এবং কোন মাসগুলো সবচেয়ে ব্যয়বহুল তা হিসাব করে।';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'ব্রিটিশ পাসপোর্ট';
@@ -7722,6 +7725,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get tutorialsPaidBadge => 'পেইড প্ল্যান';
 
   @override
+  String get tutorialsInYourPlan => 'আপনার প্ল্যানে আছে';
+
+  @override
   String get tutorialsPaidNote => 'যেকোনো প্ল্যানে এটি দেখতে পারেন। ফিচারটি ব্যবহারে পেইড প্ল্যান লাগে।';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get tourHome4Title => 'এক ট্যাপে সাহায্য';
 
   @override
-  String get tourHome4Body => 'স্পার্কল বোতাম «Vaultara-কে জিজ্ঞাসা করুন» খোলে। আপনার ছবি প্রোফাইল, সেটিংস ও টিউটোরিয়াল খোলে।';
+  String get tourHome4Body => 'স্পার্কল বোতাম «Vaultara-কে জিজ্ঞাসা করুন» খোলে। পাশের প্রোফাইল বোতাম প্রোফাইল, সেটিংস ও টিউটোরিয়াল খোলে।';
 
   @override
   String get tourRenew1Title => 'রিমাইন্ডার আসে';
@@ -7947,6 +7953,11 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'রেকর্ড খুলে এমন লিংক শেয়ার করুন যা শুধু সেই রেকর্ডটি দেখায়, আর কিছু না।';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'যেকোনো রেকর্ডে ⋮ ট্যাপ করে $action বেছে নিন। লিংকটি শুধু সেই রেকর্ডটিই দেখায়, আর কিছু নয়।';
+  }
 
   @override
   String get tourShare2Title => 'প্রমাণ প্যাক';

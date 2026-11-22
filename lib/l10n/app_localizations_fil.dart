@@ -672,7 +672,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Naka-unlock ang mga advanced na paalala.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'I-unlock ang mga advanced na paalala at walang limitasyong organisasyon.';
+  String get profile_premium_upgrade_subtitle => 'Magtanong sa Vaultara, mga travel plan, walang limitasyong record at larawan.';
 
   @override
   String get profile_manage_cancel_hint => 'Pamahalaan o kanselahin anumang oras sa Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get profileTutorialsTitle => 'Mga Tutorial';
 
   @override
-  String get profileTutorialsSubtitle => 'Tingnan ang mga Tutorial ng App';
+  String get profileTutorialsSubtitle => 'Maiikling guided tour ng bawat feature';
 
   @override
   String get tutorialsScreenTitle => 'Mga Tutorial';
@@ -927,6 +927,9 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Ipinapakita ng timeline kung kailan mag-e-expire ang iyong mga rekord sa buong taon, na may mga arrow para lumipat sa pagitan ng mga taon.';
+
+  @override
+  String get tutorialInsightsCosts => 'Idagdag kung magkano ang bawat renewal at isasama ng Vaultara kung magkano ang gastos mo bawat taon at kung aling mga buwan ang pinakamahal.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'British na Pasaporte';
@@ -7716,6 +7719,9 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tutorialsPaidBadge => 'Mga bayad na plano';
 
   @override
+  String get tutorialsInYourPlan => 'Kasama sa plan mo';
+
+  @override
   String get tutorialsPaidNote => 'Mapapanood mo ito sa anumang plano. Kailangan ng bayad na plano para sa mismong feature.';
 
   @override
@@ -7796,7 +7802,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tourHome4Title => 'Tulong sa isang tap';
 
   @override
-  String get tourHome4Body => 'Binubuksan ng sparkle button ang «Magtanong sa Vaultara». Binubuksan ng iyong larawan ang profile, settings at mga tutorial.';
+  String get tourHome4Body => 'Binubuksan ng sparkle button ang «Magtanong sa Vaultara». Binubuksan ng profile button sa tabi nito ang profile, settings at mga tutorial.';
 
   @override
   String get tourRenew1Title => 'May dumating na paalala';
@@ -7941,6 +7947,11 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Buksan ang record at magbahagi ng link na ipinapakita lang ang record na iyon, wala nang iba.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Sa anumang record, i-tap ang ⋮ at piliin ang $action. Ang link ay nagpapakita lang ng record na iyon, wala nang iba.';
+  }
 
   @override
   String get tourShare2Title => 'Pakete ng patunay';

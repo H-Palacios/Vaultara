@@ -672,7 +672,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Recordatorios avanzados desbloqueados.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Desbloquea recordatorios avanzados y organización ilimitada.';
+  String get profile_premium_upgrade_subtitle => 'Pregunta a Vaultara, planes de viaje, registros y fotos ilimitados.';
 
   @override
   String get profile_manage_cancel_hint => 'Administra o cancela en cualquier momento en Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get profileTutorialsTitle => 'Tutoriales';
 
   @override
-  String get profileTutorialsSubtitle => 'Explora los Tutoriales de la App';
+  String get profileTutorialsSubtitle => 'Recorridos guiados breves de cada función';
 
   @override
   String get tutorialsScreenTitle => 'Tutoriales';
@@ -927,6 +927,9 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'La línea de tiempo muestra cuándo caducan tus registros a lo largo del año, con flechas para cambiar entre años.';
+
+  @override
+  String get tutorialInsightsCosts => 'Añade lo que cuesta cada renovación y Vaultara suma lo que gastas cada año y qué meses cuestan más.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Pasaporte Británico';
@@ -7750,6 +7753,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get tutorialsPaidBadge => 'Planes de pago';
 
   @override
+  String get tutorialsInYourPlan => 'En tu plan';
+
+  @override
   String get tutorialsPaidNote => 'Puedes verlo con cualquier plan. Usar la función requiere un plan de pago.';
 
   @override
@@ -7830,7 +7836,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get tourHome4Title => 'Ayuda a un toque';
 
   @override
-  String get tourHome4Body => 'El botón de destello abre «Pregunta a Vaultara». Tu foto abre tu perfil, los ajustes y los tutoriales.';
+  String get tourHome4Body => 'El botón de destello abre «Pregunta a Vaultara». El botón de perfil de al lado abre tu perfil, los ajustes y los tutoriales.';
 
   @override
   String get tourRenew1Title => 'Llega un recordatorio';
@@ -7975,6 +7981,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Abre un registro y comparte un enlace que muestra solo ese registro, nada más.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'En cualquier registro, toca ⋮ y elige $action. El enlace solo muestra ese registro, nada más.';
+  }
 
   @override
   String get tourShare2Title => 'Paquete de pruebas';

@@ -672,7 +672,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Nhắc nhở nâng cao đã được mở khóa.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Mở khóa nhắc nhở nâng cao và tổ chức không giới hạn.';
+  String get profile_premium_upgrade_subtitle => 'Hỏi Vaultara, kế hoạch chuyến đi, hồ sơ và ảnh không giới hạn.';
 
   @override
   String get profile_manage_cancel_hint => 'Quản lý hoặc hủy bất kỳ lúc nào trên Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get profileTutorialsTitle => 'Hướng dẫn';
 
   @override
-  String get profileTutorialsSubtitle => 'Duyệt Hướng dẫn Ứng dụng';
+  String get profileTutorialsSubtitle => 'Hướng dẫn ngắn cho từng tính năng';
 
   @override
   String get tutorialsScreenTitle => 'Hướng dẫn';
@@ -926,6 +926,9 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Dòng thời gian hiển thị khi nào các bản ghi của bạn hết hạn trong suốt năm, với các mũi tên để chuyển đổi giữa các năm.';
+
+  @override
+  String get tutorialInsightsCosts => 'Thêm chi phí của mỗi lần gia hạn và Vaultara cộng số tiền bạn chi mỗi năm cùng những tháng tốn kém nhất.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Hộ Chiếu Anh';
@@ -7665,6 +7668,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tutorialsPaidBadge => 'Gói trả phí';
 
   @override
+  String get tutorialsInYourPlan => 'Có trong gói của bạn';
+
+  @override
   String get tutorialsPaidNote => 'Bạn có thể xem phần này với bất kỳ gói nào. Bản thân tính năng cần gói trả phí.';
 
   @override
@@ -7745,7 +7751,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tourHome4Title => 'Trợ giúp chỉ một chạm';
 
   @override
-  String get tourHome4Body => 'Nút lấp lánh mở «Hỏi Vaultara». Ảnh của bạn mở hồ sơ, cài đặt và hướng dẫn.';
+  String get tourHome4Body => 'Nút lấp lánh mở «Hỏi Vaultara». Nút hồ sơ bên cạnh mở hồ sơ, cài đặt và hướng dẫn.';
 
   @override
   String get tourRenew1Title => 'Có lời nhắc';
@@ -7890,6 +7896,11 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Mở một mục và chia sẻ liên kết chỉ hiện mục đó, không gì khác.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Trên bất kỳ hồ sơ nào, chạm ⋮ và chọn $action. Liên kết chỉ hiển thị hồ sơ đó, không gì khác.';
+  }
 
   @override
   String get tourShare2Title => 'Bộ hồ sơ chứng minh';

@@ -672,7 +672,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Ítarlegar áminningar eru opnaðar.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Opnaðu ítarlegar áminningar og ótakmarkað skipulag.';
+  String get profile_premium_upgrade_subtitle => 'Spyrðu Vaultara, ferðaáætlanir, ótakmarkaðar færslur og myndir.';
 
   @override
   String get profile_manage_cancel_hint => 'Stjórnaðu eða segðu upp hvenær sem er á Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get profileTutorialsTitle => 'Kennsluefni';
 
   @override
-  String get profileTutorialsSubtitle => 'Skoðaðu kennsluefni forritsins';
+  String get profileTutorialsSubtitle => 'Stuttar leiðsagnir um hvern eiginleika';
 
   @override
   String get tutorialsScreenTitle => 'Kennsluefni';
@@ -927,6 +927,9 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Tímalínan sýnir hvenær færslur þínar renna út yfir árið, með örvum til að skipta milli ára.';
+
+  @override
+  String get tutorialInsightsCosts => 'Bættu við hvað hver endurnýjun kostar og Vaultara leggur saman hvað þú eyðir á ári og hvaða mánuðir eru dýrastir.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Breskt Vegabréf';
@@ -7721,6 +7724,9 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tutorialsPaidBadge => 'Greiddar áskriftir';
 
   @override
+  String get tutorialsInYourPlan => 'Í áskriftinni þinni';
+
+  @override
   String get tutorialsPaidNote => 'Þú getur skoðað þetta með hvaða áskrift sem er. Eiginleikinn sjálfur krefst greiddrar áskriftar.';
 
   @override
@@ -7801,7 +7807,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tourHome4Title => 'Hjálp með einni snertingu';
 
   @override
-  String get tourHome4Body => 'Neistahnappurinn opnar „Spyrðu Vaultara“. Myndin þín opnar prófílinn, stillingar og leiðbeiningar.';
+  String get tourHome4Body => 'Neistahnappurinn opnar „Spyrðu Vaultara“. Prófílhnappurinn við hliðina opnar prófílinn, stillingar og leiðbeiningar.';
 
   @override
   String get tourRenew1Title => 'Áminning berst';
@@ -7946,6 +7952,11 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Opnaðu færslu og deildu tengli sem sýnir aðeins þá færslu, ekkert annað.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Ýttu á ⋮ á hvaða færslu sem er og veldu $action. Tengillinn sýnir aðeins þá færslu, ekkert annað.';
+  }
 
   @override
   String get tourShare2Title => 'Skjalapakki';

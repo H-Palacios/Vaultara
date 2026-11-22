@@ -672,7 +672,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Erweiterte Erinnerungen freigeschaltet.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Erweiterte Erinnerungen und unbegrenzte Organisation freischalten.';
+  String get profile_premium_upgrade_subtitle => 'Vaultara fragen, Reisepläne, unbegrenzt Einträge und Fotos.';
 
   @override
   String get profile_manage_cancel_hint => 'Jederzeit in Google Play verwalten oder kündigen.';
@@ -829,7 +829,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get profileTutorialsTitle => 'Tutorials';
 
   @override
-  String get profileTutorialsSubtitle => 'App-Tutorials durchsuchen';
+  String get profileTutorialsSubtitle => 'Kurze geführte Touren zu jeder Funktion';
 
   @override
   String get tutorialsScreenTitle => 'Tutorials';
@@ -927,6 +927,9 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Die Zeitleiste zeigt, wann deine Einträge im Laufe des Jahres ablaufen, mit Pfeilen zum Wechseln zwischen Jahren.';
+
+  @override
+  String get tutorialInsightsCosts => 'Trage ein, was jede Verlängerung kostet, und Vaultara rechnet aus, was du jedes Jahr ausgibst und welche Monate am teuersten sind.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Britischer Reisepass';
@@ -7726,6 +7729,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get tutorialsPaidBadge => 'Kostenpflichtig';
 
   @override
+  String get tutorialsInYourPlan => 'In deinem Tarif';
+
+  @override
   String get tutorialsPaidNote => 'Du kannst das mit jedem Tarif ansehen. Die Funktion selbst braucht einen kostenpflichtigen Tarif.';
 
   @override
@@ -7806,7 +7812,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get tourHome4Title => 'Hilfe mit einem Tipp';
 
   @override
-  String get tourHome4Body => 'Der Funkel-Knopf öffnet „Vaultara fragen“. Dein Bild öffnet Profil, Einstellungen und Tutorials.';
+  String get tourHome4Body => 'Der Funkel-Knopf öffnet „Vaultara fragen“. Der Profil-Knopf daneben öffnet Profil, Einstellungen und Tutorials.';
 
   @override
   String get tourRenew1Title => 'Eine Erinnerung kommt';
@@ -7951,6 +7957,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Öffne einen Eintrag und teile einen Link, der nur diesen Eintrag zeigt, sonst nichts.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Tippe bei einem Eintrag auf ⋮ und wähle $action. Der Link zeigt nur diesen Eintrag, sonst nichts.';
+  }
 
   @override
   String get tourShare2Title => 'Nachweis-Paket';

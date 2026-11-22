@@ -672,7 +672,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Speciális emlékeztetők feloldva.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Speciális emlékeztetők és korlátlan rendszerezés.';
+  String get profile_premium_upgrade_subtitle => 'Kérdezze a Vaultarát, utazási tervek, korlátlan bejegyzés és fotó.';
 
   @override
   String get profile_manage_cancel_hint => 'Kezelje vagy mondja le bármikor a Google Playen.';
@@ -829,7 +829,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get profileTutorialsTitle => 'Oktatóanyagok';
 
   @override
-  String get profileTutorialsSubtitle => 'Böngésszen az alkalmazás oktatóanyagai között';
+  String get profileTutorialsSubtitle => 'Rövid, vezetett bemutatók minden funkcióhoz';
 
   @override
   String get tutorialsScreenTitle => 'Oktatóanyagok';
@@ -927,6 +927,9 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Az idővonal megmutatja, mikor járnak le a bejegyzései az év során, nyilakkal az évek közötti váltáshoz.';
+
+  @override
+  String get tutorialInsightsCosts => 'Add meg, mennyibe kerül egy-egy megújítás, és a Vaultara összeadja, mennyit költesz évente, és mely hónapok a legdrágábbak.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Brit Útlevél';
@@ -7722,6 +7725,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tutorialsPaidBadge => 'Fizetős csomagok';
 
   @override
+  String get tutorialsInYourPlan => 'Benne van a csomagodban';
+
+  @override
   String get tutorialsPaidNote => 'Ezt bármelyik csomaggal megnézheted. Magához a funkcióhoz fizetős csomag kell.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tourHome4Title => 'Segítség egy koppintással';
 
   @override
-  String get tourHome4Body => 'A szikra gomb megnyitja a(z) „Kérdezze a Vaultarát” funkciót. A fotód a profilt, a beállításokat és az oktatóanyagokat nyitja meg.';
+  String get tourHome4Body => 'A szikra gomb megnyitja a(z) „Kérdezze a Vaultarát” funkciót. A mellette lévő profil gomb a profilt, a beállításokat és az oktatóanyagokat nyitja meg.';
 
   @override
   String get tourRenew1Title => 'Emlékeztető érkezik';
@@ -7947,6 +7953,11 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Nyiss meg egy tételt, és ossz meg egy hivatkozást, amely csak azt a tételt mutatja, semmi mást.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Bármelyik bejegyzésnél koppints a ⋮ ikonra, és válaszd ezt: $action. A link csak azt a bejegyzést mutatja, semmi mást.';
+  }
 
   @override
   String get tourShare2Title => 'Igazolási csomag';

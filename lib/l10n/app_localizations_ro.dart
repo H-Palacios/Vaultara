@@ -674,7 +674,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Memento-uri avansate deblocate.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Deblochează memento-uri avansate și organizare nelimitată.';
+  String get profile_premium_upgrade_subtitle => 'Întreabă Vaultara, planuri de călătorie, înregistrări și fotografii nelimitate.';
 
   @override
   String get profile_manage_cancel_hint => 'Gestionează sau anulează oricând în Google Play.';
@@ -832,7 +832,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get profileTutorialsTitle => 'Tutoriale';
 
   @override
-  String get profileTutorialsSubtitle => 'Răsfoiește Tutorialele Aplicației';
+  String get profileTutorialsSubtitle => 'Tururi ghidate scurte pentru fiecare funcție';
 
   @override
   String get tutorialsScreenTitle => 'Tutoriale';
@@ -931,6 +931,9 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Cronologia arată când expiră înregistrările tale pe parcursul anului, cu săgeți pentru a comuta între ani.';
+
+  @override
+  String get tutorialInsightsCosts => 'Adaugă cât costă fiecare reînnoire și Vaultara adună cât cheltuiești în fiecare an și care luni costă cel mai mult.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Pașaport Britanic';
@@ -7799,6 +7802,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tutorialsPaidBadge => 'Abonamente plătite';
 
   @override
+  String get tutorialsInYourPlan => 'În planul tău';
+
+  @override
   String get tutorialsPaidNote => 'Poți vedea asta cu orice abonament. Funcția în sine necesită un abonament plătit.';
 
   @override
@@ -7879,7 +7885,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tourHome4Title => 'Ajutor dintr-o atingere';
 
   @override
-  String get tourHome4Body => 'Butonul cu scânteie deschide „Întreabă Vaultara”. Fotografia ta deschide profilul, setările și tutorialele.';
+  String get tourHome4Body => 'Butonul cu scânteie deschide „Întreabă Vaultara”. Butonul de profil de lângă el deschide profilul, setările și tutorialele.';
 
   @override
   String get tourRenew1Title => 'Sosește un memento';
@@ -8024,6 +8030,11 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Deschide o înregistrare și partajează un link care arată doar acea înregistrare, nimic altceva.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Pe orice înregistrare, atinge ⋮ și alege $action. Linkul arată doar acea înregistrare, nimic altceva.';
+  }
 
   @override
   String get tourShare2Title => 'Pachet de dovezi';

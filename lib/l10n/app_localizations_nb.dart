@@ -672,7 +672,7 @@ class AppLocalizationsNb extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Avanserte påminnelser er låst opp.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Lås opp avanserte påminnelser og ubegrenset organisering.';
+  String get profile_premium_upgrade_subtitle => 'Spør Vaultara, reiseplaner, ubegrensede oppføringer og bilder.';
 
   @override
   String get profile_manage_cancel_hint => 'Administrer eller avslutt når som helst i Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsNb extends AppLocalizations {
   String get profileTutorialsTitle => 'Veiledninger';
 
   @override
-  String get profileTutorialsSubtitle => 'Bla Gjennom App-veiledninger';
+  String get profileTutorialsSubtitle => 'Korte guidede turer i hver funksjon';
 
   @override
   String get tutorialsScreenTitle => 'Veiledninger';
@@ -927,6 +927,9 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Tidslinjen viser når oppføringene dine utløper i løpet av året, med piler for å bytte mellom år.';
+
+  @override
+  String get tutorialInsightsCosts => 'Legg inn hva hver fornyelse koster, så regner Vaultara ut hva du bruker hvert år og hvilke måneder som koster mest.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Britisk Pass';
@@ -7726,6 +7729,9 @@ class AppLocalizationsNb extends AppLocalizations {
   String get tutorialsPaidBadge => 'Betalte abonnementer';
 
   @override
+  String get tutorialsInYourPlan => 'I abonnementet ditt';
+
+  @override
   String get tutorialsPaidNote => 'Du kan se dette med alle abonnementer. Selve funksjonen krever et betalt abonnement.';
 
   @override
@@ -7806,7 +7812,7 @@ class AppLocalizationsNb extends AppLocalizations {
   String get tourHome4Title => 'Hjelp med ett trykk';
 
   @override
-  String get tourHome4Body => 'Gnistknappen åpner «Spør Vaultara». Bildet ditt åpner profilen, innstillingene og veiledningene.';
+  String get tourHome4Body => 'Gnistknappen åpner «Spør Vaultara». Profilknappen ved siden av åpner profilen, innstillingene og veiledningene.';
 
   @override
   String get tourRenew1Title => 'En påminnelse kommer';
@@ -7951,6 +7957,11 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Åpne en oppføring og del en lenke som bare viser den oppføringen, ingenting annet.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Trykk på ⋮ på en oppføring og velg $action. Lenken viser bare den oppføringen, ingenting annet.';
+  }
 
   @override
   String get tourShare2Title => 'Dokumentpakke';

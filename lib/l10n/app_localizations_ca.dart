@@ -672,7 +672,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Recordatoris avançats activats.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Desbloqueja recordatoris avançats i organització il·limitada.';
+  String get profile_premium_upgrade_subtitle => 'Pregunta a Vaultara, plans de viatge, registres i fotos il·limitats.';
 
   @override
   String get profile_manage_cancel_hint => 'Gestiona o cancel·la en qualsevol moment a Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get profileTutorialsTitle => 'Tutorials';
 
   @override
-  String get profileTutorialsSubtitle => 'Explora els Tutorials de l\'App';
+  String get profileTutorialsSubtitle => 'Visites guiades breus de cada funció';
 
   @override
   String get tutorialsScreenTitle => 'Tutorials';
@@ -927,6 +927,9 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'La línia de temps mostra quan caduquen els teus registres al llarg de l\'any, amb fletxes per canviar entre anys.';
+
+  @override
+  String get tutorialInsightsCosts => 'Afegeix el que costa cada renovació i Vaultara suma el que gastes cada any i quins mesos costen més.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Passaport Britànic';
@@ -7726,6 +7729,9 @@ class AppLocalizationsCa extends AppLocalizations {
   String get tutorialsPaidBadge => 'Plans de pagament';
 
   @override
+  String get tutorialsInYourPlan => 'Al teu pla';
+
+  @override
   String get tutorialsPaidNote => 'Pots veure-ho amb qualsevol pla. Fer servir la funció requereix un pla de pagament.';
 
   @override
@@ -7806,7 +7812,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get tourHome4Title => 'Ajuda a un toc';
 
   @override
-  String get tourHome4Body => 'El botó d\'espurna obre «Pregunta a Vaultara». La teva foto obre el perfil, la configuració i els tutorials.';
+  String get tourHome4Body => 'El botó d\'espurna obre «Pregunta a Vaultara». El botó de perfil del costat obre el perfil, la configuració i els tutorials.';
 
   @override
   String get tourRenew1Title => 'Arriba un recordatori';
@@ -7951,6 +7957,11 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Obre un registre i comparteix un enllaç que només mostra aquest registre, res més.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'En qualsevol registre, toca ⋮ i tria $action. L\'enllaç només mostra aquell registre, res més.';
+  }
 
   @override
   String get tourShare2Title => 'Paquet de proves';

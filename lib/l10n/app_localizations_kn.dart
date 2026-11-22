@@ -672,7 +672,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get profile_premium_active_subtitle => 'ಸುಧಾರಿತ ರಿಮೈಂಡರ್‌ಗಳನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಲಾಗಿದೆ.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'ಸುಧಾರಿತ ರಿಮೈಂಡರ್‌ಗಳು ಮತ್ತು ಅನಿಯಮಿತ ವ್ಯವಸ್ಥೆಯನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಿ.';
+  String get profile_premium_upgrade_subtitle => 'Vaultara ಅನ್ನು ಕೇಳಿ, ಪ್ರಯಾಣ ಯೋಜನೆಗಳು, ಅನಿಯಮಿತ ದಾಖಲೆಗಳು ಮತ್ತು ಫೋಟೋಗಳು.';
 
   @override
   String get profile_manage_cancel_hint => 'Google Play ನಲ್ಲಿ ಯಾವಾಗ ಬೇಕಾದರೂ ನಿರ್ವಹಿಸಿ ಅಥವಾ ರದ್ದುಮಾಡಿ.';
@@ -829,7 +829,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get profileTutorialsTitle => 'ಟ್ಯುಟೋರಿಯಲ್‌ಗಳು';
 
   @override
-  String get profileTutorialsSubtitle => 'ಆ್ಯಪ್ ಟ್ಯುಟೋರಿಯಲ್‌ಗಳನ್ನು ಬ್ರೌಸ್ ಮಾಡಿ';
+  String get profileTutorialsSubtitle => 'ಪ್ರತಿ ವೈಶಿಷ್ಟ್ಯದ ಸಣ್ಣ ಮಾರ್ಗದರ್ಶಿ ಪ್ರವಾಸಗಳು';
 
   @override
   String get tutorialsScreenTitle => 'ಟ್ಯುಟೋರಿಯಲ್‌ಗಳು';
@@ -927,6 +927,9 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'ನಿಮ್ಮ ದಾಖಲೆಗಳು ವರ್ಷದಾದ್ಯಂತ ಯಾವಾಗ ಮುಕ್ತಾಯಗೊಳ್ಳುತ್ತವೆ ಎಂಬುದನ್ನು ಟೈಮ್‌ಲೈನ್ ತೋರಿಸುತ್ತದೆ, ವರ್ಷಗಳ ನಡುವೆ ಬದಲಾಯಿಸಲು ಬಾಣದ ಗುರುತುಗಳಿವೆ.';
+
+  @override
+  String get tutorialInsightsCosts => 'ಪ್ರತಿ ನವೀಕರಣದ ವೆಚ್ಚ ಸೇರಿಸಿ, Vaultara ಪ್ರತಿ ವರ್ಷದ ನಿಮ್ಮ ಖರ್ಚು ಮತ್ತು ಅತ್ಯಂತ ದುಬಾರಿ ತಿಂಗಳುಗಳನ್ನು ಲೆಕ್ಕಹಾಕುತ್ತದೆ.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'ಬ್ರಿಟಿಷ್ ಪಾಸ್‌ಪೋರ್ಟ್';
@@ -7722,6 +7725,9 @@ class AppLocalizationsKn extends AppLocalizations {
   String get tutorialsPaidBadge => 'ಪಾವತಿಸಿದ ಯೋಜನೆಗಳು';
 
   @override
+  String get tutorialsInYourPlan => 'ನಿಮ್ಮ ಯೋಜನೆಯಲ್ಲಿದೆ';
+
+  @override
   String get tutorialsPaidNote => 'ಯಾವುದೇ ಯೋಜನೆಯಲ್ಲಿ ಇದನ್ನು ನೋಡಬಹುದು. ವೈಶಿಷ್ಟ್ಯಕ್ಕೆ ಪಾವತಿಸಿದ ಯೋಜನೆ ಬೇಕು.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get tourHome4Title => 'ಒಂದು ಟ್ಯಾಪ್‌ನಲ್ಲಿ ಸಹಾಯ';
 
   @override
-  String get tourHome4Body => 'ಸ್ಪಾರ್ಕಲ್ ಬಟನ್ «Vaultara ಅನ್ನು ಕೇಳಿ» ತೆರೆಯುತ್ತದೆ. ನಿಮ್ಮ ಫೋಟೋ ಪ್ರೊಫೈಲ್, ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಮತ್ತು ಟ್ಯುಟೋರಿಯಲ್‌ಗಳನ್ನು ತೆರೆಯುತ್ತದೆ.';
+  String get tourHome4Body => 'ಸ್ಪಾರ್ಕಲ್ ಬಟನ್ «Vaultara ಅನ್ನು ಕೇಳಿ» ತೆರೆಯುತ್ತದೆ. ಅದರ ಪಕ್ಕದ ಪ್ರೊಫೈಲ್ ಬಟನ್ ಪ್ರೊಫೈಲ್, ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಮತ್ತು ಟ್ಯುಟೋರಿಯಲ್‌ಗಳನ್ನು ತೆರೆಯುತ್ತದೆ.';
 
   @override
   String get tourRenew1Title => 'ಜ್ಞಾಪನೆ ಬರುತ್ತದೆ';
@@ -7947,6 +7953,11 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'ದಾಖಲೆ ತೆರೆದು ಆ ದಾಖಲೆಯನ್ನು ಮಾತ್ರ ತೋರಿಸುವ ಲಿಂಕ್ ಹಂಚಿಕೊಳ್ಳಿ, ಬೇರೇನೂ ಇಲ್ಲ.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'ಯಾವುದೇ ದಾಖಲೆಯಲ್ಲಿ ⋮ ಟ್ಯಾಪ್ ಮಾಡಿ ಮತ್ತು $action ಆಯ್ಕೆಮಾಡಿ. ಲಿಂಕ್ ಆ ದಾಖಲೆಯನ್ನು ಮಾತ್ರ ತೋರಿಸುತ್ತದೆ, ಬೇರೇನೂ ಇಲ್ಲ.';
+  }
 
   @override
   String get tourShare2Title => 'ಪುರಾವೆ ಪ್ಯಾಕ್';

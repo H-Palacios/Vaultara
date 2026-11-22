@@ -673,7 +673,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Napredni podsjetnici su otključani.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Otključajte napredne podsjetnike i neograničenu organizaciju.';
+  String get profile_premium_upgrade_subtitle => 'Pitajte Vaultara, planovi putovanja, neograničeni zapisi i fotografije.';
 
   @override
   String get profile_manage_cancel_hint => 'Upravljajte ili otkažite u bilo kojem trenutku na Google Playu.';
@@ -831,7 +831,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get profileTutorialsTitle => 'Uputstva';
 
   @override
-  String get profileTutorialsSubtitle => 'Pregledajte uputstva za aplikaciju';
+  String get profileTutorialsSubtitle => 'Kratki vođeni obilasci svake funkcije';
 
   @override
   String get tutorialsScreenTitle => 'Uputstva';
@@ -929,6 +929,9 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Vremenska linija prikazuje kada vaši zapisi ističu tokom godine, sa strelicama za prebacivanje između godina.';
+
+  @override
+  String get tutorialInsightsCosts => 'Dodajte koliko košta svako obnavljanje i Vaultara sabira koliko trošite svake godine i koji su mjeseci najskuplji.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Britanski Pasoš';
@@ -7791,6 +7794,9 @@ class AppLocalizationsBs extends AppLocalizations {
   String get tutorialsPaidBadge => 'Plaćeni paketi';
 
   @override
+  String get tutorialsInYourPlan => 'U vašem planu';
+
+  @override
   String get tutorialsPaidNote => 'Ovo možete pogledati s bilo kojim paketom. Za samu funkciju potreban je plaćeni paket.';
 
   @override
@@ -7871,7 +7877,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get tourHome4Title => 'Pomoć jednim dodirom';
 
   @override
-  String get tourHome4Body => 'Dugme s iskrom otvara „Pitajte Vaultara”. Vaša fotografija otvara profil, postavke i vodiče.';
+  String get tourHome4Body => 'Dugme s iskrom otvara „Pitajte Vaultara”. Dugme profila pored njega otvara profil, postavke i vodiče.';
 
   @override
   String get tourRenew1Title => 'Stiže podsjetnik';
@@ -8016,6 +8022,11 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Otvorite zapis i podijelite link koji prikazuje samo taj zapis, ništa drugo.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Na bilo kojem zapisu dodirnite ⋮ i odaberite $action. Link prikazuje samo taj zapis, ništa drugo.';
+  }
 
   @override
   String get tourShare2Title => 'Paket dokaza';

@@ -672,7 +672,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get profile_premium_active_subtitle => 'پرمختللي یادونې فعالې شوې.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'پرمختللي یادونې او نامحدود تنظیم خلاص کړئ.';
+  String get profile_premium_upgrade_subtitle => 'له Vaultara وپوښتئ، د سفر پلانونه، بې حده ریکارډونه او عکسونه.';
 
   @override
   String get profile_manage_cancel_hint => 'په هر وخت کې په Google Play کې اداره یا لغوه کړئ.';
@@ -829,7 +829,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get profileTutorialsTitle => 'لارښودونه';
 
   @override
-  String get profileTutorialsSubtitle => 'د اپلیکیشن لارښودونه وګورئ';
+  String get profileTutorialsSubtitle => 'د هرې ځانګړتیا لنډ لارښود سفرونه';
 
   @override
   String get tutorialsScreenTitle => 'لارښودونه';
@@ -927,6 +927,9 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'د وخت کرښه ښیي چې ستاسو ریکارډونه د کال په اوږدو کې کله پای ته رسیږي، د کلونو ترمنځ د بدلولو لپاره د غشو سره.';
+
+  @override
+  String get tutorialInsightsCosts => 'د هر نوي کولو لګښت ورزیات کړئ، Vaultara ستاسو کلنی لګښت او تر ټولو ګران میاشتې حسابوي.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'برتانوي پاسپورټ';
@@ -7722,6 +7725,9 @@ class AppLocalizationsPs extends AppLocalizations {
   String get tutorialsPaidBadge => 'پیسې لرونکي پلانونه';
 
   @override
+  String get tutorialsInYourPlan => 'ستاسو په پلان کې';
+
+  @override
   String get tutorialsPaidNote => 'تاسو دا په هر پلان کتلی شئ. پخپله ځانګړنه پیسې لرونکی پلان غواړي.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get tourHome4Title => 'مرسته په یو ټک';
 
   @override
-  String get tourHome4Body => 'د سپرغۍ تڼۍ «له Vaultara وپوښتئ» پرانیزي. ستاسو عکس پروفایل، ترتیبات او زده کړې پرانیزي.';
+  String get tourHome4Body => 'د سپرغۍ تڼۍ «له Vaultara وپوښتئ» پرانیزي. تر څنګ یې د پروفایل تڼۍ پروفایل، ترتیبات او زده کړې پرانیزي.';
 
   @override
   String get tourRenew1Title => 'یادونه راځي';
@@ -7947,6 +7953,11 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'ریکارډ پرانیزئ او داسې لینک شریک کړئ چې یوازې هماغه ریکارډ ښیي، بل هېڅ نه.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'په هر ریکارډ کې ⋮ کېکاږئ او $action وټاکئ. لینک یوازې هغه ریکارډ ښیي، بل هیڅ نه.';
+  }
 
   @override
   String get tourShare2Title => 'د ثبوت کڅوړه';

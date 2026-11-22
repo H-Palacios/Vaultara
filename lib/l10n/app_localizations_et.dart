@@ -672,7 +672,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Täiustatud meeldetuletused on avatud.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Ava täiustatud meeldetuletused ja piiramatu korraldus.';
+  String get profile_premium_upgrade_subtitle => 'Küsi Vaultaralt, reisiplaanid, piiramatult kirjeid ja fotosid.';
 
   @override
   String get profile_manage_cancel_hint => 'Halda või tühista igal ajal Google Play’s.';
@@ -829,7 +829,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get profileTutorialsTitle => 'Õpetused';
 
   @override
-  String get profileTutorialsSubtitle => 'Sirvi rakenduse õpetusi';
+  String get profileTutorialsSubtitle => 'Lühikesed juhendatud ringkäigud igas funktsioonis';
 
   @override
   String get tutorialsScreenTitle => 'Õpetused';
@@ -927,6 +927,9 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Ajatelg näitab, millal sinu kirjed aasta jooksul aeguvad, koos nooltega aastate vahel liikumiseks.';
+
+  @override
+  String get tutorialInsightsCosts => 'Lisa iga uuenduse hind ja Vaultara liidab kokku, palju sa igal aastal kulutad ja millised kuud on kõige kallimad.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Suurbritannia pass';
@@ -7726,6 +7729,9 @@ class AppLocalizationsEt extends AppLocalizations {
   String get tutorialsPaidBadge => 'Tasulised paketid';
 
   @override
+  String get tutorialsInYourPlan => 'Sinu paketis';
+
+  @override
   String get tutorialsPaidNote => 'Saad seda vaadata iga paketiga. Funktsioon ise vajab tasulist paketti.';
 
   @override
@@ -7806,7 +7812,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get tourHome4Title => 'Abi ühe puudutusega';
 
   @override
-  String get tourHome4Body => 'Sädemenupp avab „Küsi Vaultaralt“. Sinu foto avab profiili, seaded ja õpetused.';
+  String get tourHome4Body => 'Sädemenupp avab „Küsi Vaultaralt“. Selle kõrval olev profiilinupp avab profiili, seaded ja õpetused.';
 
   @override
   String get tourRenew1Title => 'Saabub meeldetuletus';
@@ -7951,6 +7957,11 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Ava kirje ja jaga linki, mis näitab ainult seda kirjet ja mitte midagi muud.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Puuduta mis tahes kirjel ⋮ ja vali $action. Link näitab ainult seda kirjet, mitte midagi muud.';
+  }
 
   @override
   String get tourShare2Title => 'Tõendipakett';

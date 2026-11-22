@@ -1468,7 +1468,7 @@ abstract class AppLocalizations {
   /// No description provided for @profile_premium_upgrade_subtitle.
   ///
   /// In en, this message translates to:
-  /// **'Unlock advanced reminders and unlimited organisation.'**
+  /// **'Ask Vaultara, travel plans, unlimited records and photos.'**
   String get profile_premium_upgrade_subtitle;
 
   /// No description provided for @profile_manage_cancel_hint.
@@ -1750,7 +1750,7 @@ abstract class AppLocalizations {
   /// No description provided for @profileTutorialsSubtitle.
   ///
   /// In en, this message translates to:
-  /// **'Browse App Tutorials'**
+  /// **'Short guided tours of every feature'**
   String get profileTutorialsSubtitle;
 
   /// No description provided for @tutorialsScreenTitle.
@@ -1926,6 +1926,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'The timeline shows when your records expire across the year, with arrows to switch between years.'**
   String get tutorialInsightsTimeline;
+
+  /// Insights tutorial step that points at the renewal costs card.
+  ///
+  /// In en, this message translates to:
+  /// **'Add what each renewal costs and Vaultara adds up what you spend each year, and which months cost the most.'**
+  String get tutorialInsightsCosts;
 
   /// No description provided for @tutorialInsightsSampleRecordTwo.
   ///
@@ -13279,6 +13285,12 @@ abstract class AppLocalizations {
   /// **'Paid plans'**
   String get tutorialsPaidBadge;
 
+  /// Chip on a tutorial whose feature the user's plan already includes. Short.
+  ///
+  /// In en, this message translates to:
+  /// **'In your plan'**
+  String get tutorialsInYourPlan;
+
   /// Note at the end of a tutorial for a paid feature.
   ///
   /// In en, this message translates to:
@@ -13438,7 +13450,7 @@ abstract class AppLocalizations {
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
-  /// **'The sparkle button opens Ask Vaultara. Your picture opens your profile, settings and tutorials.'**
+  /// **'The sparkle button opens Ask Vaultara. The profile button next to it opens your profile, settings and tutorials.'**
   String get tourHome4Body;
 
   /// Title of a tutorial step. Short.
@@ -13728,6 +13740,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Open a record and share a link that shows only that record, nothing else.'**
   String get tourShare1Body;
+
+  /// Sharing tutorial step. {action} is the record menu item that shares a link, such as "Share secure link". ⋮ is the record menu button.
+  ///
+  /// In en, this message translates to:
+  /// **'On any record, tap ⋮ and choose {action}. The link shows only that record, nothing else.'**
+  String tourShare1BodyMenu(String action);
 
   /// Title of a tutorial step. Short.
   ///

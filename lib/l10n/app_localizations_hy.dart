@@ -672,7 +672,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Ընդլայնված հիշեցումները բացված են։';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Բացեք ընդլայնված հիշեցումներ և անսահմանափակ կազմակերպում։';
+  String get profile_premium_upgrade_subtitle => 'Հարցրեք Vaultara-ին, ճամփորդության պլաններ, անսահմանափակ գրառումներ և լուսանկարներ։';
 
   @override
   String get profile_manage_cancel_hint => 'Կառավարեք կամ չեղարկեք ցանկացած պահի Google Play-ում։';
@@ -829,7 +829,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get profileTutorialsTitle => 'Ուսուցումներ';
 
   @override
-  String get profileTutorialsSubtitle => 'Դիտել հավելվածի ուսուցումները';
+  String get profileTutorialsSubtitle => 'Կարճ ուղեկցվող շրջայցեր ամեն գործառույթի համար';
 
   @override
   String get tutorialsScreenTitle => 'Ուսուցումներ';
@@ -927,6 +927,9 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Ժամանակագիծը ցույց է տալիս, թե երբ են լրանում ձեր գրառումների ժամկետները տարվա ընթացքում՝ սլաքներով տարիների միջև անցնելու հնարավորությամբ։';
+
+  @override
+  String get tutorialInsightsCosts => 'Ավելացրեք յուրաքանչյուր թարմացման արժեքը, և Vaultara-ն կհաշվի, թե ինչքան եք ծախսում ամեն տարի և որ ամիսներն են ամենաթանկը։';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Բրիտանական անձնագիր';
@@ -7722,6 +7725,9 @@ class AppLocalizationsHy extends AppLocalizations {
   String get tutorialsPaidBadge => 'Վճարովի պլաններ';
 
   @override
+  String get tutorialsInYourPlan => 'Ձեր պլանում';
+
+  @override
   String get tutorialsPaidNote => 'Սա կարող եք դիտել ցանկացած պլանով։ Գործառույթն ինքնին պահանջում է վճարովի պլան։';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get tourHome4Title => 'Օգնություն մեկ հպումով';
 
   @override
-  String get tourHome4Body => 'Կայծի կոճակը բացում է «Հարցրեք Vaultara-ին»-ը։ Ձեր լուսանկարը բացում է պրոֆիլը, կարգավորումները և ուղեցույցները։';
+  String get tourHome4Body => 'Կայծի կոճակը բացում է «Հարցրեք Vaultara-ին»-ը։ Կողքի պրոֆիլի կոճակը բացում է պրոֆիլը, կարգավորումները և ուղեցույցները։';
 
   @override
   String get tourRenew1Title => 'Հիշեցում է գալիս';
@@ -7947,6 +7953,11 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Բացեք գրառումը և կիսվեք հղումով, որը ցույց է տալիս միայն այդ գրառումը, ուրիշ ոչինչ։';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Ցանկացած գրառման վրա հպեք ⋮ և ընտրեք $action։ Հղումը ցույց է տալիս միայն այդ գրառումը, ուրիշ ոչինչ։';
+  }
 
   @override
   String get tourShare2Title => 'Ապացույցների փաթեթ';

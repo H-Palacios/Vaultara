@@ -672,7 +672,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get profile_premium_active_subtitle => 'उन्नत रिमाइन्डरहरू अनलक भएका छन्।';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'उन्नत रिमाइन्डर र असीमित संगठन अनलक गर्नुहोस्।';
+  String get profile_premium_upgrade_subtitle => 'Vaultara लाई सोध्नुहोस्, यात्रा योजना, असीमित रेकर्ड र फोटो।';
 
   @override
   String get profile_manage_cancel_hint => 'Google Play मा जुनसुकै बेला व्यवस्थापन वा रद्द गर्नुहोस्।';
@@ -829,7 +829,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get profileTutorialsTitle => 'ट्युटोरियलहरू';
 
   @override
-  String get profileTutorialsSubtitle => 'एप ट्युटोरियलहरू ब्राउज गर्नुहोस्';
+  String get profileTutorialsSubtitle => 'हरेक सुविधाको छोटो निर्देशित भ्रमण';
 
   @override
   String get tutorialsScreenTitle => 'ट्युटोरियलहरू';
@@ -927,6 +927,9 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'टाइमलाइनले तपाईंको रेकर्डहरू वर्षभरि कहिले समाप्त हुन्छन् भनेर देखाउँछ, वर्षहरू बीच स्विच गर्न बाणहरू सहित।';
+
+  @override
+  String get tutorialInsightsCosts => 'हरेक नवीकरणको लागत थप्नुहोस्, Vaultara ले हरेक वर्षको तपाईंको खर्च र सबैभन्दा महँगा महिना जोड्छ।';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'बेलायती राहदानी';
@@ -7722,6 +7725,9 @@ class AppLocalizationsNe extends AppLocalizations {
   String get tutorialsPaidBadge => 'सशुल्क योजना';
 
   @override
+  String get tutorialsInYourPlan => 'तपाईंको योजनामा';
+
+  @override
   String get tutorialsPaidNote => 'तपाईं यो जुनसुकै योजनामा हेर्न सक्नुहुन्छ। सुविधाका लागि सशुल्क योजना चाहिन्छ।';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get tourHome4Title => 'एक ट्यापमा मद्दत';
 
   @override
-  String get tourHome4Body => 'स्पार्कल बटनले «Vaultara लाई सोध्नुहोस्» खोल्छ। तपाईंको फोटोले प्रोफाइल, सेटिङ र ट्युटोरियल खोल्छ।';
+  String get tourHome4Body => 'स्पार्कल बटनले «Vaultara लाई सोध्नुहोस्» खोल्छ। यसको छेउको प्रोफाइल बटनले प्रोफाइल, सेटिङ र ट्युटोरियल खोल्छ।';
 
   @override
   String get tourRenew1Title => 'रिमाइन्डर आउँछ';
@@ -7947,6 +7953,11 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'रेकर्ड खोल्नुहोस् र त्यही रेकर्ड मात्र देखाउने लिंक सेयर गर्नुहोस्, अरू केही होइन।';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'कुनै पनि रेकर्डमा ⋮ ट्याप गर्नुहोस् र $action छान्नुहोस्। लिङ्कले त्यो रेकर्ड मात्र देखाउँछ, अरू केही होइन।';
+  }
 
   @override
   String get tourShare2Title => 'प्रमाण प्याक';

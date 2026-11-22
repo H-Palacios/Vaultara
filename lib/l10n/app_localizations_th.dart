@@ -672,7 +672,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get profile_premium_active_subtitle => 'ปลดล็อกการแจ้งเตือนขั้นสูงแล้ว';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'ปลดล็อกการแจ้งเตือนขั้นสูงและการจัดการแบบไม่จำกัด';
+  String get profile_premium_upgrade_subtitle => 'ถาม Vaultara แผนการเดินทาง บันทึกและรูปภาพไม่จำกัด';
 
   @override
   String get profile_manage_cancel_hint => 'จัดการหรือยกเลิกได้ตลอดเวลาผ่าน Google Play';
@@ -823,7 +823,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get profileTutorialsTitle => 'บทเรียน';
 
   @override
-  String get profileTutorialsSubtitle => 'เรียกดูบทเรียนของแอป';
+  String get profileTutorialsSubtitle => 'ทัวร์แนะนำสั้น ๆ ของทุกฟีเจอร์';
 
   @override
   String get tutorialsScreenTitle => 'บทเรียน';
@@ -920,6 +920,9 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'ไทม์ไลน์แสดงเมื่อรายการของคุณหมดอายุตลอดทั้งปี พร้อมลูกศรเพื่อสลับระหว่างปี';
+
+  @override
+  String get tutorialInsightsCosts => 'ใส่ค่าใช้จ่ายของการต่ออายุแต่ละครั้ง แล้ว Vaultara จะรวมยอดที่คุณจ่ายในแต่ละปี และบอกว่าเดือนไหนแพงที่สุด';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'หนังสือเดินทางอังกฤษ';
@@ -7653,6 +7656,9 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tutorialsPaidBadge => 'แพ็กเกจแบบชำระเงิน';
 
   @override
+  String get tutorialsInYourPlan => 'อยู่ในแพ็กเกจของคุณ';
+
+  @override
   String get tutorialsPaidNote => 'คุณดูสิ่งนี้ได้ในทุกแพ็กเกจ ตัวฟีเจอร์ต้องใช้แพ็กเกจแบบชำระเงิน';
 
   @override
@@ -7733,7 +7739,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tourHome4Title => 'ความช่วยเหลือในแตะเดียว';
 
   @override
-  String get tourHome4Body => 'ปุ่มประกายเปิด «ถาม Vaultara» รูปของคุณเปิดโปรไฟล์ การตั้งค่า และบทแนะนำ';
+  String get tourHome4Body => 'ปุ่มประกายเปิด «ถาม Vaultara» ส่วนปุ่มโปรไฟล์ที่อยู่ข้างกันเปิดโปรไฟล์ การตั้งค่า และบทแนะนำ';
 
   @override
   String get tourRenew1Title => 'มีการแจ้งเตือน';
@@ -7878,6 +7884,11 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'เปิดรายการแล้วแชร์ลิงก์ที่แสดงเฉพาะรายการนั้น ไม่มีอย่างอื่น';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'ในบันทึกใดก็ได้ แตะ ⋮ แล้วเลือก $action ลิงก์จะแสดงเฉพาะบันทึกนั้น ไม่มีอย่างอื่น';
+  }
 
   @override
   String get tourShare2Title => 'ชุดเอกสารยืนยัน';

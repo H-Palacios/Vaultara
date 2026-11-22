@@ -676,7 +676,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Pokročilé připomínky jsou odemčeny.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Odemkněte pokročilé připomínky a neomezenou organizaci.';
+  String get profile_premium_upgrade_subtitle => 'Zeptat se aplikace Vaultara, plány cest, neomezené záznamy a fotky.';
 
   @override
   String get profile_manage_cancel_hint => 'Spravujte nebo zrušte kdykoli na Google Play.';
@@ -834,7 +834,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get profileTutorialsTitle => 'Návody';
 
   @override
-  String get profileTutorialsSubtitle => 'Procházet Návody k Aplikaci';
+  String get profileTutorialsSubtitle => 'Krátké průvodce každou funkcí';
 
   @override
   String get tutorialsScreenTitle => 'Návody';
@@ -934,6 +934,9 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Časová osa ukazuje, kdy vaše záznamy během roku vyprší, se šipkami pro přepínání mezi roky.';
+
+  @override
+  String get tutorialInsightsCosts => 'Přidejte, kolik stojí každé obnovení, a Vaultara sečte, kolik každý rok utratíte a které měsíce jsou nejdražší.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Britský Pas';
@@ -7857,6 +7860,9 @@ class AppLocalizationsCs extends AppLocalizations {
   String get tutorialsPaidBadge => 'Placené tarify';
 
   @override
+  String get tutorialsInYourPlan => 'Ve vašem plánu';
+
+  @override
   String get tutorialsPaidNote => 'Prohlédnout si to můžete s jakýmkoli tarifem. Samotná funkce vyžaduje placený tarif.';
 
   @override
@@ -7937,7 +7943,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get tourHome4Title => 'Pomoc jedním klepnutím';
 
   @override
-  String get tourHome4Body => 'Tlačítko s jiskrou otevře „Zeptat se aplikace Vaultara“. Vaše fotka otevře profil, nastavení a návody.';
+  String get tourHome4Body => 'Tlačítko s jiskrou otevře „Zeptat se aplikace Vaultara“. Tlačítko profilu vedle něj otevře profil, nastavení a návody.';
 
   @override
   String get tourRenew1Title => 'Přijde připomínka';
@@ -8082,6 +8088,11 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Otevřete záznam a sdílejte odkaz, který ukazuje jen tento záznam, nic víc.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'U libovolného záznamu klepněte na ⋮ a zvolte $action. Odkaz ukáže jen tento záznam, nic jiného.';
+  }
 
   @override
   String get tourShare2Title => 'Balíček dokladů';

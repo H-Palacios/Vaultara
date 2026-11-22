@@ -673,7 +673,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Напредни подсетници су откључани.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Откључајте напредне подсетнике и неограничену организацију.';
+  String get profile_premium_upgrade_subtitle => 'Питајте Vaultara, планови путовања, неограничени записи и фотографије.';
 
   @override
   String get profile_manage_cancel_hint => 'Управљајте или откажите у било ком тренутку преко Google Play-а.';
@@ -831,7 +831,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get profileTutorialsTitle => 'Водичи';
 
   @override
-  String get profileTutorialsSubtitle => 'Прегледајте водиче за апликацију';
+  String get profileTutorialsSubtitle => 'Кратки вођени обиласци сваке функције';
 
   @override
   String get tutorialsScreenTitle => 'Водичи';
@@ -930,6 +930,9 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Временска линија приказује када ваши записи истичу током године, са стрелицама за пребацивање између година.';
+
+  @override
+  String get tutorialInsightsCosts => 'Додајте колико кошта свака обнова и Vaultara сабира колико трошите сваке године и који су месеци најскупљи.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Британски Пасош';
@@ -7792,6 +7795,9 @@ class AppLocalizationsSr extends AppLocalizations {
   String get tutorialsPaidBadge => 'Плаћени пакети';
 
   @override
+  String get tutorialsInYourPlan => 'У вашем плану';
+
+  @override
   String get tutorialsPaidNote => 'Ово можете погледати са било којим пакетом. За саму функцију потребан је плаћени пакет.';
 
   @override
@@ -7872,7 +7878,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get tourHome4Title => 'Помоћ једним додиром';
 
   @override
-  String get tourHome4Body => 'Дугме са искром отвара „Питајте Vaultara”. Ваша фотографија отвара профил, подешавања и водиче.';
+  String get tourHome4Body => 'Дугме са искром отвара „Питајте Vaultara”. Дугме профила поред њега отвара профил, подешавања и водиче.';
 
   @override
   String get tourRenew1Title => 'Стиже подсетник';
@@ -8017,6 +8023,11 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Отворите запис и поделите линк који приказује само тај запис, ништа друго.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'На било ком запису додирните ⋮ и изаберите $action. Линк приказује само тај запис, ништа друго.';
+  }
 
   @override
   String get tourShare2Title => 'Пакет доказа';
@@ -10476,7 +10487,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get profile_premium_active_subtitle => 'Напредни подсетници су откључани.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Откључајте напредне подсетнике и неограничену организацију.';
+  String get profile_premium_upgrade_subtitle => 'Питајте Vaultara, планови путовања, неограничени записи и фотографије.';
 
   @override
   String get profile_manage_cancel_hint => 'Управљајте или откажите у било ком тренутку преко Google Play-а.';
@@ -10634,7 +10645,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get profileTutorialsTitle => 'Водичи';
 
   @override
-  String get profileTutorialsSubtitle => 'Прегледајте водиче за апликацију';
+  String get profileTutorialsSubtitle => 'Кратки вођени обиласци сваке функције';
 
   @override
   String get tutorialsScreenTitle => 'Водичи';
@@ -10733,6 +10744,9 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get tutorialInsightsTimeline => 'Временска линија приказује када ваши записи истичу током године, са стрелицама за пребацивање између година.';
+
+  @override
+  String get tutorialInsightsCosts => 'Додајте колико кошта свака обнова и Vaultara сабира колико трошите сваке године и који су месеци најскупљи.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Британски Пасош';
@@ -17595,6 +17609,9 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get tutorialsPaidBadge => 'Плаћени пакети';
 
   @override
+  String get tutorialsInYourPlan => 'У вашем плану';
+
+  @override
   String get tutorialsPaidNote => 'Ово можете погледати са било којим пакетом. За саму функцију потребан је плаћени пакет.';
 
   @override
@@ -17675,7 +17692,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get tourHome4Title => 'Помоћ једним додиром';
 
   @override
-  String get tourHome4Body => 'Дугме са искром отвара „Питајте Vaultara”. Ваша фотографија отвара профил, подешавања и водиче.';
+  String get tourHome4Body => 'Дугме са искром отвара „Питајте Vaultara”. Дугме профила поред њега отвара профил, подешавања и водиче.';
 
   @override
   String get tourRenew1Title => 'Стиже подсетник';
@@ -17820,6 +17837,11 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get tourShare1Body => 'Отворите запис и поделите линк који приказује само тај запис, ништа друго.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'На било ком запису додирните ⋮ и изаберите $action. Линк приказује само тај запис, ништа друго.';
+  }
 
   @override
   String get tourShare2Title => 'Пакет доказа';
@@ -20279,7 +20301,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get profile_premium_active_subtitle => 'Napredni podsetnici su otključani.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Otključajte napredne podsetnike i neograničenu organizaciju.';
+  String get profile_premium_upgrade_subtitle => 'Pitaj Vaultaru, planovi putovanja, neograničeni zapisi i fotografije.';
 
   @override
   String get profile_manage_cancel_hint => 'Upravljajte ili otkažite u bilo kom trenutku preko Google Play-a.';
@@ -20437,7 +20459,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get profileTutorialsTitle => 'Vodiči';
 
   @override
-  String get profileTutorialsSubtitle => 'Pregledajte vodiče za aplikaciju';
+  String get profileTutorialsSubtitle => 'Kratki vođeni obilasci svake funkcije';
 
   @override
   String get tutorialsScreenTitle => 'Vodiči';
@@ -20536,6 +20558,9 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get tutorialInsightsTimeline => 'Vremenska linija prikazuje kada vaši zapisi ističu tokom godine, sa strelicama za prebacivanje između godina.';
+
+  @override
+  String get tutorialInsightsCosts => 'Dodajte koliko košta svaka obnova i Vaultara sabira koliko trošite svake godine i koji su meseci najskuplji.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Britanski Pasoš';
@@ -27394,6 +27419,9 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get tutorialsPaidBadge => 'Plaćeni paketi';
 
   @override
+  String get tutorialsInYourPlan => 'U vašem planu';
+
+  @override
   String get tutorialsPaidNote => 'Ovo možete pogledati sa bilo kojim paketom. Za samu funkciju potreban je plaćeni paket.';
 
   @override
@@ -27474,7 +27502,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get tourHome4Title => 'Pomoć jednim dodirom';
 
   @override
-  String get tourHome4Body => 'Dugme sa iskrom otvara „Pitaj Vaultaru”. Vaša fotografija otvara profil, podešavanja i vodiče.';
+  String get tourHome4Body => 'Dugme sa iskrom otvara „Pitaj Vaultaru”. Dugme profila pored njega otvara profil, podešavanja i vodiče.';
 
   @override
   String get tourRenew1Title => 'Stiže podsetnik';
@@ -27619,6 +27647,11 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get tourShare1Body => 'Otvorite zapis i podelite link koji prikazuje samo taj zapis, ništa drugo.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Na bilo kom zapisu dodirnite ⋮ i izaberite $action. Link prikazuje samo taj zapis, ništa drugo.';
+  }
 
   @override
   String get tourShare2Title => 'Paket dokaza';

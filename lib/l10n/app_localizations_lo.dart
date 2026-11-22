@@ -672,7 +672,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get profile_premium_active_subtitle => 'ເປີດໃຊ້ການເຕືອນຂັ້ນສູງແລ້ວ';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'ເປີດການເຕືອນຂັ້ນສູງ ແລະ ການຈັດການບໍ່ຈໍາກັດ';
+  String get profile_premium_upgrade_subtitle => 'ຖາມ Vaultara, ແຜນການເດີນທາງ, ບັນທຶກ ແລະ ຮູບບໍ່ຈຳກັດ.';
 
   @override
   String get profile_manage_cancel_hint => 'ຈັດການ ຫຼື ຍົກເລີກໄດ້ທຸກເວລາໃນ Google Play';
@@ -829,7 +829,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get profileTutorialsTitle => 'ບົດຮຽນ';
 
   @override
-  String get profileTutorialsSubtitle => 'ເບິ່ງບົດຮຽນຂອງແອັບ';
+  String get profileTutorialsSubtitle => 'ການນຳທ່ຽວແບບສັ້ນໆສຳລັບທຸກຄຸນສົມບັດ';
 
   @override
   String get tutorialsScreenTitle => 'ບົດຮຽນ';
@@ -926,6 +926,9 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'ໄທມ໌ໄລນ໌ສະແດງໃຫ້ເຫັນເມື່ອບັນທຶກຂອງທ່ານໝົດອາຍຸໃນຕະຫຼອດປີ, ພ້ອມກັບລູກສອນເພື່ອສະຫຼັບລະຫວ່າງປີ.';
+
+  @override
+  String get tutorialInsightsCosts => 'ເພີ່ມລາຄາຂອງການຕໍ່ອາຍຸແຕ່ລະຄັ້ງ ແລ້ວ Vaultara ຈະລວມລາຍຈ່າຍຂອງທ່ານໃນແຕ່ລະປີ ແລະ ເດືອນທີ່ແພງທີ່ສຸດ.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'ໜັງສືເດີນທາງອັງກິດ';
@@ -7665,6 +7668,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String get tutorialsPaidBadge => 'ແພັກເກດແບບເສຍເງິນ';
 
   @override
+  String get tutorialsInYourPlan => 'ຢູ່ໃນແຜນຂອງທ່ານ';
+
+  @override
   String get tutorialsPaidNote => 'ທ່ານເບິ່ງສິ່ງນີ້ໄດ້ທຸກແພັກເກດ. ຕົວຄຸນສົມບັດຕ້ອງໃຊ້ແພັກເກດແບບເສຍເງິນ.';
 
   @override
@@ -7745,7 +7751,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get tourHome4Title => 'ຊ່ວຍເຫຼືອໃນແຕະດຽວ';
 
   @override
-  String get tourHome4Body => 'ປຸ່ມປະກາຍເປີດ «ຖາມ Vaultara». ຮູບຂອງທ່ານເປີດໂປຣໄຟລ໌, ການຕັ້ງຄ່າ ແລະ ບົດແນະນຳ.';
+  String get tourHome4Body => 'ປຸ່ມປະກາຍເປີດ «ຖາມ Vaultara». ປຸ່ມໂປຣໄຟລ໌ທີ່ຢູ່ຂ້າງມັນເປີດໂປຣໄຟລ໌, ການຕັ້ງຄ່າ ແລະ ບົດແນະນຳ.';
 
   @override
   String get tourRenew1Title => 'ມີການແຈ້ງເຕືອນ';
@@ -7890,6 +7896,11 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'ເປີດລາຍການ ແລ້ວແບ່ງປັນລິ້ງທີ່ສະແດງສະເພາະລາຍການນັ້ນ, ບໍ່ມີຫຍັງອື່ນ.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'ໃນບັນທຶກໃດກໍໄດ້, ແຕະ ⋮ ແລ້ວເລືອກ $action. ລິ້ງຈະສະແດງແຕ່ບັນທຶກນັ້ນເທົ່ານັ້ນ, ບໍ່ມີອັນອື່ນ.';
+  }
 
   @override
   String get tourShare2Title => 'ຊຸດຫຼັກຖານ';

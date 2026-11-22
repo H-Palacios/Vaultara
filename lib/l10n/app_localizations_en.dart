@@ -672,7 +672,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Advanced reminders unlocked.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Unlock advanced reminders and unlimited organisation.';
+  String get profile_premium_upgrade_subtitle => 'Ask Vaultara, travel plans, unlimited records and photos.';
 
   @override
   String get profile_manage_cancel_hint => 'Manage or cancel anytime in Google Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get profileTutorialsTitle => 'Tutorials';
 
   @override
-  String get profileTutorialsSubtitle => 'Browse App Tutorials';
+  String get profileTutorialsSubtitle => 'Short guided tours of every feature';
 
   @override
   String get tutorialsScreenTitle => 'Tutorials';
@@ -927,6 +927,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'The timeline shows when your records expire across the year, with arrows to switch between years.';
+
+  @override
+  String get tutorialInsightsCosts => 'Add what each renewal costs and Vaultara adds up what you spend each year, and which months cost the most.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'British Passport';
@@ -7747,6 +7750,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tutorialsPaidBadge => 'Paid plans';
 
   @override
+  String get tutorialsInYourPlan => 'In your plan';
+
+  @override
   String get tutorialsPaidNote => 'You can watch this on any plan. Using the feature needs a paid plan.';
 
   @override
@@ -7827,7 +7833,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tourHome4Title => 'Help is one tap away';
 
   @override
-  String get tourHome4Body => 'The sparkle button opens Ask Vaultara. Your picture opens your profile, settings and tutorials.';
+  String get tourHome4Body => 'The sparkle button opens Ask Vaultara. The profile button next to it opens your profile, settings and tutorials.';
 
   @override
   String get tourRenew1Title => 'A reminder arrives';
@@ -7972,6 +7978,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Open a record and share a link that shows only that record, nothing else.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'On any record, tap ⋮ and choose $action. The link shows only that record, nothing else.';
+  }
 
   @override
   String get tourShare2Title => 'Proof pack';

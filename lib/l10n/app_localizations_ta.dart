@@ -672,7 +672,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get profile_premium_active_subtitle => 'மேம்பட்ட நினைவூட்டல்கள் திறக்கப்பட்டுள்ளன.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'மேம்பட்ட நினைவூட்டல்கள் மற்றும் வரம்பற்ற அமைப்பை திறக்கவும்.';
+  String get profile_premium_upgrade_subtitle => 'Vaultara-விடம் கேளுங்கள், பயணத் திட்டங்கள், வரம்பற்ற பதிவுகள் மற்றும் புகைப்படங்கள்.';
 
   @override
   String get profile_manage_cancel_hint => 'Google Play இல் எப்போது வேண்டுமானாலும் நிர்வகிக்க அல்லது ரத்து செய்யலாம்.';
@@ -829,7 +829,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get profileTutorialsTitle => 'பயிற்சிகள்';
 
   @override
-  String get profileTutorialsSubtitle => 'பயன்பாட்டு பயிற்சிகளை உலாவவும்';
+  String get profileTutorialsSubtitle => 'ஒவ்வொரு அம்சத்தின் சிறிய வழிகாட்டும் சுற்றுலாக்கள்';
 
   @override
   String get tutorialsScreenTitle => 'பயிற்சிகள்';
@@ -927,6 +927,9 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'காலவரிசை உங்கள் பதிவுகள் ஆண்டு முழுவதும் எப்போது காலாவதியாகின்றன என்பதைக் காட்டுகிறது, ஆண்டுகளுக்கு இடையில் மாற அம்புக்குறிகளுடன்.';
+
+  @override
+  String get tutorialInsightsCosts => 'ஒவ்வொரு புதுப்பிப்பின் செலவையும் சேர்க்கவும், Vaultara ஒவ்வொரு ஆண்டும் நீங்கள் செலவிடுவதையும் அதிக செலவான மாதங்களையும் கணக்கிடும்.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'பிரிட்டிஷ் பாஸ்போர்ட்';
@@ -7722,6 +7725,9 @@ class AppLocalizationsTa extends AppLocalizations {
   String get tutorialsPaidBadge => 'கட்டணத் திட்டங்கள்';
 
   @override
+  String get tutorialsInYourPlan => 'உங்கள் திட்டத்தில் உள்ளது';
+
+  @override
   String get tutorialsPaidNote => 'எந்தத் திட்டத்திலும் இதைப் பார்க்கலாம். அம்சத்திற்குக் கட்டணத் திட்டம் தேவை.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get tourHome4Title => 'ஒரே தட்டலில் உதவி';
 
   @override
-  String get tourHome4Body => 'மின்னல் பொத்தான் «Vaultara-விடம் கேளுங்கள்» ஐத் திறக்கிறது. உங்கள் புகைப்படம் சுயவிவரம், அமைப்புகள் மற்றும் பயிற்சிகளைத் திறக்கிறது.';
+  String get tourHome4Body => 'மின்னல் பொத்தான் «Vaultara-விடம் கேளுங்கள்» ஐத் திறக்கிறது. அதன் அருகிலுள்ள சுயவிவரப் பொத்தான் சுயவிவரம், அமைப்புகள் மற்றும் பயிற்சிகளைத் திறக்கிறது.';
 
   @override
   String get tourRenew1Title => 'நினைவூட்டல் வருகிறது';
@@ -7947,6 +7953,11 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'பதிவைத் திறந்து அந்தப் பதிவை மட்டும் காட்டும் இணைப்பைப் பகிருங்கள், வேறெதுவும் இல்லை.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'எந்தப் பதிவிலும் ⋮ ஐத் தட்டி $action ஐத் தேர்ந்தெடுக்கவும். இணைப்பு அந்தப் பதிவை மட்டுமே காட்டும், வேறு எதையும் அல்ல.';
+  }
 
   @override
   String get tourShare2Title => 'சான்றுத் தொகுப்பு';

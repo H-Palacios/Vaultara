@@ -672,7 +672,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Izikhumbuzo eziphambili zivuliwe.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Vula izikhumbuzo eziphambili kunye nolungelelwaniso olungenamda.';
+  String get profile_premium_upgrade_subtitle => 'Buza iVaultara, izicwangciso zohambo, iirekhodi neefoto ezingenamda.';
 
   @override
   String get profile_manage_cancel_hint => 'Lawula okanye rhoxisa nanini na kuGoogle Play.';
@@ -829,7 +829,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get profileTutorialsTitle => 'Iimfundiso';
 
   @override
-  String get profileTutorialsSubtitle => 'Khangela Iimfundiso Zosetyenziso';
+  String get profileTutorialsSubtitle => 'Ukhenketho olufutshane olukhokelwayo lwento nganye';
 
   @override
   String get tutorialsScreenTitle => 'Iimfundiso';
@@ -927,6 +927,9 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Umgca wexesha ubonisa xa iirekhodi zakho ziphelelwa ngonyaka wonke, kunye neentolo zokutshintsha phakathi kweminyaka.';
+
+  @override
+  String get tutorialInsightsCosts => 'Yongeza ixabiso lohlaziyo ngalunye, kwaye iVaultara idibanisa oko ukuchithayo nyaka ngamnye neenyanga ezibiza kakhulu.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Ipasipoti yase-Bhritane';
@@ -7722,6 +7725,9 @@ class AppLocalizationsXh extends AppLocalizations {
   String get tutorialsPaidBadge => 'Izicwangciso ezihlawulelwayo';
 
   @override
+  String get tutorialsInYourPlan => 'Kwisicwangciso sakho';
+
+  @override
   String get tutorialsPaidNote => 'Ungakubukela oku ngaso nasiphi na isicwangciso. Uphawu ngokwalo lufuna isicwangciso esihlawulelwayo.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get tourHome4Title => 'Uncedo ngokuchukumisa kanye';
 
   @override
-  String get tourHome4Body => 'Iqhosha lentlantsi livula «Buza iVaultara». Ifoto yakho ivula iprofayile, iisetingi nezifundo.';
+  String get tourHome4Body => 'Iqhosha lentlantsi livula «Buza iVaultara». Iqhosha leprofayile elisecaleni kwalo livula iprofayile, iisetingi nezifundo.';
 
   @override
   String get tourRenew1Title => 'Kufika isikhumbuzi';
@@ -7947,6 +7953,11 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Vula irekhodi uze wabelane ngekhonkco elibonisa elo rekhodi kuphela, akukho nto yimbi.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Kuyo nayiphi na irekhodi, cofa ⋮ uze ukhethe $action. Ikhonkco libonisa loo rekhodi kuphela, akukho nto yimbi.';
+  }
 
   @override
   String get tourShare2Title => 'Ipakethe yobungqina';

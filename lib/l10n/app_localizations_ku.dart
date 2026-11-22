@@ -672,7 +672,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Bîrxistinên pêşketî vebûne.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Bîrxistinên pêşketî û rêkxistina bêsînor veke.';
+  String get profile_premium_upgrade_subtitle => 'Ji Vaultara bipirse, planên rêwîtiyê, tomar û wêneyên bêsînor.';
 
   @override
   String get profile_manage_cancel_hint => 'Li Google Play her dem rêve bibe an betal bike.';
@@ -829,7 +829,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get profileTutorialsTitle => 'Rêber';
 
   @override
-  String get profileTutorialsSubtitle => 'Li rêberên sepanê bigere';
+  String get profileTutorialsSubtitle => 'Gerên rêberî yên kurt ji bo her taybetmendiyê';
 
   @override
   String get tutorialsScreenTitle => 'Rêber';
@@ -927,6 +927,9 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Xeta demê nîşan dide ka tomarên te di dirêjahiya salê de kengî bidawî dibin, bi tîran ji bo guhertina di navbera salan de.';
+
+  @override
+  String get tutorialInsightsCosts => 'Lêçûna her nûkirinê lê zêde bike û Vaultara ya ku tu her sal xerc dikî û mehên herî biha hesab dike.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Pasaporta Brîtanî';
@@ -7722,6 +7725,9 @@ class AppLocalizationsKu extends AppLocalizations {
   String get tutorialsPaidBadge => 'Planên bi pere';
 
   @override
+  String get tutorialsInYourPlan => 'Di plana te de';
+
+  @override
   String get tutorialsPaidNote => 'Tu dikarî vê bi her planê temaşe bikî. Taybetmendî bi xwe plana bi pere dixwaze.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get tourHome4Title => 'Alîkarî bi yek destlêdanê';
 
   @override
-  String get tourHome4Body => 'Bişkoka çirûskê «Ji Vaultara bipirse» vedike. Wêneyê te profîl, mîheng û fêrkariyan vedike.';
+  String get tourHome4Body => 'Bişkoka çirûskê «Ji Vaultara bipirse» vedike. Bişkoka profîlê ya li kêleka wê profîl, mîheng û fêrkariyan vedike.';
 
   @override
   String get tourRenew1Title => 'Bîrxistinek tê';
@@ -7947,6 +7953,11 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Tomarekê veke û girêdanekê parve bike ku tenê wê tomarê nîşan dide, tiştekî din na.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Li ser her tomarê ⋮ bitikîne û $action hilbijêre. Girêdan tenê wê tomarê nîşan dide, tiştekî din na.';
+  }
 
   @override
   String get tourShare2Title => 'Pakêta delîlan';

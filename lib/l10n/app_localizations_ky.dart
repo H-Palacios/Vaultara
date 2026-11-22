@@ -672,7 +672,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get profile_premium_active_subtitle => 'Өркүндөтүлгөн эскертүүлөр ачылды.';
 
   @override
-  String get profile_premium_upgrade_subtitle => 'Өркүндөтүлгөн эскертүүлөрдү жана чексиз уюштурууну ачыңыз.';
+  String get profile_premium_upgrade_subtitle => 'Vaultara\'дан сураңыз, саякат пландары, чексиз жазуулар жана сүрөттөр.';
 
   @override
   String get profile_manage_cancel_hint => 'Google Play аркылуу каалаган убакта башкарууга же жокко чыгарууга болот.';
@@ -829,7 +829,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get profileTutorialsTitle => 'Окуу Куралдары';
 
   @override
-  String get profileTutorialsSubtitle => 'Колдонмо Окуу Куралдарын Карап Чыгуу';
+  String get profileTutorialsSubtitle => 'Ар бир мүмкүнчүлүк боюнча кыска жетектелген турлар';
 
   @override
   String get tutorialsScreenTitle => 'Окуу Куралдары';
@@ -927,6 +927,9 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => 'Убакыт шкаласы жазууларыңыздын жыл бою качан бүтөрүн көрсөтөт, жылдардын ортосунда өтүү үчүн жебелер менен.';
+
+  @override
+  String get tutorialInsightsCosts => 'Ар бир жаңыртуунун баасын кошуңуз, Vaultara жыл сайынкы чыгымыңызды жана эң кымбат айларды эсептейт.';
 
   @override
   String get tutorialInsightsSampleRecordTwo => 'Британ Паспорту';
@@ -7722,6 +7725,9 @@ class AppLocalizationsKy extends AppLocalizations {
   String get tutorialsPaidBadge => 'Акы төлөнүүчү пландар';
 
   @override
+  String get tutorialsInYourPlan => 'Планыңызда бар';
+
+  @override
   String get tutorialsPaidNote => 'Муну каалаган план менен көрө аласыз. Функциянын өзү акы төлөнүүчү планды талап кылат.';
 
   @override
@@ -7802,7 +7808,7 @@ class AppLocalizationsKy extends AppLocalizations {
   String get tourHome4Title => 'Бир басуу менен жардам';
 
   @override
-  String get tourHome4Body => 'Учкун баскычы «Vaultara\'дан сураңыз» ачат. Сүрөтүңүз профилди, жөндөөлөрдү жана сабактарды ачат.';
+  String get tourHome4Body => 'Учкун баскычы «Vaultara\'дан сураңыз» ачат. Жанындагы профиль баскычы профилди, жөндөөлөрдү жана сабактарды ачат.';
 
   @override
   String get tourRenew1Title => 'Эскертме келет';
@@ -7947,6 +7953,11 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get tourShare1Body => 'Жазууну ачып, ошол жазууну гана көрсөткөн шилтеме менен бөлүшүңүз, башка эч нерсе жок.';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return 'Каалаган жазуудан ⋮ басып, $action тандаңыз. Шилтеме ошол жазууну гана көрсөтөт, башка эч нерсени эмес.';
+  }
 
   @override
   String get tourShare2Title => 'Далилдер топтому';

@@ -672,7 +672,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get profile_premium_active_subtitle => '高级提醒已解锁。';
 
   @override
-  String get profile_premium_upgrade_subtitle => '解锁高级提醒和无限整理功能。';
+  String get profile_premium_upgrade_subtitle => '询问 Vaultara、旅行计划、无限记录和照片。';
 
   @override
   String get profile_manage_cancel_hint => '可随时在 Google Play 中管理或取消。';
@@ -829,7 +829,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get profileTutorialsTitle => '教程';
 
   @override
-  String get profileTutorialsSubtitle => '浏览应用教程';
+  String get profileTutorialsSubtitle => '每项功能的简短引导教程';
 
   @override
   String get tutorialsScreenTitle => '教程';
@@ -926,6 +926,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get tutorialInsightsTimeline => '时间线显示您的记录在一年中何时到期,并带有切换年份的箭头。';
+
+  @override
+  String get tutorialInsightsCosts => '添加每次续期的费用，Vaultara 会算出你每年的花费，以及哪些月份花费最多。';
 
   @override
   String get tutorialInsightsSampleRecordTwo => '英国护照';
@@ -7665,6 +7668,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tutorialsPaidBadge => '付费方案';
 
   @override
+  String get tutorialsInYourPlan => '已包含在你的方案中';
+
+  @override
   String get tutorialsPaidNote => '任何方案都可以观看。使用该功能需要付费方案。';
 
   @override
@@ -7745,7 +7751,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tourHome4Title => '一键获得帮助';
 
   @override
-  String get tourHome4Body => '闪光按钮会打开“询问 Vaultara”。你的头像会打开个人资料、设置和教程。';
+  String get tourHome4Body => '闪光按钮会打开“询问 Vaultara”。旁边的个人资料按钮会打开个人资料、设置和教程。';
 
   @override
   String get tourRenew1Title => '收到提醒';
@@ -7890,6 +7896,11 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get tourShare1Body => '打开记录并分享只显示该记录的链接，不含其他内容。';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return '在任意记录上点按 ⋮，然后选择“$action”。链接只显示这条记录，其他内容都不会显示。';
+  }
 
   @override
   String get tourShare2Title => '证明材料包';
@@ -10327,7 +10338,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get profile_premium_active_subtitle => '高级提醒已解锁。';
 
   @override
-  String get profile_premium_upgrade_subtitle => '解锁高级提醒和无限整理功能。';
+  String get profile_premium_upgrade_subtitle => '询问 Vaultara、旅行计划、无限记录和照片。';
 
   @override
   String get profile_manage_cancel_hint => '可随时在 Google Play 中管理或取消。';
@@ -10478,7 +10489,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get profileTutorialsTitle => '教程';
 
   @override
-  String get profileTutorialsSubtitle => '浏览应用教程';
+  String get profileTutorialsSubtitle => '每项功能的简短引导教程';
 
   @override
   String get tutorialsScreenTitle => '教程';
@@ -10575,6 +10586,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get tutorialInsightsTimeline => '时间线显示您的记录在一年中何时到期,并带有切换年份的箭头。';
+
+  @override
+  String get tutorialInsightsCosts => '添加每次续期的费用，Vaultara 会算出你每年的花费，以及哪些月份花费最多。';
 
   @override
   String get tutorialInsightsSampleRecordTwo => '英国护照';
@@ -17308,6 +17322,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tutorialsPaidBadge => '付费方案';
 
   @override
+  String get tutorialsInYourPlan => '已包含在你的方案中';
+
+  @override
   String get tutorialsPaidNote => '任何方案都可以观看。使用该功能需要付费方案。';
 
   @override
@@ -17388,7 +17405,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tourHome4Title => '一键获得帮助';
 
   @override
-  String get tourHome4Body => '闪光按钮会打开“询问 Vaultara”。你的头像会打开个人资料、设置和教程。';
+  String get tourHome4Body => '闪光按钮会打开“询问 Vaultara”。旁边的个人资料按钮会打开个人资料、设置和教程。';
 
   @override
   String get tourRenew1Title => '收到提醒';
@@ -17533,6 +17550,11 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get tourShare1Body => '打开记录并分享只显示该记录的链接，不含其他内容。';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return '在任意记录上点按 ⋮，然后选择“$action”。链接只显示这条记录，其他内容都不会显示。';
+  }
 
   @override
   String get tourShare2Title => '证明材料包';
@@ -19970,7 +19992,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get profile_premium_active_subtitle => '進階提醒已解鎖。';
 
   @override
-  String get profile_premium_upgrade_subtitle => '解鎖進階提醒與無限整理功能。';
+  String get profile_premium_upgrade_subtitle => '詢問 Vaultara、旅行計畫、無限紀錄與照片。';
 
   @override
   String get profile_manage_cancel_hint => '可隨時在 Google Play 管理或取消。';
@@ -20121,7 +20143,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get profileTutorialsTitle => '教學';
 
   @override
-  String get profileTutorialsSubtitle => '瀏覽應用程式教學';
+  String get profileTutorialsSubtitle => '每項功能的簡短導覽';
 
   @override
   String get tutorialsScreenTitle => '教學';
@@ -20218,6 +20240,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get tutorialInsightsTimeline => '時間線顯示您的記錄在一年中何時到期,並帶有切換年份的箭頭。';
+
+  @override
+  String get tutorialInsightsCosts => '加入每次續約的費用，Vaultara 會算出你每年的花費，以及哪些月份花費最多。';
 
   @override
   String get tutorialInsightsSampleRecordTwo => '英國護照';
@@ -26951,6 +26976,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tutorialsPaidBadge => '付費方案';
 
   @override
+  String get tutorialsInYourPlan => '已包含在你的方案中';
+
+  @override
   String get tutorialsPaidNote => '任何方案都能觀看。使用此功能需要付費方案。';
 
   @override
@@ -27031,7 +27059,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tourHome4Title => '一鍵取得協助';
 
   @override
-  String get tourHome4Body => '閃光按鈕會開啟「詢問 Vaultara」。你的頭像會開啟個人資料、設定與教學。';
+  String get tourHome4Body => '閃光按鈕會開啟「詢問 Vaultara」。旁邊的個人資料按鈕會開啟個人資料、設定與教學。';
 
   @override
   String get tourRenew1Title => '收到提醒';
@@ -27176,6 +27204,11 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get tourShare1Body => '開啟記錄並分享只顯示該記錄的連結，不含其他內容。';
+
+  @override
+  String tourShare1BodyMenu(String action) {
+    return '在任一紀錄上點按 ⋮，然後選擇「$action」。連結只會顯示這筆紀錄，其他內容都不會顯示。';
+  }
 
   @override
   String get tourShare2Title => '證明資料包';
