@@ -285,7 +285,7 @@ class _ChapterRow extends StatelessWidget {
       child: Material(
         color: current
             ? scheme.primaryContainer.withValues(alpha: 0.5)
-            : scheme.surfaceContainerHighest,
+            : scheme.surface,
         borderRadius: BorderRadius.circular(18),
         child: InkWell(
           borderRadius: BorderRadius.circular(18),
@@ -296,7 +296,9 @@ class _ChapterRow extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 16,
-                  backgroundColor: done ? colour : scheme.surface,
+                  backgroundColor: done
+                      ? colour
+                      : scheme.primary.withValues(alpha: 0.12),
                   child: done
                       ? Icon(
                           Icons.check_rounded,

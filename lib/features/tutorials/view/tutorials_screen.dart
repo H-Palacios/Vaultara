@@ -229,8 +229,9 @@ class _TutorialTile extends StatelessWidget {
     final scheme = Theme.of(context).colorScheme;
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
+      // The same card as the rest of the app, such as Profile and Settings.
       child: Material(
-        color: scheme.surfaceContainerHighest,
+        color: scheme.surface,
         borderRadius: BorderRadius.circular(18),
         child: InkWell(
           borderRadius: BorderRadius.circular(18),
