@@ -237,6 +237,8 @@ class TutorialStepTexts {
         return loc.tutorialAudio;
       case TutorialStep.insightsTimeline:
         return loc.tutorialInsightsTimeline;
+      case TutorialStep.insightsCosts:
+        return loc.tutorialInsightsCosts;
       case TutorialStep.travelReadiness:
         return loc.tutorialTravelReadiness;
       case TutorialStep.travelLocked:
@@ -320,7 +322,7 @@ class TutorialStepTexts {
       case TutorialStep.photosAppLock:
         return loc.tourPhotos4Body;
       case TutorialStep.shareRecord:
-        return loc.tourShare1Body;
+        return loc.tourShare1BodyMenu(loc.recordMenuShareLink);
       case TutorialStep.shareProofPack:
         return loc.tourShare2Body;
       case TutorialStep.shareLinks:

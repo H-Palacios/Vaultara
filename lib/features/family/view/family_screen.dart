@@ -52,7 +52,9 @@ class _FamilyScreenState extends State<FamilyScreen> {
     TutorialController.instance
       ..register(TutorialStep.familyMe, _meKey)
       ..register(TutorialStep.familyAddPerson, _addKey)
-      ..register(TutorialStep.businessTeam, _addKey);
+      ..register(TutorialStep.businessTeam, _addKey)
+      ..register(TutorialStep.businessEmail, _addKey)
+      ..register(TutorialStep.householdWhose, _meKey);
   }
 
   @override
@@ -60,7 +62,9 @@ class _FamilyScreenState extends State<FamilyScreen> {
     TutorialController.instance
       ..unregister(TutorialStep.familyMe, _meKey)
       ..unregister(TutorialStep.familyAddPerson, _addKey)
-      ..unregister(TutorialStep.businessTeam, _addKey);
+      ..unregister(TutorialStep.businessTeam, _addKey)
+      ..unregister(TutorialStep.businessEmail, _addKey)
+      ..unregister(TutorialStep.householdWhose, _meKey);
     super.dispose();
   }
 
@@ -234,7 +238,8 @@ class _FamilyScreenState extends State<FamilyScreen> {
                         ),
                       ),
                       const SizedBox(height: 18),
-                      if (tier == PlanTier.business) const UpdatesReviewSection(),
+                      if (tier == PlanTier.business)
+                        const UpdatesReviewSection(),
                       ListenableBuilder(
                         listenable: NationalityRepository.changes,
                         builder: (context, _) => _PersonRow(
@@ -284,7 +289,8 @@ class _FamilyScreenState extends State<FamilyScreen> {
                         _AddSection(
                           key: _addKey,
                           limit: PeopleRepository.limitFor(tier),
-                          canAdd: people.length < PeopleRepository.limitFor(tier),
+                          canAdd:
+                              people.length < PeopleRepository.limitFor(tier),
                           onAdd: () => _addPerson(tier),
                         ),
                         if (tier == PlanTier.business) ...[

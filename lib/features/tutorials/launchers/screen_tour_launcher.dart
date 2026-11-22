@@ -65,7 +65,12 @@ class ScreenTourLauncher {
           ),
         );
       case TutorialIds.lostWallet:
-        await _push(navigator, group, premium, (_) => const LostWalletScreen());
+        await _push(
+          navigator,
+          group,
+          premium,
+          (_) => const LostWalletScreen(tour: true),
+        );
       case TutorialIds.lifeEvents:
         await _push(navigator, group, premium, (_) => const LifeEventsScreen());
       case TutorialIds.photosSecurity:

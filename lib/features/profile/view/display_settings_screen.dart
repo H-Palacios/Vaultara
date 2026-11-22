@@ -8,6 +8,7 @@ import 'package:vaultara/features/costs/view/cost_field.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 import 'widgets/theme_mode_sheet.dart';
+import 'package:vaultara/core/view/widgets/screen_header.dart';
 
 /// Appearance and currency together, one tile on Profile.
 class DisplaySettingsScreen extends StatefulWidget {
@@ -53,12 +54,13 @@ class _DisplaySettingsScreenState extends State<DisplaySettingsScreen> {
   Widget build(BuildContext context) {
     final t = AppLocalizations.of(context)!;
     return Scaffold(
-      appBar: AppBar(title: Text(t.displayTitle)),
       body: WideCentered(
         child: SafeArea(
           child: ListView(
             padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
             children: [
+              ScreenHeader(title: t.displayTitle),
+              const SizedBox(height: 16),
               SettingsTile(
                 icon: Icons.dark_mode_rounded,
                 title: t.appearanceTitle,

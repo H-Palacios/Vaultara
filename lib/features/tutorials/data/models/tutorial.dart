@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
 
 /// The headings the Tutorials screen groups tutorials under.
 enum TutorialGroup { basics, onTop, travelFamily, emergencies, paid }
@@ -25,9 +26,9 @@ class Tutorial {
   /* How many steps it has, shown as a length on the tile. */
   final int steps;
 
-  /* Whether the feature it shows needs a paid plan. Everyone can still
-  watch it. */
-  final bool paid;
+  /* The lowest plan that includes the feature it shows, or null when the
+  feature is free. Everyone can still watch it. */
+  final PlanTier? plan;
 
   const Tutorial({
     required this.id,
@@ -36,6 +37,6 @@ class Tutorial {
     required this.subtitle,
     this.group = TutorialGroup.basics,
     this.steps = 0,
-    this.paid = false,
+    this.plan,
   });
 }

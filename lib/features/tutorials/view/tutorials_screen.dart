@@ -7,6 +7,7 @@ import 'package:vaultara/features/tutorials/data/models/tutorial.dart';
 import 'package:vaultara/features/tutorials/services/tutorial_progress.dart';
 import 'package:vaultara/features/tutorials/services/tutorials_service.dart';
 import 'package:vaultara/features/tutorials/view/tour_screen.dart';
+import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
 
 /// Every tutorial, grouped, with overall progress and the full tour on top.
 class TutorialsScreen extends StatefulWidget {
@@ -80,8 +81,10 @@ class _TutorialsScreenState extends State<TutorialsScreen> {
                         _TutorialTile(
                           tutorial: tutorial,
                           done: completed.contains(tutorial.id),
-                          onTap: () =>
-                              TutorialsService.playTutorial(context, tutorial.id),
+                          onTap: () => TutorialsService.playTutorial(
+                            context,
+                            tutorial.id,
+                          ),
                         ),
                     ],
                 ],
@@ -212,6 +215,50 @@ class _ProgressCard extends StatelessWidget {
   }
 }
 
+/// The plan a feature needs, by name. When the user's own plan already
+/// includes it, it says so instead, so nobody is pointed at a plan they
+/// already pay for.
+class _PlanChip extends StatelessWidget {
+  final PlanTier plan;
+
+  const _PlanChip({required this.plan});
+
+  String _name(AppLocalizations t) {
+    switch (plan) {
+      case PlanTier.family:
+        return t.familyPlanName;
+      case PlanTier.business:
+        return t.planTabBusiness;
+      case PlanTier.premium:
+      case PlanTier.free:
+        return t.planPremiumName;
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final t = AppLocalizations.of(context)!;
+    final scheme = Theme.of(context).colorScheme;
+    return ValueListenableBuilder<PlanState?>(
+      valueListenable: PlanStore.current,
+      builder: (context, state, _) {
+        final bool included = state?.tier.includes(plan) ?? false;
+        return included
+            ? _Chip(
+                icon: Icons.verified_rounded,
+                text: t.tutorialsInYourPlan,
+                colour: scheme.primary,
+              )
+            : _Chip(
+                icon: Icons.workspace_premium_rounded,
+                text: _name(t),
+                colour: scheme.tertiary,
+              );
+      },
+    );
+  }
+}
+
 class _TutorialTile extends StatelessWidget {
   final Tutorial tutorial;
   final bool done;
@@ -281,12 +328,8 @@ class _TutorialTile extends StatelessWidget {
                               text: t.tutorialsSteps(tutorial.steps),
                               colour: scheme.onSurfaceVariant,
                             ),
-                          if (tutorial.paid)
-                            _Chip(
-                              icon: Icons.workspace_premium_rounded,
-                              text: t.tutorialsPaidBadge,
-                              colour: scheme.tertiary,
-                            ),
+                          if (tutorial.plan case final PlanTier plan)
+                            _PlanChip(plan: plan),
                           if (done)
                             _Chip(
                               icon: Icons.check_circle_rounded,

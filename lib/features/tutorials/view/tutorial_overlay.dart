@@ -88,8 +88,7 @@ class TutorialOverlay extends StatefulWidget {
     bool preferBelow = false,
   }) {
     final double above = target.top - safe.top - 12 - gap;
-    final double below =
-        screen.height - safe.bottom - 12 - target.bottom - gap;
+    final double below = screen.height - safe.bottom - 12 - target.bottom - gap;
     final bool lowOnScreen = target.center.dy > screen.height / 2;
 
     final bool placeBelow;
@@ -162,11 +161,8 @@ class _TutorialOverlayState extends State<TutorialOverlay> {
     });
   }
 
-  String _message(AppLocalizations loc) => TutorialStepTexts.message(
-    loc,
-    widget.step,
-    isPremium: widget.isPremium,
-  );
+  String _message(AppLocalizations loc) =>
+      TutorialStepTexts.message(loc, widget.step, isPremium: widget.isPremium);
 
   /// What read aloud says: the title first, when there is one.
   String _spoken(AppLocalizations loc) {
@@ -184,6 +180,24 @@ class _TutorialOverlayState extends State<TutorialOverlay> {
     final Rect? target = widget.highlightRect;
     final TutorialStep step = widget.step;
 
+    final List<TutorialStep> group = widget.steps.isNotEmpty
+        ? widget.steps
+        : TutorialStepGroups.stepsFor(step);
+    final int index = group.indexOf(step);
+    final bool showProgress = group.length > 1 && index >= 0;
+
+    // The progress sits in the same place on every step: at the top, or at
+    // the bottom only when the highlighted part is right at the top. The
+    // tip keeps clear of it.
+    final double barTop = safe.top + _barMargin;
+    final bool barAtTop =
+        target == null || target.top > barTop + _barHeight + _barMargin;
+    final EdgeInsets clear = !showProgress
+        ? safe
+        : barAtTop
+        ? safe.copyWith(top: safe.top + _barHeight + _barMargin)
+        : safe.copyWith(bottom: safe.bottom + _barHeight + _barMargin);
+
     final bool isFabStep = step == TutorialStep.addRecordFab;
     final bool isSaveStep = step == TutorialStep.addRecordSave;
 
@@ -194,9 +208,6 @@ class _TutorialOverlayState extends State<TutorialOverlay> {
 
     final bool showNext = !isFabStep && !isSaveStep;
 
-    final List<TutorialStep> group = widget.steps.isNotEmpty
-        ? widget.steps
-        : TutorialStepGroups.stepsFor(step);
     final bool isLastStep =
         group.isNotEmpty && group.last == step && !widget.continuesTour;
 
@@ -257,7 +268,8 @@ class _TutorialOverlayState extends State<TutorialOverlay> {
     final Widget positionedMessage;
     if (target == null) {
       positionedMessage = Positioned.fill(
-        child: SafeArea(
+        child: Padding(
+          padding: clear,
           child: Center(
             child: SingleChildScrollView(
               padding: const EdgeInsets.symmetric(horizontal: 32),
@@ -277,7 +289,7 @@ class _TutorialOverlayState extends State<TutorialOverlay> {
       final TipPlacement place = TutorialOverlay.placeTip(
         target: target,
         screen: screenSize,
-        safe: safe,
+        safe: clear,
         preferBelow: preferBelow,
       );
       // A card's padding counts towards the room it may take.
@@ -327,9 +339,23 @@ class _TutorialOverlayState extends State<TutorialOverlay> {
           ),
         ),
         positionedMessage,
+        if (showProgress)
+          Positioned(
+            top: barAtTop ? barTop : null,
+            bottom: barAtTop ? null : safe.bottom + _barMargin,
+            left: 16,
+            right: 16,
+            height: _barHeight,
+            child: IgnorePointer(
+              child: _ProgressBar(index: index, count: group.length),
+            ),
+          ),
       ],
     );
   }
+
+  static const double _barHeight = 32.0;
+  static const double _barMargin = 8.0;
 
   static const EdgeInsets _cardPadding = EdgeInsets.fromLTRB(16, 16, 16, 6);
 
@@ -394,7 +420,6 @@ class _TipContent extends StatelessWidget {
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
-    final int index = group.indexOf(step);
     final String? heading = title;
     final IconData? picture = icon;
     final VoidCallback? goBack = onBack;
@@ -473,20 +498,6 @@ class _TipContent extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        if (group.length > 1 && index >= 0) ...[
-          _ProgressDots(index: index, count: group.length),
-          const SizedBox(height: 6),
-          Text(
-            loc.tutorialStepCount(index + 1, group.length),
-            style: const TextStyle(
-              color: Colors.white70,
-              fontSize: 12,
-              fontWeight: FontWeight.w600,
-              decoration: TextDecoration.none,
-            ),
-          ),
-          const SizedBox(height: 12),
-        ],
         if (showNotification) ...[
           const TutorialNotificationCard(),
           const SizedBox(height: 20),
@@ -511,6 +522,46 @@ class _TipContent extends StatelessWidget {
         const SizedBox(height: _spacingTextToButtons),
         buttons,
       ],
+    );
+  }
+}
+
+/// Where the tutorial is: the dots and "Step 2 of 4" on one line, in a
+/// pill so it reads on any screen behind it.
+class _ProgressBar extends StatelessWidget {
+  final int index;
+  final int count;
+
+  const _ProgressBar({required this.index, required this.count});
+
+  @override
+  Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    return Center(
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 14),
+        decoration: BoxDecoration(
+          color: Colors.black.withValues(alpha: 0.55),
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(color: Colors.white24),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            _ProgressDots(index: index, count: count),
+            const SizedBox(width: 10),
+            Text(
+              loc.tutorialStepCount(index + 1, count),
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 12,
+                fontWeight: FontWeight.w700,
+                decoration: TextDecoration.none,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

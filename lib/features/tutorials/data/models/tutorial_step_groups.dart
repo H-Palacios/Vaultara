@@ -29,6 +29,7 @@ class TutorialStepGroups {
     TutorialStep.insightsSmartCard,
     TutorialStep.insightsSpeaker,
     TutorialStep.insightsTimeline,
+    TutorialStep.insightsCosts,
   ];
 
   static const List<TutorialStep> travelWithTrip = [
@@ -171,12 +172,10 @@ class TutorialStepGroups {
     TutorialStep.photosLockRecord,
     TutorialStep.shareRecord,
     TutorialStep.householdShared,
-    TutorialStep.householdWhose,
     TutorialStep.importScan,
     TutorialStep.importShare,
     TutorialStep.costsAmount,
     TutorialStep.costsPlan,
-    TutorialStep.businessEmail,
     TutorialStep.businessRequest,
   };
 

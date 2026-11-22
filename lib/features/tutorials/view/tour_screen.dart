@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/core/view/widgets/screen_header.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial.dart';
 import 'package:vaultara/features/tutorials/services/tutorial_progress.dart';
@@ -56,57 +57,60 @@ class _TourScreenState extends State<TourScreen> {
     final chapters = _chapters(context);
 
     return Scaffold(
-      body: SafeArea(
-        child: ValueListenableBuilder<Set<String>>(
-          valueListenable: TutorialProgress.completed,
-          builder: (context, done, _) => ValueListenableBuilder<Set<String>>(
-            valueListenable: TutorialProgress.skipped,
-            builder: (context, skipped, _) {
-              final next = _next(chapters, done, skipped);
-              final finished = chapters
-                  .where((c) => done.contains(c.id))
-                  .length;
-              return ListView(
-                padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
-                children: [
-                  ScreenHeader(
-                    title: loc.tutorialsFullTourTitle,
-                    onBack: () => Navigator.of(context).maybePop(),
-                  ),
-                  const SizedBox(height: 16),
-                  _Hero(
-                    finished: finished,
-                    total: chapters.length,
-                    nextTitle: next == null ? null : chapters[next].title,
-                    chapter: next == null ? null : next + 1,
-                    onContinue: next == null
-                        ? null
-                        : () => _play(chapters[next]),
-                    onSkip: next == null
-                        ? null
-                        : () => TutorialProgress.markSkipped(chapters[next].id),
-                    onRestart: next != null
-                        ? null
-                        : () => unawaited(
-                            TutorialProgress.resetTour(
-                              chapters.map((c) => c.id),
-                            ),
-                          ),
-                  ),
-                  const SizedBox(height: 20),
-                  for (var i = 0; i < chapters.length; i++)
-                    _ChapterRow(
-                      number: i + 1,
-                      tutorial: chapters[i],
-                      done: done.contains(chapters[i].id),
-                      skipped: skipped.contains(chapters[i].id),
-                      current: i == next,
-                      onTap: () => _play(chapters[i]),
-                      colour: scheme.primary,
+      body: WideCentered(
+        child: SafeArea(
+          child: ValueListenableBuilder<Set<String>>(
+            valueListenable: TutorialProgress.completed,
+            builder: (context, done, _) => ValueListenableBuilder<Set<String>>(
+              valueListenable: TutorialProgress.skipped,
+              builder: (context, skipped, _) {
+                final next = _next(chapters, done, skipped);
+                final finished = chapters
+                    .where((c) => done.contains(c.id))
+                    .length;
+                return ListView(
+                  padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
+                  children: [
+                    ScreenHeader(
+                      title: loc.tutorialsFullTourTitle,
+                      onBack: () => Navigator.of(context).maybePop(),
                     ),
-                ],
-              );
-            },
+                    const SizedBox(height: 16),
+                    _Hero(
+                      finished: finished,
+                      total: chapters.length,
+                      nextTitle: next == null ? null : chapters[next].title,
+                      chapter: next == null ? null : next + 1,
+                      onContinue: next == null
+                          ? null
+                          : () => _play(chapters[next]),
+                      onSkip: next == null
+                          ? null
+                          : () =>
+                                TutorialProgress.markSkipped(chapters[next].id),
+                      onRestart: next != null
+                          ? null
+                          : () => unawaited(
+                              TutorialProgress.resetTour(
+                                chapters.map((c) => c.id),
+                              ),
+                            ),
+                    ),
+                    const SizedBox(height: 20),
+                    for (var i = 0; i < chapters.length; i++)
+                      _ChapterRow(
+                        number: i + 1,
+                        tutorial: chapters[i],
+                        done: done.contains(chapters[i].id),
+                        skipped: skipped.contains(chapters[i].id),
+                        current: i == next,
+                        onTap: () => _play(chapters[i]),
+                        colour: scheme.primary,
+                      ),
+                  ],
+                );
+              },
+            ),
           ),
         ),
       ),

@@ -55,11 +55,17 @@ class LostWalletScreen extends StatefulWidget {
   final bool startNow;
   final String? variant;
 
+  /// The tutorial: always the start screen, never the user's own plan, so
+  /// the tour points at the same parts for everyone and shows nothing of a
+  /// real loss.
+  final bool tour;
+
   const LostWalletScreen({
     super.key,
     this.planId,
     this.startNow = false,
     this.variant,
+    this.tour = false,
   });
 
   @override
@@ -85,7 +91,7 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
       setState(() => _checkOn = on);
       // Opening the screen is a check-up, so the next one moves on.
       final loc = AppLocalizations.of(context);
-      if (on && loc != null) {
+      if (on && loc != null && !widget.tour) {
         unawaited(LifePlanReminders.setWalletCheck(loc, on: true));
       }
     });
@@ -171,7 +177,9 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
             valueListenable: LifePlanRepository.plans,
             builder: (context, plans, _) {
               final id = widget.planId;
-              final plan = id != null
+              final plan = widget.tour
+                  ? null
+                  : id != null
                   ? LifePlanRepository.byId(id)
                   : _activePlan();
               if (plan != null && plan.event == LifeEvent.lostWallet) {
@@ -180,7 +188,7 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
               final history = plans
                   .where((p) => p.event == LifeEvent.lostWallet && p.isFinished)
                   .toList();
-              return _prep(context, history);
+              return _prep(context, widget.tour ? const <LifePlan>[] : history);
             },
           ),
         ),
@@ -191,15 +199,19 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
   Widget _prep(BuildContext context, List<LifePlan> history) {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
+    // The tutorial shows the screen as it is before anything is set up,
+    // not the user's own cards.
     final carried =
-        RecordRepository.allActive()
-            .where(
-              (r) =>
-                  !r.isDeleted &&
-                  r.id != null &&
-                  KeptIn.carried.contains(r.place),
-            )
-            .toList()
+        widget.tour
+              ? <TrackedItem>[]
+              : RecordRepository.allActive()
+                    .where(
+                      (r) =>
+                          !r.isDeleted &&
+                          r.id != null &&
+                          KeptIn.carried.contains(r.place),
+                    )
+                    .toList()
           ..sort(
             (a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()),
           );
@@ -244,7 +256,10 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
           subtitle: loc.lostWalletCheckupBody,
         ),
         TutorialTarget(
-          steps: const [TutorialStep.walletPrepare, TutorialStep.walletLostNumber],
+          steps: const [
+            TutorialStep.walletPrepare,
+            TutorialStep.walletLostNumber,
+          ],
           child: WalletPanel(
             padding: const EdgeInsets.fromLTRB(16, 14, 8, 8),
             child: Column(
@@ -269,12 +284,15 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
                       colour: scheme.error,
                       text: loc.lostWalletIssueLines(noLine),
                       action: loc.lostWalletAddLine,
-                      onTap: () => showCardsWithoutNumber(context, <TrackedItem>[
-                        for (final r in carried)
-                          if (KeptIn.cardGroups.contains(r.subcategoryName) &&
-                              r.lostLine == null)
-                            r,
-                      ]),
+                      onTap: () =>
+                          showCardsWithoutNumber(context, <TrackedItem>[
+                            for (final r in carried)
+                              if (KeptIn.cardGroups.contains(
+                                    r.subcategoryName,
+                                  ) &&
+                                  r.lostLine == null)
+                                r,
+                          ]),
                     ),
                   if (noPhoto > 0)
                     _Issue(

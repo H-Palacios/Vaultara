@@ -16,6 +16,7 @@ enum TutorialStep {
   insightsSmartCard,
   insightsSpeaker,
   insightsTimeline,
+  insightsCosts,
   travelReadiness,
   travelLocked,
   travelTripCard,

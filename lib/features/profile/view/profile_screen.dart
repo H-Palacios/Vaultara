@@ -213,12 +213,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 _UpgradeStrip(onTap: _openPlans),
               ],
               const SizedBox(height: 20),
-  
+
               _Section(
                 title: t.homeSectionTitle,
                 children: const [HomeCountryTiles()],
               ),
-  
+
               _Section(
                 title: t.profileSectionAccountSecurity,
                 children: [
@@ -242,7 +242,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   ),
                 ],
               ),
-  
+
               _Section(
                 title: t.profileSectionPeople,
                 children: [
@@ -260,7 +260,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   const InviteFriendsTile(),
                 ],
               ),
-  
+
               _Section(
                 title: t.profileSectionYourData,
                 children: [
@@ -280,12 +280,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     icon: Icons.ios_share_rounded,
                     title: t.exportCalendarScreenTitle,
                     subtitle: t.exportCalendarTileSubtitle,
-                    onTap: () =>
-                        _push(ExportCalendarScreen(isPremium: widget.isPremium)),
+                    onTap: () => _push(
+                      ExportCalendarScreen(isPremium: widget.isPremium),
+                    ),
                   ),
                 ],
               ),
-  
+
               _Section(
                 title: t.smartToolsSection,
                 children: [
@@ -339,7 +340,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   ),
                 ],
               ),
-  
+
               _Section(
                 title: t.profileSectionPreferences,
                 children: [
@@ -358,7 +359,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   ),
                 ],
               ),
-  
+
               _Section(
                 title: t.profileHelpSectionTitle,
                 children: [
@@ -370,7 +371,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   ),
                 ],
               ),
-  
+
               // Paid plans keep the subscription card, with Manage subscription.
               if (widget.isPremium) ...[
                 ValueListenableBuilder<String?>(
@@ -460,12 +461,9 @@ class _Highlighted extends StatelessWidget {
     final scheme = Theme.of(context).colorScheme;
     return DecoratedBox(
       decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            scheme.primary.withValues(alpha: 0.10),
-            scheme.primary.withValues(alpha: 0.02),
-          ],
-        ),
+        // A flat tint: a fade across the row turned into a faint stripe on
+        // a wide tablet.
+        color: scheme.primary.withValues(alpha: 0.07),
       ),
       child: Theme(
         data: Theme.of(

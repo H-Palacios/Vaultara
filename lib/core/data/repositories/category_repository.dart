@@ -23,6 +23,13 @@ class CategoryRepository {
 
   static bool _hasLoadedForUser = false;
 
+  /// The phone's copy has been read, whether or not it held anything.
+  static bool _phoneCopyRead = false;
+
+  /// True once the pins are known (from the phone or the server), so Home
+  /// does not show the "pin a category" hint before they arrive.
+  static bool get pinsKnown => _hasLoadedForUser || _phoneCopyRead;
+
   static const int freeCategoryLimit = 3;
 
   static int _createdCategoriesCount = 0;
@@ -312,12 +319,14 @@ class CategoryRepository {
       if (_hasLoadedForUser || _auth.currentUser?.uid != user.uid) return;
       final snap = results[0]! as QuerySnapshot<Map<String, dynamic>>;
       final pinnedDoc = results[1]! as DocumentSnapshot<Map<String, dynamic>>;
-      if (snap.docs.isEmpty) return;
+      final pins = pinnedDoc.data()?['pins'];
+      // Pins of built-in categories need no custom category, so a copy
+      // with pins but no categories still fills Home at once.
+      if (snap.docs.isEmpty && (pins is! List || pins.isEmpty)) return;
       final categories = <CategoryItem>[
         for (final doc in snap.docs)
           if (doc.data()['isDeleted'] != true) _categoryFromDoc(doc),
       ];
-      final pins = pinnedDoc.data()?['pins'];
       _categories
         ..clear()
         ..addAll(categories);
@@ -330,6 +339,11 @@ class CategoryRepository {
       revision.value++;
     } catch (_) {
       // No copy on the phone yet: the normal load fills the categories.
+    } finally {
+      if (!_phoneCopyRead && _auth.currentUser?.uid == user.uid) {
+        _phoneCopyRead = true;
+        revision.value++;
+      }
     }
   }
 
@@ -534,6 +548,7 @@ class CategoryRepository {
     _categories.clear();
     _pins.clear();
     _hasLoadedForUser = false;
+    _phoneCopyRead = false;
     _createdCategoriesCount = 0;
     revision.value++;
   }

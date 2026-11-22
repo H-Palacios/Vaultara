@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/analytics/analytics_service.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial_ids.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial_step_groups.dart';
@@ -122,7 +123,7 @@ class TutorialsService {
         subtitle: t.tutorialsTravelSubtitle,
         group: TutorialGroup.travelFamily,
         steps: TutorialStepGroups.travelWithTrip.length,
-        paid: true,
+        plan: PlanTier.premium,
       ),
       Tutorial(
         id: idFamily,
@@ -131,6 +132,7 @@ class TutorialsService {
         subtitle: t.tutorialsFamilySubtitle,
         group: TutorialGroup.travelFamily,
         steps: TutorialStepGroups.family.length,
+        plan: PlanTier.family,
       ),
       Tutorial(
         id: TutorialIds.household,
@@ -139,7 +141,7 @@ class TutorialsService {
         subtitle: t.tutorialsSubHousehold,
         group: TutorialGroup.travelFamily,
         steps: TutorialStepGroups.household.length,
-        paid: true,
+        plan: PlanTier.family,
       ),
       Tutorial(
         id: TutorialIds.lostWallet,
@@ -172,7 +174,7 @@ class TutorialsService {
         subtitle: t.tutorialsSubAsk,
         group: TutorialGroup.paid,
         steps: TutorialStepGroups.askVaultara.length,
-        paid: true,
+        plan: PlanTier.premium,
       ),
       Tutorial(
         id: TutorialIds.business,
@@ -181,7 +183,7 @@ class TutorialsService {
         subtitle: t.tutorialsSubBusiness,
         group: TutorialGroup.paid,
         steps: TutorialStepGroups.business.length,
-        paid: true,
+        plan: PlanTier.business,
       ),
     ];
   }

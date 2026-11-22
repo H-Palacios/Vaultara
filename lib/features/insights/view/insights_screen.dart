@@ -44,6 +44,7 @@ import 'package:vaultara/features/guides/view/renewal_guide_sheet.dart';
 import 'package:vaultara/features/travel/data/trip_repository.dart';
 import 'package:vaultara/features/travel/view/trip_detail_screen.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
+import 'package:vaultara/features/tutorials/services/insights_tutorial_sample_accessor.dart';
 
 class InsightsScreen extends StatefulWidget {
   final bool isTutorialMode;
@@ -75,6 +76,7 @@ class _InsightsScreenState extends State<InsightsScreen>
   final GlobalKey _smartCardKey = GlobalKey();
   final GlobalKey _speakerKey = GlobalKey();
   final GlobalKey _timelineKey = GlobalKey();
+  final GlobalKey _costsKey = GlobalKey();
 
   InsightsScreenData _tutorialData = InsightsScreenData.empty();
   bool _tutorialDataReady = false;
@@ -312,14 +314,16 @@ class _InsightsScreenState extends State<InsightsScreen>
     TutorialController.instance
       ..register(TutorialStep.insightsSmartCard, _smartCardKey)
       ..register(TutorialStep.insightsSpeaker, _speakerKey)
-      ..register(TutorialStep.insightsTimeline, _timelineKey);
+      ..register(TutorialStep.insightsTimeline, _timelineKey)
+      ..register(TutorialStep.insightsCosts, _costsKey);
   }
 
   void _unregisterTutorialKeys() {
     TutorialController.instance
       ..unregister(TutorialStep.insightsSmartCard)
       ..unregister(TutorialStep.insightsSpeaker)
-      ..unregister(TutorialStep.insightsTimeline);
+      ..unregister(TutorialStep.insightsTimeline)
+      ..unregister(TutorialStep.insightsCosts);
   }
 
   void _loadTutorialData() {
@@ -497,7 +501,21 @@ class _InsightsScreenState extends State<InsightsScreen>
     );
 
     final costs = <Widget>[
-      if (!widget.isTutorialMode) ...[
+      // The tutorial shows the card with made-up costs, so the step about
+      // costs points at the real card without any of the user's records.
+      if (widget.isTutorialMode) ...[
+        Container(
+          key: _costsKey,
+          // Read only: the currency chip would change the user's setting.
+          child: IgnorePointer(
+            child: RenewalCostsCard(
+              isPremium: true,
+              records: InsightsTutorialSampleAccessor.costRecords(context),
+            ),
+          ),
+        ),
+        const SizedBox(height: 16),
+      ] else ...[
         PremiumBuilder(
           initial: widget.isPremium,
           builder: (context, isPremium) => RenewalCostsCard(
@@ -512,6 +530,11 @@ class _InsightsScreenState extends State<InsightsScreen>
 
     final list = ListView(
       physics: const AlwaysScrollableScrollPhysics(),
+      // Builds the parts below the screen too, so a tutorial step can
+      // scroll to the costs card and point at it.
+      // Kept until the Flutter version in use exports ScrollCacheExtent.
+      // ignore: deprecated_member_use
+      cacheExtent: TutorialController.listCacheExtent,
       padding: wide
           ? const EdgeInsets.fromLTRB(24, 16, 24, 16)
           : const EdgeInsets.all(16),

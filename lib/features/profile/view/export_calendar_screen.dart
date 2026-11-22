@@ -8,6 +8,7 @@ import 'package:vaultara/features/calendar/view/calendar_link_screen.dart';
 import 'package:vaultara/features/sharing/calendar_export.dart';
 import 'package:vaultara/features/sharing/pdf_export.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/view/widgets/screen_header.dart';
 
 /// Export as PDF, Add to calendar and Calendar link, one tile on Profile.
 class ExportCalendarScreen extends StatelessWidget {
@@ -24,7 +25,6 @@ class ExportCalendarScreen extends StatelessWidget {
         : Icon(Icons.lock_rounded, size: 18, color: scheme.onSurfaceVariant);
 
     return Scaffold(
-      appBar: AppBar(title: Text(t.exportCalendarScreenTitle)),
       body: WideCentered(
         child: SafeArea(
           child: PremiumBuilder(
@@ -32,6 +32,8 @@ class ExportCalendarScreen extends StatelessWidget {
             builder: (context, premium) => ListView(
               padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
               children: [
+                ScreenHeader(title: t.exportCalendarScreenTitle),
+                const SizedBox(height: 16),
                 SettingsTile(
                   icon: Icons.picture_as_pdf_rounded,
                   title: t.exportPdfTitle,
@@ -52,7 +54,9 @@ class ExportCalendarScreen extends StatelessWidget {
                   subtitle: t.exportCalendarSubtitle,
                   onTap: () async {
                     if (!await IdentityGate.device(context)) return;
-                    if (context.mounted) await CalendarExport.exportAll(context);
+                    if (context.mounted) {
+                      await CalendarExport.exportAll(context);
+                    }
                   },
                 ),
                 const SizedBox(height: 12),

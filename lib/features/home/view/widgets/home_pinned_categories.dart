@@ -74,6 +74,12 @@ class HomePinnedCategories extends StatelessWidget {
       ),
     );
 
+    // Until the pins are known, show nothing rather than the hint, which
+    // would flash before the user's pins replace it.
+    if (pinned.isEmpty && !CategoryRepository.pinsKnown) {
+      return const SizedBox.shrink();
+    }
+
     if (pinned.isEmpty) {
       return Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,

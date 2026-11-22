@@ -8,6 +8,7 @@ import 'package:vaultara/features/support/services/support_email_service.dart';
 import 'package:vaultara/features/tutorials/view/tutorials_screen.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
+import 'package:vaultara/core/view/widgets/screen_header.dart';
 
 /// Help in one place: tutorials, Ask Vaultara and email to support. It
 /// replaces the separate Support and Tutorials tiles on Profile.
@@ -79,7 +80,6 @@ class HelpScreen extends StatelessWidget {
     final scheme = Theme.of(context).colorScheme;
 
     return Scaffold(
-      appBar: AppBar(title: Text(loc.profileHelpSectionTitle)),
       body: WideCentered(
         child: SafeArea(
           child: PremiumBuilder(
@@ -87,6 +87,8 @@ class HelpScreen extends StatelessWidget {
             builder: (context, premium) => ListView(
               padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
               children: [
+                ScreenHeader(title: loc.profileHelpSectionTitle),
+                const SizedBox(height: 16),
                 SettingsTile(
                   icon: Icons.school_rounded,
                   title: loc.profileTutorialsTitle,

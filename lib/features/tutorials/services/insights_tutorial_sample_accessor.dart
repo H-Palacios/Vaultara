@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -8,6 +10,8 @@ import 'package:vaultara/features/tutorials/data/models/insights_tutorial_sample
 import 'package:vaultara/features/tutorials/services/add_record_tutorial_sample_accessor.dart';
 import 'package:vaultara/core/data/preset_catalog.dart';
 import 'package:vaultara/core/util/safe_locale.dart';
+import 'package:vaultara/core/data/models/tracked_item.dart';
+import 'package:vaultara/features/costs/view/cost_field.dart';
 
 class InsightsTutorialSampleAccessor {
   const InsightsTutorialSampleAccessor._();
@@ -76,6 +80,41 @@ class InsightsTutorialSampleAccessor {
         InsightsTutorialSample.categoryKey,
       ),
     );
+  }
+
+  /// Made-up records with renewal costs, so the costs card in the
+  /// tutorial has something to add up. They are never saved.
+  static List<TrackedItem> costRecords(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    final currency = CostField.defaultCurrency(Localizations.localeOf(context));
+    final now = DateTime.now();
+    // Every date falls in this year, so the card's first year has all three.
+    TrackedItem record(String name, int month, int day, double cost) =>
+        TrackedItem(
+          name: name,
+          expiryDate: DateTime(now.year, month, day),
+          categoryKey: InsightsTutorialSample.categoryKey,
+          categoryLabel: name,
+          subcategoryName: '',
+          reminderBaseId: 0,
+          renewalCost: cost,
+          costCurrency: currency,
+        );
+    return <TrackedItem>[
+      record(
+        AddRecordTutorialSampleAccessor.recordName(context),
+        now.month,
+        28,
+        120,
+      ),
+      record(
+        loc.tutorialInsightsSampleRecordTwo,
+        math.min(now.month + 1, 12),
+        9,
+        85,
+      ),
+      record(loc.tutorialInsightsSampleRecordThree, 12, 15, 640),
+    ];
   }
 
   static String _formatDate(DateTime date, String locale) {
