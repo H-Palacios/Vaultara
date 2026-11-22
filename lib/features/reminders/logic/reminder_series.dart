@@ -15,11 +15,10 @@ class ReminderSeries {
   /// The first reminder, in days before expiry, or null when the record has
   /// no reminders.
   static int? start({int? offset, int? leadDays, List<int>? steps}) {
-    final own = TrackedItem.cleanSteps(steps);
-    if (own != null) return own.first;
-    if (offset != null) return offset >= 0 ? offset : null;
-    if (leadDays != null && leadDays > 0) return leadDays;
-    return null;
+    // The first of the real reminder days, so it always matches what
+    // offsets gives and what the scheduler sets.
+    final days = offsets(offset: offset, leadDays: leadDays, steps: steps);
+    return days.isEmpty ? null : days.first;
   }
 
   /// Every reminder, in days before expiry, latest first. Empty when the
@@ -27,11 +26,11 @@ class ReminderSeries {
   static List<int> offsets({int? offset, int? leadDays, List<int>? steps}) {
     final own = TrackedItem.cleanSteps(steps);
     if (own != null) return own;
-    final first = start(offset: offset, leadDays: leadDays);
-    if (first == null) return const <int>[];
     final merged = automaticSteps(offset, leadDays);
     if (merged != null) return merged;
-    return List<int>.of(ReminderOffsets.forInitial(first))
+    if (offset == null || offset < 0) return const <int>[];
+    // A copy, because forInitial can give a list that cannot be changed.
+    return List<int>.of(ReminderOffsets.forInitial(offset))
       ..sort((a, b) => b.compareTo(a));
   }
 
