@@ -17,6 +17,8 @@ import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 import 'package:vaultara/features/tutorials/view/tutorial_target.dart';
 import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
+import 'package:vaultara/core/data/models/tracked_item.dart';
+import 'package:vaultara/features/tutorials/data/models/tour_samples.dart';
 
 Future<void> openLifeEvents(
   BuildContext context, {
@@ -39,7 +41,16 @@ class LifeEventsScreen extends StatefulWidget {
   /// The answer to fill in, such as stolen for a wallet.
   final String? variant;
 
-  const LifeEventsScreen({super.key, this.start, this.variant});
+  /// The tutorial: no plans of the user's, and a sample plan for the
+  /// steps about what a plan holds.
+  final bool tour;
+
+  const LifeEventsScreen({
+    super.key,
+    this.start,
+    this.variant,
+    this.tour = false,
+  });
 
   @override
   State<LifeEventsScreen> createState() => _LifeEventsScreenState();
@@ -74,116 +85,140 @@ class _LifeEventsScreenState extends State<LifeEventsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final loc = AppLocalizations.of(context)!;
-    final scheme = Theme.of(context).colorScheme;
-
     return Scaffold(
       body: WideCentered(
         child: SafeArea(
           child: ValueListenableBuilder<List<LifePlan>>(
             valueListenable: LifePlanRepository.plans,
-            builder: (context, plans, _) {
-              final active = plans.where((p) => !p.isFinished).toList();
-              final finished = plans.where((p) => p.isFinished).toList();
-              return ListView(
-                padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-                // Kept until the Flutter version in use exports ScrollCacheExtent.
-                // ignore: deprecated_member_use
-                cacheExtent: TutorialController.listCacheExtent,
-                children: [
-                  ScreenHeader(
-                    title: loc.lifeEventsTitle,
-                    onBack: () => Navigator.of(context).pop(),
-                  ),
-                  const TutorialHint(id: TutorialIds.lifeEvents),
-                  const SizedBox(height: 8),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 4),
-                    child: Text(
-                      loc.lifeEventsIntro,
-                      style: TextStyle(
-                        fontSize: 13.5,
-                        height: 1.4,
-                        color: scheme.onSurfaceVariant,
-                      ),
-                    ),
-                  ),
-                  if (active.isNotEmpty) ...[
-                    _Heading(loc.lifePlanInProgress),
-                    for (final plan in active) ...[
-                      LifePlanCard(plan: plan),
-                      const SizedBox(height: 10),
-                    ],
-                  ],
-                  TutorialTarget(
-                    steps: const [TutorialStep.lifeChoose],
-                    child: _Heading(loc.lifePlanStartNew),
-                  ),
-                  for (final group in LifeEventGroup.values) ...[
-                    _GroupLabel(LifeEvents.groupTitle(loc, group)),
-                    for (final event in LifeEvents.groups[group]!) ...[
-                      if (event == LifeEvent.lostWallet)
-                        // Lost my wallet opens its own screen first, with the
-                        // check-up, rather than going straight to a plan.
-                        _Tile(
-                          icon: LifeEvents.icon(event),
-                          title: loc.lostWalletTitle,
-                          subtitle: active.any((p) => p.event == event)
-                              ? loc.lifePlanInProgress
-                              : loc.lostWalletSubtitle,
-                          highlight: active.any((p) => p.event == event),
-                          onTap: () => openLostWallet(context),
-                        )
-                      else
-                        _EventTile(
-                          event: event,
-                          active: active.any((p) => p.event == event),
-                        ),
-                      const SizedBox(height: 8),
-                    ],
-                  ],
-                  if (finished.isNotEmpty) ...[
-                    const SizedBox(height: 14),
-                    InkWell(
-                      borderRadius: BorderRadius.circular(12),
-                      onTap: () => setState(() => _showFinished = !_showFinished),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(
-                          vertical: 8,
-                          horizontal: 4,
-                        ),
-                        child: Row(
-                          children: [
-                            Expanded(
-                              child: Text(
-                                '${loc.lifePlanFinishedSection} (${finished.length})',
-                                style: const TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w800,
-                                ),
-                              ),
-                            ),
-                            Icon(
-                              _showFinished
-                                  ? Icons.expand_less_rounded
-                                  : Icons.expand_more_rounded,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    if (_showFinished)
-                      for (final plan in finished) ...[
-                        LifePlanCard(plan: plan),
-                        const SizedBox(height: 10),
-                      ],
-                  ],
-                ],
-              );
-            },
+            builder: (context, plans, _) =>
+                widget.tour ? _tourStage(context) : _events(context, plans),
           ),
         ),
       ),
+    );
+  }
+
+  List<TrackedItem>? _tourRecords;
+  LifePlan? _tourPlan;
+
+  Widget _tourStage(BuildContext context) {
+    return ListenableBuilder(
+      listenable: TutorialController.instance,
+      builder: (context, _) {
+        final step = TutorialController.instance.currentStep;
+        if (step != TutorialStep.lifeRecords &&
+            step != TutorialStep.lifeSteps &&
+            step != TutorialStep.lifeOwn) {
+          return _events(context, const <LifePlan>[]);
+        }
+        final loc = AppLocalizations.of(context)!;
+        final records = _tourRecords ??= TourSamples.movingRecords(loc);
+        final plan = _tourPlan ??= TourSamples.movingPlan(records);
+        return LifePlanScreen(
+          planId: plan.id,
+          samplePlan: plan,
+          sampleRecords: records,
+        );
+      },
+    );
+  }
+
+  Widget _events(BuildContext context, List<LifePlan> plans) {
+    final loc = AppLocalizations.of(context)!;
+    final scheme = Theme.of(context).colorScheme;
+    final active = plans.where((p) => !p.isFinished).toList();
+    final finished = plans.where((p) => p.isFinished).toList();
+    return ListView(
+      padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+      // Kept until the Flutter version in use exports ScrollCacheExtent.
+      // ignore: deprecated_member_use
+      cacheExtent: TutorialController.listCacheExtent,
+      children: [
+        ScreenHeader(
+          title: loc.lifeEventsTitle,
+          onBack: () => Navigator.of(context).pop(),
+        ),
+        const TutorialHint(id: TutorialIds.lifeEvents),
+        const SizedBox(height: 8),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 4),
+          child: Text(
+            loc.lifeEventsIntro,
+            style: TextStyle(
+              fontSize: 13.5,
+              height: 1.4,
+              color: scheme.onSurfaceVariant,
+            ),
+          ),
+        ),
+        if (active.isNotEmpty) ...[
+          _Heading(loc.lifePlanInProgress),
+          for (final plan in active) ...[
+            LifePlanCard(plan: plan),
+            const SizedBox(height: 10),
+          ],
+        ],
+        TutorialTarget(
+          steps: const [TutorialStep.lifeChoose],
+          child: _Heading(loc.lifePlanStartNew),
+        ),
+        for (final group in LifeEventGroup.values) ...[
+          _GroupLabel(LifeEvents.groupTitle(loc, group)),
+          for (final event in LifeEvents.groups[group]!) ...[
+            if (event == LifeEvent.lostWallet)
+              // Lost my wallet opens its own screen first, with the
+              // check-up, rather than going straight to a plan.
+              _Tile(
+                icon: LifeEvents.icon(event),
+                title: loc.lostWalletTitle,
+                subtitle: active.any((p) => p.event == event)
+                    ? loc.lifePlanInProgress
+                    : loc.lostWalletSubtitle,
+                highlight: active.any((p) => p.event == event),
+                onTap: () => openLostWallet(context),
+              )
+            else
+              _EventTile(
+                event: event,
+                active: active.any((p) => p.event == event),
+              ),
+            const SizedBox(height: 8),
+          ],
+        ],
+        if (finished.isNotEmpty) ...[
+          const SizedBox(height: 14),
+          InkWell(
+            borderRadius: BorderRadius.circular(12),
+            onTap: () => setState(() => _showFinished = !_showFinished),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      '${loc.lifePlanFinishedSection} (${finished.length})',
+                      style: const TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                  ),
+                  Icon(
+                    _showFinished
+                        ? Icons.expand_less_rounded
+                        : Icons.expand_more_rounded,
+                  ),
+                ],
+              ),
+            ),
+          ),
+          if (_showFinished)
+            for (final plan in finished) ...[
+              LifePlanCard(plan: plan),
+              const SizedBox(height: 10),
+            ],
+        ],
+      ],
     );
   }
 }

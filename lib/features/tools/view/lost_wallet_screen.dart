@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/core/data/models/kept_in.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
+import 'package:vaultara/features/tutorials/data/models/tour_samples.dart';
 import 'package:vaultara/core/data/preset_catalog.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/core/data/user_data_watcher.dart';
@@ -176,6 +177,7 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
           child: ValueListenableBuilder<List<LifePlan>>(
             valueListenable: LifePlanRepository.plans,
             builder: (context, plans, _) {
+              if (widget.tour) return _tourStage(context);
               final id = widget.planId;
               final plan = widget.tour
                   ? null
@@ -188,11 +190,33 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
               final history = plans
                   .where((p) => p.event == LifeEvent.lostWallet && p.isFinished)
                   .toList();
-              return _prep(context, widget.tour ? const <LifePlan>[] : history);
+              return _prep(context, history);
             },
           ),
         ),
       ),
+    );
+  }
+
+  List<TrackedItem>? _tourRecords;
+  LifePlan? _tourPlan;
+
+  /// The tutorial: the start screen first, then a sample plan for the
+  /// steps about blocking and replacing, as if a wallet had gone missing.
+  Widget _tourStage(BuildContext context) {
+    return ListenableBuilder(
+      listenable: TutorialController.instance,
+      builder: (context, _) {
+        final step = TutorialController.instance.currentStep;
+        if (step != TutorialStep.walletBlock &&
+            step != TutorialStep.walletReplace) {
+          return _prep(context, const <LifePlan>[]);
+        }
+        final loc = AppLocalizations.of(context)!;
+        final records = _tourRecords ??= TourSamples.walletRecords(loc);
+        final plan = _tourPlan ??= TourSamples.walletPlan(records);
+        return LostWalletPlanView(plan: plan, sampleRecords: records);
+      },
     );
   }
 

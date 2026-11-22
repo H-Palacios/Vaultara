@@ -18,6 +18,9 @@ import 'package:vaultara/features/assistant/logic/assistant_step_label.dart';
 import 'package:vaultara/features/assistant/logic/assistant_suggestions.dart';
 import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 import 'package:vaultara/features/tutorials/view/tutorial_target.dart';
+import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
+import 'package:vaultara/core/util/safe_locale.dart';
+import 'package:intl/intl.dart' show DateFormat;
 import 'package:vaultara/features/assistant/services/assistant_chat_store.dart';
 import 'package:vaultara/features/assistant/services/assistant_feedback_store.dart';
 import 'package:vaultara/features/assistant/services/assistant_run.dart';
@@ -1343,7 +1346,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
                             openPlans(context, initialTier: PlanTier.premium),
                       )
                     : widget.tour
-                    ? _EmptyState(onSuggestion: (_) {})
+                    ? const _TourChat()
                     : _loadingChat
                     ? const Center(child: CircularProgressIndicator())
                     : _messages.isEmpty
@@ -1690,6 +1693,76 @@ class _LiveThinking extends StatelessWidget {
           ),
         );
       },
+    );
+  }
+}
+
+/// The tutorial's chat. The first steps show the suggestions; the steps
+/// about confirming and undoing show a made-up request with its card,
+/// waiting for Confirm and then saved with Undo; the last step points at
+/// the suggestions again, which show what else it can do.
+class _TourChat extends StatelessWidget {
+  const _TourChat();
+
+  @override
+  Widget build(BuildContext context) {
+    return ListenableBuilder(
+      listenable: TutorialController.instance,
+      builder: (context, _) {
+        final step = TutorialController.instance.currentStep;
+        if (step != TutorialStep.askConfirm && step != TutorialStep.askUndo) {
+          return TutorialTarget(
+            steps: const [TutorialStep.askMore],
+            child: _EmptyState(onSuggestion: (_) {}),
+          );
+        }
+        return _sample(context, saved: step == TutorialStep.askUndo);
+      },
+    );
+  }
+
+  Widget _sample(BuildContext context, {required bool saved}) {
+    final loc = AppLocalizations.of(context)!;
+    final locale = Localizations.localeOf(context).toString();
+    final now = DateTime.now();
+    final expiry = DateTime(now.year + 4, 3, 12);
+    final name = loc.tutorialInsightsSampleRecordTwo;
+    final action = AssistantAction(
+      type: AssistantActionType.add,
+      name: name,
+      groupKey: 'passports',
+      categoryKey: 'personal_identification',
+      expiryDate: expiry,
+    );
+    return ListView(
+      padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
+      children: [
+        AssistantBubble(
+          fromUser: true,
+          child: Text(
+            loc.tourAskSampleQuestion(
+              name,
+              DateFormat.yMMMMd(SafeLocale.date(locale)).format(expiry),
+            ),
+          ),
+        ),
+        AssistantBubble(fromUser: false, child: Text(loc.tourAskSampleAnswer)),
+        Padding(
+          padding: const EdgeInsetsDirectional.only(end: 32, bottom: 4),
+          child: TutorialTarget(
+            steps: const [TutorialStep.askConfirm, TutorialStep.askUndo],
+            child: AssistantActionCard(
+              preview: AssistantActionPreview.build(context, action),
+              state: saved
+                  ? AssistantActionState.applied
+                  : AssistantActionState.pending,
+              onConfirm: () {},
+              onCancel: () {},
+              onUndo: saved ? () {} : null,
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

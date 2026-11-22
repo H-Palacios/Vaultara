@@ -33,6 +33,10 @@ import 'package:vaultara/shell/shell_state.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/features/tools/view/block_number_sheet.dart';
 import 'package:vaultara/features/tools/services/life_plan_summary.dart';
+import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
+import 'package:vaultara/features/tutorials/view/tutorial_target.dart';
+import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
+import 'package:vaultara/core/data/models/tracked_item.dart';
 
 /// A lost or stolen wallet in progress: block the cards, note the case
 /// number, replace the documents, then the steps that keep the damage
@@ -40,7 +44,11 @@ import 'package:vaultara/features/tools/services/life_plan_summary.dart';
 class LostWalletPlanView extends StatefulWidget {
   final LifePlan plan;
 
-  const LostWalletPlanView({super.key, required this.plan});
+  /// The tutorial: records to show in place of the user's. The plan is
+  /// then a sample too, so nothing is saved or synced.
+  final List<TrackedItem>? sampleRecords;
+
+  const LostWalletPlanView({super.key, required this.plan, this.sampleRecords});
 
   @override
   State<LostWalletPlanView> createState() => _LostWalletPlanViewState();
@@ -73,6 +81,11 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
 
   LifePlan get _plan => widget.plan;
 
+  bool get _preview => widget.sampleRecords != null;
+
+  List<TrackedItem> get _records =>
+      widget.sampleRecords ?? RecordRepository.allActive();
+
   bool get _isPremium => ShellState.current?.isPremium ?? false;
 
   @override
@@ -88,7 +101,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
     final id = _callingId;
     _callingId = null;
     if (id == null || !mounted) return;
-    final view = LifePlanItems.build(_current, RecordRepository.allActive());
+    final view = LifePlanItems.build(_current, _records);
     LifeRecordItem? item;
     for (final r in view.records) {
       if (r.record.id == id) item = r;
@@ -124,6 +137,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
   }
 
   Future<void> _save(LifePlan plan) async {
+    if (_preview) return;
     final loc = AppLocalizations.of(context)!;
     final ok = await LifePlanRepository.save(plan);
     if (!ok && mounted) {
@@ -135,7 +149,8 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
     }
   }
 
-  LifePlan get _current => LifePlanRepository.byId(_plan.id) ?? _plan;
+  LifePlan get _current =>
+      _preview ? _plan : LifePlanRepository.byId(_plan.id) ?? _plan;
 
   /// Lost turned out to be stolen, or the other way round. Blocked cards,
   /// ticked steps and the case number stay; only the steps that differ
@@ -504,7 +519,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
     final plan = _plan;
-    final view = LifePlanItems.build(plan, RecordRepository.allActive());
+    final view = LifePlanItems.build(plan, _records);
     final stolen = plan.variant == LifeEvents.variantStolen;
     final open = view.records.where((r) => !r.isDone).toList();
     final done = view.records.where((r) => r.isDone).toList();
@@ -531,7 +546,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
     final steps = view.tasks
         .where((t) => !t.isUrgent && t.task != LifeTask.reportToPolice)
         .toList();
-    final trip = plan.isFinished ? null : _tripNow();
+    final trip = plan.isFinished || _preview ? null : _tripNow();
 
     LifeTaskItem? police;
     for (final t in view.tasks) {
@@ -550,12 +565,17 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
     final nextLine = plan.isFinished
         ? null
         : _nextStep(loc, block, urgent, policeTask, replace);
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) LifePlanSummary.sync(context, plan, view, next: nextLine);
-    });
+    if (!_preview) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) LifePlanSummary.sync(context, plan, view, next: nextLine);
+      });
+    }
 
     return ListView(
       padding: const EdgeInsets.fromLTRB(16, 8, 16, 40),
+      // Kept until the Flutter version in use exports ScrollCacheExtent.
+      // ignore: deprecated_member_use
+      cacheExtent: TutorialController.listCacheExtent,
       children: [
         ScreenHeader(
           title: LifePlanText.title(loc, plan),
@@ -637,15 +657,23 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
           ),
         ],
         if (block.isNotEmpty || urgent.any((t) => !t.done)) ...[
-          WalletSection(
-            title: loc.lostWalletBlockNow,
-            icon: Icons.block_rounded,
-            colour: scheme.error,
-            count: block.length + urgent.where((t) => !t.done).length,
-            subtitle: loc.lostWalletBlockNowHint,
+          TutorialTarget(
+            steps: const [TutorialStep.walletBlock],
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                WalletSection(
+                  title: loc.lostWalletBlockNow,
+                  icon: Icons.block_rounded,
+                  colour: scheme.error,
+                  count: block.length + urgent.where((t) => !t.done).length,
+                  subtitle: loc.lostWalletBlockNowHint,
+                ),
+                for (final item in block) _blockRow(item),
+                for (final task in urgent.where((t) => !t.done)) _taskRow(task),
+              ],
+            ),
           ),
-          for (final item in block) _blockRow(item),
-          for (final task in urgent.where((t) => !t.done)) _taskRow(task),
         ],
         if (stolen) ...[const SizedBox(height: 4), caseCard],
         if (view.records.isEmpty) ...[
@@ -658,13 +686,21 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
           ),
         ],
         if (replace.isNotEmpty) ...[
-          WalletSection(
-            title: loc.lostWalletReplace,
-            icon: Icons.autorenew_rounded,
-            count: replace.length,
-            subtitle: loc.lostWalletReplaceHint,
+          TutorialTarget(
+            steps: const [TutorialStep.walletReplace],
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                WalletSection(
+                  title: loc.lostWalletReplace,
+                  icon: Icons.autorenew_rounded,
+                  count: replace.length,
+                  subtitle: loc.lostWalletReplaceHint,
+                ),
+                for (final item in replace) _replaceRow(item),
+              ],
+            ),
           ),
-          for (final item in replace) _replaceRow(item),
         ],
         if (check.isNotEmpty) ...[
           WalletSection(

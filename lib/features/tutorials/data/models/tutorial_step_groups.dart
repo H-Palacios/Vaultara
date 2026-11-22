@@ -101,10 +101,12 @@ class TutorialStepGroups {
     TutorialStep.lifeOwn,
   ];
 
+  // The record's own photos and lock first, on a sample record, then the
+  // app-wide settings in Security and privacy.
   static const List<TutorialStep> photosSecurity = [
     TutorialStep.photosAdd,
-    TutorialStep.photosEncrypt,
     TutorialStep.photosLockRecord,
+    TutorialStep.photosEncrypt,
     TutorialStep.photosAppLock,
   ];
 
@@ -157,26 +159,8 @@ class TutorialStepGroups {
   /// Steps with nothing on screen to point at. They show in the middle,
   /// with a picture, over the dimmed screen.
   static const Set<TutorialStep> centred = {
-    TutorialStep.familyRecordPerson,
     TutorialStep.renewReminder,
-    TutorialStep.renewRepeat,
-    TutorialStep.askConfirm,
-    TutorialStep.askUndo,
-    TutorialStep.askMore,
-    TutorialStep.walletBlock,
-    TutorialStep.walletReplace,
-    TutorialStep.lifeRecords,
-    TutorialStep.lifeSteps,
-    TutorialStep.lifeOwn,
-    TutorialStep.photosAdd,
-    TutorialStep.photosLockRecord,
-    TutorialStep.shareRecord,
-    TutorialStep.householdShared,
-    TutorialStep.importScan,
     TutorialStep.importShare,
-    TutorialStep.costsAmount,
-    TutorialStep.costsPlan,
-    TutorialStep.businessRequest,
   };
 
   /// Steps that cannot go Back, because the step before them is on a

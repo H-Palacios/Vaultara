@@ -10,18 +10,23 @@ class PersonPicker extends StatelessWidget {
   final ValueChanged<String?> onChanged;
   final bool enabled;
 
+  /// People to offer in place of the user's, for the tutorial.
+  final List<Person>? samplePeople;
+
   const PersonPicker({
     super.key,
     required this.holderId,
     required this.onChanged,
     this.enabled = true,
+    this.samplePeople,
   });
 
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder<List<Person>>(
       valueListenable: PeopleRepository.people,
-      builder: (context, people, _) {
+      builder: (context, saved, _) {
+        final people = samplePeople ?? saved;
         if (people.isEmpty) return const SizedBox.shrink();
 
         final scheme = Theme.of(context).colorScheme;

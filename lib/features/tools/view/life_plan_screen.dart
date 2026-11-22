@@ -28,6 +28,10 @@ import 'package:vaultara/features/tools/view/proof_pack_screen.dart';
 import 'package:vaultara/features/travel/view/travel_actions.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/shell/shell_state.dart';
+import 'package:vaultara/core/data/models/tracked_item.dart';
+import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
+import 'package:vaultara/features/tutorials/view/tutorial_target.dart';
+import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
 
 Future<void> openLifePlan(BuildContext context, String planId) {
   // A lost wallet has its own screen, with call buttons and the case number.
@@ -44,7 +48,17 @@ Future<void> openLifePlan(BuildContext context, String planId) {
 class LifePlanScreen extends StatefulWidget {
   final String planId;
 
-  const LifePlanScreen({super.key, required this.planId});
+  /// The tutorial: a plan and records to show in place of the user's.
+  /// Nothing is saved or synced while they show.
+  final LifePlan? samplePlan;
+  final List<TrackedItem>? sampleRecords;
+
+  const LifePlanScreen({
+    super.key,
+    required this.planId,
+    this.samplePlan,
+    this.sampleRecords,
+  });
 
   @override
   State<LifePlanScreen> createState() => _LifePlanScreenState();
@@ -73,7 +87,10 @@ class _LifePlanScreenState extends State<LifePlanScreen> {
 
   bool get _isPremium => ShellState.current?.isPremium ?? false;
 
+  bool get _preview => widget.samplePlan != null;
+
   Future<void> _save(LifePlan plan) async {
+    if (_preview) return;
     final loc = AppLocalizations.of(context)!;
     final ok = await LifePlanRepository.save(plan);
     if (!ok && mounted) {
@@ -282,6 +299,15 @@ class _LifePlanScreenState extends State<LifePlanScreen> {
           child: ValueListenableBuilder<List<LifePlan>>(
             valueListenable: LifePlanRepository.plans,
             builder: (context, _, __) {
+              final sample = widget.samplePlan;
+              if (sample != null) {
+                final view = LifePlanItems.build(
+                  sample,
+                  widget.sampleRecords ?? const <TrackedItem>[],
+                  extraLabels: LifePlanText.extraLabels(loc),
+                );
+                return _content(context, loc, sample, view);
+              }
               final plan = LifePlanRepository.byId(widget.planId);
               if (plan == null) {
                 return Padding(
@@ -322,6 +348,9 @@ class _LifePlanScreenState extends State<LifePlanScreen> {
 
     return ListView(
       padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
+      // Kept until the Flutter version in use exports ScrollCacheExtent.
+      // ignore: deprecated_member_use
+      cacheExtent: TutorialController.listCacheExtent,
       children: [
         ScreenHeader(
           title: LifePlanText.title(loc, plan),
@@ -389,28 +418,57 @@ class _LifePlanScreenState extends State<LifePlanScreen> {
           ),
           for (final task in urgent) _taskRow(plan, view, task),
         ],
-        if (hasDate) ...[
-          _section(loc.lifePlanBefore, Icons.schedule_rounded, before.length),
-          for (final item in before) _recordRow(plan, item),
-          _section(loc.lifePlanAfter, Icons.update_rounded, after.length),
-          for (final item in after) _recordRow(plan, item),
-        ] else ...[
-          _section(loc.lifePlanToDo, Icons.checklist_rounded, open.length),
-          for (final item in open) _recordRow(plan, item),
-        ],
-        _section(
-          loc.lifePlanSteps,
-          Icons.format_list_bulleted_rounded,
-          steps.where((t) => !t.done).length,
-          alwaysShow: true,
+        TutorialTarget(
+          steps: const [TutorialStep.lifeRecords],
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              if (hasDate) ...[
+                _section(
+                  loc.lifePlanBefore,
+                  Icons.schedule_rounded,
+                  before.length,
+                ),
+                for (final item in before) _recordRow(plan, item),
+                _section(loc.lifePlanAfter, Icons.update_rounded, after.length),
+                for (final item in after) _recordRow(plan, item),
+              ] else ...[
+                _section(
+                  loc.lifePlanToDo,
+                  Icons.checklist_rounded,
+                  open.length,
+                ),
+                for (final item in open) _recordRow(plan, item),
+              ],
+            ],
+          ),
         ),
-        for (final task in steps) _taskRow(plan, view, task),
+        TutorialTarget(
+          steps: const [TutorialStep.lifeSteps],
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              _section(
+                loc.lifePlanSteps,
+                Icons.format_list_bulleted_rounded,
+                steps.where((t) => !t.done).length,
+                alwaysShow: true,
+              ),
+              // A few are enough to show what steps look like.
+              for (final task in _preview ? steps.take(3) : steps)
+                _taskRow(plan, view, task),
+            ],
+          ),
+        ),
         Align(
           alignment: AlignmentDirectional.centerStart,
-          child: TextButton.icon(
-            onPressed: () => _addCustom(plan),
-            icon: const Icon(Icons.add_rounded, size: 20),
-            label: Text(loc.lifePlanAddOwnStep),
+          child: TutorialTarget(
+            steps: const [TutorialStep.lifeOwn],
+            child: TextButton.icon(
+              onPressed: () => _addCustom(plan),
+              icon: const Icon(Icons.add_rounded, size: 20),
+              label: Text(loc.lifePlanAddOwnStep),
+            ),
           ),
         ),
         if (done.isNotEmpty || view.removed > 0) ...[

@@ -328,7 +328,10 @@ class _FamilyScreenState extends State<FamilyScreen> {
                         ),
                       const SizedBox(height: 24),
                       TutorialTarget(
-                        steps: const [TutorialStep.householdInvite],
+                        steps: const [
+                          TutorialStep.householdInvite,
+                          TutorialStep.householdShared,
+                        ],
                         child: HouseholdSection(tier: tier, tour: tour),
                       ),
                     ],

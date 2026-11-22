@@ -1,11 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:vaultara/core/view/widgets/premium_builder.dart';
 import 'package:vaultara/features/assistant/view/ask_vaultara_screen.dart';
 import 'package:vaultara/features/family/view/family_screen.dart';
 import 'package:vaultara/features/import/view/import_screen.dart';
-import 'package:vaultara/features/profile/view/profile_screen.dart';
 import 'package:vaultara/features/records/view/renew/renew_sheet.dart';
 import 'package:vaultara/features/security/view/security_privacy_screen.dart';
 import 'package:vaultara/features/tools/view/life_events_screen.dart';
@@ -19,6 +17,10 @@ import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/shell/shell_state.dart';
 import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
+import 'package:vaultara/features/tutorials/view/stages/share_tour_stage.dart';
+import 'package:vaultara/features/calendar/view/calendar_screen.dart';
+import 'package:vaultara/features/tutorials/view/stages/tour_stage_switch.dart';
+import 'package:vaultara/features/tutorials/view/stages/tour_samples_view.dart';
 
 /// Plays the tutorials that walk through one real screen: it opens the
 /// screen and the overlay points at its parts one by one.
@@ -26,7 +28,6 @@ class ScreenTourLauncher {
   const ScreenTourLauncher._();
 
   static const int _homeTab = 0;
-  static const int _calendarTab = 3;
   static const Duration _sheetSettle = Duration(milliseconds: 450);
 
   static bool handles(String id) =>
@@ -47,11 +48,18 @@ class ScreenTourLauncher {
           isPremium: premium,
         );
       case TutorialIds.calendarCosts:
-        await TutorialRouteLauncher.showTabAndStart(
+        await _sample(
           navigator,
-          tab: _calendarTab,
-          group: group,
-          isPremium: premium,
+          group,
+          premium,
+          (_) => TourStageSwitch(
+            sampleSteps: const {
+              TutorialStep.costsAmount,
+              TutorialStep.costsPlan,
+            },
+            sample: TourSamplesView.costs,
+            screen: (_) => CalendarScreen(isPremium: premium),
+          ),
         );
       case TutorialIds.renew:
         await _renew(navigator, group, premium);
@@ -64,33 +72,39 @@ class ScreenTourLauncher {
           (_) => AskVaultaraScreen(isPremium: premium, tour: true),
         );
       case TutorialIds.lostWallet:
-        await _push(
+        await _sample(
           navigator,
           group,
           premium,
           (_) => const LostWalletScreen(tour: true),
         );
       case TutorialIds.lifeEvents:
-        await _push(navigator, group, premium, (_) => const LifeEventsScreen());
+        await _sample(
+          navigator,
+          group,
+          premium,
+          (_) => const LifeEventsScreen(tour: true),
+        );
       case TutorialIds.photosSecurity:
         await _push(
           navigator,
           group,
           premium,
-          (_) => const SecurityPrivacyScreen(),
+          (_) => TourStageSwitch(
+            sampleSteps: const {
+              TutorialStep.photosAdd,
+              TutorialStep.photosLockRecord,
+            },
+            sample: TourSamplesView.photosAndLock,
+            screen: (_) => const SecurityPrivacyScreen(),
+          ),
         );
       case TutorialIds.sharing:
-        await _push(
+        await _sample(
           navigator,
           group,
           premium,
-          (_) => PremiumBuilder(
-            initial: premium,
-            builder: (_, isPremium) => ProfileScreen(
-              isPremium: isPremium,
-              onUpgrade: TutorialRouteLauncher.upgradeShell,
-            ),
-          ),
+          (_) => ShareTourStage(isPremium: premium),
         );
       case TutorialIds.household:
         await _paid(
@@ -106,10 +120,28 @@ class ScreenTourLauncher {
           group,
           premium,
           PlanTier.business,
-          (_) => const FamilyScreen(tourTier: PlanTier.business),
+          (_) => TourStageSwitch(
+            sampleSteps: const {TutorialStep.businessRequest},
+            sample: (context) => TourSamplesView.recordCard(
+              context,
+              title: AppLocalizations.of(context)!.tutorialsTitleBusiness,
+              step: TutorialStep.businessRequest,
+              requestUpdate: true,
+            ),
+            screen: (_) => const FamilyScreen(tourTier: PlanTier.business),
+          ),
         );
       case TutorialIds.importScan:
-        await _push(navigator, group, premium, (_) => const ImportScreen());
+        await _push(
+          navigator,
+          group,
+          premium,
+          (_) => TourStageSwitch(
+            sampleSteps: const {TutorialStep.importScan},
+            sample: TourSamplesView.scan,
+            screen: (_) => const ImportScreen(),
+          ),
+        );
     }
   }
 
@@ -124,6 +156,23 @@ class ScreenTourLauncher {
       builder: builder,
       group: group,
       isPremium: premium,
+    );
+  }
+
+  /// A screen opened only to show sample data: it closes again when the
+  /// tutorial ends.
+  static Future<void> _sample(
+    NavigatorState navigator,
+    List<TutorialStep> group,
+    bool premium,
+    WidgetBuilder builder,
+  ) {
+    return TutorialRouteLauncher.pushAndStart(
+      navigator,
+      builder: builder,
+      group: group,
+      isPremium: premium,
+      closeWhenDone: true,
     );
   }
 
@@ -167,26 +216,61 @@ class ScreenTourLauncher {
     final loc = AppLocalizations.of(context);
     if (loc == null) return;
 
-    bool open = true;
-    unawaited(
-      showRenewSheet(
-        context,
-        RenewTutorialSample.record(loc.csvImportTemplateExampleTwo),
-        preview: true,
-      ).whenComplete(() => open = false),
-    );
+    final record = RenewTutorialSample.record(loc.csvImportTemplateExampleTwo);
+    bool open = false;
+    // Which sheet is showing, so a sheet closed earlier cannot mark a newer
+    // one as closed.
+    int sheet = 0;
+    void openSheet() {
+      final int mine = ++sheet;
+      open = true;
+      unawaited(
+        showRenewSheet(context, record, preview: true).whenComplete(() {
+          if (mine == sheet) open = false;
+        }),
+      );
+    }
 
+    void closeSheet() {
+      if (!open) return;
+      open = false;
+      sheet++;
+      navigator.pop();
+    }
+
+    openSheet();
     await Future<void>.delayed(_sheetSettle);
     if (!open || !navigator.mounted) return;
 
     controller.start(group.first, group: group, isPremium: premium);
 
-    void closeWhenDone() {
-      if (controller.isActive) return;
-      controller.removeListener(closeWhenDone);
-      if (open && navigator.mounted) navigator.pop();
+    // "Let it repeat" is set in the record editor, not the renew sheet: the
+    // sheet closes and a sample record shows the Renews by itself field.
+    // Back from there opens the sheet again.
+    Route<void>? repeatPage;
+
+    void follow() {
+      if (!navigator.mounted) return;
+      final page = repeatPage;
+      if (!controller.isActive) {
+        controller.removeListener(follow);
+        if (page != null && page.isActive) navigator.removeRoute(page);
+        closeSheet();
+        return;
+      }
+      final onRepeat = controller.currentStep == TutorialStep.renewRepeat;
+      if (onRepeat && page == null) {
+        closeSheet();
+        final next = MaterialPageRoute<void>(builder: TourSamplesView.repeat);
+        repeatPage = next;
+        unawaited(navigator.push(next));
+      } else if (!onRepeat && page != null) {
+        repeatPage = null;
+        if (page.isActive) navigator.removeRoute(page);
+        if (!open) openSheet();
+      }
     }
 
-    controller.addListener(closeWhenDone);
+    controller.addListener(follow);
   }
 }
