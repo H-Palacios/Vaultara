@@ -2588,6 +2588,8 @@
   "tourAsk5Body": "Chats blijven 90 dagen in ‘Chatgeschiedenis’ en voorgestelde vragen helpen je op weg.",
   "tourAsk6Title": "Meer dan items",
   "tourAsk6Body": "Het kan ook reizen plannen, personen toevoegen, de verlengingsstappen voor je land vinden en items delen, met links naar officiële pagina's.",
+  "tourAskSampleQuestion": "Voeg mijn {name} toe. Die verloopt op {date}.",
+  "tourAskSampleAnswer": "Hier is hij. Controleer de gegevens en tik op Bevestigen om hem op te slaan.",
   "tourWallet1Title": "Eerst voorbereiden",
   "tourWallet1Body": "Open een pas of document en kies waar je het bewaart, zoals je portemonnee of tas.",
   "tourWallet2Title": "Het blokkeernummer opslaan",

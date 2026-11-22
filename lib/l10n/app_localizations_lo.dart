@@ -7819,6 +7819,14 @@ class AppLocalizationsLo extends AppLocalizations {
   String get tourAsk6Body => 'ມັນຍັງສາມາດວາງແຜນການເດີນທາງ, ເພີ່ມຄົນ, ຊອກຫາຂັ້ນຕອນຕໍ່ອາຍຸສຳລັບປະເທດຂອງທ່ານ ແລະ ແບ່ງປັນບັນທຶກ ພ້ອມລິ້ງໄປຫາໜ້າທາງການ.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'ເພີ່ມ $name ຂອງຂ້ອຍ. ມັນໝົດອາຍຸວັນທີ $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'ນີ້ແມ່ນ. ກວດເບິ່ງລາຍລະອຽດ ແລ້ວແຕະ ຢືນຢັນ ເພື່ອບັນທຶກ.';
+
+  @override
   String get tourWallet1Title => 'ກຽມພ້ອມກ່ອນ';
 
   @override

@@ -7876,6 +7876,14 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get tourAsk6Body => 'دەتوانێت گەشت پلان بکات، کەس زیاد بکات، هەنگاوەکانی نوێکردنەوە بۆ وڵاتەکەت بدۆزێتەوە و تۆمار هاوبەش بکات، لەگەڵ بەستەر بۆ پەڕە فەرمییەکان.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return '$nameەکەم زیاد بکە. لە $date بەسەر دەچێت.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'ئەوەتا. وردەکارییەکان بپشکنە و بۆ پاشەکەوتکردن پشتڕاستکردنەوە دابگرە.';
+
+  @override
   String get tourWallet1Title => 'سەرەتا ئامادە بە';
 
   @override

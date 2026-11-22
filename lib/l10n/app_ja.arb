@@ -2600,6 +2600,8 @@
   "tourAsk5Body": "チャットは「チャット履歴」に90日間保存され、おすすめの質問で始めやすくなっています。",
   "tourAsk6Title": "記録だけではありません",
   "tourAsk6Body": "旅行の計画、人の追加、お住まいの国の更新手順の検索、記録の共有もでき、公式ページへのリンクも示します。",
+  "tourAskSampleQuestion": "私の{name}を追加して。有効期限は{date}です。",
+  "tourAskSampleAnswer": "こちらです。内容を確認し、「確認」をタップして保存してください。",
   "tourWallet1Title": "まずは準備",
   "tourWallet1Body": "カードや書類を開き、財布やかばんなど保管場所を選びます。",
   "tourWallet2Title": "利用停止番号を保存",

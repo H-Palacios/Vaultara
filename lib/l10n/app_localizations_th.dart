@@ -7807,6 +7807,14 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tourAsk6Body => 'ยังวางแผนการเดินทาง เพิ่มบุคคล หาขั้นตอนการต่ออายุของประเทศคุณ และแชร์รายการได้ พร้อมลิงก์ไปยังหน้าทางการ';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'เพิ่ม $name ของฉัน หมดอายุวันที่ $date';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'นี่ครับ ตรวจสอบรายละเอียดแล้วแตะ ยืนยัน เพื่อบันทึก';
+
+  @override
   String get tourWallet1Title => 'เตรียมพร้อมก่อน';
 
   @override

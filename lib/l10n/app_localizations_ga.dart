@@ -8060,6 +8060,14 @@ class AppLocalizationsGa extends AppLocalizations {
   String get tourAsk6Body => 'Is féidir leis turais a phleanáil, daoine a chur leis, céimeanna athnuachana do thíre a aimsiú agus taifid a roinnt, le naisc chuig leathanaigh oifigiúla.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Cuir mo $name leis. Rachaidh sé in éag ar $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Seo é. Seiceáil na sonraí agus tapáil Deimhnigh chun é a shábháil.';
+
+  @override
   String get tourWallet1Title => 'Ullmhaigh ar dtús';
 
   @override

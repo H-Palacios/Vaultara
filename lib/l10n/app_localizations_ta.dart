@@ -7876,6 +7876,14 @@ class AppLocalizationsTa extends AppLocalizations {
   String get tourAsk6Body => 'இது பயணங்களைத் திட்டமிடவும், நபர்களைச் சேர்க்கவும், உங்கள் நாட்டின் புதுப்பிப்பு படிகளைக் கண்டறியவும், பதிவுகளைப் பகிரவும் முடியும், அதிகாரப்பூர்வ பக்க இணைப்புகளுடன்.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'என் $name ஐச் சேர். இது $date அன்று காலாவதியாகிறது.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'இதோ. விவரங்களைச் சரிபார்த்து சேமிக்க உறுதிசெய் என்பதைத் தட்டவும்.';
+
+  @override
   String get tourWallet1Title => 'முதலில் தயாராகுங்கள்';
 
   @override

@@ -2619,6 +2619,8 @@
   "tourAsk5Body": "Chats bleiben 90 Tage im „Chatverlauf“, und Fragevorschläge helfen beim Einstieg.",
   "tourAsk6Title": "Mehr als Einträge",
   "tourAsk6Body": "Es kann auch Reisen planen, Personen hinzufügen, die Verlängerungsschritte für dein Land finden und Einträge teilen, mit Links zu offiziellen Seiten.",
+  "tourAskSampleQuestion": "Füge meinen {name} hinzu. Er läuft am {date} ab.",
+  "tourAskSampleAnswer": "Hier ist er. Prüfe die Angaben und tippe auf Bestätigen, um ihn zu speichern.",
   "tourWallet1Title": "Zuerst vorbereiten",
   "tourWallet1Body": "Öffne eine Karte oder ein Dokument und wähle, wo du es aufbewahrst, etwa in Geldbörse oder Tasche.",
   "tourWallet2Title": "Die Sperrnummer speichern",

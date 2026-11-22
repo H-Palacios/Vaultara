@@ -2588,6 +2588,8 @@
   "tourAsk5Body": "Cuộc trò chuyện được lưu 90 ngày trong «Lịch sử trò chuyện» và câu hỏi gợi ý giúp bạn bắt đầu.",
   "tourAsk6Title": "Hơn cả các mục",
   "tourAsk6Body": "Nó còn có thể lên kế hoạch chuyến đi, thêm người, tìm các bước gia hạn cho quốc gia của bạn và chia sẻ mục, kèm liên kết tới trang chính thức.",
+  "tourAskSampleQuestion": "Thêm {name} của tôi. Hết hạn vào {date}.",
+  "tourAskSampleAnswer": "Đây rồi. Kiểm tra thông tin và chạm Xác nhận để lưu.",
   "tourWallet1Title": "Chuẩn bị trước",
   "tourWallet1Body": "Mở một thẻ hoặc giấy tờ và chọn nơi bạn cất, ví dụ ví hoặc túi.",
   "tourWallet2Title": "Lưu số khóa thẻ",

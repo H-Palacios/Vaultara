@@ -2600,6 +2600,8 @@
   "tourAsk5Body": "Les conversations restent 90 jours dans « Historique des conversations », et des suggestions de questions vous aident à démarrer.",
   "tourAsk6Title": "Plus que des éléments",
   "tourAsk6Body": "Il peut aussi planifier des voyages, ajouter des personnes, trouver les étapes de renouvellement de votre pays et partager des éléments, avec des liens vers les pages officielles.",
+  "tourAskSampleQuestion": "Ajoute mon {name}. Il expire le {date}.",
+  "tourAskSampleAnswer": "Le voici. Vérifiez les informations et touchez Confirmer pour l'enregistrer.",
   "tourWallet1Title": "Préparez-vous d'abord",
   "tourWallet1Body": "Ouvrez une carte ou un document et choisissez où vous le rangez, par exemple dans votre portefeuille ou votre sac.",
   "tourWallet2Title": "Enregistrer le numéro d'opposition",

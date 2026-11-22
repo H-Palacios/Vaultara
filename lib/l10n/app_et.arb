@@ -2753,6 +2753,8 @@
   "tourAsk5Body": "Vestlusi hoitakse 90 päeva jaotises „Vestluste ajalugu“ ja soovitatud küsimused aitavad alustada.",
   "tourAsk6Title": "Rohkem kui kirjed",
   "tourAsk6Body": "See oskab ka reise planeerida, inimesi lisada, sinu riigi uuendamise samme leida ja kirjeid jagada, koos linkidega ametlikele lehtedele.",
+  "tourAskSampleQuestion": "Lisa minu {name}. See aegub {date}.",
+  "tourAskSampleAnswer": "Siin see on. Kontrolli andmeid ja puuduta salvestamiseks Kinnita.",
   "tourWallet1Title": "Valmistu esmalt",
   "tourWallet1Body": "Ava kaart või dokument ja vali, kus seda hoiad, näiteks rahakotis või kotis.",
   "tourWallet2Title": "Salvesta sulgemisnumber",

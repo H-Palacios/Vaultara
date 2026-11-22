@@ -2588,6 +2588,8 @@
   "tourAsk5Body": "Samtaler lagres i 90 dager i «Samtalehistorikk», og foreslåtte spørsmål hjelper deg i gang.",
   "tourAsk6Title": "Mer enn oppføringer",
   "tourAsk6Body": "Den kan også planlegge reiser, legge til personer, finne fornyelsestrinnene for landet ditt og dele oppføringer, med lenker til offisielle sider.",
+  "tourAskSampleQuestion": "Legg til {name} mitt. Det utløper {date}.",
+  "tourAskSampleAnswer": "Her er det. Sjekk opplysningene og trykk på Bekreft for å lagre det.",
   "tourWallet1Title": "Gjør deg klar først",
   "tourWallet1Body": "Åpne et kort eller dokument, og velg hvor du har det, for eksempel lommeboken eller vesken.",
   "tourWallet2Title": "Lagre sperrenummeret",

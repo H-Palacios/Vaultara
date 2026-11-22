@@ -7866,6 +7866,14 @@ class AppLocalizationsMn extends AppLocalizations {
   String get tourAsk6Body => 'Аялал төлөвлөх, хүн нэмэх, таны улсын сунгалтын алхмуудыг олох, бичлэг хуваалцах боломжтой бөгөөд албан ёсны хуудасны холбоосыг өгнө.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Миний $name-г нэм. $date-нд дуусна.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Энэ байна. Мэдээллийг шалгаад хадгалахын тулд Баталгаажуулахыг дарна уу.';
+
+  @override
   String get tourWallet1Title => 'Эхлээд бэлд';
 
   @override

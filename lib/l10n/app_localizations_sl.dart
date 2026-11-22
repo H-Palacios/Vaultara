@@ -8016,6 +8016,14 @@ class AppLocalizationsSl extends AppLocalizations {
   String get tourAsk6Body => 'Lahko tudi načrtuje potovanja, dodaja osebe, najde korake obnove za vašo državo in deli zapise, s povezavami na uradne strani.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Dodaj moj $name. Poteče $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Izvolite. Preverite podatke in tapnite Potrdi, da ga shranite.';
+
+  @override
   String get tourWallet1Title => 'Najprej se pripravite';
 
   @override

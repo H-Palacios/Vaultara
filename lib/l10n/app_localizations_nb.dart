@@ -7880,6 +7880,14 @@ class AppLocalizationsNb extends AppLocalizations {
   String get tourAsk6Body => 'Den kan også planlegge reiser, legge til personer, finne fornyelsestrinnene for landet ditt og dele oppføringer, med lenker til offisielle sider.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Legg til $name mitt. Det utløper $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Her er det. Sjekk opplysningene og trykk på Bekreft for å lagre det.';
+
+  @override
   String get tourWallet1Title => 'Gjør deg klar først';
 
   @override

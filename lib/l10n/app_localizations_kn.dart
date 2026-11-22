@@ -7876,6 +7876,14 @@ class AppLocalizationsKn extends AppLocalizations {
   String get tourAsk6Body => 'ಇದು ಪ್ರಯಾಣ ಯೋಜಿಸಲು, ಜನರನ್ನು ಸೇರಿಸಲು, ನಿಮ್ಮ ದೇಶದ ನವೀಕರಣ ಹಂತಗಳನ್ನು ಹುಡುಕಲು ಮತ್ತು ದಾಖಲೆಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ಸಹ ಸಾಧ್ಯ, ಅಧಿಕೃತ ಪುಟಗಳ ಲಿಂಕ್‌ಗಳೊಂದಿಗೆ.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'ನನ್ನ $name ಸೇರಿಸಿ. ಇದು $date ರಂದು ಅವಧಿ ಮುಗಿಯುತ್ತದೆ.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'ಇಲ್ಲಿದೆ. ವಿವರಗಳನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಉಳಿಸಲು ದೃಢೀಕರಿಸಿ ಟ್ಯಾಪ್ ಮಾಡಿ.';
+
+  @override
   String get tourWallet1Title => 'ಮೊದಲು ಸಿದ್ಧರಾಗಿ';
 
   @override

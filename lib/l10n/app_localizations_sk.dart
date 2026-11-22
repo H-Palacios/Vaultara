@@ -8009,6 +8009,14 @@ class AppLocalizationsSk extends AppLocalizations {
   String get tourAsk6Body => 'Dokáže aj plánovať cesty, pridávať ľudí, nájsť kroky obnovenia pre vašu krajinu a zdieľať záznamy, s odkazmi na oficiálne stránky.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Pridaj môj $name. Platnosť končí $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Tu je. Skontrolujte údaje a ťuknutím na Potvrdiť ho uložte.';
+
+  @override
   String get tourWallet1Title => 'Pripravte sa vopred';
 
   @override

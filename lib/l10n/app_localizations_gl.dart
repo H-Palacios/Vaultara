@@ -7880,6 +7880,14 @@ class AppLocalizationsGl extends AppLocalizations {
   String get tourAsk6Body => 'Tamén pode planificar viaxes, engadir persoas, atopar os pasos de renovación do teu país e compartir rexistros, con ligazóns a páxinas oficiais.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Engade o meu $name. Caduca o $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Aquí está. Revisa os datos e toca Confirmar para gardalo.';
+
+  @override
   String get tourWallet1Title => 'Prepárate primeiro';
 
   @override

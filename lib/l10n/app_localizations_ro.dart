@@ -7953,6 +7953,14 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tourAsk6Body => 'Poate și să planifice călătorii, să adauge persoane, să găsească pașii de reînnoire pentru țara ta și să partajeze înregistrări, cu linkuri către pagini oficiale.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Adaugă $name meu. Expiră pe $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Iată-l. Verifică detaliile și atinge Confirmă pentru a-l salva.';
+
+  @override
   String get tourWallet1Title => 'Pregătește-te întâi';
 
   @override

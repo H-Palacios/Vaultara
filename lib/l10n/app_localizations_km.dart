@@ -7817,6 +7817,14 @@ class AppLocalizationsKm extends AppLocalizations {
   String get tourAsk6Body => 'វាក៏អាចរៀបគម្រោងដំណើរ បន្ថែមមនុស្ស ស្វែងរកជំហានបន្តសម្រាប់ប្រទេសរបស់អ្នក និងចែករំលែកកំណត់ត្រា ជាមួយតំណទៅទំព័រផ្លូវការ។';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'បន្ថែម $name របស់ខ្ញុំ។ វាផុតកំណត់នៅ $date។';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'នេះហើយ។ ពិនិត្យព័ត៌មានលម្អិត ហើយចុច បញ្ជាក់ ដើម្បីរក្សាទុក។';
+
+  @override
   String get tourWallet1Title => 'ត្រៀមខ្លួនជាមុន';
 
   @override

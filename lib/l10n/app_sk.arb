@@ -2588,6 +2588,8 @@
   "tourAsk5Body": "Chaty sa uchovávajú 90 dní v „História chatov“ a navrhované otázky vám pomôžu začať.",
   "tourAsk6Title": "Viac než záznamy",
   "tourAsk6Body": "Dokáže aj plánovať cesty, pridávať ľudí, nájsť kroky obnovenia pre vašu krajinu a zdieľať záznamy, s odkazmi na oficiálne stránky.",
+  "tourAskSampleQuestion": "Pridaj môj {name}. Platnosť končí {date}.",
+  "tourAskSampleAnswer": "Tu je. Skontrolujte údaje a ťuknutím na Potvrdiť ho uložte.",
   "tourWallet1Title": "Pripravte sa vopred",
   "tourWallet1Body": "Otvorte kartu alebo doklad a zvoľte, kde ho máte, napríklad v peňaženke alebo taške.",
   "tourWallet2Title": "Uložte blokovacie číslo",

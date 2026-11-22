@@ -2600,6 +2600,8 @@
   "tourAsk5Body": "Ana ajiye hirarraki na kwanaki 90 a «Tarihin hira», kuma tambayoyin da aka ba da shawara suna taimaka maka ka fara.",
   "tourAsk6Title": "Fiye da rikodi",
   "tourAsk6Body": "Tana iya tsara tafiye-tafiye, ƙara mutane, nemo matakan sabuntawa na ƙasarka da raba rikodi, tare da hanyoyin zuwa shafukan hukuma.",
+  "tourAskSampleQuestion": "Ƙara {name} na. Zai ƙare a ranar {date}.",
+  "tourAskSampleAnswer": "Ga shi. Duba bayanan sannan ka matsa Tabbatar don adana shi.",
   "tourWallet1Title": "Shirya da farko",
   "tourWallet1Body": "Buɗe kati ko takarda ka zaɓi inda kake ajiye shi, kamar walat ko jakarka.",
   "tourWallet2Title": "Ajiye lambar dakatarwa",

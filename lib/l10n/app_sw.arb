@@ -2588,6 +2588,8 @@
   "tourAsk5Body": "Gumzo huhifadhiwa siku 90 kwenye «Historia ya mazungumzo», na maswali yaliyopendekezwa hukusaidia kuanza.",
   "tourAsk6Title": "Zaidi ya rekodi",
   "tourAsk6Body": "Inaweza pia kupanga safari, kuongeza watu, kupata hatua za kuhuisha za nchi yako na kushiriki rekodi, pamoja na viungo vya kurasa rasmi.",
+  "tourAskSampleQuestion": "Ongeza {name} yangu. Inaisha muda tarehe {date}.",
+  "tourAskSampleAnswer": "Hii hapa. Kagua maelezo kisha uguse Thibitisha ili kuihifadhi.",
   "tourWallet1Title": "Jiandae kwanza",
   "tourWallet1Body": "Fungua kadi au hati na uchague unapoiweka, kama pochi au mkoba wako.",
   "tourWallet2Title": "Hifadhi nambari ya kuzuia",

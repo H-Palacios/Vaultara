@@ -7876,6 +7876,14 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tourAsk6Body => 'U safar rejalashtirishi, odam qoʻshishi, mamlakatingiz uchun yangilash bosqichlarini topishi va yozuvlarni ulashishi ham mumkin, rasmiy sahifalarga havolalar bilan.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Mening ${name}imni qoʻsh. Muddati $date da tugaydi.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Mana. Maʼlumotlarni tekshiring va saqlash uchun Tasdiqlashni bosing.';
+
+  @override
   String get tourWallet1Title => 'Avval tayyorlaning';
 
   @override

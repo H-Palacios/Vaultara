@@ -7876,6 +7876,14 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tourAsk6Body => 'Inaweza pia kupanga safari, kuongeza watu, kupata hatua za kuhuisha za nchi yako na kushiriki rekodi, pamoja na viungo vya kurasa rasmi.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Ongeza $name yangu. Inaisha muda tarehe $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Hii hapa. Kagua maelezo kisha uguse Thibitisha ili kuihifadhi.';
+
+  @override
   String get tourWallet1Title => 'Jiandae kwanza';
 
   @override

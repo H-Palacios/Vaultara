@@ -2593,6 +2593,8 @@
   "tourAsk5Body": "Obrolan disimpan 90 hari di «Riwayat obrolan», dan pertanyaan yang disarankan membantu Anda memulai.",
   "tourAsk6Title": "Lebih dari sekadar catatan",
   "tourAsk6Body": "Ia juga dapat merencanakan perjalanan, menambahkan orang, menemukan langkah perpanjangan untuk negara Anda, dan membagikan catatan, dengan tautan ke halaman resmi.",
+  "tourAskSampleQuestion": "Tambahkan {name} saya. Masa berlakunya habis pada {date}.",
+  "tourAskSampleAnswer": "Ini dia. Periksa detailnya lalu ketuk Konfirmasi untuk menyimpannya.",
   "tourWallet1Title": "Bersiap dulu",
   "tourWallet1Body": "Buka kartu atau dokumen dan pilih tempat Anda menyimpannya, misalnya dompet atau tas.",
   "tourWallet2Title": "Simpan nomor blokir",

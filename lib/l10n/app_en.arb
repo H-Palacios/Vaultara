@@ -9663,6 +9663,22 @@
   "@tourAsk6Body": {
     "description": "Text of a tutorial step."
   },
+  "tourAskSampleQuestion": "Add my {name}. It expires on {date}.",
+  "@tourAskSampleQuestion": {
+    "description": "Made-up request in the Ask Vaultara tutorial. {name} is a sample record such as British Passport; {date} is a date.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "tourAskSampleAnswer": "Here it is. Check the details and tap Confirm to save it.",
+  "@tourAskSampleAnswer": {
+    "description": "Made-up answer in the Ask Vaultara tutorial, above a card with Confirm and Cancel."
+  },
   "tourWallet1Title": "Get ready first",
   "@tourWallet1Title": {
     "description": "Title of a tutorial step. Short."

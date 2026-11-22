@@ -2588,6 +2588,8 @@
   "tourAsk5Body": "Sohbet 90 rojan di «Dîroka sohbetan» de dimînin, û pirsên pêşniyarkirî alîkariya destpêkirinê dikin.",
   "tourAsk6Title": "Ji tomaran zêdetir",
   "tourAsk6Body": "Ew dikare rêwîtiyan plan bike, mirovan zêde bike, gavên nûkirinê ji bo welatê te bibîne û tomaran parve bike, bi girêdanên rûpelên fermî.",
+  "tourAskSampleQuestion": "{name} min lê zêde bike. Di {date} de diqede.",
+  "tourAskSampleAnswer": "Va ye. Hûrguliyan kontrol bike û ji bo tomarkirinê Piştrast bike bitikîne.",
   "tourWallet1Title": "Pêşî amade be",
   "tourWallet1Body": "Kartek an belgeyek veke û hilbijêre tu li ku digirî, wek cûzdan an çenteyê xwe.",
   "tourWallet2Title": "Hejmara astengkirinê tomar bike",

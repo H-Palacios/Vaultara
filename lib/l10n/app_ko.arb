@@ -2588,6 +2588,8 @@
   "tourAsk5Body": "채팅은 '대화 기록'에 90일 동안 보관되고, 추천 질문이 시작을 도와요.",
   "tourAsk6Title": "기록 그 이상",
   "tourAsk6Body": "여행 계획, 사람 추가, 거주 국가의 갱신 절차 찾기, 기록 공유도 할 수 있으며 공식 페이지 링크를 함께 보여 줍니다.",
+  "tourAskSampleQuestion": "내 {name} 추가해 줘. {date}에 만료돼.",
+  "tourAskSampleAnswer": "여기 있어요. 내용을 확인하고 저장하려면 확인을 누르세요.",
   "tourWallet1Title": "먼저 준비하기",
   "tourWallet1Body": "카드나 서류를 열고 지갑이나 가방 등 보관 장소를 고르세요.",
   "tourWallet2Title": "분실 신고 번호 저장",

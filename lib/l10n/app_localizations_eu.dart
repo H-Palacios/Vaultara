@@ -7880,6 +7880,14 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tourAsk6Body => 'Bidaiak planifikatu, pertsonak gehitu, zure herrialdeko berritze-urratsak aurkitu eta erregistroak partekatu ere egin ditzake, orri ofizialetarako estekekin.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Gehitu nire $name. $date egunean iraungitzen da.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Hemen duzu. Egiaztatu xehetasunak eta sakatu Berretsi gordetzeko.';
+
+  @override
   String get tourWallet1Title => 'Prestatu lehenik';
 
   @override

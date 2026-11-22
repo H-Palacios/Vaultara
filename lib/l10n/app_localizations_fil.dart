@@ -7870,6 +7870,14 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tourAsk6Body => 'Kaya rin nitong magplano ng biyahe, magdagdag ng tao, hanapin ang mga hakbang sa pag-renew para sa iyong bansa at magbahagi ng record, may link sa mga opisyal na pahina.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Idagdag ang aking $name. Mag-e-expire ito sa $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Heto na. Tingnan ang mga detalye at i-tap ang Kumpirmahin para i-save ito.';
+
+  @override
   String get tourWallet1Title => 'Maghanda muna';
 
   @override

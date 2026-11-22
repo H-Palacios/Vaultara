@@ -2600,6 +2600,8 @@
   "tourAsk5Body": "As conversas gárdanse 90 días en «Historial de chats», e as preguntas suxeridas axúdanche a comezar.",
   "tourAsk6Title": "Máis ca rexistros",
   "tourAsk6Body": "Tamén pode planificar viaxes, engadir persoas, atopar os pasos de renovación do teu país e compartir rexistros, con ligazóns a páxinas oficiais.",
+  "tourAskSampleQuestion": "Engade o meu {name}. Caduca o {date}.",
+  "tourAskSampleAnswer": "Aquí está. Revisa os datos e toca Confirmar para gardalo.",
   "tourWallet1Title": "Prepárate primeiro",
   "tourWallet1Body": "Abre unha tarxeta ou un documento e escolle onde o gardas, como a carteira ou o bolso.",
   "tourWallet2Title": "Garda o número de bloqueo",

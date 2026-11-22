@@ -2593,6 +2593,8 @@
   "tourAsk5Body": "Le chat restano 90 giorni in «Cronologia chat» e le domande suggerite ti aiutano a iniziare.",
   "tourAsk6Title": "Più che elementi",
   "tourAsk6Body": "Può anche pianificare viaggi, aggiungere persone, trovare i passaggi di rinnovo per il tuo paese e condividere elementi, con link alle pagine ufficiali.",
+  "tourAskSampleQuestion": "Aggiungi il mio {name}. Scade il {date}.",
+  "tourAskSampleAnswer": "Eccolo. Controlla i dati e tocca Conferma per salvarlo.",
   "tourWallet1Title": "Preparati prima",
   "tourWallet1Body": "Apri una carta o un documento e scegli dove lo tieni, ad esempio nel portafoglio o nella borsa.",
   "tourWallet2Title": "Salva il numero di blocco",

@@ -7875,6 +7875,14 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tourAsk6Body => 'එයට සංචාර සැලසුම් කිරීම, පුද්ගලයන් එක් කිරීම, ඔබේ රටේ අලුත් කිරීමේ පියවර සොයා ගැනීම සහ වාර්තා බෙදා ගැනීමද කළ හැක, නිල පිටු සබැඳි සමඟ.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'මගේ $name එක් කරන්න. එය $date දින කල් ඉකුත් වේ.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'මෙන්න. විස්තර පරීක්ෂා කර සුරැකීමට තහවුරු කරන්න තට්ටු කරන්න.';
+
+  @override
   String get tourWallet1Title => 'පළමුව සූදානම් වන්න';
 
   @override

@@ -2588,6 +2588,8 @@
   "tourAsk5Body": "Sohbetler “Sohbet geçmişi” bölümünde 90 gün saklanır, önerilen sorular başlamana yardım eder.",
   "tourAsk6Title": "Kayıtlardan fazlası",
   "tourAsk6Body": "Seyahat planlayabilir, kişi ekleyebilir, ülkenin yenileme adımlarını bulabilir ve kayıt paylaşabilir, resmi sayfa bağlantılarıyla.",
+  "tourAskSampleQuestion": "{name} ekle. Süresi {date} tarihinde doluyor.",
+  "tourAskSampleAnswer": "İşte burada. Bilgileri kontrol edin ve kaydetmek için Onayla'ya dokunun.",
   "tourWallet1Title": "Önce hazırlan",
   "tourWallet1Body": "Bir kartı ya da belgeyi aç ve nerede tuttuğunu seç, örneğin cüzdanında ya da çantanda.",
   "tourWallet2Title": "İptal numarasını kaydet",

@@ -2593,6 +2593,8 @@
   "tourAsk5Body": "Spjall er geymt í 90 daga í „Spjallsaga“ og tillögur að spurningum hjálpa þér af stað.",
   "tourAsk6Title": "Meira en færslur",
   "tourAsk6Body": "Það getur líka skipulagt ferðir, bætt við fólki, fundið endurnýjunarskref fyrir landið þitt og deilt færslum, með tenglum á opinberar síður.",
+  "tourAskSampleQuestion": "Bættu við {name} mínu. Það rennur út {date}.",
+  "tourAskSampleAnswer": "Hér er það. Athugaðu upplýsingarnar og ýttu á Staðfesta til að vista.",
   "tourWallet1Title": "Undirbúðu þig fyrst",
   "tourWallet1Body": "Opnaðu kort eða skjal og veldu hvar þú geymir það, t.d. í veskinu eða töskunni.",
   "tourWallet2Title": "Vistaðu lokunarnúmerið",

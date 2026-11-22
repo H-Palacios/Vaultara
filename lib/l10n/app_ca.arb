@@ -2619,6 +2619,8 @@
   "tourAsk5Body": "Els xats es guarden 90 dies a «Historial de xats», i les preguntes suggerides t'ajuden a començar.",
   "tourAsk6Title": "Més que registres",
   "tourAsk6Body": "També pot planificar viatges, afegir persones, trobar els passos de renovació del teu país i compartir registres, amb enllaços a pàgines oficials.",
+  "tourAskSampleQuestion": "Afegeix el meu {name}. Caduca el {date}.",
+  "tourAskSampleAnswer": "Aquí el tens. Revisa les dades i toca Confirma per desar-lo.",
   "tourWallet1Title": "Prepara't primer",
   "tourWallet1Body": "Obre una targeta o un document i tria on el guardes, com la cartera o la bossa.",
   "tourWallet2Title": "Desa el número de bloqueig",

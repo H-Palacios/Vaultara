@@ -7880,6 +7880,14 @@ class AppLocalizationsEt extends AppLocalizations {
   String get tourAsk6Body => 'See oskab ka reise planeerida, inimesi lisada, sinu riigi uuendamise samme leida ja kirjeid jagada, koos linkidega ametlikele lehtedele.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Lisa minu $name. See aegub $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Siin see on. Kontrolli andmeid ja puuduta salvestamiseks Kinnita.';
+
+  @override
   String get tourWallet1Title => 'Valmistu esmalt';
 
   @override

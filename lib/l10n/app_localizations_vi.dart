@@ -7819,6 +7819,14 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tourAsk6Body => 'Nó còn có thể lên kế hoạch chuyến đi, thêm người, tìm các bước gia hạn cho quốc gia của bạn và chia sẻ mục, kèm liên kết tới trang chính thức.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Thêm $name của tôi. Hết hạn vào $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Đây rồi. Kiểm tra thông tin và chạm Xác nhận để lưu.';
+
+  @override
   String get tourWallet1Title => 'Chuẩn bị trước';
 
   @override

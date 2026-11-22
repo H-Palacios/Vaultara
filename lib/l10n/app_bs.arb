@@ -2619,6 +2619,8 @@
   "tourAsk5Body": "Razgovori se čuvaju 90 dana u „Historija razgovora”, a predložena pitanja pomažu vam da počnete.",
   "tourAsk6Title": "Više od zapisa",
   "tourAsk6Body": "Može i planirati putovanja, dodavati osobe, pronaći korake obnove za vašu zemlju i dijeliti zapise, uz linkove na službene stranice.",
+  "tourAskSampleQuestion": "Dodaj moj {name}. Ističe {date}.",
+  "tourAskSampleAnswer": "Evo ga. Provjerite podatke i dodirnite Potvrdi da ga sačuvate.",
   "tourWallet1Title": "Prvo se pripremite",
   "tourWallet1Body": "Otvorite karticu ili dokument i odaberite gdje ga držite, npr. u novčaniku ili torbi.",
   "tourWallet2Title": "Sačuvajte broj za blokadu",

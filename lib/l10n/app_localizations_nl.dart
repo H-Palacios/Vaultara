@@ -7880,6 +7880,14 @@ class AppLocalizationsNl extends AppLocalizations {
   String get tourAsk6Body => 'Het kan ook reizen plannen, personen toevoegen, de verlengingsstappen voor je land vinden en items delen, met links naar officiële pagina\'s.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Voeg mijn $name toe. Die verloopt op $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Hier is hij. Controleer de gegevens en tik op Bevestigen om hem op te slaan.';
+
+  @override
   String get tourWallet1Title => 'Eerst voorbereiden';
 
   @override

@@ -7880,6 +7880,14 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tourAsk6Body => 'Se osaa myös suunnitella matkoja, lisätä henkilöitä, löytää maasi uusimisvaiheet ja jakaa tietueita, linkein virallisille sivuille.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Lisää $name. Se vanhenee $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Tässä se on. Tarkista tiedot ja tallenna napauttamalla Vahvista.';
+
+  @override
   String get tourWallet1Title => 'Valmistaudu ensin';
 
   @override

@@ -8101,6 +8101,14 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tourAsk6Body => 'يمكنه أيضًا تخطيط الرحلات وإضافة الأشخاص والعثور على خطوات التجديد في بلدك ومشاركة السجلات، مع روابط إلى الصفحات الرسمية.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'أضف $name الخاص بي. ينتهي في $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'ها هو. تحقق من التفاصيل واضغط تأكيد لحفظه.';
+
+  @override
   String get tourWallet1Title => 'استعد أولاً';
 
   @override

@@ -7876,6 +7876,14 @@ class AppLocalizationsGu extends AppLocalizations {
   String get tourAsk6Body => 'તે મુસાફરીનું આયોજન, લોકો ઉમેરવા, તમારા દેશ માટે રિન્યૂના પગલાં શોધવા અને રેકોર્ડ શેર કરવાનું પણ કરી શકે છે, સત્તાવાર પેજની લિંક સાથે.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'મારો $name ઉમેરો. તે $date ના રોજ સમાપ્ત થાય છે.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'આ રહ્યો. વિગતો તપાસો અને સાચવવા માટે પુષ્ટિ કરો પર ટૅપ કરો.';
+
+  @override
   String get tourWallet1Title => 'પહેલાં તૈયારી કરો';
 
   @override

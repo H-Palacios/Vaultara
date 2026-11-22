@@ -8030,6 +8030,14 @@ class AppLocalizationsPl extends AppLocalizations {
   String get tourAsk6Body => 'Potrafi też planować podróże, dodawać osoby, znajdować kroki odnowienia w Twoim kraju i udostępniać wpisy, z linkami do oficjalnych stron.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Dodaj mój $name. Wygasa $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Proszę bardzo. Sprawdź dane i stuknij Potwierdź, aby zapisać.';
+
+  @override
   String get tourWallet1Title => 'Przygotuj się najpierw';
 
   @override

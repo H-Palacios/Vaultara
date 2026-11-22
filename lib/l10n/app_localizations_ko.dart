@@ -7819,6 +7819,14 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tourAsk6Body => '여행 계획, 사람 추가, 거주 국가의 갱신 절차 찾기, 기록 공유도 할 수 있으며 공식 페이지 링크를 함께 보여 줍니다.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return '내 $name 추가해 줘. $date에 만료돼.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => '여기 있어요. 내용을 확인하고 저장하려면 확인을 누르세요.';
+
+  @override
   String get tourWallet1Title => '먼저 준비하기';
 
   @override

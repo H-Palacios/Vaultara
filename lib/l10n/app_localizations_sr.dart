@@ -7946,6 +7946,14 @@ class AppLocalizationsSr extends AppLocalizations {
   String get tourAsk6Body => 'Може и да планира путовања, додаје особе, пронађе кораке обнове за вашу земљу и дели записе, уз везе ка званичним страницама.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Додај мој $name. Истиче $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Ево га. Проверите податке и додирните Потврди да га сачувате.';
+
+  @override
   String get tourWallet1Title => 'Прво се припремите';
 
   @override
@@ -17765,6 +17773,14 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get tourAsk6Body => 'Може и да планира путовања, додаје особе, пронађе кораке обнове за вашу земљу и дели записе, уз везе ка званичним страницама.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Додај мој $name. Истиче $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Ево га. Проверите податке и додирните Потврди да га сачувате.';
+
+  @override
   String get tourWallet1Title => 'Прво се припремите';
 
   @override
@@ -27578,6 +27594,14 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get tourAsk6Body => 'Može i da planira putovanja, dodaje osobe, pronađe korake obnove za vašu zemlju i deli zapise, uz veze ka zvaničnim stranicama.';
+
+  @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Dodaj moj $name. Ističe $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Evo ga. Proverite podatke i dodirnite Potvrdi da ga sačuvate.';
 
   @override
   String get tourWallet1Title => 'Prvo se pripremite';

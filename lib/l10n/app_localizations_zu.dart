@@ -7876,6 +7876,14 @@ class AppLocalizationsZu extends AppLocalizations {
   String get tourAsk6Body => 'Ingahlela nohambo, yengeze abantu, ithole izinyathelo zokuvuselela zezwe lakho futhi yabelane ngamarekhodi, ngezixhumanisi zamakhasi asemthethweni.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Engeza i-$name yami. Iphelelwa ngomhla ka-$date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Nansi. Hlola imininingwane bese uthepha Qinisekisa ukuyilondoloza.';
+
+  @override
   String get tourWallet1Title => 'Lungiselela kuqala';
 
   @override

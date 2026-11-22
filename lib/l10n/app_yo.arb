@@ -2588,6 +2588,8 @@
   "tourAsk5Body": "A tọju awọn iwiregbe fun ọjọ 90 ninu «Ìtàn ìbánisọ̀rọ̀», ati pe awọn ibeere ti a daba ṣe iranlọwọ fun ọ lati bẹrẹ.",
   "tourAsk6Title": "Ju àwọn àkọsílẹ̀ lọ",
   "tourAsk6Body": "Ó tún lè ṣètò ìrìn àjò, fi àwọn ènìyàn kún un, wá àwọn ìgbésẹ̀ isọdọtun fún orílẹ̀-èdè rẹ, kí ó sì pín àwọn àkọsílẹ̀, pẹ̀lú àwọn ìjápọ̀ sí àwọn ojú-ìwé ìjọba.",
+  "tourAskSampleQuestion": "Fi {name} mi kún un. Ó máa parí ní {date}.",
+  "tourAskSampleAnswer": "Ó nìyí. Ṣàyẹ̀wò àwọn àlàyé kí o sì tẹ Jẹ́rìí sí láti fi pamọ́.",
   "tourWallet1Title": "Mura silẹ ni akọkọ",
   "tourWallet1Body": "Ṣi kaadi tabi iwe kan ki o yan ibi ti o tọju rẹ, bii apamọwọ tabi apo rẹ.",
   "tourWallet2Title": "Fi nọmba idinamọ pamọ",

@@ -8017,6 +8017,14 @@ class AppLocalizationsLt extends AppLocalizations {
   String get tourAsk6Body => 'Jis taip pat gali planuoti keliones, pridėti žmonių, rasti jūsų šalies atnaujinimo žingsnius ir bendrinti įrašus, su nuorodomis į oficialius puslapius.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Pridėk mano $name. Galioja iki $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Štai. Patikrinkite duomenis ir bakstelėkite Patvirtinti, kad išsaugotumėte.';
+
+  @override
   String get tourWallet1Title => 'Pirmiausia pasiruoškite';
 
   @override

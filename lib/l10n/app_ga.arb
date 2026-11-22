@@ -2600,6 +2600,8 @@
   "tourAsk5Body": "Coinnítear comhráite ar feadh 90 lá in «Stair comhráite», agus cabhraíonn ceisteanna molta leat tosú.",
   "tourAsk6Title": "Níos mó ná taifid",
   "tourAsk6Body": "Is féidir leis turais a phleanáil, daoine a chur leis, céimeanna athnuachana do thíre a aimsiú agus taifid a roinnt, le naisc chuig leathanaigh oifigiúla.",
+  "tourAskSampleQuestion": "Cuir mo {name} leis. Rachaidh sé in éag ar {date}.",
+  "tourAskSampleAnswer": "Seo é. Seiceáil na sonraí agus tapáil Deimhnigh chun é a shábháil.",
   "tourWallet1Title": "Ullmhaigh ar dtús",
   "tourWallet1Body": "Oscail cárta nó doiciméad agus roghnaigh cá gcoinníonn tú é, mar shampla i do sparán nó i do mhála.",
   "tourWallet2Title": "Sábháil an uimhir bhlocála",

@@ -8025,6 +8025,14 @@ class AppLocalizationsRu extends AppLocalizations {
   String get tourAsk6Body => 'Он также может планировать поездки, добавлять людей, находить шаги продления для вашей страны и делиться записями, со ссылками на официальные страницы.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Добавь мой $name. Он истекает $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Вот он. Проверьте данные и нажмите «Подтвердить», чтобы сохранить.';
+
+  @override
   String get tourWallet1Title => 'Подготовьтесь заранее';
 
   @override

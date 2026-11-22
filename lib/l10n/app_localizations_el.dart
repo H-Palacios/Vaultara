@@ -7880,6 +7880,14 @@ class AppLocalizationsEl extends AppLocalizations {
   String get tourAsk6Body => 'Μπορεί επίσης να σχεδιάσει ταξίδια, να προσθέσει άτομα, να βρει τα βήματα ανανέωσης για τη χώρα σας και να μοιραστεί εγγραφές, με συνδέσμους σε επίσημες σελίδες.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Πρόσθεσε το $name μου. Λήγει στις $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Ορίστε. Ελέγξτε τα στοιχεία και πατήστε Επιβεβαίωση για να αποθηκευτεί.';
+
+  @override
   String get tourWallet1Title => 'Πρώτα προετοιμαστείτε';
 
   @override

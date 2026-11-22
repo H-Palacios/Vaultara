@@ -7876,6 +7876,14 @@ class AppLocalizationsKa extends AppLocalizations {
   String get tourAsk6Body => 'მას ასევე შეუძლია მოგზაურობის დაგეგმვა, ადამიანების დამატება, თქვენი ქვეყნის განახლების ნაბიჯების პოვნა და ჩანაწერების გაზიარება, ოფიციალური გვერდების ბმულებით.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'დაამატე ჩემი $name. მოქმედება სრულდება $date-ს.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'აი. შეამოწმეთ დეტალები და შესანახად შეეხეთ დადასტურებას.';
+
+  @override
   String get tourWallet1Title => 'ჯერ მოემზადეთ';
 
   @override

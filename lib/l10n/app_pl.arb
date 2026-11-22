@@ -2588,6 +2588,8 @@
   "tourAsk5Body": "Czaty są przechowywane przez 90 dni w „Historia rozmów”, a sugerowane pytania pomogą zacząć.",
   "tourAsk6Title": "Więcej niż wpisy",
   "tourAsk6Body": "Potrafi też planować podróże, dodawać osoby, znajdować kroki odnowienia w Twoim kraju i udostępniać wpisy, z linkami do oficjalnych stron.",
+  "tourAskSampleQuestion": "Dodaj mój {name}. Wygasa {date}.",
+  "tourAskSampleAnswer": "Proszę bardzo. Sprawdź dane i stuknij Potwierdź, aby zapisać.",
   "tourWallet1Title": "Przygotuj się najpierw",
   "tourWallet1Body": "Otwórz kartę lub dokument i wybierz, gdzie go trzymasz, np. w portfelu lub torbie.",
   "tourWallet2Title": "Zapisz numer zastrzegania",

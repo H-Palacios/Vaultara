@@ -7880,6 +7880,14 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tourAsk6Body => 'Mund të planifikojë edhe udhëtime, të shtojë persona, të gjejë hapat e rinovimit për vendin tuaj dhe të ndajë regjistrime, me lidhje drejt faqeve zyrtare.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Shto $name tim. Skadon më $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Ja ku është. Kontrolloni të dhënat dhe prekni Konfirmo për ta ruajtur.';
+
+  @override
   String get tourWallet1Title => 'Përgatitu më parë';
 
   @override

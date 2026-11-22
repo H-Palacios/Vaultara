@@ -7814,6 +7814,14 @@ class AppLocalizationsId extends AppLocalizations {
   String get tourAsk6Body => 'Ia juga dapat merencanakan perjalanan, menambahkan orang, menemukan langkah perpanjangan untuk negara Anda, dan membagikan catatan, dengan tautan ke halaman resmi.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Tambahkan $name saya. Masa berlakunya habis pada $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Ini dia. Periksa detailnya lalu ketuk Konfirmasi untuk menyimpannya.';
+
+  @override
   String get tourWallet1Title => 'Bersiap dulu';
 
   @override

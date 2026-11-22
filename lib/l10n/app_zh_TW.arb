@@ -2581,6 +2581,8 @@
   "tourAsk5Body": "對話會在「對話記錄」中保留 90 天，建議問題幫你快速開始。",
   "tourAsk6Title": "不只是記錄",
   "tourAsk6Body": "它還能規劃行程、新增人員、查找你所在國家的續期步驟並分享記錄，並附上官方頁面連結。",
+  "tourAskSampleQuestion": "新增我的{name}。它將於{date}到期。",
+  "tourAskSampleAnswer": "在這裡。請檢查詳細資料，然後點按「確認」儲存。",
   "tourWallet1Title": "先做好準備",
   "tourWallet1Body": "開啟卡片或證件，選擇存放位置，例如錢包或包包。",
   "tourWallet2Title": "儲存掛失電話",

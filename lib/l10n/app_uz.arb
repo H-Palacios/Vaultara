@@ -2338,6 +2338,8 @@
   "tourAsk5Body": "Suhbatlar «Suhbatlar tarixi» boʻlimida 90 kun saqlanadi, tavsiya etilgan savollar boshlashga yordam beradi.",
   "tourAsk6Title": "Yozuvlardan ham koʻproq",
   "tourAsk6Body": "U safar rejalashtirishi, odam qoʻshishi, mamlakatingiz uchun yangilash bosqichlarini topishi va yozuvlarni ulashishi ham mumkin, rasmiy sahifalarga havolalar bilan.",
+  "tourAskSampleQuestion": "Mening {name}imni qoʻsh. Muddati {date} da tugaydi.",
+  "tourAskSampleAnswer": "Mana. Maʼlumotlarni tekshiring va saqlash uchun Tasdiqlashni bosing.",
   "tourWallet1Title": "Avval tayyorlaning",
   "tourWallet1Body": "Karta yoki hujjatni oching va qayerda saqlashingizni tanlang, masalan hamyon yoki sumka.",
   "tourWallet2Title": "Bloklash raqamini saqlang",

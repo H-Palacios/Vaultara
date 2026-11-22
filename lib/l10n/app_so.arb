@@ -2588,6 +2588,8 @@
   "tourAsk5Body": "Wadahadallada waxaa lagu hayaa 90 maalmood «Taariikhda wada hadallada», su'aalaha la soo jeediyayna waxay kaa caawinayaan inaad bilowdo.",
   "tourAsk6Title": "Ka badan diiwaanno",
   "tourAsk6Body": "Waxay sidoo kale qorsheyn kartaa safarro, ku dari kartaa dad, heli kartaa tallaabooyinka cusboonaysiinta ee waddankaaga oo wadaagi kartaa diiwaanno, iyadoo leh xiriiriyeyaal bogag rasmi ah.",
+  "tourAskSampleQuestion": "Ku dar {name}-kayga. Wuxuu dhacayaa {date}.",
+  "tourAskSampleAnswer": "Waa kan. Hubi faahfaahinta oo taabo Xaqiiji si aad u kaydiso.",
   "tourWallet1Title": "Marka hore isu diyaari",
   "tourWallet1Body": "Fur kaar ama dukumenti oo dooro halka aad ku haysato, sida boorsadaada ama shandaddaada.",
   "tourWallet2Title": "Kaydi lambarka xannibaadda",

@@ -7817,6 +7817,14 @@ class AppLocalizationsMy extends AppLocalizations {
   String get tourAsk6Body => 'ခရီးစီစဉ်ခြင်း၊ လူထည့်ခြင်း၊ သင့်နိုင်ငံအတွက် သက်တမ်းတိုးအဆင့်များ ရှာခြင်းနှင့် မှတ်တမ်းမျှဝေခြင်းတို့ကိုလည်း တရားဝင်စာမျက်နှာလင့်ခ်များနှင့်အတူ လုပ်နိုင်သည်။';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'ကျွန်ုပ်၏ $name ကို ထည့်ပါ။ ၎င်းသည် $date တွင် သက်တမ်းကုန်မည်။';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'ဒီမှာပါ။ အသေးစိတ်ကို စစ်ဆေးပြီး သိမ်းရန် အတည်ပြုရန် ကိုနှိပ်ပါ။';
+
+  @override
   String get tourWallet1Title => 'ဦးစွာ ပြင်ဆင်ပါ';
 
   @override

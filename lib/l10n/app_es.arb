@@ -2595,6 +2595,8 @@
   "tourAsk5Body": "Los chats se guardan 90 días en «Historial de chats», y las preguntas sugeridas te ayudan a empezar.",
   "tourAsk6Title": "Más que registros",
   "tourAsk6Body": "También puede planificar viajes, añadir personas, encontrar los pasos de renovación de tu país y compartir registros, con enlaces a páginas oficiales.",
+  "tourAskSampleQuestion": "Añade mi {name}. Caduca el {date}.",
+  "tourAskSampleAnswer": "Aquí está. Revisa los datos y toca Confirmar para guardarlo.",
   "tourWallet1Title": "Prepárate primero",
   "tourWallet1Body": "Abre una tarjeta o documento y elige dónde lo guardas, como tu cartera o tu bolso.",
   "tourWallet2Title": "Guarda el número de bloqueo",

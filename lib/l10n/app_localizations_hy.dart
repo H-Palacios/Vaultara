@@ -7876,6 +7876,14 @@ class AppLocalizationsHy extends AppLocalizations {
   String get tourAsk6Body => 'Այն կարող է նաև պլանավորել ճամփորդություններ, ավելացնել մարդկանց, գտնել ձեր երկրի նորացման քայլերը և կիսվել գրառումներով՝ պաշտոնական էջերի հղումներով։';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Ավելացրու իմ $name-ը։ Այն լրանում է $date-ին։';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Ահա։ Ստուգեք տվյալները և հպեք Հաստատել՝ պահելու համար։';
+
+  @override
   String get tourWallet1Title => 'Նախ պատրաստվեք';
 
   @override

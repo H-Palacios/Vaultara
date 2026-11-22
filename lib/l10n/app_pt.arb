@@ -2588,6 +2588,8 @@
   "tourAsk5Body": "As conversas ficam 90 dias em «Histórico de conversas», e as perguntas sugeridas ajudam a começar.",
   "tourAsk6Title": "Mais do que registos",
   "tourAsk6Body": "Também pode planear viagens, adicionar pessoas, encontrar os passos de renovação do seu país e partilhar registos, com ligações para páginas oficiais.",
+  "tourAskSampleQuestion": "Adiciona o meu {name}. Expira a {date}.",
+  "tourAskSampleAnswer": "Aqui está. Verifique os dados e toque em Confirmar para o guardar.",
   "tourWallet1Title": "Prepare-se primeiro",
   "tourWallet1Body": "Abra um cartão ou documento e escolha onde o guarda, como a carteira ou a mala.",
   "tourWallet2Title": "Guardar o número de cancelamento",

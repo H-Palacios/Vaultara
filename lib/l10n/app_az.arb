@@ -2338,6 +2338,8 @@
   "tourAsk5Body": "Söhbətlər 90 gün «Söhbət tarixçəsi» bölməsində saxlanılır, təklif olunan suallar başlamağa kömək edir.",
   "tourAsk6Title": "Qeydlərdən daha çox",
   "tourAsk6Body": "O, həmçinin səfər planlaya, insan əlavə edə, ölkəniz üçün yeniləmə addımlarını tapa və qeydləri paylaşa bilər, rəsmi səhifələrə keçidlərlə.",
+  "tourAskSampleQuestion": "Mənim {name} əlavə et. Onun müddəti {date} tarixində bitir.",
+  "tourAskSampleAnswer": "Budur. Məlumatları yoxlayın və saxlamaq üçün Təsdiqlə toxunun.",
   "tourWallet1Title": "Əvvəlcə hazırlaşın",
   "tourWallet1Body": "Kart və ya sənəd açın və harada saxladığınızı seçin, məsələn pul kisəsi və ya çanta.",
   "tourWallet2Title": "Bloklama nömrəsini saxlayın",

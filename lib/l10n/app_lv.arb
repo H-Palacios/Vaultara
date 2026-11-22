@@ -2606,6 +2606,8 @@
   "tourAsk5Body": "Sarunas glabājas 90 dienas sadaļā “Sarunu vēsture”, un ieteiktie jautājumi palīdz sākt.",
   "tourAsk6Title": "Vairāk nekā ieraksti",
   "tourAsk6Body": "Tas var arī plānot ceļojumus, pievienot cilvēkus, atrast jūsu valsts atjaunošanas soļus un kopīgot ierakstus, ar saitēm uz oficiālām lapām.",
+  "tourAskSampleQuestion": "Pievieno manu {name}. Tā derīguma termiņš beidzas {date}.",
+  "tourAskSampleAnswer": "Lūdzu. Pārbaudi datus un pieskaries Apstiprināt, lai to saglabātu.",
   "tourWallet1Title": "Vispirms sagatavojies",
   "tourWallet1Body": "Atver karti vai dokumentu un izvēlies, kur to glabā, piemēram, makā vai somā.",
   "tourWallet2Title": "Saglabā bloķēšanas numuru",

@@ -2588,6 +2588,8 @@
   "tourAsk5Body": "Samtalar blir lagra i 90 dagar i «Samtalehistorikk», og foreslåtte spørsmål hjelper deg i gang.",
   "tourAsk6Title": "Meir enn oppføringar",
   "tourAsk6Body": "Den kan òg planleggje reiser, leggje til personar, finne fornyingsstega for landet ditt og dele oppføringar, med lenkjer til offisielle sider.",
+  "tourAskSampleQuestion": "Legg til {name} mitt. Det går ut {date}.",
+  "tourAskSampleAnswer": "Her er det. Sjekk opplysningane og trykk på Stadfest for å lagre det.",
   "tourWallet1Title": "Gjer deg klar først",
   "tourWallet1Body": "Opne eit kort eller dokument, og vel kvar du har det, til dømes lommeboka eller veska.",
   "tourWallet2Title": "Lagre sperrenummeret",

@@ -2626,6 +2626,8 @@
   "tourAsk5Body": "Kletse word 90 dae lank in \"Gespreksgeskiedenis\" gehou, en voorgestelde vrae help jou begin.",
   "tourAsk6Title": "Meer as inskrywings",
   "tourAsk6Body": "Dit kan ook reise beplan, mense byvoeg, die hernuwingstappe vir jou land vind en inskrywings deel, met skakels na amptelike bladsye.",
+  "tourAskSampleQuestion": "Voeg my {name} by. Dit verval op {date}.",
+  "tourAskSampleAnswer": "Hier is dit. Kyk na die besonderhede en tik Bevestig om dit te stoor.",
   "tourWallet1Title": "Berei eers voor",
   "tourWallet1Body": "Maak 'n kaart of dokument oop en kies waar jy dit hou, soos jou beursie of sak.",
   "tourWallet2Title": "Stoor die blokkeernommer",

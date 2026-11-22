@@ -2606,6 +2606,8 @@
   "tourAsk5Body": "Pokalbiai saugomi 90 dienų skiltyje „Pokalbių istorija“, o siūlomi klausimai padeda pradėti.",
   "tourAsk6Title": "Daugiau nei įrašai",
   "tourAsk6Body": "Jis taip pat gali planuoti keliones, pridėti žmonių, rasti jūsų šalies atnaujinimo žingsnius ir bendrinti įrašus, su nuorodomis į oficialius puslapius.",
+  "tourAskSampleQuestion": "Pridėk mano {name}. Galioja iki {date}.",
+  "tourAskSampleAnswer": "Štai. Patikrinkite duomenis ir bakstelėkite Patvirtinti, kad išsaugotumėte.",
   "tourWallet1Title": "Pirmiausia pasiruoškite",
   "tourWallet1Body": "Atidarykite kortelę ar dokumentą ir pasirinkite, kur jį laikote, pvz., piniginėje ar rankinėje.",
   "tourWallet2Title": "Išsaugokite blokavimo numerį",

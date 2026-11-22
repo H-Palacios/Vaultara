@@ -7825,6 +7825,14 @@ class AppLocalizationsYo extends AppLocalizations {
   String get tourAsk6Body => 'Ó tún lè ṣètò ìrìn àjò, fi àwọn ènìyàn kún un, wá àwọn ìgbésẹ̀ isọdọtun fún orílẹ̀-èdè rẹ, kí ó sì pín àwọn àkọsílẹ̀, pẹ̀lú àwọn ìjápọ̀ sí àwọn ojú-ìwé ìjọba.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Fi $name mi kún un. Ó máa parí ní $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Ó nìyí. Ṣàyẹ̀wò àwọn àlàyé kí o sì tẹ Jẹ́rìí sí láti fi pamọ́.';
+
+  @override
   String get tourWallet1Title => 'Mura silẹ ni akọkọ';
 
   @override

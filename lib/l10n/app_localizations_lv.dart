@@ -7942,6 +7942,14 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tourAsk6Body => 'Tas var arī plānot ceļojumus, pievienot cilvēkus, atrast jūsu valsts atjaunošanas soļus un kopīgot ierakstus, ar saitēm uz oficiālām lapām.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Pievieno manu $name. Tā derīguma termiņš beidzas $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Lūdzu. Pārbaudi datus un pieskaries Apstiprināt, lai to saglabātu.';
+
+  @override
   String get tourWallet1Title => 'Vispirms sagatavojies';
 
   @override

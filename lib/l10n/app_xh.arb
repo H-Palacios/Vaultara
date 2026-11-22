@@ -2588,6 +2588,8 @@
   "tourAsk5Body": "Iincoko zigcinwa iintsuku ezingama-90 kwi-«Imbali yeencoko», kwaye imibuzo ecetyiswayo ikunceda uqale.",
   "tourAsk6Title": "Ngaphezu kweerekhodi",
   "tourAsk6Body": "Inokucwangcisa uhambo, yongeze abantu, ifumane amanyathelo okuvuselela elizwe lakho kwaye yabelane ngeerekhodi, ngamakhonkco kumaphepha asemthethweni.",
+  "tourAskSampleQuestion": "Yongeza i-{name} yam. Iphelelwa ngomhla we-{date}.",
+  "tourAskSampleAnswer": "Nantsi. Jonga iinkcukacha uze ucofe Qinisekisa ukuyigcina.",
   "tourWallet1Title": "Zilungiselele kuqala",
   "tourWallet1Body": "Vula ikhadi okanye uxwebhu uze ukhethe apho ulugcina khona, njengengxowa okanye ibhegi yakho.",
   "tourWallet2Title": "Gcina inombolo yokuvala",

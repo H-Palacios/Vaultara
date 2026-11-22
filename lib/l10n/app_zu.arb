@@ -2580,6 +2580,8 @@
   "tourAsk5Body": "Izingxoxo zigcinwa izinsuku ezingu-90 ku-«Umlando wezingxoxo», futhi imibuzo ephakanyisiwe ikusiza ukuthi uqale.",
   "tourAsk6Title": "Ngaphezu kwamarekhodi",
   "tourAsk6Body": "Ingahlela nohambo, yengeze abantu, ithole izinyathelo zokuvuselela zezwe lakho futhi yabelane ngamarekhodi, ngezixhumanisi zamakhasi asemthethweni.",
+  "tourAskSampleQuestion": "Engeza i-{name} yami. Iphelelwa ngomhla ka-{date}.",
+  "tourAskSampleAnswer": "Nansi. Hlola imininingwane bese uthepha Qinisekisa ukuyilondoloza.",
   "tourWallet1Title": "Lungiselela kuqala",
   "tourWallet1Body": "Vula ikhadi noma umbhalo bese ukhetha lapho uwugcina khona, njengesikhwama noma isikhwama sakho.",
   "tourWallet2Title": "Londoloza inombolo yokuvimba",

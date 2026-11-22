@@ -2588,6 +2588,8 @@
   "tourAsk5Body": "Conversațiile se păstrează 90 de zile în „Istoricul conversațiilor”, iar întrebările sugerate te ajută să începi.",
   "tourAsk6Title": "Mai mult decât înregistrări",
   "tourAsk6Body": "Poate și să planifice călătorii, să adauge persoane, să găsească pașii de reînnoire pentru țara ta și să partajeze înregistrări, cu linkuri către pagini oficiale.",
+  "tourAskSampleQuestion": "Adaugă {name} meu. Expiră pe {date}.",
+  "tourAskSampleAnswer": "Iată-l. Verifică detaliile și atinge Confirmă pentru a-l salva.",
   "tourWallet1Title": "Pregătește-te întâi",
   "tourWallet1Body": "Deschide un card sau un document și alege unde îl ții, de pildă în portofel sau geantă.",
   "tourWallet2Title": "Salvează numărul de blocare",

@@ -7945,6 +7945,14 @@ class AppLocalizationsBs extends AppLocalizations {
   String get tourAsk6Body => 'Može i planirati putovanja, dodavati osobe, pronaći korake obnove za vašu zemlju i dijeliti zapise, uz linkove na službene stranice.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Dodaj moj $name. Ističe $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Evo ga. Provjerite podatke i dodirnite Potvrdi da ga sačuvate.';
+
+  @override
   String get tourWallet1Title => 'Prvo se pripremite';
 
   @override

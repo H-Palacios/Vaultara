@@ -7876,6 +7876,14 @@ class AppLocalizationsMl extends AppLocalizations {
   String get tourAsk6Body => 'യാത്ര ആസൂത്രണം ചെയ്യാനും ആളുകളെ ചേർക്കാനും നിങ്ങളുടെ രാജ്യത്തെ പുതുക്കൽ ഘട്ടങ്ങൾ കണ്ടെത്താനും റെക്കോർഡുകൾ പങ്കിടാനും ഇതിന് കഴിയും, ഔദ്യോഗിക പേജുകളിലേക്കുള്ള ലിങ്കുകളോടെ.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'എന്റെ $name ചേർക്കൂ. ഇത് $date-ന് കാലഹരണപ്പെടും.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'ഇതാ. വിശദാംശങ്ങൾ പരിശോധിച്ച് സേവ് ചെയ്യാൻ സ്ഥിരീകരിക്കുക ടാപ്പ് ചെയ്യുക.';
+
+  @override
   String get tourWallet1Title => 'ആദ്യം തയ്യാറാകൂ';
 
   @override

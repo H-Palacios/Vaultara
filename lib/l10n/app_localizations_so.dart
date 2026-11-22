@@ -7875,6 +7875,14 @@ class AppLocalizationsSo extends AppLocalizations {
   String get tourAsk6Body => 'Waxay sidoo kale qorsheyn kartaa safarro, ku dari kartaa dad, heli kartaa tallaabooyinka cusboonaysiinta ee waddankaaga oo wadaagi kartaa diiwaanno, iyadoo leh xiriiriyeyaal bogag rasmi ah.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Ku dar $name-kayga. Wuxuu dhacayaa $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Waa kan. Hubi faahfaahinta oo taabo Xaqiiji si aad u kaydiso.';
+
+  @override
   String get tourWallet1Title => 'Marka hore isu diyaari';
 
   @override

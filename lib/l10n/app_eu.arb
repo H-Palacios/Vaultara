@@ -2602,6 +2602,8 @@
   "tourAsk5Body": "Txatak 90 egunez gordetzen dira «Txaten historia» atalean, eta iradokitako galderek hasten laguntzen dute.",
   "tourAsk6Title": "Erregistroak baino gehiago",
   "tourAsk6Body": "Bidaiak planifikatu, pertsonak gehitu, zure herrialdeko berritze-urratsak aurkitu eta erregistroak partekatu ere egin ditzake, orri ofizialetarako estekekin.",
+  "tourAskSampleQuestion": "Gehitu nire {name}. {date} egunean iraungitzen da.",
+  "tourAskSampleAnswer": "Hemen duzu. Egiaztatu xehetasunak eta sakatu Berretsi gordetzeko.",
   "tourWallet1Title": "Prestatu lehenik",
   "tourWallet1Body": "Ireki txartel edo dokumentu bat eta aukeratu non gordetzen duzun, adibidez zorroan edo poltsan.",
   "tourWallet2Title": "Gorde blokeatze-zenbakia",

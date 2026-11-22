@@ -7876,6 +7876,14 @@ class AppLocalizationsHa extends AppLocalizations {
   String get tourAsk6Body => 'Tana iya tsara tafiye-tafiye, ƙara mutane, nemo matakan sabuntawa na ƙasarka da raba rikodi, tare da hanyoyin zuwa shafukan hukuma.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Ƙara $name na. Zai ƙare a ranar $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Ga shi. Duba bayanan sannan ka matsa Tabbatar don adana shi.';
+
+  @override
   String get tourWallet1Title => 'Shirya da farko';
 
   @override

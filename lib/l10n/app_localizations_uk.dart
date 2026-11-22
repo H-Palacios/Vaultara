@@ -8023,6 +8023,14 @@ class AppLocalizationsUk extends AppLocalizations {
   String get tourAsk6Body => 'Він також може планувати поїздки, додавати людей, знаходити кроки продовження для вашої країни та ділитися записами, з посиланнями на офіційні сторінки.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Додай мій $name. Він спливає $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Ось він. Перевірте дані й натисніть «Підтвердити», щоб зберегти.';
+
+  @override
   String get tourWallet1Title => 'Підготуйтеся заздалегідь';
 
   @override

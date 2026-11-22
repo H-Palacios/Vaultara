@@ -7875,6 +7875,14 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tourAsk6Body => 'Það getur líka skipulagt ferðir, bætt við fólki, fundið endurnýjunarskref fyrir landið þitt og deilt færslum, með tenglum á opinberar síður.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Bættu við $name mínu. Það rennur út $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Hér er það. Athugaðu upplýsingarnar og ýttu á Staðfesta til að vista.';
+
+  @override
   String get tourWallet1Title => 'Undirbúðu þig fyrst';
 
   @override

@@ -2600,6 +2600,8 @@
   "tourAsk5Body": "Itinatago ang mga chat nang 90 araw sa «History ng chat», at tinutulungan ka ng mga mungkahing tanong na magsimula.",
   "tourAsk6Title": "Higit pa sa mga record",
   "tourAsk6Body": "Kaya rin nitong magplano ng biyahe, magdagdag ng tao, hanapin ang mga hakbang sa pag-renew para sa iyong bansa at magbahagi ng record, may link sa mga opisyal na pahina.",
+  "tourAskSampleQuestion": "Idagdag ang aking {name}. Mag-e-expire ito sa {date}.",
+  "tourAskSampleAnswer": "Heto na. Tingnan ang mga detalye at i-tap ang Kumpirmahin para i-save ito.",
   "tourWallet1Title": "Maghanda muna",
   "tourWallet1Body": "Buksan ang card o dokumento at piliin kung saan mo ito itinatago, gaya ng wallet o bag.",
   "tourWallet2Title": "I-save ang block number",

@@ -2588,6 +2588,8 @@
   "tourAsk5Body": "聊天会在“对话记录”中保留 90 天，推荐问题帮你快速开始。",
   "tourAsk6Title": "不止于记录",
   "tourAsk6Body": "它还能规划行程、添加人员、查找你所在国家的续期步骤并分享记录，并附上官方页面链接。",
+  "tourAskSampleQuestion": "添加我的{name}。它将于{date}到期。",
+  "tourAskSampleAnswer": "在这里。请检查详细信息，然后点按“确认”保存。",
   "tourWallet1Title": "先做好准备",
   "tourWallet1Body": "打开卡片或证件，选择存放位置，例如钱包或包。",
   "tourWallet2Title": "保存挂失电话",

@@ -7876,6 +7876,14 @@ class AppLocalizationsAm extends AppLocalizations {
   String get tourAsk6Body => 'ጉዞዎችን ማቀድ፣ ሰዎችን መጨመር፣ ለአገርዎ የእድሳት ደረጃዎችን ማግኘት እና መዝገቦችን ማጋራትም ይችላል፣ ከይፋዊ ገጾች አገናኞች ጋር።';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'የእኔን $name ያክሉ። በ$date ጊዜው ያልፋል።';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'ይኸው። ዝርዝሮቹን ያረጋግጡ እና ለማስቀመጥ አረጋግጥን ይንኩ።';
+
+  @override
   String get tourWallet1Title => 'መጀመሪያ ይዘጋጁ';
 
   @override

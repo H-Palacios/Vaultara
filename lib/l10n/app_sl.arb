@@ -2588,6 +2588,8 @@
   "tourAsk5Body": "Klepeti se hranijo 90 dni v »Zgodovina klepetov«, predlagana vprašanja pa vam pomagajo začeti.",
   "tourAsk6Title": "Več kot zapisi",
   "tourAsk6Body": "Lahko tudi načrtuje potovanja, dodaja osebe, najde korake obnove za vašo državo in deli zapise, s povezavami na uradne strani.",
+  "tourAskSampleQuestion": "Dodaj moj {name}. Poteče {date}.",
+  "tourAskSampleAnswer": "Izvolite. Preverite podatke in tapnite Potrdi, da ga shranite.",
   "tourWallet1Title": "Najprej se pripravite",
   "tourWallet1Body": "Odprite kartico ali dokument in izberite, kje ga hranite, na primer v denarnici ali torbi.",
   "tourWallet2Title": "Shranite številko za blokado",

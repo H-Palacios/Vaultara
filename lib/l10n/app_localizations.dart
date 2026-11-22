@@ -13579,6 +13579,18 @@ abstract class AppLocalizations {
   /// **'It can also plan trips, add people, find the renewal steps for your country and share records, with links to official pages.'**
   String get tourAsk6Body;
 
+  /// Made-up request in the Ask Vaultara tutorial. {name} is a sample record such as British Passport; {date} is a date.
+  ///
+  /// In en, this message translates to:
+  /// **'Add my {name}. It expires on {date}.'**
+  String tourAskSampleQuestion(String name, String date);
+
+  /// Made-up answer in the Ask Vaultara tutorial, above a card with Confirm and Cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Here it is. Check the details and tap Confirm to save it.'**
+  String get tourAskSampleAnswer;
+
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:

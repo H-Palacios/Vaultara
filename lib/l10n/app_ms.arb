@@ -2588,6 +2588,8 @@
   "tourAsk5Body": "Sembang disimpan 90 hari dalam «Sejarah sembang», dan soalan cadangan membantu anda bermula.",
   "tourAsk6Title": "Lebih daripada rekod",
   "tourAsk6Body": "Ia juga boleh merancang perjalanan, menambah orang, mencari langkah pembaharuan untuk negara anda dan berkongsi rekod, dengan pautan ke halaman rasmi.",
+  "tourAskSampleQuestion": "Tambah {name} saya. Ia tamat tempoh pada {date}.",
+  "tourAskSampleAnswer": "Ini dia. Semak butirannya dan ketik Sahkan untuk menyimpannya.",
   "tourWallet1Title": "Bersedia dahulu",
   "tourWallet1Body": "Buka kad atau dokumen dan pilih tempat anda menyimpannya, contohnya dompet atau beg.",
   "tourWallet2Title": "Simpan nombor sekatan",

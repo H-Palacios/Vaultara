@@ -2593,6 +2593,8 @@
   "tourAsk5Body": "A na-edebe mkparịta ụka ụbọchị 90 na «Akụkọ mkparịta ụka», ajụjụ a tụrụ aro na-enyere gị aka ịmalite.",
   "tourAsk6Title": "Karịa ndekọ",
   "tourAsk6Body": "Ọ nwekwara ike ịhazi njem, tinye ndị mmadụ, chọta usoro imegharị maka obodo gị ma kesaa ndekọ, ya na njikọ na ibe gọọmentị.",
+  "tourAskSampleQuestion": "Tinye {name} m. Ọ ga-agwụ na {date}.",
+  "tourAskSampleAnswer": "Lee ya. Lelee nkọwa ndị ahụ ma pịa Kwado iji chekwaa ya.",
   "tourWallet1Title": "Kwadebe mbụ",
   "tourWallet1Body": "Mepee kaadị ma ọ bụ akwụkwọ ma họrọ ebe ị na-edebe ya, dịka akpa ego ma ọ bụ akpa gị.",
   "tourWallet2Title": "Chekwaa nọmba mkpọchi",

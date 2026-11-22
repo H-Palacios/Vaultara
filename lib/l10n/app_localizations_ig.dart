@@ -7825,6 +7825,14 @@ class AppLocalizationsIg extends AppLocalizations {
   String get tourAsk6Body => 'Ọ nwekwara ike ịhazi njem, tinye ndị mmadụ, chọta usoro imegharị maka obodo gị ma kesaa ndekọ, ya na njikọ na ibe gọọmentị.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Tinye $name m. Ọ ga-agwụ na $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Lee ya. Lelee nkọwa ndị ahụ ma pịa Kwado iji chekwaa ya.';
+
+  @override
   String get tourWallet1Title => 'Kwadebe mbụ';
 
   @override

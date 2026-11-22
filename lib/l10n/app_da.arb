@@ -2619,6 +2619,8 @@
   "tourAsk5Body": "Chats gemmes i 90 dage i \"Samtalehistorik\", og foreslåede spørgsmål hjælper dig i gang.",
   "tourAsk6Title": "Mere end poster",
   "tourAsk6Body": "Den kan også planlægge rejser, tilføje personer, finde fornyelsestrinene for dit land og dele poster, med links til officielle sider.",
+  "tourAskSampleQuestion": "Tilføj mit {name}. Det udløber den {date}.",
+  "tourAskSampleAnswer": "Her er det. Tjek oplysningerne, og tryk på Bekræft for at gemme det.",
   "tourWallet1Title": "Gør dig klar først",
   "tourWallet1Body": "Åbn et kort eller dokument, og vælg, hvor du har det, fx i pungen eller tasken.",
   "tourWallet2Title": "Gem spærrenummeret",

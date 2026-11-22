@@ -7876,6 +7876,14 @@ class AppLocalizationsKu extends AppLocalizations {
   String get tourAsk6Body => 'Ew dikare rêwîtiyan plan bike, mirovan zêde bike, gavên nûkirinê ji bo welatê te bibîne û tomaran parve bike, bi girêdanên rûpelên fermî.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return '$name min lê zêde bike. Di $date de diqede.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Va ye. Hûrguliyan kontrol bike û ji bo tomarkirinê Piştrast bike bitikîne.';
+
+  @override
   String get tourWallet1Title => 'Pêşî amade be';
 
   @override

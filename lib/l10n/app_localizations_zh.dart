@@ -7819,6 +7819,14 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tourAsk6Body => '它还能规划行程、添加人员、查找你所在国家的续期步骤并分享记录，并附上官方页面链接。';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return '添加我的$name。它将于$date到期。';
+  }
+
+  @override
+  String get tourAskSampleAnswer => '在这里。请检查详细信息，然后点按“确认”保存。';
+
+  @override
   String get tourWallet1Title => '先做好准备';
 
   @override
@@ -17478,6 +17486,14 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tourAsk6Body => '它还能规划行程、添加人员、查找你所在国家的续期步骤并分享记录，并附上官方页面链接。';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return '添加我的$name。它将于$date到期。';
+  }
+
+  @override
+  String get tourAskSampleAnswer => '在这里。请检查详细信息，然后点按“确认”保存。';
+
+  @override
   String get tourWallet1Title => '先做好准备';
 
   @override
@@ -27135,6 +27151,14 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get tourAsk6Body => '它還能規劃行程、新增人員、查找你所在國家的續期步驟並分享記錄，並附上官方頁面連結。';
+
+  @override
+  String tourAskSampleQuestion(String name, String date) {
+    return '新增我的$name。它將於$date到期。';
+  }
+
+  @override
+  String get tourAskSampleAnswer => '在這裡。請檢查詳細資料，然後點按「確認」儲存。';
 
   @override
   String get tourWallet1Title => '先做好準備';

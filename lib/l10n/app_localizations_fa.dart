@@ -7876,6 +7876,14 @@ class AppLocalizationsFa extends AppLocalizations {
   String get tourAsk6Body => 'همچنین می‌تواند سفر برنامه‌ریزی کند، افراد را اضافه کند، مراحل تمدید کشور شما را پیدا کند و موارد را به اشتراک بگذارد، با پیوند به صفحه‌های رسمی.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return '$name من را اضافه کن. در $date منقضی می‌شود.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'بفرمایید. جزئیات را بررسی کنید و برای ذخیره روی تأیید بزنید.';
+
+  @override
   String get tourWallet1Title => 'اول آماده شوید';
 
   @override

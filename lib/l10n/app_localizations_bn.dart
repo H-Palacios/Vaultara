@@ -7876,6 +7876,14 @@ class AppLocalizationsBn extends AppLocalizations {
   String get tourAsk6Body => 'এটি ভ্রমণের পরিকল্পনা করতে, মানুষ যোগ করতে, আপনার দেশের নবায়নের ধাপ খুঁজতে এবং রেকর্ড শেয়ার করতেও পারে, সরকারি পেজের লিংকসহ।';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'আমার $name যোগ করো। এর মেয়াদ শেষ হবে $date তারিখে।';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'এই যে। বিবরণ দেখে নিন এবং সেভ করতে নিশ্চিত করুন ট্যাপ করুন।';
+
+  @override
   String get tourWallet1Title => 'আগে প্রস্তুত হন';
 
   @override

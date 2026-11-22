@@ -8011,6 +8011,14 @@ class AppLocalizationsCs extends AppLocalizations {
   String get tourAsk6Body => 'Umí také plánovat cesty, přidávat lidi, najít kroky obnovy pro vaši zemi a sdílet záznamy, s odkazy na oficiální stránky.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Přidej můj $name. Platnost končí $date.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Tady je. Zkontrolujte údaje a klepnutím na Potvrdit ho uložte.';
+
+  @override
   String get tourWallet1Title => 'Připravte se předem';
 
   @override

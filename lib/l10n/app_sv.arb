@@ -2581,6 +2581,8 @@
   "tourAsk5Body": "Chattar sparas i 90 dagar i ”Chatthistorik”, och föreslagna frågor hjälper dig att komma igång.",
   "tourAsk6Title": "Mer än poster",
   "tourAsk6Body": "Den kan också planera resor, lägga till personer, hitta förnyelsestegen för ditt land och dela poster, med länkar till officiella sidor.",
+  "tourAskSampleQuestion": "Lägg till mitt {name}. Det går ut {date}.",
+  "tourAskSampleAnswer": "Här är det. Kontrollera uppgifterna och tryck på Bekräfta för att spara.",
   "tourWallet1Title": "Förbered dig först",
   "tourWallet1Body": "Öppna ett kort eller dokument och välj var du har det, till exempel plånboken eller väskan.",
   "tourWallet2Title": "Spara spärrnumret",

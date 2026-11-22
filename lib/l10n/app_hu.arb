@@ -2606,6 +2606,8 @@
   "tourAsk5Body": "A csevegések 90 napig megmaradnak itt: „Csevegési előzmények”, a javasolt kérdések pedig segítenek elindulni.",
   "tourAsk6Title": "Több mint tételek",
   "tourAsk6Body": "Utat is tervez, személyeket ad hozzá, megkeresi az országa megújítási lépéseit és megoszt tételeket, hivatalos oldalakra mutató linkekkel.",
+  "tourAskSampleQuestion": "Add hozzá a(z) {name} dokumentumomat. {date} napon jár le.",
+  "tourAskSampleAnswer": "Itt van. Ellenőrizd az adatokat, és a mentéshez koppints a Megerősítés gombra.",
   "tourWallet1Title": "Először készülj fel",
   "tourWallet1Body": "Nyiss meg egy kártyát vagy dokumentumot, és válaszd ki, hol tartod, például a pénztárcában vagy a táskában.",
   "tourWallet2Title": "Mentsd el a letiltási számot",

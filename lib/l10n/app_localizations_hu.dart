@@ -7876,6 +7876,14 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tourAsk6Body => 'Utat is tervez, személyeket ad hozzá, megkeresi az országa megújítási lépéseit és megoszt tételeket, hivatalos oldalakra mutató linkekkel.';
 
   @override
+  String tourAskSampleQuestion(String name, String date) {
+    return 'Add hozzá a(z) $name dokumentumomat. $date napon jár le.';
+  }
+
+  @override
+  String get tourAskSampleAnswer => 'Itt van. Ellenőrizd az adatokat, és a mentéshez koppints a Megerősítés gombra.';
+
+  @override
   String get tourWallet1Title => 'Először készülj fel';
 
   @override

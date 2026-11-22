@@ -2602,6 +2602,8 @@
   "tourAsk5Body": "Bisedat ruhen 90 ditë te «Historiku i bisedave» dhe pyetjet e sugjeruara të ndihmojnë të fillosh.",
   "tourAsk6Title": "Më shumë se regjistrime",
   "tourAsk6Body": "Mund të planifikojë edhe udhëtime, të shtojë persona, të gjejë hapat e rinovimit për vendin tuaj dhe të ndajë regjistrime, me lidhje drejt faqeve zyrtare.",
+  "tourAskSampleQuestion": "Shto {name} tim. Skadon më {date}.",
+  "tourAskSampleAnswer": "Ja ku është. Kontrolloni të dhënat dhe prekni Konfirmo për ta ruajtur.",
   "tourWallet1Title": "Përgatitu më parë",
   "tourWallet1Body": "Hap një kartë ose dokument dhe zgjidh ku e mban, p.sh. në portofol ose në çantë.",
   "tourWallet2Title": "Ruaj numrin e bllokimit",

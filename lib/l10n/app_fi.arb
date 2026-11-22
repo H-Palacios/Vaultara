@@ -2606,6 +2606,8 @@
   "tourAsk5Body": "Keskustelut säilyvät 90 päivää kohdassa ”Keskusteluhistoria”, ja ehdotetut kysymykset auttavat alkuun.",
   "tourAsk6Title": "Enemmän kuin tietueita",
   "tourAsk6Body": "Se osaa myös suunnitella matkoja, lisätä henkilöitä, löytää maasi uusimisvaiheet ja jakaa tietueita, linkein virallisille sivuille.",
+  "tourAskSampleQuestion": "Lisää {name}. Se vanhenee {date}.",
+  "tourAskSampleAnswer": "Tässä se on. Tarkista tiedot ja tallenna napauttamalla Vahvista.",
   "tourWallet1Title": "Valmistaudu ensin",
   "tourWallet1Body": "Avaa kortti tai asiakirja ja valitse, missä pidät sitä, kuten lompakossa tai laukussa.",
   "tourWallet2Title": "Tallenna sulkunumero",
