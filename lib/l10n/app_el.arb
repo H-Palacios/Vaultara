@@ -2537,6 +2537,7 @@
   },
   "tutorialsPaidBadge": "Επί πληρωμή προγράμματα",
   "tutorialsInYourPlan": "Στο πρόγραμμά σας",
+  "tutorialIncludedIn": "Περιλαμβάνεται στο {plan}",
   "tutorialsPaidNote": "Μπορείτε να το δείτε με οποιοδήποτε πρόγραμμα. Η ίδια η λειτουργία απαιτεί πρόγραμμα επί πληρωμή.",
   "tutorialsBack": "Πίσω",
   "tutorialsTryIt": "Δοκιμάστε το",

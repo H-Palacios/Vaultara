@@ -2542,6 +2542,7 @@
   },
   "tutorialsPaidBadge": "Tsare-tsaren biya",
   "tutorialsInYourPlan": "A cikin tsarinka",
+  "tutorialIncludedIn": "Yana cikin {plan}",
   "tutorialsPaidNote": "Kana iya kallon wannan da kowane tsari. Fasalin kansa yana buƙatar tsarin biya.",
   "tutorialsBack": "Baya",
   "tutorialsTryIt": "Gwada yanzu",

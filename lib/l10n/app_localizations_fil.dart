@@ -7722,6 +7722,11 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tutorialsInYourPlan => 'Kasama sa plan mo';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Kasama sa $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Mapapanood mo ito sa anumang plano. Kailangan ng bayad na plano para sa mismong feature.';
 
   @override

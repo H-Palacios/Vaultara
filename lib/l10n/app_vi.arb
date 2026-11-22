@@ -2530,6 +2530,7 @@
   },
   "tutorialsPaidBadge": "Gói trả phí",
   "tutorialsInYourPlan": "Có trong gói của bạn",
+  "tutorialIncludedIn": "Có trong gói {plan}",
   "tutorialsPaidNote": "Bạn có thể xem phần này với bất kỳ gói nào. Bản thân tính năng cần gói trả phí.",
   "tutorialsBack": "Quay lại",
   "tutorialsTryIt": "Thử ngay",

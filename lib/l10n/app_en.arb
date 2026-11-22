@@ -9458,6 +9458,15 @@
   "@tutorialsInYourPlan": {
     "description": "Chip on a tutorial whose feature the user's plan already includes. Short."
   },
+  "tutorialIncludedIn": "Included in {plan}",
+  "@tutorialIncludedIn": {
+    "description": "Last step of a tutorial for a paid feature the user does not have. {plan} is the plan name, such as Premium, Family or Business.",
+    "placeholders": {
+      "plan": {
+        "type": "String"
+      }
+    }
+  },
   "tutorialsPaidNote": "You can watch this on any plan. Using the feature needs a paid plan.",
   "@tutorialsPaidNote": {
     "description": "Note at the end of a tutorial for a paid feature."

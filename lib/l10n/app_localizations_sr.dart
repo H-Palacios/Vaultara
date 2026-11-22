@@ -7798,6 +7798,11 @@ class AppLocalizationsSr extends AppLocalizations {
   String get tutorialsInYourPlan => 'У вашем плану';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Укључено у $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Ово можете погледати са било којим пакетом. За саму функцију потребан је плаћени пакет.';
 
   @override
@@ -17612,6 +17617,11 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get tutorialsInYourPlan => 'У вашем плану';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Укључено у $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Ово можете погледати са било којим пакетом. За саму функцију потребан је плаћени пакет.';
 
   @override
@@ -27420,6 +27430,11 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get tutorialsInYourPlan => 'U vašem planu';
+
+  @override
+  String tutorialIncludedIn(String plan) {
+    return 'Uključeno u $plan';
+  }
 
   @override
   String get tutorialsPaidNote => 'Ovo možete pogledati sa bilo kojim paketom. Za samu funkciju potreban je plaćeni paket.';

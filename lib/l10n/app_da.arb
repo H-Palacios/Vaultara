@@ -2561,6 +2561,7 @@
   },
   "tutorialsPaidBadge": "Betalte abonnementer",
   "tutorialsInYourPlan": "I din plan",
+  "tutorialIncludedIn": "Inkluderet i {plan}",
   "tutorialsPaidNote": "Du kan se dette med ethvert abonnement. Selve funktionen kræver et betalt abonnement.",
   "tutorialsBack": "Tilbage",
   "tutorialsTryIt": "Prøv det nu",

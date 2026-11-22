@@ -2530,6 +2530,7 @@
   },
   "tutorialsPaidBadge": "Izicwangciso ezihlawulelwayo",
   "tutorialsInYourPlan": "Kwisicwangciso sakho",
+  "tutorialIncludedIn": "Kubandakanyiwe kwi-{plan}",
   "tutorialsPaidNote": "Ungakubukela oku ngaso nasiphi na isicwangciso. Uphawu ngokwalo lufuna isicwangciso esihlawulelwayo.",
   "tutorialsBack": "Emva",
   "tutorialsTryIt": "Zama ngoku",

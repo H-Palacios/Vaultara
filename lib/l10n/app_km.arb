@@ -2280,6 +2280,7 @@
   },
   "tutorialsPaidBadge": "គម្រោងបង់ប្រាក់",
   "tutorialsInYourPlan": "នៅក្នុងគម្រោងរបស់អ្នក",
+  "tutorialIncludedIn": "មាននៅក្នុង {plan}",
   "tutorialsPaidNote": "អ្នកអាចមើលវាជាមួយគម្រោងណាក៏បាន។ មុខងារខ្លួនឯងត្រូវការគម្រោងបង់ប្រាក់។",
   "tutorialsBack": "ថយក្រោយ",
   "tutorialsTryIt": "សាកល្បងឥឡូវ",

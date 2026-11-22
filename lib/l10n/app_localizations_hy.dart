@@ -7728,6 +7728,11 @@ class AppLocalizationsHy extends AppLocalizations {
   String get tutorialsInYourPlan => 'Ձեր պլանում';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Ներառված է $plan-ում';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Սա կարող եք դիտել ցանկացած պլանով։ Գործառույթն ինքնին պահանջում է վճարովի պլան։';
 
   @override

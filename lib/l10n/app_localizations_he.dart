@@ -7781,6 +7781,11 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tutorialsInYourPlan => 'כלול בתוכנית שלך';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'כלול ב־$plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'אפשר לצפות בזה בכל תוכנית. התכונה עצמה דורשת תוכנית בתשלום.';
 
   @override

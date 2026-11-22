@@ -7728,6 +7728,11 @@ class AppLocalizationsHa extends AppLocalizations {
   String get tutorialsInYourPlan => 'A cikin tsarinka';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Yana cikin $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Kana iya kallon wannan da kowane tsari. Fasalin kansa yana buƙatar tsarin biya.';
 
   @override

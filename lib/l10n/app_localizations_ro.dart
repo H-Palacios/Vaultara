@@ -7805,6 +7805,11 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tutorialsInYourPlan => 'În planul tău';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Inclus în $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Poți vedea asta cu orice abonament. Funcția în sine necesită un abonament plătit.';
 
   @override

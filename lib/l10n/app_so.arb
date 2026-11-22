@@ -2530,6 +2530,7 @@
   },
   "tutorialsPaidBadge": "Qorshayaal lacag ah",
   "tutorialsInYourPlan": "Qorshahaaga ku jira",
+  "tutorialIncludedIn": "Wuxuu ku jiraa {plan}",
   "tutorialsPaidNote": "Waxaad tan ku daawan kartaa qorshe kasta. Astaanta lafteedu waxay u baahan tahay qorshe lacag ah.",
   "tutorialsBack": "Dib",
   "tutorialsTryIt": "Isku day hadda",

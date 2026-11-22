@@ -2568,6 +2568,7 @@
   },
   "tutorialsPaidBadge": "Betaalde planne",
   "tutorialsInYourPlan": "In jou plan",
+  "tutorialIncludedIn": "Ingesluit by {plan}",
   "tutorialsPaidNote": "Jy kan dit met enige plan kyk. Die funksie self vereis 'n betaalde plan.",
   "tutorialsBack": "Terug",
   "tutorialsTryIt": "Probeer dit nou",

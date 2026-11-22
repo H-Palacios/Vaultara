@@ -2568,6 +2568,7 @@
   },
   "tutorialsPaidBadge": "الخطط المدفوعة",
   "tutorialsInYourPlan": "ضمن خطتك",
+  "tutorialIncludedIn": "متوفر في {plan}",
   "tutorialsPaidNote": "يمكنك مشاهدة هذا مع أي خطة. أما الميزة نفسها فتتطلب خطة مدفوعة.",
   "tutorialsBack": "رجوع",
   "tutorialsTryIt": "جرّبها الآن",

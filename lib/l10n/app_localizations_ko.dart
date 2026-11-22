@@ -7671,6 +7671,11 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tutorialsInYourPlan => '내 요금제에 포함됨';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return '$plan에 포함';
+  }
+
+  @override
   String get tutorialsPaidNote => '어떤 요금제에서도 볼 수 있어요. 기능을 쓰려면 유료 요금제가 필요해요.';
 
   @override

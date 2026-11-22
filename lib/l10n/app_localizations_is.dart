@@ -7727,6 +7727,11 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tutorialsInYourPlan => 'Í áskriftinni þinni';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Innifalið í $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Þú getur skoðað þetta með hvaða áskrift sem er. Eiginleikinn sjálfur krefst greiddrar áskriftar.';
 
   @override

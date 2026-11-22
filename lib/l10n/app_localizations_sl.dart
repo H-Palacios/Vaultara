@@ -7868,6 +7868,11 @@ class AppLocalizationsSl extends AppLocalizations {
   String get tutorialsInYourPlan => 'V vašem paketu';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Vključeno v $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'To si lahko ogledate s katerim koli paketom. Za samo funkcijo potrebujete plačljiv paket.';
 
   @override

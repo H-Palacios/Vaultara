@@ -2530,6 +2530,7 @@
   },
   "tutorialsPaidBadge": "Pelan berbayar",
   "tutorialsInYourPlan": "Dalam pelan anda",
+  "tutorialIncludedIn": "Termasuk dalam {plan}",
   "tutorialsPaidNote": "Anda boleh menonton ini dengan mana-mana pelan. Ciri itu sendiri memerlukan pelan berbayar.",
   "tutorialsBack": "Kembali",
   "tutorialsTryIt": "Cuba sekarang",

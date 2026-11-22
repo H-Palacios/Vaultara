@@ -7794,6 +7794,11 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tutorialsInYourPlan => 'Tavā plānā';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Iekļauts plānā $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'To var apskatīt ar jebkuru plānu. Pašai funkcijai vajadzīgs maksas plāns.';
 
   @override

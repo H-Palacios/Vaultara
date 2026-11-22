@@ -7728,6 +7728,11 @@ class AppLocalizationsBg extends AppLocalizations {
   String get tutorialsInYourPlan => 'Във вашия план';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Включено в $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Можете да видите това с всеки план. За самата функция е нужен платен план.';
 
   @override

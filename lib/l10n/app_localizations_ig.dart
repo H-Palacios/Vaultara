@@ -7677,6 +7677,11 @@ class AppLocalizationsIg extends AppLocalizations {
   String get tutorialsInYourPlan => 'N\'ime atụmatụ gị';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Gụnyere na $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Ị nwere ike ilele nke a na atụmatụ ọ bụla. Atụmatụ ahụ n\'onwe ya chọrọ atụmatụ akwụ ụgwọ.';
 
   @override

@@ -13291,6 +13291,12 @@ abstract class AppLocalizations {
   /// **'In your plan'**
   String get tutorialsInYourPlan;
 
+  /// Last step of a tutorial for a paid feature the user does not have. {plan} is the plan name, such as Premium, Family or Business.
+  ///
+  /// In en, this message translates to:
+  /// **'Included in {plan}'**
+  String tutorialIncludedIn(String plan);
+
   /// Note at the end of a tutorial for a paid feature.
   ///
   /// In en, this message translates to:

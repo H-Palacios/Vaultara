@@ -2548,6 +2548,7 @@
   },
   "tutorialsPaidBadge": "Платени пакети",
   "tutorialsInYourPlan": "Во вашиот план",
+  "tutorialIncludedIn": "Вклучено во {plan}",
   "tutorialsPaidNote": "Ова можете да го погледнете со секој пакет. За самата функција е потребен платен пакет.",
   "tutorialsBack": "Назад",
   "tutorialsTryIt": "Пробај сега",

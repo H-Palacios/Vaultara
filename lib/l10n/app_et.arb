@@ -2695,6 +2695,7 @@
   },
   "tutorialsPaidBadge": "Tasulised paketid",
   "tutorialsInYourPlan": "Sinu paketis",
+  "tutorialIncludedIn": "Sisaldub paketis {plan}",
   "tutorialsPaidNote": "Saad seda vaadata iga paketiga. Funktsioon ise vajab tasulist paketti.",
   "tutorialsBack": "Tagasi",
   "tutorialsTryIt": "Proovi kohe",

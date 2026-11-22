@@ -2547,6 +2547,7 @@
   },
   "tutorialsPaidBadge": "Платні тарифи",
   "tutorialsInYourPlan": "Входить у ваш план",
+  "tutorialIncludedIn": "Входить у {plan}",
   "tutorialsPaidNote": "Переглянути можна на будь-якому тарифі. Для самої функції потрібен платний тариф.",
   "tutorialsBack": "Назад",
   "tutorialsTryIt": "Спробувати",

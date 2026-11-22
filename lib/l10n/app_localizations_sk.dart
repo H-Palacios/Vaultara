@@ -7861,6 +7861,11 @@ class AppLocalizationsSk extends AppLocalizations {
   String get tutorialsInYourPlan => 'Vo vašom pláne';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Súčasť plánu $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Pozrieť si to môžete s akýmkoľvek predplatným. Samotná funkcia vyžaduje platené predplatné.';
 
   @override

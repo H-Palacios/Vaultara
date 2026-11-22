@@ -2542,6 +2542,7 @@
   },
   "tutorialsPaidBadge": "सशुल्क प्लान",
   "tutorialsInYourPlan": "आपके प्लान में",
+  "tutorialIncludedIn": "{plan} में शामिल",
   "tutorialsPaidNote": "आप इसे किसी भी प्लान पर देख सकते हैं। सुविधा के लिए सशुल्क प्लान ज़रूरी है।",
   "tutorialsBack": "वापस",
   "tutorialsTryIt": "अभी आज़माएँ",

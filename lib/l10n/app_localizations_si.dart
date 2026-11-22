@@ -7727,6 +7727,11 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tutorialsInYourPlan => 'ඔබේ සැලැස්මේ ඇත';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return '$plan තුළ ඇතුළත්';
+  }
+
+  @override
   String get tutorialsPaidNote => 'ඕනෑම සැලසුමකින් මෙය නැරඹිය හැක. විශේෂාංගයට ගෙවන සැලසුමක් අවශ්‍යයි.';
 
   @override

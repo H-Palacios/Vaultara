@@ -7671,6 +7671,11 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tutorialsInYourPlan => 'Có trong gói của bạn';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Có trong gói $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Bạn có thể xem phần này với bất kỳ gói nào. Bản thân tính năng cần gói trả phí.';
 
   @override

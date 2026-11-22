@@ -2505,6 +2505,7 @@
   },
   "tutorialsPaidBadge": "Платные тарифы",
   "tutorialsInYourPlan": "Входит в ваш план",
+  "tutorialIncludedIn": "Входит в {plan}",
   "tutorialsPaidNote": "Посмотреть можно на любом тарифе. Для самой функции нужен платный тариф.",
   "tutorialsBack": "Назад",
   "tutorialsTryIt": "Попробовать",

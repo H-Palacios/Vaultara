@@ -2548,6 +2548,7 @@
   },
   "tutorialsPaidBadge": "Maksas plāni",
   "tutorialsInYourPlan": "Tavā plānā",
+  "tutorialIncludedIn": "Iekļauts plānā {plan}",
   "tutorialsPaidNote": "To var apskatīt ar jebkuru plānu. Pašai funkcijai vajadzīgs maksas plāns.",
   "tutorialsBack": "Atpakaļ",
   "tutorialsTryIt": "Izmēģināt",

@@ -7953,6 +7953,11 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tutorialsInYourPlan => 'ضمن خطتك';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'متوفر في $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'يمكنك مشاهدة هذا مع أي خطة. أما الميزة نفسها فتتطلب خطة مدفوعة.';
 
   @override

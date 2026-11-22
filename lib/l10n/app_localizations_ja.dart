@@ -7659,6 +7659,11 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tutorialsInYourPlan => 'ご利用中のプランに含まれています';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return '$planに含まれています';
+  }
+
+  @override
   String get tutorialsPaidNote => 'どのプランでも視聴できます。機能を使うには有料プランが必要です。';
 
   @override

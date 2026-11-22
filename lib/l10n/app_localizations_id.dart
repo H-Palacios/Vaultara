@@ -7666,6 +7666,11 @@ class AppLocalizationsId extends AppLocalizations {
   String get tutorialsInYourPlan => 'Termasuk dalam paket Anda';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Termasuk dalam $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Anda dapat menonton ini dengan paket apa pun. Fiturnya sendiri memerlukan paket berbayar.';
 
   @override

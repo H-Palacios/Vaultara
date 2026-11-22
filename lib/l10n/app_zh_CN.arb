@@ -2530,6 +2530,7 @@
   },
   "tutorialsPaidBadge": "付费方案",
   "tutorialsInYourPlan": "已包含在你的方案中",
+  "tutorialIncludedIn": "包含在 {plan} 中",
   "tutorialsPaidNote": "任何方案都可以观看。使用该功能需要付费方案。",
   "tutorialsBack": "返回",
   "tutorialsTryIt": "立即试试",

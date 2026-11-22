@@ -2280,6 +2280,7 @@
   },
   "tutorialsPaidBadge": "Платени планове",
   "tutorialsInYourPlan": "Във вашия план",
+  "tutorialIncludedIn": "Включено в {plan}",
   "tutorialsPaidNote": "Можете да видите това с всеки план. За самата функция е нужен платен план.",
   "tutorialsBack": "Назад",
   "tutorialsTryIt": "Опитайте сега",

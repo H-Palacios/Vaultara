@@ -7671,6 +7671,11 @@ class AppLocalizationsMs extends AppLocalizations {
   String get tutorialsInYourPlan => 'Dalam pelan anda';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Termasuk dalam $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Anda boleh menonton ini dengan mana-mana pelan. Ciri itu sendiri memerlukan pelan berbayar.';
 
   @override

@@ -2535,6 +2535,7 @@
   },
   "tutorialsPaidBadge": "Piani a pagamento",
   "tutorialsInYourPlan": "Nel tuo piano",
+  "tutorialIncludedIn": "Incluso in {plan}",
   "tutorialsPaidNote": "Puoi guardarlo con qualsiasi piano. Per usare la funzione serve un piano a pagamento.",
   "tutorialsBack": "Indietro",
   "tutorialsTryIt": "Provalo ora",

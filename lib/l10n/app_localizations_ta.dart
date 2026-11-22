@@ -7728,6 +7728,11 @@ class AppLocalizationsTa extends AppLocalizations {
   String get tutorialsInYourPlan => 'உங்கள் திட்டத்தில் உள்ளது';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return '$plan இல் உள்ளது';
+  }
+
+  @override
   String get tutorialsPaidNote => 'எந்தத் திட்டத்திலும் இதைப் பார்க்கலாம். அம்சத்திற்குக் கட்டணத் திட்டம் தேவை.';
 
   @override

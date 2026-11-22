@@ -7728,6 +7728,11 @@ class AppLocalizationsGu extends AppLocalizations {
   String get tutorialsInYourPlan => 'તમારા પ્લાનમાં';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return '$plan માં શામેલ';
+  }
+
+  @override
   String get tutorialsPaidNote => 'તમે કોઈપણ પ્લાન સાથે આ જોઈ શકો છો. સુવિધા માટે પેઇડ પ્લાન જરૂરી છે.';
 
   @override

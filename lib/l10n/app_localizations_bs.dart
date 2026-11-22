@@ -7797,6 +7797,11 @@ class AppLocalizationsBs extends AppLocalizations {
   String get tutorialsInYourPlan => 'U vašem planu';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Uključeno u $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Ovo možete pogledati s bilo kojim paketom. Za samu funkciju potreban je plaćeni paket.';
 
   @override

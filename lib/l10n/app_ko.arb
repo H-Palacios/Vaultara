@@ -2530,6 +2530,7 @@
   },
   "tutorialsPaidBadge": "유료 요금제",
   "tutorialsInYourPlan": "내 요금제에 포함됨",
+  "tutorialIncludedIn": "{plan}에 포함",
   "tutorialsPaidNote": "어떤 요금제에서도 볼 수 있어요. 기능을 쓰려면 유료 요금제가 필요해요.",
   "tutorialsBack": "뒤로",
   "tutorialsTryIt": "지금 해 보기",

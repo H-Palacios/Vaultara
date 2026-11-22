@@ -2530,6 +2530,7 @@
   },
   "tutorialsPaidBadge": "پیسې لرونکي پلانونه",
   "tutorialsInYourPlan": "ستاسو په پلان کې",
+  "tutorialIncludedIn": "په {plan} کې شامل دی",
   "tutorialsPaidNote": "تاسو دا په هر پلان کتلی شئ. پخپله ځانګړنه پیسې لرونکی پلان غواړي.",
   "tutorialsBack": "شاته",
   "tutorialsTryIt": "اوس یې وازمویئ",

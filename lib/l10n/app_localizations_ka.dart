@@ -7728,6 +7728,11 @@ class AppLocalizationsKa extends AppLocalizations {
   String get tutorialsInYourPlan => 'თქვენს გეგმაშია';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'შედის $plan-ში';
+  }
+
+  @override
   String get tutorialsPaidNote => 'ამის ნახვა ნებისმიერი გეგმით შეგიძლიათ. თავად ფუნქციას ფასიანი გეგმა სჭირდება.';
 
   @override

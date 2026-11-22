@@ -7728,6 +7728,11 @@ class AppLocalizationsKn extends AppLocalizations {
   String get tutorialsInYourPlan => 'ನಿಮ್ಮ ಯೋಜನೆಯಲ್ಲಿದೆ';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return '$plan ನಲ್ಲಿ ಸೇರಿದೆ';
+  }
+
+  @override
   String get tutorialsPaidNote => 'ಯಾವುದೇ ಯೋಜನೆಯಲ್ಲಿ ಇದನ್ನು ನೋಡಬಹುದು. ವೈಶಿಷ್ಟ್ಯಕ್ಕೆ ಪಾವತಿಸಿದ ಯೋಜನೆ ಬೇಕು.';
 
   @override

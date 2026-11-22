@@ -7728,6 +7728,11 @@ class AppLocalizationsXh extends AppLocalizations {
   String get tutorialsInYourPlan => 'Kwisicwangciso sakho';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Kubandakanyiwe kwi-$plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Ungakubukela oku ngaso nasiphi na isicwangciso. Uphawu ngokwalo lufuna isicwangciso esihlawulelwayo.';
 
   @override

@@ -7669,6 +7669,11 @@ class AppLocalizationsKm extends AppLocalizations {
   String get tutorialsInYourPlan => 'នៅក្នុងគម្រោងរបស់អ្នក';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'មាននៅក្នុង $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'អ្នកអាចមើលវាជាមួយគម្រោងណាក៏បាន។ មុខងារខ្លួនឯងត្រូវការគម្រោងបង់ប្រាក់។';
 
   @override

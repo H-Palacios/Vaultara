@@ -7728,6 +7728,11 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tutorialsInYourPlan => 'Rejangizga kiritilgan';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return '$plan rejasiga kiritilgan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Buni istalgan tarifda koʻrish mumkin. Funksiyaning oʻzi pullik tarif talab qiladi.';
 
   @override

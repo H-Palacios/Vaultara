@@ -7671,6 +7671,11 @@ class AppLocalizationsLo extends AppLocalizations {
   String get tutorialsInYourPlan => 'ຢູ່ໃນແຜນຂອງທ່ານ';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'ມີໃນ $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'ທ່ານເບິ່ງສິ່ງນີ້ໄດ້ທຸກແພັກເກດ. ຕົວຄຸນສົມບັດຕ້ອງໃຊ້ແພັກເກດແບບເສຍເງິນ.';
 
   @override

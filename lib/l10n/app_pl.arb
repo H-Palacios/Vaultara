@@ -2530,6 +2530,7 @@
   },
   "tutorialsPaidBadge": "Plany płatne",
   "tutorialsInYourPlan": "W Twoim planie",
+  "tutorialIncludedIn": "W planie {plan}",
   "tutorialsPaidNote": "Możesz to obejrzeć w każdym planie. Sama funkcja wymaga planu płatnego.",
   "tutorialsBack": "Wstecz",
   "tutorialsTryIt": "Wypróbuj teraz",

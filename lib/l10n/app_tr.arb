@@ -2530,6 +2530,7 @@
   },
   "tutorialsPaidBadge": "Ücretli planlar",
   "tutorialsInYourPlan": "Planınıza dahil",
+  "tutorialIncludedIn": "{plan} planına dahil",
   "tutorialsPaidNote": "Bunu her planla izleyebilirsin. Özelliğin kendisi ücretli plan gerektirir.",
   "tutorialsBack": "Geri",
   "tutorialsTryIt": "Şimdi dene",

@@ -2530,6 +2530,7 @@
   },
   "tutorialsPaidBadge": "Platené predplatné",
   "tutorialsInYourPlan": "Vo vašom pláne",
+  "tutorialIncludedIn": "Súčasť plánu {plan}",
   "tutorialsPaidNote": "Pozrieť si to môžete s akýmkoľvek predplatným. Samotná funkcia vyžaduje platené predplatné.",
   "tutorialsBack": "Späť",
   "tutorialsTryIt": "Vyskúšať",

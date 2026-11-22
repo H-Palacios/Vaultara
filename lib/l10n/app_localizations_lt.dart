@@ -7869,6 +7869,11 @@ class AppLocalizationsLt extends AppLocalizations {
   String get tutorialsInYourPlan => 'Jūsų plane';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Įtraukta į $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Tai galite peržiūrėti su bet kuriuo planu. Pačiai funkcijai reikia mokamo plano.';
 
   @override

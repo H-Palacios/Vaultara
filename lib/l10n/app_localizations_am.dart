@@ -7728,6 +7728,11 @@ class AppLocalizationsAm extends AppLocalizations {
   String get tutorialsInYourPlan => 'በዕቅድዎ ውስጥ';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'በ$plan ውስጥ ተካትቷል';
+  }
+
+  @override
   String get tutorialsPaidNote => 'ይህን በማንኛውም ዕቅድ ማየት ይችላሉ። ባህሪው ራሱ የሚከፈልበት ዕቅድ ይፈልጋል።';
 
   @override

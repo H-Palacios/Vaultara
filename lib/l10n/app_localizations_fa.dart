@@ -7728,6 +7728,11 @@ class AppLocalizationsFa extends AppLocalizations {
   String get tutorialsInYourPlan => 'در طرح شما';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'در $plan موجود است';
+  }
+
+  @override
   String get tutorialsPaidNote => 'این را با هر طرحی می‌توانید ببینید. خود قابلیت به طرح پولی نیاز دارد.';
 
   @override

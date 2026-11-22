@@ -7732,6 +7732,11 @@ class AppLocalizationsEt extends AppLocalizations {
   String get tutorialsInYourPlan => 'Sinu paketis';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Sisaldub paketis $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Saad seda vaadata iga paketiga. Funktsioon ise vajab tasulist paketti.';
 
   @override

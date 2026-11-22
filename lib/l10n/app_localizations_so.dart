@@ -7727,6 +7727,11 @@ class AppLocalizationsSo extends AppLocalizations {
   String get tutorialsInYourPlan => 'Qorshahaaga ku jira';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Wuxuu ku jiraa $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Waxaad tan ku daawan kartaa qorshe kasta. Astaanta lafteedu waxay u baahan tahay qorshe lacag ah.';
 
   @override

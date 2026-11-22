@@ -7732,6 +7732,11 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tutorialsInYourPlan => 'Në planin tënd';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Përfshihet në $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Mund ta shikosh këtë me çdo plan. Vetë veçoria kërkon plan me pagesë.';
 
   @override

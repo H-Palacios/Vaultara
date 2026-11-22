@@ -2561,6 +2561,7 @@
   },
   "tutorialsPaidBadge": "Placené tarify",
   "tutorialsInYourPlan": "Ve vašem plánu",
+  "tutorialIncludedIn": "Součást plánu {plan}",
   "tutorialsPaidNote": "Prohlédnout si to můžete s jakýmkoli tarifem. Samotná funkce vyžaduje placený tarif.",
   "tutorialsBack": "Zpět",
   "tutorialsTryIt": "Vyzkoušet",

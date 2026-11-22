@@ -2530,6 +2530,7 @@
   },
   "tutorialsPaidBadge": "Plačljivi paketi",
   "tutorialsInYourPlan": "V vašem paketu",
+  "tutorialIncludedIn": "Vključeno v {plan}",
   "tutorialsPaidNote": "To si lahko ogledate s katerim koli paketom. Za samo funkcijo potrebujete plačljiv paket.",
   "tutorialsBack": "Nazaj",
   "tutorialsTryIt": "Preizkusi zdaj",

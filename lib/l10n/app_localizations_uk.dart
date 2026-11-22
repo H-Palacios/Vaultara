@@ -7875,6 +7875,11 @@ class AppLocalizationsUk extends AppLocalizations {
   String get tutorialsInYourPlan => 'Входить у ваш план';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Входить у $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Переглянути можна на будь-якому тарифі. Для самої функції потрібен платний тариф.';
 
   @override

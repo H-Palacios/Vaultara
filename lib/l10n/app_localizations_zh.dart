@@ -7671,6 +7671,11 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tutorialsInYourPlan => '已包含在你的方案中';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return '包含在 $plan 中';
+  }
+
+  @override
   String get tutorialsPaidNote => '任何方案都可以观看。使用该功能需要付费方案。';
 
   @override
@@ -17325,6 +17330,11 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tutorialsInYourPlan => '已包含在你的方案中';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return '包含在 $plan 中';
+  }
+
+  @override
   String get tutorialsPaidNote => '任何方案都可以观看。使用该功能需要付费方案。';
 
   @override
@@ -26977,6 +26987,11 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get tutorialsInYourPlan => '已包含在你的方案中';
+
+  @override
+  String tutorialIncludedIn(String plan) {
+    return '包含在 $plan 中';
+  }
 
   @override
   String get tutorialsPaidNote => '任何方案都能觀看。使用此功能需要付費方案。';

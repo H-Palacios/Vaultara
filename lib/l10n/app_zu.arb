@@ -2522,6 +2522,7 @@
   },
   "tutorialsPaidBadge": "Amapulani akhokhelwayo",
   "tutorialsInYourPlan": "Kuhlelo lwakho",
+  "tutorialIncludedIn": "Kufakiwe ku-{plan}",
   "tutorialsPaidNote": "Ungakubuka lokhu nganoma iyiphi ipulani. Isici ngokwaso sidinga ipulani ekhokhelwayo.",
   "tutorialsBack": "Emuva",
   "tutorialsTryIt": "Zama manje",

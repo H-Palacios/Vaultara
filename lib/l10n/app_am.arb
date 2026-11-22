@@ -2568,6 +2568,7 @@
   },
   "tutorialsPaidBadge": "የሚከፈልባቸው ዕቅዶች",
   "tutorialsInYourPlan": "በዕቅድዎ ውስጥ",
+  "tutorialIncludedIn": "በ{plan} ውስጥ ተካትቷል",
   "tutorialsPaidNote": "ይህን በማንኛውም ዕቅድ ማየት ይችላሉ። ባህሪው ራሱ የሚከፈልበት ዕቅድ ይፈልጋል።",
   "tutorialsBack": "ተመለስ",
   "tutorialsTryIt": "አሁን ይሞክሩ",

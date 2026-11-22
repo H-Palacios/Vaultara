@@ -7732,6 +7732,11 @@ class AppLocalizationsCa extends AppLocalizations {
   String get tutorialsInYourPlan => 'Al teu pla';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Inclòs a $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Pots veure-ho amb qualsevol pla. Fer servir la funció requereix un pla de pagament.';
 
   @override

@@ -2548,6 +2548,7 @@
   },
   "tutorialsPaidBadge": "Төлбөртэй багцууд",
   "tutorialsInYourPlan": "Таны багцад багтсан",
+  "tutorialIncludedIn": "{plan} багцад багтсан",
   "tutorialsPaidNote": "Үүнийг ямар ч багцаар үзэж болно. Боломжийг ашиглахад төлбөртэй багц шаардлагатай.",
   "tutorialsBack": "Буцах",
   "tutorialsTryIt": "Одоо туршиж үзэх",

@@ -2530,6 +2530,7 @@
   },
   "tutorialsPaidBadge": "सशुल्क योजना",
   "tutorialsInYourPlan": "तपाईंको योजनामा",
+  "tutorialIncludedIn": "{plan} मा समावेश",
   "tutorialsPaidNote": "तपाईं यो जुनसुकै योजनामा हेर्न सक्नुहुन्छ। सुविधाका लागि सशुल्क योजना चाहिन्छ।",
   "tutorialsBack": "पछाडि",
   "tutorialsTryIt": "अहिले प्रयास गर्नुहोस्",

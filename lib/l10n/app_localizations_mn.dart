@@ -7718,6 +7718,11 @@ class AppLocalizationsMn extends AppLocalizations {
   String get tutorialsInYourPlan => 'Таны багцад багтсан';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return '$plan багцад багтсан';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Үүнийг ямар ч багцаар үзэж болно. Боломжийг ашиглахад төлбөртэй багц шаардлагатай.';
 
   @override

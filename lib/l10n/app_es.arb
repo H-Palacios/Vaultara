@@ -2537,6 +2537,7 @@
   },
   "tutorialsPaidBadge": "Planes de pago",
   "tutorialsInYourPlan": "En tu plan",
+  "tutorialIncludedIn": "Incluido en {plan}",
   "tutorialsPaidNote": "Puedes verlo con cualquier plan. Usar la función requiere un plan de pago.",
   "tutorialsBack": "Atrás",
   "tutorialsTryIt": "Pruébalo ahora",

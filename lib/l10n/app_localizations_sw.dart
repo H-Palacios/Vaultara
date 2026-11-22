@@ -7728,6 +7728,11 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tutorialsInYourPlan => 'Katika mpango wako';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Imejumuishwa katika $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Unaweza kutazama hili kwa mpango wowote. Kipengele chenyewe kinahitaji mpango wa kulipia.';
 
   @override

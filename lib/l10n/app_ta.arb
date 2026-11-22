@@ -2530,6 +2530,7 @@
   },
   "tutorialsPaidBadge": "கட்டணத் திட்டங்கள்",
   "tutorialsInYourPlan": "உங்கள் திட்டத்தில் உள்ளது",
+  "tutorialIncludedIn": "{plan} இல் உள்ளது",
   "tutorialsPaidNote": "எந்தத் திட்டத்திலும் இதைப் பார்க்கலாம். அம்சத்திற்குக் கட்டணத் திட்டம் தேவை.",
   "tutorialsBack": "பின்செல்",
   "tutorialsTryIt": "இப்போது முயலுங்கள்",

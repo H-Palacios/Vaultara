@@ -2542,6 +2542,7 @@
   },
   "tutorialsPaidBadge": "طرح‌های پولی",
   "tutorialsInYourPlan": "در طرح شما",
+  "tutorialIncludedIn": "در {plan} موجود است",
   "tutorialsPaidNote": "این را با هر طرحی می‌توانید ببینید. خود قابلیت به طرح پولی نیاز دارد.",
   "tutorialsBack": "بازگشت",
   "tutorialsTryIt": "امتحان کنید",

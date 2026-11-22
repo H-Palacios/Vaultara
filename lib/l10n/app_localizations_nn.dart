@@ -7732,6 +7732,11 @@ class AppLocalizationsNn extends AppLocalizations {
   String get tutorialsInYourPlan => 'I abonnementet ditt';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Inkludert i $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Du kan sjå dette med alle abonnement. Sjølve funksjonen krev eit betalt abonnement.';
 
   @override

@@ -2548,6 +2548,7 @@
   },
   "tutorialsPaidBadge": "Акы төлөнүүчү пландар",
   "tutorialsInYourPlan": "Планыңызда бар",
+  "tutorialIncludedIn": "{plan} планына кирет",
   "tutorialsPaidNote": "Муну каалаган план менен көрө аласыз. Функциянын өзү акы төлөнүүчү планды талап кылат.",
   "tutorialsBack": "Артка",
   "tutorialsTryIt": "Азыр сынап көрүү",

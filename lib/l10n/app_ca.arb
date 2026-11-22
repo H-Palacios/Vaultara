@@ -2561,6 +2561,7 @@
   },
   "tutorialsPaidBadge": "Plans de pagament",
   "tutorialsInYourPlan": "Al teu pla",
+  "tutorialIncludedIn": "Inclòs a {plan}",
   "tutorialsPaidNote": "Pots veure-ho amb qualsevol pla. Fer servir la funció requereix un pla de pagament.",
   "tutorialsBack": "Enrere",
   "tutorialsTryIt": "Prova-ho ara",

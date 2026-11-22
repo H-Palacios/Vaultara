@@ -7728,6 +7728,11 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tutorialsInYourPlan => 'Benne van a csomagodban';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'A(z) $plan csomag része';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Ezt bármelyik csomaggal megnézheted. Magához a funkcióhoz fizetős csomag kell.';
 
   @override

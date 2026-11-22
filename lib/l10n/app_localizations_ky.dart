@@ -7728,6 +7728,11 @@ class AppLocalizationsKy extends AppLocalizations {
   String get tutorialsInYourPlan => 'Планыңызда бар';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return '$plan планына кирет';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Муну каалаган план менен көрө аласыз. Функциянын өзү акы төлөнүүчү планды талап кылат.';
 
   @override

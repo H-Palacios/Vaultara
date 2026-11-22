@@ -7732,6 +7732,11 @@ class AppLocalizationsDe extends AppLocalizations {
   String get tutorialsInYourPlan => 'In deinem Tarif';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Enthalten in $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Du kannst das mit jedem Tarif ansehen. Die Funktion selbst braucht einen kostenpflichtigen Tarif.';
 
   @override

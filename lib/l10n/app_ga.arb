@@ -2542,6 +2542,7 @@
   },
   "tutorialsPaidBadge": "Pleananna íoctha",
   "tutorialsInYourPlan": "I do phlean",
+  "tutorialIncludedIn": "San áireamh i {plan}",
   "tutorialsPaidNote": "Is féidir é seo a fheiceáil le haon phlean. Teastaíonn plean íoctha don ghné féin.",
   "tutorialsBack": "Siar",
   "tutorialsTryIt": "Bain triail as anois",

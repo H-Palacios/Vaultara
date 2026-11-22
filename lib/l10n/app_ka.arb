@@ -2548,6 +2548,7 @@
   },
   "tutorialsPaidBadge": "ფასიანი გეგმები",
   "tutorialsInYourPlan": "თქვენს გეგმაშია",
+  "tutorialIncludedIn": "შედის {plan}-ში",
   "tutorialsPaidNote": "ამის ნახვა ნებისმიერი გეგმით შეგიძლიათ. თავად ფუნქციას ფასიანი გეგმა სჭირდება.",
   "tutorialsBack": "უკან",
   "tutorialsTryIt": "სცადეთ ახლა",

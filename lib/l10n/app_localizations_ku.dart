@@ -7728,6 +7728,11 @@ class AppLocalizationsKu extends AppLocalizations {
   String get tutorialsInYourPlan => 'Di plana te de';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Di $plan de heye';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Tu dikarî vê bi her planê temaşe bikî. Taybetmendî bi xwe plana bi pere dixwaze.';
 
   @override

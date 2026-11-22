@@ -2530,6 +2530,7 @@
   },
   "tutorialsPaidBadge": "ගෙවන සැලසුම්",
   "tutorialsInYourPlan": "ඔබේ සැලැස්මේ ඇත",
+  "tutorialIncludedIn": "{plan} තුළ ඇතුළත්",
   "tutorialsPaidNote": "ඕනෑම සැලසුමකින් මෙය නැරඹිය හැක. විශේෂාංගයට ගෙවන සැලසුමක් අවශ්‍යයි.",
   "tutorialsBack": "ආපසු",
   "tutorialsTryIt": "දැන් උත්සාහ කරන්න",

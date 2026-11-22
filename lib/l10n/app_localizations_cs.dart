@@ -7863,6 +7863,11 @@ class AppLocalizationsCs extends AppLocalizations {
   String get tutorialsInYourPlan => 'Ve vašem plánu';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Součást plánu $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Prohlédnout si to můžete s jakýmkoli tarifem. Samotná funkce vyžaduje placený tarif.';
 
   @override

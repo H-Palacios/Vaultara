@@ -2561,6 +2561,7 @@
   },
   "tutorialsPaidBadge": "Kostenpflichtig",
   "tutorialsInYourPlan": "In deinem Tarif",
+  "tutorialIncludedIn": "Enthalten in {plan}",
   "tutorialsPaidNote": "Du kannst das mit jedem Tarif ansehen. Die Funktion selbst braucht einen kostenpflichtigen Tarif.",
   "tutorialsBack": "Zurück",
   "tutorialsTryIt": "Jetzt ausprobieren",

@@ -2535,6 +2535,7 @@
   },
   "tutorialsPaidBadge": "Paket berbayar",
   "tutorialsInYourPlan": "Termasuk dalam paket Anda",
+  "tutorialIncludedIn": "Termasuk dalam {plan}",
   "tutorialsPaidNote": "Anda dapat menonton ini dengan paket apa pun. Fiturnya sendiri memerlukan paket berbayar.",
   "tutorialsBack": "Kembali",
   "tutorialsTryIt": "Coba sekarang",

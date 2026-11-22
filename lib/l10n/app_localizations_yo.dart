@@ -7677,6 +7677,11 @@ class AppLocalizationsYo extends AppLocalizations {
   String get tutorialsInYourPlan => 'Nínú ètò rẹ';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Ó wà nínú $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'O le wo eyi pẹlu eto eyikeyi. Ẹya naa funrararẹ nilo eto ti a sanwo fun.';
 
   @override

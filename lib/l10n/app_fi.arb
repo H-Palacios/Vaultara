@@ -2548,6 +2548,7 @@
   },
   "tutorialsPaidBadge": "Maksulliset tilaukset",
   "tutorialsInYourPlan": "Tilauksessasi",
+  "tutorialIncludedIn": "Sisältyy tilaukseen {plan}",
   "tutorialsPaidNote": "Voit katsoa tämän millä tahansa tilauksella. Itse ominaisuus vaatii maksullisen tilauksen.",
   "tutorialsBack": "Takaisin",
   "tutorialsTryIt": "Kokeile nyt",

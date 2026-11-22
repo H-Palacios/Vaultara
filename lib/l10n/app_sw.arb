@@ -2530,6 +2530,7 @@
   },
   "tutorialsPaidBadge": "Mipango ya kulipia",
   "tutorialsInYourPlan": "Katika mpango wako",
+  "tutorialIncludedIn": "Imejumuishwa katika {plan}",
   "tutorialsPaidNote": "Unaweza kutazama hili kwa mpango wowote. Kipengele chenyewe kinahitaji mpango wa kulipia.",
   "tutorialsBack": "Nyuma",
   "tutorialsTryIt": "Jaribu sasa",

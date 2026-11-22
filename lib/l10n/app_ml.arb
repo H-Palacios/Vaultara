@@ -2280,6 +2280,7 @@
   },
   "tutorialsPaidBadge": "പണമടച്ചുള്ള പ്ലാനുകൾ",
   "tutorialsInYourPlan": "നിങ്ങളുടെ പ്ലാനിൽ",
+  "tutorialIncludedIn": "{plan}-ൽ ഉൾപ്പെടുന്നു",
   "tutorialsPaidNote": "ഏത് പ്ലാനിലും ഇത് കാണാം. ഫീച്ചറിന് പണമടച്ചുള്ള പ്ലാൻ ആവശ്യമാണ്.",
   "tutorialsBack": "തിരികെ",
   "tutorialsTryIt": "ഇപ്പോൾ പരീക്ഷിക്കൂ",

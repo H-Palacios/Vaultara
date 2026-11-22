@@ -2544,6 +2544,7 @@
   },
   "tutorialsPaidBadge": "Վճարովի պլաններ",
   "tutorialsInYourPlan": "Ձեր պլանում",
+  "tutorialIncludedIn": "Ներառված է {plan}-ում",
   "tutorialsPaidNote": "Սա կարող եք դիտել ցանկացած պլանով։ Գործառույթն ինքնին պահանջում է վճարովի պլան։",
   "tutorialsBack": "Հետ",
   "tutorialsTryIt": "Փորձել հիմա",

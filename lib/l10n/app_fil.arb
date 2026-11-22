@@ -2542,6 +2542,7 @@
   },
   "tutorialsPaidBadge": "Mga bayad na plano",
   "tutorialsInYourPlan": "Kasama sa plan mo",
+  "tutorialIncludedIn": "Kasama sa {plan}",
   "tutorialsPaidNote": "Mapapanood mo ito sa anumang plano. Kailangan ng bayad na plano para sa mismong feature.",
   "tutorialsBack": "Bumalik",
   "tutorialsTryIt": "Subukan ngayon",

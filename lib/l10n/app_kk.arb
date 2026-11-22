@@ -2548,6 +2548,7 @@
   },
   "tutorialsPaidBadge": "Ақылы жоспарлар",
   "tutorialsInYourPlan": "Жоспарыңызда бар",
+  "tutorialIncludedIn": "{plan} жоспарына кіреді",
   "tutorialsPaidNote": "Мұны кез келген жоспармен көре аласыз. Мүмкіндіктің өзі ақылы жоспарды талап етеді.",
   "tutorialsBack": "Артқа",
   "tutorialsTryIt": "Қазір байқап көру",

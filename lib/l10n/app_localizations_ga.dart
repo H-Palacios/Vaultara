@@ -7912,6 +7912,11 @@ class AppLocalizationsGa extends AppLocalizations {
   String get tutorialsInYourPlan => 'I do phlean';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'San áireamh i $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Is féidir é seo a fheiceáil le haon phlean. Teastaíonn plean íoctha don ghné féin.';
 
   @override

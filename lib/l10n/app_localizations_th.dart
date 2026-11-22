@@ -7659,6 +7659,11 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tutorialsInYourPlan => 'อยู่ในแพ็กเกจของคุณ';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'มีใน $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'คุณดูสิ่งนี้ได้ในทุกแพ็กเกจ ตัวฟีเจอร์ต้องใช้แพ็กเกจแบบชำระเงิน';
 
   @override

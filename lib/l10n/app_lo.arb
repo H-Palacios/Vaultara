@@ -2548,6 +2548,7 @@
   },
   "tutorialsPaidBadge": "ແພັກເກດແບບເສຍເງິນ",
   "tutorialsInYourPlan": "ຢູ່ໃນແຜນຂອງທ່ານ",
+  "tutorialIncludedIn": "ມີໃນ {plan}",
   "tutorialsPaidNote": "ທ່ານເບິ່ງສິ່ງນີ້ໄດ້ທຸກແພັກເກດ. ຕົວຄຸນສົມບັດຕ້ອງໃຊ້ແພັກເກດແບບເສຍເງິນ.",
   "tutorialsBack": "ກັບຄືນ",
   "tutorialsTryIt": "ລອງດຽວນີ້",

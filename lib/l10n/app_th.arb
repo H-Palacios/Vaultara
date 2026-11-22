@@ -2547,6 +2547,7 @@
   },
   "tutorialsPaidBadge": "แพ็กเกจแบบชำระเงิน",
   "tutorialsInYourPlan": "อยู่ในแพ็กเกจของคุณ",
+  "tutorialIncludedIn": "มีใน {plan}",
   "tutorialsPaidNote": "คุณดูสิ่งนี้ได้ในทุกแพ็กเกจ ตัวฟีเจอร์ต้องใช้แพ็กเกจแบบชำระเงิน",
   "tutorialsBack": "ย้อนกลับ",
   "tutorialsTryIt": "ลองเลย",

@@ -7669,6 +7669,11 @@ class AppLocalizationsMy extends AppLocalizations {
   String get tutorialsInYourPlan => 'သင့်အစီအစဉ်တွင် ပါဝင်သည်';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return '$plan တွင် ပါဝင်သည်';
+  }
+
+  @override
   String get tutorialsPaidNote => 'မည်သည့်အစီအစဉ်ဖြင့်မဆို ဤအရာကို ကြည့်နိုင်သည်။ လုပ်ဆောင်ချက်ကိုယ်တိုင်အတွက် ငွေပေးအစီအစဉ် လိုသည်။';
 
   @override

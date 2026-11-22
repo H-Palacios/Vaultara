@@ -2542,6 +2542,7 @@
   },
   "tutorialsPaidBadge": "Formules payantes",
   "tutorialsInYourPlan": "Inclus dans votre forfait",
+  "tutorialIncludedIn": "Inclus dans {plan}",
   "tutorialsPaidNote": "Vous pouvez regarder ceci avec n'importe quelle formule. La fonction elle-même nécessite une formule payante.",
   "tutorialsBack": "Retour",
   "tutorialsTryIt": "Essayer maintenant",

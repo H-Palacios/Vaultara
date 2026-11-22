@@ -2530,6 +2530,7 @@
   },
   "tutorialsPaidBadge": "Betalte abonnementer",
   "tutorialsInYourPlan": "I abonnementet ditt",
+  "tutorialIncludedIn": "Inkludert i {plan}",
   "tutorialsPaidNote": "Du kan se dette med alle abonnementer. Selve funksjonen krever et betalt abonnement.",
   "tutorialsBack": "Tilbake",
   "tutorialsTryIt": "Prøv nå",

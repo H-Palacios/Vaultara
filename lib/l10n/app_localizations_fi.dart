@@ -7732,6 +7732,11 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tutorialsInYourPlan => 'Tilauksessasi';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Sisältyy tilaukseen $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Voit katsoa tämän millä tahansa tilauksella. Itse ominaisuus vaatii maksullisen tilauksen.';
 
   @override

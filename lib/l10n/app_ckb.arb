@@ -2530,6 +2530,7 @@
   },
   "tutorialsPaidBadge": "پلانە پارەدارەکان",
   "tutorialsInYourPlan": "لە پلانەکەتدایە",
+  "tutorialIncludedIn": "لە {plan} دا هەیە",
   "tutorialsPaidNote": "دەتوانیت ئەمە بە هەر پلانێک ببینیت. تایبەتمەندییەکە خۆی پلانی پارەداری دەوێت.",
   "tutorialsBack": "گەڕانەوە",
   "tutorialsTryIt": "ئێستا تاقی بکەرەوە",

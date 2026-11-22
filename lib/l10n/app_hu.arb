@@ -2548,6 +2548,7 @@
   },
   "tutorialsPaidBadge": "Fizetős csomagok",
   "tutorialsInYourPlan": "Benne van a csomagodban",
+  "tutorialIncludedIn": "A(z) {plan} csomag része",
   "tutorialsPaidNote": "Ezt bármelyik csomaggal megnézheted. Magához a funkcióhoz fizetős csomag kell.",
   "tutorialsBack": "Vissza",
   "tutorialsTryIt": "Kipróbálom",

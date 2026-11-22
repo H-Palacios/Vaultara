@@ -7732,6 +7732,11 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tutorialsInYourPlan => 'Zure planean';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return '$plan planean barne';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Edozein planarekin ikus dezakezu. Funtzioa erabiltzeko ordainpeko plana behar da.';
 
   @override

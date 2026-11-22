@@ -7728,6 +7728,11 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get tutorialsInYourPlan => 'لە پلانەکەتدایە';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'لە $plan دا هەیە';
+  }
+
+  @override
   String get tutorialsPaidNote => 'دەتوانیت ئەمە بە هەر پلانێک ببینیت. تایبەتمەندییەکە خۆی پلانی پارەداری دەوێت.';
 
   @override

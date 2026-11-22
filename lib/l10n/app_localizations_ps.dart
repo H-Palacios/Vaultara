@@ -7728,6 +7728,11 @@ class AppLocalizationsPs extends AppLocalizations {
   String get tutorialsInYourPlan => 'ستاسو په پلان کې';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'په $plan کې شامل دی';
+  }
+
+  @override
   String get tutorialsPaidNote => 'تاسو دا په هر پلان کتلی شئ. پخپله ځانګړنه پیسې لرونکی پلان غواړي.';
 
   @override

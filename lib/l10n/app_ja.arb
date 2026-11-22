@@ -2542,6 +2542,7 @@
   },
   "tutorialsPaidBadge": "有料プラン",
   "tutorialsInYourPlan": "ご利用中のプランに含まれています",
+  "tutorialIncludedIn": "{plan}に含まれています",
   "tutorialsPaidNote": "どのプランでも視聴できます。機能を使うには有料プランが必要です。",
   "tutorialsBack": "戻る",
   "tutorialsTryIt": "試してみる",

@@ -2548,6 +2548,7 @@
   },
   "tutorialsPaidBadge": "Mokami planai",
   "tutorialsInYourPlan": "Jūsų plane",
+  "tutorialIncludedIn": "Įtraukta į {plan}",
   "tutorialsPaidNote": "Tai galite peržiūrėti su bet kuriuo planu. Pačiai funkcijai reikia mokamo plano.",
   "tutorialsBack": "Atgal",
   "tutorialsTryIt": "Išbandyti",

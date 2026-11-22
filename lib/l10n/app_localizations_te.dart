@@ -7728,6 +7728,11 @@ class AppLocalizationsTe extends AppLocalizations {
   String get tutorialsInYourPlan => 'మీ ప్లాన్‌లో ఉంది';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return '$planలో చేర్చబడింది';
+  }
+
+  @override
   String get tutorialsPaidNote => 'ఏ ప్లాన్‌తోనైనా దీన్ని చూడవచ్చు. ఫీచర్‌కు చెల్లింపు ప్లాన్ అవసరం.';
 
   @override

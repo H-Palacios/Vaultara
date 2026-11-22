@@ -2561,6 +2561,7 @@
   },
   "tutorialsPaidBadge": "পেইড প্ল্যান",
   "tutorialsInYourPlan": "আপনার প্ল্যানে আছে",
+  "tutorialIncludedIn": "{plan}-এ অন্তর্ভুক্ত",
   "tutorialsPaidNote": "যেকোনো প্ল্যানে এটি দেখতে পারেন। ফিচারটি ব্যবহারে পেইড প্ল্যান লাগে।",
   "tutorialsBack": "পিছনে",
   "tutorialsTryIt": "এখনই চেষ্টা করুন",

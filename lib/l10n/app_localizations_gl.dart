@@ -7732,6 +7732,11 @@ class AppLocalizationsGl extends AppLocalizations {
   String get tutorialsInYourPlan => 'No teu plan';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Incluído en $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Podes velo con calquera plan. Usar a función require un plan de pago.';
 
   @override

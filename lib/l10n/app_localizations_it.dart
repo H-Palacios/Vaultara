@@ -7739,6 +7739,11 @@ class AppLocalizationsIt extends AppLocalizations {
   String get tutorialsInYourPlan => 'Nel tuo piano';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'Incluso in $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Puoi guardarlo con qualsiasi piano. Per usare la funzione serve un piano a pagamento.';
 
   @override

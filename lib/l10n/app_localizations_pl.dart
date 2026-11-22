@@ -7882,6 +7882,11 @@ class AppLocalizationsPl extends AppLocalizations {
   String get tutorialsInYourPlan => 'W Twoim planie';
 
   @override
+  String tutorialIncludedIn(String plan) {
+    return 'W planie $plan';
+  }
+
+  @override
   String get tutorialsPaidNote => 'Możesz to obejrzeć w każdym planie. Sama funkcja wymaga planu płatnego.';
 
   @override
