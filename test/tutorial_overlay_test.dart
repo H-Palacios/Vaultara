@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial_step_groups.dart';
 import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
 import 'package:vaultara/features/tutorials/services/tutorial_voice.dart';
