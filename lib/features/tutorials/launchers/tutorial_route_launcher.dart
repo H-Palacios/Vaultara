@@ -13,9 +13,9 @@ class TutorialRouteLauncher {
 
   static Future<PlanTier?> currentTier() async {
     try {
-      return await PlanRepository.tierStream()
-          .first
-          .timeout(const Duration(seconds: 3));
+      return await PlanRepository.tierStream().first.timeout(
+        const Duration(seconds: 3),
+      );
     } catch (_) {
       return null;
     }
@@ -34,24 +34,38 @@ class TutorialRouteLauncher {
     required WidgetBuilder builder,
     required List<TutorialStep> group,
     bool isPremium = false,
+    bool closeWhenDone = false,
+    PlanTier? offerPlan,
   }) async {
     if (group.isEmpty || !navigator.mounted) return;
 
-    if (TutorialController.instance.isActive) {
-      TutorialController.instance.cancel();
-    }
+    final controller = TutorialController.instance;
+    if (controller.isActive) controller.cancel();
 
     navigator.popUntil((route) => route.isFirst);
-    unawaited(navigator.push(MaterialPageRoute<void>(builder: builder)));
+    final route = MaterialPageRoute<void>(builder: builder);
+    unawaited(navigator.push(route));
 
     await Future<void>.delayed(_routeSettle);
     if (!navigator.mounted) return;
 
-    TutorialController.instance.start(
+    controller.start(
       group.first,
       group: group,
       isPremium: isPremium,
+      offerPlan: offerPlan,
     );
+    if (!closeWhenDone) return;
+
+    // A screen opened only for the tutorial, such as a paid screen shown
+    // to a free user, closes again when the tutorial ends.
+    void close() {
+      if (controller.isActive) return;
+      controller.removeListener(close);
+      if (route.isActive && navigator.mounted) navigator.removeRoute(route);
+    }
+
+    controller.addListener(close);
   }
 
   /// Goes to one of the main tabs, such as Home or Calendar, and starts

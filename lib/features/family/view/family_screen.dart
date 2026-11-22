@@ -32,7 +32,11 @@ import 'package:vaultara/features/tutorials/view/tutorial_target.dart';
 enum _PersonAction { rename, nationality, residence, remove }
 
 class FamilyScreen extends StatefulWidget {
-  const FamilyScreen({super.key});
+  /// The tutorial: shows the screen as it is on this plan, with nobody
+  /// added yet, whatever plan the user is on. Null is the normal screen.
+  final PlanTier? tourTier;
+
+  const FamilyScreen({super.key, this.tourTier});
 
   @override
   State<FamilyScreen> createState() => _FamilyScreenState();
@@ -215,10 +219,12 @@ class _FamilyScreenState extends State<FamilyScreen> {
           child: StreamBuilder<PlanTier>(
             stream: _tierStream,
             builder: (context, tierSnap) {
-              final tier = tierSnap.data;
+              final tour = widget.tourTier != null;
+              final tier = widget.tourTier ?? tierSnap.data;
               return ValueListenableBuilder<List<Person>>(
                 valueListenable: PeopleRepository.people,
-                builder: (context, people, _) {
+                builder: (context, allPeople, _) {
+                  final people = tour ? const <Person>[] : allPeople;
                   final counts = _countsFor(people);
                   return ListView(
                     padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
@@ -238,7 +244,7 @@ class _FamilyScreenState extends State<FamilyScreen> {
                         ),
                       ),
                       const SizedBox(height: 18),
-                      if (tier == PlanTier.business)
+                      if (tier == PlanTier.business && !tour)
                         const UpdatesReviewSection(),
                       ListenableBuilder(
                         listenable: NationalityRepository.changes,
@@ -323,7 +329,7 @@ class _FamilyScreenState extends State<FamilyScreen> {
                       const SizedBox(height: 24),
                       TutorialTarget(
                         steps: const [TutorialStep.householdInvite],
-                        child: HouseholdSection(tier: tier),
+                        child: HouseholdSection(tier: tier, tour: tour),
                       ),
                     ],
                   );

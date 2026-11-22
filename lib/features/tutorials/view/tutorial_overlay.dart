@@ -7,6 +7,8 @@ import 'package:vaultara/features/tutorials/data/models/tutorial_step_groups.dar
 import 'package:vaultara/features/tutorials/data/models/tutorial_step_texts.dart';
 import 'package:vaultara/features/tutorials/services/tutorial_voice.dart';
 import 'package:vaultara/features/tutorials/view/widgets/tutorial_notification_card.dart';
+import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
+import 'package:vaultara/features/billing/view/plan_names.dart';
 
 export 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 
@@ -53,6 +55,11 @@ class TutorialOverlay extends StatefulWidget {
   final bool continuesTour;
   final bool blockTouches;
 
+  /// The plan that includes this feature, when the user does not have it.
+  /// The last step names it with a button to see it.
+  final PlanTier? offerPlan;
+  final VoidCallback? onSeePlans;
+
   const TutorialOverlay({
     super.key,
     required this.step,
@@ -65,6 +72,8 @@ class TutorialOverlay extends StatefulWidget {
     this.isFullTour = false,
     this.continuesTour = false,
     this.blockTouches = false,
+    this.offerPlan,
+    this.onSeePlans,
   });
 
   /// Space kept between the highlighted part and the tip.
@@ -260,6 +269,8 @@ class _TutorialOverlayState extends State<TutorialOverlay> {
       finishOnly: finishOnly,
       showNext: showNext,
       isLastStep: isLastStep,
+      offerPlan: isLastStep ? widget.offerPlan : null,
+      onSeePlans: widget.onSeePlans,
       onNext: widget.onNext,
       onCancel: widget.onCancel,
       onBack: finishOnly ? null : widget.onBack,
@@ -396,6 +407,8 @@ class _TipContent extends StatelessWidget {
   final bool finishOnly;
   final bool showNext;
   final bool isLastStep;
+  final PlanTier? offerPlan;
+  final VoidCallback? onSeePlans;
   final VoidCallback onNext;
   final VoidCallback onCancel;
   final VoidCallback? onBack;
@@ -411,6 +424,8 @@ class _TipContent extends StatelessWidget {
     required this.finishOnly,
     required this.showNext,
     required this.isLastStep,
+    required this.offerPlan,
+    required this.onSeePlans,
     required this.onNext,
     required this.onCancel,
     required this.onBack,
@@ -519,6 +534,41 @@ class _TipContent extends StatelessWidget {
           const SizedBox(height: 6),
         ],
         Text(message, textAlign: TextAlign.center, style: _textStyle),
+        if (offerPlan case final PlanTier plan) ...[
+          const SizedBox(height: 16),
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Icon(
+                Icons.workspace_premium_rounded,
+                color: Colors.white70,
+                size: 18,
+              ),
+              const SizedBox(width: 6),
+              Flexible(
+                child: Text(
+                  loc.tutorialIncludedIn(planName(loc, plan)),
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    color: Colors.white70,
+                    fontSize: 13,
+                    fontWeight: FontWeight.w700,
+                    decoration: TextDecoration.none,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 10),
+          FilledButton(
+            onPressed: onSeePlans,
+            style: FilledButton.styleFrom(
+              backgroundColor: Colors.white,
+              foregroundColor: scheme.primary,
+            ),
+            child: Text(loc.assistantSeePlans),
+          ),
+        ],
         const SizedBox(height: _spacingTextToButtons),
         buttons,
       ],

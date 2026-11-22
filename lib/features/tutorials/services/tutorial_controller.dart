@@ -4,6 +4,8 @@ import 'package:vaultara/core/analytics/analytics_service.dart';
 import 'package:vaultara/features/tutorials/services/tutorial_progress.dart';
 import 'package:vaultara/features/tutorials/services/tutorial_voice.dart';
 import 'package:vaultara/features/tutorials/view/tutorial_overlay.dart';
+import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
+import 'package:vaultara/features/billing/view/open_plans.dart';
 
 class TutorialController extends ChangeNotifier {
   TutorialController._();
@@ -55,13 +57,19 @@ class TutorialController extends ChangeNotifier {
     attach(context);
   }
 
+  /// The plan that includes the feature this tutorial shows, when the user
+  /// does not have it yet. The last step then offers it.
+  PlanTier? _offerPlan;
+
   void start(
     TutorialStep step, {
     bool isPremium = false,
     List<TutorialStep>? group,
+    PlanTier? offerPlan,
   }) {
     _currentStep = step;
     _isPremium = isPremium;
+    _offerPlan = offerPlan;
     _activeGroup = group ?? TutorialStepGroups.stepsFor(step);
     _logStep();
     _show();
@@ -218,7 +226,17 @@ class TutorialController extends ChangeNotifier {
     _currentStep = null;
     _activeGroup = const [];
     _isPremium = false;
+    _offerPlan = null;
     notifyListeners();
+  }
+
+  /// Ends the tutorial and opens Plans on the plan it offered.
+  void seePlans() {
+    final PlanTier? plan = _offerPlan;
+    final BuildContext? root = _rootContext;
+    end();
+    if (plan == null || root == null || !root.mounted) return;
+    openPlans(root, isPremium: PlanStore.isPaid, initialTier: plan);
   }
 
   Rect? _resolveRect() {
@@ -306,6 +324,8 @@ class TutorialController extends ChangeNotifier {
       isFullTour: _fullTour,
       continuesTour: continuesTour,
       blockTouches: blocks,
+      offerPlan: _offerPlan,
+      onSeePlans: seePlans,
     );
   }
 

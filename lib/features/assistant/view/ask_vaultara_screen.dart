@@ -39,6 +39,7 @@ import 'package:vaultara/features/assistant/view/widgets/assistant_message_tools
 import 'package:vaultara/features/assistant/view/widgets/assistant_report_sheet.dart';
 import 'package:vaultara/features/assistant/view/widgets/assistant_voice_panel.dart';
 import 'package:vaultara/features/billing/view/open_plans.dart';
+import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
 import 'package:vaultara/features/assistant/logic/assistant_plain_text.dart';
 import 'package:vaultara/features/insights/services/tts_service.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
@@ -79,12 +80,18 @@ class AskVaultaraScreen extends StatefulWidget {
   /// Opens straight into Talk mode, as from the app icon shortcut.
   final bool startTalk;
 
+  /// The tutorial: the screen as it works on a paid plan, with no chat of
+  /// the user's loaded, for everyone. The tutorial blocks touches, so
+  /// nothing can be sent.
+  final bool tour;
+
   const AskVaultaraScreen({
     super.key,
     required this.isPremium,
     this.sharedText,
     this.sendShared = false,
     this.startTalk = false,
+    this.tour = false,
   });
 
   @override
@@ -92,6 +99,9 @@ class AskVaultaraScreen extends StatefulWidget {
 }
 
 class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
+  /// Paid features show: on a paid plan, or in the tutorial.
+  bool get _unlocked => widget.isPremium || widget.tour;
+
   final TextEditingController _input = TextEditingController();
   final FocusNode _focus = FocusNode();
   final ScrollController _scroll = ScrollController();
@@ -141,6 +151,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     super.initState();
     _focus.addListener(_onFocus);
     _voice.problem.addListener(_onVoiceProblem);
+    if (widget.tour) return;
     AssistantOpenChat.claim(AssistantChatStore.userId);
     final shared = widget.sharedText?.trim() ?? '';
     final firstOpen = !AssistantOpenChat.opened;
@@ -1273,8 +1284,8 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
 
     return Scaffold(
       key: _scaffold,
-      endDrawerEnableOpenDragGesture: widget.isPremium && !_busy,
-      endDrawer: !widget.isPremium
+      endDrawerEnableOpenDragGesture: _unlocked && !_busy && !widget.tour,
+      endDrawer: !_unlocked || widget.tour
           ? null
           : AssistantChatPanel(
               currentChatId: _chatId,
@@ -1291,7 +1302,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
                 padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
                 child: ScreenHeader(
                   title: loc.assistantTitle,
-                  trailing: !widget.isPremium
+                  trailing: !_unlocked
                       ? null
                       : Row(
                           mainAxisSize: MainAxisSize.min,
@@ -1326,8 +1337,13 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
                 ),
               ),
               Expanded(
-                child: !widget.isPremium
-                    ? _PremiumGate(onSeePlans: () => openPlans(context))
+                child: !_unlocked
+                    ? _PremiumGate(
+                        onSeePlans: () =>
+                            openPlans(context, initialTier: PlanTier.premium),
+                      )
+                    : widget.tour
+                    ? _EmptyState(onSuggestion: (_) {})
                     : _loadingChat
                     ? const Center(child: CircularProgressIndicator())
                     : _messages.isEmpty
@@ -1348,14 +1364,16 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
                         },
                       ),
               ),
-              if (widget.isPremium)
+              if (_unlocked)
                 TutorialTarget(
                   steps: const [TutorialStep.askType, TutorialStep.askTalk],
                   child: Container(
                     padding: const EdgeInsets.fromLTRB(12, 8, 12, 10),
                     decoration: BoxDecoration(
                       color: scheme.surface,
-                      border: Border(top: BorderSide(color: scheme.outlineVariant)),
+                      border: Border(
+                        top: BorderSide(color: scheme.outlineVariant),
+                      ),
                     ),
                     child: _talk
                         ? AssistantTalkPanel(

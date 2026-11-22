@@ -15,7 +15,11 @@ import 'package:vaultara/core/util/initials.dart';
 class HouseholdSection extends StatefulWidget {
   final PlanTier? tier;
 
-  const HouseholdSection({super.key, required this.tier});
+  /// The tutorial: the start of the section, before a household is made,
+  /// so none of the user's household shows.
+  final bool tour;
+
+  const HouseholdSection({super.key, required this.tier, this.tour = false});
 
   @override
   State<HouseholdSection> createState() => _HouseholdSectionState();
@@ -199,7 +203,7 @@ class _HouseholdSectionState extends State<HouseholdSection> {
     return ValueListenableBuilder<HouseholdInfo?>(
       valueListenable: HouseholdRepository.household,
       builder: (context, info, _) {
-        if (info == null) {
+        if (info == null || widget.tour) {
           _details = null;
           _detailsKey = null;
           return _buildOutside(context);
@@ -254,7 +258,7 @@ class _HouseholdSectionState extends State<HouseholdSection> {
     final tier = widget.tier;
     final canCreate =
         (tier == PlanTier.family || tier == PlanTier.business) &&
-        !HouseholdRepository.viaHousehold;
+        (widget.tour || !HouseholdRepository.viaHousehold);
     final limit = tier == PlanTier.business
         ? HouseholdRepository.businessMemberLimit
         : HouseholdRepository.familyMemberLimit;

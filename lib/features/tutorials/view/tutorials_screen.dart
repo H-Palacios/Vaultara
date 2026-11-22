@@ -8,6 +8,7 @@ import 'package:vaultara/features/tutorials/services/tutorial_progress.dart';
 import 'package:vaultara/features/tutorials/services/tutorials_service.dart';
 import 'package:vaultara/features/tutorials/view/tour_screen.dart';
 import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
+import 'package:vaultara/features/billing/view/plan_names.dart';
 
 /// Every tutorial, grouped, with overall progress and the full tour on top.
 class TutorialsScreen extends StatefulWidget {
@@ -223,18 +224,6 @@ class _PlanChip extends StatelessWidget {
 
   const _PlanChip({required this.plan});
 
-  String _name(AppLocalizations t) {
-    switch (plan) {
-      case PlanTier.family:
-        return t.familyPlanName;
-      case PlanTier.business:
-        return t.planTabBusiness;
-      case PlanTier.premium:
-      case PlanTier.free:
-        return t.planPremiumName;
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     final t = AppLocalizations.of(context)!;
@@ -251,7 +240,7 @@ class _PlanChip extends StatelessWidget {
               )
             : _Chip(
                 icon: Icons.workspace_premium_rounded,
-                text: _name(t),
+                text: planName(t, plan),
                 colour: scheme.tertiary,
               );
       },

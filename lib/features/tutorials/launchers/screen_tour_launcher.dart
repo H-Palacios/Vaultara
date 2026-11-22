@@ -18,6 +18,7 @@ import 'package:vaultara/features/tutorials/launchers/tutorial_route_launcher.da
 import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/shell/shell_state.dart';
+import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
 
 /// Plays the tutorials that walk through one real screen: it opens the
 /// screen and the overlay points at its parts one by one.
@@ -55,14 +56,12 @@ class ScreenTourLauncher {
       case TutorialIds.renew:
         await _renew(navigator, group, premium);
       case TutorialIds.askVaultara:
-        await _push(
+        await _paid(
           navigator,
           group,
           premium,
-          (_) => PremiumBuilder(
-            initial: premium,
-            builder: (_, isPremium) => AskVaultaraScreen(isPremium: isPremium),
-          ),
+          PlanTier.premium,
+          (_) => AskVaultaraScreen(isPremium: premium, tour: true),
         );
       case TutorialIds.lostWallet:
         await _push(
@@ -94,8 +93,21 @@ class ScreenTourLauncher {
           ),
         );
       case TutorialIds.household:
+        await _paid(
+          navigator,
+          group,
+          premium,
+          PlanTier.family,
+          (_) => const FamilyScreen(tourTier: PlanTier.family),
+        );
       case TutorialIds.business:
-        await _push(navigator, group, premium, (_) => const FamilyScreen());
+        await _paid(
+          navigator,
+          group,
+          premium,
+          PlanTier.business,
+          (_) => const FamilyScreen(tourTier: PlanTier.business),
+        );
       case TutorialIds.importScan:
         await _push(navigator, group, premium, (_) => const ImportScreen());
     }
@@ -112,6 +124,28 @@ class ScreenTourLauncher {
       builder: builder,
       group: group,
       isPremium: premium,
+    );
+  }
+
+  /// A paid feature: its screen opens as it works on [plan] for everyone,
+  /// closes when the tutorial ends, and the last step offers the plan to
+  /// anyone who does not have it yet.
+  static Future<void> _paid(
+    NavigatorState navigator,
+    List<TutorialStep> group,
+    bool premium,
+    PlanTier plan,
+    WidgetBuilder builder,
+  ) {
+    final PlanTier? mine = PlanStore.current.value?.tier;
+    final bool included = mine != null && mine.includes(plan);
+    return TutorialRouteLauncher.pushAndStart(
+      navigator,
+      builder: builder,
+      group: group,
+      isPremium: premium,
+      closeWhenDone: true,
+      offerPlan: included ? null : plan,
     );
   }
 
