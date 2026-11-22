@@ -9344,7 +9344,16 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return 'Tá $month gnóthach ($count). Tosaigh an chéad athnuachan go luath.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count athnuachan. Tosaigh go luath ionas nach gcarnfaidh siad.',
+      many: '$month: $count n-athnuachan. Tosaigh go luath ionas nach gcarnfaidh siad.',
+      few: '$month: $count athnuachan. Tosaigh go luath ionas nach gcarnfaidh siad.',
+      two: '$month: $count athnuachan. Tosaigh go luath ionas nach gcarnfaidh siad.',
+      one: '$month: $count athnuachan. Tosaigh go luath ionas nach gcarnfaidh siad.',
+    );
+    return '$_temp0';
   }
 
   @override

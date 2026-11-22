@@ -9083,7 +9083,12 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return '$month khá bận ($count). Hãy bắt đầu gia hạn mục đầu tiên sớm.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count lần gia hạn. Hãy bắt đầu sớm để không bị dồn lại.',
+    );
+    return '$_temp0';
   }
 
   @override

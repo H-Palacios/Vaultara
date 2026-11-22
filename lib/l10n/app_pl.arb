@@ -3399,7 +3399,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month} jest pracowity ({count}). Zacznij pierwsze odnowienie wcześniej.",
+  "insightsBusyMonth": "{count, plural, one{{month}: {count} odnowienie. Zacznij wcześnie, żeby się nie nawarstwiły.} few{{month}: {count} odnowienia. Zacznij wcześnie, żeby się nie nawarstwiły.} many{{month}: {count} odnowień. Zacznij wcześnie, żeby się nie nawarstwiły.} other{{month}: {count} odnowienia. Zacznij wcześnie, żeby się nie nawarstwiły.}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

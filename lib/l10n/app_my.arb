@@ -3149,7 +3149,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month} တွင် အလုပ်များသည် ({count})။ ပထမသက်တမ်းတိုးခြင်းကို စောစောစတင်ပါ။",
+  "insightsBusyMonth": "{count, plural, other{{month}: သက်တမ်းတိုးရန် {count} ခု။ မစုပုံစေရန် စောစော စတင်ပါ။}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

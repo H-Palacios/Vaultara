@@ -3399,7 +3399,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month} er travel ({count}). Start den første fornyelsen tidlig.",
+  "insightsBusyMonth": "{count, plural, one{{month}: {count} fornyelse. Begynn tidlig så de ikke hoper seg opp.} other{{month}: {count} fornyelser. Begynn tidlig så de ikke hoper seg opp.}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

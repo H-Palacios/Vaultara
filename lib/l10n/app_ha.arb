@@ -3411,7 +3411,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month} yana da aiki ({count}). Fara sabuntawa na farko da wuri.",
+  "insightsBusyMonth": "{count, plural, one{{month}: sabuntawa {count}. Fara da wuri don kada su taru.} other{{month}: sabuntawa {count}. Fara da wuri don kada su taru.}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

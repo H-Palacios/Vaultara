@@ -3430,7 +3430,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "Im {month} ist viel los ({count}). Beginne die erste Verlängerung früh.",
+  "insightsBusyMonth": "{count, plural, one{{month}: {count} Verlängerung. Fang früh an, damit sich nichts staut.} other{{month}: {count} Verlängerungen. Fang früh an, damit sie sich nicht stauen.}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

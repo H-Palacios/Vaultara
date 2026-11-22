@@ -3413,7 +3413,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month} është i ngarkuar ({count}). Fillo herët rinovimin e parë.",
+  "insightsBusyMonth": "{count, plural, one{{month}: {count} rinovim. Fillo herët që të mos grumbullohen.} other{{month}: {count} rinovime. Fillo herët që të mos grumbullohen.}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

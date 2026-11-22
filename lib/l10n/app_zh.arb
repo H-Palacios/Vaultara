@@ -3399,7 +3399,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month}比较集中（{count}项）。请尽早开始第一项续期。",
+  "insightsBusyMonth": "{count, plural, other{{month}有 {count} 项续期。尽早开始，免得堆在一起。}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

@@ -9071,7 +9071,12 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return '$monthは更新が集中しています（$count件）。最初の更新は早めに始めましょう。';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$monthは更新が$count件あります。重ならないよう早めに始めましょう。',
+    );
+    return '$_temp0';
   }
 
   @override

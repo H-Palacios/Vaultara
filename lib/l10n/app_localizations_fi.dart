@@ -9149,7 +9149,13 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return '$month on kiireinen ($count). Aloita ensimmäinen uusiminen ajoissa.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count uusimista. Aloita ajoissa, ettei niitä kasaudu.',
+      one: '$month: $count uusiminen. Aloita ajoissa, ettei niitä kasaudu.',
+    );
+    return '$_temp0';
   }
 
   @override

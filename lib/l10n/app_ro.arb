@@ -3399,7 +3399,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month} e aglomerată ({count}). Începe prima reînnoire din timp.",
+  "insightsBusyMonth": "{count, plural, one{{month}: {count} reînnoire. Începe din timp ca să nu se adune.} few{{month}: {count} reînnoiri. Începe din timp ca să nu se adune.} other{{month}: {count} de reînnoiri. Începe din timp ca să nu se adune.}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

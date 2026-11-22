@@ -9145,7 +9145,13 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return '$month დატვირთულია ($count). პირველი განახლება ადრე დაიწყეთ.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count განახლება. ადრე დაიწყეთ, რომ არ დაგროვდეს.',
+      one: '$month: $count განახლება. ადრე დაიწყეთ, რომ არ დაგროვდეს.',
+    );
+    return '$_temp0';
   }
 
   @override

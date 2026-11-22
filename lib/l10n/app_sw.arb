@@ -3399,7 +3399,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month} ina shughuli nyingi ({count}). Anza usasishaji wa kwanza mapema.",
+  "insightsBusyMonth": "{count, plural, one{{month}: uhuishaji {count}. Anza mapema ili visirundikane.} other{{month}: uhuishaji {count}. Anza mapema ili visirundikane.}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

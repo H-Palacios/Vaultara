@@ -9227,7 +9227,14 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return '$month e aglomerată ($count). Începe prima reînnoire din timp.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count de reînnoiri. Începe din timp ca să nu se adune.',
+      few: '$month: $count reînnoiri. Începe din timp ca să nu se adune.',
+      one: '$month: $count reînnoire. Începe din timp ca să nu se adune.',
+    );
+    return '$_temp0';
   }
 
   @override

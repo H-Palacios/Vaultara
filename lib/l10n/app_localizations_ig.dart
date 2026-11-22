@@ -9094,7 +9094,13 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return '$month jupụtara ($count). Malite mmeghari ọhụrụ mbụ n\'oge.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: mmeghari $count. Malite n\'oge ka ha ghara ịchịkọta.',
+      one: '$month: mmeghari $count. Malite n\'oge ka ha ghara ịchịkọta.',
+    );
+    return '$_temp0';
   }
 
   @override

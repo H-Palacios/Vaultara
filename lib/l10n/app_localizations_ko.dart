@@ -9083,7 +9083,12 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return '$month에 갱신이 몰려 있어요($count개). 첫 갱신을 일찍 시작하세요.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month에는 갱신이 $count개 있어요. 몰리지 않게 일찍 시작하세요.',
+    );
+    return '$_temp0';
   }
 
   @override

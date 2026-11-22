@@ -3417,7 +3417,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month} бош эмес ({count}). Биринчи жаңылоону эртерээк баштаңыз.",
+  "insightsBusyMonth": "{count, plural, one{{month}: {count} жаңылоо. Топтолуп калбашы үчүн эрте баштаңыз.} other{{month}: {count} жаңылоо. Топтолуп калбашы үчүн эрте баштаңыз.}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

@@ -9145,7 +9145,13 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return 'U-$month umatasa ($count). Qala ukuvuselela kokuqala kusenesikhathi.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: ukuvuselelwa oku-$count. Qala kusenesikhathi ukuze kungaqoqani.',
+      one: '$month: ukuvuselelwa oku-$count. Qala kusenesikhathi ukuze kungaqoqani.',
+    );
+    return '$_temp0';
   }
 
   @override

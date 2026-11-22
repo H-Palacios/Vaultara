@@ -3416,7 +3416,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month} มีงานเยอะ ({count}) เริ่มต่ออายุรายการแรกแต่เนิ่นๆ",
+  "insightsBusyMonth": "{count, plural, other{{month}: ต่ออายุ {count} รายการ เริ่มแต่เนิ่นๆ จะได้ไม่กองรวมกัน}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

@@ -9389,7 +9389,14 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return 'شهر $month مزدحم ($count). ابدأ التجديد الأول مبكرًا.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count تجديد. ابدأ مبكرًا حتى لا تتراكم.',
+      many: '$month: $count تجديدًا. ابدأ مبكرًا حتى لا تتراكم.',
+      few: '$month: $count تجديدات. ابدأ مبكرًا حتى لا تتراكم.',
+    );
+    return '$_temp0';
   }
 
   @override

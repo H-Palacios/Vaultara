@@ -3399,7 +3399,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month} je poln ({count}). Prvo podaljšanje začnite zgodaj.",
+  "insightsBusyMonth": "{count, plural, one{{month}: {count} podaljšanje. Začnite zgodaj, da se ne nakopičijo.} two{{month}: {count} podaljšanji. Začnite zgodaj, da se ne nakopičijo.} few{{month}: {count} podaljšanja. Začnite zgodaj, da se ne nakopičijo.} other{{month}: {count} podaljšanj. Začnite zgodaj, da se ne nakopičijo.}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

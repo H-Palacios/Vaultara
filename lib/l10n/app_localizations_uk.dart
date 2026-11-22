@@ -9312,7 +9312,15 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return '$month насичений ($count). Почніть перше поновлення заздалегідь.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count поновлення. Почніть заздалегідь, щоб вони не накопичилися.',
+      many: '$month: $count поновлень. Почніть заздалегідь, щоб вони не накопичилися.',
+      few: '$month: $count поновлення. Почніть заздалегідь, щоб вони не накопичилися.',
+      one: '$month: $count поновлення. Почніть заздалегідь, щоб вони не накопичилися.',
+    );
+    return '$_temp0';
   }
 
   @override

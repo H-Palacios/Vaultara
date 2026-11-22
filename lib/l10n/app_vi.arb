@@ -3399,7 +3399,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month} khá bận ({count}). Hãy bắt đầu gia hạn mục đầu tiên sớm.",
+  "insightsBusyMonth": "{count, plural, other{{month}: {count} lần gia hạn. Hãy bắt đầu sớm để không bị dồn lại.}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

@@ -11399,9 +11399,9 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month} is busy ({count}). Start the first renewal early.",
+  "insightsBusyMonth": "{count, plural, other{{month} has {count} renewals. Start early so they don't pile up.}}",
   "@insightsBusyMonth": {
-    "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
+    "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it, always 3 or more.",
     "placeholders": {
       "month": {
         "type": "String"

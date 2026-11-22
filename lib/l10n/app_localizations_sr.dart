@@ -9225,7 +9225,14 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return '$month је пун обавеза ($count). Прву обнову почните раније.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count обнова. Почните раније да се не нагомилају.',
+      few: '$month: $count обнове. Почните раније да се не нагомилају.',
+      one: '$month: $count обнова. Почните раније да се не нагомилају.',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -19044,7 +19051,14 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return '$month је пун обавеза ($count). Прву обнову почните раније.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count обнова. Почните раније да се не нагомилају.',
+      few: '$month: $count обнове. Почните раније да се не нагомилају.',
+      one: '$month: $count обнова. Почните раније да се не нагомилају.',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -28859,7 +28873,14 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return '$month je pun obaveza ($count). Prvu obnovu počnite ranije.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count obnova. Počnite ranije da se ne nagomilaju.',
+      few: '$month: $count obnove. Počnite ranije da se ne nagomilaju.',
+      one: '$month: $count obnova. Počnite ranije da se ne nagomilaju.',
+    );
+    return '$_temp0';
   }
 
   @override

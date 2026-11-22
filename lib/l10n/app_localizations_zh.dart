@@ -9083,7 +9083,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return '$month比较集中（$count项）。请尽早开始第一项续期。';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month有 $count 项续期。尽早开始，免得堆在一起。',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -18744,7 +18749,12 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return '$month比较集中（$count项）。请尽早开始第一项续期。';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month有 $count 项续期。尽早开始，免得堆在一起。',
+    );
+    return '$_temp0';
   }
 
   @override
@@ -28405,7 +28415,12 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return '$month比較集中（$count 項）。請盡早開始第一項續期。';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month有 $count 項續期。盡早開始，免得堆在一起。',
+    );
+    return '$_temp0';
   }
 
   @override

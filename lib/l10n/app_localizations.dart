@@ -15589,10 +15589,10 @@ abstract class AppLocalizations {
   /// **'See all'**
   String get comingUpSeeAll;
 
-  /// Insights note above the month bars; month is a month and year such as "March 2027", count the number of renewals in it.
+  /// Insights note above the month bars; month is a month and year such as "March 2027", count the number of renewals in it, always 3 or more.
   ///
   /// In en, this message translates to:
-  /// **'{month} is busy ({count}). Start the first renewal early.'**
+  /// **'{count, plural, other{{month} has {count} renewals. Start early so they don\'t pile up.}}'**
   String insightsBusyMonth(String month, int count);
 
   /// profileSectionAccountSecurity

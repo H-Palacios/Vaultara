@@ -9296,7 +9296,15 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return '$month je nabitý ($count). Začnite prvú obnovu včas.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count obnov. Začnite včas, nech sa nenahromadia.',
+      many: '$month: $count obnov. Začnite včas, nech sa nenahromadia.',
+      few: '$month: $count obnovy. Začnite včas, nech sa nenahromadia.',
+      one: '$month: $count obnova. Začnite včas, nech sa nenahromadia.',
+    );
+    return '$_temp0';
   }
 
   @override

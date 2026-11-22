@@ -3411,7 +3411,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "Tá {month} gnóthach ({count}). Tosaigh an chéad athnuachan go luath.",
+  "insightsBusyMonth": "{count, plural, one{{month}: {count} athnuachan. Tosaigh go luath ionas nach gcarnfaidh siad.} two{{month}: {count} athnuachan. Tosaigh go luath ionas nach gcarnfaidh siad.} few{{month}: {count} athnuachan. Tosaigh go luath ionas nach gcarnfaidh siad.} many{{month}: {count} n-athnuachan. Tosaigh go luath ionas nach gcarnfaidh siad.} other{{month}: {count} athnuachan. Tosaigh go luath ionas nach gcarnfaidh siad.}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

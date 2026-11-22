@@ -3411,7 +3411,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month} व्यस्त है ({count})। पहला नवीनीकरण जल्दी शुरू करें।",
+  "insightsBusyMonth": "{count, plural, one{{month}: {count} नवीनीकरण। जल्दी शुरू करें ताकि ये जमा न हों।} other{{month}: {count} नवीनीकरण। जल्दी शुरू करें ताकि ये जमा न हों।}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

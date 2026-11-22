@@ -3404,7 +3404,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month} er annasamur ({count}). Byrjaðu fyrstu endurnýjunina snemma.",
+  "insightsBusyMonth": "{count, plural, one{{month}: {count} endurnýjun. Byrjaðu snemma svo þær hrannist ekki upp.} other{{month}: {count} endurnýjanir. Byrjaðu snemma svo þær hrannist ekki upp.}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

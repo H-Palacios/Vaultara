@@ -9150,7 +9150,13 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return '$month on tihe ($count). Alusta esimese uuendamisega varakult.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count uuendust. Alusta varakult, et need ei kuhjuks.',
+      one: '$month: $count uuendus. Alusta varakult, et need ei kuhjuks.',
+    );
+    return '$_temp0';
   }
 
   @override

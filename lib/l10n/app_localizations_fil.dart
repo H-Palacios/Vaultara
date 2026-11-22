@@ -9140,7 +9140,12 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return 'Abala ang $month ($count). Simulan nang maaga ang unang pag-renew.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count pag-renew. Magsimula nang maaga para hindi magsabay-sabay.',
+    );
+    return '$_temp0';
   }
 
   @override

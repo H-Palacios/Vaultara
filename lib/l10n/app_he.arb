@@ -3404,7 +3404,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month} עמוס ({count}). כדאי להתחיל את החידוש הראשון מוקדם.",
+  "insightsBusyMonth": "{count, plural, one{{month}: חידוש {count}. כדאי להתחיל מוקדם כדי שלא יצטברו.} two{{month}: {count} חידושים. כדאי להתחיל מוקדם כדי שלא יצטברו.} many{{month}: {count} חידושים. כדאי להתחיל מוקדם כדי שלא יצטברו.} other{{month}: {count} חידושים. כדאי להתחיל מוקדם כדי שלא יצטברו.}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

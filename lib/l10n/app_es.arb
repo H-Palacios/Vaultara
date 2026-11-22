@@ -3406,7 +3406,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month} viene cargado ({count}). Empieza pronto la primera renovación.",
+  "insightsBusyMonth": "{count, plural, one{{month}: {count} renovación. Empieza pronto para que no se acumulen.} other{{month}: {count} renovaciones. Empieza pronto para que no se acumulen.}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

@@ -9081,7 +9081,12 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return '$month တွင် အလုပ်များသည် ($count)။ ပထမသက်တမ်းတိုးခြင်းကို စောစောစတင်ပါ။';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: သက်တမ်းတိုးရန် $count ခု။ မစုပုံစေရန် စောစော စတင်ပါ။',
+    );
+    return '$_temp0';
   }
 
   @override

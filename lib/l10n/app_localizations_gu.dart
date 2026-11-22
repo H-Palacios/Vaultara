@@ -9145,7 +9145,13 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String insightsBusyMonth(String month, int count) {
-    return '$month વ્યસ્ત છે ($count). પહેલું નવીકરણ વહેલું શરૂ કરો.';
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$month: $count નવીકરણ. વહેલું શરૂ કરો જેથી ઢગલો ન થાય.',
+      one: '$month: $count નવીકરણ. વહેલું શરૂ કરો જેથી ઢગલો ન થાય.',
+    );
+    return '$_temp0';
   }
 
   @override

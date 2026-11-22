@@ -3399,7 +3399,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month} කාර්යබහුලයි ({count}). පළමු අලුත් කිරීම කලින් අරඹන්න.",
+  "insightsBusyMonth": "{count, plural, one{{month}: අලුත් කිරීම් {count}. ගොඩ නොගැසීමට කලින් ආරම්භ කරන්න.} other{{month}: අලුත් කිරීම් {count}. ගොඩ නොගැසීමට කලින් ආරම්භ කරන්න.}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

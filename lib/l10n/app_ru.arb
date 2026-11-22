@@ -3374,7 +3374,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month} насыщенный ({count}). Начните первое продление заранее.",
+  "insightsBusyMonth": "{count, plural, one{{month}: {count} продление. Начните заранее, чтобы они не накопились.} few{{month}: {count} продления. Начните заранее, чтобы они не накопились.} many{{month}: {count} продлений. Начните заранее, чтобы они не накопились.} other{{month}: {count} продления. Начните заранее, чтобы они не накопились.}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {

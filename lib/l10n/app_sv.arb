@@ -3392,7 +3392,7 @@
   "@comingUpSeeAll": {
     "description": "Button beside the Coming up heading that opens the records expiring in the next 30 days."
   },
-  "insightsBusyMonth": "{month} är fullspäckad ({count}). Börja den första förnyelsen i god tid.",
+  "insightsBusyMonth": "{count, plural, one{{month}: {count} förnyelse. Börja i tid så att de inte hopar sig.} other{{month}: {count} förnyelser. Börja i tid så att de inte hopar sig.}}",
   "@insightsBusyMonth": {
     "description": "Insights note above the month bars; month is a month and year such as \"March 2027\", count the number of renewals in it.",
     "placeholders": {
