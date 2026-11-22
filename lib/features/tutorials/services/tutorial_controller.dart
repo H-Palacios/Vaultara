@@ -138,6 +138,40 @@ class TutorialController extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Whether the current step can go Back. Not on the first step, and not
+  /// where the step before was on a screen that has since closed.
+  bool get canGoBack {
+    final step = _currentStep;
+    if (step == null) return false;
+    if (TutorialStepGroups.noBack.contains(step)) return false;
+    return _activeGroup.indexOf(step) > 0;
+  }
+
+  /// Shows the step before this one again.
+  void back() {
+    final step = _currentStep;
+    if (step == null || !canGoBack) return;
+    final int index = _activeGroup.indexOf(step);
+    final TutorialStep previous = _activeGroup[index - 1];
+    TutorialVoice.stop();
+    // In the full tour the reminder steps stand in for addRecordReminder,
+    // so Back from the step after it returns to the last reminder step.
+    if (_fullTour &&
+        identical(_activeGroup, TutorialStepGroups.addRecord) &&
+        previous == TutorialStep.addRecordReminder) {
+      start(
+        TutorialStepGroups.reminders.last,
+        isPremium: _isPremium,
+        group: TutorialStepGroups.reminders,
+      );
+      return;
+    }
+    _currentStep = previous;
+    _logStep();
+    _show();
+    notifyListeners();
+  }
+
   void _terminate() {
     if (_fullTour) {
       finishTour();
@@ -266,6 +300,7 @@ class TutorialController extends ChangeNotifier {
       steps: _activeGroup,
       onNext: next,
       onCancel: cancel,
+      onBack: canGoBack ? back : null,
       highlightRect: rect,
       isPremium: _isPremium,
       isFullTour: _fullTour,

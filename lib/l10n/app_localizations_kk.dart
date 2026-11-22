@@ -871,13 +871,18 @@ class AppLocalizationsKk extends AppLocalizations {
   String get tutorialEnd => 'Аяқтау';
 
   @override
-  String get tutorialHomeFab => 'Мұнда жазбаларды қосасыз. Атауды, санатты, топты, мерзімнің аяқталу күнін, қосымша ескертпелерді және еске салғышты енгізу үшін түртіңіз.';
+  String tutorialStepCount(int current, int total) {
+    return '$current/$total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Жазба қосу үшін осы жерді түртіңіз. Оған атау, санат және мерзімнің аяқталу күнін беріңіз, Vaultara еске салғыштарды өзі баптайды.';
 
   @override
   String get tutorialAddRecordCategory => 'Жазбаңызды ұйымдастыру үшін санатты таңдаңыз.';
 
   @override
-  String get tutorialAddRecordGroup => 'Жазбаңызды дәлірек жіктеу үшін топты таңдаңыз.';
+  String get tutorialAddRecordGroup => 'Жазбаны өз санатының ішінде реттеу үшін топ таңдаңыз.';
 
   @override
   String get tutorialAddRecordName => 'Жазбаңыз үшін атау енгізіңіз.';

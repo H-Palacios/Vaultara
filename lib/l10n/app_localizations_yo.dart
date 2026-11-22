@@ -871,13 +871,18 @@ class AppLocalizationsYo extends AppLocalizations {
   String get tutorialEnd => 'Pari';
 
   @override
-  String get tutorialHomeFab => 'Nibi ni o ti n fi awọn igbasilẹ kun. Tẹ lati tẹ orukọ, ẹka, ẹgbẹ, ọjọ ipari, awọn akọsilẹ aṣayan, ati iranti.';
+  String tutorialStepCount(int current, int total) {
+    return '$current nínú $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Tẹ ibí láti fi igbasilẹ kún. Fún un ní orúkọ, ẹ̀ka àti ọjọ́ ìparí, Vaultara yóò sì ṣètò àwọn ìrántí.';
 
   @override
   String get tutorialAddRecordCategory => 'Yan ẹka lati ṣeto igbasilẹ rẹ.';
 
   @override
-  String get tutorialAddRecordGroup => 'Yan ẹgbẹ lati ṣe iyasọtọ igbasilẹ rẹ ni deede diẹ sii.';
+  String get tutorialAddRecordGroup => 'Yan ẹgbẹ́ kan láti to igbasilẹ náà sínú ẹ̀ka rẹ̀.';
 
   @override
   String get tutorialAddRecordName => 'Tẹ orukọ fun igbasilẹ rẹ.';

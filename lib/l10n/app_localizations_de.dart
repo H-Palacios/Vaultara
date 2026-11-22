@@ -871,13 +871,18 @@ class AppLocalizationsDe extends AppLocalizations {
   String get tutorialEnd => 'Fertig';
 
   @override
-  String get tutorialHomeFab => 'Hier fügst du Einträge hinzu. Tippe, um einen Namen, eine Kategorie, eine Gruppe, ein Ablaufdatum, optionale Notizen und eine Erinnerung einzugeben.';
+  String tutorialStepCount(int current, int total) {
+    return '$current von $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Tippe hier, um einen Eintrag hinzuzufügen. Gib ihm einen Namen, eine Kategorie und ein Ablaufdatum, und Vaultara richtet die Erinnerungen ein.';
 
   @override
   String get tutorialAddRecordCategory => 'Wähle eine Kategorie zur Organisation deines Eintrags aus.';
 
   @override
-  String get tutorialAddRecordGroup => 'Wähle eine Gruppe aus, um deinen Eintrag präziser zu klassifizieren.';
+  String get tutorialAddRecordGroup => 'Wähle eine Gruppe, um den Eintrag innerhalb seiner Kategorie einzuordnen.';
 
   @override
   String get tutorialAddRecordName => 'Gib einen Namen für deinen Eintrag ein.';

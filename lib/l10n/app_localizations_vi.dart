@@ -871,13 +871,18 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tutorialEnd => 'Hoàn thành';
 
   @override
-  String get tutorialHomeFab => 'Đây là nơi bạn thêm bản ghi. Nhấn để nhập tên, danh mục, nhóm, ngày hết hạn, ghi chú tùy chọn và lời nhắc.';
+  String tutorialStepCount(int current, int total) {
+    return '$current/$total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Nhấn vào đây để thêm bản ghi. Đặt tên, danh mục và ngày hết hạn, Vaultara sẽ cài lời nhắc cho bạn.';
 
   @override
   String get tutorialAddRecordCategory => 'Chọn danh mục để tổ chức bản ghi của bạn.';
 
   @override
-  String get tutorialAddRecordGroup => 'Chọn nhóm để phân loại bản ghi của bạn chính xác hơn.';
+  String get tutorialAddRecordGroup => 'Chọn một nhóm để xếp bản ghi trong danh mục của nó.';
 
   @override
   String get tutorialAddRecordName => 'Nhập tên cho bản ghi của bạn.';

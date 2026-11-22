@@ -871,13 +871,18 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tutorialEnd => '완료';
 
   @override
-  String get tutorialHomeFab => '여기에서 기록를 추가합니다. 탭하여 이름, 카테고리, 그룹, 만료일, 선택적 메모 및 알림을 입력하세요.';
+  String tutorialStepCount(int current, int total) {
+    return '$current/$total';
+  }
+
+  @override
+  String get tutorialHomeFab => '여기를 눌러 기록을 추가하세요. 이름, 카테고리, 만료일을 정하면 Vaultara가 알림을 맞춰 줘요.';
 
   @override
   String get tutorialAddRecordCategory => '기록를 정리하기 위한 카테고리를 선택하세요.';
 
   @override
-  String get tutorialAddRecordGroup => '기록를 더 정확하게 분류하기 위한 그룹을 선택하세요.';
+  String get tutorialAddRecordGroup => '그룹을 고르면 기록을 카테고리 안에서 정리할 수 있어요.';
 
   @override
   String get tutorialAddRecordName => '기록의 이름을 입력하세요.';

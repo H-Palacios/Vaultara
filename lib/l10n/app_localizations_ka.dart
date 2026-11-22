@@ -871,13 +871,18 @@ class AppLocalizationsKa extends AppLocalizations {
   String get tutorialEnd => 'დასრულება';
 
   @override
-  String get tutorialHomeFab => 'აქ ამატებთ ჩანაწერებს. შეეხეთ სახელის, კატეგორიის, ჯგუფის, ვადის გასვლის თარიღის, არასავალდებულო შენიშვნების და შეხსენების შესაყვანად.';
+  String tutorialStepCount(int current, int total) {
+    return '$current / $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'შეეხეთ აქ ჩანაწერის დასამატებლად. მიეცით მას სახელი, კატეგორია და ვადის გასვლის თარიღი, და Vaultara შეხსენებებს მოაწყობს.';
 
   @override
   String get tutorialAddRecordCategory => 'აირჩიეთ კატეგორია თქვენი ჩანაწერის ორგანიზებისთვის.';
 
   @override
-  String get tutorialAddRecordGroup => 'აირჩიეთ ჯგუფი თქვენი ჩანაწერის უფრო ზუსტად კლასიფიცირებისთვის.';
+  String get tutorialAddRecordGroup => 'აირჩიეთ ჯგუფი, რომ ჩანაწერი თავის კატეგორიაში დაალაგოთ.';
 
   @override
   String get tutorialAddRecordName => 'შეიყვანეთ სახელი თქვენი ჩანაწერისთვის.';

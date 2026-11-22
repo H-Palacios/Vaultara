@@ -872,13 +872,18 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tutorialEnd => 'Pabeigt';
 
   @override
-  String get tutorialHomeFab => 'Šeit jūs pievienojat ierakstus. Pieskarieties, lai ievadītu nosaukumu, kategoriju, grupu, derīguma termiņu, izvēles piezīmes un atgādinājumu.';
+  String tutorialStepCount(int current, int total) {
+    return '$current no $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Pieskarieties šeit, lai pievienotu ierakstu. Piešķiriet tam nosaukumu, kategoriju un derīguma termiņu, un Vaultara iestatīs atgādinājumus.';
 
   @override
   String get tutorialAddRecordCategory => 'Izvēlieties kategoriju sava ieraksta organizēšanai.';
 
   @override
-  String get tutorialAddRecordGroup => 'Izvēlieties grupu, lai precīzāk klasificētu savu ierakstu.';
+  String get tutorialAddRecordGroup => 'Izvēlieties grupu, lai sakārtotu ierakstu tā kategorijā.';
 
   @override
   String get tutorialAddRecordName => 'Ievadiet nosaukumu savam ierakstam.';

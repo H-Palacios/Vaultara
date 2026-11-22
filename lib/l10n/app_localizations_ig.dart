@@ -871,13 +871,18 @@ class AppLocalizationsIg extends AppLocalizations {
   String get tutorialEnd => 'Mechaa';
 
   @override
-  String get tutorialHomeFab => 'Ebe a ka ị na-agbakwunye ndekọ. Pịa iji tinye aha, ngalaba, otu, ụbọchị ngwụcha, ihe ndetu nhọrọ, na ihe ncheta.';
+  String tutorialStepCount(int current, int total) {
+    return '$current n\'ime $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Pịa ebe a ka ị tinye ndekọ. Nye ya aha, ngalaba na ụbọchị ngwụcha, Vaultara ga-edozi ihe ncheta.';
 
   @override
   String get tutorialAddRecordCategory => 'Họrọ ngalaba iji hazie ndekọ gị.';
 
   @override
-  String get tutorialAddRecordGroup => 'Họrọ otu iji kewaa ndekọ gị nke ọma.';
+  String get tutorialAddRecordGroup => 'Họrọ otu iji hazie ndekọ ahụ n\'ime ngalaba ya.';
 
   @override
   String get tutorialAddRecordName => 'Tinye aha maka ndekọ gị.';

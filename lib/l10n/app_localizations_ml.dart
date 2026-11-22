@@ -871,13 +871,18 @@ class AppLocalizationsMl extends AppLocalizations {
   String get tutorialEnd => 'പൂർത്തിയാക്കുക';
 
   @override
-  String get tutorialHomeFab => 'ഇവിടെയാണ് നിങ്ങൾ റെക്കോർഡുകൾ ചേർക്കുന്നത്. പേര്, വിഭാഗം, ഗ്രൂപ്പ്, കാലഹരണ തീയതി, ഓപ്‌ഷണൽ കുറിപ്പുകൾ, റിമൈൻഡർ എന്നിവ നൽകാൻ ടാപ്പ് ചെയ്യുക.';
+  String tutorialStepCount(int current, int total) {
+    return '$total-ൽ $current';
+  }
+
+  @override
+  String get tutorialHomeFab => 'റെക്കോർഡ് ചേർക്കാൻ ഇവിടെ ടാപ്പ് ചെയ്യുക. അതിന് പേര്, വിഭാഗം, കാലഹരണ തീയതി എന്നിവ നൽകുക, Vaultara റിമൈൻഡറുകൾ ക്രമീകരിക്കും.';
 
   @override
   String get tutorialAddRecordCategory => 'നിങ്ങളുടെ റെക്കോർഡ് ചിട്ടപ്പെടുത്താൻ ഒരു വിഭാഗം തിരഞ്ഞെടുക്കുക.';
 
   @override
-  String get tutorialAddRecordGroup => 'നിങ്ങളുടെ റെക്കോർഡ് കൂടുതൽ കൃത്യമായി തരംതിരിക്കാൻ ഒരു ഗ്രൂപ്പ് തിരഞ്ഞെടുക്കുക.';
+  String get tutorialAddRecordGroup => 'റെക്കോർഡ് അതിന്റെ വിഭാഗത്തിനുള്ളിൽ ക്രമീകരിക്കാൻ ഒരു ഗ്രൂപ്പ് തിരഞ്ഞെടുക്കുക.';
 
   @override
   String get tutorialAddRecordName => 'നിങ്ങളുടെ റെക്കോർഡിന് ഒരു പേര് നൽകുക.';

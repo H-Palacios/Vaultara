@@ -871,13 +871,18 @@ class AppLocalizationsMn extends AppLocalizations {
   String get tutorialEnd => 'Дуусгах';
 
   @override
-  String get tutorialHomeFab => 'Энд та бичлэг нэмнэ. Нэр, ангилал, бүлэг, дуусах хугацаа, нэмэлт тэмдэглэл болон сануулга оруулахын тулд товшино уу.';
+  String tutorialStepCount(int current, int total) {
+    return '$current/$total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Бичлэг нэмэхийн тулд энд товшино уу. Нэр, ангилал, дуусах огноог нь өгвөл Vaultara сануулгуудыг тохируулна.';
 
   @override
   String get tutorialAddRecordCategory => 'Бичлэгээ зохион байгуулахын тулд ангилал сонгоно уу.';
 
   @override
-  String get tutorialAddRecordGroup => 'Бичлэгээ илүү нарийвчлан ангилахын тулд бүлэг сонгоно уу.';
+  String get tutorialAddRecordGroup => 'Бичлэгийг ангилал дотроо эмхлэхийн тулд бүлэг сонгоно уу.';
 
   @override
   String get tutorialAddRecordName => 'Бичлэгтээ нэр оруулна уу.';

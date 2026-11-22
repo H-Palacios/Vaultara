@@ -476,9 +476,21 @@
   "tutorialsInsightsTitle": "Understanding Insights",
   "tutorialNext": "Next",
   "tutorialEnd": "Finish",
-  "tutorialHomeFab": "This is where you add records. Tap to enter a name, category, group, expiry date, optional notes, and reminder.",
+  "tutorialStepCount": "{current} of {total}",
+  "@tutorialStepCount": {
+    "description": "Where a tutorial step is in its tutorial, shown under the progress dots, such as \"2 of 5\".",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "tutorialHomeFab": "Tap here to add a record. Give it a name, a category and an expiry date, and Vaultara sets up the reminders.",
   "tutorialAddRecordCategory": "Select a category to organise your record.",
-  "tutorialAddRecordGroup": "Select a group to classify your record more precisely.",
+  "tutorialAddRecordGroup": "Choose a group to sort the record within its category.",
   "tutorialAddRecordName": "Enter a name for your record.",
   "tutorialAddRecordNotes": "Add optional notes to keep useful details together with the record.",
   "tutorialAddRecordExpiry": "Select an expiry date. Vaultara will send reminders before this date.",

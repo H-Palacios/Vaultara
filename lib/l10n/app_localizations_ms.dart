@@ -871,13 +871,18 @@ class AppLocalizationsMs extends AppLocalizations {
   String get tutorialEnd => 'Selesai';
 
   @override
-  String get tutorialHomeFab => 'Di sini anda menambah rekod. Ketik untuk memasukkan nama, kategori, kumpulan, tarikh tamat tempoh, nota pilihan, dan peringatan.';
+  String tutorialStepCount(int current, int total) {
+    return '$current daripada $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Ketik di sini untuk menambah rekod. Beri nama, kategori dan tarikh tamat tempoh, dan Vaultara akan menyediakan peringatan.';
 
   @override
   String get tutorialAddRecordCategory => 'Pilih kategori untuk mengatur rekod anda.';
 
   @override
-  String get tutorialAddRecordGroup => 'Pilih kumpulan untuk mengklasifikasikan rekod anda dengan lebih tepat.';
+  String get tutorialAddRecordGroup => 'Pilih kumpulan untuk menyusun rekod dalam kategorinya.';
 
   @override
   String get tutorialAddRecordName => 'Masukkan nama untuk rekod anda.';

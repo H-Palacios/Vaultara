@@ -871,13 +871,18 @@ class AppLocalizationsGu extends AppLocalizations {
   String get tutorialEnd => 'પૂર્ણ કરો';
 
   @override
-  String get tutorialHomeFab => 'અહીંથી તમે રેકોર્ડ ઉમેરો છો. નામ, કૅટેગરી, ગ્રૂપ, સમાપ્તિ તારીખ, વૈકલ્પિક નોંધો અને રિમાઇન્ડર દાખલ કરવા માટે ટૅપ કરો.';
+  String tutorialStepCount(int current, int total) {
+    return '$totalમાંથી $current';
+  }
+
+  @override
+  String get tutorialHomeFab => 'રેકોર્ડ ઉમેરવા માટે અહીં ટૅપ કરો. તેને નામ, કૅટેગરી અને સમાપ્તિ તારીખ આપો, અને Vaultara રિમાઇન્ડર ગોઠવી દેશે.';
 
   @override
   String get tutorialAddRecordCategory => 'તમારા રેકોર્ડને વ્યવસ્થિત રાખવા માટે કૅટેગરી પસંદ કરો.';
 
   @override
-  String get tutorialAddRecordGroup => 'તમારા રેકોર્ડને વધુ ચોક્કસ રીતે વર્ગીકૃત કરવા માટે ગ્રૂપ પસંદ કરો.';
+  String get tutorialAddRecordGroup => 'રેકોર્ડને તેની કૅટેગરીમાં ગોઠવવા માટે ગ્રૂપ પસંદ કરો.';
 
   @override
   String get tutorialAddRecordName => 'તમારા રેકોર્ડ માટે નામ દાખલ કરો.';

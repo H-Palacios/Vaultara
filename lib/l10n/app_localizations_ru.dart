@@ -877,13 +877,18 @@ class AppLocalizationsRu extends AppLocalizations {
   String get tutorialEnd => 'Завершить';
 
   @override
-  String get tutorialHomeFab => 'Здесь вы добавляете записи. Нажмите, чтобы ввести название, категорию, группу, дату истечения срока, необязательные заметки и напоминание.';
+  String tutorialStepCount(int current, int total) {
+    return '$current из $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Нажмите здесь, чтобы добавить запись. Укажите название, категорию и срок действия, а Vaultara настроит напоминания.';
 
   @override
   String get tutorialAddRecordCategory => 'Выберите категорию для организации вашей записи.';
 
   @override
-  String get tutorialAddRecordGroup => 'Выберите группу для более точной классификации вашей записи.';
+  String get tutorialAddRecordGroup => 'Выберите группу, чтобы разложить запись внутри её категории.';
 
   @override
   String get tutorialAddRecordName => 'Введите название для вашей записи.';

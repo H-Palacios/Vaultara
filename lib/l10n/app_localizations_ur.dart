@@ -871,13 +871,18 @@ class AppLocalizationsUr extends AppLocalizations {
   String get tutorialEnd => 'ختم کریں';
 
   @override
-  String get tutorialHomeFab => 'یہاں آپ ریکارڈز شامل کرتے ہیں۔ نام، زمرہ، گروپ، میعاد ختم ہونے کی تاریخ، اختیاری نوٹس، اور یاد دہانی درج کرنے کے لیے ٹیپ کریں۔';
+  String tutorialStepCount(int current, int total) {
+    return '$total میں سے $current';
+  }
+
+  @override
+  String get tutorialHomeFab => 'ریکارڈ شامل کرنے کے لیے یہاں ٹیپ کریں۔ اسے نام، زمرہ اور میعاد ختم ہونے کی تاریخ دیں، اور Vaultara یاد دہانیاں ترتیب دے دے گا۔';
 
   @override
   String get tutorialAddRecordCategory => 'اپنے ریکارڈ کو منظم کرنے کے لیے ایک زمرہ منتخب کریں۔';
 
   @override
-  String get tutorialAddRecordGroup => 'اپنے ریکارڈ کو زیادہ درستگی سے درجہ بندی کرنے کے لیے ایک گروپ منتخب کریں۔';
+  String get tutorialAddRecordGroup => 'ریکارڈ کو اس کے زمرے کے اندر ترتیب دینے کے لیے ایک گروپ چنیں۔';
 
   @override
   String get tutorialAddRecordName => 'اپنے ریکارڈ کے لیے ایک نام درج کریں۔';

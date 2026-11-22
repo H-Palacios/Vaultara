@@ -871,13 +871,18 @@ class AppLocalizationsTr extends AppLocalizations {
   String get tutorialEnd => 'Bitir';
 
   @override
-  String get tutorialHomeFab => 'Kayıtları buraya eklersiniz. Bir ad, kategori, grup, son kullanma tarihi, isteğe bağlı notlar ve hatırlatıcı girmek için dokunun.';
+  String tutorialStepCount(int current, int total) {
+    return '$current/$total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Kayıt eklemek için buraya dokunun. Ona bir ad, bir kategori ve bir son kullanma tarihi verin, Vaultara hatırlatıcıları kursun.';
 
   @override
   String get tutorialAddRecordCategory => 'Kaydınızı düzenlemek için bir kategori seçin.';
 
   @override
-  String get tutorialAddRecordGroup => 'Kaydınızı daha kesin bir şekilde sınıflandırmak için bir grup seçin.';
+  String get tutorialAddRecordGroup => 'Kaydı kendi kategorisi içinde sıralamak için bir grup seçin.';
 
   @override
   String get tutorialAddRecordName => 'Kaydınız için bir ad girin.';

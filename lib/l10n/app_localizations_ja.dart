@@ -865,13 +865,18 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tutorialEnd => '完了';
 
   @override
-  String get tutorialHomeFab => 'ここで記録を追加します。タップして名前、カテゴリ、グループ、有効期限、オプションのメモ、リマインダーを入力してください。';
+  String tutorialStepCount(int current, int total) {
+    return '$current / $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'ここをタップして記録を追加します。名前、カテゴリ、有効期限を入れると、Vaultaraがリマインダーを設定します。';
 
   @override
   String get tutorialAddRecordCategory => '記録を整理するためにカテゴリを選択してください。';
 
   @override
-  String get tutorialAddRecordGroup => '記録をより正確に分類するためにグループを選択してください。';
+  String get tutorialAddRecordGroup => 'グループを選ぶと、記録をカテゴリの中で整理できます。';
 
   @override
   String get tutorialAddRecordName => '記録の名前を入力してください。';

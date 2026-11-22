@@ -871,13 +871,18 @@ class AppLocalizationsMr extends AppLocalizations {
   String get tutorialEnd => 'पूर्ण करा';
 
   @override
-  String get tutorialHomeFab => 'इथे तुम्ही नोंदी जोडता. नाव, श्रेणी, गट, मुदतसमाप्तीची तारीख, पर्यायी टिपा आणि रिमाइंडर एंटर करण्यासाठी टॅप करा.';
+  String tutorialStepCount(int current, int total) {
+    return '$total पैकी $current';
+  }
+
+  @override
+  String get tutorialHomeFab => 'नोंद जोडण्यासाठी इथे टॅप करा. तिला नाव, श्रेणी आणि मुदतसमाप्तीची तारीख द्या, Vaultara रिमाइंडर लावून देईल.';
 
   @override
   String get tutorialAddRecordCategory => 'तुमची नोंद व्यवस्थित ठेवण्यासाठी श्रेणी निवडा.';
 
   @override
-  String get tutorialAddRecordGroup => 'तुमच्या नोंदीचे अधिक नेमके वर्गीकरण करण्यासाठी गट निवडा.';
+  String get tutorialAddRecordGroup => 'नोंद तिच्या श्रेणीत नीट लावण्यासाठी गट निवडा.';
 
   @override
   String get tutorialAddRecordName => 'तुमच्या नोंदीसाठी नाव एंटर करा.';

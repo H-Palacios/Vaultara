@@ -871,13 +871,18 @@ class AppLocalizationsEt extends AppLocalizations {
   String get tutorialEnd => 'Lõpeta';
 
   @override
-  String get tutorialHomeFab => 'Siin lisad kirjeid. Puuduta, et sisestada nimi, kategooria, grupp, aegumiskuupäev, valikulised märkmed ja meeldetuletus.';
+  String tutorialStepCount(int current, int total) {
+    return '$current/$total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Puuduta siin, et lisada kirje. Anna sellele nimi, kategooria ja aegumiskuupäev ning Vaultara seab meeldetuletused paika.';
 
   @override
   String get tutorialAddRecordCategory => 'Vali kategooria oma kirje korraldamiseks.';
 
   @override
-  String get tutorialAddRecordGroup => 'Vali grupp oma kirje täpsemaks liigitamiseks.';
+  String get tutorialAddRecordGroup => 'Vali grupp, et kirje oma kategoorias õigesse kohta panna.';
 
   @override
   String get tutorialAddRecordName => 'Sisesta oma kirjele nimi.';

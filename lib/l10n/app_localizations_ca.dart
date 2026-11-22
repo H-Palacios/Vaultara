@@ -871,13 +871,18 @@ class AppLocalizationsCa extends AppLocalizations {
   String get tutorialEnd => 'Finalitza';
 
   @override
-  String get tutorialHomeFab => 'Aquí afegeixes els registres. Toca per introduir un nom, categoria, grup, data de caducitat, notes opcionals i recordatori.';
+  String tutorialStepCount(int current, int total) {
+    return '$current de $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Toca aquí per afegir un registre. Posa-li un nom, una categoria i una data de caducitat, i Vaultara prepara els recordatoris.';
 
   @override
   String get tutorialAddRecordCategory => 'Selecciona una categoria per organitzar el teu registre.';
 
   @override
-  String get tutorialAddRecordGroup => 'Selecciona un grup per classificar el teu registre amb més precisió.';
+  String get tutorialAddRecordGroup => 'Tria un grup per ordenar el registre dins la seva categoria.';
 
   @override
   String get tutorialAddRecordName => 'Introdueix un nom per al teu registre.';

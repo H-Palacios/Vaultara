@@ -871,13 +871,18 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tutorialEnd => 'Befejezés';
 
   @override
-  String get tutorialHomeFab => 'Itt adhat hozzá bejegyzéseket. Koppintson a név, kategória, csoport, lejárati dátum, opcionális jegyzetek és emlékeztető megadásához.';
+  String tutorialStepCount(int current, int total) {
+    return '$current/$total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Koppintson ide bejegyzés hozzáadásához. Adjon neki nevet, kategóriát és lejárati dátumot, a Vaultara pedig beállítja az emlékeztetőket.';
 
   @override
   String get tutorialAddRecordCategory => 'Válasszon kategóriát a bejegyzés rendszerezéséhez.';
 
   @override
-  String get tutorialAddRecordGroup => 'Válasszon csoportot a bejegyzés pontosabb besorolásához.';
+  String get tutorialAddRecordGroup => 'Válasszon csoportot, hogy a bejegyzés a kategóriáján belül a helyére kerüljön.';
 
   @override
   String get tutorialAddRecordName => 'Adjon meg egy nevet a bejegyzésének.';

@@ -871,13 +871,18 @@ class AppLocalizationsSo extends AppLocalizations {
   String get tutorialEnd => 'Dhammayso';
 
   @override
-  String get tutorialHomeFab => 'Halkan waxaad ku darsataa diiwaanada. Taabo si aad u geliso magaca, qaybta, kooxda, taariikhda dhicida, qoraallo ikhtiyaari ah, iyo xasuusin.';
+  String tutorialStepCount(int current, int total) {
+    return '$current ka mid ah $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Halkan taabo si aad diiwaan ugu darto. Sii magac, qayb iyo taariikhda dhicitaanka, Vaultara ayaa xusuusinada diyaarinaysa.';
 
   @override
   String get tutorialAddRecordCategory => 'Dooro qayb si aad u habayso diiwaankaaga.';
 
   @override
-  String get tutorialAddRecordGroup => 'Dooro kooxda si aad si sax ah u kala saarto diiwaankaaga.';
+  String get tutorialAddRecordGroup => 'Dooro koox si aad diiwaanka ugu habayso qaybtiisa gudaheeda.';
 
   @override
   String get tutorialAddRecordName => 'Geli magac diiwaankaaga.';

@@ -871,13 +871,18 @@ class AppLocalizationsDa extends AppLocalizations {
   String get tutorialEnd => 'Færdig';
 
   @override
-  String get tutorialHomeFab => 'Her tilføjer du poster. Tryk for at indtaste et navn, kategori, gruppe, udløbsdato, valgfrie noter og påmindelse.';
+  String tutorialStepCount(int current, int total) {
+    return '$current af $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Tryk her for at tilføje en post. Giv den et navn, en kategori og en udløbsdato, så sætter Vaultara påmindelserne op.';
 
   @override
   String get tutorialAddRecordCategory => 'Vælg en kategori for at organisere din post.';
 
   @override
-  String get tutorialAddRecordGroup => 'Vælg en gruppe for at klassificere din post mere præcist.';
+  String get tutorialAddRecordGroup => 'Vælg en gruppe for at sortere posten inden for dens kategori.';
 
   @override
   String get tutorialAddRecordName => 'Indtast et navn til din post.';

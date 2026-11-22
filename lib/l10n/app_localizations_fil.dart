@@ -871,13 +871,18 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tutorialEnd => 'Tapos na';
 
   @override
-  String get tutorialHomeFab => 'Dito ka nagdaragdag ng mga rekord. I-tap para maglagay ng pangalan, kategorya, grupo, petsa ng pag-expire, opsyonal na mga tala, at paalala.';
+  String tutorialStepCount(int current, int total) {
+    return '$current sa $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'I-tap dito para magdagdag ng rekord. Bigyan ito ng pangalan, kategorya at petsa ng pag-expire, at ihahanda ng Vaultara ang mga paalala.';
 
   @override
   String get tutorialAddRecordCategory => 'Pumili ng kategorya para ayusin ang iyong rekord.';
 
   @override
-  String get tutorialAddRecordGroup => 'Pumili ng grupo para mas tumpak na maiuri ang iyong rekord.';
+  String get tutorialAddRecordGroup => 'Pumili ng grupo para maayos ang rekord sa loob ng kategorya nito.';
 
   @override
   String get tutorialAddRecordName => 'Maglagay ng pangalan para sa iyong rekord.';

@@ -873,13 +873,18 @@ class AppLocalizationsSr extends AppLocalizations {
   String get tutorialEnd => 'Заврши';
 
   @override
-  String get tutorialHomeFab => 'Овде додајете записе. Додирните да унесете назив, категорију, групу, датум истека, опционалне белешке и подсетник.';
+  String tutorialStepCount(int current, int total) {
+    return '$current од $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Додирните овде да додате запис. Дајте му назив, категорију и датум истека, а Vaultara поставља подсетнике.';
 
   @override
   String get tutorialAddRecordCategory => 'Одаберите категорију за организацију вашег записа.';
 
   @override
-  String get tutorialAddRecordGroup => 'Одаберите групу за прецизније разврставање вашег записа.';
+  String get tutorialAddRecordGroup => 'Одаберите групу да разврстате запис унутар његове категорије.';
 
   @override
   String get tutorialAddRecordName => 'Унесите назив за ваш запис.';
@@ -10699,13 +10704,18 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get tutorialEnd => 'Заврши';
 
   @override
-  String get tutorialHomeFab => 'Овде додајете записе. Додирните да унесете назив, категорију, групу, датум истека, опционалне белешке и подсетник.';
+  String tutorialStepCount(int current, int total) {
+    return '$current од $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Додирните овде да додате запис. Дајте му назив, категорију и датум истека, а Vaultara поставља подсетнике.';
 
   @override
   String get tutorialAddRecordCategory => 'Одаберите категорију за организацију вашег записа.';
 
   @override
-  String get tutorialAddRecordGroup => 'Одаберите групу за прецизније разврставање вашег записа.';
+  String get tutorialAddRecordGroup => 'Одаберите групу да разврстате запис унутар његове категорије.';
 
   @override
   String get tutorialAddRecordName => 'Унесите назив за ваш запис.';
@@ -20525,13 +20535,18 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get tutorialEnd => 'Završi';
 
   @override
-  String get tutorialHomeFab => 'Ovde dodajete zapise. Dodirnite da unesete naziv, kategoriju, grupu, datum isteka, opcionalne beleške i podsetnik.';
+  String tutorialStepCount(int current, int total) {
+    return '$current od $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Dodirnite ovde da dodate zapis. Dajte mu naziv, kategoriju i datum isteka, a Vaultara postavlja podsetnike.';
 
   @override
   String get tutorialAddRecordCategory => 'Odaberite kategoriju za organizaciju vašeg zapisa.';
 
   @override
-  String get tutorialAddRecordGroup => 'Odaberite grupu za preciznije razvrstavanje vašeg zapisa.';
+  String get tutorialAddRecordGroup => 'Odaberite grupu da razvrstate zapis unutar njegove kategorije.';
 
   @override
   String get tutorialAddRecordName => 'Unesite naziv za vaš zapis.';

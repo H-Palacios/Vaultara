@@ -871,13 +871,18 @@ class AppLocalizationsNe extends AppLocalizations {
   String get tutorialEnd => 'समाप्त';
 
   @override
-  String get tutorialHomeFab => 'यहाँ तपाईं रेकर्डहरू थप्नुहुन्छ। नाम, श्रेणी, समूह, म्याद समाप्ति मिति, वैकल्पिक टिप्पणीहरू र रिमाइन्डर प्रविष्ट गर्न ट्याप गर्नुहोस्।';
+  String tutorialStepCount(int current, int total) {
+    return '$total मध्ये $current';
+  }
+
+  @override
+  String get tutorialHomeFab => 'रेकर्ड थप्न यहाँ ट्याप गर्नुहोस्। यसलाई नाम, श्रेणी र म्याद सकिने मिति दिनुहोस्, Vaultara ले रिमाइन्डर मिलाइदिन्छ।';
 
   @override
   String get tutorialAddRecordCategory => 'तपाईंको रेकर्ड व्यवस्थित गर्न श्रेणी छान्नुहोस्।';
 
   @override
-  String get tutorialAddRecordGroup => 'तपाईंको रेकर्डलाई अझ सटीक रूपमा वर्गीकृत गर्न समूह छान्नुहोस्।';
+  String get tutorialAddRecordGroup => 'रेकर्डलाई यसको श्रेणीभित्र मिलाउन समूह छान्नुहोस्।';
 
   @override
   String get tutorialAddRecordName => 'तपाईंको रेकर्डको लागि नाम प्रविष्ट गर्नुहोस्।';

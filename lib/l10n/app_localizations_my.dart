@@ -869,13 +869,18 @@ class AppLocalizationsMy extends AppLocalizations {
   String get tutorialEnd => 'ပြီးဆုံးရန်';
 
   @override
-  String get tutorialHomeFab => 'ဤနေရာတွင် မှတ်တမ်းများ ထည့်ပါသည်။ အမည်၊ အမျိုးအစား၊ အုပ်စု၊ သက်တမ်းကုန်ရက်၊ ချန်လှပ်နိုင်သော မှတ်စုများနှင့် သတိပေးချက် ထည့်ရန် တို့ပါ။';
+  String tutorialStepCount(int current, int total) {
+    return '$total အနက် $current';
+  }
+
+  @override
+  String get tutorialHomeFab => 'မှတ်တမ်းထည့်ရန် ဤနေရာကို တို့ပါ။ အမည်၊ အမျိုးအစားနှင့် သက်တမ်းကုန်ရက် ပေးလိုက်ပါက Vaultara က သတိပေးချက်များကို စီစဉ်ပေးပါမည်။';
 
   @override
   String get tutorialAddRecordCategory => 'သင့်မှတ်တမ်းကို စီစဉ်ရန် အမျိုးအစားတစ်ခု ရွေးပါ။';
 
   @override
-  String get tutorialAddRecordGroup => 'သင့်မှတ်တမ်းကို ပိုတိကျစွာ ခွဲခြားရန် အုပ်စုတစ်ခု ရွေးပါ။';
+  String get tutorialAddRecordGroup => 'မှတ်တမ်းကို ၎င်း၏အမျိုးအစားအတွင်း စီရန် အုပ်စုတစ်ခု ရွေးပါ။';
 
   @override
   String get tutorialAddRecordName => 'သင့်မှတ်တမ်းအတွက် အမည်တစ်ခု ထည့်ပါ။';

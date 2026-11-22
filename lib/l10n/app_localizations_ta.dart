@@ -871,13 +871,18 @@ class AppLocalizationsTa extends AppLocalizations {
   String get tutorialEnd => 'முடி';
 
   @override
-  String get tutorialHomeFab => 'இங்கே நீங்கள் பதிவுகளைச் சேர்க்கிறீர்கள். பெயர், வகை, குழு, காலாவதி தேதி, விருப்பமான குறிப்புகள் மற்றும் நினைவூட்டலை உள்ளிட தட்டவும்.';
+  String tutorialStepCount(int current, int total) {
+    return '$total இல் $current';
+  }
+
+  @override
+  String get tutorialHomeFab => 'பதிவைச் சேர்க்க இங்கே தட்டவும். அதற்குப் பெயர், வகை, காலாவதி தேதி கொடுங்கள், Vaultara நினைவூட்டல்களை அமைக்கும்.';
 
   @override
   String get tutorialAddRecordCategory => 'உங்கள் பதிவை ஒழுங்கமைக்க ஒரு வகையைத் தேர்ந்தெடுக்கவும்.';
 
   @override
-  String get tutorialAddRecordGroup => 'உங்கள் பதிவை மேலும் துல்லியமாக வகைப்படுத்த ஒரு குழுவைத் தேர்ந்தெடுக்கவும்.';
+  String get tutorialAddRecordGroup => 'பதிவை அதன் வகைக்குள் ஒழுங்குபடுத்த ஒரு குழுவைத் தேர்ந்தெடுக்கவும்.';
 
   @override
   String get tutorialAddRecordName => 'உங்கள் பதிவுக்கு ஒரு பெயரை உள்ளிடவும்.';

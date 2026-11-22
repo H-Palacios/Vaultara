@@ -871,13 +871,18 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tutorialEnd => 'إنهاء';
 
   @override
-  String get tutorialHomeFab => 'هذا هو المكان الذي تضيف فيه السجلات. انقر لإدخال اسم، فئة، مجموعة، تاريخ انتهاء الصلاحية، الملاحظات الاختيارية، والتذكير.';
+  String tutorialStepCount(int current, int total) {
+    return '$current من $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'انقر هنا لإضافة سجل. أعطه اسمًا وفئة وتاريخ انتهاء، وسيضبط Vaultara التذكيرات.';
 
   @override
   String get tutorialAddRecordCategory => 'حدد فئة لتنظيم السجل الخاص بك.';
 
   @override
-  String get tutorialAddRecordGroup => 'حدد مجموعة لتصنيف السجل الخاص بك بدقة أكبر.';
+  String get tutorialAddRecordGroup => 'اختر مجموعة لترتيب السجل داخل فئته.';
 
   @override
   String get tutorialAddRecordName => 'أدخل اسما لسجلك.';

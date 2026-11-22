@@ -871,13 +871,18 @@ class AppLocalizationsFa extends AppLocalizations {
   String get tutorialEnd => 'پایان';
 
   @override
-  String get tutorialHomeFab => 'اینجا رکوردها را اضافه می‌کنید. برای وارد کردن نام، دسته‌بندی، گروه، تاریخ انقضا، یادداشت‌های اختیاری و یادآوری ضربه بزنید.';
+  String tutorialStepCount(int current, int total) {
+    return '$current از $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'برای افزودن رکورد اینجا ضربه بزنید. یک نام، دسته‌بندی و تاریخ انقضا به آن بدهید تا Vaultara یادآوری‌ها را تنظیم کند.';
 
   @override
   String get tutorialAddRecordCategory => 'دسته‌بندی را برای سازماندهی رکورد خود انتخاب کنید.';
 
   @override
-  String get tutorialAddRecordGroup => 'گروهی را برای طبقه‌بندی دقیق‌تر رکورد خود انتخاب کنید.';
+  String get tutorialAddRecordGroup => 'گروهی انتخاب کنید تا رکورد در دسته‌بندی خودش مرتب شود.';
 
   @override
   String get tutorialAddRecordName => 'نامی برای رکورد خود وارد کنید.';

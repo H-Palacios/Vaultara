@@ -874,13 +874,18 @@ class AppLocalizationsGa extends AppLocalizations {
   String get tutorialEnd => 'Críochnaigh';
 
   @override
-  String get tutorialHomeFab => 'Anseo cuireann tú taifid leis. Tapáil chun ainm, catagóir, grúpa, dáta éaga, nótaí roghnacha agus meabhrúchán a chur isteach.';
+  String tutorialStepCount(int current, int total) {
+    return '$current as $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Tapáil anseo chun taifead a chur leis. Tabhair ainm, catagóir agus dáta éaga dó, agus socróidh Vaultara na meabhrúcháin.';
 
   @override
   String get tutorialAddRecordCategory => 'Roghnaigh catagóir chun do thaifead a eagrú.';
 
   @override
-  String get tutorialAddRecordGroup => 'Roghnaigh grúpa chun do thaifead a rangú níos beaichte.';
+  String get tutorialAddRecordGroup => 'Roghnaigh grúpa chun an taifead a shórtáil laistigh dá chatagóir.';
 
   @override
   String get tutorialAddRecordName => 'Cuir isteach ainm do do thaifead.';

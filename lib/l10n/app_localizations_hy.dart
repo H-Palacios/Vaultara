@@ -871,13 +871,18 @@ class AppLocalizationsHy extends AppLocalizations {
   String get tutorialEnd => 'Ավարտել';
 
   @override
-  String get tutorialHomeFab => 'Այստեղ եք ավելացնում գրառումները։ Հպեք՝ մուտքագրելու անուն, կատեգորիա, խումբ, ժամկետի ավարտի ամսաթիվ, ըստ ցանկության՝ նշումներ և հիշեցում։';
+  String tutorialStepCount(int current, int total) {
+    return '$current/$total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Հպեք այստեղ՝ գրառում ավելացնելու համար։ Տվեք նրան անուն, կատեգորիա և ժամկետի ավարտի ամսաթիվ, և Vaultara-ն կկարգավորի հիշեցումները։';
 
   @override
   String get tutorialAddRecordCategory => 'Ընտրեք կատեգորիա՝ ձեր գրառումը կազմակերպելու համար։';
 
   @override
-  String get tutorialAddRecordGroup => 'Ընտրեք խումբ՝ ձեր գրառումն ավելի ճշգրիտ դասակարգելու համար։';
+  String get tutorialAddRecordGroup => 'Ընտրեք խումբ՝ գրառումն իր կատեգորիայի մեջ դասավորելու համար։';
 
   @override
   String get tutorialAddRecordName => 'Մուտքագրեք ձեր գրառման անունը։';

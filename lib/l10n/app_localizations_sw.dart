@@ -871,13 +871,18 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tutorialEnd => 'Maliza';
 
   @override
-  String get tutorialHomeFab => 'Hapa unaongeza rekodi. Gonga ili kuingiza jina, kategoria, kikundi, tarehe ya kumalizika muda, madokezo ya hiari, na ukumbusho.';
+  String tutorialStepCount(int current, int total) {
+    return '$current kati ya $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Gusa hapa ili kuongeza rekodi. Ipe jina, kategoria na tarehe ya kuisha, na Vaultara itaweka vikumbusho.';
 
   @override
   String get tutorialAddRecordCategory => 'Chagua kategoria ili kupanga rekodi yako.';
 
   @override
-  String get tutorialAddRecordGroup => 'Chagua kikundi ili kuainisha rekodi yako kwa usahihi zaidi.';
+  String get tutorialAddRecordGroup => 'Chagua kikundi ili kupanga rekodi ndani ya kategoria yake.';
 
   @override
   String get tutorialAddRecordName => 'Ingiza jina la rekodi yako.';

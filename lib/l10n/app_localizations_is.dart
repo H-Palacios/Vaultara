@@ -871,13 +871,18 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tutorialEnd => 'Ljúka';
 
   @override
-  String get tutorialHomeFab => 'Hér bætir þú við færslum. Snertu til að slá inn nafn, flokk, hóp, fyrningardagsetningu, valfrjálsar athugasemdir og áminningu.';
+  String tutorialStepCount(int current, int total) {
+    return '$current af $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Ýttu hér til að bæta við færslu. Gefðu henni nafn, flokk og fyrningardag, og Vaultara setur upp áminningarnar.';
 
   @override
   String get tutorialAddRecordCategory => 'Veldu flokk til að skipuleggja færsluna þína.';
 
   @override
-  String get tutorialAddRecordGroup => 'Veldu hóp til að flokka færsluna þína nákvæmar.';
+  String get tutorialAddRecordGroup => 'Veldu hóp til að raða færslunni innan flokksins.';
 
   @override
   String get tutorialAddRecordName => 'Sláðu inn nafn fyrir færsluna þína.';

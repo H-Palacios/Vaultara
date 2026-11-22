@@ -64,6 +64,13 @@ class TutorialStepGroups {
 
   static const Set<TutorialStep> centred = {TutorialStep.familyRecordPerson};
 
+  /// Steps that cannot go Back, because the step before them is on a
+  /// screen that has closed or was the tap that opened this one.
+  static const Set<TutorialStep> noBack = {
+    TutorialStep.addRecordScan,
+    TutorialStep.travelTripDocuments,
+  };
+
   static const Set<TutorialStep> blockTouches = {
     TutorialStep.travelReadiness,
     TutorialStep.travelLocked,

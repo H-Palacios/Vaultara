@@ -871,13 +871,18 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tutorialEnd => '完成';
 
   @override
-  String get tutorialHomeFab => '在这里添加记录。点击输入名称、类别、分组、到期日期、可选备注和提醒。';
+  String tutorialStepCount(int current, int total) {
+    return '第 $current 步，共 $total 步';
+  }
+
+  @override
+  String get tutorialHomeFab => '点这里添加记录。填上名称、类别和到期日期，Vaultara 会帮你设好提醒。';
 
   @override
   String get tutorialAddRecordCategory => '选择一个类别来组织您的记录。';
 
   @override
-  String get tutorialAddRecordGroup => '选择一个分组来更精确地分类您的记录。';
+  String get tutorialAddRecordGroup => '选择一个分组，把记录归到它所属类别下更准确的位置。';
 
   @override
   String get tutorialAddRecordName => '输入您的记录名称。';
@@ -10543,13 +10548,18 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tutorialEnd => '完成';
 
   @override
-  String get tutorialHomeFab => '在这里添加记录。点击输入名称、类别、分组、到期日期、可选备注和提醒。';
+  String tutorialStepCount(int current, int total) {
+    return '第 $current 步，共 $total 步';
+  }
+
+  @override
+  String get tutorialHomeFab => '点这里添加记录。填上名称、类别和到期日期，Vaultara 会帮你设好提醒。';
 
   @override
   String get tutorialAddRecordCategory => '选择一个类别来组织您的记录。';
 
   @override
-  String get tutorialAddRecordGroup => '选择一个分组来更精确地分类您的记录。';
+  String get tutorialAddRecordGroup => '选择一个分组，把记录归到它所属类别下更准确的位置。';
 
   @override
   String get tutorialAddRecordName => '输入您的记录名称。';
@@ -20209,13 +20219,18 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tutorialEnd => '完成';
 
   @override
-  String get tutorialHomeFab => '在這裡新增記錄。點擊輸入名稱、類別、群組、到期日期、可選備註和提醒。';
+  String tutorialStepCount(int current, int total) {
+    return '第 $current 步，共 $total 步';
+  }
+
+  @override
+  String get tutorialHomeFab => '點這裡新增記錄。填上名稱、類別和到期日期，Vaultara 會幫你設好提醒。';
 
   @override
   String get tutorialAddRecordCategory => '選擇一個類別來組織您的記錄。';
 
   @override
-  String get tutorialAddRecordGroup => '選擇一個群組來更精確地分類您的記錄。';
+  String get tutorialAddRecordGroup => '選擇一個群組，把記錄歸到它所屬類別下更準確的位置。';
 
   @override
   String get tutorialAddRecordName => '輸入您的記錄名稱。';

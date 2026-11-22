@@ -871,13 +871,18 @@ class AppLocalizationsKu extends AppLocalizations {
   String get tutorialEnd => 'Dawî';
 
   @override
-  String get tutorialHomeFab => 'Li vir tu tomaran zêde dikî. Bitikîne ji bo têketina nav, kategorî, kom, dîroka bidawîbûnê, nîşeyên bijarî û bîrxistinê.';
+  String tutorialStepCount(int current, int total) {
+    return '$current ji $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Li vir bitikîne da ku tomarekê zêde bikî. Nav, kategorî û dîroka bidawîbûnê bide wê, û Vaultara bîrxistinan saz dike.';
 
   @override
   String get tutorialAddRecordCategory => 'Kategoriyekê hilbijêre ji bo rêkxistina tomara xwe.';
 
   @override
-  String get tutorialAddRecordGroup => 'Komekê hilbijêre ji bo dabeşkirineke hûrtir a tomara xwe.';
+  String get tutorialAddRecordGroup => 'Komekê hilbijêre da ku tomarê di nav kategoriya wê de rêz bikî.';
 
   @override
   String get tutorialAddRecordName => 'Navekî ji bo tomara xwe binivîse.';

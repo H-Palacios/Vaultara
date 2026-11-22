@@ -871,13 +871,18 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get tutorialEnd => 'کۆتایی';
 
   @override
-  String get tutorialHomeFab => 'لێرەدا تۆمار زیاد دەکەیت. کلیک بکە بۆ داخڵکردنی ناو، هاوپۆل، گرووپ، بەرواری بەسەرچوون، تێبینی ئارەزوومەندانە و بیرخەرەوە.';
+  String tutorialStepCount(int current, int total) {
+    return '$current لە $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'لێرە دەست بدە بۆ زیادکردنی تۆمارێک. ناو، هاوپۆل و بەرواری بەسەرچوونی بدەرێ، Vaultara بیرخەرەوەکان ڕێک دەخات.';
 
   @override
   String get tutorialAddRecordCategory => 'هاوپۆلێک هەڵبژێرە بۆ ڕێکخستنی تۆمارەکەت.';
 
   @override
-  String get tutorialAddRecordGroup => 'گرووپێک هەڵبژێرە بۆ پۆلبەندی وردتری تۆمارەکەت.';
+  String get tutorialAddRecordGroup => 'گرووپێک هەڵبژێرە بۆ ڕیزکردنی تۆمارەکە لە ناو هاوپۆلەکەیدا.';
 
   @override
   String get tutorialAddRecordName => 'ناوێک بۆ تۆمارەکەت داخڵ بکە.';

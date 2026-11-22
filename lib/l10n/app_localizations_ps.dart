@@ -871,13 +871,18 @@ class AppLocalizationsPs extends AppLocalizations {
   String get tutorialEnd => 'بشپړ';
 
   @override
-  String get tutorialHomeFab => 'دلته تاسو ریکارډونه اضافه کوئ. د نوم، کټګورۍ، ډلې، د پای نیټې، اختیاري یادښتونو، او یادونې د ننوتلو لپاره ټک وکړئ.';
+  String tutorialStepCount(int current, int total) {
+    return '$current له $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'د ریکارډ د اضافه کولو لپاره دلته ټک کړئ. نوم، کټګوري او د پای نیټه ورکړئ، Vaultara به یادونې برابرې کړي.';
 
   @override
   String get tutorialAddRecordCategory => 'د خپل ریکارډ د تنظیم کولو لپاره کټګورۍ وټاکئ.';
 
   @override
-  String get tutorialAddRecordGroup => 'د خپل ریکارډ د ډیر دقیق طبقه بندۍ لپاره ډله وټاکئ.';
+  String get tutorialAddRecordGroup => 'یوه ډله وټاکئ ترڅو ریکارډ د خپلې کټګورۍ دننه ترتیب شي.';
 
   @override
   String get tutorialAddRecordName => 'د خپل ریکارډ لپاره نوم دننه کړئ.';

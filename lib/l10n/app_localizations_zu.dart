@@ -871,13 +871,18 @@ class AppLocalizationsZu extends AppLocalizations {
   String get tutorialEnd => 'Qeda';
 
   @override
-  String get tutorialHomeFab => 'Lapha wengeza amarekhodi. Thepha ukuze ufake igama, isigaba, iqembu, usuku lokuphelelwa, amanothi akhethiwe, kanye nesikhumbuzo.';
+  String tutorialStepCount(int current, int total) {
+    return '$current kokungu-$total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Thepha lapha ukuze wengeze irekhodi. Linike igama, isigaba nosuku lokuphelelwa, bese iVaultara isetha izikhumbuzi.';
 
   @override
   String get tutorialAddRecordCategory => 'Khetha isigaba ukuze uhlele irekhodi yakho.';
 
   @override
-  String get tutorialAddRecordGroup => 'Khetha iqembu ukuze uhlele irekhodi yakho ngokunembayo kakhulu.';
+  String get tutorialAddRecordGroup => 'Khetha iqembu ukuze uhlele irekhodi ngaphakathi kwesigaba salo.';
 
   @override
   String get tutorialAddRecordName => 'Faka igama lerekhodi yakho.';

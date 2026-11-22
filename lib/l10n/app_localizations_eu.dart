@@ -871,13 +871,18 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tutorialEnd => 'Amaitu';
 
   @override
-  String get tutorialHomeFab => 'Hemen gehitzen dira erregistroak. Sakatu izena, kategoria, taldea, iraungitze-data, aukerako oharrak eta gogorarazlea sartzeko.';
+  String tutorialStepCount(int current, int total) {
+    return '$current/$total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Sakatu hemen erregistro bat gehitzeko. Eman izena, kategoria eta iraungitze-data, eta Vaultarak gogorarazleak prestatuko ditu.';
 
   @override
   String get tutorialAddRecordCategory => 'Hautatu kategoria bat zure erregistroa antolatzeko.';
 
   @override
-  String get tutorialAddRecordGroup => 'Hautatu talde bat zure erregistroa zehatzago sailkatzeko.';
+  String get tutorialAddRecordGroup => 'Aukeratu talde bat erregistroa bere kategoriaren barruan antolatzeko.';
 
   @override
   String get tutorialAddRecordName => 'Idatzi izen bat zure erregistroarentzat.';

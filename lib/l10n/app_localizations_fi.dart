@@ -871,13 +871,18 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tutorialEnd => 'Valmis';
 
   @override
-  String get tutorialHomeFab => 'Täältä lisäät tietueita. Napauta syöttääksesi nimen, kategorian, ryhmän, vanhentumispäivän, valinnaiset muistiinpanot ja muistutuksen.';
+  String tutorialStepCount(int current, int total) {
+    return '$current/$total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Napauta tästä lisätäksesi tietueen. Anna sille nimi, kategoria ja vanhentumispäivä, niin Vaultara asettaa muistutukset.';
 
   @override
   String get tutorialAddRecordCategory => 'Valitse kategoria tietueesi järjestämiseksi.';
 
   @override
-  String get tutorialAddRecordGroup => 'Valitse ryhmä tietueesi tarkempaan luokitteluun.';
+  String get tutorialAddRecordGroup => 'Valitse ryhmä, jotta tietue löytyy oikeasta kohdasta kategoriassaan.';
 
   @override
   String get tutorialAddRecordName => 'Syötä nimi tietueellesi.';

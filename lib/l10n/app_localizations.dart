@@ -1831,10 +1831,16 @@ abstract class AppLocalizations {
   /// **'Finish'**
   String get tutorialEnd;
 
+  /// Where a tutorial step is in its tutorial, shown under the progress dots, such as "2 of 5".
+  ///
+  /// In en, this message translates to:
+  /// **'{current} of {total}'**
+  String tutorialStepCount(int current, int total);
+
   /// No description provided for @tutorialHomeFab.
   ///
   /// In en, this message translates to:
-  /// **'This is where you add records. Tap to enter a name, category, group, expiry date, optional notes, and reminder.'**
+  /// **'Tap here to add a record. Give it a name, a category and an expiry date, and Vaultara sets up the reminders.'**
   String get tutorialHomeFab;
 
   /// No description provided for @tutorialAddRecordCategory.
@@ -1846,7 +1852,7 @@ abstract class AppLocalizations {
   /// No description provided for @tutorialAddRecordGroup.
   ///
   /// In en, this message translates to:
-  /// **'Select a group to classify your record more precisely.'**
+  /// **'Choose a group to sort the record within its category.'**
   String get tutorialAddRecordGroup;
 
   /// No description provided for @tutorialAddRecordName.

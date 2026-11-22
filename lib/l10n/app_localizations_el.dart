@@ -871,13 +871,18 @@ class AppLocalizationsEl extends AppLocalizations {
   String get tutorialEnd => 'Τέλος';
 
   @override
-  String get tutorialHomeFab => 'Εδώ προσθέτετε εγγραφές. Πατήστε για να εισαγάγετε όνομα, κατηγορία, ομάδα, ημερομηνία λήξης, προαιρετικές σημειώσεις και υπενθύμιση.';
+  String tutorialStepCount(int current, int total) {
+    return '$current από $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Πατήστε εδώ για να προσθέσετε μια εγγραφή. Δώστε της όνομα, κατηγορία και ημερομηνία λήξης, και το Vaultara ρυθμίζει τις υπενθυμίσεις.';
 
   @override
   String get tutorialAddRecordCategory => 'Επιλέξτε μια κατηγορία για να οργανώσετε την εγγραφή σας.';
 
   @override
-  String get tutorialAddRecordGroup => 'Επιλέξτε μια ομάδα για να ταξινομήσετε την εγγραφή σας με μεγαλύτερη ακρίβεια.';
+  String get tutorialAddRecordGroup => 'Επιλέξτε μια ομάδα για να ταξινομήσετε την εγγραφή μέσα στην κατηγορία της.';
 
   @override
   String get tutorialAddRecordName => 'Εισαγάγετε ένα όνομα για την εγγραφή σας.';

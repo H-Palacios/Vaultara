@@ -871,13 +871,18 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tutorialEnd => 'Përfundo';
 
   @override
-  String get tutorialHomeFab => 'Këtu shtoni regjistrime. Prekni për të vendosur një emër, kategori, grup, datë skadimi, shënime opsionale dhe kujtesë.';
+  String tutorialStepCount(int current, int total) {
+    return '$current nga $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Prek këtu për të shtuar një regjistrim. Jepi një emër, një kategori dhe një datë skadimi, dhe Vaultara i vendos kujtesat.';
 
   @override
   String get tutorialAddRecordCategory => 'Zgjidhni një kategori për të organizuar regjistrimin tuaj.';
 
   @override
-  String get tutorialAddRecordGroup => 'Zgjidhni një grup për të klasifikuar regjistrimin tuaj më saktë.';
+  String get tutorialAddRecordGroup => 'Zgjidh një grup për ta renditur regjistrimin brenda kategorisë së tij.';
 
   @override
   String get tutorialAddRecordName => 'Shkruani një emër për regjistrimin tuaj.';

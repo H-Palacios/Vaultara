@@ -871,13 +871,18 @@ class AppLocalizationsAf extends AppLocalizations {
   String get tutorialEnd => 'Voltooi';
 
   @override
-  String get tutorialHomeFab => 'Dit is waar jy rekords byvoeg. Tik om \'n naam, kategorie, groep, vervaldatum, opsionele notas en herinnering in te voer.';
+  String tutorialStepCount(int current, int total) {
+    return '$current van $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Tik hier om \'n rekord by te voeg. Gee dit \'n naam, \'n kategorie en \'n vervaldatum, en Vaultara stel die herinnerings op.';
 
   @override
   String get tutorialAddRecordCategory => 'Kies \'n kategorie om jou rekord te organiseer.';
 
   @override
-  String get tutorialAddRecordGroup => 'Kies \'n groep om jou rekord meer presies te klassifiseer.';
+  String get tutorialAddRecordGroup => 'Kies \'n groep om die rekord binne sy kategorie te sorteer.';
 
   @override
   String get tutorialAddRecordName => 'Voer \'n naam vir jou rekord in.';

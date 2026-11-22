@@ -874,13 +874,18 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tutorialEnd => 'Finalizare';
 
   @override
-  String get tutorialHomeFab => 'Aici adaugi înregistrări. Apasă pentru a introduce un nume, categorie, grup, dată de expirare, note opționale și memento.';
+  String tutorialStepCount(int current, int total) {
+    return '$current din $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Atinge aici ca să adaugi o înregistrare. Dă-i un nume, o categorie și o dată de expirare, iar Vaultara pregătește mementourile.';
 
   @override
   String get tutorialAddRecordCategory => 'Selectează o categorie pentru a-ți organiza înregistrarea.';
 
   @override
-  String get tutorialAddRecordGroup => 'Selectează un grup pentru a-ți clasifica înregistrarea mai precis.';
+  String get tutorialAddRecordGroup => 'Alege un grup ca să așezi înregistrarea în categoria ei.';
 
   @override
   String get tutorialAddRecordName => 'Introdu un nume pentru înregistrarea ta.';

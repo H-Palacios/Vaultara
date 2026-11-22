@@ -871,13 +871,18 @@ class AppLocalizationsAm extends AppLocalizations {
   String get tutorialEnd => 'ጨርስ';
 
   @override
-  String get tutorialHomeFab => 'መዝገቦችን የሚያክሉት እዚህ ነው. ስም፣ ምድብ፣ ቡድን፣ የማብቂያ ቀን፣ አማራጭ ማስታወሻዎች እና አስታዋሽ ለማስገባት መታ ያድርጉ.';
+  String tutorialStepCount(int current, int total) {
+    return '$current ከ $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'መዝገብ ለማከል እዚህ ይንኩ። ስም፣ ምድብ እና የማብቂያ ቀን ይስጡት፣ Vaultara አስታዋሾቹን ያዘጋጃል።';
 
   @override
   String get tutorialAddRecordCategory => 'መዝገብዎን ለማደራጀት ምድብ ይምረጡ.';
 
   @override
-  String get tutorialAddRecordGroup => 'መዝገብዎን በበለጠ ትክክለኛነት ለመመደብ ቡድን ይምረጡ.';
+  String get tutorialAddRecordGroup => 'መዝገቡን በምድቡ ውስጥ ለመለየት ቡድን ይምረጡ።';
 
   @override
   String get tutorialAddRecordName => 'ለመዝገብዎ ስም ያስገቡ.';

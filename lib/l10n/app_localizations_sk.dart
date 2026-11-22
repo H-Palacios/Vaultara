@@ -872,13 +872,18 @@ class AppLocalizationsSk extends AppLocalizations {
   String get tutorialEnd => 'Dokončiť';
 
   @override
-  String get tutorialHomeFab => 'Tu pridávate záznamy. Klepnutím zadajte názov, kategóriu, skupinu, dátum expirácie, voliteľné poznámky a pripomienku.';
+  String tutorialStepCount(int current, int total) {
+    return '$current z $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Ťuknutím sem pridáte záznam. Dajte mu názov, kategóriu a dátum platnosti a Vaultara nastaví pripomienky.';
 
   @override
   String get tutorialAddRecordCategory => 'Vyberte kategóriu na organizáciu vášho záznamu.';
 
   @override
-  String get tutorialAddRecordGroup => 'Vyberte skupinu na presnejšiu klasifikáciu vášho záznamu.';
+  String get tutorialAddRecordGroup => 'Vyberte skupinu, aby ste záznam zaradili v rámci jeho kategórie.';
 
   @override
   String get tutorialAddRecordName => 'Zadajte názov pre váš záznam.';

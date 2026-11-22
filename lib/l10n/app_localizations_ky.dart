@@ -871,13 +871,18 @@ class AppLocalizationsKy extends AppLocalizations {
   String get tutorialEnd => 'Аяктоо';
 
   @override
-  String get tutorialHomeFab => 'Бул жерде жазууларды кошосуз. Аталышты, категорияны, топту, мөөнөтү бүтүү датасын, кошумча эскертмелерди жана эскертүүнү киргизүү үчүн таптаңыз.';
+  String tutorialStepCount(int current, int total) {
+    return '$current/$total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Жазуу кошуу үчүн бул жерди таптаңыз. Ага аталыш, категория жана мөөнөтүнүн бүтүү күнүн бериңиз, Vaultara эскертүүлөрдү өзү коёт.';
 
   @override
   String get tutorialAddRecordCategory => 'Жазууңузду уюштуруу үчүн категорияны тандаңыз.';
 
   @override
-  String get tutorialAddRecordGroup => 'Жазууңузду тагыраак классификациялоо үчүн топту тандаңыз.';
+  String get tutorialAddRecordGroup => 'Жазууну өз категориясынын ичинде иреттөө үчүн топ тандаңыз.';
 
   @override
   String get tutorialAddRecordName => 'Жазууңуз үчүн аталышты киргизиңиз.';

@@ -869,13 +869,18 @@ class AppLocalizationsKm extends AppLocalizations {
   String get tutorialEnd => 'បញ្ចប់';
 
   @override
-  String get tutorialHomeFab => 'នេះជាកន្លែងដែលអ្នកបន្ថែមកំណត់ត្រា។ ចុចដើម្បីបញ្ចូលឈ្មោះ ប្រភេទ ក្រុម កាលបរិច្ឆេទផុតកំណត់ កំណត់ចំណាំ (ស្រេចចិត្ត) និងការរំលឹក។';
+  String tutorialStepCount(int current, int total) {
+    return '$current នៃ $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'ចុចទីនេះដើម្បីបន្ថែមកំណត់ត្រា។ ដាក់ឈ្មោះ ប្រភេទ និងកាលបរិច្ឆេទផុតកំណត់ ហើយ Vaultara នឹងរៀបចំការរំលឹកឱ្យ។';
 
   @override
   String get tutorialAddRecordCategory => 'ជ្រើសរើសប្រភេទមួយ ដើម្បីរៀបចំកំណត់ត្រារបស់អ្នក។';
 
   @override
-  String get tutorialAddRecordGroup => 'ជ្រើសរើសក្រុមមួយ ដើម្បីចាត់ថ្នាក់កំណត់ត្រារបស់អ្នកឱ្យកាន់តែច្បាស់។';
+  String get tutorialAddRecordGroup => 'ជ្រើសក្រុមមួយ ដើម្បីតម្រៀបកំណត់ត្រានៅក្នុងប្រភេទរបស់វា។';
 
   @override
   String get tutorialAddRecordName => 'បញ្ចូលឈ្មោះសម្រាប់កំណត់ត្រារបស់អ្នក។';

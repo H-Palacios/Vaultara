@@ -871,13 +871,18 @@ class AppLocalizationsKn extends AppLocalizations {
   String get tutorialEnd => 'ಮುಗಿಸಿ';
 
   @override
-  String get tutorialHomeFab => 'ಇಲ್ಲಿ ನೀವು ದಾಖಲೆಗಳನ್ನು ಸೇರಿಸುತ್ತೀರಿ. ಹೆಸರು, ವರ್ಗ, ಗುಂಪು, ಮುಕ್ತಾಯ ದಿನಾಂಕ, ಐಚ್ಛಿಕ ಟಿಪ್ಪಣಿಗಳು ಮತ್ತು ರಿಮೈಂಡರ್ ಅನ್ನು ನಮೂದಿಸಲು ಟ್ಯಾಪ್ ಮಾಡಿ.';
+  String tutorialStepCount(int current, int total) {
+    return '$total ರಲ್ಲಿ $current';
+  }
+
+  @override
+  String get tutorialHomeFab => 'ದಾಖಲೆ ಸೇರಿಸಲು ಇಲ್ಲಿ ಟ್ಯಾಪ್ ಮಾಡಿ. ಅದಕ್ಕೆ ಹೆಸರು, ವರ್ಗ ಮತ್ತು ಮುಕ್ತಾಯ ದಿನಾಂಕ ನೀಡಿ, Vaultara ರಿಮೈಂಡರ್‌ಗಳನ್ನು ಹೊಂದಿಸುತ್ತದೆ.';
 
   @override
   String get tutorialAddRecordCategory => 'ನಿಮ್ಮ ದಾಖಲೆಯನ್ನು ವ್ಯವಸ್ಥಿತಗೊಳಿಸಲು ವರ್ಗವನ್ನು ಆಯ್ಕೆಮಾಡಿ.';
 
   @override
-  String get tutorialAddRecordGroup => 'ನಿಮ್ಮ ದಾಖಲೆಯನ್ನು ಇನ್ನಷ್ಟು ನಿಖರವಾಗಿ ವಿಂಗಡಿಸಲು ಗುಂಪನ್ನು ಆಯ್ಕೆಮಾಡಿ.';
+  String get tutorialAddRecordGroup => 'ದಾಖಲೆಯನ್ನು ಅದರ ವರ್ಗದೊಳಗೆ ವಿಂಗಡಿಸಲು ಗುಂಪನ್ನು ಆರಿಸಿ.';
 
   @override
   String get tutorialAddRecordName => 'ನಿಮ್ಮ ದಾಖಲೆಗೆ ಒಂದು ಹೆಸರನ್ನು ನಮೂದಿಸಿ.';

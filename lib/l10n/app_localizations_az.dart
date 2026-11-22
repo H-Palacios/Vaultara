@@ -871,13 +871,18 @@ class AppLocalizationsAz extends AppLocalizations {
   String get tutorialEnd => 'Tamamla';
 
   @override
-  String get tutorialHomeFab => 'Sənədləri burada əlavə edirsiniz. Ad, kateqoriya, qrup, bitmə tarixi, istəyə görə qeydlər və xatırlatma daxil etmək üçün toxunun.';
+  String tutorialStepCount(int current, int total) {
+    return '$current / $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Qeyd əlavə etmək üçün bura toxunun. Ona ad, kateqoriya və bitmə tarixi verin, Vaultara xatırlatmaları qursun.';
 
   @override
   String get tutorialAddRecordCategory => 'Sənədinizi nizamlamaq üçün kateqoriya seçin.';
 
   @override
-  String get tutorialAddRecordGroup => 'Sənədinizi daha dəqiq təsnif etmək üçün qrup seçin.';
+  String get tutorialAddRecordGroup => 'Qeydi kateqoriyası daxilində çeşidləmək üçün qrup seçin.';
 
   @override
   String get tutorialAddRecordName => 'Sənədiniz üçün ad daxil edin.';

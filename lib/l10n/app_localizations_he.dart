@@ -873,13 +873,18 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tutorialEnd => 'סיים';
 
   @override
-  String get tutorialHomeFab => 'כאן אתה מוסיף רשומות. הקש כדי להזין שם, קטגוריה, קבוצה, תאריך תפוגה, הערות אופציונליות ותזכורת.';
+  String tutorialStepCount(int current, int total) {
+    return '$current מתוך $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'הקישו כאן כדי להוסיף רשומה. תנו לה שם, קטגוריה ותאריך תפוגה, ו-Vaultara יגדיר את התזכורות.';
 
   @override
   String get tutorialAddRecordCategory => 'בחר קטגוריה לארגון הרשומה שלך.';
 
   @override
-  String get tutorialAddRecordGroup => 'בחר קבוצה לסיווג מדויק יותר של הרשומה שלך.';
+  String get tutorialAddRecordGroup => 'בחרו קבוצה כדי למיין את הרשומה בתוך הקטגוריה שלה.';
 
   @override
   String get tutorialAddRecordName => 'הזן שם עבור הרשומה שלך.';

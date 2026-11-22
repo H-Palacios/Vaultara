@@ -865,13 +865,18 @@ class AppLocalizationsId extends AppLocalizations {
   String get tutorialEnd => 'Selesai';
 
   @override
-  String get tutorialHomeFab => 'Di sini Anda menambahkan catatan. Ketuk untuk memasukkan nama, kategori, grup, tanggal kedaluwarsa, catatan opsional, dan pengingat.';
+  String tutorialStepCount(int current, int total) {
+    return '$current dari $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Ketuk di sini untuk menambahkan catatan. Beri nama, kategori, dan tanggal kedaluwarsa, lalu Vaultara menyiapkan pengingatnya.';
 
   @override
   String get tutorialAddRecordCategory => 'Pilih kategori untuk mengatur catatan Anda.';
 
   @override
-  String get tutorialAddRecordGroup => 'Pilih grup untuk mengklasifikasikan catatan Anda dengan lebih tepat.';
+  String get tutorialAddRecordGroup => 'Pilih grup untuk mengelompokkan catatan di dalam kategorinya.';
 
   @override
   String get tutorialAddRecordName => 'Masukkan nama untuk catatan Anda.';

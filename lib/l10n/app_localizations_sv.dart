@@ -871,13 +871,18 @@ class AppLocalizationsSv extends AppLocalizations {
   String get tutorialEnd => 'Slutför';
 
   @override
-  String get tutorialHomeFab => 'Här lägger du till poster. Tryck för att ange ett namn, kategori, grupp, utgångsdatum, valfria anteckningar och påminnelse.';
+  String tutorialStepCount(int current, int total) {
+    return '$current av $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Tryck här för att lägga till en post. Ge den ett namn, en kategori och ett utgångsdatum, så ställer Vaultara in påminnelserna.';
 
   @override
   String get tutorialAddRecordCategory => 'Välj en kategori för att organisera din post.';
 
   @override
-  String get tutorialAddRecordGroup => 'Välj en grupp för att klassificera din post mer exakt.';
+  String get tutorialAddRecordGroup => 'Välj en grupp för att sortera posten inom sin kategori.';
 
   @override
   String get tutorialAddRecordName => 'Ange ett namn för din post.';

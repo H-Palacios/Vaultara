@@ -871,13 +871,18 @@ class AppLocalizationsLo extends AppLocalizations {
   String get tutorialEnd => 'ສຳເລັດ';
 
   @override
-  String get tutorialHomeFab => 'ບ່ອນນີ້ທ່ານເພີ່ມບັນທຶກ. ແຕະເພື່ອປ້ອນຊື່, ໝວດໝູ່, ກຸ່ມ, ວັນໝົດອາຍຸ, ໝາຍເຫດທາງເລືອກ, ແລະການເຕືອນ.';
+  String tutorialStepCount(int current, int total) {
+    return '$current ຈາກ $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'ແຕະບ່ອນນີ້ເພື່ອເພີ່ມບັນທຶກ. ໃສ່ຊື່, ໝວດໝູ່ ແລະ ວັນໝົດອາຍຸ, ແລ້ວ Vaultara ຈະຕັ້ງການເຕືອນໃຫ້.';
 
   @override
   String get tutorialAddRecordCategory => 'ເລືອກໝວດໝູ່ເພື່ອຈັດລະບຽບບັນທຶກຂອງທ່ານ.';
 
   @override
-  String get tutorialAddRecordGroup => 'ເລືອກກຸ່ມເພື່ອຈັດປະເພດບັນທຶກຂອງທ່ານໃຫ້ຖືກຕ້ອງກວ່າ.';
+  String get tutorialAddRecordGroup => 'ເລືອກກຸ່ມເພື່ອຈັດບັນທຶກໄວ້ໃນໝວດໝູ່ຂອງມັນ.';
 
   @override
   String get tutorialAddRecordName => 'ປ້ອນຊື່ສຳລັບບັນທຶກຂອງທ່ານ.';

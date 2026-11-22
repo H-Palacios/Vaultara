@@ -871,13 +871,18 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tutorialEnd => 'අවසන් කරන්න';
 
   @override
-  String get tutorialHomeFab => 'මෙතැන ඔබ වාර්තා එකතු කරයි. නාමය, ප්‍රවර්ගය, කණ්ඩායම, කල් ඉකුත් වීමේ දිනය, විකල්ප සටහන්, සහ මතක් කිරීම ඇතුළත් කිරීමට තට්ටු කරන්න.';
+  String tutorialStepCount(int current, int total) {
+    return '$total න් $current';
+  }
+
+  @override
+  String get tutorialHomeFab => 'වාර්තාවක් එකතු කිරීමට මෙතැන තට්ටු කරන්න. එයට නමක්, ප්‍රවර්ගයක් සහ කල් ඉකුත් වීමේ දිනයක් දෙන්න, Vaultara මතක් කිරීම් සකසයි.';
 
   @override
   String get tutorialAddRecordCategory => 'ඔබේ වාර්තාව සංවිධානය කිරීමට ප්‍රවර්ගයක් තෝරන්න.';
 
   @override
-  String get tutorialAddRecordGroup => 'ඔබේ වාර්තාව වඩාත් නිශ්චිතව වර්ගීකරණය කිරීමට කණ්ඩායමක් තෝරන්න.';
+  String get tutorialAddRecordGroup => 'වාර්තාව එහි ප්‍රවර්ගය තුළ පිළිවෙළට තැබීමට කණ්ඩායමක් තෝරන්න.';
 
   @override
   String get tutorialAddRecordName => 'ඔබේ වාර්තාව සඳහා නාමයක් ඇතුළත් කරන්න.';

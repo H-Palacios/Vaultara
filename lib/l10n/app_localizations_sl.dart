@@ -873,13 +873,18 @@ class AppLocalizationsSl extends AppLocalizations {
   String get tutorialEnd => 'Končaj';
 
   @override
-  String get tutorialHomeFab => 'Tukaj dodajate zapise. Tapnite za vnos imena, kategorije, skupine, datuma poteka, neobveznih opomb in opomnika.';
+  String tutorialStepCount(int current, int total) {
+    return '$current od $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Tapnite tukaj, da dodate zapis. Dajte mu ime, kategorijo in datum poteka, Vaultara pa nastavi opomnike.';
 
   @override
   String get tutorialAddRecordCategory => 'Izberite kategorijo za organizacijo vašega zapisa.';
 
   @override
-  String get tutorialAddRecordGroup => 'Izberite skupino za natančnejšo razvrstitev vašega zapisa.';
+  String get tutorialAddRecordGroup => 'Izberite skupino, da zapis razvrstite znotraj njegove kategorije.';
 
   @override
   String get tutorialAddRecordName => 'Vnesite ime za vaš zapis.';

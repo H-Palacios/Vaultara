@@ -865,13 +865,18 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tutorialEnd => 'เสร็จสิ้น';
 
   @override
-  String get tutorialHomeFab => 'ที่นี่คุณเพิ่มรายการ แตะเพื่อป้อนชื่อ หมวดหมู่ กลุ่ม วันหมดอายุ บันทึกทางเลือก และการเตือน';
+  String tutorialStepCount(int current, int total) {
+    return '$current จาก $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'แตะที่นี่เพื่อเพิ่มรายการ ตั้งชื่อ หมวดหมู่ และวันหมดอายุ แล้ว Vaultara จะตั้งการเตือนให้';
 
   @override
   String get tutorialAddRecordCategory => 'เลือกหมวดหมู่เพื่อจัดระเบียบรายการของคุณ';
 
   @override
-  String get tutorialAddRecordGroup => 'เลือกกลุ่มเพื่อจำแนกรายการของคุณให้แม่นยำยิ่งขึ้น';
+  String get tutorialAddRecordGroup => 'เลือกกลุ่มเพื่อจัดรายการให้อยู่ในหมวดหมู่ของมัน';
 
   @override
   String get tutorialAddRecordName => 'ป้อนชื่อสำหรับรายการของคุณ';

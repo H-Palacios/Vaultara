@@ -871,13 +871,18 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tutorialEnd => 'Yakunlash';
 
   @override
-  String get tutorialHomeFab => 'Yozuvlar shu yerda qoʻshiladi. Nom, turkum, guruh, tugash sanasi, ixtiyoriy izoh va eslatmani kiritish uchun bosing.';
+  String tutorialStepCount(int current, int total) {
+    return '$current/$total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Yozuv qoʻshish uchun shu yerni bosing. Unga nom, turkum va tugash sanasini bering, Vaultara eslatmalarni oʻzi sozlaydi.';
 
   @override
   String get tutorialAddRecordCategory => 'Yozuvingizni tartiblash uchun turkumni tanlang.';
 
   @override
-  String get tutorialAddRecordGroup => 'Yozuvingizni aniqroq tasniflash uchun guruhni tanlang.';
+  String get tutorialAddRecordGroup => 'Yozuvni oʻz turkumi ichida tartiblash uchun guruh tanlang.';
 
   @override
   String get tutorialAddRecordName => 'Yozuvingiz uchun nom kiriting.';

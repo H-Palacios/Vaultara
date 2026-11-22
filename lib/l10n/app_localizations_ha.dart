@@ -871,13 +871,18 @@ class AppLocalizationsHa extends AppLocalizations {
   String get tutorialEnd => 'Kammala';
 
   @override
-  String get tutorialHomeFab => 'Anan kake ƙara rikodi. Danna don shigar da suna, rukuni, ƙungiya, ranar ƙarewa, bayanin kula na zaɓi, da tunatarwa.';
+  String tutorialStepCount(int current, int total) {
+    return '$current cikin $total';
+  }
+
+  @override
+  String get tutorialHomeFab => 'Taɓa nan don ƙara rikodi. Ba shi suna, rukuni da ranar ƙarewa, Vaultara kuma zai saita tunatarwa.';
 
   @override
   String get tutorialAddRecordCategory => 'Zaɓi rukuni don tsara rikodinka.';
 
   @override
-  String get tutorialAddRecordGroup => 'Zaɓi ƙungiya don rarraba rikodinka daidai.';
+  String get tutorialAddRecordGroup => 'Zaɓi ƙungiya don jera rikodin a cikin rukuninsa.';
 
   @override
   String get tutorialAddRecordName => 'Shigar da suna don rikodinka.';
