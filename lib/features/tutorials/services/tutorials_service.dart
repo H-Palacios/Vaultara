@@ -2,14 +2,9 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/analytics/analytics_service.dart';
-import 'package:vaultara/features/assistant/data/assistant_action.dart';
-import 'package:vaultara/features/assistant/logic/assistant_navigator.dart';
-import 'package:vaultara/features/assistant/view/ask_vaultara_screen.dart';
-import 'package:vaultara/features/tools/view/lost_wallet_screen.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial_ids.dart';
-import 'package:vaultara/features/tutorials/data/models/tutorial_stories.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial_step_groups.dart';
 import 'package:vaultara/features/tutorials/launchers/add_record_tutorial_launcher.dart';
 import 'package:vaultara/features/tutorials/launchers/set_reminders_tutorial_launcher.dart';
@@ -17,8 +12,10 @@ import 'package:vaultara/features/tutorials/launchers/insights_tutorial_launcher
 import 'package:vaultara/features/tutorials/launchers/travel_tutorial_launcher.dart';
 import 'package:vaultara/features/tutorials/launchers/smart_tools_tutorial_launcher.dart';
 import 'package:vaultara/features/tutorials/launchers/family_tutorial_launcher.dart';
+import 'package:vaultara/features/tutorials/launchers/screen_tour_launcher.dart';
 import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
-import 'package:vaultara/features/tutorials/view/tutorial_story_screen.dart';
+import 'package:vaultara/features/tutorials/services/tutorial_progress.dart';
+import 'package:vaultara/features/tutorials/view/tour_screen.dart';
 import 'package:vaultara/shell/shell_state.dart';
 
 class TutorialsService {
@@ -52,8 +49,7 @@ class TutorialsService {
         title: t.tutorialsTitleHome,
         subtitle: t.tutorialsSubHome,
         group: TutorialGroup.basics,
-        kind: TutorialKind.story,
-        steps: 4,
+        steps: TutorialStepGroups.home.length,
       ),
       Tutorial(
         id: idAddRecord,
@@ -77,8 +73,7 @@ class TutorialsService {
         title: t.tutorialsTitleRenew,
         subtitle: t.tutorialsSubRenew,
         group: TutorialGroup.basics,
-        kind: TutorialKind.story,
-        steps: 4,
+        steps: TutorialStepGroups.renew.length,
       ),
       Tutorial(
         id: idInsights,
@@ -94,8 +89,7 @@ class TutorialsService {
         title: t.tutorialsTitleCalendarCosts,
         subtitle: t.tutorialsSubCalendarCosts,
         group: TutorialGroup.onTop,
-        kind: TutorialKind.story,
-        steps: 3,
+        steps: TutorialStepGroups.calendarCosts.length,
       ),
       Tutorial(
         id: TutorialIds.photosSecurity,
@@ -103,8 +97,7 @@ class TutorialsService {
         title: t.tutorialsTitlePhotosSecurity,
         subtitle: t.tutorialsSubPhotosSecurity,
         group: TutorialGroup.onTop,
-        kind: TutorialKind.story,
-        steps: 4,
+        steps: TutorialStepGroups.photosSecurity.length,
       ),
       Tutorial(
         id: TutorialIds.sharing,
@@ -112,8 +105,7 @@ class TutorialsService {
         title: t.tutorialsTitleSharing,
         subtitle: t.tutorialsSubSharing,
         group: TutorialGroup.onTop,
-        kind: TutorialKind.story,
-        steps: 3,
+        steps: TutorialStepGroups.sharing.length,
       ),
       Tutorial(
         id: TutorialIds.importScan,
@@ -121,8 +113,7 @@ class TutorialsService {
         title: t.tutorialsTitleImportScan,
         subtitle: t.tutorialsSubImportScan,
         group: TutorialGroup.onTop,
-        kind: TutorialKind.story,
-        steps: 3,
+        steps: TutorialStepGroups.importScan.length,
       ),
       Tutorial(
         id: idTravel,
@@ -147,8 +138,7 @@ class TutorialsService {
         title: t.tutorialsTitleHousehold,
         subtitle: t.tutorialsSubHousehold,
         group: TutorialGroup.travelFamily,
-        kind: TutorialKind.story,
-        steps: 3,
+        steps: TutorialStepGroups.household.length,
         paid: true,
       ),
       Tutorial(
@@ -157,8 +147,7 @@ class TutorialsService {
         title: t.tutorialsTitleLostWallet,
         subtitle: t.tutorialsSubLostWallet,
         group: TutorialGroup.emergencies,
-        kind: TutorialKind.story,
-        steps: 5,
+        steps: TutorialStepGroups.lostWallet.length,
       ),
       Tutorial(
         id: TutorialIds.lifeEvents,
@@ -166,8 +155,7 @@ class TutorialsService {
         title: t.tutorialsTitleLifeEvents,
         subtitle: t.tutorialsSubLifeEvents,
         group: TutorialGroup.emergencies,
-        kind: TutorialKind.story,
-        steps: 4,
+        steps: TutorialStepGroups.lifeEvents.length,
       ),
       Tutorial(
         id: idSmartTools,
@@ -183,8 +171,7 @@ class TutorialsService {
         title: t.tutorialsTitleAsk,
         subtitle: t.tutorialsSubAsk,
         group: TutorialGroup.paid,
-        kind: TutorialKind.story,
-        steps: 5,
+        steps: TutorialStepGroups.askVaultara.length,
         paid: true,
       ),
       Tutorial(
@@ -193,8 +180,7 @@ class TutorialsService {
         title: t.tutorialsTitleBusiness,
         subtitle: t.tutorialsSubBusiness,
         group: TutorialGroup.paid,
-        kind: TutorialKind.story,
-        steps: 4,
+        steps: TutorialStepGroups.business.length,
         paid: true,
       ),
     ];
@@ -207,23 +193,14 @@ class TutorialsService {
     return null;
   }
 
-  static bool get _premium => ShellState.current?.isPremium ?? false;
-
   static Future<void> playTutorial(
     BuildContext context,
     String tutorialId, {
     bool fromTour = false,
   }) async {
-    if (TutorialStories.isStory(tutorialId)) {
-      final tutorial = byId(context, tutorialId);
-      if (tutorial == null) return;
-      await TutorialStoryScreen.play(
-        context,
-        id: tutorialId,
-        title: tutorial.title,
-        paidPreview: tutorial.paid && !_premium,
-        onTryIt: fromTour ? null : () => _tryIt(tutorialId),
-      );
+    if (ScreenTourLauncher.handles(tutorialId)) {
+      await ScreenTourLauncher.launch(context, tutorialId);
+      if (fromTour) _backToTourWhenDone(tutorialId);
       return;
     }
     switch (tutorialId) {
@@ -252,45 +229,27 @@ class TutorialsService {
       default:
         break;
     }
+    if (fromTour) _backToTourWhenDone(tutorialId);
   }
 
-  /// Opens the real feature after a story, from the shell so it works
-  /// whichever screen the story was started from.
-  static void _tryIt(String id) {
-    final shell = ShellState.current;
-    if (shell == null || !shell.mounted) return;
-    final context = shell.context;
-    String? screen;
-    switch (id) {
-      case TutorialIds.askVaultara:
-        unawaited(openAskVaultara(context, isPremium: shell.isPremium));
-        return;
-      case TutorialIds.lostWallet:
-        unawaited(openLostWallet(context));
-        return;
-      case TutorialIds.home:
-        screen = 'home';
-      case TutorialIds.renew:
-        screen = 'records';
-      case TutorialIds.lifeEvents:
-        screen = 'life_events';
-      case TutorialIds.photosSecurity:
-        screen = 'security';
-      case TutorialIds.household:
-        screen = 'people';
-      case TutorialIds.importScan:
-        screen = 'import';
-      case TutorialIds.calendarCosts:
-        screen = 'calendar';
-      case TutorialIds.sharing:
-      case TutorialIds.business:
-        screen = 'profile';
+  /// A chapter of the full tour opens its own screen, which closes the
+  /// tour. Once the chapter is finished the tour opens again, so Continue
+  /// leads on to the next one. Cancelling a chapter leaves the person where
+  /// they are.
+  static void _backToTourWhenDone(String tutorialId) {
+    final controller = TutorialController.instance;
+    if (!controller.isActive) return;
+
+    void reopen() {
+      if (controller.isActive) return;
+      controller.removeListener(reopen);
+      if (!TutorialProgress.completed.value.contains(tutorialId)) return;
+      final shell = ShellState.current;
+      if (shell == null || !shell.mounted) return;
+      unawaited(openTour(shell.context));
     }
-    if (screen == null) return;
-    AssistantNavigator.open(
-      context,
-      AssistantAction(type: AssistantActionType.open, screen: screen),
-    );
+
+    controller.addListener(reopen);
   }
 
   /// The guided add-record walkthrough that also covers reminders. It is

@@ -7785,290 +7785,262 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => 'Muutto, vauva, uusi työ tai hätätilanne? Elämäntapahtumat antaa suunnitelman tietueineen, vaiheineen ja päivämäärineen.';
 
   @override
-  String get storySampleQuestion => 'Mitä päättyy tänä vuonna?';
+  String get tourHome1Title => 'Päiväsi yhdellä silmäyksellä';
 
   @override
-  String storySampleAnswer(String name) {
-    return '$name päättyy maaliskuussa. Haluatko muistutuksen kuukautta aiemmin?';
-  }
+  String get tourHome1Body => 'Aloitusnäyttö näyttää, mikä on tänään tärkeää: mitä päättyy pian ja kuinka monta tietuetta sinulla on.';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name päättyy 30 päivän kuluttua. Uusi napauttamalla.';
-  }
+  String get tourHome2Title => 'Löydä kaikki';
 
   @override
-  String get storySampleGym => 'Kuntosalijäsenyys';
+  String get tourHome2Body => 'Napauta hakua löytääksesi tietueen nimen, ryhmän tai henkilön mukaan.';
 
   @override
-  String get storySampleFirstAid => 'Ensiaputodistus';
+  String get tourHome3Title => 'Matkat ja suunnitelmat';
 
   @override
-  String get storySampleEncrypt => 'Salaa kuvat';
+  String get tourHome3Body => 'Suunnittelemasi matkat ja käynnissä olevat elämäntapahtumien suunnitelmat näkyvät tässä jäljellä olevine tehtävineen.';
 
   @override
-  String get storySampleAppLock => 'Sovelluslukitus';
+  String get tourHome4Title => 'Apua yhdellä napautuksella';
 
   @override
-  String get storySampleHideApp => 'Piilota sisältö sovellusvaihtajassa';
+  String get tourHome4Body => 'Kipinäpainike avaa kohdan ”Kysy Vaultaralta”. Kuvasi avaa profiilin, asetukset ja opetusohjelmat.';
 
   @override
-  String get storyHome1Title => 'Päiväsi yhdellä silmäyksellä';
+  String get tourRenew1Title => 'Muistutus tulee';
 
   @override
-  String get storyHome1Body => 'Aloitusnäyttö näyttää, mikä on tänään tärkeää: mitä päättyy pian ja kuinka monta tietuetta sinulla on.';
+  String get tourRenew1Body => 'Ennen kuin tietue päättyy, Vaultara muistuttaa sinua. Avaa tietue napauttamalla muistutusta.';
 
   @override
-  String get storyHome2Title => 'Löydä kaikki';
+  String get tourRenew2Title => 'Tallenna uusi päivä';
 
   @override
-  String get storyHome2Body => 'Napauta hakua löytääksesi tietueen nimen, ryhmän tai henkilön mukaan.';
+  String get tourRenew2Body => 'Uusittu? Valitse tästä uusi vanhentumispäivä ja tallenna. Muistutukset siirtyvät uuteen päivään.';
 
   @override
-  String get storyHome3Title => 'Matkat ja suunnitelmat';
+  String get tourRenew3Title => 'Etkö tiedä miten?';
 
   @override
-  String get storyHome3Body => 'Suunnittelemasi matkat ja käynnissä olevat elämäntapahtumien suunnitelmat näkyvät tässä jäljellä olevine tehtävineen.';
+  String get tourRenew3Body => 'Monella tietueella on uusimisen tarkistuslista. Kysy Vaultaralta löytää maasi vaiheet virallisine linkkeineen.';
 
   @override
-  String get storyHome4Title => 'Apua yhdellä napautuksella';
+  String get tourRenew4Title => 'Anna sen toistua';
 
   @override
-  String get storyHome4Body => 'Kipinäpainike avaa kohdan ”Kysy Vaultaralta”. Kuvasi avaa profiilin, asetukset ja opetusohjelmat.';
+  String get tourRenew4Body => 'Tilauksissa ja vuosimaksuissa ota käyttöön Uusiutuu itsestään, niin päivä siirtyy itse eteenpäin.';
 
   @override
-  String get storyRenew1Title => 'Muistutus tulee';
+  String get tourAsk1Title => 'Kysy omin sanoin';
 
   @override
-  String get storyRenew1Body => 'Ennen kuin tietue päättyy, Vaultara muistuttaa sinua. Avaa tietue napauttamalla muistutusta.';
+  String get tourAsk1Body => 'Kysy esimerkiksi ”Mitä päättyy tänä vuonna?” ja saat vastauksia omista tietueistasi.';
 
   @override
-  String get storyRenew2Title => 'Tallenna uusi päivä';
+  String get tourAsk2Title => 'Puhu kirjoittamisen sijaan';
 
   @override
-  String get storyRenew2Body => 'Uusittu? Napauta ”Uusiminen” ja syötä uusi päättymispäivä. Muistutukset siirtyvät mukana.';
+  String get tourAsk2Body => 'Napauta mikrofonia ja puhu. Sanat näkyvät puhuessasi, ja voit lähettää heti.';
 
   @override
-  String get storyRenew3Title => 'Etkö tiedä miten?';
+  String get tourAsk3Title => 'Vahvistat jokaisen muutoksen';
 
   @override
-  String get storyRenew3Body => 'Monella tietueella on uusimisen tarkistuslista. Kysy Vaultaralta löytää maasi vaiheet virallisine linkkeineen.';
+  String get tourAsk3Body => 'Pyydä lisäämään tai muuttamaan tietue, niin näet ensin kortin. Mitään ei tallenneta ennen kuin vahvistat.';
 
   @override
-  String get storyRenew4Title => 'Anna sen toistua';
+  String get tourAsk4Title => 'Kumoa mikä tahansa muutos';
 
   @override
-  String get storyRenew4Body => 'Tilauksissa ja vuosimaksuissa ota käyttöön Uusiutuu itsestään, niin päivä siirtyy itse eteenpäin.';
+  String get tourAsk4Body => 'Muutitko mielesi? Jokaisen vahvistetun muutoksen voi kumota samasta kortista.';
 
   @override
-  String get storyAsk1Title => 'Kysy omin sanoin';
+  String get tourAsk5Title => 'Jatka siitä, mihin jäit';
 
   @override
-  String get storyAsk1Body => 'Kysy esimerkiksi ”Mitä päättyy tänä vuonna?” ja saat vastauksia omista tietueistasi.';
+  String get tourAsk5Body => 'Keskustelut säilyvät 90 päivää kohdassa ”Keskusteluhistoria”, ja ehdotetut kysymykset auttavat alkuun.';
 
   @override
-  String get storyAsk2Title => 'Puhu kirjoittamisen sijaan';
+  String get tourAsk6Title => 'Enemmän kuin tietueita';
 
   @override
-  String get storyAsk2Body => 'Napauta mikrofonia ja puhu. Sanat näkyvät puhuessasi, ja voit lähettää heti.';
+  String get tourAsk6Body => 'Se osaa myös suunnitella matkoja, lisätä henkilöitä, löytää maasi uusimisvaiheet ja jakaa tietueita, linkein virallisille sivuille.';
 
   @override
-  String get storyAsk3Title => 'Vahvistat jokaisen muutoksen';
+  String get tourWallet1Title => 'Valmistaudu ensin';
 
   @override
-  String get storyAsk3Body => 'Pyydä lisäämään tai muuttamaan tietue, niin näet ensin kortin. Mitään ei tallenneta ennen kuin vahvistat.';
+  String get tourWallet1Body => 'Avaa kortti tai asiakirja ja valitse, missä pidät sitä, kuten lompakossa tai laukussa.';
 
   @override
-  String get storyAsk4Title => 'Kumoa mikä tahansa muutos';
+  String get tourWallet2Title => 'Tallenna sulkunumero';
 
   @override
-  String get storyAsk4Body => 'Muutitko mielesi? Jokaisen vahvistetun muutoksen voi kumota samasta kortista.';
+  String get tourWallet2Body => 'Lisää jokaisen pankin sulkunumero nyt. Se on kortissa, jota sinulla ei ole, kun tarvitset sitä.';
 
   @override
-  String get storyAsk5Title => 'Jatka siitä, mihin jäit';
+  String get tourWallet3Title => 'Jos se katoaa';
 
   @override
-  String get storyAsk5Body => 'Keskustelut säilyvät 90 päivää kohdassa ”Keskusteluhistoria”, ja ehdotetut kysymykset auttavat alkuun.';
+  String get tourWallet3Body => 'Jos lompakkosi katoaa, napauta tästä sopivaa painiketta. Vaultara näyttää kaiken, mitä sisällä oli, joten tiedät mitä estää.';
 
   @override
-  String get storyAsk6Title => 'Enemmän kuin tietueita';
+  String get tourWallet4Title => 'Sulje kortit minuuteissa';
 
   @override
-  String get storyAsk6Body => 'Se osaa myös suunnitella matkoja, lisätä henkilöitä, löytää maasi uusimisvaiheet ja jakaa tietueita, linkein virallisille sivuille.';
+  String get tourWallet4Body => 'Soita jokaiseen pankkiin yhdellä napautuksella, merkitse kortit suljetuiksi ja tallenna rikosilmoituksen numero.';
 
   @override
-  String get storyWallet1Title => 'Valmistaudu ensin';
+  String get tourWallet5Title => 'Korvaa ja pysy turvassa';
 
   @override
-  String get storyWallet1Body => 'Avaa kortti tai asiakirja ja valitse, missä pidät sitä, kuten lompakossa tai laukussa.';
+  String get tourWallet5Body => 'Korvaa asiakirjasi, tarkista tiliotteet muistutuksen tullessa ja napauta ”Löysin sen”, jos se löytyy.';
 
   @override
-  String get storyWallet2Title => 'Tallenna sulkunumero';
+  String get tourLife1Title => 'Suuret hetket, yksi suunnitelma';
 
   @override
-  String get storyWallet2Body => 'Lisää jokaisen pankin sulkunumero nyt. Se on kortissa, jota sinulla ei ole, kun tarvitset sitä.';
+  String get tourLife1Body => 'Muutto, vauva, uusi työ tai hätätilanne: valitse kohdassa ”Elämäntapahtumat”, mitä tapahtuu.';
 
   @override
-  String get storyWallet3Title => 'Jos se katoaa';
+  String get tourLife2Title => 'Tietueesi järjestyksessä';
 
   @override
-  String get storyWallet3Body => 'Avaa Kadonnut tai varastettu ja napauta Kadonnut tai Varastettu. Vaultara näyttää kaiken, mitä sisällä oli.';
+  String get tourLife2Body => 'Suunnitelma näyttää, mitkä tietueet päivittää, peruuttaa tai uusia ja mitkä ehkä pitää lisätä.';
 
   @override
-  String get storyWallet4Title => 'Sulje kortit minuuteissa';
+  String get tourLife3Title => 'Vaiheet ja päivämäärät';
 
   @override
-  String get storyWallet4Body => 'Soita jokaiseen pankkiin yhdellä napautuksella, merkitse kortit suljetuiksi ja tallenna rikosilmoituksen numero.';
+  String get tourLife3Body => 'Jokaisessa suunnitelmassa on myös vaiheita, jotka eivät ole tietueita, ja aloituspäivät, jotka kertovat milloin hakea, jotta mikään ei myöhästy.';
 
   @override
-  String get storyWallet5Title => 'Korvaa ja pysy turvassa';
+  String get tourLife4Title => 'Tee siitä omasi';
 
   @override
-  String get storyWallet5Body => 'Korvaa asiakirjasi, tarkista tiliotteet muistutuksen tullessa ja napauta ”Löysin sen”, jos se löytyy.';
+  String get tourLife4Body => 'Lisää omia vaiheita, jaa suunnitelma PDF:nä ja saat muistutuksia päivän tienoilla.';
 
   @override
-  String get storyLife1Title => 'Suuret hetket, yksi suunnitelma';
+  String get tourPhotos1Title => 'Kuvat asiakirjoistasi';
 
   @override
-  String get storyLife1Body => 'Muutto, vauva, uusi työ tai hätätilanne: valitse kohdassa ”Elämäntapahtumat”, mitä tapahtuu.';
+  String get tourPhotos1Body => 'Lisää tietueesta kuvat kortin tai asiakirjan etu- ja takapuolesta.';
 
   @override
-  String get storyLife2Title => 'Tietueesi järjestyksessä';
+  String get tourPhotos2Title => 'Salattu puhelimessasi';
 
   @override
-  String get storyLife2Body => 'Suunnitelma näyttää, mitkä tietueet päivittää, peruuttaa tai uusia ja mitkä ehkä pitää lisätä.';
+  String get tourPhotos2Body => 'Kytke kuvien salaus päälle, niin kuvat lukitaan puhelimessa ennen lähettämistä.';
 
   @override
-  String get storyLife3Title => 'Vaiheet ja päivämäärät';
+  String get tourPhotos3Title => 'Lukitse arkaluonteiset tietueet';
 
   @override
-  String get storyLife3Body => 'Vaiheet kattavat sen, mikä ei ole tietue, ja aloituspäivät kertovat, milloin hakea, jotta mikään ei myöhästy.';
+  String get tourPhotos3Body => 'Lukitse tietue, niin se pyytää sormenjälkeä tai näytön lukitusta ennen avautumista.';
 
   @override
-  String get storyLife4Title => 'Tee siitä omasi';
+  String get tourPhotos4Title => 'Lukitse koko sovellus';
 
   @override
-  String get storyLife4Body => 'Lisää omia vaiheita, jaa suunnitelma PDF:nä ja saat muistutuksia päivän tienoilla.';
+  String get tourPhotos4Body => 'Kytke sovelluslukitus päälle turvallisuusasetuksista ja piilota sisältö sovellusta vaihtaessa.';
 
   @override
-  String get storyPhotos1Title => 'Kuvat asiakirjoistasi';
+  String get tourShare1Title => 'Jaa yksi tietue';
 
   @override
-  String get storyPhotos1Body => 'Lisää tietueesta kuvat kortin tai asiakirjan etu- ja takapuolesta.';
+  String get tourShare1Body => 'Avaa tietue ja jaa linkki, joka näyttää vain sen tietueen, ei mitään muuta.';
 
   @override
-  String get storyPhotos2Title => 'Salattu puhelimessasi';
+  String get tourShare2Title => 'Todistepaketti';
 
   @override
-  String get storyPhotos2Body => 'Kytke kuvien salaus päälle, niin kuvat lukitaan puhelimessa ennen lähettämistä.';
+  String get tourShare2Body => 'Kokoa valitsemasi tietueet kuvineen yhteen PDF:ään vuokranantajalle, pankille tai virastolle.';
 
   @override
-  String get storyPhotos3Title => 'Lukitse arkaluonteiset tietueet';
+  String get tourShare3Title => 'Pidä hallinta';
 
   @override
-  String get storyPhotos3Body => 'Lukitse tietue, niin se pyytää sormenjälkeä tai näytön lukitusta ennen avautumista.';
+  String get tourShare3Body => '”Jaetut linkit” näyttää jokaisen luomasi linkin. Pysäytä mikä tahansa milloin vain, eikä se enää aukea.';
 
   @override
-  String get storyPhotos4Title => 'Lukitse koko sovellus';
+  String get tourHousehold1Title => 'Kutsu taloutesi';
 
   @override
-  String get storyPhotos4Body => 'Kytke sovelluslukitus päälle turvallisuusasetuksista ja piilota sisältö sovellusta vaihtaessa.';
+  String get tourHousehold1Body => 'Jaa kutsukoodi tai linkki. Jokainen kirjautuu omalla tilillään.';
 
   @override
-  String get storyShare1Title => 'Jaa yksi tietue';
+  String get tourHousehold2Title => 'Yksi tietuejoukko';
 
   @override
-  String get storyShare1Body => 'Avaa tietue ja jaa linkki, joka näyttää vain sen tietueen, ei mitään muuta.';
+  String get tourHousehold2Body => 'Kaikki näkevät samat jaetut tietueet ja saavat samat muistutukset.';
 
   @override
-  String get storyShare2Title => 'Todistepaketti';
+  String get tourHousehold3Title => 'Kenen se on?';
 
   @override
-  String get storyShare2Body => 'Kokoa valitsemasi tietueet kuvineen yhteen PDF:ään vuokranantajalle, pankille tai virastolle.';
+  String get tourHousehold3Body => 'Jokainen tietue voi kuulua jollekulle. Hänen nimensä näkyy tietueessa ja muistutuksissa.';
 
   @override
-  String get storyShare3Title => 'Pidä hallinta';
+  String get tourImport1Title => 'Skannaa kortti';
 
   @override
-  String get storyShare3Body => '”Jaetut linkit” näyttää jokaisen luomasi linkin. Pysäytä mikä tahansa milloin vain, eikä se enää aukea.';
+  String get tourImport1Body => 'Ota kuva kortista tai asiakirjasta, niin Vaultara täyttää nimen ja päättymispäivän puolestasi.';
 
   @override
-  String get storyHousehold1Title => 'Kutsu taloutesi';
+  String get tourImport2Title => 'Tuo luettelo';
 
   @override
-  String get storyHousehold1Body => 'Jaa kutsukoodi tai linkki. Jokainen kirjautuu omalla tilillään.';
+  String get tourImport2Body => 'Onko sinulla jo laskentataulukko? Tuo se ja tarkista jokainen rivi ennen tallennusta.';
 
   @override
-  String get storyHousehold2Title => 'Yksi tietuejoukko';
+  String get tourImport3Title => 'Jaa Vaultaraan';
 
   @override
-  String get storyHousehold2Body => 'Kaikki näkevät samat jaetut tietueet ja saavat samat muistutukset.';
+  String get tourImport3Body => 'Jaa kuva, PDF tai teksti toisesta sovelluksesta Vaultaraan aloittaaksesi uuden tietueen.';
 
   @override
-  String get storyHousehold3Title => 'Kenen se on?';
+  String get tourCosts1Title => 'Kalenteriisi';
 
   @override
-  String get storyHousehold3Body => 'Jokainen tietue voi kuulua jollekulle. Hänen nimensä näkyy tietueessa ja muistutuksissa.';
+  String get tourCosts1Body => 'Lisää päättymispäivät puhelimen kalenteriin muiden suunnitelmiesi viereen.';
 
   @override
-  String get storyImport1Title => 'Skannaa kortti';
+  String get tourCosts2Title => 'Mitä uusimiset maksavat';
 
   @override
-  String get storyImport1Body => 'Ota kuva kortista tai asiakirjasta, niin Vaultara täyttää nimen ja päättymispäivän puolestasi.';
+  String get tourCosts2Body => 'Syötä tietueeseen uusimisen hinta, niin Vaultara näyttää, paljonko kulutat vuodessa.';
 
   @override
-  String get storyImport2Title => 'Tuo luettelo';
+  String get tourCosts3Title => 'Suunnittele etukäteen';
 
   @override
-  String get storyImport2Body => 'Onko sinulla jo laskentataulukko? Tuo se ja tarkista jokainen rivi ennen tallennusta.';
+  String get tourCosts3Body => 'Näe kalliit kuukaudet tulossa, jotta suuri uusiminen ei koskaan yllätä.';
 
   @override
-  String get storyImport3Title => 'Jaa Vaultaraan';
+  String get tourBusiness1Title => 'Seuraa tiimiäsi';
 
   @override
-  String get storyImport3Body => 'Jaa kuva, PDF tai teksti toisesta sovelluksesta Vaultaraan aloittaaksesi uuden tietueen.';
+  String get tourBusiness1Body => 'Lisää henkilöstö ja säilytä heidän todistuksensa, lupansa ja lisenssinsä yhdessä paikassa.';
 
   @override
-  String get storyCosts1Title => 'Kalenteriisi';
+  String get tourBusiness2Title => 'Muistutukset sähköpostilla';
 
   @override
-  String get storyCosts1Body => 'Lisää päättymispäivät puhelimen kalenteriin muiden suunnitelmiesi viereen.';
+  String get tourBusiness2Body => 'Henkilöstö saa sähköpostin ennen asiakirjojen päättymistä, myös ilman sovellusta.';
 
   @override
-  String get storyCosts2Title => 'Mitä uusimiset maksavat';
+  String get tourBusiness3Title => 'Kuukausiraportti';
 
   @override
-  String get storyCosts2Body => 'Syötä tietueeseen uusimisen hinta, niin Vaultara näyttää, paljonko kulutat vuodessa.';
+  String get tourBusiness3Body => 'Joka kuukausi raportti näyttää, mikä on voimassa, mikä päättymässä ja mitä puuttuu.';
 
   @override
-  String get storyCosts3Title => 'Suunnittele etukäteen';
+  String get tourBusiness4Title => 'Pyydä päivitystä';
 
   @override
-  String get storyCosts3Body => 'Näe kalliit kuukaudet tulossa, jotta suuri uusiminen ei koskaan yllätä.';
-
-  @override
-  String get storyBusiness1Title => 'Seuraa tiimiäsi';
-
-  @override
-  String get storyBusiness1Body => 'Lisää henkilöstö ja säilytä heidän todistuksensa, lupansa ja lisenssinsä yhdessä paikassa.';
-
-  @override
-  String get storyBusiness2Title => 'Muistutukset sähköpostilla';
-
-  @override
-  String get storyBusiness2Body => 'Henkilöstö saa sähköpostin ennen asiakirjojen päättymistä, myös ilman sovellusta.';
-
-  @override
-  String get storyBusiness3Title => 'Kuukausiraportti';
-
-  @override
-  String get storyBusiness3Body => 'Joka kuukausi raportti näyttää, mikä on voimassa, mikä päättymässä ja mitä puuttuu.';
-
-  @override
-  String get storyBusiness4Title => 'Pyydä päivitystä';
-
-  @override
-  String get storyBusiness4Body => 'Lähetä linkki, niin henkilöstö lataa uusitun asiakirjan itse.';
+  String get tourBusiness4Body => 'Lähetä linkki, niin henkilöstö lataa uusitun asiakirjan itse.';
 
   @override
   String get categoryHealthAndMedical => 'Terveys ja lääkinnällinen';

@@ -7712,290 +7712,262 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => 'ย้ายบ้าน มีลูก งานใหม่ หรือเหตุฉุกเฉิน? เหตุการณ์ชีวิตให้แผนพร้อมรายการ ขั้นตอน และวันที่ของคุณ';
 
   @override
-  String get storySampleQuestion => 'ปีนี้มีอะไรหมดอายุบ้าง';
+  String get tourHome1Title => 'วันของคุณในแวบเดียว';
 
   @override
-  String storySampleAnswer(String name) {
-    return '$name ของคุณหมดอายุเดือนมีนาคม ต้องการแจ้งเตือนล่วงหน้าหนึ่งเดือนไหม';
-  }
+  String get tourHome1Body => 'หน้าจอหลักแสดงสิ่งสำคัญของวันนี้ ทั้งสิ่งที่จะหมดอายุเร็ว ๆ นี้และจำนวนรายการที่คุณมี';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name หมดอายุในอีก 30 วัน แตะเพื่อต่ออายุ';
-  }
+  String get tourHome2Title => 'ค้นหาได้ทุกอย่าง';
 
   @override
-  String get storySampleGym => 'สมาชิกฟิตเนส';
+  String get tourHome2Body => 'แตะค้นหาเพื่อหารายการตามชื่อ กลุ่ม หรือบุคคล';
 
   @override
-  String get storySampleFirstAid => 'ใบรับรองการปฐมพยาบาล';
+  String get tourHome3Title => 'ทริปและแผน';
 
   @override
-  String get storySampleEncrypt => 'เข้ารหัสรูปภาพ';
+  String get tourHome3Body => 'ทริปที่คุณวางแผนและแผนเหตุการณ์ชีวิตที่กำลังดำเนินอยู่จะแสดงที่นี่ พร้อมสิ่งที่ยังเหลือ';
 
   @override
-  String get storySampleAppLock => 'ล็อกแอป';
+  String get tourHome4Title => 'ความช่วยเหลือในแตะเดียว';
 
   @override
-  String get storySampleHideApp => 'ซ่อนเนื้อหาในตัวสลับแอป';
+  String get tourHome4Body => 'ปุ่มประกายเปิด «ถาม Vaultara» รูปของคุณเปิดโปรไฟล์ การตั้งค่า และบทแนะนำ';
 
   @override
-  String get storyHome1Title => 'วันของคุณในแวบเดียว';
+  String get tourRenew1Title => 'มีการแจ้งเตือน';
 
   @override
-  String get storyHome1Body => 'หน้าจอหลักแสดงสิ่งสำคัญของวันนี้ ทั้งสิ่งที่จะหมดอายุเร็ว ๆ นี้และจำนวนรายการที่คุณมี';
+  String get tourRenew1Body => 'ก่อนรายการหมดอายุ Vaultara จะเตือนคุณ แตะการแจ้งเตือนเพื่อเปิดรายการ';
 
   @override
-  String get storyHome2Title => 'ค้นหาได้ทุกอย่าง';
+  String get tourRenew2Title => 'บันทึกวันที่ใหม่';
 
   @override
-  String get storyHome2Body => 'แตะค้นหาเพื่อหารายการตามชื่อ กลุ่ม หรือบุคคล';
+  String get tourRenew2Body => 'ต่ออายุแล้วใช่ไหม เลือกวันหมดอายุใหม่ที่นี่แล้วบันทึก การเตือนจะย้ายไปวันใหม่';
 
   @override
-  String get storyHome3Title => 'ทริปและแผน';
+  String get tourRenew3Title => 'ไม่แน่ใจว่าต้องทำอย่างไร?';
 
   @override
-  String get storyHome3Body => 'ทริปที่คุณวางแผนและแผนเหตุการณ์ชีวิตที่กำลังดำเนินอยู่จะแสดงที่นี่ พร้อมสิ่งที่ยังเหลือ';
+  String get tourRenew3Body => 'หลายรายการมีรายการตรวจสอบการต่ออายุ ถาม Vaultara ช่วยหาขั้นตอนสำหรับประเทศของคุณพร้อมลิงก์ทางการได้';
 
   @override
-  String get storyHome4Title => 'ความช่วยเหลือในแตะเดียว';
+  String get tourRenew4Title => 'ให้ทำซ้ำ';
 
   @override
-  String get storyHome4Body => 'ปุ่มประกายเปิด «ถาม Vaultara» รูปของคุณเปิดโปรไฟล์ การตั้งค่า และบทแนะนำ';
+  String get tourRenew4Body => 'สำหรับการสมัครสมาชิกและการชำระรายปี ให้เปิด ต่ออายุเอง แล้ววันที่จะเลื่อนไปข้างหน้าเอง';
 
   @override
-  String get storyRenew1Title => 'มีการแจ้งเตือน';
+  String get tourAsk1Title => 'ถามด้วยคำพูดของคุณ';
 
   @override
-  String get storyRenew1Body => 'ก่อนรายการหมดอายุ Vaultara จะเตือนคุณ แตะการแจ้งเตือนเพื่อเปิดรายการ';
+  String get tourAsk1Body => 'ถามเช่น «ปีนี้มีอะไรหมดอายุบ้าง» แล้วรับคำตอบจากรายการของคุณเอง';
 
   @override
-  String get storyRenew2Title => 'บันทึกวันที่ใหม่';
+  String get tourAsk2Title => 'พูดแทนการพิมพ์';
 
   @override
-  String get storyRenew2Body => 'ต่ออายุแล้ว? แตะ «ต่ออายุ» แล้วใส่วันหมดอายุใหม่ การแจ้งเตือนจะเลื่อนตามไปด้วย';
+  String get tourAsk2Body => 'แตะไมค์แล้วพูด คำของคุณจะปรากฏขณะพูด และส่งได้ทันที';
 
   @override
-  String get storyRenew3Title => 'ไม่แน่ใจว่าต้องทำอย่างไร?';
+  String get tourAsk3Title => 'คุณยืนยันทุกการเปลี่ยนแปลง';
 
   @override
-  String get storyRenew3Body => 'หลายรายการมีรายการตรวจสอบการต่ออายุ ถาม Vaultara ช่วยหาขั้นตอนสำหรับประเทศของคุณพร้อมลิงก์ทางการได้';
+  String get tourAsk3Body => 'ขอให้เพิ่มหรือแก้ไขรายการ แล้วคุณจะเห็นการ์ดก่อน จะไม่มีอะไรถูกบันทึกจนกว่าคุณจะยืนยัน';
 
   @override
-  String get storyRenew4Title => 'ให้ทำซ้ำ';
+  String get tourAsk4Title => 'เลิกทำการเปลี่ยนแปลงใดก็ได้';
 
   @override
-  String get storyRenew4Body => 'สำหรับการสมัครสมาชิกและการชำระรายปี ให้เปิด ต่ออายุเอง แล้ววันที่จะเลื่อนไปข้างหน้าเอง';
+  String get tourAsk4Body => 'เปลี่ยนใจ? ทุกการเปลี่ยนแปลงที่ยืนยันแล้วเลิกทำได้จากการ์ดเดิม';
 
   @override
-  String get storyAsk1Title => 'ถามด้วยคำพูดของคุณ';
+  String get tourAsk5Title => 'ทำต่อจากที่ค้างไว้';
 
   @override
-  String get storyAsk1Body => 'ถามเช่น «ปีนี้มีอะไรหมดอายุบ้าง» แล้วรับคำตอบจากรายการของคุณเอง';
+  String get tourAsk5Body => 'แชทจะเก็บไว้ 90 วันใน «ประวัติแชต» และคำถามแนะนำช่วยให้คุณเริ่มต้นได้';
 
   @override
-  String get storyAsk2Title => 'พูดแทนการพิมพ์';
+  String get tourAsk6Title => 'มากกว่ารายการ';
 
   @override
-  String get storyAsk2Body => 'แตะไมค์แล้วพูด คำของคุณจะปรากฏขณะพูด และส่งได้ทันที';
+  String get tourAsk6Body => 'ยังวางแผนการเดินทาง เพิ่มบุคคล หาขั้นตอนการต่ออายุของประเทศคุณ และแชร์รายการได้ พร้อมลิงก์ไปยังหน้าทางการ';
 
   @override
-  String get storyAsk3Title => 'คุณยืนยันทุกการเปลี่ยนแปลง';
+  String get tourWallet1Title => 'เตรียมพร้อมก่อน';
 
   @override
-  String get storyAsk3Body => 'ขอให้เพิ่มหรือแก้ไขรายการ แล้วคุณจะเห็นการ์ดก่อน จะไม่มีอะไรถูกบันทึกจนกว่าคุณจะยืนยัน';
+  String get tourWallet1Body => 'เปิดบัตรหรือเอกสารแล้วเลือกที่เก็บ เช่น กระเป๋าสตางค์หรือกระเป๋า';
 
   @override
-  String get storyAsk4Title => 'เลิกทำการเปลี่ยนแปลงใดก็ได้';
+  String get tourWallet2Title => 'บันทึกเบอร์อายัดบัตร';
 
   @override
-  String get storyAsk4Body => 'เปลี่ยนใจ? ทุกการเปลี่ยนแปลงที่ยืนยันแล้วเลิกทำได้จากการ์ดเดิม';
+  String get tourWallet2Body => 'เพิ่มเบอร์อายัดบัตรของแต่ละธนาคารตอนนี้ เบอร์อยู่บนบัตร ซึ่งคุณจะไม่มีเมื่อต้องใช้';
 
   @override
-  String get storyAsk5Title => 'ทำต่อจากที่ค้างไว้';
+  String get tourWallet3Title => 'ถ้าหาย';
 
   @override
-  String get storyAsk5Body => 'แชทจะเก็บไว้ 90 วันใน «ประวัติแชต» และคำถามแนะนำช่วยให้คุณเริ่มต้นได้';
+  String get tourWallet3Body => 'ถ้ากระเป๋าสตางค์หาย แตะปุ่มที่ตรงกับเหตุการณ์ที่นี่ Vaultara จะแสดงทุกอย่างที่อยู่ข้างใน เพื่อให้รู้ว่าต้องอายัดอะไร';
 
   @override
-  String get storyAsk6Title => 'มากกว่ารายการ';
+  String get tourWallet4Title => 'อายัดบัตรในไม่กี่นาที';
 
   @override
-  String get storyAsk6Body => 'ยังวางแผนการเดินทาง เพิ่มบุคคล หาขั้นตอนการต่ออายุของประเทศคุณ และแชร์รายการได้ พร้อมลิงก์ไปยังหน้าทางการ';
+  String get tourWallet4Body => 'โทรหาแต่ละธนาคารในแตะเดียว ทำเครื่องหมายว่าอายัดแล้ว และบันทึกเลขที่แจ้งความ';
 
   @override
-  String get storyWallet1Title => 'เตรียมพร้อมก่อน';
+  String get tourWallet5Title => 'ทำใหม่และปลอดภัย';
 
   @override
-  String get storyWallet1Body => 'เปิดบัตรหรือเอกสารแล้วเลือกที่เก็บ เช่น กระเป๋าสตางค์หรือกระเป๋า';
+  String get tourWallet5Body => 'ทำเอกสารใหม่ ตรวจรายการเดินบัญชีเมื่อได้รับการเตือน และแตะ «ฉันเจอแล้ว» ถ้าเจอ';
 
   @override
-  String get storyWallet2Title => 'บันทึกเบอร์อายัดบัตร';
+  String get tourLife1Title => 'ช่วงเวลาสำคัญ แผนเดียว';
 
   @override
-  String get storyWallet2Body => 'เพิ่มเบอร์อายัดบัตรของแต่ละธนาคารตอนนี้ เบอร์อยู่บนบัตร ซึ่งคุณจะไม่มีเมื่อต้องใช้';
+  String get tourLife1Body => 'ย้ายบ้าน มีลูก งานใหม่ หรือเหตุฉุกเฉิน: เลือกใน «เหตุการณ์ในชีวิต» ว่าเกิดอะไรขึ้น';
 
   @override
-  String get storyWallet3Title => 'ถ้าหาย';
+  String get tourLife2Title => 'รายการของคุณเป็นระเบียบ';
 
   @override
-  String get storyWallet3Body => 'เปิด หายหรือถูกขโมย แล้วแตะ หาย หรือ ถูกขโมย Vaultara จะแสดงทุกอย่างที่อยู่ข้างใน';
+  String get tourLife2Body => 'แผนจะแสดงว่ารายการใดต้องอัปเดต ยกเลิก หรือต่ออายุ และรายการใดที่อาจต้องเพิ่ม';
 
   @override
-  String get storyWallet4Title => 'อายัดบัตรในไม่กี่นาที';
+  String get tourLife3Title => 'ขั้นตอนและวันที่';
 
   @override
-  String get storyWallet4Body => 'โทรหาแต่ละธนาคารในแตะเดียว ทำเครื่องหมายว่าอายัดแล้ว และบันทึกเลขที่แจ้งความ';
+  String get tourLife3Body => 'ทุกแผนยังมีขั้นตอนที่ไม่ใช่รายการ และวันเริ่มที่บอกว่าควรยื่นเมื่อไรเพื่อไม่ให้อะไรช้า';
 
   @override
-  String get storyWallet5Title => 'ทำใหม่และปลอดภัย';
+  String get tourLife4Title => 'ทำให้เป็นของคุณ';
 
   @override
-  String get storyWallet5Body => 'ทำเอกสารใหม่ ตรวจรายการเดินบัญชีเมื่อได้รับการเตือน และแตะ «ฉันเจอแล้ว» ถ้าเจอ';
+  String get tourLife4Body => 'เพิ่มขั้นตอนของคุณเอง แชร์แผนเป็น PDF และรับการแจ้งเตือนช่วงใกล้วันที่';
 
   @override
-  String get storyLife1Title => 'ช่วงเวลาสำคัญ แผนเดียว';
+  String get tourPhotos1Title => 'รูปเอกสารของคุณ';
 
   @override
-  String get storyLife1Body => 'ย้ายบ้าน มีลูก งานใหม่ หรือเหตุฉุกเฉิน: เลือกใน «เหตุการณ์ในชีวิต» ว่าเกิดอะไรขึ้น';
+  String get tourPhotos1Body => 'จากในรายการ เพิ่มรูปด้านหน้าและด้านหลังของบัตรหรือเอกสาร';
 
   @override
-  String get storyLife2Title => 'รายการของคุณเป็นระเบียบ';
+  String get tourPhotos2Title => 'เข้ารหัสในโทรศัพท์';
 
   @override
-  String get storyLife2Body => 'แผนจะแสดงว่ารายการใดต้องอัปเดต ยกเลิก หรือต่ออายุ และรายการใดที่อาจต้องเพิ่ม';
+  String get tourPhotos2Body => 'เปิดการเข้ารหัสรูปภาพ แล้วรูปจะถูกล็อกในโทรศัพท์ก่อนอัปโหลด';
 
   @override
-  String get storyLife3Title => 'ขั้นตอนและวันที่';
+  String get tourPhotos3Title => 'ล็อกรายการสำคัญ';
 
   @override
-  String get storyLife3Body => 'ขั้นตอนครอบคลุมสิ่งที่ไม่ใช่รายการ และวันเริ่มบอกว่าควรยื่นเมื่อไรเพื่อไม่ให้มีอะไรล่าช้า';
+  String get tourPhotos3Body => 'ล็อกรายการ แล้วจะขอลายนิ้วมือหรือการล็อกหน้าจอก่อนเปิด';
 
   @override
-  String get storyLife4Title => 'ทำให้เป็นของคุณ';
+  String get tourPhotos4Title => 'ล็อกทั้งแอป';
 
   @override
-  String get storyLife4Body => 'เพิ่มขั้นตอนของคุณเอง แชร์แผนเป็น PDF และรับการแจ้งเตือนช่วงใกล้วันที่';
+  String get tourPhotos4Body => 'ในการตั้งค่าความปลอดภัย เปิดล็อกแอปและซ่อนเนื้อหาเมื่อสลับแอป';
 
   @override
-  String get storyPhotos1Title => 'รูปเอกสารของคุณ';
+  String get tourShare1Title => 'แชร์รายการเดียว';
 
   @override
-  String get storyPhotos1Body => 'จากในรายการ เพิ่มรูปด้านหน้าและด้านหลังของบัตรหรือเอกสาร';
+  String get tourShare1Body => 'เปิดรายการแล้วแชร์ลิงก์ที่แสดงเฉพาะรายการนั้น ไม่มีอย่างอื่น';
 
   @override
-  String get storyPhotos2Title => 'เข้ารหัสในโทรศัพท์';
+  String get tourShare2Title => 'ชุดเอกสารยืนยัน';
 
   @override
-  String get storyPhotos2Body => 'เปิดการเข้ารหัสรูปภาพ แล้วรูปจะถูกล็อกในโทรศัพท์ก่อนอัปโหลด';
+  String get tourShare2Body => 'รวมรายการที่คุณเลือกพร้อมรูปไว้ใน PDF เดียวสำหรับเจ้าของที่พัก ธนาคาร หรือหน่วยงาน';
 
   @override
-  String get storyPhotos3Title => 'ล็อกรายการสำคัญ';
+  String get tourShare3Title => 'ควบคุมได้เอง';
 
   @override
-  String get storyPhotos3Body => 'ล็อกรายการ แล้วจะขอลายนิ้วมือหรือการล็อกหน้าจอก่อนเปิด';
+  String get tourShare3Body => '«ลิงก์ที่แชร์» แสดงทุกลิงก์ที่คุณสร้าง หยุดลิงก์ใดก็ได้ทุกเมื่อ แล้วลิงก์นั้นจะเปิดไม่ได้อีก';
 
   @override
-  String get storyPhotos4Title => 'ล็อกทั้งแอป';
+  String get tourHousehold1Title => 'เชิญคนในบ้าน';
 
   @override
-  String get storyPhotos4Body => 'ในการตั้งค่าความปลอดภัย เปิดล็อกแอปและซ่อนเนื้อหาเมื่อสลับแอป';
+  String get tourHousehold1Body => 'แชร์รหัสหรือลิงก์คำเชิญ แต่ละคนลงชื่อเข้าใช้ด้วยบัญชีของตัวเอง';
 
   @override
-  String get storyShare1Title => 'แชร์รายการเดียว';
+  String get tourHousehold2Title => 'รายการชุดเดียว';
 
   @override
-  String get storyShare1Body => 'เปิดรายการแล้วแชร์ลิงก์ที่แสดงเฉพาะรายการนั้น ไม่มีอย่างอื่น';
+  String get tourHousehold2Body => 'ทุกคนเห็นรายการที่แชร์ชุดเดียวกันและได้รับการแจ้งเตือนเหมือนกัน';
 
   @override
-  String get storyShare2Title => 'ชุดเอกสารยืนยัน';
+  String get tourHousehold3Title => 'เป็นของใคร?';
 
   @override
-  String get storyShare2Body => 'รวมรายการที่คุณเลือกพร้อมรูปไว้ใน PDF เดียวสำหรับเจ้าของที่พัก ธนาคาร หรือหน่วยงาน';
+  String get tourHousehold3Body => 'แต่ละรายการเป็นของใครสักคนได้ ชื่อจะแสดงบนรายการและในการแจ้งเตือน';
 
   @override
-  String get storyShare3Title => 'ควบคุมได้เอง';
+  String get tourImport1Title => 'สแกนบัตร';
 
   @override
-  String get storyShare3Body => '«ลิงก์ที่แชร์» แสดงทุกลิงก์ที่คุณสร้าง หยุดลิงก์ใดก็ได้ทุกเมื่อ แล้วลิงก์นั้นจะเปิดไม่ได้อีก';
+  String get tourImport1Body => 'ถ่ายรูปบัตรหรือเอกสาร แล้ว Vaultara จะกรอกชื่อและวันหมดอายุให้';
 
   @override
-  String get storyHousehold1Title => 'เชิญคนในบ้าน';
+  String get tourImport2Title => 'นำเข้ารายการ';
 
   @override
-  String get storyHousehold1Body => 'แชร์รหัสหรือลิงก์คำเชิญ แต่ละคนลงชื่อเข้าใช้ด้วยบัญชีของตัวเอง';
+  String get tourImport2Body => 'มีสเปรดชีตอยู่แล้ว? นำเข้าแล้วตรวจทุกแถวก่อนบันทึก';
 
   @override
-  String get storyHousehold2Title => 'รายการชุดเดียว';
+  String get tourImport3Title => 'แชร์มาที่ Vaultara';
 
   @override
-  String get storyHousehold2Body => 'ทุกคนเห็นรายการที่แชร์ชุดเดียวกันและได้รับการแจ้งเตือนเหมือนกัน';
+  String get tourImport3Body => 'แชร์รูป PDF หรือข้อความจากแอปอื่นมาที่ Vaultara เพื่อเริ่มรายการใหม่';
 
   @override
-  String get storyHousehold3Title => 'เป็นของใคร?';
+  String get tourCosts1Title => 'ในปฏิทินของคุณ';
 
   @override
-  String get storyHousehold3Body => 'แต่ละรายการเป็นของใครสักคนได้ ชื่อจะแสดงบนรายการและในการแจ้งเตือน';
+  String get tourCosts1Body => 'เพิ่มวันหมดอายุลงในปฏิทินโทรศัพท์ ข้างแผนอื่น ๆ ของคุณ';
 
   @override
-  String get storyImport1Title => 'สแกนบัตร';
+  String get tourCosts2Title => 'ค่าต่ออายุ';
 
   @override
-  String get storyImport1Body => 'ถ่ายรูปบัตรหรือเอกสาร แล้ว Vaultara จะกรอกชื่อและวันหมดอายุให้';
+  String get tourCosts2Body => 'ใส่ค่าต่ออายุในรายการ แล้ว Vaultara จะแสดงว่าคุณใช้จ่ายเท่าไรต่อปี';
 
   @override
-  String get storyImport2Title => 'นำเข้ารายการ';
+  String get tourCosts3Title => 'วางแผนล่วงหน้า';
 
   @override
-  String get storyImport2Body => 'มีสเปรดชีตอยู่แล้ว? นำเข้าแล้วตรวจทุกแถวก่อนบันทึก';
+  String get tourCosts3Body => 'เห็นเดือนที่ค่าใช้จ่ายสูงล่วงหน้า การต่ออายุก้อนใหญ่จะไม่ทำให้คุณตกใจ';
 
   @override
-  String get storyImport3Title => 'แชร์มาที่ Vaultara';
+  String get tourBusiness1Title => 'ติดตามทีมของคุณ';
 
   @override
-  String get storyImport3Body => 'แชร์รูป PDF หรือข้อความจากแอปอื่นมาที่ Vaultara เพื่อเริ่มรายการใหม่';
+  String get tourBusiness1Body => 'เพิ่มพนักงานและเก็บใบรับรอง ใบอนุญาต และใบประกอบวิชาชีพไว้ที่เดียว';
 
   @override
-  String get storyCosts1Title => 'ในปฏิทินของคุณ';
+  String get tourBusiness2Title => 'แจ้งเตือนทางอีเมล';
 
   @override
-  String get storyCosts1Body => 'เพิ่มวันหมดอายุลงในปฏิทินโทรศัพท์ ข้างแผนอื่น ๆ ของคุณ';
+  String get tourBusiness2Body => 'พนักงานได้รับอีเมลก่อนเอกสารหมดอายุ แม้ไม่มีแอป';
 
   @override
-  String get storyCosts2Title => 'ค่าต่ออายุ';
+  String get tourBusiness3Title => 'รายงานรายเดือน';
 
   @override
-  String get storyCosts2Body => 'ใส่ค่าต่ออายุในรายการ แล้ว Vaultara จะแสดงว่าคุณใช้จ่ายเท่าไรต่อปี';
+  String get tourBusiness3Body => 'ทุกเดือนจะมีรายงานว่าอะไรยังใช้ได้ อะไรกำลังหมดอายุ และอะไรขาดหายไป';
 
   @override
-  String get storyCosts3Title => 'วางแผนล่วงหน้า';
+  String get tourBusiness4Title => 'ขอการอัปเดต';
 
   @override
-  String get storyCosts3Body => 'เห็นเดือนที่ค่าใช้จ่ายสูงล่วงหน้า การต่ออายุก้อนใหญ่จะไม่ทำให้คุณตกใจ';
-
-  @override
-  String get storyBusiness1Title => 'ติดตามทีมของคุณ';
-
-  @override
-  String get storyBusiness1Body => 'เพิ่มพนักงานและเก็บใบรับรอง ใบอนุญาต และใบประกอบวิชาชีพไว้ที่เดียว';
-
-  @override
-  String get storyBusiness2Title => 'แจ้งเตือนทางอีเมล';
-
-  @override
-  String get storyBusiness2Body => 'พนักงานได้รับอีเมลก่อนเอกสารหมดอายุ แม้ไม่มีแอป';
-
-  @override
-  String get storyBusiness3Title => 'รายงานรายเดือน';
-
-  @override
-  String get storyBusiness3Body => 'ทุกเดือนจะมีรายงานว่าอะไรยังใช้ได้ อะไรกำลังหมดอายุ และอะไรขาดหายไป';
-
-  @override
-  String get storyBusiness4Title => 'ขอการอัปเดต';
-
-  @override
-  String get storyBusiness4Body => 'ส่งลิงก์ แล้วพนักงานจะอัปโหลดเอกสารที่ต่ออายุแล้วเอง';
+  String get tourBusiness4Body => 'ส่งลิงก์ แล้วพนักงานจะอัปโหลดเอกสารที่ต่ออายุแล้วเอง';
 
   @override
   String get categoryHealthAndMedical => 'สุขภาพและการแพทย์';

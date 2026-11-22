@@ -13,6 +13,10 @@ import '../logic/import_columns.dart';
 import '../logic/import_csv_reader.dart';
 import 'import_labels.dart';
 import 'import_mapping_screen.dart';
+import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
+import 'package:vaultara/features/tutorials/view/tutorial_target.dart';
+import 'package:vaultara/features/tutorials/view/tutorial_hint.dart';
+import 'package:vaultara/features/tutorials/data/models/tutorial_ids.dart';
 
 class ImportScreen extends StatefulWidget {
   static const String routeName = '/csv-import';
@@ -154,6 +158,7 @@ class _ImportScreenState extends State<ImportScreen> {
             padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
             children: [
               ScreenHeader(title: loc.csvImportTitle),
+              const TutorialHint(id: TutorialIds.importScan),
               const SizedBox(height: 16),
               Container(
                 padding: const EdgeInsets.all(18),
@@ -199,21 +204,24 @@ class _ImportScreenState extends State<ImportScreen> {
                 ),
               ),
               const SizedBox(height: 20),
-              SizedBox(
-                height: 52,
-                child: FilledButton.icon(
-                  onPressed: _reading ? null : _chooseFile,
-                  icon: _reading
-                      ? SizedBox(
-                          width: 18,
-                          height: 18,
-                          child: CircularProgressIndicator(
-                            strokeWidth: 2.4,
-                            color: scheme.onPrimary,
-                          ),
-                        )
-                      : const Icon(Icons.upload_file_rounded),
-                  label: Text(loc.csvImportChooseFile),
+              TutorialTarget(
+                steps: const [TutorialStep.importList],
+                child: SizedBox(
+                  height: 52,
+                  child: FilledButton.icon(
+                    onPressed: _reading ? null : _chooseFile,
+                    icon: _reading
+                        ? SizedBox(
+                            width: 18,
+                            height: 18,
+                            child: CircularProgressIndicator(
+                              strokeWidth: 2.4,
+                              color: scheme.onPrimary,
+                            ),
+                          )
+                        : const Icon(Icons.upload_file_rounded),
+                    label: Text(loc.csvImportChooseFile),
+                  ),
                 ),
               ),
               const SizedBox(height: 12),

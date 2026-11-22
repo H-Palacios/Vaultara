@@ -16,6 +16,8 @@ import 'package:vaultara/features/assistant/logic/assistant_action_preview.dart'
 import 'package:vaultara/features/assistant/logic/assistant_navigator.dart';
 import 'package:vaultara/features/assistant/logic/assistant_step_label.dart';
 import 'package:vaultara/features/assistant/logic/assistant_suggestions.dart';
+import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
+import 'package:vaultara/features/tutorials/view/tutorial_target.dart';
 import 'package:vaultara/features/assistant/services/assistant_chat_store.dart';
 import 'package:vaultara/features/assistant/services/assistant_feedback_store.dart';
 import 'package:vaultara/features/assistant/services/assistant_run.dart';
@@ -1311,10 +1313,13 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
                                 onPressed: _busy ? null : _newChat,
                                 icon: const Icon(Icons.add_comment_outlined),
                               ),
-                            IconButton(
-                              tooltip: loc.assistantHistoryTitle,
-                              onPressed: _busy ? null : _openChats,
-                              icon: const Icon(Icons.menu_rounded),
+                            TutorialTarget(
+                              steps: const [TutorialStep.askHistory],
+                              child: IconButton(
+                                tooltip: loc.assistantHistoryTitle,
+                                onPressed: _busy ? null : _openChats,
+                                icon: const Icon(Icons.menu_rounded),
+                              ),
                             ),
                           ],
                         ),
@@ -1344,57 +1349,60 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
                       ),
               ),
               if (widget.isPremium)
-                Container(
-                  padding: const EdgeInsets.fromLTRB(12, 8, 12, 10),
-                  decoration: BoxDecoration(
-                    color: scheme.surface,
-                    border: Border(top: BorderSide(color: scheme.outlineVariant)),
-                  ),
-                  child: _talk
-                      ? AssistantTalkPanel(
-                          phase: _talkPhase,
-                          caption: _talkCaption,
-                          level: _voice.level,
-                          onOrb: _talkOrb,
-                          onEnd: _exitTalk,
-                          onPhoto: _talkPhoto,
-                        )
-                      : ValueListenableBuilder<bool>(
-                          valueListenable: _voice.open,
-                          builder: (context, listening, _) => AnimatedSize(
-                            duration: const Duration(milliseconds: 220),
-                            curve: Curves.easeOutCubic,
-                            alignment: Alignment.bottomCenter,
-                            child: AnimatedSwitcher(
+                TutorialTarget(
+                  steps: const [TutorialStep.askType, TutorialStep.askTalk],
+                  child: Container(
+                    padding: const EdgeInsets.fromLTRB(12, 8, 12, 10),
+                    decoration: BoxDecoration(
+                      color: scheme.surface,
+                      border: Border(top: BorderSide(color: scheme.outlineVariant)),
+                    ),
+                    child: _talk
+                        ? AssistantTalkPanel(
+                            phase: _talkPhase,
+                            caption: _talkCaption,
+                            level: _voice.level,
+                            onOrb: _talkOrb,
+                            onEnd: _exitTalk,
+                            onPhoto: _talkPhoto,
+                          )
+                        : ValueListenableBuilder<bool>(
+                            valueListenable: _voice.open,
+                            builder: (context, listening, _) => AnimatedSize(
                               duration: const Duration(milliseconds: 220),
-                              switchInCurve: Curves.easeOutCubic,
-                              switchOutCurve: Curves.easeInCubic,
-                              child: listening
-                                  ? AssistantVoicePanel(
-                                      key: const ValueKey<String>('voice'),
-                                      voice: _voice,
-                                      onCancel: _cancelVoice,
-                                      onConfirm: _sendVoice,
-                                      confirmLabel: loc.assistantSend,
-                                      confirmNeedsWords: true,
-                                      onEdit: _editVoice,
-                                      onChangeLanguage: _chooseVoiceLanguage,
-                                    )
-                                  : AssistantInputBar(
-                                      key: const ValueKey<String>('text'),
-                                      controller: _input,
-                                      focusNode: _focus,
-                                      busy: _busy || _loadingChat,
-                                      listening: listening,
-                                      hintText: loc.assistantHint,
-                                      onSend: () => _send(_input.text),
-                                      onMic: _toggleMic,
-                                      onPhoto: _takePhoto,
-                                      onStop: _busy ? _stop : null,
-                                    ),
+                              curve: Curves.easeOutCubic,
+                              alignment: Alignment.bottomCenter,
+                              child: AnimatedSwitcher(
+                                duration: const Duration(milliseconds: 220),
+                                switchInCurve: Curves.easeOutCubic,
+                                switchOutCurve: Curves.easeInCubic,
+                                child: listening
+                                    ? AssistantVoicePanel(
+                                        key: const ValueKey<String>('voice'),
+                                        voice: _voice,
+                                        onCancel: _cancelVoice,
+                                        onConfirm: _sendVoice,
+                                        confirmLabel: loc.assistantSend,
+                                        confirmNeedsWords: true,
+                                        onEdit: _editVoice,
+                                        onChangeLanguage: _chooseVoiceLanguage,
+                                      )
+                                    : AssistantInputBar(
+                                        key: const ValueKey<String>('text'),
+                                        controller: _input,
+                                        focusNode: _focus,
+                                        busy: _busy || _loadingChat,
+                                        listening: listening,
+                                        hintText: loc.assistantHint,
+                                        onSend: () => _send(_input.text),
+                                        onMic: _toggleMic,
+                                        onPhoto: _takePhoto,
+                                        onStop: _busy ? _stop : null,
+                                      ),
+                              ),
                             ),
                           ),
-                        ),
+                  ),
                 ),
             ],
           ),

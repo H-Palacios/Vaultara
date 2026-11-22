@@ -7785,290 +7785,262 @@ class AppLocalizationsNn extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => 'Flytting, baby, ny jobb eller ein naudsituasjon? Livshendingar gir deg ein plan med oppføringane, stega og datoane dine.';
 
   @override
-  String get storySampleQuestion => 'Kva går ut i år?';
+  String get tourHome1Title => 'Dagen din på eit blikk';
 
   @override
-  String storySampleAnswer(String name) {
-    return '$name går ut i mars. Vil du ha ei påminning ein månad før?';
-  }
+  String get tourHome1Body => 'Startskjermen viser det som betyr noko i dag: kva som snart går ut, og kor mange oppføringar du har.';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name går ut om 30 dagar. Trykk for å fornye.';
-  }
+  String get tourHome2Title => 'Finn alt';
 
   @override
-  String get storySampleGym => 'Treningsmedlemskap';
+  String get tourHome2Body => 'Trykk på søk for å finne ei oppføring etter namn, gruppe eller person.';
 
   @override
-  String get storySampleFirstAid => 'Førstehjelpsbevis';
+  String get tourHome3Title => 'Reiser og planar';
 
   @override
-  String get storySampleEncrypt => 'Krypter bilete';
+  String get tourHome3Body => 'Reiser du planlegg og pågåande planar for livshendingar blir viste her, med det som står att.';
 
   @override
-  String get storySampleAppLock => 'Applås';
+  String get tourHome4Title => 'Hjelp med eitt trykk';
 
   @override
-  String get storySampleHideApp => 'Skjul innhaldet i appvekslaren';
+  String get tourHome4Body => 'Gnistknappen opnar «Spør Vaultara». Biletet ditt opnar profilen, innstillingane og rettleiingane.';
 
   @override
-  String get storyHome1Title => 'Dagen din på eit blikk';
+  String get tourRenew1Title => 'Ei påminning kjem';
 
   @override
-  String get storyHome1Body => 'Startskjermen viser det som betyr noko i dag: kva som snart går ut, og kor mange oppføringar du har.';
+  String get tourRenew1Body => 'Før ei oppføring går ut, minner Vaultara deg på det. Trykk på påminninga for å opne oppføringa.';
 
   @override
-  String get storyHome2Title => 'Finn alt';
+  String get tourRenew2Title => 'Lagre den nye datoen';
 
   @override
-  String get storyHome2Body => 'Trykk på søk for å finne ei oppføring etter namn, gruppe eller person.';
+  String get tourRenew2Body => 'Fornya? Vel den nye utløpsdatoen her og lagre. Påminningane flyttar seg til den nye datoen.';
 
   @override
-  String get storyHome3Title => 'Reiser og planar';
+  String get tourRenew3Title => 'Usikker på korleis?';
 
   @override
-  String get storyHome3Body => 'Reiser du planlegg og pågåande planar for livshendingar blir viste her, med det som står att.';
+  String get tourRenew3Body => 'Mange oppføringar har ei sjekkliste for fornying. Spør Vaultara kan finne stega for landet ditt, med offisielle lenkjer.';
 
   @override
-  String get storyHome4Title => 'Hjelp med eitt trykk';
+  String get tourRenew4Title => 'La ho gjentakast';
 
   @override
-  String get storyHome4Body => 'Gnistknappen opnar «Spør Vaultara». Biletet ditt opnar profilen, innstillingane og rettleiingane.';
+  String get tourRenew4Body => 'For abonnement og årlege betalingar slår du på Blir fornya av seg sjølv, så flyttar datoen seg fram av seg sjølv.';
 
   @override
-  String get storyRenew1Title => 'Ei påminning kjem';
+  String get tourAsk1Title => 'Spør med eigne ord';
 
   @override
-  String get storyRenew1Body => 'Før ei oppføring går ut, minner Vaultara deg på det. Trykk på påminninga for å opne oppføringa.';
+  String get tourAsk1Body => 'Spør til dømes «Kva går ut i år?» og få svar frå dine eigne oppføringar.';
 
   @override
-  String get storyRenew2Title => 'Lagre den nye datoen';
+  String get tourAsk2Title => 'Snakk i staden for å skrive';
 
   @override
-  String get storyRenew2Body => 'Fornya? Trykk på «Forny» og skriv inn den nye utløpsdatoen. Påminningane flyttar seg med.';
+  String get tourAsk2Body => 'Trykk på mikrofonen og snakk. Orda blir viste medan du snakkar, og du kan sende med ein gong.';
 
   @override
-  String get storyRenew3Title => 'Usikker på korleis?';
+  String get tourAsk3Title => 'Du stadfestar kvar endring';
 
   @override
-  String get storyRenew3Body => 'Mange oppføringar har ei sjekkliste for fornying. Spør Vaultara kan finne stega for landet ditt, med offisielle lenkjer.';
+  String get tourAsk3Body => 'Be om å leggje til eller endre ei oppføring, så ser du først eit kort. Ingenting blir lagra før du stadfestar.';
 
   @override
-  String get storyRenew4Title => 'La ho gjentakast';
+  String get tourAsk4Title => 'Angre kva endring som helst';
 
   @override
-  String get storyRenew4Body => 'For abonnement og årlege betalingar slår du på Blir fornya av seg sjølv, så flyttar datoen seg fram av seg sjølv.';
+  String get tourAsk4Body => 'Ombestemt deg? Kvar stadfesta endring kan angrast frå same kort.';
 
   @override
-  String get storyAsk1Title => 'Spør med eigne ord';
+  String get tourAsk5Title => 'Hald fram der du slapp';
 
   @override
-  String get storyAsk1Body => 'Spør til dømes «Kva går ut i år?» og få svar frå dine eigne oppføringar.';
+  String get tourAsk5Body => 'Samtalar blir lagra i 90 dagar i «Samtalehistorikk», og foreslåtte spørsmål hjelper deg i gang.';
 
   @override
-  String get storyAsk2Title => 'Snakk i staden for å skrive';
+  String get tourAsk6Title => 'Meir enn oppføringar';
 
   @override
-  String get storyAsk2Body => 'Trykk på mikrofonen og snakk. Orda blir viste medan du snakkar, og du kan sende med ein gong.';
+  String get tourAsk6Body => 'Den kan òg planleggje reiser, leggje til personar, finne fornyingsstega for landet ditt og dele oppføringar, med lenkjer til offisielle sider.';
 
   @override
-  String get storyAsk3Title => 'Du stadfestar kvar endring';
+  String get tourWallet1Title => 'Gjer deg klar først';
 
   @override
-  String get storyAsk3Body => 'Be om å leggje til eller endre ei oppføring, så ser du først eit kort. Ingenting blir lagra før du stadfestar.';
+  String get tourWallet1Body => 'Opne eit kort eller dokument, og vel kvar du har det, til dømes lommeboka eller veska.';
 
   @override
-  String get storyAsk4Title => 'Angre kva endring som helst';
+  String get tourWallet2Title => 'Lagre sperrenummeret';
 
   @override
-  String get storyAsk4Body => 'Ombestemt deg? Kvar stadfesta endring kan angrast frå same kort.';
+  String get tourWallet2Body => 'Legg til sperrenummeret til kvar bank no. Det står på kortet, som er borte når du treng det.';
 
   @override
-  String get storyAsk5Title => 'Hald fram der du slapp';
+  String get tourWallet3Title => 'Om han forsvinn';
 
   @override
-  String get storyAsk5Body => 'Samtalar blir lagra i 90 dagar i «Samtalehistorikk», og foreslåtte spørsmål hjelper deg i gang.';
+  String get tourWallet3Body => 'Om lommeboka di forsvinn, trykk her på knappen som passar. Vaultara viser alt som var i henne, så du veit kva du må sperre.';
 
   @override
-  String get storyAsk6Title => 'Meir enn oppføringar';
+  String get tourWallet4Title => 'Sperr kort på minutt';
 
   @override
-  String get storyAsk6Body => 'Den kan òg planleggje reiser, leggje til personar, finne fornyingsstega for landet ditt og dele oppføringar, med lenkjer til offisielle sider.';
+  String get tourWallet4Body => 'Ring kvar bank med eitt trykk, merk kort som sperra, og lagre meldingsnummeret frå politiet.';
 
   @override
-  String get storyWallet1Title => 'Gjer deg klar først';
+  String get tourWallet5Title => 'Erstatt og ver trygg';
 
   @override
-  String get storyWallet1Body => 'Opne eit kort eller dokument, og vel kvar du har det, til dømes lommeboka eller veska.';
+  String get tourWallet5Body => 'Erstatt dokumenta, sjekk kontoutskriftene når du blir minna på det, og trykk på «Eg fann ho» om ho dukkar opp.';
 
   @override
-  String get storyWallet2Title => 'Lagre sperrenummeret';
+  String get tourLife1Title => 'Store augneblink, éin plan';
 
   @override
-  String get storyWallet2Body => 'Legg til sperrenummeret til kvar bank no. Det står på kortet, som er borte når du treng det.';
+  String get tourLife1Body => 'Flytting, baby, ny jobb eller ein naudsituasjon: vel i «Livshendingar» kva som skjer.';
 
   @override
-  String get storyWallet3Title => 'Om han forsvinn';
+  String get tourLife2Title => 'Oppføringane dine i orden';
 
   @override
-  String get storyWallet3Body => 'Opne Mista eller stolen og trykk på Mista eller Stolen. Vaultara viser alt som var inni.';
+  String get tourLife2Body => 'Planen viser kva oppføringar du skal oppdatere, seie opp eller fornye, og kva du kanskje bør leggje til.';
 
   @override
-  String get storyWallet4Title => 'Sperr kort på minutt';
+  String get tourLife3Title => 'Steg og datoar';
 
   @override
-  String get storyWallet4Body => 'Ring kvar bank med eitt trykk, merk kort som sperra, og lagre meldingsnummeret frå politiet.';
+  String get tourLife3Body => 'Kvar plan har også steg som ikkje er oppføringar, og startdatoar som fortel når du må søkje, så ingenting blir for seint.';
 
   @override
-  String get storyWallet5Title => 'Erstatt og ver trygg';
+  String get tourLife4Title => 'Gjer han til din';
 
   @override
-  String get storyWallet5Body => 'Erstatt dokumenta, sjekk kontoutskriftene når du blir minna på det, og trykk på «Eg fann ho» om ho dukkar opp.';
+  String get tourLife4Body => 'Legg til eigne steg, del planen som PDF, og få påminningar rundt datoen.';
 
   @override
-  String get storyLife1Title => 'Store augneblink, éin plan';
+  String get tourPhotos1Title => 'Bilete av dokumenta dine';
 
   @override
-  String get storyLife1Body => 'Flytting, baby, ny jobb eller ein naudsituasjon: vel i «Livshendingar» kva som skjer.';
+  String get tourPhotos1Body => 'Legg til bilete av fram- og baksida av eit kort eller dokument frå oppføringa.';
 
   @override
-  String get storyLife2Title => 'Oppføringane dine i orden';
+  String get tourPhotos2Title => 'Kryptert på telefonen';
 
   @override
-  String get storyLife2Body => 'Planen viser kva oppføringar du skal oppdatere, seie opp eller fornye, og kva du kanskje bør leggje til.';
+  String get tourPhotos2Body => 'Slå på biletkryptering, så blir bileta låste på telefonen før dei blir lasta opp.';
 
   @override
-  String get storyLife3Title => 'Steg og datoar';
+  String get tourPhotos3Title => 'Lås sensitive oppføringar';
 
   @override
-  String get storyLife3Body => 'Steg dekkjer det som ikkje er ei oppføring, og startdatoar fortel når du må søkje, så ingenting blir for seint.';
+  String get tourPhotos3Body => 'Lås ei oppføring, så ber ho om fingeravtrykk eller skjermlås før ho blir opna.';
 
   @override
-  String get storyLife4Title => 'Gjer han til din';
+  String get tourPhotos4Title => 'Lås heile appen';
 
   @override
-  String get storyLife4Body => 'Legg til eigne steg, del planen som PDF, og få påminningar rundt datoen.';
+  String get tourPhotos4Body => 'Slå på applås i tryggleiksinnstillingane, og skjul innhaldet når du byter app.';
 
   @override
-  String get storyPhotos1Title => 'Bilete av dokumenta dine';
+  String get tourShare1Title => 'Del éi oppføring';
 
   @override
-  String get storyPhotos1Body => 'Legg til bilete av fram- og baksida av eit kort eller dokument frå oppføringa.';
+  String get tourShare1Body => 'Opne ei oppføring og del ei lenkje som berre viser den oppføringa, ingenting anna.';
 
   @override
-  String get storyPhotos2Title => 'Kryptert på telefonen';
+  String get tourShare2Title => 'Dokumentpakke';
 
   @override
-  String get storyPhotos2Body => 'Slå på biletkryptering, så blir bileta låste på telefonen før dei blir lasta opp.';
+  String get tourShare2Body => 'Samle oppføringane du vel, med bilete, i éin PDF til ein utleigar, bank eller etat.';
 
   @override
-  String get storyPhotos3Title => 'Lås sensitive oppføringar';
+  String get tourShare3Title => 'Behald kontrollen';
 
   @override
-  String get storyPhotos3Body => 'Lås ei oppføring, så ber ho om fingeravtrykk eller skjermlås før ho blir opna.';
+  String get tourShare3Body => '«Delte lenkjer» viser kvar lenkje du har laga. Stopp ei når som helst, så blir ho ikkje opna lenger.';
 
   @override
-  String get storyPhotos4Title => 'Lås heile appen';
+  String get tourHousehold1Title => 'Inviter hushaldet ditt';
 
   @override
-  String get storyPhotos4Body => 'Slå på applås i tryggleiksinnstillingane, og skjul innhaldet når du byter app.';
+  String get tourHousehold1Body => 'Del ein invitasjonskode eller ei lenkje. Kvar person loggar inn med sin eigen konto.';
 
   @override
-  String get storyShare1Title => 'Del éi oppføring';
+  String get tourHousehold2Title => 'Eitt sett oppføringar';
 
   @override
-  String get storyShare1Body => 'Opne ei oppføring og del ei lenkje som berre viser den oppføringa, ingenting anna.';
+  String get tourHousehold2Body => 'Alle ser dei same delte oppføringane og får dei same påminningane.';
 
   @override
-  String get storyShare2Title => 'Dokumentpakke';
+  String get tourHousehold3Title => 'Kven høyrer ho til?';
 
   @override
-  String get storyShare2Body => 'Samle oppføringane du vel, med bilete, i éin PDF til ein utleigar, bank eller etat.';
+  String get tourHousehold3Body => 'Kvar oppføring kan høyre til nokon. Namnet blir vist på oppføringa og i påminningane.';
 
   @override
-  String get storyShare3Title => 'Behald kontrollen';
+  String get tourImport1Title => 'Skann eit kort';
 
   @override
-  String get storyShare3Body => '«Delte lenkjer» viser kvar lenkje du har laga. Stopp ei når som helst, så blir ho ikkje opna lenger.';
+  String get tourImport1Body => 'Ta eit bilete av eit kort eller dokument, så fyller Vaultara inn namn og utløpsdato for deg.';
 
   @override
-  String get storyHousehold1Title => 'Inviter hushaldet ditt';
+  String get tourImport2Title => 'Importer ei liste';
 
   @override
-  String get storyHousehold1Body => 'Del ein invitasjonskode eller ei lenkje. Kvar person loggar inn med sin eigen konto.';
+  String get tourImport2Body => 'Har du alt eit rekneark? Importer det og sjå over kvar rad før noko blir lagra.';
 
   @override
-  String get storyHousehold2Title => 'Eitt sett oppføringar';
+  String get tourImport3Title => 'Del til Vaultara';
 
   @override
-  String get storyHousehold2Body => 'Alle ser dei same delte oppføringane og får dei same påminningane.';
+  String get tourImport3Body => 'Del eit bilete, ein PDF eller tekst frå ein annan app til Vaultara for å starte ei ny oppføring.';
 
   @override
-  String get storyHousehold3Title => 'Kven høyrer ho til?';
+  String get tourCosts1Title => 'I kalenderen din';
 
   @override
-  String get storyHousehold3Body => 'Kvar oppføring kan høyre til nokon. Namnet blir vist på oppføringa og i påminningane.';
+  String get tourCosts1Body => 'Legg utløpsdatoar i kalenderen på telefonen, ved sida av dei andre planane dine.';
 
   @override
-  String get storyImport1Title => 'Skann eit kort';
+  String get tourCosts2Title => 'Kva fornyingar kostar';
 
   @override
-  String get storyImport1Body => 'Ta eit bilete av eit kort eller dokument, så fyller Vaultara inn namn og utløpsdato for deg.';
+  String get tourCosts2Body => 'Skriv inn kva ei fornying kostar i ei oppføring, så viser Vaultara kva du brukar i året.';
 
   @override
-  String get storyImport2Title => 'Importer ei liste';
+  String get tourCosts3Title => 'Planlegg i god tid';
 
   @override
-  String get storyImport2Body => 'Har du alt eit rekneark? Importer det og sjå over kvar rad før noko blir lagra.';
+  String get tourCosts3Body => 'Sjå dei dyre månadene kome, så ei stor fornying aldri overraskar deg.';
 
   @override
-  String get storyImport3Title => 'Del til Vaultara';
+  String get tourBusiness1Title => 'Følg teamet ditt';
 
   @override
-  String get storyImport3Body => 'Del eit bilete, ein PDF eller tekst frå ein annan app til Vaultara for å starte ei ny oppføring.';
+  String get tourBusiness1Body => 'Legg til tilsette, og samle sertifikat, løyve og lisensar på éin stad.';
 
   @override
-  String get storyCosts1Title => 'I kalenderen din';
+  String get tourBusiness2Title => 'Påminningar på e-post';
 
   @override
-  String get storyCosts1Body => 'Legg utløpsdatoar i kalenderen på telefonen, ved sida av dei andre planane dine.';
+  String get tourBusiness2Body => 'Tilsette får e-post før dokumenta deira går ut, òg utan appen.';
 
   @override
-  String get storyCosts2Title => 'Kva fornyingar kostar';
+  String get tourBusiness3Title => 'Månadsrapport';
 
   @override
-  String get storyCosts2Body => 'Skriv inn kva ei fornying kostar i ei oppføring, så viser Vaultara kva du brukar i året.';
+  String get tourBusiness3Body => 'Kvar månad viser ein rapport kva som er gyldig, kva som går ut, og kva som manglar.';
 
   @override
-  String get storyCosts3Title => 'Planlegg i god tid';
+  String get tourBusiness4Title => 'Be om ei oppdatering';
 
   @override
-  String get storyCosts3Body => 'Sjå dei dyre månadene kome, så ei stor fornying aldri overraskar deg.';
-
-  @override
-  String get storyBusiness1Title => 'Følg teamet ditt';
-
-  @override
-  String get storyBusiness1Body => 'Legg til tilsette, og samle sertifikat, løyve og lisensar på éin stad.';
-
-  @override
-  String get storyBusiness2Title => 'Påminningar på e-post';
-
-  @override
-  String get storyBusiness2Body => 'Tilsette får e-post før dokumenta deira går ut, òg utan appen.';
-
-  @override
-  String get storyBusiness3Title => 'Månadsrapport';
-
-  @override
-  String get storyBusiness3Body => 'Kvar månad viser ein rapport kva som er gyldig, kva som går ut, og kva som manglar.';
-
-  @override
-  String get storyBusiness4Title => 'Be om ei oppdatering';
-
-  @override
-  String get storyBusiness4Body => 'Send ei lenkje, så lastar dei tilsette sjølve opp det fornya dokumentet.';
+  String get tourBusiness4Body => 'Send ei lenkje, så lastar dei tilsette sjølve opp det fornya dokumentet.';
 
   @override
   String get categoryHealthAndMedical => 'Helse og medisinsk';

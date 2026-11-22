@@ -7928,290 +7928,262 @@ class AppLocalizationsUk extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => 'Переїзд, дитина, нова робота чи надзвичайна ситуація? «Життєві події» дадуть план із вашими записами, кроками й датами.';
 
   @override
-  String get storySampleQuestion => 'Що спливає цього року?';
+  String get tourHome1Title => 'Ваш день з одного погляду';
 
   @override
-  String storySampleAnswer(String name) {
-    return 'Ваш $name спливає в березні. Нагадати за місяць?';
-  }
+  String get tourHome1Body => 'Головний екран показує, що важливо сьогодні: що скоро спливає і скільки у вас записів.';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name спливає за 30 днів. Торкніться, щоб поновити.';
-  }
+  String get tourHome2Title => 'Знайдіть що завгодно';
 
   @override
-  String get storySampleGym => 'Абонемент у спортзал';
+  String get tourHome2Body => 'Торкніться пошуку, щоб знайти запис за назвою, групою чи людиною.';
 
   @override
-  String get storySampleFirstAid => 'Сертифікат з першої допомоги';
+  String get tourHome3Title => 'Подорожі та плани';
 
   @override
-  String get storySampleEncrypt => 'Шифрувати фото';
+  String get tourHome3Body => 'Тут з\'являються заплановані подорожі та поточні плани життєвих подій із тим, що залишилося.';
 
   @override
-  String get storySampleAppLock => 'Блокування застосунку';
+  String get tourHome4Title => 'Допомога в один дотик';
 
   @override
-  String get storySampleHideApp => 'Приховувати вміст під час перемикання застосунків';
+  String get tourHome4Body => 'Кнопка з іскрою відкриває «Запитати Vaultara». Ваше фото відкриває профіль, налаштування й навчання.';
 
   @override
-  String get storyHome1Title => 'Ваш день з одного погляду';
+  String get tourRenew1Title => 'Надходить нагадування';
 
   @override
-  String get storyHome1Body => 'Головний екран показує, що важливо сьогодні: що скоро спливає і скільки у вас записів.';
+  String get tourRenew1Body => 'Перш ніж спливе термін запису, Vaultara нагадає вам. Торкніться нагадування, щоб відкрити запис.';
 
   @override
-  String get storyHome2Title => 'Знайдіть що завгодно';
+  String get tourRenew2Title => 'Збережіть нову дату';
 
   @override
-  String get storyHome2Body => 'Торкніться пошуку, щоб знайти запис за назвою, групою чи людиною.';
+  String get tourRenew2Body => 'Поновили? Виберіть тут нову дату закінчення й збережіть. Нагадування перейдуть на нову дату.';
 
   @override
-  String get storyHome3Title => 'Подорожі та плани';
+  String get tourRenew3Title => 'Не знаєте як?';
 
   @override
-  String get storyHome3Body => 'Тут з\'являються заплановані подорожі та поточні плани життєвих подій із тим, що залишилося.';
+  String get tourRenew3Body => 'Багато записів мають список для продовження. Запитати Vaultara знайде кроки для вашої країни з офіційними посиланнями.';
 
   @override
-  String get storyHome4Title => 'Допомога в один дотик';
+  String get tourRenew4Title => 'Нехай повторюється';
 
   @override
-  String get storyHome4Body => 'Кнопка з іскрою відкриває «Запитати Vaultara». Ваше фото відкриває профіль, налаштування й навчання.';
+  String get tourRenew4Body => 'Для підписок і щорічних платежів увімкніть Поновлюється саме, і дата сама зсуватиметься вперед.';
 
   @override
-  String get storyRenew1Title => 'Надходить нагадування';
+  String get tourAsk1Title => 'Питайте своїми словами';
 
   @override
-  String get storyRenew1Body => 'Перш ніж спливе термін запису, Vaultara нагадає вам. Торкніться нагадування, щоб відкрити запис.';
+  String get tourAsk1Body => 'Запитайте, наприклад: «Що спливає цього року?» — і отримайте відповіді з власних записів.';
 
   @override
-  String get storyRenew2Title => 'Збережіть нову дату';
+  String get tourAsk2Title => 'Говоріть замість набору';
 
   @override
-  String get storyRenew2Body => 'Поновили? Торкніться «Продовжити» і введіть новий термін. Нагадування зсунуться разом із ним.';
+  String get tourAsk2Body => 'Торкніться мікрофона й говоріть. Слова з\'являються під час мовлення, і надіслати можна одразу.';
 
   @override
-  String get storyRenew3Title => 'Не знаєте як?';
+  String get tourAsk3Title => 'Кожну зміну підтверджуєте ви';
 
   @override
-  String get storyRenew3Body => 'Багато записів мають список для продовження. Запитати Vaultara знайде кроки для вашої країни з офіційними посиланнями.';
+  String get tourAsk3Body => 'Попросіть додати чи змінити запис, і спершу ви побачите картку. Нічого не збережеться без вашого підтвердження.';
 
   @override
-  String get storyRenew4Title => 'Нехай повторюється';
+  String get tourAsk4Title => 'Скасування будь-якої зміни';
 
   @override
-  String get storyRenew4Body => 'Для підписок і щорічних платежів увімкніть Поновлюється саме, і дата сама зсуватиметься вперед.';
+  String get tourAsk4Body => 'Передумали? Будь-яку підтверджену зміну можна скасувати з тієї самої картки.';
 
   @override
-  String get storyAsk1Title => 'Питайте своїми словами';
+  String get tourAsk5Title => 'Продовжуйте з того ж місця';
 
   @override
-  String get storyAsk1Body => 'Запитайте, наприклад: «Що спливає цього року?» — і отримайте відповіді з власних записів.';
+  String get tourAsk5Body => 'Чати зберігаються 90 днів у розділі «Історія чатів», а запропоновані запитання допоможуть почати.';
 
   @override
-  String get storyAsk2Title => 'Говоріть замість набору';
+  String get tourAsk6Title => 'Більше ніж записи';
 
   @override
-  String get storyAsk2Body => 'Торкніться мікрофона й говоріть. Слова з\'являються під час мовлення, і надіслати можна одразу.';
+  String get tourAsk6Body => 'Він також може планувати поїздки, додавати людей, знаходити кроки продовження для вашої країни та ділитися записами, з посиланнями на офіційні сторінки.';
 
   @override
-  String get storyAsk3Title => 'Кожну зміну підтверджуєте ви';
+  String get tourWallet1Title => 'Підготуйтеся заздалегідь';
 
   @override
-  String get storyAsk3Body => 'Попросіть додати чи змінити запис, і спершу ви побачите картку. Нічого не збережеться без вашого підтвердження.';
+  String get tourWallet1Body => 'Відкрийте картку чи документ і вкажіть, де він лежить, наприклад у гаманці чи сумці.';
 
   @override
-  String get storyAsk4Title => 'Скасування будь-якої зміни';
+  String get tourWallet2Title => 'Збережіть номер блокування';
 
   @override
-  String get storyAsk4Body => 'Передумали? Будь-яку підтверджену зміну можна скасувати з тієї самої картки.';
+  String get tourWallet2Body => 'Додайте номер блокування кожного банку зараз. Він є на картці, а її не буде, коли він знадобиться.';
 
   @override
-  String get storyAsk5Title => 'Продовжуйте з того ж місця';
+  String get tourWallet3Title => 'Якщо він зник';
 
   @override
-  String get storyAsk5Body => 'Чати зберігаються 90 днів у розділі «Історія чатів», а запропоновані запитання допоможуть почати.';
+  String get tourWallet3Body => 'Якщо гаманець зник, торкніться тут відповідної кнопки. Vaultara покаже все, що було всередині, щоб ви знали, що заблокувати.';
 
   @override
-  String get storyAsk6Title => 'Більше ніж записи';
+  String get tourWallet4Title => 'Блокуйте картки за хвилини';
 
   @override
-  String get storyAsk6Body => 'Він також може планувати поїздки, додавати людей, знаходити кроки продовження для вашої країни та ділитися записами, з посиланнями на офіційні сторінки.';
+  String get tourWallet4Body => 'Телефонуйте до кожного банку одним дотиком, позначайте картки як заблоковані та збережіть номер заяви.';
 
   @override
-  String get storyWallet1Title => 'Підготуйтеся заздалегідь';
+  String get tourWallet5Title => 'Замініть і будьте в безпеці';
 
   @override
-  String get storyWallet1Body => 'Відкрийте картку чи документ і вкажіть, де він лежить, наприклад у гаманці чи сумці.';
+  String get tourWallet5Body => 'Відновіть документи, перевіряйте виписки за нагадуванням і торкніться «Я його знайшов», якщо він знайдеться.';
 
   @override
-  String get storyWallet2Title => 'Збережіть номер блокування';
+  String get tourLife1Title => 'Важливі моменти — один план';
 
   @override
-  String get storyWallet2Body => 'Додайте номер блокування кожного банку зараз. Він є на картці, а її не буде, коли він знадобиться.';
+  String get tourLife1Body => 'Переїзд, дитина, нова робота чи надзвичайна ситуація: виберіть у «Життєві події», що відбувається.';
 
   @override
-  String get storyWallet3Title => 'Якщо він зник';
+  String get tourLife2Title => 'Ваші записи в порядку';
 
   @override
-  String get storyWallet3Body => 'Відкрийте «Загублено або вкрадено» й натисніть «Загублено» або «Вкрадено». Vaultara покаже все, що було всередині.';
+  String get tourLife2Body => 'План показує, які записи оновити, скасувати чи поновити, а які, можливо, варто додати.';
 
   @override
-  String get storyWallet4Title => 'Блокуйте картки за хвилини';
+  String get tourLife3Title => 'Кроки й дати';
 
   @override
-  String get storyWallet4Body => 'Телефонуйте до кожного банку одним дотиком, позначайте картки як заблоковані та збережіть номер заяви.';
+  String get tourLife3Body => 'У кожному плані є й кроки, які не є записами, і дати початку, які підкажуть, коли подавати заяву, щоб нічого не запізнилося.';
 
   @override
-  String get storyWallet5Title => 'Замініть і будьте в безпеці';
+  String get tourLife4Title => 'Зробіть його своїм';
 
   @override
-  String get storyWallet5Body => 'Відновіть документи, перевіряйте виписки за нагадуванням і торкніться «Я його знайшов», якщо він знайдеться.';
+  String get tourLife4Body => 'Додавайте власні кроки, діліться планом у PDF і отримуйте нагадування ближче до дати.';
 
   @override
-  String get storyLife1Title => 'Важливі моменти — один план';
+  String get tourPhotos1Title => 'Фото ваших документів';
 
   @override
-  String get storyLife1Body => 'Переїзд, дитина, нова робота чи надзвичайна ситуація: виберіть у «Життєві події», що відбувається.';
+  String get tourPhotos1Body => 'У записі додайте фото лицьового та зворотного боку картки чи документа.';
 
   @override
-  String get storyLife2Title => 'Ваші записи в порядку';
+  String get tourPhotos2Title => 'Зашифровано на телефоні';
 
   @override
-  String get storyLife2Body => 'План показує, які записи оновити, скасувати чи поновити, а які, можливо, варто додати.';
+  String get tourPhotos2Body => 'Увімкніть шифрування фото, і вони будуть захищені на телефоні ще до завантаження.';
 
   @override
-  String get storyLife3Title => 'Кроки й дати';
+  String get tourPhotos3Title => 'Блокуйте важливі записи';
 
   @override
-  String get storyLife3Body => 'Кроки охоплюють те, що не є записом, а дати початку підкажуть, коли подавати заяви, щоб нічого не запізнилося.';
+  String get tourPhotos3Body => 'Заблокуйте запис, і перед відкриттям він запитає відбиток пальця чи блокування екрана.';
 
   @override
-  String get storyLife4Title => 'Зробіть його своїм';
+  String get tourPhotos4Title => 'Блокуйте весь застосунок';
 
   @override
-  String get storyLife4Body => 'Додавайте власні кроки, діліться планом у PDF і отримуйте нагадування ближче до дати.';
+  String get tourPhotos4Body => 'У налаштуваннях безпеки увімкніть блокування застосунку та приховуйте вміст під час перемикання.';
 
   @override
-  String get storyPhotos1Title => 'Фото ваших документів';
+  String get tourShare1Title => 'Поділіться одним записом';
 
   @override
-  String get storyPhotos1Body => 'У записі додайте фото лицьового та зворотного боку картки чи документа.';
+  String get tourShare1Body => 'Відкрийте запис і поділіться посиланням, яке показує лише цей запис і нічого більше.';
 
   @override
-  String get storyPhotos2Title => 'Зашифровано на телефоні';
+  String get tourShare2Title => 'Пакет підтверджень';
 
   @override
-  String get storyPhotos2Body => 'Увімкніть шифрування фото, і вони будуть захищені на телефоні ще до завантаження.';
+  String get tourShare2Body => 'Зберіть вибрані записи з фото в один PDF для орендодавця, банку чи установи.';
 
   @override
-  String get storyPhotos3Title => 'Блокуйте важливі записи';
+  String get tourShare3Title => 'Усе під вашим контролем';
 
   @override
-  String get storyPhotos3Body => 'Заблокуйте запис, і перед відкриттям він запитає відбиток пальця чи блокування екрана.';
+  String get tourShare3Body => 'У розділі «Спільні посилання» видно кожне створене посилання. Вимкніть будь-яке будь-коли, і воно перестане відкриватися.';
 
   @override
-  String get storyPhotos4Title => 'Блокуйте весь застосунок';
+  String get tourHousehold1Title => 'Запросіть домашніх';
 
   @override
-  String get storyPhotos4Body => 'У налаштуваннях безпеки увімкніть блокування застосунку та приховуйте вміст під час перемикання.';
+  String get tourHousehold1Body => 'Поділіться кодом чи посиланням-запрошенням. Кожен входить у власний обліковий запис.';
 
   @override
-  String get storyShare1Title => 'Поділіться одним записом';
+  String get tourHousehold2Title => 'Один набір записів';
 
   @override
-  String get storyShare1Body => 'Відкрийте запис і поділіться посиланням, яке показує лише цей запис і нічого більше.';
+  String get tourHousehold2Body => 'Усі бачать ті самі спільні записи й отримують ті самі нагадування.';
 
   @override
-  String get storyShare2Title => 'Пакет підтверджень';
+  String get tourHousehold3Title => 'Чий це запис?';
 
   @override
-  String get storyShare2Body => 'Зберіть вибрані записи з фото в один PDF для орендодавця, банку чи установи.';
+  String get tourHousehold3Body => 'Кожен запис може належати комусь. Ім\'я власника видно в записі та нагадуваннях.';
 
   @override
-  String get storyShare3Title => 'Усе під вашим контролем';
+  String get tourImport1Title => 'Скануйте картку';
 
   @override
-  String get storyShare3Body => 'У розділі «Спільні посилання» видно кожне створене посилання. Вимкніть будь-яке будь-коли, і воно перестане відкриватися.';
+  String get tourImport1Body => 'Сфотографуйте картку чи документ, і Vaultara заповнить назву й термін дії за вас.';
 
   @override
-  String get storyHousehold1Title => 'Запросіть домашніх';
+  String get tourImport2Title => 'Імпортуйте список';
 
   @override
-  String get storyHousehold1Body => 'Поділіться кодом чи посиланням-запрошенням. Кожен входить у власний обліковий запис.';
+  String get tourImport2Body => 'Уже ведете таблицю? Імпортуйте її та перевірте кожен рядок перед збереженням.';
 
   @override
-  String get storyHousehold2Title => 'Один набір записів';
+  String get tourImport3Title => 'Поділіться у Vaultara';
 
   @override
-  String get storyHousehold2Body => 'Усі бачать ті самі спільні записи й отримують ті самі нагадування.';
+  String get tourImport3Body => 'Надішліть фото, PDF чи текст з іншого застосунку у Vaultara, щоб почати новий запис.';
 
   @override
-  String get storyHousehold3Title => 'Чий це запис?';
+  String get tourCosts1Title => 'У вашому календарі';
 
   @override
-  String get storyHousehold3Body => 'Кожен запис може належати комусь. Ім\'я власника видно в записі та нагадуваннях.';
+  String get tourCosts1Body => 'Додайте терміни до календаря телефона поруч з іншими планами.';
 
   @override
-  String get storyImport1Title => 'Скануйте картку';
+  String get tourCosts2Title => 'Скільки коштують поновлення';
 
   @override
-  String get storyImport1Body => 'Сфотографуйте картку чи документ, і Vaultara заповнить назву й термін дії за вас.';
+  String get tourCosts2Body => 'Вкажіть вартість поновлення в записі, і Vaultara покаже, скільки ви витрачаєте за рік.';
 
   @override
-  String get storyImport2Title => 'Імпортуйте список';
+  String get tourCosts3Title => 'Плануйте заздалегідь';
 
   @override
-  String get storyImport2Body => 'Уже ведете таблицю? Імпортуйте її та перевірте кожен рядок перед збереженням.';
+  String get tourCosts3Body => 'Бачте дорогі місяці наперед, щоб велике поновлення ніколи не заскочило вас.';
 
   @override
-  String get storyImport3Title => 'Поділіться у Vaultara';
+  String get tourBusiness1Title => 'Стежте за командою';
 
   @override
-  String get storyImport3Body => 'Надішліть фото, PDF чи текст з іншого застосунку у Vaultara, щоб почати новий запис.';
+  String get tourBusiness1Body => 'Додайте працівників і зберігайте їхні сертифікати, дозволи та ліцензії в одному місці.';
 
   @override
-  String get storyCosts1Title => 'У вашому календарі';
+  String get tourBusiness2Title => 'Нагадування поштою';
 
   @override
-  String get storyCosts1Body => 'Додайте терміни до календаря телефона поруч з іншими планами.';
+  String get tourBusiness2Body => 'Працівники отримують листи до закінчення терміну документів, навіть без застосунку.';
 
   @override
-  String get storyCosts2Title => 'Скільки коштують поновлення';
+  String get tourBusiness3Title => 'Щомісячний звіт';
 
   @override
-  String get storyCosts2Body => 'Вкажіть вартість поновлення в записі, і Vaultara покаже, скільки ви витрачаєте за рік.';
+  String get tourBusiness3Body => 'Щомісяця звіт показує, що чинне, що спливає і чого бракує.';
 
   @override
-  String get storyCosts3Title => 'Плануйте заздалегідь';
+  String get tourBusiness4Title => 'Попросіть оновлення';
 
   @override
-  String get storyCosts3Body => 'Бачте дорогі місяці наперед, щоб велике поновлення ніколи не заскочило вас.';
-
-  @override
-  String get storyBusiness1Title => 'Стежте за командою';
-
-  @override
-  String get storyBusiness1Body => 'Додайте працівників і зберігайте їхні сертифікати, дозволи та ліцензії в одному місці.';
-
-  @override
-  String get storyBusiness2Title => 'Нагадування поштою';
-
-  @override
-  String get storyBusiness2Body => 'Працівники отримують листи до закінчення терміну документів, навіть без застосунку.';
-
-  @override
-  String get storyBusiness3Title => 'Щомісячний звіт';
-
-  @override
-  String get storyBusiness3Body => 'Щомісяця звіт показує, що чинне, що спливає і чого бракує.';
-
-  @override
-  String get storyBusiness4Title => 'Попросіть оновлення';
-
-  @override
-  String get storyBusiness4Body => 'Надішліть посилання, і працівник сам завантажить поновлений документ.';
+  String get tourBusiness4Body => 'Надішліть посилання, і працівник сам завантажить поновлений документ.';
 
   @override
   String get categoryHealthAndMedical => 'Здоров\'я і медицина';

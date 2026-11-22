@@ -27,6 +27,7 @@ import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
+import 'package:vaultara/features/tutorials/view/tutorial_target.dart';
 
 enum _PersonAction { rename, nationality, residence, remove }
 
@@ -50,14 +51,16 @@ class _FamilyScreenState extends State<FamilyScreen> {
     NationalityRepository.start();
     TutorialController.instance
       ..register(TutorialStep.familyMe, _meKey)
-      ..register(TutorialStep.familyAddPerson, _addKey);
+      ..register(TutorialStep.familyAddPerson, _addKey)
+      ..register(TutorialStep.businessTeam, _addKey);
   }
 
   @override
   void dispose() {
     TutorialController.instance
       ..unregister(TutorialStep.familyMe, _meKey)
-      ..unregister(TutorialStep.familyAddPerson, _addKey);
+      ..unregister(TutorialStep.familyAddPerson, _addKey)
+      ..unregister(TutorialStep.businessTeam, _addKey);
     super.dispose();
   }
 
@@ -288,7 +291,10 @@ class _FamilyScreenState extends State<FamilyScreen> {
                           const SizedBox(height: 16),
                           const CompanyNameTile(),
                           const SizedBox(height: 12),
-                          const ComplianceReportTile(),
+                          const TutorialTarget(
+                            steps: [TutorialStep.businessReport],
+                            child: ComplianceReportTile(),
+                          ),
                         ] else ...[
                           const SizedBox(height: 16),
                           _BusinessNudge(
@@ -309,7 +315,10 @@ class _FamilyScreenState extends State<FamilyScreen> {
                           ),
                         ),
                       const SizedBox(height: 24),
-                      HouseholdSection(tier: tier),
+                      TutorialTarget(
+                        steps: const [TutorialStep.householdInvite],
+                        child: HouseholdSection(tier: tier),
+                      ),
                     ],
                   );
                 },

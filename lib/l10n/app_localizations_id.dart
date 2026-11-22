@@ -7719,290 +7719,262 @@ class AppLocalizationsId extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => 'Pindahan, bayi, pekerjaan baru, atau keadaan darurat? Peristiwa hidup memberi Anda rencana dengan catatan, langkah, dan tanggal Anda.';
 
   @override
-  String get storySampleQuestion => 'Apa yang kedaluwarsa tahun ini?';
+  String get tourHome1Title => 'Hari Anda dalam sekejap';
 
   @override
-  String storySampleAnswer(String name) {
-    return '$name Anda kedaluwarsa pada bulan Maret. Mau pengingat sebulan sebelumnya?';
-  }
+  String get tourHome1Body => 'Beranda menampilkan yang penting hari ini: apa yang segera kedaluwarsa dan berapa banyak catatan Anda.';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name kedaluwarsa dalam 30 hari. Ketuk untuk memperpanjang.';
-  }
+  String get tourHome2Title => 'Temukan apa saja';
 
   @override
-  String get storySampleGym => 'Keanggotaan gym';
+  String get tourHome2Body => 'Ketuk pencarian untuk menemukan catatan berdasarkan nama, grup, atau orang.';
 
   @override
-  String get storySampleFirstAid => 'Sertifikat pertolongan pertama';
+  String get tourHome3Title => 'Perjalanan dan rencana';
 
   @override
-  String get storySampleEncrypt => 'Enkripsi foto';
+  String get tourHome3Body => 'Perjalanan yang Anda rencanakan dan rencana peristiwa hidup yang sedang berjalan, beserta sisanya, muncul di sini.';
 
   @override
-  String get storySampleAppLock => 'Kunci aplikasi';
+  String get tourHome4Title => 'Bantuan dengan satu ketukan';
 
   @override
-  String get storySampleHideApp => 'Sembunyikan konten di pengalih aplikasi';
+  String get tourHome4Body => 'Tombol kilau membuka «Tanya Vaultara». Foto Anda membuka profil, pengaturan, dan tutorial.';
 
   @override
-  String get storyHome1Title => 'Hari Anda dalam sekejap';
+  String get tourRenew1Title => 'Pengingat datang';
 
   @override
-  String get storyHome1Body => 'Beranda menampilkan yang penting hari ini: apa yang segera kedaluwarsa dan berapa banyak catatan Anda.';
+  String get tourRenew1Body => 'Sebelum catatan kedaluwarsa, Vaultara mengingatkan Anda. Ketuk pengingat untuk membuka catatan.';
 
   @override
-  String get storyHome2Title => 'Temukan apa saja';
+  String get tourRenew2Title => 'Simpan tanggal baru';
 
   @override
-  String get storyHome2Body => 'Ketuk pencarian untuk menemukan catatan berdasarkan nama, grup, atau orang.';
+  String get tourRenew2Body => 'Sudah diperpanjang? Pilih tanggal kedaluwarsa baru di sini lalu simpan. Pengingat pindah ke tanggal baru.';
 
   @override
-  String get storyHome3Title => 'Perjalanan dan rencana';
+  String get tourRenew3Title => 'Tidak yakin caranya?';
 
   @override
-  String get storyHome3Body => 'Perjalanan yang Anda rencanakan dan rencana peristiwa hidup yang sedang berjalan, beserta sisanya, muncul di sini.';
+  String get tourRenew3Body => 'Banyak catatan memiliki daftar periksa perpanjangan. Tanya Vaultara dapat menemukan langkah untuk negara Anda, dengan tautan resmi.';
 
   @override
-  String get storyHome4Title => 'Bantuan dengan satu ketukan';
+  String get tourRenew4Title => 'Biarkan berulang';
 
   @override
-  String get storyHome4Body => 'Tombol kilau membuka «Tanya Vaultara». Foto Anda membuka profil, pengaturan, dan tutorial.';
+  String get tourRenew4Body => 'Untuk langganan dan pembayaran tahunan, aktifkan Diperpanjang sendiri dan tanggal akan maju dengan sendirinya.';
 
   @override
-  String get storyRenew1Title => 'Pengingat datang';
+  String get tourAsk1Title => 'Tanya dengan kata-kata Anda';
 
   @override
-  String get storyRenew1Body => 'Sebelum catatan kedaluwarsa, Vaultara mengingatkan Anda. Ketuk pengingat untuk membuka catatan.';
+  String get tourAsk1Body => 'Tanyakan misalnya «Apa yang kedaluwarsa tahun ini?» dan dapatkan jawaban dari catatan Anda sendiri.';
 
   @override
-  String get storyRenew2Title => 'Simpan tanggal baru';
+  String get tourAsk2Title => 'Bicara alih-alih mengetik';
 
   @override
-  String get storyRenew2Body => 'Sudah diperpanjang? Ketuk «Perpanjang» dan masukkan tanggal kedaluwarsa baru. Pengingat ikut bergeser.';
+  String get tourAsk2Body => 'Ketuk mikrofon dan bicara. Kata-kata muncul saat Anda bicara dan bisa langsung dikirim.';
 
   @override
-  String get storyRenew3Title => 'Tidak yakin caranya?';
+  String get tourAsk3Title => 'Anda mengonfirmasi setiap perubahan';
 
   @override
-  String get storyRenew3Body => 'Banyak catatan memiliki daftar periksa perpanjangan. Tanya Vaultara dapat menemukan langkah untuk negara Anda, dengan tautan resmi.';
+  String get tourAsk3Body => 'Minta untuk menambah atau mengubah catatan dan Anda akan melihat kartu terlebih dahulu. Tidak ada yang disimpan sampai Anda mengonfirmasi.';
 
   @override
-  String get storyRenew4Title => 'Biarkan berulang';
+  String get tourAsk4Title => 'Urungkan perubahan apa pun';
 
   @override
-  String get storyRenew4Body => 'Untuk langganan dan pembayaran tahunan, aktifkan Diperpanjang sendiri dan tanggal akan maju dengan sendirinya.';
+  String get tourAsk4Body => 'Berubah pikiran? Setiap perubahan yang dikonfirmasi bisa diurungkan dari kartu yang sama.';
 
   @override
-  String get storyAsk1Title => 'Tanya dengan kata-kata Anda';
+  String get tourAsk5Title => 'Lanjutkan dari terakhir kali';
 
   @override
-  String get storyAsk1Body => 'Tanyakan misalnya «Apa yang kedaluwarsa tahun ini?» dan dapatkan jawaban dari catatan Anda sendiri.';
+  String get tourAsk5Body => 'Obrolan disimpan 90 hari di «Riwayat obrolan», dan pertanyaan yang disarankan membantu Anda memulai.';
 
   @override
-  String get storyAsk2Title => 'Bicara alih-alih mengetik';
+  String get tourAsk6Title => 'Lebih dari sekadar catatan';
 
   @override
-  String get storyAsk2Body => 'Ketuk mikrofon dan bicara. Kata-kata muncul saat Anda bicara dan bisa langsung dikirim.';
+  String get tourAsk6Body => 'Ia juga dapat merencanakan perjalanan, menambahkan orang, menemukan langkah perpanjangan untuk negara Anda, dan membagikan catatan, dengan tautan ke halaman resmi.';
 
   @override
-  String get storyAsk3Title => 'Anda mengonfirmasi setiap perubahan';
+  String get tourWallet1Title => 'Bersiap dulu';
 
   @override
-  String get storyAsk3Body => 'Minta untuk menambah atau mengubah catatan dan Anda akan melihat kartu terlebih dahulu. Tidak ada yang disimpan sampai Anda mengonfirmasi.';
+  String get tourWallet1Body => 'Buka kartu atau dokumen dan pilih tempat Anda menyimpannya, misalnya dompet atau tas.';
 
   @override
-  String get storyAsk4Title => 'Urungkan perubahan apa pun';
+  String get tourWallet2Title => 'Simpan nomor blokir';
 
   @override
-  String get storyAsk4Body => 'Berubah pikiran? Setiap perubahan yang dikonfirmasi bisa diurungkan dari kartu yang sama.';
+  String get tourWallet2Body => 'Tambahkan nomor blokir setiap bank sekarang. Nomornya ada di kartu, yang tidak akan Anda pegang saat membutuhkannya.';
 
   @override
-  String get storyAsk5Title => 'Lanjutkan dari terakhir kali';
+  String get tourWallet3Title => 'Jika hilang';
 
   @override
-  String get storyAsk5Body => 'Obrolan disimpan 90 hari di «Riwayat obrolan», dan pertanyaan yang disarankan membantu Anda memulai.';
+  String get tourWallet3Body => 'Jika dompet Anda hilang, ketuk tombol yang sesuai di sini. Vaultara menampilkan semua yang ada di dalamnya, jadi Anda tahu apa yang harus diblokir.';
 
   @override
-  String get storyAsk6Title => 'Lebih dari sekadar catatan';
+  String get tourWallet4Title => 'Blokir kartu dalam hitungan menit';
 
   @override
-  String get storyAsk6Body => 'Ia juga dapat merencanakan perjalanan, menambahkan orang, menemukan langkah perpanjangan untuk negara Anda, dan membagikan catatan, dengan tautan ke halaman resmi.';
+  String get tourWallet4Body => 'Telepon setiap bank dengan satu ketukan, tandai kartu sebagai diblokir, dan simpan nomor laporan.';
 
   @override
-  String get storyWallet1Title => 'Bersiap dulu';
+  String get tourWallet5Title => 'Ganti dan tetap aman';
 
   @override
-  String get storyWallet1Body => 'Buka kartu atau dokumen dan pilih tempat Anda menyimpannya, misalnya dompet atau tas.';
+  String get tourWallet5Body => 'Ganti dokumen Anda, periksa mutasi rekening saat diingatkan, dan ketuk «Sudah ketemu» jika ditemukan.';
 
   @override
-  String get storyWallet2Title => 'Simpan nomor blokir';
+  String get tourLife1Title => 'Momen besar, satu rencana';
 
   @override
-  String get storyWallet2Body => 'Tambahkan nomor blokir setiap bank sekarang. Nomornya ada di kartu, yang tidak akan Anda pegang saat membutuhkannya.';
+  String get tourLife1Body => 'Pindahan, bayi, pekerjaan baru, atau keadaan darurat: pilih di «Peristiwa hidup» apa yang terjadi.';
 
   @override
-  String get storyWallet3Title => 'Jika hilang';
+  String get tourLife2Title => 'Catatan Anda, tertata';
 
   @override
-  String get storyWallet3Body => 'Buka Hilang atau dicuri lalu ketuk Hilang atau Dicuri. Vaultara menampilkan semua yang ada di dalamnya.';
+  String get tourLife2Body => 'Rencana menunjukkan catatan mana yang perlu diperbarui, dibatalkan, atau diperpanjang, dan mana yang mungkin perlu ditambahkan.';
 
   @override
-  String get storyWallet4Title => 'Blokir kartu dalam hitungan menit';
+  String get tourLife3Title => 'Langkah dan tanggal';
 
   @override
-  String get storyWallet4Body => 'Telepon setiap bank dengan satu ketukan, tandai kartu sebagai diblokir, dan simpan nomor laporan.';
+  String get tourLife3Body => 'Setiap rencana juga punya langkah yang bukan catatan, dan tanggal mulai yang memberi tahu kapan harus mengajukan agar tidak ada yang terlambat.';
 
   @override
-  String get storyWallet5Title => 'Ganti dan tetap aman';
+  String get tourLife4Title => 'Jadikan milik Anda';
 
   @override
-  String get storyWallet5Body => 'Ganti dokumen Anda, periksa mutasi rekening saat diingatkan, dan ketuk «Sudah ketemu» jika ditemukan.';
+  String get tourLife4Body => 'Tambahkan langkah sendiri, bagikan rencana sebagai PDF, dan dapatkan pengingat di sekitar tanggalnya.';
 
   @override
-  String get storyLife1Title => 'Momen besar, satu rencana';
+  String get tourPhotos1Title => 'Foto dokumen Anda';
 
   @override
-  String get storyLife1Body => 'Pindahan, bayi, pekerjaan baru, atau keadaan darurat: pilih di «Peristiwa hidup» apa yang terjadi.';
+  String get tourPhotos1Body => 'Dari catatan, tambahkan foto sisi depan dan belakang kartu atau dokumen.';
 
   @override
-  String get storyLife2Title => 'Catatan Anda, tertata';
+  String get tourPhotos2Title => 'Terenkripsi di ponsel';
 
   @override
-  String get storyLife2Body => 'Rencana menunjukkan catatan mana yang perlu diperbarui, dibatalkan, atau diperpanjang, dan mana yang mungkin perlu ditambahkan.';
+  String get tourPhotos2Body => 'Aktifkan enkripsi foto dan foto dikunci di ponsel sebelum diunggah.';
 
   @override
-  String get storyLife3Title => 'Langkah dan tanggal';
+  String get tourPhotos3Title => 'Kunci catatan sensitif';
 
   @override
-  String get storyLife3Body => 'Langkah mencakup hal yang bukan catatan, dan tanggal mulai memberi tahu kapan harus mengajukan agar tidak ada yang terlambat.';
+  String get tourPhotos3Body => 'Kunci catatan dan ia akan meminta sidik jari atau kunci layar sebelum dibuka.';
 
   @override
-  String get storyLife4Title => 'Jadikan milik Anda';
+  String get tourPhotos4Title => 'Kunci seluruh aplikasi';
 
   @override
-  String get storyLife4Body => 'Tambahkan langkah sendiri, bagikan rencana sebagai PDF, dan dapatkan pengingat di sekitar tanggalnya.';
+  String get tourPhotos4Body => 'Di pengaturan keamanan, aktifkan kunci aplikasi dan sembunyikan konten saat berpindah aplikasi.';
 
   @override
-  String get storyPhotos1Title => 'Foto dokumen Anda';
+  String get tourShare1Title => 'Bagikan satu catatan';
 
   @override
-  String get storyPhotos1Body => 'Dari catatan, tambahkan foto sisi depan dan belakang kartu atau dokumen.';
+  String get tourShare1Body => 'Buka catatan dan bagikan tautan yang hanya menampilkan catatan itu, tidak ada yang lain.';
 
   @override
-  String get storyPhotos2Title => 'Terenkripsi di ponsel';
+  String get tourShare2Title => 'Paket bukti';
 
   @override
-  String get storyPhotos2Body => 'Aktifkan enkripsi foto dan foto dikunci di ponsel sebelum diunggah.';
+  String get tourShare2Body => 'Gabungkan catatan pilihan Anda, beserta fotonya, ke satu PDF untuk pemilik rumah, bank, atau kantor.';
 
   @override
-  String get storyPhotos3Title => 'Kunci catatan sensitif';
+  String get tourShare3Title => 'Tetap memegang kendali';
 
   @override
-  String get storyPhotos3Body => 'Kunci catatan dan ia akan meminta sidik jari atau kunci layar sebelum dibuka.';
+  String get tourShare3Body => '«Tautan yang dibagikan» menampilkan setiap tautan yang Anda buat. Hentikan kapan saja dan tautan tidak akan terbuka lagi.';
 
   @override
-  String get storyPhotos4Title => 'Kunci seluruh aplikasi';
+  String get tourHousehold1Title => 'Undang rumah tangga Anda';
 
   @override
-  String get storyPhotos4Body => 'Di pengaturan keamanan, aktifkan kunci aplikasi dan sembunyikan konten saat berpindah aplikasi.';
+  String get tourHousehold1Body => 'Bagikan kode atau tautan undangan. Setiap orang masuk dengan akun sendiri.';
 
   @override
-  String get storyShare1Title => 'Bagikan satu catatan';
+  String get tourHousehold2Title => 'Satu kumpulan catatan';
 
   @override
-  String get storyShare1Body => 'Buka catatan dan bagikan tautan yang hanya menampilkan catatan itu, tidak ada yang lain.';
+  String get tourHousehold2Body => 'Semua orang melihat catatan bersama yang sama dan mendapat pengingat yang sama.';
 
   @override
-  String get storyShare2Title => 'Paket bukti';
+  String get tourHousehold3Title => 'Milik siapa?';
 
   @override
-  String get storyShare2Body => 'Gabungkan catatan pilihan Anda, beserta fotonya, ke satu PDF untuk pemilik rumah, bank, atau kantor.';
+  String get tourHousehold3Body => 'Setiap catatan bisa milik seseorang. Namanya muncul di catatan dan pengingatnya.';
 
   @override
-  String get storyShare3Title => 'Tetap memegang kendali';
+  String get tourImport1Title => 'Pindai kartu';
 
   @override
-  String get storyShare3Body => '«Tautan yang dibagikan» menampilkan setiap tautan yang Anda buat. Hentikan kapan saja dan tautan tidak akan terbuka lagi.';
+  String get tourImport1Body => 'Foto kartu atau dokumen dan Vaultara mengisi nama serta tanggal kedaluwarsa untuk Anda.';
 
   @override
-  String get storyHousehold1Title => 'Undang rumah tangga Anda';
+  String get tourImport2Title => 'Impor daftar';
 
   @override
-  String get storyHousehold1Body => 'Bagikan kode atau tautan undangan. Setiap orang masuk dengan akun sendiri.';
+  String get tourImport2Body => 'Sudah punya spreadsheet? Impor lalu periksa setiap baris sebelum disimpan.';
 
   @override
-  String get storyHousehold2Title => 'Satu kumpulan catatan';
+  String get tourImport3Title => 'Bagikan ke Vaultara';
 
   @override
-  String get storyHousehold2Body => 'Semua orang melihat catatan bersama yang sama dan mendapat pengingat yang sama.';
+  String get tourImport3Body => 'Bagikan foto, PDF, atau teks dari aplikasi lain ke Vaultara untuk memulai catatan baru.';
 
   @override
-  String get storyHousehold3Title => 'Milik siapa?';
+  String get tourCosts1Title => 'Di kalender Anda';
 
   @override
-  String get storyHousehold3Body => 'Setiap catatan bisa milik seseorang. Namanya muncul di catatan dan pengingatnya.';
+  String get tourCosts1Body => 'Tambahkan tanggal kedaluwarsa ke kalender ponsel, di samping rencana Anda yang lain.';
 
   @override
-  String get storyImport1Title => 'Pindai kartu';
+  String get tourCosts2Title => 'Biaya perpanjangan';
 
   @override
-  String get storyImport1Body => 'Foto kartu atau dokumen dan Vaultara mengisi nama serta tanggal kedaluwarsa untuk Anda.';
+  String get tourCosts2Body => 'Masukkan biaya perpanjangan pada catatan dan Vaultara menunjukkan pengeluaran Anda per tahun.';
 
   @override
-  String get storyImport2Title => 'Impor daftar';
+  String get tourCosts3Title => 'Rencanakan lebih awal';
 
   @override
-  String get storyImport2Body => 'Sudah punya spreadsheet? Impor lalu periksa setiap baris sebelum disimpan.';
+  String get tourCosts3Body => 'Lihat bulan-bulan mahal lebih awal agar perpanjangan besar tidak pernah mengejutkan Anda.';
 
   @override
-  String get storyImport3Title => 'Bagikan ke Vaultara';
+  String get tourBusiness1Title => 'Pantau tim Anda';
 
   @override
-  String get storyImport3Body => 'Bagikan foto, PDF, atau teks dari aplikasi lain ke Vaultara untuk memulai catatan baru.';
+  String get tourBusiness1Body => 'Tambahkan staf dan simpan sertifikat, izin, dan lisensi mereka di satu tempat.';
 
   @override
-  String get storyCosts1Title => 'Di kalender Anda';
+  String get tourBusiness2Title => 'Pengingat email';
 
   @override
-  String get storyCosts1Body => 'Tambahkan tanggal kedaluwarsa ke kalender ponsel, di samping rencana Anda yang lain.';
+  String get tourBusiness2Body => 'Staf menerima email sebelum dokumen mereka kedaluwarsa, bahkan tanpa aplikasi.';
 
   @override
-  String get storyCosts2Title => 'Biaya perpanjangan';
+  String get tourBusiness3Title => 'Laporan bulanan';
 
   @override
-  String get storyCosts2Body => 'Masukkan biaya perpanjangan pada catatan dan Vaultara menunjukkan pengeluaran Anda per tahun.';
+  String get tourBusiness3Body => 'Setiap bulan, laporan menunjukkan apa yang berlaku, apa yang akan kedaluwarsa, dan apa yang kurang.';
 
   @override
-  String get storyCosts3Title => 'Rencanakan lebih awal';
+  String get tourBusiness4Title => 'Minta pembaruan';
 
   @override
-  String get storyCosts3Body => 'Lihat bulan-bulan mahal lebih awal agar perpanjangan besar tidak pernah mengejutkan Anda.';
-
-  @override
-  String get storyBusiness1Title => 'Pantau tim Anda';
-
-  @override
-  String get storyBusiness1Body => 'Tambahkan staf dan simpan sertifikat, izin, dan lisensi mereka di satu tempat.';
-
-  @override
-  String get storyBusiness2Title => 'Pengingat email';
-
-  @override
-  String get storyBusiness2Body => 'Staf menerima email sebelum dokumen mereka kedaluwarsa, bahkan tanpa aplikasi.';
-
-  @override
-  String get storyBusiness3Title => 'Laporan bulanan';
-
-  @override
-  String get storyBusiness3Body => 'Setiap bulan, laporan menunjukkan apa yang berlaku, apa yang akan kedaluwarsa, dan apa yang kurang.';
-
-  @override
-  String get storyBusiness4Title => 'Minta pembaruan';
-
-  @override
-  String get storyBusiness4Body => 'Kirim tautan dan staf mengunggah sendiri dokumen yang sudah diperpanjang.';
+  String get tourBusiness4Body => 'Kirim tautan dan staf mengunggah sendiri dokumen yang sudah diperpanjang.';
 
   @override
   String get categoryHealthAndMedical => 'Kesehatan dan medis';

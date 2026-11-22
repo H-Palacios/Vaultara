@@ -19,10 +19,13 @@ import 'package:vaultara/features/home/view/widgets/home_tour_banner.dart';
 import 'package:vaultara/features/records/view/search/global_search_sheet.dart';
 import 'package:vaultara/features/profile/view/profile_screen.dart';
 import 'package:vaultara/features/profile/view/widgets/my_avatar.dart';
+import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 import 'package:vaultara/features/tutorials/view/tour_screen.dart';
+import 'package:vaultara/features/tutorials/view/tutorial_target.dart';
 import 'package:vaultara/features/tutorials/view/whats_new_card.dart';
 import 'package:vaultara/features/tools/view/life_plans_home_section.dart';
 import 'package:vaultara/features/travel/view/travel_check_card.dart';
+import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
 
 const String kShowTourBannerKey = 'showTourBanner';
 
@@ -144,19 +147,31 @@ class HomeScreenState extends State<HomeScreen>
     final overview = HomeOverviewLoader.cached ?? const HomeOverview.empty();
     final wide = WideLayout.of(context);
 
-    final nextUp = HomeNextUp(
-      totals: overview.totals,
-      isPremium: widget.isPremium,
-      onChanged: () => HomeOverviewLoader.recompute(),
+    final nextUp = TutorialTarget(
+      steps: const [TutorialStep.homeNextUp],
+      child: HomeNextUp(
+        totals: overview.totals,
+        isPremium: widget.isPremium,
+        onChanged: () => HomeOverviewLoader.recompute(),
+      ),
     );
     final pinned = HomePinnedCategories(
       isPremium: widget.isPremium,
       onOpenCategories: widget.onOpenCategories,
     );
+    // Trips and life event plans, pointed at together by the Home tour.
     final rest = <Widget>[
       const SizedBox(height: 16),
-      TravelCheckCard(isPremium: widget.isPremium),
-      const LifePlansHomeSection(),
+      TutorialTarget(
+        steps: const [TutorialStep.homePlans],
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            TravelCheckCard(isPremium: widget.isPremium),
+            const LifePlansHomeSection(),
+          ],
+        ),
+      ),
     ];
 
     return SafeArea(
@@ -165,6 +180,9 @@ class HomeScreenState extends State<HomeScreen>
         child: ListView(
           controller: _scrollController,
           physics: const AlwaysScrollableScrollPhysics(),
+          // Kept until the Flutter version in use exports ScrollCacheExtent.
+          // ignore: deprecated_member_use
+          cacheExtent: TutorialController.listCacheExtent,
           padding: wide
               ? const EdgeInsets.fromLTRB(24, 8, 24, 32)
               : const EdgeInsets.fromLTRB(16, 8, 16, 120),
@@ -172,31 +190,44 @@ class HomeScreenState extends State<HomeScreen>
             Row(
               children: [
                 Expanded(
-                  child: SearchField(
-                    hintText: loc.searchRecords,
-                    onTap: () => GlobalSearchSheet.open(
-                      context,
-                      isPremium: widget.isPremium,
+                  child: TutorialTarget(
+                    steps: const [TutorialStep.homeSearch],
+                    child: SearchField(
+                      hintText: loc.searchRecords,
+                      onTap: () => GlobalSearchSheet.open(
+                        context,
+                        isPremium: widget.isPremium,
+                      ),
                     ),
                   ),
                 ),
                 const SizedBox(width: 4),
-                IconButton(
-                  tooltip: loc.assistantTitle,
-                  onPressed: () =>
-                      openAskVaultara(context, isPremium: widget.isPremium),
-                  icon: Icon(
-                    Icons.auto_awesome_rounded,
-                    color: scheme.primary,
-                    size: 26,
-                  ),
-                ),
-                IconButton(
-                  tooltip: loc.profileHeaderTitle,
-                  onPressed: _openProfile,
-                  icon: const MyAvatar(
-                    size: 32,
-                    fallback: InitialsAvatar(size: 32),
+                TutorialTarget(
+                  steps: const [TutorialStep.homeHelp],
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      IconButton(
+                        tooltip: loc.assistantTitle,
+                        onPressed: () => openAskVaultara(
+                          context,
+                          isPremium: widget.isPremium,
+                        ),
+                        icon: Icon(
+                          Icons.auto_awesome_rounded,
+                          color: scheme.primary,
+                          size: 26,
+                        ),
+                      ),
+                      IconButton(
+                        tooltip: loc.profileHeaderTitle,
+                        onPressed: _openProfile,
+                        icon: const MyAvatar(
+                          size: 32,
+                          fallback: InitialsAvatar(size: 32),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],

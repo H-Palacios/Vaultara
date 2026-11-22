@@ -7780,290 +7780,262 @@ class AppLocalizationsSo extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => 'Guuritaan, ilmo, shaqo cusub ama xaalad degdeg ah? Dhacdooyinka nolosha waxay ku siinayaan qorshe leh diiwaannadaada, tallaabooyinka iyo taariikhahaaga.';
 
   @override
-  String get storySampleQuestion => 'Maxaa dhacaya sannadkan?';
+  String get tourHome1Title => 'Maalintaada hal jalleec';
 
   @override
-  String storySampleAnswer(String name) {
-    return '$name-kaagu wuxuu dhacayaa bisha Maarso. Ma rabtaa xusuusin bil ka hor?';
-  }
+  String get tourHome1Body => 'Shaashadda guriga waxay muujinaysaa waxa muhiimka ah maanta: waxa dhowaan dhacaya iyo inta diiwaan ee aad haysato.';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name wuxuu dhacayaa 30 maalmood gudahood. Taabo si aad u cusboonaysiiso.';
-  }
+  String get tourHome2Title => 'Hel wax kasta';
 
   @override
-  String get storySampleGym => 'Xubinnimada jimicsiga';
+  String get tourHome2Body => 'Taabo raadinta si aad u hesho diiwaan magac, koox ama qof ahaan.';
 
   @override
-  String get storySampleFirstAid => 'Shahaadada gargaarka degdegga ah';
+  String get tourHome3Title => 'Safarro iyo qorshayaal';
 
   @override
-  String get storySampleEncrypt => 'Sir-qari sawirrada';
+  String get tourHome3Body => 'Safarrada aad qorshaynayso iyo qorshayaasha dhacdooyinka nolosha ee socda halkan ayay ka muuqdaan, iyo waxa haray.';
 
   @override
-  String get storySampleAppLock => 'Qufulka abka';
+  String get tourHome4Title => 'Caawimo hal taabasho';
 
   @override
-  String get storySampleHideApp => 'Qari waxa ku jira beddelaha abka';
+  String get tourHome4Body => 'Badhanka dhimbiisha wuxuu furaa «Weydii Vaultara». Sawirkaagu wuxuu furaa astaantaada, dejimaha iyo casharrada.';
 
   @override
-  String get storyHome1Title => 'Maalintaada hal jalleec';
+  String get tourRenew1Title => 'Xusuusin ayaa timid';
 
   @override
-  String get storyHome1Body => 'Shaashadda guriga waxay muujinaysaa waxa muhiimka ah maanta: waxa dhowaan dhacaya iyo inta diiwaan ee aad haysato.';
+  String get tourRenew1Body => 'Ka hor inta uusan diiwaan dhicin, Vaultara ayaa ku xusuusinaysa. Taabo xusuusinta si aad u furto diiwaanka.';
 
   @override
-  String get storyHome2Title => 'Hel wax kasta';
+  String get tourRenew2Title => 'Kaydi taariikhda cusub';
 
   @override
-  String get storyHome2Body => 'Taabo raadinta si aad u hesho diiwaan magac, koox ama qof ahaan.';
+  String get tourRenew2Body => 'Ma cusboonaysiisay? Halkan ka dooro taariikhda dhicitaanka cusub oo kaydi. Xusuusinadu waxay u guurayaan taariikhda cusub.';
 
   @override
-  String get storyHome3Title => 'Safarro iyo qorshayaal';
+  String get tourRenew3Title => 'Ma hubtid sida?';
 
   @override
-  String get storyHome3Body => 'Safarrada aad qorshaynayso iyo qorshayaasha dhacdooyinka nolosha ee socda halkan ayay ka muuqdaan, iyo waxa haray.';
+  String get tourRenew3Body => 'Diiwaanno badan waxay leeyihiin liis cusboonaysiin. Weydii Vaultara waxay heli kartaa tallaabooyinka waddankaaga, iyadoo leh xiriiriyeyaal rasmi ah.';
 
   @override
-  String get storyHome4Title => 'Caawimo hal taabasho';
+  String get tourRenew4Title => 'Ha ku celiyo';
 
   @override
-  String get storyHome4Body => 'Badhanka dhimbiisha wuxuu furaa «Weydii Vaultara». Sawirkaagu wuxuu furaa astaantaada, dejimaha iyo casharrada.';
+  String get tourRenew4Body => 'Rukummada iyo lacag bixinta sanadlaha ah, daar Iskiis ayuu u cusboonaadaa, taariikhduna iskeed ayay hore ugu socon doontaa.';
 
   @override
-  String get storyRenew1Title => 'Xusuusin ayaa timid';
+  String get tourAsk1Title => 'Ku weydii ereyadaada';
 
   @override
-  String get storyRenew1Body => 'Ka hor inta uusan diiwaan dhicin, Vaultara ayaa ku xusuusinaysa. Taabo xusuusinta si aad u furto diiwaanka.';
+  String get tourAsk1Body => 'Weydii wax sida «Maxaa dhacaya sannadkan?» oo ka hel jawaabo diiwaannadaada.';
 
   @override
-  String get storyRenew2Title => 'Kaydi taariikhda cusub';
+  String get tourAsk2Title => 'Hadal halkii aad qori lahayd';
 
   @override
-  String get storyRenew2Body => 'Ma cusboonaysiisay? Taabo «Cusboonaysii» oo geli taariikhda dhicitaanka cusub. Xusuusinadaadu way la socdaan.';
+  String get tourAsk2Body => 'Taabo makarafoonka oo hadal. Ereyadaadu waxay soo baxaan inta aad hadlayso waxaadna isla markiiba diri kartaa.';
 
   @override
-  String get storyRenew3Title => 'Ma hubtid sida?';
+  String get tourAsk3Title => 'Adiga ayaa xaqiijiya isbeddel kasta';
 
   @override
-  String get storyRenew3Body => 'Diiwaanno badan waxay leeyihiin liis cusboonaysiin. Weydii Vaultara waxay heli kartaa tallaabooyinka waddankaaga, iyadoo leh xiriiriyeyaal rasmi ah.';
+  String get tourAsk3Body => 'Codso in diiwaan lagu daro ama la beddelo, waxaadna marka hore arki doontaa kaar. Waxba lama kaydiyo ilaa aad xaqiijiso.';
 
   @override
-  String get storyRenew4Title => 'Ha ku celiyo';
+  String get tourAsk4Title => 'Ka noqo isbeddel kasta';
 
   @override
-  String get storyRenew4Body => 'Rukummada iyo lacag bixinta sanadlaha ah, daar Iskiis ayuu u cusboonaadaa, taariikhduna iskeed ayay hore ugu socon doontaa.';
+  String get tourAsk4Body => 'Fikirka ma beddeshay? Isbeddel kasta oo la xaqiijiyay waa laga noqon karaa isla kaarkaas.';
 
   @override
-  String get storyAsk1Title => 'Ku weydii ereyadaada';
+  String get tourAsk5Title => 'Ka sii wad halkii aad ka joogsatay';
 
   @override
-  String get storyAsk1Body => 'Weydii wax sida «Maxaa dhacaya sannadkan?» oo ka hel jawaabo diiwaannadaada.';
+  String get tourAsk5Body => 'Wadahadallada waxaa lagu hayaa 90 maalmood «Taariikhda wada hadallada», su\'aalaha la soo jeediyayna waxay kaa caawinayaan inaad bilowdo.';
 
   @override
-  String get storyAsk2Title => 'Hadal halkii aad qori lahayd';
+  String get tourAsk6Title => 'Ka badan diiwaanno';
 
   @override
-  String get storyAsk2Body => 'Taabo makarafoonka oo hadal. Ereyadaadu waxay soo baxaan inta aad hadlayso waxaadna isla markiiba diri kartaa.';
+  String get tourAsk6Body => 'Waxay sidoo kale qorsheyn kartaa safarro, ku dari kartaa dad, heli kartaa tallaabooyinka cusboonaysiinta ee waddankaaga oo wadaagi kartaa diiwaanno, iyadoo leh xiriiriyeyaal bogag rasmi ah.';
 
   @override
-  String get storyAsk3Title => 'Adiga ayaa xaqiijiya isbeddel kasta';
+  String get tourWallet1Title => 'Marka hore isu diyaari';
 
   @override
-  String get storyAsk3Body => 'Codso in diiwaan lagu daro ama la beddelo, waxaadna marka hore arki doontaa kaar. Waxba lama kaydiyo ilaa aad xaqiijiso.';
+  String get tourWallet1Body => 'Fur kaar ama dukumenti oo dooro halka aad ku haysato, sida boorsadaada ama shandaddaada.';
 
   @override
-  String get storyAsk4Title => 'Ka noqo isbeddel kasta';
+  String get tourWallet2Title => 'Kaydi lambarka xannibaadda';
 
   @override
-  String get storyAsk4Body => 'Fikirka ma beddeshay? Isbeddel kasta oo la xaqiijiyay waa laga noqon karaa isla kaarkaas.';
+  String get tourWallet2Body => 'Hadda ku dar lambarka xannibaadda bangi kasta. Wuxuu ku yaal kaarka, oo aanad haysan doonin marka aad u baahato.';
 
   @override
-  String get storyAsk5Title => 'Ka sii wad halkii aad ka joogsatay';
+  String get tourWallet3Title => 'Haddii uu lumo';
 
   @override
-  String get storyAsk5Body => 'Wadahadallada waxaa lagu hayaa 90 maalmood «Taariikhda wada hadallada», su\'aalaha la soo jeediyayna waxay kaa caawinayaan inaad bilowdo.';
+  String get tourWallet3Body => 'Haddii boorsadaada lacagtu lumto, halkan taabo badhanka ku habboon. Vaultara wuxuu muujiyaa wax kasta oo ku jiray, si aad u ogaato waxa aad xannibayso.';
 
   @override
-  String get storyAsk6Title => 'Ka badan diiwaanno';
+  String get tourWallet4Title => 'Xannib kaararka daqiiqado gudahood';
 
   @override
-  String get storyAsk6Body => 'Waxay sidoo kale qorsheyn kartaa safarro, ku dari kartaa dad, heli kartaa tallaabooyinka cusboonaysiinta ee waddankaaga oo wadaagi kartaa diiwaanno, iyadoo leh xiriiriyeyaal bogag rasmi ah.';
+  String get tourWallet4Body => 'Wac bangi kasta hal taabasho, calaamadee kaararka inay xannibmeen oo kaydi lambarka warbixinta.';
 
   @override
-  String get storyWallet1Title => 'Marka hore isu diyaari';
+  String get tourWallet5Title => 'Beddel oo ammaan ahaw';
 
   @override
-  String get storyWallet1Body => 'Fur kaar ama dukumenti oo dooro halka aad ku haysato, sida boorsadaada ama shandaddaada.';
+  String get tourWallet5Body => 'Beddel dukumentiyadaada, hubi bayaannada xisaabta marka lagu xusuusiyo oo taabo «Waan helay» haddii uu soo baxo.';
 
   @override
-  String get storyWallet2Title => 'Kaydi lambarka xannibaadda';
+  String get tourLife1Title => 'Waqtiyo waaweyn, hal qorshe';
 
   @override
-  String get storyWallet2Body => 'Hadda ku dar lambarka xannibaadda bangi kasta. Wuxuu ku yaal kaarka, oo aanad haysan doonin marka aad u baahato.';
+  String get tourLife1Body => 'Guuritaan, ilmo, shaqo cusub ama xaalad degdeg ah: ku dooro «Dhacdooyinka nolosha» waxa dhacaya.';
 
   @override
-  String get storyWallet3Title => 'Haddii uu lumo';
+  String get tourLife2Title => 'Diiwaannadaada, habaysan';
 
   @override
-  String get storyWallet3Body => 'Fur Lumay ama la xaday oo taabo Lumay ama La xaday. Vaultara wuxuu muujinayaa wax kasta oo ku jiray.';
+  String get tourLife2Body => 'Qorshuhu wuxuu muujinayaa diiwaannada la cusbooneysiinayo, la joojinayo ama dib loo cusboonaysiinayo, iyo kuwa laga yaabo inaad ku darto.';
 
   @override
-  String get storyWallet4Title => 'Xannib kaararka daqiiqado gudahood';
+  String get tourLife3Title => 'Tallaabooyin iyo taariikho';
 
   @override
-  String get storyWallet4Body => 'Wac bangi kasta hal taabasho, calaamadee kaararka inay xannibmeen oo kaydi lambarka warbixinta.';
+  String get tourLife3Body => 'Qorshe kastaa wuxuu leeyahay tallaabooyin aan diiwaan ahayn, iyo taariikho bilow ah oo kuu sheegaya goorta aad codsanayso si aanay waxba u daahin.';
 
   @override
-  String get storyWallet5Title => 'Beddel oo ammaan ahaw';
+  String get tourLife4Title => 'Ka dhig mid adiga kuu gaar ah';
 
   @override
-  String get storyWallet5Body => 'Beddel dukumentiyadaada, hubi bayaannada xisaabta marka lagu xusuusiyo oo taabo «Waan helay» haddii uu soo baxo.';
+  String get tourLife4Body => 'Ku dar tallaabooyinkaaga, la wadaag qorshaha PDF ahaan oo hel xusuusin agagaarka taariikhda.';
 
   @override
-  String get storyLife1Title => 'Waqtiyo waaweyn, hal qorshe';
+  String get tourPhotos1Title => 'Sawirrada dukumentiyadaada';
 
   @override
-  String get storyLife1Body => 'Guuritaan, ilmo, shaqo cusub ama xaalad degdeg ah: ku dooro «Dhacdooyinka nolosha» waxa dhacaya.';
+  String get tourPhotos1Body => 'Diiwaanka dhexdiisa, ku dar sawirrada wejiga hore iyo dambe ee kaar ama dukumenti.';
 
   @override
-  String get storyLife2Title => 'Diiwaannadaada, habaysan';
+  String get tourPhotos2Title => 'Sir-qarsoon taleefankaaga';
 
   @override
-  String get storyLife2Body => 'Qorshuhu wuxuu muujinayaa diiwaannada la cusbooneysiinayo, la joojinayo ama dib loo cusboonaysiinayo, iyo kuwa laga yaabo inaad ku darto.';
+  String get tourPhotos2Body => 'Daar sir-qarinta sawirrada waxaana lagu quflaa taleefankaaga ka hor inta aan la soo gelin.';
 
   @override
-  String get storyLife3Title => 'Tallaabooyin iyo taariikho';
+  String get tourPhotos3Title => 'Quful diiwaannada xasaasiga ah';
 
   @override
-  String get storyLife3Body => 'Tallaabooyinku waxay daboolaan waxa aan diiwaan ahayn, taariikhaha bilowguna waxay kuu sheegaan goorta aad codsanayso si aanay waxba u daahin.';
+  String get tourPhotos3Body => 'Quful diiwaan wuxuuna weydiin doonaa faraha ama qufulka shaashadda ka hor inta uusan furmin.';
 
   @override
-  String get storyLife4Title => 'Ka dhig mid adiga kuu gaar ah';
+  String get tourPhotos4Title => 'Quful abka oo dhan';
 
   @override
-  String get storyLife4Body => 'Ku dar tallaabooyinkaaga, la wadaag qorshaha PDF ahaan oo hel xusuusin agagaarka taariikhda.';
+  String get tourPhotos4Body => 'Dejimaha amniga, daar qufulka abka oo qari waxa ku jira marka aad abka beddesho.';
 
   @override
-  String get storyPhotos1Title => 'Sawirrada dukumentiyadaada';
+  String get tourShare1Title => 'La wadaag hal diiwaan';
 
   @override
-  String get storyPhotos1Body => 'Diiwaanka dhexdiisa, ku dar sawirrada wejiga hore iyo dambe ee kaar ama dukumenti.';
+  String get tourShare1Body => 'Fur diiwaan oo la wadaag xiriiriye muujinaya kaliya diiwaankaas, wax kale ma jiraan.';
 
   @override
-  String get storyPhotos2Title => 'Sir-qarsoon taleefankaaga';
+  String get tourShare2Title => 'Xirmada caddaynta';
 
   @override
-  String get storyPhotos2Body => 'Daar sir-qarinta sawirrada waxaana lagu quflaa taleefankaaga ka hor inta aan la soo gelin.';
+  String get tourShare2Body => 'Geli diiwaannada aad doorato, sawirradooda la socda, hal PDF oo loogu talagalay mulkiilaha guriga, bangi ama xafiis.';
 
   @override
-  String get storyPhotos3Title => 'Quful diiwaannada xasaasiga ah';
+  String get tourShare3Title => 'Gacanta ku hay';
 
   @override
-  String get storyPhotos3Body => 'Quful diiwaan wuxuuna weydiin doonaa faraha ama qufulka shaashadda ka hor inta uusan furmin.';
+  String get tourShare3Body => '«Linkiyada la wadaagay» wuxuu muujinayaa xiriiriye kasta oo aad samaysay. Jooji mid kasta wakhti kasta mar dambena ma furmayo.';
 
   @override
-  String get storyPhotos4Title => 'Quful abka oo dhan';
+  String get tourHousehold1Title => 'Casuun qoyskaaga';
 
   @override
-  String get storyPhotos4Body => 'Dejimaha amniga, daar qufulka abka oo qari waxa ku jira marka aad abka beddesho.';
+  String get tourHousehold1Body => 'La wadaag koodh ama xiriiriye casuumaad. Qof kastaa wuxuu ku galaa akoonkiisa.';
 
   @override
-  String get storyShare1Title => 'La wadaag hal diiwaan';
+  String get tourHousehold2Title => 'Hal koox diiwaanno';
 
   @override
-  String get storyShare1Body => 'Fur diiwaan oo la wadaag xiriiriye muujinaya kaliya diiwaankaas, wax kale ma jiraan.';
+  String get tourHousehold2Body => 'Qof kastaa wuxuu arkaa diiwaannada la wadaago ee isku midka ah wuxuuna helaa xusuusinno isku mid ah.';
 
   @override
-  String get storyShare2Title => 'Xirmada caddaynta';
+  String get tourHousehold3Title => 'Yaa iska leh?';
 
   @override
-  String get storyShare2Body => 'Geli diiwaannada aad doorato, sawirradooda la socda, hal PDF oo loogu talagalay mulkiilaha guriga, bangi ama xafiis.';
+  String get tourHousehold3Body => 'Diiwaan kastaa wuxuu noqon karaa mid qof leeyahay. Magaciisu wuu ku muuqdaa iyo xusuusinadiisa.';
 
   @override
-  String get storyShare3Title => 'Gacanta ku hay';
+  String get tourImport1Title => 'Iskaan samee kaar';
 
   @override
-  String get storyShare3Body => '«Linkiyada la wadaagay» wuxuu muujinayaa xiriiriye kasta oo aad samaysay. Jooji mid kasta wakhti kasta mar dambena ma furmayo.';
+  String get tourImport1Body => 'Sawir kaar ama dukumenti, Vaultara ayaa kuu buuxinaysa magaca iyo taariikhda dhicitaanka.';
 
   @override
-  String get storyHousehold1Title => 'Casuun qoyskaaga';
+  String get tourImport2Title => 'Soo deji liis';
 
   @override
-  String get storyHousehold1Body => 'La wadaag koodh ama xiriiriye casuumaad. Qof kastaa wuxuu ku galaa akoonkiisa.';
+  String get tourImport2Body => 'Horey ma u haysataa xaashi xisaabeed? Soo deji oo hubi saf kasta ka hor inta aan wax la kaydin.';
 
   @override
-  String get storyHousehold2Title => 'Hal koox diiwaanno';
+  String get tourImport3Title => 'U wadaag Vaultara';
 
   @override
-  String get storyHousehold2Body => 'Qof kastaa wuxuu arkaa diiwaannada la wadaago ee isku midka ah wuxuuna helaa xusuusinno isku mid ah.';
+  String get tourImport3Body => 'La wadaag sawir, PDF ama qoraal ka yimid ab kale Vaultara si aad u bilowdo diiwaan cusub.';
 
   @override
-  String get storyHousehold3Title => 'Yaa iska leh?';
+  String get tourCosts1Title => 'Kalandarkaaga';
 
   @override
-  String get storyHousehold3Body => 'Diiwaan kastaa wuxuu noqon karaa mid qof leeyahay. Magaciisu wuu ku muuqdaa iyo xusuusinadiisa.';
+  String get tourCosts1Body => 'Ku dar taariikhaha dhicitaanka kalandarka taleefankaaga, oo ag yaal qorshayaashaada kale.';
 
   @override
-  String get storyImport1Title => 'Iskaan samee kaar';
+  String get tourCosts2Title => 'Qiimaha cusboonaysiinta';
 
   @override
-  String get storyImport1Body => 'Sawir kaar ama dukumenti, Vaultara ayaa kuu buuxinaysa magaca iyo taariikhda dhicitaanka.';
+  String get tourCosts2Body => 'Geli qiimaha cusboonaysiinta diiwaan, Vaultara ayaa muujinaysa inta aad sannadkii ku bixiso.';
 
   @override
-  String get storyImport2Title => 'Soo deji liis';
+  String get tourCosts3Title => 'Hore u qorshee';
 
   @override
-  String get storyImport2Body => 'Horey ma u haysataa xaashi xisaabeed? Soo deji oo hubi saf kasta ka hor inta aan wax la kaydin.';
+  String get tourCosts3Body => 'Arag bilaha qaaliga ah intaanay iman si cusboonaysiin weyn aanay kuu yaabin.';
 
   @override
-  String get storyImport3Title => 'U wadaag Vaultara';
+  String get tourBusiness1Title => 'La soco kooxdaada';
 
   @override
-  String get storyImport3Body => 'La wadaag sawir, PDF ama qoraal ka yimid ab kale Vaultara si aad u bilowdo diiwaan cusub.';
+  String get tourBusiness1Body => 'Ku dar shaqaale oo hal meel ku hay shahaadooyinkooda, ogolaanshaha iyo liisannadooda.';
 
   @override
-  String get storyCosts1Title => 'Kalandarkaaga';
+  String get tourBusiness2Title => 'Xusuusin iimayl ah';
 
   @override
-  String get storyCosts1Body => 'Ku dar taariikhaha dhicitaanka kalandarka taleefankaaga, oo ag yaal qorshayaashaada kale.';
+  String get tourBusiness2Body => 'Shaqaaluhu waxay helaan iimaylo ka hor inta aysan dukumentiyadoodu dhicin, xataa la\'aan abka.';
 
   @override
-  String get storyCosts2Title => 'Qiimaha cusboonaysiinta';
+  String get tourBusiness3Title => 'Warbixin bille ah';
 
   @override
-  String get storyCosts2Body => 'Geli qiimaha cusboonaysiinta diiwaan, Vaultara ayaa muujinaysa inta aad sannadkii ku bixiso.';
+  String get tourBusiness3Body => 'Bil kasta warbixin ayaa muujisa waxa ansax ah, waxa dhacaya iyo waxa maqan.';
 
   @override
-  String get storyCosts3Title => 'Hore u qorshee';
+  String get tourBusiness4Title => 'Codso cusboonaysiin';
 
   @override
-  String get storyCosts3Body => 'Arag bilaha qaaliga ah intaanay iman si cusboonaysiin weyn aanay kuu yaabin.';
-
-  @override
-  String get storyBusiness1Title => 'La soco kooxdaada';
-
-  @override
-  String get storyBusiness1Body => 'Ku dar shaqaale oo hal meel ku hay shahaadooyinkooda, ogolaanshaha iyo liisannadooda.';
-
-  @override
-  String get storyBusiness2Title => 'Xusuusin iimayl ah';
-
-  @override
-  String get storyBusiness2Body => 'Shaqaaluhu waxay helaan iimaylo ka hor inta aysan dukumentiyadoodu dhicin, xataa la\'aan abka.';
-
-  @override
-  String get storyBusiness3Title => 'Warbixin bille ah';
-
-  @override
-  String get storyBusiness3Body => 'Bil kasta warbixin ayaa muujisa waxa ansax ah, waxa dhacaya iyo waxa maqan.';
-
-  @override
-  String get storyBusiness4Title => 'Codso cusboonaysiin';
-
-  @override
-  String get storyBusiness4Body => 'Dir xiriiriye, shaqaalaha ayaa isagu soo gelinaya dukumentiga la cusboonaysiiyay.';
+  String get tourBusiness4Body => 'Dir xiriiriye, shaqaalaha ayaa isagu soo gelinaya dukumentiga la cusboonaysiiyay.';
 
   @override
   String get categoryHealthAndMedical => 'Caafimaad iyo daryeel';

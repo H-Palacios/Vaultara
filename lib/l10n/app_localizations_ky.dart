@@ -7781,290 +7781,262 @@ class AppLocalizationsKy extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => 'Көчүү, бала, жаңы жумуш же өзгөчө кырдаалбы? Турмуштук окуялар жазууларыңыз, кадамдарыңыз жана күндөрүңүз менен план берет.';
 
   @override
-  String get storySampleQuestion => 'Быйыл эмненин мөөнөтү бүтөт?';
+  String get tourHome1Title => 'Күнүңүз бир караганда';
 
   @override
-  String storySampleAnswer(String name) {
-    return '$name мөөнөтү мартта бүтөт. Бир ай мурун эскертме керекпи?';
-  }
+  String get tourHome1Body => 'Башкы экран бүгүн маанилүүнү көрсөтөт: жакында мөөнөтү бүтө турган нерселер жана канча жазууңуз бар.';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name мөөнөтү 30 күндөн кийин бүтөт. Жаңыртуу үчүн басыңыз.';
-  }
+  String get tourHome2Title => 'Каалаганын табыңыз';
 
   @override
-  String get storySampleGym => 'Спортзал мүчөлүгү';
+  String get tourHome2Body => 'Аты, тобу же адамы боюнча жазуу табуу үчүн издөөнү басыңыз.';
 
   @override
-  String get storySampleFirstAid => 'Биринчи жардам сертификаты';
+  String get tourHome3Title => 'Саякаттар жана пландар';
 
   @override
-  String get storySampleEncrypt => 'Сүрөттөрдү шифрлөө';
+  String get tourHome3Body => 'Пландап жаткан саякаттарыңыз жана жүрүп жаткан турмуштук окуя пландары калган иштери менен бул жерде көрүнөт.';
 
   @override
-  String get storySampleAppLock => 'Колдонмо кулпусу';
+  String get tourHome4Title => 'Бир басуу менен жардам';
 
   @override
-  String get storySampleHideApp => 'Колдонмо которгучта мазмунду жашыруу';
+  String get tourHome4Body => 'Учкун баскычы «Vaultara\'дан сураңыз» ачат. Сүрөтүңүз профилди, жөндөөлөрдү жана сабактарды ачат.';
 
   @override
-  String get storyHome1Title => 'Күнүңүз бир караганда';
+  String get tourRenew1Title => 'Эскертме келет';
 
   @override
-  String get storyHome1Body => 'Башкы экран бүгүн маанилүүнү көрсөтөт: жакында мөөнөтү бүтө турган нерселер жана канча жазууңуз бар.';
+  String get tourRenew1Body => 'Жазуунун мөөнөтү бүткөнгө чейин Vaultara эскертет. Жазууну ачуу үчүн эскертмени басыңыз.';
 
   @override
-  String get storyHome2Title => 'Каалаганын табыңыз';
+  String get tourRenew2Title => 'Жаңы күндү сактаңыз';
 
   @override
-  String get storyHome2Body => 'Аты, тобу же адамы боюнча жазуу табуу үчүн издөөнү басыңыз.';
+  String get tourRenew2Body => 'Жаңырттыңызбы? Жаңы мөөнөттү ушул жерден тандап, сактаңыз. Эскертүүлөр жаңы күнгө жылат.';
 
   @override
-  String get storyHome3Title => 'Саякаттар жана пландар';
+  String get tourRenew3Title => 'Кантип экенин билбейсизби?';
 
   @override
-  String get storyHome3Body => 'Пландап жаткан саякаттарыңыз жана жүрүп жаткан турмуштук окуя пландары калган иштери менен бул жерде көрүнөт.';
+  String get tourRenew3Body => 'Көп жазууларда жаңылоо тизмеси бар. Vaultara\'дан сураңыз өлкөңүздүн кадамдарын расмий шилтемелер менен таба алат.';
 
   @override
-  String get storyHome4Title => 'Бир басуу менен жардам';
+  String get tourRenew4Title => 'Кайталансын';
 
   @override
-  String get storyHome4Body => 'Учкун баскычы «Vaultara\'дан сураңыз» ачат. Сүрөтүңүз профилди, жөндөөлөрдү жана сабактарды ачат.';
+  String get tourRenew4Body => 'Жазылуулар жана жылдык төлөмдөр үчүн Өзү жаңыланат параметрин күйгүзүңүз, ошондо күн өзү алдыга жылат.';
 
   @override
-  String get storyRenew1Title => 'Эскертме келет';
+  String get tourAsk1Title => 'Өз сөзүңүз менен сураңыз';
 
   @override
-  String get storyRenew1Body => 'Жазуунун мөөнөтү бүткөнгө чейин Vaultara эскертет. Жазууну ачуу үчүн эскертмени басыңыз.';
+  String get tourAsk1Body => '«Быйыл эмненин мөөнөтү бүтөт?» деп сурап, өз жазууларыңыздан жооп алыңыз.';
 
   @override
-  String get storyRenew2Title => 'Жаңы күндү сактаңыз';
+  String get tourAsk2Title => 'Терүүнүн ордуна сүйлөңүз';
 
   @override
-  String get storyRenew2Body => 'Жаңырттыңызбы? «Жаңылоо» басып, жаңы мөөнөттү киргизиңиз. Эскертмелер да кошо жылат.';
+  String get tourAsk2Body => 'Микрофонду басып сүйлөңүз. Сүйлөп жатканда сөздөр көрүнөт жана дароо жөнөтө аласыз.';
 
   @override
-  String get storyRenew3Title => 'Кантип экенин билбейсизби?';
+  String get tourAsk3Title => 'Ар бир өзгөртүүнү сиз ырастайсыз';
 
   @override
-  String get storyRenew3Body => 'Көп жазууларда жаңылоо тизмеси бар. Vaultara\'дан сураңыз өлкөңүздүн кадамдарын расмий шилтемелер менен таба алат.';
+  String get tourAsk3Body => 'Жазуу кошууну же өзгөртүүнү сураңыз, адегенде карта көрөсүз. Ырастамайынча эч нерсе сакталбайт.';
 
   @override
-  String get storyRenew4Title => 'Кайталансын';
+  String get tourAsk4Title => 'Каалаган өзгөртүүнү жокко чыгарыңыз';
 
   @override
-  String get storyRenew4Body => 'Жазылуулар жана жылдык төлөмдөр үчүн Өзү жаңыланат параметрин күйгүзүңүз, ошондо күн өзү алдыга жылат.';
+  String get tourAsk4Body => 'Оюңуз өзгөрдүбү? Ырасталган ар бир өзгөртүүнү ошол эле картадан жокко чыгарса болот.';
 
   @override
-  String get storyAsk1Title => 'Өз сөзүңүз менен сураңыз';
+  String get tourAsk5Title => 'Токтогон жериңизден улантыңыз';
 
   @override
-  String get storyAsk1Body => '«Быйыл эмненин мөөнөтү бүтөт?» деп сурап, өз жазууларыңыздан жооп алыңыз.';
+  String get tourAsk5Body => 'Маектер «Чат тарыхы» бөлүмүндө 90 күн сакталат, сунушталган суроолор баштоого жардам берет.';
 
   @override
-  String get storyAsk2Title => 'Терүүнүн ордуна сүйлөңүз';
+  String get tourAsk6Title => 'Жазуулардан да көп';
 
   @override
-  String get storyAsk2Body => 'Микрофонду басып сүйлөңүз. Сүйлөп жатканда сөздөр көрүнөт жана дароо жөнөтө аласыз.';
+  String get tourAsk6Body => 'Ал ошондой эле сапар пландай алат, адам кошо алат, өлкөңүздүн жаңылоо кадамдарын таба алат жана жазууларды бөлүшө алат, расмий барактарга шилтемелер менен.';
 
   @override
-  String get storyAsk3Title => 'Ар бир өзгөртүүнү сиз ырастайсыз';
+  String get tourWallet1Title => 'Адегенде даярданыңыз';
 
   @override
-  String get storyAsk3Body => 'Жазуу кошууну же өзгөртүүнү сураңыз, адегенде карта көрөсүз. Ырастамайынча эч нерсе сакталбайт.';
+  String get tourWallet1Body => 'Картаны же документти ачып, кайда сактаарыңызды тандаңыз, мисалы капчык же сумка.';
 
   @override
-  String get storyAsk4Title => 'Каалаган өзгөртүүнү жокко чыгарыңыз';
+  String get tourWallet2Title => 'Бөгөттөө номерин сактаңыз';
 
   @override
-  String get storyAsk4Body => 'Оюңуз өзгөрдүбү? Ырасталган ар бир өзгөртүүнү ошол эле картадан жокко чыгарса болот.';
+  String get tourWallet2Body => 'Ар бир банктын бөгөттөө номерин азыр кошуңуз. Ал картада жазылган, керек болгондо карта жаныңызда болбойт.';
 
   @override
-  String get storyAsk5Title => 'Токтогон жериңизден улантыңыз';
+  String get tourWallet3Title => 'Эгер жоголсо';
 
   @override
-  String get storyAsk5Body => 'Маектер «Чат тарыхы» бөлүмүндө 90 күн сакталат, сунушталган суроолор баштоого жардам берет.';
+  String get tourWallet3Body => 'Капчыгыңыз жоголсо, ушул жерден туура баскычты таптаңыз. Vaultara ичинде болгондун баарын көрсөтөт, ошондуктан эмнени бөгөттөө керектигин билесиз.';
 
   @override
-  String get storyAsk6Title => 'Жазуулардан да көп';
+  String get tourWallet4Title => 'Карталарды мүнөттөрдө бөгөттөңүз';
 
   @override
-  String get storyAsk6Body => 'Ал ошондой эле сапар пландай алат, адам кошо алат, өлкөңүздүн жаңылоо кадамдарын таба алат жана жазууларды бөлүшө алат, расмий барактарга шилтемелер менен.';
+  String get tourWallet4Body => 'Бир басуу менен ар бир банкка чалып, карталарды бөгөттөлгөн деп белгилеңиз жана арыз номерин сактаңыз.';
 
   @override
-  String get storyWallet1Title => 'Адегенде даярданыңыз';
+  String get tourWallet5Title => 'Калыбына келтирип, коопсуз болуңуз';
 
   @override
-  String get storyWallet1Body => 'Картаны же документти ачып, кайда сактаарыңызды тандаңыз, мисалы капчык же сумка.';
+  String get tourWallet5Body => 'Документтерди калыбына келтириңиз, эскерткенде көчүрмөлөрдү текшериңиз жана табылса «Таптым» басыңыз.';
 
   @override
-  String get storyWallet2Title => 'Бөгөттөө номерин сактаңыз';
+  String get tourLife1Title => 'Чоң учурлар, бир план';
 
   @override
-  String get storyWallet2Body => 'Ар бир банктын бөгөттөө номерин азыр кошуңуз. Ал картада жазылган, керек болгондо карта жаныңызда болбойт.';
+  String get tourLife1Body => 'Көчүү, бала, жаңы жумуш же өзгөчө кырдаал: «Жашоодогу окуялар» бөлүмүндө эмне болуп жатканын тандаңыз.';
 
   @override
-  String get storyWallet3Title => 'Эгер жоголсо';
+  String get tourLife2Title => 'Жазууларыңыз тартипте';
 
   @override
-  String get storyWallet3Body => 'Жоголгон же уурдалган бөлүмүн ачып, Жоголду же Уурдалды дегенди басыңыз. Vaultara ичинде болгондун баарын көрсөтөт.';
+  String get tourLife2Body => 'План кайсы жазууларды жаңыртуу, токтотуу же узартуу керектигин жана кайсыларын кошуу керек болушу мүмкүн экенин көрсөтөт.';
 
   @override
-  String get storyWallet4Title => 'Карталарды мүнөттөрдө бөгөттөңүз';
+  String get tourLife3Title => 'Кадамдар жана күндөр';
 
   @override
-  String get storyWallet4Body => 'Бир басуу менен ар бир банкка чалып, карталарды бөгөттөлгөн деп белгилеңиз жана арыз номерин сактаңыз.';
+  String get tourLife3Body => 'Ар бир пландын жазуу эмес кадамдары да бар, ал эми башталыш күндөрү эч нерсе кечикпеши үчүн качан арыз берүүнү айтат.';
 
   @override
-  String get storyWallet5Title => 'Калыбына келтирип, коопсуз болуңуз';
+  String get tourLife4Title => 'Өзүңүзгө ылайыкташтырыңыз';
 
   @override
-  String get storyWallet5Body => 'Документтерди калыбына келтириңиз, эскерткенде көчүрмөлөрдү текшериңиз жана табылса «Таптым» басыңыз.';
+  String get tourLife4Body => 'Өз кадамдарыңызды кошуңуз, планды PDF катары бөлүшүңүз жана күнгө жакын эскертмелерди алыңыз.';
 
   @override
-  String get storyLife1Title => 'Чоң учурлар, бир план';
+  String get tourPhotos1Title => 'Документтериңиздин сүрөттөрү';
 
   @override
-  String get storyLife1Body => 'Көчүү, бала, жаңы жумуш же өзгөчө кырдаал: «Жашоодогу окуялар» бөлүмүндө эмне болуп жатканын тандаңыз.';
+  String get tourPhotos1Body => 'Жазуудан картанын же документтин алдыңкы жана арткы бетинин сүрөттөрүн кошуңуз.';
 
   @override
-  String get storyLife2Title => 'Жазууларыңыз тартипте';
+  String get tourPhotos2Title => 'Телефондо шифрленген';
 
   @override
-  String get storyLife2Body => 'План кайсы жазууларды жаңыртуу, токтотуу же узартуу керектигин жана кайсыларын кошуу керек болушу мүмкүн экенин көрсөтөт.';
+  String get tourPhotos2Body => 'Сүрөт шифрлөөнү күйгүзүңүз, сүрөттөр жүктөлгөнгө чейин телефондо кулпуланат.';
 
   @override
-  String get storyLife3Title => 'Кадамдар жана күндөр';
+  String get tourPhotos3Title => 'Сезимтал жазууларды кулпулаңыз';
 
   @override
-  String get storyLife3Body => 'Кадамдар жазуу эмес иштерди камтыйт, ал эми башталыш күндөрү эч нерсе кечикпеши үчүн качан арыз берүү керектигин айтат.';
+  String get tourPhotos3Body => 'Жазууну кулпулаңыз, ачылардан мурун манжа изин же экран кулпусун сурайт.';
 
   @override
-  String get storyLife4Title => 'Өзүңүзгө ылайыкташтырыңыз';
+  String get tourPhotos4Title => 'Бүт колдонмону кулпулаңыз';
 
   @override
-  String get storyLife4Body => 'Өз кадамдарыңызды кошуңуз, планды PDF катары бөлүшүңүз жана күнгө жакын эскертмелерди алыңыз.';
+  String get tourPhotos4Body => 'Коопсуздук жөндөөлөрүндө колдонмо кулпусун күйгүзүп, колдонмо которгондо мазмунду жашырыңыз.';
 
   @override
-  String get storyPhotos1Title => 'Документтериңиздин сүрөттөрү';
+  String get tourShare1Title => 'Бир жазуу менен бөлүшүңүз';
 
   @override
-  String get storyPhotos1Body => 'Жазуудан картанын же документтин алдыңкы жана арткы бетинин сүрөттөрүн кошуңуз.';
+  String get tourShare1Body => 'Жазууну ачып, ошол жазууну гана көрсөткөн шилтеме менен бөлүшүңүз, башка эч нерсе жок.';
 
   @override
-  String get storyPhotos2Title => 'Телефондо шифрленген';
+  String get tourShare2Title => 'Далилдер топтому';
 
   @override
-  String get storyPhotos2Body => 'Сүрөт шифрлөөнү күйгүзүңүз, сүрөттөр жүктөлгөнгө чейин телефондо кулпуланат.';
+  String get tourShare2Body => 'Тандалган жазууларды сүрөттөрү менен кошо үй ээси, банк же мекеме үчүн бир PDF\'ке чогултуңуз.';
 
   @override
-  String get storyPhotos3Title => 'Сезимтал жазууларды кулпулаңыз';
+  String get tourShare3Title => 'Көзөмөл сизде';
 
   @override
-  String get storyPhotos3Body => 'Жазууну кулпулаңыз, ачылардан мурун манжа изин же экран кулпусун сурайт.';
+  String get tourShare3Body => '«Бөлүшүлгөн шилтемелер» сиз түзгөн ар бир шилтемени көрсөтөт. Каалаганын каалаган убакта токтотуңуз, ал мындан ары ачылбайт.';
 
   @override
-  String get storyPhotos4Title => 'Бүт колдонмону кулпулаңыз';
+  String get tourHousehold1Title => 'Үй-бүлөңүздү чакырыңыз';
 
   @override
-  String get storyPhotos4Body => 'Коопсуздук жөндөөлөрүндө колдонмо кулпусун күйгүзүп, колдонмо которгондо мазмунду жашырыңыз.';
+  String get tourHousehold1Body => 'Чакыруу кодун же шилтемени бөлүшүңүз. Ар ким өз аккаунту менен кирет.';
 
   @override
-  String get storyShare1Title => 'Бир жазуу менен бөлүшүңүз';
+  String get tourHousehold2Title => 'Бир жазуулар топтому';
 
   @override
-  String get storyShare1Body => 'Жазууну ачып, ошол жазууну гана көрсөткөн шилтеме менен бөлүшүңүз, башка эч нерсе жок.';
+  String get tourHousehold2Body => 'Баары бирдей жалпы жазууларды көрүп, бирдей эскертмелерди алышат.';
 
   @override
-  String get storyShare2Title => 'Далилдер топтому';
+  String get tourHousehold3Title => 'Кимдики?';
 
   @override
-  String get storyShare2Body => 'Тандалган жазууларды сүрөттөрү менен кошо үй ээси, банк же мекеме үчүн бир PDF\'ке чогултуңуз.';
+  String get tourHousehold3Body => 'Ар бир жазуу кимдир бирөөгө таандык болушу мүмкүн. Анын аты жазууда жана эскертмелерде көрүнөт.';
 
   @override
-  String get storyShare3Title => 'Көзөмөл сизде';
+  String get tourImport1Title => 'Картаны скандаңыз';
 
   @override
-  String get storyShare3Body => '«Бөлүшүлгөн шилтемелер» сиз түзгөн ар бир шилтемени көрсөтөт. Каалаганын каалаган убакта токтотуңуз, ал мындан ары ачылбайт.';
+  String get tourImport1Body => 'Картанын же документтин сүрөтүн тартыңыз, Vaultara атын жана мөөнөтүн толтурат.';
 
   @override
-  String get storyHousehold1Title => 'Үй-бүлөңүздү чакырыңыз';
+  String get tourImport2Title => 'Тизмени импорттоңуз';
 
   @override
-  String get storyHousehold1Body => 'Чакыруу кодун же шилтемени бөлүшүңүз. Ар ким өз аккаунту менен кирет.';
+  String get tourImport2Body => 'Таблицаңыз барбы? Импорттоп, сактоодон мурун ар бир сапты текшериңиз.';
 
   @override
-  String get storyHousehold2Title => 'Бир жазуулар топтому';
+  String get tourImport3Title => 'Vaultara\'га бөлүшүңүз';
 
   @override
-  String get storyHousehold2Body => 'Баары бирдей жалпы жазууларды көрүп, бирдей эскертмелерди алышат.';
+  String get tourImport3Body => 'Жаңы жазуу баштоо үчүн башка колдонмодон сүрөт, PDF же текстти Vaultara\'га бөлүшүңүз.';
 
   @override
-  String get storyHousehold3Title => 'Кимдики?';
+  String get tourCosts1Title => 'Жылнаамаңызда';
 
   @override
-  String get storyHousehold3Body => 'Ар бир жазуу кимдир бирөөгө таандык болушу мүмкүн. Анын аты жазууда жана эскертмелерде көрүнөт.';
+  String get tourCosts1Body => 'Мөөнөттөрдү башка пландарыңыздын жанына телефон жылнаамасына кошуңуз.';
 
   @override
-  String get storyImport1Title => 'Картаны скандаңыз';
+  String get tourCosts2Title => 'Жаңыртуунун баасы';
 
   @override
-  String get storyImport1Body => 'Картанын же документтин сүрөтүн тартыңыз, Vaultara атын жана мөөнөтүн толтурат.';
+  String get tourCosts2Body => 'Жазууга жаңыртуунун баасын киргизиңиз, Vaultara жылына канча коротоорун көрсөтөт.';
 
   @override
-  String get storyImport2Title => 'Тизмени импорттоңуз';
+  String get tourCosts3Title => 'Алдын ала пландаңыз';
 
   @override
-  String get storyImport2Body => 'Таблицаңыз барбы? Импорттоп, сактоодон мурун ар бир сапты текшериңиз.';
+  String get tourCosts3Body => 'Кымбат айларды алдын ала көрүңүз, чоң жаңыртуу эч качан күтүүсүз болбойт.';
 
   @override
-  String get storyImport3Title => 'Vaultara\'га бөлүшүңүз';
+  String get tourBusiness1Title => 'Командаңызды көзөмөлдөңүз';
 
   @override
-  String get storyImport3Body => 'Жаңы жазуу баштоо үчүн башка колдонмодон сүрөт, PDF же текстти Vaultara\'га бөлүшүңүз.';
+  String get tourBusiness1Body => 'Кызматкерлерди кошуп, алардын сертификаттарын, уруксаттарын жана лицензияларын бир жерде сактаңыз.';
 
   @override
-  String get storyCosts1Title => 'Жылнаамаңызда';
+  String get tourBusiness2Title => 'Электрондук почта эскертмелери';
 
   @override
-  String get storyCosts1Body => 'Мөөнөттөрдү башка пландарыңыздын жанына телефон жылнаамасына кошуңуз.';
+  String get tourBusiness2Body => 'Кызматкерлер документтеринин мөөнөтү бүткөнгө чейин кат алышат, колдонмосуз да.';
 
   @override
-  String get storyCosts2Title => 'Жаңыртуунун баасы';
+  String get tourBusiness3Title => 'Айлык отчет';
 
   @override
-  String get storyCosts2Body => 'Жазууга жаңыртуунун баасын киргизиңиз, Vaultara жылына канча коротоорун көрсөтөт.';
+  String get tourBusiness3Body => 'Ар айда отчет эмне жарактуу, эмненин мөөнөтү бүтүп жатканын жана эмне жетишпегенин көрсөтөт.';
 
   @override
-  String get storyCosts3Title => 'Алдын ала пландаңыз';
+  String get tourBusiness4Title => 'Жаңыртууну сураңыз';
 
   @override
-  String get storyCosts3Body => 'Кымбат айларды алдын ала көрүңүз, чоң жаңыртуу эч качан күтүүсүз болбойт.';
-
-  @override
-  String get storyBusiness1Title => 'Командаңызды көзөмөлдөңүз';
-
-  @override
-  String get storyBusiness1Body => 'Кызматкерлерди кошуп, алардын сертификаттарын, уруксаттарын жана лицензияларын бир жерде сактаңыз.';
-
-  @override
-  String get storyBusiness2Title => 'Электрондук почта эскертмелери';
-
-  @override
-  String get storyBusiness2Body => 'Кызматкерлер документтеринин мөөнөтү бүткөнгө чейин кат алышат, колдонмосуз да.';
-
-  @override
-  String get storyBusiness3Title => 'Айлык отчет';
-
-  @override
-  String get storyBusiness3Body => 'Ар айда отчет эмне жарактуу, эмненин мөөнөтү бүтүп жатканын жана эмне жетишпегенин көрсөтөт.';
-
-  @override
-  String get storyBusiness4Title => 'Жаңыртууну сураңыз';
-
-  @override
-  String get storyBusiness4Body => 'Шилтеме жөнөтүңүз, кызматкер жаңыртылган документти өзү жүктөйт.';
+  String get tourBusiness4Body => 'Шилтеме жөнөтүңүз, кызматкер жаңыртылган документти өзү жүктөйт.';
 
   @override
   String get categoryHealthAndMedical => 'Ден соолук жана медицина';

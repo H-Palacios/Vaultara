@@ -7781,290 +7781,262 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => 'گواستنەوە، منداڵ، کاری نوێ یان بارودۆخی کتوپڕ؟ ڕووداوەکانی ژیان پلانێکت دەداتێ بە تۆمار و هەنگاو و بەروارەکانتەوە.';
 
   @override
-  String get storySampleQuestion => 'ئەمساڵ چی بەسەردەچێت؟';
+  String get tourHome1Title => 'ڕۆژەکەت بە یەک سەیرکردن';
 
   @override
-  String storySampleAnswer(String name) {
-    return '$nameەکەت لە ئاداردا بەسەردەچێت. بیرخەرەوەیەکت دەوێت مانگێک پێشتر؟';
-  }
+  String get tourHome1Body => 'شاشەی سەرەکی ئەوە پیشان دەدات کە ئەمڕۆ گرنگە: چی بەم زووانە بەسەردەچێت و چەند تۆمارت هەیە.';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name لە 30 ڕۆژدا بەسەردەچێت. بۆ نوێکردنەوە دەستی لێبدە.';
-  }
+  String get tourHome2Title => 'هەر شتێک بدۆزەرەوە';
 
   @override
-  String get storySampleGym => 'بەشداریکردنی هۆڵی وەرزش';
+  String get tourHome2Body => 'دەست لە گەڕان بدە بۆ دۆزینەوەی تۆمارێک بە ناو، گروپ یان کەس.';
 
   @override
-  String get storySampleFirstAid => 'بڕوانامەی فریاگوزاری سەرەتایی';
+  String get tourHome3Title => 'گەشت و پلانەکان';
 
   @override
-  String get storySampleEncrypt => 'وێنەکان کۆد بکە';
+  String get tourHome3Body => 'ئەو گەشتانەی پلانیان بۆ دادەنێیت و پلانە بەردەوامەکانی ڕووداوەکانی ژیان لێرە دەردەکەون، لەگەڵ ئەوەی ماوەتەوە.';
 
   @override
-  String get storySampleAppLock => 'قوفڵی ئەپ';
+  String get tourHome4Title => 'یارمەتی بە یەک دەستلێدان';
 
   @override
-  String get storySampleHideApp => 'ناوەڕۆک لە گۆڕەری ئەپەکاندا بشارەوە';
+  String get tourHome4Body => 'دوگمەی پریشک «لە Vaultara بپرسە» دەکاتەوە. وێنەکەت پرۆفایل، ڕێکخستنەکان و فێرکارییەکان دەکاتەوە.';
 
   @override
-  String get storyHome1Title => 'ڕۆژەکەت بە یەک سەیرکردن';
+  String get tourRenew1Title => 'بیرخەرەوەیەک دێت';
 
   @override
-  String get storyHome1Body => 'شاشەی سەرەکی ئەوە پیشان دەدات کە ئەمڕۆ گرنگە: چی بەم زووانە بەسەردەچێت و چەند تۆمارت هەیە.';
+  String get tourRenew1Body => 'پێش ئەوەی تۆمارێک بەسەربچێت، Vaultara بیرت دەخاتەوە. دەست لە بیرخەرەوەکە بدە بۆ کردنەوەی تۆمارەکە.';
 
   @override
-  String get storyHome2Title => 'هەر شتێک بدۆزەرەوە';
+  String get tourRenew2Title => 'بەروارە نوێیەکە پاشەکەوت بکە';
 
   @override
-  String get storyHome2Body => 'دەست لە گەڕان بدە بۆ دۆزینەوەی تۆمارێک بە ناو، گروپ یان کەس.';
+  String get tourRenew2Body => 'نوێت کردەوە؟ بەرواری بەسەرچوونی نوێ لێرە هەڵبژێرە و پاشەکەوتی بکە. بیرخەرەوەکانت دەچنە سەر بەروارە نوێیەکە.';
 
   @override
-  String get storyHome3Title => 'گەشت و پلانەکان';
+  String get tourRenew3Title => 'دڵنیا نیت چۆن؟';
 
   @override
-  String get storyHome3Body => 'ئەو گەشتانەی پلانیان بۆ دادەنێیت و پلانە بەردەوامەکانی ڕووداوەکانی ژیان لێرە دەردەکەون، لەگەڵ ئەوەی ماوەتەوە.';
+  String get tourRenew3Body => 'زۆر تۆمار لیستی پشکنینی نوێکردنەوەیان هەیە. لە Vaultara بپرسە دەتوانێت هەنگاوەکان بۆ وڵاتەکەت لەگەڵ بەستەری فەرمی بدۆزێتەوە.';
 
   @override
-  String get storyHome4Title => 'یارمەتی بە یەک دەستلێدان';
+  String get tourRenew4Title => 'با دووبارە ببێتەوە';
 
   @override
-  String get storyHome4Body => 'دوگمەی پریشک «لە Vaultara بپرسە» دەکاتەوە. وێنەکەت پرۆفایل، ڕێکخستنەکان و فێرکارییەکان دەکاتەوە.';
+  String get tourRenew4Body => 'بۆ بەشداریکردن و پارەدانی ساڵانە، خۆی نوێ دەبێتەوە چالاک بکە و ڕۆژەکە خۆی دەچێتە پێشەوە.';
 
   @override
-  String get storyRenew1Title => 'بیرخەرەوەیەک دێت';
+  String get tourAsk1Title => 'بە وشەی خۆت بپرسە';
 
   @override
-  String get storyRenew1Body => 'پێش ئەوەی تۆمارێک بەسەربچێت، Vaultara بیرت دەخاتەوە. دەست لە بیرخەرەوەکە بدە بۆ کردنەوەی تۆمارەکە.';
+  String get tourAsk1Body => 'بپرسە وەک «ئەمساڵ چی بەسەردەچێت؟» و وەڵام لە تۆمارەکانی خۆتەوە وەربگرە.';
 
   @override
-  String get storyRenew2Title => 'بەروارە نوێیەکە پاشەکەوت بکە';
+  String get tourAsk2Title => 'لە جیاتی نووسین قسە بکە';
 
   @override
-  String get storyRenew2Body => 'نوێت کردەوە؟ دەست لە «نوێکردنەوە» بدە و بەرواری بەسەرچوونی نوێ بنووسە. بیرخەرەوەکانت لەگەڵیدا دەجووڵێن.';
+  String get tourAsk2Body => 'دەست لە مایکرۆفۆن بدە و قسە بکە. وشەکانت لە کاتی قسەکردندا دەردەکەون و دەتوانیت یەکسەر بینێریت.';
 
   @override
-  String get storyRenew3Title => 'دڵنیا نیت چۆن؟';
+  String get tourAsk3Title => 'تۆ هەموو گۆڕانکارییەک پشتڕاست دەکەیتەوە';
 
   @override
-  String get storyRenew3Body => 'زۆر تۆمار لیستی پشکنینی نوێکردنەوەیان هەیە. لە Vaultara بپرسە دەتوانێت هەنگاوەکان بۆ وڵاتەکەت لەگەڵ بەستەری فەرمی بدۆزێتەوە.';
+  String get tourAsk3Body => 'داوای زیادکردن یان گۆڕینی تۆمارێک بکە و سەرەتا کارتێک دەبینیت. هیچ شتێک پاشەکەوت نابێت تا پشتڕاستی نەکەیتەوە.';
 
   @override
-  String get storyRenew4Title => 'با دووبارە ببێتەوە';
+  String get tourAsk4Title => 'هەر گۆڕانکارییەک هەڵبوەشێنەوە';
 
   @override
-  String get storyRenew4Body => 'بۆ بەشداریکردن و پارەدانی ساڵانە، خۆی نوێ دەبێتەوە چالاک بکە و ڕۆژەکە خۆی دەچێتە پێشەوە.';
+  String get tourAsk4Body => 'بیرت گۆڕی؟ هەموو گۆڕانکارییەکی پشتڕاستکراو لە هەمان کارتەوە هەڵدەوەشێتەوە.';
 
   @override
-  String get storyAsk1Title => 'بە وشەی خۆت بپرسە';
+  String get tourAsk5Title => 'لەو شوێنەوە بەردەوام بە کە وەستایت';
 
   @override
-  String get storyAsk1Body => 'بپرسە وەک «ئەمساڵ چی بەسەردەچێت؟» و وەڵام لە تۆمارەکانی خۆتەوە وەربگرە.';
+  String get tourAsk5Body => 'گفتوگۆکان 90 ڕۆژ لە «مێژووی گفتوگۆ» دەمێننەوە، و پرسیارە پێشنیارکراوەکان یارمەتیت دەدەن دەست پێبکەیت.';
 
   @override
-  String get storyAsk2Title => 'لە جیاتی نووسین قسە بکە';
+  String get tourAsk6Title => 'زیاتر لە تۆمار';
 
   @override
-  String get storyAsk2Body => 'دەست لە مایکرۆفۆن بدە و قسە بکە. وشەکانت لە کاتی قسەکردندا دەردەکەون و دەتوانیت یەکسەر بینێریت.';
+  String get tourAsk6Body => 'دەتوانێت گەشت پلان بکات، کەس زیاد بکات، هەنگاوەکانی نوێکردنەوە بۆ وڵاتەکەت بدۆزێتەوە و تۆمار هاوبەش بکات، لەگەڵ بەستەر بۆ پەڕە فەرمییەکان.';
 
   @override
-  String get storyAsk3Title => 'تۆ هەموو گۆڕانکارییەک پشتڕاست دەکەیتەوە';
+  String get tourWallet1Title => 'سەرەتا ئامادە بە';
 
   @override
-  String get storyAsk3Body => 'داوای زیادکردن یان گۆڕینی تۆمارێک بکە و سەرەتا کارتێک دەبینیت. هیچ شتێک پاشەکەوت نابێت تا پشتڕاستی نەکەیتەوە.';
+  String get tourWallet1Body => 'کارتێک یان بەڵگەنامەیەک بکەرەوە و هەڵبژێرە لە کوێ هەڵیدەگریت، وەک جزدان یان جانتاکەت.';
 
   @override
-  String get storyAsk4Title => 'هەر گۆڕانکارییەک هەڵبوەشێنەوە';
+  String get tourWallet2Title => 'ژمارەی داخستن پاشەکەوت بکە';
 
   @override
-  String get storyAsk4Body => 'بیرت گۆڕی؟ هەموو گۆڕانکارییەکی پشتڕاستکراو لە هەمان کارتەوە هەڵدەوەشێتەوە.';
+  String get tourWallet2Body => 'ئێستا ژمارەی داخستنی هەر بانکێک زیاد بکە. لەسەر کارتەکەیە، کە کاتێک پێویستت پێی بوو لات نابێت.';
 
   @override
-  String get storyAsk5Title => 'لەو شوێنەوە بەردەوام بە کە وەستایت';
+  String get tourWallet3Title => 'ئەگەر ون بوو';
 
   @override
-  String get storyAsk5Body => 'گفتوگۆکان 90 ڕۆژ لە «مێژووی گفتوگۆ» دەمێننەوە، و پرسیارە پێشنیارکراوەکان یارمەتیت دەدەن دەست پێبکەیت.';
+  String get tourWallet3Body => 'ئەگەر جزدانەکەت ون بوو، لێرە دەست لەو دوگمەیە بدە کە دەگونجێت. Vaultara هەموو ئەوەی لە ناویدا بوو پیشان دەدات، بۆ ئەوەی بزانیت چی ڕابگریت.';
 
   @override
-  String get storyAsk6Title => 'زیاتر لە تۆمار';
+  String get tourWallet4Title => 'لە چەند خولەکێکدا کارتەکان دابخە';
 
   @override
-  String get storyAsk6Body => 'دەتوانێت گەشت پلان بکات، کەس زیاد بکات، هەنگاوەکانی نوێکردنەوە بۆ وڵاتەکەت بدۆزێتەوە و تۆمار هاوبەش بکات، لەگەڵ بەستەر بۆ پەڕە فەرمییەکان.';
+  String get tourWallet4Body => 'بە یەک دەستلێدان پەیوەندی بە هەر بانکێکەوە بکە، کارتەکان وەک داخراو نیشان بکە و ژمارەی ڕاپۆرتەکە پاشەکەوت بکە.';
 
   @override
-  String get storyWallet1Title => 'سەرەتا ئامادە بە';
+  String get tourWallet5Title => 'جێگرەوە بکە و سەلامەت بمێنەوە';
 
   @override
-  String get storyWallet1Body => 'کارتێک یان بەڵگەنامەیەک بکەرەوە و هەڵبژێرە لە کوێ هەڵیدەگریت، وەک جزدان یان جانتاکەت.';
+  String get tourWallet5Body => 'بەڵگەنامەکانت جێگرەوە بکە، کاتێک بیرت خرایەوە کەشفی حیساب بپشکنە و ئەگەر دۆزرایەوە دەست لە «دۆزیمەوە» بدە.';
 
   @override
-  String get storyWallet2Title => 'ژمارەی داخستن پاشەکەوت بکە';
+  String get tourLife1Title => 'ساتە گەورەکان، یەک پلان';
 
   @override
-  String get storyWallet2Body => 'ئێستا ژمارەی داخستنی هەر بانکێک زیاد بکە. لەسەر کارتەکەیە، کە کاتێک پێویستت پێی بوو لات نابێت.';
+  String get tourLife1Body => 'گواستنەوە، منداڵ، کاری نوێ یان بارودۆخی کتوپڕ: لە «ڕووداوەکانی ژیان» هەڵبژێرە چی ڕوودەدات.';
 
   @override
-  String get storyWallet3Title => 'ئەگەر ون بوو';
+  String get tourLife2Title => 'تۆمارەکانت ڕێکخراو';
 
   @override
-  String get storyWallet3Body => 'ونبوو یان دزراو بکەرەوە و ونبوو یان دزراو دابگرە. Vaultara هەموو ئەوەی لە ناویدا بوو پیشان دەدات.';
+  String get tourLife2Body => 'پلانەکە پیشان دەدات کام تۆمار نوێ بکەیتەوە، هەڵبوەشێنیتەوە یان درێژ بکەیتەوە، و کامیان لەوانەیە زیاد بکەیت.';
 
   @override
-  String get storyWallet4Title => 'لە چەند خولەکێکدا کارتەکان دابخە';
+  String get tourLife3Title => 'هەنگاو و بەروارەکان';
 
   @override
-  String get storyWallet4Body => 'بە یەک دەستلێدان پەیوەندی بە هەر بانکێکەوە بکە، کارتەکان وەک داخراو نیشان بکە و ژمارەی ڕاپۆرتەکە پاشەکەوت بکە.';
+  String get tourLife3Body => 'هەر پلانێک هەنگاوی تریشی هەیە کە تۆمار نین، و بەرواری دەستپێک کە پێت دەڵێن کەی داوا بکەیت تا هیچ دوانەکەوێت.';
 
   @override
-  String get storyWallet5Title => 'جێگرەوە بکە و سەلامەت بمێنەوە';
+  String get tourLife4Title => 'بیکە هی خۆت';
 
   @override
-  String get storyWallet5Body => 'بەڵگەنامەکانت جێگرەوە بکە، کاتێک بیرت خرایەوە کەشفی حیساب بپشکنە و ئەگەر دۆزرایەوە دەست لە «دۆزیمەوە» بدە.';
+  String get tourLife4Body => 'هەنگاوی خۆت زیاد بکە، پلانەکە وەک PDF هاوبەش بکە و لە دەوروبەری بەروارەکە بیرخەرەوە وەربگرە.';
 
   @override
-  String get storyLife1Title => 'ساتە گەورەکان، یەک پلان';
+  String get tourPhotos1Title => 'وێنەی بەڵگەنامەکانت';
 
   @override
-  String get storyLife1Body => 'گواستنەوە، منداڵ، کاری نوێ یان بارودۆخی کتوپڕ: لە «ڕووداوەکانی ژیان» هەڵبژێرە چی ڕوودەدات.';
+  String get tourPhotos1Body => 'لە تۆمارەکەوە، وێنەی ڕووی پێشەوە و دواوەی کارت یان بەڵگەنامەیەک زیاد بکە.';
 
   @override
-  String get storyLife2Title => 'تۆمارەکانت ڕێکخراو';
+  String get tourPhotos2Title => 'لەسەر مۆبایلەکەت کۆدکراو';
 
   @override
-  String get storyLife2Body => 'پلانەکە پیشان دەدات کام تۆمار نوێ بکەیتەوە، هەڵبوەشێنیتەوە یان درێژ بکەیتەوە، و کامیان لەوانەیە زیاد بکەیت.';
+  String get tourPhotos2Body => 'کۆدکردنی وێنە چالاک بکە و وێنەکان پێش بارکردن لەسەر مۆبایلەکەت قوفڵ دەکرێن.';
 
   @override
-  String get storyLife3Title => 'هەنگاو و بەروارەکان';
+  String get tourPhotos3Title => 'تۆمارە هەستیارەکان قوفڵ بکە';
 
   @override
-  String get storyLife3Body => 'هەنگاوەکان ئەوە دەگرنەوە کە تۆمار نییە، و بەرواری دەستپێک پێت دەڵێن کەی داوا بکەیت تا هیچ دوانەکەوێت.';
+  String get tourPhotos3Body => 'تۆمارێک قوفڵ بکە و پێش کرانەوە پەنجەمۆر یان قوفڵی شاشە داوا دەکات.';
 
   @override
-  String get storyLife4Title => 'بیکە هی خۆت';
+  String get tourPhotos4Title => 'هەموو ئەپەکە قوفڵ بکە';
 
   @override
-  String get storyLife4Body => 'هەنگاوی خۆت زیاد بکە، پلانەکە وەک PDF هاوبەش بکە و لە دەوروبەری بەروارەکە بیرخەرەوە وەربگرە.';
+  String get tourPhotos4Body => 'لە ڕێکخستنەکانی ئاسایشدا، قوفڵی ئەپ چالاک بکە و لە کاتی گۆڕینی ئەپدا ناوەڕۆک بشارەوە.';
 
   @override
-  String get storyPhotos1Title => 'وێنەی بەڵگەنامەکانت';
+  String get tourShare1Title => 'یەک تۆمار هاوبەش بکە';
 
   @override
-  String get storyPhotos1Body => 'لە تۆمارەکەوە، وێنەی ڕووی پێشەوە و دواوەی کارت یان بەڵگەنامەیەک زیاد بکە.';
+  String get tourShare1Body => 'تۆمارێک بکەرەوە و بەستەرێک هاوبەش بکە کە تەنها ئەو تۆمارە پیشان دەدات، هیچی تر.';
 
   @override
-  String get storyPhotos2Title => 'لەسەر مۆبایلەکەت کۆدکراو';
+  String get tourShare2Title => 'پاکێتی بەڵگە';
 
   @override
-  String get storyPhotos2Body => 'کۆدکردنی وێنە چالاک بکە و وێنەکان پێش بارکردن لەسەر مۆبایلەکەت قوفڵ دەکرێن.';
+  String get tourShare2Body => 'ئەو تۆمارانەی هەڵیاندەبژێریت، لەگەڵ وێنەکانیان، لە یەک PDFدا کۆبکەرەوە بۆ خاوەن خانوو، بانک یان فەرمانگە.';
 
   @override
-  String get storyPhotos3Title => 'تۆمارە هەستیارەکان قوفڵ بکە';
+  String get tourShare3Title => 'کۆنترۆڵ لە دەستی تۆدایە';
 
   @override
-  String get storyPhotos3Body => 'تۆمارێک قوفڵ بکە و پێش کرانەوە پەنجەمۆر یان قوفڵی شاشە داوا دەکات.';
+  String get tourShare3Body => '«بەستەرە هاوبەشکراوەکان» هەموو ئەو بەستەرانە پیشان دەدات کە دروستت کردوون. هەر یەکێک لە هەر کاتێکدا ڕابگرە و چیتر ناکرێتەوە.';
 
   @override
-  String get storyPhotos4Title => 'هەموو ئەپەکە قوفڵ بکە';
+  String get tourHousehold1Title => 'ماڵەکەت بانگهێشت بکە';
 
   @override
-  String get storyPhotos4Body => 'لە ڕێکخستنەکانی ئاسایشدا، قوفڵی ئەپ چالاک بکە و لە کاتی گۆڕینی ئەپدا ناوەڕۆک بشارەوە.';
+  String get tourHousehold1Body => 'کۆد یان بەستەری بانگهێشت هاوبەش بکە. هەر کەسێک بە هەژماری خۆی دەچێتە ژوورەوە.';
 
   @override
-  String get storyShare1Title => 'یەک تۆمار هاوبەش بکە';
+  String get tourHousehold2Title => 'یەک کۆمەڵە تۆمار';
 
   @override
-  String get storyShare1Body => 'تۆمارێک بکەرەوە و بەستەرێک هاوبەش بکە کە تەنها ئەو تۆمارە پیشان دەدات، هیچی تر.';
+  String get tourHousehold2Body => 'هەمووان هەمان تۆماری هاوبەش دەبینن و هەمان بیرخەرەوە وەردەگرن.';
 
   @override
-  String get storyShare2Title => 'پاکێتی بەڵگە';
+  String get tourHousehold3Title => 'هی کێیە؟';
 
   @override
-  String get storyShare2Body => 'ئەو تۆمارانەی هەڵیاندەبژێریت، لەگەڵ وێنەکانیان، لە یەک PDFدا کۆبکەرەوە بۆ خاوەن خانوو، بانک یان فەرمانگە.';
+  String get tourHousehold3Body => 'هەر تۆمارێک دەتوانێت هی کەسێک بێت. ناوەکەی لەسەری و لە بیرخەرەوەکاندا دەردەکەوێت.';
 
   @override
-  String get storyShare3Title => 'کۆنترۆڵ لە دەستی تۆدایە';
+  String get tourImport1Title => 'کارتێک سکان بکە';
 
   @override
-  String get storyShare3Body => '«بەستەرە هاوبەشکراوەکان» هەموو ئەو بەستەرانە پیشان دەدات کە دروستت کردوون. هەر یەکێک لە هەر کاتێکدا ڕابگرە و چیتر ناکرێتەوە.';
+  String get tourImport1Body => 'وێنەی کارت یان بەڵگەنامەیەک بگرە و Vaultara ناو و بەرواری بەسەرچوون بۆت پڕدەکاتەوە.';
 
   @override
-  String get storyHousehold1Title => 'ماڵەکەت بانگهێشت بکە';
+  String get tourImport2Title => 'لیستێک هاوردە بکە';
 
   @override
-  String get storyHousehold1Body => 'کۆد یان بەستەری بانگهێشت هاوبەش بکە. هەر کەسێک بە هەژماری خۆی دەچێتە ژوورەوە.';
+  String get tourImport2Body => 'پێشتر خشتەیەکت هەیە؟ هاوردەی بکە و پێش پاشەکەوتکردن هەر ڕیزێک بپشکنە.';
 
   @override
-  String get storyHousehold2Title => 'یەک کۆمەڵە تۆمار';
+  String get tourImport3Title => 'بۆ Vaultara هاوبەشی بکە';
 
   @override
-  String get storyHousehold2Body => 'هەمووان هەمان تۆماری هاوبەش دەبینن و هەمان بیرخەرەوە وەردەگرن.';
+  String get tourImport3Body => 'وێنە، PDF یان دەقێک لە ئەپێکی ترەوە بۆ Vaultara هاوبەش بکە بۆ دەستپێکردنی تۆمارێکی نوێ.';
 
   @override
-  String get storyHousehold3Title => 'هی کێیە؟';
+  String get tourCosts1Title => 'لە ڕۆژژمێرەکەتدا';
 
   @override
-  String get storyHousehold3Body => 'هەر تۆمارێک دەتوانێت هی کەسێک بێت. ناوەکەی لەسەری و لە بیرخەرەوەکاندا دەردەکەوێت.';
+  String get tourCosts1Body => 'بەرواری بەسەرچوون زیاد بکە بۆ ڕۆژژمێری مۆبایلەکەت، لە تەنیشت پلانەکانی ترت.';
 
   @override
-  String get storyImport1Title => 'کارتێک سکان بکە';
+  String get tourCosts2Title => 'تێچووی نوێکردنەوە';
 
   @override
-  String get storyImport1Body => 'وێنەی کارت یان بەڵگەنامەیەک بگرە و Vaultara ناو و بەرواری بەسەرچوون بۆت پڕدەکاتەوە.';
+  String get tourCosts2Body => 'تێچووی نوێکردنەوە لەسەر تۆمارێک بنووسە و Vaultara پیشان دەدات ساڵانە چەند خەرج دەکەیت.';
 
   @override
-  String get storyImport2Title => 'لیستێک هاوردە بکە';
+  String get tourCosts3Title => 'پێشوەختە پلان دابنێ';
 
   @override
-  String get storyImport2Body => 'پێشتر خشتەیەکت هەیە؟ هاوردەی بکە و پێش پاشەکەوتکردن هەر ڕیزێک بپشکنە.';
+  String get tourCosts3Body => 'مانگە گرانەکان پێشوەختە ببینە تا نوێکردنەوەیەکی گەورە هەرگیز سەرسامت نەکات.';
 
   @override
-  String get storyImport3Title => 'بۆ Vaultara هاوبەشی بکە';
+  String get tourBusiness1Title => 'تیمەکەت بەدوادا بچۆ';
 
   @override
-  String get storyImport3Body => 'وێنە، PDF یان دەقێک لە ئەپێکی ترەوە بۆ Vaultara هاوبەش بکە بۆ دەستپێکردنی تۆمارێکی نوێ.';
+  String get tourBusiness1Body => 'کارمەندان زیاد بکە و بڕوانامە، مۆڵەت و ڕێپێدانەکانیان لە یەک شوێندا هەڵبگرە.';
 
   @override
-  String get storyCosts1Title => 'لە ڕۆژژمێرەکەتدا';
+  String get tourBusiness2Title => 'بیرخەرەوەی ئیمەیڵ';
 
   @override
-  String get storyCosts1Body => 'بەرواری بەسەرچوون زیاد بکە بۆ ڕۆژژمێری مۆبایلەکەت، لە تەنیشت پلانەکانی ترت.';
+  String get tourBusiness2Body => 'کارمەندان پێش بەسەرچوونی بەڵگەنامەکانیان ئیمەیڵ وەردەگرن، تەنانەت بەبێ ئەپەکە.';
 
   @override
-  String get storyCosts2Title => 'تێچووی نوێکردنەوە';
+  String get tourBusiness3Title => 'ڕاپۆرتی مانگانە';
 
   @override
-  String get storyCosts2Body => 'تێچووی نوێکردنەوە لەسەر تۆمارێک بنووسە و Vaultara پیشان دەدات ساڵانە چەند خەرج دەکەیت.';
+  String get tourBusiness3Body => 'هەموو مانگێک ڕاپۆرتێک پیشان دەدات چی دروستە، چی بەسەردەچێت و چی کەمە.';
 
   @override
-  String get storyCosts3Title => 'پێشوەختە پلان دابنێ';
+  String get tourBusiness4Title => 'داوای نوێکردنەوە بکە';
 
   @override
-  String get storyCosts3Body => 'مانگە گرانەکان پێشوەختە ببینە تا نوێکردنەوەیەکی گەورە هەرگیز سەرسامت نەکات.';
-
-  @override
-  String get storyBusiness1Title => 'تیمەکەت بەدوادا بچۆ';
-
-  @override
-  String get storyBusiness1Body => 'کارمەندان زیاد بکە و بڕوانامە، مۆڵەت و ڕێپێدانەکانیان لە یەک شوێندا هەڵبگرە.';
-
-  @override
-  String get storyBusiness2Title => 'بیرخەرەوەی ئیمەیڵ';
-
-  @override
-  String get storyBusiness2Body => 'کارمەندان پێش بەسەرچوونی بەڵگەنامەکانیان ئیمەیڵ وەردەگرن، تەنانەت بەبێ ئەپەکە.';
-
-  @override
-  String get storyBusiness3Title => 'ڕاپۆرتی مانگانە';
-
-  @override
-  String get storyBusiness3Body => 'هەموو مانگێک ڕاپۆرتێک پیشان دەدات چی دروستە، چی بەسەردەچێت و چی کەمە.';
-
-  @override
-  String get storyBusiness4Title => 'داوای نوێکردنەوە بکە';
-
-  @override
-  String get storyBusiness4Body => 'بەستەرێک بنێرە و کارمەندەکە خۆی بەڵگەنامە نوێکراوەکە بار دەکات.';
+  String get tourBusiness4Body => 'بەستەرێک بنێرە و کارمەندەکە خۆی بەڵگەنامە نوێکراوەکە بار دەکات.';
 
   @override
   String get categoryHealthAndMedical => 'تەندروستی و پزیشکی';

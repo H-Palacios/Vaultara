@@ -7847,290 +7847,262 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => 'Pārcelšanās, bērns, jauns darbs vai ārkārtas situācija? Dzīves notikumi dod plānu ar taviem ierakstiem, soļiem un datumiem.';
 
   @override
-  String get storySampleQuestion => 'Kam šogad beidzas termiņš?';
+  String get tourHome1Title => 'Tava diena vienā skatienā';
 
   @override
-  String storySampleAnswer(String name) {
-    return 'Tavam $name termiņš beidzas martā. Vai vēlies atgādinājumu mēnesi iepriekš?';
-  }
+  String get tourHome1Body => 'Sākuma ekrāns rāda, kas šodien ir svarīgs: kam drīz beidzas termiņš un cik ierakstu tev ir.';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name termiņš beidzas pēc 30 dienām. Pieskaries, lai atjaunotu.';
-  }
+  String get tourHome2Title => 'Atrodi visu';
 
   @override
-  String get storySampleGym => 'Sporta zāles abonements';
+  String get tourHome2Body => 'Pieskaries meklēšanai, lai atrastu ierakstu pēc nosaukuma, grupas vai personas.';
 
   @override
-  String get storySampleFirstAid => 'Pirmās palīdzības sertifikāts';
+  String get tourHome3Title => 'Ceļojumi un plāni';
 
   @override
-  String get storySampleEncrypt => 'Šifrēt fotoattēlus';
+  String get tourHome3Body => 'Šeit redzami plānotie ceļojumi un notiekošie dzīves notikumu plāni ar to, kas vēl jāizdara.';
 
   @override
-  String get storySampleAppLock => 'Lietotnes bloķēšana';
+  String get tourHome4Title => 'Palīdzība ar vienu pieskārienu';
 
   @override
-  String get storySampleHideApp => 'Slēpt saturu lietotņu pārslēdzējā';
+  String get tourHome4Body => 'Dzirksteles poga atver “Jautāt Vaultara”. Tavs foto atver profilu, iestatījumus un pamācības.';
 
   @override
-  String get storyHome1Title => 'Tava diena vienā skatienā';
+  String get tourRenew1Title => 'Pienāk atgādinājums';
 
   @override
-  String get storyHome1Body => 'Sākuma ekrāns rāda, kas šodien ir svarīgs: kam drīz beidzas termiņš un cik ierakstu tev ir.';
+  String get tourRenew1Body => 'Pirms ieraksta termiņš beidzas, Vaultara tev atgādina. Pieskaries atgādinājumam, lai atvērtu ierakstu.';
 
   @override
-  String get storyHome2Title => 'Atrodi visu';
+  String get tourRenew2Title => 'Saglabā jauno datumu';
 
   @override
-  String get storyHome2Body => 'Pieskaries meklēšanai, lai atrastu ierakstu pēc nosaukuma, grupas vai personas.';
+  String get tourRenew2Body => 'Atjaunoji? Šeit izvēlies jauno derīguma termiņu un saglabā. Atgādinājumi pārceļas uz jauno datumu.';
 
   @override
-  String get storyHome3Title => 'Ceļojumi un plāni';
+  String get tourRenew3Title => 'Nezini, kā?';
 
   @override
-  String get storyHome3Body => 'Šeit redzami plānotie ceļojumi un notiekošie dzīves notikumu plāni ar to, kas vēl jāizdara.';
+  String get tourRenew3Body => 'Daudziem ierakstiem ir atjaunošanas kontrolsaraksts. Jautāt Vaultara var atrast jūsu valsts soļus ar oficiālām saitēm.';
 
   @override
-  String get storyHome4Title => 'Palīdzība ar vienu pieskārienu';
+  String get tourRenew4Title => 'Lai atkārtojas';
 
   @override
-  String get storyHome4Body => 'Dzirksteles poga atver “Jautāt Vaultara”. Tavs foto atver profilu, iestatījumus un pamācības.';
+  String get tourRenew4Body => 'Abonementiem un ikgadējiem maksājumiem ieslēdziet Atjaunojas pats, un datums pats pārvietosies uz priekšu.';
 
   @override
-  String get storyRenew1Title => 'Pienāk atgādinājums';
+  String get tourAsk1Title => 'Jautā saviem vārdiem';
 
   @override
-  String get storyRenew1Body => 'Pirms ieraksta termiņš beidzas, Vaultara tev atgādina. Pieskaries atgādinājumam, lai atvērtu ierakstu.';
+  String get tourAsk1Body => 'Jautā, piemēram, “Kam šogad beidzas termiņš?” un saņem atbildes no saviem ierakstiem.';
 
   @override
-  String get storyRenew2Title => 'Saglabā jauno datumu';
+  String get tourAsk2Title => 'Runā, nevis raksti';
 
   @override
-  String get storyRenew2Body => 'Atjaunoji? Pieskaries “Atjaunot” un ievadi jauno derīguma termiņu. Atgādinājumi pārvietojas līdzi.';
+  String get tourAsk2Body => 'Pieskaries mikrofonam un runā. Vārdi parādās runājot, un vari uzreiz sūtīt.';
 
   @override
-  String get storyRenew3Title => 'Nezini, kā?';
+  String get tourAsk3Title => 'Katras izmaiņas apstiprini tu';
 
   @override
-  String get storyRenew3Body => 'Daudziem ierakstiem ir atjaunošanas kontrolsaraksts. Jautāt Vaultara var atrast jūsu valsts soļus ar oficiālām saitēm.';
+  String get tourAsk3Body => 'Palūdz pievienot vai mainīt ierakstu, un vispirms redzēsi kartīti. Nekas netiek saglabāts, kamēr neapstiprini.';
 
   @override
-  String get storyRenew4Title => 'Lai atkārtojas';
+  String get tourAsk4Title => 'Atsauc jebkuras izmaiņas';
 
   @override
-  String get storyRenew4Body => 'Abonementiem un ikgadējiem maksājumiem ieslēdziet Atjaunojas pats, un datums pats pārvietosies uz priekšu.';
+  String get tourAsk4Body => 'Pārdomāji? Katras apstiprinātās izmaiņas var atsaukt no tās pašas kartītes.';
 
   @override
-  String get storyAsk1Title => 'Jautā saviem vārdiem';
+  String get tourAsk5Title => 'Turpini, kur pārtrauci';
 
   @override
-  String get storyAsk1Body => 'Jautā, piemēram, “Kam šogad beidzas termiņš?” un saņem atbildes no saviem ierakstiem.';
+  String get tourAsk5Body => 'Sarunas glabājas 90 dienas sadaļā “Sarunu vēsture”, un ieteiktie jautājumi palīdz sākt.';
 
   @override
-  String get storyAsk2Title => 'Runā, nevis raksti';
+  String get tourAsk6Title => 'Vairāk nekā ieraksti';
 
   @override
-  String get storyAsk2Body => 'Pieskaries mikrofonam un runā. Vārdi parādās runājot, un vari uzreiz sūtīt.';
+  String get tourAsk6Body => 'Tas var arī plānot ceļojumus, pievienot cilvēkus, atrast jūsu valsts atjaunošanas soļus un kopīgot ierakstus, ar saitēm uz oficiālām lapām.';
 
   @override
-  String get storyAsk3Title => 'Katras izmaiņas apstiprini tu';
+  String get tourWallet1Title => 'Vispirms sagatavojies';
 
   @override
-  String get storyAsk3Body => 'Palūdz pievienot vai mainīt ierakstu, un vispirms redzēsi kartīti. Nekas netiek saglabāts, kamēr neapstiprini.';
+  String get tourWallet1Body => 'Atver karti vai dokumentu un izvēlies, kur to glabā, piemēram, makā vai somā.';
 
   @override
-  String get storyAsk4Title => 'Atsauc jebkuras izmaiņas';
+  String get tourWallet2Title => 'Saglabā bloķēšanas numuru';
 
   @override
-  String get storyAsk4Body => 'Pārdomāji? Katras apstiprinātās izmaiņas var atsaukt no tās pašas kartītes.';
+  String get tourWallet2Body => 'Pievieno katras bankas bloķēšanas numuru tagad. Tas ir uz kartes, kuras tev nebūs, kad to vajadzēs.';
 
   @override
-  String get storyAsk5Title => 'Turpini, kur pārtrauci';
+  String get tourWallet3Title => 'Ja tas pazūd';
 
   @override
-  String get storyAsk5Body => 'Sarunas glabājas 90 dienas sadaļā “Sarunu vēsture”, un ieteiktie jautājumi palīdz sākt.';
+  String get tourWallet3Body => 'Ja maks pazūd, pieskarieties šeit pogai, kas atbilst. Vaultara parāda visu, kas bija iekšā, lai jūs zinātu, ko bloķēt.';
 
   @override
-  String get storyAsk6Title => 'Vairāk nekā ieraksti';
+  String get tourWallet4Title => 'Bloķē kartes minūtēs';
 
   @override
-  String get storyAsk6Body => 'Tas var arī plānot ceļojumus, pievienot cilvēkus, atrast jūsu valsts atjaunošanas soļus un kopīgot ierakstus, ar saitēm uz oficiālām lapām.';
+  String get tourWallet4Body => 'Zvani katrai bankai ar vienu pieskārienu, atzīmē kartes kā bloķētas un saglabā iesnieguma numuru.';
 
   @override
-  String get storyWallet1Title => 'Vispirms sagatavojies';
+  String get tourWallet5Title => 'Aizstāj un esi drošībā';
 
   @override
-  String get storyWallet1Body => 'Atver karti vai dokumentu un izvēlies, kur to glabā, piemēram, makā vai somā.';
+  String get tourWallet5Body => 'Aizstāj dokumentus, pārbaudi izrakstus, kad atgādinām, un pieskaries “Es to atradu”, ja tas atrodas.';
 
   @override
-  String get storyWallet2Title => 'Saglabā bloķēšanas numuru';
+  String get tourLife1Title => 'Lieli brīži, viens plāns';
 
   @override
-  String get storyWallet2Body => 'Pievieno katras bankas bloķēšanas numuru tagad. Tas ir uz kartes, kuras tev nebūs, kad to vajadzēs.';
+  String get tourLife1Body => 'Pārcelšanās, bērns, jauns darbs vai ārkārtas situācija: sadaļā “Dzīves notikumi” izvēlies, kas notiek.';
 
   @override
-  String get storyWallet3Title => 'Ja tas pazūd';
+  String get tourLife2Title => 'Tavi ieraksti kārtībā';
 
   @override
-  String get storyWallet3Body => 'Atveriet Pazaudēts vai nozagts un pieskarieties Pazaudēts vai Nozagts. Vaultara parāda visu, kas bija iekšā.';
+  String get tourLife2Body => 'Plāns rāda, kurus ierakstus atjaunināt, atcelt vai pagarināt un kurus, iespējams, pievienot.';
 
   @override
-  String get storyWallet4Title => 'Bloķē kartes minūtēs';
+  String get tourLife3Title => 'Soļi un datumi';
 
   @override
-  String get storyWallet4Body => 'Zvani katrai bankai ar vienu pieskārienu, atzīmē kartes kā bloķētas un saglabā iesnieguma numuru.';
+  String get tourLife3Body => 'Katrā plānā ir arī soļi, kas nav ieraksti, un sākuma datumi, kas pasaka, kad pieteikties, lai nekas nenokavētos.';
 
   @override
-  String get storyWallet5Title => 'Aizstāj un esi drošībā';
+  String get tourLife4Title => 'Padari to savu';
 
   @override
-  String get storyWallet5Body => 'Aizstāj dokumentus, pārbaudi izrakstus, kad atgādinām, un pieskaries “Es to atradu”, ja tas atrodas.';
+  String get tourLife4Body => 'Pievieno savus soļus, kopīgo plānu kā PDF un saņem atgādinājumus ap datumu.';
 
   @override
-  String get storyLife1Title => 'Lieli brīži, viens plāns';
+  String get tourPhotos1Title => 'Tavu dokumentu fotoattēli';
 
   @override
-  String get storyLife1Body => 'Pārcelšanās, bērns, jauns darbs vai ārkārtas situācija: sadaļā “Dzīves notikumi” izvēlies, kas notiek.';
+  String get tourPhotos1Body => 'Ierakstā pievieno kartes vai dokumenta priekšpuses un aizmugures fotoattēlus.';
 
   @override
-  String get storyLife2Title => 'Tavi ieraksti kārtībā';
+  String get tourPhotos2Title => 'Šifrēti tālrunī';
 
   @override
-  String get storyLife2Body => 'Plāns rāda, kurus ierakstus atjaunināt, atcelt vai pagarināt un kurus, iespējams, pievienot.';
+  String get tourPhotos2Body => 'Ieslēdz fotoattēlu šifrēšanu, un tie tiek bloķēti tālrunī pirms augšupielādes.';
 
   @override
-  String get storyLife3Title => 'Soļi un datumi';
+  String get tourPhotos3Title => 'Bloķē sensitīvus ierakstus';
 
   @override
-  String get storyLife3Body => 'Soļi aptver to, kas nav ieraksts, un sākuma datumi pasaka, kad pieteikties, lai nekas nenokavētos.';
+  String get tourPhotos3Body => 'Bloķē ierakstu, un pirms atvēršanas tas prasīs pirksta nospiedumu vai ekrāna bloķēšanu.';
 
   @override
-  String get storyLife4Title => 'Padari to savu';
+  String get tourPhotos4Title => 'Bloķē visu lietotni';
 
   @override
-  String get storyLife4Body => 'Pievieno savus soļus, kopīgo plānu kā PDF un saņem atgādinājumus ap datumu.';
+  String get tourPhotos4Body => 'Drošības iestatījumos ieslēdz lietotnes bloķēšanu un paslēp saturu, pārslēdzot lietotnes.';
 
   @override
-  String get storyPhotos1Title => 'Tavu dokumentu fotoattēli';
+  String get tourShare1Title => 'Kopīgo vienu ierakstu';
 
   @override
-  String get storyPhotos1Body => 'Ierakstā pievieno kartes vai dokumenta priekšpuses un aizmugures fotoattēlus.';
+  String get tourShare1Body => 'Atver ierakstu un kopīgo saiti, kas rāda tikai šo ierakstu un neko citu.';
 
   @override
-  String get storyPhotos2Title => 'Šifrēti tālrunī';
+  String get tourShare2Title => 'Pierādījumu komplekts';
 
   @override
-  String get storyPhotos2Body => 'Ieslēdz fotoattēlu šifrēšanu, un tie tiek bloķēti tālrunī pirms augšupielādes.';
+  String get tourShare2Body => 'Saliec izvēlētos ierakstus ar fotoattēliem vienā PDF izīrētājam, bankai vai iestādei.';
 
   @override
-  String get storyPhotos3Title => 'Bloķē sensitīvus ierakstus';
+  String get tourShare3Title => 'Kontrole ir tavās rokās';
 
   @override
-  String get storyPhotos3Body => 'Bloķē ierakstu, un pirms atvēršanas tas prasīs pirksta nospiedumu vai ekrāna bloķēšanu.';
+  String get tourShare3Body => '“Kopīgotās saites” rāda katru izveidoto saiti. Aptur jebkuru jebkurā laikā, un tā vairs neatvērsies.';
 
   @override
-  String get storyPhotos4Title => 'Bloķē visu lietotni';
+  String get tourHousehold1Title => 'Uzaicini savu mājsaimniecību';
 
   @override
-  String get storyPhotos4Body => 'Drošības iestatījumos ieslēdz lietotnes bloķēšanu un paslēp saturu, pārslēdzot lietotnes.';
+  String get tourHousehold1Body => 'Kopīgo ielūguma kodu vai saiti. Katrs piesakās ar savu kontu.';
 
   @override
-  String get storyShare1Title => 'Kopīgo vienu ierakstu';
+  String get tourHousehold2Title => 'Viens ierakstu kopums';
 
   @override
-  String get storyShare1Body => 'Atver ierakstu un kopīgo saiti, kas rāda tikai šo ierakstu un neko citu.';
+  String get tourHousehold2Body => 'Visi redz vienus un tos pašus kopīgos ierakstus un saņem tos pašus atgādinājumus.';
 
   @override
-  String get storyShare2Title => 'Pierādījumu komplekts';
+  String get tourHousehold3Title => 'Kam tas pieder?';
 
   @override
-  String get storyShare2Body => 'Saliec izvēlētos ierakstus ar fotoattēliem vienā PDF izīrētājam, bankai vai iestādei.';
+  String get tourHousehold3Body => 'Katrs ieraksts var piederēt kādam. Vārds redzams ierakstā un atgādinājumos.';
 
   @override
-  String get storyShare3Title => 'Kontrole ir tavās rokās';
+  String get tourImport1Title => 'Skenē karti';
 
   @override
-  String get storyShare3Body => '“Kopīgotās saites” rāda katru izveidoto saiti. Aptur jebkuru jebkurā laikā, un tā vairs neatvērsies.';
+  String get tourImport1Body => 'Nofotografē karti vai dokumentu, un Vaultara aizpildīs nosaukumu un derīguma termiņu tavā vietā.';
 
   @override
-  String get storyHousehold1Title => 'Uzaicini savu mājsaimniecību';
+  String get tourImport2Title => 'Importē sarakstu';
 
   @override
-  String get storyHousehold1Body => 'Kopīgo ielūguma kodu vai saiti. Katrs piesakās ar savu kontu.';
+  String get tourImport2Body => 'Tev jau ir izklājlapa? Importē to un pārbaudi katru rindu pirms saglabāšanas.';
 
   @override
-  String get storyHousehold2Title => 'Viens ierakstu kopums';
+  String get tourImport3Title => 'Kopīgo uz Vaultara';
 
   @override
-  String get storyHousehold2Body => 'Visi redz vienus un tos pašus kopīgos ierakstus un saņem tos pašus atgādinājumus.';
+  String get tourImport3Body => 'Kopīgo foto, PDF vai tekstu no citas lietotnes uz Vaultara, lai sāktu jaunu ierakstu.';
 
   @override
-  String get storyHousehold3Title => 'Kam tas pieder?';
+  String get tourCosts1Title => 'Tavā kalendārā';
 
   @override
-  String get storyHousehold3Body => 'Katrs ieraksts var piederēt kādam. Vārds redzams ierakstā un atgādinājumos.';
+  String get tourCosts1Body => 'Pievieno derīguma termiņus tālruņa kalendāram blakus citiem plāniem.';
 
   @override
-  String get storyImport1Title => 'Skenē karti';
+  String get tourCosts2Title => 'Cik maksā atjaunošana';
 
   @override
-  String get storyImport1Body => 'Nofotografē karti vai dokumentu, un Vaultara aizpildīs nosaukumu un derīguma termiņu tavā vietā.';
+  String get tourCosts2Body => 'Ievadi ierakstā atjaunošanas cenu, un Vaultara parāda, cik tu tērē gadā.';
 
   @override
-  String get storyImport2Title => 'Importē sarakstu';
+  String get tourCosts3Title => 'Plāno laikus';
 
   @override
-  String get storyImport2Body => 'Tev jau ir izklājlapa? Importē to un pārbaudi katru rindu pirms saglabāšanas.';
+  String get tourCosts3Body => 'Redzi dārgos mēnešus jau iepriekš, lai liela atjaunošana tevi nekad nepārsteigtu.';
 
   @override
-  String get storyImport3Title => 'Kopīgo uz Vaultara';
+  String get tourBusiness1Title => 'Seko savai komandai';
 
   @override
-  String get storyImport3Body => 'Kopīgo foto, PDF vai tekstu no citas lietotnes uz Vaultara, lai sāktu jaunu ierakstu.';
+  String get tourBusiness1Body => 'Pievieno darbiniekus un glabā viņu sertifikātus, atļaujas un licences vienuviet.';
 
   @override
-  String get storyCosts1Title => 'Tavā kalendārā';
+  String get tourBusiness2Title => 'Atgādinājumi e-pastā';
 
   @override
-  String get storyCosts1Body => 'Pievieno derīguma termiņus tālruņa kalendāram blakus citiem plāniem.';
+  String get tourBusiness2Body => 'Darbinieki saņem e-pastu pirms dokumentu termiņa beigām, pat bez lietotnes.';
 
   @override
-  String get storyCosts2Title => 'Cik maksā atjaunošana';
+  String get tourBusiness3Title => 'Mēneša pārskats';
 
   @override
-  String get storyCosts2Body => 'Ievadi ierakstā atjaunošanas cenu, un Vaultara parāda, cik tu tērē gadā.';
+  String get tourBusiness3Body => 'Katru mēnesi pārskats parāda, kas ir derīgs, kam beidzas termiņš un kā trūkst.';
 
   @override
-  String get storyCosts3Title => 'Plāno laikus';
+  String get tourBusiness4Title => 'Pieprasi atjauninājumu';
 
   @override
-  String get storyCosts3Body => 'Redzi dārgos mēnešus jau iepriekš, lai liela atjaunošana tevi nekad nepārsteigtu.';
-
-  @override
-  String get storyBusiness1Title => 'Seko savai komandai';
-
-  @override
-  String get storyBusiness1Body => 'Pievieno darbiniekus un glabā viņu sertifikātus, atļaujas un licences vienuviet.';
-
-  @override
-  String get storyBusiness2Title => 'Atgādinājumi e-pastā';
-
-  @override
-  String get storyBusiness2Body => 'Darbinieki saņem e-pastu pirms dokumentu termiņa beigām, pat bez lietotnes.';
-
-  @override
-  String get storyBusiness3Title => 'Mēneša pārskats';
-
-  @override
-  String get storyBusiness3Body => 'Katru mēnesi pārskats parāda, kas ir derīgs, kam beidzas termiņš un kā trūkst.';
-
-  @override
-  String get storyBusiness4Title => 'Pieprasi atjauninājumu';
-
-  @override
-  String get storyBusiness4Body => 'Nosūti saiti, un darbinieks pats augšupielādē atjaunoto dokumentu.';
+  String get tourBusiness4Body => 'Nosūti saiti, un darbinieks pats augšupielādē atjaunoto dokumentu.';
 
   @override
   String get categoryHealthAndMedical => 'Veselība un medicīna';

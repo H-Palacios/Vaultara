@@ -33,6 +33,11 @@ import 'package:vaultara/features/travel/services/location_country.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
+import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
+import 'package:vaultara/features/tutorials/view/tutorial_target.dart';
+import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
+import 'package:vaultara/features/tutorials/view/tutorial_hint.dart';
+import 'package:vaultara/features/tutorials/data/models/tutorial_ids.dart';
 
 String autoLockLabel(AppLocalizations loc, AutoLockDelay delay) {
   switch (delay) {
@@ -264,8 +269,12 @@ class _SecurityPrivacyScreenState extends State<SecurityPrivacyScreen> {
             onRefresh: _loadCheckup,
             child: ListView(
               padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+              // Kept until the Flutter version in use exports ScrollCacheExtent.
+              // ignore: deprecated_member_use
+              cacheExtent: TutorialController.listCacheExtent,
               children: [
                 ScreenHeader(title: loc.secTitle),
+                const TutorialHint(id: TutorialIds.photosSecurity),
                 const SizedBox(height: 16),
                 SecurityCheckupCard(result: checkup, onAction: _onCheckupAction),
                 const SizedBox(height: 24),
@@ -303,14 +312,17 @@ class _SecurityPrivacyScreenState extends State<SecurityPrivacyScreen> {
                 ),
                 const SizedBox(height: 24),
                 _SectionHeader(text: loc.secSectionAppProtection),
-                SettingsTile(
-                  icon: Icons.lock_outline_rounded,
-                  title: loc.profileAppLockTitle,
-                  subtitle: _appLock
-                      ? loc.profile_biometric_on
-                      : loc.profile_biometric_off,
-                  trailing: _switch(_appLock, _loadingLock ? null : _setAppLock),
-                  onTap: _loadingLock ? null : () => _setAppLock(!_appLock),
+                TutorialTarget(
+                  steps: const [TutorialStep.photosAppLock],
+                  child: SettingsTile(
+                    icon: Icons.lock_outline_rounded,
+                    title: loc.profileAppLockTitle,
+                    subtitle: _appLock
+                        ? loc.profile_biometric_on
+                        : loc.profile_biometric_off,
+                    trailing: _switch(_appLock, _loadingLock ? null : _setAppLock),
+                    onTap: _loadingLock ? null : () => _setAppLock(!_appLock),
+                  ),
                 ),
                 const SizedBox(height: 12),
                 ValueListenableBuilder<AutoLockDelay>(
@@ -325,7 +337,10 @@ class _SecurityPrivacyScreenState extends State<SecurityPrivacyScreen> {
                   ),
                 ),
                 const SizedBox(height: 12),
-                const EncryptedPhotosTile(),
+                const TutorialTarget(
+                  steps: [TutorialStep.photosEncrypt],
+                  child: EncryptedPhotosTile(),
+                ),
                 const SizedBox(height: 12),
                 ValueListenableBuilder<bool>(
                   valueListenable: PrivacyScreen.hideInRecents,

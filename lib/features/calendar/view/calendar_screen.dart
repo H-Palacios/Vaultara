@@ -29,6 +29,8 @@ import 'widgets/calendar_record_card.dart';
 import 'widgets/month_calendar_grid.dart';
 import 'widgets/month_picker_dialog.dart';
 import 'widgets/quick_day_chip.dart';
+import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
+import 'package:vaultara/features/tutorials/view/tutorial_target.dart';
 
 enum _CalendarView { month, list }
 
@@ -310,20 +312,23 @@ class _CalendarScreenState extends State<CalendarScreen>
             },
           ),
         ),
-        PopupMenuButton<_CalendarMenu>(
-          tooltip: loc.recordMenuMore,
-          icon: const Icon(Icons.more_vert_rounded),
-          onSelected: _onMenu,
-          itemBuilder: (_) => [
-            PopupMenuItem(
-              value: _CalendarMenu.calendarLink,
-              child: ListTile(
-                contentPadding: EdgeInsets.zero,
-                leading: const Icon(Icons.event_available_rounded),
-                title: Text(loc.calendarLinkTitle),
+        TutorialTarget(
+          steps: const [TutorialStep.costsCalendar],
+          child: PopupMenuButton<_CalendarMenu>(
+            tooltip: loc.recordMenuMore,
+            icon: const Icon(Icons.more_vert_rounded),
+            onSelected: _onMenu,
+            itemBuilder: (_) => [
+              PopupMenuItem(
+                value: _CalendarMenu.calendarLink,
+                child: ListTile(
+                  contentPadding: EdgeInsets.zero,
+                  leading: const Icon(Icons.event_available_rounded),
+                  title: Text(loc.calendarLinkTitle),
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ],
     );

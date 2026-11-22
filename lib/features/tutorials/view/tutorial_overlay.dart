@@ -6,6 +6,7 @@ import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial_step_groups.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial_step_texts.dart';
 import 'package:vaultara/features/tutorials/services/tutorial_voice.dart';
+import 'package:vaultara/features/tutorials/view/widgets/tutorial_notification_card.dart';
 
 export 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 
@@ -244,6 +245,7 @@ class _TutorialOverlayState extends State<TutorialOverlay> {
       message: _message(loc),
       spoken: _spoken(loc),
       icon: target == null ? TutorialStepTexts.icon(step) : null,
+      showNotification: step == TutorialStep.renewReminder,
       finishOnly: finishOnly,
       showNext: showNext,
       isLastStep: isLastStep,
@@ -364,6 +366,7 @@ class _TipContent extends StatelessWidget {
   final String message;
   final String spoken;
   final IconData? icon;
+  final bool showNotification;
   final bool finishOnly;
   final bool showNext;
   final bool isLastStep;
@@ -378,6 +381,7 @@ class _TipContent extends StatelessWidget {
     required this.message,
     required this.spoken,
     required this.icon,
+    required this.showNotification,
     required this.finishOnly,
     required this.showNext,
     required this.isLastStep,
@@ -483,7 +487,10 @@ class _TipContent extends StatelessWidget {
           ),
           const SizedBox(height: 12),
         ],
-        if (picture != null) ...[
+        if (showNotification) ...[
+          const TutorialNotificationCard(),
+          const SizedBox(height: 20),
+        ] else if (picture != null) ...[
           Container(
             width: 72,
             height: 72,

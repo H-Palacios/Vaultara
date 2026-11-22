@@ -9534,390 +9534,348 @@
   "@tutorialSmartLifeEvents2": {
     "description": "Tip in a guided tutorial."
   },
-  "storySampleQuestion": "What expires this year?",
-  "@storySampleQuestion": {
-    "description": "Sample text shown inside a tutorial illustration."
-  },
-  "storySampleAnswer": "Your {name} expires in March. Want a reminder a month before?",
-  "@storySampleAnswer": {
-    "description": "Sample text shown inside a tutorial illustration.",
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "storySampleNotification": "{name} expires in 30 days. Tap to renew.",
-  "@storySampleNotification": {
-    "description": "Sample text shown inside a tutorial illustration.",
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "storySampleGym": "Gym membership",
-  "@storySampleGym": {
-    "description": "Sample text shown inside a tutorial illustration."
-  },
-  "storySampleFirstAid": "First aid certificate",
-  "@storySampleFirstAid": {
-    "description": "Sample text shown inside a tutorial illustration."
-  },
-  "storySampleEncrypt": "Encrypt photos",
-  "@storySampleEncrypt": {
-    "description": "Sample text shown inside a tutorial illustration."
-  },
-  "storySampleAppLock": "App lock",
-  "@storySampleAppLock": {
-    "description": "Sample text shown inside a tutorial illustration."
-  },
-  "storySampleHideApp": "Hide content in the app switcher",
-  "@storySampleHideApp": {
-    "description": "Sample text shown inside a tutorial illustration."
-  },
-  "storyHome1Title": "Your day at a glance",
-  "@storyHome1Title": {
+  "tourHome1Title": "Your day at a glance",
+  "@tourHome1Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyHome1Body": "Home shows what needs you today: anything expiring soon and how many records you keep.",
-  "@storyHome1Body": {
+  "tourHome1Body": "Home shows what needs you today: anything expiring soon and how many records you keep.",
+  "@tourHome1Body": {
     "description": "Text of a tutorial step."
   },
-  "storyHome2Title": "Find anything",
-  "@storyHome2Title": {
+  "tourHome2Title": "Find anything",
+  "@tourHome2Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyHome2Body": "Tap the search bar to find a record by its name, group or the person it belongs to.",
-  "@storyHome2Body": {
+  "tourHome2Body": "Tap the search bar to find a record by its name, group or the person it belongs to.",
+  "@tourHome2Body": {
     "description": "Text of a tutorial step."
   },
-  "storyHome3Title": "Trips and plans",
-  "@storyHome3Title": {
+  "tourHome3Title": "Trips and plans",
+  "@tourHome3Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyHome3Body": "Trips you are planning and life event plans in progress show here, with what is left to do.",
-  "@storyHome3Body": {
+  "tourHome3Body": "Trips you are planning and life event plans in progress show here, with what is left to do.",
+  "@tourHome3Body": {
     "description": "Text of a tutorial step."
   },
-  "storyHome4Title": "Help is one tap away",
-  "@storyHome4Title": {
+  "tourHome4Title": "Help is one tap away",
+  "@tourHome4Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyHome4Body": "The sparkle button opens Ask Vaultara. Your picture opens your profile, settings and tutorials.",
-  "@storyHome4Body": {
+  "tourHome4Body": "The sparkle button opens Ask Vaultara. Your picture opens your profile, settings and tutorials.",
+  "@tourHome4Body": {
     "description": "Text of a tutorial step."
   },
-  "storyRenew1Title": "A reminder arrives",
-  "@storyRenew1Title": {
+  "tourRenew1Title": "A reminder arrives",
+  "@tourRenew1Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyRenew1Body": "Before a record expires, Vaultara reminds you. Tap the reminder to open the record.",
-  "@storyRenew1Body": {
+  "tourRenew1Body": "Before a record expires, Vaultara reminds you. Tap the reminder to open the record.",
+  "@tourRenew1Body": {
     "description": "Text of a tutorial step."
   },
-  "storyRenew2Title": "Save the new date",
-  "@storyRenew2Title": {
+  "tourRenew2Title": "Save the new date",
+  "@tourRenew2Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyRenew2Body": "Renewed it? Tap Renew and enter the new expiry date. Your reminders move with it.",
-  "@storyRenew2Body": {
+  "tourRenew2Body": "Renewed it? Pick the new expiry date here and save. Your reminders move to the new date.",
+  "@tourRenew2Body": {
     "description": "Text of a tutorial step."
   },
-  "storyRenew3Title": "Not sure how?",
-  "@storyRenew3Title": {
+  "tourRenew3Title": "Not sure how?",
+  "@tourRenew3Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyRenew3Body": "Many records have a renewal checklist. Ask Vaultara can find the steps for your country, with official links.",
-  "@storyRenew3Body": {
+  "tourRenew3Body": "Many records have a renewal checklist. Ask Vaultara can find the steps for your country, with official links.",
+  "@tourRenew3Body": {
     "description": "Text of a tutorial step."
   },
-  "storyRenew4Title": "Let it repeat",
-  "@storyRenew4Title": {
+  "tourRenew4Title": "Let it repeat",
+  "@tourRenew4Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyRenew4Body": "For subscriptions and yearly payments, turn on Renews by itself and the date moves forward on its own.",
-  "@storyRenew4Body": {
+  "tourRenew4Body": "For subscriptions and yearly payments, turn on Renews by itself and the date moves forward on its own.",
+  "@tourRenew4Body": {
     "description": "Text of a tutorial step."
   },
-  "storyAsk1Title": "Ask in your own words",
-  "@storyAsk1Title": {
+  "tourAsk1Title": "Ask in your own words",
+  "@tourAsk1Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyAsk1Body": "Ask things like “What expires this year?” and get answers from your own records.",
-  "@storyAsk1Body": {
+  "tourAsk1Body": "Ask things like “What expires this year?” and get answers from your own records.",
+  "@tourAsk1Body": {
     "description": "Text of a tutorial step."
   },
-  "storyAsk2Title": "Talk instead of typing",
-  "@storyAsk2Title": {
+  "tourAsk2Title": "Talk instead of typing",
+  "@tourAsk2Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyAsk2Body": "Tap the microphone and speak. Your words appear as you talk, and you can send straight away.",
-  "@storyAsk2Body": {
+  "tourAsk2Body": "Tap the microphone and speak. Your words appear as you talk, and you can send straight away.",
+  "@tourAsk2Body": {
     "description": "Text of a tutorial step."
   },
-  "storyAsk3Title": "You confirm every change",
-  "@storyAsk3Title": {
+  "tourAsk3Title": "You confirm every change",
+  "@tourAsk3Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyAsk3Body": "Ask it to add or update a record and it shows a card first. Nothing is saved until you confirm.",
-  "@storyAsk3Body": {
+  "tourAsk3Body": "Ask it to add or update a record and it shows a card first. Nothing is saved until you confirm.",
+  "@tourAsk3Body": {
     "description": "Text of a tutorial step."
   },
-  "storyAsk4Title": "Undo any change",
-  "@storyAsk4Title": {
+  "tourAsk4Title": "Undo any change",
+  "@tourAsk4Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyAsk4Body": "Changed your mind? Every change you confirmed can be undone from the same card.",
-  "@storyAsk4Body": {
+  "tourAsk4Body": "Changed your mind? Every change you confirmed can be undone from the same card.",
+  "@tourAsk4Body": {
     "description": "Text of a tutorial step."
   },
-  "storyAsk5Title": "Pick up where you left off",
-  "@storyAsk5Title": {
+  "tourAsk5Title": "Pick up where you left off",
+  "@tourAsk5Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyAsk5Body": "Chats are kept for 90 days in Chat history, and suggested questions help you get started.",
-  "@storyAsk5Body": {
+  "tourAsk5Body": "Chats are kept for 90 days in Chat history, and suggested questions help you get started.",
+  "@tourAsk5Body": {
     "description": "Text of a tutorial step."
   },
-  "storyAsk6Title": "More than records",
-  "@storyAsk6Title": {
+  "tourAsk6Title": "More than records",
+  "@tourAsk6Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyAsk6Body": "It can also plan trips, add people, find the renewal steps for your country and share records, with links to official pages.",
-  "@storyAsk6Body": {
+  "tourAsk6Body": "It can also plan trips, add people, find the renewal steps for your country and share records, with links to official pages.",
+  "@tourAsk6Body": {
     "description": "Text of a tutorial step."
   },
-  "storyWallet1Title": "Get ready first",
-  "@storyWallet1Title": {
+  "tourWallet1Title": "Get ready first",
+  "@tourWallet1Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyWallet1Body": "Open a card or document and choose where you keep it, such as your wallet or bag.",
-  "@storyWallet1Body": {
+  "tourWallet1Body": "Open a card or document and choose where you keep it, such as your wallet or bag.",
+  "@tourWallet1Body": {
     "description": "Text of a tutorial step."
   },
-  "storyWallet2Title": "Save the lost card number",
-  "@storyWallet2Title": {
+  "tourWallet2Title": "Save the lost card number",
+  "@tourWallet2Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyWallet2Body": "Add each bank's lost card number now. It is printed on the card, which is gone when you need it.",
-  "@storyWallet2Body": {
+  "tourWallet2Body": "Add each bank's lost card number now. It is printed on the card, which is gone when you need it.",
+  "@tourWallet2Body": {
     "description": "Text of a tutorial step."
   },
-  "storyWallet3Title": "If it goes missing",
-  "@storyWallet3Title": {
+  "tourWallet3Title": "If it goes missing",
+  "@tourWallet3Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyWallet3Body": "Open Lost or stolen and tap Lost or Stolen. Vaultara lists everything that was inside.",
-  "@storyWallet3Body": {
+  "tourWallet3Body": "If your wallet goes missing, tap the button that fits here. Vaultara lists everything that was inside, so you know what to block.",
+  "@tourWallet3Body": {
     "description": "Text of a tutorial step."
   },
-  "storyWallet4Title": "Block cards in minutes",
-  "@storyWallet4Title": {
+  "tourWallet4Title": "Block cards in minutes",
+  "@tourWallet4Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyWallet4Body": "Call each bank with one tap, mark cards as blocked and keep the police case number.",
-  "@storyWallet4Body": {
+  "tourWallet4Body": "Call each bank with one tap, mark cards as blocked and keep the police case number.",
+  "@tourWallet4Body": {
     "description": "Text of a tutorial step."
   },
-  "storyWallet5Title": "Replace and stay safe",
-  "@storyWallet5Title": {
+  "tourWallet5Title": "Replace and stay safe",
+  "@tourWallet5Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyWallet5Body": "Replace your documents, check your statements when reminded, and tap I found it if it turns up.",
-  "@storyWallet5Body": {
+  "tourWallet5Body": "Replace your documents, check your statements when reminded, and tap I found it if it turns up.",
+  "@tourWallet5Body": {
     "description": "Text of a tutorial step."
   },
-  "storyLife1Title": "Big moments, one plan",
-  "@storyLife1Title": {
+  "tourLife1Title": "Big moments, one plan",
+  "@tourLife1Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyLife1Body": "Moving, a baby, a new job or an emergency: choose what is happening in Life events.",
-  "@storyLife1Body": {
+  "tourLife1Body": "Moving, a baby, a new job or an emergency: choose what is happening in Life events.",
+  "@tourLife1Body": {
     "description": "Text of a tutorial step."
   },
-  "storyLife2Title": "Your records, sorted",
-  "@storyLife2Title": {
+  "tourLife2Title": "Your records, sorted",
+  "@tourLife2Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyLife2Body": "The plan lists which records to update, cancel or renew, and which ones you may need to add.",
-  "@storyLife2Body": {
+  "tourLife2Body": "The plan lists which records to update, cancel or renew, and which ones you may need to add.",
+  "@tourLife2Body": {
     "description": "Text of a tutorial step."
   },
-  "storyLife3Title": "Steps and dates",
-  "@storyLife3Title": {
+  "tourLife3Title": "Steps and dates",
+  "@tourLife3Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyLife3Body": "Steps cover what is not a record, and start-by dates tell you when to apply so nothing is late.",
-  "@storyLife3Body": {
+  "tourLife3Body": "Each plan also has steps that are not records, and start-by dates that tell you when to apply so nothing is late.",
+  "@tourLife3Body": {
     "description": "Text of a tutorial step."
   },
-  "storyLife4Title": "Make it yours",
-  "@storyLife4Title": {
+  "tourLife4Title": "Make it yours",
+  "@tourLife4Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyLife4Body": "Add your own steps, share the plan as a PDF and get reminders around the date.",
-  "@storyLife4Body": {
+  "tourLife4Body": "Add your own steps, share the plan as a PDF and get reminders around the date.",
+  "@tourLife4Body": {
     "description": "Text of a tutorial step."
   },
-  "storyPhotos1Title": "Photos of your documents",
-  "@storyPhotos1Title": {
+  "tourPhotos1Title": "Photos of your documents",
+  "@tourPhotos1Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyPhotos1Body": "Add photos of the front and back of a card or document from the record.",
-  "@storyPhotos1Body": {
+  "tourPhotos1Body": "Add photos of the front and back of a card or document from the record.",
+  "@tourPhotos1Body": {
     "description": "Text of a tutorial step."
   },
-  "storyPhotos2Title": "Encrypted on your phone",
-  "@storyPhotos2Title": {
+  "tourPhotos2Title": "Encrypted on your phone",
+  "@tourPhotos2Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyPhotos2Body": "Turn on photo encryption and photos are locked on your phone before they are uploaded.",
-  "@storyPhotos2Body": {
+  "tourPhotos2Body": "Turn on photo encryption and photos are locked on your phone before they are uploaded.",
+  "@tourPhotos2Body": {
     "description": "Text of a tutorial step."
   },
-  "storyPhotos3Title": "Lock sensitive records",
-  "@storyPhotos3Title": {
+  "tourPhotos3Title": "Lock sensitive records",
+  "@tourPhotos3Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyPhotos3Body": "Lock a record and it asks for your fingerprint or screen lock before it opens.",
-  "@storyPhotos3Body": {
+  "tourPhotos3Body": "Lock a record and it asks for your fingerprint or screen lock before it opens.",
+  "@tourPhotos3Body": {
     "description": "Text of a tutorial step."
   },
-  "storyPhotos4Title": "Lock the whole app",
-  "@storyPhotos4Title": {
+  "tourPhotos4Title": "Lock the whole app",
+  "@tourPhotos4Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyPhotos4Body": "In Security and privacy, turn on app lock and hide the app's content when you switch apps.",
-  "@storyPhotos4Body": {
+  "tourPhotos4Body": "In Security and privacy, turn on app lock and hide the app's content when you switch apps.",
+  "@tourPhotos4Body": {
     "description": "Text of a tutorial step."
   },
-  "storyShare1Title": "Share one record",
-  "@storyShare1Title": {
+  "tourShare1Title": "Share one record",
+  "@tourShare1Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyShare1Body": "Open a record and share a link that shows only that record, nothing else.",
-  "@storyShare1Body": {
+  "tourShare1Body": "Open a record and share a link that shows only that record, nothing else.",
+  "@tourShare1Body": {
     "description": "Text of a tutorial step."
   },
-  "storyShare2Title": "Proof pack",
-  "@storyShare2Title": {
+  "tourShare2Title": "Proof pack",
+  "@tourShare2Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyShare2Body": "Put the records you choose, with their photos, into one PDF for a landlord, bank or office.",
-  "@storyShare2Body": {
+  "tourShare2Body": "Put the records you choose, with their photos, into one PDF for a landlord, bank or office.",
+  "@tourShare2Body": {
     "description": "Text of a tutorial step."
   },
-  "storyShare3Title": "Stay in control",
-  "@storyShare3Title": {
+  "tourShare3Title": "Stay in control",
+  "@tourShare3Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyShare3Body": "Shared links lists every link you made. Stop one at any time and it no longer opens.",
-  "@storyShare3Body": {
+  "tourShare3Body": "Shared links lists every link you made. Stop one at any time and it no longer opens.",
+  "@tourShare3Body": {
     "description": "Text of a tutorial step."
   },
-  "storyHousehold1Title": "Invite your household",
-  "@storyHousehold1Title": {
+  "tourHousehold1Title": "Invite your household",
+  "@tourHousehold1Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyHousehold1Body": "Share an invite code or link. Each person signs in with their own account.",
-  "@storyHousehold1Body": {
+  "tourHousehold1Body": "Share an invite code or link. Each person signs in with their own account.",
+  "@tourHousehold1Body": {
     "description": "Text of a tutorial step."
   },
-  "storyHousehold2Title": "One set of records",
-  "@storyHousehold2Title": {
+  "tourHousehold2Title": "One set of records",
+  "@tourHousehold2Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyHousehold2Body": "Everyone sees the same shared records and gets the same reminders.",
-  "@storyHousehold2Body": {
+  "tourHousehold2Body": "Everyone sees the same shared records and gets the same reminders.",
+  "@tourHousehold2Body": {
     "description": "Text of a tutorial step."
   },
-  "storyHousehold3Title": "Whose is it?",
-  "@storyHousehold3Title": {
+  "tourHousehold3Title": "Whose is it?",
+  "@tourHousehold3Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyHousehold3Body": "Each record can belong to someone. Their name shows on it and in its reminders.",
-  "@storyHousehold3Body": {
+  "tourHousehold3Body": "Each record can belong to someone. Their name shows on it and in its reminders.",
+  "@tourHousehold3Body": {
     "description": "Text of a tutorial step."
   },
-  "storyImport1Title": "Scan a card",
-  "@storyImport1Title": {
+  "tourImport1Title": "Scan a card",
+  "@tourImport1Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyImport1Body": "Snap a card or document and Vaultara fills in the name and expiry date for you.",
-  "@storyImport1Body": {
+  "tourImport1Body": "Snap a card or document and Vaultara fills in the name and expiry date for you.",
+  "@tourImport1Body": {
     "description": "Text of a tutorial step."
   },
-  "storyImport2Title": "Import a list",
-  "@storyImport2Title": {
+  "tourImport2Title": "Import a list",
+  "@tourImport2Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyImport2Body": "Keep a spreadsheet already? Import it and check each row before anything is saved.",
-  "@storyImport2Body": {
+  "tourImport2Body": "Keep a spreadsheet already? Import it and check each row before anything is saved.",
+  "@tourImport2Body": {
     "description": "Text of a tutorial step."
   },
-  "storyImport3Title": "Share into Vaultara",
-  "@storyImport3Title": {
+  "tourImport3Title": "Share into Vaultara",
+  "@tourImport3Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyImport3Body": "Share a photo, PDF or text from another app to Vaultara to start a new record.",
-  "@storyImport3Body": {
+  "tourImport3Body": "Share a photo, PDF or text from another app to Vaultara to start a new record.",
+  "@tourImport3Body": {
     "description": "Text of a tutorial step."
   },
-  "storyCosts1Title": "In your calendar",
-  "@storyCosts1Title": {
+  "tourCosts1Title": "In your calendar",
+  "@tourCosts1Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyCosts1Body": "Add expiry dates to your phone's calendar, so they sit next to your other plans.",
-  "@storyCosts1Body": {
+  "tourCosts1Body": "Add expiry dates to your phone's calendar, so they sit next to your other plans.",
+  "@tourCosts1Body": {
     "description": "Text of a tutorial step."
   },
-  "storyCosts2Title": "What renewals cost",
-  "@storyCosts2Title": {
+  "tourCosts2Title": "What renewals cost",
+  "@tourCosts2Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyCosts2Body": "Add what a renewal costs to a record and Vaultara shows what you spend each year.",
-  "@storyCosts2Body": {
+  "tourCosts2Body": "Add what a renewal costs to a record and Vaultara shows what you spend each year.",
+  "@tourCosts2Body": {
     "description": "Text of a tutorial step."
   },
-  "storyCosts3Title": "Plan ahead",
-  "@storyCosts3Title": {
+  "tourCosts3Title": "Plan ahead",
+  "@tourCosts3Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyCosts3Body": "See the expensive months coming, so a big renewal never takes you by surprise.",
-  "@storyCosts3Body": {
+  "tourCosts3Body": "See the expensive months coming, so a big renewal never takes you by surprise.",
+  "@tourCosts3Body": {
     "description": "Text of a tutorial step."
   },
-  "storyBusiness1Title": "Track your team",
-  "@storyBusiness1Title": {
+  "tourBusiness1Title": "Track your team",
+  "@tourBusiness1Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyBusiness1Body": "Add staff and keep their certificates, permits and licences in one place.",
-  "@storyBusiness1Body": {
+  "tourBusiness1Body": "Add staff and keep their certificates, permits and licences in one place.",
+  "@tourBusiness1Body": {
     "description": "Text of a tutorial step."
   },
-  "storyBusiness2Title": "Email reminders",
-  "@storyBusiness2Title": {
+  "tourBusiness2Title": "Email reminders",
+  "@tourBusiness2Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyBusiness2Body": "Staff get email reminders before their documents expire, even without the app.",
-  "@storyBusiness2Body": {
+  "tourBusiness2Body": "Staff get email reminders before their documents expire, even without the app.",
+  "@tourBusiness2Body": {
     "description": "Text of a tutorial step."
   },
-  "storyBusiness3Title": "Monthly report",
-  "@storyBusiness3Title": {
+  "tourBusiness3Title": "Monthly report",
+  "@tourBusiness3Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyBusiness3Body": "A report each month shows what is valid, what is expiring and what is missing.",
-  "@storyBusiness3Body": {
+  "tourBusiness3Body": "A report each month shows what is valid, what is expiring and what is missing.",
+  "@tourBusiness3Body": {
     "description": "Text of a tutorial step."
   },
-  "storyBusiness4Title": "Request an update",
-  "@storyBusiness4Title": {
+  "tourBusiness4Title": "Request an update",
+  "@tourBusiness4Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "storyBusiness4Body": "Send a link and staff can upload their renewed document themselves.",
-  "@storyBusiness4Body": {
+  "tourBusiness4Body": "Send a link and staff can upload their renewed document themselves.",
+  "@tourBusiness4Body": {
     "description": "Text of a tutorial step."
   },
   "categoryHealthAndMedical": "Health and medical",

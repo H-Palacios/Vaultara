@@ -7786,290 +7786,262 @@ class AppLocalizationsPt extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => 'Mudança de casa, um bebé, um novo emprego ou uma emergência? Acontecimentos de vida dá-lhe um plano com os seus registos, passos e datas.';
 
   @override
-  String get storySampleQuestion => 'O que expira este ano?';
+  String get tourHome1Title => 'O seu dia num relance';
 
   @override
-  String storySampleAnswer(String name) {
-    return 'O seu $name expira em março. Quer um lembrete um mês antes?';
-  }
+  String get tourHome1Body => 'O início mostra o que importa hoje: o que expira em breve e quantos registos tem.';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name expira em 30 dias. Toque para renovar.';
-  }
+  String get tourHome2Title => 'Encontrar tudo';
 
   @override
-  String get storySampleGym => 'Mensalidade do ginásio';
+  String get tourHome2Body => 'Toque na pesquisa para encontrar um registo pelo nome, grupo ou pessoa.';
 
   @override
-  String get storySampleFirstAid => 'Certificado de primeiros socorros';
+  String get tourHome3Title => 'Viagens e planos';
 
   @override
-  String get storySampleEncrypt => 'Encriptar fotos';
+  String get tourHome3Body => 'As viagens planeadas e os planos de acontecimentos de vida em curso aparecem aqui, com o que falta fazer.';
 
   @override
-  String get storySampleAppLock => 'Bloqueio da app';
+  String get tourHome4Title => 'Ajuda a um toque';
 
   @override
-  String get storySampleHideApp => 'Ocultar o conteúdo no seletor de apps';
+  String get tourHome4Body => 'O botão de brilho abre «Pergunte à Vaultara». A sua foto abre o perfil, as definições e os tutoriais.';
 
   @override
-  String get storyHome1Title => 'O seu dia num relance';
+  String get tourRenew1Title => 'Chega um lembrete';
 
   @override
-  String get storyHome1Body => 'O início mostra o que importa hoje: o que expira em breve e quantos registos tem.';
+  String get tourRenew1Body => 'Antes de um registo expirar, o Vaultara avisa-o. Toque no lembrete para abrir o registo.';
 
   @override
-  String get storyHome2Title => 'Encontrar tudo';
+  String get tourRenew2Title => 'Guardar a nova data';
 
   @override
-  String get storyHome2Body => 'Toque na pesquisa para encontrar um registo pelo nome, grupo ou pessoa.';
+  String get tourRenew2Body => 'Renovou? Escolha aqui a nova data de validade e guarde. Os lembretes passam para a nova data.';
 
   @override
-  String get storyHome3Title => 'Viagens e planos';
+  String get tourRenew3Title => 'Não sabe como?';
 
   @override
-  String get storyHome3Body => 'As viagens planeadas e os planos de acontecimentos de vida em curso aparecem aqui, com o que falta fazer.';
+  String get tourRenew3Body => 'Muitos registos têm uma lista de renovação. Pergunte à Vaultara encontra os passos para o seu país, com ligações oficiais.';
 
   @override
-  String get storyHome4Title => 'Ajuda a um toque';
+  String get tourRenew4Title => 'Deixar repetir';
 
   @override
-  String get storyHome4Body => 'O botão de brilho abre «Pergunte à Vaultara». A sua foto abre o perfil, as definições e os tutoriais.';
+  String get tourRenew4Body => 'Para subscrições e pagamentos anuais, ative Renova-se sozinho e a data avança sozinha.';
 
   @override
-  String get storyRenew1Title => 'Chega um lembrete';
+  String get tourAsk1Title => 'Pergunte por palavras suas';
 
   @override
-  String get storyRenew1Body => 'Antes de um registo expirar, o Vaultara avisa-o. Toque no lembrete para abrir o registo.';
+  String get tourAsk1Body => 'Pergunte coisas como «O que expira este ano?» e obtenha respostas dos seus próprios registos.';
 
   @override
-  String get storyRenew2Title => 'Guardar a nova data';
+  String get tourAsk2Title => 'Falar em vez de escrever';
 
   @override
-  String get storyRenew2Body => 'Renovou? Toque em «Renovar» e introduza a nova data de validade. Os lembretes acompanham.';
+  String get tourAsk2Body => 'Toque no microfone e fale. As palavras aparecem enquanto fala e pode enviar logo.';
 
   @override
-  String get storyRenew3Title => 'Não sabe como?';
+  String get tourAsk3Title => 'Confirma cada alteração';
 
   @override
-  String get storyRenew3Body => 'Muitos registos têm uma lista de renovação. Pergunte à Vaultara encontra os passos para o seu país, com ligações oficiais.';
+  String get tourAsk3Body => 'Peça para adicionar ou alterar um registo e aparece primeiro um cartão. Nada é guardado sem a sua confirmação.';
 
   @override
-  String get storyRenew4Title => 'Deixar repetir';
+  String get tourAsk4Title => 'Anular qualquer alteração';
 
   @override
-  String get storyRenew4Body => 'Para subscrições e pagamentos anuais, ative Renova-se sozinho e a data avança sozinha.';
+  String get tourAsk4Body => 'Mudou de ideias? Cada alteração confirmada pode ser anulada no mesmo cartão.';
 
   @override
-  String get storyAsk1Title => 'Pergunte por palavras suas';
+  String get tourAsk5Title => 'Continuar onde ficou';
 
   @override
-  String get storyAsk1Body => 'Pergunte coisas como «O que expira este ano?» e obtenha respostas dos seus próprios registos.';
+  String get tourAsk5Body => 'As conversas ficam 90 dias em «Histórico de conversas», e as perguntas sugeridas ajudam a começar.';
 
   @override
-  String get storyAsk2Title => 'Falar em vez de escrever';
+  String get tourAsk6Title => 'Mais do que registos';
 
   @override
-  String get storyAsk2Body => 'Toque no microfone e fale. As palavras aparecem enquanto fala e pode enviar logo.';
+  String get tourAsk6Body => 'Também pode planear viagens, adicionar pessoas, encontrar os passos de renovação do seu país e partilhar registos, com ligações para páginas oficiais.';
 
   @override
-  String get storyAsk3Title => 'Confirma cada alteração';
+  String get tourWallet1Title => 'Prepare-se primeiro';
 
   @override
-  String get storyAsk3Body => 'Peça para adicionar ou alterar um registo e aparece primeiro um cartão. Nada é guardado sem a sua confirmação.';
+  String get tourWallet1Body => 'Abra um cartão ou documento e escolha onde o guarda, como a carteira ou a mala.';
 
   @override
-  String get storyAsk4Title => 'Anular qualquer alteração';
+  String get tourWallet2Title => 'Guardar o número de cancelamento';
 
   @override
-  String get storyAsk4Body => 'Mudou de ideias? Cada alteração confirmada pode ser anulada no mesmo cartão.';
+  String get tourWallet2Body => 'Adicione já o número de cancelamento de cada banco. Está no cartão, que já não tem quando precisa.';
 
   @override
-  String get storyAsk5Title => 'Continuar onde ficou';
+  String get tourWallet3Title => 'Se desaparecer';
 
   @override
-  String get storyAsk5Body => 'As conversas ficam 90 dias em «Histórico de conversas», e as perguntas sugeridas ajudam a começar.';
+  String get tourWallet3Body => 'Se a sua carteira desaparecer, toque aqui no botão adequado. O Vaultara mostra tudo o que estava lá dentro, para saber o que bloquear.';
 
   @override
-  String get storyAsk6Title => 'Mais do que registos';
+  String get tourWallet4Title => 'Bloquear cartões em minutos';
 
   @override
-  String get storyAsk6Body => 'Também pode planear viagens, adicionar pessoas, encontrar os passos de renovação do seu país e partilhar registos, com ligações para páginas oficiais.';
+  String get tourWallet4Body => 'Ligue a cada banco com um toque, marque os cartões como bloqueados e guarde o número do auto.';
 
   @override
-  String get storyWallet1Title => 'Prepare-se primeiro';
+  String get tourWallet5Title => 'Substituir e ficar seguro';
 
   @override
-  String get storyWallet1Body => 'Abra um cartão ou documento e escolha onde o guarda, como a carteira ou a mala.';
+  String get tourWallet5Body => 'Substitua os documentos, verifique os extratos quando for lembrado e toque em «Encontrei-a» se aparecer.';
 
   @override
-  String get storyWallet2Title => 'Guardar o número de cancelamento';
+  String get tourLife1Title => 'Grandes momentos, um plano';
 
   @override
-  String get storyWallet2Body => 'Adicione já o número de cancelamento de cada banco. Está no cartão, que já não tem quando precisa.';
+  String get tourLife1Body => 'Mudança de casa, um bebé, um novo emprego ou uma emergência: escolha o que está a acontecer em «Acontecimentos da vida».';
 
   @override
-  String get storyWallet3Title => 'Se desaparecer';
+  String get tourLife2Title => 'Os seus registos, organizados';
 
   @override
-  String get storyWallet3Body => 'Abra Perdido ou roubado e toque em Perdido ou Roubado. O Vaultara mostra tudo o que estava lá dentro.';
+  String get tourLife2Body => 'O plano indica que registos atualizar, cancelar ou renovar, e quais talvez tenha de adicionar.';
 
   @override
-  String get storyWallet4Title => 'Bloquear cartões em minutos';
+  String get tourLife3Title => 'Passos e datas';
 
   @override
-  String get storyWallet4Body => 'Ligue a cada banco com um toque, marque os cartões como bloqueados e guarde o número do auto.';
+  String get tourLife3Body => 'Cada plano tem também passos que não são registos, e datas de início que dizem quando pedir para que nada fique atrasado.';
 
   @override
-  String get storyWallet5Title => 'Substituir e ficar seguro';
+  String get tourLife4Title => 'À sua medida';
 
   @override
-  String get storyWallet5Body => 'Substitua os documentos, verifique os extratos quando for lembrado e toque em «Encontrei-a» se aparecer.';
+  String get tourLife4Body => 'Adicione os seus passos, partilhe o plano em PDF e receba lembretes perto da data.';
 
   @override
-  String get storyLife1Title => 'Grandes momentos, um plano';
+  String get tourPhotos1Title => 'Fotos dos seus documentos';
 
   @override
-  String get storyLife1Body => 'Mudança de casa, um bebé, um novo emprego ou uma emergência: escolha o que está a acontecer em «Acontecimentos da vida».';
+  String get tourPhotos1Body => 'No registo, adicione fotos da frente e do verso de um cartão ou documento.';
 
   @override
-  String get storyLife2Title => 'Os seus registos, organizados';
+  String get tourPhotos2Title => 'Encriptadas no telemóvel';
 
   @override
-  String get storyLife2Body => 'O plano indica que registos atualizar, cancelar ou renovar, e quais talvez tenha de adicionar.';
+  String get tourPhotos2Body => 'Ative a encriptação de fotos e elas ficam protegidas no telemóvel antes do envio.';
 
   @override
-  String get storyLife3Title => 'Passos e datas';
+  String get tourPhotos3Title => 'Bloquear registos sensíveis';
 
   @override
-  String get storyLife3Body => 'Os passos cobrem o que não é um registo, e as datas de início dizem quando pedir para nada atrasar.';
+  String get tourPhotos3Body => 'Bloqueie um registo e ele pede a impressão digital ou o bloqueio do ecrã antes de abrir.';
 
   @override
-  String get storyLife4Title => 'À sua medida';
+  String get tourPhotos4Title => 'Bloquear a app toda';
 
   @override
-  String get storyLife4Body => 'Adicione os seus passos, partilhe o plano em PDF e receba lembretes perto da data.';
+  String get tourPhotos4Body => 'Nas definições de segurança, ative o bloqueio da app e oculte o conteúdo ao trocar de app.';
 
   @override
-  String get storyPhotos1Title => 'Fotos dos seus documentos';
+  String get tourShare1Title => 'Partilhar um registo';
 
   @override
-  String get storyPhotos1Body => 'No registo, adicione fotos da frente e do verso de um cartão ou documento.';
+  String get tourShare1Body => 'Abra um registo e partilhe um link que mostra só esse registo, mais nada.';
 
   @override
-  String get storyPhotos2Title => 'Encriptadas no telemóvel';
+  String get tourShare2Title => 'Pacote de comprovativos';
 
   @override
-  String get storyPhotos2Body => 'Ative a encriptação de fotos e elas ficam protegidas no telemóvel antes do envio.';
+  String get tourShare2Body => 'Junte os registos que escolher, com as fotos, num PDF para um senhorio, banco ou serviço.';
 
   @override
-  String get storyPhotos3Title => 'Bloquear registos sensíveis';
+  String get tourShare3Title => 'Mantenha o controlo';
 
   @override
-  String get storyPhotos3Body => 'Bloqueie um registo e ele pede a impressão digital ou o bloqueio do ecrã antes de abrir.';
+  String get tourShare3Body => '«Links partilhados» mostra cada link que criou. Pare um a qualquer momento e deixa de abrir.';
 
   @override
-  String get storyPhotos4Title => 'Bloquear a app toda';
+  String get tourHousehold1Title => 'Convide a sua casa';
 
   @override
-  String get storyPhotos4Body => 'Nas definições de segurança, ative o bloqueio da app e oculte o conteúdo ao trocar de app.';
+  String get tourHousehold1Body => 'Partilhe um código ou link de convite. Cada pessoa entra com a sua própria conta.';
 
   @override
-  String get storyShare1Title => 'Partilhar um registo';
+  String get tourHousehold2Title => 'Um conjunto de registos';
 
   @override
-  String get storyShare1Body => 'Abra um registo e partilhe um link que mostra só esse registo, mais nada.';
+  String get tourHousehold2Body => 'Todos veem os mesmos registos partilhados e recebem os mesmos lembretes.';
 
   @override
-  String get storyShare2Title => 'Pacote de comprovativos';
+  String get tourHousehold3Title => 'De quem é?';
 
   @override
-  String get storyShare2Body => 'Junte os registos que escolher, com as fotos, num PDF para um senhorio, banco ou serviço.';
+  String get tourHousehold3Body => 'Cada registo pode pertencer a alguém. O nome aparece nele e nos seus lembretes.';
 
   @override
-  String get storyShare3Title => 'Mantenha o controlo';
+  String get tourImport1Title => 'Digitalizar um cartão';
 
   @override
-  String get storyShare3Body => '«Links partilhados» mostra cada link que criou. Pare um a qualquer momento e deixa de abrir.';
+  String get tourImport1Body => 'Fotografe um cartão ou documento e o Vaultara preenche o nome e a data de validade.';
 
   @override
-  String get storyHousehold1Title => 'Convide a sua casa';
+  String get tourImport2Title => 'Importar uma lista';
 
   @override
-  String get storyHousehold1Body => 'Partilhe um código ou link de convite. Cada pessoa entra com a sua própria conta.';
+  String get tourImport2Body => 'Já tem uma folha de cálculo? Importe-a e verifique cada linha antes de guardar.';
 
   @override
-  String get storyHousehold2Title => 'Um conjunto de registos';
+  String get tourImport3Title => 'Partilhar para o Vaultara';
 
   @override
-  String get storyHousehold2Body => 'Todos veem os mesmos registos partilhados e recebem os mesmos lembretes.';
+  String get tourImport3Body => 'Partilhe uma foto, um PDF ou um texto de outra app para o Vaultara para começar um registo.';
 
   @override
-  String get storyHousehold3Title => 'De quem é?';
+  String get tourCosts1Title => 'No seu calendário';
 
   @override
-  String get storyHousehold3Body => 'Cada registo pode pertencer a alguém. O nome aparece nele e nos seus lembretes.';
+  String get tourCosts1Body => 'Adicione as datas de validade ao calendário do telemóvel, junto aos seus outros planos.';
 
   @override
-  String get storyImport1Title => 'Digitalizar um cartão';
+  String get tourCosts2Title => 'Quanto custam as renovações';
 
   @override
-  String get storyImport1Body => 'Fotografe um cartão ou documento e o Vaultara preenche o nome e a data de validade.';
+  String get tourCosts2Body => 'Indique o custo de renovação num registo e o Vaultara mostra quanto gasta por ano.';
 
   @override
-  String get storyImport2Title => 'Importar uma lista';
+  String get tourCosts3Title => 'Planear com tempo';
 
   @override
-  String get storyImport2Body => 'Já tem uma folha de cálculo? Importe-a e verifique cada linha antes de guardar.';
+  String get tourCosts3Body => 'Veja os meses caros a chegar, para que uma renovação grande nunca o surpreenda.';
 
   @override
-  String get storyImport3Title => 'Partilhar para o Vaultara';
+  String get tourBusiness1Title => 'Acompanhe a sua equipa';
 
   @override
-  String get storyImport3Body => 'Partilhe uma foto, um PDF ou um texto de outra app para o Vaultara para começar um registo.';
+  String get tourBusiness1Body => 'Adicione a equipa e guarde certificados, autorizações e licenças num só lugar.';
 
   @override
-  String get storyCosts1Title => 'No seu calendário';
+  String get tourBusiness2Title => 'Lembretes por e-mail';
 
   @override
-  String get storyCosts1Body => 'Adicione as datas de validade ao calendário do telemóvel, junto aos seus outros planos.';
+  String get tourBusiness2Body => 'A equipa recebe lembretes por e-mail antes de os documentos expirarem, mesmo sem a app.';
 
   @override
-  String get storyCosts2Title => 'Quanto custam as renovações';
+  String get tourBusiness3Title => 'Relatório mensal';
 
   @override
-  String get storyCosts2Body => 'Indique o custo de renovação num registo e o Vaultara mostra quanto gasta por ano.';
+  String get tourBusiness3Body => 'Todos os meses, um relatório mostra o que é válido, o que expira e o que falta.';
 
   @override
-  String get storyCosts3Title => 'Planear com tempo';
+  String get tourBusiness4Title => 'Pedir uma atualização';
 
   @override
-  String get storyCosts3Body => 'Veja os meses caros a chegar, para que uma renovação grande nunca o surpreenda.';
-
-  @override
-  String get storyBusiness1Title => 'Acompanhe a sua equipa';
-
-  @override
-  String get storyBusiness1Body => 'Adicione a equipa e guarde certificados, autorizações e licenças num só lugar.';
-
-  @override
-  String get storyBusiness2Title => 'Lembretes por e-mail';
-
-  @override
-  String get storyBusiness2Body => 'A equipa recebe lembretes por e-mail antes de os documentos expirarem, mesmo sem a app.';
-
-  @override
-  String get storyBusiness3Title => 'Relatório mensal';
-
-  @override
-  String get storyBusiness3Body => 'Todos os meses, um relatório mostra o que é válido, o que expira e o que falta.';
-
-  @override
-  String get storyBusiness4Title => 'Pedir uma atualização';
-
-  @override
-  String get storyBusiness4Body => 'Envie um link e a equipa carrega o documento renovado por conta própria.';
+  String get tourBusiness4Body => 'Envie um link e a equipa carrega o documento renovado por conta própria.';
 
   @override
   String get categoryHealthAndMedical => 'Saúde e medicina';

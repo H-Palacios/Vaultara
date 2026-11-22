@@ -13393,569 +13393,521 @@ abstract class AppLocalizations {
   /// **'Moving, a new baby, a new job or an emergency? Life events gives you a plan with your records, steps and dates.'**
   String get tutorialSmartLifeEvents2;
 
-  /// Sample text shown inside a tutorial illustration.
-  ///
-  /// In en, this message translates to:
-  /// **'What expires this year?'**
-  String get storySampleQuestion;
-
-  /// Sample text shown inside a tutorial illustration.
-  ///
-  /// In en, this message translates to:
-  /// **'Your {name} expires in March. Want a reminder a month before?'**
-  String storySampleAnswer(String name);
-
-  /// Sample text shown inside a tutorial illustration.
-  ///
-  /// In en, this message translates to:
-  /// **'{name} expires in 30 days. Tap to renew.'**
-  String storySampleNotification(String name);
-
-  /// Sample text shown inside a tutorial illustration.
-  ///
-  /// In en, this message translates to:
-  /// **'Gym membership'**
-  String get storySampleGym;
-
-  /// Sample text shown inside a tutorial illustration.
-  ///
-  /// In en, this message translates to:
-  /// **'First aid certificate'**
-  String get storySampleFirstAid;
-
-  /// Sample text shown inside a tutorial illustration.
-  ///
-  /// In en, this message translates to:
-  /// **'Encrypt photos'**
-  String get storySampleEncrypt;
-
-  /// Sample text shown inside a tutorial illustration.
-  ///
-  /// In en, this message translates to:
-  /// **'App lock'**
-  String get storySampleAppLock;
-
-  /// Sample text shown inside a tutorial illustration.
-  ///
-  /// In en, this message translates to:
-  /// **'Hide content in the app switcher'**
-  String get storySampleHideApp;
-
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Your day at a glance'**
-  String get storyHome1Title;
+  String get tourHome1Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Home shows what needs you today: anything expiring soon and how many records you keep.'**
-  String get storyHome1Body;
+  String get tourHome1Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Find anything'**
-  String get storyHome2Title;
+  String get tourHome2Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Tap the search bar to find a record by its name, group or the person it belongs to.'**
-  String get storyHome2Body;
+  String get tourHome2Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Trips and plans'**
-  String get storyHome3Title;
+  String get tourHome3Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Trips you are planning and life event plans in progress show here, with what is left to do.'**
-  String get storyHome3Body;
+  String get tourHome3Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Help is one tap away'**
-  String get storyHome4Title;
+  String get tourHome4Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'The sparkle button opens Ask Vaultara. Your picture opens your profile, settings and tutorials.'**
-  String get storyHome4Body;
+  String get tourHome4Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'A reminder arrives'**
-  String get storyRenew1Title;
+  String get tourRenew1Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Before a record expires, Vaultara reminds you. Tap the reminder to open the record.'**
-  String get storyRenew1Body;
+  String get tourRenew1Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Save the new date'**
-  String get storyRenew2Title;
+  String get tourRenew2Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
-  /// **'Renewed it? Tap Renew and enter the new expiry date. Your reminders move with it.'**
-  String get storyRenew2Body;
+  /// **'Renewed it? Pick the new expiry date here and save. Your reminders move to the new date.'**
+  String get tourRenew2Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Not sure how?'**
-  String get storyRenew3Title;
+  String get tourRenew3Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Many records have a renewal checklist. Ask Vaultara can find the steps for your country, with official links.'**
-  String get storyRenew3Body;
+  String get tourRenew3Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Let it repeat'**
-  String get storyRenew4Title;
+  String get tourRenew4Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'For subscriptions and yearly payments, turn on Renews by itself and the date moves forward on its own.'**
-  String get storyRenew4Body;
+  String get tourRenew4Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Ask in your own words'**
-  String get storyAsk1Title;
+  String get tourAsk1Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Ask things like “What expires this year?” and get answers from your own records.'**
-  String get storyAsk1Body;
+  String get tourAsk1Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Talk instead of typing'**
-  String get storyAsk2Title;
+  String get tourAsk2Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Tap the microphone and speak. Your words appear as you talk, and you can send straight away.'**
-  String get storyAsk2Body;
+  String get tourAsk2Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'You confirm every change'**
-  String get storyAsk3Title;
+  String get tourAsk3Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Ask it to add or update a record and it shows a card first. Nothing is saved until you confirm.'**
-  String get storyAsk3Body;
+  String get tourAsk3Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Undo any change'**
-  String get storyAsk4Title;
+  String get tourAsk4Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Changed your mind? Every change you confirmed can be undone from the same card.'**
-  String get storyAsk4Body;
+  String get tourAsk4Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Pick up where you left off'**
-  String get storyAsk5Title;
+  String get tourAsk5Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Chats are kept for 90 days in Chat history, and suggested questions help you get started.'**
-  String get storyAsk5Body;
+  String get tourAsk5Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'More than records'**
-  String get storyAsk6Title;
+  String get tourAsk6Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'It can also plan trips, add people, find the renewal steps for your country and share records, with links to official pages.'**
-  String get storyAsk6Body;
+  String get tourAsk6Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Get ready first'**
-  String get storyWallet1Title;
+  String get tourWallet1Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Open a card or document and choose where you keep it, such as your wallet or bag.'**
-  String get storyWallet1Body;
+  String get tourWallet1Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Save the lost card number'**
-  String get storyWallet2Title;
+  String get tourWallet2Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Add each bank\'s lost card number now. It is printed on the card, which is gone when you need it.'**
-  String get storyWallet2Body;
+  String get tourWallet2Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'If it goes missing'**
-  String get storyWallet3Title;
+  String get tourWallet3Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
-  /// **'Open Lost or stolen and tap Lost or Stolen. Vaultara lists everything that was inside.'**
-  String get storyWallet3Body;
+  /// **'If your wallet goes missing, tap the button that fits here. Vaultara lists everything that was inside, so you know what to block.'**
+  String get tourWallet3Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Block cards in minutes'**
-  String get storyWallet4Title;
+  String get tourWallet4Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Call each bank with one tap, mark cards as blocked and keep the police case number.'**
-  String get storyWallet4Body;
+  String get tourWallet4Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Replace and stay safe'**
-  String get storyWallet5Title;
+  String get tourWallet5Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Replace your documents, check your statements when reminded, and tap I found it if it turns up.'**
-  String get storyWallet5Body;
+  String get tourWallet5Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Big moments, one plan'**
-  String get storyLife1Title;
+  String get tourLife1Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Moving, a baby, a new job or an emergency: choose what is happening in Life events.'**
-  String get storyLife1Body;
+  String get tourLife1Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Your records, sorted'**
-  String get storyLife2Title;
+  String get tourLife2Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'The plan lists which records to update, cancel or renew, and which ones you may need to add.'**
-  String get storyLife2Body;
+  String get tourLife2Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Steps and dates'**
-  String get storyLife3Title;
+  String get tourLife3Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
-  /// **'Steps cover what is not a record, and start-by dates tell you when to apply so nothing is late.'**
-  String get storyLife3Body;
+  /// **'Each plan also has steps that are not records, and start-by dates that tell you when to apply so nothing is late.'**
+  String get tourLife3Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Make it yours'**
-  String get storyLife4Title;
+  String get tourLife4Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Add your own steps, share the plan as a PDF and get reminders around the date.'**
-  String get storyLife4Body;
+  String get tourLife4Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Photos of your documents'**
-  String get storyPhotos1Title;
+  String get tourPhotos1Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Add photos of the front and back of a card or document from the record.'**
-  String get storyPhotos1Body;
+  String get tourPhotos1Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Encrypted on your phone'**
-  String get storyPhotos2Title;
+  String get tourPhotos2Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Turn on photo encryption and photos are locked on your phone before they are uploaded.'**
-  String get storyPhotos2Body;
+  String get tourPhotos2Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Lock sensitive records'**
-  String get storyPhotos3Title;
+  String get tourPhotos3Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Lock a record and it asks for your fingerprint or screen lock before it opens.'**
-  String get storyPhotos3Body;
+  String get tourPhotos3Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Lock the whole app'**
-  String get storyPhotos4Title;
+  String get tourPhotos4Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'In Security and privacy, turn on app lock and hide the app\'s content when you switch apps.'**
-  String get storyPhotos4Body;
+  String get tourPhotos4Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Share one record'**
-  String get storyShare1Title;
+  String get tourShare1Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Open a record and share a link that shows only that record, nothing else.'**
-  String get storyShare1Body;
+  String get tourShare1Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Proof pack'**
-  String get storyShare2Title;
+  String get tourShare2Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Put the records you choose, with their photos, into one PDF for a landlord, bank or office.'**
-  String get storyShare2Body;
+  String get tourShare2Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Stay in control'**
-  String get storyShare3Title;
+  String get tourShare3Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Shared links lists every link you made. Stop one at any time and it no longer opens.'**
-  String get storyShare3Body;
+  String get tourShare3Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Invite your household'**
-  String get storyHousehold1Title;
+  String get tourHousehold1Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Share an invite code or link. Each person signs in with their own account.'**
-  String get storyHousehold1Body;
+  String get tourHousehold1Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'One set of records'**
-  String get storyHousehold2Title;
+  String get tourHousehold2Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Everyone sees the same shared records and gets the same reminders.'**
-  String get storyHousehold2Body;
+  String get tourHousehold2Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Whose is it?'**
-  String get storyHousehold3Title;
+  String get tourHousehold3Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Each record can belong to someone. Their name shows on it and in its reminders.'**
-  String get storyHousehold3Body;
+  String get tourHousehold3Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Scan a card'**
-  String get storyImport1Title;
+  String get tourImport1Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Snap a card or document and Vaultara fills in the name and expiry date for you.'**
-  String get storyImport1Body;
+  String get tourImport1Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Import a list'**
-  String get storyImport2Title;
+  String get tourImport2Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Keep a spreadsheet already? Import it and check each row before anything is saved.'**
-  String get storyImport2Body;
+  String get tourImport2Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Share into Vaultara'**
-  String get storyImport3Title;
+  String get tourImport3Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Share a photo, PDF or text from another app to Vaultara to start a new record.'**
-  String get storyImport3Body;
+  String get tourImport3Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'In your calendar'**
-  String get storyCosts1Title;
+  String get tourCosts1Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Add expiry dates to your phone\'s calendar, so they sit next to your other plans.'**
-  String get storyCosts1Body;
+  String get tourCosts1Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'What renewals cost'**
-  String get storyCosts2Title;
+  String get tourCosts2Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Add what a renewal costs to a record and Vaultara shows what you spend each year.'**
-  String get storyCosts2Body;
+  String get tourCosts2Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Plan ahead'**
-  String get storyCosts3Title;
+  String get tourCosts3Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'See the expensive months coming, so a big renewal never takes you by surprise.'**
-  String get storyCosts3Body;
+  String get tourCosts3Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Track your team'**
-  String get storyBusiness1Title;
+  String get tourBusiness1Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Add staff and keep their certificates, permits and licences in one place.'**
-  String get storyBusiness1Body;
+  String get tourBusiness1Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Email reminders'**
-  String get storyBusiness2Title;
+  String get tourBusiness2Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Staff get email reminders before their documents expire, even without the app.'**
-  String get storyBusiness2Body;
+  String get tourBusiness2Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Monthly report'**
-  String get storyBusiness3Title;
+  String get tourBusiness3Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'A report each month shows what is valid, what is expiring and what is missing.'**
-  String get storyBusiness3Body;
+  String get tourBusiness3Body;
 
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
   /// **'Request an update'**
-  String get storyBusiness4Title;
+  String get tourBusiness4Title;
 
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
   /// **'Send a link and staff can upload their renewed document themselves.'**
-  String get storyBusiness4Body;
+  String get tourBusiness4Body;
 
   /// Name of a built-in category of records.
   ///

@@ -7780,290 +7780,262 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => 'Flutningar, barn, nýtt starf eða neyðartilvik? Lífsviðburðir gefa þér áætlun með færslum, skrefum og dagsetningum.';
 
   @override
-  String get storySampleQuestion => 'Hvað rennur út á þessu ári?';
+  String get tourHome1Title => 'Dagurinn þinn í hnotskurn';
 
   @override
-  String storySampleAnswer(String name) {
-    return '$name rennur út í mars. Viltu áminningu mánuði áður?';
-  }
+  String get tourHome1Body => 'Upphafsskjárinn sýnir það sem skiptir máli í dag: hvað rennur bráðum út og hversu margar færslur þú átt.';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name rennur út eftir 30 daga. Ýttu til að endurnýja.';
-  }
+  String get tourHome2Title => 'Finndu allt';
 
   @override
-  String get storySampleGym => 'Líkamsræktaráskrift';
+  String get tourHome2Body => 'Ýttu á leit til að finna færslu eftir nafni, flokki eða einstaklingi.';
 
   @override
-  String get storySampleFirstAid => 'Skírteini í skyndihjálp';
+  String get tourHome3Title => 'Ferðir og áætlanir';
 
   @override
-  String get storySampleEncrypt => 'Dulkóða myndir';
+  String get tourHome3Body => 'Ferðir sem þú skipuleggur og yfirstandandi áætlanir um lífsviðburði birtast hér, með því sem er eftir.';
 
   @override
-  String get storySampleAppLock => 'Forritalás';
+  String get tourHome4Title => 'Hjálp með einni snertingu';
 
   @override
-  String get storySampleHideApp => 'Fela efni í forritaskiptinum';
+  String get tourHome4Body => 'Neistahnappurinn opnar „Spyrðu Vaultara“. Myndin þín opnar prófílinn, stillingar og leiðbeiningar.';
 
   @override
-  String get storyHome1Title => 'Dagurinn þinn í hnotskurn';
+  String get tourRenew1Title => 'Áminning berst';
 
   @override
-  String get storyHome1Body => 'Upphafsskjárinn sýnir það sem skiptir máli í dag: hvað rennur bráðum út og hversu margar færslur þú átt.';
+  String get tourRenew1Body => 'Áður en færsla rennur út minnir Vaultara þig á. Ýttu á áminninguna til að opna færsluna.';
 
   @override
-  String get storyHome2Title => 'Finndu allt';
+  String get tourRenew2Title => 'Vistaðu nýju dagsetninguna';
 
   @override
-  String get storyHome2Body => 'Ýttu á leit til að finna færslu eftir nafni, flokki eða einstaklingi.';
+  String get tourRenew2Body => 'Endurnýjað? Veldu nýja fyrningardaginn hér og vistaðu. Áminningarnar færast á nýja daginn.';
 
   @override
-  String get storyHome3Title => 'Ferðir og áætlanir';
+  String get tourRenew3Title => 'Ekki viss um hvernig?';
 
   @override
-  String get storyHome3Body => 'Ferðir sem þú skipuleggur og yfirstandandi áætlanir um lífsviðburði birtast hér, með því sem er eftir.';
+  String get tourRenew3Body => 'Margar færslur eru með gátlista fyrir endurnýjun. Spyrðu Vaultara getur fundið skrefin fyrir landið þitt, með opinberum tenglum.';
 
   @override
-  String get storyHome4Title => 'Hjálp með einni snertingu';
+  String get tourRenew4Title => 'Láttu hana endurtaka sig';
 
   @override
-  String get storyHome4Body => 'Neistahnappurinn opnar „Spyrðu Vaultara“. Myndin þín opnar prófílinn, stillingar og leiðbeiningar.';
+  String get tourRenew4Body => 'Fyrir áskriftir og árlegar greiðslur skaltu kveikja á Endurnýjast sjálft og dagsetningin færist sjálf áfram.';
 
   @override
-  String get storyRenew1Title => 'Áminning berst';
+  String get tourAsk1Title => 'Spurðu með þínum orðum';
 
   @override
-  String get storyRenew1Body => 'Áður en færsla rennur út minnir Vaultara þig á. Ýttu á áminninguna til að opna færsluna.';
+  String get tourAsk1Body => 'Spurðu t.d. „Hvað rennur út á þessu ári?“ og fáðu svör úr þínum eigin færslum.';
 
   @override
-  String get storyRenew2Title => 'Vistaðu nýju dagsetninguna';
+  String get tourAsk2Title => 'Talaðu í stað þess að skrifa';
 
   @override
-  String get storyRenew2Body => 'Endurnýjað? Ýttu á „Endurnýja“ og sláðu inn nýja gildistímann. Áminningarnar færast með.';
+  String get tourAsk2Body => 'Ýttu á hljóðnemann og talaðu. Orðin birtast á meðan þú talar og þú getur sent strax.';
 
   @override
-  String get storyRenew3Title => 'Ekki viss um hvernig?';
+  String get tourAsk3Title => 'Þú staðfestir hverja breytingu';
 
   @override
-  String get storyRenew3Body => 'Margar færslur eru með gátlista fyrir endurnýjun. Spyrðu Vaultara getur fundið skrefin fyrir landið þitt, með opinberum tenglum.';
+  String get tourAsk3Body => 'Biddu um að bæta við eða breyta færslu og þú sérð fyrst spjald. Ekkert vistast fyrr en þú staðfestir.';
 
   @override
-  String get storyRenew4Title => 'Láttu hana endurtaka sig';
+  String get tourAsk4Title => 'Afturkallaðu hvaða breytingu sem er';
 
   @override
-  String get storyRenew4Body => 'Fyrir áskriftir og árlegar greiðslur skaltu kveikja á Endurnýjast sjálft og dagsetningin færist sjálf áfram.';
+  String get tourAsk4Body => 'Skiptirðu um skoðun? Hverja staðfesta breytingu má afturkalla af sama spjaldi.';
 
   @override
-  String get storyAsk1Title => 'Spurðu með þínum orðum';
+  String get tourAsk5Title => 'Haltu áfram þar sem frá var horfið';
 
   @override
-  String get storyAsk1Body => 'Spurðu t.d. „Hvað rennur út á þessu ári?“ og fáðu svör úr þínum eigin færslum.';
+  String get tourAsk5Body => 'Spjall er geymt í 90 daga í „Spjallsaga“ og tillögur að spurningum hjálpa þér af stað.';
 
   @override
-  String get storyAsk2Title => 'Talaðu í stað þess að skrifa';
+  String get tourAsk6Title => 'Meira en færslur';
 
   @override
-  String get storyAsk2Body => 'Ýttu á hljóðnemann og talaðu. Orðin birtast á meðan þú talar og þú getur sent strax.';
+  String get tourAsk6Body => 'Það getur líka skipulagt ferðir, bætt við fólki, fundið endurnýjunarskref fyrir landið þitt og deilt færslum, með tenglum á opinberar síður.';
 
   @override
-  String get storyAsk3Title => 'Þú staðfestir hverja breytingu';
+  String get tourWallet1Title => 'Undirbúðu þig fyrst';
 
   @override
-  String get storyAsk3Body => 'Biddu um að bæta við eða breyta færslu og þú sérð fyrst spjald. Ekkert vistast fyrr en þú staðfestir.';
+  String get tourWallet1Body => 'Opnaðu kort eða skjal og veldu hvar þú geymir það, t.d. í veskinu eða töskunni.';
 
   @override
-  String get storyAsk4Title => 'Afturkallaðu hvaða breytingu sem er';
+  String get tourWallet2Title => 'Vistaðu lokunarnúmerið';
 
   @override
-  String get storyAsk4Body => 'Skiptirðu um skoðun? Hverja staðfesta breytingu má afturkalla af sama spjaldi.';
+  String get tourWallet2Body => 'Bættu við lokunarnúmeri hvers banka núna. Það er á kortinu, sem þú hefur ekki þegar þú þarft það.';
 
   @override
-  String get storyAsk5Title => 'Haltu áfram þar sem frá var horfið';
+  String get tourWallet3Title => 'Ef hann týnist';
 
   @override
-  String get storyAsk5Body => 'Spjall er geymt í 90 daga í „Spjallsaga“ og tillögur að spurningum hjálpa þér af stað.';
+  String get tourWallet3Body => 'Ef veskið þitt týnist skaltu ýta hér á hnappinn sem á við. Vaultara sýnir allt sem var í því, svo þú vitir hvað þarf að loka á.';
 
   @override
-  String get storyAsk6Title => 'Meira en færslur';
+  String get tourWallet4Title => 'Lokaðu kortum á mínútum';
 
   @override
-  String get storyAsk6Body => 'Það getur líka skipulagt ferðir, bætt við fólki, fundið endurnýjunarskref fyrir landið þitt og deilt færslum, með tenglum á opinberar síður.';
+  String get tourWallet4Body => 'Hringdu í hvern banka með einni snertingu, merktu kort sem lokuð og vistaðu kærunúmerið.';
 
   @override
-  String get storyWallet1Title => 'Undirbúðu þig fyrst';
+  String get tourWallet5Title => 'Fáðu ný og vertu örugg/ur';
 
   @override
-  String get storyWallet1Body => 'Opnaðu kort eða skjal og veldu hvar þú geymir það, t.d. í veskinu eða töskunni.';
+  String get tourWallet5Body => 'Endurnýjaðu skjölin, skoðaðu yfirlitin þegar þú færð áminningu og ýttu á „Ég fann það“ ef hann finnst.';
 
   @override
-  String get storyWallet2Title => 'Vistaðu lokunarnúmerið';
+  String get tourLife1Title => 'Stórar stundir, ein áætlun';
 
   @override
-  String get storyWallet2Body => 'Bættu við lokunarnúmeri hvers banka núna. Það er á kortinu, sem þú hefur ekki þegar þú þarft það.';
+  String get tourLife1Body => 'Flutningar, barn, nýtt starf eða neyðartilvik: veldu í „Lífsviðburðir“ hvað er að gerast.';
 
   @override
-  String get storyWallet3Title => 'Ef hann týnist';
+  String get tourLife2Title => 'Færslurnar þínar í röð og reglu';
 
   @override
-  String get storyWallet3Body => 'Opnaðu Týnt eða stolið og ýttu á Týnt eða Stolið. Vaultara sýnir allt sem var í því.';
+  String get tourLife2Body => 'Áætlunin sýnir hvaða færslur á að uppfæra, segja upp eða endurnýja og hverjum þú gætir þurft að bæta við.';
 
   @override
-  String get storyWallet4Title => 'Lokaðu kortum á mínútum';
+  String get tourLife3Title => 'Skref og dagsetningar';
 
   @override
-  String get storyWallet4Body => 'Hringdu í hvern banka með einni snertingu, merktu kort sem lokuð og vistaðu kærunúmerið.';
+  String get tourLife3Body => 'Hver áætlun hefur líka skref sem eru ekki færslur, og upphafsdagsetningar sem segja hvenær á að sækja um svo ekkert verði of seint.';
 
   @override
-  String get storyWallet5Title => 'Fáðu ný og vertu örugg/ur';
+  String get tourLife4Title => 'Gerðu hana að þinni';
 
   @override
-  String get storyWallet5Body => 'Endurnýjaðu skjölin, skoðaðu yfirlitin þegar þú færð áminningu og ýttu á „Ég fann það“ ef hann finnst.';
+  String get tourLife4Body => 'Bættu við eigin skrefum, deildu áætluninni sem PDF og fáðu áminningar í kringum dagsetninguna.';
 
   @override
-  String get storyLife1Title => 'Stórar stundir, ein áætlun';
+  String get tourPhotos1Title => 'Myndir af skjölunum þínum';
 
   @override
-  String get storyLife1Body => 'Flutningar, barn, nýtt starf eða neyðartilvik: veldu í „Lífsviðburðir“ hvað er að gerast.';
+  String get tourPhotos1Body => 'Bættu við myndum af fram- og bakhlið korts eða skjals úr færslunni.';
 
   @override
-  String get storyLife2Title => 'Færslurnar þínar í röð og reglu';
+  String get tourPhotos2Title => 'Dulkóðaðar í símanum';
 
   @override
-  String get storyLife2Body => 'Áætlunin sýnir hvaða færslur á að uppfæra, segja upp eða endurnýja og hverjum þú gætir þurft að bæta við.';
+  String get tourPhotos2Body => 'Kveiktu á dulkóðun mynda og þær eru læstar í símanum áður en þær eru sendar upp.';
 
   @override
-  String get storyLife3Title => 'Skref og dagsetningar';
+  String get tourPhotos3Title => 'Læstu viðkvæmum færslum';
 
   @override
-  String get storyLife3Body => 'Skref ná yfir það sem er ekki færsla og upphafsdagsetningar segja hvenær á að sækja um svo ekkert verði of seint.';
+  String get tourPhotos3Body => 'Læstu færslu og hún biður um fingrafar eða skjálæsingu áður en hún opnast.';
 
   @override
-  String get storyLife4Title => 'Gerðu hana að þinni';
+  String get tourPhotos4Title => 'Læstu öllu forritinu';
 
   @override
-  String get storyLife4Body => 'Bættu við eigin skrefum, deildu áætluninni sem PDF og fáðu áminningar í kringum dagsetninguna.';
+  String get tourPhotos4Body => 'Kveiktu á forritalás í öryggisstillingum og feldu efnið þegar þú skiptir um forrit.';
 
   @override
-  String get storyPhotos1Title => 'Myndir af skjölunum þínum';
+  String get tourShare1Title => 'Deildu einni færslu';
 
   @override
-  String get storyPhotos1Body => 'Bættu við myndum af fram- og bakhlið korts eða skjals úr færslunni.';
+  String get tourShare1Body => 'Opnaðu færslu og deildu tengli sem sýnir aðeins þá færslu, ekkert annað.';
 
   @override
-  String get storyPhotos2Title => 'Dulkóðaðar í símanum';
+  String get tourShare2Title => 'Skjalapakki';
 
   @override
-  String get storyPhotos2Body => 'Kveiktu á dulkóðun mynda og þær eru læstar í símanum áður en þær eru sendar upp.';
+  String get tourShare2Body => 'Settu færslurnar sem þú velur, með myndum, í eitt PDF fyrir leigusala, banka eða stofnun.';
 
   @override
-  String get storyPhotos3Title => 'Læstu viðkvæmum færslum';
+  String get tourShare3Title => 'Hafðu stjórnina';
 
   @override
-  String get storyPhotos3Body => 'Læstu færslu og hún biður um fingrafar eða skjálæsingu áður en hún opnast.';
+  String get tourShare3Body => '„Deildir tenglar“ sýnir alla tengla sem þú hefur búið til. Stöðvaðu einn hvenær sem er og hann opnast ekki lengur.';
 
   @override
-  String get storyPhotos4Title => 'Læstu öllu forritinu';
+  String get tourHousehold1Title => 'Bjóddu heimilinu';
 
   @override
-  String get storyPhotos4Body => 'Kveiktu á forritalás í öryggisstillingum og feldu efnið þegar þú skiptir um forrit.';
+  String get tourHousehold1Body => 'Deildu boðskóða eða tengli. Hver og einn skráir sig inn með eigin aðgangi.';
 
   @override
-  String get storyShare1Title => 'Deildu einni færslu';
+  String get tourHousehold2Title => 'Eitt safn færslna';
 
   @override
-  String get storyShare1Body => 'Opnaðu færslu og deildu tengli sem sýnir aðeins þá færslu, ekkert annað.';
+  String get tourHousehold2Body => 'Allir sjá sömu sameiginlegu færslurnar og fá sömu áminningarnar.';
 
   @override
-  String get storyShare2Title => 'Skjalapakki';
+  String get tourHousehold3Title => 'Hver á hana?';
 
   @override
-  String get storyShare2Body => 'Settu færslurnar sem þú velur, með myndum, í eitt PDF fyrir leigusala, banka eða stofnun.';
+  String get tourHousehold3Body => 'Hver færsla getur tilheyrt einhverjum. Nafnið birtist á henni og í áminningum.';
 
   @override
-  String get storyShare3Title => 'Hafðu stjórnina';
+  String get tourImport1Title => 'Skannaðu kort';
 
   @override
-  String get storyShare3Body => '„Deildir tenglar“ sýnir alla tengla sem þú hefur búið til. Stöðvaðu einn hvenær sem er og hann opnast ekki lengur.';
+  String get tourImport1Body => 'Taktu mynd af korti eða skjali og Vaultara fyllir inn nafn og gildistíma fyrir þig.';
 
   @override
-  String get storyHousehold1Title => 'Bjóddu heimilinu';
+  String get tourImport2Title => 'Flyttu inn lista';
 
   @override
-  String get storyHousehold1Body => 'Deildu boðskóða eða tengli. Hver og einn skráir sig inn með eigin aðgangi.';
+  String get tourImport2Body => 'Ertu nú þegar með töflureikni? Flyttu hann inn og farðu yfir hverja línu áður en nokkuð vistast.';
 
   @override
-  String get storyHousehold2Title => 'Eitt safn færslna';
+  String get tourImport3Title => 'Deildu í Vaultara';
 
   @override
-  String get storyHousehold2Body => 'Allir sjá sömu sameiginlegu færslurnar og fá sömu áminningarnar.';
+  String get tourImport3Body => 'Deildu mynd, PDF eða texta úr öðru forriti í Vaultara til að hefja nýja færslu.';
 
   @override
-  String get storyHousehold3Title => 'Hver á hana?';
+  String get tourCosts1Title => 'Í dagatalinu þínu';
 
   @override
-  String get storyHousehold3Body => 'Hver færsla getur tilheyrt einhverjum. Nafnið birtist á henni og í áminningum.';
+  String get tourCosts1Body => 'Bættu gildistíma í dagatal símans, við hliðina á öðrum áætlunum.';
 
   @override
-  String get storyImport1Title => 'Skannaðu kort';
+  String get tourCosts2Title => 'Hvað endurnýjanir kosta';
 
   @override
-  String get storyImport1Body => 'Taktu mynd af korti eða skjali og Vaultara fyllir inn nafn og gildistíma fyrir þig.';
+  String get tourCosts2Body => 'Skráðu kostnað endurnýjunar á færslu og Vaultara sýnir hvað þú eyðir á ári.';
 
   @override
-  String get storyImport2Title => 'Flyttu inn lista';
+  String get tourCosts3Title => 'Skipuleggðu fram í tímann';
 
   @override
-  String get storyImport2Body => 'Ertu nú þegar með töflureikni? Flyttu hann inn og farðu yfir hverja línu áður en nokkuð vistast.';
+  String get tourCosts3Body => 'Sjáðu dýru mánuðina nálgast svo stór endurnýjun komi þér aldrei á óvart.';
 
   @override
-  String get storyImport3Title => 'Deildu í Vaultara';
+  String get tourBusiness1Title => 'Fylgstu með teyminu';
 
   @override
-  String get storyImport3Body => 'Deildu mynd, PDF eða texta úr öðru forriti í Vaultara til að hefja nýja færslu.';
+  String get tourBusiness1Body => 'Bættu við starfsfólki og geymdu skírteini, leyfi og réttindi á einum stað.';
 
   @override
-  String get storyCosts1Title => 'Í dagatalinu þínu';
+  String get tourBusiness2Title => 'Áminningar í tölvupósti';
 
   @override
-  String get storyCosts1Body => 'Bættu gildistíma í dagatal símans, við hliðina á öðrum áætlunum.';
+  String get tourBusiness2Body => 'Starfsfólk fær tölvupóst áður en skjöl þess renna út, jafnvel án forritsins.';
 
   @override
-  String get storyCosts2Title => 'Hvað endurnýjanir kosta';
+  String get tourBusiness3Title => 'Mánaðarskýrsla';
 
   @override
-  String get storyCosts2Body => 'Skráðu kostnað endurnýjunar á færslu og Vaultara sýnir hvað þú eyðir á ári.';
+  String get tourBusiness3Body => 'Í hverjum mánuði sýnir skýrsla hvað er í gildi, hvað rennur út og hvað vantar.';
 
   @override
-  String get storyCosts3Title => 'Skipuleggðu fram í tímann';
+  String get tourBusiness4Title => 'Biddu um uppfærslu';
 
   @override
-  String get storyCosts3Body => 'Sjáðu dýru mánuðina nálgast svo stór endurnýjun komi þér aldrei á óvart.';
-
-  @override
-  String get storyBusiness1Title => 'Fylgstu með teyminu';
-
-  @override
-  String get storyBusiness1Body => 'Bættu við starfsfólki og geymdu skírteini, leyfi og réttindi á einum stað.';
-
-  @override
-  String get storyBusiness2Title => 'Áminningar í tölvupósti';
-
-  @override
-  String get storyBusiness2Body => 'Starfsfólk fær tölvupóst áður en skjöl þess renna út, jafnvel án forritsins.';
-
-  @override
-  String get storyBusiness3Title => 'Mánaðarskýrsla';
-
-  @override
-  String get storyBusiness3Body => 'Í hverjum mánuði sýnir skýrsla hvað er í gildi, hvað rennur út og hvað vantar.';
-
-  @override
-  String get storyBusiness4Title => 'Biddu um uppfærslu';
-
-  @override
-  String get storyBusiness4Body => 'Sendu tengil og starfsfólk hleður sjálft upp endurnýjaða skjalinu.';
+  String get tourBusiness4Body => 'Sendu tengil og starfsfólk hleður sjálft upp endurnýjaða skjalinu.';
 
   @override
   String get categoryHealthAndMedical => 'Heilsa og læknisfræði';

@@ -7781,290 +7781,262 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => 'Koʻchish, farzand, yangi ish yoki favqulodda holat? Hayotiy voqealar yozuvlaringiz, qadamlaringiz va sanalaringiz bilan reja beradi.';
 
   @override
-  String get storySampleQuestion => 'Bu yil nimaning muddati tugaydi?';
+  String get tourHome1Title => 'Kuningiz bir qarashda';
 
   @override
-  String storySampleAnswer(String name) {
-    return '$name muddati martda tugaydi. Bir oy oldin eslatma kerakmi?';
-  }
+  String get tourHome1Body => 'Bosh ekran bugun muhim narsani koʻrsatadi: tez orada muddati tugaydiganlar va qancha yozuvingiz borligi.';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name muddati 30 kundan keyin tugaydi. Yangilash uchun bosing.';
-  }
+  String get tourHome2Title => 'Istalgan narsani toping';
 
   @override
-  String get storySampleGym => 'Sport zali aʼzoligi';
+  String get tourHome2Body => 'Nomi, guruhi yoki shaxs boʻyicha yozuv topish uchun qidiruvni bosing.';
 
   @override
-  String get storySampleFirstAid => 'Birinchi yordam sertifikati';
+  String get tourHome3Title => 'Safarlar va rejalar';
 
   @override
-  String get storySampleEncrypt => 'Rasmlarni shifrlash';
+  String get tourHome3Body => 'Rejalashtirayotgan safarlaringiz va davom etayotgan hayotiy voqea rejalari qolgan ishlar bilan birga shu yerda koʻrinadi.';
 
   @override
-  String get storySampleAppLock => 'Ilova qulfi';
+  String get tourHome4Title => 'Bir bosishda yordam';
 
   @override
-  String get storySampleHideApp => 'Ilovalar almashtirgichida tarkibni yashirish';
+  String get tourHome4Body => 'Uchqun tugmasi «Vaultaradan soʻrang» ni ochadi. Rasmingiz profil, sozlamalar va darsliklarni ochadi.';
 
   @override
-  String get storyHome1Title => 'Kuningiz bir qarashda';
+  String get tourRenew1Title => 'Eslatma keladi';
 
   @override
-  String get storyHome1Body => 'Bosh ekran bugun muhim narsani koʻrsatadi: tez orada muddati tugaydiganlar va qancha yozuvingiz borligi.';
+  String get tourRenew1Body => 'Yozuv muddati tugashidan oldin Vaultara eslatadi. Yozuvni ochish uchun eslatmani bosing.';
 
   @override
-  String get storyHome2Title => 'Istalgan narsani toping';
+  String get tourRenew2Title => 'Yangi sanani saqlang';
 
   @override
-  String get storyHome2Body => 'Nomi, guruhi yoki shaxs boʻyicha yozuv topish uchun qidiruvni bosing.';
+  String get tourRenew2Body => 'Yangiladingizmi? Yangi tugash sanasini shu yerda tanlab, saqlang. Eslatmalar yangi sanaga koʻchadi.';
 
   @override
-  String get storyHome3Title => 'Safarlar va rejalar';
+  String get tourRenew3Title => 'Qanday qilishni bilmaysizmi?';
 
   @override
-  String get storyHome3Body => 'Rejalashtirayotgan safarlaringiz va davom etayotgan hayotiy voqea rejalari qolgan ishlar bilan birga shu yerda koʻrinadi.';
+  String get tourRenew3Body => 'Koʻp yozuvlarda yangilash roʻyxati bor. Vaultaradan soʻrang mamlakatingiz bosqichlarini rasmiy havolalar bilan topa oladi.';
 
   @override
-  String get storyHome4Title => 'Bir bosishda yordam';
+  String get tourRenew4Title => 'Takrorlansin';
 
   @override
-  String get storyHome4Body => 'Uchqun tugmasi «Vaultaradan soʻrang» ni ochadi. Rasmingiz profil, sozlamalar va darsliklarni ochadi.';
+  String get tourRenew4Body => 'Obunalar va yillik toʻlovlar uchun O\'zi yangilanadi ni yoqing, sana oʻzi oldinga siljiydi.';
 
   @override
-  String get storyRenew1Title => 'Eslatma keladi';
+  String get tourAsk1Title => 'Oʻz soʻzlaringiz bilan soʻrang';
 
   @override
-  String get storyRenew1Body => 'Yozuv muddati tugashidan oldin Vaultara eslatadi. Yozuvni ochish uchun eslatmani bosing.';
+  String get tourAsk1Body => '«Bu yil nimaning muddati tugaydi?» kabi soʻrab, oʻz yozuvlaringizdan javob oling.';
 
   @override
-  String get storyRenew2Title => 'Yangi sanani saqlang';
+  String get tourAsk2Title => 'Yozish oʻrniga gapiring';
 
   @override
-  String get storyRenew2Body => 'Yangiladingizmi? «Uzaytirish» ni bosib, yangi muddatni kiriting. Eslatmalar ham birga suriladi.';
+  String get tourAsk2Body => 'Mikrofonni bosib gapiring. Gapirayotganda soʻzlar paydo boʻladi va darhol yuborishingiz mumkin.';
 
   @override
-  String get storyRenew3Title => 'Qanday qilishni bilmaysizmi?';
+  String get tourAsk3Title => 'Har bir oʻzgarishni siz tasdiqlaysiz';
 
   @override
-  String get storyRenew3Body => 'Koʻp yozuvlarda yangilash roʻyxati bor. Vaultaradan soʻrang mamlakatingiz bosqichlarini rasmiy havolalar bilan topa oladi.';
+  String get tourAsk3Body => 'Yozuv qoʻshish yoki oʻzgartirishni soʻrang, avval karta koʻrasiz. Tasdiqlamaguningizcha hech narsa saqlanmaydi.';
 
   @override
-  String get storyRenew4Title => 'Takrorlansin';
+  String get tourAsk4Title => 'Istalgan oʻzgarishni bekor qiling';
 
   @override
-  String get storyRenew4Body => 'Obunalar va yillik toʻlovlar uchun O\'zi yangilanadi ni yoqing, sana oʻzi oldinga siljiydi.';
+  String get tourAsk4Body => 'Fikringiz oʻzgardimi? Tasdiqlangan har bir oʻzgarishni oʻsha kartadan bekor qilish mumkin.';
 
   @override
-  String get storyAsk1Title => 'Oʻz soʻzlaringiz bilan soʻrang';
+  String get tourAsk5Title => 'Toʻxtagan joyingizdan davom eting';
 
   @override
-  String get storyAsk1Body => '«Bu yil nimaning muddati tugaydi?» kabi soʻrab, oʻz yozuvlaringizdan javob oling.';
+  String get tourAsk5Body => 'Suhbatlar «Suhbatlar tarixi» boʻlimida 90 kun saqlanadi, tavsiya etilgan savollar boshlashga yordam beradi.';
 
   @override
-  String get storyAsk2Title => 'Yozish oʻrniga gapiring';
+  String get tourAsk6Title => 'Yozuvlardan ham koʻproq';
 
   @override
-  String get storyAsk2Body => 'Mikrofonni bosib gapiring. Gapirayotganda soʻzlar paydo boʻladi va darhol yuborishingiz mumkin.';
+  String get tourAsk6Body => 'U safar rejalashtirishi, odam qoʻshishi, mamlakatingiz uchun yangilash bosqichlarini topishi va yozuvlarni ulashishi ham mumkin, rasmiy sahifalarga havolalar bilan.';
 
   @override
-  String get storyAsk3Title => 'Har bir oʻzgarishni siz tasdiqlaysiz';
+  String get tourWallet1Title => 'Avval tayyorlaning';
 
   @override
-  String get storyAsk3Body => 'Yozuv qoʻshish yoki oʻzgartirishni soʻrang, avval karta koʻrasiz. Tasdiqlamaguningizcha hech narsa saqlanmaydi.';
+  String get tourWallet1Body => 'Karta yoki hujjatni oching va qayerda saqlashingizni tanlang, masalan hamyon yoki sumka.';
 
   @override
-  String get storyAsk4Title => 'Istalgan oʻzgarishni bekor qiling';
+  String get tourWallet2Title => 'Bloklash raqamini saqlang';
 
   @override
-  String get storyAsk4Body => 'Fikringiz oʻzgardimi? Tasdiqlangan har bir oʻzgarishni oʻsha kartadan bekor qilish mumkin.';
+  String get tourWallet2Body => 'Har bir bankning bloklash raqamini hozir qoʻshing. U kartada yozilgan, kerak boʻlganda esa karta yoningizda boʻlmaydi.';
 
   @override
-  String get storyAsk5Title => 'Toʻxtagan joyingizdan davom eting';
+  String get tourWallet3Title => 'Agar yoʻqolsa';
 
   @override
-  String get storyAsk5Body => 'Suhbatlar «Suhbatlar tarixi» boʻlimida 90 kun saqlanadi, tavsiya etilgan savollar boshlashga yordam beradi.';
+  String get tourWallet3Body => 'Hamyoningiz yoʻqolsa, shu yerda mos tugmani bosing. Vaultara ichida boʻlgan hamma narsani koʻrsatadi, shunda nimani bloklash kerakligini bilasiz.';
 
   @override
-  String get storyAsk6Title => 'Yozuvlardan ham koʻproq';
+  String get tourWallet4Title => 'Kartalarni daqiqalarda bloklang';
 
   @override
-  String get storyAsk6Body => 'U safar rejalashtirishi, odam qoʻshishi, mamlakatingiz uchun yangilash bosqichlarini topishi va yozuvlarni ulashishi ham mumkin, rasmiy sahifalarga havolalar bilan.';
+  String get tourWallet4Body => 'Bir bosishda har bir bankka qoʻngʻiroq qiling, kartalarni bloklangan deb belgilang va ariza raqamini saqlang.';
 
   @override
-  String get storyWallet1Title => 'Avval tayyorlaning';
+  String get tourWallet5Title => 'Tiklang va xavfsiz boʻling';
 
   @override
-  String get storyWallet1Body => 'Karta yoki hujjatni oching va qayerda saqlashingizni tanlang, masalan hamyon yoki sumka.';
+  String get tourWallet5Body => 'Hujjatlarni tiklang, eslatilganda koʻchirmalarni tekshiring va topilsa «Topdim» ni bosing.';
 
   @override
-  String get storyWallet2Title => 'Bloklash raqamini saqlang';
+  String get tourLife1Title => 'Katta lahzalar, bitta reja';
 
   @override
-  String get storyWallet2Body => 'Har bir bankning bloklash raqamini hozir qoʻshing. U kartada yozilgan, kerak boʻlganda esa karta yoningizda boʻlmaydi.';
+  String get tourLife1Body => 'Koʻchish, farzand, yangi ish yoki favqulodda holat: «Hayotiy voqealar» boʻlimida nima boʻlayotganini tanlang.';
 
   @override
-  String get storyWallet3Title => 'Agar yoʻqolsa';
+  String get tourLife2Title => 'Yozuvlaringiz tartibda';
 
   @override
-  String get storyWallet3Body => 'Yoʻqolgan yoki oʻgʻirlangan boʻlimini oching va Yoʻqolgan yoki Oʻgʻirlangan tugmasini bosing. Vaultara ichida boʻlgan hamma narsani koʻrsatadi.';
+  String get tourLife2Body => 'Reja qaysi yozuvlarni yangilash, bekor qilish yoki uzaytirish kerakligini va qaysilarini qoʻshish kerak boʻlishi mumkinligini koʻrsatadi.';
 
   @override
-  String get storyWallet4Title => 'Kartalarni daqiqalarda bloklang';
+  String get tourLife3Title => 'Qadamlar va sanalar';
 
   @override
-  String get storyWallet4Body => 'Bir bosishda har bir bankka qoʻngʻiroq qiling, kartalarni bloklangan deb belgilang va ariza raqamini saqlang.';
+  String get tourLife3Body => 'Har bir rejada yozuv boʻlmagan qadamlar ham bor, boshlanish sanalari esa hech narsa kechikmasligi uchun qachon ariza berishni aytadi.';
 
   @override
-  String get storyWallet5Title => 'Tiklang va xavfsiz boʻling';
+  String get tourLife4Title => 'Oʻzingizga moslang';
 
   @override
-  String get storyWallet5Body => 'Hujjatlarni tiklang, eslatilganda koʻchirmalarni tekshiring va topilsa «Topdim» ni bosing.';
+  String get tourLife4Body => 'Oʻz qadamlaringizni qoʻshing, rejani PDF sifatida ulashing va sana atrofida eslatmalar oling.';
 
   @override
-  String get storyLife1Title => 'Katta lahzalar, bitta reja';
+  String get tourPhotos1Title => 'Hujjatlaringiz rasmlari';
 
   @override
-  String get storyLife1Body => 'Koʻchish, farzand, yangi ish yoki favqulodda holat: «Hayotiy voqealar» boʻlimida nima boʻlayotganini tanlang.';
+  String get tourPhotos1Body => 'Yozuvdan karta yoki hujjatning old va orqa tomoni rasmlarini qoʻshing.';
 
   @override
-  String get storyLife2Title => 'Yozuvlaringiz tartibda';
+  String get tourPhotos2Title => 'Telefonda shifrlangan';
 
   @override
-  String get storyLife2Body => 'Reja qaysi yozuvlarni yangilash, bekor qilish yoki uzaytirish kerakligini va qaysilarini qoʻshish kerak boʻlishi mumkinligini koʻrsatadi.';
+  String get tourPhotos2Body => 'Rasm shifrlashni yoqing, rasmlar yuklanishdan oldin telefonda qulflanadi.';
 
   @override
-  String get storyLife3Title => 'Qadamlar va sanalar';
+  String get tourPhotos3Title => 'Maxfiy yozuvlarni qulflang';
 
   @override
-  String get storyLife3Body => 'Qadamlar yozuv boʻlmagan ishlarni qamrab oladi, boshlanish sanalari esa hech narsa kechikmasligi uchun qachon ariza berishni aytadi.';
+  String get tourPhotos3Body => 'Yozuvni qulflang, ochilishdan oldin barmoq izi yoki ekran qulfini soʻraydi.';
 
   @override
-  String get storyLife4Title => 'Oʻzingizga moslang';
+  String get tourPhotos4Title => 'Butun ilovani qulflang';
 
   @override
-  String get storyLife4Body => 'Oʻz qadamlaringizni qoʻshing, rejani PDF sifatida ulashing va sana atrofida eslatmalar oling.';
+  String get tourPhotos4Body => 'Xavfsizlik sozlamalarida ilova qulfini yoqing va ilova almashtirganda tarkibni yashiring.';
 
   @override
-  String get storyPhotos1Title => 'Hujjatlaringiz rasmlari';
+  String get tourShare1Title => 'Bitta yozuvni ulashing';
 
   @override
-  String get storyPhotos1Body => 'Yozuvdan karta yoki hujjatning old va orqa tomoni rasmlarini qoʻshing.';
+  String get tourShare1Body => 'Yozuvni oching va faqat oʻsha yozuvni koʻrsatadigan havolani ulashing, boshqa hech narsa yoʻq.';
 
   @override
-  String get storyPhotos2Title => 'Telefonda shifrlangan';
+  String get tourShare2Title => 'Isbot toʻplami';
 
   @override
-  String get storyPhotos2Body => 'Rasm shifrlashni yoqing, rasmlar yuklanishdan oldin telefonda qulflanadi.';
+  String get tourShare2Body => 'Tanlangan yozuvlarni rasmlari bilan birga uy egasi, bank yoki idora uchun bitta PDF ga yigʻing.';
 
   @override
-  String get storyPhotos3Title => 'Maxfiy yozuvlarni qulflang';
+  String get tourShare3Title => 'Nazorat sizda';
 
   @override
-  String get storyPhotos3Body => 'Yozuvni qulflang, ochilishdan oldin barmoq izi yoki ekran qulfini soʻraydi.';
+  String get tourShare3Body => '«Ulashilgan havolalar» siz yaratgan har bir havolani koʻrsatadi. Istalganini istalgan vaqtda toʻxtating, u boshqa ochilmaydi.';
 
   @override
-  String get storyPhotos4Title => 'Butun ilovani qulflang';
+  String get tourHousehold1Title => 'Oilangizni taklif qiling';
 
   @override
-  String get storyPhotos4Body => 'Xavfsizlik sozlamalarida ilova qulfini yoqing va ilova almashtirganda tarkibni yashiring.';
+  String get tourHousehold1Body => 'Taklif kodi yoki havolasini ulashing. Har kim oʻz hisobi bilan kiradi.';
 
   @override
-  String get storyShare1Title => 'Bitta yozuvni ulashing';
+  String get tourHousehold2Title => 'Bitta yozuvlar toʻplami';
 
   @override
-  String get storyShare1Body => 'Yozuvni oching va faqat oʻsha yozuvni koʻrsatadigan havolani ulashing, boshqa hech narsa yoʻq.';
+  String get tourHousehold2Body => 'Hamma bir xil umumiy yozuvlarni koʻradi va bir xil eslatmalarni oladi.';
 
   @override
-  String get storyShare2Title => 'Isbot toʻplami';
+  String get tourHousehold3Title => 'Kimniki?';
 
   @override
-  String get storyShare2Body => 'Tanlangan yozuvlarni rasmlari bilan birga uy egasi, bank yoki idora uchun bitta PDF ga yigʻing.';
+  String get tourHousehold3Body => 'Har bir yozuv kimgadir tegishli boʻlishi mumkin. Uning ismi yozuvda va eslatmalarda koʻrinadi.';
 
   @override
-  String get storyShare3Title => 'Nazorat sizda';
+  String get tourImport1Title => 'Kartani skanerlang';
 
   @override
-  String get storyShare3Body => '«Ulashilgan havolalar» siz yaratgan har bir havolani koʻrsatadi. Istalganini istalgan vaqtda toʻxtating, u boshqa ochilmaydi.';
+  String get tourImport1Body => 'Karta yoki hujjatni suratga oling, Vaultara nomi va muddatini siz uchun toʻldiradi.';
 
   @override
-  String get storyHousehold1Title => 'Oilangizni taklif qiling';
+  String get tourImport2Title => 'Roʻyxatni import qiling';
 
   @override
-  String get storyHousehold1Body => 'Taklif kodi yoki havolasini ulashing. Har kim oʻz hisobi bilan kiradi.';
+  String get tourImport2Body => 'Jadvalingiz bormi? Import qiling va saqlashdan oldin har bir qatorni tekshiring.';
 
   @override
-  String get storyHousehold2Title => 'Bitta yozuvlar toʻplami';
+  String get tourImport3Title => 'Vaultara ga ulashing';
 
   @override
-  String get storyHousehold2Body => 'Hamma bir xil umumiy yozuvlarni koʻradi va bir xil eslatmalarni oladi.';
+  String get tourImport3Body => 'Yangi yozuv boshlash uchun boshqa ilovadan rasm, PDF yoki matnni Vaultara ga ulashing.';
 
   @override
-  String get storyHousehold3Title => 'Kimniki?';
+  String get tourCosts1Title => 'Taqvimingizda';
 
   @override
-  String get storyHousehold3Body => 'Har bir yozuv kimgadir tegishli boʻlishi mumkin. Uning ismi yozuvda va eslatmalarda koʻrinadi.';
+  String get tourCosts1Body => 'Muddatlarni boshqa rejalaringiz yonida telefon taqvimiga qoʻshing.';
 
   @override
-  String get storyImport1Title => 'Kartani skanerlang';
+  String get tourCosts2Title => 'Yangilash narxi';
 
   @override
-  String get storyImport1Body => 'Karta yoki hujjatni suratga oling, Vaultara nomi va muddatini siz uchun toʻldiradi.';
+  String get tourCosts2Body => 'Yozuvga yangilash narxini kiriting, Vaultara yiliga qancha sarflashingizni koʻrsatadi.';
 
   @override
-  String get storyImport2Title => 'Roʻyxatni import qiling';
+  String get tourCosts3Title => 'Oldindan rejalang';
 
   @override
-  String get storyImport2Body => 'Jadvalingiz bormi? Import qiling va saqlashdan oldin har bir qatorni tekshiring.';
+  String get tourCosts3Body => 'Qimmat oylarni oldindan koʻring, katta yangilash hech qachon kutilmagan boʻlmaydi.';
 
   @override
-  String get storyImport3Title => 'Vaultara ga ulashing';
+  String get tourBusiness1Title => 'Jamoangizni kuzating';
 
   @override
-  String get storyImport3Body => 'Yangi yozuv boshlash uchun boshqa ilovadan rasm, PDF yoki matnni Vaultara ga ulashing.';
+  String get tourBusiness1Body => 'Xodimlarni qoʻshing va ularning sertifikatlari, ruxsatnomalari va litsenziyalarini bir joyda saqlang.';
 
   @override
-  String get storyCosts1Title => 'Taqvimingizda';
+  String get tourBusiness2Title => 'Elektron pochta eslatmalari';
 
   @override
-  String get storyCosts1Body => 'Muddatlarni boshqa rejalaringiz yonida telefon taqvimiga qoʻshing.';
+  String get tourBusiness2Body => 'Xodimlar hujjatlari muddati tugashidan oldin xat oladi, ilovasiz ham.';
 
   @override
-  String get storyCosts2Title => 'Yangilash narxi';
+  String get tourBusiness3Title => 'Oylik hisobot';
 
   @override
-  String get storyCosts2Body => 'Yozuvga yangilash narxini kiriting, Vaultara yiliga qancha sarflashingizni koʻrsatadi.';
+  String get tourBusiness3Body => 'Har oy hisobot nima amalda, nimaning muddati tugayotgani va nima yetishmasligini koʻrsatadi.';
 
   @override
-  String get storyCosts3Title => 'Oldindan rejalang';
+  String get tourBusiness4Title => 'Yangilashni soʻrang';
 
   @override
-  String get storyCosts3Body => 'Qimmat oylarni oldindan koʻring, katta yangilash hech qachon kutilmagan boʻlmaydi.';
-
-  @override
-  String get storyBusiness1Title => 'Jamoangizni kuzating';
-
-  @override
-  String get storyBusiness1Body => 'Xodimlarni qoʻshing va ularning sertifikatlari, ruxsatnomalari va litsenziyalarini bir joyda saqlang.';
-
-  @override
-  String get storyBusiness2Title => 'Elektron pochta eslatmalari';
-
-  @override
-  String get storyBusiness2Body => 'Xodimlar hujjatlari muddati tugashidan oldin xat oladi, ilovasiz ham.';
-
-  @override
-  String get storyBusiness3Title => 'Oylik hisobot';
-
-  @override
-  String get storyBusiness3Body => 'Har oy hisobot nima amalda, nimaning muddati tugayotgani va nima yetishmasligini koʻrsatadi.';
-
-  @override
-  String get storyBusiness4Title => 'Yangilashni soʻrang';
-
-  @override
-  String get storyBusiness4Body => 'Havola yuboring, xodim yangilangan hujjatni oʻzi yuklaydi.';
+  String get tourBusiness4Body => 'Havola yuboring, xodim yangilangan hujjatni oʻzi yuklaydi.';
 
   @override
   String get categoryHealthAndMedical => 'Sogʻliq va tibbiyot';

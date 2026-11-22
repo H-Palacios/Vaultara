@@ -16,16 +16,25 @@ import 'package:vaultara/features/guides/data/renewal_guides.dart';
 import 'package:vaultara/features/guides/logic/renewal_checklist.dart';
 import 'package:vaultara/features/guides/view/renewal_guide_sheet.dart';
 import 'package:vaultara/features/household/logic/household_access.dart';
+import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
+import 'package:vaultara/features/tutorials/view/tutorial_target.dart';
 import 'package:vaultara/shell/shell_state.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
-Future<bool> showRenewSheet(BuildContext context, TrackedItem record) async {
-  if (!HouseholdAccess.canEdit(context, record)) return false;
+/// Opens the sheet to save a renewal. With [preview] it shows a sample
+/// record for the Renew tutorial and never saves anything.
+Future<bool> showRenewSheet(
+  BuildContext context,
+  TrackedItem record, {
+  bool preview = false,
+}) async {
+  if (!preview && !HouseholdAccess.canEdit(context, record)) return false;
   final renewed = await AppSheet.show<bool>(
     context: context,
     showDragHandle: true,
-    builder: (_) => _RenewSheet(record: record),
+    builder: (_) => _RenewSheet(record: record, preview: preview),
   );
+  if (preview) return false;
   if (renewed == true && context.mounted) {
     ActionFeedbackSnackbar.showInfo(
       context,
@@ -71,7 +80,10 @@ class RenewalCostHistory {
 class _RenewSheet extends StatefulWidget {
   final TrackedItem record;
 
-  const _RenewSheet({required this.record});
+  /// The Renew tutorial's sample: shown, never saved.
+  final bool preview;
+
+  const _RenewSheet({required this.record, this.preview = false});
 
   @override
   State<_RenewSheet> createState() => _RenewSheetState();
@@ -154,6 +166,10 @@ class _RenewSheetState extends State<_RenewSheet> {
   }
 
   Future<void> _save(bool withCost) async {
+    if (widget.preview) {
+      Navigator.pop(context, false);
+      return;
+    }
     final expiry = _newExpiry;
     if (_saving || expiry == null) return;
     setState(() => _saving = true);
@@ -243,24 +259,27 @@ class _RenewSheetState extends State<_RenewSheet> {
                 ),
               ],
               if (RenewalGuides.has(widget.record.subcategoryName))
-                Align(
-                  alignment: AlignmentDirectional.centerStart,
-                  child: TextButton.icon(
-                    style: TextButton.styleFrom(
-                      padding: EdgeInsets.zero,
-                      visualDensity: VisualDensity.compact,
+                TutorialTarget(
+                  steps: const [TutorialStep.renewGuide],
+                  child: Align(
+                    alignment: AlignmentDirectional.centerStart,
+                    child: TextButton.icon(
+                      style: TextButton.styleFrom(
+                        padding: EdgeInsets.zero,
+                        visualDensity: VisualDensity.compact,
+                      ),
+                      onPressed: _saving
+                          ? null
+                          : () => showRenewalGuide(
+                              context,
+                              groupKey: widget.record.subcategoryName,
+                              recordName: widget.record.name,
+                              record: widget.record,
+                              showRenewButton: false,
+                            ),
+                      icon: const Icon(Icons.menu_book_rounded, size: 18),
+                      label: Text(loc.guideTitle),
                     ),
-                    onPressed: _saving
-                        ? null
-                        : () => showRenewalGuide(
-                            context,
-                            groupKey: widget.record.subcategoryName,
-                            recordName: widget.record.name,
-                            record: widget.record,
-                            showRenewButton: false,
-                          ),
-                    icon: const Icon(Icons.menu_book_rounded, size: 18),
-                    label: Text(loc.guideTitle),
                   ),
                 ),
               const SizedBox(height: 20),
@@ -273,43 +292,46 @@ class _RenewSheetState extends State<_RenewSheet> {
                 ),
               ),
               const SizedBox(height: 8),
-              Material(
-                color: scheme.primary.withValues(alpha: 0.08),
-                borderRadius: BorderRadius.circular(14),
-                child: InkWell(
+              TutorialTarget(
+                steps: const [TutorialStep.renewDate],
+                child: Material(
+                  color: scheme.primary.withValues(alpha: 0.08),
                   borderRadius: BorderRadius.circular(14),
-                  onTap: _saving ? null : _pickDate,
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 16,
-                      vertical: 14,
-                    ),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.event_available_rounded,
-                          color: scheme.primary,
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: Text(
-                            newExpiry == null
-                                ? loc.renewPickDate
-                                : _format(newExpiry),
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w700,
-                              color: newExpiry == null
-                                  ? scheme.primary
-                                  : scheme.onSurface,
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(14),
+                    onTap: _saving ? null : _pickDate,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                        vertical: 14,
+                      ),
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.event_available_rounded,
+                            color: scheme.primary,
+                          ),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Text(
+                              newExpiry == null
+                                  ? loc.renewPickDate
+                                  : _format(newExpiry),
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w700,
+                                color: newExpiry == null
+                                    ? scheme.primary
+                                    : scheme.onSurface,
+                              ),
                             ),
                           ),
-                        ),
-                        Icon(
-                          Icons.edit_calendar_rounded,
-                          color: scheme.primary,
-                        ),
-                      ],
+                          Icon(
+                            Icons.edit_calendar_rounded,
+                            color: scheme.primary,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),

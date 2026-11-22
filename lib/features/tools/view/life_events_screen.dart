@@ -14,6 +14,9 @@ import 'package:vaultara/features/tools/view/life_plan_start_sheet.dart';
 import 'package:vaultara/features/tools/view/life_plan_text.dart';
 import 'package:vaultara/features/tools/view/lost_wallet_screen.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
+import 'package:vaultara/features/tutorials/view/tutorial_target.dart';
+import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
 
 Future<void> openLifeEvents(
   BuildContext context, {
@@ -84,6 +87,9 @@ class _LifeEventsScreenState extends State<LifeEventsScreen> {
               final finished = plans.where((p) => p.isFinished).toList();
               return ListView(
                 padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+                // Kept until the Flutter version in use exports ScrollCacheExtent.
+                // ignore: deprecated_member_use
+                cacheExtent: TutorialController.listCacheExtent,
                 children: [
                   ScreenHeader(
                     title: loc.lifeEventsTitle,
@@ -109,7 +115,10 @@ class _LifeEventsScreenState extends State<LifeEventsScreen> {
                       const SizedBox(height: 10),
                     ],
                   ],
-                  _Heading(loc.lifePlanStartNew),
+                  TutorialTarget(
+                    steps: const [TutorialStep.lifeChoose],
+                    child: _Heading(loc.lifePlanStartNew),
+                  ),
                   for (final group in LifeEventGroup.values) ...[
                     _GroupLabel(LifeEvents.groupTitle(loc, group)),
                     for (final event in LifeEvents.groups[group]!) ...[

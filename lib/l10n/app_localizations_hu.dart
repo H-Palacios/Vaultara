@@ -7781,290 +7781,262 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => 'Költözés, baba, új munka vagy vészhelyzet? Az Élethelyzetek tervet ad a tételeiddel, lépéseiddel és dátumaiddal.';
 
   @override
-  String get storySampleQuestion => 'Mi jár le idén?';
+  String get tourHome1Title => 'A napod egy pillantással';
 
   @override
-  String storySampleAnswer(String name) {
-    return 'A(z) $name márciusban lejár. Kérsz emlékeztetőt egy hónappal előtte?';
-  }
+  String get tourHome1Body => 'A kezdőképernyő azt mutatja, ami ma fontos: mi jár le hamarosan, és hány tételed van.';
 
   @override
-  String storySampleNotification(String name) {
-    return 'A(z) $name 30 nap múlva lejár. Koppints a megújításhoz.';
-  }
+  String get tourHome2Title => 'Találj meg bármit';
 
   @override
-  String get storySampleGym => 'Edzőtermi bérlet';
+  String get tourHome2Body => 'Koppints a keresésre, hogy név, csoport vagy személy alapján megtalálj egy tételt.';
 
   @override
-  String get storySampleFirstAid => 'Elsősegély-tanúsítvány';
+  String get tourHome3Title => 'Utak és tervek';
 
   @override
-  String get storySampleEncrypt => 'Fotók titkosítása';
+  String get tourHome3Body => 'Itt jelennek meg a tervezett utak és a folyamatban lévő élethelyzet-tervek, a hátralévő teendőkkel.';
 
   @override
-  String get storySampleAppLock => 'Alkalmazászár';
+  String get tourHome4Title => 'Segítség egy koppintással';
 
   @override
-  String get storySampleHideApp => 'Tartalom elrejtése az alkalmazásváltóban';
+  String get tourHome4Body => 'A szikra gomb megnyitja a(z) „Kérdezze a Vaultarát” funkciót. A fotód a profilt, a beállításokat és az oktatóanyagokat nyitja meg.';
 
   @override
-  String get storyHome1Title => 'A napod egy pillantással';
+  String get tourRenew1Title => 'Emlékeztető érkezik';
 
   @override
-  String get storyHome1Body => 'A kezdőképernyő azt mutatja, ami ma fontos: mi jár le hamarosan, és hány tételed van.';
+  String get tourRenew1Body => 'Mielőtt egy tétel lejár, a Vaultara emlékeztet. Koppints az emlékeztetőre a tétel megnyitásához.';
 
   @override
-  String get storyHome2Title => 'Találj meg bármit';
+  String get tourRenew2Title => 'Mentsd el az új dátumot';
 
   @override
-  String get storyHome2Body => 'Koppints a keresésre, hogy név, csoport vagy személy alapján megtalálj egy tételt.';
+  String get tourRenew2Body => 'Megújította? Itt válassza ki az új lejárati dátumot, és mentse. Az emlékeztetők átkerülnek az új dátumra.';
 
   @override
-  String get storyHome3Title => 'Utak és tervek';
+  String get tourRenew3Title => 'Nem tudod, hogyan?';
 
   @override
-  String get storyHome3Body => 'Itt jelennek meg a tervezett utak és a folyamatban lévő élethelyzet-tervek, a hátralévő teendőkkel.';
+  String get tourRenew3Body => 'Sok tételhez tartozik megújítási ellenőrzőlista. A Kérdezze a Vaultarát megtalálja az országa lépéseit, hivatalos linkekkel.';
 
   @override
-  String get storyHome4Title => 'Segítség egy koppintással';
+  String get tourRenew4Title => 'Legyen ismétlődő';
 
   @override
-  String get storyHome4Body => 'A szikra gomb megnyitja a(z) „Kérdezze a Vaultarát” funkciót. A fotód a profilt, a beállításokat és az oktatóanyagokat nyitja meg.';
+  String get tourRenew4Body => 'Előfizetéseknél és éves fizetéseknél kapcsolja be a Magától megújul opciót, és a dátum magától előre lép.';
 
   @override
-  String get storyRenew1Title => 'Emlékeztető érkezik';
+  String get tourAsk1Title => 'Kérdezz a saját szavaiddal';
 
   @override
-  String get storyRenew1Body => 'Mielőtt egy tétel lejár, a Vaultara emlékeztet. Koppints az emlékeztetőre a tétel megnyitásához.';
+  String get tourAsk1Body => 'Kérdezd meg például: „Mi jár le idén?”, és válaszokat kapsz a saját tételeidből.';
 
   @override
-  String get storyRenew2Title => 'Mentsd el az új dátumot';
+  String get tourAsk2Title => 'Beszélj gépelés helyett';
 
   @override
-  String get storyRenew2Body => 'Megújítottad? Koppints a(z) „Megújítás” gombra, és add meg az új lejárati dátumot. Az emlékeztetők is elmozdulnak.';
+  String get tourAsk2Body => 'Koppints a mikrofonra, és beszélj. A szavak beszéd közben jelennek meg, és azonnal elküldheted.';
 
   @override
-  String get storyRenew3Title => 'Nem tudod, hogyan?';
+  String get tourAsk3Title => 'Minden módosítást te hagysz jóvá';
 
   @override
-  String get storyRenew3Body => 'Sok tételhez tartozik megújítási ellenőrzőlista. A Kérdezze a Vaultarát megtalálja az országa lépéseit, hivatalos linkekkel.';
+  String get tourAsk3Body => 'Kérd egy tétel hozzáadását vagy módosítását, és először egy kártyát látsz. Semmi sem mentődik, amíg jóvá nem hagyod.';
 
   @override
-  String get storyRenew4Title => 'Legyen ismétlődő';
+  String get tourAsk4Title => 'Bármilyen módosítás visszavonása';
 
   @override
-  String get storyRenew4Body => 'Előfizetéseknél és éves fizetéseknél kapcsolja be a Magától megújul opciót, és a dátum magától előre lép.';
+  String get tourAsk4Body => 'Meggondoltad magad? Minden jóváhagyott módosítás visszavonható ugyanarról a kártyáról.';
 
   @override
-  String get storyAsk1Title => 'Kérdezz a saját szavaiddal';
+  String get tourAsk5Title => 'Folytasd, ahol abbahagytad';
 
   @override
-  String get storyAsk1Body => 'Kérdezd meg például: „Mi jár le idén?”, és válaszokat kapsz a saját tételeidből.';
+  String get tourAsk5Body => 'A csevegések 90 napig megmaradnak itt: „Csevegési előzmények”, a javasolt kérdések pedig segítenek elindulni.';
 
   @override
-  String get storyAsk2Title => 'Beszélj gépelés helyett';
+  String get tourAsk6Title => 'Több mint tételek';
 
   @override
-  String get storyAsk2Body => 'Koppints a mikrofonra, és beszélj. A szavak beszéd közben jelennek meg, és azonnal elküldheted.';
+  String get tourAsk6Body => 'Utat is tervez, személyeket ad hozzá, megkeresi az országa megújítási lépéseit és megoszt tételeket, hivatalos oldalakra mutató linkekkel.';
 
   @override
-  String get storyAsk3Title => 'Minden módosítást te hagysz jóvá';
+  String get tourWallet1Title => 'Először készülj fel';
 
   @override
-  String get storyAsk3Body => 'Kérd egy tétel hozzáadását vagy módosítását, és először egy kártyát látsz. Semmi sem mentődik, amíg jóvá nem hagyod.';
+  String get tourWallet1Body => 'Nyiss meg egy kártyát vagy dokumentumot, és válaszd ki, hol tartod, például a pénztárcában vagy a táskában.';
 
   @override
-  String get storyAsk4Title => 'Bármilyen módosítás visszavonása';
+  String get tourWallet2Title => 'Mentsd el a letiltási számot';
 
   @override
-  String get storyAsk4Body => 'Meggondoltad magad? Minden jóváhagyott módosítás visszavonható ugyanarról a kártyáról.';
+  String get tourWallet2Body => 'Add hozzá most minden bank letiltási számát. A kártyán van, ami nem lesz nálad, amikor szükséged lesz rá.';
 
   @override
-  String get storyAsk5Title => 'Folytasd, ahol abbahagytad';
+  String get tourWallet3Title => 'Ha elveszik';
 
   @override
-  String get storyAsk5Body => 'A csevegések 90 napig megmaradnak itt: „Csevegési előzmények”, a javasolt kérdések pedig segítenek elindulni.';
+  String get tourWallet3Body => 'Ha elveszik a pénztárcája, koppintson itt a megfelelő gombra. A Vaultara mindent mutat, ami benne volt, így tudja, mit kell letiltani.';
 
   @override
-  String get storyAsk6Title => 'Több mint tételek';
+  String get tourWallet4Title => 'Kártyák letiltása percek alatt';
 
   @override
-  String get storyAsk6Body => 'Utat is tervez, személyeket ad hozzá, megkeresi az országa megújítási lépéseit és megoszt tételeket, hivatalos oldalakra mutató linkekkel.';
+  String get tourWallet4Body => 'Hívd fel egy koppintással az összes bankot, jelöld letiltottnak a kártyákat, és mentsd el a feljelentés számát.';
 
   @override
-  String get storyWallet1Title => 'Először készülj fel';
+  String get tourWallet5Title => 'Pótold és maradj biztonságban';
 
   @override
-  String get storyWallet1Body => 'Nyiss meg egy kártyát vagy dokumentumot, és válaszd ki, hol tartod, például a pénztárcában vagy a táskában.';
+  String get tourWallet5Body => 'Pótold a dokumentumaidat, nézd át a kivonatokat, amikor emlékeztetünk, és koppints a(z) „Megtaláltam” gombra, ha előkerül.';
 
   @override
-  String get storyWallet2Title => 'Mentsd el a letiltási számot';
+  String get tourLife1Title => 'Nagy pillanatok, egy terv';
 
   @override
-  String get storyWallet2Body => 'Add hozzá most minden bank letiltási számát. A kártyán van, ami nem lesz nálad, amikor szükséged lesz rá.';
+  String get tourLife1Body => 'Költözés, baba, új munka vagy vészhelyzet: válaszd ki itt, mi történik: „Életesemények”.';
 
   @override
-  String get storyWallet3Title => 'Ha elveszik';
+  String get tourLife2Title => 'Rendben a tételeid';
 
   @override
-  String get storyWallet3Body => 'Nyisd meg az Elveszett vagy ellopták részt, és koppints az Elveszett vagy Ellopták lehetőségre. A Vaultara mindent mutat, ami benne volt.';
+  String get tourLife2Body => 'A terv megmutatja, mely tételeket frissítsd, mondd le vagy újítsd meg, és melyeket kell talán hozzáadnod.';
 
   @override
-  String get storyWallet4Title => 'Kártyák letiltása percek alatt';
+  String get tourLife3Title => 'Lépések és dátumok';
 
   @override
-  String get storyWallet4Body => 'Hívd fel egy koppintással az összes bankot, jelöld letiltottnak a kártyákat, és mentsd el a feljelentés számát.';
+  String get tourLife3Body => 'Minden tervben vannak olyan lépések is, amelyek nem bejegyzések, és kezdő dátumok, amelyek megmondják, mikor kell igényelni, hogy semmi ne késsen.';
 
   @override
-  String get storyWallet5Title => 'Pótold és maradj biztonságban';
+  String get tourLife4Title => 'Szabd magadra';
 
   @override
-  String get storyWallet5Body => 'Pótold a dokumentumaidat, nézd át a kivonatokat, amikor emlékeztetünk, és koppints a(z) „Megtaláltam” gombra, ha előkerül.';
+  String get tourLife4Body => 'Adj hozzá saját lépéseket, oszd meg a tervet PDF-ként, és kapj emlékeztetőket a dátum körül.';
 
   @override
-  String get storyLife1Title => 'Nagy pillanatok, egy terv';
+  String get tourPhotos1Title => 'Fotók a dokumentumaidról';
 
   @override
-  String get storyLife1Body => 'Költözés, baba, új munka vagy vészhelyzet: válaszd ki itt, mi történik: „Életesemények”.';
+  String get tourPhotos1Body => 'A tételből adj hozzá fotót egy kártya vagy dokumentum elejéről és hátuljáról.';
 
   @override
-  String get storyLife2Title => 'Rendben a tételeid';
+  String get tourPhotos2Title => 'Titkosítva a telefonodon';
 
   @override
-  String get storyLife2Body => 'A terv megmutatja, mely tételeket frissítsd, mondd le vagy újítsd meg, és melyeket kell talán hozzáadnod.';
+  String get tourPhotos2Body => 'Kapcsold be a fotótitkosítást, és a fotók a telefonodon zárolódnak feltöltés előtt.';
 
   @override
-  String get storyLife3Title => 'Lépések és dátumok';
+  String get tourPhotos3Title => 'Zárold az érzékeny tételeket';
 
   @override
-  String get storyLife3Body => 'A lépések azt fedik le, ami nem tétel, a kezdő dátumok pedig megmondják, mikor kell igényelni, hogy semmi ne késsen.';
+  String get tourPhotos3Body => 'Zárolj egy tételt, és megnyitás előtt ujjlenyomatot vagy képernyőzárat kér.';
 
   @override
-  String get storyLife4Title => 'Szabd magadra';
+  String get tourPhotos4Title => 'Zárold az egész alkalmazást';
 
   @override
-  String get storyLife4Body => 'Adj hozzá saját lépéseket, oszd meg a tervet PDF-ként, és kapj emlékeztetőket a dátum körül.';
+  String get tourPhotos4Body => 'A biztonsági beállításokban kapcsold be az alkalmazászárat, és rejtsd el a tartalmat alkalmazásváltáskor.';
 
   @override
-  String get storyPhotos1Title => 'Fotók a dokumentumaidról';
+  String get tourShare1Title => 'Egy tétel megosztása';
 
   @override
-  String get storyPhotos1Body => 'A tételből adj hozzá fotót egy kártya vagy dokumentum elejéről és hátuljáról.';
+  String get tourShare1Body => 'Nyiss meg egy tételt, és ossz meg egy hivatkozást, amely csak azt a tételt mutatja, semmi mást.';
 
   @override
-  String get storyPhotos2Title => 'Titkosítva a telefonodon';
+  String get tourShare2Title => 'Igazolási csomag';
 
   @override
-  String get storyPhotos2Body => 'Kapcsold be a fotótitkosítást, és a fotók a telefonodon zárolódnak feltöltés előtt.';
+  String get tourShare2Body => 'Tedd a kiválasztott tételeket fotóikkal együtt egyetlen PDF-be egy bérbeadónak, banknak vagy hivatalnak.';
 
   @override
-  String get storyPhotos3Title => 'Zárold az érzékeny tételeket';
+  String get tourShare3Title => 'Te irányítasz';
 
   @override
-  String get storyPhotos3Body => 'Zárolj egy tételt, és megnyitás előtt ujjlenyomatot vagy képernyőzárat kér.';
+  String get tourShare3Body => 'A(z) „Megosztott linkek” minden létrehozott hivatkozást mutat. Bármelyiket bármikor leállíthatod, és többé nem nyílik meg.';
 
   @override
-  String get storyPhotos4Title => 'Zárold az egész alkalmazást';
+  String get tourHousehold1Title => 'Hívd meg a háztartásodat';
 
   @override
-  String get storyPhotos4Body => 'A biztonsági beállításokban kapcsold be az alkalmazászárat, és rejtsd el a tartalmat alkalmazásváltáskor.';
+  String get tourHousehold1Body => 'Ossz meg egy meghívókódot vagy hivatkozást. Mindenki a saját fiókjával lép be.';
 
   @override
-  String get storyShare1Title => 'Egy tétel megosztása';
+  String get tourHousehold2Title => 'Egy közös tételkészlet';
 
   @override
-  String get storyShare1Body => 'Nyiss meg egy tételt, és ossz meg egy hivatkozást, amely csak azt a tételt mutatja, semmi mást.';
+  String get tourHousehold2Body => 'Mindenki ugyanazokat a közös tételeket látja, és ugyanazokat az emlékeztetőket kapja.';
 
   @override
-  String get storyShare2Title => 'Igazolási csomag';
+  String get tourHousehold3Title => 'Kié?';
 
   @override
-  String get storyShare2Body => 'Tedd a kiválasztott tételeket fotóikkal együtt egyetlen PDF-be egy bérbeadónak, banknak vagy hivatalnak.';
+  String get tourHousehold3Body => 'Minden tétel tartozhat valakihez. A neve megjelenik a tételen és az emlékeztetőkben.';
 
   @override
-  String get storyShare3Title => 'Te irányítasz';
+  String get tourImport1Title => 'Kártya beolvasása';
 
   @override
-  String get storyShare3Body => 'A(z) „Megosztott linkek” minden létrehozott hivatkozást mutat. Bármelyiket bármikor leállíthatod, és többé nem nyílik meg.';
+  String get tourImport1Body => 'Fotózz le egy kártyát vagy dokumentumot, és a Vaultara kitölti a nevet és a lejárati dátumot.';
 
   @override
-  String get storyHousehold1Title => 'Hívd meg a háztartásodat';
+  String get tourImport2Title => 'Lista importálása';
 
   @override
-  String get storyHousehold1Body => 'Ossz meg egy meghívókódot vagy hivatkozást. Mindenki a saját fiókjával lép be.';
+  String get tourImport2Body => 'Van már táblázatod? Importáld, és ellenőrizz minden sort, mielőtt bármi mentődik.';
 
   @override
-  String get storyHousehold2Title => 'Egy közös tételkészlet';
+  String get tourImport3Title => 'Megosztás a Vaultarával';
 
   @override
-  String get storyHousehold2Body => 'Mindenki ugyanazokat a közös tételeket látja, és ugyanazokat az emlékeztetőket kapja.';
+  String get tourImport3Body => 'Ossz meg egy fotót, PDF-et vagy szöveget egy másik alkalmazásból a Vaultarával, hogy új tételt kezdj.';
 
   @override
-  String get storyHousehold3Title => 'Kié?';
+  String get tourCosts1Title => 'A naptáradban';
 
   @override
-  String get storyHousehold3Body => 'Minden tétel tartozhat valakihez. A neve megjelenik a tételen és az emlékeztetőkben.';
+  String get tourCosts1Body => 'Add hozzá a lejárati dátumokat a telefon naptárához, a többi terved mellé.';
 
   @override
-  String get storyImport1Title => 'Kártya beolvasása';
+  String get tourCosts2Title => 'Mennyibe kerülnek a megújítások';
 
   @override
-  String get storyImport1Body => 'Fotózz le egy kártyát vagy dokumentumot, és a Vaultara kitölti a nevet és a lejárati dátumot.';
+  String get tourCosts2Body => 'Add meg egy tételnél a megújítás költségét, és a Vaultara megmutatja, mennyit költesz évente.';
 
   @override
-  String get storyImport2Title => 'Lista importálása';
+  String get tourCosts3Title => 'Tervezz előre';
 
   @override
-  String get storyImport2Body => 'Van már táblázatod? Importáld, és ellenőrizz minden sort, mielőtt bármi mentődik.';
+  String get tourCosts3Body => 'Lásd előre a drága hónapokat, hogy egy nagy megújítás soha ne érjen meglepetésként.';
 
   @override
-  String get storyImport3Title => 'Megosztás a Vaultarával';
+  String get tourBusiness1Title => 'Kövesd a csapatodat';
 
   @override
-  String get storyImport3Body => 'Ossz meg egy fotót, PDF-et vagy szöveget egy másik alkalmazásból a Vaultarával, hogy új tételt kezdj.';
+  String get tourBusiness1Body => 'Adj hozzá munkatársakat, és tartsd egy helyen a tanúsítványaikat, engedélyeiket és jogosítványaikat.';
 
   @override
-  String get storyCosts1Title => 'A naptáradban';
+  String get tourBusiness2Title => 'E-mailes emlékeztetők';
 
   @override
-  String get storyCosts1Body => 'Add hozzá a lejárati dátumokat a telefon naptárához, a többi terved mellé.';
+  String get tourBusiness2Body => 'A munkatársak e-mailt kapnak, mielőtt a dokumentumaik lejárnak, alkalmazás nélkül is.';
 
   @override
-  String get storyCosts2Title => 'Mennyibe kerülnek a megújítások';
+  String get tourBusiness3Title => 'Havi jelentés';
 
   @override
-  String get storyCosts2Body => 'Add meg egy tételnél a megújítás költségét, és a Vaultara megmutatja, mennyit költesz évente.';
+  String get tourBusiness3Body => 'Minden hónapban egy jelentés mutatja, mi érvényes, mi jár le, és mi hiányzik.';
 
   @override
-  String get storyCosts3Title => 'Tervezz előre';
+  String get tourBusiness4Title => 'Frissítés kérése';
 
   @override
-  String get storyCosts3Body => 'Lásd előre a drága hónapokat, hogy egy nagy megújítás soha ne érjen meglepetésként.';
-
-  @override
-  String get storyBusiness1Title => 'Kövesd a csapatodat';
-
-  @override
-  String get storyBusiness1Body => 'Adj hozzá munkatársakat, és tartsd egy helyen a tanúsítványaikat, engedélyeiket és jogosítványaikat.';
-
-  @override
-  String get storyBusiness2Title => 'E-mailes emlékeztetők';
-
-  @override
-  String get storyBusiness2Body => 'A munkatársak e-mailt kapnak, mielőtt a dokumentumaik lejárnak, alkalmazás nélkül is.';
-
-  @override
-  String get storyBusiness3Title => 'Havi jelentés';
-
-  @override
-  String get storyBusiness3Body => 'Minden hónapban egy jelentés mutatja, mi érvényes, mi jár le, és mi hiányzik.';
-
-  @override
-  String get storyBusiness4Title => 'Frissítés kérése';
-
-  @override
-  String get storyBusiness4Body => 'Küldj egy hivatkozást, és a munkatárs maga tölti fel a megújított dokumentumot.';
+  String get tourBusiness4Body => 'Küldj egy hivatkozást, és a munkatárs maga tölti fel a megújított dokumentumot.';
 
   @override
   String get categoryHealthAndMedical => 'Egészség és orvosi';

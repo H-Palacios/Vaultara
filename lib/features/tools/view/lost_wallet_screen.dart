@@ -26,6 +26,9 @@ import 'package:vaultara/features/tools/view/lost_wallet_widgets.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/features/tools/view/block_number_sheet.dart';
 import 'package:vaultara/features/tools/services/emergency_sheet.dart';
+import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
+import 'package:vaultara/features/tutorials/view/tutorial_target.dart';
+import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
 
 /// Opens Lost my wallet: the plan in progress if there is one, otherwise
 /// the check-up and the buttons to start. [start] asks what happened
@@ -218,6 +221,9 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
 
     return ListView(
       padding: const EdgeInsets.fromLTRB(16, 8, 16, 40),
+      // Kept until the Flutter version in use exports ScrollCacheExtent.
+      // ignore: deprecated_member_use
+      cacheExtent: TutorialController.listCacheExtent,
       children: [
         ScreenHeader(
           title: loc.lostWalletTitle,
@@ -225,84 +231,90 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
         ),
         const TutorialHint(id: TutorialIds.lostWallet),
         const SizedBox(height: 12),
-        _Hero(
-          onLost: () => _start(LifeEvents.variantLost),
-          onStolen: () => _start(LifeEvents.variantStolen),
+        TutorialTarget(
+          steps: const [TutorialStep.walletLost],
+          child: _Hero(
+            onLost: () => _start(LifeEvents.variantLost),
+            onStolen: () => _start(LifeEvents.variantStolen),
+          ),
         ),
         WalletSection(
           title: loc.lostWalletCheckupTitle,
           icon: Icons.health_and_safety_rounded,
           subtitle: loc.lostWalletCheckupBody,
         ),
-        WalletPanel(
-          padding: const EdgeInsets.fromLTRB(16, 14, 8, 8),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              if (carried.isEmpty)
-                _Issue(
-                  icon: Icons.touch_app_rounded,
-                  colour: scheme.primary,
-                  text: loc.lostWalletSetPlaceBody,
-                )
-              else if (noPhoto == 0 && noLine == 0 && travelDocs == 0)
-                _Issue(
-                  icon: Icons.verified_rounded,
-                  colour: scheme.primary,
-                  text: loc.lostWalletCheckupAllGood,
-                )
-              else ...[
-                if (noLine > 0)
+        TutorialTarget(
+          steps: const [TutorialStep.walletPrepare, TutorialStep.walletLostNumber],
+          child: WalletPanel(
+            padding: const EdgeInsets.fromLTRB(16, 14, 8, 8),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                if (carried.isEmpty)
                   _Issue(
-                    icon: Icons.phone_disabled_rounded,
-                    colour: scheme.error,
-                    text: loc.lostWalletIssueLines(noLine),
-                    action: loc.lostWalletAddLine,
-                    onTap: () => showCardsWithoutNumber(context, <TrackedItem>[
-                      for (final r in carried)
-                        if (KeptIn.cardGroups.contains(r.subcategoryName) &&
-                            r.lostLine == null)
-                          r,
-                    ]),
-                  ),
-                if (noPhoto > 0)
+                    icon: Icons.touch_app_rounded,
+                    colour: scheme.primary,
+                    text: loc.lostWalletSetPlaceBody,
+                  )
+                else if (noPhoto == 0 && noLine == 0 && travelDocs == 0)
                   _Issue(
-                    icon: Icons.no_photography_rounded,
-                    colour: const Color(0xFFF59E0B),
-                    text: loc.lostWalletIssuePhotos(noPhoto),
+                    icon: Icons.verified_rounded,
+                    colour: scheme.primary,
+                    text: loc.lostWalletCheckupAllGood,
+                  )
+                else ...[
+                  if (noLine > 0)
+                    _Issue(
+                      icon: Icons.phone_disabled_rounded,
+                      colour: scheme.error,
+                      text: loc.lostWalletIssueLines(noLine),
+                      action: loc.lostWalletAddLine,
+                      onTap: () => showCardsWithoutNumber(context, <TrackedItem>[
+                        for (final r in carried)
+                          if (KeptIn.cardGroups.contains(r.subcategoryName) &&
+                              r.lostLine == null)
+                            r,
+                      ]),
+                    ),
+                  if (noPhoto > 0)
+                    _Issue(
+                      icon: Icons.no_photography_rounded,
+                      colour: const Color(0xFFF59E0B),
+                      text: loc.lostWalletIssuePhotos(noPhoto),
+                    ),
+                  if (travelDocs > 0)
+                    _Issue(
+                      icon: Icons.luggage_rounded,
+                      colour: const Color(0xFFF59E0B),
+                      text: loc.lostWalletIssuePassport(travelDocs),
+                    ),
+                ],
+                const Divider(height: 18),
+                SwitchListTile.adaptive(
+                  contentPadding: const EdgeInsetsDirectional.only(end: 4),
+                  value: _checkOn,
+                  onChanged: _setCheck,
+                  secondary: Icon(
+                    Icons.event_repeat_rounded,
+                    color: scheme.primary,
                   ),
-                if (travelDocs > 0)
-                  _Issue(
-                    icon: Icons.luggage_rounded,
-                    colour: const Color(0xFFF59E0B),
-                    text: loc.lostWalletIssuePassport(travelDocs),
+                  title: Text(
+                    loc.walletCheckToggle,
+                    style: const TextStyle(
+                      fontSize: 14.5,
+                      fontWeight: FontWeight.w700,
+                    ),
                   ),
+                  subtitle: Text(
+                    loc.walletCheckToggleBody,
+                    style: TextStyle(
+                      fontSize: 12.5,
+                      color: scheme.onSurfaceVariant,
+                    ),
+                  ),
+                ),
               ],
-              const Divider(height: 18),
-              SwitchListTile.adaptive(
-                contentPadding: const EdgeInsetsDirectional.only(end: 4),
-                value: _checkOn,
-                onChanged: _setCheck,
-                secondary: Icon(
-                  Icons.event_repeat_rounded,
-                  color: scheme.primary,
-                ),
-                title: Text(
-                  loc.walletCheckToggle,
-                  style: const TextStyle(
-                    fontSize: 14.5,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-                subtitle: Text(
-                  loc.walletCheckToggleBody,
-                  style: TextStyle(
-                    fontSize: 12.5,
-                    color: scheme.onSurfaceVariant,
-                  ),
-                ),
-              ),
-            ],
+            ),
           ),
         ),
         if (carried.any((r) => LifeEvents.blocksFirst(r.subcategoryName)))

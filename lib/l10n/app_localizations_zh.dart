@@ -7724,290 +7724,262 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => '搬家、迎接宝宝、新工作或紧急情况？人生大事会结合你的记录、步骤和日期给出计划。';
 
   @override
-  String get storySampleQuestion => '今年有什么到期？';
+  String get tourHome1Title => '一眼看清今天';
 
   @override
-  String storySampleAnswer(String name) {
-    return '你的$name将于 3 月到期。要提前一个月提醒吗？';
-  }
+  String get tourHome1Body => '主屏幕显示今天的要事：即将到期的项目以及你的记录数量。';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name将在 30 天后到期。轻点即可续期。';
-  }
+  String get tourHome2Title => '找到任何内容';
 
   @override
-  String get storySampleGym => '健身房会员';
+  String get tourHome2Body => '轻点搜索，按名称、分组或人员查找记录。';
 
   @override
-  String get storySampleFirstAid => '急救证书';
+  String get tourHome3Title => '旅行与计划';
 
   @override
-  String get storySampleEncrypt => '加密照片';
+  String get tourHome3Body => '你正在规划的旅行和进行中的人生大事计划会显示在这里，并列出剩余事项。';
 
   @override
-  String get storySampleAppLock => '应用锁';
+  String get tourHome4Title => '一键获得帮助';
 
   @override
-  String get storySampleHideApp => '在应用切换器中隐藏内容';
+  String get tourHome4Body => '闪光按钮会打开“询问 Vaultara”。你的头像会打开个人资料、设置和教程。';
 
   @override
-  String get storyHome1Title => '一眼看清今天';
+  String get tourRenew1Title => '收到提醒';
 
   @override
-  String get storyHome1Body => '主屏幕显示今天的要事：即将到期的项目以及你的记录数量。';
+  String get tourRenew1Body => '记录到期前，Vaultara 会提醒你。轻点提醒即可打开记录。';
 
   @override
-  String get storyHome2Title => '找到任何内容';
+  String get tourRenew2Title => '保存新日期';
 
   @override
-  String get storyHome2Body => '轻点搜索，按名称、分组或人员查找记录。';
+  String get tourRenew2Body => '已续期？在这里选新的到期日期并保存，提醒会移到新日期。';
 
   @override
-  String get storyHome3Title => '旅行与计划';
+  String get tourRenew3Title => '不确定怎么办？';
 
   @override
-  String get storyHome3Body => '你正在规划的旅行和进行中的人生大事计划会显示在这里，并列出剩余事项。';
+  String get tourRenew3Body => '许多记录都有续期清单。询问 Vaultara 可以查找你所在国家的步骤，并附上官方链接。';
 
   @override
-  String get storyHome4Title => '一键获得帮助';
+  String get tourRenew4Title => '设为重复';
 
   @override
-  String get storyHome4Body => '闪光按钮会打开“询问 Vaultara”。你的头像会打开个人资料、设置和教程。';
+  String get tourRenew4Body => '对于订阅和年度付款，开启“自动续期”，日期就会自动向后移动。';
 
   @override
-  String get storyRenew1Title => '收到提醒';
+  String get tourAsk1Title => '用自己的话提问';
 
   @override
-  String get storyRenew1Body => '记录到期前，Vaultara 会提醒你。轻点提醒即可打开记录。';
+  String get tourAsk1Body => '例如问“今年有什么到期？”，即可从你的记录中得到答案。';
 
   @override
-  String get storyRenew2Title => '保存新日期';
+  String get tourAsk2Title => '用说的代替打字';
 
   @override
-  String get storyRenew2Body => '已续期？轻点“续期”并输入新的到期日，提醒也会随之调整。';
+  String get tourAsk2Body => '轻点麦克风开始说话。文字会随说随现，可立即发送。';
 
   @override
-  String get storyRenew3Title => '不确定怎么办？';
+  String get tourAsk3Title => '每项更改都由你确认';
 
   @override
-  String get storyRenew3Body => '许多记录都有续期清单。询问 Vaultara 可以查找你所在国家的步骤，并附上官方链接。';
+  String get tourAsk3Body => '请求添加或修改记录时，会先显示一张卡片。确认之前不会保存任何内容。';
 
   @override
-  String get storyRenew4Title => '设为重复';
+  String get tourAsk4Title => '撤销任何更改';
 
   @override
-  String get storyRenew4Body => '对于订阅和年度付款，开启“自动续期”，日期就会自动向后移动。';
+  String get tourAsk4Body => '改变主意了？每项已确认的更改都能在同一张卡片上撤销。';
 
   @override
-  String get storyAsk1Title => '用自己的话提问';
+  String get tourAsk5Title => '从上次中断处继续';
 
   @override
-  String get storyAsk1Body => '例如问“今年有什么到期？”，即可从你的记录中得到答案。';
+  String get tourAsk5Body => '聊天会在“对话记录”中保留 90 天，推荐问题帮你快速开始。';
 
   @override
-  String get storyAsk2Title => '用说的代替打字';
+  String get tourAsk6Title => '不止于记录';
 
   @override
-  String get storyAsk2Body => '轻点麦克风开始说话。文字会随说随现，可立即发送。';
+  String get tourAsk6Body => '它还能规划行程、添加人员、查找你所在国家的续期步骤并分享记录，并附上官方页面链接。';
 
   @override
-  String get storyAsk3Title => '每项更改都由你确认';
+  String get tourWallet1Title => '先做好准备';
 
   @override
-  String get storyAsk3Body => '请求添加或修改记录时，会先显示一张卡片。确认之前不会保存任何内容。';
+  String get tourWallet1Body => '打开卡片或证件，选择存放位置，例如钱包或包。';
 
   @override
-  String get storyAsk4Title => '撤销任何更改';
+  String get tourWallet2Title => '保存挂失电话';
 
   @override
-  String get storyAsk4Body => '改变主意了？每项已确认的更改都能在同一张卡片上撤销。';
+  String get tourWallet2Body => '现在就添加每家银行的挂失电话。号码印在卡上，而需要时卡已不在身边。';
 
   @override
-  String get storyAsk5Title => '从上次中断处继续';
+  String get tourWallet3Title => '如果丢失';
 
   @override
-  String get storyAsk5Body => '聊天会在“对话记录”中保留 90 天，推荐问题帮你快速开始。';
+  String get tourWallet3Body => '钱包丢了的话，点这里相应的按钮。Vaultara 会列出里面的所有东西，让你知道要挂失什么。';
 
   @override
-  String get storyAsk6Title => '不止于记录';
+  String get tourWallet4Title => '几分钟冻结卡片';
 
   @override
-  String get storyAsk6Body => '它还能规划行程、添加人员、查找你所在国家的续期步骤并分享记录，并附上官方页面链接。';
+  String get tourWallet4Body => '一键致电每家银行，将卡片标记为已冻结，并保存报案编号。';
 
   @override
-  String get storyWallet1Title => '先做好准备';
+  String get tourWallet5Title => '补办并保持安全';
 
   @override
-  String get storyWallet1Body => '打开卡片或证件，选择存放位置，例如钱包或包。';
+  String get tourWallet5Body => '补办证件，收到提醒时核对账单，找回时轻点“我找到了”。';
 
   @override
-  String get storyWallet2Title => '保存挂失电话';
+  String get tourLife1Title => '重要时刻，一份计划';
 
   @override
-  String get storyWallet2Body => '现在就添加每家银行的挂失电话。号码印在卡上，而需要时卡已不在身边。';
+  String get tourLife1Body => '搬家、迎接宝宝、新工作或紧急情况：在“人生事件”中选择发生了什么。';
 
   @override
-  String get storyWallet3Title => '如果丢失';
+  String get tourLife2Title => '记录井井有条';
 
   @override
-  String get storyWallet3Body => '打开“丢失或被盗”，点按“丢失”或“被盗”。Vaultara 会列出里面的所有东西。';
+  String get tourLife2Body => '计划会列出需要更新、取消或续期的记录，以及可能需要添加的记录。';
 
   @override
-  String get storyWallet4Title => '几分钟冻结卡片';
+  String get tourLife3Title => '步骤与日期';
 
   @override
-  String get storyWallet4Body => '一键致电每家银行，将卡片标记为已冻结，并保存报案编号。';
+  String get tourLife3Body => '每个计划还有不属于记录的步骤，以及开始日期，告诉你何时申请才不会迟。';
 
   @override
-  String get storyWallet5Title => '补办并保持安全';
+  String get tourLife4Title => '打造你的专属计划';
 
   @override
-  String get storyWallet5Body => '补办证件，收到提醒时核对账单，找回时轻点“我找到了”。';
+  String get tourLife4Body => '添加自己的步骤，将计划分享为 PDF，并在日期前后收到提醒。';
 
   @override
-  String get storyLife1Title => '重要时刻，一份计划';
+  String get tourPhotos1Title => '证件照片';
 
   @override
-  String get storyLife1Body => '搬家、迎接宝宝、新工作或紧急情况：在“人生事件”中选择发生了什么。';
+  String get tourPhotos1Body => '在记录中添加卡片或证件的正反面照片。';
 
   @override
-  String get storyLife2Title => '记录井井有条';
+  String get tourPhotos2Title => '在手机上加密';
 
   @override
-  String get storyLife2Body => '计划会列出需要更新、取消或续期的记录，以及可能需要添加的记录。';
+  String get tourPhotos2Body => '开启照片加密后，照片会在上传前于手机上锁定。';
 
   @override
-  String get storyLife3Title => '步骤与日期';
+  String get tourPhotos3Title => '锁定敏感记录';
 
   @override
-  String get storyLife3Body => '步骤涵盖记录之外的事项，开始日期告诉你何时申请，确保不会延误。';
+  String get tourPhotos3Body => '锁定记录后，打开前需要指纹或屏幕锁。';
 
   @override
-  String get storyLife4Title => '打造你的专属计划';
+  String get tourPhotos4Title => '锁定整个应用';
 
   @override
-  String get storyLife4Body => '添加自己的步骤，将计划分享为 PDF，并在日期前后收到提醒。';
+  String get tourPhotos4Body => '在安全设置中开启应用锁，并在切换应用时隐藏内容。';
 
   @override
-  String get storyPhotos1Title => '证件照片';
+  String get tourShare1Title => '只分享一条记录';
 
   @override
-  String get storyPhotos1Body => '在记录中添加卡片或证件的正反面照片。';
+  String get tourShare1Body => '打开记录并分享只显示该记录的链接，不含其他内容。';
 
   @override
-  String get storyPhotos2Title => '在手机上加密';
+  String get tourShare2Title => '证明材料包';
 
   @override
-  String get storyPhotos2Body => '开启照片加密后，照片会在上传前于手机上锁定。';
+  String get tourShare2Body => '将所选记录连同照片整合为一个 PDF，提交给房东、银行或机构。';
 
   @override
-  String get storyPhotos3Title => '锁定敏感记录';
+  String get tourShare3Title => '掌控在你手中';
 
   @override
-  String get storyPhotos3Body => '锁定记录后，打开前需要指纹或屏幕锁。';
+  String get tourShare3Body => '“已分享的链接”显示你创建的每个链接。随时停用，停用后便无法再打开。';
 
   @override
-  String get storyPhotos4Title => '锁定整个应用';
+  String get tourHousehold1Title => '邀请家人';
 
   @override
-  String get storyPhotos4Body => '在安全设置中开启应用锁，并在切换应用时隐藏内容。';
+  String get tourHousehold1Body => '分享邀请码或链接。每个人用自己的账号登录。';
 
   @override
-  String get storyShare1Title => '只分享一条记录';
+  String get tourHousehold2Title => '同一套记录';
 
   @override
-  String get storyShare1Body => '打开记录并分享只显示该记录的链接，不含其他内容。';
+  String get tourHousehold2Body => '所有人看到相同的共享记录，并收到相同的提醒。';
 
   @override
-  String get storyShare2Title => '证明材料包';
+  String get tourHousehold3Title => '这是谁的？';
 
   @override
-  String get storyShare2Body => '将所选记录连同照片整合为一个 PDF，提交给房东、银行或机构。';
+  String get tourHousehold3Body => '每条记录都可以指定归属人，名字会显示在记录和提醒中。';
 
   @override
-  String get storyShare3Title => '掌控在你手中';
+  String get tourImport1Title => '扫描卡片';
 
   @override
-  String get storyShare3Body => '“已分享的链接”显示你创建的每个链接。随时停用，停用后便无法再打开。';
+  String get tourImport1Body => '拍下卡片或证件，Vaultara 会帮你填写名称和到期日。';
 
   @override
-  String get storyHousehold1Title => '邀请家人';
+  String get tourImport2Title => '导入列表';
 
   @override
-  String get storyHousehold1Body => '分享邀请码或链接。每个人用自己的账号登录。';
+  String get tourImport2Body => '已有电子表格？导入后可在保存前逐行检查。';
 
   @override
-  String get storyHousehold2Title => '同一套记录';
+  String get tourImport3Title => '分享到 Vaultara';
 
   @override
-  String get storyHousehold2Body => '所有人看到相同的共享记录，并收到相同的提醒。';
+  String get tourImport3Body => '从其他应用将照片、PDF 或文字分享到 Vaultara，即可新建记录。';
 
   @override
-  String get storyHousehold3Title => '这是谁的？';
+  String get tourCosts1Title => '加入你的日历';
 
   @override
-  String get storyHousehold3Body => '每条记录都可以指定归属人，名字会显示在记录和提醒中。';
+  String get tourCosts1Body => '将到期日添加到手机日历，与其他日程放在一起。';
 
   @override
-  String get storyImport1Title => '扫描卡片';
+  String get tourCosts2Title => '续期费用';
 
   @override
-  String get storyImport1Body => '拍下卡片或证件，Vaultara 会帮你填写名称和到期日。';
+  String get tourCosts2Body => '在记录中填写续期费用，Vaultara 会显示你每年的支出。';
 
   @override
-  String get storyImport2Title => '导入列表';
+  String get tourCosts3Title => '提前规划';
 
   @override
-  String get storyImport2Body => '已有电子表格？导入后可在保存前逐行检查。';
+  String get tourCosts3Body => '提前看到开销大的月份，大额续期不再措手不及。';
 
   @override
-  String get storyImport3Title => '分享到 Vaultara';
+  String get tourBusiness1Title => '管理你的团队';
 
   @override
-  String get storyImport3Body => '从其他应用将照片、PDF 或文字分享到 Vaultara，即可新建记录。';
+  String get tourBusiness1Body => '添加员工，把他们的证书、许可和执照集中管理。';
 
   @override
-  String get storyCosts1Title => '加入你的日历';
+  String get tourBusiness2Title => '邮件提醒';
 
   @override
-  String get storyCosts1Body => '将到期日添加到手机日历，与其他日程放在一起。';
+  String get tourBusiness2Body => '员工会在证件到期前收到邮件，即使没有安装应用。';
 
   @override
-  String get storyCosts2Title => '续期费用';
+  String get tourBusiness3Title => '月度报告';
 
   @override
-  String get storyCosts2Body => '在记录中填写续期费用，Vaultara 会显示你每年的支出。';
+  String get tourBusiness3Body => '每月报告会显示哪些有效、哪些即将到期、哪些缺失。';
 
   @override
-  String get storyCosts3Title => '提前规划';
+  String get tourBusiness4Title => '请求更新';
 
   @override
-  String get storyCosts3Body => '提前看到开销大的月份，大额续期不再措手不及。';
-
-  @override
-  String get storyBusiness1Title => '管理你的团队';
-
-  @override
-  String get storyBusiness1Body => '添加员工，把他们的证书、许可和执照集中管理。';
-
-  @override
-  String get storyBusiness2Title => '邮件提醒';
-
-  @override
-  String get storyBusiness2Body => '员工会在证件到期前收到邮件，即使没有安装应用。';
-
-  @override
-  String get storyBusiness3Title => '月度报告';
-
-  @override
-  String get storyBusiness3Body => '每月报告会显示哪些有效、哪些即将到期、哪些缺失。';
-
-  @override
-  String get storyBusiness4Title => '请求更新';
-
-  @override
-  String get storyBusiness4Body => '发送链接，员工自行上传续期后的证件。';
+  String get tourBusiness4Body => '发送链接，员工自行上传续期后的证件。';
 
   @override
   String get categoryHealthAndMedical => '健康与医疗';
@@ -17395,290 +17367,262 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tutorialSmartLifeEvents2 => '搬家、迎接宝宝、新工作或紧急情况？人生大事会结合你的记录、步骤和日期给出计划。';
 
   @override
-  String get storySampleQuestion => '今年有什么到期？';
+  String get tourHome1Title => '一眼看清今天';
 
   @override
-  String storySampleAnswer(String name) {
-    return '你的$name将于 3 月到期。要提前一个月提醒吗？';
-  }
+  String get tourHome1Body => '主屏幕显示今天的要事：即将到期的项目以及你的记录数量。';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name将在 30 天后到期。轻点即可续期。';
-  }
+  String get tourHome2Title => '找到任何内容';
 
   @override
-  String get storySampleGym => '健身房会员';
+  String get tourHome2Body => '轻点搜索，按名称、分组或人员查找记录。';
 
   @override
-  String get storySampleFirstAid => '急救证书';
+  String get tourHome3Title => '旅行与计划';
 
   @override
-  String get storySampleEncrypt => '加密照片';
+  String get tourHome3Body => '你正在规划的旅行和进行中的人生大事计划会显示在这里，并列出剩余事项。';
 
   @override
-  String get storySampleAppLock => '应用锁';
+  String get tourHome4Title => '一键获得帮助';
 
   @override
-  String get storySampleHideApp => '在应用切换器中隐藏内容';
+  String get tourHome4Body => '闪光按钮会打开“询问 Vaultara”。你的头像会打开个人资料、设置和教程。';
 
   @override
-  String get storyHome1Title => '一眼看清今天';
+  String get tourRenew1Title => '收到提醒';
 
   @override
-  String get storyHome1Body => '主屏幕显示今天的要事：即将到期的项目以及你的记录数量。';
+  String get tourRenew1Body => '记录到期前，Vaultara 会提醒你。轻点提醒即可打开记录。';
 
   @override
-  String get storyHome2Title => '找到任何内容';
+  String get tourRenew2Title => '保存新日期';
 
   @override
-  String get storyHome2Body => '轻点搜索，按名称、分组或人员查找记录。';
+  String get tourRenew2Body => '已续期？在这里选新的到期日期并保存，提醒会移到新日期。';
 
   @override
-  String get storyHome3Title => '旅行与计划';
+  String get tourRenew3Title => '不确定怎么办？';
 
   @override
-  String get storyHome3Body => '你正在规划的旅行和进行中的人生大事计划会显示在这里，并列出剩余事项。';
+  String get tourRenew3Body => '许多记录都有续期清单。询问 Vaultara 可以查找你所在国家的步骤，并附上官方链接。';
 
   @override
-  String get storyHome4Title => '一键获得帮助';
+  String get tourRenew4Title => '设为重复';
 
   @override
-  String get storyHome4Body => '闪光按钮会打开“询问 Vaultara”。你的头像会打开个人资料、设置和教程。';
+  String get tourRenew4Body => '对于订阅和年度付款，开启“自动续期”，日期就会自动向后移动。';
 
   @override
-  String get storyRenew1Title => '收到提醒';
+  String get tourAsk1Title => '用自己的话提问';
 
   @override
-  String get storyRenew1Body => '记录到期前，Vaultara 会提醒你。轻点提醒即可打开记录。';
+  String get tourAsk1Body => '例如问“今年有什么到期？”，即可从你的记录中得到答案。';
 
   @override
-  String get storyRenew2Title => '保存新日期';
+  String get tourAsk2Title => '用说的代替打字';
 
   @override
-  String get storyRenew2Body => '已续期？轻点“续期”并输入新的到期日，提醒也会随之调整。';
+  String get tourAsk2Body => '轻点麦克风开始说话。文字会随说随现，可立即发送。';
 
   @override
-  String get storyRenew3Title => '不确定怎么办？';
+  String get tourAsk3Title => '每项更改都由你确认';
 
   @override
-  String get storyRenew3Body => '许多记录都有续期清单。询问 Vaultara 可以查找你所在国家的步骤，并附上官方链接。';
+  String get tourAsk3Body => '请求添加或修改记录时，会先显示一张卡片。确认之前不会保存任何内容。';
 
   @override
-  String get storyRenew4Title => '设为重复';
+  String get tourAsk4Title => '撤销任何更改';
 
   @override
-  String get storyRenew4Body => '对于订阅和年度付款，开启“自动续期”，日期就会自动向后移动。';
+  String get tourAsk4Body => '改变主意了？每项已确认的更改都能在同一张卡片上撤销。';
 
   @override
-  String get storyAsk1Title => '用自己的话提问';
+  String get tourAsk5Title => '从上次中断处继续';
 
   @override
-  String get storyAsk1Body => '例如问“今年有什么到期？”，即可从你的记录中得到答案。';
+  String get tourAsk5Body => '聊天会在“对话记录”中保留 90 天，推荐问题帮你快速开始。';
 
   @override
-  String get storyAsk2Title => '用说的代替打字';
+  String get tourAsk6Title => '不止于记录';
 
   @override
-  String get storyAsk2Body => '轻点麦克风开始说话。文字会随说随现，可立即发送。';
+  String get tourAsk6Body => '它还能规划行程、添加人员、查找你所在国家的续期步骤并分享记录，并附上官方页面链接。';
 
   @override
-  String get storyAsk3Title => '每项更改都由你确认';
+  String get tourWallet1Title => '先做好准备';
 
   @override
-  String get storyAsk3Body => '请求添加或修改记录时，会先显示一张卡片。确认之前不会保存任何内容。';
+  String get tourWallet1Body => '打开卡片或证件，选择存放位置，例如钱包或包。';
 
   @override
-  String get storyAsk4Title => '撤销任何更改';
+  String get tourWallet2Title => '保存挂失电话';
 
   @override
-  String get storyAsk4Body => '改变主意了？每项已确认的更改都能在同一张卡片上撤销。';
+  String get tourWallet2Body => '现在就添加每家银行的挂失电话。号码印在卡上，而需要时卡已不在身边。';
 
   @override
-  String get storyAsk5Title => '从上次中断处继续';
+  String get tourWallet3Title => '如果丢失';
 
   @override
-  String get storyAsk5Body => '聊天会在“对话记录”中保留 90 天，推荐问题帮你快速开始。';
+  String get tourWallet3Body => '钱包丢了的话，点这里相应的按钮。Vaultara 会列出里面的所有东西，让你知道要挂失什么。';
 
   @override
-  String get storyAsk6Title => '不止于记录';
+  String get tourWallet4Title => '几分钟冻结卡片';
 
   @override
-  String get storyAsk6Body => '它还能规划行程、添加人员、查找你所在国家的续期步骤并分享记录，并附上官方页面链接。';
+  String get tourWallet4Body => '一键致电每家银行，将卡片标记为已冻结，并保存报案编号。';
 
   @override
-  String get storyWallet1Title => '先做好准备';
+  String get tourWallet5Title => '补办并保持安全';
 
   @override
-  String get storyWallet1Body => '打开卡片或证件，选择存放位置，例如钱包或包。';
+  String get tourWallet5Body => '补办证件，收到提醒时核对账单，找回时轻点“我找到了”。';
 
   @override
-  String get storyWallet2Title => '保存挂失电话';
+  String get tourLife1Title => '重要时刻，一份计划';
 
   @override
-  String get storyWallet2Body => '现在就添加每家银行的挂失电话。号码印在卡上，而需要时卡已不在身边。';
+  String get tourLife1Body => '搬家、迎接宝宝、新工作或紧急情况：在“人生大事”中选择发生了什么。';
 
   @override
-  String get storyWallet3Title => '如果丢失';
+  String get tourLife2Title => '记录井井有条';
 
   @override
-  String get storyWallet3Body => '打开“丢失或被盗”，点按“丢失”或“被盗”。Vaultara 会列出里面的所有东西。';
+  String get tourLife2Body => '计划会列出需要更新、取消或续期的记录，以及可能需要添加的记录。';
 
   @override
-  String get storyWallet4Title => '几分钟冻结卡片';
+  String get tourLife3Title => '步骤与日期';
 
   @override
-  String get storyWallet4Body => '一键致电每家银行，将卡片标记为已冻结，并保存报案编号。';
+  String get tourLife3Body => '每个计划还有不属于记录的步骤，以及开始日期，告诉你何时申请才不会迟。';
 
   @override
-  String get storyWallet5Title => '补办并保持安全';
+  String get tourLife4Title => '打造你的专属计划';
 
   @override
-  String get storyWallet5Body => '补办证件，收到提醒时核对账单，找回时轻点“我找到了”。';
+  String get tourLife4Body => '添加自己的步骤，将计划分享为 PDF，并在日期前后收到提醒。';
 
   @override
-  String get storyLife1Title => '重要时刻，一份计划';
+  String get tourPhotos1Title => '证件照片';
 
   @override
-  String get storyLife1Body => '搬家、迎接宝宝、新工作或紧急情况：在“人生大事”中选择发生了什么。';
+  String get tourPhotos1Body => '在记录中添加卡片或证件的正反面照片。';
 
   @override
-  String get storyLife2Title => '记录井井有条';
+  String get tourPhotos2Title => '在手机上加密';
 
   @override
-  String get storyLife2Body => '计划会列出需要更新、取消或续期的记录，以及可能需要添加的记录。';
+  String get tourPhotos2Body => '开启照片加密后，照片会在上传前于手机上锁定。';
 
   @override
-  String get storyLife3Title => '步骤与日期';
+  String get tourPhotos3Title => '锁定敏感记录';
 
   @override
-  String get storyLife3Body => '步骤涵盖记录之外的事项，开始日期告诉你何时申请，确保不会延误。';
+  String get tourPhotos3Body => '锁定记录后，打开前需要指纹或屏幕锁。';
 
   @override
-  String get storyLife4Title => '打造你的专属计划';
+  String get tourPhotos4Title => '锁定整个应用';
 
   @override
-  String get storyLife4Body => '添加自己的步骤，将计划分享为 PDF，并在日期前后收到提醒。';
+  String get tourPhotos4Body => '在安全设置中开启应用锁，并在切换应用时隐藏内容。';
 
   @override
-  String get storyPhotos1Title => '证件照片';
+  String get tourShare1Title => '只分享一条记录';
 
   @override
-  String get storyPhotos1Body => '在记录中添加卡片或证件的正反面照片。';
+  String get tourShare1Body => '打开记录并分享只显示该记录的链接，不含其他内容。';
 
   @override
-  String get storyPhotos2Title => '在手机上加密';
+  String get tourShare2Title => '证明材料包';
 
   @override
-  String get storyPhotos2Body => '开启照片加密后，照片会在上传前于手机上锁定。';
+  String get tourShare2Body => '将所选记录连同照片整合为一个 PDF，提交给房东、银行或机构。';
 
   @override
-  String get storyPhotos3Title => '锁定敏感记录';
+  String get tourShare3Title => '掌控在你手中';
 
   @override
-  String get storyPhotos3Body => '锁定记录后，打开前需要指纹或屏幕锁。';
+  String get tourShare3Body => '“已分享的链接”显示你创建的每个链接。随时停用，停用后便无法再打开。';
 
   @override
-  String get storyPhotos4Title => '锁定整个应用';
+  String get tourHousehold1Title => '邀请家人';
 
   @override
-  String get storyPhotos4Body => '在安全设置中开启应用锁，并在切换应用时隐藏内容。';
+  String get tourHousehold1Body => '分享邀请码或链接。每个人用自己的账号登录。';
 
   @override
-  String get storyShare1Title => '只分享一条记录';
+  String get tourHousehold2Title => '同一套记录';
 
   @override
-  String get storyShare1Body => '打开记录并分享只显示该记录的链接，不含其他内容。';
+  String get tourHousehold2Body => '所有人看到相同的共享记录，并收到相同的提醒。';
 
   @override
-  String get storyShare2Title => '证明材料包';
+  String get tourHousehold3Title => '这是谁的？';
 
   @override
-  String get storyShare2Body => '将所选记录连同照片整合为一个 PDF，提交给房东、银行或机构。';
+  String get tourHousehold3Body => '每条记录都可以指定归属人，名字会显示在记录和提醒中。';
 
   @override
-  String get storyShare3Title => '掌控在你手中';
+  String get tourImport1Title => '扫描卡片';
 
   @override
-  String get storyShare3Body => '“已分享的链接”显示你创建的每个链接。随时停用，停用后便无法再打开。';
+  String get tourImport1Body => '拍下卡片或证件，Vaultara 会帮你填写名称和到期日。';
 
   @override
-  String get storyHousehold1Title => '邀请家人';
+  String get tourImport2Title => '导入列表';
 
   @override
-  String get storyHousehold1Body => '分享邀请码或链接。每个人用自己的账号登录。';
+  String get tourImport2Body => '已有电子表格？导入后可在保存前逐行检查。';
 
   @override
-  String get storyHousehold2Title => '同一套记录';
+  String get tourImport3Title => '分享到 Vaultara';
 
   @override
-  String get storyHousehold2Body => '所有人看到相同的共享记录，并收到相同的提醒。';
+  String get tourImport3Body => '从其他应用将照片、PDF 或文字分享到 Vaultara，即可新建记录。';
 
   @override
-  String get storyHousehold3Title => '这是谁的？';
+  String get tourCosts1Title => '加入你的日历';
 
   @override
-  String get storyHousehold3Body => '每条记录都可以指定归属人，名字会显示在记录和提醒中。';
+  String get tourCosts1Body => '将到期日添加到手机日历，与其他日程放在一起。';
 
   @override
-  String get storyImport1Title => '扫描卡片';
+  String get tourCosts2Title => '续期费用';
 
   @override
-  String get storyImport1Body => '拍下卡片或证件，Vaultara 会帮你填写名称和到期日。';
+  String get tourCosts2Body => '在记录中填写续期费用，Vaultara 会显示你每年的支出。';
 
   @override
-  String get storyImport2Title => '导入列表';
+  String get tourCosts3Title => '提前规划';
 
   @override
-  String get storyImport2Body => '已有电子表格？导入后可在保存前逐行检查。';
+  String get tourCosts3Body => '提前看到开销大的月份，大额续期不再措手不及。';
 
   @override
-  String get storyImport3Title => '分享到 Vaultara';
+  String get tourBusiness1Title => '管理你的团队';
 
   @override
-  String get storyImport3Body => '从其他应用将照片、PDF 或文字分享到 Vaultara，即可新建记录。';
+  String get tourBusiness1Body => '添加员工，把他们的证书、许可和执照集中管理。';
 
   @override
-  String get storyCosts1Title => '加入你的日历';
+  String get tourBusiness2Title => '邮件提醒';
 
   @override
-  String get storyCosts1Body => '将到期日添加到手机日历，与其他日程放在一起。';
+  String get tourBusiness2Body => '员工会在证件到期前收到邮件，即使没有安装应用。';
 
   @override
-  String get storyCosts2Title => '续期费用';
+  String get tourBusiness3Title => '月度报告';
 
   @override
-  String get storyCosts2Body => '在记录中填写续期费用，Vaultara 会显示你每年的支出。';
+  String get tourBusiness3Body => '每月报告会显示哪些有效、哪些即将到期、哪些缺失。';
 
   @override
-  String get storyCosts3Title => '提前规划';
+  String get tourBusiness4Title => '请求更新';
 
   @override
-  String get storyCosts3Body => '提前看到开销大的月份，大额续期不再措手不及。';
-
-  @override
-  String get storyBusiness1Title => '管理你的团队';
-
-  @override
-  String get storyBusiness1Body => '添加员工，把他们的证书、许可和执照集中管理。';
-
-  @override
-  String get storyBusiness2Title => '邮件提醒';
-
-  @override
-  String get storyBusiness2Body => '员工会在证件到期前收到邮件，即使没有安装应用。';
-
-  @override
-  String get storyBusiness3Title => '月度报告';
-
-  @override
-  String get storyBusiness3Body => '每月报告会显示哪些有效、哪些即将到期、哪些缺失。';
-
-  @override
-  String get storyBusiness4Title => '请求更新';
-
-  @override
-  String get storyBusiness4Body => '发送链接，员工自行上传续期后的证件。';
+  String get tourBusiness4Body => '发送链接，员工自行上传续期后的证件。';
 
   @override
   String get categoryHealthAndMedical => '健康与医疗';
@@ -27066,290 +27010,262 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tutorialSmartLifeEvents2 => '搬家、迎接寶寶、新工作或緊急情況？人生大事會結合你的記錄、步驟與日期提供計畫。';
 
   @override
-  String get storySampleQuestion => '今年有什麼到期？';
+  String get tourHome1Title => '一眼看清今天';
 
   @override
-  String storySampleAnswer(String name) {
-    return '你的$name將於 3 月到期。要提前一個月提醒嗎？';
-  }
+  String get tourHome1Body => '主畫面顯示今天的要事：即將到期的項目以及你的記錄數量。';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name將在 30 天後到期。輕觸即可續期。';
-  }
+  String get tourHome2Title => '找到任何內容';
 
   @override
-  String get storySampleGym => '健身房會員';
+  String get tourHome2Body => '輕觸搜尋，依名稱、群組或人員尋找記錄。';
 
   @override
-  String get storySampleFirstAid => '急救證書';
+  String get tourHome3Title => '旅行與計畫';
 
   @override
-  String get storySampleEncrypt => '加密照片';
+  String get tourHome3Body => '你正在規劃的旅行與進行中的人生大事計畫會顯示在這裡，並列出剩餘事項。';
 
   @override
-  String get storySampleAppLock => '應用程式鎖定';
+  String get tourHome4Title => '一鍵取得協助';
 
   @override
-  String get storySampleHideApp => '在應用程式切換器中隱藏內容';
+  String get tourHome4Body => '閃光按鈕會開啟「詢問 Vaultara」。你的頭像會開啟個人資料、設定與教學。';
 
   @override
-  String get storyHome1Title => '一眼看清今天';
+  String get tourRenew1Title => '收到提醒';
 
   @override
-  String get storyHome1Body => '主畫面顯示今天的要事：即將到期的項目以及你的記錄數量。';
+  String get tourRenew1Body => '記錄到期前，Vaultara 會提醒你。輕觸提醒即可開啟記錄。';
 
   @override
-  String get storyHome2Title => '找到任何內容';
+  String get tourRenew2Title => '儲存新日期';
 
   @override
-  String get storyHome2Body => '輕觸搜尋，依名稱、群組或人員尋找記錄。';
+  String get tourRenew2Body => '已續期？在這裡選新的到期日期並儲存，提醒會移到新日期。';
 
   @override
-  String get storyHome3Title => '旅行與計畫';
+  String get tourRenew3Title => '不確定怎麼做？';
 
   @override
-  String get storyHome3Body => '你正在規劃的旅行與進行中的人生大事計畫會顯示在這裡，並列出剩餘事項。';
+  String get tourRenew3Body => '許多記錄都有續期清單。詢問 Vaultara 可以查找你所在國家的步驟，並附上官方連結。';
 
   @override
-  String get storyHome4Title => '一鍵取得協助';
+  String get tourRenew4Title => '設為重複';
 
   @override
-  String get storyHome4Body => '閃光按鈕會開啟「詢問 Vaultara」。你的頭像會開啟個人資料、設定與教學。';
+  String get tourRenew4Body => '訂閱和年度付款請開啟「自動續期」，日期就會自動往後移。';
 
   @override
-  String get storyRenew1Title => '收到提醒';
+  String get tourAsk1Title => '用自己的話提問';
 
   @override
-  String get storyRenew1Body => '記錄到期前，Vaultara 會提醒你。輕觸提醒即可開啟記錄。';
+  String get tourAsk1Body => '例如問「今年有什麼到期？」，就能從你的記錄中得到答案。';
 
   @override
-  String get storyRenew2Title => '儲存新日期';
+  String get tourAsk2Title => '用說的取代打字';
 
   @override
-  String get storyRenew2Body => '已續期？輕觸「續期」並輸入新的到期日，提醒也會隨之調整。';
+  String get tourAsk2Body => '輕觸麥克風開始說話。文字會隨說隨現，可立即傳送。';
 
   @override
-  String get storyRenew3Title => '不確定怎麼做？';
+  String get tourAsk3Title => '每項變更都由你確認';
 
   @override
-  String get storyRenew3Body => '許多記錄都有續期清單。詢問 Vaultara 可以查找你所在國家的步驟，並附上官方連結。';
+  String get tourAsk3Body => '要求新增或修改記錄時，會先顯示一張卡片。確認之前不會儲存任何內容。';
 
   @override
-  String get storyRenew4Title => '設為重複';
+  String get tourAsk4Title => '復原任何變更';
 
   @override
-  String get storyRenew4Body => '訂閱和年度付款請開啟「自動續期」，日期就會自動往後移。';
+  String get tourAsk4Body => '改變主意了？每項已確認的變更都能在同一張卡片上復原。';
 
   @override
-  String get storyAsk1Title => '用自己的話提問';
+  String get tourAsk5Title => '從上次中斷處繼續';
 
   @override
-  String get storyAsk1Body => '例如問「今年有什麼到期？」，就能從你的記錄中得到答案。';
+  String get tourAsk5Body => '對話會在「對話記錄」中保留 90 天，建議問題幫你快速開始。';
 
   @override
-  String get storyAsk2Title => '用說的取代打字';
+  String get tourAsk6Title => '不只是記錄';
 
   @override
-  String get storyAsk2Body => '輕觸麥克風開始說話。文字會隨說隨現，可立即傳送。';
+  String get tourAsk6Body => '它還能規劃行程、新增人員、查找你所在國家的續期步驟並分享記錄，並附上官方頁面連結。';
 
   @override
-  String get storyAsk3Title => '每項變更都由你確認';
+  String get tourWallet1Title => '先做好準備';
 
   @override
-  String get storyAsk3Body => '要求新增或修改記錄時，會先顯示一張卡片。確認之前不會儲存任何內容。';
+  String get tourWallet1Body => '開啟卡片或證件，選擇存放位置，例如錢包或包包。';
 
   @override
-  String get storyAsk4Title => '復原任何變更';
+  String get tourWallet2Title => '儲存掛失電話';
 
   @override
-  String get storyAsk4Body => '改變主意了？每項已確認的變更都能在同一張卡片上復原。';
+  String get tourWallet2Body => '現在就新增每家銀行的掛失電話。號碼印在卡片上，而需要時卡片已不在身邊。';
 
   @override
-  String get storyAsk5Title => '從上次中斷處繼續';
+  String get tourWallet3Title => '如果遺失';
 
   @override
-  String get storyAsk5Body => '對話會在「對話記錄」中保留 90 天，建議問題幫你快速開始。';
+  String get tourWallet3Body => '錢包遺失的話，點這裡相應的按鈕。Vaultara 會列出裡面的所有東西，讓你知道要掛失什麼。';
 
   @override
-  String get storyAsk6Title => '不只是記錄';
+  String get tourWallet4Title => '幾分鐘停用卡片';
 
   @override
-  String get storyAsk6Body => '它還能規劃行程、新增人員、查找你所在國家的續期步驟並分享記錄，並附上官方頁面連結。';
+  String get tourWallet4Body => '一鍵致電每家銀行，將卡片標示為已停用，並儲存報案編號。';
 
   @override
-  String get storyWallet1Title => '先做好準備';
+  String get tourWallet5Title => '補辦並保持安全';
 
   @override
-  String get storyWallet1Body => '開啟卡片或證件，選擇存放位置，例如錢包或包包。';
+  String get tourWallet5Body => '補辦證件，收到提醒時核對帳單，找回時輕觸「我找到了」。';
 
   @override
-  String get storyWallet2Title => '儲存掛失電話';
+  String get tourLife1Title => '重要時刻，一份計畫';
 
   @override
-  String get storyWallet2Body => '現在就新增每家銀行的掛失電話。號碼印在卡片上，而需要時卡片已不在身邊。';
+  String get tourLife1Body => '搬家、迎接寶寶、新工作或緊急情況：在「人生大事」中選擇發生了什麼。';
 
   @override
-  String get storyWallet3Title => '如果遺失';
+  String get tourLife2Title => '記錄井然有序';
 
   @override
-  String get storyWallet3Body => '開啟「遺失或遭竊」，點按「遺失」或「遭竊」。Vaultara 會列出裡面的所有東西。';
+  String get tourLife2Body => '計畫會列出需要更新、取消或續期的記錄，以及可能需要新增的記錄。';
 
   @override
-  String get storyWallet4Title => '幾分鐘停用卡片';
+  String get tourLife3Title => '步驟與日期';
 
   @override
-  String get storyWallet4Body => '一鍵致電每家銀行，將卡片標示為已停用，並儲存報案編號。';
+  String get tourLife3Body => '每個計畫還有不屬於記錄的步驟，以及開始日期，告訴你何時申請才不會遲。';
 
   @override
-  String get storyWallet5Title => '補辦並保持安全';
+  String get tourLife4Title => '打造你的專屬計畫';
 
   @override
-  String get storyWallet5Body => '補辦證件，收到提醒時核對帳單，找回時輕觸「我找到了」。';
+  String get tourLife4Body => '新增自己的步驟，將計畫分享為 PDF，並在日期前後收到提醒。';
 
   @override
-  String get storyLife1Title => '重要時刻，一份計畫';
+  String get tourPhotos1Title => '證件照片';
 
   @override
-  String get storyLife1Body => '搬家、迎接寶寶、新工作或緊急情況：在「人生大事」中選擇發生了什麼。';
+  String get tourPhotos1Body => '在記錄中新增卡片或證件的正反面照片。';
 
   @override
-  String get storyLife2Title => '記錄井然有序';
+  String get tourPhotos2Title => '在手機上加密';
 
   @override
-  String get storyLife2Body => '計畫會列出需要更新、取消或續期的記錄，以及可能需要新增的記錄。';
+  String get tourPhotos2Body => '開啟照片加密後，照片會在上傳前於手機上鎖定。';
 
   @override
-  String get storyLife3Title => '步驟與日期';
+  String get tourPhotos3Title => '鎖定敏感記錄';
 
   @override
-  String get storyLife3Body => '步驟涵蓋記錄以外的事項，開始日期告訴你何時申請，確保不會延誤。';
+  String get tourPhotos3Body => '鎖定記錄後，開啟前需要指紋或螢幕鎖定。';
 
   @override
-  String get storyLife4Title => '打造你的專屬計畫';
+  String get tourPhotos4Title => '鎖定整個應用程式';
 
   @override
-  String get storyLife4Body => '新增自己的步驟，將計畫分享為 PDF，並在日期前後收到提醒。';
+  String get tourPhotos4Body => '在安全性設定中開啟應用程式鎖定，並在切換應用程式時隱藏內容。';
 
   @override
-  String get storyPhotos1Title => '證件照片';
+  String get tourShare1Title => '只分享一筆記錄';
 
   @override
-  String get storyPhotos1Body => '在記錄中新增卡片或證件的正反面照片。';
+  String get tourShare1Body => '開啟記錄並分享只顯示該記錄的連結，不含其他內容。';
 
   @override
-  String get storyPhotos2Title => '在手機上加密';
+  String get tourShare2Title => '證明資料包';
 
   @override
-  String get storyPhotos2Body => '開啟照片加密後，照片會在上傳前於手機上鎖定。';
+  String get tourShare2Body => '將所選記錄連同照片整合為一個 PDF，提交給房東、銀行或機關。';
 
   @override
-  String get storyPhotos3Title => '鎖定敏感記錄';
+  String get tourShare3Title => '掌控在你手中';
 
   @override
-  String get storyPhotos3Body => '鎖定記錄後，開啟前需要指紋或螢幕鎖定。';
+  String get tourShare3Body => '「已分享的連結」顯示你建立的每個連結。隨時停用，停用後便無法再開啟。';
 
   @override
-  String get storyPhotos4Title => '鎖定整個應用程式';
+  String get tourHousehold1Title => '邀請家人';
 
   @override
-  String get storyPhotos4Body => '在安全性設定中開啟應用程式鎖定，並在切換應用程式時隱藏內容。';
+  String get tourHousehold1Body => '分享邀請碼或連結。每個人用自己的帳號登入。';
 
   @override
-  String get storyShare1Title => '只分享一筆記錄';
+  String get tourHousehold2Title => '同一套記錄';
 
   @override
-  String get storyShare1Body => '開啟記錄並分享只顯示該記錄的連結，不含其他內容。';
+  String get tourHousehold2Body => '所有人看到相同的共享記錄，並收到相同的提醒。';
 
   @override
-  String get storyShare2Title => '證明資料包';
+  String get tourHousehold3Title => '這是誰的？';
 
   @override
-  String get storyShare2Body => '將所選記錄連同照片整合為一個 PDF，提交給房東、銀行或機關。';
+  String get tourHousehold3Body => '每筆記錄都可以指定所屬人，名字會顯示在記錄與提醒中。';
 
   @override
-  String get storyShare3Title => '掌控在你手中';
+  String get tourImport1Title => '掃描卡片';
 
   @override
-  String get storyShare3Body => '「已分享的連結」顯示你建立的每個連結。隨時停用，停用後便無法再開啟。';
+  String get tourImport1Body => '拍下卡片或證件，Vaultara 會幫你填寫名稱與到期日。';
 
   @override
-  String get storyHousehold1Title => '邀請家人';
+  String get tourImport2Title => '匯入清單';
 
   @override
-  String get storyHousehold1Body => '分享邀請碼或連結。每個人用自己的帳號登入。';
+  String get tourImport2Body => '已有試算表？匯入後可在儲存前逐列檢查。';
 
   @override
-  String get storyHousehold2Title => '同一套記錄';
+  String get tourImport3Title => '分享到 Vaultara';
 
   @override
-  String get storyHousehold2Body => '所有人看到相同的共享記錄，並收到相同的提醒。';
+  String get tourImport3Body => '從其他應用程式將照片、PDF 或文字分享到 Vaultara，即可新增記錄。';
 
   @override
-  String get storyHousehold3Title => '這是誰的？';
+  String get tourCosts1Title => '加入你的行事曆';
 
   @override
-  String get storyHousehold3Body => '每筆記錄都可以指定所屬人，名字會顯示在記錄與提醒中。';
+  String get tourCosts1Body => '將到期日加入手機行事曆，與其他行程放在一起。';
 
   @override
-  String get storyImport1Title => '掃描卡片';
+  String get tourCosts2Title => '續期費用';
 
   @override
-  String get storyImport1Body => '拍下卡片或證件，Vaultara 會幫你填寫名稱與到期日。';
+  String get tourCosts2Body => '在記錄中填寫續期費用，Vaultara 會顯示你每年的支出。';
 
   @override
-  String get storyImport2Title => '匯入清單';
+  String get tourCosts3Title => '提前規劃';
 
   @override
-  String get storyImport2Body => '已有試算表？匯入後可在儲存前逐列檢查。';
+  String get tourCosts3Body => '提前看到開銷大的月份，大額續期不再措手不及。';
 
   @override
-  String get storyImport3Title => '分享到 Vaultara';
+  String get tourBusiness1Title => '管理你的團隊';
 
   @override
-  String get storyImport3Body => '從其他應用程式將照片、PDF 或文字分享到 Vaultara，即可新增記錄。';
+  String get tourBusiness1Body => '新增員工，將他們的證書、許可與執照集中管理。';
 
   @override
-  String get storyCosts1Title => '加入你的行事曆';
+  String get tourBusiness2Title => '電子郵件提醒';
 
   @override
-  String get storyCosts1Body => '將到期日加入手機行事曆，與其他行程放在一起。';
+  String get tourBusiness2Body => '員工會在證件到期前收到電子郵件，即使沒有安裝應用程式。';
 
   @override
-  String get storyCosts2Title => '續期費用';
+  String get tourBusiness3Title => '每月報告';
 
   @override
-  String get storyCosts2Body => '在記錄中填寫續期費用，Vaultara 會顯示你每年的支出。';
+  String get tourBusiness3Body => '每月報告會顯示哪些有效、哪些即將到期、哪些缺漏。';
 
   @override
-  String get storyCosts3Title => '提前規劃';
+  String get tourBusiness4Title => '要求更新';
 
   @override
-  String get storyCosts3Body => '提前看到開銷大的月份，大額續期不再措手不及。';
-
-  @override
-  String get storyBusiness1Title => '管理你的團隊';
-
-  @override
-  String get storyBusiness1Body => '新增員工，將他們的證書、許可與執照集中管理。';
-
-  @override
-  String get storyBusiness2Title => '電子郵件提醒';
-
-  @override
-  String get storyBusiness2Body => '員工會在證件到期前收到電子郵件，即使沒有安裝應用程式。';
-
-  @override
-  String get storyBusiness3Title => '每月報告';
-
-  @override
-  String get storyBusiness3Body => '每月報告會顯示哪些有效、哪些即將到期、哪些缺漏。';
-
-  @override
-  String get storyBusiness4Title => '要求更新';
-
-  @override
-  String get storyBusiness4Body => '傳送連結，員工自行上傳續期後的證件。';
+  String get tourBusiness4Body => '傳送連結，員工自行上傳續期後的證件。';
 
   @override
   String get categoryHealthAndMedical => '健康與醫療';

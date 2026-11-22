@@ -7724,290 +7724,262 @@ class AppLocalizationsLo extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => 'ຍ້າຍເຮືອນ, ມີລູກ, ວຽກໃໝ່ ຫຼື ເຫດສຸກເສີນ? ເຫດການຊີວິດໃຫ້ແຜນພ້ອມລາຍການ, ຂັ້ນຕອນ ແລະ ວັນທີຂອງທ່ານ.';
 
   @override
-  String get storySampleQuestion => 'ປີນີ້ມີຫຍັງໝົດອາຍຸແດ່?';
+  String get tourHome1Title => 'ມື້ຂອງທ່ານໃນພິບຕາດຽວ';
 
   @override
-  String storySampleAnswer(String name) {
-    return '$name ຂອງທ່ານໝົດອາຍຸໃນເດືອນມີນາ. ຕ້ອງການແຈ້ງເຕືອນລ່ວງໜ້າໜຶ່ງເດືອນບໍ?';
-  }
+  String get tourHome1Body => 'ໜ້າຈໍຫຼັກສະແດງສິ່ງສຳຄັນໃນມື້ນີ້: ສິ່ງທີ່ຈະໝົດອາຍຸໄວໆນີ້ ແລະ ຈຳນວນລາຍການທີ່ທ່ານມີ.';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name ໝົດອາຍຸໃນອີກ 30 ມື້. ແຕະເພື່ອຕໍ່ອາຍຸ.';
-  }
+  String get tourHome2Title => 'ຊອກຫາໄດ້ທຸກຢ່າງ';
 
   @override
-  String get storySampleGym => 'ສະມາຊິກຟິດເນດ';
+  String get tourHome2Body => 'ແຕະຊອກຫາເພື່ອຫາລາຍການຕາມຊື່, ກຸ່ມ ຫຼື ບຸກຄົນ.';
 
   @override
-  String get storySampleFirstAid => 'ໃບຢັ້ງຢືນການປະຖົມພະຍາບານ';
+  String get tourHome3Title => 'ການເດີນທາງ ແລະ ແຜນ';
 
   @override
-  String get storySampleEncrypt => 'ເຂົ້າລະຫັດຮູບພາບ';
+  String get tourHome3Body => 'ການເດີນທາງທີ່ທ່ານວາງແຜນ ແລະ ແຜນເຫດການຊີວິດທີ່ກຳລັງດຳເນີນ, ພ້ອມສິ່ງທີ່ຍັງເຫຼືອ, ຈະສະແດງຢູ່ນີ້.';
 
   @override
-  String get storySampleAppLock => 'ລັອກແອັບ';
+  String get tourHome4Title => 'ຊ່ວຍເຫຼືອໃນແຕະດຽວ';
 
   @override
-  String get storySampleHideApp => 'ເຊື່ອງເນື້ອຫາໃນຕົວສະຫຼັບແອັບ';
+  String get tourHome4Body => 'ປຸ່ມປະກາຍເປີດ «ຖາມ Vaultara». ຮູບຂອງທ່ານເປີດໂປຣໄຟລ໌, ການຕັ້ງຄ່າ ແລະ ບົດແນະນຳ.';
 
   @override
-  String get storyHome1Title => 'ມື້ຂອງທ່ານໃນພິບຕາດຽວ';
+  String get tourRenew1Title => 'ມີການແຈ້ງເຕືອນ';
 
   @override
-  String get storyHome1Body => 'ໜ້າຈໍຫຼັກສະແດງສິ່ງສຳຄັນໃນມື້ນີ້: ສິ່ງທີ່ຈະໝົດອາຍຸໄວໆນີ້ ແລະ ຈຳນວນລາຍການທີ່ທ່ານມີ.';
+  String get tourRenew1Body => 'ກ່ອນລາຍການໝົດອາຍຸ, Vaultara ຈະເຕືອນທ່ານ. ແຕະການແຈ້ງເຕືອນເພື່ອເປີດລາຍການ.';
 
   @override
-  String get storyHome2Title => 'ຊອກຫາໄດ້ທຸກຢ່າງ';
+  String get tourRenew2Title => 'ບັນທຶກວັນທີໃໝ່';
 
   @override
-  String get storyHome2Body => 'ແຕະຊອກຫາເພື່ອຫາລາຍການຕາມຊື່, ກຸ່ມ ຫຼື ບຸກຄົນ.';
+  String get tourRenew2Body => 'ຕໍ່ອາຍຸແລ້ວບໍ? ເລືອກວັນໝົດອາຍຸໃໝ່ຢູ່ບ່ອນນີ້ ແລ້ວບັນທຶກ. ການເຕືອນຈະຍ້າຍໄປວັນໃໝ່.';
 
   @override
-  String get storyHome3Title => 'ການເດີນທາງ ແລະ ແຜນ';
+  String get tourRenew3Title => 'ບໍ່ແນ່ໃຈວ່າເຮັດແນວໃດ?';
 
   @override
-  String get storyHome3Body => 'ການເດີນທາງທີ່ທ່ານວາງແຜນ ແລະ ແຜນເຫດການຊີວິດທີ່ກຳລັງດຳເນີນ, ພ້ອມສິ່ງທີ່ຍັງເຫຼືອ, ຈະສະແດງຢູ່ນີ້.';
+  String get tourRenew3Body => 'ບັນທຶກຫຼາຍອັນມີລາຍການກວດສອບການຕໍ່ອາຍຸ. ຖາມ Vaultara ສາມາດຊອກຫາຂັ້ນຕອນສຳລັບປະເທດຂອງທ່ານ ພ້ອມລິ້ງທາງການ.';
 
   @override
-  String get storyHome4Title => 'ຊ່ວຍເຫຼືອໃນແຕະດຽວ';
+  String get tourRenew4Title => 'ໃຫ້ເຮັດຊ້ຳ';
 
   @override
-  String get storyHome4Body => 'ປຸ່ມປະກາຍເປີດ «ຖາມ Vaultara». ຮູບຂອງທ່ານເປີດໂປຣໄຟລ໌, ການຕັ້ງຄ່າ ແລະ ບົດແນະນຳ.';
+  String get tourRenew4Body => 'ສຳລັບການສະໝັກສະມາຊິກ ແລະ ການຈ່າຍລາຍປີ ເປີດ ຕໍ່ອາຍຸເອງ ແລ້ວວັນທີຈະເລື່ອນໄປໜ້າເອງ.';
 
   @override
-  String get storyRenew1Title => 'ມີການແຈ້ງເຕືອນ';
+  String get tourAsk1Title => 'ຖາມດ້ວຍຄຳເວົ້າຂອງທ່ານ';
 
   @override
-  String get storyRenew1Body => 'ກ່ອນລາຍການໝົດອາຍຸ, Vaultara ຈະເຕືອນທ່ານ. ແຕະການແຈ້ງເຕືອນເພື່ອເປີດລາຍການ.';
+  String get tourAsk1Body => 'ຖາມເຊັ່ນ «ປີນີ້ມີຫຍັງໝົດອາຍຸແດ່?» ແລ້ວຮັບຄຳຕອບຈາກລາຍການຂອງທ່ານເອງ.';
 
   @override
-  String get storyRenew2Title => 'ບັນທຶກວັນທີໃໝ່';
+  String get tourAsk2Title => 'ເວົ້າແທນການພິມ';
 
   @override
-  String get storyRenew2Body => 'ຕໍ່ອາຍຸແລ້ວບໍ? ແຕະ «ຕໍ່ອາຍຸ» ແລ້ວໃສ່ວັນໝົດອາຍຸໃໝ່. ການແຈ້ງເຕືອນຈະເລື່ອນຕາມ.';
+  String get tourAsk2Body => 'ແຕະໄມ ແລ້ວເວົ້າ. ຄຳເວົ້າຈະປາກົດຂະນະເວົ້າ ແລະ ສົ່ງໄດ້ທັນທີ.';
 
   @override
-  String get storyRenew3Title => 'ບໍ່ແນ່ໃຈວ່າເຮັດແນວໃດ?';
+  String get tourAsk3Title => 'ທ່ານຢືນຢັນທຸກການປ່ຽນແປງ';
 
   @override
-  String get storyRenew3Body => 'ບັນທຶກຫຼາຍອັນມີລາຍການກວດສອບການຕໍ່ອາຍຸ. ຖາມ Vaultara ສາມາດຊອກຫາຂັ້ນຕອນສຳລັບປະເທດຂອງທ່ານ ພ້ອມລິ້ງທາງການ.';
+  String get tourAsk3Body => 'ຂໍໃຫ້ເພີ່ມ ຫຼື ແກ້ໄຂລາຍການ ແລ້ວທ່ານຈະເຫັນບັດກ່ອນ. ຈະບໍ່ມີຫຍັງຖືກບັນທຶກຈົນກວ່າທ່ານຢືນຢັນ.';
 
   @override
-  String get storyRenew4Title => 'ໃຫ້ເຮັດຊ້ຳ';
+  String get tourAsk4Title => 'ຍົກເລີກການປ່ຽນແປງໃດກໍໄດ້';
 
   @override
-  String get storyRenew4Body => 'ສຳລັບການສະໝັກສະມາຊິກ ແລະ ການຈ່າຍລາຍປີ ເປີດ ຕໍ່ອາຍຸເອງ ແລ້ວວັນທີຈະເລື່ອນໄປໜ້າເອງ.';
+  String get tourAsk4Body => 'ປ່ຽນໃຈບໍ? ທຸກການປ່ຽນແປງທີ່ຢືນຢັນແລ້ວຍົກເລີກໄດ້ຈາກບັດເດີມ.';
 
   @override
-  String get storyAsk1Title => 'ຖາມດ້ວຍຄຳເວົ້າຂອງທ່ານ';
+  String get tourAsk5Title => 'ສືບຕໍ່ຈາກບ່ອນທີ່ຄ້າງໄວ້';
 
   @override
-  String get storyAsk1Body => 'ຖາມເຊັ່ນ «ປີນີ້ມີຫຍັງໝົດອາຍຸແດ່?» ແລ້ວຮັບຄຳຕອບຈາກລາຍການຂອງທ່ານເອງ.';
+  String get tourAsk5Body => 'ການແຊັດຈະເກັບໄວ້ 90 ມື້ໃນ «ປະຫວັດແຊັດ» ແລະ ຄຳຖາມແນະນຳຊ່ວຍໃຫ້ທ່ານເລີ່ມຕົ້ນ.';
 
   @override
-  String get storyAsk2Title => 'ເວົ້າແທນການພິມ';
+  String get tourAsk6Title => 'ຫຼາຍກວ່າບັນທຶກ';
 
   @override
-  String get storyAsk2Body => 'ແຕະໄມ ແລ້ວເວົ້າ. ຄຳເວົ້າຈະປາກົດຂະນະເວົ້າ ແລະ ສົ່ງໄດ້ທັນທີ.';
+  String get tourAsk6Body => 'ມັນຍັງສາມາດວາງແຜນການເດີນທາງ, ເພີ່ມຄົນ, ຊອກຫາຂັ້ນຕອນຕໍ່ອາຍຸສຳລັບປະເທດຂອງທ່ານ ແລະ ແບ່ງປັນບັນທຶກ ພ້ອມລິ້ງໄປຫາໜ້າທາງການ.';
 
   @override
-  String get storyAsk3Title => 'ທ່ານຢືນຢັນທຸກການປ່ຽນແປງ';
+  String get tourWallet1Title => 'ກຽມພ້ອມກ່ອນ';
 
   @override
-  String get storyAsk3Body => 'ຂໍໃຫ້ເພີ່ມ ຫຼື ແກ້ໄຂລາຍການ ແລ້ວທ່ານຈະເຫັນບັດກ່ອນ. ຈະບໍ່ມີຫຍັງຖືກບັນທຶກຈົນກວ່າທ່ານຢືນຢັນ.';
+  String get tourWallet1Body => 'ເປີດບັດ ຫຼື ເອກະສານ ແລ້ວເລືອກບ່ອນເກັບ ເຊັ່ນ ກະເປົາເງິນ ຫຼື ກະເປົາ.';
 
   @override
-  String get storyAsk4Title => 'ຍົກເລີກການປ່ຽນແປງໃດກໍໄດ້';
+  String get tourWallet2Title => 'ບັນທຶກເບີອາຍັດບັດ';
 
   @override
-  String get storyAsk4Body => 'ປ່ຽນໃຈບໍ? ທຸກການປ່ຽນແປງທີ່ຢືນຢັນແລ້ວຍົກເລີກໄດ້ຈາກບັດເດີມ.';
+  String get tourWallet2Body => 'ເພີ່ມເບີອາຍັດບັດຂອງແຕ່ລະທະນາຄານດຽວນີ້. ມັນຢູ່ເທິງບັດ ເຊິ່ງທ່ານຈະບໍ່ມີເມື່ອຕ້ອງການ.';
 
   @override
-  String get storyAsk5Title => 'ສືບຕໍ່ຈາກບ່ອນທີ່ຄ້າງໄວ້';
+  String get tourWallet3Title => 'ຖ້າເສຍ';
 
   @override
-  String get storyAsk5Body => 'ການແຊັດຈະເກັບໄວ້ 90 ມື້ໃນ «ປະຫວັດແຊັດ» ແລະ ຄຳຖາມແນະນຳຊ່ວຍໃຫ້ທ່ານເລີ່ມຕົ້ນ.';
+  String get tourWallet3Body => 'ຖ້າກະເປົາເງິນຂອງທ່ານເສຍ, ແຕະປຸ່ມທີ່ກົງກັບເຫດການຢູ່ບ່ອນນີ້. Vaultara ສະແດງທຸກຢ່າງທີ່ຢູ່ຂ້າງໃນ ເພື່ອໃຫ້ທ່ານຮູ້ວ່າຕ້ອງລະງັບຫຍັງ.';
 
   @override
-  String get storyAsk6Title => 'ຫຼາຍກວ່າບັນທຶກ';
+  String get tourWallet4Title => 'ອາຍັດບັດໃນບໍ່ເທົ່າໃດນາທີ';
 
   @override
-  String get storyAsk6Body => 'ມັນຍັງສາມາດວາງແຜນການເດີນທາງ, ເພີ່ມຄົນ, ຊອກຫາຂັ້ນຕອນຕໍ່ອາຍຸສຳລັບປະເທດຂອງທ່ານ ແລະ ແບ່ງປັນບັນທຶກ ພ້ອມລິ້ງໄປຫາໜ້າທາງການ.';
+  String get tourWallet4Body => 'ໂທຫາແຕ່ລະທະນາຄານດ້ວຍການແຕະດຽວ, ໝາຍວ່າອາຍັດແລ້ວ ແລະ ບັນທຶກເລກແຈ້ງຄວາມ.';
 
   @override
-  String get storyWallet1Title => 'ກຽມພ້ອມກ່ອນ';
+  String get tourWallet5Title => 'ເຮັດໃໝ່ ແລະ ປອດໄພ';
 
   @override
-  String get storyWallet1Body => 'ເປີດບັດ ຫຼື ເອກະສານ ແລ້ວເລືອກບ່ອນເກັບ ເຊັ່ນ ກະເປົາເງິນ ຫຼື ກະເປົາ.';
+  String get tourWallet5Body => 'ເຮັດເອກະສານໃໝ່, ກວດລາຍການບັນຊີເມື່ອຖືກເຕືອນ ແລະ ແຕະ «ຂ້ອຍພົບແລ້ວ» ຖ້າພົບ.';
 
   @override
-  String get storyWallet2Title => 'ບັນທຶກເບີອາຍັດບັດ';
+  String get tourLife1Title => 'ຊ່ວງເວລາສຳຄັນ, ແຜນດຽວ';
 
   @override
-  String get storyWallet2Body => 'ເພີ່ມເບີອາຍັດບັດຂອງແຕ່ລະທະນາຄານດຽວນີ້. ມັນຢູ່ເທິງບັດ ເຊິ່ງທ່ານຈະບໍ່ມີເມື່ອຕ້ອງການ.';
+  String get tourLife1Body => 'ຍ້າຍເຮືອນ, ມີລູກ, ວຽກໃໝ່ ຫຼື ເຫດສຸກເສີນ: ເລືອກໃນ «ເຫດການໃນຊີວິດ» ວ່າເກີດຫຍັງຂຶ້ນ.';
 
   @override
-  String get storyWallet3Title => 'ຖ້າເສຍ';
+  String get tourLife2Title => 'ລາຍການຂອງທ່ານເປັນລະບຽບ';
 
   @override
-  String get storyWallet3Body => 'ເປີດ ເສຍ ຫຼື ຖືກລັກ ແລ້ວແຕະ ເສຍ ຫຼື ຖືກລັກ. Vaultara ສະແດງທຸກຢ່າງທີ່ຢູ່ຂ້າງໃນ.';
+  String get tourLife2Body => 'ແຜນສະແດງວ່າລາຍການໃດຕ້ອງອັບເດດ, ຍົກເລີກ ຫຼື ຕໍ່ອາຍຸ ແລະ ລາຍການໃດອາດຕ້ອງເພີ່ມ.';
 
   @override
-  String get storyWallet4Title => 'ອາຍັດບັດໃນບໍ່ເທົ່າໃດນາທີ';
+  String get tourLife3Title => 'ຂັ້ນຕອນ ແລະ ວັນທີ';
 
   @override
-  String get storyWallet4Body => 'ໂທຫາແຕ່ລະທະນາຄານດ້ວຍການແຕະດຽວ, ໝາຍວ່າອາຍັດແລ້ວ ແລະ ບັນທຶກເລກແຈ້ງຄວາມ.';
+  String get tourLife3Body => 'ແຕ່ລະແຜນຍັງມີຂັ້ນຕອນທີ່ບໍ່ແມ່ນບັນທຶກ, ແລະ ວັນເລີ່ມທີ່ບອກວ່າຄວນຍື່ນເມື່ອໃດເພື່ອບໍ່ໃຫ້ຫຍັງຊ້າ.';
 
   @override
-  String get storyWallet5Title => 'ເຮັດໃໝ່ ແລະ ປອດໄພ';
+  String get tourLife4Title => 'ເຮັດໃຫ້ເປັນຂອງທ່ານ';
 
   @override
-  String get storyWallet5Body => 'ເຮັດເອກະສານໃໝ່, ກວດລາຍການບັນຊີເມື່ອຖືກເຕືອນ ແລະ ແຕະ «ຂ້ອຍພົບແລ້ວ» ຖ້າພົບ.';
+  String get tourLife4Body => 'ເພີ່ມຂັ້ນຕອນຂອງທ່ານເອງ, ແບ່ງປັນແຜນເປັນ PDF ແລະ ຮັບການແຈ້ງເຕືອນໃກ້ວັນທີ.';
 
   @override
-  String get storyLife1Title => 'ຊ່ວງເວລາສຳຄັນ, ແຜນດຽວ';
+  String get tourPhotos1Title => 'ຮູບເອກະສານຂອງທ່ານ';
 
   @override
-  String get storyLife1Body => 'ຍ້າຍເຮືອນ, ມີລູກ, ວຽກໃໝ່ ຫຼື ເຫດສຸກເສີນ: ເລືອກໃນ «ເຫດການໃນຊີວິດ» ວ່າເກີດຫຍັງຂຶ້ນ.';
+  String get tourPhotos1Body => 'ຈາກໃນລາຍການ, ເພີ່ມຮູບດ້ານໜ້າ ແລະ ດ້ານຫຼັງຂອງບັດ ຫຼື ເອກະສານ.';
 
   @override
-  String get storyLife2Title => 'ລາຍການຂອງທ່ານເປັນລະບຽບ';
+  String get tourPhotos2Title => 'ເຂົ້າລະຫັດໃນໂທລະສັບ';
 
   @override
-  String get storyLife2Body => 'ແຜນສະແດງວ່າລາຍການໃດຕ້ອງອັບເດດ, ຍົກເລີກ ຫຼື ຕໍ່ອາຍຸ ແລະ ລາຍການໃດອາດຕ້ອງເພີ່ມ.';
+  String get tourPhotos2Body => 'ເປີດການເຂົ້າລະຫັດຮູບພາບ ແລ້ວຮູບຈະຖືກລັອກໃນໂທລະສັບກ່ອນອັບໂຫລດ.';
 
   @override
-  String get storyLife3Title => 'ຂັ້ນຕອນ ແລະ ວັນທີ';
+  String get tourPhotos3Title => 'ລັອກລາຍການສຳຄັນ';
 
   @override
-  String get storyLife3Body => 'ຂັ້ນຕອນຄອບຄຸມສິ່ງທີ່ບໍ່ແມ່ນລາຍການ ແລະ ວັນເລີ່ມບອກວ່າຄວນຍື່ນເມື່ອໃດເພື່ອບໍ່ໃຫ້ຫຍັງຊ້າ.';
+  String get tourPhotos3Body => 'ລັອກລາຍການ ແລ້ວຈະຂໍລາຍນິ້ວມື ຫຼື ການລັອກໜ້າຈໍກ່ອນເປີດ.';
 
   @override
-  String get storyLife4Title => 'ເຮັດໃຫ້ເປັນຂອງທ່ານ';
+  String get tourPhotos4Title => 'ລັອກທັງແອັບ';
 
   @override
-  String get storyLife4Body => 'ເພີ່ມຂັ້ນຕອນຂອງທ່ານເອງ, ແບ່ງປັນແຜນເປັນ PDF ແລະ ຮັບການແຈ້ງເຕືອນໃກ້ວັນທີ.';
+  String get tourPhotos4Body => 'ໃນການຕັ້ງຄ່າຄວາມປອດໄພ, ເປີດລັອກແອັບ ແລະ ເຊື່ອງເນື້ອຫາເມື່ອສະຫຼັບແອັບ.';
 
   @override
-  String get storyPhotos1Title => 'ຮູບເອກະສານຂອງທ່ານ';
+  String get tourShare1Title => 'ແບ່ງປັນລາຍການດຽວ';
 
   @override
-  String get storyPhotos1Body => 'ຈາກໃນລາຍການ, ເພີ່ມຮູບດ້ານໜ້າ ແລະ ດ້ານຫຼັງຂອງບັດ ຫຼື ເອກະສານ.';
+  String get tourShare1Body => 'ເປີດລາຍການ ແລ້ວແບ່ງປັນລິ້ງທີ່ສະແດງສະເພາະລາຍການນັ້ນ, ບໍ່ມີຫຍັງອື່ນ.';
 
   @override
-  String get storyPhotos2Title => 'ເຂົ້າລະຫັດໃນໂທລະສັບ';
+  String get tourShare2Title => 'ຊຸດຫຼັກຖານ';
 
   @override
-  String get storyPhotos2Body => 'ເປີດການເຂົ້າລະຫັດຮູບພາບ ແລ້ວຮູບຈະຖືກລັອກໃນໂທລະສັບກ່ອນອັບໂຫລດ.';
+  String get tourShare2Body => 'ລວມລາຍການທີ່ທ່ານເລືອກພ້ອມຮູບໄວ້ໃນ PDF ດຽວສຳລັບເຈົ້າຂອງເຮືອນ, ທະນາຄານ ຫຼື ຫ້ອງການ.';
 
   @override
-  String get storyPhotos3Title => 'ລັອກລາຍການສຳຄັນ';
+  String get tourShare3Title => 'ຄວບຄຸມໄດ້ເອງ';
 
   @override
-  String get storyPhotos3Body => 'ລັອກລາຍການ ແລ້ວຈະຂໍລາຍນິ້ວມື ຫຼື ການລັອກໜ້າຈໍກ່ອນເປີດ.';
+  String get tourShare3Body => '«ລິ້ງທີ່ແບ່ງປັນ» ສະແດງທຸກລິ້ງທີ່ທ່ານສ້າງ. ຢຸດລິ້ງໃດກໍໄດ້ທຸກເວລາ ແລ້ວມັນຈະເປີດບໍ່ໄດ້ອີກ.';
 
   @override
-  String get storyPhotos4Title => 'ລັອກທັງແອັບ';
+  String get tourHousehold1Title => 'ເຊີນຄົນໃນເຮືອນ';
 
   @override
-  String get storyPhotos4Body => 'ໃນການຕັ້ງຄ່າຄວາມປອດໄພ, ເປີດລັອກແອັບ ແລະ ເຊື່ອງເນື້ອຫາເມື່ອສະຫຼັບແອັບ.';
+  String get tourHousehold1Body => 'ແບ່ງປັນລະຫັດ ຫຼື ລິ້ງເຊີນ. ແຕ່ລະຄົນເຂົ້າສູ່ລະບົບດ້ວຍບັນຊີຂອງຕົນເອງ.';
 
   @override
-  String get storyShare1Title => 'ແບ່ງປັນລາຍການດຽວ';
+  String get tourHousehold2Title => 'ລາຍການຊຸດດຽວ';
 
   @override
-  String get storyShare1Body => 'ເປີດລາຍການ ແລ້ວແບ່ງປັນລິ້ງທີ່ສະແດງສະເພາະລາຍການນັ້ນ, ບໍ່ມີຫຍັງອື່ນ.';
+  String get tourHousehold2Body => 'ທຸກຄົນເຫັນລາຍການທີ່ແບ່ງປັນຊຸດດຽວກັນ ແລະ ໄດ້ຮັບການແຈ້ງເຕືອນຄືກັນ.';
 
   @override
-  String get storyShare2Title => 'ຊຸດຫຼັກຖານ';
+  String get tourHousehold3Title => 'ເປັນຂອງໃຜ?';
 
   @override
-  String get storyShare2Body => 'ລວມລາຍການທີ່ທ່ານເລືອກພ້ອມຮູບໄວ້ໃນ PDF ດຽວສຳລັບເຈົ້າຂອງເຮືອນ, ທະນາຄານ ຫຼື ຫ້ອງການ.';
+  String get tourHousehold3Body => 'ແຕ່ລະລາຍການເປັນຂອງໃຜຜູ້ໜຶ່ງໄດ້. ຊື່ຈະສະແດງເທິງລາຍການ ແລະ ໃນການແຈ້ງເຕືອນ.';
 
   @override
-  String get storyShare3Title => 'ຄວບຄຸມໄດ້ເອງ';
+  String get tourImport1Title => 'ສະແກນບັດ';
 
   @override
-  String get storyShare3Body => '«ລິ້ງທີ່ແບ່ງປັນ» ສະແດງທຸກລິ້ງທີ່ທ່ານສ້າງ. ຢຸດລິ້ງໃດກໍໄດ້ທຸກເວລາ ແລ້ວມັນຈະເປີດບໍ່ໄດ້ອີກ.';
+  String get tourImport1Body => 'ຖ່າຍຮູບບັດ ຫຼື ເອກະສານ ແລ້ວ Vaultara ຈະຕື່ມຊື່ ແລະ ວັນໝົດອາຍຸໃຫ້.';
 
   @override
-  String get storyHousehold1Title => 'ເຊີນຄົນໃນເຮືອນ';
+  String get tourImport2Title => 'ນຳເຂົ້າລາຍຊື່';
 
   @override
-  String get storyHousehold1Body => 'ແບ່ງປັນລະຫັດ ຫຼື ລິ້ງເຊີນ. ແຕ່ລະຄົນເຂົ້າສູ່ລະບົບດ້ວຍບັນຊີຂອງຕົນເອງ.';
+  String get tourImport2Body => 'ມີສະເປຣດຊີດຢູ່ແລ້ວບໍ? ນຳເຂົ້າ ແລ້ວກວດທຸກແຖວກ່ອນບັນທຶກ.';
 
   @override
-  String get storyHousehold2Title => 'ລາຍການຊຸດດຽວ';
+  String get tourImport3Title => 'ແບ່ງປັນມາ Vaultara';
 
   @override
-  String get storyHousehold2Body => 'ທຸກຄົນເຫັນລາຍການທີ່ແບ່ງປັນຊຸດດຽວກັນ ແລະ ໄດ້ຮັບການແຈ້ງເຕືອນຄືກັນ.';
+  String get tourImport3Body => 'ແບ່ງປັນຮູບ, PDF ຫຼື ຂໍ້ຄວາມຈາກແອັບອື່ນມາ Vaultara ເພື່ອເລີ່ມລາຍການໃໝ່.';
 
   @override
-  String get storyHousehold3Title => 'ເປັນຂອງໃຜ?';
+  String get tourCosts1Title => 'ໃນປະຕິທິນຂອງທ່ານ';
 
   @override
-  String get storyHousehold3Body => 'ແຕ່ລະລາຍການເປັນຂອງໃຜຜູ້ໜຶ່ງໄດ້. ຊື່ຈະສະແດງເທິງລາຍການ ແລະ ໃນການແຈ້ງເຕືອນ.';
+  String get tourCosts1Body => 'ເພີ່ມວັນໝົດອາຍຸໃສ່ປະຕິທິນໂທລະສັບ ຄຽງຂ້າງແຜນອື່ນໆຂອງທ່ານ.';
 
   @override
-  String get storyImport1Title => 'ສະແກນບັດ';
+  String get tourCosts2Title => 'ຄ່າຕໍ່ອາຍຸ';
 
   @override
-  String get storyImport1Body => 'ຖ່າຍຮູບບັດ ຫຼື ເອກະສານ ແລ້ວ Vaultara ຈະຕື່ມຊື່ ແລະ ວັນໝົດອາຍຸໃຫ້.';
+  String get tourCosts2Body => 'ໃສ່ຄ່າຕໍ່ອາຍຸໃນລາຍການ ແລ້ວ Vaultara ຈະສະແດງວ່າທ່ານໃຊ້ຈ່າຍເທົ່າໃດຕໍ່ປີ.';
 
   @override
-  String get storyImport2Title => 'ນຳເຂົ້າລາຍຊື່';
+  String get tourCosts3Title => 'ວາງແຜນລ່ວງໜ້າ';
 
   @override
-  String get storyImport2Body => 'ມີສະເປຣດຊີດຢູ່ແລ້ວບໍ? ນຳເຂົ້າ ແລ້ວກວດທຸກແຖວກ່ອນບັນທຶກ.';
+  String get tourCosts3Body => 'ເຫັນເດືອນທີ່ມີຄ່າໃຊ້ຈ່າຍສູງລ່ວງໜ້າ ການຕໍ່ອາຍຸໃຫຍ່ຈະບໍ່ເຮັດໃຫ້ທ່ານຕົກໃຈ.';
 
   @override
-  String get storyImport3Title => 'ແບ່ງປັນມາ Vaultara';
+  String get tourBusiness1Title => 'ຕິດຕາມທີມຂອງທ່ານ';
 
   @override
-  String get storyImport3Body => 'ແບ່ງປັນຮູບ, PDF ຫຼື ຂໍ້ຄວາມຈາກແອັບອື່ນມາ Vaultara ເພື່ອເລີ່ມລາຍການໃໝ່.';
+  String get tourBusiness1Body => 'ເພີ່ມພະນັກງານ ແລະ ເກັບໃບຢັ້ງຢືນ, ໃບອະນຸຍາດ ແລະ ໃບຂັບຂີ່ຂອງເຂົາເຈົ້າໄວ້ບ່ອນດຽວ.';
 
   @override
-  String get storyCosts1Title => 'ໃນປະຕິທິນຂອງທ່ານ';
+  String get tourBusiness2Title => 'ແຈ້ງເຕືອນທາງອີເມວ';
 
   @override
-  String get storyCosts1Body => 'ເພີ່ມວັນໝົດອາຍຸໃສ່ປະຕິທິນໂທລະສັບ ຄຽງຂ້າງແຜນອື່ນໆຂອງທ່ານ.';
+  String get tourBusiness2Body => 'ພະນັກງານໄດ້ຮັບອີເມວກ່ອນເອກະສານໝົດອາຍຸ ເຖິງວ່າບໍ່ມີແອັບ.';
 
   @override
-  String get storyCosts2Title => 'ຄ່າຕໍ່ອາຍຸ';
+  String get tourBusiness3Title => 'ລາຍງານລາຍເດືອນ';
 
   @override
-  String get storyCosts2Body => 'ໃສ່ຄ່າຕໍ່ອາຍຸໃນລາຍການ ແລ້ວ Vaultara ຈະສະແດງວ່າທ່ານໃຊ້ຈ່າຍເທົ່າໃດຕໍ່ປີ.';
+  String get tourBusiness3Body => 'ທຸກເດືອນມີລາຍງານວ່າຫຍັງຍັງໃຊ້ໄດ້, ຫຍັງກຳລັງໝົດອາຍຸ ແລະ ຫຍັງຂາດໄປ.';
 
   @override
-  String get storyCosts3Title => 'ວາງແຜນລ່ວງໜ້າ';
+  String get tourBusiness4Title => 'ຂໍການອັບເດດ';
 
   @override
-  String get storyCosts3Body => 'ເຫັນເດືອນທີ່ມີຄ່າໃຊ້ຈ່າຍສູງລ່ວງໜ້າ ການຕໍ່ອາຍຸໃຫຍ່ຈະບໍ່ເຮັດໃຫ້ທ່ານຕົກໃຈ.';
-
-  @override
-  String get storyBusiness1Title => 'ຕິດຕາມທີມຂອງທ່ານ';
-
-  @override
-  String get storyBusiness1Body => 'ເພີ່ມພະນັກງານ ແລະ ເກັບໃບຢັ້ງຢືນ, ໃບອະນຸຍາດ ແລະ ໃບຂັບຂີ່ຂອງເຂົາເຈົ້າໄວ້ບ່ອນດຽວ.';
-
-  @override
-  String get storyBusiness2Title => 'ແຈ້ງເຕືອນທາງອີເມວ';
-
-  @override
-  String get storyBusiness2Body => 'ພະນັກງານໄດ້ຮັບອີເມວກ່ອນເອກະສານໝົດອາຍຸ ເຖິງວ່າບໍ່ມີແອັບ.';
-
-  @override
-  String get storyBusiness3Title => 'ລາຍງານລາຍເດືອນ';
-
-  @override
-  String get storyBusiness3Body => 'ທຸກເດືອນມີລາຍງານວ່າຫຍັງຍັງໃຊ້ໄດ້, ຫຍັງກຳລັງໝົດອາຍຸ ແລະ ຫຍັງຂາດໄປ.';
-
-  @override
-  String get storyBusiness4Title => 'ຂໍການອັບເດດ';
-
-  @override
-  String get storyBusiness4Body => 'ສົ່ງລິ້ງ ແລ້ວພະນັກງານຈະອັບໂຫລດເອກະສານທີ່ຕໍ່ອາຍຸແລ້ວເອງ.';
+  String get tourBusiness4Body => 'ສົ່ງລິ້ງ ແລ້ວພະນັກງານຈະອັບໂຫລດເອກະສານທີ່ຕໍ່ອາຍຸແລ້ວເອງ.';
 
   @override
   String get categoryHealthAndMedical => 'ສຸຂະພາບ ແລະ ການແພດ';

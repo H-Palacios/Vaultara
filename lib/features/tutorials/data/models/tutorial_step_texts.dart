@@ -7,12 +7,193 @@ import 'package:vaultara/l10n/app_localizations.dart';
 class TutorialStepTexts {
   const TutorialStepTexts._();
 
-  /// A short heading above the message. The guided tutorials have none,
-  /// so their tips read as before.
-  static String? title(AppLocalizations loc, TutorialStep step) => null;
+  /// A short heading above the message. The older guided tutorials have
+  /// none, so their tips read as before.
+  static String? title(AppLocalizations loc, TutorialStep step) {
+    switch (step) {
+      case TutorialStep.homeNextUp:
+        return loc.tourHome1Title;
+      case TutorialStep.homeSearch:
+        return loc.tourHome2Title;
+      case TutorialStep.homePlans:
+        return loc.tourHome3Title;
+      case TutorialStep.homeHelp:
+        return loc.tourHome4Title;
+      case TutorialStep.renewReminder:
+        return loc.tourRenew1Title;
+      case TutorialStep.renewDate:
+        return loc.tourRenew2Title;
+      case TutorialStep.renewGuide:
+        return loc.tourRenew3Title;
+      case TutorialStep.renewRepeat:
+        return loc.tourRenew4Title;
+      case TutorialStep.askType:
+        return loc.tourAsk1Title;
+      case TutorialStep.askTalk:
+        return loc.tourAsk2Title;
+      case TutorialStep.askHistory:
+        return loc.tourAsk5Title;
+      case TutorialStep.askConfirm:
+        return loc.tourAsk3Title;
+      case TutorialStep.askUndo:
+        return loc.tourAsk4Title;
+      case TutorialStep.askMore:
+        return loc.tourAsk6Title;
+      case TutorialStep.walletPrepare:
+        return loc.tourWallet1Title;
+      case TutorialStep.walletLostNumber:
+        return loc.tourWallet2Title;
+      case TutorialStep.walletLost:
+        return loc.tourWallet3Title;
+      case TutorialStep.walletBlock:
+        return loc.tourWallet4Title;
+      case TutorialStep.walletReplace:
+        return loc.tourWallet5Title;
+      case TutorialStep.lifeChoose:
+        return loc.tourLife1Title;
+      case TutorialStep.lifeRecords:
+        return loc.tourLife2Title;
+      case TutorialStep.lifeSteps:
+        return loc.tourLife3Title;
+      case TutorialStep.lifeOwn:
+        return loc.tourLife4Title;
+      case TutorialStep.photosAdd:
+        return loc.tourPhotos1Title;
+      case TutorialStep.photosEncrypt:
+        return loc.tourPhotos2Title;
+      case TutorialStep.photosLockRecord:
+        return loc.tourPhotos3Title;
+      case TutorialStep.photosAppLock:
+        return loc.tourPhotos4Title;
+      case TutorialStep.shareRecord:
+        return loc.tourShare1Title;
+      case TutorialStep.shareProofPack:
+        return loc.tourShare2Title;
+      case TutorialStep.shareLinks:
+        return loc.tourShare3Title;
+      case TutorialStep.householdInvite:
+        return loc.tourHousehold1Title;
+      case TutorialStep.householdShared:
+        return loc.tourHousehold2Title;
+      case TutorialStep.householdWhose:
+        return loc.tourHousehold3Title;
+      case TutorialStep.importScan:
+        return loc.tourImport1Title;
+      case TutorialStep.importList:
+        return loc.tourImport2Title;
+      case TutorialStep.importShare:
+        return loc.tourImport3Title;
+      case TutorialStep.costsCalendar:
+        return loc.tourCosts1Title;
+      case TutorialStep.costsAmount:
+        return loc.tourCosts2Title;
+      case TutorialStep.costsPlan:
+        return loc.tourCosts3Title;
+      case TutorialStep.businessTeam:
+        return loc.tourBusiness1Title;
+      case TutorialStep.businessEmail:
+        return loc.tourBusiness2Title;
+      case TutorialStep.businessReport:
+        return loc.tourBusiness3Title;
+      case TutorialStep.businessRequest:
+        return loc.tourBusiness4Title;
+      default:
+        return null;
+    }
+  }
 
-  /// A picture for steps with nothing on screen to point at.
-  static IconData? icon(TutorialStep step) => null;
+  static IconData? icon(TutorialStep step) {
+    switch (step) {
+      case TutorialStep.homeNextUp:
+        return Icons.dashboard_rounded;
+      case TutorialStep.homeSearch:
+        return Icons.search_rounded;
+      case TutorialStep.homePlans:
+        return Icons.flag_rounded;
+      case TutorialStep.homeHelp:
+        return Icons.auto_awesome_rounded;
+      case TutorialStep.renewReminder:
+        return Icons.notifications_active_rounded;
+      case TutorialStep.renewDate:
+        return Icons.autorenew_rounded;
+      case TutorialStep.renewGuide:
+        return Icons.menu_book_rounded;
+      case TutorialStep.renewRepeat:
+        return Icons.repeat_rounded;
+      case TutorialStep.askType:
+        return Icons.chat_bubble_rounded;
+      case TutorialStep.askTalk:
+        return Icons.mic_rounded;
+      case TutorialStep.askHistory:
+        return Icons.history_rounded;
+      case TutorialStep.askConfirm:
+        return Icons.fact_check_rounded;
+      case TutorialStep.askUndo:
+        return Icons.undo_rounded;
+      case TutorialStep.askMore:
+        return Icons.auto_awesome_rounded;
+      case TutorialStep.walletPrepare:
+        return Icons.account_balance_wallet_rounded;
+      case TutorialStep.walletLostNumber:
+        return Icons.phone_in_talk_rounded;
+      case TutorialStep.walletLost:
+        return Icons.search_off_rounded;
+      case TutorialStep.walletBlock:
+        return Icons.block_rounded;
+      case TutorialStep.walletReplace:
+        return Icons.celebration_rounded;
+      case TutorialStep.lifeChoose:
+        return Icons.event_note_rounded;
+      case TutorialStep.lifeRecords:
+        return Icons.checklist_rounded;
+      case TutorialStep.lifeSteps:
+        return Icons.schedule_rounded;
+      case TutorialStep.lifeOwn:
+        return Icons.edit_note_rounded;
+      case TutorialStep.photosAdd:
+        return Icons.photo_library_rounded;
+      case TutorialStep.photosEncrypt:
+        return Icons.enhanced_encryption_rounded;
+      case TutorialStep.photosLockRecord:
+        return Icons.fingerprint_rounded;
+      case TutorialStep.photosAppLock:
+        return Icons.lock_rounded;
+      case TutorialStep.shareRecord:
+        return Icons.ios_share_rounded;
+      case TutorialStep.shareProofPack:
+        return Icons.picture_as_pdf_rounded;
+      case TutorialStep.shareLinks:
+        return Icons.link_off_rounded;
+      case TutorialStep.householdInvite:
+        return Icons.group_add_rounded;
+      case TutorialStep.householdShared:
+        return Icons.groups_rounded;
+      case TutorialStep.householdWhose:
+        return Icons.person_pin_rounded;
+      case TutorialStep.importScan:
+        return Icons.document_scanner_rounded;
+      case TutorialStep.importList:
+        return Icons.table_view_rounded;
+      case TutorialStep.importShare:
+        return Icons.share_rounded;
+      case TutorialStep.costsCalendar:
+        return Icons.calendar_month_rounded;
+      case TutorialStep.costsAmount:
+        return Icons.payments_rounded;
+      case TutorialStep.costsPlan:
+        return Icons.bar_chart_rounded;
+      case TutorialStep.businessTeam:
+        return Icons.badge_rounded;
+      case TutorialStep.businessEmail:
+        return Icons.mark_email_unread_rounded;
+      case TutorialStep.businessReport:
+        return Icons.assessment_rounded;
+      case TutorialStep.businessRequest:
+        return Icons.upload_file_rounded;
+      default:
+        return null;
+    }
+  }
 
   static String message(
     AppLocalizations loc,
@@ -84,6 +265,92 @@ class TutorialStepTexts {
             : loc.tutorialFamilyAddPersonLocked;
       case TutorialStep.familyRecordPerson:
         return loc.tutorialFamilyRecordPerson;
+      case TutorialStep.homeNextUp:
+        return loc.tourHome1Body;
+      case TutorialStep.homeSearch:
+        return loc.tourHome2Body;
+      case TutorialStep.homePlans:
+        return loc.tourHome3Body;
+      case TutorialStep.homeHelp:
+        return loc.tourHome4Body;
+      case TutorialStep.renewReminder:
+        return loc.tourRenew1Body;
+      case TutorialStep.renewDate:
+        return loc.tourRenew2Body;
+      case TutorialStep.renewGuide:
+        return loc.tourRenew3Body;
+      case TutorialStep.renewRepeat:
+        return loc.tourRenew4Body;
+      case TutorialStep.askType:
+        return loc.tourAsk1Body;
+      case TutorialStep.askTalk:
+        return loc.tourAsk2Body;
+      case TutorialStep.askHistory:
+        return loc.tourAsk5Body;
+      case TutorialStep.askConfirm:
+        return loc.tourAsk3Body;
+      case TutorialStep.askUndo:
+        return loc.tourAsk4Body;
+      case TutorialStep.askMore:
+        return loc.tourAsk6Body;
+      case TutorialStep.walletPrepare:
+        return loc.tourWallet1Body;
+      case TutorialStep.walletLostNumber:
+        return loc.tourWallet2Body;
+      case TutorialStep.walletLost:
+        return loc.tourWallet3Body;
+      case TutorialStep.walletBlock:
+        return loc.tourWallet4Body;
+      case TutorialStep.walletReplace:
+        return loc.tourWallet5Body;
+      case TutorialStep.lifeChoose:
+        return loc.tourLife1Body;
+      case TutorialStep.lifeRecords:
+        return loc.tourLife2Body;
+      case TutorialStep.lifeSteps:
+        return loc.tourLife3Body;
+      case TutorialStep.lifeOwn:
+        return loc.tourLife4Body;
+      case TutorialStep.photosAdd:
+        return loc.tourPhotos1Body;
+      case TutorialStep.photosEncrypt:
+        return loc.tourPhotos2Body;
+      case TutorialStep.photosLockRecord:
+        return loc.tourPhotos3Body;
+      case TutorialStep.photosAppLock:
+        return loc.tourPhotos4Body;
+      case TutorialStep.shareRecord:
+        return loc.tourShare1Body;
+      case TutorialStep.shareProofPack:
+        return loc.tourShare2Body;
+      case TutorialStep.shareLinks:
+        return loc.tourShare3Body;
+      case TutorialStep.householdInvite:
+        return loc.tourHousehold1Body;
+      case TutorialStep.householdShared:
+        return loc.tourHousehold2Body;
+      case TutorialStep.householdWhose:
+        return loc.tourHousehold3Body;
+      case TutorialStep.importScan:
+        return loc.tourImport1Body;
+      case TutorialStep.importList:
+        return loc.tourImport2Body;
+      case TutorialStep.importShare:
+        return loc.tourImport3Body;
+      case TutorialStep.costsCalendar:
+        return loc.tourCosts1Body;
+      case TutorialStep.costsAmount:
+        return loc.tourCosts2Body;
+      case TutorialStep.costsPlan:
+        return loc.tourCosts3Body;
+      case TutorialStep.businessTeam:
+        return loc.tourBusiness1Body;
+      case TutorialStep.businessEmail:
+        return loc.tourBusiness2Body;
+      case TutorialStep.businessReport:
+        return loc.tourBusiness3Body;
+      case TutorialStep.businessRequest:
+        return loc.tourBusiness4Body;
     }
   }
 }

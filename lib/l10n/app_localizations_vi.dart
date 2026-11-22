@@ -7724,290 +7724,262 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => 'Chuyển nhà, sinh con, việc mới hay khẩn cấp? Sự kiện cuộc sống cho bạn kế hoạch với các mục, bước và ngày của bạn.';
 
   @override
-  String get storySampleQuestion => 'Năm nay có gì hết hạn?';
+  String get tourHome1Title => 'Một ngày của bạn trong nháy mắt';
 
   @override
-  String storySampleAnswer(String name) {
-    return '$name của bạn hết hạn vào tháng 3. Bạn có muốn nhắc trước một tháng không?';
-  }
+  String get tourHome1Body => 'Màn hình chính cho thấy điều quan trọng hôm nay: thứ sắp hết hạn và bạn có bao nhiêu mục.';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name hết hạn sau 30 ngày. Chạm để gia hạn.';
-  }
+  String get tourHome2Title => 'Tìm bất cứ thứ gì';
 
   @override
-  String get storySampleGym => 'Thẻ tập gym';
+  String get tourHome2Body => 'Chạm vào tìm kiếm để tìm mục theo tên, nhóm hoặc người.';
 
   @override
-  String get storySampleFirstAid => 'Chứng chỉ sơ cứu';
+  String get tourHome3Title => 'Chuyến đi và kế hoạch';
 
   @override
-  String get storySampleEncrypt => 'Mã hóa ảnh';
+  String get tourHome3Body => 'Chuyến đi bạn đang lên kế hoạch và các kế hoạch sự kiện cuộc sống đang diễn ra, cùng việc còn lại, hiện ở đây.';
 
   @override
-  String get storySampleAppLock => 'Khóa ứng dụng';
+  String get tourHome4Title => 'Trợ giúp chỉ một chạm';
 
   @override
-  String get storySampleHideApp => 'Ẩn nội dung trong trình chuyển ứng dụng';
+  String get tourHome4Body => 'Nút lấp lánh mở «Hỏi Vaultara». Ảnh của bạn mở hồ sơ, cài đặt và hướng dẫn.';
 
   @override
-  String get storyHome1Title => 'Một ngày của bạn trong nháy mắt';
+  String get tourRenew1Title => 'Có lời nhắc';
 
   @override
-  String get storyHome1Body => 'Màn hình chính cho thấy điều quan trọng hôm nay: thứ sắp hết hạn và bạn có bao nhiêu mục.';
+  String get tourRenew1Body => 'Trước khi một mục hết hạn, Vaultara nhắc bạn. Chạm vào lời nhắc để mở mục.';
 
   @override
-  String get storyHome2Title => 'Tìm bất cứ thứ gì';
+  String get tourRenew2Title => 'Lưu ngày mới';
 
   @override
-  String get storyHome2Body => 'Chạm vào tìm kiếm để tìm mục theo tên, nhóm hoặc người.';
+  String get tourRenew2Body => 'Đã gia hạn? Chọn ngày hết hạn mới ở đây rồi lưu. Lời nhắc sẽ chuyển sang ngày mới.';
 
   @override
-  String get storyHome3Title => 'Chuyến đi và kế hoạch';
+  String get tourRenew3Title => 'Chưa rõ cách làm?';
 
   @override
-  String get storyHome3Body => 'Chuyến đi bạn đang lên kế hoạch và các kế hoạch sự kiện cuộc sống đang diễn ra, cùng việc còn lại, hiện ở đây.';
+  String get tourRenew3Body => 'Nhiều mục có danh sách kiểm tra gia hạn. Hỏi Vaultara có thể tìm các bước cho quốc gia của bạn, kèm liên kết chính thức.';
 
   @override
-  String get storyHome4Title => 'Trợ giúp chỉ một chạm';
+  String get tourRenew4Title => 'Để nó lặp lại';
 
   @override
-  String get storyHome4Body => 'Nút lấp lánh mở «Hỏi Vaultara». Ảnh của bạn mở hồ sơ, cài đặt và hướng dẫn.';
+  String get tourRenew4Body => 'Với gói đăng ký và khoản thanh toán hằng năm, hãy bật Tự gia hạn và ngày sẽ tự chuyển tiếp.';
 
   @override
-  String get storyRenew1Title => 'Có lời nhắc';
+  String get tourAsk1Title => 'Hỏi bằng lời của bạn';
 
   @override
-  String get storyRenew1Body => 'Trước khi một mục hết hạn, Vaultara nhắc bạn. Chạm vào lời nhắc để mở mục.';
+  String get tourAsk1Body => 'Hỏi chẳng hạn «Năm nay có gì hết hạn?» và nhận câu trả lời từ chính các mục của bạn.';
 
   @override
-  String get storyRenew2Title => 'Lưu ngày mới';
+  String get tourAsk2Title => 'Nói thay vì gõ';
 
   @override
-  String get storyRenew2Body => 'Đã gia hạn? Chạm «Gia hạn» và nhập ngày hết hạn mới. Lời nhắc sẽ dời theo.';
+  String get tourAsk2Body => 'Chạm micro và nói. Lời của bạn hiện ra khi nói và bạn có thể gửi ngay.';
 
   @override
-  String get storyRenew3Title => 'Chưa rõ cách làm?';
+  String get tourAsk3Title => 'Bạn xác nhận mọi thay đổi';
 
   @override
-  String get storyRenew3Body => 'Nhiều mục có danh sách kiểm tra gia hạn. Hỏi Vaultara có thể tìm các bước cho quốc gia của bạn, kèm liên kết chính thức.';
+  String get tourAsk3Body => 'Yêu cầu thêm hoặc sửa một mục và bạn sẽ thấy một thẻ trước. Không gì được lưu cho đến khi bạn xác nhận.';
 
   @override
-  String get storyRenew4Title => 'Để nó lặp lại';
+  String get tourAsk4Title => 'Hoàn tác mọi thay đổi';
 
   @override
-  String get storyRenew4Body => 'Với gói đăng ký và khoản thanh toán hằng năm, hãy bật Tự gia hạn và ngày sẽ tự chuyển tiếp.';
+  String get tourAsk4Body => 'Đổi ý? Mọi thay đổi đã xác nhận đều có thể hoàn tác từ chính thẻ đó.';
 
   @override
-  String get storyAsk1Title => 'Hỏi bằng lời của bạn';
+  String get tourAsk5Title => 'Tiếp tục từ chỗ bạn dừng';
 
   @override
-  String get storyAsk1Body => 'Hỏi chẳng hạn «Năm nay có gì hết hạn?» và nhận câu trả lời từ chính các mục của bạn.';
+  String get tourAsk5Body => 'Cuộc trò chuyện được lưu 90 ngày trong «Lịch sử trò chuyện» và câu hỏi gợi ý giúp bạn bắt đầu.';
 
   @override
-  String get storyAsk2Title => 'Nói thay vì gõ';
+  String get tourAsk6Title => 'Hơn cả các mục';
 
   @override
-  String get storyAsk2Body => 'Chạm micro và nói. Lời của bạn hiện ra khi nói và bạn có thể gửi ngay.';
+  String get tourAsk6Body => 'Nó còn có thể lên kế hoạch chuyến đi, thêm người, tìm các bước gia hạn cho quốc gia của bạn và chia sẻ mục, kèm liên kết tới trang chính thức.';
 
   @override
-  String get storyAsk3Title => 'Bạn xác nhận mọi thay đổi';
+  String get tourWallet1Title => 'Chuẩn bị trước';
 
   @override
-  String get storyAsk3Body => 'Yêu cầu thêm hoặc sửa một mục và bạn sẽ thấy một thẻ trước. Không gì được lưu cho đến khi bạn xác nhận.';
+  String get tourWallet1Body => 'Mở một thẻ hoặc giấy tờ và chọn nơi bạn cất, ví dụ ví hoặc túi.';
 
   @override
-  String get storyAsk4Title => 'Hoàn tác mọi thay đổi';
+  String get tourWallet2Title => 'Lưu số khóa thẻ';
 
   @override
-  String get storyAsk4Body => 'Đổi ý? Mọi thay đổi đã xác nhận đều có thể hoàn tác từ chính thẻ đó.';
+  String get tourWallet2Body => 'Thêm số khóa thẻ của từng ngân hàng ngay. Số này in trên thẻ, thứ bạn sẽ không có khi cần.';
 
   @override
-  String get storyAsk5Title => 'Tiếp tục từ chỗ bạn dừng';
+  String get tourWallet3Title => 'Nếu bị mất';
 
   @override
-  String get storyAsk5Body => 'Cuộc trò chuyện được lưu 90 ngày trong «Lịch sử trò chuyện» và câu hỏi gợi ý giúp bạn bắt đầu.';
+  String get tourWallet3Body => 'Nếu ví bị mất, hãy nhấn nút phù hợp ở đây. Vaultara hiển thị mọi thứ có trong đó, để bạn biết cần khóa những gì.';
 
   @override
-  String get storyAsk6Title => 'Hơn cả các mục';
+  String get tourWallet4Title => 'Khóa thẻ trong vài phút';
 
   @override
-  String get storyAsk6Body => 'Nó còn có thể lên kế hoạch chuyến đi, thêm người, tìm các bước gia hạn cho quốc gia của bạn và chia sẻ mục, kèm liên kết tới trang chính thức.';
+  String get tourWallet4Body => 'Gọi từng ngân hàng chỉ với một chạm, đánh dấu thẻ đã khóa và lưu số trình báo.';
 
   @override
-  String get storyWallet1Title => 'Chuẩn bị trước';
+  String get tourWallet5Title => 'Làm lại và giữ an toàn';
 
   @override
-  String get storyWallet1Body => 'Mở một thẻ hoặc giấy tờ và chọn nơi bạn cất, ví dụ ví hoặc túi.';
+  String get tourWallet5Body => 'Làm lại giấy tờ, kiểm tra sao kê khi được nhắc và chạm «Tôi đã tìm thấy» nếu tìm thấy.';
 
   @override
-  String get storyWallet2Title => 'Lưu số khóa thẻ';
+  String get tourLife1Title => 'Khoảnh khắc lớn, một kế hoạch';
 
   @override
-  String get storyWallet2Body => 'Thêm số khóa thẻ của từng ngân hàng ngay. Số này in trên thẻ, thứ bạn sẽ không có khi cần.';
+  String get tourLife1Body => 'Chuyển nhà, sinh con, việc mới hay khẩn cấp: chọn trong «Sự kiện trong đời» điều đang xảy ra.';
 
   @override
-  String get storyWallet3Title => 'Nếu bị mất';
+  String get tourLife2Title => 'Các mục của bạn, gọn gàng';
 
   @override
-  String get storyWallet3Body => 'Mở Bị mất hoặc bị trộm rồi chạm Bị mất hoặc Bị trộm. Vaultara hiển thị mọi thứ đã có bên trong.';
+  String get tourLife2Body => 'Kế hoạch cho thấy mục nào cần cập nhật, hủy hoặc gia hạn và mục nào có thể cần thêm.';
 
   @override
-  String get storyWallet4Title => 'Khóa thẻ trong vài phút';
+  String get tourLife3Title => 'Bước và ngày';
 
   @override
-  String get storyWallet4Body => 'Gọi từng ngân hàng chỉ với một chạm, đánh dấu thẻ đã khóa và lưu số trình báo.';
+  String get tourLife3Body => 'Mỗi kế hoạch còn có các bước không phải bản ghi, và ngày bắt đầu cho biết khi nào cần nộp đơn để không gì bị trễ.';
 
   @override
-  String get storyWallet5Title => 'Làm lại và giữ an toàn';
+  String get tourLife4Title => 'Biến nó thành của bạn';
 
   @override
-  String get storyWallet5Body => 'Làm lại giấy tờ, kiểm tra sao kê khi được nhắc và chạm «Tôi đã tìm thấy» nếu tìm thấy.';
+  String get tourLife4Body => 'Thêm bước của riêng bạn, chia sẻ kế hoạch dạng PDF và nhận lời nhắc quanh ngày đó.';
 
   @override
-  String get storyLife1Title => 'Khoảnh khắc lớn, một kế hoạch';
+  String get tourPhotos1Title => 'Ảnh giấy tờ của bạn';
 
   @override
-  String get storyLife1Body => 'Chuyển nhà, sinh con, việc mới hay khẩn cấp: chọn trong «Sự kiện trong đời» điều đang xảy ra.';
+  String get tourPhotos1Body => 'Từ trong mục, thêm ảnh mặt trước và mặt sau của thẻ hoặc giấy tờ.';
 
   @override
-  String get storyLife2Title => 'Các mục của bạn, gọn gàng';
+  String get tourPhotos2Title => 'Mã hóa trên điện thoại';
 
   @override
-  String get storyLife2Body => 'Kế hoạch cho thấy mục nào cần cập nhật, hủy hoặc gia hạn và mục nào có thể cần thêm.';
+  String get tourPhotos2Body => 'Bật mã hóa ảnh và ảnh sẽ được khóa trên điện thoại trước khi tải lên.';
 
   @override
-  String get storyLife3Title => 'Bước và ngày';
+  String get tourPhotos3Title => 'Khóa mục nhạy cảm';
 
   @override
-  String get storyLife3Body => 'Các bước bao gồm những việc không phải là mục, và ngày bắt đầu cho biết khi nào nộp đơn để không gì bị trễ.';
+  String get tourPhotos3Body => 'Khóa một mục và nó sẽ yêu cầu vân tay hoặc khóa màn hình trước khi mở.';
 
   @override
-  String get storyLife4Title => 'Biến nó thành của bạn';
+  String get tourPhotos4Title => 'Khóa toàn bộ ứng dụng';
 
   @override
-  String get storyLife4Body => 'Thêm bước của riêng bạn, chia sẻ kế hoạch dạng PDF và nhận lời nhắc quanh ngày đó.';
+  String get tourPhotos4Body => 'Trong cài đặt bảo mật, bật khóa ứng dụng và ẩn nội dung khi chuyển ứng dụng.';
 
   @override
-  String get storyPhotos1Title => 'Ảnh giấy tờ của bạn';
+  String get tourShare1Title => 'Chia sẻ một mục';
 
   @override
-  String get storyPhotos1Body => 'Từ trong mục, thêm ảnh mặt trước và mặt sau của thẻ hoặc giấy tờ.';
+  String get tourShare1Body => 'Mở một mục và chia sẻ liên kết chỉ hiện mục đó, không gì khác.';
 
   @override
-  String get storyPhotos2Title => 'Mã hóa trên điện thoại';
+  String get tourShare2Title => 'Bộ hồ sơ chứng minh';
 
   @override
-  String get storyPhotos2Body => 'Bật mã hóa ảnh và ảnh sẽ được khóa trên điện thoại trước khi tải lên.';
+  String get tourShare2Body => 'Gộp các mục bạn chọn, kèm ảnh, vào một PDF cho chủ nhà, ngân hàng hoặc cơ quan.';
 
   @override
-  String get storyPhotos3Title => 'Khóa mục nhạy cảm';
+  String get tourShare3Title => 'Giữ quyền kiểm soát';
 
   @override
-  String get storyPhotos3Body => 'Khóa một mục và nó sẽ yêu cầu vân tay hoặc khóa màn hình trước khi mở.';
+  String get tourShare3Body => '«Liên kết đã chia sẻ» hiện mọi liên kết bạn đã tạo. Dừng bất kỳ liên kết nào bất cứ lúc nào và nó sẽ không mở được nữa.';
 
   @override
-  String get storyPhotos4Title => 'Khóa toàn bộ ứng dụng';
+  String get tourHousehold1Title => 'Mời hộ gia đình';
 
   @override
-  String get storyPhotos4Body => 'Trong cài đặt bảo mật, bật khóa ứng dụng và ẩn nội dung khi chuyển ứng dụng.';
+  String get tourHousehold1Body => 'Chia sẻ mã hoặc liên kết mời. Mỗi người đăng nhập bằng tài khoản riêng.';
 
   @override
-  String get storyShare1Title => 'Chia sẻ một mục';
+  String get tourHousehold2Title => 'Một bộ mục chung';
 
   @override
-  String get storyShare1Body => 'Mở một mục và chia sẻ liên kết chỉ hiện mục đó, không gì khác.';
+  String get tourHousehold2Body => 'Mọi người thấy cùng các mục chung và nhận cùng lời nhắc.';
 
   @override
-  String get storyShare2Title => 'Bộ hồ sơ chứng minh';
+  String get tourHousehold3Title => 'Của ai?';
 
   @override
-  String get storyShare2Body => 'Gộp các mục bạn chọn, kèm ảnh, vào một PDF cho chủ nhà, ngân hàng hoặc cơ quan.';
+  String get tourHousehold3Body => 'Mỗi mục có thể thuộc về ai đó. Tên của họ hiện trên mục và trong lời nhắc.';
 
   @override
-  String get storyShare3Title => 'Giữ quyền kiểm soát';
+  String get tourImport1Title => 'Quét thẻ';
 
   @override
-  String get storyShare3Body => '«Liên kết đã chia sẻ» hiện mọi liên kết bạn đã tạo. Dừng bất kỳ liên kết nào bất cứ lúc nào và nó sẽ không mở được nữa.';
+  String get tourImport1Body => 'Chụp ảnh thẻ hoặc giấy tờ và Vaultara điền tên và ngày hết hạn giúp bạn.';
 
   @override
-  String get storyHousehold1Title => 'Mời hộ gia đình';
+  String get tourImport2Title => 'Nhập danh sách';
 
   @override
-  String get storyHousehold1Body => 'Chia sẻ mã hoặc liên kết mời. Mỗi người đăng nhập bằng tài khoản riêng.';
+  String get tourImport2Body => 'Đã có bảng tính? Nhập vào và kiểm tra từng dòng trước khi lưu.';
 
   @override
-  String get storyHousehold2Title => 'Một bộ mục chung';
+  String get tourImport3Title => 'Chia sẻ vào Vaultara';
 
   @override
-  String get storyHousehold2Body => 'Mọi người thấy cùng các mục chung và nhận cùng lời nhắc.';
+  String get tourImport3Body => 'Chia sẻ ảnh, PDF hoặc văn bản từ ứng dụng khác vào Vaultara để bắt đầu mục mới.';
 
   @override
-  String get storyHousehold3Title => 'Của ai?';
+  String get tourCosts1Title => 'Trong lịch của bạn';
 
   @override
-  String get storyHousehold3Body => 'Mỗi mục có thể thuộc về ai đó. Tên của họ hiện trên mục và trong lời nhắc.';
+  String get tourCosts1Body => 'Thêm ngày hết hạn vào lịch điện thoại, cạnh các kế hoạch khác của bạn.';
 
   @override
-  String get storyImport1Title => 'Quét thẻ';
+  String get tourCosts2Title => 'Chi phí gia hạn';
 
   @override
-  String get storyImport1Body => 'Chụp ảnh thẻ hoặc giấy tờ và Vaultara điền tên và ngày hết hạn giúp bạn.';
+  String get tourCosts2Body => 'Nhập chi phí gia hạn vào mục và Vaultara cho thấy bạn chi bao nhiêu mỗi năm.';
 
   @override
-  String get storyImport2Title => 'Nhập danh sách';
+  String get tourCosts3Title => 'Lên kế hoạch trước';
 
   @override
-  String get storyImport2Body => 'Đã có bảng tính? Nhập vào và kiểm tra từng dòng trước khi lưu.';
+  String get tourCosts3Body => 'Thấy trước những tháng tốn kém để một lần gia hạn lớn không bao giờ làm bạn bất ngờ.';
 
   @override
-  String get storyImport3Title => 'Chia sẻ vào Vaultara';
+  String get tourBusiness1Title => 'Theo dõi đội ngũ';
 
   @override
-  String get storyImport3Body => 'Chia sẻ ảnh, PDF hoặc văn bản từ ứng dụng khác vào Vaultara để bắt đầu mục mới.';
+  String get tourBusiness1Body => 'Thêm nhân viên và giữ chứng chỉ, giấy phép và bằng cấp của họ ở một nơi.';
 
   @override
-  String get storyCosts1Title => 'Trong lịch của bạn';
+  String get tourBusiness2Title => 'Nhắc qua email';
 
   @override
-  String get storyCosts1Body => 'Thêm ngày hết hạn vào lịch điện thoại, cạnh các kế hoạch khác của bạn.';
+  String get tourBusiness2Body => 'Nhân viên nhận email trước khi giấy tờ hết hạn, kể cả khi không có ứng dụng.';
 
   @override
-  String get storyCosts2Title => 'Chi phí gia hạn';
+  String get tourBusiness3Title => 'Báo cáo hằng tháng';
 
   @override
-  String get storyCosts2Body => 'Nhập chi phí gia hạn vào mục và Vaultara cho thấy bạn chi bao nhiêu mỗi năm.';
+  String get tourBusiness3Body => 'Mỗi tháng một báo cáo cho thấy gì còn hiệu lực, gì sắp hết hạn và gì còn thiếu.';
 
   @override
-  String get storyCosts3Title => 'Lên kế hoạch trước';
+  String get tourBusiness4Title => 'Yêu cầu cập nhật';
 
   @override
-  String get storyCosts3Body => 'Thấy trước những tháng tốn kém để một lần gia hạn lớn không bao giờ làm bạn bất ngờ.';
-
-  @override
-  String get storyBusiness1Title => 'Theo dõi đội ngũ';
-
-  @override
-  String get storyBusiness1Body => 'Thêm nhân viên và giữ chứng chỉ, giấy phép và bằng cấp của họ ở một nơi.';
-
-  @override
-  String get storyBusiness2Title => 'Nhắc qua email';
-
-  @override
-  String get storyBusiness2Body => 'Nhân viên nhận email trước khi giấy tờ hết hạn, kể cả khi không có ứng dụng.';
-
-  @override
-  String get storyBusiness3Title => 'Báo cáo hằng tháng';
-
-  @override
-  String get storyBusiness3Body => 'Mỗi tháng một báo cáo cho thấy gì còn hiệu lực, gì sắp hết hạn và gì còn thiếu.';
-
-  @override
-  String get storyBusiness4Title => 'Yêu cầu cập nhật';
-
-  @override
-  String get storyBusiness4Body => 'Gửi liên kết và nhân viên tự tải lên giấy tờ đã gia hạn.';
+  String get tourBusiness4Body => 'Gửi liên kết và nhân viên tự tải lên giấy tờ đã gia hạn.';
 
   @override
   String get categoryHealthAndMedical => 'Sức khỏe và y tế';

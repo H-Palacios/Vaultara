@@ -80,7 +80,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
       ..register(TutorialStep.smartLostWallet, _lostWalletKey)
       ..register(TutorialStep.smartLifeEvents, _lifeEventsKey)
       ..register(TutorialStep.smartProofPack, _proofPackKey)
-      ..register(TutorialStep.smartSharedLinks, _sharedLinksKey);
+      ..register(TutorialStep.smartSharedLinks, _sharedLinksKey)
+      ..register(TutorialStep.shareProofPack, _proofPackKey)
+      ..register(TutorialStep.shareLinks, _sharedLinksKey);
     AvatarRepository.ensureStarted();
     _load();
     DisplayCurrency.load();
@@ -93,7 +95,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
       ..unregister(TutorialStep.smartLostWallet, _lostWalletKey)
       ..unregister(TutorialStep.smartLifeEvents, _lifeEventsKey)
       ..unregister(TutorialStep.smartProofPack, _proofPackKey)
-      ..unregister(TutorialStep.smartSharedLinks, _sharedLinksKey);
+      ..unregister(TutorialStep.smartSharedLinks, _sharedLinksKey)
+      ..unregister(TutorialStep.shareProofPack, _proofPackKey)
+      ..unregister(TutorialStep.shareLinks, _sharedLinksKey);
     super.dispose();
   }
 

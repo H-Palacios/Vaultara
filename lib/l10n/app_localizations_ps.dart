@@ -7781,290 +7781,262 @@ class AppLocalizationsPs extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => 'د کور بدلول، ماشوم، نوې دنده یا بیړنی حالت؟ د ژوند پېښې تاسو ته ستاسو د ریکارډونو، ګامونو او نیټو سره پلان درکوي.';
 
   @override
-  String get storySampleQuestion => 'سږکال څه پای ته رسېږي؟';
+  String get tourHome1Title => 'ستاسو ورځ په یوه نظر';
 
   @override
-  String storySampleAnswer(String name) {
-    return 'ستاسو $name په مارچ کې پای ته رسېږي. یوه میاشت مخکې یادونه غواړئ؟';
-  }
+  String get tourHome1Body => 'کور سکرین ښیي چې نن څه مهم دي: څه ژر پای ته رسېږي او څومره ریکارډونه لرئ.';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name په ۳۰ ورځو کې پای ته رسېږي. د نوي کولو لپاره ټک وکړئ.';
-  }
+  String get tourHome2Title => 'هر څه ومومئ';
 
   @override
-  String get storySampleGym => 'د جم غړیتوب';
+  String get tourHome2Body => 'د نوم، ډلې یا کس له مخې د ریکارډ موندلو لپاره لټون ټک کړئ.';
 
   @override
-  String get storySampleFirstAid => 'د لومړنیو مرستو سند';
+  String get tourHome3Title => 'سفرونه او پلانونه';
 
   @override
-  String get storySampleEncrypt => 'عکسونه کوډ کړئ';
+  String get tourHome3Body => 'هغه سفرونه چې پلانوئ یې او روان د ژوند پېښو پلانونه، د پاتې کارونو سره، دلته ښکاري.';
 
   @override
-  String get storySampleAppLock => 'د اپ قلف';
+  String get tourHome4Title => 'مرسته په یو ټک';
 
   @override
-  String get storySampleHideApp => 'د اپونو په بدلوونکي کې منځپانګه پټه کړئ';
+  String get tourHome4Body => 'د سپرغۍ تڼۍ «له Vaultara وپوښتئ» پرانیزي. ستاسو عکس پروفایل، ترتیبات او زده کړې پرانیزي.';
 
   @override
-  String get storyHome1Title => 'ستاسو ورځ په یوه نظر';
+  String get tourRenew1Title => 'یادونه راځي';
 
   @override
-  String get storyHome1Body => 'کور سکرین ښیي چې نن څه مهم دي: څه ژر پای ته رسېږي او څومره ریکارډونه لرئ.';
+  String get tourRenew1Body => 'مخکې له دې چې ریکارډ پای ته ورسېږي، Vaultara تاسو ته یادونه کوي. د ریکارډ پرانیستلو لپاره یادونه ټک کړئ.';
 
   @override
-  String get storyHome2Title => 'هر څه ومومئ';
+  String get tourRenew2Title => 'نوې نیټه خوندي کړئ';
 
   @override
-  String get storyHome2Body => 'د نوم، ډلې یا کس له مخې د ریکارډ موندلو لپاره لټون ټک کړئ.';
+  String get tourRenew2Body => 'نوی مو کړ؟ د پای نوې نیټه دلته وټاکئ او خوندي یې کړئ. یادونې نوې نیټې ته ځي.';
 
   @override
-  String get storyHome3Title => 'سفرونه او پلانونه';
+  String get tourRenew3Title => 'ډاډه نه یاست څنګه؟';
 
   @override
-  String get storyHome3Body => 'هغه سفرونه چې پلانوئ یې او روان د ژوند پېښو پلانونه، د پاتې کارونو سره، دلته ښکاري.';
+  String get tourRenew3Body => 'ډېری ریکارډونه د نوي کولو چک لیست لري. له Vaultara وپوښتئ ستاسو د هېواد ګامونه له رسمي لینکونو سره موندلی شي.';
 
   @override
-  String get storyHome4Title => 'مرسته په یو ټک';
+  String get tourRenew4Title => 'پرېږدئ چې تکرار شي';
 
   @override
-  String get storyHome4Body => 'د سپرغۍ تڼۍ «له Vaultara وپوښتئ» پرانیزي. ستاسو عکس پروفایل، ترتیبات او زده کړې پرانیزي.';
+  String get tourRenew4Body => 'د ګډون او کلنیو تادیاتو لپاره پخپله نوي کېږي فعال کړئ او نېټه به پخپله مخ ته ولاړه شي.';
 
   @override
-  String get storyRenew1Title => 'یادونه راځي';
+  String get tourAsk1Title => 'په خپلو ټکو وپوښتئ';
 
   @override
-  String get storyRenew1Body => 'مخکې له دې چې ریکارډ پای ته ورسېږي، Vaultara تاسو ته یادونه کوي. د ریکارډ پرانیستلو لپاره یادونه ټک کړئ.';
+  String get tourAsk1Body => 'لکه «سږکال څه پای ته رسېږي؟» وپوښتئ او له خپلو ریکارډونو ځواب ترلاسه کړئ.';
 
   @override
-  String get storyRenew2Title => 'نوې نیټه خوندي کړئ';
+  String get tourAsk2Title => 'د لیکلو پر ځای خبرې وکړئ';
 
   @override
-  String get storyRenew2Body => 'نوی مو کړ؟ «نوی کړئ» ټک کړئ او د پای نوې نیټه ولیکئ. یادونې ورسره ځي.';
+  String get tourAsk2Body => 'مایکروفون ټک کړئ او خبرې وکړئ. ستاسو ټکي د خبرو پر مهال ښکاري او سمدستي لېږلی شئ.';
 
   @override
-  String get storyRenew3Title => 'ډاډه نه یاست څنګه؟';
+  String get tourAsk3Title => 'هر بدلون تاسو تاییدوئ';
 
   @override
-  String get storyRenew3Body => 'ډېری ریکارډونه د نوي کولو چک لیست لري. له Vaultara وپوښتئ ستاسو د هېواد ګامونه له رسمي لینکونو سره موندلی شي.';
+  String get tourAsk3Body => 'د ریکارډ اضافه کولو یا بدلولو غوښتنه وکړئ، لومړی به یو کارت ووینئ. تر تایید پورې هېڅ نه خوندي کېږي.';
 
   @override
-  String get storyRenew4Title => 'پرېږدئ چې تکرار شي';
+  String get tourAsk4Title => 'هر بدلون بېرته واخلئ';
 
   @override
-  String get storyRenew4Body => 'د ګډون او کلنیو تادیاتو لپاره پخپله نوي کېږي فعال کړئ او نېټه به پخپله مخ ته ولاړه شي.';
+  String get tourAsk4Body => 'نظر مو بدل شو؟ هر تایید شوی بدلون له همغه کارت بېرته اخیستل کېدی شي.';
 
   @override
-  String get storyAsk1Title => 'په خپلو ټکو وپوښتئ';
+  String get tourAsk5Title => 'له هماغه ځایه دوام ورکړئ';
 
   @override
-  String get storyAsk1Body => 'لکه «سږکال څه پای ته رسېږي؟» وپوښتئ او له خپلو ریکارډونو ځواب ترلاسه کړئ.';
+  String get tourAsk5Body => 'چیټونه ۹۰ ورځې په «د خبرو اترو تاریخچه» کې ساتل کېږي، او وړاندیز شوې پوښتنې د پیل کولو کې مرسته کوي.';
 
   @override
-  String get storyAsk2Title => 'د لیکلو پر ځای خبرې وکړئ';
+  String get tourAsk6Title => 'له ریکارډونو ډېر';
 
   @override
-  String get storyAsk2Body => 'مایکروفون ټک کړئ او خبرې وکړئ. ستاسو ټکي د خبرو پر مهال ښکاري او سمدستي لېږلی شئ.';
+  String get tourAsk6Body => 'دا کولی شي سفر پلان کړي، خلک زیات کړي، ستاسو د هېواد د نوي کولو ګامونه ومومي او ریکارډونه شریک کړي، د رسمي پاڼو له لینکونو سره.';
 
   @override
-  String get storyAsk3Title => 'هر بدلون تاسو تاییدوئ';
+  String get tourWallet1Title => 'لومړی چمتو شئ';
 
   @override
-  String get storyAsk3Body => 'د ریکارډ اضافه کولو یا بدلولو غوښتنه وکړئ، لومړی به یو کارت ووینئ. تر تایید پورې هېڅ نه خوندي کېږي.';
+  String get tourWallet1Body => 'کارت یا سند پرانیزئ او وټاکئ چیرې یې ساتئ، لکه بټوه یا بکس.';
 
   @override
-  String get storyAsk4Title => 'هر بدلون بېرته واخلئ';
+  String get tourWallet2Title => 'د بندولو شمېره خوندي کړئ';
 
   @override
-  String get storyAsk4Body => 'نظر مو بدل شو؟ هر تایید شوی بدلون له همغه کارت بېرته اخیستل کېدی شي.';
+  String get tourWallet2Body => 'همدا اوس د هر بانک د بندولو شمېره اضافه کړئ. دا په کارت لیکل شوې، کوم چې د اړتیا پر وخت به درسره نه وي.';
 
   @override
-  String get storyAsk5Title => 'له هماغه ځایه دوام ورکړئ';
+  String get tourWallet3Title => 'که ورک شو';
 
   @override
-  String get storyAsk5Body => 'چیټونه ۹۰ ورځې په «د خبرو اترو تاریخچه» کې ساتل کېږي، او وړاندیز شوې پوښتنې د پیل کولو کې مرسته کوي.';
+  String get tourWallet3Body => 'که مو بټوه ورکه شي، دلته مناسب تڼۍ ټک کړئ. Vaultara هر هغه څه ښيي چې دننه وو، ترڅو پوه شئ چې څه بند کړئ.';
 
   @override
-  String get storyAsk6Title => 'له ریکارډونو ډېر';
+  String get tourWallet4Title => 'په دقیقو کې کارتونه بند کړئ';
 
   @override
-  String get storyAsk6Body => 'دا کولی شي سفر پلان کړي، خلک زیات کړي، ستاسو د هېواد د نوي کولو ګامونه ومومي او ریکارډونه شریک کړي، د رسمي پاڼو له لینکونو سره.';
+  String get tourWallet4Body => 'په یو ټک هر بانک ته زنګ ووهئ، کارتونه بند شوي نښه کړئ او د راپور شمېره خوندي کړئ.';
 
   @override
-  String get storyWallet1Title => 'لومړی چمتو شئ';
+  String get tourWallet5Title => 'بدل یې کړئ او خوندي اوسئ';
 
   @override
-  String get storyWallet1Body => 'کارت یا سند پرانیزئ او وټاکئ چیرې یې ساتئ، لکه بټوه یا بکس.';
+  String get tourWallet5Body => 'اسناد بدل کړئ، د یادونې پر مهال صورت حسابونه وګورئ او که پیدا شو «ومې موندله» ټک کړئ.';
 
   @override
-  String get storyWallet2Title => 'د بندولو شمېره خوندي کړئ';
+  String get tourLife1Title => 'لوې شېبې، یو پلان';
 
   @override
-  String get storyWallet2Body => 'همدا اوس د هر بانک د بندولو شمېره اضافه کړئ. دا په کارت لیکل شوې، کوم چې د اړتیا پر وخت به درسره نه وي.';
+  String get tourLife1Body => 'د کور بدلول، ماشوم، نوې دنده یا بیړنی حالت: په «د ژوند پېښې» کې وټاکئ چې څه پېښېږي.';
 
   @override
-  String get storyWallet3Title => 'که ورک شو';
+  String get tourLife2Title => 'ستاسو ریکارډونه منظم';
 
   @override
-  String get storyWallet3Body => 'ورک یا غلا شوی پرانیزئ او ورک یا غلا شوی وټاکئ. Vaultara هر هغه څه ښیي چې دننه وو.';
+  String get tourLife2Body => 'پلان ښیي چې کوم ریکارډونه تازه، لغوه یا نوي کړئ، او کوم شاید اضافه کړئ.';
 
   @override
-  String get storyWallet4Title => 'په دقیقو کې کارتونه بند کړئ';
+  String get tourLife3Title => 'ګامونه او نیټې';
 
   @override
-  String get storyWallet4Body => 'په یو ټک هر بانک ته زنګ ووهئ، کارتونه بند شوي نښه کړئ او د راپور شمېره خوندي کړئ.';
+  String get tourLife3Body => 'هر پلان داسې ګامونه هم لري چې ریکارډ نه دي، او د پیل نیټې چې وایي کله غوښتنه وکړئ ترڅو هیڅ شی ناوخته نه شي.';
 
   @override
-  String get storyWallet5Title => 'بدل یې کړئ او خوندي اوسئ';
+  String get tourLife4Title => 'خپل یې کړئ';
 
   @override
-  String get storyWallet5Body => 'اسناد بدل کړئ، د یادونې پر مهال صورت حسابونه وګورئ او که پیدا شو «ومې موندله» ټک کړئ.';
+  String get tourLife4Body => 'خپل ګامونه اضافه کړئ، پلان د PDF په توګه شریک کړئ او د نیټې شاوخوا یادونې ترلاسه کړئ.';
 
   @override
-  String get storyLife1Title => 'لوې شېبې، یو پلان';
+  String get tourPhotos1Title => 'ستاسو د اسنادو عکسونه';
 
   @override
-  String get storyLife1Body => 'د کور بدلول، ماشوم، نوې دنده یا بیړنی حالت: په «د ژوند پېښې» کې وټاکئ چې څه پېښېږي.';
+  String get tourPhotos1Body => 'له ریکارډ څخه د کارت یا سند د مخ او شا عکسونه اضافه کړئ.';
 
   @override
-  String get storyLife2Title => 'ستاسو ریکارډونه منظم';
+  String get tourPhotos2Title => 'په تلیفون کې کوډ شوي';
 
   @override
-  String get storyLife2Body => 'پلان ښیي چې کوم ریکارډونه تازه، لغوه یا نوي کړئ، او کوم شاید اضافه کړئ.';
+  String get tourPhotos2Body => 'د عکس کوډ کول چالان کړئ، عکسونه د پورته کولو مخکې په تلیفون کې قلف کېږي.';
 
   @override
-  String get storyLife3Title => 'ګامونه او نیټې';
+  String get tourPhotos3Title => 'حساس ریکارډونه قلف کړئ';
 
   @override
-  String get storyLife3Body => 'ګامونه هغه څه پوښي چې ریکارډ نه دي، او د پیل نیټې وايي چې کله غوښتنه وکړئ ترڅو هېڅ ونه ځنډېږي.';
+  String get tourPhotos3Body => 'ریکارډ قلف کړئ، د پرانیستلو مخکې به د ګوتې نښه یا د سکرین قلف وغواړي.';
 
   @override
-  String get storyLife4Title => 'خپل یې کړئ';
+  String get tourPhotos4Title => 'ټول اپ قلف کړئ';
 
   @override
-  String get storyLife4Body => 'خپل ګامونه اضافه کړئ، پلان د PDF په توګه شریک کړئ او د نیټې شاوخوا یادونې ترلاسه کړئ.';
+  String get tourPhotos4Body => 'په امنیتي ترتیباتو کې د اپ قلف چالان کړئ او د اپ بدلولو پر مهال منځپانګه پټه کړئ.';
 
   @override
-  String get storyPhotos1Title => 'ستاسو د اسنادو عکسونه';
+  String get tourShare1Title => 'یو ریکارډ شریک کړئ';
 
   @override
-  String get storyPhotos1Body => 'له ریکارډ څخه د کارت یا سند د مخ او شا عکسونه اضافه کړئ.';
+  String get tourShare1Body => 'ریکارډ پرانیزئ او داسې لینک شریک کړئ چې یوازې هماغه ریکارډ ښیي، بل هېڅ نه.';
 
   @override
-  String get storyPhotos2Title => 'په تلیفون کې کوډ شوي';
+  String get tourShare2Title => 'د ثبوت کڅوړه';
 
   @override
-  String get storyPhotos2Body => 'د عکس کوډ کول چالان کړئ، عکسونه د پورته کولو مخکې په تلیفون کې قلف کېږي.';
+  String get tourShare2Body => 'ټاکل شوي ریکارډونه د عکسونو سره د کور خاوند، بانک یا دفتر لپاره په یو PDF کې راټول کړئ.';
 
   @override
-  String get storyPhotos3Title => 'حساس ریکارډونه قلف کړئ';
+  String get tourShare3Title => 'کنټرول ستاسو په لاس';
 
   @override
-  String get storyPhotos3Body => 'ریکارډ قلف کړئ، د پرانیستلو مخکې به د ګوتې نښه یا د سکرین قلف وغواړي.';
+  String get tourShare3Body => '«شریک شوي لینکونه» هر هغه لینک ښیي چې تاسو جوړ کړی. هر یو هر وخت ودروئ او نور به نه پرانیستل کېږي.';
 
   @override
-  String get storyPhotos4Title => 'ټول اپ قلف کړئ';
+  String get tourHousehold1Title => 'خپله کورنۍ راوبلئ';
 
   @override
-  String get storyPhotos4Body => 'په امنیتي ترتیباتو کې د اپ قلف چالان کړئ او د اپ بدلولو پر مهال منځپانګه پټه کړئ.';
+  String get tourHousehold1Body => 'د بلنې کوډ یا لینک شریک کړئ. هر څوک په خپل حساب ننوځي.';
 
   @override
-  String get storyShare1Title => 'یو ریکارډ شریک کړئ';
+  String get tourHousehold2Title => 'د ریکارډونو یوه ټولګه';
 
   @override
-  String get storyShare1Body => 'ریکارډ پرانیزئ او داسې لینک شریک کړئ چې یوازې هماغه ریکارډ ښیي، بل هېڅ نه.';
+  String get tourHousehold2Body => 'ټول یو شان ګډ ریکارډونه ویني او یو شان یادونې ترلاسه کوي.';
 
   @override
-  String get storyShare2Title => 'د ثبوت کڅوړه';
+  String get tourHousehold3Title => 'د چا دی؟';
 
   @override
-  String get storyShare2Body => 'ټاکل شوي ریکارډونه د عکسونو سره د کور خاوند، بانک یا دفتر لپاره په یو PDF کې راټول کړئ.';
+  String get tourHousehold3Body => 'هر ریکارډ د یو چا کېدی شي. نوم یې په ریکارډ او یادونو کې ښکاري.';
 
   @override
-  String get storyShare3Title => 'کنټرول ستاسو په لاس';
+  String get tourImport1Title => 'کارت سکین کړئ';
 
   @override
-  String get storyShare3Body => '«شریک شوي لینکونه» هر هغه لینک ښیي چې تاسو جوړ کړی. هر یو هر وخت ودروئ او نور به نه پرانیستل کېږي.';
+  String get tourImport1Body => 'د کارت یا سند عکس واخلئ او Vaultara به نوم او د پای نیټه درته ډکه کړي.';
 
   @override
-  String get storyHousehold1Title => 'خپله کورنۍ راوبلئ';
+  String get tourImport2Title => 'لیست وارد کړئ';
 
   @override
-  String get storyHousehold1Body => 'د بلنې کوډ یا لینک شریک کړئ. هر څوک په خپل حساب ننوځي.';
+  String get tourImport2Body => 'مخکې مو سپریډشیټ لرئ؟ وارد یې کړئ او د خوندي کولو مخکې هر قطار وګورئ.';
 
   @override
-  String get storyHousehold2Title => 'د ریکارډونو یوه ټولګه';
+  String get tourImport3Title => 'Vaultara ته شریک کړئ';
 
   @override
-  String get storyHousehold2Body => 'ټول یو شان ګډ ریکارډونه ویني او یو شان یادونې ترلاسه کوي.';
+  String get tourImport3Body => 'د نوي ریکارډ پیلولو لپاره له بل اپ څخه عکس، PDF یا متن Vaultara ته شریک کړئ.';
 
   @override
-  String get storyHousehold3Title => 'د چا دی؟';
+  String get tourCosts1Title => 'ستاسو په جنتري کې';
 
   @override
-  String get storyHousehold3Body => 'هر ریکارډ د یو چا کېدی شي. نوم یې په ریکارډ او یادونو کې ښکاري.';
+  String get tourCosts1Body => 'د پای نیټې د خپلو نورو پلانونو تر څنګ د تلیفون جنتري ته اضافه کړئ.';
 
   @override
-  String get storyImport1Title => 'کارت سکین کړئ';
+  String get tourCosts2Title => 'د نوي کولو لګښت';
 
   @override
-  String get storyImport1Body => 'د کارت یا سند عکس واخلئ او Vaultara به نوم او د پای نیټه درته ډکه کړي.';
+  String get tourCosts2Body => 'په ریکارډ کې د نوي کولو لګښت ولیکئ او Vaultara به وښیي چې په کال کې څومره لګوئ.';
 
   @override
-  String get storyImport2Title => 'لیست وارد کړئ';
+  String get tourCosts3Title => 'مخکې پلان جوړ کړئ';
 
   @override
-  String get storyImport2Body => 'مخکې مو سپریډشیټ لرئ؟ وارد یې کړئ او د خوندي کولو مخکې هر قطار وګورئ.';
+  String get tourCosts3Body => 'ګران میاشتې مخکې له مخکې ووینئ ترڅو یو لوی نوي کول مو هېڅکله حیران نه کړي.';
 
   @override
-  String get storyImport3Title => 'Vaultara ته شریک کړئ';
+  String get tourBusiness1Title => 'خپله ډله وڅارئ';
 
   @override
-  String get storyImport3Body => 'د نوي ریکارډ پیلولو لپاره له بل اپ څخه عکس، PDF یا متن Vaultara ته شریک کړئ.';
+  String get tourBusiness1Body => 'کارکوونکي اضافه کړئ او د هغوی سندونه، اجازې او جوازونه په یو ځای کې وساتئ.';
 
   @override
-  String get storyCosts1Title => 'ستاسو په جنتري کې';
+  String get tourBusiness2Title => 'د برېښنالیک یادونې';
 
   @override
-  String get storyCosts1Body => 'د پای نیټې د خپلو نورو پلانونو تر څنګ د تلیفون جنتري ته اضافه کړئ.';
+  String get tourBusiness2Body => 'کارکوونکي د اسنادو له پای ته رسېدو مخکې برېښنالیک ترلاسه کوي، حتی له اپ پرته.';
 
   @override
-  String get storyCosts2Title => 'د نوي کولو لګښت';
+  String get tourBusiness3Title => 'میاشتنی راپور';
 
   @override
-  String get storyCosts2Body => 'په ریکارډ کې د نوي کولو لګښت ولیکئ او Vaultara به وښیي چې په کال کې څومره لګوئ.';
+  String get tourBusiness3Body => 'هره میاشت یو راپور ښیي چې څه اعتبار لري، څه پای ته رسېږي او څه کم دي.';
 
   @override
-  String get storyCosts3Title => 'مخکې پلان جوړ کړئ';
+  String get tourBusiness4Title => 'د تازه کولو غوښتنه وکړئ';
 
   @override
-  String get storyCosts3Body => 'ګران میاشتې مخکې له مخکې ووینئ ترڅو یو لوی نوي کول مو هېڅکله حیران نه کړي.';
-
-  @override
-  String get storyBusiness1Title => 'خپله ډله وڅارئ';
-
-  @override
-  String get storyBusiness1Body => 'کارکوونکي اضافه کړئ او د هغوی سندونه، اجازې او جوازونه په یو ځای کې وساتئ.';
-
-  @override
-  String get storyBusiness2Title => 'د برېښنالیک یادونې';
-
-  @override
-  String get storyBusiness2Body => 'کارکوونکي د اسنادو له پای ته رسېدو مخکې برېښنالیک ترلاسه کوي، حتی له اپ پرته.';
-
-  @override
-  String get storyBusiness3Title => 'میاشتنی راپور';
-
-  @override
-  String get storyBusiness3Body => 'هره میاشت یو راپور ښیي چې څه اعتبار لري، څه پای ته رسېږي او څه کم دي.';
-
-  @override
-  String get storyBusiness4Title => 'د تازه کولو غوښتنه وکړئ';
-
-  @override
-  String get storyBusiness4Body => 'لینک ولېږئ او کارکوونکی به پخپله نوی شوی سند پورته کړي.';
+  String get tourBusiness4Body => 'لینک ولېږئ او کارکوونکی به پخپله نوی شوی سند پورته کړي.';
 
   @override
   String get categoryHealthAndMedical => 'روغتیا او طبي';

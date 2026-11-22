@@ -7785,290 +7785,262 @@ class AppLocalizationsNl extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => 'Verhuizen, een baby, een nieuwe baan of een noodgeval? Levensgebeurtenissen geeft je een plan met je items, stappen en data.';
 
   @override
-  String get storySampleQuestion => 'Wat verloopt er dit jaar?';
+  String get tourHome1Title => 'Je dag in één oogopslag';
 
   @override
-  String storySampleAnswer(String name) {
-    return 'Je $name verloopt in maart. Wil je een maand van tevoren een herinnering?';
-  }
+  String get tourHome1Body => 'Het startscherm toont wat er vandaag toe doet: wat binnenkort verloopt en hoeveel items je hebt.';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name verloopt over 30 dagen. Tik om te verlengen.';
-  }
+  String get tourHome2Title => 'Alles vinden';
 
   @override
-  String get storySampleGym => 'Sportschoolabonnement';
+  String get tourHome2Body => 'Tik op zoeken om een item te vinden op naam, groep of persoon.';
 
   @override
-  String get storySampleFirstAid => 'EHBO-certificaat';
+  String get tourHome3Title => 'Reizen en plannen';
 
   @override
-  String get storySampleEncrypt => 'Foto\'s versleutelen';
+  String get tourHome3Body => 'Reizen die je plant en lopende plannen voor levensgebeurtenissen staan hier, met wat er nog moet.';
 
   @override
-  String get storySampleAppLock => 'App-vergrendeling';
+  String get tourHome4Title => 'Hulp met één tik';
 
   @override
-  String get storySampleHideApp => 'Inhoud verbergen in de app-wisselaar';
+  String get tourHome4Body => 'De glinsterknop opent ‘Vraag Vaultara’. Je foto opent je profiel, instellingen en tutorials.';
 
   @override
-  String get storyHome1Title => 'Je dag in één oogopslag';
+  String get tourRenew1Title => 'Er komt een herinnering';
 
   @override
-  String get storyHome1Body => 'Het startscherm toont wat er vandaag toe doet: wat binnenkort verloopt en hoeveel items je hebt.';
+  String get tourRenew1Body => 'Voordat een item verloopt, herinnert Vaultara je eraan. Tik op de herinnering om het item te openen.';
 
   @override
-  String get storyHome2Title => 'Alles vinden';
+  String get tourRenew2Title => 'De nieuwe datum opslaan';
 
   @override
-  String get storyHome2Body => 'Tik op zoeken om een item te vinden op naam, groep of persoon.';
+  String get tourRenew2Body => 'Verlengd? Kies hier de nieuwe vervaldatum en sla op. Je herinneringen verhuizen naar de nieuwe datum.';
 
   @override
-  String get storyHome3Title => 'Reizen en plannen';
+  String get tourRenew3Title => 'Niet zeker hoe?';
 
   @override
-  String get storyHome3Body => 'Reizen die je plant en lopende plannen voor levensgebeurtenissen staan hier, met wat er nog moet.';
+  String get tourRenew3Body => 'Veel items hebben een checklist voor verlengen. Vraag Vaultara kan de stappen voor je land vinden, met officiële links.';
 
   @override
-  String get storyHome4Title => 'Hulp met één tik';
+  String get tourRenew4Title => 'Laat het herhalen';
 
   @override
-  String get storyHome4Body => 'De glinsterknop opent ‘Vraag Vaultara’. Je foto opent je profiel, instellingen en tutorials.';
+  String get tourRenew4Body => 'Zet voor abonnementen en jaarlijkse betalingen Verlengt zichzelf aan, dan schuift de datum vanzelf op.';
 
   @override
-  String get storyRenew1Title => 'Er komt een herinnering';
+  String get tourAsk1Title => 'Vraag het in je eigen woorden';
 
   @override
-  String get storyRenew1Body => 'Voordat een item verloopt, herinnert Vaultara je eraan. Tik op de herinnering om het item te openen.';
+  String get tourAsk1Body => 'Vraag bijvoorbeeld ‘Wat verloopt er dit jaar?’ en krijg antwoorden uit je eigen items.';
 
   @override
-  String get storyRenew2Title => 'De nieuwe datum opslaan';
+  String get tourAsk2Title => 'Praten in plaats van typen';
 
   @override
-  String get storyRenew2Body => 'Verlengd? Tik op ‘Vernieuwen’ en vul de nieuwe vervaldatum in. Je herinneringen schuiven mee.';
+  String get tourAsk2Body => 'Tik op de microfoon en praat. Je woorden verschijnen terwijl je praat en je kunt meteen versturen.';
 
   @override
-  String get storyRenew3Title => 'Niet zeker hoe?';
+  String get tourAsk3Title => 'Jij bevestigt elke wijziging';
 
   @override
-  String get storyRenew3Body => 'Veel items hebben een checklist voor verlengen. Vraag Vaultara kan de stappen voor je land vinden, met officiële links.';
+  String get tourAsk3Body => 'Vraag om een item toe te voegen of te wijzigen en je ziet eerst een kaart. Er wordt niets opgeslagen tot je bevestigt.';
 
   @override
-  String get storyRenew4Title => 'Laat het herhalen';
+  String get tourAsk4Title => 'Elke wijziging ongedaan maken';
 
   @override
-  String get storyRenew4Body => 'Zet voor abonnementen en jaarlijkse betalingen Verlengt zichzelf aan, dan schuift de datum vanzelf op.';
+  String get tourAsk4Body => 'Toch anders besloten? Elke bevestigde wijziging kun je op dezelfde kaart ongedaan maken.';
 
   @override
-  String get storyAsk1Title => 'Vraag het in je eigen woorden';
+  String get tourAsk5Title => 'Verder waar je was';
 
   @override
-  String get storyAsk1Body => 'Vraag bijvoorbeeld ‘Wat verloopt er dit jaar?’ en krijg antwoorden uit je eigen items.';
+  String get tourAsk5Body => 'Chats blijven 90 dagen in ‘Chatgeschiedenis’ en voorgestelde vragen helpen je op weg.';
 
   @override
-  String get storyAsk2Title => 'Praten in plaats van typen';
+  String get tourAsk6Title => 'Meer dan items';
 
   @override
-  String get storyAsk2Body => 'Tik op de microfoon en praat. Je woorden verschijnen terwijl je praat en je kunt meteen versturen.';
+  String get tourAsk6Body => 'Het kan ook reizen plannen, personen toevoegen, de verlengingsstappen voor je land vinden en items delen, met links naar officiële pagina\'s.';
 
   @override
-  String get storyAsk3Title => 'Jij bevestigt elke wijziging';
+  String get tourWallet1Title => 'Eerst voorbereiden';
 
   @override
-  String get storyAsk3Body => 'Vraag om een item toe te voegen of te wijzigen en je ziet eerst een kaart. Er wordt niets opgeslagen tot je bevestigt.';
+  String get tourWallet1Body => 'Open een pas of document en kies waar je het bewaart, zoals je portemonnee of tas.';
 
   @override
-  String get storyAsk4Title => 'Elke wijziging ongedaan maken';
+  String get tourWallet2Title => 'Het blokkeernummer opslaan';
 
   @override
-  String get storyAsk4Body => 'Toch anders besloten? Elke bevestigde wijziging kun je op dezelfde kaart ongedaan maken.';
+  String get tourWallet2Body => 'Voeg nu het blokkeernummer van elke bank toe. Het staat op de pas, en die ben je kwijt als je het nodig hebt.';
 
   @override
-  String get storyAsk5Title => 'Verder waar je was';
+  String get tourWallet3Title => 'Als hij kwijt is';
 
   @override
-  String get storyAsk5Body => 'Chats blijven 90 dagen in ‘Chatgeschiedenis’ en voorgestelde vragen helpen je op weg.';
+  String get tourWallet3Body => 'Ben je je portemonnee kwijt, tik hier dan op de knop die past. Vaultara laat alles zien wat erin zat, zodat je weet wat je moet blokkeren.';
 
   @override
-  String get storyAsk6Title => 'Meer dan items';
+  String get tourWallet4Title => 'Passen blokkeren in minuten';
 
   @override
-  String get storyAsk6Body => 'Het kan ook reizen plannen, personen toevoegen, de verlengingsstappen voor je land vinden en items delen, met links naar officiële pagina\'s.';
+  String get tourWallet4Body => 'Bel elke bank met één tik, markeer passen als geblokkeerd en bewaar het nummer van de aangifte.';
 
   @override
-  String get storyWallet1Title => 'Eerst voorbereiden';
+  String get tourWallet5Title => 'Vervangen en veilig blijven';
 
   @override
-  String get storyWallet1Body => 'Open een pas of document en kies waar je het bewaart, zoals je portemonnee of tas.';
+  String get tourWallet5Body => 'Vervang je documenten, controleer je afschriften als je eraan herinnerd wordt en tik op ‘Ik heb hem gevonden’ als hij opduikt.';
 
   @override
-  String get storyWallet2Title => 'Het blokkeernummer opslaan';
+  String get tourLife1Title => 'Grote momenten, één plan';
 
   @override
-  String get storyWallet2Body => 'Voeg nu het blokkeernummer van elke bank toe. Het staat op de pas, en die ben je kwijt als je het nodig hebt.';
+  String get tourLife1Body => 'Verhuizen, een baby, een nieuwe baan of een noodgeval: kies in ‘Levensgebeurtenissen’ wat er gebeurt.';
 
   @override
-  String get storyWallet3Title => 'Als hij kwijt is';
+  String get tourLife2Title => 'Je items, op orde';
 
   @override
-  String get storyWallet3Body => 'Open Verloren of gestolen en tik op Verloren of Gestolen. Vaultara toont alles wat erin zat.';
+  String get tourLife2Body => 'Het plan toont welke items je bijwerkt, opzegt of verlengt en welke je misschien moet toevoegen.';
 
   @override
-  String get storyWallet4Title => 'Passen blokkeren in minuten';
+  String get tourLife3Title => 'Stappen en data';
 
   @override
-  String get storyWallet4Body => 'Bel elke bank met één tik, markeer passen als geblokkeerd en bewaar het nummer van de aangifte.';
+  String get tourLife3Body => 'Elk plan heeft ook stappen die geen records zijn, en startdatums die zeggen wanneer je moet aanvragen, zodat niets te laat is.';
 
   @override
-  String get storyWallet5Title => 'Vervangen en veilig blijven';
+  String get tourLife4Title => 'Maak het van jou';
 
   @override
-  String get storyWallet5Body => 'Vervang je documenten, controleer je afschriften als je eraan herinnerd wordt en tik op ‘Ik heb hem gevonden’ als hij opduikt.';
+  String get tourLife4Body => 'Voeg je eigen stappen toe, deel het plan als pdf en krijg herinneringen rond de datum.';
 
   @override
-  String get storyLife1Title => 'Grote momenten, één plan';
+  String get tourPhotos1Title => 'Foto\'s van je documenten';
 
   @override
-  String get storyLife1Body => 'Verhuizen, een baby, een nieuwe baan of een noodgeval: kies in ‘Levensgebeurtenissen’ wat er gebeurt.';
+  String get tourPhotos1Body => 'Voeg vanuit het item foto\'s toe van de voor- en achterkant van een pas of document.';
 
   @override
-  String get storyLife2Title => 'Je items, op orde';
+  String get tourPhotos2Title => 'Versleuteld op je telefoon';
 
   @override
-  String get storyLife2Body => 'Het plan toont welke items je bijwerkt, opzegt of verlengt en welke je misschien moet toevoegen.';
+  String get tourPhotos2Body => 'Zet fotoversleuteling aan en foto\'s worden op je telefoon vergrendeld voordat ze worden geüpload.';
 
   @override
-  String get storyLife3Title => 'Stappen en data';
+  String get tourPhotos3Title => 'Gevoelige items vergrendelen';
 
   @override
-  String get storyLife3Body => 'Stappen dekken wat geen item is, en startdata vertellen wanneer je moet aanvragen zodat niets te laat is.';
+  String get tourPhotos3Body => 'Vergrendel een item en het vraagt je vingerafdruk of schermvergrendeling voordat het opent.';
 
   @override
-  String get storyLife4Title => 'Maak het van jou';
+  String get tourPhotos4Title => 'De hele app vergrendelen';
 
   @override
-  String get storyLife4Body => 'Voeg je eigen stappen toe, deel het plan als pdf en krijg herinneringen rond de datum.';
+  String get tourPhotos4Body => 'Zet in de beveiligingsinstellingen app-vergrendeling aan en verberg de inhoud bij het wisselen van app.';
 
   @override
-  String get storyPhotos1Title => 'Foto\'s van je documenten';
+  String get tourShare1Title => 'Eén item delen';
 
   @override
-  String get storyPhotos1Body => 'Voeg vanuit het item foto\'s toe van de voor- en achterkant van een pas of document.';
+  String get tourShare1Body => 'Open een item en deel een link die alleen dat item toont, verder niets.';
 
   @override
-  String get storyPhotos2Title => 'Versleuteld op je telefoon';
+  String get tourShare2Title => 'Bewijspakket';
 
   @override
-  String get storyPhotos2Body => 'Zet fotoversleuteling aan en foto\'s worden op je telefoon vergrendeld voordat ze worden geüpload.';
+  String get tourShare2Body => 'Zet de items die je kiest, met hun foto\'s, in één pdf voor een verhuurder, bank of instantie.';
 
   @override
-  String get storyPhotos3Title => 'Gevoelige items vergrendelen';
+  String get tourShare3Title => 'Houd de controle';
 
   @override
-  String get storyPhotos3Body => 'Vergrendel een item en het vraagt je vingerafdruk of schermvergrendeling voordat het opent.';
+  String get tourShare3Body => '‘Gedeelde links’ toont elke link die je maakte. Stop er een wanneer je wilt en hij opent niet meer.';
 
   @override
-  String get storyPhotos4Title => 'De hele app vergrendelen';
+  String get tourHousehold1Title => 'Nodig je huishouden uit';
 
   @override
-  String get storyPhotos4Body => 'Zet in de beveiligingsinstellingen app-vergrendeling aan en verberg de inhoud bij het wisselen van app.';
+  String get tourHousehold1Body => 'Deel een uitnodigingscode of link. Iedereen meldt zich aan met een eigen account.';
 
   @override
-  String get storyShare1Title => 'Eén item delen';
+  String get tourHousehold2Title => 'Eén set items';
 
   @override
-  String get storyShare1Body => 'Open een item en deel een link die alleen dat item toont, verder niets.';
+  String get tourHousehold2Body => 'Iedereen ziet dezelfde gedeelde items en krijgt dezelfde herinneringen.';
 
   @override
-  String get storyShare2Title => 'Bewijspakket';
+  String get tourHousehold3Title => 'Van wie is het?';
 
   @override
-  String get storyShare2Body => 'Zet de items die je kiest, met hun foto\'s, in één pdf voor een verhuurder, bank of instantie.';
+  String get tourHousehold3Body => 'Elk item kan van iemand zijn. Diens naam staat erop en in de herinneringen.';
 
   @override
-  String get storyShare3Title => 'Houd de controle';
+  String get tourImport1Title => 'Een pas scannen';
 
   @override
-  String get storyShare3Body => '‘Gedeelde links’ toont elke link die je maakte. Stop er een wanneer je wilt en hij opent niet meer.';
+  String get tourImport1Body => 'Maak een foto van een pas of document en Vaultara vult de naam en vervaldatum voor je in.';
 
   @override
-  String get storyHousehold1Title => 'Nodig je huishouden uit';
+  String get tourImport2Title => 'Een lijst importeren';
 
   @override
-  String get storyHousehold1Body => 'Deel een uitnodigingscode of link. Iedereen meldt zich aan met een eigen account.';
+  String get tourImport2Body => 'Heb je al een spreadsheet? Importeer hem en controleer elke rij voordat er iets wordt opgeslagen.';
 
   @override
-  String get storyHousehold2Title => 'Eén set items';
+  String get tourImport3Title => 'Delen naar Vaultara';
 
   @override
-  String get storyHousehold2Body => 'Iedereen ziet dezelfde gedeelde items en krijgt dezelfde herinneringen.';
+  String get tourImport3Body => 'Deel een foto, pdf of tekst vanuit een andere app naar Vaultara om een nieuw item te beginnen.';
 
   @override
-  String get storyHousehold3Title => 'Van wie is het?';
+  String get tourCosts1Title => 'In je agenda';
 
   @override
-  String get storyHousehold3Body => 'Elk item kan van iemand zijn. Diens naam staat erop en in de herinneringen.';
+  String get tourCosts1Body => 'Zet vervaldata in de agenda van je telefoon, naast je andere plannen.';
 
   @override
-  String get storyImport1Title => 'Een pas scannen';
+  String get tourCosts2Title => 'Wat verlengingen kosten';
 
   @override
-  String get storyImport1Body => 'Maak een foto van een pas of document en Vaultara vult de naam en vervaldatum voor je in.';
+  String get tourCosts2Body => 'Vul bij een item in wat verlengen kost en Vaultara toont wat je per jaar uitgeeft.';
 
   @override
-  String get storyImport2Title => 'Een lijst importeren';
+  String get tourCosts3Title => 'Vooruit plannen';
 
   @override
-  String get storyImport2Body => 'Heb je al een spreadsheet? Importeer hem en controleer elke rij voordat er iets wordt opgeslagen.';
+  String get tourCosts3Body => 'Zie de dure maanden aankomen, zodat een grote verlenging je nooit verrast.';
 
   @override
-  String get storyImport3Title => 'Delen naar Vaultara';
+  String get tourBusiness1Title => 'Volg je team';
 
   @override
-  String get storyImport3Body => 'Deel een foto, pdf of tekst vanuit een andere app naar Vaultara om een nieuw item te beginnen.';
+  String get tourBusiness1Body => 'Voeg personeel toe en bewaar hun certificaten, vergunningen en licenties op één plek.';
 
   @override
-  String get storyCosts1Title => 'In je agenda';
+  String get tourBusiness2Title => 'Herinneringen per e-mail';
 
   @override
-  String get storyCosts1Body => 'Zet vervaldata in de agenda van je telefoon, naast je andere plannen.';
+  String get tourBusiness2Body => 'Personeel krijgt een e-mail voordat hun documenten verlopen, ook zonder de app.';
 
   @override
-  String get storyCosts2Title => 'Wat verlengingen kosten';
+  String get tourBusiness3Title => 'Maandrapport';
 
   @override
-  String get storyCosts2Body => 'Vul bij een item in wat verlengen kost en Vaultara toont wat je per jaar uitgeeft.';
+  String get tourBusiness3Body => 'Elke maand toont een rapport wat geldig is, wat verloopt en wat ontbreekt.';
 
   @override
-  String get storyCosts3Title => 'Vooruit plannen';
+  String get tourBusiness4Title => 'Een update vragen';
 
   @override
-  String get storyCosts3Body => 'Zie de dure maanden aankomen, zodat een grote verlenging je nooit verrast.';
-
-  @override
-  String get storyBusiness1Title => 'Volg je team';
-
-  @override
-  String get storyBusiness1Body => 'Voeg personeel toe en bewaar hun certificaten, vergunningen en licenties op één plek.';
-
-  @override
-  String get storyBusiness2Title => 'Herinneringen per e-mail';
-
-  @override
-  String get storyBusiness2Body => 'Personeel krijgt een e-mail voordat hun documenten verlopen, ook zonder de app.';
-
-  @override
-  String get storyBusiness3Title => 'Maandrapport';
-
-  @override
-  String get storyBusiness3Body => 'Elke maand toont een rapport wat geldig is, wat verloopt en wat ontbreekt.';
-
-  @override
-  String get storyBusiness4Title => 'Een update vragen';
-
-  @override
-  String get storyBusiness4Body => 'Stuur een link en personeel uploadt zelf het verlengde document.';
+  String get tourBusiness4Body => 'Stuur een link en personeel uploadt zelf het verlengde document.';
 
   @override
   String get categoryHealthAndMedical => 'Gezondheid en medisch';

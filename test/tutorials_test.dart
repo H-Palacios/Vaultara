@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial_ids.dart';
-import 'package:vaultara/features/tutorials/data/models/tutorial_stories.dart';
+import 'package:vaultara/features/tutorials/data/models/tutorial_step_groups.dart';
 import 'package:vaultara/features/tutorials/services/tutorials_service.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
@@ -12,8 +12,8 @@ void main() {
       expect(TutorialIds.all.toSet().length, TutorialIds.all.length);
     });
 
-    test('every story is a known tutorial', () {
-      for (final id in TutorialStories.ids) {
+    test('every screen tour is a known tutorial', () {
+      for (final id in TutorialStepGroups.screenTours.keys) {
         expect(TutorialIds.all, contains(id), reason: id);
       }
     });
@@ -41,18 +41,10 @@ void main() {
     });
   });
 
-  group('story steps', () {
-    test('every locale builds every story', () {
+  group('tutorial texts', () {
+    test('step counts and chapters read right in every locale', () {
       for (final locale in AppLocalizations.supportedLocales) {
         final l = lookupAppLocalizations(locale);
-        for (final id in TutorialStories.ids) {
-          final steps = TutorialStories.stepsFor(l, id);
-          expect(
-            steps.every((s) => s.title.isNotEmpty && s.body.isNotEmpty),
-            isTrue,
-            reason: '$locale $id',
-          );
-        }
         expect(l.tutorialsSteps(1), isNotEmpty);
         expect(l.tutorialsSteps(5), contains('5'), reason: '$locale');
         expect(

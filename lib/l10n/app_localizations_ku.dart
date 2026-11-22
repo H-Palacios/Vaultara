@@ -7781,290 +7781,262 @@ class AppLocalizationsKu extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => 'Barkirin, zarok, karekî nû an rewşek awarte? Bûyerên jiyanê planek bi tomar, gav û dîrokên te didin te.';
 
   @override
-  String get storySampleQuestion => 'Îsal çi diqede?';
+  String get tourHome1Title => 'Roja te bi nihêrînekê';
 
   @override
-  String storySampleAnswer(String name) {
-    return '${name}ya te di Adarê de diqede. Tu bîrxistinekê mehekê berê dixwazî?';
-  }
+  String get tourHome1Body => 'Ekrana sereke tiştê ku îro girîng e nîşan dide: çi zû diqede û çend tomarên te hene.';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name di 30 rojan de diqede. Ji bo nûkirinê bitikîne.';
-  }
+  String get tourHome2Title => 'Her tiştî bibîne';
 
   @override
-  String get storySampleGym => 'Endametiya werzîşgehê';
+  String get tourHome2Body => 'Lêgerînê bitikîne da ku tomarekê li gorî nav, kom an kesî bibînî.';
 
   @override
-  String get storySampleFirstAid => 'Belgeya alîkariya yekem';
+  String get tourHome3Title => 'Rêwîtî û plan';
 
   @override
-  String get storySampleEncrypt => 'Wêneyan şîfre bike';
+  String get tourHome3Body => 'Rêwîtiyên ku tu plan dikî û planên bûyerên jiyanê yên berdewam li vir xuya dibin, bi tiştên mayî re.';
 
   @override
-  String get storySampleAppLock => 'Kilîta sepanê';
+  String get tourHome4Title => 'Alîkarî bi yek destlêdanê';
 
   @override
-  String get storySampleHideApp => 'Naverokê di guherînerê sepanan de veşêre';
+  String get tourHome4Body => 'Bişkoka çirûskê «Ji Vaultara bipirse» vedike. Wêneyê te profîl, mîheng û fêrkariyan vedike.';
 
   @override
-  String get storyHome1Title => 'Roja te bi nihêrînekê';
+  String get tourRenew1Title => 'Bîrxistinek tê';
 
   @override
-  String get storyHome1Body => 'Ekrana sereke tiştê ku îro girîng e nîşan dide: çi zû diqede û çend tomarên te hene.';
+  String get tourRenew1Body => 'Berî ku tomarek biqede, Vaultara bîra te dixe. Bîrxistinê bitikîne da ku tomar vebe.';
 
   @override
-  String get storyHome2Title => 'Her tiştî bibîne';
+  String get tourRenew2Title => 'Dîroka nû tomar bike';
 
   @override
-  String get storyHome2Body => 'Lêgerînê bitikîne da ku tomarekê li gorî nav, kom an kesî bibînî.';
+  String get tourRenew2Body => 'Te nû kir? Dîroka bidawîbûnê ya nû li vir hilbijêre û tomar bike. Bîrxistin diçin ser dîroka nû.';
 
   @override
-  String get storyHome3Title => 'Rêwîtî û plan';
+  String get tourRenew3Title => 'Ne bawer î çawa?';
 
   @override
-  String get storyHome3Body => 'Rêwîtiyên ku tu plan dikî û planên bûyerên jiyanê yên berdewam li vir xuya dibin, bi tiştên mayî re.';
+  String get tourRenew3Body => 'Gelek tomar lîsteya kontrola nûkirinê hene. Ji Vaultara bipirse dikare gavên welatê te bi girêdanên fermî bibîne.';
 
   @override
-  String get storyHome4Title => 'Alîkarî bi yek destlêdanê';
+  String get tourRenew4Title => 'Bila dubare bibe';
 
   @override
-  String get storyHome4Body => 'Bişkoka çirûskê «Ji Vaultara bipirse» vedike. Wêneyê te profîl, mîheng û fêrkariyan vedike.';
+  String get tourRenew4Body => 'Ji bo abonetî û dayînên salane Xwe nû dike veke û dîrok bi xwe pêş ve diçe.';
 
   @override
-  String get storyRenew1Title => 'Bîrxistinek tê';
+  String get tourAsk1Title => 'Bi gotinên xwe bipirse';
 
   @override
-  String get storyRenew1Body => 'Berî ku tomarek biqede, Vaultara bîra te dixe. Bîrxistinê bitikîne da ku tomar vebe.';
+  String get tourAsk1Body => 'Tiştên wek «Îsal çi diqede?» bipirse û ji tomarên xwe bersivan bistîne.';
 
   @override
-  String get storyRenew2Title => 'Dîroka nû tomar bike';
+  String get tourAsk2Title => 'Li şûna nivîsandinê biaxive';
 
   @override
-  String get storyRenew2Body => 'Te nû kir? «Nû bike» bitikîne û dîroka dawîbûnê ya nû binivîse. Bîrxistin bi wê re diçin.';
+  String get tourAsk2Body => 'Mîkrofonê bitikîne û biaxive. Peyvên te dema diaxivî xuya dibin û tu dikarî yekser bişînî.';
 
   @override
-  String get storyRenew3Title => 'Ne bawer î çawa?';
+  String get tourAsk3Title => 'Tu her guhertinê piştrast dikî';
 
   @override
-  String get storyRenew3Body => 'Gelek tomar lîsteya kontrola nûkirinê hene. Ji Vaultara bipirse dikare gavên welatê te bi girêdanên fermî bibîne.';
+  String get tourAsk3Body => 'Bixwaze ku tomarek were zêdekirin an guhertin û tu pêşî kartekê dibînî. Heta tu piştrast nekî tiştek nayê tomarkirin.';
 
   @override
-  String get storyRenew4Title => 'Bila dubare bibe';
+  String get tourAsk4Title => 'Her guhertinê betal bike';
 
   @override
-  String get storyRenew4Body => 'Ji bo abonetî û dayînên salane Xwe nû dike veke û dîrok bi xwe pêş ve diçe.';
+  String get tourAsk4Body => 'Te biryara xwe guhert? Her guhertina piştrastkirî ji heman kartê dikare were betalkirin.';
 
   @override
-  String get storyAsk1Title => 'Bi gotinên xwe bipirse';
+  String get tourAsk5Title => 'Ji cihê ku te hişt bidomîne';
 
   @override
-  String get storyAsk1Body => 'Tiştên wek «Îsal çi diqede?» bipirse û ji tomarên xwe bersivan bistîne.';
+  String get tourAsk5Body => 'Sohbet 90 rojan di «Dîroka sohbetan» de dimînin, û pirsên pêşniyarkirî alîkariya destpêkirinê dikin.';
 
   @override
-  String get storyAsk2Title => 'Li şûna nivîsandinê biaxive';
+  String get tourAsk6Title => 'Ji tomaran zêdetir';
 
   @override
-  String get storyAsk2Body => 'Mîkrofonê bitikîne û biaxive. Peyvên te dema diaxivî xuya dibin û tu dikarî yekser bişînî.';
+  String get tourAsk6Body => 'Ew dikare rêwîtiyan plan bike, mirovan zêde bike, gavên nûkirinê ji bo welatê te bibîne û tomaran parve bike, bi girêdanên rûpelên fermî.';
 
   @override
-  String get storyAsk3Title => 'Tu her guhertinê piştrast dikî';
+  String get tourWallet1Title => 'Pêşî amade be';
 
   @override
-  String get storyAsk3Body => 'Bixwaze ku tomarek were zêdekirin an guhertin û tu pêşî kartekê dibînî. Heta tu piştrast nekî tiştek nayê tomarkirin.';
+  String get tourWallet1Body => 'Kartek an belgeyek veke û hilbijêre tu li ku digirî, wek cûzdan an çenteyê xwe.';
 
   @override
-  String get storyAsk4Title => 'Her guhertinê betal bike';
+  String get tourWallet2Title => 'Hejmara astengkirinê tomar bike';
 
   @override
-  String get storyAsk4Body => 'Te biryara xwe guhert? Her guhertina piştrastkirî ji heman kartê dikare were betalkirin.';
+  String get tourWallet2Body => 'Niha hejmara astengkirinê ya her bankê lê zêde bike. Ew li ser kartê ye, ku gava pêwîst bibe dê ne li cem te be.';
 
   @override
-  String get storyAsk5Title => 'Ji cihê ku te hişt bidomîne';
+  String get tourWallet3Title => 'Eger winda bibe';
 
   @override
-  String get storyAsk5Body => 'Sohbet 90 rojan di «Dîroka sohbetan» de dimînin, û pirsên pêşniyarkirî alîkariya destpêkirinê dikin.';
+  String get tourWallet3Body => 'Heke berîka te winda bibe, li vir bişkoka guncav bitikîne. Vaultara her tiştê ku tê de bû nîşan dide, da ku tu bizanî çi bloke bikî.';
 
   @override
-  String get storyAsk6Title => 'Ji tomaran zêdetir';
+  String get tourWallet4Title => 'Kartan di deqîqeyan de asteng bike';
 
   @override
-  String get storyAsk6Body => 'Ew dikare rêwîtiyan plan bike, mirovan zêde bike, gavên nûkirinê ji bo welatê te bibîne û tomaran parve bike, bi girêdanên rûpelên fermî.';
+  String get tourWallet4Body => 'Bi yek destlêdanê li her bankê bigere, kartan wek astengkirî nîşan bike û hejmara raporê tomar bike.';
 
   @override
-  String get storyWallet1Title => 'Pêşî amade be';
+  String get tourWallet5Title => 'Biguherîne û ewle bimîne';
 
   @override
-  String get storyWallet1Body => 'Kartek an belgeyek veke û hilbijêre tu li ku digirî, wek cûzdan an çenteyê xwe.';
+  String get tourWallet5Body => 'Belgeyên xwe biguherîne, dema bîra te tê xistin hesaban kontrol bike û eger were dîtin «Min dît» bitikîne.';
 
   @override
-  String get storyWallet2Title => 'Hejmara astengkirinê tomar bike';
+  String get tourLife1Title => 'Demên mezin, yek plan';
 
   @override
-  String get storyWallet2Body => 'Niha hejmara astengkirinê ya her bankê lê zêde bike. Ew li ser kartê ye, ku gava pêwîst bibe dê ne li cem te be.';
+  String get tourLife1Body => 'Barkirin, zarok, karekî nû an rewşek awarte: di «Bûyerên jiyanê» de hilbijêre çi diqewime.';
 
   @override
-  String get storyWallet3Title => 'Eger winda bibe';
+  String get tourLife2Title => 'Tomarên te rêkûpêk';
 
   @override
-  String get storyWallet3Body => 'Winda an dizî veke û li Winda an Dizî bitikîne. Vaultara her tiştê ku tê de bû nîşan dide.';
+  String get tourLife2Body => 'Plan nîşan dide kîjan tomar nû bikî, betal bikî an dirêj bikî, û kîjan belkî lê zêde bikî.';
 
   @override
-  String get storyWallet4Title => 'Kartan di deqîqeyan de asteng bike';
+  String get tourLife3Title => 'Gav û dîrok';
 
   @override
-  String get storyWallet4Body => 'Bi yek destlêdanê li her bankê bigere, kartan wek astengkirî nîşan bike û hejmara raporê tomar bike.';
+  String get tourLife3Body => 'Her planek gavên ku ne tomar in jî hene, û dîrokên destpêkê ku ji te re dibêjin kengî serlêdan bikî da ku tiştek dereng nemîne.';
 
   @override
-  String get storyWallet5Title => 'Biguherîne û ewle bimîne';
+  String get tourLife4Title => 'Ya xwe bike';
 
   @override
-  String get storyWallet5Body => 'Belgeyên xwe biguherîne, dema bîra te tê xistin hesaban kontrol bike û eger were dîtin «Min dît» bitikîne.';
+  String get tourLife4Body => 'Gavên xwe lê zêde bike, planê wek PDF parve bike û li dora dîrokê bîrxistinan bistîne.';
 
   @override
-  String get storyLife1Title => 'Demên mezin, yek plan';
+  String get tourPhotos1Title => 'Wêneyên belgeyên te';
 
   @override
-  String get storyLife1Body => 'Barkirin, zarok, karekî nû an rewşek awarte: di «Bûyerên jiyanê» de hilbijêre çi diqewime.';
+  String get tourPhotos1Body => 'Ji tomarê, wêneyên rû û pişta kartek an belgeyekê lê zêde bike.';
 
   @override
-  String get storyLife2Title => 'Tomarên te rêkûpêk';
+  String get tourPhotos2Title => 'Li ser telefona te şîfrekirî';
 
   @override
-  String get storyLife2Body => 'Plan nîşan dide kîjan tomar nû bikî, betal bikî an dirêj bikî, û kîjan belkî lê zêde bikî.';
+  String get tourPhotos2Body => 'Şîfrekirina wêneyan veke û ew berî barkirinê li ser telefonê têne kilîtkirin.';
 
   @override
-  String get storyLife3Title => 'Gav û dîrok';
+  String get tourPhotos3Title => 'Tomarên hesas kilît bike';
 
   @override
-  String get storyLife3Body => 'Gav tiştên ku ne tomar in digirin, û dîrokên destpêkê ji te re dibêjin kengî serlêdan bikî da ku tiştek dereng nemîne.';
+  String get tourPhotos3Body => 'Tomarekê kilît bike û berî vebûnê dê şopa tilîyê an kilîta ekranê bixwaze.';
 
   @override
-  String get storyLife4Title => 'Ya xwe bike';
+  String get tourPhotos4Title => 'Tevahiya sepanê kilît bike';
 
   @override
-  String get storyLife4Body => 'Gavên xwe lê zêde bike, planê wek PDF parve bike û li dora dîrokê bîrxistinan bistîne.';
+  String get tourPhotos4Body => 'Di mîhengên ewlehiyê de kilîta sepanê veke û dema sepanê diguherînî naverokê veşêre.';
 
   @override
-  String get storyPhotos1Title => 'Wêneyên belgeyên te';
+  String get tourShare1Title => 'Tomarekê tenê parve bike';
 
   @override
-  String get storyPhotos1Body => 'Ji tomarê, wêneyên rû û pişta kartek an belgeyekê lê zêde bike.';
+  String get tourShare1Body => 'Tomarekê veke û girêdanekê parve bike ku tenê wê tomarê nîşan dide, tiştekî din na.';
 
   @override
-  String get storyPhotos2Title => 'Li ser telefona te şîfrekirî';
+  String get tourShare2Title => 'Pakêta delîlan';
 
   @override
-  String get storyPhotos2Body => 'Şîfrekirina wêneyan veke û ew berî barkirinê li ser telefonê têne kilîtkirin.';
+  String get tourShare2Body => 'Tomarên ku tu hildibijêrî, bi wêneyên wan re, di yek PDF de ji bo xwediyê malê, bank an nivîsgehê kom bike.';
 
   @override
-  String get storyPhotos3Title => 'Tomarên hesas kilît bike';
+  String get tourShare3Title => 'Kontrol li cem te ye';
 
   @override
-  String get storyPhotos3Body => 'Tomarekê kilît bike û berî vebûnê dê şopa tilîyê an kilîta ekranê bixwaze.';
+  String get tourShare3Body => '«Girêdanên parvekirî» her girêdana ku te çêkiriye nîşan dide. Her yekê kengî bixwazî rawestîne û êdî venabe.';
 
   @override
-  String get storyPhotos4Title => 'Tevahiya sepanê kilît bike';
+  String get tourHousehold1Title => 'Malbata xwe vexwîne';
 
   @override
-  String get storyPhotos4Body => 'Di mîhengên ewlehiyê de kilîta sepanê veke û dema sepanê diguherînî naverokê veşêre.';
+  String get tourHousehold1Body => 'Kod an girêdana vexwendinê parve bike. Her kes bi hesabê xwe têdikeve.';
 
   @override
-  String get storyShare1Title => 'Tomarekê tenê parve bike';
+  String get tourHousehold2Title => 'Komek tomar';
 
   @override
-  String get storyShare1Body => 'Tomarekê veke û girêdanekê parve bike ku tenê wê tomarê nîşan dide, tiştekî din na.';
+  String get tourHousehold2Body => 'Her kes heman tomarên hevpar dibîne û heman bîrxistinan distîne.';
 
   @override
-  String get storyShare2Title => 'Pakêta delîlan';
+  String get tourHousehold3Title => 'Ya kê ye?';
 
   @override
-  String get storyShare2Body => 'Tomarên ku tu hildibijêrî, bi wêneyên wan re, di yek PDF de ji bo xwediyê malê, bank an nivîsgehê kom bike.';
+  String get tourHousehold3Body => 'Her tomar dikare ya kesekî be. Navê wî li ser û di bîrxistinan de xuya dibe.';
 
   @override
-  String get storyShare3Title => 'Kontrol li cem te ye';
+  String get tourImport1Title => 'Kartekê bişopîne';
 
   @override
-  String get storyShare3Body => '«Girêdanên parvekirî» her girêdana ku te çêkiriye nîşan dide. Her yekê kengî bixwazî rawestîne û êdî venabe.';
+  String get tourImport1Body => 'Wêneyê kartek an belgeyekê bikişîne û Vaultara nav û dîroka dawîbûnê ji bo te tije dike.';
 
   @override
-  String get storyHousehold1Title => 'Malbata xwe vexwîne';
+  String get tourImport2Title => 'Lîsteyekê îthal bike';
 
   @override
-  String get storyHousehold1Body => 'Kod an girêdana vexwendinê parve bike. Her kes bi hesabê xwe têdikeve.';
+  String get tourImport2Body => 'Jixwe tabloyek te heye? Wê îthal bike û berî tomarkirinê her rêzê kontrol bike.';
 
   @override
-  String get storyHousehold2Title => 'Komek tomar';
+  String get tourImport3Title => 'Ji Vaultara re parve bike';
 
   @override
-  String get storyHousehold2Body => 'Her kes heman tomarên hevpar dibîne û heman bîrxistinan distîne.';
+  String get tourImport3Body => 'Wêne, PDF an nivîsekê ji sepanek din ji Vaultara re parve bike da ku tomarek nû dest pê bike.';
 
   @override
-  String get storyHousehold3Title => 'Ya kê ye?';
+  String get tourCosts1Title => 'Di salnameya te de';
 
   @override
-  String get storyHousehold3Body => 'Her tomar dikare ya kesekî be. Navê wî li ser û di bîrxistinan de xuya dibe.';
+  String get tourCosts1Body => 'Dîrokên dawîbûnê li salnameya telefona xwe zêde bike, li kêleka planên xwe yên din.';
 
   @override
-  String get storyImport1Title => 'Kartekê bişopîne';
+  String get tourCosts2Title => 'Nûkirin çiqas biha ne';
 
   @override
-  String get storyImport1Body => 'Wêneyê kartek an belgeyekê bikişîne û Vaultara nav û dîroka dawîbûnê ji bo te tije dike.';
+  String get tourCosts2Body => 'Lêçûna nûkirinê li ser tomarekê binivîse û Vaultara nîşan dide tu salê çiqas xerc dikî.';
 
   @override
-  String get storyImport2Title => 'Lîsteyekê îthal bike';
+  String get tourCosts3Title => 'Ji berê ve plan bike';
 
   @override
-  String get storyImport2Body => 'Jixwe tabloyek te heye? Wê îthal bike û berî tomarkirinê her rêzê kontrol bike.';
+  String get tourCosts3Body => 'Mehên biha ji berê ve bibîne da ku nûkirinek mezin tu carî te şaş neke.';
 
   @override
-  String get storyImport3Title => 'Ji Vaultara re parve bike';
+  String get tourBusiness1Title => 'Tîma xwe bişopîne';
 
   @override
-  String get storyImport3Body => 'Wêne, PDF an nivîsekê ji sepanek din ji Vaultara re parve bike da ku tomarek nû dest pê bike.';
+  String get tourBusiness1Body => 'Karmendan lê zêde bike û belge, destûr û lîsansên wan li yek cihî bigire.';
 
   @override
-  String get storyCosts1Title => 'Di salnameya te de';
+  String get tourBusiness2Title => 'Bîrxistinên e-nameyê';
 
   @override
-  String get storyCosts1Body => 'Dîrokên dawîbûnê li salnameya telefona xwe zêde bike, li kêleka planên xwe yên din.';
+  String get tourBusiness2Body => 'Karmend berî ku belgeyên wan biqedin e-name distînin, bêyî sepanê jî.';
 
   @override
-  String get storyCosts2Title => 'Nûkirin çiqas biha ne';
+  String get tourBusiness3Title => 'Rapora mehane';
 
   @override
-  String get storyCosts2Body => 'Lêçûna nûkirinê li ser tomarekê binivîse û Vaultara nîşan dide tu salê çiqas xerc dikî.';
+  String get tourBusiness3Body => 'Her meh raporek nîşan dide çi derbasdar e, çi diqede û çi kêm e.';
 
   @override
-  String get storyCosts3Title => 'Ji berê ve plan bike';
+  String get tourBusiness4Title => 'Nûkirinekê bixwaze';
 
   @override
-  String get storyCosts3Body => 'Mehên biha ji berê ve bibîne da ku nûkirinek mezin tu carî te şaş neke.';
-
-  @override
-  String get storyBusiness1Title => 'Tîma xwe bişopîne';
-
-  @override
-  String get storyBusiness1Body => 'Karmendan lê zêde bike û belge, destûr û lîsansên wan li yek cihî bigire.';
-
-  @override
-  String get storyBusiness2Title => 'Bîrxistinên e-nameyê';
-
-  @override
-  String get storyBusiness2Body => 'Karmend berî ku belgeyên wan biqedin e-name distînin, bêyî sepanê jî.';
-
-  @override
-  String get storyBusiness3Title => 'Rapora mehane';
-
-  @override
-  String get storyBusiness3Body => 'Her meh raporek nîşan dide çi derbasdar e, çi diqede û çi kêm e.';
-
-  @override
-  String get storyBusiness4Title => 'Nûkirinekê bixwaze';
-
-  @override
-  String get storyBusiness4Body => 'Girêdanekê bişîne û karmend bi xwe belgeya nûkirî bar dike.';
+  String get tourBusiness4Body => 'Girêdanekê bişîne û karmend bi xwe belgeya nûkirî bar dike.';
 
   @override
   String get categoryHealthAndMedical => 'Tendurustî û bijîşkî';

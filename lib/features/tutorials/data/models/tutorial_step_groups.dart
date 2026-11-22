@@ -62,7 +62,123 @@ class TutorialStepGroups {
     TutorialStep.familyRecordPerson,
   ];
 
-  static const Set<TutorialStep> centred = {TutorialStep.familyRecordPerson};
+  static const List<TutorialStep> home = [
+    TutorialStep.homeNextUp,
+    TutorialStep.homeSearch,
+    TutorialStep.homePlans,
+    TutorialStep.homeHelp,
+  ];
+
+  static const List<TutorialStep> renew = [
+    TutorialStep.renewReminder,
+    TutorialStep.renewDate,
+    TutorialStep.renewGuide,
+    TutorialStep.renewRepeat,
+  ];
+
+  static const List<TutorialStep> askVaultara = [
+    TutorialStep.askType,
+    TutorialStep.askTalk,
+    TutorialStep.askHistory,
+    TutorialStep.askConfirm,
+    TutorialStep.askUndo,
+    TutorialStep.askMore,
+  ];
+
+  static const List<TutorialStep> lostWallet = [
+    TutorialStep.walletPrepare,
+    TutorialStep.walletLostNumber,
+    TutorialStep.walletLost,
+    TutorialStep.walletBlock,
+    TutorialStep.walletReplace,
+  ];
+
+  static const List<TutorialStep> lifeEvents = [
+    TutorialStep.lifeChoose,
+    TutorialStep.lifeRecords,
+    TutorialStep.lifeSteps,
+    TutorialStep.lifeOwn,
+  ];
+
+  static const List<TutorialStep> photosSecurity = [
+    TutorialStep.photosAdd,
+    TutorialStep.photosEncrypt,
+    TutorialStep.photosLockRecord,
+    TutorialStep.photosAppLock,
+  ];
+
+  static const List<TutorialStep> sharing = [
+    TutorialStep.shareRecord,
+    TutorialStep.shareProofPack,
+    TutorialStep.shareLinks,
+  ];
+
+  static const List<TutorialStep> household = [
+    TutorialStep.householdInvite,
+    TutorialStep.householdShared,
+    TutorialStep.householdWhose,
+  ];
+
+  static const List<TutorialStep> importScan = [
+    TutorialStep.importScan,
+    TutorialStep.importList,
+    TutorialStep.importShare,
+  ];
+
+  static const List<TutorialStep> calendarCosts = [
+    TutorialStep.costsCalendar,
+    TutorialStep.costsAmount,
+    TutorialStep.costsPlan,
+  ];
+
+  static const List<TutorialStep> business = [
+    TutorialStep.businessTeam,
+    TutorialStep.businessEmail,
+    TutorialStep.businessReport,
+    TutorialStep.businessRequest,
+  ];
+
+  /// The tours that each walk through one screen, by tutorial id.
+  static const Map<String, List<TutorialStep>> screenTours = {
+    TutorialIds.home: home,
+    TutorialIds.renew: renew,
+    TutorialIds.askVaultara: askVaultara,
+    TutorialIds.lostWallet: lostWallet,
+    TutorialIds.lifeEvents: lifeEvents,
+    TutorialIds.photosSecurity: photosSecurity,
+    TutorialIds.sharing: sharing,
+    TutorialIds.household: household,
+    TutorialIds.importScan: importScan,
+    TutorialIds.calendarCosts: calendarCosts,
+    TutorialIds.business: business,
+  };
+
+  /// Steps with nothing on screen to point at. They show in the middle,
+  /// with a picture, over the dimmed screen.
+  static const Set<TutorialStep> centred = {
+    TutorialStep.familyRecordPerson,
+    TutorialStep.renewReminder,
+    TutorialStep.renewRepeat,
+    TutorialStep.askConfirm,
+    TutorialStep.askUndo,
+    TutorialStep.askMore,
+    TutorialStep.walletBlock,
+    TutorialStep.walletReplace,
+    TutorialStep.lifeRecords,
+    TutorialStep.lifeSteps,
+    TutorialStep.lifeOwn,
+    TutorialStep.photosAdd,
+    TutorialStep.photosLockRecord,
+    TutorialStep.shareRecord,
+    TutorialStep.householdShared,
+    TutorialStep.householdWhose,
+    TutorialStep.importScan,
+    TutorialStep.importShare,
+    TutorialStep.costsAmount,
+    TutorialStep.costsPlan,
+    TutorialStep.businessEmail,
+    TutorialStep.businessRequest,
+  };
 
   /// Steps that cannot go Back, because the step before them is on a
   /// screen that has closed or was the tap that opened this one.
@@ -85,6 +201,19 @@ class TutorialStepGroups {
     TutorialStep.familyMe,
     TutorialStep.familyAddPerson,
     TutorialStep.familyRecordPerson,
+    // Every screen tour: it shows sample data or settings, so a tap in
+    // the wrong place cannot change anything while it plays.
+    ...home,
+    ...renew,
+    ...askVaultara,
+    ...lostWallet,
+    ...lifeEvents,
+    ...photosSecurity,
+    ...sharing,
+    ...household,
+    ...importScan,
+    ...calendarCosts,
+    ...business,
   };
 
   static const Set<TutorialStep> travelDetailSteps = {
@@ -100,6 +229,9 @@ class TutorialStepGroups {
     if (travelFree.contains(step)) return travelFree;
     if (smartTools.contains(step)) return smartTools;
     if (family.contains(step)) return family;
+    for (final group in screenTours.values) {
+      if (group.contains(step)) return group;
+    }
     return const [];
   }
 
@@ -112,6 +244,9 @@ class TutorialStepGroups {
     }
     if (smartTools.contains(step)) return TutorialIds.smartTools;
     if (family.contains(step)) return TutorialIds.family;
+    for (final entry in screenTours.entries) {
+      if (entry.value.contains(step)) return entry.key;
+    }
     return null;
   }
 }

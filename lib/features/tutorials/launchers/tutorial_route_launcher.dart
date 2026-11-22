@@ -53,4 +53,34 @@ class TutorialRouteLauncher {
       isPremium: isPremium,
     );
   }
+
+  /// Goes to one of the main tabs, such as Home or Calendar, and starts
+  /// the tutorial there.
+  static Future<void> showTabAndStart(
+    NavigatorState navigator, {
+    required int tab,
+    required List<TutorialStep> group,
+    bool isPremium = false,
+  }) async {
+    if (group.isEmpty || !navigator.mounted) return;
+
+    if (TutorialController.instance.isActive) {
+      TutorialController.instance.cancel();
+    }
+
+    navigator.popUntil((route) => route.isFirst);
+    final shell = ShellState.current;
+    if (shell != null && shell.mounted) {
+      shell.update(() => shell.index = tab);
+    }
+
+    await Future<void>.delayed(_routeSettle);
+    if (!navigator.mounted) return;
+
+    TutorialController.instance.start(
+      group.first,
+      group: group,
+      isPremium: isPremium,
+    );
+  }
 }

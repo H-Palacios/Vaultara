@@ -7781,290 +7781,262 @@ class AppLocalizationsTr extends AppLocalizations {
   String get tutorialSmartLifeEvents2 => 'Taşınma, bebek, yeni iş ya da acil durum mu? Hayat olayları sana kayıtların, adımların ve tarihlerinle bir plan sunar.';
 
   @override
-  String get storySampleQuestion => 'Bu yıl ne sona eriyor?';
+  String get tourHome1Title => 'Günün bir bakışta';
 
   @override
-  String storySampleAnswer(String name) {
-    return '$name martta sona eriyor. Bir ay önce hatırlatayım mı?';
-  }
+  String get tourHome1Body => 'Ana ekran bugün önemli olanı gösterir: yakında sona erenleri ve kaç kaydın olduğunu.';
 
   @override
-  String storySampleNotification(String name) {
-    return '$name 30 gün içinde sona eriyor. Yenilemek için dokun.';
-  }
+  String get tourHome2Title => 'Her şeyi bul';
 
   @override
-  String get storySampleGym => 'Spor salonu üyeliği';
+  String get tourHome2Body => 'Bir kaydı ada, gruba ya da kişiye göre bulmak için aramaya dokun.';
 
   @override
-  String get storySampleFirstAid => 'İlk yardım sertifikası';
+  String get tourHome3Title => 'Geziler ve planlar';
 
   @override
-  String get storySampleEncrypt => 'Fotoğrafları şifrele';
+  String get tourHome3Body => 'Planladığın geziler ve süren hayat olayı planları, kalan işlerle birlikte burada görünür.';
 
   @override
-  String get storySampleAppLock => 'Uygulama kilidi';
+  String get tourHome4Title => 'Tek dokunuşla yardım';
 
   @override
-  String get storySampleHideApp => 'Uygulama değiştiricide içeriği gizle';
+  String get tourHome4Body => 'Kıvılcım düğmesi “Vaultara\'ya Sor” ekranını açar. Fotoğrafın profilini, ayarları ve eğitimleri açar.';
 
   @override
-  String get storyHome1Title => 'Günün bir bakışta';
+  String get tourRenew1Title => 'Hatırlatıcı gelir';
 
   @override
-  String get storyHome1Body => 'Ana ekran bugün önemli olanı gösterir: yakında sona erenleri ve kaç kaydın olduğunu.';
+  String get tourRenew1Body => 'Bir kayıt sona ermeden önce Vaultara sana hatırlatır. Kaydı açmak için hatırlatıcıya dokun.';
 
   @override
-  String get storyHome2Title => 'Her şeyi bul';
+  String get tourRenew2Title => 'Yeni tarihi kaydet';
 
   @override
-  String get storyHome2Body => 'Bir kaydı ada, gruba ya da kişiye göre bulmak için aramaya dokun.';
+  String get tourRenew2Body => 'Yenilediniz mi? Yeni son kullanma tarihini burada seçip kaydedin. Hatırlatıcılar yeni tarihe geçer.';
 
   @override
-  String get storyHome3Title => 'Geziler ve planlar';
+  String get tourRenew3Title => 'Nasıl yapılacağından emin değil misin?';
 
   @override
-  String get storyHome3Body => 'Planladığın geziler ve süren hayat olayı planları, kalan işlerle birlikte burada görünür.';
+  String get tourRenew3Body => 'Birçok kaydın yenileme kontrol listesi vardır. Vaultara\'ya Sor, ülkenin adımlarını resmi bağlantılarla bulabilir.';
 
   @override
-  String get storyHome4Title => 'Tek dokunuşla yardım';
+  String get tourRenew4Title => 'Tekrarlansın';
 
   @override
-  String get storyHome4Body => 'Kıvılcım düğmesi “Vaultara\'ya Sor” ekranını açar. Fotoğrafın profilini, ayarları ve eğitimleri açar.';
+  String get tourRenew4Body => 'Abonelikler ve yıllık ödemeler için Kendiliğinden yenilenir seçeneğini aç, tarih kendiliğinden ileri gider.';
 
   @override
-  String get storyRenew1Title => 'Hatırlatıcı gelir';
+  String get tourAsk1Title => 'Kendi kelimelerinle sor';
 
   @override
-  String get storyRenew1Body => 'Bir kayıt sona ermeden önce Vaultara sana hatırlatır. Kaydı açmak için hatırlatıcıya dokun.';
+  String get tourAsk1Body => '“Bu yıl ne sona eriyor?” gibi sorular sor, kendi kayıtlarından yanıt al.';
 
   @override
-  String get storyRenew2Title => 'Yeni tarihi kaydet';
+  String get tourAsk2Title => 'Yazmak yerine konuş';
 
   @override
-  String get storyRenew2Body => 'Yeniledin mi? “Yenile” seçeneğine dokun ve yeni son kullanma tarihini gir. Hatırlatıcılar da kayar.';
+  String get tourAsk2Body => 'Mikrofona dokun ve konuş. Sözlerin konuşurken görünür, hemen gönderebilirsin.';
 
   @override
-  String get storyRenew3Title => 'Nasıl yapılacağından emin değil misin?';
+  String get tourAsk3Title => 'Her değişikliği sen onaylarsın';
 
   @override
-  String get storyRenew3Body => 'Birçok kaydın yenileme kontrol listesi vardır. Vaultara\'ya Sor, ülkenin adımlarını resmi bağlantılarla bulabilir.';
+  String get tourAsk3Body => 'Bir kayıt eklemeyi ya da değiştirmeyi iste, önce bir kart görürsün. Sen onaylayana kadar hiçbir şey kaydedilmez.';
 
   @override
-  String get storyRenew4Title => 'Tekrarlansın';
+  String get tourAsk4Title => 'Her değişikliği geri al';
 
   @override
-  String get storyRenew4Body => 'Abonelikler ve yıllık ödemeler için Kendiliğinden yenilenir seçeneğini aç, tarih kendiliğinden ileri gider.';
+  String get tourAsk4Body => 'Fikrini mi değiştirdin? Onaylanan her değişiklik aynı karttan geri alınabilir.';
 
   @override
-  String get storyAsk1Title => 'Kendi kelimelerinle sor';
+  String get tourAsk5Title => 'Kaldığın yerden devam et';
 
   @override
-  String get storyAsk1Body => '“Bu yıl ne sona eriyor?” gibi sorular sor, kendi kayıtlarından yanıt al.';
+  String get tourAsk5Body => 'Sohbetler “Sohbet geçmişi” bölümünde 90 gün saklanır, önerilen sorular başlamana yardım eder.';
 
   @override
-  String get storyAsk2Title => 'Yazmak yerine konuş';
+  String get tourAsk6Title => 'Kayıtlardan fazlası';
 
   @override
-  String get storyAsk2Body => 'Mikrofona dokun ve konuş. Sözlerin konuşurken görünür, hemen gönderebilirsin.';
+  String get tourAsk6Body => 'Seyahat planlayabilir, kişi ekleyebilir, ülkenin yenileme adımlarını bulabilir ve kayıt paylaşabilir, resmi sayfa bağlantılarıyla.';
 
   @override
-  String get storyAsk3Title => 'Her değişikliği sen onaylarsın';
+  String get tourWallet1Title => 'Önce hazırlan';
 
   @override
-  String get storyAsk3Body => 'Bir kayıt eklemeyi ya da değiştirmeyi iste, önce bir kart görürsün. Sen onaylayana kadar hiçbir şey kaydedilmez.';
+  String get tourWallet1Body => 'Bir kartı ya da belgeyi aç ve nerede tuttuğunu seç, örneğin cüzdanında ya da çantanda.';
 
   @override
-  String get storyAsk4Title => 'Her değişikliği geri al';
+  String get tourWallet2Title => 'İptal numarasını kaydet';
 
   @override
-  String get storyAsk4Body => 'Fikrini mi değiştirdin? Onaylanan her değişiklik aynı karttan geri alınabilir.';
+  String get tourWallet2Body => 'Her bankanın kart iptal numarasını şimdi ekle. Numara kartın üzerindedir ve ihtiyacın olduğunda kart yanında olmaz.';
 
   @override
-  String get storyAsk5Title => 'Kaldığın yerden devam et';
+  String get tourWallet3Title => 'Kaybolursa';
 
   @override
-  String get storyAsk5Body => 'Sohbetler “Sohbet geçmişi” bölümünde 90 gün saklanır, önerilen sorular başlamana yardım eder.';
+  String get tourWallet3Body => 'Cüzdanınız kaybolursa buradaki uygun düğmeye dokunun. Vaultara içinde olan her şeyi gösterir, böylece neyi engelleteceğinizi bilirsiniz.';
 
   @override
-  String get storyAsk6Title => 'Kayıtlardan fazlası';
+  String get tourWallet4Title => 'Kartları dakikalar içinde kapat';
 
   @override
-  String get storyAsk6Body => 'Seyahat planlayabilir, kişi ekleyebilir, ülkenin yenileme adımlarını bulabilir ve kayıt paylaşabilir, resmi sayfa bağlantılarıyla.';
+  String get tourWallet4Body => 'Her bankayı tek dokunuşla ara, kartları kapatıldı olarak işaretle ve şikâyet numarasını kaydet.';
 
   @override
-  String get storyWallet1Title => 'Önce hazırlan';
+  String get tourWallet5Title => 'Yenile ve güvende kal';
 
   @override
-  String get storyWallet1Body => 'Bir kartı ya da belgeyi aç ve nerede tuttuğunu seç, örneğin cüzdanında ya da çantanda.';
+  String get tourWallet5Body => 'Belgelerini yenile, hatırlatıldığında hesap dökümlerini kontrol et ve bulunursa “Buldum” seçeneğine dokun.';
 
   @override
-  String get storyWallet2Title => 'İptal numarasını kaydet';
+  String get tourLife1Title => 'Büyük anlar, tek plan';
 
   @override
-  String get storyWallet2Body => 'Her bankanın kart iptal numarasını şimdi ekle. Numara kartın üzerindedir ve ihtiyacın olduğunda kart yanında olmaz.';
+  String get tourLife1Body => 'Taşınma, bebek, yeni iş ya da acil durum: “Hayat olayları” bölümünde ne olduğunu seç.';
 
   @override
-  String get storyWallet3Title => 'Kaybolursa';
+  String get tourLife2Title => 'Kayıtların düzenli';
 
   @override
-  String get storyWallet3Body => 'Kayıp veya çalıntı\'yı açın ve Kayıp ya da Çalıntı\'ya dokunun. Vaultara içinde olan her şeyi gösterir.';
+  String get tourLife2Body => 'Plan hangi kayıtları güncelleyeceğini, iptal edeceğini ya da yenileyeceğini ve hangilerini eklemen gerekebileceğini gösterir.';
 
   @override
-  String get storyWallet4Title => 'Kartları dakikalar içinde kapat';
+  String get tourLife3Title => 'Adımlar ve tarihler';
 
   @override
-  String get storyWallet4Body => 'Her bankayı tek dokunuşla ara, kartları kapatıldı olarak işaretle ve şikâyet numarasını kaydet.';
+  String get tourLife3Body => 'Her planda kayıt olmayan adımlar da vardır; başlangıç tarihleri ise hiçbir şey gecikmesin diye ne zaman başvurmanız gerektiğini söyler.';
 
   @override
-  String get storyWallet5Title => 'Yenile ve güvende kal';
+  String get tourLife4Title => 'Kendine göre ayarla';
 
   @override
-  String get storyWallet5Body => 'Belgelerini yenile, hatırlatıldığında hesap dökümlerini kontrol et ve bulunursa “Buldum” seçeneğine dokun.';
+  String get tourLife4Body => 'Kendi adımlarını ekle, planı PDF olarak paylaş ve tarih yaklaşırken hatırlatıcılar al.';
 
   @override
-  String get storyLife1Title => 'Büyük anlar, tek plan';
+  String get tourPhotos1Title => 'Belgelerinin fotoğrafları';
 
   @override
-  String get storyLife1Body => 'Taşınma, bebek, yeni iş ya da acil durum: “Hayat olayları” bölümünde ne olduğunu seç.';
+  String get tourPhotos1Body => 'Kayıttan bir kartın ya da belgenin ön ve arka yüzünün fotoğraflarını ekle.';
 
   @override
-  String get storyLife2Title => 'Kayıtların düzenli';
+  String get tourPhotos2Title => 'Telefonunda şifreli';
 
   @override
-  String get storyLife2Body => 'Plan hangi kayıtları güncelleyeceğini, iptal edeceğini ya da yenileyeceğini ve hangilerini eklemen gerekebileceğini gösterir.';
+  String get tourPhotos2Body => 'Fotoğraf şifrelemeyi aç, fotoğraflar yüklenmeden önce telefonunda kilitlensin.';
 
   @override
-  String get storyLife3Title => 'Adımlar ve tarihler';
+  String get tourPhotos3Title => 'Hassas kayıtları kilitle';
 
   @override
-  String get storyLife3Body => 'Adımlar kayıt olmayan işleri kapsar, başlangıç tarihleri de hiçbir şey gecikmesin diye ne zaman başvuracağını söyler.';
+  String get tourPhotos3Body => 'Bir kaydı kilitle, açılmadan önce parmak izi ya da ekran kilidi istesin.';
 
   @override
-  String get storyLife4Title => 'Kendine göre ayarla';
+  String get tourPhotos4Title => 'Tüm uygulamayı kilitle';
 
   @override
-  String get storyLife4Body => 'Kendi adımlarını ekle, planı PDF olarak paylaş ve tarih yaklaşırken hatırlatıcılar al.';
+  String get tourPhotos4Body => 'Güvenlik ayarlarında uygulama kilidini aç ve uygulama değiştirirken içeriği gizle.';
 
   @override
-  String get storyPhotos1Title => 'Belgelerinin fotoğrafları';
+  String get tourShare1Title => 'Tek bir kaydı paylaş';
 
   @override
-  String get storyPhotos1Body => 'Kayıttan bir kartın ya da belgenin ön ve arka yüzünün fotoğraflarını ekle.';
+  String get tourShare1Body => 'Bir kaydı aç ve yalnızca o kaydı gösteren, başka hiçbir şey göstermeyen bir bağlantı paylaş.';
 
   @override
-  String get storyPhotos2Title => 'Telefonunda şifreli';
+  String get tourShare2Title => 'Kanıt paketi';
 
   @override
-  String get storyPhotos2Body => 'Fotoğraf şifrelemeyi aç, fotoğraflar yüklenmeden önce telefonunda kilitlensin.';
+  String get tourShare2Body => 'Seçtiğin kayıtları fotoğraflarıyla birlikte ev sahibi, banka ya da kurum için tek bir PDF\'de topla.';
 
   @override
-  String get storyPhotos3Title => 'Hassas kayıtları kilitle';
+  String get tourShare3Title => 'Kontrol sende';
 
   @override
-  String get storyPhotos3Body => 'Bir kaydı kilitle, açılmadan önce parmak izi ya da ekran kilidi istesin.';
+  String get tourShare3Body => '“Paylaşılan bağlantılar” oluşturduğun her bağlantıyı gösterir. İstediğin zaman birini durdur, artık açılmaz.';
 
   @override
-  String get storyPhotos4Title => 'Tüm uygulamayı kilitle';
+  String get tourHousehold1Title => 'Haneni davet et';
 
   @override
-  String get storyPhotos4Body => 'Güvenlik ayarlarında uygulama kilidini aç ve uygulama değiştirirken içeriği gizle.';
+  String get tourHousehold1Body => 'Bir davet kodu ya da bağlantısı paylaş. Herkes kendi hesabıyla giriş yapar.';
 
   @override
-  String get storyShare1Title => 'Tek bir kaydı paylaş';
+  String get tourHousehold2Title => 'Tek bir kayıt seti';
 
   @override
-  String get storyShare1Body => 'Bir kaydı aç ve yalnızca o kaydı gösteren, başka hiçbir şey göstermeyen bir bağlantı paylaş.';
+  String get tourHousehold2Body => 'Herkes aynı ortak kayıtları görür ve aynı hatırlatıcıları alır.';
 
   @override
-  String get storyShare2Title => 'Kanıt paketi';
+  String get tourHousehold3Title => 'Kimin?';
 
   @override
-  String get storyShare2Body => 'Seçtiğin kayıtları fotoğraflarıyla birlikte ev sahibi, banka ya da kurum için tek bir PDF\'de topla.';
+  String get tourHousehold3Body => 'Her kayıt birine ait olabilir. Adı kayıtta ve hatırlatıcılarda görünür.';
 
   @override
-  String get storyShare3Title => 'Kontrol sende';
+  String get tourImport1Title => 'Bir kart tara';
 
   @override
-  String get storyShare3Body => '“Paylaşılan bağlantılar” oluşturduğun her bağlantıyı gösterir. İstediğin zaman birini durdur, artık açılmaz.';
+  String get tourImport1Body => 'Bir kartın ya da belgenin fotoğrafını çek, Vaultara adı ve son kullanma tarihini senin için doldursun.';
 
   @override
-  String get storyHousehold1Title => 'Haneni davet et';
+  String get tourImport2Title => 'Bir liste içe aktar';
 
   @override
-  String get storyHousehold1Body => 'Bir davet kodu ya da bağlantısı paylaş. Herkes kendi hesabıyla giriş yapar.';
+  String get tourImport2Body => 'Zaten bir tablon mu var? İçe aktar ve kaydetmeden önce her satırı gözden geçir.';
 
   @override
-  String get storyHousehold2Title => 'Tek bir kayıt seti';
+  String get tourImport3Title => 'Vaultara\'ya paylaş';
 
   @override
-  String get storyHousehold2Body => 'Herkes aynı ortak kayıtları görür ve aynı hatırlatıcıları alır.';
+  String get tourImport3Body => 'Yeni bir kayıt başlatmak için başka bir uygulamadan fotoğraf, PDF ya da metin paylaş.';
 
   @override
-  String get storyHousehold3Title => 'Kimin?';
+  String get tourCosts1Title => 'Takviminde';
 
   @override
-  String get storyHousehold3Body => 'Her kayıt birine ait olabilir. Adı kayıtta ve hatırlatıcılarda görünür.';
+  String get tourCosts1Body => 'Son tarihleri telefonunun takvimine, diğer planlarının yanına ekle.';
 
   @override
-  String get storyImport1Title => 'Bir kart tara';
+  String get tourCosts2Title => 'Yenilemelerin maliyeti';
 
   @override
-  String get storyImport1Body => 'Bir kartın ya da belgenin fotoğrafını çek, Vaultara adı ve son kullanma tarihini senin için doldursun.';
+  String get tourCosts2Body => 'Bir kayda yenileme ücretini gir, Vaultara yılda ne harcadığını göstersin.';
 
   @override
-  String get storyImport2Title => 'Bir liste içe aktar';
+  String get tourCosts3Title => 'Önceden planla';
 
   @override
-  String get storyImport2Body => 'Zaten bir tablon mu var? İçe aktar ve kaydetmeden önce her satırı gözden geçir.';
+  String get tourCosts3Body => 'Pahalı ayları önceden gör, büyük bir yenileme seni asla şaşırtmasın.';
 
   @override
-  String get storyImport3Title => 'Vaultara\'ya paylaş';
+  String get tourBusiness1Title => 'Ekibini takip et';
 
   @override
-  String get storyImport3Body => 'Yeni bir kayıt başlatmak için başka bir uygulamadan fotoğraf, PDF ya da metin paylaş.';
+  String get tourBusiness1Body => 'Personel ekle ve sertifikalarını, izinlerini ve lisanslarını tek yerde tut.';
 
   @override
-  String get storyCosts1Title => 'Takviminde';
+  String get tourBusiness2Title => 'E-posta hatırlatıcıları';
 
   @override
-  String get storyCosts1Body => 'Son tarihleri telefonunun takvimine, diğer planlarının yanına ekle.';
+  String get tourBusiness2Body => 'Personel, belgeleri sona ermeden önce uygulama olmadan da e-posta alır.';
 
   @override
-  String get storyCosts2Title => 'Yenilemelerin maliyeti';
+  String get tourBusiness3Title => 'Aylık rapor';
 
   @override
-  String get storyCosts2Body => 'Bir kayda yenileme ücretini gir, Vaultara yılda ne harcadığını göstersin.';
+  String get tourBusiness3Body => 'Her ay bir rapor neyin geçerli olduğunu, neyin sona erdiğini ve neyin eksik olduğunu gösterir.';
 
   @override
-  String get storyCosts3Title => 'Önceden planla';
+  String get tourBusiness4Title => 'Güncelleme iste';
 
   @override
-  String get storyCosts3Body => 'Pahalı ayları önceden gör, büyük bir yenileme seni asla şaşırtmasın.';
-
-  @override
-  String get storyBusiness1Title => 'Ekibini takip et';
-
-  @override
-  String get storyBusiness1Body => 'Personel ekle ve sertifikalarını, izinlerini ve lisanslarını tek yerde tut.';
-
-  @override
-  String get storyBusiness2Title => 'E-posta hatırlatıcıları';
-
-  @override
-  String get storyBusiness2Body => 'Personel, belgeleri sona ermeden önce uygulama olmadan da e-posta alır.';
-
-  @override
-  String get storyBusiness3Title => 'Aylık rapor';
-
-  @override
-  String get storyBusiness3Body => 'Her ay bir rapor neyin geçerli olduğunu, neyin sona erdiğini ve neyin eksik olduğunu gösterir.';
-
-  @override
-  String get storyBusiness4Title => 'Güncelleme iste';
-
-  @override
-  String get storyBusiness4Body => 'Bir bağlantı gönder, personel yenilenen belgeyi kendisi yüklesin.';
+  String get tourBusiness4Body => 'Bir bağlantı gönder, personel yenilenen belgeyi kendisi yüklesin.';
 
   @override
   String get categoryHealthAndMedical => 'Sağlık ve tıbbi';

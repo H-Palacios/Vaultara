@@ -1,7 +1,7 @@
 class TutorialIds {
   const TutorialIds._();
 
-  // Guided tutorials that highlight the real screens.
+  // Guided tutorials that highlight the real screens as you use them.
   static const String addRecord = 'add_record';
   static const String reminders = 'reminders';
   static const String insights = 'insights';
@@ -9,8 +9,8 @@ class TutorialIds {
   static const String smartTools = 'smart_tools';
   static const String family = 'family';
 
-  // Story tutorials: short illustrated walkthroughs with sample data, so
-  // they never touch the user's own records.
+  // Screen tours: each walks through one screen. The Renew tour uses a
+  // sample record, so none of them touch the user's own records.
   static const String home = 'home';
   static const String renew = 'renew';
   static const String askVaultara = 'ask_vaultara';
