@@ -9428,20 +9428,14 @@ class AppLocalizationsGa extends AppLocalizations {
   String get groupsNoRecordsSection => 'Níl aon taifid ann fós';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'Athraithe ag $name $daysString lá ó shin',
-      many: 'Athraithe ag $name $daysString lá ó shin',
-      few: 'Athraithe ag $name $daysString lá ó shin',
-      two: 'Athraithe ag $name $daysString lá ó shin',
+      other: 'Athraithe ag $name $days lá ó shin',
+      many: 'Athraithe ag $name $days lá ó shin',
+      few: 'Athraithe ag $name $days lá ó shin',
+      two: 'Athraithe ag $name $days lá ó shin',
       one: 'Athraithe ag $name inné',
       zero: 'Athraithe ag $name inniu',
     );

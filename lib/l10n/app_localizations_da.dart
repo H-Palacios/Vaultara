@@ -9234,17 +9234,11 @@ class AppLocalizationsDa extends AppLocalizations {
   String get groupsNoRecordsSection => 'Ingen poster endnu';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'Ændret af $name for $daysString dage siden',
+      other: 'Ændret af $name for $days dage siden',
       one: 'Ændret af $name i går',
       zero: 'Ændret af $name i dag',
     );

@@ -9229,17 +9229,11 @@ class AppLocalizationsHy extends AppLocalizations {
   String get groupsNoRecordsSection => 'Դեռ գրառումներ չկան։';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'Փոխել է $name-ը $daysString օր առաջ',
+      other: 'Փոխել է $name-ը $days օր առաջ',
       one: 'Փոխել է $name-ը երեկ',
       zero: 'Փոխել է $name-ը այսօր',
     );

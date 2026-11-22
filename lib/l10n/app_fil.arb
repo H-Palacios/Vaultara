@@ -3511,7 +3511,7 @@
   "assistantReportOther": "Iba pa",
   "assistantReportThanks": "Salamat. Susuriin namin ang sagot na ito.",
   "groupsNoRecordsSection": "Wala pang mga rekord",
-  "recordChangedRecently": "{days, plural, =0{Binago ni {name} ngayon} =1{Binago ni {name} kahapon} other{Binago ni {name} {days} araw na ang nakalipas}}",
+  "recordChangedRecently": "{days, plural, =0{Binago ni {name} ngayon} other{Binago ni {name} {days} araw na ang nakalipas}}",
   "notifSharedOnlyMineTitle": "Mga rekord na idinagdag ko lang",
   "notifSharedOnlyMineSubtitle": "Paalalahanan lang ako sa mga shared na rekord na idinagdag ko. Makikita pa rin sa app ang mga rekord na idinagdag ng iba.",
   "travelPassportExpiresBeforeLeaving": "Mag-e-expire ang passport bago ka umalis",

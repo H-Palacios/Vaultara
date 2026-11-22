@@ -9299,19 +9299,13 @@ class AppLocalizationsLv extends AppLocalizations {
   String get groupsNoRecordsSection => 'Vēl nav ierakstu';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$name mainīja pirms $daysString dienām',
-      one: '$name mainīja pirms $daysString dienas',
-      zero: '$name mainīja pirms $daysString dienām',
+      other: '$name mainīja pirms $days dienām',
+      one: '$name mainīja vakar',
+      zero: '$name mainīja šodien',
     );
     return '$_temp0';
   }

@@ -15755,7 +15755,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'{days, plural, =0{Changed by {name} today} =1{Changed by {name} yesterday} other{Changed by {name} {days} days ago}}'**
-  String recordChangedRecently(num days, String name);
+  String recordChangedRecently(int days, String name);
 
   /// Switch in Notification settings, Household section: remind me only about shared records I added.
   ///

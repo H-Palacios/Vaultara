@@ -9234,17 +9234,11 @@ class AppLocalizationsEu extends AppLocalizations {
   String get groupsNoRecordsSection => 'Oraindik ez dago erregistrorik';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$name(e)k aldatua duela $daysString egun',
+      other: '$name(e)k aldatua duela $days egun',
       one: '$name(e)k aldatua atzo',
       zero: '$name(e)k aldatua gaur',
     );

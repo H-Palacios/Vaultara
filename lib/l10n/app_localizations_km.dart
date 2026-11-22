@@ -9165,17 +9165,11 @@ class AppLocalizationsKm extends AppLocalizations {
   String get groupsNoRecordsSection => 'មិនទាន់មានកំណត់ត្រានៅឡើយទេ។';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'បានកែដោយ $name $daysString ថ្ងៃមុន',
+      other: 'បានកែដោយ $name $days ថ្ងៃមុន',
       one: 'បានកែដោយ $name ម្សិលមិញ',
       zero: 'បានកែដោយ $name ថ្ងៃនេះ',
     );

@@ -9229,17 +9229,11 @@ class AppLocalizationsKu extends AppLocalizations {
   String get groupsNoRecordsSection => 'Hîn tu tomar tune ne';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$daysString roj berê ji aliyê $name ve hat guhertin',
+      other: '$days roj berê ji aliyê $name ve hat guhertin',
       one: 'Doh ji aliyê $name ve hat guhertin',
       zero: 'Îro ji aliyê $name ve hat guhertin',
     );

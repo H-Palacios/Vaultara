@@ -9287,17 +9287,11 @@ class AppLocalizationsHe extends AppLocalizations {
   String get groupsNoRecordsSection => 'אין רשומות עדיין';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'שונה על ידי $name לפני $daysString ימים',
+      other: 'שונה על ידי $name לפני $days ימים',
       two: 'שונה על ידי $name לפני יומיים',
       one: 'שונה על ידי $name אתמול',
       zero: 'שונה על ידי $name היום',

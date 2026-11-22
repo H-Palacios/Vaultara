@@ -9234,17 +9234,11 @@ class AppLocalizationsSq extends AppLocalizations {
   String get groupsNoRecordsSection => 'Ende asnjë regjistrim';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'Ndryshuar nga $name $daysString ditë më parë',
+      other: 'Ndryshuar nga $name $days ditë më parë',
       one: 'Ndryshuar nga $name dje',
       zero: 'Ndryshuar nga $name sot',
     );

@@ -9234,17 +9234,11 @@ class AppLocalizationsEl extends AppLocalizations {
   String get groupsNoRecordsSection => 'Δεν υπάρχουν εγγραφές ακόμα';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'Άλλαξε από $name πριν από $daysString ημέρες',
+      other: 'Άλλαξε από $name πριν από $days ημέρες',
       one: 'Άλλαξε από $name χθες',
       zero: 'Άλλαξε από $name σήμερα',
     );

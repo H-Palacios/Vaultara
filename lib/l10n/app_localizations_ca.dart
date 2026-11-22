@@ -9234,17 +9234,11 @@ class AppLocalizationsCa extends AppLocalizations {
   String get groupsNoRecordsSection => 'Encara no hi ha registres';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'Canviat per $name fa $daysString dies',
+      other: 'Canviat per $name fa $days dies',
       one: 'Canviat per $name ahir',
       zero: 'Canviat per $name avui',
     );

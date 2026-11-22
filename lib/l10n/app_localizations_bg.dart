@@ -9230,17 +9230,11 @@ class AppLocalizationsBg extends AppLocalizations {
   String get groupsNoRecordsSection => 'Все още няма записи';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'Променено от $name преди $daysString дни',
+      other: 'Променено от $name преди $days дни',
       one: 'Променено от $name вчера',
       zero: 'Променено от $name днес',
     );

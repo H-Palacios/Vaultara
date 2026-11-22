@@ -9167,17 +9167,11 @@ class AppLocalizationsZh extends AppLocalizations {
   String get groupsNoRecordsSection => '暂无记录';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$name $daysString 天前修改',
+      other: '$name $days 天前修改',
       one: '$name 昨天修改',
       zero: '$name 今天修改',
     );
@@ -18834,17 +18828,11 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get groupsNoRecordsSection => '暂无记录';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$name $daysString 天前修改',
+      other: '$name $days 天前修改',
       one: '$name 昨天修改',
       zero: '$name 今天修改',
     );
@@ -28501,17 +28489,11 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get groupsNoRecordsSection => '尚無記錄';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$name $daysString 天前修改',
+      other: '$name $days 天前修改',
       one: '$name 昨天修改',
       zero: '$name 今天修改',
     );

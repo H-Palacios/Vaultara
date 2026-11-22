@@ -2656,7 +2656,7 @@
   "subcategorySubscriptions": "Подписки",
   "subcategoryWarranties": "Гарантии",
   "yoursTag": "Ваше",
-  "expiredBadge": "{count, plural, =1{{count} истёк} one{{count} истёк} few{{count} истекли} many{{count} истекли} other{{count} истекли}}",
+  "expiredBadge": "{count, plural, one{{count} истёк} few{{count} истекли} many{{count} истекли} other{{count} истекли}}",
   "expiresWithin7Badge": "{count, plural, =1{{count} истекает в течение 7 дней} other{{count} истекают в течение 7 дней}}",
   "expiresWithin30Badge": "{count, plural, =1{{count} истекает в течение 30 дней} other{{count} истекают в течение 30 дней}}",
   "allUpToDate": "Всё в порядке",
@@ -2747,7 +2747,7 @@
   "recordsSortExpiry": "Сортировать по сроку действия",
   "recordsSortName": "Сортировать по названию",
   "recordsSelect": "Выбрать",
-  "recordsSelected": "{count, plural, =1{Выбрана {count}} one{Выбрана {count}} few{Выбрано {count}} many{Выбрано {count}} other{Выбрано {count}}}",
+  "recordsSelected": "{count, plural, one{Выбрана {count}} few{Выбрано {count}} many{Выбрано {count}} other{Выбрано {count}}}",
   "@recordsSelected": {
     "placeholders": {
       "count": {
@@ -2757,7 +2757,7 @@
   },
   "recordsMove": "Переместить",
   "recordsMoveTitle": "Переместить в",
-  "recordsMoved": "{count, plural, =1{Перемещена {count} запись} one{Перемещена {count} запись} few{Перемещены {count} записи} many{Перемещено {count} записей} other{Перемещено {count} записи}}",
+  "recordsMoved": "{count, plural, one{Перемещена {count} запись} few{Перемещены {count} записи} many{Перемещено {count} записей} other{Перемещено {count} записи}}",
   "@recordsMoved": {
     "placeholders": {
       "count": {
@@ -2765,7 +2765,7 @@
       }
     }
   },
-  "recordsDeleteManyTitle": "{count, plural, =1{Удалить {count} запись?} one{Удалить {count} запись?} few{Удалить {count} записи?} many{Удалить {count} записей?} other{Удалить {count} записи?}}",
+  "recordsDeleteManyTitle": "{count, plural, one{Удалить {count} запись?} few{Удалить {count} записи?} many{Удалить {count} записей?} other{Удалить {count} записи?}}",
   "@recordsDeleteManyTitle": {
     "placeholders": {
       "count": {
@@ -2774,7 +2774,7 @@
     }
   },
   "recordsDeleteManyBody": "Они попадут в «Недавно удалённые», откуда их можно вернуть в течение 30 дней.",
-  "recordsDeletedMany": "{count, plural, =1{Удалена {count} запись} one{Удалена {count} запись} few{Удалены {count} записи} many{Удалено {count} записей} other{Удалено {count} записи}}",
+  "recordsDeletedMany": "{count, plural, one{Удалена {count} запись} few{Удалены {count} записи} many{Удалено {count} записей} other{Удалено {count} записи}}",
   "@recordsDeletedMany": {
     "placeholders": {
       "count": {
@@ -2916,7 +2916,7 @@
   "calendarThisWeek": "Эта неделя",
   "calendarNextWeek": "Следующая неделя",
   "calendarListEmpty": "В ближайшие 12 месяцев ничего нет.",
-  "calendarDaysLeft": "{count, plural, =1{Остался {count} день} one{Остался {count} день} few{Осталось {count} дня} many{Осталось {count} дней} other{Осталось {count} дня}}",
+  "calendarDaysLeft": "{count, plural, one{Остался {count} день} few{Осталось {count} дня} many{Осталось {count} дней} other{Осталось {count} дня}}",
   "@calendarDaysLeft": {
     "placeholders": {
       "count": {
@@ -2924,7 +2924,7 @@
       }
     }
   },
-  "calendarDaysAgo": "{count, plural, =1{Истёк {count} день назад} one{Истёк {count} день назад} few{Истёк {count} дня назад} many{Истёк {count} дней назад} other{Истёк {count} дня назад}}",
+  "calendarDaysAgo": "{count, plural, one{Истёк {count} день назад} few{Истёк {count} дня назад} many{Истёк {count} дней назад} other{Истёк {count} дня назад}}",
   "@calendarDaysAgo": {
     "placeholders": {
       "count": {

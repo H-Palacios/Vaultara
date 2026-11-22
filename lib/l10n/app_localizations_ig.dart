@@ -9178,17 +9178,11 @@ class AppLocalizationsIg extends AppLocalizations {
   String get groupsNoRecordsSection => 'Enweghị ndekọ ka ọ dị';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$name gbanwere ya ụbọchị $daysString gara aga',
+      other: '$name gbanwere ya ụbọchị $days gara aga',
       one: '$name gbanwere ya ụnyaahụ',
       zero: '$name gbanwere ya taa',
     );

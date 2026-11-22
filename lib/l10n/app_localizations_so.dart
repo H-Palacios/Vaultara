@@ -9228,17 +9228,11 @@ class AppLocalizationsSo extends AppLocalizations {
   String get groupsNoRecordsSection => 'Weli ma jiraan diiwaanno';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$name ayaa beddelay $daysString maalmood ka hor',
+      other: '$name ayaa beddelay $days maalmood ka hor',
       one: '$name ayaa beddelay shalay',
       zero: '$name ayaa beddelay maanta',
     );

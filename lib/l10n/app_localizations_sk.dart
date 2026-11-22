@@ -9380,19 +9380,13 @@ class AppLocalizationsSk extends AppLocalizations {
   String get groupsNoRecordsSection => 'Zatiaľ žiadne záznamy';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'Pred $daysString dňami zmenil(a) $name',
-      many: 'Pred $daysString dňami zmenil(a) $name',
-      few: 'Pred $daysString dňami zmenil(a) $name',
+      other: 'Pred $days dňami zmenil(a) $name',
+      many: 'Pred $days dňami zmenil(a) $name',
+      few: 'Pred $days dňami zmenil(a) $name',
       one: 'Včera zmenil(a) $name',
       zero: 'Dnes zmenil(a) $name',
     );

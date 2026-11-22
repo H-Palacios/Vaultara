@@ -9396,19 +9396,13 @@ class AppLocalizationsUk extends AppLocalizations {
   String get groupsNoRecordsSection => 'Записів поки немає';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'Змінено: $name, $daysString дня тому',
-      many: 'Змінено: $name, $daysString днів тому',
-      few: 'Змінено: $name, $daysString дні тому',
+      other: 'Змінено: $name, $days дня тому',
+      many: 'Змінено: $name, $days днів тому',
+      few: 'Змінено: $name, $days дні тому',
       one: 'Змінено: $name, учора',
       zero: 'Змінено: $name, сьогодні',
     );

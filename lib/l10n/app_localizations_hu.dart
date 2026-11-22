@@ -9229,17 +9229,11 @@ class AppLocalizationsHu extends AppLocalizations {
   String get groupsNoRecordsSection => 'Még nincsenek bejegyzések';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$name módosította $daysString napja',
+      other: '$name módosította $days napja',
       one: '$name módosította tegnap',
       zero: '$name módosította ma',
     );

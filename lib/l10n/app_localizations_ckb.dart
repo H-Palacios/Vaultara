@@ -9229,17 +9229,11 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get groupsNoRecordsSection => 'هێشتا هیچ تۆمارێک نییە';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$daysString ڕۆژ لەمەوبەر لەلایەن $name گۆڕدرا',
+      other: '$days ڕۆژ لەمەوبەر لەلایەن $name گۆڕدرا',
       one: 'دوێنێ لەلایەن $name گۆڕدرا',
       zero: 'ئەمڕۆ لەلایەن $name گۆڕدرا',
     );

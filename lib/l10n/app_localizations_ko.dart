@@ -9167,17 +9167,11 @@ class AppLocalizationsKo extends AppLocalizations {
   String get groupsNoRecordsSection => '아직 기록이 없습니다';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$daysString일 전 $name님이 변경',
+      other: '$days일 전 $name님이 변경',
       one: '어제 $name님이 변경',
       zero: '오늘 $name님이 변경',
     );

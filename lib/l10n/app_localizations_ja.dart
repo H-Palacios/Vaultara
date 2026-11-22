@@ -9155,17 +9155,11 @@ class AppLocalizationsJa extends AppLocalizations {
   String get groupsNoRecordsSection => 'まだ記録がありません';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$daysString日前に $name が変更',
+      other: '$days日前に $name が変更',
       one: '昨日 $name が変更',
       zero: '今日 $name が変更',
     );

@@ -9304,18 +9304,12 @@ class AppLocalizationsHr extends AppLocalizations {
   String get groupsNoRecordsSection => 'Još nema zapisa';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$name izmijenio/la prije $daysString dana',
-      few: '$name izmijenio/la prije $daysString dana',
+      other: '$name izmijenio/la prije $days dana',
+      few: '$name izmijenio/la prije $days dana',
       one: '$name izmijenio/la jučer',
       zero: '$name izmijenio/la danas',
     );

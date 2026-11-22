@@ -9309,18 +9309,12 @@ class AppLocalizationsSr extends AppLocalizations {
   String get groupsNoRecordsSection => 'Још нема записа';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$name изменио/ла пре $daysString дана',
-      few: '$name изменио/ла пре $daysString дана',
+      other: '$name изменио/ла пре $days дана',
+      few: '$name изменио/ла пре $days дана',
       one: '$name изменио/ла јуче',
       zero: '$name изменио/ла данас',
     );
@@ -19134,18 +19128,12 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get groupsNoRecordsSection => 'Још нема записа';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$name изменио/ла пре $daysString дана',
-      few: '$name изменио/ла пре $daysString дана',
+      other: '$name изменио/ла пре $days дана',
+      few: '$name изменио/ла пре $days дана',
       one: '$name изменио/ла јуче',
       zero: '$name изменио/ла данас',
     );
@@ -28955,18 +28943,12 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get groupsNoRecordsSection => 'Još nema zapisa';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$name izmenio/la pre $daysString dana',
-      few: '$name izmenio/la pre $daysString dana',
+      other: '$name izmenio/la pre $days dana',
+      few: '$name izmenio/la pre $days dana',
       one: '$name izmenio/la juče',
       zero: '$name izmenio/la danas',
     );

@@ -9165,17 +9165,11 @@ class AppLocalizationsMy extends AppLocalizations {
   String get groupsNoRecordsSection => 'မှတ်တမ်း မရှိသေးပါ။';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$daysString ရက်က $name ပြောင်းခဲ့သည်',
+      other: '$days ရက်က $name ပြောင်းခဲ့သည်',
       one: 'မနေ့က $name ပြောင်းခဲ့သည်',
       zero: 'ယနေ့ $name ပြောင်းခဲ့သည်',
     );

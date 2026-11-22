@@ -9229,17 +9229,11 @@ class AppLocalizationsHa extends AppLocalizations {
   String get groupsNoRecordsSection => 'Babu rikodi tukuna';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$name ya canza kwanaki $daysString da suka wuce',
+      other: '$name ya canza kwanaki $days da suka wuce',
       one: '$name ya canza jiya',
       zero: '$name ya canza yau',
     );

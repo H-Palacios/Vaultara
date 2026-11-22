@@ -9378,19 +9378,13 @@ class AppLocalizationsLt extends AppLocalizations {
   String get groupsNoRecordsSection => 'Įrašų dar nėra';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$name pakeitė prieš $daysString dienų',
-      many: '$name pakeitė prieš $daysString dienos',
-      few: '$name pakeitė prieš $daysString dienas',
+      other: '$name pakeitė prieš $days dienų',
+      many: '$name pakeitė prieš $days dienos',
+      few: '$name pakeitė prieš $days dienas',
       one: '$name pakeitė vakar',
       zero: '$name pakeitė šiandien',
     );

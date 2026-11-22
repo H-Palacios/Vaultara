@@ -9167,17 +9167,11 @@ class AppLocalizationsLo extends AppLocalizations {
   String get groupsNoRecordsSection => 'ຍັງບໍ່ມີບັນທຶກ';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$name ປ່ຽນ $daysString ມື້ກ່ອນ',
+      other: '$name ປ່ຽນ $days ມື້ກ່ອນ',
       one: '$name ປ່ຽນມື້ວານນີ້',
       zero: '$name ປ່ຽນມື້ນີ້',
     );

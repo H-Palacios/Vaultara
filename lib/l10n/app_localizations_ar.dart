@@ -9473,19 +9473,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String get groupsNoRecordsSection => 'لا توجد سجلات بعد';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'غيّره $name قبل $daysString يوم',
-      many: 'غيّره $name قبل $daysString يومًا',
-      few: 'غيّره $name قبل $daysString أيام',
+      other: 'غيّره $name قبل $days يوم',
+      many: 'غيّره $name قبل $days يومًا',
+      few: 'غيّره $name قبل $days أيام',
       two: 'غيّره $name قبل يومين',
       one: 'غيّره $name أمس',
       zero: 'غيّره $name اليوم',

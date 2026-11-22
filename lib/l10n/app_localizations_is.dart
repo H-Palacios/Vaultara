@@ -9228,17 +9228,11 @@ class AppLocalizationsIs extends AppLocalizations {
   String get groupsNoRecordsSection => 'Engar færslur enn';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$name breytti fyrir $daysString dögum',
+      other: '$name breytti fyrir $days dögum',
       one: '$name breytti í gær',
       zero: '$name breytti í dag',
     );

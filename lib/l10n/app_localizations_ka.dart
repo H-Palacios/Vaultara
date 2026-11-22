@@ -9229,17 +9229,11 @@ class AppLocalizationsKa extends AppLocalizations {
   String get groupsNoRecordsSection => 'ჩანაწერები ჯერ არ არის';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$daysString დღის წინ შეცვალა $name',
+      other: '$days დღის წინ შეცვალა $name',
       one: 'გუშინ შეცვალა $name',
       zero: 'დღეს შეცვალა $name',
     );

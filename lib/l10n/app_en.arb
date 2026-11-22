@@ -11528,8 +11528,7 @@
     "description": "Line on a shared record card when another household member changed it in the last 7 days. days = days since the change (0 today, 1 yesterday), name = their first name.",
     "placeholders": {
       "days": {
-        "type": "num",
-        "format": "compact"
+        "type": "int"
       },
       "name": {
         "type": "String"

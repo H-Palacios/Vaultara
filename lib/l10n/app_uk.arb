@@ -2799,7 +2799,7 @@
   },
   "recordsMove": "Перемістити",
   "recordsMoveTitle": "Перемістити до",
-  "recordsMoved": "{count, plural, =1{Переміщено {count} запис} one{Переміщено {count} запис} few{Переміщено {count} записи} many{Переміщено {count} записів} other{Переміщено {count} записи}}",
+  "recordsMoved": "{count, plural, one{Переміщено {count} запис} few{Переміщено {count} записи} many{Переміщено {count} записів} other{Переміщено {count} записи}}",
   "@recordsMoved": {
     "placeholders": {
       "count": {
@@ -2807,7 +2807,7 @@
       }
     }
   },
-  "recordsDeleteManyTitle": "{count, plural, =1{Видалити {count} запис?} one{Видалити {count} запис?} few{Видалити {count} записи?} many{Видалити {count} записів?} other{Видалити {count} записи?}}",
+  "recordsDeleteManyTitle": "{count, plural, one{Видалити {count} запис?} few{Видалити {count} записи?} many{Видалити {count} записів?} other{Видалити {count} записи?}}",
   "@recordsDeleteManyTitle": {
     "placeholders": {
       "count": {
@@ -2816,7 +2816,7 @@
     }
   },
   "recordsDeleteManyBody": "Вони потраплять до «Нещодавно видалені», звідки їх можна повернути протягом 30 днів.",
-  "recordsDeletedMany": "{count, plural, =1{Видалено {count} запис} one{Видалено {count} запис} few{Видалено {count} записи} many{Видалено {count} записів} other{Видалено {count} записи}}",
+  "recordsDeletedMany": "{count, plural, one{Видалено {count} запис} few{Видалено {count} записи} many{Видалено {count} записів} other{Видалено {count} записи}}",
   "@recordsDeletedMany": {
     "placeholders": {
       "count": {
@@ -2958,7 +2958,7 @@
   "calendarThisWeek": "Цей тиждень",
   "calendarNextWeek": "Наступний тиждень",
   "calendarListEmpty": "У найближчі 12 місяців нічого немає.",
-  "calendarDaysLeft": "{count, plural, =1{Залишився {count} день} one{Залишився {count} день} few{Залишилося {count} дні} many{Залишилося {count} днів} other{Залишилося {count} дня}}",
+  "calendarDaysLeft": "{count, plural, one{Залишився {count} день} few{Залишилося {count} дні} many{Залишилося {count} днів} other{Залишилося {count} дня}}",
   "@calendarDaysLeft": {
     "placeholders": {
       "count": {
@@ -2966,7 +2966,7 @@
       }
     }
   },
-  "calendarDaysAgo": "{count, plural, =1{Сплив {count} день тому} one{Сплив {count} день тому} few{Сплив {count} дні тому} many{Сплив {count} днів тому} other{Сплив {count} дня тому}}",
+  "calendarDaysAgo": "{count, plural, one{Сплив {count} день тому} few{Сплив {count} дні тому} many{Сплив {count} днів тому} other{Сплив {count} дня тому}}",
   "@calendarDaysAgo": {
     "placeholders": {
       "count": {

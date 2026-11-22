@@ -9401,19 +9401,13 @@ class AppLocalizationsPl extends AppLocalizations {
   String get groupsNoRecordsSection => 'Brak rekordów';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'Zmienione przez $name $daysString dni temu',
-      many: 'Zmienione przez $name $daysString dni temu',
-      few: 'Zmienione przez $name $daysString dni temu',
+      other: 'Zmienione przez $name $days dni temu',
+      many: 'Zmienione przez $name $days dni temu',
+      few: 'Zmienione przez $name $days dni temu',
       one: 'Zmienione przez $name wczoraj',
       zero: 'Zmienione przez $name dzisiaj',
     );

@@ -9311,18 +9311,12 @@ class AppLocalizationsRo extends AppLocalizations {
   String get groupsNoRecordsSection => 'Nu există încă înregistrări';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'Modificat de $name acum $daysString zile',
-      few: 'Modificat de $name acum $daysString zile',
+      other: 'Modificat de $name acum $days zile',
+      few: 'Modificat de $name acum $days zile',
       one: 'Modificat de $name ieri',
       zero: 'Modificat de $name azi',
     );

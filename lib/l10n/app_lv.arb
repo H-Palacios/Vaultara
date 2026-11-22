@@ -3242,7 +3242,7 @@
   "backupCodesCopy": "Kopēt",
   "backupCodesSave": "Saglabāt vai kopīgot",
   "backupCodesSaved": "Esmu saglabājis kodus",
-  "backupCodesLeft": "{count, plural, =0{Nav atlicis neviena rezerves koda} zero{Atlikuši {count} rezerves kodi} one{Atlicis {count} rezerves kods} other{Atlikuši {count} rezerves kodi}}",
+  "backupCodesLeft": "{count, plural, zero{Atlikuši {count} rezerves kodi} one{Atlicis {count} rezerves kods} other{Atlikuši {count} rezerves kodi}}",
   "@backupCodesLeft": {
     "placeholders": {
       "count": {
@@ -3517,7 +3517,7 @@
   "assistantReportOther": "Kas cits",
   "assistantReportThanks": "Paldies. Mēs pārskatīsim šo atbildi.",
   "groupsNoRecordsSection": "Vēl nav ierakstu",
-  "recordChangedRecently": "{days, plural, =0{{name} mainīja šodien} =1{{name} mainīja vakar} zero{{name} mainīja pirms {days} dienām} one{{name} mainīja pirms {days} dienas} other{{name} mainīja pirms {days} dienām}}",
+  "recordChangedRecently": "{days, plural, zero{{name} mainīja šodien} one{{name} mainīja vakar} other{{name} mainīja pirms {days} dienām}}",
   "notifSharedOnlyMineTitle": "Tikai manis pievienotie ieraksti",
   "notifSharedOnlyMineSubtitle": "Atgādināt tikai par kopīgotajiem ierakstiem, ko pievienoju es. Citu pievienotie ieraksti joprojām redzami lietotnē.",
   "travelPassportExpiresBeforeLeaving": "Pases termiņš beidzas pirms izbraukšanas",

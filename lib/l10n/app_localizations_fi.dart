@@ -9233,17 +9233,11 @@ class AppLocalizationsFi extends AppLocalizations {
   String get groupsNoRecordsSection => 'Ei vielä tietueita';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$name muutti $daysString päivää sitten',
+      other: '$name muutti $days päivää sitten',
       one: '$name muutti eilen',
       zero: '$name muutti tänään',
     );

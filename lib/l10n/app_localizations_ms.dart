@@ -9167,17 +9167,11 @@ class AppLocalizationsMs extends AppLocalizations {
   String get groupsNoRecordsSection => 'Tiada rekod lagi';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'Diubah oleh $name $daysString hari lalu',
+      other: 'Diubah oleh $name $days hari lalu',
       one: 'Diubah oleh $name semalam',
       zero: 'Diubah oleh $name hari ini',
     );

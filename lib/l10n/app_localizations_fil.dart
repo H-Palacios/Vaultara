@@ -9224,18 +9224,11 @@ class AppLocalizationsFil extends AppLocalizations {
   String get groupsNoRecordsSection => 'Wala pang mga rekord';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: 'Binago ni $name $daysString araw na ang nakalipas',
-      one: 'Binago ni $name kahapon',
+      other: 'Binago ni $name $days araw na ang nakalipas',
       zero: 'Binago ni $name ngayon',
     );
     return '$_temp0';

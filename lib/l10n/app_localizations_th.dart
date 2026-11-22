@@ -9155,17 +9155,11 @@ class AppLocalizationsTh extends AppLocalizations {
   String get groupsNoRecordsSection => 'ยังไม่มีรายการ';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$name เปลี่ยนเมื่อ $daysString วันก่อน',
+      other: '$name เปลี่ยนเมื่อ $days วันก่อน',
       one: '$name เปลี่ยนเมื่อวาน',
       zero: '$name เปลี่ยนวันนี้',
     );

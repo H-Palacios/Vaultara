@@ -9229,17 +9229,11 @@ class AppLocalizationsKk extends AppLocalizations {
   String get groupsNoRecordsSection => 'Әзірге жазбалар жоқ';
 
   @override
-  String recordChangedRecently(num days, String name) {
-    final intl.NumberFormat daysNumberFormat = intl.NumberFormat.compact(
-      locale: localeName,
-      
-    );
-    final String daysString = daysNumberFormat.format(days);
-
+  String recordChangedRecently(int days, String name) {
     String _temp0 = intl.Intl.pluralLogic(
       days,
       locale: localeName,
-      other: '$daysString күн бұрын $name өзгертті',
+      other: '$days күн бұрын $name өзгертті',
       one: 'Кеше $name өзгертті',
       zero: 'Бүгін $name өзгертті',
     );
