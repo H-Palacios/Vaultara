@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/core/layout/two_columns.dart';
-import 'package:vaultara/core/layout/wide_layout.dart';
+import 'package:vaultara/core/layout/screen_size.dart';
 import 'package:vaultara/core/view/widgets/premium_builder.dart';
 import 'package:vaultara/core/view/widgets/screen_header.dart';
 import 'package:vaultara/features/pets/data/pet.dart';
@@ -12,7 +12,10 @@ import 'package:vaultara/features/pets/view/pet_document_actions.dart';
 import 'package:vaultara/features/pets/view/pet_editor_sheet.dart';
 import 'package:vaultara/features/pets/view/pet_text.dart';
 import 'package:vaultara/features/pets/view/pet_travel_screen.dart';
+import 'package:vaultara/features/pets/services/pet_card_pdf.dart';
 import 'package:vaultara/features/pets/view/widgets/lost_pet_sheet.dart';
+import 'package:vaultara/features/pets/view/widgets/pet_care_card.dart';
+import 'package:vaultara/features/pets/view/widgets/pet_photo_button.dart';
 import 'package:vaultara/features/pets/view/widgets/pet_chip_card.dart';
 import 'package:vaultara/features/pets/view/widgets/pet_documents.dart';
 import 'package:vaultara/features/pets/view/widgets/pet_vet_card.dart';
@@ -136,7 +139,15 @@ class _PetDetailBody extends StatelessWidget {
           : null,
       onChoose: premium ? () => PetDocumentActions.choose(context, pet) : null,
     );
-    final actions = Wrap(
+    final care = PetCareCard(
+      pet: pet,
+      records: records,
+      onAdd: premium
+          ? (group, name) =>
+                PetDocumentActions.add(context, pet, group, name: name)
+          : null,
+    );
+    final buttons = Wrap(
       spacing: 10,
       runSpacing: 10,
       children: [
@@ -150,12 +161,25 @@ class _PetDetailBody extends StatelessWidget {
           icon: const Icon(Icons.flight_rounded),
           label: Text(loc.petTravelTitle),
         ),
+        FilledButton.tonalIcon(
+          onPressed: () => PetCardPdf.share(context, pet, records),
+          icon: const Icon(Icons.ios_share_rounded),
+          label: Text(loc.petCardShare),
+        ),
+      ],
+    );
+    final actions = Row(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        PetPhotoButton(pet: pet, enabled: premium),
+        const SizedBox(width: 16),
+        Expanded(child: buttons),
       ],
     );
 
-    // A 10-inch tablet held sideways: details on the left, documents on
-    // the right. Phones keep one column.
-    if (WideLayout.of(context)) {
+    // Tablets (7-inch sideways, 10-inch either way): details on the left,
+    // documents on the right. Phones and 7-inch upright keep one column.
+    if (ScreenSize.twoColumns(context)) {
       return ListView(
         padding: const EdgeInsets.fromLTRB(24, 8, 24, 32),
         children: [
@@ -169,19 +193,26 @@ class _PetDetailBody extends StatelessWidget {
               const SizedBox(height: 16),
               actions,
             ],
-            right: [docs],
+            right: [docs, const SizedBox(height: 18), care],
           ),
         ],
       );
     }
     return ListView(
-      padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
+      padding: EdgeInsets.fromLTRB(
+        ScreenSize.padding(context),
+        8,
+        ScreenSize.padding(context),
+        32,
+      ),
       children: [
         header,
         const SizedBox(height: 14),
         actions,
         const SizedBox(height: 16),
         docs,
+        const SizedBox(height: 18),
+        care,
         const SizedBox(height: 16),
         chip,
         const SizedBox(height: 12),

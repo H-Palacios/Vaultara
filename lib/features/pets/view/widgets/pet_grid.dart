@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
-import 'package:vaultara/core/layout/wide_layout.dart';
+import 'package:vaultara/core/layout/screen_size.dart';
 import 'package:vaultara/features/pets/data/pet.dart';
 import 'package:vaultara/features/pets/view/widgets/pet_card.dart';
 import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
@@ -23,7 +23,7 @@ class PetGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final wide = WideLayout.of(context);
+    final wide = ScreenSize.grid(context);
     return LayoutBuilder(
       builder: (context, box) {
         const gap = 12.0;
