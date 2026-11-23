@@ -43,6 +43,7 @@ const RECORD_FIELDS = [
   "isDeleted",
   "overLimit",
   "createdBy",
+  "assigneeUid",
   "lastRenewedAt",
 ];
 
@@ -323,6 +324,18 @@ async function onlyMineMembers(db, members) {
   return out;
 }
 
+// Who is told when a shared record is close to expiring and not renewed:
+// everyone except the member responsible for it, who already has the
+// reminders on their phone. That is the chosen renewer, or else the person
+// who added it. Members who asked for reminders only on their own records
+// are left out.
+function escalationRecipients({ members, creator, assignee, onlyMine }) {
+  const responsible = typeof assignee === "string" && members.includes(assignee)
+    ? assignee
+    : creator;
+  return members.filter((m) => m !== responsible && !onlyMine.has(m));
+}
+
 function membersOf(house) {
   return Array.isArray(house?.memberUids)
     ? house.memberUids.filter((m) => typeof m === "string" && UID_PATTERN.test(m))
@@ -417,7 +430,12 @@ async function escalateHousehold(houseDoc, now) {
     const lastAt = millisOf(prev?.lastEscalatedAt);
     if (lastAt !== null && now - lastAt < REPEAT_MS - REPEAT_SLACK_MS) continue;
 
-    const recipients = members.filter((m) => m !== creator && !onlyMine.has(m));
+    const recipients = escalationRecipients({
+      members,
+      creator,
+      assignee: data.assigneeUid,
+      onlyMine,
+    });
     if (recipients.length === 0) continue;
 
     writes.push([ref, {
@@ -527,3 +545,4 @@ exports.householdEscalationJob = onSchedule(
 
 exports.sendToUser = sendToUser;
 exports.sendDataToUser = sendDataToUser;
+exports._test = { escalationRecipients };

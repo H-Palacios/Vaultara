@@ -38,7 +38,7 @@ function kindOf(before, after) {
 // the other members' phones are woken to plan that record's reminders again.
 const REMINDER_FIELDS = [
   "name", "expiryDate", "reminderOffsetDays", "reminderSteps", "leadDays", "repeatMonths",
-  "isDeleted", "holderName",
+  "isDeleted", "holderName", "assigneeUid",
 ];
 
 function sameValue(a, b) {
