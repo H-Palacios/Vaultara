@@ -15,6 +15,7 @@ const RECORD_FIELDS = [
   "holderId",
   "renewalCost",
   "costCurrency",
+  "categoryKey",
 ];
 
 function functionsBase() {
@@ -102,6 +103,7 @@ function readRecord(doc, source) {
     reminderOffsetDays: Number.isInteger(offset) && offset >= 0 && offset <= 365 ? offset : null,
     cost: Number.isFinite(cost) && cost > 0 && /^[A-Z]{3}$/.test(currency) ? cost : null,
     currency: /^[A-Z]{3}$/.test(currency) ? currency : null,
+    categoryKey: typeof data.categoryKey === "string" && /^[a-z_]{2,40}$/.test(data.categoryKey) ? data.categoryKey : null,
   };
 }
 

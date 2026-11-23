@@ -45,6 +45,41 @@ const LAST_FETCH_WRITE_MS = HOUR_MS;
 const MAX_EVENTS = 2000;
 const ALARM_HOUR = 9;
 
+// What the user chose to put in their calendar link. Unknown or odd values
+// fall back to the defaults: renew-by events and trips on, names shown,
+// every person and category.
+const DEFAULT_OPTIONS = { renew: true, trips: true, hideNames: false, people: null, categories: null };
+const PERSON_ID = /^[A-Za-z0-9_-]{1,128}$/;
+const CATEGORY_KEY = /^[a-z_]{2,40}$/;
+const MAX_TRIP_EVENTS = 200;
+
+function cleanList(raw, pattern) {
+  if (!Array.isArray(raw)) return null;
+  const list = [...new Set(raw.filter((v) => typeof v === "string" && pattern.test(v)))].slice(0, 40);
+  return list.length ? list : null;
+}
+
+function cleanOptions(raw) {
+  const o = raw && typeof raw === "object" ? raw : {};
+  return {
+    renew: typeof o.renew === "boolean" ? o.renew : DEFAULT_OPTIONS.renew,
+    trips: typeof o.trips === "boolean" ? o.trips : DEFAULT_OPTIONS.trips,
+    hideNames: typeof o.hideNames === "boolean" ? o.hideNames : DEFAULT_OPTIONS.hideNames,
+    people: cleanList(o.people, PERSON_ID),
+    categories: cleanList(o.categories, CATEGORY_KEY),
+  };
+}
+
+// Records the chosen people and categories allow. A record with no holder
+// belongs to "me".
+function filterRecords(records, options) {
+  return records.filter((r) => {
+    if (options.people && !options.people.includes(r.holderId || "me")) return false;
+    if (options.categories && !options.categories.includes(r.categoryKey || "")) return false;
+    return true;
+  });
+}
+
 function linksFor(token) {
   const httpsUrl = `${functionsBase()}/calendarFeed?t=${token}`;
   const webcalUrl = httpsUrl.replace(/^https:\/\//, "webcal://");
@@ -91,8 +126,9 @@ exports.createCalendarLink = onCall(CALLABLE, async (request) => {
     if (typeof previous === "string" && previous && previous !== feedId) {
       tx.delete(db.collection(FEEDS).doc(previous));
     }
-    tx.set(feedRef, { uid, createdAt: now });
-    tx.set(ownerRef, { feedId, createdAt: now });
+    const options = cleanOptions(owner.exists ? owner.data()?.options : null);
+    tx.set(feedRef, { uid, createdAt: now, options });
+    tx.set(ownerRef, { feedId, createdAt: now, options });
   });
 
   logger.info("createCalendarLink created", { uid });
@@ -156,6 +192,7 @@ exports.getCalendarLinkStatus = onCall(CALLABLE, async (request) => {
     active: true,
     paid,
     fingerprint: feedId.slice(0, 16),
+    options: cleanOptions(feed.options),
     createdAt: millis(feed.createdAt),
     lastFetchedAt: millis(feed.lastFetchedAt),
   };
@@ -210,7 +247,7 @@ function alarmTrigger(daysBefore) {
   return days > 0 ? `-P${days}DT${hoursBack}H` : `-PT${hoursBack}H`;
 }
 
-function buildCalendar(records, { offsetMinutes, strings, now }) {
+function buildCalendar(records, { offsetMinutes, strings, now, options = DEFAULT_OPTIONS, trips = [] }) {
   const lines = [];
   const push = (line) => lines.push(foldLine(line));
   const stamp = icsStamp(now);
@@ -231,10 +268,32 @@ function buildCalendar(records, { offsetMinutes, strings, now }) {
     .sort((a, b) => a.day - b.day || a.id.localeCompare(b.id))
     .slice(0, MAX_EVENTS);
 
+  const hidden = options.hideNames === true;
   for (const record of sorted) {
-    const summary = record.locked
-      ? strings.t("calendarLockedTitle")
-      : strings.t("calendarEventTitle", { name: record.name });
+    const summary = hidden
+      ? strings.t("calendarHiddenTitle")
+      : record.locked
+        ? strings.t("calendarLockedTitle")
+        : strings.t("calendarEventTitle", { name: record.name });
+    // Google Calendar ignores alarms in subscribed calendars, so the day to
+    // start renewing is its own event.
+    if (options.renew !== false && record.reminderOffsetDays && record.reminderOffsetDays > 0) {
+      const renewDay = record.day - record.reminderOffsetDays;
+      const renewSummary = hidden
+        ? strings.t("calendarHiddenRenew")
+        : record.locked
+          ? strings.t("calendarRenewLocked")
+          : strings.t("calendarRenewTitle", { name: record.name });
+      push("BEGIN:VEVENT");
+      push(`UID:${escapeText(`${record.id}-renew@vaultara.app`)}`);
+      push(`DTSTAMP:${stamp}`);
+      push(`DTSTART;VALUE=DATE:${icsDate(renewDay)}`);
+      push(`DTEND;VALUE=DATE:${icsDate(renewDay + 1)}`);
+      push(`SUMMARY:${escapeText(renewSummary)}`);
+      push("TRANSP:TRANSPARENT");
+      push("CLASS:PRIVATE");
+      push("END:VEVENT");
+    }
     push("BEGIN:VEVENT");
     push(`UID:${escapeText(`${record.id}@vaultara.app`)}`);
     push(`DTSTAMP:${stamp}`);
@@ -253,9 +312,65 @@ function buildCalendar(records, { offsetMinutes, strings, now }) {
     push("END:VEVENT");
   }
 
+  if (options.trips !== false) {
+    for (const trip of trips.slice(0, MAX_TRIP_EVENTS)) {
+      const start = dayNumber(trip.startMs, offsetMinutes);
+      const end = dayNumber(trip.endMs, offsetMinutes);
+      if (end < start) continue;
+      push("BEGIN:VEVENT");
+      push(`UID:${escapeText(`trip-${trip.id}@vaultara.app`)}`);
+      push(`DTSTAMP:${stamp}`);
+      push(`DTSTART;VALUE=DATE:${icsDate(start)}`);
+      push(`DTEND;VALUE=DATE:${icsDate(end + 1)}`);
+      push(`SUMMARY:${escapeText(hidden ? strings.t("calendarTripHidden") : strings.t("calendarTripTitle", { name: trip.name }))}`);
+      push("TRANSP:TRANSPARENT");
+      push("CLASS:PRIVATE");
+      push("END:VEVENT");
+    }
+  }
+
   push("END:VCALENDAR");
   return `${lines.join("\r\n")}\r\n`;
 }
+
+// Trips from the last year on, with only their name and dates: never the
+// travellers, countries or documents.
+async function loadTrips(uid, now) {
+  const snap = await admin.firestore().collection("users").doc(uid).collection("trips")
+    .select("name", "departure", "returnDate").limit(500).get();
+  const since = now - 365 * DAY_MS;
+  const trips = [];
+  for (const doc of snap.docs) {
+    const d = doc.data() || {};
+    const startMs = millis(d.departure);
+    const endMs = millis(d.returnDate);
+    const name = typeof d.name === "string" ? d.name.trim().slice(0, 120) : "";
+    if (startMs === null || endMs === null || endMs < since) continue;
+    trips.push({ id: doc.id, name: name || "-", startMs, endMs });
+  }
+  trips.sort((a, b) => a.startMs - b.startMs);
+  return trips;
+}
+
+exports.saveCalendarOptions = onCall(CALLABLE, async (request) => {
+  const uid = requireUid(request);
+  const db = admin.firestore();
+  if (!(await consumeRateLimit(`calendar-options:${uid}`, 60, HOUR_MS))) {
+    throw new HttpsError("resource-exhausted", "slow-down");
+  }
+  const options = cleanOptions(request.data);
+  const ownerRef = db.collection(OWNERS).doc(uid);
+  await db.runTransaction(async (tx) => {
+    const owner = await tx.get(ownerRef);
+    const feedId = owner.exists ? owner.data()?.feedId : null;
+    const feedRef = typeof feedId === "string" && feedId ? db.collection(FEEDS).doc(feedId) : null;
+    // Every read comes before any write in a transaction.
+    const feed = feedRef ? await tx.get(feedRef) : null;
+    tx.set(ownerRef, { options }, { merge: true });
+    if (feedRef && feed?.exists && feed.data()?.uid === uid) tx.update(feedRef, { options });
+  });
+  return { options };
+});
 
 function sendStatus(res, status, text, extra = {}) {
   for (const [key, value] of Object.entries(extra)) res.set(key, value);
@@ -313,11 +428,15 @@ exports.calendarFeed = onRequest({ maxInstances: FEED_MAX_INSTANCES, memory: "25
     }
 
     const now = Date.now();
+    const options = cleanOptions(feedSnap.data()?.options);
     const { records } = await loadRecords(uid, userData);
-    const body = buildCalendar(records, {
+    const trips = options.trips ? await loadTrips(uid, now) : [];
+    const body = buildCalendar(filterRecords(records, options), {
       offsetMinutes: userOffset(userData),
       strings: summaryStrings(userLanguage(userData)),
       now,
+      options,
+      trips,
     });
 
     const lastFetched = millis(feedSnap.data()?.lastFetchedAt) || 0;
@@ -342,3 +461,5 @@ exports.calendarFeed = onRequest({ maxInstances: FEED_MAX_INSTANCES, memory: "25
   }
 });
 
+
+exports._test = { buildCalendar, cleanOptions, filterRecords };
