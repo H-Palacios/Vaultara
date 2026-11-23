@@ -718,4 +718,5 @@ exports.unshareRecord = onCall(CALLABLE, async (request) => {
 
 exports.cleanupForDeletedUser = cleanupForDeletedUser;
 exports.displayNameFor = displayNameFor;
+exports.loadMembership = loadMembership;
 exports.dissolveHousehold = dissolveHousehold;
