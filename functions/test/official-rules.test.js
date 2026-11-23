@@ -130,3 +130,29 @@ assert.deepStrictEqual(
 );
 
 console.log("official rules: all checks passed");
+
+// Entry details: each needs its own quote, numbers must be in the quote.
+{
+  const entry = "Visitors arriving from countries with risk of yellow fever must show a certificate. " +
+    "Foreign drivers need an International Driving Permit. In an emergency call 112.";
+  const e = x.validatePassport(
+    {
+      yellowFever: { value: "fromRisk", quote: "arriving from countries with risk of yellow fever" },
+      drivingPermit: { value: "required", quote: "Foreign drivers need an International Driving Permit." },
+      emergencyNumber: { value: "112", quote: "In an emergency call 112." },
+    },
+    entry,
+  );
+  assert.deepStrictEqual(e.data, { yellowFever: "fromRisk", drivingPermit: "required", emergencyNumber: "112" });
+  const bad = x.validatePassport(
+    {
+      yellowFever: { value: "maybe", quote: "arriving from countries with risk of yellow fever" },
+      emergencyNumber: { value: "999", quote: "In an emergency call 112." },
+      drivingPermit: { value: "required", quote: "Drivers need nothing at all." },
+    },
+    entry,
+  );
+  assert.strictEqual(bad.ok, false);
+  assert.deepStrictEqual(bad.dropped.sort(), ["drivingPermit", "emergencyNumber", "yellowFever"]);
+  console.log("official rules: entry details checks passed");
+}

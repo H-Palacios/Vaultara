@@ -41,6 +41,10 @@ const PET_NUMBERS = {
 };
 const TITRE_FROM = new Set(["all", "listed", "none"]);
 const COUNTED_FROM = new Set(["departure", "arrival", "stay"]);
+const ENTRY_CHOICES = {
+  yellowFever: new Set(["all", "fromRisk", "no"]),
+  drivingPermit: new Set(["required", "recommended", "notNeeded"]),
+};
 
 function within(host, base) {
   return host === base || host.endsWith(`.${base}`);
@@ -285,7 +289,34 @@ function validatePassport(raw, pageText) {
     }
   }
   if (data.monthsAfter !== undefined && data.countedFrom === undefined) data.countedFrom = "departure";
-  const ok = data.monthsAfter !== undefined || data.countedFrom === "stay";
+  // Entry details from the same page: a yellow fever certificate, an
+  // International Driving Permit and the local emergency number. Each one
+  // needs its own quote from the page, like everything else.
+  for (const [name, allowed] of Object.entries(ENTRY_CHOICES)) {
+    const f = field(input && input[name]);
+    if (!f || f.value === null || f.value === undefined) continue;
+    if (allowed.has(f.value) && quoteFound(f.quote, page)) {
+      data[name] = f.value;
+      quotes[name] = String(f.quote).slice(0, MAX_QUOTE);
+    } else {
+      dropped.push(name);
+    }
+  }
+  const emergency = field(input && input.emergencyNumber);
+  if (emergency && emergency.value !== null && emergency.value !== undefined) {
+    const v = typeof emergency.value === "string" ? emergency.value.trim() : "";
+    if (/^\d{2,4}$/.test(v) && quoteFound(emergency.quote, page) && numberInQuote(v, emergency.quote)) {
+      data.emergencyNumber = v;
+      quotes.emergencyNumber = String(emergency.quote).slice(0, MAX_QUOTE);
+    } else {
+      dropped.push("emergencyNumber");
+    }
+  }
+  const ok = data.monthsAfter !== undefined ||
+    data.countedFrom === "stay" ||
+    data.yellowFever !== undefined ||
+    data.drivingPermit !== undefined ||
+    data.emergencyNumber !== undefined;
   return { ok, data: ok ? data : null, quotes, dropped };
 }
 

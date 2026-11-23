@@ -214,13 +214,16 @@ const TOOLS = {
   passport: {
     name: "passport_validity",
     description:
-      "Report how long a visitor's passport must stay valid, as the page states. monthsAfter is months after the date in countedFrom; use countedFrom 'stay' when it only has to last the visit. blankPages is the number of empty pages needed. Leave out anything the page does not state. Each value needs a quote copied exactly from the page.",
+      "Report how long a visitor's passport must stay valid, as the page states. monthsAfter is months after the date in countedFrom; use countedFrom 'stay' when it only has to last the visit. blankPages is the number of empty pages needed. yellowFever is whether visitors need a yellow fever vaccination certificate: all visitors, only those arriving from countries with yellow fever risk (fromRisk), or no. drivingPermit is whether visitors who drive need an International Driving Permit. emergencyNumber is the country's main emergency phone number, digits only. Leave out anything the page does not state. Each value needs a quote copied exactly from the page.",
     input_schema: {
       type: "object",
       properties: {
         monthsAfter: NUMBER,
         countedFrom: ANSWER({ type: "string", enum: ["departure", "arrival", "stay"] }),
         blankPages: NUMBER,
+        yellowFever: ANSWER({ type: "string", enum: ["all", "fromRisk", "no"] }),
+        drivingPermit: ANSWER({ type: "string", enum: ["required", "recommended", "notNeeded"] }),
+        emergencyNumber: ANSWER({ type: ["string", "null"] }),
       },
     },
   },
