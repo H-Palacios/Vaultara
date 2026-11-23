@@ -12,7 +12,7 @@ import 'package:vaultara/shell/shell_state.dart';
 class PetDocumentActions {
   const PetDocumentActions._();
 
-  static void add(BuildContext context, Pet pet, String group) {
+  static void add(BuildContext context, Pet pet, String group, {String? name}) {
     final shell = ShellState.current;
     if (shell == null) return;
     openAddRecord(
@@ -22,6 +22,7 @@ class PetDocumentActions {
         categoryKey: PetDocumentGroups.category,
         groupKey: group,
         holderId: pet.id,
+        name: name,
       ),
     );
   }
@@ -35,7 +36,7 @@ class PetDocumentActions {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            for (final g in PetDocumentGroups.all)
+            for (final g in PetDocumentGroups.withCare)
               ListTile(
                 leading: Icon(PetDocumentGroups.icon(g)),
                 title: Text(PresetCatalog.groupLabelFor(loc, g)),

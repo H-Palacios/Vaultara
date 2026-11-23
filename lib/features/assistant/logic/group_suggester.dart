@@ -580,6 +580,10 @@ class GroupSuggester {
     'kitten',
     'rabies',
     'microchip',
+    'flea',
+    'fleas',
+    'deworming',
+    'worming',
   ];
   static const List<String> _petLicence = <String>[
     'licence',
@@ -593,6 +597,27 @@ class GroupSuggester {
     'health certificate',
   ];
 
+  static const List<String> _petTreatment = <String>[
+    'flea',
+    'fleas',
+    'tick',
+    'ticks',
+    'worm',
+    'worming',
+    'deworming',
+    'dewormer',
+    'parasite',
+  ];
+
+  static const List<String> _petCheckup = <String>[
+    'check-up',
+    'checkup',
+    'check up',
+    'annual vet',
+    'vet visit',
+    'dental',
+  ];
+
   /// A pet's document, by kind, when the name is clearly about a pet.
   static String? _petGroup(String text) {
     if (!_has(text, _pet)) return null;
@@ -601,6 +626,8 @@ class GroupSuggester {
     }
     if (_has(text, _insurance)) return 'pet_insurances';
     if (_has(text, _petPassport)) return 'pet_passports';
+    if (_has(text, _petTreatment)) return 'pet_treatments';
+    if (_has(text, _petCheckup)) return 'pet_checkups';
     if (_has(text, _petLicence)) return 'pet_licences';
     return 'pet_vaccinations';
   }

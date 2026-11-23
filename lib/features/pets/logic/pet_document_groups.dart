@@ -14,6 +14,8 @@ class PetDocumentGroups {
   static const String licences = 'pet_licences';
   static const String insurances = 'pet_insurances';
   static const String passports = 'pet_passports';
+  static const String treatments = 'pet_treatments';
+  static const String checkups = 'pet_checkups';
 
   static const List<String> all = <String>[
     vaccinations,
@@ -22,6 +24,9 @@ class PetDocumentGroups {
     insurances,
     passports,
   ];
+
+  /// Every group a pet record can be in, care reminders included.
+  static const List<String> withCare = <String>[...all, treatments, checkups];
 
   static IconData icon(String group) {
     switch (group) {
@@ -35,6 +40,10 @@ class PetDocumentGroups {
         return Icons.health_and_safety_rounded;
       case passports:
         return Icons.flight_rounded;
+      case treatments:
+        return Icons.bug_report_rounded;
+      case checkups:
+        return Icons.medical_services_rounded;
     }
     return Icons.pets_rounded;
   }

@@ -386,6 +386,21 @@ class ImportCatalog {
           'animal health certificate',
           'pet travel certificate',
         ],
+        'pet_treatments': <String>[
+          'flea treatment',
+          'tick treatment',
+          'flea and tick',
+          'deworming',
+          'worming',
+          'dewormer',
+        ],
+        'pet_checkups': <String>[
+          'vet check-up',
+          'vet checkup',
+          'annual check-up',
+          'pet check-up',
+          'dental check',
+        ],
       };
 
   CatalogCategory? categoryByKey(String key) {

@@ -75,6 +75,8 @@ class PresetCatalog {
           'pet_microchips',
           'pet_insurances',
           'pet_passports',
+          'pet_treatments',
+          'pet_checkups',
         ],
       };
 
@@ -244,6 +246,10 @@ class PresetCatalog {
         return loc.subcategoryPetInsurances;
       case 'pet_passports':
         return loc.subcategoryPetPassports;
+      case 'pet_treatments':
+        return loc.subcategoryPetTreatments;
+      case 'pet_checkups':
+        return loc.subcategoryPetCheckups;
 
       default:
         // Custom groups show the name the user gave them. Retired preset keys

@@ -24,6 +24,9 @@ class RecordDefaults {
     // Time to book the vet before a booster or licence is due.
     'pet_vaccinations': 21,
     'pet_licences': 21,
+    // A week to buy the next treatment, two to book the vet.
+    'pet_treatments': 7,
+    'pet_checkups': 14,
   };
 
   static const Map<String, int> _repeatByGroup = <String, int>{
@@ -35,6 +38,10 @@ class RecordDefaults {
     'health_insurances': 12,
     'lease_agreements': 12,
     'pet_insurances': 12,
+    // Flea, tick and worm treatments are usually every three months, and a
+    // check-up once a year.
+    'pet_treatments': 3,
+    'pet_checkups': 12,
   };
 
   static const Set<String> _walletGroups = <String>{
