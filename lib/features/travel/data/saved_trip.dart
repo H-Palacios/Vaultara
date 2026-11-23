@@ -16,16 +16,16 @@ class TripChecklistItem {
   });
 
   TripChecklistItem copyWith({String? label, bool? done}) => TripChecklistItem(
-        id: id,
-        label: label ?? this.label,
-        done: done ?? this.done,
-      );
+    id: id,
+    label: label ?? this.label,
+    done: done ?? this.done,
+  );
 
   Map<String, dynamic> toMap() => <String, dynamic>{
-        'id': id,
-        'label': label,
-        'done': done,
-      };
+    'id': id,
+    'label': label,
+    'done': done,
+  };
 
   static TripChecklistItem? fromMap(Object? raw) {
     if (raw is! Map) return null;
@@ -63,14 +63,14 @@ class TripFlight {
   });
 
   Map<String, dynamic> toMap() => <String, dynamic>{
-        'from': from,
-        'to': to,
-        'departDate': Timestamp.fromDate(Dates.only(departDate)),
-        if (departTime != null) 'departTime': departTime,
-        'landDate': Timestamp.fromDate(Dates.only(landDate)),
-        if (landTime != null) 'landTime': landTime,
-        if (toCountry != null) 'toCountry': toCountry,
-      };
+    'from': from,
+    'to': to,
+    'departDate': Timestamp.fromDate(Dates.only(departDate)),
+    if (departTime != null) 'departTime': departTime,
+    'landDate': Timestamp.fromDate(Dates.only(landDate)),
+    if (landTime != null) 'landTime': landTime,
+    if (toCountry != null) 'toCountry': toCountry,
+  };
 
   static String? _time(Object? raw) =>
       raw is String && _timePattern.hasMatch(raw) ? raw : null;
@@ -78,7 +78,8 @@ class TripFlight {
   static String? _country(Object? raw) {
     if (raw is! String) return null;
     final code = raw.trim().toUpperCase();
-    return RegExp(r'^[A-Z]{2}$').hasMatch(code) && Countries.byCode(code) != null
+    return RegExp(r'^[A-Z]{2}$').hasMatch(code) &&
+            Countries.byCode(code) != null
         ? code
         : null;
   }
@@ -199,6 +200,12 @@ class SavedTrip {
   /// Optional cities or towns, for example Durban, or Tokyo and Osaka.
   final List<String> places;
 
+  /// The pets coming along, by id, so their documents are checked against
+  /// the rules of the countries on the trip.
+  final List<String> pets;
+
+  static const int maxPets = 10;
+
   const SavedTrip({
     required this.id,
     required this.name,
@@ -217,6 +224,7 @@ class SavedTrip {
     this.passportChoice = const <String, String>{},
     this.purpose = TripPurposes.fallback,
     this.places = const <String>[],
+    this.pets = const <String>[],
   });
 
   static String visaKey(String traveller, String country) =>
@@ -293,6 +301,7 @@ class SavedTrip {
     Map<String, String>? passportChoice,
     TripPurpose? purpose,
     List<String>? places,
+    List<String>? pets,
   }) {
     return withId(
       id,
@@ -313,6 +322,7 @@ class SavedTrip {
       passportChoice: passportChoice,
       purpose: purpose,
       places: places,
+      pets: pets,
     );
   }
 
@@ -335,6 +345,7 @@ class SavedTrip {
     Map<String, String>? passportChoice,
     TripPurpose? purpose,
     List<String>? places,
+    List<String>? pets,
   }) {
     return SavedTrip(
       id: newId,
@@ -356,6 +367,7 @@ class SavedTrip {
       passportChoice: passportChoice ?? this.passportChoice,
       purpose: purpose ?? this.purpose,
       places: places ?? this.places,
+      pets: pets ?? this.pets,
     );
   }
 
@@ -420,27 +432,28 @@ class SavedTrip {
   }
 
   Map<String, dynamic> toMap() => <String, dynamic>{
-        'name': name,
-        'departure': Timestamp.fromDate(start),
-        'returnDate': Timestamp.fromDate(end),
-        'driving': driving,
-        'needsVisa': needsVisa,
-        'needsVisaManual': needsVisaManual,
-        'purpose': TripPurposes.storageKey(purpose),
-        if (places.isNotEmpty) 'places': places.take(maxPlaces).toList(),
-        'travellers': travellers,
-        'checklist': checklist.map((i) => i.toMap()).toList(),
-        'countries': countries.take(Countries.maxPerTrip).toList(),
-        if (passportRule != null)
-          'passportRule': PassportRules.storageKey(passportRule),
-        if (_storedVisaRecords.isNotEmpty) 'visaRecords': _storedVisaRecords,
-        if (_storedArrivals.isNotEmpty) 'arrivals': _storedArrivals,
-        if (_storedPassportChoice.isNotEmpty)
-          'passportChoice': _storedPassportChoice,
-        if (flights.isNotEmpty)
-          'flights': flights.take(maxFlights).map((f) => f.toMap()).toList(),
-        'updatedAt': FieldValue.serverTimestamp(),
-      };
+    'name': name,
+    'departure': Timestamp.fromDate(start),
+    'returnDate': Timestamp.fromDate(end),
+    'driving': driving,
+    'needsVisa': needsVisa,
+    'needsVisaManual': needsVisaManual,
+    'purpose': TripPurposes.storageKey(purpose),
+    if (places.isNotEmpty) 'places': places.take(maxPlaces).toList(),
+    if (pets.isNotEmpty) 'pets': cleanPets(pets),
+    'travellers': travellers,
+    'checklist': checklist.map((i) => i.toMap()).toList(),
+    'countries': countries.take(Countries.maxPerTrip).toList(),
+    if (passportRule != null)
+      'passportRule': PassportRules.storageKey(passportRule),
+    if (_storedVisaRecords.isNotEmpty) 'visaRecords': _storedVisaRecords,
+    if (_storedArrivals.isNotEmpty) 'arrivals': _storedArrivals,
+    if (_storedPassportChoice.isNotEmpty)
+      'passportChoice': _storedPassportChoice,
+    if (flights.isNotEmpty)
+      'flights': flights.take(maxFlights).map((f) => f.toMap()).toList(),
+    'updatedAt': FieldValue.serverTimestamp(),
+  };
 
   static DateTime? _date(Object? value) {
     if (value is Timestamp) return Dates.only(value.toDate());
@@ -481,12 +494,13 @@ class SavedTrip {
 
   static List<TripFlight> _flightsFrom(Object? raw) {
     if (raw is! List) return const <TripFlight>[];
-    final out = raw
-        .take(maxFlights)
-        .map(TripFlight.fromMap)
-        .whereType<TripFlight>()
-        .toList()
-      ..sort(TripFlight.compare);
+    final out =
+        raw
+            .take(maxFlights)
+            .map(TripFlight.fromMap)
+            .whereType<TripFlight>()
+            .toList()
+          ..sort(TripFlight.compare);
     return out;
   }
 
@@ -499,8 +513,8 @@ class SavedTrip {
     final joined = places.isEmpty
         ? country
         : (country.isEmpty
-            ? places.join(', ')
-            : '${places.join(', ')}, $country');
+              ? places.join(', ')
+              : '${places.join(', ')}, $country');
     if (joined.length <= maxNameLength) return joined;
     return joined.substring(0, maxNameLength).trimRight();
   }
@@ -519,6 +533,19 @@ class SavedTrip {
       if (out.any((p) => p.toLowerCase() == place.toLowerCase())) continue;
       out.add(place);
       if (out.length >= maxPlaces) break;
+    }
+    return out;
+  }
+
+  /// Pet ids without repeats, at most [maxPets].
+  static List<String> cleanPets(Iterable<Object?> raw) {
+    final out = <String>[];
+    for (final item in raw) {
+      if (item is! String) continue;
+      final id = item.trim();
+      if (id.isEmpty || id.length > 128 || out.contains(id)) continue;
+      out.add(id);
+      if (out.length >= maxPets) break;
     }
     return out;
   }
@@ -557,10 +584,10 @@ class SavedTrip {
     final rawChecklist = map['checklist'];
     final checklist = rawChecklist is List
         ? rawChecklist
-            .map(TripChecklistItem.fromMap)
-            .whereType<TripChecklistItem>()
-            .where((i) => i.done || !_retiredItems.contains(i.id))
-            .toList()
+              .map(TripChecklistItem.fromMap)
+              .whereType<TripChecklistItem>()
+              .where((i) => i.done || !_retiredItems.contains(i.id))
+              .toList()
         : <TripChecklistItem>[];
 
     return SavedTrip(
@@ -570,7 +597,8 @@ class SavedTrip {
       returnDate: returnDate.isBefore(departure) ? departure : returnDate,
       driving: map['driving'] == true,
       needsVisa: map['needsVisa'] == true,
-      needsVisaManual: map['needsVisaManual'] == true ||
+      needsVisaManual:
+          map['needsVisaManual'] == true ||
           (!map.containsKey('needsVisaManual') && map['needsVisa'] == true),
       travellers: travellers.isEmpty ? const <String>[me] : travellers,
       checklist: checklist,
@@ -583,6 +611,9 @@ class SavedTrip {
       purpose: TripPurposes.fromStorage(map['purpose']),
       places: map['places'] is List
           ? cleanPlaces(map['places'] as List)
+          : const <String>[],
+      pets: map['pets'] is List
+          ? cleanPets(map['pets'] as List)
           : const <String>[],
     );
   }

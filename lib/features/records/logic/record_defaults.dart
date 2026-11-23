@@ -21,6 +21,9 @@ class RecordDefaults {
     'study_permits': 60,
     'driving_licences': 28,
     'vehicle_registrations': 21,
+    // Time to book the vet before a booster or licence is due.
+    'pet_vaccinations': 21,
+    'pet_licences': 21,
   };
 
   static const Map<String, int> _repeatByGroup = <String, int>{
@@ -31,6 +34,7 @@ class RecordDefaults {
     'life_insurances': 12,
     'health_insurances': 12,
     'lease_agreements': 12,
+    'pet_insurances': 12,
   };
 
   static const Set<String> _walletGroups = <String>{
