@@ -65,6 +65,12 @@
       "indexes": []
     },
     {
+      "collectionGroup": "staffOverdueLog",
+      "fieldPath": "expireAt",
+      "ttl": true,
+      "indexes": []
+    },
+    {
       "collectionGroup": "securityEvents",
       "fieldPath": "expireAt",
       "ttl": true,
