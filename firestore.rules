@@ -193,7 +193,8 @@ service cloud.firestore {
     function validPet() {
       let d = request.resource.data;
       return d.keys().hasOnly(['name', 'type', 'customType', 'colourIndex', 'birthDate',
-                               'microchip', 'chipRegistry', 'vetName', 'vetPhone'])
+                               'microchip', 'chipRegistry', 'vetName', 'vetPhone',
+                               'customGroup', 'customEmoji', 'photoVersion'])
         && d.name is string && d.name.size() > 0 && d.name.size() <= 40
         && d.type in ['dog', 'cat', 'ferret', 'rabbit', 'guinea_pig', 'hamster', 'rat', 'mouse',
                      'gerbil', 'chinchilla', 'hedgehog', 'horse', 'pony', 'donkey',
@@ -207,7 +208,11 @@ service cloud.firestore {
         && (!('microchip' in d) || (d.microchip is string && d.microchip.matches('^[0-9]{9,15}$')))
         && (!('chipRegistry' in d) || (d.chipRegistry is string && d.chipRegistry.size() <= 60))
         && (!('vetName' in d) || (d.vetName is string && d.vetName.size() <= 60))
-        && (!('vetPhone' in d) || (d.vetPhone is string && d.vetPhone.matches('^[0-9+() -]{3,30}$')));
+        && (!('vetPhone' in d) || (d.vetPhone is string && d.vetPhone.matches('^[0-9+() -]{3,30}$')))
+        && (!('customGroup' in d) || (d.type == 'custom' && d.customGroup in
+            ['dog', 'cat', 'ferret', 'rabbit', 'rodent', 'bird', 'reptile', 'amphibian', 'fish', 'horse', 'other']))
+        && (!('customEmoji' in d) || (d.type == 'custom' && d.customEmoji is string && d.customEmoji.size() <= 4))
+        && (!('photoVersion' in d) || (d.photoVersion is int && d.photoVersion > 0 && d.photoVersion <= 1000000));
     }
 
     function validRenewalPlan() {
@@ -855,6 +860,15 @@ service cloud.firestore {
           && request.resource.data.createdBy == resource.data.createdBy;
         allow delete: if canEditHousehold(hid)
           && mayRemoveHouseholdRecord(hid);
+      }
+
+      // Business change history: written only by the server, read only by
+      // the household's owner while the household is on the Business plan.
+      match /history/{entryId} {
+        allow read: if signedIn()
+          && request.auth.uid == householdData(hid).get('ownerUid', '')
+          && householdData(hid).get('tier', 'free') == 'business';
+        allow write: if false;
       }
 
       match /{other=**} {
