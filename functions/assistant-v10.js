@@ -25,6 +25,7 @@ const PRESET_CATEGORIES = [
   "property_and_housing",
   "health_and_medical",
   "memberships_and_subscriptions",
+  "pets_and_animals",
 ];
 
 const VISA_STATUS = {

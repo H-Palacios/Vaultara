@@ -103,6 +103,11 @@ const GROUP_ALIASES = {
     "assinatura", "abbonamento", "подписка",
   ],
   warranties: ["warranty", "guarantee", "garantie", "garantia", "garanzia", "гарантия"],
+  pet_vaccinations: ["pet vaccination", "dog vaccination", "cat vaccination", "rabies", "tollwut", "rabia"],
+  pet_licences: ["pet licence", "pet license", "dog licence", "dog license", "hundemarke"],
+  pet_microchips: ["microchip", "pet chip", "mikrochip", "puce"],
+  pet_insurances: ["pet insurance", "dog insurance", "cat insurance", "tierversicherung"],
+  pet_passports: ["pet passport", "animal passport", "heimtierausweis", "passeport animal"],
 };
 
 const CATEGORY_ALIASES = {
@@ -118,6 +123,7 @@ const CATEGORY_ALIASES = {
   property_and_housing: ["home", "house", "property", "housing", "flat", "apartment", "wohnung", "maison"],
   health_and_medical: ["health", "medical", "doctor", "gesundheit", "sante", "salud", "saude"],
   memberships_and_subscriptions: ["memberships", "subscriptions", "abos"],
+  pets_and_animals: ["pets", "pet", "animals", "dog", "cat", "haustier", "animaux", "mascotas", "animali"],
 };
 
 function clean(value) {

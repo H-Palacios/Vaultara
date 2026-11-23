@@ -111,6 +111,11 @@ const GROUPS_V9 = {
   club_memberships: "memberships_and_subscriptions",
   subscriptions: "memberships_and_subscriptions",
   warranties: "memberships_and_subscriptions",
+  pet_vaccinations: "pets_and_animals",
+  pet_licences: "pets_and_animals",
+  pet_microchips: "pets_and_animals",
+  pet_insurances: "pets_and_animals",
+  pet_passports: "pets_and_animals",
 };
 
 const SCREENS = [
