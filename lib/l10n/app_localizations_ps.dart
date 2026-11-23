@@ -974,7 +974,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'د Premium سره تاسو کولی شئ د یادونې خپلې نېټې وټاکئ.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'د یادونې د بدلولو یا زیاتولو لپاره خپلې نېټې وټاکئ ټک کړئ.';
+  String get tutorialRemindersOwnDatesPremium => 'د یادونې د بدلولو یا زیاتولو لپاره کولی شئ خپلې نېټې وټاکئ ټک کړئ.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'نن پای ته رسېږي';
@@ -3479,10 +3479,10 @@ class AppLocalizationsPs extends AppLocalizations {
   String get tutorialTravelLocked => 'له پریمیم سره تاسو کولای شئ سفرونه پلان کړئ او وګورئ چې هر مسافر باید د تګ دمخه کوم اسناد نوي کړي.';
 
   @override
-  String get tutorialTravelTripCard => 'هر سفر ښيي چې تاسو کله روانېږئ او د تګ دمخه څه باید سم شي. د پرانیستلو لپاره پر سفر ټک کړئ.';
+  String get tutorialTravelTripCard => 'هر سفر ښيي چې تاسو کله روانېږئ او د تګ دمخه څه باید سم شي. د پرانیستلو لپاره کولی شئ پر سفر ټک کړئ.';
 
   @override
-  String get tutorialTravelPlanTrip => 'پر د سفر پلان جوړ کړئ ټک کړئ ترڅو اضافه کړئ چېرته ځئ، کله، او څوک سفر کوي.';
+  String get tutorialTravelPlanTrip => 'تاسو کولی شئ پر د سفر پلان جوړ کړئ ټک کړئ ترڅو اضافه کړئ چېرته ځئ، کله، او څوک سفر کوي.';
 
   @override
   String get tutorialTravelTripDocuments => 'د سفر په دننه کې، Vaultara د هر مسافر ریکارډونه د سفر له نېټو سره چک کوي او ښيي چې څه باید نوي شي.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get tutorialFamilyMe => 'دا تاسو یاست. هر ریکارډ چې د بل چا نه وي ستاسو سره پاتې کېږي.';
 
   @override
-  String get tutorialFamilyAddPerson => 'پر کس اضافه کړئ ټک کړئ ترڅو یو چا ته چې ساتنه یې کوئ اضافه کړئ، لکه ملګری، ماشوم یا مور او پلار.';
+  String get tutorialFamilyAddPerson => 'تاسو کولی شئ پر کس اضافه کړئ ټک کړئ ترڅو یو چا ته چې ساتنه یې کوئ اضافه کړئ، لکه ملګری، ماشوم یا مور او پلار.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'د کورنۍ یا سوداګرۍ پلان سره تاسو کولای شئ هغه خلک اضافه کړئ چې ساتنه یې کوئ او د دوی ریکارډونه هم دلته وساتئ.';
@@ -7895,7 +7895,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get tourHome2Title => 'هر څه ومومئ';
 
   @override
-  String get tourHome2Body => 'د نوم، ډلې یا کس له مخې د ریکارډ موندلو لپاره لټون ټک کړئ.';
+  String get tourHome2Body => 'د نوم، ډلې یا کس له مخې د ریکارډ موندلو لپاره کولی شئ لټون ټک کړئ.';
 
   @override
   String get tourHome3Title => 'سفرونه او پلانونه';
@@ -7913,7 +7913,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get tourRenew1Title => 'یادونه راځي';
 
   @override
-  String get tourRenew1Body => 'مخکې له دې چې ریکارډ پای ته ورسېږي، Vaultara تاسو ته یادونه کوي. د ریکارډ پرانیستلو لپاره یادونه ټک کړئ.';
+  String get tourRenew1Body => 'مخکې له دې چې ریکارډ پای ته ورسېږي، Vaultara تاسو ته یادونه کوي. د ریکارډ پرانیستلو لپاره کولی شئ یادونه ټک کړئ.';
 
   @override
   String get tourRenew2Title => 'نوې نیټه خوندي کړئ';
@@ -7943,7 +7943,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get tourAsk2Title => 'د لیکلو پر ځای خبرې وکړئ';
 
   @override
-  String get tourAsk2Body => 'مایکروفون ټک کړئ او خبرې وکړئ. ستاسو ټکي د خبرو پر مهال ښکاري او سمدستي لېږلی شئ.';
+  String get tourAsk2Body => 'تاسو کولی شئ مایکروفون ټک کړئ او خبرې وکړئ. ستاسو ټکي د خبرو پر مهال ښکاري او سمدستي لېږلی شئ.';
 
   @override
   String get tourAsk3Title => 'هر بدلون تاسو تاییدوئ';

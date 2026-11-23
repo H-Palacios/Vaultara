@@ -978,7 +978,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'S Premium lahko izberete svoje datume opomnikov.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Tapnite Izberite svoje datume, da spremenite opomnik ali dodate novega.';
+  String get tutorialRemindersOwnDatesPremium => 'Lahko tapnete Izberite svoje datume, da spremenite opomnik ali dodate novega.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Izteče se danes';
@@ -3547,10 +3547,10 @@ class AppLocalizationsSl extends AppLocalizations {
   String get tutorialTravelLocked => 'S Premium lahko načrtujete potovanja in vidite, katere dokumente mora vsak potnik obnoviti pred odhodom.';
 
   @override
-  String get tutorialTravelTripCard => 'Vsako potovanje prikaže, kdaj odhajate in kaj je treba urediti pred odhodom. Tapnite potovanje, da ga odprete.';
+  String get tutorialTravelTripCard => 'Vsako potovanje prikaže, kdaj odhajate in kaj je treba urediti pred odhodom. Lahko tapnete potovanje, da ga odprete.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Tapnite Načrtuj potovanje, da dodate, kam greste, kdaj in kdo potuje.';
+  String get tutorialTravelPlanTrip => 'Lahko tapnete Načrtuj potovanje, da dodate, kam greste, kdaj in kdo potuje.';
 
   @override
   String get tutorialTravelTripDocuments => 'Znotraj potovanja Vaultara preveri zapise vsakega potnika glede na datume potovanja in pokaže, kaj je treba obnoviti.';
@@ -3574,7 +3574,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get tutorialFamilyMe => 'To ste vi. Vsak zapis, ki ne pripada nekomu drugemu, ostane pri vas.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Tapnite Dodaj osebo, da dodate nekoga, za koga skrbite, na primer partnerja, otroka ali starša.';
+  String get tutorialFamilyAddPerson => 'Lahko tapnete Dodaj osebo, da dodate nekoga, za koga skrbite, na primer partnerja, otroka ali starša.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'S paketom Družina ali Poslovni paket lahko dodate ljudi, za katere skrbite, in tudi njihove zapise hranite tukaj.';
@@ -8035,7 +8035,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get tourHome2Title => 'Najdite vse';
 
   @override
-  String get tourHome2Body => 'Tapnite iskanje in poiščite zapis po imenu, skupini ali osebi.';
+  String get tourHome2Body => 'Lahko tapnete iskanje in poiščete zapis po imenu, skupini ali osebi.';
 
   @override
   String get tourHome3Title => 'Potovanja in načrti';
@@ -8053,7 +8053,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get tourRenew1Title => 'Pride opomnik';
 
   @override
-  String get tourRenew1Body => 'Preden zapis poteče, vas Vaultara opomni. Tapnite opomnik, da odprete zapis.';
+  String get tourRenew1Body => 'Preden zapis poteče, vas Vaultara opomni. Lahko tapnete opomnik, da odprete zapis.';
 
   @override
   String get tourRenew2Title => 'Shranite nov datum';
@@ -8083,7 +8083,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get tourAsk2Title => 'Govorite namesto tipkanja';
 
   @override
-  String get tourAsk2Body => 'Tapnite mikrofon in govorite. Besede se prikazujejo med govorjenjem in lahko takoj pošljete.';
+  String get tourAsk2Body => 'Lahko tapnete mikrofon in govorite. Besede se prikazujejo med govorjenjem in lahko takoj pošljete.';
 
   @override
   String get tourAsk3Title => 'Vsako spremembo potrdite vi';

@@ -974,7 +974,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Met Premium kan jy jou eie herinneringsdatums kies.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Tik op Kies jou eie datums om \'n herinnering te verander of een by te voeg.';
+  String get tutorialRemindersOwnDatesPremium => 'Jy kan op Kies jou eie datums tik om \'n herinnering te verander of een by te voeg.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Verval vandag';
@@ -3479,10 +3479,10 @@ class AppLocalizationsAf extends AppLocalizations {
   String get tutorialTravelLocked => 'Met Premium kan jy reise beplan en sien watter dokumente elke reisiger moet hernu voor vertrek.';
 
   @override
-  String get tutorialTravelTripCard => 'Elke reis wys wanneer jy vertrek en wat reggemaak moet word voor jy gaan. Tik op \'n reis om dit oop te maak.';
+  String get tutorialTravelTripCard => 'Elke reis wys wanneer jy vertrek en wat reggemaak moet word voor jy gaan. Jy kan op \'n reis tik om dit oop te maak.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Tik Beplan \'n reis om by te voeg waarheen jy gaan, wanneer, en wie reis.';
+  String get tutorialTravelPlanTrip => 'Jy kan Beplan \'n reis tik om by te voeg waarheen jy gaan, wanneer, en wie reis.';
 
   @override
   String get tutorialTravelTripDocuments => 'In \'n reis vergelyk Vaultara elke reisiger se rekords met die reisdatums en wys wat hernu moet word.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get tutorialFamilyMe => 'Dit is jy. Enige rekord wat nie aan iemand anders behoort nie, bly by jou.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Tik Voeg persoon by om iemand by te voeg vir wie jy sorg, soos \'n maat, kind of ouer.';
+  String get tutorialFamilyAddPerson => 'Jy kan Voeg persoon by tik om iemand by te voeg vir wie jy sorg, soos \'n maat, kind of ouer.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Met \'n Gesin- of Besigheid-plan kan jy die mense vir wie jy sorg byvoeg en hul rekords ook hier hou.';
@@ -7899,7 +7899,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get tourHome2Title => 'Vind enigiets';
 
   @override
-  String get tourHome2Body => 'Tik op soek om \'n inskrywing volgens naam, groep of persoon te vind.';
+  String get tourHome2Body => 'Jy kan op soek tik om \'n inskrywing volgens naam, groep of persoon te vind.';
 
   @override
   String get tourHome3Title => 'Reise en planne';
@@ -7917,7 +7917,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get tourRenew1Title => '\'n Herinnering kom';
 
   @override
-  String get tourRenew1Body => 'Voordat \'n inskrywing verval, herinner Vaultara jou. Tik op die herinnering om die inskrywing oop te maak.';
+  String get tourRenew1Body => 'Voordat \'n inskrywing verval, herinner Vaultara jou. Jy kan op die herinnering tik om die inskrywing oop te maak.';
 
   @override
   String get tourRenew2Title => 'Stoor die nuwe datum';
@@ -7947,7 +7947,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get tourAsk2Title => 'Praat in plaas van tik';
 
   @override
-  String get tourAsk2Body => 'Tik op die mikrofoon en praat. Jou woorde verskyn terwyl jy praat en jy kan dadelik stuur.';
+  String get tourAsk2Body => 'Jy kan op die mikrofoon tik en praat. Jou woorde verskyn terwyl jy praat en jy kan dadelik stuur.';
 
   @override
   String get tourAsk3Title => 'Jy bevestig elke verandering';

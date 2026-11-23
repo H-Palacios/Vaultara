@@ -977,7 +977,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Уз Premium можете изабрати своје датуме подсетника.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Додирните Изаберите своје датуме да промените подсетник или додате нови.';
+  String get tutorialRemindersOwnDatesPremium => 'Можете да додирнете Изаберите своје датуме да промените подсетник или додате нови.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Истиче данас';
@@ -3513,10 +3513,10 @@ class AppLocalizationsSr extends AppLocalizations {
   String get tutorialTravelLocked => 'Уз Premium можете планирати путовања и видети које документе сваки путник треба да обнови пре поласка.';
 
   @override
-  String get tutorialTravelTripCard => 'Свако путовање приказује када полазите и шта треба средити пре поласка. Додирните путовање да га отворите.';
+  String get tutorialTravelTripCard => 'Свако путовање приказује када полазите и шта треба средити пре поласка. Можете да додирнете путовање да га отворите.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Додирните Планирај путовање да додате куда идете, када и ко путује.';
+  String get tutorialTravelPlanTrip => 'Можете да додирнете Планирај путовање да додате куда идете, када и ко путује.';
 
   @override
   String get tutorialTravelTripDocuments => 'Унутар путовања Vaultara проверава записе сваког путника према датумима путовања и показује шта треба обновити.';
@@ -3540,7 +3540,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get tutorialFamilyMe => 'Ово сте ви. Сваки запис који не припада неком другом остаје код вас.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Додирните Додај особу да додате некога о коме бринете, попут партнера, детета или родитеља.';
+  String get tutorialFamilyAddPerson => 'Можете да додирнете Додај особу да додате некога о коме бринете, попут партнера, детета или родитеља.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Уз Породични или Пословни план можете додати особе о којима бринете и чувати њихове записе овде.';
@@ -7965,7 +7965,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get tourHome2Title => 'Пронађите све';
 
   @override
-  String get tourHome2Body => 'Додирните претрагу да пронађете запис по називу, групи или особи.';
+  String get tourHome2Body => 'Можете да додирнете претрагу да пронађете запис по називу, групи или особи.';
 
   @override
   String get tourHome3Title => 'Путовања и планови';
@@ -7983,7 +7983,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get tourRenew1Title => 'Стиже подсетник';
 
   @override
-  String get tourRenew1Body => 'Пре него што запис истекне, Vaultara вас подсети. Додирните подсетник да отворите запис.';
+  String get tourRenew1Body => 'Пре него што запис истекне, Vaultara вас подсети. Можете да додирнете подсетник да отворите запис.';
 
   @override
   String get tourRenew2Title => 'Сачувајте нови датум';
@@ -8013,7 +8013,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get tourAsk2Title => 'Говорите уместо куцања';
 
   @override
-  String get tourAsk2Body => 'Додирните микрофон и говорите. Речи се појављују док говорите и можете одмах послати.';
+  String get tourAsk2Body => 'Можете да додирнете микрофон и говорите. Речи се појављују док говорите и можете одмах послати.';
 
   @override
   String get tourAsk3Title => 'Сваку промену потврђујете ви';
@@ -10904,7 +10904,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get tutorialRemindersOwnDatesFree => 'Уз Premium можете изабрати своје датуме подсетника.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Додирните Изаберите своје датуме да промените подсетник или додате нови.';
+  String get tutorialRemindersOwnDatesPremium => 'Можете да додирнете Изаберите своје датуме да промените подсетник или додате нови.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Истиче данас';
@@ -13440,10 +13440,10 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get tutorialTravelLocked => 'Уз Premium можете планирати путовања и видети која документа сваки путник треба да обнови пре поласка.';
 
   @override
-  String get tutorialTravelTripCard => 'Свако путовање показује када полазите и шта треба средити пре поласка. Додирните путовање да га отворите.';
+  String get tutorialTravelTripCard => 'Свако путовање приказује када полазите и шта треба средити пре поласка. Можете да додирнете путовање да га отворите.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Додирните Планирај путовање да додате куда идете, када и ко путује.';
+  String get tutorialTravelPlanTrip => 'Можете да додирнете Планирај путовање да додате куда идете, када и ко путује.';
 
   @override
   String get tutorialTravelTripDocuments => 'Унутар путовања, Vaultara проверава записе сваког путника према датумима путовања и показује шта треба обновити.';
@@ -13467,7 +13467,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get tutorialFamilyMe => 'Ово сте ви. Сваки запис који не припада неком другом остаје код вас.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Додирните Додај особу да додате некога о коме бринете, као што је партнер, дете или родитељ.';
+  String get tutorialFamilyAddPerson => 'Можете да додирнете Додај особу да додате некога о коме бринете, попут партнера, детета или родитеља.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Уз план Family или Business можете додати људе о којима бринете и овде чувати и њихове записе.';
@@ -17892,7 +17892,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get tourHome2Title => 'Пронађите све';
 
   @override
-  String get tourHome2Body => 'Додирните претрагу да пронађете запис по називу, групи или особи.';
+  String get tourHome2Body => 'Можете да додирнете претрагу да пронађете запис по називу, групи или особи.';
 
   @override
   String get tourHome3Title => 'Путовања и планови';
@@ -17910,7 +17910,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get tourRenew1Title => 'Стиже подсетник';
 
   @override
-  String get tourRenew1Body => 'Пре него што запис истекне, Vaultara вас подсети. Додирните подсетник да отворите запис.';
+  String get tourRenew1Body => 'Пре него што запис истекне, Vaultara вас подсети. Можете да додирнете подсетник да отворите запис.';
 
   @override
   String get tourRenew2Title => 'Сачувајте нови датум';
@@ -17940,7 +17940,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get tourAsk2Title => 'Говорите уместо куцања';
 
   @override
-  String get tourAsk2Body => 'Додирните микрофон и говорите. Речи се појављују док говорите и можете одмах послати.';
+  String get tourAsk2Body => 'Можете да додирнете микрофон и говорите. Речи се појављују док говорите и можете одмах послати.';
 
   @override
   String get tourAsk3Title => 'Сваку промену потврђујете ви';
@@ -20831,7 +20831,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get tutorialRemindersOwnDatesFree => 'Uz Premium možete izabrati svoje datume podsetnika.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Dodirnite Izaberite svoje datume da promenite podsetnik ili dodate novi.';
+  String get tutorialRemindersOwnDatesPremium => 'Možete da dodirnete Izaberite svoje datume da promenite podsetnik ili dodate novi.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Ističe danas';
@@ -23363,10 +23363,10 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get tutorialTravelLocked => 'Uz Premium možete planirati putovanja i videti koja dokumenta svaki putnik mora da obnovi pre polaska.';
 
   @override
-  String get tutorialTravelTripCard => 'Svako putovanje prikazuje kada polazite i sve što treba rešiti pre polaska. Dodirnite putovanje da ga otvorite.';
+  String get tutorialTravelTripCard => 'Svako putovanje prikazuje kada polazite i sve što treba rešiti pre polaska. Možete da dodirnete putovanje da ga otvorite.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Dodirnite Planiraj putovanje da dodate kuda idete, kada i ko putuje.';
+  String get tutorialTravelPlanTrip => 'Možete da dodirnete Planiraj putovanje da dodate kuda idete, kada i ko putuje.';
 
   @override
   String get tutorialTravelTripDocuments => 'Unutar putovanja Vaultara proverava zapise svakog putnika prema datumima putovanja i prikazuje šta treba obnoviti.';
@@ -23390,7 +23390,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get tutorialFamilyMe => 'Ovo ste vi. Svaki zapis koji ne pripada nekom drugom ostaje kod vas.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Dodirnite Dodaj osobu da dodate nekoga o kome se starate, poput partnera, deteta ili roditelja.';
+  String get tutorialFamilyAddPerson => 'Možete da dodirnete Dodaj osobu da dodate nekoga o kome se starate, poput partnera, deteta ili roditelja.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Uz porodični ili poslovni plan možete dodati osobe o kojima se starate i čuvati i njihove zapise ovde.';
@@ -27815,7 +27815,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get tourHome2Title => 'Pronađite sve';
 
   @override
-  String get tourHome2Body => 'Dodirnite pretragu da pronađete zapis po nazivu, grupi ili osobi.';
+  String get tourHome2Body => 'Možete da dodirnete pretragu da pronađete zapis po nazivu, grupi ili osobi.';
 
   @override
   String get tourHome3Title => 'Putovanja i planovi';
@@ -27833,7 +27833,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get tourRenew1Title => 'Stiže podsetnik';
 
   @override
-  String get tourRenew1Body => 'Pre nego što zapis istekne, Vaultara vas podseti. Dodirnite podsetnik da otvorite zapis.';
+  String get tourRenew1Body => 'Pre nego što zapis istekne, Vaultara vas podseti. Možete da dodirnete podsetnik da otvorite zapis.';
 
   @override
   String get tourRenew2Title => 'Sačuvajte novi datum';
@@ -27863,7 +27863,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get tourAsk2Title => 'Govorite umesto kucanja';
 
   @override
-  String get tourAsk2Body => 'Dodirnite mikrofon i govorite. Reči se pojavljuju dok govorite i možete odmah poslati.';
+  String get tourAsk2Body => 'Možete da dodirnete mikrofon i govorite. Reči se pojavljuju dok govorite i možete odmah poslati.';
 
   @override
   String get tourAsk3Title => 'Svaku promenu potvrđujete vi';

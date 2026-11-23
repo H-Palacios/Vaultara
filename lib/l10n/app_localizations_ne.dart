@@ -974,7 +974,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Premium सँग तपाईं आफ्नै रिमाइन्डर मितिहरू छान्न सक्नुहुन्छ।';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'रिमाइन्डर बदल्न वा थप्न आफ्नै मितिहरू छान्नुहोस् मा ट्याप गर्नुहोस्।';
+  String get tutorialRemindersOwnDatesPremium => 'रिमाइन्डर बदल्न वा थप्न तपाईं आफ्नै मितिहरू छान्नुहोस् मा ट्याप गर्न सक्नुहुन्छ।';
 
   @override
   String get smartInsightExpiresTodayHeading => 'आजै समाप्त हुँदैछ';
@@ -3479,10 +3479,10 @@ class AppLocalizationsNe extends AppLocalizations {
   String get tutorialTravelLocked => 'प्रिमियमसँग तपाईं यात्रा योजना बनाउन सक्नुहुन्छ र जानु अगाडि हरेक यात्रुले कुन कागजात नवीकरण गर्नुपर्छ हेर्न सक्नुहुन्छ।';
 
   @override
-  String get tutorialTravelTripCard => 'हरेक यात्राले तपाईं कहिले प्रस्थान गर्नुहुन्छ र जानु अगाडि के ठीक गर्नुपर्छ देखाउँछ। यात्रा खोल्न त्यसमा थिच्नुहोस्।';
+  String get tutorialTravelTripCard => 'हरेक यात्राले तपाईं कहिले प्रस्थान गर्नुहुन्छ र जानु अगाडि के ठीक गर्नुपर्छ देखाउँछ। यात्रा खोल्न तपाईं त्यसमा थिच्न सक्नुहुन्छ।';
 
   @override
-  String get tutorialTravelPlanTrip => 'कहाँ जाने, कहिले र को यात्रा गर्दैछ थप्न यात्राको योजना बनाउनुहोस् थिच्नुहोस्।';
+  String get tutorialTravelPlanTrip => 'कहाँ जाने, कहिले र को यात्रा गर्दैछ थप्न तपाईं यात्राको योजना बनाउनुहोस् थिच्न सक्नुहुन्छ।';
 
   @override
   String get tutorialTravelTripDocuments => 'यात्राभित्र, Vaultara ले हरेक यात्रुका रेकर्ड यात्राका मितिसँग जाँच्छ र के नवीकरण गर्नुपर्छ देखाउँछ।';
@@ -3506,7 +3506,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get tutorialFamilyMe => 'यो तपाईं हो। अरू कसैको नभएको हरेक रेकर्ड तपाईंसँगै रहन्छ।';
 
   @override
-  String get tutorialFamilyAddPerson => 'जीवनसाथी, बच्चा वा आमाबुबा जस्तो तपाईंले हेरचाह गर्ने कसैलाई थप्न व्यक्ति थप्नुहोस् थिच्नुहोस्।';
+  String get tutorialFamilyAddPerson => 'जीवनसाथी, बच्चा वा आमाबुबा जस्तो तपाईंले हेरचाह गर्ने कसैलाई थप्न तपाईं व्यक्ति थप्नुहोस् थिच्न सक्नुहुन्छ।';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'परिवार वा व्यवसाय योजनासँग तपाईं आफूले हेरचाह गर्ने मानिसहरू थप्न र उनीहरूका रेकर्ड पनि यहीँ राख्न सक्नुहुन्छ।';
@@ -7895,7 +7895,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get tourHome2Title => 'जे पनि खोज्नुहोस्';
 
   @override
-  String get tourHome2Body => 'नाम, समूह वा व्यक्तिअनुसार रेकर्ड खोज्न खोजीमा ट्याप गर्नुहोस्।';
+  String get tourHome2Body => 'नाम, समूह वा व्यक्तिअनुसार रेकर्ड खोज्न तपाईं खोजीमा ट्याप गर्न सक्नुहुन्छ।';
 
   @override
   String get tourHome3Title => 'यात्रा र योजना';
@@ -7913,7 +7913,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get tourRenew1Title => 'रिमाइन्डर आउँछ';
 
   @override
-  String get tourRenew1Body => 'रेकर्डको म्याद सकिनुअघि Vaultara ले सम्झाउँछ। रेकर्ड खोल्न रिमाइन्डरमा ट्याप गर्नुहोस्।';
+  String get tourRenew1Body => 'रेकर्डको म्याद सकिनुअघि Vaultara ले सम्झाउँछ। रेकर्ड खोल्न तपाईं रिमाइन्डरमा ट्याप गर्न सक्नुहुन्छ।';
 
   @override
   String get tourRenew2Title => 'नयाँ मिति सेभ गर्नुहोस्';
@@ -7943,7 +7943,7 @@ class AppLocalizationsNe extends AppLocalizations {
   String get tourAsk2Title => 'टाइप गर्नुको सट्टा बोल्नुहोस्';
 
   @override
-  String get tourAsk2Body => 'माइकमा ट्याप गरी बोल्नुहोस्। बोल्दै गर्दा शब्द देखिन्छन् र तुरुन्त पठाउन सक्नुहुन्छ।';
+  String get tourAsk2Body => 'तपाईं माइकमा ट्याप गरी बोल्न सक्नुहुन्छ। बोल्दै गर्दा शब्द देखिन्छन् र तुरुन्त पठाउन सक्नुहुन्छ।';
 
   @override
   String get tourAsk3Title => 'हरेक परिवर्तन तपाईं पुष्टि गर्नुहुन्छ';

@@ -974,7 +974,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Premium-ით შეგიძლიათ საკუთარი შეხსენების თარიღების არჩევა.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'შეეხეთ აირჩიეთ საკუთარი თარიღები, რომ შეცვალოთ შეხსენება ან დაამატოთ ახალი.';
+  String get tutorialRemindersOwnDatesPremium => 'შეგიძლიათ შეეხოთ აირჩიეთ საკუთარი თარიღები, რომ შეცვალოთ შეხსენება ან დაამატოთ ახალი.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'ვადა იწურება დღეს';
@@ -3479,10 +3479,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get tutorialTravelLocked => 'პრემიუმით შეგიძლიათ მოგზაურობების დაგეგმვა და ნახვა, რომელი დოკუმენტები უნდა განაახლოს თითოეულმა მოგზაურმა წასვლამდე.';
 
   @override
-  String get tutorialTravelTripCard => 'თითოეული მოგზაურობა გაჩვენებთ, როდის მიდიხართ და რა უნდა მოგვარდეს წასვლამდე. შეეხეთ მოგზაურობას მის გასახსნელად.';
+  String get tutorialTravelTripCard => 'თითოეული მოგზაურობა გაჩვენებთ, როდის მიდიხართ და რა უნდა მოგვარდეს წასვლამდე. შეგიძლიათ შეეხოთ მოგზაურობას მის გასახსნელად.';
 
   @override
-  String get tutorialTravelPlanTrip => 'შეეხეთ მოგზაურობის დაგეგმვას, რომ დაამატოთ, საით მიდიხართ, როდის და ვინ მოგზაურობს.';
+  String get tutorialTravelPlanTrip => 'შეგიძლიათ შეეხოთ მოგზაურობის დაგეგმვას, რომ დაამატოთ, საით მიდიხართ, როდის და ვინ მოგზაურობს.';
 
   @override
   String get tutorialTravelTripDocuments => 'მოგზაურობის შიგნით Vaultara ამოწმებს თითოეული მოგზაურის ჩანაწერებს მოგზაურობის თარიღებთან და გაჩვენებთ, რა უნდა განახლდეს.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get tutorialFamilyMe => 'ეს თქვენ ხართ. ყველა ჩანაწერი, რომელიც სხვას არ ეკუთვნის, თქვენთანვე რჩება.';
 
   @override
-  String get tutorialFamilyAddPerson => 'შეეხეთ პირის დამატებას, რომ დაამატოთ ადამიანი, ვისზეც ზრუნავთ, მაგალითად მეუღლე, შვილი ან მშობელი.';
+  String get tutorialFamilyAddPerson => 'შეგიძლიათ შეეხოთ პირის დამატებას, რომ დაამატოთ ადამიანი, ვისზეც ზრუნავთ, მაგალითად მეუღლე, შვილი ან მშობელი.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'საოჯახო ან ბიზნეს გეგმით შეგიძლიათ დაამატოთ ადამიანები, ვისზეც ზრუნავთ, და მათი ჩანაწერებიც აქვე შეინახოთ.';
@@ -7895,7 +7895,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get tourHome2Title => 'იპოვეთ ნებისმიერი რამ';
 
   @override
-  String get tourHome2Body => 'შეეხეთ ძიებას, რომ იპოვოთ ჩანაწერი სახელით, ჯგუფით ან პირით.';
+  String get tourHome2Body => 'შეგიძლიათ შეეხოთ ძიებას, რომ იპოვოთ ჩანაწერი სახელით, ჯგუფით ან პირით.';
 
   @override
   String get tourHome3Title => 'მოგზაურობები და გეგმები';
@@ -7913,7 +7913,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get tourRenew1Title => 'შეხსენება მოდის';
 
   @override
-  String get tourRenew1Body => 'ჩანაწერის ვადის გასვლამდე Vaultara შეგახსენებთ. შეეხეთ შეხსენებას ჩანაწერის გასახსნელად.';
+  String get tourRenew1Body => 'ჩანაწერის ვადის გასვლამდე Vaultara შეგახსენებთ. შეგიძლიათ შეეხოთ შეხსენებას ჩანაწერის გასახსნელად.';
 
   @override
   String get tourRenew2Title => 'შეინახეთ ახალი თარიღი';
@@ -7943,7 +7943,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get tourAsk2Title => 'ილაპარაკეთ აკრეფის ნაცვლად';
 
   @override
-  String get tourAsk2Body => 'შეეხეთ მიკროფონს და ილაპარაკეთ. სიტყვები ლაპარაკისას ჩნდება და მაშინვე შეგიძლიათ გაგზავნა.';
+  String get tourAsk2Body => 'შეგიძლიათ შეეხოთ მიკროფონს და ილაპარაკოთ. სიტყვები ლაპარაკისას ჩნდება და მაშინვე შეგიძლიათ გაგზავნა.';
 
   @override
   String get tourAsk3Title => 'ყოველ ცვლილებას თქვენ ადასტურებთ';

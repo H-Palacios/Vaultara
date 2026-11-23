@@ -974,7 +974,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Da Premium, za ka iya zaɓar ranakun tunatarwarka.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Taɓa Zaɓi ranakunka don canza tunatarwa ko ƙara wata.';
+  String get tutorialRemindersOwnDatesPremium => 'Kana iya taɓa Zaɓi ranakunka don canza tunatarwa ko ƙara wata.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Yana karewa yau';
@@ -3479,10 +3479,10 @@ class AppLocalizationsHa extends AppLocalizations {
   String get tutorialTravelLocked => 'Da Premium za ka iya shirya tafiye-tafiye ka ga takardun da kowane matafiyi ke buƙatar sabuntawa kafin tafiya.';
 
   @override
-  String get tutorialTravelTripCard => 'Kowace tafiya tana nuna lokacin da za ka tashi da duk abin da za a gyara kafin ka tafi. Taɓa tafiya don buɗe ta.';
+  String get tutorialTravelTripCard => 'Kowace tafiya tana nuna lokacin da za ka tashi da duk abin da za a gyara kafin ka tafi. Kana iya taɓa tafiya don buɗe ta.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Taɓa Shirya tafiya don ƙara inda za ka je, lokacin, da waɗanda ke tafiya.';
+  String get tutorialTravelPlanTrip => 'Kana iya taɓa Shirya tafiya don ƙara inda za ka je, lokacin, da waɗanda ke tafiya.';
 
   @override
   String get tutorialTravelTripDocuments => 'A cikin tafiya, Vaultara yana duba rikodin kowane matafiyi da kwanakin tafiyar kuma yana nuna abin da ake buƙatar sabuntawa.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get tutorialFamilyMe => 'Wannan kai ne. Duk rikodin da ba na wani ba yana zama tare da kai.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Taɓa Ƙara mutum don ƙara wanda kake kulawa da shi, kamar abokin aure, yaro ko iyaye.';
+  String get tutorialFamilyAddPerson => 'Kana iya taɓa Ƙara mutum don ƙara wanda kake kulawa da shi, kamar abokin aure, yaro ko iyaye.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Da tsarin Iyali ko Kasuwanci za ka iya ƙara mutanen da kake kulawa da su ka ajiye rikodinsu a nan ma.';
@@ -7895,7 +7895,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get tourHome2Title => 'Nemo komai';
 
   @override
-  String get tourHome2Body => 'Taɓa bincike don nemo bayani ta suna, rukuni ko mutum.';
+  String get tourHome2Body => 'Kana iya taɓa bincike don nemo bayani ta suna, rukuni ko mutum.';
 
   @override
   String get tourHome3Title => 'Tafiye-tafiye da tsare-tsare';
@@ -7913,7 +7913,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get tourRenew1Title => 'Tunatarwa ta zo';
 
   @override
-  String get tourRenew1Body => 'Kafin bayani ya ƙare, Vaultara tana tunatar da kai. Taɓa tunatarwar don buɗe bayanin.';
+  String get tourRenew1Body => 'Kafin bayani ya ƙare, Vaultara tana tunatar da kai. Kana iya taɓa tunatarwar don buɗe bayanin.';
 
   @override
   String get tourRenew2Title => 'Ajiye sabuwar kwanan wata';
@@ -7943,7 +7943,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get tourAsk2Title => 'Yi magana maimakon rubutu';
 
   @override
-  String get tourAsk2Body => 'Taɓa makirufo ka yi magana. Kalmominka suna bayyana yayin da kake magana kuma kana iya aikawa nan take.';
+  String get tourAsk2Body => 'Kana iya taɓa makirufo ka yi magana. Kalmominka suna bayyana yayin da kake magana kuma kana iya aikawa nan take.';
 
   @override
   String get tourAsk3Title => 'Kai ne ke tabbatar da kowane canji';

@@ -3446,10 +3446,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tutorialTravelLocked => 'プレミアムなら、旅行を計画して、出発前に各旅行者がどの書類を更新すべきかを確認できます。';
 
   @override
-  String get tutorialTravelTripCard => '各旅行には、出発日と出発前に直す項目が表示されます。旅行をタップすると開きます。';
+  String get tutorialTravelTripCard => '各旅行には、出発日と出発前に直す項目が表示されます。旅行をタップすると開けます。';
 
   @override
-  String get tutorialTravelPlanTrip => '「旅行を計画」をタップして、行き先、日程、同行者を追加します。';
+  String get tutorialTravelPlanTrip => '「旅行を計画」をタップすると、行き先、日程、同行者を追加できます。';
 
   @override
   String get tutorialTravelTripDocuments => '旅行の中では、Vaultaraが各旅行者の記録を旅行の日程と照らし合わせ、更新が必要なものを表示します。';
@@ -3473,7 +3473,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tutorialFamilyMe => 'これはあなたです。ほかの人のものではない記録は、すべてあなたの記録になります。';
 
   @override
-  String get tutorialFamilyAddPerson => '「人を追加」をタップして、パートナー、子ども、親など、あなたが管理している人を追加します。';
+  String get tutorialFamilyAddPerson => '「人を追加」をタップすると、パートナー、子ども、親など、あなたが管理している人を追加できます。';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'ファミリーまたはビジネスプランなら、あなたが管理している人を追加して、その人の記録もここで管理できます。';
@@ -7826,7 +7826,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tourHome2Title => '何でも見つかる';
 
   @override
-  String get tourHome2Body => '検索をタップして、名前、グループ、人で記録を探せます。';
+  String get tourHome2Body => '検索をタップすると、名前、グループ、人で記録を探せます。';
 
   @override
   String get tourHome3Title => '旅行とプラン';
@@ -7844,7 +7844,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tourRenew1Title => 'リマインダーが届く';
 
   @override
-  String get tourRenew1Body => '期限切れの前に Vaultara がお知らせします。リマインダーをタップすると記録が開きます。';
+  String get tourRenew1Body => '期限切れの前に Vaultara がお知らせします。リマインダーをタップすると記録を開けます。';
 
   @override
   String get tourRenew2Title => '新しい日付を保存';
@@ -7874,7 +7874,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tourAsk2Title => '入力せずに話す';
 
   @override
-  String get tourAsk2Body => 'マイクをタップして話すと、話しながら文字が表示され、すぐに送信できます。';
+  String get tourAsk2Body => 'マイクをタップして話すこともできます。話しながら文字が表示され、すぐに送信できます。';
 
   @override
   String get tourAsk3Title => '変更はすべてあなたが確認';

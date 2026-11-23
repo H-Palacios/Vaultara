@@ -971,7 +971,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Premium ဖြင့် သတိပေးရက်များကို ကိုယ်တိုင် ရွေးနိုင်ပါသည်။';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'သတိပေးချက်ကို ပြောင်းရန် သို့မဟုတ် ထည့်ရန် ကိုယ်ပိုင်ရက်များ ရွေးပါ ကို တို့ပါ။';
+  String get tutorialRemindersOwnDatesPremium => 'သတိပေးချက်ကို ပြောင်းရန် သို့မဟုတ် ထည့်ရန် ကိုယ်ပိုင်ရက်များ ရွေးပါ ကို တို့နိုင်သည်။';
 
   @override
   String get smartInsightExpiresTodayHeading => 'ယနေ့ သက်တမ်းကုန်မည်';
@@ -3456,10 +3456,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get tutorialTravelLocked => 'Premium ဖြင့် ခရီးများကို စီစဉ်နိုင်ပြီး ခရီးသည်တစ်ဦးစီ မထွက်ခွာမီ မည်သည့်စာရွက်စာတမ်းများကို သက်တမ်းတိုးရမည်ကို ကြည့်နိုင်သည်။';
 
   @override
-  String get tutorialTravelTripCard => 'ခရီးတစ်ခုစီက သင်ထွက်ခွာမည့်ရက်နှင့် မသွားမီ ပြင်ရန်ရှိသည်များကို ပြသည်။ ဖွင့်ရန် ခရီးကို နှိပ်ပါ။';
+  String get tutorialTravelTripCard => 'ခရီးတစ်ခုစီက သင်ထွက်ခွာမည့်ရက်နှင့် မသွားမီ ပြင်ရန်ရှိသည်များကို ပြသည်။ ဖွင့်ရန် ခရီးကို နှိပ်နိုင်သည်။';
 
   @override
-  String get tutorialTravelPlanTrip => 'သင်သွားမည့်နေရာ၊ ရက်နှင့် ခရီးသွားမည့်သူများကို ထည့်ရန် “ခရီး စီစဉ်ရန်” ကို နှိပ်ပါ။';
+  String get tutorialTravelPlanTrip => 'သင်သွားမည့်နေရာ၊ ရက်နှင့် ခရီးသွားမည့်သူများကို ထည့်ရန် “ခရီး စီစဉ်ရန်” ကို နှိပ်နိုင်သည်။';
 
   @override
   String get tutorialTravelTripDocuments => 'ခရီးတစ်ခုအတွင်း Vaultara သည် ခရီးသည်တစ်ဦးစီ၏ မှတ်တမ်းများကို ခရီးရက်စွဲများနှင့် တိုက်စစ်ပြီး သက်တမ်းတိုးရန်များကို ပြသည်။';
@@ -3483,7 +3483,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get tutorialFamilyMe => 'ဤသည်မှာ သင်ဖြစ်သည်။ အခြားသူ၏ မဟုတ်သော မည်သည့်မှတ်တမ်းမဆို သင့်ထံတွင် ကျန်ရှိသည်။';
 
   @override
-  String get tutorialFamilyAddPerson => 'ဇနီးမောင်နှံ၊ ကလေး သို့မဟုတ် မိဘကဲ့သို့ သင်စောင့်ရှောက်သူကို ထည့်ရန် “လူ ထည့်ရန်” ကို နှိပ်ပါ။';
+  String get tutorialFamilyAddPerson => 'ဇနီးမောင်နှံ၊ ကလေး သို့မဟုတ် မိဘကဲ့သို့ သင်စောင့်ရှောက်သူကို ထည့်ရန် “လူ ထည့်ရန်” ကို နှိပ်နိုင်သည်။';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'မိသားစု သို့မဟုတ် စီးပွားရေးအစီအစဉ်ဖြင့် သင်စောင့်ရှောက်သူများကို ထည့်ပြီး ၎င်းတို့၏ မှတ်တမ်းများကိုလည်း ဤနေရာတွင် ထားနိုင်သည်။';
@@ -7836,7 +7836,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get tourHome2Title => 'မည်သည့်အရာမဆို ရှာပါ';
 
   @override
-  String get tourHome2Body => 'အမည်၊ အုပ်စု သို့မဟုတ် လူဖြင့် မှတ်တမ်းရှာရန် ရှာဖွေမှုကို နှိပ်ပါ။';
+  String get tourHome2Body => 'အမည်၊ အုပ်စု သို့မဟုတ် လူဖြင့် မှတ်တမ်းရှာရန် ရှာဖွေမှုကို နှိပ်နိုင်သည်။';
 
   @override
   String get tourHome3Title => 'ခရီးစဉ်နှင့် အစီအစဉ်များ';
@@ -7854,7 +7854,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get tourRenew1Title => 'သတိပေးချက် ရောက်လာသည်';
 
   @override
-  String get tourRenew1Body => 'မှတ်တမ်း သက်တမ်းမကုန်မီ Vaultara က သတိပေးသည်။ မှတ်တမ်းဖွင့်ရန် သတိပေးချက်ကို နှိပ်ပါ။';
+  String get tourRenew1Body => 'မှတ်တမ်း သက်တမ်းမကုန်မီ Vaultara က သတိပေးသည်။ မှတ်တမ်းဖွင့်ရန် သတိပေးချက်ကို နှိပ်နိုင်သည်။';
 
   @override
   String get tourRenew2Title => 'ရက်စွဲအသစ် သိမ်းပါ';
@@ -7884,7 +7884,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get tourAsk2Title => 'စာရိုက်မည့်အစား ပြောပါ';
 
   @override
-  String get tourAsk2Body => 'မိုက်ကိုနှိပ်ပြီး ပြောပါ။ ပြောနေစဉ် စကားလုံးများ ပေါ်လာပြီး ချက်ချင်း ပို့နိုင်သည်။';
+  String get tourAsk2Body => 'မိုက်ကိုနှိပ်ပြီး ပြောနိုင်သည်။ ပြောနေစဉ် စကားလုံးများ ပေါ်လာပြီး ချက်ချင်း ပို့နိုင်သည်။';
 
   @override
   String get tourAsk3Title => 'ပြောင်းလဲမှုတိုင်းကို သင်အတည်ပြုသည်';

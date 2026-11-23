@@ -973,7 +973,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Dengan Premium, anda boleh memilih tarikh peringatan sendiri.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Ketik Pilih tarikh sendiri untuk menukar peringatan atau menambah satu.';
+  String get tutorialRemindersOwnDatesPremium => 'Anda boleh mengetik Pilih tarikh sendiri untuk menukar peringatan atau menambah satu.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Tamat Tempoh Hari Ini';
@@ -3458,10 +3458,10 @@ class AppLocalizationsMs extends AppLocalizations {
   String get tutorialTravelLocked => 'Dengan Premium anda boleh merancang perjalanan dan melihat dokumen yang perlu diperbaharui oleh setiap pengembara sebelum bertolak.';
 
   @override
-  String get tutorialTravelTripCard => 'Setiap perjalanan menunjukkan bila anda bertolak dan apa yang perlu dibetulkan sebelum pergi. Ketik perjalanan untuk membukanya.';
+  String get tutorialTravelTripCard => 'Setiap perjalanan menunjukkan bila anda bertolak dan apa yang perlu dibetulkan sebelum pergi. Anda boleh mengetik perjalanan untuk membukanya.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Ketik Rancang perjalanan untuk menambah ke mana anda pergi, bila, dan siapa yang melancong.';
+  String get tutorialTravelPlanTrip => 'Anda boleh mengetik Rancang perjalanan untuk menambah ke mana anda pergi, bila, dan siapa yang melancong.';
 
   @override
   String get tutorialTravelTripDocuments => 'Di dalam perjalanan, Vaultara menyemak rekod setiap pengembara berdasarkan tarikh perjalanan dan menunjukkan apa yang perlu diperbaharui.';
@@ -3485,7 +3485,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get tutorialFamilyMe => 'Ini anda. Mana-mana rekod yang bukan milik orang lain kekal dengan anda.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Ketik Tambah orang untuk menambah seseorang yang anda jaga, seperti pasangan, anak atau ibu bapa.';
+  String get tutorialFamilyAddPerson => 'Anda boleh mengetik Tambah orang untuk menambah seseorang yang anda jaga, seperti pasangan, anak atau ibu bapa.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Dengan pelan Keluarga atau Perniagaan, anda boleh menambah orang yang anda jaga dan menyimpan rekod mereka di sini juga.';
@@ -7838,7 +7838,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get tourHome2Title => 'Cari apa sahaja';
 
   @override
-  String get tourHome2Body => 'Ketik carian untuk mencari rekod mengikut nama, kumpulan atau orang.';
+  String get tourHome2Body => 'Anda boleh mengetik carian untuk mencari rekod mengikut nama, kumpulan atau orang.';
 
   @override
   String get tourHome3Title => 'Perjalanan dan pelan';
@@ -7856,7 +7856,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get tourRenew1Title => 'Peringatan tiba';
 
   @override
-  String get tourRenew1Body => 'Sebelum rekod tamat tempoh, Vaultara mengingatkan anda. Ketik peringatan untuk membuka rekod.';
+  String get tourRenew1Body => 'Sebelum rekod tamat tempoh, Vaultara mengingatkan anda. Anda boleh mengetik peringatan untuk membuka rekod.';
 
   @override
   String get tourRenew2Title => 'Simpan tarikh baharu';
@@ -7886,7 +7886,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get tourAsk2Title => 'Bercakap dan bukannya menaip';
 
   @override
-  String get tourAsk2Body => 'Ketik mikrofon dan bercakap. Perkataan muncul semasa anda bercakap dan boleh dihantar serta-merta.';
+  String get tourAsk2Body => 'Anda boleh mengetik mikrofon dan bercakap. Perkataan muncul semasa anda bercakap dan boleh dihantar serta-merta.';
 
   @override
   String get tourAsk3Title => 'Anda mengesahkan setiap perubahan';

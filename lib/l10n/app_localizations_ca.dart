@@ -974,7 +974,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Amb Premium pots triar les teves dates de recordatori.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Toca Tria les teves dates per canviar un recordatori o afegir-ne un.';
+  String get tutorialRemindersOwnDatesPremium => 'Pots tocar Tria les teves dates per canviar un recordatori o afegir-ne un.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Venç avui';
@@ -3479,10 +3479,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get tutorialTravelLocked => 'Amb Premium pots planificar viatges i veure quins documents ha de renovar cada viatger abans de marxar.';
 
   @override
-  String get tutorialTravelTripCard => 'Cada viatge mostra quan surts i tot el que cal arreglar abans de marxar. Toca un viatge per obrir-lo.';
+  String get tutorialTravelTripCard => 'Cada viatge mostra quan surts i tot el que cal arreglar abans de marxar. Pots tocar un viatge per obrir-lo.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Toca Planifica un viatge per afegir on vas, quan i qui hi viatja.';
+  String get tutorialTravelPlanTrip => 'Pots tocar Planifica un viatge per afegir on vas, quan i qui hi viatja.';
 
   @override
   String get tutorialTravelTripDocuments => 'Dins d\'un viatge, Vaultara comprova els registres de cada viatger amb les dates del viatge i mostra què cal renovar.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get tutorialFamilyMe => 'Aquest ets tu. Qualsevol registre que no pertanyi a una altra persona es queda amb tu.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Toca Afegeix persona per afegir algú a qui cuides, com una parella, un fill o un pare.';
+  String get tutorialFamilyAddPerson => 'Pots tocar Afegeix persona per afegir algú a qui cuides, com una parella, un fill o un pare.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Amb un pla Family o Business pots afegir les persones a qui cuides i tenir aquí també els seus registres.';
@@ -7899,7 +7899,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get tourHome2Title => 'Troba-ho tot';
 
   @override
-  String get tourHome2Body => 'Toca la cerca per trobar un registre pel nom, el grup o la persona.';
+  String get tourHome2Body => 'Pots tocar la cerca per trobar un registre pel nom, el grup o la persona.';
 
   @override
   String get tourHome3Title => 'Viatges i plans';
@@ -7917,7 +7917,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get tourRenew1Title => 'Arriba un recordatori';
 
   @override
-  String get tourRenew1Body => 'Abans que un registre caduqui, Vaultara t\'avisa. Toca el recordatori per obrir el registre.';
+  String get tourRenew1Body => 'Abans que un registre caduqui, Vaultara t\'avisa. Pots tocar el recordatori per obrir el registre.';
 
   @override
   String get tourRenew2Title => 'Desa la data nova';
@@ -7947,7 +7947,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get tourAsk2Title => 'Parla en lloc d\'escriure';
 
   @override
-  String get tourAsk2Body => 'Toca el micròfon i parla. Les paraules apareixen mentre parles i pots enviar de seguida.';
+  String get tourAsk2Body => 'Pots tocar el micròfon i parlar. Les paraules apareixen mentre parles i pots enviar de seguida.';
 
   @override
   String get tourAsk3Title => 'Confirmes cada canvi';

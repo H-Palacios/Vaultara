@@ -974,7 +974,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Me Premium mund të zgjidhni datat tuaja të kujtesave.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Prekni Zgjidhni datat tuaja për të ndryshuar një kujtesë ose për të shtuar një.';
+  String get tutorialRemindersOwnDatesPremium => 'Mund të prekni Zgjidhni datat tuaja për të ndryshuar një kujtesë ose për të shtuar një.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Skadon sot';
@@ -3479,10 +3479,10 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tutorialTravelLocked => 'Me Premium mund të planifikoni udhëtime dhe të shihni cilat dokumente duhet të rinovojë çdo udhëtar përpara nisjes.';
 
   @override
-  String get tutorialTravelTripCard => 'Çdo udhëtim tregon kur niseni dhe çfarë duhet rregulluar para nisjes. Prekni një udhëtim për ta hapur.';
+  String get tutorialTravelTripCard => 'Çdo udhëtim tregon kur niseni dhe çfarë duhet rregulluar para nisjes. Mund të prekni një udhëtim për ta hapur.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Prekni Planifiko një udhëtim për të shtuar ku shkoni, kur dhe kush udhëton.';
+  String get tutorialTravelPlanTrip => 'Mund të prekni Planifiko një udhëtim për të shtuar ku shkoni, kur dhe kush udhëton.';
 
   @override
   String get tutorialTravelTripDocuments => 'Brenda një udhëtimi, Vaultara kontrollon regjistrimet e çdo udhëtari kundrejt datave të udhëtimit dhe tregon çfarë duhet rinovuar.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tutorialFamilyMe => 'Ky jeni ju. Çdo regjistrim që nuk i përket dikujt tjetër mbetet tek ju.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Prekni Shto person për të shtuar dikë që kujdeseni, si partneri, fëmija ose prindi.';
+  String get tutorialFamilyAddPerson => 'Mund të prekni Shto person për të shtuar dikë që kujdeseni, si partneri, fëmija ose prindi.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Me një plan Familja ose Biznes mund të shtoni personat që kujdeseni dhe t\'i mbani regjistrimet e tyre edhe këtu.';
@@ -7899,7 +7899,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tourHome2Title => 'Gjej gjithçka';
 
   @override
-  String get tourHome2Body => 'Prek kërkimin për të gjetur një regjistrim sipas emrit, grupit ose personit.';
+  String get tourHome2Body => 'Mund të prekësh kërkimin për të gjetur një regjistrim sipas emrit, grupit ose personit.';
 
   @override
   String get tourHome3Title => 'Udhëtime dhe plane';
@@ -7917,7 +7917,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tourRenew1Title => 'Vjen një kujtesë';
 
   @override
-  String get tourRenew1Body => 'Para se të skadojë një regjistrim, Vaultara të kujton. Prek kujtesën për të hapur regjistrimin.';
+  String get tourRenew1Body => 'Para se të skadojë një regjistrim, Vaultara të kujton. Mund të prekësh kujtesën për të hapur regjistrimin.';
 
   @override
   String get tourRenew2Title => 'Ruaj datën e re';
@@ -7947,7 +7947,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tourAsk2Title => 'Fol në vend që të shkruash';
 
   @override
-  String get tourAsk2Body => 'Prek mikrofonin dhe fol. Fjalët shfaqen ndërsa flet dhe mund të dërgosh menjëherë.';
+  String get tourAsk2Body => 'Mund të prekësh mikrofonin dhe të flasësh. Fjalët shfaqen ndërsa flet dhe mund të dërgosh menjëherë.';
 
   @override
   String get tourAsk3Title => 'Ti konfirmon çdo ndryshim';

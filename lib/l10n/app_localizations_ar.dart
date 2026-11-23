@@ -977,7 +977,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'مع Premium يمكنك اختيار تواريخ التذكير بنفسك.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'اضغط على اختر تواريخك بنفسك لتغيير تذكير أو إضافة تذكير.';
+  String get tutorialRemindersOwnDatesPremium => 'يمكنك الضغط على اختر تواريخك بنفسك لتغيير تذكير أو إضافة تذكير.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'تنتهي صلاحيته اليوم';
@@ -3590,10 +3590,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tutorialTravelLocked => 'مع Premium يمكنك التخطيط للرحلات ومعرفة المستندات التي يجب على كل مسافر تجديدها قبل المغادرة.';
 
   @override
-  String get tutorialTravelTripCard => 'تعرض كل رحلة موعد مغادرتك وأي شيء يجب إصلاحه قبل السفر. اضغط على رحلة لفتحها.';
+  String get tutorialTravelTripCard => 'تعرض كل رحلة موعد مغادرتك وأي شيء يجب إصلاحه قبل السفر. يمكنك الضغط على رحلة لفتحها.';
 
   @override
-  String get tutorialTravelPlanTrip => 'اضغط على التخطيط لرحلة لإضافة وجهتك وموعدك ومن سيسافر.';
+  String get tutorialTravelPlanTrip => 'يمكنك الضغط على التخطيط لرحلة لإضافة وجهتك وموعدك ومن سيسافر.';
 
   @override
   String get tutorialTravelTripDocuments => 'داخل الرحلة، يفحص Vaultara سجلات كل مسافر مقابل تواريخ الرحلة ويعرض ما يجب تجديده.';
@@ -3617,7 +3617,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tutorialFamilyMe => 'هذا أنت. أي سجل لا يخص شخصًا آخر يبقى معك.';
 
   @override
-  String get tutorialFamilyAddPerson => 'اضغط على إضافة شخص لإضافة من ترعاه، مثل الشريك أو الطفل أو الوالد.';
+  String get tutorialFamilyAddPerson => 'يمكنك الضغط على إضافة شخص لإضافة من ترعاه، مثل الشريك أو الطفل أو الوالد.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'مع خطة العائلة أو الأعمال يمكنك إضافة من ترعاهم وحفظ سجلاتهم هنا أيضًا.';
@@ -8120,7 +8120,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tourHome2Title => 'اعثر على أي شيء';
 
   @override
-  String get tourHome2Body => 'انقر على البحث للعثور على سجل بالاسم أو المجموعة أو الشخص.';
+  String get tourHome2Body => 'يمكنك النقر على البحث للعثور على سجل بالاسم أو المجموعة أو الشخص.';
 
   @override
   String get tourHome3Title => 'الرحلات والخطط';
@@ -8138,7 +8138,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tourRenew1Title => 'يصل تذكير';
 
   @override
-  String get tourRenew1Body => 'قبل أن ينتهي سجل، يذكّرك Vaultara. انقر على التذكير لفتح السجل.';
+  String get tourRenew1Body => 'قبل أن ينتهي سجل، يذكّرك Vaultara. يمكنك النقر على التذكير لفتح السجل.';
 
   @override
   String get tourRenew2Title => 'احفظ التاريخ الجديد';
@@ -8168,7 +8168,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tourAsk2Title => 'تحدّث بدلاً من الكتابة';
 
   @override
-  String get tourAsk2Body => 'انقر على الميكروفون وتحدّث. تظهر كلماتك أثناء الحديث ويمكنك الإرسال فوراً.';
+  String get tourAsk2Body => 'يمكنك النقر على الميكروفون والتحدث. تظهر كلماتك أثناء الحديث ويمكنك الإرسال فوراً.';
 
   @override
   String get tourAsk3Title => 'أنت تؤكد كل تغيير';

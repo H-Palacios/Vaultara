@@ -974,7 +974,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Premium bilan eslatma sanalarini oʻzingiz tanlashingiz mumkin.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Eslatmani oʻzgartirish yoki qoʻshish uchun Oʻz sanalaringizni tanlang tugmasini bosing.';
+  String get tutorialRemindersOwnDatesPremium => 'Eslatmani oʻzgartirish yoki qoʻshish uchun Oʻz sanalaringizni tanlang tugmasini bosishingiz mumkin.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Muddati bugun tugaydi';
@@ -3479,10 +3479,10 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tutorialTravelLocked => 'Premium bilan sayohatlarni rejalashtirishingiz va har bir sayohatchi joʻnashdan oldin qaysi hujjatni uzaytirishi kerakligini koʻrishingiz mumkin.';
 
   @override
-  String get tutorialTravelTripCard => 'Har bir sayohatda qachon joʻnashingiz va joʻnashdan oldin nimani tuzatish kerakligi koʻrsatiladi. Ochish uchun sayohatni bosing.';
+  String get tutorialTravelTripCard => 'Har bir sayohatda qachon joʻnashingiz va joʻnashdan oldin nimani tuzatish kerakligi koʻrsatiladi. Ochish uchun sayohatni bosishingiz mumkin.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Qayerga, qachon va kim borishini qoʻshish uchun Sayohat rejalashtirish tugmasini bosing.';
+  String get tutorialTravelPlanTrip => 'Qayerga, qachon va kim borishini qoʻshish uchun Sayohat rejalashtirish tugmasini bosishingiz mumkin.';
 
   @override
   String get tutorialTravelTripDocuments => 'Sayohat ichida Vaultara har bir sayohatchining yozuvlarini sayohat sanalariga qarab tekshiradi va nimani uzaytirish kerakligini koʻrsatadi.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tutorialFamilyMe => 'Bu siz. Boshqa birovga tegishli boʻlmagan har bir yozuv sizda qoladi.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Qaramogʻingizdagi kishini, masalan turmush oʻrtogʻingiz, bolangiz yoki ota-onangizni qoʻshish uchun Shaxs qoʻshish tugmasini bosing.';
+  String get tutorialFamilyAddPerson => 'Qaramogʻingizdagi kishini, masalan turmush oʻrtogʻingiz, bolangiz yoki ota-onangizni qoʻshish uchun Shaxs qoʻshish tugmasini bosishingiz mumkin.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Family yoki Business tarifi bilan qaramogʻingizdagi kishilarni qoʻshib, ularning yozuvlarini ham shu yerda saqlashingiz mumkin.';
@@ -7895,7 +7895,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tourHome2Title => 'Istalgan narsani toping';
 
   @override
-  String get tourHome2Body => 'Nomi, guruhi yoki shaxs boʻyicha yozuv topish uchun qidiruvni bosing.';
+  String get tourHome2Body => 'Nomi, guruhi yoki shaxs boʻyicha yozuv topish uchun qidiruvni bosishingiz mumkin.';
 
   @override
   String get tourHome3Title => 'Safarlar va rejalar';
@@ -7913,7 +7913,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tourRenew1Title => 'Eslatma keladi';
 
   @override
-  String get tourRenew1Body => 'Yozuv muddati tugashidan oldin Vaultara eslatadi. Yozuvni ochish uchun eslatmani bosing.';
+  String get tourRenew1Body => 'Yozuv muddati tugashidan oldin Vaultara eslatadi. Yozuvni ochish uchun eslatmani bosishingiz mumkin.';
 
   @override
   String get tourRenew2Title => 'Yangi sanani saqlang';
@@ -7943,7 +7943,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tourAsk2Title => 'Yozish oʻrniga gapiring';
 
   @override
-  String get tourAsk2Body => 'Mikrofonni bosib gapiring. Gapirayotganda soʻzlar paydo boʻladi va darhol yuborishingiz mumkin.';
+  String get tourAsk2Body => 'Mikrofonni bosib gapirishingiz mumkin. Gapirayotganda soʻzlar paydo boʻladi va darhol yuborishingiz mumkin.';
 
   @override
   String get tourAsk3Title => 'Har bir oʻzgarishni siz tasdiqlaysiz';

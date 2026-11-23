@@ -974,7 +974,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Со Premium можете сами да изберете датуми за потсетување.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Допрете Изберете свои датуми за да промените потсетник или да додадете нов.';
+  String get tutorialRemindersOwnDatesPremium => 'Можете да допрете Изберете свои датуми за да промените потсетник или да додадете нов.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Истекува денес';
@@ -3477,10 +3477,10 @@ class AppLocalizationsMk extends AppLocalizations {
   String get tutorialTravelLocked => 'Со Премиум можете да планирате патувања и да видите кои документи секој патник мора да ги обнови пред заминување.';
 
   @override
-  String get tutorialTravelTripCard => 'Секое патување покажува кога заминувате и што треба да се среди пред да одите. Допрете патување за да го отворите.';
+  String get tutorialTravelTripCard => 'Секое патување покажува кога заминувате и што треба да се среди пред да одите. Можете да допрете патување за да го отворите.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Допрете Испланирај патување за да додадете каде одите, кога и кој патува.';
+  String get tutorialTravelPlanTrip => 'Можете да допрете Испланирај патување за да додадете каде одите, кога и кој патува.';
 
   @override
   String get tutorialTravelTripDocuments => 'Внатре во патувањето, Vaultara ги проверува записите на секој патник според датумите на патувањето и покажува што да се обнови.';
@@ -3504,7 +3504,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get tutorialFamilyMe => 'Ова сте вие. Секој запис што не припаѓа на некој друг останува кај вас.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Допрете Додај лице за да додадете некого за кого се грижите, како партнер, дете или родител.';
+  String get tutorialFamilyAddPerson => 'Можете да допрете Додај лице за да додадете некого за кого се грижите, како партнер, дете или родител.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Со план Семеен или Бизнис можете да додадете луѓе за кои се грижите и да ги чувате и нивните записи овде.';
@@ -7893,7 +7893,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get tourHome2Title => 'Најдете сè';
 
   @override
-  String get tourHome2Body => 'Допрете пребарување за да најдете запис по име, група или лице.';
+  String get tourHome2Body => 'Можете да допрете пребарување за да најдете запис по име, група или лице.';
 
   @override
   String get tourHome3Title => 'Патувања и планови';
@@ -7911,7 +7911,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get tourRenew1Title => 'Пристигнува потсетник';
 
   @override
-  String get tourRenew1Body => 'Пред записот да истече, Vaultara ве потсетува. Допрете го потсетникот за да го отворите записот.';
+  String get tourRenew1Body => 'Пред записот да истече, Vaultara ве потсетува. Можете да го допрете потсетникот за да го отворите записот.';
 
   @override
   String get tourRenew2Title => 'Зачувајте го новиот датум';
@@ -7941,7 +7941,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String get tourAsk2Title => 'Зборувајте наместо да пишувате';
 
   @override
-  String get tourAsk2Body => 'Допрете го микрофонот и зборувајте. Зборовите се појавуваат додека зборувате и можете веднаш да испратите.';
+  String get tourAsk2Body => 'Можете да го допрете микрофонот и да зборувате. Зборовите се појавуваат додека зборувате и можете веднаш да испратите.';
 
   @override
   String get tourAsk3Title => 'Секоја промена ја потврдувате вие';

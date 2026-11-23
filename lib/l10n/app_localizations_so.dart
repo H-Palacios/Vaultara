@@ -974,7 +974,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Premium waxaad ku dooran kartaa taariikhaha xusuusintaada.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Taabo Dooro taariikhahaaga si aad u beddesho xusuusin ama aad mid ugu darto.';
+  String get tutorialRemindersOwnDatesPremium => 'Waxaad taaban kartaa Dooro taariikhahaaga si aad u beddesho xusuusin ama aad mid ugu darto.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Maanta Ayay Dhacaysaa';
@@ -3478,10 +3478,10 @@ class AppLocalizationsSo extends AppLocalizations {
   String get tutorialTravelLocked => 'Premium waxaad ku qorshayn kartaa safarro oo aad ku arki kartaa dukumentiyada rakaab kasta ee la cusboonaysiinayo ka hor bixitaanka.';
 
   @override
-  String get tutorialTravelTripCard => 'Safar kasta wuxuu muujiyaa goorta aad baxayso iyo wixii la hagaajinayo ka hor intaadan tegin. Taabo safar si aad u furto.';
+  String get tutorialTravelTripCard => 'Safar kasta wuxuu muujiyaa goorta aad baxayso iyo wixii la hagaajinayo ka hor intaadan tegin. Waxaad taaban kartaa safar si aad u furto.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Taabo Qorshee safar si aad ugu darto meesha aad aadayso, goorta, iyo yaa safraya.';
+  String get tutorialTravelPlanTrip => 'Waxaad taaban kartaa Qorshee safar si aad ugu darto meesha aad aadayso, goorta, iyo yaa safraya.';
 
   @override
   String get tutorialTravelTripDocuments => 'Safarka gudahiisa, Vaultara wuxuu hubiyaa diiwaannada rakaab kasta isagoo la barbar dhigaya taariikhaha safarka wuxuuna muujiyaa waxa la cusboonaysiinayo.';
@@ -3505,7 +3505,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get tutorialFamilyMe => 'Kani waa adiga. Diiwaan kasta oo aan qof kale lahayn waa kaaga.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Taabo Ku dar qof si aad ugu darto qof aad daryeeshid, sida lammaanahaaga, ilmo ama waalid.';
+  String get tutorialFamilyAddPerson => 'Waxaad taaban kartaa Ku dar qof si aad ugu darto qof aad daryeeshid, sida lammaanahaaga, ilmo ama waalid.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Qorshaha Family ama Business waxaad ku dari kartaa dadka aad daryeesho oo aad diiwaannadooda halkan ku kaydin kartaa.';
@@ -7894,7 +7894,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get tourHome2Title => 'Hel wax kasta';
 
   @override
-  String get tourHome2Body => 'Taabo raadinta si aad u hesho diiwaan magac, koox ama qof ahaan.';
+  String get tourHome2Body => 'Waxaad taaban kartaa raadinta si aad u hesho diiwaan magac, koox ama qof ahaan.';
 
   @override
   String get tourHome3Title => 'Safarro iyo qorshayaal';
@@ -7912,7 +7912,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get tourRenew1Title => 'Xusuusin ayaa timid';
 
   @override
-  String get tourRenew1Body => 'Ka hor inta uusan diiwaan dhicin, Vaultara ayaa ku xusuusinaysa. Taabo xusuusinta si aad u furto diiwaanka.';
+  String get tourRenew1Body => 'Ka hor inta uusan diiwaan dhicin, Vaultara ayaa ku xusuusinaysa. Waxaad taaban kartaa xusuusinta si aad u furto diiwaanka.';
 
   @override
   String get tourRenew2Title => 'Kaydi taariikhda cusub';
@@ -7942,7 +7942,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get tourAsk2Title => 'Hadal halkii aad qori lahayd';
 
   @override
-  String get tourAsk2Body => 'Taabo makarafoonka oo hadal. Ereyadaadu waxay soo baxaan inta aad hadlayso waxaadna isla markiiba diri kartaa.';
+  String get tourAsk2Body => 'Waxaad taaban kartaa makarafoonka oo hadli kartaa. Ereyadaadu waxay soo baxaan inta aad hadlayso waxaadna isla markiiba diri kartaa.';
 
   @override
   String get tourAsk3Title => 'Adiga ayaa xaqiijiya isbeddel kasta';

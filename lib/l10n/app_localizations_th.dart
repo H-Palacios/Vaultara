@@ -967,7 +967,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'เมื่อใช้ Premium คุณเลือกวันแจ้งเตือนเองได้';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'แตะ เลือกวันเอง เพื่อเปลี่ยนหรือเพิ่มการแจ้งเตือน';
+  String get tutorialRemindersOwnDatesPremium => 'คุณแตะ เลือกวันเอง เพื่อเปลี่ยนหรือเพิ่มการแจ้งเตือนได้';
 
   @override
   String get smartInsightExpiresTodayHeading => 'หมดอายุวันนี้';
@@ -3446,10 +3446,10 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tutorialTravelLocked => 'ด้วย Premium คุณวางแผนทริปได้ และดูได้ว่าผู้เดินทางแต่ละคนต้องต่ออายุเอกสารใดก่อนออกเดินทาง';
 
   @override
-  String get tutorialTravelTripCard => 'แต่ละทริปจะแสดงวันออกเดินทางและสิ่งที่ต้องแก้ไขก่อนไป แตะทริปเพื่อเปิด';
+  String get tutorialTravelTripCard => 'แต่ละทริปจะแสดงวันออกเดินทางและสิ่งที่ต้องแก้ไขก่อนไป คุณแตะทริปเพื่อเปิดได้';
 
   @override
-  String get tutorialTravelPlanTrip => 'แตะ “วางแผนทริป” เพื่อเพิ่มว่าคุณจะไปที่ไหน เมื่อไร และใครเดินทางบ้าง';
+  String get tutorialTravelPlanTrip => 'คุณแตะ “วางแผนทริป” เพื่อเพิ่มว่าคุณจะไปที่ไหน เมื่อไร และใครเดินทางบ้างได้';
 
   @override
   String get tutorialTravelTripDocuments => 'ภายในทริป Vaultara จะตรวจสอบรายการของผู้เดินทางแต่ละคนเทียบกับวันที่ของทริป และแสดงสิ่งที่ต้องต่ออายุ';
@@ -3473,7 +3473,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tutorialFamilyMe => 'นี่คือตัวคุณ รายการใดที่ไม่ใช่ของคนอื่นจะอยู่กับคุณ';
 
   @override
-  String get tutorialFamilyAddPerson => 'แตะ “เพิ่มบุคคล” เพื่อเพิ่มคนที่คุณดูแล เช่น คู่ครอง ลูก หรือพ่อแม่';
+  String get tutorialFamilyAddPerson => 'คุณแตะ “เพิ่มบุคคล” เพื่อเพิ่มคนที่คุณดูแลได้ เช่น คู่ครอง ลูก หรือพ่อแม่';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'ด้วยแผนครอบครัวหรือแผนธุรกิจ คุณเพิ่มคนที่คุณดูแลและเก็บรายการของพวกเขาไว้ที่นี่ได้ด้วย';
@@ -7826,7 +7826,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tourHome2Title => 'ค้นหาได้ทุกอย่าง';
 
   @override
-  String get tourHome2Body => 'แตะค้นหาเพื่อหารายการตามชื่อ กลุ่ม หรือบุคคล';
+  String get tourHome2Body => 'คุณแตะค้นหาเพื่อหารายการตามชื่อ กลุ่ม หรือบุคคลได้';
 
   @override
   String get tourHome3Title => 'ทริปและแผน';
@@ -7844,7 +7844,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tourRenew1Title => 'มีการแจ้งเตือน';
 
   @override
-  String get tourRenew1Body => 'ก่อนรายการหมดอายุ Vaultara จะเตือนคุณ แตะการแจ้งเตือนเพื่อเปิดรายการ';
+  String get tourRenew1Body => 'ก่อนรายการหมดอายุ Vaultara จะเตือนคุณ คุณแตะการแจ้งเตือนเพื่อเปิดรายการได้';
 
   @override
   String get tourRenew2Title => 'บันทึกวันที่ใหม่';
@@ -7874,7 +7874,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tourAsk2Title => 'พูดแทนการพิมพ์';
 
   @override
-  String get tourAsk2Body => 'แตะไมค์แล้วพูด คำของคุณจะปรากฏขณะพูด และส่งได้ทันที';
+  String get tourAsk2Body => 'คุณแตะไมค์แล้วพูดได้ คำของคุณจะปรากฏขณะพูด และส่งได้ทันที';
 
   @override
   String get tourAsk3Title => 'คุณยืนยันทุกการเปลี่ยนแปลง';

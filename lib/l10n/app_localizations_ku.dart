@@ -974,7 +974,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Bi Premium tu dikarî rojên bîrxistinê yên xwe hilbijêrî.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Li Rojên xwe hilbijêre bitikîne da ku bîrxistinekê biguherînî an yekê lê zêde bikî.';
+  String get tutorialRemindersOwnDatesPremium => 'Tu dikarî li Rojên xwe hilbijêre bitikînî da ku bîrxistinekê biguherînî an yekê lê zêde bikî.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Îro bidawî dibe';
@@ -3479,10 +3479,10 @@ class AppLocalizationsKu extends AppLocalizations {
   String get tutorialTravelLocked => 'Bi Premium re tu dikarî rêwîtiyan plan bikî û bibînî ka her rêwî beriya çûnê divê kîjan belgeyan nû bike.';
 
   @override
-  String get tutorialTravelTripCard => 'Her rêwîtî nîşan dide ka tu kengî diçî û beriya çûnê çi divê were rastkirin. Ji bo vekirinê li rêwîtiyekê bitikîne.';
+  String get tutorialTravelTripCard => 'Her rêwîtî nîşan dide ka tu kengî diçî û beriya çûnê çi divê were rastkirin. Ji bo vekirinê tu dikarî li rêwîtiyekê bitikînî.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Li Rêwîtiyekê plan bike bitikîne da ku tu zêde bikî tu diçî ku derê, kengî û kî rêwîtiyê dike.';
+  String get tutorialTravelPlanTrip => 'Tu dikarî li Rêwîtiyekê plan bike bitikînî da ku tu zêde bikî tu diçî ku derê, kengî û kî rêwîtiyê dike.';
 
   @override
   String get tutorialTravelTripDocuments => 'Di hundirê rêwîtiyekê de, Vaultara tomarên her rêwî li gorî dîrokên rêwîtiyê kontrol dike û nîşan dide çi divê were nûkirin.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get tutorialFamilyMe => 'Ev tu yî. Her tomarê ku ne yê kesekî din e, ji te re dimîne.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Li Kes zêde bike bitikîne da ku kesekî ku tu lê dinêrî zêde bikî, wekî hevjîn, zarok an dêûbav.';
+  String get tutorialFamilyAddPerson => 'Tu dikarî li Kes zêde bike bitikînî da ku kesekî ku tu lê dinêrî zêde bikî, wekî hevjîn, zarok an dêûbav.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Bi planeke Malbat an Karsazî re tu dikarî kesên ku tu lê dinêrî zêde bikî û tomarên wan jî li vir bihêlî.';
@@ -7895,7 +7895,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get tourHome2Title => 'Her tiştî bibîne';
 
   @override
-  String get tourHome2Body => 'Lêgerînê bitikîne da ku tomarekê li gorî nav, kom an kesî bibînî.';
+  String get tourHome2Body => 'Tu dikarî lêgerînê bitikînî da ku tomarekê li gorî nav, kom an kesî bibînî.';
 
   @override
   String get tourHome3Title => 'Rêwîtî û plan';
@@ -7913,7 +7913,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get tourRenew1Title => 'Bîrxistinek tê';
 
   @override
-  String get tourRenew1Body => 'Berî ku tomarek biqede, Vaultara bîra te dixe. Bîrxistinê bitikîne da ku tomar vebe.';
+  String get tourRenew1Body => 'Berî ku tomarek biqede, Vaultara bîra te dixe. Tu dikarî bîrxistinê bitikînî da ku tomar vebe.';
 
   @override
   String get tourRenew2Title => 'Dîroka nû tomar bike';
@@ -7943,7 +7943,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get tourAsk2Title => 'Li şûna nivîsandinê biaxive';
 
   @override
-  String get tourAsk2Body => 'Mîkrofonê bitikîne û biaxive. Peyvên te dema diaxivî xuya dibin û tu dikarî yekser bişînî.';
+  String get tourAsk2Body => 'Tu dikarî mîkrofonê bitikînî û biaxivî. Peyvên te dema diaxivî xuya dibin û tu dikarî yekser bişînî.';
 
   @override
   String get tourAsk3Title => 'Tu her guhertinê piştrast dikî';

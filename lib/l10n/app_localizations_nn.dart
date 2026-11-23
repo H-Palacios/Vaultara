@@ -974,7 +974,7 @@ class AppLocalizationsNn extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Med Premium kan du velje eigne påminningsdatoar.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Trykk på Vel eigne datoar for å endre ei påminning eller leggje til ei.';
+  String get tutorialRemindersOwnDatesPremium => 'Du kan trykkje på Vel eigne datoar for å endre ei påminning eller leggje til ei.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Går ut i dag';
@@ -3479,10 +3479,10 @@ class AppLocalizationsNn extends AppLocalizations {
   String get tutorialTravelLocked => 'Med Premium kan du planleggje reiser og sjå kva dokument kvar reisande må fornye før avreise.';
 
   @override
-  String get tutorialTravelTripCard => 'Kvar reise viser når du reiser og kva som må ordnast før du drar. Trykk på ei reise for å opne ho.';
+  String get tutorialTravelTripCard => 'Kvar reise viser når du reiser og kva som må ordnast før du drar. Du kan trykkje på ei reise for å opne ho.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Trykk på Planlegg ei reise for å leggje til kvar du skal, når og kven som reiser.';
+  String get tutorialTravelPlanTrip => 'Du kan trykkje på Planlegg ei reise for å leggje til kvar du skal, når og kven som reiser.';
 
   @override
   String get tutorialTravelTripDocuments => 'Inne i ei reise sjekkar Vaultara oppføringane til kvar reisande mot datoane for reisa og viser kva som må fornyast.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsNn extends AppLocalizations {
   String get tutorialFamilyMe => 'Dette er deg. Alle oppføringar som ikkje høyrer til nokon andre, blir hos deg.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Trykk på Legg til person for å leggje til nokon du tek vare på, til dømes ein partnar, eit barn eller ein forelder.';
+  String get tutorialFamilyAddPerson => 'Du kan trykkje på Legg til person for å leggje til nokon du tek vare på, til dømes ein partnar, eit barn eller ein forelder.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Med eit Familie- eller Business-abonnement kan du leggje til dei du tek vare på og ha oppføringane deira her òg.';
@@ -7899,7 +7899,7 @@ class AppLocalizationsNn extends AppLocalizations {
   String get tourHome2Title => 'Finn alt';
 
   @override
-  String get tourHome2Body => 'Trykk på søk for å finne ei oppføring etter namn, gruppe eller person.';
+  String get tourHome2Body => 'Du kan trykkje på søk for å finne ei oppføring etter namn, gruppe eller person.';
 
   @override
   String get tourHome3Title => 'Reiser og planar';
@@ -7917,7 +7917,7 @@ class AppLocalizationsNn extends AppLocalizations {
   String get tourRenew1Title => 'Ei påminning kjem';
 
   @override
-  String get tourRenew1Body => 'Før ei oppføring går ut, minner Vaultara deg på det. Trykk på påminninga for å opne oppføringa.';
+  String get tourRenew1Body => 'Før ei oppføring går ut, minner Vaultara deg på det. Du kan trykkje på påminninga for å opne oppføringa.';
 
   @override
   String get tourRenew2Title => 'Lagre den nye datoen';
@@ -7947,7 +7947,7 @@ class AppLocalizationsNn extends AppLocalizations {
   String get tourAsk2Title => 'Snakk i staden for å skrive';
 
   @override
-  String get tourAsk2Body => 'Trykk på mikrofonen og snakk. Orda blir viste medan du snakkar, og du kan sende med ein gong.';
+  String get tourAsk2Body => 'Du kan trykkje på mikrofonen og snakke. Orda blir viste medan du snakkar, og du kan sende med ein gong.';
 
   @override
   String get tourAsk3Title => 'Du stadfestar kvar endring';

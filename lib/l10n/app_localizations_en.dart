@@ -974,7 +974,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'With Premium, you can choose your own reminder dates.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Tap Choose your own dates to change a reminder or add one.';
+  String get tutorialRemindersOwnDatesPremium => 'You can tap Choose your own dates to change a reminder or add one.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Expires Today';
@@ -3500,10 +3500,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tutorialTravelLocked => 'With Premium you can plan trips and see which documents each traveller needs to renew before leaving.';
 
   @override
-  String get tutorialTravelTripCard => 'Each trip shows when you leave and anything to fix before you go. Tap a trip to open it.';
+  String get tutorialTravelTripCard => 'Each trip shows when you leave and anything to fix before you go. You can tap a trip to open it.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Tap Plan a trip to add where you are going, when, and who is travelling.';
+  String get tutorialTravelPlanTrip => 'You can tap Plan a trip to add where you are going, when, and who is travelling.';
 
   @override
   String get tutorialTravelTripDocuments => 'Inside a trip, Vaultara checks each traveller\'s records against the trip dates and shows what to renew.';
@@ -3527,7 +3527,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tutorialFamilyMe => 'This is you. Any record that does not belong to someone else stays with you.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Tap Add person to add someone you look after, like a partner, child or parent.';
+  String get tutorialFamilyAddPerson => 'You can tap Add person to add someone you look after, like a partner, child or parent.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'With a Family or Business plan you can add the people you look after and keep their records here too.';
@@ -7920,7 +7920,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tourHome2Title => 'Find anything';
 
   @override
-  String get tourHome2Body => 'Tap the search bar to find a record by its name, group or the person it belongs to.';
+  String get tourHome2Body => 'You can tap the search bar to find a record by its name, group or the person it belongs to.';
 
   @override
   String get tourHome3Title => 'Trips and plans';
@@ -7938,7 +7938,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tourRenew1Title => 'A reminder arrives';
 
   @override
-  String get tourRenew1Body => 'Before a record expires, Vaultara reminds you. Tap the reminder to open the record.';
+  String get tourRenew1Body => 'Before a record expires, Vaultara reminds you. You can tap the reminder to open the record.';
 
   @override
   String get tourRenew2Title => 'Save the new date';
@@ -7968,7 +7968,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tourAsk2Title => 'Talk instead of typing';
 
   @override
-  String get tourAsk2Body => 'Tap the microphone and speak. Your words appear as you talk, and you can send straight away.';
+  String get tourAsk2Body => 'You can tap the microphone and speak. Your words appear as you talk, and you can send straight away.';
 
   @override
   String get tourAsk3Title => 'You confirm every change';

@@ -974,7 +974,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Premiumiga saad valida oma meeldetuletuse kuupäevad.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Puuduta Vali oma kuupäevad, et meeldetuletust muuta või uus lisada.';
+  String get tutorialRemindersOwnDatesPremium => 'Saad puudutada valikut Vali oma kuupäevad, et meeldetuletust muuta või uus lisada.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Aegub täna';
@@ -3479,10 +3479,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get tutorialTravelLocked => 'Premiumiga saad reise planeerida ja näha, milliseid dokumente iga reisija enne lahkumist uuendama peab.';
 
   @override
-  String get tutorialTravelTripCard => 'Iga reis näitab, millal lähed ja mida on enne minekut vaja korda teha. Puuduta reisi, et see avada.';
+  String get tutorialTravelTripCard => 'Iga reis näitab, millal lähed ja mida on enne minekut vaja korda teha. Saad reisi puudutada, et see avada.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Puuduta valikut Planeeri reis, et lisada, kuhu lähed, millal ja kes reisib.';
+  String get tutorialTravelPlanTrip => 'Saad puudutada valikut Planeeri reis, et lisada, kuhu lähed, millal ja kes reisib.';
 
   @override
   String get tutorialTravelTripDocuments => 'Reisi sees kontrollib Vaultara iga reisija kirjeid reisi kuupäevade suhtes ja näitab, mida uuendada.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get tutorialFamilyMe => 'See oled sina. Iga kirje, mis ei kuulu kellelegi teisele, jääb sinu juurde.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Puuduta valikut Lisa inimene, et lisada keegi, kelle eest hoolitsed, näiteks partner, laps või vanem.';
+  String get tutorialFamilyAddPerson => 'Saad puudutada valikut Lisa inimene, et lisada keegi, kelle eest hoolitsed, näiteks partner, laps või vanem.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Paketiga Family või Business saad lisada inimesi, kelle eest hoolitsed, ja hoida ka nende kirjeid siin.';
@@ -7899,7 +7899,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get tourHome2Title => 'Leia kõik';
 
   @override
-  String get tourHome2Body => 'Puuduta otsingut, et leida kirje nime, rühma või inimese järgi.';
+  String get tourHome2Body => 'Saad puudutada otsingut, et leida kirje nime, rühma või inimese järgi.';
 
   @override
   String get tourHome3Title => 'Reisid ja plaanid';
@@ -7917,7 +7917,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get tourRenew1Title => 'Saabub meeldetuletus';
 
   @override
-  String get tourRenew1Body => 'Enne kui kirje aegub, tuletab Vaultara sulle meelde. Puuduta meeldetuletust, et kirje avada.';
+  String get tourRenew1Body => 'Enne kui kirje aegub, tuletab Vaultara sulle meelde. Saad puudutada meeldetuletust, et kirje avada.';
 
   @override
   String get tourRenew2Title => 'Salvesta uus kuupäev';
@@ -7947,7 +7947,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get tourAsk2Title => 'Räägi trükkimise asemel';
 
   @override
-  String get tourAsk2Body => 'Puuduta mikrofoni ja räägi. Sõnad ilmuvad rääkimise ajal ja saad kohe saata.';
+  String get tourAsk2Body => 'Saad puudutada mikrofoni ja rääkida. Sõnad ilmuvad rääkimise ajal ja saad kohe saata.';
 
   @override
   String get tourAsk3Title => 'Sina kinnitad iga muudatuse';

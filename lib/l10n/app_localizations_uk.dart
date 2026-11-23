@@ -982,7 +982,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'З Premium можна вибрати власні дати нагадувань.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Натисніть Вибрати свої дати, щоб змінити нагадування або додати нове.';
+  String get tutorialRemindersOwnDatesPremium => 'Можна натиснути Вибрати свої дати, щоб змінити нагадування або додати нове.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Термін дії закінчується сьогодні';
@@ -3554,10 +3554,10 @@ class AppLocalizationsUk extends AppLocalizations {
   String get tutorialTravelLocked => 'З Premium ви можете планувати поїздки та бачити, які документи кожному мандрівникові треба продовжити перед від\'їздом.';
 
   @override
-  String get tutorialTravelTripCard => 'Кожна поїздка показує, коли ви їдете і що треба виправити перед від\'їздом. Торкніться поїздки, щоб відкрити її.';
+  String get tutorialTravelTripCard => 'Кожна поїздка показує, коли ви їдете і що треба виправити перед від\'їздом. Можна торкнутися поїздки, щоб відкрити її.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Торкніться Спланувати поїздку, щоб додати, куди, коли і хто їде.';
+  String get tutorialTravelPlanTrip => 'Можна торкнутися Спланувати поїздку, щоб додати, куди, коли і хто їде.';
 
   @override
   String get tutorialTravelTripDocuments => 'Усередині поїздки Vaultara перевіряє записи кожного мандрівника за датами поїздки й показує, що треба продовжити.';
@@ -3581,7 +3581,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get tutorialFamilyMe => 'Це ви. Кожен запис, що не належить комусь іншому, залишається у вас.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Торкніться Додати людину, щоб додати того, про кого ви дбаєте, наприклад партнера, дитину чи батька або матір.';
+  String get tutorialFamilyAddPerson => 'Можна торкнутися Додати людину, щоб додати того, про кого ви дбаєте, наприклад партнера, дитину чи батька або матір.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'З тарифом Сім\'я або Бізнес ви можете додавати людей, про яких дбаєте, і зберігати їхні записи тут.';
@@ -8042,7 +8042,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get tourHome2Title => 'Знайдіть що завгодно';
 
   @override
-  String get tourHome2Body => 'Торкніться пошуку, щоб знайти запис за назвою, групою чи людиною.';
+  String get tourHome2Body => 'Можна торкнутися пошуку, щоб знайти запис за назвою, групою чи людиною.';
 
   @override
   String get tourHome3Title => 'Подорожі та плани';
@@ -8060,7 +8060,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get tourRenew1Title => 'Надходить нагадування';
 
   @override
-  String get tourRenew1Body => 'Перш ніж спливе термін запису, Vaultara нагадає вам. Торкніться нагадування, щоб відкрити запис.';
+  String get tourRenew1Body => 'Перш ніж спливе термін запису, Vaultara нагадає вам. Можна торкнутися нагадування, щоб відкрити запис.';
 
   @override
   String get tourRenew2Title => 'Збережіть нову дату';
@@ -8090,7 +8090,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get tourAsk2Title => 'Говоріть замість набору';
 
   @override
-  String get tourAsk2Body => 'Торкніться мікрофона й говоріть. Слова з\'являються під час мовлення, і надіслати можна одразу.';
+  String get tourAsk2Body => 'Можна торкнутися мікрофона й говорити. Слова з\'являються під час мовлення, і надіслати можна одразу.';
 
   @override
   String get tourAsk3Title => 'Кожну зміну підтверджуєте ви';

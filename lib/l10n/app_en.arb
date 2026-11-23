@@ -558,7 +558,7 @@
   "@tutorialRemindersOwnDatesFree": {
     "description": "Tip in a guided tutorial, for free users."
   },
-  "tutorialRemindersOwnDatesPremium": "Tap Choose your own dates to change a reminder or add one.",
+  "tutorialRemindersOwnDatesPremium": "You can tap Choose your own dates to change a reminder or add one.",
   "@tutorialRemindersOwnDatesPremium": {
     "description": "Tip in a guided tutorial, for Premium users. Use the same words as remindersChooseDates."
   },
@@ -3897,11 +3897,11 @@
   "@tutorialTravelLocked": {
     "description": "Travel tutorial message over the Premium card shown to free users on the Travel check screen."
   },
-  "tutorialTravelTripCard": "Each trip shows when you leave and anything to fix before you go. Tap a trip to open it.",
+  "tutorialTravelTripCard": "Each trip shows when you leave and anything to fix before you go. You can tap a trip to open it.",
   "@tutorialTravelTripCard": {
     "description": "Travel tutorial message over a saved trip card."
   },
-  "tutorialTravelPlanTrip": "Tap Plan a trip to add where you are going, when, and who is travelling.",
+  "tutorialTravelPlanTrip": "You can tap Plan a trip to add where you are going, when, and who is travelling.",
   "@tutorialTravelPlanTrip": {
     "description": "Travel tutorial message over the Plan a trip button."
   },
@@ -3933,7 +3933,7 @@
   "@tutorialFamilyMe": {
     "description": "Family tutorial message over the Me row on the Family screen."
   },
-  "tutorialFamilyAddPerson": "Tap Add person to add someone you look after, like a partner, child or parent.",
+  "tutorialFamilyAddPerson": "You can tap Add person to add someone you look after, like a partner, child or parent.",
   "@tutorialFamilyAddPerson": {
     "description": "Family tutorial message over the Add person button, for users whose plan includes people."
   },
@@ -9710,7 +9710,7 @@
   "@tourHome2Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "tourHome2Body": "Tap the search bar to find a record by its name, group or the person it belongs to.",
+  "tourHome2Body": "You can tap the search bar to find a record by its name, group or the person it belongs to.",
   "@tourHome2Body": {
     "description": "Text of a tutorial step."
   },
@@ -9734,7 +9734,7 @@
   "@tourRenew1Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "tourRenew1Body": "Before a record expires, Vaultara reminds you. Tap the reminder to open the record.",
+  "tourRenew1Body": "Before a record expires, Vaultara reminds you. You can tap the reminder to open the record.",
   "@tourRenew1Body": {
     "description": "Text of a tutorial step."
   },
@@ -9774,7 +9774,7 @@
   "@tourAsk2Title": {
     "description": "Title of a tutorial step. Short."
   },
-  "tourAsk2Body": "Tap the microphone and speak. Your words appear as you talk, and you can send straight away.",
+  "tourAsk2Body": "You can tap the microphone and speak. Your words appear as you talk, and you can send straight away.",
   "@tourAsk2Body": {
     "description": "Text of a tutorial step."
   },

@@ -982,7 +982,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Z Premium możesz wybrać własne daty przypomnień.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Stuknij Wybierz własne daty, aby zmienić przypomnienie lub dodać nowe.';
+  String get tutorialRemindersOwnDatesPremium => 'Możesz stuknąć Wybierz własne daty, aby zmienić przypomnienie lub dodać nowe.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Wygasa dziś';
@@ -3561,10 +3561,10 @@ class AppLocalizationsPl extends AppLocalizations {
   String get tutorialTravelLocked => 'Dzięki Premium zaplanujesz podróże i zobaczysz, które dokumenty każdy podróżny musi odnowić przed wyjazdem.';
 
   @override
-  String get tutorialTravelTripCard => 'Każda podróż pokazuje, kiedy wyjeżdżasz i co trzeba załatwić przed wyjazdem. Dotknij podróży, aby ją otworzyć.';
+  String get tutorialTravelTripCard => 'Każda podróż pokazuje, kiedy wyjeżdżasz i co trzeba załatwić przed wyjazdem. Możesz dotknąć podróży, aby ją otworzyć.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Dotknij Zaplanuj podróż, aby dodać, dokąd jedziesz, kiedy i kto podróżuje.';
+  String get tutorialTravelPlanTrip => 'Możesz dotknąć Zaplanuj podróż, aby dodać, dokąd jedziesz, kiedy i kto podróżuje.';
 
   @override
   String get tutorialTravelTripDocuments => 'W podróży Vaultara sprawdza rekordy każdego podróżnego pod kątem dat podróży i pokazuje, co odnowić.';
@@ -3588,7 +3588,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get tutorialFamilyMe => 'To ty. Każdy rekord, który nie należy do kogoś innego, zostaje przy tobie.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Dotknij Dodaj osobę, aby dodać kogoś, kim się opiekujesz, na przykład partnera, dziecko lub rodzica.';
+  String get tutorialFamilyAddPerson => 'Możesz dotknąć Dodaj osobę, aby dodać kogoś, kim się opiekujesz, na przykład partnera, dziecko lub rodzica.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'W planie Rodzinnym lub Firmowym możesz dodawać osoby, którymi się opiekujesz, i trzymać tu także ich rekordy.';
@@ -8049,7 +8049,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get tourHome2Title => 'Znajdź wszystko';
 
   @override
-  String get tourHome2Body => 'Dotknij wyszukiwania, aby znaleźć wpis po nazwie, grupie lub osobie.';
+  String get tourHome2Body => 'Możesz dotknąć wyszukiwania, aby znaleźć wpis po nazwie, grupie lub osobie.';
 
   @override
   String get tourHome3Title => 'Podróże i plany';
@@ -8067,7 +8067,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get tourRenew1Title => 'Przychodzi przypomnienie';
 
   @override
-  String get tourRenew1Body => 'Zanim wpis wygaśnie, Vaultara ci przypomni. Dotknij przypomnienia, aby otworzyć wpis.';
+  String get tourRenew1Body => 'Zanim wpis wygaśnie, Vaultara ci przypomni. Możesz dotknąć przypomnienia, aby otworzyć wpis.';
 
   @override
   String get tourRenew2Title => 'Zapisz nową datę';
@@ -8097,7 +8097,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get tourAsk2Title => 'Mów zamiast pisać';
 
   @override
-  String get tourAsk2Body => 'Dotknij mikrofonu i mów. Słowa pojawiają się na bieżąco i możesz od razu wysłać.';
+  String get tourAsk2Body => 'Możesz dotknąć mikrofonu i mówić. Słowa pojawiają się na bieżąco i możesz od razu wysłać.';
 
   @override
   String get tourAsk3Title => 'Każdą zmianę zatwierdzasz ty';

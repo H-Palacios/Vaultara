@@ -976,7 +976,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'עם Premium אפשר לבחור תאריכי תזכורת משלך.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'הקישו על בחירת תאריכים משלך כדי לשנות תזכורת או להוסיף אחת.';
+  String get tutorialRemindersOwnDatesPremium => 'אפשר להקיש על בחירת תאריכים משלך כדי לשנות תזכורת או להוסיף אחת.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'פג תוקף היום';
@@ -3515,10 +3515,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tutorialTravelLocked => 'עם Premium אפשר לתכנן נסיעות ולראות אילו מסמכים כל נוסע צריך לחדש לפני היציאה.';
 
   @override
-  String get tutorialTravelTripCard => 'כל נסיעה מציגה מתי אתה יוצא ומה צריך לתקן לפני היציאה. הקש על נסיעה כדי לפתוח אותה.';
+  String get tutorialTravelTripCard => 'כל נסיעה מציגה מתי אתה יוצא ומה צריך לתקן לפני היציאה. אפשר להקיש על נסיעה כדי לפתוח אותה.';
 
   @override
-  String get tutorialTravelPlanTrip => 'הקש על תכנן נסיעה כדי להוסיף לאן אתה נוסע, מתי ומי נוסע.';
+  String get tutorialTravelPlanTrip => 'אפשר להקיש על תכנן נסיעה כדי להוסיף לאן אתה נוסע, מתי ומי נוסע.';
 
   @override
   String get tutorialTravelTripDocuments => 'בתוך נסיעה, Vaultara בודקת את הרשומות של כל נוסע מול תאריכי הנסיעה ומראה מה צריך לחדש.';
@@ -3542,7 +3542,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tutorialFamilyMe => 'זה אתה. כל רשומה שלא שייכת למישהו אחר נשארת אצלך.';
 
   @override
-  String get tutorialFamilyAddPerson => 'הקש על הוסף אדם כדי להוסיף מישהו שאתה דואג לו, כמו בן או בת זוג, ילד או הורה.';
+  String get tutorialFamilyAddPerson => 'אפשר להקיש על הוסף אדם כדי להוסיף מישהו שאתה דואג לו, כמו בן או בת זוג, ילד או הורה.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'עם תוכנית משפחתית או עסקית אפשר להוסיף אנשים שאתה דואג להם ולשמור גם את הרשומות שלהם כאן.';
@@ -7948,7 +7948,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tourHome2Title => 'מצאו הכול';
 
   @override
-  String get tourHome2Body => 'הקישו על חיפוש כדי למצוא רשומה לפי שם, קבוצה או אדם.';
+  String get tourHome2Body => 'אפשר להקיש על חיפוש כדי למצוא רשומה לפי שם, קבוצה או אדם.';
 
   @override
   String get tourHome3Title => 'נסיעות ותוכניות';
@@ -7966,7 +7966,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tourRenew1Title => 'מגיעה תזכורת';
 
   @override
-  String get tourRenew1Body => 'לפני שרשומה פגה, Vaultara מזכירה לכם. הקישו על התזכורת כדי לפתוח את הרשומה.';
+  String get tourRenew1Body => 'לפני שרשומה פגה, Vaultara מזכירה לכם. אפשר להקיש על התזכורת כדי לפתוח את הרשומה.';
 
   @override
   String get tourRenew2Title => 'שמרו את התאריך החדש';
@@ -7996,7 +7996,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tourAsk2Title => 'דברו במקום להקליד';
 
   @override
-  String get tourAsk2Body => 'הקישו על המיקרופון ודברו. המילים מופיעות תוך כדי דיבור ואפשר לשלוח מיד.';
+  String get tourAsk2Body => 'אפשר להקיש על המיקרופון ולדבר. המילים מופיעות תוך כדי דיבור ואפשר לשלוח מיד.';
 
   @override
   String get tourAsk3Title => 'אתם מאשרים כל שינוי';

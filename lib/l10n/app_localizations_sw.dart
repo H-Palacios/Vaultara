@@ -974,7 +974,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Ukiwa na Premium, unaweza kuchagua tarehe zako za kukumbusha.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Gusa Chagua tarehe zako ili kubadilisha kikumbusho au kuongeza kimoja.';
+  String get tutorialRemindersOwnDatesPremium => 'Unaweza kugusa Chagua tarehe zako ili kubadilisha kikumbusho au kuongeza kimoja.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Inamalizika Leo';
@@ -3479,10 +3479,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tutorialTravelLocked => 'Ukiwa na Premium unaweza kupanga safari na kuona hati za kila msafiri zinazohitaji kuhuishwa kabla ya kuondoka.';
 
   @override
-  String get tutorialTravelTripCard => 'Kila safari inaonyesha unapoondoka na chochote cha kurekebisha kabla hujaondoka. Gusa safari ili kuifungua.';
+  String get tutorialTravelTripCard => 'Kila safari inaonyesha unapoondoka na chochote cha kurekebisha kabla hujaondoka. Unaweza kugusa safari ili kuifungua.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Gusa Panga safari ili kuongeza unakoenda, lini, na nani anasafiri.';
+  String get tutorialTravelPlanTrip => 'Unaweza kugusa Panga safari ili kuongeza unakoenda, lini, na nani anasafiri.';
 
   @override
   String get tutorialTravelTripDocuments => 'Ndani ya safari, Vaultara hukagua rekodi za kila msafiri dhidi ya tarehe za safari na kuonyesha cha kuhuisha.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tutorialFamilyMe => 'Huyu ni wewe. Rekodi yoyote isiyomhusu mtu mwingine hubaki kwako.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Gusa Ongeza mtu ili kumwongeza unayemjali, kama mwenzi, mtoto au mzazi.';
+  String get tutorialFamilyAddPerson => 'Unaweza kugusa Ongeza mtu ili kumwongeza unayemjali, kama mwenzi, mtoto au mzazi.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Ukiwa na kifurushi cha Familia au Biashara unaweza kuongeza watu unaowajali na kuhifadhi rekodi zao hapa pia.';
@@ -7895,7 +7895,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tourHome2Title => 'Pata chochote';
 
   @override
-  String get tourHome2Body => 'Gusa utafutaji kupata rekodi kwa jina, kundi au mtu.';
+  String get tourHome2Body => 'Unaweza kugusa utafutaji kupata rekodi kwa jina, kundi au mtu.';
 
   @override
   String get tourHome3Title => 'Safari na mipango';
@@ -7913,7 +7913,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tourRenew1Title => 'Kikumbusho kinafika';
 
   @override
-  String get tourRenew1Body => 'Kabla rekodi haijaisha, Vaultara inakukumbusha. Gusa kikumbusho kufungua rekodi.';
+  String get tourRenew1Body => 'Kabla rekodi haijaisha, Vaultara inakukumbusha. Unaweza kugusa kikumbusho kufungua rekodi.';
 
   @override
   String get tourRenew2Title => 'Hifadhi tarehe mpya';
@@ -7943,7 +7943,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tourAsk2Title => 'Zungumza badala ya kuandika';
 
   @override
-  String get tourAsk2Body => 'Gusa maikrofoni uzungumze. Maneno yanaonekana unapozungumza na unaweza kutuma mara moja.';
+  String get tourAsk2Body => 'Unaweza kugusa maikrofoni uzungumze. Maneno yanaonekana unapozungumza na unaweza kutuma mara moja.';
 
   @override
   String get tourAsk3Title => 'Unathibitisha kila badiliko';

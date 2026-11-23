@@ -974,7 +974,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Site na Premium, ị nwere ike ịhọrọ ụbọchị ncheta nke gị.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Pịa Họrọ ụbọchị nke gị iji gbanwee ihe ncheta ma ọ bụ tinye otu.';
+  String get tutorialRemindersOwnDatesPremium => 'Ị nwere ike ịpị Họrọ ụbọchị nke gị iji gbanwee ihe ncheta ma ọ bụ tinye otu.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Na-agwụ taa';
@@ -3459,10 +3459,10 @@ class AppLocalizationsIg extends AppLocalizations {
   String get tutorialTravelLocked => 'Site na Premium ị nwere ike ihazi njem ma hụ ihe odide onye njem ọ bụla kwesịrị imegharị tupu ọ pụọ.';
 
   @override
-  String get tutorialTravelTripCard => 'Njem ọ bụla na-egosi mgbe ị na-apụ na ihe ọ bụla ị ga-edozi tupu ị pụọ. Pịa njem iji meghee ya.';
+  String get tutorialTravelTripCard => 'Njem ọ bụla na-egosi mgbe ị na-apụ na ihe ọ bụla ị ga-edozi tupu ị pụọ. Ị nwere ike ịpị njem iji meghee ya.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Pịa Hazie njem iji tinye ebe ị na-aga, mgbe ị na-aga na onye na-eso.';
+  String get tutorialTravelPlanTrip => 'Ị nwere ike ịpị Hazie njem iji tinye ebe ị na-aga, mgbe ị na-aga na onye na-eso.';
 
   @override
   String get tutorialTravelTripDocuments => 'N\'ime njem, Vaultara na-atụnyere ndekọ onye njem ọ bụla na ụbọchị njem ma na-egosi ihe ga-emegharị.';
@@ -3486,7 +3486,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get tutorialFamilyMe => 'Nke a bụ gị. Ndekọ ọ bụla na-abụghị nke mmadụ ọzọ na-anọ n\'aka gị.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Pịa Tinye mmadụ iji tinye onye ị na-elekọta, dị ka di ma ọ bụ nwunye, nwa ma ọ bụ nne na nna.';
+  String get tutorialFamilyAddPerson => 'Ị nwere ike ịpị Tinye mmadụ iji tinye onye ị na-elekọta, dị ka di ma ọ bụ nwunye, nwa ma ọ bụ nne na nna.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Site na atụmatụ Ezinụlọ ma ọ bụ Azụmahịa ị nwere ike itinye ndị ị na-elekọta ma debe ndekọ ha ebe a.';
@@ -7844,7 +7844,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get tourHome2Title => 'Chọta ihe ọ bụla';
 
   @override
-  String get tourHome2Body => 'Pịa ọchụchọ ka ịchọta ndekọ site na aha, otu ma ọ bụ mmadụ.';
+  String get tourHome2Body => 'Ị nwere ike ịpị ọchụchọ ka ịchọta ndekọ site na aha, otu ma ọ bụ mmadụ.';
 
   @override
   String get tourHome3Title => 'Njem na atụmatụ';
@@ -7862,7 +7862,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get tourRenew1Title => 'Ncheta bịara';
 
   @override
-  String get tourRenew1Body => 'Tupu ndekọ agwụ, Vaultara na-echetara gị. Pịa ncheta ahụ ka imepe ndekọ ahụ.';
+  String get tourRenew1Body => 'Tupu ndekọ agwụ, Vaultara na-echetara gị. Ị nwere ike ịpị ncheta ahụ ka imepe ndekọ ahụ.';
 
   @override
   String get tourRenew2Title => 'Chekwaa ụbọchị ọhụrụ';
@@ -7892,7 +7892,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get tourAsk2Title => 'Kwuo okwu kama ịpị';
 
   @override
-  String get tourAsk2Body => 'Pịa igwe okwu ma kwuo okwu. Okwu gị na-apụta ka ị na-ekwu ma ị nwere ike iziga ozugbo.';
+  String get tourAsk2Body => 'Ị nwere ike ịpị igwe okwu ma kwuo okwu. Okwu gị na-apụta ka ị na-ekwu ma ị nwere ike iziga ozugbo.';
 
   @override
   String get tourAsk3Title => 'Ị na-akwado mgbanwe ọ bụla';

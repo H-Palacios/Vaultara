@@ -976,7 +976,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Uz Premium možete odabrati svoje datume podsjetnika.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Dodirnite Odaberite svoje datume da promijenite podsjetnik ili dodate novi.';
+  String get tutorialRemindersOwnDatesPremium => 'Možete dodirnuti Odaberite svoje datume da promijenite podsjetnik ili dodate novi.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Ističe danas';
@@ -3512,10 +3512,10 @@ class AppLocalizationsBs extends AppLocalizations {
   String get tutorialTravelLocked => 'Uz Premium možete planirati putovanja i vidjeti koje dokumente svaki putnik treba obnoviti prije polaska.';
 
   @override
-  String get tutorialTravelTripCard => 'Svako putovanje prikazuje kada polazite i šta treba srediti prije polaska. Dodirnite putovanje da ga otvorite.';
+  String get tutorialTravelTripCard => 'Svako putovanje prikazuje kada polazite i šta treba srediti prije polaska. Možete dodirnuti putovanje da ga otvorite.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Dodirnite Planiraj putovanje da dodate kamo idete, kada i ko putuje.';
+  String get tutorialTravelPlanTrip => 'Možete dodirnuti Planiraj putovanje da dodate kamo idete, kada i ko putuje.';
 
   @override
   String get tutorialTravelTripDocuments => 'Unutar putovanja Vaultara provjerava zapise svakog putnika prema datumima putovanja i pokazuje šta treba obnoviti.';
@@ -3539,7 +3539,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get tutorialFamilyMe => 'Ovo ste vi. Svaki zapis koji ne pripada nekom drugom ostaje kod vas.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Dodirnite Dodaj osobu da dodate nekoga o kome brinete, poput partnera, djeteta ili roditelja.';
+  String get tutorialFamilyAddPerson => 'Možete dodirnuti Dodaj osobu da dodate nekoga o kome brinete, poput partnera, djeteta ili roditelja.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Uz Porodični ili Poslovni plan možete dodati osobe o kojima brinete i čuvati njihove zapise ovdje.';
@@ -7964,7 +7964,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get tourHome2Title => 'Pronađite sve';
 
   @override
-  String get tourHome2Body => 'Dodirnite pretragu da pronađete zapis po nazivu, grupi ili osobi.';
+  String get tourHome2Body => 'Možete dodirnuti pretragu da pronađete zapis po nazivu, grupi ili osobi.';
 
   @override
   String get tourHome3Title => 'Putovanja i planovi';
@@ -7982,7 +7982,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get tourRenew1Title => 'Stiže podsjetnik';
 
   @override
-  String get tourRenew1Body => 'Prije nego što zapis istekne, Vaultara vas podsjeti. Dodirnite podsjetnik da otvorite zapis.';
+  String get tourRenew1Body => 'Prije nego što zapis istekne, Vaultara vas podsjeti. Možete dodirnuti podsjetnik da otvorite zapis.';
 
   @override
   String get tourRenew2Title => 'Sačuvajte novi datum';
@@ -8012,7 +8012,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get tourAsk2Title => 'Govorite umjesto kucanja';
 
   @override
-  String get tourAsk2Body => 'Dodirnite mikrofon i govorite. Riječi se pojavljuju dok govorite i možete odmah poslati.';
+  String get tourAsk2Body => 'Možete dodirnuti mikrofon i govoriti. Riječi se pojavljuju dok govorite i možete odmah poslati.';
 
   @override
   String get tourAsk3Title => 'Svaku promjenu potvrđujete vi';

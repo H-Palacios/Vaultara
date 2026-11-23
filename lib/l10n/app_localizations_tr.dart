@@ -974,7 +974,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Premium ile kendi hatırlatma tarihlerini seçebilirsin.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Bir hatırlatıcıyı değiştirmek ya da eklemek için Kendi tarihlerini seç\'e dokun.';
+  String get tutorialRemindersOwnDatesPremium => 'Bir hatırlatıcıyı değiştirmek ya da eklemek için Kendi tarihlerini seç\'e dokunabilirsin.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Bugün Sona Eriyor';
@@ -3479,10 +3479,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get tutorialTravelLocked => 'Premium ile seyahat planlayabilir ve her yolcunun ayrılmadan önce hangi belgeleri yenilemesi gerektiğini görebilirsiniz.';
 
   @override
-  String get tutorialTravelTripCard => 'Her seyahat ne zaman çıkacağınızı ve yola çıkmadan önce düzeltilecek şeyleri gösterir. Açmak için bir seyahate dokunun.';
+  String get tutorialTravelTripCard => 'Her seyahat ne zaman çıkacağınızı ve yola çıkmadan önce düzeltilecek şeyleri gösterir. Açmak için bir seyahate dokunabilirsiniz.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Nereye, ne zaman ve kimlerle gideceğinizi eklemek için Seyahat planla düğmesine dokunun.';
+  String get tutorialTravelPlanTrip => 'Nereye, ne zaman ve kimlerle gideceğinizi eklemek için Seyahat planla düğmesine dokunabilirsiniz.';
 
   @override
   String get tutorialTravelTripDocuments => 'Bir seyahatin içinde Vaultara, her yolcunun kayıtlarını seyahat tarihlerine göre kontrol eder ve nelerin yenilenmesi gerektiğini gösterir.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get tutorialFamilyMe => 'Bu sizsiniz. Başkasına ait olmayan her kayıt sizde kalır.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Partner, çocuk veya ebeveyn gibi baktığınız birini eklemek için Kişi ekle düğmesine dokunun.';
+  String get tutorialFamilyAddPerson => 'Partner, çocuk veya ebeveyn gibi baktığınız birini eklemek için Kişi ekle düğmesine dokunabilirsiniz.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Family veya Business planıyla baktığınız kişileri ekleyebilir ve onların kayıtlarını da burada tutabilirsiniz.';
@@ -7895,7 +7895,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get tourHome2Title => 'Her şeyi bul';
 
   @override
-  String get tourHome2Body => 'Bir kaydı ada, gruba ya da kişiye göre bulmak için aramaya dokun.';
+  String get tourHome2Body => 'Bir kaydı ada, gruba ya da kişiye göre bulmak için aramaya dokunabilirsin.';
 
   @override
   String get tourHome3Title => 'Geziler ve planlar';
@@ -7913,7 +7913,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get tourRenew1Title => 'Hatırlatıcı gelir';
 
   @override
-  String get tourRenew1Body => 'Bir kayıt sona ermeden önce Vaultara sana hatırlatır. Kaydı açmak için hatırlatıcıya dokun.';
+  String get tourRenew1Body => 'Bir kayıt sona ermeden önce Vaultara sana hatırlatır. Kaydı açmak için hatırlatıcıya dokunabilirsin.';
 
   @override
   String get tourRenew2Title => 'Yeni tarihi kaydet';
@@ -7943,7 +7943,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get tourAsk2Title => 'Yazmak yerine konuş';
 
   @override
-  String get tourAsk2Body => 'Mikrofona dokun ve konuş. Sözlerin konuşurken görünür, hemen gönderebilirsin.';
+  String get tourAsk2Body => 'Mikrofona dokunup konuşabilirsin. Sözlerin konuşurken görünür, hemen gönderebilirsin.';
 
   @override
   String get tourAsk3Title => 'Her değişikliği sen onaylarsın';

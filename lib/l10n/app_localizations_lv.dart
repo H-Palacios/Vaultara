@@ -975,7 +975,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Ar Premium varat paši izvēlēties atgādinājumu datumus.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Pieskarieties Izvēlēties savus datumus, lai mainītu atgādinājumu vai pievienotu jaunu.';
+  String get tutorialRemindersOwnDatesPremium => 'Varat pieskarties Izvēlēties savus datumus, lai mainītu atgādinājumu vai pievienotu jaunu.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Termiņš beidzas šodien';
@@ -3509,10 +3509,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tutorialTravelLocked => 'Ar Premium varat plānot ceļojumus un redzēt, kuri dokumenti katram ceļotājam jāatjauno pirms došanās ceļā.';
 
   @override
-  String get tutorialTravelTripCard => 'Katrs ceļojums rāda, kad izbraucat un kas jānokārto pirms došanās ceļā. Pieskarieties ceļojumam, lai to atvērtu.';
+  String get tutorialTravelTripCard => 'Katrs ceļojums rāda, kad izbraucat un kas jānokārto pirms došanās ceļā. Varat pieskarties ceļojumam, lai to atvērtu.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Pieskarieties Plānot ceļojumu, lai pievienotu, kurp dodaties, kad un kas ceļo.';
+  String get tutorialTravelPlanTrip => 'Varat pieskarties Plānot ceļojumu, lai pievienotu, kurp dodaties, kad un kas ceļo.';
 
   @override
   String get tutorialTravelTripDocuments => 'Ceļojuma iekšienē Vaultara pārbauda katra ceļotāja ierakstus pret ceļojuma datumiem un parāda, kas jāatjauno.';
@@ -3536,7 +3536,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tutorialFamilyMe => 'Šis esat jūs. Jebkurš ieraksts, kas nepieder citam, paliek pie jums.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Pieskarieties Pievienot personu, lai pievienotu kādu, par ko rūpējaties, piemēram, partneri, bērnu vai vecāku.';
+  String get tutorialFamilyAddPerson => 'Varat pieskarties Pievienot personu, lai pievienotu kādu, par ko rūpējaties, piemēram, partneri, bērnu vai vecāku.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Ar ģimenes vai uzņēmumu plānu varat pievienot cilvēkus, par kuriem rūpējaties, un glabāt arī viņu ierakstus šeit.';
@@ -7961,7 +7961,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tourHome2Title => 'Atrodi visu';
 
   @override
-  String get tourHome2Body => 'Pieskaries meklēšanai, lai atrastu ierakstu pēc nosaukuma, grupas vai personas.';
+  String get tourHome2Body => 'Vari pieskarties meklēšanai, lai atrastu ierakstu pēc nosaukuma, grupas vai personas.';
 
   @override
   String get tourHome3Title => 'Ceļojumi un plāni';
@@ -7979,7 +7979,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tourRenew1Title => 'Pienāk atgādinājums';
 
   @override
-  String get tourRenew1Body => 'Pirms ieraksta termiņš beidzas, Vaultara tev atgādina. Pieskaries atgādinājumam, lai atvērtu ierakstu.';
+  String get tourRenew1Body => 'Pirms ieraksta termiņš beidzas, Vaultara tev atgādina. Vari pieskarties atgādinājumam, lai atvērtu ierakstu.';
 
   @override
   String get tourRenew2Title => 'Saglabā jauno datumu';
@@ -8009,7 +8009,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tourAsk2Title => 'Runā, nevis raksti';
 
   @override
-  String get tourAsk2Body => 'Pieskaries mikrofonam un runā. Vārdi parādās runājot, un vari uzreiz sūtīt.';
+  String get tourAsk2Body => 'Vari pieskarties mikrofonam un runāt. Vārdi parādās runājot, un vari uzreiz sūtīt.';
 
   @override
   String get tourAsk3Title => 'Katras izmaiņas apstiprini tu';

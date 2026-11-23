@@ -973,7 +973,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'ດ້ວຍ Premium ທ່ານສາມາດເລືອກວັນເຕືອນເອງໄດ້.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'ແຕະ ເລືອກວັນທີຂອງທ່ານເອງ ເພື່ອປ່ຽນການເຕືອນ ຫຼື ເພີ່ມອັນໃໝ່.';
+  String get tutorialRemindersOwnDatesPremium => 'ທ່ານສາມາດແຕະ ເລືອກວັນທີຂອງທ່ານເອງ ເພື່ອປ່ຽນການເຕືອນ ຫຼື ເພີ່ມອັນໃໝ່.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'ໝົດອາຍຸມື້ນີ້';
@@ -3458,10 +3458,10 @@ class AppLocalizationsLo extends AppLocalizations {
   String get tutorialTravelLocked => 'ດ້ວຍ ພຣີເມຍມ ທ່ານສາມາດວາງແຜນການເດີນທາງ ແລະ ເບິ່ງວ່າຜູ້ເດີນທາງແຕ່ລະຄົນຕ້ອງຕໍ່ອາຍຸເອກະສານໃດກ່ອນອອກເດີນທາງ.';
 
   @override
-  String get tutorialTravelTripCard => 'ແຕ່ລະການເດີນທາງສະແດງວ່າທ່ານອອກເດີນທາງເມື່ອໃດ ແລະ ມີຫຍັງຕ້ອງແກ້ໄຂກ່ອນໄປ. ແຕະການເດີນທາງເພື່ອເປີດ.';
+  String get tutorialTravelTripCard => 'ແຕ່ລະການເດີນທາງສະແດງວ່າທ່ານອອກເດີນທາງເມື່ອໃດ ແລະ ມີຫຍັງຕ້ອງແກ້ໄຂກ່ອນໄປ. ທ່ານສາມາດແຕະການເດີນທາງເພື່ອເປີດ.';
 
   @override
-  String get tutorialTravelPlanTrip => 'ແຕະ ວາງແຜນການເດີນທາງ ເພື່ອເພີ່ມບ່ອນທີ່ທ່ານຈະໄປ, ເວລາ ແລະ ໃຜເດີນທາງ.';
+  String get tutorialTravelPlanTrip => 'ທ່ານສາມາດແຕະ ວາງແຜນການເດີນທາງ ເພື່ອເພີ່ມບ່ອນທີ່ທ່ານຈະໄປ, ເວລາ ແລະ ໃຜເດີນທາງ.';
 
   @override
   String get tutorialTravelTripDocuments => 'ພາຍໃນການເດີນທາງ Vaultara ກວດບັນທຶກຂອງຜູ້ເດີນທາງແຕ່ລະຄົນກັບວັນທີຂອງການເດີນທາງ ແລະ ສະແດງວ່າຕ້ອງຕໍ່ອາຍຸຫຍັງ.';
@@ -3485,7 +3485,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get tutorialFamilyMe => 'ນີ້ແມ່ນທ່ານ. ບັນທຶກໃດທີ່ບໍ່ແມ່ນຂອງຄົນອື່ນຈະຢູ່ກັບທ່ານ.';
 
   @override
-  String get tutorialFamilyAddPerson => 'ແຕະ ເພີ່ມຄົນ ເພື່ອເພີ່ມຄົນທີ່ທ່ານດູແລ ເຊັ່ນ ຄູ່ສົມລົດ, ລູກ ຫຼື ພໍ່ແມ່.';
+  String get tutorialFamilyAddPerson => 'ທ່ານສາມາດແຕະ ເພີ່ມຄົນ ເພື່ອເພີ່ມຄົນທີ່ທ່ານດູແລ ເຊັ່ນ ຄູ່ສົມລົດ, ລູກ ຫຼື ພໍ່ແມ່.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'ດ້ວຍແພັກເກດຄອບຄົວ ຫຼື ທຸລະກິດ ທ່ານສາມາດເພີ່ມຄົນທີ່ທ່ານດູແລ ແລະ ເກັບບັນທຶກຂອງເຂົາເຈົ້າໄວ້ບ່ອນນີ້ນຳ.';
@@ -7838,7 +7838,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get tourHome2Title => 'ຊອກຫາໄດ້ທຸກຢ່າງ';
 
   @override
-  String get tourHome2Body => 'ແຕະຊອກຫາເພື່ອຫາລາຍການຕາມຊື່, ກຸ່ມ ຫຼື ບຸກຄົນ.';
+  String get tourHome2Body => 'ທ່ານສາມາດແຕະຊອກຫາເພື່ອຫາລາຍການຕາມຊື່, ກຸ່ມ ຫຼື ບຸກຄົນ.';
 
   @override
   String get tourHome3Title => 'ການເດີນທາງ ແລະ ແຜນ';
@@ -7856,7 +7856,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get tourRenew1Title => 'ມີການແຈ້ງເຕືອນ';
 
   @override
-  String get tourRenew1Body => 'ກ່ອນລາຍການໝົດອາຍຸ, Vaultara ຈະເຕືອນທ່ານ. ແຕະການແຈ້ງເຕືອນເພື່ອເປີດລາຍການ.';
+  String get tourRenew1Body => 'ກ່ອນລາຍການໝົດອາຍຸ, Vaultara ຈະເຕືອນທ່ານ. ທ່ານສາມາດແຕະການແຈ້ງເຕືອນເພື່ອເປີດລາຍການ.';
 
   @override
   String get tourRenew2Title => 'ບັນທຶກວັນທີໃໝ່';
@@ -7886,7 +7886,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get tourAsk2Title => 'ເວົ້າແທນການພິມ';
 
   @override
-  String get tourAsk2Body => 'ແຕະໄມ ແລ້ວເວົ້າ. ຄຳເວົ້າຈະປາກົດຂະນະເວົ້າ ແລະ ສົ່ງໄດ້ທັນທີ.';
+  String get tourAsk2Body => 'ທ່ານສາມາດແຕະໄມ ແລ້ວເວົ້າ. ຄຳເວົ້າຈະປາກົດຂະນະເວົ້າ ແລະ ສົ່ງໄດ້ທັນທີ.';
 
   @override
   String get tourAsk3Title => 'ທ່ານຢືນຢັນທຸກການປ່ຽນແປງ';

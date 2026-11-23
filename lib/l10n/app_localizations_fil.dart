@@ -974,7 +974,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Sa Premium, maaari kang pumili ng sarili mong petsa ng paalala.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'I-tap ang Pumili ng sariling petsa para baguhin ang isang paalala o magdagdag ng isa.';
+  String get tutorialRemindersOwnDatesPremium => 'Puwede mong i-tap ang Pumili ng sariling petsa para baguhin ang isang paalala o magdagdag ng isa.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Mag-eexpire Ngayong Araw';
@@ -3477,10 +3477,10 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tutorialTravelLocked => 'Sa Premium, makakapagplano ka ng mga biyahe at makikita kung aling mga dokumento ang kailangang i-renew ng bawat manlalakbay bago umalis.';
 
   @override
-  String get tutorialTravelTripCard => 'Ipinapakita ng bawat biyahe kung kailan ka aalis at kung ano ang aayusin bago umalis. I-tap ang biyahe para buksan ito.';
+  String get tutorialTravelTripCard => 'Ipinapakita ng bawat biyahe kung kailan ka aalis at kung ano ang aayusin bago umalis. Puwede mong i-tap ang biyahe para buksan ito.';
 
   @override
-  String get tutorialTravelPlanTrip => 'I-tap ang Magplano ng biyahe para idagdag kung saan ka pupunta, kailan, at sino ang bibiyahe.';
+  String get tutorialTravelPlanTrip => 'Puwede mong i-tap ang Magplano ng biyahe para idagdag kung saan ka pupunta, kailan, at sino ang bibiyahe.';
 
   @override
   String get tutorialTravelTripDocuments => 'Sa loob ng biyahe, sinusuri ng Vaultara ang mga rekord ng bawat manlalakbay laban sa mga petsa ng biyahe at ipinapakita kung ano ang kailangang i-renew.';
@@ -3504,7 +3504,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tutorialFamilyMe => 'Ikaw ito. Ang anumang rekord na hindi pag-aari ng ibang tao ay mananatili sa iyo.';
 
   @override
-  String get tutorialFamilyAddPerson => 'I-tap ang Magdagdag ng tao para magdagdag ng taong inaalagaan mo, gaya ng kapareha, anak o magulang.';
+  String get tutorialFamilyAddPerson => 'Puwede mong i-tap ang Magdagdag ng tao para magdagdag ng taong inaalagaan mo, gaya ng kapareha, anak o magulang.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Sa planong Pamilya o Negosyo, makakapagdagdag ka ng mga taong inaalagaan mo at makakapag-imbak din dito ng mga rekord nila.';
@@ -7889,7 +7889,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tourHome2Title => 'Hanapin ang kahit ano';
 
   @override
-  String get tourHome2Body => 'I-tap ang search para maghanap ng record ayon sa pangalan, grupo o tao.';
+  String get tourHome2Body => 'Puwede mong i-tap ang search para maghanap ng record ayon sa pangalan, grupo o tao.';
 
   @override
   String get tourHome3Title => 'Mga biyahe at plano';
@@ -7907,7 +7907,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tourRenew1Title => 'May dumating na paalala';
 
   @override
-  String get tourRenew1Body => 'Bago mag-expire ang isang record, pinapaalalahanan ka ng Vaultara. I-tap ang paalala para buksan ang record.';
+  String get tourRenew1Body => 'Bago mag-expire ang isang record, pinapaalalahanan ka ng Vaultara. Puwede mong i-tap ang paalala para buksan ang record.';
 
   @override
   String get tourRenew2Title => 'I-save ang bagong petsa';
@@ -7937,7 +7937,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tourAsk2Title => 'Magsalita sa halip na mag-type';
 
   @override
-  String get tourAsk2Body => 'I-tap ang mic at magsalita. Lumalabas ang mga salita habang nagsasalita ka at maipapadala agad.';
+  String get tourAsk2Body => 'Puwede mong i-tap ang mic at magsalita. Lumalabas ang mga salita habang nagsasalita ka at maipapadala agad.';
 
   @override
   String get tourAsk3Title => 'Ikaw ang nagkukumpirma sa bawat pagbabago';

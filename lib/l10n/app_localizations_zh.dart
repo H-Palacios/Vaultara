@@ -973,7 +973,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => '使用 Premium，你可以自己选择提醒日期。';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => '点按“自己选择日期”即可更改或添加提醒。';
+  String get tutorialRemindersOwnDatesPremium => '你可以点按“自己选择日期”来更改或添加提醒。';
 
   @override
   String get smartInsightExpiresTodayHeading => '今天到期';
@@ -3458,10 +3458,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tutorialTravelLocked => '使用高级版，你可以规划行程，并查看每位出行者在出发前需要续期哪些证件。';
 
   @override
-  String get tutorialTravelTripCard => '每个行程都会显示出发时间和出发前需要处理的事项。点按行程即可打开。';
+  String get tutorialTravelTripCard => '每个行程都会显示出发时间和出发前需要处理的事项。你可以点按行程将其打开。';
 
   @override
-  String get tutorialTravelPlanTrip => '点按计划行程，添加目的地、时间和出行的人。';
+  String get tutorialTravelPlanTrip => '你可以点按计划行程，添加目的地、时间和出行的人。';
 
   @override
   String get tutorialTravelTripDocuments => '在行程内，Vaultara 会按行程日期检查每位出行者的记录，并显示需要续期的内容。';
@@ -3485,7 +3485,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tutorialFamilyMe => '这是你。不属于别人的记录都归你。';
 
   @override
-  String get tutorialFamilyAddPerson => '点按添加成员，添加你照顾的人，比如伴侣、孩子或父母。';
+  String get tutorialFamilyAddPerson => '你可以点按添加成员，添加你照顾的人，比如伴侣、孩子或父母。';
 
   @override
   String get tutorialFamilyAddPersonLocked => '使用家庭版或企业版，你可以添加你照顾的人，并把他们的记录也放在这里。';
@@ -7838,7 +7838,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tourHome2Title => '找到任何内容';
 
   @override
-  String get tourHome2Body => '轻点搜索，按名称、分组或人员查找记录。';
+  String get tourHome2Body => '你可以轻点搜索，按名称、分组或人员查找记录。';
 
   @override
   String get tourHome3Title => '旅行与计划';
@@ -7856,7 +7856,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tourRenew1Title => '收到提醒';
 
   @override
-  String get tourRenew1Body => '记录到期前，Vaultara 会提醒你。轻点提醒即可打开记录。';
+  String get tourRenew1Body => '记录到期前，Vaultara 会提醒你。你可以轻点提醒打开记录。';
 
   @override
   String get tourRenew2Title => '保存新日期';
@@ -7886,7 +7886,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tourAsk2Title => '用说的代替打字';
 
   @override
-  String get tourAsk2Body => '轻点麦克风开始说话。文字会随说随现，可立即发送。';
+  String get tourAsk2Body => '你可以轻点麦克风开始说话。文字会随说随现，可立即发送。';
 
   @override
   String get tourAsk3Title => '每项更改都由你确认';
@@ -10746,7 +10746,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tutorialRemindersOwnDatesFree => '使用 Premium，你可以自己选择提醒日期。';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => '点按“自己选择日期”即可更改或添加提醒。';
+  String get tutorialRemindersOwnDatesPremium => '你可以点按“自己选择日期”来更改或添加提醒。';
 
   @override
   String get smartInsightExpiresTodayHeading => '今天到期';
@@ -13225,10 +13225,10 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tutorialTravelLocked => '使用高级版，您可以规划行程，并查看每位出行者的哪些证件需要在出发前续期。';
 
   @override
-  String get tutorialTravelTripCard => '每个行程都会显示出发时间和出发前要处理的事项。点按行程即可打开。';
+  String get tutorialTravelTripCard => '每个行程都会显示出发时间和出发前需要处理的事项。你可以点按行程将其打开。';
 
   @override
-  String get tutorialTravelPlanTrip => '点按计划行程，添加目的地、时间和同行人员。';
+  String get tutorialTravelPlanTrip => '你可以点按计划行程，添加目的地、时间和出行的人。';
 
   @override
   String get tutorialTravelTripDocuments => '进入行程后，Vaultara 会对照行程日期检查每位出行者的记录，并显示需要续期的内容。';
@@ -13252,7 +13252,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tutorialFamilyMe => '这是您自己。不属于别人的记录都归您。';
 
   @override
-  String get tutorialFamilyAddPerson => '点按添加成员，添加您照顾的人，例如伴侣、孩子或父母。';
+  String get tutorialFamilyAddPerson => '你可以点按添加成员，添加你照顾的人，比如伴侣、孩子或父母。';
 
   @override
   String get tutorialFamilyAddPersonLocked => '使用家庭版或企业版，您可以添加您照顾的人，并把他们的记录也保存在这里。';
@@ -17605,7 +17605,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tourHome2Title => '找到任何内容';
 
   @override
-  String get tourHome2Body => '轻点搜索，按名称、分组或人员查找记录。';
+  String get tourHome2Body => '你可以轻点搜索，按名称、分组或人员查找记录。';
 
   @override
   String get tourHome3Title => '旅行与计划';
@@ -17623,7 +17623,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tourRenew1Title => '收到提醒';
 
   @override
-  String get tourRenew1Body => '记录到期前，Vaultara 会提醒你。轻点提醒即可打开记录。';
+  String get tourRenew1Body => '记录到期前，Vaultara 会提醒你。你可以轻点提醒打开记录。';
 
   @override
   String get tourRenew2Title => '保存新日期';
@@ -17653,7 +17653,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tourAsk2Title => '用说的代替打字';
 
   @override
-  String get tourAsk2Body => '轻点麦克风开始说话。文字会随说随现，可立即发送。';
+  String get tourAsk2Body => '你可以轻点麦克风开始说话。文字会随说随现，可立即发送。';
 
   @override
   String get tourAsk3Title => '每项更改都由你确认';
@@ -20513,7 +20513,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tutorialRemindersOwnDatesFree => '使用 Premium，你可以自行選擇提醒日期。';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => '點按「自行選擇日期」即可變更或新增提醒。';
+  String get tutorialRemindersOwnDatesPremium => '你可以點按「自行選擇日期」來變更或新增提醒。';
 
   @override
   String get smartInsightExpiresTodayHeading => '今天到期';
@@ -22992,10 +22992,10 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tutorialTravelLocked => '使用進階版，您可以規劃旅程，並查看每位旅客出發前需要為哪些證件續期。';
 
   @override
-  String get tutorialTravelTripCard => '每趟旅程都會顯示出發時間，以及出發前需要處理的事項。點選旅程即可開啟。';
+  String get tutorialTravelTripCard => '每趟旅程都會顯示出發時間，以及出發前需要處理的事項。你可以點選旅程將其開啟。';
 
   @override
-  String get tutorialTravelPlanTrip => '點選規劃旅程，新增目的地、時間和同行的人。';
+  String get tutorialTravelPlanTrip => '你可以點選規劃旅程，新增目的地、時間和同行的人。';
 
   @override
   String get tutorialTravelTripDocuments => '在旅程內，Vaultara 會依旅程日期檢查每位旅客的記錄，並顯示需要續期的項目。';
@@ -23019,7 +23019,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tutorialFamilyMe => '這是您自己。不屬於其他人的記錄都會留在您名下。';
 
   @override
-  String get tutorialFamilyAddPerson => '點選新增成員，加入您照顧的人，例如伴侶、孩子或父母。';
+  String get tutorialFamilyAddPerson => '你可以點選新增成員，加入您照顧的人，例如伴侶、孩子或父母。';
 
   @override
   String get tutorialFamilyAddPersonLocked => '使用家庭版或商務版方案，您可以加入您照顧的人，並把他們的記錄也放在這裡。';
@@ -27372,7 +27372,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tourHome2Title => '找到任何內容';
 
   @override
-  String get tourHome2Body => '輕觸搜尋，依名稱、群組或人員尋找記錄。';
+  String get tourHome2Body => '你可以輕觸搜尋，依名稱、群組或人員尋找記錄。';
 
   @override
   String get tourHome3Title => '旅行與計畫';
@@ -27390,7 +27390,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tourRenew1Title => '收到提醒';
 
   @override
-  String get tourRenew1Body => '記錄到期前，Vaultara 會提醒你。輕觸提醒即可開啟記錄。';
+  String get tourRenew1Body => '記錄到期前，Vaultara 會提醒你。你可以輕觸提醒開啟記錄。';
 
   @override
   String get tourRenew2Title => '儲存新日期';
@@ -27420,7 +27420,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tourAsk2Title => '用說的取代打字';
 
   @override
-  String get tourAsk2Body => '輕觸麥克風開始說話。文字會隨說隨現，可立即傳送。';
+  String get tourAsk2Body => '你可以輕觸麥克風開始說話。文字會隨說隨現，可立即傳送。';
 
   @override
   String get tourAsk3Title => '每項變更都由你確認';

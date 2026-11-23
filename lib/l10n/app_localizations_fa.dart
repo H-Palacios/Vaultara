@@ -974,7 +974,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'با Premium می‌توانید تاریخ‌های یادآوری را خودتان انتخاب کنید.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'برای تغییر یک یادآوری یا افزودن یکی دیگر، روی تاریخ‌های خودتان را انتخاب کنید بزنید.';
+  String get tutorialRemindersOwnDatesPremium => 'برای تغییر یک یادآوری یا افزودن یکی دیگر، می‌توانید روی تاریخ‌های خودتان را انتخاب کنید بزنید.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'امروز منقضی می‌شود';
@@ -3479,10 +3479,10 @@ class AppLocalizationsFa extends AppLocalizations {
   String get tutorialTravelLocked => 'با پریمیوم می‌توانید سفرها را برنامه‌ریزی کنید و ببینید مدارک هر مسافر پیش از رفتن باید چه چیزهایی تمدید شود.';
 
   @override
-  String get tutorialTravelTripCard => 'هر سفر نشان می‌دهد چه زمانی می‌روید و پیش از رفتن چه چیزی باید رفع شود. روی یک سفر بزنید تا باز شود.';
+  String get tutorialTravelTripCard => 'هر سفر نشان می‌دهد چه زمانی می‌روید و پیش از رفتن چه چیزی باید رفع شود. می‌توانید روی یک سفر بزنید تا باز شود.';
 
   @override
-  String get tutorialTravelPlanTrip => 'روی برنامه‌ریزی سفر بزنید تا مقصد، زمان و مسافران را اضافه کنید.';
+  String get tutorialTravelPlanTrip => 'می‌توانید روی برنامه‌ریزی سفر بزنید تا مقصد، زمان و مسافران را اضافه کنید.';
 
   @override
   String get tutorialTravelTripDocuments => 'در داخل یک سفر، Vaultara رکوردهای هر مسافر را با تاریخ‌های سفر مقایسه می‌کند و نشان می‌دهد چه چیزی باید تمدید شود.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get tutorialFamilyMe => 'این خود شما هستید. هر رکوردی که مال دیگری نباشد نزد شما می‌ماند.';
 
   @override
-  String get tutorialFamilyAddPerson => 'روی افزودن فرد بزنید تا کسی را که از او مراقبت می‌کنید اضافه کنید، مثل همسر، فرزند یا والدین.';
+  String get tutorialFamilyAddPerson => 'می‌توانید روی افزودن فرد بزنید تا کسی را که از او مراقبت می‌کنید اضافه کنید، مثل همسر، فرزند یا والدین.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'با طرح خانواده یا کسب‌وکار می‌توانید افرادی را که از آن‌ها مراقبت می‌کنید اضافه کنید و رکوردهایشان را هم اینجا نگه دارید.';
@@ -7895,7 +7895,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get tourHome2Title => 'همه‌چیز را پیدا کنید';
 
   @override
-  String get tourHome2Body => 'روی جستجو ضربه بزنید تا موردی را با نام، گروه یا شخص پیدا کنید.';
+  String get tourHome2Body => 'می‌توانید روی جستجو ضربه بزنید تا موردی را با نام، گروه یا شخص پیدا کنید.';
 
   @override
   String get tourHome3Title => 'سفرها و برنامه‌ها';
@@ -7913,7 +7913,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get tourRenew1Title => 'یادآوری می‌رسد';
 
   @override
-  String get tourRenew1Body => 'پیش از انقضای یک مورد، Vaultara به شما یادآوری می‌کند. روی یادآوری ضربه بزنید تا مورد باز شود.';
+  String get tourRenew1Body => 'پیش از انقضای یک مورد، Vaultara به شما یادآوری می‌کند. می‌توانید روی یادآوری ضربه بزنید تا مورد باز شود.';
 
   @override
   String get tourRenew2Title => 'تاریخ جدید را ذخیره کنید';
@@ -7943,7 +7943,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get tourAsk2Title => 'به‌جای تایپ حرف بزنید';
 
   @override
-  String get tourAsk2Body => 'روی میکروفون ضربه بزنید و حرف بزنید. کلمات همزمان نمایش داده می‌شوند و می‌توانید فوراً بفرستید.';
+  String get tourAsk2Body => 'می‌توانید روی میکروفون ضربه بزنید و حرف بزنید. کلمات همزمان نمایش داده می‌شوند و می‌توانید فوراً بفرستید.';
 
   @override
   String get tourAsk3Title => 'هر تغییر را شما تأیید می‌کنید';

@@ -978,7 +978,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Su Premium galite patys pasirinkti priminimų datas.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Bakstelėkite Pasirinkite savo datas, kad pakeistumėte priminimą arba pridėtumėte naują.';
+  String get tutorialRemindersOwnDatesPremium => 'Galite bakstelėti Pasirinkite savo datas, kad pakeistumėte priminimą arba pridėtumėte naują.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Baigiasi Šiandien';
@@ -3548,10 +3548,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get tutorialTravelLocked => 'Su Premium galite planuoti keliones ir matyti, kuriuos dokumentus kiekvienam keliautojui reikia atnaujinti prieš išvykstant.';
 
   @override
-  String get tutorialTravelTripCard => 'Kiekviena kelionė rodo, kada išvykstate ir ką reikia sutvarkyti prieš kelionę. Palieskite kelionę, kad ją atidarytumėte.';
+  String get tutorialTravelTripCard => 'Kiekviena kelionė rodo, kada išvykstate ir ką reikia sutvarkyti prieš kelionę. Galite paliesti kelionę, kad ją atidarytumėte.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Palieskite Planuoti kelionę, kad pridėtumėte, kur vykstate, kada ir kas keliauja.';
+  String get tutorialTravelPlanTrip => 'Galite paliesti Planuoti kelionę, kad pridėtumėte, kur vykstate, kada ir kas keliauja.';
 
   @override
   String get tutorialTravelTripDocuments => 'Kelionės viduje Vaultara tikrina kiekvieno keliautojo įrašus pagal kelionės datas ir parodo, ką reikia atnaujinti.';
@@ -3575,7 +3575,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get tutorialFamilyMe => 'Tai esate jūs. Kiekvienas įrašas, kuris nepriklauso kitam asmeniui, lieka pas jus.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Palieskite Pridėti asmenį, kad pridėtumėte žmogų, kuriuo rūpinatės, pavyzdžiui, partnerį, vaiką ar tėvus.';
+  String get tutorialFamilyAddPerson => 'Galite paliesti Pridėti asmenį, kad pridėtumėte žmogų, kuriuo rūpinatės, pavyzdžiui, partnerį, vaiką ar tėvus.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Su Šeimos arba Verslo planu galite pridėti žmones, kuriais rūpinatės, ir čia saugoti jų įrašus.';
@@ -8036,7 +8036,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get tourHome2Title => 'Raskite viską';
 
   @override
-  String get tourHome2Body => 'Palieskite paiešką, kad rastumėte įrašą pagal pavadinimą, grupę ar asmenį.';
+  String get tourHome2Body => 'Galite paliesti paiešką, kad rastumėte įrašą pagal pavadinimą, grupę ar asmenį.';
 
   @override
   String get tourHome3Title => 'Kelionės ir planai';
@@ -8054,7 +8054,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get tourRenew1Title => 'Gaunate priminimą';
 
   @override
-  String get tourRenew1Body => 'Prieš baigiantis įrašui Vaultara jums primena. Palieskite priminimą, kad atidarytumėte įrašą.';
+  String get tourRenew1Body => 'Prieš baigiantis įrašui Vaultara jums primena. Galite paliesti priminimą, kad atidarytumėte įrašą.';
 
   @override
   String get tourRenew2Title => 'Išsaugokite naują datą';
@@ -8084,7 +8084,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get tourAsk2Title => 'Kalbėkite vietoj rašymo';
 
   @override
-  String get tourAsk2Body => 'Palieskite mikrofoną ir kalbėkite. Žodžiai rodomi jums kalbant, ir galite iškart siųsti.';
+  String get tourAsk2Body => 'Galite paliesti mikrofoną ir kalbėti. Žodžiai rodomi jums kalbant, ir galite iškart siųsti.';
 
   @override
   String get tourAsk3Title => 'Kiekvieną pakeitimą patvirtinate jūs';

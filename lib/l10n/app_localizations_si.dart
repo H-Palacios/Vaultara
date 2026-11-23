@@ -974,7 +974,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Premium සමඟ ඔබේම මතක් කිරීමේ දින තෝරාගත හැක.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'මතක් කිරීමක් වෙනස් කිරීමට හෝ එකතු කිරීමට ඔබේම දින තෝරන්න තට්ටු කරන්න.';
+  String get tutorialRemindersOwnDatesPremium => 'මතක් කිරීමක් වෙනස් කිරීමට හෝ එකතු කිරීමට ඔබට ඔබේම දින තෝරන්න තට්ටු කළ හැක.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'අද දින කල් ඉකුත් වේ';
@@ -3478,10 +3478,10 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tutorialTravelLocked => 'Premium සමඟ ඔබට ගමන් සැලසුම් කර, පිටත් වීමට පෙර සෑම ගමන්කරුවෙකුම කුමන ලේඛන අලුත් කළ යුතුදැයි බැලිය හැක.';
 
   @override
-  String get tutorialTravelTripCard => 'සෑම ගමනක්ම ඔබ පිටත් වන දිනය සහ යාමට පෙර නිවැරදි කළ යුතු දේ පෙන්වයි. ගමනක් විවෘත කිරීමට එය ඔබන්න.';
+  String get tutorialTravelTripCard => 'සෑම ගමනක්ම ඔබ පිටත් වන දිනය සහ යාමට පෙර නිවැරදි කළ යුතු දේ පෙන්වයි. ගමනක් විවෘත කිරීමට ඔබට එය එබිය හැක.';
 
   @override
-  String get tutorialTravelPlanTrip => 'ඔබ යන තැන, කවදාද සහ ගමන් කරන්නේ කවුරුන්දැයි එක් කිරීමට “ගමනක් සැලසුම් කරන්න” ඔබන්න.';
+  String get tutorialTravelPlanTrip => 'ඔබ යන තැන, කවදාද සහ ගමන් කරන්නේ කවුරුන්දැයි එක් කිරීමට ඔබට “ගමනක් සැලසුම් කරන්න” එබිය හැක.';
 
   @override
   String get tutorialTravelTripDocuments => 'ගමනක් තුළ, Vaultara සෑම ගමන්කරුවෙකුගේම වාර්තා ගමනේ දිනයන් සමඟ පරීක්ෂා කර අලුත් කළ යුතු දේ පෙන්වයි.';
@@ -3505,7 +3505,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tutorialFamilyMe => 'මෙය ඔබයි. වෙන කෙනෙකුට අයිති නැති ඕනෑම වාර්තාවක් ඔබ සමඟම පවතී.';
 
   @override
-  String get tutorialFamilyAddPerson => 'සහකරු හෝ සහකාරිය, දරුවෙක් හෝ දෙමාපියෙක් වැනි ඔබ රැකබලා ගන්නා කෙනෙක් එක් කිරීමට “පුද්ගලයෙක් එක් කරන්න” ඔබන්න.';
+  String get tutorialFamilyAddPerson => 'සහකරු හෝ සහකාරිය, දරුවෙක් හෝ දෙමාපියෙක් වැනි ඔබ රැකබලා ගන්නා කෙනෙක් එක් කිරීමට ඔබට “පුද්ගලයෙක් එක් කරන්න” එබිය හැක.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'පවුල් හෝ ව්‍යාපාර සැලසුමක් සමඟ ඔබ රැකබලා ගන්නා අය එක් කර ඔවුන්ගේ වාර්තා ද මෙහි තබාගත හැක.';
@@ -7894,7 +7894,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tourHome2Title => 'ඕනෑම දෙයක් සොයන්න';
 
   @override
-  String get tourHome2Body => 'නම, කණ්ඩායම හෝ පුද්ගලයා අනුව වාර්තාවක් සොයා ගැනීමට සෙවීම තට්ටු කරන්න.';
+  String get tourHome2Body => 'නම, කණ්ඩායම හෝ පුද්ගලයා අනුව වාර්තාවක් සොයා ගැනීමට ඔබට සෙවීම තට්ටු කළ හැක.';
 
   @override
   String get tourHome3Title => 'සංචාර සහ සැලසුම්';
@@ -7912,7 +7912,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tourRenew1Title => 'සිහිකැඳවීමක් පැමිණේ';
 
   @override
-  String get tourRenew1Body => 'වාර්තාවක් කල් ඉකුත් වීමට පෙර Vaultara ඔබට මතක් කරයි. වාර්තාව විවෘත කිරීමට සිහිකැඳවීම තට්ටු කරන්න.';
+  String get tourRenew1Body => 'වාර්තාවක් කල් ඉකුත් වීමට පෙර Vaultara ඔබට මතක් කරයි. වාර්තාව විවෘත කිරීමට ඔබට සිහිකැඳවීම තට්ටු කළ හැක.';
 
   @override
   String get tourRenew2Title => 'නව දිනය සුරකින්න';
@@ -7942,7 +7942,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tourAsk2Title => 'ටයිප් කරනවා වෙනුවට කතා කරන්න';
 
   @override
-  String get tourAsk2Body => 'මයික් තට්ටු කර කතා කරන්න. කතා කරන විට වචන දිස්වන අතර වහාම යැවිය හැක.';
+  String get tourAsk2Body => 'ඔබට මයික් තට්ටු කර කතා කළ හැක. කතා කරන විට වචන දිස්වන අතර වහාම යැවිය හැක.';
 
   @override
   String get tourAsk3Title => 'සෑම වෙනසක්ම ඔබ තහවුරු කරයි';

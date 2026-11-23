@@ -968,7 +968,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Dengan Premium, Anda dapat memilih tanggal pengingat sendiri.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Ketuk Pilih tanggal sendiri untuk mengubah pengingat atau menambahkannya.';
+  String get tutorialRemindersOwnDatesPremium => 'Anda bisa mengetuk Pilih tanggal sendiri untuk mengubah pengingat atau menambahkannya.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Kedaluwarsa hari ini';
@@ -3453,10 +3453,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get tutorialTravelLocked => 'Dengan Premium, Anda dapat merencanakan perjalanan dan melihat dokumen apa yang harus diperpanjang setiap pelancong sebelum berangkat.';
 
   @override
-  String get tutorialTravelTripCard => 'Setiap perjalanan menampilkan kapan Anda berangkat dan hal yang perlu diperbaiki sebelum berangkat. Ketuk perjalanan untuk membukanya.';
+  String get tutorialTravelTripCard => 'Setiap perjalanan menampilkan kapan Anda berangkat dan hal yang perlu diperbaiki sebelum berangkat. Anda bisa mengetuk perjalanan untuk membukanya.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Ketuk Rencanakan perjalanan untuk menambahkan tujuan, waktu, dan siapa yang bepergian.';
+  String get tutorialTravelPlanTrip => 'Anda bisa mengetuk Rencanakan perjalanan untuk menambahkan tujuan, waktu, dan siapa yang bepergian.';
 
   @override
   String get tutorialTravelTripDocuments => 'Di dalam perjalanan, Vaultara memeriksa catatan setiap pelancong terhadap tanggal perjalanan dan menunjukkan apa yang perlu diperpanjang.';
@@ -3480,7 +3480,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get tutorialFamilyMe => 'Ini adalah Anda. Catatan apa pun yang bukan milik orang lain tetap menjadi milik Anda.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Ketuk Tambah orang untuk menambahkan seseorang yang Anda jaga, seperti pasangan, anak, atau orang tua.';
+  String get tutorialFamilyAddPerson => 'Anda bisa mengetuk Tambah orang untuk menambahkan seseorang yang Anda jaga, seperti pasangan, anak, atau orang tua.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Dengan paket Keluarga atau Bisnis, Anda dapat menambahkan orang yang Anda jaga dan menyimpan catatan mereka di sini juga.';
@@ -7833,7 +7833,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get tourHome2Title => 'Temukan apa saja';
 
   @override
-  String get tourHome2Body => 'Ketuk pencarian untuk menemukan catatan berdasarkan nama, grup, atau orang.';
+  String get tourHome2Body => 'Anda bisa mengetuk pencarian untuk menemukan catatan berdasarkan nama, grup, atau orang.';
 
   @override
   String get tourHome3Title => 'Perjalanan dan rencana';
@@ -7851,7 +7851,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get tourRenew1Title => 'Pengingat datang';
 
   @override
-  String get tourRenew1Body => 'Sebelum catatan kedaluwarsa, Vaultara mengingatkan Anda. Ketuk pengingat untuk membuka catatan.';
+  String get tourRenew1Body => 'Sebelum catatan kedaluwarsa, Vaultara mengingatkan Anda. Anda bisa mengetuk pengingat untuk membuka catatan.';
 
   @override
   String get tourRenew2Title => 'Simpan tanggal baru';
@@ -7881,7 +7881,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get tourAsk2Title => 'Bicara alih-alih mengetik';
 
   @override
-  String get tourAsk2Body => 'Ketuk mikrofon dan bicara. Kata-kata muncul saat Anda bicara dan bisa langsung dikirim.';
+  String get tourAsk2Body => 'Anda bisa mengetuk mikrofon dan bicara. Kata-kata muncul saat Anda bicara dan bisa langsung dikirim.';
 
   @override
   String get tourAsk3Title => 'Anda mengonfirmasi setiap perubahan';

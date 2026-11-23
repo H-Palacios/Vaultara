@@ -974,7 +974,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Premium کے ساتھ آپ اپنی یاد دہانی کی تاریخیں منتخب کر سکتے ہیں۔';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'یاد دہانی بدلنے یا شامل کرنے کے لیے اپنی تاریخیں منتخب کریں پر ٹیپ کریں۔';
+  String get tutorialRemindersOwnDatesPremium => 'یاد دہانی بدلنے یا شامل کرنے کے لیے آپ اپنی تاریخیں منتخب کریں پر ٹیپ کر سکتے ہیں۔';
 
   @override
   String get smartInsightExpiresTodayHeading => 'آج ختم ہو رہا ہے';
@@ -3479,10 +3479,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get tutorialTravelLocked => 'پریمیم کے ساتھ آپ سفر کی منصوبہ بندی کر سکتے ہیں اور دیکھ سکتے ہیں کہ ہر مسافر کے کون سے دستاویزات روانگی سے پہلے تجدید کے متقاضی ہیں۔';
 
   @override
-  String get tutorialTravelTripCard => 'ہر سفر دکھاتا ہے کہ آپ کب جا رہے ہیں اور جانے سے پہلے کیا ٹھیک کرنا ہے۔ کسی سفر کو کھولنے کے لیے اس پر ٹیپ کریں۔';
+  String get tutorialTravelTripCard => 'ہر سفر دکھاتا ہے کہ آپ کب جا رہے ہیں اور جانے سے پہلے کیا ٹھیک کرنا ہے۔ کسی سفر کو کھولنے کے لیے آپ اس پر ٹیپ کر سکتے ہیں۔';
 
   @override
-  String get tutorialTravelPlanTrip => 'سفر کا منصوبہ بنائیں پر ٹیپ کریں تاکہ منزل، وقت اور مسافر شامل کریں۔';
+  String get tutorialTravelPlanTrip => 'آپ سفر کا منصوبہ بنائیں پر ٹیپ کر کے منزل، وقت اور مسافر شامل کر سکتے ہیں۔';
 
   @override
   String get tutorialTravelTripDocuments => 'سفر کے اندر Vaultara ہر مسافر کے ریکارڈز کو سفر کی تاریخوں سے ملا کر جانچتا ہے اور دکھاتا ہے کہ کیا تجدید کرنا ہے۔';
@@ -3506,7 +3506,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get tutorialFamilyMe => 'یہ آپ ہیں۔ جو ریکارڈ کسی اور کا نہیں، وہ آپ کے پاس رہتا ہے۔';
 
   @override
-  String get tutorialFamilyAddPerson => 'فرد شامل کریں پر ٹیپ کریں تاکہ اپنی دیکھ بھال میں کسی کو شامل کریں، جیسے شریک حیات، بچہ یا والدین۔';
+  String get tutorialFamilyAddPerson => 'آپ فرد شامل کریں پر ٹیپ کر کے اپنی دیکھ بھال میں کسی کو شامل کر سکتے ہیں، جیسے شریک حیات، بچہ یا والدین۔';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'خاندان یا کاروبار پلان کے ساتھ آپ اپنی دیکھ بھال والے افراد کو شامل کر سکتے ہیں اور ان کے ریکارڈز بھی یہاں رکھ سکتے ہیں۔';
@@ -7895,7 +7895,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get tourHome2Title => 'کچھ بھی تلاش کریں';
 
   @override
-  String get tourHome2Body => 'نام، گروپ یا شخص کے لحاظ سے ریکارڈ ڈھونڈنے کے لیے تلاش پر ٹیپ کریں۔';
+  String get tourHome2Body => 'نام، گروپ یا شخص کے لحاظ سے ریکارڈ ڈھونڈنے کے لیے آپ تلاش پر ٹیپ کر سکتے ہیں۔';
 
   @override
   String get tourHome3Title => 'سفر اور منصوبے';
@@ -7913,7 +7913,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get tourRenew1Title => 'یاددہانی آتی ہے';
 
   @override
-  String get tourRenew1Body => 'ریکارڈ ختم ہونے سے پہلے Vaultara آپ کو یاد دلاتا ہے۔ ریکارڈ کھولنے کے لیے یاددہانی پر ٹیپ کریں۔';
+  String get tourRenew1Body => 'ریکارڈ ختم ہونے سے پہلے Vaultara آپ کو یاد دلاتا ہے۔ ریکارڈ کھولنے کے لیے آپ یاددہانی پر ٹیپ کر سکتے ہیں۔';
 
   @override
   String get tourRenew2Title => 'نئی تاریخ محفوظ کریں';
@@ -7943,7 +7943,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get tourAsk2Title => 'ٹائپ کرنے کے بجائے بولیں';
 
   @override
-  String get tourAsk2Body => 'مائیکروفون پر ٹیپ کریں اور بولیں۔ الفاظ بولتے ہی ظاہر ہوتے ہیں اور آپ فوراً بھیج سکتے ہیں۔';
+  String get tourAsk2Body => 'آپ مائیکروفون پر ٹیپ کر کے بول سکتے ہیں۔ الفاظ بولتے ہی ظاہر ہوتے ہیں اور آپ فوراً بھیج سکتے ہیں۔';
 
   @override
   String get tourAsk3Title => 'ہر تبدیلی کی تصدیق آپ کرتے ہیں';

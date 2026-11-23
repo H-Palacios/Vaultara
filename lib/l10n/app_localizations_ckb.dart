@@ -974,7 +974,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'بە Premium دەتوانیت ڕۆژەکانی بیرخستنەوەی خۆت هەڵبژێریت.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'دەست لە ڕۆژەکانی خۆت هەڵبژێرە بدە بۆ گۆڕینی بیرخەرەوەیەک یان زیادکردنی یەکێکی تر.';
+  String get tutorialRemindersOwnDatesPremium => 'دەتوانیت دەست لە ڕۆژەکانی خۆت هەڵبژێرە بدەیت بۆ گۆڕینی بیرخەرەوەیەک یان زیادکردنی یەکێکی تر.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'ئەمڕۆ بەسەردەچێت';
@@ -3479,10 +3479,10 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get tutorialTravelLocked => 'بە پرێمیۆم دەتوانیت گەشت پلان بکەیت و ببینیت هەر گەشتیارێک پێش ڕۆیشتن کام بەڵگەنامە نوێ بکاتەوە.';
 
   @override
-  String get tutorialTravelTripCard => 'هەر گەشتێک پیشان دەدات کەی دەڕۆیت و هەر شتێک پێش ڕۆیشتن دەبێت چاک بکرێت. گەشتێک دابگرە بۆ کردنەوەی.';
+  String get tutorialTravelTripCard => 'هەر گەشتێک پیشان دەدات کەی دەڕۆیت و هەر شتێک پێش ڕۆیشتن دەبێت چاک بکرێت. دەتوانیت گەشتێک دابگریت بۆ کردنەوەی.';
 
   @override
-  String get tutorialTravelPlanTrip => 'پلاندانانی گەشت دابگرە بۆ زیادکردنی ئەوەی بۆ کوێ دەچیت، کەی، و کێ گەشت دەکات.';
+  String get tutorialTravelPlanTrip => 'دەتوانیت پلاندانانی گەشت دابگریت بۆ زیادکردنی ئەوەی بۆ کوێ دەچیت، کەی، و کێ گەشت دەکات.';
 
   @override
   String get tutorialTravelTripDocuments => 'لەناو گەشتێکدا، Vaultara تۆمارەکانی هەر گەشتیارێک لەگەڵ بەروارەکانی گەشتەکە دەپشکنێت و پیشانی دەدات چی نوێ بکرێتەوە.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get tutorialFamilyMe => 'ئەمە تۆیت. هەر تۆمارێک کە هی کەسێکی دیکە نەبێت لای تۆ دەمێنێتەوە.';
 
   @override
-  String get tutorialFamilyAddPerson => 'زیادکردنی کەس دابگرە بۆ زیادکردنی کەسێک کە چاودێری دەکەیت، وەک هاوسەر، منداڵ یان دایک و باوک.';
+  String get tutorialFamilyAddPerson => 'دەتوانیت زیادکردنی کەس دابگریت بۆ زیادکردنی کەسێک کە چاودێری دەکەیت، وەک هاوسەر، منداڵ یان دایک و باوک.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'بە پلانی خێزان یان بازرگانی دەتوانیت ئەو کەسانە زیاد بکەیت کە چاودێریان دەکەیت و تۆمارەکانیشیان لێرە هەڵبگریت.';
@@ -7895,7 +7895,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get tourHome2Title => 'هەر شتێک بدۆزەرەوە';
 
   @override
-  String get tourHome2Body => 'دەست لە گەڕان بدە بۆ دۆزینەوەی تۆمارێک بە ناو، گروپ یان کەس.';
+  String get tourHome2Body => 'دەتوانیت دەست لە گەڕان بدەیت بۆ دۆزینەوەی تۆمارێک بە ناو، گروپ یان کەس.';
 
   @override
   String get tourHome3Title => 'گەشت و پلانەکان';
@@ -7913,7 +7913,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get tourRenew1Title => 'بیرخەرەوەیەک دێت';
 
   @override
-  String get tourRenew1Body => 'پێش ئەوەی تۆمارێک بەسەربچێت، Vaultara بیرت دەخاتەوە. دەست لە بیرخەرەوەکە بدە بۆ کردنەوەی تۆمارەکە.';
+  String get tourRenew1Body => 'پێش ئەوەی تۆمارێک بەسەربچێت، Vaultara بیرت دەخاتەوە. دەتوانیت دەست لە بیرخەرەوەکە بدەیت بۆ کردنەوەی تۆمارەکە.';
 
   @override
   String get tourRenew2Title => 'بەروارە نوێیەکە پاشەکەوت بکە';
@@ -7943,7 +7943,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get tourAsk2Title => 'لە جیاتی نووسین قسە بکە';
 
   @override
-  String get tourAsk2Body => 'دەست لە مایکرۆفۆن بدە و قسە بکە. وشەکانت لە کاتی قسەکردندا دەردەکەون و دەتوانیت یەکسەر بینێریت.';
+  String get tourAsk2Body => 'دەتوانیت دەست لە مایکرۆفۆن بدەیت و قسە بکەیت. وشەکانت لە کاتی قسەکردندا دەردەکەون و دەتوانیت یەکسەر بینێریت.';
 
   @override
   String get tourAsk3Title => 'تۆ هەموو گۆڕانکارییەک پشتڕاست دەکەیتەوە';

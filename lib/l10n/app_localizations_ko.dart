@@ -973,7 +973,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Premium에서는 알림 날짜를 직접 선택할 수 있습니다.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => '직접 날짜 선택을 눌러 알림을 바꾸거나 추가하세요.';
+  String get tutorialRemindersOwnDatesPremium => '직접 날짜 선택을 누르면 알림을 바꾸거나 추가할 수 있어요.';
 
   @override
   String get smartInsightExpiresTodayHeading => '오늘 만료됨';
@@ -3458,10 +3458,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tutorialTravelLocked => '프리미엄에서는 여행을 계획하고 출발 전에 여행자별로 어떤 문서를 갱신해야 하는지 볼 수 있습니다.';
 
   @override
-  String get tutorialTravelTripCard => '각 여행에는 출발 시점과 출발 전에 해결할 사항이 표시됩니다. 여행을 눌러 여세요.';
+  String get tutorialTravelTripCard => '각 여행에는 출발 시점과 출발 전에 해결할 사항이 표시됩니다. 여행을 누르면 열 수 있어요.';
 
   @override
-  String get tutorialTravelPlanTrip => '여행 계획하기를 눌러 목적지, 날짜, 함께 가는 사람을 추가하세요.';
+  String get tutorialTravelPlanTrip => '여행 계획하기를 누르면 목적지, 날짜, 함께 가는 사람을 추가할 수 있어요.';
 
   @override
   String get tutorialTravelTripDocuments => '여행 안에서 Vaultara가 여행 날짜를 기준으로 여행자별 기록을 확인하고 갱신할 항목을 보여 줍니다.';
@@ -3485,7 +3485,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tutorialFamilyMe => '이 항목은 본인입니다. 다른 사람의 것이 아닌 기록은 모두 본인에게 남습니다.';
 
   @override
-  String get tutorialFamilyAddPerson => '사람 추가를 눌러 배우자, 자녀, 부모처럼 돌보는 사람을 추가하세요.';
+  String get tutorialFamilyAddPerson => '사람 추가를 누르면 배우자, 자녀, 부모처럼 돌보는 사람을 추가할 수 있어요.';
 
   @override
   String get tutorialFamilyAddPersonLocked => '가족 또는 비즈니스 요금제에서는 돌보는 사람을 추가하고 그 사람의 기록도 여기에 보관할 수 있습니다.';
@@ -7838,7 +7838,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tourHome2Title => '무엇이든 찾기';
 
   @override
-  String get tourHome2Body => '검색을 탭해 이름, 그룹, 사람으로 기록을 찾으세요.';
+  String get tourHome2Body => '검색을 탭하면 이름, 그룹, 사람으로 기록을 찾을 수 있어요.';
 
   @override
   String get tourHome3Title => '여행과 계획';
@@ -7856,7 +7856,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tourRenew1Title => '알림이 와요';
 
   @override
-  String get tourRenew1Body => '기록이 만료되기 전에 Vaultara가 알려 드려요. 알림을 탭하면 기록이 열려요.';
+  String get tourRenew1Body => '기록이 만료되기 전에 Vaultara가 알려 드려요. 알림을 탭하면 기록을 열 수 있어요.';
 
   @override
   String get tourRenew2Title => '새 날짜 저장';
@@ -7886,7 +7886,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tourAsk2Title => '입력 대신 말하기';
 
   @override
-  String get tourAsk2Body => '마이크를 탭하고 말하세요. 말하는 동안 글자가 나타나고 바로 보낼 수 있어요.';
+  String get tourAsk2Body => '마이크를 탭하고 말할 수도 있어요. 말하는 동안 글자가 나타나고 바로 보낼 수 있어요.';
 
   @override
   String get tourAsk3Title => '모든 변경은 내가 확인';

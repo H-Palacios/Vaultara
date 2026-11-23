@@ -974,7 +974,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Premiummal saját emlékeztető dátumokat választhat.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Koppintson a Saját dátumok választása gombra egy emlékeztető módosításához vagy hozzáadásához.';
+  String get tutorialRemindersOwnDatesPremium => 'A Saját dátumok választása gombra koppintva módosíthat vagy hozzáadhat egy emlékeztetőt.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Ma jár le';
@@ -3479,10 +3479,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tutorialTravelLocked => 'A Premiummal utazásokat tervezhet, és láthatja, hogy az egyes utazóknak indulás előtt mely dokumentumokat kell megújítaniuk.';
 
   @override
-  String get tutorialTravelTripCard => 'Minden utazás mutatja az indulás idejét és az indulás előtt javítandó dolgokat. Koppintson egy utazásra a megnyitáshoz.';
+  String get tutorialTravelTripCard => 'Minden utazás mutatja az indulás idejét és az indulás előtt javítandó dolgokat. Egy utazásra koppintva megnyithatja.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Koppintson az Utazás tervezése gombra, és adja meg, hová, mikor és kik utaznak.';
+  String get tutorialTravelPlanTrip => 'Az Utazás tervezése gombra koppintva megadhatja, hová, mikor és kik utaznak.';
 
   @override
   String get tutorialTravelTripDocuments => 'Egy utazáson belül a Vaultara az egyes utazók bejegyzéseit az utazás dátumaihoz hasonlítja, és megmutatja, mit kell megújítani.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tutorialFamilyMe => 'Ez Ön. Minden bejegyzés, amely nem tartozik másra, Önnél marad.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Koppintson a Személy hozzáadása gombra, ha hozzá szeretne adni valakit, akiről gondoskodik, például a párját, gyermekét vagy szülőjét.';
+  String get tutorialFamilyAddPerson => 'A Személy hozzáadása gombra koppintva hozzáadhat valakit, akiről gondoskodik, például a párját, gyermekét vagy szülőjét.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Család vagy Üzleti csomaggal hozzáadhatja azokat, akikről gondoskodik, és az ő bejegyzéseiket is itt tarthatja.';
@@ -7895,7 +7895,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tourHome2Title => 'Találj meg bármit';
 
   @override
-  String get tourHome2Body => 'Koppints a keresésre, hogy név, csoport vagy személy alapján megtalálj egy tételt.';
+  String get tourHome2Body => 'Koppinthatsz a keresésre, hogy név, csoport vagy személy alapján megtalálj egy tételt.';
 
   @override
   String get tourHome3Title => 'Utak és tervek';
@@ -7913,7 +7913,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tourRenew1Title => 'Emlékeztető érkezik';
 
   @override
-  String get tourRenew1Body => 'Mielőtt egy tétel lejár, a Vaultara emlékeztet. Koppints az emlékeztetőre a tétel megnyitásához.';
+  String get tourRenew1Body => 'Mielőtt egy tétel lejár, a Vaultara emlékeztet. Az emlékeztetőre koppintva megnyithatod a tételt.';
 
   @override
   String get tourRenew2Title => 'Mentsd el az új dátumot';
@@ -7943,7 +7943,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tourAsk2Title => 'Beszélj gépelés helyett';
 
   @override
-  String get tourAsk2Body => 'Koppints a mikrofonra, és beszélj. A szavak beszéd közben jelennek meg, és azonnal elküldheted.';
+  String get tourAsk2Body => 'Koppinthatsz a mikrofonra, és beszélhetsz. A szavak beszéd közben jelennek meg, és azonnal elküldheted.';
 
   @override
   String get tourAsk3Title => 'Minden módosítást te hagysz jóvá';

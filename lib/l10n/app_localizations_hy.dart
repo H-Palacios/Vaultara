@@ -974,7 +974,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Premium-ով կարող եք ընտրել ձեր հիշեցման ամսաթվերը։';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Հպեք Ընտրեք ձեր ամսաթվերը՝ հիշեցումը փոխելու կամ նորը ավելացնելու համար։';
+  String get tutorialRemindersOwnDatesPremium => 'Կարող եք հպել Ընտրեք ձեր ամսաթվերը՝ հիշեցումը փոխելու կամ նորը ավելացնելու համար։';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Ժամկետն ավարտվում է այսօր';
@@ -3479,10 +3479,10 @@ class AppLocalizationsHy extends AppLocalizations {
   String get tutorialTravelLocked => 'Premium-ով կարող եք պլանավորել ճամփորդություններ և տեսնել, թե ճամփորդներից յուրաքանչյուրի որ փաստաթղթերը պետք է նորացնել մեկնելուց առաջ։';
 
   @override
-  String get tutorialTravelTripCard => 'Յուրաքանչյուր ճամփորդություն ցույց է տալիս, թե երբ եք մեկնում և ինչ պետք է կարգավորել մինչ այդ։ Հպեք ճամփորդությանը՝ այն բացելու համար։';
+  String get tutorialTravelTripCard => 'Յուրաքանչյուր ճամփորդություն ցույց է տալիս, թե երբ եք մեկնում և ինչ պետք է կարգավորել մինչ այդ։ Կարող եք հպել ճամփորդությանը՝ այն բացելու համար։';
 
   @override
-  String get tutorialTravelPlanTrip => 'Հպեք Պլանավորել ճամփորդություն՝ ավելացնելու համար, թե ուր եք գնում, երբ և ովքեր են գնում։';
+  String get tutorialTravelPlanTrip => 'Կարող եք հպել Պլանավորել ճամփորդություն՝ ավելացնելու համար, թե ուր եք գնում, երբ և ովքեր են գնում։';
 
   @override
   String get tutorialTravelTripDocuments => 'Ճամփորդության ներսում Vaultara-ն յուրաքանչյուր ճամփորդի գրառումները համեմատում է ճամփորդության ամսաթվերի հետ և ցույց է տալիս, թե ինչ պետք է նորացնել։';
@@ -3506,7 +3506,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get tutorialFamilyMe => 'Սա դուք եք։ Ցանկացած գրառում, որը ուրիշինը չէ, մնում է ձեզ մոտ։';
 
   @override
-  String get tutorialFamilyAddPerson => 'Հպեք Ավելացնել անձ՝ ձեր խնամքի տակ գտնվող մեկին ավելացնելու համար, օրինակ՝ զուգընկերոջը, երեխային կամ ծնողին։';
+  String get tutorialFamilyAddPerson => 'Կարող եք հպել Ավելացնել անձ՝ ձեր խնամքի տակ գտնվող մեկին ավելացնելու համար, օրինակ՝ զուգընկերոջը, երեխային կամ ծնողին։';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Ընտանեկան կամ Բիզնես փաթեթով կարող եք ավելացնել ձեր խնամքի տակ գտնվող մարդկանց և նրանց գրառումները նույնպես պահել այստեղ։';
@@ -7895,7 +7895,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get tourHome2Title => 'Գտեք ցանկացած բան';
 
   @override
-  String get tourHome2Body => 'Հպեք որոնմանը՝ գրառում գտնելու անունով, խմբով կամ անձով։';
+  String get tourHome2Body => 'Կարող եք հպել որոնմանը՝ գրառում գտնելու անունով, խմբով կամ անձով։';
 
   @override
   String get tourHome3Title => 'Ճամփորդություններ և պլաններ';
@@ -7913,7 +7913,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get tourRenew1Title => 'Հիշեցում է գալիս';
 
   @override
-  String get tourRenew1Body => 'Մինչև գրառման ժամկետի լրանալը Vaultara-ն հիշեցնում է ձեզ։ Հպեք հիշեցմանը՝ գրառումը բացելու համար։';
+  String get tourRenew1Body => 'Մինչև գրառման ժամկետի լրանալը Vaultara-ն հիշեցնում է ձեզ։ Կարող եք հպել հիշեցմանը՝ գրառումը բացելու համար։';
 
   @override
   String get tourRenew2Title => 'Պահպանեք նոր ամսաթիվը';
@@ -7943,7 +7943,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get tourAsk2Title => 'Խոսեք մուտքագրելու փոխարեն';
 
   @override
-  String get tourAsk2Body => 'Հպեք խոսափողին և խոսեք։ Բառերը հայտնվում են խոսելիս, և կարող եք անմիջապես ուղարկել։';
+  String get tourAsk2Body => 'Կարող եք հպել խոսափողին և խոսել։ Բառերը հայտնվում են խոսելիս, և կարող եք անմիջապես ուղարկել։';
 
   @override
   String get tourAsk3Title => 'Յուրաքանչյուր փոփոխություն հաստատում եք դուք';

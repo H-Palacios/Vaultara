@@ -974,7 +974,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Nge-Premium, ungakhetha izinsuku zakho zezikhumbuzo.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Thepha Khetha izinsuku zakho ukuze ushintshe isikhumbuzo noma wengeze esinye.';
+  String get tutorialRemindersOwnDatesPremium => 'Ungathepha Khetha izinsuku zakho ukuze ushintshe isikhumbuzo noma wengeze esinye.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Iphelelwa Namuhla';
@@ -3479,10 +3479,10 @@ class AppLocalizationsZu extends AppLocalizations {
   String get tutorialTravelLocked => 'Nge-Premium ungahlela uhambo ubone ukuthi iliphi idokhumenti umhambi ngamunye adinga ukulivuselela ngaphambi kokuhamba.';
 
   @override
-  String get tutorialTravelTripCard => 'Uhambo ngalunye lubonisa ukuthi uhamba nini nokumele kulungiswe ngaphambi kokuhamba. Thinta uhambo ukuze ulivule.';
+  String get tutorialTravelTripCard => 'Uhambo ngalunye lubonisa ukuthi uhamba nini nokumele kulungiswe ngaphambi kokuhamba. Ungathinta uhambo ukuze ulivule.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Thinta Lungiselela uhambo ukuze wengeze lapho uya khona, nini, nokuthi obani abahambayo.';
+  String get tutorialTravelPlanTrip => 'Ungathinta Lungiselela uhambo ukuze wengeze lapho uya khona, nini, nokuthi obani abahambayo.';
 
   @override
   String get tutorialTravelTripDocuments => 'Ngaphakathi kohambo, i-Vaultara ihlola amarekhodi omhambi ngamunye ngokususelwa ezinsukwini zohambo ibonise okumele kuvuselelwe.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get tutorialFamilyMe => 'Lena nguwe. Noma yiliphi irekhodi elingelona elomunye umuntu lihlala nawe.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Thinta Engeza umuntu ukuze wengeze umuntu omnakekelayo, njengomlingani, ingane noma umzali.';
+  String get tutorialFamilyAddPerson => 'Ungathinta Engeza umuntu ukuze wengeze umuntu omnakekelayo, njengomlingani, ingane noma umzali.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Ngohlelo lwe-Family noma lwe-Business ungengeza abantu obanakekelayo futhi ugcine amarekhodi abo lapha nawo.';
@@ -7895,7 +7895,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get tourHome2Title => 'Thola noma yini';
 
   @override
-  String get tourHome2Body => 'Thepha usesho ukuze uthole irekhodi ngegama, iqembu noma umuntu.';
+  String get tourHome2Body => 'Ungathepha usesho ukuze uthole irekhodi ngegama, iqembu noma umuntu.';
 
   @override
   String get tourHome3Title => 'Uhambo nezinhlelo';
@@ -7913,7 +7913,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get tourRenew1Title => 'Kufika isikhumbuzi';
 
   @override
-  String get tourRenew1Body => 'Ngaphambi kokuba irekhodi liphelelwe yisikhathi, i-Vaultara iyakukhumbuza. Thepha isikhumbuzi ukuze uvule irekhodi.';
+  String get tourRenew1Body => 'Ngaphambi kokuba irekhodi liphelelwe yisikhathi, i-Vaultara iyakukhumbuza. Ungathepha isikhumbuzi ukuze uvule irekhodi.';
 
   @override
   String get tourRenew2Title => 'Londoloza usuku olusha';
@@ -7943,7 +7943,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String get tourAsk2Title => 'Khuluma esikhundleni sokubhala';
 
   @override
-  String get tourAsk2Body => 'Thepha imakrofoni bese ukhuluma. Amagama akho avela njengoba ukhuluma futhi ungathumela ngokushesha.';
+  String get tourAsk2Body => 'Ungathepha imakrofoni bese ukhuluma. Amagama akho avela njengoba ukhuluma futhi ungathumela ngokushesha.';
 
   @override
   String get tourAsk3Title => 'Wena uqinisekisa lonke ushintsho';

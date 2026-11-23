@@ -978,7 +978,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Cu Premium îți poți alege propriile date de memento.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Atinge Alege propriile date pentru a modifica un memento sau a adăuga unul.';
+  String get tutorialRemindersOwnDatesPremium => 'Poți atinge Alege propriile date pentru a modifica un memento sau a adăuga unul.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Expiră astăzi';
@@ -3516,10 +3516,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tutorialTravelLocked => 'Cu Premium poți planifica călătorii și vezi ce documente trebuie să reînnoiască fiecare călător înainte de plecare.';
 
   @override
-  String get tutorialTravelTripCard => 'Fiecare călătorie arată când pleci și ce trebuie rezolvat înainte. Atinge o călătorie ca s-o deschizi.';
+  String get tutorialTravelTripCard => 'Fiecare călătorie arată când pleci și ce trebuie rezolvat înainte. Poți atinge o călătorie ca s-o deschizi.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Atinge Planifică o călătorie ca să adaugi unde mergi, când și cine călătorește.';
+  String get tutorialTravelPlanTrip => 'Poți atinge Planifică o călătorie ca să adaugi unde mergi, când și cine călătorește.';
 
   @override
   String get tutorialTravelTripDocuments => 'În interiorul unei călătorii, Vaultara verifică înregistrările fiecărui călător în raport cu datele călătoriei și arată ce trebuie reînnoit.';
@@ -3543,7 +3543,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tutorialFamilyMe => 'Aceasta ești tu. Orice înregistrare care nu aparține altcuiva rămâne la tine.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Atinge Adaugă persoană ca să adaugi pe cineva de care ai grijă, de exemplu un partener, un copil sau un părinte.';
+  String get tutorialFamilyAddPerson => 'Poți atinge Adaugă persoană ca să adaugi pe cineva de care ai grijă, de exemplu un partener, un copil sau un părinte.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Cu un abonament Familie sau Business poți adăuga persoanele de care ai grijă și poți ține aici și înregistrările lor.';
@@ -7972,7 +7972,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tourHome2Title => 'Găsește orice';
 
   @override
-  String get tourHome2Body => 'Atinge căutarea pentru a găsi o înregistrare după nume, grup sau persoană.';
+  String get tourHome2Body => 'Poți atinge căutarea pentru a găsi o înregistrare după nume, grup sau persoană.';
 
   @override
   String get tourHome3Title => 'Călătorii și planuri';
@@ -7990,7 +7990,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tourRenew1Title => 'Sosește un memento';
 
   @override
-  String get tourRenew1Body => 'Înainte să expire o înregistrare, Vaultara îți amintește. Atinge mementoul ca să deschizi înregistrarea.';
+  String get tourRenew1Body => 'Înainte să expire o înregistrare, Vaultara îți amintește. Poți atinge mementoul ca să deschizi înregistrarea.';
 
   @override
   String get tourRenew2Title => 'Salvează data nouă';
@@ -8020,7 +8020,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tourAsk2Title => 'Vorbește în loc să scrii';
 
   @override
-  String get tourAsk2Body => 'Atinge microfonul și vorbește. Cuvintele apar pe măsură ce vorbești și poți trimite imediat.';
+  String get tourAsk2Body => 'Poți atinge microfonul și vorbi. Cuvintele apar pe măsură ce vorbești și poți trimite imediat.';
 
   @override
   String get tourAsk3Title => 'Tu confirmi fiecare schimbare';

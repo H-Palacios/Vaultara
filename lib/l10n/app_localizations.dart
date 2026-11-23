@@ -2020,7 +2020,7 @@ abstract class AppLocalizations {
   /// Tip in a guided tutorial, for Premium users. Use the same words as remindersChooseDates.
   ///
   /// In en, this message translates to:
-  /// **'Tap Choose your own dates to change a reminder or add one.'**
+  /// **'You can tap Choose your own dates to change a reminder or add one.'**
   String get tutorialRemindersOwnDatesPremium;
 
   /// Heading for the insight shown when one or more records expire today.
@@ -6040,13 +6040,13 @@ abstract class AppLocalizations {
   /// Travel tutorial message over a saved trip card.
   ///
   /// In en, this message translates to:
-  /// **'Each trip shows when you leave and anything to fix before you go. Tap a trip to open it.'**
+  /// **'Each trip shows when you leave and anything to fix before you go. You can tap a trip to open it.'**
   String get tutorialTravelTripCard;
 
   /// Travel tutorial message over the Plan a trip button.
   ///
   /// In en, this message translates to:
-  /// **'Tap Plan a trip to add where you are going, when, and who is travelling.'**
+  /// **'You can tap Plan a trip to add where you are going, when, and who is travelling.'**
   String get tutorialTravelPlanTrip;
 
   /// Travel tutorial message over the documents section inside a trip.
@@ -6094,7 +6094,7 @@ abstract class AppLocalizations {
   /// Family tutorial message over the Add person button, for users whose plan includes people.
   ///
   /// In en, this message translates to:
-  /// **'Tap Add person to add someone you look after, like a partner, child or parent.'**
+  /// **'You can tap Add person to add someone you look after, like a partner, child or parent.'**
   String get tutorialFamilyAddPerson;
 
   /// Family tutorial message over the upgrade card, for users whose plan does not include people.
@@ -13588,7 +13588,7 @@ abstract class AppLocalizations {
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
-  /// **'Tap the search bar to find a record by its name, group or the person it belongs to.'**
+  /// **'You can tap the search bar to find a record by its name, group or the person it belongs to.'**
   String get tourHome2Body;
 
   /// Title of a tutorial step. Short.
@@ -13624,7 +13624,7 @@ abstract class AppLocalizations {
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
-  /// **'Before a record expires, Vaultara reminds you. Tap the reminder to open the record.'**
+  /// **'Before a record expires, Vaultara reminds you. You can tap the reminder to open the record.'**
   String get tourRenew1Body;
 
   /// Title of a tutorial step. Short.
@@ -13684,7 +13684,7 @@ abstract class AppLocalizations {
   /// Text of a tutorial step.
   ///
   /// In en, this message translates to:
-  /// **'Tap the microphone and speak. Your words appear as you talk, and you can send straight away.'**
+  /// **'You can tap the microphone and speak. Your words appear as you talk, and you can send straight away.'**
   String get tourAsk2Body;
 
   /// Title of a tutorial step. Short.

@@ -974,7 +974,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Pẹ̀lú Premium, o lè yan àwọn ọjọ́ iranti tìrẹ.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Tẹ Yan àwọn ọjọ́ tìrẹ láti yí iranti padà tàbí láti fi ọ̀kan kún un.';
+  String get tutorialRemindersOwnDatesPremium => 'O lè tẹ Yan àwọn ọjọ́ tìrẹ láti yí iranti padà tàbí láti fi ọ̀kan kún un.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Yóò Parí Lónìí';
@@ -3459,10 +3459,10 @@ class AppLocalizationsYo extends AppLocalizations {
   String get tutorialTravelLocked => 'Pẹ̀lú Premium, o lè gbèrò àwọn ìrìn àjò kí o sì rí àwọn ìwé tí arìnrìn àjò kọ̀ọ̀kan gbọ́dọ̀ sọ di tuntun kí ó tó lọ.';
 
   @override
-  String get tutorialTravelTripCard => 'Ìrìn àjò kọ̀ọ̀kan máa ń fi ìgbà tí o máa lọ àti ohunkóhun tó nílò àtúnṣe hàn. Tẹ ìrìn àjò kan láti ṣí i.';
+  String get tutorialTravelTripCard => 'Ìrìn àjò kọ̀ọ̀kan máa ń fi ìgbà tí o máa lọ àti ohunkóhun tó nílò àtúnṣe hàn. O lè tẹ ìrìn àjò kan láti ṣí i.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Tẹ Gbèrò ìrìn àjò láti ṣafikun ibi tí ò ń lọ, ìgbà tí o máa lọ àti àwọn tó ń rìnrìn àjò.';
+  String get tutorialTravelPlanTrip => 'O lè tẹ Gbèrò ìrìn àjò láti ṣafikun ibi tí ò ń lọ, ìgbà tí o máa lọ àti àwọn tó ń rìnrìn àjò.';
 
   @override
   String get tutorialTravelTripDocuments => 'Nínú ìrìn àjò kan, Vaultara máa ń ṣàyẹ̀wò àwọn igbasilẹ arìnrìn àjò kọ̀ọ̀kan pẹ̀lú àwọn ọjọ́ ìrìn àjò, ó sì máa fi ohun tí a gbọ́dọ̀ sọ di tuntun hàn.';
@@ -3486,7 +3486,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get tutorialFamilyMe => 'Ìwọ nìyí. Igbasilẹ èyíkéyìí tí kì í ṣe ti ẹlòmíràn máa ń wà pẹ̀lú rẹ.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Tẹ Ṣafikun ènìyàn láti fi ẹni tí o ń tọ́jú kún un, bí olólùfẹ́, ọmọ tàbí òbí.';
+  String get tutorialFamilyAddPerson => 'O lè tẹ Ṣafikun ènìyàn láti fi ẹni tí o ń tọ́jú kún un, bí olólùfẹ́, ọmọ tàbí òbí.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Pẹ̀lú ètò Ẹbí tàbí Iṣòwò, o lè fi àwọn tí o ń tọ́jú kún un kí o sì tọ́jú àwọn igbasilẹ wọn síbí pẹ̀lú.';
@@ -7844,7 +7844,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get tourHome2Title => 'Wa ohunkohun';
 
   @override
-  String get tourHome2Body => 'Tẹ wiwa lati wa igbasilẹ nipasẹ orukọ, ẹgbẹ tabi eniyan.';
+  String get tourHome2Body => 'O lè tẹ wiwa lati wa igbasilẹ nipasẹ orukọ, ẹgbẹ tabi eniyan.';
 
   @override
   String get tourHome3Title => 'Awọn irin-ajo ati awọn eto';
@@ -7862,7 +7862,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get tourRenew1Title => 'Iranti kan de';
 
   @override
-  String get tourRenew1Body => 'Ṣaaju ki igbasilẹ kan to pari, Vaultara leti rẹ. Tẹ iranti naa lati ṣi igbasilẹ naa.';
+  String get tourRenew1Body => 'Ṣaaju ki igbasilẹ kan to pari, Vaultara leti rẹ. O lè tẹ iranti naa lati ṣi igbasilẹ naa.';
 
   @override
   String get tourRenew2Title => 'Fi ọjọ tuntun pamọ';
@@ -7892,7 +7892,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get tourAsk2Title => 'Sọrọ dipo titẹ';
 
   @override
-  String get tourAsk2Body => 'Tẹ gbohungbohun ki o sọrọ. Awọn ọrọ rẹ han bi o ṣe n sọrọ ati pe o le firanṣẹ lẹsẹkẹsẹ.';
+  String get tourAsk2Body => 'O lè tẹ gbohungbohun ki o sọrọ. Awọn ọrọ rẹ han bi o ṣe n sọrọ ati pe o le firanṣẹ lẹsẹkẹsẹ.';
 
   @override
   String get tourAsk3Title => 'Iwọ ni o jẹrisi gbogbo iyipada';

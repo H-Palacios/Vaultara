@@ -974,7 +974,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'በPremium የራስዎን የአስታዋሽ ቀኖች መምረጥ ይችላሉ።';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'አስታዋሽ ለመቀየር ወይም ለመጨመር የራስዎን ቀኖች ይምረጡ የሚለውን ይንኩ።';
+  String get tutorialRemindersOwnDatesPremium => 'አስታዋሽ ለመቀየር ወይም ለመጨመር የራስዎን ቀኖች ይምረጡ የሚለውን መንካት ይችላሉ።';
 
   @override
   String get smartInsightExpiresTodayHeading => 'ዛሬ ያበቃል';
@@ -3479,10 +3479,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get tutorialTravelLocked => 'በPremium ጉዞዎችን ማቀድ እና እያንዳንዱ ተጓዥ ከመሄዱ በፊት የትኞቹን ሰነዶች ማደስ እንዳለበት ማየት ይችላሉ።';
 
   @override
-  String get tutorialTravelTripCard => 'እያንዳንዱ ጉዞ መቼ እንደሚነሱ እና ከመሄድዎ በፊት የሚስተካከል ነገር ካለ ያሳያል። ለመክፈት ጉዞውን መታ ያድርጉ።';
+  String get tutorialTravelTripCard => 'እያንዳንዱ ጉዞ መቼ እንደሚነሱ እና ከመሄድዎ በፊት የሚስተካከል ነገር ካለ ያሳያል። ለመክፈት ጉዞውን መታ ማድረግ ይችላሉ።';
 
   @override
-  String get tutorialTravelPlanTrip => 'የት እንደሚሄዱ፣ መቼ እና ማን እንደሚጓዝ ለማከል “ጉዞ ያቅዱ”ን መታ ያድርጉ።';
+  String get tutorialTravelPlanTrip => 'የት እንደሚሄዱ፣ መቼ እና ማን እንደሚጓዝ ለማከል “ጉዞ ያቅዱ”ን መታ ማድረግ ይችላሉ።';
 
   @override
   String get tutorialTravelTripDocuments => 'በጉዞ ውስጥ Vaultara የእያንዳንዱን ተጓዥ መዝገቦች ከጉዞው ቀናት ጋር ያነጻጽራል እና ምን ማደስ እንዳለበት ያሳያል።';
@@ -3506,7 +3506,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get tutorialFamilyMe => 'ይህ እርስዎ ነዎት። የሌላ ሰው ያልሆነ ማንኛውም መዝገብ ከእርስዎ ጋር ይቆያል።';
 
   @override
-  String get tutorialFamilyAddPerson => 'እንደ አጋር፣ ልጅ ወይም ወላጅ ያሉ የሚንከባከቡትን ሰው ለማከል “ሰው አክል”ን መታ ያድርጉ።';
+  String get tutorialFamilyAddPerson => 'እንደ አጋር፣ ልጅ ወይም ወላጅ ያሉ የሚንከባከቡትን ሰው ለማከል “ሰው አክል”ን መታ ማድረግ ይችላሉ።';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'በቤተሰብ ወይም በንግድ ዕቅድ የሚንከባከቧቸውን ሰዎች አክለው መዝገቦቻቸውንም እዚህ ማስቀመጥ ይችላሉ።';
@@ -7895,7 +7895,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get tourHome2Title => 'ማንኛውንም ያግኙ';
 
   @override
-  String get tourHome2Body => 'መዝገብን በስም፣ በቡድን ወይም በሰው ለማግኘት ፍለጋን መታ ያድርጉ።';
+  String get tourHome2Body => 'መዝገብን በስም፣ በቡድን ወይም በሰው ለማግኘት ፍለጋን መታ ማድረግ ይችላሉ።';
 
   @override
   String get tourHome3Title => 'ጉዞዎች እና ዕቅዶች';
@@ -7913,7 +7913,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get tourRenew1Title => 'አስታዋሽ ይመጣል';
 
   @override
-  String get tourRenew1Body => 'መዝገብ ከማብቃቱ በፊት Vaultara ያስታውስዎታል። መዝገቡን ለመክፈት አስታዋሹን መታ ያድርጉ።';
+  String get tourRenew1Body => 'መዝገብ ከማብቃቱ በፊት Vaultara ያስታውስዎታል። መዝገቡን ለመክፈት አስታዋሹን መታ ማድረግ ይችላሉ።';
 
   @override
   String get tourRenew2Title => 'አዲሱን ቀን ያስቀምጡ';
@@ -7943,7 +7943,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get tourAsk2Title => 'ከመተየብ ይልቅ ይናገሩ';
 
   @override
-  String get tourAsk2Body => 'ማይክሮፎኑን መታ ያድርጉ እና ይናገሩ። ቃላትዎ እየተናገሩ ሲሄዱ ይታያሉ፣ ወዲያውም መላክ ይችላሉ።';
+  String get tourAsk2Body => 'ማይክሮፎኑን መታ አድርገው መናገር ይችላሉ። ቃላትዎ እየተናገሩ ሲሄዱ ይታያሉ፣ ወዲያውም መላክ ይችላሉ።';
 
   @override
   String get tourAsk3Title => 'እያንዳንዱን ለውጥ እርስዎ ያረጋግጣሉ';

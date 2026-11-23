@@ -974,7 +974,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Με το Premium μπορείτε να επιλέξετε δικές σας ημερομηνίες υπενθύμισης.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Πατήστε Επιλέξτε δικές σας ημερομηνίες για να αλλάξετε μια υπενθύμιση ή να προσθέσετε μία.';
+  String get tutorialRemindersOwnDatesPremium => 'Μπορείτε να πατήσετε Επιλέξτε δικές σας ημερομηνίες για να αλλάξετε μια υπενθύμιση ή να προσθέσετε μία.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Λήγει σήμερα';
@@ -3479,10 +3479,10 @@ class AppLocalizationsEl extends AppLocalizations {
   String get tutorialTravelLocked => 'Με το Premium μπορείτε να σχεδιάζετε ταξίδια και να βλέπετε ποια έγγραφα πρέπει να ανανεώσει κάθε ταξιδιώτης πριν φύγει.';
 
   @override
-  String get tutorialTravelTripCard => 'Κάθε ταξίδι δείχνει πότε φεύγετε και τι χρειάζεται διόρθωση πριν φύγετε. Πατήστε ένα ταξίδι για να το ανοίξετε.';
+  String get tutorialTravelTripCard => 'Κάθε ταξίδι δείχνει πότε φεύγετε και τι χρειάζεται διόρθωση πριν φύγετε. Μπορείτε να πατήσετε ένα ταξίδι για να το ανοίξετε.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Πατήστε Σχεδιασμός ταξιδιού για να προσθέσετε πού πηγαίνετε, πότε και ποιοι ταξιδεύουν.';
+  String get tutorialTravelPlanTrip => 'Μπορείτε να πατήσετε Σχεδιασμός ταξιδιού για να προσθέσετε πού πηγαίνετε, πότε και ποιοι ταξιδεύουν.';
 
   @override
   String get tutorialTravelTripDocuments => 'Μέσα σε ένα ταξίδι, το Vaultara ελέγχει τις εγγραφές κάθε ταξιδιώτη με βάση τις ημερομηνίες του ταξιδιού και δείχνει τι πρέπει να ανανεωθεί.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get tutorialFamilyMe => 'Αυτός είστε εσείς. Κάθε εγγραφή που δεν ανήκει σε άλλο άτομο μένει σε εσάς.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Πατήστε Προσθήκη ατόμου για να προσθέσετε κάποιον που φροντίζετε, όπως σύντροφο, παιδί ή γονέα.';
+  String get tutorialFamilyAddPerson => 'Μπορείτε να πατήσετε Προσθήκη ατόμου για να προσθέσετε κάποιον που φροντίζετε, όπως σύντροφο, παιδί ή γονέα.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Με ένα Οικογενειακό ή Επαγγελματικό πρόγραμμα μπορείτε να προσθέσετε τα άτομα που φροντίζετε και να κρατάτε εδώ και τις δικές τους εγγραφές.';
@@ -7899,7 +7899,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get tourHome2Title => 'Βρείτε τα πάντα';
 
   @override
-  String get tourHome2Body => 'Πατήστε την αναζήτηση για να βρείτε μια εγγραφή με όνομα, ομάδα ή πρόσωπο.';
+  String get tourHome2Body => 'Μπορείτε να πατήσετε την αναζήτηση για να βρείτε μια εγγραφή με όνομα, ομάδα ή πρόσωπο.';
 
   @override
   String get tourHome3Title => 'Ταξίδια και σχέδια';
@@ -7917,7 +7917,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get tourRenew1Title => 'Έρχεται υπενθύμιση';
 
   @override
-  String get tourRenew1Body => 'Πριν λήξει μια εγγραφή, το Vaultara σάς το υπενθυμίζει. Πατήστε την υπενθύμιση για να ανοίξει η εγγραφή.';
+  String get tourRenew1Body => 'Πριν λήξει μια εγγραφή, το Vaultara σάς το υπενθυμίζει. Μπορείτε να πατήσετε την υπενθύμιση για να ανοίξει η εγγραφή.';
 
   @override
   String get tourRenew2Title => 'Αποθηκεύστε τη νέα ημερομηνία';
@@ -7947,7 +7947,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String get tourAsk2Title => 'Μιλήστε αντί να γράφετε';
 
   @override
-  String get tourAsk2Body => 'Πατήστε το μικρόφωνο και μιλήστε. Οι λέξεις εμφανίζονται καθώς μιλάτε και μπορείτε να στείλετε αμέσως.';
+  String get tourAsk2Body => 'Μπορείτε να πατήσετε το μικρόφωνο και να μιλήσετε. Οι λέξεις εμφανίζονται καθώς μιλάτε και μπορείτε να στείλετε αμέσως.';
 
   @override
   String get tourAsk3Title => 'Εσείς επιβεβαιώνετε κάθε αλλαγή';

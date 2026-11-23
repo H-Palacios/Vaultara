@@ -974,7 +974,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Premium арқылы еске салу күндерін өзіңіз таңдай аласыз.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Еске салғышты өзгерту не қосу үшін Өз күндеріңізді таңдаңыз түймесін түртіңіз.';
+  String get tutorialRemindersOwnDatesPremium => 'Еске салғышты өзгерту не қосу үшін Өз күндеріңізді таңдаңыз түймесін түрте аласыз.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Бүгін мерзімі өтеді';
@@ -3479,10 +3479,10 @@ class AppLocalizationsKk extends AppLocalizations {
   String get tutorialTravelLocked => 'Premium арқылы сапарларды жоспарлап, әр жолаушы шығар алдында қандай құжатты жаңартуы керегін көре аласыз.';
 
   @override
-  String get tutorialTravelTripCard => 'Әр сапарда қашан шығатыныңыз және шығар алдында не түзету керегі көрсетіледі. Ашу үшін сапарды басыңыз.';
+  String get tutorialTravelTripCard => 'Әр сапарда қашан шығатыныңыз және шығар алдында не түзету керегі көрсетіледі. Ашу үшін сапарды баса аласыз.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Қайда, қашан және кім баратынын қосу үшін Сапар жоспарлау түймесін басыңыз.';
+  String get tutorialTravelPlanTrip => 'Қайда, қашан және кім баратынын қосу үшін Сапар жоспарлау түймесін баса аласыз.';
 
   @override
   String get tutorialTravelTripDocuments => 'Сапардың ішінде Vaultara әр жолаушының жазбаларын сапар күндерімен салыстырып тексеріп, нені жаңарту керегін көрсетеді.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get tutorialFamilyMe => 'Бұл сіз. Басқа біреуге тиесілі емес әр жазба сізде қалады.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Жұбайыңыз, балаңыз немесе ата-анаңыз сияқты қарауыңыздағы адамды қосу үшін Адам қосу түймесін басыңыз.';
+  String get tutorialFamilyAddPerson => 'Жұбайыңыз, балаңыз немесе ата-анаңыз сияқты қарауыңыздағы адамды қосу үшін Адам қосу түймесін баса аласыз.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Отбасы немесе Бизнес тарифімен қарауыңыздағы адамдарды қосып, олардың жазбаларын да осында сақтай аласыз.';
@@ -7895,7 +7895,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get tourHome2Title => 'Кез келгенін табыңыз';
 
   @override
-  String get tourHome2Body => 'Атауы, тобы немесе адамы бойынша жазба табу үшін іздеуді түртіңіз.';
+  String get tourHome2Body => 'Атауы, тобы немесе адамы бойынша жазба табу үшін іздеуді түрте аласыз.';
 
   @override
   String get tourHome3Title => 'Сапарлар және жоспарлар';
@@ -7913,7 +7913,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get tourRenew1Title => 'Еске салғыш келеді';
 
   @override
-  String get tourRenew1Body => 'Жазба мерзімі біткенге дейін Vaultara еске салады. Жазбаны ашу үшін еске салғышты түртіңіз.';
+  String get tourRenew1Body => 'Жазба мерзімі біткенге дейін Vaultara еске салады. Жазбаны ашу үшін еске салғышты түрте аласыз.';
 
   @override
   String get tourRenew2Title => 'Жаңа күнді сақтаңыз';
@@ -7943,7 +7943,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String get tourAsk2Title => 'Терудің орнына сөйлеңіз';
 
   @override
-  String get tourAsk2Body => 'Микрофонды түртіп сөйлеңіз. Сөйлеген кезде сөздер көрінеді және бірден жібере аласыз.';
+  String get tourAsk2Body => 'Микрофонды түртіп сөйлей аласыз. Сөйлеген кезде сөздер көрінеді және бірден жібере аласыз.';
 
   @override
   String get tourAsk3Title => 'Әр өзгерісті сіз растайсыз';

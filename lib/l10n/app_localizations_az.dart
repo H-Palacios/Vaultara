@@ -974,7 +974,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Premium ilə öz xatırlatma tarixlərinizi seçə bilərsiniz.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Xatırlatmanı dəyişmək və ya yenisini əlavə etmək üçün Öz tarixlərinizi seçin düyməsinə toxunun.';
+  String get tutorialRemindersOwnDatesPremium => 'Xatırlatmanı dəyişmək və ya yenisini əlavə etmək üçün Öz tarixlərinizi seçin düyməsinə toxuna bilərsiniz.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Müddəti bu gün bitir';
@@ -3479,10 +3479,10 @@ class AppLocalizationsAz extends AppLocalizations {
   String get tutorialTravelLocked => 'Premium ilə səfərləri planlaşdıra və hər səyahətçinin getməzdən əvvəl hansı sənədlərin müddətini uzatmalı olduğunu görə bilərsiniz.';
 
   @override
-  String get tutorialTravelTripCard => 'Hər səfər nə vaxt yola düşdüyünüzü və getməzdən əvvəl düzəldiləcək məsələləri göstərir. Açmaq üçün səfərə toxunun.';
+  String get tutorialTravelTripCard => 'Hər səfər nə vaxt yola düşdüyünüzü və getməzdən əvvəl düzəldiləcək məsələləri göstərir. Açmaq üçün səfərə toxuna bilərsiniz.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Hara, nə vaxt və kimlərin səyahət etdiyini əlavə etmək üçün Səfər planlaşdır düyməsinə toxunun.';
+  String get tutorialTravelPlanTrip => 'Hara, nə vaxt və kimlərin səyahət etdiyini əlavə etmək üçün Səfər planlaşdır düyməsinə toxuna bilərsiniz.';
 
   @override
   String get tutorialTravelTripDocuments => 'Səfərin içində Vaultara hər səyahətçinin sənədlərini səfər tarixlərinə görə yoxlayır və nəyin müddətinin uzadılmalı olduğunu göstərir.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get tutorialFamilyMe => 'Bu sizsiniz. Başqasına aid olmayan hər sənəd sizdə qalır.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Həyat yoldaşı, uşaq və ya valideyn kimi baxdığınız şəxsi əlavə etmək üçün Şəxs əlavə et düyməsinə toxunun.';
+  String get tutorialFamilyAddPerson => 'Həyat yoldaşı, uşaq və ya valideyn kimi baxdığınız şəxsi əlavə etmək üçün Şəxs əlavə et düyməsinə toxuna bilərsiniz.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Ailə və ya Biznes planı ilə baxdığınız insanları əlavə edib onların sənədlərini də burada saxlaya bilərsiniz.';
@@ -7895,7 +7895,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get tourHome2Title => 'İstənilən şeyi tapın';
 
   @override
-  String get tourHome2Body => 'Ad, qrup və ya şəxsə görə qeyd tapmaq üçün axtarışa toxunun.';
+  String get tourHome2Body => 'Ad, qrup və ya şəxsə görə qeyd tapmaq üçün axtarışa toxuna bilərsiniz.';
 
   @override
   String get tourHome3Title => 'Səfərlər və planlar';
@@ -7913,7 +7913,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get tourRenew1Title => 'Xatırlatma gəlir';
 
   @override
-  String get tourRenew1Body => 'Qeydin vaxtı bitməzdən əvvəl Vaultara sizə xatırladır. Qeydi açmaq üçün xatırlatmaya toxunun.';
+  String get tourRenew1Body => 'Qeydin vaxtı bitməzdən əvvəl Vaultara sizə xatırladır. Qeydi açmaq üçün xatırlatmaya toxuna bilərsiniz.';
 
   @override
   String get tourRenew2Title => 'Yeni tarixi yadda saxlayın';
@@ -7943,7 +7943,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String get tourAsk2Title => 'Yazmaq əvəzinə danışın';
 
   @override
-  String get tourAsk2Body => 'Mikrofona toxunub danışın. Danışdıqca sözlər görünür və dərhal göndərə bilərsiniz.';
+  String get tourAsk2Body => 'Mikrofona toxunub danışa bilərsiniz. Danışdıqca sözlər görünür və dərhal göndərə bilərsiniz.';
 
   @override
   String get tourAsk3Title => 'Hər dəyişikliyi siz təsdiqləyirsiniz';

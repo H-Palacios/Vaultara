@@ -974,7 +974,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Premiumekin zure gogorarazpen-datak aukera ditzakezu.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Sakatu Aukeratu zure datak gogorarazle bat aldatzeko edo beste bat gehitzeko.';
+  String get tutorialRemindersOwnDatesPremium => 'Aukeratu zure datak saka dezakezu gogorarazle bat aldatzeko edo beste bat gehitzeko.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Gaur iraungitzen da';
@@ -3479,10 +3479,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tutorialTravelLocked => 'Premiumekin bidaiak planifikatu ditzakezu eta bidaiari bakoitzak joan aurretik zein dokumentu berritu behar dituen ikusi.';
 
   @override
-  String get tutorialTravelTripCard => 'Bidaia bakoitzak noiz irteten zaren eta joan aurretik zer konpondu behar den erakusten du. Ukitu bidaia bat irekitzeko.';
+  String get tutorialTravelTripCard => 'Bidaia bakoitzak noiz irteten zaren eta joan aurretik zer konpondu behar den erakusten du. Bidaia bat ukitu dezakezu irekitzeko.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Ukitu Planifikatu bidaia bat, nora, noiz eta nor bidaiatzen duen gehitzeko.';
+  String get tutorialTravelPlanTrip => 'Planifikatu bidaia bat ukitu dezakezu, nora, noiz eta nor bidaiatzen duen gehitzeko.';
 
   @override
   String get tutorialTravelTripDocuments => 'Bidaia baten barruan, Vaultarak bidaiari bakoitzaren erregistroak bidaiaren datekin alderatzen ditu eta zer berritu behar den erakusten du.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tutorialFamilyMe => 'Hau zu zara. Beste norbaiti dagokion ez den erregistro orok zurekin jarraitzen du.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Ukitu Gehitu pertsona zaintzen duzun norbait gehitzeko, esaterako bikotekidea, semea edo alaba, edo gurasoa.';
+  String get tutorialFamilyAddPerson => 'Gehitu pertsona ukitu dezakezu zaintzen duzun norbait gehitzeko, esaterako bikotekidea, semea edo alaba, edo gurasoa.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Familia edo Enpresa planarekin zaintzen dituzun pertsonak gehitu ditzakezu eta haien erregistroak hemen ere gorde.';
@@ -7899,7 +7899,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tourHome2Title => 'Aurkitu dena';
 
   @override
-  String get tourHome2Body => 'Ukitu bilaketa erregistro bat izenaren, taldearen edo pertsonaren arabera aurkitzeko.';
+  String get tourHome2Body => 'Bilaketa ukitu dezakezu erregistro bat izenaren, taldearen edo pertsonaren arabera aurkitzeko.';
 
   @override
   String get tourHome3Title => 'Bidaiak eta planak';
@@ -7917,7 +7917,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tourRenew1Title => 'Oroigarri bat iristen da';
 
   @override
-  String get tourRenew1Body => 'Erregistro bat iraungi aurretik, Vaultarak gogorarazten dizu. Ukitu oroigarria erregistroa irekitzeko.';
+  String get tourRenew1Body => 'Erregistro bat iraungi aurretik, Vaultarak gogorarazten dizu. Oroigarria ukitu dezakezu erregistroa irekitzeko.';
 
   @override
   String get tourRenew2Title => 'Gorde data berria';
@@ -7947,7 +7947,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tourAsk2Title => 'Hitz egin idatzi beharrean';
 
   @override
-  String get tourAsk2Body => 'Ukitu mikrofonoa eta hitz egin. Hitzak hitz egin ahala agertzen dira, eta berehala bidal dezakezu.';
+  String get tourAsk2Body => 'Mikrofonoa ukitu eta hitz egin dezakezu. Hitzak hitz egin ahala agertzen dira, eta berehala bidal dezakezu.';
 
   @override
   String get tourAsk3Title => 'Zuk berresten duzu aldaketa oro';

@@ -973,7 +973,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Với Premium, bạn có thể tự chọn ngày nhắc.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Nhấn Chọn ngày của riêng bạn để đổi một lời nhắc hoặc thêm lời nhắc.';
+  String get tutorialRemindersOwnDatesPremium => 'Bạn có thể nhấn Chọn ngày của riêng bạn để đổi một lời nhắc hoặc thêm lời nhắc.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Hết Hạn Hôm Nay';
@@ -3458,10 +3458,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tutorialTravelLocked => 'Với Premium, bạn có thể lên kế hoạch chuyến đi và xem mỗi người đi cần gia hạn giấy tờ nào trước khi khởi hành.';
 
   @override
-  String get tutorialTravelTripCard => 'Mỗi chuyến đi cho thấy khi nào bạn khởi hành và những việc cần sửa trước khi đi. Chạm vào một chuyến đi để mở.';
+  String get tutorialTravelTripCard => 'Mỗi chuyến đi cho thấy khi nào bạn khởi hành và những việc cần sửa trước khi đi. Bạn có thể chạm vào một chuyến đi để mở.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Chạm vào Lên kế hoạch chuyến đi để thêm nơi bạn đến, thời gian và ai đi cùng.';
+  String get tutorialTravelPlanTrip => 'Bạn có thể chạm vào Lên kế hoạch chuyến đi để thêm nơi bạn đến, thời gian và ai đi cùng.';
 
   @override
   String get tutorialTravelTripDocuments => 'Trong một chuyến đi, Vaultara kiểm tra bản ghi của từng người đi so với ngày của chuyến đi và cho biết cần gia hạn gì.';
@@ -3485,7 +3485,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tutorialFamilyMe => 'Đây là bạn. Mọi bản ghi không thuộc về người khác sẽ ở lại với bạn.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Chạm vào Thêm người để thêm người bạn chăm sóc, như bạn đời, con hoặc cha mẹ.';
+  String get tutorialFamilyAddPerson => 'Bạn có thể chạm vào Thêm người để thêm người bạn chăm sóc, như bạn đời, con hoặc cha mẹ.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Với gói Gia đình hoặc Doanh nghiệp, bạn có thể thêm những người bạn chăm sóc và lưu bản ghi của họ ở đây.';
@@ -7838,7 +7838,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tourHome2Title => 'Tìm bất cứ thứ gì';
 
   @override
-  String get tourHome2Body => 'Chạm vào tìm kiếm để tìm mục theo tên, nhóm hoặc người.';
+  String get tourHome2Body => 'Bạn có thể chạm vào tìm kiếm để tìm mục theo tên, nhóm hoặc người.';
 
   @override
   String get tourHome3Title => 'Chuyến đi và kế hoạch';
@@ -7856,7 +7856,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tourRenew1Title => 'Có lời nhắc';
 
   @override
-  String get tourRenew1Body => 'Trước khi một mục hết hạn, Vaultara nhắc bạn. Chạm vào lời nhắc để mở mục.';
+  String get tourRenew1Body => 'Trước khi một mục hết hạn, Vaultara nhắc bạn. Bạn có thể chạm vào lời nhắc để mở mục.';
 
   @override
   String get tourRenew2Title => 'Lưu ngày mới';
@@ -7886,7 +7886,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tourAsk2Title => 'Nói thay vì gõ';
 
   @override
-  String get tourAsk2Body => 'Chạm micro và nói. Lời của bạn hiện ra khi nói và bạn có thể gửi ngay.';
+  String get tourAsk2Body => 'Bạn có thể chạm micro và nói. Lời của bạn hiện ra khi nói và bạn có thể gửi ngay.';
 
   @override
   String get tourAsk3Title => 'Bạn xác nhận mọi thay đổi';

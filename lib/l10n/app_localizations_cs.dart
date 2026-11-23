@@ -981,7 +981,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'S Premium si můžete zvolit vlastní data připomínek.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Klepnutím na Zvolit vlastní data změníte připomínku nebo přidáte další.';
+  String get tutorialRemindersOwnDatesPremium => 'Klepnutím na Zvolit vlastní data můžete změnit připomínku nebo přidat další.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Vyprší dnes';
@@ -3551,10 +3551,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get tutorialTravelLocked => 'S Premium můžete plánovat cesty a vidět, které doklady má každý cestující před odjezdem obnovit.';
 
   @override
-  String get tutorialTravelTripCard => 'Každá cesta ukazuje, kdy odjíždíte a co je třeba před odjezdem vyřešit. Klepnutím cestu otevřete.';
+  String get tutorialTravelTripCard => 'Každá cesta ukazuje, kdy odjíždíte a co je třeba před odjezdem vyřešit. Klepnutím můžete cestu otevřít.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Klepněte na Naplánovat cestu a přidejte, kam jedete, kdy a kdo cestuje.';
+  String get tutorialTravelPlanTrip => 'Můžete klepnout na Naplánovat cestu a přidat, kam jedete, kdy a kdo cestuje.';
 
   @override
   String get tutorialTravelTripDocuments => 'Uvnitř cesty Vaultara kontroluje záznamy každého cestujícího podle termínů cesty a ukazuje, co obnovit.';
@@ -3578,7 +3578,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get tutorialFamilyMe => 'Tohle jste vy. Každý záznam, který nepatří někomu jinému, zůstává u vás.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Klepnutím na Přidat osobu přidáte někoho, o koho se staráte, třeba partnera, dítě nebo rodiče.';
+  String get tutorialFamilyAddPerson => 'Klepnutím na Přidat osobu můžete přidat někoho, o koho se staráte, třeba partnera, dítě nebo rodiče.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'S tarifem Rodina nebo Business můžete přidat lidi, o které se staráte, a mít zde i jejich záznamy.';
@@ -8030,7 +8030,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get tourHome2Title => 'Najděte cokoli';
 
   @override
-  String get tourHome2Body => 'Klepněte na hledání a najděte záznam podle názvu, skupiny nebo osoby.';
+  String get tourHome2Body => 'Můžete klepnout na hledání a najít záznam podle názvu, skupiny nebo osoby.';
 
   @override
   String get tourHome3Title => 'Cesty a plány';
@@ -8048,7 +8048,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get tourRenew1Title => 'Přijde připomínka';
 
   @override
-  String get tourRenew1Body => 'Než záznam vyprší, Vaultara vám to připomene. Klepnutím na připomínku záznam otevřete.';
+  String get tourRenew1Body => 'Než záznam vyprší, Vaultara vám to připomene. Klepnutím na připomínku můžete záznam otevřít.';
 
   @override
   String get tourRenew2Title => 'Uložte nové datum';
@@ -8078,7 +8078,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get tourAsk2Title => 'Mluvte místo psaní';
 
   @override
-  String get tourAsk2Body => 'Klepněte na mikrofon a mluvte. Slova se objevují během mluvení a můžete hned odeslat.';
+  String get tourAsk2Body => 'Můžete klepnout na mikrofon a mluvit. Slova se objevují během mluvení a můžete hned odeslat.';
 
   @override
   String get tourAsk3Title => 'Každou změnu potvrzujete vy';

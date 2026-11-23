@@ -974,7 +974,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Met Premium kun je je eigen herinneringsdatums kiezen.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Tik op Kies je eigen datums om een herinnering te wijzigen of toe te voegen.';
+  String get tutorialRemindersOwnDatesPremium => 'Je kunt op Kies je eigen datums tikken om een herinnering te wijzigen of toe te voegen.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Verloopt vandaag';
@@ -3479,10 +3479,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get tutorialTravelLocked => 'Met Premium kun je reizen plannen en zien welke documenten van elke reiziger vernieuwd moeten worden voor vertrek.';
 
   @override
-  String get tutorialTravelTripCard => 'Elke reis laat zien wanneer je vertrekt en wat je nog moet regelen. Tik op een reis om hem te openen.';
+  String get tutorialTravelTripCard => 'Elke reis laat zien wanneer je vertrekt en wat je nog moet regelen. Je kunt op een reis tikken om hem te openen.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Tik op Reis plannen om toe te voegen waar je naartoe gaat, wanneer en wie er meegaat.';
+  String get tutorialTravelPlanTrip => 'Je kunt op Reis plannen tikken om toe te voegen waar je naartoe gaat, wanneer en wie er meegaat.';
 
   @override
   String get tutorialTravelTripDocuments => 'In een reis vergelijkt Vaultara de records van elke reiziger met de reisdata en laat zien wat je moet vernieuwen.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get tutorialFamilyMe => 'Dit ben jij. Elk record dat niet van iemand anders is, blijft bij jou.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Tik op Persoon toevoegen om iemand toe te voegen voor wie je zorgt, zoals een partner, kind of ouder.';
+  String get tutorialFamilyAddPerson => 'Je kunt op Persoon toevoegen tikken om iemand toe te voegen voor wie je zorgt, zoals een partner, kind of ouder.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Met een Gezin- of Zakelijk-abonnement kun je de mensen voor wie je zorgt toevoegen en hun records ook hier bewaren.';
@@ -7899,7 +7899,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get tourHome2Title => 'Alles vinden';
 
   @override
-  String get tourHome2Body => 'Tik op zoeken om een item te vinden op naam, groep of persoon.';
+  String get tourHome2Body => 'Je kunt op zoeken tikken om een item te vinden op naam, groep of persoon.';
 
   @override
   String get tourHome3Title => 'Reizen en plannen';
@@ -7917,7 +7917,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get tourRenew1Title => 'Er komt een herinnering';
 
   @override
-  String get tourRenew1Body => 'Voordat een item verloopt, herinnert Vaultara je eraan. Tik op de herinnering om het item te openen.';
+  String get tourRenew1Body => 'Voordat een item verloopt, herinnert Vaultara je eraan. Je kunt op de herinnering tikken om het item te openen.';
 
   @override
   String get tourRenew2Title => 'De nieuwe datum opslaan';
@@ -7947,7 +7947,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get tourAsk2Title => 'Praten in plaats van typen';
 
   @override
-  String get tourAsk2Body => 'Tik op de microfoon en praat. Je woorden verschijnen terwijl je praat en je kunt meteen versturen.';
+  String get tourAsk2Body => 'Je kunt op de microfoon tikken en praten. Je woorden verschijnen terwijl je praat en je kunt meteen versturen.';
 
   @override
   String get tourAsk3Title => 'Jij bevestigt elke wijziging';

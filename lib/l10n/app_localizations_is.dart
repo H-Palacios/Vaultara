@@ -974,7 +974,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Með Premium geturðu valið eigin áminningardagsetningar.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Ýttu á Veldu eigin dagsetningar til að breyta áminningu eða bæta við.';
+  String get tutorialRemindersOwnDatesPremium => 'Þú getur ýtt á Veldu eigin dagsetningar til að breyta áminningu eða bæta við.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Rennur út í dag';
@@ -3478,10 +3478,10 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tutorialTravelLocked => 'Með Premium geturðu skipulagt ferðir og séð hvaða skjöl hver ferðalangur þarf að endurnýja áður en farið er.';
 
   @override
-  String get tutorialTravelTripCard => 'Hver ferð sýnir hvenær þú ferð og allt sem þarf að laga áður en þú ferð. Ýttu á ferð til að opna hana.';
+  String get tutorialTravelTripCard => 'Hver ferð sýnir hvenær þú ferð og allt sem þarf að laga áður en þú ferð. Þú getur ýtt á ferð til að opna hana.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Ýttu á Skipuleggja ferð til að bæta við hvert þú ert að fara, hvenær og hver ferðast.';
+  String get tutorialTravelPlanTrip => 'Þú getur ýtt á Skipuleggja ferð til að bæta við hvert þú ert að fara, hvenær og hver ferðast.';
 
   @override
   String get tutorialTravelTripDocuments => 'Inni í ferð ber Vaultara færslur hvers ferðalangs saman við dagsetningar ferðarinnar og sýnir hvað þarf að endurnýja.';
@@ -3505,7 +3505,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tutorialFamilyMe => 'Þetta ert þú. Allar færslur sem tilheyra ekki öðrum eru hjá þér.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Ýttu á Bæta við manneskju til að bæta við einhverjum sem þú hugsar um, eins og maka, barni eða foreldri.';
+  String get tutorialFamilyAddPerson => 'Þú getur ýtt á Bæta við manneskju til að bæta við einhverjum sem þú hugsar um, eins og maka, barni eða foreldri.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Með Fjölskyldu- eða Fyrirtækjaáskrift geturðu bætt við fólki sem þú hugsar um og haldið færslum þess hér líka.';
@@ -7894,7 +7894,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tourHome2Title => 'Finndu allt';
 
   @override
-  String get tourHome2Body => 'Ýttu á leit til að finna færslu eftir nafni, flokki eða einstaklingi.';
+  String get tourHome2Body => 'Þú getur ýtt á leit til að finna færslu eftir nafni, flokki eða einstaklingi.';
 
   @override
   String get tourHome3Title => 'Ferðir og áætlanir';
@@ -7912,7 +7912,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tourRenew1Title => 'Áminning berst';
 
   @override
-  String get tourRenew1Body => 'Áður en færsla rennur út minnir Vaultara þig á. Ýttu á áminninguna til að opna færsluna.';
+  String get tourRenew1Body => 'Áður en færsla rennur út minnir Vaultara þig á. Þú getur ýtt á áminninguna til að opna færsluna.';
 
   @override
   String get tourRenew2Title => 'Vistaðu nýju dagsetninguna';
@@ -7942,7 +7942,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tourAsk2Title => 'Talaðu í stað þess að skrifa';
 
   @override
-  String get tourAsk2Body => 'Ýttu á hljóðnemann og talaðu. Orðin birtast á meðan þú talar og þú getur sent strax.';
+  String get tourAsk2Body => 'Þú getur ýtt á hljóðnemann og talað. Orðin birtast á meðan þú talar og þú getur sent strax.';
 
   @override
   String get tourAsk3Title => 'Þú staðfestir hverja breytingu';

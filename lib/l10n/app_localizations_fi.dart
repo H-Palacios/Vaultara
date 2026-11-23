@@ -974,7 +974,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Premiumilla voit valita omat muistutuspäivät.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Napauta Valitse omat päivät muuttaaksesi muistutusta tai lisätäksesi uuden.';
+  String get tutorialRemindersOwnDatesPremium => 'Voit napauttaa Valitse omat päivät muuttaaksesi muistutusta tai lisätäksesi uuden.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Vanhenee tänään';
@@ -3479,10 +3479,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tutorialTravelLocked => 'Premiumilla voit suunnitella matkoja ja nähdä, mitkä asiakirjat kunkin matkustajan pitää uusia ennen lähtöä.';
 
   @override
-  String get tutorialTravelTripCard => 'Jokaisesta matkasta näkyy lähtöaika ja kaikki ennen lähtöä korjattava. Avaa matka napauttamalla sitä.';
+  String get tutorialTravelTripCard => 'Jokaisesta matkasta näkyy lähtöaika ja kaikki ennen lähtöä korjattava. Voit avata matkan napauttamalla sitä.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Napauta Suunnittele matka ja lisää minne olet menossa, milloin ja ketkä matkustavat.';
+  String get tutorialTravelPlanTrip => 'Voit napauttaa Suunnittele matka ja lisätä, minne olet menossa, milloin ja ketkä matkustavat.';
 
   @override
   String get tutorialTravelTripDocuments => 'Matkan sisällä Vaultara tarkistaa jokaisen matkustajan tietueet matkan päivämääriin nähden ja näyttää, mitä pitää uusia.';
@@ -3506,7 +3506,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tutorialFamilyMe => 'Tämä olet sinä. Kaikki tietueet, jotka eivät kuulu kenellekään muulle, pysyvät sinulla.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Napauta Lisää henkilö ja lisää joku, josta huolehdit, kuten puoliso, lapsi tai vanhempi.';
+  String get tutorialFamilyAddPerson => 'Voit napauttaa Lisää henkilö ja lisätä jonkun, josta huolehdit, kuten puolison, lapsen tai vanhemman.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Family- tai Business-tilauksella voit lisätä läheisesi ja pitää myös heidän tietueensa täällä.';
@@ -7899,7 +7899,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tourHome2Title => 'Löydä kaikki';
 
   @override
-  String get tourHome2Body => 'Napauta hakua löytääksesi tietueen nimen, ryhmän tai henkilön mukaan.';
+  String get tourHome2Body => 'Voit napauttaa hakua löytääksesi tietueen nimen, ryhmän tai henkilön mukaan.';
 
   @override
   String get tourHome3Title => 'Matkat ja suunnitelmat';
@@ -7917,7 +7917,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tourRenew1Title => 'Muistutus tulee';
 
   @override
-  String get tourRenew1Body => 'Ennen kuin tietue päättyy, Vaultara muistuttaa sinua. Avaa tietue napauttamalla muistutusta.';
+  String get tourRenew1Body => 'Ennen kuin tietue päättyy, Vaultara muistuttaa sinua. Voit avata tietueen napauttamalla muistutusta.';
 
   @override
   String get tourRenew2Title => 'Tallenna uusi päivä';
@@ -7947,7 +7947,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tourAsk2Title => 'Puhu kirjoittamisen sijaan';
 
   @override
-  String get tourAsk2Body => 'Napauta mikrofonia ja puhu. Sanat näkyvät puhuessasi, ja voit lähettää heti.';
+  String get tourAsk2Body => 'Voit napauttaa mikrofonia ja puhua. Sanat näkyvät puhuessasi, ja voit lähettää heti.';
 
   @override
   String get tourAsk3Title => 'Vahvistat jokaisen muutoksen';

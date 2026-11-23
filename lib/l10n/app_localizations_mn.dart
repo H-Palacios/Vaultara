@@ -973,7 +973,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Premium-аар сануулах огноогоо өөрөө сонгох боломжтой.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Сануулгыг өөрчлөх эсвэл нэмэхийн тулд Өөрийн огноог сонгох дээр дарна уу.';
+  String get tutorialRemindersOwnDatesPremium => 'Сануулгыг өөрчлөх эсвэл нэмэхийн тулд Өөрийн огноог сонгох дээр дарж болно.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Өнөөдөр хугацаа дуусна';
@@ -3478,10 +3478,10 @@ class AppLocalizationsMn extends AppLocalizations {
   String get tutorialTravelLocked => 'Premium-ээр аялал төлөвлөж, аялагч бүрийн ямар баримтыг явахын өмнө сунгах хэрэгтэйг харж болно.';
 
   @override
-  String get tutorialTravelTripCard => 'Аялал бүр хэзээ явахыг болон явахаасаа өмнө юуг засахыг харуулна. Аяллыг нээхийн тулд товшино уу.';
+  String get tutorialTravelTripCard => 'Аялал бүр хэзээ явахыг болон явахаасаа өмнө юуг засахыг харуулна. Аяллыг нээхийн тулд товшиж болно.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Аялал төлөвлөх дээр товшоод хаашаа, хэзээ, хэн явахыг нэмээрэй.';
+  String get tutorialTravelPlanTrip => 'Аялал төлөвлөх дээр товшоод хаашаа, хэзээ, хэн явахыг нэмж болно.';
 
   @override
   String get tutorialTravelTripDocuments => 'Аяллын дотор Vaultara аялагч бүрийн бичлэгийг аяллын огнооны эсрэг шалгаж, юуг сунгахыг харуулна.';
@@ -3505,7 +3505,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get tutorialFamilyMe => 'Энэ бол та. Өөр хүнийх биш бичлэг бүр таньд үлдэнэ.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Хүн нэмэх дээр товшоод таны асардаг хүнийг, жишээ нь хань, хүүхэд эсвэл эцэг эхийг нэмээрэй.';
+  String get tutorialFamilyAddPerson => 'Хүн нэмэх дээр товшоод таны асардаг хүнийг, жишээ нь хань, хүүхэд эсвэл эцэг эхийг нэмж болно.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Гэр бүл эсвэл Бизнес багцаар таны асардаг хүмүүсийг нэмж, тэдний бичлэгийг ч энд хадгалж болно.';
@@ -7885,7 +7885,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get tourHome2Title => 'Юуг ч олоорой';
 
   @override
-  String get tourHome2Body => 'Нэр, бүлэг эсвэл хүнээр бүртгэл хайхын тулд хайлтыг товшино уу.';
+  String get tourHome2Body => 'Нэр, бүлэг эсвэл хүнээр бүртгэл хайхын тулд хайлтыг товшиж болно.';
 
   @override
   String get tourHome3Title => 'Аялал ба төлөвлөгөө';
@@ -7903,7 +7903,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get tourRenew1Title => 'Сануулга ирнэ';
 
   @override
-  String get tourRenew1Body => 'Бүртгэлийн хугацаа дуусахаас өмнө Vaultara сануулна. Бүртгэлийг нээхийн тулд сануулгыг товшино уу.';
+  String get tourRenew1Body => 'Бүртгэлийн хугацаа дуусахаас өмнө Vaultara сануулна. Бүртгэлийг нээхийн тулд сануулгыг товшиж болно.';
 
   @override
   String get tourRenew2Title => 'Шинэ огноог хадгалах';
@@ -7933,7 +7933,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String get tourAsk2Title => 'Бичихийн оронд ярь';
 
   @override
-  String get tourAsk2Body => 'Микрофоныг товшоод яриарай. Ярих зуур үг гарч ирэх ба шууд илгээж болно.';
+  String get tourAsk2Body => 'Та микрофоныг товшоод ярьж болно. Ярих зуур үг гарч ирэх ба шууд илгээж болно.';
 
   @override
   String get tourAsk3Title => 'Өөрчлөлт бүрийг та баталгаажуулна';

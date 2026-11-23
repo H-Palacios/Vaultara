@@ -971,7 +971,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'ជាមួយ Premium អ្នកអាចជ្រើសកាលបរិច្ឆេទរំលឹកផ្ទាល់ខ្លួន។';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'ចុច ជ្រើសកាលបរិច្ឆេទផ្ទាល់ខ្លួន ដើម្បីប្តូរការរំលឹក ឬបន្ថែមមួយទៀត។';
+  String get tutorialRemindersOwnDatesPremium => 'អ្នកអាចចុច ជ្រើសកាលបរិច្ឆេទផ្ទាល់ខ្លួន ដើម្បីប្តូរការរំលឹក ឬបន្ថែមមួយទៀត។';
 
   @override
   String get smartInsightExpiresTodayHeading => 'ផុតកំណត់ថ្ងៃនេះ';
@@ -3456,10 +3456,10 @@ class AppLocalizationsKm extends AppLocalizations {
   String get tutorialTravelLocked => 'ជាមួយ Premium អ្នកអាចរៀបចំផែនការដំណើរ ហើយមើលថាអ្នកធ្វើដំណើរម្នាក់ៗត្រូវបន្តសុពលភាពឯកសារអ្វីខ្លះមុនចេញដំណើរ។';
 
   @override
-  String get tutorialTravelTripCard => 'ដំណើរនីមួយៗបង្ហាញពេលអ្នកចេញដំណើរ និងអ្វីដែលត្រូវកែតម្រូវមុនចេញដំណើរ។ ចុចលើដំណើរមួយដើម្បីបើកវា។';
+  String get tutorialTravelTripCard => 'ដំណើរនីមួយៗបង្ហាញពេលអ្នកចេញដំណើរ និងអ្វីដែលត្រូវកែតម្រូវមុនចេញដំណើរ។ អ្នកអាចចុចលើដំណើរមួយដើម្បីបើកវា។';
 
   @override
-  String get tutorialTravelPlanTrip => 'ចុច រៀបចំផែនការដំណើរ ដើម្បីបន្ថែមកន្លែងដែលអ្នកទៅ ពេលណា និងអ្នកណាធ្វើដំណើរ។';
+  String get tutorialTravelPlanTrip => 'អ្នកអាចចុច រៀបចំផែនការដំណើរ ដើម្បីបន្ថែមកន្លែងដែលអ្នកទៅ ពេលណា និងអ្នកណាធ្វើដំណើរ។';
 
   @override
   String get tutorialTravelTripDocuments => 'នៅក្នុងដំណើរមួយ Vaultara ពិនិត្យកំណត់ត្រារបស់អ្នកធ្វើដំណើរម្នាក់ៗធៀបនឹងកាលបរិច្ឆេទដំណើរ ហើយបង្ហាញអ្វីដែលត្រូវបន្តសុពលភាព។';
@@ -3483,7 +3483,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get tutorialFamilyMe => 'នេះគឺអ្នក។ កំណត់ត្រាណាដែលមិនមែនជារបស់អ្នកផ្សេង នៅជាមួយអ្នក។';
 
   @override
-  String get tutorialFamilyAddPerson => 'ចុច បន្ថែមមនុស្ស ដើម្បីបន្ថែមអ្នកដែលអ្នកថែទាំ ដូចជាដៃគូ កូន ឬឪពុកម្តាយ។';
+  String get tutorialFamilyAddPerson => 'អ្នកអាចចុច បន្ថែមមនុស្ស ដើម្បីបន្ថែមអ្នកដែលអ្នកថែទាំ ដូចជាដៃគូ កូន ឬឪពុកម្តាយ។';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'ជាមួយគម្រោងគ្រួសារ ឬអាជីវកម្ម អ្នកអាចបន្ថែមមនុស្សដែលអ្នកថែទាំ ហើយរក្សាកំណត់ត្រារបស់ពួកគេនៅទីនេះផងដែរ។';
@@ -7836,7 +7836,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get tourHome2Title => 'ស្វែងរកអ្វីក៏បាន';
 
   @override
-  String get tourHome2Body => 'ចុចស្វែងរកដើម្បីរកកំណត់ត្រាតាមឈ្មោះ ក្រុម ឬមនុស្ស។';
+  String get tourHome2Body => 'អ្នកអាចចុចស្វែងរកដើម្បីរកកំណត់ត្រាតាមឈ្មោះ ក្រុម ឬមនុស្ស។';
 
   @override
   String get tourHome3Title => 'ដំណើរ និងផែនការ';
@@ -7854,7 +7854,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get tourRenew1Title => 'មានការរំលឹក';
 
   @override
-  String get tourRenew1Body => 'មុនពេលកំណត់ត្រាផុតកំណត់ Vaultara រំលឹកអ្នក។ ចុចការរំលឹកដើម្បីបើកកំណត់ត្រា។';
+  String get tourRenew1Body => 'មុនពេលកំណត់ត្រាផុតកំណត់ Vaultara រំលឹកអ្នក។ អ្នកអាចចុចការរំលឹកដើម្បីបើកកំណត់ត្រា។';
 
   @override
   String get tourRenew2Title => 'រក្សាទុកកាលបរិច្ឆេទថ្មី';
@@ -7884,7 +7884,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String get tourAsk2Title => 'និយាយជំនួសការវាយ';
 
   @override
-  String get tourAsk2Body => 'ចុចមីក្រូហ្វូនហើយនិយាយ។ ពាក្យលេចឡើងពេលអ្នកនិយាយ ហើយអាចផ្ញើបានភ្លាម។';
+  String get tourAsk2Body => 'អ្នកអាចចុចមីក្រូហ្វូនហើយនិយាយ។ ពាក្យលេចឡើងពេលអ្នកនិយាយ ហើយអាចផ្ញើបានភ្លាម។';
 
   @override
   String get tourAsk3Title => 'អ្នកបញ្ជាក់រាល់ការផ្លាស់ប្ដូរ';

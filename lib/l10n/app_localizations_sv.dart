@@ -974,7 +974,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Med Premium kan du välja egna påminnelsedatum.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Tryck på Välj egna datum för att ändra en påminnelse eller lägga till en.';
+  String get tutorialRemindersOwnDatesPremium => 'Du kan trycka på Välj egna datum för att ändra en påminnelse eller lägga till en.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Utgår idag';
@@ -3478,10 +3478,10 @@ class AppLocalizationsSv extends AppLocalizations {
   String get tutorialTravelLocked => 'Med Premium kan du planera resor och se vilka dokument varje resenär behöver förnya innan avresan.';
 
   @override
-  String get tutorialTravelTripCard => 'Varje resa visar när du åker och vad som behöver åtgärdas innan du åker. Tryck på en resa för att öppna den.';
+  String get tutorialTravelTripCard => 'Varje resa visar när du åker och vad som behöver åtgärdas innan du åker. Du kan trycka på en resa för att öppna den.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Tryck på Planera en resa för att lägga till vart du ska, när och vem som reser.';
+  String get tutorialTravelPlanTrip => 'Du kan trycka på Planera en resa för att lägga till vart du ska, när och vem som reser.';
 
   @override
   String get tutorialTravelTripDocuments => 'Inne i en resa kontrollerar Vaultara varje resenärs poster mot resans datum och visar vad som behöver förnyas.';
@@ -3505,7 +3505,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get tutorialFamilyMe => 'Det här är du. Varje post som inte tillhör någon annan stannar hos dig.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Tryck på Lägg till person för att lägga till någon du tar hand om, som en partner, ett barn eller en förälder.';
+  String get tutorialFamilyAddPerson => 'Du kan trycka på Lägg till person för att lägga till någon du tar hand om, som en partner, ett barn eller en förälder.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Med ett Familj- eller Företagsabonnemang kan du lägga till personer du tar hand om och spara deras poster här också.';
@@ -7898,7 +7898,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get tourHome2Title => 'Hitta allt';
 
   @override
-  String get tourHome2Body => 'Tryck på sök för att hitta en post efter namn, grupp eller person.';
+  String get tourHome2Body => 'Du kan trycka på sök för att hitta en post efter namn, grupp eller person.';
 
   @override
   String get tourHome3Title => 'Resor och planer';
@@ -7916,7 +7916,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get tourRenew1Title => 'En påminnelse kommer';
 
   @override
-  String get tourRenew1Body => 'Innan en post går ut påminner Vaultara dig. Tryck på påminnelsen för att öppna posten.';
+  String get tourRenew1Body => 'Innan en post går ut påminner Vaultara dig. Du kan trycka på påminnelsen för att öppna posten.';
 
   @override
   String get tourRenew2Title => 'Spara det nya datumet';
@@ -7946,7 +7946,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get tourAsk2Title => 'Prata i stället för att skriva';
 
   @override
-  String get tourAsk2Body => 'Tryck på mikrofonen och prata. Orden visas medan du pratar och du kan skicka direkt.';
+  String get tourAsk2Body => 'Du kan trycka på mikrofonen och prata. Orden visas medan du pratar och du kan skicka direkt.';
 
   @override
   String get tourAsk3Title => 'Du bekräftar varje ändring';

@@ -977,7 +977,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get tutorialRemindersOwnDatesFree => 'Le Premium, is féidir leat do dhátaí meabhrúcháin féin a roghnú.';
 
   @override
-  String get tutorialRemindersOwnDatesPremium => 'Tapáil Roghnaigh do dhátaí féin chun meabhrúchán a athrú nó ceann a chur leis.';
+  String get tutorialRemindersOwnDatesPremium => 'Is féidir leat Roghnaigh do dhátaí féin a thapáil chun meabhrúchán a athrú nó ceann a chur leis.';
 
   @override
   String get smartInsightExpiresTodayHeading => 'Ag dul in éag inniu';
@@ -3570,10 +3570,10 @@ class AppLocalizationsGa extends AppLocalizations {
   String get tutorialTravelLocked => 'Le Premium is féidir leat turais a phleanáil agus a fheiceáil cé na doiciméid ar gá do gach taistealaí a athnuachan sula bhfágann sé.';
 
   @override
-  String get tutorialTravelTripCard => 'Taispeánann gach turas cathain a fhágann tú agus aon rud atá le ceartú sula dtéann tú. Tapáil turas chun é a oscailt.';
+  String get tutorialTravelTripCard => 'Taispeánann gach turas cathain a fhágann tú agus aon rud atá le ceartú sula dtéann tú. Is féidir leat turas a thapáil chun é a oscailt.';
 
   @override
-  String get tutorialTravelPlanTrip => 'Tapáil Pleanáil turas chun cá bhfuil tú ag dul, cathain, agus cé atá ag taisteal a chur leis.';
+  String get tutorialTravelPlanTrip => 'Is féidir leat Pleanáil turas a thapáil chun cá bhfuil tú ag dul, cathain, agus cé atá ag taisteal a chur leis.';
 
   @override
   String get tutorialTravelTripDocuments => 'Taobh istigh de thuras, seiceálann Vaultara taifid gach taistealaí i gcomparáid le dátaí an turais agus taispeánann sé cad atá le hathnuachan.';
@@ -3597,7 +3597,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get tutorialFamilyMe => 'Is tusa é seo. Fanann aon taifead nach le duine eile é leatsa.';
 
   @override
-  String get tutorialFamilyAddPerson => 'Tapáil Cuir duine leis chun duine a bhfuil tú ag tabhairt aire dó a chur leis, mar chéile, leanbh nó tuismitheoir.';
+  String get tutorialFamilyAddPerson => 'Is féidir leat Cuir duine leis a thapáil chun duine a bhfuil tú ag tabhairt aire dó a chur leis, mar chéile, leanbh nó tuismitheoir.';
 
   @override
   String get tutorialFamilyAddPersonLocked => 'Le plean Teaghlach nó Gnó is féidir leat na daoine a bhfuil tú ag tabhairt aire dóibh a chur leis agus a dtaifid a choinneáil anseo freisin.';
@@ -8079,7 +8079,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get tourHome2Title => 'Aimsigh gach rud';
 
   @override
-  String get tourHome2Body => 'Tapáil cuardach chun taifead a aimsiú de réir ainm, grúpa nó duine.';
+  String get tourHome2Body => 'Is féidir leat cuardach a thapáil chun taifead a aimsiú de réir ainm, grúpa nó duine.';
 
   @override
   String get tourHome3Title => 'Turais agus pleananna';
@@ -8097,7 +8097,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get tourRenew1Title => 'Tagann meabhrúchán';
 
   @override
-  String get tourRenew1Body => 'Sula rachaidh taifead in éag, cuireann Vaultara i gcuimhne duit é. Tapáil an meabhrúchán chun an taifead a oscailt.';
+  String get tourRenew1Body => 'Sula rachaidh taifead in éag, cuireann Vaultara i gcuimhne duit é. Is féidir leat an meabhrúchán a thapáil chun an taifead a oscailt.';
 
   @override
   String get tourRenew2Title => 'Sábháil an dáta nua';
@@ -8127,7 +8127,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get tourAsk2Title => 'Labhair in áit clóscríobh';
 
   @override
-  String get tourAsk2Body => 'Tapáil an micreafón agus labhair. Feictear d\'fhocail fad a labhraíonn tú agus is féidir leat seoladh láithreach.';
+  String get tourAsk2Body => 'Is féidir leat an micreafón a thapáil agus labhairt. Feictear d\'fhocail fad a labhraíonn tú agus is féidir leat seoladh láithreach.';
 
   @override
   String get tourAsk3Title => 'Deimhníonn tusa gach athrú';
