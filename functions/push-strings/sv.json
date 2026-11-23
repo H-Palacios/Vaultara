@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Utgångsdatum ändrat",
   "sharedExpiryBody": "{person} ändrade utgångsdatumet för {name}.",
   "sharedDeletedTitle": "Delad post borttagen",
-  "sharedDeletedBody": "{person} tog bort {name}. Den kan återställas från Nyligen borttagna i 30 dagar."
+  "sharedDeletedBody": "{person} tog bort {name}. Den kan återställas från Nyligen borttagna i 30 dagar.",
+  "remindBody": "{person} påminner dig om att förnya {name}.",
+  "staffOverdueTitle": "Personaldokument har gått ut",
+  "staffOverdueYesterday": "{name} för {person} gick ut i går och har inte förnyats.",
+  "staffOverdueWeek": "{name} för {person} gick ut för en vecka sedan och har fortfarande inte förnyats.",
+  "staffOverdueMany": "{count} personaldokument har gått ut och inte förnyats: {names}."
 }

@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Zmieniono datę ważności",
   "sharedExpiryBody": "{person}: zmieniono datę ważności {name}.",
   "sharedDeletedTitle": "Usunięto udostępniony rekord",
-  "sharedDeletedBody": "{person}: usunięto {name}. Można go przywrócić z Ostatnio usuniętych przez 30 dni."
+  "sharedDeletedBody": "{person}: usunięto {name}. Można go przywrócić z Ostatnio usuniętych przez 30 dni.",
+  "remindBody": "{person} przypomina Ci o odnowieniu: {name}.",
+  "staffOverdueTitle": "Dokument pracownika wygasł",
+  "staffOverdueYesterday": "{name} ({person}) wygasł wczoraj i nie został odnowiony.",
+  "staffOverdueWeek": "{name} ({person}) wygasł tydzień temu i nadal nie został odnowiony.",
+  "staffOverdueMany": "Wygasło {count} dokumentów pracowników, które nie zostały odnowione: {names}."
 }

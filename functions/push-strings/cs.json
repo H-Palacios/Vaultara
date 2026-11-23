@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Datum platnosti změněno",
   "sharedExpiryBody": "{person}: změněno datum platnosti záznamu {name}.",
   "sharedDeletedTitle": "Sdílený záznam smazán",
-  "sharedDeletedBody": "{person}: smazán záznam {name}. Lze ho obnovit z Nedávno smazaných do 30 dnů."
+  "sharedDeletedBody": "{person}: smazán záznam {name}. Lze ho obnovit z Nedávno smazaných do 30 dnů.",
+  "remindBody": "{person} vám připomíná obnovit {name}.",
+  "staffOverdueTitle": "Dokument zaměstnance vypršel",
+  "staffOverdueYesterday": "{name} pro {person} vypršel včera a nebyl obnoven.",
+  "staffOverdueWeek": "{name} pro {person} vypršel před týdnem a stále nebyl obnoven.",
+  "staffOverdueMany": "Vypršelo {count} dokumentů zaměstnanců a nebyly obnoveny: {names}."
 }

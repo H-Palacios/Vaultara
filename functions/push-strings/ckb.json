@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "بەرواری بەسەرچوون گۆڕدرا",
   "sharedExpiryBody": "{person} بەرواری بەسەرچوونی {name}ی گۆڕی.",
   "sharedDeletedTitle": "تۆمارێکی هاوبەش سڕایەوە",
-  "sharedDeletedBody": "{person} {name}ی سڕییەوە. تا 30 ڕۆژ لە تازە سڕاوەکان دەگەڕێنرێتەوە."
+  "sharedDeletedBody": "{person} {name}ی سڕییەوە. تا 30 ڕۆژ لە تازە سڕاوەکان دەگەڕێنرێتەوە.",
+  "remindBody": "{person} بیری خستیتەوە {name} نوێ بکەیتەوە.",
+  "staffOverdueTitle": "بەڵگەنامەی کارمەند بەسەرچوو",
+  "staffOverdueYesterday": "{name}ی {person} دوێنێ بەسەرچوو و نوێ نەکراوەتەوە.",
+  "staffOverdueWeek": "{name}ی {person} هەفتەیەک لەمەوبەر بەسەرچوو و هێشتا نوێ نەکراوەتەوە.",
+  "staffOverdueMany": "{count} بەڵگەنامەی کارمەند بەسەرچوون و نوێ نەکراونەتەوە: {names}."
 }

@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Ժամկետը փոխվեց",
   "sharedExpiryBody": "{person}-ը փոխեց {name}-ի ժամկետը։",
   "sharedDeletedTitle": "Ընդհանուր գրառումը ջնջվեց",
-  "sharedDeletedBody": "{person}-ը ջնջեց {name}։ Այն կարելի է վերականգնել Վերջերս ջնջվածներից 30 օրվա ընթացքում։"
+  "sharedDeletedBody": "{person}-ը ջնջեց {name}։ Այն կարելի է վերականգնել Վերջերս ջնջվածներից 30 օրվա ընթացքում։",
+  "remindBody": "{person}-ը հիշեցրեց ձեզ թարմացնել {name}-ը։",
+  "staffOverdueTitle": "Աշխատակցի փաստաթղթի ժամկետը լրացել է",
+  "staffOverdueYesterday": "{person}-ի {name}-ի ժամկետը լրացել է երեկ, և այն չի թարմացվել։",
+  "staffOverdueWeek": "{person}-ի {name}-ի ժամկետը լրացել է մեկ շաբաթ առաջ, և այն դեռ չի թարմացվել։",
+  "staffOverdueMany": "Աշխատակիցների {count} փաստաթղթի ժամկետը լրացել է, և դրանք չեն թարմացվել՝ {names}։"
 }

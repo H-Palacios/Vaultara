@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "תאריך התפוגה השתנה",
   "sharedExpiryBody": "{person} שינה/תה את תאריך התפוגה של {name}.",
   "sharedDeletedTitle": "רשומה משותפת נמחקה",
-  "sharedDeletedBody": "{person} מחק/ה את {name}. אפשר לשחזר אותה מ״נמחקו לאחרונה״ במשך 30 יום."
+  "sharedDeletedBody": "{person} מחק/ה את {name}. אפשר לשחזר אותה מ״נמחקו לאחרונה״ במשך 30 יום.",
+  "remindBody": "{person} הזכיר לך לחדש את {name}.",
+  "staffOverdueTitle": "פג תוקף מסמך של עובד",
+  "staffOverdueYesterday": "תוקף {name} של {person} פג אתמול והוא לא חודש.",
+  "staffOverdueWeek": "תוקף {name} של {person} פג לפני שבוע והוא עדיין לא חודש.",
+  "staffOverdueMany": "תוקפם של {count} מסמכי עובדים פג והם לא חודשו: {names}."
 }

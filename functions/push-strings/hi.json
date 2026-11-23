@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "समाप्ति तिथि बदली",
   "sharedExpiryBody": "{person} ने {name} की समाप्ति तिथि बदली।",
   "sharedDeletedTitle": "साझा रिकॉर्ड हटाया गया",
-  "sharedDeletedBody": "{person} ने {name} हटाया। इसे 30 दिनों तक हाल ही में हटाए गए से वापस लाया जा सकता है।"
+  "sharedDeletedBody": "{person} ने {name} हटाया। इसे 30 दिनों तक हाल ही में हटाए गए से वापस लाया जा सकता है।",
+  "remindBody": "{person} ने आपको {name} रिन्यू करने की याद दिलाई।",
+  "staffOverdueTitle": "स्टाफ़ का दस्तावेज़ समाप्त हो गया",
+  "staffOverdueYesterday": "{person} का {name} कल समाप्त हो गया और रिन्यू नहीं हुआ।",
+  "staffOverdueWeek": "{person} का {name} एक हफ़्ते पहले समाप्त हो गया और अब तक रिन्यू नहीं हुआ।",
+  "staffOverdueMany": "स्टाफ़ के {count} दस्तावेज़ समाप्त हो गए हैं और रिन्यू नहीं हुए: {names}।"
 }

@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "સમાપ્તિ તારીખ બદલાઈ",
   "sharedExpiryBody": "{person}એ {name}ની સમાપ્તિ તારીખ બદલી.",
   "sharedDeletedTitle": "શેર કરેલો રેકોર્ડ કાઢી નખાયો",
-  "sharedDeletedBody": "{person}એ {name} કાઢી નાખ્યું. 30 દિવસ સુધી તાજેતરમાં કાઢેલામાંથી પાછું લાવી શકાય છે."
+  "sharedDeletedBody": "{person}એ {name} કાઢી નાખ્યું. 30 દિવસ સુધી તાજેતરમાં કાઢેલામાંથી પાછું લાવી શકાય છે.",
+  "remindBody": "{person}એ તમને {name} રિન્યૂ કરવાનું યાદ અપાવ્યું.",
+  "staffOverdueTitle": "સ્ટાફનો દસ્તાવેજ સમાપ્ત થયો",
+  "staffOverdueYesterday": "{person}નો {name} ગઈકાલે સમાપ્ત થયો અને રિન્યૂ થયો નથી.",
+  "staffOverdueWeek": "{person}નો {name} એક અઠવાડિયા પહેલાં સમાપ્ત થયો અને હજુ રિન્યૂ થયો નથી.",
+  "staffOverdueMany": "સ્ટાફના {count} દસ્તાવેજો સમાપ્ત થયા છે અને રિન્યૂ થયા નથી: {names}."
 }

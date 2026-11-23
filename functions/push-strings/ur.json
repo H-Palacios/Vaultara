@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "میعاد ختم ہونے کی تاریخ بدل گئی",
   "sharedExpiryBody": "{person} نے {name} کی میعاد ختم ہونے کی تاریخ بدلی۔",
   "sharedDeletedTitle": "مشترکہ ریکارڈ حذف ہو گیا",
-  "sharedDeletedBody": "{person} نے {name} حذف کیا۔ اسے 30 دن تک حال ہی میں حذف شدہ سے بحال کیا جا سکتا ہے۔"
+  "sharedDeletedBody": "{person} نے {name} حذف کیا۔ اسے 30 دن تک حال ہی میں حذف شدہ سے بحال کیا جا سکتا ہے۔",
+  "remindBody": "{person} نے آپ کو {name} کی تجدید کی یاد دلائی۔",
+  "staffOverdueTitle": "عملے کی دستاویز ختم ہو گئی",
+  "staffOverdueYesterday": "{person} کی {name} کل ختم ہو گئی اور تجدید نہیں ہوئی۔",
+  "staffOverdueWeek": "{person} کی {name} ایک ہفتہ پہلے ختم ہو گئی اور ابھی تک تجدید نہیں ہوئی۔",
+  "staffOverdueMany": "عملے کی {count} دستاویزات ختم ہو گئی ہیں اور تجدید نہیں ہوئی: {names}۔"
 }

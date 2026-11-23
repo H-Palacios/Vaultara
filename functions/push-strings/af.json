@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Vervaldatum verander",
   "sharedExpiryBody": "{person} het die vervaldatum van {name} verander.",
   "sharedDeletedTitle": "Gedeelde rekord uitgevee",
-  "sharedDeletedBody": "{person} het {name} uitgevee. Dit kan vir 30 dae uit Onlangs uitgevee teruggesit word."
+  "sharedDeletedBody": "{person} het {name} uitgevee. Dit kan vir 30 dae uit Onlangs uitgevee teruggesit word.",
+  "remindBody": "{person} het jou herinner om {name} te hernu.",
+  "staffOverdueTitle": "Personeeldokument het verval",
+  "staffOverdueYesterday": "{name} vir {person} het gister verval en is nie hernu nie.",
+  "staffOverdueWeek": "{name} vir {person} het 'n week gelede verval en is steeds nie hernu nie.",
+  "staffOverdueMany": "{count} personeeldokumente het verval en is nie hernu nie: {names}."
 }

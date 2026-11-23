@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "காலாவதி தேதி மாறியது",
   "sharedExpiryBody": "{person} {name} இன் காலாவதி தேதியை மாற்றினார்.",
   "sharedDeletedTitle": "பகிர்ந்த பதிவு நீக்கப்பட்டது",
-  "sharedDeletedBody": "{person} {name} ஐ நீக்கினார். 30 நாட்கள் வரை சமீபத்தில் நீக்கியவை இலிருந்து மீட்டெடுக்கலாம்."
+  "sharedDeletedBody": "{person} {name} ஐ நீக்கினார். 30 நாட்கள் வரை சமீபத்தில் நீக்கியவை இலிருந்து மீட்டெடுக்கலாம்.",
+  "remindBody": "{name}-ஐப் புதுப்பிக்க {person} உங்களுக்கு நினைவூட்டினார்.",
+  "staffOverdueTitle": "பணியாளர் ஆவணம் காலாவதியானது",
+  "staffOverdueYesterday": "{person}-இன் {name} நேற்று காலாவதியானது, புதுப்பிக்கப்படவில்லை.",
+  "staffOverdueWeek": "{person}-இன் {name} ஒரு வாரம் முன்பு காலாவதியானது, இன்னும் புதுப்பிக்கப்படவில்லை.",
+  "staffOverdueMany": "{count} பணியாளர் ஆவணங்கள் காலாவதியாகி புதுப்பிக்கப்படவில்லை: {names}."
 }

@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Athraíodh an dáta éaga",
   "sharedExpiryBody": "D’athraigh {person} dáta éaga {name}.",
   "sharedDeletedTitle": "Scriosadh taifead comhroinnte",
-  "sharedDeletedBody": "Scrios {person} {name}. Is féidir é a athchóiriú ó Scriosta le déanaí go ceann 30 lá."
+  "sharedDeletedBody": "Scrios {person} {name}. Is féidir é a athchóiriú ó Scriosta le déanaí go ceann 30 lá.",
+  "remindBody": "Mheabhraigh {person} duit {name} a athnuachan.",
+  "staffOverdueTitle": "Chuaigh doiciméad fostaí in éag",
+  "staffOverdueYesterday": "Chuaigh {name} le haghaidh {person} in éag inné agus níor athnuadh é.",
+  "staffOverdueWeek": "Chuaigh {name} le haghaidh {person} in éag seachtain ó shin agus níor athnuadh fós é.",
+  "staffOverdueMany": "Chuaigh {count} doiciméad foirne in éag agus níor athnuadh iad: {names}."
 }

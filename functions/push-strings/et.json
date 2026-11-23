@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Aegumiskuupäev muutus",
   "sharedExpiryBody": "{person} muutis kirje {name} aegumiskuupäeva.",
   "sharedDeletedTitle": "Jagatud kirje kustutati",
-  "sharedDeletedBody": "{person} kustutas {name}. Selle saab 30 päeva jooksul taastada jaotisest Hiljuti kustutatud."
+  "sharedDeletedBody": "{person} kustutas {name}. Selle saab 30 päeva jooksul taastada jaotisest Hiljuti kustutatud.",
+  "remindBody": "{person} tuletas sulle meelde uuendada {name}.",
+  "staffOverdueTitle": "Töötaja dokument aegus",
+  "staffOverdueYesterday": "{person} {name} aegus eile ja seda pole uuendatud.",
+  "staffOverdueWeek": "{person} {name} aegus nädal tagasi ja seda pole ikka veel uuendatud.",
+  "staffOverdueMany": "{count} töötaja dokumenti aegusid ja neid pole uuendatud: {names}."
 }

@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Датата на изтичане е променена",
   "sharedExpiryBody": "{person} промени датата на изтичане на {name}.",
   "sharedDeletedTitle": "Споделен запис е изтрит",
-  "sharedDeletedBody": "{person} изтри {name}. Може да се възстанови от Наскоро изтрити в рамките на 30 дни."
+  "sharedDeletedBody": "{person} изтри {name}. Може да се възстанови от Наскоро изтрити в рамките на 30 дни.",
+  "remindBody": "{person} ви напомни да подновите {name}.",
+  "staffOverdueTitle": "Документ на служител е изтекъл",
+  "staffOverdueYesterday": "{name} на {person} изтече вчера и не е подновен.",
+  "staffOverdueWeek": "{name} на {person} изтече преди седмица и все още не е подновен.",
+  "staffOverdueMany": "{count} документа на служители са изтекли и не са подновени: {names}."
 }

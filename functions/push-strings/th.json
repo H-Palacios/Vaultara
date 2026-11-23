@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "วันหมดอายุเปลี่ยนแล้ว",
   "sharedExpiryBody": "{person} เปลี่ยนวันหมดอายุของ {name}",
   "sharedDeletedTitle": "รายการที่แชร์ถูกลบ",
-  "sharedDeletedBody": "{person} ลบ {name} แล้ว กู้คืนได้จาก ลบล่าสุด ภายใน 30 วัน"
+  "sharedDeletedBody": "{person} ลบ {name} แล้ว กู้คืนได้จาก ลบล่าสุด ภายใน 30 วัน",
+  "remindBody": "{person} เตือนให้คุณต่ออายุ {name}",
+  "staffOverdueTitle": "เอกสารพนักงานหมดอายุ",
+  "staffOverdueYesterday": "{name} ของ {person} หมดอายุเมื่อวานและยังไม่ได้ต่ออายุ",
+  "staffOverdueWeek": "{name} ของ {person} หมดอายุเมื่อสัปดาห์ก่อนและยังไม่ได้ต่ออายุ",
+  "staffOverdueMany": "เอกสารพนักงาน {count} รายการหมดอายุและยังไม่ได้ต่ออายุ: {names}"
 }

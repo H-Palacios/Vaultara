@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Fecha de vencimiento cambiada",
   "sharedExpiryBody": "{person} cambió la fecha de vencimiento de {name}.",
   "sharedDeletedTitle": "Registro compartido eliminado",
-  "sharedDeletedBody": "{person} eliminó {name}. Se puede recuperar desde Eliminados recientemente durante 30 días."
+  "sharedDeletedBody": "{person} eliminó {name}. Se puede recuperar desde Eliminados recientemente durante 30 días.",
+  "remindBody": "{person} te recordó renovar {name}.",
+  "staffOverdueTitle": "Venció un documento del personal",
+  "staffOverdueYesterday": "{name} de {person} venció ayer y no se ha renovado.",
+  "staffOverdueWeek": "{name} de {person} venció hace una semana y aún no se ha renovado.",
+  "staffOverdueMany": "Vencieron {count} documentos del personal y no se han renovado: {names}."
 }

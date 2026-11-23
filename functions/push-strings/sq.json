@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Data e skadimit ndryshoi",
   "sharedExpiryBody": "{person} ndryshoi datën e skadimit të {name}.",
   "sharedDeletedTitle": "Regjistrimi i përbashkët u fshi",
-  "sharedDeletedBody": "{person} fshiu {name}. Mund të rikthehet nga Të fshirat së fundi për 30 ditë."
+  "sharedDeletedBody": "{person} fshiu {name}. Mund të rikthehet nga Të fshirat së fundi për 30 ditë.",
+  "remindBody": "{person} të kujtoi të rinovosh {name}.",
+  "staffOverdueTitle": "Dokumenti i një punonjësi skadoi",
+  "staffOverdueYesterday": "{name} i {person} skadoi dje dhe nuk është rinovuar.",
+  "staffOverdueWeek": "{name} i {person} skadoi një javë më parë dhe ende nuk është rinovuar.",
+  "staffOverdueMany": "{count} dokumente të stafit kanë skaduar dhe nuk janë rinovuar: {names}."
 }

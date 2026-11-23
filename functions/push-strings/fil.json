@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Nagbago ang petsa ng pag-expire",
   "sharedExpiryBody": "Binago ni {person} ang petsa ng pag-expire ng {name}.",
   "sharedDeletedTitle": "Binura ang shared na rekord",
-  "sharedDeletedBody": "Binura ni {person} ang {name}. Puwede itong ibalik mula sa Kamakailang binura sa loob ng 30 araw."
+  "sharedDeletedBody": "Binura ni {person} ang {name}. Puwede itong ibalik mula sa Kamakailang binura sa loob ng 30 araw.",
+  "remindBody": "Pinaalalahanan ka ni {person} na i-renew ang {name}.",
+  "staffOverdueTitle": "Nag-expire ang dokumento ng staff",
+  "staffOverdueYesterday": "Nag-expire kahapon ang {name} ni {person} at hindi pa na-renew.",
+  "staffOverdueWeek": "Nag-expire isang linggo na ang nakalipas ang {name} ni {person} at hindi pa rin na-renew.",
+  "staffOverdueMany": "{count} dokumento ng staff ang nag-expire at hindi pa na-renew: {names}."
 }

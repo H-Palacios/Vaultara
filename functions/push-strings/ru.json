@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Срок действия изменён",
   "sharedExpiryBody": "{person}: изменён срок действия записи {name}.",
   "sharedDeletedTitle": "Общая запись удалена",
-  "sharedDeletedBody": "{person}: удалена запись {name}. Её можно восстановить из Недавно удалённых в течение 30 дней."
+  "sharedDeletedBody": "{person}: удалена запись {name}. Её можно восстановить из Недавно удалённых в течение 30 дней.",
+  "remindBody": "{person} напоминает вам продлить {name}.",
+  "staffOverdueTitle": "Истёк документ сотрудника",
+  "staffOverdueYesterday": "{name} ({person}) истёк вчера и не продлён.",
+  "staffOverdueWeek": "{name} ({person}) истёк неделю назад и до сих пор не продлён.",
+  "staffOverdueMany": "Истекли и не продлены документы сотрудников ({count}): {names}."
 }

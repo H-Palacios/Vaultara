@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "म्याद सकिने मिति बदलियो",
   "sharedExpiryBody": "{person} ले {name} को म्याद सकिने मिति बदल्नुभयो।",
   "sharedDeletedTitle": "साझा रेकर्ड मेटियो",
-  "sharedDeletedBody": "{person} ले {name} मेटाउनुभयो। ३० दिनसम्म हालै मेटिएकाबाट फर्काउन सकिन्छ।"
+  "sharedDeletedBody": "{person} ले {name} मेटाउनुभयो। ३० दिनसम्म हालै मेटिएकाबाट फर्काउन सकिन्छ।",
+  "remindBody": "{person} ले तपाईंलाई {name} नवीकरण गर्न सम्झाउनुभयो।",
+  "staffOverdueTitle": "कर्मचारीको कागजातको म्याद सकियो",
+  "staffOverdueYesterday": "{person} को {name} हिजो सकियो र नवीकरण भएको छैन।",
+  "staffOverdueWeek": "{person} को {name} एक हप्ता अघि सकियो र अझै नवीकरण भएको छैन।",
+  "staffOverdueMany": "कर्मचारीका {count} कागजातको म्याद सकियो र नवीकरण भएको छैन: {names}।"
 }

@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Дуусах огноо өөрчлөгдлөө",
   "sharedExpiryBody": "{person} {name}-ийн дуусах огноог өөрчиллөө.",
   "sharedDeletedTitle": "Хуваалцсан бичлэг устлаа",
-  "sharedDeletedBody": "{person} {name} устгалаа. 30 хоногийн дотор Саяхан устгасан хэсгээс сэргээж болно."
+  "sharedDeletedBody": "{person} {name} устгалаа. 30 хоногийн дотор Саяхан устгасан хэсгээс сэргээж болно.",
+  "remindBody": "{person} танд {name}-г шинэчлэхийг сануулсан.",
+  "staffOverdueTitle": "Ажилтны баримтын хугацаа дууслаа",
+  "staffOverdueYesterday": "{person}-ийн {name} өчигдөр дууссан бөгөөд шинэчлэгдээгүй байна.",
+  "staffOverdueWeek": "{person}-ийн {name} долоо хоногийн өмнө дууссан бөгөөд одоо болтол шинэчлэгдээгүй байна.",
+  "staffOverdueMany": "Ажилтны {count} баримтын хугацаа дууссан бөгөөд шинэчлэгдээгүй: {names}."
 }

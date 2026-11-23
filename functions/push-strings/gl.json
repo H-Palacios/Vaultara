@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Data de caducidade cambiada",
   "sharedExpiryBody": "{person} cambiou a data de caducidade de {name}.",
   "sharedDeletedTitle": "Rexistro compartido eliminado",
-  "sharedDeletedBody": "{person} eliminou {name}. Pódese recuperar desde Eliminados recentemente durante 30 días."
+  "sharedDeletedBody": "{person} eliminou {name}. Pódese recuperar desde Eliminados recentemente durante 30 días.",
+  "remindBody": "{person} lembrouche renovar {name}.",
+  "staffOverdueTitle": "Caducou un documento do persoal",
+  "staffOverdueYesterday": "{name} de {person} caducou onte e non se renovou.",
+  "staffOverdueWeek": "{name} de {person} caducou hai unha semana e aínda non se renovou.",
+  "staffOverdueMany": "Caducaron {count} documentos do persoal e non se renovaron: {names}."
 }

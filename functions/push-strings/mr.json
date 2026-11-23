@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "मुदत संपण्याची तारीख बदलली",
   "sharedExpiryBody": "{person} यांनी {name} ची मुदत संपण्याची तारीख बदलली.",
   "sharedDeletedTitle": "शेअर केलेली नोंद हटवली",
-  "sharedDeletedBody": "{person} यांनी {name} हटवले. 30 दिवसांपर्यंत अलीकडे हटवलेल्यांमधून परत आणता येईल."
+  "sharedDeletedBody": "{person} यांनी {name} हटवले. 30 दिवसांपर्यंत अलीकडे हटवलेल्यांमधून परत आणता येईल.",
+  "remindBody": "{person} यांनी तुम्हाला {name} चे नूतनीकरण करण्याची आठवण करून दिली.",
+  "staffOverdueTitle": "कर्मचाऱ्याचे कागदपत्र संपले",
+  "staffOverdueYesterday": "{person} यांचे {name} काल संपले आणि नूतनीकरण झाले नाही.",
+  "staffOverdueWeek": "{person} यांचे {name} एका आठवड्यापूर्वी संपले आणि अजूनही नूतनीकरण झाले नाही.",
+  "staffOverdueMany": "कर्मचाऱ्यांची {count} कागदपत्रे संपली आहेत आणि नूतनीकरण झाले नाही: {names}."
 }

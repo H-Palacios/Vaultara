@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "تغيّر تاريخ الانتهاء",
   "sharedExpiryBody": "غيّر {person} تاريخ انتهاء {name}.",
   "sharedDeletedTitle": "حُذف سجل مشترك",
-  "sharedDeletedBody": "حذف {person} {name}. يمكن استعادته من المحذوفة مؤخرًا خلال 30 يومًا."
+  "sharedDeletedBody": "حذف {person} {name}. يمكن استعادته من المحذوفة مؤخرًا خلال 30 يومًا.",
+  "remindBody": "ذكّرك {person} بتجديد {name}.",
+  "staffOverdueTitle": "انتهى مستند موظف",
+  "staffOverdueYesterday": "انتهى {name} الخاص بـ{person} أمس ولم يُجدَّد.",
+  "staffOverdueWeek": "انتهى {name} الخاص بـ{person} قبل أسبوع وما زال غير مجدد.",
+  "staffOverdueMany": "انتهت {count} من مستندات الموظفين ولم تُجدَّد: {names}."
 }

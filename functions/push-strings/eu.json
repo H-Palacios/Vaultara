@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Iraungitze-data aldatu da",
   "sharedExpiryBody": "{person}(e)k {name} erregistroaren iraungitze-data aldatu du.",
   "sharedDeletedTitle": "Partekatutako erregistroa ezabatu da",
-  "sharedDeletedBody": "{person}(e)k {name} ezabatu du. 30 egunez berreskura daiteke Duela gutxi ezabatuak atalean."
+  "sharedDeletedBody": "{person}(e)k {name} ezabatu du. 30 egunez berreskura daiteke Duela gutxi ezabatuak atalean.",
+  "remindBody": "{person}k {name} berritzeko gogorarazi dizu.",
+  "staffOverdueTitle": "Langile baten dokumentua iraungi da",
+  "staffOverdueYesterday": "{person}(r)en {name} atzo iraungi zen eta ez da berritu.",
+  "staffOverdueWeek": "{person}(r)en {name} duela astebete iraungi zen eta oraindik ez da berritu.",
+  "staffOverdueMany": "Langileen {count} dokumentu iraungi dira eta ez dira berritu: {names}."
 }

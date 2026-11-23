@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Derīguma termiņš mainīts",
   "sharedExpiryBody": "{person} mainīja {name} derīguma termiņu.",
   "sharedDeletedTitle": "Kopīgots ieraksts dzēsts",
-  "sharedDeletedBody": "{person} izdzēsa {name}. To var atjaunot no Nesen dzēstajiem 30 dienas."
+  "sharedDeletedBody": "{person} izdzēsa {name}. To var atjaunot no Nesen dzēstajiem 30 dienas.",
+  "remindBody": "{person} atgādina tev atjaunot {name}.",
+  "staffOverdueTitle": "Darbinieka dokumenta termiņš beidzies",
+  "staffOverdueYesterday": "{person} {name} termiņš beidzās vakar, un tas nav atjaunots.",
+  "staffOverdueWeek": "{person} {name} termiņš beidzās pirms nedēļas, un tas joprojām nav atjaunots.",
+  "staffOverdueMany": "{count} darbinieku dokumentiem beidzies termiņš, un tie nav atjaunoti: {names}."
 }

@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "د پای نیټه بدله شوه",
   "sharedExpiryBody": "{person} د {name} د پای نیټه بدله کړه.",
   "sharedDeletedTitle": "شریک ریکارډ ړنګ شو",
-  "sharedDeletedBody": "{person} {name} ړنګ کړ. تر 30 ورځو پورې له وروستیو ړنګ شویو بیرته راګرځول کیدی شي."
+  "sharedDeletedBody": "{person} {name} ړنګ کړ. تر 30 ورځو پورې له وروستیو ړنګ شویو بیرته راګرځول کیدی شي.",
+  "remindBody": "{person} تاسو ته د {name} د نوي کولو یادونه وکړه.",
+  "staffOverdueTitle": "د کارکوونکي سند پای ته ورسېد",
+  "staffOverdueYesterday": "د {person} {name} پرون پای ته ورسېد او نوی شوی نه دی.",
+  "staffOverdueWeek": "د {person} {name} یوه اونۍ مخکې پای ته ورسېد او لا هم نوی شوی نه دی.",
+  "staffOverdueMany": "د کارکوونکو {count} اسناد پای ته رسېدلي او نوي شوي نه دي: {names}."
 }

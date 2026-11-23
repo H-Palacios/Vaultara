@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Datum poteka spremenjen",
   "sharedExpiryBody": "{person}: spremenjen datum poteka zapisa {name}.",
   "sharedDeletedTitle": "Skupni zapis izbrisan",
-  "sharedDeletedBody": "{person}: izbrisan zapis {name}. Obnoviti ga je mogoče iz Nedavno izbrisanih v 30 dneh."
+  "sharedDeletedBody": "{person}: izbrisan zapis {name}. Obnoviti ga je mogoče iz Nedavno izbrisanih v 30 dneh.",
+  "remindBody": "{person} vas opominja, da obnovite {name}.",
+  "staffOverdueTitle": "Dokument zaposlenega je potekel",
+  "staffOverdueYesterday": "{name} za {person} je potekel včeraj in ni obnovljen.",
+  "staffOverdueWeek": "{name} za {person} je potekel pred tednom in še vedno ni obnovljen.",
+  "staffOverdueMany": "Poteklo je {count} dokumentov zaposlenih, ki niso obnovljeni: {names}."
 }

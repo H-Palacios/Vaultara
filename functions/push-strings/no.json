@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Utløpsdato endret",
   "sharedExpiryBody": "{person} endret utløpsdatoen for {name}.",
   "sharedDeletedTitle": "Delt oppføring slettet",
-  "sharedDeletedBody": "{person} slettet {name}. Den kan gjenopprettes fra Nylig slettet i 30 dager."
+  "sharedDeletedBody": "{person} slettet {name}. Den kan gjenopprettes fra Nylig slettet i 30 dager.",
+  "remindBody": "{person} minner deg om å fornye {name}.",
+  "staffOverdueTitle": "Ansattdokument har utløpt",
+  "staffOverdueYesterday": "{name} for {person} utløp i går og er ikke fornyet.",
+  "staffOverdueWeek": "{name} for {person} utløp for en uke siden og er fortsatt ikke fornyet.",
+  "staffOverdueMany": "{count} ansattdokumenter har utløpt og er ikke fornyet: {names}."
 }

@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "ვადა შეიცვალა",
   "sharedExpiryBody": "{person}-მა შეცვალა {name}-ის ვადა.",
   "sharedDeletedTitle": "საერთო ჩანაწერი წაიშალა",
-  "sharedDeletedBody": "{person}-მა წაშალა {name}. 30 დღის განმავლობაში შეიძლება აღდგეს ბოლოს წაშლილებიდან."
+  "sharedDeletedBody": "{person}-მა წაშალა {name}. 30 დღის განმავლობაში შეიძლება აღდგეს ბოლოს წაშლილებიდან.",
+  "remindBody": "{person}-მ შეგახსენათ {name}-ის განახლება.",
+  "staffOverdueTitle": "თანამშრომლის დოკუმენტს ვადა გაუვიდა",
+  "staffOverdueYesterday": "{person}-ის {name}-ს ვადა გუშინ გაუვიდა და არ განახლებულა.",
+  "staffOverdueWeek": "{person}-ის {name}-ს ვადა ერთი კვირის წინ გაუვიდა და ჯერ კიდევ არ განახლებულა.",
+  "staffOverdueMany": "თანამშრომლების {count} დოკუმენტს ვადა გაუვიდა და არ განახლებულა: {names}."
 }

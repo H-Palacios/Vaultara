@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Data di scadenza cambiata",
   "sharedExpiryBody": "{person} ha cambiato la data di scadenza di {name}.",
   "sharedDeletedTitle": "Documento condiviso eliminato",
-  "sharedDeletedBody": "{person} ha eliminato {name}. Si può ripristinare da Eliminati di recente per 30 giorni."
+  "sharedDeletedBody": "{person} ha eliminato {name}. Si può ripristinare da Eliminati di recente per 30 giorni.",
+  "remindBody": "{person} ti ricorda di rinnovare {name}.",
+  "staffOverdueTitle": "Documento di un dipendente scaduto",
+  "staffOverdueYesterday": "{name} di {person} è scaduto ieri e non è stato rinnovato.",
+  "staffOverdueWeek": "{name} di {person} è scaduto una settimana fa e non è ancora stato rinnovato.",
+  "staffOverdueMany": "{count} documenti del personale sono scaduti e non sono stati rinnovati: {names}."
 }

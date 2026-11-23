@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Son kullanma tarihi değişti",
   "sharedExpiryBody": "{person}, {name} kaydının son kullanma tarihini değiştirdi.",
   "sharedDeletedTitle": "Paylaşılan kayıt silindi",
-  "sharedDeletedBody": "{person}, {name} kaydını sildi. 30 gün boyunca Son silinenler bölümünden geri yüklenebilir."
+  "sharedDeletedBody": "{person}, {name} kaydını sildi. 30 gün boyunca Son silinenler bölümünden geri yüklenebilir.",
+  "remindBody": "{person} sana {name} belgesini yenilemeni hatırlattı.",
+  "staffOverdueTitle": "Personel belgesinin süresi doldu",
+  "staffOverdueYesterday": "{person} için {name} dün sona erdi ve yenilenmedi.",
+  "staffOverdueWeek": "{person} için {name} bir hafta önce sona erdi ve hâlâ yenilenmedi.",
+  "staffOverdueMany": "{count} personel belgesinin süresi doldu ve yenilenmedi: {names}."
 }

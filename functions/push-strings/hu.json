@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Megváltozott a lejárati dátum",
   "sharedExpiryBody": "{person} módosította ennek a lejárati dátumát: {name}.",
   "sharedDeletedTitle": "Megosztott bejegyzés törölve",
-  "sharedDeletedBody": "{person} törölte: {name}. 30 napig visszaállítható a Nemrég törölt elemek közül."
+  "sharedDeletedBody": "{person} törölte: {name}. 30 napig visszaállítható a Nemrég törölt elemek közül.",
+  "remindBody": "{person} emlékeztet, hogy újítsd meg ezt: {name}.",
+  "staffOverdueTitle": "Lejárt egy munkatárs dokumentuma",
+  "staffOverdueYesterday": "{person} – {name} tegnap lejárt, és nem újították meg.",
+  "staffOverdueWeek": "{person} – {name} egy hete lejárt, és még mindig nincs megújítva.",
+  "staffOverdueMany": "{count} munkatársi dokumentum lejárt és nincs megújítva: {names}."
 }

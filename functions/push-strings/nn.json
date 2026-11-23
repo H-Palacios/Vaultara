@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Utløpsdato endra",
   "sharedExpiryBody": "{person} endra utløpsdatoen for {name}.",
   "sharedDeletedTitle": "Delt oppføring sletta",
-  "sharedDeletedBody": "{person} sletta {name}. Ho kan gjenopprettast frå Nyleg sletta i 30 dagar."
+  "sharedDeletedBody": "{person} sletta {name}. Ho kan gjenopprettast frå Nyleg sletta i 30 dagar.",
+  "remindBody": "{person} minner deg om å fornye {name}.",
+  "staffOverdueTitle": "Tilsettdokument har gått ut",
+  "staffOverdueYesterday": "{name} for {person} gjekk ut i går og er ikkje fornya.",
+  "staffOverdueWeek": "{name} for {person} gjekk ut for ei veke sidan og er framleis ikkje fornya.",
+  "staffOverdueMany": "{count} tilsettdokument har gått ut og er ikkje fornya: {names}."
 }

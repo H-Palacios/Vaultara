@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "കാലഹരണ തീയതി മാറി",
   "sharedExpiryBody": "{person} {name}-ന്റെ കാലഹരണ തീയതി മാറ്റി.",
   "sharedDeletedTitle": "പങ്കിട്ട റെക്കോർഡ് ഇല്ലാതാക്കി",
-  "sharedDeletedBody": "{person} {name} ഇല്ലാതാക്കി. 30 ദിവസത്തേക്ക് അടുത്തിടെ ഇല്ലാതാക്കിയവയിൽ നിന്ന് തിരികെ കൊണ്ടുവരാം."
+  "sharedDeletedBody": "{person} {name} ഇല്ലാതാക്കി. 30 ദിവസത്തേക്ക് അടുത്തിടെ ഇല്ലാതാക്കിയവയിൽ നിന്ന് തിരികെ കൊണ്ടുവരാം.",
+  "remindBody": "{name} പുതുക്കാൻ {person} നിങ്ങളെ ഓർമ്മിപ്പിച്ചു.",
+  "staffOverdueTitle": "ജീവനക്കാരന്റെ രേഖ കാലഹരണപ്പെട്ടു",
+  "staffOverdueYesterday": "{person}-ന്റെ {name} ഇന്നലെ കാലഹരണപ്പെട്ടു, പുതുക്കിയിട്ടില്ല.",
+  "staffOverdueWeek": "{person}-ന്റെ {name} ഒരാഴ്ച മുമ്പ് കാലഹരണപ്പെട്ടു, ഇപ്പോഴും പുതുക്കിയിട്ടില്ല.",
+  "staffOverdueMany": "ജീവനക്കാരുടെ {count} രേഖകൾ കാലഹരണപ്പെട്ടു, പുതുക്കിയിട്ടില്ല: {names}."
 }

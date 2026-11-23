@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Muddat o‘zgardi",
   "sharedExpiryBody": "{person} {name} muddatini o‘zgartirdi.",
   "sharedDeletedTitle": "Umumiy yozuv o‘chirildi",
-  "sharedDeletedBody": "{person} {name} o‘chirdi. Uni 30 kun ichida Yaqinda o‘chirilganlardan tiklash mumkin."
+  "sharedDeletedBody": "{person} {name} o‘chirdi. Uni 30 kun ichida Yaqinda o‘chirilganlardan tiklash mumkin.",
+  "remindBody": "{person} sizga {name}ni yangilashni eslatdi.",
+  "staffOverdueTitle": "Xodim hujjatining muddati tugadi",
+  "staffOverdueYesterday": "{person} uchun {name} kecha tugadi va yangilanmagan.",
+  "staffOverdueWeek": "{person} uchun {name} bir hafta oldin tugadi va hali ham yangilanmagan.",
+  "staffOverdueMany": "{count} ta xodim hujjatining muddati tugadi va yangilanmagan: {names}."
 }

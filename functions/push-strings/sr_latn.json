@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Datum isteka promenjen",
   "sharedExpiryBody": "{person}: promenjen datum isteka za {name}.",
   "sharedDeletedTitle": "Zajednički zapis izbrisan",
-  "sharedDeletedBody": "{person}: izbrisan zapis {name}. Može se vratiti iz Nedavno izbrisanog u roku od 30 dana."
+  "sharedDeletedBody": "{person}: izbrisan zapis {name}. Može se vratiti iz Nedavno izbrisanog u roku od 30 dana.",
+  "remindBody": "{person} vas podseća da obnovite {name}.",
+  "staffOverdueTitle": "Dokument zaposlenog je istekao",
+  "staffOverdueYesterday": "{name} za {person} je istekao juče i nije obnovljen.",
+  "staffOverdueWeek": "{name} za {person} je istekao pre nedelju dana i još nije obnovljen.",
+  "staffOverdueMany": "Isteklo je {count} dokumenata zaposlenih koji nisu obnovljeni: {names}."
 }

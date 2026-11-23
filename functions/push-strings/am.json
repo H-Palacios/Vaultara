@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "የማብቂያ ቀን ተቀይሯል",
   "sharedExpiryBody": "{person} የ{name}ን የማብቂያ ቀን ቀይሯል።",
   "sharedDeletedTitle": "የተጋራ መዝገብ ተሰርዟል",
-  "sharedDeletedBody": "{person} {name}ን ሰርዟል። ለ30 ቀናት ከቅርብ ጊዜ የተሰረዙ ውስጥ መመለስ ይቻላል።"
+  "sharedDeletedBody": "{person} {name}ን ሰርዟል። ለ30 ቀናት ከቅርብ ጊዜ የተሰረዙ ውስጥ መመለስ ይቻላል።",
+  "remindBody": "{person} {name}ን እንዲያድሱ አስታወሰዎት።",
+  "staffOverdueTitle": "የሠራተኛ ሰነድ ጊዜው አልፏል",
+  "staffOverdueYesterday": "የ{person} {name} ትናንት ጊዜው አልፏል እና አልታደሰም።",
+  "staffOverdueWeek": "የ{person} {name} ከአንድ ሳምንት በፊት ጊዜው አልፏል እና አሁንም አልታደሰም።",
+  "staffOverdueMany": "{count} የሠራተኛ ሰነዶች ጊዜያቸው አልፏል እና አልታደሱም፦ {names}።"
 }

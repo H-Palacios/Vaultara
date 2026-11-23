@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Ablaufdatum geändert",
   "sharedExpiryBody": "{person} hat das Ablaufdatum von {name} geändert.",
   "sharedDeletedTitle": "Geteilter Eintrag gelöscht",
-  "sharedDeletedBody": "{person} hat {name} gelöscht. Er kann 30 Tage lang unter Zuletzt gelöscht wiederhergestellt werden."
+  "sharedDeletedBody": "{person} hat {name} gelöscht. Er kann 30 Tage lang unter Zuletzt gelöscht wiederhergestellt werden.",
+  "remindBody": "{person} erinnert dich daran, {name} zu verlängern.",
+  "staffOverdueTitle": "Dokument eines Mitarbeitenden abgelaufen",
+  "staffOverdueYesterday": "{name} von {person} ist gestern abgelaufen und wurde nicht verlängert.",
+  "staffOverdueWeek": "{name} von {person} ist vor einer Woche abgelaufen und wurde noch immer nicht verlängert.",
+  "staffOverdueMany": "{count} Dokumente von Mitarbeitenden sind abgelaufen und nicht verlängert: {names}."
 }

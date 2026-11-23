@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Tanggal kedaluwarsa diubah",
   "sharedExpiryBody": "{person} mengubah tanggal kedaluwarsa {name}.",
   "sharedDeletedTitle": "Catatan bersama dihapus",
-  "sharedDeletedBody": "{person} menghapus {name}. Catatan ini bisa dipulihkan dari Baru dihapus selama 30 hari."
+  "sharedDeletedBody": "{person} menghapus {name}. Catatan ini bisa dipulihkan dari Baru dihapus selama 30 hari.",
+  "remindBody": "{person} mengingatkan Anda untuk memperpanjang {name}.",
+  "staffOverdueTitle": "Dokumen staf habis masa berlakunya",
+  "staffOverdueYesterday": "{name} milik {person} habis kemarin dan belum diperpanjang.",
+  "staffOverdueWeek": "{name} milik {person} habis seminggu lalu dan masih belum diperpanjang.",
+  "staffOverdueMany": "{count} dokumen staf telah habis dan belum diperpanjang: {names}."
 }

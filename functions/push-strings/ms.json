@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Tarikh tamat diubah",
   "sharedExpiryBody": "{person} mengubah tarikh tamat {name}.",
   "sharedDeletedTitle": "Rekod kongsi dipadam",
-  "sharedDeletedBody": "{person} memadam {name}. Ia boleh dipulihkan daripada Dipadam baru-baru ini selama 30 hari."
+  "sharedDeletedBody": "{person} memadam {name}. Ia boleh dipulihkan daripada Dipadam baru-baru ini selama 30 hari.",
+  "remindBody": "{person} mengingatkan anda untuk memperbaharui {name}.",
+  "staffOverdueTitle": "Dokumen kakitangan telah tamat tempoh",
+  "staffOverdueYesterday": "{name} untuk {person} tamat semalam dan belum diperbaharui.",
+  "staffOverdueWeek": "{name} untuk {person} tamat seminggu lalu dan masih belum diperbaharui.",
+  "staffOverdueMany": "{count} dokumen kakitangan telah tamat tempoh dan belum diperbaharui: {names}."
 }

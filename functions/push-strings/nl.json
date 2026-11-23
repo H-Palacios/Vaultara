@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Vervaldatum gewijzigd",
   "sharedExpiryBody": "{person} heeft de vervaldatum van {name} gewijzigd.",
   "sharedDeletedTitle": "Gedeeld item verwijderd",
-  "sharedDeletedBody": "{person} heeft {name} verwijderd. Het kan 30 dagen worden teruggezet via Recent verwijderd."
+  "sharedDeletedBody": "{person} heeft {name} verwijderd. Het kan 30 dagen worden teruggezet via Recent verwijderd.",
+  "remindBody": "{person} herinnert je eraan om {name} te verlengen.",
+  "staffOverdueTitle": "Document van medewerker verlopen",
+  "staffOverdueYesterday": "{name} van {person} is gisteren verlopen en niet verlengd.",
+  "staffOverdueWeek": "{name} van {person} is een week geleden verlopen en nog steeds niet verlengd.",
+  "staffOverdueMany": "{count} documenten van medewerkers zijn verlopen en niet verlengd: {names}."
 }

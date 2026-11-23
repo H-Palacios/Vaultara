@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Date d’expiration modifiée",
   "sharedExpiryBody": "{person} a modifié la date d’expiration de {name}.",
   "sharedDeletedTitle": "Élément partagé supprimé",
-  "sharedDeletedBody": "{person} a supprimé {name}. Il peut être restauré depuis Récemment supprimés pendant 30 jours."
+  "sharedDeletedBody": "{person} a supprimé {name}. Il peut être restauré depuis Récemment supprimés pendant 30 jours.",
+  "remindBody": "{person} vous rappelle de renouveler {name}.",
+  "staffOverdueTitle": "Document d'un employé expiré",
+  "staffOverdueYesterday": "{name} de {person} a expiré hier et n'a pas été renouvelé.",
+  "staffOverdueWeek": "{name} de {person} a expiré il y a une semaine et n'est toujours pas renouvelé.",
+  "staffOverdueMany": "{count} documents du personnel ont expiré sans être renouvelés : {names}."
 }

@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Galiojimo data pakeista",
   "sharedExpiryBody": "{person} pakeitė {name} galiojimo datą.",
   "sharedDeletedTitle": "Bendrinamas įrašas ištrintas",
-  "sharedDeletedBody": "{person} ištrynė {name}. Jį galima atkurti iš Neseniai ištrintų 30 dienų."
+  "sharedDeletedBody": "{person} ištrynė {name}. Jį galima atkurti iš Neseniai ištrintų 30 dienų.",
+  "remindBody": "{person} primena atnaujinti {name}.",
+  "staffOverdueTitle": "Baigėsi darbuotojo dokumento galiojimas",
+  "staffOverdueYesterday": "{person} {name} galiojimas baigėsi vakar ir jis neatnaujintas.",
+  "staffOverdueWeek": "{person} {name} galiojimas baigėsi prieš savaitę ir jis vis dar neatnaujintas.",
+  "staffOverdueMany": "Baigėsi {count} darbuotojų dokumentų galiojimas ir jie neatnaujinti: {names}."
 }

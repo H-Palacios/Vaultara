@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "تاریخ انقضا تغییر کرد",
   "sharedExpiryBody": "{person} تاریخ انقضای {name} را تغییر داد.",
   "sharedDeletedTitle": "مورد مشترک حذف شد",
-  "sharedDeletedBody": "{person} {name} را حذف کرد. تا ۳۰ روز از «اخیراً حذف‌شده» قابل بازگرداندن است."
+  "sharedDeletedBody": "{person} {name} را حذف کرد. تا ۳۰ روز از «اخیراً حذف‌شده» قابل بازگرداندن است.",
+  "remindBody": "{person} به شما یادآوری کرد {name} را تمدید کنید.",
+  "staffOverdueTitle": "مدرک کارمند منقضی شد",
+  "staffOverdueYesterday": "{name} متعلق به {person} دیروز منقضی شد و تمدید نشده است.",
+  "staffOverdueWeek": "{name} متعلق به {person} یک هفته پیش منقضی شد و هنوز تمدید نشده است.",
+  "staffOverdueMany": "{count} مدرک کارمند منقضی شده و تمدید نشده‌اند: {names}."
 }

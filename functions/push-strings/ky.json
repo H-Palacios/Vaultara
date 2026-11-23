@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Мөөнөт өзгөрдү",
   "sharedExpiryBody": "{person} {name} мөөнөтүн өзгөрттү.",
   "sharedDeletedTitle": "Жалпы жазуу өчүрүлдү",
-  "sharedDeletedBody": "{person} {name} өчүрдү. Аны 30 күн ичинде Жакында өчүрүлгөндөрдөн калыбына келтирсе болот."
+  "sharedDeletedBody": "{person} {name} өчүрдү. Аны 30 күн ичинде Жакында өчүрүлгөндөрдөн калыбына келтирсе болот.",
+  "remindBody": "{person} сизге {name} жаңылоону эскертти.",
+  "staffOverdueTitle": "Кызматкердин документинин мөөнөтү бүттү",
+  "staffOverdueYesterday": "{person} үчүн {name} кечээ бүттү жана жаңыланган жок.",
+  "staffOverdueWeek": "{person} үчүн {name} бир жума мурун бүттү жана дагы эле жаңыланган жок.",
+  "staffOverdueMany": "{count} кызматкер документинин мөөнөтү бүттү жана жаңыланган жок: {names}."
 }

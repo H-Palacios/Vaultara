@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Data de expirare s-a schimbat",
   "sharedExpiryBody": "{person} a schimbat data de expirare pentru {name}.",
   "sharedDeletedTitle": "Înregistrare comună ștearsă",
-  "sharedDeletedBody": "{person} a șters {name}. Poate fi restaurată din Șterse recent timp de 30 de zile."
+  "sharedDeletedBody": "{person} a șters {name}. Poate fi restaurată din Șterse recent timp de 30 de zile.",
+  "remindBody": "{person} ți-a amintit să reînnoiești {name}.",
+  "staffOverdueTitle": "Documentul unui angajat a expirat",
+  "staffOverdueYesterday": "{name} pentru {person} a expirat ieri și nu a fost reînnoit.",
+  "staffOverdueWeek": "{name} pentru {person} a expirat acum o săptămână și încă nu a fost reînnoit.",
+  "staffOverdueMany": "{count} documente ale angajaților au expirat și nu au fost reînnoite: {names}."
 }

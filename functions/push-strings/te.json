@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "గడువు తేదీ మారింది",
   "sharedExpiryBody": "{person} {name} గడువు తేదీని మార్చారు.",
   "sharedDeletedTitle": "షేర్ చేసిన రికార్డ్ తొలగించబడింది",
-  "sharedDeletedBody": "{person} {name} ను తొలగించారు. 30 రోజుల వరకు ఇటీవల తొలగించినవి నుండి తిరిగి తేవచ్చు."
+  "sharedDeletedBody": "{person} {name} ను తొలగించారు. 30 రోజుల వరకు ఇటీవల తొలగించినవి నుండి తిరిగి తేవచ్చు.",
+  "remindBody": "{name}ను పునరుద్ధరించమని {person} మీకు గుర్తుచేశారు.",
+  "staffOverdueTitle": "సిబ్బంది పత్రం గడువు ముగిసింది",
+  "staffOverdueYesterday": "{person} యొక్క {name} నిన్న గడువు ముగిసింది, పునరుద్ధరించలేదు.",
+  "staffOverdueWeek": "{person} యొక్క {name} వారం క్రితం గడువు ముగిసింది, ఇంకా పునరుద్ధరించలేదు.",
+  "staffOverdueMany": "{count} సిబ్బంది పత్రాల గడువు ముగిసింది, పునరుద్ధరించలేదు: {names}."
 }

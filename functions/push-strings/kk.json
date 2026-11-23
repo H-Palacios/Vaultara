@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Мерзім өзгерді",
   "sharedExpiryBody": "{person} {name} мерзімін өзгертті.",
   "sharedDeletedTitle": "Ортақ жазба жойылды",
-  "sharedDeletedBody": "{person} {name} жойды. Оны 30 күн ішінде Жақында жойылғандардан қалпына келтіруге болады."
+  "sharedDeletedBody": "{person} {name} жойды. Оны 30 күн ішінде Жақында жойылғандардан қалпына келтіруге болады.",
+  "remindBody": "{person} сізге {name} жаңартуды еске салды.",
+  "staffOverdueTitle": "Қызметкер құжатының мерзімі бітті",
+  "staffOverdueYesterday": "{person} үшін {name} кеше бітті және жаңартылмады.",
+  "staffOverdueWeek": "{person} үшін {name} бір апта бұрын бітті және әлі жаңартылмады.",
+  "staffOverdueMany": "{count} қызметкер құжатының мерзімі бітті және жаңартылмады: {names}."
 }

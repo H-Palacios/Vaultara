@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "ਮਿਆਦ ਪੁੱਗਣ ਦੀ ਤਾਰੀਖ ਬਦਲੀ",
   "sharedExpiryBody": "{person} ਨੇ {name} ਦੀ ਮਿਆਦ ਪੁੱਗਣ ਦੀ ਤਾਰੀਖ ਬਦਲੀ।",
   "sharedDeletedTitle": "ਸਾਂਝਾ ਰਿਕਾਰਡ ਮਿਟਾਇਆ ਗਿਆ",
-  "sharedDeletedBody": "{person} ਨੇ {name} ਮਿਟਾਇਆ। ਇਸਨੂੰ 30 ਦਿਨਾਂ ਤੱਕ ਹਾਲ ਹੀ ਵਿੱਚ ਮਿਟਾਏ ਤੋਂ ਵਾਪਸ ਲਿਆਂਦਾ ਜਾ ਸਕਦਾ ਹੈ।"
+  "sharedDeletedBody": "{person} ਨੇ {name} ਮਿਟਾਇਆ। ਇਸਨੂੰ 30 ਦਿਨਾਂ ਤੱਕ ਹਾਲ ਹੀ ਵਿੱਚ ਮਿਟਾਏ ਤੋਂ ਵਾਪਸ ਲਿਆਂਦਾ ਜਾ ਸਕਦਾ ਹੈ।",
+  "remindBody": "{person} ਨੇ ਤੁਹਾਨੂੰ {name} ਨਵਿਆਉਣ ਦੀ ਯਾਦ ਦਿਵਾਈ।",
+  "staffOverdueTitle": "ਸਟਾਫ਼ ਦਾ ਦਸਤਾਵੇਜ਼ ਖ਼ਤਮ ਹੋ ਗਿਆ",
+  "staffOverdueYesterday": "{person} ਦਾ {name} ਕੱਲ੍ਹ ਖ਼ਤਮ ਹੋ ਗਿਆ ਅਤੇ ਨਵਿਆਇਆ ਨਹੀਂ ਗਿਆ।",
+  "staffOverdueWeek": "{person} ਦਾ {name} ਇੱਕ ਹਫ਼ਤਾ ਪਹਿਲਾਂ ਖ਼ਤਮ ਹੋ ਗਿਆ ਅਤੇ ਅਜੇ ਵੀ ਨਵਿਆਇਆ ਨਹੀਂ ਗਿਆ।",
+  "staffOverdueMany": "ਸਟਾਫ਼ ਦੇ {count} ਦਸਤਾਵੇਜ਼ ਖ਼ਤਮ ਹੋ ਗਏ ਹਨ ਅਤੇ ਨਵਿਆਏ ਨਹੀਂ ਗਏ: {names}।"
 }

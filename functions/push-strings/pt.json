@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Data de vencimento alterada",
   "sharedExpiryBody": "{person} alterou a data de vencimento de {name}.",
   "sharedDeletedTitle": "Registro compartilhado excluído",
-  "sharedDeletedBody": "{person} excluiu {name}. Ele pode ser restaurado em Excluídos recentemente por 30 dias."
+  "sharedDeletedBody": "{person} excluiu {name}. Ele pode ser restaurado em Excluídos recentemente por 30 dias.",
+  "remindBody": "{person} lembrou-o de renovar {name}.",
+  "staffOverdueTitle": "Documento de um funcionário expirou",
+  "staffOverdueYesterday": "{name} de {person} expirou ontem e não foi renovado.",
+  "staffOverdueWeek": "{name} de {person} expirou há uma semana e ainda não foi renovado.",
+  "staffOverdueMany": "{count} documentos do pessoal expiraram e não foram renovados: {names}."
 }

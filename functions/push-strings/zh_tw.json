@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "到期日已更改",
   "sharedExpiryBody": "{person} 更改了 {name} 的到期日。",
   "sharedDeletedTitle": "共享記錄已刪除",
-  "sharedDeletedBody": "{person} 刪除了 {name}。30 天內可從「最近刪除」中復原。"
+  "sharedDeletedBody": "{person} 刪除了 {name}。30 天內可從「最近刪除」中復原。",
+  "remindBody": "{person} 提醒你續約 {name}。",
+  "staffOverdueTitle": "員工文件已過期",
+  "staffOverdueYesterday": "{person} 的 {name} 昨天已過期，尚未續約。",
+  "staffOverdueWeek": "{person} 的 {name} 一週前已過期，仍未續約。",
+  "staffOverdueMany": "{count} 份員工文件已過期且未續約：{names}。"
 }

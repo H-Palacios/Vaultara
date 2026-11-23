@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "An canza ranar ƙarewa",
   "sharedExpiryBody": "{person} ya canza ranar ƙarewar {name}.",
   "sharedDeletedTitle": "An goge rikodin da aka raba",
-  "sharedDeletedBody": "{person} ya goge {name}. Ana iya dawo da shi daga Waɗanda aka goge kwanan nan cikin kwanaki 30."
+  "sharedDeletedBody": "{person} ya goge {name}. Ana iya dawo da shi daga Waɗanda aka goge kwanan nan cikin kwanaki 30.",
+  "remindBody": "{person} ya tunatar da kai ka sabunta {name}.",
+  "staffOverdueTitle": "Takardar ma'aikaci ta ƙare",
+  "staffOverdueYesterday": "{name} na {person} ya ƙare jiya kuma ba a sabunta shi ba.",
+  "staffOverdueWeek": "{name} na {person} ya ƙare mako guda da ya wuce kuma har yanzu ba a sabunta shi ba.",
+  "staffOverdueMany": "Takardun ma'aikata {count} sun ƙare kuma ba a sabunta su ba: {names}."
 }

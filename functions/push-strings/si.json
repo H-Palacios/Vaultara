@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "කල් ඉකුත් දිනය වෙනස් විය",
   "sharedExpiryBody": "{person} {name} හි කල් ඉකුත් දිනය වෙනස් කළා.",
   "sharedDeletedTitle": "බෙදාගත් වාර්තාව මකා දැමිණි",
-  "sharedDeletedBody": "{person} {name} මකා දැමුවා. දින 30ක් තුළ මෑතදී මැකූ ඒවායින් ප්‍රතිසාධනය කළ හැක."
+  "sharedDeletedBody": "{person} {name} මකා දැමුවා. දින 30ක් තුළ මෑතදී මැකූ ඒවායින් ප්‍රතිසාධනය කළ හැක.",
+  "remindBody": "{name} අලුත් කිරීමට {person} ඔබට සිහිපත් කළා.",
+  "staffOverdueTitle": "කාර්ය මණ්ඩල ලේඛනයක් කල් ඉකුත් විය",
+  "staffOverdueYesterday": "{person} ගේ {name} ඊයේ කල් ඉකුත් වූ අතර අලුත් කර නැත.",
+  "staffOverdueWeek": "{person} ගේ {name} සතියකට පෙර කල් ඉකුත් වූ අතර තවමත් අලුත් කර නැත.",
+  "staffOverdueMany": "කාර්ය මණ්ඩල ලේඛන {count}ක් කල් ඉකුත් වී ඇති අතර අලුත් කර නැත: {names}."
 }

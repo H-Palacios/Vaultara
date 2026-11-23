@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Ngày hết hạn đã thay đổi",
   "sharedExpiryBody": "{person} đã thay đổi ngày hết hạn của {name}.",
   "sharedDeletedTitle": "Bản ghi chia sẻ đã bị xóa",
-  "sharedDeletedBody": "{person} đã xóa {name}. Có thể khôi phục từ Đã xóa gần đây trong 30 ngày."
+  "sharedDeletedBody": "{person} đã xóa {name}. Có thể khôi phục từ Đã xóa gần đây trong 30 ngày.",
+  "remindBody": "{person} nhắc bạn gia hạn {name}.",
+  "staffOverdueTitle": "Giấy tờ của nhân viên đã hết hạn",
+  "staffOverdueYesterday": "{name} của {person} đã hết hạn hôm qua và chưa được gia hạn.",
+  "staffOverdueWeek": "{name} của {person} đã hết hạn một tuần trước và vẫn chưa được gia hạn.",
+  "staffOverdueMany": "{count} giấy tờ của nhân viên đã hết hạn và chưa được gia hạn: {names}."
 }

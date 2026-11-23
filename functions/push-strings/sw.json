@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Tarehe ya kuisha imebadilika",
   "sharedExpiryBody": "{person} amebadilisha tarehe ya kuisha ya {name}.",
   "sharedDeletedTitle": "Rekodi inayoshirikiwa imefutwa",
-  "sharedDeletedBody": "{person} amefuta {name}. Inaweza kurejeshwa kutoka Zilizofutwa hivi karibuni kwa siku 30."
+  "sharedDeletedBody": "{person} amefuta {name}. Inaweza kurejeshwa kutoka Zilizofutwa hivi karibuni kwa siku 30.",
+  "remindBody": "{person} amekukumbusha usasishe {name}.",
+  "staffOverdueTitle": "Hati ya mfanyakazi imeisha",
+  "staffOverdueYesterday": "{name} ya {person} iliisha jana na haijasasishwa.",
+  "staffOverdueWeek": "{name} ya {person} iliisha wiki moja iliyopita na bado haijasasishwa.",
+  "staffOverdueMany": "Hati {count} za wafanyakazi zimeisha na hazijasasishwa: {names}."
 }

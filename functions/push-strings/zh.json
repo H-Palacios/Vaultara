@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "到期日已更改",
   "sharedExpiryBody": "{person} 更改了 {name} 的到期日。",
   "sharedDeletedTitle": "共享记录已删除",
-  "sharedDeletedBody": "{person} 删除了 {name}。30 天内可从“最近删除”中恢复。"
+  "sharedDeletedBody": "{person} 删除了 {name}。30 天内可从“最近删除”中恢复。",
+  "remindBody": "{person} 提醒你续期 {name}。",
+  "staffOverdueTitle": "员工证件已过期",
+  "staffOverdueYesterday": "{person} 的 {name} 昨天已过期，尚未续期。",
+  "staffOverdueWeek": "{person} 的 {name} 一周前已过期，仍未续期。",
+  "staffOverdueMany": "{count} 份员工证件已过期且未续期：{names}。"
 }

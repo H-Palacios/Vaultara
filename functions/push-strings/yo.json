@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Ọjọ́ ìparí yí padà",
   "sharedExpiryBody": "{person} yí ọjọ́ ìparí {name} padà.",
   "sharedDeletedTitle": "A ti pa ìgbasilẹ̀ tí a pín rẹ́",
-  "sharedDeletedBody": "{person} pa {name} rẹ́. A lè dá a padà láti Àwọn tí a pa rẹ́ láìpẹ́ fún ọjọ́ 30."
+  "sharedDeletedBody": "{person} pa {name} rẹ́. A lè dá a padà láti Àwọn tí a pa rẹ́ láìpẹ́ fún ọjọ́ 30.",
+  "remindBody": "{person} rán ọ létí láti sọ {name} dọ̀tun.",
+  "staffOverdueTitle": "Ìwé òṣìṣẹ́ kan ti parí",
+  "staffOverdueYesterday": "{name} ti {person} parí lánàá, kò sì tíì di sísọdọ̀tun.",
+  "staffOverdueWeek": "{name} ti {person} parí ní ọ̀sẹ̀ kan sẹ́yìn, kò sì tíì di sísọdọ̀tun.",
+  "staffOverdueMany": "Ìwé òṣìṣẹ́ {count} ti parí, wọn kò sì tíì di sísọdọ̀tun: {names}."
 }

@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Data de venciment canviada",
   "sharedExpiryBody": "{person} ha canviat la data de venciment de {name}.",
   "sharedDeletedTitle": "Registre compartit eliminat",
-  "sharedDeletedBody": "{person} ha eliminat {name}. Es pot recuperar des d’Eliminats recentment durant 30 dies."
+  "sharedDeletedBody": "{person} ha eliminat {name}. Es pot recuperar des d’Eliminats recentment durant 30 dies.",
+  "remindBody": "{person} t'ha recordat que renovis {name}.",
+  "staffOverdueTitle": "Ha caducat un document del personal",
+  "staffOverdueYesterday": "{name} de {person} va caducar ahir i no s'ha renovat.",
+  "staffOverdueWeek": "{name} de {person} va caducar fa una setmana i encara no s'ha renovat.",
+  "staffOverdueMany": "Han caducat {count} documents del personal i no s'han renovat: {names}."
 }

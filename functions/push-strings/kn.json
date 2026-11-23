@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "ಮುಕ್ತಾಯ ದಿನಾಂಕ ಬದಲಾಗಿದೆ",
   "sharedExpiryBody": "{person} {name} ನ ಮುಕ್ತಾಯ ದಿನಾಂಕ ಬದಲಿಸಿದ್ದಾರೆ.",
   "sharedDeletedTitle": "ಹಂಚಿದ ದಾಖಲೆ ಅಳಿಸಲಾಗಿದೆ",
-  "sharedDeletedBody": "{person} {name} ಅಳಿಸಿದ್ದಾರೆ. 30 ದಿನಗಳವರೆಗೆ ಇತ್ತೀಚೆಗೆ ಅಳಿಸಿದವುಗಳಿಂದ ಮರುಸ್ಥಾಪಿಸಬಹುದು."
+  "sharedDeletedBody": "{person} {name} ಅಳಿಸಿದ್ದಾರೆ. 30 ದಿನಗಳವರೆಗೆ ಇತ್ತೀಚೆಗೆ ಅಳಿಸಿದವುಗಳಿಂದ ಮರುಸ್ಥಾಪಿಸಬಹುದು.",
+  "remindBody": "{person} ಅವರು {name} ನವೀಕರಿಸಲು ನಿಮಗೆ ನೆನಪಿಸಿದ್ದಾರೆ.",
+  "staffOverdueTitle": "ಸಿಬ್ಬಂದಿ ದಾಖಲೆಯ ಅವಧಿ ಮುಗಿದಿದೆ",
+  "staffOverdueYesterday": "{person} ಅವರ {name} ನಿನ್ನೆ ಅವಧಿ ಮುಗಿದಿದೆ ಮತ್ತು ನವೀಕರಿಸಲಾಗಿಲ್ಲ.",
+  "staffOverdueWeek": "{person} ಅವರ {name} ಒಂದು ವಾರದ ಹಿಂದೆ ಅವಧಿ ಮುಗಿದಿದೆ ಮತ್ತು ಇನ್ನೂ ನವೀಕರಿಸಲಾಗಿಲ್ಲ.",
+  "staffOverdueMany": "{count} ಸಿಬ್ಬಂದಿ ದಾಖಲೆಗಳ ಅವಧಿ ಮುಗಿದಿದೆ ಮತ್ತು ನವೀಕರಿಸಲಾಗಿಲ್ಲ: {names}."
 }

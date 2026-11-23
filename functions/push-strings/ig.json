@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Ụbọchị njedebe agbanweela",
   "sharedExpiryBody": "{person} gbanwere ụbọchị njedebe nke {name}.",
   "sharedDeletedTitle": "E hichapụrụ ndekọ a na-ekerịta",
-  "sharedDeletedBody": "{person} hichapụrụ {name}. Enwere ike iweghachi ya site na Ndị e hichapụrụ na nso nso a n’ime ụbọchị 30."
+  "sharedDeletedBody": "{person} hichapụrụ {name}. Enwere ike iweghachi ya site na Ndị e hichapụrụ na nso nso a n’ime ụbọchị 30.",
+  "remindBody": "{person} chetara gị ka ị meghari {name}.",
+  "staffOverdueTitle": "Akwụkwọ onye ọrụ agwụla",
+  "staffOverdueYesterday": "{name} nke {person} gwụrụ ụnyaahụ ma emegharighị ya.",
+  "staffOverdueWeek": "{name} nke {person} gwụrụ otu izu gara aga ma ka emegharighị ya.",
+  "staffOverdueMany": "Akwụkwọ ndị ọrụ {count} agwụla ma emegharighị ha: {names}."
 }

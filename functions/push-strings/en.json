@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Expiry date changed",
   "sharedExpiryBody": "{person} changed the expiry date of {name}.",
   "sharedDeletedTitle": "Shared record deleted",
-  "sharedDeletedBody": "{person} deleted {name}. It can be restored from Recently deleted for 30 days."
+  "sharedDeletedBody": "{person} deleted {name}. It can be restored from Recently deleted for 30 days.",
+  "remindBody": "{person} reminded you to renew {name}.",
+  "staffOverdueTitle": "Staff document expired",
+  "staffOverdueYesterday": "{name} for {person} expired yesterday and has not been renewed.",
+  "staffOverdueWeek": "{name} for {person} expired a week ago and has still not been renewed.",
+  "staffOverdueMany": "{count} staff documents expired and have not been renewed: {names}."
 }

@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "ວັນໝົດອາຍຸປ່ຽນແລ້ວ",
   "sharedExpiryBody": "{person} ໄດ້ປ່ຽນວັນໝົດອາຍຸຂອງ {name}.",
   "sharedDeletedTitle": "ບັນທຶກແບ່ງປັນຖືກລຶບ",
-  "sharedDeletedBody": "{person} ໄດ້ລຶບ {name}. ສາມາດກູ້ຄືນຈາກ ລຶບຫຼ້າສຸດ ໄດ້ພາຍໃນ 30 ມື້."
+  "sharedDeletedBody": "{person} ໄດ້ລຶບ {name}. ສາມາດກູ້ຄືນຈາກ ລຶບຫຼ້າສຸດ ໄດ້ພາຍໃນ 30 ມື້.",
+  "remindBody": "{person} ເຕືອນທ່ານໃຫ້ຕໍ່ອາຍຸ {name}.",
+  "staffOverdueTitle": "ເອກະສານພະນັກງານໝົດອາຍຸແລ້ວ",
+  "staffOverdueYesterday": "{name} ຂອງ {person} ໝົດອາຍຸມື້ວານນີ້ ແລະ ຍັງບໍ່ໄດ້ຕໍ່ອາຍຸ.",
+  "staffOverdueWeek": "{name} ຂອງ {person} ໝົດອາຍຸເມື່ອອາທິດກ່ອນ ແລະ ຍັງບໍ່ໄດ້ຕໍ່ອາຍຸ.",
+  "staffOverdueMany": "ເອກະສານພະນັກງານ {count} ລາຍການໝົດອາຍຸ ແລະ ຍັງບໍ່ໄດ້ຕໍ່ອາຍຸ: {names}."
 }

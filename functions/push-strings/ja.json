@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "期限が変わりました",
   "sharedExpiryBody": "{person}さんが{name}の期限を変更しました。",
   "sharedDeletedTitle": "共有の記録が削除されました",
-  "sharedDeletedBody": "{person}さんが{name}を削除しました。30日間は「最近削除した項目」から戻せます。"
+  "sharedDeletedBody": "{person}さんが{name}を削除しました。30日間は「最近削除した項目」から戻せます。",
+  "remindBody": "{person}さんから{name}の更新のリマインドが届きました。",
+  "staffOverdueTitle": "スタッフの書類の期限が切れました",
+  "staffOverdueYesterday": "{person}さんの{name}は昨日期限が切れ、まだ更新されていません。",
+  "staffOverdueWeek": "{person}さんの{name}は1週間前に期限が切れ、まだ更新されていません。",
+  "staffOverdueMany": "スタッフの書類{count}件が期限切れのまま更新されていません: {names}。"
 }

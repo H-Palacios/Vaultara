@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Udløbsdato ændret",
   "sharedExpiryBody": "{person} ændrede udløbsdatoen for {name}.",
   "sharedDeletedTitle": "Delt post slettet",
-  "sharedDeletedBody": "{person} slettede {name}. Den kan gendannes fra Nyligt slettet i 30 dage."
+  "sharedDeletedBody": "{person} slettede {name}. Den kan gendannes fra Nyligt slettet i 30 dage.",
+  "remindBody": "{person} minder dig om at forny {name}.",
+  "staffOverdueTitle": "Personaledokument udløbet",
+  "staffOverdueYesterday": "{name} for {person} udløb i går og er ikke fornyet.",
+  "staffOverdueWeek": "{name} for {person} udløb for en uge siden og er stadig ikke fornyet.",
+  "staffOverdueMany": "{count} personaledokumenter er udløbet og ikke fornyet: {names}."
 }

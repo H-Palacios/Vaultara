@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Дату завершення змінено",
   "sharedExpiryBody": "{person}: змінено дату завершення запису {name}.",
   "sharedDeletedTitle": "Спільний запис видалено",
-  "sharedDeletedBody": "{person}: видалено запис {name}. Його можна відновити з Нещодавно видалених протягом 30 днів."
+  "sharedDeletedBody": "{person}: видалено запис {name}. Його можна відновити з Нещодавно видалених протягом 30 днів.",
+  "remindBody": "{person} нагадує вам поновити {name}.",
+  "staffOverdueTitle": "Сплив документ працівника",
+  "staffOverdueYesterday": "{name} ({person}) сплив учора й не поновлений.",
+  "staffOverdueWeek": "{name} ({person}) сплив тиждень тому й досі не поновлений.",
+  "staffOverdueMany": "Спливли й не поновлені документи працівників ({count}): {names}."
 }

@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "កាលបរិច្ឆេទផុតកំណត់បានប្ដូរ",
   "sharedExpiryBody": "{person} បានប្ដូរកាលបរិច្ឆេទផុតកំណត់របស់ {name}។",
   "sharedDeletedTitle": "កំណត់ត្រាចែករំលែកត្រូវបានលុប",
-  "sharedDeletedBody": "{person} បានលុប {name}។ អាចស្ដារវាមកវិញពី ទើបលុបថ្មីៗ ក្នុងរយៈពេល 30 ថ្ងៃ។"
+  "sharedDeletedBody": "{person} បានលុប {name}។ អាចស្ដារវាមកវិញពី ទើបលុបថ្មីៗ ក្នុងរយៈពេល 30 ថ្ងៃ។",
+  "remindBody": "{person} បានរំលឹកអ្នកឱ្យបន្ត {name}។",
+  "staffOverdueTitle": "ឯកសារបុគ្គលិកផុតកំណត់",
+  "staffOverdueYesterday": "{name} របស់ {person} បានផុតកំណត់កាលពីម្សិលមិញ ហើយមិនទាន់បន្តទេ។",
+  "staffOverdueWeek": "{name} របស់ {person} បានផុតកំណត់កាលពីមួយសប្ដាហ៍មុន ហើយនៅតែមិនទាន់បន្ត។",
+  "staffOverdueMany": "ឯកសារបុគ្គលិក {count} បានផុតកំណត់ ហើយមិនទាន់បន្ត៖ {names}។"
 }

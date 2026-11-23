@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "মেয়াদ শেষের তারিখ বদলেছে",
   "sharedExpiryBody": "{person} {name}-এর মেয়াদ শেষের তারিখ বদলেছেন।",
   "sharedDeletedTitle": "শেয়ার করা রেকর্ড মুছে ফেলা হয়েছে",
-  "sharedDeletedBody": "{person} {name} মুছে ফেলেছেন। ৩০ দিনের মধ্যে সম্প্রতি মোছা থেকে ফেরানো যাবে।"
+  "sharedDeletedBody": "{person} {name} মুছে ফেলেছেন। ৩০ দিনের মধ্যে সম্প্রতি মোছা থেকে ফেরানো যাবে।",
+  "remindBody": "{person} আপনাকে {name} নবায়নের কথা মনে করিয়ে দিয়েছেন।",
+  "staffOverdueTitle": "কর্মীর নথির মেয়াদ শেষ",
+  "staffOverdueYesterday": "{person}-এর {name}-এর মেয়াদ গতকাল শেষ হয়েছে এবং নবায়ন হয়নি।",
+  "staffOverdueWeek": "{person}-এর {name}-এর মেয়াদ এক সপ্তাহ আগে শেষ হয়েছে এবং এখনও নবায়ন হয়নি।",
+  "staffOverdueMany": "{count}টি কর্মীর নথির মেয়াদ শেষ হয়েছে এবং নবায়ন হয়নি: {names}।"
 }

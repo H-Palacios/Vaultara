@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Η ημερομηνία λήξης άλλαξε",
   "sharedExpiryBody": "{person}: άλλαξε η ημερομηνία λήξης για {name}.",
   "sharedDeletedTitle": "Κοινόχρηστη εγγραφή διαγράφηκε",
-  "sharedDeletedBody": "{person}: διαγράφηκε {name}. Μπορεί να επανέλθει από τα Πρόσφατα διαγραμμένα για 30 ημέρες."
+  "sharedDeletedBody": "{person}: διαγράφηκε {name}. Μπορεί να επανέλθει από τα Πρόσφατα διαγραμμένα για 30 ημέρες.",
+  "remindBody": "Ο/Η {person} σας υπενθυμίζει να ανανεώσετε το {name}.",
+  "staffOverdueTitle": "Έληξε έγγραφο υπαλλήλου",
+  "staffOverdueYesterday": "Το {name} του/της {person} έληξε χθες και δεν ανανεώθηκε.",
+  "staffOverdueWeek": "Το {name} του/της {person} έληξε πριν από μία εβδομάδα και ακόμη δεν ανανεώθηκε.",
+  "staffOverdueMany": "{count} έγγραφα προσωπικού έληξαν και δεν ανανεώθηκαν: {names}."
 }

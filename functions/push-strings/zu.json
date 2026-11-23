@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Usuku lokuphelelwa lushintshile",
   "sharedExpiryBody": "U-{person} ushintshe usuku lokuphelelwa luka-{name}.",
   "sharedDeletedTitle": "Irekhodi okwabelwana ngalo lisusiwe",
-  "sharedDeletedBody": "U-{person} ususe {name}. Lingabuyiselwa kokuthi Okususwe muva nje izinsuku ezingu-30."
+  "sharedDeletedBody": "U-{person} ususe {name}. Lingabuyiselwa kokuthi Okususwe muva nje izinsuku ezingu-30.",
+  "remindBody": "U-{person} ukukhumbuze ukuthi uvuselele i-{name}.",
+  "staffOverdueTitle": "Idokhumenti yomsebenzi iphelelwe",
+  "staffOverdueYesterday": "I-{name} ka-{person} iphelelwe izolo futhi ayivuselelwanga.",
+  "staffOverdueWeek": "I-{name} ka-{person} iphelelwe esontweni eledlule futhi ayikavuselelwa.",
+  "staffOverdueMany": "Amadokhumenti abasebenzi angu-{count} aphelelwe futhi awavuselelwanga: {names}."
 }

@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Vanhenemispäivä muuttui",
   "sharedExpiryBody": "{person} muutti tietueen {name} vanhenemispäivää.",
   "sharedDeletedTitle": "Jaettu tietue poistettu",
-  "sharedDeletedBody": "{person} poisti tietueen {name}. Sen voi palauttaa 30 päivän ajan kohdasta Äskettäin poistetut."
+  "sharedDeletedBody": "{person} poisti tietueen {name}. Sen voi palauttaa 30 päivän ajan kohdasta Äskettäin poistetut.",
+  "remindBody": "{person} muistutti sinua uusimaan kohteen {name}.",
+  "staffOverdueTitle": "Työntekijän asiakirja vanheni",
+  "staffOverdueYesterday": "{person}: {name} vanheni eilen, eikä sitä ole uusittu.",
+  "staffOverdueWeek": "{person}: {name} vanheni viikko sitten, eikä sitä ole vieläkään uusittu.",
+  "staffOverdueMany": "{count} työntekijän asiakirjaa on vanhentunut uusimatta: {names}."
 }

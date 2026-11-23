@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Датум истека промењен",
   "sharedExpiryBody": "{person}: промењен датум истека за {name}.",
   "sharedDeletedTitle": "Заједнички запис избрисан",
-  "sharedDeletedBody": "{person}: избрисан запис {name}. Може се вратити из Недавно избрисаног у року од 30 дана."
+  "sharedDeletedBody": "{person}: избрисан запис {name}. Може се вратити из Недавно избрисаног у року од 30 дана.",
+  "remindBody": "{person} вас подсећа да обновите {name}.",
+  "staffOverdueTitle": "Документ запосленог је истекао",
+  "staffOverdueYesterday": "{name} за {person} је истекао јуче и није обновљен.",
+  "staffOverdueWeek": "{name} за {person} је истекао пре недељу дана и још није обновљен.",
+  "staffOverdueMany": "Истекло је {count} докумената запослених који нису обновљени: {names}."
 }

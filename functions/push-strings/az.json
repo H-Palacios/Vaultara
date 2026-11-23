@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Bitmə tarixi dəyişdi",
   "sharedExpiryBody": "{person} {name} üçün bitmə tarixini dəyişdi.",
   "sharedDeletedTitle": "Paylaşılan qeyd silindi",
-  "sharedDeletedBody": "{person} {name} sildi. 30 gün ərzində Son silinənlərdən bərpa etmək olar."
+  "sharedDeletedBody": "{person} {name} sildi. 30 gün ərzində Son silinənlərdən bərpa etmək olar.",
+  "remindBody": "{person} sizə {name} sənədini yeniləməyi xatırlatdı.",
+  "staffOverdueTitle": "İşçi sənədinin müddəti bitdi",
+  "staffOverdueYesterday": "{person} üçün {name} dünən bitdi və yenilənməyib.",
+  "staffOverdueWeek": "{person} üçün {name} bir həftə əvvəl bitdi və hələ də yenilənməyib.",
+  "staffOverdueMany": "{count} işçi sənədinin müddəti bitib və yenilənməyib: {names}."
 }

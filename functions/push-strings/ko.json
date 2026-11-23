@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "만료일 변경",
   "sharedExpiryBody": "{person}님이 {name}의 만료일을 변경했습니다.",
   "sharedDeletedTitle": "공유 기록 삭제됨",
-  "sharedDeletedBody": "{person}님이 {name}을(를) 삭제했습니다. 30일 동안 최근 삭제됨에서 복원할 수 있습니다."
+  "sharedDeletedBody": "{person}님이 {name}을(를) 삭제했습니다. 30일 동안 최근 삭제됨에서 복원할 수 있습니다.",
+  "remindBody": "{person} 님이 {name} 갱신을 알려 드려요.",
+  "staffOverdueTitle": "직원 서류가 만료됐어요",
+  "staffOverdueYesterday": "{person} 님의 {name}이(가) 어제 만료됐고 갱신되지 않았어요.",
+  "staffOverdueWeek": "{person} 님의 {name}이(가) 일주일 전에 만료됐고 아직 갱신되지 않았어요.",
+  "staffOverdueMany": "직원 서류 {count}건이 만료됐고 갱신되지 않았어요: {names}."
 }

@@ -21,5 +21,10 @@
   "sharedExpiryTitle": "Gildislokadagsetning breyttist",
   "sharedExpiryBody": "{person} breytti gildislokadagsetningu {name}.",
   "sharedDeletedTitle": "Sameiginlegri færslu eytt",
-  "sharedDeletedBody": "{person} eyddi {name}. Hægt er að endurheimta hana úr Nýlega eytt í 30 daga."
+  "sharedDeletedBody": "{person} eyddi {name}. Hægt er að endurheimta hana úr Nýlega eytt í 30 daga.",
+  "remindBody": "{person} minnti þig á að endurnýja {name}.",
+  "staffOverdueTitle": "Skjal starfsmanns rann út",
+  "staffOverdueYesterday": "{name} fyrir {person} rann út í gær og hefur ekki verið endurnýjað.",
+  "staffOverdueWeek": "{name} fyrir {person} rann út fyrir viku og hefur enn ekki verið endurnýjað.",
+  "staffOverdueMany": "{count} skjöl starfsfólks hafa runnið út og ekki verið endurnýjuð: {names}."
 }
