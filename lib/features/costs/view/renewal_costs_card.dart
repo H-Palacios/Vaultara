@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:ui' show ImageFilter;
 
 import 'package:flutter/material.dart';
+import 'package:vaultara/features/costs/view/renewal_savings_section.dart';
 import 'package:intl/intl.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
@@ -99,6 +100,11 @@ class _RenewalCostsCardState extends State<RenewalCostsCard> {
                     )
                   else
                     const _EmptyBody(),
+                  RenewalSavingsSection(
+                    records: records,
+                    currency: display,
+                    rates: rates,
+                  ),
                 ],
               ),
             );
@@ -129,7 +135,12 @@ class _CurrencyChip extends StatelessWidget {
         child: InkWell(
           onTap: onTap,
           child: Padding(
-            padding: const EdgeInsets.only(left: 10, right: 4, top: 6, bottom: 6),
+            padding: const EdgeInsets.only(
+              left: 10,
+              right: 4,
+              top: 6,
+              bottom: 6,
+            ),
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -203,10 +214,7 @@ class _CostsShell extends StatelessWidget {
                     ],
                   ),
                 ),
-                if (trailing != null) ...[
-                  const SizedBox(width: 8),
-                  trailing!,
-                ],
+                if (trailing != null) ...[const SizedBox(width: 8), trailing!],
               ],
             ),
             const SizedBox(height: 14),
@@ -293,10 +301,7 @@ class _ForecastBody extends StatelessWidget {
                     SafeLocale.date(CostFormat.localeTag(context)),
                   ).format(fx.updatedAt.toLocal()),
                 ),
-                style: TextStyle(
-                  fontSize: 12,
-                  color: scheme.onSurfaceVariant,
-                ),
+                style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
               ),
               const SizedBox(height: 4),
               InkWell(
@@ -349,8 +354,10 @@ class _ForecastBody extends StatelessWidget {
       busiestIndex = converted.busiestIndex;
       if (busiestIndex >= 0) {
         busiestLabel = loc.costCardBusiest(
-          DateFormat('MMMM y', dateLocale)
-              .format(forecast.months[busiestIndex].month),
+          DateFormat(
+            'MMMM y',
+            dateLocale,
+          ).format(forecast.months[busiestIndex].month),
           CostFormat.format(context, values[busiestIndex], display),
         );
       }
@@ -501,8 +508,9 @@ class _ForecastBody extends StatelessWidget {
           monthNames: monthNames,
           amounts: amounts,
           highlightIndex: busiestIndex,
-          currentIndex:
-              forecast.year == DateTime.now().year ? DateTime.now().month - 1 : -1,
+          currentIndex: forecast.year == DateTime.now().year
+              ? DateTime.now().month - 1
+              : -1,
           mutedBefore: forecast.mutedBefore,
         ),
         if (converted != null && converted.usedRates) ...[
@@ -523,8 +531,9 @@ class _ForecastBody extends StatelessWidget {
                   Expanded(
                     child: Text(
                       loc.costRatesUpdated(
-                        DateFormat.yMMMd(dateLocale)
-                            .format(converted.rates.updatedAt.toLocal()),
+                        DateFormat.yMMMd(
+                          dateLocale,
+                        ).format(converted.rates.updatedAt.toLocal()),
                       ),
                       style: TextStyle(
                         fontSize: 12,
@@ -551,7 +560,6 @@ class _ForecastBody extends StatelessWidget {
       ],
     );
   }
-
 }
 
 class _MiniBarChart extends StatelessWidget {
@@ -718,7 +726,18 @@ class _LockedBody extends StatelessWidget {
   const _LockedBody();
 
   static const List<double> _sampleValues = [
-    2, 0, 5, 3, 0, 8, 1, 0, 4, 6, 0, 2,
+    2,
+    0,
+    5,
+    3,
+    0,
+    8,
+    1,
+    0,
+    4,
+    6,
+    0,
+    2,
   ];
 
   @override
