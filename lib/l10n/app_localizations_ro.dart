@@ -8434,6 +8434,339 @@ class AppLocalizationsRo extends AppLocalizations {
   String get subcategoryPetPassports => 'Pașapoarte pentru animale';
 
   @override
+  String get petsTitle => 'Animale de companie';
+
+  @override
+  String get petsTileSubtitle => 'Documente, microcip și veterinar pentru fiecare animal';
+
+  @override
+  String get petsNotMembers => 'Animalele nu se numără printre membrii tăi.';
+
+  @override
+  String get petsAdd => 'Adaugă un animal';
+
+  @override
+  String get petsEmptyBody => 'Adaugă animalul tău ca să ai împreună vaccinurile, licența, asigurarea și microcipul, cu mementouri înainte să expire ceva.';
+
+  @override
+  String get petsPremium => 'Profilurile animalelor fac parte din Premium.';
+
+  @override
+  String get petKindDog => 'Câine';
+
+  @override
+  String get petKindCat => 'Pisică';
+
+  @override
+  String get petKindOther => 'Alt animal';
+
+  @override
+  String get petBirthday => 'Data nașterii';
+
+  @override
+  String petBorn(String date) {
+    return 'Născut pe $date';
+  }
+
+  @override
+  String get petChipNumber => 'Numărul microcipului';
+
+  @override
+  String get petChipInvalid => 'Folosește cele 9–15 cifre de pe certificatul cipului.';
+
+  @override
+  String get petChipRegistry => 'Registrul cipului';
+
+  @override
+  String get petChipTip => 'Actualizează registrul când te muți sau îți schimbi numărul, altfel cipul nu-ți poate aduce animalul acasă.';
+
+  @override
+  String get petVetName => 'Veterinar';
+
+  @override
+  String get petVetPhone => 'Telefonul veterinarului';
+
+  @override
+  String get petDocuments => 'Documente';
+
+  @override
+  String get petStillToAdd => 'Mai de adăugat';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'Elimini $name? Documentele rămân în Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'Animal pierdut';
+
+  @override
+  String get petLostSteps => 'Anunță mai întâi registrul cipului că animalul a dispărut. Apoi sună veterinarii și adăposturile din apropiere cu numărul microcipului și distribuie o fotografie recentă în zonă și online.';
+
+  @override
+  String get petTravelTitle => 'Călătorie cu un animal';
+
+  @override
+  String get petTravelPick => 'Unde mergi?';
+
+  @override
+  String get petTravelHome => 'Unde locuiește animalul tău';
+
+  @override
+  String get petRuleChip => 'Un microcip ISO, implantat înainte de vaccinul antirabic';
+
+  @override
+  String get petRuleRabiesTest => 'Vaccin antirabic și un test de sânge pentru rabie într-un laborator aprobat';
+
+  @override
+  String get petRuleCertificate => 'Un certificat de sănătate de la un medic veterinar oficial';
+
+  @override
+  String get petRulePermit => 'Un permis de import înainte de călătorie';
+
+  @override
+  String get petRuleTapeworm => 'Câini: tratament împotriva teniei cu 1–5 zile înainte de sosire';
+
+  @override
+  String get petRuleCdcForm => 'Un CDC Dog Import Form pentru fiecare câine';
+
+  @override
+  String get petRuleSomeCountries => 'Doar din unele țări:';
+
+  @override
+  String get petRulesOfficial => 'Reguli oficiale';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara nu are încă regulile pentru animale din $country. Serviciul veterinar oficial sau ambasada îți pot spune ce e nevoie.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Legea microcipului: $country';
+  }
+
+  @override
+  String get petLawUk => 'Obligatoriu pentru câini și, în Anglia, pentru pisici';
+
+  @override
+  String get petLawEu => 'Regulile diferă de la o țară la alta. O nouă lege UE îl va face obligatoriu pentru toți câinii și pisicile.';
+
+  @override
+  String get petLawMostStates => 'Obligatoriu pentru câini și pisici în majoritatea statelor și teritoriilor';
+
+  @override
+  String get petLawDogs => 'Obligatoriu pentru câini';
+
+  @override
+  String get petLawSellers => 'Obligatoriu pentru câinii și pisicile vândute de crescători și pet shopuri';
+
+  @override
+  String get petLawLocal => 'Stabilit de fiecare stat, provincie sau oraș';
+
+  @override
+  String get petLawNone => 'Nu este cerut de legea națională, dar e necesar pentru călătorii și pentru majoritatea adopțiilor';
+
+  @override
+  String get tripPetsTitle => 'Animale în această călătorie';
+
+  @override
+  String get petCheckNoChip => 'Niciun microcip salvat';
+
+  @override
+  String get petCheckNoRabies => 'Niciun vaccin antirabic salvat';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Vaccinul antirabic expiră pe $date, înainte să te întorci';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Așteptarea după testul de sânge s-ar putea să nu încapă înainte de plecare. Vorbește acum cu veterinarul.';
+
+  @override
+  String get petCheckNoCertificate => 'Niciun certificat de sănătate sau pașaport pentru animal salvat';
+
+  @override
+  String get planBenefitPets => 'Animale cu propriile documente, microcip și veterinar, care nu se numără ca membri';
+
+  @override
+  String get tutorialsSubPets => 'Documentele animalelor, microcip și reguli de călătorie';
+
+  @override
+  String get tourPetsListBody => 'Fiecare animal are profilul lui, cu microcipul, veterinarul și documentele într-un singur loc. Animalele nu se numără printre membrii tăi.';
+
+  @override
+  String get tourPetsDocsBody => 'Vaccinurile, licența și asigurarea aparțin animalului, așa că mementourile spun ale cui sunt. Insignele arată ce e salvat.';
+
+  @override
+  String get tourPetsTravelBody => 'Alege o țară ca să vezi de ce are nevoie animalul tău ca să călătorească acolo și cât durează.';
+
+  @override
+  String get petTypeLabel => 'Tipul animalului';
+
+  @override
+  String get petTypeHint => 'Începeți să scrieți, de exemplu Iepure sau Papagal';
+
+  @override
+  String get petTypeFerret => 'Dihor';
+
+  @override
+  String get petTypeRabbit => 'Iepure';
+
+  @override
+  String get petTypeGuineaPig => 'Porcușor de Guineea';
+
+  @override
+  String get petTypeHamster => 'Hamster';
+
+  @override
+  String get petTypeRat => 'Șobolan';
+
+  @override
+  String get petTypeMouse => 'Șoarece';
+
+  @override
+  String get petTypeGerbil => 'Gerbil';
+
+  @override
+  String get petTypeChinchilla => 'Șinșilă';
+
+  @override
+  String get petTypeHedgehog => 'Arici';
+
+  @override
+  String get petTypeHorse => 'Cal';
+
+  @override
+  String get petTypePony => 'Ponei';
+
+  @override
+  String get petTypeDonkey => 'Măgar';
+
+  @override
+  String get petTypeParrot => 'Papagal';
+
+  @override
+  String get petTypeBudgie => 'Peruș';
+
+  @override
+  String get petTypeCockatiel => 'Nimfă';
+
+  @override
+  String get petTypeCanary => 'Canar';
+
+  @override
+  String get petTypeChicken => 'Găină';
+
+  @override
+  String get petTypeTortoise => 'Broască țestoasă de uscat';
+
+  @override
+  String get petTypeTurtle => 'Broască țestoasă de apă';
+
+  @override
+  String get petTypeSnake => 'Șarpe';
+
+  @override
+  String get petTypeLizard => 'Șopârlă';
+
+  @override
+  String get petTypeGecko => 'Gecko';
+
+  @override
+  String get petTypeBeardedDragon => 'Dragon cu barbă';
+
+  @override
+  String get petTypeFrog => 'Broască';
+
+  @override
+  String get petTypeAxolotl => 'Axolotl';
+
+  @override
+  String get petTypeFish => 'Pește';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Vaccin antirabic cu cel puțin $duration înainte de sosire';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Un test de sânge pentru rabie după vaccin, apoi o așteptare de $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Apoi cel puțin $duration într-o țară aprobată înainte de zbor';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Carantină la sosire de cel puțin $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Animalul trebuie să aibă cel puțin $duration';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Prea tânăr pentru $country: animalul trebuie să aibă cel puțin $duration';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Verificat de Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Încă neverificat. Confirmați pe site-ul oficial înainte de rezervare.';
+
+  @override
+  String get petRulesOtherAnimal => 'Regulile pentru acest animal sunt diferite de cele pentru câini și pisici. Verificați pe site-ul oficial de ce are nevoie.';
+
+  @override
+  String get countryTypeHint => 'Începeți să scrieți o țară, de exemplu Franța';
+
+  @override
+  String get assistantStepPets => 'Se verifică animalele dvs.';
+
+  @override
+  String get tourPetsAddBody => 'Adăugați aici încă un animal. Începeți să scrieți tipul, de exemplu Iepure sau Papagal, și alegeți o sugestie.';
+
+  @override
+  String get rulesReviewTitle => 'Reguli de verificat';
+
+  @override
+  String get rulesReviewSubtitle => 'Reguli oficiale citite de pe pagini guvernamentale, care așteaptă aprobarea dvs.';
+
+  @override
+  String get rulesReviewNow => 'Afișat acum';
+
+  @override
+  String get rulesReviewNew => 'Pe pagină acum';
+
+  @override
+  String get rulesReviewPets => 'Călătorie cu animalul';
+
+  @override
+  String get rulesReviewPassport => 'Valabilitatea pașaportului';
+
+  @override
+  String get rulesReviewApprove => 'Aprobă';
+
+  @override
+  String get rulesReviewReject => 'Respinge';
+
+  @override
+  String get rulesReviewEmpty => 'Nimic de verificat.';
+
+  @override
+  String get rulesReviewDropped => 'Omis (nicio propoziție potrivită)';
+
+  @override
   String get yoursTag => 'Al tău';
 
   @override

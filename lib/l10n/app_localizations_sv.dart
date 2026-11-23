@@ -8360,6 +8360,339 @@ class AppLocalizationsSv extends AppLocalizations {
   String get subcategoryPetPassports => 'Djurpass';
 
   @override
+  String get petsTitle => 'Husdjur';
+
+  @override
+  String get petsTileSubtitle => 'Dokument, mikrochip och veterinär för varje husdjur';
+
+  @override
+  String get petsNotMembers => 'Husdjur räknas inte bland dina medlemmar.';
+
+  @override
+  String get petsAdd => 'Lägg till ett husdjur';
+
+  @override
+  String get petsEmptyBody => 'Lägg till ditt husdjur så samlas vaccinationer, licens, försäkring och mikrochip, med påminnelser innan något går ut.';
+
+  @override
+  String get petsPremium => 'Husdjursprofiler ingår i Premium.';
+
+  @override
+  String get petKindDog => 'Hund';
+
+  @override
+  String get petKindCat => 'Katt';
+
+  @override
+  String get petKindOther => 'Annat husdjur';
+
+  @override
+  String get petBirthday => 'Födelsedatum';
+
+  @override
+  String petBorn(String date) {
+    return 'Född $date';
+  }
+
+  @override
+  String get petChipNumber => 'Mikrochipnummer';
+
+  @override
+  String get petChipInvalid => 'Använd de 9 till 15 siffrorna på chipcertifikatet.';
+
+  @override
+  String get petChipRegistry => 'Chipregister';
+
+  @override
+  String get petChipTip => 'Håll registret uppdaterat när du flyttar eller byter nummer, annars kan chippet inte få hem ditt husdjur.';
+
+  @override
+  String get petVetName => 'Veterinär';
+
+  @override
+  String get petVetPhone => 'Veterinärens telefon';
+
+  @override
+  String get petDocuments => 'Dokument';
+
+  @override
+  String get petStillToAdd => 'Kvar att lägga till';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'Ta bort $name? Dokumenten finns kvar i Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'Borttappat husdjur';
+
+  @override
+  String get petLostSteps => 'Anmäl först husdjuret försvunnet till chipregistret. Ring sedan veterinärer och djurhem i närheten med mikrochipnumret, och dela ett nytt foto i området och på nätet.';
+
+  @override
+  String get petTravelTitle => 'Resa med husdjur';
+
+  @override
+  String get petTravelPick => 'Vart ska du?';
+
+  @override
+  String get petTravelHome => 'Där ditt husdjur bor';
+
+  @override
+  String get petRuleChip => 'Ett ISO-mikrochip, insatt före rabiesvaccinet';
+
+  @override
+  String get petRuleRabiesTest => 'Rabiesvaccin och ett rabies-blodprov från ett godkänt laboratorium';
+
+  @override
+  String get petRuleCertificate => 'Ett hälsointyg från en officiell veterinär';
+
+  @override
+  String get petRulePermit => 'Ett importtillstånd före resan';
+
+  @override
+  String get petRuleTapeworm => 'Hundar: bandmaskbehandling 1 till 5 dagar före ankomst';
+
+  @override
+  String get petRuleCdcForm => 'Ett CDC Dog Import Form för varje hund';
+
+  @override
+  String get petRuleSomeCountries => 'Bara från vissa länder:';
+
+  @override
+  String get petRulesOfficial => 'Officiella regler';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara har ännu inte husdjursreglerna för $country. Landets officiella veterinärmyndighet eller ambassad kan berätta vad som krävs.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Mikrochiplag i $country';
+  }
+
+  @override
+  String get petLawUk => 'Krav för hundar, och för katter i England';
+
+  @override
+  String get petLawEu => 'Reglerna skiljer sig mellan länder. En ny EU-lag gör det till krav för alla hundar och katter.';
+
+  @override
+  String get petLawMostStates => 'Krav för hundar och katter i de flesta delstater och territorier';
+
+  @override
+  String get petLawDogs => 'Krav för hundar';
+
+  @override
+  String get petLawSellers => 'Krav för hundar och katter som säljs av uppfödare och djuraffärer';
+
+  @override
+  String get petLawLocal => 'Bestäms av varje delstat, provins eller stad';
+
+  @override
+  String get petLawNone => 'Inget krav enligt nationell lag, men behövs för resor och de flesta adoptioner';
+
+  @override
+  String get tripPetsTitle => 'Husdjur på den här resan';
+
+  @override
+  String get petCheckNoChip => 'Inget mikrochip sparat';
+
+  @override
+  String get petCheckNoRabies => 'Inget rabiesvaccin sparat';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Rabiesvaccinet går ut $date, innan du är hemma';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Väntan efter blodprovet hinner kanske inte gå före avresan. Prata med din veterinär nu.';
+
+  @override
+  String get petCheckNoCertificate => 'Inget hälsointyg eller djurpass sparat';
+
+  @override
+  String get planBenefitPets => 'Husdjur med egna dokument, mikrochip och veterinär, räknas inte som medlemmar';
+
+  @override
+  String get tutorialsSubPets => 'Husdjursdokument, mikrochip och reseregler';
+
+  @override
+  String get tourPetsListBody => 'Varje husdjur har en egen profil, med mikrochip, veterinär och dokument på ett ställe. Husdjur räknas inte bland dina medlemmar.';
+
+  @override
+  String get tourPetsDocsBody => 'Vaccinationer, licens och försäkring hör till husdjuret, så påminnelser säger vems de är. Märkena visar vad som är sparat.';
+
+  @override
+  String get tourPetsTravelBody => 'Välj ett land för att se vad ditt husdjur behöver för att resa dit, och hur lång tid det tar.';
+
+  @override
+  String get petTypeLabel => 'Typ av husdjur';
+
+  @override
+  String get petTypeHint => 'Börja skriva, till exempel Kanin eller Papegoja';
+
+  @override
+  String get petTypeFerret => 'Iller';
+
+  @override
+  String get petTypeRabbit => 'Kanin';
+
+  @override
+  String get petTypeGuineaPig => 'Marsvin';
+
+  @override
+  String get petTypeHamster => 'Hamster';
+
+  @override
+  String get petTypeRat => 'Råtta';
+
+  @override
+  String get petTypeMouse => 'Mus';
+
+  @override
+  String get petTypeGerbil => 'Ökenråtta';
+
+  @override
+  String get petTypeChinchilla => 'Chinchilla';
+
+  @override
+  String get petTypeHedgehog => 'Igelkott';
+
+  @override
+  String get petTypeHorse => 'Häst';
+
+  @override
+  String get petTypePony => 'Ponny';
+
+  @override
+  String get petTypeDonkey => 'Åsna';
+
+  @override
+  String get petTypeParrot => 'Papegoja';
+
+  @override
+  String get petTypeBudgie => 'Undulat';
+
+  @override
+  String get petTypeCockatiel => 'Nymfparakit';
+
+  @override
+  String get petTypeCanary => 'Kanariefågel';
+
+  @override
+  String get petTypeChicken => 'Höna';
+
+  @override
+  String get petTypeTortoise => 'Landsköldpadda';
+
+  @override
+  String get petTypeTurtle => 'Vattensköldpadda';
+
+  @override
+  String get petTypeSnake => 'Orm';
+
+  @override
+  String get petTypeLizard => 'Ödla';
+
+  @override
+  String get petTypeGecko => 'Gecko';
+
+  @override
+  String get petTypeBeardedDragon => 'Skäggagam';
+
+  @override
+  String get petTypeFrog => 'Groda';
+
+  @override
+  String get petTypeAxolotl => 'Axolotl';
+
+  @override
+  String get petTypeFish => 'Fisk';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Rabiesvaccin minst $duration före ankomst';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Ett blodprov för rabies efter vaccinet, sedan en väntetid på $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Sedan minst $duration i ett godkänt land innan du flyger';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Karantän vid ankomst i minst $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Ditt husdjur måste vara minst $duration gammalt';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'För ungt för $country: ditt husdjur måste vara minst $duration gammalt';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Kontrollerat av Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Inte kontrollerat än. Bekräfta på den officiella webbplatsen innan du bokar.';
+
+  @override
+  String get petRulesOtherAnimal => 'Reglerna för det här djuret skiljer sig från reglerna för hundar och katter. Se på den officiella webbplatsen vad det behöver.';
+
+  @override
+  String get countryTypeHint => 'Börja skriva ett land, till exempel Frankrike';
+
+  @override
+  String get assistantStepPets => 'Kontrollerar dina husdjur';
+
+  @override
+  String get tourPetsAddBody => 'Lägg till ännu ett husdjur här. Börja skriva typen, till exempel Kanin eller Papegoja, och välj ett förslag.';
+
+  @override
+  String get rulesReviewTitle => 'Regler att granska';
+
+  @override
+  String get rulesReviewSubtitle => 'Officiella regler lästa från myndighetssidor, som väntar på ditt godkännande';
+
+  @override
+  String get rulesReviewNow => 'Visas nu';
+
+  @override
+  String get rulesReviewNew => 'På sidan nu';
+
+  @override
+  String get rulesReviewPets => 'Resa med husdjur';
+
+  @override
+  String get rulesReviewPassport => 'Passets giltighet';
+
+  @override
+  String get rulesReviewApprove => 'Godkänn';
+
+  @override
+  String get rulesReviewReject => 'Avvisa';
+
+  @override
+  String get rulesReviewEmpty => 'Inget att granska.';
+
+  @override
+  String get rulesReviewDropped => 'Utelämnat (ingen matchande mening)';
+
+  @override
   String get yoursTag => 'Ditt';
 
   @override

@@ -8300,6 +8300,339 @@ class AppLocalizationsKo extends AppLocalizations {
   String get subcategoryPetPassports => '반려동물 여권';
 
   @override
+  String get petsTitle => '반려동물';
+
+  @override
+  String get petsTileSubtitle => '반려동물별 서류, 마이크로칩, 수의사';
+
+  @override
+  String get petsNotMembers => '반려동물은 구성원 수에 포함되지 않아요.';
+
+  @override
+  String get petsAdd => '반려동물 추가';
+
+  @override
+  String get petsEmptyBody => '반려동물을 추가하면 예방접종, 등록증, 보험, 마이크로칩을 한곳에 모아 두고, 만료 전에 알림을 받을 수 있어요.';
+
+  @override
+  String get petsPremium => '반려동물 프로필은 Premium 기능이에요.';
+
+  @override
+  String get petKindDog => '개';
+
+  @override
+  String get petKindCat => '고양이';
+
+  @override
+  String get petKindOther => '다른 반려동물';
+
+  @override
+  String get petBirthday => '생년월일';
+
+  @override
+  String petBorn(String date) {
+    return '$date 출생';
+  }
+
+  @override
+  String get petChipNumber => '마이크로칩 번호';
+
+  @override
+  String get petChipInvalid => '칩 증명서에 있는 9~15자리 숫자를 입력하세요.';
+
+  @override
+  String get petChipRegistry => '칩 등록 기관';
+
+  @override
+  String get petChipTip => '이사하거나 번호를 바꾸면 등록 정보를 꼭 업데이트하세요. 그렇지 않으면 칩이 있어도 반려동물이 집에 돌아오지 못해요.';
+
+  @override
+  String get petVetName => '수의사';
+
+  @override
+  String get petVetPhone => '수의사 전화번호';
+
+  @override
+  String get petDocuments => '서류';
+
+  @override
+  String get petStillToAdd => '아직 추가할 것';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '$name을(를) 삭제할까요? 서류는 Vaultara에 남아요.';
+  }
+
+  @override
+  String get petLostTitle => '잃어버린 반려동물';
+
+  @override
+  String get petLostSteps => '먼저 칩 등록 기관에 실종 신고를 하세요. 그다음 마이크로칩 번호를 알려 주며 가까운 동물병원과 보호소에 전화하고, 최근 사진을 동네와 온라인에 공유하세요.';
+
+  @override
+  String get petTravelTitle => '반려동물과 여행';
+
+  @override
+  String get petTravelPick => '어디로 가세요?';
+
+  @override
+  String get petTravelHome => '반려동물이 사는 나라';
+
+  @override
+  String get petRuleChip => '광견병 예방접종 전에 삽입한 ISO 마이크로칩';
+
+  @override
+  String get petRuleRabiesTest => '광견병 예방접종과 승인된 기관의 광견병 혈액검사';
+
+  @override
+  String get petRuleCertificate => '공인 수의사의 건강증명서';
+
+  @override
+  String get petRulePermit => '여행 전 수입 허가';
+
+  @override
+  String get petRuleTapeworm => '개: 도착 1~5일 전 촌충 구제';
+
+  @override
+  String get petRuleCdcForm => '개마다 CDC Dog Import Form';
+
+  @override
+  String get petRuleSomeCountries => '일부 국가에서 올 때만:';
+
+  @override
+  String get petRulesOfficial => '공식 규정';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara에는 아직 $country의 반려동물 규정이 없어요. 해당 국가의 공식 검역 기관이나 대사관에서 필요한 것을 알려 줄 수 있어요.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return '$country 마이크로칩 법';
+  }
+
+  @override
+  String get petLawUk => '개는 의무, 잉글랜드에서는 고양이도 의무';
+
+  @override
+  String get petLawEu => '규정은 나라마다 달라요. 새 EU 법에 따라 모든 개와 고양이에게 의무화돼요.';
+
+  @override
+  String get petLawMostStates => '대부분의 주와 준주에서 개와 고양이에게 의무';
+
+  @override
+  String get petLawDogs => '개는 의무';
+
+  @override
+  String get petLawSellers => '브리더와 펫숍이 판매하는 개와 고양이에게 의무';
+
+  @override
+  String get petLawLocal => '주, 지방 또는 도시마다 정해요';
+
+  @override
+  String get petLawNone => '국가 법으로 의무는 아니지만, 여행과 대부분의 입양에 필요해요';
+
+  @override
+  String get tripPetsTitle => '이번 여행의 반려동물';
+
+  @override
+  String get petCheckNoChip => '저장된 마이크로칩 없음';
+
+  @override
+  String get petCheckNoRabies => '저장된 광견병 예방접종 없음';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return '광견병 예방접종이 $date에 만료돼요. 돌아오기 전이에요';
+  }
+
+  @override
+  String get petCheckTooSoon => '혈액검사 후 대기 기간이 출발 전까지 끝나지 않을 수 있어요. 지금 수의사와 상담하세요.';
+
+  @override
+  String get petCheckNoCertificate => '저장된 건강증명서나 반려동물 여권 없음';
+
+  @override
+  String get planBenefitPets => '반려동물별 서류, 마이크로칩, 수의사. 구성원 수에는 포함되지 않아요';
+
+  @override
+  String get tutorialsSubPets => '반려동물 서류, 마이크로칩, 여행 규정';
+
+  @override
+  String get tourPetsListBody => '반려동물마다 프로필이 있어 마이크로칩, 수의사, 서류를 한곳에서 볼 수 있어요. 반려동물은 구성원 수에 포함되지 않아요.';
+
+  @override
+  String get tourPetsDocsBody => '예방접종, 등록증, 보험은 반려동물의 것으로 저장돼서 알림에 누구 것인지 나와요. 배지로 저장된 항목을 알 수 있어요.';
+
+  @override
+  String get tourPetsTravelBody => '나라를 고르면 반려동물이 그곳에 가는 데 무엇이 필요하고 얼마나 걸리는지 볼 수 있어요.';
+
+  @override
+  String get petTypeLabel => '반려동물 종류';
+
+  @override
+  String get petTypeHint => '입력해 보세요. 예: 토끼, 앵무새';
+
+  @override
+  String get petTypeFerret => '페럿';
+
+  @override
+  String get petTypeRabbit => '토끼';
+
+  @override
+  String get petTypeGuineaPig => '기니피그';
+
+  @override
+  String get petTypeHamster => '햄스터';
+
+  @override
+  String get petTypeRat => '쥐';
+
+  @override
+  String get petTypeMouse => '생쥐';
+
+  @override
+  String get petTypeGerbil => '저빌';
+
+  @override
+  String get petTypeChinchilla => '친칠라';
+
+  @override
+  String get petTypeHedgehog => '고슴도치';
+
+  @override
+  String get petTypeHorse => '말';
+
+  @override
+  String get petTypePony => '조랑말';
+
+  @override
+  String get petTypeDonkey => '당나귀';
+
+  @override
+  String get petTypeParrot => '앵무새';
+
+  @override
+  String get petTypeBudgie => '사랑앵무';
+
+  @override
+  String get petTypeCockatiel => '왕관앵무';
+
+  @override
+  String get petTypeCanary => '카나리아';
+
+  @override
+  String get petTypeChicken => '닭';
+
+  @override
+  String get petTypeTortoise => '육지거북';
+
+  @override
+  String get petTypeTurtle => '물거북';
+
+  @override
+  String get petTypeSnake => '뱀';
+
+  @override
+  String get petTypeLizard => '도마뱀';
+
+  @override
+  String get petTypeGecko => '게코';
+
+  @override
+  String get petTypeBeardedDragon => '턱수염도마뱀';
+
+  @override
+  String get petTypeFrog => '개구리';
+
+  @override
+  String get petTypeAxolotl => '아홀로틀';
+
+  @override
+  String get petTypeFish => '물고기';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return '도착 최소 $duration 전에 광견병 백신 접종';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return '백신 접종 후 광견병 혈액 검사, 그다음 $duration 대기';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return '그다음 비행 전 승인된 국가에서 최소 $duration';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return '도착 시 최소 $duration 검역';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return '반려동물은 최소 $duration이어야 합니다';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return '$country에는 너무 어립니다: 반려동물은 최소 $duration이어야 합니다';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Vaultara 확인 · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => '아직 확인되지 않았습니다. 예약 전에 공식 사이트에서 확인하세요.';
+
+  @override
+  String get petRulesOtherAnimal => '이 동물의 규정은 개와 고양이와 다릅니다. 필요한 사항은 공식 사이트에서 확인하세요.';
+
+  @override
+  String get countryTypeHint => '국가 이름을 입력해 보세요. 예: 프랑스';
+
+  @override
+  String get assistantStepPets => '반려동물 확인 중';
+
+  @override
+  String get tourPetsAddBody => '여기서 반려동물을 더 추가하세요. 토끼나 앵무새처럼 종류를 입력하고 추천 항목을 고르세요.';
+
+  @override
+  String get rulesReviewTitle => '검토할 규정';
+
+  @override
+  String get rulesReviewSubtitle => '정부 페이지에서 읽은 공식 규정으로, 승인을 기다리고 있습니다';
+
+  @override
+  String get rulesReviewNow => '현재 표시';
+
+  @override
+  String get rulesReviewNew => '현재 페이지 내용';
+
+  @override
+  String get rulesReviewPets => '반려동물과 여행';
+
+  @override
+  String get rulesReviewPassport => '여권 유효기간';
+
+  @override
+  String get rulesReviewApprove => '승인';
+
+  @override
+  String get rulesReviewReject => '거부';
+
+  @override
+  String get rulesReviewEmpty => '검토할 항목이 없습니다.';
+
+  @override
+  String get rulesReviewDropped => '제외됨(일치하는 문장 없음)';
+
+  @override
   String get yoursTag => '내 항목';
 
   @override

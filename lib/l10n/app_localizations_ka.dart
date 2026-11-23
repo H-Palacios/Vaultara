@@ -8357,6 +8357,339 @@ class AppLocalizationsKa extends AppLocalizations {
   String get subcategoryPetPassports => 'შინაური ცხოველების პასპორტები';
 
   @override
+  String get petsTitle => 'შინაური ცხოველები';
+
+  @override
+  String get petsTileSubtitle => 'თითოეული ცხოველის დოკუმენტები, მიკროჩიპი და ვეტერინარი';
+
+  @override
+  String get petsNotMembers => 'შინაური ცხოველები არ ითვლება თქვენს წევრებში.';
+
+  @override
+  String get petsAdd => 'ცხოველის დამატება';
+
+  @override
+  String get petsEmptyBody => 'დაამატეთ თქვენი ცხოველი, რომ მისი აცრები, ლიცენზია, დაზღვევა და მიკროჩიპი ერთად იყოს, შეხსენებებით სანამ რამე ვადა გაუვა.';
+
+  @override
+  String get petsPremium => 'ცხოველების პროფილები Premium-ის ნაწილია.';
+
+  @override
+  String get petKindDog => 'ძაღლი';
+
+  @override
+  String get petKindCat => 'კატა';
+
+  @override
+  String get petKindOther => 'სხვა ცხოველი';
+
+  @override
+  String get petBirthday => 'დაბადების თარიღი';
+
+  @override
+  String petBorn(String date) {
+    return 'დაიბადა $date';
+  }
+
+  @override
+  String get petChipNumber => 'მიკროჩიპის ნომერი';
+
+  @override
+  String get petChipInvalid => 'გამოიყენეთ ჩიპის სერტიფიკატზე მითითებული 9-დან 15-მდე ციფრი.';
+
+  @override
+  String get petChipRegistry => 'ჩიპის რეესტრი';
+
+  @override
+  String get petChipTip => 'გადასვლისას ან ნომრის შეცვლისას განაახლეთ რეესტრი, თორემ ჩიპი ვერ დააბრუნებს თქვენს ცხოველს სახლში.';
+
+  @override
+  String get petVetName => 'ვეტერინარი';
+
+  @override
+  String get petVetPhone => 'ვეტერინარის ტელეფონი';
+
+  @override
+  String get petDocuments => 'დოკუმენტები';
+
+  @override
+  String get petStillToAdd => 'ჯერ კიდევ დასამატებელი';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'წაიშალოს $name? დოკუმენტები Vaultara-ში დარჩება.';
+  }
+
+  @override
+  String get petLostTitle => 'დაკარგული ცხოველი';
+
+  @override
+  String get petLostSteps => 'ჯერ ჩიპის რეესტრს აცნობეთ, რომ ცხოველი დაიკარგა. შემდეგ მიკროჩიპის ნომრით დაურეკეთ ახლომდებარე ვეტერინარებს და თავშესაფრებს და გააზიარეთ ახალი ფოტო ადგილზე და ონლაინ.';
+
+  @override
+  String get petTravelTitle => 'მოგზაურობა ცხოველთან ერთად';
+
+  @override
+  String get petTravelPick => 'სად მიდიხართ?';
+
+  @override
+  String get petTravelHome => 'სად ცხოვრობს თქვენი ცხოველი';
+
+  @override
+  String get petRuleChip => 'ISO მიკროჩიპი, ჩადგმული ცოფის აცრამდე';
+
+  @override
+  String get petRuleRabiesTest => 'ცოფის აცრა და ცოფის სისხლის ანალიზი აღიარებულ ლაბორატორიაში';
+
+  @override
+  String get petRuleCertificate => 'ჯანმრთელობის სერტიფიკატი ოფიციალური ვეტერინარისგან';
+
+  @override
+  String get petRulePermit => 'იმპორტის ნებართვა მოგზაურობამდე';
+
+  @override
+  String get petRuleTapeworm => 'ძაღლები: ლენტისებრი ჭიის მკურნალობა ჩასვლამდე 1-დან 5 დღემდე';
+
+  @override
+  String get petRuleCdcForm => 'CDC Dog Import Form თითოეული ძაღლისთვის';
+
+  @override
+  String get petRuleSomeCountries => 'მხოლოდ ზოგიერთი ქვეყნიდან:';
+
+  @override
+  String get petRulesOfficial => 'ოფიციალური წესები';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara-ს ჯერ არ აქვს $country-ის ცხოველების წესები. მისი ოფიციალური ვეტერინარული სამსახური ან საელჩო გეტყვით, რა არის საჭირო.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'მიკროჩიპის კანონი: $country';
+  }
+
+  @override
+  String get petLawUk => 'სავალდებულოა ძაღლებისთვის, ინგლისში კი კატებისთვისაც';
+
+  @override
+  String get petLawEu => 'წესები ქვეყნების მიხედვით განსხვავდება. ახალი ევროკავშირის კანონი მას ყველა ძაღლისა და კატისთვის სავალდებულოს გახდის.';
+
+  @override
+  String get petLawMostStates => 'სავალდებულოა ძაღლებისა და კატებისთვის შტატებისა და ტერიტორიების უმეტესობაში';
+
+  @override
+  String get petLawDogs => 'სავალდებულოა ძაღლებისთვის';
+
+  @override
+  String get petLawSellers => 'სავალდებულოა მომშენებლებისა და ცხოველების მაღაზიების მიერ გაყიდული ძაღლებისა და კატებისთვის';
+
+  @override
+  String get petLawLocal => 'განსაზღვრავს თითოეული შტატი, პროვინცია ან ქალაქი';
+
+  @override
+  String get petLawNone => 'ეროვნული კანონით არ მოითხოვება, მაგრამ საჭიროა მოგზაურობისა და შვილად აყვანის უმეტესობისთვის';
+
+  @override
+  String get tripPetsTitle => 'ცხოველები ამ მოგზაურობაში';
+
+  @override
+  String get petCheckNoChip => 'მიკროჩიპი შენახული არ არის';
+
+  @override
+  String get petCheckNoRabies => 'ცოფის აცრა შენახული არ არის';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'ცოფის აცრას ვადა გასდის $date, დაბრუნებამდე';
+  }
+
+  @override
+  String get petCheckTooSoon => 'სისხლის ანალიზის შემდეგი ლოდინი შეიძლება წასვლამდე ვერ მოესწროს. ახლავე დაელაპარაკეთ ვეტერინარს.';
+
+  @override
+  String get petCheckNoCertificate => 'ჯანმრთელობის სერტიფიკატი ან ცხოველის პასპორტი შენახული არ არის';
+
+  @override
+  String get planBenefitPets => 'ცხოველები საკუთარი დოკუმენტებით, მიკროჩიპით და ვეტერინარით, წევრებად არ ითვლება';
+
+  @override
+  String get tutorialsSubPets => 'ცხოველების დოკუმენტები, მიკროჩიპი და მოგზაურობის წესები';
+
+  @override
+  String get tourPetsListBody => 'თითოეულ ცხოველს აქვს საკუთარი პროფილი, მიკროჩიპით, ვეტერინარით და დოკუმენტებით ერთ ადგილას. შინაური ცხოველები არ ითვლება თქვენს წევრებში.';
+
+  @override
+  String get tourPetsDocsBody => 'აცრები, ლიცენზია და დაზღვევა ცხოველს ეკუთვნის, ამიტომ შეხსენებები ამბობს, ვისია. ნიშნები აჩვენებს, რა არის შენახული.';
+
+  @override
+  String get tourPetsTravelBody => 'აირჩიეთ ქვეყანა, რომ ნახოთ, რა სჭირდება თქვენს ცხოველს იქ სამოგზაუროდ და რამდენ ხანს გრძელდება.';
+
+  @override
+  String get petTypeLabel => 'შინაური ცხოველის სახეობა';
+
+  @override
+  String get petTypeHint => 'დაიწყეთ აკრეფა, მაგალითად კურდღელი ან თუთიყუში';
+
+  @override
+  String get petTypeFerret => 'ფრეტკა';
+
+  @override
+  String get petTypeRabbit => 'კურდღელი';
+
+  @override
+  String get petTypeGuineaPig => 'ზღვის გოჭი';
+
+  @override
+  String get petTypeHamster => 'ზაზუნა';
+
+  @override
+  String get petTypeRat => 'ვირთხა';
+
+  @override
+  String get petTypeMouse => 'თაგვი';
+
+  @override
+  String get petTypeGerbil => 'გერბილი';
+
+  @override
+  String get petTypeChinchilla => 'შინშილა';
+
+  @override
+  String get petTypeHedgehog => 'ზღარბი';
+
+  @override
+  String get petTypeHorse => 'ცხენი';
+
+  @override
+  String get petTypePony => 'პონი';
+
+  @override
+  String get petTypeDonkey => 'ვირი';
+
+  @override
+  String get petTypeParrot => 'თუთიყუში';
+
+  @override
+  String get petTypeBudgie => 'ტალღოვანი თუთიყუში';
+
+  @override
+  String get petTypeCockatiel => 'კორელა';
+
+  @override
+  String get petTypeCanary => 'კანარა';
+
+  @override
+  String get petTypeChicken => 'ქათამი';
+
+  @override
+  String get petTypeTortoise => 'კუ';
+
+  @override
+  String get petTypeTurtle => 'წყლის კუ';
+
+  @override
+  String get petTypeSnake => 'გველი';
+
+  @override
+  String get petTypeLizard => 'ხვლიკი';
+
+  @override
+  String get petTypeGecko => 'გეკონი';
+
+  @override
+  String get petTypeBeardedDragon => 'წვეროსანი აგამა';
+
+  @override
+  String get petTypeFrog => 'ბაყაყი';
+
+  @override
+  String get petTypeAxolotl => 'აქსოლოტლი';
+
+  @override
+  String get petTypeFish => 'თევზი';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'ცოფის ვაქცინა ჩამოსვლამდე მინიმუმ $duration ადრე';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'ცოფის სისხლის ანალიზი ვაქცინის შემდეგ, შემდეგ $duration ლოდინი';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'შემდეგ ფრენამდე მინიმუმ $duration დამტკიცებულ ქვეყანაში';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'ჩამოსვლისას კარანტინი მინიმუმ $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'თქვენი ცხოველი უნდა იყოს მინიმუმ $duration';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'ძალიან პატარაა $country-სთვის: თქვენი ცხოველი უნდა იყოს მინიმუმ $duration';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'შემოწმებულია Vaultara-ს მიერ · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'ჯერ არ შემოწმებულა. დაჯავშნამდე დაადასტურეთ ოფიციალურ საიტზე.';
+
+  @override
+  String get petRulesOtherAnimal => 'ამ ცხოველის წესები განსხვავდება ძაღლებისა და კატების წესებისგან. ნახეთ ოფიციალურ საიტზე, რა სჭირდება.';
+
+  @override
+  String get countryTypeHint => 'დაიწყეთ ქვეყნის აკრეფა, მაგალითად საფრანგეთი';
+
+  @override
+  String get assistantStepPets => 'თქვენი ცხოველების შემოწმება';
+
+  @override
+  String get tourPetsAddBody => 'აქ დაამატეთ კიდევ ერთი ცხოველი. დაიწყეთ სახეობის აკრეფა, მაგალითად კურდღელი ან თუთიყუში, და აირჩიეთ შეთავაზება.';
+
+  @override
+  String get rulesReviewTitle => 'გადასახედი წესები';
+
+  @override
+  String get rulesReviewSubtitle => 'სამთავრობო გვერდებიდან წაკითხული ოფიციალური წესები, რომლებიც თქვენს დამტკიცებას ელოდება';
+
+  @override
+  String get rulesReviewNow => 'ახლა ნაჩვენები';
+
+  @override
+  String get rulesReviewNew => 'ახლა გვერდზე';
+
+  @override
+  String get rulesReviewPets => 'მოგზაურობა ცხოველთან ერთად';
+
+  @override
+  String get rulesReviewPassport => 'პასპორტის მოქმედების ვადა';
+
+  @override
+  String get rulesReviewApprove => 'დამტკიცება';
+
+  @override
+  String get rulesReviewReject => 'უარყოფა';
+
+  @override
+  String get rulesReviewEmpty => 'გადასახედი არაფერია.';
+
+  @override
+  String get rulesReviewDropped => 'გამოტოვებულია (შესაბამისი წინადადება არ არის)';
+
+  @override
   String get yoursTag => 'თქვენი';
 
   @override

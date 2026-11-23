@@ -8357,6 +8357,339 @@ class AppLocalizationsHy extends AppLocalizations {
   String get subcategoryPetPassports => 'Ընտանի կենդանիների անձնագրեր';
 
   @override
+  String get petsTitle => 'Ընտանի կենդանիներ';
+
+  @override
+  String get petsTileSubtitle => 'Յուրաքանչյուր կենդանու փաստաթղթերը, միկրոչիպը և անասնաբույժը';
+
+  @override
+  String get petsNotMembers => 'Ընտանի կենդանիները չեն հաշվվում ձեր անդամների մեջ։';
+
+  @override
+  String get petsAdd => 'Ավելացնել կենդանի';
+
+  @override
+  String get petsEmptyBody => 'Ավելացրեք ձեր կենդանուն, որ պատվաստումները, լիցենզիան, ապահովագրությունը և միկրոչիպը մեկտեղ լինեն, հիշեցումներով՝ մինչև որևէ բանի ժամկետի ավարտը։';
+
+  @override
+  String get petsPremium => 'Կենդանիների պրոֆիլները Premium-ի մաս են։';
+
+  @override
+  String get petKindDog => 'Շուն';
+
+  @override
+  String get petKindCat => 'Կատու';
+
+  @override
+  String get petKindOther => 'Այլ կենդանի';
+
+  @override
+  String get petBirthday => 'Ծննդյան ամսաթիվ';
+
+  @override
+  String petBorn(String date) {
+    return 'Ծնվել է $date';
+  }
+
+  @override
+  String get petChipNumber => 'Միկրոչիպի համար';
+
+  @override
+  String get petChipInvalid => 'Օգտագործեք չիպի վկայականի 9-ից 15 թվանշանները։';
+
+  @override
+  String get petChipRegistry => 'Չիպի ռեգիստր';
+
+  @override
+  String get petChipTip => 'Տեղափոխվելիս կամ համարը փոխելիս թարմացրեք ռեգիստրը, այլապես չիպը չի կարող ձեր կենդանուն տուն վերադարձնել։';
+
+  @override
+  String get petVetName => 'Անասնաբույժ';
+
+  @override
+  String get petVetPhone => 'Անասնաբույժի հեռախոս';
+
+  @override
+  String get petDocuments => 'Փաստաթղթեր';
+
+  @override
+  String get petStillToAdd => 'Դեռ ավելացնելու';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'Հեռացնե՞լ $name-ին։ Փաստաթղթերը մնում են Vaultara-ում։';
+  }
+
+  @override
+  String get petLostTitle => 'Կորած կենդանի';
+
+  @override
+  String get petLostSteps => 'Նախ չիպի ռեգիստրին հայտնեք, որ կենդանին կորել է։ Հետո միկրոչիպի համարով զանգեք մոտակա անասնաբույժներին և կենդանիների ապաստարաններին, ու կիսվեք թարմ լուսանկարով տեղում և առցանց։';
+
+  @override
+  String get petTravelTitle => 'Ճամփորդություն կենդանու հետ';
+
+  @override
+  String get petTravelPick => 'Ու՞ր եք գնում';
+
+  @override
+  String get petTravelHome => 'Որտեղ է ապրում ձեր կենդանին';
+
+  @override
+  String get petRuleChip => 'ISO միկրոչիպ՝ տեղադրված կատաղության պատվաստումից առաջ';
+
+  @override
+  String get petRuleRabiesTest => 'Կատաղության պատվաստում և արյան թեստ հաստատված լաբորատորիայում';
+
+  @override
+  String get petRuleCertificate => 'Առողջության վկայական պաշտոնական անասնաբույժից';
+
+  @override
+  String get petRulePermit => 'Ներմուծման թույլտվություն մինչև ճամփորդությունը';
+
+  @override
+  String get petRuleTapeworm => 'Շներ՝ երիզորդի բուժում ժամանելուց 1-ից 5 օր առաջ';
+
+  @override
+  String get petRuleCdcForm => 'CDC Dog Import Form յուրաքանչյուր շան համար';
+
+  @override
+  String get petRuleSomeCountries => 'Միայն որոշ երկրներից՝';
+
+  @override
+  String get petRulesOfficial => 'Պաշտոնական կանոններ';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara-ն դեռ չունի $country-ի կենդանիների կանոնները։ Նրա պաշտոնական անասնաբուժական ծառայությունը կամ դեսպանատունը կասի՝ ինչ է պետք։';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Միկրոչիպի օրենքը՝ $country';
+  }
+
+  @override
+  String get petLawUk => 'Պարտադիր է շների, իսկ Անգլիայում նաև կատուների համար';
+
+  @override
+  String get petLawEu => 'Կանոնները տարբեր են ըստ երկրի։ ԵՄ նոր օրենքը այն պարտադիր կդարձնի բոլոր շների և կատուների համար։';
+
+  @override
+  String get petLawMostStates => 'Պարտադիր է շների և կատուների համար նահանգների և տարածքների մեծ մասում';
+
+  @override
+  String get petLawDogs => 'Պարտադիր է շների համար';
+
+  @override
+  String get petLawSellers => 'Պարտադիր է բուծողների և կենդանիների խանութների վաճառած շների և կատուների համար';
+
+  @override
+  String get petLawLocal => 'Որոշում է յուրաքանչյուր նահանգ, մարզ կամ քաղաք';
+
+  @override
+  String get petLawNone => 'Ազգային օրենքով պարտադիր չէ, բայց պետք է ճամփորդության և որդեգրումների մեծ մասի համար';
+
+  @override
+  String get tripPetsTitle => 'Կենդանիներ այս ճամփորդությունում';
+
+  @override
+  String get petCheckNoChip => 'Միկրոչիպ պահված չէ';
+
+  @override
+  String get petCheckNoRabies => 'Կատաղության պատվաստում պահված չէ';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Կատաղության պատվաստումն ավարտվում է $date, մինչև ձեր վերադարձը';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Արյան թեստից հետո սպասումը գուցե չտեղավորվի մինչև մեկնելը։ Հիմա խոսեք ձեր անասնաբույժի հետ։';
+
+  @override
+  String get petCheckNoCertificate => 'Առողջության վկայական կամ կենդանու անձնագիր պահված չէ';
+
+  @override
+  String get planBenefitPets => 'Կենդանիներ իրենց փաստաթղթերով, միկրոչիպով և անասնաբույժով, անդամ չեն հաշվվում';
+
+  @override
+  String get tutorialsSubPets => 'Կենդանիների փաստաթղթեր, միկրոչիպ և ճամփորդության կանոններ';
+
+  @override
+  String get tourPetsListBody => 'Յուրաքանչյուր կենդանի ունի իր պրոֆիլը՝ միկրոչիպը, անասնաբույժը և փաստաթղթերը մեկ տեղում։ Ընտանի կենդանիները չեն հաշվվում ձեր անդամների մեջ։';
+
+  @override
+  String get tourPetsDocsBody => 'Պատվաստումները, լիցենզիան և ապահովագրությունը կենդանունն են, ուստի հիշեցումները ասում են՝ ումն են։ Նշանները ցույց են տալիս, թե ինչ է պահված։';
+
+  @override
+  String get tourPetsTravelBody => 'Ընտրեք երկիր՝ տեսնելու, թե ինչ է պետք ձեր կենդանուն այնտեղ ճամփորդելու համար և որքան ժամանակ է պահանջվում։';
+
+  @override
+  String get petTypeLabel => 'Ընտանի կենդանու տեսակ';
+
+  @override
+  String get petTypeHint => 'Սկսեք մուտքագրել, օրինակ՝ Ճագար կամ Թութակ';
+
+  @override
+  String get petTypeFerret => 'Ֆրետկա';
+
+  @override
+  String get petTypeRabbit => 'Ճագար';
+
+  @override
+  String get petTypeGuineaPig => 'Ծովախոզուկ';
+
+  @override
+  String get petTypeHamster => 'Համստեր';
+
+  @override
+  String get petTypeRat => 'Առնետ';
+
+  @override
+  String get petTypeMouse => 'Մուկ';
+
+  @override
+  String get petTypeGerbil => 'Գերբիլ';
+
+  @override
+  String get petTypeChinchilla => 'Շինշիլա';
+
+  @override
+  String get petTypeHedgehog => 'Ոզնի';
+
+  @override
+  String get petTypeHorse => 'Ձի';
+
+  @override
+  String get petTypePony => 'Պոնի';
+
+  @override
+  String get petTypeDonkey => 'Էշ';
+
+  @override
+  String get petTypeParrot => 'Թութակ';
+
+  @override
+  String get petTypeBudgie => 'Ալիքավոր թութակ';
+
+  @override
+  String get petTypeCockatiel => 'Կորելլա';
+
+  @override
+  String get petTypeCanary => 'Դեղձանիկ';
+
+  @override
+  String get petTypeChicken => 'Հավ';
+
+  @override
+  String get petTypeTortoise => 'Կրիա';
+
+  @override
+  String get petTypeTurtle => 'Ջրային կրիա';
+
+  @override
+  String get petTypeSnake => 'Օձ';
+
+  @override
+  String get petTypeLizard => 'Մողես';
+
+  @override
+  String get petTypeGecko => 'Գեկոն';
+
+  @override
+  String get petTypeBeardedDragon => 'Մորուքավոր ագամա';
+
+  @override
+  String get petTypeFrog => 'Գորտ';
+
+  @override
+  String get petTypeAxolotl => 'Աքսոլոտլ';
+
+  @override
+  String get petTypeFish => 'Ձուկ';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Կատաղության պատվաստում ժամանելուց առնվազն $duration առաջ';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Կատաղության արյան թեստ պատվաստումից հետո, ապա $duration սպասում';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Ապա թռիչքից առաջ առնվազն $duration հաստատված երկրում';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Ժամանելիս կարանտին առնվազն $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Ձեր կենդանին պետք է լինի առնվազն $duration';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Շատ փոքր է $country-ի համար. ձեր կենդանին պետք է լինի առնվազն $duration';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Ստուգված է Vaultara-ի կողմից · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Դեռ ստուգված չէ։ Ամրագրելուց առաջ հաստատեք պաշտոնական կայքում։';
+
+  @override
+  String get petRulesOtherAnimal => 'Այս կենդանու կանոնները տարբերվում են շների և կատուների կանոններից։ Պաշտոնական կայքում տեսեք, թե ինչ է պետք։';
+
+  @override
+  String get countryTypeHint => 'Սկսեք մուտքագրել երկիր, օրինակ՝ Ֆրանսիա';
+
+  @override
+  String get assistantStepPets => 'Ստուգում ենք ձեր կենդանիներին';
+
+  @override
+  String get tourPetsAddBody => 'Այստեղ ավելացրեք ևս մեկ կենդանի։ Սկսեք մուտքագրել տեսակը, օրինակ՝ Ճագար կամ Թութակ, և ընտրեք առաջարկ։';
+
+  @override
+  String get rulesReviewTitle => 'Ստուգման կանոններ';
+
+  @override
+  String get rulesReviewSubtitle => 'Պետական էջերից կարդացված պաշտոնական կանոններ, որոնք սպասում են ձեր հաստատմանը';
+
+  @override
+  String get rulesReviewNow => 'Հիմա ցուցադրվող';
+
+  @override
+  String get rulesReviewNew => 'Հիմա էջում';
+
+  @override
+  String get rulesReviewPets => 'Ճամփորդություն կենդանու հետ';
+
+  @override
+  String get rulesReviewPassport => 'Անձնագրի վավերականություն';
+
+  @override
+  String get rulesReviewApprove => 'Հաստատել';
+
+  @override
+  String get rulesReviewReject => 'Մերժել';
+
+  @override
+  String get rulesReviewEmpty => 'Ստուգելու բան չկա։';
+
+  @override
+  String get rulesReviewDropped => 'Բաց թողնված (համապատասխան նախադասություն չկա)';
+
+  @override
   String get yoursTag => 'Ձերը';
 
   @override

@@ -8351,6 +8351,339 @@ class AppLocalizationsFil extends AppLocalizations {
   String get subcategoryPetPassports => 'Pasaporte ng alagang hayop';
 
   @override
+  String get petsTitle => 'Mga alaga';
+
+  @override
+  String get petsTileSubtitle => 'Mga dokumento, microchip at beterinaryo ng bawat alaga';
+
+  @override
+  String get petsNotMembers => 'Hindi ibinibilang ang mga alaga sa iyong mga miyembro.';
+
+  @override
+  String get petsAdd => 'Magdagdag ng alaga';
+
+  @override
+  String get petsEmptyBody => 'Idagdag ang iyong alaga para magkakasama ang mga bakuna, lisensya, insurance at microchip nito, may paalala bago may mag-expire.';
+
+  @override
+  String get petsPremium => 'Bahagi ng Premium ang mga profile ng alaga.';
+
+  @override
+  String get petKindDog => 'Aso';
+
+  @override
+  String get petKindCat => 'Pusa';
+
+  @override
+  String get petKindOther => 'Ibang alaga';
+
+  @override
+  String get petBirthday => 'Petsa ng kapanganakan';
+
+  @override
+  String petBorn(String date) {
+    return 'Ipinanganak $date';
+  }
+
+  @override
+  String get petChipNumber => 'Numero ng microchip';
+
+  @override
+  String get petChipInvalid => 'Gamitin ang 9 hanggang 15 digit sa certificate ng chip.';
+
+  @override
+  String get petChipRegistry => 'Registry ng chip';
+
+  @override
+  String get petChipTip => 'Panatilihing updated ang registry kapag lumipat ka o nagpalit ng numero, kung hindi ay hindi maiuuwi ng chip ang alaga mo.';
+
+  @override
+  String get petVetName => 'Beterinaryo';
+
+  @override
+  String get petVetPhone => 'Telepono ng beterinaryo';
+
+  @override
+  String get petDocuments => 'Mga dokumento';
+
+  @override
+  String get petStillToAdd => 'Idadagdag pa';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'Alisin si $name? Mananatili sa Vaultara ang mga dokumento.';
+  }
+
+  @override
+  String get petLostTitle => 'Nawawalang alaga';
+
+  @override
+  String get petLostSteps => 'I-report muna sa registry ng chip na nawawala ang alaga mo. Pagkatapos ay tawagan ang mga kalapit na beterinaryo at animal shelter gamit ang numero ng microchip, at magbahagi ng bagong litrato sa lugar at online.';
+
+  @override
+  String get petTravelTitle => 'Pagbiyahe kasama ang alaga';
+
+  @override
+  String get petTravelPick => 'Saan ka pupunta?';
+
+  @override
+  String get petTravelHome => 'Kung saan nakatira ang alaga mo';
+
+  @override
+  String get petRuleChip => 'Isang ISO microchip, inilagay bago ang bakuna laban sa rabies';
+
+  @override
+  String get petRuleRabiesTest => 'Bakuna laban sa rabies at blood test para sa rabies mula sa aprubadong lab';
+
+  @override
+  String get petRuleCertificate => 'Health certificate mula sa opisyal na beterinaryo';
+
+  @override
+  String get petRulePermit => 'Import permit bago bumiyahe';
+
+  @override
+  String get petRuleTapeworm => 'Mga aso: gamot sa tapeworm 1 hanggang 5 araw bago ka dumating';
+
+  @override
+  String get petRuleCdcForm => 'Isang CDC Dog Import Form para sa bawat aso';
+
+  @override
+  String get petRuleSomeCountries => 'Mula lang sa ilang bansa:';
+
+  @override
+  String get petRulesOfficial => 'Mga opisyal na patakaran';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Wala pang patakaran sa alaga ang Vaultara para sa $country. Masasabi ng opisyal na serbisyong beterinaryo o embahada nito kung ano ang kailangan.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Batas sa microchip sa $country';
+  }
+
+  @override
+  String get petLawUk => 'Kailangan para sa mga aso, at sa mga pusa sa England';
+
+  @override
+  String get petLawEu => 'Iba-iba ang patakaran sa bawat bansa. Gagawin itong kailangan ng isang bagong batas ng EU para sa lahat ng aso at pusa.';
+
+  @override
+  String get petLawMostStates => 'Kailangan para sa mga aso at pusa sa karamihan ng estado at teritoryo';
+
+  @override
+  String get petLawDogs => 'Kailangan para sa mga aso';
+
+  @override
+  String get petLawSellers => 'Kailangan para sa mga aso at pusang ibinebenta ng mga breeder at pet shop';
+
+  @override
+  String get petLawLocal => 'Itinatakda ng bawat estado, probinsya o lungsod';
+
+  @override
+  String get petLawNone => 'Hindi hinihingi ng pambansang batas, pero kailangan sa pagbiyahe at sa karamihan ng pag-ampon';
+
+  @override
+  String get tripPetsTitle => 'Mga alaga sa biyaheng ito';
+
+  @override
+  String get petCheckNoChip => 'Walang naka-save na microchip';
+
+  @override
+  String get petCheckNoRabies => 'Walang naka-save na bakuna laban sa rabies';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Mag-e-expire ang bakuna laban sa rabies sa $date, bago ka bumalik';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Baka hindi magkasya ang paghihintay pagkatapos ng blood test bago ka umalis. Kausapin na ang iyong beterinaryo.';
+
+  @override
+  String get petCheckNoCertificate => 'Walang naka-save na health certificate o pet passport';
+
+  @override
+  String get planBenefitPets => 'Mga alaga na may sariling dokumento, microchip at beterinaryo, hindi ibinibilang na miyembro';
+
+  @override
+  String get tutorialsSubPets => 'Mga dokumento ng alaga, microchip at patakaran sa biyahe';
+
+  @override
+  String get tourPetsListBody => 'May sariling profile ang bawat alaga, kasama ang microchip, beterinaryo at mga dokumento sa iisang lugar. Hindi ibinibilang ang mga alaga sa iyong mga miyembro.';
+
+  @override
+  String get tourPetsDocsBody => 'Pag-aari ng alaga ang mga bakuna, lisensya at insurance, kaya sinasabi ng mga paalala kung kanino ang mga ito. Ipinapakita ng mga badge kung ano ang naka-save.';
+
+  @override
+  String get tourPetsTravelBody => 'Pumili ng bansa para makita kung ano ang kailangan ng alaga mo para bumiyahe roon, at gaano katagal ito.';
+
+  @override
+  String get petTypeLabel => 'Uri ng alaga';
+
+  @override
+  String get petTypeHint => 'Magsimulang mag-type, halimbawa Kuneho o Loro';
+
+  @override
+  String get petTypeFerret => 'Ferret';
+
+  @override
+  String get petTypeRabbit => 'Kuneho';
+
+  @override
+  String get petTypeGuineaPig => 'Guinea pig';
+
+  @override
+  String get petTypeHamster => 'Hamster';
+
+  @override
+  String get petTypeRat => 'Daga';
+
+  @override
+  String get petTypeMouse => 'Daga (maliit)';
+
+  @override
+  String get petTypeGerbil => 'Gerbil';
+
+  @override
+  String get petTypeChinchilla => 'Chinchilla';
+
+  @override
+  String get petTypeHedgehog => 'Hedgehog';
+
+  @override
+  String get petTypeHorse => 'Kabayo';
+
+  @override
+  String get petTypePony => 'Pony';
+
+  @override
+  String get petTypeDonkey => 'Asno';
+
+  @override
+  String get petTypeParrot => 'Loro';
+
+  @override
+  String get petTypeBudgie => 'Budgie';
+
+  @override
+  String get petTypeCockatiel => 'Cockatiel';
+
+  @override
+  String get petTypeCanary => 'Canary';
+
+  @override
+  String get petTypeChicken => 'Manok';
+
+  @override
+  String get petTypeTortoise => 'Pagong (lupa)';
+
+  @override
+  String get petTypeTurtle => 'Pagong (tubig)';
+
+  @override
+  String get petTypeSnake => 'Ahas';
+
+  @override
+  String get petTypeLizard => 'Butiki';
+
+  @override
+  String get petTypeGecko => 'Tuko';
+
+  @override
+  String get petTypeBeardedDragon => 'Bearded dragon';
+
+  @override
+  String get petTypeFrog => 'Palaka';
+
+  @override
+  String get petTypeAxolotl => 'Axolotl';
+
+  @override
+  String get petTypeFish => 'Isda';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Bakuna laban sa rabies nang hindi bababa sa $duration bago ka dumating';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Rabies blood test pagkatapos ng bakuna, saka maghintay ng $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Pagkatapos, hindi bababa sa $duration sa aprubadong bansa bago lumipad';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Quarantine pagdating nang hindi bababa sa $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Dapat hindi bababa sa $duration ang edad ng alaga mo';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Masyadong bata para sa $country: dapat hindi bababa sa $duration ang edad ng alaga mo';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Sinuri ng Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Hindi pa nasusuri. Kumpirmahin sa opisyal na site bago mag-book.';
+
+  @override
+  String get petRulesOtherAnimal => 'Iba ang mga patakaran para sa hayop na ito kumpara sa aso at pusa. Tingnan sa opisyal na site kung ano ang kailangan nito.';
+
+  @override
+  String get countryTypeHint => 'Magsimulang mag-type ng bansa, halimbawa France';
+
+  @override
+  String get assistantStepPets => 'Sinusuri ang mga alaga mo';
+
+  @override
+  String get tourPetsAddBody => 'Magdagdag pa ng alaga dito. Simulang i-type ang uri, gaya ng Kuneho o Loro, at pumili ng mungkahi.';
+
+  @override
+  String get rulesReviewTitle => 'Mga patakarang susuriin';
+
+  @override
+  String get rulesReviewSubtitle => 'Mga opisyal na patakarang nabasa sa mga pahina ng gobyerno, naghihintay ng pag-apruba mo';
+
+  @override
+  String get rulesReviewNow => 'Ipinapakita ngayon';
+
+  @override
+  String get rulesReviewNew => 'Nasa pahina ngayon';
+
+  @override
+  String get rulesReviewPets => 'Paglalakbay kasama ang alaga';
+
+  @override
+  String get rulesReviewPassport => 'Bisa ng pasaporte';
+
+  @override
+  String get rulesReviewApprove => 'Aprubahan';
+
+  @override
+  String get rulesReviewReject => 'Tanggihan';
+
+  @override
+  String get rulesReviewEmpty => 'Walang susuriin.';
+
+  @override
+  String get rulesReviewDropped => 'Inalis (walang tugmang pangungusap)';
+
+  @override
   String get yoursTag => 'Iyo';
 
   @override

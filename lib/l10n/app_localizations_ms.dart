@@ -8300,6 +8300,339 @@ class AppLocalizationsMs extends AppLocalizations {
   String get subcategoryPetPassports => 'Pasport haiwan peliharaan';
 
   @override
+  String get petsTitle => 'Haiwan peliharaan';
+
+  @override
+  String get petsTileSubtitle => 'Dokumen, mikrocip dan doktor haiwan untuk setiap haiwan';
+
+  @override
+  String get petsNotMembers => 'Haiwan peliharaan tidak dikira dalam ahli anda.';
+
+  @override
+  String get petsAdd => 'Tambah haiwan peliharaan';
+
+  @override
+  String get petsEmptyBody => 'Tambah haiwan anda supaya vaksin, lesen, insurans dan mikrocipnya disimpan bersama, dengan peringatan sebelum apa-apa tamat tempoh.';
+
+  @override
+  String get petsPremium => 'Profil haiwan peliharaan ialah sebahagian daripada Premium.';
+
+  @override
+  String get petKindDog => 'Anjing';
+
+  @override
+  String get petKindCat => 'Kucing';
+
+  @override
+  String get petKindOther => 'Haiwan lain';
+
+  @override
+  String get petBirthday => 'Tarikh lahir';
+
+  @override
+  String petBorn(String date) {
+    return 'Lahir $date';
+  }
+
+  @override
+  String get petChipNumber => 'Nombor mikrocip';
+
+  @override
+  String get petChipInvalid => 'Gunakan 9 hingga 15 digit pada sijil cip.';
+
+  @override
+  String get petChipRegistry => 'Pendaftaran cip';
+
+  @override
+  String get petChipTip => 'Kemas kini pendaftaran apabila anda berpindah atau menukar nombor, jika tidak cip tidak dapat membawa haiwan anda pulang.';
+
+  @override
+  String get petVetName => 'Doktor haiwan';
+
+  @override
+  String get petVetPhone => 'Telefon doktor haiwan';
+
+  @override
+  String get petDocuments => 'Dokumen';
+
+  @override
+  String get petStillToAdd => 'Belum ditambah';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'Buang $name? Dokumennya kekal dalam Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'Haiwan hilang';
+
+  @override
+  String get petLostSteps => 'Laporkan dahulu kehilangan haiwan anda kepada pendaftaran cip. Kemudian hubungi doktor haiwan dan pusat perlindungan haiwan berdekatan dengan nombor mikrocip, dan kongsi foto terkini di kawasan anda dan dalam talian.';
+
+  @override
+  String get petTravelTitle => 'Melancong dengan haiwan peliharaan';
+
+  @override
+  String get petTravelPick => 'Anda hendak ke mana?';
+
+  @override
+  String get petTravelHome => 'Tempat haiwan anda tinggal';
+
+  @override
+  String get petRuleChip => 'Mikrocip ISO, dipasang sebelum vaksin rabies';
+
+  @override
+  String get petRuleRabiesTest => 'Vaksin rabies dan ujian darah rabies dari makmal yang diluluskan';
+
+  @override
+  String get petRuleCertificate => 'Sijil kesihatan daripada doktor haiwan rasmi';
+
+  @override
+  String get petRulePermit => 'Permit import sebelum melancong';
+
+  @override
+  String get petRuleTapeworm => 'Anjing: rawatan cacing pita 1 hingga 5 hari sebelum anda tiba';
+
+  @override
+  String get petRuleCdcForm => 'Satu CDC Dog Import Form untuk setiap anjing';
+
+  @override
+  String get petRuleSomeCountries => 'Hanya dari sesetengah negara:';
+
+  @override
+  String get petRulesOfficial => 'Peraturan rasmi';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara belum ada peraturan haiwan peliharaan untuk $country. Perkhidmatan veterinar rasmi atau kedutaannya boleh memberitahu apa yang diperlukan.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Undang-undang mikrocip di $country';
+  }
+
+  @override
+  String get petLawUk => 'Wajib untuk anjing, dan untuk kucing di England';
+
+  @override
+  String get petLawEu => 'Peraturan berbeza mengikut negara. Undang-undang baharu EU akan mewajibkannya untuk semua anjing dan kucing.';
+
+  @override
+  String get petLawMostStates => 'Wajib untuk anjing dan kucing di kebanyakan negeri dan wilayah';
+
+  @override
+  String get petLawDogs => 'Wajib untuk anjing';
+
+  @override
+  String get petLawSellers => 'Wajib untuk anjing dan kucing yang dijual oleh penternak dan kedai haiwan';
+
+  @override
+  String get petLawLocal => 'Ditetapkan oleh setiap negeri, wilayah atau bandar';
+
+  @override
+  String get petLawNone => 'Tidak diwajibkan oleh undang-undang negara, tetapi diperlukan untuk melancong dan kebanyakan pengambilan anak angkat';
+
+  @override
+  String get tripPetsTitle => 'Haiwan peliharaan dalam perjalanan ini';
+
+  @override
+  String get petCheckNoChip => 'Tiada mikrocip disimpan';
+
+  @override
+  String get petCheckNoRabies => 'Tiada vaksin rabies disimpan';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Vaksin rabies tamat $date, sebelum anda pulang';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Tempoh menunggu selepas ujian darah mungkin tidak sempat sebelum anda bertolak. Bercakap dengan doktor haiwan anda sekarang.';
+
+  @override
+  String get petCheckNoCertificate => 'Tiada sijil kesihatan atau pasport haiwan disimpan';
+
+  @override
+  String get planBenefitPets => 'Haiwan peliharaan dengan dokumen, mikrocip dan doktor haiwan sendiri, tidak dikira sebagai ahli';
+
+  @override
+  String get tutorialsSubPets => 'Dokumen haiwan, mikrocip dan peraturan perjalanan';
+
+  @override
+  String get tourPetsListBody => 'Setiap haiwan mempunyai profil sendiri, dengan mikrocip, doktor haiwan dan dokumen di satu tempat. Haiwan peliharaan tidak dikira dalam ahli anda.';
+
+  @override
+  String get tourPetsDocsBody => 'Vaksin, lesen dan insurans milik haiwan itu, jadi peringatan menyebut milik siapa. Lencana menunjukkan apa yang disimpan.';
+
+  @override
+  String get tourPetsTravelBody => 'Pilih negara untuk melihat apa yang haiwan anda perlukan untuk melancong ke sana, dan berapa lama masa diambil.';
+
+  @override
+  String get petTypeLabel => 'Jenis haiwan peliharaan';
+
+  @override
+  String get petTypeHint => 'Mula menaip, contohnya Arnab atau Burung kakak tua';
+
+  @override
+  String get petTypeFerret => 'Ferret';
+
+  @override
+  String get petTypeRabbit => 'Arnab';
+
+  @override
+  String get petTypeGuineaPig => 'Tikus belanda';
+
+  @override
+  String get petTypeHamster => 'Hamster';
+
+  @override
+  String get petTypeRat => 'Tikus';
+
+  @override
+  String get petTypeMouse => 'Mencit';
+
+  @override
+  String get petTypeGerbil => 'Gerbil';
+
+  @override
+  String get petTypeChinchilla => 'Chinchilla';
+
+  @override
+  String get petTypeHedgehog => 'Landak';
+
+  @override
+  String get petTypeHorse => 'Kuda';
+
+  @override
+  String get petTypePony => 'Kuda padi';
+
+  @override
+  String get petTypeDonkey => 'Keldai';
+
+  @override
+  String get petTypeParrot => 'Burung kakak tua';
+
+  @override
+  String get petTypeBudgie => 'Bajri';
+
+  @override
+  String get petTypeCockatiel => 'Kakatua nimfa';
+
+  @override
+  String get petTypeCanary => 'Burung kenari';
+
+  @override
+  String get petTypeChicken => 'Ayam';
+
+  @override
+  String get petTypeTortoise => 'Kura-kura darat';
+
+  @override
+  String get petTypeTurtle => 'Kura-kura air';
+
+  @override
+  String get petTypeSnake => 'Ular';
+
+  @override
+  String get petTypeLizard => 'Cicak';
+
+  @override
+  String get petTypeGecko => 'Tokek';
+
+  @override
+  String get petTypeBeardedDragon => 'Bearded dragon';
+
+  @override
+  String get petTypeFrog => 'Katak';
+
+  @override
+  String get petTypeAxolotl => 'Aksolotl';
+
+  @override
+  String get petTypeFish => 'Ikan';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Vaksin rabies sekurang-kurangnya $duration sebelum anda tiba';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Ujian darah rabies selepas vaksin, kemudian menunggu $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Kemudian sekurang-kurangnya $duration di negara yang diluluskan sebelum terbang';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Kuarantin semasa tiba selama sekurang-kurangnya $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Haiwan anda mesti berumur sekurang-kurangnya $duration';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Terlalu muda untuk $country: haiwan anda mesti berumur sekurang-kurangnya $duration';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Disemak oleh Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Belum disemak. Sahkan di laman rasmi sebelum menempah.';
+
+  @override
+  String get petRulesOtherAnimal => 'Peraturan untuk haiwan ini berbeza daripada anjing dan kucing. Lihat di laman rasmi apa yang diperlukan.';
+
+  @override
+  String get countryTypeHint => 'Mula menaip negara, contohnya Perancis';
+
+  @override
+  String get assistantStepPets => 'Menyemak haiwan peliharaan anda';
+
+  @override
+  String get tourPetsAddBody => 'Tambah seekor lagi haiwan di sini. Mula taip jenisnya, seperti Arnab atau Burung kakak tua, dan pilih cadangan.';
+
+  @override
+  String get rulesReviewTitle => 'Peraturan untuk disemak';
+
+  @override
+  String get rulesReviewSubtitle => 'Peraturan rasmi yang dibaca dari halaman kerajaan, menunggu kelulusan anda';
+
+  @override
+  String get rulesReviewNow => 'Ditunjukkan sekarang';
+
+  @override
+  String get rulesReviewNew => 'Di halaman sekarang';
+
+  @override
+  String get rulesReviewPets => 'Perjalanan dengan haiwan';
+
+  @override
+  String get rulesReviewPassport => 'Tempoh sah pasport';
+
+  @override
+  String get rulesReviewApprove => 'Luluskan';
+
+  @override
+  String get rulesReviewReject => 'Tolak';
+
+  @override
+  String get rulesReviewEmpty => 'Tiada apa untuk disemak.';
+
+  @override
+  String get rulesReviewDropped => 'Ditinggalkan (tiada ayat sepadan)';
+
+  @override
   String get yoursTag => 'Milik anda';
 
   @override

@@ -8300,6 +8300,339 @@ class AppLocalizationsVi extends AppLocalizations {
   String get subcategoryPetPassports => 'Hộ chiếu thú cưng';
 
   @override
+  String get petsTitle => 'Thú cưng';
+
+  @override
+  String get petsTileSubtitle => 'Giấy tờ, vi mạch và bác sĩ thú y của từng thú cưng';
+
+  @override
+  String get petsNotMembers => 'Thú cưng không được tính vào số thành viên của bạn.';
+
+  @override
+  String get petsAdd => 'Thêm thú cưng';
+
+  @override
+  String get petsEmptyBody => 'Thêm thú cưng để giữ vắc xin, giấy phép, bảo hiểm và vi mạch ở cùng một chỗ, kèm lời nhắc trước khi thứ gì hết hạn.';
+
+  @override
+  String get petsPremium => 'Hồ sơ thú cưng thuộc gói Premium.';
+
+  @override
+  String get petKindDog => 'Chó';
+
+  @override
+  String get petKindCat => 'Mèo';
+
+  @override
+  String get petKindOther => 'Thú cưng khác';
+
+  @override
+  String get petBirthday => 'Ngày sinh';
+
+  @override
+  String petBorn(String date) {
+    return 'Sinh ngày $date';
+  }
+
+  @override
+  String get petChipNumber => 'Số vi mạch';
+
+  @override
+  String get petChipInvalid => 'Dùng 9 đến 15 chữ số trên giấy chứng nhận vi mạch.';
+
+  @override
+  String get petChipRegistry => 'Nơi đăng ký vi mạch';
+
+  @override
+  String get petChipTip => 'Cập nhật thông tin đăng ký khi bạn chuyển nhà hoặc đổi số, nếu không vi mạch không thể đưa thú cưng về nhà.';
+
+  @override
+  String get petVetName => 'Bác sĩ thú y';
+
+  @override
+  String get petVetPhone => 'Điện thoại bác sĩ thú y';
+
+  @override
+  String get petDocuments => 'Giấy tờ';
+
+  @override
+  String get petStillToAdd => 'Còn cần thêm';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'Xóa $name? Giấy tờ vẫn còn trong Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'Thú cưng bị lạc';
+
+  @override
+  String get petLostSteps => 'Trước tiên hãy báo cho nơi đăng ký vi mạch rằng thú cưng đã bị lạc. Sau đó gọi các bác sĩ thú y và trại cứu hộ gần đó kèm số vi mạch, và chia sẻ ảnh gần đây ở khu vực và trên mạng.';
+
+  @override
+  String get petTravelTitle => 'Du lịch cùng thú cưng';
+
+  @override
+  String get petTravelPick => 'Bạn đi đâu?';
+
+  @override
+  String get petTravelHome => 'Nơi thú cưng của bạn sống';
+
+  @override
+  String get petRuleChip => 'Vi mạch ISO, gắn trước khi tiêm vắc xin dại';
+
+  @override
+  String get petRuleRabiesTest => 'Vắc xin dại và xét nghiệm máu bệnh dại tại phòng thí nghiệm được phê duyệt';
+
+  @override
+  String get petRuleCertificate => 'Giấy chứng nhận sức khỏe của bác sĩ thú y chính thức';
+
+  @override
+  String get petRulePermit => 'Giấy phép nhập khẩu trước khi đi';
+
+  @override
+  String get petRuleTapeworm => 'Chó: tẩy sán dây 1 đến 5 ngày trước khi đến';
+
+  @override
+  String get petRuleCdcForm => 'Một CDC Dog Import Form cho mỗi con chó';
+
+  @override
+  String get petRuleSomeCountries => 'Chỉ từ một số nước:';
+
+  @override
+  String get petRulesOfficial => 'Quy định chính thức';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara chưa có quy định về thú cưng của $country. Cơ quan thú y chính thức hoặc đại sứ quán của nước đó có thể cho bạn biết cần gì.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Luật vi mạch tại $country';
+  }
+
+  @override
+  String get petLawUk => 'Bắt buộc với chó, và với mèo ở Anh';
+
+  @override
+  String get petLawEu => 'Quy định khác nhau tùy nước. Luật mới của EU sẽ bắt buộc với tất cả chó và mèo.';
+
+  @override
+  String get petLawMostStates => 'Bắt buộc với chó và mèo ở hầu hết các bang và vùng lãnh thổ';
+
+  @override
+  String get petLawDogs => 'Bắt buộc với chó';
+
+  @override
+  String get petLawSellers => 'Bắt buộc với chó và mèo do người nhân giống và cửa hàng thú cưng bán';
+
+  @override
+  String get petLawLocal => 'Do từng bang, tỉnh hoặc thành phố quy định';
+
+  @override
+  String get petLawNone => 'Luật quốc gia không bắt buộc, nhưng cần để đi lại và cho hầu hết việc nhận nuôi';
+
+  @override
+  String get tripPetsTitle => 'Thú cưng trong chuyến đi này';
+
+  @override
+  String get petCheckNoChip => 'Chưa lưu vi mạch';
+
+  @override
+  String get petCheckNoRabies => 'Chưa lưu vắc xin dại';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Vắc xin dại hết hạn vào $date, trước khi bạn về';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Thời gian chờ sau xét nghiệm máu có thể không kịp trước khi đi. Hãy nói chuyện với bác sĩ thú y ngay.';
+
+  @override
+  String get petCheckNoCertificate => 'Chưa lưu giấy chứng nhận sức khỏe hoặc hộ chiếu thú cưng';
+
+  @override
+  String get planBenefitPets => 'Thú cưng có giấy tờ, vi mạch và bác sĩ thú y riêng, không tính là thành viên';
+
+  @override
+  String get tutorialsSubPets => 'Giấy tờ thú cưng, vi mạch và quy định đi lại';
+
+  @override
+  String get tourPetsListBody => 'Mỗi thú cưng có hồ sơ riêng, với vi mạch, bác sĩ thú y và giấy tờ ở một chỗ. Thú cưng không được tính vào số thành viên của bạn.';
+
+  @override
+  String get tourPetsDocsBody => 'Vắc xin, giấy phép và bảo hiểm thuộc về thú cưng, nên lời nhắc cho biết của ai. Huy hiệu cho thấy những gì đã lưu.';
+
+  @override
+  String get tourPetsTravelBody => 'Chọn một nước để xem thú cưng cần gì để đến đó và mất bao lâu.';
+
+  @override
+  String get petTypeLabel => 'Loại thú cưng';
+
+  @override
+  String get petTypeHint => 'Bắt đầu gõ, ví dụ Thỏ hoặc Vẹt';
+
+  @override
+  String get petTypeFerret => 'Chồn sương';
+
+  @override
+  String get petTypeRabbit => 'Thỏ';
+
+  @override
+  String get petTypeGuineaPig => 'Chuột lang';
+
+  @override
+  String get petTypeHamster => 'Chuột hamster';
+
+  @override
+  String get petTypeRat => 'Chuột cống';
+
+  @override
+  String get petTypeMouse => 'Chuột nhắt';
+
+  @override
+  String get petTypeGerbil => 'Chuột nhảy';
+
+  @override
+  String get petTypeChinchilla => 'Sóc chinchilla';
+
+  @override
+  String get petTypeHedgehog => 'Nhím';
+
+  @override
+  String get petTypeHorse => 'Ngựa';
+
+  @override
+  String get petTypePony => 'Ngựa lùn';
+
+  @override
+  String get petTypeDonkey => 'Lừa';
+
+  @override
+  String get petTypeParrot => 'Vẹt';
+
+  @override
+  String get petTypeBudgie => 'Vẹt yến phụng';
+
+  @override
+  String get petTypeCockatiel => 'Vẹt mào';
+
+  @override
+  String get petTypeCanary => 'Chim hoàng yến';
+
+  @override
+  String get petTypeChicken => 'Gà';
+
+  @override
+  String get petTypeTortoise => 'Rùa cạn';
+
+  @override
+  String get petTypeTurtle => 'Rùa nước';
+
+  @override
+  String get petTypeSnake => 'Rắn';
+
+  @override
+  String get petTypeLizard => 'Thằn lằn';
+
+  @override
+  String get petTypeGecko => 'Tắc kè';
+
+  @override
+  String get petTypeBeardedDragon => 'Rồng râu';
+
+  @override
+  String get petTypeFrog => 'Ếch';
+
+  @override
+  String get petTypeAxolotl => 'Kỳ giông axolotl';
+
+  @override
+  String get petTypeFish => 'Cá';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Tiêm phòng dại ít nhất $duration trước khi đến';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Xét nghiệm máu bệnh dại sau khi tiêm, rồi chờ $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Sau đó ít nhất $duration ở một nước được chấp thuận trước khi bay';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Cách ly khi đến ít nhất $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Thú cưng của bạn phải được ít nhất $duration';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Quá nhỏ để đến $country: thú cưng của bạn phải được ít nhất $duration';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Vaultara đã kiểm tra · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Chưa được kiểm tra. Hãy xác nhận trên trang chính thức trước khi đặt.';
+
+  @override
+  String get petRulesOtherAnimal => 'Quy định cho loài vật này khác với chó và mèo. Hãy xem trên trang chính thức xem cần những gì.';
+
+  @override
+  String get countryTypeHint => 'Bắt đầu gõ tên nước, ví dụ Pháp';
+
+  @override
+  String get assistantStepPets => 'Đang kiểm tra thú cưng của bạn';
+
+  @override
+  String get tourPetsAddBody => 'Thêm một thú cưng nữa ở đây. Bắt đầu gõ loại, như Thỏ hoặc Vẹt, rồi chọn một gợi ý.';
+
+  @override
+  String get rulesReviewTitle => 'Quy định cần xem xét';
+
+  @override
+  String get rulesReviewSubtitle => 'Quy định chính thức đọc từ trang của chính phủ, đang chờ bạn duyệt';
+
+  @override
+  String get rulesReviewNow => 'Đang hiển thị';
+
+  @override
+  String get rulesReviewNew => 'Trên trang hiện tại';
+
+  @override
+  String get rulesReviewPets => 'Du lịch cùng thú cưng';
+
+  @override
+  String get rulesReviewPassport => 'Hạn hộ chiếu';
+
+  @override
+  String get rulesReviewApprove => 'Duyệt';
+
+  @override
+  String get rulesReviewReject => 'Từ chối';
+
+  @override
+  String get rulesReviewEmpty => 'Không có gì cần xem xét.';
+
+  @override
+  String get rulesReviewDropped => 'Bị bỏ qua (không có câu khớp)';
+
+  @override
   String get yoursTag => 'Của bạn';
 
   @override

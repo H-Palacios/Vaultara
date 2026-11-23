@@ -8357,6 +8357,339 @@ class AppLocalizationsFa extends AppLocalizations {
   String get subcategoryPetPassports => 'گذرنامه حیوانات خانگی';
 
   @override
+  String get petsTitle => 'حیوانات خانگی';
+
+  @override
+  String get petsTileSubtitle => 'مدارک، میکروچیپ و دامپزشک هر حیوان خانگی';
+
+  @override
+  String get petsNotMembers => 'حیوانات خانگی جزو اعضای شما حساب نمی‌شوند.';
+
+  @override
+  String get petsAdd => 'افزودن حیوان خانگی';
+
+  @override
+  String get petsEmptyBody => 'حیوان خانگی خود را اضافه کنید تا واکسن‌ها، مجوز، بیمه و میکروچیپ آن یک‌جا باشد، با یادآوری پیش از انقضای هر چیزی.';
+
+  @override
+  String get petsPremium => 'پروفایل حیوانات خانگی بخشی از Premium است.';
+
+  @override
+  String get petKindDog => 'سگ';
+
+  @override
+  String get petKindCat => 'گربه';
+
+  @override
+  String get petKindOther => 'حیوان خانگی دیگر';
+
+  @override
+  String get petBirthday => 'تاریخ تولد';
+
+  @override
+  String petBorn(String date) {
+    return 'متولد $date';
+  }
+
+  @override
+  String get petChipNumber => 'شماره میکروچیپ';
+
+  @override
+  String get petChipInvalid => 'از ۹ تا ۱۵ رقم روی گواهی چیپ استفاده کنید.';
+
+  @override
+  String get petChipRegistry => 'ثبت چیپ';
+
+  @override
+  String get petChipTip => 'هنگام اسباب‌کشی یا تغییر شماره، ثبت را به‌روز کنید، وگرنه چیپ نمی‌تواند حیوانتان را به خانه برگرداند.';
+
+  @override
+  String get petVetName => 'دامپزشک';
+
+  @override
+  String get petVetPhone => 'تلفن دامپزشک';
+
+  @override
+  String get petDocuments => 'مدارک';
+
+  @override
+  String get petStillToAdd => 'هنوز باید افزوده شود';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '$name حذف شود؟ مدارکش در Vaultara می‌ماند.';
+  }
+
+  @override
+  String get petLostTitle => 'حیوان خانگی گمشده';
+
+  @override
+  String get petLostSteps => 'اول گم شدن حیوانتان را به مرکز ثبت چیپ گزارش دهید. سپس با شماره میکروچیپ به دامپزشکان و پناهگاه‌های حیوانات نزدیک زنگ بزنید و عکسی جدید را در محل و آنلاین به اشتراک بگذارید.';
+
+  @override
+  String get petTravelTitle => 'سفر با حیوان خانگی';
+
+  @override
+  String get petTravelPick => 'کجا می‌روید؟';
+
+  @override
+  String get petTravelHome => 'محل زندگی حیوان خانگی‌تان';
+
+  @override
+  String get petRuleChip => 'یک میکروچیپ ISO، کار گذاشته پیش از واکسن هاری';
+
+  @override
+  String get petRuleRabiesTest => 'واکسن هاری و آزمایش خون هاری در آزمایشگاه تأییدشده';
+
+  @override
+  String get petRuleCertificate => 'گواهی سلامت از دامپزشک رسمی';
+
+  @override
+  String get petRulePermit => 'مجوز واردات پیش از سفر';
+
+  @override
+  String get petRuleTapeworm => 'سگ‌ها: درمان کرم کدو 1 تا 5 روز پیش از رسیدن';
+
+  @override
+  String get petRuleCdcForm => 'یک CDC Dog Import Form برای هر سگ';
+
+  @override
+  String get petRuleSomeCountries => 'فقط از برخی کشورها:';
+
+  @override
+  String get petRulesOfficial => 'قوانین رسمی';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara هنوز قوانین حیوانات خانگی $country را ندارد. سازمان دامپزشکی رسمی یا سفارت آن می‌تواند بگوید چه لازم است.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'قانون میکروچیپ در $country';
+  }
+
+  @override
+  String get petLawUk => 'برای سگ‌ها الزامی است، و برای گربه‌ها در انگلستان';
+
+  @override
+  String get petLawEu => 'قوانین در هر کشور فرق دارد. یک قانون جدید اتحادیه اروپا آن را برای همه سگ‌ها و گربه‌ها الزامی می‌کند.';
+
+  @override
+  String get petLawMostStates => 'برای سگ‌ها و گربه‌ها در بیشتر ایالت‌ها و قلمروها الزامی است';
+
+  @override
+  String get petLawDogs => 'برای سگ‌ها الزامی است';
+
+  @override
+  String get petLawSellers => 'برای سگ‌ها و گربه‌هایی که پرورش‌دهندگان و پت‌شاپ‌ها می‌فروشند الزامی است';
+
+  @override
+  String get petLawLocal => 'هر ایالت، استان یا شهر تعیین می‌کند';
+
+  @override
+  String get petLawNone => 'قانون ملی الزامی نمی‌کند، اما برای سفر و بیشتر فرزندخواندگی‌ها لازم است';
+
+  @override
+  String get tripPetsTitle => 'حیوانات خانگی این سفر';
+
+  @override
+  String get petCheckNoChip => 'هیچ میکروچیپی ذخیره نشده';
+
+  @override
+  String get petCheckNoRabies => 'هیچ واکسن هاری ذخیره نشده';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'واکسن هاری در $date منقضی می‌شود، پیش از بازگشت شما';
+  }
+
+  @override
+  String get petCheckTooSoon => 'انتظار پس از آزمایش خون شاید پیش از رفتنتان تمام نشود. همین حالا با دامپزشکتان صحبت کنید.';
+
+  @override
+  String get petCheckNoCertificate => 'هیچ گواهی سلامت یا گذرنامه حیوان ذخیره نشده';
+
+  @override
+  String get planBenefitPets => 'حیوانات خانگی با مدارک، میکروچیپ و دامپزشک خودشان، بدون حساب شدن به‌عنوان عضو';
+
+  @override
+  String get tutorialsSubPets => 'مدارک حیوانات خانگی، میکروچیپ و قوانین سفر';
+
+  @override
+  String get tourPetsListBody => 'هر حیوان خانگی پروفایل خودش را دارد، با میکروچیپ، دامپزشک و مدارک در یک جا. حیوانات خانگی جزو اعضای شما حساب نمی‌شوند.';
+
+  @override
+  String get tourPetsDocsBody => 'واکسن‌ها، مجوز و بیمه متعلق به حیوان است، پس یادآوری‌ها می‌گویند مال کیست. نشان‌ها نشان می‌دهند چه چیزی ذخیره شده.';
+
+  @override
+  String get tourPetsTravelBody => 'کشوری را انتخاب کنید تا ببینید حیوانتان برای سفر به آنجا چه نیاز دارد و چقدر طول می‌کشد.';
+
+  @override
+  String get petTypeLabel => 'نوع حیوان خانگی';
+
+  @override
+  String get petTypeHint => 'شروع به تایپ کنید، مثلاً خرگوش یا طوطی';
+
+  @override
+  String get petTypeFerret => 'راسو';
+
+  @override
+  String get petTypeRabbit => 'خرگوش';
+
+  @override
+  String get petTypeGuineaPig => 'خوکچه هندی';
+
+  @override
+  String get petTypeHamster => 'همستر';
+
+  @override
+  String get petTypeRat => 'موش صحرایی';
+
+  @override
+  String get petTypeMouse => 'موش';
+
+  @override
+  String get petTypeGerbil => 'جربیل';
+
+  @override
+  String get petTypeChinchilla => 'چینچیلا';
+
+  @override
+  String get petTypeHedgehog => 'جوجه‌تیغی';
+
+  @override
+  String get petTypeHorse => 'اسب';
+
+  @override
+  String get petTypePony => 'اسب پونی';
+
+  @override
+  String get petTypeDonkey => 'الاغ';
+
+  @override
+  String get petTypeParrot => 'طوطی';
+
+  @override
+  String get petTypeBudgie => 'مرغ عشق';
+
+  @override
+  String get petTypeCockatiel => 'کاکاتیل';
+
+  @override
+  String get petTypeCanary => 'قناری';
+
+  @override
+  String get petTypeChicken => 'مرغ';
+
+  @override
+  String get petTypeTortoise => 'لاک‌پشت خشکی';
+
+  @override
+  String get petTypeTurtle => 'لاک‌پشت آبی';
+
+  @override
+  String get petTypeSnake => 'مار';
+
+  @override
+  String get petTypeLizard => 'مارمولک';
+
+  @override
+  String get petTypeGecko => 'گکو';
+
+  @override
+  String get petTypeBeardedDragon => 'اژدهای ریش‌دار';
+
+  @override
+  String get petTypeFrog => 'قورباغه';
+
+  @override
+  String get petTypeAxolotl => 'آکسولوتل';
+
+  @override
+  String get petTypeFish => 'ماهی';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'واکسن هاری دست‌کم $duration پیش از رسیدن';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'آزمایش خون هاری پس از واکسن، سپس $duration انتظار';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'سپس دست‌کم $duration در کشوری تأییدشده پیش از پرواز';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'قرنطینه هنگام ورود به مدت دست‌کم $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'حیوان خانگی شما باید دست‌کم $duration سن داشته باشد';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'برای $country خیلی کوچک است: حیوان خانگی شما باید دست‌کم $duration سن داشته باشد';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'بررسی‌شده توسط Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'هنوز بررسی نشده. پیش از رزرو در سایت رسمی تأیید کنید.';
+
+  @override
+  String get petRulesOtherAnimal => 'قوانین این حیوان با قوانین سگ و گربه فرق دارد. برای دیدن نیازهایش به سایت رسمی سر بزنید.';
+
+  @override
+  String get countryTypeHint => 'شروع به تایپ نام کشور کنید، مثلاً فرانسه';
+
+  @override
+  String get assistantStepPets => 'در حال بررسی حیوانات خانگی شما';
+
+  @override
+  String get tourPetsAddBody => 'حیوان خانگی دیگری را اینجا اضافه کنید. نوع آن را تایپ کنید، مثلاً خرگوش یا طوطی، و یک پیشنهاد را انتخاب کنید.';
+
+  @override
+  String get rulesReviewTitle => 'قوانین برای بررسی';
+
+  @override
+  String get rulesReviewSubtitle => 'قوانین رسمی خوانده‌شده از صفحات دولتی، در انتظار تأیید شما';
+
+  @override
+  String get rulesReviewNow => 'اکنون نمایش داده می‌شود';
+
+  @override
+  String get rulesReviewNew => 'اکنون در صفحه';
+
+  @override
+  String get rulesReviewPets => 'سفر با حیوان خانگی';
+
+  @override
+  String get rulesReviewPassport => 'اعتبار گذرنامه';
+
+  @override
+  String get rulesReviewApprove => 'تأیید';
+
+  @override
+  String get rulesReviewReject => 'رد';
+
+  @override
+  String get rulesReviewEmpty => 'چیزی برای بررسی نیست.';
+
+  @override
+  String get rulesReviewDropped => 'کنار گذاشته شد (جمله منطبقی نیست)';
+
+  @override
   String get yoursTag => 'مال شما';
 
   @override

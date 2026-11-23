@@ -8361,6 +8361,339 @@ class AppLocalizationsEl extends AppLocalizations {
   String get subcategoryPetPassports => 'Διαβατήρια κατοικίδιων';
 
   @override
+  String get petsTitle => 'Κατοικίδια';
+
+  @override
+  String get petsTileSubtitle => 'Έγγραφα, μικροτσίπ και κτηνίατρος για κάθε κατοικίδιο';
+
+  @override
+  String get petsNotMembers => 'Τα κατοικίδια δεν μετράνε στα μέλη σας.';
+
+  @override
+  String get petsAdd => 'Προσθήκη κατοικιδίου';
+
+  @override
+  String get petsEmptyBody => 'Προσθέστε το κατοικίδιό σας για να έχετε μαζί εμβόλια, άδεια, ασφάλεια και μικροτσίπ, με υπενθυμίσεις πριν λήξει κάτι.';
+
+  @override
+  String get petsPremium => 'Τα προφίλ κατοικιδίων είναι μέρος του Premium.';
+
+  @override
+  String get petKindDog => 'Σκύλος';
+
+  @override
+  String get petKindCat => 'Γάτα';
+
+  @override
+  String get petKindOther => 'Άλλο κατοικίδιο';
+
+  @override
+  String get petBirthday => 'Ημερομηνία γέννησης';
+
+  @override
+  String petBorn(String date) {
+    return 'Γεννήθηκε $date';
+  }
+
+  @override
+  String get petChipNumber => 'Αριθμός μικροτσίπ';
+
+  @override
+  String get petChipInvalid => 'Χρησιμοποιήστε τα 9 έως 15 ψηφία από το πιστοποιητικό του τσιπ.';
+
+  @override
+  String get petChipRegistry => 'Μητρώο τσιπ';
+
+  @override
+  String get petChipTip => 'Ενημερώνετε το μητρώο όταν μετακομίζετε ή αλλάζετε αριθμό, αλλιώς το τσιπ δεν μπορεί να φέρει το κατοικίδιό σας σπίτι.';
+
+  @override
+  String get petVetName => 'Κτηνίατρος';
+
+  @override
+  String get petVetPhone => 'Τηλέφωνο κτηνιάτρου';
+
+  @override
+  String get petDocuments => 'Έγγραφα';
+
+  @override
+  String get petStillToAdd => 'Μένει να προστεθούν';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'Αφαίρεση $name; Τα έγγραφα μένουν στο Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'Χαμένο κατοικίδιο';
+
+  @override
+  String get petLostSteps => 'Δηλώστε πρώτα την εξαφάνιση στο μητρώο του τσιπ. Μετά καλέστε κοντινούς κτηνιάτρους και καταφύγια ζώων με τον αριθμό του μικροτσίπ, και μοιραστείτε μια πρόσφατη φωτογραφία στη γειτονιά και online.';
+
+  @override
+  String get petTravelTitle => 'Ταξίδι με κατοικίδιο';
+
+  @override
+  String get petTravelPick => 'Πού πηγαίνετε;';
+
+  @override
+  String get petTravelHome => 'Πού ζει το κατοικίδιό σας';
+
+  @override
+  String get petRuleChip => 'Μικροτσίπ ISO, τοποθετημένο πριν από το εμβόλιο λύσσας';
+
+  @override
+  String get petRuleRabiesTest => 'Εμβόλιο λύσσας και αιματολογική εξέταση λύσσας από εγκεκριμένο εργαστήριο';
+
+  @override
+  String get petRuleCertificate => 'Πιστοποιητικό υγείας από επίσημο κτηνίατρο';
+
+  @override
+  String get petRulePermit => 'Άδεια εισαγωγής πριν ταξιδέψετε';
+
+  @override
+  String get petRuleTapeworm => 'Σκύλοι: θεραπεία για ταινία 1 έως 5 ημέρες πριν φτάσετε';
+
+  @override
+  String get petRuleCdcForm => 'Ένα CDC Dog Import Form για κάθε σκύλο';
+
+  @override
+  String get petRuleSomeCountries => 'Μόνο από ορισμένες χώρες:';
+
+  @override
+  String get petRulesOfficial => 'Επίσημοι κανόνες';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Το Vaultara δεν έχει ακόμη τους κανόνες κατοικιδίων για $country. Η επίσημη κτηνιατρική υπηρεσία ή η πρεσβεία μπορεί να σας πει τι χρειάζεται.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Νόμος για μικροτσίπ: $country';
+  }
+
+  @override
+  String get petLawUk => 'Υποχρεωτικό για σκύλους, και για γάτες στην Αγγλία';
+
+  @override
+  String get petLawEu => 'Οι κανόνες διαφέρουν ανά χώρα. Νέος νόμος της ΕΕ θα το κάνει υποχρεωτικό για όλους τους σκύλους και τις γάτες.';
+
+  @override
+  String get petLawMostStates => 'Υποχρεωτικό για σκύλους και γάτες στις περισσότερες πολιτείες και επικράτειες';
+
+  @override
+  String get petLawDogs => 'Υποχρεωτικό για σκύλους';
+
+  @override
+  String get petLawSellers => 'Υποχρεωτικό για σκύλους και γάτες που πωλούν εκτροφείς και pet shop';
+
+  @override
+  String get petLawLocal => 'Το ορίζει κάθε πολιτεία, επαρχία ή πόλη';
+
+  @override
+  String get petLawNone => 'Δεν απαιτείται από τον εθνικό νόμο, αλλά χρειάζεται για ταξίδια και τις περισσότερες υιοθεσίες';
+
+  @override
+  String get tripPetsTitle => 'Κατοικίδια σε αυτό το ταξίδι';
+
+  @override
+  String get petCheckNoChip => 'Δεν έχει αποθηκευτεί μικροτσίπ';
+
+  @override
+  String get petCheckNoRabies => 'Δεν έχει αποθηκευτεί εμβόλιο λύσσας';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Το εμβόλιο λύσσας λήγει $date, πριν επιστρέψετε';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Η αναμονή μετά την εξέταση αίματος ίσως δεν χωράει πριν φύγετε. Μιλήστε τώρα με τον κτηνίατρό σας.';
+
+  @override
+  String get petCheckNoCertificate => 'Δεν έχει αποθηκευτεί πιστοποιητικό υγείας ή διαβατήριο κατοικιδίου';
+
+  @override
+  String get planBenefitPets => 'Κατοικίδια με δικά τους έγγραφα, μικροτσίπ και κτηνίατρο, χωρίς να μετράνε ως μέλη';
+
+  @override
+  String get tutorialsSubPets => 'Έγγραφα κατοικιδίων, μικροτσίπ και κανόνες ταξιδιού';
+
+  @override
+  String get tourPetsListBody => 'Κάθε κατοικίδιο έχει δικό του προφίλ, με μικροτσίπ, κτηνίατρο και έγγραφα σε ένα σημείο. Τα κατοικίδια δεν μετράνε στα μέλη σας.';
+
+  @override
+  String get tourPetsDocsBody => 'Τα εμβόλια, η άδεια και η ασφάλεια ανήκουν στο κατοικίδιο, έτσι οι υπενθυμίσεις λένε σε ποιον ανήκουν. Τα σήματα δείχνουν τι έχει αποθηκευτεί.';
+
+  @override
+  String get tourPetsTravelBody => 'Διαλέξτε χώρα για να δείτε τι χρειάζεται το κατοικίδιό σας για να ταξιδέψει εκεί και πόσο χρόνο παίρνει.';
+
+  @override
+  String get petTypeLabel => 'Είδος κατοικιδίου';
+
+  @override
+  String get petTypeHint => 'Ξεκινήστε να πληκτρολογείτε, π.χ. Κουνέλι ή Παπαγάλος';
+
+  @override
+  String get petTypeFerret => 'Κουνάβι';
+
+  @override
+  String get petTypeRabbit => 'Κουνέλι';
+
+  @override
+  String get petTypeGuineaPig => 'Ινδικό χοιρίδιο';
+
+  @override
+  String get petTypeHamster => 'Χάμστερ';
+
+  @override
+  String get petTypeRat => 'Αρουραίος';
+
+  @override
+  String get petTypeMouse => 'Ποντίκι';
+
+  @override
+  String get petTypeGerbil => 'Γερβίλος';
+
+  @override
+  String get petTypeChinchilla => 'Τσιντσιλά';
+
+  @override
+  String get petTypeHedgehog => 'Σκαντζόχοιρος';
+
+  @override
+  String get petTypeHorse => 'Άλογο';
+
+  @override
+  String get petTypePony => 'Πόνυ';
+
+  @override
+  String get petTypeDonkey => 'Γάιδαρος';
+
+  @override
+  String get petTypeParrot => 'Παπαγάλος';
+
+  @override
+  String get petTypeBudgie => 'Παπαγαλάκι';
+
+  @override
+  String get petTypeCockatiel => 'Κοκατίλ';
+
+  @override
+  String get petTypeCanary => 'Καναρίνι';
+
+  @override
+  String get petTypeChicken => 'Κότα';
+
+  @override
+  String get petTypeTortoise => 'Χελώνα ξηράς';
+
+  @override
+  String get petTypeTurtle => 'Νεροχελώνα';
+
+  @override
+  String get petTypeSnake => 'Φίδι';
+
+  @override
+  String get petTypeLizard => 'Σαύρα';
+
+  @override
+  String get petTypeGecko => 'Γκέκο';
+
+  @override
+  String get petTypeBeardedDragon => 'Γενειοφόρος δράκος';
+
+  @override
+  String get petTypeFrog => 'Βάτραχος';
+
+  @override
+  String get petTypeAxolotl => 'Αξόλοτλ';
+
+  @override
+  String get petTypeFish => 'Ψάρι';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Εμβόλιο λύσσας τουλάχιστον $duration πριν φτάσετε';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Αιματολογική εξέταση λύσσας μετά το εμβόλιο και μετά αναμονή $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Μετά τουλάχιστον $duration σε εγκεκριμένη χώρα πριν πετάξετε';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Καραντίνα κατά την άφιξη για τουλάχιστον $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Το κατοικίδιό σας πρέπει να είναι τουλάχιστον $duration';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Πολύ μικρό για $country: το κατοικίδιό σας πρέπει να είναι τουλάχιστον $duration';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Ελέγχθηκε από τη Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Δεν έχει ελεγχθεί ακόμη. Επιβεβαιώστε στον επίσημο ιστότοπο πριν κάνετε κράτηση.';
+
+  @override
+  String get petRulesOtherAnimal => 'Οι κανόνες για αυτό το ζώο διαφέρουν από εκείνους για σκύλους και γάτες. Δείτε στον επίσημο ιστότοπο τι χρειάζεται.';
+
+  @override
+  String get countryTypeHint => 'Ξεκινήστε να πληκτρολογείτε μια χώρα, π.χ. Γαλλία';
+
+  @override
+  String get assistantStepPets => 'Έλεγχος των κατοικιδίων σας';
+
+  @override
+  String get tourPetsAddBody => 'Προσθέστε εδώ άλλο ένα κατοικίδιο. Πληκτρολογήστε το είδος του, π.χ. Κουνέλι ή Παπαγάλος, και επιλέξτε μια πρόταση.';
+
+  @override
+  String get rulesReviewTitle => 'Κανόνες για έλεγχο';
+
+  @override
+  String get rulesReviewSubtitle => 'Επίσημοι κανόνες από κυβερνητικές σελίδες, που περιμένουν την έγκρισή σας';
+
+  @override
+  String get rulesReviewNow => 'Εμφανίζεται τώρα';
+
+  @override
+  String get rulesReviewNew => 'Στη σελίδα τώρα';
+
+  @override
+  String get rulesReviewPets => 'Ταξίδι με κατοικίδιο';
+
+  @override
+  String get rulesReviewPassport => 'Ισχύς διαβατηρίου';
+
+  @override
+  String get rulesReviewApprove => 'Έγκριση';
+
+  @override
+  String get rulesReviewReject => 'Απόρριψη';
+
+  @override
+  String get rulesReviewEmpty => 'Δεν υπάρχει κάτι για έλεγχο.';
+
+  @override
+  String get rulesReviewDropped => 'Παραλείφθηκε (καμία πρόταση που να ταιριάζει)';
+
+  @override
   String get yoursTag => 'Δικό σας';
 
   @override

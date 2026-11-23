@@ -8357,6 +8357,339 @@ class AppLocalizationsPs extends AppLocalizations {
   String get subcategoryPetPassports => 'د کورنیو ژویو پاسپورټونه';
 
   @override
+  String get petsTitle => 'کورني ژوي';
+
+  @override
+  String get petsTileSubtitle => 'د هر کورني ژوي اسناد، مایکروچیپ او ډاکټر';
+
+  @override
+  String get petsNotMembers => 'کورني ژوي ستاسو په غړو کې نه شمېرل کېږي.';
+
+  @override
+  String get petsAdd => 'کورنی ژوی زیات کړئ';
+
+  @override
+  String get petsEmptyBody => 'خپل کورنی ژوی زیات کړئ چې واکسینونه، جواز، بیمه او مایکروچیپ یې یوځای وي، د هر څه د پای ته رسېدو مخکې یادونو سره.';
+
+  @override
+  String get petsPremium => 'د کورنیو ژویو پروفایلونه د Premium برخه دي.';
+
+  @override
+  String get petKindDog => 'سپی';
+
+  @override
+  String get petKindCat => 'پیشو';
+
+  @override
+  String get petKindOther => 'بل کورنی ژوی';
+
+  @override
+  String get petBirthday => 'د زوکړې نېټه';
+
+  @override
+  String petBorn(String date) {
+    return 'زېږېدلی $date';
+  }
+
+  @override
+  String get petChipNumber => 'د مایکروچیپ شمېره';
+
+  @override
+  String get petChipInvalid => 'د چیپ په سند کې له 9 تر 15 پورې عددونه وکاروئ.';
+
+  @override
+  String get petChipRegistry => 'د چیپ ثبت';
+
+  @override
+  String get petChipTip => 'کله چې کور یا شمېره بدلوئ ثبت تازه کړئ، که نه نو چیپ ستاسو ژوی کور ته نشي راګرځولی.';
+
+  @override
+  String get petVetName => 'د ژویو ډاکټر';
+
+  @override
+  String get petVetPhone => 'د ژویو د ډاکټر ټیلیفون';
+
+  @override
+  String get petDocuments => 'اسناد';
+
+  @override
+  String get petStillToAdd => 'لا زیاتول پاتې دي';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '$name لرې شي؟ اسناد یې په Vaultara کې پاتې کېږي.';
+  }
+
+  @override
+  String get petLostTitle => 'ورک شوی کورنی ژوی';
+
+  @override
+  String get petLostSteps => 'لومړی د چیپ ثبت ته د خپل ژوي د ورکېدو خبر ورکړئ. بیا د مایکروچیپ له شمېرې سره نږدې ډاکټرانو او د ژویو پناځایونو ته زنګ ووهئ، او یو نوی انځور په سیمه کې او آنلاین شریک کړئ.';
+
+  @override
+  String get petTravelTitle => 'له کورني ژوي سره سفر';
+
+  @override
+  String get petTravelPick => 'چېرته ځئ؟';
+
+  @override
+  String get petTravelHome => 'ستاسو ژوی چېرته اوسېږي';
+
+  @override
+  String get petRuleChip => 'د لېونتوب له واکسین مخکې ایښودل شوی ISO مایکروچیپ';
+
+  @override
+  String get petRuleRabiesTest => 'د لېونتوب واکسین او له منل شوي لابراتوار څخه د لېونتوب د وینې ازموینه';
+
+  @override
+  String get petRuleCertificate => 'له رسمي ډاکټر څخه روغتیايي سند';
+
+  @override
+  String get petRulePermit => 'له سفر مخکې د واردولو جواز';
+
+  @override
+  String get petRuleTapeworm => 'سپي: د رسېدو 1 تر 5 ورځې مخکې د تسمه‌يي چینجي درملنه';
+
+  @override
+  String get petRuleCdcForm => 'د هر سپي لپاره CDC Dog Import Form';
+
+  @override
+  String get petRuleSomeCountries => 'یوازې له ځینو هېوادونو:';
+
+  @override
+  String get petRulesOfficial => 'رسمي قواعد';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara لا د $country د کورنیو ژویو قواعد نه لري. د هغه رسمي وترنري خدمت یا سفارت ویلای شي چې څه ته اړتیا ده.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'په $country کې د مایکروچیپ قانون';
+  }
+
+  @override
+  String get petLawUk => 'د سپیو لپاره اړین، او په انګلستان کې د پیشوګانو لپاره هم';
+
+  @override
+  String get petLawEu => 'قواعد له هېواد سره توپیر لري. د EU نوی قانون به دا د ټولو سپیو او پیشوګانو لپاره اړین کړي.';
+
+  @override
+  String get petLawMostStates => 'په ډېرو ایالتونو او سیمو کې د سپیو او پیشوګانو لپاره اړین';
+
+  @override
+  String get petLawDogs => 'د سپیو لپاره اړین';
+
+  @override
+  String get petLawSellers => 'هغه سپیو او پیشوګانو لپاره اړین چې روزونکي او د ژویو دوکانونه یې پلوري';
+
+  @override
+  String get petLawLocal => 'هر ایالت، ولایت یا ښار یې ټاکي';
+
+  @override
+  String get petLawNone => 'ملي قانون یې نه غواړي، خو د سفر او ډېرو پالنو لپاره اړین دی';
+
+  @override
+  String get tripPetsTitle => 'پدې سفر کې کورني ژوي';
+
+  @override
+  String get petCheckNoChip => 'هېڅ مایکروچیپ نه دی خوندي شوی';
+
+  @override
+  String get petCheckNoRabies => 'د لېونتوب هېڅ واکسین نه دی خوندي شوی';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'د لېونتوب واکسین په $date پای ته رسېږي، ستاسو له راستنېدو مخکې';
+  }
+
+  @override
+  String get petCheckTooSoon => 'د وینې له ازموینې وروسته انتظار ښايي ستاسو له تګ مخکې پوره نشي. همدا اوس له خپل ډاکټر سره خبرې وکړئ.';
+
+  @override
+  String get petCheckNoCertificate => 'هېڅ روغتیايي سند یا د ژوي پاسپورټ نه دی خوندي شوی';
+
+  @override
+  String get planBenefitPets => 'له خپلو اسنادو، مایکروچیپ او ډاکټر سره کورني ژوي، د غړو په توګه نه شمېرل کېږي';
+
+  @override
+  String get tutorialsSubPets => 'د کورنیو ژویو اسناد، مایکروچیپ او د سفر قواعد';
+
+  @override
+  String get tourPetsListBody => 'هر کورنی ژوی خپل پروفایل لري، مایکروچیپ، ډاکټر او اسناد په یو ځای کې. کورني ژوي ستاسو په غړو کې نه شمېرل کېږي.';
+
+  @override
+  String get tourPetsDocsBody => 'واکسینونه، جواز او بیمه د ژوي دي، نو یادونې وايي د چا دي. نښې ښيي چې څه خوندي شوي.';
+
+  @override
+  String get tourPetsTravelBody => 'یو هېواد وټاکئ چې وګورئ ستاسو ژوي ته هلته د سفر لپاره څه پکار دي او څومره وخت نیسي.';
+
+  @override
+  String get petTypeLabel => 'د کورني څاروي ډول';
+
+  @override
+  String get petTypeHint => 'ټایپ پیل کړئ، د بېلګې په توګه سوی یا طوطي';
+
+  @override
+  String get petTypeFerret => 'فیرېټ';
+
+  @override
+  String get petTypeRabbit => 'سوی';
+
+  @override
+  String get petTypeGuineaPig => 'ګیني خوګ';
+
+  @override
+  String get petTypeHamster => 'هامستر';
+
+  @override
+  String get petTypeRat => 'موږک';
+
+  @override
+  String get petTypeMouse => 'کوچنی موږک';
+
+  @override
+  String get petTypeGerbil => 'جربیل';
+
+  @override
+  String get petTypeChinchilla => 'چنچیلا';
+
+  @override
+  String get petTypeHedgehog => 'شکونړی';
+
+  @override
+  String get petTypeHorse => 'آس';
+
+  @override
+  String get petTypePony => 'کوچنی آس';
+
+  @override
+  String get petTypeDonkey => 'خر';
+
+  @override
+  String get petTypeParrot => 'طوطي';
+
+  @override
+  String get petTypeBudgie => 'بجي';
+
+  @override
+  String get petTypeCockatiel => 'کوکاټیل';
+
+  @override
+  String get petTypeCanary => 'کناري';
+
+  @override
+  String get petTypeChicken => 'چرګه';
+
+  @override
+  String get petTypeTortoise => 'کیسب';
+
+  @override
+  String get petTypeTurtle => 'د اوبو کیسب';
+
+  @override
+  String get petTypeSnake => 'مار';
+
+  @override
+  String get petTypeLizard => 'کربوړی';
+
+  @override
+  String get petTypeGecko => 'ګیکو';
+
+  @override
+  String get petTypeBeardedDragon => 'ږیره ور ډریګن';
+
+  @override
+  String get petTypeFrog => 'چونګښه';
+
+  @override
+  String get petTypeAxolotl => 'اکسولوټل';
+
+  @override
+  String get petTypeFish => 'کب';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'د رسېدو څخه لږ تر لږه $duration مخکې د لېونتوب واکسین';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'له واکسین وروسته د لېونتوب د وینې ازموینه، بیا $duration انتظار';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'بیا د الوتنې مخکې په منل شوي هېواد کې لږ تر لږه $duration';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'د رسېدو پر مهال لږ تر لږه $duration قرنطین';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'ستاسو څاروی باید لږ تر لږه $duration وي';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'د $country لپاره ډېر کوچنی: ستاسو څاروی باید لږ تر لږه $duration وي';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'د Vaultara لخوا کتل شوی · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'لا نه دی کتل شوی. د بکینګ مخکې په رسمي وېبپاڼه کې یې تایید کړئ.';
+
+  @override
+  String get petRulesOtherAnimal => 'د دې څاروي قواعد د سپو او پیشو له قواعدو توپیر لري. په رسمي وېبپاڼه کې وګورئ چې څه ته اړتیا لري.';
+
+  @override
+  String get countryTypeHint => 'د هېواد نوم ټایپ پیل کړئ، د بېلګې په توګه فرانسه';
+
+  @override
+  String get assistantStepPets => 'ستاسو څاروي کتل کېږي';
+
+  @override
+  String get tourPetsAddBody => 'دلته بل څاروی زیات کړئ. د هغه ډول ټایپ کړئ، لکه سوی یا طوطي، او یو وړاندیز وټاکئ.';
+
+  @override
+  String get rulesReviewTitle => 'د کتنې قواعد';
+
+  @override
+  String get rulesReviewSubtitle => 'له حکومتي پاڼو لوستل شوي رسمي قواعد، ستاسو د تایید په تمه';
+
+  @override
+  String get rulesReviewNow => 'اوس ښودل شوی';
+
+  @override
+  String get rulesReviewNew => 'اوس په پاڼه کې';
+
+  @override
+  String get rulesReviewPets => 'له څاروي سره سفر';
+
+  @override
+  String get rulesReviewPassport => 'د پاسپورټ اعتبار';
+
+  @override
+  String get rulesReviewApprove => 'تایید کړئ';
+
+  @override
+  String get rulesReviewReject => 'رد کړئ';
+
+  @override
+  String get rulesReviewEmpty => 'د کتنې لپاره هېڅ نشته.';
+
+  @override
+  String get rulesReviewDropped => 'پرېښودل شوی (هېڅ سمون لرونکې جمله نشته)';
+
+  @override
   String get yoursTag => 'ستاسو';
 
   @override

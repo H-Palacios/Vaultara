@@ -8582,6 +8582,339 @@ class AppLocalizationsAr extends AppLocalizations {
   String get subcategoryPetPassports => 'جوازات سفر الحيوانات الأليفة';
 
   @override
+  String get petsTitle => 'الحيوانات الأليفة';
+
+  @override
+  String get petsTileSubtitle => 'المستندات والشريحة الإلكترونية والطبيب البيطري لكل حيوان أليف';
+
+  @override
+  String get petsNotMembers => 'لا تُحتسب الحيوانات الأليفة ضمن أعضائك.';
+
+  @override
+  String get petsAdd => 'إضافة حيوان أليف';
+
+  @override
+  String get petsEmptyBody => 'أضف حيوانك الأليف لتحفظ تطعيماته وترخيصه وتأمينه وشريحته معًا، مع تذكيرات قبل انتهاء أي منها.';
+
+  @override
+  String get petsPremium => 'ملفات الحيوانات الأليفة جزء من Premium.';
+
+  @override
+  String get petKindDog => 'كلب';
+
+  @override
+  String get petKindCat => 'قطة';
+
+  @override
+  String get petKindOther => 'حيوان أليف آخر';
+
+  @override
+  String get petBirthday => 'تاريخ الميلاد';
+
+  @override
+  String petBorn(String date) {
+    return 'وُلد في $date';
+  }
+
+  @override
+  String get petChipNumber => 'رقم الشريحة الإلكترونية';
+
+  @override
+  String get petChipInvalid => 'استخدم الأرقام من 9 إلى 15 الموجودة في شهادة الشريحة.';
+
+  @override
+  String get petChipRegistry => 'سجل الشريحة';
+
+  @override
+  String get petChipTip => 'حدّث السجل عند الانتقال أو تغيير رقمك، وإلا فلن تتمكن الشريحة من إعادة حيوانك إلى المنزل.';
+
+  @override
+  String get petVetName => 'الطبيب البيطري';
+
+  @override
+  String get petVetPhone => 'هاتف الطبيب البيطري';
+
+  @override
+  String get petDocuments => 'المستندات';
+
+  @override
+  String get petStillToAdd => 'لم تُضف بعد';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'إزالة $name؟ تبقى مستنداته في Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'حيوان أليف مفقود';
+
+  @override
+  String get petLostSteps => 'أبلغ سجل الشريحة أولًا بفقدان حيوانك. ثم اتصل بالأطباء البيطريين وملاجئ الحيوانات القريبة مع رقم الشريحة، وشارك صورة حديثة محليًا وعلى الإنترنت.';
+
+  @override
+  String get petTravelTitle => 'السفر مع حيوان أليف';
+
+  @override
+  String get petTravelPick => 'إلى أين أنت ذاهب؟';
+
+  @override
+  String get petTravelHome => 'مكان إقامة حيوانك الأليف';
+
+  @override
+  String get petRuleChip => 'شريحة ISO مزروعة قبل لقاح داء الكلب';
+
+  @override
+  String get petRuleRabiesTest => 'لقاح داء الكلب وفحص دم لداء الكلب من مختبر معتمد';
+
+  @override
+  String get petRuleCertificate => 'شهادة صحية من طبيب بيطري رسمي';
+
+  @override
+  String get petRulePermit => 'تصريح استيراد قبل السفر';
+
+  @override
+  String get petRuleTapeworm => 'الكلاب: علاج الدودة الشريطية قبل وصولك بـ 1 إلى 5 أيام';
+
+  @override
+  String get petRuleCdcForm => 'نموذج CDC Dog Import Form لكل كلب';
+
+  @override
+  String get petRuleSomeCountries => 'من بعض الدول فقط:';
+
+  @override
+  String get petRulesOfficial => 'القواعد الرسمية';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'لا تتوفر لدى Vaultara قواعد الحيوانات الأليفة لـ $country بعد. يمكن للخدمة البيطرية الرسمية أو السفارة إخبارك بما هو مطلوب.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'قانون الشريحة الإلكترونية في $country';
+  }
+
+  @override
+  String get petLawUk => 'إلزامية للكلاب، وللقطط في إنجلترا';
+
+  @override
+  String get petLawEu => 'تختلف القواعد حسب البلد. سيجعلها قانون أوروبي جديد إلزامية لجميع الكلاب والقطط.';
+
+  @override
+  String get petLawMostStates => 'إلزامية للكلاب والقطط في معظم الولايات والأقاليم';
+
+  @override
+  String get petLawDogs => 'إلزامية للكلاب';
+
+  @override
+  String get petLawSellers => 'إلزامية للكلاب والقطط التي يبيعها المربون ومتاجر الحيوانات';
+
+  @override
+  String get petLawLocal => 'تحددها كل ولاية أو مقاطعة أو مدينة';
+
+  @override
+  String get petLawNone => 'غير مطلوبة بموجب القانون الوطني، لكنها ضرورية للسفر ولمعظم عمليات التبني';
+
+  @override
+  String get tripPetsTitle => 'الحيوانات الأليفة في هذه الرحلة';
+
+  @override
+  String get petCheckNoChip => 'لا توجد شريحة محفوظة';
+
+  @override
+  String get petCheckNoRabies => 'لا يوجد لقاح داء الكلب محفوظ';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'ينتهي لقاح داء الكلب في $date، قبل عودتك';
+  }
+
+  @override
+  String get petCheckTooSoon => 'قد لا تكفي فترة الانتظار بعد فحص الدم قبل سفرك. تحدث إلى طبيبك البيطري الآن.';
+
+  @override
+  String get petCheckNoCertificate => 'لا توجد شهادة صحية أو جواز سفر للحيوان محفوظ';
+
+  @override
+  String get planBenefitPets => 'حيوانات أليفة بمستنداتها وشريحتها وطبيبها البيطري، دون احتسابها أعضاء';
+
+  @override
+  String get tutorialsSubPets => 'مستندات الحيوانات الأليفة والشريحة وقواعد السفر';
+
+  @override
+  String get tourPetsListBody => 'لكل حيوان أليف ملفه الخاص، مع الشريحة والطبيب البيطري والمستندات في مكان واحد. لا تُحتسب الحيوانات الأليفة ضمن أعضائك.';
+
+  @override
+  String get tourPetsDocsBody => 'التطعيمات والترخيص والتأمين تخص الحيوان، لذا تذكر التذكيرات لمن هي. توضح الشارات ما تم حفظه.';
+
+  @override
+  String get tourPetsTravelBody => 'اختر بلدًا لترى ما يحتاجه حيوانك للسفر إليه، وكم يستغرق ذلك.';
+
+  @override
+  String get petTypeLabel => 'نوع الحيوان الأليف';
+
+  @override
+  String get petTypeHint => 'ابدأ الكتابة، مثل أرنب أو ببغاء';
+
+  @override
+  String get petTypeFerret => 'نمس';
+
+  @override
+  String get petTypeRabbit => 'أرنب';
+
+  @override
+  String get petTypeGuineaPig => 'خنزير غينيا';
+
+  @override
+  String get petTypeHamster => 'هامستر';
+
+  @override
+  String get petTypeRat => 'جرذ';
+
+  @override
+  String get petTypeMouse => 'فأر';
+
+  @override
+  String get petTypeGerbil => 'جربوع';
+
+  @override
+  String get petTypeChinchilla => 'شنشيلة';
+
+  @override
+  String get petTypeHedgehog => 'قنفذ';
+
+  @override
+  String get petTypeHorse => 'حصان';
+
+  @override
+  String get petTypePony => 'مهر';
+
+  @override
+  String get petTypeDonkey => 'حمار';
+
+  @override
+  String get petTypeParrot => 'ببغاء';
+
+  @override
+  String get petTypeBudgie => 'ببغاء البادجي';
+
+  @override
+  String get petTypeCockatiel => 'ببغاء الكوكاتيل';
+
+  @override
+  String get petTypeCanary => 'كناري';
+
+  @override
+  String get petTypeChicken => 'دجاجة';
+
+  @override
+  String get petTypeTortoise => 'سلحفاة برية';
+
+  @override
+  String get petTypeTurtle => 'سلحفاة مائية';
+
+  @override
+  String get petTypeSnake => 'ثعبان';
+
+  @override
+  String get petTypeLizard => 'سحلية';
+
+  @override
+  String get petTypeGecko => 'وزغة';
+
+  @override
+  String get petTypeBeardedDragon => 'تنين ملتحٍ';
+
+  @override
+  String get petTypeFrog => 'ضفدع';
+
+  @override
+  String get petTypeAxolotl => 'أكسولوتل';
+
+  @override
+  String get petTypeFish => 'سمكة';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'لقاح داء الكلب قبل وصولك بمدة $duration على الأقل';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'فحص دم لداء الكلب بعد اللقاح، ثم انتظار $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'ثم $duration على الأقل في بلد معتمد قبل السفر';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'حجر صحي عند الوصول لمدة $duration على الأقل';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'يجب ألا يقل عمر حيوانك الأليف عن $duration';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'صغير جدًا على $country: يجب ألا يقل عمر حيوانك الأليف عن $duration';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'تحققت منه Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'لم يتم التحقق بعد. تأكد من الموقع الرسمي قبل الحجز.';
+
+  @override
+  String get petRulesOtherAnimal => 'قواعد هذا الحيوان تختلف عن قواعد الكلاب والقطط. راجع الموقع الرسمي لمعرفة ما يحتاجه.';
+
+  @override
+  String get countryTypeHint => 'ابدأ بكتابة اسم بلد، مثل فرنسا';
+
+  @override
+  String get assistantStepPets => 'جارٍ التحقق من حيواناتك الأليفة';
+
+  @override
+  String get tourPetsAddBody => 'أضف حيوانًا أليفًا آخر هنا. ابدأ بكتابة نوعه، مثل أرنب أو ببغاء، واختر من الاقتراحات.';
+
+  @override
+  String get rulesReviewTitle => 'قواعد للمراجعة';
+
+  @override
+  String get rulesReviewSubtitle => 'قواعد رسمية قُرئت من صفحات حكومية، بانتظار موافقتك';
+
+  @override
+  String get rulesReviewNow => 'المعروض الآن';
+
+  @override
+  String get rulesReviewNew => 'على الصفحة الآن';
+
+  @override
+  String get rulesReviewPets => 'السفر مع الحيوانات الأليفة';
+
+  @override
+  String get rulesReviewPassport => 'صلاحية جواز السفر';
+
+  @override
+  String get rulesReviewApprove => 'موافقة';
+
+  @override
+  String get rulesReviewReject => 'رفض';
+
+  @override
+  String get rulesReviewEmpty => 'لا شيء للمراجعة.';
+
+  @override
+  String get rulesReviewDropped => 'محذوف (لا توجد جملة مطابقة)';
+
+  @override
   String get yoursTag => 'خاص بك';
 
   @override

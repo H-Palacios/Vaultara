@@ -8357,6 +8357,339 @@ class AppLocalizationsMl extends AppLocalizations {
   String get subcategoryPetPassports => 'വളർത്തുമൃഗ പാസ്‌പോർട്ടുകൾ';
 
   @override
+  String get petsTitle => 'വളർത്തുമൃഗങ്ങൾ';
+
+  @override
+  String get petsTileSubtitle => 'ഓരോ വളർത്തുമൃഗത്തിന്റെയും രേഖകൾ, മൈക്രോചിപ്പ്, മൃഗഡോക്ടർ';
+
+  @override
+  String get petsNotMembers => 'വളർത്തുമൃഗങ്ങളെ നിങ്ങളുടെ അംഗങ്ങളായി കണക്കാക്കില്ല.';
+
+  @override
+  String get petsAdd => 'വളർത്തുമൃഗത്തെ ചേർക്കുക';
+
+  @override
+  String get petsEmptyBody => 'വാക്സിനുകൾ, ലൈസൻസ്, ഇൻഷുറൻസ്, മൈക്രോചിപ്പ് എന്നിവ ഒരുമിച്ച് സൂക്ഷിക്കാൻ നിങ്ങളുടെ വളർത്തുമൃഗത്തെ ചേർക്കുക, എന്തെങ്കിലും കാലാവധി തീരുംമുമ്പ് ഓർമ്മപ്പെടുത്തലുകളോടെ.';
+
+  @override
+  String get petsPremium => 'വളർത്തുമൃഗ പ്രൊഫൈലുകൾ Premium-ന്റെ ഭാഗമാണ്.';
+
+  @override
+  String get petKindDog => 'നായ';
+
+  @override
+  String get petKindCat => 'പൂച്ച';
+
+  @override
+  String get petKindOther => 'മറ്റ് വളർത്തുമൃഗം';
+
+  @override
+  String get petBirthday => 'ജനനത്തീയതി';
+
+  @override
+  String petBorn(String date) {
+    return 'ജനനം $date';
+  }
+
+  @override
+  String get petChipNumber => 'മൈക്രോചിപ്പ് നമ്പർ';
+
+  @override
+  String get petChipInvalid => 'ചിപ്പ് സർട്ടിഫിക്കറ്റിലെ 9 മുതൽ 15 വരെ അക്കങ്ങൾ ഉപയോഗിക്കുക.';
+
+  @override
+  String get petChipRegistry => 'ചിപ്പ് രജിസ്ട്രി';
+
+  @override
+  String get petChipTip => 'വീട് മാറുമ്പോഴോ നമ്പർ മാറ്റുമ്പോഴോ രജിസ്ട്രി പുതുക്കുക, അല്ലെങ്കിൽ ചിപ്പിന് നിങ്ങളുടെ വളർത്തുമൃഗത്തെ വീട്ടിലെത്തിക്കാൻ കഴിയില്ല.';
+
+  @override
+  String get petVetName => 'മൃഗഡോക്ടർ';
+
+  @override
+  String get petVetPhone => 'മൃഗഡോക്ടറുടെ ഫോൺ';
+
+  @override
+  String get petDocuments => 'രേഖകൾ';
+
+  @override
+  String get petStillToAdd => 'ഇനിയും ചേർക്കാനുള്ളത്';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '$name നീക്കം ചെയ്യണോ? രേഖകൾ Vaultara-യിൽ തുടരും.';
+  }
+
+  @override
+  String get petLostTitle => 'കാണാതായ വളർത്തുമൃഗം';
+
+  @override
+  String get petLostSteps => 'ആദ്യം വളർത്തുമൃഗത്തെ കാണാനില്ലെന്ന് ചിപ്പ് രജിസ്ട്രിയെ അറിയിക്കുക. തുടർന്ന് മൈക്രോചിപ്പ് നമ്പറുമായി അടുത്തുള്ള മൃഗഡോക്ടർമാരെയും മൃഗസംരക്ഷണ കേന്ദ്രങ്ങളെയും വിളിക്കുക, സമീപകാല ഫോട്ടോ പ്രദേശത്തും ഓൺലൈനിലും പങ്കിടുക.';
+
+  @override
+  String get petTravelTitle => 'വളർത്തുമൃഗവുമായി യാത്ര';
+
+  @override
+  String get petTravelPick => 'നിങ്ങൾ എവിടേക്കാണ്?';
+
+  @override
+  String get petTravelHome => 'നിങ്ങളുടെ വളർത്തുമൃഗം താമസിക്കുന്നിടം';
+
+  @override
+  String get petRuleChip => 'പേവിഷ വാക്സിന് മുമ്പ് ഘടിപ്പിച്ച ISO മൈക്രോചിപ്പ്';
+
+  @override
+  String get petRuleRabiesTest => 'പേവിഷ വാക്സിനും അംഗീകൃത ലാബിൽ നിന്നുള്ള പേവിഷ രക്തപരിശോധനയും';
+
+  @override
+  String get petRuleCertificate => 'ഔദ്യോഗിക മൃഗഡോക്ടറുടെ ആരോഗ്യ സർട്ടിഫിക്കറ്റ്';
+
+  @override
+  String get petRulePermit => 'യാത്രയ്ക്ക് മുമ്പ് ഇറക്കുമതി പെർമിറ്റ്';
+
+  @override
+  String get petRuleTapeworm => 'നായ്ക്കൾ: എത്തുന്നതിന് 1 മുതൽ 5 ദിവസം മുമ്പ് നാടവിര ചികിത്സ';
+
+  @override
+  String get petRuleCdcForm => 'ഓരോ നായയ്ക്കും ഒരു CDC Dog Import Form';
+
+  @override
+  String get petRuleSomeCountries => 'ചില രാജ്യങ്ങളിൽ നിന്ന് മാത്രം:';
+
+  @override
+  String get petRulesOfficial => 'ഔദ്യോഗിക നിയമങ്ങൾ';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara-യിൽ ഇതുവരെ $country-ന്റെ വളർത്തുമൃഗ നിയമങ്ങളില്ല. അവിടത്തെ ഔദ്യോഗിക മൃഗചികിത്സാ സേവനത്തിനോ എംബസിക്കോ എന്താണ് വേണ്ടതെന്ന് പറയാനാകും.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return '$country-ലെ മൈക്രോചിപ്പ് നിയമം';
+  }
+
+  @override
+  String get petLawUk => 'നായ്ക്കൾക്ക് നിർബന്ധം, ഇംഗ്ലണ്ടിൽ പൂച്ചകൾക്കും';
+
+  @override
+  String get petLawEu => 'നിയമങ്ങൾ രാജ്യമനുസരിച്ച് വ്യത്യസ്തമാണ്. പുതിയ EU നിയമം എല്ലാ നായ്ക്കൾക്കും പൂച്ചകൾക്കും ഇത് നിർബന്ധമാക്കും.';
+
+  @override
+  String get petLawMostStates => 'മിക്ക സംസ്ഥാനങ്ങളിലും പ്രദേശങ്ങളിലും നായ്ക്കൾക്കും പൂച്ചകൾക്കും നിർബന്ധം';
+
+  @override
+  String get petLawDogs => 'നായ്ക്കൾക്ക് നിർബന്ധം';
+
+  @override
+  String get petLawSellers => 'ബ്രീഡർമാരും പെറ്റ് ഷോപ്പുകളും വിൽക്കുന്ന നായ്ക്കൾക്കും പൂച്ചകൾക്കും നിർബന്ധം';
+
+  @override
+  String get petLawLocal => 'ഓരോ സംസ്ഥാനമോ പ്രവിശ്യയോ നഗരമോ തീരുമാനിക്കും';
+
+  @override
+  String get petLawNone => 'ദേശീയ നിയമപ്രകാരം നിർബന്ധമില്ല, എന്നാൽ യാത്രയ്ക്കും മിക്ക ദത്തെടുക്കലിനും ആവശ്യമാണ്';
+
+  @override
+  String get tripPetsTitle => 'ഈ യാത്രയിലെ വളർത്തുമൃഗങ്ങൾ';
+
+  @override
+  String get petCheckNoChip => 'മൈക്രോചിപ്പ് സേവ് ചെയ്തിട്ടില്ല';
+
+  @override
+  String get petCheckNoRabies => 'പേവിഷ വാക്സിൻ സേവ് ചെയ്തിട്ടില്ല';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'പേവിഷ വാക്സിൻ $date-ന് തീരും, നിങ്ങൾ തിരിച്ചെത്തുംമുമ്പ്';
+  }
+
+  @override
+  String get petCheckTooSoon => 'രക്തപരിശോധനയ്ക്ക് ശേഷമുള്ള കാത്തിരിപ്പ് പോകുന്നതിന് മുമ്പ് തീരണമെന്നില്ല. ഇപ്പോൾതന്നെ മൃഗഡോക്ടറോട് സംസാരിക്കുക.';
+
+  @override
+  String get petCheckNoCertificate => 'ആരോഗ്യ സർട്ടിഫിക്കറ്റോ വളർത്തുമൃഗ പാസ്‌പോർട്ടോ സേവ് ചെയ്തിട്ടില്ല';
+
+  @override
+  String get planBenefitPets => 'സ്വന്തം രേഖകൾ, മൈക്രോചിപ്പ്, മൃഗഡോക്ടർ എന്നിവയുള്ള വളർത്തുമൃഗങ്ങൾ, അംഗങ്ങളായി കണക്കാക്കില്ല';
+
+  @override
+  String get tutorialsSubPets => 'വളർത്തുമൃഗ രേഖകൾ, മൈക്രോചിപ്പ്, യാത്രാ നിയമങ്ങൾ';
+
+  @override
+  String get tourPetsListBody => 'ഓരോ വളർത്തുമൃഗത്തിനും സ്വന്തം പ്രൊഫൈലുണ്ട്, മൈക്രോചിപ്പും മൃഗഡോക്ടറും രേഖകളും ഒരിടത്ത്. വളർത്തുമൃഗങ്ങളെ നിങ്ങളുടെ അംഗങ്ങളായി കണക്കാക്കില്ല.';
+
+  @override
+  String get tourPetsDocsBody => 'വാക്സിനുകളും ലൈസൻസും ഇൻഷുറൻസും വളർത്തുമൃഗത്തിന്റേതാണ്, അതിനാൽ ഓർമ്മപ്പെടുത്തലുകൾ ആരുടേതാണെന്ന് പറയും. ബാഡ്ജുകൾ എന്താണ് സേവ് ചെയ്തതെന്ന് കാണിക്കും.';
+
+  @override
+  String get tourPetsTravelBody => 'നിങ്ങളുടെ വളർത്തുമൃഗത്തിന് അവിടേക്ക് യാത്ര ചെയ്യാൻ എന്താണ് വേണ്ടതെന്നും എത്ര സമയമെടുക്കുമെന്നും കാണാൻ ഒരു രാജ്യം തിരഞ്ഞെടുക്കുക.';
+
+  @override
+  String get petTypeLabel => 'വളർത്തുമൃഗത്തിന്റെ തരം';
+
+  @override
+  String get petTypeHint => 'ടൈപ്പ് ചെയ്തു തുടങ്ങൂ, ഉദാ. മുയൽ അല്ലെങ്കിൽ തത്ത';
+
+  @override
+  String get petTypeFerret => 'ഫെററ്റ്';
+
+  @override
+  String get petTypeRabbit => 'മുയൽ';
+
+  @override
+  String get petTypeGuineaPig => 'ഗിനിപ്പന്നി';
+
+  @override
+  String get petTypeHamster => 'ഹാംസ്റ്റർ';
+
+  @override
+  String get petTypeRat => 'എലി';
+
+  @override
+  String get petTypeMouse => 'ചുണ്ടെലി';
+
+  @override
+  String get petTypeGerbil => 'ജെർബിൽ';
+
+  @override
+  String get petTypeChinchilla => 'ചിൻചില്ല';
+
+  @override
+  String get petTypeHedgehog => 'മുള്ളൻപന്നി';
+
+  @override
+  String get petTypeHorse => 'കുതിര';
+
+  @override
+  String get petTypePony => 'പോണി';
+
+  @override
+  String get petTypeDonkey => 'കഴുത';
+
+  @override
+  String get petTypeParrot => 'തത്ത';
+
+  @override
+  String get petTypeBudgie => 'ബജ്ജി';
+
+  @override
+  String get petTypeCockatiel => 'കൊക്കറ്റീൽ';
+
+  @override
+  String get petTypeCanary => 'കാനറി';
+
+  @override
+  String get petTypeChicken => 'കോഴി';
+
+  @override
+  String get petTypeTortoise => 'ആമ';
+
+  @override
+  String get petTypeTurtle => 'ജല ആമ';
+
+  @override
+  String get petTypeSnake => 'പാമ്പ്';
+
+  @override
+  String get petTypeLizard => 'പല്ലി';
+
+  @override
+  String get petTypeGecko => 'ഗെക്കോ';
+
+  @override
+  String get petTypeBeardedDragon => 'താടിയുള്ള ഡ്രാഗൺ';
+
+  @override
+  String get petTypeFrog => 'തവള';
+
+  @override
+  String get petTypeAxolotl => 'ആക്സൊലോട്ടൽ';
+
+  @override
+  String get petTypeFish => 'മീൻ';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'എത്തുന്നതിന് കുറഞ്ഞത് $duration മുമ്പ് റാബീസ് വാക്സിൻ';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'വാക്സിനു ശേഷം റാബീസ് രക്തപരിശോധന, തുടർന്ന് $duration കാത്തിരിപ്പ്';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'തുടർന്ന് പറക്കുന്നതിന് മുമ്പ് അംഗീകൃത രാജ്യത്ത് കുറഞ്ഞത് $duration';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'എത്തുമ്പോൾ കുറഞ്ഞത് $duration ക്വാറന്റൈൻ';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'നിങ്ങളുടെ വളർത്തുമൃഗത്തിന് കുറഞ്ഞത് $duration പ്രായം വേണം';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return '$country-ക്ക് വളരെ ചെറുത്: നിങ്ങളുടെ വളർത്തുമൃഗത്തിന് കുറഞ്ഞത് $duration പ്രായം വേണം';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Vaultara പരിശോധിച്ചത് · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'ഇതുവരെ പരിശോധിച്ചിട്ടില്ല. ബുക്ക് ചെയ്യുന്നതിന് മുമ്പ് ഔദ്യോഗിക സൈറ്റിൽ ഉറപ്പാക്കുക.';
+
+  @override
+  String get petRulesOtherAnimal => 'ഈ മൃഗത്തിന്റെ നിയമങ്ങൾ നായകളുടെയും പൂച്ചകളുടെയും നിയമങ്ങളിൽ നിന്ന് വ്യത്യസ്തമാണ്. എന്താണ് വേണ്ടതെന്ന് ഔദ്യോഗിക സൈറ്റിൽ നോക്കുക.';
+
+  @override
+  String get countryTypeHint => 'ഒരു രാജ്യത്തിന്റെ പേര് ടൈപ്പ് ചെയ്തു തുടങ്ങൂ, ഉദാ. ഫ്രാൻസ്';
+
+  @override
+  String get assistantStepPets => 'നിങ്ങളുടെ വളർത്തുമൃഗങ്ങളെ പരിശോധിക്കുന്നു';
+
+  @override
+  String get tourPetsAddBody => 'ഇവിടെ മറ്റൊരു വളർത്തുമൃഗത്തെ ചേർക്കൂ. തരം ടൈപ്പ് ചെയ്യൂ, ഉദാ. മുയൽ അല്ലെങ്കിൽ തത്ത, ഒരു നിർദ്ദേശം തിരഞ്ഞെടുക്കൂ.';
+
+  @override
+  String get rulesReviewTitle => 'പരിശോധിക്കേണ്ട നിയമങ്ങൾ';
+
+  @override
+  String get rulesReviewSubtitle => 'സർക്കാർ പേജുകളിൽ നിന്ന് വായിച്ച ഔദ്യോഗിക നിയമങ്ങൾ, നിങ്ങളുടെ അംഗീകാരത്തിനായി കാത്തിരിക്കുന്നു';
+
+  @override
+  String get rulesReviewNow => 'ഇപ്പോൾ കാണിക്കുന്നത്';
+
+  @override
+  String get rulesReviewNew => 'ഇപ്പോൾ പേജിൽ';
+
+  @override
+  String get rulesReviewPets => 'വളർത്തുമൃഗത്തോടൊപ്പം യാത്ര';
+
+  @override
+  String get rulesReviewPassport => 'പാസ്‌പോർട്ട് സാധുത';
+
+  @override
+  String get rulesReviewApprove => 'അംഗീകരിക്കുക';
+
+  @override
+  String get rulesReviewReject => 'നിരസിക്കുക';
+
+  @override
+  String get rulesReviewEmpty => 'പരിശോധിക്കാൻ ഒന്നുമില്ല.';
+
+  @override
+  String get rulesReviewDropped => 'ഒഴിവാക്കി (ചേരുന്ന വാചകമില്ല)';
+
+  @override
   String get yoursTag => 'നിങ്ങളുടേത്';
 
   @override

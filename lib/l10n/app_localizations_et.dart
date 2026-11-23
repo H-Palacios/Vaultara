@@ -8361,6 +8361,339 @@ class AppLocalizationsEt extends AppLocalizations {
   String get subcategoryPetPassports => 'Lemmikloomade passid';
 
   @override
+  String get petsTitle => 'Lemmikud';
+
+  @override
+  String get petsTileSubtitle => 'Iga lemmiku dokumendid, mikrokiip ja loomaarst';
+
+  @override
+  String get petsNotMembers => 'Lemmikuid ei loeta sinu liikmete hulka.';
+
+  @override
+  String get petsAdd => 'Lisa lemmik';
+
+  @override
+  String get petsEmptyBody => 'Lisa oma lemmik, et vaktsiinid, litsents, kindlustus ja mikrokiip oleksid koos, koos meeldetuletustega enne, kui midagi aegub.';
+
+  @override
+  String get petsPremium => 'Lemmikute profiilid kuuluvad Premiumi.';
+
+  @override
+  String get petKindDog => 'Koer';
+
+  @override
+  String get petKindCat => 'Kass';
+
+  @override
+  String get petKindOther => 'Muu lemmik';
+
+  @override
+  String get petBirthday => 'Sünnikuupäev';
+
+  @override
+  String petBorn(String date) {
+    return 'Sündinud $date';
+  }
+
+  @override
+  String get petChipNumber => 'Mikrokiibi number';
+
+  @override
+  String get petChipInvalid => 'Kasuta kiibi sertifikaadil olevat 9–15 numbrit.';
+
+  @override
+  String get petChipRegistry => 'Kiibiregister';
+
+  @override
+  String get petChipTip => 'Hoia registrit ajakohasena, kui kolid või vahetad numbrit, muidu ei saa kiip sinu lemmikut koju tuua.';
+
+  @override
+  String get petVetName => 'Loomaarst';
+
+  @override
+  String get petVetPhone => 'Loomaarsti telefon';
+
+  @override
+  String get petDocuments => 'Dokumendid';
+
+  @override
+  String get petStillToAdd => 'Veel lisada';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'Eemaldada $name? Dokumendid jäävad Vaultarasse.';
+  }
+
+  @override
+  String get petLostTitle => 'Kadunud lemmik';
+
+  @override
+  String get petLostSteps => 'Teata kõigepealt kiibiregistrisse, et lemmik on kadunud. Seejärel helista läheduses olevatele loomaarstidele ja varjupaikadele mikrokiibi numbriga ning jaga hiljutist fotot kohapeal ja internetis.';
+
+  @override
+  String get petTravelTitle => 'Reisimine lemmikuga';
+
+  @override
+  String get petTravelPick => 'Kuhu sa lähed?';
+
+  @override
+  String get petTravelHome => 'Kus su lemmik elab';
+
+  @override
+  String get petRuleChip => 'ISO mikrokiip, paigaldatud enne marutaudivaktsiini';
+
+  @override
+  String get petRuleRabiesTest => 'Marutaudivaktsiin ja marutaudi vereanalüüs heakskiidetud laboris';
+
+  @override
+  String get petRuleCertificate => 'Ametliku loomaarsti terviseakt';
+
+  @override
+  String get petRulePermit => 'Impordiluba enne reisi';
+
+  @override
+  String get petRuleTapeworm => 'Koerad: paeluss-ussirohi 1 kuni 5 päeva enne saabumist';
+
+  @override
+  String get petRuleCdcForm => 'CDC Dog Import Form iga koera kohta';
+
+  @override
+  String get petRuleSomeCountries => 'Ainult mõnest riigist:';
+
+  @override
+  String get petRulesOfficial => 'Ametlikud reeglid';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultaral pole veel riigi $country lemmikureegleid. Selle ametlik veterinaarteenistus või saatkond oskab öelda, mida on vaja.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Mikrokiibi seadus: $country';
+  }
+
+  @override
+  String get petLawUk => 'Kohustuslik koertele ja Inglismaal ka kassidele';
+
+  @override
+  String get petLawEu => 'Reeglid erinevad riigiti. Uus ELi seadus muudab selle kõigile koertele ja kassidele kohustuslikuks.';
+
+  @override
+  String get petLawMostStates => 'Kohustuslik koertele ja kassidele enamikus osariikides ja territooriumidel';
+
+  @override
+  String get petLawDogs => 'Kohustuslik koertele';
+
+  @override
+  String get petLawSellers => 'Kohustuslik kasvatajate ja lemmikloomapoodide müüdavatele koertele ja kassidele';
+
+  @override
+  String get petLawLocal => 'Määrab iga osariik, provints või linn';
+
+  @override
+  String get petLawNone => 'Riiklik seadus ei nõua, kuid vaja reisimiseks ja enamikuks loovutusteks';
+
+  @override
+  String get tripPetsTitle => 'Lemmikud sellel reisil';
+
+  @override
+  String get petCheckNoChip => 'Mikrokiipi pole salvestatud';
+
+  @override
+  String get petCheckNoRabies => 'Marutaudivaktsiini pole salvestatud';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Marutaudivaktsiin aegub $date, enne kui tagasi oled';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Vereanalüüsi järgne ootamine ei pruugi enne lahkumist ära mahtuda. Räägi kohe loomaarstiga.';
+
+  @override
+  String get petCheckNoCertificate => 'Terviseakti ega lemmiklooma passi pole salvestatud';
+
+  @override
+  String get planBenefitPets => 'Lemmikud oma dokumentide, mikrokiibi ja loomaarstiga, liikmeteks ei loeta';
+
+  @override
+  String get tutorialsSubPets => 'Lemmikute dokumendid, mikrokiip ja reisireeglid';
+
+  @override
+  String get tourPetsListBody => 'Igal lemmikul on oma profiil, mikrokiip, loomaarst ja dokumendid ühes kohas. Lemmikuid ei loeta sinu liikmete hulka.';
+
+  @override
+  String get tourPetsDocsBody => 'Vaktsiinid, litsents ja kindlustus kuuluvad lemmikule, nii et meeldetuletused ütlevad, kelle omad need on. Märgid näitavad, mis on salvestatud.';
+
+  @override
+  String get tourPetsTravelBody => 'Vali riik, et näha, mida su lemmik sinna reisimiseks vajab ja kui kaua see võtab.';
+
+  @override
+  String get petTypeLabel => 'Lemmiklooma liik';
+
+  @override
+  String get petTypeHint => 'Alusta kirjutamist, näiteks Küülik või Papagoi';
+
+  @override
+  String get petTypeFerret => 'Tuhkur';
+
+  @override
+  String get petTypeRabbit => 'Küülik';
+
+  @override
+  String get petTypeGuineaPig => 'Merisiga';
+
+  @override
+  String get petTypeHamster => 'Hamster';
+
+  @override
+  String get petTypeRat => 'Rott';
+
+  @override
+  String get petTypeMouse => 'Hiir';
+
+  @override
+  String get petTypeGerbil => 'Liivahiir';
+
+  @override
+  String get petTypeChinchilla => 'Tšintšilja';
+
+  @override
+  String get petTypeHedgehog => 'Siil';
+
+  @override
+  String get petTypeHorse => 'Hobune';
+
+  @override
+  String get petTypePony => 'Poni';
+
+  @override
+  String get petTypeDonkey => 'Eesel';
+
+  @override
+  String get petTypeParrot => 'Papagoi';
+
+  @override
+  String get petTypeBudgie => 'Viirpapagoi';
+
+  @override
+  String get petTypeCockatiel => 'Nümfkakaduu';
+
+  @override
+  String get petTypeCanary => 'Kanaarilind';
+
+  @override
+  String get petTypeChicken => 'Kana';
+
+  @override
+  String get petTypeTortoise => 'Kilpkonn';
+
+  @override
+  String get petTypeTurtle => 'Veekilpkonn';
+
+  @override
+  String get petTypeSnake => 'Madu';
+
+  @override
+  String get petTypeLizard => 'Sisalik';
+
+  @override
+  String get petTypeGecko => 'Geko';
+
+  @override
+  String get petTypeBeardedDragon => 'Habeagaam';
+
+  @override
+  String get petTypeFrog => 'Konn';
+
+  @override
+  String get petTypeAxolotl => 'Aksolotl';
+
+  @override
+  String get petTypeFish => 'Kala';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Marutaudivaktsiin vähemalt $duration enne saabumist';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Marutaudi vereanalüüs pärast vaktsiini, seejärel ootamine $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Seejärel vähemalt $duration heakskiidetud riigis enne lendu';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Karantiin saabumisel vähemalt $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Lemmikloom peab olema vähemalt $duration vana';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Liiga noor riigi $country jaoks: lemmikloom peab olema vähemalt $duration vana';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Vaultara kontrollitud · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Veel kontrollimata. Kinnita enne broneerimist ametlikul saidil.';
+
+  @override
+  String get petRulesOtherAnimal => 'Selle looma reeglid erinevad koerte ja kasside omadest. Vaata ametlikult saidilt, mida on vaja.';
+
+  @override
+  String get countryTypeHint => 'Alusta riigi kirjutamist, näiteks Prantsusmaa';
+
+  @override
+  String get assistantStepPets => 'Kontrollin sinu lemmikloomi';
+
+  @override
+  String get tourPetsAddBody => 'Lisa siia veel üks lemmikloom. Alusta liigi kirjutamist, näiteks Küülik või Papagoi, ja vali soovitus.';
+
+  @override
+  String get rulesReviewTitle => 'Ülevaatamist ootavad reeglid';
+
+  @override
+  String get rulesReviewSubtitle => 'Riigi lehtedelt loetud ametlikud reeglid, mis ootavad sinu kinnitust';
+
+  @override
+  String get rulesReviewNow => 'Praegu näidatud';
+
+  @override
+  String get rulesReviewNew => 'Praegu lehel';
+
+  @override
+  String get rulesReviewPets => 'Reisimine lemmikloomaga';
+
+  @override
+  String get rulesReviewPassport => 'Passi kehtivus';
+
+  @override
+  String get rulesReviewApprove => 'Kinnita';
+
+  @override
+  String get rulesReviewReject => 'Lükka tagasi';
+
+  @override
+  String get rulesReviewEmpty => 'Pole midagi üle vaadata.';
+
+  @override
+  String get rulesReviewDropped => 'Välja jäetud (sobivat lauset pole)';
+
+  @override
   String get yoursTag => 'Sinu';
 
   @override

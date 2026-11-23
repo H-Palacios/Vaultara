@@ -8361,6 +8361,339 @@ class AppLocalizationsNl extends AppLocalizations {
   String get subcategoryPetPassports => 'Dierenpaspoorten';
 
   @override
+  String get petsTitle => 'Huisdieren';
+
+  @override
+  String get petsTileSubtitle => 'Documenten, chip en dierenarts voor elk huisdier';
+
+  @override
+  String get petsNotMembers => 'Huisdieren tellen niet mee als leden.';
+
+  @override
+  String get petsAdd => 'Huisdier toevoegen';
+
+  @override
+  String get petsEmptyBody => 'Voeg je huisdier toe om vaccinaties, vergunning, verzekering en chip bij elkaar te houden, met herinneringen voordat iets verloopt.';
+
+  @override
+  String get petsPremium => 'Huisdierprofielen horen bij Premium.';
+
+  @override
+  String get petKindDog => 'Hond';
+
+  @override
+  String get petKindCat => 'Kat';
+
+  @override
+  String get petKindOther => 'Ander huisdier';
+
+  @override
+  String get petBirthday => 'Geboortedatum';
+
+  @override
+  String petBorn(String date) {
+    return 'Geboren op $date';
+  }
+
+  @override
+  String get petChipNumber => 'Chipnummer';
+
+  @override
+  String get petChipInvalid => 'Gebruik de 9 tot 15 cijfers op het chipcertificaat.';
+
+  @override
+  String get petChipRegistry => 'Chipregister';
+
+  @override
+  String get petChipTip => 'Houd het register bij als je verhuist of een ander nummer krijgt, anders kan de chip je huisdier niet thuisbrengen.';
+
+  @override
+  String get petVetName => 'Dierenarts';
+
+  @override
+  String get petVetPhone => 'Telefoon dierenarts';
+
+  @override
+  String get petDocuments => 'Documenten';
+
+  @override
+  String get petStillToAdd => 'Nog toe te voegen';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '$name verwijderen? De documenten blijven in Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'Huisdier vermist';
+
+  @override
+  String get petLostSteps => 'Meld je huisdier eerst als vermist bij het chipregister. Bel daarna dierenartsen en asielen in de buurt met het chipnummer, en deel een recente foto in de buurt en online.';
+
+  @override
+  String get petTravelTitle => 'Reizen met een huisdier';
+
+  @override
+  String get petTravelPick => 'Waar ga je heen?';
+
+  @override
+  String get petTravelHome => 'Waar je huisdier woont';
+
+  @override
+  String get petRuleChip => 'Een ISO-chip, geplaatst vóór de rabiësvaccinatie';
+
+  @override
+  String get petRuleRabiesTest => 'Rabiësvaccinatie en een rabiësbloedtest door een erkend lab';
+
+  @override
+  String get petRuleCertificate => 'Een gezondheidsverklaring van een officiële dierenarts';
+
+  @override
+  String get petRulePermit => 'Een invoervergunning vóór de reis';
+
+  @override
+  String get petRuleTapeworm => 'Honden: lintwormbehandeling 1 tot 5 dagen voor aankomst';
+
+  @override
+  String get petRuleCdcForm => 'Een CDC Dog Import Form voor elke hond';
+
+  @override
+  String get petRuleSomeCountries => 'Alleen vanuit sommige landen:';
+
+  @override
+  String get petRulesOfficial => 'Officiële regels';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara heeft de huisdierregels voor $country nog niet. De officiële veterinaire dienst of de ambassade kan je vertellen wat nodig is.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Chipwet in $country';
+  }
+
+  @override
+  String get petLawUk => 'Verplicht voor honden, en in Engeland ook voor katten';
+
+  @override
+  String get petLawEu => 'Regels verschillen per land. Een nieuwe EU-wet maakt het verplicht voor alle honden en katten.';
+
+  @override
+  String get petLawMostStates => 'Verplicht voor honden en katten in de meeste staten en territoria';
+
+  @override
+  String get petLawDogs => 'Verplicht voor honden';
+
+  @override
+  String get petLawSellers => 'Verplicht voor honden en katten die fokkers en dierenwinkels verkopen';
+
+  @override
+  String get petLawLocal => 'Bepaald door elke staat, provincie of stad';
+
+  @override
+  String get petLawNone => 'Niet wettelijk verplicht, maar nodig om te reizen en voor de meeste adopties';
+
+  @override
+  String get tripPetsTitle => 'Huisdieren op deze reis';
+
+  @override
+  String get petCheckNoChip => 'Geen chip opgeslagen';
+
+  @override
+  String get petCheckNoRabies => 'Geen rabiësvaccinatie opgeslagen';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Rabiësvaccinatie verloopt op $date, voordat je terug bent';
+  }
+
+  @override
+  String get petCheckTooSoon => 'De wachttijd na de bloedtest past misschien niet meer vóór vertrek. Praat nu met je dierenarts.';
+
+  @override
+  String get petCheckNoCertificate => 'Geen gezondheidsverklaring of dierenpaspoort opgeslagen';
+
+  @override
+  String get planBenefitPets => 'Huisdieren met hun eigen documenten, chip en dierenarts, niet geteld als leden';
+
+  @override
+  String get tutorialsSubPets => 'Huisdierdocumenten, chip en reisregels';
+
+  @override
+  String get tourPetsListBody => 'Elk huisdier heeft een eigen profiel, met chip, dierenarts en documenten op één plek. Huisdieren tellen niet mee als leden.';
+
+  @override
+  String get tourPetsDocsBody => 'Vaccinaties, vergunning en verzekering horen bij het huisdier, dus herinneringen zeggen van wie ze zijn. De badges laten zien wat is opgeslagen.';
+
+  @override
+  String get tourPetsTravelBody => 'Kies een land om te zien wat je huisdier nodig heeft om erheen te reizen, en hoe lang dat duurt.';
+
+  @override
+  String get petTypeLabel => 'Soort huisdier';
+
+  @override
+  String get petTypeHint => 'Begin met typen, bijvoorbeeld Konijn of Papegaai';
+
+  @override
+  String get petTypeFerret => 'Fret';
+
+  @override
+  String get petTypeRabbit => 'Konijn';
+
+  @override
+  String get petTypeGuineaPig => 'Cavia';
+
+  @override
+  String get petTypeHamster => 'Hamster';
+
+  @override
+  String get petTypeRat => 'Rat';
+
+  @override
+  String get petTypeMouse => 'Muis';
+
+  @override
+  String get petTypeGerbil => 'Gerbil';
+
+  @override
+  String get petTypeChinchilla => 'Chinchilla';
+
+  @override
+  String get petTypeHedgehog => 'Egel';
+
+  @override
+  String get petTypeHorse => 'Paard';
+
+  @override
+  String get petTypePony => 'Pony';
+
+  @override
+  String get petTypeDonkey => 'Ezel';
+
+  @override
+  String get petTypeParrot => 'Papegaai';
+
+  @override
+  String get petTypeBudgie => 'Grasparkiet';
+
+  @override
+  String get petTypeCockatiel => 'Valkparkiet';
+
+  @override
+  String get petTypeCanary => 'Kanarie';
+
+  @override
+  String get petTypeChicken => 'Kip';
+
+  @override
+  String get petTypeTortoise => 'Landschildpad';
+
+  @override
+  String get petTypeTurtle => 'Waterschildpad';
+
+  @override
+  String get petTypeSnake => 'Slang';
+
+  @override
+  String get petTypeLizard => 'Hagedis';
+
+  @override
+  String get petTypeGecko => 'Gekko';
+
+  @override
+  String get petTypeBeardedDragon => 'Baardagame';
+
+  @override
+  String get petTypeFrog => 'Kikker';
+
+  @override
+  String get petTypeAxolotl => 'Axolotl';
+
+  @override
+  String get petTypeFish => 'Vis';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Rabiësvaccinatie minstens $duration voor aankomst';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Een rabiësbloedtest na de vaccinatie, dan een wachttijd van $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Daarna minstens $duration in een goedgekeurd land voor de vlucht';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Quarantaine bij aankomst van minstens $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Je huisdier moet minstens $duration oud zijn';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Te jong voor $country: je huisdier moet minstens $duration oud zijn';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Gecontroleerd door Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Nog niet gecontroleerd. Controleer het op de officiële site voordat je boekt.';
+
+  @override
+  String get petRulesOtherAnimal => 'De regels voor dit dier zijn anders dan voor honden en katten. Kijk op de officiële site wat het nodig heeft.';
+
+  @override
+  String get countryTypeHint => 'Begin met het typen van een land, bijvoorbeeld Frankrijk';
+
+  @override
+  String get assistantStepPets => 'Je huisdieren worden gecontroleerd';
+
+  @override
+  String get tourPetsAddBody => 'Voeg hier nog een huisdier toe. Begin met het typen van de soort, zoals Konijn of Papegaai, en kies een suggestie.';
+
+  @override
+  String get rulesReviewTitle => 'Regels om te controleren';
+
+  @override
+  String get rulesReviewSubtitle => 'Officiële regels van overheidspagina\'s, die op je goedkeuring wachten';
+
+  @override
+  String get rulesReviewNow => 'Nu getoond';
+
+  @override
+  String get rulesReviewNew => 'Nu op de pagina';
+
+  @override
+  String get rulesReviewPets => 'Reizen met een huisdier';
+
+  @override
+  String get rulesReviewPassport => 'Geldigheid van het paspoort';
+
+  @override
+  String get rulesReviewApprove => 'Goedkeuren';
+
+  @override
+  String get rulesReviewReject => 'Afwijzen';
+
+  @override
+  String get rulesReviewEmpty => 'Niets om te controleren.';
+
+  @override
+  String get rulesReviewDropped => 'Weggelaten (geen passende zin)';
+
+  @override
   String get yoursTag => 'Van jou';
 
   @override

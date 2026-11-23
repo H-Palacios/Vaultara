@@ -8541,6 +8541,339 @@ class AppLocalizationsGa extends AppLocalizations {
   String get subcategoryPetPassports => 'Pasanna peataí';
 
   @override
+  String get petsTitle => 'Peataí';
+
+  @override
+  String get petsTileSubtitle => 'Doiciméid, micrishlis agus tréidlia do gach peata';
+
+  @override
+  String get petsNotMembers => 'Ní áirítear peataí i measc do bhaill.';
+
+  @override
+  String get petsAdd => 'Cuir peata leis';
+
+  @override
+  String get petsEmptyBody => 'Cuir do pheata leis chun a vacsaíní, a cheadúnas, a árachas agus a mhicrishlis a choinneáil le chéile, le meabhrúcháin sula rachaidh aon rud as feidhm.';
+
+  @override
+  String get petsPremium => 'Is cuid de Premium iad próifílí peataí.';
+
+  @override
+  String get petKindDog => 'Madra';
+
+  @override
+  String get petKindCat => 'Cat';
+
+  @override
+  String get petKindOther => 'Peata eile';
+
+  @override
+  String get petBirthday => 'Dáta breithe';
+
+  @override
+  String petBorn(String date) {
+    return 'Rugadh $date';
+  }
+
+  @override
+  String get petChipNumber => 'Uimhir na micrishlise';
+
+  @override
+  String get petChipInvalid => 'Úsáid na 9 go 15 digit ar theastas na slise.';
+
+  @override
+  String get petChipRegistry => 'Clár na slise';
+
+  @override
+  String get petChipTip => 'Coinnigh an clár cothrom le dáta nuair a athraíonn tú teach nó uimhir, nó ní féidir leis an tslis do pheata a thabhairt abhaile.';
+
+  @override
+  String get petVetName => 'Tréidlia';
+
+  @override
+  String get petVetPhone => 'Fón an tréidlia';
+
+  @override
+  String get petDocuments => 'Doiciméid';
+
+  @override
+  String get petStillToAdd => 'Fós le cur leis';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '$name a bhaint? Fanann na doiciméid in Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'Peata caillte';
+
+  @override
+  String get petLostSteps => 'Tuairiscigh do pheata ar iarraidh do chlár na slise ar dtús. Ansin glaoigh ar thréidlianna agus dídeanáin ainmhithe in aice láimhe le huimhir na micrishlise, agus roinn grianghraf le déanaí go háitiúil agus ar líne.';
+
+  @override
+  String get petTravelTitle => 'Taisteal le peata';
+
+  @override
+  String get petTravelPick => 'Cá bhfuil tú ag dul?';
+
+  @override
+  String get petTravelHome => 'Cá gcónaíonn do pheata';
+
+  @override
+  String get petRuleChip => 'Micrishlis ISO, curtha isteach roimh an vacsaín confadh';
+
+  @override
+  String get petRuleRabiesTest => 'Vacsaín confadh agus tástáil fola confadh ó shaotharlann cheadaithe';
+
+  @override
+  String get petRuleCertificate => 'Teastas sláinte ó thréidlia oifigiúil';
+
+  @override
+  String get petRulePermit => 'Ceadúnas allmhairithe sula dtaistealaíonn tú';
+
+  @override
+  String get petRuleTapeworm => 'Madraí: cóireáil péiste ribín 1 go 5 lá sula sroicheann tú';
+
+  @override
+  String get petRuleCdcForm => 'CDC Dog Import Form do gach madra';
+
+  @override
+  String get petRuleSomeCountries => 'Ó roinnt tíortha amháin:';
+
+  @override
+  String get petRulesOfficial => 'Rialacha oifigiúla';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Níl rialacha peataí $country ag Vaultara fós. Is féidir lena sheirbhís tréidliachta oifigiúil nó lena ambasáid a rá leat cad atá ag teastáil.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Dlí micrishlise: $country';
+  }
+
+  @override
+  String get petLawUk => 'Riachtanach do mhadraí, agus do chait i Sasana';
+
+  @override
+  String get petLawEu => 'Bíonn rialacha difriúil de réir tíre. Déanfaidh dlí nua AE riachtanach é do gach madra agus cat.';
+
+  @override
+  String get petLawMostStates => 'Riachtanach do mhadraí agus do chait i bhformhór na stát agus na gcríoch';
+
+  @override
+  String get petLawDogs => 'Riachtanach do mhadraí';
+
+  @override
+  String get petLawSellers => 'Riachtanach do mhadraí agus do chait a dhíolann pórtheoirí agus siopaí peataí';
+
+  @override
+  String get petLawLocal => 'Socraíonn gach stát, cúige nó cathair é';
+
+  @override
+  String get petLawNone => 'Níl sé riachtanach faoin dlí náisiúnta, ach tá gá leis le haghaidh taistil agus formhór na n-uchtálacha';
+
+  @override
+  String get tripPetsTitle => 'Peataí ar an turas seo';
+
+  @override
+  String get petCheckNoChip => 'Níl aon mhicrishlis sábháilte';
+
+  @override
+  String get petCheckNoRabies => 'Níl aon vacsaín confadh sábháilte';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Rachaidh an vacsaín confadh as feidhm $date, sula bhfillfidh tú';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Seans nach n-oirfidh an fanacht tar éis na tástála fola roimh imeacht. Labhair le do thréidlia anois.';
+
+  @override
+  String get petCheckNoCertificate => 'Níl aon teastas sláinte ná pas peata sábháilte';
+
+  @override
+  String get planBenefitPets => 'Peataí lena ndoiciméid, a micrishlis agus a dtréidlia féin, nach n-áirítear mar bhaill';
+
+  @override
+  String get tutorialsSubPets => 'Doiciméid peataí, micrishlis agus rialacha taistil';
+
+  @override
+  String get tourPetsListBody => 'Tá a phróifíl féin ag gach peata, leis an micrishlis, an tréidlia agus na doiciméid in aon áit amháin. Ní áirítear peataí i measc do bhaill.';
+
+  @override
+  String get tourPetsDocsBody => 'Is leis an bpeata na vacsaíní, an ceadúnas agus an t-árachas, mar sin deir meabhrúcháin cé leis iad. Taispeánann na suaitheantais cad atá sábháilte.';
+
+  @override
+  String get tourPetsTravelBody => 'Roghnaigh tír chun a fheiceáil cad a theastaíonn ó do pheata chun taisteal ann, agus cé chomh fada a thógann sé.';
+
+  @override
+  String get petTypeLabel => 'Cineál peata';
+
+  @override
+  String get petTypeHint => 'Tosaigh ag clóscríobh, mar shampla Coinín nó Pearóid';
+
+  @override
+  String get petTypeFerret => 'Firéad';
+
+  @override
+  String get petTypeRabbit => 'Coinín';
+
+  @override
+  String get petTypeGuineaPig => 'Muc ghuine';
+
+  @override
+  String get petTypeHamster => 'Hamstar';
+
+  @override
+  String get petTypeRat => 'Francach';
+
+  @override
+  String get petTypeMouse => 'Luch';
+
+  @override
+  String get petTypeGerbil => 'Gearbail';
+
+  @override
+  String get petTypeChinchilla => 'Seinsile';
+
+  @override
+  String get petTypeHedgehog => 'Gráinneog';
+
+  @override
+  String get petTypeHorse => 'Capall';
+
+  @override
+  String get petTypePony => 'Pónaí';
+
+  @override
+  String get petTypeDonkey => 'Asal';
+
+  @override
+  String get petTypeParrot => 'Pearóid';
+
+  @override
+  String get petTypeBudgie => 'Budgie';
+
+  @override
+  String get petTypeCockatiel => 'Cocaitíl';
+
+  @override
+  String get petTypeCanary => 'Canáraí';
+
+  @override
+  String get petTypeChicken => 'Cearc';
+
+  @override
+  String get petTypeTortoise => 'Toirtís';
+
+  @override
+  String get petTypeTurtle => 'Turtar';
+
+  @override
+  String get petTypeSnake => 'Nathair';
+
+  @override
+  String get petTypeLizard => 'Laghairt';
+
+  @override
+  String get petTypeGecko => 'Geiceo';
+
+  @override
+  String get petTypeBeardedDragon => 'Dragan féasógach';
+
+  @override
+  String get petTypeFrog => 'Frog';
+
+  @override
+  String get petTypeAxolotl => 'Acsalotl';
+
+  @override
+  String get petTypeFish => 'Iasc';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Vacsaín confaidh $duration ar a laghad sula sroicheann tú';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Tástáil fola confaidh tar éis na vacsaíne, ansin fanacht $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Ansin $duration ar a laghad i dtír cheadaithe sula n-eitlíonn tú';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Coraintín ar theacht ar feadh $duration ar a laghad';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Caithfidh do pheata a bheith $duration d\'aois ar a laghad';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Ró-óg do $country: caithfidh do pheata a bheith $duration d\'aois ar a laghad';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Seiceáilte ag Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Gan seiceáil fós. Deimhnigh ar an suíomh oifigiúil sula gcuireann tú in áirithe.';
+
+  @override
+  String get petRulesOtherAnimal => 'Tá na rialacha don ainmhí seo difriúil ó na rialacha do mhadraí agus cait. Féach ar an suíomh oifigiúil cad atá ag teastáil.';
+
+  @override
+  String get countryTypeHint => 'Tosaigh ag clóscríobh tíre, mar shampla An Fhrainc';
+
+  @override
+  String get assistantStepPets => 'Do pheataí á seiceáil';
+
+  @override
+  String get tourPetsAddBody => 'Cuir peata eile leis anseo. Tosaigh ag clóscríobh a chineáil, mar shampla Coinín nó Pearóid, agus roghnaigh moladh.';
+
+  @override
+  String get rulesReviewTitle => 'Rialacha le hathbhreithniú';
+
+  @override
+  String get rulesReviewSubtitle => 'Rialacha oifigiúla léite ó leathanaigh rialtais, ag fanacht le do cheadú';
+
+  @override
+  String get rulesReviewNow => 'Á thaispeáint anois';
+
+  @override
+  String get rulesReviewNew => 'Ar an leathanach anois';
+
+  @override
+  String get rulesReviewPets => 'Taisteal le peata';
+
+  @override
+  String get rulesReviewPassport => 'Bailíocht an phas';
+
+  @override
+  String get rulesReviewApprove => 'Ceadaigh';
+
+  @override
+  String get rulesReviewReject => 'Diúltaigh';
+
+  @override
+  String get rulesReviewEmpty => 'Níl aon rud le hathbhreithniú.';
+
+  @override
+  String get rulesReviewDropped => 'Fágtha amach (gan abairt mheaitseála)';
+
+  @override
   String get yoursTag => 'Leatsa';
 
   @override

@@ -8357,6 +8357,339 @@ class AppLocalizationsTa extends AppLocalizations {
   String get subcategoryPetPassports => 'செல்லப்பிராணி கடவுச்சீட்டுகள்';
 
   @override
+  String get petsTitle => 'செல்லப்பிராணிகள்';
+
+  @override
+  String get petsTileSubtitle => 'ஒவ்வொரு செல்லப்பிராணியின் ஆவணங்கள், மைக்ரோசிப் மற்றும் கால்நடை மருத்துவர்';
+
+  @override
+  String get petsNotMembers => 'செல்லப்பிராணிகள் உங்கள் உறுப்பினர்களாகக் கணக்கிடப்படாது.';
+
+  @override
+  String get petsAdd => 'செல்லப்பிராணியைச் சேர்க்கவும்';
+
+  @override
+  String get petsEmptyBody => 'தடுப்பூசிகள், உரிமம், காப்பீடு, மைக்ரோசிப் ஆகியவற்றை ஒன்றாக வைத்திருக்க உங்கள் செல்லப்பிராணியைச் சேர்க்கவும், ஏதாவது காலாவதியாகும் முன் நினைவூட்டல்களுடன்.';
+
+  @override
+  String get petsPremium => 'செல்லப்பிராணி சுயவிவரங்கள் Premium இன் பகுதி.';
+
+  @override
+  String get petKindDog => 'நாய்';
+
+  @override
+  String get petKindCat => 'பூனை';
+
+  @override
+  String get petKindOther => 'மற்ற செல்லப்பிராணி';
+
+  @override
+  String get petBirthday => 'பிறந்த தேதி';
+
+  @override
+  String petBorn(String date) {
+    return 'பிறப்பு $date';
+  }
+
+  @override
+  String get petChipNumber => 'மைக்ரோசிப் எண்';
+
+  @override
+  String get petChipInvalid => 'சிப் சான்றிதழில் உள்ள 9 முதல் 15 இலக்கங்களைப் பயன்படுத்தவும்.';
+
+  @override
+  String get petChipRegistry => 'சிப் பதிவேடு';
+
+  @override
+  String get petChipTip => 'வீடு அல்லது எண்ணை மாற்றும்போது பதிவேட்டைப் புதுப்பிக்கவும், இல்லையெனில் சிப் உங்கள் செல்லப்பிராணியை வீட்டுக்குக் கொண்டுவர முடியாது.';
+
+  @override
+  String get petVetName => 'கால்நடை மருத்துவர்';
+
+  @override
+  String get petVetPhone => 'கால்நடை மருத்துவரின் தொலைபேசி';
+
+  @override
+  String get petDocuments => 'ஆவணங்கள்';
+
+  @override
+  String get petStillToAdd => 'இன்னும் சேர்க்க வேண்டியவை';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '$name ஐ அகற்றவா? ஆவணங்கள் Vaultara இல் இருக்கும்.';
+  }
+
+  @override
+  String get petLostTitle => 'காணாமல் போன செல்லப்பிராணி';
+
+  @override
+  String get petLostSteps => 'முதலில் உங்கள் செல்லப்பிராணி காணாமல் போனதை சிப் பதிவேட்டுக்குத் தெரிவிக்கவும். பிறகு மைக்ரோசிப் எண்ணுடன் அருகிலுள்ள கால்நடை மருத்துவர்கள் மற்றும் விலங்கு காப்பகங்களை அழைத்து, சமீபத்திய புகைப்படத்தை உள்ளூரிலும் ஆன்லைனிலும் பகிரவும்.';
+
+  @override
+  String get petTravelTitle => 'செல்லப்பிராணியுடன் பயணம்';
+
+  @override
+  String get petTravelPick => 'நீங்கள் எங்கே செல்கிறீர்கள்?';
+
+  @override
+  String get petTravelHome => 'உங்கள் செல்லப்பிராணி வசிக்கும் இடம்';
+
+  @override
+  String get petRuleChip => 'வெறிநாய்க்கடி தடுப்பூசிக்கு முன் பொருத்திய ISO மைக்ரோசிப்';
+
+  @override
+  String get petRuleRabiesTest => 'வெறிநாய்க்கடி தடுப்பூசியும் அங்கீகரிக்கப்பட்ட ஆய்வகத்தின் வெறிநாய்க்கடி இரத்தப் பரிசோதனையும்';
+
+  @override
+  String get petRuleCertificate => 'அதிகாரப்பூர்வ கால்நடை மருத்துவரின் சுகாதாரச் சான்றிதழ்';
+
+  @override
+  String get petRulePermit => 'பயணத்துக்கு முன் இறக்குமதி அனுமதி';
+
+  @override
+  String get petRuleTapeworm => 'நாய்கள்: வருவதற்கு 1 முதல் 5 நாட்களுக்கு முன் நாடாப்புழு சிகிச்சை';
+
+  @override
+  String get petRuleCdcForm => 'ஒவ்வொரு நாய்க்கும் ஒரு CDC Dog Import Form';
+
+  @override
+  String get petRuleSomeCountries => 'சில நாடுகளிலிருந்து மட்டும்:';
+
+  @override
+  String get petRulesOfficial => 'அதிகாரப்பூர்வ விதிகள்';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara இடம் இன்னும் $country இன் செல்லப்பிராணி விதிகள் இல்லை. அதன் அதிகாரப்பூர்வ கால்நடை சேவை அல்லது தூதரகம் என்ன தேவை என்று சொல்லும்.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return '$country இல் மைக்ரோசிப் சட்டம்';
+  }
+
+  @override
+  String get petLawUk => 'நாய்களுக்குக் கட்டாயம், இங்கிலாந்தில் பூனைகளுக்கும்';
+
+  @override
+  String get petLawEu => 'விதிகள் நாட்டுக்கு நாடு வேறுபடும். புதிய EU சட்டம் எல்லா நாய்கள் மற்றும் பூனைகளுக்கும் இதைக் கட்டாயமாக்கும்.';
+
+  @override
+  String get petLawMostStates => 'பெரும்பாலான மாநிலங்கள் மற்றும் பிரதேசங்களில் நாய்கள் மற்றும் பூனைகளுக்குக் கட்டாயம்';
+
+  @override
+  String get petLawDogs => 'நாய்களுக்குக் கட்டாயம்';
+
+  @override
+  String get petLawSellers => 'வளர்ப்பாளர்கள் மற்றும் செல்லப்பிராணி கடைகள் விற்கும் நாய்கள் மற்றும் பூனைகளுக்குக் கட்டாயம்';
+
+  @override
+  String get petLawLocal => 'ஒவ்வொரு மாநிலம், மாகாணம் அல்லது நகரம் தீர்மானிக்கும்';
+
+  @override
+  String get petLawNone => 'தேசிய சட்டப்படி கட்டாயமில்லை, ஆனால் பயணத்துக்கும் பெரும்பாலான தத்தெடுப்புக்கும் தேவை';
+
+  @override
+  String get tripPetsTitle => 'இந்தப் பயணத்தின் செல்லப்பிராணிகள்';
+
+  @override
+  String get petCheckNoChip => 'மைக்ரோசிப் எதுவும் சேமிக்கப்படவில்லை';
+
+  @override
+  String get petCheckNoRabies => 'வெறிநாய்க்கடி தடுப்பூசி எதுவும் சேமிக்கப்படவில்லை';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'வெறிநாய்க்கடி தடுப்பூசி $date அன்று காலாவதியாகும், நீங்கள் திரும்பும் முன்';
+  }
+
+  @override
+  String get petCheckTooSoon => 'இரத்தப் பரிசோதனைக்குப் பிறகான காத்திருப்பு புறப்படும் முன் முடியாமல் போகலாம். இப்போதே உங்கள் கால்நடை மருத்துவரிடம் பேசுங்கள்.';
+
+  @override
+  String get petCheckNoCertificate => 'சுகாதாரச் சான்றிதழ் அல்லது செல்லப்பிராணி கடவுச்சீட்டு எதுவும் சேமிக்கப்படவில்லை';
+
+  @override
+  String get planBenefitPets => 'சொந்த ஆவணங்கள், மைக்ரோசிப் மற்றும் கால்நடை மருத்துவருடன் செல்லப்பிராணிகள், உறுப்பினர்களாகக் கணக்கிடப்படாது';
+
+  @override
+  String get tutorialsSubPets => 'செல்லப்பிராணி ஆவணங்கள், மைக்ரோசிப் மற்றும் பயண விதிகள்';
+
+  @override
+  String get tourPetsListBody => 'ஒவ்வொரு செல்லப்பிராணிக்கும் சொந்த சுயவிவரம் உள்ளது, மைக்ரோசிப், கால்நடை மருத்துவர், ஆவணங்கள் ஒரே இடத்தில். செல்லப்பிராணிகள் உங்கள் உறுப்பினர்களாகக் கணக்கிடப்படாது.';
+
+  @override
+  String get tourPetsDocsBody => 'தடுப்பூசிகள், உரிமம், காப்பீடு செல்லப்பிராணிக்குச் சொந்தமானவை, எனவே நினைவூட்டல்கள் யாருடையவை என்று சொல்லும். பேட்ஜ்கள் என்ன சேமிக்கப்பட்டது என்று காட்டும்.';
+
+  @override
+  String get tourPetsTravelBody => 'உங்கள் செல்லப்பிராணி அங்கு பயணிக்க என்ன தேவை, எவ்வளவு நேரம் ஆகும் என்று பார்க்க ஒரு நாட்டைத் தேர்ந்தெடுக்கவும்.';
+
+  @override
+  String get petTypeLabel => 'செல்லப்பிராணி வகை';
+
+  @override
+  String get petTypeHint => 'தட்டச்சு செய்யத் தொடங்குங்கள், எ.கா. முயல் அல்லது கிளி';
+
+  @override
+  String get petTypeFerret => 'ஃபெரெட்';
+
+  @override
+  String get petTypeRabbit => 'முயல்';
+
+  @override
+  String get petTypeGuineaPig => 'கினிப் பன்றி';
+
+  @override
+  String get petTypeHamster => 'ஹாம்ஸ்டர்';
+
+  @override
+  String get petTypeRat => 'எலி';
+
+  @override
+  String get petTypeMouse => 'சுண்டெலி';
+
+  @override
+  String get petTypeGerbil => 'ஜெர்பில்';
+
+  @override
+  String get petTypeChinchilla => 'சின்சில்லா';
+
+  @override
+  String get petTypeHedgehog => 'முள்ளம்பன்றி';
+
+  @override
+  String get petTypeHorse => 'குதிரை';
+
+  @override
+  String get petTypePony => 'குட்டைக் குதிரை';
+
+  @override
+  String get petTypeDonkey => 'கழுதை';
+
+  @override
+  String get petTypeParrot => 'கிளி';
+
+  @override
+  String get petTypeBudgie => 'பட்ஜி';
+
+  @override
+  String get petTypeCockatiel => 'காக்கட்டீல்';
+
+  @override
+  String get petTypeCanary => 'கேனரி';
+
+  @override
+  String get petTypeChicken => 'கோழி';
+
+  @override
+  String get petTypeTortoise => 'ஆமை';
+
+  @override
+  String get petTypeTurtle => 'நீர் ஆமை';
+
+  @override
+  String get petTypeSnake => 'பாம்பு';
+
+  @override
+  String get petTypeLizard => 'பல்லி';
+
+  @override
+  String get petTypeGecko => 'கெக்கோ';
+
+  @override
+  String get petTypeBeardedDragon => 'தாடி டிராகன்';
+
+  @override
+  String get petTypeFrog => 'தவளை';
+
+  @override
+  String get petTypeAxolotl => 'ஆக்ஸோலோட்ல்';
+
+  @override
+  String get petTypeFish => 'மீன்';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'வருவதற்குக் குறைந்தது $duration முன் வெறிநாய்க்கடி தடுப்பூசி';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'தடுப்பூசிக்குப் பின் வெறிநாய்க்கடி இரத்தப் பரிசோதனை, பின் $duration காத்திருப்பு';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'பின் பறப்பதற்கு முன் அங்கீகரிக்கப்பட்ட நாட்டில் குறைந்தது $duration';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'வந்தவுடன் குறைந்தது $duration தனிமைப்படுத்தல்';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'உங்கள் செல்லப்பிராணிக்குக் குறைந்தது $duration வயது இருக்க வேண்டும்';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return '$countryக்கு மிகவும் இளையது: உங்கள் செல்லப்பிராணிக்குக் குறைந்தது $duration வயது இருக்க வேண்டும்';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Vaultara சரிபார்த்தது · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'இன்னும் சரிபார்க்கப்படவில்லை. முன்பதிவு செய்யும் முன் அதிகாரப்பூர்வ தளத்தில் உறுதிசெய்யவும்.';
+
+  @override
+  String get petRulesOtherAnimal => 'இந்த விலங்கின் விதிகள் நாய், பூனை விதிகளிலிருந்து வேறுபட்டவை. தேவையானதை அதிகாரப்பூர்வ தளத்தில் பாருங்கள்.';
+
+  @override
+  String get countryTypeHint => 'நாட்டின் பெயரைத் தட்டச்சு செய்யத் தொடங்குங்கள், எ.கா. பிரான்ஸ்';
+
+  @override
+  String get assistantStepPets => 'உங்கள் செல்லப்பிராணிகளைச் சரிபார்க்கிறது';
+
+  @override
+  String get tourPetsAddBody => 'இங்கே இன்னொரு செல்லப்பிராணியைச் சேர்க்கவும். அதன் வகையைத் தட்டச்சு செய்யுங்கள், எ.கா. முயல் அல்லது கிளி, ஒரு பரிந்துரையைத் தேர்ந்தெடுக்கவும்.';
+
+  @override
+  String get rulesReviewTitle => 'மதிப்பாய்வுக்கான விதிகள்';
+
+  @override
+  String get rulesReviewSubtitle => 'அரசுப் பக்கங்களிலிருந்து படித்த அதிகாரப்பூர்வ விதிகள், உங்கள் ஒப்புதலுக்காகக் காத்திருக்கின்றன';
+
+  @override
+  String get rulesReviewNow => 'இப்போது காட்டப்படுவது';
+
+  @override
+  String get rulesReviewNew => 'இப்போது பக்கத்தில்';
+
+  @override
+  String get rulesReviewPets => 'செல்லப்பிராணியுடன் பயணம்';
+
+  @override
+  String get rulesReviewPassport => 'கடவுச்சீட்டின் செல்லுபடி';
+
+  @override
+  String get rulesReviewApprove => 'ஒப்புதல்';
+
+  @override
+  String get rulesReviewReject => 'நிராகரி';
+
+  @override
+  String get rulesReviewEmpty => 'மதிப்பாய்வு செய்ய எதுவும் இல்லை.';
+
+  @override
+  String get rulesReviewDropped => 'விடப்பட்டது (பொருந்தும் வாக்கியம் இல்லை)';
+
+  @override
   String get yoursTag => 'உங்களுடையது';
 
   @override

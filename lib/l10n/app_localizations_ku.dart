@@ -8357,6 +8357,339 @@ class AppLocalizationsKu extends AppLocalizations {
   String get subcategoryPetPassports => 'Pasaportên heywanên malê';
 
   @override
+  String get petsTitle => 'Heywanên malê';
+
+  @override
+  String get petsTileSubtitle => 'Belge, mîkroçîp û veterîner ji bo her heywanê malê';
+
+  @override
+  String get petsNotMembers => 'Heywanên malê di nav endamên te de nayên hesibandin.';
+
+  @override
+  String get petsAdd => 'Heywanekî malê lê zêde bike';
+
+  @override
+  String get petsEmptyBody => 'Heywanê xwe lê zêde bike da ku derzî, destûr, sîgorte û mîkroçîpa wî bi hev re bin, bi bîranînan berî ku tiştek biqede.';
+
+  @override
+  String get petsPremium => 'Profîlên heywanên malê beşek ji Premium in.';
+
+  @override
+  String get petKindDog => 'Kûçik';
+
+  @override
+  String get petKindCat => 'Pisîk';
+
+  @override
+  String get petKindOther => 'Heywanekî din';
+
+  @override
+  String get petBirthday => 'Dîroka jidayikbûnê';
+
+  @override
+  String petBorn(String date) {
+    return 'Ji dayik bûye $date';
+  }
+
+  @override
+  String get petChipNumber => 'Hejmara mîkroçîpê';
+
+  @override
+  String get petChipInvalid => '9 heta 15 reqemên li ser belgeya çîpê bikar bîne.';
+
+  @override
+  String get petChipRegistry => 'Tomara çîpê';
+
+  @override
+  String get petChipTip => 'Dema ku tu bar dikî an hejmara xwe diguherînî, tomarê nû bike, wekî din çîp nikare heywanê te vegerîne malê.';
+
+  @override
+  String get petVetName => 'Veterîner';
+
+  @override
+  String get petVetPhone => 'Telefona veterîner';
+
+  @override
+  String get petDocuments => 'Belge';
+
+  @override
+  String get petStillToAdd => 'Hê ne hatine zêdekirin';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '$name were rakirin? Belgeyên wî di Vaultara de dimînin.';
+  }
+
+  @override
+  String get petLostTitle => 'Heywanê winda';
+
+  @override
+  String get petLostSteps => 'Pêşî winda bûna heywanê xwe ji tomara çîpê re ragihîne. Paşê bi hejmara mîkroçîpê li veterîner û stargehên heywanan ên nêzîk bigere, û wêneyekî nû li herêmê û li ser înternetê parve bike.';
+
+  @override
+  String get petTravelTitle => 'Bi heywanê malê re rêwîtî';
+
+  @override
+  String get petTravelPick => 'Tu diçî ku derê?';
+
+  @override
+  String get petTravelHome => 'Cihê ku heywanê te lê dijî';
+
+  @override
+  String get petRuleChip => 'Mîkroçîpeke ISO, berî derziya harbûnê hatiye danîn';
+
+  @override
+  String get petRuleRabiesTest => 'Derziya harbûnê û testa xwînê ya harbûnê ji laboratuvareke pejirandî';
+
+  @override
+  String get petRuleCertificate => 'Belgeya tenduristiyê ji veterînerekî fermî';
+
+  @override
+  String get petRulePermit => 'Destûra îthalatê berî rêwîtiyê';
+
+  @override
+  String get petRuleTapeworm => 'Kûçik: dermankirina kurmê şerîtî 1 heta 5 roj berî ku tu bigihîjî';
+
+  @override
+  String get petRuleCdcForm => 'Ji bo her kûçikî CDC Dog Import Form';
+
+  @override
+  String get petRuleSomeCountries => 'Tenê ji hin welatan:';
+
+  @override
+  String get petRulesOfficial => 'Rêgezên fermî';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara hê rêgezên heywanên malê yên $country tune ne. Xizmeta veterîneriyê ya fermî an balyozxaneya wî dikare ji te re bibêje çi pêwîst e.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Qanûna mîkroçîpê li $country';
+  }
+
+  @override
+  String get petLawUk => 'Ji bo kûçikan mecbûrî ye, û li Îngilterê ji bo pisîkan jî';
+
+  @override
+  String get petLawEu => 'Rêgez li gorî welêt cuda ne. Qanûneke nû ya YE dê wê ji bo hemû kûçik û pisîkan mecbûrî bike.';
+
+  @override
+  String get petLawMostStates => 'Li piraniya eyalet û herêman ji bo kûçik û pisîkan mecbûrî ye';
+
+  @override
+  String get petLawDogs => 'Ji bo kûçikan mecbûrî ye';
+
+  @override
+  String get petLawSellers => 'Ji bo kûçik û pisîkên ku xwedîkar û firoşgehên heywanan difiroşin mecbûrî ye';
+
+  @override
+  String get petLawLocal => 'Her eyalet, parêzgeh an bajar diyar dike';
+
+  @override
+  String get petLawNone => 'Bi qanûna neteweyî ne mecbûrî ye, lê ji bo rêwîtiyê û piraniya xwedîkirinan pêwîst e';
+
+  @override
+  String get tripPetsTitle => 'Heywanên malê di vê rêwîtiyê de';
+
+  @override
+  String get petCheckNoChip => 'Tu mîkroçîp nehatiye tomarkirin';
+
+  @override
+  String get petCheckNoRabies => 'Tu derziya harbûnê nehatiye tomarkirin';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Derziya harbûnê di $date de diqede, berî ku tu vegerî';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Dibe ku bendewariya piştî testa xwînê berî çûna te neqede. Niha bi veterînerê xwe re biaxive.';
+
+  @override
+  String get petCheckNoCertificate => 'Tu belgeya tenduristiyê an pasaporta heywanê nehatiye tomarkirin';
+
+  @override
+  String get planBenefitPets => 'Heywanên malê bi belge, mîkroçîp û veterînerê xwe, wek endam nayên hesibandin';
+
+  @override
+  String get tutorialsSubPets => 'Belgeyên heywanên malê, mîkroçîp û rêgezên rêwîtiyê';
+
+  @override
+  String get tourPetsListBody => 'Her heywanekî malê profîla xwe heye, bi mîkroçîp, veterîner û belgeyan li cihekî. Heywanên malê di nav endamên te de nayên hesibandin.';
+
+  @override
+  String get tourPetsDocsBody => 'Derzî, destûr û sîgorte yên heywanê ne, ji ber vê yekê bîranîn dibêjin ên kê ne. Nîşan nîşan didin ka çi hatiye tomarkirin.';
+
+  @override
+  String get tourPetsTravelBody => 'Welatekî hilbijêre da ku bibînî heywanê te ji bo rêwîtiya wir çi hewce dike, û çiqas dem digire.';
+
+  @override
+  String get petTypeLabel => 'Cureyê heywanê malê';
+
+  @override
+  String get petTypeHint => 'Dest bi nivîsînê bike, mînak Kêvroşk an Tûtî';
+
+  @override
+  String get petTypeFerret => 'Ferret';
+
+  @override
+  String get petTypeRabbit => 'Kêvroşk';
+
+  @override
+  String get petTypeGuineaPig => 'Berazê gîneyê';
+
+  @override
+  String get petTypeHamster => 'Hamster';
+
+  @override
+  String get petTypeRat => 'Mişkê mezin';
+
+  @override
+  String get petTypeMouse => 'Mişk';
+
+  @override
+  String get petTypeGerbil => 'Gerbil';
+
+  @override
+  String get petTypeChinchilla => 'Çînçîla';
+
+  @override
+  String get petTypeHedgehog => 'Jûjî';
+
+  @override
+  String get petTypeHorse => 'Hesp';
+
+  @override
+  String get petTypePony => 'Ponî';
+
+  @override
+  String get petTypeDonkey => 'Ker';
+
+  @override
+  String get petTypeParrot => 'Tûtî';
+
+  @override
+  String get petTypeBudgie => 'Tûtiya biçûk';
+
+  @override
+  String get petTypeCockatiel => 'Kokatîl';
+
+  @override
+  String get petTypeCanary => 'Kanarya';
+
+  @override
+  String get petTypeChicken => 'Mirîşk';
+
+  @override
+  String get petTypeTortoise => 'Kûsî';
+
+  @override
+  String get petTypeTurtle => 'Kûsiya avê';
+
+  @override
+  String get petTypeSnake => 'Mar';
+
+  @override
+  String get petTypeLizard => 'Marmarok';
+
+  @override
+  String get petTypeGecko => 'Geko';
+
+  @override
+  String get petTypeBeardedDragon => 'Ejdehaya rîhdar';
+
+  @override
+  String get petTypeFrog => 'Beq';
+
+  @override
+  String get petTypeAxolotl => 'Aksolotl';
+
+  @override
+  String get petTypeFish => 'Masî';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Derziya harbûnê herî kêm $duration berî gihîştina te';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Testa xwînê ya harbûnê piştî derziyê, paşê $duration li bendê bimîne';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Paşê herî kêm $duration li welatekî pejirandî berî firînê';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Karantîn di gihîştinê de herî kêm $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Divê heywanê te herî kêm $duration be';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Ji bo $country pir biçûk e: divê heywanê te herî kêm $duration be';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Ji aliyê Vaultara ve hatiye kontrolkirin · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Hîn nehatiye kontrolkirin. Berî rezervasyonê li malpera fermî piştrast bike.';
+
+  @override
+  String get petRulesOtherAnimal => 'Qaîdeyên vî heywanî ji yên kûçik û pisîkan cuda ne. Li malpera fermî binêre çi hewce ye.';
+
+  @override
+  String get countryTypeHint => 'Dest bi nivîsîna welatekî bike, mînak Fransa';
+
+  @override
+  String get assistantStepPets => 'Heywanên te tên kontrolkirin';
+
+  @override
+  String get tourPetsAddBody => 'Li vir heywanekî din zêde bike. Dest bi nivîsîna cureyê wî bike, wek Kêvroşk an Tûtî, û pêşniyarekê hilbijêre.';
+
+  @override
+  String get rulesReviewTitle => 'Qaîdeyên ji bo nirxandinê';
+
+  @override
+  String get rulesReviewSubtitle => 'Qaîdeyên fermî yên ji rûpelên hikûmetê hatine xwendin, li benda pejirandina te ne';
+
+  @override
+  String get rulesReviewNow => 'Niha tê nîşandan';
+
+  @override
+  String get rulesReviewNew => 'Niha li ser rûpelê';
+
+  @override
+  String get rulesReviewPets => 'Rêwîtiya bi heywan re';
+
+  @override
+  String get rulesReviewPassport => 'Derbasdariya pasaportê';
+
+  @override
+  String get rulesReviewApprove => 'Bipejirîne';
+
+  @override
+  String get rulesReviewReject => 'Red bike';
+
+  @override
+  String get rulesReviewEmpty => 'Tiştek ji bo nirxandinê tune.';
+
+  @override
+  String get rulesReviewDropped => 'Hate derxistin (hevokeke lihevhatî tune)';
+
+  @override
   String get yoursTag => 'Ya te';
 
   @override

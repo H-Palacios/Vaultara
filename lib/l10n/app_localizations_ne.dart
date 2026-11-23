@@ -8357,6 +8357,339 @@ class AppLocalizationsNe extends AppLocalizations {
   String get subcategoryPetPassports => 'घरपालुवा जनावरको राहदानी';
 
   @override
+  String get petsTitle => 'घरपालुवा जनावर';
+
+  @override
+  String get petsTileSubtitle => 'हरेक घरपालुवा जनावरका कागजात, माइक्रोचिप र पशु चिकित्सक';
+
+  @override
+  String get petsNotMembers => 'घरपालुवा जनावर तपाईंका सदस्यमा गनिँदैनन्।';
+
+  @override
+  String get petsAdd => 'घरपालुवा जनावर थप्नुहोस्';
+
+  @override
+  String get petsEmptyBody => 'आफ्नो घरपालुवा जनावर थप्नुहोस् ताकि यसका खोप, इजाजतपत्र, बीमा र माइक्रोचिप सँगै रहून्, केही म्याद सकिनुअघि रिमाइन्डरसहित।';
+
+  @override
+  String get petsPremium => 'घरपालुवा जनावरका प्रोफाइल Premium को भाग हुन्।';
+
+  @override
+  String get petKindDog => 'कुकुर';
+
+  @override
+  String get petKindCat => 'बिरालो';
+
+  @override
+  String get petKindOther => 'अन्य घरपालुवा जनावर';
+
+  @override
+  String get petBirthday => 'जन्म मिति';
+
+  @override
+  String petBorn(String date) {
+    return 'जन्म $date';
+  }
+
+  @override
+  String get petChipNumber => 'माइक्रोचिप नम्बर';
+
+  @override
+  String get petChipInvalid => 'चिप प्रमाणपत्रमा भएका 9 देखि 15 अङ्क प्रयोग गर्नुहोस्।';
+
+  @override
+  String get petChipRegistry => 'चिप दर्ता';
+
+  @override
+  String get petChipTip => 'घर सर्दा वा नम्बर फेर्दा दर्ता अद्यावधिक गर्नुहोस्, नत्र चिपले तपाईंको जनावरलाई घर फर्काउन सक्दैन।';
+
+  @override
+  String get petVetName => 'पशु चिकित्सक';
+
+  @override
+  String get petVetPhone => 'पशु चिकित्सकको फोन';
+
+  @override
+  String get petDocuments => 'कागजात';
+
+  @override
+  String get petStillToAdd => 'अझै थप्न बाँकी';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '$name हटाउने? कागजात Vaultara मा रहन्छन्।';
+  }
+
+  @override
+  String get petLostTitle => 'हराएको घरपालुवा जनावर';
+
+  @override
+  String get petLostSteps => 'पहिले चिप दर्तामा तपाईंको जनावर हराएको खबर गर्नुहोस्। त्यसपछि माइक्रोचिप नम्बरसहित नजिकका पशु चिकित्सक र पशु आश्रयहरूमा फोन गर्नुहोस्, र हालको फोटो स्थानीय रूपमा र अनलाइन साझा गर्नुहोस्।';
+
+  @override
+  String get petTravelTitle => 'घरपालुवा जनावरसँग यात्रा';
+
+  @override
+  String get petTravelPick => 'तपाईं कहाँ जाँदै हुनुहुन्छ?';
+
+  @override
+  String get petTravelHome => 'तपाईंको जनावर बस्ने ठाउँ';
+
+  @override
+  String get petRuleChip => 'रेबिज खोपअघि राखिएको ISO माइक्रोचिप';
+
+  @override
+  String get petRuleRabiesTest => 'रेबिज खोप र स्वीकृत प्रयोगशालाबाट रेबिज रगत परीक्षण';
+
+  @override
+  String get petRuleCertificate => 'आधिकारिक पशु चिकित्सकको स्वास्थ्य प्रमाणपत्र';
+
+  @override
+  String get petRulePermit => 'यात्राअघि आयात अनुमतिपत्र';
+
+  @override
+  String get petRuleTapeworm => 'कुकुर: पुग्नुभन्दा 1 देखि 5 दिनअघि फित्ते जुकाको उपचार';
+
+  @override
+  String get petRuleCdcForm => 'हरेक कुकुरका लागि CDC Dog Import Form';
+
+  @override
+  String get petRuleSomeCountries => 'केही देशबाट मात्र:';
+
+  @override
+  String get petRulesOfficial => 'आधिकारिक नियम';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara सँग अझै $country का घरपालुवा जनावरका नियम छैनन्। त्यहाँको आधिकारिक पशु सेवा वा दूतावासले के चाहिन्छ भन्न सक्छ।';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return '$country मा माइक्रोचिप कानून';
+  }
+
+  @override
+  String get petLawUk => 'कुकुरका लागि अनिवार्य, र इङ्ल्यान्डमा बिरालोका लागि पनि';
+
+  @override
+  String get petLawEu => 'नियम देशअनुसार फरक छन्। नयाँ EU कानूनले सबै कुकुर र बिरालोका लागि यसलाई अनिवार्य बनाउनेछ।';
+
+  @override
+  String get petLawMostStates => 'धेरैजसो राज्य र क्षेत्रमा कुकुर र बिरालोका लागि अनिवार्य';
+
+  @override
+  String get petLawDogs => 'कुकुरका लागि अनिवार्य';
+
+  @override
+  String get petLawSellers => 'प्रजनक र पेट पसलले बेच्ने कुकुर र बिरालोका लागि अनिवार्य';
+
+  @override
+  String get petLawLocal => 'हरेक राज्य, प्रदेश वा सहरले तोक्छ';
+
+  @override
+  String get petLawNone => 'राष्ट्रिय कानूनले अनिवार्य गर्दैन, तर यात्रा र धेरैजसो धर्मपुत्र लिनका लागि चाहिन्छ';
+
+  @override
+  String get tripPetsTitle => 'यो यात्राका घरपालुवा जनावर';
+
+  @override
+  String get petCheckNoChip => 'कुनै माइक्रोचिप सुरक्षित छैन';
+
+  @override
+  String get petCheckNoRabies => 'कुनै रेबिज खोप सुरक्षित छैन';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'रेबिज खोपको म्याद $date मा सकिन्छ, तपाईं फर्कनुअघि';
+  }
+
+  @override
+  String get petCheckTooSoon => 'रगत परीक्षणपछिको पर्खाइ तपाईं जानुअघि नपुग्न सक्छ। अहिल्यै आफ्नो पशु चिकित्सकसँग कुरा गर्नुहोस्।';
+
+  @override
+  String get petCheckNoCertificate => 'कुनै स्वास्थ्य प्रमाणपत्र वा पेट पासपोर्ट सुरक्षित छैन';
+
+  @override
+  String get planBenefitPets => 'आफ्नै कागजात, माइक्रोचिप र पशु चिकित्सकसहित घरपालुवा जनावर, सदस्यका रूपमा गनिँदैनन्';
+
+  @override
+  String get tutorialsSubPets => 'घरपालुवा जनावरका कागजात, माइक्रोचिप र यात्रा नियम';
+
+  @override
+  String get tourPetsListBody => 'हरेक घरपालुवा जनावरको आफ्नै प्रोफाइल छ, माइक्रोचिप, पशु चिकित्सक र कागजात एकै ठाउँमा। घरपालुवा जनावर तपाईंका सदस्यमा गनिँदैनन्।';
+
+  @override
+  String get tourPetsDocsBody => 'खोप, इजाजतपत्र र बीमा जनावरका हुन्, त्यसैले रिमाइन्डरले कसका हुन् भन्छन्। ब्याजले के सुरक्षित छ देखाउँछन्।';
+
+  @override
+  String get tourPetsTravelBody => 'तपाईंको जनावरलाई त्यहाँ यात्रा गर्न के चाहिन्छ र कति समय लाग्छ हेर्न देश छान्नुहोस्।';
+
+  @override
+  String get petTypeLabel => 'घरपालुवा जनावरको प्रकार';
+
+  @override
+  String get petTypeHint => 'टाइप गर्न सुरु गर्नुहोस्, जस्तै खरायो वा सुगा';
+
+  @override
+  String get petTypeFerret => 'फेरेट';
+
+  @override
+  String get petTypeRabbit => 'खरायो';
+
+  @override
+  String get petTypeGuineaPig => 'गिनी पिग';
+
+  @override
+  String get petTypeHamster => 'ह्याम्स्टर';
+
+  @override
+  String get petTypeRat => 'मुसो';
+
+  @override
+  String get petTypeMouse => 'सानो मुसो';
+
+  @override
+  String get petTypeGerbil => 'जर्बिल';
+
+  @override
+  String get petTypeChinchilla => 'चिनचिला';
+
+  @override
+  String get petTypeHedgehog => 'दुम्सी';
+
+  @override
+  String get petTypeHorse => 'घोडा';
+
+  @override
+  String get petTypePony => 'टट्टु';
+
+  @override
+  String get petTypeDonkey => 'गधा';
+
+  @override
+  String get petTypeParrot => 'सुगा';
+
+  @override
+  String get petTypeBudgie => 'बजरीगर';
+
+  @override
+  String get petTypeCockatiel => 'ककाटिल';
+
+  @override
+  String get petTypeCanary => 'क्यानरी';
+
+  @override
+  String get petTypeChicken => 'कुखुरा';
+
+  @override
+  String get petTypeTortoise => 'कछुवा';
+
+  @override
+  String get petTypeTurtle => 'पानीको कछुवा';
+
+  @override
+  String get petTypeSnake => 'सर्प';
+
+  @override
+  String get petTypeLizard => 'छेपारो';
+
+  @override
+  String get petTypeGecko => 'गेको';
+
+  @override
+  String get petTypeBeardedDragon => 'दाह्रीवाला ड्र्यागन';
+
+  @override
+  String get petTypeFrog => 'भ्यागुता';
+
+  @override
+  String get petTypeAxolotl => 'एक्सोलोटल';
+
+  @override
+  String get petTypeFish => 'माछा';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'आइपुग्नुभन्दा कम्तीमा $duration अघि रेबिज खोप';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'खोपपछि रेबिज रगत परीक्षण, त्यसपछि $duration पर्खाइ';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'त्यसपछि उडान अघि स्वीकृत देशमा कम्तीमा $duration';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'आइपुग्दा कम्तीमा $duration क्वारेन्टाइन';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'तपाईंको जनावर कम्तीमा $duration को हुनुपर्छ';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return '$country का लागि धेरै सानो: तपाईंको जनावर कम्तीमा $duration को हुनुपर्छ';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Vaultara ले जाँचेको · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'अझै जाँचिएको छैन। बुक गर्नुअघि आधिकारिक साइटमा पक्का गर्नुहोस्।';
+
+  @override
+  String get petRulesOtherAnimal => 'यो जनावरका नियम कुकुर र बिरालोका भन्दा फरक छन्। के चाहिन्छ भनेर आधिकारिक साइटमा हेर्नुहोस्।';
+
+  @override
+  String get countryTypeHint => 'देशको नाम टाइप गर्न सुरु गर्नुहोस्, जस्तै फ्रान्स';
+
+  @override
+  String get assistantStepPets => 'तपाईंका जनावरहरू जाँच्दै';
+
+  @override
+  String get tourPetsAddBody => 'यहाँ अर्को जनावर थप्नुहोस्। यसको प्रकार टाइप गर्नुहोस्, जस्तै खरायो वा सुगा, र सुझाव छान्नुहोस्।';
+
+  @override
+  String get rulesReviewTitle => 'समीक्षा गर्नुपर्ने नियम';
+
+  @override
+  String get rulesReviewSubtitle => 'सरकारी पृष्ठहरूबाट पढिएका आधिकारिक नियम, तपाईंको स्वीकृतिको प्रतीक्षामा';
+
+  @override
+  String get rulesReviewNow => 'अहिले देखाइएको';
+
+  @override
+  String get rulesReviewNew => 'अहिले पृष्ठमा';
+
+  @override
+  String get rulesReviewPets => 'जनावरसँग यात्रा';
+
+  @override
+  String get rulesReviewPassport => 'राहदानीको वैधता';
+
+  @override
+  String get rulesReviewApprove => 'स्वीकृत गर्नुहोस्';
+
+  @override
+  String get rulesReviewReject => 'अस्वीकार गर्नुहोस्';
+
+  @override
+  String get rulesReviewEmpty => 'समीक्षा गर्न केही छैन।';
+
+  @override
+  String get rulesReviewDropped => 'छोडिएको (मिल्ने वाक्य छैन)';
+
+  @override
   String get yoursTag => 'तपाईंको';
 
   @override

@@ -8410,6 +8410,339 @@ class AppLocalizationsHe extends AppLocalizations {
   String get subcategoryPetPassports => 'דרכונים לחיות מחמד';
 
   @override
+  String get petsTitle => 'חיות מחמד';
+
+  @override
+  String get petsTileSubtitle => 'מסמכים, שבב ווטרינר לכל חיית מחמד';
+
+  @override
+  String get petsNotMembers => 'חיות מחמד לא נספרות בין החברים שלך.';
+
+  @override
+  String get petsAdd => 'הוספת חיית מחמד';
+
+  @override
+  String get petsEmptyBody => 'הוסיפו את חיית המחמד כדי לשמור יחד את החיסונים, הרישיון, הביטוח והשבב שלה, עם תזכורות לפני שמשהו פג.';
+
+  @override
+  String get petsPremium => 'פרופילי חיות מחמד הם חלק מ-Premium.';
+
+  @override
+  String get petKindDog => 'כלב';
+
+  @override
+  String get petKindCat => 'חתול';
+
+  @override
+  String get petKindOther => 'חיית מחמד אחרת';
+
+  @override
+  String get petBirthday => 'תאריך לידה';
+
+  @override
+  String petBorn(String date) {
+    return 'נולד ב-$date';
+  }
+
+  @override
+  String get petChipNumber => 'מספר שבב';
+
+  @override
+  String get petChipInvalid => 'השתמשו ב-9 עד 15 הספרות שעל תעודת השבב.';
+
+  @override
+  String get petChipRegistry => 'מאגר השבב';
+
+  @override
+  String get petChipTip => 'עדכנו את המאגר כשאתם עוברים דירה או מחליפים מספר, אחרת השבב לא יוכל להחזיר את חיית המחמד הביתה.';
+
+  @override
+  String get petVetName => 'וטרינר';
+
+  @override
+  String get petVetPhone => 'טלפון של הווטרינר';
+
+  @override
+  String get petDocuments => 'מסמכים';
+
+  @override
+  String get petStillToAdd => 'עוד להוסיף';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'להסיר את $name? המסמכים נשארים ב-Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'חיית מחמד אבודה';
+
+  @override
+  String get petLostSteps => 'דווחו קודם למאגר השבב שחיית המחמד נעדרת. אחר כך התקשרו לווטרינרים ולמקלטים בסביבה עם מספר השבב, ושתפו תמונה עדכנית באזור וברשת.';
+
+  @override
+  String get petTravelTitle => 'נסיעה עם חיית מחמד';
+
+  @override
+  String get petTravelPick => 'לאן אתם נוסעים?';
+
+  @override
+  String get petTravelHome => 'איפה חיית המחמד גרה';
+
+  @override
+  String get petRuleChip => 'שבב ISO, שהושתל לפני החיסון נגד כלבת';
+
+  @override
+  String get petRuleRabiesTest => 'חיסון נגד כלבת ובדיקת דם לכלבת במעבדה מאושרת';
+
+  @override
+  String get petRuleCertificate => 'תעודת בריאות מווטרינר רשמי';
+
+  @override
+  String get petRulePermit => 'היתר יבוא לפני הנסיעה';
+
+  @override
+  String get petRuleTapeworm => 'כלבים: טיפול נגד תולעת סרט 1 עד 5 ימים לפני ההגעה';
+
+  @override
+  String get petRuleCdcForm => 'CDC Dog Import Form לכל כלב';
+
+  @override
+  String get petRuleSomeCountries => 'רק ממדינות מסוימות:';
+
+  @override
+  String get petRulesOfficial => 'כללים רשמיים';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'ל-Vaultara עדיין אין את כללי חיות המחמד של $country. השירות הווטרינרי הרשמי או השגרירות יוכלו לומר מה נדרש.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'חוק השבב ב$country';
+  }
+
+  @override
+  String get petLawUk => 'חובה לכלבים, ולחתולים באנגליה';
+
+  @override
+  String get petLawEu => 'הכללים שונים בכל מדינה. חוק חדש של האיחוד האירופי יהפוך אותו לחובה לכל הכלבים והחתולים.';
+
+  @override
+  String get petLawMostStates => 'חובה לכלבים ולחתולים ברוב המדינות והטריטוריות';
+
+  @override
+  String get petLawDogs => 'חובה לכלבים';
+
+  @override
+  String get petLawSellers => 'חובה לכלבים ולחתולים שנמכרים על ידי מגדלים וחנויות חיות';
+
+  @override
+  String get petLawLocal => 'נקבע בכל מדינה, מחוז או עיר';
+
+  @override
+  String get petLawNone => 'לא נדרש בחוק הארצי, אבל נחוץ לנסיעות ולרוב האימוצים';
+
+  @override
+  String get tripPetsTitle => 'חיות מחמד בנסיעה הזו';
+
+  @override
+  String get petCheckNoChip => 'לא נשמר שבב';
+
+  @override
+  String get petCheckNoRabies => 'לא נשמר חיסון נגד כלבת';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'החיסון נגד כלבת פג ב-$date, לפני שתחזרו';
+  }
+
+  @override
+  String get petCheckTooSoon => 'ההמתנה אחרי בדיקת הדם אולי לא תספיק לפני היציאה. דברו עם הווטרינר עכשיו.';
+
+  @override
+  String get petCheckNoCertificate => 'לא נשמרה תעודת בריאות או דרכון לחיית מחמד';
+
+  @override
+  String get planBenefitPets => 'חיות מחמד עם המסמכים, השבב והווטרינר שלהן, בלי להיספר כחברים';
+
+  @override
+  String get tutorialsSubPets => 'מסמכי חיות מחמד, שבב וכללי נסיעה';
+
+  @override
+  String get tourPetsListBody => 'לכל חיית מחמד פרופיל משלה, עם השבב, הווטרינר והמסמכים במקום אחד. חיות מחמד לא נספרות בין החברים שלך.';
+
+  @override
+  String get tourPetsDocsBody => 'החיסונים, הרישיון והביטוח שייכים לחיית המחמד, כך שהתזכורות אומרות של מי הם. התגים מראים מה נשמר.';
+
+  @override
+  String get tourPetsTravelBody => 'בחרו מדינה כדי לראות מה חיית המחמד צריכה כדי לנסוע לשם, וכמה זמן זה לוקח.';
+
+  @override
+  String get petTypeLabel => 'סוג חיית מחמד';
+
+  @override
+  String get petTypeHint => 'התחילו להקליד, למשל ארנב או תוכי';
+
+  @override
+  String get petTypeFerret => 'חמוס';
+
+  @override
+  String get petTypeRabbit => 'ארנב';
+
+  @override
+  String get petTypeGuineaPig => 'שרקן';
+
+  @override
+  String get petTypeHamster => 'אוגר';
+
+  @override
+  String get petTypeRat => 'חולדה';
+
+  @override
+  String get petTypeMouse => 'עכבר';
+
+  @override
+  String get petTypeGerbil => 'גרביל';
+
+  @override
+  String get petTypeChinchilla => 'צ\'ינצ\'ילה';
+
+  @override
+  String get petTypeHedgehog => 'קיפוד';
+
+  @override
+  String get petTypeHorse => 'סוס';
+
+  @override
+  String get petTypePony => 'פוני';
+
+  @override
+  String get petTypeDonkey => 'חמור';
+
+  @override
+  String get petTypeParrot => 'תוכי';
+
+  @override
+  String get petTypeBudgie => 'תוכי אוסטרלי';
+
+  @override
+  String get petTypeCockatiel => 'קוקטיל';
+
+  @override
+  String get petTypeCanary => 'כנרית';
+
+  @override
+  String get petTypeChicken => 'תרנגולת';
+
+  @override
+  String get petTypeTortoise => 'צב יבשה';
+
+  @override
+  String get petTypeTurtle => 'צב מים';
+
+  @override
+  String get petTypeSnake => 'נחש';
+
+  @override
+  String get petTypeLizard => 'לטאה';
+
+  @override
+  String get petTypeGecko => 'שממית';
+
+  @override
+  String get petTypeBeardedDragon => 'דרקון מזוקן';
+
+  @override
+  String get petTypeFrog => 'צפרדע';
+
+  @override
+  String get petTypeAxolotl => 'אקסולוטל';
+
+  @override
+  String get petTypeFish => 'דג';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'חיסון כלבת לפחות $duration לפני ההגעה';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'בדיקת דם לכלבת אחרי החיסון, ואז המתנה של $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'ואז לפחות $duration במדינה מאושרת לפני הטיסה';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'הסגר בהגעה למשך $duration לפחות';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'חיית המחמד צריכה להיות בת $duration לפחות';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'צעירה מדי עבור $country: חיית המחמד צריכה להיות בת $duration לפחות';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'נבדק על ידי Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'עדיין לא נבדק. אשרו באתר הרשמי לפני ההזמנה.';
+
+  @override
+  String get petRulesOtherAnimal => 'הכללים לחיה הזו שונים מאלה של כלבים וחתולים. בדקו באתר הרשמי מה היא צריכה.';
+
+  @override
+  String get countryTypeHint => 'התחילו להקליד מדינה, למשל צרפת';
+
+  @override
+  String get assistantStepPets => 'בודק את חיות המחמד שלך';
+
+  @override
+  String get tourPetsAddBody => 'הוסיפו כאן עוד חיית מחמד. התחילו להקליד את הסוג, למשל ארנב או תוכי, ובחרו הצעה.';
+
+  @override
+  String get rulesReviewTitle => 'כללים לבדיקה';
+
+  @override
+  String get rulesReviewSubtitle => 'כללים רשמיים שנקראו מדפי ממשלה, ממתינים לאישורך';
+
+  @override
+  String get rulesReviewNow => 'מוצג עכשיו';
+
+  @override
+  String get rulesReviewNew => 'בדף עכשיו';
+
+  @override
+  String get rulesReviewPets => 'טיסה עם חיית מחמד';
+
+  @override
+  String get rulesReviewPassport => 'תוקף הדרכון';
+
+  @override
+  String get rulesReviewApprove => 'אישור';
+
+  @override
+  String get rulesReviewReject => 'דחייה';
+
+  @override
+  String get rulesReviewEmpty => 'אין מה לבדוק.';
+
+  @override
+  String get rulesReviewDropped => 'הושמט (אין משפט תואם)';
+
+  @override
   String get yoursTag => 'שלך';
 
   @override

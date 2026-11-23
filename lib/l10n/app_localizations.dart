@@ -14461,6 +14461,624 @@ abstract class AppLocalizations {
   /// **'Pet passports'**
   String get subcategoryPetPassports;
 
+  /// Pets: petsTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Pets'**
+  String get petsTitle;
+
+  /// Pets: petsTileSubtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Documents, microchip and vet for each pet'**
+  String get petsTileSubtitle;
+
+  /// Pets: petsNotMembers
+  ///
+  /// In en, this message translates to:
+  /// **'Pets don\'t count towards your members.'**
+  String get petsNotMembers;
+
+  /// Pets: petsAdd
+  ///
+  /// In en, this message translates to:
+  /// **'Add a pet'**
+  String get petsAdd;
+
+  /// Pets: petsEmptyBody
+  ///
+  /// In en, this message translates to:
+  /// **'Add your pet to keep their vaccinations, licence, insurance and microchip together, with reminders before anything runs out.'**
+  String get petsEmptyBody;
+
+  /// Pets: petsPremium
+  ///
+  /// In en, this message translates to:
+  /// **'Pet profiles are part of Premium.'**
+  String get petsPremium;
+
+  /// Pets: petKindDog
+  ///
+  /// In en, this message translates to:
+  /// **'Dog'**
+  String get petKindDog;
+
+  /// Pets: petKindCat
+  ///
+  /// In en, this message translates to:
+  /// **'Cat'**
+  String get petKindCat;
+
+  /// Pets: petKindOther
+  ///
+  /// In en, this message translates to:
+  /// **'Other pet'**
+  String get petKindOther;
+
+  /// Pets: petBirthday
+  ///
+  /// In en, this message translates to:
+  /// **'Date of birth'**
+  String get petBirthday;
+
+  /// Pets: petBorn
+  ///
+  /// In en, this message translates to:
+  /// **'Born {date}'**
+  String petBorn(String date);
+
+  /// Pets: petChipNumber
+  ///
+  /// In en, this message translates to:
+  /// **'Microchip number'**
+  String get petChipNumber;
+
+  /// Pets: petChipInvalid
+  ///
+  /// In en, this message translates to:
+  /// **'Use the 9 to 15 digits on the chip certificate.'**
+  String get petChipInvalid;
+
+  /// Pets: petChipRegistry
+  ///
+  /// In en, this message translates to:
+  /// **'Chip registry'**
+  String get petChipRegistry;
+
+  /// Pets: petChipTip
+  ///
+  /// In en, this message translates to:
+  /// **'Keep the registry up to date when you move or change your number, or the chip can\'t bring your pet home.'**
+  String get petChipTip;
+
+  /// Pets: petVetName
+  ///
+  /// In en, this message translates to:
+  /// **'Vet'**
+  String get petVetName;
+
+  /// Pets: petVetPhone
+  ///
+  /// In en, this message translates to:
+  /// **'Vet\'s phone'**
+  String get petVetPhone;
+
+  /// Pets: petDocuments
+  ///
+  /// In en, this message translates to:
+  /// **'Documents'**
+  String get petDocuments;
+
+  /// Pets: petStillToAdd
+  ///
+  /// In en, this message translates to:
+  /// **'Still to add'**
+  String get petStillToAdd;
+
+  /// Pets: petRemoveConfirm
+  ///
+  /// In en, this message translates to:
+  /// **'Remove {name}? Their documents stay in Vaultara.'**
+  String petRemoveConfirm(String name);
+
+  /// Pets: petLostTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Lost pet'**
+  String get petLostTitle;
+
+  /// Pets: petLostSteps
+  ///
+  /// In en, this message translates to:
+  /// **'Report your pet missing to the chip registry first. Then call nearby vets and animal shelters with the microchip number, and share a recent photo locally and online.'**
+  String get petLostSteps;
+
+  /// Pets: petTravelTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Travelling with a pet'**
+  String get petTravelTitle;
+
+  /// Pets: petTravelPick
+  ///
+  /// In en, this message translates to:
+  /// **'Where are you going?'**
+  String get petTravelPick;
+
+  /// Pets: petTravelHome
+  ///
+  /// In en, this message translates to:
+  /// **'Where your pet lives'**
+  String get petTravelHome;
+
+  /// Pets: petRuleChip
+  ///
+  /// In en, this message translates to:
+  /// **'An ISO microchip, fitted before the rabies vaccine'**
+  String get petRuleChip;
+
+  /// Pets: petRuleRabiesTest
+  ///
+  /// In en, this message translates to:
+  /// **'Rabies vaccine and a rabies blood test from an approved lab'**
+  String get petRuleRabiesTest;
+
+  /// Pets: petRuleCertificate
+  ///
+  /// In en, this message translates to:
+  /// **'A health certificate from an official vet'**
+  String get petRuleCertificate;
+
+  /// Pets: petRulePermit
+  ///
+  /// In en, this message translates to:
+  /// **'An import permit before you travel'**
+  String get petRulePermit;
+
+  /// Pets: petRuleTapeworm
+  ///
+  /// In en, this message translates to:
+  /// **'Dogs: tapeworm treatment 1 to 5 days before you arrive'**
+  String get petRuleTapeworm;
+
+  /// Pets: petRuleCdcForm
+  ///
+  /// In en, this message translates to:
+  /// **'A CDC Dog Import Form for every dog'**
+  String get petRuleCdcForm;
+
+  /// Pets: petRuleSomeCountries
+  ///
+  /// In en, this message translates to:
+  /// **'Only from some countries:'**
+  String get petRuleSomeCountries;
+
+  /// Pets: petRulesOfficial
+  ///
+  /// In en, this message translates to:
+  /// **'Official rules'**
+  String get petRulesOfficial;
+
+  /// Pets: petRulesUnknown
+  ///
+  /// In en, this message translates to:
+  /// **'Vaultara doesn\'t have the pet rules for {country} yet. Its official vet service or embassy can tell you what\'s needed.'**
+  String petRulesUnknown(String country);
+
+  /// Pets: petLawTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Microchip law in {country}'**
+  String petLawTitle(String country);
+
+  /// Pets: petLawUk
+  ///
+  /// In en, this message translates to:
+  /// **'Required for dogs, and for cats in England'**
+  String get petLawUk;
+
+  /// Pets: petLawEu
+  ///
+  /// In en, this message translates to:
+  /// **'Rules differ by country. A new EU law will make it required for all dogs and cats.'**
+  String get petLawEu;
+
+  /// Pets: petLawMostStates
+  ///
+  /// In en, this message translates to:
+  /// **'Required for dogs and cats in most states and territories'**
+  String get petLawMostStates;
+
+  /// Pets: petLawDogs
+  ///
+  /// In en, this message translates to:
+  /// **'Required for dogs'**
+  String get petLawDogs;
+
+  /// Pets: petLawSellers
+  ///
+  /// In en, this message translates to:
+  /// **'Required for dogs and cats sold by breeders and pet shops'**
+  String get petLawSellers;
+
+  /// Pets: petLawLocal
+  ///
+  /// In en, this message translates to:
+  /// **'Set by each state, province or city'**
+  String get petLawLocal;
+
+  /// Pets: petLawNone
+  ///
+  /// In en, this message translates to:
+  /// **'Not required by national law, but needed to travel and for most adoptions'**
+  String get petLawNone;
+
+  /// Pets: tripPetsTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Pets on this trip'**
+  String get tripPetsTitle;
+
+  /// Pets: petCheckNoChip
+  ///
+  /// In en, this message translates to:
+  /// **'No microchip saved'**
+  String get petCheckNoChip;
+
+  /// Pets: petCheckNoRabies
+  ///
+  /// In en, this message translates to:
+  /// **'No rabies vaccine saved'**
+  String get petCheckNoRabies;
+
+  /// Pets: petCheckRabiesRunsOut
+  ///
+  /// In en, this message translates to:
+  /// **'Rabies vaccine runs out {date}, before you\'re back'**
+  String petCheckRabiesRunsOut(String date);
+
+  /// Pets: petCheckTooSoon
+  ///
+  /// In en, this message translates to:
+  /// **'The blood test wait may not fit before you leave. Speak to your vet now.'**
+  String get petCheckTooSoon;
+
+  /// Pets: petCheckNoCertificate
+  ///
+  /// In en, this message translates to:
+  /// **'No health certificate or pet passport saved'**
+  String get petCheckNoCertificate;
+
+  /// Pets: planBenefitPets
+  ///
+  /// In en, this message translates to:
+  /// **'Pets with their own documents, microchip and vet, not counted as members'**
+  String get planBenefitPets;
+
+  /// Pets: tutorialsSubPets
+  ///
+  /// In en, this message translates to:
+  /// **'Pet documents, microchip and travel rules'**
+  String get tutorialsSubPets;
+
+  /// Pets: tourPetsListBody
+  ///
+  /// In en, this message translates to:
+  /// **'Each pet has its own profile, with the microchip, vet and documents in one place. Pets don\'t count towards your members.'**
+  String get tourPetsListBody;
+
+  /// Pets: tourPetsDocsBody
+  ///
+  /// In en, this message translates to:
+  /// **'Vaccinations, licence and insurance belong to the pet, so reminders say whose they are. The badges show what\'s saved.'**
+  String get tourPetsDocsBody;
+
+  /// Pets: tourPetsTravelBody
+  ///
+  /// In en, this message translates to:
+  /// **'Pick a country to see what your pet needs to travel there, and how long it takes.'**
+  String get tourPetsTravelBody;
+
+  /// Pets and official rules: petTypeLabel
+  ///
+  /// In en, this message translates to:
+  /// **'Type of pet'**
+  String get petTypeLabel;
+
+  /// Pets and official rules: petTypeHint
+  ///
+  /// In en, this message translates to:
+  /// **'Start typing, for example Rabbit or Parrot'**
+  String get petTypeHint;
+
+  /// Pets and official rules: petTypeFerret
+  ///
+  /// In en, this message translates to:
+  /// **'Ferret'**
+  String get petTypeFerret;
+
+  /// Pets and official rules: petTypeRabbit
+  ///
+  /// In en, this message translates to:
+  /// **'Rabbit'**
+  String get petTypeRabbit;
+
+  /// Pets and official rules: petTypeGuineaPig
+  ///
+  /// In en, this message translates to:
+  /// **'Guinea pig'**
+  String get petTypeGuineaPig;
+
+  /// Pets and official rules: petTypeHamster
+  ///
+  /// In en, this message translates to:
+  /// **'Hamster'**
+  String get petTypeHamster;
+
+  /// Pets and official rules: petTypeRat
+  ///
+  /// In en, this message translates to:
+  /// **'Rat'**
+  String get petTypeRat;
+
+  /// Pets and official rules: petTypeMouse
+  ///
+  /// In en, this message translates to:
+  /// **'Mouse'**
+  String get petTypeMouse;
+
+  /// Pets and official rules: petTypeGerbil
+  ///
+  /// In en, this message translates to:
+  /// **'Gerbil'**
+  String get petTypeGerbil;
+
+  /// Pets and official rules: petTypeChinchilla
+  ///
+  /// In en, this message translates to:
+  /// **'Chinchilla'**
+  String get petTypeChinchilla;
+
+  /// Pets and official rules: petTypeHedgehog
+  ///
+  /// In en, this message translates to:
+  /// **'Hedgehog'**
+  String get petTypeHedgehog;
+
+  /// Pets and official rules: petTypeHorse
+  ///
+  /// In en, this message translates to:
+  /// **'Horse'**
+  String get petTypeHorse;
+
+  /// Pets and official rules: petTypePony
+  ///
+  /// In en, this message translates to:
+  /// **'Pony'**
+  String get petTypePony;
+
+  /// Pets and official rules: petTypeDonkey
+  ///
+  /// In en, this message translates to:
+  /// **'Donkey'**
+  String get petTypeDonkey;
+
+  /// Pets and official rules: petTypeParrot
+  ///
+  /// In en, this message translates to:
+  /// **'Parrot'**
+  String get petTypeParrot;
+
+  /// Pets and official rules: petTypeBudgie
+  ///
+  /// In en, this message translates to:
+  /// **'Budgie'**
+  String get petTypeBudgie;
+
+  /// Pets and official rules: petTypeCockatiel
+  ///
+  /// In en, this message translates to:
+  /// **'Cockatiel'**
+  String get petTypeCockatiel;
+
+  /// Pets and official rules: petTypeCanary
+  ///
+  /// In en, this message translates to:
+  /// **'Canary'**
+  String get petTypeCanary;
+
+  /// Pets and official rules: petTypeChicken
+  ///
+  /// In en, this message translates to:
+  /// **'Chicken'**
+  String get petTypeChicken;
+
+  /// Pets and official rules: petTypeTortoise
+  ///
+  /// In en, this message translates to:
+  /// **'Tortoise'**
+  String get petTypeTortoise;
+
+  /// Pets and official rules: petTypeTurtle
+  ///
+  /// In en, this message translates to:
+  /// **'Turtle'**
+  String get petTypeTurtle;
+
+  /// Pets and official rules: petTypeSnake
+  ///
+  /// In en, this message translates to:
+  /// **'Snake'**
+  String get petTypeSnake;
+
+  /// Pets and official rules: petTypeLizard
+  ///
+  /// In en, this message translates to:
+  /// **'Lizard'**
+  String get petTypeLizard;
+
+  /// Pets and official rules: petTypeGecko
+  ///
+  /// In en, this message translates to:
+  /// **'Gecko'**
+  String get petTypeGecko;
+
+  /// Pets and official rules: petTypeBeardedDragon
+  ///
+  /// In en, this message translates to:
+  /// **'Bearded dragon'**
+  String get petTypeBeardedDragon;
+
+  /// Pets and official rules: petTypeFrog
+  ///
+  /// In en, this message translates to:
+  /// **'Frog'**
+  String get petTypeFrog;
+
+  /// Pets and official rules: petTypeAxolotl
+  ///
+  /// In en, this message translates to:
+  /// **'Axolotl'**
+  String get petTypeAxolotl;
+
+  /// Pets and official rules: petTypeFish
+  ///
+  /// In en, this message translates to:
+  /// **'Fish'**
+  String get petTypeFish;
+
+  /// Pets and official rules: petRuleRabiesFor
+  ///
+  /// In en, this message translates to:
+  /// **'Rabies vaccine at least {duration} before you arrive'**
+  String petRuleRabiesFor(String duration);
+
+  /// Pets and official rules: petRuleTitreFor
+  ///
+  /// In en, this message translates to:
+  /// **'A rabies blood test after the vaccine, then a wait of {duration}'**
+  String petRuleTitreFor(String duration);
+
+  /// Pets and official rules: petRuleResidenceFor
+  ///
+  /// In en, this message translates to:
+  /// **'Then at least {duration} in an approved country before you fly'**
+  String petRuleResidenceFor(String duration);
+
+  /// Pets and official rules: petRuleQuarantineFor
+  ///
+  /// In en, this message translates to:
+  /// **'Quarantine on arrival for at least {duration}'**
+  String petRuleQuarantineFor(String duration);
+
+  /// Pets and official rules: petRuleMinAgeFor
+  ///
+  /// In en, this message translates to:
+  /// **'Your pet must be at least {duration} old'**
+  String petRuleMinAgeFor(String duration);
+
+  /// Pets and official rules: petCheckTooYoungFor
+  ///
+  /// In en, this message translates to:
+  /// **'Too young for {country}: your pet must be at least {duration} old'**
+  String petCheckTooYoungFor(String country, String duration);
+
+  /// Pets and official rules: petRulesCheckedBy
+  ///
+  /// In en, this message translates to:
+  /// **'Checked by Vaultara · {date}'**
+  String petRulesCheckedBy(String date);
+
+  /// Pets and official rules: petRulesNotChecked
+  ///
+  /// In en, this message translates to:
+  /// **'Not checked yet. Confirm on the official site before you book.'**
+  String get petRulesNotChecked;
+
+  /// Pets and official rules: petRulesOtherAnimal
+  ///
+  /// In en, this message translates to:
+  /// **'The rules for this animal are different from those for dogs and cats. Check the official site for what it needs.'**
+  String get petRulesOtherAnimal;
+
+  /// Pets and official rules: countryTypeHint
+  ///
+  /// In en, this message translates to:
+  /// **'Start typing a country, for example France'**
+  String get countryTypeHint;
+
+  /// Pets and official rules: assistantStepPets
+  ///
+  /// In en, this message translates to:
+  /// **'Checking your pets'**
+  String get assistantStepPets;
+
+  /// Pets and official rules: tourPetsAddBody
+  ///
+  /// In en, this message translates to:
+  /// **'Add another pet here. Start typing its type, like Rabbit or Parrot, and pick a suggestion.'**
+  String get tourPetsAddBody;
+
+  /// Pets and official rules: rulesReviewTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Rules to review'**
+  String get rulesReviewTitle;
+
+  /// Pets and official rules: rulesReviewSubtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Official rules read from government pages, waiting for your approval'**
+  String get rulesReviewSubtitle;
+
+  /// Pets and official rules: rulesReviewNow
+  ///
+  /// In en, this message translates to:
+  /// **'Shown now'**
+  String get rulesReviewNow;
+
+  /// Pets and official rules: rulesReviewNew
+  ///
+  /// In en, this message translates to:
+  /// **'On the page now'**
+  String get rulesReviewNew;
+
+  /// Pets and official rules: rulesReviewPets
+  ///
+  /// In en, this message translates to:
+  /// **'Pet travel'**
+  String get rulesReviewPets;
+
+  /// Pets and official rules: rulesReviewPassport
+  ///
+  /// In en, this message translates to:
+  /// **'Passport validity'**
+  String get rulesReviewPassport;
+
+  /// Pets and official rules: rulesReviewApprove
+  ///
+  /// In en, this message translates to:
+  /// **'Approve'**
+  String get rulesReviewApprove;
+
+  /// Pets and official rules: rulesReviewReject
+  ///
+  /// In en, this message translates to:
+  /// **'Reject'**
+  String get rulesReviewReject;
+
+  /// Pets and official rules: rulesReviewEmpty
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing to review.'**
+  String get rulesReviewEmpty;
+
+  /// Pets and official rules: rulesReviewDropped
+  ///
+  /// In en, this message translates to:
+  /// **'Left out (no matching sentence)'**
+  String get rulesReviewDropped;
+
   /// Small label on a category or group the user made.
   ///
   /// In en, this message translates to:

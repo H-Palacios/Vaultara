@@ -8357,6 +8357,339 @@ class AppLocalizationsHa extends AppLocalizations {
   String get subcategoryPetPassports => 'Fasfon dabbobin gida';
 
   @override
+  String get petsTitle => 'Dabbobin gida';
+
+  @override
+  String get petsTileSubtitle => 'Takardu, microchip da likitan dabbobi na kowace dabba';
+
+  @override
+  String get petsNotMembers => 'Ba a ƙidaya dabbobin gida cikin membobinka.';
+
+  @override
+  String get petsAdd => 'Ƙara dabba';
+
+  @override
+  String get petsEmptyBody => 'Ƙara dabbarka don ka ajiye allurar rigakafinta, lasisi, inshora da microchip tare, tare da tunatarwa kafin wani abu ya ƙare.';
+
+  @override
+  String get petsPremium => 'Bayanan dabbobi ɓangare ne na Premium.';
+
+  @override
+  String get petKindDog => 'Kare';
+
+  @override
+  String get petKindCat => 'Mage';
+
+  @override
+  String get petKindOther => 'Wata dabba';
+
+  @override
+  String get petBirthday => 'Ranar haihuwa';
+
+  @override
+  String petBorn(String date) {
+    return 'An haife shi $date';
+  }
+
+  @override
+  String get petChipNumber => 'Lambar microchip';
+
+  @override
+  String get petChipInvalid => 'Yi amfani da lambobi 9 zuwa 15 da ke kan takardar shaidar chip.';
+
+  @override
+  String get petChipRegistry => 'Rijistar chip';
+
+  @override
+  String get petChipTip => 'Sabunta rijistar idan ka ƙaura ko ka canza lambarka, in ba haka ba chip ba zai iya dawo da dabbarka gida ba.';
+
+  @override
+  String get petVetName => 'Likitan dabbobi';
+
+  @override
+  String get petVetPhone => 'Wayar likitan dabbobi';
+
+  @override
+  String get petDocuments => 'Takardu';
+
+  @override
+  String get petStillToAdd => 'Har yanzu za a ƙara';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'Cire $name? Takardunsa za su zauna a Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'Dabba da ta ɓace';
+
+  @override
+  String get petLostSteps => 'Da farko ka sanar da rijistar chip cewa dabbarka ta ɓace. Sannan ka kira likitocin dabbobi da wuraren kula da dabbobi na kusa da lambar microchip, ka raba sabon hoto a yankinka da kan intanet.';
+
+  @override
+  String get petTravelTitle => 'Tafiya da dabba';
+
+  @override
+  String get petTravelPick => 'Ina za ka?';
+
+  @override
+  String get petTravelHome => 'Inda dabbarka take zaune';
+
+  @override
+  String get petRuleChip => 'Microchip na ISO, da aka saka kafin allurar cutar haukan kare';
+
+  @override
+  String get petRuleRabiesTest => 'Allurar cutar haukan kare da gwajin jini daga ɗakin gwaji da aka amince da shi';
+
+  @override
+  String get petRuleCertificate => 'Takardar shaidar lafiya daga likitan dabbobi na hukuma';
+
+  @override
+  String get petRulePermit => 'Izinin shigo da kaya kafin tafiya';
+
+  @override
+  String get petRuleTapeworm => 'Karnuka: maganin tsutsar ciki kwana 1 zuwa 5 kafin ka isa';
+
+  @override
+  String get petRuleCdcForm => 'CDC Dog Import Form ga kowane kare';
+
+  @override
+  String get petRuleSomeCountries => 'Daga wasu ƙasashe kawai:';
+
+  @override
+  String get petRulesOfficial => 'Dokokin hukuma';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara ba ta da dokokin dabbobi na $country tukuna. Hukumar likitocin dabbobi ko ofishin jakadancinta za su iya faɗa maka abin da ake buƙata.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Dokar microchip a $country';
+  }
+
+  @override
+  String get petLawUk => 'Wajibi ne ga karnuka, da kuma ga mageni a Ingila';
+
+  @override
+  String get petLawEu => 'Dokoki sun bambanta a kowace ƙasa. Wata sabuwar dokar EU za ta sa ya zama wajibi ga dukkan karnuka da mageni.';
+
+  @override
+  String get petLawMostStates => 'Wajibi ne ga karnuka da mageni a yawancin jihohi da yankuna';
+
+  @override
+  String get petLawDogs => 'Wajibi ne ga karnuka';
+
+  @override
+  String get petLawSellers => 'Wajibi ne ga karnuka da mageni da masu kiwo da shagunan dabbobi ke sayarwa';
+
+  @override
+  String get petLawLocal => 'Kowace jiha, lardi ko birni ke tsara shi';
+
+  @override
+  String get petLawNone => 'Dokar ƙasa ba ta buƙata, amma ana buƙata don tafiya da yawancin ɗaukar riƙo';
+
+  @override
+  String get tripPetsTitle => 'Dabbobi a wannan tafiya';
+
+  @override
+  String get petCheckNoChip => 'Babu microchip da aka ajiye';
+
+  @override
+  String get petCheckNoRabies => 'Babu allurar cutar haukan kare da aka ajiye';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Allurar cutar haukan kare za ta ƙare $date, kafin ka dawo';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Jiran bayan gwajin jini wataƙila ba zai dace kafin ka tafi ba. Yi magana da likitan dabbobinka yanzu.';
+
+  @override
+  String get petCheckNoCertificate => 'Babu takardar shaidar lafiya ko fasfon dabba da aka ajiye';
+
+  @override
+  String get planBenefitPets => 'Dabbobi da takardunsu, microchip da likitan dabbobinsu, ba a ƙidaya su a matsayin membobi';
+
+  @override
+  String get tutorialsSubPets => 'Takardun dabbobi, microchip da dokokin tafiya';
+
+  @override
+  String get tourPetsListBody => 'Kowace dabba tana da nata bayanin, da microchip, likitan dabbobi da takardu a wuri ɗaya. Ba a ƙidaya dabbobin gida cikin membobinka.';
+
+  @override
+  String get tourPetsDocsBody => 'Allurar rigakafi, lasisi da inshora na dabbar ne, don haka tunatarwa suna faɗin na wane ne. Alamun suna nuna abin da aka ajiye.';
+
+  @override
+  String get tourPetsTravelBody => 'Zaɓi ƙasa don ganin abin da dabbarka ke buƙata don tafiya can, da tsawon lokacin da yake ɗauka.';
+
+  @override
+  String get petTypeLabel => 'Nau\'in dabbar gida';
+
+  @override
+  String get petTypeHint => 'Fara rubutu, misali Zomo ko Aku';
+
+  @override
+  String get petTypeFerret => 'Ferret';
+
+  @override
+  String get petTypeRabbit => 'Zomo';
+
+  @override
+  String get petTypeGuineaPig => 'Alade guinea';
+
+  @override
+  String get petTypeHamster => 'Hamster';
+
+  @override
+  String get petTypeRat => 'Bera';
+
+  @override
+  String get petTypeMouse => 'Kusu';
+
+  @override
+  String get petTypeGerbil => 'Gerbil';
+
+  @override
+  String get petTypeChinchilla => 'Chinchilla';
+
+  @override
+  String get petTypeHedgehog => 'Bushiya';
+
+  @override
+  String get petTypeHorse => 'Doki';
+
+  @override
+  String get petTypePony => 'Ƙaramin doki';
+
+  @override
+  String get petTypeDonkey => 'Jaki';
+
+  @override
+  String get petTypeParrot => 'Aku';
+
+  @override
+  String get petTypeBudgie => 'Budgie';
+
+  @override
+  String get petTypeCockatiel => 'Cockatiel';
+
+  @override
+  String get petTypeCanary => 'Kanari';
+
+  @override
+  String get petTypeChicken => 'Kaza';
+
+  @override
+  String get petTypeTortoise => 'Kunkuru';
+
+  @override
+  String get petTypeTurtle => 'Kunkurun ruwa';
+
+  @override
+  String get petTypeSnake => 'Maciji';
+
+  @override
+  String get petTypeLizard => 'Ƙadangare';
+
+  @override
+  String get petTypeGecko => 'Geko';
+
+  @override
+  String get petTypeBeardedDragon => 'Dragon mai gemu';
+
+  @override
+  String get petTypeFrog => 'Kwado';
+
+  @override
+  String get petTypeAxolotl => 'Axolotl';
+
+  @override
+  String get petTypeFish => 'Kifi';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Rigakafin hauka aƙalla $duration kafin isowarka';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Gwajin jini na hauka bayan rigakafi, sannan jira na $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Sannan aƙalla $duration a ƙasar da aka amince kafin tashi';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Keɓewa a lokacin isowa na aƙalla $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Dole dabbarka ta kai aƙalla $duration';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Ƙarami sosai don $country: dole dabbarka ta kai aƙalla $duration';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Vaultara ta duba · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Ba a duba ba tukuna. Tabbatar a shafin hukuma kafin ka yi booking.';
+
+  @override
+  String get petRulesOtherAnimal => 'Dokokin wannan dabba sun bambanta da na karnuka da kuliyoyi. Duba shafin hukuma don abin da take buƙata.';
+
+  @override
+  String get countryTypeHint => 'Fara rubuta ƙasa, misali Faransa';
+
+  @override
+  String get assistantStepPets => 'Ana duba dabbobinka';
+
+  @override
+  String get tourPetsAddBody => 'Ƙara wata dabba a nan. Fara rubuta nau\'inta, kamar Zomo ko Aku, sannan zaɓi shawara.';
+
+  @override
+  String get rulesReviewTitle => 'Dokokin da za a duba';
+
+  @override
+  String get rulesReviewSubtitle => 'Dokokin hukuma da aka karanta daga shafukan gwamnati, suna jiran amincewarka';
+
+  @override
+  String get rulesReviewNow => 'Ana nunawa yanzu';
+
+  @override
+  String get rulesReviewNew => 'A shafin yanzu';
+
+  @override
+  String get rulesReviewPets => 'Tafiya da dabba';
+
+  @override
+  String get rulesReviewPassport => 'Ingancin fasfo';
+
+  @override
+  String get rulesReviewApprove => 'Amince';
+
+  @override
+  String get rulesReviewReject => 'Ƙi';
+
+  @override
+  String get rulesReviewEmpty => 'Babu abin dubawa.';
+
+  @override
+  String get rulesReviewDropped => 'An bari (babu jimla mai dacewa)';
+
+  @override
   String get yoursTag => 'Naka';
 
   @override

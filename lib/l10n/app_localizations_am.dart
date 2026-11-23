@@ -8357,6 +8357,339 @@ class AppLocalizationsAm extends AppLocalizations {
   String get subcategoryPetPassports => 'የቤት እንስሳት ፓስፖርቶች';
 
   @override
+  String get petsTitle => 'የቤት እንስሳት';
+
+  @override
+  String get petsTileSubtitle => 'ለእያንዳንዱ የቤት እንስሳ ሰነዶች፣ ማይክሮቺፕ እና የእንስሳት ሐኪም';
+
+  @override
+  String get petsNotMembers => 'የቤት እንስሳት በአባላትዎ ውስጥ አይቆጠሩም።';
+
+  @override
+  String get petsAdd => 'የቤት እንስሳ ያክሉ';
+
+  @override
+  String get petsEmptyBody => 'ክትባቶቹን፣ ፈቃዱን፣ ኢንሹራንሱን እና ማይክሮቺፑን በአንድ ላይ ለማቆየት የቤት እንስሳዎን ያክሉ፣ ማንኛውም ነገር ጊዜው ከማለፉ በፊት በማስታወሻ።';
+
+  @override
+  String get petsPremium => 'የቤት እንስሳት መገለጫዎች የPremium አካል ናቸው።';
+
+  @override
+  String get petKindDog => 'ውሻ';
+
+  @override
+  String get petKindCat => 'ድመት';
+
+  @override
+  String get petKindOther => 'ሌላ የቤት እንስሳ';
+
+  @override
+  String get petBirthday => 'የትውልድ ቀን';
+
+  @override
+  String petBorn(String date) {
+    return 'የተወለደው $date';
+  }
+
+  @override
+  String get petChipNumber => 'የማይክሮቺፕ ቁጥር';
+
+  @override
+  String get petChipInvalid => 'በቺፕ የምስክር ወረቀቱ ላይ ያሉትን ከ9 እስከ 15 አሃዞች ይጠቀሙ።';
+
+  @override
+  String get petChipRegistry => 'የቺፕ መዝገብ';
+
+  @override
+  String get petChipTip => 'ሲዛወሩ ወይም ቁጥርዎን ሲቀይሩ መዝገቡን ያዘምኑ፣ አለበለዚያ ቺፑ የቤት እንስሳዎን ወደ ቤት ሊመልስ አይችልም።';
+
+  @override
+  String get petVetName => 'የእንስሳት ሐኪም';
+
+  @override
+  String get petVetPhone => 'የእንስሳት ሐኪም ስልክ';
+
+  @override
+  String get petDocuments => 'ሰነዶች';
+
+  @override
+  String get petStillToAdd => 'ገና የሚጨመሩ';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '$name ይወገድ? ሰነዶቹ በVaultara ውስጥ ይቆያሉ።';
+  }
+
+  @override
+  String get petLostTitle => 'የጠፋ የቤት እንስሳ';
+
+  @override
+  String get petLostSteps => 'መጀመሪያ የቤት እንስሳዎ መጥፋቱን ለቺፕ መዝገቡ ያሳውቁ። ከዚያ በአቅራቢያ ያሉ የእንስሳት ሐኪሞችንና የእንስሳት መጠለያዎችን በማይክሮቺፕ ቁጥሩ ይደውሉ፣ እና የቅርብ ጊዜ ፎቶ በአካባቢው እና በመስመር ላይ ያጋሩ።';
+
+  @override
+  String get petTravelTitle => 'ከቤት እንስሳ ጋር መጓዝ';
+
+  @override
+  String get petTravelPick => 'ወዴት ነው የሚሄዱት?';
+
+  @override
+  String get petTravelHome => 'የቤት እንስሳዎ የሚኖርበት';
+
+  @override
+  String get petRuleChip => 'ከእብድ ውሻ ክትባቱ በፊት የተገጠመ የISO ማይክሮቺፕ';
+
+  @override
+  String get petRuleRabiesTest => 'የእብድ ውሻ ክትባት እና ከተፈቀደ ላብራቶሪ የእብድ ውሻ የደም ምርመራ';
+
+  @override
+  String get petRuleCertificate => 'ከይፋዊ የእንስሳት ሐኪም የጤና የምስክር ወረቀት';
+
+  @override
+  String get petRulePermit => 'ከመጓዝዎ በፊት የማስገቢያ ፈቃድ';
+
+  @override
+  String get petRuleTapeworm => 'ውሾች: ከመድረስዎ ከ1 እስከ 5 ቀናት በፊት የኮሶ ትል ሕክምና';
+
+  @override
+  String get petRuleCdcForm => 'ለእያንዳንዱ ውሻ የCDC Dog Import Form';
+
+  @override
+  String get petRuleSomeCountries => 'ከአንዳንድ ሀገሮች ብቻ:';
+
+  @override
+  String get petRulesOfficial => 'ይፋዊ ደንቦች';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara ለ$country የቤት እንስሳት ደንቦች ገና የሉትም። ይፋዊው የእንስሳት ሕክምና አገልግሎት ወይም ኤምባሲ የሚያስፈልገውን ሊነግርዎ ይችላል።';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'በ$country የማይክሮቺፕ ሕግ';
+  }
+
+  @override
+  String get petLawUk => 'ለውሾች፣ እና በእንግሊዝ ለድመቶች ግዴታ';
+
+  @override
+  String get petLawEu => 'ደንቦች በሀገር ይለያያሉ። አዲስ የEU ሕግ ለሁሉም ውሾችና ድመቶች ግዴታ ያደርገዋል።';
+
+  @override
+  String get petLawMostStates => 'በአብዛኞቹ ግዛቶችና ክልሎች ለውሾችና ድመቶች ግዴታ';
+
+  @override
+  String get petLawDogs => 'ለውሾች ግዴታ';
+
+  @override
+  String get petLawSellers => 'በአርቢዎችና በቤት እንስሳት መደብሮች ለሚሸጡ ውሾችና ድመቶች ግዴታ';
+
+  @override
+  String get petLawLocal => 'በእያንዳንዱ ግዛት፣ ክፍለ ሀገር ወይም ከተማ የሚወሰን';
+
+  @override
+  String get petLawNone => 'በብሔራዊ ሕግ አይጠየቅም፣ ግን ለጉዞና ለአብዛኞቹ ጉዲፈቻዎች ያስፈልጋል';
+
+  @override
+  String get tripPetsTitle => 'በዚህ ጉዞ ያሉ የቤት እንስሳት';
+
+  @override
+  String get petCheckNoChip => 'ምንም ማይክሮቺፕ አልተቀመጠም';
+
+  @override
+  String get petCheckNoRabies => 'ምንም የእብድ ውሻ ክትባት አልተቀመጠም';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'የእብድ ውሻ ክትባት $date ያበቃል፣ ከመመለስዎ በፊት';
+  }
+
+  @override
+  String get petCheckTooSoon => 'ከደም ምርመራው በኋላ ያለው መጠበቂያ ከመሄድዎ በፊት ላይበቃ ይችላል። አሁን የእንስሳት ሐኪምዎን ያነጋግሩ።';
+
+  @override
+  String get petCheckNoCertificate => 'ምንም የጤና የምስክር ወረቀት ወይም የቤት እንስሳ ፓስፖርት አልተቀመጠም';
+
+  @override
+  String get planBenefitPets => 'የራሳቸው ሰነዶች፣ ማይክሮቺፕ እና የእንስሳት ሐኪም ያላቸው የቤት እንስሳት፣ እንደ አባላት አይቆጠሩም';
+
+  @override
+  String get tutorialsSubPets => 'የቤት እንስሳት ሰነዶች፣ ማይክሮቺፕ እና የጉዞ ደንቦች';
+
+  @override
+  String get tourPetsListBody => 'እያንዳንዱ የቤት እንስሳ የራሱ መገለጫ አለው፣ ማይክሮቺፕ፣ የእንስሳት ሐኪም እና ሰነዶች በአንድ ቦታ። የቤት እንስሳት በአባላትዎ ውስጥ አይቆጠሩም።';
+
+  @override
+  String get tourPetsDocsBody => 'ክትባቶች፣ ፈቃድ እና ኢንሹራንስ የቤት እንስሳው ናቸው፣ ስለዚህ ማስታወሻዎች የማን እንደሆኑ ይናገራሉ። ምልክቶቹ የተቀመጠውን ያሳያሉ።';
+
+  @override
+  String get tourPetsTravelBody => 'የቤት እንስሳዎ ወደዚያ ለመጓዝ ምን እንደሚያስፈልገው እና ምን ያህል ጊዜ እንደሚወስድ ለማየት ሀገር ይምረጡ።';
+
+  @override
+  String get petTypeLabel => 'የቤት እንስሳ አይነት';
+
+  @override
+  String get petTypeHint => 'መተየብ ይጀምሩ፣ ለምሳሌ ጥንቸል ወይም በቀቀን';
+
+  @override
+  String get petTypeFerret => 'ፌሬት';
+
+  @override
+  String get petTypeRabbit => 'ጥንቸል';
+
+  @override
+  String get petTypeGuineaPig => 'ጊኒ ፒግ';
+
+  @override
+  String get petTypeHamster => 'ሃምስተር';
+
+  @override
+  String get petTypeRat => 'አይጥ';
+
+  @override
+  String get petTypeMouse => 'ትንሽ አይጥ';
+
+  @override
+  String get petTypeGerbil => 'ጀርቢል';
+
+  @override
+  String get petTypeChinchilla => 'ቺንቺላ';
+
+  @override
+  String get petTypeHedgehog => 'ጃርት';
+
+  @override
+  String get petTypeHorse => 'ፈረስ';
+
+  @override
+  String get petTypePony => 'ድንክ ፈረስ';
+
+  @override
+  String get petTypeDonkey => 'አህያ';
+
+  @override
+  String get petTypeParrot => 'በቀቀን';
+
+  @override
+  String get petTypeBudgie => 'ባጂ';
+
+  @override
+  String get petTypeCockatiel => 'ኮካቲኤል';
+
+  @override
+  String get petTypeCanary => 'ካናሪ';
+
+  @override
+  String get petTypeChicken => 'ዶሮ';
+
+  @override
+  String get petTypeTortoise => 'ኤሊ';
+
+  @override
+  String get petTypeTurtle => 'የውሃ ኤሊ';
+
+  @override
+  String get petTypeSnake => 'እባብ';
+
+  @override
+  String get petTypeLizard => 'እንሽላሊት';
+
+  @override
+  String get petTypeGecko => 'ጌኮ';
+
+  @override
+  String get petTypeBeardedDragon => 'ጢማም ድራጎን';
+
+  @override
+  String get petTypeFrog => 'እንቁራሪት';
+
+  @override
+  String get petTypeAxolotl => 'አክሶሎትል';
+
+  @override
+  String get petTypeFish => 'ዓሳ';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'ከመድረስዎ ቢያንስ $duration በፊት የእብድ ውሻ ክትባት';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'ከክትባቱ በኋላ የእብድ ውሻ የደም ምርመራ፣ ከዚያ $duration መጠበቅ';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'ከዚያ ከመብረርዎ በፊት ቢያንስ $duration በተፈቀደ ሀገር';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'ሲደርሱ ቢያንስ ለ$duration ማቆያ';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'የቤት እንስሳዎ ቢያንስ $duration መሆን አለበት';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'ለ$country በጣም ትንሽ ነው፦ የቤት እንስሳዎ ቢያንስ $duration መሆን አለበት';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'በVaultara የተረጋገጠ · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'ገና አልተረጋገጠም። ከማስያዝዎ በፊት በይፋዊው ድረ-ገጽ ያረጋግጡ።';
+
+  @override
+  String get petRulesOtherAnimal => 'የዚህ እንስሳ ደንቦች ከውሾችና ድመቶች ይለያሉ። የሚያስፈልገውን በይፋዊው ድረ-ገጽ ይመልከቱ።';
+
+  @override
+  String get countryTypeHint => 'ሀገር መተየብ ይጀምሩ፣ ለምሳሌ ፈረንሳይ';
+
+  @override
+  String get assistantStepPets => 'የቤት እንስሳትዎን በመፈተሽ ላይ';
+
+  @override
+  String get tourPetsAddBody => 'እዚህ ሌላ የቤት እንስሳ ያክሉ። አይነቱን መተየብ ይጀምሩ፣ ለምሳሌ ጥንቸል ወይም በቀቀን፣ እና ከጥቆማዎቹ ይምረጡ።';
+
+  @override
+  String get rulesReviewTitle => 'የሚገመገሙ ደንቦች';
+
+  @override
+  String get rulesReviewSubtitle => 'ከመንግስት ገጾች የተነበቡ ይፋዊ ደንቦች፣ ማጽደቅዎን የሚጠብቁ';
+
+  @override
+  String get rulesReviewNow => 'አሁን የሚታየው';
+
+  @override
+  String get rulesReviewNew => 'አሁን በገጹ ላይ';
+
+  @override
+  String get rulesReviewPets => 'ከቤት እንስሳ ጋር ጉዞ';
+
+  @override
+  String get rulesReviewPassport => 'የፓስፖርት ጸንቶ መቆያ';
+
+  @override
+  String get rulesReviewApprove => 'አጽድቅ';
+
+  @override
+  String get rulesReviewReject => 'ውድቅ አድርግ';
+
+  @override
+  String get rulesReviewEmpty => 'የሚገመገም ነገር የለም።';
+
+  @override
+  String get rulesReviewDropped => 'የቀረ (የሚዛመድ ዓረፍተ ነገር የለም)';
+
+  @override
   String get yoursTag => 'የእርስዎ';
 
   @override

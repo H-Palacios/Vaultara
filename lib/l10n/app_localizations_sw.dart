@@ -8357,6 +8357,339 @@ class AppLocalizationsSw extends AppLocalizations {
   String get subcategoryPetPassports => 'Pasipoti za wanyama vipenzi';
 
   @override
+  String get petsTitle => 'Wanyama vipenzi';
+
+  @override
+  String get petsTileSubtitle => 'Nyaraka, microchip na daktari wa mifugo wa kila mnyama';
+
+  @override
+  String get petsNotMembers => 'Wanyama vipenzi hawahesabiwi kama wanachama wako.';
+
+  @override
+  String get petsAdd => 'Ongeza mnyama kipenzi';
+
+  @override
+  String get petsEmptyBody => 'Ongeza mnyama wako ili chanjo, leseni, bima na microchip yake viwe pamoja, na vikumbusho kabla kitu chochote hakijaisha muda.';
+
+  @override
+  String get petsPremium => 'Wasifu wa wanyama vipenzi ni sehemu ya Premium.';
+
+  @override
+  String get petKindDog => 'Mbwa';
+
+  @override
+  String get petKindCat => 'Paka';
+
+  @override
+  String get petKindOther => 'Mnyama mwingine';
+
+  @override
+  String get petBirthday => 'Tarehe ya kuzaliwa';
+
+  @override
+  String petBorn(String date) {
+    return 'Alizaliwa $date';
+  }
+
+  @override
+  String get petChipNumber => 'Nambari ya microchip';
+
+  @override
+  String get petChipInvalid => 'Tumia tarakimu 9 hadi 15 zilizo kwenye cheti cha chip.';
+
+  @override
+  String get petChipRegistry => 'Sajili ya chip';
+
+  @override
+  String get petChipTip => 'Sasisha sajili unapohama au kubadilisha nambari, la sivyo chip haiwezi kumrudisha mnyama wako nyumbani.';
+
+  @override
+  String get petVetName => 'Daktari wa mifugo';
+
+  @override
+  String get petVetPhone => 'Simu ya daktari wa mifugo';
+
+  @override
+  String get petDocuments => 'Nyaraka';
+
+  @override
+  String get petStillToAdd => 'Bado kuongeza';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'Ondoa $name? Nyaraka zake zitabaki kwenye Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'Mnyama aliyepotea';
+
+  @override
+  String get petLostSteps => 'Kwanza ripoti kwa sajili ya chip kwamba mnyama wako amepotea. Kisha piga simu kwa madaktari wa mifugo na makazi ya wanyama yaliyo karibu ukiwa na nambari ya microchip, na shiriki picha ya hivi karibuni eneo lako na mtandaoni.';
+
+  @override
+  String get petTravelTitle => 'Kusafiri na mnyama kipenzi';
+
+  @override
+  String get petTravelPick => 'Unaenda wapi?';
+
+  @override
+  String get petTravelHome => 'Mahali mnyama wako anaishi';
+
+  @override
+  String get petRuleChip => 'Microchip ya ISO, iliyowekwa kabla ya chanjo ya kichaa cha mbwa';
+
+  @override
+  String get petRuleRabiesTest => 'Chanjo ya kichaa cha mbwa na kipimo cha damu kutoka maabara iliyoidhinishwa';
+
+  @override
+  String get petRuleCertificate => 'Cheti cha afya kutoka kwa daktari rasmi wa mifugo';
+
+  @override
+  String get petRulePermit => 'Kibali cha kuingiza kabla ya kusafiri';
+
+  @override
+  String get petRuleTapeworm => 'Mbwa: tiba ya minyoo ya tegu siku 1 hadi 5 kabla ya kufika';
+
+  @override
+  String get petRuleCdcForm => 'CDC Dog Import Form kwa kila mbwa';
+
+  @override
+  String get petRuleSomeCountries => 'Kutoka nchi baadhi tu:';
+
+  @override
+  String get petRulesOfficial => 'Kanuni rasmi';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara bado haina kanuni za wanyama vipenzi za $country. Huduma yake rasmi ya mifugo au ubalozi unaweza kukuambia kinachohitajika.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Sheria ya microchip ya $country';
+  }
+
+  @override
+  String get petLawUk => 'Lazima kwa mbwa, na kwa paka nchini Uingereza';
+
+  @override
+  String get petLawEu => 'Kanuni zinatofautiana kwa nchi. Sheria mpya ya EU itaifanya kuwa lazima kwa mbwa na paka wote.';
+
+  @override
+  String get petLawMostStates => 'Lazima kwa mbwa na paka katika majimbo na maeneo mengi';
+
+  @override
+  String get petLawDogs => 'Lazima kwa mbwa';
+
+  @override
+  String get petLawSellers => 'Lazima kwa mbwa na paka wanaouzwa na wafugaji na maduka ya wanyama';
+
+  @override
+  String get petLawLocal => 'Huamuliwa na kila jimbo, mkoa au jiji';
+
+  @override
+  String get petLawNone => 'Haihitajiki na sheria ya kitaifa, lakini inahitajika kusafiri na kwa kuasili mara nyingi';
+
+  @override
+  String get tripPetsTitle => 'Wanyama vipenzi katika safari hii';
+
+  @override
+  String get petCheckNoChip => 'Hakuna microchip iliyohifadhiwa';
+
+  @override
+  String get petCheckNoRabies => 'Hakuna chanjo ya kichaa cha mbwa iliyohifadhiwa';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Chanjo ya kichaa cha mbwa inaisha $date, kabla hujarudi';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Muda wa kusubiri baada ya kipimo cha damu huenda usitoshe kabla ya kuondoka. Ongea na daktari wako wa mifugo sasa.';
+
+  @override
+  String get petCheckNoCertificate => 'Hakuna cheti cha afya wala pasipoti ya mnyama iliyohifadhiwa';
+
+  @override
+  String get planBenefitPets => 'Wanyama vipenzi wenye nyaraka, microchip na daktari wao, hawahesabiwi kama wanachama';
+
+  @override
+  String get tutorialsSubPets => 'Nyaraka za wanyama, microchip na kanuni za usafiri';
+
+  @override
+  String get tourPetsListBody => 'Kila mnyama ana wasifu wake, na microchip, daktari wa mifugo na nyaraka mahali pamoja. Wanyama vipenzi hawahesabiwi kama wanachama wako.';
+
+  @override
+  String get tourPetsDocsBody => 'Chanjo, leseni na bima ni za mnyama, kwa hivyo vikumbusho vinasema ni za nani. Beji zinaonyesha kilichohifadhiwa.';
+
+  @override
+  String get tourPetsTravelBody => 'Chagua nchi ili kuona mnyama wako anahitaji nini ili kusafiri huko, na inachukua muda gani.';
+
+  @override
+  String get petTypeLabel => 'Aina ya mnyama kipenzi';
+
+  @override
+  String get petTypeHint => 'Anza kuandika, kwa mfano Sungura au Kasuku';
+
+  @override
+  String get petTypeFerret => 'Ferret';
+
+  @override
+  String get petTypeRabbit => 'Sungura';
+
+  @override
+  String get petTypeGuineaPig => 'Nguruwe wa Guinea';
+
+  @override
+  String get petTypeHamster => 'Hamster';
+
+  @override
+  String get petTypeRat => 'Panya mkubwa';
+
+  @override
+  String get petTypeMouse => 'Panya';
+
+  @override
+  String get petTypeGerbil => 'Gerbil';
+
+  @override
+  String get petTypeChinchilla => 'Chinchilla';
+
+  @override
+  String get petTypeHedgehog => 'Kalunguyeye';
+
+  @override
+  String get petTypeHorse => 'Farasi';
+
+  @override
+  String get petTypePony => 'Farasi mdogo';
+
+  @override
+  String get petTypeDonkey => 'Punda';
+
+  @override
+  String get petTypeParrot => 'Kasuku';
+
+  @override
+  String get petTypeBudgie => 'Kasuku mdogo';
+
+  @override
+  String get petTypeCockatiel => 'Cockatiel';
+
+  @override
+  String get petTypeCanary => 'Kanari';
+
+  @override
+  String get petTypeChicken => 'Kuku';
+
+  @override
+  String get petTypeTortoise => 'Kobe';
+
+  @override
+  String get petTypeTurtle => 'Kobe wa majini';
+
+  @override
+  String get petTypeSnake => 'Nyoka';
+
+  @override
+  String get petTypeLizard => 'Mjusi';
+
+  @override
+  String get petTypeGecko => 'Mjusi kafiri';
+
+  @override
+  String get petTypeBeardedDragon => 'Joka mwenye ndevu';
+
+  @override
+  String get petTypeFrog => 'Chura';
+
+  @override
+  String get petTypeAxolotl => 'Axolotl';
+
+  @override
+  String get petTypeFish => 'Samaki';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Chanjo ya kichaa cha mbwa angalau $duration kabla ya kuwasili';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Kipimo cha damu cha kichaa cha mbwa baada ya chanjo, kisha kusubiri $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Kisha angalau $duration katika nchi iliyoidhinishwa kabla ya kusafiri kwa ndege';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Karantini unapowasili kwa angalau $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Mnyama wako lazima awe na angalau $duration';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Mdogo sana kwa $country: mnyama wako lazima awe na angalau $duration';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Imekaguliwa na Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Bado haijakaguliwa. Thibitisha kwenye tovuti rasmi kabla ya kuweka nafasi.';
+
+  @override
+  String get petRulesOtherAnimal => 'Sheria za mnyama huyu ni tofauti na za mbwa na paka. Angalia kwenye tovuti rasmi anachohitaji.';
+
+  @override
+  String get countryTypeHint => 'Anza kuandika nchi, kwa mfano Ufaransa';
+
+  @override
+  String get assistantStepPets => 'Inakagua wanyama wako';
+
+  @override
+  String get tourPetsAddBody => 'Ongeza mnyama mwingine hapa. Anza kuandika aina yake, kama Sungura au Kasuku, na uchague pendekezo.';
+
+  @override
+  String get rulesReviewTitle => 'Sheria za kukagua';
+
+  @override
+  String get rulesReviewSubtitle => 'Sheria rasmi zilizosomwa kutoka kurasa za serikali, zinasubiri idhini yako';
+
+  @override
+  String get rulesReviewNow => 'Inaonyeshwa sasa';
+
+  @override
+  String get rulesReviewNew => 'Kwenye ukurasa sasa';
+
+  @override
+  String get rulesReviewPets => 'Kusafiri na mnyama kipenzi';
+
+  @override
+  String get rulesReviewPassport => 'Uhalali wa pasipoti';
+
+  @override
+  String get rulesReviewApprove => 'Idhinisha';
+
+  @override
+  String get rulesReviewReject => 'Kataa';
+
+  @override
+  String get rulesReviewEmpty => 'Hakuna cha kukagua.';
+
+  @override
+  String get rulesReviewDropped => 'Imeachwa (hakuna sentensi inayolingana)';
+
+  @override
   String get yoursTag => 'Yako';
 
   @override

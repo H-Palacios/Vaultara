@@ -8288,6 +8288,339 @@ class AppLocalizationsTh extends AppLocalizations {
   String get subcategoryPetPassports => 'พาสปอร์ตสัตว์เลี้ยง';
 
   @override
+  String get petsTitle => 'สัตว์เลี้ยง';
+
+  @override
+  String get petsTileSubtitle => 'เอกสาร ไมโครชิป และสัตวแพทย์ของสัตว์เลี้ยงแต่ละตัว';
+
+  @override
+  String get petsNotMembers => 'สัตว์เลี้ยงไม่นับเป็นสมาชิกของคุณ';
+
+  @override
+  String get petsAdd => 'เพิ่มสัตว์เลี้ยง';
+
+  @override
+  String get petsEmptyBody => 'เพิ่มสัตว์เลี้ยงของคุณเพื่อเก็บวัคซีน ใบอนุญาต ประกัน และไมโครชิปไว้ด้วยกัน พร้อมการแจ้งเตือนก่อนสิ่งใดหมดอายุ';
+
+  @override
+  String get petsPremium => 'โปรไฟล์สัตว์เลี้ยงเป็นส่วนหนึ่งของ Premium';
+
+  @override
+  String get petKindDog => 'สุนัข';
+
+  @override
+  String get petKindCat => 'แมว';
+
+  @override
+  String get petKindOther => 'สัตว์เลี้ยงอื่น';
+
+  @override
+  String get petBirthday => 'วันเกิด';
+
+  @override
+  String petBorn(String date) {
+    return 'เกิด $date';
+  }
+
+  @override
+  String get petChipNumber => 'หมายเลขไมโครชิป';
+
+  @override
+  String get petChipInvalid => 'ใช้ตัวเลข 9 ถึง 15 หลักบนใบรับรองชิป';
+
+  @override
+  String get petChipRegistry => 'ทะเบียนชิป';
+
+  @override
+  String get petChipTip => 'อัปเดตทะเบียนเมื่อคุณย้ายบ้านหรือเปลี่ยนเบอร์ ไม่เช่นนั้นชิปจะพาสัตว์เลี้ยงกลับบ้านไม่ได้';
+
+  @override
+  String get petVetName => 'สัตวแพทย์';
+
+  @override
+  String get petVetPhone => 'โทรศัพท์สัตวแพทย์';
+
+  @override
+  String get petDocuments => 'เอกสาร';
+
+  @override
+  String get petStillToAdd => 'ยังต้องเพิ่ม';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'ลบ $name ใช่ไหม เอกสารยังอยู่ใน Vaultara';
+  }
+
+  @override
+  String get petLostTitle => 'สัตว์เลี้ยงหาย';
+
+  @override
+  String get petLostSteps => 'แจ้งทะเบียนชิปก่อนว่าสัตว์เลี้ยงหาย จากนั้นโทรหาสัตวแพทย์และศูนย์พักพิงสัตว์ใกล้เคียงพร้อมหมายเลขไมโครชิป และแชร์รูปล่าสุดในพื้นที่และทางออนไลน์';
+
+  @override
+  String get petTravelTitle => 'เดินทางกับสัตว์เลี้ยง';
+
+  @override
+  String get petTravelPick => 'คุณจะไปที่ไหน';
+
+  @override
+  String get petTravelHome => 'ที่ที่สัตว์เลี้ยงของคุณอาศัยอยู่';
+
+  @override
+  String get petRuleChip => 'ไมโครชิป ISO ที่ฝังก่อนฉีดวัคซีนพิษสุนัขบ้า';
+
+  @override
+  String get petRuleRabiesTest => 'วัคซีนพิษสุนัขบ้าและตรวจเลือดพิษสุนัขบ้าจากห้องแล็บที่ได้รับอนุมัติ';
+
+  @override
+  String get petRuleCertificate => 'ใบรับรองสุขภาพจากสัตวแพทย์ทางการ';
+
+  @override
+  String get petRulePermit => 'ใบอนุญาตนำเข้าก่อนเดินทาง';
+
+  @override
+  String get petRuleTapeworm => 'สุนัข: ถ่ายพยาธิตัวตืด 1 ถึง 5 วันก่อนเดินทางถึง';
+
+  @override
+  String get petRuleCdcForm => 'CDC Dog Import Form สำหรับสุนัขทุกตัว';
+
+  @override
+  String get petRuleSomeCountries => 'เฉพาะจากบางประเทศ:';
+
+  @override
+  String get petRulesOfficial => 'กฎทางการ';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara ยังไม่มีกฎสัตว์เลี้ยงของ $country หน่วยงานปศุสัตว์ทางการหรือสถานทูตของประเทศนั้นบอกได้ว่าต้องใช้อะไร';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'กฎหมายไมโครชิปใน $country';
+  }
+
+  @override
+  String get petLawUk => 'บังคับสำหรับสุนัข และสำหรับแมวในอังกฤษ';
+
+  @override
+  String get petLawEu => 'กฎต่างกันในแต่ละประเทศ กฎหมาย EU ฉบับใหม่จะบังคับใช้กับสุนัขและแมวทุกตัว';
+
+  @override
+  String get petLawMostStates => 'บังคับสำหรับสุนัขและแมวในรัฐและเขตส่วนใหญ่';
+
+  @override
+  String get petLawDogs => 'บังคับสำหรับสุนัข';
+
+  @override
+  String get petLawSellers => 'บังคับสำหรับสุนัขและแมวที่ผู้เพาะพันธุ์และร้านสัตว์เลี้ยงขาย';
+
+  @override
+  String get petLawLocal => 'แต่ละรัฐ จังหวัด หรือเมืองกำหนดเอง';
+
+  @override
+  String get petLawNone => 'กฎหมายระดับชาติไม่บังคับ แต่จำเป็นสำหรับการเดินทางและการรับเลี้ยงส่วนใหญ่';
+
+  @override
+  String get tripPetsTitle => 'สัตว์เลี้ยงในทริปนี้';
+
+  @override
+  String get petCheckNoChip => 'ไม่มีไมโครชิปที่บันทึกไว้';
+
+  @override
+  String get petCheckNoRabies => 'ไม่มีวัคซีนพิษสุนัขบ้าที่บันทึกไว้';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'วัคซีนพิษสุนัขบ้าหมดอายุ $date ก่อนคุณกลับ';
+  }
+
+  @override
+  String get petCheckTooSoon => 'การรอหลังตรวจเลือดอาจไม่ทันก่อนออกเดินทาง ปรึกษาสัตวแพทย์ตอนนี้เลย';
+
+  @override
+  String get petCheckNoCertificate => 'ไม่มีใบรับรองสุขภาพหรือพาสปอร์ตสัตว์เลี้ยงที่บันทึกไว้';
+
+  @override
+  String get planBenefitPets => 'สัตว์เลี้ยงพร้อมเอกสาร ไมโครชิป และสัตวแพทย์ของตัวเอง ไม่นับเป็นสมาชิก';
+
+  @override
+  String get tutorialsSubPets => 'เอกสารสัตว์เลี้ยง ไมโครชิป และกฎการเดินทาง';
+
+  @override
+  String get tourPetsListBody => 'สัตว์เลี้ยงแต่ละตัวมีโปรไฟล์ของตัวเอง มีไมโครชิป สัตวแพทย์ และเอกสารในที่เดียว สัตว์เลี้ยงไม่นับเป็นสมาชิกของคุณ';
+
+  @override
+  String get tourPetsDocsBody => 'วัคซีน ใบอนุญาต และประกันเป็นของสัตว์เลี้ยง การแจ้งเตือนจึงบอกได้ว่าเป็นของใคร ป้ายแสดงสิ่งที่บันทึกไว้';
+
+  @override
+  String get tourPetsTravelBody => 'เลือกประเทศเพื่อดูว่าสัตว์เลี้ยงต้องใช้อะไรในการเดินทางไปที่นั่น และใช้เวลานานเท่าไร';
+
+  @override
+  String get petTypeLabel => 'ประเภทสัตว์เลี้ยง';
+
+  @override
+  String get petTypeHint => 'เริ่มพิมพ์ เช่น กระต่าย หรือ นกแก้ว';
+
+  @override
+  String get petTypeFerret => 'เฟอร์เร็ต';
+
+  @override
+  String get petTypeRabbit => 'กระต่าย';
+
+  @override
+  String get petTypeGuineaPig => 'หนูตะเภา';
+
+  @override
+  String get petTypeHamster => 'แฮมสเตอร์';
+
+  @override
+  String get petTypeRat => 'หนูแรท';
+
+  @override
+  String get petTypeMouse => 'หนูเมาส์';
+
+  @override
+  String get petTypeGerbil => 'เจอร์บิล';
+
+  @override
+  String get petTypeChinchilla => 'ชินชิลล่า';
+
+  @override
+  String get petTypeHedgehog => 'เม่นแคระ';
+
+  @override
+  String get petTypeHorse => 'ม้า';
+
+  @override
+  String get petTypePony => 'ม้าแคระ';
+
+  @override
+  String get petTypeDonkey => 'ลา';
+
+  @override
+  String get petTypeParrot => 'นกแก้ว';
+
+  @override
+  String get petTypeBudgie => 'นกหงส์หยก';
+
+  @override
+  String get petTypeCockatiel => 'นกค็อกคาเทล';
+
+  @override
+  String get petTypeCanary => 'นกคีรีบูน';
+
+  @override
+  String get petTypeChicken => 'ไก่';
+
+  @override
+  String get petTypeTortoise => 'เต่าบก';
+
+  @override
+  String get petTypeTurtle => 'เต่าน้ำ';
+
+  @override
+  String get petTypeSnake => 'งู';
+
+  @override
+  String get petTypeLizard => 'กิ้งก่า';
+
+  @override
+  String get petTypeGecko => 'ตุ๊กแก';
+
+  @override
+  String get petTypeBeardedDragon => 'เบียร์ดดราก้อน';
+
+  @override
+  String get petTypeFrog => 'กบ';
+
+  @override
+  String get petTypeAxolotl => 'แอกโซลอเติล';
+
+  @override
+  String get petTypeFish => 'ปลา';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'วัคซีนพิษสุนัขบ้าอย่างน้อย $duration ก่อนเดินทางถึง';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'ตรวจเลือดพิษสุนัขบ้าหลังฉีดวัคซีน แล้วรอ $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'จากนั้นอยู่ในประเทศที่ได้รับอนุมัติอย่างน้อย $duration ก่อนบิน';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'กักกันเมื่อเดินทางถึงอย่างน้อย $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'สัตว์เลี้ยงของคุณต้องมีอายุอย่างน้อย $duration';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'อายุน้อยเกินไปสำหรับ $country: สัตว์เลี้ยงของคุณต้องมีอายุอย่างน้อย $duration';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'ตรวจสอบโดย Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'ยังไม่ได้ตรวจสอบ โปรดยืนยันในเว็บไซต์ทางการก่อนจอง';
+
+  @override
+  String get petRulesOtherAnimal => 'กฎสำหรับสัตว์ชนิดนี้ต่างจากกฎของสุนัขและแมว ดูสิ่งที่ต้องใช้ได้ในเว็บไซต์ทางการ';
+
+  @override
+  String get countryTypeHint => 'เริ่มพิมพ์ชื่อประเทศ เช่น ฝรั่งเศส';
+
+  @override
+  String get assistantStepPets => 'กำลังตรวจสอบสัตว์เลี้ยงของคุณ';
+
+  @override
+  String get tourPetsAddBody => 'เพิ่มสัตว์เลี้ยงอีกตัวที่นี่ เริ่มพิมพ์ประเภท เช่น กระต่าย หรือ นกแก้ว แล้วเลือกคำแนะนำ';
+
+  @override
+  String get rulesReviewTitle => 'กฎที่รอตรวจ';
+
+  @override
+  String get rulesReviewSubtitle => 'กฎทางการที่อ่านจากหน้าเว็บของรัฐ กำลังรอการอนุมัติจากคุณ';
+
+  @override
+  String get rulesReviewNow => 'ที่แสดงตอนนี้';
+
+  @override
+  String get rulesReviewNew => 'ในหน้าเว็บตอนนี้';
+
+  @override
+  String get rulesReviewPets => 'เดินทางกับสัตว์เลี้ยง';
+
+  @override
+  String get rulesReviewPassport => 'อายุหนังสือเดินทาง';
+
+  @override
+  String get rulesReviewApprove => 'อนุมัติ';
+
+  @override
+  String get rulesReviewReject => 'ปฏิเสธ';
+
+  @override
+  String get rulesReviewEmpty => 'ไม่มีอะไรให้ตรวจ';
+
+  @override
+  String get rulesReviewDropped => 'ตัดออก (ไม่มีประโยคที่ตรงกัน)';
+
+  @override
   String get yoursTag => 'ของคุณ';
 
   @override

@@ -8498,6 +8498,339 @@ class AppLocalizationsLt extends AppLocalizations {
   String get subcategoryPetPassports => 'Augintinių pasai';
 
   @override
+  String get petsTitle => 'Augintiniai';
+
+  @override
+  String get petsTileSubtitle => 'Kiekvieno augintinio dokumentai, mikroschema ir veterinaras';
+
+  @override
+  String get petsNotMembers => 'Augintiniai nepriskaičiuojami prie jūsų narių.';
+
+  @override
+  String get petsAdd => 'Pridėti augintinį';
+
+  @override
+  String get petsEmptyBody => 'Pridėkite augintinį, kad skiepai, licencija, draudimas ir mikroschema būtų vienoje vietoje, su priminimais, kol kas nors nepasibaigė.';
+
+  @override
+  String get petsPremium => 'Augintinių profiliai yra Premium dalis.';
+
+  @override
+  String get petKindDog => 'Šuo';
+
+  @override
+  String get petKindCat => 'Katė';
+
+  @override
+  String get petKindOther => 'Kitas augintinis';
+
+  @override
+  String get petBirthday => 'Gimimo data';
+
+  @override
+  String petBorn(String date) {
+    return 'Gimė $date';
+  }
+
+  @override
+  String get petChipNumber => 'Mikroschemos numeris';
+
+  @override
+  String get petChipInvalid => 'Naudokite 9–15 skaitmenų iš mikroschemos sertifikato.';
+
+  @override
+  String get petChipRegistry => 'Mikroschemų registras';
+
+  @override
+  String get petChipTip => 'Atnaujinkite registrą, kai kraustotės ar keičiate numerį, kitaip mikroschema negalės sugrąžinti augintinio namo.';
+
+  @override
+  String get petVetName => 'Veterinaras';
+
+  @override
+  String get petVetPhone => 'Veterinaro telefonas';
+
+  @override
+  String get petDocuments => 'Dokumentai';
+
+  @override
+  String get petStillToAdd => 'Dar reikia pridėti';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'Pašalinti $name? Dokumentai liks Vaultaroje.';
+  }
+
+  @override
+  String get petLostTitle => 'Pasiklydęs augintinis';
+
+  @override
+  String get petLostSteps => 'Pirmiausia praneškite mikroschemų registrui, kad augintinis dingo. Tada paskambinkite netoliese esantiems veterinarams ir gyvūnų prieglaudoms nurodydami mikroschemos numerį, ir pasidalykite naujausia nuotrauka apylinkėse ir internete.';
+
+  @override
+  String get petTravelTitle => 'Kelionė su augintiniu';
+
+  @override
+  String get petTravelPick => 'Kur keliaujate?';
+
+  @override
+  String get petTravelHome => 'Kur gyvena jūsų augintinis';
+
+  @override
+  String get petRuleChip => 'ISO mikroschema, implantuota prieš pasiutligės skiepą';
+
+  @override
+  String get petRuleRabiesTest => 'Pasiutligės skiepas ir pasiutligės kraujo tyrimas patvirtintoje laboratorijoje';
+
+  @override
+  String get petRuleCertificate => 'Oficialaus veterinaro sveikatos sertifikatas';
+
+  @override
+  String get petRulePermit => 'Importo leidimas prieš kelionę';
+
+  @override
+  String get petRuleTapeworm => 'Šunys: gydymas nuo kaspinuočių 1–5 dienos prieš atvykstant';
+
+  @override
+  String get petRuleCdcForm => 'CDC Dog Import Form kiekvienam šuniui';
+
+  @override
+  String get petRuleSomeCountries => 'Tik iš kai kurių šalių:';
+
+  @override
+  String get petRulesOfficial => 'Oficialios taisyklės';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara dar neturi augintinių taisyklių šaliai $country. Jos oficiali veterinarijos tarnyba ar ambasada gali pasakyti, ko reikia.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Mikroschemų įstatymas: $country';
+  }
+
+  @override
+  String get petLawUk => 'Privaloma šunims, o Anglijoje ir katėms';
+
+  @override
+  String get petLawEu => 'Taisyklės skiriasi pagal šalį. Naujas ES įstatymas padarys ją privalomą visiems šunims ir katėms.';
+
+  @override
+  String get petLawMostStates => 'Privaloma šunims ir katėms daugumoje valstijų ir teritorijų';
+
+  @override
+  String get petLawDogs => 'Privaloma šunims';
+
+  @override
+  String get petLawSellers => 'Privaloma veisėjų ir gyvūnų parduotuvių parduodamiems šunims ir katėms';
+
+  @override
+  String get petLawLocal => 'Nustato kiekviena valstija, provincija ar miestas';
+
+  @override
+  String get petLawNone => 'Nacionalinis įstatymas nereikalauja, bet reikia kelionėms ir daugumai įvaikinimų';
+
+  @override
+  String get tripPetsTitle => 'Augintiniai šioje kelionėje';
+
+  @override
+  String get petCheckNoChip => 'Mikroschema neišsaugota';
+
+  @override
+  String get petCheckNoRabies => 'Pasiutligės skiepas neišsaugotas';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Pasiutligės skiepas baigiasi $date, kol dar negrįšite';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Laukimas po kraujo tyrimo gali nespėti iki išvykimo. Pasikalbėkite su veterinaru dabar.';
+
+  @override
+  String get petCheckNoCertificate => 'Sveikatos sertifikatas ar augintinio pasas neišsaugotas';
+
+  @override
+  String get planBenefitPets => 'Augintiniai su savo dokumentais, mikroschema ir veterinaru, nelaikomi nariais';
+
+  @override
+  String get tutorialsSubPets => 'Augintinių dokumentai, mikroschema ir kelionių taisyklės';
+
+  @override
+  String get tourPetsListBody => 'Kiekvienas augintinis turi savo profilį, kuriame mikroschema, veterinaras ir dokumentai vienoje vietoje. Augintiniai nepriskaičiuojami prie jūsų narių.';
+
+  @override
+  String get tourPetsDocsBody => 'Skiepai, licencija ir draudimas priklauso augintiniui, todėl priminimuose nurodyta, kieno jie. Ženkleliai rodo, kas išsaugota.';
+
+  @override
+  String get tourPetsTravelBody => 'Pasirinkite šalį ir pamatysite, ko augintiniui reikia keliauti ten ir kiek tai užtrunka.';
+
+  @override
+  String get petTypeLabel => 'Augintinio rūšis';
+
+  @override
+  String get petTypeHint => 'Pradėkite rašyti, pvz., Triušis arba Papūga';
+
+  @override
+  String get petTypeFerret => 'Šeškas';
+
+  @override
+  String get petTypeRabbit => 'Triušis';
+
+  @override
+  String get petTypeGuineaPig => 'Jūrų kiaulytė';
+
+  @override
+  String get petTypeHamster => 'Žiurkėnas';
+
+  @override
+  String get petTypeRat => 'Žiurkė';
+
+  @override
+  String get petTypeMouse => 'Pelė';
+
+  @override
+  String get petTypeGerbil => 'Smiltpelė';
+
+  @override
+  String get petTypeChinchilla => 'Šinšila';
+
+  @override
+  String get petTypeHedgehog => 'Ežys';
+
+  @override
+  String get petTypeHorse => 'Arklys';
+
+  @override
+  String get petTypePony => 'Ponis';
+
+  @override
+  String get petTypeDonkey => 'Asilas';
+
+  @override
+  String get petTypeParrot => 'Papūga';
+
+  @override
+  String get petTypeBudgie => 'Banguotoji papūgėlė';
+
+  @override
+  String get petTypeCockatiel => 'Nimfa';
+
+  @override
+  String get petTypeCanary => 'Kanarėlė';
+
+  @override
+  String get petTypeChicken => 'Višta';
+
+  @override
+  String get petTypeTortoise => 'Sausumos vėžlys';
+
+  @override
+  String get petTypeTurtle => 'Vandens vėžlys';
+
+  @override
+  String get petTypeSnake => 'Gyvatė';
+
+  @override
+  String get petTypeLizard => 'Driežas';
+
+  @override
+  String get petTypeGecko => 'Gekonas';
+
+  @override
+  String get petTypeBeardedDragon => 'Barzdotoji agama';
+
+  @override
+  String get petTypeFrog => 'Varlė';
+
+  @override
+  String get petTypeAxolotl => 'Aksolotlis';
+
+  @override
+  String get petTypeFish => 'Žuvis';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Pasiutligės vakcina likus bent $duration iki atvykimo';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Pasiutligės kraujo tyrimas po vakcinos, tada laukimas $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Tada bent $duration patvirtintoje šalyje prieš skrydį';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Karantinas atvykus bent $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Augintiniui turi būti bent $duration';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Per jaunas šaliai $country: augintiniui turi būti bent $duration';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Patikrino Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Dar nepatikrinta. Prieš užsakydami patvirtinkite oficialioje svetainėje.';
+
+  @override
+  String get petRulesOtherAnimal => 'Šio gyvūno taisyklės skiriasi nuo šunų ir kačių taisyklių. Ko reikia, žiūrėkite oficialioje svetainėje.';
+
+  @override
+  String get countryTypeHint => 'Pradėkite rašyti šalį, pvz., Prancūzija';
+
+  @override
+  String get assistantStepPets => 'Tikrinami jūsų augintiniai';
+
+  @override
+  String get tourPetsAddBody => 'Čia pridėkite dar vieną augintinį. Pradėkite rašyti rūšį, pvz., Triušis arba Papūga, ir pasirinkite pasiūlymą.';
+
+  @override
+  String get rulesReviewTitle => 'Peržiūrėtinos taisyklės';
+
+  @override
+  String get rulesReviewSubtitle => 'Oficialios taisyklės, perskaitytos iš valdžios puslapių, laukia jūsų patvirtinimo';
+
+  @override
+  String get rulesReviewNow => 'Rodoma dabar';
+
+  @override
+  String get rulesReviewNew => 'Puslapyje dabar';
+
+  @override
+  String get rulesReviewPets => 'Kelionė su augintiniu';
+
+  @override
+  String get rulesReviewPassport => 'Paso galiojimas';
+
+  @override
+  String get rulesReviewApprove => 'Patvirtinti';
+
+  @override
+  String get rulesReviewReject => 'Atmesti';
+
+  @override
+  String get rulesReviewEmpty => 'Nėra ką peržiūrėti.';
+
+  @override
+  String get rulesReviewDropped => 'Praleista (nėra atitinkančio sakinio)';
+
+  @override
   String get yoursTag => 'Jūsų';
 
   @override

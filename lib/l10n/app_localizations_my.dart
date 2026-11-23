@@ -8298,6 +8298,339 @@ class AppLocalizationsMy extends AppLocalizations {
   String get subcategoryPetPassports => 'အိမ်မွေးတိရစ္ဆာန် နိုင်ငံကူးလက်မှတ်';
 
   @override
+  String get petsTitle => 'အိမ်မွေးတိရစ္ဆာန်များ';
+
+  @override
+  String get petsTileSubtitle => 'တိရစ္ဆာန်တစ်ကောင်ချင်းစီ၏ စာရွက်စာတမ်း၊ မိုက်ခရိုချစ်နှင့် တိရစ္ဆာန်ဆရာဝန်';
+
+  @override
+  String get petsNotMembers => 'အိမ်မွေးတိရစ္ဆာန်များကို သင့်အဖွဲ့ဝင်များထဲ မရေတွက်ပါ။';
+
+  @override
+  String get petsAdd => 'အိမ်မွေးတိရစ္ဆာန် ထည့်ရန်';
+
+  @override
+  String get petsEmptyBody => 'ကာကွယ်ဆေး၊ လိုင်စင်၊ အာမခံနှင့် မိုက်ခရိုချစ်ကို တစ်နေရာတည်းတွင် ထားရန် သင့်တိရစ္ဆာန်ကို ထည့်ပါ၊ တစ်ခုခု သက်တမ်းမကုန်မီ သတိပေးချက်များဖြင့်။';
+
+  @override
+  String get petsPremium => 'အိမ်မွေးတိရစ္ဆာန် ပရိုဖိုင်များသည် Premium ၏ အစိတ်အပိုင်းဖြစ်သည်။';
+
+  @override
+  String get petKindDog => 'ခွေး';
+
+  @override
+  String get petKindCat => 'ကြောင်';
+
+  @override
+  String get petKindOther => 'အခြားတိရစ္ဆာန်';
+
+  @override
+  String get petBirthday => 'မွေးသက္ကရာဇ်';
+
+  @override
+  String petBorn(String date) {
+    return 'မွေးနေ့ $date';
+  }
+
+  @override
+  String get petChipNumber => 'မိုက်ခရိုချစ် နံပါတ်';
+
+  @override
+  String get petChipInvalid => 'ချစ်လက်မှတ်ပေါ်ရှိ ဂဏန်း 9 မှ 15 လုံးကို သုံးပါ။';
+
+  @override
+  String get petChipRegistry => 'ချစ်မှတ်ပုံတင်';
+
+  @override
+  String get petChipTip => 'အိမ်ပြောင်း သို့မဟုတ် နံပါတ်ပြောင်းသည့်အခါ မှတ်ပုံတင်ကို အပ်ဒိတ်လုပ်ပါ၊ မဟုတ်ပါက ချစ်က သင့်တိရစ္ဆာန်ကို အိမ်ပြန်ခေါ်မပေးနိုင်ပါ။';
+
+  @override
+  String get petVetName => 'တိရစ္ဆာန်ဆရာဝန်';
+
+  @override
+  String get petVetPhone => 'တိရစ္ဆာန်ဆရာဝန် ဖုန်း';
+
+  @override
+  String get petDocuments => 'စာရွက်စာတမ်းများ';
+
+  @override
+  String get petStillToAdd => 'ထည့်ရန် ကျန်သေးသည်';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '$name ကို ဖယ်ရှားမလား။ စာရွက်စာတမ်းများ Vaultara တွင် ကျန်ရှိမည်။';
+  }
+
+  @override
+  String get petLostTitle => 'ပျောက်ဆုံးသော တိရစ္ဆာန်';
+
+  @override
+  String get petLostSteps => 'ပထမဦးစွာ သင့်တိရစ္ဆာန် ပျောက်ဆုံးကြောင်း ချစ်မှတ်ပုံတင်သို့ အကြောင်းကြားပါ။ ထို့နောက် မိုက်ခရိုချစ်နံပါတ်ဖြင့် အနီးရှိ တိရစ္ဆာန်ဆရာဝန်များနှင့် တိရစ္ဆာန်ခိုလှုံရာများကို ဖုန်းဆက်ပြီး မကြာသေးမီ ဓာတ်ပုံကို ဒေသတွင်းနှင့် အွန်လိုင်းတွင် မျှဝေပါ။';
+
+  @override
+  String get petTravelTitle => 'တိရစ္ဆာန်နှင့် ခရီးသွားခြင်း';
+
+  @override
+  String get petTravelPick => 'ဘယ်ကို သွားမလဲ။';
+
+  @override
+  String get petTravelHome => 'သင့်တိရစ္ဆာန် နေထိုင်ရာ';
+
+  @override
+  String get petRuleChip => 'ခွေးရူးပြန်ကာကွယ်ဆေးမထိုးမီ တပ်ဆင်ထားသော ISO မိုက်ခရိုချစ်';
+
+  @override
+  String get petRuleRabiesTest => 'ခွေးရူးပြန်ကာကွယ်ဆေးနှင့် အတည်ပြုထားသော ဓာတ်ခွဲခန်းမှ ခွေးရူးပြန်သွေးစစ်ခြင်း';
+
+  @override
+  String get petRuleCertificate => 'တရားဝင် တိရစ္ဆာန်ဆရာဝန်ထံမှ ကျန်းမာရေးလက်မှတ်';
+
+  @override
+  String get petRulePermit => 'ခရီးမသွားမီ တင်သွင်းခွင့်ပါမစ်';
+
+  @override
+  String get petRuleTapeworm => 'ခွေးများ: ရောက်ရှိမည့်ရက်မတိုင်မီ 1 မှ 5 ရက်အတွင်း သံကောင်ကုသမှု';
+
+  @override
+  String get petRuleCdcForm => 'ခွေးတစ်ကောင်စီအတွက် CDC Dog Import Form';
+
+  @override
+  String get petRuleSomeCountries => 'အချို့နိုင်ငံများမှသာ:';
+
+  @override
+  String get petRulesOfficial => 'တရားဝင် စည်းမျဉ်းများ';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara တွင် $country အတွက် အိမ်မွေးတိရစ္ဆာန် စည်းမျဉ်းများ မရှိသေးပါ။ ၎င်း၏ တရားဝင် တိရစ္ဆာန်ဆေးဝန်ဆောင်မှု သို့မဟုတ် သံရုံးက လိုအပ်ချက်ကို ပြောပြနိုင်သည်။';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return '$country ရှိ မိုက်ခရိုချစ် ဥပဒေ';
+  }
+
+  @override
+  String get petLawUk => 'ခွေးများအတွက် မဖြစ်မနေ၊ အင်္ဂလန်တွင် ကြောင်များအတွက်လည်း';
+
+  @override
+  String get petLawEu => 'စည်းမျဉ်းများ နိုင်ငံအလိုက် ကွဲပြားသည်။ EU ဥပဒေသစ်က ခွေးနှင့်ကြောင်အားလုံးအတွက် မဖြစ်မနေ ဖြစ်စေမည်။';
+
+  @override
+  String get petLawMostStates => 'ပြည်နယ်နှင့် နယ်မြေအများစုတွင် ခွေးနှင့်ကြောင်များအတွက် မဖြစ်မနေ';
+
+  @override
+  String get petLawDogs => 'ခွေးများအတွက် မဖြစ်မနေ';
+
+  @override
+  String get petLawSellers => 'မွေးမြူသူများနှင့် တိရစ္ဆာန်ဆိုင်များ ရောင်းချသော ခွေးနှင့်ကြောင်များအတွက် မဖြစ်မနေ';
+
+  @override
+  String get petLawLocal => 'ပြည်နယ်၊ ခရိုင် သို့မဟုတ် မြို့တစ်ခုစီက သတ်မှတ်သည်';
+
+  @override
+  String get petLawNone => 'အမျိုးသားဥပဒေအရ မလိုအပ်သော်လည်း ခရီးသွားခြင်းနှင့် မွေးစားခြင်းအများစုအတွက် လိုအပ်သည်';
+
+  @override
+  String get tripPetsTitle => 'ဤခရီးရှိ တိရစ္ဆာန်များ';
+
+  @override
+  String get petCheckNoChip => 'မိုက်ခရိုချစ် သိမ်းဆည်းထားခြင်း မရှိ';
+
+  @override
+  String get petCheckNoRabies => 'ခွေးရူးပြန်ကာကွယ်ဆေး သိမ်းဆည်းထားခြင်း မရှိ';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'ခွေးရူးပြန်ကာကွယ်ဆေး $date တွင် ကုန်ဆုံးမည်၊ သင်ပြန်မလာမီ';
+  }
+
+  @override
+  String get petCheckTooSoon => 'သွေးစစ်ပြီးနောက် စောင့်ဆိုင်းချိန်သည် မထွက်ခွာမီ မပြည့်နိုင်ပါ။ ယခုပင် သင့်တိရစ္ဆာန်ဆရာဝန်နှင့် ဆွေးနွေးပါ။';
+
+  @override
+  String get petCheckNoCertificate => 'ကျန်းမာရေးလက်မှတ် သို့မဟုတ် တိရစ္ဆာန်ပတ်စ်ပို့ သိမ်းဆည်းထားခြင်း မရှိ';
+
+  @override
+  String get planBenefitPets => 'ကိုယ်ပိုင် စာရွက်စာတမ်း၊ မိုက်ခရိုချစ်နှင့် တိရစ္ဆာန်ဆရာဝန်ပါသော တိရစ္ဆာန်များ၊ အဖွဲ့ဝင်အဖြစ် မရေတွက်';
+
+  @override
+  String get tutorialsSubPets => 'တိရစ္ဆာန် စာရွက်စာတမ်း၊ မိုက်ခရိုချစ်နှင့် ခရီးသွားစည်းမျဉ်းများ';
+
+  @override
+  String get tourPetsListBody => 'တိရစ္ဆာန်တစ်ကောင်စီတွင် ကိုယ်ပိုင်ပရိုဖိုင်ရှိပြီး မိုက်ခရိုချစ်၊ တိရစ္ဆာန်ဆရာဝန်နှင့် စာရွက်စာတမ်းများ တစ်နေရာတည်းတွင် ရှိသည်။ အိမ်မွေးတိရစ္ဆာန်များကို သင့်အဖွဲ့ဝင်များထဲ မရေတွက်ပါ။';
+
+  @override
+  String get tourPetsDocsBody => 'ကာကွယ်ဆေး၊ လိုင်စင်နှင့် အာမခံများသည် တိရစ္ဆာန်ပိုင်ဖြစ်သဖြင့် သတိပေးချက်များက မည်သူ့ပိုင်ဖြစ်ကြောင်း ပြောသည်။ တံဆိပ်များက သိမ်းထားသည်ကို ပြသည်။';
+
+  @override
+  String get tourPetsTravelBody => 'သင့်တိရစ္ဆာန် ထိုနေရာသို့ ခရီးသွားရန် ဘာလိုအပ်ပြီး အချိန်မည်မျှကြာသည်ကို ကြည့်ရန် နိုင်ငံတစ်ခု ရွေးပါ။';
+
+  @override
+  String get petTypeLabel => 'အိမ်မွေးတိရစ္ဆာန် အမျိုးအစား';
+
+  @override
+  String get petTypeHint => 'စတင်ရိုက်ပါ၊ ဥပမာ ယုန် သို့မဟုတ် ကြက်တူရွေး';
+
+  @override
+  String get petTypeFerret => 'ဖယ်ရက်';
+
+  @override
+  String get petTypeRabbit => 'ယုန်';
+
+  @override
+  String get petTypeGuineaPig => 'ဂီနီဝက်';
+
+  @override
+  String get petTypeHamster => 'ဟမ်စတာ';
+
+  @override
+  String get petTypeRat => 'ကြွက်ကြီး';
+
+  @override
+  String get petTypeMouse => 'ကြွက်';
+
+  @override
+  String get petTypeGerbil => 'ဂျာဘီလ်';
+
+  @override
+  String get petTypeChinchilla => 'ချင်ချီလာ';
+
+  @override
+  String get petTypeHedgehog => 'ဖြူ';
+
+  @override
+  String get petTypeHorse => 'မြင်း';
+
+  @override
+  String get petTypePony => 'မြင်းပု';
+
+  @override
+  String get petTypeDonkey => 'မြည်း';
+
+  @override
+  String get petTypeParrot => 'ကြက်တူရွေး';
+
+  @override
+  String get petTypeBudgie => 'ဘတ်ဂျီ';
+
+  @override
+  String get petTypeCockatiel => 'ကော့ကတီးလ်';
+
+  @override
+  String get petTypeCanary => 'ကနေရီ';
+
+  @override
+  String get petTypeChicken => 'ကြက်';
+
+  @override
+  String get petTypeTortoise => 'လိပ်';
+
+  @override
+  String get petTypeTurtle => 'ရေလိပ်';
+
+  @override
+  String get petTypeSnake => 'မြွေ';
+
+  @override
+  String get petTypeLizard => 'အိမ်မြှောင်';
+
+  @override
+  String get petTypeGecko => 'တောက်တဲ့';
+
+  @override
+  String get petTypeBeardedDragon => 'မုတ်ဆိတ်နဂါး';
+
+  @override
+  String get petTypeFrog => 'ဖား';
+
+  @override
+  String get petTypeAxolotl => 'အက်ဆိုလော့တယ်';
+
+  @override
+  String get petTypeFish => 'ငါး';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'ရောက်ရှိမီ အနည်းဆုံး $duration အလိုတွင် ခွေးရူးပြန်ကာကွယ်ဆေး';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'ကာကွယ်ဆေးထိုးပြီးနောက် ခွေးရူးပြန်သွေးစစ်ဆေးမှု၊ ထို့နောက် $duration စောင့်ရန်';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'ထို့နောက် မပျံသန်းမီ အတည်ပြုထားသောနိုင်ငံတွင် အနည်းဆုံး $duration';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'ရောက်ရှိချိန်တွင် အနည်းဆုံး $duration သီးခြားထားခြင်း';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'သင့်အိမ်မွေးတိရစ္ဆာန်သည် အနည်းဆုံး $duration ရှိရမည်';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return '$country အတွက် ငယ်လွန်းသည်- သင့်အိမ်မွေးတိရစ္ဆာန်သည် အနည်းဆုံး $duration ရှိရမည်';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Vaultara မှ စစ်ဆေးပြီး · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'မစစ်ဆေးရသေးပါ။ မှာယူမီ တရားဝင်ဆိုက်တွင် အတည်ပြုပါ။';
+
+  @override
+  String get petRulesOtherAnimal => 'ဤတိရစ္ဆာန်အတွက် စည်းမျဉ်းများသည် ခွေးနှင့်ကြောင်အတွက်နှင့် ကွဲပြားသည်။ လိုအပ်သည်များကို တရားဝင်ဆိုက်တွင် ကြည့်ပါ။';
+
+  @override
+  String get countryTypeHint => 'နိုင်ငံအမည် စတင်ရိုက်ပါ၊ ဥပမာ ပြင်သစ်';
+
+  @override
+  String get assistantStepPets => 'သင့်အိမ်မွေးတိရစ္ဆာန်များကို စစ်ဆေးနေသည်';
+
+  @override
+  String get tourPetsAddBody => 'ဤနေရာတွင် နောက်ထပ်အိမ်မွေးတိရစ္ဆာန်တစ်ကောင် ထည့်ပါ။ အမျိုးအစားကို ရိုက်ပါ၊ ဥပမာ ယုန် သို့မဟုတ် ကြက်တူရွေး၊ ပြီးလျှင် အကြံပြုချက်တစ်ခု ရွေးပါ။';
+
+  @override
+  String get rulesReviewTitle => 'စစ်ဆေးရန် စည်းမျဉ်းများ';
+
+  @override
+  String get rulesReviewSubtitle => 'အစိုးရစာမျက်နှာများမှ ဖတ်ထားသော တရားဝင်စည်းမျဉ်းများ၊ သင့်အတည်ပြုချက်ကို စောင့်နေသည်';
+
+  @override
+  String get rulesReviewNow => 'ယခု ပြသထားသည်';
+
+  @override
+  String get rulesReviewNew => 'ယခု စာမျက်နှာပေါ်တွင်';
+
+  @override
+  String get rulesReviewPets => 'အိမ်မွေးတိရစ္ဆာန်နှင့် ခရီးသွားခြင်း';
+
+  @override
+  String get rulesReviewPassport => 'နိုင်ငံကူးလက်မှတ် သက်တမ်း';
+
+  @override
+  String get rulesReviewApprove => 'အတည်ပြုရန်';
+
+  @override
+  String get rulesReviewReject => 'ပယ်ရန်';
+
+  @override
+  String get rulesReviewEmpty => 'စစ်ဆေးရန် ဘာမှမရှိပါ။';
+
+  @override
+  String get rulesReviewDropped => 'ချန်ထားသည် (ကိုက်ညီသောဝါကျ မရှိပါ)';
+
+  @override
   String get yoursTag => 'သင့်ဟာ';
 
   @override

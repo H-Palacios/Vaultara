@@ -8361,6 +8361,339 @@ class AppLocalizationsAf extends AppLocalizations {
   String get subcategoryPetPassports => 'Troeteldierpaspoorte';
 
   @override
+  String get petsTitle => 'Troeteldiere';
+
+  @override
+  String get petsTileSubtitle => 'Dokumente, mikroskyfie en veearts vir elke troeteldier';
+
+  @override
+  String get petsNotMembers => 'Troeteldiere tel nie by jou lede nie.';
+
+  @override
+  String get petsAdd => 'Voeg \'n troeteldier by';
+
+  @override
+  String get petsEmptyBody => 'Voeg jou troeteldier by om sy inentings, lisensie, versekering en mikroskyfie bymekaar te hou, met herinneringe voordat iets verval.';
+
+  @override
+  String get petsPremium => 'Troeteldierprofiele is deel van Premium.';
+
+  @override
+  String get petKindDog => 'Hond';
+
+  @override
+  String get petKindCat => 'Kat';
+
+  @override
+  String get petKindOther => 'Ander troeteldier';
+
+  @override
+  String get petBirthday => 'Geboortedatum';
+
+  @override
+  String petBorn(String date) {
+    return 'Gebore $date';
+  }
+
+  @override
+  String get petChipNumber => 'Mikroskyfienommer';
+
+  @override
+  String get petChipInvalid => 'Gebruik die 9 tot 15 syfers op die skyfiesertifikaat.';
+
+  @override
+  String get petChipRegistry => 'Skyfieregister';
+
+  @override
+  String get petChipTip => 'Hou die register op datum wanneer jy trek of jou nommer verander, anders kan die skyfie nie jou troeteldier huis toe bring nie.';
+
+  @override
+  String get petVetName => 'Veearts';
+
+  @override
+  String get petVetPhone => 'Veearts se telefoon';
+
+  @override
+  String get petDocuments => 'Dokumente';
+
+  @override
+  String get petStillToAdd => 'Nog om by te voeg';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'Verwyder $name? Die dokumente bly in Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'Troeteldier vermis';
+
+  @override
+  String get petLostSteps => 'Meld jou troeteldier eers by die skyfieregister as vermis aan. Bel dan nabygeleë veeartse en dierehawens met die mikroskyfienommer, en deel \'n onlangse foto plaaslik en aanlyn.';
+
+  @override
+  String get petTravelTitle => 'Reis met \'n troeteldier';
+
+  @override
+  String get petTravelPick => 'Waarheen gaan jy?';
+
+  @override
+  String get petTravelHome => 'Waar jou troeteldier woon';
+
+  @override
+  String get petRuleChip => '\'n ISO-mikroskyfie, ingeplant voor die hondsdolheid-inenting';
+
+  @override
+  String get petRuleRabiesTest => 'Hondsdolheid-inenting en \'n hondsdolheid-bloedtoets by \'n goedgekeurde laboratorium';
+
+  @override
+  String get petRuleCertificate => '\'n Gesondheidsertifikaat van \'n amptelike veearts';
+
+  @override
+  String get petRulePermit => '\'n Invoerpermit voor jy reis';
+
+  @override
+  String get petRuleTapeworm => 'Honde: lintwormbehandeling 1 tot 5 dae voor jy aankom';
+
+  @override
+  String get petRuleCdcForm => '\'n CDC Dog Import Form vir elke hond';
+
+  @override
+  String get petRuleSomeCountries => 'Net van sommige lande af:';
+
+  @override
+  String get petRulesOfficial => 'Amptelike reëls';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara het nog nie die troeteldierreëls vir $country nie. Die amptelike veeartsdiens of ambassade kan jou sê wat nodig is.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Mikroskyfiewet in $country';
+  }
+
+  @override
+  String get petLawUk => 'Verpligtend vir honde, en vir katte in Engeland';
+
+  @override
+  String get petLawEu => 'Reëls verskil per land. \'n Nuwe EU-wet sal dit vir alle honde en katte verpligtend maak.';
+
+  @override
+  String get petLawMostStates => 'Verpligtend vir honde en katte in die meeste state en gebiede';
+
+  @override
+  String get petLawDogs => 'Verpligtend vir honde';
+
+  @override
+  String get petLawSellers => 'Verpligtend vir honde en katte wat deur telers en troeteldierwinkels verkoop word';
+
+  @override
+  String get petLawLocal => 'Bepaal deur elke staat, provinsie of stad';
+
+  @override
+  String get petLawNone => 'Nie deur nasionale wet vereis nie, maar nodig om te reis en vir die meeste aannemings';
+
+  @override
+  String get tripPetsTitle => 'Troeteldiere op hierdie reis';
+
+  @override
+  String get petCheckNoChip => 'Geen mikroskyfie gestoor nie';
+
+  @override
+  String get petCheckNoRabies => 'Geen hondsdolheid-inenting gestoor nie';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Hondsdolheid-inenting verval $date, voor jy terug is';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Die wagtyd ná die bloedtoets pas dalk nie voor jy vertrek nie. Praat nou met jou veearts.';
+
+  @override
+  String get petCheckNoCertificate => 'Geen gesondheidsertifikaat of troeteldierpaspoort gestoor nie';
+
+  @override
+  String get planBenefitPets => 'Troeteldiere met hul eie dokumente, mikroskyfie en veearts, nie as lede getel nie';
+
+  @override
+  String get tutorialsSubPets => 'Troeteldierdokumente, mikroskyfie en reisreëls';
+
+  @override
+  String get tourPetsListBody => 'Elke troeteldier het sy eie profiel, met die mikroskyfie, veearts en dokumente op een plek. Troeteldiere tel nie by jou lede nie.';
+
+  @override
+  String get tourPetsDocsBody => 'Inentings, lisensie en versekering behoort aan die troeteldier, so herinneringe sê wie s\'n dit is. Die kentekens wys wat gestoor is.';
+
+  @override
+  String get tourPetsTravelBody => 'Kies \'n land om te sien wat jou troeteldier nodig het om soontoe te reis, en hoe lank dit neem.';
+
+  @override
+  String get petTypeLabel => 'Soort troeteldier';
+
+  @override
+  String get petTypeHint => 'Begin tik, byvoorbeeld Konyn of Papegaai';
+
+  @override
+  String get petTypeFerret => 'Fret';
+
+  @override
+  String get petTypeRabbit => 'Konyn';
+
+  @override
+  String get petTypeGuineaPig => 'Marmotjie';
+
+  @override
+  String get petTypeHamster => 'Hamster';
+
+  @override
+  String get petTypeRat => 'Rot';
+
+  @override
+  String get petTypeMouse => 'Muis';
+
+  @override
+  String get petTypeGerbil => 'Gerbil';
+
+  @override
+  String get petTypeChinchilla => 'Chinchilla';
+
+  @override
+  String get petTypeHedgehog => 'Krimpvarkie';
+
+  @override
+  String get petTypeHorse => 'Perd';
+
+  @override
+  String get petTypePony => 'Ponie';
+
+  @override
+  String get petTypeDonkey => 'Donkie';
+
+  @override
+  String get petTypeParrot => 'Papegaai';
+
+  @override
+  String get petTypeBudgie => 'Budjie';
+
+  @override
+  String get petTypeCockatiel => 'Kokketiel';
+
+  @override
+  String get petTypeCanary => 'Kanarie';
+
+  @override
+  String get petTypeChicken => 'Hoender';
+
+  @override
+  String get petTypeTortoise => 'Skilpad';
+
+  @override
+  String get petTypeTurtle => 'Waterskilpad';
+
+  @override
+  String get petTypeSnake => 'Slang';
+
+  @override
+  String get petTypeLizard => 'Akkedis';
+
+  @override
+  String get petTypeGecko => 'Geitjie';
+
+  @override
+  String get petTypeBeardedDragon => 'Baardagaam';
+
+  @override
+  String get petTypeFrog => 'Padda';
+
+  @override
+  String get petTypeAxolotl => 'Aksolotl';
+
+  @override
+  String get petTypeFish => 'Vis';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Hondsdolheid-entstof minstens $duration voor jy aankom';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return '\'n Hondsdolheid-bloedtoets na die entstof, dan \'n wagtyd van $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Dan minstens $duration in \'n goedgekeurde land voor jy vlieg';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Kwarantyn by aankoms vir minstens $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Jou troeteldier moet minstens $duration oud wees';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Te jonk vir $country: jou troeteldier moet minstens $duration oud wees';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Nagegaan deur Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Nog nie nagegaan nie. Bevestig op die amptelike webwerf voor jy bespreek.';
+
+  @override
+  String get petRulesOtherAnimal => 'Die reëls vir hierdie dier verskil van dié vir honde en katte. Kyk op die amptelike webwerf wat dit nodig het.';
+
+  @override
+  String get countryTypeHint => 'Begin \'n land tik, byvoorbeeld Frankryk';
+
+  @override
+  String get assistantStepPets => 'Gaan jou troeteldiere na';
+
+  @override
+  String get tourPetsAddBody => 'Voeg hier nog \'n troeteldier by. Begin die soort tik, soos Konyn of Papegaai, en kies \'n voorstel.';
+
+  @override
+  String get rulesReviewTitle => 'Reëls om na te gaan';
+
+  @override
+  String get rulesReviewSubtitle => 'Amptelike reëls van regeringsblaaie, wat op jou goedkeuring wag';
+
+  @override
+  String get rulesReviewNow => 'Nou gewys';
+
+  @override
+  String get rulesReviewNew => 'Nou op die blad';
+
+  @override
+  String get rulesReviewPets => 'Reis met troeteldiere';
+
+  @override
+  String get rulesReviewPassport => 'Paspoortgeldigheid';
+
+  @override
+  String get rulesReviewApprove => 'Keur goed';
+
+  @override
+  String get rulesReviewReject => 'Wys af';
+
+  @override
+  String get rulesReviewEmpty => 'Niks om na te gaan nie.';
+
+  @override
+  String get rulesReviewDropped => 'Uitgelaat (geen passende sin nie)';
+
+  @override
   String get yoursTag => 'Joune';
 
   @override

@@ -8357,6 +8357,339 @@ class AppLocalizationsTr extends AppLocalizations {
   String get subcategoryPetPassports => 'Evcil hayvan pasaportları';
 
   @override
+  String get petsTitle => 'Evcil hayvanlar';
+
+  @override
+  String get petsTileSubtitle => 'Her evcil hayvanın belgeleri, mikroçipi ve veterineri';
+
+  @override
+  String get petsNotMembers => 'Evcil hayvanlar üyelerinize sayılmaz.';
+
+  @override
+  String get petsAdd => 'Evcil hayvan ekle';
+
+  @override
+  String get petsEmptyBody => 'Aşıları, lisansı, sigortası ve mikroçipi bir arada olsun diye evcil hayvanınızı ekleyin; bir şeyin süresi dolmadan hatırlatma alırsınız.';
+
+  @override
+  String get petsPremium => 'Evcil hayvan profilleri Premium\'un parçasıdır.';
+
+  @override
+  String get petKindDog => 'Köpek';
+
+  @override
+  String get petKindCat => 'Kedi';
+
+  @override
+  String get petKindOther => 'Başka evcil hayvan';
+
+  @override
+  String get petBirthday => 'Doğum tarihi';
+
+  @override
+  String petBorn(String date) {
+    return 'Doğum: $date';
+  }
+
+  @override
+  String get petChipNumber => 'Mikroçip numarası';
+
+  @override
+  String get petChipInvalid => 'Çip sertifikasındaki 9 ile 15 haneyi kullanın.';
+
+  @override
+  String get petChipRegistry => 'Çip kaydı';
+
+  @override
+  String get petChipTip => 'Taşındığınızda veya numaranızı değiştirdiğinizde kaydı güncelleyin, yoksa çip evcil hayvanınızı eve getiremez.';
+
+  @override
+  String get petVetName => 'Veteriner';
+
+  @override
+  String get petVetPhone => 'Veterinerin telefonu';
+
+  @override
+  String get petDocuments => 'Belgeler';
+
+  @override
+  String get petStillToAdd => 'Henüz eklenecek';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '$name kaldırılsın mı? Belgeleri Vaultara\'da kalır.';
+  }
+
+  @override
+  String get petLostTitle => 'Kayıp evcil hayvan';
+
+  @override
+  String get petLostSteps => 'Önce çip kaydına evcil hayvanınızın kaybolduğunu bildirin. Sonra mikroçip numarasıyla yakındaki veterinerleri ve hayvan barınaklarını arayın, yeni bir fotoğrafı çevrede ve internette paylaşın.';
+
+  @override
+  String get petTravelTitle => 'Evcil hayvanla seyahat';
+
+  @override
+  String get petTravelPick => 'Nereye gidiyorsunuz?';
+
+  @override
+  String get petTravelHome => 'Evcil hayvanınızın yaşadığı yer';
+
+  @override
+  String get petRuleChip => 'Kuduz aşısından önce takılmış ISO mikroçip';
+
+  @override
+  String get petRuleRabiesTest => 'Kuduz aşısı ve onaylı bir laboratuvarda kuduz kan testi';
+
+  @override
+  String get petRuleCertificate => 'Resmi veterinerden sağlık sertifikası';
+
+  @override
+  String get petRulePermit => 'Seyahatten önce ithalat izni';
+
+  @override
+  String get petRuleTapeworm => 'Köpekler: varıştan 1 ila 5 gün önce tenya tedavisi';
+
+  @override
+  String get petRuleCdcForm => 'Her köpek için CDC Dog Import Form';
+
+  @override
+  String get petRuleSomeCountries => 'Yalnızca bazı ülkelerden:';
+
+  @override
+  String get petRulesOfficial => 'Resmi kurallar';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara\'da henüz $country için evcil hayvan kuralları yok. Ülkenin resmi veteriner hizmeti veya büyükelçiliği neyin gerektiğini söyleyebilir.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return '$country mikroçip yasası';
+  }
+
+  @override
+  String get petLawUk => 'Köpekler için, İngiltere\'de kediler için de zorunlu';
+
+  @override
+  String get petLawEu => 'Kurallar ülkeye göre değişir. Yeni bir AB yasası bunu tüm köpekler ve kediler için zorunlu yapacak.';
+
+  @override
+  String get petLawMostStates => 'Çoğu eyalet ve bölgede köpekler ve kediler için zorunlu';
+
+  @override
+  String get petLawDogs => 'Köpekler için zorunlu';
+
+  @override
+  String get petLawSellers => 'Yetiştiricilerin ve pet shopların sattığı köpekler ve kediler için zorunlu';
+
+  @override
+  String get petLawLocal => 'Her eyalet, il veya şehir belirler';
+
+  @override
+  String get petLawNone => 'Ulusal yasa gerektirmez ama seyahat ve çoğu sahiplendirme için gerekir';
+
+  @override
+  String get tripPetsTitle => 'Bu seyahatteki evcil hayvanlar';
+
+  @override
+  String get petCheckNoChip => 'Kayıtlı mikroçip yok';
+
+  @override
+  String get petCheckNoRabies => 'Kayıtlı kuduz aşısı yok';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Kuduz aşısının süresi $date tarihinde doluyor, dönmeden önce';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Kan testinden sonraki bekleme süresi gidişinize yetişmeyebilir. Hemen veterinerinizle konuşun.';
+
+  @override
+  String get petCheckNoCertificate => 'Kayıtlı sağlık sertifikası veya evcil hayvan pasaportu yok';
+
+  @override
+  String get planBenefitPets => 'Kendi belgeleri, mikroçipi ve veterineri olan evcil hayvanlar, üye sayılmaz';
+
+  @override
+  String get tutorialsSubPets => 'Evcil hayvan belgeleri, mikroçip ve seyahat kuralları';
+
+  @override
+  String get tourPetsListBody => 'Her evcil hayvanın kendi profili var; mikroçip, veteriner ve belgeler tek yerde. Evcil hayvanlar üyelerinize sayılmaz.';
+
+  @override
+  String get tourPetsDocsBody => 'Aşılar, lisans ve sigorta evcil hayvana aittir, bu yüzden hatırlatmalar kimin olduğunu söyler. Rozetler neyin kayıtlı olduğunu gösterir.';
+
+  @override
+  String get tourPetsTravelBody => 'Evcil hayvanınızın oraya seyahat etmek için neye ihtiyacı olduğunu ve ne kadar sürdüğünü görmek için bir ülke seçin.';
+
+  @override
+  String get petTypeLabel => 'Evcil hayvan türü';
+
+  @override
+  String get petTypeHint => 'Yazmaya başlayın, örneğin Tavşan veya Papağan';
+
+  @override
+  String get petTypeFerret => 'Gelincik';
+
+  @override
+  String get petTypeRabbit => 'Tavşan';
+
+  @override
+  String get petTypeGuineaPig => 'Kobay';
+
+  @override
+  String get petTypeHamster => 'Hamster';
+
+  @override
+  String get petTypeRat => 'Sıçan';
+
+  @override
+  String get petTypeMouse => 'Fare';
+
+  @override
+  String get petTypeGerbil => 'Gerbil';
+
+  @override
+  String get petTypeChinchilla => 'Çinçilla';
+
+  @override
+  String get petTypeHedgehog => 'Kirpi';
+
+  @override
+  String get petTypeHorse => 'At';
+
+  @override
+  String get petTypePony => 'Midilli';
+
+  @override
+  String get petTypeDonkey => 'Eşek';
+
+  @override
+  String get petTypeParrot => 'Papağan';
+
+  @override
+  String get petTypeBudgie => 'Muhabbet kuşu';
+
+  @override
+  String get petTypeCockatiel => 'Sultan papağanı';
+
+  @override
+  String get petTypeCanary => 'Kanarya';
+
+  @override
+  String get petTypeChicken => 'Tavuk';
+
+  @override
+  String get petTypeTortoise => 'Kara kaplumbağası';
+
+  @override
+  String get petTypeTurtle => 'Su kaplumbağası';
+
+  @override
+  String get petTypeSnake => 'Yılan';
+
+  @override
+  String get petTypeLizard => 'Kertenkele';
+
+  @override
+  String get petTypeGecko => 'Geko';
+
+  @override
+  String get petTypeBeardedDragon => 'Sakallı ejder';
+
+  @override
+  String get petTypeFrog => 'Kurbağa';
+
+  @override
+  String get petTypeAxolotl => 'Aksolotl';
+
+  @override
+  String get petTypeFish => 'Balık';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Varıştan en az $duration önce kuduz aşısı';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Aşıdan sonra kuduz kan testi, ardından $duration bekleme';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Ardından uçmadan önce onaylı bir ülkede en az $duration';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Varışta en az $duration karantina';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Evcil hayvanınız en az $duration olmalı';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return '$country için çok küçük: evcil hayvanınız en az $duration olmalı';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Vaultara tarafından kontrol edildi · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Henüz kontrol edilmedi. Rezervasyondan önce resmi sitede doğrulayın.';
+
+  @override
+  String get petRulesOtherAnimal => 'Bu hayvanın kuralları köpek ve kedilerinkinden farklıdır. Neye ihtiyacı olduğunu resmi sitede görün.';
+
+  @override
+  String get countryTypeHint => 'Bir ülke yazmaya başlayın, örneğin Fransa';
+
+  @override
+  String get assistantStepPets => 'Evcil hayvanlarınız kontrol ediliyor';
+
+  @override
+  String get tourPetsAddBody => 'Buraya bir evcil hayvan daha ekleyin. Türünü yazmaya başlayın, örneğin Tavşan veya Papağan, ve bir öneri seçin.';
+
+  @override
+  String get rulesReviewTitle => 'İncelenecek kurallar';
+
+  @override
+  String get rulesReviewSubtitle => 'Resmi sayfalardan okunan, onayınızı bekleyen resmi kurallar';
+
+  @override
+  String get rulesReviewNow => 'Şu an gösterilen';
+
+  @override
+  String get rulesReviewNew => 'Şu an sayfada';
+
+  @override
+  String get rulesReviewPets => 'Evcil hayvanla seyahat';
+
+  @override
+  String get rulesReviewPassport => 'Pasaport geçerliliği';
+
+  @override
+  String get rulesReviewApprove => 'Onayla';
+
+  @override
+  String get rulesReviewReject => 'Reddet';
+
+  @override
+  String get rulesReviewEmpty => 'İncelenecek bir şey yok.';
+
+  @override
+  String get rulesReviewDropped => 'Çıkarıldı (eşleşen cümle yok)';
+
+  @override
   String get yoursTag => 'Sizin';
 
   @override

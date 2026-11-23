@@ -8347,6 +8347,339 @@ class AppLocalizationsMn extends AppLocalizations {
   String get subcategoryPetPassports => 'Тэжээвэр амьтны паспорт';
 
   @override
+  String get petsTitle => 'Тэжээвэр амьтад';
+
+  @override
+  String get petsTileSubtitle => 'Тэжээвэр амьтан бүрийн бичиг баримт, микрочип, малын эмч';
+
+  @override
+  String get petsNotMembers => 'Тэжээвэр амьтдыг таны гишүүдэд тооцохгүй.';
+
+  @override
+  String get petsAdd => 'Тэжээвэр амьтан нэмэх';
+
+  @override
+  String get petsEmptyBody => 'Тэжээвэр амьтнаа нэмбэл вакцин, зөвшөөрөл, даатгал, микрочип нь нэг дор байх ба ямар нэг зүйлийн хугацаа дуусахаас өмнө сануулна.';
+
+  @override
+  String get petsPremium => 'Тэжээвэр амьтны профайл Premium-д багтдаг.';
+
+  @override
+  String get petKindDog => 'Нохой';
+
+  @override
+  String get petKindCat => 'Муур';
+
+  @override
+  String get petKindOther => 'Өөр тэжээвэр амьтан';
+
+  @override
+  String get petBirthday => 'Төрсөн огноо';
+
+  @override
+  String petBorn(String date) {
+    return 'Төрсөн $date';
+  }
+
+  @override
+  String get petChipNumber => 'Микрочипийн дугаар';
+
+  @override
+  String get petChipInvalid => 'Чипийн гэрчилгээн дээрх 9-15 оронтой тоог ашиглана уу.';
+
+  @override
+  String get petChipRegistry => 'Чипийн бүртгэл';
+
+  @override
+  String get petChipTip => 'Нүүх эсвэл дугаараа солих үедээ бүртгэлээ шинэчилнэ үү, эс бөгөөс чип таны тэжээвэр амьтныг гэрт нь авчирч чадахгүй.';
+
+  @override
+  String get petVetName => 'Малын эмч';
+
+  @override
+  String get petVetPhone => 'Малын эмчийн утас';
+
+  @override
+  String get petDocuments => 'Бичиг баримт';
+
+  @override
+  String get petStillToAdd => 'Нэмэх шаардлагатай';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '$name-г хасах уу? Бичиг баримт нь Vaultara-д үлдэнэ.';
+  }
+
+  @override
+  String get petLostTitle => 'Алга болсон тэжээвэр амьтан';
+
+  @override
+  String get petLostSteps => 'Эхлээд чипийн бүртгэлд тэжээвэр амьтан тань алга болсныг мэдэгдээрэй. Дараа нь микрочипийн дугаартайгаа ойролцоох малын эмч, амьтны хамгаалах байр руу залгаж, саяхны зургаа орон нутагт болон онлайнаар хуваалцаарай.';
+
+  @override
+  String get petTravelTitle => 'Тэжээвэр амьтантай аялах';
+
+  @override
+  String get petTravelPick => 'Хаашаа явж байна вэ?';
+
+  @override
+  String get petTravelHome => 'Тэжээвэр амьтан тань амьдардаг газар';
+
+  @override
+  String get petRuleChip => 'Галзуугийн вакцинаас өмнө суулгасан ISO микрочип';
+
+  @override
+  String get petRuleRabiesTest => 'Галзуугийн вакцин болон зөвшөөрөгдсөн лабораторийн галзуугийн цусны шинжилгээ';
+
+  @override
+  String get petRuleCertificate => 'Албан ёсны малын эмчийн эрүүл мэндийн гэрчилгээ';
+
+  @override
+  String get petRulePermit => 'Аялахаас өмнө импортын зөвшөөрөл';
+
+  @override
+  String get petRuleTapeworm => 'Нохой: ирэхээс 1-5 хоногийн өмнө туузан хорхойн эмчилгээ';
+
+  @override
+  String get petRuleCdcForm => 'Нохой бүрт CDC Dog Import Form';
+
+  @override
+  String get petRuleSomeCountries => 'Зөвхөн зарим улсаас:';
+
+  @override
+  String get petRulesOfficial => 'Албан ёсны дүрэм';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara-д $country-ийн тэжээвэр амьтны дүрэм хараахан алга. Тухайн улсын албан ёсны мал эмнэлгийн алба эсвэл элчин сайдын яам юу хэрэгтэйг хэлж өгнө.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return '$country дахь микрочипийн хууль';
+  }
+
+  @override
+  String get petLawUk => 'Нохойд заавал, Англид мууранд ч мөн';
+
+  @override
+  String get petLawEu => 'Дүрэм улс бүрт өөр. ЕХ-ны шинэ хууль бүх нохой, мууранд үүнийг заавал болгоно.';
+
+  @override
+  String get petLawMostStates => 'Ихэнх муж, нутаг дэвсгэрт нохой, мууранд заавал';
+
+  @override
+  String get petLawDogs => 'Нохойд заавал';
+
+  @override
+  String get petLawSellers => 'Үржүүлэгч болон тэжээвэр амьтны дэлгүүрийн зардаг нохой, мууранд заавал';
+
+  @override
+  String get petLawLocal => 'Муж, аймаг, хот бүр өөрөө тогтооно';
+
+  @override
+  String get petLawNone => 'Үндэсний хуулиар заавал биш, гэхдээ аялал болон ихэнх үрчлэлтэд хэрэгтэй';
+
+  @override
+  String get tripPetsTitle => 'Энэ аяллын тэжээвэр амьтад';
+
+  @override
+  String get petCheckNoChip => 'Микрочип хадгалаагүй';
+
+  @override
+  String get petCheckNoRabies => 'Галзуугийн вакцин хадгалаагүй';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Галзуугийн вакцины хугацаа $date-нд дуусна, таныг буцахаас өмнө';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Цусны шинжилгээний дараах хүлээлт явахаас өмнө амжихгүй байж магадгүй. Одоо малын эмчтэйгээ ярилцаарай.';
+
+  @override
+  String get petCheckNoCertificate => 'Эрүүл мэндийн гэрчилгээ эсвэл тэжээвэр амьтны паспорт хадгалаагүй';
+
+  @override
+  String get planBenefitPets => 'Өөрийн бичиг баримт, микрочип, малын эмчтэй тэжээвэр амьтад, гишүүнд тооцогдохгүй';
+
+  @override
+  String get tutorialsSubPets => 'Тэжээвэр амьтны бичиг баримт, микрочип, аяллын дүрэм';
+
+  @override
+  String get tourPetsListBody => 'Тэжээвэр амьтан бүр өөрийн профайлтай, микрочип, малын эмч, бичиг баримт нь нэг дор. Тэжээвэр амьтдыг таны гишүүдэд тооцохгүй.';
+
+  @override
+  String get tourPetsDocsBody => 'Вакцин, зөвшөөрөл, даатгал нь тэжээвэр амьтных тул сануулга хэнийх болохыг хэлнэ. Тэмдгүүд юу хадгалагдсаныг харуулна.';
+
+  @override
+  String get tourPetsTravelBody => 'Тэжээвэр амьтанд тань тийшээ аялахад юу хэрэгтэй, хэр удах вэ гэдгийг харахын тулд улс сонгоорой.';
+
+  @override
+  String get petTypeLabel => 'Тэжээвэр амьтны төрөл';
+
+  @override
+  String get petTypeHint => 'Бичиж эхлээрэй, жишээ нь Туулай эсвэл Тоть';
+
+  @override
+  String get petTypeFerret => 'Хүрэн';
+
+  @override
+  String get petTypeRabbit => 'Туулай';
+
+  @override
+  String get petTypeGuineaPig => 'Далайн гахай';
+
+  @override
+  String get petTypeHamster => 'Шишүүхэй';
+
+  @override
+  String get petTypeRat => 'Харх';
+
+  @override
+  String get petTypeMouse => 'Хулгана';
+
+  @override
+  String get petTypeGerbil => 'Зурам хулгана';
+
+  @override
+  String get petTypeChinchilla => 'Шиншилла';
+
+  @override
+  String get petTypeHedgehog => 'Зараа';
+
+  @override
+  String get petTypeHorse => 'Морь';
+
+  @override
+  String get petTypePony => 'Одой морь';
+
+  @override
+  String get petTypeDonkey => 'Илжиг';
+
+  @override
+  String get petTypeParrot => 'Тоть';
+
+  @override
+  String get petTypeBudgie => 'Долгионт тоть';
+
+  @override
+  String get petTypeCockatiel => 'Корелла';
+
+  @override
+  String get petTypeCanary => 'Канарей';
+
+  @override
+  String get petTypeChicken => 'Тахиа';
+
+  @override
+  String get petTypeTortoise => 'Яст мэлхий';
+
+  @override
+  String get petTypeTurtle => 'Усны яст мэлхий';
+
+  @override
+  String get petTypeSnake => 'Могой';
+
+  @override
+  String get petTypeLizard => 'Гүрвэл';
+
+  @override
+  String get petTypeGecko => 'Гекон';
+
+  @override
+  String get petTypeBeardedDragon => 'Сахалтай агама';
+
+  @override
+  String get petTypeFrog => 'Мэлхий';
+
+  @override
+  String get petTypeAxolotl => 'Аксолотль';
+
+  @override
+  String get petTypeFish => 'Загас';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Ирэхээс дор хаяж $duration өмнө галзуугийн вакцин';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Вакцины дараа галзуугийн цусны шинжилгээ, дараа нь $duration хүлээх';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Дараа нь нисэхээс өмнө зөвшөөрөгдсөн оронд дор хаяж $duration';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Ирэхэд дор хаяж $duration хорио цээр';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Таны тэжээвэр амьтан дор хаяж $duration настай байх ёстой';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return '$country-д хэтэрхий залуу: таны тэжээвэр амьтан дор хаяж $duration настай байх ёстой';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Vaultara шалгасан · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Хараахан шалгаагүй. Захиалахаасаа өмнө албан ёсны сайтаас баталгаажуулна уу.';
+
+  @override
+  String get petRulesOtherAnimal => 'Энэ амьтны дүрэм нохой, муурынхаас өөр. Юу хэрэгтэйг албан ёсны сайтаас үзнэ үү.';
+
+  @override
+  String get countryTypeHint => 'Улсын нэр бичиж эхлээрэй, жишээ нь Франц';
+
+  @override
+  String get assistantStepPets => 'Таны тэжээвэр амьтдыг шалгаж байна';
+
+  @override
+  String get tourPetsAddBody => 'Энд өөр нэг тэжээвэр амьтан нэмээрэй. Төрлийг нь бичиж эхлээд, жишээ нь Туулай эсвэл Тоть, санал болголтоос сонгоно уу.';
+
+  @override
+  String get rulesReviewTitle => 'Хянах дүрэм';
+
+  @override
+  String get rulesReviewSubtitle => 'Засгийн газрын хуудаснаас уншсан, таны зөвшөөрлийг хүлээж буй албан ёсны дүрэм';
+
+  @override
+  String get rulesReviewNow => 'Одоо харуулж буй';
+
+  @override
+  String get rulesReviewNew => 'Одоо хуудсан дээр';
+
+  @override
+  String get rulesReviewPets => 'Тэжээвэр амьтантай аялах';
+
+  @override
+  String get rulesReviewPassport => 'Паспортын хүчинтэй хугацаа';
+
+  @override
+  String get rulesReviewApprove => 'Зөвшөөрөх';
+
+  @override
+  String get rulesReviewReject => 'Татгалзах';
+
+  @override
+  String get rulesReviewEmpty => 'Хянах зүйл алга.';
+
+  @override
+  String get rulesReviewDropped => 'Хассан (тохирох өгүүлбэр алга)';
+
+  @override
   String get yoursTag => 'Таных';
 
   @override

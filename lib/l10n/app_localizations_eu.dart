@@ -8361,6 +8361,339 @@ class AppLocalizationsEu extends AppLocalizations {
   String get subcategoryPetPassports => 'Maskoten pasaporteak';
 
   @override
+  String get petsTitle => 'Maskotak';
+
+  @override
+  String get petsTileSubtitle => 'Maskota bakoitzaren dokumentuak, mikrotxipa eta albaitaria';
+
+  @override
+  String get petsNotMembers => 'Maskotak ez dira kide gisa zenbatzen.';
+
+  @override
+  String get petsAdd => 'Gehitu maskota';
+
+  @override
+  String get petsEmptyBody => 'Gehitu zure maskota txertoak, lizentzia, asegurua eta mikrotxipa batera izateko, zerbait iraungi aurretik oroigarriekin.';
+
+  @override
+  String get petsPremium => 'Maskoten profilak Premiumen parte dira.';
+
+  @override
+  String get petKindDog => 'Txakurra';
+
+  @override
+  String get petKindCat => 'Katua';
+
+  @override
+  String get petKindOther => 'Beste maskota bat';
+
+  @override
+  String get petBirthday => 'Jaiotze-data';
+
+  @override
+  String petBorn(String date) {
+    return 'Jaioa: $date';
+  }
+
+  @override
+  String get petChipNumber => 'Mikrotxiparen zenbakia';
+
+  @override
+  String get petChipInvalid => 'Erabili txiparen ziurtagiriko 9 eta 15 digitu artean.';
+
+  @override
+  String get petChipRegistry => 'Txiparen erregistroa';
+
+  @override
+  String get petChipTip => 'Eguneratu erregistroa etxez aldatzean edo zenbakia aldatzean; bestela, txipak ezin du zure maskota etxera ekarri.';
+
+  @override
+  String get petVetName => 'Albaitaria';
+
+  @override
+  String get petVetPhone => 'Albaitariaren telefonoa';
+
+  @override
+  String get petDocuments => 'Dokumentuak';
+
+  @override
+  String get petStillToAdd => 'Gehitzeko falta dira';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '$name kendu? Dokumentuak Vaultaran geratzen dira.';
+  }
+
+  @override
+  String get petLostTitle => 'Galdutako maskota';
+
+  @override
+  String get petLostSteps => 'Lehenik, jakinarazi txiparen erregistroari maskota galdu dela. Gero, deitu inguruko albaitari eta animalien babeslekuei mikrotxiparen zenbakiarekin, eta partekatu argazki berri bat inguruan eta sarean.';
+
+  @override
+  String get petTravelTitle => 'Maskotarekin bidaiatzea';
+
+  @override
+  String get petTravelPick => 'Nora zoaz?';
+
+  @override
+  String get petTravelHome => 'Zure maskota non bizi den';
+
+  @override
+  String get petRuleChip => 'ISO mikrotxip bat, amorruaren txertoaren aurretik jarria';
+
+  @override
+  String get petRuleRabiesTest => 'Amorruaren txertoa eta amorruaren odol-analisia laborategi onartu batean';
+
+  @override
+  String get petRuleCertificate => 'Albaitari ofizial baten osasun-ziurtagiria';
+
+  @override
+  String get petRulePermit => 'Inportazio-baimena bidaiatu aurretik';
+
+  @override
+  String get petRuleTapeworm => 'Txakurrak: tenia-tratamendua iritsi baino 1 eta 5 egun lehenago';
+
+  @override
+  String get petRuleCdcForm => 'CDC Dog Import Form bat txakur bakoitzeko';
+
+  @override
+  String get petRuleSomeCountries => 'Herrialde batzuetatik bakarrik:';
+
+  @override
+  String get petRulesOfficial => 'Arau ofizialak';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultarak ez ditu oraindik $country herrialdeko maskota-arauak. Bertako albaitaritza-zerbitzu ofizialak edo enbaxadak esan diezazuke zer behar den.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Mikrotxiparen legea: $country';
+  }
+
+  @override
+  String get petLawUk => 'Derrigorrezkoa txakurrentzat, eta Ingalaterran katuentzat ere';
+
+  @override
+  String get petLawEu => 'Arauak herrialdearen arabera aldatzen dira. EBko lege berri batek derrigorrezko bihurtuko du txakur eta katu guztientzat.';
+
+  @override
+  String get petLawMostStates => 'Derrigorrezkoa txakur eta katuentzat estatu eta lurralde gehienetan';
+
+  @override
+  String get petLawDogs => 'Derrigorrezkoa txakurrentzat';
+
+  @override
+  String get petLawSellers => 'Derrigorrezkoa hazleek eta maskota-dendek saltzen dituzten txakur eta katuentzat';
+
+  @override
+  String get petLawLocal => 'Estatu, probintzia edo hiri bakoitzak erabakitzen du';
+
+  @override
+  String get petLawNone => 'Lege nazionalak ez du eskatzen, baina beharrezkoa da bidaiatzeko eta adopzio gehienetarako';
+
+  @override
+  String get tripPetsTitle => 'Bidaia honetako maskotak';
+
+  @override
+  String get petCheckNoChip => 'Ez dago mikrotxiprik gordeta';
+
+  @override
+  String get petCheckNoRabies => 'Ez dago amorruaren txertorik gordeta';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Amorruaren txertoa $date iraungitzen da, itzuli aurretik';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Odol-analisiaren ondoko itxaronaldia agian ez da sartuko irten aurretik. Hitz egin orain zure albaitariarekin.';
+
+  @override
+  String get petCheckNoCertificate => 'Ez dago osasun-ziurtagiririk edo maskota-pasaporterik gordeta';
+
+  @override
+  String get planBenefitPets => 'Beren dokumentu, mikrotxip eta albaitariarekin dauden maskotak, kide gisa zenbatu gabe';
+
+  @override
+  String get tutorialsSubPets => 'Maskoten dokumentuak, mikrotxipa eta bidaia-arauak';
+
+  @override
+  String get tourPetsListBody => 'Maskota bakoitzak bere profila du, mikrotxipa, albaitaria eta dokumentuak leku bakarrean. Maskotak ez dira kide gisa zenbatzen.';
+
+  @override
+  String get tourPetsDocsBody => 'Txertoak, lizentzia eta asegurua maskotarenak dira; beraz, oroigarriek esaten dute norenak diren. Ikurrek erakusten dute zer dagoen gordeta.';
+
+  @override
+  String get tourPetsTravelBody => 'Aukeratu herrialde bat zure maskotak hara bidaiatzeko zer behar duen eta zenbat denbora behar den ikusteko.';
+
+  @override
+  String get petTypeLabel => 'Maskota mota';
+
+  @override
+  String get petTypeHint => 'Hasi idazten, adibidez Untxia edo Loroa';
+
+  @override
+  String get petTypeFerret => 'Hudoa';
+
+  @override
+  String get petTypeRabbit => 'Untxia';
+
+  @override
+  String get petTypeGuineaPig => 'Indiar txerrikumea';
+
+  @override
+  String get petTypeHamster => 'Hamsterra';
+
+  @override
+  String get petTypeRat => 'Arratoia';
+
+  @override
+  String get petTypeMouse => 'Sagua';
+
+  @override
+  String get petTypeGerbil => 'Gerbila';
+
+  @override
+  String get petTypeChinchilla => 'Txintxila';
+
+  @override
+  String get petTypeHedgehog => 'Trikua';
+
+  @override
+  String get petTypeHorse => 'Zaldia';
+
+  @override
+  String get petTypePony => 'Poneya';
+
+  @override
+  String get petTypeDonkey => 'Astoa';
+
+  @override
+  String get petTypeParrot => 'Loroa';
+
+  @override
+  String get petTypeBudgie => 'Periko australiarra';
+
+  @override
+  String get petTypeCockatiel => 'Kakatua ninfa';
+
+  @override
+  String get petTypeCanary => 'Kanarioa';
+
+  @override
+  String get petTypeChicken => 'Oiloa';
+
+  @override
+  String get petTypeTortoise => 'Lehorreko dortoka';
+
+  @override
+  String get petTypeTurtle => 'Uretako dortoka';
+
+  @override
+  String get petTypeSnake => 'Sugea';
+
+  @override
+  String get petTypeLizard => 'Sugandila';
+
+  @override
+  String get petTypeGecko => 'Gekoa';
+
+  @override
+  String get petTypeBeardedDragon => 'Dragoi bizardun';
+
+  @override
+  String get petTypeFrog => 'Igela';
+
+  @override
+  String get petTypeAxolotl => 'Axolotla';
+
+  @override
+  String get petTypeFish => 'Arraina';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Amorruaren aurkako txertoa iritsi baino gutxienez $duration lehenago';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Amorruaren odol-analisia txertoaren ondoren, gero $duration itxaron';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Gero, gutxienez $duration herrialde onartu batean hegan egin aurretik';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Iristean gutxienez $duration berrogeialdian';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Zure maskotak gutxienez $duration izan behar ditu';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Gazteegia $country herrialderako: zure maskotak gutxienez $duration izan behar ditu';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Vaultarak egiaztatua · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Oraindik egiaztatu gabe. Erreserbatu aurretik, berretsi webgune ofizialean.';
+
+  @override
+  String get petRulesOtherAnimal => 'Animalia honen arauak txakur eta katuenen desberdinak dira. Begiratu webgune ofizialean zer behar duen.';
+
+  @override
+  String get countryTypeHint => 'Hasi herrialde bat idazten, adibidez Frantzia';
+
+  @override
+  String get assistantStepPets => 'Zure maskotak egiaztatzen';
+
+  @override
+  String get tourPetsAddBody => 'Gehitu beste maskota bat hemen. Hasi mota idazten, adibidez Untxia edo Loroa, eta aukeratu iradokizun bat.';
+
+  @override
+  String get rulesReviewTitle => 'Berrikusteko arauak';
+
+  @override
+  String get rulesReviewSubtitle => 'Gobernuaren orrietatik irakurritako arau ofizialak, zure onarpenaren zain';
+
+  @override
+  String get rulesReviewNow => 'Orain erakutsita';
+
+  @override
+  String get rulesReviewNew => 'Orain orrian';
+
+  @override
+  String get rulesReviewPets => 'Maskotarekin bidaiatzea';
+
+  @override
+  String get rulesReviewPassport => 'Pasaportearen baliozkotasuna';
+
+  @override
+  String get rulesReviewApprove => 'Onartu';
+
+  @override
+  String get rulesReviewReject => 'Baztertu';
+
+  @override
+  String get rulesReviewEmpty => 'Ez dago ezer berrikusteko.';
+
+  @override
+  String get rulesReviewDropped => 'Kanpoan utzia (ez dago esaldi bat datorrenik)';
+
+  @override
   String get yoursTag => 'Zurea';
 
   @override

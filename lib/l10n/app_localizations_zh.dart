@@ -8300,6 +8300,339 @@ class AppLocalizationsZh extends AppLocalizations {
   String get subcategoryPetPassports => '宠物护照';
 
   @override
+  String get petsTitle => '宠物';
+
+  @override
+  String get petsTileSubtitle => '每只宠物的证件、芯片和兽医';
+
+  @override
+  String get petsNotMembers => '宠物不计入你的成员人数。';
+
+  @override
+  String get petsAdd => '添加宠物';
+
+  @override
+  String get petsEmptyBody => '添加你的宠物，把疫苗、登记证、保险和芯片放在一起，到期前提醒你。';
+
+  @override
+  String get petsPremium => '宠物档案属于 Premium 功能。';
+
+  @override
+  String get petKindDog => '狗';
+
+  @override
+  String get petKindCat => '猫';
+
+  @override
+  String get petKindOther => '其他宠物';
+
+  @override
+  String get petBirthday => '出生日期';
+
+  @override
+  String petBorn(String date) {
+    return '出生于$date';
+  }
+
+  @override
+  String get petChipNumber => '芯片号码';
+
+  @override
+  String get petChipInvalid => '请输入芯片证书上的 9 到 15 位数字。';
+
+  @override
+  String get petChipRegistry => '芯片登记机构';
+
+  @override
+  String get petChipTip => '搬家或换号码时请更新登记信息，否则芯片无法帮你的宠物回家。';
+
+  @override
+  String get petVetName => '兽医';
+
+  @override
+  String get petVetPhone => '兽医电话';
+
+  @override
+  String get petDocuments => '证件';
+
+  @override
+  String get petStillToAdd => '尚待添加';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '删除$name？证件会保留在 Vaultara 中。';
+  }
+
+  @override
+  String get petLostTitle => '宠物走失';
+
+  @override
+  String get petLostSteps => '先向芯片登记机构报告宠物走失。然后带着芯片号码致电附近的兽医和动物收容所，并在本地和网上分享最近的照片。';
+
+  @override
+  String get petTravelTitle => '带宠物出行';
+
+  @override
+  String get petTravelPick => '你要去哪里？';
+
+  @override
+  String get petTravelHome => '宠物居住的国家';
+
+  @override
+  String get petRuleChip => '在狂犬病疫苗之前植入的 ISO 芯片';
+
+  @override
+  String get petRuleRabiesTest => '狂犬病疫苗，以及在认可实验室做的狂犬病血检';
+
+  @override
+  String get petRuleCertificate => '官方兽医出具的健康证明';
+
+  @override
+  String get petRulePermit => '出行前办理进口许可';
+
+  @override
+  String get petRuleTapeworm => '狗：抵达前 1 到 5 天驱绦虫';
+
+  @override
+  String get petRuleCdcForm => '每只狗一份 CDC Dog Import Form';
+
+  @override
+  String get petRuleSomeCountries => '仅限来自部分国家：';
+
+  @override
+  String get petRulesOfficial => '官方规则';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara 暂时还没有$country的宠物规则。该国的官方兽医机构或大使馆可以告诉你需要什么。';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return '$country的芯片法规';
+  }
+
+  @override
+  String get petLawUk => '狗必须植入，英格兰的猫也必须植入';
+
+  @override
+  String get petLawEu => '各国规则不同。新的欧盟法律将要求所有狗和猫都植入芯片。';
+
+  @override
+  String get petLawMostStates => '大多数州和领地要求狗和猫植入';
+
+  @override
+  String get petLawDogs => '狗必须植入';
+
+  @override
+  String get petLawSellers => '繁育者和宠物店出售的狗和猫必须植入';
+
+  @override
+  String get petLawLocal => '由各州、省或城市自行规定';
+
+  @override
+  String get petLawNone => '国家法律没有要求，但出行和大多数领养都需要';
+
+  @override
+  String get tripPetsTitle => '本次行程中的宠物';
+
+  @override
+  String get petCheckNoChip => '未保存芯片';
+
+  @override
+  String get petCheckNoRabies => '未保存狂犬病疫苗';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return '狂犬病疫苗将于$date到期，早于你回来';
+  }
+
+  @override
+  String get petCheckTooSoon => '血检后的等待期可能来不及在出发前结束。请立即咨询兽医。';
+
+  @override
+  String get petCheckNoCertificate => '未保存健康证明或宠物护照';
+
+  @override
+  String get planBenefitPets => '宠物有自己的证件、芯片和兽医，不计入成员人数';
+
+  @override
+  String get tutorialsSubPets => '宠物证件、芯片和出行规则';
+
+  @override
+  String get tourPetsListBody => '每只宠物都有自己的档案，芯片、兽医和证件都在一处。宠物不计入你的成员人数。';
+
+  @override
+  String get tourPetsDocsBody => '疫苗、登记证和保险都属于宠物，所以提醒会说明是谁的。徽章显示已保存的内容。';
+
+  @override
+  String get tourPetsTravelBody => '选择一个国家，看看宠物去那里需要什么、需要多长时间。';
+
+  @override
+  String get petTypeLabel => '宠物类型';
+
+  @override
+  String get petTypeHint => '开始输入，例如兔子或鹦鹉';
+
+  @override
+  String get petTypeFerret => '雪貂';
+
+  @override
+  String get petTypeRabbit => '兔子';
+
+  @override
+  String get petTypeGuineaPig => '豚鼠';
+
+  @override
+  String get petTypeHamster => '仓鼠';
+
+  @override
+  String get petTypeRat => '大鼠';
+
+  @override
+  String get petTypeMouse => '小鼠';
+
+  @override
+  String get petTypeGerbil => '沙鼠';
+
+  @override
+  String get petTypeChinchilla => '龙猫';
+
+  @override
+  String get petTypeHedgehog => '刺猬';
+
+  @override
+  String get petTypeHorse => '马';
+
+  @override
+  String get petTypePony => '小马';
+
+  @override
+  String get petTypeDonkey => '驴';
+
+  @override
+  String get petTypeParrot => '鹦鹉';
+
+  @override
+  String get petTypeBudgie => '虎皮鹦鹉';
+
+  @override
+  String get petTypeCockatiel => '玄凤鹦鹉';
+
+  @override
+  String get petTypeCanary => '金丝雀';
+
+  @override
+  String get petTypeChicken => '鸡';
+
+  @override
+  String get petTypeTortoise => '陆龟';
+
+  @override
+  String get petTypeTurtle => '水龟';
+
+  @override
+  String get petTypeSnake => '蛇';
+
+  @override
+  String get petTypeLizard => '蜥蜴';
+
+  @override
+  String get petTypeGecko => '壁虎';
+
+  @override
+  String get petTypeBeardedDragon => '鬃狮蜥';
+
+  @override
+  String get petTypeFrog => '青蛙';
+
+  @override
+  String get petTypeAxolotl => '六角恐龙';
+
+  @override
+  String get petTypeFish => '鱼';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return '抵达前至少$duration接种狂犬病疫苗';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return '接种疫苗后做狂犬病血液检测，然后等待$duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return '然后起飞前在认可国家至少待$duration';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return '抵达后隔离至少$duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return '你的宠物必须至少$duration大';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return '对$country来说太小：你的宠物必须至少$duration大';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return '已由 Vaultara 核实 · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => '尚未核实。预订前请在官方网站确认。';
+
+  @override
+  String get petRulesOtherAnimal => '这种动物的规定与猫狗不同。请到官方网站查看需要什么。';
+
+  @override
+  String get countryTypeHint => '开始输入国家，例如法国';
+
+  @override
+  String get assistantStepPets => '正在检查你的宠物';
+
+  @override
+  String get tourPetsAddBody => '在这里再添加一只宠物。输入它的类型，例如兔子或鹦鹉，然后选择一个建议。';
+
+  @override
+  String get rulesReviewTitle => '待审核的规定';
+
+  @override
+  String get rulesReviewSubtitle => '从政府网页读取的官方规定，等待你批准';
+
+  @override
+  String get rulesReviewNow => '当前显示';
+
+  @override
+  String get rulesReviewNew => '页面当前内容';
+
+  @override
+  String get rulesReviewPets => '携宠物出行';
+
+  @override
+  String get rulesReviewPassport => '护照有效期';
+
+  @override
+  String get rulesReviewApprove => '批准';
+
+  @override
+  String get rulesReviewReject => '拒绝';
+
+  @override
+  String get rulesReviewEmpty => '没有需要审核的内容。';
+
+  @override
+  String get rulesReviewDropped => '已略去（没有匹配的句子）';
+
+  @override
   String get yoursTag => '我的';
 
   @override
@@ -18213,6 +18546,339 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get subcategoryPetPassports => '宠物护照';
 
   @override
+  String get petsTitle => '宠物';
+
+  @override
+  String get petsTileSubtitle => '每只宠物的证件、芯片和兽医';
+
+  @override
+  String get petsNotMembers => '宠物不计入你的成员人数。';
+
+  @override
+  String get petsAdd => '添加宠物';
+
+  @override
+  String get petsEmptyBody => '添加你的宠物，把疫苗、登记证、保险和芯片放在一起，到期前提醒你。';
+
+  @override
+  String get petsPremium => '宠物档案属于 Premium 功能。';
+
+  @override
+  String get petKindDog => '狗';
+
+  @override
+  String get petKindCat => '猫';
+
+  @override
+  String get petKindOther => '其他宠物';
+
+  @override
+  String get petBirthday => '出生日期';
+
+  @override
+  String petBorn(String date) {
+    return '出生于$date';
+  }
+
+  @override
+  String get petChipNumber => '芯片号码';
+
+  @override
+  String get petChipInvalid => '请输入芯片证书上的 9 到 15 位数字。';
+
+  @override
+  String get petChipRegistry => '芯片登记机构';
+
+  @override
+  String get petChipTip => '搬家或换号码时请更新登记信息，否则芯片无法帮你的宠物回家。';
+
+  @override
+  String get petVetName => '兽医';
+
+  @override
+  String get petVetPhone => '兽医电话';
+
+  @override
+  String get petDocuments => '证件';
+
+  @override
+  String get petStillToAdd => '尚待添加';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '删除$name？证件会保留在 Vaultara 中。';
+  }
+
+  @override
+  String get petLostTitle => '宠物走失';
+
+  @override
+  String get petLostSteps => '先向芯片登记机构报告宠物走失。然后带着芯片号码致电附近的兽医和动物收容所，并在本地和网上分享最近的照片。';
+
+  @override
+  String get petTravelTitle => '带宠物出行';
+
+  @override
+  String get petTravelPick => '你要去哪里？';
+
+  @override
+  String get petTravelHome => '宠物居住的国家';
+
+  @override
+  String get petRuleChip => '在狂犬病疫苗之前植入的 ISO 芯片';
+
+  @override
+  String get petRuleRabiesTest => '狂犬病疫苗，以及在认可实验室做的狂犬病血检';
+
+  @override
+  String get petRuleCertificate => '官方兽医出具的健康证明';
+
+  @override
+  String get petRulePermit => '出行前办理进口许可';
+
+  @override
+  String get petRuleTapeworm => '狗：抵达前 1 到 5 天驱绦虫';
+
+  @override
+  String get petRuleCdcForm => '每只狗一份 CDC Dog Import Form';
+
+  @override
+  String get petRuleSomeCountries => '仅限来自部分国家：';
+
+  @override
+  String get petRulesOfficial => '官方规则';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara 暂时还没有$country的宠物规则。该国的官方兽医机构或大使馆可以告诉你需要什么。';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return '$country的芯片法规';
+  }
+
+  @override
+  String get petLawUk => '狗必须植入，英格兰的猫也必须植入';
+
+  @override
+  String get petLawEu => '各国规则不同。新的欧盟法律将要求所有狗和猫都植入芯片。';
+
+  @override
+  String get petLawMostStates => '大多数州和领地要求狗和猫植入';
+
+  @override
+  String get petLawDogs => '狗必须植入';
+
+  @override
+  String get petLawSellers => '繁育者和宠物店出售的狗和猫必须植入';
+
+  @override
+  String get petLawLocal => '由各州、省或城市自行规定';
+
+  @override
+  String get petLawNone => '国家法律没有要求，但出行和大多数领养都需要';
+
+  @override
+  String get tripPetsTitle => '本次行程中的宠物';
+
+  @override
+  String get petCheckNoChip => '未保存芯片';
+
+  @override
+  String get petCheckNoRabies => '未保存狂犬病疫苗';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return '狂犬病疫苗将于$date到期，早于你回来';
+  }
+
+  @override
+  String get petCheckTooSoon => '血检后的等待期可能来不及在出发前结束。请立即咨询兽医。';
+
+  @override
+  String get petCheckNoCertificate => '未保存健康证明或宠物护照';
+
+  @override
+  String get planBenefitPets => '宠物有自己的证件、芯片和兽医，不计入成员人数';
+
+  @override
+  String get tutorialsSubPets => '宠物证件、芯片和出行规则';
+
+  @override
+  String get tourPetsListBody => '每只宠物都有自己的档案，芯片、兽医和证件都在一处。宠物不计入你的成员人数。';
+
+  @override
+  String get tourPetsDocsBody => '疫苗、登记证和保险都属于宠物，所以提醒会说明是谁的。徽章显示已保存的内容。';
+
+  @override
+  String get tourPetsTravelBody => '选择一个国家，看看宠物去那里需要什么、需要多长时间。';
+
+  @override
+  String get petTypeLabel => '宠物类型';
+
+  @override
+  String get petTypeHint => '开始输入，例如兔子或鹦鹉';
+
+  @override
+  String get petTypeFerret => '雪貂';
+
+  @override
+  String get petTypeRabbit => '兔子';
+
+  @override
+  String get petTypeGuineaPig => '豚鼠';
+
+  @override
+  String get petTypeHamster => '仓鼠';
+
+  @override
+  String get petTypeRat => '大鼠';
+
+  @override
+  String get petTypeMouse => '小鼠';
+
+  @override
+  String get petTypeGerbil => '沙鼠';
+
+  @override
+  String get petTypeChinchilla => '龙猫';
+
+  @override
+  String get petTypeHedgehog => '刺猬';
+
+  @override
+  String get petTypeHorse => '马';
+
+  @override
+  String get petTypePony => '小马';
+
+  @override
+  String get petTypeDonkey => '驴';
+
+  @override
+  String get petTypeParrot => '鹦鹉';
+
+  @override
+  String get petTypeBudgie => '虎皮鹦鹉';
+
+  @override
+  String get petTypeCockatiel => '玄凤鹦鹉';
+
+  @override
+  String get petTypeCanary => '金丝雀';
+
+  @override
+  String get petTypeChicken => '鸡';
+
+  @override
+  String get petTypeTortoise => '陆龟';
+
+  @override
+  String get petTypeTurtle => '水龟';
+
+  @override
+  String get petTypeSnake => '蛇';
+
+  @override
+  String get petTypeLizard => '蜥蜴';
+
+  @override
+  String get petTypeGecko => '壁虎';
+
+  @override
+  String get petTypeBeardedDragon => '鬃狮蜥';
+
+  @override
+  String get petTypeFrog => '青蛙';
+
+  @override
+  String get petTypeAxolotl => '六角恐龙';
+
+  @override
+  String get petTypeFish => '鱼';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return '抵达前至少$duration接种狂犬病疫苗';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return '接种疫苗后做狂犬病血液检测，然后等待$duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return '然后起飞前在认可国家至少待$duration';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return '抵达后隔离至少$duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return '你的宠物必须至少$duration大';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return '对$country来说太小：你的宠物必须至少$duration大';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return '已由 Vaultara 核实 · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => '尚未核实。预订前请在官方网站确认。';
+
+  @override
+  String get petRulesOtherAnimal => '这种动物的规定与猫狗不同。请到官方网站查看需要什么。';
+
+  @override
+  String get countryTypeHint => '开始输入国家，例如法国';
+
+  @override
+  String get assistantStepPets => '正在检查你的宠物';
+
+  @override
+  String get tourPetsAddBody => '在这里再添加一只宠物。输入它的类型，例如兔子或鹦鹉，然后选择一个建议。';
+
+  @override
+  String get rulesReviewTitle => '待审核的规定';
+
+  @override
+  String get rulesReviewSubtitle => '从政府网页读取的官方规定，等待你批准';
+
+  @override
+  String get rulesReviewNow => '当前显示';
+
+  @override
+  String get rulesReviewNew => '页面当前内容';
+
+  @override
+  String get rulesReviewPets => '携宠物出行';
+
+  @override
+  String get rulesReviewPassport => '护照有效期';
+
+  @override
+  String get rulesReviewApprove => '批准';
+
+  @override
+  String get rulesReviewReject => '拒绝';
+
+  @override
+  String get rulesReviewEmpty => '没有需要审核的内容。';
+
+  @override
+  String get rulesReviewDropped => '已略去（没有匹配的句子）';
+
+  @override
   String get yoursTag => '我的';
 
   @override
@@ -28124,6 +28790,339 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get subcategoryPetPassports => '寵物護照';
+
+  @override
+  String get petsTitle => '寵物';
+
+  @override
+  String get petsTileSubtitle => '每隻寵物的證件、晶片和獸醫';
+
+  @override
+  String get petsNotMembers => '寵物不計入你的成員人數。';
+
+  @override
+  String get petsAdd => '新增寵物';
+
+  @override
+  String get petsEmptyBody => '新增你的寵物，把疫苗、登記證、保險和晶片放在一起，到期前提醒你。';
+
+  @override
+  String get petsPremium => '寵物檔案屬於 Premium 功能。';
+
+  @override
+  String get petKindDog => '狗';
+
+  @override
+  String get petKindCat => '貓';
+
+  @override
+  String get petKindOther => '其他寵物';
+
+  @override
+  String get petBirthday => '出生日期';
+
+  @override
+  String petBorn(String date) {
+    return '出生於$date';
+  }
+
+  @override
+  String get petChipNumber => '晶片號碼';
+
+  @override
+  String get petChipInvalid => '請輸入晶片證書上的 9 到 15 位數字。';
+
+  @override
+  String get petChipRegistry => '晶片登記機構';
+
+  @override
+  String get petChipTip => '搬家或換號碼時請更新登記資料，否則晶片無法幫你的寵物回家。';
+
+  @override
+  String get petVetName => '獸醫';
+
+  @override
+  String get petVetPhone => '獸醫電話';
+
+  @override
+  String get petDocuments => '證件';
+
+  @override
+  String get petStillToAdd => '尚待新增';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '刪除$name？證件會保留在 Vaultara 中。';
+  }
+
+  @override
+  String get petLostTitle => '寵物走失';
+
+  @override
+  String get petLostSteps => '先向晶片登記機構通報寵物走失。接著帶著晶片號碼打電話給附近的獸醫和動物收容所，並在附近和網路上分享最近的照片。';
+
+  @override
+  String get petTravelTitle => '帶寵物出遊';
+
+  @override
+  String get petTravelPick => '你要去哪裡？';
+
+  @override
+  String get petTravelHome => '寵物居住的國家';
+
+  @override
+  String get petRuleChip => '在狂犬病疫苗之前植入的 ISO 晶片';
+
+  @override
+  String get petRuleRabiesTest => '狂犬病疫苗，以及在認可實驗室做的狂犬病血檢';
+
+  @override
+  String get petRuleCertificate => '官方獸醫開立的健康證明書';
+
+  @override
+  String get petRulePermit => '出行前申請輸入許可';
+
+  @override
+  String get petRuleTapeworm => '狗：抵達前 1 到 5 天驅絛蟲';
+
+  @override
+  String get petRuleCdcForm => '每隻狗一份 CDC Dog Import Form';
+
+  @override
+  String get petRuleSomeCountries => '僅限來自部分國家：';
+
+  @override
+  String get petRulesOfficial => '官方規定';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara 目前還沒有$country的寵物規定。該國的官方獸醫機構或大使館可以告訴你需要什麼。';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return '$country的晶片法規';
+  }
+
+  @override
+  String get petLawUk => '狗必須植入，英格蘭的貓也必須植入';
+
+  @override
+  String get petLawEu => '各國規定不同。新的歐盟法律將要求所有狗和貓都植入晶片。';
+
+  @override
+  String get petLawMostStates => '大多數州和領地要求狗和貓植入';
+
+  @override
+  String get petLawDogs => '狗必須植入';
+
+  @override
+  String get petLawSellers => '繁殖業者和寵物店販售的狗和貓必須植入';
+
+  @override
+  String get petLawLocal => '由各州、省或城市自行規定';
+
+  @override
+  String get petLawNone => '國家法律沒有要求，但出行和大多數認養都需要';
+
+  @override
+  String get tripPetsTitle => '本次行程中的寵物';
+
+  @override
+  String get petCheckNoChip => '未儲存晶片';
+
+  @override
+  String get petCheckNoRabies => '未儲存狂犬病疫苗';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return '狂犬病疫苗將於$date到期，早於你回來';
+  }
+
+  @override
+  String get petCheckTooSoon => '血檢後的等待期可能來不及在出發前結束。請立即諮詢獸醫。';
+
+  @override
+  String get petCheckNoCertificate => '未儲存健康證明書或寵物護照';
+
+  @override
+  String get planBenefitPets => '寵物有自己的證件、晶片和獸醫，不計入成員人數';
+
+  @override
+  String get tutorialsSubPets => '寵物證件、晶片和出行規定';
+
+  @override
+  String get tourPetsListBody => '每隻寵物都有自己的檔案，晶片、獸醫和證件都在一處。寵物不計入你的成員人數。';
+
+  @override
+  String get tourPetsDocsBody => '疫苗、登記證和保險都屬於寵物，所以提醒會說明是誰的。徽章顯示已儲存的內容。';
+
+  @override
+  String get tourPetsTravelBody => '選擇一個國家，看看寵物去那裡需要什麼、需要多久。';
+
+  @override
+  String get petTypeLabel => '寵物類型';
+
+  @override
+  String get petTypeHint => '開始輸入，例如兔子或鸚鵡';
+
+  @override
+  String get petTypeFerret => '雪貂';
+
+  @override
+  String get petTypeRabbit => '兔子';
+
+  @override
+  String get petTypeGuineaPig => '天竺鼠';
+
+  @override
+  String get petTypeHamster => '倉鼠';
+
+  @override
+  String get petTypeRat => '大鼠';
+
+  @override
+  String get petTypeMouse => '小鼠';
+
+  @override
+  String get petTypeGerbil => '沙鼠';
+
+  @override
+  String get petTypeChinchilla => '絨鼠';
+
+  @override
+  String get petTypeHedgehog => '刺蝟';
+
+  @override
+  String get petTypeHorse => '馬';
+
+  @override
+  String get petTypePony => '小馬';
+
+  @override
+  String get petTypeDonkey => '驢';
+
+  @override
+  String get petTypeParrot => '鸚鵡';
+
+  @override
+  String get petTypeBudgie => '虎皮鸚鵡';
+
+  @override
+  String get petTypeCockatiel => '玄鳳鸚鵡';
+
+  @override
+  String get petTypeCanary => '金絲雀';
+
+  @override
+  String get petTypeChicken => '雞';
+
+  @override
+  String get petTypeTortoise => '陸龜';
+
+  @override
+  String get petTypeTurtle => '水龜';
+
+  @override
+  String get petTypeSnake => '蛇';
+
+  @override
+  String get petTypeLizard => '蜥蜴';
+
+  @override
+  String get petTypeGecko => '壁虎';
+
+  @override
+  String get petTypeBeardedDragon => '鬃獅蜥';
+
+  @override
+  String get petTypeFrog => '青蛙';
+
+  @override
+  String get petTypeAxolotl => '六角恐龍';
+
+  @override
+  String get petTypeFish => '魚';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return '抵達前至少$duration接種狂犬病疫苗';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return '接種疫苗後做狂犬病血液檢測，然後等待$duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return '然後起飛前在認可國家至少待$duration';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return '抵達後隔離至少$duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return '你的寵物必須至少$duration大';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return '對$country來說太小：你的寵物必須至少$duration大';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return '已由 Vaultara 核實 · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => '尚未核實。預訂前請在官方網站確認。';
+
+  @override
+  String get petRulesOtherAnimal => '這種動物的規定與貓狗不同。請到官方網站查看需要什麼。';
+
+  @override
+  String get countryTypeHint => '開始輸入國家，例如法國';
+
+  @override
+  String get assistantStepPets => '正在檢查你的寵物';
+
+  @override
+  String get tourPetsAddBody => '在這裡再新增一隻寵物。輸入牠的類型，例如兔子或鸚鵡，然後選擇一個建議。';
+
+  @override
+  String get rulesReviewTitle => '待審核的規定';
+
+  @override
+  String get rulesReviewSubtitle => '從政府網頁讀取的官方規定，等待你核准';
+
+  @override
+  String get rulesReviewNow => '目前顯示';
+
+  @override
+  String get rulesReviewNew => '網頁目前內容';
+
+  @override
+  String get rulesReviewPets => '攜寵物出行';
+
+  @override
+  String get rulesReviewPassport => '護照效期';
+
+  @override
+  String get rulesReviewApprove => '核准';
+
+  @override
+  String get rulesReviewReject => '拒絕';
+
+  @override
+  String get rulesReviewEmpty => '沒有需要審核的內容。';
+
+  @override
+  String get rulesReviewDropped => '已略去（沒有相符的句子）';
 
   @override
   String get yoursTag => '我的';

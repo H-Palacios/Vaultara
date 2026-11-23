@@ -8357,6 +8357,339 @@ class AppLocalizationsBg extends AppLocalizations {
   String get subcategoryPetPassports => 'Паспорти за домашни любимци';
 
   @override
+  String get petsTitle => 'Домашни любимци';
+
+  @override
+  String get petsTileSubtitle => 'Документи, микрочип и ветеринар за всеки любимец';
+
+  @override
+  String get petsNotMembers => 'Домашните любимци не се броят към членовете ви.';
+
+  @override
+  String get petsAdd => 'Добави любимец';
+
+  @override
+  String get petsEmptyBody => 'Добавете любимеца си, за да пазите ваксините, разрешителното, застраховката и микрочипа му на едно място, с напомняния преди нещо да изтече.';
+
+  @override
+  String get petsPremium => 'Профилите на любимци са част от Premium.';
+
+  @override
+  String get petKindDog => 'Куче';
+
+  @override
+  String get petKindCat => 'Котка';
+
+  @override
+  String get petKindOther => 'Друг любимец';
+
+  @override
+  String get petBirthday => 'Дата на раждане';
+
+  @override
+  String petBorn(String date) {
+    return 'Роден на $date';
+  }
+
+  @override
+  String get petChipNumber => 'Номер на микрочипа';
+
+  @override
+  String get petChipInvalid => 'Използвайте 9 до 15-те цифри от сертификата на чипа.';
+
+  @override
+  String get petChipRegistry => 'Регистър на чипа';
+
+  @override
+  String get petChipTip => 'Обновявайте регистъра, когато се местите или сменяте номера си, иначе чипът не може да върне любимеца ви у дома.';
+
+  @override
+  String get petVetName => 'Ветеринар';
+
+  @override
+  String get petVetPhone => 'Телефон на ветеринаря';
+
+  @override
+  String get petDocuments => 'Документи';
+
+  @override
+  String get petStillToAdd => 'Още за добавяне';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'Да се премахне ли $name? Документите остават във Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'Изгубен любимец';
+
+  @override
+  String get petLostSteps => 'Първо съобщете в регистъра на чипа, че любимецът ви е изчезнал. След това се обадете на близките ветеринари и приюти с номера на микрочипа и споделете скорошна снимка в района и онлайн.';
+
+  @override
+  String get petTravelTitle => 'Пътуване с любимец';
+
+  @override
+  String get petTravelPick => 'Къде отивате?';
+
+  @override
+  String get petTravelHome => 'Къде живее любимецът ви';
+
+  @override
+  String get petRuleChip => 'ISO микрочип, поставен преди ваксината срещу бяс';
+
+  @override
+  String get petRuleRabiesTest => 'Ваксина срещу бяс и кръвен тест за бяс в одобрена лаборатория';
+
+  @override
+  String get petRuleCertificate => 'Здравен сертификат от официален ветеринар';
+
+  @override
+  String get petRulePermit => 'Разрешение за внос преди пътуването';
+
+  @override
+  String get petRuleTapeworm => 'Кучета: обезпаразитяване срещу тения 1 до 5 дни преди пристигането';
+
+  @override
+  String get petRuleCdcForm => 'CDC Dog Import Form за всяко куче';
+
+  @override
+  String get petRuleSomeCountries => 'Само от някои държави:';
+
+  @override
+  String get petRulesOfficial => 'Официални правила';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara все още няма правилата за любимци за $country. Официалната ветеринарна служба или посолството могат да ви кажат какво е нужно.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Закон за микрочиповете в $country';
+  }
+
+  @override
+  String get petLawUk => 'Задължителен за кучета, а в Англия и за котки';
+
+  @override
+  String get petLawEu => 'Правилата се различават по държави. Нов закон на ЕС ще го направи задължителен за всички кучета и котки.';
+
+  @override
+  String get petLawMostStates => 'Задължителен за кучета и котки в повечето щати и територии';
+
+  @override
+  String get petLawDogs => 'Задължителен за кучета';
+
+  @override
+  String get petLawSellers => 'Задължителен за кучета и котки, продавани от развъдчици и зоомагазини';
+
+  @override
+  String get petLawLocal => 'Определя се от всеки щат, провинция или град';
+
+  @override
+  String get petLawNone => 'Не се изисква от националния закон, но е нужен за пътуване и за повечето осиновявания';
+
+  @override
+  String get tripPetsTitle => 'Любимци на това пътуване';
+
+  @override
+  String get petCheckNoChip => 'Няма запазен микрочип';
+
+  @override
+  String get petCheckNoRabies => 'Няма запазена ваксина срещу бяс';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Ваксината срещу бяс изтича на $date, преди да се върнете';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Чакането след кръвния тест може да не стигне преди заминаването. Говорете с ветеринаря си сега.';
+
+  @override
+  String get petCheckNoCertificate => 'Няма запазен здравен сертификат или паспорт на любимеца';
+
+  @override
+  String get planBenefitPets => 'Любимци със собствени документи, микрочип и ветеринар, без да се броят за членове';
+
+  @override
+  String get tutorialsSubPets => 'Документи на любимци, микрочип и правила за пътуване';
+
+  @override
+  String get tourPetsListBody => 'Всеки любимец има собствен профил с микрочипа, ветеринаря и документите на едно място. Домашните любимци не се броят към членовете ви.';
+
+  @override
+  String get tourPetsDocsBody => 'Ваксините, разрешителното и застраховката принадлежат на любимеца, така че напомнянията казват чии са. Значките показват какво е запазено.';
+
+  @override
+  String get tourPetsTravelBody => 'Изберете държава, за да видите от какво има нужда любимецът ви, за да пътува там, и колко време отнема.';
+
+  @override
+  String get petTypeLabel => 'Вид домашен любимец';
+
+  @override
+  String get petTypeHint => 'Започнете да пишете, например Заек или Папагал';
+
+  @override
+  String get petTypeFerret => 'Пор';
+
+  @override
+  String get petTypeRabbit => 'Заек';
+
+  @override
+  String get petTypeGuineaPig => 'Морско свинче';
+
+  @override
+  String get petTypeHamster => 'Хамстер';
+
+  @override
+  String get petTypeRat => 'Плъх';
+
+  @override
+  String get petTypeMouse => 'Мишка';
+
+  @override
+  String get petTypeGerbil => 'Джербил';
+
+  @override
+  String get petTypeChinchilla => 'Чинчила';
+
+  @override
+  String get petTypeHedgehog => 'Таралеж';
+
+  @override
+  String get petTypeHorse => 'Кон';
+
+  @override
+  String get petTypePony => 'Пони';
+
+  @override
+  String get petTypeDonkey => 'Магаре';
+
+  @override
+  String get petTypeParrot => 'Папагал';
+
+  @override
+  String get petTypeBudgie => 'Вълнист папагал';
+
+  @override
+  String get petTypeCockatiel => 'Корела';
+
+  @override
+  String get petTypeCanary => 'Канарче';
+
+  @override
+  String get petTypeChicken => 'Кокошка';
+
+  @override
+  String get petTypeTortoise => 'Сухоземна костенурка';
+
+  @override
+  String get petTypeTurtle => 'Водна костенурка';
+
+  @override
+  String get petTypeSnake => 'Змия';
+
+  @override
+  String get petTypeLizard => 'Гущер';
+
+  @override
+  String get petTypeGecko => 'Гекон';
+
+  @override
+  String get petTypeBeardedDragon => 'Брадат дракон';
+
+  @override
+  String get petTypeFrog => 'Жаба';
+
+  @override
+  String get petTypeAxolotl => 'Аксолотъл';
+
+  @override
+  String get petTypeFish => 'Риба';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Ваксина срещу бяс поне $duration преди пристигане';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Кръвен тест за бяс след ваксината, след това изчакване $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'След това поне $duration в одобрена държава преди полета';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Карантина при пристигане за поне $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Любимецът ви трябва да е на поне $duration';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Твърде малък за $country: любимецът ви трябва да е на поне $duration';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Проверено от Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Още не е проверено. Потвърдете на официалния сайт, преди да резервирате.';
+
+  @override
+  String get petRulesOtherAnimal => 'Правилата за това животно са различни от тези за кучета и котки. Вижте на официалния сайт какво е нужно.';
+
+  @override
+  String get countryTypeHint => 'Започнете да пишете държава, например Франция';
+
+  @override
+  String get assistantStepPets => 'Проверка на любимците ви';
+
+  @override
+  String get tourPetsAddBody => 'Добавете още един любимец тук. Започнете да пишете вида му, например Заек или Папагал, и изберете предложение.';
+
+  @override
+  String get rulesReviewTitle => 'Правила за преглед';
+
+  @override
+  String get rulesReviewSubtitle => 'Официални правила от държавни страници, които чакат вашето одобрение';
+
+  @override
+  String get rulesReviewNow => 'Показва се сега';
+
+  @override
+  String get rulesReviewNew => 'На страницата сега';
+
+  @override
+  String get rulesReviewPets => 'Пътуване с любимец';
+
+  @override
+  String get rulesReviewPassport => 'Валидност на паспорта';
+
+  @override
+  String get rulesReviewApprove => 'Одобри';
+
+  @override
+  String get rulesReviewReject => 'Отхвърли';
+
+  @override
+  String get rulesReviewEmpty => 'Няма нищо за преглед.';
+
+  @override
+  String get rulesReviewDropped => 'Пропуснато (няма съвпадащо изречение)';
+
+  @override
   String get yoursTag => 'Ваше';
 
   @override

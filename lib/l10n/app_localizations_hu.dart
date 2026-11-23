@@ -8357,6 +8357,339 @@ class AppLocalizationsHu extends AppLocalizations {
   String get subcategoryPetPassports => 'Kisállatútlevelek';
 
   @override
+  String get petsTitle => 'Kisállatok';
+
+  @override
+  String get petsTileSubtitle => 'Dokumentumok, mikrochip és állatorvos minden kisállathoz';
+
+  @override
+  String get petsNotMembers => 'A kisállatok nem számítanak a tagjaid közé.';
+
+  @override
+  String get petsAdd => 'Kisállat hozzáadása';
+
+  @override
+  String get petsEmptyBody => 'Add hozzá a kisállatodat, hogy az oltásai, engedélye, biztosítása és mikrochipje együtt legyen, emlékeztetőkkel, mielőtt bármi lejár.';
+
+  @override
+  String get petsPremium => 'A kisállatprofilok a Premium részei.';
+
+  @override
+  String get petKindDog => 'Kutya';
+
+  @override
+  String get petKindCat => 'Macska';
+
+  @override
+  String get petKindOther => 'Egyéb kisállat';
+
+  @override
+  String get petBirthday => 'Születési dátum';
+
+  @override
+  String petBorn(String date) {
+    return 'Született: $date';
+  }
+
+  @override
+  String get petChipNumber => 'Mikrochip száma';
+
+  @override
+  String get petChipInvalid => 'Használd a chip igazolásán lévő 9–15 számjegyet.';
+
+  @override
+  String get petChipRegistry => 'Chip-nyilvántartás';
+
+  @override
+  String get petChipTip => 'Költözéskor vagy számcserekor frissítsd a nyilvántartást, különben a chip nem tudja hazajuttatni a kisállatodat.';
+
+  @override
+  String get petVetName => 'Állatorvos';
+
+  @override
+  String get petVetPhone => 'Állatorvos telefonszáma';
+
+  @override
+  String get petDocuments => 'Dokumentumok';
+
+  @override
+  String get petStillToAdd => 'Még hozzáadandó';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'Eltávolítod: $name? A dokumentumok a Vaultarában maradnak.';
+  }
+
+  @override
+  String get petLostTitle => 'Elveszett kisállat';
+
+  @override
+  String get petLostSteps => 'Először jelentsd az eltűnést a chip-nyilvántartásnak. Utána hívd fel a közeli állatorvosokat és menhelyeket a mikrochip számával, és ossz meg egy friss fotót a környéken és online.';
+
+  @override
+  String get petTravelTitle => 'Utazás kisállattal';
+
+  @override
+  String get petTravelPick => 'Hová utazol?';
+
+  @override
+  String get petTravelHome => 'Ahol a kisállatod él';
+
+  @override
+  String get petRuleChip => 'ISO mikrochip, a veszettség elleni oltás előtt beültetve';
+
+  @override
+  String get petRuleRabiesTest => 'Veszettség elleni oltás és veszettség-vérvizsgálat jóváhagyott laborban';
+
+  @override
+  String get petRuleCertificate => 'Egészségügyi bizonyítvány hatósági állatorvostól';
+
+  @override
+  String get petRulePermit => 'Behozatali engedély az utazás előtt';
+
+  @override
+  String get petRuleTapeworm => 'Kutyák: galandféreg elleni kezelés 1–5 nappal érkezés előtt';
+
+  @override
+  String get petRuleCdcForm => 'CDC Dog Import Form minden kutyához';
+
+  @override
+  String get petRuleSomeCountries => 'Csak néhány országból:';
+
+  @override
+  String get petRulesOfficial => 'Hivatalos szabályok';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'A Vaultarában még nincsenek meg $country kisállat-szabályai. A hivatalos állategészségügyi szolgálat vagy a nagykövetség megmondja, mi kell.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Mikrochip-törvény: $country';
+  }
+
+  @override
+  String get petLawUk => 'Kötelező kutyáknak, Angliában macskáknak is';
+
+  @override
+  String get petLawEu => 'A szabályok országonként eltérnek. Egy új uniós törvény minden kutya és macska számára kötelezővé teszi.';
+
+  @override
+  String get petLawMostStates => 'Kötelező kutyáknak és macskáknak a legtöbb államban és területen';
+
+  @override
+  String get petLawDogs => 'Kötelező kutyáknak';
+
+  @override
+  String get petLawSellers => 'Kötelező a tenyésztők és állatkereskedések által eladott kutyáknak és macskáknak';
+
+  @override
+  String get petLawLocal => 'Minden állam, tartomány vagy város maga dönt';
+
+  @override
+  String get petLawNone => 'Az országos törvény nem írja elő, de utazáshoz és a legtöbb örökbefogadáshoz kell';
+
+  @override
+  String get tripPetsTitle => 'Kisállatok ezen az úton';
+
+  @override
+  String get petCheckNoChip => 'Nincs mentett mikrochip';
+
+  @override
+  String get petCheckNoRabies => 'Nincs mentett veszettség elleni oltás';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'A veszettség elleni oltás lejár: $date, mielőtt hazaérnél';
+  }
+
+  @override
+  String get petCheckTooSoon => 'A vérvizsgálat utáni várakozás talán nem fér bele az indulásig. Beszélj most az állatorvosoddal.';
+
+  @override
+  String get petCheckNoCertificate => 'Nincs mentett egészségügyi bizonyítvány vagy kisállatútlevél';
+
+  @override
+  String get planBenefitPets => 'Kisállatok saját dokumentumokkal, mikrochippel és állatorvossal, tagként nem számítanak';
+
+  @override
+  String get tutorialsSubPets => 'Kisállat-dokumentumok, mikrochip és utazási szabályok';
+
+  @override
+  String get tourPetsListBody => 'Minden kisállatnak saját profilja van, a mikrochip, az állatorvos és a dokumentumok egy helyen. A kisállatok nem számítanak a tagjaid közé.';
+
+  @override
+  String get tourPetsDocsBody => 'Az oltások, az engedély és a biztosítás a kisállathoz tartoznak, így az emlékeztetők megmondják, kié. A jelvények mutatják, mi van mentve.';
+
+  @override
+  String get tourPetsTravelBody => 'Válassz országot, hogy lásd, mi kell a kisállatodnak az odautazáshoz, és mennyi ideig tart.';
+
+  @override
+  String get petTypeLabel => 'Kisállat fajtája';
+
+  @override
+  String get petTypeHint => 'Kezdjen el gépelni, például Nyúl vagy Papagáj';
+
+  @override
+  String get petTypeFerret => 'Görény';
+
+  @override
+  String get petTypeRabbit => 'Nyúl';
+
+  @override
+  String get petTypeGuineaPig => 'Tengerimalac';
+
+  @override
+  String get petTypeHamster => 'Hörcsög';
+
+  @override
+  String get petTypeRat => 'Patkány';
+
+  @override
+  String get petTypeMouse => 'Egér';
+
+  @override
+  String get petTypeGerbil => 'Futóegér';
+
+  @override
+  String get petTypeChinchilla => 'Csincsilla';
+
+  @override
+  String get petTypeHedgehog => 'Sün';
+
+  @override
+  String get petTypeHorse => 'Ló';
+
+  @override
+  String get petTypePony => 'Póni';
+
+  @override
+  String get petTypeDonkey => 'Szamár';
+
+  @override
+  String get petTypeParrot => 'Papagáj';
+
+  @override
+  String get petTypeBudgie => 'Hullámos papagáj';
+
+  @override
+  String get petTypeCockatiel => 'Nimfapapagáj';
+
+  @override
+  String get petTypeCanary => 'Kanári';
+
+  @override
+  String get petTypeChicken => 'Tyúk';
+
+  @override
+  String get petTypeTortoise => 'Szárazföldi teknős';
+
+  @override
+  String get petTypeTurtle => 'Vízi teknős';
+
+  @override
+  String get petTypeSnake => 'Kígyó';
+
+  @override
+  String get petTypeLizard => 'Gyík';
+
+  @override
+  String get petTypeGecko => 'Gekkó';
+
+  @override
+  String get petTypeBeardedDragon => 'Szakállas agáma';
+
+  @override
+  String get petTypeFrog => 'Béka';
+
+  @override
+  String get petTypeAxolotl => 'Axolotl';
+
+  @override
+  String get petTypeFish => 'Hal';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Veszettség elleni oltás legalább $duration az érkezés előtt';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Veszettség-vérvizsgálat az oltás után, majd $duration várakozás';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Ezután legalább $duration egy elfogadott országban a repülés előtt';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Karantén érkezéskor legalább $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'A kisállatnak legalább $duration idősnek kell lennie';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Túl fiatal ide: $country. A kisállatnak legalább $duration idősnek kell lennie';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'A Vaultara ellenőrizte · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Még nincs ellenőrizve. Foglalás előtt erősítse meg a hivatalos oldalon.';
+
+  @override
+  String get petRulesOtherAnimal => 'Erre az állatra más szabályok vonatkoznak, mint a kutyákra és macskákra. Nézze meg a hivatalos oldalon, mi kell neki.';
+
+  @override
+  String get countryTypeHint => 'Kezdjen el gépelni egy országot, például Franciaország';
+
+  @override
+  String get assistantStepPets => 'Kisállatai ellenőrzése';
+
+  @override
+  String get tourPetsAddBody => 'Itt adhat hozzá újabb kisállatot. Kezdje el gépelni a fajtáját, például Nyúl vagy Papagáj, és válasszon egy javaslatot.';
+
+  @override
+  String get rulesReviewTitle => 'Ellenőrzendő szabályok';
+
+  @override
+  String get rulesReviewSubtitle => 'Kormányzati oldalakról olvasott hivatalos szabályok, amelyek az Ön jóváhagyására várnak';
+
+  @override
+  String get rulesReviewNow => 'Most látható';
+
+  @override
+  String get rulesReviewNew => 'Most az oldalon';
+
+  @override
+  String get rulesReviewPets => 'Utazás kisállattal';
+
+  @override
+  String get rulesReviewPassport => 'Útlevél érvényessége';
+
+  @override
+  String get rulesReviewApprove => 'Jóváhagyás';
+
+  @override
+  String get rulesReviewReject => 'Elutasítás';
+
+  @override
+  String get rulesReviewEmpty => 'Nincs mit ellenőrizni.';
+
+  @override
+  String get rulesReviewDropped => 'Kihagyva (nincs egyező mondat)';
+
+  @override
   String get yoursTag => 'Saját';
 
   @override

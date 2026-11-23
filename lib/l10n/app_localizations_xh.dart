@@ -8357,6 +8357,339 @@ class AppLocalizationsXh extends AppLocalizations {
   String get subcategoryPetPassports => 'Iipaspoti zezilwanyana zasekhaya';
 
   @override
+  String get petsTitle => 'Izilwanyana zasekhaya';
+
+  @override
+  String get petsTileSubtitle => 'Amaxwebhu, i-microchip kunye nogqirha wezilwanyana wesilwanyana ngasinye';
+
+  @override
+  String get petsNotMembers => 'Izilwanyana zasekhaya azibalwa kumalungu akho.';
+
+  @override
+  String get petsAdd => 'Yongeza isilwanyana';
+
+  @override
+  String get petsEmptyBody => 'Yongeza isilwanyana sakho ukuze izitofu, ilayisensi, i-inshurensi kunye ne-microchip yaso zibe kunye, nezikhumbuzi phambi kokuba nantoni na iphelelwe.';
+
+  @override
+  String get petsPremium => 'Iiprofayile zezilwanyana ziyinxalenye ye-Premium.';
+
+  @override
+  String get petKindDog => 'Inja';
+
+  @override
+  String get petKindCat => 'Ikati';
+
+  @override
+  String get petKindOther => 'Esinye isilwanyana';
+
+  @override
+  String get petBirthday => 'Umhla wokuzalwa';
+
+  @override
+  String petBorn(String date) {
+    return 'Uzalwe $date';
+  }
+
+  @override
+  String get petChipNumber => 'Inombolo ye-microchip';
+
+  @override
+  String get petChipInvalid => 'Sebenzisa amanani ali-9 ukuya kweli-15 kwisatifikethi se-chip.';
+
+  @override
+  String get petChipRegistry => 'Irejista ye-chip';
+
+  @override
+  String get petChipTip => 'Hlaziya irejista xa ufuduka okanye utshintsha inombolo, kungenjalo i-chip ayinakusibuyisela ekhaya isilwanyana sakho.';
+
+  @override
+  String get petVetName => 'Ugqirha wezilwanyana';
+
+  @override
+  String get petVetPhone => 'Ifowuni kagqirha wezilwanyana';
+
+  @override
+  String get petDocuments => 'Amaxwebhu';
+
+  @override
+  String get petStillToAdd => 'Kusafuneka zongezwe';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'Susa u-$name? Amaxwebhu akhe ahlala kwi-Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'Isilwanyana esilahlekileyo';
+
+  @override
+  String get petLostSteps => 'Kuqala xela kwirejista ye-chip ukuba isilwanyana sakho silahlekile. Emva koko tsalela oogqirha bezilwanyana namakhaya ezilwanyana akufutshane nenombolo ye-microchip, wabelane ngefoto entsha kummandla nakwi-intanethi.';
+
+  @override
+  String get petTravelTitle => 'Ukuhamba nesilwanyana';
+
+  @override
+  String get petTravelPick => 'Uya phi?';
+
+  @override
+  String get petTravelHome => 'Apho isilwanyana sakho sihlala khona';
+
+  @override
+  String get petRuleChip => 'I-microchip ye-ISO, efakwe phambi kwesitofu se-rabies';
+
+  @override
+  String get petRuleRabiesTest => 'Isitofu se-rabies kunye novavanyo lwegazi lwe-rabies kwilabhoratri ephunyeziweyo';
+
+  @override
+  String get petRuleCertificate => 'Isatifikethi sempilo esivela kugqirha wezilwanyana osemthethweni';
+
+  @override
+  String get petRulePermit => 'Imvume yokungenisa phambi kokuhamba';
+
+  @override
+  String get petRuleTapeworm => 'Izinja: unyango lwempethu yesisu iintsuku ezi-1 ukuya kwezi-5 phambi kokuba ufike';
+
+  @override
+  String get petRuleCdcForm => 'I-CDC Dog Import Form yenja nganye';
+
+  @override
+  String get petRuleSomeCountries => 'Kuphela kumazwe athile:';
+
+  @override
+  String get petRulesOfficial => 'Imithetho esemthethweni';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'I-Vaultara ayikabi nayo imithetho yezilwanyana ye-$country. Inkonzo yayo yezilwanyana esemthethweni okanye i-ambassy ingakuxelela okufunekayo.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Umthetho we-microchip e-$country';
+  }
+
+  @override
+  String get petLawUk => 'Unyanzelekile kwizinja, nakwiikati eNgilani';
+
+  @override
+  String get petLawEu => 'Imithetho iyahluka ngokwelizwe. Umthetho omtsha we-EU uza kuwenza unyanzeleke kuzo zonke izinja neekati.';
+
+  @override
+  String get petLawMostStates => 'Unyanzelekile kwizinja neekati kumazwe namaphondo amaninzi';
+
+  @override
+  String get petLawDogs => 'Unyanzelekile kwizinja';
+
+  @override
+  String get petLawSellers => 'Unyanzelekile kwizinja neekati ezithengiswa ngabafuyi neevenkile zezilwanyana';
+
+  @override
+  String get petLawLocal => 'Umisela ilizwe ngalinye, iphondo okanye isixeko';
+
+  @override
+  String get petLawNone => 'Awunyanzelwa ngumthetho welizwe, kodwa uyafuneka ukuhamba nakuninzi lokwamkelwa kwezilwanyana';
+
+  @override
+  String get tripPetsTitle => 'Izilwanyana kolu hambo';
+
+  @override
+  String get petCheckNoChip => 'Akukho microchip igciniweyo';
+
+  @override
+  String get petCheckNoRabies => 'Akukho sitofu se-rabies sigciniweyo';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Isitofu se-rabies siphelelwa ngo-$date, phambi kokuba ubuye';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Ukulinda emva kovavanyo lwegazi kusenokungagqitywa phambi kokuba uhambe. Thetha nogqirha wezilwanyana ngoku.';
+
+  @override
+  String get petCheckNoCertificate => 'Akukho satifikethi sempilo okanye ipaspoti yesilwanyana egciniweyo';
+
+  @override
+  String get planBenefitPets => 'Izilwanyana ezinamaxwebhu azo, i-microchip nogqirha wazo, ezingabalwa njengamalungu';
+
+  @override
+  String get tutorialsSubPets => 'Amaxwebhu ezilwanyana, i-microchip nemithetho yokuhamba';
+
+  @override
+  String get tourPetsListBody => 'Isilwanyana ngasinye sineprofayile yaso, ene-microchip, ugqirha wezilwanyana kunye namaxwebhu kwindawo enye. Izilwanyana zasekhaya azibalwa kumalungu akho.';
+
+  @override
+  String get tourPetsDocsBody => 'Izitofu, ilayisensi kunye ne-inshurensi zezesilwanyana, ngoko izikhumbuzi zixela ukuba zezikabani. Iibheji zibonisa okugciniweyo.';
+
+  @override
+  String get tourPetsTravelBody => 'Khetha ilizwe ukuze ubone ukuba isilwanyana sakho sifuna ntoni ukuya apho, kwaye kuthatha ixesha elingakanani.';
+
+  @override
+  String get petTypeLabel => 'Uhlobo lwesilwanyana sasekhaya';
+
+  @override
+  String get petTypeHint => 'Qala ukuchwetheza, umzekelo Umvundla okanye Isikhwenene';
+
+  @override
+  String get petTypeFerret => 'Iferethi';
+
+  @override
+  String get petTypeRabbit => 'Umvundla';
+
+  @override
+  String get petTypeGuineaPig => 'Ihagu yaseGuinea';
+
+  @override
+  String get petTypeHamster => 'Ihamsta';
+
+  @override
+  String get petTypeRat => 'Ibuzi';
+
+  @override
+  String get petTypeMouse => 'Impuku';
+
+  @override
+  String get petTypeGerbil => 'Ijerbhili';
+
+  @override
+  String get petTypeChinchilla => 'Itshintshila';
+
+  @override
+  String get petTypeHedgehog => 'Intloni';
+
+  @override
+  String get petTypeHorse => 'Ihashe';
+
+  @override
+  String get petTypePony => 'Iponi';
+
+  @override
+  String get petTypeDonkey => 'Idonki';
+
+  @override
+  String get petTypeParrot => 'Isikhwenene';
+
+  @override
+  String get petTypeBudgie => 'Ibhaji';
+
+  @override
+  String get petTypeCockatiel => 'Ikhokhathiyeli';
+
+  @override
+  String get petTypeCanary => 'Ikhanari';
+
+  @override
+  String get petTypeChicken => 'Inkukhu';
+
+  @override
+  String get petTypeTortoise => 'Ufudo';
+
+  @override
+  String get petTypeTurtle => 'Ufudo lwamanzi';
+
+  @override
+  String get petTypeSnake => 'Inyoka';
+
+  @override
+  String get petTypeLizard => 'Icilikishe';
+
+  @override
+  String get petTypeGecko => 'Iqhenya';
+
+  @override
+  String get petTypeBeardedDragon => 'Inamba enentshebe';
+
+  @override
+  String get petTypeFrog => 'Isele';
+
+  @override
+  String get petTypeAxolotl => 'I-axolotl';
+
+  @override
+  String get petTypeFish => 'Intlanzi';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Isitofu se-rabies ubuncinane $duration phambi kokuba ufike';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Uvavanyo lwegazi lwe-rabies emva kwesitofu, emva koko ulinde $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Emva koko ubuncinane $duration kwilizwe elivunyiweyo phambi kokuba ubhabhe';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Ukuvalelwa xa ufika ubuncinane $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Isilwanyana sakho kufuneka sibe ubuncinane $duration';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Sincinci kakhulu kwi-$country: isilwanyana sakho kufuneka sibe ubuncinane $duration';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Kuhlolwe nguVaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Akukahlolwa. Qinisekisa kwisiza esisemthethweni phambi kokubhukisha.';
+
+  @override
+  String get petRulesOtherAnimal => 'Imithetho yesi silwanyana yahlukile kweyezinja neekati. Jonga kwisiza esisemthethweni ukuba ifuna ntoni.';
+
+  @override
+  String get countryTypeHint => 'Qala ukuchwetheza ilizwe, umzekelo iFransi';
+
+  @override
+  String get assistantStepPets => 'Kuhlolwa izilwanyana zakho';
+
+  @override
+  String get tourPetsAddBody => 'Yongeza esinye isilwanyana apha. Qala ukuchwetheza uhlobo lwaso, njengoMvundla okanye iSikhwenene, ukhethe isindululo.';
+
+  @override
+  String get rulesReviewTitle => 'Imithetho ekufuneka ihlolwe';
+
+  @override
+  String get rulesReviewSubtitle => 'Imithetho esemthethweni efundwe kumaphepha karhulumente, ilinde imvume yakho';
+
+  @override
+  String get rulesReviewNow => 'Ibonisiwe ngoku';
+
+  @override
+  String get rulesReviewNew => 'Ekhasini ngoku';
+
+  @override
+  String get rulesReviewPets => 'Ukuhamba nesilwanyana';
+
+  @override
+  String get rulesReviewPassport => 'Ixesha lokusebenza kwepaspoti';
+
+  @override
+  String get rulesReviewApprove => 'Vuma';
+
+  @override
+  String get rulesReviewReject => 'Yala';
+
+  @override
+  String get rulesReviewEmpty => 'Akukho nto yokuhlolwa.';
+
+  @override
+  String get rulesReviewDropped => 'Ishiyiwe (akukho sivakalisi sihambelanayo)';
+
+  @override
   String get yoursTag => 'Okwakho';
 
   @override

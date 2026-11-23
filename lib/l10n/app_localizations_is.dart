@@ -8356,6 +8356,339 @@ class AppLocalizationsIs extends AppLocalizations {
   String get subcategoryPetPassports => 'Gæludýravegabréf';
 
   @override
+  String get petsTitle => 'Gæludýr';
+
+  @override
+  String get petsTileSubtitle => 'Skjöl, örmerki og dýralæknir fyrir hvert gæludýr';
+
+  @override
+  String get petsNotMembers => 'Gæludýr teljast ekki með meðlimum þínum.';
+
+  @override
+  String get petsAdd => 'Bæta við gæludýri';
+
+  @override
+  String get petsEmptyBody => 'Bættu gæludýrinu við til að halda bólusetningum, leyfi, tryggingu og örmerki saman, með áminningum áður en eitthvað rennur út.';
+
+  @override
+  String get petsPremium => 'Gæludýrasnið eru hluti af Premium.';
+
+  @override
+  String get petKindDog => 'Hundur';
+
+  @override
+  String get petKindCat => 'Köttur';
+
+  @override
+  String get petKindOther => 'Annað gæludýr';
+
+  @override
+  String get petBirthday => 'Fæðingardagur';
+
+  @override
+  String petBorn(String date) {
+    return 'Fætt $date';
+  }
+
+  @override
+  String get petChipNumber => 'Númer örmerkis';
+
+  @override
+  String get petChipInvalid => 'Notaðu 9 til 15 tölustafina á vottorði örmerkisins.';
+
+  @override
+  String get petChipRegistry => 'Örmerkjaskrá';
+
+  @override
+  String get petChipTip => 'Haltu skránni uppfærðri þegar þú flytur eða skiptir um númer, annars getur örmerkið ekki komið gæludýrinu heim.';
+
+  @override
+  String get petVetName => 'Dýralæknir';
+
+  @override
+  String get petVetPhone => 'Sími dýralæknis';
+
+  @override
+  String get petDocuments => 'Skjöl';
+
+  @override
+  String get petStillToAdd => 'Á eftir að bæta við';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'Fjarlægja $name? Skjölin verða áfram í Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'Týnt gæludýr';
+
+  @override
+  String get petLostSteps => 'Tilkynntu fyrst örmerkjaskránni að gæludýrið sé týnt. Hringdu svo í dýralækna og dýraathvörf í nágrenninu með númer örmerkisins og deildu nýlegri mynd í hverfinu og á netinu.';
+
+  @override
+  String get petTravelTitle => 'Ferðast með gæludýr';
+
+  @override
+  String get petTravelPick => 'Hvert ertu að fara?';
+
+  @override
+  String get petTravelHome => 'Hvar gæludýrið býr';
+
+  @override
+  String get petRuleChip => 'ISO-örmerki, sett í fyrir hundaæðisbólusetninguna';
+
+  @override
+  String get petRuleRabiesTest => 'Hundaæðisbólusetning og hundaæðisblóðpróf frá viðurkenndri rannsóknarstofu';
+
+  @override
+  String get petRuleCertificate => 'Heilbrigðisvottorð frá opinberum dýralækni';
+
+  @override
+  String get petRulePermit => 'Innflutningsleyfi fyrir ferðina';
+
+  @override
+  String get petRuleTapeworm => 'Hundar: bandormameðferð 1 til 5 dögum fyrir komu';
+
+  @override
+  String get petRuleCdcForm => 'CDC Dog Import Form fyrir hvern hund';
+
+  @override
+  String get petRuleSomeCountries => 'Aðeins frá sumum löndum:';
+
+  @override
+  String get petRulesOfficial => 'Opinberar reglur';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara er ekki enn með gæludýrareglur fyrir $country. Opinber dýralæknaþjónusta eða sendiráð landsins getur sagt þér hvað þarf.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Lög um örmerki: $country';
+  }
+
+  @override
+  String get petLawUk => 'Skylda fyrir hunda, og fyrir ketti á Englandi';
+
+  @override
+  String get petLawEu => 'Reglur eru mismunandi eftir löndum. Ný lög ESB gera það að skyldu fyrir alla hunda og ketti.';
+
+  @override
+  String get petLawMostStates => 'Skylda fyrir hunda og ketti í flestum ríkjum og svæðum';
+
+  @override
+  String get petLawDogs => 'Skylda fyrir hunda';
+
+  @override
+  String get petLawSellers => 'Skylda fyrir hunda og ketti sem ræktendur og gæludýrabúðir selja';
+
+  @override
+  String get petLawLocal => 'Hvert ríki, fylki eða borg ákveður';
+
+  @override
+  String get petLawNone => 'Ekki skylda samkvæmt landslögum, en þarf til ferðalaga og flestra ættleiðinga';
+
+  @override
+  String get tripPetsTitle => 'Gæludýr í þessari ferð';
+
+  @override
+  String get petCheckNoChip => 'Ekkert örmerki vistað';
+
+  @override
+  String get petCheckNoRabies => 'Engin hundaæðisbólusetning vistuð';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Hundaæðisbólusetningin rennur út $date, áður en þú kemur heim';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Biðin eftir blóðprófið nær kannski ekki að klárast fyrir brottför. Talaðu við dýralækninn núna.';
+
+  @override
+  String get petCheckNoCertificate => 'Ekkert heilbrigðisvottorð eða gæludýravegabréf vistað';
+
+  @override
+  String get planBenefitPets => 'Gæludýr með eigin skjöl, örmerki og dýralækni, teljast ekki sem meðlimir';
+
+  @override
+  String get tutorialsSubPets => 'Gæludýraskjöl, örmerki og ferðareglur';
+
+  @override
+  String get tourPetsListBody => 'Hvert gæludýr hefur sitt eigið snið, með örmerki, dýralækni og skjölum á einum stað. Gæludýr teljast ekki með meðlimum þínum.';
+
+  @override
+  String get tourPetsDocsBody => 'Bólusetningar, leyfi og trygging tilheyra gæludýrinu, svo áminningar segja hvers þau eru. Merkin sýna hvað er vistað.';
+
+  @override
+  String get tourPetsTravelBody => 'Veldu land til að sjá hvað gæludýrið þarf til að ferðast þangað og hversu langan tíma það tekur.';
+
+  @override
+  String get petTypeLabel => 'Tegund gæludýrs';
+
+  @override
+  String get petTypeHint => 'Byrjaðu að skrifa, t.d. Kanína eða Páfagaukur';
+
+  @override
+  String get petTypeFerret => 'Fretta';
+
+  @override
+  String get petTypeRabbit => 'Kanína';
+
+  @override
+  String get petTypeGuineaPig => 'Naggrís';
+
+  @override
+  String get petTypeHamster => 'Hamstur';
+
+  @override
+  String get petTypeRat => 'Rotta';
+
+  @override
+  String get petTypeMouse => 'Mús';
+
+  @override
+  String get petTypeGerbil => 'Stökkmús';
+
+  @override
+  String get petTypeChinchilla => 'Chinchilla';
+
+  @override
+  String get petTypeHedgehog => 'Broddgöltur';
+
+  @override
+  String get petTypeHorse => 'Hestur';
+
+  @override
+  String get petTypePony => 'Smáhestur';
+
+  @override
+  String get petTypeDonkey => 'Asni';
+
+  @override
+  String get petTypeParrot => 'Páfagaukur';
+
+  @override
+  String get petTypeBudgie => 'Gári';
+
+  @override
+  String get petTypeCockatiel => 'Dísargaukur';
+
+  @override
+  String get petTypeCanary => 'Kanarífugl';
+
+  @override
+  String get petTypeChicken => 'Hæna';
+
+  @override
+  String get petTypeTortoise => 'Landskjaldbaka';
+
+  @override
+  String get petTypeTurtle => 'Vatnaskjaldbaka';
+
+  @override
+  String get petTypeSnake => 'Snákur';
+
+  @override
+  String get petTypeLizard => 'Eðla';
+
+  @override
+  String get petTypeGecko => 'Gekkó';
+
+  @override
+  String get petTypeBeardedDragon => 'Skeggdreki';
+
+  @override
+  String get petTypeFrog => 'Froskur';
+
+  @override
+  String get petTypeAxolotl => 'Axolotl';
+
+  @override
+  String get petTypeFish => 'Fiskur';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Hundaæðisbólusetning að minnsta kosti $duration fyrir komu';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Hundaæðisblóðpróf eftir bólusetningu, síðan bið í $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Síðan að minnsta kosti $duration í samþykktu landi fyrir flug';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Sóttkví við komu í að minnsta kosti $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Gæludýrið verður að vera að minnsta kosti $duration gamalt';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Of ungt fyrir $country: gæludýrið verður að vera að minnsta kosti $duration gamalt';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Yfirfarið af Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Ekki yfirfarið enn. Staðfestu á opinbera vefnum áður en þú bókar.';
+
+  @override
+  String get petRulesOtherAnimal => 'Reglurnar fyrir þetta dýr eru aðrar en fyrir hunda og ketti. Sjáðu á opinbera vefnum hvað það þarf.';
+
+  @override
+  String get countryTypeHint => 'Byrjaðu að skrifa land, t.d. Frakkland';
+
+  @override
+  String get assistantStepPets => 'Fer yfir gæludýrin þín';
+
+  @override
+  String get tourPetsAddBody => 'Bættu öðru gæludýri við hér. Byrjaðu að skrifa tegundina, t.d. Kanína eða Páfagaukur, og veldu tillögu.';
+
+  @override
+  String get rulesReviewTitle => 'Reglur til yfirferðar';
+
+  @override
+  String get rulesReviewSubtitle => 'Opinberar reglur lesnar af vefjum stjórnvalda, bíða samþykkis þíns';
+
+  @override
+  String get rulesReviewNow => 'Sýnt núna';
+
+  @override
+  String get rulesReviewNew => 'Á síðunni núna';
+
+  @override
+  String get rulesReviewPets => 'Ferðalög með gæludýr';
+
+  @override
+  String get rulesReviewPassport => 'Gildistími vegabréfs';
+
+  @override
+  String get rulesReviewApprove => 'Samþykkja';
+
+  @override
+  String get rulesReviewReject => 'Hafna';
+
+  @override
+  String get rulesReviewEmpty => 'Ekkert til að fara yfir.';
+
+  @override
+  String get rulesReviewDropped => 'Sleppt (engin samsvarandi setning)';
+
+  @override
   String get yoursTag => 'Þitt';
 
   @override

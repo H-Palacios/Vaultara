@@ -8300,6 +8300,339 @@ class AppLocalizationsLo extends AppLocalizations {
   String get subcategoryPetPassports => 'ໜັງສືຜ່ານແດນສັດລ້ຽງ';
 
   @override
+  String get petsTitle => 'ສັດລ້ຽງ';
+
+  @override
+  String get petsTileSubtitle => 'ເອກະສານ, ໄມໂຄຣຊິບ ແລະ ສັດຕະວະແພດ ສຳລັບສັດລ້ຽງແຕ່ລະໂຕ';
+
+  @override
+  String get petsNotMembers => 'ສັດລ້ຽງບໍ່ນັບເປັນສະມາຊິກຂອງທ່ານ.';
+
+  @override
+  String get petsAdd => 'ເພີ່ມສັດລ້ຽງ';
+
+  @override
+  String get petsEmptyBody => 'ເພີ່ມສັດລ້ຽງຂອງທ່ານ ເພື່ອເກັບວັກຊີນ, ໃບອະນຸຍາດ, ປະກັນໄພ ແລະ ໄມໂຄຣຊິບໄວ້ນຳກັນ ພ້ອມການແຈ້ງເຕືອນກ່ອນສິ່ງໃດໝົດອາຍຸ.';
+
+  @override
+  String get petsPremium => 'ໂປຣໄຟລ໌ສັດລ້ຽງເປັນສ່ວນໜຶ່ງຂອງ Premium.';
+
+  @override
+  String get petKindDog => 'ໝາ';
+
+  @override
+  String get petKindCat => 'ແມວ';
+
+  @override
+  String get petKindOther => 'ສັດລ້ຽງອື່ນ';
+
+  @override
+  String get petBirthday => 'ວັນເກີດ';
+
+  @override
+  String petBorn(String date) {
+    return 'ເກີດ $date';
+  }
+
+  @override
+  String get petChipNumber => 'ເລກໄມໂຄຣຊິບ';
+
+  @override
+  String get petChipInvalid => 'ໃຊ້ຕົວເລກ 9 ຫາ 15 ຫຼັກໃນໃບຢັ້ງຢືນຊິບ.';
+
+  @override
+  String get petChipRegistry => 'ທະບຽນຊິບ';
+
+  @override
+  String get petChipTip => 'ອັບເດດທະບຽນເມື່ອທ່ານຍ້າຍບ້ານ ຫຼື ປ່ຽນເບີ, ບໍ່ດັ່ງນັ້ນຊິບຈະພາສັດລ້ຽງຂອງທ່ານກັບບ້ານບໍ່ໄດ້.';
+
+  @override
+  String get petVetName => 'ສັດຕະວະແພດ';
+
+  @override
+  String get petVetPhone => 'ເບີໂທສັດຕະວະແພດ';
+
+  @override
+  String get petDocuments => 'ເອກະສານ';
+
+  @override
+  String get petStillToAdd => 'ຍັງຕ້ອງເພີ່ມ';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'ລຶບ $name ບໍ? ເອກະສານຍັງຢູ່ໃນ Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'ສັດລ້ຽງເສຍ';
+
+  @override
+  String get petLostSteps => 'ທຳອິດ ແຈ້ງທະບຽນຊິບວ່າສັດລ້ຽງຂອງທ່ານເສຍ. ຈາກນັ້ນ ໂທຫາສັດຕະວະແພດ ແລະ ສູນພັກພິງສັດໃກ້ຄຽງພ້ອມເລກໄມໂຄຣຊິບ, ແລະ ແບ່ງປັນຮູບລ່າສຸດໃນທ້ອງຖິ່ນ ແລະ ອອນລາຍ.';
+
+  @override
+  String get petTravelTitle => 'ເດີນທາງກັບສັດລ້ຽງ';
+
+  @override
+  String get petTravelPick => 'ທ່ານຈະໄປໃສ?';
+
+  @override
+  String get petTravelHome => 'ບ່ອນທີ່ສັດລ້ຽງຂອງທ່ານອາໄສ';
+
+  @override
+  String get petRuleChip => 'ໄມໂຄຣຊິບ ISO ທີ່ໃສ່ກ່ອນວັກຊີນພະຍາດໝາບ້າ';
+
+  @override
+  String get petRuleRabiesTest => 'ວັກຊີນພະຍາດໝາບ້າ ແລະ ກວດເລືອດພະຍາດໝາບ້າຈາກຫ້ອງທົດລອງທີ່ອະນຸມັດ';
+
+  @override
+  String get petRuleCertificate => 'ໃບຢັ້ງຢືນສຸຂະພາບຈາກສັດຕະວະແພດທາງການ';
+
+  @override
+  String get petRulePermit => 'ໃບອະນຸຍາດນຳເຂົ້າກ່ອນເດີນທາງ';
+
+  @override
+  String get petRuleTapeworm => 'ໝາ: ຮັກສາແມ່ທ້ອງຕືດ 1 ຫາ 5 ມື້ກ່ອນທ່ານມາຮອດ';
+
+  @override
+  String get petRuleCdcForm => 'CDC Dog Import Form ສຳລັບໝາແຕ່ລະໂຕ';
+
+  @override
+  String get petRuleSomeCountries => 'ສະເພາະຈາກບາງປະເທດ:';
+
+  @override
+  String get petRulesOfficial => 'ກົດລະບຽບທາງການ';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara ຍັງບໍ່ມີກົດລະບຽບສັດລ້ຽງຂອງ $country. ບໍລິການສັດຕະວະແພດທາງການ ຫຼື ສະຖານທູດຂອງປະເທດນັ້ນບອກທ່ານໄດ້ວ່າຕ້ອງການຫຍັງ.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'ກົດໝາຍໄມໂຄຣຊິບໃນ $country';
+  }
+
+  @override
+  String get petLawUk => 'ບັງຄັບສຳລັບໝາ ແລະ ສຳລັບແມວໃນອັງກິດ';
+
+  @override
+  String get petLawEu => 'ກົດລະບຽບແຕກຕ່າງກັນຕາມປະເທດ. ກົດໝາຍ EU ໃໝ່ຈະບັງຄັບໃຊ້ກັບໝາ ແລະ ແມວທັງໝົດ.';
+
+  @override
+  String get petLawMostStates => 'ບັງຄັບສຳລັບໝາ ແລະ ແມວໃນລັດ ແລະ ເຂດສ່ວນໃຫຍ່';
+
+  @override
+  String get petLawDogs => 'ບັງຄັບສຳລັບໝາ';
+
+  @override
+  String get petLawSellers => 'ບັງຄັບສຳລັບໝາ ແລະ ແມວທີ່ຜູ້ລ້ຽງພັນ ແລະ ຮ້ານສັດລ້ຽງຂາຍ';
+
+  @override
+  String get petLawLocal => 'ແຕ່ລະລັດ, ແຂວງ ຫຼື ເມືອງກຳນົດເອງ';
+
+  @override
+  String get petLawNone => 'ກົດໝາຍແຫ່ງຊາດບໍ່ບັງຄັບ, ແຕ່ຈຳເປັນສຳລັບການເດີນທາງ ແລະ ການຮັບລ້ຽງສ່ວນໃຫຍ່';
+
+  @override
+  String get tripPetsTitle => 'ສັດລ້ຽງໃນການເດີນທາງນີ້';
+
+  @override
+  String get petCheckNoChip => 'ບໍ່ມີໄມໂຄຣຊິບທີ່ບັນທຶກໄວ້';
+
+  @override
+  String get petCheckNoRabies => 'ບໍ່ມີວັກຊີນພະຍາດໝາບ້າທີ່ບັນທຶກໄວ້';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'ວັກຊີນພະຍາດໝາບ້າໝົດອາຍຸ $date, ກ່ອນທ່ານກັບມາ';
+  }
+
+  @override
+  String get petCheckTooSoon => 'ການລໍຖ້າຫຼັງກວດເລືອດອາດບໍ່ທັນກ່ອນທ່ານອອກເດີນທາງ. ລົມກັບສັດຕະວະແພດຂອງທ່ານດຽວນີ້.';
+
+  @override
+  String get petCheckNoCertificate => 'ບໍ່ມີໃບຢັ້ງຢືນສຸຂະພາບ ຫຼື ໜັງສືຜ່ານແດນສັດລ້ຽງທີ່ບັນທຶກໄວ້';
+
+  @override
+  String get planBenefitPets => 'ສັດລ້ຽງພ້ອມເອກະສານ, ໄມໂຄຣຊິບ ແລະ ສັດຕະວະແພດຂອງມັນເອງ, ບໍ່ນັບເປັນສະມາຊິກ';
+
+  @override
+  String get tutorialsSubPets => 'ເອກະສານສັດລ້ຽງ, ໄມໂຄຣຊິບ ແລະ ກົດລະບຽບການເດີນທາງ';
+
+  @override
+  String get tourPetsListBody => 'ສັດລ້ຽງແຕ່ລະໂຕມີໂປຣໄຟລ໌ຂອງຕົນເອງ, ມີໄມໂຄຣຊິບ, ສັດຕະວະແພດ ແລະ ເອກະສານໃນບ່ອນດຽວ. ສັດລ້ຽງບໍ່ນັບເປັນສະມາຊິກຂອງທ່ານ.';
+
+  @override
+  String get tourPetsDocsBody => 'ວັກຊີນ, ໃບອະນຸຍາດ ແລະ ປະກັນໄພເປັນຂອງສັດລ້ຽງ, ສະນັ້ນການແຈ້ງເຕືອນບອກວ່າເປັນຂອງໃຜ. ປ້າຍສະແດງສິ່ງທີ່ບັນທຶກໄວ້.';
+
+  @override
+  String get tourPetsTravelBody => 'ເລືອກປະເທດເພື່ອເບິ່ງວ່າສັດລ້ຽງຂອງທ່ານຕ້ອງການຫຍັງເພື່ອເດີນທາງໄປທີ່ນັ້ນ ແລະ ໃຊ້ເວລາດົນປານໃດ.';
+
+  @override
+  String get petTypeLabel => 'ປະເພດສັດລ້ຽງ';
+
+  @override
+  String get petTypeHint => 'ເລີ່ມພິມ ເຊັ່ນ ກະຕ່າຍ ຫຼື ນົກແກ້ວ';
+
+  @override
+  String get petTypeFerret => 'ເຟີເຣັດ';
+
+  @override
+  String get petTypeRabbit => 'ກະຕ່າຍ';
+
+  @override
+  String get petTypeGuineaPig => 'ໝູກີນີ';
+
+  @override
+  String get petTypeHamster => 'ແຮມສເຕີ';
+
+  @override
+  String get petTypeRat => 'ໜູໃຫຍ່';
+
+  @override
+  String get petTypeMouse => 'ໜູ';
+
+  @override
+  String get petTypeGerbil => 'ເຈີບິວ';
+
+  @override
+  String get petTypeChinchilla => 'ຊິນຊິລລາ';
+
+  @override
+  String get petTypeHedgehog => 'ເໝັ້ນ';
+
+  @override
+  String get petTypeHorse => 'ມ້າ';
+
+  @override
+  String get petTypePony => 'ມ້າໂພນີ';
+
+  @override
+  String get petTypeDonkey => 'ລາ';
+
+  @override
+  String get petTypeParrot => 'ນົກແກ້ວ';
+
+  @override
+  String get petTypeBudgie => 'ນົກແກ້ວນ້ອຍ';
+
+  @override
+  String get petTypeCockatiel => 'ໂຄກາທີລ';
+
+  @override
+  String get petTypeCanary => 'ນົກຄານາຣີ';
+
+  @override
+  String get petTypeChicken => 'ໄກ່';
+
+  @override
+  String get petTypeTortoise => 'ເຕົ່າບົກ';
+
+  @override
+  String get petTypeTurtle => 'ເຕົ່ານ້ຳ';
+
+  @override
+  String get petTypeSnake => 'ງູ';
+
+  @override
+  String get petTypeLizard => 'ແລນ';
+
+  @override
+  String get petTypeGecko => 'ຕຸ໊ກແກ';
+
+  @override
+  String get petTypeBeardedDragon => 'ມັງກອນມີໜວດ';
+
+  @override
+  String get petTypeFrog => 'ກົບ';
+
+  @override
+  String get petTypeAxolotl => 'ແອັກໂຊໂລເທິລ';
+
+  @override
+  String get petTypeFish => 'ປາ';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'ວັກຊີນພະຍາດໝາບ້າຢ່າງໜ້ອຍ $duration ກ່ອນທ່ານໄປຮອດ';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'ກວດເລືອດພະຍາດໝາບ້າຫຼັງວັກຊີນ ແລ້ວລໍຖ້າ $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'ຈາກນັ້ນຢ່າງໜ້ອຍ $duration ໃນປະເທດທີ່ອະນຸມັດກ່ອນບິນ';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'ກັກກັນເມື່ອໄປຮອດຢ່າງໜ້ອຍ $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'ສັດລ້ຽງຂອງທ່ານຕ້ອງມີອາຍຸຢ່າງໜ້ອຍ $duration';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'ນ້ອຍເກີນໄປສຳລັບ $country: ສັດລ້ຽງຂອງທ່ານຕ້ອງມີອາຍຸຢ່າງໜ້ອຍ $duration';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'ກວດສອບໂດຍ Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'ຍັງບໍ່ໄດ້ກວດສອບ. ກະລຸນາຢືນຢັນໃນເວັບໄຊທາງການກ່ອນຈອງ.';
+
+  @override
+  String get petRulesOtherAnimal => 'ກົດລະບຽບສຳລັບສັດນີ້ແຕກຕ່າງຈາກໝາ ແລະ ແມວ. ເບິ່ງໃນເວັບໄຊທາງການວ່າມັນຕ້ອງການຫຍັງ.';
+
+  @override
+  String get countryTypeHint => 'ເລີ່ມພິມຊື່ປະເທດ ເຊັ່ນ ຝຣັ່ງ';
+
+  @override
+  String get assistantStepPets => 'ກຳລັງກວດສັດລ້ຽງຂອງທ່ານ';
+
+  @override
+  String get tourPetsAddBody => 'ເພີ່ມສັດລ້ຽງອີກໂຕໜຶ່ງທີ່ນີ້. ເລີ່ມພິມປະເພດ ເຊັ່ນ ກະຕ່າຍ ຫຼື ນົກແກ້ວ ແລ້ວເລືອກຄຳແນະນຳ.';
+
+  @override
+  String get rulesReviewTitle => 'ກົດລະບຽບທີ່ຕ້ອງກວດ';
+
+  @override
+  String get rulesReviewSubtitle => 'ກົດລະບຽບທາງການທີ່ອ່ານຈາກໜ້າເວັບລັດຖະບານ ລໍຖ້າການອະນຸມັດຂອງທ່ານ';
+
+  @override
+  String get rulesReviewNow => 'ສະແດງຢູ່ຕອນນີ້';
+
+  @override
+  String get rulesReviewNew => 'ຢູ່ໃນໜ້າຕອນນີ້';
+
+  @override
+  String get rulesReviewPets => 'ເດີນທາງກັບສັດລ້ຽງ';
+
+  @override
+  String get rulesReviewPassport => 'ອາຍຸໜັງສືຜ່ານແດນ';
+
+  @override
+  String get rulesReviewApprove => 'ອະນຸມັດ';
+
+  @override
+  String get rulesReviewReject => 'ປະຕິເສດ';
+
+  @override
+  String get rulesReviewEmpty => 'ບໍ່ມີຫຍັງໃຫ້ກວດ.';
+
+  @override
+  String get rulesReviewDropped => 'ຕັດອອກ (ບໍ່ມີປະໂຫຍກທີ່ກົງກັນ)';
+
+  @override
   String get yoursTag => 'ຂອງທ່ານ';
 
   @override

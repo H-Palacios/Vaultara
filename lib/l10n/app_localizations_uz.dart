@@ -8357,6 +8357,339 @@ class AppLocalizationsUz extends AppLocalizations {
   String get subcategoryPetPassports => 'Uy hayvonlari pasportlari';
 
   @override
+  String get petsTitle => 'Uy hayvonlari';
+
+  @override
+  String get petsTileSubtitle => 'Har bir hayvonning hujjatlari, mikrochipi va veterinari';
+
+  @override
+  String get petsNotMembers => 'Uy hayvonlari a\'zolaringiz qatoriga kirmaydi.';
+
+  @override
+  String get petsAdd => 'Hayvon qo\'shish';
+
+  @override
+  String get petsEmptyBody => 'Hayvoningizni qo\'shing: emlashlari, litsenziyasi, sug\'urtasi va mikrochipi bir joyda bo\'ladi, biror narsa muddati tugashidan oldin eslatmalar bilan.';
+
+  @override
+  String get petsPremium => 'Hayvon profillari Premium tarkibiga kiradi.';
+
+  @override
+  String get petKindDog => 'It';
+
+  @override
+  String get petKindCat => 'Mushuk';
+
+  @override
+  String get petKindOther => 'Boshqa hayvon';
+
+  @override
+  String get petBirthday => 'Tug\'ilgan sana';
+
+  @override
+  String petBorn(String date) {
+    return 'Tug\'ilgan: $date';
+  }
+
+  @override
+  String get petChipNumber => 'Mikrochip raqami';
+
+  @override
+  String get petChipInvalid => 'Chip sertifikatidagi 9–15 raqamdan foydalaning.';
+
+  @override
+  String get petChipRegistry => 'Chip reyestri';
+
+  @override
+  String get petChipTip => 'Ko\'chganda yoki raqamingizni almashtirganda reyestrni yangilang, aks holda chip hayvoningizni uyga qaytara olmaydi.';
+
+  @override
+  String get petVetName => 'Veterinar';
+
+  @override
+  String get petVetPhone => 'Veterinar telefoni';
+
+  @override
+  String get petDocuments => 'Hujjatlar';
+
+  @override
+  String get petStillToAdd => 'Hali qo\'shilishi kerak';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '$name o\'chirilsinmi? Hujjatlari Vaultara\'da qoladi.';
+  }
+
+  @override
+  String get petLostTitle => 'Yo\'qolgan hayvon';
+
+  @override
+  String get petLostSteps => 'Avval chip reyestriga hayvoningiz yo\'qolganini xabar qiling. Keyin mikrochip raqami bilan yaqin atrofdagi veterinarlar va hayvonlar boshpanalariga qo\'ng\'iroq qiling, so\'nggi suratini mahallada va onlayn ulashing.';
+
+  @override
+  String get petTravelTitle => 'Hayvon bilan sayohat';
+
+  @override
+  String get petTravelPick => 'Qayerga borasiz?';
+
+  @override
+  String get petTravelHome => 'Hayvoningiz yashaydigan joy';
+
+  @override
+  String get petRuleChip => 'Quturish emlashidan oldin o\'rnatilgan ISO mikrochip';
+
+  @override
+  String get petRuleRabiesTest => 'Quturish emlashi va tasdiqlangan laboratoriyada quturishga qon tahlili';
+
+  @override
+  String get petRuleCertificate => 'Rasmiy veterinardan salomatlik sertifikati';
+
+  @override
+  String get petRulePermit => 'Safardan oldin import ruxsatnomasi';
+
+  @override
+  String get petRuleTapeworm => 'Itlar: kelishdan 1–5 kun oldin tasma qurtga qarshi davolash';
+
+  @override
+  String get petRuleCdcForm => 'Har bir it uchun CDC Dog Import Form';
+
+  @override
+  String get petRuleSomeCountries => 'Faqat ba\'zi mamlakatlardan:';
+
+  @override
+  String get petRulesOfficial => 'Rasmiy qoidalar';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara\'da hali $country uchun hayvon qoidalari yo\'q. Uning rasmiy veterinariya xizmati yoki elchixonasi nima kerakligini aytadi.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Mikrochip qonuni: $country';
+  }
+
+  @override
+  String get petLawUk => 'Itlar uchun, Angliyada esa mushuklar uchun ham majburiy';
+
+  @override
+  String get petLawEu => 'Qoidalar mamlakatga qarab farq qiladi. Yangi YeI qonuni uni barcha itlar va mushuklar uchun majburiy qiladi.';
+
+  @override
+  String get petLawMostStates => 'Ko\'pchilik shtat va hududlarda itlar va mushuklar uchun majburiy';
+
+  @override
+  String get petLawDogs => 'Itlar uchun majburiy';
+
+  @override
+  String get petLawSellers => 'Naslchilar va hayvon do\'konlari sotadigan itlar va mushuklar uchun majburiy';
+
+  @override
+  String get petLawLocal => 'Har bir shtat, viloyat yoki shahar belgilaydi';
+
+  @override
+  String get petLawNone => 'Milliy qonun talab qilmaydi, lekin sayohat va ko\'pchilik asrab olish uchun kerak';
+
+  @override
+  String get tripPetsTitle => 'Bu safardagi hayvonlar';
+
+  @override
+  String get petCheckNoChip => 'Mikrochip saqlanmagan';
+
+  @override
+  String get petCheckNoRabies => 'Quturish emlashi saqlanmagan';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Quturish emlashi muddati $date da tugaydi, qaytishingizdan oldin';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Qon tahlilidan keyingi kutish jo\'nashdan oldin ulgurmasligi mumkin. Hozir veterinaringiz bilan gaplashing.';
+
+  @override
+  String get petCheckNoCertificate => 'Salomatlik sertifikati yoki hayvon pasporti saqlanmagan';
+
+  @override
+  String get planBenefitPets => 'O\'z hujjatlari, mikrochipi va veterinari bor hayvonlar, a\'zo sifatida hisoblanmaydi';
+
+  @override
+  String get tutorialsSubPets => 'Hayvon hujjatlari, mikrochip va sayohat qoidalari';
+
+  @override
+  String get tourPetsListBody => 'Har bir hayvonning o\'z profili bor: mikrochip, veterinar va hujjatlar bir joyda. Uy hayvonlari a\'zolaringiz qatoriga kirmaydi.';
+
+  @override
+  String get tourPetsDocsBody => 'Emlashlar, litsenziya va sug\'urta hayvonga tegishli, shuning uchun eslatmalar kimniki ekanini aytadi. Nishonlar nima saqlanganini ko\'rsatadi.';
+
+  @override
+  String get tourPetsTravelBody => 'Hayvoningizga u yerga sayohat uchun nima kerakligini va qancha vaqt olishini ko\'rish uchun mamlakatni tanlang.';
+
+  @override
+  String get petTypeLabel => 'Uy hayvoni turi';
+
+  @override
+  String get petTypeHint => 'Yozishni boshlang, masalan Quyon yoki To\'tiqush';
+
+  @override
+  String get petTypeFerret => 'Sassiqko\'zan';
+
+  @override
+  String get petTypeRabbit => 'Quyon';
+
+  @override
+  String get petTypeGuineaPig => 'Dengiz cho\'chqasi';
+
+  @override
+  String get petTypeHamster => 'Hamster';
+
+  @override
+  String get petTypeRat => 'Kalamush';
+
+  @override
+  String get petTypeMouse => 'Sichqon';
+
+  @override
+  String get petTypeGerbil => 'Qumsichqon';
+
+  @override
+  String get petTypeChinchilla => 'Shinshilla';
+
+  @override
+  String get petTypeHedgehog => 'Tipratikan';
+
+  @override
+  String get petTypeHorse => 'Ot';
+
+  @override
+  String get petTypePony => 'Poni';
+
+  @override
+  String get petTypeDonkey => 'Eshak';
+
+  @override
+  String get petTypeParrot => 'To\'tiqush';
+
+  @override
+  String get petTypeBudgie => 'To\'lqinsimon to\'tiqush';
+
+  @override
+  String get petTypeCockatiel => 'Korella';
+
+  @override
+  String get petTypeCanary => 'Kanareyka';
+
+  @override
+  String get petTypeChicken => 'Tovuq';
+
+  @override
+  String get petTypeTortoise => 'Toshbaqa';
+
+  @override
+  String get petTypeTurtle => 'Suv toshbaqasi';
+
+  @override
+  String get petTypeSnake => 'Ilon';
+
+  @override
+  String get petTypeLizard => 'Kaltakesak';
+
+  @override
+  String get petTypeGecko => 'Gekkon';
+
+  @override
+  String get petTypeBeardedDragon => 'Soqolli agama';
+
+  @override
+  String get petTypeFrog => 'Qurbaqa';
+
+  @override
+  String get petTypeAxolotl => 'Aksolotl';
+
+  @override
+  String get petTypeFish => 'Baliq';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Kelishdan kamida $duration oldin quturishga qarshi emlash';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Emlashdan keyin quturish qon tahlili, so\'ng $duration kutish';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'So\'ng uchishdan oldin tasdiqlangan mamlakatda kamida $duration';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Kelganda kamida $duration karantin';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Hayvoningiz kamida $duration bo\'lishi kerak';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return '$country uchun juda yosh: hayvoningiz kamida $duration bo\'lishi kerak';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Vaultara tekshirgan · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Hali tekshirilmagan. Band qilishdan oldin rasmiy saytda tasdiqlang.';
+
+  @override
+  String get petRulesOtherAnimal => 'Bu hayvon qoidalari it va mushuklarnikidan farq qiladi. Nima kerakligini rasmiy saytda ko\'ring.';
+
+  @override
+  String get countryTypeHint => 'Mamlakat nomini yozishni boshlang, masalan Fransiya';
+
+  @override
+  String get assistantStepPets => 'Uy hayvonlaringiz tekshirilmoqda';
+
+  @override
+  String get tourPetsAddBody => 'Bu yerga yana bir hayvon qo\'shing. Turini yozishni boshlang, masalan Quyon yoki To\'tiqush, va taklifni tanlang.';
+
+  @override
+  String get rulesReviewTitle => 'Ko\'rib chiqiladigan qoidalar';
+
+  @override
+  String get rulesReviewSubtitle => 'Davlat sahifalaridan o\'qilgan, tasdiqlashingizni kutayotgan rasmiy qoidalar';
+
+  @override
+  String get rulesReviewNow => 'Hozir ko\'rsatilgan';
+
+  @override
+  String get rulesReviewNew => 'Hozir sahifada';
+
+  @override
+  String get rulesReviewPets => 'Uy hayvoni bilan sayohat';
+
+  @override
+  String get rulesReviewPassport => 'Pasportning amal qilish muddati';
+
+  @override
+  String get rulesReviewApprove => 'Tasdiqlash';
+
+  @override
+  String get rulesReviewReject => 'Rad etish';
+
+  @override
+  String get rulesReviewEmpty => 'Ko\'rib chiqadigan narsa yo\'q.';
+
+  @override
+  String get rulesReviewDropped => 'Chiqarib tashlandi (mos gap yo\'q)';
+
+  @override
   String get yoursTag => 'Sizniki';
 
   @override

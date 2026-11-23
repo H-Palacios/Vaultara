@@ -8423,6 +8423,339 @@ class AppLocalizationsLv extends AppLocalizations {
   String get subcategoryPetPassports => 'Mājdzīvnieku pases';
 
   @override
+  String get petsTitle => 'Mājdzīvnieki';
+
+  @override
+  String get petsTileSubtitle => 'Katra mājdzīvnieka dokumenti, mikročips un veterinārārsts';
+
+  @override
+  String get petsNotMembers => 'Mājdzīvnieki netiek skaitīti pie jūsu dalībniekiem.';
+
+  @override
+  String get petsAdd => 'Pievienot mājdzīvnieku';
+
+  @override
+  String get petsEmptyBody => 'Pievienojiet mājdzīvnieku, lai vakcīnas, licence, apdrošināšana un mikročips būtu kopā, ar atgādinājumiem, pirms kaut kam beidzas termiņš.';
+
+  @override
+  String get petsPremium => 'Mājdzīvnieku profili ir daļa no Premium.';
+
+  @override
+  String get petKindDog => 'Suns';
+
+  @override
+  String get petKindCat => 'Kaķis';
+
+  @override
+  String get petKindOther => 'Cits mājdzīvnieks';
+
+  @override
+  String get petBirthday => 'Dzimšanas datums';
+
+  @override
+  String petBorn(String date) {
+    return 'Dzimis $date';
+  }
+
+  @override
+  String get petChipNumber => 'Mikročipa numurs';
+
+  @override
+  String get petChipInvalid => 'Izmantojiet 9 līdz 15 ciparus no čipa sertifikāta.';
+
+  @override
+  String get petChipRegistry => 'Čipu reģistrs';
+
+  @override
+  String get petChipTip => 'Atjauniniet reģistru, kad pārceļaties vai maināt numuru, citādi čips nevarēs atvest mājdzīvnieku mājās.';
+
+  @override
+  String get petVetName => 'Veterinārārsts';
+
+  @override
+  String get petVetPhone => 'Veterinārārsta tālrunis';
+
+  @override
+  String get petDocuments => 'Dokumenti';
+
+  @override
+  String get petStillToAdd => 'Vēl jāpievieno';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'Noņemt $name? Dokumenti paliek Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'Pazudis mājdzīvnieks';
+
+  @override
+  String get petLostSteps => 'Vispirms ziņojiet čipu reģistram, ka mājdzīvnieks ir pazudis. Pēc tam zvaniet tuvējiem veterinārārstiem un dzīvnieku patversmēm ar mikročipa numuru un dalieties ar nesenu foto apkārtnē un tiešsaistē.';
+
+  @override
+  String get petTravelTitle => 'Ceļošana ar mājdzīvnieku';
+
+  @override
+  String get petTravelPick => 'Kurp dodaties?';
+
+  @override
+  String get petTravelHome => 'Kur dzīvo jūsu mājdzīvnieks';
+
+  @override
+  String get petRuleChip => 'ISO mikročips, ievietots pirms trakumsērgas vakcīnas';
+
+  @override
+  String get petRuleRabiesTest => 'Trakumsērgas vakcīna un trakumsērgas asins analīze apstiprinātā laboratorijā';
+
+  @override
+  String get petRuleCertificate => 'Oficiāla veterinārārsta veselības sertifikāts';
+
+  @override
+  String get petRulePermit => 'Importa atļauja pirms ceļojuma';
+
+  @override
+  String get petRuleTapeworm => 'Suņi: lenteņu ārstēšana 1 līdz 5 dienas pirms ierašanās';
+
+  @override
+  String get petRuleCdcForm => 'CDC Dog Import Form katram sunim';
+
+  @override
+  String get petRuleSomeCountries => 'Tikai no dažām valstīm:';
+
+  @override
+  String get petRulesOfficial => 'Oficiālie noteikumi';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara vēl nav mājdzīvnieku noteikumu valstij $country. Tās oficiālais veterinārais dienests vai vēstniecība var pateikt, kas vajadzīgs.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Mikročipu likums: $country';
+  }
+
+  @override
+  String get petLawUk => 'Obligāts suņiem, bet Anglijā arī kaķiem';
+
+  @override
+  String get petLawEu => 'Noteikumi katrā valstī atšķiras. Jauns ES likums to padarīs obligātu visiem suņiem un kaķiem.';
+
+  @override
+  String get petLawMostStates => 'Obligāts suņiem un kaķiem lielākajā daļā štatu un teritoriju';
+
+  @override
+  String get petLawDogs => 'Obligāts suņiem';
+
+  @override
+  String get petLawSellers => 'Obligāts audzētāju un dzīvnieku veikalu pārdotajiem suņiem un kaķiem';
+
+  @override
+  String get petLawLocal => 'Nosaka katrs štats, province vai pilsēta';
+
+  @override
+  String get petLawNone => 'Valsts likums to neprasa, bet tas vajadzīgs ceļošanai un lielākajai daļai adopciju';
+
+  @override
+  String get tripPetsTitle => 'Mājdzīvnieki šajā ceļojumā';
+
+  @override
+  String get petCheckNoChip => 'Mikročips nav saglabāts';
+
+  @override
+  String get petCheckNoRabies => 'Trakumsērgas vakcīna nav saglabāta';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Trakumsērgas vakcīnai termiņš beidzas $date, pirms atgriezīsieties';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Gaidīšana pēc asins analīzes var nepaspēt līdz izbraukšanai. Runājiet ar veterinārārstu tūlīt.';
+
+  @override
+  String get petCheckNoCertificate => 'Veselības sertifikāts vai mājdzīvnieka pase nav saglabāta';
+
+  @override
+  String get planBenefitPets => 'Mājdzīvnieki ar saviem dokumentiem, mikročipu un veterinārārstu, netiek skaitīti kā dalībnieki';
+
+  @override
+  String get tutorialsSubPets => 'Mājdzīvnieku dokumenti, mikročips un ceļošanas noteikumi';
+
+  @override
+  String get tourPetsListBody => 'Katram mājdzīvniekam ir savs profils ar mikročipu, veterinārārstu un dokumentiem vienuviet. Mājdzīvnieki netiek skaitīti pie jūsu dalībniekiem.';
+
+  @override
+  String get tourPetsDocsBody => 'Vakcīnas, licence un apdrošināšana pieder mājdzīvniekam, tāpēc atgādinājumi pasaka, kam tie pieder. Nozīmītes rāda, kas saglabāts.';
+
+  @override
+  String get tourPetsTravelBody => 'Izvēlieties valsti, lai redzētu, kas mājdzīvniekam vajadzīgs, lai tur ceļotu, un cik ilgi tas aizņem.';
+
+  @override
+  String get petTypeLabel => 'Mājdzīvnieka suga';
+
+  @override
+  String get petTypeHint => 'Sāciet rakstīt, piemēram, Trusis vai Papagailis';
+
+  @override
+  String get petTypeFerret => 'Sesks';
+
+  @override
+  String get petTypeRabbit => 'Trusis';
+
+  @override
+  String get petTypeGuineaPig => 'Jūrascūciņa';
+
+  @override
+  String get petTypeHamster => 'Kāmis';
+
+  @override
+  String get petTypeRat => 'Žurka';
+
+  @override
+  String get petTypeMouse => 'Pele';
+
+  @override
+  String get petTypeGerbil => 'Smilšu pele';
+
+  @override
+  String get petTypeChinchilla => 'Šinšilla';
+
+  @override
+  String get petTypeHedgehog => 'Ezis';
+
+  @override
+  String get petTypeHorse => 'Zirgs';
+
+  @override
+  String get petTypePony => 'Ponijs';
+
+  @override
+  String get petTypeDonkey => 'Ēzelis';
+
+  @override
+  String get petTypeParrot => 'Papagailis';
+
+  @override
+  String get petTypeBudgie => 'Viļņainais papagailītis';
+
+  @override
+  String get petTypeCockatiel => 'Nimfa';
+
+  @override
+  String get petTypeCanary => 'Kanārijputniņš';
+
+  @override
+  String get petTypeChicken => 'Vista';
+
+  @override
+  String get petTypeTortoise => 'Sauszemes bruņurupucis';
+
+  @override
+  String get petTypeTurtle => 'Ūdens bruņurupucis';
+
+  @override
+  String get petTypeSnake => 'Čūska';
+
+  @override
+  String get petTypeLizard => 'Ķirzaka';
+
+  @override
+  String get petTypeGecko => 'Gekons';
+
+  @override
+  String get petTypeBeardedDragon => 'Bārdainā agāma';
+
+  @override
+  String get petTypeFrog => 'Varde';
+
+  @override
+  String get petTypeAxolotl => 'Aksolotls';
+
+  @override
+  String get petTypeFish => 'Zivs';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Trakumsērgas vakcīna vismaz $duration pirms ierašanās';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Trakumsērgas asins analīze pēc vakcīnas, tad gaidīšana $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Tad vismaz $duration apstiprinātā valstī pirms lidojuma';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Karantīna ierodoties vismaz $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Jūsu mājdzīvniekam jābūt vismaz $duration vecam';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Pārāk jauns valstij $country: jūsu mājdzīvniekam jābūt vismaz $duration vecam';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Pārbaudījusi Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Vēl nav pārbaudīts. Pirms rezervēšanas pārliecinieties oficiālajā vietnē.';
+
+  @override
+  String get petRulesOtherAnimal => 'Šī dzīvnieka noteikumi atšķiras no suņu un kaķu noteikumiem. Oficiālajā vietnē skatiet, kas tam vajadzīgs.';
+
+  @override
+  String get countryTypeHint => 'Sāciet rakstīt valsti, piemēram, Francija';
+
+  @override
+  String get assistantStepPets => 'Pārbauda jūsu mājdzīvniekus';
+
+  @override
+  String get tourPetsAddBody => 'Pievienojiet šeit vēl vienu mājdzīvnieku. Sāciet rakstīt sugu, piemēram, Trusis vai Papagailis, un izvēlieties ieteikumu.';
+
+  @override
+  String get rulesReviewTitle => 'Pārskatāmie noteikumi';
+
+  @override
+  String get rulesReviewSubtitle => 'Oficiālie noteikumi no valdības lapām, kas gaida jūsu apstiprinājumu';
+
+  @override
+  String get rulesReviewNow => 'Rādīts tagad';
+
+  @override
+  String get rulesReviewNew => 'Lapā tagad';
+
+  @override
+  String get rulesReviewPets => 'Ceļošana ar mājdzīvnieku';
+
+  @override
+  String get rulesReviewPassport => 'Pases derīgums';
+
+  @override
+  String get rulesReviewApprove => 'Apstiprināt';
+
+  @override
+  String get rulesReviewReject => 'Noraidīt';
+
+  @override
+  String get rulesReviewEmpty => 'Nav ko pārskatīt.';
+
+  @override
+  String get rulesReviewDropped => 'Izlaists (nav atbilstoša teikuma)';
+
+  @override
   String get yoursTag => 'Jūsu';
 
   @override

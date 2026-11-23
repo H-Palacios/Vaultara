@@ -8356,6 +8356,339 @@ class AppLocalizationsSo extends AppLocalizations {
   String get subcategoryPetPassports => 'Baasaboorrada xayawaanka guriga';
 
   @override
+  String get petsTitle => 'Xayawaanka guriga';
+
+  @override
+  String get petsTileSubtitle => 'Dukumentiyada, microchip-ka iyo dhakhtarka xoolaha ee xayawaan kasta';
+
+  @override
+  String get petsNotMembers => 'Xayawaanka guriga laguma tiriyo xubnahaaga.';
+
+  @override
+  String get petsAdd => 'Ku dar xayawaan';
+
+  @override
+  String get petsEmptyBody => 'Ku dar xayawaankaaga si tallaalladiisa, ruqsaddiisa, caymiskiisa iyo microchip-kiisa ay meel u wada yaallaan, oo leh xusuusin ka hor inta aysan wax dhicin.';
+
+  @override
+  String get petsPremium => 'Astaamaha xayawaanku waa qayb ka mid ah Premium.';
+
+  @override
+  String get petKindDog => 'Eey';
+
+  @override
+  String get petKindCat => 'Bisad';
+
+  @override
+  String get petKindOther => 'Xayawaan kale';
+
+  @override
+  String get petBirthday => 'Taariikhda dhalashada';
+
+  @override
+  String petBorn(String date) {
+    return 'Dhashay $date';
+  }
+
+  @override
+  String get petChipNumber => 'Lambarka microchip-ka';
+
+  @override
+  String get petChipInvalid => 'Isticmaal 9 ilaa 15 lambar ee ku qoran shahaadada chip-ka.';
+
+  @override
+  String get petChipRegistry => 'Diiwaanka chip-ka';
+
+  @override
+  String get petChipTip => 'Cusboonaysii diiwaanka markaad guurto ama beddesho lambarkaaga, haddii kale chip-ku ma soo celin karo xayawaankaaga.';
+
+  @override
+  String get petVetName => 'Dhakhtarka xoolaha';
+
+  @override
+  String get petVetPhone => 'Taleefanka dhakhtarka xoolaha';
+
+  @override
+  String get petDocuments => 'Dukumentiyada';
+
+  @override
+  String get petStillToAdd => 'Weli in lagu daro';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'Ka saar $name? Dukumentiyadiisu waxay ku sii jiri doonaan Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'Xayawaan lumay';
+
+  @override
+  String get petLostSteps => 'Marka hore u sheeg diiwaanka chip-ka in xayawaankaagu lumay. Kadib wac dhakhaatiirta xoolaha iyo hoyga xayawaanka ee kuu dhow adigoo siinaya lambarka microchip-ka, oo la wadaag sawir cusub xaafadda iyo internetka.';
+
+  @override
+  String get petTravelTitle => 'Socdaal xayawaan la jira';
+
+  @override
+  String get petTravelPick => 'Xaggee u socotaa?';
+
+  @override
+  String get petTravelHome => 'Halka xayawaankaagu ku nool yahay';
+
+  @override
+  String get petRuleChip => 'Microchip ISO ah, oo la geliyay ka hor tallaalka cudurka dhaadhaanka';
+
+  @override
+  String get petRuleRabiesTest => 'Tallaalka dhaadhaanka iyo baaritaanka dhiigga ee dhaadhaanka ee shaybaar la oggolaaday';
+
+  @override
+  String get petRuleCertificate => 'Shahaado caafimaad oo ka timid dhakhtar xoolaad rasmi ah';
+
+  @override
+  String get petRulePermit => 'Ogolaansho soo dejin ka hor safarka';
+
+  @override
+  String get petRuleTapeworm => 'Eeyaha: daawaynta gooryaanka 1 ilaa 5 maalmood ka hor intaadan iman';
+
+  @override
+  String get petRuleCdcForm => 'CDC Dog Import Form eey kasta';
+
+  @override
+  String get petRuleSomeCountries => 'Kaliya waddamada qaarkood:';
+
+  @override
+  String get petRulesOfficial => 'Xeerarka rasmiga ah';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara weli ma haysato xeerarka xayawaanka ee $country. Adeegga xoolaha ee rasmiga ah ama safaaraddu way kuu sheegi karaan waxa loo baahan yahay.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Sharciga microchip-ka ee $country';
+  }
+
+  @override
+  String get petLawUk => 'Waajib ku ah eeyaha, iyo bisadaha Ingiriiska';
+
+  @override
+  String get petLawEu => 'Xeerarku way kala duwan yihiin waddan kasta. Sharci cusub oo EU ah ayaa ka dhigi doona waajib dhammaan eeyaha iyo bisadaha.';
+
+  @override
+  String get petLawMostStates => 'Waajib ku ah eeyaha iyo bisadaha inta badan gobollada iyo dhulalka';
+
+  @override
+  String get petLawDogs => 'Waajib ku ah eeyaha';
+
+  @override
+  String get petLawSellers => 'Waajib ku ah eeyaha iyo bisadaha ay iibiyaan dhaqdhaqaaqayaasha iyo dukaamada xayawaanka';
+
+  @override
+  String get petLawLocal => 'Gobol kasta, maamul ama magaalo ayaa go\'aamisa';
+
+  @override
+  String get petLawNone => 'Sharciga qaranku ma doonayo, laakiin waa loo baahan yahay safarka iyo inta badan korsashada';
+
+  @override
+  String get tripPetsTitle => 'Xayawaanka safarkan';
+
+  @override
+  String get petCheckNoChip => 'Microchip lama kaydin';
+
+  @override
+  String get petCheckNoRabies => 'Tallaal dhaadhaan lama kaydin';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Tallaalka dhaadhaanku wuxuu dhacayaa $date, ka hor intaadan soo noqon';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Sugidda baaritaanka dhiigga kadib waxaa laga yaabaa inaysan dhammaan ka hor bixitaankaaga. Hadda la hadal dhakhtarka xoolahaaga.';
+
+  @override
+  String get petCheckNoCertificate => 'Shahaado caafimaad ama baasaboor xayawaan lama kaydin';
+
+  @override
+  String get planBenefitPets => 'Xayawaan leh dukumentiyadooda, microchip iyo dhakhtar, oo aan loo tirin xubno ahaan';
+
+  @override
+  String get tutorialsSubPets => 'Dukumentiyada xayawaanka, microchip iyo xeerarka safarka';
+
+  @override
+  String get tourPetsListBody => 'Xayawaan kastaa wuxuu leeyahay astaan u gaar ah, oo microchip-ka, dhakhtarka iyo dukumentiyadu meel ku wada yaallaan. Xayawaanka guriga laguma tiriyo xubnahaaga.';
+
+  @override
+  String get tourPetsDocsBody => 'Tallaallada, ruqsadda iyo caymisku waa kuwa xayawaanka, markaa xusuusintu waxay sheegaan kuwa ay yihiin. Calaamaduhu waxay muujiyaan waxa la kaydiyay.';
+
+  @override
+  String get tourPetsTravelBody => 'Dooro waddan si aad u aragto waxa xayawaankaagu u baahan yahay si uu halkaas ugu safro, iyo inta ay qaadato.';
+
+  @override
+  String get petTypeLabel => 'Nooca xayawaanka guriga';
+
+  @override
+  String get petTypeHint => 'Bilow qorista, tusaale Bakayle ama Baqbaqaa';
+
+  @override
+  String get petTypeFerret => 'Ferret';
+
+  @override
+  String get petTypeRabbit => 'Bakayle';
+
+  @override
+  String get petTypeGuineaPig => 'Doofaarka guinea';
+
+  @override
+  String get petTypeHamster => 'Hamster';
+
+  @override
+  String get petTypeRat => 'Jiir weyn';
+
+  @override
+  String get petTypeMouse => 'Jiir';
+
+  @override
+  String get petTypeGerbil => 'Gerbil';
+
+  @override
+  String get petTypeChinchilla => 'Chinchilla';
+
+  @override
+  String get petTypeHedgehog => 'Hedgehog';
+
+  @override
+  String get petTypeHorse => 'Faras';
+
+  @override
+  String get petTypePony => 'Faras yar';
+
+  @override
+  String get petTypeDonkey => 'Dameer';
+
+  @override
+  String get petTypeParrot => 'Baqbaqaa';
+
+  @override
+  String get petTypeBudgie => 'Budgie';
+
+  @override
+  String get petTypeCockatiel => 'Cockatiel';
+
+  @override
+  String get petTypeCanary => 'Kanari';
+
+  @override
+  String get petTypeChicken => 'Digaag';
+
+  @override
+  String get petTypeTortoise => 'Diin';
+
+  @override
+  String get petTypeTurtle => 'Diinta biyaha';
+
+  @override
+  String get petTypeSnake => 'Mas';
+
+  @override
+  String get petTypeLizard => 'Qorratiis';
+
+  @override
+  String get petTypeGecko => 'Geko';
+
+  @override
+  String get petTypeBeardedDragon => 'Dragon gadh leh';
+
+  @override
+  String get petTypeFrog => 'Rah';
+
+  @override
+  String get petTypeAxolotl => 'Axolotl';
+
+  @override
+  String get petTypeFish => 'Kalluun';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Tallaalka cudurka dhaxanta ugu yaraan $duration ka hor intaadan imaan';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Baaritaan dhiig oo cudurka dhaxanta ah tallaalka kadib, kadibna sug $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Kadib ugu yaraan $duration dal la ansixiyay ka hor duulimaadka';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Karantiin marka la yimaado ugu yaraan $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Xayawaankaagu waa inuu ugu yaraan jiraa $duration';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Aad buu ugu yar yahay $country: xayawaankaagu waa inuu ugu yaraan jiraa $duration';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Waxaa hubiyay Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Weli lama hubin. Ka xaqiiji bogga rasmiga ah ka hor intaadan ballansan.';
+
+  @override
+  String get petRulesOtherAnimal => 'Xeerarka xayawaankan way ka duwan yihiin kuwa eeyaha iyo bisadaha. Ka eeg bogga rasmiga ah waxa uu u baahan yahay.';
+
+  @override
+  String get countryTypeHint => 'Bilow qorista waddan, tusaale Faransiiska';
+
+  @override
+  String get assistantStepPets => 'Waxaa la hubinayaa xayawaankaaga';
+
+  @override
+  String get tourPetsAddBody => 'Halkan ku dar xayawaan kale. Bilow qorista noociisa, sida Bakayle ama Baqbaqaa, oo dooro soo jeedin.';
+
+  @override
+  String get rulesReviewTitle => 'Xeerar la eegayo';
+
+  @override
+  String get rulesReviewSubtitle => 'Xeerar rasmi ah oo laga akhriyay bogagga dowladda, sugaya ansixintaada';
+
+  @override
+  String get rulesReviewNow => 'Hadda la muujiyay';
+
+  @override
+  String get rulesReviewNew => 'Hadda bogga';
+
+  @override
+  String get rulesReviewPets => 'Safar xayawaan la socda';
+
+  @override
+  String get rulesReviewPassport => 'Ansaxnimada baasaboorka';
+
+  @override
+  String get rulesReviewApprove => 'Ansixi';
+
+  @override
+  String get rulesReviewReject => 'Diid';
+
+  @override
+  String get rulesReviewEmpty => 'Wax la eego ma jiro.';
+
+  @override
+  String get rulesReviewDropped => 'Laga reebay (ma jiro weedh u dhiganta)';
+
+  @override
   String get yoursTag => 'Adiga';
 
   @override

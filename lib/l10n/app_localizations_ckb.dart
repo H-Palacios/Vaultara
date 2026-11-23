@@ -8357,6 +8357,339 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get subcategoryPetPassports => 'پاسپۆرتی ئاژەڵی ماڵی';
 
   @override
+  String get petsTitle => 'ئاژەڵە ماڵییەکان';
+
+  @override
+  String get petsTileSubtitle => 'بەڵگەنامە، مایکرۆچیپ و ڤێتێرنەر بۆ هەر ئاژەڵێکی ماڵی';
+
+  @override
+  String get petsNotMembers => 'ئاژەڵە ماڵییەکان لە ئەندامەکانت ناژمێردرێن.';
+
+  @override
+  String get petsAdd => 'ئاژەڵی ماڵی زیاد بکە';
+
+  @override
+  String get petsEmptyBody => 'ئاژەڵە ماڵییەکەت زیاد بکە بۆ ئەوەی کوتان، مۆڵەت، بیمە و مایکرۆچیپەکەی پێکەوە بن، لەگەڵ بیرخەرەوە پێش ئەوەی شتێک بەسەر بچێت.';
+
+  @override
+  String get petsPremium => 'پرۆفایلی ئاژەڵی ماڵی بەشێکە لە Premium.';
+
+  @override
+  String get petKindDog => 'سەگ';
+
+  @override
+  String get petKindCat => 'پشیلە';
+
+  @override
+  String get petKindOther => 'ئاژەڵی ماڵی تر';
+
+  @override
+  String get petBirthday => 'بەرواری لەدایکبوون';
+
+  @override
+  String petBorn(String date) {
+    return 'لەدایکبووە $date';
+  }
+
+  @override
+  String get petChipNumber => 'ژمارەی مایکرۆچیپ';
+
+  @override
+  String get petChipInvalid => 'ئەو 9 بۆ 15 ژمارەیەی سەر بڕوانامەی چیپەکە بەکاربهێنە.';
+
+  @override
+  String get petChipRegistry => 'تۆماری چیپ';
+
+  @override
+  String get petChipTip => 'کاتێک ماڵ دەگوازیتەوە یان ژمارەکەت دەگۆڕیت تۆمارەکە نوێ بکەرەوە، ئەگینا چیپەکە ناتوانێت ئاژەڵەکەت بگەڕێنێتەوە ماڵ.';
+
+  @override
+  String get petVetName => 'ڤێتێرنەر';
+
+  @override
+  String get petVetPhone => 'تەلەفۆنی ڤێتێرنەر';
+
+  @override
+  String get petDocuments => 'بەڵگەنامەکان';
+
+  @override
+  String get petStillToAdd => 'هێشتا زیاد نەکراون';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '$name لاببرێت؟ بەڵگەنامەکانی لە Vaultara دەمێننەوە.';
+  }
+
+  @override
+  String get petLostTitle => 'ئاژەڵی ون';
+
+  @override
+  String get petLostSteps => 'سەرەتا ونبوونی ئاژەڵەکەت بە تۆماری چیپ ڕابگەیەنە. پاشان بە ژمارەی مایکرۆچیپەکە پەیوەندی بە ڤێتێرنەر و پەناگەی ئاژەڵانی نزیکەوە بکە، و وێنەیەکی نوێ لە ناوچەکە و ئۆنلاین بڵاو بکەرەوە.';
+
+  @override
+  String get petTravelTitle => 'گەشتکردن لەگەڵ ئاژەڵی ماڵی';
+
+  @override
+  String get petTravelPick => 'بۆ کوێ دەچیت؟';
+
+  @override
+  String get petTravelHome => 'شوێنی ژیانی ئاژەڵەکەت';
+
+  @override
+  String get petRuleChip => 'مایکرۆچیپێکی ISO، پێش کوتانی هاری دانراو';
+
+  @override
+  String get petRuleRabiesTest => 'کوتانی هاری و پشکنینی خوێنی هاری لە تاقیگەیەکی پەسەندکراو';
+
+  @override
+  String get petRuleCertificate => 'بڕوانامەی تەندروستی لە ڤێتێرنەرێکی فەرمی';
+
+  @override
+  String get petRulePermit => 'مۆڵەتی هاوردەکردن پێش گەشتکردن';
+
+  @override
+  String get petRuleTapeworm => 'سەگەکان: چارەسەری کرمی شریتی 1 بۆ 5 ڕۆژ پێش گەیشتنت';
+
+  @override
+  String get petRuleCdcForm => 'CDC Dog Import Form بۆ هەر سەگێک';
+
+  @override
+  String get petRuleSomeCountries => 'تەنها لە هەندێک وڵاتەوە:';
+
+  @override
+  String get petRulesOfficial => 'یاسا فەرمییەکان';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara هێشتا یاساکانی ئاژەڵی ماڵی بۆ $country نییە. خزمەتگوزاری ڤێتێرنەری فەرمی یان باڵیۆزخانەکەی دەتوانن پێت بڵێن چی پێویستە.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'یاسای مایکرۆچیپ لە $country';
+  }
+
+  @override
+  String get petLawUk => 'پێویستە بۆ سەگ، و بۆ پشیلە لە ئینگلتەرا';
+
+  @override
+  String get petLawEu => 'یاساکان بەپێی وڵات جیاوازن. یاسایەکی نوێی EU دەیکاتە پێویست بۆ هەموو سەگ و پشیلەیەک.';
+
+  @override
+  String get petLawMostStates => 'پێویستە بۆ سەگ و پشیلە لە زۆربەی ویلایەت و هەرێمەکان';
+
+  @override
+  String get petLawDogs => 'پێویستە بۆ سەگ';
+
+  @override
+  String get petLawSellers => 'پێویستە بۆ ئەو سەگ و پشیلانەی بەخێوکەران و دوکانی ئاژەڵان دەیانفرۆشن';
+
+  @override
+  String get petLawLocal => 'هەر ویلایەت، پارێزگا یان شارێک دیاری دەکات';
+
+  @override
+  String get petLawNone => 'بە یاسای نیشتمانی پێویست نییە، بەڵام بۆ گەشت و زۆربەی بەخێوکردنەکان پێویستە';
+
+  @override
+  String get tripPetsTitle => 'ئاژەڵە ماڵییەکانی ئەم گەشتە';
+
+  @override
+  String get petCheckNoChip => 'هیچ مایکرۆچیپێک پاشەکەوت نەکراوە';
+
+  @override
+  String get petCheckNoRabies => 'هیچ کوتانێکی هاری پاشەکەوت نەکراوە';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'کوتانی هاری لە $date بەسەر دەچێت، پێش گەڕانەوەت';
+  }
+
+  @override
+  String get petCheckTooSoon => 'چاوەڕوانی دوای پشکنینی خوێن لەوانەیە پێش ڕۆیشتنت تەواو نەبێت. ئێستا قسە لەگەڵ ڤێتێرنەرەکەت بکە.';
+
+  @override
+  String get petCheckNoCertificate => 'هیچ بڕوانامەی تەندروستی یان پاسپۆرتی ئاژەڵ پاشەکەوت نەکراوە';
+
+  @override
+  String get planBenefitPets => 'ئاژەڵی ماڵی بە بەڵگەنامە، مایکرۆچیپ و ڤێتێرنەری خۆیانەوە، وەک ئەندام ناژمێردرێن';
+
+  @override
+  String get tutorialsSubPets => 'بەڵگەنامەی ئاژەڵی ماڵی، مایکرۆچیپ و یاساکانی گەشت';
+
+  @override
+  String get tourPetsListBody => 'هەر ئاژەڵێکی ماڵی پرۆفایلی خۆی هەیە، مایکرۆچیپ، ڤێتێرنەر و بەڵگەنامەکان لە یەک شوێن. ئاژەڵە ماڵییەکان لە ئەندامەکانت ناژمێردرێن.';
+
+  @override
+  String get tourPetsDocsBody => 'کوتان، مۆڵەت و بیمە هی ئاژەڵەکەن، بۆیە بیرخەرەوەکان دەڵێن هی کێن. نیشانەکان پیشان دەدەن چی پاشەکەوت کراوە.';
+
+  @override
+  String get tourPetsTravelBody => 'وڵاتێک هەڵبژێرە بۆ بینینی ئەوەی ئاژەڵەکەت بۆ گەشتکردن بۆ ئەوێ پێویستی بە چییە و چەندی پێدەچێت.';
+
+  @override
+  String get petTypeLabel => 'جۆری ئاژەڵی ماڵی';
+
+  @override
+  String get petTypeHint => 'دەست بە نووسین بکە، بۆ نموونە کەروێشک یان تووتی';
+
+  @override
+  String get petTypeFerret => 'فێرێت';
+
+  @override
+  String get petTypeRabbit => 'کەروێشک';
+
+  @override
+  String get petTypeGuineaPig => 'بەرازی گینێ';
+
+  @override
+  String get petTypeHamster => 'هامستەر';
+
+  @override
+  String get petTypeRat => 'مشکی گەورە';
+
+  @override
+  String get petTypeMouse => 'مشک';
+
+  @override
+  String get petTypeGerbil => 'جێربیل';
+
+  @override
+  String get petTypeChinchilla => 'چینچیلا';
+
+  @override
+  String get petTypeHedgehog => 'ژیژک';
+
+  @override
+  String get petTypeHorse => 'ئەسپ';
+
+  @override
+  String get petTypePony => 'پۆنی';
+
+  @override
+  String get petTypeDonkey => 'گوێدرێژ';
+
+  @override
+  String get petTypeParrot => 'تووتی';
+
+  @override
+  String get petTypeBudgie => 'بەجی';
+
+  @override
+  String get petTypeCockatiel => 'کۆکاتیل';
+
+  @override
+  String get petTypeCanary => 'کەنارێ';
+
+  @override
+  String get petTypeChicken => 'مریشک';
+
+  @override
+  String get petTypeTortoise => 'کیسەڵ';
+
+  @override
+  String get petTypeTurtle => 'کیسەڵی ئاوی';
+
+  @override
+  String get petTypeSnake => 'مار';
+
+  @override
+  String get petTypeLizard => 'مارمێلکە';
+
+  @override
+  String get petTypeGecko => 'گێکۆ';
+
+  @override
+  String get petTypeBeardedDragon => 'ئەژدیهای ڕیشدار';
+
+  @override
+  String get petTypeFrog => 'بۆق';
+
+  @override
+  String get petTypeAxolotl => 'ئاکسۆلۆتڵ';
+
+  @override
+  String get petTypeFish => 'ماسی';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'کوتانی هاری لانیکەم $duration پێش گەیشتنت';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'پشکنینی خوێنی هاری دوای کوتان، پاشان چاوەڕوانی $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'پاشان لانیکەم $duration لە وڵاتێکی پەسەندکراو پێش فڕین';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'کەرەنتینە لە کاتی گەیشتن بۆ لانیکەم $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'ئاژەڵەکەت دەبێت لانیکەم $duration بێت';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'زۆر بچووکە بۆ $country: ئاژەڵەکەت دەبێت لانیکەم $duration بێت';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'پشکنراوە لەلایەن Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'هێشتا نەپشکنراوە. پێش حیجزکردن لە ماڵپەڕی فەرمی دڵنیابەرەوە.';
+
+  @override
+  String get petRulesOtherAnimal => 'یاساکانی ئەم ئاژەڵە جیاوازن لە هی سەگ و پشیلە. لە ماڵپەڕی فەرمی ببینە چی پێویستە.';
+
+  @override
+  String get countryTypeHint => 'دەست بە نووسینی وڵاتێک بکە، بۆ نموونە فەڕەنسا';
+
+  @override
+  String get assistantStepPets => 'پشکنینی ئاژەڵەکانت';
+
+  @override
+  String get tourPetsAddBody => 'لێرە ئاژەڵێکی تر زیاد بکە. دەست بە نووسینی جۆرەکەی بکە، وەک کەروێشک یان تووتی، و پێشنیارێک هەڵبژێرە.';
+
+  @override
+  String get rulesReviewTitle => 'یاساکان بۆ پێداچوونەوە';
+
+  @override
+  String get rulesReviewSubtitle => 'یاسا فەرمییەکان کە لە پەڕە حکومییەکان خوێندراونەتەوە، چاوەڕێی پەسەندکردنی تۆن';
+
+  @override
+  String get rulesReviewNow => 'ئێستا پیشاندراو';
+
+  @override
+  String get rulesReviewNew => 'ئێستا لە پەڕەکەدا';
+
+  @override
+  String get rulesReviewPets => 'گەشت لەگەڵ ئاژەڵ';
+
+  @override
+  String get rulesReviewPassport => 'ماوەی کارپێکردنی پاسپۆرت';
+
+  @override
+  String get rulesReviewApprove => 'پەسەند بکە';
+
+  @override
+  String get rulesReviewReject => 'ڕەت بکەوە';
+
+  @override
+  String get rulesReviewEmpty => 'هیچ شتێک نییە بۆ پێداچوونەوە.';
+
+  @override
+  String get rulesReviewDropped => 'لابرا (هیچ ڕستەیەکی گونجاو نییە)';
+
+  @override
   String get yoursTag => 'هی تۆ';
 
   @override

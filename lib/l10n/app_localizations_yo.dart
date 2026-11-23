@@ -8306,6 +8306,339 @@ class AppLocalizationsYo extends AppLocalizations {
   String get subcategoryPetPassports => 'Ìwé ìrìnnà ẹran ọ̀sìn';
 
   @override
+  String get petsTitle => 'Ẹran ọ̀sìn';
+
+  @override
+  String get petsTileSubtitle => 'Ìwé, microchip àti dókítà ẹranko fún ẹran ọ̀sìn kọ̀ọ̀kan';
+
+  @override
+  String get petsNotMembers => 'A kò ka ẹran ọ̀sìn mọ́ àwọn ọmọ ẹgbẹ́ rẹ.';
+
+  @override
+  String get petsAdd => 'Fi ẹran ọ̀sìn kún un';
+
+  @override
+  String get petsEmptyBody => 'Fi ẹran ọ̀sìn rẹ kún un kí àwọn abẹ́rẹ́ àjẹsára, ìwé àṣẹ, ìbánigbófò àti microchip rẹ̀ lè wà papọ̀, pẹ̀lú ìránnilétí kí ohunkóhun tó parí.';
+
+  @override
+  String get petsPremium => 'Àwọn profaili ẹran ọ̀sìn jẹ́ apá kan Premium.';
+
+  @override
+  String get petKindDog => 'Ajá';
+
+  @override
+  String get petKindCat => 'Ológbò';
+
+  @override
+  String get petKindOther => 'Ẹran ọ̀sìn mìíràn';
+
+  @override
+  String get petBirthday => 'Ọjọ́ ìbí';
+
+  @override
+  String petBorn(String date) {
+    return 'A bí i ní $date';
+  }
+
+  @override
+  String get petChipNumber => 'Nọ́ńbà microchip';
+
+  @override
+  String get petChipInvalid => 'Lo àwọn nọ́ńbà 9 sí 15 tó wà lórí ìwé ẹ̀rí chip.';
+
+  @override
+  String get petChipRegistry => 'Ìforúkọsílẹ̀ chip';
+
+  @override
+  String get petChipTip => 'Ṣe àtúnṣe ìforúkọsílẹ̀ nígbà tí o bá kó lọ tàbí yí nọ́ńbà rẹ padà, bí bẹ́ẹ̀ kọ́ chip kò ní lè mú ẹran ọ̀sìn rẹ padà sílé.';
+
+  @override
+  String get petVetName => 'Dókítà ẹranko';
+
+  @override
+  String get petVetPhone => 'Fóònù dókítà ẹranko';
+
+  @override
+  String get petDocuments => 'Àwọn ìwé';
+
+  @override
+  String get petStillToAdd => 'Ó ṣì kù láti fi kún un';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'Yọ $name kúrò? Àwọn ìwé rẹ̀ yóò wà nínú Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'Ẹran ọ̀sìn tó sọnù';
+
+  @override
+  String get petLostSteps => 'Kọ́kọ́ sọ fún ìforúkọsílẹ̀ chip pé ẹran ọ̀sìn rẹ ti sọnù. Lẹ́yìn náà pe àwọn dókítà ẹranko àti ibi ààbò ẹranko tó wà nítòsí pẹ̀lú nọ́ńbà microchip, kí o sì pín fọ́tò tuntun ní àdúgbò àti lórí ayélujára.';
+
+  @override
+  String get petTravelTitle => 'Rírìnrìn àjò pẹ̀lú ẹran ọ̀sìn';
+
+  @override
+  String get petTravelPick => 'Ibo lò ń lọ?';
+
+  @override
+  String get petTravelHome => 'Ibi tí ẹran ọ̀sìn rẹ ń gbé';
+
+  @override
+  String get petRuleChip => 'Microchip ISO, tí a fi sí i ṣáájú abẹ́rẹ́ àrùn dígbòlugi';
+
+  @override
+  String get petRuleRabiesTest => 'Abẹ́rẹ́ àrùn dígbòlugi àti àyẹ̀wò ẹ̀jẹ̀ láti ilé ìwádìí tí a fọwọ́ sí';
+
+  @override
+  String get petRuleCertificate => 'Ìwé ẹ̀rí ìlera láti ọ̀dọ̀ dókítà ẹranko ìjọba';
+
+  @override
+  String get petRulePermit => 'Ìwé àṣẹ ìkówọlé ṣáájú ìrìn àjò';
+
+  @override
+  String get petRuleTapeworm => 'Àwọn ajá: ìtọ́jú kòkòrò inú ọjọ́ 1 sí 5 ṣáájú kí o tó dé';
+
+  @override
+  String get petRuleCdcForm => 'CDC Dog Import Form fún ajá kọ̀ọ̀kan';
+
+  @override
+  String get petRuleSomeCountries => 'Láti àwọn orílẹ̀-èdè kan nìkan:';
+
+  @override
+  String get petRulesOfficial => 'Àwọn òfin ìjọba';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara kò tíì ní àwọn òfin ẹran ọ̀sìn fún $country. Iṣẹ́ ìtọ́jú ẹranko ìjọba rẹ̀ tàbí ilé aṣojú rẹ̀ lè sọ ohun tí a nílò fún ọ.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Òfin microchip ní $country';
+  }
+
+  @override
+  String get petLawUk => 'Ó pọndandan fún àwọn ajá, àti fún àwọn ológbò ní England';
+
+  @override
+  String get petLawEu => 'Àwọn òfin yàtọ̀ láti orílẹ̀-èdè sí orílẹ̀-èdè. Òfin tuntun EU yóò sọ ọ́ di dandan fún gbogbo ajá àti ológbò.';
+
+  @override
+  String get petLawMostStates => 'Ó pọndandan fún ajá àti ológbò ní ọ̀pọ̀lọpọ̀ ìpínlẹ̀ àti agbègbè';
+
+  @override
+  String get petLawDogs => 'Ó pọndandan fún àwọn ajá';
+
+  @override
+  String get petLawSellers => 'Ó pọndandan fún ajá àti ológbò tí àwọn olùsin àti ṣọ́ọ̀bù ẹran ọ̀sìn ń tà';
+
+  @override
+  String get petLawLocal => 'Ìpínlẹ̀, agbègbè tàbí ìlú kọ̀ọ̀kan ló ń pinnu';
+
+  @override
+  String get petLawNone => 'Òfin orílẹ̀-èdè kò béèrè rẹ̀, ṣùgbọ́n a nílò rẹ̀ fún ìrìn àjò àti ọ̀pọ̀ ìgbàṣọmọ';
+
+  @override
+  String get tripPetsTitle => 'Ẹran ọ̀sìn nínú ìrìn àjò yìí';
+
+  @override
+  String get petCheckNoChip => 'Kò sí microchip tí a fipamọ́';
+
+  @override
+  String get petCheckNoRabies => 'Kò sí abẹ́rẹ́ àrùn dígbòlugi tí a fipamọ́';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Abẹ́rẹ́ àrùn dígbòlugi yóò parí ní $date, ṣáájú kí o tó padà';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Ìdúró lẹ́yìn àyẹ̀wò ẹ̀jẹ̀ lè má tó ṣáájú kí o tó lọ. Bá dókítà ẹranko rẹ sọ̀rọ̀ báyìí.';
+
+  @override
+  String get petCheckNoCertificate => 'Kò sí ìwé ẹ̀rí ìlera tàbí ìwé ìrìnnà ẹran ọ̀sìn tí a fipamọ́';
+
+  @override
+  String get planBenefitPets => 'Ẹran ọ̀sìn pẹ̀lú ìwé, microchip àti dókítà tiwọn, a kò kà wọ́n sí ọmọ ẹgbẹ́';
+
+  @override
+  String get tutorialsSubPets => 'Ìwé ẹran ọ̀sìn, microchip àti òfin ìrìn àjò';
+
+  @override
+  String get tourPetsListBody => 'Ẹran ọ̀sìn kọ̀ọ̀kan ní profaili tirẹ̀, pẹ̀lú microchip, dókítà ẹranko àti ìwé ní ibì kan. A kò ka ẹran ọ̀sìn mọ́ àwọn ọmọ ẹgbẹ́ rẹ.';
+
+  @override
+  String get tourPetsDocsBody => 'Àwọn abẹ́rẹ́, ìwé àṣẹ àti ìbánigbófò jẹ́ ti ẹran ọ̀sìn, nítorí náà ìránnilétí ń sọ ti ta ni wọ́n. Àwọn àmì ń fi ohun tí a fipamọ́ hàn.';
+
+  @override
+  String get tourPetsTravelBody => 'Yan orílẹ̀-èdè kan láti rí ohun tí ẹran ọ̀sìn rẹ nílò láti rìnrìn àjò síbẹ̀, àti bí ó ṣe pẹ́ tó.';
+
+  @override
+  String get petTypeLabel => 'Irú ẹranko ọ̀sìn';
+
+  @override
+  String get petTypeHint => 'Bẹ̀rẹ̀ sí tẹ̀, fún àpẹẹrẹ Ehoro tàbí Ayékòótọ́';
+
+  @override
+  String get petTypeFerret => 'Ferret';
+
+  @override
+  String get petTypeRabbit => 'Ehoro';
+
+  @override
+  String get petTypeGuineaPig => 'Ẹlẹ́dẹ̀ Guinea';
+
+  @override
+  String get petTypeHamster => 'Hamster';
+
+  @override
+  String get petTypeRat => 'Èkúté';
+
+  @override
+  String get petTypeMouse => 'Eku kékeré';
+
+  @override
+  String get petTypeGerbil => 'Gerbil';
+
+  @override
+  String get petTypeChinchilla => 'Chinchilla';
+
+  @override
+  String get petTypeHedgehog => 'Òòrẹ̀';
+
+  @override
+  String get petTypeHorse => 'Ẹṣin';
+
+  @override
+  String get petTypePony => 'Ẹṣin kékeré';
+
+  @override
+  String get petTypeDonkey => 'Kẹ́tẹ́kẹ́tẹ́';
+
+  @override
+  String get petTypeParrot => 'Ayékòótọ́';
+
+  @override
+  String get petTypeBudgie => 'Budgie';
+
+  @override
+  String get petTypeCockatiel => 'Cockatiel';
+
+  @override
+  String get petTypeCanary => 'Canary';
+
+  @override
+  String get petTypeChicken => 'Adìyẹ';
+
+  @override
+  String get petTypeTortoise => 'Ìjàpá';
+
+  @override
+  String get petTypeTurtle => 'Ìjàpá omi';
+
+  @override
+  String get petTypeSnake => 'Ejò';
+
+  @override
+  String get petTypeLizard => 'Aláǹgbá';
+
+  @override
+  String get petTypeGecko => 'Gecko';
+
+  @override
+  String get petTypeBeardedDragon => 'Dragon onírùngbọ̀n';
+
+  @override
+  String get petTypeFrog => 'Àkèré';
+
+  @override
+  String get petTypeAxolotl => 'Axolotl';
+
+  @override
+  String get petTypeFish => 'Ẹja';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Abẹ́rẹ́ àjẹsára ìgbóná ajá ó kéré tán $duration kí o tó dé';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Àyẹ̀wò ẹ̀jẹ̀ ìgbóná ajá lẹ́yìn abẹ́rẹ́, lẹ́yìn náà dúró fún $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Lẹ́yìn náà ó kéré tán $duration ní orílẹ̀-èdè tí a fọwọ́ sí kí o tó fò';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Ìyàsọ́tọ̀ nígbà tí o bá dé fún ó kéré tán $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Ẹranko ọ̀sìn rẹ gbọ́dọ̀ ti tó ó kéré tán $duration';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Ó kéré jù fún $country: ẹranko ọ̀sìn rẹ gbọ́dọ̀ ti tó ó kéré tán $duration';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Vaultara ti ṣàyẹ̀wò · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'A kò tíì ṣàyẹ̀wò rẹ̀. Jẹ́rìí sí i lórí ojú-òpó ìjọba kí o tó ṣe ìfiṣura.';
+
+  @override
+  String get petRulesOtherAnimal => 'Òfin fún ẹranko yìí yàtọ̀ sí ti ajá àti ológbò. Wo ojú-òpó ìjọba fún ohun tí ó nílò.';
+
+  @override
+  String get countryTypeHint => 'Bẹ̀rẹ̀ sí tẹ orílẹ̀-èdè kan, fún àpẹẹrẹ France';
+
+  @override
+  String get assistantStepPets => 'A ń ṣàyẹ̀wò àwọn ẹranko ọ̀sìn rẹ';
+
+  @override
+  String get tourPetsAddBody => 'Ṣàfikún ẹranko ọ̀sìn mìíràn níbí. Bẹ̀rẹ̀ sí tẹ irú rẹ̀, bí Ehoro tàbí Ayékòótọ́, kí o sì yan àbá kan.';
+
+  @override
+  String get rulesReviewTitle => 'Àwọn òfin láti ṣàyẹ̀wò';
+
+  @override
+  String get rulesReviewSubtitle => 'Àwọn òfin ìjọba tí a kà láti ojú-ewé ìjọba, tí ń dúró de ìfọwọ́sí rẹ';
+
+  @override
+  String get rulesReviewNow => 'Tí a ń fihàn báyìí';
+
+  @override
+  String get rulesReviewNew => 'Lórí ojú-ewé báyìí';
+
+  @override
+  String get rulesReviewPets => 'Ìrìn-àjò pẹ̀lú ẹranko ọ̀sìn';
+
+  @override
+  String get rulesReviewPassport => 'Àkókò ìwé ìrìnnà';
+
+  @override
+  String get rulesReviewApprove => 'Fọwọ́ sí';
+
+  @override
+  String get rulesReviewReject => 'Kọ̀';
+
+  @override
+  String get rulesReviewEmpty => 'Kò sí nǹkan láti ṣàyẹ̀wò.';
+
+  @override
+  String get rulesReviewDropped => 'A fi sílẹ̀ (kò sí gbólóhùn tí ó bá a mu)';
+
+  @override
   String get yoursTag => 'Tìrẹ';
 
   @override

@@ -8298,6 +8298,339 @@ class AppLocalizationsKm extends AppLocalizations {
   String get subcategoryPetPassports => 'លិខិតឆ្លងដែនសត្វចិញ្ចឹម';
 
   @override
+  String get petsTitle => 'សត្វចិញ្ចឹម';
+
+  @override
+  String get petsTileSubtitle => 'ឯកសារ មីក្រូឈីប និងពេទ្យសត្វ សម្រាប់សត្វចិញ្ចឹមនីមួយៗ';
+
+  @override
+  String get petsNotMembers => 'សត្វចិញ្ចឹមមិនត្រូវបានរាប់ជាសមាជិករបស់អ្នកទេ។';
+
+  @override
+  String get petsAdd => 'បន្ថែមសត្វចិញ្ចឹម';
+
+  @override
+  String get petsEmptyBody => 'បន្ថែមសត្វចិញ្ចឹមរបស់អ្នក ដើម្បីរក្សាវ៉ាក់សាំង អាជ្ញាប័ណ្ណ ធានារ៉ាប់រង និងមីក្រូឈីបរបស់វាជាមួយគ្នា ដោយមានការរំលឹកមុនពេលអ្វីមួយផុតកំណត់។';
+
+  @override
+  String get petsPremium => 'ប្រវត្តិរូបសត្វចិញ្ចឹមជាផ្នែកមួយនៃ Premium។';
+
+  @override
+  String get petKindDog => 'ឆ្កែ';
+
+  @override
+  String get petKindCat => 'ឆ្មា';
+
+  @override
+  String get petKindOther => 'សត្វចិញ្ចឹមផ្សេងទៀត';
+
+  @override
+  String get petBirthday => 'ថ្ងៃខែឆ្នាំកំណើត';
+
+  @override
+  String petBorn(String date) {
+    return 'កើតថ្ងៃ $date';
+  }
+
+  @override
+  String get petChipNumber => 'លេខមីក្រូឈីប';
+
+  @override
+  String get petChipInvalid => 'ប្រើលេខ 9 ដល់ 15 ខ្ទង់នៅលើវិញ្ញាបនបត្រឈីប។';
+
+  @override
+  String get petChipRegistry => 'បញ្ជីឈីប';
+
+  @override
+  String get petChipTip => 'ធ្វើបច្ចុប្បន្នភាពបញ្ជីនៅពេលអ្នកផ្លាស់ទីលំនៅ ឬប្ដូរលេខ បើមិនដូច្នោះទេ ឈីបមិនអាចនាំសត្វចិញ្ចឹមរបស់អ្នកមកផ្ទះវិញបានទេ។';
+
+  @override
+  String get petVetName => 'ពេទ្យសត្វ';
+
+  @override
+  String get petVetPhone => 'ទូរស័ព្ទពេទ្យសត្វ';
+
+  @override
+  String get petDocuments => 'ឯកសារ';
+
+  @override
+  String get petStillToAdd => 'នៅត្រូវបន្ថែម';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return 'លុប $name? ឯកសាររបស់វានៅតែក្នុង Vaultara។';
+  }
+
+  @override
+  String get petLostTitle => 'សត្វចិញ្ចឹមបាត់';
+
+  @override
+  String get petLostSteps => 'ជាដំបូង រាយការណ៍ទៅបញ្ជីឈីបថាសត្វចិញ្ចឹមរបស់អ្នកបាត់។ បន្ទាប់មក ទូរស័ព្ទទៅពេទ្យសត្វ និងជម្រកសត្វនៅជិតដោយប្រាប់លេខមីក្រូឈីប ហើយចែករំលែករូបថតថ្មីៗក្នុងតំបន់ និងតាមអ៊ីនធឺណិត។';
+
+  @override
+  String get petTravelTitle => 'ធ្វើដំណើរជាមួយសត្វចិញ្ចឹម';
+
+  @override
+  String get petTravelPick => 'តើអ្នកទៅណា?';
+
+  @override
+  String get petTravelHome => 'កន្លែងដែលសត្វចិញ្ចឹមរបស់អ្នករស់នៅ';
+
+  @override
+  String get petRuleChip => 'មីក្រូឈីប ISO ដាក់មុនវ៉ាក់សាំងជំងឺឆ្កែឆ្កួត';
+
+  @override
+  String get petRuleRabiesTest => 'វ៉ាក់សាំងជំងឺឆ្កែឆ្កួត និងតេស្តឈាមជំងឺឆ្កែឆ្កួតពីមន្ទីរពិសោធន៍ដែលបានអនុម័ត';
+
+  @override
+  String get petRuleCertificate => 'វិញ្ញាបនបត្រសុខភាពពីពេទ្យសត្វផ្លូវការ';
+
+  @override
+  String get petRulePermit => 'លិខិតអនុញ្ញាតនាំចូលមុនពេលធ្វើដំណើរ';
+
+  @override
+  String get petRuleTapeworm => 'ឆ្កែ៖ ព្យាបាលព្រូនស្ករ 1 ដល់ 5 ថ្ងៃមុនពេលអ្នកមកដល់';
+
+  @override
+  String get petRuleCdcForm => 'CDC Dog Import Form សម្រាប់ឆ្កែនីមួយៗ';
+
+  @override
+  String get petRuleSomeCountries => 'តែពីប្រទេសខ្លះប៉ុណ្ណោះ៖';
+
+  @override
+  String get petRulesOfficial => 'ច្បាប់ផ្លូវការ';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara មិនទាន់មានច្បាប់សត្វចិញ្ចឹមសម្រាប់ $country ទេ។ សេវាពេទ្យសត្វផ្លូវការ ឬស្ថានទូតរបស់វាអាចប្រាប់អ្នកពីអ្វីដែលត្រូវការ។';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'ច្បាប់មីក្រូឈីបនៅ $country';
+  }
+
+  @override
+  String get petLawUk => 'តម្រូវសម្រាប់ឆ្កែ និងសម្រាប់ឆ្មានៅអង់គ្លេស';
+
+  @override
+  String get petLawEu => 'ច្បាប់ខុសគ្នាតាមប្រទេស។ ច្បាប់ EU ថ្មីនឹងធ្វើឱ្យវាជាការតម្រូវសម្រាប់ឆ្កែ និងឆ្មាទាំងអស់។';
+
+  @override
+  String get petLawMostStates => 'តម្រូវសម្រាប់ឆ្កែ និងឆ្មានៅរដ្ឋ និងដែនដីភាគច្រើន';
+
+  @override
+  String get petLawDogs => 'តម្រូវសម្រាប់ឆ្កែ';
+
+  @override
+  String get petLawSellers => 'តម្រូវសម្រាប់ឆ្កែ និងឆ្មាដែលលក់ដោយអ្នកបង្កាត់ពូជ និងហាងសត្វចិញ្ចឹម';
+
+  @override
+  String get petLawLocal => 'កំណត់ដោយរដ្ឋ ខេត្ត ឬទីក្រុងនីមួយៗ';
+
+  @override
+  String get petLawNone => 'មិនតម្រូវដោយច្បាប់ជាតិទេ ប៉ុន្តែត្រូវការសម្រាប់ធ្វើដំណើរ និងការសុំចិញ្ចឹមភាគច្រើន';
+
+  @override
+  String get tripPetsTitle => 'សត្វចិញ្ចឹមក្នុងដំណើរនេះ';
+
+  @override
+  String get petCheckNoChip => 'មិនមានមីក្រូឈីបរក្សាទុកទេ';
+
+  @override
+  String get petCheckNoRabies => 'មិនមានវ៉ាក់សាំងជំងឺឆ្កែឆ្កួតរក្សាទុកទេ';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'វ៉ាក់សាំងជំងឺឆ្កែឆ្កួតផុតកំណត់ $date មុនពេលអ្នកត្រឡប់មកវិញ';
+  }
+
+  @override
+  String get petCheckTooSoon => 'ការរង់ចាំក្រោយតេស្តឈាមប្រហែលមិនទាន់មុនពេលអ្នកចេញដំណើរ។ សូមនិយាយជាមួយពេទ្យសត្វរបស់អ្នកឥឡូវនេះ។';
+
+  @override
+  String get petCheckNoCertificate => 'មិនមានវិញ្ញាបនបត្រសុខភាព ឬលិខិតឆ្លងដែនសត្វចិញ្ចឹមរក្សាទុកទេ';
+
+  @override
+  String get planBenefitPets => 'សត្វចិញ្ចឹមដែលមានឯកសារ មីក្រូឈីប និងពេទ្យសត្វផ្ទាល់ខ្លួន មិនរាប់ជាសមាជិក';
+
+  @override
+  String get tutorialsSubPets => 'ឯកសារសត្វចិញ្ចឹម មីក្រូឈីប និងច្បាប់ធ្វើដំណើរ';
+
+  @override
+  String get tourPetsListBody => 'សត្វចិញ្ចឹមនីមួយៗមានប្រវត្តិរូបផ្ទាល់ខ្លួន ដោយមានមីក្រូឈីប ពេទ្យសត្វ និងឯកសារនៅកន្លែងតែមួយ។ សត្វចិញ្ចឹមមិនត្រូវបានរាប់ជាសមាជិករបស់អ្នកទេ។';
+
+  @override
+  String get tourPetsDocsBody => 'វ៉ាក់សាំង អាជ្ញាប័ណ្ណ និងធានារ៉ាប់រងជារបស់សត្វចិញ្ចឹម ដូច្នេះការរំលឹកប្រាប់ថាជារបស់នរណា។ ស្លាកសញ្ញាបង្ហាញអ្វីដែលបានរក្សាទុក។';
+
+  @override
+  String get tourPetsTravelBody => 'ជ្រើសរើសប្រទេស ដើម្បីមើលថាសត្វចិញ្ចឹមរបស់អ្នកត្រូវការអ្វីដើម្បីធ្វើដំណើរទៅទីនោះ និងចំណាយពេលប៉ុន្មាន។';
+
+  @override
+  String get petTypeLabel => 'ប្រភេទសត្វចិញ្ចឹម';
+
+  @override
+  String get petTypeHint => 'ចាប់ផ្ដើមវាយ ឧទាហរណ៍ ទន្សាយ ឬ សេក';
+
+  @override
+  String get petTypeFerret => 'សត្វហ្វឺរ៉េត';
+
+  @override
+  String get petTypeRabbit => 'ទន្សាយ';
+
+  @override
+  String get petTypeGuineaPig => 'ជ្រូកហ្គីណេ';
+
+  @override
+  String get petTypeHamster => 'ហាំស្ទ័រ';
+
+  @override
+  String get petTypeRat => 'កណ្ដុរធំ';
+
+  @override
+  String get petTypeMouse => 'កណ្ដុរ';
+
+  @override
+  String get petTypeGerbil => 'ជឺប៊ីល';
+
+  @override
+  String get petTypeChinchilla => 'ឈីនឈីឡា';
+
+  @override
+  String get petTypeHedgehog => 'កាំប្រមា';
+
+  @override
+  String get petTypeHorse => 'សេះ';
+
+  @override
+  String get petTypePony => 'សេះតឿ';
+
+  @override
+  String get petTypeDonkey => 'លា';
+
+  @override
+  String get petTypeParrot => 'សេក';
+
+  @override
+  String get petTypeBudgie => 'សេកតូច';
+
+  @override
+  String get petTypeCockatiel => 'កូកាទីល';
+
+  @override
+  String get petTypeCanary => 'បក្សីកាណារី';
+
+  @override
+  String get petTypeChicken => 'មាន់';
+
+  @override
+  String get petTypeTortoise => 'អណ្ដើក';
+
+  @override
+  String get petTypeTurtle => 'កន្ធាយ';
+
+  @override
+  String get petTypeSnake => 'ពស់';
+
+  @override
+  String get petTypeLizard => 'បង្កួយ';
+
+  @override
+  String get petTypeGecko => 'តុកកែ';
+
+  @override
+  String get petTypeBeardedDragon => 'នាគពុកចង្ការ';
+
+  @override
+  String get petTypeFrog => 'កង្កែប';
+
+  @override
+  String get petTypeAxolotl => 'អាក់សូឡូទល';
+
+  @override
+  String get petTypeFish => 'ត្រី';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'វ៉ាក់សាំងឆ្កែឆ្កួតយ៉ាងហោចណាស់ $duration មុនពេលអ្នកមកដល់';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'ការធ្វើតេស្តឈាមឆ្កែឆ្កួតក្រោយវ៉ាក់សាំង បន្ទាប់មករង់ចាំ $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'បន្ទាប់មកយ៉ាងហោចណាស់ $duration នៅប្រទេសដែលបានអនុម័តមុនពេលហោះហើរ';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'ដាក់ឲ្យនៅដាច់ដោយឡែកពេលមកដល់យ៉ាងហោចណាស់ $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'សត្វចិញ្ចឹមរបស់អ្នកត្រូវមានអាយុយ៉ាងហោចណាស់ $duration';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'ក្មេងពេកសម្រាប់ $country៖ សត្វចិញ្ចឹមរបស់អ្នកត្រូវមានអាយុយ៉ាងហោចណាស់ $duration';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'ពិនិត្យដោយ Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'មិនទាន់ពិនិត្យនៅឡើយ។ សូមបញ្ជាក់នៅគេហទំព័រផ្លូវការមុនពេលកក់។';
+
+  @override
+  String get petRulesOtherAnimal => 'ច្បាប់សម្រាប់សត្វនេះខុសពីច្បាប់សម្រាប់ឆ្កែ និងឆ្មា។ សូមមើលគេហទំព័រផ្លូវការអំពីអ្វីដែលវាត្រូវការ។';
+
+  @override
+  String get countryTypeHint => 'ចាប់ផ្ដើមវាយឈ្មោះប្រទេស ឧទាហរណ៍ បារាំង';
+
+  @override
+  String get assistantStepPets => 'កំពុងពិនិត្យសត្វចិញ្ចឹមរបស់អ្នក';
+
+  @override
+  String get tourPetsAddBody => 'បន្ថែមសត្វចិញ្ចឹមមួយទៀតនៅទីនេះ។ ចាប់ផ្ដើមវាយប្រភេទ ដូចជា ទន្សាយ ឬ សេក ហើយជ្រើសការណែនាំមួយ។';
+
+  @override
+  String get rulesReviewTitle => 'ច្បាប់ដែលត្រូវពិនិត្យ';
+
+  @override
+  String get rulesReviewSubtitle => 'ច្បាប់ផ្លូវការដែលបានអានពីទំព័ររដ្ឋាភិបាល កំពុងរង់ចាំការអនុម័តរបស់អ្នក';
+
+  @override
+  String get rulesReviewNow => 'កំពុងបង្ហាញឥឡូវ';
+
+  @override
+  String get rulesReviewNew => 'នៅលើទំព័រឥឡូវ';
+
+  @override
+  String get rulesReviewPets => 'ធ្វើដំណើរជាមួយសត្វចិញ្ចឹម';
+
+  @override
+  String get rulesReviewPassport => 'សុពលភាពលិខិតឆ្លងដែន';
+
+  @override
+  String get rulesReviewApprove => 'អនុម័ត';
+
+  @override
+  String get rulesReviewReject => 'បដិសេធ';
+
+  @override
+  String get rulesReviewEmpty => 'គ្មានអ្វីត្រូវពិនិត្យទេ។';
+
+  @override
+  String get rulesReviewDropped => 'បានទុកចោល (គ្មានប្រយោគដែលត្រូវគ្នា)';
+
+  @override
   String get yoursTag => 'របស់អ្នក';
 
   @override

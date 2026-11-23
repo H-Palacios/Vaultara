@@ -8361,6 +8361,339 @@ class AppLocalizationsDe extends AppLocalizations {
   String get subcategoryPetPassports => 'Heimtierausweise';
 
   @override
+  String get petsTitle => 'Haustiere';
+
+  @override
+  String get petsTileSubtitle => 'Dokumente, Mikrochip und Tierarzt für jedes Haustier';
+
+  @override
+  String get petsNotMembers => 'Haustiere zählen nicht zu Ihren Mitgliedern.';
+
+  @override
+  String get petsAdd => 'Haustier hinzufügen';
+
+  @override
+  String get petsEmptyBody => 'Fügen Sie Ihr Haustier hinzu, damit Impfungen, Hundemarke, Versicherung und Mikrochip zusammen sind, mit Erinnerungen, bevor etwas abläuft.';
+
+  @override
+  String get petsPremium => 'Haustierprofile sind Teil von Premium.';
+
+  @override
+  String get petKindDog => 'Hund';
+
+  @override
+  String get petKindCat => 'Katze';
+
+  @override
+  String get petKindOther => 'Anderes Haustier';
+
+  @override
+  String get petBirthday => 'Geburtsdatum';
+
+  @override
+  String petBorn(String date) {
+    return 'Geboren am $date';
+  }
+
+  @override
+  String get petChipNumber => 'Mikrochipnummer';
+
+  @override
+  String get petChipInvalid => 'Verwenden Sie die 9 bis 15 Ziffern auf dem Chip-Zertifikat.';
+
+  @override
+  String get petChipRegistry => 'Chip-Register';
+
+  @override
+  String get petChipTip => 'Halten Sie das Register aktuell, wenn Sie umziehen oder Ihre Nummer ändern, sonst kann der Chip Ihr Haustier nicht nach Hause bringen.';
+
+  @override
+  String get petVetName => 'Tierarzt';
+
+  @override
+  String get petVetPhone => 'Telefon des Tierarztes';
+
+  @override
+  String get petDocuments => 'Dokumente';
+
+  @override
+  String get petStillToAdd => 'Noch hinzuzufügen';
+
+  @override
+  String petRemoveConfirm(String name) {
+    return '$name entfernen? Die Dokumente bleiben in Vaultara.';
+  }
+
+  @override
+  String get petLostTitle => 'Haustier vermisst';
+
+  @override
+  String get petLostSteps => 'Melden Sie Ihr Haustier zuerst beim Chip-Register als vermisst. Rufen Sie dann Tierärzte und Tierheime in der Nähe mit der Mikrochipnummer an und teilen Sie ein aktuelles Foto vor Ort und online.';
+
+  @override
+  String get petTravelTitle => 'Reisen mit Haustier';
+
+  @override
+  String get petTravelPick => 'Wohin geht die Reise?';
+
+  @override
+  String get petTravelHome => 'Wo Ihr Haustier lebt';
+
+  @override
+  String get petRuleChip => 'Ein ISO-Mikrochip, gesetzt vor der Tollwutimpfung';
+
+  @override
+  String get petRuleRabiesTest => 'Tollwutimpfung und ein Tollwut-Bluttest in einem zugelassenen Labor';
+
+  @override
+  String get petRuleCertificate => 'Eine Gesundheitsbescheinigung eines amtlichen Tierarztes';
+
+  @override
+  String get petRulePermit => 'Eine Einfuhrgenehmigung vor der Reise';
+
+  @override
+  String get petRuleTapeworm => 'Hunde: Bandwurmbehandlung 1 bis 5 Tage vor der Ankunft';
+
+  @override
+  String get petRuleCdcForm => 'Ein CDC Dog Import Form für jeden Hund';
+
+  @override
+  String get petRuleSomeCountries => 'Nur aus manchen Ländern:';
+
+  @override
+  String get petRulesOfficial => 'Offizielle Regeln';
+
+  @override
+  String petRulesUnknown(String country) {
+    return 'Vaultara hat die Haustierregeln für $country noch nicht. Der amtliche Veterinärdienst oder die Botschaft kann Ihnen sagen, was nötig ist.';
+  }
+
+  @override
+  String petLawTitle(String country) {
+    return 'Mikrochip-Gesetz in $country';
+  }
+
+  @override
+  String get petLawUk => 'Pflicht für Hunde und in England auch für Katzen';
+
+  @override
+  String get petLawEu => 'Die Regeln unterscheiden sich je nach Land. Ein neues EU-Gesetz macht ihn für alle Hunde und Katzen zur Pflicht.';
+
+  @override
+  String get petLawMostStates => 'Pflicht für Hunde und Katzen in den meisten Bundesstaaten und Territorien';
+
+  @override
+  String get petLawDogs => 'Pflicht für Hunde';
+
+  @override
+  String get petLawSellers => 'Pflicht für Hunde und Katzen, die von Züchtern und Zoohandlungen verkauft werden';
+
+  @override
+  String get petLawLocal => 'Legt jeder Bundesstaat, jede Provinz oder Stadt selbst fest';
+
+  @override
+  String get petLawNone => 'Nicht gesetzlich vorgeschrieben, aber für Reisen und die meisten Adoptionen nötig';
+
+  @override
+  String get tripPetsTitle => 'Haustiere auf dieser Reise';
+
+  @override
+  String get petCheckNoChip => 'Kein Mikrochip gespeichert';
+
+  @override
+  String get petCheckNoRabies => 'Keine Tollwutimpfung gespeichert';
+
+  @override
+  String petCheckRabiesRunsOut(String date) {
+    return 'Tollwutimpfung läuft am $date ab, vor Ihrer Rückkehr';
+  }
+
+  @override
+  String get petCheckTooSoon => 'Die Wartezeit nach dem Bluttest reicht vor der Abreise vielleicht nicht. Sprechen Sie jetzt mit Ihrem Tierarzt.';
+
+  @override
+  String get petCheckNoCertificate => 'Keine Gesundheitsbescheinigung und kein Heimtierausweis gespeichert';
+
+  @override
+  String get planBenefitPets => 'Haustiere mit eigenen Dokumenten, Mikrochip und Tierarzt, ohne als Mitglieder zu zählen';
+
+  @override
+  String get tutorialsSubPets => 'Haustierdokumente, Mikrochip und Reiseregeln';
+
+  @override
+  String get tourPetsListBody => 'Jedes Haustier hat ein eigenes Profil mit Mikrochip, Tierarzt und Dokumenten an einem Ort. Haustiere zählen nicht zu Ihren Mitgliedern.';
+
+  @override
+  String get tourPetsDocsBody => 'Impfungen, Hundemarke und Versicherung gehören zum Haustier, daher sagen Erinnerungen, wem sie gehören. Die Abzeichen zeigen, was gespeichert ist.';
+
+  @override
+  String get tourPetsTravelBody => 'Wählen Sie ein Land, um zu sehen, was Ihr Haustier für die Reise dorthin braucht und wie lange es dauert.';
+
+  @override
+  String get petTypeLabel => 'Tierart';
+
+  @override
+  String get petTypeHint => 'Tippen Sie los, zum Beispiel Kaninchen oder Papagei';
+
+  @override
+  String get petTypeFerret => 'Frettchen';
+
+  @override
+  String get petTypeRabbit => 'Kaninchen';
+
+  @override
+  String get petTypeGuineaPig => 'Meerschweinchen';
+
+  @override
+  String get petTypeHamster => 'Hamster';
+
+  @override
+  String get petTypeRat => 'Ratte';
+
+  @override
+  String get petTypeMouse => 'Maus';
+
+  @override
+  String get petTypeGerbil => 'Rennmaus';
+
+  @override
+  String get petTypeChinchilla => 'Chinchilla';
+
+  @override
+  String get petTypeHedgehog => 'Igel';
+
+  @override
+  String get petTypeHorse => 'Pferd';
+
+  @override
+  String get petTypePony => 'Pony';
+
+  @override
+  String get petTypeDonkey => 'Esel';
+
+  @override
+  String get petTypeParrot => 'Papagei';
+
+  @override
+  String get petTypeBudgie => 'Wellensittich';
+
+  @override
+  String get petTypeCockatiel => 'Nymphensittich';
+
+  @override
+  String get petTypeCanary => 'Kanarienvogel';
+
+  @override
+  String get petTypeChicken => 'Huhn';
+
+  @override
+  String get petTypeTortoise => 'Landschildkröte';
+
+  @override
+  String get petTypeTurtle => 'Wasserschildkröte';
+
+  @override
+  String get petTypeSnake => 'Schlange';
+
+  @override
+  String get petTypeLizard => 'Eidechse';
+
+  @override
+  String get petTypeGecko => 'Gecko';
+
+  @override
+  String get petTypeBeardedDragon => 'Bartagame';
+
+  @override
+  String get petTypeFrog => 'Frosch';
+
+  @override
+  String get petTypeAxolotl => 'Axolotl';
+
+  @override
+  String get petTypeFish => 'Fisch';
+
+  @override
+  String petRuleRabiesFor(String duration) {
+    return 'Tollwutimpfung mindestens $duration vor der Ankunft';
+  }
+
+  @override
+  String petRuleTitreFor(String duration) {
+    return 'Ein Tollwut-Bluttest nach der Impfung, dann eine Wartezeit von $duration';
+  }
+
+  @override
+  String petRuleResidenceFor(String duration) {
+    return 'Dann mindestens $duration in einem zugelassenen Land vor dem Flug';
+  }
+
+  @override
+  String petRuleQuarantineFor(String duration) {
+    return 'Quarantäne bei der Ankunft für mindestens $duration';
+  }
+
+  @override
+  String petRuleMinAgeFor(String duration) {
+    return 'Ihr Tier muss mindestens $duration alt sein';
+  }
+
+  @override
+  String petCheckTooYoungFor(String country, String duration) {
+    return 'Zu jung für $country: Ihr Tier muss mindestens $duration alt sein';
+  }
+
+  @override
+  String petRulesCheckedBy(String date) {
+    return 'Geprüft von Vaultara · $date';
+  }
+
+  @override
+  String get petRulesNotChecked => 'Noch nicht geprüft. Bestätigen Sie es vor der Buchung auf der offiziellen Website.';
+
+  @override
+  String get petRulesOtherAnimal => 'Für dieses Tier gelten andere Regeln als für Hunde und Katzen. Was es braucht, steht auf der offiziellen Website.';
+
+  @override
+  String get countryTypeHint => 'Tippen Sie ein Land, zum Beispiel Frankreich';
+
+  @override
+  String get assistantStepPets => 'Ihre Haustiere werden geprüft';
+
+  @override
+  String get tourPetsAddBody => 'Fügen Sie hier ein weiteres Haustier hinzu. Tippen Sie die Tierart, etwa Kaninchen oder Papagei, und wählen Sie einen Vorschlag.';
+
+  @override
+  String get rulesReviewTitle => 'Regeln zur Prüfung';
+
+  @override
+  String get rulesReviewSubtitle => 'Offizielle Regeln von Regierungsseiten, die auf Ihre Freigabe warten';
+
+  @override
+  String get rulesReviewNow => 'Jetzt angezeigt';
+
+  @override
+  String get rulesReviewNew => 'Jetzt auf der Seite';
+
+  @override
+  String get rulesReviewPets => 'Reisen mit Haustier';
+
+  @override
+  String get rulesReviewPassport => 'Gültigkeit des Reisepasses';
+
+  @override
+  String get rulesReviewApprove => 'Freigeben';
+
+  @override
+  String get rulesReviewReject => 'Ablehnen';
+
+  @override
+  String get rulesReviewEmpty => 'Nichts zu prüfen.';
+
+  @override
+  String get rulesReviewDropped => 'Ausgelassen (kein passender Satz)';
+
+  @override
   String get yoursTag => 'Deins';
 
   @override
