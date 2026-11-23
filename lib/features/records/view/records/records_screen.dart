@@ -190,6 +190,7 @@ class _RecordsScreenState extends State<RecordsScreen> {
           leadDays: draft.leadDays,
           isDeleted: false,
           householdId: draft.shared ? HouseholdRepository.householdId : null,
+          assigneeUid: draft.shared ? draft.assigneeUid : null,
         );
 
         final ok = await RecordRepository.addRecord(

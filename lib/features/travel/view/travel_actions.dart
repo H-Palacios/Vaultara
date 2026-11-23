@@ -80,6 +80,7 @@ class TravelActions {
           reference: draft.reference,
           leadDays: draft.leadDays,
           householdId: draft.shared ? HouseholdRepository.householdId : null,
+          assigneeUid: draft.shared ? draft.assigneeUid : null,
         );
         final ok = await RecordRepository.addRecord(
           record,

@@ -59,6 +59,7 @@ Future<void> openRecordEditor({
       referenceLockedMask: numberLocked ? record.referenceMasked : null,
       leadDays: record.leadDays,
       shared: record.isShared,
+      assigneeUid: record.assigneeUid,
     ),
     onSave: (draft) async {
       final updated = record.copyWith(
@@ -89,6 +90,8 @@ Future<void> openRecordEditor({
         clearReference: draft.reference == null && !numberLocked,
         leadDays: draft.leadDays,
         clearLeadDays: draft.leadDays == null,
+        assigneeUid: draft.shared ? draft.assigneeUid : null,
+        clearAssignee: !draft.shared || draft.assigneeUid == null,
       );
 
       await RecordRepository.updateRecord(record, updated);

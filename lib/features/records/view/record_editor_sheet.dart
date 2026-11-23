@@ -71,6 +71,7 @@ import 'package:vaultara/features/assistant/view/describe_record_sheet.dart';
 import 'package:vaultara/features/assistant/view/widgets/editor_assist_widgets.dart';
 import 'package:vaultara/features/billing/view/open_plans.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
+import 'package:vaultara/features/household/view/renewer_picker.dart';
 
 Future<void> showRecordEditorSheet({
   required BuildContext context,
@@ -220,6 +221,9 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
   late final TextEditingController referenceController;
   int? leadDays;
   bool shared = false;
+
+  /// Who renews it, for a shared record.
+  String? assigneeUid;
   bool scanBusy = false;
   ScanParseResult? scanBanner;
   String? scannedNationality;
@@ -306,6 +310,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
     referenceController = TextEditingController(text: draft?.reference ?? '');
     leadDays = draft?.leadDays;
     shared = draft?.shared ?? false;
+    assigneeUid = draft?.assigneeUid;
     renewalCost = draft?.renewalCost;
     costCurrency = draft?.costCurrency;
     attachments = List<RecordAttachment>.of(
@@ -1585,6 +1590,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
           reference: TrackedItem.cleanReference(referenceController.text),
           leadDays: leadDays,
           shared: shared && HouseholdRepository.canEditShared,
+          assigneeUid: shared ? assigneeUid : null,
         ),
       );
     } catch (_) {
@@ -2093,6 +2099,13 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
                             enabled: !isSaving,
                             onChanged: (value) =>
                                 setState(() => shared = value),
+                          ),
+                        if (showShared && shared)
+                          RenewerPicker(
+                            value: assigneeUid,
+                            enabled: !isSaving,
+                            onChanged: (uid) =>
+                                setState(() => assigneeUid = uid),
                           ),
                         const SizedBox(height: 8),
                         IgnorePointer(

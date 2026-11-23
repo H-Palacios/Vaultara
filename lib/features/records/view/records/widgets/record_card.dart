@@ -11,6 +11,7 @@ import 'package:vaultara/features/guides/data/renewal_guides.dart';
 import 'package:vaultara/features/guides/logic/renewal_checklist.dart';
 import 'package:vaultara/features/vault/view/record_photos_button.dart';
 import 'package:vaultara/features/household/view/shared_badge.dart';
+import 'package:vaultara/features/household/view/renewer_badge.dart';
 import 'package:vaultara/features/household/data/household_repository.dart';
 import 'package:vaultara/features/household/logic/record_owner.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -178,6 +179,13 @@ class RecordCard extends StatelessWidget {
                     RecordOwnerChip(record: record),
                   ],
                 ),
+                if (record.isShared && record.assigneeUid != null) ...[
+                  const SizedBox(height: 4),
+                  Align(
+                    alignment: AlignmentDirectional.centerStart,
+                    child: RenewerBadge(record: record),
+                  ),
+                ],
                 const SizedBox(height: 4),
                 _ExpiryDateLine(
                   date: record.expiryDate,

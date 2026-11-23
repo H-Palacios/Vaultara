@@ -89,6 +89,7 @@ void openAddRecord(
         leadDays: draft.leadDays,
         reminderBaseId: DateTime.now().millisecondsSinceEpoch % 2147483647,
         householdId: draft.shared ? HouseholdRepository.householdId : null,
+        assigneeUid: draft.shared ? draft.assigneeUid : null,
       );
 
       final ok = await RecordRepository.addRecord(
