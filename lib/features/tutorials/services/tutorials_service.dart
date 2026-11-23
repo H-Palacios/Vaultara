@@ -210,7 +210,7 @@ class TutorialsService {
         if (fromTour) {
           playFullTour(context);
         } else {
-          AddRecordTutorialLauncher.launch(context);
+          unawaited(AddRecordTutorialLauncher.launch(context));
         }
         break;
       case idReminders:
@@ -259,6 +259,6 @@ class TutorialsService {
   static Future<void> playFullTour(BuildContext context) async {
     unawaited(AnalyticsService.logFullTourStarted().catchError((_) {}));
     TutorialController.instance.beginFullTour();
-    AddRecordTutorialLauncher.launch(context);
+    unawaited(AddRecordTutorialLauncher.launch(context));
   }
 }
