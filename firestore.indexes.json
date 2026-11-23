@@ -71,6 +71,12 @@
       "indexes": []
     },
     {
+      "collectionGroup": "clientLinks",
+      "fieldPath": "expiresAt",
+      "ttl": true,
+      "indexes": []
+    },
+    {
       "collectionGroup": "securityEvents",
       "fieldPath": "expireAt",
       "ttl": true,
