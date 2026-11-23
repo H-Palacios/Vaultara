@@ -1150,6 +1150,9 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Imbas sehingga 10 dokumen sekali gus';
+
+  @override
   String get planFeatureAutoReminders => 'Peringatan automatik';
 
   @override
@@ -3207,6 +3210,9 @@ class AppLocalizationsMs extends AppLocalizations {
   String get businessBenefitRoles => 'Tetapkan dokumen diperlukan bagi setiap peranan dan lihat apa yang tiada pada setiap orang';
 
   @override
+  String get businessBenefitStaffImport => 'Import senarai kakitangan anda daripada hamparan';
+
+  @override
   String get businessBenefitPdf => 'Eksport PDF pasukan dengan nama syarikat anda';
 
   @override
@@ -3650,6 +3656,28 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Dapatkan templat';
+
+  @override
+  String get batchScanAction => 'Imbas beberapa dokumen';
+
+  @override
+  String get batchScanHint => 'Premium: sehingga 10 foto sekali gus. Ia dibaca pada telefon anda, dan anda menyemak setiap satu sebelum apa-apa disimpan.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Membaca $done daripada $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Dokumen yang diimbas';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Dokumen $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Foto tidak dapat dibaca. Cuba foto yang lebih jelas, satu dokumen bagi setiap foto.';
 
   @override
   String get csvImportColumnsTitle => 'Lajur yang boleh anda gunakan';
@@ -4984,6 +5012,46 @@ class AppLocalizationsMs extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Permintaan dihantar: $sent daripada $count';
   }
+
+  @override
+  String get staffImportAction => 'Import kakitangan daripada hamparan';
+
+  @override
+  String get staffImportHint => 'Fail CSV dengan lajur Nama, dan lajur E-mel jika ada.';
+
+  @override
+  String get staffImportTitle => 'Import kakitangan';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Sedia untuk ditambah: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Ditinggalkan: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Baris ditinggalkan jika nama kosong atau sudah ada dalam senarai anda, atau apabila had $limit orang pelan anda dicapai.';
+  }
+
+  @override
+  String get staffImportEmails => 'Hantar peringatan e-mel kepada mereka tentang dokumen mereka';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Tambah $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Orang ditambah: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Lajur nama tidak ditemui. Letakkan nama dalam lajur bernama Nama atau Name.';
 
   @override
   String get roleAction => 'Peranan dan dokumen diperlukan';
@@ -8055,6 +8123,9 @@ class AppLocalizationsMs extends AppLocalizations {
   String get tourImport2Body => 'Sudah ada hamparan? Import dan semak setiap baris sebelum disimpan.';
 
   @override
+  String get tourImportBatchBody => 'Dengan Premium, anda boleh mengimbas sehingga 10 dokumen sekali gus dan menyemak semuanya sebelum apa-apa disimpan.';
+
+  @override
   String get tourImport3Title => 'Kongsi ke Vaultara';
 
   @override
@@ -8083,6 +8154,9 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Tambah kakitangan dan simpan sijil, permit dan lesen mereka di satu tempat.';
+
+  @override
+  String get tourBusinessImportBody => 'Sudah ada senarai kakitangan? Anda boleh mengimportnya daripada hamparan, dengan nama dan e-mel.';
 
   @override
   String get tourBusinessRolesBody => 'Beri setiap orang peranan, seperti Pemandu, dengan dokumen yang diperlukan. Vaultara menunjukkan apa yang tiada.';

@@ -1144,6 +1144,9 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'สแกนเอกสารสูงสุด 10 รายการพร้อมกัน';
+
+  @override
   String get planFeatureAutoReminders => 'การแจ้งเตือนอัตโนมัติ';
 
   @override
@@ -3195,6 +3198,9 @@ class AppLocalizationsTh extends AppLocalizations {
   String get businessBenefitRoles => 'กำหนดเอกสารที่ต้องมีตามตำแหน่ง และดูว่าแต่ละคนขาดอะไร';
 
   @override
+  String get businessBenefitStaffImport => 'นำเข้ารายชื่อพนักงานจากสเปรดชีต';
+
+  @override
   String get businessBenefitPdf => 'ส่งออก PDF ของทีมพร้อมชื่อบริษัทของคุณ';
 
   @override
@@ -3638,6 +3644,28 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'รับเทมเพลต';
+
+  @override
+  String get batchScanAction => 'สแกนเอกสารหลายรายการ';
+
+  @override
+  String get batchScanHint => 'Premium: สูงสุด 10 รูปพร้อมกัน อ่านบนโทรศัพท์ของคุณ และคุณตรวจทีละรายการก่อนบันทึก';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'กำลังอ่าน $done จาก $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'เอกสารที่สแกน';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'เอกสาร $number';
+  }
+
+  @override
+  String get batchScanFailed => 'อ่านรูปไม่ได้ ลองถ่ายรูปให้ชัดขึ้น หนึ่งเอกสารต่อหนึ่งรูป';
 
   @override
   String get csvImportColumnsTitle => 'คอลัมน์ที่ใช้ได้';
@@ -4972,6 +5000,46 @@ class AppLocalizationsTh extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'ส่งคำขอแล้ว: $sent จาก $count';
   }
+
+  @override
+  String get staffImportAction => 'นำเข้าพนักงานจากสเปรดชีต';
+
+  @override
+  String get staffImportHint => 'ไฟล์ CSV ที่มีคอลัมน์ชื่อ และคอลัมน์อีเมลถ้ามี';
+
+  @override
+  String get staffImportTitle => 'นำเข้าพนักงาน';
+
+  @override
+  String staffImportReady(int count) {
+    return 'พร้อมเพิ่ม: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'ข้าม: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'แถวจะถูกข้ามเมื่อชื่อว่างหรือมีในรายชื่อแล้ว หรือเมื่อครบ $limit คนของแพ็กเกจคุณ';
+  }
+
+  @override
+  String get staffImportEmails => 'ส่งการแจ้งเตือนทางอีเมลเกี่ยวกับเอกสารของพวกเขา';
+
+  @override
+  String staffImportButton(int count) {
+    return 'เพิ่ม $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'เพิ่มแล้ว: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'ไม่พบคอลัมน์ชื่อ ใส่ชื่อในคอลัมน์ที่ชื่อ Name หรือ ชื่อ';
 
   @override
   String get roleAction => 'ตำแหน่งและเอกสารที่ต้องมี';
@@ -8043,6 +8111,9 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tourImport2Body => 'มีสเปรดชีตอยู่แล้ว? นำเข้าแล้วตรวจทุกแถวก่อนบันทึก';
 
   @override
+  String get tourImportBatchBody => 'ด้วย Premium คุณสแกนเอกสารได้สูงสุด 10 รายการพร้อมกัน และตรวจทั้งหมดก่อนบันทึก';
+
+  @override
   String get tourImport3Title => 'แชร์มาที่ Vaultara';
 
   @override
@@ -8071,6 +8142,9 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'เพิ่มพนักงานและเก็บใบรับรอง ใบอนุญาต และใบประกอบวิชาชีพไว้ที่เดียว';
+
+  @override
+  String get tourBusinessImportBody => 'มีรายชื่อพนักงานอยู่แล้ว? คุณนำเข้าจากสเปรดชีตพร้อมชื่อและอีเมลได้';
 
   @override
   String get tourBusinessRolesBody => 'กำหนดตำแหน่งให้แต่ละคน เช่น พนักงานขับรถ พร้อมเอกสารที่ต้องมี Vaultara จะแสดงสิ่งที่ขาด';

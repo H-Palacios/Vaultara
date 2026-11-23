@@ -1151,6 +1151,9 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Skena ukuya kumaxwebhu ali-10 ngaxeshanye';
+
+  @override
   String get planFeatureAutoReminders => 'Izikhumbuzo ezenzekelayo';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsXh extends AppLocalizations {
   String get businessBenefitRoles => 'Misela amaxwebhu afunekayo kwindima nganye ubone okungekho kumntu ngamnye';
 
   @override
+  String get businessBenefitStaffImport => 'Ngenisa uluhlu lwabasebenzi bakho kwispredishithi';
+
+  @override
   String get businessBenefitPdf => 'Ukukhutshelwa kwe-PDF yeqela kunye negama lenkampani yakho';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Fumana itemplethi';
+
+  @override
+  String get batchScanAction => 'Skena amaxwebhu amaninzi';
+
+  @override
+  String get batchScanHint => 'Premium: ukuya kwiifoto ezi-10 ngaxeshanye. Zifundwa kwifowuni yakho, kwaye ujonga nganye ngaphambi kokuba kugcinwe nantoni na.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Kufundwa $done kwezi-$total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Amaxwebhu askeniweyo';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Uxwebhu $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Iifoto azikwazanga ukufundwa. Zama iifoto ezicacileyo, uxwebhu olunye kwifoto nganye.';
 
   @override
   String get csvImportColumnsTitle => 'Iikholam onokuzisebenzisa';
@@ -5018,6 +5046,46 @@ class AppLocalizationsXh extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Izicelo ezithunyelweyo: $sent kwi-$count';
   }
+
+  @override
+  String get staffImportAction => 'Ngenisa abasebenzi kwispredishithi';
+
+  @override
+  String get staffImportHint => 'Ifayile ye-CSV enekholam yeGama, nekholam ye-Imeyile ukuba unayo.';
+
+  @override
+  String get staffImportTitle => 'Ngenisa abasebenzi';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Kulungele ukongezwa: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Kushiywe ngaphandle: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Imiqolo ishiywa ngaphandle xa igama lingenanto okanye sele likuluhlu lwakho, okanye xa abantu abangu-$limit besicwangciso sakho bezalisekile.';
+  }
+
+  @override
+  String get staffImportEmails => 'Bathumelele izikhumbuzo nge-imeyile malunga namaxwebhu abo';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Yongeza $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Abantu abongeziweyo: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Ikholam yegama ayifumanekanga. Faka amagama kwikholam ebizwa ngokuba nguName okanye iGama.';
 
   @override
   String get roleAction => 'Indima namaxwebhu afunekayo';
@@ -8112,6 +8180,9 @@ class AppLocalizationsXh extends AppLocalizations {
   String get tourImport2Body => 'Sele unayo ispredishithi? Yingenise uze ujonge umqolo ngamnye phambi kokuba kugcinwe nantoni na.';
 
   @override
+  String get tourImportBatchBody => 'Nge-Premium ungaskena ukuya kumaxwebhu ali-10 ngaxeshanye uze uwajonge onke ngaphambi kokuba kugcinwe nantoni na.';
+
+  @override
   String get tourImport3Title => 'Yabelana ne-Vaultara';
 
   @override
@@ -8140,6 +8211,9 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Yongeza abasebenzi uze ugcine izatifikethi, iimvume neelayisensi zabo kwindawo enye.';
+
+  @override
+  String get tourBusinessImportBody => 'Sele unoluhlu lwabasebenzi? Ungalungenisa kwispredishithi, namagama nee-imeyile.';
 
   @override
   String get tourBusinessRolesBody => 'Nika umntu ngamnye indima, njengoMqhubi, namaxwebhu ayifunayo. I-Vaultara ibonisa okungekhoyo.';

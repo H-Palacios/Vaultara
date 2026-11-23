@@ -1151,6 +1151,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'تا ١٠ بەڵگەنامە بە یەکجار سکان بکە';
+
+  @override
   String get planFeatureAutoReminders => 'بیرخەرەوەی خۆکار';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get businessBenefitRoles => 'بەڵگەنامە پێویستەکان بۆ هەر ڕۆڵێک دابنێ و ببینە هەر کەسێک چی نییە';
 
   @override
+  String get businessBenefitStaffImport => 'لیستی کارمەندانت لە خشتەیەکەوە بهێنە';
+
+  @override
   String get businessBenefitPdf => 'هەناردەکردنی PDFی تیم بە ناوی کۆمپانیاکەتەوە';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'وەرگرتنی قاڵب';
+
+  @override
+  String get batchScanAction => 'چەند بەڵگەنامەیەک سکان بکە';
+
+  @override
+  String get batchScanHint => 'Premium: تا ١٠ وێنە بە یەکجار. لەسەر مۆبایلەکەت دەخوێندرێنەوە، و پێش پاشەکەوتکردن هەموویان دەپشکنیت.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'خوێندنەوەی $done لە $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'بەڵگەنامە سکانکراوەکان';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'بەڵگەنامەی $number';
+  }
+
+  @override
+  String get batchScanFailed => 'وێنەکان نەخوێندرانەوە. وێنەی ڕوونتر تاقی بکەرەوە، یەک بەڵگەنامە لە هەر وێنەیەکدا.';
 
   @override
   String get csvImportColumnsTitle => 'ستوونەکان کە دەتوانیت بەکاریان بهێنیت';
@@ -5018,6 +5046,46 @@ class AppLocalizationsCkb extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'داواکاری نێردراو: $sent لە $count';
   }
+
+  @override
+  String get staffImportAction => 'هێنانی کارمەندان لە خشتە';
+
+  @override
+  String get staffImportHint => 'فایلی CSV کە ستوونی ناوی تێدایە، و ستوونی ئیمەیڵ ئەگەر هەتە.';
+
+  @override
+  String get staffImportTitle => 'هێنانی کارمەندان';
+
+  @override
+  String staffImportReady(int count) {
+    return 'ئامادە بۆ زیادکردن: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'بەجێهێڵراو: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'ڕیزەکان بەجێدەهێڵرێن کاتێک ناو بەتاڵە یان پێشتر لە لیستەکەتدایە، یان کاتێک $limit کەسی پلانەکەت پڕ دەبێت.';
+  }
+
+  @override
+  String get staffImportEmails => 'بە ئیمەیڵ بیرخستنەوەیان بۆ بنێرە دەربارەی بەڵگەنامەکانیان';
+
+  @override
+  String staffImportButton(int count) {
+    return 'زیادکردنی $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'کەسانی زیادکراو: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'ستوونی ناو نەدۆزرایەوە. ناوەکان لە ستوونێک بە ناوی Name دابنێ.';
 
   @override
   String get roleAction => 'ڕۆڵ و بەڵگەنامە پێویستەکان';
@@ -8112,6 +8180,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get tourImport2Body => 'پێشتر خشتەیەکت هەیە؟ هاوردەی بکە و پێش پاشەکەوتکردن هەر ڕیزێک بپشکنە.';
 
   @override
+  String get tourImportBatchBody => 'بە Premium دەتوانیت تا ١٠ بەڵگەنامە بە یەکجار سکان بکەیت و پێش پاشەکەوتکردن هەموویان بپشکنیت.';
+
+  @override
   String get tourImport3Title => 'بۆ Vaultara هاوبەشی بکە';
 
   @override
@@ -8140,6 +8211,9 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'کارمەندان زیاد بکە و بڕوانامە، مۆڵەت و ڕێپێدانەکانیان لە یەک شوێندا هەڵبگرە.';
+
+  @override
+  String get tourBusinessImportBody => 'لیستی کارمەندانت هەیە؟ دەتوانیت لە خشتەیەکەوە بە ناو و ئیمەیڵەوە بیهێنیت.';
 
   @override
   String get tourBusinessRolesBody => 'ڕۆڵێک بدە بە هەر کەسێک، وەک شۆفێر، لەگەڵ ئەو بەڵگەنامانەی پێویستی پێیەتی. Vaultara پیشان دەدات چی نییە.';

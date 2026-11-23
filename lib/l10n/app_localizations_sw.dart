@@ -1151,6 +1151,9 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Changanua hadi hati 10 kwa wakati mmoja';
+
+  @override
   String get planFeatureAutoReminders => 'Vikumbusho vya kiotomatiki';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get businessBenefitRoles => 'Weka hati zinazohitajika kwa kila wadhifa na uone kinachokosekana kwa kila mtu';
 
   @override
+  String get businessBenefitStaffImport => 'Leta orodha ya wafanyakazi wako kutoka lahajedwali';
+
+  @override
   String get businessBenefitPdf => 'Usafirishaji wa PDF wa timu wenye jina la kampuni yako';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Pata kiolezo';
+
+  @override
+  String get batchScanAction => 'Changanua hati kadhaa';
+
+  @override
+  String get batchScanHint => 'Premium: hadi picha 10 kwa wakati mmoja. Zinasomwa kwenye simu yako, na unakagua kila moja kabla chochote hakijahifadhiwa.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Inasoma $done kati ya $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Hati zilizochanganuliwa';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Hati $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Picha hazikuweza kusomwa. Jaribu picha zilizo wazi zaidi, hati moja kwa kila picha.';
 
   @override
   String get csvImportColumnsTitle => 'Safu wima unazoweza kutumia';
@@ -5018,6 +5046,46 @@ class AppLocalizationsSw extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Maombi yaliyotumwa: $sent kati ya $count';
   }
+
+  @override
+  String get staffImportAction => 'Leta wafanyakazi kutoka lahajedwali';
+
+  @override
+  String get staffImportHint => 'Faili ya CSV yenye safu ya Jina, na safu ya Barua pepe ukiwa nayo.';
+
+  @override
+  String get staffImportTitle => 'Leta wafanyakazi';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Tayari kuongezwa: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Zimeachwa: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Safu huachwa jina likiwa tupu au tayari liko kwenye orodha yako, au watu $limit wa mpango wako wanapotimia.';
+  }
+
+  @override
+  String get staffImportEmails => 'Watumie vikumbusho kwa barua pepe kuhusu hati zao';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Ongeza $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Watu walioongezwa: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Safu ya jina haikupatikana. Weka majina kwenye safu inayoitwa Name au Jina.';
 
   @override
   String get roleAction => 'Wadhifa na hati zinazohitajika';
@@ -8112,6 +8180,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tourImport2Body => 'Tayari una lahajedwali? Ilete na ukague kila safu kabla kitu chochote hakijahifadhiwa.';
 
   @override
+  String get tourImportBatchBody => 'Ukiwa na Premium unaweza kuchanganua hadi hati 10 kwa wakati mmoja na kuzikagua zote kabla chochote hakijahifadhiwa.';
+
+  @override
   String get tourImport3Title => 'Shiriki kwa Vaultara';
 
   @override
@@ -8140,6 +8211,9 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Ongeza wafanyakazi na uweke vyeti, vibali na leseni zao mahali pamoja.';
+
+  @override
+  String get tourBusinessImportBody => 'Una orodha ya wafanyakazi tayari? Unaweza kuileta kutoka lahajedwali, pamoja na majina na barua pepe.';
 
   @override
   String get tourBusinessRolesBody => 'Mpe kila mtu wadhifa, kama Dereva, pamoja na hati unazohitaji. Vaultara inaonyesha kinachokosekana.';

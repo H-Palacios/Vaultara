@@ -1149,6 +1149,9 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Mag-scan ng hanggang 10 dokumento nang sabay';
+
+  @override
   String get planFeatureAutoReminders => 'Awtomatikong paalala';
 
   @override
@@ -3221,6 +3224,9 @@ class AppLocalizationsFil extends AppLocalizations {
   String get businessBenefitRoles => 'Itakda ang mga kailangang dokumento bawat tungkulin at tingnan ang kulang ng bawat isa';
 
   @override
+  String get businessBenefitStaffImport => 'I-import ang listahan ng staff mula sa spreadsheet';
+
+  @override
   String get businessBenefitPdf => 'PDF export ng team na may pangalan ng kumpanya mo';
 
   @override
@@ -3669,6 +3675,28 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Kumuha ng template';
+
+  @override
+  String get batchScanAction => 'Mag-scan ng ilang dokumento';
+
+  @override
+  String get batchScanHint => 'Premium: hanggang 10 larawan nang sabay. Binabasa ang mga ito sa phone mo, at sinusuri mo ang bawat isa bago may ma-save.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Binabasa ang $done sa $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Mga na-scan na dokumento';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Dokumento $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Hindi mabasa ang mga larawan. Subukan ang mas malinaw na larawan, isang dokumento bawat larawan.';
 
   @override
   String get csvImportColumnsTitle => 'Mga column na magagamit mo';
@@ -5016,6 +5044,46 @@ class AppLocalizationsFil extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Naipadalang request: $sent sa $count';
   }
+
+  @override
+  String get staffImportAction => 'Mag-import ng staff mula sa spreadsheet';
+
+  @override
+  String get staffImportHint => 'Isang CSV file na may column na Pangalan, at column na Email kung mayroon ka.';
+
+  @override
+  String get staffImportTitle => 'Mag-import ng staff';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Handang idagdag: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Hindi isinama: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Hindi isinasama ang mga row na walang pangalan o nasa listahan mo na, o kapag naabot na ang $limit tao ng plano mo.';
+  }
+
+  @override
+  String get staffImportEmails => 'I-email sa kanila ang mga paalala tungkol sa kanilang dokumento';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Idagdag ang $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Naidagdag na tao: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Walang nakitang column ng pangalan. Ilagay ang mga pangalan sa column na Name o Pangalan.';
 
   @override
   String get roleAction => 'Tungkulin at mga kailangang dokumento';
@@ -8106,6 +8174,9 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tourImport2Body => 'May spreadsheet ka na? I-import ito at suriin ang bawat row bago may ma-save.';
 
   @override
+  String get tourImportBatchBody => 'Sa Premium, puwede kang mag-scan ng hanggang 10 dokumento nang sabay at suriin lahat bago may ma-save.';
+
+  @override
   String get tourImport3Title => 'Ibahagi sa Vaultara';
 
   @override
@@ -8134,6 +8205,9 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Magdagdag ng staff at itago ang kanilang mga sertipiko, permit at lisensya sa iisang lugar.';
+
+  @override
+  String get tourBusinessImportBody => 'May listahan ka na ng staff? Puwede mo itong i-import mula sa spreadsheet, kasama ang mga pangalan at email.';
 
   @override
   String get tourBusinessRolesBody => 'Bigyan ang bawat tao ng tungkulin, gaya ng Driver, kasama ang mga dokumentong kailangan nito. Ipinapakita ng Vaultara kung ano ang kulang.';

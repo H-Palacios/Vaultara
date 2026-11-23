@@ -1155,6 +1155,9 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Nuskaitykite iki 10 dokumentų vienu metu';
+
+  @override
   String get planFeatureAutoReminders => 'Automatiniai priminimai';
 
   @override
@@ -3282,6 +3285,9 @@ class AppLocalizationsLt extends AppLocalizations {
   String get businessBenefitRoles => 'Nustatykite būtinus dokumentus pagal pareigas ir matykite, ko kam trūksta';
 
   @override
+  String get businessBenefitStaffImport => 'Importuokite darbuotojų sąrašą iš skaičiuoklės';
+
+  @override
   String get businessBenefitPdf => 'Komandos PDF eksportas su jūsų įmonės pavadinimu';
 
   @override
@@ -3740,6 +3746,28 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Gauti šabloną';
+
+  @override
+  String get batchScanAction => 'Nuskaityti kelis dokumentus';
+
+  @override
+  String get batchScanHint => 'Premium: iki 10 nuotraukų vienu metu. Jos nuskaitomos jūsų telefone, o kiekvieną peržiūrite prieš ką nors išsaugant.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Nuskaitoma $done iš $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Nuskaityti dokumentai';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Dokumentas $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Nuotraukų nepavyko nuskaityti. Pabandykite aiškesnes nuotraukas, po vieną dokumentą nuotraukoje.';
 
   @override
   String get csvImportColumnsTitle => 'Galimi stulpeliai';
@@ -5113,6 +5141,46 @@ class AppLocalizationsLt extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Išsiųsta užklausų: $sent iš $count';
   }
+
+  @override
+  String get staffImportAction => 'Importuoti darbuotojus iš skaičiuoklės';
+
+  @override
+  String get staffImportHint => 'CSV failas su stulpeliu Vardas ir, jei turite, stulpeliu El. paštas.';
+
+  @override
+  String get staffImportTitle => 'Importuoti darbuotojus';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Paruošta pridėti: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Praleista: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Eilutės praleidžiamos, kai vardas tuščias ar jau yra jūsų sąraše, arba kai pasiekiama jūsų plano $limit žmonių riba.';
+  }
+
+  @override
+  String get staffImportEmails => 'Siųsti jiems priminimus el. paštu apie jų dokumentus';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Pridėti $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Pridėta žmonių: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Vardų stulpelis nerastas. Įrašykite vardus į stulpelį, pavadintą Vardas arba Name.';
 
   @override
   String get roleAction => 'Pareigos ir būtini dokumentai';
@@ -8253,6 +8321,9 @@ class AppLocalizationsLt extends AppLocalizations {
   String get tourImport2Body => 'Jau turite skaičiuoklę? Importuokite ją ir patikrinkite kiekvieną eilutę prieš išsaugant.';
 
   @override
+  String get tourImportBatchBody => 'Su Premium galite nuskaityti iki 10 dokumentų vienu metu ir visus peržiūrėti prieš ką nors išsaugant.';
+
+  @override
   String get tourImport3Title => 'Bendrinkite į Vaultara';
 
   @override
@@ -8281,6 +8352,9 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Pridėkite darbuotojų ir laikykite jų pažymėjimus, leidimus ir licencijas vienoje vietoje.';
+
+  @override
+  String get tourBusinessImportBody => 'Jau turite darbuotojų sąrašą? Galite jį importuoti iš skaičiuoklės su vardais ir el. paštais.';
 
   @override
   String get tourBusinessRolesBody => 'Suteikite kiekvienam pareigas, pvz., Vairuotojas, su reikiamais dokumentais. Vaultara rodo, ko trūksta.';

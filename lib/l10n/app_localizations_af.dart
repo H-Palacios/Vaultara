@@ -1151,6 +1151,9 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Skandeer tot 10 dokumente op een slag';
+
+  @override
   String get planFeatureAutoReminders => 'Outomatiese herinneringe';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsAf extends AppLocalizations {
   String get businessBenefitRoles => 'Stel vereiste dokumente per rol en sien wat elke persoon kort';
 
   @override
+  String get businessBenefitStaffImport => 'Voer jou personeellys uit \'n sigblad in';
+
+  @override
   String get businessBenefitPdf => 'Span-PDF-uitvoer met jou maatskappynaam';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Kry \'n sjabloon';
+
+  @override
+  String get batchScanAction => 'Skandeer verskeie dokumente';
+
+  @override
+  String get batchScanHint => 'Premium: tot 10 foto\'s op een slag. Hulle word op jou foon gelees, en jy kyk elkeen na voordat iets gestoor word.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Lees $done van $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Geskandeerde dokumente';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Dokument $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Die foto\'s kon nie gelees word nie. Probeer duideliker foto\'s, een dokument per foto.';
 
   @override
   String get csvImportColumnsTitle => 'Kolomme wat jy kan gebruik';
@@ -5018,6 +5046,46 @@ class AppLocalizationsAf extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Versoeke gestuur: $sent van $count';
   }
+
+  @override
+  String get staffImportAction => 'Voer personeel uit \'n sigblad in';
+
+  @override
+  String get staffImportHint => '\'n CSV-lêer met \'n Naam-kolom, en \'n E-pos-kolom as jy een het.';
+
+  @override
+  String get staffImportTitle => 'Voer personeel in';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Gereed om by te voeg: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Weggelaat: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Rye word weggelaat as die naam leeg is of reeds in jou lys is, of sodra jou plan se $limit mense bereik is.';
+  }
+
+  @override
+  String get staffImportEmails => 'E-pos hulle herinneringe oor hul dokumente';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Voeg $count by';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Mense bygevoeg: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Geen Naam-kolom is gevind nie. Sit die name in \'n kolom genaamd Naam.';
 
   @override
   String get roleAction => 'Rol en vereiste dokumente';
@@ -8116,6 +8184,9 @@ class AppLocalizationsAf extends AppLocalizations {
   String get tourImport2Body => 'Het jy reeds \'n sigblad? Voer dit in en gaan elke ry na voordat iets gestoor word.';
 
   @override
+  String get tourImportBatchBody => 'Op Premium kan jy tot 10 dokumente op een slag skandeer en almal nagaan voordat iets gestoor word.';
+
+  @override
   String get tourImport3Title => 'Deel na Vaultara';
 
   @override
@@ -8144,6 +8215,9 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Voeg personeel by en hou hul sertifikate, permitte en lisensies op een plek.';
+
+  @override
+  String get tourBusinessImportBody => 'Het jy reeds \'n personeellys? Jy kan dit uit \'n sigblad invoer, met name en e-posse.';
 
   @override
   String get tourBusinessRolesBody => 'Gee elke persoon \'n rol, soos Bestuurder, met die dokumente wat dit nodig het. Vaultara wys wat kortkom.';

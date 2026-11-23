@@ -1151,6 +1151,9 @@ class AppLocalizationsYo extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Ṣàyẹ̀wò tó ìwé 10 lẹ́ẹ̀kan';
+
+  @override
   String get planFeatureAutoReminders => 'Àwọn iranti aládàáṣe';
 
   @override
@@ -3208,6 +3211,9 @@ class AppLocalizationsYo extends AppLocalizations {
   String get businessBenefitRoles => 'Ṣètò àwọn ìwé tí a nílò fún ipa kọ̀ọ̀kan kí o sì rí ohun tí ẹnì kọ̀ọ̀kan kò ní';
 
   @override
+  String get businessBenefitStaffImport => 'Kó àkójọ òṣìṣẹ́ rẹ wọlé láti inú spreadsheet';
+
+  @override
   String get businessBenefitPdf => 'Gbigbe PDF ẹgbẹ́ jáde pẹ̀lú orúkọ ilé-iṣẹ́ rẹ';
 
   @override
@@ -3651,6 +3657,28 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Gba àwòṣe';
+
+  @override
+  String get batchScanAction => 'Ṣàyẹ̀wò ọ̀pọ̀ ìwé';
+
+  @override
+  String get batchScanHint => 'Premium: tó àwòrán 10 lẹ́ẹ̀kan. Wọ́n ń kà wọ́n lórí fóònù rẹ, o sì ń ṣàyẹ̀wò ọ̀kọ̀ọ̀kan kí ohunkóhun tó di fífipamọ́.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Ń ka $done nínú $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Àwọn ìwé tí a ṣàyẹ̀wò';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Ìwé $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Kò ṣeé ṣe láti ka àwọn àwòrán náà. Gbìyànjú àwọn àwòrán tó ṣe kedere, ìwé kan ní àwòrán kọ̀ọ̀kan.';
 
   @override
   String get csvImportColumnsTitle => 'Àwọn ọ̀wọ́n tí o lè lò';
@@ -4985,6 +5013,46 @@ class AppLocalizationsYo extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Àwọn ìbéèrè tí a fi ránṣẹ́: $sent nínú $count';
   }
+
+  @override
+  String get staffImportAction => 'Kó àwọn òṣìṣẹ́ wọlé láti inú spreadsheet';
+
+  @override
+  String get staffImportHint => 'Fáìlì CSV tó ní ọ̀wọ̀n Orúkọ, àti ọ̀wọ̀n Ímeèlì tí o bá ní.';
+
+  @override
+  String get staffImportTitle => 'Kó àwọn òṣìṣẹ́ wọlé';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Ti ṣetán láti fi kún: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'A fi sílẹ̀: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'A máa ń fi àwọn ìlà sílẹ̀ tí orúkọ bá ṣófo tàbí tí ó ti wà nínú àkójọ rẹ, tàbí nígbà tí ènìyàn $limit ètò rẹ bá kún.';
+  }
+
+  @override
+  String get staffImportEmails => 'Fi ìránnilétí ímeèlì ránṣẹ́ sí wọn nípa àwọn ìwé wọn';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Fi $count kún un';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Àwọn ènìyàn tí a fi kún: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'A kò rí ọ̀wọ̀n orúkọ. Fi àwọn orúkọ sínú ọ̀wọ̀n tí a pè ní Name tàbí Orúkọ.';
 
   @override
   String get roleAction => 'Ipa àti àwọn ìwé tí a nílò';
@@ -8061,6 +8129,9 @@ class AppLocalizationsYo extends AppLocalizations {
   String get tourImport2Body => 'Ṣe o ti ni iwe kaunti tẹlẹ? Gbe e wọle ki o ṣayẹwo ila kọọkan ṣaaju ki ohunkohun to fi pamọ.';
 
   @override
+  String get tourImportBatchBody => 'Pẹ̀lú Premium, o lè ṣàyẹ̀wò tó ìwé 10 lẹ́ẹ̀kan kí o sì ṣàyẹ̀wò gbogbo wọn kí ohunkóhun tó di fífipamọ́.';
+
+  @override
   String get tourImport3Title => 'Pin si Vaultara';
 
   @override
@@ -8089,6 +8160,9 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Ṣafikun oṣiṣẹ ki o tọju awọn iwe-ẹri, awọn iyọọda ati awọn iwe-aṣẹ wọn ni aaye kan.';
+
+  @override
+  String get tourBusinessImportBody => 'Ṣé o ti ní àkójọ òṣìṣẹ́? O lè kó o wọlé láti inú spreadsheet, pẹ̀lú orúkọ àti ímeèlì.';
 
   @override
   String get tourBusinessRolesBody => 'Fún ẹnì kọ̀ọ̀kan ní ipa, bí Awakọ̀, pẹ̀lú àwọn ìwé tó nílò. Vaultara ń fi ohun tó kù hàn.';

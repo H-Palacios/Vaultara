@@ -1151,6 +1151,9 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'একসাথে ১০টি পর্যন্ত নথি স্ক্যান করুন';
+
+  @override
   String get planFeatureAutoReminders => 'স্বয়ংক্রিয় রিমাইন্ডার';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get businessBenefitRoles => 'প্রতি ভূমিকায় প্রয়োজনীয় নথি ঠিক করুন এবং কার কী নেই দেখুন';
 
   @override
+  String get businessBenefitStaffImport => 'স্প্রেডশিট থেকে কর্মী তালিকা ইমপোর্ট করুন';
+
+  @override
   String get businessBenefitPdf => 'আপনার কোম্পানির নামসহ টিমের PDF এক্সপোর্ট';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'টেমপ্লেট নিন';
+
+  @override
+  String get batchScanAction => 'একাধিক নথি স্ক্যান করুন';
+
+  @override
+  String get batchScanHint => 'Premium: একসাথে ১০টি পর্যন্ত ছবি। আপনার ফোনেই পড়া হয়, কিছু সংরক্ষণের আগে প্রতিটি দেখে নেন।';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return '$totalটির মধ্যে $doneটি পড়া হচ্ছে…';
+  }
+
+  @override
+  String get batchScanFileName => 'স্ক্যান করা নথি';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'নথি $number';
+  }
+
+  @override
+  String get batchScanFailed => 'ছবিগুলো পড়া যায়নি। প্রতি ছবিতে একটি নথি রেখে আরও স্পষ্ট ছবি নিন।';
 
   @override
   String get csvImportColumnsTitle => 'যে কলামগুলো ব্যবহার করা যায়';
@@ -5018,6 +5046,46 @@ class AppLocalizationsBn extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'অনুরোধ পাঠানো হয়েছে: $count-এর মধ্যে $sent';
   }
+
+  @override
+  String get staffImportAction => 'স্প্রেডশিট থেকে কর্মী ইমপোর্ট করুন';
+
+  @override
+  String get staffImportHint => 'নামের কলাম এবং থাকলে ইমেইলের কলামসহ একটি CSV ফাইল।';
+
+  @override
+  String get staffImportTitle => 'কর্মী ইমপোর্ট করুন';
+
+  @override
+  String staffImportReady(int count) {
+    return 'যোগ করার জন্য প্রস্তুত: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'বাদ পড়েছে: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'নাম খালি থাকলে বা আগেই তালিকায় থাকলে, অথবা আপনার প্ল্যানের $limit জন পূর্ণ হলে সারি বাদ পড়ে।';
+  }
+
+  @override
+  String get staffImportEmails => 'তাদের নথি নিয়ে ইমেইলে রিমাইন্ডার পাঠান';
+
+  @override
+  String staffImportButton(int count) {
+    return '$count যোগ করুন';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'যোগ করা হয়েছে: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'নামের কলাম পাওয়া যায়নি। নামগুলো Name বা নাম কলামে রাখুন।';
 
   @override
   String get roleAction => 'ভূমিকা ও প্রয়োজনীয় নথি';
@@ -8112,6 +8180,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get tourImport2Body => 'আগে থেকেই স্প্রেডশিট আছে? ইমপোর্ট করুন এবং সেভের আগে প্রতিটি সারি দেখুন।';
 
   @override
+  String get tourImportBatchBody => 'Premium-এ একসাথে ১০টি পর্যন্ত নথি স্ক্যান করে কিছু সংরক্ষণের আগে সবগুলো দেখে নিতে পারেন।';
+
+  @override
   String get tourImport3Title => 'Vaultara-তে শেয়ার করুন';
 
   @override
@@ -8140,6 +8211,9 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'কর্মী যোগ করুন এবং তাদের সনদ, অনুমতিপত্র ও লাইসেন্স এক জায়গায় রাখুন।';
+
+  @override
+  String get tourBusinessImportBody => 'কর্মীদের তালিকা আছে? নাম ও ইমেইলসহ স্প্রেডশিট থেকে ইমপোর্ট করতে পারেন।';
 
   @override
   String get tourBusinessRolesBody => 'প্রত্যেককে চালকের মতো একটি ভূমিকা দিন, সাথে প্রয়োজনীয় নথি। কী নেই তা Vaultara দেখায়।';

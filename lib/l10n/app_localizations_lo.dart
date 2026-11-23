@@ -1150,6 +1150,9 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'ສະແກນເອກະສານສູງສຸດ 10 ອັນພ້ອມກັນ';
+
+  @override
   String get planFeatureAutoReminders => 'ການເຕືອນອັດຕະໂນມັດ';
 
   @override
@@ -3207,6 +3210,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String get businessBenefitRoles => 'ກຳນົດເອກະສານທີ່ຕ້ອງການຕາມໜ້າທີ່ ແລະ ເບິ່ງວ່າແຕ່ລະຄົນຂາດຫຍັງ';
 
   @override
+  String get businessBenefitStaffImport => 'ນຳເຂົ້າລາຍຊື່ພະນັກງານຈາກສະເປຣດຊີດ';
+
+  @override
   String get businessBenefitPdf => 'ສົ່ງອອກ PDF ຂອງທີມພ້ອມຊື່ບໍລິສັດຂອງທ່ານ';
 
   @override
@@ -3650,6 +3656,28 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'ຮັບແມ່ແບບ';
+
+  @override
+  String get batchScanAction => 'ສະແກນເອກະສານຫຼາຍອັນ';
+
+  @override
+  String get batchScanHint => 'Premium: ສູງສຸດ 10 ຮູບພ້ອມກັນ. ຮູບຈະຖືກອ່ານໃນໂທລະສັບຂອງທ່ານ ແລະ ທ່ານກວດແຕ່ລະອັນກ່ອນບັນທຶກ.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'ກຳລັງອ່ານ $done ຈາກ $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'ເອກະສານທີ່ສະແກນແລ້ວ';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'ເອກະສານ $number';
+  }
+
+  @override
+  String get batchScanFailed => 'ອ່ານຮູບບໍ່ໄດ້. ລອງຖ່າຍຮູບທີ່ຊັດກວ່ານີ້, ໜຶ່ງເອກະສານຕໍ່ຮູບ.';
 
   @override
   String get csvImportColumnsTitle => 'ຖັນທີ່ທ່ານໃຊ້ໄດ້';
@@ -4984,6 +5012,46 @@ class AppLocalizationsLo extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'ຄຳຂໍທີ່ສົ່ງແລ້ວ: $sent ຈາກ $count';
   }
+
+  @override
+  String get staffImportAction => 'ນຳເຂົ້າພະນັກງານຈາກສະເປຣດຊີດ';
+
+  @override
+  String get staffImportHint => 'ໄຟລ໌ CSV ທີ່ມີຖັນຊື່ ແລະ ຖັນອີເມວ ຖ້າມີ.';
+
+  @override
+  String get staffImportTitle => 'ນຳເຂົ້າພະນັກງານ';
+
+  @override
+  String staffImportReady(int count) {
+    return 'ພ້ອມເພີ່ມ: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'ຂ້າມ: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'ແຖວຈະຖືກຂ້າມເມື່ອຊື່ຫວ່າງ ຫຼື ມີໃນລາຍຊື່ແລ້ວ, ຫຼື ເມື່ອຄົບ $limit ຄົນຂອງແຜນທ່ານ.';
+  }
+
+  @override
+  String get staffImportEmails => 'ສົ່ງການເຕືອນທາງອີເມວກ່ຽວກັບເອກະສານຂອງພວກເຂົາ';
+
+  @override
+  String staffImportButton(int count) {
+    return 'ເພີ່ມ $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'ເພີ່ມຄົນແລ້ວ: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'ບໍ່ພົບຖັນຊື່. ໃສ່ຊື່ໃນຖັນທີ່ຊື່ວ່າ Name ຫຼື ຊື່.';
 
   @override
   String get roleAction => 'ໜ້າທີ່ ແລະ ເອກະສານທີ່ຕ້ອງການ';
@@ -8055,6 +8123,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String get tourImport2Body => 'ມີສະເປຣດຊີດຢູ່ແລ້ວບໍ? ນຳເຂົ້າ ແລ້ວກວດທຸກແຖວກ່ອນບັນທຶກ.';
 
   @override
+  String get tourImportBatchBody => 'ດ້ວຍ Premium ທ່ານສາມາດສະແກນເອກະສານສູງສຸດ 10 ອັນພ້ອມກັນ ແລະ ກວດທັງໝົດກ່ອນບັນທຶກ.';
+
+  @override
   String get tourImport3Title => 'ແບ່ງປັນມາ Vaultara';
 
   @override
@@ -8083,6 +8154,9 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'ເພີ່ມພະນັກງານ ແລະ ເກັບໃບຢັ້ງຢືນ, ໃບອະນຸຍາດ ແລະ ໃບຂັບຂີ່ຂອງເຂົາເຈົ້າໄວ້ບ່ອນດຽວ.';
+
+  @override
+  String get tourBusinessImportBody => 'ມີລາຍຊື່ພະນັກງານແລ້ວບໍ? ທ່ານສາມາດນຳເຂົ້າຈາກສະເປຣດຊີດ ພ້ອມຊື່ ແລະ ອີເມວ.';
 
   @override
   String get tourBusinessRolesBody => 'ໃຫ້ແຕ່ລະຄົນມີໜ້າທີ່ ເຊັ່ນ ຄົນຂັບລົດ ພ້ອມເອກະສານທີ່ຕ້ອງການ. Vaultara ສະແດງສິ່ງທີ່ຂາດ.';

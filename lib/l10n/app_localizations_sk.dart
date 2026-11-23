@@ -1153,6 +1153,9 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Skenujte až 10 dokladov naraz';
+
+  @override
   String get planFeatureAutoReminders => 'Automatické pripomienky';
 
   @override
@@ -3280,6 +3283,9 @@ class AppLocalizationsSk extends AppLocalizations {
   String get businessBenefitRoles => 'Nastavte povinné dokumenty pre každú rolu a uvidíte, čo komu chýba';
 
   @override
+  String get businessBenefitStaffImport => 'Importujte zoznam zamestnancov z tabuľky';
+
+  @override
   String get businessBenefitPdf => 'Tímový export do PDF s názvom vašej firmy';
 
   @override
@@ -3732,6 +3738,28 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Získať šablónu';
+
+  @override
+  String get batchScanAction => 'Naskenovať viac dokladov';
+
+  @override
+  String get batchScanHint => 'Premium: až 10 fotiek naraz. Čítajú sa v telefóne a každú skontrolujete skôr, ako sa čokoľvek uloží.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Čítanie $done z $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Naskenované doklady';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Doklad $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Fotky sa nepodarilo prečítať. Skúste ostrejšie fotky, jeden doklad na fotku.';
 
   @override
   String get csvImportColumnsTitle => 'Stĺpce, ktoré môžete použiť';
@@ -5105,6 +5133,46 @@ class AppLocalizationsSk extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Odoslané žiadosti: $sent z $count';
   }
+
+  @override
+  String get staffImportAction => 'Importovať zamestnancov z tabuľky';
+
+  @override
+  String get staffImportHint => 'Súbor CSV so stĺpcom Meno a stĺpcom E-mail, ak ho máte.';
+
+  @override
+  String get staffImportTitle => 'Import zamestnancov';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Pripravené na pridanie: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Vynechané: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Riadky sa vynechajú, keď je meno prázdne alebo už je v zozname, alebo keď dosiahnete $limit ľudí vo svojom pláne.';
+  }
+
+  @override
+  String get staffImportEmails => 'Posielať im e-mailom pripomienky k ich dokladom';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Pridať $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Pridané osoby: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Stĺpec s menom sa nenašiel. Dajte mená do stĺpca Meno alebo Name.';
 
   @override
   String get roleAction => 'Rola a povinné dokumenty';
@@ -8245,6 +8313,9 @@ class AppLocalizationsSk extends AppLocalizations {
   String get tourImport2Body => 'Už máte tabuľku? Importujte ju a pred uložením skontrolujte každý riadok.';
 
   @override
+  String get tourImportBatchBody => 'S Premium môžete naskenovať až 10 dokladov naraz a všetky skontrolovať skôr, ako sa čokoľvek uloží.';
+
+  @override
   String get tourImport3Title => 'Zdieľajte do Vaultary';
 
   @override
@@ -8273,6 +8344,9 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Pridajte zamestnancov a majte ich certifikáty, povolenia a licencie na jednom mieste.';
+
+  @override
+  String get tourBusinessImportBody => 'Máte zoznam zamestnancov? Môžete ho importovať z tabuľky s menami a e-mailmi.';
 
   @override
   String get tourBusinessRolesBody => 'Dajte každému rolu, napríklad Vodič, s dokumentmi, ktoré potrebuje. Vaultara ukáže, čo chýba.';

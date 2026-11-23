@@ -1154,6 +1154,9 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Scanáil suas le 10 ndoiciméad le chéile';
+
+  @override
   String get planFeatureAutoReminders => 'Meabhrúcháin uathoibríocha';
 
   @override
@@ -3307,6 +3310,9 @@ class AppLocalizationsGa extends AppLocalizations {
   String get businessBenefitRoles => 'Socraigh doiciméid riachtanacha in aghaidh an róil agus féach cad atá in easnamh ar gach duine';
 
   @override
+  String get businessBenefitStaffImport => 'Iompórtáil do liosta foirne ó scarbhileog';
+
+  @override
   String get businessBenefitPdf => 'Easpórtáil PDF foirne le hainm do chomhlachta';
 
   @override
@@ -3762,6 +3768,28 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Faigh teimpléad';
+
+  @override
+  String get batchScanAction => 'Scanáil roinnt doiciméad';
+
+  @override
+  String get batchScanHint => 'Premium: suas le 10 ngrianghraf le chéile. Léitear ar do ghuthán iad, agus seiceálann tú gach ceann sula sábháiltear aon rud.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Ag léamh $done as $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Doiciméid scanáilte';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Doiciméad $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Níorbh fhéidir na grianghraif a léamh. Bain triail as grianghraif níos soiléire, doiciméad amháin in aghaidh an ghrianghraif.';
 
   @override
   String get csvImportColumnsTitle => 'Colúin is féidir leat a úsáid';
@@ -5148,6 +5176,46 @@ class AppLocalizationsGa extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Iarratais seolta: $sent as $count';
   }
+
+  @override
+  String get staffImportAction => 'Iompórtáil foireann ó scarbhileog';
+
+  @override
+  String get staffImportHint => 'Comhad CSV le colún Ainm, agus colún Ríomhphost má tá ceann agat.';
+
+  @override
+  String get staffImportTitle => 'Iompórtáil foireann';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Réidh le cur leis: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Fágtha ar lár: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Fágtar sraitheanna ar lár nuair atá an t-ainm folamh nó ar do liosta cheana, nó nuair a shroichtear $limit duine do phlean.';
+  }
+
+  @override
+  String get staffImportEmails => 'Seol meabhrúcháin ríomhphoist chucu faoina ndoiciméid';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Cuir $count leis';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Daoine curtha leis: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Níor aimsíodh colún ainmneacha. Cuir na hainmneacha i gcolún darb ainm Name nó Ainm.';
 
   @override
   String get roleAction => 'Ról agus doiciméid riachtanacha';
@@ -8296,6 +8364,9 @@ class AppLocalizationsGa extends AppLocalizations {
   String get tourImport2Body => 'An bhfuil scarbhileog agat cheana? Iompórtáil í agus seiceáil gach ró sula sábháiltear aon rud.';
 
   @override
+  String get tourImportBatchBody => 'Le Premium, is féidir leat suas le 10 ndoiciméad a scanáil le chéile agus iad go léir a sheiceáil sula sábháiltear aon rud.';
+
+  @override
   String get tourImport3Title => 'Comhroinn le Vaultara';
 
   @override
@@ -8324,6 +8395,9 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Cuir baill foirne leis agus coinnigh a dteastais, a gceadanna agus a gceadúnais in aon áit amháin.';
+
+  @override
+  String get tourBusinessImportBody => 'An bhfuil liosta foirne agat cheana? Is féidir leat é a iompórtáil ó scarbhileog, le hainmneacha agus ríomhphoist.';
 
   @override
   String get tourBusinessRolesBody => 'Tabhair ról do gach duine, mar Tiománaí, leis na doiciméid a theastaíonn uaidh. Taispeánann Vaultara a bhfuil in easnamh.';

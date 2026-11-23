@@ -1151,6 +1151,9 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Skannaa jopa 10 asiakirjaa kerralla';
+
+  @override
   String get planFeatureAutoReminders => 'Automaattiset muistutukset';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsFi extends AppLocalizations {
   String get businessBenefitRoles => 'Määritä vaaditut asiakirjat rooleittain ja näe, mitä keneltäkin puuttuu';
 
   @override
+  String get businessBenefitStaffImport => 'Tuo henkilöstölistasi taulukosta';
+
+  @override
   String get businessBenefitPdf => 'Tiimin PDF-vienti yrityksesi nimellä';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Hae malli';
+
+  @override
+  String get batchScanAction => 'Skannaa useita asiakirjoja';
+
+  @override
+  String get batchScanHint => 'Premium: jopa 10 kuvaa kerralla. Ne luetaan puhelimessasi, ja tarkistat jokaisen ennen kuin mitään tallennetaan.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Luetaan $done/$total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Skannatut asiakirjat';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Asiakirja $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Kuvia ei voitu lukea. Kokeile selkeämpiä kuvia, yksi asiakirja kuvaa kohden.';
 
   @override
   String get csvImportColumnsTitle => 'Käytettävissä olevat sarakkeet';
@@ -5018,6 +5046,46 @@ class AppLocalizationsFi extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Pyyntöjä lähetetty: $sent/$count';
   }
+
+  @override
+  String get staffImportAction => 'Tuo henkilöstö taulukosta';
+
+  @override
+  String get staffImportHint => 'CSV-tiedosto, jossa on Nimi-sarake ja tarvittaessa Sähköposti-sarake.';
+
+  @override
+  String get staffImportTitle => 'Tuo henkilöstö';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Valmiina lisättäväksi: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Jätetty pois: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Rivit jätetään pois, jos nimi puuttuu tai on jo listallasi, tai kun tilauksesi $limit henkilöä on täynnä.';
+  }
+
+  @override
+  String get staffImportEmails => 'Lähetä heille muistutuksia asiakirjoista sähköpostilla';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Lisää $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Lisätty henkilöitä: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Nimisaraketta ei löytynyt. Laita nimet sarakkeeseen nimeltä Nimi tai Name.';
 
   @override
   String get roleAction => 'Rooli ja vaaditut asiakirjat';
@@ -8116,6 +8184,9 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tourImport2Body => 'Onko sinulla jo laskentataulukko? Tuo se ja tarkista jokainen rivi ennen tallennusta.';
 
   @override
+  String get tourImportBatchBody => 'Premiumilla voit skannata jopa 10 asiakirjaa kerralla ja tarkistaa ne kaikki ennen kuin mitään tallennetaan.';
+
+  @override
   String get tourImport3Title => 'Jaa Vaultaraan';
 
   @override
@@ -8144,6 +8215,9 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Lisää henkilöstö ja säilytä heidän todistuksensa, lupansa ja lisenssinsä yhdessä paikassa.';
+
+  @override
+  String get tourBusinessImportBody => 'Onko sinulla jo henkilöstölista? Voit tuoda sen taulukosta nimineen ja sähköposteineen.';
 
   @override
   String get tourBusinessRolesBody => 'Anna jokaiselle rooli, kuten Kuljettaja, ja sen vaatimat asiakirjat. Vaultara näyttää, mitä puuttuu.';

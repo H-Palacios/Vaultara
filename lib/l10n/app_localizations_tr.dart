@@ -1151,6 +1151,9 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Tek seferde 10 belgeye kadar tara';
+
+  @override
   String get planFeatureAutoReminders => 'Otomatik hatırlatıcılar';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String get businessBenefitRoles => 'Görev başına gerekli belgeleri belirle ve herkesin neyi eksik görsün';
 
   @override
+  String get businessBenefitStaffImport => 'Personel listeni tablodan içe aktar';
+
+  @override
   String get businessBenefitPdf => 'Şirket adınızla ekip PDF dışa aktarımı';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Şablon al';
+
+  @override
+  String get batchScanAction => 'Birden fazla belge tara';
+
+  @override
+  String get batchScanHint => 'Premium: tek seferde 10 fotoğrafa kadar. Telefonunda okunur ve hiçbir şey kaydedilmeden önce her birini kontrol edersin.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return '$total belgeden $done okunuyor…';
+  }
+
+  @override
+  String get batchScanFileName => 'Taranan belgeler';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Belge $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Fotoğraflar okunamadı. Daha net fotoğraflar dene, her fotoğrafta bir belge.';
 
   @override
   String get csvImportColumnsTitle => 'Kullanabileceğiniz sütunlar';
@@ -5018,6 +5046,46 @@ class AppLocalizationsTr extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Gönderilen istekler: $count istekten $sent tanesi';
   }
+
+  @override
+  String get staffImportAction => 'Personeli tablodan içe aktar';
+
+  @override
+  String get staffImportHint => 'Ad sütunu ve varsa E-posta sütunu olan bir CSV dosyası.';
+
+  @override
+  String get staffImportTitle => 'Personeli içe aktar';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Eklemeye hazır: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Atlanan: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Ad boşsa ya da listende zaten varsa veya planının $limit kişilik sınırına ulaşıldığında satırlar atlanır.';
+  }
+
+  @override
+  String get staffImportEmails => 'Belgeleri hakkında onlara e-postayla hatırlatma gönder';
+
+  @override
+  String staffImportButton(int count) {
+    return '$count ekle';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Eklenen kişi: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Ad sütunu bulunamadı. Adları Name veya Ad adlı bir sütuna yaz.';
 
   @override
   String get roleAction => 'Görev ve gerekli belgeler';
@@ -8112,6 +8180,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String get tourImport2Body => 'Zaten bir tablon mu var? İçe aktar ve kaydetmeden önce her satırı gözden geçir.';
 
   @override
+  String get tourImportBatchBody => 'Premium ile tek seferde 10 belgeye kadar tarayabilir ve hiçbir şey kaydedilmeden önce hepsini kontrol edebilirsin.';
+
+  @override
   String get tourImport3Title => 'Vaultara\'ya paylaş';
 
   @override
@@ -8140,6 +8211,9 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Personel ekle ve sertifikalarını, izinlerini ve lisanslarını tek yerde tut.';
+
+  @override
+  String get tourBusinessImportBody => 'Zaten bir personel listen var mı? Adlar ve e-postalarla tablodan içe aktarabilirsin.';
 
   @override
   String get tourBusinessRolesBody => 'Herkese Şoför gibi bir görev ve gereken belgeleri ver. Vaultara neyin eksik olduğunu gösterir.';

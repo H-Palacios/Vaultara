@@ -1151,6 +1151,9 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Scansiona fino a 10 documenti alla volta';
+
+  @override
   String get planFeatureAutoReminders => 'Promemoria automatici';
 
   @override
@@ -3227,6 +3230,9 @@ class AppLocalizationsIt extends AppLocalizations {
   String get businessBenefitRoles => 'Imposta i documenti richiesti per ruolo e vedi cosa manca a ciascuno';
 
   @override
+  String get businessBenefitStaffImport => 'Importa l\'elenco del personale da un foglio di calcolo';
+
+  @override
   String get businessBenefitPdf => 'Esportazione PDF per il team con il nome della tua azienda';
 
   @override
@@ -3675,6 +3681,28 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Scarica un modello';
+
+  @override
+  String get batchScanAction => 'Scansiona più documenti';
+
+  @override
+  String get batchScanHint => 'Premium: fino a 10 foto alla volta. Vengono lette sul tuo telefono e controlli ognuna prima che venga salvato qualcosa.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Lettura di $done su $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Documenti scansionati';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Documento $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Non è stato possibile leggere le foto. Prova con foto più nitide, un documento per foto.';
 
   @override
   String get csvImportColumnsTitle => 'Colonne utilizzabili';
@@ -5022,6 +5050,46 @@ class AppLocalizationsIt extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Richieste inviate: $sent di $count';
   }
+
+  @override
+  String get staffImportAction => 'Importa il personale da un foglio di calcolo';
+
+  @override
+  String get staffImportHint => 'Un file CSV con una colonna Nome e, se ce l\'hai, una colonna Email.';
+
+  @override
+  String get staffImportTitle => 'Importa il personale';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Pronti da aggiungere: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Esclusi: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Le righe vengono escluse se il nome è vuoto o già nel tuo elenco, o quando raggiungi le $limit persone del tuo piano.';
+  }
+
+  @override
+  String get staffImportEmails => 'Invia loro promemoria via email sui loro documenti';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Aggiungi $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Persone aggiunte: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Nessuna colonna del nome trovata. Metti i nomi in una colonna chiamata Nome.';
 
   @override
   String get roleAction => 'Ruolo e documenti richiesti';
@@ -8123,6 +8191,9 @@ class AppLocalizationsIt extends AppLocalizations {
   String get tourImport2Body => 'Hai già un foglio di calcolo? Importalo e controlla ogni riga prima di salvare.';
 
   @override
+  String get tourImportBatchBody => 'Con Premium puoi scansionare fino a 10 documenti alla volta e controllarli tutti prima che venga salvato qualcosa.';
+
+  @override
   String get tourImport3Title => 'Condividi in Vaultara';
 
   @override
@@ -8151,6 +8222,9 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Aggiungi il personale e tieni certificati, permessi e licenze in un unico posto.';
+
+  @override
+  String get tourBusinessImportBody => 'Hai già un elenco del personale? Puoi importarlo da un foglio di calcolo, con nomi ed email.';
 
   @override
   String get tourBusinessRolesBody => 'Assegna a ogni persona un ruolo, come Autista, con i documenti che richiede. Vaultara mostra cosa manca.';

@@ -1151,6 +1151,9 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Skano deri në 10 dokumente njëherësh';
+
+  @override
   String get planFeatureAutoReminders => 'Kujtesa automatike';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get businessBenefitRoles => 'Cakto dokumentet e kërkuara për çdo rol dhe shiko çfarë i mungon secilit';
 
   @override
+  String get businessBenefitStaffImport => 'Importo listën e stafit nga një fletëllogaritëse';
+
+  @override
   String get businessBenefitPdf => 'Eksport PDF për ekipin me emrin e kompanisë suaj';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Merr një shabllon';
+
+  @override
+  String get batchScanAction => 'Skano disa dokumente';
+
+  @override
+  String get batchScanHint => 'Premium: deri në 10 foto njëherësh. Lexohen në telefonin tënd dhe e kontrollon secilën para se të ruhet diçka.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Po lexohet $done nga $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Dokumente të skanuara';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Dokumenti $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Fotot nuk u lexuan dot. Provo foto më të qarta, një dokument për foto.';
 
   @override
   String get csvImportColumnsTitle => 'Kolonat që mund të përdorni';
@@ -5018,6 +5046,46 @@ class AppLocalizationsSq extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Kërkesa të dërguara: $sent nga $count';
   }
+
+  @override
+  String get staffImportAction => 'Importo stafin nga një fletëllogaritëse';
+
+  @override
+  String get staffImportHint => 'Një skedar CSV me kolonën Emri dhe kolonën Email nëse e ke.';
+
+  @override
+  String get staffImportTitle => 'Importo stafin';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Gati për t\'u shtuar: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Lënë jashtë: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Rreshtat lihen jashtë kur emri është bosh ose tashmë në listë, ose kur arrihen $limit personat e planit tënd.';
+  }
+
+  @override
+  String get staffImportEmails => 'Dërgoju kujtesa me email për dokumentet e tyre';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Shto $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Persona të shtuar: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Nuk u gjet kolona e emrit. Vendosi emrat në një kolonë me emrin Emri ose Name.';
 
   @override
   String get roleAction => 'Roli dhe dokumentet e kërkuara';
@@ -8116,6 +8184,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tourImport2Body => 'Ke tashmë një tabelë? Importoje dhe kontrollo çdo rresht para se të ruhet diçka.';
 
   @override
+  String get tourImportBatchBody => 'Me Premium mund të skanosh deri në 10 dokumente njëherësh dhe t\'i kontrollosh të gjitha para se të ruhet diçka.';
+
+  @override
   String get tourImport3Title => 'Ndaj te Vaultara';
 
   @override
@@ -8144,6 +8215,9 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Shto stafin dhe mbaj certifikatat, lejet dhe licencat e tyre në një vend.';
+
+  @override
+  String get tourBusinessImportBody => 'Ke tashmë një listë stafi? Mund ta importosh nga një fletëllogaritëse, me emra dhe email-e.';
 
   @override
   String get tourBusinessRolesBody => 'Jepi çdo personi një rol, si Shofer, me dokumentet që kërkon. Vaultara tregon çfarë mungon.';

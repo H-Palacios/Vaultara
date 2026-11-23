@@ -1151,6 +1151,9 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'ఒకేసారి 10 పత్రాల వరకు స్కాన్ చేయండి';
+
+  @override
   String get planFeatureAutoReminders => 'ఆటోమేటిక్ రిమైండర్లు';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsTe extends AppLocalizations {
   String get businessBenefitRoles => 'ప్రతి పాత్రకు అవసరమైన పత్రాలను సెట్ చేసి, ఎవరి వద్ద ఏమి లేవో చూడండి';
 
   @override
+  String get businessBenefitStaffImport => 'మీ సిబ్బంది జాబితాను స్ప్రెడ్‌షీట్ నుండి దిగుమతి చేయండి';
+
+  @override
   String get businessBenefitPdf => 'మీ కంపెనీ పేరుతో టీమ్ PDF ఎగుమతి';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'టెంప్లేట్ పొందండి';
+
+  @override
+  String get batchScanAction => 'అనేక పత్రాలను స్కాన్ చేయండి';
+
+  @override
+  String get batchScanHint => 'Premium: ఒకేసారి 10 ఫోటోల వరకు. అవి మీ ఫోన్‌లోనే చదవబడతాయి, ఏదైనా సేవ్ కావడానికి ముందు మీరు ప్రతిదాన్ని తనిఖీ చేస్తారు.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return '$totalలో $done చదువుతోంది…';
+  }
+
+  @override
+  String get batchScanFileName => 'స్కాన్ చేసిన పత్రాలు';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'పత్రం $number';
+  }
+
+  @override
+  String get batchScanFailed => 'ఫోటోలను చదవలేకపోయాం. ప్రతి ఫోటోలో ఒక పత్రంతో స్పష్టమైన ఫోటోలు ప్రయత్నించండి.';
 
   @override
   String get csvImportColumnsTitle => 'మీరు ఉపయోగించగల నిలువు వరుసలు';
@@ -5018,6 +5046,46 @@ class AppLocalizationsTe extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'పంపిన అభ్యర్థనలు: $countలో $sent';
   }
+
+  @override
+  String get staffImportAction => 'స్ప్రెడ్‌షీట్ నుండి సిబ్బందిని దిగుమతి చేయండి';
+
+  @override
+  String get staffImportHint => 'పేరు కాలమ్ మరియు ఉంటే ఇమెయిల్ కాలమ్ ఉన్న CSV ఫైల్.';
+
+  @override
+  String get staffImportTitle => 'సిబ్బందిని దిగుమతి చేయండి';
+
+  @override
+  String staffImportReady(int count) {
+    return 'జోడించడానికి సిద్ధం: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'వదిలేసినవి: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'పేరు ఖాళీగా ఉంటే లేదా ఇప్పటికే జాబితాలో ఉంటే, లేదా మీ ప్లాన్ యొక్క $limit మంది పూర్తయినప్పుడు వరుసలు వదిలేయబడతాయి.';
+  }
+
+  @override
+  String get staffImportEmails => 'వారి పత్రాల గురించి ఇమెయిల్ రిమైండర్‌లు పంపండి';
+
+  @override
+  String staffImportButton(int count) {
+    return '$count జోడించండి';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'జోడించిన వ్యక్తులు: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'పేరు కాలమ్ కనబడలేదు. పేర్లను Name లేదా పేరు అనే కాలమ్‌లో పెట్టండి.';
 
   @override
   String get roleAction => 'పాత్ర మరియు అవసరమైన పత్రాలు';
@@ -8112,6 +8180,9 @@ class AppLocalizationsTe extends AppLocalizations {
   String get tourImport2Body => 'ఇప్పటికే స్ప్రెడ్‌షీట్ ఉందా? దిగుమతి చేసి సేవ్ చేసే ముందు ప్రతి వరుసను తనిఖీ చేయండి.';
 
   @override
+  String get tourImportBatchBody => 'Premiumతో మీరు ఒకేసారి 10 పత్రాల వరకు స్కాన్ చేసి, ఏదైనా సేవ్ కావడానికి ముందు అన్నింటినీ తనిఖీ చేయవచ్చు.';
+
+  @override
   String get tourImport3Title => 'Vaultara కి షేర్ చేయండి';
 
   @override
@@ -8140,6 +8211,9 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'సిబ్బందిని జోడించి వారి సర్టిఫికెట్లు, అనుమతులు మరియు లైసెన్సులను ఒకే చోట ఉంచండి.';
+
+  @override
+  String get tourBusinessImportBody => 'సిబ్బంది జాబితా ఇప్పటికే ఉందా? పేర్లు, ఇమెయిల్‌లతో స్ప్రెడ్‌షీట్ నుండి దిగుమతి చేయవచ్చు.';
 
   @override
   String get tourBusinessRolesBody => 'ప్రతి ఒక్కరికీ డ్రైవర్ వంటి పాత్రను దానికి అవసరమైన పత్రాలతో ఇవ్వండి. ఏమి లేవో Vaultara చూపిస్తుంది.';

@@ -1162,6 +1162,9 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Сканирование до 10 документов за раз';
+
+  @override
   String get planFeatureAutoReminders => 'Автоматические напоминания';
 
   @override
@@ -3290,6 +3293,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get businessBenefitRoles => 'Задайте обязательные документы для должностей и смотрите, чего кому не хватает';
 
   @override
+  String get businessBenefitStaffImport => 'Импортируйте список сотрудников из таблицы';
+
+  @override
   String get businessBenefitPdf => 'Командный экспорт PDF с названием вашей компании';
 
   @override
@@ -3748,6 +3754,28 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Получить шаблон';
+
+  @override
+  String get batchScanAction => 'Сканировать несколько документов';
+
+  @override
+  String get batchScanHint => 'Premium: до 10 фото за раз. Они читаются на вашем телефоне, и вы проверяете каждое, прежде чем что-то сохранится.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Читаем $done из $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Отсканированные документы';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Документ $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Не удалось прочитать фото. Попробуйте более чёткие фото, по одному документу на фото.';
 
   @override
   String get csvImportColumnsTitle => 'Какие столбцы можно использовать';
@@ -5121,6 +5149,46 @@ class AppLocalizationsRu extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Отправлено запросов: $sent из $count';
   }
+
+  @override
+  String get staffImportAction => 'Импорт сотрудников из таблицы';
+
+  @override
+  String get staffImportHint => 'CSV-файл с колонкой Имя и, если есть, колонкой Email.';
+
+  @override
+  String get staffImportTitle => 'Импорт сотрудников';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Готово к добавлению: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Пропущено: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Строки пропускаются, если имя пустое или уже есть в списке, или когда достигнут лимит тарифа — $limit человек.';
+  }
+
+  @override
+  String get staffImportEmails => 'Отправлять им напоминания о документах по email';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Добавить $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Добавлено человек: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Колонка с именем не найдена. Поместите имена в колонку с названием Name или Имя.';
 
   @override
   String get roleAction => 'Должность и обязательные документы';
@@ -8261,6 +8329,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get tourImport2Body => 'Уже ведёте таблицу? Импортируйте её и проверьте каждую строку перед сохранением.';
 
   @override
+  String get tourImportBatchBody => 'С Premium можно сканировать до 10 документов за раз и проверить все, прежде чем что-то сохранится.';
+
+  @override
   String get tourImport3Title => 'Поделитесь в Vaultara';
 
   @override
@@ -8289,6 +8360,9 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Добавьте сотрудников и храните их сертификаты, разрешения и лицензии в одном месте.';
+
+  @override
+  String get tourBusinessImportBody => 'Уже есть список сотрудников? Его можно импортировать из таблицы с именами и email.';
 
   @override
   String get tourBusinessRolesBody => 'Укажите каждому должность, например Водитель, с нужными документами. Vaultara покажет, чего не хватает.';

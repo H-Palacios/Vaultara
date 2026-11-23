@@ -1155,6 +1155,9 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Scanează până la 10 documente odată';
+
+  @override
   String get planFeatureAutoReminders => 'Mementouri automate';
 
   @override
@@ -3255,6 +3258,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get businessBenefitRoles => 'Setează documentele necesare pe rol și vezi ce îi lipsește fiecăruia';
 
   @override
+  String get businessBenefitStaffImport => 'Importă lista de angajați dintr-o foaie de calcul';
+
+  @override
   String get businessBenefitPdf => 'Export PDF pentru echipă, cu numele firmei tale';
 
   @override
@@ -3708,6 +3714,28 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Obține un șablon';
+
+  @override
+  String get batchScanAction => 'Scanează mai multe documente';
+
+  @override
+  String get batchScanHint => 'Premium: până la 10 fotografii odată. Sunt citite pe telefonul tău și le verifici pe fiecare înainte să se salveze ceva.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Se citește $done din $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Documente scanate';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Documentul $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Fotografiile nu au putut fi citite. Încearcă fotografii mai clare, un document pe fotografie.';
 
   @override
   String get csvImportColumnsTitle => 'Coloane pe care le poți folosi';
@@ -5068,6 +5096,46 @@ class AppLocalizationsRo extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Cereri trimise: $sent din $count';
   }
+
+  @override
+  String get staffImportAction => 'Importă angajați dintr-o foaie de calcul';
+
+  @override
+  String get staffImportHint => 'Un fișier CSV cu o coloană Nume și, dacă ai, o coloană Email.';
+
+  @override
+  String get staffImportTitle => 'Importă angajați';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Gata de adăugat: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Omise: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Rândurile sunt omise când numele lipsește sau e deja în listă, ori când se ating cele $limit persoane ale planului.';
+  }
+
+  @override
+  String get staffImportEmails => 'Trimite-le mementouri pe email despre documentele lor';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Adaugă $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Persoane adăugate: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Nu s-a găsit o coloană cu nume. Pune numele într-o coloană numită Nume.';
 
   @override
   String get roleAction => 'Rol și documente necesare';
@@ -8189,6 +8257,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tourImport2Body => 'Ai deja un tabel? Importă-l și verifică fiecare rând înainte să se salveze ceva.';
 
   @override
+  String get tourImportBatchBody => 'Cu Premium poți scana până la 10 documente odată și le poți verifica pe toate înainte să se salveze ceva.';
+
+  @override
   String get tourImport3Title => 'Partajează în Vaultara';
 
   @override
@@ -8217,6 +8288,9 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Adaugă angajați și păstrează-le certificatele, permisele și licențele într-un singur loc.';
+
+  @override
+  String get tourBusinessImportBody => 'Ai deja o listă de angajați? O poți importa dintr-o foaie de calcul, cu nume și emailuri.';
 
   @override
   String get tourBusinessRolesBody => 'Dă fiecărei persoane un rol, de exemplu Șofer, cu documentele de care are nevoie. Vaultara arată ce lipsește.';

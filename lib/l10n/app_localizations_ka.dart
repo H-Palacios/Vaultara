@@ -1151,6 +1151,9 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'ერთდროულად 10 დოკუმენტამდე სკანირება';
+
+  @override
   String get planFeatureAutoReminders => 'ავტომატური შეხსენებები';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsKa extends AppLocalizations {
   String get businessBenefitRoles => 'დააყენეთ საჭირო დოკუმენტები როლის მიხედვით და ნახეთ, ვის რა აკლია';
 
   @override
+  String get businessBenefitStaffImport => 'თანამშრომლების სიის იმპორტი ცხრილიდან';
+
+  @override
   String get businessBenefitPdf => 'გუნდის PDF ექსპორტი თქვენი კომპანიის სახელით';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'შაბლონის მიღება';
+
+  @override
+  String get batchScanAction => 'რამდენიმე დოკუმენტის სკანირება';
+
+  @override
+  String get batchScanHint => 'Premium: ერთდროულად 10 ფოტომდე. ისინი იკითხება თქვენს ტელეფონში და თითოეულს ამოწმებთ, სანამ რამე შეინახება.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'იკითხება $done / $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'დასკანერებული დოკუმენტები';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'დოკუმენტი $number';
+  }
+
+  @override
+  String get batchScanFailed => 'ფოტოების წაკითხვა ვერ მოხერხდა. სცადეთ უფრო მკაფიო ფოტოები, თითო დოკუმენტი თითო ფოტოზე.';
 
   @override
   String get csvImportColumnsTitle => 'სვეტები, რომლებიც შეგიძლიათ გამოიყენოთ';
@@ -5018,6 +5046,46 @@ class AppLocalizationsKa extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'გაგზავნილი მოთხოვნები: $sent / $count';
   }
+
+  @override
+  String get staffImportAction => 'თანამშრომლების იმპორტი ცხრილიდან';
+
+  @override
+  String get staffImportHint => 'CSV ფაილი სახელის სვეტით და, თუ გაქვთ, ელფოსტის სვეტით.';
+
+  @override
+  String get staffImportTitle => 'თანამშრომლების იმპორტი';
+
+  @override
+  String staffImportReady(int count) {
+    return 'დასამატებლად მზადაა: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'გამოტოვებულია: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'სტრიქონები გამოიტოვება, როცა სახელი ცარიელია ან უკვე თქვენს სიაშია, ან როცა თქვენი გეგმის $limit ადამიანი შეივსება.';
+  }
+
+  @override
+  String get staffImportEmails => 'გაუგზავნეთ მათ შეხსენებები ელფოსტით მათი დოკუმენტების შესახებ';
+
+  @override
+  String staffImportButton(int count) {
+    return '$count-ის დამატება';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'დამატებული ადამიანები: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'სახელის სვეტი ვერ მოიძებნა. ჩაწერეთ სახელები სვეტში სახელწოდებით Name ან სახელი.';
 
   @override
   String get roleAction => 'როლი და საჭირო დოკუმენტები';
@@ -8112,6 +8180,9 @@ class AppLocalizationsKa extends AppLocalizations {
   String get tourImport2Body => 'უკვე გაქვთ ცხრილი? შემოიტანეთ და შენახვამდე შეამოწმეთ ყოველი სტრიქონი.';
 
   @override
+  String get tourImportBatchBody => 'Premium-ით შეგიძლიათ ერთდროულად 10 დოკუმენტამდე დაასკანეროთ და ყველა შეამოწმოთ, სანამ რამე შეინახება.';
+
+  @override
   String get tourImport3Title => 'გააზიარეთ Vaultara-ში';
 
   @override
@@ -8140,6 +8211,9 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'დაამატეთ თანამშრომლები და შეინახეთ მათი სერტიფიკატები, ნებართვები და ლიცენზიები ერთ ადგილას.';
+
+  @override
+  String get tourBusinessImportBody => 'უკვე გაქვთ თანამშრომლების სია? შეგიძლიათ შემოიტანოთ ცხრილიდან, სახელებითა და ელფოსტით.';
 
   @override
   String get tourBusinessRolesBody => 'მიეცით თითოეულს როლი, მაგალითად მძღოლი, საჭირო დოკუმენტებით. Vaultara აჩვენებს, რა აკლია.';

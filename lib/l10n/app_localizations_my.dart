@@ -1148,6 +1148,9 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'စာရွက်စာတမ်း 10 ခုအထိ တစ်ကြိမ်တည်း စကင်ဖတ်ရန်';
+
+  @override
   String get planFeatureAutoReminders => 'အလိုအလျောက် သတိပေးချက်များ';
 
   @override
@@ -3205,6 +3208,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String get businessBenefitRoles => 'တာဝန်အလိုက် လိုအပ်သော စာရွက်စာတမ်းများ သတ်မှတ်ပြီး လူတိုင်းတွင် ဘာမရှိသည်ကို ကြည့်ပါ';
 
   @override
+  String get businessBenefitStaffImport => 'သင့်ဝန်ထမ်းစာရင်းကို စာရင်းဇယားမှ တင်သွင်းရန်';
+
+  @override
   String get businessBenefitPdf => 'သင့်ကုမ္ပဏီအမည်ပါသော အဖွဲ့လိုက် PDF ထုတ်ယူမှု';
 
   @override
@@ -3648,6 +3654,28 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'ပုံစံ ရယူရန်';
+
+  @override
+  String get batchScanAction => 'စာရွက်စာတမ်းများစွာ စကင်ဖတ်ရန်';
+
+  @override
+  String get batchScanHint => 'Premium- တစ်ကြိမ်တည်း ဓာတ်ပုံ 10 ပုံအထိ။ သင့်ဖုန်းပေါ်တွင်ပင် ဖတ်ပြီး မသိမ်းမီ တစ်ခုချင်းစီကို စစ်ဆေးနိုင်သည်။';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return '$total ခုအနက် $done ခု ဖတ်နေသည်…';
+  }
+
+  @override
+  String get batchScanFileName => 'စကင်ဖတ်ထားသော စာရွက်စာတမ်းများ';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'စာရွက်စာတမ်း $number';
+  }
+
+  @override
+  String get batchScanFailed => 'ဓာတ်ပုံများကို မဖတ်နိုင်ပါ။ ဓာတ်ပုံတစ်ပုံလျှင် စာရွက်စာတမ်းတစ်ခုဖြင့် ပိုရှင်းသော ဓာတ်ပုံများ စမ်းကြည့်ပါ။';
 
   @override
   String get csvImportColumnsTitle => 'သုံးနိုင်သော ကော်လံများ';
@@ -4982,6 +5010,46 @@ class AppLocalizationsMy extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'ပို့ပြီးသော တောင်းဆိုမှုများ- $count ခုအနက် $sent ခု';
   }
+
+  @override
+  String get staffImportAction => 'စာရင်းဇယားမှ ဝန်ထမ်းများ တင်သွင်းရန်';
+
+  @override
+  String get staffImportHint => 'အမည်ကော်လံနှင့် ရှိပါက အီးမေးလ်ကော်လံပါသော CSV ဖိုင်။';
+
+  @override
+  String get staffImportTitle => 'ဝန်ထမ်းများ တင်သွင်းရန်';
+
+  @override
+  String staffImportReady(int count) {
+    return 'ထည့်ရန် အသင့်- $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'ချန်ထားသည်- $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'အမည်လွတ်နေလျှင် သို့မဟုတ် စာရင်းထဲ ရှိပြီးသားဖြစ်လျှင်၊ သို့မဟုတ် သင့်အစီအစဉ်၏ $limit ဦး ပြည့်လျှင် အတန်းများကို ချန်ထားသည်။';
+  }
+
+  @override
+  String get staffImportEmails => '၎င်းတို့၏ စာရွက်စာတမ်းများအကြောင်း အီးမေးလ်ဖြင့် သတိပေးချက် ပို့ရန်';
+
+  @override
+  String staffImportButton(int count) {
+    return '$count ထည့်ရန်';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'ထည့်ပြီးသူများ- $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'အမည်ကော်လံ မတွေ့ပါ။ အမည်များကို Name သို့မဟုတ် အမည် ဟုခေါ်သော ကော်လံတွင် ထည့်ပါ။';
 
   @override
   String get roleAction => 'တာဝန်နှင့် လိုအပ်သော စာရွက်စာတမ်းများ';
@@ -8053,6 +8121,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String get tourImport2Body => 'စာရင်းဇယား ရှိပြီးသားလား? တင်သွင်းပြီး မသိမ်းမီ အတန်းတိုင်းကို စစ်ပါ။';
 
   @override
+  String get tourImportBatchBody => 'Premium ဖြင့် စာရွက်စာတမ်း 10 ခုအထိ တစ်ကြိမ်တည်း စကင်ဖတ်ပြီး မသိမ်းမီ အားလုံးကို စစ်ဆေးနိုင်သည်။';
+
+  @override
   String get tourImport3Title => 'Vaultara သို့ မျှဝေပါ';
 
   @override
@@ -8081,6 +8152,9 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'ဝန်ထမ်းများထည့်ပြီး ၎င်းတို့၏ လက်မှတ်၊ ခွင့်ပြုချက်နှင့် လိုင်စင်များကို တစ်နေရာတည်းတွင် ထားပါ။';
+
+  @override
+  String get tourBusinessImportBody => 'ဝန်ထမ်းစာရင်း ရှိပြီးလား။ အမည်နှင့် အီးမေးလ်များပါသော စာရင်းဇယားမှ တင်သွင်းနိုင်သည်။';
 
   @override
   String get tourBusinessRolesBody => 'လူတိုင်းကို ယာဉ်မောင်းကဲ့သို့ တာဝန်တစ်ခုနှင့် ၎င်းလိုအပ်သော စာရွက်စာတမ်းများ ပေးပါ။ မရှိသည့်အရာကို Vaultara ပြသသည်။';

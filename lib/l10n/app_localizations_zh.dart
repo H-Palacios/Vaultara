@@ -1150,6 +1150,9 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => '一次最多扫描 10 份证件';
+
+  @override
   String get planFeatureAutoReminders => '自动提醒';
 
   @override
@@ -3207,6 +3210,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get businessBenefitRoles => '按职位设定必需证件，查看每个人缺少什么';
 
   @override
+  String get businessBenefitStaffImport => '从表格导入员工名单';
+
+  @override
   String get businessBenefitPdf => '带公司名称的团队 PDF 导出';
 
   @override
@@ -3650,6 +3656,28 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => '获取模板';
+
+  @override
+  String get batchScanAction => '批量扫描证件';
+
+  @override
+  String get batchScanHint => 'Premium：一次最多 10 张照片。照片在你的手机上识别，保存前你会逐一核对。';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return '正在识别第 $done 张，共 $total 张…';
+  }
+
+  @override
+  String get batchScanFileName => '扫描的证件';
+
+  @override
+  String batchScanUntitled(int number) {
+    return '证件 $number';
+  }
+
+  @override
+  String get batchScanFailed => '无法识别这些照片。请拍得更清晰，每张照片只拍一份证件。';
 
   @override
   String get csvImportColumnsTitle => '可用的列';
@@ -4984,6 +5012,46 @@ class AppLocalizationsZh extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return '已发送请求：$sent/$count';
   }
+
+  @override
+  String get staffImportAction => '从表格导入员工';
+
+  @override
+  String get staffImportHint => '一个包含“姓名”列的 CSV 文件，如有邮箱也可加“邮箱”列。';
+
+  @override
+  String get staffImportTitle => '导入员工';
+
+  @override
+  String staffImportReady(int count) {
+    return '可添加：$count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return '已略过：$count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return '姓名为空、已在列表中，或已达到套餐的 $limit 人上限时，该行会被略过。';
+  }
+
+  @override
+  String get staffImportEmails => '通过邮件提醒他们处理证件';
+
+  @override
+  String staffImportButton(int count) {
+    return '添加 $count 人';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return '已添加：$count';
+  }
+
+  @override
+  String get staffImportNoColumns => '未找到姓名列。请把姓名放在名为 Name 或“姓名”的列中。';
 
   @override
   String get roleAction => '职位和必需证件';
@@ -8055,6 +8123,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tourImport2Body => '已有电子表格？导入后可在保存前逐行检查。';
 
   @override
+  String get tourImportBatchBody => '使用 Premium，一次可扫描最多 10 份证件，并在保存前全部核对。';
+
+  @override
   String get tourImport3Title => '分享到 Vaultara';
 
   @override
@@ -8083,6 +8154,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => '添加员工，把他们的证书、许可和执照集中管理。';
+
+  @override
+  String get tourBusinessImportBody => '已有员工名单？可以从表格导入，包含姓名和邮箱。';
 
   @override
   String get tourBusinessRolesBody => '为每个人设定职位（例如司机）及所需证件，Vaultara 会显示缺少什么。';
@@ -10923,6 +10997,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   }
 
   @override
+  String get planFeatureBatchScan => '一次最多扫描 10 份证件';
+
+  @override
   String get planFeatureAutoReminders => '自动提醒';
 
   @override
@@ -12974,6 +13051,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get businessBenefitRoles => '按职位设定必需证件，查看每个人缺少什么';
 
   @override
+  String get businessBenefitStaffImport => '从表格导入员工名单';
+
+  @override
   String get businessBenefitPdf => '带公司名称的团队 PDF 导出';
 
   @override
@@ -13417,6 +13497,28 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get csvImportGetTemplate => '获取模板';
+
+  @override
+  String get batchScanAction => '批量扫描证件';
+
+  @override
+  String get batchScanHint => 'Premium：一次最多 10 张照片。照片在你的手机上识别，保存前你会逐一核对。';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return '正在识别第 $done 张，共 $total 张…';
+  }
+
+  @override
+  String get batchScanFileName => '扫描的证件';
+
+  @override
+  String batchScanUntitled(int number) {
+    return '证件 $number';
+  }
+
+  @override
+  String get batchScanFailed => '无法识别这些照片。请拍得更清晰，每张照片只拍一份证件。';
 
   @override
   String get csvImportColumnsTitle => '可用的列';
@@ -14751,6 +14853,46 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String staffBulkDone(int sent, int count) {
     return '已发送请求：$sent/$count';
   }
+
+  @override
+  String get staffImportAction => '从表格导入员工';
+
+  @override
+  String get staffImportHint => '一个包含“姓名”列的 CSV 文件，如有邮箱也可加“邮箱”列。';
+
+  @override
+  String get staffImportTitle => '导入员工';
+
+  @override
+  String staffImportReady(int count) {
+    return '可添加：$count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return '已略过：$count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return '姓名为空、已在列表中，或已达到套餐的 $limit 人上限时，该行会被略过。';
+  }
+
+  @override
+  String get staffImportEmails => '通过邮件提醒他们处理证件';
+
+  @override
+  String staffImportButton(int count) {
+    return '添加 $count 人';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return '已添加：$count';
+  }
+
+  @override
+  String get staffImportNoColumns => '未找到姓名列。请把姓名放在名为 Name 或“姓名”的列中。';
 
   @override
   String get roleAction => '职位和必需证件';
@@ -17822,6 +17964,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tourImport2Body => '已有电子表格？导入后可在保存前逐行检查。';
 
   @override
+  String get tourImportBatchBody => '使用 Premium，一次可扫描最多 10 份证件，并在保存前全部核对。';
+
+  @override
   String get tourImport3Title => '分享到 Vaultara';
 
   @override
@@ -17850,6 +17995,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get tourBusiness1Body => '添加员工，把他们的证书、许可和执照集中管理。';
+
+  @override
+  String get tourBusinessImportBody => '已有员工名单？可以从表格导入，包含姓名和邮箱。';
 
   @override
   String get tourBusinessRolesBody => '为每个人设定职位（例如司机）及所需证件，Vaultara 会显示缺少什么。';
@@ -20690,6 +20838,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
+  String get planFeatureBatchScan => '一次最多掃描 10 份證件';
+
+  @override
   String get planFeatureAutoReminders => '自動提醒';
 
   @override
@@ -22741,6 +22892,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get businessBenefitRoles => '依職位設定必要文件，查看每個人缺少什麼';
 
   @override
+  String get businessBenefitStaffImport => '從試算表匯入員工名單';
+
+  @override
   String get businessBenefitPdf => '附上公司名稱的團隊 PDF 匯出';
 
   @override
@@ -23184,6 +23338,28 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get csvImportGetTemplate => '取得範本';
+
+  @override
+  String get batchScanAction => '批次掃描證件';
+
+  @override
+  String get batchScanHint => 'Premium：一次最多 10 張照片。照片在你的手機上辨識，儲存前你會逐一確認。';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return '正在辨識第 $done 張，共 $total 張…';
+  }
+
+  @override
+  String get batchScanFileName => '掃描的證件';
+
+  @override
+  String batchScanUntitled(int number) {
+    return '證件 $number';
+  }
+
+  @override
+  String get batchScanFailed => '無法辨識這些照片。請拍得更清楚，每張照片只拍一份證件。';
 
   @override
   String get csvImportColumnsTitle => '可使用的欄位';
@@ -24518,6 +24694,46 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String staffBulkDone(int sent, int count) {
     return '已傳送要求：$sent/$count';
   }
+
+  @override
+  String get staffImportAction => '從試算表匯入員工';
+
+  @override
+  String get staffImportHint => '一個包含「姓名」欄的 CSV 檔案，如有電子郵件也可加「電子郵件」欄。';
+
+  @override
+  String get staffImportTitle => '匯入員工';
+
+  @override
+  String staffImportReady(int count) {
+    return '可新增：$count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return '已略過：$count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return '姓名空白、已在清單中，或已達方案的 $limit 人上限時，該列會被略過。';
+  }
+
+  @override
+  String get staffImportEmails => '以電子郵件提醒他們處理證件';
+
+  @override
+  String staffImportButton(int count) {
+    return '新增 $count 人';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return '已新增：$count';
+  }
+
+  @override
+  String get staffImportNoColumns => '找不到姓名欄。請把姓名放在名為 Name 或「姓名」的欄位。';
 
   @override
   String get roleAction => '職位和必要文件';
@@ -27589,6 +27805,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tourImport2Body => '已有試算表？匯入後可在儲存前逐列檢查。';
 
   @override
+  String get tourImportBatchBody => '使用 Premium，一次可掃描最多 10 份證件，並在儲存前全部確認。';
+
+  @override
   String get tourImport3Title => '分享到 Vaultara';
 
   @override
@@ -27617,6 +27836,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get tourBusiness1Body => '新增員工，將他們的證書、許可與執照集中管理。';
+
+  @override
+  String get tourBusinessImportBody => '已有員工名單？可以從試算表匯入，包含姓名和電子郵件。';
 
   @override
   String get tourBusinessRolesBody => '為每個人設定職位（例如司機）及所需文件，Vaultara 會顯示缺少什麼。';

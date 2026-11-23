@@ -1151,6 +1151,9 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Heta 10 belgeyan bi carekê bişopîne';
+
+  @override
   String get planFeatureAutoReminders => 'Bîrxistinên otomatîk';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsKu extends AppLocalizations {
   String get businessBenefitRoles => 'Ji bo her rolî belgeyên pêwîst diyar bike û bibîne ka her kes çi kêm e';
 
   @override
+  String get businessBenefitStaffImport => 'Lîsteya karmendên xwe ji tabloyê veguhezîne';
+
+  @override
   String get businessBenefitPdf => 'Derxistina PDF ya tîmê bi navê pargîdaniya te';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Nimûneyek bistîne';
+
+  @override
+  String get batchScanAction => 'Çend belgeyan bişopîne';
+
+  @override
+  String get batchScanHint => 'Premium: heta 10 wêne bi carekê. Ew li ser telefona te têne xwendin, û berî ku tiştek were tomarkirin tu her yekê kontrol dikî.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return '$done ji $total tê xwendin…';
+  }
+
+  @override
+  String get batchScanFileName => 'Belgeyên şopandî';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Belge $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Wêne nehatin xwendin. Wêneyên zelaltir biceribîne, di her wêneyî de belgeyek.';
 
   @override
   String get csvImportColumnsTitle => 'Stûnên ku tu dikarî bi kar bînî';
@@ -5018,6 +5046,46 @@ class AppLocalizationsKu extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Daxwazên şandî: $sent ji $count';
   }
+
+  @override
+  String get staffImportAction => 'Karmendan ji tabloyê veguhezîne';
+
+  @override
+  String get staffImportHint => 'Pelek CSV bi stûnek Nav, û stûnek E-name heke te hebe.';
+
+  @override
+  String get staffImportTitle => 'Karmendan veguhezîne';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Amade ye ji bo zêdekirinê: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Hatin derxistin: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Rêz têne derxistin dema nav vala be an jixwe di lîsteya te de be, an dema $limit kesên plana te tije bibin.';
+  }
+
+  @override
+  String get staffImportEmails => 'Bîrxistinan bi e-nameyê derbarê belgeyên wan de bişîne';
+
+  @override
+  String staffImportButton(int count) {
+    return '$count zêde bike';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Kesên zêdekirî: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Stûna navan nehat dîtin. Navan têxe stûnek bi navê Name an Nav.';
 
   @override
   String get roleAction => 'Rol û belgeyên pêwîst';
@@ -8112,6 +8180,9 @@ class AppLocalizationsKu extends AppLocalizations {
   String get tourImport2Body => 'Jixwe tabloyek te heye? Wê îthal bike û berî tomarkirinê her rêzê kontrol bike.';
 
   @override
+  String get tourImportBatchBody => 'Bi Premium tu dikarî heta 10 belgeyan bi carekê bişopînî û berî tomarkirinê hemûyan kontrol bikî.';
+
+  @override
   String get tourImport3Title => 'Ji Vaultara re parve bike';
 
   @override
@@ -8140,6 +8211,9 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Karmendan lê zêde bike û belge, destûr û lîsansên wan li yek cihî bigire.';
+
+  @override
+  String get tourBusinessImportBody => 'Lîsteya karmendan te heye? Tu dikarî wê bi nav û e-nameyan ji tabloyê veguhezînî.';
 
   @override
   String get tourBusinessRolesBody => 'Ji her kesî re rolekê bide, wek Ajokar, bi belgeyên ku pêwîst in. Vaultara nîşan dide ka çi kêm e.';

@@ -1151,6 +1151,9 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Scan op til 10 dokumenter ad gangen';
+
+  @override
   String get planFeatureAutoReminders => 'Automatiske påmindelser';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsDa extends AppLocalizations {
   String get businessBenefitRoles => 'Angiv påkrævede dokumenter pr. rolle, og se, hvad hver person mangler';
 
   @override
+  String get businessBenefitStaffImport => 'Importér din medarbejderliste fra et regneark';
+
+  @override
   String get businessBenefitPdf => 'PDF-eksport til teamet med dit firmanavn';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Hent en skabelon';
+
+  @override
+  String get batchScanAction => 'Scan flere dokumenter';
+
+  @override
+  String get batchScanHint => 'Premium: op til 10 billeder ad gangen. De læses på din telefon, og du tjekker hvert enkelt, før noget gemmes.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Læser $done af $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Scannede dokumenter';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Dokument $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Billederne kunne ikke læses. Prøv tydeligere billeder, ét dokument pr. billede.';
 
   @override
   String get csvImportColumnsTitle => 'Kolonner du kan bruge';
@@ -5018,6 +5046,46 @@ class AppLocalizationsDa extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Anmodninger sendt: $sent af $count';
   }
+
+  @override
+  String get staffImportAction => 'Importér medarbejdere fra et regneark';
+
+  @override
+  String get staffImportHint => 'En CSV-fil med en kolonne Navn og en kolonne E-mail, hvis du har en.';
+
+  @override
+  String get staffImportTitle => 'Importér medarbejdere';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Klar til at tilføje: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Udeladt: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Rækker udelades, når navnet er tomt eller allerede på din liste, eller når din plans $limit personer er nået.';
+  }
+
+  @override
+  String get staffImportEmails => 'Send dem påmindelser om deres dokumenter på e-mail';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Tilføj $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Personer tilføjet: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Der blev ikke fundet en navnekolonne. Sæt navnene i en kolonne, der hedder Navn.';
 
   @override
   String get roleAction => 'Rolle og påkrævede dokumenter';
@@ -8116,6 +8184,9 @@ class AppLocalizationsDa extends AppLocalizations {
   String get tourImport2Body => 'Har du allerede et regneark? Importér det, og tjek hver række, før noget gemmes.';
 
   @override
+  String get tourImportBatchBody => 'Med Premium kan du scanne op til 10 dokumenter ad gangen og tjekke dem alle, før noget gemmes.';
+
+  @override
   String get tourImport3Title => 'Del til Vaultara';
 
   @override
@@ -8144,6 +8215,9 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Tilføj medarbejdere, og saml deres certifikater, tilladelser og licenser ét sted.';
+
+  @override
+  String get tourBusinessImportBody => 'Har du allerede en medarbejderliste? Du kan importere den fra et regneark med navne og e-mails.';
 
   @override
   String get tourBusinessRolesBody => 'Giv hver person en rolle, fx Chauffør, med de dokumenter den kræver. Vaultara viser, hvad der mangler.';

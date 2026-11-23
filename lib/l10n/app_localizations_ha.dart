@@ -1151,6 +1151,9 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Duba takardu har 10 a lokaci ɗaya';
+
+  @override
   String get planFeatureAutoReminders => 'Tunatarwa ta atomatik';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsHa extends AppLocalizations {
   String get businessBenefitRoles => 'Saita takardun da ake buƙata ga kowane matsayi ka ga abin da kowa ya rasa';
 
   @override
+  String get businessBenefitStaffImport => 'Shigo da jerin ma\'aikatanka daga takardar lissafi';
+
+  @override
   String get businessBenefitPdf => 'Fitar da PDF na ƙungiya mai sunan kamfaninka';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Samu samfurin fayil';
+
+  @override
+  String get batchScanAction => 'Duba takardu da yawa';
+
+  @override
+  String get batchScanHint => 'Premium: hotuna har 10 a lokaci ɗaya. Ana karanta su a wayarka, kuma kana duba kowanne kafin a adana komai.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Ana karanta $done cikin $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Takardun da aka duba';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Takarda $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Ba a iya karanta hotunan ba. Gwada hotuna masu haske, takarda ɗaya a kowane hoto.';
 
   @override
   String get csvImportColumnsTitle => 'Ginshiƙan da za ka iya amfani da su';
@@ -5018,6 +5046,46 @@ class AppLocalizationsHa extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Buƙatun da aka aika: $sent cikin $count';
   }
+
+  @override
+  String get staffImportAction => 'Shigo da ma\'aikata daga takardar lissafi';
+
+  @override
+  String get staffImportHint => 'Fayil ɗin CSV mai ginshiƙin Suna, da ginshiƙin Imel idan kana da shi.';
+
+  @override
+  String get staffImportTitle => 'Shigo da ma\'aikata';
+
+  @override
+  String staffImportReady(int count) {
+    return 'A shirye don ƙarawa: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'An bari: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Ana barin layuka idan suna babu ko yana cikin jerinka tuni, ko idan an kai mutane $limit na shirinka.';
+  }
+
+  @override
+  String get staffImportEmails => 'Aika musu tunatarwa ta imel game da takardunsu';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Ƙara $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'An ƙara mutane: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Ba a sami ginshiƙin suna ba. Saka sunayen a ginshiƙin da ake kira Name ko Suna.';
 
   @override
   String get roleAction => 'Matsayi da takardun da ake buƙata';
@@ -8112,6 +8180,9 @@ class AppLocalizationsHa extends AppLocalizations {
   String get tourImport2Body => 'Kana da maƙunsar bayanai tuni? Shigo da shi ka duba kowane layi kafin a ajiye wani abu.';
 
   @override
+  String get tourImportBatchBody => 'Da Premium, kana iya duba takardu har 10 a lokaci ɗaya kuma ka duba su duka kafin a adana komai.';
+
+  @override
   String get tourImport3Title => 'Raba zuwa Vaultara';
 
   @override
@@ -8140,6 +8211,9 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Ƙara ma\'aikata ka ajiye takardun shaida, izini da lasisinsu a wuri ɗaya.';
+
+  @override
+  String get tourBusinessImportBody => 'Kana da jerin ma\'aikata? Kana iya shigo da shi daga takardar lissafi, da sunaye da imel.';
 
   @override
   String get tourBusinessRolesBody => 'Ba kowane mutum matsayi, kamar Direba, tare da takardun da yake buƙata. Vaultara yana nuna abin da ya rage.';

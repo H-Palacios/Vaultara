@@ -1151,6 +1151,9 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Hal mar sawir ilaa 10 dukumenti';
+
+  @override
   String get planFeatureAutoReminders => 'Xusuusin toos ah';
 
   @override
@@ -3222,6 +3225,9 @@ class AppLocalizationsSo extends AppLocalizations {
   String get businessBenefitRoles => 'Dejiso dukumentiyada loo baahan yahay door kasta oo arag waxa qof kasta ka maqan';
 
   @override
+  String get businessBenefitStaffImport => 'Liiska shaqaalahaaga ka soo deji xaashi xisaabeed';
+
+  @override
   String get businessBenefitPdf => 'Dhoofinta PDF ee kooxda oo leh magaca shirkaddaada';
 
   @override
@@ -3670,6 +3676,28 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Hel qaab';
+
+  @override
+  String get batchScanAction => 'Sawir qaado dukumentiyo badan';
+
+  @override
+  String get batchScanHint => 'Premium: ilaa 10 sawir hal mar. Waxaa lagu akhriyaa taleefankaaga, waxaadna hubisaa mid kasta ka hor inta aan wax la kaydin.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Waxaa la akhrinayaa $done ka mid ah $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Dukumentiyada la sawiray';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Dukumenti $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Sawirrada lama akhriyi karin. Isku day sawirro ka cad, hal dukumenti sawir kasta.';
 
   @override
   String get csvImportColumnsTitle => 'Tiirarka aad isticmaali karto';
@@ -5017,6 +5045,46 @@ class AppLocalizationsSo extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Codsiyada la diray: $sent ka mid ah $count';
   }
+
+  @override
+  String get staffImportAction => 'Ka soo deji shaqaalaha xaashi xisaabeed';
+
+  @override
+  String get staffImportHint => 'Fayl CSV ah oo leh tiir Magac, iyo tiir Iimayl haddii aad leedahay.';
+
+  @override
+  String get staffImportTitle => 'Soo deji shaqaalaha';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Diyaar u ah in lagu daro: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'La dhaafay: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Safafka waa la dhaafaa marka magacu madhan yahay ama horeba liiskaaga ugu jiro, ama marka $limit qof ee qorshahaagu buuxsamaan.';
+  }
+
+  @override
+  String get staffImportEmails => 'U dir xusuusin iimayl ah oo ku saabsan dukumentiyadooda';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Ku dar $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Dadka lagu daray: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Tiirka magaca lama helin. Magacyada geli tiir la yiraahdo Name ama Magac.';
 
   @override
   String get roleAction => 'Door iyo dukumentiyada loo baahan yahay';
@@ -8111,6 +8179,9 @@ class AppLocalizationsSo extends AppLocalizations {
   String get tourImport2Body => 'Horey ma u haysataa xaashi xisaabeed? Soo deji oo hubi saf kasta ka hor inta aan wax la kaydin.';
 
   @override
+  String get tourImportBatchBody => 'Premium waxaad hal mar ku sawiri kartaa ilaa 10 dukumenti oo dhammaan hubin kartaa ka hor inta aan wax la kaydin.';
+
+  @override
   String get tourImport3Title => 'U wadaag Vaultara';
 
   @override
@@ -8139,6 +8210,9 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Ku dar shaqaale oo hal meel ku hay shahaadooyinkooda, ogolaanshaha iyo liisannadooda.';
+
+  @override
+  String get tourBusinessImportBody => 'Liiska shaqaalaha ma haysataa? Waxaad ka soo dejin kartaa xaashi xisaabeed, magacyo iyo iimaylo leh.';
 
   @override
   String get tourBusinessRolesBody => 'Qof kasta sii door, sida Darawal, oo leh dukumentiyada uu u baahan yahay. Vaultara wuxuu muujiyaa waxa ka maqan.';

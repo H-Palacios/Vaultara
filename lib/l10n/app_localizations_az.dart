@@ -1151,6 +1151,9 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Bir dəfəyə 10 sənədə qədər skan edin';
+
+  @override
   String get planFeatureAutoReminders => 'Avtomatik xatırlatmalar';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsAz extends AppLocalizations {
   String get businessBenefitRoles => 'Vəzifəyə görə tələb olunan sənədləri təyin edin və hər kəsdə nəyin çatışmadığını görün';
 
   @override
+  String get businessBenefitStaffImport => 'Əməkdaş siyahınızı cədvəldən idxal edin';
+
+  @override
   String get businessBenefitPdf => 'Şirkətinizin adı ilə komanda PDF ixracı';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Şablon əldə et';
+
+  @override
+  String get batchScanAction => 'Bir neçə sənədi skan et';
+
+  @override
+  String get batchScanHint => 'Premium: bir dəfəyə 10 şəkilə qədər. Telefonunuzda oxunur və heç nə saxlanmadan əvvəl hər birini yoxlayırsınız.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return '$done/$total oxunur…';
+  }
+
+  @override
+  String get batchScanFileName => 'Skan edilmiş sənədlər';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Sənəd $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Şəkillər oxuna bilmədi. Daha aydın şəkillər çəkin, hər şəkildə bir sənəd.';
 
   @override
   String get csvImportColumnsTitle => 'İstifadə edə biləcəyiniz sütunlar';
@@ -5018,6 +5046,46 @@ class AppLocalizationsAz extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Göndərilən sorğular: $sent / $count';
   }
+
+  @override
+  String get staffImportAction => 'Əməkdaşları cədvəldən idxal et';
+
+  @override
+  String get staffImportHint => 'Ad sütunu və varsa E-poçt sütunu olan CSV faylı.';
+
+  @override
+  String get staffImportTitle => 'Əməkdaşları idxal et';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Əlavə etməyə hazır: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Buraxıldı: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Ad boş olduqda və ya artıq siyahınızda olduqda, ya da planınızın $limit nəfəri dolduqda sətirlər buraxılır.';
+  }
+
+  @override
+  String get staffImportEmails => 'Onlara sənədləri barədə e-poçtla xatırlatmalar göndər';
+
+  @override
+  String staffImportButton(int count) {
+    return '$count əlavə et';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Əlavə edilən şəxslər: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Ad sütunu tapılmadı. Adları Name və ya Ad adlı sütuna yazın.';
 
   @override
   String get roleAction => 'Vəzifə və tələb olunan sənədlər';
@@ -8112,6 +8180,9 @@ class AppLocalizationsAz extends AppLocalizations {
   String get tourImport2Body => 'Artıq cədvəliniz var? İdxal edin və saxlamazdan əvvəl hər sətri yoxlayın.';
 
   @override
+  String get tourImportBatchBody => 'Premium ilə bir dəfəyə 10 sənədə qədər skan edib heç nə saxlanmadan əvvəl hamısını yoxlaya bilərsiniz.';
+
+  @override
   String get tourImport3Title => 'Vaultara-ya paylaşın';
 
   @override
@@ -8140,6 +8211,9 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'İşçiləri əlavə edin və onların sertifikat, icazə və lisenziyalarını bir yerdə saxlayın.';
+
+  @override
+  String get tourBusinessImportBody => 'Əməkdaş siyahınız var? Onu adlar və e-poçtlarla cədvəldən idxal edə bilərsiniz.';
 
   @override
   String get tourBusinessRolesBody => 'Hər kəsə Sürücü kimi bir vəzifə və ona lazım olan sənədləri verin. Vaultara nəyin çatışmadığını göstərir.';

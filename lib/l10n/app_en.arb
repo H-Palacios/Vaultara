@@ -780,6 +780,10 @@
       }
     }
   },
+  "planFeatureBatchScan": "Scan up to 10 documents at once",
+  "@planFeatureBatchScan": {
+    "description": "Premium feature on the Plans screen."
+  },
   "planFeatureAutoReminders": "Automatic reminders",
   "@planFeatureAutoReminders": {
     "description": "Free plan feature on the plans screen. Keep it short."
@@ -3557,6 +3561,10 @@
   "@businessBenefitRoles": {
     "description": "Business plan benefit on the Plans screen."
   },
+  "businessBenefitStaffImport": "Import your staff list from a spreadsheet",
+  "@businessBenefitStaffImport": {
+    "description": "Business plan benefit on the Plans screen."
+  },
   "businessBenefitPdf": "Team PDF export with your company name",
   "@businessBenefitPdf": {
     "description": "Business plan benefit"
@@ -4164,6 +4172,43 @@
   "csvImportGetTemplate": "Get a template",
   "@csvImportGetTemplate": {
     "description": "Button that shares a ready made CSV template"
+  },
+  "batchScanAction": "Scan several documents",
+  "@batchScanAction": {
+    "description": "Button on the import screen that scans several photos at once."
+  },
+  "batchScanHint": "Premium: up to 10 photos at once. They are read on your phone, and you check each one before anything is saved.",
+  "@batchScanHint": {
+    "description": "Note under the batch scan button."
+  },
+  "batchScanReading": "Reading {done} of {total}…",
+  "@batchScanReading": {
+    "description": "Progress on the button while photos are read.",
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "batchScanFileName": "Scanned documents",
+  "@batchScanFileName": {
+    "description": "Title of the import preview for scanned photos."
+  },
+  "batchScanUntitled": "Document {number}",
+  "@batchScanUntitled": {
+    "description": "Name for a scanned document with no name found. {number} is its place in the list.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "batchScanFailed": "The photos could not be read. Try clearer photos, one document per photo.",
+  "@batchScanFailed": {
+    "description": "When none of the photos could be read."
   },
   "csvImportColumnsTitle": "Columns you can use",
   "@csvImportColumnsTitle": {
@@ -6019,6 +6064,71 @@
         "type": "int"
       }
     }
+  },
+  "staffImportAction": "Import staff from a spreadsheet",
+  "@staffImportAction": {
+    "description": "Business: tile that imports a staff list from a CSV file."
+  },
+  "staffImportHint": "A CSV file with a Name column, and an Email column if you have one.",
+  "@staffImportHint": {
+    "description": "Note on the staff import tile."
+  },
+  "staffImportTitle": "Import staff",
+  "@staffImportTitle": {
+    "description": "Title of the staff import check."
+  },
+  "staffImportReady": "Ready to add: {count}",
+  "@staffImportReady": {
+    "description": "How many people will be added.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "staffImportSkipped": "Left out: {count}",
+  "@staffImportSkipped": {
+    "description": "How many rows will not be added.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "staffImportSkippedHint": "Rows are left out when the name is empty or already in your list, or once your plan's {limit} people are reached.",
+  "@staffImportSkippedHint": {
+    "description": "Why rows are left out. {limit} is the plan's number of people.",
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "staffImportEmails": "Email them reminders about their documents",
+  "@staffImportEmails": {
+    "description": "Checkbox: email the imported staff reminders."
+  },
+  "staffImportButton": "Add {count}",
+  "@staffImportButton": {
+    "description": "Button that adds the people.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "staffImportDone": "People added: {count}",
+  "@staffImportDone": {
+    "description": "After adding.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "staffImportNoColumns": "No Name column was found. Put the names in a column called Name.",
+  "@staffImportNoColumns": {
+    "description": "When the file has no name column."
   },
   "roleAction": "Role and required documents",
   "@roleAction": {
@@ -10007,6 +10117,10 @@
   "@tourImport2Body": {
     "description": "Text of a tutorial step."
   },
+  "tourImportBatchBody": "On Premium, you can scan up to 10 documents at once and check them all before anything is saved.",
+  "@tourImportBatchBody": {
+    "description": "Text of a tutorial step."
+  },
   "tourImport3Title": "Share into Vaultara",
   "@tourImport3Title": {
     "description": "Title of a tutorial step. Short."
@@ -10045,6 +10159,10 @@
   },
   "tourBusiness1Body": "Add staff and keep their certificates, permits and licences in one place.",
   "@tourBusiness1Body": {
+    "description": "Text of a tutorial step."
+  },
+  "tourBusinessImportBody": "Have a staff list already? You can import it from a spreadsheet, with names and emails.",
+  "@tourBusinessImportBody": {
     "description": "Text of a tutorial step."
   },
   "tourBusinessRolesBody": "Give each person a role, like Driver, with the documents it needs. Vaultara shows what is missing.",

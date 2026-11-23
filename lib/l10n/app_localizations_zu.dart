@@ -1151,6 +1151,9 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Skena kuze kufike kumadokhumenti angu-10 ngesikhathi esisodwa';
+
+  @override
   String get planFeatureAutoReminders => 'Izikhumbuzo ezizenzakalelayo';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsZu extends AppLocalizations {
   String get businessBenefitRoles => 'Setha amadokhumenti adingekayo ngendima ngayinye bese ubona okungekho kumuntu ngamunye';
 
   @override
+  String get businessBenefitStaffImport => 'Ngenisa uhlu lwabasebenzi bakho kusuka kuspredishithi';
+
+  @override
   String get businessBenefitPdf => 'Ukuthumela i-PDF yethimba negama lenkampani yakho';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Thola ithempulethi';
+
+  @override
+  String get batchScanAction => 'Skena amadokhumenti amaningi';
+
+  @override
+  String get batchScanHint => 'Premium: kuze kufike ezithombeni ezingu-10 ngesikhathi esisodwa. Zifundwa ocingweni lwakho, futhi uhlola ngasinye ngaphambi kokuthi kulondolozwe lutho.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Kufundwa $done kwezingu-$total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Amadokhumenti askeniwe';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Idokhumenti $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Izithombe azikwazanga ukufundwa. Zama izithombe ezicace kakhudlwana, idokhumenti eyodwa esithombeni ngasinye.';
 
   @override
   String get csvImportColumnsTitle => 'Amakholomu ongawasebenzisa';
@@ -5018,6 +5046,46 @@ class AppLocalizationsZu extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Izicelo ezithunyelwe: $sent kokungu-$count';
   }
+
+  @override
+  String get staffImportAction => 'Ngenisa abasebenzi kusuka kuspredishithi';
+
+  @override
+  String get staffImportHint => 'Ifayela le-CSV elinekholamu yeGama, nekholamu ye-Imeyili uma unayo.';
+
+  @override
+  String get staffImportTitle => 'Ngenisa abasebenzi';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Kulungele ukwengezwa: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Kushiywe ngaphandle: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Imigqa ishiywa ngaphandle uma igama lingenalutho noma selisohlwini lwakho, noma uma abantu abangu-$limit bohlelo lwakho sebegcwele.';
+  }
+
+  @override
+  String get staffImportEmails => 'Bathumelele izikhumbuzo nge-imeyili mayelana namadokhumenti abo';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Engeza $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Abantu abengeziwe: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Ikholamu yegama ayitholakalanga. Faka amagama kukholamu ebizwa ngokuthi Name noma Igama.';
 
   @override
   String get roleAction => 'Indima namadokhumenti adingekayo';
@@ -8112,6 +8180,9 @@ class AppLocalizationsZu extends AppLocalizations {
   String get tourImport2Body => 'Usuvele unespredishithi? Yingenise bese uhlola umugqa ngamunye ngaphambi kokulondolozwa kwalutho.';
 
   @override
+  String get tourImportBatchBody => 'Nge-Premium ungaskena kuze kufike kumadokhumenti angu-10 ngesikhathi esisodwa futhi uwahlole wonke ngaphambi kokuthi kulondolozwe lutho.';
+
+  @override
   String get tourImport3Title => 'Yabelana ne-Vaultara';
 
   @override
@@ -8140,6 +8211,9 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Engeza abasebenzi bese ugcina izitifiketi zabo, izimvume namalayisense endaweni eyodwa.';
+
+  @override
+  String get tourBusinessImportBody => 'Usunohlu lwabasebenzi? Ungalungenisa kusuka kuspredishithi, namagama nama-imeyili.';
 
   @override
   String get tourBusinessRolesBody => 'Nikeza umuntu ngamunye indima, njengoMshayeli, namadokhumenti ayidingayo. I-Vaultara ibonisa okungekho.';

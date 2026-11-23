@@ -1151,6 +1151,9 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'እስከ 10 ሰነዶችን በአንድ ጊዜ ይቃኙ';
+
+  @override
   String get planFeatureAutoReminders => 'ራስ-ሰር አስታዋሾች';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get businessBenefitRoles => 'በሚና የሚያስፈልጉ ሰነዶችን ያዘጋጁ እና እያንዳንዱ ሰው የጎደለውን ይመልከቱ';
 
   @override
+  String get businessBenefitStaffImport => 'የሠራተኞች ዝርዝርዎን ከተመን ሉህ ያስመጡ';
+
+  @override
   String get businessBenefitPdf => 'የቡድን PDF ወደ ውጭ መላክ ከኩባንያዎ ስም ጋር';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'አብነት አግኝ';
+
+  @override
+  String get batchScanAction => 'ብዙ ሰነዶችን ይቃኙ';
+
+  @override
+  String get batchScanHint => 'Premium፦ በአንድ ጊዜ እስከ 10 ፎቶዎች። በስልክዎ ላይ ይነበባሉ፣ ምንም ነገር ከመቀመጡ በፊት እያንዳንዱን ይፈትሻሉ።';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return '$done ከ$total በማንበብ ላይ…';
+  }
+
+  @override
+  String get batchScanFileName => 'የተቃኙ ሰነዶች';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'ሰነድ $number';
+  }
+
+  @override
+  String get batchScanFailed => 'ፎቶዎቹ ሊነበቡ አልቻሉም። በአንድ ፎቶ አንድ ሰነድ፣ ግልጽ ፎቶዎችን ይሞክሩ።';
 
   @override
   String get csvImportColumnsTitle => 'መጠቀም የሚችሏቸው አምዶች';
@@ -5018,6 +5046,46 @@ class AppLocalizationsAm extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'የተላኩ ጥያቄዎች፦ $sent ከ$count';
   }
+
+  @override
+  String get staffImportAction => 'ሠራተኞችን ከተመን ሉህ ያስመጡ';
+
+  @override
+  String get staffImportHint => 'የስም አምድ ያለው፣ ካለዎት የኢሜይል አምድም ያለው CSV ፋይል።';
+
+  @override
+  String get staffImportTitle => 'ሠራተኞችን ያስመጡ';
+
+  @override
+  String staffImportReady(int count) {
+    return 'ለመጨመር ዝግጁ፦ $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'የተተዉ፦ $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'ስሙ ባዶ ሲሆን ወይም በዝርዝርዎ ውስጥ ሲኖር፣ ወይም የዕቅድዎ $limit ሰዎች ሲሞሉ ረድፎች ይተዋሉ።';
+  }
+
+  @override
+  String get staffImportEmails => 'ስለ ሰነዶቻቸው አስታዋሾችን በኢሜይል ይላኩላቸው';
+
+  @override
+  String staffImportButton(int count) {
+    return '$count አክል';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'የተጨመሩ ሰዎች፦ $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'የስም አምድ አልተገኘም። ስሞቹን ስም በሚባል አምድ ውስጥ ያስቀምጡ።';
 
   @override
   String get roleAction => 'ሚና እና የሚያስፈልጉ ሰነዶች';
@@ -8112,6 +8180,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get tourImport2Body => 'ቀድሞውኑ የተመን ሉህ አለዎት? ያስመጡት እና ምንም ከመቀመጡ በፊት እያንዳንዱን ረድፍ ይፈትሹ።';
 
   @override
+  String get tourImportBatchBody => 'በPremium እስከ 10 ሰነዶችን በአንድ ጊዜ መቃኘት እና ምንም ነገር ከመቀመጡ በፊት ሁሉንም መፈተሽ ይችላሉ።';
+
+  @override
   String get tourImport3Title => 'ወደ Vaultara ያጋሩ';
 
   @override
@@ -8140,6 +8211,9 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'ሠራተኞችን ያክሉ እና ሰርተፊኬቶቻቸውን፣ ፈቃዶቻቸውን እና ፍቃዶቻቸውን በአንድ ቦታ ያስቀምጡ።';
+
+  @override
+  String get tourBusinessImportBody => 'የሠራተኞች ዝርዝር አለዎት? በስሞች እና በኢሜይሎች ከተመን ሉህ ማስመጣት ይችላሉ።';
 
   @override
   String get tourBusinessRolesBody => 'ለእያንዳንዱ ሰው እንደ ሹፌር ያለ ሚና ከሚያስፈልጉት ሰነዶች ጋር ይስጡ። Vaultara የጎደለውን ያሳያል።';

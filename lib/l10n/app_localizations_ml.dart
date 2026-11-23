@@ -1151,6 +1151,9 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'ഒരേസമയം 10 രേഖകൾ വരെ സ്കാൻ ചെയ്യുക';
+
+  @override
   String get planFeatureAutoReminders => 'സ്വയമേവയുള്ള റിമൈൻഡറുകൾ';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsMl extends AppLocalizations {
   String get businessBenefitRoles => 'ഓരോ റോളിനും ആവശ്യമായ രേഖകൾ നിശ്ചയിച്ച് ഓരോരുത്തർക്കും എന്ത് ഇല്ലെന്ന് കാണൂ';
 
   @override
+  String get businessBenefitStaffImport => 'ജീവനക്കാരുടെ പട്ടിക സ്പ്രെഡ്‌ഷീറ്റിൽ നിന്ന് ഇമ്പോർട്ട് ചെയ്യുക';
+
+  @override
   String get businessBenefitPdf => 'നിങ്ങളുടെ കമ്പനിയുടെ പേരുള്ള ടീം PDF എക്സ്പോർട്ട്';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'ടെംപ്ലേറ്റ് എടുക്കുക';
+
+  @override
+  String get batchScanAction => 'ഒന്നിലധികം രേഖകൾ സ്കാൻ ചെയ്യുക';
+
+  @override
+  String get batchScanHint => 'Premium: ഒരേസമയം 10 ഫോട്ടോകൾ വരെ. അവ നിങ്ങളുടെ ഫോണിൽ തന്നെ വായിക്കുന്നു, ഒന്നും സേവ് ചെയ്യുന്നതിന് മുമ്പ് ഓരോന്നും നിങ്ങൾ പരിശോധിക്കും.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return '$total-ൽ $done വായിക്കുന്നു…';
+  }
+
+  @override
+  String get batchScanFileName => 'സ്കാൻ ചെയ്ത രേഖകൾ';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'രേഖ $number';
+  }
+
+  @override
+  String get batchScanFailed => 'ഫോട്ടോകൾ വായിക്കാനായില്ല. ഓരോ ഫോട്ടോയിലും ഒരു രേഖ വെച്ച് കൂടുതൽ വ്യക്തമായ ഫോട്ടോകൾ ശ്രമിക്കുക.';
 
   @override
   String get csvImportColumnsTitle => 'ഉപയോഗിക്കാവുന്ന കോളങ്ങൾ';
@@ -5018,6 +5046,46 @@ class AppLocalizationsMl extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'അയച്ച അഭ്യർത്ഥനകൾ: $count-ൽ $sent';
   }
+
+  @override
+  String get staffImportAction => 'സ്പ്രെഡ്‌ഷീറ്റിൽ നിന്ന് ജീവനക്കാരെ ഇമ്പോർട്ട് ചെയ്യുക';
+
+  @override
+  String get staffImportHint => 'പേര് കോളവും ഉണ്ടെങ്കിൽ ഇമെയിൽ കോളവുമുള്ള CSV ഫയൽ.';
+
+  @override
+  String get staffImportTitle => 'ജീവനക്കാരെ ഇമ്പോർട്ട് ചെയ്യുക';
+
+  @override
+  String staffImportReady(int count) {
+    return 'ചേർക്കാൻ തയ്യാർ: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'ഒഴിവാക്കി: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'പേര് ശൂന്യമോ ഇതിനകം പട്ടികയിലോ ആണെങ്കിൽ, അല്ലെങ്കിൽ പ്ലാനിലെ $limit പേർ തികയുമ്പോൾ വരികൾ ഒഴിവാക്കും.';
+  }
+
+  @override
+  String get staffImportEmails => 'അവരുടെ രേഖകളെക്കുറിച്ച് ഇമെയിൽ ഓർമ്മപ്പെടുത്തലുകൾ അയയ്ക്കുക';
+
+  @override
+  String staffImportButton(int count) {
+    return '$count ചേർക്കുക';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'ചേർത്ത ആളുകൾ: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'പേര് കോളം കണ്ടെത്തിയില്ല. പേരുകൾ Name അല്ലെങ്കിൽ പേര് എന്ന കോളത്തിൽ ഇടുക.';
 
   @override
   String get roleAction => 'റോളും ആവശ്യമായ രേഖകളും';
@@ -8112,6 +8180,9 @@ class AppLocalizationsMl extends AppLocalizations {
   String get tourImport2Body => 'ഇതിനകം സ്പ്രെഡ്ഷീറ്റ് ഉണ്ടോ? ഇമ്പോർട്ട് ചെയ്ത് സേവ് ചെയ്യുന്നതിന് മുമ്പ് ഓരോ വരിയും പരിശോധിക്കുക.';
 
   @override
+  String get tourImportBatchBody => 'Premium-ൽ ഒരേസമയം 10 രേഖകൾ വരെ സ്കാൻ ചെയ്ത്, ഒന്നും സേവ് ചെയ്യുന്നതിന് മുമ്പ് എല്ലാം പരിശോധിക്കാം.';
+
+  @override
   String get tourImport3Title => 'Vaultara ലേക്ക് പങ്കിടുക';
 
   @override
@@ -8140,6 +8211,9 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'ജീവനക്കാരെ ചേർത്ത് അവരുടെ സർട്ടിഫിക്കറ്റുകൾ, പെർമിറ്റുകൾ, ലൈസൻസുകൾ ഒരിടത്ത് സൂക്ഷിക്കുക.';
+
+  @override
+  String get tourBusinessImportBody => 'ജീവനക്കാരുടെ പട്ടികയുണ്ടോ? പേരുകളും ഇമെയിലുകളുമായി സ്പ്രെഡ്‌ഷീറ്റിൽ നിന്ന് ഇമ്പോർട്ട് ചെയ്യാം.';
 
   @override
   String get tourBusinessRolesBody => 'ഓരോരുത്തർക്കും ഡ്രൈവർ പോലുള്ള ഒരു റോൾ, അതിന് വേണ്ട രേഖകളോടെ നൽകൂ. എന്താണ് ഇല്ലാത്തതെന്ന് Vaultara കാണിക്കും.';

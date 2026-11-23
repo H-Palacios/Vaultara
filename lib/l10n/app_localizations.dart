@@ -2233,6 +2233,12 @@ abstract class AppLocalizations {
   /// **'Up to {count} photos on each record'**
   String planFeaturePhotos(int count);
 
+  /// Premium feature on the Plans screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan up to 10 documents at once'**
+  String get planFeatureBatchScan;
+
   /// Free plan feature on the plans screen. Keep it short.
   ///
   /// In en, this message translates to:
@@ -5641,6 +5647,12 @@ abstract class AppLocalizations {
   /// **'Set required documents per role and see what each person is missing'**
   String get businessBenefitRoles;
 
+  /// Business plan benefit on the Plans screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Import your staff list from a spreadsheet'**
+  String get businessBenefitStaffImport;
+
   /// Business plan benefit
   ///
   /// In en, this message translates to:
@@ -6408,6 +6420,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Get a template'**
   String get csvImportGetTemplate;
+
+  /// Button on the import screen that scans several photos at once.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan several documents'**
+  String get batchScanAction;
+
+  /// Note under the batch scan button.
+  ///
+  /// In en, this message translates to:
+  /// **'Premium: up to 10 photos at once. They are read on your phone, and you check each one before anything is saved.'**
+  String get batchScanHint;
+
+  /// Progress on the button while photos are read.
+  ///
+  /// In en, this message translates to:
+  /// **'Reading {done} of {total}…'**
+  String batchScanReading(int done, int total);
+
+  /// Title of the import preview for scanned photos.
+  ///
+  /// In en, this message translates to:
+  /// **'Scanned documents'**
+  String get batchScanFileName;
+
+  /// Name for a scanned document with no name found. {number} is its place in the list.
+  ///
+  /// In en, this message translates to:
+  /// **'Document {number}'**
+  String batchScanUntitled(int number);
+
+  /// When none of the photos could be read.
+  ///
+  /// In en, this message translates to:
+  /// **'The photos could not be read. Try clearer photos, one document per photo.'**
+  String get batchScanFailed;
 
   /// Heading above the list of supported spreadsheet columns
   ///
@@ -8718,6 +8766,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Requests sent: {sent} of {count}'**
   String staffBulkDone(int sent, int count);
+
+  /// Business: tile that imports a staff list from a CSV file.
+  ///
+  /// In en, this message translates to:
+  /// **'Import staff from a spreadsheet'**
+  String get staffImportAction;
+
+  /// Note on the staff import tile.
+  ///
+  /// In en, this message translates to:
+  /// **'A CSV file with a Name column, and an Email column if you have one.'**
+  String get staffImportHint;
+
+  /// Title of the staff import check.
+  ///
+  /// In en, this message translates to:
+  /// **'Import staff'**
+  String get staffImportTitle;
+
+  /// How many people will be added.
+  ///
+  /// In en, this message translates to:
+  /// **'Ready to add: {count}'**
+  String staffImportReady(int count);
+
+  /// How many rows will not be added.
+  ///
+  /// In en, this message translates to:
+  /// **'Left out: {count}'**
+  String staffImportSkipped(int count);
+
+  /// Why rows are left out. {limit} is the plan's number of people.
+  ///
+  /// In en, this message translates to:
+  /// **'Rows are left out when the name is empty or already in your list, or once your plan\'s {limit} people are reached.'**
+  String staffImportSkippedHint(int limit);
+
+  /// Checkbox: email the imported staff reminders.
+  ///
+  /// In en, this message translates to:
+  /// **'Email them reminders about their documents'**
+  String get staffImportEmails;
+
+  /// Button that adds the people.
+  ///
+  /// In en, this message translates to:
+  /// **'Add {count}'**
+  String staffImportButton(int count);
+
+  /// After adding.
+  ///
+  /// In en, this message translates to:
+  /// **'People added: {count}'**
+  String staffImportDone(int count);
+
+  /// When the file has no name column.
+  ///
+  /// In en, this message translates to:
+  /// **'No Name column was found. Put the names in a column called Name.'**
+  String get staffImportNoColumns;
 
   /// Menu item and sheet title for a staff role and the documents it needs.
   ///
@@ -14011,6 +14119,12 @@ abstract class AppLocalizations {
   /// **'Keep a spreadsheet already? Import it and check each row before anything is saved.'**
   String get tourImport2Body;
 
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'On Premium, you can scan up to 10 documents at once and check them all before anything is saved.'**
+  String get tourImportBatchBody;
+
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
@@ -14070,6 +14184,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Add staff and keep their certificates, permits and licences in one place.'**
   String get tourBusiness1Body;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Have a staff list already? You can import it from a spreadsheet, with names and emails.'**
+  String get tourBusinessImportBody;
 
   /// Text of a tutorial step.
   ///

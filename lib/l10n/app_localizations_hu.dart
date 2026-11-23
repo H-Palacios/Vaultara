@@ -1151,6 +1151,9 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Egyszerre legfeljebb 10 dokumentum beolvasása';
+
+  @override
   String get planFeatureAutoReminders => 'Automatikus emlékeztetők';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String get businessBenefitRoles => 'Állítsd be munkakörönként a kötelező dokumentumokat, és lásd, kinek mi hiányzik';
 
   @override
+  String get businessBenefitStaffImport => 'Munkatársi lista importálása táblázatból';
+
+  @override
   String get businessBenefitPdf => 'Csapatos PDF-exportálás a cége nevével';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Sablon letöltése';
+
+  @override
+  String get batchScanAction => 'Több dokumentum beolvasása';
+
+  @override
+  String get batchScanHint => 'Premium: egyszerre legfeljebb 10 fotó. A telefonodon olvassuk be őket, és mentés előtt mindegyiket átnézed.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return '$done/$total beolvasása…';
+  }
+
+  @override
+  String get batchScanFileName => 'Beolvasott dokumentumok';
+
+  @override
+  String batchScanUntitled(int number) {
+    return '$number. dokumentum';
+  }
+
+  @override
+  String get batchScanFailed => 'A fotókat nem sikerült beolvasni. Próbálj élesebb fotókat, fotónként egy dokumentummal.';
 
   @override
   String get csvImportColumnsTitle => 'Használható oszlopok';
@@ -5018,6 +5046,46 @@ class AppLocalizationsHu extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Elküldött kérések: $sent / $count';
   }
+
+  @override
+  String get staffImportAction => 'Munkatársak importálása táblázatból';
+
+  @override
+  String get staffImportHint => 'CSV-fájl Név oszloppal, és ha van, E-mail oszloppal.';
+
+  @override
+  String get staffImportTitle => 'Munkatársak importálása';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Hozzáadható: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Kihagyva: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'A sorok kimaradnak, ha a név üres vagy már szerepel a listádban, illetve ha eléred a csomagod $limit fős korlátját.';
+  }
+
+  @override
+  String get staffImportEmails => 'E-mailes emlékeztetők küldése nekik a dokumentumaikról';
+
+  @override
+  String staffImportButton(int count) {
+    return '$count hozzáadása';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Hozzáadott személyek: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Nem található névoszlop. Írd a neveket egy Név vagy Name nevű oszlopba.';
 
   @override
   String get roleAction => 'Munkakör és kötelező dokumentumok';
@@ -8112,6 +8180,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tourImport2Body => 'Van már táblázatod? Importáld, és ellenőrizz minden sort, mielőtt bármi mentődik.';
 
   @override
+  String get tourImportBatchBody => 'Premiummal egyszerre legfeljebb 10 dokumentumot olvashatsz be, és mentés előtt mindet átnézheted.';
+
+  @override
   String get tourImport3Title => 'Megosztás a Vaultarával';
 
   @override
@@ -8140,6 +8211,9 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Adj hozzá munkatársakat, és tartsd egy helyen a tanúsítványaikat, engedélyeiket és jogosítványaikat.';
+
+  @override
+  String get tourBusinessImportBody => 'Van már munkatársi listád? Táblázatból is importálhatod nevekkel és e-mail-címekkel.';
 
   @override
   String get tourBusinessRolesBody => 'Adj mindenkinek munkakört, például Sofőr, a szükséges dokumentumokkal. A Vaultara megmutatja, mi hiányzik.';

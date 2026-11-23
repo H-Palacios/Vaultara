@@ -1151,6 +1151,9 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Skenē līdz 10 dokumentiem vienlaikus';
+
+  @override
   String get planFeatureAutoReminders => 'Automātiski atgādinājumi';
 
   @override
@@ -3248,6 +3251,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String get businessBenefitRoles => 'Nosaki obligātos dokumentus katram amatam un redzi, kas kuram trūkst';
 
   @override
+  String get businessBenefitStaffImport => 'Importē darbinieku sarakstu no izklājlapas';
+
+  @override
   String get businessBenefitPdf => 'Komandas PDF eksports ar jūsu uzņēmuma nosaukumu';
 
   @override
@@ -3701,6 +3707,28 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Iegūt veidni';
+
+  @override
+  String get batchScanAction => 'Skenēt vairākus dokumentus';
+
+  @override
+  String get batchScanHint => 'Premium: līdz 10 fotoattēliem vienlaikus. Tie tiek nolasīti tavā tālrunī, un tu pārbaudi katru, pirms kaut kas tiek saglabāts.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Nolasa $done no $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Skenētie dokumenti';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Dokuments $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Fotoattēlus neizdevās nolasīt. Mēģini skaidrākus fotoattēlus, vienu dokumentu katrā.';
 
   @override
   String get csvImportColumnsTitle => 'Kolonnas, ko varat izmantot';
@@ -5061,6 +5089,46 @@ class AppLocalizationsLv extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Nosūtītie pieprasījumi: $sent no $count';
   }
+
+  @override
+  String get staffImportAction => 'Importēt darbiniekus no izklājlapas';
+
+  @override
+  String get staffImportHint => 'CSV fails ar kolonnu Vārds un, ja ir, kolonnu E-pasts.';
+
+  @override
+  String get staffImportTitle => 'Importēt darbiniekus';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Gatavi pievienošanai: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Izlaisti: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Rindas tiek izlaistas, ja vārds ir tukšs vai jau ir tavā sarakstā, vai kad sasniegts tava plāna limits — $limit cilvēki.';
+  }
+
+  @override
+  String get staffImportEmails => 'Sūtīt viņiem atgādinājumus par dokumentiem e-pastā';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Pievienot $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Pievienoti cilvēki: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Vārdu kolonna netika atrasta. Ieraksti vārdus kolonnā ar nosaukumu Vārds vai Name.';
 
   @override
   String get roleAction => 'Amats un obligātie dokumenti';
@@ -8178,6 +8246,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tourImport2Body => 'Tev jau ir izklājlapa? Importē to un pārbaudi katru rindu pirms saglabāšanas.';
 
   @override
+  String get tourImportBatchBody => 'Ar Premium vari skenēt līdz 10 dokumentiem vienlaikus un pārbaudīt visus, pirms kaut kas tiek saglabāts.';
+
+  @override
   String get tourImport3Title => 'Kopīgo uz Vaultara';
 
   @override
@@ -8206,6 +8277,9 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Pievieno darbiniekus un glabā viņu sertifikātus, atļaujas un licences vienuviet.';
+
+  @override
+  String get tourBusinessImportBody => 'Tev jau ir darbinieku saraksts? Vari to importēt no izklājlapas ar vārdiem un e-pastiem.';
 
   @override
   String get tourBusinessRolesBody => 'Piešķir katram amatu, piemēram, Vadītājs, ar tam vajadzīgajiem dokumentiem. Vaultara rāda, kas trūkst.';

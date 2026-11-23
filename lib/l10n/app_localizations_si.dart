@@ -1151,6 +1151,9 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'එකවර ලේඛන 10ක් දක්වා ස්කෑන් කරන්න';
+
+  @override
   String get planFeatureAutoReminders => 'ස්වයංක්‍රීය මතක් කිරීම්';
 
   @override
@@ -3222,6 +3225,9 @@ class AppLocalizationsSi extends AppLocalizations {
   String get businessBenefitRoles => 'භූමිකාවකට අවශ්‍ය ලේඛන සකසා එක් එක් කෙනාට නැති දේ බලන්න';
 
   @override
+  String get businessBenefitStaffImport => 'ඔබේ කාර්ය මණ්ඩල ලැයිස්තුව පැතුරුම්පතකින් ආයාත කරන්න';
+
+  @override
   String get businessBenefitPdf => 'ඔබේ සමාගමේ නම සහිත කණ්ඩායම් PDF අපනයනය';
 
   @override
@@ -3670,6 +3676,28 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'සැකිල්ලක් ලබා ගන්න';
+
+  @override
+  String get batchScanAction => 'ලේඛන කිහිපයක් ස්කෑන් කරන්න';
+
+  @override
+  String get batchScanHint => 'Premium: එකවර ඡායාරූප 10ක් දක්වා. ඒවා ඔබේ දුරකථනයේම කියවන අතර, කිසිවක් සුරැකීමට පෙර ඔබ එකින් එක පරීක්ෂා කරයි.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return '$totalන් $done කියවමින්…';
+  }
+
+  @override
+  String get batchScanFileName => 'ස්කෑන් කළ ලේඛන';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'ලේඛනය $number';
+  }
+
+  @override
+  String get batchScanFailed => 'ඡායාරූප කියවිය නොහැකි විය. එක් ඡායාරූපයක එක් ලේඛනයක් ලෙස පැහැදිලි ඡායාරූප උත්සාහ කරන්න.';
 
   @override
   String get csvImportColumnsTitle => 'භාවිත කළ හැකි තීරු';
@@ -5017,6 +5045,46 @@ class AppLocalizationsSi extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'යැවූ ඉල්ලීම්: $count න් $sent';
   }
+
+  @override
+  String get staffImportAction => 'පැතුරුම්පතකින් කාර්ය මණ්ඩලය ආයාත කරන්න';
+
+  @override
+  String get staffImportHint => 'නම තීරුවක් සහ තිබේ නම් ඊමේල් තීරුවක් ඇති CSV ගොනුවක්.';
+
+  @override
+  String get staffImportTitle => 'කාර්ය මණ්ඩලය ආයාත කරන්න';
+
+  @override
+  String staffImportReady(int count) {
+    return 'එක් කිරීමට සූදානම්: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'මඟ හැරුණු: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'නම හිස් නම් හෝ දැනටමත් ලැයිස්තුවේ ඇත්නම්, හෝ ඔබේ සැලැස්මේ $limit දෙනා සම්පූර්ණ වූ විට පේළි මඟ හැරේ.';
+  }
+
+  @override
+  String get staffImportEmails => 'ඔවුන්ගේ ලේඛන ගැන ඊමේල් සිහිකැඳවීම් යවන්න';
+
+  @override
+  String staffImportButton(int count) {
+    return '$count එක් කරන්න';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'එක් කළ පුද්ගලයන්: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'නම තීරුවක් හමු නොවීය. නම් Name හෝ නම ලෙස නම් කළ තීරුවක තබන්න.';
 
   @override
   String get roleAction => 'භූමිකාව සහ අවශ්‍ය ලේඛන';
@@ -8111,6 +8179,9 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tourImport2Body => 'දැනටමත් පැතුරුම්පතක් තිබේද? එය ආයාත කර සුරැකීමට පෙර සෑම පේළියක්ම පරීක්ෂා කරන්න.';
 
   @override
+  String get tourImportBatchBody => 'Premium සමඟ එකවර ලේඛන 10ක් දක්වා ස්කෑන් කර කිසිවක් සුරැකීමට පෙර සියල්ල පරීක්ෂා කළ හැක.';
+
+  @override
   String get tourImport3Title => 'Vaultara වෙත බෙදාගන්න';
 
   @override
@@ -8139,6 +8210,9 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'කාර්ය මණ්ඩලය එක් කර ඔවුන්ගේ සහතික, අවසර සහ බලපත්‍ර එක තැනක තබන්න.';
+
+  @override
+  String get tourBusinessImportBody => 'කාර්ය මණ්ඩල ලැයිස්තුවක් තිබේද? නම් සහ ඊමේල් සමඟ පැතුරුම්පතකින් ආයාත කළ හැක.';
 
   @override
   String get tourBusinessRolesBody => 'සෑම කෙනෙකුටම රියදුරු වැනි භූමිකාවක් එයට අවශ්‍ය ලේඛන සමඟ දෙන්න. නැති දේ Vaultara පෙන්වයි.';

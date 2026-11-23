@@ -1151,6 +1151,9 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Бир учурда 10 документке чейин сканерлөө';
+
+  @override
   String get planFeatureAutoReminders => 'Автоматтык эскертүүлөр';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsKy extends AppLocalizations {
   String get businessBenefitRoles => 'Ар бир кызмат орду үчүн керектүү документтерди белгилеп, кимде эмне жок экенин көрүңүз';
 
   @override
+  String get businessBenefitStaffImport => 'Кызматкерлердин тизмесин таблицадан импорттоңуз';
+
+  @override
   String get businessBenefitPdf => 'Компанияңыздын аты менен команданын PDF экспорту';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Үлгү алуу';
+
+  @override
+  String get batchScanAction => 'Бир нече документти сканерлөө';
+
+  @override
+  String get batchScanHint => 'Premium: бир учурда 10 сүрөткө чейин. Алар телефонуңузда окулат, эч нерсе сакталганга чейин ар бирин текшересиз.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return '$total ичинен $done окулууда…';
+  }
+
+  @override
+  String get batchScanFileName => 'Сканерленген документтер';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Документ $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Сүрөттөрдү окуу мүмкүн болгон жок. Ар бир сүрөттө бир документ болгон даана сүрөттөрдү колдонуп көрүңүз.';
 
   @override
   String get csvImportColumnsTitle => 'Колдоно турган мамычалар';
@@ -5018,6 +5046,46 @@ class AppLocalizationsKy extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Жөнөтүлгөн суроолор: $count ичинен $sent';
   }
+
+  @override
+  String get staffImportAction => 'Кызматкерлерди таблицадан импорттоо';
+
+  @override
+  String get staffImportHint => 'Аты тилкеси бар, болсо электрондук почта тилкеси да бар CSV файл.';
+
+  @override
+  String get staffImportTitle => 'Кызматкерлерди импорттоо';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Кошууга даяр: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Өткөрүлүп жиберилди: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Аты бош же тизмеңизде мурунтан бар саптар, же тарифиңиздин $limit адамы толгондо саптар өткөрүлүп жиберилет.';
+  }
+
+  @override
+  String get staffImportEmails => 'Аларга документтери тууралуу эскертмелерди почта аркылуу жөнөтүү';
+
+  @override
+  String staffImportButton(int count) {
+    return '$count кошуу';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Кошулган адамдар: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Аты тилкеси табылган жок. Аттарды Name же Аты деген тилкеге жазыңыз.';
 
   @override
   String get roleAction => 'Кызмат орду жана талап кылынган документтер';
@@ -8112,6 +8180,9 @@ class AppLocalizationsKy extends AppLocalizations {
   String get tourImport2Body => 'Таблицаңыз барбы? Импорттоп, сактоодон мурун ар бир сапты текшериңиз.';
 
   @override
+  String get tourImportBatchBody => 'Premium менен бир учурда 10 документке чейин сканерлеп, эч нерсе сакталганга чейин баарын текшере аласыз.';
+
+  @override
   String get tourImport3Title => 'Vaultara\'га бөлүшүңүз';
 
   @override
@@ -8140,6 +8211,9 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Кызматкерлерди кошуп, алардын сертификаттарын, уруксаттарын жана лицензияларын бир жерде сактаңыз.';
+
+  @override
+  String get tourBusinessImportBody => 'Кызматкерлердин тизмеси барбы? Аны аттар жана почталар менен таблицадан импорттой аласыз.';
 
   @override
   String get tourBusinessRolesBody => 'Ар бир адамга Айдоочу сыяктуу кызмат ордун керектүү документтери менен бериңиз. Vaultara эмне жок экенин көрсөтөт.';

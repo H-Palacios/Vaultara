@@ -1151,6 +1151,9 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Σάρωση έως 10 εγγράφων μαζί';
+
+  @override
   String get planFeatureAutoReminders => 'Αυτόματες υπενθυμίσεις';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsEl extends AppLocalizations {
   String get businessBenefitRoles => 'Ορίστε απαιτούμενα έγγραφα ανά ρόλο και δείτε τι λείπει από τον καθένα';
 
   @override
+  String get businessBenefitStaffImport => 'Εισαγωγή της λίστας προσωπικού από υπολογιστικό φύλλο';
+
+  @override
   String get businessBenefitPdf => 'Εξαγωγή PDF για την ομάδα με την επωνυμία της εταιρείας σας';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Λήψη προτύπου';
+
+  @override
+  String get batchScanAction => 'Σάρωση πολλών εγγράφων';
+
+  @override
+  String get batchScanHint => 'Premium: έως 10 φωτογραφίες μαζί. Διαβάζονται στο τηλέφωνό σας και ελέγχετε την καθεμία πριν αποθηκευτεί οτιδήποτε.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Ανάγνωση $done από $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Σαρωμένα έγγραφα';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Έγγραφο $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Δεν ήταν δυνατή η ανάγνωση των φωτογραφιών. Δοκιμάστε πιο καθαρές φωτογραφίες, ένα έγγραφο ανά φωτογραφία.';
 
   @override
   String get csvImportColumnsTitle => 'Στήλες που μπορείτε να χρησιμοποιήσετε';
@@ -5018,6 +5046,46 @@ class AppLocalizationsEl extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Αιτήματα που στάλθηκαν: $sent από $count';
   }
+
+  @override
+  String get staffImportAction => 'Εισαγωγή προσωπικού από υπολογιστικό φύλλο';
+
+  @override
+  String get staffImportHint => 'Ένα αρχείο CSV με στήλη Όνομα και στήλη Email, αν έχετε.';
+
+  @override
+  String get staffImportTitle => 'Εισαγωγή προσωπικού';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Έτοιμα για προσθήκη: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Παραλείφθηκαν: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Οι γραμμές παραλείπονται όταν το όνομα είναι κενό ή υπάρχει ήδη στη λίστα σας, ή όταν συμπληρωθούν τα $limit άτομα του προγράμματός σας.';
+  }
+
+  @override
+  String get staffImportEmails => 'Αποστολή υπενθυμίσεων με email για τα έγγραφά τους';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Προσθήκη $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Προστέθηκαν άτομα: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Δεν βρέθηκε στήλη ονόματος. Βάλτε τα ονόματα σε στήλη με τίτλο Όνομα ή Name.';
 
   @override
   String get roleAction => 'Ρόλος και απαιτούμενα έγγραφα';
@@ -8116,6 +8184,9 @@ class AppLocalizationsEl extends AppLocalizations {
   String get tourImport2Body => 'Έχετε ήδη υπολογιστικό φύλλο; Εισαγάγετέ το και ελέγξτε κάθε γραμμή πριν αποθηκευτεί κάτι.';
 
   @override
+  String get tourImportBatchBody => 'Με το Premium μπορείτε να σαρώσετε έως 10 έγγραφα μαζί και να τα ελέγξετε όλα πριν αποθηκευτεί οτιδήποτε.';
+
+  @override
   String get tourImport3Title => 'Κοινή χρήση στο Vaultara';
 
   @override
@@ -8144,6 +8215,9 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Προσθέστε προσωπικό και κρατήστε πιστοποιητικά, άδειες και διπλώματα σε ένα σημείο.';
+
+  @override
+  String get tourBusinessImportBody => 'Έχετε ήδη λίστα προσωπικού; Μπορείτε να την εισαγάγετε από υπολογιστικό φύλλο, με ονόματα και email.';
 
   @override
   String get tourBusinessRolesBody => 'Δώστε σε κάθε άτομο έναν ρόλο, π.χ. Οδηγός, με τα έγγραφα που χρειάζεται. Το Vaultara δείχνει τι λείπει.';

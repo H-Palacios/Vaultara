@@ -1150,6 +1150,9 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => '서류를 한 번에 최대 10개까지 스캔';
+
+  @override
   String get planFeatureAutoReminders => '자동 알림';
 
   @override
@@ -3207,6 +3210,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get businessBenefitRoles => '직무별 필수 서류를 정하고 각자 무엇이 빠졌는지 확인하세요';
 
   @override
+  String get businessBenefitStaffImport => '스프레드시트에서 직원 목록 가져오기';
+
+  @override
   String get businessBenefitPdf => '회사 이름이 들어간 팀 PDF 내보내기';
 
   @override
@@ -3650,6 +3656,28 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => '템플릿 받기';
+
+  @override
+  String get batchScanAction => '여러 서류 스캔';
+
+  @override
+  String get batchScanHint => 'Premium: 한 번에 최대 10장. 휴대폰에서 읽고, 저장 전에 하나씩 확인해요.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return '$total장 중 $done장 읽는 중…';
+  }
+
+  @override
+  String get batchScanFileName => '스캔한 서류';
+
+  @override
+  String batchScanUntitled(int number) {
+    return '서류 $number';
+  }
+
+  @override
+  String get batchScanFailed => '사진을 읽지 못했어요. 사진 한 장에 서류 하나씩, 더 선명하게 찍어 보세요.';
 
   @override
   String get csvImportColumnsTitle => '사용할 수 있는 열';
@@ -4984,6 +5012,46 @@ class AppLocalizationsKo extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return '보낸 요청: $count건 중 $sent건';
   }
+
+  @override
+  String get staffImportAction => '스프레드시트에서 직원 가져오기';
+
+  @override
+  String get staffImportHint => '이름 열과, 있다면 이메일 열이 있는 CSV 파일.';
+
+  @override
+  String get staffImportTitle => '직원 가져오기';
+
+  @override
+  String staffImportReady(int count) {
+    return '추가 준비됨: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return '제외됨: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return '이름이 비어 있거나 이미 목록에 있는 행, 또는 요금제의 $limit명을 넘는 행은 제외돼요.';
+  }
+
+  @override
+  String get staffImportEmails => '서류 관련 알림을 이메일로 보내기';
+
+  @override
+  String staffImportButton(int count) {
+    return '$count명 추가';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return '추가된 인원: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => '이름 열을 찾지 못했어요. 이름을 Name 또는 이름이라는 열에 넣어 주세요.';
 
   @override
   String get roleAction => '직무와 필수 서류';
@@ -8055,6 +8123,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tourImport2Body => '이미 스프레드시트가 있나요? 가져와서 저장 전에 행마다 확인하세요.';
 
   @override
+  String get tourImportBatchBody => 'Premium에서는 서류를 한 번에 최대 10개까지 스캔하고, 저장 전에 모두 확인할 수 있어요.';
+
+  @override
   String get tourImport3Title => 'Vaultara로 공유';
 
   @override
@@ -8083,6 +8154,9 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => '직원을 추가하고 자격증, 허가증, 면허를 한곳에서 관리하세요.';
+
+  @override
+  String get tourBusinessImportBody => '직원 목록이 있나요? 이름과 이메일이 담긴 스프레드시트에서 가져올 수 있어요.';
 
   @override
   String get tourBusinessRolesBody => '각자에게 운전기사 같은 직무와 필요한 서류를 정하세요. 빠진 것을 Vaultara가 보여 줘요.';

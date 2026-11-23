@@ -1150,6 +1150,9 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Нэг дор 10 хүртэл баримт скан хийх';
+
+  @override
   String get planFeatureAutoReminders => 'Автомат сануулга';
 
   @override
@@ -3222,6 +3225,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get businessBenefitRoles => 'Албан тушаал бүрт шаардлагатай баримтыг тогтоож, хэнд юу дутуу байгааг хараарай';
 
   @override
+  String get businessBenefitStaffImport => 'Ажилтны жагсаалтаа хүснэгтээс импортлох';
+
+  @override
   String get businessBenefitPdf => 'Таны компанийн нэртэй багийн PDF экспорт';
 
   @override
@@ -3670,6 +3676,28 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Загвар авах';
+
+  @override
+  String get batchScanAction => 'Олон баримт скан хийх';
+
+  @override
+  String get batchScanHint => 'Premium: нэг дор 10 хүртэл зураг. Тэдгээрийг таны утсан дээр уншиж, юу ч хадгалахаас өмнө та бүрийг шалгана.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return '$total-с $done-г уншиж байна…';
+  }
+
+  @override
+  String get batchScanFileName => 'Скан хийсэн баримтууд';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Баримт $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Зургуудыг уншиж чадсангүй. Зураг бүрт нэг баримттай, илүү тод зураг ашиглана уу.';
 
   @override
   String get csvImportColumnsTitle => 'Ашиглаж болох баганууд';
@@ -5017,6 +5045,46 @@ class AppLocalizationsMn extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Илгээсэн хүсэлт: $count-с $sent';
   }
+
+  @override
+  String get staffImportAction => 'Ажилтнуудыг хүснэгтээс импортлох';
+
+  @override
+  String get staffImportHint => 'Нэр багана, байвал имэйл багана бүхий CSV файл.';
+
+  @override
+  String get staffImportTitle => 'Ажилтан импортлох';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Нэмэхэд бэлэн: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Алгассан: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Нэр хоосон эсвэл аль хэдийн жагсаалтад байгаа, эсвэл таны төлөвлөгөөний $limit хүн дүүрсэн үед мөрүүдийг алгасна.';
+  }
+
+  @override
+  String get staffImportEmails => 'Тэдэнд баримтынх нь талаар имэйлээр сануулга илгээх';
+
+  @override
+  String staffImportButton(int count) {
+    return '$count нэмэх';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Нэмсэн хүмүүс: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Нэрийн багана олдсонгүй. Нэрсийг Name эсвэл Нэр гэсэн баганад бичнэ үү.';
 
   @override
   String get roleAction => 'Албан тушаал ба шаардлагатай баримт';
@@ -8102,6 +8170,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get tourImport2Body => 'Хүснэгт аль хэдийн бий юу? Импортлоод хадгалахаас өмнө мөр бүрийг шалгана уу.';
 
   @override
+  String get tourImportBatchBody => 'Premium-ээр нэг дор 10 хүртэл баримт скан хийж, юу ч хадгалахаас өмнө бүгдийг шалгаж болно.';
+
+  @override
   String get tourImport3Title => 'Vaultara руу хуваалцах';
 
   @override
@@ -8130,6 +8201,9 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Ажилтнуудаа нэмж, тэдний гэрчилгээ, зөвшөөрөл, тусгай зөвшөөрлийг нэг дор хадгална уу.';
+
+  @override
+  String get tourBusinessImportBody => 'Ажилтны жагсаалт байгаа юу? Нэр, имэйлтэй нь хүснэгтээс импортлож болно.';
 
   @override
   String get tourBusinessRolesBody => 'Хүн бүрт Жолооч гэх мэт албан тушаалыг шаардлагатай баримттай нь өгнө үү. Юу дутуу байгааг Vaultara харуулна.';

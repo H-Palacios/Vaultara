@@ -1151,6 +1151,9 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Eskaneatu 10 dokumentu arte batera';
+
+  @override
   String get planFeatureAutoReminders => 'Gogorarazle automatikoak';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsEu extends AppLocalizations {
   String get businessBenefitRoles => 'Ezarri beharrezko dokumentuak rol bakoitzeko eta ikusi zer falta zaion bakoitzari';
 
   @override
+  String get businessBenefitStaffImport => 'Inportatu langile-zerrenda kalkulu-orri batetik';
+
+  @override
   String get businessBenefitPdf => 'Taldearen PDF esportazioa, zure enpresaren izenarekin';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Lortu txantiloi bat';
+
+  @override
+  String get batchScanAction => 'Eskaneatu hainbat dokumentu';
+
+  @override
+  String get batchScanHint => 'Premium: 10 argazki arte batera. Zure telefonoan irakurtzen dira, eta bakoitza egiaztatzen duzu ezer gorde aurretik.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return '$done/$total irakurtzen…';
+  }
+
+  @override
+  String get batchScanFileName => 'Eskaneatutako dokumentuak';
+
+  @override
+  String batchScanUntitled(int number) {
+    return '$number. dokumentua';
+  }
+
+  @override
+  String get batchScanFailed => 'Ezin izan dira argazkiak irakurri. Saiatu argazki argiagoekin, dokumentu bat argazki bakoitzeko.';
 
   @override
   String get csvImportColumnsTitle => 'Erabil ditzakezun zutabeak';
@@ -5018,6 +5046,46 @@ class AppLocalizationsEu extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Bidalitako eskaerak: $sent/$count';
   }
+
+  @override
+  String get staffImportAction => 'Inportatu langileak kalkulu-orri batetik';
+
+  @override
+  String get staffImportHint => 'Izena zutabea duen CSV fitxategia, eta Posta zutabea baduzu.';
+
+  @override
+  String get staffImportTitle => 'Inportatu langileak';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Gehitzeko prest: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Kanpoan utzita: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Errenkadak kanpoan uzten dira izena hutsik dagoenean edo zerrendan dagoeneko dagoenean, edo planaren $limit pertsonak betetzen direnean.';
+  }
+
+  @override
+  String get staffImportEmails => 'Bidali dokumentuei buruzko oroigarriak posta elektronikoz';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Gehitu $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Gehitutako pertsonak: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Ez da izen-zutaberik aurkitu. Jarri izenak Izena izeneko zutabe batean.';
 
   @override
   String get roleAction => 'Rola eta beharrezko dokumentuak';
@@ -8116,6 +8184,9 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tourImport2Body => 'Kalkulu-orri bat duzu jada? Inportatu eta begiratu errenkada bakoitza ezer gorde aurretik.';
 
   @override
+  String get tourImportBatchBody => 'Premiumekin 10 dokumentu arte eskanea ditzakezu batera, eta guztiak egiaztatu ezer gorde aurretik.';
+
+  @override
   String get tourImport3Title => 'Partekatu Vaultarara';
 
   @override
@@ -8144,6 +8215,9 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Gehitu langileak eta gorde haien ziurtagiriak, baimenak eta lizentziak leku bakarrean.';
+
+  @override
+  String get tourBusinessImportBody => 'Langile-zerrenda baduzu? Kalkulu-orri batetik inporta dezakezu, izen eta helbideekin.';
 
   @override
   String get tourBusinessRolesBody => 'Eman pertsona bakoitzari rol bat, Gidaria adibidez, behar dituen dokumentuekin. Vaultarak erakusten du zer falta den.';

@@ -1150,6 +1150,9 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Skannaðu allt að 10 skjöl í einu';
+
+  @override
   String get planFeatureAutoReminders => 'Sjálfvirkar áminningar';
 
   @override
@@ -3222,6 +3225,9 @@ class AppLocalizationsIs extends AppLocalizations {
   String get businessBenefitRoles => 'Settu nauðsynleg skjöl fyrir hvert hlutverk og sjáðu hvað hvern vantar';
 
   @override
+  String get businessBenefitStaffImport => 'Flyttu starfsmannalistann inn úr töflureikni';
+
+  @override
   String get businessBenefitPdf => 'PDF-útflutningur fyrir teymi með nafni fyrirtækisins þíns';
 
   @override
@@ -3670,6 +3676,28 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Fá sniðmát';
+
+  @override
+  String get batchScanAction => 'Skanna mörg skjöl';
+
+  @override
+  String get batchScanHint => 'Premium: allt að 10 myndir í einu. Þær eru lesnar í símanum þínum og þú yfirferð hverja áður en nokkuð er vistað.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Les $done af $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Skönnuð skjöl';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Skjal $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Ekki tókst að lesa myndirnar. Prófaðu skýrari myndir, eitt skjal á mynd.';
 
   @override
   String get csvImportColumnsTitle => 'Dálkar sem þú getur notað';
@@ -5017,6 +5045,46 @@ class AppLocalizationsIs extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Beiðnir sendar: $sent af $count';
   }
+
+  @override
+  String get staffImportAction => 'Flytja inn starfsfólk úr töflureikni';
+
+  @override
+  String get staffImportHint => 'CSV-skrá með dálkinum Nafn, og dálkinum Netfang ef þú átt hann.';
+
+  @override
+  String get staffImportTitle => 'Flytja inn starfsfólk';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Tilbúið til að bæta við: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Sleppt: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Línum er sleppt ef nafnið vantar eða er þegar á listanum þínum, eða þegar $limit manna hámarki áskriftarinnar er náð.';
+  }
+
+  @override
+  String get staffImportEmails => 'Senda þeim áminningar í tölvupósti um skjölin þeirra';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Bæta við $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Fólki bætt við: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Enginn nafnadálkur fannst. Settu nöfnin í dálk sem heitir Nafn eða Name.';
 
   @override
   String get roleAction => 'Hlutverk og nauðsynleg skjöl';
@@ -8111,6 +8179,9 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tourImport2Body => 'Ertu nú þegar með töflureikni? Flyttu hann inn og farðu yfir hverja línu áður en nokkuð vistast.';
 
   @override
+  String get tourImportBatchBody => 'Með Premium geturðu skannað allt að 10 skjöl í einu og farið yfir þau öll áður en nokkuð er vistað.';
+
+  @override
   String get tourImport3Title => 'Deildu í Vaultara';
 
   @override
@@ -8139,6 +8210,9 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Bættu við starfsfólki og geymdu skírteini, leyfi og réttindi á einum stað.';
+
+  @override
+  String get tourBusinessImportBody => 'Áttu nú þegar starfsmannalista? Þú getur flutt hann inn úr töflureikni, með nöfnum og netföngum.';
 
   @override
   String get tourBusinessRolesBody => 'Gefðu hverjum og einum hlutverk, eins og Bílstjóri, með skjölunum sem það þarf. Vaultara sýnir hvað vantar.';

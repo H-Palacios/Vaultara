@@ -1151,6 +1151,9 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Nyochaa ruo akwụkwọ 10 n\'otu oge';
+
+  @override
   String get planFeatureAutoReminders => 'Ihe ncheta akpaaka';
 
   @override
@@ -3208,6 +3211,9 @@ class AppLocalizationsIg extends AppLocalizations {
   String get businessBenefitRoles => 'Tọọ akwụkwọ achọrọ maka ọrụ ọ bụla ma hụ ihe onye ọ bụla na-enweghị';
 
   @override
+  String get businessBenefitStaffImport => 'Bubata ndepụta ndị ọrụ gị site na spreadsheet';
+
+  @override
   String get businessBenefitPdf => 'Mbupụ PDF otu na aha ụlọ ọrụ gị';
 
   @override
@@ -3651,6 +3657,28 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Nweta ndebiri';
+
+  @override
+  String get batchScanAction => 'Nyochaa ọtụtụ akwụkwọ';
+
+  @override
+  String get batchScanHint => 'Premium: ruo foto 10 n\'otu oge. A na-agụ ha na ekwentị gị, ma ị na-enyocha nke ọ bụla tupu echekwa ihe ọ bụla.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Na-agụ $done n\'ime $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Akwụkwọ enyochara';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Akwụkwọ $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Enweghị ike ịgụ foto ndị ahụ. Nwaa foto doro anya karị, otu akwụkwọ na foto ọ bụla.';
 
   @override
   String get csvImportColumnsTitle => 'Ogidi ị nwere ike iji';
@@ -4985,6 +5013,46 @@ class AppLocalizationsIg extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Arịrịọ ezigara: $sent n\'ime $count';
   }
+
+  @override
+  String get staffImportAction => 'Bubata ndị ọrụ site na spreadsheet';
+
+  @override
+  String get staffImportHint => 'Faịlụ CSV nwere kọlụm Aha, na kọlụm Email ma ọ bụrụ na i nwere ya.';
+
+  @override
+  String get staffImportTitle => 'Bubata ndị ọrụ';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Dị njikere ịgbakwunye: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Ahapụrụ: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'A na-ahapụ ahịrị mgbe aha tọgbọrọ chakoo ma ọ bụ nọ na ndepụta gị, ma ọ bụ mgbe ndị $limit nke atụmatụ gị zuru.';
+  }
+
+  @override
+  String get staffImportEmails => 'Zitere ha ihe ncheta email gbasara akwụkwọ ha';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Tinye $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Ndị agbakwunyere: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Ahụghị kọlụm aha. Tinye aha ndị ahụ na kọlụm a na-akpọ Name ma ọ bụ Aha.';
 
   @override
   String get roleAction => 'Ọrụ na akwụkwọ achọrọ';
@@ -8061,6 +8129,9 @@ class AppLocalizationsIg extends AppLocalizations {
   String get tourImport2Body => 'Ị nweelarị mpempe akwụkwọ? Bubata ya ma lelee ahịrị ọ bụla tupu e chekwaa ihe ọ bụla.';
 
   @override
+  String get tourImportBatchBody => 'Na Premium, ị nwere ike nyochaa ruo akwụkwọ 10 n\'otu oge ma lelee ha niile tupu echekwa ihe ọ bụla.';
+
+  @override
   String get tourImport3Title => 'Kekọrịta na Vaultara';
 
   @override
@@ -8089,6 +8160,9 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Tinye ndị ọrụ ma debe asambodo, ikike na akwụkwọ ikike ha n\'otu ebe.';
+
+  @override
+  String get tourBusinessImportBody => 'I nwere ndepụta ndị ọrụ? Ị nwere ike ibubata ya site na spreadsheet, ya na aha na email.';
 
   @override
   String get tourBusinessRolesBody => 'Nye onye ọ bụla ọrụ, dịka Onye ọkwọ ụgbọ, ya na akwụkwọ ọ chọrọ. Vaultara na-egosi ihe na-adịghị.';

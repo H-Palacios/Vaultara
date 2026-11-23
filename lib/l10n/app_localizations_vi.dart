@@ -1150,6 +1150,9 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Quét tối đa 10 giấy tờ một lần';
+
+  @override
   String get planFeatureAutoReminders => 'Lời nhắc tự động';
 
   @override
@@ -3207,6 +3210,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get businessBenefitRoles => 'Đặt giấy tờ bắt buộc theo vai trò và xem mỗi người còn thiếu gì';
 
   @override
+  String get businessBenefitStaffImport => 'Nhập danh sách nhân viên từ bảng tính';
+
+  @override
   String get businessBenefitPdf => 'Xuất PDF cho nhóm kèm tên công ty của bạn';
 
   @override
@@ -3650,6 +3656,28 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Lấy mẫu';
+
+  @override
+  String get batchScanAction => 'Quét nhiều giấy tờ';
+
+  @override
+  String get batchScanHint => 'Premium: tối đa 10 ảnh một lần. Ảnh được đọc ngay trên điện thoại, và bạn kiểm tra từng ảnh trước khi lưu.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Đang đọc $done/$total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Giấy tờ đã quét';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Giấy tờ $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Không đọc được ảnh. Hãy thử ảnh rõ hơn, mỗi ảnh một giấy tờ.';
 
   @override
   String get csvImportColumnsTitle => 'Các cột bạn có thể dùng';
@@ -4984,6 +5012,46 @@ class AppLocalizationsVi extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Đã gửi yêu cầu: $sent/$count';
   }
+
+  @override
+  String get staffImportAction => 'Nhập nhân viên từ bảng tính';
+
+  @override
+  String get staffImportHint => 'Tệp CSV có cột Tên, và cột Email nếu bạn có.';
+
+  @override
+  String get staffImportTitle => 'Nhập nhân viên';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Sẵn sàng thêm: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Bỏ qua: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Các dòng bị bỏ qua khi tên trống hoặc đã có trong danh sách, hoặc khi đã đủ $limit người của gói.';
+  }
+
+  @override
+  String get staffImportEmails => 'Gửi email nhắc họ về giấy tờ của họ';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Thêm $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Đã thêm: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Không tìm thấy cột tên. Hãy đặt tên vào cột có tiêu đề Name hoặc Tên.';
 
   @override
   String get roleAction => 'Vai trò và giấy tờ bắt buộc';
@@ -8055,6 +8123,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tourImport2Body => 'Đã có bảng tính? Nhập vào và kiểm tra từng dòng trước khi lưu.';
 
   @override
+  String get tourImportBatchBody => 'Với Premium, bạn có thể quét tối đa 10 giấy tờ một lần và kiểm tra tất cả trước khi lưu.';
+
+  @override
   String get tourImport3Title => 'Chia sẻ vào Vaultara';
 
   @override
@@ -8083,6 +8154,9 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Thêm nhân viên và giữ chứng chỉ, giấy phép và bằng cấp của họ ở một nơi.';
+
+  @override
+  String get tourBusinessImportBody => 'Đã có danh sách nhân viên? Bạn có thể nhập từ bảng tính, kèm tên và email.';
 
   @override
   String get tourBusinessRolesBody => 'Gán cho mỗi người một vai trò, như Tài xế, cùng các giấy tờ cần có. Vaultara cho biết còn thiếu gì.';

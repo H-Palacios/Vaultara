@@ -1154,6 +1154,9 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'مسح حتى 10 مستندات دفعة واحدة';
+
+  @override
   String get planFeatureAutoReminders => 'تذكيرات تلقائية';
 
   @override
@@ -3327,6 +3330,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get businessBenefitRoles => 'حدد المستندات المطلوبة لكل دور واعرف ما ينقص كل شخص';
 
   @override
+  String get businessBenefitStaffImport => 'استورد قائمة موظفيك من جدول بيانات';
+
+  @override
   String get businessBenefitPdf => 'تصدير PDF للفريق باسم شركتك';
 
   @override
@@ -3782,6 +3788,28 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'الحصول على قالب';
+
+  @override
+  String get batchScanAction => 'مسح عدة مستندات';
+
+  @override
+  String get batchScanHint => 'Premium: حتى 10 صور دفعة واحدة. تُقرأ على هاتفك، وتراجع كل واحدة قبل حفظ أي شيء.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'جارٍ قراءة $done من $total…';
+  }
+
+  @override
+  String get batchScanFileName => 'المستندات الممسوحة';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'مستند $number';
+  }
+
+  @override
+  String get batchScanFailed => 'تعذّرت قراءة الصور. جرّب صوراً أوضح، مستنداً واحداً في كل صورة.';
 
   @override
   String get csvImportColumnsTitle => 'الأعمدة التي يمكنك استخدامها';
@@ -5151,6 +5179,46 @@ class AppLocalizationsAr extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'الطلبات المرسلة: $sent من $count';
   }
+
+  @override
+  String get staffImportAction => 'استيراد الموظفين من جدول بيانات';
+
+  @override
+  String get staffImportHint => 'ملف CSV فيه عمود للاسم، وعمود للبريد الإلكتروني إن وُجد.';
+
+  @override
+  String get staffImportTitle => 'استيراد الموظفين';
+
+  @override
+  String staffImportReady(int count) {
+    return 'جاهز للإضافة: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'تم استبعاد: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'تُستبعد الصفوف إذا كان الاسم فارغاً أو موجوداً في قائمتك، أو عند بلوغ حد خطتك وهو $limit شخصاً.';
+  }
+
+  @override
+  String get staffImportEmails => 'أرسل لهم تذكيرات بالبريد الإلكتروني بشأن مستنداتهم';
+
+  @override
+  String staffImportButton(int count) {
+    return 'إضافة $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'تمت إضافة الأشخاص: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'لم يُعثر على عمود الاسم. ضع الأسماء في عمود باسم Name أو الاسم.';
 
   @override
   String get roleAction => 'الدور والمستندات المطلوبة';
@@ -8337,6 +8405,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tourImport2Body => 'لديك جدول بيانات بالفعل؟ استورده وراجع كل صف قبل حفظ أي شيء.';
 
   @override
+  String get tourImportBatchBody => 'مع Premium يمكنك مسح حتى 10 مستندات دفعة واحدة ومراجعتها كلها قبل حفظ أي شيء.';
+
+  @override
   String get tourImport3Title => 'شارك إلى Vaultara';
 
   @override
@@ -8365,6 +8436,9 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'أضف الموظفين واحتفظ بشهاداتهم وتصاريحهم ورخصهم في مكان واحد.';
+
+  @override
+  String get tourBusinessImportBody => 'لديك قائمة موظفين؟ يمكنك استيرادها من جدول بيانات بالأسماء والبريد الإلكتروني.';
 
   @override
   String get tourBusinessRolesBody => 'امنح كل شخص دورًا، مثل سائق، مع المستندات التي يحتاجها. ويعرض Vaultara ما هو ناقص.';

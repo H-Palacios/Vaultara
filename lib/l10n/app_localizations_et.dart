@@ -1151,6 +1151,9 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'Skanni kuni 10 dokumenti korraga';
+
+  @override
   String get planFeatureAutoReminders => 'Automaatsed meeldetuletused';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsEt extends AppLocalizations {
   String get businessBenefitRoles => 'Määra igale rollile nõutavad dokumendid ja vaata, mis kellelgi puudu on';
 
   @override
+  String get businessBenefitStaffImport => 'Impordi töötajate nimekiri tabelist';
+
+  @override
   String get businessBenefitPdf => 'Meeskonna PDF-eksport sinu ettevõtte nimega';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'Hangi mall';
+
+  @override
+  String get batchScanAction => 'Skanni mitu dokumenti';
+
+  @override
+  String get batchScanHint => 'Premium: kuni 10 fotot korraga. Need loetakse sinu telefonis ja sa kontrollid igaüht enne, kui midagi salvestatakse.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return 'Loen $done/$total…';
+  }
+
+  @override
+  String get batchScanFileName => 'Skannitud dokumendid';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'Dokument $number';
+  }
+
+  @override
+  String get batchScanFailed => 'Fotosid ei õnnestunud lugeda. Proovi selgemaid fotosid, üks dokument foto kohta.';
 
   @override
   String get csvImportColumnsTitle => 'Veerud, mida saad kasutada';
@@ -5018,6 +5046,46 @@ class AppLocalizationsEt extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'Saadetud päringud: $sent/$count';
   }
+
+  @override
+  String get staffImportAction => 'Impordi töötajad tabelist';
+
+  @override
+  String get staffImportHint => 'CSV-fail, kus on veerg Nimi ja olemasolu korral veerg E-post.';
+
+  @override
+  String get staffImportTitle => 'Töötajate import';
+
+  @override
+  String staffImportReady(int count) {
+    return 'Lisamiseks valmis: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'Välja jäetud: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'Read jäetakse välja, kui nimi on tühi või juba sinu loendis, või kui sinu paketi $limit inimest on täis.';
+  }
+
+  @override
+  String get staffImportEmails => 'Saada neile dokumentide kohta meeldetuletusi e-postiga';
+
+  @override
+  String staffImportButton(int count) {
+    return 'Lisa $count';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'Lisatud inimesi: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'Nimeveergu ei leitud. Pane nimed veergu nimega Nimi või Name.';
 
   @override
   String get roleAction => 'Roll ja nõutavad dokumendid';
@@ -8116,6 +8184,9 @@ class AppLocalizationsEt extends AppLocalizations {
   String get tourImport2Body => 'Sul on juba tabel? Impordi see ja vaata iga rida üle enne salvestamist.';
 
   @override
+  String get tourImportBatchBody => 'Premiumiga saad skannida kuni 10 dokumenti korraga ja kõik üle vaadata enne, kui midagi salvestatakse.';
+
+  @override
   String get tourImport3Title => 'Jaga Vaultarasse';
 
   @override
@@ -8144,6 +8215,9 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Lisa töötajad ja hoia nende tunnistusi, lube ja litsentse ühes kohas.';
+
+  @override
+  String get tourBusinessImportBody => 'Sul on juba töötajate nimekiri? Saad selle tabelist importida, koos nimede ja e-postidega.';
 
   @override
   String get tourBusinessRolesBody => 'Anna igaühele roll, näiteks Juht, koos vajalike dokumentidega. Vaultara näitab, mis puudu on.';

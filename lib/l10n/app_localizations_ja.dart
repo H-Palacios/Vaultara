@@ -1144,6 +1144,9 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => '最大10件の書類をまとめてスキャン';
+
+  @override
   String get planFeatureAutoReminders => '自動リマインダー';
 
   @override
@@ -3195,6 +3198,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get businessBenefitRoles => '役割ごとに必要な書類を設定し、各自に足りないものを確認';
 
   @override
+  String get businessBenefitStaffImport => 'スタッフ一覧をスプレッドシートから読み込み';
+
+  @override
   String get businessBenefitPdf => '会社名入りのチーム用PDF出力';
 
   @override
@@ -3638,6 +3644,28 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'テンプレートを入手';
+
+  @override
+  String get batchScanAction => 'まとめてスキャン';
+
+  @override
+  String get batchScanHint => 'Premium：一度に最大10枚まで。写真はスマートフォン上で読み取られ、保存前に1枚ずつ確認できます。';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return '$total件中$done件を読み取り中…';
+  }
+
+  @override
+  String get batchScanFileName => 'スキャンした書類';
+
+  @override
+  String batchScanUntitled(int number) {
+    return '書類$number';
+  }
+
+  @override
+  String get batchScanFailed => '写真を読み取れませんでした。1枚に1つの書類で、より鮮明な写真をお試しください。';
 
   @override
   String get csvImportColumnsTitle => '使用できる列';
@@ -4972,6 +5000,46 @@ class AppLocalizationsJa extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return '送信した依頼: $count件中$sent件';
   }
+
+  @override
+  String get staffImportAction => 'スプレッドシートからスタッフを読み込む';
+
+  @override
+  String get staffImportHint => '名前の列と、あればメールの列があるCSVファイル。';
+
+  @override
+  String get staffImportTitle => 'スタッフを読み込む';
+
+  @override
+  String staffImportReady(int count) {
+    return '追加できる人数：$count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return '除外：$count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return '名前が空欄の行や、すでに一覧にいる人、プランの上限$limit人を超えた分は除外されます。';
+  }
+
+  @override
+  String get staffImportEmails => '書類についてのリマインダーをメールで送る';
+
+  @override
+  String staffImportButton(int count) {
+    return '$count人を追加';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return '追加した人数：$count';
+  }
+
+  @override
+  String get staffImportNoColumns => '名前の列が見つかりません。名前を「Name」または「名前」という列に入れてください。';
 
   @override
   String get roleAction => '役割と必要な書類';
@@ -8043,6 +8111,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tourImport2Body => 'すでに表計算シートがありますか？インポートして、保存前に各行を確認できます。';
 
   @override
+  String get tourImportBatchBody => 'Premiumでは最大10件の書類をまとめてスキャンし、保存前にすべて確認できます。';
+
+  @override
   String get tourImport3Title => 'Vaultara に共有';
 
   @override
@@ -8071,6 +8142,9 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'スタッフを追加し、資格、許可証、免許を一か所で管理します。';
+
+  @override
+  String get tourBusinessImportBody => 'スタッフ一覧をお持ちですか？名前とメール付きでスプレッドシートから読み込めます。';
 
   @override
   String get tourBusinessRolesBody => 'ドライバーなどの役割と必要な書類を一人ひとりに設定すると、足りないものをVaultaraが表示します。';

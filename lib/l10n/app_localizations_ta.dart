@@ -1151,6 +1151,9 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String get planFeatureBatchScan => 'ஒரே நேரத்தில் 10 ஆவணங்கள் வரை ஸ்கேன் செய்யுங்கள்';
+
+  @override
   String get planFeatureAutoReminders => 'தானியங்கு நினைவூட்டல்கள்';
 
   @override
@@ -3223,6 +3226,9 @@ class AppLocalizationsTa extends AppLocalizations {
   String get businessBenefitRoles => 'ஒவ்வொரு பணிக்கும் தேவையான ஆவணங்களை அமைத்து, யாரிடம் எது இல்லை என்று பாருங்கள்';
 
   @override
+  String get businessBenefitStaffImport => 'உங்கள் பணியாளர் பட்டியலை விரிதாளிலிருந்து இறக்குமதி செய்யுங்கள்';
+
+  @override
   String get businessBenefitPdf => 'உங்கள் நிறுவனப் பெயருடன் குழுவுக்கான PDF ஏற்றுமதி';
 
   @override
@@ -3671,6 +3677,28 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get csvImportGetTemplate => 'வார்ப்புருவைப் பெறு';
+
+  @override
+  String get batchScanAction => 'பல ஆவணங்களை ஸ்கேன் செய்';
+
+  @override
+  String get batchScanHint => 'Premium: ஒரே நேரத்தில் 10 படங்கள் வரை. அவை உங்கள் போனிலேயே படிக்கப்படும், எதையும் சேமிக்கும் முன் ஒவ்வொன்றையும் சரிபார்ப்பீர்கள்.';
+
+  @override
+  String batchScanReading(int done, int total) {
+    return '$total-இல் $done படிக்கப்படுகிறது…';
+  }
+
+  @override
+  String get batchScanFileName => 'ஸ்கேன் செய்த ஆவணங்கள்';
+
+  @override
+  String batchScanUntitled(int number) {
+    return 'ஆவணம் $number';
+  }
+
+  @override
+  String get batchScanFailed => 'படங்களைப் படிக்க முடியவில்லை. ஒரு படத்தில் ஒரு ஆவணமாக, தெளிவான படங்களை முயலுங்கள்.';
 
   @override
   String get csvImportColumnsTitle => 'பயன்படுத்தக்கூடிய நெடுவரிசைகள்';
@@ -5018,6 +5046,46 @@ class AppLocalizationsTa extends AppLocalizations {
   String staffBulkDone(int sent, int count) {
     return 'அனுப்பிய கோரிக்கைகள்: $count-இல் $sent';
   }
+
+  @override
+  String get staffImportAction => 'விரிதாளிலிருந்து பணியாளர்களை இறக்குமதி செய்';
+
+  @override
+  String get staffImportHint => 'பெயர் நெடுவரிசையும், இருந்தால் மின்னஞ்சல் நெடுவரிசையும் உள்ள CSV கோப்பு.';
+
+  @override
+  String get staffImportTitle => 'பணியாளர்களை இறக்குமதி செய்';
+
+  @override
+  String staffImportReady(int count) {
+    return 'சேர்க்கத் தயார்: $count';
+  }
+
+  @override
+  String staffImportSkipped(int count) {
+    return 'தவிர்க்கப்பட்டவை: $count';
+  }
+
+  @override
+  String staffImportSkippedHint(int limit) {
+    return 'பெயர் காலியாக இருந்தால் அல்லது ஏற்கெனவே பட்டியலில் இருந்தால், அல்லது உங்கள் திட்டத்தின் $limit பேர் நிரம்பியதும் வரிசைகள் தவிர்க்கப்படும்.';
+  }
+
+  @override
+  String get staffImportEmails => 'அவர்களின் ஆவணங்கள் பற்றி மின்னஞ்சலில் நினைவூட்டல் அனுப்பு';
+
+  @override
+  String staffImportButton(int count) {
+    return '$count சேர்';
+  }
+
+  @override
+  String staffImportDone(int count) {
+    return 'சேர்க்கப்பட்டவர்கள்: $count';
+  }
+
+  @override
+  String get staffImportNoColumns => 'பெயர் நெடுவரிசை கிடைக்கவில்லை. பெயர்களை Name அல்லது பெயர் என்ற நெடுவரிசையில் வையுங்கள்.';
 
   @override
   String get roleAction => 'பணி மற்றும் தேவையான ஆவணங்கள்';
@@ -8112,6 +8180,9 @@ class AppLocalizationsTa extends AppLocalizations {
   String get tourImport2Body => 'ஏற்கனவே விரிதாள் உள்ளதா? இறக்குமதி செய்து சேமிக்கும் முன் ஒவ்வொரு வரிசையையும் சரிபாருங்கள்.';
 
   @override
+  String get tourImportBatchBody => 'Premium-இல் ஒரே நேரத்தில் 10 ஆவணங்கள் வரை ஸ்கேன் செய்து, எதையும் சேமிக்கும் முன் அனைத்தையும் சரிபார்க்கலாம்.';
+
+  @override
   String get tourImport3Title => 'Vaultara க்குப் பகிருங்கள்';
 
   @override
@@ -8140,6 +8211,9 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'பணியாளர்களைச் சேர்த்து அவர்களின் சான்றிதழ்கள், அனுமதிகள் மற்றும் உரிமங்களை ஒரே இடத்தில் வையுங்கள்.';
+
+  @override
+  String get tourBusinessImportBody => 'பணியாளர் பட்டியல் ஏற்கெனவே உள்ளதா? பெயர்கள், மின்னஞ்சல்களுடன் விரிதாளிலிருந்து இறக்குமதி செய்யலாம்.';
 
   @override
   String get tourBusinessRolesBody => 'ஒவ்வொருவருக்கும் ஓட்டுநர் போன்ற பணியை அதற்குத் தேவையான ஆவணங்களுடன் கொடுங்கள். எது இல்லை என்று Vaultara காட்டும்.';
