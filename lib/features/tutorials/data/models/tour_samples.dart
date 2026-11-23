@@ -26,6 +26,26 @@ class TourSamples {
     ),
   ];
 
+  /// A made-up family member, for the household tutorial.
+  static const List<Person> family = <Person>[
+    Person(
+      id: 'tour-relative',
+      name: 'Sofia',
+      colourIndex: 4,
+      nationality: sampleCountry,
+    ),
+  ];
+
+  /// The made-up country the tours show as "Me" and a family member's
+  /// nationality, in place of the user's own.
+  static const String sampleCountry = 'GB';
+
+  /// How many records each tour person holds. The null key is "Me".
+  static const Map<String?, int> recordCounts = <String?, int>{
+    null: 6,
+    'tour-relative': 3,
+  };
+
   static DateTime _inDays(int days) {
     final now = DateTime.now();
     return DateTime(now.year, now.month, now.day + days);

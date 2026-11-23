@@ -229,9 +229,11 @@ class _FamilyScreenState extends State<FamilyScreen> {
                   final people = tour
                       ? (tier == PlanTier.business
                             ? TourSamples.staff
-                            : const <Person>[])
+                            : TourSamples.family)
                       : allPeople;
-                  final counts = _countsFor(people);
+                  final counts = tour
+                      ? TourSamples.recordCounts
+                      : _countsFor(people);
                   return ListView(
                     padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
                     // Kept until the Flutter version in use exports ScrollCacheExtent.
@@ -259,9 +261,15 @@ class _FamilyScreenState extends State<FamilyScreen> {
                           person: null,
                           name: loc.familyMe,
                           recordCount: counts[null] ?? 0,
-                          nationality: NationalityRepository.mine.value,
-                          residence: NationalityRepository.myResidence.value,
+                          nationality: tour
+                              ? TourSamples.sampleCountry
+                              : NationalityRepository.mine.value,
+                          residence: tour
+                              ? null
+                              : NationalityRepository.myResidence.value,
                           onAction: (action) {
+                            // A tour shows made-up people: nothing changes.
+                            if (tour) return;
                             if (action == PersonAction.nationality) {
                               VisaActions.pickNationality(context, null);
                             } else if (action == PersonAction.residence) {
@@ -292,6 +300,7 @@ class _FamilyScreenState extends State<FamilyScreen> {
                                   )
                                 : const <String>[],
                             onAction: (action) {
+                              if (tour) return;
                               switch (action) {
                                 case PersonAction.rename:
                                   _renamePerson(person, tier);
@@ -323,18 +332,20 @@ class _FamilyScreenState extends State<FamilyScreen> {
                           limit: PeopleRepository.limitFor(tier),
                           canAdd:
                               people.length < PeopleRepository.limitFor(tier),
-                          onAdd: () => _addPerson(tier),
+                          onAdd: tour ? () {} : () => _addPerson(tier),
                         ),
                         if (tier == PlanTier.business) ...[
                           const SizedBox(height: 16),
-                          if (!tour) const BulkRequestTile(),
-                          const CompanyNameTile(),
+                          if (!tour) ...[
+                            const BulkRequestTile(),
+                            const CompanyNameTile(),
+                          ],
                           const SizedBox(height: 12),
                           const TutorialTarget(
                             steps: [TutorialStep.businessReport],
                             child: ComplianceReportTile(),
                           ),
-                        ] else ...[
+                        ] else if (!tour) ...[
                           const SizedBox(height: 16),
                           _BusinessNudge(
                             onSeePlan: () => openPlans(
@@ -344,7 +355,7 @@ class _FamilyScreenState extends State<FamilyScreen> {
                             ),
                           ),
                         ],
-                      ] else if (tier != null)
+                      ] else if (tier != null && !tour)
                         _UpsellCard(
                           key: _addKey,
                           onSeePlan: () => openPlans(
