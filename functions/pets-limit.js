@@ -1,4 +1,4 @@
-const { onDocumentCreated } = require("firebase-functions/v2/firestore");
+const { onDocumentCreated, onDocumentDeleted } = require("firebase-functions/v2/firestore");
 const logger = require("firebase-functions/logger");
 
 const { admin } = require("./shared");
@@ -28,6 +28,22 @@ exports.onPetCreated = onDocumentCreated(
     logger.warn("pet over limit removed", { uid, count });
     await event.data?.ref.delete();
   }
+);
+
+
+// A removed pet's photo goes too, even if the phone that removed it went
+// offline before it could delete the file.
+exports.onPetDeleted = onDocumentDeleted(
+  { document: "users/{uid}/pets/{petId}", maxInstances: 10, retry: false },
+  async (event) => {
+    const { uid, petId } = event.params;
+    if (!/^[A-Za-z0-9_-]{1,128}$/.test(uid) || !/^[A-Za-z0-9_-]{1,128}$/.test(petId)) return;
+    try {
+      await admin.storage().bucket().file(`users/${uid}/pets/${petId}/photo.jpg`).delete({ ignoreNotFound: true });
+    } catch (err) {
+      logger.warn("pet photo cleanup failed", { message: err?.message });
+    }
+  },
 );
 
 exports._test = { overPetLimit, MAX_PETS };

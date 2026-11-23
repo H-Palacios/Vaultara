@@ -26,6 +26,14 @@ class Pet {
   final String? vetPhone;
   final int colourIndex;
 
+  /// For the user's own type: the animal group and emoji the type helper
+  /// suggested and the user accepted, so travel rules fit the animal.
+  final PetGroup? customGroup;
+  final String? customEmoji;
+
+  /// Goes up each time a photo is saved; 0 means no photo.
+  final int photoVersion;
+
   const Pet({
     required this.id,
     required this.name,
@@ -37,9 +45,49 @@ class Pet {
     this.vetName,
     this.vetPhone,
     this.colourIndex = 0,
+    this.customGroup,
+    this.customEmoji,
+    this.photoVersion = 0,
   });
 
-  PetGroup get group => PetTypes.groupOf(typeId);
+  PetGroup get group => typeId == PetTypes.custom
+      ? (customGroup ?? PetGroup.other)
+      : PetTypes.groupOf(typeId);
+
+  String get emoji {
+    final own = customEmoji;
+    if (typeId == PetTypes.custom &&
+        own != null &&
+        PetTypes.allowedEmoji.contains(own)) {
+      return own;
+    }
+    return PetTypes.emojiOf(typeId);
+  }
+
+  bool get hasPhoto => photoVersion > 0;
+
+  Pet copyWith({int? photoVersion}) => Pet(
+    id: id,
+    name: name,
+    typeId: typeId,
+    customType: customType,
+    birthDate: birthDate,
+    microchip: microchip,
+    chipRegistry: chipRegistry,
+    vetName: vetName,
+    vetPhone: vetPhone,
+    colourIndex: colourIndex,
+    customGroup: customGroup,
+    customEmoji: customEmoji,
+    photoVersion: photoVersion ?? this.photoVersion,
+  );
+
+  static PetGroup? _groupNamed(Object? raw) {
+    for (final g in PetGroup.values) {
+      if (g.name == raw) return g;
+    }
+    return null;
+  }
 
   /// The chip number with spaces and dashes taken out, or null when it is
   /// not 9 to 15 digits (ISO chips have 15, some older ones fewer).
@@ -88,6 +136,10 @@ class Pet {
     final vet = cleanText(vetName, maxVet);
     final phone = cleanPhone(vetPhone);
     final born = birthDate;
+    final ownGroup = own != null ? customGroup : null;
+    final ownEmoji = own != null && PetTypes.allowedEmoji.contains(customEmoji)
+        ? customEmoji
+        : null;
     return <String, dynamic>{
       'name': cleanText(name, maxName) ?? '',
       'type': type,
@@ -101,12 +153,16 @@ class Pet {
       if (registry != null) 'chipRegistry': registry,
       if (vet != null) 'vetName': vet,
       if (phone != null) 'vetPhone': phone,
+      if (ownGroup != null) 'customGroup': ownGroup.name,
+      if (ownEmoji != null) 'customEmoji': ownEmoji,
+      if (photoVersion > 0) 'photoVersion': photoVersion.clamp(1, 1000000),
     };
   }
 
   static Pet fromMap(String id, Map<String, dynamic> map) {
     final born = map['birthDate'];
     final colour = map['colourIndex'];
+    final version = map['photoVersion'];
     final type = PetTypes.cleanId(map['type']);
     return Pet(
       id: id,
@@ -121,6 +177,17 @@ class Pet {
       vetName: cleanText(map['vetName'] as String?, maxVet),
       vetPhone: cleanPhone(map['vetPhone'] as String?),
       colourIndex: colour is int && colour >= 0 && colour < 8 ? colour : 0,
+      customGroup: type == PetTypes.custom
+          ? _groupNamed(map['customGroup'])
+          : null,
+      customEmoji:
+          type == PetTypes.custom &&
+              PetTypes.allowedEmoji.contains(map['customEmoji'])
+          ? map['customEmoji'] as String
+          : null,
+      photoVersion: version is int && version > 0 && version <= 1000000
+          ? version
+          : 0,
     );
   }
 }

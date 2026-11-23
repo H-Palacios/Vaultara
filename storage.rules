@@ -67,6 +67,17 @@ service firebase.storage {
         && firestore.exists(/databases/(default)/documents/households/$(hid)/records/$(recordId));
     }
 
+    // One photo per pet: a square JPEG, owner only, and only for a pet that
+    // exists (the account's own pets list).
+    match /users/{uid}/pets/{petId}/photo.jpg {
+      allow read: if isOwner(uid);
+      allow delete: if isVerifiedOwner(uid);
+      allow create, update: if isVerifiedOwner(uid)
+        && request.resource.size <= 1024 * 1024
+        && request.resource.contentType == 'image/jpeg'
+        && firestore.exists(/databases/(default)/documents/users/$(uid)/pets/$(petId));
+    }
+
     match /users/{uid}/profile/avatar.jpg {
       allow read: if isOwner(uid);
       allow delete: if isOwner(uid);

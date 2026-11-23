@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:vaultara/core/errors/error_reporter.dart';
 import 'package:vaultara/features/pets/data/pet.dart';
+import 'package:vaultara/features/pets/data/pet_photo_repository.dart';
 
 /// The user's pets, kept in their own list (users/{uid}/pets), apart from
 /// people, so pets never use a member place on the Family or Business plan.
@@ -96,6 +97,8 @@ class PetRepository {
       vetName: draft.vetName,
       vetPhone: draft.vetPhone,
       colourIndex: colour,
+      customGroup: draft.customGroup,
+      customEmoji: draft.customEmoji,
     );
     await ref.set(pet.toMap());
     return pet;
@@ -112,5 +115,7 @@ class PetRepository {
     final collection = _collection();
     if (collection == null) return;
     await collection.doc(pet.id).delete();
+    // The photo goes too; the server also removes it if this step is missed.
+    if (pet.hasPhoto) await PetPhotoRepository.deleteFile(pet.id);
   }
 }
