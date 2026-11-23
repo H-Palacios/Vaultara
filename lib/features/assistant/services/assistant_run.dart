@@ -21,6 +21,7 @@ class AssistantStep {
   static const List<String> known = <String>[
     'records',
     'trips',
+    'pets',
     'people',
     'record_add',
     'record_edit',

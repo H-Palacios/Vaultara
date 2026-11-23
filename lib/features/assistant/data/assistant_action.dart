@@ -248,6 +248,9 @@ class AssistantAction {
     'life_events',
     'life_event',
     'tutorial',
+    'pets',
+    'pet',
+    'pet_travel',
   ];
 
   final AssistantActionType type;

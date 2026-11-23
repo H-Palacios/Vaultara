@@ -22,6 +22,11 @@ import 'package:vaultara/features/tools/logic/life_events.dart';
 import 'package:vaultara/features/tools/view/life_events_screen.dart';
 import 'package:vaultara/features/security/view/security_history_screen.dart';
 import 'package:vaultara/features/security/view/security_privacy_screen.dart';
+import 'package:vaultara/features/pets/data/pet_repository.dart';
+import 'package:vaultara/features/pets/view/pet_detail_screen.dart';
+import 'package:vaultara/features/pets/view/pet_travel_screen.dart';
+import 'package:vaultara/features/pets/view/pets_screen.dart';
+import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/data/trip_repository.dart';
 import 'package:vaultara/features/travel/view/travel_check_screen.dart';
 import 'package:vaultara/features/travel/view/trip_detail_screen.dart';
@@ -182,6 +187,28 @@ class AssistantNavigator {
         if (id == null || !TutorialIds.all.contains(id)) return false;
         unawaited(TutorialsService.playTutorial(context, id));
         return true;
+      case 'pets':
+        _push(context, PetsScreen(isPremium: shell.isPremium));
+        return true;
+      case 'pet':
+        final id = action.targetId;
+        if (id != null && PetRepository.byId(id) != null) {
+          _push(context, PetDetailScreen(petId: id));
+        } else {
+          _push(context, PetsScreen(isPremium: shell.isPremium));
+        }
+        return true;
+      case 'pet_travel':
+        final code = action.targetId;
+        _push(
+          context,
+          PetTravelScreen(
+            destination: code != null && Countries.byCode(code) != null
+                ? code
+                : null,
+          ),
+        );
+        return true;
     }
     return false;
   }
@@ -190,5 +217,6 @@ class AssistantNavigator {
       screen == 'record' ||
       screen == 'trip' ||
       screen == 'life_event' ||
-      screen == 'tutorial';
+      screen == 'tutorial' ||
+      screen == 'pet';
 }
