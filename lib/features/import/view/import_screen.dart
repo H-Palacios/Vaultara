@@ -1,7 +1,3 @@
-import 'dart:io';
-
-import 'package:file_picker/file_picker.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
@@ -10,7 +6,8 @@ import 'package:vaultara/l10n/app_localizations.dart';
 
 import '../data/import_template.dart';
 import '../logic/import_columns.dart';
-import '../logic/import_csv_reader.dart';
+import '../services/csv_file_picker.dart';
+import 'batch_scan_button.dart';
 import 'import_labels.dart';
 import 'import_mapping_screen.dart';
 import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
@@ -50,15 +47,6 @@ class ImportScreen extends StatefulWidget {
 }
 
 class _ImportScreenState extends State<ImportScreen> {
-  static const Set<String> _spreadsheetExtensions = <String>{
-    'xlsx',
-    'xls',
-    'xlsm',
-    'xlsb',
-    'numbers',
-    'ods',
-  };
-
   bool _reading = false;
   bool _sharing = false;
 
@@ -75,63 +63,29 @@ class _ImportScreenState extends State<ImportScreen> {
     if (_reading) return;
     final loc = AppLocalizations.of(context)!;
     setState(() => _reading = true);
-
-    ImportTable? table;
-    String fileName = '';
+    final CsvPickResult picked;
     try {
-      final result = await FilePicker.platform.pickFiles(
-        type: Platform.isIOS ? FileType.custom : FileType.any,
-        allowedExtensions:
-            Platform.isIOS ? const <String>['csv', 'txt', 'tsv'] : null,
-        withData: true,
-      );
-      if (!mounted) return;
-      if (result == null || result.files.isEmpty) return;
-
-      final picked = result.files.single;
-      fileName = picked.name;
-      final extension = (picked.extension ?? '').toLowerCase();
-      if (_spreadsheetExtensions.contains(extension)) {
-        _showError(loc.csvImportErrorNotCsv);
-        return;
-      }
-      if (picked.size > ImportCsvReader.maxBytes) {
-        _showError(loc.csvImportErrorTooBig);
-        return;
-      }
-
-      Uint8List? bytes = picked.bytes;
-      final path = picked.path;
-      if (bytes == null && path != null) {
-        bytes = await File(path).readAsBytes();
-      }
-      if (bytes == null) {
-        _showError(loc.csvImportErrorRead);
-        return;
-      }
-      if (bytes.length > ImportCsvReader.maxBytes) {
-        _showError(loc.csvImportErrorTooBig);
-        return;
-      }
-
-      table = await compute(ImportCsvReader.read, bytes);
-    } catch (_) {
-      _showError(loc.csvImportErrorRead);
-      return;
+      picked = await CsvFilePicker.pick();
     } finally {
       if (mounted) setState(() => _reading = false);
     }
+    if (!mounted || picked.isCancelled) return;
 
-    final ready = table;
-    if (!mounted || ready == null) return;
-    if (ready.isEmpty || ready.columnCount == 0) {
-      _showError(loc.csvImportErrorEmpty);
+    final table = picked.table;
+    if (table == null) {
+      _showError(switch (picked.error) {
+        CsvPickError.notCsv => loc.csvImportErrorNotCsv,
+        CsvPickError.tooBig => loc.csvImportErrorTooBig,
+        CsvPickError.empty => loc.csvImportErrorEmpty,
+        _ => loc.csvImportErrorRead,
+      });
       return;
     }
 
     await Navigator.of(context).push(
       MaterialPageRoute<void>(
-        builder: (_) => ImportMappingScreen(table: ready, fileName: fileName),
+        builder: (_) =>
+            ImportMappingScreen(table: table, fileName: picked.fileName),
       ),
     );
   }
@@ -225,12 +179,18 @@ class _ImportScreenState extends State<ImportScreen> {
                 ),
               ),
               const SizedBox(height: 12),
+              const TutorialTarget(
+                steps: [TutorialStep.importBatch],
+                child: BatchScanButton(),
+              ),
+              const SizedBox(height: 12),
               SizedBox(
                 height: 52,
                 child: Builder(
                   builder: (buttonContext) => OutlinedButton.icon(
-                    onPressed:
-                        _sharing ? null : () => _shareTemplate(buttonContext),
+                    onPressed: _sharing
+                        ? null
+                        : () => _shareTemplate(buttonContext),
                     icon: const Icon(Icons.download_rounded),
                     label: Text(loc.csvImportGetTemplate),
                   ),
