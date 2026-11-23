@@ -126,6 +126,7 @@ class TutorialStepGroups {
   static const List<TutorialStep> importScan = [
     TutorialStep.importScan,
     TutorialStep.importList,
+    TutorialStep.importBatch,
     TutorialStep.importShare,
   ];
 
@@ -137,6 +138,7 @@ class TutorialStepGroups {
 
   static const List<TutorialStep> business = [
     TutorialStep.businessTeam,
+    TutorialStep.businessImport,
     TutorialStep.businessRoles,
     TutorialStep.businessEmail,
     TutorialStep.businessReport,

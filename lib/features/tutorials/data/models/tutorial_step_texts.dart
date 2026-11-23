@@ -83,6 +83,8 @@ class TutorialStepTexts {
         return loc.tourImport1Title;
       case TutorialStep.importList:
         return loc.tourImport2Title;
+      case TutorialStep.importBatch:
+        return loc.batchScanAction;
       case TutorialStep.importShare:
         return loc.tourImport3Title;
       case TutorialStep.costsCalendar:
@@ -93,6 +95,8 @@ class TutorialStepTexts {
         return loc.tourCosts3Title;
       case TutorialStep.businessTeam:
         return loc.tourBusiness1Title;
+      case TutorialStep.businessImport:
+        return loc.staffImportAction;
       case TutorialStep.businessRoles:
         return loc.roleAction;
       case TutorialStep.businessEmail:
@@ -180,6 +184,8 @@ class TutorialStepTexts {
         return Icons.document_scanner_rounded;
       case TutorialStep.importList:
         return Icons.table_view_rounded;
+      case TutorialStep.importBatch:
+        return Icons.burst_mode_rounded;
       case TutorialStep.importShare:
         return Icons.share_rounded;
       case TutorialStep.costsCalendar:
@@ -190,6 +196,8 @@ class TutorialStepTexts {
         return Icons.bar_chart_rounded;
       case TutorialStep.businessTeam:
         return Icons.badge_rounded;
+      case TutorialStep.businessImport:
+        return Icons.group_add_rounded;
       case TutorialStep.businessRoles:
         return Icons.badge_rounded;
       case TutorialStep.businessEmail:
@@ -347,6 +355,8 @@ class TutorialStepTexts {
         return loc.tourImport1Body;
       case TutorialStep.importList:
         return loc.tourImport2Body;
+      case TutorialStep.importBatch:
+        return loc.tourImportBatchBody;
       case TutorialStep.importShare:
         return loc.tourImport3Body;
       case TutorialStep.costsCalendar:
@@ -357,6 +367,8 @@ class TutorialStepTexts {
         return loc.tourCosts3Body;
       case TutorialStep.businessTeam:
         return loc.tourBusiness1Body;
+      case TutorialStep.businessImport:
+        return loc.tourBusinessImportBody;
       case TutorialStep.businessRoles:
         return loc.tourBusinessRolesBody;
       case TutorialStep.businessEmail:
