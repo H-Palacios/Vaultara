@@ -198,13 +198,11 @@ class HouseholdRepository {
     return uid != null && (record.createdBy == uid || isOwner);
   }
 
-  static List<TrackedItem> get activeShared => _items.values
-      .where((r) => !r.isDeleted)
-      .toList(growable: false);
+  static List<TrackedItem> get activeShared =>
+      _items.values.where((r) => !r.isDeleted).toList(growable: false);
 
-  static List<TrackedItem> get deletedShared => _items.values
-      .where((r) => r.isDeleted)
-      .toList(growable: false);
+  static List<TrackedItem> get deletedShared =>
+      _items.values.where((r) => r.isDeleted).toList(growable: false);
 
   static TrackedItem? rawById(String id) => _items[id];
 
@@ -236,14 +234,17 @@ class HouseholdRepository {
         .collection('users')
         .doc(uid)
         .snapshots()
-        .listen((snap) {
-      final data = snap.data();
-      final source = data?['planSource'];
-      planSource.value = source is String ? source : null;
-      final hid = data?['householdId'];
-      _follow(hid is String && hid.isNotEmpty ? hid : null);
-    }, onError: (Object e, StackTrace s) =>
-        ErrorReporter.record(e, s, 'household_listener'));
+        .listen(
+          (snap) {
+            final data = snap.data();
+            final source = data?['planSource'];
+            planSource.value = source is String ? source : null;
+            final hid = data?['householdId'];
+            _follow(hid is String && hid.isNotEmpty ? hid : null);
+          },
+          onError: (Object e, StackTrace s) =>
+              ErrorReporter.record(e, s, 'household_listener'),
+        );
   }
 
   static void _detachHousehold() {
@@ -268,53 +269,63 @@ class HouseholdRepository {
     }
 
     final String houseId = hid;
-    final ref =
-        FirebaseFirestore.instance.collection('households').doc(houseId);
+    final ref = FirebaseFirestore.instance
+        .collection('households')
+        .doc(houseId);
 
-    _houseSub = ref.snapshots().listen((snap) {
-      final data = snap.data();
-      final uid = _uid;
-      final members = <String>[
-        for (final m in (data?['memberUids'] as List?) ?? const <dynamic>[])
-          if (m is String) m,
-      ];
-      if (data == null || uid == null || !members.contains(uid)) {
-        household.value = null;
-        return;
-      }
-      final tier = data['tier'];
-      final owner = data['ownerUid'];
-      final next = HouseholdInfo(
-        id: houseId,
-        ownerUid: owner is String ? owner : '',
-        tier: tier is String ? tier : 'free',
-        memberUids: List<String>.unmodifiable(members),
-        ownerName: data['ownerName'] is String
-            ? (data['ownerName'] as String).trim()
-            : '',
-      );
-      final changed = household.value != next;
-      household.value = next;
-      if (changed) revision.value++;
-    }, onError: (_) {
-      household.value = null;
-    });
-
-    _recordsSub = ref.collection('records').snapshots().listen((snap) {
-      final next = <String, TrackedItem>{};
-      for (final doc in snap.docs) {
-        final record =
-            TrackedItem.fromMap(doc.id, doc.data()).copyWith(
-          householdId: houseId,
+    _houseSub = ref.snapshots().listen(
+      (snap) {
+        final data = snap.data();
+        final uid = _uid;
+        final members = <String>[
+          for (final m in (data?['memberUids'] as List?) ?? const <dynamic>[])
+            if (m is String) m,
+        ];
+        if (data == null || uid == null || !members.contains(uid)) {
+          household.value = null;
+          return;
+        }
+        final tier = data['tier'];
+        final owner = data['ownerUid'];
+        final next = HouseholdInfo(
+          id: houseId,
+          ownerUid: owner is String ? owner : '',
+          tier: tier is String ? tier : 'free',
+          memberUids: List<String>.unmodifiable(members),
+          ownerName: data['ownerName'] is String
+              ? (data['ownerName'] as String).trim()
+              : '',
         );
-        next[doc.id] = record;
-      }
-      _items = next;
-      _publish();
-    }, onError: (_) {
-      _items = <String, TrackedItem>{};
-      _publish();
-    });
+        final changed = household.value != next;
+        household.value = next;
+        if (changed) revision.value++;
+      },
+      onError: (_) {
+        household.value = null;
+      },
+    );
+
+    _recordsSub = ref
+        .collection('records')
+        .snapshots()
+        .listen(
+          (snap) {
+            final next = <String, TrackedItem>{};
+            for (final doc in snap.docs) {
+              final record = TrackedItem.fromMap(
+                doc.id,
+                doc.data(),
+              ).copyWith(householdId: houseId);
+              next[doc.id] = record;
+            }
+            _items = next;
+            _publish();
+          },
+          onError: (_) {
+            _items = <String, TrackedItem>{};
+            _publish();
+          },
+        );
   }
 
   static void _publish() {
@@ -342,7 +353,8 @@ class HouseholdRepository {
       if (message.contains('already-in-household')) {
         return HouseholdError.alreadyInHousehold;
       }
-      if (message.contains('already-member')) return HouseholdError.alreadyMember;
+      if (message.contains('already-member'))
+        return HouseholdError.alreadyMember;
       if (message.contains('plan-required')) return HouseholdError.planRequired;
       if (message.contains('plan-inactive')) return HouseholdError.planInactive;
       if (message.contains('member-limit')) return HouseholdError.memberLimit;
@@ -388,8 +400,9 @@ class HouseholdRepository {
     return _codePattern.hasMatch(cleaned) ? cleaned : null;
   }
 
-  static final RegExp _codePattern =
-      RegExp(r'^[ABCDEFGHJKMNPQRSTUVWXYZ23456789]{6,8}$');
+  static final RegExp _codePattern = RegExp(
+    r'^[ABCDEFGHJKMNPQRSTUVWXYZ23456789]{6,8}$',
+  );
 
   static Future<void> create() async {
     await _call('createHousehold');
@@ -419,16 +432,20 @@ class HouseholdRepository {
   }
 
   static Future<JoinResult> join(String code) async {
-    final data = await _call(
-      'joinHousehold',
-      <String, dynamic>{'code': code},
-      true,
-    );
+    final data = await _call('joinHousehold', <String, dynamic>{
+      'code': code,
+    }, true);
     final platform = data['platform'];
     return JoinResult(
       ownSubscription: data['ownSubscription'] == true,
       platform: platform is String ? platform : null,
     );
+  }
+
+  /// Sends the member who renews a shared record (or who added it) a push
+  /// reminding them to renew it. The server allows one a day per record.
+  static Future<void> remind(String recordId) async {
+    await _call('remindMember', <String, dynamic>{'recordId': recordId});
   }
 
   static Future<void> leave() async {
@@ -469,13 +486,15 @@ class HouseholdRepository {
       final uid = raw['uid'];
       if (uid is! String) continue;
       final email = raw['email'];
-      members.add(HouseholdMember(
-        uid: uid,
-        name: '${raw['name'] ?? ''}'.trim(),
-        email: email is String && email.isNotEmpty ? email : null,
-        isOwner: raw['isOwner'] == true,
-        isYou: raw['isYou'] == true,
-      ));
+      members.add(
+        HouseholdMember(
+          uid: uid,
+          name: '${raw['name'] ?? ''}'.trim(),
+          email: email is String && email.isNotEmpty ? email : null,
+          isOwner: raw['isOwner'] == true,
+          isYou: raw['isYou'] == true,
+        ),
+      );
     }
 
     final invites = <HouseholdInvite>[];
@@ -483,11 +502,13 @@ class HouseholdRepository {
       if (raw is! Map) continue;
       final code = raw['code'];
       if (code is! String) continue;
-      invites.add(HouseholdInvite(
-        code: code,
-        link: '${raw['link'] ?? ''}',
-        expiresAt: _dateFrom(raw['expiresAt']),
-      ));
+      invites.add(
+        HouseholdInvite(
+          code: code,
+          link: '${raw['link'] ?? ''}',
+          expiresAt: _dateFrom(raw['expiresAt']),
+        ),
+      );
     }
 
     final limit = data['limit'];
@@ -507,8 +528,9 @@ class HouseholdRepository {
   }
 
   static Future<bool> unshareRecord(String recordId) async {
-    final data =
-        await _call('unshareRecord', <String, dynamic>{'recordId': recordId});
+    final data = await _call('unshareRecord', <String, dynamic>{
+      'recordId': recordId,
+    });
     return data['ownerIsYou'] == true;
   }
 
