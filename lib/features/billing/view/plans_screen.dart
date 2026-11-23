@@ -221,6 +221,7 @@ class _PlansScreenState extends State<PlansScreen> {
           loc.familyBenefitOwnRecords,
           loc.familyBenefitRenewer,
           loc.planBenefitPets,
+          loc.planBenefitPetCare,
           loc.familyBenefitOneSubscription,
         ];
       case PlanTier.business:
@@ -233,7 +234,9 @@ class _PlansScreenState extends State<PlansScreen> {
           loc.businessBenefitClientLink,
           loc.businessBenefitBulk,
           loc.businessBenefitPdf,
+          loc.businessBenefitHistory,
           loc.planBenefitPets,
+          loc.planBenefitPetCare,
         ];
       case PlanTier.premium:
       case PlanTier.free:
@@ -248,6 +251,8 @@ class _PlansScreenState extends State<PlansScreen> {
           loc.planFeaturePhotos(AttachmentRepository.premiumPerRecord),
           loc.planFeatureBatchScan,
           loc.planBenefitPets,
+          loc.planBenefitPetCare,
+          loc.planBenefitCalendar,
         ];
     }
   }

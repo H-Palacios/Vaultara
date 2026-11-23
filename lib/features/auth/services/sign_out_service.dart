@@ -29,6 +29,8 @@ import 'package:vaultara/features/reminders/services/notification_prefs.dart';
 import 'package:vaultara/features/reminders/services/reminder_sound_prefs.dart';
 import 'package:vaultara/features/reminders/services/weekly_recap_notifier.dart';
 import 'package:vaultara/features/travel/services/passport_rule_sync.dart';
+import 'package:vaultara/features/pets/data/pet_photo_repository.dart';
+import 'package:vaultara/features/pets/services/pet_type_helper.dart';
 import 'package:vaultara/core/data/repositories/official_rules_repository.dart';
 
 /// Signs out from anywhere in the app.
@@ -75,6 +77,8 @@ class SignOutService {
       PetRepository.clearForSignOut,
       TripRepository.clearForSignOut,
       PassportRuleSync.stop,
+      PetPhotoRepository.clearForSignOut,
+      PetTypeHelper.clearForSignOut,
       OfficialRulesRepository.clearForSignOut,
       InsightSnoozes.clearForSignOut,
       LifePlanRepository.clearForSignOut,
