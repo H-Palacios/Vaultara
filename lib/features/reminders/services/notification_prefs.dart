@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:vaultara/features/household/logic/renewer_rules.dart';
 
 /// Which kinds of notification the person wants.
 enum NotificationKind {
@@ -54,11 +55,18 @@ class NotificationPrefs {
 
   /// True when a shared record should not remind this person, because they
   /// chose reminders only for the shared records they added.
-  static bool skipsShared({required bool isShared, String? createdBy}) {
-    if (!isShared || createdBy == null) return false;
-    if (!get(NotificationKind.sharedOnlyMine)) return false;
-    final uid = _uid();
-    return uid != null && createdBy != uid;
+  static bool skipsShared({
+    required bool isShared,
+    String? createdBy,
+    String? assigneeUid,
+  }) {
+    return RenewerRules.skipsReminders(
+      isShared: isShared,
+      myUid: _uid(),
+      createdBy: createdBy,
+      assigneeUid: assigneeUid,
+      onlyMine: get(NotificationKind.sharedOnlyMine),
+    );
   }
 
   /// Reads the choices saved on the phone, then the account's copy.

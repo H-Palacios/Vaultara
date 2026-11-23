@@ -309,6 +309,7 @@ class ReminderScheduler {
     if (NotificationPrefs.skipsShared(
       isShared: item.isShared,
       createdBy: item.createdBy,
+      assigneeUid: item.assigneeUid,
     )) {
       return const <PlannedReminder>[];
     }

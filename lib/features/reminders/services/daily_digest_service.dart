@@ -151,6 +151,7 @@ class DailyDigestService {
       if (NotificationPrefs.skipsShared(
         isShared: record.isShared,
         createdBy: record.createdBy,
+        assigneeUid: record.assigneeUid,
       )) {
         continue;
       }
