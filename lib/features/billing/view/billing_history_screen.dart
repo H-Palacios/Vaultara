@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:vaultara/features/billing/view/plan_names.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:intl/intl.dart';
 
@@ -217,19 +218,6 @@ class _BillingRow extends StatelessWidget {
     }
   }
 
-  static String? _planName(AppLocalizations loc, String? plan) {
-    switch (plan) {
-      case 'premium':
-        return loc.planPremiumName;
-      case 'family':
-        return loc.familyPlanName;
-      case 'business':
-        return loc.planTabBusiness;
-      default:
-        return null;
-    }
-  }
-
   static String? _period(AppLocalizations loc, String? period) {
     switch (period) {
       case 'monthly':
@@ -262,7 +250,7 @@ class _BillingRow extends StatelessWidget {
     final renewsAt = _time('renewsAt');
 
     final summary = <String?>[
-      _planName(loc, _text('plan')),
+      planNameFor(loc, _text('plan')),
       _period(loc, _text('period')),
       _store(loc, _text('store')),
     ].whereType<String>().join(' · ');

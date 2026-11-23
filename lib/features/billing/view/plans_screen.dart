@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io' show Platform;
 import 'package:flutter/material.dart';
+import 'package:vaultara/features/billing/view/plan_names.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:vaultara/features/household/logic/household_wording.dart';
@@ -199,18 +200,6 @@ class _PlansScreenState extends State<PlansScreen> {
     return saved.round().clamp(0, 100).toInt();
   }
 
-  String _tabLabel(AppLocalizations loc, PlanTier tier) {
-    switch (tier) {
-      case PlanTier.family:
-        return loc.familyPlanName;
-      case PlanTier.business:
-        return loc.planTabBusiness;
-      case PlanTier.premium:
-      case PlanTier.free:
-        return loc.planTabIndividual;
-    }
-  }
-
   IconData _tabIcon(PlanTier tier) {
     switch (tier) {
       case PlanTier.family:
@@ -220,18 +209,6 @@ class _PlansScreenState extends State<PlansScreen> {
       case PlanTier.premium:
       case PlanTier.free:
         return Icons.person_rounded;
-    }
-  }
-
-  String _planName(AppLocalizations loc, PlanTier tier) {
-    switch (tier) {
-      case PlanTier.family:
-        return loc.familyPlanName;
-      case PlanTier.business:
-        return loc.planTabBusiness;
-      case PlanTier.premium:
-      case PlanTier.free:
-        return loc.planPremiumName;
     }
   }
 
@@ -453,7 +430,12 @@ class _PlansScreenState extends State<PlansScreen> {
                 ),
                 const SizedBox(height: 6),
                 Text(
-                  loc.plansSubhead,
+                  loc.plansSubheadTiers(
+                    loc.planPremiumName,
+                    planKind(loc, PlanTier.premium),
+                    planKind(loc, PlanTier.family),
+                    planKind(loc, PlanTier.business),
+                  ),
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 13,
@@ -476,7 +458,7 @@ class _PlansScreenState extends State<PlansScreen> {
                   tabs: _tabs,
                   selected: _tab,
                   current: _plan.tier,
-                  labelFor: (t) => _tabLabel(loc, t),
+                  labelFor: (t) => planKind(loc, t),
                   iconFor: _tabIcon,
                   onChanged: (t) => setState(() {
                     _tab = t;
@@ -503,7 +485,7 @@ class _PlansScreenState extends State<PlansScreen> {
                   child: PlanTile(
                     key: ValueKey<PlanTier>(tier),
                     onTap: isCurrent ? null : buyAction(),
-                    name: _planName(loc, tier),
+                    name: planName(loc, tier),
                     icon: _tabIcon(tier),
                     price: price,
                     period: period,
