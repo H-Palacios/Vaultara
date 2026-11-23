@@ -23,6 +23,7 @@ const assert = require("assert");
 const { escalationRecipients } = require("../push")._test;
 const { remindTarget } = require("../household-remind")._test;
 const { overdueItems, messageFor } = require("../staff-overdue")._test;
+const { peopleLimit, overLimit } = require("../people-limit")._test;
 
 const members = ["mom", "dad", "sam"];
 const none = new Set();
@@ -78,5 +79,16 @@ assert.strictEqual(items[1].person, "Thabo");
 assert.strictEqual(messageFor([items[1]]).bodyKey, "staffOverdueYesterday");
 assert.strictEqual(messageFor([items[0]]).bodyKey, "staffOverdueWeek");
 assert.strictEqual(messageFor(items).bodyKey, "staffOverdueMany");
+
+// The server keeps each plan to its number of people.
+assert.strictEqual(peopleLimit("business"), 25);
+assert.strictEqual(peopleLimit("family"), 5);
+assert.strictEqual(peopleLimit("premium"), 0);
+assert.strictEqual(peopleLimit(undefined), 0);
+assert.strictEqual(peopleLimit("__proto__"), 0);
+assert.strictEqual(overLimit("business", 25), false);
+assert.strictEqual(overLimit("business", 26), true);
+assert.strictEqual(overLimit("family", 6), true);
+assert.strictEqual(overLimit(undefined, 1), true);
 
 console.log("household reminders: all checks passed");

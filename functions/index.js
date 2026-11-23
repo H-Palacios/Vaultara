@@ -82,6 +82,7 @@ exports.householdEscalationJob = require("./push").householdEscalationJob;
 exports.onSharedRecordChanged = require("./household-changes").onSharedRecordChanged;
 exports.remindMember = require("./household-remind").remindMember;
 exports.staffOverdueJob = require("./staff-overdue").staffOverdueJob;
+exports.onPersonCreated = require("./people-limit").onPersonCreated;
 exports.askVaultara = require("./assistant").askVaultara;
 exports.forgetAssistantWords = require("./assistant").forgetAssistantWords;
 exports.suggestCategoryIcon = require("./icon-suggest").suggestCategoryIcon;
