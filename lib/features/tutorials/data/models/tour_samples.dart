@@ -71,6 +71,35 @@ class TourSamples {
     );
   }
 
+  /// Records for the Home and Calendar tours: one due this week and two later
+  /// this month, so Home has something to show and the calendar has days
+  /// marked.
+  static List<TrackedItem> homeRecords(AppLocalizations loc) {
+    return <TrackedItem>[
+      _record(
+        id: 'tour-home-card',
+        name: loc.tutorialSampleRecordName,
+        categoryKey: 'banking_and_cards',
+        groupKey: 'debit_and_credit_cards',
+        days: 5,
+      ),
+      _record(
+        id: 'tour-home-insurance',
+        name: loc.tutorialInsightsSampleRecordThree,
+        categoryKey: 'insurance_and_cover',
+        groupKey: 'health_insurances',
+        days: 17,
+      ),
+      _record(
+        id: 'tour-home-passport',
+        name: loc.tutorialInsightsSampleRecordTwo,
+        categoryKey: 'personal_identification',
+        groupKey: 'passports',
+        days: 26,
+      ),
+    ];
+  }
+
   /// What was in the wallet: a bank card to block and a passport to
   /// replace.
   static List<TrackedItem> walletRecords(AppLocalizations loc) {

@@ -8,10 +8,14 @@ import 'package:vaultara/features/tools/view/life_events_screen.dart';
 class LifePlansHomeSection extends StatelessWidget {
   static const int maxShown = 2;
 
-  const LifePlansHomeSection({super.key});
+  /// True in the Home tour, where your own plans stay hidden.
+  final bool sample;
+
+  const LifePlansHomeSection({super.key, this.sample = false});
 
   @override
   Widget build(BuildContext context) {
+    if (sample) return const SizedBox.shrink();
     return ValueListenableBuilder<List<LifePlan>>(
       valueListenable: LifePlanRepository.plans,
       builder: (context, plans, _) {

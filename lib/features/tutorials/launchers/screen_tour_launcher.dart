@@ -21,6 +21,7 @@ import 'package:vaultara/features/tutorials/view/stages/share_tour_stage.dart';
 import 'package:vaultara/features/calendar/view/calendar_screen.dart';
 import 'package:vaultara/features/tutorials/view/stages/tour_stage_switch.dart';
 import 'package:vaultara/features/tutorials/view/stages/tour_samples_view.dart';
+import 'package:vaultara/features/tutorials/data/models/tour_samples.dart';
 
 /// Plays the tutorials that walk through one real screen: it opens the
 /// screen and the overlay points at its parts one by one.
@@ -58,7 +59,10 @@ class ScreenTourLauncher {
               TutorialStep.costsPlan,
             },
             sample: TourSamplesView.costs,
-            screen: (_) => CalendarScreen(isPremium: premium),
+            screen: (context) => CalendarScreen(
+              isPremium: premium,
+              sample: TourSamples.homeRecords(AppLocalizations.of(context)!),
+            ),
           ),
         );
       case TutorialIds.renew:

@@ -21,11 +21,16 @@ class HomeNextUp extends StatelessWidget {
   /// Called after a renewal or an edit, so the counts update.
   final VoidCallback onChanged;
 
+  /// Made-up records shown in the Home tour in place of your own. Tapping
+  /// them does nothing.
+  final List<TrackedItem>? sample;
+
   const HomeNextUp({
     super.key,
     required this.totals,
     required this.isPremium,
     required this.onChanged,
+    this.sample,
   });
 
   /// The soonest record that has not expired yet.
@@ -62,7 +67,7 @@ class HomeNextUp extends StatelessWidget {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
 
-    if (!RecordRepository.isLoaded) {
+    if (sample == null && !RecordRepository.isLoaded) {
       // Shaped like the heading and card it stands in for, so nothing below
       // moves when the records arrive.
       final fill = scheme.surfaceContainerHighest.withValues(alpha: 0.6);
@@ -91,7 +96,7 @@ class HomeNextUp extends StatelessWidget {
       );
     }
 
-    final records = RecordRepository.allActive();
+    final records = sample ?? RecordRepository.allActive();
     if (records.isEmpty) return const SizedBox.shrink();
     final data = ComingUp.of(records);
 
@@ -150,8 +155,12 @@ class HomeNextUp extends StatelessWidget {
 
     return HomeComingUp(
       data: data,
-      onOpen: (record) => _open(context, record),
-      onRenew: (record) => _renew(context, record),
+      onOpen: (record) {
+        if (sample == null) _open(context, record);
+      },
+      onRenew: (record) {
+        if (sample == null) _renew(context, record);
+      },
     );
   }
 }

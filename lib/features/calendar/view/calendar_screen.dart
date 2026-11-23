@@ -39,7 +39,11 @@ enum _CalendarMenu { calendarLink }
 class CalendarScreen extends StatefulWidget {
   final bool isPremium;
 
-  const CalendarScreen({super.key, required this.isPremium});
+  /// Made-up records shown in the Calendar tour in place of your own.
+  /// Tapping them, or a day, does nothing.
+  final List<TrackedItem>? sample;
+
+  const CalendarScreen({super.key, required this.isPremium, this.sample});
 
   @override
   State<CalendarScreen> createState() => _CalendarScreenState();
@@ -60,7 +64,7 @@ class _CalendarScreenState extends State<CalendarScreen>
 
   ExpiryIndex? _index;
 
-  late final RecordsLiveSync _sync;
+  RecordsLiveSync? _sync;
 
   @override
   bool get wantKeepAlive => true;
@@ -74,24 +78,28 @@ class _CalendarScreenState extends State<CalendarScreen>
     _displayedMonth = DateTime(now.year, now.month, 1);
     _selectedDay = _today;
 
-    _sync = RecordsLiveSync(
-      onChanged: () {
-        if (mounted) _refresh(reload: true);
-      },
-    );
-    _sync.start();
+    if (widget.sample == null) {
+      _sync = RecordsLiveSync(
+        onChanged: () {
+          if (mounted) _refresh(reload: true);
+        },
+      )..start();
+    }
 
     _refresh();
   }
 
   @override
   void dispose() {
-    _sync.dispose();
+    _sync?.dispose();
     super.dispose();
   }
 
   Future<void> _refresh({bool reload = false}) async {
-    final index = await CalendarService.load(reload: reload);
+    final sample = widget.sample;
+    final index = sample != null
+        ? ExpiryIndex.fromRecords(sample)
+        : await CalendarService.load(reload: reload);
     if (!mounted) return;
     final now = DateTime.now();
     setState(() {
@@ -155,7 +163,7 @@ class _CalendarScreenState extends State<CalendarScreen>
 
   void _addOnDay(DateTime day) {
     final shell = ShellState.current;
-    if (shell == null) return;
+    if (shell == null || widget.sample != null) return;
     HapticFeedback.mediumImpact();
     openAddRecord(
       context,
@@ -167,17 +175,20 @@ class _CalendarScreenState extends State<CalendarScreen>
   }
 
   Future<void> _openRecord(TrackedItem record) async {
+    if (widget.sample != null) return;
     await RecordOpener.open(context, record, isPremium: widget.isPremium);
     if (mounted) _refresh();
   }
 
   Future<void> _renew(TrackedItem record) async {
+    if (widget.sample != null) return;
     if (!await RecordLock.unlock(context, record) || !mounted) return;
     final renewed = await showRenewSheet(context, record);
     if (renewed && mounted) _refresh();
   }
 
   Future<void> _guide(TrackedItem record) async {
+    if (widget.sample != null) return;
     if (!await RecordLock.unlock(context, record) || !mounted) return;
     await showRenewalGuide(
       context,
@@ -272,7 +283,7 @@ class _CalendarScreenState extends State<CalendarScreen>
       );
     }
 
-    final allRecords = RecordRepository.allActive();
+    final allRecords = widget.sample ?? RecordRepository.allActive();
     final person = PersonFilterChips.owners(allRecords).length < 2
         ? null
         : _person;

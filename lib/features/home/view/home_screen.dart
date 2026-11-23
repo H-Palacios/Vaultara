@@ -1,5 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:vaultara/features/tutorials/data/models/tutorial_step_groups.dart';
+import 'package:vaultara/features/tutorials/data/models/tour_samples.dart';
+import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -137,10 +140,26 @@ class HomeScreenState extends State<HomeScreen>
     );
   }
 
+  /// Made-up records for the Home tour, made once.
+  List<TrackedItem>? _tourRecords;
+
   @override
   Widget build(BuildContext context) {
     super.build(context);
+    // During the Home tour the screen shows made-up records, so the tour
+    // looks the same for everyone and never shows your own.
+    return ListenableBuilder(
+      listenable: TutorialController.instance,
+      builder: (context, _) => _body(
+        context,
+        TutorialStepGroups.home.contains(
+          TutorialController.instance.currentStep,
+        ),
+      ),
+    );
+  }
 
+  Widget _body(BuildContext context, bool tour) {
     final scheme = Theme.of(context).colorScheme;
     final loc = AppLocalizations.of(context)!;
 
@@ -153,6 +172,7 @@ class HomeScreenState extends State<HomeScreen>
         totals: overview.totals,
         isPremium: widget.isPremium,
         onChanged: () => HomeOverviewLoader.recompute(),
+        sample: tour ? (_tourRecords ??= TourSamples.homeRecords(loc)) : null,
       ),
     );
     final pinned = HomePinnedCategories(
@@ -167,8 +187,8 @@ class HomeScreenState extends State<HomeScreen>
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            TravelCheckCard(isPremium: widget.isPremium),
-            const LifePlansHomeSection(),
+            TravelCheckCard(isPremium: widget.isPremium, sample: tour),
+            LifePlansHomeSection(sample: tour),
           ],
         ),
       ),
