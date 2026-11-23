@@ -30,6 +30,7 @@ import 'package:vaultara/features/staff/view/bulk_request_tile.dart';
 import 'package:vaultara/features/family/view/person_row.dart';
 import 'package:vaultara/features/staff/view/edit_role_action.dart';
 import 'package:vaultara/features/staff/view/staff_import_tile.dart';
+import 'package:vaultara/features/staff/view/client_link_tile.dart';
 import 'package:vaultara/features/staff/logic/required_documents.dart';
 import 'package:vaultara/features/tutorials/data/models/tour_samples.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
@@ -349,6 +350,11 @@ class _FamilyScreenState extends State<FamilyScreen> {
                           const TutorialTarget(
                             steps: [TutorialStep.businessReport],
                             child: ComplianceReportTile(),
+                          ),
+                          const SizedBox(height: 12),
+                          TutorialTarget(
+                            steps: const [TutorialStep.businessClientLink],
+                            child: ClientLinkTile(enabled: !tour),
                           ),
                         ] else if (!tour) ...[
                           const SizedBox(height: 16),
