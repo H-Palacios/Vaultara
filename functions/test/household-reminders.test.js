@@ -25,6 +25,7 @@ const { remindTarget } = require("../household-remind")._test;
 const { overdueItems, messageFor } = require("../staff-overdue")._test;
 const { peopleLimit, overLimit } = require("../people-limit")._test;
 const { buildView } = require("../client-link")._test;
+const { overPetLimit, MAX_PETS } = require("../pets-limit")._test;
 
 const members = ["mom", "dad", "sam"];
 const none = new Set();
@@ -91,6 +92,10 @@ assert.strictEqual(overLimit("business", 25), false);
 assert.strictEqual(overLimit("business", 26), true);
 assert.strictEqual(overLimit("family", 6), true);
 assert.strictEqual(overLimit(undefined, 1), true);
+
+// Pets have their own limit and never use a member place.
+assert.strictEqual(overPetLimit(MAX_PETS), false);
+assert.strictEqual(overPetLimit(MAX_PETS + 1), true);
 
 // A client link shows staff documents only, never the owner's own, and a
 // locked record keeps its status but not its name.

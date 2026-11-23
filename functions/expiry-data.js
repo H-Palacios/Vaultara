@@ -151,8 +151,12 @@ async function loadRecords(uid, userData, { withPeople = false } = {}) {
 
   const people = new Map();
   if (withPeople && records.some((r) => r.holderId && !r.locked)) {
-    const peopleSnap = await userRef.collection("people").get();
-    for (const doc of peopleSnap.docs) {
+    // Pets are kept in their own list; their records name them the same way.
+    const [peopleSnap, petsSnap] = await Promise.all([
+      userRef.collection("people").get(),
+      userRef.collection("pets").get(),
+    ]);
+    for (const doc of [...peopleSnap.docs, ...petsSnap.docs]) {
       const name = doc.data()?.name;
       if (typeof name === "string" && name.trim()) people.set(doc.id, name.trim().slice(0, 40));
     }
