@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/models/person.dart';
 import 'package:vaultara/core/data/repositories/people_repository.dart';
 import 'package:vaultara/features/family/view/person_avatar.dart';
+import 'package:vaultara/features/pets/data/pet.dart';
+import 'package:vaultara/features/pets/view/pet_avatar.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/util/initials.dart';
 
@@ -13,12 +15,16 @@ class PersonPicker extends StatelessWidget {
   /// People to offer in place of the user's, for the tutorial.
   final List<Person>? samplePeople;
 
+  /// Pets offered after the people, for records in Pets and animals.
+  final List<Pet> pets;
+
   const PersonPicker({
     super.key,
     required this.holderId,
     required this.onChanged,
     this.enabled = true,
     this.samplePeople,
+    this.pets = const <Pet>[],
   });
 
   @override
@@ -27,7 +33,7 @@ class PersonPicker extends StatelessWidget {
       valueListenable: PeopleRepository.people,
       builder: (context, saved, _) {
         final people = samplePeople ?? saved;
-        if (people.isEmpty) return const SizedBox.shrink();
+        if (people.isEmpty && pets.isEmpty) return const SizedBox.shrink();
 
         final scheme = Theme.of(context).colorScheme;
         final loc = AppLocalizations.of(context)!;
@@ -78,6 +84,21 @@ class PersonPicker extends StatelessWidget {
                       borderRadius: BorderRadius.circular(999),
                     ),
                     onSelected: enabled ? (_) => onChanged(person.id) : null,
+                  ),
+                for (final pet in pets)
+                  ChoiceChip(
+                    avatar: PetAvatar(pet: pet, size: 20),
+                    label: Text(
+                      pet.name,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    selected: holderId == pet.id,
+                    showCheckmark: false,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(999),
+                    ),
+                    onSelected: enabled ? (_) => onChanged(pet.id) : null,
                   ),
               ],
             ),

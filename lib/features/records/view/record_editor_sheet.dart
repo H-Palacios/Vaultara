@@ -1,3 +1,6 @@
+import 'package:vaultara/features/pets/data/pet.dart';
+import 'package:vaultara/features/pets/data/pet_repository.dart';
+import 'package:vaultara/features/pets/logic/pet_document_groups.dart';
 import 'dart:async';
 
 import 'package:firebase_auth/firebase_auth.dart';
@@ -1742,8 +1745,14 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       attachments.isNotEmpty || newAttachmentPaths.isNotEmpty,
     ].where((v) => v).length;
 
+    // Pets are offered only on Pets and animals records.
+    final List<Pet> pickerPets =
+        selectedCategoryKey == PetDocumentGroups.category
+        ? PetRepository.pets.value
+        : const <Pet>[];
     final bool showPeople =
-        showExtras && PeopleRepository.people.value.isNotEmpty;
+        showExtras &&
+        (PeopleRepository.people.value.isNotEmpty || pickerPets.isNotEmpty);
 
     final bool showShared =
         showExtras && !isAnyTutorialMode && HouseholdRepository.canEditShared;
@@ -1824,6 +1833,7 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
         PersonPicker(
           holderId: holderId,
           enabled: !isSaving,
+          pets: pickerPets,
           onChanged: (id) => setState(() => holderId = id),
         ),
       ],

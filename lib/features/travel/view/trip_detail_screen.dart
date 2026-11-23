@@ -1,3 +1,4 @@
+import 'package:vaultara/features/pets/view/pet_trip_card.dart';
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/models/person.dart';
 import 'package:vaultara/core/data/repositories/people_repository.dart';
@@ -252,6 +253,7 @@ class _TripDetailScreenState extends State<TripDetailScreen> {
             right: [
               ..._records(context, loc, trip, results, isPremium),
               const SizedBox(height: 22),
+              PetTripCard(trip: trip),
               ..._checklist(loc, trip),
             ],
           ),
@@ -271,10 +273,7 @@ class _TripDetailScreenState extends State<TripDetailScreen> {
         const SizedBox(height: 12),
         // One row, so no button is left alone on a second line. Scrolls
         // sideways only when a long translation does not fit.
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: actions,
-        ),
+        SingleChildScrollView(scrollDirection: Axis.horizontal, child: actions),
         const SizedBox(height: 22),
         ..._journey(loc, trip),
         const SizedBox(height: 22),
@@ -282,6 +281,7 @@ class _TripDetailScreenState extends State<TripDetailScreen> {
         const SizedBox(height: 10),
         _visa(trip, isPremium),
         const SizedBox(height: 22),
+        PetTripCard(trip: trip),
         ..._checklist(loc, trip),
       ],
     );
