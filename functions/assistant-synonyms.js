@@ -108,6 +108,8 @@ const GROUP_ALIASES = {
   pet_microchips: ["microchip", "pet chip", "mikrochip", "puce"],
   pet_insurances: ["pet insurance", "dog insurance", "cat insurance", "tierversicherung"],
   pet_passports: ["pet passport", "animal passport", "heimtierausweis", "passeport animal"],
+  pet_treatments: ["flea treatment", "tick treatment", "deworming", "worming", "entwurmung", "vermifuge"],
+  pet_checkups: ["vet check-up", "vet checkup", "annual check-up", "tierarzt check"],
 };
 
 const CATEGORY_ALIASES = {

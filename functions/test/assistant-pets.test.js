@@ -93,3 +93,31 @@ const ctx = {
   console.error(err);
   process.exit(1);
 });
+
+// Protocol 16: the countdown works back from the travel date.
+(async () => {
+  const V16 = require("../assistant-v16")({
+    admin: fakeAdmin({}),
+    str,
+    countryCode,
+    householdFor: async () => null,
+  });
+  const petDoc = (data) => ({ get: async () => ({ exists: true, data: () => data }) });
+  const ctx16 = {
+    here: "ZA",
+    uid: "u1",
+    userRef: { collection: () => ({ doc: () => petDoc({ name: "Rex", type: "dog" }) }) },
+  };
+  const r = await V16.run(ctx16, "get_pet_travel_plan", { pet_id: "p1", to: "GB", date: "2027-09-01" });
+  const byStep = Object.fromEntries(r.steps.map((s) => [s.step, s.latest]));
+  assert.strictEqual(byStep["titre:3"], "2027-06-01", "blood test 3 months before");
+  assert.strictEqual(byStep["rabies:21"], "2027-06-01", "vaccine no later than the blood test");
+  assert.strictEqual(byStep.chip, "2027-06-01", "chip no later than the vaccine");
+  assert.strictEqual(byStep.certificate, "2027-09-01");
+  assert.ok((await V16.run(ctx16, "get_pet_travel_plan", { pet_id: "p1", to: "GB", date: "next week" })).error);
+  assert.ok((await V16.run(ctx16, "get_change_history", {})).error, "not a Business owner");
+  console.log("assistant v16: all checks passed");
+})().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});
