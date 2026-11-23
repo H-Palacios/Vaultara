@@ -3234,6 +3234,52 @@ class AppLocalizationsFr extends AppLocalizations {
   String get businessBenefitStaffImport => 'Importez votre liste du personnel depuis un tableur';
 
   @override
+  String get clientLinkAction => 'Partager l\'état du personnel avec un client';
+
+  @override
+  String get clientLinkHint => 'Un lien en lecture seule qui indique si les documents de chaque personne sont à jour. Ni numéros ni photos.';
+
+  @override
+  String get clientLinkTitle => 'Lien pour un client';
+
+  @override
+  String get clientLinkBody => 'Le client voit les noms du personnel, les noms des documents, les dates d\'expiration et un état, en direct depuis Vaultara. Vos propres éléments, les numéros de document, les photos et les e-mails ne sont jamais affichés.';
+
+  @override
+  String get clientLinkOneDay => '1 jour';
+
+  @override
+  String get clientLinkOneWeek => '7 jours';
+
+  @override
+  String get clientLinkOneMonth => '30 jours';
+
+  @override
+  String get clientLinkCreate => 'Créer et partager le lien';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'État des documents du personnel depuis Vaultara : $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Arrêter tous les liens clients';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Liens clients arrêtés : $count';
+  }
+
+  @override
+  String get clientLinkError => 'Le lien n\'a pas pu être créé. Vérifiez votre connexion et réessayez.';
+
+  @override
+  String get clientLinkTooMany => 'Vous avez atteint le nombre de liens clients pour le moment. Arrêtez d\'anciens liens ou réessayez demain.';
+
+  @override
+  String get businessBenefitClientLink => 'Partagez la conformité du personnel en direct avec vos clients';
+
+  @override
   String get businessBenefitPdf => 'Export PDF d’équipe avec le nom de votre entreprise';
 
   @override
@@ -8228,6 +8274,9 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Vous avez déjà une liste du personnel ? Vous pouvez l\'importer depuis un tableur, avec noms et e-mails.';
+
+  @override
+  String get tourBusinessClientBody => 'Vous pouvez partager un lien en lecture seule avec un client pour qu\'il voie que les documents de votre personnel sont à jour.';
 
   @override
   String get tourBusinessRolesBody => 'Donnez à chaque personne un poste, comme Chauffeur, avec les documents qu\'il exige. Vaultara indique ce qui manque.';

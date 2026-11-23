@@ -3229,6 +3229,52 @@ class AppLocalizationsAf extends AppLocalizations {
   String get businessBenefitStaffImport => 'Voer jou personeellys uit \'n sigblad in';
 
   @override
+  String get clientLinkAction => 'Deel personeelstatus met \'n kliënt';
+
+  @override
+  String get clientLinkHint => '\'n Leesalleen-skakel wat wys of elke persoon se dokumente op datum is. Geen nommers of foto\'s nie.';
+
+  @override
+  String get clientLinkTitle => 'Skakel vir \'n kliënt';
+
+  @override
+  String get clientLinkBody => 'Die kliënt sien personeelname, dokumentname, vervaldatums en \'n status, regstreeks uit Vaultara. Jou eie rekords, dokumentnommers, foto\'s en e-posse word nooit gewys nie.';
+
+  @override
+  String get clientLinkOneDay => '1 dag';
+
+  @override
+  String get clientLinkOneWeek => '7 dae';
+
+  @override
+  String get clientLinkOneMonth => '30 dae';
+
+  @override
+  String get clientLinkCreate => 'Skep en deel skakel';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Personeeldokumentstatus van Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Stop alle kliëntskakels';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Kliëntskakels gestop: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Die skakel kon nie gemaak word nie. Kontroleer jou verbinding en probeer weer.';
+
+  @override
+  String get clientLinkTooMany => 'Jy het die aantal kliëntskakels vir nou bereik. Stop ou skakels of probeer môre weer.';
+
+  @override
+  String get businessBenefitClientLink => 'Deel regstreekse personeelnakoming met kliënte';
+
+  @override
   String get businessBenefitPdf => 'Span-PDF-uitvoer met jou maatskappynaam';
 
   @override
@@ -8218,6 +8264,9 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Het jy reeds \'n personeellys? Jy kan dit uit \'n sigblad invoer, met name en e-posse.';
+
+  @override
+  String get tourBusinessClientBody => 'Jy kan \'n leesalleen-skakel met \'n kliënt deel, sodat hulle kan sien dat jou personeel se dokumente op datum is.';
 
   @override
   String get tourBusinessRolesBody => 'Gee elke persoon \'n rol, soos Bestuurder, met die dokumente wat dit nodig het. Vaultara wys wat kortkom.';

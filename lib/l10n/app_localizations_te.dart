@@ -3229,6 +3229,52 @@ class AppLocalizationsTe extends AppLocalizations {
   String get businessBenefitStaffImport => 'మీ సిబ్బంది జాబితాను స్ప్రెడ్‌షీట్ నుండి దిగుమతి చేయండి';
 
   @override
+  String get clientLinkAction => 'కస్టమర్‌తో సిబ్బంది స్థితిని పంచుకోండి';
+
+  @override
+  String get clientLinkHint => 'ప్రతి ఒక్కరి పత్రాలు చెల్లుబాటులో ఉన్నాయో లేదో చూపే చదవడానికి మాత్రమే లింక్. సంఖ్యలు లేదా ఫోటోలు ఉండవు.';
+
+  @override
+  String get clientLinkTitle => 'కస్టమర్ కోసం లింక్';
+
+  @override
+  String get clientLinkBody => 'కస్టమర్ Vaultara నుండి నేరుగా సిబ్బంది పేర్లు, పత్రాల పేర్లు, గడువు తేదీలు మరియు స్థితిని చూస్తారు. మీ స్వంత రికార్డులు, పత్ర సంఖ్యలు, ఫోటోలు మరియు ఇమెయిల్‌లు ఎప్పుడూ చూపబడవు.';
+
+  @override
+  String get clientLinkOneDay => '1 రోజు';
+
+  @override
+  String get clientLinkOneWeek => '7 రోజులు';
+
+  @override
+  String get clientLinkOneMonth => '30 రోజులు';
+
+  @override
+  String get clientLinkCreate => 'లింక్ సృష్టించి పంచుకోండి';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Vaultara నుండి సిబ్బంది పత్రాల స్థితి: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'అన్ని కస్టమర్ లింక్‌లను ఆపండి';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'ఆపిన కస్టమర్ లింక్‌లు: $count';
+  }
+
+  @override
+  String get clientLinkError => 'లింక్ సృష్టించలేకపోయాం. కనెక్షన్ తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.';
+
+  @override
+  String get clientLinkTooMany => 'ప్రస్తుతానికి కస్టమర్ లింక్‌ల సంఖ్యకు చేరుకున్నారు. పాత లింక్‌లను ఆపండి లేదా రేపు ప్రయత్నించండి.';
+
+  @override
+  String get businessBenefitClientLink => 'కస్టమర్‌లతో సిబ్బంది సమ్మతిని నేరుగా పంచుకోండి';
+
+  @override
   String get businessBenefitPdf => 'మీ కంపెనీ పేరుతో టీమ్ PDF ఎగుమతి';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'సిబ్బంది జాబితా ఇప్పటికే ఉందా? పేర్లు, ఇమెయిల్‌లతో స్ప్రెడ్‌షీట్ నుండి దిగుమతి చేయవచ్చు.';
+
+  @override
+  String get tourBusinessClientBody => 'మీ సిబ్బంది పత్రాలు చెల్లుబాటులో ఉన్నాయని చూపడానికి కస్టమర్‌తో చదవడానికి మాత్రమే లింక్ పంచుకోవచ్చు.';
 
   @override
   String get tourBusinessRolesBody => 'ప్రతి ఒక్కరికీ డ్రైవర్ వంటి పాత్రను దానికి అవసరమైన పత్రాలతో ఇవ్వండి. ఏమి లేవో Vaultara చూపిస్తుంది.';

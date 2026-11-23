@@ -3229,6 +3229,52 @@ class AppLocalizationsCa extends AppLocalizations {
   String get businessBenefitStaffImport => 'Importa la llista de personal des d\'un full de càlcul';
 
   @override
+  String get clientLinkAction => 'Comparteix l\'estat del personal amb un client';
+
+  @override
+  String get clientLinkHint => 'Un enllaç només de lectura que mostra si els documents de cada persona estan al dia. Sense números ni fotos.';
+
+  @override
+  String get clientLinkTitle => 'Enllaç per a un client';
+
+  @override
+  String get clientLinkBody => 'El client veu els noms del personal, els noms dels documents, les dates de caducitat i un estat, en directe des de Vaultara. Els teus registres, números de document, fotos i correus no es mostren mai.';
+
+  @override
+  String get clientLinkOneDay => '1 dia';
+
+  @override
+  String get clientLinkOneWeek => '7 dies';
+
+  @override
+  String get clientLinkOneMonth => '30 dies';
+
+  @override
+  String get clientLinkCreate => 'Crea i comparteix l\'enllaç';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Estat dels documents del personal des de Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Atura tots els enllaços de clients';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Enllaços de clients aturats: $count';
+  }
+
+  @override
+  String get clientLinkError => 'No s\'ha pogut crear l\'enllaç. Comprova la connexió i torna-ho a provar.';
+
+  @override
+  String get clientLinkTooMany => 'Ara mateix has arribat al nombre d\'enllaços de clients. Atura enllaços antics o torna-ho a provar demà.';
+
+  @override
+  String get businessBenefitClientLink => 'Comparteix el compliment del personal en directe amb els clients';
+
+  @override
   String get businessBenefitPdf => 'Exportació de PDF d\'equip amb el nom de la teva empresa';
 
   @override
@@ -8218,6 +8264,9 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Ja tens una llista de personal? La pots importar d\'un full de càlcul, amb noms i correus.';
+
+  @override
+  String get tourBusinessClientBody => 'Pots compartir un enllaç només de lectura amb un client perquè vegi que els documents del teu personal estan al dia.';
 
   @override
   String get tourBusinessRolesBody => 'Dona a cada persona un rol, com ara Conductor, amb els documents que necessita. Vaultara mostra què falta.';

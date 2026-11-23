@@ -3230,6 +3230,52 @@ class AppLocalizationsPt extends AppLocalizations {
   String get businessBenefitStaffImport => 'Importe a sua lista de funcionários de uma folha de cálculo';
 
   @override
+  String get clientLinkAction => 'Partilhar o estado dos funcionários com um cliente';
+
+  @override
+  String get clientLinkHint => 'Uma ligação só de leitura que mostra se os documentos de cada pessoa estão em dia. Sem números nem fotos.';
+
+  @override
+  String get clientLinkTitle => 'Ligação para um cliente';
+
+  @override
+  String get clientLinkBody => 'O cliente vê os nomes dos funcionários, os nomes dos documentos, as datas de validade e um estado, em direto do Vaultara. Os seus próprios registos, números de documentos, fotos e emails nunca são mostrados.';
+
+  @override
+  String get clientLinkOneDay => '1 dia';
+
+  @override
+  String get clientLinkOneWeek => '7 dias';
+
+  @override
+  String get clientLinkOneMonth => '30 dias';
+
+  @override
+  String get clientLinkCreate => 'Criar e partilhar ligação';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Estado dos documentos dos funcionários no Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Parar todas as ligações de clientes';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Ligações de clientes paradas: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Não foi possível criar a ligação. Verifique a ligação à internet e tente novamente.';
+
+  @override
+  String get clientLinkTooMany => 'Atingiu o número de ligações de clientes por agora. Pare ligações antigas ou tente amanhã.';
+
+  @override
+  String get businessBenefitClientLink => 'Partilhe em direto a conformidade dos funcionários com os clientes';
+
+  @override
   String get businessBenefitPdf => 'Exportação PDF da equipa com o nome da sua empresa';
 
   @override
@@ -8219,6 +8265,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Já tem uma lista de funcionários? Pode importá-la de uma folha de cálculo, com nomes e emails.';
+
+  @override
+  String get tourBusinessClientBody => 'Pode partilhar uma ligação só de leitura com um cliente, para que veja que os documentos dos seus funcionários estão em dia.';
 
   @override
   String get tourBusinessRolesBody => 'Dê a cada pessoa uma função, como Motorista, com os documentos que exige. O Vaultara mostra o que falta.';

@@ -3229,6 +3229,52 @@ class AppLocalizationsHy extends AppLocalizations {
   String get businessBenefitStaffImport => 'Ներմուծեք աշխատակիցների ցանկը աղյուսակից';
 
   @override
+  String get clientLinkAction => 'Կիսվել աշխատակիցների վիճակով հաճախորդի հետ';
+
+  @override
+  String get clientLinkHint => 'Միայն կարդալու հղում, որը ցույց է տալիս՝ արդյոք յուրաքանչյուրի փաստաթղթերը վավեր են։ Առանց համարների ու լուսանկարների։';
+
+  @override
+  String get clientLinkTitle => 'Հղում հաճախորդի համար';
+
+  @override
+  String get clientLinkBody => 'Հաճախորդը տեսնում է աշխատակիցների անունները, փաստաթղթերի անունները, ժամկետները և վիճակը՝ ուղիղ Vaultara-ից։ Ձեր սեփական գրառումները, փաստաթղթերի համարները, լուսանկարները և էլ. հասցեները երբեք չեն ցուցադրվում։';
+
+  @override
+  String get clientLinkOneDay => '1 օր';
+
+  @override
+  String get clientLinkOneWeek => '7 օր';
+
+  @override
+  String get clientLinkOneMonth => '30 օր';
+
+  @override
+  String get clientLinkCreate => 'Ստեղծել և կիսվել հղումով';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Աշխատակիցների փաստաթղթերի վիճակը Vaultara-ից՝ $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Դադարեցնել հաճախորդների բոլոր հղումները';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Դադարեցված հաճախորդային հղումներ՝ $count';
+  }
+
+  @override
+  String get clientLinkError => 'Հղումը հնարավոր չեղավ ստեղծել։ Ստուգեք կապը և նորից փորձեք։';
+
+  @override
+  String get clientLinkTooMany => 'Առայժմ հասել եք հաճախորդային հղումների քանակին։ Դադարեցրեք հին հղումները կամ փորձեք վաղը։';
+
+  @override
+  String get businessBenefitClientLink => 'Կիսվեք աշխատակիցների համապատասխանությամբ հաճախորդների հետ ուղիղ եթերում';
+
+  @override
   String get businessBenefitPdf => 'Թիմի PDF արտահանում՝ ձեր ընկերության անվամբ';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Ունե՞ք աշխատակիցների ցանկ։ Կարող եք այն ներմուծել աղյուսակից՝ անուններով և էլ. հասցեներով։';
+
+  @override
+  String get tourBusinessClientBody => 'Կարող եք հաճախորդի հետ կիսվել միայն կարդալու հղումով, որ նա տեսնի՝ ձեր աշխատակիցների փաստաթղթերը վավեր են։';
 
   @override
   String get tourBusinessRolesBody => 'Յուրաքանչյուրին տվեք դեր, օրինակ՝ Վարորդ, իր պահանջվող փաստաթղթերով։ Vaultara-ն ցույց է տալիս, թե ինչ է պակասում։';

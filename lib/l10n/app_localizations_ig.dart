@@ -3214,6 +3214,52 @@ class AppLocalizationsIg extends AppLocalizations {
   String get businessBenefitStaffImport => 'Bubata ndepụta ndị ọrụ gị site na spreadsheet';
 
   @override
+  String get clientLinkAction => 'Kekọrịta ọnọdụ ndị ọrụ na onye ahịa';
+
+  @override
+  String get clientLinkHint => 'Njikọ a na-agụ naanị nke na-egosi ma akwụkwọ onye ọ bụla ka dị irè. Enweghị nọmba ma ọ bụ foto.';
+
+  @override
+  String get clientLinkTitle => 'Njikọ maka onye ahịa';
+
+  @override
+  String get clientLinkBody => 'Onye ahịa na-ahụ aha ndị ọrụ, aha akwụkwọ, ụbọchị ngwụcha na ọnọdụ, ozugbo site na Vaultara. A naghị egosi ndekọ nke gị, nọmba akwụkwọ, foto na email.';
+
+  @override
+  String get clientLinkOneDay => 'Ụbọchị 1';
+
+  @override
+  String get clientLinkOneWeek => 'Ụbọchị 7';
+
+  @override
+  String get clientLinkOneMonth => 'Ụbọchị 30';
+
+  @override
+  String get clientLinkCreate => 'Mepụta ma kekọrịta njikọ';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Ọnọdụ akwụkwọ ndị ọrụ site na Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Kwụsị njikọ ndị ahịa niile';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Njikọ ndị ahịa akwụsịrị: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Enweghị ike ịmepụta njikọ ahụ. Lelee njikọ ịntanetị gị ma nwaa ọzọ.';
+
+  @override
+  String get clientLinkTooMany => 'I ruola ọnụọgụ njikọ ndị ahịa ugbu a. Kwụsị njikọ ochie ma ọ bụ nwaa echi.';
+
+  @override
+  String get businessBenefitClientLink => 'Kekọrịta nrubeisi ndị ọrụ ozugbo na ndị ahịa';
+
+  @override
   String get businessBenefitPdf => 'Mbupụ PDF otu na aha ụlọ ọrụ gị';
 
   @override
@@ -8163,6 +8209,9 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'I nwere ndepụta ndị ọrụ? Ị nwere ike ibubata ya site na spreadsheet, ya na aha na email.';
+
+  @override
+  String get tourBusinessClientBody => 'Ị nwere ike ịkekọrịta njikọ a na-agụ naanị na onye ahịa, ka ọ hụ na akwụkwọ ndị ọrụ gị ka dị irè.';
 
   @override
   String get tourBusinessRolesBody => 'Nye onye ọ bụla ọrụ, dịka Onye ọkwọ ụgbọ, ya na akwụkwọ ọ chọrọ. Vaultara na-egosi ihe na-adịghị.';

@@ -3213,6 +3213,52 @@ class AppLocalizationsZh extends AppLocalizations {
   String get businessBenefitStaffImport => '从表格导入员工名单';
 
   @override
+  String get clientLinkAction => '与客户共享员工状态';
+
+  @override
+  String get clientLinkHint => '只读链接，显示每位员工的证件是否有效。不含号码或照片。';
+
+  @override
+  String get clientLinkTitle => '给客户的链接';
+
+  @override
+  String get clientLinkBody => '客户可以实时看到来自 Vaultara 的员工姓名、证件名称、到期日期和状态。你自己的记录、证件号码、照片和邮箱绝不会显示。';
+
+  @override
+  String get clientLinkOneDay => '1 天';
+
+  @override
+  String get clientLinkOneWeek => '7 天';
+
+  @override
+  String get clientLinkOneMonth => '30 天';
+
+  @override
+  String get clientLinkCreate => '创建并分享链接';
+
+  @override
+  String clientLinkShareText(String url) {
+    return '来自 Vaultara 的员工证件状态：$url';
+  }
+
+  @override
+  String get clientLinkStopAll => '停止所有客户链接';
+
+  @override
+  String clientLinkStopped(int count) {
+    return '已停止的客户链接：$count';
+  }
+
+  @override
+  String get clientLinkError => '无法创建链接。请检查网络后重试。';
+
+  @override
+  String get clientLinkTooMany => '目前客户链接数量已达上限。请停止旧链接或明天再试。';
+
+  @override
+  String get businessBenefitClientLink => '与客户实时共享员工合规情况';
+
+  @override
   String get businessBenefitPdf => '带公司名称的团队 PDF 导出';
 
   @override
@@ -8159,6 +8205,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tourBusinessImportBody => '已有员工名单？可以从表格导入，包含姓名和邮箱。';
 
   @override
+  String get tourBusinessClientBody => '你可以与客户分享只读链接，让他们看到你的员工证件都在有效期内。';
+
+  @override
   String get tourBusinessRolesBody => '为每个人设定职位（例如司机）及所需证件，Vaultara 会显示缺少什么。';
 
   @override
@@ -13052,6 +13101,52 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get businessBenefitStaffImport => '从表格导入员工名单';
+
+  @override
+  String get clientLinkAction => '与客户共享员工状态';
+
+  @override
+  String get clientLinkHint => '只读链接，显示每位员工的证件是否有效。不含号码或照片。';
+
+  @override
+  String get clientLinkTitle => '给客户的链接';
+
+  @override
+  String get clientLinkBody => '客户可以实时看到来自 Vaultara 的员工姓名、证件名称、到期日期和状态。你自己的记录、证件号码、照片和邮箱绝不会显示。';
+
+  @override
+  String get clientLinkOneDay => '1 天';
+
+  @override
+  String get clientLinkOneWeek => '7 天';
+
+  @override
+  String get clientLinkOneMonth => '30 天';
+
+  @override
+  String get clientLinkCreate => '创建并分享链接';
+
+  @override
+  String clientLinkShareText(String url) {
+    return '来自 Vaultara 的员工证件状态：$url';
+  }
+
+  @override
+  String get clientLinkStopAll => '停止所有客户链接';
+
+  @override
+  String clientLinkStopped(int count) {
+    return '已停止的客户链接：$count';
+  }
+
+  @override
+  String get clientLinkError => '无法创建链接。请检查网络后重试。';
+
+  @override
+  String get clientLinkTooMany => '目前客户链接数量已达上限。请停止旧链接或明天再试。';
+
+  @override
+  String get businessBenefitClientLink => '与客户实时共享员工合规情况';
 
   @override
   String get businessBenefitPdf => '带公司名称的团队 PDF 导出';
@@ -18000,6 +18095,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tourBusinessImportBody => '已有员工名单？可以从表格导入，包含姓名和邮箱。';
 
   @override
+  String get tourBusinessClientBody => '你可以与客户分享只读链接，让他们看到你的员工证件都在有效期内。';
+
+  @override
   String get tourBusinessRolesBody => '为每个人设定职位（例如司机）及所需证件，Vaultara 会显示缺少什么。';
 
   @override
@@ -22893,6 +22991,52 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get businessBenefitStaffImport => '從試算表匯入員工名單';
+
+  @override
+  String get clientLinkAction => '與客戶分享員工狀態';
+
+  @override
+  String get clientLinkHint => '唯讀連結，顯示每位員工的證件是否有效。不含號碼或照片。';
+
+  @override
+  String get clientLinkTitle => '給客戶的連結';
+
+  @override
+  String get clientLinkBody => '客戶可以即時看到來自 Vaultara 的員工姓名、證件名稱、到期日期和狀態。你自己的記錄、證件號碼、照片和電子郵件絕不會顯示。';
+
+  @override
+  String get clientLinkOneDay => '1 天';
+
+  @override
+  String get clientLinkOneWeek => '7 天';
+
+  @override
+  String get clientLinkOneMonth => '30 天';
+
+  @override
+  String get clientLinkCreate => '建立並分享連結';
+
+  @override
+  String clientLinkShareText(String url) {
+    return '來自 Vaultara 的員工證件狀態：$url';
+  }
+
+  @override
+  String get clientLinkStopAll => '停止所有客戶連結';
+
+  @override
+  String clientLinkStopped(int count) {
+    return '已停止的客戶連結：$count';
+  }
+
+  @override
+  String get clientLinkError => '無法建立連結。請檢查網路後再試一次。';
+
+  @override
+  String get clientLinkTooMany => '目前客戶連結數量已達上限。請停止舊連結或明天再試。';
+
+  @override
+  String get businessBenefitClientLink => '與客戶即時分享員工合規情況';
 
   @override
   String get businessBenefitPdf => '附上公司名稱的團隊 PDF 匯出';
@@ -27839,6 +27983,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get tourBusinessImportBody => '已有員工名單？可以從試算表匯入，包含姓名和電子郵件。';
+
+  @override
+  String get tourBusinessClientBody => '你可以與客戶分享唯讀連結，讓他們看到你的員工證件都在有效期內。';
 
   @override
   String get tourBusinessRolesBody => '為每個人設定職位（例如司機）及所需文件，Vaultara 會顯示缺少什麼。';

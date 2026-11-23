@@ -3229,6 +3229,52 @@ class AppLocalizationsTr extends AppLocalizations {
   String get businessBenefitStaffImport => 'Personel listeni tablodan içe aktar';
 
   @override
+  String get clientLinkAction => 'Personel durumunu bir müşteriyle paylaş';
+
+  @override
+  String get clientLinkHint => 'Herkesin belgelerinin geçerli olup olmadığını gösteren salt okunur bir bağlantı. Numara ve fotoğraf yok.';
+
+  @override
+  String get clientLinkTitle => 'Müşteri için bağlantı';
+
+  @override
+  String get clientLinkBody => 'Müşteri personel adlarını, belge adlarını, son geçerlilik tarihlerini ve durumu doğrudan Vaultara\'dan görür. Kendi kayıtların, belge numaraları, fotoğraflar ve e-postalar asla gösterilmez.';
+
+  @override
+  String get clientLinkOneDay => '1 gün';
+
+  @override
+  String get clientLinkOneWeek => '7 gün';
+
+  @override
+  String get clientLinkOneMonth => '30 gün';
+
+  @override
+  String get clientLinkCreate => 'Bağlantı oluştur ve paylaş';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Vaultara\'dan personel belge durumu: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Tüm müşteri bağlantılarını durdur';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Durdurulan müşteri bağlantıları: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Bağlantı oluşturulamadı. Bağlantını kontrol edip yeniden dene.';
+
+  @override
+  String get clientLinkTooMany => 'Şimdilik müşteri bağlantısı sayısına ulaştın. Eski bağlantıları durdur ya da yarın yeniden dene.';
+
+  @override
+  String get businessBenefitClientLink => 'Personel uyumluluğunu müşterilerle canlı paylaş';
+
+  @override
   String get businessBenefitPdf => 'Şirket adınızla ekip PDF dışa aktarımı';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Zaten bir personel listen var mı? Adlar ve e-postalarla tablodan içe aktarabilirsin.';
+
+  @override
+  String get tourBusinessClientBody => 'Personelinin belgelerinin geçerli olduğunu görmesi için bir müşteriyle salt okunur bir bağlantı paylaşabilirsin.';
 
   @override
   String get tourBusinessRolesBody => 'Herkese Şoför gibi bir görev ve gereken belgeleri ver. Vaultara neyin eksik olduğunu gösterir.';

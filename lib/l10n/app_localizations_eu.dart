@@ -3229,6 +3229,52 @@ class AppLocalizationsEu extends AppLocalizations {
   String get businessBenefitStaffImport => 'Inportatu langile-zerrenda kalkulu-orri batetik';
 
   @override
+  String get clientLinkAction => 'Partekatu langileen egoera bezero batekin';
+
+  @override
+  String get clientLinkHint => 'Irakurtzeko soilik den esteka, pertsona bakoitzaren dokumentuak egunean dauden erakusten duena. Zenbakirik eta argazkirik gabe.';
+
+  @override
+  String get clientLinkTitle => 'Bezero baterako esteka';
+
+  @override
+  String get clientLinkBody => 'Bezeroak langileen izenak, dokumentuen izenak, iraungitze-datak eta egoera ikusten ditu, zuzenean Vaultaratik. Zure erregistroak, dokumentu-zenbakiak, argazkiak eta helbideak ez dira inoiz erakusten.';
+
+  @override
+  String get clientLinkOneDay => 'Egun 1';
+
+  @override
+  String get clientLinkOneWeek => '7 egun';
+
+  @override
+  String get clientLinkOneMonth => '30 egun';
+
+  @override
+  String get clientLinkCreate => 'Sortu eta partekatu esteka';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Langileen dokumentuen egoera Vaultaratik: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Gelditu bezeroen esteka guztiak';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Geldituta dauden bezero-estekak: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Ezin izan da esteka sortu. Egiaztatu konexioa eta saiatu berriro.';
+
+  @override
+  String get clientLinkTooMany => 'Oraingoz bezero-esteken kopurura iritsi zara. Gelditu esteka zaharrak edo saiatu bihar.';
+
+  @override
+  String get businessBenefitClientLink => 'Partekatu langileen betetzea zuzenean bezeroekin';
+
+  @override
   String get businessBenefitPdf => 'Taldearen PDF esportazioa, zure enpresaren izenarekin';
 
   @override
@@ -8218,6 +8264,9 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Langile-zerrenda baduzu? Kalkulu-orri batetik inporta dezakezu, izen eta helbideekin.';
+
+  @override
+  String get tourBusinessClientBody => 'Irakurtzeko soilik den esteka bat parteka dezakezu bezero batekin, zure langileen dokumentuak egunean daudela ikus dezan.';
 
   @override
   String get tourBusinessRolesBody => 'Eman pertsona bakoitzari rol bat, Gidaria adibidez, behar dituen dokumentuekin. Vaultarak erakusten du zer falta den.';

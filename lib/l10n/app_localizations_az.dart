@@ -3229,6 +3229,52 @@ class AppLocalizationsAz extends AppLocalizations {
   String get businessBenefitStaffImport => 'Əməkdaş siyahınızı cədvəldən idxal edin';
 
   @override
+  String get clientLinkAction => 'İşçi vəziyyətini müştəri ilə paylaş';
+
+  @override
+  String get clientLinkHint => 'Hər kəsin sənədlərinin qüvvədə olub-olmadığını göstərən yalnız oxunan link. Nömrə və şəkil yoxdur.';
+
+  @override
+  String get clientLinkTitle => 'Müştəri üçün link';
+
+  @override
+  String get clientLinkBody => 'Müştəri işçi adlarını, sənəd adlarını, bitmə tarixlərini və vəziyyəti birbaşa Vaultara-dan görür. Öz qeydləriniz, sənəd nömrələri, şəkillər və e-poçtlar heç vaxt göstərilmir.';
+
+  @override
+  String get clientLinkOneDay => '1 gün';
+
+  @override
+  String get clientLinkOneWeek => '7 gün';
+
+  @override
+  String get clientLinkOneMonth => '30 gün';
+
+  @override
+  String get clientLinkCreate => 'Link yarat və paylaş';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Vaultara-dan işçi sənədlərinin vəziyyəti: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Bütün müştəri linklərini dayandır';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Dayandırılan müştəri linkləri: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Link yaradıla bilmədi. Bağlantınızı yoxlayın və yenidən cəhd edin.';
+
+  @override
+  String get clientLinkTooMany => 'Hələlik müştəri linklərinin sayına çatmısınız. Köhnə linkləri dayandırın və ya sabah yenidən cəhd edin.';
+
+  @override
+  String get businessBenefitClientLink => 'İşçi uyğunluğunu canlı olaraq müştərilərlə paylaşın';
+
+  @override
   String get businessBenefitPdf => 'Şirkətinizin adı ilə komanda PDF ixracı';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Əməkdaş siyahınız var? Onu adlar və e-poçtlarla cədvəldən idxal edə bilərsiniz.';
+
+  @override
+  String get tourBusinessClientBody => 'İşçilərinizin sənədlərinin qüvvədə olduğunu görməsi üçün müştəri ilə yalnız oxunan link paylaşa bilərsiniz.';
 
   @override
   String get tourBusinessRolesBody => 'Hər kəsə Sürücü kimi bir vəzifə və ona lazım olan sənədləri verin. Vaultara nəyin çatışmadığını göstərir.';

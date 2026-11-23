@@ -3213,6 +3213,52 @@ class AppLocalizationsKo extends AppLocalizations {
   String get businessBenefitStaffImport => '스프레드시트에서 직원 목록 가져오기';
 
   @override
+  String get clientLinkAction => '직원 현황을 고객과 공유';
+
+  @override
+  String get clientLinkHint => '각 직원의 서류가 유효한지 보여 주는 읽기 전용 링크예요. 번호나 사진은 없어요.';
+
+  @override
+  String get clientLinkTitle => '고객용 링크';
+
+  @override
+  String get clientLinkBody => '고객은 직원 이름, 서류 이름, 만료일, 상태를 Vaultara에서 실시간으로 봐요. 내 기록, 서류 번호, 사진, 이메일은 절대 보이지 않아요.';
+
+  @override
+  String get clientLinkOneDay => '1일';
+
+  @override
+  String get clientLinkOneWeek => '7일';
+
+  @override
+  String get clientLinkOneMonth => '30일';
+
+  @override
+  String get clientLinkCreate => '링크 만들어 공유';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Vaultara의 직원 서류 현황: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => '고객 링크 모두 중지';
+
+  @override
+  String clientLinkStopped(int count) {
+    return '중지된 고객 링크: $count';
+  }
+
+  @override
+  String get clientLinkError => '링크를 만들지 못했어요. 연결을 확인하고 다시 시도해 주세요.';
+
+  @override
+  String get clientLinkTooMany => '지금은 고객 링크 수가 한도에 도달했어요. 오래된 링크를 중지하거나 내일 다시 시도해 주세요.';
+
+  @override
+  String get businessBenefitClientLink => '직원 규정 준수 현황을 고객과 실시간으로 공유';
+
+  @override
   String get businessBenefitPdf => '회사 이름이 들어간 팀 PDF 내보내기';
 
   @override
@@ -8157,6 +8203,9 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => '직원 목록이 있나요? 이름과 이메일이 담긴 스프레드시트에서 가져올 수 있어요.';
+
+  @override
+  String get tourBusinessClientBody => '읽기 전용 링크를 고객과 공유해 직원 서류가 유효하다는 것을 보여 줄 수 있어요.';
 
   @override
   String get tourBusinessRolesBody => '각자에게 운전기사 같은 직무와 필요한 서류를 정하세요. 빠진 것을 Vaultara가 보여 줘요.';

@@ -3250,6 +3250,52 @@ class AppLocalizationsEn extends AppLocalizations {
   String get businessBenefitStaffImport => 'Import your staff list from a spreadsheet';
 
   @override
+  String get clientLinkAction => 'Share staff compliance with a client';
+
+  @override
+  String get clientLinkHint => 'A read-only link showing whether each person\'s documents are up to date. No numbers or photos.';
+
+  @override
+  String get clientLinkTitle => 'Link for a client';
+
+  @override
+  String get clientLinkBody => 'The client sees staff names, document names, expiry dates and a status, live from Vaultara. Your own records, document numbers, photos and emails are never shown.';
+
+  @override
+  String get clientLinkOneDay => '1 day';
+
+  @override
+  String get clientLinkOneWeek => '7 days';
+
+  @override
+  String get clientLinkOneMonth => '30 days';
+
+  @override
+  String get clientLinkCreate => 'Create and share link';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Staff document status from Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Stop all client links';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Client links stopped: $count';
+  }
+
+  @override
+  String get clientLinkError => 'The link could not be made. Check your connection and try again.';
+
+  @override
+  String get clientLinkTooMany => 'You have reached the number of client links for now. Stop old links or try again tomorrow.';
+
+  @override
+  String get businessBenefitClientLink => 'Share live staff compliance with clients';
+
+  @override
   String get businessBenefitPdf => 'Team PDF export with your company name';
 
   @override
@@ -8239,6 +8285,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Have a staff list already? You can import it from a spreadsheet, with names and emails.';
+
+  @override
+  String get tourBusinessClientBody => 'You can share a read-only link with a client, so they can see your staff\'s documents are up to date.';
 
   @override
   String get tourBusinessRolesBody => 'Give each person a role, like Driver, with the documents it needs. Vaultara shows what is missing.';

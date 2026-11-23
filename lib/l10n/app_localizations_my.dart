@@ -3211,6 +3211,52 @@ class AppLocalizationsMy extends AppLocalizations {
   String get businessBenefitStaffImport => 'သင့်ဝန်ထမ်းစာရင်းကို စာရင်းဇယားမှ တင်သွင်းရန်';
 
   @override
+  String get clientLinkAction => 'ဝန်ထမ်းအခြေအနေကို ဖောက်သည်နှင့် မျှဝေရန်';
+
+  @override
+  String get clientLinkHint => 'လူတိုင်း၏ စာရွက်စာတမ်းများ သက်တမ်းရှိမရှိ ပြသော ဖတ်ရန်သာ လင့်ခ်။ နံပါတ်နှင့် ဓာတ်ပုံ မပါပါ။';
+
+  @override
+  String get clientLinkTitle => 'ဖောက်သည်အတွက် လင့်ခ်';
+
+  @override
+  String get clientLinkBody => 'ဖောက်သည်သည် ဝန်ထမ်းအမည်၊ စာရွက်စာတမ်းအမည်၊ သက်တမ်းကုန်ရက်နှင့် အခြေအနေကို Vaultara မှ တိုက်ရိုက် မြင်ရသည်။ သင့်ကိုယ်ပိုင်မှတ်တမ်း၊ စာရွက်စာတမ်းနံပါတ်၊ ဓာတ်ပုံနှင့် အီးမေးလ်များကို ဘယ်တော့မှ မပြပါ။';
+
+  @override
+  String get clientLinkOneDay => '1 ရက်';
+
+  @override
+  String get clientLinkOneWeek => '7 ရက်';
+
+  @override
+  String get clientLinkOneMonth => '30 ရက်';
+
+  @override
+  String get clientLinkCreate => 'လင့်ခ် ဖန်တီးပြီး မျှဝေရန်';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Vaultara မှ ဝန်ထမ်းစာရွက်စာတမ်း အခြေအနေ- $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'ဖောက်သည်လင့်ခ် အားလုံး ရပ်ရန်';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'ရပ်ထားသော ဖောက်သည်လင့်ခ်- $count';
+  }
+
+  @override
+  String get clientLinkError => 'လင့်ခ် မဖန်တီးနိုင်ပါ။ ချိတ်ဆက်မှုကို စစ်ပြီး ထပ်ကြိုးစားပါ။';
+
+  @override
+  String get clientLinkTooMany => 'ယခုအတွက် ဖောက်သည်လင့်ခ် အရေအတွက် ပြည့်သွားပါပြီ။ လင့်ခ်ဟောင်းများ ရပ်ပါ သို့မဟုတ် မနက်ဖြန် ထပ်ကြိုးစားပါ။';
+
+  @override
+  String get businessBenefitClientLink => 'ဝန်ထမ်း လိုက်နာမှုကို ဖောက်သည်များနှင့် တိုက်ရိုက် မျှဝေရန်';
+
+  @override
   String get businessBenefitPdf => 'သင့်ကုမ္ပဏီအမည်ပါသော အဖွဲ့လိုက် PDF ထုတ်ယူမှု';
 
   @override
@@ -8155,6 +8201,9 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'ဝန်ထမ်းစာရင်း ရှိပြီးလား။ အမည်နှင့် အီးမေးလ်များပါသော စာရင်းဇယားမှ တင်သွင်းနိုင်သည်။';
+
+  @override
+  String get tourBusinessClientBody => 'သင့်ဝန်ထမ်းများ၏ စာရွက်စာတမ်းများ သက်တမ်းရှိကြောင်း မြင်စေရန် ဖောက်သည်နှင့် ဖတ်ရန်သာ လင့်ခ် မျှဝေနိုင်သည်။';
 
   @override
   String get tourBusinessRolesBody => 'လူတိုင်းကို ယာဉ်မောင်းကဲ့သို့ တာဝန်တစ်ခုနှင့် ၎င်းလိုအပ်သော စာရွက်စာတမ်းများ ပေးပါ။ မရှိသည့်အရာကို Vaultara ပြသသည်။';

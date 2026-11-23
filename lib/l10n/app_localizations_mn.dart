@@ -3228,6 +3228,52 @@ class AppLocalizationsMn extends AppLocalizations {
   String get businessBenefitStaffImport => 'Ажилтны жагсаалтаа хүснэгтээс импортлох';
 
   @override
+  String get clientLinkAction => 'Ажилтны төлөвийг үйлчлүүлэгчтэй хуваалцах';
+
+  @override
+  String get clientLinkHint => 'Хүн бүрийн баримт хүчинтэй эсэхийг харуулах зөвхөн унших холбоос. Дугаар, зураг байхгүй.';
+
+  @override
+  String get clientLinkTitle => 'Үйлчлүүлэгчид зориулсан холбоос';
+
+  @override
+  String get clientLinkBody => 'Үйлчлүүлэгч ажилтнуудын нэр, баримтын нэр, дуусах огноо, төлөвийг Vaultara-аас шууд харна. Таны өөрийн бүртгэл, баримтын дугаар, зураг, имэйл хэзээ ч харагдахгүй.';
+
+  @override
+  String get clientLinkOneDay => '1 өдөр';
+
+  @override
+  String get clientLinkOneWeek => '7 өдөр';
+
+  @override
+  String get clientLinkOneMonth => '30 өдөр';
+
+  @override
+  String get clientLinkCreate => 'Холбоос үүсгэж хуваалцах';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Vaultara-аас ажилтны баримтын төлөв: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Бүх үйлчлүүлэгчийн холбоосыг зогсоох';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Зогсоосон үйлчлүүлэгчийн холбоос: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Холбоос үүсгэж чадсангүй. Холболтоо шалгаад дахин оролдоно уу.';
+
+  @override
+  String get clientLinkTooMany => 'Одоогоор үйлчлүүлэгчийн холбоосын тоонд хүрлээ. Хуучин холбоосуудыг зогсоох эсвэл маргааш оролдоно уу.';
+
+  @override
+  String get businessBenefitClientLink => 'Ажилтны нийцлийг үйлчлүүлэгчидтэй шууд хуваалцах';
+
+  @override
   String get businessBenefitPdf => 'Таны компанийн нэртэй багийн PDF экспорт';
 
   @override
@@ -8204,6 +8250,9 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Ажилтны жагсаалт байгаа юу? Нэр, имэйлтэй нь хүснэгтээс импортлож болно.';
+
+  @override
+  String get tourBusinessClientBody => 'Ажилтнуудын тань баримт хүчинтэй гэдгийг харуулахын тулд үйлчлүүлэгчтэй зөвхөн унших холбоос хуваалцаж болно.';
 
   @override
   String get tourBusinessRolesBody => 'Хүн бүрт Жолооч гэх мэт албан тушаалыг шаардлагатай баримттай нь өгнө үү. Юу дутуу байгааг Vaultara харуулна.';

@@ -3229,6 +3229,52 @@ class AppLocalizationsPa extends AppLocalizations {
   String get businessBenefitStaffImport => 'ਆਪਣੀ ਸਟਾਫ਼ ਸੂਚੀ ਸਪ੍ਰੈਡਸ਼ੀਟ ਤੋਂ ਇੰਪੋਰਟ ਕਰੋ';
 
   @override
+  String get clientLinkAction => 'ਗਾਹਕ ਨਾਲ ਸਟਾਫ਼ ਦੀ ਸਥਿਤੀ ਸਾਂਝੀ ਕਰੋ';
+
+  @override
+  String get clientLinkHint => 'ਸਿਰਫ਼ ਪੜ੍ਹਨ ਵਾਲਾ ਲਿੰਕ ਜੋ ਦਿਖਾਉਂਦਾ ਹੈ ਕਿ ਹਰ ਵਿਅਕਤੀ ਦੇ ਦਸਤਾਵੇਜ਼ ਵੈਧ ਹਨ ਜਾਂ ਨਹੀਂ। ਕੋਈ ਨੰਬਰ ਜਾਂ ਫ਼ੋਟੋ ਨਹੀਂ।';
+
+  @override
+  String get clientLinkTitle => 'ਗਾਹਕ ਲਈ ਲਿੰਕ';
+
+  @override
+  String get clientLinkBody => 'ਗਾਹਕ Vaultara ਤੋਂ ਸਿੱਧਾ ਸਟਾਫ਼ ਦੇ ਨਾਮ, ਦਸਤਾਵੇਜ਼ਾਂ ਦੇ ਨਾਮ, ਮਿਆਦ ਖ਼ਤਮ ਹੋਣ ਦੀਆਂ ਤਾਰੀਖ਼ਾਂ ਅਤੇ ਸਥਿਤੀ ਦੇਖਦਾ ਹੈ। ਤੁਹਾਡੇ ਆਪਣੇ ਰਿਕਾਰਡ, ਦਸਤਾਵੇਜ਼ ਨੰਬਰ, ਫ਼ੋਟੋ ਅਤੇ ਈਮੇਲ ਕਦੇ ਨਹੀਂ ਦਿਖਾਏ ਜਾਂਦੇ।';
+
+  @override
+  String get clientLinkOneDay => '1 ਦਿਨ';
+
+  @override
+  String get clientLinkOneWeek => '7 ਦਿਨ';
+
+  @override
+  String get clientLinkOneMonth => '30 ਦਿਨ';
+
+  @override
+  String get clientLinkCreate => 'ਲਿੰਕ ਬਣਾਓ ਅਤੇ ਸਾਂਝਾ ਕਰੋ';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Vaultara ਤੋਂ ਸਟਾਫ਼ ਦਸਤਾਵੇਜ਼ਾਂ ਦੀ ਸਥਿਤੀ: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'ਸਾਰੇ ਗਾਹਕ ਲਿੰਕ ਬੰਦ ਕਰੋ';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'ਬੰਦ ਕੀਤੇ ਗਾਹਕ ਲਿੰਕ: $count';
+  }
+
+  @override
+  String get clientLinkError => 'ਲਿੰਕ ਨਹੀਂ ਬਣ ਸਕਿਆ। ਕਨੈਕਸ਼ਨ ਜਾਂਚੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
+
+  @override
+  String get clientLinkTooMany => 'ਹਾਲੇ ਤੁਸੀਂ ਗਾਹਕ ਲਿੰਕਾਂ ਦੀ ਗਿਣਤੀ ਤੱਕ ਪਹੁੰਚ ਗਏ ਹੋ। ਪੁਰਾਣੇ ਲਿੰਕ ਬੰਦ ਕਰੋ ਜਾਂ ਕੱਲ੍ਹ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
+
+  @override
+  String get businessBenefitClientLink => 'ਗਾਹਕਾਂ ਨਾਲ ਸਟਾਫ਼ ਦੀ ਪਾਲਣਾ ਲਾਈਵ ਸਾਂਝੀ ਕਰੋ';
+
+  @override
   String get businessBenefitPdf => 'ਤੁਹਾਡੀ ਕੰਪਨੀ ਦੇ ਨਾਮ ਨਾਲ ਟੀਮ PDF ਐਕਸਪੋਰਟ';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'ਸਟਾਫ਼ ਦੀ ਸੂਚੀ ਪਹਿਲਾਂ ਹੀ ਹੈ? ਨਾਮਾਂ ਅਤੇ ਈਮੇਲਾਂ ਸਮੇਤ ਸਪ੍ਰੈਡਸ਼ੀਟ ਤੋਂ ਇੰਪੋਰਟ ਕਰ ਸਕਦੇ ਹੋ।';
+
+  @override
+  String get tourBusinessClientBody => 'ਤੁਹਾਡੇ ਸਟਾਫ਼ ਦੇ ਦਸਤਾਵੇਜ਼ ਵੈਧ ਹਨ ਇਹ ਦਿਖਾਉਣ ਲਈ ਤੁਸੀਂ ਗਾਹਕ ਨਾਲ ਸਿਰਫ਼ ਪੜ੍ਹਨ ਵਾਲਾ ਲਿੰਕ ਸਾਂਝਾ ਕਰ ਸਕਦੇ ਹੋ।';
 
   @override
   String get tourBusinessRolesBody => 'ਹਰ ਵਿਅਕਤੀ ਨੂੰ ਡਰਾਈਵਰ ਵਰਗੀ ਭੂਮਿਕਾ ਉਸਦੇ ਲੋੜੀਂਦੇ ਦਸਤਾਵੇਜ਼ਾਂ ਨਾਲ ਦਿਓ। ਕੀ ਘੱਟ ਹੈ, Vaultara ਦਿਖਾਉਂਦਾ ਹੈ।';

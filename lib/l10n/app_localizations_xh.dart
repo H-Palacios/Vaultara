@@ -3229,6 +3229,52 @@ class AppLocalizationsXh extends AppLocalizations {
   String get businessBenefitStaffImport => 'Ngenisa uluhlu lwabasebenzi bakho kwispredishithi';
 
   @override
+  String get clientLinkAction => 'Yabelana ngemeko yabasebenzi nomthengi';
+
+  @override
+  String get clientLinkHint => 'Ikhonkco lokufunda kuphela elibonisa ukuba amaxwebhu omntu ngamnye asasebenza na. Akukho manani okanye iifoto.';
+
+  @override
+  String get clientLinkTitle => 'Ikhonkco lomthengi';
+
+  @override
+  String get clientLinkBody => 'Umthengi ubona amagama abasebenzi, amagama amaxwebhu, imihla yokuphelelwa nemeko, ngqo kwi-Vaultara. Iirekhodi zakho, amanani amaxwebhu, iifoto nee-imeyile azibonakali.';
+
+  @override
+  String get clientLinkOneDay => 'Usuku olu-1';
+
+  @override
+  String get clientLinkOneWeek => 'Iintsuku ezi-7';
+
+  @override
+  String get clientLinkOneMonth => 'Iintsuku ezingama-30';
+
+  @override
+  String get clientLinkCreate => 'Yenza ikhonkco uze wabelane ngalo';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Imeko yamaxwebhu abasebenzi kwi-Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Misa onke amakhonkco abathengi';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Amakhonkco abathengi amisiweyo: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Ikhonkco alikwazanga ukwenziwa. Jonga uqhagamshelo lwakho uze uzame kwakhona.';
+
+  @override
+  String get clientLinkTooMany => 'Okwangoku ufikelele kwinani lamakhonkco abathengi. Misa amakhonkco amadala okanye uzame ngomso.';
+
+  @override
+  String get businessBenefitClientLink => 'Yabelana ngokuthobela kwabasebenzi ngqo nabathengi';
+
+  @override
   String get businessBenefitPdf => 'Ukukhutshelwa kwe-PDF yeqela kunye negama lenkampani yakho';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Sele unoluhlu lwabasebenzi? Ungalungenisa kwispredishithi, namagama nee-imeyile.';
+
+  @override
+  String get tourBusinessClientBody => 'Ungabelana ngekhonkco lokufunda kuphela nomthengi, ukuze abone ukuba amaxwebhu abasebenzi bakho asasebenza.';
 
   @override
   String get tourBusinessRolesBody => 'Nika umntu ngamnye indima, njengoMqhubi, namaxwebhu ayifunayo. I-Vaultara ibonisa okungekhoyo.';

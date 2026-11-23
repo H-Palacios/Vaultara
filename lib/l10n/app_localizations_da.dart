@@ -3229,6 +3229,52 @@ class AppLocalizationsDa extends AppLocalizations {
   String get businessBenefitStaffImport => 'Importér din medarbejderliste fra et regneark';
 
   @override
+  String get clientLinkAction => 'Del medarbejderstatus med en kunde';
+
+  @override
+  String get clientLinkHint => 'Et skrivebeskyttet link, der viser, om hver persons dokumenter er gyldige. Ingen numre eller billeder.';
+
+  @override
+  String get clientLinkTitle => 'Link til en kunde';
+
+  @override
+  String get clientLinkBody => 'Kunden ser medarbejdernes navne, dokumentnavne, udløbsdatoer og en status, live fra Vaultara. Dine egne poster, dokumentnumre, billeder og e-mails vises aldrig.';
+
+  @override
+  String get clientLinkOneDay => '1 dag';
+
+  @override
+  String get clientLinkOneWeek => '7 dage';
+
+  @override
+  String get clientLinkOneMonth => '30 dage';
+
+  @override
+  String get clientLinkCreate => 'Opret og del link';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Status for medarbejderdokumenter fra Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Stop alle kundelinks';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Stoppede kundelinks: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Linket kunne ikke oprettes. Tjek din forbindelse, og prøv igen.';
+
+  @override
+  String get clientLinkTooMany => 'Du har nået antallet af kundelinks for nu. Stop gamle links, eller prøv igen i morgen.';
+
+  @override
+  String get businessBenefitClientLink => 'Del medarbejdernes compliance live med kunder';
+
+  @override
   String get businessBenefitPdf => 'PDF-eksport til teamet med dit firmanavn';
 
   @override
@@ -8218,6 +8264,9 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Har du allerede en medarbejderliste? Du kan importere den fra et regneark med navne og e-mails.';
+
+  @override
+  String get tourBusinessClientBody => 'Du kan dele et skrivebeskyttet link med en kunde, så de kan se, at dine medarbejderes dokumenter er gyldige.';
 
   @override
   String get tourBusinessRolesBody => 'Giv hver person en rolle, fx Chauffør, med de dokumenter den kræver. Vaultara viser, hvad der mangler.';

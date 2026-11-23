@@ -3229,6 +3229,52 @@ class AppLocalizationsHa extends AppLocalizations {
   String get businessBenefitStaffImport => 'Shigo da jerin ma\'aikatanka daga takardar lissafi';
 
   @override
+  String get clientLinkAction => 'Raba yanayin ma\'aikata da abokin ciniki';
+
+  @override
+  String get clientLinkHint => 'Hanyar karatu kaɗai da ke nuna ko takardun kowane mutum suna kan lokaci. Babu lambobi ko hotuna.';
+
+  @override
+  String get clientLinkTitle => 'Hanya don abokin ciniki';
+
+  @override
+  String get clientLinkBody => 'Abokin ciniki yana ganin sunayen ma\'aikata, sunayen takardu, ranakun ƙarewa da yanayi, kai tsaye daga Vaultara. Ba a taɓa nuna bayananka, lambobin takardu, hotuna ko imel ba.';
+
+  @override
+  String get clientLinkOneDay => 'Kwana 1';
+
+  @override
+  String get clientLinkOneWeek => 'Kwanaki 7';
+
+  @override
+  String get clientLinkOneMonth => 'Kwanaki 30';
+
+  @override
+  String get clientLinkCreate => 'Ƙirƙira ka raba hanya';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Yanayin takardun ma\'aikata daga Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Dakatar da duk hanyoyin abokan ciniki';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Hanyoyin abokan ciniki da aka dakatar: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Ba a iya ƙirƙirar hanyar ba. Duba haɗinka ka sake gwadawa.';
+
+  @override
+  String get clientLinkTooMany => 'Ka kai adadin hanyoyin abokan ciniki a yanzu. Dakatar da tsofaffin hanyoyi ko ka gwada gobe.';
+
+  @override
+  String get businessBenefitClientLink => 'Raba bin ka\'ida na ma\'aikata kai tsaye da abokan ciniki';
+
+  @override
   String get businessBenefitPdf => 'Fitar da PDF na ƙungiya mai sunan kamfaninka';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Kana da jerin ma\'aikata? Kana iya shigo da shi daga takardar lissafi, da sunaye da imel.';
+
+  @override
+  String get tourBusinessClientBody => 'Kana iya raba hanyar karatu kaɗai da abokin ciniki, don ya ga takardun ma\'aikatanka suna kan lokaci.';
 
   @override
   String get tourBusinessRolesBody => 'Ba kowane mutum matsayi, kamar Direba, tare da takardun da yake buƙata. Vaultara yana nuna abin da ya rage.';

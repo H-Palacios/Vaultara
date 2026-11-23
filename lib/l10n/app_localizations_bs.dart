@@ -3257,6 +3257,52 @@ class AppLocalizationsBs extends AppLocalizations {
   String get businessBenefitStaffImport => 'Uvezite listu osoblja iz tabele';
 
   @override
+  String get clientLinkAction => 'Podijeli stanje osoblja s klijentom';
+
+  @override
+  String get clientLinkHint => 'Link samo za čitanje koji pokazuje jesu li dokumenti svake osobe ažurni. Bez brojeva i fotografija.';
+
+  @override
+  String get clientLinkTitle => 'Link za klijenta';
+
+  @override
+  String get clientLinkBody => 'Klijent vidi imena osoblja, nazive dokumenata, datume isteka i status, uživo iz Vaultare. Vaši zapisi, brojevi dokumenata, fotografije i e-adrese nikad se ne prikazuju.';
+
+  @override
+  String get clientLinkOneDay => '1 dan';
+
+  @override
+  String get clientLinkOneWeek => '7 dana';
+
+  @override
+  String get clientLinkOneMonth => '30 dana';
+
+  @override
+  String get clientLinkCreate => 'Kreiraj i podijeli link';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Stanje dokumenata osoblja iz Vaultare: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Zaustavi sve linkove za klijente';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Zaustavljeni linkovi za klijente: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Link nije mogao biti kreiran. Provjerite vezu i pokušajte ponovo.';
+
+  @override
+  String get clientLinkTooMany => 'Za sada ste dostigli broj linkova za klijente. Zaustavite stare linkove ili pokušajte sutra.';
+
+  @override
+  String get businessBenefitClientLink => 'Dijelite usklađenost osoblja uživo s klijentima';
+
+  @override
   String get businessBenefitPdf => 'PDF izvoz za tim s nazivom vaše firme';
 
   @override
@@ -8283,6 +8329,9 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Imate listu osoblja? Možete je uvesti iz tabele, s imenima i e-adresama.';
+
+  @override
+  String get tourBusinessClientBody => 'Možete podijeliti link samo za čitanje s klijentom da vidi da su dokumenti vašeg osoblja ažurni.';
 
   @override
   String get tourBusinessRolesBody => 'Dajte svakoj osobi ulogu, npr. Vozač, s dokumentima koji su joj potrebni. Vaultara pokazuje šta nedostaje.';

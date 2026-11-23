@@ -3229,6 +3229,52 @@ class AppLocalizationsBg extends AppLocalizations {
   String get businessBenefitStaffImport => 'Внасяйте списъка със служители от таблица';
 
   @override
+  String get clientLinkAction => 'Споделяне на статуса на служителите с клиент';
+
+  @override
+  String get clientLinkHint => 'Връзка само за четене, която показва дали документите на всеки човек са актуални. Без номера и снимки.';
+
+  @override
+  String get clientLinkTitle => 'Връзка за клиент';
+
+  @override
+  String get clientLinkBody => 'Клиентът вижда имената на служителите, имената на документите, датите на изтичане и статус, на живо от Vaultara. Вашите записи, номерата на документи, снимките и имейлите никога не се показват.';
+
+  @override
+  String get clientLinkOneDay => '1 ден';
+
+  @override
+  String get clientLinkOneWeek => '7 дни';
+
+  @override
+  String get clientLinkOneMonth => '30 дни';
+
+  @override
+  String get clientLinkCreate => 'Създаване и споделяне на връзка';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Статус на документите на служителите от Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Спиране на всички клиентски връзки';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Спрени клиентски връзки: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Връзката не можа да бъде създадена. Проверете връзката си и опитайте отново.';
+
+  @override
+  String get clientLinkTooMany => 'Достигнахте броя клиентски връзки засега. Спрете стари връзки или опитайте утре.';
+
+  @override
+  String get businessBenefitClientLink => 'Споделяйте актуалното съответствие на служителите с клиенти';
+
+  @override
   String get businessBenefitPdf => 'PDF експорт за екипа с името на вашата фирма';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Имате списък със служители? Можете да го внесете от таблица с имена и имейли.';
+
+  @override
+  String get tourBusinessClientBody => 'Можете да споделите връзка само за четене с клиент, за да види, че документите на служителите ви са актуални.';
 
   @override
   String get tourBusinessRolesBody => 'Дайте на всеки роля, например Шофьор, с документите, които са ѝ нужни. Vaultara показва какво липсва.';

@@ -3229,6 +3229,52 @@ class AppLocalizationsDe extends AppLocalizations {
   String get businessBenefitStaffImport => 'Mitarbeiterliste aus einer Tabelle importieren';
 
   @override
+  String get clientLinkAction => 'Mitarbeiterstatus mit einem Kunden teilen';
+
+  @override
+  String get clientLinkHint => 'Ein schreibgeschützter Link, der zeigt, ob die Dokumente jeder Person gültig sind. Keine Nummern oder Fotos.';
+
+  @override
+  String get clientLinkTitle => 'Link für einen Kunden';
+
+  @override
+  String get clientLinkBody => 'Der Kunde sieht Mitarbeiternamen, Dokumentnamen, Ablaufdaten und einen Status, live aus Vaultara. Deine eigenen Einträge, Dokumentnummern, Fotos und E-Mails werden nie gezeigt.';
+
+  @override
+  String get clientLinkOneDay => '1 Tag';
+
+  @override
+  String get clientLinkOneWeek => '7 Tage';
+
+  @override
+  String get clientLinkOneMonth => '30 Tage';
+
+  @override
+  String get clientLinkCreate => 'Link erstellen und teilen';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Status der Mitarbeiterdokumente aus Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Alle Kundenlinks stoppen';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Gestoppte Kundenlinks: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Der Link konnte nicht erstellt werden. Prüfe deine Verbindung und versuche es erneut.';
+
+  @override
+  String get clientLinkTooMany => 'Du hast die Anzahl der Kundenlinks für den Moment erreicht. Stoppe alte Links oder versuche es morgen erneut.';
+
+  @override
+  String get businessBenefitClientLink => 'Mitarbeiter-Compliance live mit Kunden teilen';
+
+  @override
   String get businessBenefitPdf => 'Team-PDF-Export mit deinem Firmennamen';
 
   @override
@@ -8218,6 +8264,9 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Schon eine Mitarbeiterliste? Du kannst sie aus einer Tabelle importieren, mit Namen und E-Mails.';
+
+  @override
+  String get tourBusinessClientBody => 'Du kannst einen schreibgeschützten Link mit einem Kunden teilen, damit er sieht, dass die Dokumente deiner Mitarbeiter gültig sind.';
 
   @override
   String get tourBusinessRolesBody => 'Gib jeder Person eine Rolle, etwa Fahrer, mit den Dokumenten, die sie braucht. Vaultara zeigt, was fehlt.';

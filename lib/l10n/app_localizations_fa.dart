@@ -3229,6 +3229,52 @@ class AppLocalizationsFa extends AppLocalizations {
   String get businessBenefitStaffImport => 'فهرست کارکنان را از صفحه‌گسترده وارد کنید';
 
   @override
+  String get clientLinkAction => 'اشتراک وضعیت کارکنان با مشتری';
+
+  @override
+  String get clientLinkHint => 'پیوندی فقط‌خواندنی که نشان می‌دهد مدارک هر نفر معتبر است یا نه. بدون شماره و عکس.';
+
+  @override
+  String get clientLinkTitle => 'پیوند برای مشتری';
+
+  @override
+  String get clientLinkBody => 'مشتری نام کارکنان، نام مدارک، تاریخ انقضا و وضعیت را مستقیم از Vaultara می‌بیند. سوابق خودتان، شماره مدارک، عکس‌ها و ایمیل‌ها هرگز نشان داده نمی‌شوند.';
+
+  @override
+  String get clientLinkOneDay => '۱ روز';
+
+  @override
+  String get clientLinkOneWeek => '۷ روز';
+
+  @override
+  String get clientLinkOneMonth => '۳۰ روز';
+
+  @override
+  String get clientLinkCreate => 'ساخت و اشتراک پیوند';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'وضعیت مدارک کارکنان از Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'توقف همه پیوندهای مشتری';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'پیوندهای مشتری متوقف‌شده: $count';
+  }
+
+  @override
+  String get clientLinkError => 'پیوند ساخته نشد. اتصال را بررسی کنید و دوباره امتحان کنید.';
+
+  @override
+  String get clientLinkTooMany => 'فعلاً به سقف پیوندهای مشتری رسیده‌اید. پیوندهای قدیمی را متوقف کنید یا فردا امتحان کنید.';
+
+  @override
+  String get businessBenefitClientLink => 'اشتراک زنده وضعیت انطباق کارکنان با مشتریان';
+
+  @override
   String get businessBenefitPdf => 'خروجی PDF تیمی با نام شرکت شما';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'فهرست کارکنان دارید؟ می‌توانید آن را با نام و ایمیل از یک صفحه‌گسترده وارد کنید.';
+
+  @override
+  String get tourBusinessClientBody => 'می‌توانید پیوندی فقط‌خواندنی با مشتری به اشتراک بگذارید تا ببیند مدارک کارکنان شما معتبر است.';
 
   @override
   String get tourBusinessRolesBody => 'به هر نفر نقشی مثل راننده بدهید، همراه با مدارکی که لازم دارد. Vaultara نشان می‌دهد چه چیزی کم است.';

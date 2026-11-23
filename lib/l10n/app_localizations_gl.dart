@@ -3229,6 +3229,52 @@ class AppLocalizationsGl extends AppLocalizations {
   String get businessBenefitStaffImport => 'Importa a túa lista de persoal desde unha folla de cálculo';
 
   @override
+  String get clientLinkAction => 'Compartir o estado do persoal cun cliente';
+
+  @override
+  String get clientLinkHint => 'Unha ligazón só de lectura que mostra se os documentos de cada persoa están ao día. Sen números nin fotos.';
+
+  @override
+  String get clientLinkTitle => 'Ligazón para un cliente';
+
+  @override
+  String get clientLinkBody => 'O cliente ve os nomes do persoal, os nomes dos documentos, as datas de caducidade e un estado, en directo desde Vaultara. Os teus rexistros, números de documento, fotos e correos nunca se mostran.';
+
+  @override
+  String get clientLinkOneDay => '1 día';
+
+  @override
+  String get clientLinkOneWeek => '7 días';
+
+  @override
+  String get clientLinkOneMonth => '30 días';
+
+  @override
+  String get clientLinkCreate => 'Crear e compartir ligazón';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Estado dos documentos do persoal desde Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Deter todas as ligazóns de clientes';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Ligazóns de clientes detidas: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Non se puido crear a ligazón. Comproba a conexión e téntao de novo.';
+
+  @override
+  String get clientLinkTooMany => 'Chegaches ao número de ligazóns de clientes polo de agora. Detén ligazóns antigas ou téntao mañá.';
+
+  @override
+  String get businessBenefitClientLink => 'Comparte o cumprimento do persoal en directo cos clientes';
+
+  @override
   String get businessBenefitPdf => 'Exportación de PDF do equipo co nome da túa empresa';
 
   @override
@@ -8218,6 +8264,9 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Xa tes unha lista de persoal? Podes importala desde unha folla de cálculo, con nomes e correos.';
+
+  @override
+  String get tourBusinessClientBody => 'Podes compartir unha ligazón só de lectura cun cliente para que vexa que os documentos do teu persoal están ao día.';
 
   @override
   String get tourBusinessRolesBody => 'Dálle a cada persoa un posto, como Condutor, cos documentos que precisa. Vaultara mostra o que falta.';

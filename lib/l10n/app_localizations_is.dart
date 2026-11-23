@@ -3228,6 +3228,52 @@ class AppLocalizationsIs extends AppLocalizations {
   String get businessBenefitStaffImport => 'Flyttu starfsmannalistann inn úr töflureikni';
 
   @override
+  String get clientLinkAction => 'Deila stöðu starfsfólks með viðskiptavini';
+
+  @override
+  String get clientLinkHint => 'Skrifvarinn tengill sem sýnir hvort skjöl hvers og eins eru í gildi. Engin númer eða myndir.';
+
+  @override
+  String get clientLinkTitle => 'Tengill fyrir viðskiptavin';
+
+  @override
+  String get clientLinkBody => 'Viðskiptavinurinn sér nöfn starfsfólks, heiti skjala, gildistíma og stöðu, beint úr Vaultara. Þínar eigin færslur, skjalanúmer, myndir og netföng eru aldrei sýnd.';
+
+  @override
+  String get clientLinkOneDay => '1 dagur';
+
+  @override
+  String get clientLinkOneWeek => '7 dagar';
+
+  @override
+  String get clientLinkOneMonth => '30 dagar';
+
+  @override
+  String get clientLinkCreate => 'Búa til og deila tengli';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Staða skjala starfsfólks úr Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Stöðva alla tengla viðskiptavina';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Stöðvaðir tenglar viðskiptavina: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Ekki tókst að búa til tengilinn. Athugaðu tenginguna og reyndu aftur.';
+
+  @override
+  String get clientLinkTooMany => 'Þú hefur náð fjölda tengla viðskiptavina í bili. Stöðvaðu gamla tengla eða reyndu aftur á morgun.';
+
+  @override
+  String get businessBenefitClientLink => 'Deildu reglufylgni starfsfólks beint með viðskiptavinum';
+
+  @override
   String get businessBenefitPdf => 'PDF-útflutningur fyrir teymi með nafni fyrirtækisins þíns';
 
   @override
@@ -8213,6 +8259,9 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Áttu nú þegar starfsmannalista? Þú getur flutt hann inn úr töflureikni, með nöfnum og netföngum.';
+
+  @override
+  String get tourBusinessClientBody => 'Þú getur deilt skrifvörðum tengli með viðskiptavini svo hann sjái að skjöl starfsfólksins eru í gildi.';
 
   @override
   String get tourBusinessRolesBody => 'Gefðu hverjum og einum hlutverk, eins og Bílstjóri, með skjölunum sem það þarf. Vaultara sýnir hvað vantar.';

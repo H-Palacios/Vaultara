@@ -3288,6 +3288,52 @@ class AppLocalizationsLt extends AppLocalizations {
   String get businessBenefitStaffImport => 'Importuokite darbuotojų sąrašą iš skaičiuoklės';
 
   @override
+  String get clientLinkAction => 'Bendrinti darbuotojų būseną su klientu';
+
+  @override
+  String get clientLinkHint => 'Tik skaitoma nuoroda, rodanti, ar kiekvieno asmens dokumentai galioja. Be numerių ir nuotraukų.';
+
+  @override
+  String get clientLinkTitle => 'Nuoroda klientui';
+
+  @override
+  String get clientLinkBody => 'Klientas mato darbuotojų vardus, dokumentų pavadinimus, galiojimo datas ir būseną tiesiai iš Vaultara. Jūsų pačių įrašai, dokumentų numeriai, nuotraukos ir el. paštai niekada nerodomi.';
+
+  @override
+  String get clientLinkOneDay => '1 diena';
+
+  @override
+  String get clientLinkOneWeek => '7 dienos';
+
+  @override
+  String get clientLinkOneMonth => '30 dienų';
+
+  @override
+  String get clientLinkCreate => 'Sukurti ir bendrinti nuorodą';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Darbuotojų dokumentų būsena iš Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Sustabdyti visas klientų nuorodas';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Sustabdytos klientų nuorodos: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Nuorodos nepavyko sukurti. Patikrinkite ryšį ir bandykite dar kartą.';
+
+  @override
+  String get clientLinkTooMany => 'Kol kas pasiekėte klientų nuorodų skaičių. Sustabdykite senas nuorodas arba bandykite rytoj.';
+
+  @override
+  String get businessBenefitClientLink => 'Bendrinkite darbuotojų atitiktį su klientais tiesiogiai';
+
+  @override
   String get businessBenefitPdf => 'Komandos PDF eksportas su jūsų įmonės pavadinimu';
 
   @override
@@ -8355,6 +8401,9 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Jau turite darbuotojų sąrašą? Galite jį importuoti iš skaičiuoklės su vardais ir el. paštais.';
+
+  @override
+  String get tourBusinessClientBody => 'Galite bendrinti tik skaitomą nuorodą su klientu, kad jis matytų, jog jūsų darbuotojų dokumentai galioja.';
 
   @override
   String get tourBusinessRolesBody => 'Suteikite kiekvienam pareigas, pvz., Vairuotojas, su reikiamais dokumentais. Vaultara rodo, ko trūksta.';

@@ -3291,6 +3291,52 @@ class AppLocalizationsCs extends AppLocalizations {
   String get businessBenefitStaffImport => 'Importujte seznam zaměstnanců z tabulky';
 
   @override
+  String get clientLinkAction => 'Sdílet stav zaměstnanců s klientem';
+
+  @override
+  String get clientLinkHint => 'Odkaz jen pro čtení, který ukazuje, zda má každý platné doklady. Bez čísel a fotek.';
+
+  @override
+  String get clientLinkTitle => 'Odkaz pro klienta';
+
+  @override
+  String get clientLinkBody => 'Klient vidí jména zaměstnanců, názvy dokladů, data platnosti a stav, živě z Vaultary. Vaše vlastní záznamy, čísla dokladů, fotky a e-maily se nikdy nezobrazí.';
+
+  @override
+  String get clientLinkOneDay => '1 den';
+
+  @override
+  String get clientLinkOneWeek => '7 dní';
+
+  @override
+  String get clientLinkOneMonth => '30 dní';
+
+  @override
+  String get clientLinkCreate => 'Vytvořit a sdílet odkaz';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Stav dokladů zaměstnanců z Vaultary: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Zastavit všechny odkazy pro klienty';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Zastavené odkazy pro klienty: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Odkaz se nepodařilo vytvořit. Zkontrolujte připojení a zkuste to znovu.';
+
+  @override
+  String get clientLinkTooMany => 'Prozatím jste dosáhli počtu odkazů pro klienty. Zastavte staré odkazy nebo to zkuste zítra.';
+
+  @override
+  String get businessBenefitClientLink => 'Sdílejte živý stav dokladů zaměstnanců s klienty';
+
+  @override
   String get businessBenefitPdf => 'Týmový export do PDF s názvem vaší firmy';
 
   @override
@@ -8349,6 +8395,9 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Máte seznam zaměstnanců? Můžete ho importovat z tabulky se jmény a e-maily.';
+
+  @override
+  String get tourBusinessClientBody => 'S klientem můžete sdílet odkaz jen pro čtení, aby viděl, že doklady vašich zaměstnanců jsou platné.';
 
   @override
   String get tourBusinessRolesBody => 'Dejte každému roli, třeba Řidič, s dokumenty, které potřebuje. Vaultara ukáže, co chybí.';

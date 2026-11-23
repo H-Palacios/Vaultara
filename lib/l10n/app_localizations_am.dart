@@ -3229,6 +3229,52 @@ class AppLocalizationsAm extends AppLocalizations {
   String get businessBenefitStaffImport => 'የሠራተኞች ዝርዝርዎን ከተመን ሉህ ያስመጡ';
 
   @override
+  String get clientLinkAction => 'የሠራተኞችን ሁኔታ ለደንበኛ ያጋሩ';
+
+  @override
+  String get clientLinkHint => 'የእያንዳንዱ ሰው ሰነዶች ወቅታዊ መሆናቸውን የሚያሳይ ለማንበብ ብቻ የሆነ ሊንክ። ቁጥሮች ወይም ፎቶዎች የሉም።';
+
+  @override
+  String get clientLinkTitle => 'ለደንበኛ የሚሆን ሊንክ';
+
+  @override
+  String get clientLinkBody => 'ደንበኛው የሠራተኞችን ስሞች፣ የሰነድ ስሞች፣ የሚያበቃበትን ቀን እና ሁኔታ በቀጥታ ከVaultara ያያል። የራስዎ መዝገቦች፣ የሰነድ ቁጥሮች፣ ፎቶዎች እና ኢሜይሎች በጭራሽ አይታዩም።';
+
+  @override
+  String get clientLinkOneDay => '1 ቀን';
+
+  @override
+  String get clientLinkOneWeek => '7 ቀናት';
+
+  @override
+  String get clientLinkOneMonth => '30 ቀናት';
+
+  @override
+  String get clientLinkCreate => 'ሊንክ ይፍጠሩ እና ያጋሩ';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'ከVaultara የሠራተኞች ሰነድ ሁኔታ፦ $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'ሁሉንም የደንበኛ ሊንኮች ያቁሙ';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'የቆሙ የደንበኛ ሊንኮች፦ $count';
+  }
+
+  @override
+  String get clientLinkError => 'ሊንኩ ሊፈጠር አልቻለም። ግንኙነትዎን ያረጋግጡ እና እንደገና ይሞክሩ።';
+
+  @override
+  String get clientLinkTooMany => 'ለአሁን የደንበኛ ሊንኮች ብዛት ላይ ደርሰዋል። የቆዩ ሊንኮችን ያቁሙ ወይም ነገ እንደገና ይሞክሩ።';
+
+  @override
+  String get businessBenefitClientLink => 'የሠራተኞችን ተገዢነት በቀጥታ ለደንበኞች ያጋሩ';
+
+  @override
   String get businessBenefitPdf => 'የቡድን PDF ወደ ውጭ መላክ ከኩባንያዎ ስም ጋር';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'የሠራተኞች ዝርዝር አለዎት? በስሞች እና በኢሜይሎች ከተመን ሉህ ማስመጣት ይችላሉ።';
+
+  @override
+  String get tourBusinessClientBody => 'የሠራተኞችዎ ሰነዶች ወቅታዊ መሆናቸውን እንዲያዩ ለማንበብ ብቻ የሆነ ሊንክ ለደንበኛ ማጋራት ይችላሉ።';
 
   @override
   String get tourBusinessRolesBody => 'ለእያንዳንዱ ሰው እንደ ሹፌር ያለ ሚና ከሚያስፈልጉት ሰነዶች ጋር ይስጡ። Vaultara የጎደለውን ያሳያል።';

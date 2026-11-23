@@ -3229,6 +3229,52 @@ class AppLocalizationsZu extends AppLocalizations {
   String get businessBenefitStaffImport => 'Ngenisa uhlu lwabasebenzi bakho kusuka kuspredishithi';
 
   @override
+  String get clientLinkAction => 'Yabelana ngesimo sabasebenzi nekhasimende';
+
+  @override
+  String get clientLinkHint => 'Isixhumanisi sokufunda kuphela esibonisa ukuthi amadokhumenti omuntu ngamunye asasebenza yini. Ayikho izinombolo noma izithombe.';
+
+  @override
+  String get clientLinkTitle => 'Isixhumanisi sekhasimende';
+
+  @override
+  String get clientLinkBody => 'Ikhasimende libona amagama abasebenzi, amagama amadokhumenti, izinsuku zokuphelelwa yisikhathi nesimo, ngqo ku-Vaultara. Amarekhodi akho, izinombolo zamadokhumenti, izithombe nama-imeyili akuboniswa neze.';
+
+  @override
+  String get clientLinkOneDay => 'Usuku olu-1';
+
+  @override
+  String get clientLinkOneWeek => 'Izinsuku eziyi-7';
+
+  @override
+  String get clientLinkOneMonth => 'Izinsuku ezingama-30';
+
+  @override
+  String get clientLinkCreate => 'Dala futhi wabelane ngesixhumanisi';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Isimo samadokhumenti abasebenzi ku-Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Misa zonke izixhumanisi zamakhasimende';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Izixhumanisi zamakhasimende ezimisiwe: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Isixhumanisi asikwazanga ukudalwa. Hlola uxhumano lwakho bese uzama futhi.';
+
+  @override
+  String get clientLinkTooMany => 'Okwamanje ufinyelele inani lezixhumanisi zamakhasimende. Misa izixhumanisi ezindala noma uzame kusasa.';
+
+  @override
+  String get businessBenefitClientLink => 'Yabelana ngokuthobela kwabasebenzi ngqo namakhasimende';
+
+  @override
   String get businessBenefitPdf => 'Ukuthumela i-PDF yethimba negama lenkampani yakho';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Usunohlu lwabasebenzi? Ungalungenisa kusuka kuspredishithi, namagama nama-imeyili.';
+
+  @override
+  String get tourBusinessClientBody => 'Ungabelana ngesixhumanisi sokufunda kuphela nekhasimende, ukuze libone ukuthi amadokhumenti abasebenzi bakho asasebenza.';
 
   @override
   String get tourBusinessRolesBody => 'Nikeza umuntu ngamunye indima, njengoMshayeli, namadokhumenti ayidingayo. I-Vaultara ibonisa okungekho.';

@@ -3229,6 +3229,52 @@ class AppLocalizationsSw extends AppLocalizations {
   String get businessBenefitStaffImport => 'Leta orodha ya wafanyakazi wako kutoka lahajedwali';
 
   @override
+  String get clientLinkAction => 'Shiriki hali ya wafanyakazi na mteja';
+
+  @override
+  String get clientLinkHint => 'Kiungo cha kusoma tu kinachoonyesha kama hati za kila mtu ni halali. Hakuna nambari wala picha.';
+
+  @override
+  String get clientLinkTitle => 'Kiungo kwa mteja';
+
+  @override
+  String get clientLinkBody => 'Mteja anaona majina ya wafanyakazi, majina ya hati, tarehe za kuisha na hali, moja kwa moja kutoka Vaultara. Rekodi zako mwenyewe, nambari za hati, picha na barua pepe hazionyeshwi kamwe.';
+
+  @override
+  String get clientLinkOneDay => 'Siku 1';
+
+  @override
+  String get clientLinkOneWeek => 'Siku 7';
+
+  @override
+  String get clientLinkOneMonth => 'Siku 30';
+
+  @override
+  String get clientLinkCreate => 'Unda na ushiriki kiungo';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Hali ya hati za wafanyakazi kutoka Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Simamisha viungo vyote vya wateja';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Viungo vya wateja vilivyosimamishwa: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Kiungo hakikuweza kuundwa. Kagua muunganisho wako na ujaribu tena.';
+
+  @override
+  String get clientLinkTooMany => 'Kwa sasa umefikia idadi ya viungo vya wateja. Simamisha viungo vya zamani au ujaribu kesho.';
+
+  @override
+  String get businessBenefitClientLink => 'Shiriki utiifu wa wafanyakazi moja kwa moja na wateja';
+
+  @override
   String get businessBenefitPdf => 'Usafirishaji wa PDF wa timu wenye jina la kampuni yako';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Una orodha ya wafanyakazi tayari? Unaweza kuileta kutoka lahajedwali, pamoja na majina na barua pepe.';
+
+  @override
+  String get tourBusinessClientBody => 'Unaweza kushiriki kiungo cha kusoma tu na mteja, ili aone kwamba hati za wafanyakazi wako ni halali.';
 
   @override
   String get tourBusinessRolesBody => 'Mpe kila mtu wadhifa, kama Dereva, pamoja na hati unazohitaji. Vaultara inaonyesha kinachokosekana.';

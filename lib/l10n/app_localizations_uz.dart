@@ -3229,6 +3229,52 @@ class AppLocalizationsUz extends AppLocalizations {
   String get businessBenefitStaffImport => 'Xodimlar ro‘yxatini jadvaldan import qiling';
 
   @override
+  String get clientLinkAction => 'Xodimlar holatini mijoz bilan ulashish';
+
+  @override
+  String get clientLinkHint => 'Har bir kishining hujjatlari amal qiladimi, shuni ko‘rsatuvchi faqat o‘qish uchun havola. Raqam va rasmlarsiz.';
+
+  @override
+  String get clientLinkTitle => 'Mijoz uchun havola';
+
+  @override
+  String get clientLinkBody => 'Mijoz xodimlar ismlari, hujjat nomlari, amal qilish muddatlari va holatni to‘g‘ridan-to‘g‘ri Vaultara’dan ko‘radi. O‘z yozuvlaringiz, hujjat raqamlari, rasmlar va e-pochtalar hech qachon ko‘rsatilmaydi.';
+
+  @override
+  String get clientLinkOneDay => '1 kun';
+
+  @override
+  String get clientLinkOneWeek => '7 kun';
+
+  @override
+  String get clientLinkOneMonth => '30 kun';
+
+  @override
+  String get clientLinkCreate => 'Havola yaratish va ulashish';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Vaultara’dan xodim hujjatlari holati: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Barcha mijoz havolalarini to‘xtatish';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'To‘xtatilgan mijoz havolalari: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Havola yaratilmadi. Ulanishni tekshirib, qayta urinib ko‘ring.';
+
+  @override
+  String get clientLinkTooMany => 'Hozircha mijoz havolalari soniga yetdingiz. Eski havolalarni to‘xtating yoki ertaga urinib ko‘ring.';
+
+  @override
+  String get businessBenefitClientLink => 'Xodimlar muvofiqligini mijozlar bilan jonli ulashing';
+
+  @override
   String get businessBenefitPdf => 'Kompaniyangiz nomi bilan jamoa uchun PDF eksport';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Xodimlar ro‘yxatingiz bormi? Uni ismlar va e-pochtalar bilan jadvaldan import qilishingiz mumkin.';
+
+  @override
+  String get tourBusinessClientBody => 'Xodimlaringiz hujjatlari amal qilishini ko‘rsatish uchun mijoz bilan faqat o‘qish uchun havola ulasha olasiz.';
 
   @override
   String get tourBusinessRolesBody => 'Har kimga Haydovchi kabi lavozimni kerakli hujjatlari bilan bering. Vaultara nima yetishmasligini ko‘rsatadi.';

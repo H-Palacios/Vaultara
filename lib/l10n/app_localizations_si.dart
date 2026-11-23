@@ -3228,6 +3228,52 @@ class AppLocalizationsSi extends AppLocalizations {
   String get businessBenefitStaffImport => 'ඔබේ කාර්ය මණ්ඩල ලැයිස්තුව පැතුරුම්පතකින් ආයාත කරන්න';
 
   @override
+  String get clientLinkAction => 'සේවක තත්ත්වය පාරිභෝගිකයෙකු සමඟ බෙදාගන්න';
+
+  @override
+  String get clientLinkHint => 'එක් එක් අයගේ ලේඛන වලංගුද යන්න පෙන්වන කියවීමට පමණක් සබැඳියක්. අංක හෝ ඡායාරූප නැත.';
+
+  @override
+  String get clientLinkTitle => 'පාරිභෝගිකයාට සබැඳිය';
+
+  @override
+  String get clientLinkBody => 'පාරිභෝගිකයා Vaultara වෙතින් සෘජුවම සේවක නම්, ලේඛන නම්, කල් ඉකුත් වන දින සහ තත්ත්වය දකී. ඔබේම වාර්තා, ලේඛන අංක, ඡායාරූප සහ ඊමේල් කිසි විටෙක නොපෙන්වයි.';
+
+  @override
+  String get clientLinkOneDay => 'දින 1';
+
+  @override
+  String get clientLinkOneWeek => 'දින 7';
+
+  @override
+  String get clientLinkOneMonth => 'දින 30';
+
+  @override
+  String get clientLinkCreate => 'සබැඳිය සාදා බෙදාගන්න';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Vaultara වෙතින් සේවක ලේඛන තත්ත්වය: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'සියලු පාරිභෝගික සබැඳි නවත්වන්න';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'නැවැත්වූ පාරිභෝගික සබැඳි: $count';
+  }
+
+  @override
+  String get clientLinkError => 'සබැඳිය සෑදිය නොහැකි විය. සම්බන්ධතාවය පරීක්ෂා කර නැවත උත්සාහ කරන්න.';
+
+  @override
+  String get clientLinkTooMany => 'දැනට පාරිභෝගික සබැඳි ගණනට ළඟා වී ඇත. පැරණි සබැඳි නවත්වන්න හෝ හෙට උත්සාහ කරන්න.';
+
+  @override
+  String get businessBenefitClientLink => 'සේවක අනුකූලතාව පාරිභෝගිකයන් සමඟ සජීවීව බෙදාගන්න';
+
+  @override
   String get businessBenefitPdf => 'ඔබේ සමාගමේ නම සහිත කණ්ඩායම් PDF අපනයනය';
 
   @override
@@ -8213,6 +8259,9 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'කාර්ය මණ්ඩල ලැයිස්තුවක් තිබේද? නම් සහ ඊමේල් සමඟ පැතුරුම්පතකින් ආයාත කළ හැක.';
+
+  @override
+  String get tourBusinessClientBody => 'ඔබේ සේවකයන්ගේ ලේඛන වලංගු බව පෙන්වීමට පාරිභෝගිකයෙකු සමඟ කියවීමට පමණක් සබැඳියක් බෙදාගත හැක.';
 
   @override
   String get tourBusinessRolesBody => 'සෑම කෙනෙකුටම රියදුරු වැනි භූමිකාවක් එයට අවශ්‍ය ලේඛන සමඟ දෙන්න. නැති දේ Vaultara පෙන්වයි.';

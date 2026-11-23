@@ -3214,6 +3214,52 @@ class AppLocalizationsYo extends AppLocalizations {
   String get businessBenefitStaffImport => 'Kó àkójọ òṣìṣẹ́ rẹ wọlé láti inú spreadsheet';
 
   @override
+  String get clientLinkAction => 'Pín ipò àwọn òṣìṣẹ́ pẹ̀lú oníbàárà';
+
+  @override
+  String get clientLinkHint => 'Ìjápọ̀ fún kíkà nìkan tó ń fi hàn bóyá àwọn ìwé ẹnì kọ̀ọ̀kan ṣì wúlò. Kò sí nọ́ńbà tàbí àwòrán.';
+
+  @override
+  String get clientLinkTitle => 'Ìjápọ̀ fún oníbàárà';
+
+  @override
+  String get clientLinkBody => 'Oníbàárà ń rí orúkọ àwọn òṣìṣẹ́, orúkọ àwọn ìwé, ọjọ́ ìparí àti ipò, tààrà láti Vaultara. A kò ní fi àwọn àkọsílẹ̀ tìrẹ, nọ́ńbà ìwé, àwòrán àti ímeèlì hàn láé.';
+
+  @override
+  String get clientLinkOneDay => 'Ọjọ́ 1';
+
+  @override
+  String get clientLinkOneWeek => 'Ọjọ́ 7';
+
+  @override
+  String get clientLinkOneMonth => 'Ọjọ́ 30';
+
+  @override
+  String get clientLinkCreate => 'Ṣẹ̀dá kí o sì pín ìjápọ̀';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Ipò àwọn ìwé òṣìṣẹ́ láti Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Dá gbogbo ìjápọ̀ oníbàárà dúró';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Àwọn ìjápọ̀ oníbàárà tí a dá dúró: $count';
+  }
+
+  @override
+  String get clientLinkError => 'A kò lè ṣẹ̀dá ìjápọ̀ náà. Ṣàyẹ̀wò ìsopọ̀ rẹ kí o sì gbìyànjú lẹ́ẹ̀kan sí i.';
+
+  @override
+  String get clientLinkTooMany => 'O ti dé iye ìjápọ̀ oníbàárà fún báyìí. Dá àwọn ìjápọ̀ àtijọ́ dúró tàbí gbìyànjú lọ́la.';
+
+  @override
+  String get businessBenefitClientLink => 'Pín ìbámu àwọn òṣìṣẹ́ tààrà pẹ̀lú àwọn oníbàárà';
+
+  @override
   String get businessBenefitPdf => 'Gbigbe PDF ẹgbẹ́ jáde pẹ̀lú orúkọ ilé-iṣẹ́ rẹ';
 
   @override
@@ -8163,6 +8209,9 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Ṣé o ti ní àkójọ òṣìṣẹ́? O lè kó o wọlé láti inú spreadsheet, pẹ̀lú orúkọ àti ímeèlì.';
+
+  @override
+  String get tourBusinessClientBody => 'O lè pín ìjápọ̀ fún kíkà nìkan pẹ̀lú oníbàárà, kí ó lè rí i pé àwọn ìwé òṣìṣẹ́ rẹ ṣì wúlò.';
 
   @override
   String get tourBusinessRolesBody => 'Fún ẹnì kọ̀ọ̀kan ní ipa, bí Awakọ̀, pẹ̀lú àwọn ìwé tó nílò. Vaultara ń fi ohun tó kù hàn.';

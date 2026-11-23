@@ -3313,6 +3313,52 @@ class AppLocalizationsGa extends AppLocalizations {
   String get businessBenefitStaffImport => 'Iompórtáil do liosta foirne ó scarbhileog';
 
   @override
+  String get clientLinkAction => 'Roinn stádas na foirne le cliant';
+
+  @override
+  String get clientLinkHint => 'Nasc inléite amháin a thaispeánann an bhfuil doiciméid gach duine cothrom le dáta. Gan uimhreacha ná grianghraif.';
+
+  @override
+  String get clientLinkTitle => 'Nasc do chliant';
+
+  @override
+  String get clientLinkBody => 'Feiceann an cliant ainmneacha na foirne, ainmneacha na ndoiciméad, dátaí éaga agus stádas, beo ó Vaultara. Ní thaispeántar do thaifid féin, uimhreacha doiciméad, grianghraif ná ríomhphoist riamh.';
+
+  @override
+  String get clientLinkOneDay => '1 lá';
+
+  @override
+  String get clientLinkOneWeek => '7 lá';
+
+  @override
+  String get clientLinkOneMonth => '30 lá';
+
+  @override
+  String get clientLinkCreate => 'Cruthaigh agus roinn nasc';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Stádas doiciméad foirne ó Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Stop gach nasc cliaint';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Naisc chliaint stoptha: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Níorbh fhéidir an nasc a chruthú. Seiceáil do cheangal agus bain triail eile as.';
+
+  @override
+  String get clientLinkTooMany => 'Tá líon na nasc cliaint bainte amach agat faoi láthair. Stop seannaisc nó bain triail eile as amárach.';
+
+  @override
+  String get businessBenefitClientLink => 'Roinn comhlíonadh foirne beo le cliaint';
+
+  @override
   String get businessBenefitPdf => 'Easpórtáil PDF foirne le hainm do chomhlachta';
 
   @override
@@ -8398,6 +8444,9 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'An bhfuil liosta foirne agat cheana? Is féidir leat é a iompórtáil ó scarbhileog, le hainmneacha agus ríomhphoist.';
+
+  @override
+  String get tourBusinessClientBody => 'Is féidir leat nasc inléite amháin a roinnt le cliant ionas go bhfeicfidh siad go bhfuil doiciméid na foirne cothrom le dáta.';
 
   @override
   String get tourBusinessRolesBody => 'Tabhair ról do gach duine, mar Tiománaí, leis na doiciméid a theastaíonn uaidh. Taispeánann Vaultara a bhfuil in easnamh.';

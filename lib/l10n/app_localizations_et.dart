@@ -3229,6 +3229,52 @@ class AppLocalizationsEt extends AppLocalizations {
   String get businessBenefitStaffImport => 'Impordi töötajate nimekiri tabelist';
 
   @override
+  String get clientLinkAction => 'Jaga töötajate olekut kliendiga';
+
+  @override
+  String get clientLinkHint => 'Ainult lugemiseks link, mis näitab, kas iga inimese dokumendid on kehtivad. Numbreid ega fotosid pole.';
+
+  @override
+  String get clientLinkTitle => 'Link kliendile';
+
+  @override
+  String get clientLinkBody => 'Klient näeb töötajate nimesid, dokumentide nimesid, aegumiskuupäevi ja olekut otse Vaultarast. Sinu enda kirjeid, dokumendinumbreid, fotosid ega e-posti aadresse ei näidata kunagi.';
+
+  @override
+  String get clientLinkOneDay => '1 päev';
+
+  @override
+  String get clientLinkOneWeek => '7 päeva';
+
+  @override
+  String get clientLinkOneMonth => '30 päeva';
+
+  @override
+  String get clientLinkCreate => 'Loo ja jaga linki';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Töötajate dokumentide olek Vaultarast: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Peata kõik kliendilingid';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Peatatud kliendilinke: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Linki ei õnnestunud luua. Kontrolli ühendust ja proovi uuesti.';
+
+  @override
+  String get clientLinkTooMany => 'Oled kliendilinkide arvu praegu täis. Peata vanad lingid või proovi homme uuesti.';
+
+  @override
+  String get businessBenefitClientLink => 'Jaga töötajate nõuetele vastavust otse klientidega';
+
+  @override
   String get businessBenefitPdf => 'Meeskonna PDF-eksport sinu ettevõtte nimega';
 
   @override
@@ -8218,6 +8264,9 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Sul on juba töötajate nimekiri? Saad selle tabelist importida, koos nimede ja e-postidega.';
+
+  @override
+  String get tourBusinessClientBody => 'Saad jagada kliendiga ainult lugemiseks linki, et ta näeks, et sinu töötajate dokumendid on kehtivad.';
 
   @override
   String get tourBusinessRolesBody => 'Anna igaühele roll, näiteks Juht, koos vajalike dokumentidega. Vaultara näitab, mis puudu on.';

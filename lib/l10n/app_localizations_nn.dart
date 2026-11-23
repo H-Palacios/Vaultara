@@ -3229,6 +3229,52 @@ class AppLocalizationsNn extends AppLocalizations {
   String get businessBenefitStaffImport => 'Importer lista over tilsette frå eit rekneark';
 
   @override
+  String get clientLinkAction => 'Del status for tilsette med ein kunde';
+
+  @override
+  String get clientLinkHint => 'Ei skriveverna lenkje som viser om dokumenta til kvar person er gyldige. Ingen nummer eller bilete.';
+
+  @override
+  String get clientLinkTitle => 'Lenkje til ein kunde';
+
+  @override
+  String get clientLinkBody => 'Kunden ser namn på tilsette, dokumentnamn, utløpsdatoar og ein status, direkte frå Vaultara. Dine eigne oppføringar, dokumentnummer, bilete og e-postar blir aldri viste.';
+
+  @override
+  String get clientLinkOneDay => '1 dag';
+
+  @override
+  String get clientLinkOneWeek => '7 dagar';
+
+  @override
+  String get clientLinkOneMonth => '30 dagar';
+
+  @override
+  String get clientLinkCreate => 'Lag og del lenkje';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Status for dokumenta til tilsette frå Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Stopp alle kundelenkjer';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Kundelenkjer stoppa: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Lenkja kunne ikkje lagast. Sjekk tilkoplinga og prøv igjen.';
+
+  @override
+  String get clientLinkTooMany => 'Du har nådd talet på kundelenkjer for no. Stopp gamle lenkjer eller prøv igjen i morgon.';
+
+  @override
+  String get businessBenefitClientLink => 'Del etterleving for tilsette direkte med kundar';
+
+  @override
   String get businessBenefitPdf => 'PDF-eksport for teamet med firmanamnet ditt';
 
   @override
@@ -8218,6 +8264,9 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Har du alt ei liste over tilsette? Du kan importere ho frå eit rekneark med namn og e-postar.';
+
+  @override
+  String get tourBusinessClientBody => 'Du kan dele ei skriveverna lenkje med ein kunde, så dei ser at dokumenta til dei tilsette er gyldige.';
 
   @override
   String get tourBusinessRolesBody => 'Gi kvar person ei rolle, til dømes Sjåfør, med dokumenta ho krev. Vaultara viser kva som manglar.';

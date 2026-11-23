@@ -3307,6 +3307,52 @@ class AppLocalizationsPl extends AppLocalizations {
   String get businessBenefitStaffImport => 'Importuj listę pracowników z arkusza';
 
   @override
+  String get clientLinkAction => 'Udostępnij stan pracowników klientowi';
+
+  @override
+  String get clientLinkHint => 'Link tylko do odczytu, który pokazuje, czy dokumenty każdej osoby są ważne. Bez numerów i zdjęć.';
+
+  @override
+  String get clientLinkTitle => 'Link dla klienta';
+
+  @override
+  String get clientLinkBody => 'Klient widzi imiona pracowników, nazwy dokumentów, daty ważności i stan, na żywo z Vaultara. Twoje własne wpisy, numery dokumentów, zdjęcia i e-maile nigdy nie są pokazywane.';
+
+  @override
+  String get clientLinkOneDay => '1 dzień';
+
+  @override
+  String get clientLinkOneWeek => '7 dni';
+
+  @override
+  String get clientLinkOneMonth => '30 dni';
+
+  @override
+  String get clientLinkCreate => 'Utwórz i udostępnij link';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Stan dokumentów pracowników z Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Zatrzymaj wszystkie linki dla klientów';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Zatrzymane linki dla klientów: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Nie udało się utworzyć linku. Sprawdź połączenie i spróbuj ponownie.';
+
+  @override
+  String get clientLinkTooMany => 'Na razie osiągnięto liczbę linków dla klientów. Zatrzymaj stare linki lub spróbuj jutro.';
+
+  @override
+  String get businessBenefitClientLink => 'Udostępniaj klientom na żywo zgodność dokumentów pracowników';
+
+  @override
   String get businessBenefitPdf => 'Zespołowy eksport PDF z nazwą twojej firmy';
 
   @override
@@ -8368,6 +8414,9 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Masz już listę pracowników? Możesz ją zaimportować z arkusza, z imionami i e-mailami.';
+
+  @override
+  String get tourBusinessClientBody => 'Możesz udostępnić klientowi link tylko do odczytu, aby widział, że dokumenty Twoich pracowników są ważne.';
 
   @override
   String get tourBusinessRolesBody => 'Nadaj każdemu stanowisko, np. Kierowca, z wymaganymi dokumentami. Vaultara pokazuje, czego brakuje.';

@@ -3229,6 +3229,52 @@ class AppLocalizationsPs extends AppLocalizations {
   String get businessBenefitStaffImport => 'د کارکوونکو لیست له سپریډشیټ څخه راوړئ';
 
   @override
+  String get clientLinkAction => 'د کارکوونکو حالت له پېرودونکي سره شریک کړئ';
+
+  @override
+  String get clientLinkHint => 'یوازې د لوستلو لینک چې ښيي د هر چا اسناد معتبر دي که نه. بې شمېرو او عکسونو.';
+
+  @override
+  String get clientLinkTitle => 'د پېرودونکي لپاره لینک';
+
+  @override
+  String get clientLinkBody => 'پېرودونکی د کارکوونکو نومونه، د اسنادو نومونه، د پای نېټې او حالت مستقیم له Vaultara ګوري. ستاسو خپل ریکارډونه، د اسنادو شمېرې، عکسونه او برېښنالیکونه هېڅکله نه ښودل کېږي.';
+
+  @override
+  String get clientLinkOneDay => '۱ ورځ';
+
+  @override
+  String get clientLinkOneWeek => '۷ ورځې';
+
+  @override
+  String get clientLinkOneMonth => '۳۰ ورځې';
+
+  @override
+  String get clientLinkCreate => 'لینک جوړ او شریک کړئ';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'له Vaultara څخه د کارکوونکو د اسنادو حالت: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'د پېرودونکو ټول لینکونه ودروئ';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'درول شوي د پېرودونکو لینکونه: $count';
+  }
+
+  @override
+  String get clientLinkError => 'لینک جوړ نشو. خپل اتصال وګورئ او بیا هڅه وکړئ.';
+
+  @override
+  String get clientLinkTooMany => 'اوس مو د پېرودونکو د لینکونو شمېر بشپړ کړ. زاړه لینکونه ودروئ یا سبا هڅه وکړئ.';
+
+  @override
+  String get businessBenefitClientLink => 'د کارکوونکو اطاعت له پېرودونکو سره مستقیم شریک کړئ';
+
+  @override
   String get businessBenefitPdf => 'د ستاسو د شرکت له نوم سره د ټیم PDF صادرول';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'د کارکوونکو لیست لرئ؟ له نومونو او برېښنالیکونو سره یې له سپریډشیټ څخه راوړلی شئ.';
+
+  @override
+  String get tourBusinessClientBody => 'تاسو کولی شئ له پېرودونکي سره یوازې د لوستلو لینک شریک کړئ، څو وګوري چې ستاسو د کارکوونکو اسناد معتبر دي.';
 
   @override
   String get tourBusinessRolesBody => 'هر کس ته لکه ډرېور یوه دنده د اړینو اسنادو سره ورکړئ. Vaultara ښيي چې څه نشته.';

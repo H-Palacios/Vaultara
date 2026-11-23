@@ -3227,6 +3227,52 @@ class AppLocalizationsFil extends AppLocalizations {
   String get businessBenefitStaffImport => 'I-import ang listahan ng staff mula sa spreadsheet';
 
   @override
+  String get clientLinkAction => 'Ibahagi ang katayuan ng staff sa isang kliyente';
+
+  @override
+  String get clientLinkHint => 'Isang read-only na link na nagpapakita kung updated ang mga dokumento ng bawat tao. Walang numero o larawan.';
+
+  @override
+  String get clientLinkTitle => 'Link para sa kliyente';
+
+  @override
+  String get clientLinkBody => 'Nakikita ng kliyente ang mga pangalan ng staff, pangalan ng dokumento, petsa ng pag-expire at katayuan, live mula sa Vaultara. Hindi kailanman ipinapakita ang sarili mong record, numero ng dokumento, larawan at email.';
+
+  @override
+  String get clientLinkOneDay => '1 araw';
+
+  @override
+  String get clientLinkOneWeek => '7 araw';
+
+  @override
+  String get clientLinkOneMonth => '30 araw';
+
+  @override
+  String get clientLinkCreate => 'Gumawa at ibahagi ang link';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Katayuan ng dokumento ng staff mula sa Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Itigil ang lahat ng link ng kliyente';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Itinigil na link ng kliyente: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Hindi magawa ang link. Tingnan ang koneksyon mo at subukan ulit.';
+
+  @override
+  String get clientLinkTooMany => 'Naabot mo na ang bilang ng link ng kliyente sa ngayon. Itigil ang lumang link o subukan bukas.';
+
+  @override
+  String get businessBenefitClientLink => 'Ibahagi nang live sa mga kliyente ang compliance ng staff';
+
+  @override
   String get businessBenefitPdf => 'PDF export ng team na may pangalan ng kumpanya mo';
 
   @override
@@ -8208,6 +8254,9 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'May listahan ka na ng staff? Puwede mo itong i-import mula sa spreadsheet, kasama ang mga pangalan at email.';
+
+  @override
+  String get tourBusinessClientBody => 'Puwede kang magbahagi ng read-only na link sa kliyente para makita nilang updated ang mga dokumento ng staff mo.';
 
   @override
   String get tourBusinessRolesBody => 'Bigyan ang bawat tao ng tungkulin, gaya ng Driver, kasama ang mga dokumentong kailangan nito. Ipinapakita ng Vaultara kung ano ang kulang.';

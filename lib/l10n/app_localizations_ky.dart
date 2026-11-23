@@ -3229,6 +3229,52 @@ class AppLocalizationsKy extends AppLocalizations {
   String get businessBenefitStaffImport => 'Кызматкерлердин тизмесин таблицадан импорттоңуз';
 
   @override
+  String get clientLinkAction => 'Кызматкерлердин абалын кардар менен бөлүшүү';
+
+  @override
+  String get clientLinkHint => 'Ар бир адамдын документтери жарактуу экенин көрсөткөн окуу үчүн гана шилтеме. Номерлер жана сүрөттөр жок.';
+
+  @override
+  String get clientLinkTitle => 'Кардар үчүн шилтеме';
+
+  @override
+  String get clientLinkBody => 'Кардар кызматкерлердин аттарын, документтердин аталыштарын, мөөнөттөрүн жана абалын Vaultara\'дан түз көрөт. Өз жазууларыңыз, документ номерлери, сүрөттөр жана почталар эч качан көрсөтүлбөйт.';
+
+  @override
+  String get clientLinkOneDay => '1 күн';
+
+  @override
+  String get clientLinkOneWeek => '7 күн';
+
+  @override
+  String get clientLinkOneMonth => '30 күн';
+
+  @override
+  String get clientLinkCreate => 'Шилтеме түзүп, бөлүшүү';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Vaultara\'дан кызматкер документтеринин абалы: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Бардык кардар шилтемелерин токтотуу';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Токтотулган кардар шилтемелери: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Шилтеме түзүлгөн жок. Байланышты текшерип, кайра аракет кылыңыз.';
+
+  @override
+  String get clientLinkTooMany => 'Азырынча кардар шилтемелеринин санына жеттиңиз. Эски шилтемелерди токтотуңуз же эртең аракет кылыңыз.';
+
+  @override
+  String get businessBenefitClientLink => 'Кызматкерлердин талаптарга ылайыктыгын кардарлар менен түз бөлүшүңүз';
+
+  @override
   String get businessBenefitPdf => 'Компанияңыздын аты менен команданын PDF экспорту';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Кызматкерлердин тизмеси барбы? Аны аттар жана почталар менен таблицадан импорттой аласыз.';
+
+  @override
+  String get tourBusinessClientBody => 'Кызматкерлериңиздин документтери жарактуу экенин көрсөтүү үчүн кардар менен окуу үчүн гана шилтеме бөлүшө аласыз.';
 
   @override
   String get tourBusinessRolesBody => 'Ар бир адамга Айдоочу сыяктуу кызмат ордун керектүү документтери менен бериңиз. Vaultara эмне жок экенин көрсөтөт.';

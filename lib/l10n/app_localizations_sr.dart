@@ -3258,6 +3258,52 @@ class AppLocalizationsSr extends AppLocalizations {
   String get businessBenefitStaffImport => 'Увезите листу особља из табеле';
 
   @override
+  String get clientLinkAction => 'Подели стање особља са клијентом';
+
+  @override
+  String get clientLinkHint => 'Линк само за читање који показује да ли су документи сваке особе важећи. Без бројева и фотографија.';
+
+  @override
+  String get clientLinkTitle => 'Линк за клијента';
+
+  @override
+  String get clientLinkBody => 'Клијент види имена особља, називе докумената, датуме истека и статус, уживо из Vaultare. Ваши записи, бројеви докумената, фотографије и е-адресе се никад не приказују.';
+
+  @override
+  String get clientLinkOneDay => '1 дан';
+
+  @override
+  String get clientLinkOneWeek => '7 дана';
+
+  @override
+  String get clientLinkOneMonth => '30 дана';
+
+  @override
+  String get clientLinkCreate => 'Направи и подели линк';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Стање докумената особља из Vaultare: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Заустави све линкове за клијенте';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Заустављени линкови за клијенте: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Линк није могао да се направи. Проверите везу и покушајте поново.';
+
+  @override
+  String get clientLinkTooMany => 'За сада сте достигли број линкова за клијенте. Зауставите старе линкове или покушајте сутра.';
+
+  @override
+  String get businessBenefitClientLink => 'Делите усклађеност особља уживо са клијентима';
+
+  @override
   String get businessBenefitPdf => 'PDF извоз за тим са називом ваше фирме';
 
   @override
@@ -8286,6 +8332,9 @@ class AppLocalizationsSr extends AppLocalizations {
   String get tourBusinessImportBody => 'Имате листу особља? Можете је увести из табеле, са именима и е-адресама.';
 
   @override
+  String get tourBusinessClientBody => 'Можете поделити линк само за читање са клијентом да види да су документи вашег особља важећи.';
+
+  @override
   String get tourBusinessRolesBody => 'Дајте свакој особи улогу, нпр. Возач, са документима који су јој потребни. Vaultara показује шта недостаје.';
 
   @override
@@ -13257,6 +13306,52 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get businessBenefitStaffImport => 'Увезите листу особља из табеле';
+
+  @override
+  String get clientLinkAction => 'Подели стање особља са клијентом';
+
+  @override
+  String get clientLinkHint => 'Линк само за читање који показује да ли су документи сваке особе важећи. Без бројева и фотографија.';
+
+  @override
+  String get clientLinkTitle => 'Линк за клијента';
+
+  @override
+  String get clientLinkBody => 'Клијент види имена особља, називе докумената, датуме истека и статус, уживо из Vaultare. Ваши записи, бројеви докумената, фотографије и е-адресе се никад не приказују.';
+
+  @override
+  String get clientLinkOneDay => '1 дан';
+
+  @override
+  String get clientLinkOneWeek => '7 дана';
+
+  @override
+  String get clientLinkOneMonth => '30 дана';
+
+  @override
+  String get clientLinkCreate => 'Направи и подели линк';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Стање докумената особља из Vaultare: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Заустави све линкове за клијенте';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Заустављени линкови за клијенте: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Линк није могао да се направи. Проверите везу и покушајте поново.';
+
+  @override
+  String get clientLinkTooMany => 'За сада сте достигли број линкова за клијенте. Зауставите старе линкове или покушајте сутра.';
+
+  @override
+  String get businessBenefitClientLink => 'Делите усклађеност особља уживо са клијентима';
 
   @override
   String get businessBenefitPdf => 'Тимски PDF извоз са називом ваше компаније';
@@ -18287,6 +18382,9 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get tourBusinessImportBody => 'Имате листу особља? Можете је увести из табеле, са именима и е-адресама.';
 
   @override
+  String get tourBusinessClientBody => 'Можете поделити линк само за читање са клијентом да види да су документи вашег особља важећи.';
+
+  @override
   String get tourBusinessRolesBody => 'Дајте свакој особи улогу, нпр. Возач, са документима који су јој потребни. Vaultara показује шта недостаје.';
 
   @override
@@ -23258,6 +23356,52 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get businessBenefitStaffImport => 'Uvezite listu osoblja iz tabele';
+
+  @override
+  String get clientLinkAction => 'Podeli stanje osoblja sa klijentom';
+
+  @override
+  String get clientLinkHint => 'Link samo za čitanje koji pokazuje da li su dokumenti svake osobe važeći. Bez brojeva i fotografija.';
+
+  @override
+  String get clientLinkTitle => 'Link za klijenta';
+
+  @override
+  String get clientLinkBody => 'Klijent vidi imena osoblja, nazive dokumenata, datume isteka i status, uživo iz Vaultare. Vaši zapisi, brojevi dokumenata, fotografije i e-adrese se nikad ne prikazuju.';
+
+  @override
+  String get clientLinkOneDay => '1 dan';
+
+  @override
+  String get clientLinkOneWeek => '7 dana';
+
+  @override
+  String get clientLinkOneMonth => '30 dana';
+
+  @override
+  String get clientLinkCreate => 'Napravi i podeli link';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Stanje dokumenata osoblja iz Vaultare: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Zaustavi sve linkove za klijente';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Zaustavljeni linkovi za klijente: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Link nije mogao da se napravi. Proverite vezu i pokušajte ponovo.';
+
+  @override
+  String get clientLinkTooMany => 'Za sada ste dostigli broj linkova za klijente. Zaustavite stare linkove ili pokušajte sutra.';
+
+  @override
+  String get businessBenefitClientLink => 'Delite usklađenost osoblja uživo sa klijentima';
 
   @override
   String get businessBenefitPdf => 'Timski PDF izvoz sa nazivom vaše firme';
@@ -28282,6 +28426,9 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get tourBusinessImportBody => 'Imate listu osoblja? Možete je uvesti iz tabele, sa imenima i e-adresama.';
+
+  @override
+  String get tourBusinessClientBody => 'Možete podeliti link samo za čitanje sa klijentom da vidi da su dokumenti vašeg osoblja važeći.';
 
   @override
   String get tourBusinessRolesBody => 'Dajte svakoj osobi ulogu, npr. Vozač, sa dokumentima koji su joj potrebni. Vaultara pokazuje šta nedostaje.';

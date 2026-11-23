@@ -3201,6 +3201,52 @@ class AppLocalizationsTh extends AppLocalizations {
   String get businessBenefitStaffImport => 'นำเข้ารายชื่อพนักงานจากสเปรดชีต';
 
   @override
+  String get clientLinkAction => 'แชร์สถานะพนักงานกับลูกค้า';
+
+  @override
+  String get clientLinkHint => 'ลิงก์แบบอ่านอย่างเดียวที่แสดงว่าเอกสารของแต่ละคนยังใช้ได้หรือไม่ ไม่มีหมายเลขหรือรูปภาพ';
+
+  @override
+  String get clientLinkTitle => 'ลิงก์สำหรับลูกค้า';
+
+  @override
+  String get clientLinkBody => 'ลูกค้าจะเห็นชื่อพนักงาน ชื่อเอกสาร วันหมดอายุ และสถานะ แบบสดจาก Vaultara ระเบียนของคุณเอง หมายเลขเอกสาร รูปภาพ และอีเมลจะไม่ถูกแสดง';
+
+  @override
+  String get clientLinkOneDay => '1 วัน';
+
+  @override
+  String get clientLinkOneWeek => '7 วัน';
+
+  @override
+  String get clientLinkOneMonth => '30 วัน';
+
+  @override
+  String get clientLinkCreate => 'สร้างและแชร์ลิงก์';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'สถานะเอกสารพนักงานจาก Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'หยุดลิงก์ลูกค้าทั้งหมด';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'หยุดลิงก์ลูกค้าแล้ว: $count';
+  }
+
+  @override
+  String get clientLinkError => 'สร้างลิงก์ไม่ได้ ตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง';
+
+  @override
+  String get clientLinkTooMany => 'ตอนนี้คุณใช้ลิงก์ลูกค้าครบจำนวนแล้ว หยุดลิงก์เก่าหรือลองใหม่พรุ่งนี้';
+
+  @override
+  String get businessBenefitClientLink => 'แชร์การปฏิบัติตามข้อกำหนดของพนักงานกับลูกค้าแบบสด';
+
+  @override
   String get businessBenefitPdf => 'ส่งออก PDF ของทีมพร้อมชื่อบริษัทของคุณ';
 
   @override
@@ -8145,6 +8191,9 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'มีรายชื่อพนักงานอยู่แล้ว? คุณนำเข้าจากสเปรดชีตพร้อมชื่อและอีเมลได้';
+
+  @override
+  String get tourBusinessClientBody => 'คุณแชร์ลิงก์แบบอ่านอย่างเดียวกับลูกค้าได้ เพื่อให้เห็นว่าเอกสารของพนักงานคุณยังใช้ได้';
 
   @override
   String get tourBusinessRolesBody => 'กำหนดตำแหน่งให้แต่ละคน เช่น พนักงานขับรถ พร้อมเอกสารที่ต้องมี Vaultara จะแสดงสิ่งที่ขาด';

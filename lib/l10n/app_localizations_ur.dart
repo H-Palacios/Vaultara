@@ -3229,6 +3229,52 @@ class AppLocalizationsUr extends AppLocalizations {
   String get businessBenefitStaffImport => 'اپنے عملے کی فہرست اسپریڈشیٹ سے درآمد کریں';
 
   @override
+  String get clientLinkAction => 'گاہک کے ساتھ عملے کی صورتحال شیئر کریں';
+
+  @override
+  String get clientLinkHint => 'صرف پڑھنے والا لنک جو دکھاتا ہے کہ ہر شخص کی دستاویزات درست ہیں یا نہیں۔ کوئی نمبر یا تصویر نہیں۔';
+
+  @override
+  String get clientLinkTitle => 'گاہک کے لیے لنک';
+
+  @override
+  String get clientLinkBody => 'گاہک Vaultara سے براہ راست عملے کے نام، دستاویزات کے نام، میعاد ختم ہونے کی تاریخیں اور صورتحال دیکھتا ہے۔ آپ کے اپنے ریکارڈ، دستاویز نمبر، تصاویر اور ای میلز کبھی نہیں دکھائی جاتیں۔';
+
+  @override
+  String get clientLinkOneDay => '1 دن';
+
+  @override
+  String get clientLinkOneWeek => '7 دن';
+
+  @override
+  String get clientLinkOneMonth => '30 دن';
+
+  @override
+  String get clientLinkCreate => 'لنک بنائیں اور شیئر کریں';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Vaultara سے عملے کی دستاویزات کی صورتحال: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'گاہکوں کے سارے لنک بند کریں';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'بند کیے گئے گاہک لنک: $count';
+  }
+
+  @override
+  String get clientLinkError => 'لنک نہیں بن سکا۔ اپنا کنکشن چیک کریں اور دوبارہ کوشش کریں۔';
+
+  @override
+  String get clientLinkTooMany => 'فی الحال آپ گاہک لنکس کی تعداد تک پہنچ گئے ہیں۔ پرانے لنک بند کریں یا کل کوشش کریں۔';
+
+  @override
+  String get businessBenefitClientLink => 'گاہکوں کے ساتھ عملے کی تعمیل براہ راست شیئر کریں';
+
+  @override
   String get businessBenefitPdf => 'آپ کی کمپنی کے نام کے ساتھ ٹیم PDF ایکسپورٹ';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'عملے کی فہرست پہلے سے ہے؟ آپ اسے ناموں اور ای میلز کے ساتھ اسپریڈشیٹ سے درآمد کر سکتے ہیں۔';
+
+  @override
+  String get tourBusinessClientBody => 'آپ گاہک کے ساتھ صرف پڑھنے والا لنک شیئر کر سکتے ہیں، تاکہ وہ دیکھے کہ آپ کے عملے کی دستاویزات درست ہیں۔';
 
   @override
   String get tourBusinessRolesBody => 'ہر شخص کو ڈرائیور جیسا کردار اس کی ضروری دستاویزات کے ساتھ دیں۔ کیا کمی ہے، Vaultara دکھاتا ہے۔';

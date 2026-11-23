@@ -3229,6 +3229,52 @@ class AppLocalizationsSq extends AppLocalizations {
   String get businessBenefitStaffImport => 'Importo listën e stafit nga një fletëllogaritëse';
 
   @override
+  String get clientLinkAction => 'Ndaj gjendjen e stafit me një klient';
+
+  @override
+  String get clientLinkHint => 'Një lidhje vetëm për lexim që tregon nëse dokumentet e secilit janë në rregull. Pa numra dhe foto.';
+
+  @override
+  String get clientLinkTitle => 'Lidhje për një klient';
+
+  @override
+  String get clientLinkBody => 'Klienti sheh emrat e stafit, emrat e dokumenteve, datat e skadimit dhe gjendjen, drejtpërdrejt nga Vaultara. Regjistrimet e tua, numrat e dokumenteve, fotot dhe email-et nuk shfaqen kurrë.';
+
+  @override
+  String get clientLinkOneDay => '1 ditë';
+
+  @override
+  String get clientLinkOneWeek => '7 ditë';
+
+  @override
+  String get clientLinkOneMonth => '30 ditë';
+
+  @override
+  String get clientLinkCreate => 'Krijo dhe ndaj lidhjen';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Gjendja e dokumenteve të stafit nga Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Ndalo të gjitha lidhjet e klientëve';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Lidhje klientësh të ndaluara: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Lidhja nuk u krijua dot. Kontrollo lidhjen dhe provo përsëri.';
+
+  @override
+  String get clientLinkTooMany => 'Për momentin ke arritur numrin e lidhjeve të klientëve. Ndalo lidhjet e vjetra ose provo nesër.';
+
+  @override
+  String get businessBenefitClientLink => 'Ndaj drejtpërdrejt përputhshmërinë e stafit me klientët';
+
+  @override
   String get businessBenefitPdf => 'Eksport PDF për ekipin me emrin e kompanisë suaj';
 
   @override
@@ -8218,6 +8264,9 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Ke tashmë një listë stafi? Mund ta importosh nga një fletëllogaritëse, me emra dhe email-e.';
+
+  @override
+  String get tourBusinessClientBody => 'Mund të ndash një lidhje vetëm për lexim me një klient, që të shohë se dokumentet e stafit tënd janë në rregull.';
 
   @override
   String get tourBusinessRolesBody => 'Jepi çdo personi një rol, si Shofer, me dokumentet që kërkon. Vaultara tregon çfarë mungon.';

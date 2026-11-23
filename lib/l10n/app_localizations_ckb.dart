@@ -3229,6 +3229,52 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get businessBenefitStaffImport => 'لیستی کارمەندانت لە خشتەیەکەوە بهێنە';
 
   @override
+  String get clientLinkAction => 'دۆخی کارمەندان لەگەڵ کڕیارێک هاوبەش بکە';
+
+  @override
+  String get clientLinkHint => 'بەستەرێکی تەنها خوێندنەوە کە پیشان دەدات بەڵگەنامەکانی هەر کەسێک نوێن یان نا. بێ ژمارە و وێنە.';
+
+  @override
+  String get clientLinkTitle => 'بەستەر بۆ کڕیار';
+
+  @override
+  String get clientLinkBody => 'کڕیار ناوی کارمەندان، ناوی بەڵگەنامەکان، بەرواری بەسەرچوون و دۆخ ڕاستەوخۆ لە Vaultara دەبینێت. تۆمارەکانی خۆت، ژمارەی بەڵگەنامە، وێنە و ئیمەیڵەکان هەرگیز پیشان نادرێن.';
+
+  @override
+  String get clientLinkOneDay => '١ ڕۆژ';
+
+  @override
+  String get clientLinkOneWeek => '٧ ڕۆژ';
+
+  @override
+  String get clientLinkOneMonth => '٣٠ ڕۆژ';
+
+  @override
+  String get clientLinkCreate => 'بەستەر دروست بکە و هاوبەشی بکە';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'دۆخی بەڵگەنامەی کارمەندان لە Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'هەموو بەستەرەکانی کڕیار ڕابگرە';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'بەستەرە ڕاگیراوەکانی کڕیار: $count';
+  }
+
+  @override
+  String get clientLinkError => 'بەستەرەکە دروست نەکرا. پەیوەندییەکەت بپشکنە و دووبارە هەوڵ بدەرەوە.';
+
+  @override
+  String get clientLinkTooMany => 'ئێستا گەیشتوویتە ژمارەی بەستەرەکانی کڕیار. بەستەرە کۆنەکان ڕابگرە یان سبەی هەوڵ بدەرەوە.';
+
+  @override
+  String get businessBenefitClientLink => 'پابەندبوونی کارمەندان بە ڕاستەوخۆ لەگەڵ کڕیاران هاوبەش بکە';
+
+  @override
   String get businessBenefitPdf => 'هەناردەکردنی PDFی تیم بە ناوی کۆمپانیاکەتەوە';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'لیستی کارمەندانت هەیە؟ دەتوانیت لە خشتەیەکەوە بە ناو و ئیمەیڵەوە بیهێنیت.';
+
+  @override
+  String get tourBusinessClientBody => 'دەتوانیت بەستەرێکی تەنها خوێندنەوە لەگەڵ کڕیارێک هاوبەش بکەیت تا ببینێت بەڵگەنامەکانی کارمەندانت نوێن.';
 
   @override
   String get tourBusinessRolesBody => 'ڕۆڵێک بدە بە هەر کەسێک، وەک شۆفێر، لەگەڵ ئەو بەڵگەنامانەی پێویستی پێیەتی. Vaultara پیشان دەدات چی نییە.';

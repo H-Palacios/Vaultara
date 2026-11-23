@@ -3565,6 +3565,72 @@
   "@businessBenefitStaffImport": {
     "description": "Business plan benefit on the Plans screen."
   },
+  "clientLinkAction": "Share staff compliance with a client",
+  "@clientLinkAction": {
+    "description": "Business: tile that shares a read-only staff compliance link with a client."
+  },
+  "clientLinkHint": "A read-only link showing whether each person's documents are up to date. No numbers or photos.",
+  "@clientLinkHint": {
+    "description": "Note on the client link tile."
+  },
+  "clientLinkTitle": "Link for a client",
+  "@clientLinkTitle": {
+    "description": "Title of the client link sheet."
+  },
+  "clientLinkBody": "The client sees staff names, document names, expiry dates and a status, live from Vaultara. Your own records, document numbers, photos and emails are never shown.",
+  "@clientLinkBody": {
+    "description": "What the client sees."
+  },
+  "clientLinkOneDay": "1 day",
+  "@clientLinkOneDay": {
+    "description": "How long the link works."
+  },
+  "clientLinkOneWeek": "7 days",
+  "@clientLinkOneWeek": {
+    "description": "How long the link works."
+  },
+  "clientLinkOneMonth": "30 days",
+  "@clientLinkOneMonth": {
+    "description": "How long the link works."
+  },
+  "clientLinkCreate": "Create and share link",
+  "@clientLinkCreate": {
+    "description": "Button that makes the link and opens sharing."
+  },
+  "clientLinkShareText": "Staff document status from Vaultara: {url}",
+  "@clientLinkShareText": {
+    "description": "Message shared with the link. {url} is the address.",
+    "placeholders": {
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "clientLinkStopAll": "Stop all client links",
+  "@clientLinkStopAll": {
+    "description": "Button that stops every client link."
+  },
+  "clientLinkStopped": "Client links stopped: {count}",
+  "@clientLinkStopped": {
+    "description": "After stopping links.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "clientLinkError": "The link could not be made. Check your connection and try again.",
+  "@clientLinkError": {
+    "description": "When the link could not be made."
+  },
+  "clientLinkTooMany": "You have reached the number of client links for now. Stop old links or try again tomorrow.",
+  "@clientLinkTooMany": {
+    "description": "When too many links were made."
+  },
+  "businessBenefitClientLink": "Share live staff compliance with clients",
+  "@businessBenefitClientLink": {
+    "description": "Business plan benefit on the Plans screen."
+  },
   "businessBenefitPdf": "Team PDF export with your company name",
   "@businessBenefitPdf": {
     "description": "Business plan benefit"
@@ -10163,6 +10229,10 @@
   },
   "tourBusinessImportBody": "Have a staff list already? You can import it from a spreadsheet, with names and emails.",
   "@tourBusinessImportBody": {
+    "description": "Text of a tutorial step."
+  },
+  "tourBusinessClientBody": "You can share a read-only link with a client, so they can see your staff's documents are up to date.",
+  "@tourBusinessClientBody": {
     "description": "Text of a tutorial step."
   },
   "tourBusinessRolesBody": "Give each person a role, like Driver, with the documents it needs. Vaultara shows what is missing.",

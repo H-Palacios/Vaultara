@@ -3229,6 +3229,52 @@ class AppLocalizationsTa extends AppLocalizations {
   String get businessBenefitStaffImport => 'உங்கள் பணியாளர் பட்டியலை விரிதாளிலிருந்து இறக்குமதி செய்யுங்கள்';
 
   @override
+  String get clientLinkAction => 'பணியாளர் நிலையை வாடிக்கையாளருடன் பகிர்';
+
+  @override
+  String get clientLinkHint => 'ஒவ்வொருவரின் ஆவணங்களும் செல்லுபடியானவையா என்று காட்டும் படிக்க மட்டுமான இணைப்பு. எண்களோ படங்களோ இல்லை.';
+
+  @override
+  String get clientLinkTitle => 'வாடிக்கையாளருக்கான இணைப்பு';
+
+  @override
+  String get clientLinkBody => 'வாடிக்கையாளர் Vaultara-இலிருந்து நேரடியாகப் பணியாளர் பெயர்கள், ஆவணப் பெயர்கள், காலாவதித் தேதிகள், நிலை ஆகியவற்றைப் பார்ப்பார். உங்கள் சொந்தப் பதிவுகள், ஆவண எண்கள், படங்கள், மின்னஞ்சல்கள் ஒருபோதும் காட்டப்படாது.';
+
+  @override
+  String get clientLinkOneDay => '1 நாள்';
+
+  @override
+  String get clientLinkOneWeek => '7 நாட்கள்';
+
+  @override
+  String get clientLinkOneMonth => '30 நாட்கள்';
+
+  @override
+  String get clientLinkCreate => 'இணைப்பை உருவாக்கிப் பகிர்';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Vaultara-இலிருந்து பணியாளர் ஆவண நிலை: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'அனைத்து வாடிக்கையாளர் இணைப்புகளையும் நிறுத்து';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'நிறுத்தப்பட்ட வாடிக்கையாளர் இணைப்புகள்: $count';
+  }
+
+  @override
+  String get clientLinkError => 'இணைப்பை உருவாக்க முடியவில்லை. இணைப்பைச் சரிபார்த்து மீண்டும் முயலுங்கள்.';
+
+  @override
+  String get clientLinkTooMany => 'இப்போதைக்கு வாடிக்கையாளர் இணைப்புகளின் எண்ணிக்கையை அடைந்துவிட்டீர்கள். பழைய இணைப்புகளை நிறுத்துங்கள் அல்லது நாளை முயலுங்கள்.';
+
+  @override
+  String get businessBenefitClientLink => 'பணியாளர் இணக்கத்தை வாடிக்கையாளர்களுடன் நேரலையாகப் பகிருங்கள்';
+
+  @override
   String get businessBenefitPdf => 'உங்கள் நிறுவனப் பெயருடன் குழுவுக்கான PDF ஏற்றுமதி';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'பணியாளர் பட்டியல் ஏற்கெனவே உள்ளதா? பெயர்கள், மின்னஞ்சல்களுடன் விரிதாளிலிருந்து இறக்குமதி செய்யலாம்.';
+
+  @override
+  String get tourBusinessClientBody => 'உங்கள் பணியாளர்களின் ஆவணங்கள் செல்லுபடியானவை என்று காட்ட, வாடிக்கையாளருடன் படிக்க மட்டுமான இணைப்பைப் பகிரலாம்.';
 
   @override
   String get tourBusinessRolesBody => 'ஒவ்வொருவருக்கும் ஓட்டுநர் போன்ற பணியை அதற்குத் தேவையான ஆவணங்களுடன் கொடுங்கள். எது இல்லை என்று Vaultara காட்டும்.';

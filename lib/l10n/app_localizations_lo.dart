@@ -3213,6 +3213,52 @@ class AppLocalizationsLo extends AppLocalizations {
   String get businessBenefitStaffImport => 'ນຳເຂົ້າລາຍຊື່ພະນັກງານຈາກສະເປຣດຊີດ';
 
   @override
+  String get clientLinkAction => 'ແບ່ງປັນສະຖານະພະນັກງານກັບລູກຄ້າ';
+
+  @override
+  String get clientLinkHint => 'ລິ້ງອ່ານຢ່າງດຽວທີ່ສະແດງວ່າເອກະສານຂອງແຕ່ລະຄົນຍັງໃຊ້ໄດ້ຫຼືບໍ່. ບໍ່ມີເລກ ຫຼື ຮູບ.';
+
+  @override
+  String get clientLinkTitle => 'ລິ້ງສຳລັບລູກຄ້າ';
+
+  @override
+  String get clientLinkBody => 'ລູກຄ້າເຫັນຊື່ພະນັກງານ, ຊື່ເອກະສານ, ວັນໝົດອາຍຸ ແລະ ສະຖານະ ໂດຍກົງຈາກ Vaultara. ລາຍການຂອງທ່ານເອງ, ເລກເອກະສານ, ຮູບ ແລະ ອີເມວ ຈະບໍ່ຖືກສະແດງ.';
+
+  @override
+  String get clientLinkOneDay => '1 ມື້';
+
+  @override
+  String get clientLinkOneWeek => '7 ມື້';
+
+  @override
+  String get clientLinkOneMonth => '30 ມື້';
+
+  @override
+  String get clientLinkCreate => 'ສ້າງ ແລະ ແບ່ງປັນລິ້ງ';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'ສະຖານະເອກະສານພະນັກງານຈາກ Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'ຢຸດລິ້ງລູກຄ້າທັງໝົດ';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'ລິ້ງລູກຄ້າທີ່ຢຸດແລ້ວ: $count';
+  }
+
+  @override
+  String get clientLinkError => 'ບໍ່ສາມາດສ້າງລິ້ງໄດ້. ກວດການເຊື່ອມຕໍ່ ແລ້ວລອງໃໝ່.';
+
+  @override
+  String get clientLinkTooMany => 'ຕອນນີ້ທ່ານໃຊ້ລິ້ງລູກຄ້າຄົບຈຳນວນແລ້ວ. ຢຸດລິ້ງເກົ່າ ຫຼື ລອງໃໝ່ມື້ອື່ນ.';
+
+  @override
+  String get businessBenefitClientLink => 'ແບ່ງປັນການປະຕິບັດຕາມຂອງພະນັກງານກັບລູກຄ້າແບບສົດ';
+
+  @override
   String get businessBenefitPdf => 'ສົ່ງອອກ PDF ຂອງທີມພ້ອມຊື່ບໍລິສັດຂອງທ່ານ';
 
   @override
@@ -8157,6 +8203,9 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'ມີລາຍຊື່ພະນັກງານແລ້ວບໍ? ທ່ານສາມາດນຳເຂົ້າຈາກສະເປຣດຊີດ ພ້ອມຊື່ ແລະ ອີເມວ.';
+
+  @override
+  String get tourBusinessClientBody => 'ທ່ານສາມາດແບ່ງປັນລິ້ງອ່ານຢ່າງດຽວກັບລູກຄ້າ ເພື່ອໃຫ້ເຫັນວ່າເອກະສານຂອງພະນັກງານທ່ານຍັງໃຊ້ໄດ້.';
 
   @override
   String get tourBusinessRolesBody => 'ໃຫ້ແຕ່ລະຄົນມີໜ້າທີ່ ເຊັ່ນ ຄົນຂັບລົດ ພ້ອມເອກະສານທີ່ຕ້ອງການ. Vaultara ສະແດງສິ່ງທີ່ຂາດ.';

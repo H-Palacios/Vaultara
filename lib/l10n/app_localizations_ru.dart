@@ -3296,6 +3296,52 @@ class AppLocalizationsRu extends AppLocalizations {
   String get businessBenefitStaffImport => 'Импортируйте список сотрудников из таблицы';
 
   @override
+  String get clientLinkAction => 'Поделиться статусом сотрудников с клиентом';
+
+  @override
+  String get clientLinkHint => 'Ссылка только для просмотра, которая показывает, действуют ли документы каждого человека. Без номеров и фото.';
+
+  @override
+  String get clientLinkTitle => 'Ссылка для клиента';
+
+  @override
+  String get clientLinkBody => 'Клиент видит имена сотрудников, названия документов, сроки действия и статус в реальном времени из Vaultara. Ваши собственные записи, номера документов, фото и email никогда не показываются.';
+
+  @override
+  String get clientLinkOneDay => '1 день';
+
+  @override
+  String get clientLinkOneWeek => '7 дней';
+
+  @override
+  String get clientLinkOneMonth => '30 дней';
+
+  @override
+  String get clientLinkCreate => 'Создать ссылку и поделиться';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Статус документов сотрудников из Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Остановить все ссылки для клиентов';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Остановлено ссылок для клиентов: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Не удалось создать ссылку. Проверьте подключение и попробуйте снова.';
+
+  @override
+  String get clientLinkTooMany => 'Пока достигнут лимит ссылок для клиентов. Остановите старые ссылки или попробуйте завтра.';
+
+  @override
+  String get businessBenefitClientLink => 'Делитесь соответствием сотрудников с клиентами в реальном времени';
+
+  @override
   String get businessBenefitPdf => 'Командный экспорт PDF с названием вашей компании';
 
   @override
@@ -8363,6 +8409,9 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Уже есть список сотрудников? Его можно импортировать из таблицы с именами и email.';
+
+  @override
+  String get tourBusinessClientBody => 'Можно поделиться с клиентом ссылкой только для просмотра, чтобы он видел, что документы ваших сотрудников действуют.';
 
   @override
   String get tourBusinessRolesBody => 'Укажите каждому должность, например Водитель, с нужными документами. Vaultara покажет, чего не хватает.';

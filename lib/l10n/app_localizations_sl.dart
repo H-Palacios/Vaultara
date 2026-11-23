@@ -3287,6 +3287,52 @@ class AppLocalizationsSl extends AppLocalizations {
   String get businessBenefitStaffImport => 'Uvozite seznam zaposlenih iz preglednice';
 
   @override
+  String get clientLinkAction => 'Deli stanje zaposlenih s stranko';
+
+  @override
+  String get clientLinkHint => 'Povezava samo za branje, ki pokaže, ali so dokumenti vsake osebe veljavni. Brez številk in fotografij.';
+
+  @override
+  String get clientLinkTitle => 'Povezava za stranko';
+
+  @override
+  String get clientLinkBody => 'Stranka vidi imena zaposlenih, imena dokumentov, datume veljavnosti in stanje, v živo iz Vaultare. Vaši zapisi, številke dokumentov, fotografije in e-naslovi se nikoli ne prikažejo.';
+
+  @override
+  String get clientLinkOneDay => '1 dan';
+
+  @override
+  String get clientLinkOneWeek => '7 dni';
+
+  @override
+  String get clientLinkOneMonth => '30 dni';
+
+  @override
+  String get clientLinkCreate => 'Ustvari in deli povezavo';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Stanje dokumentov zaposlenih iz Vaultare: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Ustavi vse povezave za stranke';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Ustavljene povezave za stranke: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Povezave ni bilo mogoče ustvariti. Preverite povezavo in poskusite znova.';
+
+  @override
+  String get clientLinkTooMany => 'Zaenkrat ste dosegli število povezav za stranke. Ustavite stare povezave ali poskusite jutri.';
+
+  @override
+  String get businessBenefitClientLink => 'Delite skladnost zaposlenih s strankami v živo';
+
+  @override
   String get businessBenefitPdf => 'Izvoz PDF za ekipo z imenom vašega podjetja';
 
   @override
@@ -8354,6 +8400,9 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Že imate seznam zaposlenih? Uvozite ga lahko iz preglednice z imeni in e-naslovi.';
+
+  @override
+  String get tourBusinessClientBody => 'S stranko lahko delite povezavo samo za branje, da vidi, da so dokumenti vaših zaposlenih veljavni.';
 
   @override
   String get tourBusinessRolesBody => 'Vsaki osebi dodelite vlogo, npr. Voznik, z dokumenti, ki jih potrebuje. Vaultara pokaže, kaj manjka.';

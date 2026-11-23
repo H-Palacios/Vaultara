@@ -3229,6 +3229,52 @@ class AppLocalizationsEl extends AppLocalizations {
   String get businessBenefitStaffImport => 'Εισαγωγή της λίστας προσωπικού από υπολογιστικό φύλλο';
 
   @override
+  String get clientLinkAction => 'Κοινοποίηση κατάστασης προσωπικού σε πελάτη';
+
+  @override
+  String get clientLinkHint => 'Σύνδεσμος μόνο για ανάγνωση που δείχνει αν τα έγγραφα κάθε ατόμου είναι σε ισχύ. Χωρίς αριθμούς ή φωτογραφίες.';
+
+  @override
+  String get clientLinkTitle => 'Σύνδεσμος για πελάτη';
+
+  @override
+  String get clientLinkBody => 'Ο πελάτης βλέπει ονόματα προσωπικού, ονόματα εγγράφων, ημερομηνίες λήξης και κατάσταση, ζωντανά από το Vaultara. Οι δικές σας εγγραφές, οι αριθμοί εγγράφων, οι φωτογραφίες και τα email δεν εμφανίζονται ποτέ.';
+
+  @override
+  String get clientLinkOneDay => '1 ημέρα';
+
+  @override
+  String get clientLinkOneWeek => '7 ημέρες';
+
+  @override
+  String get clientLinkOneMonth => '30 ημέρες';
+
+  @override
+  String get clientLinkCreate => 'Δημιουργία και κοινοποίηση συνδέσμου';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Κατάσταση εγγράφων προσωπικού από το Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Διακοπή όλων των συνδέσμων πελατών';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Σύνδεσμοι πελατών που διακόπηκαν: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Δεν ήταν δυνατή η δημιουργία του συνδέσμου. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.';
+
+  @override
+  String get clientLinkTooMany => 'Φτάσατε τον αριθμό συνδέσμων πελατών προς το παρόν. Διακόψτε παλιούς συνδέσμους ή δοκιμάστε αύριο.';
+
+  @override
+  String get businessBenefitClientLink => 'Κοινοποιήστε ζωντανά τη συμμόρφωση του προσωπικού σε πελάτες';
+
+  @override
   String get businessBenefitPdf => 'Εξαγωγή PDF για την ομάδα με την επωνυμία της εταιρείας σας';
 
   @override
@@ -8218,6 +8264,9 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Έχετε ήδη λίστα προσωπικού; Μπορείτε να την εισαγάγετε από υπολογιστικό φύλλο, με ονόματα και email.';
+
+  @override
+  String get tourBusinessClientBody => 'Μπορείτε να κοινοποιήσετε σε πελάτη έναν σύνδεσμο μόνο για ανάγνωση, ώστε να βλέπει ότι τα έγγραφα του προσωπικού σας είναι σε ισχύ.';
 
   @override
   String get tourBusinessRolesBody => 'Δώστε σε κάθε άτομο έναν ρόλο, π.χ. Οδηγός, με τα έγγραφα που χρειάζεται. Το Vaultara δείχνει τι λείπει.';

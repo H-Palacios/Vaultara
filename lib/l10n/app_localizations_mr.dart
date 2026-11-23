@@ -3229,6 +3229,52 @@ class AppLocalizationsMr extends AppLocalizations {
   String get businessBenefitStaffImport => 'तुमची कर्मचारी यादी स्प्रेडशीटमधून इम्पोर्ट करा';
 
   @override
+  String get clientLinkAction => 'ग्राहकासोबत कर्मचाऱ्यांची स्थिती शेअर करा';
+
+  @override
+  String get clientLinkHint => 'प्रत्येकाची कागदपत्रे वैध आहेत का ते दाखवणारी फक्त वाचण्याची लिंक. क्रमांक किंवा फोटो नाहीत.';
+
+  @override
+  String get clientLinkTitle => 'ग्राहकासाठी लिंक';
+
+  @override
+  String get clientLinkBody => 'ग्राहक Vaultara मधून थेट कर्मचाऱ्यांची नावे, कागदपत्रांची नावे, समाप्ती तारखा आणि स्थिती पाहतो. तुमच्या स्वतःच्या नोंदी, कागदपत्र क्रमांक, फोटो आणि ईमेल कधीही दाखवले जात नाहीत.';
+
+  @override
+  String get clientLinkOneDay => '1 दिवस';
+
+  @override
+  String get clientLinkOneWeek => '7 दिवस';
+
+  @override
+  String get clientLinkOneMonth => '30 दिवस';
+
+  @override
+  String get clientLinkCreate => 'लिंक तयार करा आणि शेअर करा';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Vaultara मधून कर्मचारी कागदपत्रांची स्थिती: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'सर्व ग्राहक लिंक थांबवा';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'थांबवलेल्या ग्राहक लिंक: $count';
+  }
+
+  @override
+  String get clientLinkError => 'लिंक तयार करता आली नाही. कनेक्शन तपासा आणि पुन्हा प्रयत्न करा.';
+
+  @override
+  String get clientLinkTooMany => 'सध्या तुम्ही ग्राहक लिंकच्या संख्येपर्यंत पोहोचलात. जुन्या लिंक थांबवा किंवा उद्या पुन्हा प्रयत्न करा.';
+
+  @override
+  String get businessBenefitClientLink => 'ग्राहकांसोबत कर्मचाऱ्यांचे अनुपालन थेट शेअर करा';
+
+  @override
   String get businessBenefitPdf => 'तुमच्या कंपनीच्या नावासह टीमसाठी PDF एक्सपोर्ट';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'कर्मचाऱ्यांची यादी आधीच आहे? ती नावे आणि ईमेलसह स्प्रेडशीटमधून इम्पोर्ट करू शकता.';
+
+  @override
+  String get tourBusinessClientBody => 'तुमच्या कर्मचाऱ्यांची कागदपत्रे वैध आहेत हे दाखवण्यासाठी तुम्ही ग्राहकासोबत फक्त वाचण्याची लिंक शेअर करू शकता.';
 
   @override
   String get tourBusinessRolesBody => 'प्रत्येकाला चालकासारखी भूमिका, तिला लागणाऱ्या कागदपत्रांसह द्या. काय कमी आहे ते Vaultara दाखवते.';

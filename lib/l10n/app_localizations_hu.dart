@@ -3229,6 +3229,52 @@ class AppLocalizationsHu extends AppLocalizations {
   String get businessBenefitStaffImport => 'Munkatársi lista importálása táblázatból';
 
   @override
+  String get clientLinkAction => 'Munkatársak állapotának megosztása ügyféllel';
+
+  @override
+  String get clientLinkHint => 'Csak olvasható link, amely megmutatja, érvényesek-e az egyes személyek dokumentumai. Számok és fotók nélkül.';
+
+  @override
+  String get clientLinkTitle => 'Link ügyfélnek';
+
+  @override
+  String get clientLinkBody => 'Az ügyfél a munkatársak nevét, a dokumentumok nevét, a lejárati dátumokat és az állapotot látja, élőben a Vaultarából. A saját tételeid, a dokumentumszámok, a fotók és az e-mailek soha nem jelennek meg.';
+
+  @override
+  String get clientLinkOneDay => '1 nap';
+
+  @override
+  String get clientLinkOneWeek => '7 nap';
+
+  @override
+  String get clientLinkOneMonth => '30 nap';
+
+  @override
+  String get clientLinkCreate => 'Link létrehozása és megosztása';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Munkatársi dokumentumok állapota a Vaultarából: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Összes ügyféllink leállítása';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Leállított ügyféllinkek: $count';
+  }
+
+  @override
+  String get clientLinkError => 'A linket nem sikerült létrehozni. Ellenőrizd a kapcsolatot, és próbáld újra.';
+
+  @override
+  String get clientLinkTooMany => 'Egyelőre elérted az ügyféllinkek számát. Állíts le régi linkeket, vagy próbáld újra holnap.';
+
+  @override
+  String get businessBenefitClientLink => 'Munkatársi megfelelés élő megosztása ügyfelekkel';
+
+  @override
   String get businessBenefitPdf => 'Csapatos PDF-exportálás a cége nevével';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Van már munkatársi listád? Táblázatból is importálhatod nevekkel és e-mail-címekkel.';
+
+  @override
+  String get tourBusinessClientBody => 'Megoszthatsz egy csak olvasható linket egy ügyféllel, hogy lássa: a munkatársaid dokumentumai érvényesek.';
 
   @override
   String get tourBusinessRolesBody => 'Adj mindenkinek munkakört, például Sofőr, a szükséges dokumentumokkal. A Vaultara megmutatja, mi hiányzik.';

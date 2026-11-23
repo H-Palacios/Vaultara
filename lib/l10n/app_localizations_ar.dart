@@ -3333,6 +3333,52 @@ class AppLocalizationsAr extends AppLocalizations {
   String get businessBenefitStaffImport => 'استورد قائمة موظفيك من جدول بيانات';
 
   @override
+  String get clientLinkAction => 'مشاركة حالة الموظفين مع عميل';
+
+  @override
+  String get clientLinkHint => 'رابط للقراءة فقط يوضح ما إذا كانت مستندات كل شخص سارية. بلا أرقام أو صور.';
+
+  @override
+  String get clientLinkTitle => 'رابط لعميل';
+
+  @override
+  String get clientLinkBody => 'يرى العميل أسماء الموظفين وأسماء المستندات وتواريخ الانتهاء والحالة، مباشرة من Vaultara. لا تظهر أبداً سجلاتك الخاصة أو أرقام المستندات أو الصور أو عناوين البريد.';
+
+  @override
+  String get clientLinkOneDay => 'يوم واحد';
+
+  @override
+  String get clientLinkOneWeek => '7 أيام';
+
+  @override
+  String get clientLinkOneMonth => '30 يوماً';
+
+  @override
+  String get clientLinkCreate => 'إنشاء الرابط ومشاركته';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'حالة مستندات الموظفين من Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'إيقاف كل روابط العملاء';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'روابط العملاء المتوقفة: $count';
+  }
+
+  @override
+  String get clientLinkError => 'تعذّر إنشاء الرابط. تحقق من اتصالك وحاول مرة أخرى.';
+
+  @override
+  String get clientLinkTooMany => 'وصلت إلى حد روابط العملاء حالياً. أوقف الروابط القديمة أو حاول غداً.';
+
+  @override
+  String get businessBenefitClientLink => 'شارك امتثال الموظفين المباشر مع العملاء';
+
+  @override
   String get businessBenefitPdf => 'تصدير PDF للفريق باسم شركتك';
 
   @override
@@ -8439,6 +8485,9 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'لديك قائمة موظفين؟ يمكنك استيرادها من جدول بيانات بالأسماء والبريد الإلكتروني.';
+
+  @override
+  String get tourBusinessClientBody => 'يمكنك مشاركة رابط للقراءة فقط مع عميل ليرى أن مستندات موظفيك سارية.';
 
   @override
   String get tourBusinessRolesBody => 'امنح كل شخص دورًا، مثل سائق، مع المستندات التي يحتاجها. ويعرض Vaultara ما هو ناقص.';

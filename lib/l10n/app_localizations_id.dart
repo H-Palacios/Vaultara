@@ -3208,6 +3208,52 @@ class AppLocalizationsId extends AppLocalizations {
   String get businessBenefitStaffImport => 'Impor daftar staf Anda dari spreadsheet';
 
   @override
+  String get clientLinkAction => 'Bagikan status staf dengan klien';
+
+  @override
+  String get clientLinkHint => 'Tautan hanya-baca yang menunjukkan apakah dokumen setiap orang masih berlaku. Tanpa nomor atau foto.';
+
+  @override
+  String get clientLinkTitle => 'Tautan untuk klien';
+
+  @override
+  String get clientLinkBody => 'Klien melihat nama staf, nama dokumen, tanggal kedaluwarsa, dan status, langsung dari Vaultara. Catatan Anda sendiri, nomor dokumen, foto, dan email tidak pernah ditampilkan.';
+
+  @override
+  String get clientLinkOneDay => '1 hari';
+
+  @override
+  String get clientLinkOneWeek => '7 hari';
+
+  @override
+  String get clientLinkOneMonth => '30 hari';
+
+  @override
+  String get clientLinkCreate => 'Buat dan bagikan tautan';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Status dokumen staf dari Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Hentikan semua tautan klien';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Tautan klien dihentikan: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Tautan tidak dapat dibuat. Periksa koneksi Anda dan coba lagi.';
+
+  @override
+  String get clientLinkTooMany => 'Anda telah mencapai jumlah tautan klien untuk saat ini. Hentikan tautan lama atau coba lagi besok.';
+
+  @override
+  String get businessBenefitClientLink => 'Bagikan kepatuhan staf secara langsung dengan klien';
+
+  @override
   String get businessBenefitPdf => 'Ekspor PDF tim dengan nama perusahaan Anda';
 
   @override
@@ -8152,6 +8198,9 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Sudah punya daftar staf? Anda bisa mengimpornya dari spreadsheet, dengan nama dan email.';
+
+  @override
+  String get tourBusinessClientBody => 'Anda bisa membagikan tautan hanya-baca dengan klien, agar mereka melihat dokumen staf Anda masih berlaku.';
 
   @override
   String get tourBusinessRolesBody => 'Berikan setiap orang sebuah peran, seperti Sopir, dengan dokumen yang dibutuhkannya. Vaultara menunjukkan apa yang kurang.';

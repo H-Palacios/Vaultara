@@ -3228,6 +3228,52 @@ class AppLocalizationsSo extends AppLocalizations {
   String get businessBenefitStaffImport => 'Liiska shaqaalahaaga ka soo deji xaashi xisaabeed';
 
   @override
+  String get clientLinkAction => 'La wadaag xaaladda shaqaalaha macmiil';
+
+  @override
+  String get clientLinkHint => 'Xiriir akhris keliya ah oo muujinaya in dukumentiyada qof kastaa ansax yihiin. Lambar ama sawir ma leh.';
+
+  @override
+  String get clientLinkTitle => 'Xiriir macmiil';
+
+  @override
+  String get clientLinkBody => 'Macmiilku wuxuu si toos ah Vaultara uga arkaa magacyada shaqaalaha, magacyada dukumentiyada, taariikhaha dhicitaanka iyo xaaladda. Diiwaannadaada, lambarrada dukumentiyada, sawirrada iyo iimaylada weligood lama muujiyo.';
+
+  @override
+  String get clientLinkOneDay => '1 maalin';
+
+  @override
+  String get clientLinkOneWeek => '7 maalmood';
+
+  @override
+  String get clientLinkOneMonth => '30 maalmood';
+
+  @override
+  String get clientLinkCreate => 'Samee oo wadaag xiriir';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Xaaladda dukumentiyada shaqaalaha ee Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Jooji dhammaan xiriirada macaamiisha';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Xiriirada macaamiisha la joojiyay: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Xiriirka lama samayn karin. Hubi xiriirkaaga oo isku day mar kale.';
+
+  @override
+  String get clientLinkTooMany => 'Hadda waxaad gaartay tirada xiriirada macaamiisha. Jooji xiriirada hore ama isku day berri.';
+
+  @override
+  String get businessBenefitClientLink => 'Si toos ah ula wadaag macaamiisha u hoggaansanaanta shaqaalaha';
+
+  @override
   String get businessBenefitPdf => 'Dhoofinta PDF ee kooxda oo leh magaca shirkaddaada';
 
   @override
@@ -8213,6 +8259,9 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Liiska shaqaalaha ma haysataa? Waxaad ka soo dejin kartaa xaashi xisaabeed, magacyo iyo iimaylo leh.';
+
+  @override
+  String get tourBusinessClientBody => 'Waxaad macmiil la wadaagi kartaa xiriir akhris keliya ah, si uu u arko in dukumentiyada shaqaalahaagu ansax yihiin.';
 
   @override
   String get tourBusinessRolesBody => 'Qof kasta sii door, sida Darawal, oo leh dukumentiyada uu u baahan yahay. Vaultara wuxuu muujiyaa waxa ka maqan.';

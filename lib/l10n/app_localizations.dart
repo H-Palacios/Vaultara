@@ -5653,6 +5653,90 @@ abstract class AppLocalizations {
   /// **'Import your staff list from a spreadsheet'**
   String get businessBenefitStaffImport;
 
+  /// Business: tile that shares a read-only staff compliance link with a client.
+  ///
+  /// In en, this message translates to:
+  /// **'Share staff compliance with a client'**
+  String get clientLinkAction;
+
+  /// Note on the client link tile.
+  ///
+  /// In en, this message translates to:
+  /// **'A read-only link showing whether each person\'s documents are up to date. No numbers or photos.'**
+  String get clientLinkHint;
+
+  /// Title of the client link sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Link for a client'**
+  String get clientLinkTitle;
+
+  /// What the client sees.
+  ///
+  /// In en, this message translates to:
+  /// **'The client sees staff names, document names, expiry dates and a status, live from Vaultara. Your own records, document numbers, photos and emails are never shown.'**
+  String get clientLinkBody;
+
+  /// How long the link works.
+  ///
+  /// In en, this message translates to:
+  /// **'1 day'**
+  String get clientLinkOneDay;
+
+  /// How long the link works.
+  ///
+  /// In en, this message translates to:
+  /// **'7 days'**
+  String get clientLinkOneWeek;
+
+  /// How long the link works.
+  ///
+  /// In en, this message translates to:
+  /// **'30 days'**
+  String get clientLinkOneMonth;
+
+  /// Button that makes the link and opens sharing.
+  ///
+  /// In en, this message translates to:
+  /// **'Create and share link'**
+  String get clientLinkCreate;
+
+  /// Message shared with the link. {url} is the address.
+  ///
+  /// In en, this message translates to:
+  /// **'Staff document status from Vaultara: {url}'**
+  String clientLinkShareText(String url);
+
+  /// Button that stops every client link.
+  ///
+  /// In en, this message translates to:
+  /// **'Stop all client links'**
+  String get clientLinkStopAll;
+
+  /// After stopping links.
+  ///
+  /// In en, this message translates to:
+  /// **'Client links stopped: {count}'**
+  String clientLinkStopped(int count);
+
+  /// When the link could not be made.
+  ///
+  /// In en, this message translates to:
+  /// **'The link could not be made. Check your connection and try again.'**
+  String get clientLinkError;
+
+  /// When too many links were made.
+  ///
+  /// In en, this message translates to:
+  /// **'You have reached the number of client links for now. Stop old links or try again tomorrow.'**
+  String get clientLinkTooMany;
+
+  /// Business plan benefit on the Plans screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Share live staff compliance with clients'**
+  String get businessBenefitClientLink;
+
   /// Business plan benefit
   ///
   /// In en, this message translates to:
@@ -14190,6 +14274,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Have a staff list already? You can import it from a spreadsheet, with names and emails.'**
   String get tourBusinessImportBody;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'You can share a read-only link with a client, so they can see your staff\'s documents are up to date.'**
+  String get tourBusinessClientBody;
 
   /// Text of a tutorial step.
   ///

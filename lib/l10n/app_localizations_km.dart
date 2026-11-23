@@ -3211,6 +3211,52 @@ class AppLocalizationsKm extends AppLocalizations {
   String get businessBenefitStaffImport => 'នាំចូលបញ្ជីបុគ្គលិករបស់អ្នកពីសៀវភៅបញ្ជី';
 
   @override
+  String get clientLinkAction => 'ចែករំលែកស្ថានភាពបុគ្គលិកជាមួយអតិថិជន';
+
+  @override
+  String get clientLinkHint => 'តំណសម្រាប់អានតែប៉ុណ្ណោះ ដែលបង្ហាញថាឯកសាររបស់ម្នាក់ៗនៅមានសុពលភាពឬអត់។ គ្មានលេខ ឬរូបថតទេ។';
+
+  @override
+  String get clientLinkTitle => 'តំណសម្រាប់អតិថិជន';
+
+  @override
+  String get clientLinkBody => 'អតិថិជនឃើញឈ្មោះបុគ្គលិក ឈ្មោះឯកសារ កាលបរិច្ឆេទផុតកំណត់ និងស្ថានភាព ផ្ទាល់ពី Vaultara។ កំណត់ត្រារបស់អ្នក លេខឯកសារ រូបថត និងអ៊ីមែល មិនដែលបង្ហាញទេ។';
+
+  @override
+  String get clientLinkOneDay => '1 ថ្ងៃ';
+
+  @override
+  String get clientLinkOneWeek => '7 ថ្ងៃ';
+
+  @override
+  String get clientLinkOneMonth => '30 ថ្ងៃ';
+
+  @override
+  String get clientLinkCreate => 'បង្កើត និងចែករំលែកតំណ';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'ស្ថានភាពឯកសារបុគ្គលិកពី Vaultara៖ $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'បញ្ឈប់តំណអតិថិជនទាំងអស់';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'តំណអតិថិជនដែលបានបញ្ឈប់៖ $count';
+  }
+
+  @override
+  String get clientLinkError => 'មិនអាចបង្កើតតំណបានទេ។ សូមពិនិត្យការតភ្ជាប់ ហើយព្យាយាមម្ដងទៀត។';
+
+  @override
+  String get clientLinkTooMany => 'អ្នកបានដល់ចំនួនតំណអតិថិជនសម្រាប់ពេលនេះ។ បញ្ឈប់តំណចាស់ ឬព្យាយាមថ្ងៃស្អែក។';
+
+  @override
+  String get businessBenefitClientLink => 'ចែករំលែកការអនុលោមបុគ្គលិកផ្ទាល់ជាមួយអតិថិជន';
+
+  @override
   String get businessBenefitPdf => 'ការនាំចេញ PDF របស់ក្រុមជាមួយឈ្មោះក្រុមហ៊ុនរបស់អ្នក';
 
   @override
@@ -8155,6 +8201,9 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'មានបញ្ជីបុគ្គលិករួចហើយ? អ្នកអាចនាំចូលពីសៀវភៅបញ្ជី ជាមួយឈ្មោះ និងអ៊ីមែល។';
+
+  @override
+  String get tourBusinessClientBody => 'អ្នកអាចចែករំលែកតំណសម្រាប់អានតែប៉ុណ្ណោះជាមួយអតិថិជន ដើម្បីឱ្យពួកគេឃើញថាឯកសារបុគ្គលិករបស់អ្នកនៅមានសុពលភាព។';
 
   @override
   String get tourBusinessRolesBody => 'ផ្តល់តួនាទីដល់អ្នកម្នាក់ៗ ដូចជាអ្នកបើកបរ ជាមួយឯកសារដែលវាត្រូវការ។ Vaultara បង្ហាញអ្វីដែលខ្វះ។';

@@ -3244,6 +3244,52 @@ class AppLocalizationsEs extends AppLocalizations {
   String get businessBenefitStaffImport => 'Importa tu lista de empleados desde una hoja de cálculo';
 
   @override
+  String get clientLinkAction => 'Compartir el estado del personal con un cliente';
+
+  @override
+  String get clientLinkHint => 'Un enlace de solo lectura que muestra si los documentos de cada persona están al día. Sin números ni fotos.';
+
+  @override
+  String get clientLinkTitle => 'Enlace para un cliente';
+
+  @override
+  String get clientLinkBody => 'El cliente ve los nombres del personal, los nombres de los documentos, las fechas de vencimiento y un estado, en directo desde Vaultara. Tus propios registros, números de documento, fotos y emails nunca se muestran.';
+
+  @override
+  String get clientLinkOneDay => '1 día';
+
+  @override
+  String get clientLinkOneWeek => '7 días';
+
+  @override
+  String get clientLinkOneMonth => '30 días';
+
+  @override
+  String get clientLinkCreate => 'Crear y compartir enlace';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Estado de los documentos del personal desde Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Detener todos los enlaces de clientes';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Enlaces de clientes detenidos: $count';
+  }
+
+  @override
+  String get clientLinkError => 'No se pudo crear el enlace. Comprueba tu conexión e inténtalo de nuevo.';
+
+  @override
+  String get clientLinkTooMany => 'Has llegado al número de enlaces de clientes por ahora. Detén enlaces antiguos o inténtalo mañana.';
+
+  @override
+  String get businessBenefitClientLink => 'Comparte el cumplimiento del personal en directo con tus clientes';
+
+  @override
   String get businessBenefitPdf => 'Exportación de PDF del equipo con el nombre de tu empresa';
 
   @override
@@ -8242,6 +8288,9 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => '¿Ya tienes una lista de empleados? Puedes importarla desde una hoja de cálculo, con nombres y emails.';
+
+  @override
+  String get tourBusinessClientBody => 'Puedes compartir un enlace de solo lectura con un cliente para que vea que los documentos de tu personal están al día.';
 
   @override
   String get tourBusinessRolesBody => 'Da a cada persona un puesto, como Conductor, con los documentos que necesita. Vaultara muestra lo que falta.';

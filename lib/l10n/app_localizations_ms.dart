@@ -3213,6 +3213,52 @@ class AppLocalizationsMs extends AppLocalizations {
   String get businessBenefitStaffImport => 'Import senarai kakitangan anda daripada hamparan';
 
   @override
+  String get clientLinkAction => 'Kongsi status kakitangan dengan pelanggan';
+
+  @override
+  String get clientLinkHint => 'Pautan baca sahaja yang menunjukkan sama ada dokumen setiap orang masih sah. Tiada nombor atau foto.';
+
+  @override
+  String get clientLinkTitle => 'Pautan untuk pelanggan';
+
+  @override
+  String get clientLinkBody => 'Pelanggan melihat nama kakitangan, nama dokumen, tarikh tamat dan status, terus daripada Vaultara. Rekod anda sendiri, nombor dokumen, foto dan e-mel tidak pernah ditunjukkan.';
+
+  @override
+  String get clientLinkOneDay => '1 hari';
+
+  @override
+  String get clientLinkOneWeek => '7 hari';
+
+  @override
+  String get clientLinkOneMonth => '30 hari';
+
+  @override
+  String get clientLinkCreate => 'Cipta dan kongsi pautan';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Status dokumen kakitangan daripada Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Hentikan semua pautan pelanggan';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Pautan pelanggan dihentikan: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Pautan tidak dapat dicipta. Semak sambungan anda dan cuba lagi.';
+
+  @override
+  String get clientLinkTooMany => 'Anda telah mencapai jumlah pautan pelanggan buat masa ini. Hentikan pautan lama atau cuba esok.';
+
+  @override
+  String get businessBenefitClientLink => 'Kongsi pematuhan kakitangan secara langsung dengan pelanggan';
+
+  @override
   String get businessBenefitPdf => 'Eksport PDF pasukan dengan nama syarikat anda';
 
   @override
@@ -8157,6 +8203,9 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Sudah ada senarai kakitangan? Anda boleh mengimportnya daripada hamparan, dengan nama dan e-mel.';
+
+  @override
+  String get tourBusinessClientBody => 'Anda boleh berkongsi pautan baca sahaja dengan pelanggan, supaya mereka nampak dokumen kakitangan anda masih sah.';
 
   @override
   String get tourBusinessRolesBody => 'Beri setiap orang peranan, seperti Pemandu, dengan dokumen yang diperlukan. Vaultara menunjukkan apa yang tiada.';

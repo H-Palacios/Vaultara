@@ -3229,6 +3229,52 @@ class AppLocalizationsNl extends AppLocalizations {
   String get businessBenefitStaffImport => 'Importeer je personeelslijst uit een spreadsheet';
 
   @override
+  String get clientLinkAction => 'Personeelsstatus delen met een klant';
+
+  @override
+  String get clientLinkHint => 'Een alleen-lezen link die laat zien of de documenten van iedereen geldig zijn. Geen nummers of foto\'s.';
+
+  @override
+  String get clientLinkTitle => 'Link voor een klant';
+
+  @override
+  String get clientLinkBody => 'De klant ziet namen van personeel, documentnamen, vervaldatums en een status, live uit Vaultara. Je eigen items, documentnummers, foto\'s en e-mails worden nooit getoond.';
+
+  @override
+  String get clientLinkOneDay => '1 dag';
+
+  @override
+  String get clientLinkOneWeek => '7 dagen';
+
+  @override
+  String get clientLinkOneMonth => '30 dagen';
+
+  @override
+  String get clientLinkCreate => 'Link maken en delen';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Status van personeelsdocumenten uit Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Alle klantlinks stoppen';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Klantlinks gestopt: $count';
+  }
+
+  @override
+  String get clientLinkError => 'De link kon niet worden gemaakt. Controleer je verbinding en probeer het opnieuw.';
+
+  @override
+  String get clientLinkTooMany => 'Je hebt het aantal klantlinks voor nu bereikt. Stop oude links of probeer het morgen opnieuw.';
+
+  @override
+  String get businessBenefitClientLink => 'Deel de compliance van je personeel live met klanten';
+
+  @override
   String get businessBenefitPdf => 'PDF-export voor het team met je bedrijfsnaam';
 
   @override
@@ -8218,6 +8264,9 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Heb je al een personeelslijst? Je kunt die importeren uit een spreadsheet, met namen en e-mails.';
+
+  @override
+  String get tourBusinessClientBody => 'Je kunt een alleen-lezen link met een klant delen, zodat die ziet dat de documenten van je personeel geldig zijn.';
 
   @override
   String get tourBusinessRolesBody => 'Geef iedereen een functie, zoals Chauffeur, met de documenten die erbij horen. Vaultara laat zien wat ontbreekt.';

@@ -3213,6 +3213,52 @@ class AppLocalizationsVi extends AppLocalizations {
   String get businessBenefitStaffImport => 'Nhập danh sách nhân viên từ bảng tính';
 
   @override
+  String get clientLinkAction => 'Chia sẻ tình trạng nhân viên với khách hàng';
+
+  @override
+  String get clientLinkHint => 'Liên kết chỉ xem cho biết giấy tờ của từng người còn hiệu lực hay không. Không có số hay ảnh.';
+
+  @override
+  String get clientLinkTitle => 'Liên kết cho khách hàng';
+
+  @override
+  String get clientLinkBody => 'Khách hàng thấy tên nhân viên, tên giấy tờ, ngày hết hạn và tình trạng, trực tiếp từ Vaultara. Hồ sơ của riêng bạn, số giấy tờ, ảnh và email không bao giờ được hiển thị.';
+
+  @override
+  String get clientLinkOneDay => '1 ngày';
+
+  @override
+  String get clientLinkOneWeek => '7 ngày';
+
+  @override
+  String get clientLinkOneMonth => '30 ngày';
+
+  @override
+  String get clientLinkCreate => 'Tạo và chia sẻ liên kết';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Tình trạng giấy tờ nhân viên từ Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Dừng tất cả liên kết khách hàng';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Đã dừng liên kết khách hàng: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Không tạo được liên kết. Kiểm tra kết nối và thử lại.';
+
+  @override
+  String get clientLinkTooMany => 'Hiện bạn đã dùng hết số liên kết khách hàng. Hãy dừng liên kết cũ hoặc thử lại vào ngày mai.';
+
+  @override
+  String get businessBenefitClientLink => 'Chia sẻ trực tiếp tình trạng tuân thủ của nhân viên với khách hàng';
+
+  @override
   String get businessBenefitPdf => 'Xuất PDF cho nhóm kèm tên công ty của bạn';
 
   @override
@@ -8157,6 +8203,9 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Đã có danh sách nhân viên? Bạn có thể nhập từ bảng tính, kèm tên và email.';
+
+  @override
+  String get tourBusinessClientBody => 'Bạn có thể chia sẻ liên kết chỉ xem với khách hàng để họ thấy giấy tờ của nhân viên bạn còn hiệu lực.';
 
   @override
   String get tourBusinessRolesBody => 'Gán cho mỗi người một vai trò, như Tài xế, cùng các giấy tờ cần có. Vaultara cho biết còn thiếu gì.';

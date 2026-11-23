@@ -3229,6 +3229,52 @@ class AppLocalizationsMl extends AppLocalizations {
   String get businessBenefitStaffImport => 'ജീവനക്കാരുടെ പട്ടിക സ്പ്രെഡ്‌ഷീറ്റിൽ നിന്ന് ഇമ്പോർട്ട് ചെയ്യുക';
 
   @override
+  String get clientLinkAction => 'ഉപഭോക്താവുമായി ജീവനക്കാരുടെ നില പങ്കിടുക';
+
+  @override
+  String get clientLinkHint => 'ഓരോരുത്തരുടെയും രേഖകൾ സാധുവാണോ എന്ന് കാണിക്കുന്ന വായിക്കാൻ മാത്രമുള്ള ലിങ്ക്. നമ്പറുകളോ ഫോട്ടോകളോ ഇല്ല.';
+
+  @override
+  String get clientLinkTitle => 'ഉപഭോക്താവിനുള്ള ലിങ്ക്';
+
+  @override
+  String get clientLinkBody => 'ഉപഭോക്താവ് Vaultara-ൽ നിന്ന് നേരിട്ട് ജീവനക്കാരുടെ പേരുകൾ, രേഖകളുടെ പേരുകൾ, കാലാവധി തീയതികൾ, നില എന്നിവ കാണും. നിങ്ങളുടെ സ്വന്തം രേഖകൾ, രേഖ നമ്പറുകൾ, ഫോട്ടോകൾ, ഇമെയിലുകൾ ഒരിക്കലും കാണിക്കില്ല.';
+
+  @override
+  String get clientLinkOneDay => '1 ദിവസം';
+
+  @override
+  String get clientLinkOneWeek => '7 ദിവസം';
+
+  @override
+  String get clientLinkOneMonth => '30 ദിവസം';
+
+  @override
+  String get clientLinkCreate => 'ലിങ്ക് സൃഷ്ടിച്ച് പങ്കിടുക';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Vaultara-ൽ നിന്നുള്ള ജീവനക്കാരുടെ രേഖ നില: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'എല്ലാ ഉപഭോക്തൃ ലിങ്കുകളും നിർത്തുക';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'നിർത്തിയ ഉപഭോക്തൃ ലിങ്കുകൾ: $count';
+  }
+
+  @override
+  String get clientLinkError => 'ലിങ്ക് സൃഷ്ടിക്കാനായില്ല. കണക്ഷൻ പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.';
+
+  @override
+  String get clientLinkTooMany => 'ഇപ്പോൾ ഉപഭോക്തൃ ലിങ്കുകളുടെ എണ്ണത്തിൽ എത്തി. പഴയ ലിങ്കുകൾ നിർത്തുക അല്ലെങ്കിൽ നാളെ ശ്രമിക്കുക.';
+
+  @override
+  String get businessBenefitClientLink => 'ജീവനക്കാരുടെ അനുസരണ ഉപഭോക്താക്കളുമായി തത്സമയം പങ്കിടുക';
+
+  @override
   String get businessBenefitPdf => 'നിങ്ങളുടെ കമ്പനിയുടെ പേരുള്ള ടീം PDF എക്സ്പോർട്ട്';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'ജീവനക്കാരുടെ പട്ടികയുണ്ടോ? പേരുകളും ഇമെയിലുകളുമായി സ്പ്രെഡ്‌ഷീറ്റിൽ നിന്ന് ഇമ്പോർട്ട് ചെയ്യാം.';
+
+  @override
+  String get tourBusinessClientBody => 'നിങ്ങളുടെ ജീവനക്കാരുടെ രേഖകൾ സാധുവാണെന്ന് കാണാൻ ഉപഭോക്താവുമായി വായിക്കാൻ മാത്രമുള്ള ലിങ്ക് പങ്കിടാം.';
 
   @override
   String get tourBusinessRolesBody => 'ഓരോരുത്തർക്കും ഡ്രൈവർ പോലുള്ള ഒരു റോൾ, അതിന് വേണ്ട രേഖകളോടെ നൽകൂ. എന്താണ് ഇല്ലാത്തതെന്ന് Vaultara കാണിക്കും.';

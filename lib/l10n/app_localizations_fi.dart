@@ -3229,6 +3229,52 @@ class AppLocalizationsFi extends AppLocalizations {
   String get businessBenefitStaffImport => 'Tuo henkilöstölistasi taulukosta';
 
   @override
+  String get clientLinkAction => 'Jaa henkilöstön tilanne asiakkaan kanssa';
+
+  @override
+  String get clientLinkHint => 'Vain luku -linkki, joka näyttää, ovatko jokaisen asiakirjat voimassa. Ei numeroita eikä kuvia.';
+
+  @override
+  String get clientLinkTitle => 'Linkki asiakkaalle';
+
+  @override
+  String get clientLinkBody => 'Asiakas näkee henkilöstön nimet, asiakirjojen nimet, viimeiset voimassaolopäivät ja tilan suoraan Vaultarasta. Omia tietueitasi, asiakirjanumeroita, kuvia tai sähköposteja ei näytetä koskaan.';
+
+  @override
+  String get clientLinkOneDay => '1 päivä';
+
+  @override
+  String get clientLinkOneWeek => '7 päivää';
+
+  @override
+  String get clientLinkOneMonth => '30 päivää';
+
+  @override
+  String get clientLinkCreate => 'Luo ja jaa linkki';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Henkilöstön asiakirjojen tila Vaultarasta: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Pysäytä kaikki asiakaslinkit';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Pysäytettyjä asiakaslinkkejä: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Linkkiä ei voitu luoda. Tarkista yhteys ja yritä uudelleen.';
+
+  @override
+  String get clientLinkTooMany => 'Asiakaslinkkien määrä on täynnä toistaiseksi. Pysäytä vanhoja linkkejä tai yritä huomenna.';
+
+  @override
+  String get businessBenefitClientLink => 'Jaa henkilöstön vaatimustenmukaisuus reaaliajassa asiakkaille';
+
+  @override
   String get businessBenefitPdf => 'Tiimin PDF-vienti yrityksesi nimellä';
 
   @override
@@ -8218,6 +8264,9 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Onko sinulla jo henkilöstölista? Voit tuoda sen taulukosta nimineen ja sähköposteineen.';
+
+  @override
+  String get tourBusinessClientBody => 'Voit jakaa asiakkaalle vain luku -linkin, jotta hän näkee henkilöstösi asiakirjojen olevan voimassa.';
 
   @override
   String get tourBusinessRolesBody => 'Anna jokaiselle rooli, kuten Kuljettaja, ja sen vaatimat asiakirjat. Vaultara näyttää, mitä puuttuu.';

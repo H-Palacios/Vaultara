@@ -3229,6 +3229,52 @@ class AppLocalizationsBn extends AppLocalizations {
   String get businessBenefitStaffImport => 'স্প্রেডশিট থেকে কর্মী তালিকা ইমপোর্ট করুন';
 
   @override
+  String get clientLinkAction => 'গ্রাহকের সাথে কর্মীদের অবস্থা শেয়ার করুন';
+
+  @override
+  String get clientLinkHint => 'শুধু-পড়ার লিংক যা দেখায় প্রত্যেকের নথি হালনাগাদ কি না। কোনো নম্বর বা ছবি নেই।';
+
+  @override
+  String get clientLinkTitle => 'গ্রাহকের জন্য লিংক';
+
+  @override
+  String get clientLinkBody => 'গ্রাহক Vaultara থেকে সরাসরি কর্মীদের নাম, নথির নাম, মেয়াদ শেষের তারিখ ও অবস্থা দেখেন। আপনার নিজের রেকর্ড, নথির নম্বর, ছবি ও ইমেইল কখনো দেখানো হয় না।';
+
+  @override
+  String get clientLinkOneDay => '১ দিন';
+
+  @override
+  String get clientLinkOneWeek => '৭ দিন';
+
+  @override
+  String get clientLinkOneMonth => '৩০ দিন';
+
+  @override
+  String get clientLinkCreate => 'লিংক তৈরি করে শেয়ার করুন';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Vaultara থেকে কর্মীদের নথির অবস্থা: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'সব গ্রাহক লিংক বন্ধ করুন';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'বন্ধ করা গ্রাহক লিংক: $count';
+  }
+
+  @override
+  String get clientLinkError => 'লিংক তৈরি করা যায়নি। সংযোগ দেখে আবার চেষ্টা করুন।';
+
+  @override
+  String get clientLinkTooMany => 'আপাতত গ্রাহক লিংকের সংখ্যায় পৌঁছে গেছেন। পুরোনো লিংক বন্ধ করুন বা আগামীকাল চেষ্টা করুন।';
+
+  @override
+  String get businessBenefitClientLink => 'গ্রাহকদের সাথে কর্মীদের সরাসরি কমপ্লায়েন্স শেয়ার করুন';
+
+  @override
   String get businessBenefitPdf => 'আপনার কোম্পানির নামসহ টিমের PDF এক্সপোর্ট';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'কর্মীদের তালিকা আছে? নাম ও ইমেইলসহ স্প্রেডশিট থেকে ইমপোর্ট করতে পারেন।';
+
+  @override
+  String get tourBusinessClientBody => 'আপনার কর্মীদের নথি হালনাগাদ আছে তা দেখাতে গ্রাহকের সাথে একটি শুধু-পড়ার লিংক শেয়ার করতে পারেন।';
 
   @override
   String get tourBusinessRolesBody => 'প্রত্যেককে চালকের মতো একটি ভূমিকা দিন, সাথে প্রয়োজনীয় নথি। কী নেই তা Vaultara দেখায়।';

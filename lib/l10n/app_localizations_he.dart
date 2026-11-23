@@ -3265,6 +3265,52 @@ class AppLocalizationsHe extends AppLocalizations {
   String get businessBenefitStaffImport => 'ייבוא רשימת העובדים מגיליון אלקטרוני';
 
   @override
+  String get clientLinkAction => 'שיתוף מצב העובדים עם לקוח';
+
+  @override
+  String get clientLinkHint => 'קישור לקריאה בלבד שמראה אם המסמכים של כל אדם בתוקף. בלי מספרים ותמונות.';
+
+  @override
+  String get clientLinkTitle => 'קישור ללקוח';
+
+  @override
+  String get clientLinkBody => 'הלקוח רואה שמות עובדים, שמות מסמכים, תאריכי תפוגה ומצב, בזמן אמת מ־Vaultara. הרשומות שלכם, מספרי מסמכים, תמונות ומיילים לעולם לא מוצגים.';
+
+  @override
+  String get clientLinkOneDay => 'יום אחד';
+
+  @override
+  String get clientLinkOneWeek => '7 ימים';
+
+  @override
+  String get clientLinkOneMonth => '30 ימים';
+
+  @override
+  String get clientLinkCreate => 'יצירה ושיתוף של קישור';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'מצב מסמכי העובדים מ־Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'עצירת כל קישורי הלקוחות';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'קישורי לקוחות שנעצרו: $count';
+  }
+
+  @override
+  String get clientLinkError => 'לא ניתן היה ליצור את הקישור. בדקו את החיבור ונסו שוב.';
+
+  @override
+  String get clientLinkTooMany => 'הגעתם למספר קישורי הלקוחות כרגע. עצרו קישורים ישנים או נסו מחר.';
+
+  @override
+  String get businessBenefitClientLink => 'שיתוף עמידה בדרישות של העובדים בזמן אמת עם לקוחות';
+
+  @override
   String get businessBenefitPdf => 'ייצוא PDF לצוות עם שם החברה שלך';
 
   @override
@@ -8267,6 +8313,9 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'יש לכם כבר רשימת עובדים? אפשר לייבא אותה מגיליון אלקטרוני, עם שמות ומיילים.';
+
+  @override
+  String get tourBusinessClientBody => 'אפשר לשתף קישור לקריאה בלבד עם לקוח, כדי שיראה שהמסמכים של העובדים שלכם בתוקף.';
 
   @override
   String get tourBusinessRolesBody => 'תנו לכל אחד תפקיד, למשל נהג, עם המסמכים שהוא דורש. Vaultara מראה מה חסר.';

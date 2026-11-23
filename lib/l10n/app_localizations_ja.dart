@@ -3201,6 +3201,52 @@ class AppLocalizationsJa extends AppLocalizations {
   String get businessBenefitStaffImport => 'スタッフ一覧をスプレッドシートから読み込み';
 
   @override
+  String get clientLinkAction => 'スタッフの状況を取引先と共有';
+
+  @override
+  String get clientLinkHint => '各スタッフの書類が有効かどうかを示す閲覧専用リンク。番号や写真は含みません。';
+
+  @override
+  String get clientLinkTitle => '取引先用のリンク';
+
+  @override
+  String get clientLinkBody => '取引先には、スタッフ名、書類名、有効期限、状況がVaultaraからリアルタイムで表示されます。あなた自身の記録、書類番号、写真、メールアドレスは表示されません。';
+
+  @override
+  String get clientLinkOneDay => '1日';
+
+  @override
+  String get clientLinkOneWeek => '7日';
+
+  @override
+  String get clientLinkOneMonth => '30日';
+
+  @override
+  String get clientLinkCreate => 'リンクを作成して共有';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Vaultaraのスタッフ書類の状況：$url';
+  }
+
+  @override
+  String get clientLinkStopAll => '取引先リンクをすべて停止';
+
+  @override
+  String clientLinkStopped(int count) {
+    return '停止した取引先リンク：$count';
+  }
+
+  @override
+  String get clientLinkError => 'リンクを作成できませんでした。接続を確認してもう一度お試しください。';
+
+  @override
+  String get clientLinkTooMany => '現在、取引先リンクの上限に達しています。古いリンクを停止するか、明日もう一度お試しください。';
+
+  @override
+  String get businessBenefitClientLink => 'スタッフのコンプライアンス状況を取引先とリアルタイムで共有';
+
+  @override
   String get businessBenefitPdf => '会社名入りのチーム用PDF出力';
 
   @override
@@ -8145,6 +8191,9 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'スタッフ一覧をお持ちですか？名前とメール付きでスプレッドシートから読み込めます。';
+
+  @override
+  String get tourBusinessClientBody => '閲覧専用リンクを取引先と共有して、スタッフの書類が有効であることを確認してもらえます。';
 
   @override
   String get tourBusinessRolesBody => 'ドライバーなどの役割と必要な書類を一人ひとりに設定すると、足りないものをVaultaraが表示します。';

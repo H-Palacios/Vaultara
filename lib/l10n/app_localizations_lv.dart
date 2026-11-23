@@ -3254,6 +3254,52 @@ class AppLocalizationsLv extends AppLocalizations {
   String get businessBenefitStaffImport => 'Importē darbinieku sarakstu no izklājlapas';
 
   @override
+  String get clientLinkAction => 'Kopīgot darbinieku statusu ar klientu';
+
+  @override
+  String get clientLinkHint => 'Tikai lasāma saite, kas rāda, vai katra cilvēka dokumenti ir derīgi. Bez numuriem un fotoattēliem.';
+
+  @override
+  String get clientLinkTitle => 'Saite klientam';
+
+  @override
+  String get clientLinkBody => 'Klients redz darbinieku vārdus, dokumentu nosaukumus, derīguma termiņus un statusu tieši no Vaultara. Tavi ieraksti, dokumentu numuri, fotoattēli un e-pasti nekad netiek rādīti.';
+
+  @override
+  String get clientLinkOneDay => '1 diena';
+
+  @override
+  String get clientLinkOneWeek => '7 dienas';
+
+  @override
+  String get clientLinkOneMonth => '30 dienas';
+
+  @override
+  String get clientLinkCreate => 'Izveidot un kopīgot saiti';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Darbinieku dokumentu statuss no Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Apturēt visas klientu saites';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Apturētas klientu saites: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Saiti neizdevās izveidot. Pārbaudi savienojumu un mēģini vēlreiz.';
+
+  @override
+  String get clientLinkTooMany => 'Pagaidām esi sasniedzis klientu saišu skaitu. Aptur vecās saites vai mēģini rīt.';
+
+  @override
+  String get businessBenefitClientLink => 'Kopīgo darbinieku atbilstību ar klientiem tiešraidē';
+
+  @override
   String get businessBenefitPdf => 'Komandas PDF eksports ar jūsu uzņēmuma nosaukumu';
 
   @override
@@ -8280,6 +8326,9 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Tev jau ir darbinieku saraksts? Vari to importēt no izklājlapas ar vārdiem un e-pastiem.';
+
+  @override
+  String get tourBusinessClientBody => 'Vari kopīgot tikai lasāmu saiti ar klientu, lai viņš redzētu, ka tavu darbinieku dokumenti ir derīgi.';
 
   @override
   String get tourBusinessRolesBody => 'Piešķir katram amatu, piemēram, Vadītājs, ar tam vajadzīgajiem dokumentiem. Vaultara rāda, kas trūkst.';

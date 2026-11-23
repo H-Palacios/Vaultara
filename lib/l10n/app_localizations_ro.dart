@@ -3261,6 +3261,52 @@ class AppLocalizationsRo extends AppLocalizations {
   String get businessBenefitStaffImport => 'Importă lista de angajați dintr-o foaie de calcul';
 
   @override
+  String get clientLinkAction => 'Partajează starea angajaților cu un client';
+
+  @override
+  String get clientLinkHint => 'Un link doar pentru citire care arată dacă documentele fiecărei persoane sunt valabile. Fără numere sau fotografii.';
+
+  @override
+  String get clientLinkTitle => 'Link pentru un client';
+
+  @override
+  String get clientLinkBody => 'Clientul vede numele angajaților, numele documentelor, datele de expirare și o stare, în direct din Vaultara. Înregistrările tale, numerele documentelor, fotografiile și emailurile nu sunt afișate niciodată.';
+
+  @override
+  String get clientLinkOneDay => '1 zi';
+
+  @override
+  String get clientLinkOneWeek => '7 zile';
+
+  @override
+  String get clientLinkOneMonth => '30 de zile';
+
+  @override
+  String get clientLinkCreate => 'Creează și partajează linkul';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Starea documentelor angajaților din Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Oprește toate linkurile pentru clienți';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Linkuri pentru clienți oprite: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Linkul nu a putut fi creat. Verifică conexiunea și încearcă din nou.';
+
+  @override
+  String get clientLinkTooMany => 'Deocamdată ai atins numărul de linkuri pentru clienți. Oprește linkurile vechi sau încearcă mâine.';
+
+  @override
+  String get businessBenefitClientLink => 'Partajează în direct conformitatea angajaților cu clienții';
+
+  @override
   String get businessBenefitPdf => 'Export PDF pentru echipă, cu numele firmei tale';
 
   @override
@@ -8291,6 +8337,9 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Ai deja o listă de angajați? O poți importa dintr-o foaie de calcul, cu nume și emailuri.';
+
+  @override
+  String get tourBusinessClientBody => 'Poți partaja un link doar pentru citire cu un client, ca să vadă că documentele angajaților tăi sunt valabile.';
 
   @override
   String get tourBusinessRolesBody => 'Dă fiecărei persoane un rol, de exemplu Șofer, cu documentele de care are nevoie. Vaultara arată ce lipsește.';

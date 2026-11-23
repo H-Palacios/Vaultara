@@ -3229,6 +3229,52 @@ class AppLocalizationsKa extends AppLocalizations {
   String get businessBenefitStaffImport => 'თანამშრომლების სიის იმპორტი ცხრილიდან';
 
   @override
+  String get clientLinkAction => 'თანამშრომლების მდგომარეობის გაზიარება კლიენტთან';
+
+  @override
+  String get clientLinkHint => 'მხოლოდ წასაკითხი ბმული, რომელიც აჩვენებს, მოქმედია თუ არა თითოეულის დოკუმენტები. ნომრებისა და ფოტოების გარეშე.';
+
+  @override
+  String get clientLinkTitle => 'ბმული კლიენტისთვის';
+
+  @override
+  String get clientLinkBody => 'კლიენტი ხედავს თანამშრომლების სახელებს, დოკუმენტების სახელებს, ვადებს და მდგომარეობას, პირდაპირ Vaultara-დან. თქვენი ჩანაწერები, დოკუმენტების ნომრები, ფოტოები და ელფოსტა არასოდეს ჩანს.';
+
+  @override
+  String get clientLinkOneDay => '1 დღე';
+
+  @override
+  String get clientLinkOneWeek => '7 დღე';
+
+  @override
+  String get clientLinkOneMonth => '30 დღე';
+
+  @override
+  String get clientLinkCreate => 'ბმულის შექმნა და გაზიარება';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'თანამშრომლების დოკუმენტების მდგომარეობა Vaultara-დან: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'კლიენტის ყველა ბმულის შეჩერება';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'შეჩერებული კლიენტის ბმულები: $count';
+  }
+
+  @override
+  String get clientLinkError => 'ბმულის შექმნა ვერ მოხერხდა. შეამოწმეთ კავშირი და სცადეთ ხელახლა.';
+
+  @override
+  String get clientLinkTooMany => 'ამჟამად კლიენტის ბმულების რაოდენობას მიაღწიეთ. შეაჩერეთ ძველი ბმულები ან სცადეთ ხვალ.';
+
+  @override
+  String get businessBenefitClientLink => 'გაუზიარეთ თანამშრომლების შესაბამისობა კლიენტებს პირდაპირ';
+
+  @override
   String get businessBenefitPdf => 'გუნდის PDF ექსპორტი თქვენი კომპანიის სახელით';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'უკვე გაქვთ თანამშრომლების სია? შეგიძლიათ შემოიტანოთ ცხრილიდან, სახელებითა და ელფოსტით.';
+
+  @override
+  String get tourBusinessClientBody => 'შეგიძლიათ კლიენტს გაუზიაროთ მხოლოდ წასაკითხი ბმული, რომ დაინახოს, რომ თქვენი თანამშრომლების დოკუმენტები მოქმედია.';
 
   @override
   String get tourBusinessRolesBody => 'მიეცით თითოეულს როლი, მაგალითად მძღოლი, საჭირო დოკუმენტებით. Vaultara აჩვენებს, რა აკლია.';

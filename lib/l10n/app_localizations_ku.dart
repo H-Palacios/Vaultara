@@ -3229,6 +3229,52 @@ class AppLocalizationsKu extends AppLocalizations {
   String get businessBenefitStaffImport => 'Lîsteya karmendên xwe ji tabloyê veguhezîne';
 
   @override
+  String get clientLinkAction => 'Rewşa karmendan bi xerîdarekî re parve bike';
+
+  @override
+  String get clientLinkHint => 'Girêdanek tenê-xwendinê ku nîşan dide ka belgeyên her kesî derbasdar in an na. Bê hejmar û wêne.';
+
+  @override
+  String get clientLinkTitle => 'Girêdan ji bo xerîdar';
+
+  @override
+  String get clientLinkBody => 'Xerîdar navên karmendan, navên belgeyan, dîrokên qedandinê û rewşê rasterast ji Vaultara dibîne. Tomarên te bi xwe, hejmarên belgeyan, wêne û e-name qet nayên nîşandan.';
+
+  @override
+  String get clientLinkOneDay => '1 roj';
+
+  @override
+  String get clientLinkOneWeek => '7 roj';
+
+  @override
+  String get clientLinkOneMonth => '30 roj';
+
+  @override
+  String get clientLinkCreate => 'Girêdanê çêke û parve bike';
+
+  @override
+  String clientLinkShareText(String url) {
+    return 'Rewşa belgeyên karmendan ji Vaultara: $url';
+  }
+
+  @override
+  String get clientLinkStopAll => 'Hemû girêdanên xerîdaran rawestîne';
+
+  @override
+  String clientLinkStopped(int count) {
+    return 'Girêdanên xerîdaran ên rawestandî: $count';
+  }
+
+  @override
+  String get clientLinkError => 'Girêdan nehat çêkirin. Girêdana xwe kontrol bike û dîsa biceribîne.';
+
+  @override
+  String get clientLinkTooMany => 'Niha gihîştî hejmara girêdanên xerîdaran. Girêdanên kevn rawestîne an sibê biceribîne.';
+
+  @override
+  String get businessBenefitClientLink => 'Lihevhatina karmendan rasterast bi xerîdaran re parve bike';
+
+  @override
   String get businessBenefitPdf => 'Derxistina PDF ya tîmê bi navê pargîdaniya te';
 
   @override
@@ -8214,6 +8260,9 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get tourBusinessImportBody => 'Lîsteya karmendan te heye? Tu dikarî wê bi nav û e-nameyan ji tabloyê veguhezînî.';
+
+  @override
+  String get tourBusinessClientBody => 'Tu dikarî girêdanek tenê-xwendinê bi xerîdarekî re parve bikî, da ku bibîne belgeyên karmendên te derbasdar in.';
 
   @override
   String get tourBusinessRolesBody => 'Ji her kesî re rolekê bide, wek Ajokar, bi belgeyên ku pêwîst in. Vaultara nîşan dide ka çi kêm e.';
