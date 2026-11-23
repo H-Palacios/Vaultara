@@ -101,6 +101,8 @@ class TutorialStepTexts {
         return loc.roleAction;
       case TutorialStep.businessEmail:
         return loc.tourBusiness2Title;
+      case TutorialStep.businessClientLink:
+        return loc.clientLinkAction;
       case TutorialStep.businessReport:
         return loc.tourBusiness3Title;
       case TutorialStep.businessRequest:
@@ -202,6 +204,8 @@ class TutorialStepTexts {
         return Icons.badge_rounded;
       case TutorialStep.businessEmail:
         return Icons.mark_email_unread_rounded;
+      case TutorialStep.businessClientLink:
+        return Icons.verified_user_rounded;
       case TutorialStep.businessReport:
         return Icons.assessment_rounded;
       case TutorialStep.businessRequest:
@@ -373,6 +377,8 @@ class TutorialStepTexts {
         return loc.tourBusinessRolesBody;
       case TutorialStep.businessEmail:
         return loc.tourBusiness2Body;
+      case TutorialStep.businessClientLink:
+        return loc.tourBusinessClientBody;
       case TutorialStep.businessReport:
         return loc.tourBusiness3Body;
       case TutorialStep.businessRequest:

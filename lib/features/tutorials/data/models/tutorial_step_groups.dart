@@ -142,6 +142,7 @@ class TutorialStepGroups {
     TutorialStep.businessRoles,
     TutorialStep.businessEmail,
     TutorialStep.businessReport,
+    TutorialStep.businessClientLink,
     TutorialStep.businessRequest,
   ];
 

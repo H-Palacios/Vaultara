@@ -79,5 +79,6 @@ enum TutorialStep {
   businessRoles,
   businessEmail,
   businessReport,
+  businessClientLink,
   businessRequest,
 }
