@@ -15,12 +15,10 @@ import 'package:vaultara/core/view/widgets/screen_header.dart';
 import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
 import 'package:vaultara/features/billing/view/open_plans.dart';
 import 'package:vaultara/features/billing/view/widgets/company_name_tile.dart';
-import 'package:vaultara/features/family/view/person_avatar.dart';
 import 'package:vaultara/features/household/view/household_section.dart';
 import 'package:vaultara/features/staff/services/staff_email_service.dart';
 import 'package:vaultara/features/staff/view/compliance_report_tile.dart';
 import 'package:vaultara/features/staff/view/updates_review_section.dart';
-import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/data/nationality_repository.dart';
 import 'package:vaultara/features/travel/view/visa_section.dart';
 import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
@@ -28,8 +26,12 @@ import 'package:vaultara/features/tutorials/services/tutorial_controller.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
 import 'package:vaultara/features/tutorials/view/tutorial_target.dart';
-
-enum _PersonAction { rename, nationality, residence, remove }
+import 'package:vaultara/features/staff/view/bulk_request_tile.dart';
+import 'package:vaultara/features/family/view/person_row.dart';
+import 'package:vaultara/features/staff/view/edit_role_action.dart';
+import 'package:vaultara/features/staff/logic/required_documents.dart';
+import 'package:vaultara/features/tutorials/data/models/tour_samples.dart';
+import 'package:vaultara/core/data/models/tracked_item.dart';
 
 class FamilyScreen extends StatefulWidget {
   /// The tutorial: shows the screen as it is on this plan, with nobody
@@ -224,7 +226,11 @@ class _FamilyScreenState extends State<FamilyScreen> {
               return ValueListenableBuilder<List<Person>>(
                 valueListenable: PeopleRepository.people,
                 builder: (context, allPeople, _) {
-                  final people = tour ? const <Person>[] : allPeople;
+                  final people = tour
+                      ? (tier == PlanTier.business
+                            ? TourSamples.staff
+                            : const <Person>[])
+                      : allPeople;
                   final counts = _countsFor(people);
                   return ListView(
                     padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
@@ -248,7 +254,7 @@ class _FamilyScreenState extends State<FamilyScreen> {
                         const UpdatesReviewSection(),
                       ListenableBuilder(
                         listenable: NationalityRepository.changes,
-                        builder: (context, _) => _PersonRow(
+                        builder: (context, _) => PersonRow(
                           key: _meKey,
                           person: null,
                           name: loc.familyMe,
@@ -256,9 +262,9 @@ class _FamilyScreenState extends State<FamilyScreen> {
                           nationality: NationalityRepository.mine.value,
                           residence: NationalityRepository.myResidence.value,
                           onAction: (action) {
-                            if (action == _PersonAction.nationality) {
+                            if (action == PersonAction.nationality) {
                               VisaActions.pickNationality(context, null);
-                            } else if (action == _PersonAction.residence) {
+                            } else if (action == PersonAction.residence) {
                               VisaActions.pickResidence(context, null);
                             }
                           },
@@ -266,28 +272,48 @@ class _FamilyScreenState extends State<FamilyScreen> {
                       ),
                       for (final person in people) ...[
                         const SizedBox(height: 10),
-                        _PersonRow(
-                          person: person,
-                          name: person.name,
-                          recordCount: counts[person.id] ?? 0,
-                          nationality: person.nationality,
-                          residence: person.residence,
-                          onAction: (action) {
-                            switch (action) {
-                              case _PersonAction.rename:
-                                _renamePerson(person, tier);
-                                break;
-                              case _PersonAction.nationality:
-                                VisaActions.pickNationality(context, person.id);
-                                break;
-                              case _PersonAction.residence:
-                                VisaActions.pickResidence(context, person.id);
-                                break;
-                              case _PersonAction.remove:
-                                _removePerson(person);
-                                break;
-                            }
-                          },
+                        TutorialTarget(
+                          steps: tour
+                              ? const [TutorialStep.businessRoles]
+                              : const <TutorialStep>[],
+                          child: PersonRow(
+                            person: person,
+                            name: person.name,
+                            recordCount: counts[person.id] ?? 0,
+                            nationality: person.nationality,
+                            residence: person.residence,
+                            showRole: tier == PlanTier.business,
+                            missing: tier == PlanTier.business
+                                ? RequiredDocuments.missing(
+                                    person,
+                                    tour
+                                        ? const <TrackedItem>[]
+                                        : RecordRepository.allActive(),
+                                  )
+                                : const <String>[],
+                            onAction: (action) {
+                              switch (action) {
+                                case PersonAction.rename:
+                                  _renamePerson(person, tier);
+                                  break;
+                                case PersonAction.role:
+                                  EditRoleAction.run(context, person, people);
+                                  break;
+                                case PersonAction.nationality:
+                                  VisaActions.pickNationality(
+                                    context,
+                                    person.id,
+                                  );
+                                  break;
+                                case PersonAction.residence:
+                                  VisaActions.pickResidence(context, person.id);
+                                  break;
+                                case PersonAction.remove:
+                                  _removePerson(person);
+                                  break;
+                              }
+                            },
+                          ),
                         ),
                       ],
                       const SizedBox(height: 20),
@@ -301,6 +327,7 @@ class _FamilyScreenState extends State<FamilyScreen> {
                         ),
                         if (tier == PlanTier.business) ...[
                           const SizedBox(height: 16),
+                          if (!tour) const BulkRequestTile(),
                           const CompanyNameTile(),
                           const SizedBox(height: 12),
                           const TutorialTarget(
@@ -340,188 +367,6 @@ class _FamilyScreenState extends State<FamilyScreen> {
               );
             },
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class _PersonRow extends StatelessWidget {
-  final Person? person;
-  final String name;
-  final int recordCount;
-  final String? nationality;
-
-  /// Where the person lives, when it was set.
-  final String? residence;
-  final ValueChanged<_PersonAction>? onAction;
-
-  const _PersonRow({
-    super.key,
-    required this.person,
-    required this.name,
-    required this.recordCount,
-    this.nationality,
-    this.residence,
-    this.onAction,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-    final loc = AppLocalizations.of(context)!;
-
-    return Material(
-      color: scheme.surface,
-      borderRadius: BorderRadius.circular(18),
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(14, 10, 4, 10),
-        child: Row(
-          children: [
-            PersonAvatar(person: person),
-            const SizedBox(width: 12),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    name,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                      fontSize: 14.5,
-                      fontWeight: FontWeight.w800,
-                      color: scheme.onSurface,
-                      height: 1.15,
-                    ),
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    <String>[
-                      loc.familyRecordCount(recordCount),
-                      if (nationality != null)
-                        '${Countries.flag(nationality!)} '
-                            '${Countries.name(nationality!)}',
-                      if (residence != null && residence != nationality)
-                        loc.visaLivesIn(
-                          '${Countries.flag(residence!)} '
-                          '${Countries.name(residence!)}',
-                        ),
-                    ].join('  ·  '),
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: scheme.onSurfaceVariant,
-                    ),
-                  ),
-                  if (person?.getsEmailReminders == true) ...[
-                    const SizedBox(height: 3),
-                    Row(
-                      children: [
-                        Icon(
-                          Icons.mark_email_read_rounded,
-                          size: 13,
-                          color: scheme.primary,
-                        ),
-                        const SizedBox(width: 4),
-                        Flexible(
-                          child: Text(
-                            loc.staffEmailOnBadge,
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                            style: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w600,
-                              color: scheme.primary,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ],
-              ),
-            ),
-            if (onAction != null)
-              PopupMenuButton<_PersonAction>(
-                tooltip: loc.edit,
-                icon: Icon(
-                  Icons.more_vert_rounded,
-                  color: scheme.onSurfaceVariant,
-                ),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(14),
-                ),
-                onSelected: onAction,
-                itemBuilder: (_) => [
-                  if (person != null)
-                    PopupMenuItem<_PersonAction>(
-                      value: _PersonAction.rename,
-                      child: Row(
-                        children: [
-                          Icon(
-                            Icons.edit_rounded,
-                            size: 20,
-                            color: scheme.onSurface,
-                          ),
-                          const SizedBox(width: 12),
-                          Text(loc.familyRename),
-                        ],
-                      ),
-                    ),
-                  PopupMenuItem<_PersonAction>(
-                    value: _PersonAction.nationality,
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.flag_rounded,
-                          size: 20,
-                          color: scheme.onSurface,
-                        ),
-                        const SizedBox(width: 12),
-                        Text(loc.visaPassportCountry),
-                      ],
-                    ),
-                  ),
-                  PopupMenuItem<_PersonAction>(
-                    value: _PersonAction.residence,
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.home_work_rounded,
-                          size: 20,
-                          color: scheme.onSurface,
-                        ),
-                        const SizedBox(width: 12),
-                        Text(loc.visaResidenceTitle),
-                      ],
-                    ),
-                  ),
-                  if (person != null)
-                    PopupMenuItem<_PersonAction>(
-                      value: _PersonAction.remove,
-                      child: Row(
-                        children: [
-                          Icon(
-                            Icons.person_remove_alt_1_rounded,
-                            size: 20,
-                            color: scheme.error,
-                          ),
-                          const SizedBox(width: 12),
-                          Text(
-                            loc.familyRemove,
-                            style: TextStyle(color: scheme.error),
-                          ),
-                        ],
-                      ),
-                    ),
-                ],
-              )
-            else
-              const SizedBox(width: 10),
-          ],
         ),
       ),
     );
