@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/two_columns.dart';
+import 'package:vaultara/core/view/widgets/app_date_picker.dart';
+import 'package:vaultara/features/pets/view/widgets/date_button.dart';
+import 'package:vaultara/features/pets/view/widgets/pet_plan_card.dart';
+import 'package:vaultara/shell/shell_state.dart';
 import 'package:vaultara/core/data/models/official_rules.dart';
 import 'package:vaultara/core/data/repositories/official_rules_repository.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
@@ -27,7 +32,15 @@ class PetTravelScreen extends StatefulWidget {
   final Pet? pet;
   final String? destination;
 
-  const PetTravelScreen({super.key, this.pet, this.destination});
+  /// The travel date, when opened from a trip, for the countdown.
+  final DateTime? departure;
+
+  const PetTravelScreen({
+    super.key,
+    this.pet,
+    this.destination,
+    this.departure,
+  });
 
   @override
   State<PetTravelScreen> createState() => _PetTravelScreenState();
@@ -38,14 +51,18 @@ class _PetTravelScreenState extends State<PetTravelScreen> {
   String? _from;
   late String _typeId;
   String? _customType;
+  PetGroup? _customGroup;
+  DateTime? _departure;
 
   @override
   void initState() {
     super.initState();
     _to = widget.destination;
+    _departure = widget.departure;
     _from = RecordDetails.homeCountry();
     _typeId = widget.pet?.typeId ?? PetTypes.dogId;
     _customType = widget.pet?.customType;
+    _customGroup = widget.pet?.customGroup;
     final to = _to;
     if (to != null) OfficialRulesRepository.load(to);
   }
@@ -57,6 +74,17 @@ class _PetTravelScreenState extends State<PetTravelScreen> {
       for (final trip in TripRepository.trips.value)
         if (!trip.isPast(today)) ...trip.countries,
     ];
+  }
+
+  Future<void> _pickDate() async {
+    final now = DateTime.now();
+    final picked = await showAppDatePicker(
+      context: context,
+      initialDate: _departure ?? DateTime(now.year, now.month + 3, now.day),
+      firstDate: DateTime(now.year, now.month, now.day),
+      lastDate: DateTime(now.year + 3),
+    );
+    if (picked != null && mounted) setState(() => _departure = picked);
   }
 
   Future<void> _pickTo() async {
@@ -121,9 +149,12 @@ class _PetTravelScreenState extends State<PetTravelScreen> {
                 PetTypeField(
                   typeId: _typeId,
                   customType: _customType,
+                  customGroup: _customGroup,
+                  customEmoji: widget.pet?.customEmoji,
                   onChanged: (pick) => setState(() {
                     _typeId = pick.typeId;
                     _customType = pick.customType;
+                    _customGroup = pick.customGroup;
                   }),
                 ),
                 const SizedBox(height: 20),
@@ -155,12 +186,43 @@ class _PetTravelScreenState extends State<PetTravelScreen> {
     final result = PetEntryResolver.resolve(
       to: to,
       from: _from,
-      group: PetTypes.groupOf(_typeId),
+      group: _typeId == PetTypes.custom
+          ? (_customGroup ?? PetGroup.other)
+          : PetTypes.groupOf(_typeId),
       official: official,
     );
     final entry = result.entry;
     if (entry != null) {
-      return <Widget>[PetRulesCard(result: result, entry: entry)];
+      final rules = PetRulesCard(result: result, entry: entry);
+      final departure = _departure;
+      final plan = Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          DateButton(
+            icon: Icons.event_rounded,
+            label: loc.petPlanDate,
+            emptyText: loc.petPlanPickDate,
+            date: departure,
+            onTap: _pickDate,
+          ),
+          if (departure != null) ...[
+            const SizedBox(height: 16),
+            PetPlanCard(
+              pet: widget.pet,
+              entry: entry,
+              departure: departure,
+              canAddReminders: ShellState.current?.isPremium ?? false,
+            ),
+          ],
+        ],
+      );
+      // A tablet shows the rules beside the countdown.
+      if (MediaQuery.sizeOf(context).width >= 760) {
+        return <Widget>[
+          TwoColumns(left: [rules], right: [plan]),
+        ];
+      }
+      return <Widget>[rules, const SizedBox(height: 20), plan];
     }
     final url = result.url;
     return <Widget>[

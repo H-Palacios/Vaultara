@@ -94,6 +94,7 @@ class PetTripCard extends StatelessWidget {
                       destination: trip.countries.isEmpty
                           ? null
                           : trip.countries.first,
+                      departure: trip.departure,
                     ),
                   ),
                 ),
