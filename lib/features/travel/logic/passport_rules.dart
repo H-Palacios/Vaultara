@@ -24,15 +24,49 @@ class PassportRules {
   static const PassportRule fallback = PassportRule.sixMonths;
 
   static const Set<String> schengen = <String>{
-    'AT', 'BE', 'BG', 'CH', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GR',
-    'HR', 'HU', 'IS', 'IT', 'LI', 'LT', 'LU', 'LV', 'MT', 'NL', 'NO', 'PL',
-    'PT', 'RO', 'SE', 'SI', 'SK', 'MC', 'SM', 'VA',
+    'AT',
+    'BE',
+    'BG',
+    'CH',
+    'CZ',
+    'DE',
+    'DK',
+    'EE',
+    'ES',
+    'FI',
+    'FR',
+    'GR',
+    'HR',
+    'HU',
+    'IS',
+    'IT',
+    'LI',
+    'LT',
+    'LU',
+    'LV',
+    'MT',
+    'NL',
+    'NO',
+    'PL',
+    'PT',
+    'RO',
+    'SE',
+    'SI',
+    'SK',
+    'MC',
+    'SM',
+    'VA',
   };
 
   static const Set<String> _threeMonths = <String>{'NZ'};
 
   static const Set<String> _wholeTrip = <String>{
-    'GB', 'IE', 'CA', 'AU', 'JP', 'MX',
+    'GB',
+    'IE',
+    'CA',
+    'AU',
+    'JP',
+    'MX',
   };
 
   static int monthsFor(PassportRule rule) {
@@ -46,8 +80,25 @@ class PassportRules {
     }
   }
 
+  /// Rules Vaultara checked on the country's official pages. They win over
+  /// the built-in lists below, which are the fallback.
+  static final Map<String, PassportRule> _checked = <String, PassportRule>{};
+
+  static void setChecked(String code, PassportRule? rule) {
+    final upper = code.toUpperCase();
+    if (rule == null) {
+      _checked.remove(upper);
+    } else {
+      _checked[upper] = rule;
+    }
+  }
+
+  static void clearChecked() => _checked.clear();
+
   static PassportRule forCountry(String code) {
     final upper = code.toUpperCase();
+    final checked = _checked[upper];
+    if (checked != null) return checked;
     if (schengen.contains(upper) || _threeMonths.contains(upper)) {
       return PassportRule.threeMonths;
     }
@@ -102,13 +153,15 @@ class PassportRules {
       final rule = forCountry(code);
       if (monthsFor(rule) > monthsFor(strictest)) strictest = rule;
     }
-    final deciding =
-        countries.where((c) => forCountry(c) == strictest).toList();
+    final deciding = countries
+        .where((c) => forCountry(c) == strictest)
+        .toList();
     return PassportRuleResult(
       rule: strictest,
       source: PassportRuleSource.destination,
       countries: deciding,
-      schengen: strictest == PassportRule.threeMonths &&
+      schengen:
+          strictest == PassportRule.threeMonths &&
           deciding.every((c) => schengen.contains(c.toUpperCase())),
     );
   }

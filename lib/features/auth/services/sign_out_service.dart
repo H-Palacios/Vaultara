@@ -1,3 +1,4 @@
+import 'package:vaultara/features/pets/data/pet_repository.dart';
 import 'dart:async';
 
 import 'package:vaultara/features/tools/data/life_plan_repository.dart';
@@ -27,6 +28,8 @@ import 'package:vaultara/core/data/user_name.dart';
 import 'package:vaultara/features/reminders/services/notification_prefs.dart';
 import 'package:vaultara/features/reminders/services/reminder_sound_prefs.dart';
 import 'package:vaultara/features/reminders/services/weekly_recap_notifier.dart';
+import 'package:vaultara/features/travel/services/passport_rule_sync.dart';
+import 'package:vaultara/core/data/repositories/official_rules_repository.dart';
 
 /// Signs out from anywhere in the app.
 ///
@@ -69,7 +72,10 @@ class SignOutService {
       GroupRepository.clearForSignOut,
       FamilyReminderSync.detach,
       PeopleRepository.clearForSignOut,
+      PetRepository.clearForSignOut,
       TripRepository.clearForSignOut,
+      PassportRuleSync.stop,
+      OfficialRulesRepository.clearForSignOut,
       InsightSnoozes.clearForSignOut,
       LifePlanRepository.clearForSignOut,
       VisaLinkRepository.clearForSignOut,

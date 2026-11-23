@@ -1,3 +1,4 @@
+import 'package:vaultara/features/pets/data/pet_repository.dart';
 import 'dart:async';
 
 import 'package:vaultara/features/assistant/view/ask_vaultara_screen.dart';
@@ -35,6 +36,7 @@ import 'package:vaultara/features/household/view/join_household_sheet.dart';
 import 'package:vaultara/features/assistant/services/share_intake.dart';
 import 'package:vaultara/features/assistant/logic/share_intake_handler.dart';
 import 'package:vaultara/features/security/services/security_startup.dart';
+import 'package:vaultara/features/travel/services/passport_rule_sync.dart';
 
 const String kIsNewUserKey = 'isNewUser';
 const String kUserFirstNameKey = 'userFirstName';
@@ -76,7 +78,9 @@ class ShellState extends State<Shell> {
     super.initState();
     current = this;
     PeopleRepository.start();
+    PetRepository.start();
     TripRepository.start();
+    PassportRuleSync.start();
     LifePlanRepository.start();
     FamilyReminderSync.attach();
     ReferralLinkService.attach();
