@@ -275,6 +275,15 @@ service cloud.firestore {
         && shortText('referenceEnd', 4);
     }
 
+
+    // A staff role and the document groups it needs (Business plan).
+    function roleOk(d) {
+      return (!('role' in d) || d.role == null
+              || (d.role is string && d.role.size() <= 40))
+        && (!('requiredGroups' in d) || d.requiredGroups == null
+            || (d.requiredGroups is list && d.requiredGroups.size() <= 12));
+    }
+
     function optionalBool(field) {
       return !(field in request.resource.data)
         || request.resource.data[field] == null
@@ -406,6 +415,10 @@ service cloud.firestore {
         && shortText('costCurrency', 8)
         && shortText('holderId', 64)
         && shortText('holderName', 60)
+        // Who renews it: empty, or someone who is in the household.
+        && (!('assigneeUid' in d) || d.assigneeUid == null
+            || (d.assigneeUid is string
+                && d.assigneeUid in householdData(hid).get('memberUids', [])))
         && (!('holderColour' in d) || d.holderColour == null
             || (d.holderColour is int && d.holderColour >= 0 && d.holderColour <= 31))
         && householdAttachmentsOk(hid, recordId)
@@ -681,7 +694,9 @@ service cloud.firestore {
           && (request.method == 'update' || isPaidUser(uid))
           && request.resource.data.keys().hasOnly(['name', 'colourIndex', 'nationality',
                                                    'email', 'emailReminders', 'residence',
-                                                   'extraPassports', 'passportRecords'])
+                                                   'extraPassports', 'passportRecords',
+                                                   'role', 'requiredGroups'])
+          && roleOk(request.resource.data)
           && nationalityOk(request.resource.data)
           && residenceOk(request.resource.data)
           && extraPassportsOk(request.resource.data)
