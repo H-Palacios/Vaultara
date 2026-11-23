@@ -24,6 +24,7 @@ const { escalationRecipients } = require("../push")._test;
 const { remindTarget } = require("../household-remind")._test;
 const { overdueItems, messageFor } = require("../staff-overdue")._test;
 const { peopleLimit, overLimit } = require("../people-limit")._test;
+const { buildView } = require("../client-link")._test;
 
 const members = ["mom", "dad", "sam"];
 const none = new Set();
@@ -90,5 +91,30 @@ assert.strictEqual(overLimit("business", 25), false);
 assert.strictEqual(overLimit("business", 26), true);
 assert.strictEqual(overLimit("family", 6), true);
 assert.strictEqual(overLimit(undefined, 1), true);
+
+// A client link shows staff documents only, never the owner's own, and a
+// locked record keeps its status but not its name.
+{
+  const now = Date.UTC(2026, 10, 23);
+  const day = 24 * 60 * 60 * 1000;
+  const ts = (ms) => ({ toMillis: () => ms });
+  const view = buildView({
+    people: [{ id: "p1", name: "Thabo" }, { id: "p2", name: "Ayanda" }, { id: "p3", name: "Nobody" }],
+    records: [
+      { name: "Licence", expiryDate: ts(now + 400 * day), holderId: "p1" },
+      { name: "Medical", expiryDate: ts(now - 2 * day), holderId: "p1" },
+      { name: "Secret", locked: true, expiryDate: ts(now + 10 * day), holderId: "p2" },
+      { name: "My passport", expiryDate: ts(now + 10 * day), holderId: null },
+      { name: "Gone", isDeleted: true, expiryDate: ts(now + 10 * day), holderId: "p2" },
+    ],
+    now,
+  });
+  assert.deepStrictEqual(view.staff.map((p) => p.name), ["Ayanda", "Thabo"]);
+  assert.deepStrictEqual(view.staff[1].rows.map((r) => r.status), ["expired", "ok"]);
+  assert.strictEqual(view.staff[0].rows[0].name, null);
+  assert.strictEqual(view.staff[0].rows[0].status, "soon");
+  assert.deepStrictEqual(view.counts, { ok: 1, soon: 1, expired: 1 });
+  assert.ok(!JSON.stringify(view).includes("My passport"));
+}
 
 console.log("household reminders: all checks passed");
