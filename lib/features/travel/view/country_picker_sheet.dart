@@ -20,13 +20,18 @@ Future<String?> showPassportCountryPicker(
   String? selected,
   String? title,
   String? hint,
+  List<String> suggested = const <String>[],
 }) {
   return AppSheet.show<String>(
     context: context,
     showDragHandle: true,
-    builder: (_) =>
-        _PassportCountrySheet(selected: selected, title: title, hint: hint),
-    );
+    builder: (_) => _PassportCountrySheet(
+      selected: selected,
+      title: title,
+      hint: hint,
+      suggested: suggested,
+    ),
+  );
 }
 
 class _PassportCountrySheet extends StatefulWidget {
@@ -34,7 +39,16 @@ class _PassportCountrySheet extends StatefulWidget {
   final String? title;
   final String? hint;
 
-  const _PassportCountrySheet({required this.selected, this.title, this.hint});
+  /// Countries shown first before anything is typed, such as the ones on
+  /// the user's trips.
+  final List<String> suggested;
+
+  const _PassportCountrySheet({
+    required this.selected,
+    this.title,
+    this.hint,
+    this.suggested = const <String>[],
+  });
 
   @override
   State<_PassportCountrySheet> createState() => _PassportCountrySheetState();
@@ -42,7 +56,19 @@ class _PassportCountrySheet extends StatefulWidget {
 
 class _PassportCountrySheetState extends State<_PassportCountrySheet> {
   final TextEditingController _query = TextEditingController();
-  List<Country> _results = Countries.sorted;
+  late List<Country> _results = _start();
+
+  List<Country> _start() {
+    final first = <Country>[
+      for (final code in widget.suggested.toSet())
+        if (Countries.byCode(code) != null) Countries.byCode(code)!,
+    ];
+    final codes = first.map((c) => c.code).toSet();
+    return <Country>[
+      ...first,
+      ...Countries.sorted.where((c) => !codes.contains(c.code)),
+    ];
+  }
 
   @override
   void dispose() {
@@ -91,8 +117,11 @@ class _PassportCountrySheetState extends State<_PassportCountrySheet> {
                 padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
                 child: TextField(
                   controller: _query,
-                  onChanged: (value) =>
-                      setState(() => _results = Countries.search(value)),
+                  onChanged: (value) => setState(
+                    () => _results = value.trim().isEmpty
+                        ? _start()
+                        : Countries.search(value),
+                  ),
                   textInputAction: TextInputAction.search,
                   decoration: AppInputDecorations.field(
                     context,
