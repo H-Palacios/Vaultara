@@ -107,6 +107,14 @@ class TutorialStepTexts {
         return loc.tourBusiness3Title;
       case TutorialStep.businessRequest:
         return loc.tourBusiness4Title;
+      case TutorialStep.petsList:
+        return loc.petsTitle;
+      case TutorialStep.petsDocuments:
+        return loc.petDocuments;
+      case TutorialStep.petsAdd:
+        return loc.petsAdd;
+      case TutorialStep.petsTravel:
+        return loc.petTravelTitle;
       default:
         return null;
     }
@@ -210,6 +218,14 @@ class TutorialStepTexts {
         return Icons.assessment_rounded;
       case TutorialStep.businessRequest:
         return Icons.upload_file_rounded;
+      case TutorialStep.petsList:
+        return Icons.pets_rounded;
+      case TutorialStep.petsDocuments:
+        return Icons.folder_rounded;
+      case TutorialStep.petsAdd:
+        return Icons.add_rounded;
+      case TutorialStep.petsTravel:
+        return Icons.flight_rounded;
       default:
         return null;
     }
@@ -383,6 +399,14 @@ class TutorialStepTexts {
         return loc.tourBusiness3Body;
       case TutorialStep.businessRequest:
         return loc.tourBusiness4Body;
+      case TutorialStep.petsList:
+        return loc.tourPetsListBody;
+      case TutorialStep.petsDocuments:
+        return loc.tourPetsDocsBody;
+      case TutorialStep.petsAdd:
+        return loc.tourPetsAddBody;
+      case TutorialStep.petsTravel:
+        return loc.tourPetsTravelBody;
     }
   }
 }

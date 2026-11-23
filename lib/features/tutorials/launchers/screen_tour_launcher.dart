@@ -1,3 +1,4 @@
+import 'package:vaultara/features/pets/view/pets_screen.dart';
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -135,6 +136,13 @@ class ScreenTourLauncher {
             ),
             screen: (_) => const FamilyScreen(tourTier: PlanTier.business),
           ),
+        );
+      case TutorialIds.pets:
+        await _sample(
+          navigator,
+          group,
+          premium,
+          (_) => PetsScreen(isPremium: premium, tour: true),
         );
       case TutorialIds.importScan:
         await _push(

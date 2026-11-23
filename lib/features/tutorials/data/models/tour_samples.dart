@@ -1,3 +1,6 @@
+import 'package:vaultara/core/data/preset_catalog.dart';
+import 'package:vaultara/features/pets/data/pet.dart';
+import 'package:vaultara/features/pets/data/pet_type.dart';
 import 'package:vaultara/core/data/models/kept_in.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/features/tools/data/life_plan.dart';
@@ -69,6 +72,41 @@ class TourSamples {
       reminderBaseId: 0,
       keptIn: keptIn,
     );
+  }
+
+  /// Two pets for the Pets tour: a dog with its chip saved and a cat.
+  static final List<Pet> pets = <Pet>[
+    const Pet(
+      id: 'tour-pet-dog',
+      name: 'Rex',
+      microchip: '985112345678901',
+      vetName: 'Seaview Vet',
+    ),
+    Pet(
+      id: 'tour-pet-cat',
+      name: 'Luna',
+      typeId: PetTypes.catId,
+      birthDate: DateTime(2023, 4, 12),
+    ),
+  ];
+
+  /// Rex's vaccination and insurance, for the Pets tour.
+  static List<TrackedItem> petRecords(AppLocalizations loc) {
+    TrackedItem record(String id, String group, int days) {
+      final item = _record(
+        id: id,
+        name: PresetCatalog.groupLabelFor(loc, group),
+        categoryKey: 'pets_and_animals',
+        groupKey: group,
+        days: days,
+      );
+      return item.copyWith(holderId: 'tour-pet-dog');
+    }
+
+    return <TrackedItem>[
+      record('tour-pet-vaccine', 'pet_vaccinations', 24),
+      record('tour-pet-insurance', 'pet_insurances', 160),
+    ];
   }
 
   /// Records for the Home and Calendar tours: one due this week and two later

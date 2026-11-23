@@ -185,6 +185,15 @@ class TutorialsService {
         steps: TutorialStepGroups.business.length,
         plan: PlanTier.business,
       ),
+      Tutorial(
+        id: TutorialIds.pets,
+        icon: Icons.pets_rounded,
+        title: t.petsTitle,
+        subtitle: t.tutorialsSubPets,
+        group: TutorialGroup.paid,
+        steps: TutorialStepGroups.pets.length,
+        plan: PlanTier.premium,
+      ),
     ];
   }
 

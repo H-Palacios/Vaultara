@@ -22,6 +22,7 @@ class TutorialIds {
   static const String importScan = 'import_scan';
   static const String calendarCosts = 'calendar_costs';
   static const String business = 'business';
+  static const String pets = 'pets';
 
   /// Every tutorial, for Ask Vaultara and the tests. Keep in step with
   /// TUTORIALS in functions/assistant.js.
@@ -43,5 +44,6 @@ class TutorialIds {
     smartTools,
     askVaultara,
     business,
+    pets,
   ];
 }

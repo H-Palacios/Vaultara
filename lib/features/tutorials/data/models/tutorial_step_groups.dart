@@ -146,6 +146,13 @@ class TutorialStepGroups {
     TutorialStep.businessRequest,
   ];
 
+  static const List<TutorialStep> pets = [
+    TutorialStep.petsList,
+    TutorialStep.petsDocuments,
+    TutorialStep.petsAdd,
+    TutorialStep.petsTravel,
+  ];
+
   /// The tours that each walk through one screen, by tutorial id.
   static const Map<String, List<TutorialStep>> screenTours = {
     TutorialIds.home: home,
@@ -159,6 +166,7 @@ class TutorialStepGroups {
     TutorialIds.importScan: importScan,
     TutorialIds.calendarCosts: calendarCosts,
     TutorialIds.business: business,
+    TutorialIds.pets: pets,
   };
 
   /// Steps with nothing on screen to point at. They show in the middle,
@@ -202,6 +210,7 @@ class TutorialStepGroups {
     ...importScan,
     ...calendarCosts,
     ...business,
+    ...pets,
   };
 
   static const Set<TutorialStep> travelDetailSteps = {

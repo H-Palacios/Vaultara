@@ -81,4 +81,8 @@ enum TutorialStep {
   businessReport,
   businessClientLink,
   businessRequest,
+  petsList,
+  petsDocuments,
+  petsAdd,
+  petsTravel,
 }

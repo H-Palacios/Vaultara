@@ -42,16 +42,25 @@ void main() {
         TutorialIds.importScan,
         TutorialIds.calendarCosts,
         TutorialIds.business,
+        TutorialIds.pets,
       });
     });
 
     test('each tour step finds its way back to its own tour', () {
       tours.forEach((id, steps) {
         expect(steps, isNotEmpty, reason: id);
-        expect(steps.toSet().length, steps.length, reason: '$id repeats a step');
+        expect(
+          steps.toSet().length,
+          steps.length,
+          reason: '$id repeats a step',
+        );
         for (final step in steps) {
           expect(TutorialStepGroups.tutorialIdFor(step), id, reason: '$step');
-          expect(TutorialStepGroups.stepsFor(step), same(steps), reason: '$step');
+          expect(
+            TutorialStepGroups.stepsFor(step),
+            same(steps),
+            reason: '$step',
+          );
         }
       });
     });
@@ -60,7 +69,11 @@ void main() {
       final seen = <TutorialStep, String>{};
       tours.forEach((id, steps) {
         for (final step in steps) {
-          expect(seen[step], isNull, reason: '$step is in ${seen[step]} and $id');
+          expect(
+            seen[step],
+            isNull,
+            reason: '$step is in ${seen[step]} and $id',
+          );
           seen[step] = id;
         }
       });
@@ -69,22 +82,29 @@ void main() {
     test('a tour blocks taps, so sample data and settings cannot change', () {
       for (final steps in tours.values) {
         for (final step in steps) {
-          expect(TutorialStepGroups.blockTouches, contains(step), reason: '$step');
+          expect(
+            TutorialStepGroups.blockTouches,
+            contains(step),
+            reason: '$step',
+          );
         }
       }
     });
 
-    test('Back is offered except where the step before is on a closed screen', () {
-      for (final step in TutorialStepGroups.noBack) {
-        final group = TutorialStepGroups.stepsFor(step);
-        expect(group.indexOf(step), greaterThan(0), reason: '$step');
-      }
-      for (final steps in tours.values) {
-        for (final step in steps) {
-          expect(TutorialStepGroups.noBack, isNot(contains(step)));
+    test(
+      'Back is offered except where the step before is on a closed screen',
+      () {
+        for (final step in TutorialStepGroups.noBack) {
+          final group = TutorialStepGroups.stepsFor(step);
+          expect(group.indexOf(step), greaterThan(0), reason: '$step');
         }
-      }
-    });
+        for (final steps in tours.values) {
+          for (final step in steps) {
+            expect(TutorialStepGroups.noBack, isNot(contains(step)));
+          }
+        }
+      },
+    );
   });
 
   group('what each step says', () {
@@ -145,7 +165,10 @@ void main() {
     test('the clumsy texts were rewritten in English', () {
       final l = lookupAppLocalizations(const Locale('en'));
       expect(l.tutorialHomeFab, endsWith('.'));
-      expect(l.tutorialHomeFab, isNot(contains('optional notes, and reminder')));
+      expect(
+        l.tutorialHomeFab,
+        isNot(contains('optional notes, and reminder')),
+      );
       expect(l.tourWallet3Body, isNot(contains('Lost or Stolen')));
       expect(l.tourLife3Body, startsWith('Each plan'));
     });
