@@ -10369,6 +10369,481 @@
   "@subcategoryPetPassports": {
     "description": "Preset group in Pets and animals: pet passports and animal health certificates."
   },
+  "petsTitle": "Pets",
+  "@petsTitle": {
+    "description": "Pets: petsTitle"
+  },
+  "petsTileSubtitle": "Documents, microchip and vet for each pet",
+  "@petsTileSubtitle": {
+    "description": "Pets: petsTileSubtitle"
+  },
+  "petsNotMembers": "Pets don't count towards your members.",
+  "@petsNotMembers": {
+    "description": "Pets: petsNotMembers"
+  },
+  "petsAdd": "Add a pet",
+  "@petsAdd": {
+    "description": "Pets: petsAdd"
+  },
+  "petsEmptyBody": "Add your pet to keep their vaccinations, licence, insurance and microchip together, with reminders before anything runs out.",
+  "@petsEmptyBody": {
+    "description": "Pets: petsEmptyBody"
+  },
+  "petsPremium": "Pet profiles are part of Premium.",
+  "@petsPremium": {
+    "description": "Pets: petsPremium"
+  },
+  "petKindDog": "Dog",
+  "@petKindDog": {
+    "description": "Pets: petKindDog"
+  },
+  "petKindCat": "Cat",
+  "@petKindCat": {
+    "description": "Pets: petKindCat"
+  },
+  "petKindOther": "Other pet",
+  "@petKindOther": {
+    "description": "Pets: petKindOther"
+  },
+  "petBirthday": "Date of birth",
+  "@petBirthday": {
+    "description": "Pets: petBirthday"
+  },
+  "petBorn": "Born {date}",
+  "@petBorn": {
+    "description": "Pets: petBorn",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "petChipNumber": "Microchip number",
+  "@petChipNumber": {
+    "description": "Pets: petChipNumber"
+  },
+  "petChipInvalid": "Use the 9 to 15 digits on the chip certificate.",
+  "@petChipInvalid": {
+    "description": "Pets: petChipInvalid"
+  },
+  "petChipRegistry": "Chip registry",
+  "@petChipRegistry": {
+    "description": "Pets: petChipRegistry"
+  },
+  "petChipTip": "Keep the registry up to date when you move or change your number, or the chip can't bring your pet home.",
+  "@petChipTip": {
+    "description": "Pets: petChipTip"
+  },
+  "petVetName": "Vet",
+  "@petVetName": {
+    "description": "Pets: petVetName"
+  },
+  "petVetPhone": "Vet's phone",
+  "@petVetPhone": {
+    "description": "Pets: petVetPhone"
+  },
+  "petDocuments": "Documents",
+  "@petDocuments": {
+    "description": "Pets: petDocuments"
+  },
+  "petStillToAdd": "Still to add",
+  "@petStillToAdd": {
+    "description": "Pets: petStillToAdd"
+  },
+  "petRemoveConfirm": "Remove {name}? Their documents stay in Vaultara.",
+  "@petRemoveConfirm": {
+    "description": "Pets: petRemoveConfirm",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "petLostTitle": "Lost pet",
+  "@petLostTitle": {
+    "description": "Pets: petLostTitle"
+  },
+  "petLostSteps": "Report your pet missing to the chip registry first. Then call nearby vets and animal shelters with the microchip number, and share a recent photo locally and online.",
+  "@petLostSteps": {
+    "description": "Pets: petLostSteps"
+  },
+  "petTravelTitle": "Travelling with a pet",
+  "@petTravelTitle": {
+    "description": "Pets: petTravelTitle"
+  },
+  "petTravelPick": "Where are you going?",
+  "@petTravelPick": {
+    "description": "Pets: petTravelPick"
+  },
+  "petTravelHome": "Where your pet lives",
+  "@petTravelHome": {
+    "description": "Pets: petTravelHome"
+  },
+  "petRuleChip": "An ISO microchip, fitted before the rabies vaccine",
+  "@petRuleChip": {
+    "description": "Pets: petRuleChip"
+  },
+  "petRuleRabiesTest": "Rabies vaccine and a rabies blood test from an approved lab",
+  "@petRuleRabiesTest": {
+    "description": "Pets: petRuleRabiesTest"
+  },
+  "petRuleCertificate": "A health certificate from an official vet",
+  "@petRuleCertificate": {
+    "description": "Pets: petRuleCertificate"
+  },
+  "petRulePermit": "An import permit before you travel",
+  "@petRulePermit": {
+    "description": "Pets: petRulePermit"
+  },
+  "petRuleTapeworm": "Dogs: tapeworm treatment 1 to 5 days before you arrive",
+  "@petRuleTapeworm": {
+    "description": "Pets: petRuleTapeworm"
+  },
+  "petRuleCdcForm": "A CDC Dog Import Form for every dog",
+  "@petRuleCdcForm": {
+    "description": "Pets: petRuleCdcForm"
+  },
+  "petRuleSomeCountries": "Only from some countries:",
+  "@petRuleSomeCountries": {
+    "description": "Pets: petRuleSomeCountries"
+  },
+  "petRulesOfficial": "Official rules",
+  "@petRulesOfficial": {
+    "description": "Pets: petRulesOfficial"
+  },
+  "petRulesUnknown": "Vaultara doesn't have the pet rules for {country} yet. Its official vet service or embassy can tell you what's needed.",
+  "@petRulesUnknown": {
+    "description": "Pets: petRulesUnknown",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "petLawTitle": "Microchip law in {country}",
+  "@petLawTitle": {
+    "description": "Pets: petLawTitle",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "petLawUk": "Required for dogs, and for cats in England",
+  "@petLawUk": {
+    "description": "Pets: petLawUk"
+  },
+  "petLawEu": "Rules differ by country. A new EU law will make it required for all dogs and cats.",
+  "@petLawEu": {
+    "description": "Pets: petLawEu"
+  },
+  "petLawMostStates": "Required for dogs and cats in most states and territories",
+  "@petLawMostStates": {
+    "description": "Pets: petLawMostStates"
+  },
+  "petLawDogs": "Required for dogs",
+  "@petLawDogs": {
+    "description": "Pets: petLawDogs"
+  },
+  "petLawSellers": "Required for dogs and cats sold by breeders and pet shops",
+  "@petLawSellers": {
+    "description": "Pets: petLawSellers"
+  },
+  "petLawLocal": "Set by each state, province or city",
+  "@petLawLocal": {
+    "description": "Pets: petLawLocal"
+  },
+  "petLawNone": "Not required by national law, but needed to travel and for most adoptions",
+  "@petLawNone": {
+    "description": "Pets: petLawNone"
+  },
+  "tripPetsTitle": "Pets on this trip",
+  "@tripPetsTitle": {
+    "description": "Pets: tripPetsTitle"
+  },
+  "petCheckNoChip": "No microchip saved",
+  "@petCheckNoChip": {
+    "description": "Pets: petCheckNoChip"
+  },
+  "petCheckNoRabies": "No rabies vaccine saved",
+  "@petCheckNoRabies": {
+    "description": "Pets: petCheckNoRabies"
+  },
+  "petCheckRabiesRunsOut": "Rabies vaccine runs out {date}, before you're back",
+  "@petCheckRabiesRunsOut": {
+    "description": "Pets: petCheckRabiesRunsOut",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "petCheckTooSoon": "The blood test wait may not fit before you leave. Speak to your vet now.",
+  "@petCheckTooSoon": {
+    "description": "Pets: petCheckTooSoon"
+  },
+  "petCheckNoCertificate": "No health certificate or pet passport saved",
+  "@petCheckNoCertificate": {
+    "description": "Pets: petCheckNoCertificate"
+  },
+  "planBenefitPets": "Pets with their own documents, microchip and vet, not counted as members",
+  "@planBenefitPets": {
+    "description": "Pets: planBenefitPets"
+  },
+  "tutorialsSubPets": "Pet documents, microchip and travel rules",
+  "@tutorialsSubPets": {
+    "description": "Pets: tutorialsSubPets"
+  },
+  "tourPetsListBody": "Each pet has its own profile, with the microchip, vet and documents in one place. Pets don't count towards your members.",
+  "@tourPetsListBody": {
+    "description": "Pets: tourPetsListBody"
+  },
+  "tourPetsDocsBody": "Vaccinations, licence and insurance belong to the pet, so reminders say whose they are. The badges show what's saved.",
+  "@tourPetsDocsBody": {
+    "description": "Pets: tourPetsDocsBody"
+  },
+  "tourPetsTravelBody": "Pick a country to see what your pet needs to travel there, and how long it takes.",
+  "@tourPetsTravelBody": {
+    "description": "Pets: tourPetsTravelBody"
+  },
+  "petTypeLabel": "Type of pet",
+  "@petTypeLabel": {
+    "description": "Pets and official rules: petTypeLabel"
+  },
+  "petTypeHint": "Start typing, for example Rabbit or Parrot",
+  "@petTypeHint": {
+    "description": "Pets and official rules: petTypeHint"
+  },
+  "petTypeFerret": "Ferret",
+  "@petTypeFerret": {
+    "description": "Pets and official rules: petTypeFerret"
+  },
+  "petTypeRabbit": "Rabbit",
+  "@petTypeRabbit": {
+    "description": "Pets and official rules: petTypeRabbit"
+  },
+  "petTypeGuineaPig": "Guinea pig",
+  "@petTypeGuineaPig": {
+    "description": "Pets and official rules: petTypeGuineaPig"
+  },
+  "petTypeHamster": "Hamster",
+  "@petTypeHamster": {
+    "description": "Pets and official rules: petTypeHamster"
+  },
+  "petTypeRat": "Rat",
+  "@petTypeRat": {
+    "description": "Pets and official rules: petTypeRat"
+  },
+  "petTypeMouse": "Mouse",
+  "@petTypeMouse": {
+    "description": "Pets and official rules: petTypeMouse"
+  },
+  "petTypeGerbil": "Gerbil",
+  "@petTypeGerbil": {
+    "description": "Pets and official rules: petTypeGerbil"
+  },
+  "petTypeChinchilla": "Chinchilla",
+  "@petTypeChinchilla": {
+    "description": "Pets and official rules: petTypeChinchilla"
+  },
+  "petTypeHedgehog": "Hedgehog",
+  "@petTypeHedgehog": {
+    "description": "Pets and official rules: petTypeHedgehog"
+  },
+  "petTypeHorse": "Horse",
+  "@petTypeHorse": {
+    "description": "Pets and official rules: petTypeHorse"
+  },
+  "petTypePony": "Pony",
+  "@petTypePony": {
+    "description": "Pets and official rules: petTypePony"
+  },
+  "petTypeDonkey": "Donkey",
+  "@petTypeDonkey": {
+    "description": "Pets and official rules: petTypeDonkey"
+  },
+  "petTypeParrot": "Parrot",
+  "@petTypeParrot": {
+    "description": "Pets and official rules: petTypeParrot"
+  },
+  "petTypeBudgie": "Budgie",
+  "@petTypeBudgie": {
+    "description": "Pets and official rules: petTypeBudgie"
+  },
+  "petTypeCockatiel": "Cockatiel",
+  "@petTypeCockatiel": {
+    "description": "Pets and official rules: petTypeCockatiel"
+  },
+  "petTypeCanary": "Canary",
+  "@petTypeCanary": {
+    "description": "Pets and official rules: petTypeCanary"
+  },
+  "petTypeChicken": "Chicken",
+  "@petTypeChicken": {
+    "description": "Pets and official rules: petTypeChicken"
+  },
+  "petTypeTortoise": "Tortoise",
+  "@petTypeTortoise": {
+    "description": "Pets and official rules: petTypeTortoise"
+  },
+  "petTypeTurtle": "Turtle",
+  "@petTypeTurtle": {
+    "description": "Pets and official rules: petTypeTurtle"
+  },
+  "petTypeSnake": "Snake",
+  "@petTypeSnake": {
+    "description": "Pets and official rules: petTypeSnake"
+  },
+  "petTypeLizard": "Lizard",
+  "@petTypeLizard": {
+    "description": "Pets and official rules: petTypeLizard"
+  },
+  "petTypeGecko": "Gecko",
+  "@petTypeGecko": {
+    "description": "Pets and official rules: petTypeGecko"
+  },
+  "petTypeBeardedDragon": "Bearded dragon",
+  "@petTypeBeardedDragon": {
+    "description": "Pets and official rules: petTypeBeardedDragon"
+  },
+  "petTypeFrog": "Frog",
+  "@petTypeFrog": {
+    "description": "Pets and official rules: petTypeFrog"
+  },
+  "petTypeAxolotl": "Axolotl",
+  "@petTypeAxolotl": {
+    "description": "Pets and official rules: petTypeAxolotl"
+  },
+  "petTypeFish": "Fish",
+  "@petTypeFish": {
+    "description": "Pets and official rules: petTypeFish"
+  },
+  "petRuleRabiesFor": "Rabies vaccine at least {duration} before you arrive",
+  "@petRuleRabiesFor": {
+    "description": "Pets and official rules: petRuleRabiesFor",
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "petRuleTitreFor": "A rabies blood test after the vaccine, then a wait of {duration}",
+  "@petRuleTitreFor": {
+    "description": "Pets and official rules: petRuleTitreFor",
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "petRuleResidenceFor": "Then at least {duration} in an approved country before you fly",
+  "@petRuleResidenceFor": {
+    "description": "Pets and official rules: petRuleResidenceFor",
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "petRuleQuarantineFor": "Quarantine on arrival for at least {duration}",
+  "@petRuleQuarantineFor": {
+    "description": "Pets and official rules: petRuleQuarantineFor",
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "petRuleMinAgeFor": "Your pet must be at least {duration} old",
+  "@petRuleMinAgeFor": {
+    "description": "Pets and official rules: petRuleMinAgeFor",
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "petCheckTooYoungFor": "Too young for {country}: your pet must be at least {duration} old",
+  "@petCheckTooYoungFor": {
+    "description": "Pets and official rules: petCheckTooYoungFor",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      },
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "petRulesCheckedBy": "Checked by Vaultara · {date}",
+  "@petRulesCheckedBy": {
+    "description": "Pets and official rules: petRulesCheckedBy",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "petRulesNotChecked": "Not checked yet. Confirm on the official site before you book.",
+  "@petRulesNotChecked": {
+    "description": "Pets and official rules: petRulesNotChecked"
+  },
+  "petRulesOtherAnimal": "The rules for this animal are different from those for dogs and cats. Check the official site for what it needs.",
+  "@petRulesOtherAnimal": {
+    "description": "Pets and official rules: petRulesOtherAnimal"
+  },
+  "countryTypeHint": "Start typing a country, for example France",
+  "@countryTypeHint": {
+    "description": "Pets and official rules: countryTypeHint"
+  },
+  "assistantStepPets": "Checking your pets",
+  "@assistantStepPets": {
+    "description": "Pets and official rules: assistantStepPets"
+  },
+  "tourPetsAddBody": "Add another pet here. Start typing its type, like Rabbit or Parrot, and pick a suggestion.",
+  "@tourPetsAddBody": {
+    "description": "Pets and official rules: tourPetsAddBody"
+  },
+  "rulesReviewTitle": "Rules to review",
+  "@rulesReviewTitle": {
+    "description": "Pets and official rules: rulesReviewTitle"
+  },
+  "rulesReviewSubtitle": "Official rules read from government pages, waiting for your approval",
+  "@rulesReviewSubtitle": {
+    "description": "Pets and official rules: rulesReviewSubtitle"
+  },
+  "rulesReviewNow": "Shown now",
+  "@rulesReviewNow": {
+    "description": "Pets and official rules: rulesReviewNow"
+  },
+  "rulesReviewNew": "On the page now",
+  "@rulesReviewNew": {
+    "description": "Pets and official rules: rulesReviewNew"
+  },
+  "rulesReviewPets": "Pet travel",
+  "@rulesReviewPets": {
+    "description": "Pets and official rules: rulesReviewPets"
+  },
+  "rulesReviewPassport": "Passport validity",
+  "@rulesReviewPassport": {
+    "description": "Pets and official rules: rulesReviewPassport"
+  },
+  "rulesReviewApprove": "Approve",
+  "@rulesReviewApprove": {
+    "description": "Pets and official rules: rulesReviewApprove"
+  },
+  "rulesReviewReject": "Reject",
+  "@rulesReviewReject": {
+    "description": "Pets and official rules: rulesReviewReject"
+  },
+  "rulesReviewEmpty": "Nothing to review.",
+  "@rulesReviewEmpty": {
+    "description": "Pets and official rules: rulesReviewEmpty"
+  },
+  "rulesReviewDropped": "Left out (no matching sentence)",
+  "@rulesReviewDropped": {
+    "description": "Pets and official rules: rulesReviewDropped"
+  },
   "yoursTag": "Yours",
   "@yoursTag": {
     "description": "Small label on a category or group the user made."
