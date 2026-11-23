@@ -242,6 +242,7 @@ class _PlansScreenState extends State<PlansScreen> {
           loc.familyBenefitPremium,
           loc.familyBenefitPeople(PlanRepository.familyPeopleLimit),
           loc.familyBenefitOwnRecords,
+          loc.familyBenefitRenewer,
           loc.familyBenefitOneSubscription,
         ];
       case PlanTier.business:
@@ -249,6 +250,8 @@ class _PlansScreenState extends State<PlansScreen> {
           loc.familyBenefitPeople(PlanRepository.businessPeopleLimit),
           loc.businessBenefitFamily,
           loc.businessBenefitStaffVehicles,
+          loc.businessBenefitRoles,
+          loc.businessBenefitBulk,
           loc.businessBenefitPdf,
         ];
       case PlanTier.premium:
@@ -482,7 +485,8 @@ class _PlansScreenState extends State<PlansScreen> {
                   yearlySelected: _yearlySelected,
                   monthlyLabel: loc.planBillingMonthly,
                   yearlyLabel: loc.planBillingYearly,
-                  onChanged: (yearly) => setState(() => _yearlySelected = yearly),
+                  onChanged: (yearly) =>
+                      setState(() => _yearlySelected = yearly),
                 ),
                 const SizedBox(height: 16),
                 AnimatedSwitcher(
@@ -548,7 +552,10 @@ class _PlansScreenState extends State<PlansScreen> {
                 Text(
                   loc.plansTaxIncluded,
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: scheme.onSurfaceVariant,
+                  ),
                 ),
                 const SizedBox(height: 2),
                 // The store's receipts and card statements name the company,
@@ -556,7 +563,10 @@ class _PlansScreenState extends State<PlansScreen> {
                 Text(
                   Platform.isIOS ? loc.plansSellerApple : loc.plansSellerGoogle,
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: scheme.onSurfaceVariant,
+                  ),
                 ),
                 const SizedBox(height: 10),
                 if (paid)
