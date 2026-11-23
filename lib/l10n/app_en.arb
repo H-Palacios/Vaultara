@@ -10844,6 +10844,403 @@
   "@rulesReviewDropped": {
     "description": "Pets and official rules: rulesReviewDropped"
   },
+  "assistantStepHistory": "Checking the change history",
+  "@assistantStepHistory": {
+    "description": "Pets, calendar, costs and change history: assistantStepHistory"
+  },
+  "businessBenefitHistory": "Change history of shared records, with PDF export",
+  "@businessBenefitHistory": {
+    "description": "Pets, calendar, costs and change history: businessBenefitHistory"
+  },
+  "calendarLinkGoogleNote": "Google Calendar can take up to a day to show changes. Apple Calendar and Outlook usually update within a few hours.",
+  "@calendarLinkGoogleNote": {
+    "description": "Pets, calendar, costs and change history: calendarLinkGoogleNote"
+  },
+  "calendarOptionCategories": "Categories",
+  "@calendarOptionCategories": {
+    "description": "Pets, calendar, costs and change history: calendarOptionCategories"
+  },
+  "calendarOptionHide": "Hide record names",
+  "@calendarOptionHide": {
+    "description": "Pets, calendar, costs and change history: calendarOptionHide"
+  },
+  "calendarOptionHideBody": "Events say \"Document expires\" instead of the name",
+  "@calendarOptionHideBody": {
+    "description": "Pets, calendar, costs and change history: calendarOptionHideBody"
+  },
+  "calendarOptionPeople": "People",
+  "@calendarOptionPeople": {
+    "description": "Pets, calendar, costs and change history: calendarOptionPeople"
+  },
+  "calendarOptionRenew": "Renew soon events",
+  "@calendarOptionRenew": {
+    "description": "Pets, calendar, costs and change history: calendarOptionRenew"
+  },
+  "calendarOptionRenewBody": "An extra event on each record's reminder day",
+  "@calendarOptionRenewBody": {
+    "description": "Pets, calendar, costs and change history: calendarOptionRenewBody"
+  },
+  "calendarOptionTrips": "Trips",
+  "@calendarOptionTrips": {
+    "description": "Pets, calendar, costs and change history: calendarOptionTrips"
+  },
+  "calendarOptionsTitle": "What goes in your calendar",
+  "@calendarOptionsTitle": {
+    "description": "Pets, calendar, costs and change history: calendarOptionsTitle"
+  },
+  "entryEmergency": "Emergency number: {number}",
+  "@entryEmergency": {
+    "description": "Pets, calendar, costs and change history: entryEmergency",
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "entryNoPermitSaved": "No International Driving Permit saved for this trip",
+  "@entryNoPermitSaved": {
+    "description": "Pets, calendar, costs and change history: entryNoPermitSaved"
+  },
+  "entryPermitNotNeeded": "No International Driving Permit needed to drive",
+  "@entryPermitNotNeeded": {
+    "description": "Pets, calendar, costs and change history: entryPermitNotNeeded"
+  },
+  "entryPermitRecommended": "An International Driving Permit is recommended for driving",
+  "@entryPermitRecommended": {
+    "description": "Pets, calendar, costs and change history: entryPermitRecommended"
+  },
+  "entryPermitRequired": "Drivers need an International Driving Permit",
+  "@entryPermitRequired": {
+    "description": "Pets, calendar, costs and change history: entryPermitRequired"
+  },
+  "entryYellowFeverAll": "A yellow fever vaccination certificate is needed",
+  "@entryYellowFeverAll": {
+    "description": "Pets, calendar, costs and change history: entryYellowFeverAll"
+  },
+  "entryYellowFeverNo": "No yellow fever certificate needed",
+  "@entryYellowFeverNo": {
+    "description": "Pets, calendar, costs and change history: entryYellowFeverNo"
+  },
+  "entryYellowFeverRisk": "A yellow fever certificate is needed if you arrive from a country with yellow fever risk",
+  "@entryYellowFeverRisk": {
+    "description": "Pets, calendar, costs and change history: entryYellowFeverRisk"
+  },
+  "historyAdded": "{person} added {record}",
+  "@historyAdded": {
+    "description": "Pets, calendar, costs and change history: historyAdded",
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "record": {
+        "type": "String"
+      }
+    }
+  },
+  "historyChanged": "{person} changed {record}",
+  "@historyChanged": {
+    "description": "Pets, calendar, costs and change history: historyChanged",
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "record": {
+        "type": "String"
+      }
+    }
+  },
+  "historyDeleted": "{person} deleted {record}",
+  "@historyDeleted": {
+    "description": "Pets, calendar, costs and change history: historyDeleted",
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "record": {
+        "type": "String"
+      }
+    }
+  },
+  "historyEmpty": "No changes yet. Changes to shared records will show here.",
+  "@historyEmpty": {
+    "description": "Pets, calendar, costs and change history: historyEmpty"
+  },
+  "historyLoadMore": "Show more",
+  "@historyLoadMore": {
+    "description": "Pets, calendar, costs and change history: historyLoadMore"
+  },
+  "historyPdfMade": "Made on {date}. Changes listed: {count}",
+  "@historyPdfMade": {
+    "description": "Pets, calendar, costs and change history: historyPdfMade",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "historyPdfWhat": "What changed",
+  "@historyPdfWhat": {
+    "description": "Pets, calendar, costs and change history: historyPdfWhat"
+  },
+  "historyRemoved": "{record} was removed for good",
+  "@historyRemoved": {
+    "description": "Pets, calendar, costs and change history: historyRemoved",
+    "placeholders": {
+      "record": {
+        "type": "String"
+      }
+    }
+  },
+  "historyRestored": "{person} restored {record}",
+  "@historyRestored": {
+    "description": "Pets, calendar, costs and change history: historyRestored",
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "record": {
+        "type": "String"
+      }
+    }
+  },
+  "historySubtitle": "Who added, changed or deleted shared records",
+  "@historySubtitle": {
+    "description": "Pets, calendar, costs and change history: historySubtitle"
+  },
+  "historyTitle": "Change history",
+  "@historyTitle": {
+    "description": "Pets, calendar, costs and change history: historyTitle"
+  },
+  "petCardMade": "Made with Vaultara on {date}",
+  "@petCardMade": {
+    "description": "Pets, calendar, costs and change history: petCardMade",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "petCardShare": "Share pet card",
+  "@petCardShare": {
+    "description": "Pets, calendar, costs and change history: petCardShare"
+  },
+  "petCardTitle": "{name} · Pet card",
+  "@petCardTitle": {
+    "description": "Pets, calendar, costs and change history: petCardTitle",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "petCareBody": "Add a reminder that repeats on its own.",
+  "@petCareBody": {
+    "description": "Pets, calendar, costs and change history: petCareBody"
+  },
+  "petCareCheckup": "Vet check-up",
+  "@petCareCheckup": {
+    "description": "Pets, calendar, costs and change history: petCareCheckup"
+  },
+  "petCareFlea": "Flea and tick treatment",
+  "@petCareFlea": {
+    "description": "Pets, calendar, costs and change history: petCareFlea"
+  },
+  "petCareTitle": "Care reminders",
+  "@petCareTitle": {
+    "description": "Pets, calendar, costs and change history: petCareTitle"
+  },
+  "petCareWorming": "Deworming",
+  "@petCareWorming": {
+    "description": "Pets, calendar, costs and change history: petCareWorming"
+  },
+  "petPlanAdd": "Add these dates to my reminders",
+  "@petPlanAdd": {
+    "description": "Pets, calendar, costs and change history: petPlanAdd"
+  },
+  "petPlanAdded": "Reminders added: {count}",
+  "@petPlanAdded": {
+    "description": "Pets, calendar, costs and change history: petPlanAdded",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "petPlanBefore": "Before you travel",
+  "@petPlanBefore": {
+    "description": "Pets, calendar, costs and change history: petPlanBefore"
+  },
+  "petPlanBy": "By {date}",
+  "@petPlanBy": {
+    "description": "Pets, calendar, costs and change history: petPlanBy",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "petPlanDate": "Travel date",
+  "@petPlanDate": {
+    "description": "Pets, calendar, costs and change history: petPlanDate"
+  },
+  "petPlanLate": "Too late for this travel date",
+  "@petPlanLate": {
+    "description": "Pets, calendar, costs and change history: petPlanLate"
+  },
+  "petPlanNote": "Each date is the latest the step can happen. Ask your vet about the gaps the official site asks for between steps.",
+  "@petPlanNote": {
+    "description": "Pets, calendar, costs and change history: petPlanNote"
+  },
+  "petPlanNothingToAdd": "These dates are already in your reminders.",
+  "@petPlanNothingToAdd": {
+    "description": "Pets, calendar, costs and change history: petPlanNothingToAdd"
+  },
+  "petPlanPickDate": "Choose your travel date to see when each step is due",
+  "@petPlanPickDate": {
+    "description": "Pets, calendar, costs and change history: petPlanPickDate"
+  },
+  "petPlanRecordName": "{pet}: {step}",
+  "@petPlanRecordName": {
+    "description": "Pets, calendar, costs and change history: petPlanRecordName",
+    "placeholders": {
+      "pet": {
+        "type": "String"
+      },
+      "step": {
+        "type": "String"
+      }
+    }
+  },
+  "petPlanRecordNote": "For the trip to {country}",
+  "@petPlanRecordNote": {
+    "description": "Pets, calendar, costs and change history: petPlanRecordNote",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
+  "petPlanTitle": "Countdown to your trip",
+  "@petPlanTitle": {
+    "description": "Pets, calendar, costs and change history: petPlanTitle"
+  },
+  "petStepCertificate": "Health certificate and papers",
+  "@petStepCertificate": {
+    "description": "Pets, calendar, costs and change history: petStepCertificate"
+  },
+  "petStepChip": "Microchip",
+  "@petStepChip": {
+    "description": "Pets, calendar, costs and change history: petStepChip"
+  },
+  "petStepRabies": "Rabies vaccine",
+  "@petStepRabies": {
+    "description": "Pets, calendar, costs and change history: petStepRabies"
+  },
+  "petStepResidence": "Arrive in an approved country",
+  "@petStepResidence": {
+    "description": "Pets, calendar, costs and change history: petStepResidence"
+  },
+  "petStepTapeworm": "Tapeworm treatment",
+  "@petStepTapeworm": {
+    "description": "Pets, calendar, costs and change history: petStepTapeworm"
+  },
+  "petStepTitre": "Rabies blood test",
+  "@petStepTitre": {
+    "description": "Pets, calendar, costs and change history: petStepTitre"
+  },
+  "petTypeChecking": "Looking it up…",
+  "@petTypeChecking": {
+    "description": "Pets, calendar, costs and change history: petTypeChecking"
+  },
+  "petTypeDidYouMean": "Did you mean {name}?",
+  "@petTypeDidYouMean": {
+    "description": "Pets, calendar, costs and change history: petTypeDidYouMean",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "petTypeJunk": "Use letters only, like Rabbit or Tarantula.",
+  "@petTypeJunk": {
+    "description": "Pets, calendar, costs and change history: petTypeJunk"
+  },
+  "petTypeKeepAnyway": "Keep it",
+  "@petTypeKeepAnyway": {
+    "description": "Pets, calendar, costs and change history: petTypeKeepAnyway"
+  },
+  "petTypeNotAnimal": "This doesn't look like a type of animal.",
+  "@petTypeNotAnimal": {
+    "description": "Pets, calendar, costs and change history: petTypeNotAnimal"
+  },
+  "petTypeOwnNote": "Saved as your own type. Travel rules will point to the official site.",
+  "@petTypeOwnNote": {
+    "description": "Pets, calendar, costs and change history: petTypeOwnNote"
+  },
+  "planBenefitCalendar": "Calendar link with Renew soon events and trips",
+  "@planBenefitCalendar": {
+    "description": "Pets, calendar, costs and change history: planBenefitCalendar"
+  },
+  "planBenefitPetCare": "Pet photos, care reminders and a travel countdown",
+  "@planBenefitPetCare": {
+    "description": "Pets, calendar, costs and change history: planBenefitPetCare"
+  },
+  "savingsComing": "Coming in 12 months",
+  "@savingsComing": {
+    "description": "Pets, calendar, costs and change history: savingsComing"
+  },
+  "savingsHeavyMonth": "Heads-up: {month} is your most expensive month ({amount}).",
+  "@savingsHeavyMonth": {
+    "description": "Pets, calendar, costs and change history: savingsHeavyMonth",
+    "placeholders": {
+      "month": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "savingsLeftOut": "Costs in currencies without a rate are left out.",
+  "@savingsLeftOut": {
+    "description": "Pets, calendar, costs and change history: savingsLeftOut"
+  },
+  "savingsMonthly": "Put aside about {amount} a month to cover your renewals.",
+  "@savingsMonthly": {
+    "description": "Pets, calendar, costs and change history: savingsMonthly",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "savingsSpent": "Paid this year",
+  "@savingsSpent": {
+    "description": "Pets, calendar, costs and change history: savingsSpent"
+  },
+  "subcategoryPetCheckups": "Vet check-ups",
+  "@subcategoryPetCheckups": {
+    "description": "Pets, calendar, costs and change history: subcategoryPetCheckups"
+  },
+  "subcategoryPetTreatments": "Flea, tick and worm treatments",
+  "@subcategoryPetTreatments": {
+    "description": "Pets, calendar, costs and change history: subcategoryPetTreatments"
+  },
+  "tourBusinessHistoryBody": "See who added, changed or deleted shared records, and export it as a PDF for an audit.",
+  "@tourBusinessHistoryBody": {
+    "description": "Pets, calendar, costs and change history: tourBusinessHistoryBody"
+  },
+  "tourPetsTravelPlanBody": "Check what a pet needs for any country, then pick your travel date for a countdown you can add to your reminders.",
+  "@tourPetsTravelPlanBody": {
+    "description": "Pets, calendar, costs and change history: tourPetsTravelPlanBody"
+  },
+  "tripEntryTitle": "Entry details",
+  "@tripEntryTitle": {
+    "description": "Pets, calendar, costs and change history: tripEntryTitle"
+  },
   "yoursTag": "Yours",
   "@yoursTag": {
     "description": "Small label on a category or group the user made."
