@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial_ids.dart';
 import 'package:vaultara/features/tutorials/view/tutorial_hint.dart';
 import 'package:flutter/material.dart';
+import 'package:vaultara/features/change_history/view/widgets/change_history_tile.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -355,6 +356,11 @@ class _FamilyScreenState extends State<FamilyScreen> {
                           TutorialTarget(
                             steps: const [TutorialStep.businessClientLink],
                             child: ClientLinkTile(enabled: !tour),
+                          ),
+                          const SizedBox(height: 12),
+                          TutorialTarget(
+                            steps: const [TutorialStep.businessHistory],
+                            child: ChangeHistoryTile(enabled: !tour),
                           ),
                         ] else if (!tour) ...[
                           const SizedBox(height: 16),
