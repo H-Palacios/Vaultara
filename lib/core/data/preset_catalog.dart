@@ -15,6 +15,7 @@ class PresetCatalog {
     'property_and_housing',
     'health_and_medical',
     'memberships_and_subscriptions',
+    'pets_and_animals',
   ];
 
   static const Map<String, List<String>> groupsByCategory =
@@ -67,6 +68,13 @@ class PresetCatalog {
           'club_memberships',
           'subscriptions',
           'warranties',
+        ],
+        'pets_and_animals': <String>[
+          'pet_vaccinations',
+          'pet_licences',
+          'pet_microchips',
+          'pet_insurances',
+          'pet_passports',
         ],
       };
 
@@ -135,6 +143,8 @@ class PresetCatalog {
         return loc.categoryHealthAndMedical;
       case 'memberships_and_subscriptions':
         return loc.categoryMembershipsAndSubscriptions;
+      case 'pets_and_animals':
+        return loc.categoryPetsAndAnimals;
       default:
         return key;
     }
@@ -224,6 +234,17 @@ class PresetCatalog {
       case 'warranties':
         return loc.subcategoryWarranties;
 
+      case 'pet_vaccinations':
+        return loc.subcategoryPetVaccinations;
+      case 'pet_licences':
+        return loc.subcategoryPetLicences;
+      case 'pet_microchips':
+        return loc.subcategoryPetMicrochips;
+      case 'pet_insurances':
+        return loc.subcategoryPetInsurances;
+      case 'pet_passports':
+        return loc.subcategoryPetPassports;
+
       default:
         // Custom groups show the name the user gave them. Retired preset keys
         // and keys with no name left show as readable words, never as code.
@@ -265,6 +286,8 @@ class PresetCatalog {
         return Icons.medical_services_rounded;
       case 'memberships_and_subscriptions':
         return Icons.card_membership_rounded;
+      case 'pets_and_animals':
+        return Icons.pets_rounded;
       default:
         return Icons.folder_rounded;
     }
