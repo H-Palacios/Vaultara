@@ -29,6 +29,7 @@ import 'package:vaultara/features/tutorials/view/tutorial_target.dart';
 import 'package:vaultara/features/staff/view/bulk_request_tile.dart';
 import 'package:vaultara/features/family/view/person_row.dart';
 import 'package:vaultara/features/staff/view/edit_role_action.dart';
+import 'package:vaultara/features/staff/view/staff_import_tile.dart';
 import 'package:vaultara/features/staff/logic/required_documents.dart';
 import 'package:vaultara/features/tutorials/data/models/tour_samples.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
@@ -336,6 +337,10 @@ class _FamilyScreenState extends State<FamilyScreen> {
                         ),
                         if (tier == PlanTier.business) ...[
                           const SizedBox(height: 16),
+                          TutorialTarget(
+                            steps: const [TutorialStep.businessImport],
+                            child: StaffImportTile(enabled: !tour),
+                          ),
                           if (!tour) ...[
                             const BulkRequestTile(),
                             const CompanyNameTile(),
