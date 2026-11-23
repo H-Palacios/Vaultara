@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:cloud_functions/cloud_functions.dart';
+import 'package:vaultara/features/calendar/data/calendar_options.dart';
 import 'package:crypto/crypto.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -22,10 +23,10 @@ class CalendarLink {
       sha256.convert(utf8.encode(token)).toString().substring(0, 16);
 
   Map<String, String> toJson() => <String, String>{
-        'url': url,
-        'webcalUrl': webcalUrl,
-        'googleUrl': googleUrl,
-      };
+    'url': url,
+    'webcalUrl': webcalUrl,
+    'googleUrl': googleUrl,
+  };
 
   static CalendarLink? fromMap(Object? raw) {
     if (raw is! Map) return null;
@@ -44,6 +45,7 @@ class CalendarLinkStatus {
   final DateTime? createdAt;
   final DateTime? lastFetchedAt;
   final CalendarLink? link;
+  final CalendarOptions options;
 
   const CalendarLinkStatus({
     required this.active,
@@ -51,10 +53,13 @@ class CalendarLinkStatus {
     this.createdAt,
     this.lastFetchedAt,
     this.link,
+    this.options = CalendarOptions.defaults,
   });
 
-  static const CalendarLinkStatus off =
-      CalendarLinkStatus(active: false, paid: true);
+  static const CalendarLinkStatus off = CalendarLinkStatus(
+    active: false,
+    paid: true,
+  );
 }
 
 class CalendarLinkService {
@@ -125,7 +130,8 @@ class CalendarLinkService {
 
     var link = await _cached(uid);
     final fingerprint = data['fingerprint'];
-    if (link != null && (fingerprint is! String || link.fingerprint != fingerprint)) {
+    if (link != null &&
+        (fingerprint is! String || link.fingerprint != fingerprint)) {
       await _remember(uid, null);
       link = null;
     }
@@ -136,7 +142,17 @@ class CalendarLinkService {
       createdAt: _date(data['createdAt']),
       lastFetchedAt: _date(data['lastFetchedAt']),
       link: link,
+      options: CalendarOptions.fromMap(data['options']),
     );
+  }
+
+  /// Saves what goes into the link; the server checks every value again.
+  static Future<CalendarOptions> saveOptions(CalendarOptions options) async {
+    final response = await _functions
+        .httpsCallable('saveCalendarOptions')
+        .call(options.toMap());
+    final data = response.data;
+    return CalendarOptions.fromMap(data is Map ? data['options'] : null);
   }
 
   static Future<CalendarLinkStatus> create(String localeName) async {

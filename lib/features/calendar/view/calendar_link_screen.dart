@@ -1,5 +1,6 @@
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:vaultara/features/calendar/view/widgets/calendar_options_card.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
@@ -318,6 +319,15 @@ class _CalendarLinkScreenState extends State<CalendarLinkScreen> {
         ),
         const SizedBox(height: 14),
         _Message(text: loc.calendarLinkRefreshNote),
+        const SizedBox(height: 6),
+        _Message(text: loc.calendarLinkGoogleNote),
+        const SizedBox(height: 18),
+        Text(
+          loc.calendarOptionsTitle,
+          style: const TextStyle(fontSize: 15.5, fontWeight: FontWeight.w800),
+        ),
+        const SizedBox(height: 8),
+        CalendarOptionsCard(initial: status.options),
       ] else ...[
         _Message(text: loc.calendarLinkOtherDevice),
         const SizedBox(height: 14),
@@ -341,9 +351,7 @@ class _CalendarLinkScreenState extends State<CalendarLinkScreen> {
                 label: Text(loc.calendarLinkRotate),
               ),
             ),
-          Expanded(
-            child: _TurnOffButton(onPressed: _busy ? null : _turnOff),
-          ),
+          Expanded(child: _TurnOffButton(onPressed: _busy ? null : _turnOff)),
         ],
       ),
       const SizedBox(height: 12),
