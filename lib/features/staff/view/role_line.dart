@@ -8,7 +8,7 @@ class RoleLine extends StatelessWidget {
   final String? role;
   final List<String> missing;
 
-  const RoleLine({required this.role, required this.missing});
+  const RoleLine({super.key, required this.role, required this.missing});
 
   @override
   Widget build(BuildContext context) {

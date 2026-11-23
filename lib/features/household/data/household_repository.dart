@@ -353,11 +353,18 @@ class HouseholdRepository {
       if (message.contains('already-in-household')) {
         return HouseholdError.alreadyInHousehold;
       }
-      if (message.contains('already-member'))
+      if (message.contains('already-member')) {
         return HouseholdError.alreadyMember;
-      if (message.contains('plan-required')) return HouseholdError.planRequired;
-      if (message.contains('plan-inactive')) return HouseholdError.planInactive;
-      if (message.contains('member-limit')) return HouseholdError.memberLimit;
+      }
+      if (message.contains('plan-required')) {
+        return HouseholdError.planRequired;
+      }
+      if (message.contains('plan-inactive')) {
+        return HouseholdError.planInactive;
+      }
+      if (message.contains('member-limit')) {
+        return HouseholdError.memberLimit;
+      }
       switch (error.code) {
         case 'resource-exhausted':
           return HouseholdError.tooManyAttempts;
