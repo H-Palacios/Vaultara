@@ -23,6 +23,9 @@ class PetTypeSearch {
 
   static const int defaultMax = 8;
 
+  /// Lower case without accents, so "Lézard" and "lezard" match.
+  static String fold(String text) => _fold(text);
+
   static String _fold(String text) {
     const from = 'àáâãäåçèéêëìíîïñòóôõöùúûüýÿ';
     const to = 'aaaaaaceeeeiiiinooooouuuuyy';

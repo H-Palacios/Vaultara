@@ -69,6 +69,47 @@ class PetTypes {
 
   static const String customEmoji = '\u{1F43E}';
 
+  /// Emoji the type helper may give a pet of the user's own type, the same
+  /// list the server checks. Anything else shows the paw.
+  static const Set<String> allowedEmoji = <String>{
+    '\u{1F415}',
+    '\u{1F408}',
+    '\u{1F9A6}',
+    '\u{1F407}',
+    '\u{1F439}',
+    '\u{1F42D}',
+    '\u{1F400}',
+    '\u{1F426}',
+    '\u{1F99C}',
+    '\u{1F414}',
+    '\u{1F986}',
+    '\u{1F54A}',
+    '\u{1F98E}',
+    '\u{1F40D}',
+    '\u{1F422}',
+    '\u{1F438}',
+    '\u{1F41F}',
+    '\u{1F420}',
+    '\u{1F40E}',
+    '\u{1F434}',
+    '\u{1F43E}',
+    '\u{1F577}',
+    '\u{1F41C}',
+    '\u{1F41B}',
+    '\u{1F982}',
+    '\u{1F40C}',
+    '\u{1F994}',
+    '\u{1F410}',
+    '\u{1F411}',
+    '\u{1F416}',
+    '\u{1F404}',
+    '\u{1F999}',
+    '\u{1F41D}',
+    '\u{1F98B}',
+    '\u{1F980}',
+    '\u{1F419}',
+  };
+
   static final RegExp _idPattern = RegExp(r'^[a-z_]{2,20}$');
 
   static PetType? byId(String? id) {
