@@ -106,6 +106,15 @@ class ImportCatalog {
           'warranties',
           'clubs',
         ],
+        'pets_and_animals': <String>[
+          'pets',
+          'pet',
+          'animals',
+          'animal',
+          'dogs',
+          'cats',
+          'vet',
+        ],
       };
 
   static const Map<String, List<String>> presetGroupAliases =
@@ -344,6 +353,39 @@ class ImportCatalog {
           'extended warranty',
           'service plan',
         ],
+        'pet_vaccinations': <String>[
+          'pet vaccination',
+          'dog vaccination',
+          'cat vaccination',
+          'rabies vaccination',
+          'rabies',
+          'pet vaccine',
+        ],
+        'pet_licences': <String>[
+          'pet licence',
+          'pet license',
+          'dog licence',
+          'dog license',
+          'dog tag',
+        ],
+        'pet_microchips': <String>[
+          'microchip',
+          'pet microchip',
+          'microchip registration',
+          'chip registration',
+        ],
+        'pet_insurances': <String>[
+          'pet insurance',
+          'dog insurance',
+          'cat insurance',
+          'vet insurance',
+        ],
+        'pet_passports': <String>[
+          'pet passport',
+          'animal passport',
+          'animal health certificate',
+          'pet travel certificate',
+        ],
       };
 
   CatalogCategory? categoryByKey(String key) {
@@ -366,6 +408,19 @@ class ImportCatalog {
         ? within.groups
         : <CatalogGroup>[for (final c in categories) ...c.groups];
     return _best<CatalogGroup>(stem, pool, (g) => g.names);
+  }
+
+  /// The one group anywhere whose name is exactly [text], or null when no
+  /// group, or more than one, has that name.
+  CatalogGroup? matchGroupExactly(String text) {
+    final stem = ImportText.stem(text);
+    if (stem.isEmpty) return null;
+    final hits = <CatalogGroup>[
+      for (final c in categories)
+        for (final g in c.groups)
+          if (g.names.contains(stem)) g,
+    ];
+    return hits.length == 1 ? hits.first : null;
   }
 
   static T? _best<T>(

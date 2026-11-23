@@ -46,8 +46,6 @@ class GroupSuggester {
     'tv license',
     'television',
     'fishing',
-    'dog licence',
-    'dog license',
   ];
 
   static const List<String> _firearm = <String>[
@@ -571,6 +569,42 @@ class GroupSuggester {
     return ' $cleaned ';
   }
 
+  static const List<String> _pet = <String>[
+    'pet',
+    'pets',
+    'dog',
+    'dogs',
+    'cat',
+    'cats',
+    'puppy',
+    'kitten',
+    'rabies',
+    'microchip',
+  ];
+  static const List<String> _petLicence = <String>[
+    'licence',
+    'license',
+    'tag',
+    'registration',
+  ];
+  static const List<String> _petPassport = <String>[
+    'passport',
+    'travel certificate',
+    'health certificate',
+  ];
+
+  /// A pet's document, by kind, when the name is clearly about a pet.
+  static String? _petGroup(String text) {
+    if (!_has(text, _pet)) return null;
+    if (_has(text, const <String>['microchip', 'chip'])) {
+      return 'pet_microchips';
+    }
+    if (_has(text, _insurance)) return 'pet_insurances';
+    if (_has(text, _petPassport)) return 'pet_passports';
+    if (_has(text, _petLicence)) return 'pet_licences';
+    return 'pet_vaccinations';
+  }
+
   static bool _has(String text, List<String> words) {
     for (final word in words) {
       if (word.length >= 6 && !word.contains(' ')) {
@@ -587,6 +621,8 @@ class GroupSuggester {
     if (text.trim().length < 2) return null;
     if (_has(text, _skip)) return null;
 
+    final pet = _petGroup(text);
+    if (pet != null) return pet;
     if (_has(text, _firearm)) return 'firearm_licences';
     if (_has(text, _idp)) return 'international_driving_permits';
     if (_has(text, _boatPilot)) return 'boat_and_pilot_licences';

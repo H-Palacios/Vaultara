@@ -12,11 +12,11 @@ class GroupIdeas {
   /// Keyword (lowercase, matched at the start of a word in the category name) to preset
   /// group keys whose translated names make good ideas.
   static const Map<String, List<String>> _byKeyword = <String, List<String>>{
-    'pet': <String>['vaccinations'],
-    'dog': <String>['vaccinations'],
-    'cat': <String>['vaccinations'],
-    'animal': <String>['vaccinations'],
-    'vet': <String>['vaccinations'],
+    'pet': <String>['pet_vaccinations', 'pet_microchips', 'pet_insurances'],
+    'dog': <String>['pet_vaccinations', 'pet_licences', 'pet_microchips'],
+    'cat': <String>['pet_vaccinations', 'pet_microchips', 'pet_insurances'],
+    'animal': <String>['pet_vaccinations', 'pet_passports'],
+    'vet': <String>['pet_vaccinations', 'pet_insurances'],
     'car': <String>[
       'vehicle_registrations',
       'vehicle_insurances',

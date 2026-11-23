@@ -9,7 +9,14 @@ enum ImportRowStatus { ready, skipped, needsCategory }
 
 enum ImportSkipReason { noName, noDate, badDate, duplicate, duplicateInFile }
 
-enum ImportNoteKind { personNotFound, reminderAdjusted, newGroup, groupNotFound, badCost, alreadyTracked }
+enum ImportNoteKind {
+  personNotFound,
+  reminderAdjusted,
+  newGroup,
+  groupNotFound,
+  badCost,
+  alreadyTracked,
+}
 
 class ImportNote {
   final ImportNoteKind kind;
@@ -101,8 +108,9 @@ class ImportPlan {
       rows.where((r) => r.status == ImportRowStatus.skipped).length;
   int get needsCategoryCount =>
       rows.where((r) => r.status == ImportRowStatus.needsCategory).length;
-  int get unmatchedCount =>
-      rows.where((r) => r.status == ImportRowStatus.needsCategory || r.usedFallback).length;
+  int get unmatchedCount => rows
+      .where((r) => r.status == ImportRowStatus.needsCategory || r.usedFallback)
+      .length;
 }
 
 typedef NewGroupKey = String Function(String categoryKey, String label);
@@ -147,7 +155,11 @@ class ImportPlanner {
   static String similarKey(String name, String groupKey, String? holderId) =>
       '${ImportText.normalise(name)}|$groupKey|${holderId ?? ''}';
 
-  static String _cell(List<String> row, Map<ImportField, int> mapping, ImportField field) {
+  static String _cell(
+    List<String> row,
+    Map<ImportField, int> mapping,
+    ImportField field,
+  ) {
     final index = mapping[field];
     if (index == null || index < 0 || index >= row.length) return '';
     return row[index].trim();
@@ -178,34 +190,43 @@ class ImportPlanner {
       final rawExpiry = _cell(row, mapping, ImportField.expiry);
 
       if (name.isEmpty) {
-        rows.add(ImportRow(
-          line: line,
-          name: name,
-          rawExpiry: rawExpiry,
-          status: ImportRowStatus.skipped,
-          reason: ImportSkipReason.noName,
-        ));
+        rows.add(
+          ImportRow(
+            line: line,
+            name: name,
+            rawExpiry: rawExpiry,
+            status: ImportRowStatus.skipped,
+            reason: ImportSkipReason.noName,
+          ),
+        );
         continue;
       }
       if (rawExpiry.isEmpty) {
-        rows.add(ImportRow(
-          line: line,
-          name: name,
-          rawExpiry: rawExpiry,
-          status: ImportRowStatus.skipped,
-          reason: ImportSkipReason.noDate,
-        ));
+        rows.add(
+          ImportRow(
+            line: line,
+            name: name,
+            rawExpiry: rawExpiry,
+            status: ImportRowStatus.skipped,
+            reason: ImportSkipReason.noDate,
+          ),
+        );
         continue;
       }
-      final expiry = ImportDateParser.parse(rawExpiry, order: options.dateOrder);
+      final expiry = ImportDateParser.parse(
+        rawExpiry,
+        order: options.dateOrder,
+      );
       if (expiry == null) {
-        rows.add(ImportRow(
-          line: line,
-          name: name,
-          rawExpiry: rawExpiry,
-          status: ImportRowStatus.skipped,
-          reason: ImportSkipReason.badDate,
-        ));
+        rows.add(
+          ImportRow(
+            line: line,
+            name: name,
+            rawExpiry: rawExpiry,
+            status: ImportRowStatus.skipped,
+            reason: ImportSkipReason.badDate,
+          ),
+        );
         continue;
       }
 
@@ -229,8 +250,8 @@ class ImportPlanner {
       final notes = notesText.isEmpty
           ? null
           : (notesText.length > maxNotesLength
-              ? notesText.substring(0, maxNotesLength)
-              : notesText);
+                ? notesText.substring(0, maxNotesLength)
+                : notesText);
 
       String? holderId;
       final personText = _cell(row, mapping, ImportField.person);
@@ -245,7 +266,10 @@ class ImportPlanner {
       String? currency;
       final costText = _cell(row, mapping, ImportField.cost);
       if (costText.isNotEmpty) {
-        final parsed = parseCost(costText, defaultCurrency: options.defaultCurrency);
+        final parsed = parseCost(
+          costText,
+          defaultCurrency: options.defaultCurrency,
+        );
         if (parsed.amount == null) {
           messages.add(ImportNote(ImportNoteKind.badCost, costText));
         } else {
@@ -265,24 +289,29 @@ class ImportPlanner {
       );
 
       if (placement.groupKey == null || placement.categoryKey == null) {
-        rows.add(ImportRow(
-          line: line,
-          name: name,
-          rawExpiry: rawExpiry,
-          expiry: expiry,
-          notes: notes,
-          holderId: holderId,
-          cost: cost,
-          currency: currency,
-          reminderDays: reminder,
-          status: ImportRowStatus.needsCategory,
-          messages: messages,
-        ));
+        rows.add(
+          ImportRow(
+            line: line,
+            name: name,
+            rawExpiry: rawExpiry,
+            expiry: expiry,
+            notes: notes,
+            holderId: holderId,
+            cost: cost,
+            currency: currency,
+            reminderDays: reminder,
+            status: ImportRowStatus.needsCategory,
+            messages: messages,
+          ),
+        );
         continue;
       }
 
       if (placement.newGroupLabel != null) {
-        messages.insert(0, ImportNote(ImportNoteKind.newGroup, placement.newGroupLabel!));
+        messages.insert(
+          0,
+          ImportNote(ImportNoteKind.newGroup, placement.newGroupLabel!),
+        );
       }
 
       final key = duplicateKey(name, placement.groupKey!, expiry);
@@ -297,31 +326,36 @@ class ImportPlanner {
             similarRecords[similarKey(name, placement.groupKey!, holderId)];
         if (similar != null) {
           final d = similar;
-          final iso = '${d.year.toString().padLeft(4, '0')}-'
+          final iso =
+              '${d.year.toString().padLeft(4, '0')}-'
               '${d.month.toString().padLeft(2, '0')}-'
               '${d.day.toString().padLeft(2, '0')}';
           messages.add(ImportNote(ImportNoteKind.alreadyTracked, iso));
         }
       }
 
-      rows.add(ImportRow(
-        line: line,
-        name: name,
-        rawExpiry: rawExpiry,
-        expiry: expiry,
-        categoryKey: placement.categoryKey,
-        groupKey: placement.groupKey,
-        newGroupLabel: placement.newGroupLabel,
-        notes: notes,
-        holderId: holderId,
-        cost: cost,
-        currency: currency,
-        reminderDays: reminder,
-        usedFallback: placement.usedFallback,
-        status: reason == null ? ImportRowStatus.ready : ImportRowStatus.skipped,
-        reason: reason,
-        messages: messages,
-      ));
+      rows.add(
+        ImportRow(
+          line: line,
+          name: name,
+          rawExpiry: rawExpiry,
+          expiry: expiry,
+          categoryKey: placement.categoryKey,
+          groupKey: placement.groupKey,
+          newGroupLabel: placement.newGroupLabel,
+          notes: notes,
+          holderId: holderId,
+          cost: cost,
+          currency: currency,
+          reminderDays: reminder,
+          usedFallback: placement.usedFallback,
+          status: reason == null
+              ? ImportRowStatus.ready
+              : ImportRowStatus.skipped,
+          reason: reason,
+          messages: messages,
+        ),
+      );
     }
 
     return ImportPlan(
@@ -337,8 +371,10 @@ class ImportPlanner {
     return collapsed.substring(0, maxNameLength).trim();
   }
 
-  static final RegExp _groupLabelPattern =
-      RegExp(r'^[\p{L} ]+$', unicode: true);
+  static final RegExp _groupLabelPattern = RegExp(
+    r'^[\p{L} ]+$',
+    unicode: true,
+  );
 
   static String? cleanGroupLabel(String raw) {
     final collapsed = raw.replaceAll(RegExp(r'\s+'), ' ').trim();
@@ -354,10 +390,17 @@ class ImportPlanner {
     required ImportOptions options,
     required NewGroupKey newGroupKey,
   }) {
-    final category =
-        categoryText.isEmpty ? null : catalog.matchCategory(categoryText);
+    final category = categoryText.isEmpty
+        ? null
+        : catalog.matchCategory(categoryText);
 
     if (groupText.isNotEmpty) {
+      // A group named exactly (Pet insurance) wins over a loose match inside
+      // the given category (Insurance), wherever that group lives.
+      final exact = catalog.matchGroupExactly(groupText);
+      if (exact != null) {
+        return _Placement(categoryKey: exact.categoryKey, groupKey: exact.key);
+      }
       if (category != null) {
         final inside = catalog.matchGroup(groupText, within: category);
         if (inside != null) {
@@ -366,7 +409,10 @@ class ImportPlanner {
       }
       final anywhere = catalog.matchGroup(groupText);
       if (anywhere != null) {
-        return _Placement(categoryKey: anywhere.categoryKey, groupKey: anywhere.key);
+        return _Placement(
+          categoryKey: anywhere.categoryKey,
+          groupKey: anywhere.key,
+        );
       }
       if (category != null) {
         final label = cleanGroupLabel(groupText);
@@ -377,7 +423,11 @@ class ImportPlanner {
             newGroupLabel: label,
           );
         }
-        return _defaultIn(category, options, ImportNote(ImportNoteKind.groupNotFound, groupText));
+        return _defaultIn(
+          category,
+          options,
+          ImportNote(ImportNoteKind.groupNotFound, groupText),
+        );
       }
     } else if (category != null) {
       return _defaultIn(category, options, null);
@@ -386,7 +436,10 @@ class ImportPlanner {
     if (categoryText.isNotEmpty) {
       final asGroup = catalog.matchGroup(categoryText);
       if (asGroup != null) {
-        return _Placement(categoryKey: asGroup.categoryKey, groupKey: asGroup.key);
+        return _Placement(
+          categoryKey: asGroup.categoryKey,
+          groupKey: asGroup.key,
+        );
       }
     }
 
@@ -442,13 +495,31 @@ class ImportPlanner {
   }
 
   static const Set<String> _noReminderWords = <String>{
-    'none', 'no', 'off', 'never', 'nee', 'geen', 'ninguno', 'nunca', 'kein',
-    'keine', 'nie', 'aucun', 'non', 'jamais', 'nao', 'nenhum',
+    'none',
+    'no',
+    'off',
+    'never',
+    'nee',
+    'geen',
+    'ninguno',
+    'nunca',
+    'kein',
+    'keine',
+    'nie',
+    'aucun',
+    'non',
+    'jamais',
+    'nao',
+    'nenhum',
   };
 
   static final RegExp _leadingNumber = RegExp(r'^\s*(\d{1,4})');
 
-  static int? _reminder(String raw, ImportOptions options, List<ImportNote> messages) {
+  static int? _reminder(
+    String raw,
+    ImportOptions options,
+    List<ImportNote> messages,
+  ) {
     int? days;
     if (raw.isEmpty) {
       days = options.defaultReminderDays;
@@ -472,13 +543,34 @@ class ImportPlanner {
   }
 
   static const Map<String, String> _symbols = <String, String>{
-    '€': 'EUR', '£': 'GBP', '¥': 'JPY', '₹': 'INR', '₦': 'NGN', '₩': 'KRW',
-    '₺': 'TRY', '₽': 'RUB', '₱': 'PHP', '₪': 'ILS', '₫': 'VND', '฿': 'THB',
-    '₴': 'UAH', '₵': 'GHS', '₡': 'CRC', 'zł': 'PLN', 'kr': 'SEK', 'R\$': 'BRL',
-    'Fr': 'CHF', 'Rp': 'IDR', 'RM': 'MYR', 'R': 'ZAR',
+    '€': 'EUR',
+    '£': 'GBP',
+    '¥': 'JPY',
+    '₹': 'INR',
+    '₦': 'NGN',
+    '₩': 'KRW',
+    '₺': 'TRY',
+    '₽': 'RUB',
+    '₱': 'PHP',
+    '₪': 'ILS',
+    '₫': 'VND',
+    '฿': 'THB',
+    '₴': 'UAH',
+    '₵': 'GHS',
+    '₡': 'CRC',
+    'zł': 'PLN',
+    'kr': 'SEK',
+    'R\$': 'BRL',
+    'Fr': 'CHF',
+    'Rp': 'IDR',
+    'RM': 'MYR',
+    'R': 'ZAR',
   };
 
-  static String? normaliseCurrency(String raw, {required String defaultCurrency}) {
+  static String? normaliseCurrency(
+    String raw, {
+    required String defaultCurrency,
+  }) {
     final value = raw.trim();
     if (value.isEmpty) return null;
     if (RegExp(r'^[A-Za-z]{3}$').hasMatch(value)) return value.toUpperCase();
@@ -493,7 +585,9 @@ class ImportPlanner {
   }
 
   static final RegExp _codeInText = RegExp(r'\b([A-Z]{3})\b');
-  static final RegExp _numberPart = RegExp('\\d(?:[\\d.,\\s\u00A0\u202F\u2009]*\\d)?');
+  static final RegExp _numberPart = RegExp(
+    '\\d(?:[\\d.,\\s\u00A0\u202F\u2009]*\\d)?',
+  );
 
   static ImportCost parseCost(String raw, {required String defaultCurrency}) {
     final text = raw.trim();
@@ -507,7 +601,10 @@ class ImportPlanner {
         ..sort((a, b) => b.length.compareTo(a.length));
       for (final symbol in symbols) {
         if (text.contains(symbol)) {
-          currency = normaliseCurrency(symbol, defaultCurrency: defaultCurrency);
+          currency = normaliseCurrency(
+            symbol,
+            defaultCurrency: defaultCurrency,
+          );
           break;
         }
       }
