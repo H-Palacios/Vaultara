@@ -23,6 +23,8 @@ class AssistantStepLabel {
         return loc.assistantStepTrips;
       case 'pets':
         return loc.assistantStepPets;
+      case 'history':
+        return loc.assistantStepHistory;
       case 'people':
         return loc.assistantStepPeople;
       case 'record_add':

@@ -22,6 +22,9 @@ import 'package:vaultara/features/tools/logic/life_events.dart';
 import 'package:vaultara/features/tools/view/life_events_screen.dart';
 import 'package:vaultara/features/security/view/security_history_screen.dart';
 import 'package:vaultara/features/security/view/security_privacy_screen.dart';
+import 'package:vaultara/features/calendar/view/calendar_link_screen.dart';
+import 'package:vaultara/features/change_history/view/change_history_screen.dart';
+import 'package:vaultara/features/household/data/household_repository.dart';
 import 'package:vaultara/features/pets/data/pet_repository.dart';
 import 'package:vaultara/features/pets/view/pet_detail_screen.dart';
 import 'package:vaultara/features/pets/view/pet_travel_screen.dart';
@@ -197,6 +200,14 @@ class AssistantNavigator {
         } else {
           _push(context, PetsScreen(isPremium: shell.isPremium));
         }
+        return true;
+      case 'calendar_link':
+        _push(context, CalendarLinkScreen(isPremium: shell.isPremium));
+        return true;
+      case 'change_history':
+        final hid = HouseholdRepository.householdId;
+        if (hid == null || !HouseholdRepository.isOwner) return false;
+        _push(context, ChangeHistoryScreen(householdId: hid));
         return true;
       case 'pet_travel':
         final code = action.targetId;

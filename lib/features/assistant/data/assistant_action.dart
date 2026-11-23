@@ -251,6 +251,8 @@ class AssistantAction {
     'pets',
     'pet',
     'pet_travel',
+    'calendar_link',
+    'change_history',
   ];
 
   final AssistantActionType type;

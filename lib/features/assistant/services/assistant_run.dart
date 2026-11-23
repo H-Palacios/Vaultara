@@ -22,6 +22,7 @@ class AssistantStep {
     'records',
     'trips',
     'pets',
+    'history',
     'people',
     'record_add',
     'record_edit',
