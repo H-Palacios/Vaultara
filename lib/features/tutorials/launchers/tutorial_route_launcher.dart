@@ -35,7 +35,6 @@ class TutorialRouteLauncher {
     required List<TutorialStep> group,
     bool isPremium = false,
     bool closeWhenDone = false,
-    PlanTier? offerPlan,
   }) async {
     if (group.isEmpty || !navigator.mounted) return;
 
@@ -49,12 +48,7 @@ class TutorialRouteLauncher {
     await Future<void>.delayed(_routeSettle);
     if (!navigator.mounted) return;
 
-    controller.start(
-      group.first,
-      group: group,
-      isPremium: isPremium,
-      offerPlan: offerPlan,
-    );
+    controller.start(group.first, group: group, isPremium: isPremium);
     if (!closeWhenDone) return;
 
     // A screen opened only for the tutorial, such as a paid screen shown

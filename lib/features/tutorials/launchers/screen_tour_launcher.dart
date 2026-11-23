@@ -64,11 +64,10 @@ class ScreenTourLauncher {
       case TutorialIds.renew:
         await _renew(navigator, group, premium);
       case TutorialIds.askVaultara:
-        await _paid(
+        await _sample(
           navigator,
           group,
           premium,
-          PlanTier.premium,
           (_) => AskVaultaraScreen(isPremium: premium, tour: true),
         );
       case TutorialIds.lostWallet:
@@ -107,11 +106,10 @@ class ScreenTourLauncher {
           (_) => ShareTourStage(isPremium: premium),
         );
       case TutorialIds.household:
-        await _paid(
+        await _sample(
           navigator,
           group,
           premium,
-          PlanTier.family,
           (_) => TourStageSwitch(
             sampleSteps: const {TutorialStep.householdRenewer},
             sample: TourSamplesView.renewer,
@@ -119,11 +117,10 @@ class ScreenTourLauncher {
           ),
         );
       case TutorialIds.business:
-        await _paid(
+        await _sample(
           navigator,
           group,
           premium,
-          PlanTier.business,
           (_) => TourStageSwitch(
             sampleSteps: const {TutorialStep.businessRequest},
             sample: (context) => TourSamplesView.recordCard(
@@ -177,28 +174,6 @@ class ScreenTourLauncher {
       group: group,
       isPremium: premium,
       closeWhenDone: true,
-    );
-  }
-
-  /// A paid feature: its screen opens as it works on [plan] for everyone,
-  /// closes when the tutorial ends, and the last step offers the plan to
-  /// anyone who does not have it yet.
-  static Future<void> _paid(
-    NavigatorState navigator,
-    List<TutorialStep> group,
-    bool premium,
-    PlanTier plan,
-    WidgetBuilder builder,
-  ) {
-    final PlanTier? mine = PlanStore.current.value?.tier;
-    final bool included = mine != null && mine.includes(plan);
-    return TutorialRouteLauncher.pushAndStart(
-      navigator,
-      builder: builder,
-      group: group,
-      isPremium: premium,
-      closeWhenDone: true,
-      offerPlan: included ? null : plan,
     );
   }
 
