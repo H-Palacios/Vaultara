@@ -1,3 +1,6 @@
+import 'package:vaultara/features/pets/view/pets_screen.dart';
+import 'package:vaultara/features/rules_review/services/rule_review_service.dart';
+import 'package:vaultara/features/rules_review/view/rules_review_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -69,6 +72,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
   UserProfile? _profile = UserProfile.quick();
 
   final GlobalKey _lostWalletKey = GlobalKey();
+
+  /// Shown only to accounts with the admin claim; the server checks again.
+  final Future<bool> _isAdmin = RuleReviewService.isAdmin();
   final GlobalKey _lifeEventsKey = GlobalKey();
   final GlobalKey _proofPackKey = GlobalKey();
   final GlobalKey _sharedLinksKey = GlobalKey();
@@ -257,7 +263,30 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       onTap: () => _push(const FamilyScreen()),
                     ),
                   ),
+                  // Pets are kept apart from people, so they never use a
+                  // member place.
+                  PremiumBuilder(
+                    initial: widget.isPremium,
+                    builder: (context, isPremium) => SettingsTile(
+                      icon: Icons.pets_rounded,
+                      title: t.petsTitle,
+                      subtitle: t.petsTileSubtitle,
+                      trailing: _lock(isPremium),
+                      onTap: () => _push(PetsScreen(isPremium: isPremium)),
+                    ),
+                  ),
                   const InviteFriendsTile(),
+                  FutureBuilder<bool>(
+                    future: _isAdmin,
+                    builder: (context, snap) => snap.data == true
+                        ? SettingsTile(
+                            icon: Icons.fact_check_rounded,
+                            title: t.rulesReviewTitle,
+                            subtitle: t.rulesReviewSubtitle,
+                            onTap: () => _push(const RulesReviewScreen()),
+                          )
+                        : const SizedBox.shrink(),
+                  ),
                 ],
               ),
 
