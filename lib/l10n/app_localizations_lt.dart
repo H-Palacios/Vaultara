@@ -8831,6 +8831,260 @@ class AppLocalizationsLt extends AppLocalizations {
   String get rulesReviewDropped => 'Praleista (nėra atitinkančio sakinio)';
 
   @override
+  String get assistantStepHistory => 'Tikrinama pakeitimų istorija';
+
+  @override
+  String get businessBenefitHistory => 'Bendrinamų įrašų pakeitimų istorija su PDF eksportu';
+
+  @override
+  String get calendarLinkGoogleNote => '„Google“ kalendoriui gali prireikti iki paros, kad parodytų pakeitimus. „Apple“ kalendorius ir „Outlook“ paprastai atsinaujina per kelias valandas.';
+
+  @override
+  String get calendarOptionCategories => 'Kategorijos';
+
+  @override
+  String get calendarOptionHide => 'Slėpti įrašų pavadinimus';
+
+  @override
+  String get calendarOptionHideBody => 'Įvykiuose vietoj pavadinimo rašoma „Baigiasi dokumento galiojimas“';
+
+  @override
+  String get calendarOptionPeople => 'Žmonės';
+
+  @override
+  String get calendarOptionRenew => 'Įvykiai „Atnaujinti greitai“';
+
+  @override
+  String get calendarOptionRenewBody => 'Papildomas įvykis kiekvieno įrašo priminimo dieną';
+
+  @override
+  String get calendarOptionTrips => 'Kelionės';
+
+  @override
+  String get calendarOptionsTitle => 'Kas patenka į jūsų kalendorių';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Pagalbos numeris: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Šiai kelionei neišsaugotas tarptautinis vairuotojo pažymėjimas';
+
+  @override
+  String get entryPermitNotNeeded => 'Vairuoti nereikia tarptautinio vairuotojo pažymėjimo';
+
+  @override
+  String get entryPermitRecommended => 'Vairuoti rekomenduojamas tarptautinis vairuotojo pažymėjimas';
+
+  @override
+  String get entryPermitRequired => 'Vairuotojams reikia tarptautinio vairuotojo pažymėjimo';
+
+  @override
+  String get entryYellowFeverAll => 'Reikia skiepijimo nuo geltonojo drugio pažymėjimo';
+
+  @override
+  String get entryYellowFeverNo => 'Geltonojo drugio pažymėjimo nereikia';
+
+  @override
+  String get entryYellowFeverRisk => 'Geltonojo drugio pažymėjimas reikalingas, jei atvykstate iš šalies, kurioje yra geltonojo drugio rizika';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person pridėjo $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person pakeitė $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person ištrynė $record';
+  }
+
+  @override
+  String get historyEmpty => 'Pakeitimų dar nėra. Bendrinamų įrašų pakeitimai bus rodomi čia.';
+
+  @override
+  String get historyLoadMore => 'Rodyti daugiau';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Sukurta $date. Pakeitimų: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Kas pasikeitė';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record pašalintas visam laikui';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person atkūrė $record';
+  }
+
+  @override
+  String get historySubtitle => 'Kas pridėjo, pakeitė ar ištrynė bendrinamus įrašus';
+
+  @override
+  String get historyTitle => 'Pakeitimų istorija';
+
+  @override
+  String petCardMade(String date) {
+    return 'Sukurta su Vaultara $date';
+  }
+
+  @override
+  String get petCardShare => 'Bendrinti augintinio kortelę';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Augintinio kortelė';
+  }
+
+  @override
+  String get petCareBody => 'Pridėkite priminimą, kuris kartojasi pats.';
+
+  @override
+  String get petCareCheckup => 'Veterinarinė apžiūra';
+
+  @override
+  String get petCareFlea => 'Gydymas nuo blusų ir erkių';
+
+  @override
+  String get petCareTitle => 'Priežiūros priminimai';
+
+  @override
+  String get petCareWorming => 'Dehelmintizacija';
+
+  @override
+  String get petPlanAdd => 'Pridėti šias datas prie mano priminimų';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Pridėta priminimų: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Prieš kelionę';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Iki $date';
+  }
+
+  @override
+  String get petPlanDate => 'Kelionės data';
+
+  @override
+  String get petPlanLate => 'Šiai kelionės datai jau per vėlu';
+
+  @override
+  String get petPlanNote => 'Kiekviena data yra paskutinė diena žingsniui atlikti. Apie oficialios svetainės reikalaujamus tarpus tarp žingsnių paklauskite veterinaro.';
+
+  @override
+  String get petPlanNothingToAdd => 'Šios datos jau yra jūsų priminimuose.';
+
+  @override
+  String get petPlanPickDate => 'Pasirinkite kelionės datą, kad matytumėte, kada kiekvienas žingsnis';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Kelionei į šalį $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Atgalinis skaičiavimas iki kelionės';
+
+  @override
+  String get petStepCertificate => 'Sveikatos pažymėjimas ir dokumentai';
+
+  @override
+  String get petStepChip => 'Mikroschema';
+
+  @override
+  String get petStepRabies => 'Vakcina nuo pasiutligės';
+
+  @override
+  String get petStepResidence => 'Atvykti į patvirtintą šalį';
+
+  @override
+  String get petStepTapeworm => 'Gydymas nuo kaspinuočio';
+
+  @override
+  String get petStepTitre => 'Pasiutligės kraujo tyrimas';
+
+  @override
+  String get petTypeChecking => 'Ieškoma…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Ar turėjote omenyje $name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Naudokite tik raides, pvz., Triušis arba Tarantulas.';
+
+  @override
+  String get petTypeKeepAnyway => 'Palikti';
+
+  @override
+  String get petTypeNotAnimal => 'Tai neatrodo kaip gyvūno rūšis.';
+
+  @override
+  String get petTypeOwnNote => 'Išsaugota kaip jūsų rūšis. Kelionių taisyklės nukreips į oficialią svetainę.';
+
+  @override
+  String get planBenefitCalendar => 'Kalendoriaus nuoroda su įvykiais „Atnaujinti greitai“ ir kelionėmis';
+
+  @override
+  String get planBenefitPetCare => 'Augintinių nuotraukos, priežiūros priminimai ir atgalinis skaičiavimas iki kelionės';
+
+  @override
+  String get savingsComing => 'Per artimiausius 12 mėnesių';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Dėmesio: $month yra brangiausias jūsų mėnuo ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Išlaidos valiutomis be kurso neįtrauktos.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Atnaujinimams kas mėnesį atidėkite apie $amount.';
+  }
+
+  @override
+  String get savingsSpent => 'Sumokėta šiais metais';
+
+  @override
+  String get subcategoryPetCheckups => 'Veterinarinės apžiūros';
+
+  @override
+  String get subcategoryPetTreatments => 'Gydymas nuo blusų, erkių ir kirmėlių';
+
+  @override
+  String get tourBusinessHistoryBody => 'Pažiūrėkite, kas pridėjo, pakeitė ar ištrynė bendrinamus įrašus, ir eksportuokite tai į PDF auditui.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Patikrinkite, ko augintiniui reikia bet kuriai šaliai, tada pasirinkite kelionės datą atgaliniam skaičiavimui, kurį galite pridėti prie priminimų.';
+
+  @override
+  String get tripEntryTitle => 'Atvykimo informacija';
+
+  @override
   String get yoursTag => 'Jūsų';
 
   @override

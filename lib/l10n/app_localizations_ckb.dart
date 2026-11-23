@@ -8690,6 +8690,260 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get rulesReviewDropped => 'لابرا (هیچ ڕستەیەکی گونجاو نییە)';
 
   @override
+  String get assistantStepHistory => 'پشکنینی مێژووی گۆڕانکارییەکان';
+
+  @override
+  String get businessBenefitHistory => 'مێژووی گۆڕانکاریی تۆمارە هاوبەشەکان، لەگەڵ هەناردەی PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Calendar لەوانەیە تا ڕۆژێک بخایەنێت بۆ پیشاندانی گۆڕانکارییەکان. Apple Calendar و Outlook زۆربەی جار لە چەند کاتژمێرێکدا نوێ دەبنەوە.';
+
+  @override
+  String get calendarOptionCategories => 'پۆلەکان';
+
+  @override
+  String get calendarOptionHide => 'ناوی تۆمارەکان بشارەوە';
+
+  @override
+  String get calendarOptionHideBody => 'ڕووداوەکان لە جیاتی ناو دەڵێن \"بەڵگەنامە بەسەردەچێت\"';
+
+  @override
+  String get calendarOptionPeople => 'کەسەکان';
+
+  @override
+  String get calendarOptionRenew => 'ڕووداوەکانی \"بەم زووانە نوێی بکەرەوە\"';
+
+  @override
+  String get calendarOptionRenewBody => 'ڕووداوێکی زیادە لە ڕۆژی بیرخستنەوەی هەر تۆمارێک';
+
+  @override
+  String get calendarOptionTrips => 'گەشتەکان';
+
+  @override
+  String get calendarOptionsTitle => 'چی دەچێتە ناو ساڵنامەکەت';
+
+  @override
+  String entryEmergency(String number) {
+    return 'ژمارەی فریاکەوتن: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'هیچ مۆڵەتی شۆفێری نێودەوڵەتی بۆ ئەم گەشتە پاشەکەوت نەکراوە';
+
+  @override
+  String get entryPermitNotNeeded => 'بۆ لێخوڕین مۆڵەتی شۆفێری نێودەوڵەتی پێویست نییە';
+
+  @override
+  String get entryPermitRecommended => 'بۆ لێخوڕین مۆڵەتی شۆفێری نێودەوڵەتی پێشنیار دەکرێت';
+
+  @override
+  String get entryPermitRequired => 'شۆفێران پێویستیان بە مۆڵەتی شۆفێری نێودەوڵەتییە';
+
+  @override
+  String get entryYellowFeverAll => 'بڕوانامەی کوتانی تای زەرد پێویستە';
+
+  @override
+  String get entryYellowFeverNo => 'بڕوانامەی تای زەرد پێویست نییە';
+
+  @override
+  String get entryYellowFeverRisk => 'ئەگەر لە وڵاتێکی مەترسیی تای زەردەوە بێیت، بڕوانامەی تای زەرد پێویستە';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person $recordی زیاد کرد';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person $recordی گۆڕی';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person $recordی سڕییەوە';
+  }
+
+  @override
+  String get historyEmpty => 'هێشتا هیچ گۆڕانکارییەک نییە. گۆڕانکارییەکانی تۆمارە هاوبەشەکان لێرە دەردەکەون.';
+
+  @override
+  String get historyLoadMore => 'زیاتر پیشان بدە';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'لە $date دروستکراوە. ژمارەی گۆڕانکارییەکان: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'چی گۆڕا';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record بۆ هەمیشە لابرا';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person $recordی گەڕاندەوە';
+  }
+
+  @override
+  String get historySubtitle => 'کێ تۆمارە هاوبەشەکانی زیاد کرد، گۆڕی یان سڕییەوە';
+
+  @override
+  String get historyTitle => 'مێژووی گۆڕانکارییەکان';
+
+  @override
+  String petCardMade(String date) {
+    return 'لە $date بە Vaultara دروستکراوە';
+  }
+
+  @override
+  String get petCardShare => 'کارتی ئاژەڵەکە هاوبەش بکە';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · کارتی ئاژەڵ';
+  }
+
+  @override
+  String get petCareBody => 'بیرخستنەوەیەک زیاد بکە کە خۆی دووبارە دەبێتەوە.';
+
+  @override
+  String get petCareCheckup => 'پشکنینی ڤێتێرنەری';
+
+  @override
+  String get petCareFlea => 'چارەسەری کێچ و قرنی';
+
+  @override
+  String get petCareTitle => 'بیرخستنەوەکانی چاودێری';
+
+  @override
+  String get petCareWorming => 'دەرمانی کرم';
+
+  @override
+  String get petPlanAdd => 'ئەم بەروارانە بۆ بیرخستنەوەکانم زیاد بکە';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'بیرخستنەوەی زیادکراو: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'پێش گەشت';
+
+  @override
+  String petPlanBy(String date) {
+    return 'تا $date';
+  }
+
+  @override
+  String get petPlanDate => 'بەرواری گەشت';
+
+  @override
+  String get petPlanLate => 'بۆ ئەم بەروارەی گەشت زۆر درەنگە';
+
+  @override
+  String get petPlanNote => 'هەر بەروارێک دوایین ڕۆژە کە هەنگاوەکە دەتوانێت ڕووبدات. دەربارەی ماوەکانی نێوان هەنگاوەکان کە ماڵپەڕی فەرمی داوای دەکات لە ڤێتێرنەرەکەت بپرسە.';
+
+  @override
+  String get petPlanNothingToAdd => 'ئەم بەروارانە پێشتر لە بیرخستنەوەکانتدان.';
+
+  @override
+  String get petPlanPickDate => 'بەرواری گەشتەکەت هەڵبژێرە بۆ بینینی کاتی هەر هەنگاوێک';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'بۆ گەشت بۆ $country';
+  }
+
+  @override
+  String get petPlanTitle => 'ژماردنی پێچەوانە بۆ گەشتەکەت';
+
+  @override
+  String get petStepCertificate => 'بڕوانامەی تەندروستی و بەڵگەنامەکان';
+
+  @override
+  String get petStepChip => 'مایکرۆچیپ';
+
+  @override
+  String get petStepRabies => 'کوتانی هاری';
+
+  @override
+  String get petStepResidence => 'گەیشتن بە وڵاتێکی پەسەندکراو';
+
+  @override
+  String get petStepTapeworm => 'چارەسەری کرمی شریتی';
+
+  @override
+  String get petStepTitre => 'پشکنینی خوێنی هاری';
+
+  @override
+  String get petTypeChecking => 'بەدوادا گەڕان…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'مەبەستت $name بوو؟';
+  }
+
+  @override
+  String get petTypeJunk => 'تەنها پیت بەکاربهێنە، وەک کەروێشک یان تارانتولا.';
+
+  @override
+  String get petTypeKeepAnyway => 'بیهێڵەرەوە';
+
+  @override
+  String get petTypeNotAnimal => 'ئەمە وەک جۆرێکی ئاژەڵ دیار نییە.';
+
+  @override
+  String get petTypeOwnNote => 'وەک جۆری خۆت پاشەکەوت کرا. یاساکانی گەشت ئاماژە بە ماڵپەڕی فەرمی دەکەن.';
+
+  @override
+  String get planBenefitCalendar => 'بەستەری ساڵنامە لەگەڵ ڕووداوەکانی \"بەم زووانە نوێی بکەرەوە\" و گەشتەکان';
+
+  @override
+  String get planBenefitPetCare => 'وێنەی ئاژەڵ، بیرخستنەوەی چاودێری و ژماردنی پێچەوانەی گەشت';
+
+  @override
+  String get savingsComing => 'لە ١٢ مانگدا دێت';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'ئاگاداری: $month گرانترین مانگتە ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'تێچووی ئەو دراوانەی نرخی گۆڕینەوەیان نییە لەبەرچاو نەگیراون.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'مانگانە نزیکەی $amount لابنێ بۆ داپۆشینی نوێکردنەوەکانت.';
+  }
+
+  @override
+  String get savingsSpent => 'ئەمساڵ دراوە';
+
+  @override
+  String get subcategoryPetCheckups => 'پشکنینەکانی ڤێتێرنەری';
+
+  @override
+  String get subcategoryPetTreatments => 'چارەسەری کێچ، قرنی و کرم';
+
+  @override
+  String get tourBusinessHistoryBody => 'ببینە کێ تۆمارە هاوبەشەکانی زیاد کرد، گۆڕی یان سڕییەوە، و وەک PDF بۆ وردبینی هەناردەی بکە.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'ببینە ئاژەڵێک بۆ هەر وڵاتێک چی پێویستە، پاشان بەرواری گەشتەکەت هەڵبژێرە بۆ ژماردنێکی پێچەوانە کە دەتوانیت بیخەیتە سەر بیرخستنەوەکانت.';
+
+  @override
+  String get tripEntryTitle => 'وردەکاریی چوونەژوورەوە';
+
+  @override
   String get yoursTag => 'هی تۆ';
 
   @override

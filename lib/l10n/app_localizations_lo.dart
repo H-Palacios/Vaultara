@@ -8633,6 +8633,260 @@ class AppLocalizationsLo extends AppLocalizations {
   String get rulesReviewDropped => 'ຕັດອອກ (ບໍ່ມີປະໂຫຍກທີ່ກົງກັນ)';
 
   @override
+  String get assistantStepHistory => 'ກຳລັງກວດປະຫວັດການປ່ຽນແປງ';
+
+  @override
+  String get businessBenefitHistory => 'ປະຫວັດການປ່ຽນແປງຂອງບັນທຶກທີ່ແບ່ງປັນ ພ້ອມສົ່ງອອກ PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Calendar ອາດໃຊ້ເວລາເຖິງໜຶ່ງມື້ເພື່ອສະແດງການປ່ຽນແປງ. Apple Calendar ແລະ Outlook ປົກກະຕິຈະອັບເດດພາຍໃນບໍ່ເທົ່າໃດຊົ່ວໂມງ.';
+
+  @override
+  String get calendarOptionCategories => 'ໝວດໝູ່';
+
+  @override
+  String get calendarOptionHide => 'ເຊື່ອງຊື່ບັນທຶກ';
+
+  @override
+  String get calendarOptionHideBody => 'ເຫດການຈະສະແດງ \"ເອກະສານໝົດອາຍຸ\" ແທນຊື່';
+
+  @override
+  String get calendarOptionPeople => 'ຄົນ';
+
+  @override
+  String get calendarOptionRenew => 'ເຫດການ \"ຕໍ່ອາຍຸໄວໆນີ້\"';
+
+  @override
+  String get calendarOptionRenewBody => 'ເຫດການເພີ່ມໃນມື້ແຈ້ງເຕືອນຂອງແຕ່ລະບັນທຶກ';
+
+  @override
+  String get calendarOptionTrips => 'ການເດີນທາງ';
+
+  @override
+  String get calendarOptionsTitle => 'ສິ່ງທີ່ເຂົ້າໄປໃນປະຕິທິນຂອງທ່ານ';
+
+  @override
+  String entryEmergency(String number) {
+    return 'ເບີສຸກເສີນ: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'ບໍ່ມີໃບອະນຸຍາດຂັບຂີ່ສາກົນບັນທຶກໄວ້ສຳລັບການເດີນທາງນີ້';
+
+  @override
+  String get entryPermitNotNeeded => 'ບໍ່ຈຳເປັນຕ້ອງມີໃບອະນຸຍາດຂັບຂີ່ສາກົນເພື່ອຂັບລົດ';
+
+  @override
+  String get entryPermitRecommended => 'ແນະນຳໃຫ້ມີໃບອະນຸຍາດຂັບຂີ່ສາກົນເພື່ອຂັບລົດ';
+
+  @override
+  String get entryPermitRequired => 'ຜູ້ຂັບຂີ່ຕ້ອງມີໃບອະນຸຍາດຂັບຂີ່ສາກົນ';
+
+  @override
+  String get entryYellowFeverAll => 'ຕ້ອງມີໃບຢັ້ງຢືນການສັກວັກຊີນໄຂ້ເຫຼືອງ';
+
+  @override
+  String get entryYellowFeverNo => 'ບໍ່ຕ້ອງມີໃບຢັ້ງຢືນໄຂ້ເຫຼືອງ';
+
+  @override
+  String get entryYellowFeverRisk => 'ຕ້ອງມີໃບຢັ້ງຢືນໄຂ້ເຫຼືອງ ຖ້າທ່ານມາຈາກປະເທດທີ່ມີຄວາມສ່ຽງໄຂ້ເຫຼືອງ';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person ໄດ້ເພີ່ມ $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person ໄດ້ປ່ຽນ $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person ໄດ້ລຶບ $record';
+  }
+
+  @override
+  String get historyEmpty => 'ຍັງບໍ່ມີການປ່ຽນແປງ. ການປ່ຽນແປງບັນທຶກທີ່ແບ່ງປັນຈະສະແດງຢູ່ນີ້.';
+
+  @override
+  String get historyLoadMore => 'ສະແດງເພີ່ມ';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'ສ້າງເມື່ອ $date. ການປ່ຽນແປງ: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'ສິ່ງທີ່ປ່ຽນ';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record ຖືກລຶບອອກຖາວອນ';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person ໄດ້ກູ້ຄືນ $record';
+  }
+
+  @override
+  String get historySubtitle => 'ໃຜເພີ່ມ, ປ່ຽນ ຫຼື ລຶບບັນທຶກທີ່ແບ່ງປັນ';
+
+  @override
+  String get historyTitle => 'ປະຫວັດການປ່ຽນແປງ';
+
+  @override
+  String petCardMade(String date) {
+    return 'ສ້າງດ້ວຍ Vaultara ເມື່ອ $date';
+  }
+
+  @override
+  String get petCardShare => 'ແບ່ງປັນບັດສັດລ້ຽງ';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · ບັດສັດລ້ຽງ';
+  }
+
+  @override
+  String get petCareBody => 'ເພີ່ມການແຈ້ງເຕືອນທີ່ເຮັດຊ້ຳເອງ.';
+
+  @override
+  String get petCareCheckup => 'ກວດສຸຂະພາບກັບສັດຕະວະແພດ';
+
+  @override
+  String get petCareFlea => 'ຢາກຳຈັດເຫັບ ແລະ ໝັດ';
+
+  @override
+  String get petCareTitle => 'ການແຈ້ງເຕືອນການດູແລ';
+
+  @override
+  String get petCareWorming => 'ຢາຖ່າຍພະຍາດ';
+
+  @override
+  String get petPlanAdd => 'ເພີ່ມວັນທີເຫຼົ່ານີ້ໃສ່ການແຈ້ງເຕືອນຂອງຂ້ອຍ';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'ເພີ່ມການແຈ້ງເຕືອນແລ້ວ: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'ກ່ອນເດີນທາງ';
+
+  @override
+  String petPlanBy(String date) {
+    return 'ພາຍໃນ $date';
+  }
+
+  @override
+  String get petPlanDate => 'ວັນທີເດີນທາງ';
+
+  @override
+  String get petPlanLate => 'ຊ້າເກີນໄປສຳລັບວັນທີເດີນທາງນີ້';
+
+  @override
+  String get petPlanNote => 'ແຕ່ລະວັນທີແມ່ນມື້ສຸດທ້າຍທີ່ຂັ້ນຕອນນັ້ນເຮັດໄດ້. ສອບຖາມສັດຕະວະແພດກ່ຽວກັບໄລຍະຫ່າງລະຫວ່າງຂັ້ນຕອນທີ່ເວັບໄຊທາງການກຳນົດ.';
+
+  @override
+  String get petPlanNothingToAdd => 'ວັນທີເຫຼົ່ານີ້ມີໃນການແຈ້ງເຕືອນຂອງທ່ານແລ້ວ.';
+
+  @override
+  String get petPlanPickDate => 'ເລືອກວັນທີເດີນທາງເພື່ອເບິ່ງວ່າແຕ່ລະຂັ້ນຕອນຕ້ອງເຮັດເມື່ອໃດ';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'ສຳລັບການເດີນທາງໄປ $country';
+  }
+
+  @override
+  String get petPlanTitle => 'ນັບຖອຍຫຼັງສູ່ການເດີນທາງ';
+
+  @override
+  String get petStepCertificate => 'ໃບຢັ້ງຢືນສຸຂະພາບ ແລະ ເອກະສານ';
+
+  @override
+  String get petStepChip => 'ໄມໂຄຣຊິບ';
+
+  @override
+  String get petStepRabies => 'ວັກຊີນພະຍາດໝາບ້າ';
+
+  @override
+  String get petStepResidence => 'ໄປຮອດປະເທດທີ່ອະນຸມັດ';
+
+  @override
+  String get petStepTapeworm => 'ຢາຖ່າຍພະຍາດຕືດ';
+
+  @override
+  String get petStepTitre => 'ກວດເລືອດພະຍາດໝາບ້າ';
+
+  @override
+  String get petTypeChecking => 'ກຳລັງຊອກຫາ…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'ທ່ານໝາຍເຖິງ $name ບໍ?';
+  }
+
+  @override
+  String get petTypeJunk => 'ໃຊ້ພຽງແຕ່ຕົວອັກສອນ ເຊັ່ນ ກະຕ່າຍ ຫຼື ແມງມຸມທາຣັນທູລາ.';
+
+  @override
+  String get petTypeKeepAnyway => 'ເກັບໄວ້';
+
+  @override
+  String get petTypeNotAnimal => 'ອັນນີ້ບໍ່ຄືປະເພດສັດ.';
+
+  @override
+  String get petTypeOwnNote => 'ບັນທຶກເປັນປະເພດຂອງທ່ານເອງ. ກົດລະບຽບການເດີນທາງຈະຊີ້ໄປຫາເວັບໄຊທາງການ.';
+
+  @override
+  String get planBenefitCalendar => 'ລິ້ງປະຕິທິນທີ່ມີເຫດການ \"ຕໍ່ອາຍຸໄວໆນີ້\" ແລະ ການເດີນທາງ';
+
+  @override
+  String get planBenefitPetCare => 'ຮູບສັດລ້ຽງ, ການແຈ້ງເຕືອນການດູແລ ແລະ ການນັບຖອຍຫຼັງການເດີນທາງ';
+
+  @override
+  String get savingsComing => 'ໃນ 12 ເດືອນຂ້າງໜ້າ';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'ລະວັງ: $month ເປັນເດືອນທີ່ແພງທີ່ສຸດຂອງທ່ານ ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'ຄ່າໃຊ້ຈ່າຍໃນສະກຸນເງິນທີ່ບໍ່ມີອັດຕາແລກປ່ຽນບໍ່ໄດ້ນັບລວມ.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'ເກັບໄວ້ປະມານ $amount ຕໍ່ເດືອນສຳລັບການຕໍ່ອາຍຸຂອງທ່ານ.';
+  }
+
+  @override
+  String get savingsSpent => 'ຈ່າຍແລ້ວປີນີ້';
+
+  @override
+  String get subcategoryPetCheckups => 'ການກວດສຸຂະພາບກັບສັດຕະວະແພດ';
+
+  @override
+  String get subcategoryPetTreatments => 'ຢາກຳຈັດເຫັບ, ໝັດ ແລະ ພະຍາດ';
+
+  @override
+  String get tourBusinessHistoryBody => 'ເບິ່ງວ່າໃຜເພີ່ມ, ປ່ຽນ ຫຼື ລຶບບັນທຶກທີ່ແບ່ງປັນ ແລະ ສົ່ງອອກເປັນ PDF ສຳລັບການກວດສອບ.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'ກວດເບິ່ງວ່າສັດລ້ຽງຕ້ອງການຫຍັງສຳລັບປະເທດໃດກໍໄດ້ ແລ້ວເລືອກວັນທີເດີນທາງສຳລັບການນັບຖອຍຫຼັງທີ່ທ່ານເພີ່ມໃສ່ການແຈ້ງເຕືອນໄດ້.';
+
+  @override
+  String get tripEntryTitle => 'ລາຍລະອຽດການເຂົ້າປະເທດ';
+
+  @override
   String get yoursTag => 'ຂອງທ່ານ';
 
   @override

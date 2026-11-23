@@ -8633,6 +8633,260 @@ class AppLocalizationsMs extends AppLocalizations {
   String get rulesReviewDropped => 'Ditinggalkan (tiada ayat sepadan)';
 
   @override
+  String get assistantStepHistory => 'Menyemak sejarah perubahan';
+
+  @override
+  String get businessBenefitHistory => 'Sejarah perubahan rekod dikongsi, dengan eksport PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Calendar mungkin mengambil masa sehingga sehari untuk menunjukkan perubahan. Apple Calendar dan Outlook biasanya dikemas kini dalam beberapa jam.';
+
+  @override
+  String get calendarOptionCategories => 'Kategori';
+
+  @override
+  String get calendarOptionHide => 'Sembunyikan nama rekod';
+
+  @override
+  String get calendarOptionHideBody => 'Acara memaparkan \"Dokumen tamat tempoh\" dan bukan namanya';
+
+  @override
+  String get calendarOptionPeople => 'Orang';
+
+  @override
+  String get calendarOptionRenew => 'Acara \"Perbaharui tidak lama lagi\"';
+
+  @override
+  String get calendarOptionRenewBody => 'Acara tambahan pada hari peringatan setiap rekod';
+
+  @override
+  String get calendarOptionTrips => 'Perjalanan';
+
+  @override
+  String get calendarOptionsTitle => 'Apa yang masuk ke kalendar anda';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Nombor kecemasan: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Tiada Permit Memandu Antarabangsa disimpan untuk perjalanan ini';
+
+  @override
+  String get entryPermitNotNeeded => 'Tidak perlu Permit Memandu Antarabangsa untuk memandu';
+
+  @override
+  String get entryPermitRecommended => 'Permit Memandu Antarabangsa disyorkan untuk memandu';
+
+  @override
+  String get entryPermitRequired => 'Pemandu perlukan Permit Memandu Antarabangsa';
+
+  @override
+  String get entryYellowFeverAll => 'Sijil vaksinasi demam kuning diperlukan';
+
+  @override
+  String get entryYellowFeverNo => 'Sijil demam kuning tidak diperlukan';
+
+  @override
+  String get entryYellowFeverRisk => 'Sijil demam kuning diperlukan jika anda datang dari negara berisiko demam kuning';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person menambah $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person mengubah $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person memadam $record';
+  }
+
+  @override
+  String get historyEmpty => 'Belum ada perubahan. Perubahan pada rekod dikongsi akan dipaparkan di sini.';
+
+  @override
+  String get historyLoadMore => 'Tunjuk lagi';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Dibuat pada $date. Perubahan: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Apa yang berubah';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record dibuang secara kekal';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person memulihkan $record';
+  }
+
+  @override
+  String get historySubtitle => 'Siapa yang menambah, mengubah atau memadam rekod dikongsi';
+
+  @override
+  String get historyTitle => 'Sejarah perubahan';
+
+  @override
+  String petCardMade(String date) {
+    return 'Dibuat dengan Vaultara pada $date';
+  }
+
+  @override
+  String get petCardShare => 'Kongsi kad haiwan';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Kad haiwan';
+  }
+
+  @override
+  String get petCareBody => 'Tambah peringatan yang berulang sendiri.';
+
+  @override
+  String get petCareCheckup => 'Pemeriksaan doktor haiwan';
+
+  @override
+  String get petCareFlea => 'Rawatan kutu dan sengkenit';
+
+  @override
+  String get petCareTitle => 'Peringatan penjagaan';
+
+  @override
+  String get petCareWorming => 'Ubat cacing';
+
+  @override
+  String get petPlanAdd => 'Tambah tarikh ini ke peringatan saya';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Peringatan ditambah: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Sebelum perjalanan';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Selewat-lewatnya $date';
+  }
+
+  @override
+  String get petPlanDate => 'Tarikh perjalanan';
+
+  @override
+  String get petPlanLate => 'Sudah terlambat untuk tarikh perjalanan ini';
+
+  @override
+  String get petPlanNote => 'Setiap tarikh ialah hari terakhir langkah itu boleh dibuat. Tanya doktor haiwan anda tentang jarak antara langkah yang diminta oleh laman rasmi.';
+
+  @override
+  String get petPlanNothingToAdd => 'Tarikh ini sudah ada dalam peringatan anda.';
+
+  @override
+  String get petPlanPickDate => 'Pilih tarikh perjalanan untuk melihat bila setiap langkah perlu dibuat';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Untuk perjalanan ke $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Kiraan detik ke perjalanan anda';
+
+  @override
+  String get petStepCertificate => 'Sijil kesihatan dan dokumen';
+
+  @override
+  String get petStepChip => 'Mikrocip';
+
+  @override
+  String get petStepRabies => 'Vaksin rabies';
+
+  @override
+  String get petStepResidence => 'Tiba di negara yang diluluskan';
+
+  @override
+  String get petStepTapeworm => 'Rawatan cacing pita';
+
+  @override
+  String get petStepTitre => 'Ujian darah rabies';
+
+  @override
+  String get petTypeChecking => 'Mencari…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Adakah maksud anda $name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Gunakan huruf sahaja, seperti Arnab atau Tarantula.';
+
+  @override
+  String get petTypeKeepAnyway => 'Simpan';
+
+  @override
+  String get petTypeNotAnimal => 'Ini tidak kelihatan seperti jenis haiwan.';
+
+  @override
+  String get petTypeOwnNote => 'Disimpan sebagai jenis anda sendiri. Peraturan perjalanan akan merujuk laman rasmi.';
+
+  @override
+  String get planBenefitCalendar => 'Pautan kalendar dengan acara \"Perbaharui tidak lama lagi\" dan perjalanan';
+
+  @override
+  String get planBenefitPetCare => 'Foto haiwan, peringatan penjagaan dan kiraan detik perjalanan';
+
+  @override
+  String get savingsComing => 'Dalam 12 bulan akan datang';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Perhatian: $month ialah bulan paling mahal anda ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Kos dalam mata wang tanpa kadar tidak dikira.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Ketepikan kira-kira $amount sebulan untuk pembaharuan anda.';
+  }
+
+  @override
+  String get savingsSpent => 'Dibayar tahun ini';
+
+  @override
+  String get subcategoryPetCheckups => 'Pemeriksaan doktor haiwan';
+
+  @override
+  String get subcategoryPetTreatments => 'Rawatan kutu, sengkenit dan cacing';
+
+  @override
+  String get tourBusinessHistoryBody => 'Lihat siapa yang menambah, mengubah atau memadam rekod dikongsi, dan eksport sebagai PDF untuk audit.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Semak apa yang haiwan perlukan untuk mana-mana negara, kemudian pilih tarikh perjalanan untuk kiraan detik yang boleh ditambah ke peringatan anda.';
+
+  @override
+  String get tripEntryTitle => 'Butiran kemasukan';
+
+  @override
   String get yoursTag => 'Milik anda';
 
   @override

@@ -8690,6 +8690,260 @@ class AppLocalizationsKu extends AppLocalizations {
   String get rulesReviewDropped => 'Hate derxistin (hevokeke lihevhatî tune)';
 
   @override
+  String get assistantStepHistory => 'Dîroka guhertinan tê kontrolkirin';
+
+  @override
+  String get businessBenefitHistory => 'Dîroka guhertinên tomarên parvekirî, bi derxistina PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'Dibe ku Google Calendar heta rojekê bigire da ku guhertinan nîşan bide. Apple Calendar û Outlook bi gelemperî di çend demjimêran de nû dibin.';
+
+  @override
+  String get calendarOptionCategories => 'Kategorî';
+
+  @override
+  String get calendarOptionHide => 'Navên tomaran veşêre';
+
+  @override
+  String get calendarOptionHideBody => 'Bûyer li şûna navê dibêjin \"Dema belgeyê diqede\"';
+
+  @override
+  String get calendarOptionPeople => 'Kes';
+
+  @override
+  String get calendarOptionRenew => 'Bûyerên \"Zû nû bike\"';
+
+  @override
+  String get calendarOptionRenewBody => 'Bûyereke zêde di roja bîranîna her tomarê de';
+
+  @override
+  String get calendarOptionTrips => 'Rêwîtî';
+
+  @override
+  String get calendarOptionsTitle => 'Çi dikeve salnameya te';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Hejmara acîl: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Ji bo vê rêwîtiyê ti destûra ajotinê ya navneteweyî nehatiye tomarkirin';
+
+  @override
+  String get entryPermitNotNeeded => 'Ji bo ajotinê destûra ajotinê ya navneteweyî ne hewce ye';
+
+  @override
+  String get entryPermitRecommended => 'Ji bo ajotinê destûra ajotinê ya navneteweyî tê pêşniyarkirin';
+
+  @override
+  String get entryPermitRequired => 'Ajokar hewceyî destûra ajotinê ya navneteweyî ne';
+
+  @override
+  String get entryYellowFeverAll => 'Belgeya derziya taya zer hewce ye';
+
+  @override
+  String get entryYellowFeverNo => 'Belgeya taya zer ne hewce ye';
+
+  @override
+  String get entryYellowFeverRisk => 'Heke ji welatekî bi xetereya taya zer werî, belgeya taya zer hewce ye';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person $record zêde kir';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person $record guhert';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person $record jê bir';
+  }
+
+  @override
+  String get historyEmpty => 'Hîn guhertin tune. Guhertinên tomarên parvekirî dê li vir xuya bibin.';
+
+  @override
+  String get historyLoadMore => 'Zêdetir nîşan bide';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Di $date de hate çêkirin. Guhertin: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Çi guherî';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record bi temamî hate rakirin';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person $record vegerand';
+  }
+
+  @override
+  String get historySubtitle => 'Kê tomarên parvekirî zêde kirin, guhertin an jê birin';
+
+  @override
+  String get historyTitle => 'Dîroka guhertinan';
+
+  @override
+  String petCardMade(String date) {
+    return 'Di $date de bi Vaultara hate çêkirin';
+  }
+
+  @override
+  String get petCardShare => 'Karta heywanê parve bike';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Karta heywanê';
+  }
+
+  @override
+  String get petCareBody => 'Bîranîneke ku bi xwe dubare dibe zêde bike.';
+
+  @override
+  String get petCareCheckup => 'Kontrola veterîner';
+
+  @override
+  String get petCareFlea => 'Dermankirina kêç û qirnê';
+
+  @override
+  String get petCareTitle => 'Bîranînên lênêrînê';
+
+  @override
+  String get petCareWorming => 'Dermanê kurman';
+
+  @override
+  String get petPlanAdd => 'Van dîrokan li bîranînên min zêde bike';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Bîranînên zêdekirî: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Berî rêwîtiyê';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Heta $date';
+  }
+
+  @override
+  String get petPlanDate => 'Dîroka rêwîtiyê';
+
+  @override
+  String get petPlanLate => 'Ji bo vê dîroka rêwîtiyê pir dereng e';
+
+  @override
+  String get petPlanNote => 'Her dîrok roja dawî ye ku gav dikare pêk were. Li ser navberên di navbera gavan de ku malpera fermî dixwaze ji veterînerê xwe bipirse.';
+
+  @override
+  String get petPlanNothingToAdd => 'Ev dîrok jixwe di bîranînên te de ne.';
+
+  @override
+  String get petPlanPickDate => 'Dîroka rêwîtiyê hilbijêre da ku bibînî her gav kengê ye';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Ji bo rêwîtiya $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Jimartina paşve heta rêwîtiyê';
+
+  @override
+  String get petStepCertificate => 'Belgeya tenduristiyê û kaxez';
+
+  @override
+  String get petStepChip => 'Mîkroçîp';
+
+  @override
+  String get petStepRabies => 'Derziya harbûnê';
+
+  @override
+  String get petStepResidence => 'Bigihêje welatekî pejirandî';
+
+  @override
+  String get petStepTapeworm => 'Dermankirina kurmê şerîtî';
+
+  @override
+  String get petStepTitre => 'Testa xwînê ya harbûnê';
+
+  @override
+  String get petTypeChecking => 'Tê lêgerîn…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Mebesta te $name bû?';
+  }
+
+  @override
+  String get petTypeJunk => 'Tenê tîpan bi kar bîne, wek Kêvroşk an Tarantula.';
+
+  @override
+  String get petTypeKeepAnyway => 'Bihêle';
+
+  @override
+  String get petTypeNotAnimal => 'Ev wek cureyekî heywanan xuya nake.';
+
+  @override
+  String get petTypeOwnNote => 'Wek cureyê te hate tomarkirin. Qaîdeyên rêwîtiyê dê malpera fermî nîşan bidin.';
+
+  @override
+  String get planBenefitCalendar => 'Girêdana salnameyê bi bûyerên \"Zû nû bike\" û rêwîtiyan';
+
+  @override
+  String get planBenefitPetCare => 'Wêneyên heywanan, bîranînên lênêrînê û jimartina paşve ya rêwîtiyê';
+
+  @override
+  String get savingsComing => 'Di 12 mehan de tê';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Hişyarî: $month meha te ya herî biha ye ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Lêçûnên bi dirawên bê rêjeya guhertinê nehatine hesibandin.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Mehê nêzî $amount ji bo nûkirinên xwe veqetîne.';
+  }
+
+  @override
+  String get savingsSpent => 'Îsal hatiye dayîn';
+
+  @override
+  String get subcategoryPetCheckups => 'Kontrolên veterîner';
+
+  @override
+  String get subcategoryPetTreatments => 'Dermankirina kêç, qirnê û kurman';
+
+  @override
+  String get tourBusinessHistoryBody => 'Bibîne kê tomarên parvekirî zêde kirin, guhertin an jê birin, û ji bo kontrolê wek PDF derxe.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Bibîne heywanek ji bo her welatî çi hewce dike, paşê dîroka rêwîtiyê ji bo jimartineke paşve ya ku tu dikarî li bîranînan zêde bikî hilbijêre.';
+
+  @override
+  String get tripEntryTitle => 'Hûrguliyên ketinê';
+
+  @override
   String get yoursTag => 'Ya te';
 
   @override

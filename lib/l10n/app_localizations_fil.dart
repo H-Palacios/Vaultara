@@ -8684,6 +8684,260 @@ class AppLocalizationsFil extends AppLocalizations {
   String get rulesReviewDropped => 'Inalis (walang tugmang pangungusap)';
 
   @override
+  String get assistantStepHistory => 'Sinusuri ang kasaysayan ng pagbabago';
+
+  @override
+  String get businessBenefitHistory => 'Kasaysayan ng pagbabago ng mga shared record, may PDF export';
+
+  @override
+  String get calendarLinkGoogleNote => 'Maaaring abutin ng hanggang isang araw bago makita sa Google Calendar ang mga pagbabago. Karaniwang naa-update ang Apple Calendar at Outlook sa loob ng ilang oras.';
+
+  @override
+  String get calendarOptionCategories => 'Mga kategorya';
+
+  @override
+  String get calendarOptionHide => 'Itago ang pangalan ng mga record';
+
+  @override
+  String get calendarOptionHideBody => '\"Mag-e-expire ang dokumento\" ang nakasulat sa event sa halip na ang pangalan';
+
+  @override
+  String get calendarOptionPeople => 'Mga tao';
+
+  @override
+  String get calendarOptionRenew => 'Mga event na \"I-renew na\"';
+
+  @override
+  String get calendarOptionRenewBody => 'Dagdag na event sa araw ng paalala ng bawat record';
+
+  @override
+  String get calendarOptionTrips => 'Mga biyahe';
+
+  @override
+  String get calendarOptionsTitle => 'Ano ang papasok sa calendar mo';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Emergency number: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Walang naka-save na International Driving Permit para sa biyaheng ito';
+
+  @override
+  String get entryPermitNotNeeded => 'Hindi kailangan ng International Driving Permit para magmaneho';
+
+  @override
+  String get entryPermitRecommended => 'Inirerekomenda ang International Driving Permit para magmaneho';
+
+  @override
+  String get entryPermitRequired => 'Kailangan ng mga driver ang International Driving Permit';
+
+  @override
+  String get entryYellowFeverAll => 'Kailangan ang sertipiko ng bakuna laban sa yellow fever';
+
+  @override
+  String get entryYellowFeverNo => 'Hindi kailangan ang sertipiko ng yellow fever';
+
+  @override
+  String get entryYellowFeverRisk => 'Kailangan ang sertipiko ng yellow fever kung galing ka sa bansang may panganib ng yellow fever';
+
+  @override
+  String historyAdded(String person, String record) {
+    return 'Idinagdag ni $person ang $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return 'Binago ni $person ang $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return 'Binura ni $person ang $record';
+  }
+
+  @override
+  String get historyEmpty => 'Wala pang pagbabago. Dito lalabas ang mga pagbabago sa mga shared record.';
+
+  @override
+  String get historyLoadMore => 'Ipakita pa';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Ginawa noong $date. Bilang ng pagbabago: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Ano ang nagbago';
+
+  @override
+  String historyRemoved(String record) {
+    return 'Tuluyang inalis ang $record';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return 'Ibinalik ni $person ang $record';
+  }
+
+  @override
+  String get historySubtitle => 'Sino ang nagdagdag, nagbago o nagbura ng mga shared record';
+
+  @override
+  String get historyTitle => 'Kasaysayan ng pagbabago';
+
+  @override
+  String petCardMade(String date) {
+    return 'Ginawa gamit ang Vaultara noong $date';
+  }
+
+  @override
+  String get petCardShare => 'Ibahagi ang pet card';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Pet card';
+  }
+
+  @override
+  String get petCareBody => 'Magdagdag ng paalalang kusang umuulit.';
+
+  @override
+  String get petCareCheckup => 'Check-up sa beterinaryo';
+
+  @override
+  String get petCareFlea => 'Gamot sa pulgas at garapata';
+
+  @override
+  String get petCareTitle => 'Mga paalala sa pag-aalaga';
+
+  @override
+  String get petCareWorming => 'Pampurga';
+
+  @override
+  String get petPlanAdd => 'Idagdag ang mga petsang ito sa mga paalala ko';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Naidagdag na paalala: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Bago bumiyahe';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Bago ang $date';
+  }
+
+  @override
+  String get petPlanDate => 'Petsa ng biyahe';
+
+  @override
+  String get petPlanLate => 'Huli na para sa petsang ito ng biyahe';
+
+  @override
+  String get petPlanNote => 'Bawat petsa ang pinakahuling araw na puwedeng gawin ang hakbang. Tanungin ang beterinaryo mo tungkol sa pagitan ng mga hakbang na hinihingi ng opisyal na site.';
+
+  @override
+  String get petPlanNothingToAdd => 'Nasa mga paalala mo na ang mga petsang ito.';
+
+  @override
+  String get petPlanPickDate => 'Piliin ang petsa ng biyahe para makita kung kailan ang bawat hakbang';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Para sa biyahe papuntang $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Countdown sa biyahe mo';
+
+  @override
+  String get petStepCertificate => 'Health certificate at mga papeles';
+
+  @override
+  String get petStepChip => 'Microchip';
+
+  @override
+  String get petStepRabies => 'Bakuna sa rabies';
+
+  @override
+  String get petStepResidence => 'Dumating sa aprubadong bansa';
+
+  @override
+  String get petStepTapeworm => 'Gamot sa tapeworm';
+
+  @override
+  String get petStepTitre => 'Rabies blood test';
+
+  @override
+  String get petTypeChecking => 'Hinahanap…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return '$name ba ang ibig mong sabihin?';
+  }
+
+  @override
+  String get petTypeJunk => 'Mga letra lang ang gamitin, gaya ng Kuneho o Tarantula.';
+
+  @override
+  String get petTypeKeepAnyway => 'Panatilihin';
+
+  @override
+  String get petTypeNotAnimal => 'Mukhang hindi ito uri ng hayop.';
+
+  @override
+  String get petTypeOwnNote => 'Na-save bilang sarili mong uri. Ituturo ng mga patakaran sa biyahe ang opisyal na site.';
+
+  @override
+  String get planBenefitCalendar => 'Calendar link na may mga event na \"I-renew na\" at mga biyahe';
+
+  @override
+  String get planBenefitPetCare => 'Mga larawan ng alaga, paalala sa pag-aalaga at countdown ng biyahe';
+
+  @override
+  String get savingsComing => 'Darating sa loob ng 12 buwan';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Paalala: $month ang pinakamahal mong buwan ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Hindi kasama ang mga gastos sa currency na walang rate.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Magtabi ng mga $amount kada buwan para sa mga renewal mo.';
+  }
+
+  @override
+  String get savingsSpent => 'Nabayaran ngayong taon';
+
+  @override
+  String get subcategoryPetCheckups => 'Mga check-up sa beterinaryo';
+
+  @override
+  String get subcategoryPetTreatments => 'Gamot sa pulgas, garapata at bulate';
+
+  @override
+  String get tourBusinessHistoryBody => 'Tingnan kung sino ang nagdagdag, nagbago o nagbura ng mga shared record, at i-export ito bilang PDF para sa audit.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Tingnan kung ano ang kailangan ng alaga para sa anumang bansa, saka pumili ng petsa ng biyahe para sa countdown na maidaragdag mo sa mga paalala.';
+
+  @override
+  String get tripEntryTitle => 'Mga detalye sa pagpasok';
+
+  @override
   String get yoursTag => 'Iyo';
 
   @override

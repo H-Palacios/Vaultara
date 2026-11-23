@@ -8690,6 +8690,260 @@ class AppLocalizationsXh extends AppLocalizations {
   String get rulesReviewDropped => 'Ishiyiwe (akukho sivakalisi sihambelanayo)';
 
   @override
+  String get assistantStepHistory => 'Kujongwa imbali yotshintsho';
+
+  @override
+  String get businessBenefitHistory => 'Imbali yotshintsho lweerekhodi ezabelwana ngazo, ngokuthumela ngaphandle kwi-PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'I-Google Calendar inokuthatha ukuya kusuku olunye ukubonisa utshintsho. I-Apple Calendar ne-Outlook zihlala zihlaziyeka kwiiyure ezimbalwa.';
+
+  @override
+  String get calendarOptionCategories => 'Iindidi';
+
+  @override
+  String get calendarOptionHide => 'Fihla amagama eerekhodi';
+
+  @override
+  String get calendarOptionHideBody => 'Imisitho iya kuthi \"Uxwebhu luyaphelelwa\" endaweni yegama';
+
+  @override
+  String get calendarOptionPeople => 'Abantu';
+
+  @override
+  String get calendarOptionRenew => 'Imisitho ethi \"Hlaziya kungekudala\"';
+
+  @override
+  String get calendarOptionRenewBody => 'Umsitho owongezelelweyo ngomhla wesikhumbuzo serekhodi nganye';
+
+  @override
+  String get calendarOptionTrips => 'Uhambo';
+
+  @override
+  String get calendarOptionsTitle => 'Yintoni engena kwikhalenda yakho';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Inombolo kaxakeka: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Akukho mvume yokuqhuba yamazwe ngamazwe egciniweyo kolu hambo';
+
+  @override
+  String get entryPermitNotNeeded => 'Akudingeki mvume yokuqhuba yamazwe ngamazwe ukuze uqhube';
+
+  @override
+  String get entryPermitRecommended => 'Imvume yokuqhuba yamazwe ngamazwe iyacetyiswa ukuze uqhube';
+
+  @override
+  String get entryPermitRequired => 'Abaqhubi bafuna imvume yokuqhuba yamazwe ngamazwe';
+
+  @override
+  String get entryYellowFeverAll => 'Kufuneka isatifikethi sokugonyelwa ifiva etyheli';
+
+  @override
+  String get entryYellowFeverNo => 'Akufuneki satifikethi sefiva etyheli';
+
+  @override
+  String get entryYellowFeverRisk => 'Kufuneka isatifikethi sefiva etyheli ukuba uvela kwilizwe elinomngcipheko wefiva etyheli';
+
+  @override
+  String historyAdded(String person, String record) {
+    return 'U-$person wongeze $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return 'U-$person utshintshe $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return 'U-$person ucime $record';
+  }
+
+  @override
+  String get historyEmpty => 'Akukabikho tshintsho. Utshintsho lweerekhodi ezabelwana ngazo luya kubonakala apha.';
+
+  @override
+  String get historyLoadMore => 'Bonisa ngakumbi';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Yenziwe ngo-$date. Utshintsho: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Yintoni etshintshileyo';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record isusiwe ngonaphakade';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return 'U-$person ubuyisele $record';
+  }
+
+  @override
+  String get historySubtitle => 'Ngubani owongezileyo, otshintshileyo okanye ocimileyo iirekhodi ezabelwana ngazo';
+
+  @override
+  String get historyTitle => 'Imbali yotshintsho';
+
+  @override
+  String petCardMade(String date) {
+    return 'Yenziwe nge-Vaultara ngo-$date';
+  }
+
+  @override
+  String get petCardShare => 'Yabelana ngekhadi lesilwanyana';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Ikhadi lesilwanyana';
+  }
+
+  @override
+  String get petCareBody => 'Yongeza isikhumbuzo esiziphindayo.';
+
+  @override
+  String get petCareCheckup => 'Ukuhlolwa ngugqirha wezilwanyana';
+
+  @override
+  String get petCareFlea => 'Unyango lweentakumba namakhalane';
+
+  @override
+  String get petCareTitle => 'Izikhumbuzo zokhathalelo';
+
+  @override
+  String get petCareWorming => 'Iyeza leentshulube';
+
+  @override
+  String get petPlanAdd => 'Yongeza le mihla kwizikhumbuzo zam';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Izikhumbuzo ezongeziweyo: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Phambi kohambo';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Ngo-$date';
+  }
+
+  @override
+  String get petPlanDate => 'Umhla wohambo';
+
+  @override
+  String get petPlanLate => 'Kuphuze kakhulu kulo mhla wohambo';
+
+  @override
+  String get petPlanNote => 'Umhla ngamnye lusuku lokugqibela inyathelo elinokwenzeka ngalo. Buza ugqirha wezilwanyana malunga nezithuba phakathi kwamanyathelo ezifunwa yiwebhusayithi esemthethweni.';
+
+  @override
+  String get petPlanNothingToAdd => 'Le mihla sele ikwizikhumbuzo zakho.';
+
+  @override
+  String get petPlanPickDate => 'Khetha umhla wohambo ukuze ubone ukuba inyathelo ngalinye nini';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Kuhambo oluya e-$country';
+  }
+
+  @override
+  String get petPlanTitle => 'Ukubala ngasemva ukuya kuhambo';
+
+  @override
+  String get petStepCertificate => 'Isatifikethi sempilo namaphepha';
+
+  @override
+  String get petStepChip => 'Imayikhrotshiphu';
+
+  @override
+  String get petStepRabies => 'Isitofu somkhuhlane wezinja';
+
+  @override
+  String get petStepResidence => 'Fika kwilizwe elivunyiweyo';
+
+  @override
+  String get petStepTapeworm => 'Unyango lwentshulube eyitape';
+
+  @override
+  String get petStepTitre => 'Uvavanyo lwegazi lomkhuhlane wezinja';
+
+  @override
+  String get petTypeChecking => 'Kuyakhangelwa…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Ngaba ubuthetha u-$name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Sebenzisa oonobumba kuphela, njengoMvundla okanye iTarantula.';
+
+  @override
+  String get petTypeKeepAnyway => 'Gcina';
+
+  @override
+  String get petTypeNotAnimal => 'Oku akubonakali njengohlobo lwesilwanyana.';
+
+  @override
+  String get petTypeOwnNote => 'Kugcinwe njengohlobo lwakho. Imithetho yohambo iya kubonisa iwebhusayithi esemthethweni.';
+
+  @override
+  String get planBenefitCalendar => 'Ikhonkco lekhalenda elinemisitho ethi \"Hlaziya kungekudala\" nohambo';
+
+  @override
+  String get planBenefitPetCare => 'Iifoto zezilwanyana, izikhumbuzo zokhathalelo nokubala ngasemva kohambo';
+
+  @override
+  String get savingsComing => 'Kwiinyanga ezili-12 ezizayo';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Qaphela: $month yinyanga yakho ebiza kakhulu ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Iindleko kwiimali ezingenalo izinga lotshintshiselwano azibandakanywanga.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Beka ecaleni malunga ne-$amount ngenyanga ukuze uhlaziye.';
+  }
+
+  @override
+  String get savingsSpent => 'Kuhlawulwe kulo nyaka';
+
+  @override
+  String get subcategoryPetCheckups => 'Ukuhlolwa ngugqirha wezilwanyana';
+
+  @override
+  String get subcategoryPetTreatments => 'Unyango lweentakumba, amakhalane neentshulube';
+
+  @override
+  String get tourBusinessHistoryBody => 'Bona ukuba ngubani owongezileyo, otshintshileyo okanye ocimileyo iirekhodi ezabelwana ngazo, uze uzithumele njenge-PDF zophicotho.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Jonga ukuba isilwanyana sifuna ntoni kulo naliphi na ilizwe, uze ukhethe umhla wohambo ukuze ubale ngasemva onokukongeza kwizikhumbuzo.';
+
+  @override
+  String get tripEntryTitle => 'Iinkcukacha zokungena';
+
+  @override
   String get yoursTag => 'Okwakho';
 
   @override

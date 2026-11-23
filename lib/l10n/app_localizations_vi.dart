@@ -8633,6 +8633,260 @@ class AppLocalizationsVi extends AppLocalizations {
   String get rulesReviewDropped => 'Bị bỏ qua (không có câu khớp)';
 
   @override
+  String get assistantStepHistory => 'Đang kiểm tra lịch sử thay đổi';
+
+  @override
+  String get businessBenefitHistory => 'Lịch sử thay đổi của hồ sơ được chia sẻ, có xuất PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Lịch có thể mất đến một ngày để hiển thị thay đổi. Lịch Apple và Outlook thường cập nhật trong vài giờ.';
+
+  @override
+  String get calendarOptionCategories => 'Danh mục';
+
+  @override
+  String get calendarOptionHide => 'Ẩn tên hồ sơ';
+
+  @override
+  String get calendarOptionHideBody => 'Sự kiện sẽ ghi \"Giấy tờ hết hạn\" thay cho tên';
+
+  @override
+  String get calendarOptionPeople => 'Người';
+
+  @override
+  String get calendarOptionRenew => 'Sự kiện \"Sắp gia hạn\"';
+
+  @override
+  String get calendarOptionRenewBody => 'Thêm một sự kiện vào ngày nhắc của mỗi hồ sơ';
+
+  @override
+  String get calendarOptionTrips => 'Chuyến đi';
+
+  @override
+  String get calendarOptionsTitle => 'Những gì có trong lịch của bạn';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Số khẩn cấp: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Chưa lưu Giấy phép lái xe quốc tế cho chuyến đi này';
+
+  @override
+  String get entryPermitNotNeeded => 'Không cần Giấy phép lái xe quốc tế để lái xe';
+
+  @override
+  String get entryPermitRecommended => 'Nên có Giấy phép lái xe quốc tế để lái xe';
+
+  @override
+  String get entryPermitRequired => 'Người lái xe cần Giấy phép lái xe quốc tế';
+
+  @override
+  String get entryYellowFeverAll => 'Cần giấy chứng nhận tiêm vắc-xin sốt vàng';
+
+  @override
+  String get entryYellowFeverNo => 'Không cần giấy chứng nhận sốt vàng';
+
+  @override
+  String get entryYellowFeverRisk => 'Cần giấy chứng nhận sốt vàng nếu bạn đến từ quốc gia có nguy cơ sốt vàng';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person đã thêm $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person đã thay đổi $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person đã xóa $record';
+  }
+
+  @override
+  String get historyEmpty => 'Chưa có thay đổi nào. Thay đổi của hồ sơ được chia sẻ sẽ hiển thị ở đây.';
+
+  @override
+  String get historyLoadMore => 'Xem thêm';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Tạo ngày $date. Số thay đổi: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Những gì đã thay đổi';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record đã bị xóa vĩnh viễn';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person đã khôi phục $record';
+  }
+
+  @override
+  String get historySubtitle => 'Ai đã thêm, thay đổi hoặc xóa hồ sơ được chia sẻ';
+
+  @override
+  String get historyTitle => 'Lịch sử thay đổi';
+
+  @override
+  String petCardMade(String date) {
+    return 'Tạo bằng Vaultara ngày $date';
+  }
+
+  @override
+  String get petCardShare => 'Chia sẻ thẻ thú cưng';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Thẻ thú cưng';
+  }
+
+  @override
+  String get petCareBody => 'Thêm lời nhắc tự lặp lại.';
+
+  @override
+  String get petCareCheckup => 'Khám thú y';
+
+  @override
+  String get petCareFlea => 'Trị bọ chét và ve';
+
+  @override
+  String get petCareTitle => 'Lời nhắc chăm sóc';
+
+  @override
+  String get petCareWorming => 'Tẩy giun';
+
+  @override
+  String get petPlanAdd => 'Thêm các ngày này vào lời nhắc của tôi';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Đã thêm lời nhắc: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Trước chuyến đi';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Trước $date';
+  }
+
+  @override
+  String get petPlanDate => 'Ngày đi';
+
+  @override
+  String get petPlanLate => 'Đã quá muộn cho ngày đi này';
+
+  @override
+  String get petPlanNote => 'Mỗi ngày là hạn chót để thực hiện bước đó. Hãy hỏi bác sĩ thú y về khoảng cách giữa các bước mà trang chính thức yêu cầu.';
+
+  @override
+  String get petPlanNothingToAdd => 'Các ngày này đã có trong lời nhắc của bạn.';
+
+  @override
+  String get petPlanPickDate => 'Chọn ngày đi để xem khi nào cần làm từng bước';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Cho chuyến đi đến $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Đếm ngược đến chuyến đi';
+
+  @override
+  String get petStepCertificate => 'Giấy chứng nhận sức khỏe và giấy tờ';
+
+  @override
+  String get petStepChip => 'Vi mạch';
+
+  @override
+  String get petStepRabies => 'Vắc-xin dại';
+
+  @override
+  String get petStepResidence => 'Đến một quốc gia được chấp thuận';
+
+  @override
+  String get petStepTapeworm => 'Trị sán dây';
+
+  @override
+  String get petStepTitre => 'Xét nghiệm máu bệnh dại';
+
+  @override
+  String get petTypeChecking => 'Đang tìm…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Có phải ý bạn là $name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Chỉ dùng chữ cái, ví dụ Thỏ hoặc Nhện tarantula.';
+
+  @override
+  String get petTypeKeepAnyway => 'Giữ';
+
+  @override
+  String get petTypeNotAnimal => 'Đây không giống một loại động vật.';
+
+  @override
+  String get petTypeOwnNote => 'Đã lưu thành loại riêng của bạn. Quy định đi lại sẽ chỉ đến trang chính thức.';
+
+  @override
+  String get planBenefitCalendar => 'Liên kết lịch có sự kiện \"Sắp gia hạn\" và chuyến đi';
+
+  @override
+  String get planBenefitPetCare => 'Ảnh thú cưng, lời nhắc chăm sóc và đếm ngược chuyến đi';
+
+  @override
+  String get savingsComing => 'Trong 12 tháng tới';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Lưu ý: $month là tháng tốn kém nhất của bạn ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Không tính chi phí bằng tiền tệ chưa có tỷ giá.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Hãy để dành khoảng $amount mỗi tháng cho việc gia hạn.';
+  }
+
+  @override
+  String get savingsSpent => 'Đã trả năm nay';
+
+  @override
+  String get subcategoryPetCheckups => 'Khám thú y';
+
+  @override
+  String get subcategoryPetTreatments => 'Trị bọ chét, ve và giun';
+
+  @override
+  String get tourBusinessHistoryBody => 'Xem ai đã thêm, thay đổi hoặc xóa hồ sơ được chia sẻ, và xuất thành PDF để kiểm toán.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Kiểm tra thú cưng cần gì cho bất kỳ quốc gia nào, rồi chọn ngày đi để có đếm ngược mà bạn có thể thêm vào lời nhắc.';
+
+  @override
+  String get tripEntryTitle => 'Thông tin nhập cảnh';
+
+  @override
   String get yoursTag => 'Của bạn';
 
   @override

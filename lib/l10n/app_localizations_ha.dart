@@ -8690,6 +8690,260 @@ class AppLocalizationsHa extends AppLocalizations {
   String get rulesReviewDropped => 'An bari (babu jimla mai dacewa)';
 
   @override
+  String get assistantStepHistory => 'Ana duba tarihin canje-canje';
+
+  @override
+  String get businessBenefitHistory => 'Tarihin canje-canjen bayanan da aka raba, tare da fitar da PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Calendar na iya ɗaukar har kwana ɗaya kafin ya nuna canje-canje. Apple Calendar da Outlook kan sabunta cikin \'yan sa\'o\'i.';
+
+  @override
+  String get calendarOptionCategories => 'Rukunai';
+
+  @override
+  String get calendarOptionHide => 'Ɓoye sunayen bayanai';
+
+  @override
+  String get calendarOptionHideBody => 'Abubuwan za su ce \"Takarda za ta ƙare\" maimakon sunan';
+
+  @override
+  String get calendarOptionPeople => 'Mutane';
+
+  @override
+  String get calendarOptionRenew => 'Abubuwan \"Sabunta nan ba da jimawa ba\"';
+
+  @override
+  String get calendarOptionRenewBody => 'Ƙarin abu a ranar tunatarwa ta kowane bayani';
+
+  @override
+  String get calendarOptionTrips => 'Tafiye-tafiye';
+
+  @override
+  String get calendarOptionsTitle => 'Abin da ke shiga kalandarku';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Lambar gaggawa: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Babu Lasisin Tuƙi na Ƙasa da Ƙasa da aka adana don wannan tafiya';
+
+  @override
+  String get entryPermitNotNeeded => 'Ba a buƙatar Lasisin Tuƙi na Ƙasa da Ƙasa don tuƙi';
+
+  @override
+  String get entryPermitRecommended => 'Ana ba da shawarar Lasisin Tuƙi na Ƙasa da Ƙasa don tuƙi';
+
+  @override
+  String get entryPermitRequired => 'Direbobi na buƙatar Lasisin Tuƙi na Ƙasa da Ƙasa';
+
+  @override
+  String get entryYellowFeverAll => 'Ana buƙatar takardar rigakafin zazzaɓin shawara';
+
+  @override
+  String get entryYellowFeverNo => 'Ba a buƙatar takardar zazzaɓin shawara';
+
+  @override
+  String get entryYellowFeverRisk => 'Ana buƙatar takardar zazzaɓin shawara idan ka zo daga ƙasar da ke da haɗarin zazzaɓin shawara';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person ya ƙara $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person ya canza $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person ya goge $record';
+  }
+
+  @override
+  String get historyEmpty => 'Babu canje-canje tukuna. Canje-canjen bayanan da aka raba za su bayyana a nan.';
+
+  @override
+  String get historyLoadMore => 'Nuna ƙari';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'An yi a $date. Canje-canje: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Abin da ya canza';
+
+  @override
+  String historyRemoved(String record) {
+    return 'An cire $record har abada';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person ya dawo da $record';
+  }
+
+  @override
+  String get historySubtitle => 'Wanda ya ƙara, ya canza ko ya goge bayanan da aka raba';
+
+  @override
+  String get historyTitle => 'Tarihin canje-canje';
+
+  @override
+  String petCardMade(String date) {
+    return 'An yi da Vaultara a $date';
+  }
+
+  @override
+  String get petCardShare => 'Raba katin dabba';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Katin dabba';
+  }
+
+  @override
+  String get petCareBody => 'Ƙara tunatarwa da ke maimaituwa da kanta.';
+
+  @override
+  String get petCareCheckup => 'Duba likitan dabbobi';
+
+  @override
+  String get petCareFlea => 'Maganin ƙuma da kaska';
+
+  @override
+  String get petCareTitle => 'Tunatarwar kulawa';
+
+  @override
+  String get petCareWorming => 'Maganin tsutsa';
+
+  @override
+  String get petPlanAdd => 'Ƙara waɗannan kwanakin cikin tunatarwata';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'An ƙara tunatarwa: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Kafin tafiya';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Kafin $date';
+  }
+
+  @override
+  String get petPlanDate => 'Ranar tafiya';
+
+  @override
+  String get petPlanLate => 'Ya makara don wannan ranar tafiya';
+
+  @override
+  String get petPlanNote => 'Kowace rana ita ce ranar ƙarshe da za a iya yin matakin. Tambayi likitan dabbobinka game da tazarar da shafin hukuma ke buƙata tsakanin matakai.';
+
+  @override
+  String get petPlanNothingToAdd => 'Waɗannan kwanakin suna cikin tunatarwarka tuni.';
+
+  @override
+  String get petPlanPickDate => 'Zaɓi ranar tafiya don ganin lokacin kowane mataki';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Don tafiya zuwa $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Ƙidayar zuwa tafiyarka';
+
+  @override
+  String get petStepCertificate => 'Takardar lafiya da takardu';
+
+  @override
+  String get petStepChip => 'Microchip';
+
+  @override
+  String get petStepRabies => 'Rigakafin hauka';
+
+  @override
+  String get petStepResidence => 'Isa ƙasar da aka amince';
+
+  @override
+  String get petStepTapeworm => 'Maganin tsutsar ciki';
+
+  @override
+  String get petStepTitre => 'Gwajin jini na hauka';
+
+  @override
+  String get petTypeChecking => 'Ana nema…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Kana nufin $name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Yi amfani da haruffa kawai, kamar Zomo ko Tarantula.';
+
+  @override
+  String get petTypeKeepAnyway => 'Ajiye shi';
+
+  @override
+  String get petTypeNotAnimal => 'Wannan bai yi kama da irin dabba ba.';
+
+  @override
+  String get petTypeOwnNote => 'An adana a matsayin irinka. Dokokin tafiya za su nuna shafin hukuma.';
+
+  @override
+  String get planBenefitCalendar => 'Mahaɗin kalanda tare da abubuwan \"Sabunta nan ba da jimawa ba\" da tafiye-tafiye';
+
+  @override
+  String get planBenefitPetCare => 'Hotunan dabbobi, tunatarwar kulawa da ƙidayar tafiya';
+
+  @override
+  String get savingsComing => 'A cikin watanni 12 masu zuwa';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Hankali: $month shi ne watanka mafi tsada ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Ba a haɗa kuɗaɗe a cikin kuɗin da babu farashin canji ba.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Ajiye kusan $amount kowane wata don sabuntawarka.';
+  }
+
+  @override
+  String get savingsSpent => 'An biya a bana';
+
+  @override
+  String get subcategoryPetCheckups => 'Duba likitan dabbobi';
+
+  @override
+  String get subcategoryPetTreatments => 'Maganin ƙuma, kaska da tsutsa';
+
+  @override
+  String get tourBusinessHistoryBody => 'Duba wanda ya ƙara, ya canza ko ya goge bayanan da aka raba, kuma ka fitar da shi a PDF don bincike.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Duba abin da dabba ke buƙata don kowace ƙasa, sannan ka zaɓi ranar tafiya don ƙidayar da za ka iya ƙarawa cikin tunatarwarka.';
+
+  @override
+  String get tripEntryTitle => 'Bayanan shiga';
+
+  @override
   String get yoursTag => 'Naka';
 
   @override

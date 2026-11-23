@@ -8633,6 +8633,260 @@ class AppLocalizationsZh extends AppLocalizations {
   String get rulesReviewDropped => '已略去（没有匹配的句子）';
 
   @override
+  String get assistantStepHistory => '正在查看更改记录';
+
+  @override
+  String get businessBenefitHistory => '共享记录的更改记录，支持导出 PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google 日历最多可能需要一天才能显示更改。Apple 日历和 Outlook 通常会在几小时内更新。';
+
+  @override
+  String get calendarOptionCategories => '类别';
+
+  @override
+  String get calendarOptionHide => '隐藏记录名称';
+
+  @override
+  String get calendarOptionHideBody => '事件将显示“证件即将到期”而非名称';
+
+  @override
+  String get calendarOptionPeople => '人员';
+
+  @override
+  String get calendarOptionRenew => '“即将续期”事件';
+
+  @override
+  String get calendarOptionRenewBody => '在每条记录的提醒日额外添加一个事件';
+
+  @override
+  String get calendarOptionTrips => '旅行';
+
+  @override
+  String get calendarOptionsTitle => '哪些内容会进入你的日历';
+
+  @override
+  String entryEmergency(String number) {
+    return '紧急电话：$number';
+  }
+
+  @override
+  String get entryNoPermitSaved => '此旅行未保存国际驾照';
+
+  @override
+  String get entryPermitNotNeeded => '驾车无需国际驾照';
+
+  @override
+  String get entryPermitRecommended => '建议持国际驾照驾车';
+
+  @override
+  String get entryPermitRequired => '驾驶员需要国际驾照';
+
+  @override
+  String get entryYellowFeverAll => '需要黄热病疫苗接种证书';
+
+  @override
+  String get entryYellowFeverNo => '无需黄热病证书';
+
+  @override
+  String get entryYellowFeverRisk => '如果你来自有黄热病风险的国家，需要黄热病证书';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person 添加了 $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person 更改了 $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person 删除了 $record';
+  }
+
+  @override
+  String get historyEmpty => '还没有更改。共享记录的更改会显示在这里。';
+
+  @override
+  String get historyLoadMore => '显示更多';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return '创建于 $date。更改数：$count';
+  }
+
+  @override
+  String get historyPdfWhat => '更改内容';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record 已被永久移除';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person 恢复了 $record';
+  }
+
+  @override
+  String get historySubtitle => '谁添加、更改或删除了共享记录';
+
+  @override
+  String get historyTitle => '更改记录';
+
+  @override
+  String petCardMade(String date) {
+    return '由 Vaultara 于 $date 创建';
+  }
+
+  @override
+  String get petCardShare => '分享宠物卡片';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · 宠物卡片';
+  }
+
+  @override
+  String get petCareBody => '添加一个会自动重复的提醒。';
+
+  @override
+  String get petCareCheckup => '兽医检查';
+
+  @override
+  String get petCareFlea => '跳蚤和蜱虫防治';
+
+  @override
+  String get petCareTitle => '护理提醒';
+
+  @override
+  String get petCareWorming => '驱虫';
+
+  @override
+  String get petPlanAdd => '将这些日期添加到我的提醒';
+
+  @override
+  String petPlanAdded(int count) {
+    return '已添加提醒：$count';
+  }
+
+  @override
+  String get petPlanBefore => '出行前';
+
+  @override
+  String petPlanBy(String date) {
+    return '$date 前';
+  }
+
+  @override
+  String get petPlanDate => '出行日期';
+
+  @override
+  String get petPlanLate => '已来不及赶上这个出行日期';
+
+  @override
+  String get petPlanNote => '每个日期都是该步骤的最后期限。步骤之间官方网站要求的间隔，请咨询你的兽医。';
+
+  @override
+  String get petPlanNothingToAdd => '这些日期已在你的提醒中。';
+
+  @override
+  String get petPlanPickDate => '选择出行日期，查看每个步骤的时间';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet：$step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return '前往$country的旅行';
+  }
+
+  @override
+  String get petPlanTitle => '距离出行的倒计时';
+
+  @override
+  String get petStepCertificate => '健康证明和文件';
+
+  @override
+  String get petStepChip => '微芯片';
+
+  @override
+  String get petStepRabies => '狂犬病疫苗';
+
+  @override
+  String get petStepResidence => '抵达获批国家';
+
+  @override
+  String get petStepTapeworm => '绦虫驱虫';
+
+  @override
+  String get petStepTitre => '狂犬病血液检测';
+
+  @override
+  String get petTypeChecking => '正在查找…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return '你是指 $name 吗？';
+  }
+
+  @override
+  String get petTypeJunk => '只能使用字母，例如兔子或狼蛛。';
+
+  @override
+  String get petTypeKeepAnyway => '保留';
+
+  @override
+  String get petTypeNotAnimal => '这看起来不像动物种类。';
+
+  @override
+  String get petTypeOwnNote => '已保存为自定义种类。旅行规定将指向官方网站。';
+
+  @override
+  String get planBenefitCalendar => '包含“即将续期”事件和旅行的日历链接';
+
+  @override
+  String get planBenefitPetCare => '宠物照片、护理提醒和出行倒计时';
+
+  @override
+  String get savingsComing => '未来 12 个月';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return '注意：$month 是你花费最多的月份（$amount）。';
+  }
+
+  @override
+  String get savingsLeftOut => '未计入没有汇率的货币费用。';
+
+  @override
+  String savingsMonthly(String amount) {
+    return '每月留出约 $amount 用于续期。';
+  }
+
+  @override
+  String get savingsSpent => '今年已支付';
+
+  @override
+  String get subcategoryPetCheckups => '兽医检查';
+
+  @override
+  String get subcategoryPetTreatments => '跳蚤、蜱虫和寄生虫防治';
+
+  @override
+  String get tourBusinessHistoryBody => '查看谁添加、更改或删除了共享记录，并导出为 PDF 以供审计。';
+
+  @override
+  String get tourPetsTravelPlanBody => '查看宠物前往任何国家需要什么，然后选择出行日期，获得可添加到提醒中的倒计时。';
+
+  @override
+  String get tripEntryTitle => '入境信息';
+
+  @override
   String get yoursTag => '我的';
 
   @override
@@ -18879,6 +19133,260 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get rulesReviewDropped => '已略去（没有匹配的句子）';
 
   @override
+  String get assistantStepHistory => '正在查看更改记录';
+
+  @override
+  String get businessBenefitHistory => '共享记录的更改记录，支持导出 PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google 日历最多可能需要一天才能显示更改。Apple 日历和 Outlook 通常会在几小时内更新。';
+
+  @override
+  String get calendarOptionCategories => '类别';
+
+  @override
+  String get calendarOptionHide => '隐藏记录名称';
+
+  @override
+  String get calendarOptionHideBody => '事件将显示“证件即将到期”而非名称';
+
+  @override
+  String get calendarOptionPeople => '人员';
+
+  @override
+  String get calendarOptionRenew => '“即将续期”事件';
+
+  @override
+  String get calendarOptionRenewBody => '在每条记录的提醒日额外添加一个事件';
+
+  @override
+  String get calendarOptionTrips => '旅行';
+
+  @override
+  String get calendarOptionsTitle => '哪些内容会进入你的日历';
+
+  @override
+  String entryEmergency(String number) {
+    return '紧急电话：$number';
+  }
+
+  @override
+  String get entryNoPermitSaved => '此旅行未保存国际驾照';
+
+  @override
+  String get entryPermitNotNeeded => '驾车无需国际驾照';
+
+  @override
+  String get entryPermitRecommended => '建议持国际驾照驾车';
+
+  @override
+  String get entryPermitRequired => '驾驶员需要国际驾照';
+
+  @override
+  String get entryYellowFeverAll => '需要黄热病疫苗接种证书';
+
+  @override
+  String get entryYellowFeverNo => '无需黄热病证书';
+
+  @override
+  String get entryYellowFeverRisk => '如果你来自有黄热病风险的国家，需要黄热病证书';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person 添加了 $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person 更改了 $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person 删除了 $record';
+  }
+
+  @override
+  String get historyEmpty => '还没有更改。共享记录的更改会显示在这里。';
+
+  @override
+  String get historyLoadMore => '显示更多';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return '创建于 $date。更改数：$count';
+  }
+
+  @override
+  String get historyPdfWhat => '更改内容';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record 已被永久移除';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person 恢复了 $record';
+  }
+
+  @override
+  String get historySubtitle => '谁添加、更改或删除了共享记录';
+
+  @override
+  String get historyTitle => '更改记录';
+
+  @override
+  String petCardMade(String date) {
+    return '由 Vaultara 于 $date 创建';
+  }
+
+  @override
+  String get petCardShare => '分享宠物卡片';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · 宠物卡片';
+  }
+
+  @override
+  String get petCareBody => '添加一个会自动重复的提醒。';
+
+  @override
+  String get petCareCheckup => '兽医检查';
+
+  @override
+  String get petCareFlea => '跳蚤和蜱虫防治';
+
+  @override
+  String get petCareTitle => '护理提醒';
+
+  @override
+  String get petCareWorming => '驱虫';
+
+  @override
+  String get petPlanAdd => '将这些日期添加到我的提醒';
+
+  @override
+  String petPlanAdded(int count) {
+    return '已添加提醒：$count';
+  }
+
+  @override
+  String get petPlanBefore => '出行前';
+
+  @override
+  String petPlanBy(String date) {
+    return '$date 前';
+  }
+
+  @override
+  String get petPlanDate => '出行日期';
+
+  @override
+  String get petPlanLate => '已来不及赶上这个出行日期';
+
+  @override
+  String get petPlanNote => '每个日期都是该步骤的最后期限。步骤之间官方网站要求的间隔，请咨询你的兽医。';
+
+  @override
+  String get petPlanNothingToAdd => '这些日期已在你的提醒中。';
+
+  @override
+  String get petPlanPickDate => '选择出行日期，查看每个步骤的时间';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet：$step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return '前往$country的旅行';
+  }
+
+  @override
+  String get petPlanTitle => '距离出行的倒计时';
+
+  @override
+  String get petStepCertificate => '健康证明和文件';
+
+  @override
+  String get petStepChip => '微芯片';
+
+  @override
+  String get petStepRabies => '狂犬病疫苗';
+
+  @override
+  String get petStepResidence => '抵达获批国家';
+
+  @override
+  String get petStepTapeworm => '绦虫驱虫';
+
+  @override
+  String get petStepTitre => '狂犬病血液检测';
+
+  @override
+  String get petTypeChecking => '正在查找…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return '你是指 $name 吗？';
+  }
+
+  @override
+  String get petTypeJunk => '只能使用字母，例如兔子或狼蛛。';
+
+  @override
+  String get petTypeKeepAnyway => '保留';
+
+  @override
+  String get petTypeNotAnimal => '这看起来不像动物种类。';
+
+  @override
+  String get petTypeOwnNote => '已保存为自定义种类。旅行规定将指向官方网站。';
+
+  @override
+  String get planBenefitCalendar => '包含“即将续期”事件和旅行的日历链接';
+
+  @override
+  String get planBenefitPetCare => '宠物照片、护理提醒和出行倒计时';
+
+  @override
+  String get savingsComing => '未来 12 个月';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return '注意：$month 是你花费最多的月份（$amount）。';
+  }
+
+  @override
+  String get savingsLeftOut => '未计入没有汇率的货币费用。';
+
+  @override
+  String savingsMonthly(String amount) {
+    return '每月留出约 $amount 用于续期。';
+  }
+
+  @override
+  String get savingsSpent => '今年已支付';
+
+  @override
+  String get subcategoryPetCheckups => '兽医检查';
+
+  @override
+  String get subcategoryPetTreatments => '跳蚤、蜱虫和寄生虫防治';
+
+  @override
+  String get tourBusinessHistoryBody => '查看谁添加、更改或删除了共享记录，并导出为 PDF 以供审计。';
+
+  @override
+  String get tourPetsTravelPlanBody => '查看宠物前往任何国家需要什么，然后选择出行日期，获得可添加到提醒中的倒计时。';
+
+  @override
+  String get tripEntryTitle => '入境信息';
+
+  @override
   String get yoursTag => '我的';
 
   @override
@@ -29123,6 +29631,260 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get rulesReviewDropped => '已略去（沒有相符的句子）';
+
+  @override
+  String get assistantStepHistory => '正在查看變更紀錄';
+
+  @override
+  String get businessBenefitHistory => '共享紀錄的變更紀錄，支援匯出 PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google 日曆最多可能需要一天才會顯示變更。Apple 日曆和 Outlook 通常會在幾小時內更新。';
+
+  @override
+  String get calendarOptionCategories => '類別';
+
+  @override
+  String get calendarOptionHide => '隱藏紀錄名稱';
+
+  @override
+  String get calendarOptionHideBody => '活動將顯示「證件即將到期」而非名稱';
+
+  @override
+  String get calendarOptionPeople => '人員';
+
+  @override
+  String get calendarOptionRenew => '「即將續期」活動';
+
+  @override
+  String get calendarOptionRenewBody => '在每筆紀錄的提醒日額外新增一個活動';
+
+  @override
+  String get calendarOptionTrips => '旅行';
+
+  @override
+  String get calendarOptionsTitle => '哪些內容會進入你的日曆';
+
+  @override
+  String entryEmergency(String number) {
+    return '緊急電話：$number';
+  }
+
+  @override
+  String get entryNoPermitSaved => '此旅行未儲存國際駕照';
+
+  @override
+  String get entryPermitNotNeeded => '開車不需要國際駕照';
+
+  @override
+  String get entryPermitRecommended => '建議持國際駕照開車';
+
+  @override
+  String get entryPermitRequired => '駕駛人需要國際駕照';
+
+  @override
+  String get entryYellowFeverAll => '需要黃熱病疫苗接種證明';
+
+  @override
+  String get entryYellowFeverNo => '不需要黃熱病證明';
+
+  @override
+  String get entryYellowFeverRisk => '如果你來自有黃熱病風險的國家，需要黃熱病證明';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person 新增了 $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person 變更了 $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person 刪除了 $record';
+  }
+
+  @override
+  String get historyEmpty => '還沒有變更。共享紀錄的變更會顯示在這裡。';
+
+  @override
+  String get historyLoadMore => '顯示更多';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return '建立於 $date。變更數：$count';
+  }
+
+  @override
+  String get historyPdfWhat => '變更內容';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record 已被永久移除';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person 還原了 $record';
+  }
+
+  @override
+  String get historySubtitle => '誰新增、變更或刪除了共享紀錄';
+
+  @override
+  String get historyTitle => '變更紀錄';
+
+  @override
+  String petCardMade(String date) {
+    return '由 Vaultara 於 $date 建立';
+  }
+
+  @override
+  String get petCardShare => '分享寵物卡片';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · 寵物卡片';
+  }
+
+  @override
+  String get petCareBody => '新增會自動重複的提醒。';
+
+  @override
+  String get petCareCheckup => '獸醫檢查';
+
+  @override
+  String get petCareFlea => '跳蚤和壁蝨防治';
+
+  @override
+  String get petCareTitle => '照護提醒';
+
+  @override
+  String get petCareWorming => '驅蟲';
+
+  @override
+  String get petPlanAdd => '將這些日期新增到我的提醒';
+
+  @override
+  String petPlanAdded(int count) {
+    return '已新增提醒：$count';
+  }
+
+  @override
+  String get petPlanBefore => '出發前';
+
+  @override
+  String petPlanBy(String date) {
+    return '$date 前';
+  }
+
+  @override
+  String get petPlanDate => '出發日期';
+
+  @override
+  String get petPlanLate => '已來不及趕上這個出發日期';
+
+  @override
+  String get petPlanNote => '每個日期都是該步驟的最後期限。步驟之間官方網站要求的間隔，請詢問你的獸醫。';
+
+  @override
+  String get petPlanNothingToAdd => '這些日期已在你的提醒中。';
+
+  @override
+  String get petPlanPickDate => '選擇出發日期，查看每個步驟的時間';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet：$step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return '前往$country的旅行';
+  }
+
+  @override
+  String get petPlanTitle => '距離出發的倒數';
+
+  @override
+  String get petStepCertificate => '健康證明和文件';
+
+  @override
+  String get petStepChip => '晶片';
+
+  @override
+  String get petStepRabies => '狂犬病疫苗';
+
+  @override
+  String get petStepResidence => '抵達核准國家';
+
+  @override
+  String get petStepTapeworm => '絛蟲驅蟲';
+
+  @override
+  String get petStepTitre => '狂犬病血液檢測';
+
+  @override
+  String get petTypeChecking => '正在查詢…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return '你是指 $name 嗎？';
+  }
+
+  @override
+  String get petTypeJunk => '只能使用字母，例如兔子或狼蛛。';
+
+  @override
+  String get petTypeKeepAnyway => '保留';
+
+  @override
+  String get petTypeNotAnimal => '這看起來不像動物種類。';
+
+  @override
+  String get petTypeOwnNote => '已儲存為自訂種類。旅行規定將指向官方網站。';
+
+  @override
+  String get planBenefitCalendar => '包含「即將續期」活動和旅行的日曆連結';
+
+  @override
+  String get planBenefitPetCare => '寵物照片、照護提醒和出發倒數';
+
+  @override
+  String get savingsComing => '未來 12 個月';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return '注意：$month 是你花費最多的月份（$amount）。';
+  }
+
+  @override
+  String get savingsLeftOut => '未計入沒有匯率的貨幣費用。';
+
+  @override
+  String savingsMonthly(String amount) {
+    return '每月預留約 $amount 用於續期。';
+  }
+
+  @override
+  String get savingsSpent => '今年已支付';
+
+  @override
+  String get subcategoryPetCheckups => '獸醫檢查';
+
+  @override
+  String get subcategoryPetTreatments => '跳蚤、壁蝨和寄生蟲防治';
+
+  @override
+  String get tourBusinessHistoryBody => '查看誰新增、變更或刪除了共享紀錄，並匯出為 PDF 以供稽核。';
+
+  @override
+  String get tourPetsTravelPlanBody => '查看寵物前往任何國家需要什麼，然後選擇出發日期，取得可新增到提醒中的倒數。';
+
+  @override
+  String get tripEntryTitle => '入境資訊';
 
   @override
   String get yoursTag => '我的';

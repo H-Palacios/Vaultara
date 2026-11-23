@@ -8689,6 +8689,260 @@ class AppLocalizationsIs extends AppLocalizations {
   String get rulesReviewDropped => 'Sleppt (engin samsvarandi setning)';
 
   @override
+  String get assistantStepHistory => 'Fer yfir breytingasögu';
+
+  @override
+  String get businessBenefitHistory => 'Breytingasaga sameiginlegra skráa, með PDF-útflutningi';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Calendar getur verið allt að sólarhring að sýna breytingar. Apple Calendar og Outlook uppfærast yfirleitt á nokkrum klukkustundum.';
+
+  @override
+  String get calendarOptionCategories => 'Flokkar';
+
+  @override
+  String get calendarOptionHide => 'Fela heiti skráa';
+
+  @override
+  String get calendarOptionHideBody => 'Viðburðir segja „Skjal rennur út“ í stað heitisins';
+
+  @override
+  String get calendarOptionPeople => 'Fólk';
+
+  @override
+  String get calendarOptionRenew => '„Endurnýja fljótlega“-viðburðir';
+
+  @override
+  String get calendarOptionRenewBody => 'Aukaviðburður á áminningardegi hverrar skrár';
+
+  @override
+  String get calendarOptionTrips => 'Ferðir';
+
+  @override
+  String get calendarOptionsTitle => 'Hvað fer í dagatalið þitt';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Neyðarnúmer: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Ekkert alþjóðlegt ökuskírteini vistað fyrir þessa ferð';
+
+  @override
+  String get entryPermitNotNeeded => 'Ekki þarf alþjóðlegt ökuskírteini til að aka';
+
+  @override
+  String get entryPermitRecommended => 'Mælt er með alþjóðlegu ökuskírteini til að aka';
+
+  @override
+  String get entryPermitRequired => 'Ökumenn þurfa alþjóðlegt ökuskírteini';
+
+  @override
+  String get entryYellowFeverAll => 'Bólusetningarvottorð gegn gulusótt þarf';
+
+  @override
+  String get entryYellowFeverNo => 'Ekki þarf gulusóttarvottorð';
+
+  @override
+  String get entryYellowFeverRisk => 'Gulusóttarvottorð þarf ef þú kemur frá landi með hættu á gulusótt';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person bætti við $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person breytti $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person eyddi $record';
+  }
+
+  @override
+  String get historyEmpty => 'Engar breytingar enn. Breytingar á sameiginlegum skrám birtast hér.';
+
+  @override
+  String get historyLoadMore => 'Sýna meira';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Gert $date. Breytingar: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Hverju var breytt';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record var fjarlægt fyrir fullt og allt';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person endurheimti $record';
+  }
+
+  @override
+  String get historySubtitle => 'Hver bætti við, breytti eða eyddi sameiginlegum skrám';
+
+  @override
+  String get historyTitle => 'Breytingasaga';
+
+  @override
+  String petCardMade(String date) {
+    return 'Gert með Vaultara $date';
+  }
+
+  @override
+  String get petCardShare => 'Deila gæludýrakorti';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Gæludýrakort';
+  }
+
+  @override
+  String get petCareBody => 'Bættu við áminningu sem endurtekur sig sjálf.';
+
+  @override
+  String get petCareCheckup => 'Dýralæknisskoðun';
+
+  @override
+  String get petCareFlea => 'Meðferð gegn flóm og mítlum';
+
+  @override
+  String get petCareTitle => 'Umhirðuáminningar';
+
+  @override
+  String get petCareWorming => 'Ormahreinsun';
+
+  @override
+  String get petPlanAdd => 'Bæta þessum dagsetningum við áminningarnar mínar';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Áminningum bætt við: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Fyrir ferðina';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Fyrir $date';
+  }
+
+  @override
+  String get petPlanDate => 'Ferðadagur';
+
+  @override
+  String get petPlanLate => 'Of seint fyrir þennan ferðadag';
+
+  @override
+  String get petPlanNote => 'Hver dagsetning er síðasti dagur sem skrefið getur átt sér stað. Spurðu dýralækninn um bilið milli skrefa sem opinberi vefurinn krefst.';
+
+  @override
+  String get petPlanNothingToAdd => 'Þessar dagsetningar eru þegar í áminningunum þínum.';
+
+  @override
+  String get petPlanPickDate => 'Veldu ferðadag til að sjá hvenær hvert skref er';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Fyrir ferðina til $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Niðurtalning að ferðinni';
+
+  @override
+  String get petStepCertificate => 'Heilbrigðisvottorð og pappírar';
+
+  @override
+  String get petStepChip => 'Örflaga';
+
+  @override
+  String get petStepRabies => 'Hundaæðisbólusetning';
+
+  @override
+  String get petStepResidence => 'Koma til samþykkts lands';
+
+  @override
+  String get petStepTapeworm => 'Bandormameðferð';
+
+  @override
+  String get petStepTitre => 'Hundaæðisblóðpróf';
+
+  @override
+  String get petTypeChecking => 'Leita…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Áttirðu við $name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Notaðu aðeins bókstafi, til dæmis Kanína eða Tarantúla.';
+
+  @override
+  String get petTypeKeepAnyway => 'Halda';
+
+  @override
+  String get petTypeNotAnimal => 'Þetta lítur ekki út eins og dýrategund.';
+
+  @override
+  String get petTypeOwnNote => 'Vistað sem þín eigin tegund. Ferðareglur vísa á opinbera vefinn.';
+
+  @override
+  String get planBenefitCalendar => 'Dagatalstengill með „Endurnýja fljótlega“-viðburðum og ferðum';
+
+  @override
+  String get planBenefitPetCare => 'Gæludýramyndir, umhirðuáminningar og niðurtalning ferðar';
+
+  @override
+  String get savingsComing => 'Á næstu 12 mánuðum';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Athugaðu: $month er dýrasti mánuðurinn þinn ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Kostnaður í gjaldmiðlum án gengis er ekki talinn með.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Leggðu til hliðar um $amount á mánuði fyrir endurnýjanir.';
+  }
+
+  @override
+  String get savingsSpent => 'Greitt á árinu';
+
+  @override
+  String get subcategoryPetCheckups => 'Dýralæknisskoðanir';
+
+  @override
+  String get subcategoryPetTreatments => 'Meðferðir gegn flóm, mítlum og ormum';
+
+  @override
+  String get tourBusinessHistoryBody => 'Sjáðu hver bætti við, breytti eða eyddi sameiginlegum skrám og fluttu það út sem PDF fyrir úttekt.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Sjáðu hvað gæludýr þarf fyrir hvaða land sem er og veldu ferðadag fyrir niðurtalningu sem þú getur bætt við áminningarnar.';
+
+  @override
+  String get tripEntryTitle => 'Upplýsingar um komu';
+
+  @override
   String get yoursTag => 'Þitt';
 
   @override

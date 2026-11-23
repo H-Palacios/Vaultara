@@ -8690,6 +8690,260 @@ class AppLocalizationsAz extends AppLocalizations {
   String get rulesReviewDropped => 'Çıxarıldı (uyğun cümlə yoxdur)';
 
   @override
+  String get assistantStepHistory => 'Dəyişiklik tarixçəsi yoxlanılır';
+
+  @override
+  String get businessBenefitHistory => 'Paylaşılan qeydlərin dəyişiklik tarixçəsi, PDF ixracı ilə';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Calendar dəyişiklikləri göstərmək üçün bir günə qədər vaxt apara bilər. Apple Calendar və Outlook adətən bir neçə saata yenilənir.';
+
+  @override
+  String get calendarOptionCategories => 'Kateqoriyalar';
+
+  @override
+  String get calendarOptionHide => 'Qeyd adlarını gizlət';
+
+  @override
+  String get calendarOptionHideBody => 'Hadisələrdə ad əvəzinə \"Sənədin müddəti bitir\" yazılır';
+
+  @override
+  String get calendarOptionPeople => 'İnsanlar';
+
+  @override
+  String get calendarOptionRenew => '\"Tezliklə yenilə\" hadisələri';
+
+  @override
+  String get calendarOptionRenewBody => 'Hər qeydin xatırlatma günündə əlavə hadisə';
+
+  @override
+  String get calendarOptionTrips => 'Səfərlər';
+
+  @override
+  String get calendarOptionsTitle => 'Təqviminizə nə düşür';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Təcili nömrə: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Bu səfər üçün Beynəlxalq Sürücülük İcazəsi saxlanılmayıb';
+
+  @override
+  String get entryPermitNotNeeded => 'Sürmək üçün Beynəlxalq Sürücülük İcazəsi lazım deyil';
+
+  @override
+  String get entryPermitRecommended => 'Sürmək üçün Beynəlxalq Sürücülük İcazəsi tövsiyə olunur';
+
+  @override
+  String get entryPermitRequired => 'Sürücülərə Beynəlxalq Sürücülük İcazəsi lazımdır';
+
+  @override
+  String get entryYellowFeverAll => 'Sarı qızdırma peyvənd sertifikatı lazımdır';
+
+  @override
+  String get entryYellowFeverNo => 'Sarı qızdırma sertifikatı lazım deyil';
+
+  @override
+  String get entryYellowFeverRisk => 'Sarı qızdırma riski olan ölkədən gəlirsinizsə, sarı qızdırma sertifikatı lazımdır';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person $record əlavə etdi';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person $record dəyişdi';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person $record sildi';
+  }
+
+  @override
+  String get historyEmpty => 'Hələ dəyişiklik yoxdur. Paylaşılan qeydlərdəki dəyişikliklər burada görünəcək.';
+
+  @override
+  String get historyLoadMore => 'Daha çox göstər';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return '$date tarixində hazırlanıb. Dəyişikliklər: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Nə dəyişdi';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record həmişəlik silindi';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person $record bərpa etdi';
+  }
+
+  @override
+  String get historySubtitle => 'Paylaşılan qeydləri kim əlavə etdi, dəyişdi və ya sildi';
+
+  @override
+  String get historyTitle => 'Dəyişiklik tarixçəsi';
+
+  @override
+  String petCardMade(String date) {
+    return '$date tarixində Vaultara ilə hazırlanıb';
+  }
+
+  @override
+  String get petCardShare => 'Ev heyvanı kartını paylaş';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Ev heyvanı kartı';
+  }
+
+  @override
+  String get petCareBody => 'Özü təkrarlanan xatırlatma əlavə edin.';
+
+  @override
+  String get petCareCheckup => 'Baytar müayinəsi';
+
+  @override
+  String get petCareFlea => 'Birə və gənə müalicəsi';
+
+  @override
+  String get petCareTitle => 'Qulluq xatırlatmaları';
+
+  @override
+  String get petCareWorming => 'Qurd dərmanı';
+
+  @override
+  String get petPlanAdd => 'Bu tarixləri xatırlatmalarıma əlavə et';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Əlavə edilən xatırlatmalar: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Səfərdən əvvəl';
+
+  @override
+  String petPlanBy(String date) {
+    return '$date tarixinədək';
+  }
+
+  @override
+  String get petPlanDate => 'Səfər tarixi';
+
+  @override
+  String get petPlanLate => 'Bu səfər tarixi üçün çox gecdir';
+
+  @override
+  String get petPlanNote => 'Hər tarix addımın baş verə biləcəyi son gündür. Addımlar arasında rəsmi saytın istədiyi fasilələr barədə baytarınızdan soruşun.';
+
+  @override
+  String get petPlanNothingToAdd => 'Bu tarixlər artıq xatırlatmalarınızdadır.';
+
+  @override
+  String get petPlanPickDate => 'Hər addımın vaxtını görmək üçün səfər tarixinizi seçin';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return '$country səfəri üçün';
+  }
+
+  @override
+  String get petPlanTitle => 'Səfərinizə geri sayım';
+
+  @override
+  String get petStepCertificate => 'Sağlamlıq sertifikatı və sənədlər';
+
+  @override
+  String get petStepChip => 'Mikroçip';
+
+  @override
+  String get petStepRabies => 'Quduzluq peyvəndi';
+
+  @override
+  String get petStepResidence => 'Təsdiqlənmiş ölkəyə gəlin';
+
+  @override
+  String get petStepTapeworm => 'Lent qurdu müalicəsi';
+
+  @override
+  String get petStepTitre => 'Quduzluq qan testi';
+
+  @override
+  String get petTypeChecking => 'Axtarılır…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return '$name nəzərdə tuturdunuz?';
+  }
+
+  @override
+  String get petTypeJunk => 'Yalnız hərflərdən istifadə edin, məsələn Dovşan və ya Tarantul.';
+
+  @override
+  String get petTypeKeepAnyway => 'Saxla';
+
+  @override
+  String get petTypeNotAnimal => 'Bu, heyvan növünə oxşamır.';
+
+  @override
+  String get petTypeOwnNote => 'Öz növünüz kimi saxlanıldı. Səyahət qaydaları rəsmi sayta yönləndirəcək.';
+
+  @override
+  String get planBenefitCalendar => '\"Tezliklə yenilə\" hadisələri və səfərlərlə təqvim linki';
+
+  @override
+  String get planBenefitPetCare => 'Ev heyvanı fotoları, qulluq xatırlatmaları və səfər geri sayımı';
+
+  @override
+  String get savingsComing => '12 ay ərzində gələcək';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Diqqət: $month ən bahalı ayınızdır ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Məzənnəsi olmayan valyutalardakı xərclər daxil edilməyib.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Yeniləmələrinizi ödəmək üçün ayda təxminən $amount ayırın.';
+  }
+
+  @override
+  String get savingsSpent => 'Bu il ödənilib';
+
+  @override
+  String get subcategoryPetCheckups => 'Baytar müayinələri';
+
+  @override
+  String get subcategoryPetTreatments => 'Birə, gənə və qurd müalicələri';
+
+  @override
+  String get tourBusinessHistoryBody => 'Paylaşılan qeydləri kim əlavə etdi, dəyişdi və ya sildi görün və audit üçün PDF kimi ixrac edin.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Ev heyvanının istənilən ölkə üçün nəyə ehtiyacı olduğunu yoxlayın, sonra xatırlatmalara əlavə edə biləcəyiniz geri sayım üçün səfər tarixinizi seçin.';
+
+  @override
+  String get tripEntryTitle => 'Giriş məlumatları';
+
+  @override
   String get yoursTag => 'Sizin';
 
   @override

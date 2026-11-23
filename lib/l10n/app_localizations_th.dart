@@ -8621,6 +8621,260 @@ class AppLocalizationsTh extends AppLocalizations {
   String get rulesReviewDropped => 'ตัดออก (ไม่มีประโยคที่ตรงกัน)';
 
   @override
+  String get assistantStepHistory => 'กำลังตรวจสอบประวัติการเปลี่ยนแปลง';
+
+  @override
+  String get businessBenefitHistory => 'ประวัติการเปลี่ยนแปลงของบันทึกที่แชร์ พร้อมส่งออก PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google ปฏิทินอาจใช้เวลาถึงหนึ่งวันในการแสดงการเปลี่ยนแปลง ปฏิทิน Apple และ Outlook มักอัปเดตภายในไม่กี่ชั่วโมง';
+
+  @override
+  String get calendarOptionCategories => 'หมวดหมู่';
+
+  @override
+  String get calendarOptionHide => 'ซ่อนชื่อบันทึก';
+
+  @override
+  String get calendarOptionHideBody => 'กิจกรรมจะแสดง \"เอกสารหมดอายุ\" แทนชื่อ';
+
+  @override
+  String get calendarOptionPeople => 'บุคคล';
+
+  @override
+  String get calendarOptionRenew => 'กิจกรรม \"ต่ออายุเร็วๆ นี้\"';
+
+  @override
+  String get calendarOptionRenewBody => 'กิจกรรมเพิ่มในวันแจ้งเตือนของแต่ละบันทึก';
+
+  @override
+  String get calendarOptionTrips => 'การเดินทาง';
+
+  @override
+  String get calendarOptionsTitle => 'สิ่งที่จะเข้าไปในปฏิทินของคุณ';
+
+  @override
+  String entryEmergency(String number) {
+    return 'หมายเลขฉุกเฉิน: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'ไม่มีใบอนุญาตขับขี่สากลบันทึกไว้สำหรับทริปนี้';
+
+  @override
+  String get entryPermitNotNeeded => 'ไม่จำเป็นต้องมีใบอนุญาตขับขี่สากลเพื่อขับรถ';
+
+  @override
+  String get entryPermitRecommended => 'แนะนำให้มีใบอนุญาตขับขี่สากลเพื่อขับรถ';
+
+  @override
+  String get entryPermitRequired => 'ผู้ขับขี่ต้องมีใบอนุญาตขับขี่สากล';
+
+  @override
+  String get entryYellowFeverAll => 'ต้องมีใบรับรองการฉีดวัคซีนไข้เหลือง';
+
+  @override
+  String get entryYellowFeverNo => 'ไม่ต้องมีใบรับรองไข้เหลือง';
+
+  @override
+  String get entryYellowFeverRisk => 'ต้องมีใบรับรองไข้เหลืองหากคุณมาจากประเทศที่มีความเสี่ยงไข้เหลือง';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person เพิ่ม $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person เปลี่ยน $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person ลบ $record';
+  }
+
+  @override
+  String get historyEmpty => 'ยังไม่มีการเปลี่ยนแปลง การเปลี่ยนแปลงของบันทึกที่แชร์จะแสดงที่นี่';
+
+  @override
+  String get historyLoadMore => 'แสดงเพิ่ม';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'สร้างเมื่อ $date การเปลี่ยนแปลง: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'สิ่งที่เปลี่ยน';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record ถูกลบถาวร';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person กู้คืน $record';
+  }
+
+  @override
+  String get historySubtitle => 'ใครเพิ่ม เปลี่ยน หรือลบบันทึกที่แชร์';
+
+  @override
+  String get historyTitle => 'ประวัติการเปลี่ยนแปลง';
+
+  @override
+  String petCardMade(String date) {
+    return 'สร้างด้วย Vaultara เมื่อ $date';
+  }
+
+  @override
+  String get petCardShare => 'แชร์บัตรสัตว์เลี้ยง';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · บัตรสัตว์เลี้ยง';
+  }
+
+  @override
+  String get petCareBody => 'เพิ่มการแจ้งเตือนที่วนซ้ำเอง';
+
+  @override
+  String get petCareCheckup => 'ตรวจสุขภาพกับสัตวแพทย์';
+
+  @override
+  String get petCareFlea => 'ป้องกันหมัดและเห็บ';
+
+  @override
+  String get petCareTitle => 'การแจ้งเตือนการดูแล';
+
+  @override
+  String get petCareWorming => 'ถ่ายพยาธิ';
+
+  @override
+  String get petPlanAdd => 'เพิ่มวันที่เหล่านี้ในการแจ้งเตือนของฉัน';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'เพิ่มการแจ้งเตือนแล้ว: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'ก่อนเดินทาง';
+
+  @override
+  String petPlanBy(String date) {
+    return 'ภายใน $date';
+  }
+
+  @override
+  String get petPlanDate => 'วันเดินทาง';
+
+  @override
+  String get petPlanLate => 'สายเกินไปสำหรับวันเดินทางนี้';
+
+  @override
+  String get petPlanNote => 'แต่ละวันที่คือวันสุดท้ายที่ทำขั้นตอนนั้นได้ สอบถามสัตวแพทย์เรื่องระยะห่างระหว่างขั้นตอนที่เว็บไซต์ทางการกำหนด';
+
+  @override
+  String get petPlanNothingToAdd => 'วันที่เหล่านี้อยู่ในการแจ้งเตือนของคุณแล้ว';
+
+  @override
+  String get petPlanPickDate => 'เลือกวันเดินทางเพื่อดูว่าแต่ละขั้นตอนต้องทำเมื่อใด';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'สำหรับการเดินทางไป $country';
+  }
+
+  @override
+  String get petPlanTitle => 'นับถอยหลังสู่การเดินทาง';
+
+  @override
+  String get petStepCertificate => 'ใบรับรองสุขภาพและเอกสาร';
+
+  @override
+  String get petStepChip => 'ไมโครชิป';
+
+  @override
+  String get petStepRabies => 'วัคซีนพิษสุนัขบ้า';
+
+  @override
+  String get petStepResidence => 'เดินทางถึงประเทศที่ได้รับอนุมัติ';
+
+  @override
+  String get petStepTapeworm => 'ถ่ายพยาธิตัวตืด';
+
+  @override
+  String get petStepTitre => 'ตรวจเลือดพิษสุนัขบ้า';
+
+  @override
+  String get petTypeChecking => 'กำลังค้นหา…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'คุณหมายถึง $name ใช่ไหม';
+  }
+
+  @override
+  String get petTypeJunk => 'ใช้ตัวอักษรเท่านั้น เช่น กระต่าย หรือ ทารันทูลา';
+
+  @override
+  String get petTypeKeepAnyway => 'เก็บไว้';
+
+  @override
+  String get petTypeNotAnimal => 'นี่ดูไม่เหมือนประเภทสัตว์';
+
+  @override
+  String get petTypeOwnNote => 'บันทึกเป็นประเภทของคุณเองแล้ว กฎการเดินทางจะแสดงเว็บไซต์ทางการ';
+
+  @override
+  String get planBenefitCalendar => 'ลิงก์ปฏิทินพร้อมกิจกรรม \"ต่ออายุเร็วๆ นี้\" และการเดินทาง';
+
+  @override
+  String get planBenefitPetCare => 'รูปสัตว์เลี้ยง การแจ้งเตือนการดูแล และนับถอยหลังการเดินทาง';
+
+  @override
+  String get savingsComing => 'ใน 12 เดือนข้างหน้า';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'ระวัง: $month เป็นเดือนที่ค่าใช้จ่ายสูงสุดของคุณ ($amount)';
+  }
+
+  @override
+  String get savingsLeftOut => 'ไม่รวมค่าใช้จ่ายในสกุลเงินที่ไม่มีอัตราแลกเปลี่ยน';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'กันเงินไว้ประมาณ $amount ต่อเดือนสำหรับการต่ออายุ';
+  }
+
+  @override
+  String get savingsSpent => 'จ่ายแล้วปีนี้';
+
+  @override
+  String get subcategoryPetCheckups => 'การตรวจสุขภาพกับสัตวแพทย์';
+
+  @override
+  String get subcategoryPetTreatments => 'ป้องกันหมัด เห็บ และพยาธิ';
+
+  @override
+  String get tourBusinessHistoryBody => 'ดูว่าใครเพิ่ม เปลี่ยน หรือลบบันทึกที่แชร์ และส่งออกเป็น PDF สำหรับการตรวจสอบ';
+
+  @override
+  String get tourPetsTravelPlanBody => 'ตรวจดูว่าสัตว์เลี้ยงต้องการอะไรสำหรับประเทศใดก็ได้ แล้วเลือกวันเดินทางเพื่อนับถอยหลังที่คุณเพิ่มในการแจ้งเตือนได้';
+
+  @override
+  String get tripEntryTitle => 'รายละเอียดการเข้าประเทศ';
+
+  @override
   String get yoursTag => 'ของคุณ';
 
   @override

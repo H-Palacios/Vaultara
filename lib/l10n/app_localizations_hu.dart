@@ -8690,6 +8690,260 @@ class AppLocalizationsHu extends AppLocalizations {
   String get rulesReviewDropped => 'Kihagyva (nincs egyező mondat)';
 
   @override
+  String get assistantStepHistory => 'A változástörténet ellenőrzése';
+
+  @override
+  String get businessBenefitHistory => 'A megosztott tételek változástörténete PDF-exporttal';
+
+  @override
+  String get calendarLinkGoogleNote => 'A Google Naptárnak akár egy nap is kellhet a változások megjelenítéséhez. Az Apple Naptár és az Outlook általában néhány órán belül frissül.';
+
+  @override
+  String get calendarOptionCategories => 'Kategóriák';
+
+  @override
+  String get calendarOptionHide => 'Tételnevek elrejtése';
+
+  @override
+  String get calendarOptionHideBody => 'Az eseményeken a név helyett „Lejár egy dokumentum” áll';
+
+  @override
+  String get calendarOptionPeople => 'Személyek';
+
+  @override
+  String get calendarOptionRenew => '„Hamarosan megújítandó” események';
+
+  @override
+  String get calendarOptionRenewBody => 'Egy további esemény minden tétel emlékeztető napján';
+
+  @override
+  String get calendarOptionTrips => 'Utazások';
+
+  @override
+  String get calendarOptionsTitle => 'Mi kerül a naptárába';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Segélyhívó szám: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Ehhez az utazáshoz nincs mentve nemzetközi vezetői engedély';
+
+  @override
+  String get entryPermitNotNeeded => 'A vezetéshez nem kell nemzetközi vezetői engedély';
+
+  @override
+  String get entryPermitRecommended => 'A vezetéshez ajánlott a nemzetközi vezetői engedély';
+
+  @override
+  String get entryPermitRequired => 'A sofőröknek nemzetközi vezetői engedély kell';
+
+  @override
+  String get entryYellowFeverAll => 'Sárgaláz elleni oltási bizonyítvány szükséges';
+
+  @override
+  String get entryYellowFeverNo => 'Nem kell sárgaláz-bizonyítvány';
+
+  @override
+  String get entryYellowFeverRisk => 'Sárgaláz-bizonyítvány kell, ha sárgaláz-kockázatú országból érkezik';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person hozzáadta: $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person módosította: $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person törölte: $record';
+  }
+
+  @override
+  String get historyEmpty => 'Még nincs változás. A megosztott tételek változásai itt jelennek meg.';
+
+  @override
+  String get historyLoadMore => 'Több megjelenítése';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Készült: $date. Változások: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Mi változott';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record véglegesen eltávolítva';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person visszaállította: $record';
+  }
+
+  @override
+  String get historySubtitle => 'Ki adott hozzá, módosított vagy törölt megosztott tételeket';
+
+  @override
+  String get historyTitle => 'Változástörténet';
+
+  @override
+  String petCardMade(String date) {
+    return 'Készült a Vaultarával: $date';
+  }
+
+  @override
+  String get petCardShare => 'Kisállatkártya megosztása';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Kisállatkártya';
+  }
+
+  @override
+  String get petCareBody => 'Adjon hozzá magától ismétlődő emlékeztetőt.';
+
+  @override
+  String get petCareCheckup => 'Állatorvosi vizsgálat';
+
+  @override
+  String get petCareFlea => 'Bolha- és kullancskezelés';
+
+  @override
+  String get petCareTitle => 'Gondozási emlékeztetők';
+
+  @override
+  String get petCareWorming => 'Féregtelenítés';
+
+  @override
+  String get petPlanAdd => 'Ezek a dátumok kerüljenek az emlékeztetőim közé';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Hozzáadott emlékeztetők: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Utazás előtt';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Legkésőbb: $date';
+  }
+
+  @override
+  String get petPlanDate => 'Utazás dátuma';
+
+  @override
+  String get petPlanLate => 'Ehhez az utazási dátumhoz már túl késő';
+
+  @override
+  String get petPlanNote => 'Minden dátum a lépés legkésőbbi napja. Kérdezze meg állatorvosát a lépések közötti, a hivatalos oldal által kért időközökről.';
+
+  @override
+  String get petPlanNothingToAdd => 'Ezek a dátumok már szerepelnek az emlékeztetői között.';
+
+  @override
+  String get petPlanPickDate => 'Válassza ki az utazás dátumát, hogy lássa, mikor esedékes az egyes lépés';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'A(z) $country utazáshoz';
+  }
+
+  @override
+  String get petPlanTitle => 'Visszaszámlálás az utazásig';
+
+  @override
+  String get petStepCertificate => 'Egészségügyi bizonyítvány és papírok';
+
+  @override
+  String get petStepChip => 'Mikrochip';
+
+  @override
+  String get petStepRabies => 'Veszettség elleni oltás';
+
+  @override
+  String get petStepResidence => 'Megérkezés egy elfogadott országba';
+
+  @override
+  String get petStepTapeworm => 'Galandféreg elleni kezelés';
+
+  @override
+  String get petStepTitre => 'Veszettség-vérvizsgálat';
+
+  @override
+  String get petTypeChecking => 'Keresés…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Erre gondolt: $name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Csak betűket használjon, például Nyúl vagy Tarantula.';
+
+  @override
+  String get petTypeKeepAnyway => 'Megtartás';
+
+  @override
+  String get petTypeNotAnimal => 'Ez nem tűnik állatfajtának.';
+
+  @override
+  String get petTypeOwnNote => 'Saját fajtaként mentve. Az utazási szabályok a hivatalos oldalra mutatnak.';
+
+  @override
+  String get planBenefitCalendar => 'Naptárlink „Hamarosan megújítandó” eseményekkel és utazásokkal';
+
+  @override
+  String get planBenefitPetCare => 'Kisállatfotók, gondozási emlékeztetők és utazási visszaszámlálás';
+
+  @override
+  String get savingsComing => 'A következő 12 hónapban';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Figyelem: $month a legdrágább hónapja ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Az árfolyam nélküli pénznemekben lévő költségek kimaradnak.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Tegyen félre havonta kb. $amount összeget a megújításokra.';
+  }
+
+  @override
+  String get savingsSpent => 'Idén fizetve';
+
+  @override
+  String get subcategoryPetCheckups => 'Állatorvosi vizsgálatok';
+
+  @override
+  String get subcategoryPetTreatments => 'Bolha-, kullancs- és féregkezelések';
+
+  @override
+  String get tourBusinessHistoryBody => 'Nézze meg, ki adott hozzá, módosított vagy törölt megosztott tételeket, és exportálja PDF-be egy audithoz.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Nézze meg, mire van szüksége egy kisállatnak bármely országba, majd válassza ki az utazás dátumát egy visszaszámláláshoz, amelyet az emlékeztetőihez adhat.';
+
+  @override
+  String get tripEntryTitle => 'Beutazási adatok';
+
+  @override
   String get yoursTag => 'Saját';
 
   @override

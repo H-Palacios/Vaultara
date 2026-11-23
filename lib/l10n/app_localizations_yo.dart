@@ -8639,6 +8639,260 @@ class AppLocalizationsYo extends AppLocalizations {
   String get rulesReviewDropped => 'A fi sílẹ̀ (kò sí gbólóhùn tí ó bá a mu)';
 
   @override
+  String get assistantStepHistory => 'Ń ṣàyẹ̀wò ìtàn àwọn àyípadà';
+
+  @override
+  String get businessBenefitHistory => 'Ìtàn àwọn àyípadà àwọn àkọsílẹ̀ tí a pín, pẹ̀lú gbígbé jáde sí PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Calendar lè gba títí di ọjọ́ kan láti fi àwọn àyípadà hàn. Apple Calendar àti Outlook sábà máa ń ṣe ìmúdójúìwọ̀n láàárín wákàtí díẹ̀.';
+
+  @override
+  String get calendarOptionCategories => 'Àwọn ẹ̀ka';
+
+  @override
+  String get calendarOptionHide => 'Fi orúkọ àwọn àkọsílẹ̀ pamọ́';
+
+  @override
+  String get calendarOptionHideBody => 'Àwọn ìṣẹ̀lẹ̀ yóò kọ \"Ìwé ń parí\" dípò orúkọ';
+
+  @override
+  String get calendarOptionPeople => 'Àwọn ènìyàn';
+
+  @override
+  String get calendarOptionRenew => 'Àwọn ìṣẹ̀lẹ̀ \"Ṣe ìsọdọ̀tun láìpẹ́\"';
+
+  @override
+  String get calendarOptionRenewBody => 'Ìṣẹ̀lẹ̀ àfikún ní ọjọ́ ìránnilétí àkọsílẹ̀ kọ̀ọ̀kan';
+
+  @override
+  String get calendarOptionTrips => 'Àwọn ìrìn àjò';
+
+  @override
+  String get calendarOptionsTitle => 'Ohun tí ó ń wọ kàlẹ́ńdà rẹ';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Nọ́mbà pàjáwìrì: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Kò sí ìwé àṣẹ ìwakọ̀ àgbáyé tí a fipamọ́ fún ìrìn àjò yìí';
+
+  @override
+  String get entryPermitNotNeeded => 'A kò nílò ìwé àṣẹ ìwakọ̀ àgbáyé láti wakọ̀';
+
+  @override
+  String get entryPermitRecommended => 'A dámọ̀ràn ìwé àṣẹ ìwakọ̀ àgbáyé láti wakọ̀';
+
+  @override
+  String get entryPermitRequired => 'Àwọn awakọ̀ nílò ìwé àṣẹ ìwakọ̀ àgbáyé';
+
+  @override
+  String get entryYellowFeverAll => 'A nílò ìwé ẹ̀rí abẹ́rẹ́ àjẹsára ibà pọ́njú';
+
+  @override
+  String get entryYellowFeverNo => 'A kò nílò ìwé ẹ̀rí ibà pọ́njú';
+
+  @override
+  String get entryYellowFeverRisk => 'A nílò ìwé ẹ̀rí ibà pọ́njú tí o bá ń bọ̀ láti orílẹ̀-èdè tí ewu ibà pọ́njú wà';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person ṣàfikún $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person yí $record padà';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person pa $record rẹ́';
+  }
+
+  @override
+  String get historyEmpty => 'Kò tíì sí àyípadà. Àwọn àyípadà àwọn àkọsílẹ̀ tí a pín yóò hàn níbí.';
+
+  @override
+  String get historyLoadMore => 'Fi púpọ̀ sí i hàn';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'A ṣe é ní $date. Àwọn àyípadà: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Ohun tí ó yí padà';
+
+  @override
+  String historyRemoved(String record) {
+    return 'A ti yọ $record kúrò títí láé';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person dá $record padà';
+  }
+
+  @override
+  String get historySubtitle => 'Ta ló ṣàfikún, yí padà tàbí pa àwọn àkọsílẹ̀ tí a pín rẹ́';
+
+  @override
+  String get historyTitle => 'Ìtàn àwọn àyípadà';
+
+  @override
+  String petCardMade(String date) {
+    return 'A ṣe é pẹ̀lú Vaultara ní $date';
+  }
+
+  @override
+  String get petCardShare => 'Pín káàdì ẹranko ọ̀sìn';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Káàdì ẹranko ọ̀sìn';
+  }
+
+  @override
+  String get petCareBody => 'Ṣàfikún ìránnilétí tí ó ń tún ara rẹ̀ ṣe.';
+
+  @override
+  String get petCareCheckup => 'Àyẹ̀wò dókítà ẹranko';
+
+  @override
+  String get petCareFlea => 'Ìtọ́jú eégbọn àti kòkòrò ajẹ̀jẹ̀';
+
+  @override
+  String get petCareTitle => 'Àwọn ìránnilétí ìtọ́jú';
+
+  @override
+  String get petCareWorming => 'Oògùn kòkòrò inú';
+
+  @override
+  String get petPlanAdd => 'Ṣàfikún àwọn ọjọ́ yìí sí àwọn ìránnilétí mi';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Àwọn ìránnilétí tí a fi kún: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Ṣáájú ìrìn àjò';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Ní $date';
+  }
+
+  @override
+  String get petPlanDate => 'Ọjọ́ ìrìn àjò';
+
+  @override
+  String get petPlanLate => 'Ó ti pẹ́ jù fún ọjọ́ ìrìn àjò yìí';
+
+  @override
+  String get petPlanNote => 'Ọjọ́ kọ̀ọ̀kan ni ọjọ́ ìkẹyìn tí ìgbésẹ̀ náà lè ṣẹlẹ̀. Béèrè lọ́wọ́ dókítà ẹranko rẹ nípa àlàfo láàárín àwọn ìgbésẹ̀ tí ojú òpó ìjọba ń béèrè.';
+
+  @override
+  String get petPlanNothingToAdd => 'Àwọn ọjọ́ yìí ti wà nínú àwọn ìránnilétí rẹ.';
+
+  @override
+  String get petPlanPickDate => 'Yan ọjọ́ ìrìn àjò láti rí ìgbà tí ìgbésẹ̀ kọ̀ọ̀kan yóò wáyé';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Fún ìrìn àjò sí $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Kíkà sẹ́yìn sí ìrìn àjò rẹ';
+
+  @override
+  String get petStepCertificate => 'Ìwé ẹ̀rí ìlera àti àwọn ìwé';
+
+  @override
+  String get petStepChip => 'Máíkírọ́ṣípù';
+
+  @override
+  String get petStepRabies => 'Abẹ́rẹ́ àjẹsára àrùn dìgbòlugi';
+
+  @override
+  String get petStepResidence => 'Dé orílẹ̀-èdè tí a fọwọ́ sí';
+
+  @override
+  String get petStepTapeworm => 'Ìtọ́jú aràn tẹ́ẹ́rẹ́';
+
+  @override
+  String get petStepTitre => 'Àyẹ̀wò ẹ̀jẹ̀ àrùn dìgbòlugi';
+
+  @override
+  String get petTypeChecking => 'Ń wá…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Ṣé $name ni o ní lọ́kàn?';
+  }
+
+  @override
+  String get petTypeJunk => 'Lo lẹ́tà nìkan, bí Ehoro tàbí Tarantula.';
+
+  @override
+  String get petTypeKeepAnyway => 'Pa á mọ́';
+
+  @override
+  String get petTypeNotAnimal => 'Èyí kò jọ irú ẹranko kan.';
+
+  @override
+  String get petTypeOwnNote => 'A fipamọ́ gẹ́gẹ́ bí irú tìrẹ. Àwọn òfin ìrìn àjò yóò tọ́ka sí ojú òpó ìjọba.';
+
+  @override
+  String get planBenefitCalendar => 'Ìjápọ̀ kàlẹ́ńdà pẹ̀lú àwọn ìṣẹ̀lẹ̀ \"Ṣe ìsọdọ̀tun láìpẹ́\" àti àwọn ìrìn àjò';
+
+  @override
+  String get planBenefitPetCare => 'Àwọn fọ́tò ẹranko ọ̀sìn, àwọn ìránnilétí ìtọ́jú àti kíkà sẹ́yìn ìrìn àjò';
+
+  @override
+  String get savingsComing => 'Láàárín oṣù 12 tó ń bọ̀';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Ṣọ́ra: $month ni oṣù rẹ tí ó wọ́n jù ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'A kò ka àwọn ìnáwó ní owó tí kò ní òṣùwọ̀n pàṣípààrọ̀.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Ya $amount sọ́tọ̀ lóṣooṣù fún àwọn ìsọdọ̀tun rẹ.';
+  }
+
+  @override
+  String get savingsSpent => 'Tí a san lọ́dún yìí';
+
+  @override
+  String get subcategoryPetCheckups => 'Àwọn àyẹ̀wò dókítà ẹranko';
+
+  @override
+  String get subcategoryPetTreatments => 'Ìtọ́jú eégbọn, kòkòrò ajẹ̀jẹ̀ àti kòkòrò inú';
+
+  @override
+  String get tourBusinessHistoryBody => 'Wo ẹni tí ó ṣàfikún, yí padà tàbí pa àwọn àkọsílẹ̀ tí a pín rẹ́, kí o sì gbé e jáde bí PDF fún àyẹ̀wò.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Ṣàyẹ̀wò ohun tí ẹranko ọ̀sìn nílò fún orílẹ̀-èdè èyíkéyìí, lẹ́yìn náà yan ọjọ́ ìrìn àjò fún kíkà sẹ́yìn tí o lè fi kún àwọn ìránnilétí.';
+
+  @override
+  String get tripEntryTitle => 'Àwọn àlàyé ìwọlé';
+
+  @override
   String get yoursTag => 'Tìrẹ';
 
   @override

@@ -8874,6 +8874,260 @@ class AppLocalizationsGa extends AppLocalizations {
   String get rulesReviewDropped => 'Fágtha amach (gan abairt mheaitseála)';
 
   @override
+  String get assistantStepHistory => 'Stair na n-athruithe á seiceáil';
+
+  @override
+  String get businessBenefitHistory => 'Stair athruithe na dtaifead comhroinnte, le heaspórtáil PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'D\'fhéadfadh lá a thógáil ar Google Calendar athruithe a thaispeáint. De ghnáth nuashonraíonn Apple Calendar agus Outlook laistigh de chúpla uair an chloig.';
+
+  @override
+  String get calendarOptionCategories => 'Catagóirí';
+
+  @override
+  String get calendarOptionHide => 'Folaigh ainmneacha na dtaifead';
+
+  @override
+  String get calendarOptionHideBody => 'Deir na himeachtaí \"Rachaidh doiciméad as feidhm\" in ionad an ainm';
+
+  @override
+  String get calendarOptionPeople => 'Daoine';
+
+  @override
+  String get calendarOptionRenew => 'Imeachtaí \"Athnuaigh go luath\"';
+
+  @override
+  String get calendarOptionRenewBody => 'Imeacht breise ar lá meabhrúcháin gach taifid';
+
+  @override
+  String get calendarOptionTrips => 'Turais';
+
+  @override
+  String get calendarOptionsTitle => 'Cad a théann i d\'fhéilire';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Uimhir éigeandála: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Níl Ceadúnas Tiomána Idirnáisiúnta sábháilte don turas seo';
+
+  @override
+  String get entryPermitNotNeeded => 'Ní gá Ceadúnas Tiomána Idirnáisiúnta chun tiomáint';
+
+  @override
+  String get entryPermitRecommended => 'Moltar Ceadúnas Tiomána Idirnáisiúnta chun tiomáint';
+
+  @override
+  String get entryPermitRequired => 'Teastaíonn Ceadúnas Tiomána Idirnáisiúnta ó thiománaithe';
+
+  @override
+  String get entryYellowFeverAll => 'Teastaíonn teastas vacsaínithe fiabhras buí';
+
+  @override
+  String get entryYellowFeverNo => 'Ní theastaíonn teastas fiabhras buí';
+
+  @override
+  String get entryYellowFeverRisk => 'Teastaíonn teastas fiabhras buí má thagann tú ó thír ina bhfuil riosca fiabhras buí';
+
+  @override
+  String historyAdded(String person, String record) {
+    return 'Chuir $person $record leis';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return 'D\'athraigh $person $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return 'Scrios $person $record';
+  }
+
+  @override
+  String get historyEmpty => 'Níl aon athruithe fós. Taispeánfar athruithe ar thaifid chomhroinnte anseo.';
+
+  @override
+  String get historyLoadMore => 'Taispeáin níos mó';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Déanta ar $date. Athruithe: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Cad a d\'athraigh';
+
+  @override
+  String historyRemoved(String record) {
+    return 'Baineadh $record go buan';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return 'D\'athchóirigh $person $record';
+  }
+
+  @override
+  String get historySubtitle => 'Cé a chuir leis, a d\'athraigh nó a scrios taifid chomhroinnte';
+
+  @override
+  String get historyTitle => 'Stair na n-athruithe';
+
+  @override
+  String petCardMade(String date) {
+    return 'Déanta le Vaultara ar $date';
+  }
+
+  @override
+  String get petCardShare => 'Roinn cárta an pheata';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Cárta peata';
+  }
+
+  @override
+  String get petCareBody => 'Cuir meabhrúchán leis a athdhéanann é féin.';
+
+  @override
+  String get petCareCheckup => 'Seiceáil tréidlia';
+
+  @override
+  String get petCareFlea => 'Cóireáil dreancaidí agus sceartán';
+
+  @override
+  String get petCareTitle => 'Meabhrúcháin chúraim';
+
+  @override
+  String get petCareWorming => 'Díphéisteáil';
+
+  @override
+  String get petPlanAdd => 'Cuir na dátaí seo le mo mheabhrúcháin';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Meabhrúcháin curtha leis: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Roimh an turas';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Faoi $date';
+  }
+
+  @override
+  String get petPlanDate => 'Dáta an turais';
+
+  @override
+  String get petPlanLate => 'Rómhall don dáta turais seo';
+
+  @override
+  String get petPlanNote => 'Is é gach dáta an lá deireanach is féidir leis an gcéim tarlú. Fiafraigh de do thréidlia faoi na bearnaí idir céimeanna a iarrann an suíomh oifigiúil.';
+
+  @override
+  String get petPlanNothingToAdd => 'Tá na dátaí seo i do mheabhrúcháin cheana.';
+
+  @override
+  String get petPlanPickDate => 'Roghnaigh dáta an turais chun a fheiceáil cathain atá gach céim';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Don turas go $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Comhaireamh síos chuig do thuras';
+
+  @override
+  String get petStepCertificate => 'Teastas sláinte agus páipéir';
+
+  @override
+  String get petStepChip => 'Micrishlis';
+
+  @override
+  String get petStepRabies => 'Vacsaín confaidh';
+
+  @override
+  String get petStepResidence => 'Sroich tír cheadaithe';
+
+  @override
+  String get petStepTapeworm => 'Cóireáil péist ribíneach';
+
+  @override
+  String get petStepTitre => 'Tástáil fola confaidh';
+
+  @override
+  String get petTypeChecking => 'Á lorg…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'An raibh $name i gceist agat?';
+  }
+
+  @override
+  String get petTypeJunk => 'Úsáid litreacha amháin, mar Coinín nó Tarantúla.';
+
+  @override
+  String get petTypeKeepAnyway => 'Coinnigh é';
+
+  @override
+  String get petTypeNotAnimal => 'Ní cosúil gur cineál ainmhí é seo.';
+
+  @override
+  String get petTypeOwnNote => 'Sábháilte mar do chineál féin. Díreoidh rialacha taistil ar an suíomh oifigiúil.';
+
+  @override
+  String get planBenefitCalendar => 'Nasc féilire le himeachtaí \"Athnuaigh go luath\" agus turais';
+
+  @override
+  String get planBenefitPetCare => 'Grianghraif peataí, meabhrúcháin chúraim agus comhaireamh síos taistil';
+
+  @override
+  String get savingsComing => 'Ag teacht i 12 mhí';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Aire: Is é $month an mhí is costasaí agat ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Fágtar costais in airgeadraí gan ráta amach.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Cuir thart ar $amount i leataobh in aghaidh na míosa do d\'athnuachain.';
+  }
+
+  @override
+  String get savingsSpent => 'Íoctha i mbliana';
+
+  @override
+  String get subcategoryPetCheckups => 'Seiceálacha tréidlia';
+
+  @override
+  String get subcategoryPetTreatments => 'Cóireálacha dreancaidí, sceartán agus péisteanna';
+
+  @override
+  String get tourBusinessHistoryBody => 'Féach cé a chuir leis, a d\'athraigh nó a scrios taifid chomhroinnte, agus easpórtáil mar PDF é le haghaidh iniúchta.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Seiceáil cad a theastaíonn ó pheata d\'aon tír, ansin roghnaigh dáta an turais le haghaidh comhairimh síos is féidir leat a chur le do mheabhrúcháin.';
+
+  @override
+  String get tripEntryTitle => 'Sonraí iontrála';
+
+  @override
   String get yoursTag => 'Leatsa';
 
   @override

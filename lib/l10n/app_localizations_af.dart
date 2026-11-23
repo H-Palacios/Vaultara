@@ -8694,6 +8694,260 @@ class AppLocalizationsAf extends AppLocalizations {
   String get rulesReviewDropped => 'Uitgelaat (geen passende sin nie)';
 
   @override
+  String get assistantStepHistory => 'Gaan die veranderingsgeskiedenis na';
+
+  @override
+  String get businessBenefitHistory => 'Veranderingsgeskiedenis van gedeelde rekords, met PDF-uitvoer';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Kalender kan tot \'n dag neem om veranderinge te wys. Apple Kalender en Outlook werk gewoonlik binne \'n paar uur by.';
+
+  @override
+  String get calendarOptionCategories => 'Kategorieë';
+
+  @override
+  String get calendarOptionHide => 'Versteek rekordname';
+
+  @override
+  String get calendarOptionHideBody => 'Gebeure sê \"Dokument verval\" in plaas van die naam';
+
+  @override
+  String get calendarOptionPeople => 'Mense';
+
+  @override
+  String get calendarOptionRenew => 'Hernu-binnekort-gebeure';
+
+  @override
+  String get calendarOptionRenewBody => '\'n Ekstra gebeurtenis op elke rekord se herinneringsdag';
+
+  @override
+  String get calendarOptionTrips => 'Reise';
+
+  @override
+  String get calendarOptionsTitle => 'Wat in jou kalender kom';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Noodnommer: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Geen Internasionale Bestuurspermit vir hierdie reis gestoor nie';
+
+  @override
+  String get entryPermitNotNeeded => 'Geen Internasionale Bestuurspermit nodig om te bestuur nie';
+
+  @override
+  String get entryPermitRecommended => '\'n Internasionale Bestuurspermit word aanbeveel om te bestuur';
+
+  @override
+  String get entryPermitRequired => 'Bestuurders het \'n Internasionale Bestuurspermit nodig';
+
+  @override
+  String get entryYellowFeverAll => '\'n Geelkoors-inentingsertifikaat is nodig';
+
+  @override
+  String get entryYellowFeverNo => 'Geen geelkoorssertifikaat nodig nie';
+
+  @override
+  String get entryYellowFeverRisk => '\'n Geelkoorssertifikaat is nodig as jy uit \'n land met geelkoorsrisiko kom';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person het $record bygevoeg';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person het $record verander';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person het $record uitgevee';
+  }
+
+  @override
+  String get historyEmpty => 'Nog geen veranderinge nie. Veranderinge aan gedeelde rekords sal hier wys.';
+
+  @override
+  String get historyLoadMore => 'Wys meer';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Gemaak op $date. Veranderinge gelys: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Wat verander het';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record is permanent verwyder';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person het $record teruggesit';
+  }
+
+  @override
+  String get historySubtitle => 'Wie gedeelde rekords bygevoeg, verander of uitgevee het';
+
+  @override
+  String get historyTitle => 'Veranderingsgeskiedenis';
+
+  @override
+  String petCardMade(String date) {
+    return 'Gemaak met Vaultara op $date';
+  }
+
+  @override
+  String get petCardShare => 'Deel troeteldierkaart';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Troeteldierkaart';
+  }
+
+  @override
+  String get petCareBody => 'Voeg \'n herinnering by wat vanself herhaal.';
+
+  @override
+  String get petCareCheckup => 'Veearts-ondersoek';
+
+  @override
+  String get petCareFlea => 'Vlooi- en bosluisbehandeling';
+
+  @override
+  String get petCareTitle => 'Versorgingsherinneringe';
+
+  @override
+  String get petCareWorming => 'Ontwurming';
+
+  @override
+  String get petPlanAdd => 'Voeg hierdie datums by my herinneringe';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Herinneringe bygevoeg: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Voor jy reis';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Teen $date';
+  }
+
+  @override
+  String get petPlanDate => 'Reisdatum';
+
+  @override
+  String get petPlanLate => 'Te laat vir hierdie reisdatum';
+
+  @override
+  String get petPlanNote => 'Elke datum is die laaste dag waarop die stap kan gebeur. Vra jou veearts oor die tussenposes wat die amptelike webwerf tussen stappe vra.';
+
+  @override
+  String get petPlanNothingToAdd => 'Hierdie datums is reeds in jou herinneringe.';
+
+  @override
+  String get petPlanPickDate => 'Kies jou reisdatum om te sien wanneer elke stap moet gebeur';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Vir die reis na $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Aftelling tot jou reis';
+
+  @override
+  String get petStepCertificate => 'Gesondheidsertifikaat en papiere';
+
+  @override
+  String get petStepChip => 'Mikroskyfie';
+
+  @override
+  String get petStepRabies => 'Hondsdolheid-entstof';
+
+  @override
+  String get petStepResidence => 'Kom in \'n goedgekeurde land aan';
+
+  @override
+  String get petStepTapeworm => 'Lintwurmbehandeling';
+
+  @override
+  String get petStepTitre => 'Hondsdolheid-bloedtoets';
+
+  @override
+  String get petTypeChecking => 'Soek dit op…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Bedoel jy $name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Gebruik net letters, soos Konyn of Tarantula.';
+
+  @override
+  String get petTypeKeepAnyway => 'Hou dit';
+
+  @override
+  String get petTypeNotAnimal => 'Dit lyk nie soos \'n soort dier nie.';
+
+  @override
+  String get petTypeOwnNote => 'Gestoor as jou eie soort. Reisreëls sal na die amptelike webwerf verwys.';
+
+  @override
+  String get planBenefitCalendar => 'Kalenderskakel met hernu-binnekort-gebeure en reise';
+
+  @override
+  String get planBenefitPetCare => 'Troeteldierfoto\'s, versorgingsherinneringe en \'n reisaftelling';
+
+  @override
+  String get savingsComing => 'Kom in 12 maande';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Let op: $month is jou duurste maand ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Koste in geldeenhede sonder \'n koers word uitgelaat.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Sit sowat $amount per maand opsy vir jou hernuwings.';
+  }
+
+  @override
+  String get savingsSpent => 'Hierdie jaar betaal';
+
+  @override
+  String get subcategoryPetCheckups => 'Veearts-ondersoeke';
+
+  @override
+  String get subcategoryPetTreatments => 'Vlooi-, bosluis- en wurmbehandelings';
+
+  @override
+  String get tourBusinessHistoryBody => 'Sien wie gedeelde rekords bygevoeg, verander of uitgevee het, en voer dit uit as \'n PDF vir \'n oudit.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Kyk wat \'n troeteldier vir enige land nodig het, en kies dan jou reisdatum vir \'n aftelling wat jy by jou herinneringe kan voeg.';
+
+  @override
+  String get tripEntryTitle => 'Toegangsbesonderhede';
+
+  @override
   String get yoursTag => 'Joune';
 
   @override

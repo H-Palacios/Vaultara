@@ -8694,6 +8694,260 @@ class AppLocalizationsDa extends AppLocalizations {
   String get rulesReviewDropped => 'Udeladt (ingen matchende sætning)';
 
   @override
+  String get assistantStepHistory => 'Tjekker ændringshistorikken';
+
+  @override
+  String get businessBenefitHistory => 'Ændringshistorik for delte poster med PDF-eksport';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Kalender kan være op til en dag om at vise ændringer. Apple Kalender og Outlook opdaterer som regel inden for få timer.';
+
+  @override
+  String get calendarOptionCategories => 'Kategorier';
+
+  @override
+  String get calendarOptionHide => 'Skjul navne på poster';
+
+  @override
+  String get calendarOptionHideBody => 'Begivenheder siger \"Dokument udløber\" i stedet for navnet';
+
+  @override
+  String get calendarOptionPeople => 'Personer';
+
+  @override
+  String get calendarOptionRenew => '\"Forny snart\"-begivenheder';
+
+  @override
+  String get calendarOptionRenewBody => 'En ekstra begivenhed på hver posts påmindelsesdag';
+
+  @override
+  String get calendarOptionTrips => 'Rejser';
+
+  @override
+  String get calendarOptionsTitle => 'Hvad der kommer i din kalender';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Alarmnummer: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Intet internationalt kørekort gemt til denne rejse';
+
+  @override
+  String get entryPermitNotNeeded => 'Intet internationalt kørekort nødvendigt for at køre';
+
+  @override
+  String get entryPermitRecommended => 'Et internationalt kørekort anbefales for at køre';
+
+  @override
+  String get entryPermitRequired => 'Bilister skal have et internationalt kørekort';
+
+  @override
+  String get entryYellowFeverAll => 'Et vaccinationsbevis mod gul feber er nødvendigt';
+
+  @override
+  String get entryYellowFeverNo => 'Intet bevis for gul feber nødvendigt';
+
+  @override
+  String get entryYellowFeverRisk => 'Et bevis for gul feber er nødvendigt, hvis du kommer fra et land med risiko for gul feber';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person tilføjede $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person ændrede $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person slettede $record';
+  }
+
+  @override
+  String get historyEmpty => 'Ingen ændringer endnu. Ændringer i delte poster vises her.';
+
+  @override
+  String get historyLoadMore => 'Vis flere';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Lavet $date. Ændringer: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Hvad der blev ændret';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record blev fjernet permanent';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person gendannede $record';
+  }
+
+  @override
+  String get historySubtitle => 'Hvem der har tilføjet, ændret eller slettet delte poster';
+
+  @override
+  String get historyTitle => 'Ændringshistorik';
+
+  @override
+  String petCardMade(String date) {
+    return 'Lavet med Vaultara $date';
+  }
+
+  @override
+  String get petCardShare => 'Del kæledyrskort';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Kæledyrskort';
+  }
+
+  @override
+  String get petCareBody => 'Tilføj en påmindelse, der gentager sig selv.';
+
+  @override
+  String get petCareCheckup => 'Dyrlægetjek';
+
+  @override
+  String get petCareFlea => 'Loppe- og flåtbehandling';
+
+  @override
+  String get petCareTitle => 'Plejepåmindelser';
+
+  @override
+  String get petCareWorming => 'Ormekur';
+
+  @override
+  String get petPlanAdd => 'Føj disse datoer til mine påmindelser';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Påmindelser tilføjet: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Før du rejser';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Senest $date';
+  }
+
+  @override
+  String get petPlanDate => 'Rejsedato';
+
+  @override
+  String get petPlanLate => 'For sent til denne rejsedato';
+
+  @override
+  String get petPlanNote => 'Hver dato er den seneste dag, trinnet kan ske. Spørg din dyrlæge om de mellemrum mellem trin, som den officielle side kræver.';
+
+  @override
+  String get petPlanNothingToAdd => 'Disse datoer er allerede i dine påmindelser.';
+
+  @override
+  String get petPlanPickDate => 'Vælg din rejsedato for at se, hvornår hvert trin skal ske';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Til rejsen til $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Nedtælling til din rejse';
+
+  @override
+  String get petStepCertificate => 'Sundhedscertifikat og papirer';
+
+  @override
+  String get petStepChip => 'Mikrochip';
+
+  @override
+  String get petStepRabies => 'Rabiesvaccine';
+
+  @override
+  String get petStepResidence => 'Ankomst til et godkendt land';
+
+  @override
+  String get petStepTapeworm => 'Bændelormsbehandling';
+
+  @override
+  String get petStepTitre => 'Rabies-blodprøve';
+
+  @override
+  String get petTypeChecking => 'Slår op…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Mente du $name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Brug kun bogstaver, f.eks. Kanin eller Tarantel.';
+
+  @override
+  String get petTypeKeepAnyway => 'Behold det';
+
+  @override
+  String get petTypeNotAnimal => 'Det ligner ikke en dyreart.';
+
+  @override
+  String get petTypeOwnNote => 'Gemt som din egen type. Rejsereglerne henviser til den officielle side.';
+
+  @override
+  String get planBenefitCalendar => 'Kalenderlink med \"Forny snart\"-begivenheder og rejser';
+
+  @override
+  String get planBenefitPetCare => 'Kæledyrsbilleder, plejepåmindelser og rejsenedtælling';
+
+  @override
+  String get savingsComing => 'De næste 12 måneder';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Bemærk: $month er din dyreste måned ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Udgifter i valutaer uden kurs er udeladt.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Læg cirka $amount til side om måneden til dine fornyelser.';
+  }
+
+  @override
+  String get savingsSpent => 'Betalt i år';
+
+  @override
+  String get subcategoryPetCheckups => 'Dyrlægetjek';
+
+  @override
+  String get subcategoryPetTreatments => 'Loppe-, flåt- og ormebehandlinger';
+
+  @override
+  String get tourBusinessHistoryBody => 'Se, hvem der har tilføjet, ændret eller slettet delte poster, og eksportér det som PDF til en revision.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Se, hvad et kæledyr skal bruge til et hvilket som helst land, og vælg din rejsedato for en nedtælling, du kan føje til dine påmindelser.';
+
+  @override
+  String get tripEntryTitle => 'Indrejseoplysninger';
+
+  @override
   String get yoursTag => 'Dit';
 
   @override

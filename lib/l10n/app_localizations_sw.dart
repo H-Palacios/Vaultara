@@ -8690,6 +8690,260 @@ class AppLocalizationsSw extends AppLocalizations {
   String get rulesReviewDropped => 'Imeachwa (hakuna sentensi inayolingana)';
 
   @override
+  String get assistantStepHistory => 'Inakagua historia ya mabadiliko';
+
+  @override
+  String get businessBenefitHistory => 'Historia ya mabadiliko ya rekodi zilizoshirikiwa, pamoja na kuhamisha PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Calendar inaweza kuchukua hadi siku moja kuonyesha mabadiliko. Apple Calendar na Outlook kwa kawaida husasishwa ndani ya saa chache.';
+
+  @override
+  String get calendarOptionCategories => 'Kategoria';
+
+  @override
+  String get calendarOptionHide => 'Ficha majina ya rekodi';
+
+  @override
+  String get calendarOptionHideBody => 'Matukio yataonyesha \"Hati inaisha muda\" badala ya jina';
+
+  @override
+  String get calendarOptionPeople => 'Watu';
+
+  @override
+  String get calendarOptionRenew => 'Matukio ya \"Huisha hivi karibuni\"';
+
+  @override
+  String get calendarOptionRenewBody => 'Tukio la ziada siku ya kikumbusho cha kila rekodi';
+
+  @override
+  String get calendarOptionTrips => 'Safari';
+
+  @override
+  String get calendarOptionsTitle => 'Kinachoingia kwenye kalenda yako';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Nambari ya dharura: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Hakuna Kibali cha Kimataifa cha Kuendesha kilichohifadhiwa kwa safari hii';
+
+  @override
+  String get entryPermitNotNeeded => 'Huhitaji Kibali cha Kimataifa cha Kuendesha ili kuendesha';
+
+  @override
+  String get entryPermitRecommended => 'Kibali cha Kimataifa cha Kuendesha kinapendekezwa ili kuendesha';
+
+  @override
+  String get entryPermitRequired => 'Madereva wanahitaji Kibali cha Kimataifa cha Kuendesha';
+
+  @override
+  String get entryYellowFeverAll => 'Cheti cha chanjo ya homa ya manjano kinahitajika';
+
+  @override
+  String get entryYellowFeverNo => 'Cheti cha homa ya manjano hakihitajiki';
+
+  @override
+  String get entryYellowFeverRisk => 'Cheti cha homa ya manjano kinahitajika ukitoka nchi yenye hatari ya homa ya manjano';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person ameongeza $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person amebadilisha $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person amefuta $record';
+  }
+
+  @override
+  String get historyEmpty => 'Bado hakuna mabadiliko. Mabadiliko ya rekodi zilizoshirikiwa yataonekana hapa.';
+
+  @override
+  String get historyLoadMore => 'Onyesha zaidi';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Imetengenezwa $date. Mabadiliko: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Kilichobadilika';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record imeondolewa kabisa';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person amerejesha $record';
+  }
+
+  @override
+  String get historySubtitle => 'Nani aliongeza, alibadilisha au alifuta rekodi zilizoshirikiwa';
+
+  @override
+  String get historyTitle => 'Historia ya mabadiliko';
+
+  @override
+  String petCardMade(String date) {
+    return 'Imetengenezwa kwa Vaultara $date';
+  }
+
+  @override
+  String get petCardShare => 'Shiriki kadi ya mnyama';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Kadi ya mnyama';
+  }
+
+  @override
+  String get petCareBody => 'Ongeza kikumbusho kinachojirudia chenyewe.';
+
+  @override
+  String get petCareCheckup => 'Uchunguzi wa daktari wa mifugo';
+
+  @override
+  String get petCareFlea => 'Tiba ya viroboto na kupe';
+
+  @override
+  String get petCareTitle => 'Vikumbusho vya utunzaji';
+
+  @override
+  String get petCareWorming => 'Dawa ya minyoo';
+
+  @override
+  String get petPlanAdd => 'Ongeza tarehe hizi kwenye vikumbusho vyangu';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Vikumbusho vilivyoongezwa: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Kabla ya kusafiri';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Kufikia $date';
+  }
+
+  @override
+  String get petPlanDate => 'Tarehe ya safari';
+
+  @override
+  String get petPlanLate => 'Imechelewa mno kwa tarehe hii ya safari';
+
+  @override
+  String get petPlanNote => 'Kila tarehe ni siku ya mwisho hatua inaweza kufanyika. Muulize daktari wa mifugo kuhusu vipindi kati ya hatua ambavyo tovuti rasmi inataka.';
+
+  @override
+  String get petPlanNothingToAdd => 'Tarehe hizi tayari ziko kwenye vikumbusho vyako.';
+
+  @override
+  String get petPlanPickDate => 'Chagua tarehe ya safari kuona kila hatua ni lini';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Kwa safari ya $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Hesabu ya kurudi nyuma hadi safari';
+
+  @override
+  String get petStepCertificate => 'Cheti cha afya na nyaraka';
+
+  @override
+  String get petStepChip => 'Microchip';
+
+  @override
+  String get petStepRabies => 'Chanjo ya kichaa cha mbwa';
+
+  @override
+  String get petStepResidence => 'Fika katika nchi iliyoidhinishwa';
+
+  @override
+  String get petStepTapeworm => 'Tiba ya minyoo ya tegu';
+
+  @override
+  String get petStepTitre => 'Kipimo cha damu cha kichaa cha mbwa';
+
+  @override
+  String get petTypeChecking => 'Inatafuta…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Ulimaanisha $name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Tumia herufi pekee, kama Sungura au Tarantula.';
+
+  @override
+  String get petTypeKeepAnyway => 'Bakiza';
+
+  @override
+  String get petTypeNotAnimal => 'Hii haionekani kama aina ya mnyama.';
+
+  @override
+  String get petTypeOwnNote => 'Imehifadhiwa kama aina yako mwenyewe. Sheria za safari zitaonyesha tovuti rasmi.';
+
+  @override
+  String get planBenefitCalendar => 'Kiungo cha kalenda chenye matukio ya \"Huisha hivi karibuni\" na safari';
+
+  @override
+  String get planBenefitPetCare => 'Picha za wanyama, vikumbusho vya utunzaji na hesabu ya safari';
+
+  @override
+  String get savingsComing => 'Katika miezi 12 ijayo';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Tahadhari: $month ndio mwezi wako wa gharama kubwa zaidi ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Gharama katika sarafu zisizo na kiwango hazijajumuishwa.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Weka kando takriban $amount kwa mwezi kwa ajili ya kuhuisha.';
+  }
+
+  @override
+  String get savingsSpent => 'Imelipwa mwaka huu';
+
+  @override
+  String get subcategoryPetCheckups => 'Uchunguzi wa daktari wa mifugo';
+
+  @override
+  String get subcategoryPetTreatments => 'Tiba ya viroboto, kupe na minyoo';
+
+  @override
+  String get tourBusinessHistoryBody => 'Ona nani aliongeza, alibadilisha au alifuta rekodi zilizoshirikiwa, na uhamishe kama PDF kwa ukaguzi.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Angalia mnyama anahitaji nini kwa nchi yoyote, kisha chagua tarehe ya safari kwa hesabu unayoweza kuongeza kwenye vikumbusho.';
+
+  @override
+  String get tripEntryTitle => 'Maelezo ya kuingia';
+
+  @override
   String get yoursTag => 'Yako';
 
   @override

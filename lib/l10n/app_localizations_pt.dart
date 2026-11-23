@@ -8695,6 +8695,260 @@ class AppLocalizationsPt extends AppLocalizations {
   String get rulesReviewDropped => 'Deixado de fora (nenhuma frase correspondente)';
 
   @override
+  String get assistantStepHistory => 'Verificando o histórico de alterações';
+
+  @override
+  String get businessBenefitHistory => 'Histórico de alterações dos registros compartilhados, com exportação em PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'O Google Agenda pode levar até um dia para mostrar alterações. O Calendário da Apple e o Outlook costumam atualizar em poucas horas.';
+
+  @override
+  String get calendarOptionCategories => 'Categorias';
+
+  @override
+  String get calendarOptionHide => 'Ocultar nomes dos registros';
+
+  @override
+  String get calendarOptionHideBody => 'Os eventos mostram \"Documento vence\" em vez do nome';
+
+  @override
+  String get calendarOptionPeople => 'Pessoas';
+
+  @override
+  String get calendarOptionRenew => 'Eventos \"Renovar em breve\"';
+
+  @override
+  String get calendarOptionRenewBody => 'Um evento extra no dia do lembrete de cada registro';
+
+  @override
+  String get calendarOptionTrips => 'Viagens';
+
+  @override
+  String get calendarOptionsTitle => 'O que entra no seu calendário';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Número de emergência: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Nenhuma Permissão Internacional para Dirigir salva para esta viagem';
+
+  @override
+  String get entryPermitNotNeeded => 'Não é preciso Permissão Internacional para Dirigir';
+
+  @override
+  String get entryPermitRecommended => 'Recomenda-se Permissão Internacional para Dirigir';
+
+  @override
+  String get entryPermitRequired => 'Motoristas precisam de Permissão Internacional para Dirigir';
+
+  @override
+  String get entryYellowFeverAll => 'É exigido certificado de vacinação contra febre amarela';
+
+  @override
+  String get entryYellowFeverNo => 'Não é exigido certificado de febre amarela';
+
+  @override
+  String get entryYellowFeverRisk => 'É exigido certificado de febre amarela se você vier de um país com risco de febre amarela';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person adicionou $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person alterou $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person excluiu $record';
+  }
+
+  @override
+  String get historyEmpty => 'Nenhuma alteração ainda. As alterações nos registros compartilhados aparecerão aqui.';
+
+  @override
+  String get historyLoadMore => 'Mostrar mais';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Criado em $date. Alterações: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'O que mudou';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record foi removido definitivamente';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person restaurou $record';
+  }
+
+  @override
+  String get historySubtitle => 'Quem adicionou, alterou ou excluiu registros compartilhados';
+
+  @override
+  String get historyTitle => 'Histórico de alterações';
+
+  @override
+  String petCardMade(String date) {
+    return 'Criado com Vaultara em $date';
+  }
+
+  @override
+  String get petCardShare => 'Compartilhar cartão do pet';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Cartão do pet';
+  }
+
+  @override
+  String get petCareBody => 'Adicione um lembrete que se repete sozinho.';
+
+  @override
+  String get petCareCheckup => 'Consulta veterinária';
+
+  @override
+  String get petCareFlea => 'Tratamento contra pulgas e carrapatos';
+
+  @override
+  String get petCareTitle => 'Lembretes de cuidados';
+
+  @override
+  String get petCareWorming => 'Vermifugação';
+
+  @override
+  String get petPlanAdd => 'Adicionar estas datas aos meus lembretes';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Lembretes adicionados: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Antes de viajar';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Até $date';
+  }
+
+  @override
+  String get petPlanDate => 'Data da viagem';
+
+  @override
+  String get petPlanLate => 'Tarde demais para esta data de viagem';
+
+  @override
+  String get petPlanNote => 'Cada data é o último dia em que a etapa pode acontecer. Pergunte ao veterinário sobre os intervalos entre etapas que o site oficial exige.';
+
+  @override
+  String get petPlanNothingToAdd => 'Estas datas já estão nos seus lembretes.';
+
+  @override
+  String get petPlanPickDate => 'Escolha a data da viagem para ver quando cada etapa deve acontecer';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Para a viagem a $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Contagem regressiva para a viagem';
+
+  @override
+  String get petStepCertificate => 'Atestado de saúde e documentos';
+
+  @override
+  String get petStepChip => 'Microchip';
+
+  @override
+  String get petStepRabies => 'Vacina antirrábica';
+
+  @override
+  String get petStepResidence => 'Chegar a um país aprovado';
+
+  @override
+  String get petStepTapeworm => 'Tratamento contra tênia';
+
+  @override
+  String get petStepTitre => 'Exame de sangue para raiva';
+
+  @override
+  String get petTypeChecking => 'Procurando…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Você quis dizer $name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Use apenas letras, como Coelho ou Tarântula.';
+
+  @override
+  String get petTypeKeepAnyway => 'Manter';
+
+  @override
+  String get petTypeNotAnimal => 'Isso não parece um tipo de animal.';
+
+  @override
+  String get petTypeOwnNote => 'Salvo como seu próprio tipo. As regras de viagem indicarão o site oficial.';
+
+  @override
+  String get planBenefitCalendar => 'Link de calendário com eventos \"Renovar em breve\" e viagens';
+
+  @override
+  String get planBenefitPetCare => 'Fotos dos pets, lembretes de cuidados e contagem regressiva da viagem';
+
+  @override
+  String get savingsComing => 'Nos próximos 12 meses';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Atenção: $month é o seu mês mais caro ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Custos em moedas sem cotação ficaram de fora.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Separe cerca de $amount por mês para suas renovações.';
+  }
+
+  @override
+  String get savingsSpent => 'Pago este ano';
+
+  @override
+  String get subcategoryPetCheckups => 'Consultas veterinárias';
+
+  @override
+  String get subcategoryPetTreatments => 'Tratamentos contra pulgas, carrapatos e vermes';
+
+  @override
+  String get tourBusinessHistoryBody => 'Veja quem adicionou, alterou ou excluiu registros compartilhados e exporte em PDF para auditoria.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Veja o que um pet precisa para qualquer país e escolha a data da viagem para uma contagem regressiva que você pode adicionar aos lembretes.';
+
+  @override
+  String get tripEntryTitle => 'Detalhes de entrada';
+
+  @override
   String get yoursTag => 'Seu';
 
   @override

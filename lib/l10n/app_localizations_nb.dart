@@ -8694,6 +8694,260 @@ class AppLocalizationsNb extends AppLocalizations {
   String get rulesReviewDropped => 'Utelatt (ingen samsvarende setning)';
 
   @override
+  String get assistantStepHistory => 'Sjekker endringshistorikken';
+
+  @override
+  String get businessBenefitHistory => 'Endringshistorikk for delte oppføringer, med PDF-eksport';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Kalender kan bruke opptil en dag på å vise endringer. Apple Kalender og Outlook oppdateres vanligvis i løpet av noen timer.';
+
+  @override
+  String get calendarOptionCategories => 'Kategorier';
+
+  @override
+  String get calendarOptionHide => 'Skjul navn på oppføringer';
+
+  @override
+  String get calendarOptionHideBody => 'Hendelser sier «Dokument utløper» i stedet for navnet';
+
+  @override
+  String get calendarOptionPeople => 'Personer';
+
+  @override
+  String get calendarOptionRenew => '«Forny snart»-hendelser';
+
+  @override
+  String get calendarOptionRenewBody => 'En ekstra hendelse på hver oppførings påminnelsesdag';
+
+  @override
+  String get calendarOptionTrips => 'Reiser';
+
+  @override
+  String get calendarOptionsTitle => 'Hva som kommer i kalenderen din';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Nødnummer: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Ingen internasjonal førerkort lagret for denne reisen';
+
+  @override
+  String get entryPermitNotNeeded => 'Ikke behov for internasjonalt førerkort for å kjøre';
+
+  @override
+  String get entryPermitRecommended => 'Internasjonalt førerkort anbefales for å kjøre';
+
+  @override
+  String get entryPermitRequired => 'Sjåfører trenger internasjonalt førerkort';
+
+  @override
+  String get entryYellowFeverAll => 'Vaksinasjonsattest mot gulfeber kreves';
+
+  @override
+  String get entryYellowFeverNo => 'Ingen gulfeberattest kreves';
+
+  @override
+  String get entryYellowFeverRisk => 'Gulfeberattest kreves hvis du kommer fra et land med risiko for gulfeber';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person la til $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person endret $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person slettet $record';
+  }
+
+  @override
+  String get historyEmpty => 'Ingen endringer ennå. Endringer i delte oppføringer vises her.';
+
+  @override
+  String get historyLoadMore => 'Vis flere';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Laget $date. Endringer: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Hva som ble endret';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record ble fjernet for godt';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person gjenopprettet $record';
+  }
+
+  @override
+  String get historySubtitle => 'Hvem som la til, endret eller slettet delte oppføringer';
+
+  @override
+  String get historyTitle => 'Endringshistorikk';
+
+  @override
+  String petCardMade(String date) {
+    return 'Laget med Vaultara $date';
+  }
+
+  @override
+  String get petCardShare => 'Del kjæledyrkort';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Kjæledyrkort';
+  }
+
+  @override
+  String get petCareBody => 'Legg til en påminnelse som gjentar seg selv.';
+
+  @override
+  String get petCareCheckup => 'Veterinærsjekk';
+
+  @override
+  String get petCareFlea => 'Loppe- og flåttbehandling';
+
+  @override
+  String get petCareTitle => 'Stellpåminnelser';
+
+  @override
+  String get petCareWorming => 'Ormekur';
+
+  @override
+  String get petPlanAdd => 'Legg disse datoene til påminnelsene mine';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Påminnelser lagt til: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Før du reiser';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Innen $date';
+  }
+
+  @override
+  String get petPlanDate => 'Reisedato';
+
+  @override
+  String get petPlanLate => 'For sent for denne reisedatoen';
+
+  @override
+  String get petPlanNote => 'Hver dato er den siste dagen trinnet kan skje. Spør veterinæren om mellomrommene mellom trinn som den offisielle siden krever.';
+
+  @override
+  String get petPlanNothingToAdd => 'Disse datoene er allerede i påminnelsene dine.';
+
+  @override
+  String get petPlanPickDate => 'Velg reisedato for å se når hvert trinn skal skje';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'For reisen til $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Nedtelling til reisen';
+
+  @override
+  String get petStepCertificate => 'Helseattest og papirer';
+
+  @override
+  String get petStepChip => 'Mikrobrikke';
+
+  @override
+  String get petStepRabies => 'Rabiesvaksine';
+
+  @override
+  String get petStepResidence => 'Ankomst til et godkjent land';
+
+  @override
+  String get petStepTapeworm => 'Bendelormbehandling';
+
+  @override
+  String get petStepTitre => 'Rabies-blodprøve';
+
+  @override
+  String get petTypeChecking => 'Slår opp…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Mente du $name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Bruk bare bokstaver, som Kanin eller Tarantell.';
+
+  @override
+  String get petTypeKeepAnyway => 'Behold';
+
+  @override
+  String get petTypeNotAnimal => 'Dette ser ikke ut som en dyreart.';
+
+  @override
+  String get petTypeOwnNote => 'Lagret som din egen type. Reisereglene viser til den offisielle siden.';
+
+  @override
+  String get planBenefitCalendar => 'Kalenderlenke med «Forny snart»-hendelser og reiser';
+
+  @override
+  String get planBenefitPetCare => 'Kjæledyrbilder, stellpåminnelser og nedtelling til reisen';
+
+  @override
+  String get savingsComing => 'De neste 12 månedene';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Obs: $month er din dyreste måned ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Kostnader i valutaer uten kurs er utelatt.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Sett av rundt $amount i måneden til fornyelsene dine.';
+  }
+
+  @override
+  String get savingsSpent => 'Betalt i år';
+
+  @override
+  String get subcategoryPetCheckups => 'Veterinærsjekker';
+
+  @override
+  String get subcategoryPetTreatments => 'Loppe-, flått- og ormebehandlinger';
+
+  @override
+  String get tourBusinessHistoryBody => 'Se hvem som la til, endret eller slettet delte oppføringer, og eksporter det som PDF til en revisjon.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Sjekk hva et kjæledyr trenger for et hvilket som helst land, og velg reisedato for en nedtelling du kan legge til påminnelsene.';
+
+  @override
+  String get tripEntryTitle => 'Innreiseopplysninger';
+
+  @override
   String get yoursTag => 'Ditt';
 
   @override

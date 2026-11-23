@@ -8689,6 +8689,260 @@ class AppLocalizationsSo extends AppLocalizations {
   String get rulesReviewDropped => 'Laga reebay (ma jiro weedh u dhiganta)';
 
   @override
+  String get assistantStepHistory => 'Waxaa la hubinayaa taariikhda isbeddellada';
+
+  @override
+  String get businessBenefitHistory => 'Taariikhda isbeddellada diiwaannada la wadaago, oo leh dhoofin PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Calendar waxa laga yaabaa inay qaadato ilaa hal maalin si ay u muujiso isbeddellada. Apple Calendar iyo Outlook badanaa waxay cusboonaadaan dhowr saacadood gudahood.';
+
+  @override
+  String get calendarOptionCategories => 'Qaybaha';
+
+  @override
+  String get calendarOptionHide => 'Qari magacyada diiwaannada';
+
+  @override
+  String get calendarOptionHideBody => 'Dhacdooyinku waxay oran doonaan \"Dukumentigu wuu dhacayaa\" halkii magaca';
+
+  @override
+  String get calendarOptionPeople => 'Dadka';
+
+  @override
+  String get calendarOptionRenew => 'Dhacdooyinka \"Dhawaan cusboonaysii\"';
+
+  @override
+  String get calendarOptionRenewBody => 'Dhacdo dheeraad ah maalinta xusuusinta diiwaan kasta';
+
+  @override
+  String get calendarOptionTrips => 'Safarro';
+
+  @override
+  String get calendarOptionsTitle => 'Waxa galaya kalandarkaaga';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Lambarka degdegga: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Ma jiro ruqsad darawalnimo caalami ah oo loo kaydiyay safarkan';
+
+  @override
+  String get entryPermitNotNeeded => 'Uma baahnid ruqsad darawalnimo caalami ah si aad u wado';
+
+  @override
+  String get entryPermitRecommended => 'Ruqsad darawalnimo caalami ah ayaa lagu talinayaa si aad u wado';
+
+  @override
+  String get entryPermitRequired => 'Darawallada waxay u baahan yihiin ruqsad darawalnimo caalami ah';
+
+  @override
+  String get entryYellowFeverAll => 'Shahaadada tallaalka qandhada jaallaha ah ayaa loo baahan yahay';
+
+  @override
+  String get entryYellowFeverNo => 'Shahaadada qandhada jaallaha ah looma baahna';
+
+  @override
+  String get entryYellowFeverRisk => 'Shahaadada qandhada jaallaha ah ayaa loo baahan yahay haddii aad ka timaado waddan khatar qandhada jaallaha ah leh';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person ayaa ku daray $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person ayaa beddelay $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person ayaa tirtiray $record';
+  }
+
+  @override
+  String get historyEmpty => 'Weli isbeddel ma jiro. Isbeddellada diiwaannada la wadaago halkan ayay ka muuqan doonaan.';
+
+  @override
+  String get historyLoadMore => 'Muuji wax badan';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'La sameeyay $date. Isbeddellada: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Waxa isbeddelay';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record si joogto ah ayaa looga saaray';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person ayaa soo celiyay $record';
+  }
+
+  @override
+  String get historySubtitle => 'Cidda ku dartay, beddeshay ama tirtirtay diiwaannada la wadaago';
+
+  @override
+  String get historyTitle => 'Taariikhda isbeddellada';
+
+  @override
+  String petCardMade(String date) {
+    return 'Lagu sameeyay Vaultara $date';
+  }
+
+  @override
+  String get petCardShare => 'Wadaag kaarka xayawaanka';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Kaarka xayawaanka';
+  }
+
+  @override
+  String get petCareBody => 'Ku dar xusuusin is ku celisa.';
+
+  @override
+  String get petCareCheckup => 'Baaritaanka dhakhtarka xoolaha';
+
+  @override
+  String get petCareFlea => 'Daaweynta boodada iyo shilinta';
+
+  @override
+  String get petCareTitle => 'Xusuusinta daryeelka';
+
+  @override
+  String get petCareWorming => 'Daawada gooryaanka';
+
+  @override
+  String get petPlanAdd => 'Ku dar taariikhahan xusuusinteyda';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Xusuusinta la daray: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Safarka ka hor';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Ugu dambeyn $date';
+  }
+
+  @override
+  String get petPlanDate => 'Taariikhda safarka';
+
+  @override
+  String get petPlanLate => 'Waa goor dambe taariikhdan safarka';
+
+  @override
+  String get petPlanNote => 'Taariikh kastaa waa maalinta ugu dambeysa ee tallaabadu dhici karto. Weydii dhakhtarka xoolaha kala-fogaanshaha u dhexeeya tallaabooyinka ee goobta rasmiga ahi u baahan tahay.';
+
+  @override
+  String get petPlanNothingToAdd => 'Taariikhahan horey ayay ugu jiraan xusuusintaada.';
+
+  @override
+  String get petPlanPickDate => 'Dooro taariikhda safarka si aad u aragto goorta tallaabo kasta';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Safarka $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Tirinta dib u dhaca ilaa safarka';
+
+  @override
+  String get petStepCertificate => 'Shahaadada caafimaadka iyo waraaqaha';
+
+  @override
+  String get petStepChip => 'Mikrochip';
+
+  @override
+  String get petStepRabies => 'Tallaalka cudurka waalida';
+
+  @override
+  String get petStepResidence => 'Gaar waddan la ansixiyay';
+
+  @override
+  String get petStepTapeworm => 'Daaweynta gooryaanka xariijinta ah';
+
+  @override
+  String get petStepTitre => 'Baaritaanka dhiigga ee cudurka waalida';
+
+  @override
+  String get petTypeChecking => 'Waa la raadinayaa…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Ma waxaad ula jeeday $name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Isticmaal xarfo kaliya, sida Bakayle ama Tarantula.';
+
+  @override
+  String get petTypeKeepAnyway => 'Hay';
+
+  @override
+  String get petTypeNotAnimal => 'Tani uma eka nooc xayawaan.';
+
+  @override
+  String get petTypeOwnNote => 'Waxaa loo kaydiyay noocaaga gaarka ah. Xeerarka safarka waxay tusi doonaan goobta rasmiga ah.';
+
+  @override
+  String get planBenefitCalendar => 'Xiriirka kalandarka oo leh dhacdooyinka \"Dhawaan cusboonaysii\" iyo safarro';
+
+  @override
+  String get planBenefitPetCare => 'Sawirada xayawaanka, xusuusinta daryeelka iyo tirinta safarka';
+
+  @override
+  String get savingsComing => '12-ka bilood ee soo socda';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Ogow: $month waa bishaada ugu qaalisan ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Kharashyada lacagaha aan sicir lahayn laguma darin.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Bil kasta dhinac u dhig qiyaastii $amount cusboonaysiintaada.';
+  }
+
+  @override
+  String get savingsSpent => 'La bixiyay sannadkan';
+
+  @override
+  String get subcategoryPetCheckups => 'Baaritaannada dhakhtarka xoolaha';
+
+  @override
+  String get subcategoryPetTreatments => 'Daaweynta boodada, shilinta iyo gooryaanka';
+
+  @override
+  String get tourBusinessHistoryBody => 'Arag cidda ku dartay, beddeshay ama tirtirtay diiwaannada la wadaago, una dhoofi PDF ahaan hanti-dhowr ahaan.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Hubi waxa xayawaanku u baahan yahay waddan kasta, kadibna dooro taariikhda safarka si aad u hesho tirin aad ku dari karto xusuusinta.';
+
+  @override
+  String get tripEntryTitle => 'Faahfaahinta gelitaanka';
+
+  @override
   String get yoursTag => 'Adiga';
 
   @override

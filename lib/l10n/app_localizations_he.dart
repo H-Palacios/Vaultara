@@ -8743,6 +8743,260 @@ class AppLocalizationsHe extends AppLocalizations {
   String get rulesReviewDropped => 'הושמט (אין משפט תואם)';
 
   @override
+  String get assistantStepHistory => 'בודק את היסטוריית השינויים';
+
+  @override
+  String get businessBenefitHistory => 'היסטוריית שינויים ברשומות משותפות, עם ייצוא PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'ייתכן ש-Google Calendar יציג שינויים רק אחרי עד יום. Apple Calendar ו-Outlook מתעדכנים בדרך כלל בתוך כמה שעות.';
+
+  @override
+  String get calendarOptionCategories => 'קטגוריות';
+
+  @override
+  String get calendarOptionHide => 'הסתרת שמות הרשומות';
+
+  @override
+  String get calendarOptionHideBody => 'באירועים יופיע \"פג תוקף מסמך\" במקום השם';
+
+  @override
+  String get calendarOptionPeople => 'אנשים';
+
+  @override
+  String get calendarOptionRenew => 'אירועי \"לחדש בקרוב\"';
+
+  @override
+  String get calendarOptionRenewBody => 'אירוע נוסף ביום התזכורת של כל רשומה';
+
+  @override
+  String get calendarOptionTrips => 'נסיעות';
+
+  @override
+  String get calendarOptionsTitle => 'מה נכנס ללוח השנה שלך';
+
+  @override
+  String entryEmergency(String number) {
+    return 'מספר חירום: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'לא נשמר רישיון נהיגה בינלאומי לנסיעה הזו';
+
+  @override
+  String get entryPermitNotNeeded => 'אין צורך ברישיון נהיגה בינלאומי לנהיגה';
+
+  @override
+  String get entryPermitRecommended => 'מומלץ רישיון נהיגה בינלאומי לנהיגה';
+
+  @override
+  String get entryPermitRequired => 'נהגים צריכים רישיון נהיגה בינלאומי';
+
+  @override
+  String get entryYellowFeverAll => 'נדרשת תעודת חיסון נגד קדחת צהובה';
+
+  @override
+  String get entryYellowFeverNo => 'לא נדרשת תעודת קדחת צהובה';
+
+  @override
+  String get entryYellowFeverRisk => 'נדרשת תעודת קדחת צהובה אם מגיעים ממדינה עם סיכון לקדחת צהובה';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person הוסיף/ה את $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person שינה/תה את $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person מחק/ה את $record';
+  }
+
+  @override
+  String get historyEmpty => 'אין עדיין שינויים. שינויים ברשומות משותפות יופיעו כאן.';
+
+  @override
+  String get historyLoadMore => 'הצגת עוד';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'נוצר ב-$date. מספר שינויים: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'מה השתנה';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record הוסר לצמיתות';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person שחזר/ה את $record';
+  }
+
+  @override
+  String get historySubtitle => 'מי הוסיף, שינה או מחק רשומות משותפות';
+
+  @override
+  String get historyTitle => 'היסטוריית שינויים';
+
+  @override
+  String petCardMade(String date) {
+    return 'נוצר עם Vaultara ב-$date';
+  }
+
+  @override
+  String get petCardShare => 'שיתוף כרטיס חיית המחמד';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · כרטיס חיית מחמד';
+  }
+
+  @override
+  String get petCareBody => 'הוספת תזכורת שחוזרת מעצמה.';
+
+  @override
+  String get petCareCheckup => 'בדיקה וטרינרית';
+
+  @override
+  String get petCareFlea => 'טיפול נגד פרעושים וקרציות';
+
+  @override
+  String get petCareTitle => 'תזכורות טיפול';
+
+  @override
+  String get petCareWorming => 'טיפול נגד תולעים';
+
+  @override
+  String get petPlanAdd => 'הוספת התאריכים האלה לתזכורות שלי';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'נוספו תזכורות: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'לפני הנסיעה';
+
+  @override
+  String petPlanBy(String date) {
+    return 'עד $date';
+  }
+
+  @override
+  String get petPlanDate => 'תאריך הנסיעה';
+
+  @override
+  String get petPlanLate => 'מאוחר מדי לתאריך הנסיעה הזה';
+
+  @override
+  String get petPlanNote => 'כל תאריך הוא היום האחרון שבו השלב יכול להתבצע. כדאי לשאול את הווטרינר על המרווחים בין השלבים שהאתר הרשמי דורש.';
+
+  @override
+  String get petPlanNothingToAdd => 'התאריכים האלה כבר בתזכורות שלך.';
+
+  @override
+  String get petPlanPickDate => 'בחרו תאריך נסיעה כדי לראות מתי כל שלב';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'לנסיעה אל $country';
+  }
+
+  @override
+  String get petPlanTitle => 'ספירה לאחור לנסיעה';
+
+  @override
+  String get petStepCertificate => 'תעודת בריאות ומסמכים';
+
+  @override
+  String get petStepChip => 'שבב';
+
+  @override
+  String get petStepRabies => 'חיסון נגד כלבת';
+
+  @override
+  String get petStepResidence => 'הגעה למדינה מאושרת';
+
+  @override
+  String get petStepTapeworm => 'טיפול נגד תולעת סרט';
+
+  @override
+  String get petStepTitre => 'בדיקת דם לכלבת';
+
+  @override
+  String get petTypeChecking => 'מחפש…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'התכוונת ל$name?';
+  }
+
+  @override
+  String get petTypeJunk => 'יש להשתמש באותיות בלבד, כמו ארנב או טרנטולה.';
+
+  @override
+  String get petTypeKeepAnyway => 'להשאיר';
+
+  @override
+  String get petTypeNotAnimal => 'זה לא נראה כמו סוג של בעל חיים.';
+
+  @override
+  String get petTypeOwnNote => 'נשמר כסוג משלך. כללי הנסיעה יפנו לאתר הרשמי.';
+
+  @override
+  String get planBenefitCalendar => 'קישור ללוח שנה עם אירועי \"לחדש בקרוב\" ונסיעות';
+
+  @override
+  String get planBenefitPetCare => 'תמונות חיות מחמד, תזכורות טיפול וספירה לאחור לנסיעה';
+
+  @override
+  String get savingsComing => 'ב-12 החודשים הקרובים';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'לתשומת לבך: $month הוא החודש היקר ביותר שלך ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'עלויות במטבעות ללא שער לא נכללו.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'כדאי להפריש כ-$amount בחודש לחידושים.';
+  }
+
+  @override
+  String get savingsSpent => 'שולם השנה';
+
+  @override
+  String get subcategoryPetCheckups => 'בדיקות וטרינריות';
+
+  @override
+  String get subcategoryPetTreatments => 'טיפולים נגד פרעושים, קרציות ותולעים';
+
+  @override
+  String get tourBusinessHistoryBody => 'ראו מי הוסיף, שינה או מחק רשומות משותפות, וייצאו זאת כ-PDF לביקורת.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'בדקו מה חיית מחמד צריכה לכל מדינה, ואז בחרו תאריך נסיעה לספירה לאחור שאפשר להוסיף לתזכורות.';
+
+  @override
+  String get tripEntryTitle => 'פרטי כניסה';
+
+  @override
   String get yoursTag => 'שלך';
 
   @override

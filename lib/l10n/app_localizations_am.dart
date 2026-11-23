@@ -8690,6 +8690,260 @@ class AppLocalizationsAm extends AppLocalizations {
   String get rulesReviewDropped => 'የቀረ (የሚዛመድ ዓረፍተ ነገር የለም)';
 
   @override
+  String get assistantStepHistory => 'የለውጥ ታሪክ በመፈተሽ ላይ';
+
+  @override
+  String get businessBenefitHistory => 'የተጋሩ መዝገቦች የለውጥ ታሪክ፣ ከPDF ማውጫ ጋር';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Calendar ለውጦችን ለማሳየት እስከ አንድ ቀን ሊወስድ ይችላል። Apple Calendar እና Outlook ብዙውን ጊዜ በጥቂት ሰዓታት ውስጥ ይዘምናሉ።';
+
+  @override
+  String get calendarOptionCategories => 'ምድቦች';
+
+  @override
+  String get calendarOptionHide => 'የመዝገብ ስሞችን ደብቅ';
+
+  @override
+  String get calendarOptionHideBody => 'ክስተቶች ከስሙ ይልቅ \"ሰነዱ ጊዜው ያልፋል\" ይላሉ';
+
+  @override
+  String get calendarOptionPeople => 'ሰዎች';
+
+  @override
+  String get calendarOptionRenew => '\"በቅርቡ አድስ\" ክስተቶች';
+
+  @override
+  String get calendarOptionRenewBody => 'በእያንዳንዱ መዝገብ የማስታወሻ ቀን ላይ ተጨማሪ ክስተት';
+
+  @override
+  String get calendarOptionTrips => 'ጉዞዎች';
+
+  @override
+  String get calendarOptionsTitle => 'በቀን መቁጠሪያዎ ውስጥ የሚገባው';
+
+  @override
+  String entryEmergency(String number) {
+    return 'የአደጋ ጊዜ ቁጥር: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'ለዚህ ጉዞ ዓለም አቀፍ የመንጃ ፈቃድ አልተቀመጠም';
+
+  @override
+  String get entryPermitNotNeeded => 'ለመንዳት ዓለም አቀፍ የመንጃ ፈቃድ አያስፈልግም';
+
+  @override
+  String get entryPermitRecommended => 'ለመንዳት ዓለም አቀፍ የመንጃ ፈቃድ ይመከራል';
+
+  @override
+  String get entryPermitRequired => 'አሽከርካሪዎች ዓለም አቀፍ የመንጃ ፈቃድ ያስፈልጋቸዋል';
+
+  @override
+  String get entryYellowFeverAll => 'የቢጫ ወባ ክትባት ሰርተፊኬት ያስፈልጋል';
+
+  @override
+  String get entryYellowFeverNo => 'የቢጫ ወባ ሰርተፊኬት አያስፈልግም';
+
+  @override
+  String get entryYellowFeverRisk => 'የቢጫ ወባ ስጋት ካለበት ሀገር ከመጡ የቢጫ ወባ ሰርተፊኬት ያስፈልጋል';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person $recordን አክሏል';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person $recordን ቀይሯል';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person $recordን ሰርዟል';
+  }
+
+  @override
+  String get historyEmpty => 'እስካሁን ምንም ለውጥ የለም። በተጋሩ መዝገቦች ላይ የሚደረጉ ለውጦች እዚህ ይታያሉ።';
+
+  @override
+  String get historyLoadMore => 'ተጨማሪ አሳይ';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'የተሰራው $date። የተዘረዘሩ ለውጦች: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'የተቀየረው';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record ለዘለቄታው ተወግዷል';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person $recordን መልሷል';
+  }
+
+  @override
+  String get historySubtitle => 'የተጋሩ መዝገቦችን ማን እንዳከለ፣ እንደቀየረ ወይም እንደሰረዘ';
+
+  @override
+  String get historyTitle => 'የለውጥ ታሪክ';
+
+  @override
+  String petCardMade(String date) {
+    return 'በVaultara የተሰራ $date';
+  }
+
+  @override
+  String get petCardShare => 'የቤት እንስሳ ካርድ አጋራ';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · የቤት እንስሳ ካርድ';
+  }
+
+  @override
+  String get petCareBody => 'በራሱ የሚደገም ማስታወሻ ያክሉ።';
+
+  @override
+  String get petCareCheckup => 'የእንስሳት ሐኪም ምርመራ';
+
+  @override
+  String get petCareFlea => 'የቁንጫ እና የመዥገር ሕክምና';
+
+  @override
+  String get petCareTitle => 'የእንክብካቤ ማስታወሻዎች';
+
+  @override
+  String get petCareWorming => 'የትል መድኃኒት';
+
+  @override
+  String get petPlanAdd => 'እነዚህን ቀኖች ወደ ማስታወሻዎቼ አክል';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'የተጨመሩ ማስታወሻዎች: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'ከመጓዝዎ በፊት';
+
+  @override
+  String petPlanBy(String date) {
+    return 'እስከ $date';
+  }
+
+  @override
+  String get petPlanDate => 'የጉዞ ቀን';
+
+  @override
+  String get petPlanLate => 'ለዚህ የጉዞ ቀን በጣም ዘግይቷል';
+
+  @override
+  String get petPlanNote => 'እያንዳንዱ ቀን እርምጃው ሊከናወን የሚችልበት የመጨረሻ ቀን ነው። በእርምጃዎች መካከል ይፋዊው ድረ-ገጽ ስለሚጠይቀው ልዩነት የእንስሳት ሐኪምዎን ይጠይቁ።';
+
+  @override
+  String get petPlanNothingToAdd => 'እነዚህ ቀኖች ቀድሞውኑ በማስታወሻዎችዎ ውስጥ አሉ።';
+
+  @override
+  String get petPlanPickDate => 'እያንዳንዱ እርምጃ መቼ እንደሚደርስ ለማየት የጉዞ ቀንዎን ይምረጡ';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'ወደ $country ለሚደረገው ጉዞ';
+  }
+
+  @override
+  String get petPlanTitle => 'ወደ ጉዞዎ የሚቀረው ቆጠራ';
+
+  @override
+  String get petStepCertificate => 'የጤና ሰርተፊኬት እና ሰነዶች';
+
+  @override
+  String get petStepChip => 'ማይክሮቺፕ';
+
+  @override
+  String get petStepRabies => 'የእብድ ውሻ ክትባት';
+
+  @override
+  String get petStepResidence => 'በተፈቀደ ሀገር ይድረሱ';
+
+  @override
+  String get petStepTapeworm => 'የኮሶ ትል ሕክምና';
+
+  @override
+  String get petStepTitre => 'የእብድ ውሻ የደም ምርመራ';
+
+  @override
+  String get petTypeChecking => 'በመፈለግ ላይ…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return '$name ማለትዎ ነው?';
+  }
+
+  @override
+  String get petTypeJunk => 'ፊደሎችን ብቻ ይጠቀሙ፣ ለምሳሌ ጥንቸል ወይም ታራንቱላ።';
+
+  @override
+  String get petTypeKeepAnyway => 'አቆየው';
+
+  @override
+  String get petTypeNotAnimal => 'ይህ የእንስሳ አይነት አይመስልም።';
+
+  @override
+  String get petTypeOwnNote => 'እንደ ራስዎ አይነት ተቀምጧል። የጉዞ ደንቦች ወደ ይፋዊው ድረ-ገጽ ይጠቁማሉ።';
+
+  @override
+  String get planBenefitCalendar => '\"በቅርቡ አድስ\" ክስተቶች እና ጉዞዎች ያሉት የቀን መቁጠሪያ ሊንክ';
+
+  @override
+  String get planBenefitPetCare => 'የቤት እንስሳ ፎቶዎች፣ የእንክብካቤ ማስታወሻዎች እና የጉዞ ቆጠራ';
+
+  @override
+  String get savingsComing => 'በ12 ወራት ውስጥ የሚመጣ';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'ማሳሰቢያ: $month በጣም ውድ ወርዎ ነው ($amount)።';
+  }
+
+  @override
+  String get savingsLeftOut => 'ምንዛሪ ተመን የሌላቸው ወጪዎች አልተካተቱም።';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'እድሳቶችዎን ለመሸፈን በወር ወደ $amount ያህል ያስቀምጡ።';
+  }
+
+  @override
+  String get savingsSpent => 'በዚህ ዓመት የተከፈለ';
+
+  @override
+  String get subcategoryPetCheckups => 'የእንስሳት ሐኪም ምርመራዎች';
+
+  @override
+  String get subcategoryPetTreatments => 'የቁንጫ፣ የመዥገር እና የትል ሕክምናዎች';
+
+  @override
+  String get tourBusinessHistoryBody => 'የተጋሩ መዝገቦችን ማን እንዳከለ፣ እንደቀየረ ወይም እንደሰረዘ ይመልከቱ፣ እና ለኦዲት በPDF ያውጡት።';
+
+  @override
+  String get tourPetsTravelPlanBody => 'የቤት እንስሳ ለማንኛውም ሀገር ምን እንደሚያስፈልገው ይመልከቱ፣ ከዚያ ወደ ማስታወሻዎችዎ ሊያክሉት ለሚችሉት ቆጠራ የጉዞ ቀንዎን ይምረጡ።';
+
+  @override
+  String get tripEntryTitle => 'የመግቢያ ዝርዝሮች';
+
+  @override
   String get yoursTag => 'የእርስዎ';
 
   @override

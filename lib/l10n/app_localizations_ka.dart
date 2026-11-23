@@ -8690,6 +8690,260 @@ class AppLocalizationsKa extends AppLocalizations {
   String get rulesReviewDropped => 'გამოტოვებულია (შესაბამისი წინადადება არ არის)';
 
   @override
+  String get assistantStepHistory => 'ცვლილებების ისტორიის შემოწმება';
+
+  @override
+  String get businessBenefitHistory => 'გაზიარებული ჩანაწერების ცვლილებების ისტორია, PDF ექსპორტით';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Calendar-ს ცვლილებების ჩვენებას შეიძლება ერთ დღემდე დასჭირდეს. Apple Calendar და Outlook ჩვეულებრივ რამდენიმე საათში ახლდება.';
+
+  @override
+  String get calendarOptionCategories => 'კატეგორიები';
+
+  @override
+  String get calendarOptionHide => 'ჩანაწერების სახელების დამალვა';
+
+  @override
+  String get calendarOptionHideBody => 'მოვლენებში სახელის ნაცვლად წერია „დოკუმენტს ვადა გასდის“';
+
+  @override
+  String get calendarOptionPeople => 'ადამიანები';
+
+  @override
+  String get calendarOptionRenew => '„მალე განაახლე“ მოვლენები';
+
+  @override
+  String get calendarOptionRenewBody => 'დამატებითი მოვლენა ყოველი ჩანაწერის შეხსენების დღეს';
+
+  @override
+  String get calendarOptionTrips => 'მოგზაურობები';
+
+  @override
+  String get calendarOptionsTitle => 'რა შედის თქვენს კალენდარში';
+
+  @override
+  String entryEmergency(String number) {
+    return 'გადაუდებელი ნომერი: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'ამ მოგზაურობისთვის საერთაშორისო მართვის მოწმობა შენახული არ არის';
+
+  @override
+  String get entryPermitNotNeeded => 'ტარებისთვის საერთაშორისო მართვის მოწმობა არ არის საჭირო';
+
+  @override
+  String get entryPermitRecommended => 'ტარებისთვის რეკომენდებულია საერთაშორისო მართვის მოწმობა';
+
+  @override
+  String get entryPermitRequired => 'მძღოლებს სჭირდებათ საერთაშორისო მართვის მოწმობა';
+
+  @override
+  String get entryYellowFeverAll => 'საჭიროა ყვითელი ცხელების აცრის სერტიფიკატი';
+
+  @override
+  String get entryYellowFeverNo => 'ყვითელი ცხელების სერტიფიკატი არ არის საჭირო';
+
+  @override
+  String get entryYellowFeverRisk => 'ყვითელი ცხელების სერტიფიკატი საჭიროა, თუ ყვითელი ცხელების რისკის მქონე ქვეყნიდან ჩამოდიხართ';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person-მა დაამატა $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person-მა შეცვალა $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person-მა წაშალა $record';
+  }
+
+  @override
+  String get historyEmpty => 'ჯერ ცვლილებები არ არის. გაზიარებული ჩანაწერების ცვლილებები აქ გამოჩნდება.';
+
+  @override
+  String get historyLoadMore => 'მეტის ჩვენება';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'შეიქმნა $date. ცვლილებები: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'რა შეიცვალა';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record სამუდამოდ წაიშალა';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person-მა აღადგინა $record';
+  }
+
+  @override
+  String get historySubtitle => 'ვინ დაამატა, შეცვალა ან წაშალა გაზიარებული ჩანაწერები';
+
+  @override
+  String get historyTitle => 'ცვლილებების ისტორია';
+
+  @override
+  String petCardMade(String date) {
+    return 'შეიქმნა Vaultara-ით $date';
+  }
+
+  @override
+  String get petCardShare => 'ცხოველის ბარათის გაზიარება';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · ცხოველის ბარათი';
+  }
+
+  @override
+  String get petCareBody => 'დაამატეთ შეხსენება, რომელიც თავად მეორდება.';
+
+  @override
+  String get petCareCheckup => 'ვეტერინარული შემოწმება';
+
+  @override
+  String get petCareFlea => 'რწყილისა და ტკიპის საწინააღმდეგო მკურნალობა';
+
+  @override
+  String get petCareTitle => 'მოვლის შეხსენებები';
+
+  @override
+  String get petCareWorming => 'ჭიების საწინააღმდეგო';
+
+  @override
+  String get petPlanAdd => 'ამ თარიღების დამატება ჩემს შეხსენებებში';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'დამატებული შეხსენებები: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'მოგზაურობამდე';
+
+  @override
+  String petPlanBy(String date) {
+    return '$date-მდე';
+  }
+
+  @override
+  String get petPlanDate => 'მოგზაურობის თარიღი';
+
+  @override
+  String get petPlanLate => 'ამ თარიღისთვის უკვე გვიანია';
+
+  @override
+  String get petPlanNote => 'თითოეული თარიღი ნაბიჯის ბოლო შესაძლო დღეა. ნაბიჯებს შორის ოფიციალური საიტის მიერ მოთხოვნილი შუალედების შესახებ ჰკითხეთ ვეტერინარს.';
+
+  @override
+  String get petPlanNothingToAdd => 'ეს თარიღები უკვე თქვენს შეხსენებებშია.';
+
+  @override
+  String get petPlanPickDate => 'აირჩიეთ მოგზაურობის თარიღი, რომ ნახოთ, როდის არის თითოეული ნაბიჯი';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'მოგზაურობისთვის: $country';
+  }
+
+  @override
+  String get petPlanTitle => 'უკუთვლა მოგზაურობამდე';
+
+  @override
+  String get petStepCertificate => 'ჯანმრთელობის სერტიფიკატი და საბუთები';
+
+  @override
+  String get petStepChip => 'მიკროჩიპი';
+
+  @override
+  String get petStepRabies => 'ცოფის ვაქცინა';
+
+  @override
+  String get petStepResidence => 'დამტკიცებულ ქვეყანაში ჩასვლა';
+
+  @override
+  String get petStepTapeworm => 'სოლიტერის საწინააღმდეგო მკურნალობა';
+
+  @override
+  String get petStepTitre => 'ცოფის სისხლის ანალიზი';
+
+  @override
+  String get petTypeChecking => 'ვეძებთ…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'გულისხმობდით $name-ს?';
+  }
+
+  @override
+  String get petTypeJunk => 'გამოიყენეთ მხოლოდ ასოები, მაგალითად კურდღელი ან ტარანტული.';
+
+  @override
+  String get petTypeKeepAnyway => 'დატოვება';
+
+  @override
+  String get petTypeNotAnimal => 'ეს ცხოველის სახეობას არ ჰგავს.';
+
+  @override
+  String get petTypeOwnNote => 'შენახულია თქვენს სახეობად. მოგზაურობის წესები ოფიციალურ საიტზე მიგითითებთ.';
+
+  @override
+  String get planBenefitCalendar => 'კალენდრის ბმული „მალე განაახლე“ მოვლენებითა და მოგზაურობებით';
+
+  @override
+  String get planBenefitPetCare => 'ცხოველების ფოტოები, მოვლის შეხსენებები და მოგზაურობის უკუთვლა';
+
+  @override
+  String get savingsComing => 'მომდევნო 12 თვეში';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'ყურადღება: $month თქვენი ყველაზე ძვირი თვეა ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'კურსის არმქონე ვალუტებში ხარჯები არ ითვლება.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'განახლებებისთვის თვეში დაახლოებით $amount გადადეთ.';
+  }
+
+  @override
+  String get savingsSpent => 'გადახდილია წელს';
+
+  @override
+  String get subcategoryPetCheckups => 'ვეტერინარული შემოწმებები';
+
+  @override
+  String get subcategoryPetTreatments => 'რწყილის, ტკიპისა და ჭიების საწინააღმდეგო მკურნალობა';
+
+  @override
+  String get tourBusinessHistoryBody => 'ნახეთ, ვინ დაამატა, შეცვალა ან წაშალა გაზიარებული ჩანაწერები და ექსპორტით გაიტანეთ PDF-ად აუდიტისთვის.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'შეამოწმეთ, რა სჭირდება ცხოველს ნებისმიერი ქვეყნისთვის, შემდეგ აირჩიეთ მოგზაურობის თარიღი უკუთვლისთვის, რომელსაც შეხსენებებში დაამატებთ.';
+
+  @override
+  String get tripEntryTitle => 'შესვლის დეტალები';
+
+  @override
   String get yoursTag => 'თქვენი';
 
   @override

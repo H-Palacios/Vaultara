@@ -8756,6 +8756,260 @@ class AppLocalizationsLv extends AppLocalizations {
   String get rulesReviewDropped => 'Izlaists (nav atbilstoša teikuma)';
 
   @override
+  String get assistantStepHistory => 'Pārbauda izmaiņu vēsturi';
+
+  @override
+  String get businessBenefitHistory => 'Kopīgoto ierakstu izmaiņu vēsture ar PDF eksportu';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google kalendāram izmaiņu parādīšana var aizņemt līdz dienai. Apple kalendārs un Outlook parasti atjaunojas dažu stundu laikā.';
+
+  @override
+  String get calendarOptionCategories => 'Kategorijas';
+
+  @override
+  String get calendarOptionHide => 'Slēpt ierakstu nosaukumus';
+
+  @override
+  String get calendarOptionHideBody => 'Notikumos nosaukuma vietā rakstīts „Beidzas dokumenta derīgums”';
+
+  @override
+  String get calendarOptionPeople => 'Cilvēki';
+
+  @override
+  String get calendarOptionRenew => 'Notikumi „Drīz atjaunot”';
+
+  @override
+  String get calendarOptionRenewBody => 'Papildu notikums katra ieraksta atgādinājuma dienā';
+
+  @override
+  String get calendarOptionTrips => 'Ceļojumi';
+
+  @override
+  String get calendarOptionsTitle => 'Kas nonāk jūsu kalendārā';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Ārkārtas numurs: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Šim ceļojumam nav saglabāta starptautiskā vadītāja apliecība';
+
+  @override
+  String get entryPermitNotNeeded => 'Braukšanai nav vajadzīga starptautiskā vadītāja apliecība';
+
+  @override
+  String get entryPermitRecommended => 'Braukšanai ieteicama starptautiskā vadītāja apliecība';
+
+  @override
+  String get entryPermitRequired => 'Vadītājiem vajadzīga starptautiskā vadītāja apliecība';
+
+  @override
+  String get entryYellowFeverAll => 'Vajadzīgs vakcinācijas sertifikāts pret dzelteno drudzi';
+
+  @override
+  String get entryYellowFeverNo => 'Dzeltenā drudža sertifikāts nav vajadzīgs';
+
+  @override
+  String get entryYellowFeverRisk => 'Dzeltenā drudža sertifikāts vajadzīgs, ja ierodaties no valsts ar dzeltenā drudža risku';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person pievienoja $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person mainīja $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person izdzēsa $record';
+  }
+
+  @override
+  String get historyEmpty => 'Vēl nav izmaiņu. Kopīgoto ierakstu izmaiņas tiks rādītas šeit.';
+
+  @override
+  String get historyLoadMore => 'Rādīt vairāk';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Izveidots $date. Izmaiņas: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Kas mainījās';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record noņemts neatgriezeniski';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person atjaunoja $record';
+  }
+
+  @override
+  String get historySubtitle => 'Kas pievienoja, mainīja vai izdzēsa kopīgotos ierakstus';
+
+  @override
+  String get historyTitle => 'Izmaiņu vēsture';
+
+  @override
+  String petCardMade(String date) {
+    return 'Izveidots ar Vaultara $date';
+  }
+
+  @override
+  String get petCardShare => 'Kopīgot mājdzīvnieka karti';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Mājdzīvnieka karte';
+  }
+
+  @override
+  String get petCareBody => 'Pievienojiet atgādinājumu, kas atkārtojas pats.';
+
+  @override
+  String get petCareCheckup => 'Veterinārā pārbaude';
+
+  @override
+  String get petCareFlea => 'Ārstēšana pret blusām un ērcēm';
+
+  @override
+  String get petCareTitle => 'Kopšanas atgādinājumi';
+
+  @override
+  String get petCareWorming => 'Attārpošana';
+
+  @override
+  String get petPlanAdd => 'Pievienot šos datumus maniem atgādinājumiem';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Pievienoti atgādinājumi: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Pirms ceļojuma';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Līdz $date';
+  }
+
+  @override
+  String get petPlanDate => 'Ceļojuma datums';
+
+  @override
+  String get petPlanLate => 'Šim ceļojuma datumam ir par vēlu';
+
+  @override
+  String get petPlanNote => 'Katrs datums ir pēdējā diena, kad soli var veikt. Par oficiālās vietnes prasītajiem intervāliem starp soļiem jautājiet veterinārārstam.';
+
+  @override
+  String get petPlanNothingToAdd => 'Šie datumi jau ir jūsu atgādinājumos.';
+
+  @override
+  String get petPlanPickDate => 'Izvēlieties ceļojuma datumu, lai redzētu, kad katrs solis';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Ceļojumam uz $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Atpakaļskaitīšana līdz ceļojumam';
+
+  @override
+  String get petStepCertificate => 'Veselības sertifikāts un dokumenti';
+
+  @override
+  String get petStepChip => 'Mikročips';
+
+  @override
+  String get petStepRabies => 'Vakcīna pret trakumsērgu';
+
+  @override
+  String get petStepResidence => 'Ierasties apstiprinātā valstī';
+
+  @override
+  String get petStepTapeworm => 'Ārstēšana pret lenteni';
+
+  @override
+  String get petStepTitre => 'Trakumsērgas asins analīze';
+
+  @override
+  String get petTypeChecking => 'Meklē…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Vai domājāt $name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Izmantojiet tikai burtus, piemēram, Trusis vai Tarantuls.';
+
+  @override
+  String get petTypeKeepAnyway => 'Paturēt';
+
+  @override
+  String get petTypeNotAnimal => 'Tas neizskatās pēc dzīvnieku sugas.';
+
+  @override
+  String get petTypeOwnNote => 'Saglabāts kā jūsu suga. Ceļošanas noteikumi norādīs uz oficiālo vietni.';
+
+  @override
+  String get planBenefitCalendar => 'Kalendāra saite ar notikumiem „Drīz atjaunot” un ceļojumiem';
+
+  @override
+  String get planBenefitPetCare => 'Mājdzīvnieku foto, kopšanas atgādinājumi un ceļojuma atpakaļskaitīšana';
+
+  @override
+  String get savingsComing => 'Nākamajos 12 mēnešos';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Uzmanību: $month ir jūsu dārgākais mēnesis ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Izmaksas valūtās bez kursa nav iekļautas.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Atlieciet apmēram $amount mēnesī atjaunošanai.';
+  }
+
+  @override
+  String get savingsSpent => 'Samaksāts šogad';
+
+  @override
+  String get subcategoryPetCheckups => 'Veterinārās pārbaudes';
+
+  @override
+  String get subcategoryPetTreatments => 'Ārstēšana pret blusām, ērcēm un tārpiem';
+
+  @override
+  String get tourBusinessHistoryBody => 'Skatiet, kas pievienoja, mainīja vai izdzēsa kopīgotos ierakstus, un eksportējiet to PDF formātā auditam.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Pārbaudiet, kas mājdzīvniekam vajadzīgs jebkurai valstij, un izvēlieties ceļojuma datumu atpakaļskaitīšanai, ko varat pievienot atgādinājumiem.';
+
+  @override
+  String get tripEntryTitle => 'Ieceļošanas informācija';
+
+  @override
   String get yoursTag => 'Jūsu';
 
   @override

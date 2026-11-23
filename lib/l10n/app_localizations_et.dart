@@ -8694,6 +8694,260 @@ class AppLocalizationsEt extends AppLocalizations {
   String get rulesReviewDropped => 'Välja jäetud (sobivat lauset pole)';
 
   @override
+  String get assistantStepHistory => 'Kontrollin muudatuste ajalugu';
+
+  @override
+  String get businessBenefitHistory => 'Jagatud kirjete muudatuste ajalugu koos PDF-ekspordiga';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google\'i kalendril võib muudatuste näitamine võtta kuni päeva. Apple\'i kalender ja Outlook uuenevad tavaliselt mõne tunniga.';
+
+  @override
+  String get calendarOptionCategories => 'Kategooriad';
+
+  @override
+  String get calendarOptionHide => 'Peida kirjete nimed';
+
+  @override
+  String get calendarOptionHideBody => 'Sündmustes on nime asemel „Dokument aegub“';
+
+  @override
+  String get calendarOptionPeople => 'Inimesed';
+
+  @override
+  String get calendarOptionRenew => '„Uuenda varsti“ sündmused';
+
+  @override
+  String get calendarOptionRenewBody => 'Lisasündmus iga kirje meeldetuletuse päeval';
+
+  @override
+  String get calendarOptionTrips => 'Reisid';
+
+  @override
+  String get calendarOptionsTitle => 'Mis su kalendrisse läheb';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Hädaabinumber: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Selle reisi jaoks pole rahvusvahelist juhiluba salvestatud';
+
+  @override
+  String get entryPermitNotNeeded => 'Sõitmiseks pole rahvusvahelist juhiluba vaja';
+
+  @override
+  String get entryPermitRecommended => 'Sõitmiseks soovitatakse rahvusvahelist juhiluba';
+
+  @override
+  String get entryPermitRequired => 'Juhid vajavad rahvusvahelist juhiluba';
+
+  @override
+  String get entryYellowFeverAll => 'Vaja on kollapalaviku vaktsineerimise tõendit';
+
+  @override
+  String get entryYellowFeverNo => 'Kollapalaviku tõendit pole vaja';
+
+  @override
+  String get entryYellowFeverRisk => 'Kollapalaviku tõend on vajalik, kui saabud kollapalaviku riskiga riigist';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person lisas kirje $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person muutis kirjet $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person kustutas kirje $record';
+  }
+
+  @override
+  String get historyEmpty => 'Muudatusi veel pole. Jagatud kirjete muudatused ilmuvad siia.';
+
+  @override
+  String get historyLoadMore => 'Näita rohkem';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Koostatud $date. Muudatusi: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Mis muutus';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record eemaldati jäädavalt';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person taastas kirje $record';
+  }
+
+  @override
+  String get historySubtitle => 'Kes lisas, muutis või kustutas jagatud kirjeid';
+
+  @override
+  String get historyTitle => 'Muudatuste ajalugu';
+
+  @override
+  String petCardMade(String date) {
+    return 'Koostatud Vaultaraga $date';
+  }
+
+  @override
+  String get petCardShare => 'Jaga lemmiklooma kaarti';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Lemmiklooma kaart';
+  }
+
+  @override
+  String get petCareBody => 'Lisa meeldetuletus, mis kordub ise.';
+
+  @override
+  String get petCareCheckup => 'Veterinaarne kontroll';
+
+  @override
+  String get petCareFlea => 'Kirbu- ja puugitõrje';
+
+  @override
+  String get petCareTitle => 'Hoolduse meeldetuletused';
+
+  @override
+  String get petCareWorming => 'Ussirohi';
+
+  @override
+  String get petPlanAdd => 'Lisa need kuupäevad minu meeldetuletustesse';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Lisatud meeldetuletusi: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Enne reisi';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Hiljemalt $date';
+  }
+
+  @override
+  String get petPlanDate => 'Reisi kuupäev';
+
+  @override
+  String get petPlanLate => 'Selle reisi kuupäeva jaoks liiga hilja';
+
+  @override
+  String get petPlanNote => 'Iga kuupäev on viimane päev, mil samm saab toimuda. Küsi veterinaarilt sammude vaheliste vahede kohta, mida ametlik sait nõuab.';
+
+  @override
+  String get petPlanNothingToAdd => 'Need kuupäevad on juba sinu meeldetuletustes.';
+
+  @override
+  String get petPlanPickDate => 'Vali reisi kuupäev, et näha, millal iga samm on';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Reisiks riiki $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Loendus reisini';
+
+  @override
+  String get petStepCertificate => 'Tervisetõend ja paberid';
+
+  @override
+  String get petStepChip => 'Mikrokiip';
+
+  @override
+  String get petStepRabies => 'Marutaudivaktsiin';
+
+  @override
+  String get petStepResidence => 'Saabu heakskiidetud riiki';
+
+  @override
+  String get petStepTapeworm => 'Paeltoukrohi';
+
+  @override
+  String get petStepTitre => 'Marutaudi vereanalüüs';
+
+  @override
+  String get petTypeChecking => 'Otsin…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Kas mõtlesid $name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Kasuta ainult tähti, näiteks Küülik või Tarantel.';
+
+  @override
+  String get petTypeKeepAnyway => 'Jäta alles';
+
+  @override
+  String get petTypeNotAnimal => 'See ei paista olevat loomaliik.';
+
+  @override
+  String get petTypeOwnNote => 'Salvestatud sinu oma liigina. Reisireeglid viitavad ametlikule saidile.';
+
+  @override
+  String get planBenefitCalendar => 'Kalendrilink „Uuenda varsti“ sündmuste ja reisidega';
+
+  @override
+  String get planBenefitPetCare => 'Lemmikloomade fotod, hoolduse meeldetuletused ja reisi loendus';
+
+  @override
+  String get savingsComing => 'Järgmise 12 kuu jooksul';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Tähelepanu: $month on sinu kalleim kuu ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Kulud valuutades, millel pole kurssi, on välja jäetud.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Pane uuendusteks kõrvale umbes $amount kuus.';
+  }
+
+  @override
+  String get savingsSpent => 'Sel aastal makstud';
+
+  @override
+  String get subcategoryPetCheckups => 'Veterinaarsed kontrollid';
+
+  @override
+  String get subcategoryPetTreatments => 'Kirbu-, puugi- ja ussitõrje';
+
+  @override
+  String get tourBusinessHistoryBody => 'Vaata, kes lisas, muutis või kustutas jagatud kirjeid, ja ekspordi see auditi jaoks PDF-ina.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Vaata, mida lemmikloom mis tahes riigi jaoks vajab, ja vali reisi kuupäev loenduseks, mille saad lisada meeldetuletustesse.';
+
+  @override
+  String get tripEntryTitle => 'Sisenemise andmed';
+
+  @override
   String get yoursTag => 'Sinu';
 
   @override

@@ -8755,6 +8755,260 @@ class AppLocalizationsHr extends AppLocalizations {
   String get rulesReviewDropped => 'Izostavljeno (nema odgovarajuće rečenice)';
 
   @override
+  String get assistantStepHistory => 'Provjera povijesti promjena';
+
+  @override
+  String get businessBenefitHistory => 'Povijest promjena dijeljenih zapisa, s izvozom u PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Kalendaru može trebati do jednog dana da prikaže promjene. Apple Kalendar i Outlook obično se ažuriraju za nekoliko sati.';
+
+  @override
+  String get calendarOptionCategories => 'Kategorije';
+
+  @override
+  String get calendarOptionHide => 'Sakrij nazive zapisa';
+
+  @override
+  String get calendarOptionHideBody => 'Događaji kažu „Dokument istječe” umjesto naziva';
+
+  @override
+  String get calendarOptionPeople => 'Osobe';
+
+  @override
+  String get calendarOptionRenew => 'Događaji „Uskoro obnovi”';
+
+  @override
+  String get calendarOptionRenewBody => 'Dodatni događaj na dan podsjetnika svakog zapisa';
+
+  @override
+  String get calendarOptionTrips => 'Putovanja';
+
+  @override
+  String get calendarOptionsTitle => 'Što ide u vaš kalendar';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Broj za hitne slučajeve: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Za ovo putovanje nije spremljena međunarodna vozačka dozvola';
+
+  @override
+  String get entryPermitNotNeeded => 'Za vožnju nije potrebna međunarodna vozačka dozvola';
+
+  @override
+  String get entryPermitRecommended => 'Za vožnju se preporučuje međunarodna vozačka dozvola';
+
+  @override
+  String get entryPermitRequired => 'Vozačima je potrebna međunarodna vozačka dozvola';
+
+  @override
+  String get entryYellowFeverAll => 'Potrebna je potvrda o cijepljenju protiv žute groznice';
+
+  @override
+  String get entryYellowFeverNo => 'Potvrda o žutoj groznici nije potrebna';
+
+  @override
+  String get entryYellowFeverRisk => 'Potvrda o žutoj groznici potrebna je ako dolazite iz zemlje s rizikom od žute groznice';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person je dodao/la $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person je promijenio/la $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person je izbrisao/la $record';
+  }
+
+  @override
+  String get historyEmpty => 'Još nema promjena. Promjene dijeljenih zapisa prikazivat će se ovdje.';
+
+  @override
+  String get historyLoadMore => 'Prikaži više';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Izrađeno $date. Promjena: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Što se promijenilo';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record je trajno uklonjen';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person je vratio/la $record';
+  }
+
+  @override
+  String get historySubtitle => 'Tko je dodao, promijenio ili izbrisao dijeljene zapise';
+
+  @override
+  String get historyTitle => 'Povijest promjena';
+
+  @override
+  String petCardMade(String date) {
+    return 'Izrađeno u Vaultari $date';
+  }
+
+  @override
+  String get petCardShare => 'Podijeli karticu ljubimca';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Kartica ljubimca';
+  }
+
+  @override
+  String get petCareBody => 'Dodajte podsjetnik koji se sam ponavlja.';
+
+  @override
+  String get petCareCheckup => 'Veterinarski pregled';
+
+  @override
+  String get petCareFlea => 'Tretman protiv buha i krpelja';
+
+  @override
+  String get petCareTitle => 'Podsjetnici za njegu';
+
+  @override
+  String get petCareWorming => 'Dehelmintizacija';
+
+  @override
+  String get petPlanAdd => 'Dodaj ove datume u moje podsjetnike';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Dodano podsjetnika: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Prije putovanja';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Do $date';
+  }
+
+  @override
+  String get petPlanDate => 'Datum putovanja';
+
+  @override
+  String get petPlanLate => 'Prekasno za ovaj datum putovanja';
+
+  @override
+  String get petPlanNote => 'Svaki datum je posljednji dan kada se korak može obaviti. Pitajte veterinara o razmacima između koraka koje traži službena stranica.';
+
+  @override
+  String get petPlanNothingToAdd => 'Ovi datumi već su u vašim podsjetnicima.';
+
+  @override
+  String get petPlanPickDate => 'Odaberite datum putovanja da vidite kada je koji korak';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Za putovanje u $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Odbrojavanje do putovanja';
+
+  @override
+  String get petStepCertificate => 'Zdravstveni certifikat i papiri';
+
+  @override
+  String get petStepChip => 'Mikročip';
+
+  @override
+  String get petStepRabies => 'Cjepivo protiv bjesnoće';
+
+  @override
+  String get petStepResidence => 'Dolazak u odobrenu zemlju';
+
+  @override
+  String get petStepTapeworm => 'Tretman protiv trakavice';
+
+  @override
+  String get petStepTitre => 'Krvna pretraga na bjesnoću';
+
+  @override
+  String get petTypeChecking => 'Traženje…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Jeste li mislili $name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Koristite samo slova, npr. Zec ili Tarantula.';
+
+  @override
+  String get petTypeKeepAnyway => 'Zadrži';
+
+  @override
+  String get petTypeNotAnimal => 'Ovo ne izgleda kao vrsta životinje.';
+
+  @override
+  String get petTypeOwnNote => 'Spremljeno kao vaša vrsta. Pravila putovanja upućivat će na službenu stranicu.';
+
+  @override
+  String get planBenefitCalendar => 'Poveznica kalendara s događajima „Uskoro obnovi” i putovanjima';
+
+  @override
+  String get planBenefitPetCare => 'Fotografije ljubimaca, podsjetnici za njegu i odbrojavanje do putovanja';
+
+  @override
+  String get savingsComing => 'U sljedećih 12 mjeseci';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Pozor: $month je vaš najskuplji mjesec ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Troškovi u valutama bez tečaja nisu uračunati.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Odvajajte oko $amount mjesečno za obnove.';
+  }
+
+  @override
+  String get savingsSpent => 'Plaćeno ove godine';
+
+  @override
+  String get subcategoryPetCheckups => 'Veterinarski pregledi';
+
+  @override
+  String get subcategoryPetTreatments => 'Tretmani protiv buha, krpelja i glista';
+
+  @override
+  String get tourBusinessHistoryBody => 'Pogledajte tko je dodao, promijenio ili izbrisao dijeljene zapise i izvezite to u PDF za reviziju.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Provjerite što ljubimcu treba za bilo koju zemlju, a zatim odaberite datum putovanja za odbrojavanje koje možete dodati u podsjetnike.';
+
+  @override
+  String get tripEntryTitle => 'Podaci o ulasku';
+
+  @override
   String get yoursTag => 'Vaše';
 
   @override

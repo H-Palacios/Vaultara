@@ -8690,6 +8690,260 @@ class AppLocalizationsUr extends AppLocalizations {
   String get rulesReviewDropped => 'چھوڑ دیا گیا (کوئی مماثل جملہ نہیں)';
 
   @override
+  String get assistantStepHistory => 'تبدیلیوں کی تاریخ چیک کی جا رہی ہے';
+
+  @override
+  String get businessBenefitHistory => 'مشترکہ ریکارڈز کی تبدیلیوں کی تاریخ، PDF ایکسپورٹ کے ساتھ';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Calendar کو تبدیلیاں دکھانے میں ایک دن تک لگ سکتا ہے۔ Apple Calendar اور Outlook عموماً چند گھنٹوں میں اپ ڈیٹ ہو جاتے ہیں۔';
+
+  @override
+  String get calendarOptionCategories => 'زمرے';
+
+  @override
+  String get calendarOptionHide => 'ریکارڈز کے نام چھپائیں';
+
+  @override
+  String get calendarOptionHideBody => 'ایونٹس میں نام کی بجائے \"دستاویز کی میعاد ختم ہو رہی ہے\" لکھا ہوگا';
+
+  @override
+  String get calendarOptionPeople => 'لوگ';
+
+  @override
+  String get calendarOptionRenew => '\"جلد تجدید کریں\" ایونٹس';
+
+  @override
+  String get calendarOptionRenewBody => 'ہر ریکارڈ کی یاد دہانی کے دن ایک اضافی ایونٹ';
+
+  @override
+  String get calendarOptionTrips => 'سفر';
+
+  @override
+  String get calendarOptionsTitle => 'آپ کے کیلنڈر میں کیا جاتا ہے';
+
+  @override
+  String entryEmergency(String number) {
+    return 'ہنگامی نمبر: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'اس سفر کے لیے کوئی بین الاقوامی ڈرائیونگ پرمٹ محفوظ نہیں';
+
+  @override
+  String get entryPermitNotNeeded => 'گاڑی چلانے کے لیے بین الاقوامی ڈرائیونگ پرمٹ کی ضرورت نہیں';
+
+  @override
+  String get entryPermitRecommended => 'گاڑی چلانے کے لیے بین الاقوامی ڈرائیونگ پرمٹ کی سفارش کی جاتی ہے';
+
+  @override
+  String get entryPermitRequired => 'ڈرائیوروں کو بین الاقوامی ڈرائیونگ پرمٹ درکار ہے';
+
+  @override
+  String get entryYellowFeverAll => 'زرد بخار کی ویکسینیشن کا سرٹیفکیٹ درکار ہے';
+
+  @override
+  String get entryYellowFeverNo => 'زرد بخار کا سرٹیفکیٹ درکار نہیں';
+
+  @override
+  String get entryYellowFeverRisk => 'اگر آپ زرد بخار کے خطرے والے ملک سے آ رہے ہیں تو زرد بخار کا سرٹیفکیٹ درکار ہے';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person نے $record شامل کیا';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person نے $record تبدیل کیا';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person نے $record حذف کیا';
+  }
+
+  @override
+  String get historyEmpty => 'ابھی کوئی تبدیلی نہیں۔ مشترکہ ریکارڈز کی تبدیلیاں یہاں نظر آئیں گی۔';
+
+  @override
+  String get historyLoadMore => 'مزید دکھائیں';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return '$date کو بنایا گیا۔ تبدیلیاں: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'کیا بدلا';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record مستقل طور پر ہٹا دیا گیا';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person نے $record بحال کیا';
+  }
+
+  @override
+  String get historySubtitle => 'مشترکہ ریکارڈز کس نے شامل، تبدیل یا حذف کیے';
+
+  @override
+  String get historyTitle => 'تبدیلیوں کی تاریخ';
+
+  @override
+  String petCardMade(String date) {
+    return '$date کو Vaultara کے ساتھ بنایا گیا';
+  }
+
+  @override
+  String get petCardShare => 'پالتو جانور کا کارڈ شیئر کریں';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · پالتو جانور کا کارڈ';
+  }
+
+  @override
+  String get petCareBody => 'ایسی یاد دہانی شامل کریں جو خود دہرائے۔';
+
+  @override
+  String get petCareCheckup => 'ویٹرنری معائنہ';
+
+  @override
+  String get petCareFlea => 'پسو اور چچڑی کا علاج';
+
+  @override
+  String get petCareTitle => 'دیکھ بھال کی یاد دہانیاں';
+
+  @override
+  String get petCareWorming => 'پیٹ کے کیڑوں کی دوا';
+
+  @override
+  String get petPlanAdd => 'یہ تاریخیں میری یاد دہانیوں میں شامل کریں';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'شامل کی گئی یاد دہانیاں: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'سفر سے پہلے';
+
+  @override
+  String petPlanBy(String date) {
+    return '$date تک';
+  }
+
+  @override
+  String get petPlanDate => 'سفر کی تاریخ';
+
+  @override
+  String get petPlanLate => 'اس سفر کی تاریخ کے لیے بہت دیر ہو چکی';
+
+  @override
+  String get petPlanNote => 'ہر تاریخ وہ آخری دن ہے جب قدم ہو سکتا ہے۔ قدموں کے درمیان سرکاری سائٹ کے مطلوبہ وقفوں کے بارے میں اپنے ویٹرنری ڈاکٹر سے پوچھیں۔';
+
+  @override
+  String get petPlanNothingToAdd => 'یہ تاریخیں پہلے سے آپ کی یاد دہانیوں میں ہیں۔';
+
+  @override
+  String get petPlanPickDate => 'ہر قدم کب ہے دیکھنے کے لیے سفر کی تاریخ منتخب کریں';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return '$country کے سفر کے لیے';
+  }
+
+  @override
+  String get petPlanTitle => 'سفر تک الٹی گنتی';
+
+  @override
+  String get petStepCertificate => 'صحت کا سرٹیفکیٹ اور کاغذات';
+
+  @override
+  String get petStepChip => 'مائیکروچپ';
+
+  @override
+  String get petStepRabies => 'ریبیز ویکسین';
+
+  @override
+  String get petStepResidence => 'منظور شدہ ملک پہنچیں';
+
+  @override
+  String get petStepTapeworm => 'فیتہ کیڑے کا علاج';
+
+  @override
+  String get petStepTitre => 'ریبیز خون کا ٹیسٹ';
+
+  @override
+  String get petTypeChecking => 'تلاش ہو رہی ہے…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'کیا آپ کا مطلب $name تھا؟';
+  }
+
+  @override
+  String get petTypeJunk => 'صرف حروف استعمال کریں، جیسے خرگوش یا ٹیرانٹولا۔';
+
+  @override
+  String get petTypeKeepAnyway => 'رکھیں';
+
+  @override
+  String get petTypeNotAnimal => 'یہ جانور کی قسم نہیں لگتی۔';
+
+  @override
+  String get petTypeOwnNote => 'آپ کی اپنی قسم کے طور پر محفوظ کیا گیا۔ سفری قواعد سرکاری سائٹ دکھائیں گے۔';
+
+  @override
+  String get planBenefitCalendar => '\"جلد تجدید کریں\" ایونٹس اور سفر کے ساتھ کیلنڈر لنک';
+
+  @override
+  String get planBenefitPetCare => 'پالتو جانوروں کی تصاویر، دیکھ بھال کی یاد دہانیاں اور سفر کی الٹی گنتی';
+
+  @override
+  String get savingsComing => 'اگلے 12 مہینوں میں';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'توجہ: $month آپ کا سب سے مہنگا مہینہ ہے ($amount)۔';
+  }
+
+  @override
+  String get savingsLeftOut => 'بغیر شرح والی کرنسیوں کے اخراجات شامل نہیں کیے گئے۔';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'تجدیدات کے لیے ہر ماہ تقریباً $amount الگ رکھیں۔';
+  }
+
+  @override
+  String get savingsSpent => 'اس سال ادا کیا';
+
+  @override
+  String get subcategoryPetCheckups => 'ویٹرنری معائنے';
+
+  @override
+  String get subcategoryPetTreatments => 'پسو، چچڑی اور کیڑوں کا علاج';
+
+  @override
+  String get tourBusinessHistoryBody => 'دیکھیں کہ مشترکہ ریکارڈز کس نے شامل، تبدیل یا حذف کیے، اور آڈٹ کے لیے PDF کے طور پر ایکسپورٹ کریں۔';
+
+  @override
+  String get tourPetsTravelPlanBody => 'کسی بھی ملک کے لیے پالتو جانور کو کیا چاہیے چیک کریں، پھر یاد دہانیوں میں شامل کرنے کے قابل الٹی گنتی کے لیے سفر کی تاریخ منتخب کریں۔';
+
+  @override
+  String get tripEntryTitle => 'داخلے کی تفصیلات';
+
+  @override
   String get yoursTag => 'آپ کا';
 
   @override

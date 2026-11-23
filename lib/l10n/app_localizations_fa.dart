@@ -8690,6 +8690,260 @@ class AppLocalizationsFa extends AppLocalizations {
   String get rulesReviewDropped => 'کنار گذاشته شد (جمله منطبقی نیست)';
 
   @override
+  String get assistantStepHistory => 'در حال بررسی تاریخچه تغییرات';
+
+  @override
+  String get businessBenefitHistory => 'تاریخچه تغییرات سوابق مشترک، با خروجی PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'تقویم Google ممکن است تا یک روز طول بکشد تا تغییرات را نشان دهد. تقویم Apple و Outlook معمولاً ظرف چند ساعت به‌روز می‌شوند.';
+
+  @override
+  String get calendarOptionCategories => 'دسته‌ها';
+
+  @override
+  String get calendarOptionHide => 'پنهان کردن نام سوابق';
+
+  @override
+  String get calendarOptionHideBody => 'رویدادها به جای نام می‌گویند «اعتبار یک سند تمام می‌شود»';
+
+  @override
+  String get calendarOptionPeople => 'افراد';
+
+  @override
+  String get calendarOptionRenew => 'رویدادهای «به‌زودی تمدید کنید»';
+
+  @override
+  String get calendarOptionRenewBody => 'یک رویداد اضافه در روز یادآوری هر سابقه';
+
+  @override
+  String get calendarOptionTrips => 'سفرها';
+
+  @override
+  String get calendarOptionsTitle => 'آنچه در تقویم شما قرار می‌گیرد';
+
+  @override
+  String entryEmergency(String number) {
+    return 'شماره اضطراری: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'هیچ گواهینامه بین‌المللی رانندگی برای این سفر ذخیره نشده است';
+
+  @override
+  String get entryPermitNotNeeded => 'برای رانندگی گواهینامه بین‌المللی لازم نیست';
+
+  @override
+  String get entryPermitRecommended => 'برای رانندگی، گواهینامه بین‌المللی توصیه می‌شود';
+
+  @override
+  String get entryPermitRequired => 'رانندگان به گواهینامه بین‌المللی رانندگی نیاز دارند';
+
+  @override
+  String get entryYellowFeverAll => 'گواهی واکسن تب زرد لازم است';
+
+  @override
+  String get entryYellowFeverNo => 'گواهی تب زرد لازم نیست';
+
+  @override
+  String get entryYellowFeverRisk => 'اگر از کشوری با خطر تب زرد می‌آیید، گواهی تب زرد لازم است';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person $record را افزود';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person $record را تغییر داد';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person $record را حذف کرد';
+  }
+
+  @override
+  String get historyEmpty => 'هنوز تغییری نیست. تغییرات سوابق مشترک اینجا نمایش داده می‌شود.';
+
+  @override
+  String get historyLoadMore => 'نمایش بیشتر';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'ساخته‌شده در $date. تعداد تغییرات: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'چه چیزی تغییر کرد';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record برای همیشه حذف شد';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person $record را بازگرداند';
+  }
+
+  @override
+  String get historySubtitle => 'چه کسی سوابق مشترک را افزود، تغییر داد یا حذف کرد';
+
+  @override
+  String get historyTitle => 'تاریخچه تغییرات';
+
+  @override
+  String petCardMade(String date) {
+    return 'ساخته‌شده با Vaultara در $date';
+  }
+
+  @override
+  String get petCardShare => 'اشتراک‌گذاری کارت حیوان خانگی';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · کارت حیوان خانگی';
+  }
+
+  @override
+  String get petCareBody => 'یادآوری‌ای اضافه کنید که خودش تکرار شود.';
+
+  @override
+  String get petCareCheckup => 'معاینه دامپزشکی';
+
+  @override
+  String get petCareFlea => 'درمان کک و کنه';
+
+  @override
+  String get petCareTitle => 'یادآوری‌های مراقبت';
+
+  @override
+  String get petCareWorming => 'ضدانگل';
+
+  @override
+  String get petPlanAdd => 'این تاریخ‌ها را به یادآوری‌هایم اضافه کن';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'یادآوری‌های اضافه‌شده: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'پیش از سفر';
+
+  @override
+  String petPlanBy(String date) {
+    return 'تا $date';
+  }
+
+  @override
+  String get petPlanDate => 'تاریخ سفر';
+
+  @override
+  String get petPlanLate => 'برای این تاریخ سفر خیلی دیر است';
+
+  @override
+  String get petPlanNote => 'هر تاریخ آخرین روزی است که این مرحله می‌تواند انجام شود. درباره فاصله‌هایی که سایت رسمی بین مراحل می‌خواهد از دامپزشک خود بپرسید.';
+
+  @override
+  String get petPlanNothingToAdd => 'این تاریخ‌ها از قبل در یادآوری‌های شما هستند.';
+
+  @override
+  String get petPlanPickDate => 'تاریخ سفر را انتخاب کنید تا ببینید هر مرحله کی است';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'برای سفر به $country';
+  }
+
+  @override
+  String get petPlanTitle => 'شمارش معکوس تا سفر شما';
+
+  @override
+  String get petStepCertificate => 'گواهی سلامت و مدارک';
+
+  @override
+  String get petStepChip => 'ریزتراشه';
+
+  @override
+  String get petStepRabies => 'واکسن هاری';
+
+  @override
+  String get petStepResidence => 'رسیدن به کشوری تأییدشده';
+
+  @override
+  String get petStepTapeworm => 'درمان کرم نواری';
+
+  @override
+  String get petStepTitre => 'آزمایش خون هاری';
+
+  @override
+  String get petTypeChecking => 'در حال جستجو…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'منظورتان $name بود؟';
+  }
+
+  @override
+  String get petTypeJunk => 'فقط از حروف استفاده کنید، مثلاً خرگوش یا رتیل.';
+
+  @override
+  String get petTypeKeepAnyway => 'نگه دار';
+
+  @override
+  String get petTypeNotAnimal => 'این شبیه یک نوع حیوان نیست.';
+
+  @override
+  String get petTypeOwnNote => 'به‌عنوان نوع خودتان ذخیره شد. قوانین سفر به سایت رسمی ارجاع می‌دهند.';
+
+  @override
+  String get planBenefitCalendar => 'پیوند تقویم با رویدادهای «به‌زودی تمدید کنید» و سفرها';
+
+  @override
+  String get planBenefitPetCare => 'عکس حیوانات خانگی، یادآوری‌های مراقبت و شمارش معکوس سفر';
+
+  @override
+  String get savingsComing => 'در ۱۲ ماه آینده';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'توجه: $month گران‌ترین ماه شماست ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'هزینه‌ها به ارزهایی که نرخ ندارند حساب نشده‌اند.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'ماهانه حدود $amount برای تمدیدهایتان کنار بگذارید.';
+  }
+
+  @override
+  String get savingsSpent => 'پرداخت‌شده امسال';
+
+  @override
+  String get subcategoryPetCheckups => 'معاینه‌های دامپزشکی';
+
+  @override
+  String get subcategoryPetTreatments => 'درمان‌های کک، کنه و کرم';
+
+  @override
+  String get tourBusinessHistoryBody => 'ببینید چه کسی سوابق مشترک را افزود، تغییر داد یا حذف کرد، و آن را برای حسابرسی به PDF خروجی بگیرید.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'ببینید حیوان خانگی برای هر کشوری چه نیاز دارد، سپس تاریخ سفر را برای شمارش معکوسی که می‌توانید به یادآوری‌ها اضافه کنید انتخاب کنید.';
+
+  @override
+  String get tripEntryTitle => 'جزئیات ورود';
+
+  @override
   String get yoursTag => 'مال شما';
 
   @override

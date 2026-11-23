@@ -8690,6 +8690,260 @@ class AppLocalizationsBg extends AppLocalizations {
   String get rulesReviewDropped => 'Пропуснато (няма съвпадащо изречение)';
 
   @override
+  String get assistantStepHistory => 'Проверка на историята на промените';
+
+  @override
+  String get businessBenefitHistory => 'История на промените в споделените записи, с експорт в PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Календар може да покаже промените до един ден. Apple Календар и Outlook обикновено се обновяват за няколко часа.';
+
+  @override
+  String get calendarOptionCategories => 'Категории';
+
+  @override
+  String get calendarOptionHide => 'Скрий имената на записите';
+
+  @override
+  String get calendarOptionHideBody => 'Събитията казват „Документ изтича“ вместо името';
+
+  @override
+  String get calendarOptionPeople => 'Хора';
+
+  @override
+  String get calendarOptionRenew => 'Събития „Поднови скоро“';
+
+  @override
+  String get calendarOptionRenewBody => 'Допълнително събитие в деня за напомняне на всеки запис';
+
+  @override
+  String get calendarOptionTrips => 'Пътувания';
+
+  @override
+  String get calendarOptionsTitle => 'Какво влиза в календара ви';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Спешен номер: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Няма запазено международно шофьорско разрешение за това пътуване';
+
+  @override
+  String get entryPermitNotNeeded => 'Не е нужно международно шофьорско разрешение за шофиране';
+
+  @override
+  String get entryPermitRecommended => 'Препоръчва се международно шофьорско разрешение за шофиране';
+
+  @override
+  String get entryPermitRequired => 'Шофьорите се нуждаят от международно шофьорско разрешение';
+
+  @override
+  String get entryYellowFeverAll => 'Нужен е сертификат за ваксинация срещу жълта треска';
+
+  @override
+  String get entryYellowFeverNo => 'Не е нужен сертификат за жълта треска';
+
+  @override
+  String get entryYellowFeverRisk => 'Нужен е сертификат за жълта треска, ако пристигате от страна с риск от жълта треска';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person добави $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person промени $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person изтри $record';
+  }
+
+  @override
+  String get historyEmpty => 'Още няма промени. Промените в споделените записи ще се показват тук.';
+
+  @override
+  String get historyLoadMore => 'Покажи още';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Създадено на $date. Промени: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Какво се промени';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record беше премахнат завинаги';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person възстанови $record';
+  }
+
+  @override
+  String get historySubtitle => 'Кой е добавил, променил или изтрил споделени записи';
+
+  @override
+  String get historyTitle => 'История на промените';
+
+  @override
+  String petCardMade(String date) {
+    return 'Създадено с Vaultara на $date';
+  }
+
+  @override
+  String get petCardShare => 'Сподели карта на любимеца';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Карта на любимеца';
+  }
+
+  @override
+  String get petCareBody => 'Добавете напомняне, което се повтаря само.';
+
+  @override
+  String get petCareCheckup => 'Ветеринарен преглед';
+
+  @override
+  String get petCareFlea => 'Третиране срещу бълхи и кърлежи';
+
+  @override
+  String get petCareTitle => 'Напомняния за грижи';
+
+  @override
+  String get petCareWorming => 'Обезпаразитяване';
+
+  @override
+  String get petPlanAdd => 'Добави тези дати към напомнянията ми';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Добавени напомняния: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Преди пътуването';
+
+  @override
+  String petPlanBy(String date) {
+    return 'До $date';
+  }
+
+  @override
+  String get petPlanDate => 'Дата на пътуване';
+
+  @override
+  String get petPlanLate => 'Твърде късно за тази дата на пътуване';
+
+  @override
+  String get petPlanNote => 'Всяка дата е последният ден, в който стъпката може да се случи. Попитайте ветеринаря си за интервалите между стъпките, които официалният сайт изисква.';
+
+  @override
+  String get petPlanNothingToAdd => 'Тези дати вече са в напомнянията ви.';
+
+  @override
+  String get petPlanPickDate => 'Изберете дата на пътуване, за да видите кога е всяка стъпка';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'За пътуването до $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Обратно броене до пътуването';
+
+  @override
+  String get petStepCertificate => 'Здравен сертификат и документи';
+
+  @override
+  String get petStepChip => 'Микрочип';
+
+  @override
+  String get petStepRabies => 'Ваксина срещу бяс';
+
+  @override
+  String get petStepResidence => 'Пристигане в одобрена държава';
+
+  @override
+  String get petStepTapeworm => 'Третиране срещу тения';
+
+  @override
+  String get petStepTitre => 'Кръвен тест за бяс';
+
+  @override
+  String get petTypeChecking => 'Търсене…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Имахте предвид $name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Използвайте само букви, например Заек или Тарантула.';
+
+  @override
+  String get petTypeKeepAnyway => 'Запази';
+
+  @override
+  String get petTypeNotAnimal => 'Това не прилича на вид животно.';
+
+  @override
+  String get petTypeOwnNote => 'Запазено като ваш собствен вид. Правилата за пътуване ще сочат официалния сайт.';
+
+  @override
+  String get planBenefitCalendar => 'Връзка към календар със събития „Поднови скоро“ и пътувания';
+
+  @override
+  String get planBenefitPetCare => 'Снимки на любимци, напомняния за грижи и обратно броене за пътуване';
+
+  @override
+  String get savingsComing => 'Предстои през 12 месеца';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Внимание: $month е най-скъпият ви месец ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Разходите във валути без курс не са включени.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Отделяйте около $amount на месец за подновяванията си.';
+  }
+
+  @override
+  String get savingsSpent => 'Платено тази година';
+
+  @override
+  String get subcategoryPetCheckups => 'Ветеринарни прегледи';
+
+  @override
+  String get subcategoryPetTreatments => 'Третиране срещу бълхи, кърлежи и глисти';
+
+  @override
+  String get tourBusinessHistoryBody => 'Вижте кой е добавил, променил или изтрил споделени записи и го експортирайте в PDF за одит.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Проверете какво е нужно на любимеца за всяка държава, после изберете дата на пътуване за обратно броене, което да добавите към напомнянията си.';
+
+  @override
+  String get tripEntryTitle => 'Данни за влизане';
+
+  @override
   String get yoursTag => 'Ваше';
 
   @override

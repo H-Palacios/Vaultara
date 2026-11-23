@@ -8690,6 +8690,260 @@ class AppLocalizationsTa extends AppLocalizations {
   String get rulesReviewDropped => 'விடப்பட்டது (பொருந்தும் வாக்கியம் இல்லை)';
 
   @override
+  String get assistantStepHistory => 'மாற்ற வரலாறு சரிபார்க்கப்படுகிறது';
+
+  @override
+  String get businessBenefitHistory => 'பகிர்ந்த பதிவுகளின் மாற்ற வரலாறு, PDF ஏற்றுமதியுடன்';
+
+  @override
+  String get calendarLinkGoogleNote => 'மாற்றங்களைக் காட்ட Google Calendar-க்கு ஒரு நாள் வரை ஆகலாம். Apple Calendar மற்றும் Outlook பொதுவாக சில மணிநேரங்களில் புதுப்பிக்கப்படும்.';
+
+  @override
+  String get calendarOptionCategories => 'வகைகள்';
+
+  @override
+  String get calendarOptionHide => 'பதிவுப் பெயர்களை மறை';
+
+  @override
+  String get calendarOptionHideBody => 'நிகழ்வுகளில் பெயருக்குப் பதிலாக \"ஆவணம் காலாவதியாகிறது\" என்று இருக்கும்';
+
+  @override
+  String get calendarOptionPeople => 'நபர்கள்';
+
+  @override
+  String get calendarOptionRenew => '\"விரைவில் புதுப்பி\" நிகழ்வுகள்';
+
+  @override
+  String get calendarOptionRenewBody => 'ஒவ்வொரு பதிவின் நினைவூட்டல் நாளிலும் கூடுதல் நிகழ்வு';
+
+  @override
+  String get calendarOptionTrips => 'பயணங்கள்';
+
+  @override
+  String get calendarOptionsTitle => 'உங்கள் நாட்காட்டியில் என்ன சேரும்';
+
+  @override
+  String entryEmergency(String number) {
+    return 'அவசர எண்: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'இந்தப் பயணத்திற்கு சர்வதேச ஓட்டுநர் அனுமதி சேமிக்கப்படவில்லை';
+
+  @override
+  String get entryPermitNotNeeded => 'வாகனம் ஓட்ட சர்வதேச ஓட்டுநர் அனுமதி தேவையில்லை';
+
+  @override
+  String get entryPermitRecommended => 'வாகனம் ஓட்ட சர்வதேச ஓட்டுநர் அனுமதி பரிந்துரைக்கப்படுகிறது';
+
+  @override
+  String get entryPermitRequired => 'ஓட்டுநர்களுக்கு சர்வதேச ஓட்டுநர் அனுமதி தேவை';
+
+  @override
+  String get entryYellowFeverAll => 'மஞ்சள் காய்ச்சல் தடுப்பூசி சான்றிதழ் தேவை';
+
+  @override
+  String get entryYellowFeverNo => 'மஞ்சள் காய்ச்சல் சான்றிதழ் தேவையில்லை';
+
+  @override
+  String get entryYellowFeverRisk => 'மஞ்சள் காய்ச்சல் அபாயமுள்ள நாட்டிலிருந்து வந்தால் மஞ்சள் காய்ச்சல் சான்றிதழ் தேவை';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person $record சேர்த்தார்';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person $record மாற்றினார்';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person $record நீக்கினார்';
+  }
+
+  @override
+  String get historyEmpty => 'இன்னும் மாற்றங்கள் இல்லை. பகிர்ந்த பதிவுகளின் மாற்றங்கள் இங்கே தோன்றும்.';
+
+  @override
+  String get historyLoadMore => 'மேலும் காட்டு';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return '$date அன்று உருவாக்கப்பட்டது. மாற்றங்கள்: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'என்ன மாறியது';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record நிரந்தரமாக அகற்றப்பட்டது';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person $record மீட்டமைத்தார்';
+  }
+
+  @override
+  String get historySubtitle => 'பகிர்ந்த பதிவுகளை யார் சேர்த்தார், மாற்றினார் அல்லது நீக்கினார்';
+
+  @override
+  String get historyTitle => 'மாற்ற வரலாறு';
+
+  @override
+  String petCardMade(String date) {
+    return '$date அன்று Vaultara மூலம் உருவாக்கப்பட்டது';
+  }
+
+  @override
+  String get petCardShare => 'செல்லப்பிராணி அட்டையைப் பகிர்';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · செல்லப்பிராணி அட்டை';
+  }
+
+  @override
+  String get petCareBody => 'தானாக மீண்டும் வரும் நினைவூட்டலைச் சேர்க்கவும்.';
+
+  @override
+  String get petCareCheckup => 'கால்நடை மருத்துவர் பரிசோதனை';
+
+  @override
+  String get petCareFlea => 'தெள்ளு மற்றும் உண்ணி சிகிச்சை';
+
+  @override
+  String get petCareTitle => 'பராமரிப்பு நினைவூட்டல்கள்';
+
+  @override
+  String get petCareWorming => 'குடற்புழு நீக்கம்';
+
+  @override
+  String get petPlanAdd => 'இந்தத் தேதிகளை என் நினைவூட்டல்களில் சேர்';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'சேர்த்த நினைவூட்டல்கள்: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'பயணத்திற்கு முன்';
+
+  @override
+  String petPlanBy(String date) {
+    return '$date-க்குள்';
+  }
+
+  @override
+  String get petPlanDate => 'பயணத் தேதி';
+
+  @override
+  String get petPlanLate => 'இந்தப் பயணத் தேதிக்கு மிகவும் தாமதம்';
+
+  @override
+  String get petPlanNote => 'ஒவ்வொரு தேதியும் அந்தப் படி நடக்கக்கூடிய கடைசி நாள். படிகளுக்கு இடையே அதிகாரப்பூர்வ தளம் கேட்கும் இடைவெளிகள் பற்றி உங்கள் கால்நடை மருத்துவரிடம் கேளுங்கள்.';
+
+  @override
+  String get petPlanNothingToAdd => 'இந்தத் தேதிகள் ஏற்கனவே உங்கள் நினைவூட்டல்களில் உள்ளன.';
+
+  @override
+  String get petPlanPickDate => 'ஒவ்வொரு படியும் எப்போது என்று பார்க்க பயணத் தேதியைத் தேர்ந்தெடுக்கவும்';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return '$country பயணத்திற்கு';
+  }
+
+  @override
+  String get petPlanTitle => 'பயணத்திற்கான கவுண்ட்டவுன்';
+
+  @override
+  String get petStepCertificate => 'சுகாதாரச் சான்றிதழ் மற்றும் ஆவணங்கள்';
+
+  @override
+  String get petStepChip => 'மைக்ரோசிப்';
+
+  @override
+  String get petStepRabies => 'வெறிநாய்க்கடி தடுப்பூசி';
+
+  @override
+  String get petStepResidence => 'அங்கீகரிக்கப்பட்ட நாட்டை அடையுங்கள்';
+
+  @override
+  String get petStepTapeworm => 'நாடாப்புழு சிகிச்சை';
+
+  @override
+  String get petStepTitre => 'வெறிநாய்க்கடி இரத்தப் பரிசோதனை';
+
+  @override
+  String get petTypeChecking => 'தேடுகிறது…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'நீங்கள் $name என்று சொல்ல வந்தீர்களா?';
+  }
+
+  @override
+  String get petTypeJunk => 'எழுத்துகளை மட்டும் பயன்படுத்தவும், எ.கா. முயல் அல்லது டரான்டுலா.';
+
+  @override
+  String get petTypeKeepAnyway => 'வைத்திரு';
+
+  @override
+  String get petTypeNotAnimal => 'இது விலங்கு வகை போல் தெரியவில்லை.';
+
+  @override
+  String get petTypeOwnNote => 'உங்கள் சொந்த வகையாகச் சேமிக்கப்பட்டது. பயண விதிகள் அதிகாரப்பூர்வ தளத்தைக் காட்டும்.';
+
+  @override
+  String get planBenefitCalendar => '\"விரைவில் புதுப்பி\" நிகழ்வுகள் மற்றும் பயணங்களுடன் நாட்காட்டி இணைப்பு';
+
+  @override
+  String get planBenefitPetCare => 'செல்லப்பிராணி புகைப்படங்கள், பராமரிப்பு நினைவூட்டல்கள் மற்றும் பயண கவுண்ட்டவுன்';
+
+  @override
+  String get savingsComing => 'அடுத்த 12 மாதங்களில்';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'கவனிக்கவும்: $month உங்கள் மிகவும் செலவான மாதம் ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'விகிதம் இல்லாத நாணயங்களில் உள்ள செலவுகள் சேர்க்கப்படவில்லை.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'புதுப்பிப்புகளுக்காக மாதம் சுமார் $amount ஒதுக்கி வையுங்கள்.';
+  }
+
+  @override
+  String get savingsSpent => 'இந்த ஆண்டு செலுத்தியது';
+
+  @override
+  String get subcategoryPetCheckups => 'கால்நடை மருத்துவர் பரிசோதனைகள்';
+
+  @override
+  String get subcategoryPetTreatments => 'தெள்ளு, உண்ணி மற்றும் புழு சிகிச்சைகள்';
+
+  @override
+  String get tourBusinessHistoryBody => 'பகிர்ந்த பதிவுகளை யார் சேர்த்தார், மாற்றினார் அல்லது நீக்கினார் என்று பார்த்து, தணிக்கைக்காக PDF ஆக ஏற்றுமதி செய்யுங்கள்.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'எந்த நாட்டிற்கும் செல்லப்பிராணிக்கு என்ன தேவை என்று சரிபார்த்து, நினைவூட்டல்களில் சேர்க்கக்கூடிய கவுண்ட்டவுனுக்கு பயணத் தேதியைத் தேர்ந்தெடுக்கவும்.';
+
+  @override
+  String get tripEntryTitle => 'நுழைவு விவரங்கள்';
+
+  @override
   String get yoursTag => 'உங்களுடையது';
 
   @override

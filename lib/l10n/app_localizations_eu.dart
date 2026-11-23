@@ -8694,6 +8694,260 @@ class AppLocalizationsEu extends AppLocalizations {
   String get rulesReviewDropped => 'Kanpoan utzia (ez dago esaldi bat datorrenik)';
 
   @override
+  String get assistantStepHistory => 'Aldaketen historia egiaztatzen';
+
+  @override
+  String get businessBenefitHistory => 'Partekatutako erregistroen aldaketen historia, PDF esportazioarekin';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Calendar-ek egun bat arte behar dezake aldaketak erakusteko. Apple Calendar eta Outlook ordu gutxitan eguneratzen dira normalean.';
+
+  @override
+  String get calendarOptionCategories => 'Kategoriak';
+
+  @override
+  String get calendarOptionHide => 'Ezkutatu erregistroen izenak';
+
+  @override
+  String get calendarOptionHideBody => 'Gertaerek \"Dokumentua iraungitzen da\" diote izenaren ordez';
+
+  @override
+  String get calendarOptionPeople => 'Pertsonak';
+
+  @override
+  String get calendarOptionRenew => '\"Berritu laster\" gertaerak';
+
+  @override
+  String get calendarOptionRenewBody => 'Gertaera gehigarri bat erregistro bakoitzaren oroigarri-egunean';
+
+  @override
+  String get calendarOptionTrips => 'Bidaiak';
+
+  @override
+  String get calendarOptionsTitle => 'Zure egutegian sartzen dena';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Larrialdi-zenbakia: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Ez dago nazioarteko gidabaimenik gordeta bidaia honetarako';
+
+  @override
+  String get entryPermitNotNeeded => 'Ez da nazioarteko gidabaimenik behar gidatzeko';
+
+  @override
+  String get entryPermitRecommended => 'Nazioarteko gidabaimena gomendatzen da gidatzeko';
+
+  @override
+  String get entryPermitRequired => 'Gidariek nazioarteko gidabaimena behar dute';
+
+  @override
+  String get entryYellowFeverAll => 'Sukar horiaren aurkako txertoaren ziurtagiria behar da';
+
+  @override
+  String get entryYellowFeverNo => 'Ez da sukar horiaren ziurtagiririk behar';
+
+  @override
+  String get entryYellowFeverRisk => 'Sukar horiaren ziurtagiria behar da sukar horiaren arriskua duen herrialde batetik bazatoz';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person(e)k $record gehitu du';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person(e)k $record aldatu du';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person(e)k $record ezabatu du';
+  }
+
+  @override
+  String get historyEmpty => 'Oraindik ez dago aldaketarik. Partekatutako erregistroen aldaketak hemen agertuko dira.';
+
+  @override
+  String get historyLoadMore => 'Erakutsi gehiago';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return '$date(e)an egina. Aldaketak: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Zer aldatu den';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record betiko kendu da';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person(e)k $record leheneratu du';
+  }
+
+  @override
+  String get historySubtitle => 'Nork gehitu, aldatu edo ezabatu dituen partekatutako erregistroak';
+
+  @override
+  String get historyTitle => 'Aldaketen historia';
+
+  @override
+  String petCardMade(String date) {
+    return 'Vaultararekin egina $date(e)an';
+  }
+
+  @override
+  String get petCardShare => 'Partekatu maskotaren txartela';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Maskotaren txartela';
+  }
+
+  @override
+  String get petCareBody => 'Gehitu bere kabuz errepikatzen den oroigarri bat.';
+
+  @override
+  String get petCareCheckup => 'Albaitari-azterketa';
+
+  @override
+  String get petCareFlea => 'Arkakuso eta akain aurkako tratamendua';
+
+  @override
+  String get petCareTitle => 'Zainketa-oroigarriak';
+
+  @override
+  String get petCareWorming => 'Desparasitazioa';
+
+  @override
+  String get petPlanAdd => 'Gehitu data hauek nire oroigarriei';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Gehitutako oroigarriak: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Bidaiatu aurretik';
+
+  @override
+  String petPlanBy(String date) {
+    return '$date baino lehen';
+  }
+
+  @override
+  String get petPlanDate => 'Bidaiaren data';
+
+  @override
+  String get petPlanLate => 'Beranduegi bidaia-data honetarako';
+
+  @override
+  String get petPlanNote => 'Data bakoitza urratsa egin daitekeen azken eguna da. Galdetu albaitariari webgune ofizialak urratsen artean eskatzen dituen tarteei buruz.';
+
+  @override
+  String get petPlanNothingToAdd => 'Data hauek dagoeneko zure oroigarrietan daude.';
+
+  @override
+  String get petPlanPickDate => 'Aukeratu bidaiaren data urrats bakoitza noiz den ikusteko';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return '$country(e)ra bidaiatzeko';
+  }
+
+  @override
+  String get petPlanTitle => 'Bidaiarako atzerako kontaketa';
+
+  @override
+  String get petStepCertificate => 'Osasun-ziurtagiria eta paperak';
+
+  @override
+  String get petStepChip => 'Mikrotxipa';
+
+  @override
+  String get petStepRabies => 'Amorruaren aurkako txertoa';
+
+  @override
+  String get petStepResidence => 'Iritsi onartutako herrialde batera';
+
+  @override
+  String get petStepTapeworm => 'Tenia aurkako tratamendua';
+
+  @override
+  String get petStepTitre => 'Amorruaren odol-analisia';
+
+  @override
+  String get petTypeChecking => 'Bilatzen…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return '$name esan nahi zenuen?';
+  }
+
+  @override
+  String get petTypeJunk => 'Erabili letrak bakarrik, adibidez Untxia edo Tarantula.';
+
+  @override
+  String get petTypeKeepAnyway => 'Gorde';
+
+  @override
+  String get petTypeNotAnimal => 'Hau ez dirudi animalia mota bat.';
+
+  @override
+  String get petTypeOwnNote => 'Zure mota gisa gorde da. Bidaia-arauek webgune ofizialera bideratuko dute.';
+
+  @override
+  String get planBenefitCalendar => 'Egutegi-esteka \"Berritu laster\" gertaerekin eta bidaiekin';
+
+  @override
+  String get planBenefitPetCare => 'Maskoten argazkiak, zainketa-oroigarriak eta bidaiarako atzerako kontaketa';
+
+  @override
+  String get savingsComing => 'Hurrengo 12 hilabeteetan';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Kontuz: $month da zure hilabeterik garestiena ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Truke-tasarik gabeko txanponetako kostuak ez dira sartzen.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Gorde hilean $amount inguru berritzeak ordaintzeko.';
+  }
+
+  @override
+  String get savingsSpent => 'Aurten ordainduta';
+
+  @override
+  String get subcategoryPetCheckups => 'Albaitari-azterketak';
+
+  @override
+  String get subcategoryPetTreatments => 'Arkakuso, akain eta zizare aurkako tratamenduak';
+
+  @override
+  String get tourBusinessHistoryBody => 'Ikusi nork gehitu, aldatu edo ezabatu dituen partekatutako erregistroak, eta esportatu PDF gisa ikuskaritza baterako.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Begiratu maskota batek edozein herrialdetarako zer behar duen, eta aukeratu bidaiaren data oroigarrietan gehi dezakezun atzerako kontaketa baterako.';
+
+  @override
+  String get tripEntryTitle => 'Sarrera-xehetasunak';
+
+  @override
   String get yoursTag => 'Zurea';
 
   @override

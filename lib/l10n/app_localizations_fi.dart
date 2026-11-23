@@ -8694,6 +8694,260 @@ class AppLocalizationsFi extends AppLocalizations {
   String get rulesReviewDropped => 'Jätetty pois (ei vastaavaa lausetta)';
 
   @override
+  String get assistantStepHistory => 'Tarkistetaan muutoshistoriaa';
+
+  @override
+  String get businessBenefitHistory => 'Jaettujen tietueiden muutoshistoria PDF-viennillä';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google-kalenterilla voi kestää jopa päivä näyttää muutokset. Apple-kalenteri ja Outlook päivittyvät yleensä muutamassa tunnissa.';
+
+  @override
+  String get calendarOptionCategories => 'Luokat';
+
+  @override
+  String get calendarOptionHide => 'Piilota tietueiden nimet';
+
+  @override
+  String get calendarOptionHideBody => 'Tapahtumissa lukee nimen sijaan \"Asiakirja vanhenee\"';
+
+  @override
+  String get calendarOptionPeople => 'Henkilöt';
+
+  @override
+  String get calendarOptionRenew => '\"Uusi pian\" -tapahtumat';
+
+  @override
+  String get calendarOptionRenewBody => 'Lisätapahtuma kunkin tietueen muistutuspäivälle';
+
+  @override
+  String get calendarOptionTrips => 'Matkat';
+
+  @override
+  String get calendarOptionsTitle => 'Mitä kalenteriisi tulee';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Hätänumero: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Tälle matkalle ei ole tallennettu kansainvälistä ajokorttia';
+
+  @override
+  String get entryPermitNotNeeded => 'Ajamiseen ei tarvita kansainvälistä ajokorttia';
+
+  @override
+  String get entryPermitRecommended => 'Ajamiseen suositellaan kansainvälistä ajokorttia';
+
+  @override
+  String get entryPermitRequired => 'Kuljettajat tarvitsevat kansainvälisen ajokortin';
+
+  @override
+  String get entryYellowFeverAll => 'Keltakuumerokotustodistus tarvitaan';
+
+  @override
+  String get entryYellowFeverNo => 'Keltakuumetodistusta ei tarvita';
+
+  @override
+  String get entryYellowFeverRisk => 'Keltakuumetodistus tarvitaan, jos saavut maasta, jossa on keltakuumeen riski';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person lisäsi tietueen $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person muutti tietuetta $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person poisti tietueen $record';
+  }
+
+  @override
+  String get historyEmpty => 'Ei vielä muutoksia. Jaettujen tietueiden muutokset näkyvät tässä.';
+
+  @override
+  String get historyLoadMore => 'Näytä lisää';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Tehty $date. Muutoksia: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Mikä muuttui';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record poistettiin pysyvästi';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person palautti tietueen $record';
+  }
+
+  @override
+  String get historySubtitle => 'Kuka lisäsi, muutti tai poisti jaettuja tietueita';
+
+  @override
+  String get historyTitle => 'Muutoshistoria';
+
+  @override
+  String petCardMade(String date) {
+    return 'Tehty Vaultaralla $date';
+  }
+
+  @override
+  String get petCardShare => 'Jaa lemmikkikortti';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Lemmikkikortti';
+  }
+
+  @override
+  String get petCareBody => 'Lisää muistutus, joka toistuu itsestään.';
+
+  @override
+  String get petCareCheckup => 'Eläinlääkärintarkastus';
+
+  @override
+  String get petCareFlea => 'Kirppu- ja punkkihoito';
+
+  @override
+  String get petCareTitle => 'Hoitomuistutukset';
+
+  @override
+  String get petCareWorming => 'Madotus';
+
+  @override
+  String get petPlanAdd => 'Lisää nämä päivämäärät muistutuksiini';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Muistutuksia lisätty: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Ennen matkaa';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Viimeistään $date';
+  }
+
+  @override
+  String get petPlanDate => 'Matkapäivä';
+
+  @override
+  String get petPlanLate => 'Liian myöhäistä tälle matkapäivälle';
+
+  @override
+  String get petPlanNote => 'Jokainen päivämäärä on viimeinen päivä vaiheelle. Kysy eläinlääkäriltä vaiheiden väleistä, joita virallinen sivusto vaatii.';
+
+  @override
+  String get petPlanNothingToAdd => 'Nämä päivämäärät ovat jo muistutuksissasi.';
+
+  @override
+  String get petPlanPickDate => 'Valitse matkapäivä nähdäksesi, milloin kukin vaihe on';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Matkalle kohteeseen $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Lähtölaskenta matkaasi';
+
+  @override
+  String get petStepCertificate => 'Terveystodistus ja paperit';
+
+  @override
+  String get petStepChip => 'Mikrosiru';
+
+  @override
+  String get petStepRabies => 'Raivotautirokote';
+
+  @override
+  String get petStepResidence => 'Saavu hyväksyttyyn maahan';
+
+  @override
+  String get petStepTapeworm => 'Heisimatohoito';
+
+  @override
+  String get petStepTitre => 'Raivotaudin verikoe';
+
+  @override
+  String get petTypeChecking => 'Haetaan…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Tarkoititko $name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Käytä vain kirjaimia, kuten Kani tai Tarantella.';
+
+  @override
+  String get petTypeKeepAnyway => 'Pidä se';
+
+  @override
+  String get petTypeNotAnimal => 'Tämä ei näytä eläinlajilta.';
+
+  @override
+  String get petTypeOwnNote => 'Tallennettu omana lajinasi. Matkasäännöt ohjaavat viralliselle sivustolle.';
+
+  @override
+  String get planBenefitCalendar => 'Kalenterilinkki \"Uusi pian\" -tapahtumilla ja matkoilla';
+
+  @override
+  String get planBenefitPetCare => 'Lemmikkikuvat, hoitomuistutukset ja matkan lähtölaskenta';
+
+  @override
+  String get savingsComing => 'Seuraavan 12 kuukauden aikana';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Huomio: $month on kallein kuukautesi ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Kulut valuutoissa, joille ei ole kurssia, on jätetty pois.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Säästä noin $amount kuukaudessa uusimisiin.';
+  }
+
+  @override
+  String get savingsSpent => 'Maksettu tänä vuonna';
+
+  @override
+  String get subcategoryPetCheckups => 'Eläinlääkärintarkastukset';
+
+  @override
+  String get subcategoryPetTreatments => 'Kirppu-, punkki- ja matohoidot';
+
+  @override
+  String get tourBusinessHistoryBody => 'Katso, kuka lisäsi, muutti tai poisti jaettuja tietueita, ja vie se PDF-muodossa tarkastusta varten.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Katso, mitä lemmikki tarvitsee mihin tahansa maahan, ja valitse matkapäivä lähtölaskentaa varten, jonka voit lisätä muistutuksiin.';
+
+  @override
+  String get tripEntryTitle => 'Maahantulon tiedot';
+
+  @override
   String get yoursTag => 'Oma';
 
   @override

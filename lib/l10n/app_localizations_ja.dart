@@ -8621,6 +8621,260 @@ class AppLocalizationsJa extends AppLocalizations {
   String get rulesReviewDropped => '除外（一致する文がありません）';
 
   @override
+  String get assistantStepHistory => '変更履歴を確認しています';
+
+  @override
+  String get businessBenefitHistory => '共有記録の変更履歴（PDF出力付き）';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google カレンダーでは変更の反映に最大1日かかることがあります。Apple カレンダーと Outlook は通常数時間で更新されます。';
+
+  @override
+  String get calendarOptionCategories => 'カテゴリ';
+
+  @override
+  String get calendarOptionHide => '記録名を隠す';
+
+  @override
+  String get calendarOptionHideBody => '予定には名前の代わりに「書類の期限」と表示されます';
+
+  @override
+  String get calendarOptionPeople => '人';
+
+  @override
+  String get calendarOptionRenew => '「まもなく更新」の予定';
+
+  @override
+  String get calendarOptionRenewBody => '各記録の通知日に追加の予定';
+
+  @override
+  String get calendarOptionTrips => '旅行';
+
+  @override
+  String get calendarOptionsTitle => 'カレンダーに入れるもの';
+
+  @override
+  String entryEmergency(String number) {
+    return '緊急番号：$number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'この旅行の国際運転免許証が保存されていません';
+
+  @override
+  String get entryPermitNotNeeded => '運転に国際運転免許証は不要です';
+
+  @override
+  String get entryPermitRecommended => '運転には国際運転免許証が推奨されます';
+
+  @override
+  String get entryPermitRequired => '運転する人は国際運転免許証が必要です';
+
+  @override
+  String get entryYellowFeverAll => '黄熱病の予防接種証明書が必要です';
+
+  @override
+  String get entryYellowFeverNo => '黄熱病の証明書は不要です';
+
+  @override
+  String get entryYellowFeverRisk => '黄熱病のリスクがある国から入国する場合は黄熱病の証明書が必要です';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$personが$recordを追加しました';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$personが$recordを変更しました';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$personが$recordを削除しました';
+  }
+
+  @override
+  String get historyEmpty => 'まだ変更はありません。共有記録の変更はここに表示されます。';
+
+  @override
+  String get historyLoadMore => 'さらに表示';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return '$date作成。変更：$count件';
+  }
+
+  @override
+  String get historyPdfWhat => '変更内容';
+
+  @override
+  String historyRemoved(String record) {
+    return '$recordは完全に削除されました';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$personが$recordを元に戻しました';
+  }
+
+  @override
+  String get historySubtitle => '共有記録を追加・変更・削除した人';
+
+  @override
+  String get historyTitle => '変更履歴';
+
+  @override
+  String petCardMade(String date) {
+    return '$dateにVaultaraで作成';
+  }
+
+  @override
+  String get petCardShare => 'ペットカードを共有';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name・ペットカード';
+  }
+
+  @override
+  String get petCareBody => '自動で繰り返す通知を追加します。';
+
+  @override
+  String get petCareCheckup => '動物病院での健康診断';
+
+  @override
+  String get petCareFlea => 'ノミ・ダニ対策';
+
+  @override
+  String get petCareTitle => 'お世話の通知';
+
+  @override
+  String get petCareWorming => '虫下し';
+
+  @override
+  String get petPlanAdd => 'これらの日付を通知に追加';
+
+  @override
+  String petPlanAdded(int count) {
+    return '追加した通知：$count件';
+  }
+
+  @override
+  String get petPlanBefore => '出発前';
+
+  @override
+  String petPlanBy(String date) {
+    return '$dateまで';
+  }
+
+  @override
+  String get petPlanDate => '出発日';
+
+  @override
+  String get petPlanLate => 'この出発日には間に合いません';
+
+  @override
+  String get petPlanNote => '各日付はその手順の期限です。手順の間に公式サイトが求める間隔は獣医師に確認してください。';
+
+  @override
+  String get petPlanNothingToAdd => 'これらの日付はすでに通知に入っています。';
+
+  @override
+  String get petPlanPickDate => '出発日を選ぶと各手順の期限がわかります';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet：$step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return '$countryへの旅行用';
+  }
+
+  @override
+  String get petPlanTitle => '出発までのカウントダウン';
+
+  @override
+  String get petStepCertificate => '健康証明書と書類';
+
+  @override
+  String get petStepChip => 'マイクロチップ';
+
+  @override
+  String get petStepRabies => '狂犬病ワクチン';
+
+  @override
+  String get petStepResidence => '承認された国に到着';
+
+  @override
+  String get petStepTapeworm => '条虫駆除';
+
+  @override
+  String get petStepTitre => '狂犬病の血液検査';
+
+  @override
+  String get petTypeChecking => '調べています…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return '$nameのことですか？';
+  }
+
+  @override
+  String get petTypeJunk => '文字だけを使ってください（例：ウサギ、タランチュラ）。';
+
+  @override
+  String get petTypeKeepAnyway => 'このままにする';
+
+  @override
+  String get petTypeNotAnimal => '動物の種類ではないようです。';
+
+  @override
+  String get petTypeOwnNote => '独自の種類として保存しました。旅行ルールは公式サイトを案内します。';
+
+  @override
+  String get planBenefitCalendar => '「まもなく更新」の予定と旅行が入るカレンダーリンク';
+
+  @override
+  String get planBenefitPetCare => 'ペットの写真、お世話の通知、旅行のカウントダウン';
+
+  @override
+  String get savingsComing => '今後12か月';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return '注意：$monthが最も費用のかかる月です（$amount）。';
+  }
+
+  @override
+  String get savingsLeftOut => '為替レートのない通貨の費用は含まれていません。';
+
+  @override
+  String savingsMonthly(String amount) {
+    return '更新に備えて毎月約$amountを取っておきましょう。';
+  }
+
+  @override
+  String get savingsSpent => '今年の支払い';
+
+  @override
+  String get subcategoryPetCheckups => '動物病院での健康診断';
+
+  @override
+  String get subcategoryPetTreatments => 'ノミ・ダニ・寄生虫対策';
+
+  @override
+  String get tourBusinessHistoryBody => '共有記録を追加・変更・削除した人を確認し、監査用にPDFで出力できます。';
+
+  @override
+  String get tourPetsTravelPlanBody => 'ペットがどの国に何が必要かを確認し、出発日を選んで通知に追加できるカウントダウンを作りましょう。';
+
+  @override
+  String get tripEntryTitle => '入国の詳細';
+
+  @override
   String get yoursTag => '自分用';
 
   @override

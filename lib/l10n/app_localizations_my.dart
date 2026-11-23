@@ -8631,6 +8631,260 @@ class AppLocalizationsMy extends AppLocalizations {
   String get rulesReviewDropped => 'ချန်ထားသည် (ကိုက်ညီသောဝါကျ မရှိပါ)';
 
   @override
+  String get assistantStepHistory => 'ပြောင်းလဲမှုမှတ်တမ်းကို စစ်ဆေးနေသည်';
+
+  @override
+  String get businessBenefitHistory => 'မျှဝေထားသော မှတ်တမ်းများ၏ ပြောင်းလဲမှုမှတ်တမ်း၊ PDF ထုတ်ယူနိုင်';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Calendar တွင် ပြောင်းလဲမှုများ ပေါ်ရန် တစ်ရက်အထိ ကြာနိုင်သည်။ Apple Calendar နှင့် Outlook သည် များသောအားဖြင့် နာရီအနည်းငယ်အတွင်း အပ်ဒိတ်ဖြစ်သည်။';
+
+  @override
+  String get calendarOptionCategories => 'အမျိုးအစားများ';
+
+  @override
+  String get calendarOptionHide => 'မှတ်တမ်းအမည်များ ဖျောက်ရန်';
+
+  @override
+  String get calendarOptionHideBody => 'ဖြစ်ရပ်များတွင် အမည်အစား \"စာရွက်စာတမ်း သက်တမ်းကုန်မည်\" ဟု ပြမည်';
+
+  @override
+  String get calendarOptionPeople => 'လူများ';
+
+  @override
+  String get calendarOptionRenew => '\"မကြာမီ သက်တမ်းတိုး\" ဖြစ်ရပ်များ';
+
+  @override
+  String get calendarOptionRenewBody => 'မှတ်တမ်းတစ်ခုစီ၏ သတိပေးရက်တွင် ဖြစ်ရပ်တစ်ခု ထပ်ထည့်';
+
+  @override
+  String get calendarOptionTrips => 'ခရီးများ';
+
+  @override
+  String get calendarOptionsTitle => 'သင့်ပြက္ခဒိန်ထဲ ဘာပါမလဲ';
+
+  @override
+  String entryEmergency(String number) {
+    return 'အရေးပေါ်နံပါတ်: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'ဤခရီးအတွက် နိုင်ငံတကာ ယာဉ်မောင်းခွင့် သိမ်းထားခြင်း မရှိပါ';
+
+  @override
+  String get entryPermitNotNeeded => 'ယာဉ်မောင်းရန် နိုင်ငံတကာ ယာဉ်မောင်းခွင့် မလိုပါ';
+
+  @override
+  String get entryPermitRecommended => 'ယာဉ်မောင်းရန် နိုင်ငံတကာ ယာဉ်မောင်းခွင့် ထားရန် အကြံပြုသည်';
+
+  @override
+  String get entryPermitRequired => 'ယာဉ်မောင်းများ နိုင်ငံတကာ ယာဉ်မောင်းခွင့် လိုအပ်သည်';
+
+  @override
+  String get entryYellowFeverAll => 'အဝါရောင်ဖျားနာ ကာကွယ်ဆေးထိုးထားကြောင်း လက်မှတ် လိုအပ်သည်';
+
+  @override
+  String get entryYellowFeverNo => 'အဝါရောင်ဖျားနာ လက်မှတ် မလိုပါ';
+
+  @override
+  String get entryYellowFeverRisk => 'အဝါရောင်ဖျားနာ အန္တရာယ်ရှိသော နိုင်ငံမှ လာလျှင် အဝါရောင်ဖျားနာ လက်မှတ် လိုအပ်သည်';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person က $record ကို ထည့်ခဲ့သည်';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person က $record ကို ပြောင်းခဲ့သည်';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person က $record ကို ဖျက်ခဲ့သည်';
+  }
+
+  @override
+  String get historyEmpty => 'ပြောင်းလဲမှု မရှိသေးပါ။ မျှဝေထားသော မှတ်တမ်းများ၏ ပြောင်းလဲမှုများ ဤနေရာတွင် ပေါ်မည်။';
+
+  @override
+  String get historyLoadMore => 'ထပ်ပြရန်';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return '$date တွင် ပြုလုပ်သည်။ ပြောင်းလဲမှု: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'ဘာပြောင်းလဲခဲ့သလဲ';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record ကို အပြီးတိုင် ဖယ်ရှားခဲ့သည်';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person က $record ကို ပြန်ယူခဲ့သည်';
+  }
+
+  @override
+  String get historySubtitle => 'မျှဝေထားသော မှတ်တမ်းများကို မည်သူ ထည့်၊ ပြောင်း သို့မဟုတ် ဖျက်ခဲ့သည်';
+
+  @override
+  String get historyTitle => 'ပြောင်းလဲမှုမှတ်တမ်း';
+
+  @override
+  String petCardMade(String date) {
+    return '$date တွင် Vaultara ဖြင့် ပြုလုပ်သည်';
+  }
+
+  @override
+  String get petCardShare => 'အိမ်မွေးတိရစ္ဆာန်ကတ် မျှဝေရန်';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · အိမ်မွေးတိရစ္ဆာန်ကတ်';
+  }
+
+  @override
+  String get petCareBody => 'အလိုအလျောက် ထပ်ဖြစ်သော သတိပေးချက် ထည့်ပါ။';
+
+  @override
+  String get petCareCheckup => 'တိရစ္ဆာန်ဆရာဝန် စစ်ဆေးမှု';
+
+  @override
+  String get petCareFlea => 'ခွေးလှေးနှင့် မွှားကုသမှု';
+
+  @override
+  String get petCareTitle => 'စောင့်ရှောက်မှု သတိပေးချက်များ';
+
+  @override
+  String get petCareWorming => 'သန်ချဆေး';
+
+  @override
+  String get petPlanAdd => 'ဤရက်စွဲများကို ကျွန်ုပ်၏ သတိပေးချက်များထဲ ထည့်ရန်';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'ထည့်ပြီး သတိပေးချက်: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'ခရီးမထွက်မီ';
+
+  @override
+  String petPlanBy(String date) {
+    return '$date နောက်ဆုံး';
+  }
+
+  @override
+  String get petPlanDate => 'ခရီးထွက်ရက်';
+
+  @override
+  String get petPlanLate => 'ဤခရီးထွက်ရက်အတွက် နောက်ကျလွန်းပြီ';
+
+  @override
+  String get petPlanNote => 'ရက်စွဲတစ်ခုစီသည် အဆင့်ကို လုပ်နိုင်သည့် နောက်ဆုံးရက် ဖြစ်သည်။ အဆင့်များကြား တရားဝင်ဆိုက်က တောင်းသည့် ကြားကာလအကြောင်း တိရစ္ဆာန်ဆရာဝန်ကို မေးပါ။';
+
+  @override
+  String get petPlanNothingToAdd => 'ဤရက်စွဲများ သင့်သတိပေးချက်ထဲ ရှိပြီးသား ဖြစ်သည်။';
+
+  @override
+  String get petPlanPickDate => 'အဆင့်တစ်ခုစီ ဘယ်အချိန်လဲ သိရန် ခရီးထွက်ရက် ရွေးပါ';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return '$country ခရီးအတွက်';
+  }
+
+  @override
+  String get petPlanTitle => 'ခရီးသို့ နောက်ပြန်ရေတွက်ချိန်';
+
+  @override
+  String get petStepCertificate => 'ကျန်းမာရေးလက်မှတ်နှင့် စာရွက်စာတမ်းများ';
+
+  @override
+  String get petStepChip => 'မိုက်ခရိုချစ်';
+
+  @override
+  String get petStepRabies => 'ခွေးရူးပြန်ကာကွယ်ဆေး';
+
+  @override
+  String get petStepResidence => 'အတည်ပြုထားသော နိုင်ငံသို့ ရောက်ရှိရန်';
+
+  @override
+  String get petStepTapeworm => 'သန်ကောင်ပြားကုသမှု';
+
+  @override
+  String get petStepTitre => 'ခွေးရူးပြန် သွေးစစ်ဆေးမှု';
+
+  @override
+  String get petTypeChecking => 'ရှာဖွေနေသည်…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return '$name ကို ဆိုလိုပါသလား?';
+  }
+
+  @override
+  String get petTypeJunk => 'စာလုံးများသာ သုံးပါ၊ ဥပမာ ယုန် သို့မဟုတ် တာရန်တူလာ။';
+
+  @override
+  String get petTypeKeepAnyway => 'ထားရှိရန်';
+
+  @override
+  String get petTypeNotAnimal => '၎င်းသည် တိရစ္ဆာန်အမျိုးအစားနှင့် မတူပါ။';
+
+  @override
+  String get petTypeOwnNote => 'သင့်ကိုယ်ပိုင် အမျိုးအစားအဖြစ် သိမ်းထားသည်။ ခရီးစည်းမျဉ်းများက တရားဝင်ဆိုက်ကို ညွှန်ပြမည်။';
+
+  @override
+  String get planBenefitCalendar => '\"မကြာမီ သက်တမ်းတိုး\" ဖြစ်ရပ်များနှင့် ခရီးများပါသော ပြက္ခဒိန်လင့်ခ်';
+
+  @override
+  String get planBenefitPetCare => 'အိမ်မွေးတိရစ္ဆာန်ဓာတ်ပုံ၊ စောင့်ရှောက်မှုသတိပေးချက်နှင့် ခရီးနောက်ပြန်ရေတွက်ချိန်';
+
+  @override
+  String get savingsComing => 'လာမည့် ၁၂ လအတွင်း';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'သတိ: $month သည် သင့်အတွက် အကုန်အကျအများဆုံးလ ဖြစ်သည် ($amount)။';
+  }
+
+  @override
+  String get savingsLeftOut => 'ငွေလဲနှုန်းမရှိသော ငွေကြေးဖြင့် ကုန်ကျစရိတ်များ မပါဝင်ပါ။';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'သက်တမ်းတိုးမှုများအတွက် လစဉ် $amount ခန့် စုထားပါ။';
+  }
+
+  @override
+  String get savingsSpent => 'ယခုနှစ် ပေးချေပြီး';
+
+  @override
+  String get subcategoryPetCheckups => 'တိရစ္ဆာန်ဆရာဝန် စစ်ဆေးမှုများ';
+
+  @override
+  String get subcategoryPetTreatments => 'ခွေးလှေး၊ မွှားနှင့် သန်ကောင်ကုသမှုများ';
+
+  @override
+  String get tourBusinessHistoryBody => 'မျှဝေထားသော မှတ်တမ်းများကို မည်သူ ထည့်၊ ပြောင်း သို့မဟုတ် ဖျက်ခဲ့သည်ကို ကြည့်ပြီး စစ်ဆေးမှုအတွက် PDF ဖြင့် ထုတ်ယူပါ။';
+
+  @override
+  String get tourPetsTravelPlanBody => 'မည်သည့်နိုင်ငံအတွက်မဆို အိမ်မွေးတိရစ္ဆာန်လိုအပ်ချက်ကို စစ်ပြီး သတိပေးချက်ထဲ ထည့်နိုင်သော နောက်ပြန်ရေတွက်ချိန်အတွက် ခရီးထွက်ရက် ရွေးပါ။';
+
+  @override
+  String get tripEntryTitle => 'ဝင်ရောက်မှု အသေးစိတ်';
+
+  @override
   String get yoursTag => 'သင့်ဟာ';
 
   @override

@@ -8825,6 +8825,260 @@ class AppLocalizationsCs extends AppLocalizations {
   String get rulesReviewDropped => 'Vynecháno (žádná odpovídající věta)';
 
   @override
+  String get assistantStepHistory => 'Kontroluji historii změn';
+
+  @override
+  String get businessBenefitHistory => 'Historie změn sdílených záznamů s exportem do PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'Kalendáři Google může zobrazení změn trvat až den. Apple Kalendář a Outlook se obvykle aktualizují během pár hodin.';
+
+  @override
+  String get calendarOptionCategories => 'Kategorie';
+
+  @override
+  String get calendarOptionHide => 'Skrýt názvy záznamů';
+
+  @override
+  String get calendarOptionHideBody => 'Události místo názvu uvádějí „Dokument vyprší“';
+
+  @override
+  String get calendarOptionPeople => 'Lidé';
+
+  @override
+  String get calendarOptionRenew => 'Události „Brzy obnovit“';
+
+  @override
+  String get calendarOptionRenewBody => 'Další událost v den připomínky každého záznamu';
+
+  @override
+  String get calendarOptionTrips => 'Cesty';
+
+  @override
+  String get calendarOptionsTitle => 'Co bude ve vašem kalendáři';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Tísňové číslo: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Pro tuto cestu není uloženo mezinárodní řidičské oprávnění';
+
+  @override
+  String get entryPermitNotNeeded => 'K řízení není potřeba mezinárodní řidičské oprávnění';
+
+  @override
+  String get entryPermitRecommended => 'K řízení se doporučuje mezinárodní řidičské oprávnění';
+
+  @override
+  String get entryPermitRequired => 'Řidiči potřebují mezinárodní řidičské oprávnění';
+
+  @override
+  String get entryYellowFeverAll => 'Je potřeba certifikát o očkování proti žluté zimnici';
+
+  @override
+  String get entryYellowFeverNo => 'Certifikát o žluté zimnici není potřeba';
+
+  @override
+  String get entryYellowFeverRisk => 'Certifikát o žluté zimnici je potřeba, pokud přijíždíte ze země s rizikem žluté zimnice';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person přidal(a) $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person změnil(a) $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person smazal(a) $record';
+  }
+
+  @override
+  String get historyEmpty => 'Zatím žádné změny. Změny sdílených záznamů se zobrazí zde.';
+
+  @override
+  String get historyLoadMore => 'Zobrazit více';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Vytvořeno $date. Počet změn: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Co se změnilo';
+
+  @override
+  String historyRemoved(String record) {
+    return '$record byl trvale odstraněn';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person obnovil(a) $record';
+  }
+
+  @override
+  String get historySubtitle => 'Kdo přidal, změnil nebo smazal sdílené záznamy';
+
+  @override
+  String get historyTitle => 'Historie změn';
+
+  @override
+  String petCardMade(String date) {
+    return 'Vytvořeno ve Vaultaře $date';
+  }
+
+  @override
+  String get petCardShare => 'Sdílet kartu mazlíčka';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Karta mazlíčka';
+  }
+
+  @override
+  String get petCareBody => 'Přidejte připomínku, která se sama opakuje.';
+
+  @override
+  String get petCareCheckup => 'Veterinární prohlídka';
+
+  @override
+  String get petCareFlea => 'Ošetření proti blechám a klíšťatům';
+
+  @override
+  String get petCareTitle => 'Připomínky péče';
+
+  @override
+  String get petCareWorming => 'Odčervení';
+
+  @override
+  String get petPlanAdd => 'Přidat tato data do mých připomínek';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Přidané připomínky: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Před cestou';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Do $date';
+  }
+
+  @override
+  String get petPlanDate => 'Datum cesty';
+
+  @override
+  String get petPlanLate => 'Na toto datum cesty je už pozdě';
+
+  @override
+  String get petPlanNote => 'Každé datum je poslední den, kdy krok může proběhnout. Na odstupy mezi kroky, které vyžaduje oficiální web, se zeptejte veterináře.';
+
+  @override
+  String get petPlanNothingToAdd => 'Tato data už ve vašich připomínkách jsou.';
+
+  @override
+  String get petPlanPickDate => 'Vyberte datum cesty a uvidíte, kdy je který krok';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Na cestu do $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Odpočet do cesty';
+
+  @override
+  String get petStepCertificate => 'Zdravotní certifikát a doklady';
+
+  @override
+  String get petStepChip => 'Mikročip';
+
+  @override
+  String get petStepRabies => 'Očkování proti vzteklině';
+
+  @override
+  String get petStepResidence => 'Přijet do schválené země';
+
+  @override
+  String get petStepTapeworm => 'Ošetření proti tasemnici';
+
+  @override
+  String get petStepTitre => 'Krevní test na vzteklinu';
+
+  @override
+  String get petTypeChecking => 'Vyhledávám…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Měli jste na mysli $name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Používejte jen písmena, třeba Králík nebo Tarantule.';
+
+  @override
+  String get petTypeKeepAnyway => 'Ponechat';
+
+  @override
+  String get petTypeNotAnimal => 'Tohle nevypadá jako druh zvířete.';
+
+  @override
+  String get petTypeOwnNote => 'Uloženo jako vlastní druh. Cestovní pravidla odkážou na oficiální web.';
+
+  @override
+  String get planBenefitCalendar => 'Odkaz kalendáře s událostmi „Brzy obnovit“ a cestami';
+
+  @override
+  String get planBenefitPetCare => 'Fotky mazlíčků, připomínky péče a odpočet do cesty';
+
+  @override
+  String get savingsComing => 'Během 12 měsíců';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Upozornění: $month je váš nejdražší měsíc ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Náklady v měnách bez kurzu nejsou započteny.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Odkládejte si asi $amount měsíčně na obnovy.';
+  }
+
+  @override
+  String get savingsSpent => 'Zaplaceno letos';
+
+  @override
+  String get subcategoryPetCheckups => 'Veterinární prohlídky';
+
+  @override
+  String get subcategoryPetTreatments => 'Ošetření proti blechám, klíšťatům a červům';
+
+  @override
+  String get tourBusinessHistoryBody => 'Podívejte se, kdo přidal, změnil nebo smazal sdílené záznamy, a exportujte to do PDF pro audit.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Zjistěte, co mazlíček potřebuje pro kteroukoli zemi, a vyberte datum cesty pro odpočet, který si můžete přidat do připomínek.';
+
+  @override
+  String get tripEntryTitle => 'Vstupní údaje';
+
+  @override
   String get yoursTag => 'Vaše';
 
   @override

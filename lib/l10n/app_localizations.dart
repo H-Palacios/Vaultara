@@ -15079,6 +15079,450 @@ abstract class AppLocalizations {
   /// **'Left out (no matching sentence)'**
   String get rulesReviewDropped;
 
+  /// Pets, calendar, costs and change history: assistantStepHistory
+  ///
+  /// In en, this message translates to:
+  /// **'Checking the change history'**
+  String get assistantStepHistory;
+
+  /// Pets, calendar, costs and change history: businessBenefitHistory
+  ///
+  /// In en, this message translates to:
+  /// **'Change history of shared records, with PDF export'**
+  String get businessBenefitHistory;
+
+  /// Pets, calendar, costs and change history: calendarLinkGoogleNote
+  ///
+  /// In en, this message translates to:
+  /// **'Google Calendar can take up to a day to show changes. Apple Calendar and Outlook usually update within a few hours.'**
+  String get calendarLinkGoogleNote;
+
+  /// Pets, calendar, costs and change history: calendarOptionCategories
+  ///
+  /// In en, this message translates to:
+  /// **'Categories'**
+  String get calendarOptionCategories;
+
+  /// Pets, calendar, costs and change history: calendarOptionHide
+  ///
+  /// In en, this message translates to:
+  /// **'Hide record names'**
+  String get calendarOptionHide;
+
+  /// Pets, calendar, costs and change history: calendarOptionHideBody
+  ///
+  /// In en, this message translates to:
+  /// **'Events say \"Document expires\" instead of the name'**
+  String get calendarOptionHideBody;
+
+  /// Pets, calendar, costs and change history: calendarOptionPeople
+  ///
+  /// In en, this message translates to:
+  /// **'People'**
+  String get calendarOptionPeople;
+
+  /// Pets, calendar, costs and change history: calendarOptionRenew
+  ///
+  /// In en, this message translates to:
+  /// **'Renew soon events'**
+  String get calendarOptionRenew;
+
+  /// Pets, calendar, costs and change history: calendarOptionRenewBody
+  ///
+  /// In en, this message translates to:
+  /// **'An extra event on each record\'s reminder day'**
+  String get calendarOptionRenewBody;
+
+  /// Pets, calendar, costs and change history: calendarOptionTrips
+  ///
+  /// In en, this message translates to:
+  /// **'Trips'**
+  String get calendarOptionTrips;
+
+  /// Pets, calendar, costs and change history: calendarOptionsTitle
+  ///
+  /// In en, this message translates to:
+  /// **'What goes in your calendar'**
+  String get calendarOptionsTitle;
+
+  /// Pets, calendar, costs and change history: entryEmergency
+  ///
+  /// In en, this message translates to:
+  /// **'Emergency number: {number}'**
+  String entryEmergency(String number);
+
+  /// Pets, calendar, costs and change history: entryNoPermitSaved
+  ///
+  /// In en, this message translates to:
+  /// **'No International Driving Permit saved for this trip'**
+  String get entryNoPermitSaved;
+
+  /// Pets, calendar, costs and change history: entryPermitNotNeeded
+  ///
+  /// In en, this message translates to:
+  /// **'No International Driving Permit needed to drive'**
+  String get entryPermitNotNeeded;
+
+  /// Pets, calendar, costs and change history: entryPermitRecommended
+  ///
+  /// In en, this message translates to:
+  /// **'An International Driving Permit is recommended for driving'**
+  String get entryPermitRecommended;
+
+  /// Pets, calendar, costs and change history: entryPermitRequired
+  ///
+  /// In en, this message translates to:
+  /// **'Drivers need an International Driving Permit'**
+  String get entryPermitRequired;
+
+  /// Pets, calendar, costs and change history: entryYellowFeverAll
+  ///
+  /// In en, this message translates to:
+  /// **'A yellow fever vaccination certificate is needed'**
+  String get entryYellowFeverAll;
+
+  /// Pets, calendar, costs and change history: entryYellowFeverNo
+  ///
+  /// In en, this message translates to:
+  /// **'No yellow fever certificate needed'**
+  String get entryYellowFeverNo;
+
+  /// Pets, calendar, costs and change history: entryYellowFeverRisk
+  ///
+  /// In en, this message translates to:
+  /// **'A yellow fever certificate is needed if you arrive from a country with yellow fever risk'**
+  String get entryYellowFeverRisk;
+
+  /// Pets, calendar, costs and change history: historyAdded
+  ///
+  /// In en, this message translates to:
+  /// **'{person} added {record}'**
+  String historyAdded(String person, String record);
+
+  /// Pets, calendar, costs and change history: historyChanged
+  ///
+  /// In en, this message translates to:
+  /// **'{person} changed {record}'**
+  String historyChanged(String person, String record);
+
+  /// Pets, calendar, costs and change history: historyDeleted
+  ///
+  /// In en, this message translates to:
+  /// **'{person} deleted {record}'**
+  String historyDeleted(String person, String record);
+
+  /// Pets, calendar, costs and change history: historyEmpty
+  ///
+  /// In en, this message translates to:
+  /// **'No changes yet. Changes to shared records will show here.'**
+  String get historyEmpty;
+
+  /// Pets, calendar, costs and change history: historyLoadMore
+  ///
+  /// In en, this message translates to:
+  /// **'Show more'**
+  String get historyLoadMore;
+
+  /// Pets, calendar, costs and change history: historyPdfMade
+  ///
+  /// In en, this message translates to:
+  /// **'Made on {date}. Changes listed: {count}'**
+  String historyPdfMade(String date, int count);
+
+  /// Pets, calendar, costs and change history: historyPdfWhat
+  ///
+  /// In en, this message translates to:
+  /// **'What changed'**
+  String get historyPdfWhat;
+
+  /// Pets, calendar, costs and change history: historyRemoved
+  ///
+  /// In en, this message translates to:
+  /// **'{record} was removed for good'**
+  String historyRemoved(String record);
+
+  /// Pets, calendar, costs and change history: historyRestored
+  ///
+  /// In en, this message translates to:
+  /// **'{person} restored {record}'**
+  String historyRestored(String person, String record);
+
+  /// Pets, calendar, costs and change history: historySubtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Who added, changed or deleted shared records'**
+  String get historySubtitle;
+
+  /// Pets, calendar, costs and change history: historyTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Change history'**
+  String get historyTitle;
+
+  /// Pets, calendar, costs and change history: petCardMade
+  ///
+  /// In en, this message translates to:
+  /// **'Made with Vaultara on {date}'**
+  String petCardMade(String date);
+
+  /// Pets, calendar, costs and change history: petCardShare
+  ///
+  /// In en, this message translates to:
+  /// **'Share pet card'**
+  String get petCardShare;
+
+  /// Pets, calendar, costs and change history: petCardTitle
+  ///
+  /// In en, this message translates to:
+  /// **'{name} · Pet card'**
+  String petCardTitle(String name);
+
+  /// Pets, calendar, costs and change history: petCareBody
+  ///
+  /// In en, this message translates to:
+  /// **'Add a reminder that repeats on its own.'**
+  String get petCareBody;
+
+  /// Pets, calendar, costs and change history: petCareCheckup
+  ///
+  /// In en, this message translates to:
+  /// **'Vet check-up'**
+  String get petCareCheckup;
+
+  /// Pets, calendar, costs and change history: petCareFlea
+  ///
+  /// In en, this message translates to:
+  /// **'Flea and tick treatment'**
+  String get petCareFlea;
+
+  /// Pets, calendar, costs and change history: petCareTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Care reminders'**
+  String get petCareTitle;
+
+  /// Pets, calendar, costs and change history: petCareWorming
+  ///
+  /// In en, this message translates to:
+  /// **'Deworming'**
+  String get petCareWorming;
+
+  /// Pets, calendar, costs and change history: petPlanAdd
+  ///
+  /// In en, this message translates to:
+  /// **'Add these dates to my reminders'**
+  String get petPlanAdd;
+
+  /// Pets, calendar, costs and change history: petPlanAdded
+  ///
+  /// In en, this message translates to:
+  /// **'Reminders added: {count}'**
+  String petPlanAdded(int count);
+
+  /// Pets, calendar, costs and change history: petPlanBefore
+  ///
+  /// In en, this message translates to:
+  /// **'Before you travel'**
+  String get petPlanBefore;
+
+  /// Pets, calendar, costs and change history: petPlanBy
+  ///
+  /// In en, this message translates to:
+  /// **'By {date}'**
+  String petPlanBy(String date);
+
+  /// Pets, calendar, costs and change history: petPlanDate
+  ///
+  /// In en, this message translates to:
+  /// **'Travel date'**
+  String get petPlanDate;
+
+  /// Pets, calendar, costs and change history: petPlanLate
+  ///
+  /// In en, this message translates to:
+  /// **'Too late for this travel date'**
+  String get petPlanLate;
+
+  /// Pets, calendar, costs and change history: petPlanNote
+  ///
+  /// In en, this message translates to:
+  /// **'Each date is the latest the step can happen. Ask your vet about the gaps the official site asks for between steps.'**
+  String get petPlanNote;
+
+  /// Pets, calendar, costs and change history: petPlanNothingToAdd
+  ///
+  /// In en, this message translates to:
+  /// **'These dates are already in your reminders.'**
+  String get petPlanNothingToAdd;
+
+  /// Pets, calendar, costs and change history: petPlanPickDate
+  ///
+  /// In en, this message translates to:
+  /// **'Choose your travel date to see when each step is due'**
+  String get petPlanPickDate;
+
+  /// Pets, calendar, costs and change history: petPlanRecordName
+  ///
+  /// In en, this message translates to:
+  /// **'{pet}: {step}'**
+  String petPlanRecordName(String pet, String step);
+
+  /// Pets, calendar, costs and change history: petPlanRecordNote
+  ///
+  /// In en, this message translates to:
+  /// **'For the trip to {country}'**
+  String petPlanRecordNote(String country);
+
+  /// Pets, calendar, costs and change history: petPlanTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Countdown to your trip'**
+  String get petPlanTitle;
+
+  /// Pets, calendar, costs and change history: petStepCertificate
+  ///
+  /// In en, this message translates to:
+  /// **'Health certificate and papers'**
+  String get petStepCertificate;
+
+  /// Pets, calendar, costs and change history: petStepChip
+  ///
+  /// In en, this message translates to:
+  /// **'Microchip'**
+  String get petStepChip;
+
+  /// Pets, calendar, costs and change history: petStepRabies
+  ///
+  /// In en, this message translates to:
+  /// **'Rabies vaccine'**
+  String get petStepRabies;
+
+  /// Pets, calendar, costs and change history: petStepResidence
+  ///
+  /// In en, this message translates to:
+  /// **'Arrive in an approved country'**
+  String get petStepResidence;
+
+  /// Pets, calendar, costs and change history: petStepTapeworm
+  ///
+  /// In en, this message translates to:
+  /// **'Tapeworm treatment'**
+  String get petStepTapeworm;
+
+  /// Pets, calendar, costs and change history: petStepTitre
+  ///
+  /// In en, this message translates to:
+  /// **'Rabies blood test'**
+  String get petStepTitre;
+
+  /// Pets, calendar, costs and change history: petTypeChecking
+  ///
+  /// In en, this message translates to:
+  /// **'Looking it up…'**
+  String get petTypeChecking;
+
+  /// Pets, calendar, costs and change history: petTypeDidYouMean
+  ///
+  /// In en, this message translates to:
+  /// **'Did you mean {name}?'**
+  String petTypeDidYouMean(String name);
+
+  /// Pets, calendar, costs and change history: petTypeJunk
+  ///
+  /// In en, this message translates to:
+  /// **'Use letters only, like Rabbit or Tarantula.'**
+  String get petTypeJunk;
+
+  /// Pets, calendar, costs and change history: petTypeKeepAnyway
+  ///
+  /// In en, this message translates to:
+  /// **'Keep it'**
+  String get petTypeKeepAnyway;
+
+  /// Pets, calendar, costs and change history: petTypeNotAnimal
+  ///
+  /// In en, this message translates to:
+  /// **'This doesn\'t look like a type of animal.'**
+  String get petTypeNotAnimal;
+
+  /// Pets, calendar, costs and change history: petTypeOwnNote
+  ///
+  /// In en, this message translates to:
+  /// **'Saved as your own type. Travel rules will point to the official site.'**
+  String get petTypeOwnNote;
+
+  /// Pets, calendar, costs and change history: planBenefitCalendar
+  ///
+  /// In en, this message translates to:
+  /// **'Calendar link with Renew soon events and trips'**
+  String get planBenefitCalendar;
+
+  /// Pets, calendar, costs and change history: planBenefitPetCare
+  ///
+  /// In en, this message translates to:
+  /// **'Pet photos, care reminders and a travel countdown'**
+  String get planBenefitPetCare;
+
+  /// Pets, calendar, costs and change history: savingsComing
+  ///
+  /// In en, this message translates to:
+  /// **'Coming in 12 months'**
+  String get savingsComing;
+
+  /// Pets, calendar, costs and change history: savingsHeavyMonth
+  ///
+  /// In en, this message translates to:
+  /// **'Heads-up: {month} is your most expensive month ({amount}).'**
+  String savingsHeavyMonth(String month, String amount);
+
+  /// Pets, calendar, costs and change history: savingsLeftOut
+  ///
+  /// In en, this message translates to:
+  /// **'Costs in currencies without a rate are left out.'**
+  String get savingsLeftOut;
+
+  /// Pets, calendar, costs and change history: savingsMonthly
+  ///
+  /// In en, this message translates to:
+  /// **'Put aside about {amount} a month to cover your renewals.'**
+  String savingsMonthly(String amount);
+
+  /// Pets, calendar, costs and change history: savingsSpent
+  ///
+  /// In en, this message translates to:
+  /// **'Paid this year'**
+  String get savingsSpent;
+
+  /// Pets, calendar, costs and change history: subcategoryPetCheckups
+  ///
+  /// In en, this message translates to:
+  /// **'Vet check-ups'**
+  String get subcategoryPetCheckups;
+
+  /// Pets, calendar, costs and change history: subcategoryPetTreatments
+  ///
+  /// In en, this message translates to:
+  /// **'Flea, tick and worm treatments'**
+  String get subcategoryPetTreatments;
+
+  /// Pets, calendar, costs and change history: tourBusinessHistoryBody
+  ///
+  /// In en, this message translates to:
+  /// **'See who added, changed or deleted shared records, and export it as a PDF for an audit.'**
+  String get tourBusinessHistoryBody;
+
+  /// Pets, calendar, costs and change history: tourPetsTravelPlanBody
+  ///
+  /// In en, this message translates to:
+  /// **'Check what a pet needs for any country, then pick your travel date for a countdown you can add to your reminders.'**
+  String get tourPetsTravelPlanBody;
+
+  /// Pets, calendar, costs and change history: tripEntryTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Entry details'**
+  String get tripEntryTitle;
+
   /// Small label on a category or group the user made.
   ///
   /// In en, this message translates to:

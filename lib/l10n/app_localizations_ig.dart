@@ -8639,6 +8639,260 @@ class AppLocalizationsIg extends AppLocalizations {
   String get rulesReviewDropped => 'Ewepụrụ (enweghị ahịrịokwu dabara)';
 
   @override
+  String get assistantStepHistory => 'Na-elele akụkọ mgbanwe';
+
+  @override
+  String get businessBenefitHistory => 'Akụkọ mgbanwe nke ndekọ ekekọrịtara, ya na mbupụ PDF';
+
+  @override
+  String get calendarLinkGoogleNote => 'Google Calendar nwere ike iwe ruo otu ụbọchị igosi mgbanwe. Apple Calendar na Outlook na-emelitekarị n\'ime awa ole na ole.';
+
+  @override
+  String get calendarOptionCategories => 'Ụdị';
+
+  @override
+  String get calendarOptionHide => 'Zoo aha ndekọ';
+
+  @override
+  String get calendarOptionHideBody => 'Ihe omume ga-ekwu \"Akwụkwọ na-agwụ\" kama aha ya';
+
+  @override
+  String get calendarOptionPeople => 'Ndị mmadụ';
+
+  @override
+  String get calendarOptionRenew => 'Ihe omume \"Megharịa n\'oge na-adịghị anya\"';
+
+  @override
+  String get calendarOptionRenewBody => 'Ihe omume ọzọ n\'ụbọchị ncheta nke ndekọ ọ bụla';
+
+  @override
+  String get calendarOptionTrips => 'Njem';
+
+  @override
+  String get calendarOptionsTitle => 'Ihe na-abanye na kalenda gị';
+
+  @override
+  String entryEmergency(String number) {
+    return 'Nọmba mberede: $number';
+  }
+
+  @override
+  String get entryNoPermitSaved => 'Enweghị ikike ịnya ụgbọ ala mba ụwa echekwara maka njem a';
+
+  @override
+  String get entryPermitNotNeeded => 'Achọghị ikike ịnya ụgbọ ala mba ụwa iji nya ụgbọ ala';
+
+  @override
+  String get entryPermitRecommended => 'A na-atụ aro ikike ịnya ụgbọ ala mba ụwa iji nya ụgbọ ala';
+
+  @override
+  String get entryPermitRequired => 'Ndị ọkwọ ụgbọ ala chọrọ ikike ịnya ụgbọ ala mba ụwa';
+
+  @override
+  String get entryYellowFeverAll => 'A chọrọ asambodo ọgwụ mgbochi ahụ ọkụ odo';
+
+  @override
+  String get entryYellowFeverNo => 'Achọghị asambodo ahụ ọkụ odo';
+
+  @override
+  String get entryYellowFeverRisk => 'A chọrọ asambodo ahụ ọkụ odo ma ọ bụrụ na ị si mba nwere ihe ize ndụ ahụ ọkụ odo';
+
+  @override
+  String historyAdded(String person, String record) {
+    return '$person tinyere $record';
+  }
+
+  @override
+  String historyChanged(String person, String record) {
+    return '$person gbanwere $record';
+  }
+
+  @override
+  String historyDeleted(String person, String record) {
+    return '$person hichapụrụ $record';
+  }
+
+  @override
+  String get historyEmpty => 'Enweghị mgbanwe ka ugbu a. Mgbanwe ndekọ ekekọrịtara ga-apụta ebe a.';
+
+  @override
+  String get historyLoadMore => 'Gosi ndị ọzọ';
+
+  @override
+  String historyPdfMade(String date, int count) {
+    return 'Emere na $date. Mgbanwe: $count';
+  }
+
+  @override
+  String get historyPdfWhat => 'Ihe gbanwere';
+
+  @override
+  String historyRemoved(String record) {
+    return 'E wepụrụ $record kpamkpam';
+  }
+
+  @override
+  String historyRestored(String person, String record) {
+    return '$person weghachiri $record';
+  }
+
+  @override
+  String get historySubtitle => 'Onye tinyere, gbanwee ma ọ bụ hichapụ ndekọ ekekọrịtara';
+
+  @override
+  String get historyTitle => 'Akụkọ mgbanwe';
+
+  @override
+  String petCardMade(String date) {
+    return 'Ejiri Vaultara mee na $date';
+  }
+
+  @override
+  String get petCardShare => 'Kekọrịta kaadị anụ ụlọ';
+
+  @override
+  String petCardTitle(String name) {
+    return '$name · Kaadị anụ ụlọ';
+  }
+
+  @override
+  String get petCareBody => 'Tinye ncheta na-ekwughachi n\'onwe ya.';
+
+  @override
+  String get petCareCheckup => 'Nlele dọkịta anụmanụ';
+
+  @override
+  String get petCareFlea => 'Ọgwụ maka ụkwụ na akọrọ';
+
+  @override
+  String get petCareTitle => 'Ncheta nlekọta';
+
+  @override
+  String get petCareWorming => 'Ọgwụ ikpuru';
+
+  @override
+  String get petPlanAdd => 'Tinye ụbọchị ndị a na ncheta m';
+
+  @override
+  String petPlanAdded(int count) {
+    return 'Ncheta etinyere: $count';
+  }
+
+  @override
+  String get petPlanBefore => 'Tupu njem';
+
+  @override
+  String petPlanBy(String date) {
+    return 'Tupu $date';
+  }
+
+  @override
+  String get petPlanDate => 'Ụbọchị njem';
+
+  @override
+  String get petPlanLate => 'O tufuola oge maka ụbọchị njem a';
+
+  @override
+  String get petPlanNote => 'Ụbọchị ọ bụla bụ ụbọchị ikpeazụ nzọụkwụ ahụ nwere ike ime. Jụọ dọkịta anụmanụ gị gbasara oge dị n\'etiti nzọụkwụ nke saịtị gọọmentị chọrọ.';
+
+  @override
+  String get petPlanNothingToAdd => 'Ụbọchị ndị a dịlarị na ncheta gị.';
+
+  @override
+  String get petPlanPickDate => 'Họrọ ụbọchị njem gị ka ịhụ mgbe nzọụkwụ ọ bụla ga-eme';
+
+  @override
+  String petPlanRecordName(String pet, String step) {
+    return '$pet: $step';
+  }
+
+  @override
+  String petPlanRecordNote(String country) {
+    return 'Maka njem gaa $country';
+  }
+
+  @override
+  String get petPlanTitle => 'Ọgụgụ azụ ruo njem gị';
+
+  @override
+  String get petStepCertificate => 'Asambodo ahụike na akwụkwọ';
+
+  @override
+  String get petStepChip => 'Microchip';
+
+  @override
+  String get petStepRabies => 'Ọgwụ mgbochi ọrịa nkịta ara';
+
+  @override
+  String get petStepResidence => 'Rute mba a kwadoro';
+
+  @override
+  String get petStepTapeworm => 'Ọgwụ ikpuru eriri';
+
+  @override
+  String get petStepTitre => 'Nnwale ọbara ọrịa nkịta ara';
+
+  @override
+  String get petTypeChecking => 'Na-achọ…';
+
+  @override
+  String petTypeDidYouMean(String name) {
+    return 'Ị pụtara $name?';
+  }
+
+  @override
+  String get petTypeJunk => 'Jiri naanị mkpụrụedemede, dịka Oke bekee ma ọ bụ Tarantula.';
+
+  @override
+  String get petTypeKeepAnyway => 'Debe ya';
+
+  @override
+  String get petTypeNotAnimal => 'Nke a adịghị ka ụdị anụmanụ.';
+
+  @override
+  String get petTypeOwnNote => 'Echekwara dịka ụdị nke gị. Iwu njem ga-ezo aka na saịtị gọọmentị.';
+
+  @override
+  String get planBenefitCalendar => 'Njikọ kalenda nwere ihe omume \"Megharịa n\'oge na-adịghị anya\" na njem';
+
+  @override
+  String get planBenefitPetCare => 'Foto anụ ụlọ, ncheta nlekọta na ọgụgụ azụ njem';
+
+  @override
+  String get savingsComing => 'N\'ime ọnwa 12';
+
+  @override
+  String savingsHeavyMonth(String month, String amount) {
+    return 'Mara: $month bụ ọnwa kacha dị oke ọnụ ($amount).';
+  }
+
+  @override
+  String get savingsLeftOut => 'Ego ndị dị na ego enweghị ọnụego agụnyeghị.';
+
+  @override
+  String savingsMonthly(String amount) {
+    return 'Debe ihe dị ka $amount kwa ọnwa maka mmeghari gị.';
+  }
+
+  @override
+  String get savingsSpent => 'Akwụrụ n\'afọ a';
+
+  @override
+  String get subcategoryPetCheckups => 'Nlele dọkịta anụmanụ';
+
+  @override
+  String get subcategoryPetTreatments => 'Ọgwụ maka ụkwụ, akọrọ na ikpuru';
+
+  @override
+  String get tourBusinessHistoryBody => 'Hụ onye tinyere, gbanwee ma ọ bụ hichapụ ndekọ ekekọrịtara, ma bupụ ya dịka PDF maka nyocha.';
+
+  @override
+  String get tourPetsTravelPlanBody => 'Lelee ihe anụ ụlọ chọrọ maka mba ọ bụla, wee họrọ ụbọchị njem maka ọgụgụ azụ ị nwere ike itinye na ncheta gị.';
+
+  @override
+  String get tripEntryTitle => 'Nkọwa ịbanye';
+
+  @override
   String get yoursTag => 'Nke gị';
 
   @override
