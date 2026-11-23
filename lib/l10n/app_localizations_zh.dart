@@ -8235,6 +8235,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => '会员与订阅';
 
   @override
+  String get categoryPetsAndAnimals => '宠物和动物';
+
+  @override
   String get subcategoryFirearmLicences => '持枪许可证';
 
   @override
@@ -8275,6 +8278,21 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => '保修与保证';
+
+  @override
+  String get subcategoryPetVaccinations => '宠物疫苗';
+
+  @override
+  String get subcategoryPetLicences => '宠物登记证';
+
+  @override
+  String get subcategoryPetMicrochips => '芯片登记';
+
+  @override
+  String get subcategoryPetInsurances => '宠物保险';
+
+  @override
+  String get subcategoryPetPassports => '宠物护照';
 
   @override
   String get yoursTag => '我的';
@@ -18125,6 +18143,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get categoryMembershipsAndSubscriptions => '会员与订阅';
 
   @override
+  String get categoryPetsAndAnimals => '宠物和动物';
+
+  @override
   String get subcategoryFirearmLicences => '持枪许可证';
 
   @override
@@ -18165,6 +18186,21 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get subcategoryWarranties => '保修与保证';
+
+  @override
+  String get subcategoryPetVaccinations => '宠物疫苗';
+
+  @override
+  String get subcategoryPetLicences => '宠物登记证';
+
+  @override
+  String get subcategoryPetMicrochips => '芯片登记';
+
+  @override
+  String get subcategoryPetInsurances => '宠物保险';
+
+  @override
+  String get subcategoryPetPassports => '宠物护照';
 
   @override
   String get yoursTag => '我的';
@@ -28015,6 +28051,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get categoryMembershipsAndSubscriptions => '會員與訂閱';
 
   @override
+  String get categoryPetsAndAnimals => '寵物和動物';
+
+  @override
   String get subcategoryFirearmLicences => '槍枝執照';
 
   @override
@@ -28055,6 +28094,21 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get subcategoryWarranties => '保固與保證';
+
+  @override
+  String get subcategoryPetVaccinations => '寵物疫苗';
+
+  @override
+  String get subcategoryPetLicences => '寵物登記證';
+
+  @override
+  String get subcategoryPetMicrochips => '晶片登記';
+
+  @override
+  String get subcategoryPetInsurances => '寵物保險';
+
+  @override
+  String get subcategoryPetPassports => '寵物護照';
 
   @override
   String get yoursTag => '我的';

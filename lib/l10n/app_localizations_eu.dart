@@ -8296,6 +8296,9 @@ class AppLocalizationsEu extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Bazkidetzak eta harpidetzak';
 
   @override
+  String get categoryPetsAndAnimals => 'Maskotak eta animaliak';
+
+  @override
   String get subcategoryFirearmLicences => 'Arma-lizentziak';
 
   @override
@@ -8336,6 +8339,21 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Bermeak';
+
+  @override
+  String get subcategoryPetVaccinations => 'Maskoten txertoak';
+
+  @override
+  String get subcategoryPetLicences => 'Maskoten lizentziak';
+
+  @override
+  String get subcategoryPetMicrochips => 'Mikrotxip-erregistroak';
+
+  @override
+  String get subcategoryPetInsurances => 'Maskoten asegurua';
+
+  @override
+  String get subcategoryPetPassports => 'Maskoten pasaporteak';
 
   @override
   String get yoursTag => 'Zurea';

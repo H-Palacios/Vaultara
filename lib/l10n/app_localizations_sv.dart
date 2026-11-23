@@ -8295,6 +8295,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Medlemskap och abonnemang';
 
   @override
+  String get categoryPetsAndAnimals => 'Husdjur och djur';
+
+  @override
   String get subcategoryFirearmLicences => 'Vapenlicenser';
 
   @override
@@ -8335,6 +8338,21 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Garantier';
+
+  @override
+  String get subcategoryPetVaccinations => 'Vaccinationer för husdjur';
+
+  @override
+  String get subcategoryPetLicences => 'Licenser för husdjur';
+
+  @override
+  String get subcategoryPetMicrochips => 'Mikrochipregistreringar';
+
+  @override
+  String get subcategoryPetInsurances => 'Djurförsäkring';
+
+  @override
+  String get subcategoryPetPassports => 'Djurpass';
 
   @override
   String get yoursTag => 'Ditt';

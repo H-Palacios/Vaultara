@@ -8517,6 +8517,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'العضويات والاشتراكات';
 
   @override
+  String get categoryPetsAndAnimals => 'الحيوانات الأليفة والحيوانات';
+
+  @override
   String get subcategoryFirearmLicences => 'تراخيص الأسلحة النارية';
 
   @override
@@ -8557,6 +8560,21 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'الضمانات';
+
+  @override
+  String get subcategoryPetVaccinations => 'تطعيمات الحيوانات الأليفة';
+
+  @override
+  String get subcategoryPetLicences => 'تراخيص الحيوانات الأليفة';
+
+  @override
+  String get subcategoryPetMicrochips => 'تسجيلات الشريحة الإلكترونية';
+
+  @override
+  String get subcategoryPetInsurances => 'تأمين الحيوانات الأليفة';
+
+  @override
+  String get subcategoryPetPassports => 'جوازات سفر الحيوانات الأليفة';
 
   @override
   String get yoursTag => 'خاص بك';

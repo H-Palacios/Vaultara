@@ -8235,6 +8235,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Hội viên và gói đăng ký';
 
   @override
+  String get categoryPetsAndAnimals => 'Thú cưng và động vật';
+
+  @override
   String get subcategoryFirearmLicences => 'Giấy phép sử dụng súng';
 
   @override
@@ -8275,6 +8278,21 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Bảo hành';
+
+  @override
+  String get subcategoryPetVaccinations => 'Tiêm phòng thú cưng';
+
+  @override
+  String get subcategoryPetLicences => 'Giấy phép thú cưng';
+
+  @override
+  String get subcategoryPetMicrochips => 'Đăng ký vi mạch';
+
+  @override
+  String get subcategoryPetInsurances => 'Bảo hiểm thú cưng';
+
+  @override
+  String get subcategoryPetPassports => 'Hộ chiếu thú cưng';
 
   @override
   String get yoursTag => 'Của bạn';

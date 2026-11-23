@@ -8235,6 +8235,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'ສະມາຊິກ ແລະ ການສະໝັກໃຊ້';
 
   @override
+  String get categoryPetsAndAnimals => 'ສັດລ້ຽງ ແລະ ສັດ';
+
+  @override
   String get subcategoryFirearmLicences => 'ໃບອະນຸຍາດອາວຸດປືນ';
 
   @override
@@ -8275,6 +8278,21 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'ການຮັບປະກັນ';
+
+  @override
+  String get subcategoryPetVaccinations => 'ວັກຊີນສັດລ້ຽງ';
+
+  @override
+  String get subcategoryPetLicences => 'ໃບອະນຸຍາດສັດລ້ຽງ';
+
+  @override
+  String get subcategoryPetMicrochips => 'ການລົງທະບຽນໄມໂຄຣຊິບ';
+
+  @override
+  String get subcategoryPetInsurances => 'ປະກັນໄພສັດລ້ຽງ';
+
+  @override
+  String get subcategoryPetPassports => 'ໜັງສືຜ່ານແດນສັດລ້ຽງ';
 
   @override
   String get yoursTag => 'ຂອງທ່ານ';

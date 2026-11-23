@@ -8241,6 +8241,9 @@ class AppLocalizationsIg extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Ndị otu na ndebanye aha';
 
   @override
+  String get categoryPetsAndAnimals => 'Anụ ụlọ na anụmanụ';
+
+  @override
   String get subcategoryFirearmLicences => 'Akwụkwọ ikike egbe';
 
   @override
@@ -8281,6 +8284,21 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Nkwa';
+
+  @override
+  String get subcategoryPetVaccinations => 'Ọgwụ mgbochi anụ ụlọ';
+
+  @override
+  String get subcategoryPetLicences => 'Ikike anụ ụlọ';
+
+  @override
+  String get subcategoryPetMicrochips => 'Ndebanye aha microchip';
+
+  @override
+  String get subcategoryPetInsurances => 'Mkpuchi anụ ụlọ';
+
+  @override
+  String get subcategoryPetPassports => 'Paspọtụ anụ ụlọ';
 
   @override
   String get yoursTag => 'Nke gị';

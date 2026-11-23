@@ -8286,6 +8286,9 @@ class AppLocalizationsFil extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Mga membership at subscription';
 
   @override
+  String get categoryPetsAndAnimals => 'Mga alagang hayop at hayop';
+
+  @override
   String get subcategoryFirearmLicences => 'Mga lisensya sa baril';
 
   @override
@@ -8326,6 +8329,21 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Mga warranty at garantiya';
+
+  @override
+  String get subcategoryPetVaccinations => 'Bakuna ng alagang hayop';
+
+  @override
+  String get subcategoryPetLicences => 'Lisensya ng alagang hayop';
+
+  @override
+  String get subcategoryPetMicrochips => 'Rehistro ng microchip';
+
+  @override
+  String get subcategoryPetInsurances => 'Insurance ng alagang hayop';
+
+  @override
+  String get subcategoryPetPassports => 'Pasaporte ng alagang hayop';
 
   @override
   String get yoursTag => 'Iyo';

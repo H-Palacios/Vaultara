@@ -8292,6 +8292,9 @@ class AppLocalizationsPa extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'ਮੈਂਬਰਸ਼ਿਪ ਅਤੇ ਸਬਸਕ੍ਰਿਪਸ਼ਨ';
 
   @override
+  String get categoryPetsAndAnimals => 'ਪਾਲਤੂ ਜਾਨਵਰ ਅਤੇ ਜਾਨਵਰ';
+
+  @override
   String get subcategoryFirearmLicences => 'ਹਥਿਆਰ ਲਾਇਸੈਂਸ';
 
   @override
@@ -8332,6 +8335,21 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'ਵਾਰੰਟੀ ਅਤੇ ਗਾਰੰਟੀ';
+
+  @override
+  String get subcategoryPetVaccinations => 'ਪਾਲਤੂ ਜਾਨਵਰਾਂ ਦੇ ਟੀਕੇ';
+
+  @override
+  String get subcategoryPetLicences => 'ਪਾਲਤੂ ਜਾਨਵਰਾਂ ਦੇ ਲਾਇਸੈਂਸ';
+
+  @override
+  String get subcategoryPetMicrochips => 'ਮਾਈਕ੍ਰੋਚਿੱਪ ਰਜਿਸਟ੍ਰੇਸ਼ਨ';
+
+  @override
+  String get subcategoryPetInsurances => 'ਪਾਲਤੂ ਜਾਨਵਰਾਂ ਦਾ ਬੀਮਾ';
+
+  @override
+  String get subcategoryPetPassports => 'ਪਾਲਤੂ ਜਾਨਵਰਾਂ ਦੇ ਪਾਸਪੋਰਟ';
 
   @override
   String get yoursTag => 'ਤੁਹਾਡਾ';

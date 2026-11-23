@@ -8439,6 +8439,9 @@ class AppLocalizationsUk extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Членства й підписки';
 
   @override
+  String get categoryPetsAndAnimals => 'Домашні улюбленці й тварини';
+
+  @override
   String get subcategoryFirearmLicences => 'Дозволи на зброю';
 
   @override
@@ -8479,6 +8482,21 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Гарантії';
+
+  @override
+  String get subcategoryPetVaccinations => 'Щеплення улюбленців';
+
+  @override
+  String get subcategoryPetLicences => 'Ліцензії на улюбленців';
+
+  @override
+  String get subcategoryPetMicrochips => 'Реєстрація мікрочипа';
+
+  @override
+  String get subcategoryPetInsurances => 'Страхування улюбленців';
+
+  @override
+  String get subcategoryPetPassports => 'Паспорти улюбленців';
 
   @override
   String get yoursTag => 'Ваше';

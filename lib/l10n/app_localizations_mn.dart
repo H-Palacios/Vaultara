@@ -8282,6 +8282,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Гишүүнчлэл ба захиалга';
 
   @override
+  String get categoryPetsAndAnimals => 'Тэжээвэр болон бусад амьтан';
+
+  @override
   String get subcategoryFirearmLicences => 'Галт зэвсгийн зөвшөөрөл';
 
   @override
@@ -8322,6 +8325,21 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Баталгаа';
+
+  @override
+  String get subcategoryPetVaccinations => 'Тэжээвэр амьтны вакцин';
+
+  @override
+  String get subcategoryPetLicences => 'Тэжээвэр амьтны зөвшөөрөл';
+
+  @override
+  String get subcategoryPetMicrochips => 'Микрочипийн бүртгэл';
+
+  @override
+  String get subcategoryPetInsurances => 'Тэжээвэр амьтны даатгал';
+
+  @override
+  String get subcategoryPetPassports => 'Тэжээвэр амьтны паспорт';
 
   @override
   String get yoursTag => 'Таных';

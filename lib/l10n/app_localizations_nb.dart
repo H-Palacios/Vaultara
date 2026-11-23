@@ -8296,6 +8296,9 @@ class AppLocalizationsNb extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Medlemskap og abonnementer';
 
   @override
+  String get categoryPetsAndAnimals => 'Kjæledyr og dyr';
+
+  @override
   String get subcategoryFirearmLicences => 'Våpenlisenser';
 
   @override
@@ -8336,6 +8339,21 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Garantier';
+
+  @override
+  String get subcategoryPetVaccinations => 'Vaksiner for kjæledyr';
+
+  @override
+  String get subcategoryPetLicences => 'Lisenser for kjæledyr';
+
+  @override
+  String get subcategoryPetMicrochips => 'Mikrochipregistreringer';
+
+  @override
+  String get subcategoryPetInsurances => 'Dyreforsikring';
+
+  @override
+  String get subcategoryPetPassports => 'Kjæledyrpass';
 
   @override
   String get yoursTag => 'Ditt';

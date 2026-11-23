@@ -8292,6 +8292,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Tagságok és előfizetések';
 
   @override
+  String get categoryPetsAndAnimals => 'Háziállatok és állatok';
+
+  @override
   String get subcategoryFirearmLicences => 'Fegyvertartási engedélyek';
 
   @override
@@ -8332,6 +8335,21 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Garanciák';
+
+  @override
+  String get subcategoryPetVaccinations => 'Háziállatok oltásai';
+
+  @override
+  String get subcategoryPetLicences => 'Háziállat-engedélyek';
+
+  @override
+  String get subcategoryPetMicrochips => 'Mikrochip-regisztrációk';
+
+  @override
+  String get subcategoryPetInsurances => 'Háziállat-biztosítás';
+
+  @override
+  String get subcategoryPetPassports => 'Kisállatútlevelek';
 
   @override
   String get yoursTag => 'Saját';

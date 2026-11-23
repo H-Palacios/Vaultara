@@ -8223,6 +8223,9 @@ class AppLocalizationsTh extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'สมาชิกและการสมัครรับ';
 
   @override
+  String get categoryPetsAndAnimals => 'สัตว์เลี้ยงและสัตว์';
+
+  @override
   String get subcategoryFirearmLicences => 'ใบอนุญาตอาวุธปืน';
 
   @override
@@ -8263,6 +8266,21 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'การรับประกัน';
+
+  @override
+  String get subcategoryPetVaccinations => 'วัคซีนสัตว์เลี้ยง';
+
+  @override
+  String get subcategoryPetLicences => 'ใบอนุญาตสัตว์เลี้ยง';
+
+  @override
+  String get subcategoryPetMicrochips => 'การลงทะเบียนไมโครชิป';
+
+  @override
+  String get subcategoryPetInsurances => 'ประกันสัตว์เลี้ยง';
+
+  @override
+  String get subcategoryPetPassports => 'พาสปอร์ตสัตว์เลี้ยง';
 
   @override
   String get yoursTag => 'ของคุณ';

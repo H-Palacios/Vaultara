@@ -8296,6 +8296,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Anëtarësime dhe abonime';
 
   @override
+  String get categoryPetsAndAnimals => 'Kafshët shtëpiake dhe kafshët';
+
+  @override
   String get subcategoryFirearmLicences => 'Leje armësh';
 
   @override
@@ -8336,6 +8339,21 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Garanci';
+
+  @override
+  String get subcategoryPetVaccinations => 'Vaksinat e kafshëve shtëpiake';
+
+  @override
+  String get subcategoryPetLicences => 'Licencat e kafshëve shtëpiake';
+
+  @override
+  String get subcategoryPetMicrochips => 'Regjistrimet e mikroçipit';
+
+  @override
+  String get subcategoryPetInsurances => 'Sigurimi i kafshëve shtëpiake';
+
+  @override
+  String get subcategoryPetPassports => 'Pasaportat e kafshëve shtëpiake';
 
   @override
   String get yoursTag => 'Juaji';

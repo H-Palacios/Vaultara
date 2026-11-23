@@ -8292,6 +8292,9 @@ class AppLocalizationsXh extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Ubulungu nemirhumo';
 
   @override
+  String get categoryPetsAndAnimals => 'Izilwanyana zasekhaya nezilwanyana';
+
+  @override
   String get subcategoryFirearmLicences => 'Iilayisenisi zemipu';
 
   @override
@@ -8332,6 +8335,21 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Iziqinisekiso';
+
+  @override
+  String get subcategoryPetVaccinations => 'Ugonyo lwezilwanyana zasekhaya';
+
+  @override
+  String get subcategoryPetLicences => 'Iilayisensi zezilwanyana zasekhaya';
+
+  @override
+  String get subcategoryPetMicrochips => 'Ubhaliso lwe-microchip';
+
+  @override
+  String get subcategoryPetInsurances => 'Inshorensi yezilwanyana zasekhaya';
+
+  @override
+  String get subcategoryPetPassports => 'Iipaspoti zezilwanyana zasekhaya';
 
   @override
   String get yoursTag => 'Okwakho';

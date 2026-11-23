@@ -8476,6 +8476,9 @@ class AppLocalizationsGa extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Ballraíochtaí agus síntiúis';
 
   @override
+  String get categoryPetsAndAnimals => 'Peataí agus ainmhithe';
+
+  @override
   String get subcategoryFirearmLicences => 'Ceadúnais arm tine';
 
   @override
@@ -8516,6 +8519,21 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Barántais';
+
+  @override
+  String get subcategoryPetVaccinations => 'Vacsaíní peataí';
+
+  @override
+  String get subcategoryPetLicences => 'Ceadúnais peataí';
+
+  @override
+  String get subcategoryPetMicrochips => 'Clárúcháin micrishlis';
+
+  @override
+  String get subcategoryPetInsurances => 'Árachas peataí';
+
+  @override
+  String get subcategoryPetPassports => 'Pasanna peataí';
 
   @override
   String get yoursTag => 'Leatsa';

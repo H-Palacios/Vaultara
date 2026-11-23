@@ -8296,6 +8296,9 @@ class AppLocalizationsFi extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Jäsenyydet ja tilaukset';
 
   @override
+  String get categoryPetsAndAnimals => 'Lemmikit ja eläimet';
+
+  @override
   String get subcategoryFirearmLicences => 'Aseluvat';
 
   @override
@@ -8336,6 +8339,21 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Takuut';
+
+  @override
+  String get subcategoryPetVaccinations => 'Lemmikkien rokotukset';
+
+  @override
+  String get subcategoryPetLicences => 'Lemmikkien luvat';
+
+  @override
+  String get subcategoryPetMicrochips => 'Mikrosirurekisteröinnit';
+
+  @override
+  String get subcategoryPetInsurances => 'Lemmikkivakuutus';
+
+  @override
+  String get subcategoryPetPassports => 'Lemmikkipassit';
 
   @override
   String get yoursTag => 'Oma';

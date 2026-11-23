@@ -8441,6 +8441,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Членства и подписки';
 
   @override
+  String get categoryPetsAndAnimals => 'Питомцы и животные';
+
+  @override
   String get subcategoryFirearmLicences => 'Лицензии на оружие';
 
   @override
@@ -8481,6 +8484,21 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Гарантии';
+
+  @override
+  String get subcategoryPetVaccinations => 'Прививки питомцев';
+
+  @override
+  String get subcategoryPetLicences => 'Лицензии на питомцев';
+
+  @override
+  String get subcategoryPetMicrochips => 'Регистрация микрочипа';
+
+  @override
+  String get subcategoryPetInsurances => 'Страховка питомцев';
+
+  @override
+  String get subcategoryPetPassports => 'Паспорта питомцев';
 
   @override
   String get yoursTag => 'Ваше';

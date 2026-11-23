@@ -8292,6 +8292,9 @@ class AppLocalizationsKn extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'ಸದಸ್ಯತ್ವಗಳು ಮತ್ತು ಚಂದಾದಾರಿಕೆಗಳು';
 
   @override
+  String get categoryPetsAndAnimals => 'ಸಾಕುಪ್ರಾಣಿಗಳು ಮತ್ತು ಪ್ರಾಣಿಗಳು';
+
+  @override
   String get subcategoryFirearmLicences => 'ಶಸ್ತ್ರಾಸ್ತ್ರ ಪರವಾನಗಿಗಳು';
 
   @override
@@ -8332,6 +8335,21 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'ವಾರಂಟಿ ಮತ್ತು ಗ್ಯಾರಂಟಿ';
+
+  @override
+  String get subcategoryPetVaccinations => 'ಸಾಕುಪ್ರಾಣಿ ಲಸಿಕೆಗಳು';
+
+  @override
+  String get subcategoryPetLicences => 'ಸಾಕುಪ್ರಾಣಿ ಪರವಾನಗಿಗಳು';
+
+  @override
+  String get subcategoryPetMicrochips => 'ಮೈಕ್ರೋಚಿಪ್ ನೋಂದಣಿಗಳು';
+
+  @override
+  String get subcategoryPetInsurances => 'ಸಾಕುಪ್ರಾಣಿ ವಿಮೆ';
+
+  @override
+  String get subcategoryPetPassports => 'ಸಾಕುಪ್ರಾಣಿ ಪಾಸ್‌ಪೋರ್ಟ್‌ಗಳು';
 
   @override
   String get yoursTag => 'ನಿಮ್ಮದು';

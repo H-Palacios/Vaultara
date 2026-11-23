@@ -8292,6 +8292,9 @@ class AppLocalizationsTe extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'సభ్యత్వాలు మరియు సబ్‌స్క్రిప్షన్‌లు';
 
   @override
+  String get categoryPetsAndAnimals => 'పెంపుడు జంతువులు మరియు జంతువులు';
+
+  @override
   String get subcategoryFirearmLicences => 'ఆయుధ లైసెన్సులు';
 
   @override
@@ -8332,6 +8335,21 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'వారంటీలు మరియు గ్యారంటీలు';
+
+  @override
+  String get subcategoryPetVaccinations => 'పెంపుడు జంతువుల టీకాలు';
+
+  @override
+  String get subcategoryPetLicences => 'పెంపుడు జంతువుల లైసెన్స్‌లు';
+
+  @override
+  String get subcategoryPetMicrochips => 'మైక్రోచిప్ నమోదులు';
+
+  @override
+  String get subcategoryPetInsurances => 'పెంపుడు జంతువుల బీమా';
+
+  @override
+  String get subcategoryPetPassports => 'పెంపుడు జంతువుల పాస్‌పోర్ట్‌లు';
 
   @override
   String get yoursTag => 'మీది';

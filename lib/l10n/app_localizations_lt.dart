@@ -8433,6 +8433,9 @@ class AppLocalizationsLt extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Narystės ir prenumeratos';
 
   @override
+  String get categoryPetsAndAnimals => 'Augintiniai ir gyvūnai';
+
+  @override
   String get subcategoryFirearmLicences => 'Ginklų leidimai';
 
   @override
@@ -8473,6 +8476,21 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Garantijos';
+
+  @override
+  String get subcategoryPetVaccinations => 'Augintinių skiepai';
+
+  @override
+  String get subcategoryPetLicences => 'Augintinių licencijos';
+
+  @override
+  String get subcategoryPetMicrochips => 'Mikroschemų registracijos';
+
+  @override
+  String get subcategoryPetInsurances => 'Augintinių draudimas';
+
+  @override
+  String get subcategoryPetPassports => 'Augintinių pasai';
 
   @override
   String get yoursTag => 'Jūsų';

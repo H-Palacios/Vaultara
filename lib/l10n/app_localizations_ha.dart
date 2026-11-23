@@ -8292,6 +8292,9 @@ class AppLocalizationsHa extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Membobi da biyan kuɗin rajista';
 
   @override
+  String get categoryPetsAndAnimals => 'Dabbobin gida da dabbobi';
+
+  @override
   String get subcategoryFirearmLicences => 'Lasisin bindiga';
 
   @override
@@ -8332,6 +8335,21 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Garanti';
+
+  @override
+  String get subcategoryPetVaccinations => 'Allurar rigakafin dabbobin gida';
+
+  @override
+  String get subcategoryPetLicences => 'Lasisin dabbobin gida';
+
+  @override
+  String get subcategoryPetMicrochips => 'Rajistar microchip';
+
+  @override
+  String get subcategoryPetInsurances => 'Inshorar dabbobin gida';
+
+  @override
+  String get subcategoryPetPassports => 'Fasfon dabbobin gida';
 
   @override
   String get yoursTag => 'Naka';

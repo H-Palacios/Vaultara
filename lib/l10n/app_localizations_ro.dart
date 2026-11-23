@@ -8369,6 +8369,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Abonamente și calitate de membru';
 
   @override
+  String get categoryPetsAndAnimals => 'Animale de companie și animale';
+
+  @override
   String get subcategoryFirearmLicences => 'Permise de port-armă';
 
   @override
@@ -8409,6 +8412,21 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Garanții';
+
+  @override
+  String get subcategoryPetVaccinations => 'Vaccinuri pentru animale';
+
+  @override
+  String get subcategoryPetLicences => 'Licențe pentru animale';
+
+  @override
+  String get subcategoryPetMicrochips => 'Înregistrări de microcip';
+
+  @override
+  String get subcategoryPetInsurances => 'Asigurare pentru animale';
+
+  @override
+  String get subcategoryPetPassports => 'Pașapoarte pentru animale';
 
   @override
   String get yoursTag => 'Al tău';

@@ -8292,6 +8292,9 @@ class AppLocalizationsKk extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Мүшеліктер мен жазылымдар';
 
   @override
+  String get categoryPetsAndAnimals => 'Үй жануарлары және жануарлар';
+
+  @override
   String get subcategoryFirearmLicences => 'Қару лицензиялары';
 
   @override
@@ -8332,6 +8335,21 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Кепілдіктер';
+
+  @override
+  String get subcategoryPetVaccinations => 'Үй жануарларының екпелері';
+
+  @override
+  String get subcategoryPetLicences => 'Үй жануарларының лицензиялары';
+
+  @override
+  String get subcategoryPetMicrochips => 'Микрочип тіркеулері';
+
+  @override
+  String get subcategoryPetInsurances => 'Үй жануарларын сақтандыру';
+
+  @override
+  String get subcategoryPetPassports => 'Үй жануарларының паспорттары';
 
   @override
   String get yoursTag => 'Сіздікі';

@@ -8223,6 +8223,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => '会員・サブスクリプション';
 
   @override
+  String get categoryPetsAndAnimals => 'ペットと動物';
+
+  @override
   String get subcategoryFirearmLicences => '銃砲所持許可証';
 
   @override
@@ -8263,6 +8266,21 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => '保証書';
+
+  @override
+  String get subcategoryPetVaccinations => 'ペットのワクチン接種';
+
+  @override
+  String get subcategoryPetLicences => 'ペットの登録';
+
+  @override
+  String get subcategoryPetMicrochips => 'マイクロチップ登録';
+
+  @override
+  String get subcategoryPetInsurances => 'ペット保険';
+
+  @override
+  String get subcategoryPetPassports => 'ペットパスポート';
 
   @override
   String get yoursTag => '自分用';

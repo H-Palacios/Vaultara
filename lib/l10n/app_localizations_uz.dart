@@ -8292,6 +8292,9 @@ class AppLocalizationsUz extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Aʼzoliklar va obunalar';
 
   @override
+  String get categoryPetsAndAnimals => 'Uy hayvonlari va hayvonlar';
+
+  @override
   String get subcategoryFirearmLicences => 'Qurol litsenziyalari';
 
   @override
@@ -8332,6 +8335,21 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Kafolatlar';
+
+  @override
+  String get subcategoryPetVaccinations => 'Uy hayvonlari emlashlari';
+
+  @override
+  String get subcategoryPetLicences => 'Uy hayvonlari litsenziyalari';
+
+  @override
+  String get subcategoryPetMicrochips => 'Mikrochip ro‘yxatlari';
+
+  @override
+  String get subcategoryPetInsurances => 'Uy hayvonlari sug‘urtasi';
+
+  @override
+  String get subcategoryPetPassports => 'Uy hayvonlari pasportlari';
 
   @override
   String get yoursTag => 'Sizniki';

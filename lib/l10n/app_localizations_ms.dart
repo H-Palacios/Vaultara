@@ -8235,6 +8235,9 @@ class AppLocalizationsMs extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Keahlian dan langganan';
 
   @override
+  String get categoryPetsAndAnimals => 'Haiwan peliharaan dan haiwan';
+
+  @override
   String get subcategoryFirearmLicences => 'Lesen senjata api';
 
   @override
@@ -8275,6 +8278,21 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Waranti dan jaminan';
+
+  @override
+  String get subcategoryPetVaccinations => 'Vaksin haiwan peliharaan';
+
+  @override
+  String get subcategoryPetLicences => 'Lesen haiwan peliharaan';
+
+  @override
+  String get subcategoryPetMicrochips => 'Pendaftaran mikrocip';
+
+  @override
+  String get subcategoryPetInsurances => 'Insurans haiwan peliharaan';
+
+  @override
+  String get subcategoryPetPassports => 'Pasport haiwan peliharaan';
 
   @override
   String get yoursTag => 'Milik anda';

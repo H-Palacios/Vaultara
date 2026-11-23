@@ -8362,6 +8362,9 @@ class AppLocalizationsSr extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Чланства и претплате';
 
   @override
+  String get categoryPetsAndAnimals => 'Кућни љубимци и животиње';
+
+  @override
   String get subcategoryFirearmLicences => 'Дозволе за оружје';
 
   @override
@@ -8402,6 +8405,21 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Гаранције';
+
+  @override
+  String get subcategoryPetVaccinations => 'Вакцинације љубимаца';
+
+  @override
+  String get subcategoryPetLicences => 'Дозволе за љубимце';
+
+  @override
+  String get subcategoryPetMicrochips => 'Регистрације микрочипа';
+
+  @override
+  String get subcategoryPetInsurances => 'Осигурање љубимаца';
+
+  @override
+  String get subcategoryPetPassports => 'Пасоши за љубимце';
 
   @override
   String get yoursTag => 'Ваше';
@@ -18412,6 +18430,9 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get categoryMembershipsAndSubscriptions => 'Чланства и претплате';
 
   @override
+  String get categoryPetsAndAnimals => 'Кућни љубимци и животиње';
+
+  @override
   String get subcategoryFirearmLicences => 'Дозволе за оружје';
 
   @override
@@ -18452,6 +18473,21 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get subcategoryWarranties => 'Гаранције';
+
+  @override
+  String get subcategoryPetVaccinations => 'Вакцинације љубимаца';
+
+  @override
+  String get subcategoryPetLicences => 'Дозволе за љубимце';
+
+  @override
+  String get subcategoryPetMicrochips => 'Регистрације микрочипа';
+
+  @override
+  String get subcategoryPetInsurances => 'Осигурање љубимаца';
+
+  @override
+  String get subcategoryPetPassports => 'Пасоши за љубимце';
 
   @override
   String get yoursTag => 'Ваше';
@@ -28458,6 +28494,9 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get categoryMembershipsAndSubscriptions => 'Članstva i pretplate';
 
   @override
+  String get categoryPetsAndAnimals => 'Kućni ljubimci i životinje';
+
+  @override
   String get subcategoryFirearmLicences => 'Dozvole za oružje';
 
   @override
@@ -28498,6 +28537,21 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get subcategoryWarranties => 'Garancije';
+
+  @override
+  String get subcategoryPetVaccinations => 'Vakcinacije ljubimaca';
+
+  @override
+  String get subcategoryPetLicences => 'Dozvole za ljubimce';
+
+  @override
+  String get subcategoryPetMicrochips => 'Registracije mikročipa';
+
+  @override
+  String get subcategoryPetInsurances => 'Osiguranje ljubimaca';
+
+  @override
+  String get subcategoryPetPassports => 'Pasoši za ljubimce';
 
   @override
   String get yoursTag => 'Vaše';

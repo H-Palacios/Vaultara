@@ -8432,6 +8432,9 @@ class AppLocalizationsSl extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Članstva in naročnine';
 
   @override
+  String get categoryPetsAndAnimals => 'Hišni ljubljenčki in živali';
+
+  @override
   String get subcategoryFirearmLicences => 'Orožni listi';
 
   @override
@@ -8472,6 +8475,21 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Garancije';
+
+  @override
+  String get subcategoryPetVaccinations => 'Cepljenja ljubljenčkov';
+
+  @override
+  String get subcategoryPetLicences => 'Dovoljenja za ljubljenčke';
+
+  @override
+  String get subcategoryPetMicrochips => 'Registracije mikročipov';
+
+  @override
+  String get subcategoryPetInsurances => 'Zavarovanje ljubljenčkov';
+
+  @override
+  String get subcategoryPetPassports => 'Potni listi za ljubljenčke';
 
   @override
   String get yoursTag => 'Vaše';

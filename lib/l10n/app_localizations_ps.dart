@@ -8292,6 +8292,9 @@ class AppLocalizationsPs extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'غړیتوب او ګډونونه';
 
   @override
+  String get categoryPetsAndAnimals => 'کورني ژوي او ژوي';
+
+  @override
   String get subcategoryFirearmLicences => 'د وسلې جوازونه';
 
   @override
@@ -8332,6 +8335,21 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'تضمینونه';
+
+  @override
+  String get subcategoryPetVaccinations => 'د کورنیو ژویو واکسینونه';
+
+  @override
+  String get subcategoryPetLicences => 'د کورنیو ژویو جوازونه';
+
+  @override
+  String get subcategoryPetMicrochips => 'د مایکروچپ ثبتونه';
+
+  @override
+  String get subcategoryPetInsurances => 'د کورنیو ژویو بیمه';
+
+  @override
+  String get subcategoryPetPassports => 'د کورنیو ژویو پاسپورټونه';
 
   @override
   String get yoursTag => 'ستاسو';

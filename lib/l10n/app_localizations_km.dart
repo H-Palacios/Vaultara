@@ -8233,6 +8233,9 @@ class AppLocalizationsKm extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'សមាជិកភាព និងការជាវ';
 
   @override
+  String get categoryPetsAndAnimals => 'សត្វចិញ្ចឹម និងសត្វ';
+
+  @override
   String get subcategoryFirearmLicences => 'អាជ្ញាប័ណ្ណកាំភ្លើង';
 
   @override
@@ -8273,6 +8276,21 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'ការធានា';
+
+  @override
+  String get subcategoryPetVaccinations => 'ការចាក់វ៉ាក់សាំងសត្វចិញ្ចឹម';
+
+  @override
+  String get subcategoryPetLicences => 'អាជ្ញាប័ណ្ណសត្វចិញ្ចឹម';
+
+  @override
+  String get subcategoryPetMicrochips => 'ការចុះឈ្មោះមីក្រូឈីប';
+
+  @override
+  String get subcategoryPetInsurances => 'ធានារ៉ាប់រងសត្វចិញ្ចឹម';
+
+  @override
+  String get subcategoryPetPassports => 'លិខិតឆ្លងដែនសត្វចិញ្ចឹម';
 
   @override
   String get yoursTag => 'របស់អ្នក';

@@ -8345,6 +8345,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'מינויים וחברויות';
 
   @override
+  String get categoryPetsAndAnimals => 'חיות מחמד ובעלי חיים';
+
+  @override
   String get subcategoryFirearmLicences => 'רישיונות לנשק';
 
   @override
@@ -8385,6 +8388,21 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'אחריות';
+
+  @override
+  String get subcategoryPetVaccinations => 'חיסוני חיות מחמד';
+
+  @override
+  String get subcategoryPetLicences => 'רישיונות לחיות מחמד';
+
+  @override
+  String get subcategoryPetMicrochips => 'רישומי שבב';
+
+  @override
+  String get subcategoryPetInsurances => 'ביטוח חיות מחמד';
+
+  @override
+  String get subcategoryPetPassports => 'דרכונים לחיות מחמד';
 
   @override
   String get yoursTag => 'שלך';

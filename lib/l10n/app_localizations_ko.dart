@@ -8235,6 +8235,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => '멤버십 및 구독';
 
   @override
+  String get categoryPetsAndAnimals => '반려동물 및 동물';
+
+  @override
   String get subcategoryFirearmLicences => '총기 소지 허가증';
 
   @override
@@ -8275,6 +8278,21 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => '보증서';
+
+  @override
+  String get subcategoryPetVaccinations => '반려동물 예방접종';
+
+  @override
+  String get subcategoryPetLicences => '반려동물 등록증';
+
+  @override
+  String get subcategoryPetMicrochips => '마이크로칩 등록';
+
+  @override
+  String get subcategoryPetInsurances => '반려동물 보험';
+
+  @override
+  String get subcategoryPetPassports => '반려동물 여권';
 
   @override
   String get yoursTag => '내 항목';

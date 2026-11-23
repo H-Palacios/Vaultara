@@ -8297,6 +8297,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Assinaturas e associações';
 
   @override
+  String get categoryPetsAndAnimals => 'Animais de estimação';
+
+  @override
   String get subcategoryFirearmLicences => 'Licenças de porte de arma';
 
   @override
@@ -8337,6 +8340,21 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Garantias';
+
+  @override
+  String get subcategoryPetVaccinations => 'Vacinas de animais';
+
+  @override
+  String get subcategoryPetLicences => 'Licenças de animais';
+
+  @override
+  String get subcategoryPetMicrochips => 'Registos de microchip';
+
+  @override
+  String get subcategoryPetInsurances => 'Seguro de animais';
+
+  @override
+  String get subcategoryPetPassports => 'Passaportes de animais';
 
   @override
   String get yoursTag => 'Seu';

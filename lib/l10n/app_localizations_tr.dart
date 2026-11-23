@@ -8292,6 +8292,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Üyelikler ve abonelikler';
 
   @override
+  String get categoryPetsAndAnimals => 'Evcil hayvanlar ve hayvanlar';
+
+  @override
   String get subcategoryFirearmLicences => 'Silah ruhsatları';
 
   @override
@@ -8332,6 +8335,21 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Garantiler';
+
+  @override
+  String get subcategoryPetVaccinations => 'Evcil hayvan aşıları';
+
+  @override
+  String get subcategoryPetLicences => 'Evcil hayvan lisansları';
+
+  @override
+  String get subcategoryPetMicrochips => 'Mikroçip kayıtları';
+
+  @override
+  String get subcategoryPetInsurances => 'Evcil hayvan sigortası';
+
+  @override
+  String get subcategoryPetPassports => 'Evcil hayvan pasaportları';
 
   @override
   String get yoursTag => 'Sizin';

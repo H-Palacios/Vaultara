@@ -8296,6 +8296,9 @@ class AppLocalizationsEt extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Liikmesused ja tellimused';
 
   @override
+  String get categoryPetsAndAnimals => 'Lemmikloomad ja loomad';
+
+  @override
   String get subcategoryFirearmLicences => 'Relvaload';
 
   @override
@@ -8336,6 +8339,21 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Garantiid';
+
+  @override
+  String get subcategoryPetVaccinations => 'Lemmikloomade vaktsineerimised';
+
+  @override
+  String get subcategoryPetLicences => 'Lemmikloomade load';
+
+  @override
+  String get subcategoryPetMicrochips => 'Mikrokiibi registreeringud';
+
+  @override
+  String get subcategoryPetInsurances => 'Lemmikloomakindlustus';
+
+  @override
+  String get subcategoryPetPassports => 'Lemmikloomade passid';
 
   @override
   String get yoursTag => 'Sinu';

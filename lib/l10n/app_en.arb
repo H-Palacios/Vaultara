@@ -10271,6 +10271,10 @@
   "@categoryMembershipsAndSubscriptions": {
     "description": "Name of a built-in category of records."
   },
+  "categoryPetsAndAnimals": "Pets and animals",
+  "@categoryPetsAndAnimals": {
+    "description": "Preset category for pets."
+  },
   "subcategoryFirearmLicences": "Firearm licences",
   "@subcategoryFirearmLicences": {
     "description": "Name of a built-in group of records inside a category."
@@ -10326,6 +10330,26 @@
   "subcategoryWarranties": "Warranties and guarantees",
   "@subcategoryWarranties": {
     "description": "Name of a built-in group of records inside a category."
+  },
+  "subcategoryPetVaccinations": "Pet vaccinations",
+  "@subcategoryPetVaccinations": {
+    "description": "Preset group in Pets and animals."
+  },
+  "subcategoryPetLicences": "Pet licences",
+  "@subcategoryPetLicences": {
+    "description": "Preset group in Pets and animals."
+  },
+  "subcategoryPetMicrochips": "Microchip registrations",
+  "@subcategoryPetMicrochips": {
+    "description": "Preset group in Pets and animals: microchip registration."
+  },
+  "subcategoryPetInsurances": "Pet insurance",
+  "@subcategoryPetInsurances": {
+    "description": "Preset group in Pets and animals."
+  },
+  "subcategoryPetPassports": "Pet passports",
+  "@subcategoryPetPassports": {
+    "description": "Preset group in Pets and animals: pet passports and animal health certificates."
   },
   "yoursTag": "Yours",
   "@yoursTag": {

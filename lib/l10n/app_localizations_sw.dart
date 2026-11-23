@@ -8292,6 +8292,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Uanachama na usajili';
 
   @override
+  String get categoryPetsAndAnimals => 'Wanyama vipenzi na wanyama';
+
+  @override
   String get subcategoryFirearmLicences => 'Leseni za silaha';
 
   @override
@@ -8332,6 +8335,21 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Dhamana na waranti';
+
+  @override
+  String get subcategoryPetVaccinations => 'Chanjo za wanyama vipenzi';
+
+  @override
+  String get subcategoryPetLicences => 'Leseni za wanyama vipenzi';
+
+  @override
+  String get subcategoryPetMicrochips => 'Usajili wa microchip';
+
+  @override
+  String get subcategoryPetInsurances => 'Bima ya wanyama vipenzi';
+
+  @override
+  String get subcategoryPetPassports => 'Pasipoti za wanyama vipenzi';
 
   @override
   String get yoursTag => 'Yako';

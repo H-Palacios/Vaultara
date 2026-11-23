@@ -14335,6 +14335,12 @@ abstract class AppLocalizations {
   /// **'Memberships and subscriptions'**
   String get categoryMembershipsAndSubscriptions;
 
+  /// Preset category for pets.
+  ///
+  /// In en, this message translates to:
+  /// **'Pets and animals'**
+  String get categoryPetsAndAnimals;
+
   /// Name of a built-in group of records inside a category.
   ///
   /// In en, this message translates to:
@@ -14418,6 +14424,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Warranties and guarantees'**
   String get subcategoryWarranties;
+
+  /// Preset group in Pets and animals.
+  ///
+  /// In en, this message translates to:
+  /// **'Pet vaccinations'**
+  String get subcategoryPetVaccinations;
+
+  /// Preset group in Pets and animals.
+  ///
+  /// In en, this message translates to:
+  /// **'Pet licences'**
+  String get subcategoryPetLicences;
+
+  /// Preset group in Pets and animals: microchip registration.
+  ///
+  /// In en, this message translates to:
+  /// **'Microchip registrations'**
+  String get subcategoryPetMicrochips;
+
+  /// Preset group in Pets and animals.
+  ///
+  /// In en, this message translates to:
+  /// **'Pet insurance'**
+  String get subcategoryPetInsurances;
+
+  /// Preset group in Pets and animals: pet passports and animal health certificates.
+  ///
+  /// In en, this message translates to:
+  /// **'Pet passports'**
+  String get subcategoryPetPassports;
 
   /// Small label on a category or group the user made.
   ///

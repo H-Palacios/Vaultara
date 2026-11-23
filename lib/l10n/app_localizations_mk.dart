@@ -8290,6 +8290,9 @@ class AppLocalizationsMk extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Членства и претплати';
 
   @override
+  String get categoryPetsAndAnimals => 'Миленичиња и животни';
+
+  @override
   String get subcategoryFirearmLicences => 'Дозволи за оружје';
 
   @override
@@ -8330,6 +8333,21 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Гаранции';
+
+  @override
+  String get subcategoryPetVaccinations => 'Вакцинации на миленичиња';
+
+  @override
+  String get subcategoryPetLicences => 'Дозволи за миленичиња';
+
+  @override
+  String get subcategoryPetMicrochips => 'Регистрации на микрочип';
+
+  @override
+  String get subcategoryPetInsurances => 'Осигурување на миленичиња';
+
+  @override
+  String get subcategoryPetPassports => 'Пасоши за миленичиња';
 
   @override
   String get yoursTag => 'Ваше';

@@ -8241,6 +8241,9 @@ class AppLocalizationsYo extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Ọmọ ẹgbẹ́ àti ìforúkọsílẹ̀';
 
   @override
+  String get categoryPetsAndAnimals => 'Ẹran ọ̀sìn àti ẹranko';
+
+  @override
   String get subcategoryFirearmLicences => 'Ìwé àṣẹ ìbọn';
 
   @override
@@ -8281,6 +8284,21 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Ìdánilójú';
+
+  @override
+  String get subcategoryPetVaccinations => 'Abẹ́rẹ́ àjẹsára ẹran ọ̀sìn';
+
+  @override
+  String get subcategoryPetLicences => 'Ìwé àṣẹ ẹran ọ̀sìn';
+
+  @override
+  String get subcategoryPetMicrochips => 'Ìforúkọsílẹ̀ microchip';
+
+  @override
+  String get subcategoryPetInsurances => 'Ìdánilójú ẹran ọ̀sìn';
+
+  @override
+  String get subcategoryPetPassports => 'Ìwé ìrìnnà ẹran ọ̀sìn';
 
   @override
   String get yoursTag => 'Tìrẹ';

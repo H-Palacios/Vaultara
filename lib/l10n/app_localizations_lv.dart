@@ -8358,6 +8358,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Dalība un abonementi';
 
   @override
+  String get categoryPetsAndAnimals => 'Mājdzīvnieki un dzīvnieki';
+
+  @override
   String get subcategoryFirearmLicences => 'Ieroču atļaujas';
 
   @override
@@ -8398,6 +8401,21 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Garantijas';
+
+  @override
+  String get subcategoryPetVaccinations => 'Mājdzīvnieku vakcinācijas';
+
+  @override
+  String get subcategoryPetLicences => 'Mājdzīvnieku licences';
+
+  @override
+  String get subcategoryPetMicrochips => 'Mikroshēmu reģistrācijas';
+
+  @override
+  String get subcategoryPetInsurances => 'Mājdzīvnieku apdrošināšana';
+
+  @override
+  String get subcategoryPetPassports => 'Mājdzīvnieku pases';
 
   @override
   String get yoursTag => 'Jūsu';

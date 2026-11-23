@@ -8292,6 +8292,9 @@ class AppLocalizationsUr extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'رکنیت اور سبسکرپشنز';
 
   @override
+  String get categoryPetsAndAnimals => 'پالتو اور دیگر جانور';
+
+  @override
   String get subcategoryFirearmLicences => 'اسلحہ لائسنس';
 
   @override
@@ -8332,6 +8335,21 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'وارنٹی اور گارنٹی';
+
+  @override
+  String get subcategoryPetVaccinations => 'پالتو جانوروں کی ویکسین';
+
+  @override
+  String get subcategoryPetLicences => 'پالتو جانوروں کے لائسنس';
+
+  @override
+  String get subcategoryPetMicrochips => 'مائیکروچپ رجسٹریشن';
+
+  @override
+  String get subcategoryPetInsurances => 'پالتو جانوروں کا بیمہ';
+
+  @override
+  String get subcategoryPetPassports => 'پالتو جانوروں کے پاسپورٹ';
 
   @override
   String get yoursTag => 'آپ کا';

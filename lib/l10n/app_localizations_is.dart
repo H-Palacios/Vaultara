@@ -8291,6 +8291,9 @@ class AppLocalizationsIs extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Aðild og áskriftir';
 
   @override
+  String get categoryPetsAndAnimals => 'Gæludýr og dýr';
+
+  @override
   String get subcategoryFirearmLicences => 'Skotvopnaleyfi';
 
   @override
@@ -8331,6 +8334,21 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Ábyrgðir';
+
+  @override
+  String get subcategoryPetVaccinations => 'Bólusetningar gæludýra';
+
+  @override
+  String get subcategoryPetLicences => 'Leyfi fyrir gæludýr';
+
+  @override
+  String get subcategoryPetMicrochips => 'Örmerkjaskráningar';
+
+  @override
+  String get subcategoryPetInsurances => 'Gæludýratrygging';
+
+  @override
+  String get subcategoryPetPassports => 'Gæludýravegabréf';
 
   @override
   String get yoursTag => 'Þitt';

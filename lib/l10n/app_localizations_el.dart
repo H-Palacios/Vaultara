@@ -8296,6 +8296,9 @@ class AppLocalizationsEl extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Συνδρομές και μέλη';
 
   @override
+  String get categoryPetsAndAnimals => 'Κατοικίδια και ζώα';
+
+  @override
   String get subcategoryFirearmLicences => 'Άδειες οπλοφορίας';
 
   @override
@@ -8336,6 +8339,21 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Εγγυήσεις';
+
+  @override
+  String get subcategoryPetVaccinations => 'Εμβόλια κατοικίδιων';
+
+  @override
+  String get subcategoryPetLicences => 'Άδειες κατοικίδιων';
+
+  @override
+  String get subcategoryPetMicrochips => 'Καταχωρίσεις μικροτσίπ';
+
+  @override
+  String get subcategoryPetInsurances => 'Ασφάλιση κατοικίδιων';
+
+  @override
+  String get subcategoryPetPassports => 'Διαβατήρια κατοικίδιων';
 
   @override
   String get yoursTag => 'Δικό σας';

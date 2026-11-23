@@ -8292,6 +8292,9 @@ class AppLocalizationsFa extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'عضویت‌ها و اشتراک‌ها';
 
   @override
+  String get categoryPetsAndAnimals => 'حیوانات خانگی و حیوانات';
+
+  @override
   String get subcategoryFirearmLicences => 'مجوزهای سلاح گرم';
 
   @override
@@ -8332,6 +8335,21 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'ضمانت‌نامه‌ها';
+
+  @override
+  String get subcategoryPetVaccinations => 'واکسن‌های حیوانات خانگی';
+
+  @override
+  String get subcategoryPetLicences => 'مجوزهای حیوانات خانگی';
+
+  @override
+  String get subcategoryPetMicrochips => 'ثبت ریزتراشه';
+
+  @override
+  String get subcategoryPetInsurances => 'بیمه حیوانات خانگی';
+
+  @override
+  String get subcategoryPetPassports => 'گذرنامه حیوانات خانگی';
 
   @override
   String get yoursTag => 'مال شما';

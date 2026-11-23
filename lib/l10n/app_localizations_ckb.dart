@@ -8292,6 +8292,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'ئەندامێتی و بەشداریکردن';
 
   @override
+  String get categoryPetsAndAnimals => 'ئاژەڵی ماڵی و ئاژەڵان';
+
+  @override
   String get subcategoryFirearmLicences => 'مۆڵەتی چەک';
 
   @override
@@ -8332,6 +8335,21 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'گەرەنتی';
+
+  @override
+  String get subcategoryPetVaccinations => 'کوتانی ئاژەڵی ماڵی';
+
+  @override
+  String get subcategoryPetLicences => 'مۆڵەتی ئاژەڵی ماڵی';
+
+  @override
+  String get subcategoryPetMicrochips => 'تۆمارکردنی مایکرۆچیپ';
+
+  @override
+  String get subcategoryPetInsurances => 'بیمەی ئاژەڵی ماڵی';
+
+  @override
+  String get subcategoryPetPassports => 'پاسپۆرتی ئاژەڵی ماڵی';
 
   @override
   String get yoursTag => 'هی تۆ';

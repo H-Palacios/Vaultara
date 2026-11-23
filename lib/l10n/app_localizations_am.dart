@@ -8292,6 +8292,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'አባልነቶች እና ምዝገባዎች';
 
   @override
+  String get categoryPetsAndAnimals => 'የቤት እንስሳት እና እንስሳት';
+
+  @override
   String get subcategoryFirearmLicences => 'የጦር መሣሪያ ፈቃዶች';
 
   @override
@@ -8332,6 +8335,21 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'ዋስትናዎች';
+
+  @override
+  String get subcategoryPetVaccinations => 'የቤት እንስሳት ክትባቶች';
+
+  @override
+  String get subcategoryPetLicences => 'የቤት እንስሳት ፈቃዶች';
+
+  @override
+  String get subcategoryPetMicrochips => 'የማይክሮቺፕ ምዝገባዎች';
+
+  @override
+  String get subcategoryPetInsurances => 'የቤት እንስሳት ኢንሹራንስ';
+
+  @override
+  String get subcategoryPetPassports => 'የቤት እንስሳት ፓስፖርቶች';
 
   @override
   String get yoursTag => 'የእርስዎ';

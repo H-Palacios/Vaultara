@@ -8427,6 +8427,9 @@ class AppLocalizationsCs extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Členství a předplatné';
 
   @override
+  String get categoryPetsAndAnimals => 'Mazlíčci a zvířata';
+
+  @override
   String get subcategoryFirearmLicences => 'Zbrojní průkazy';
 
   @override
@@ -8467,6 +8470,21 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Záruky';
+
+  @override
+  String get subcategoryPetVaccinations => 'Očkování mazlíčků';
+
+  @override
+  String get subcategoryPetLicences => 'Licence pro mazlíčky';
+
+  @override
+  String get subcategoryPetMicrochips => 'Registrace mikročipů';
+
+  @override
+  String get subcategoryPetInsurances => 'Pojištění mazlíčků';
+
+  @override
+  String get subcategoryPetPassports => 'Pasy pro mazlíčky';
 
   @override
   String get yoursTag => 'Vaše';

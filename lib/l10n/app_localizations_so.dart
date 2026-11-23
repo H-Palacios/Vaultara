@@ -8291,6 +8291,9 @@ class AppLocalizationsSo extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'Xubinnimo iyo is-diiwaangelin';
 
   @override
+  String get categoryPetsAndAnimals => 'Xayawaanka guriga iyo xayawaanka';
+
+  @override
   String get subcategoryFirearmLicences => 'Shatiyada hubka';
 
   @override
@@ -8331,6 +8334,21 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'Dammaanadaha';
+
+  @override
+  String get subcategoryPetVaccinations => 'Tallaalka xayawaanka guriga';
+
+  @override
+  String get subcategoryPetLicences => 'Shatiyada xayawaanka guriga';
+
+  @override
+  String get subcategoryPetMicrochips => 'Diiwaangelinta microchip';
+
+  @override
+  String get subcategoryPetInsurances => 'Caymiska xayawaanka guriga';
+
+  @override
+  String get subcategoryPetPassports => 'Baasaboorrada xayawaanka guriga';
 
   @override
   String get yoursTag => 'Adiga';

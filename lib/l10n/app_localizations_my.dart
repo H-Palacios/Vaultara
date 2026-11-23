@@ -8233,6 +8233,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String get categoryMembershipsAndSubscriptions => 'အသင်းဝင်ခွင့်နှင့် စာရင်းသွင်းမှုများ';
 
   @override
+  String get categoryPetsAndAnimals => 'အိမ်မွေးတိရစ္ဆာန်နှင့် တိရစ္ဆာန်များ';
+
+  @override
   String get subcategoryFirearmLicences => 'သေနတ်လိုင်စင်များ';
 
   @override
@@ -8273,6 +8276,21 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get subcategoryWarranties => 'အာမခံချက်များ';
+
+  @override
+  String get subcategoryPetVaccinations => 'အိမ်မွေးတိရစ္ဆာန် ကာကွယ်ဆေး';
+
+  @override
+  String get subcategoryPetLicences => 'အိမ်မွေးတိရစ္ဆာန် လိုင်စင်';
+
+  @override
+  String get subcategoryPetMicrochips => 'မိုက်ခရိုချစ် မှတ်ပုံတင်ခြင်း';
+
+  @override
+  String get subcategoryPetInsurances => 'အိမ်မွေးတိရစ္ဆာန် အာမခံ';
+
+  @override
+  String get subcategoryPetPassports => 'အိမ်မွေးတိရစ္ဆာန် နိုင်ငံကူးလက်မှတ်';
 
   @override
   String get yoursTag => 'သင့်ဟာ';
