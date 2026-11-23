@@ -252,6 +252,7 @@ class _PlansScreenState extends State<PlansScreen> {
           loc.businessBenefitStaffVehicles,
           loc.businessBenefitRoles,
           loc.businessBenefitStaffImport,
+          loc.businessBenefitClientLink,
           loc.businessBenefitBulk,
           loc.businessBenefitPdf,
         ];
