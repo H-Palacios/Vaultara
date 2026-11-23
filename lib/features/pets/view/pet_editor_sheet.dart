@@ -37,6 +37,9 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
   late final TextEditingController _phone;
   late String _typeId;
   String? _customType;
+  PetGroup? _customGroup;
+  String? _customEmoji;
+  bool _typeBlocked = false;
   DateTime? _born;
   String? _nameError;
   String? _chipError;
@@ -53,6 +56,8 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
     _phone = TextEditingController(text: pet?.vetPhone ?? '');
     _typeId = pet?.typeId ?? PetTypes.dogId;
     _customType = pet?.customType;
+    _customGroup = pet?.customGroup;
+    _customEmoji = pet?.customEmoji;
     _born = pet?.birthDate;
     _start = _signature();
   }
@@ -73,6 +78,8 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
     _phone.text.trim(),
     _typeId,
     _customType,
+    _customGroup,
+    _customEmoji,
     _born,
   ].join('|');
 
@@ -97,7 +104,7 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
       _nameError = name == null ? loc.familyNameRequired : null;
       _chipError = chipOk ? null : loc.petChipInvalid;
     });
-    if (name == null || !chipOk) return;
+    if (name == null || !chipOk || _typeBlocked) return;
     final base = widget.pet ?? const Pet(id: '', name: '');
     Navigator.of(context).pop(
       Pet(
@@ -111,6 +118,9 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
         vetName: Pet.cleanText(_vet.text, Pet.maxVet),
         vetPhone: Pet.cleanPhone(_phone.text),
         colourIndex: base.colourIndex,
+        customGroup: _customGroup,
+        customEmoji: _customEmoji,
+        photoVersion: base.photoVersion,
       ),
     );
   }
@@ -177,9 +187,15 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
             PetTypeField(
               typeId: _typeId,
               customType: _customType,
+              customGroup: _customGroup,
+              customEmoji: _customEmoji,
+              useHelper: true,
               onChanged: (pick) => setState(() {
                 _typeId = pick.typeId;
                 _customType = pick.customType;
+                _customGroup = pick.customGroup;
+                _customEmoji = pick.customEmoji;
+                _typeBlocked = pick.blocked;
               }),
             ),
             const SizedBox(height: 12),
@@ -247,7 +263,7 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
             ),
             const SizedBox(height: 18),
             FilledButton(
-              onPressed: _save,
+              onPressed: _typeBlocked ? null : _save,
               style: FilledButton.styleFrom(
                 minimumSize: const Size.fromHeight(50),
               ),
