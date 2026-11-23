@@ -1109,6 +1109,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String get plansSubhead => 'Registos ilimitados, os seus próprios grupos e lembretes configurados exatamente como deseja.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family ou $business. Registos ilimitados, os seus próprios grupos e lembretes à sua medida.';
+  }
+
+  @override
   String get planFreeName => 'Gratuito';
 
   @override

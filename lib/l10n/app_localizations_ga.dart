@@ -1112,6 +1112,11 @@ class AppLocalizationsGa extends AppLocalizations {
   String get plansSubhead => 'Taifid neamhtheoranta, do ghrúpaí féin, agus meabhrúcháin tiúnta go díreach mar is mian leat.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family nó $business. Taifid gan teorainn, do ghrúpaí féin agus meabhrúcháin mar is mian leat.';
+  }
+
+  @override
   String get planFreeName => 'Saor in aisce';
 
   @override

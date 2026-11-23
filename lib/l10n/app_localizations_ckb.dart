@@ -1109,6 +1109,11 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get plansSubhead => 'تۆماری بێسنوور، گرووپی تایبەت بە خۆت، و بیرخەرەوەکان ڕێکخراون ڕێک بەو شێوازەی کە خۆت دەتەوێت.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual، $family یان $business. تۆماری بێسنوور، گرووپەکانی خۆت و بیرخەرەوەکان بەو شێوەیەی دەتەوێت.';
+  }
+
+  @override
   String get planFreeName => 'بێبەرامبەر';
 
   @override

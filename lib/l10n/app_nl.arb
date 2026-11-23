@@ -512,6 +512,7 @@
   "smartInsightCloseExpiriesHeading": "Verlopen rond dezelfde tijd",
   "plansHeadline": "Haal alles uit Vaultara",
   "plansSubhead": "Onbeperkte records, je eigen groepen en herinneringen die precies zo werken als jij wilt.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} of {business}. Onbeperkt items, je eigen groepen en herinneringen precies zoals jij wilt.",
   "planFreeName": "Gratis",
   "planFreePeriod": "voor altijd",
   "planCurrentFooter": "Dit is je huidige abonnement",

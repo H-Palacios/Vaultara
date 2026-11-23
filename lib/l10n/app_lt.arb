@@ -530,6 +530,7 @@
   "smartInsightCloseExpiriesHeading": "Baigiasi Maždaug Tuo Pačiu Metu",
   "plansHeadline": "Gaukite visą Vaultara funkcionalumą",
   "plansSubhead": "Neriboti įrašai, jūsų asmeninės grupės ir priminimai, suderinti tiksliai taip, kaip norite.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} arba {business}. Neriboti įrašai, jūsų pačių grupės ir priminimai taip, kaip norite.",
   "planFreeName": "Nemokamas",
   "planFreePeriod": "visada",
   "planCurrentFooter": "Naudojatės šiuo planu",

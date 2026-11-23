@@ -524,6 +524,7 @@
   "smartInsightCloseExpiriesHeading": "Expirent à peu près au même moment",
   "plansHeadline": "Profitez de tout le potentiel de Vaultara",
   "plansSubhead": "Des enregistrements illimités, vos propres groupes et des rappels configurés exactement comme vous le souhaitez.",
+  "plansSubheadTiers": "{premium} : {individual}, {family} ou {business}. Fiches illimitées, vos propres groupes et des rappels réglés comme vous le souhaitez.",
   "planFreeName": "Gratuit",
   "planFreePeriod": "pour toujours",
   "planCurrentFooter": "Vous bénéficiez de cette offre",

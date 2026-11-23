@@ -317,6 +317,7 @@
   "smartInsightCloseExpiriesHeading": "Muddati deyarli bir vaqtda tugaydi",
   "plansHeadline": "Vaultaradan toʻliq foydalaning",
   "plansSubhead": "Cheksiz yozuvlar, oʻz guruhlaringiz va aynan siz xohlagandek sozlangan eslatmalar.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} yoki {business}. Cheksiz yozuvlar, o‘z guruhlaringiz va xohlaganingizdek sozlangan eslatmalar.",
   "planFreeName": "Bepul",
   "planFreePeriod": "umrbod",
   "planCurrentFooter": "Siz shu tarifdasiz",

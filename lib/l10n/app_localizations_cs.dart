@@ -1116,6 +1116,11 @@ class AppLocalizationsCs extends AppLocalizations {
   String get plansSubhead => 'Neomezené záznamy, vlastní skupiny a připomenutí vyladěná přesně podle vašich představ.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family nebo $business. Neomezené záznamy, vlastní skupiny a připomínky nastavené podle vás.';
+  }
+
+  @override
   String get planFreeName => 'Zdarma';
 
   @override

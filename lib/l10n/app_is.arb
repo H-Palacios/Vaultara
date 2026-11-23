@@ -517,6 +517,7 @@
   "smartInsightCloseExpiriesHeading": "Renna út á svipuðum tíma",
   "plansHeadline": "Fáðu Vaultara í heild sinni",
   "plansSubhead": "Ótakmarkaðar færslur, þínir eigin hópar og áminningar stilltar nákvæmlega eins og þú vilt.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} eða {business}. Ótakmarkaðar færslur, þínir eigin hópar og áminningar eins og þú vilt.",
   "planFreeName": "Ókeypis",
   "planFreePeriod": "að eilífu",
   "planCurrentFooter": "Þú ert á þessari leið",

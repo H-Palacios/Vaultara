@@ -1109,6 +1109,11 @@ class AppLocalizationsTr extends AppLocalizations {
   String get plansSubhead => 'Sınırsız kayıt, kendi gruplarınız ve tam istediğiniz gibi ayarlanan hatırlatıcılar.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family veya $business. Sınırsız kayıt, kendi gruplarınız ve istediğiniz gibi ayarlanan hatırlatmalar.';
+  }
+
+  @override
   String get planFreeName => 'Ücretsiz';
 
   @override

@@ -519,6 +519,7 @@
   "smartInsightCloseExpiriesHeading": "Udløber omtrent på samme tid",
   "plansHeadline": "Få den fulde Vaultara-oplevelse",
   "plansSubhead": "Ubegrænsede poster, dine egne grupper og påmindelser tilpasset nøjagtigt som du vil have dem.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} eller {business}. Ubegrænsede poster, dine egne grupper og påmindelser, som du vil have dem.",
   "planFreeName": "Gratis",
   "planFreePeriod": "altid",
   "planCurrentFooter": "Du er på dette abonnement",

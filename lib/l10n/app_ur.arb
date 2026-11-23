@@ -512,6 +512,7 @@
   "smartInsightCloseExpiriesHeading": "تقریباً ایک ہی وقت ختم ہو رہے ہیں",
   "plansHeadline": "مکمل Vaultara حاصل کریں",
   "plansSubhead": "لامحدود ریکارڈز، آپ کے اپنے گروپس، اور بالکل آپ کی مرضی کے مطابق سیٹ کردہ یاد دہانیاں۔",
+  "plansSubheadTiers": "{premium}: {individual}، {family} یا {business}۔ لامحدود ریکارڈز، آپ کے اپنے گروپس اور آپ کی مرضی کے مطابق یاد دہانیاں۔",
   "planFreeName": "مفت",
   "planFreePeriod": "ہمیشہ کے لیے",
   "planCurrentFooter": "آپ اس پلان پر ہیں",

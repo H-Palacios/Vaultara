@@ -512,6 +512,7 @@
   "smartInsightCloseExpiriesHeading": "Tamat Tempoh Kira-Kira Pada Masa Yang Sama",
   "plansHeadline": "Dapatkan Vaultara sepenuhnya",
   "plansSubhead": "Rekod tanpa had, kumpulan anda sendiri, dan peringatan yang ditala mengikut kehendak anda.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} atau {business}. Rekod tanpa had, kumpulan anda sendiri dan peringatan mengikut kehendak anda.",
   "planFreeName": "Percuma",
   "planFreePeriod": "selamanya",
   "planCurrentFooter": "Anda menggunakan pelan ini",

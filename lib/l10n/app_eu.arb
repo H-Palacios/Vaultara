@@ -526,6 +526,7 @@
   "smartInsightCloseExpiriesHeading": "Antzeko garaian iraungitzen dira",
   "plansHeadline": "Lortu Vaultara osoa",
   "plansSubhead": "Erregistro mugagabeak, zure talde propioak eta gogorarazleak nahi duzun bezala doituta.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} edo {business}. Erregistro mugagabeak, zure taldeak eta zure gustura doitutako oroigarriak.",
   "planFreeName": "Doan",
   "planFreePeriod": "betiko",
   "planCurrentFooter": "Plan honetan zaude",

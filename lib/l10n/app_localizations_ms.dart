@@ -1108,6 +1108,11 @@ class AppLocalizationsMs extends AppLocalizations {
   String get plansSubhead => 'Rekod tanpa had, kumpulan anda sendiri, dan peringatan yang ditala mengikut kehendak anda.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family atau $business. Rekod tanpa had, kumpulan anda sendiri dan peringatan mengikut kehendak anda.';
+  }
+
+  @override
   String get planFreeName => 'Percuma';
 
   @override

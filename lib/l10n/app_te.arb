@@ -529,6 +529,7 @@
   "smartInsightCloseExpiriesHeading": "దాదాపు ఒకే సమయంలో ముగుస్తాయి",
   "plansHeadline": "పూర్తి Vaultara అనుభవాన్ని పొందండి",
   "plansSubhead": "అపరిమిత రికార్డులు, మీ స్వంత గ్రూపులు మరియు మీరు కోరుకున్నట్లుగా సెట్ చేసుకునే రిమైండర్‌లు.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} లేదా {business}. అపరిమిత రికార్డులు, మీ సొంత గ్రూపులు మరియు మీకు నచ్చినట్లు రిమైండర్లు.",
   "planFreeName": "ఉచితం",
   "planFreePeriod": "ఎప్పటికీ",
   "planCurrentFooter": "మీరు ఈ ప్లాన్‌లో ఉన్నారు",

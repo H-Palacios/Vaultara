@@ -1109,6 +1109,11 @@ class AppLocalizationsLv extends AppLocalizations {
   String get plansSubhead => 'Neierobežots ierakstu skaits, jūsu grupas un atgādinājumi, kas pielāgoti tieši tā, kā vēlaties.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family vai $business. Neierobežoti ieraksti, jūsu pašu grupas un atgādinājumi, kā vēlaties.';
+  }
+
+  @override
   String get planFreeName => 'Bezmaksas';
 
   @override

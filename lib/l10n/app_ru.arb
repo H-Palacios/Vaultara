@@ -487,6 +487,7 @@
   "smartInsightCloseExpiriesHeading": "Истекают примерно в одно и то же время",
   "plansHeadline": "Получите полную версию Vaultara",
   "plansSubhead": "Безлимитные записи, собственные группы и напоминания, настроенные именно так, как вам нужно.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} или {business}. Неограниченное число записей, свои группы и напоминания так, как вам удобно.",
   "planFreeName": "Бесплатно",
   "planFreePeriod": "навсегда",
   "planCurrentFooter": "Вы на этом тарифе",

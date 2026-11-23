@@ -1109,6 +1109,11 @@ class AppLocalizationsKy extends AppLocalizations {
   String get plansSubhead => 'Чектөөсүз жазуулар, өзүңүздүн топторуңуз жана сиз каалагандай так жөндөлгөн эскертүүлөр.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family же $business. Чексиз жазуулар, өз топторуңуз жана каалагандай жөндөлгөн эскертмелер.';
+  }
+
+  @override
   String get planFreeName => 'Акысыз';
 
   @override

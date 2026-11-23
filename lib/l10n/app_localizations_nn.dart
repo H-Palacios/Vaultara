@@ -1109,6 +1109,11 @@ class AppLocalizationsNn extends AppLocalizations {
   String get plansSubhead => 'Ubegrensa oppføringar, dine eigne grupper og påminningar tilpassa akkurat slik du vil ha dei.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family eller $business. Uavgrensa oppføringar, eigne grupper og påminningar slik du vil ha dei.';
+  }
+
+  @override
   String get planFreeName => 'Gratis';
 
   @override

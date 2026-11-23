@@ -505,6 +505,7 @@
   "smartInsightCloseExpiriesHeading": "Utgår ungefär samtidigt",
   "plansHeadline": "Få hela Vaultara",
   "plansSubhead": "Obegränsat med poster, dina egna grupper och påminnelser anpassade exakt efter dina önskemål.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} eller {business}. Obegränsat antal poster, egna grupper och påminnelser precis som du vill.",
   "planFreeName": "Gratis",
   "planFreePeriod": "för alltid",
   "planCurrentFooter": "Du använder detta abonnemang",

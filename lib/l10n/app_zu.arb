@@ -504,6 +504,7 @@
   "smartInsightCloseExpiriesHeading": "Ziphelelwa yisikhathi cishe ngesikhathi esifanayo",
   "plansHeadline": "Thola i-Vaultara egcwele",
   "plansSubhead": "Amarekhodi angenamkhawulo, amaqembu akho, nezikhumbuzo ezihlelwe ngendlela ofuna ngayo.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} noma {business}. Amarekhodi angenamkhawulo, amaqembu akho siqu nezikhumbuzi ngendlela ofuna ngayo.",
   "planFreeName": "Mahhala",
   "planFreePeriod": "unomphela",
   "planCurrentFooter": "Ukulolu hlelo",

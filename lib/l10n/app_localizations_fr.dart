@@ -1109,6 +1109,11 @@ class AppLocalizationsFr extends AppLocalizations {
   String get plansSubhead => 'Des enregistrements illimités, vos propres groupes et des rappels configurés exactement comme vous le souhaitez.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium : $individual, $family ou $business. Fiches illimitées, vos propres groupes et des rappels réglés comme vous le souhaitez.';
+  }
+
+  @override
   String get planFreeName => 'Gratuit';
 
   @override

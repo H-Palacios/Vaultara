@@ -512,6 +512,7 @@
   "smartInsightCloseExpiriesHeading": "تقریباً په یو وخت کې پای ته رسیږي",
   "plansHeadline": "بشپړ Vaultara ترلاسه کړئ",
   "plansSubhead": "نامحدود ریکارډونه، ستاسو خپلې ډلې، او یادونې په کټ مټ هغه ډول تنظیم شوې چې تاسو یې غواړئ.",
+  "plansSubheadTiers": "{premium}: {individual}، {family} یا {business}. نامحدود ریکارډونه، ستاسو خپلې ډلې او ستاسو د خوښې یادونې.",
   "planFreeName": "وړیا",
   "planFreePeriod": "د تل لپاره",
   "planCurrentFooter": "تاسو په دې پلان کې یاست",

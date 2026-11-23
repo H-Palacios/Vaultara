@@ -1108,6 +1108,11 @@ class AppLocalizationsVi extends AppLocalizations {
   String get plansSubhead => 'Không giới hạn bản ghi, nhóm riêng của bạn và các nhắc nhở được tùy chỉnh chính xác theo ý muốn.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family hoặc $business. Không giới hạn hồ sơ, nhóm của riêng bạn và lời nhắc theo cách bạn muốn.';
+  }
+
+  @override
   String get planFreeName => 'Miễn phí';
 
   @override

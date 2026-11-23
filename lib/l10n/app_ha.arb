@@ -524,6 +524,7 @@
   "smartInsightCloseExpiriesHeading": "Suna karewa kusan a lokaci guda",
   "plansHeadline": "Sami cikakken Vaultara",
   "plansSubhead": "Rikodi marasa iyaka, ƙungiyoyinka na kanka, da tunatarwa da aka daidaita daidai yadda kake so.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} ko {business}. Bayanai marasa iyaka, ƙungiyoyinka na kanka da tunatarwa yadda kake so.",
   "planFreeName": "Kyauta",
   "planFreePeriod": "har abada",
   "planCurrentFooter": "Kana kan wannan tsarin",

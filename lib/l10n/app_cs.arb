@@ -519,6 +519,7 @@
   "smartInsightCloseExpiriesHeading": "Vyprší přibližně ve stejnou dobu",
   "plansHeadline": "Získejte kompletní Vaultara",
   "plansSubhead": "Neomezené záznamy, vlastní skupiny a připomenutí vyladěná přesně podle vašich představ.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} nebo {business}. Neomezené záznamy, vlastní skupiny a připomínky nastavené podle vás.",
   "planFreeName": "Zdarma",
   "planFreePeriod": "navždy",
   "planCurrentFooter": "Máte tento tarif",

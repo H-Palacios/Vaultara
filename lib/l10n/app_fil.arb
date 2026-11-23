@@ -524,6 +524,7 @@
   "smartInsightCloseExpiriesHeading": "Mag-eexpire sa Halos Magkaparehong Oras",
   "plansHeadline": "Kunin ang buong Vaultara",
   "plansSubhead": "Walang limitasyong mga record, sarili mong mga grupo, at mga paalala na naka-tune eksakto kung paano mo gusto.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} o {business}. Walang limitasyong record, sarili mong mga grupo at paalalang ayon sa gusto mo.",
   "planFreeName": "Libre",
   "planFreePeriod": "magpakailanman",
   "planCurrentFooter": "Nasa planong ito ka",

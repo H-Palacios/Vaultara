@@ -1131,6 +1131,11 @@ class AppLocalizationsPl extends AppLocalizations {
   String get plansSubhead => 'Nieograniczona liczba rekordów, własne grupy i przypomnienia dopasowane dokładnie do Twoich potrzeb.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family lub $business. Nieograniczona liczba wpisów, własne grupy i przypomnienia ustawione po Twojemu.';
+  }
+
+  @override
   String get planFreeName => 'Bezpłatny';
 
   @override

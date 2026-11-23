@@ -1113,6 +1113,11 @@ class AppLocalizationsRo extends AppLocalizations {
   String get plansSubhead => 'Înregistrări nelimitate, propriile grupuri și mementouri configurate exact așa cum vrei.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family sau $business. Înregistrări nelimitate, grupuri proprii și mementouri setate cum vrei tu.';
+  }
+
+  @override
   String get planFreeName => 'Gratuit';
 
   @override

@@ -1111,6 +1111,11 @@ class AppLocalizationsSl extends AppLocalizations {
   String get plansSubhead => 'Neomejeno število zapisov, lastne skupine in opomniki, prilagojeni natanko tako, kot želite.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family ali $business. Neomejeni zapisi, lastne skupine in opomniki, nastavljeni po vaši meri.';
+  }
+
+  @override
   String get planFreeName => 'Brezplačno';
 
   @override

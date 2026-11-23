@@ -524,6 +524,7 @@
   "smartInsightCloseExpiriesHeading": "लगभग एक ही समय समाप्त हो रहे हैं",
   "plansHeadline": "पूरी तरह से Vaultara का लाभ उठाएं",
   "plansSubhead": "असीमित रिकॉर्ड, आपके अपने समूह, और ठीक वैसे ही रिमाइंडर्स जैसा आप चाहते हैं।",
+  "plansSubheadTiers": "{premium}: {individual}, {family} या {business}. असीमित रिकॉर्ड, आपके अपने समूह और आपकी पसंद के अनुसार रिमाइंडर।",
   "planFreeName": "फ्री",
   "planFreePeriod": "हमेशा के लिए",
   "planCurrentFooter": "आप इस प्लान पर हैं",

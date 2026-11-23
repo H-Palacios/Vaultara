@@ -1109,6 +1109,11 @@ class AppLocalizationsSw extends AppLocalizations {
   String get plansSubhead => 'Rekodi zisizo na kikomo, vikundi vyako wenyewe, na vikumbusho vilivyorekebishwa jinsi unavyotaka.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family au $business. Rekodi bila kikomo, vikundi vyako mwenyewe na vikumbusho unavyopenda.';
+  }
+
+  @override
   String get planFreeName => 'Bila Malipo';
 
   @override

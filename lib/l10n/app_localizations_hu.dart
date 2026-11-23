@@ -1109,6 +1109,11 @@ class AppLocalizationsHu extends AppLocalizations {
   String get plansSubhead => 'Korlátlan bejegyzés, saját csoportok és pontosan úgy beállított emlékeztetők, ahogy szeretné.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family vagy $business. Korlátlan bejegyzés, saját csoportok és kedved szerint beállított emlékeztetők.';
+  }
+
+  @override
   String get planFreeName => 'Ingyenes';
 
   @override

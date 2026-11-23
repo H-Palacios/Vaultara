@@ -317,6 +317,7 @@
   "smartInsightCloseExpiriesHeading": "जवळपास एकाच वेळी मुदत संपत आहे",
   "plansHeadline": "संपूर्ण Vaultara मिळवा",
   "plansSubhead": "अमर्याद नोंदी, तुमचे स्वतःचे गट आणि तुम्हाला हवे तसे नेमके सेट केलेले रिमाइंडर.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} किंवा {business}. अमर्यादित नोंदी, तुमचे स्वतःचे गट आणि तुम्हाला हवे तसे स्मरणपत्र.",
   "planFreeName": "विनामूल्य",
   "planFreePeriod": "कायमचे",
   "planCurrentFooter": "तुम्ही या प्लॅनवर आहात",

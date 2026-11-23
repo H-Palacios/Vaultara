@@ -526,6 +526,7 @@
   "smartInsightCloseExpiriesHeading": "Verval Omtrent Dieselfde Tyd",
   "plansHeadline": "Kry die volledige Vaultara",
   "plansSubhead": "Onbeperkte rekords, jou eie groepe, en herinneringe presies soos jy dit wil hê.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} of {business}. Onbeperkte rekords, jou eie groepe en herinneringe soos jy dit wil hê.",
   "planFreeName": "Gratis",
   "planFreePeriod": "vir altyd",
   "planCurrentFooter": "Jy is op hierdie plan",

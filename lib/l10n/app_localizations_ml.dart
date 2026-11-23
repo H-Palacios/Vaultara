@@ -1109,6 +1109,11 @@ class AppLocalizationsMl extends AppLocalizations {
   String get plansSubhead => 'പരിധിയില്ലാത്ത റെക്കോർഡുകൾ, നിങ്ങളുടെ സ്വന്തം ഗ്രൂപ്പുകൾ, നിങ്ങൾ ആഗ്രഹിക്കുന്നത് പോലെ കൃത്യമായി ക്രമീകരിച്ച റിമൈൻഡറുകൾ.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family അല്ലെങ്കിൽ $business. പരിധിയില്ലാത്ത രേഖകൾ, നിങ്ങളുടെ സ്വന്തം ഗ്രൂപ്പുകൾ, നിങ്ങൾക്ക് വേണ്ടപോലെ ക്രമീകരിച്ച ഓർമ്മപ്പെടുത്തലുകൾ.';
+  }
+
+  @override
   String get planFreeName => 'സൗജന്യം';
 
   @override

@@ -1108,6 +1108,11 @@ class AppLocalizationsZh extends AppLocalizations {
   String get plansSubhead => '无限记录、专属分组，以及完全按您心意定制的提醒服务。';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium：$individual、$family或$business。记录数量不限，自建分组，提醒随心设置。';
+  }
+
+  @override
   String get planFreeName => '免费版';
 
   @override
@@ -11022,6 +11027,11 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get plansSubhead => '无限记录、自定义分组，以及完全按您心意设置的提醒。';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium：$individual、$family或$business。记录数量不限，自建分组，提醒随心设置。';
+  }
+
+  @override
   String get planFreeName => '免费版';
 
   @override
@@ -20928,6 +20938,11 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get plansSubhead => '無限記錄、專屬群組，以及完全依您心意定制的提醒服務。';
+
+  @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium：$individual、$family或$business。紀錄數量不限，自建群組，提醒隨心設定。';
+  }
 
   @override
   String get planFreeName => '免費版';

@@ -1110,6 +1110,11 @@ class AppLocalizationsSr extends AppLocalizations {
   String get plansSubhead => 'Неограничен број записа, сопствене групе и подсетници подешени тачно онако како желите.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family или $business. Неограничени записи, сопствене групе и подсетници по вашој мери.';
+  }
+
+  @override
   String get planFreeName => 'Бесплатно';
 
   @override
@@ -11178,6 +11183,11 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get plansSubhead => 'Неограничен број записа, сопствене групе и подсетници подешени тачно онако како желите.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family или $business. Неограничени записи, сопствене групе и подсетници по вашој мери.';
+  }
+
+  @override
   String get planFreeName => 'Бесплатно';
 
   @override
@@ -21244,6 +21254,11 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get plansSubhead => 'Neograničen broj zapisa, sopstvene grupe i podsetnici podešeni tačno onako kako želite.';
+
+  @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family ili $business. Neograničeni zapisi, sopstvene grupe i podsetnici po vašoj meri.';
+  }
 
   @override
   String get planFreeName => 'Besplatno';

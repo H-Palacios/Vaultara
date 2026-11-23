@@ -512,6 +512,7 @@
   "smartInsightCloseExpiriesHeading": "Hết hạn vào khoảng cùng thời điểm",
   "plansHeadline": "Trải nghiệm trọn vẹn Vaultara",
   "plansSubhead": "Không giới hạn bản ghi, nhóm riêng của bạn và các nhắc nhở được tùy chỉnh chính xác theo ý muốn.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} hoặc {business}. Không giới hạn hồ sơ, nhóm của riêng bạn và lời nhắc theo cách bạn muốn.",
   "planFreeName": "Miễn phí",
   "planFreePeriod": "mãi mãi",
   "planCurrentFooter": "Bạn đang sử dụng gói này",

@@ -1108,6 +1108,11 @@ class AppLocalizationsLo extends AppLocalizations {
   String get plansSubhead => 'ບັນທຶກບໍ່ຈຳກັດ, ກຸ່ມສ່ວນຕົວຂອງທ່ານ, ແລະການເຕືອນທີ່ປັບແຕ່ງໄດ້ຕາມໃຈຕ້ອງການ.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family ຫຼື $business. ບັນທຶກບໍ່ຈຳກັດ, ກຸ່ມຂອງທ່ານເອງ ແລະ ການແຈ້ງເຕືອນຕາມທີ່ທ່ານຕ້ອງການ.';
+  }
+
+  @override
   String get planFreeName => 'ຟຣີ';
 
   @override

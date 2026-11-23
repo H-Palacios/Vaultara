@@ -1109,6 +1109,11 @@ class AppLocalizationsPa extends AppLocalizations {
   String get plansSubhead => 'ਅਸੀਮਤ ਰਿਕਾਰਡ, ਤੁਹਾਡੇ ਆਪਣੇ ਗਰੁੱਪ, ਅਤੇ ਰਿਮਾਈਂਡਰ ਬਿਲਕੁਲ ਉਸੇ ਤਰ੍ਹਾਂ ਟਿਊਨ ਕੀਤੇ ਗਏ ਹਨ ਜਿਵੇਂ ਤੁਸੀਂ ਚਾਹੁੰਦੇ ਹੋ।';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family ਜਾਂ $business। ਅਸੀਮਤ ਰਿਕਾਰਡ, ਤੁਹਾਡੇ ਆਪਣੇ ਗਰੁੱਪ ਅਤੇ ਤੁਹਾਡੀ ਮਰਜ਼ੀ ਮੁਤਾਬਕ ਰਿਮਾਈਂਡਰ।';
+  }
+
+  @override
   String get planFreeName => 'ਮੁਫ਼ਤ';
 
   @override

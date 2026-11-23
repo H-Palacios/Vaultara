@@ -1109,6 +1109,11 @@ class AppLocalizationsEt extends AppLocalizations {
   String get plansSubhead => 'Piiramatu arv kirjeid, sinu omad grupid ja täpselt sinu soovi järgi kohandatud meeldetuletused.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family või $business. Piiramatult kirjeid, oma rühmad ja meeldetuletused täpselt nii, nagu soovid.';
+  }
+
+  @override
   String get planFreeName => 'Tasuta';
 
   @override

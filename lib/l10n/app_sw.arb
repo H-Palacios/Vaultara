@@ -512,6 +512,7 @@
   "smartInsightCloseExpiriesHeading": "Zinamalizika Muda Unaoingiliana",
   "plansHeadline": "Pata toleo kamili la Vaultara",
   "plansSubhead": "Rekodi zisizo na kikomo, vikundi vyako wenyewe, na vikumbusho vilivyorekebishwa jinsi unavyotaka.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} au {business}. Rekodi bila kikomo, vikundi vyako mwenyewe na vikumbusho unavyopenda.",
   "planFreeName": "Bila Malipo",
   "planFreePeriod": "milele",
   "planCurrentFooter": "Uko kwenye kifurushi hiki",

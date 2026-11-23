@@ -512,6 +512,7 @@
   "smartInsightCloseExpiriesHeading": "Iztečejo se približno ob istem času",
   "plansHeadline": "Pridobite popoln Vaultara",
   "plansSubhead": "Neomejeno število zapisov, lastne skupine in opomniki, prilagojeni natanko tako, kot želite.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} ali {business}. Neomejeni zapisi, lastne skupine in opomniki, nastavljeni po vaši meri.",
   "planFreeName": "Brezplačno",
   "planFreePeriod": "za vedno",
   "planCurrentFooter": "Uporabljate ta paket",

@@ -512,6 +512,7 @@
   "smartInsightCloseExpiriesHeading": "Expiră cam în același timp",
   "plansHeadline": "Obține experiența completă Vaultara",
   "plansSubhead": "Înregistrări nelimitate, propriile grupuri și mementouri configurate exact așa cum vrei.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} sau {business}. Înregistrări nelimitate, grupuri proprii și mementouri setate cum vrei tu.",
   "planFreeName": "Gratuit",
   "planFreePeriod": "pentru totdeauna",
   "planCurrentFooter": "Ești pe acest plan",

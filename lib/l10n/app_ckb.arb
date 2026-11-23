@@ -512,6 +512,7 @@
   "smartInsightCloseExpiriesHeading": "نزیکەی لە هەمان کاتدا بەسەردەچن",
   "plansHeadline": "تەواوی تایبەتمەندییەکانی Vaultara بەدەستبهێنە",
   "plansSubhead": "تۆماری بێسنوور، گرووپی تایبەت بە خۆت، و بیرخەرەوەکان ڕێکخراون ڕێک بەو شێوازەی کە خۆت دەتەوێت.",
+  "plansSubheadTiers": "{premium}: {individual}، {family} یان {business}. تۆماری بێسنوور، گرووپەکانی خۆت و بیرخەرەوەکان بەو شێوەیەی دەتەوێت.",
   "planFreeName": "بێبەرامبەر",
   "planFreePeriod": "بۆ هەمیشە",
   "planCurrentFooter": "تۆ لەسەر ئەم پلانەیتی",

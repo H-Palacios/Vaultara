@@ -1106,6 +1106,11 @@ class AppLocalizationsMy extends AppLocalizations {
   String get plansSubhead => 'အကန့်အသတ်မဲ့ မှတ်တမ်းများ၊ ကိုယ်ပိုင်အုပ်စုများနှင့် သင်လိုသလို အတိအကျ ချိန်ညှိထားသော သတိပေးချက်များ။';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual၊ $family သို့မဟုတ် $business။ အကန့်အသတ်မဲ့ မှတ်တမ်းများ၊ သင့်ကိုယ်ပိုင်အုပ်စုများနှင့် သင်လိုသလို သတိပေးချက်များ။';
+  }
+
+  @override
   String get planFreeName => 'အခမဲ့';
 
   @override

@@ -1109,6 +1109,11 @@ class AppLocalizationsBn extends AppLocalizations {
   String get plansSubhead => 'আনলিমিটেড রেকর্ড, নিজস্ব গ্রুপ এবং আপনার পছন্দ অনুযায়ী সাজানো রিমাইন্ডার।';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family অথবা $business। সীমাহীন রেকর্ড, আপনার নিজের গ্রুপ এবং আপনার মতো করে সাজানো রিমাইন্ডার।';
+  }
+
+  @override
   String get planFreeName => 'ফ্রি';
 
   @override

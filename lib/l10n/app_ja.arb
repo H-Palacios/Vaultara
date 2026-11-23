@@ -524,6 +524,7 @@
   "smartInsightCloseExpiriesHeading": "ほぼ同時期に期限切れ",
   "plansHeadline": "Vaultaraのすべての機能を利用する",
   "plansSubhead": "無制限の記録、独自のグループ、そして思い通りに細かく調整できるリマインダー。",
+  "plansSubheadTiers": "{premium}：{individual}、{family}、{business}。記録数無制限、自分だけのグループ、好みに合わせたリマインダー。",
   "planFreeName": "無料",
   "planFreePeriod": "永久に",
   "planCurrentFooter": "このプランを利用中",

@@ -524,6 +524,7 @@
   "smartInsightCloseExpiriesHeading": "Caducan aproximadamente ao mesmo tempo",
   "plansHeadline": "Obtén todo o potencial de Vaultara",
   "plansSubhead": "Rexistros ilimitados, os teus propios grupos e lembretes axustados exactamente como queiras.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} ou {business}. Rexistros ilimitados, os teus propios grupos e recordatorios ao teu gusto.",
   "planFreeName": "De balde",
   "planFreePeriod": "para sempre",
   "planCurrentFooter": "Estás neste plan",

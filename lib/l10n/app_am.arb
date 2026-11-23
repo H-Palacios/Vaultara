@@ -526,6 +526,7 @@
   "smartInsightCloseExpiriesHeading": "በተመሳሳይ ጊዜ አካባቢ ያበቃሉ",
   "plansHeadline": "ሙሉውን Vaultara ያግኙ",
   "plansSubhead": "ያልተገደቡ መዝገቦች፣ የእርስዎ የግል ቡድኖች እና በትክክል የሚፈልጉት ዓይነት አስታዋሾች።",
+  "plansSubheadTiers": "{premium}: {individual}፣ {family} ወይም {business}። ያልተገደቡ መዝገቦች፣ የራስዎ ቡድኖች እና እንደፈለጉ የሚያስተካክሏቸው አስታዋሾች።",
   "planFreeName": "ነፃ",
   "planFreePeriod": "ለዘላለም",
   "planCurrentFooter": "በዚህ ዕቅድ ላይ ነዎት",

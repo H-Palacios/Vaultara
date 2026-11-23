@@ -1109,6 +1109,11 @@ class AppLocalizationsSi extends AppLocalizations {
   String get plansSubhead => 'සීමාරහිත වාර්තා, ඔබේම කණ්ඩායම්, සහ ඔබට අවශ්‍ය පරිදිම සකසන ලද මතක් කිරීම්.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family හෝ $business. අසීමිත වාර්තා, ඔබේම කණ්ඩායම් සහ ඔබ කැමති ලෙස සකසන සිහිකැඳවීම්.';
+  }
+
+  @override
   String get planFreeName => 'නොමිලේ';
 
   @override

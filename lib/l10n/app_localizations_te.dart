@@ -1109,6 +1109,11 @@ class AppLocalizationsTe extends AppLocalizations {
   String get plansSubhead => 'అపరిమిత రికార్డులు, మీ స్వంత గ్రూపులు మరియు మీరు కోరుకున్నట్లుగా సెట్ చేసుకునే రిమైండర్‌లు.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family లేదా $business. అపరిమిత రికార్డులు, మీ సొంత గ్రూపులు మరియు మీకు నచ్చినట్లు రిమైండర్లు.';
+  }
+
+  @override
   String get planFreeName => 'ఉచితం';
 
   @override

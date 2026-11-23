@@ -1111,6 +1111,11 @@ class AppLocalizationsHe extends AppLocalizations {
   String get plansSubhead => 'רשומות ללא הגבלה, קבוצות משלך, ותזכורות המותאמות בדיוק איך שאתה רוצה.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family או $business. רשומות ללא הגבלה, קבוצות משלך ותזכורות בדיוק כמו שתרצה.';
+  }
+
+  @override
   String get planFreeName => 'חינם';
 
   @override

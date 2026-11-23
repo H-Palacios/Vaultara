@@ -1106,6 +1106,11 @@ class AppLocalizationsKm extends AppLocalizations {
   String get plansSubhead => 'កំណត់ត្រាគ្មានដែនកំណត់ ក្រុមផ្ទាល់ខ្លួនរបស់អ្នក និងការរំលឹកដែលកំណត់តាមបំណងរបស់អ្នកយ៉ាងពិតប្រាកដ។';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium៖ $individual $family ឬ $business។ កំណត់ត្រាគ្មានដែនកំណត់ ក្រុមផ្ទាល់ខ្លួន និងការរំលឹកតាមចិត្តអ្នក។';
+  }
+
+  @override
   String get planFreeName => 'ឥតគិតថ្លៃ';
 
   @override

@@ -1109,6 +1109,11 @@ class AppLocalizationsNe extends AppLocalizations {
   String get plansSubhead => 'असीमित रेकर्डहरू, तपाईंको आफ्नै समूहहरू, र तपाईंले चाहे जस्तै गरी मिलाइएका रिमाइन्डरहरू।';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family वा $business। असीमित रेकर्ड, तपाईंका आफ्नै समूह र तपाईंले चाहे जस्तो रिमाइन्डर।';
+  }
+
+  @override
   String get planFreeName => 'निःशुल्क';
 
   @override

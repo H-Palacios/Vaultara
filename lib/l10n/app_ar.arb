@@ -526,6 +526,7 @@
   "smartInsightCloseExpiriesHeading": "تنتهي صلاحيتها في نفس الوقت تقريبًا",
   "plansHeadline": "احصل على تجربة Vaultara الكاملة",
   "plansSubhead": "سجلات غير محدودة، ومجموعات خاصة بك، وتذكيرات مضبوطة تمامًا كما تحب.",
+  "plansSubheadTiers": "{premium}: {individual} أو {family} أو {business}. سجلات غير محدودة ومجموعاتك الخاصة وتذكيرات مضبوطة كما تريد.",
   "planFreeName": "مجاني",
   "planFreePeriod": "مدى الحياة",
   "planCurrentFooter": "أنت مشترك في هذه الخطة حاليًا",

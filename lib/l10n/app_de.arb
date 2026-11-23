@@ -519,6 +519,7 @@
   "smartInsightCloseExpiriesHeading": "Laufen etwa zur gleichen Zeit ab",
   "plansHeadline": "Hol dir das volle Vaultara-Erlebnis",
   "plansSubhead": "Unbegrenzte Einträge, eigene Gruppen und Erinnerungen, die genau auf dich abgestimmt sind.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} oder {business}. Unbegrenzte Einträge, eigene Gruppen und Erinnerungen ganz nach Ihren Wünschen.",
   "planFreeName": "Kostenlos",
   "planFreePeriod": "dauerhaft",
   "planCurrentFooter": "Du nutzt diesen Tarif",

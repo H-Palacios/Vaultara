@@ -1109,6 +1109,11 @@ class AppLocalizationsEl extends AppLocalizations {
   String get plansSubhead => 'Απεριόριστες εγγραφές, δικές σας ομάδες και υπενθυμίσεις ρυθμισμένες ακριβώς όπως θέλετε.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family ή $business. Απεριόριστες εγγραφές, δικές σας ομάδες και υπενθυμίσεις όπως τις θέλετε.';
+  }
+
+  @override
   String get planFreeName => 'Δωρεάν';
 
   @override

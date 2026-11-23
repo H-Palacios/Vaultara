@@ -519,6 +519,7 @@
   "smartInsightCloseExpiriesHeading": "ਲਗਭਗ ਇੱਕੋ ਸਮੇਂ ਖਤਮ ਹੋ ਰਹੇ ਹਨ",
   "plansHeadline": "ਪੂਰਾ Vaultara ਪ੍ਰਾਪਤ ਕਰੋ",
   "plansSubhead": "ਅਸੀਮਤ ਰਿਕਾਰਡ, ਤੁਹਾਡੇ ਆਪਣੇ ਗਰੁੱਪ, ਅਤੇ ਰਿਮਾਈਂਡਰ ਬਿਲਕੁਲ ਉਸੇ ਤਰ੍ਹਾਂ ਟਿਊਨ ਕੀਤੇ ਗਏ ਹਨ ਜਿਵੇਂ ਤੁਸੀਂ ਚਾਹੁੰਦੇ ਹੋ।",
+  "plansSubheadTiers": "{premium}: {individual}, {family} ਜਾਂ {business}। ਅਸੀਮਤ ਰਿਕਾਰਡ, ਤੁਹਾਡੇ ਆਪਣੇ ਗਰੁੱਪ ਅਤੇ ਤੁਹਾਡੀ ਮਰਜ਼ੀ ਮੁਤਾਬਕ ਰਿਮਾਈਂਡਰ।",
   "planFreeName": "ਮੁਫ਼ਤ",
   "planFreePeriod": "ਹਮੇਸ਼ਾ ਲਈ",
   "planCurrentFooter": "ਤੁਸੀਂ ਇਸ ਪਲਾਨ 'ਤੇ ਹੋ",

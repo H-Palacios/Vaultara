@@ -1107,6 +1107,11 @@ class AppLocalizationsFil extends AppLocalizations {
   String get plansSubhead => 'Walang limitasyong mga record, sarili mong mga grupo, at mga paalala na naka-tune eksakto kung paano mo gusto.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family o $business. Walang limitasyong record, sarili mong mga grupo at paalalang ayon sa gusto mo.';
+  }
+
+  @override
   String get planFreeName => 'Libre';
 
   @override

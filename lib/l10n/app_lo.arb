@@ -530,6 +530,7 @@
   "smartInsightCloseExpiriesHeading": "ໝົດອາຍຸພາຍໃນຊ່ວງເວລາໃກ້ຄຽງກັນ",
   "plansHeadline": "ຮັບປະສົບການ Vaultara ແບບເຕັມຮູບແບບ",
   "plansSubhead": "ບັນທຶກບໍ່ຈຳກັດ, ກຸ່ມສ່ວນຕົວຂອງທ່ານ, ແລະການເຕືອນທີ່ປັບແຕ່ງໄດ້ຕາມໃຈຕ້ອງການ.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} ຫຼື {business}. ບັນທຶກບໍ່ຈຳກັດ, ກຸ່ມຂອງທ່ານເອງ ແລະ ການແຈ້ງເຕືອນຕາມທີ່ທ່ານຕ້ອງການ.",
   "planFreeName": "ຟຣີ",
   "planFreePeriod": "ຕະຫຼອດໄປ",
   "planCurrentFooter": "ທ່ານກຳລັງໃຊ້ແພັກເກດນີ້",

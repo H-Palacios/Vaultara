@@ -1118,6 +1118,11 @@ class AppLocalizationsUk extends AppLocalizations {
   String get plansSubhead => 'Безлімітні записи, власні групи та нагадування, налаштовані саме так, як вам потрібно.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family або $business. Необмежена кількість записів, власні групи та нагадування так, як вам зручно.';
+  }
+
+  @override
   String get planFreeName => 'Безкоштовно';
 
   @override

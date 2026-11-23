@@ -1109,6 +1109,11 @@ class AppLocalizationsGl extends AppLocalizations {
   String get plansSubhead => 'Rexistros ilimitados, os teus propios grupos e lembretes axustados exactamente como queiras.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family ou $business. Rexistros ilimitados, os teus propios grupos e recordatorios ao teu gusto.';
+  }
+
+  @override
   String get planFreeName => 'De balde';
 
   @override

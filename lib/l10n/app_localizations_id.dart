@@ -1103,6 +1103,11 @@ class AppLocalizationsId extends AppLocalizations {
   String get plansSubhead => 'Catatan tanpa batas, grup Anda sendiri, dan pengingat yang disesuaikan persis seperti yang Anda inginkan.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family, atau $business. Catatan tanpa batas, grup Anda sendiri, dan pengingat sesuai keinginan Anda.';
+  }
+
+  @override
   String get planFreeName => 'Gratis';
 
   @override

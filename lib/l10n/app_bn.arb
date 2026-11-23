@@ -519,6 +519,7 @@
   "smartInsightCloseExpiriesHeading": "প্রায় একই সময়ে শেষ হচ্ছে",
   "plansHeadline": "উপভোগ করুন সম্পূর্ণ Vaultara",
   "plansSubhead": "আনলিমিটেড রেকর্ড, নিজস্ব গ্রুপ এবং আপনার পছন্দ অনুযায়ী সাজানো রিমাইন্ডার।",
+  "plansSubheadTiers": "{premium}: {individual}, {family} অথবা {business}। সীমাহীন রেকর্ড, আপনার নিজের গ্রুপ এবং আপনার মতো করে সাজানো রিমাইন্ডার।",
   "planFreeName": "ফ্রি",
   "planFreePeriod": "আজীবন",
   "planCurrentFooter": "আপনি এই প্ল্যানে আছেন",

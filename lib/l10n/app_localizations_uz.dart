@@ -1109,6 +1109,11 @@ class AppLocalizationsUz extends AppLocalizations {
   String get plansSubhead => 'Cheksiz yozuvlar, oʻz guruhlaringiz va aynan siz xohlagandek sozlangan eslatmalar.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family yoki $business. Cheksiz yozuvlar, o‘z guruhlaringiz va xohlaganingizdek sozlangan eslatmalar.';
+  }
+
+  @override
   String get planFreeName => 'Bepul';
 
   @override

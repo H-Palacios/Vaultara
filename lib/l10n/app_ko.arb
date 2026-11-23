@@ -512,6 +512,7 @@
   "smartInsightCloseExpiriesHeading": "거의 비슷한 시기에 만료 예정",
   "plansHeadline": "Vaultara의 모든 기능 사용하기",
   "plansSubhead": "무제한 기록, 전용 그룹, 원하는 대로 정밀하게 설정하는 알림 기능을 만나보세요.",
+  "plansSubheadTiers": "{premium}: {individual}, {family}, {business}. 무제한 기록, 나만의 그룹, 원하는 대로 맞춘 알림.",
   "planFreeName": "무료",
   "planFreePeriod": "평생",
   "planCurrentFooter": "이 요금제를 사용 중입니다",

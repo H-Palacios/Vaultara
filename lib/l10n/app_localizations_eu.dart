@@ -1109,6 +1109,11 @@ class AppLocalizationsEu extends AppLocalizations {
   String get plansSubhead => 'Erregistro mugagabeak, zure talde propioak eta gogorarazleak nahi duzun bezala doituta.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family edo $business. Erregistro mugagabeak, zure taldeak eta zure gustura doitutako oroigarriak.';
+  }
+
+  @override
   String get planFreeName => 'Doan';
 
   @override

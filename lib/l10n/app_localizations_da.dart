@@ -1109,6 +1109,11 @@ class AppLocalizationsDa extends AppLocalizations {
   String get plansSubhead => 'Ubegrænsede poster, dine egne grupper og påmindelser tilpasset nøjagtigt som du vil have dem.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family eller $business. Ubegrænsede poster, dine egne grupper og påmindelser, som du vil have dem.';
+  }
+
+  @override
   String get planFreeName => 'Gratis';
 
   @override

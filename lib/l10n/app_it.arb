@@ -517,6 +517,7 @@
   "smartInsightCloseExpiriesHeading": "Scadono all'incirca nello stesso periodo",
   "plansHeadline": "Ottieni il massimo da Vaultara",
   "plansSubhead": "Record illimitati, gruppi personalizzati e promemoria impostati esattamente come desideri.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} o {business}. Documenti illimitati, gruppi tutti tuoi e promemoria impostati come preferisci.",
   "planFreeName": "Gratis",
   "planFreePeriod": "per sempre",
   "planCurrentFooter": "Sei su questo piano",

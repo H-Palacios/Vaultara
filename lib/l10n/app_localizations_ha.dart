@@ -1109,6 +1109,11 @@ class AppLocalizationsHa extends AppLocalizations {
   String get plansSubhead => 'Rikodi marasa iyaka, ƙungiyoyinka na kanka, da tunatarwa da aka daidaita daidai yadda kake so.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family ko $business. Bayanai marasa iyaka, ƙungiyoyinka na kanka da tunatarwa yadda kake so.';
+  }
+
+  @override
   String get planFreeName => 'Kyauta';
 
   @override

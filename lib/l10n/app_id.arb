@@ -517,6 +517,7 @@
   "smartInsightCloseExpiriesHeading": "Kedaluwarsa di waktu yang hampir bersamaan",
   "plansHeadline": "Dapatkan Vaultara sepenuhnya",
   "plansSubhead": "Catatan tanpa batas, grup Anda sendiri, dan pengingat yang disesuaikan persis seperti yang Anda inginkan.",
+  "plansSubheadTiers": "{premium}: {individual}, {family}, atau {business}. Catatan tanpa batas, grup Anda sendiri, dan pengingat sesuai keinginan Anda.",
   "planFreeName": "Gratis",
   "planFreePeriod": "selamanya",
   "planCurrentFooter": "Anda berada di paket ini",

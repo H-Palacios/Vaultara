@@ -1109,6 +1109,11 @@ class AppLocalizationsKa extends AppLocalizations {
   String get plansSubhead => 'ულიმიტო ჩანაწერები, თქვენი საკუთარი ჯგუფები და ზუსტად თქვენს სურვილზე მორგებული შეხსენებები.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family ან $business. შეუზღუდავი ჩანაწერები, საკუთარი ჯგუფები და შეხსენებები თქვენი სურვილისამებრ.';
+  }
+
+  @override
   String get planFreeName => 'უფასო';
 
   @override

@@ -1102,6 +1102,11 @@ class AppLocalizationsJa extends AppLocalizations {
   String get plansSubhead => '無制限の記録、独自のグループ、そして思い通りに細かく調整できるリマインダー。';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium：$individual、$family、$business。記録数無制限、自分だけのグループ、好みに合わせたリマインダー。';
+  }
+
+  @override
   String get planFreeName => '無料';
 
   @override

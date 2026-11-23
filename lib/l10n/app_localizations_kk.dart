@@ -1109,6 +1109,11 @@ class AppLocalizationsKk extends AppLocalizations {
   String get plansSubhead => 'Шектеусіз жазбалар, жеке топтар және толықтай сіздің қалауыңызша бапталған еске салғыштар.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family немесе $business. Шексіз жазбалар, өз топтарыңыз және қалауыңызша бапталған еске салғыштар.';
+  }
+
+  @override
   String get planFreeName => 'Тегін';
 
   @override

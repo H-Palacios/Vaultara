@@ -1109,6 +1109,11 @@ class AppLocalizationsIg extends AppLocalizations {
   String get plansSubhead => 'Ihe ndekọ na-enweghị njedebe, otu nke gị, na ihe ncheta a haziri kpọmkwem otú ị chọrọ.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family ma ọ bụ $business. Ndekọ na-enweghị njedebe, otu nke gị na ncheta ahaziri otú ị chọrọ.';
+  }
+
+  @override
   String get planFreeName => 'N\'efu';
 
   @override

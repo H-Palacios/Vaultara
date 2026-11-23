@@ -1109,6 +1109,11 @@ class AppLocalizationsSq extends AppLocalizations {
   String get plansSubhead => 'Regjistrime të pakufizuara, grupet tuaja dhe kujtesa të përshtatura saktësisht ashtu siç dëshironi.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family ose $business. Regjistrime të pakufizuara, grupet tuaja dhe kujtesa sipas dëshirës.';
+  }
+
+  @override
   String get planFreeName => 'Falas';
 
   @override

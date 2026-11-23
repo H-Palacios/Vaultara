@@ -530,6 +530,7 @@
   "smartInsightCloseExpiriesHeading": "Vanhenevat suurin piirtein samaan aikaan",
   "plansHeadline": "Hanki täysi Vaultara käyttöösi",
   "plansSubhead": "Rajoittamattomat tietueet, omat ryhmät ja juuri haluamallasi tavalla hienosäädetyt muistutukset.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} tai {business}. Rajattomasti tietueita, omat ryhmät ja muistutukset juuri niin kuin haluat.",
   "planFreeName": "Maksuton",
   "planFreePeriod": "Ikuisesti",
   "planCurrentFooter": "Käytät tätä tilausta",

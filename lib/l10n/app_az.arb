@@ -317,6 +317,7 @@
   "smartInsightCloseExpiriesHeading": "Müddəti təxminən eyni vaxtda bitənlər",
   "plansHeadline": "Vaultara-nın bütün imkanlarını əldə edin",
   "plansSubhead": "Limitsiz sənəd, öz qruplarınız və tam istədiyiniz kimi qurulan xatırlatmalar.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} və ya {business}. Limitsiz qeydlər, öz qruplarınız və istədiyiniz kimi qurulan xatırlatmalar.",
   "planFreeName": "Pulsuz",
   "planFreePeriod": "həmişəlik",
   "planCurrentFooter": "Siz bu plandasınız",

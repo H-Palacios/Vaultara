@@ -517,6 +517,7 @@
   "smartInsightCloseExpiriesHeading": "Na-agwụ ihe fọrọ nke nta ka ọ bụrụ n'otu oge",
   "plansHeadline": "Nweta Vaultara n'uju ya",
   "plansSubhead": "Ihe ndekọ na-enweghị njedebe, otu nke gị, na ihe ncheta a haziri kpọmkwem otú ị chọrọ.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} ma ọ bụ {business}. Ndekọ na-enweghị njedebe, otu nke gị na ncheta ahaziri otú ị chọrọ.",
   "planFreeName": "N'efu",
   "planFreePeriod": "ruo mgbe ebighị ebi",
   "planCurrentFooter": "Ị nọ n'atụmatụ nke a",

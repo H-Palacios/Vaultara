@@ -517,6 +517,7 @@
   "smartInsightCloseExpiriesHeading": "פגים בערך באותו הזמן",
   "plansHeadline": "קבל את Vaultara המלאה",
   "plansSubhead": "רשומות ללא הגבלה, קבוצות משלך, ותזכורות המותאמות בדיוק איך שאתה רוצה.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} או {business}. רשומות ללא הגבלה, קבוצות משלך ותזכורות בדיוק כמו שתרצה.",
   "planFreeName": "חינם",
   "planFreePeriod": "לתמיד",
   "planCurrentFooter": "אתה בתוכנית זו",

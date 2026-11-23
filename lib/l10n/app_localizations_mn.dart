@@ -1108,6 +1108,11 @@ class AppLocalizationsMn extends AppLocalizations {
   String get plansSubhead => 'Хязгааргүй бичлэг, өөрийн гэсэн бүлгүүд, таны хүссэнээр нарийн тохируулсан сануулгууд.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family эсвэл $business. Хязгааргүй бичлэг, өөрийн бүлгүүд, хүссэнээрээ тохируулсан сануулга.';
+  }
+
+  @override
   String get planFreeName => 'Үнэгүй';
 
   @override

@@ -1109,6 +1109,11 @@ class AppLocalizationsUr extends AppLocalizations {
   String get plansSubhead => 'لامحدود ریکارڈز، آپ کے اپنے گروپس، اور بالکل آپ کی مرضی کے مطابق سیٹ کردہ یاد دہانیاں۔';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual، $family یا $business۔ لامحدود ریکارڈز، آپ کے اپنے گروپس اور آپ کی مرضی کے مطابق یاد دہانیاں۔';
+  }
+
+  @override
   String get planFreeName => 'مفت';
 
   @override

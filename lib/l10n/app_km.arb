@@ -317,6 +317,7 @@
   "smartInsightCloseExpiriesHeading": "ផុតកំណត់ក្នុងពេលប្រហាក់ប្រហែលគ្នា",
   "plansHeadline": "ទទួលបាន Vaultara ពេញលេញ",
   "plansSubhead": "កំណត់ត្រាគ្មានដែនកំណត់ ក្រុមផ្ទាល់ខ្លួនរបស់អ្នក និងការរំលឹកដែលកំណត់តាមបំណងរបស់អ្នកយ៉ាងពិតប្រាកដ។",
+  "plansSubheadTiers": "{premium}៖ {individual} {family} ឬ {business}។ កំណត់ត្រាគ្មានដែនកំណត់ ក្រុមផ្ទាល់ខ្លួន និងការរំលឹកតាមចិត្តអ្នក។",
   "planFreeName": "ឥតគិតថ្លៃ",
   "planFreePeriod": "ជារៀងរហូត",
   "planCurrentFooter": "អ្នកកំពុងប្រើគម្រោងនេះ",

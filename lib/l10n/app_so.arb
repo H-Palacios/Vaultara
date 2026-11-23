@@ -512,6 +512,7 @@
   "smartInsightCloseExpiriesHeading": "Dhacaya qiyaastii isku waqti",
   "plansHeadline": "Hel Vaultara oo dhammaystiran",
   "plansSubhead": "Diiwaanno aan xadidnayn, kooxahaaga gaarka ah, iyo xusuusiyeyaal loo habeeyey sida aad saxda ah u doonayso.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} ama {business}. Diiwaanno aan xad lahayn, kooxahaaga gaarka ah iyo xusuusin sidaad rabto.",
   "planFreeName": "Bilaash",
   "planFreePeriod": "weligeedba",
   "planCurrentFooter": "Waxaad ku jirtaa qorshahan",

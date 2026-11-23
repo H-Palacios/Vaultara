@@ -526,6 +526,7 @@
   "smartInsightCloseExpiriesHeading": "Ժամկետները լրանում են մոտավորապես նույն ժամանակահատվածում",
   "plansHeadline": "Ստացեք Vaultara-ի ամբողջական տարբերակը",
   "plansSubhead": "Անսահմանափակ գրառումներ, ձեր սեփական խմբերը և հիշեցումներ՝ հարմարեցված ճիշտ ձեր ուզած ձևով։",
+  "plansSubheadTiers": "{premium}՝ {individual}, {family} կամ {business}։ Անսահմանափակ գրառումներ, ձեր սեփական խմբերը և ձեր ուզածով կարգավորված հիշեցումներ։",
   "planFreeName": "Անվճար",
   "planFreePeriod": "ընդմիշտ",
   "planCurrentFooter": "Դուք այս փաթեթում եք",

@@ -1109,6 +1109,11 @@ class AppLocalizationsAm extends AppLocalizations {
   String get plansSubhead => 'ያልተገደቡ መዝገቦች፣ የእርስዎ የግል ቡድኖች እና በትክክል የሚፈልጉት ዓይነት አስታዋሾች።';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual፣ $family ወይም $business። ያልተገደቡ መዝገቦች፣ የራስዎ ቡድኖች እና እንደፈለጉ የሚያስተካክሏቸው አስታዋሾች።';
+  }
+
+  @override
   String get planFreeName => 'ነፃ';
 
   @override

@@ -512,6 +512,7 @@
   "smartInsightCloseExpiriesHeading": "Hemen Hemen Aynı Zamanda Sona Eriyor",
   "plansHeadline": "Vaultara'nın tüm özelliklerine sahip olun",
   "plansSubhead": "Sınırsız kayıt, kendi gruplarınız ve tam istediğiniz gibi ayarlanan hatırlatıcılar.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} veya {business}. Sınırsız kayıt, kendi gruplarınız ve istediğiniz gibi ayarlanan hatırlatmalar.",
   "planFreeName": "Ücretsiz",
   "planFreePeriod": "sonsuza kadar",
   "planCurrentFooter": "Bu plandasınız",

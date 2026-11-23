@@ -1111,6 +1111,11 @@ class AppLocalizationsSk extends AppLocalizations {
   String get plansSubhead => 'Neobmedzené záznamy, vlastné skupiny a pripomienky vyladené presne podľa vašich predstáv.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family alebo $business. Neobmedzené záznamy, vlastné skupiny a pripomienky nastavené podľa vás.';
+  }
+
+  @override
   String get planFreeName => 'Zadarmo';
 
   @override

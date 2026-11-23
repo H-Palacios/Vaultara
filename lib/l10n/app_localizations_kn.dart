@@ -1109,6 +1109,11 @@ class AppLocalizationsKn extends AppLocalizations {
   String get plansSubhead => 'ಅನಿಯಮಿತ ದಾಖಲೆಗಳು, ನಿಮ್ಮದೇ ಗುಂಪುಗಳು ಮತ್ತು ನಿಮಗೆ ಬೇಕಾದಂತೆಯೇ ಹೊಂದಿಸಿದ ರಿಮೈಂಡರ್‌ಗಳು.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family ಅಥವಾ $business. ಅನಿಯಮಿತ ದಾಖಲೆಗಳು, ನಿಮ್ಮದೇ ಗುಂಪುಗಳು ಮತ್ತು ನಿಮಗೆ ಬೇಕಾದಂತೆ ಹೊಂದಿಸಿದ ಜ್ಞಾಪನೆಗಳು.';
+  }
+
+  @override
   String get planFreeName => 'ಉಚಿತ';
 
   @override

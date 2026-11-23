@@ -526,6 +526,7 @@
   "smartInsightCloseExpiriesHeading": "Skadojnë afërsisht në të njëjtën kohë",
   "plansHeadline": "Përfitoni paketën e plotë Vaultara",
   "plansSubhead": "Regjistrime të pakufizuara, grupet tuaja dhe kujtesa të përshtatura saktësisht ashtu siç dëshironi.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} ose {business}. Regjistrime të pakufizuara, grupet tuaja dhe kujtesa sipas dëshirës.",
   "planFreeName": "Falas",
   "planFreePeriod": "përgjithmonë",
   "planCurrentFooter": "Jeni në këtë plan",

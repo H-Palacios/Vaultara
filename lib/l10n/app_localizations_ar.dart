@@ -1112,6 +1112,11 @@ class AppLocalizationsAr extends AppLocalizations {
   String get plansSubhead => 'سجلات غير محدودة، ومجموعات خاصة بك، وتذكيرات مضبوطة تمامًا كما تحب.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual أو $family أو $business. سجلات غير محدودة ومجموعاتك الخاصة وتذكيرات مضبوطة كما تريد.';
+  }
+
+  @override
   String get planFreeName => 'مجاني';
 
   @override

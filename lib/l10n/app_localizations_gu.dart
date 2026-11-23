@@ -1109,6 +1109,11 @@ class AppLocalizationsGu extends AppLocalizations {
   String get plansSubhead => 'અમર્યાદિત રેકોર્ડ, તમારા પોતાના ગ્રૂપ અને તમે ઇચ્છો તે રીતે જ સેટ કરેલા રિમાઇન્ડર.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family અથવા $business. અમર્યાદિત રેકોર્ડ, તમારા પોતાના જૂથો અને તમે ઇચ્છો તેવા રિમાઇન્ડર.';
+  }
+
+  @override
   String get planFreeName => 'મફત';
 
   @override

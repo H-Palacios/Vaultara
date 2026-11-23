@@ -317,6 +317,7 @@
   "smartInsightCloseExpiriesHeading": "တစ်ချိန်တည်းနီးပါး သက်တမ်းကုန်မည်",
   "plansHeadline": "Vaultara အပြည့်အစုံကို ရယူပါ",
   "plansSubhead": "အကန့်အသတ်မဲ့ မှတ်တမ်းများ၊ ကိုယ်ပိုင်အုပ်စုများနှင့် သင်လိုသလို အတိအကျ ချိန်ညှိထားသော သတိပေးချက်များ။",
+  "plansSubheadTiers": "{premium}: {individual}၊ {family} သို့မဟုတ် {business}။ အကန့်အသတ်မဲ့ မှတ်တမ်းများ၊ သင့်ကိုယ်ပိုင်အုပ်စုများနှင့် သင်လိုသလို သတိပေးချက်များ။",
   "planFreeName": "အခမဲ့",
   "planFreePeriod": "အမြဲတမ်း",
   "planCurrentFooter": "သင် ဤအစီအစဉ်တွင် ရှိနေသည်",

@@ -529,6 +529,7 @@
   "smartInsightCloseExpiriesHeading": "หมดอายุในช่วงเวลาใกล้เคียงกัน",
   "plansHeadline": "รับประสบการณ์ Vaultara แบบเต็มรูปแบบ",
   "plansSubhead": "เพิ่มรายการได้ไม่จำกัด สร้างกลุ่มของคุณเอง และตั้งค่าการแจ้งเตือนได้ตามที่คุณต้องการ",
+  "plansSubheadTiers": "{premium}: {individual}, {family} หรือ {business} บันทึกได้ไม่จำกัด กลุ่มของคุณเอง และการแจ้งเตือนตามที่คุณต้องการ",
   "planFreeName": "ฟรี",
   "planFreePeriod": "ตลอดชีพ",
   "planCurrentFooter": "คุณกำลังใช้แผนบริการนี้",

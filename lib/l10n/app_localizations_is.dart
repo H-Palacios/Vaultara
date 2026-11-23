@@ -1108,6 +1108,11 @@ class AppLocalizationsIs extends AppLocalizations {
   String get plansSubhead => 'Ótakmarkaðar færslur, þínir eigin hópar og áminningar stilltar nákvæmlega eins og þú vilt.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family eða $business. Ótakmarkaðar færslur, þínir eigin hópar og áminningar eins og þú vilt.';
+  }
+
+  @override
   String get planFreeName => 'Ókeypis';
 
   @override

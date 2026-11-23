@@ -530,6 +530,7 @@
   "smartInsightCloseExpiriesHeading": "Истекуваат во приближно исто време",
   "plansHeadline": "Добијте го целосниот Vaultara",
   "plansSubhead": "Неограничени записи, ваши сопствени групи и потсетници прилагодени точно како што сакате.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} или {business}. Неограничени записи, ваши сопствени групи и потсетници поставени по ваша желба.",
   "planFreeName": "Бесплатно",
   "planFreePeriod": "засекогаш",
   "planCurrentFooter": "Вие сте на овој план",

@@ -1109,6 +1109,11 @@ class AppLocalizationsFa extends AppLocalizations {
   String get plansSubhead => 'رکوردهای نامحدود، گروه‌های اختصاصی خودتان و یادآورهایی که دقیقاً مطابق میل شما تنظیم شده‌اند.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual، $family یا $business. سوابق نامحدود، گروه‌های خودتان و یادآورهایی که به دلخواه تنظیم می‌کنید.';
+  }
+
+  @override
   String get planFreeName => 'رایگان';
 
   @override

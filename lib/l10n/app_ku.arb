@@ -512,6 +512,7 @@
   "smartInsightCloseExpiriesHeading": "Hema hema di heman demê de bidawî dibin",
   "plansHeadline": "Guhartoya Vaultara ya tije bi dest bixe",
   "plansSubhead": "Tomarên bêsînor, komên te yên taybet, û bîrxistinên ku tam wekî ku tu dixwazî hatine eyarkirin.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} an {business}. Tomarên bêsînor, komên te yên taybet û bîranînên li gorî dilê te.",
   "planFreeName": "Belaş",
   "planFreePeriod": "her dem",
   "planCurrentFooter": "Tu di vê plânê de yî",

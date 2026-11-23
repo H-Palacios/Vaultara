@@ -317,6 +317,7 @@
   "smartInsightCloseExpiriesHeading": "લગભગ એક જ સમયે સમાપ્ત થતા",
   "plansHeadline": "Vaultaraનો સંપૂર્ણ લાભ મેળવો",
   "plansSubhead": "અમર્યાદિત રેકોર્ડ, તમારા પોતાના ગ્રૂપ અને તમે ઇચ્છો તે રીતે જ સેટ કરેલા રિમાઇન્ડર.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} અથવા {business}. અમર્યાદિત રેકોર્ડ, તમારા પોતાના જૂથો અને તમે ઇચ્છો તેવા રિમાઇન્ડર.",
   "planFreeName": "મફત",
   "planFreePeriod": "હંમેશાં માટે",
   "planCurrentFooter": "તમે આ પ્લાન પર છો",

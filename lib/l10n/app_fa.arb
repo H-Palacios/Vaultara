@@ -524,6 +524,7 @@
   "smartInsightNearlyAllCoveredHeading": "تقریباً همه چیز پوشش داده شده",
   "plansHeadline": "دریافت نسخه کامل Vaultara",
   "plansSubhead": "رکوردهای نامحدود، گروه‌های اختصاصی خودتان و یادآورهایی که دقیقاً مطابق میل شما تنظیم شده‌اند.",
+  "plansSubheadTiers": "{premium}: {individual}، {family} یا {business}. سوابق نامحدود، گروه‌های خودتان و یادآورهایی که به دلخواه تنظیم می‌کنید.",
   "planFreeName": "رایگان",
   "planFreePeriod": "برای همیشه",
   "planCurrentFooter": "شما از این طرح استفاده می‌کنید",

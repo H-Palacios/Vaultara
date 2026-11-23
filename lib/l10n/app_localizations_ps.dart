@@ -1109,6 +1109,11 @@ class AppLocalizationsPs extends AppLocalizations {
   String get plansSubhead => 'نامحدود ریکارډونه، ستاسو خپلې ډلې، او یادونې په کټ مټ هغه ډول تنظیم شوې چې تاسو یې غواړئ.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual، $family یا $business. نامحدود ریکارډونه، ستاسو خپلې ډلې او ستاسو د خوښې یادونې.';
+  }
+
+  @override
   String get planFreeName => 'وړیا';
 
   @override

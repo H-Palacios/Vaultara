@@ -530,6 +530,7 @@
   "smartInsightCloseExpiriesHeading": "ვადა დაახლოებით ერთსა და იმავე დროს იწურება",
   "plansHeadline": "მიიღეთ Vaultara სრულად",
   "plansSubhead": "ულიმიტო ჩანაწერები, თქვენი საკუთარი ჯგუფები და ზუსტად თქვენს სურვილზე მორგებული შეხსენებები.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} ან {business}. შეუზღუდავი ჩანაწერები, საკუთარი ჯგუფები და შეხსენებები თქვენი სურვილისამებრ.",
   "planFreeName": "უფასო",
   "planFreePeriod": "სამუდამოდ",
   "planCurrentFooter": "თქვენ ხართ ამ გეგმაზე",

@@ -530,6 +530,7 @@
   "smartInsightCloseExpiriesHeading": "Шамамен бір уақытта мерзімі өтеді",
   "plansHeadline": "Vaultara мүмкіндіктерін толық ашыңыз",
   "plansSubhead": "Шектеусіз жазбалар, жеке топтар және толықтай сіздің қалауыңызша бапталған еске салғыштар.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} немесе {business}. Шексіз жазбалар, өз топтарыңыз және қалауыңызша бапталған еске салғыштар.",
   "planFreeName": "Тегін",
   "planFreePeriod": "мәңгілікке",
   "planCurrentFooter": "Сіз осы тарифтесіз",

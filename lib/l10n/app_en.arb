@@ -743,6 +743,24 @@
   },
   "plansHeadline": "Get the full Vaultara",
   "plansSubhead": "Unlimited records, your own groups, and reminders tuned exactly how you want them.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} or {business}. Unlimited records, your own groups and reminders set your way.",
+  "@plansSubheadTiers": {
+    "description": "Plans screen line under the headline. premium is the paid tier name; individual, family and business are the three ways to have it.",
+    "placeholders": {
+      "premium": {
+        "type": "String"
+      },
+      "individual": {
+        "type": "String"
+      },
+      "family": {
+        "type": "String"
+      },
+      "business": {
+        "type": "String"
+      }
+    }
+  },
   "planFreeName": "Free",
   "planFreePeriod": "forever",
   "planCurrentFooter": "You are on this plan",

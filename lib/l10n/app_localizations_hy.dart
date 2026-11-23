@@ -1109,6 +1109,11 @@ class AppLocalizationsHy extends AppLocalizations {
   String get plansSubhead => 'Անսահմանափակ գրառումներ, ձեր սեփական խմբերը և հիշեցումներ՝ հարմարեցված ճիշտ ձեր ուզած ձևով։';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium՝ $individual, $family կամ $business։ Անսահմանափակ գրառումներ, ձեր սեփական խմբերը և ձեր ուզածով կարգավորված հիշեցումներ։';
+  }
+
+  @override
   String get planFreeName => 'Անվճար';
 
   @override

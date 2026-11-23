@@ -1102,6 +1102,11 @@ class AppLocalizationsTh extends AppLocalizations {
   String get plansSubhead => 'เพิ่มรายการได้ไม่จำกัด สร้างกลุ่มของคุณเอง และตั้งค่าการแจ้งเตือนได้ตามที่คุณต้องการ';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family หรือ $business บันทึกได้ไม่จำกัด กลุ่มของคุณเอง และการแจ้งเตือนตามที่คุณต้องการ';
+  }
+
+  @override
   String get planFreeName => 'ฟรี';
 
   @override

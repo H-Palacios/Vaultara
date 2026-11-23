@@ -530,6 +530,7 @@
   "smartInsightCloseExpiriesHeading": "Бараг ижил хугацаанд дуусна",
   "plansHeadline": "Vaultara-г бүрэн эхээр нь аваарай",
   "plansSubhead": "Хязгааргүй бичлэг, өөрийн гэсэн бүлгүүд, таны хүссэнээр нарийн тохируулсан сануулгууд.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} эсвэл {business}. Хязгааргүй бичлэг, өөрийн бүлгүүд, хүссэнээрээ тохируулсан сануулга.",
   "planFreeName": "Үнэгүй",
   "planFreePeriod": "үүрд",
   "planCurrentFooter": "Та энэ багцыг ашиглаж байна",

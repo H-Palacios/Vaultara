@@ -1109,6 +1109,11 @@ class AppLocalizationsAz extends AppLocalizations {
   String get plansSubhead => 'Limitsiz sənəd, öz qruplarınız və tam istədiyiniz kimi qurulan xatırlatmalar.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family və ya $business. Limitsiz qeydlər, öz qruplarınız və istədiyiniz kimi qurulan xatırlatmalar.';
+  }
+
+  @override
   String get planFreeName => 'Pulsuz';
 
   @override

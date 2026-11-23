@@ -1108,6 +1108,11 @@ class AppLocalizationsKo extends AppLocalizations {
   String get plansSubhead => '무제한 기록, 전용 그룹, 원하는 대로 정밀하게 설정하는 알림 기능을 만나보세요.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family, $business. 무제한 기록, 나만의 그룹, 원하는 대로 맞춘 알림.';
+  }
+
+  @override
   String get planFreeName => '무료';
 
   @override

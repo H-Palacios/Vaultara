@@ -512,6 +512,7 @@
   "smartInsightCloseExpiriesHeading": "Wọn Ń Parí Ní Àkókò Kan Náà",
   "plansHeadline": "Gba gbogbo Vaultara ní kíkún",
   "plansSubhead": "Àwọn igbasilẹ ailopin, àwọn ẹgbẹ́ tirẹ, ati àwọn olùránnilétí tí a túnṣe gẹ́gẹ́ bí o ṣe fẹ́.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} tàbí {business}. Àkọsílẹ̀ láìní òpin, àwọn ẹgbẹ́ tìrẹ àti ìránnilétí bí o ṣe fẹ́.",
   "planFreeName": "Ọ̀fẹ́",
   "planFreePeriod": "títí ayé",
   "planCurrentFooter": "O wà lórí ètò yìí",

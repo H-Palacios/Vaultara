@@ -1109,6 +1109,11 @@ class AppLocalizationsMr extends AppLocalizations {
   String get plansSubhead => 'अमर्याद नोंदी, तुमचे स्वतःचे गट आणि तुम्हाला हवे तसे नेमके सेट केलेले रिमाइंडर.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family किंवा $business. अमर्यादित नोंदी, तुमचे स्वतःचे गट आणि तुम्हाला हवे तसे स्मरणपत्र.';
+  }
+
+  @override
   String get planFreeName => 'विनामूल्य';
 
   @override

@@ -1109,6 +1109,11 @@ class AppLocalizationsZu extends AppLocalizations {
   String get plansSubhead => 'Amarekhodi angenamkhawulo, amaqembu akho, nezikhumbuzo ezihlelwe ngendlela ofuna ngayo.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family noma $business. Amarekhodi angenamkhawulo, amaqembu akho siqu nezikhumbuzi ngendlela ofuna ngayo.';
+  }
+
+  @override
   String get planFreeName => 'Mahhala';
 
   @override

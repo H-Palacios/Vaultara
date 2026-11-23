@@ -512,6 +512,7 @@
   "smartInsightCloseExpiriesHeading": "लगभग एकै समयमा म्याद समाप्त हुँदैछ",
   "plansHeadline": "पूर्ण Vaultara प्राप्त गर्नुहोस्",
   "plansSubhead": "असीमित रेकर्डहरू, तपाईंको आफ्नै समूहहरू, र तपाईंले चाहे जस्तै गरी मिलाइएका रिमाइन्डरहरू।",
+  "plansSubheadTiers": "{premium}: {individual}, {family} वा {business}। असीमित रेकर्ड, तपाईंका आफ्नै समूह र तपाईंले चाहे जस्तो रिमाइन्डर।",
   "planFreeName": "निःशुल्क",
   "planFreePeriod": "सधैंका लागि",
   "planCurrentFooter": "तपाईं यो योजनामा हुनुहुन्छ",

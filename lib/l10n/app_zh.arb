@@ -512,6 +512,7 @@
   "smartInsightCloseExpiriesHeading": "到期时间非常接近",
   "plansHeadline": "获取完整的 Vaultara 体验",
   "plansSubhead": "无限记录、专属分组，以及完全按您心意定制的提醒服务。",
+  "plansSubheadTiers": "{premium}：{individual}、{family}或{business}。记录数量不限，自建分组，提醒随心设置。",
   "planFreeName": "免费版",
   "planFreePeriod": "永久",
   "planCurrentFooter": "您正在使用此方案",

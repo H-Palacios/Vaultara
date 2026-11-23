@@ -1109,6 +1109,11 @@ class AppLocalizationsTa extends AppLocalizations {
   String get plansSubhead => 'வரம்பற்ற பதிவுகள், உங்களுக்கான சொந்தக் குழுக்கள் மற்றும் நீங்கள் விரும்பும் வகையில் அமைக்கப்பட்ட நினைவூட்டல்கள்.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family அல்லது $business. வரம்பற்ற பதிவுகள், உங்கள் சொந்த குழுக்கள் மற்றும் நீங்கள் விரும்பியபடி நினைவூட்டல்கள்.';
+  }
+
+  @override
   String get planFreeName => 'இலவசம்';
 
   @override

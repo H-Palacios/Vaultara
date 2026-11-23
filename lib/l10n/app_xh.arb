@@ -512,6 +512,7 @@
   "smartInsightCloseExpiriesHeading": "Ziphelelwa kufutshane nexesha elinye",
   "plansHeadline": "Fumana iVaultara epheleleyo",
   "plansSubhead": "Iirekhodi ezingasikelwanga mda, amaqela akho, nezikhumbuzo ezilungiswe ngendlela othanda ngayo.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} okanye {business}. Iirekhodi ezingenamda, amaqela akho kunye nezikhumbuzi ngendlela ofuna ngayo.",
   "planFreeName": "Simahla",
   "planFreePeriod": "unaphakade",
   "planCurrentFooter": "Ukwesi sicwangciso",

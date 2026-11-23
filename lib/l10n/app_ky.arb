@@ -530,6 +530,7 @@
   "smartInsightCloseExpiriesHeading": "Болжол менен бир убакта бүтөт",
   "plansHeadline": "Vaultara мүмкүнчүлүктөрүн толук алыңыз",
   "plansSubhead": "Чектөөсүз жазуулар, өзүңүздүн топторуңуз жана сиз каалагандай так жөндөлгөн эскертүүлөр.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} же {business}. Чексиз жазуулар, өз топторуңуз жана каалагандай жөндөлгөн эскертмелер.",
   "planFreeName": "Акысыз",
   "planFreePeriod": "түбөлүккө",
   "planCurrentFooter": "Сиз бул тарифтесиз",

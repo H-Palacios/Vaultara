@@ -530,6 +530,7 @@
   "smartInsightCloseExpiriesHeading": "Körülbelül azonos időben járnak le",
   "plansHeadline": "Szerezze meg a teljes Vaultara élményt",
   "plansSubhead": "Korlátlan bejegyzés, saját csoportok és pontosan úgy beállított emlékeztetők, ahogy szeretné.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} vagy {business}. Korlátlan bejegyzés, saját csoportok és kedved szerint beállított emlékeztetők.",
   "planFreeName": "Ingyenes",
   "planFreePeriod": "örökké",
   "planCurrentFooter": "Ezt a csomagot használja",

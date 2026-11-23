@@ -1109,6 +1109,11 @@ class AppLocalizationsKu extends AppLocalizations {
   String get plansSubhead => 'Tomarên bêsînor, komên te yên taybet, û bîrxistinên ku tam wekî ku tu dixwazî hatine eyarkirin.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family an $business. Tomarên bêsînor, komên te yên taybet û bîranînên li gorî dilê te.';
+  }
+
+  @override
   String get planFreeName => 'Belaş';
 
   @override

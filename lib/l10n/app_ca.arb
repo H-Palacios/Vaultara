@@ -519,6 +519,7 @@
   "smartInsightCloseExpiriesHeading": "Vencen aproximadament al mateix temps",
   "plansHeadline": "Aconsegueix tot el Vaultara",
   "plansSubhead": "Registres il·limitats, els teus propis grups i recordatoris configurats exactament com tu vulguis.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} o {business}. Registres il·limitats, els teus propis grups i recordatoris al teu gust.",
   "planFreeName": "Gratuït",
   "planFreePeriod": "per sempre",
   "planCurrentFooter": "Estàs en aquest pla",

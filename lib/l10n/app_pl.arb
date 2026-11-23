@@ -512,6 +512,7 @@
   "smartInsightCloseExpiriesHeading": "Wygasają w podobnym czasie",
   "plansHeadline": "Uzyskaj pełny dostęp do Vaultara",
   "plansSubhead": "Nieograniczona liczba rekordów, własne grupy i przypomnienia dopasowane dokładnie do Twoich potrzeb.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} lub {business}. Nieograniczona liczba wpisów, własne grupy i przypomnienia ustawione po Twojemu.",
   "planFreeName": "Bezpłatny",
   "planFreePeriod": "na zawsze",
   "planCurrentFooter": "Korzystasz z tego planu",

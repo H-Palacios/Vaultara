@@ -1113,6 +1113,11 @@ class AppLocalizationsLt extends AppLocalizations {
   String get plansSubhead => 'Neriboti įrašai, jūsų asmeninės grupės ir priminimai, suderinti tiksliai taip, kaip norite.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family arba $business. Neriboti įrašai, jūsų pačių grupės ir priminimai taip, kaip norite.';
+  }
+
+  @override
   String get planFreeName => 'Nemokamas';
 
   @override

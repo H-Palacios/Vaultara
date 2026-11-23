@@ -2161,6 +2161,12 @@ abstract class AppLocalizations {
   /// **'Unlimited records, your own groups, and reminders tuned exactly how you want them.'**
   String get plansSubhead;
 
+  /// Plans screen line under the headline. premium is the paid tier name; individual, family and business are the three ways to have it.
+  ///
+  /// In en, this message translates to:
+  /// **'{premium}: {individual}, {family} or {business}. Unlimited records, your own groups and reminders set your way.'**
+  String plansSubheadTiers(String premium, String individual, String family, String business);
+
   /// No description provided for @planFreeName.
   ///
   /// In en, this message translates to:

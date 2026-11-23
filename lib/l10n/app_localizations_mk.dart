@@ -1107,6 +1107,11 @@ class AppLocalizationsMk extends AppLocalizations {
   String get plansSubhead => 'Неограничени записи, ваши сопствени групи и потсетници прилагодени точно како што сакате.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family или $business. Неограничени записи, ваши сопствени групи и потсетници поставени по ваша желба.';
+  }
+
+  @override
   String get planFreeName => 'Бесплатно';
 
   @override

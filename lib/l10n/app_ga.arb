@@ -524,6 +524,7 @@
   "smartInsightCloseExpiriesHeading": "Ag dul in éag thart ar an am céanna",
   "plansHeadline": "Faigh Vaultara iomlán",
   "plansSubhead": "Taifid neamhtheoranta, do ghrúpaí féin, agus meabhrúcháin tiúnta go díreach mar is mian leat.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} nó {business}. Taifid gan teorainn, do ghrúpaí féin agus meabhrúcháin mar is mian leat.",
   "planFreeName": "Saor in aisce",
   "planFreePeriod": "go deo",
   "planCurrentFooter": "Tá tú ar an bplean seo",

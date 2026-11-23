@@ -1109,6 +1109,11 @@ class AppLocalizationsFi extends AppLocalizations {
   String get plansSubhead => 'Rajoittamattomat tietueet, omat ryhmät ja juuri haluamallasi tavalla hienosäädetyt muistutukset.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family tai $business. Rajattomasti tietueita, omat ryhmät ja muistutukset juuri niin kuin haluat.';
+  }
+
+  @override
   String get planFreeName => 'Maksuton';
 
   @override

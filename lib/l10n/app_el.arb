@@ -519,6 +519,7 @@
   "smartInsightCloseExpiriesHeading": "Λήγουν περίπου την ίδια χρονική περίοδο",
   "plansHeadline": "Αποκτήστε την πλήρη εμπειρία του Vaultara",
   "plansSubhead": "Απεριόριστες εγγραφές, δικές σας ομάδες και υπενθυμίσεις ρυθμισμένες ακριβώς όπως θέλετε.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} ή {business}. Απεριόριστες εγγραφές, δικές σας ομάδες και υπενθυμίσεις όπως τις θέλετε.",
   "planFreeName": "Δωρεάν",
   "planFreePeriod": "για πάντα",
   "planCurrentFooter": "Βρίσκεστε σε αυτό το πρόγραμμα",

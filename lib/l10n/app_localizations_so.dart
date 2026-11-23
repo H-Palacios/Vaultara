@@ -1109,6 +1109,11 @@ class AppLocalizationsSo extends AppLocalizations {
   String get plansSubhead => 'Diiwaanno aan xadidnayn, kooxahaaga gaarka ah, iyo xusuusiyeyaal loo habeeyey sida aad saxda ah u doonayso.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family ama $business. Diiwaanno aan xad lahayn, kooxahaaga gaarka ah iyo xusuusin sidaad rabto.';
+  }
+
+  @override
   String get planFreeName => 'Bilaash';
 
   @override

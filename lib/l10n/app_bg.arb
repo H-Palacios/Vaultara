@@ -317,6 +317,7 @@
   "smartInsightCloseExpiriesHeading": "Изтичат почти едновременно",
   "plansHeadline": "Вземете пълния Vaultara",
   "plansSubhead": "Неограничен брой записи, собствени групи и напомняния, настроени точно както искате.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} или {business}. Неограничени записи, ваши собствени групи и напомняния, настроени както искате.",
   "planFreeName": "Безплатен",
   "planFreePeriod": "безсрочно",
   "planCurrentFooter": "Използвате този план",

@@ -1109,6 +1109,11 @@ class AppLocalizationsCa extends AppLocalizations {
   String get plansSubhead => 'Registres il·limitats, els teus propis grups i recordatoris configurats exactament com tu vulguis.';
 
   @override
+  String plansSubheadTiers(String premium, String individual, String family, String business) {
+    return '$premium: $individual, $family o $business. Registres il·limitats, els teus propis grups i recordatoris al teu gust.';
+  }
+
+  @override
   String get planFreeName => 'Gratuït';
 
   @override

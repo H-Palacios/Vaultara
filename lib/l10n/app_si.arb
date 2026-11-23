@@ -512,6 +512,7 @@
   "smartInsightCloseExpiriesHeading": "ආසන්න වශයෙන් එකම කාලයකදී කල් ඉකුත් වේ",
   "plansHeadline": "සම්පූර්ණ Vaultara අත්දැකීම ලබා ගන්න",
   "plansSubhead": "සීමාරහිත වාර්තා, ඔබේම කණ්ඩායම්, සහ ඔබට අවශ්‍ය පරිදිම සකසන ලද මතක් කිරීම්.",
+  "plansSubheadTiers": "{premium}: {individual}, {family} හෝ {business}. අසීමිත වාර්තා, ඔබේම කණ්ඩායම් සහ ඔබ කැමති ලෙස සකසන සිහිකැඳවීම්.",
   "planFreeName": "නොමිලේ",
   "planFreePeriod": "සදාකාලිකවම",
   "planCurrentFooter": "ඔබ සිටින්නේ මෙම සැලසුම මතයි",
