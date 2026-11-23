@@ -120,6 +120,7 @@ class TutorialStepGroups {
     TutorialStep.householdInvite,
     TutorialStep.householdShared,
     TutorialStep.householdWhose,
+    TutorialStep.householdRenewer,
   ];
 
   static const List<TutorialStep> importScan = [
@@ -136,6 +137,7 @@ class TutorialStepGroups {
 
   static const List<TutorialStep> business = [
     TutorialStep.businessTeam,
+    TutorialStep.businessRoles,
     TutorialStep.businessEmail,
     TutorialStep.businessReport,
     TutorialStep.businessRequest,

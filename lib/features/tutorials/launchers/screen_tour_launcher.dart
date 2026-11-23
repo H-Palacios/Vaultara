@@ -112,7 +112,11 @@ class ScreenTourLauncher {
           group,
           premium,
           PlanTier.family,
-          (_) => const FamilyScreen(tourTier: PlanTier.family),
+          (_) => TourStageSwitch(
+            sampleSteps: const {TutorialStep.householdRenewer},
+            sample: TourSamplesView.renewer,
+            screen: (_) => const FamilyScreen(tourTier: PlanTier.family),
+          ),
         );
       case TutorialIds.business:
         await _paid(

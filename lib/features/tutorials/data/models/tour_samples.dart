@@ -3,6 +3,7 @@ import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/features/tools/data/life_plan.dart';
 import 'package:vaultara/features/tools/logic/life_events.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/core/data/models/person.dart';
 
 /// Made-up records and plans the screen tours show, so a tour looks the
 /// same for everyone and never shows the user's own data. None of it is
@@ -12,6 +13,18 @@ class TourSamples {
 
   /// The made-up person the family tutorial picks for a record.
   static const String personId = 'tour-person';
+
+  /// A made-up staff member with a role, for the business tutorial. None
+  /// of the documents the role needs are added yet.
+  static const List<Person> staff = <Person>[
+    Person(
+      id: personId,
+      name: 'Thabo',
+      colourIndex: 2,
+      role: 'Driver',
+      requiredGroups: <String>['driving_licences', 'medical_certificates'],
+    ),
+  ];
 
   static DateTime _inDays(int days) {
     final now = DateTime.now();

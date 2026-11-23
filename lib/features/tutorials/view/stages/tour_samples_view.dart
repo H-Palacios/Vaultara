@@ -14,6 +14,7 @@ import 'package:vaultara/features/tutorials/view/stages/tour_sample_page.dart';
 import 'package:vaultara/features/tutorials/view/tutorial_target.dart';
 import 'package:vaultara/features/vault/view/attachment_strip.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
+import 'package:vaultara/features/household/view/renewer_picker.dart';
 
 /// The sample screens the tours switch to. Each one is built from the
 /// app's own widgets with made-up data, and none of it can be changed:
@@ -112,6 +113,27 @@ class TourSamplesView {
             holderId: TourSamples.personId,
             onChanged: (_) {},
             samplePeople: const <Person>[sample],
+          ),
+        ),
+      ],
+    );
+  }
+
+  /// A shared record with a member chosen to renew it.
+  static Widget renewer(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    final record = TourSamples.shareRecord(loc);
+    return TourSamplePage(
+      title: loc.editRecordTitle,
+      children: [
+        _RecordName(record: record),
+        TutorialTarget(
+          steps: const [TutorialStep.householdRenewer],
+          child: RenewerPicker(
+            value: TourSamples.personId,
+            enabled: true,
+            onChanged: (_) {},
+            sampleNames: const <String, String>{TourSamples.personId: 'Alex'},
           ),
         ),
       ],
