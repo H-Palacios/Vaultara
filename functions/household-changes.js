@@ -54,6 +54,56 @@ function remindersChanged(before, after) {
   return REMINDER_FIELDS.some((field) => !sameValue(before[field], after[field]));
 }
 
+// Business change history: who changed which shared record, and which
+// parts. Only field names are kept, never the notes or document numbers
+// themselves, so the log cannot leak what the record says.
+const HISTORY_FIELDS = [
+  "name", "expiryDate", "holderId", "holderName", "renewalCost", "costCurrency",
+  "reminderOffsetDays", "repeatMonths", "leadDays", "notes", "reference",
+  "attachments", "assigneeUid", "locked", "subcategoryName", "provider",
+];
+const HISTORY_YEARS = 2;
+
+function historyEntry(before, after) {
+  if (!before && !after) return null;
+  let action;
+  if (!before) action = "added";
+  else if (!after) action = "removed";
+  else if (before.isDeleted !== true && after.isDeleted === true) action = "deleted";
+  else if (before.isDeleted === true && after.isDeleted !== true) action = "restored";
+  else action = "changed";
+  const fields = action === "changed"
+    ? HISTORY_FIELDS.filter((f) => !sameValue(before[f], after[f]))
+    : [];
+  if (action === "changed" && fields.length === 0) return null;
+  const record = after || before;
+  const uid = after ? (before ? after.updatedBy : after.createdBy) : null;
+  return {
+    action,
+    fields,
+    actor: typeof uid === "string" && UID_PATTERN.test(uid) ? uid : null,
+    locked: record.locked === true,
+    recordName: record.locked === true ? null : String(record.name || "").slice(0, 200),
+    expiryBefore: before && before.expiryDate && fields.includes("expiryDate") ? before.expiryDate : null,
+    expiryAfter: after && after.expiryDate && (action !== "changed" || fields.includes("expiryDate")) ? after.expiryDate : null,
+  };
+}
+
+async function writeHistory(db, hid, recordId, entry) {
+  const actorSnap = entry.actor ? await db.collection("users").doc(entry.actor).get() : null;
+  const actorName = entry.actor
+    ? ((await displayNameFor(entry.actor, actorSnap?.exists ? actorSnap.data() : {})) || "").slice(0, 80)
+    : "";
+  const now = admin.firestore.Timestamp.now();
+  await db.collection("households").doc(hid).collection("history").add({
+    ...entry,
+    actorName,
+    recordId,
+    at: now,
+    expireAt: admin.firestore.Timestamp.fromMillis(now.toMillis() + HISTORY_YEARS * 365 * 24 * 3600 * 1000),
+  });
+}
+
 function syncActorOf(before, after) {
   const uid = after ? (before ? after.updatedBy : after.createdBy) : null;
   return typeof uid === "string" && UID_PATTERN.test(uid) ? uid : null;
@@ -87,13 +137,22 @@ exports.onSharedRecordChanged = onDocumentWritten(
     const after = event.data?.after?.exists ? event.data.after.data() : null;
     const kind = kindOf(before, after);
     const sync = remindersChanged(before, after);
-    if (!kind && !sync) return;
+    const entry = historyEntry(before, after);
+    if (!kind && !sync && !entry) return;
 
     const { hid, recordId } = event.params;
     const db = admin.firestore();
     const houseSnap = await db.collection("households").doc(hid).get();
     if (!houseSnap.exists) return;
     const house = houseSnap.data() || {};
+    if (entry && house.tier === "business") {
+      try {
+        await writeHistory(db, hid, recordId, entry);
+      } catch (err) {
+        logger.error("change history write failed", { message: err?.message });
+      }
+    }
+    if (!kind && !sync) return;
     const members = Array.isArray(house.memberUids)
       ? house.memberUids.filter((m) => typeof m === "string" && UID_PATTERN.test(m))
       : [];
@@ -141,4 +200,4 @@ exports.onSharedRecordChanged = onDocumentWritten(
   },
 );
 
-exports._internal = { kindOf, actorOf, remindersChanged, syncActorOf };
+exports._internal = { kindOf, actorOf, remindersChanged, syncActorOf, historyEntry };
