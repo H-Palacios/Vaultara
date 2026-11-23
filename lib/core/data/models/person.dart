@@ -9,6 +9,11 @@ class Person {
   final String? email;
   final bool emailReminders;
 
+  /// Business plan: the person's role, such as Driver, and the document
+  /// groups that role needs. Vaultara shows which of them are missing.
+  final String? role;
+  final List<String> requiredGroups;
+
   const Person({
     required this.id,
     required this.name,
@@ -19,11 +24,40 @@ class Person {
     this.passportRecords = const <String, String>{},
     this.email,
     this.emailReminders = false,
+    this.role,
+    this.requiredGroups = const <String>[],
   });
 
+  static const int roleMaxLength = 40;
+  static const int maxRequiredGroups = 12;
+  static final RegExp _groupKey = RegExp(r'^[a-z0-9_]{2,60}$');
+
+  static String? cleanRole(Object? value) {
+    if (value is! String) return null;
+    final role = value.trim();
+    if (role.isEmpty) return null;
+    return role.length > roleMaxLength
+        ? role.substring(0, roleMaxLength)
+        : role;
+  }
+
+  static List<String> cleanGroups(Object? value) {
+    final out = <String>[];
+    if (value is! List) return out;
+    for (final item in value) {
+      if (item is! String || !_groupKey.hasMatch(item) || out.contains(item)) {
+        continue;
+      }
+      out.add(item);
+      if (out.length >= maxRequiredGroups) break;
+    }
+    return out;
+  }
+
   static const int emailMaxLength = 254;
-  static final RegExp _emailPattern =
-      RegExp(r'^[^\s@]{1,64}@[^\s@]{1,190}\.[^\s@]{2,63}$');
+  static final RegExp _emailPattern = RegExp(
+    r'^[^\s@]{1,64}@[^\s@]{1,190}\.[^\s@]{2,63}$',
+  );
 
   static String? cleanEmail(Object? value) {
     if (value is! String) return null;
@@ -61,7 +95,9 @@ class Person {
     if (value is! Map) return out;
     value.forEach((key, id) {
       final code = cleanNationality(key);
-      if (code == null || id is! String || out.length >= maxExtraPassports + 1) {
+      if (code == null ||
+          id is! String ||
+          out.length >= maxExtraPassports + 1) {
         return;
       }
       final clean = id.trim();
@@ -76,44 +112,49 @@ class Person {
     int? colourIndex,
     String? nationality,
     bool clearNationality = false,
-  }) =>
-      Person(
-        id: id,
-        name: name ?? this.name,
-        colourIndex: colourIndex ?? this.colourIndex,
-        nationality: clearNationality
-            ? null
-            : cleanNationality(nationality) ?? this.nationality,
-        residence: residence,
-        extraPassports: extraPassports,
-        passportRecords: passportRecords,
-        email: email,
-        emailReminders: emailReminders,
-      );
+  }) => Person(
+    id: id,
+    name: name ?? this.name,
+    colourIndex: colourIndex ?? this.colourIndex,
+    nationality: clearNationality
+        ? null
+        : cleanNationality(nationality) ?? this.nationality,
+    residence: residence,
+    extraPassports: extraPassports,
+    passportRecords: passportRecords,
+    email: email,
+    emailReminders: emailReminders,
+    role: role,
+    requiredGroups: requiredGroups,
+  );
 
   Map<String, dynamic> toMap() => <String, dynamic>{
-        'name': name,
-        'colourIndex': colourIndex,
-        if (nationality != null) 'nationality': nationality,
-        if (residence != null) 'residence': residence,
-        if (extraPassports.isNotEmpty) 'extraPassports': extraPassports,
-        if (passportRecords.isNotEmpty) 'passportRecords': passportRecords,
-        if (email != null) 'email': email,
-        if (email != null) 'emailReminders': emailReminders,
-      };
+    'name': name,
+    'colourIndex': colourIndex,
+    if (nationality != null) 'nationality': nationality,
+    if (residence != null) 'residence': residence,
+    if (extraPassports.isNotEmpty) 'extraPassports': extraPassports,
+    if (passportRecords.isNotEmpty) 'passportRecords': passportRecords,
+    if (email != null) 'email': email,
+    if (email != null) 'emailReminders': emailReminders,
+    if (role != null) 'role': role,
+    if (requiredGroups.isNotEmpty) 'requiredGroups': requiredGroups,
+  };
 
   static Person fromMap(String id, Map<String, dynamic> map) => Person(
-        id: id,
-        name: (map['name'] as String?)?.trim() ?? '',
-        colourIndex: (map['colourIndex'] as num?)?.toInt() ?? 0,
-        nationality: cleanNationality(map['nationality']),
-        residence: cleanNationality(map['residence']),
-        extraPassports: cleanExtras(
-          map['extraPassports'],
-          primary: cleanNationality(map['nationality']),
-        ),
-        passportRecords: cleanPassportRecords(map['passportRecords']),
-        email: cleanEmail(map['email']),
-        emailReminders: map['emailReminders'] == true,
-      );
+    id: id,
+    name: (map['name'] as String?)?.trim() ?? '',
+    colourIndex: (map['colourIndex'] as num?)?.toInt() ?? 0,
+    nationality: cleanNationality(map['nationality']),
+    residence: cleanNationality(map['residence']),
+    extraPassports: cleanExtras(
+      map['extraPassports'],
+      primary: cleanNationality(map['nationality']),
+    ),
+    passportRecords: cleanPassportRecords(map['passportRecords']),
+    email: cleanEmail(map['email']),
+    emailReminders: map['emailReminders'] == true,
+    role: cleanRole(map['role']),
+    requiredGroups: cleanGroups(map['requiredGroups']),
+  );
 }

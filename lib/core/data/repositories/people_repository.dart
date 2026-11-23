@@ -12,8 +12,9 @@ class PeopleRepository {
 
   static int limitFor(PlanTier tier) => tier.peopleLimit;
 
-  static final ValueNotifier<List<Person>> people =
-      ValueNotifier<List<Person>>(const <Person>[]);
+  static final ValueNotifier<List<Person>> people = ValueNotifier<List<Person>>(
+    const <Person>[],
+  );
 
   static StreamSubscription<QuerySnapshot<Map<String, dynamic>>>? _sub;
   static String? _uid;
@@ -32,15 +33,21 @@ class PeopleRepository {
     if (uid == null || uid == _uid) return;
     _sub?.cancel();
     _uid = uid;
-    _sub = _collection()!.snapshots().listen((snap) {
-      final list = snap.docs
-          .map((d) => Person.fromMap(d.id, d.data()))
-          .where((p) => p.name.isNotEmpty)
-          .toList()
-        ..sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
-      people.value = List<Person>.unmodifiable(list);
-    }, onError: (Object e, StackTrace s) =>
-        ErrorReporter.record(e, s, 'people_listener'));
+    _sub = _collection()!.snapshots().listen(
+      (snap) {
+        final list =
+            snap.docs
+                .map((d) => Person.fromMap(d.id, d.data()))
+                .where((p) => p.name.isNotEmpty)
+                .toList()
+              ..sort(
+                (a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()),
+              );
+        people.value = List<Person>.unmodifiable(list);
+      },
+      onError: (Object e, StackTrace s) =>
+          ErrorReporter.record(e, s, 'people_listener'),
+    );
   }
 
   static void clearForSignOut() {
@@ -84,10 +91,9 @@ class PeopleRepository {
     final collection = _collection();
     final trimmed = name.trim();
     if (collection == null || trimmed.isEmpty) return;
-    await collection.doc(person.id).set(
-          person.copyWith(name: trimmed).toMap(),
-          SetOptions(merge: true),
-        );
+    await collection
+        .doc(person.id)
+        .set(person.copyWith(name: trimmed).toMap(), SetOptions(merge: true));
   }
 
   static Future<void> remove(Person person) async {
@@ -118,10 +124,10 @@ class PeopleRepository {
     final cleanRecords = Person.cleanPassportRecords(records);
     await collection.doc(person.id).update(<String, dynamic>{
       'nationality': clean ?? FieldValue.delete(),
-      'extraPassports':
-          cleanExtras.isEmpty ? FieldValue.delete() : cleanExtras,
-      'passportRecords':
-          cleanRecords.isEmpty ? FieldValue.delete() : cleanRecords,
+      'extraPassports': cleanExtras.isEmpty ? FieldValue.delete() : cleanExtras,
+      'passportRecords': cleanRecords.isEmpty
+          ? FieldValue.delete()
+          : cleanRecords,
     });
   }
 
@@ -132,6 +138,35 @@ class PeopleRepository {
     await collection.doc(person.id).update(<String, dynamic>{
       'residence': clean ?? FieldValue.delete(),
     });
+  }
+
+  /// Saves a person's role and the document groups it needs. With
+  /// [sameRole], everyone else with the old role name gets them too.
+  static Future<void> setRole(
+    Person person, {
+    required String? role,
+    required List<String> groups,
+    bool sameRole = false,
+  }) async {
+    final collection = _collection();
+    if (collection == null) return;
+    final cleanRole = Person.cleanRole(role);
+    final cleanGroups = Person.cleanGroups(groups);
+    final data = <String, dynamic>{
+      'role': cleanRole ?? FieldValue.delete(),
+      'requiredGroups': cleanGroups.isEmpty ? FieldValue.delete() : cleanGroups,
+    };
+    final batch = FirebaseFirestore.instance.batch();
+    batch.update(collection.doc(person.id), data);
+    final oldRole = person.role?.toLowerCase();
+    if (sameRole && oldRole != null) {
+      for (final other in people.value) {
+        if (other.id != person.id && other.role?.toLowerCase() == oldRole) {
+          batch.update(collection.doc(other.id), data);
+        }
+      }
+    }
+    await batch.commit();
   }
 
   static Future<void> setStaffEmail(
