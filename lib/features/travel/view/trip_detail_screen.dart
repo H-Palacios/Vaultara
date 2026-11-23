@@ -1,11 +1,12 @@
 import 'package:vaultara/features/pets/view/pet_trip_card.dart';
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/screen_size.dart';
+import 'package:vaultara/features/travel/view/widgets/trip/trip_entry_card.dart';
 import 'package:vaultara/core/data/models/person.dart';
 import 'package:vaultara/core/data/repositories/people_repository.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
 import 'package:vaultara/core/data/user_data_watcher.dart';
 import 'package:vaultara/core/layout/two_columns.dart';
-import 'package:vaultara/core/layout/wide_layout.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/core/view/widgets/premium_builder.dart';
 import 'package:vaultara/core/view/widgets/screen_header.dart';
@@ -226,7 +227,7 @@ class _TripDetailScreenState extends State<TripDetailScreen> {
     // A 10-inch tablet held sideways: the journey on the left, the records
     // and checklist on the right, and the buttons up in the header. Phones
     // and smaller tablets keep the single column below, unchanged.
-    if (WideLayout.of(context)) {
+    if (ScreenSize.twoColumns(context)) {
       return ListView(
         padding: const EdgeInsets.fromLTRB(24, 8, 24, 32),
         // Kept until the Flutter version in use exports ScrollCacheExtent.
@@ -254,6 +255,7 @@ class _TripDetailScreenState extends State<TripDetailScreen> {
               ..._records(context, loc, trip, results, isPremium),
               const SizedBox(height: 22),
               PetTripCard(trip: trip),
+              TripEntryCard(trip: trip),
               ..._checklist(loc, trip),
             ],
           ),
@@ -282,6 +284,7 @@ class _TripDetailScreenState extends State<TripDetailScreen> {
         _visa(trip, isPremium),
         const SizedBox(height: 22),
         PetTripCard(trip: trip),
+        TripEntryCard(trip: trip),
         ..._checklist(loc, trip),
       ],
     );
