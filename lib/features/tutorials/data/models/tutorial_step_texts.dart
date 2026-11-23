@@ -103,6 +103,8 @@ class TutorialStepTexts {
         return loc.tourBusiness2Title;
       case TutorialStep.businessClientLink:
         return loc.clientLinkAction;
+      case TutorialStep.businessHistory:
+        return loc.historyTitle;
       case TutorialStep.businessReport:
         return loc.tourBusiness3Title;
       case TutorialStep.businessRequest:
@@ -214,6 +216,8 @@ class TutorialStepTexts {
         return Icons.mark_email_unread_rounded;
       case TutorialStep.businessClientLink:
         return Icons.verified_user_rounded;
+      case TutorialStep.businessHistory:
+        return Icons.history_rounded;
       case TutorialStep.businessReport:
         return Icons.assessment_rounded;
       case TutorialStep.businessRequest:
@@ -395,6 +399,8 @@ class TutorialStepTexts {
         return loc.tourBusiness2Body;
       case TutorialStep.businessClientLink:
         return loc.tourBusinessClientBody;
+      case TutorialStep.businessHistory:
+        return loc.tourBusinessHistoryBody;
       case TutorialStep.businessReport:
         return loc.tourBusiness3Body;
       case TutorialStep.businessRequest:
@@ -406,7 +412,7 @@ class TutorialStepTexts {
       case TutorialStep.petsAdd:
         return loc.tourPetsAddBody;
       case TutorialStep.petsTravel:
-        return loc.tourPetsTravelBody;
+        return loc.tourPetsTravelPlanBody;
     }
   }
 }

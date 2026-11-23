@@ -80,6 +80,7 @@ enum TutorialStep {
   businessEmail,
   businessReport,
   businessClientLink,
+  businessHistory,
   businessRequest,
   petsList,
   petsDocuments,
