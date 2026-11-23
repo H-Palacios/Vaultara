@@ -1506,6 +1506,11 @@ class AppLocalizationsIs extends AppLocalizations {
   String get familyRemove => 'Fjarlægja';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Ríkisborgari $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Fjarlægja $name?';
   }
@@ -1573,6 +1578,9 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Hver og einn er með sínar eigin færslur og áminningar';
+
+  @override
+  String get familyBenefitRenewer => 'Veldu hver endurnýjar hverja sameiginlega færslu og minntu á með einu ýti';
 
   @override
   String get familyBenefitOneSubscription => 'Ein áskrift fyrir heimilið';
@@ -3208,6 +3216,12 @@ class AppLocalizationsIs extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Færslur um starfsfólk og ökutæki á einum stað';
 
   @override
+  String get businessBenefitBulk => 'Biddu starfsfólk um uppfærslur í einu og fáðu að vita þegar skjal rennur út';
+
+  @override
+  String get businessBenefitRoles => 'Settu nauðsynleg skjöl fyrir hvert hlutverk og sjáðu hvað hvern vantar';
+
+  @override
   String get businessBenefitPdf => 'PDF-útflutningur fyrir teymi með nafni fyrirtækisins þíns';
 
   @override
@@ -4409,6 +4423,39 @@ class AppLocalizationsIs extends AppLocalizations {
   String get householdShareOff => 'Aðeins þú getur séð þessa færslu.';
 
   @override
+  String get householdRenewerLabel => 'Hver endurnýjar';
+
+  @override
+  String get householdRenewerAnyone => 'Hver sem er á heimilinu';
+
+  @override
+  String get householdRenewerHint => 'Aðeins viðkomandi fær áminningarnar. Hinir fá að vita ef ekki er endurnýjað í tæka tíð.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name endurnýjar';
+  }
+
+  @override
+  String get householdYouRenew => 'Þú endurnýjar';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Minna $name á að endurnýja';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Áminning send til $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Þú hefur þegar sent áminningu um þetta í dag.';
+
+  @override
+  String get householdRemindError => 'Ekki tókst að senda áminninguna. Reyndu aftur.';
+
+  @override
   String get householdSharedBadge => 'Deilt';
 
   @override
@@ -4954,6 +5001,53 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Senda beiðni';
+
+  @override
+  String get staffBulkTitle => 'Biðja um uppfærslur';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Skjöl starfsfólks sem renna út innan 30 daga: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Hver og einn fær tölvupóst með tengli til að hlaða upp nýja skjalinu.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Beiðnir sendar: $sent af $count';
+  }
+
+  @override
+  String get roleAction => 'Hlutverk og nauðsynleg skjöl';
+
+  @override
+  String get roleNameLabel => 'Hlutverk';
+
+  @override
+  String get roleNameHint => 'Til dæmis: Bílstjóri';
+
+  @override
+  String get roleRequiredTitle => 'Nauðsynleg skjöl';
+
+  @override
+  String get roleRequiredHint => 'Vaultara sýnir hvaða skjöl af þessum vantar hjá þessum einstaklingi.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Uppfæra líka alla aðra með þetta hlutverk ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Vantar: $names';
+  }
+
+  @override
+  String get roleComplete => 'Öll nauðsynleg skjöl eru komin';
+
+  @override
+  String get roleSaved => 'Hlutverk vistað';
 
   @override
   String get requestUpdateSending => 'Sendi beiðnina';
@@ -8002,6 +8096,9 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tourHousehold3Body => 'Hver færsla getur tilheyrt einhverjum. Nafnið birtist á henni og í áminningum.';
 
   @override
+  String get tourHouseholdRenewBody => 'Veldu hver endurnýjar sameiginlega færslu. Aðeins viðkomandi fær áminningarnar og hver sem er getur minnt á með einu ýti.';
+
+  @override
   String get tourImport1Title => 'Skannaðu kort';
 
   @override
@@ -8042,6 +8139,9 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Bættu við starfsfólki og geymdu skírteini, leyfi og réttindi á einum stað.';
+
+  @override
+  String get tourBusinessRolesBody => 'Gefðu hverjum og einum hlutverk, eins og Bílstjóri, með skjölunum sem það þarf. Vaultara sýnir hvað vantar.';
 
   @override
   String get tourBusiness2Title => 'Áminningar í tölvupósti';

@@ -1506,6 +1506,11 @@ class AppLocalizationsVi extends AppLocalizations {
   String get familyRemove => 'Gỡ bỏ';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Công dân $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Gỡ bỏ $name?';
   }
@@ -1573,6 +1578,9 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Mỗi người có bản ghi và lời nhắc riêng';
+
+  @override
+  String get familyBenefitRenewer => 'Chọn ai gia hạn từng hồ sơ dùng chung và nhắc họ chỉ với một chạm';
 
   @override
   String get familyBenefitOneSubscription => 'Một gói đăng ký cho cả nhà';
@@ -3193,6 +3201,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Bản ghi nhân viên và xe cộ ở một nơi';
 
   @override
+  String get businessBenefitBulk => 'Yêu cầu nhân viên cập nhật cùng lúc và được báo khi giấy tờ hết hạn';
+
+  @override
+  String get businessBenefitRoles => 'Đặt giấy tờ bắt buộc theo vai trò và xem mỗi người còn thiếu gì';
+
+  @override
   String get businessBenefitPdf => 'Xuất PDF cho nhóm kèm tên công ty của bạn';
 
   @override
@@ -4376,6 +4390,39 @@ class AppLocalizationsVi extends AppLocalizations {
   String get householdShareOff => 'Chỉ bạn xem được bản ghi này.';
 
   @override
+  String get householdRenewerLabel => 'Ai gia hạn';
+
+  @override
+  String get householdRenewerAnyone => 'Bất kỳ ai trong gia đình';
+
+  @override
+  String get householdRenewerHint => 'Chỉ người này nhận được nhắc nhở. Những người khác sẽ được báo nếu không gia hạn kịp.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name gia hạn';
+  }
+
+  @override
+  String get householdYouRenew => 'Bạn gia hạn';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Nhắc $name gia hạn';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Đã gửi nhắc nhở cho $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Hôm nay bạn đã gửi nhắc nhở về việc này rồi.';
+
+  @override
+  String get householdRemindError => 'Không gửi được nhắc nhở. Hãy thử lại.';
+
+  @override
   String get householdSharedBadge => 'Đã chia sẻ';
 
   @override
@@ -4921,6 +4968,53 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Gửi yêu cầu';
+
+  @override
+  String get staffBulkTitle => 'Yêu cầu cập nhật';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Giấy tờ nhân viên hết hạn trong 30 ngày: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Mỗi người nhận được email có liên kết để tải lên giấy tờ mới.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Đã gửi yêu cầu: $sent/$count';
+  }
+
+  @override
+  String get roleAction => 'Vai trò và giấy tờ bắt buộc';
+
+  @override
+  String get roleNameLabel => 'Vai trò';
+
+  @override
+  String get roleNameHint => 'Ví dụ: Tài xế';
+
+  @override
+  String get roleRequiredTitle => 'Giấy tờ bắt buộc';
+
+  @override
+  String get roleRequiredHint => 'Vaultara cho biết người này còn thiếu giấy tờ nào trong số này.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Cập nhật cả những người khác có vai trò này ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Thiếu: $names';
+  }
+
+  @override
+  String get roleComplete => 'Đã có đủ giấy tờ bắt buộc';
+
+  @override
+  String get roleSaved => 'Đã lưu vai trò';
 
   @override
   String get requestUpdateSending => 'Đang gửi yêu cầu';
@@ -7946,6 +8040,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tourHousehold3Body => 'Mỗi mục có thể thuộc về ai đó. Tên của họ hiện trên mục và trong lời nhắc.';
 
   @override
+  String get tourHouseholdRenewBody => 'Chọn ai gia hạn hồ sơ dùng chung. Chỉ người đó nhận được nhắc nhở và ai cũng có thể nhắc họ chỉ với một chạm.';
+
+  @override
   String get tourImport1Title => 'Quét thẻ';
 
   @override
@@ -7986,6 +8083,9 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Thêm nhân viên và giữ chứng chỉ, giấy phép và bằng cấp của họ ở một nơi.';
+
+  @override
+  String get tourBusinessRolesBody => 'Gán cho mỗi người một vai trò, như Tài xế, cùng các giấy tờ cần có. Vaultara cho biết còn thiếu gì.';
 
   @override
   String get tourBusiness2Title => 'Nhắc qua email';

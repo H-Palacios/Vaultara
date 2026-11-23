@@ -1507,6 +1507,11 @@ class AppLocalizationsIg extends AppLocalizations {
   String get familyRemove => 'Wepụ';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Nwa amaala $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Wepụ $name?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Onye ọ bụla nwere ndekọ na ihe ncheta nke ya';
+
+  @override
+  String get familyBenefitRenewer => 'Họrọ onye ga-emeghari ndekọ ọ bụla e kesara, ma chetara ya n\'otu mpịachi';
 
   @override
   String get familyBenefitOneSubscription => 'Ndebanye aha otu maka ezinụlọ dum';
@@ -3194,6 +3202,12 @@ class AppLocalizationsIg extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Ndekọ ndị ọrụ na ụgbọ ala n\'otu ebe';
 
   @override
+  String get businessBenefitBulk => 'Rịọ ndị ọrụ maka mmelite n\'otu oge, ma mara mgbe akwụkwọ gwụrụ';
+
+  @override
+  String get businessBenefitRoles => 'Tọọ akwụkwọ achọrọ maka ọrụ ọ bụla ma hụ ihe onye ọ bụla na-enweghị';
+
+  @override
   String get businessBenefitPdf => 'Mbupụ PDF otu na aha ụlọ ọrụ gị';
 
   @override
@@ -4377,6 +4391,39 @@ class AppLocalizationsIg extends AppLocalizations {
   String get householdShareOff => 'Ọ bụ naanị gị nwere ike ịhụ ndekọ a.';
 
   @override
+  String get householdRenewerLabel => 'Onye ga-emeghari ya';
+
+  @override
+  String get householdRenewerAnyone => 'Onye ọ bụla n\'ezinụlọ';
+
+  @override
+  String get householdRenewerHint => 'Naanị ya na-enweta ihe ncheta ya. A ga-agwa ndị ọzọ ma ọ bụrụ na emeghariteghị ya n\'oge.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name ga-emeghari ya';
+  }
+
+  @override
+  String get householdYouRenew => 'Ị ga-emeghari ya';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Chetara $name ka o meghari ya';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'E zigara $name ihe ncheta';
+  }
+
+  @override
+  String get householdRemindLimit => 'Ị ezigalarị ihe ncheta gbasara nke a taa.';
+
+  @override
+  String get householdRemindError => 'Enweghị ike iziga ihe ncheta ahụ. Nwaa ọzọ.';
+
+  @override
   String get householdSharedBadge => 'Ekesara';
 
   @override
@@ -4922,6 +4969,53 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Zipu arịrịọ';
+
+  @override
+  String get staffBulkTitle => 'Rịọ maka mmelite';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Akwụkwọ ndị ọrụ ga-agwụ n\'ime ụbọchị 30: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Onye ọ bụla ga-enweta ozi-e nwere njikọ iji bulite akwụkwọ ọhụrụ ya.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Arịrịọ ezigara: $sent n\'ime $count';
+  }
+
+  @override
+  String get roleAction => 'Ọrụ na akwụkwọ achọrọ';
+
+  @override
+  String get roleNameLabel => 'Ọrụ';
+
+  @override
+  String get roleNameHint => 'Dịka: Onye ọkwọ ụgbọ';
+
+  @override
+  String get roleRequiredTitle => 'Akwụkwọ achọrọ';
+
+  @override
+  String get roleRequiredHint => 'Vaultara na-egosi akwụkwọ ndị a ka onye a na-enweghị.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Melitekwa ndị ọzọ niile nwere ọrụ a ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Na-enweghị: $names';
+  }
+
+  @override
+  String get roleComplete => 'Etinyela akwụkwọ achọrọ niile';
+
+  @override
+  String get roleSaved => 'Echekwala ọrụ';
 
   @override
   String get requestUpdateSending => 'Na-ezipu arịrịọ ahụ';
@@ -7952,6 +8046,9 @@ class AppLocalizationsIg extends AppLocalizations {
   String get tourHousehold3Body => 'Ndekọ ọ bụla nwere ike ịbụ nke mmadụ. Aha ya na-apụta na ya na na ncheta ya.';
 
   @override
+  String get tourHouseholdRenewBody => 'Họrọ onye ga-emeghari ndekọ e kesara. Naanị ya na-enweta ihe ncheta, onye ọ bụla nwekwara ike ịchetara ya n\'otu mpịachi.';
+
+  @override
   String get tourImport1Title => 'Nyochaa kaadị';
 
   @override
@@ -7992,6 +8089,9 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Tinye ndị ọrụ ma debe asambodo, ikike na akwụkwọ ikike ha n\'otu ebe.';
+
+  @override
+  String get tourBusinessRolesBody => 'Nye onye ọ bụla ọrụ, dịka Onye ọkwọ ụgbọ, ya na akwụkwọ ọ chọrọ. Vaultara na-egosi ihe na-adịghị.';
 
   @override
   String get tourBusiness2Title => 'Ncheta email';

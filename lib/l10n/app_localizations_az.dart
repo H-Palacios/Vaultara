@@ -1507,6 +1507,11 @@ class AppLocalizationsAz extends AppLocalizations {
   String get familyRemove => 'Çıxar';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country vətəndaşı';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$name çıxarılsın?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Hər kəsin öz sənədləri və xatırlatmaları olur';
+
+  @override
+  String get familyBenefitRenewer => 'Hər paylaşılan qeydi kimin yeniləyəcəyini seçin və bir toxunuşla xatırladın';
 
   @override
   String get familyBenefitOneSubscription => 'Bütün ailə üçün bir abunə';
@@ -3209,6 +3217,12 @@ class AppLocalizationsAz extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'İşçilərin və nəqliyyat vasitələrinin sənədləri bir yerdə';
 
   @override
+  String get businessBenefitBulk => 'İşçi yenilənmələrini toplu şəkildə istəyin və sənədin müddəti bitəndə xəbər alın';
+
+  @override
+  String get businessBenefitRoles => 'Vəzifəyə görə tələb olunan sənədləri təyin edin və hər kəsdə nəyin çatışmadığını görün';
+
+  @override
   String get businessBenefitPdf => 'Şirkətinizin adı ilə komanda PDF ixracı';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsAz extends AppLocalizations {
   String get householdShareOff => 'Bu sənədi yalnız siz görə bilərsiniz.';
 
   @override
+  String get householdRenewerLabel => 'Kim yeniləyir';
+
+  @override
+  String get householdRenewerAnyone => 'Ailədə hər kəs';
+
+  @override
+  String get householdRenewerHint => 'Xatırlatmaları yalnız o alır. Vaxtında yenilənməsə, digərlərinə xəbər verilir.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name yeniləyir';
+  }
+
+  @override
+  String get householdYouRenew => 'Siz yeniləyirsiniz';
+
+  @override
+  String householdRemindAction(String name) {
+    return '$name adlı şəxsə yeniləməyi xatırlat';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Xatırlatma $name adlı şəxsə göndərildi';
+  }
+
+  @override
+  String get householdRemindLimit => 'Bu barədə bu gün artıq xatırlatma göndərmisiniz.';
+
+  @override
+  String get householdRemindError => 'Xatırlatma göndərilmədi. Yenidən cəhd edin.';
+
+  @override
   String get householdSharedBadge => 'Paylaşılıb';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Sorğu göndər';
+
+  @override
+  String get staffBulkTitle => 'Yenilənmələri istə';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return '30 gün ərzində bitən işçi sənədləri: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Hər kəs yeni sənədini yükləmək üçün keçidi olan e-poçt alır.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Göndərilən sorğular: $sent / $count';
+  }
+
+  @override
+  String get roleAction => 'Vəzifə və tələb olunan sənədlər';
+
+  @override
+  String get roleNameLabel => 'Vəzifə';
+
+  @override
+  String get roleNameHint => 'Məsələn: Sürücü';
+
+  @override
+  String get roleRequiredTitle => 'Tələb olunan sənədlər';
+
+  @override
+  String get roleRequiredHint => 'Vaultara bu şəxsdə bu sənədlərdən hansının çatışmadığını göstərir.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Bu vəzifədə olan digərlərini də yenilə ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Çatışmır: $names';
+  }
+
+  @override
+  String get roleComplete => 'Bütün tələb olunan sənədlər əlavə edilib';
+
+  @override
+  String get roleSaved => 'Vəzifə saxlanıldı';
 
   @override
   String get requestUpdateSending => 'Sorğu göndərilir';
@@ -8003,6 +8097,9 @@ class AppLocalizationsAz extends AppLocalizations {
   String get tourHousehold3Body => 'Hər qeyd kiməsə aid ola bilər. Onun adı qeyddə və xatırlatmalarda görünür.';
 
   @override
+  String get tourHouseholdRenewBody => 'Paylaşılan qeydi kimin yeniləyəcəyini seçin. Xatırlatmaları yalnız o alır, hər kəs ona bir toxunuşla xatırlada bilər.';
+
+  @override
   String get tourImport1Title => 'Kartı skan edin';
 
   @override
@@ -8043,6 +8140,9 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'İşçiləri əlavə edin və onların sertifikat, icazə və lisenziyalarını bir yerdə saxlayın.';
+
+  @override
+  String get tourBusinessRolesBody => 'Hər kəsə Sürücü kimi bir vəzifə və ona lazım olan sənədləri verin. Vaultara nəyin çatışmadığını göstərir.';
 
   @override
   String get tourBusiness2Title => 'E-poçt xatırlatmaları';

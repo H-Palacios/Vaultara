@@ -1506,6 +1506,11 @@ class AppLocalizationsMn extends AppLocalizations {
   String get familyRemove => 'Хасах';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country-ын иргэн';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$name-г хасах уу?';
   }
@@ -1573,6 +1578,9 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Хүн бүр өөрийн бичлэг, сануулгатай';
+
+  @override
+  String get familyBenefitRenewer => 'Хуваалцсан бүртгэл бүрийг хэн шинэчлэхийг сонгож, нэг товшилтоор сануулаарай';
 
   @override
   String get familyBenefitOneSubscription => 'Бүх өрхөд нэг захиалга';
@@ -3208,6 +3216,12 @@ class AppLocalizationsMn extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Ажилтан, тээврийн хэрэгслийн бичлэгүүд нэг дор';
 
   @override
+  String get businessBenefitBulk => 'Ажилтнуудаас шинэчлэлийг нэг дор хүсэж, баримтын хугацаа дуусахад мэдэгдэл аваарай';
+
+  @override
+  String get businessBenefitRoles => 'Албан тушаал бүрт шаардлагатай баримтыг тогтоож, хэнд юу дутуу байгааг хараарай';
+
+  @override
   String get businessBenefitPdf => 'Таны компанийн нэртэй багийн PDF экспорт';
 
   @override
@@ -4409,6 +4423,39 @@ class AppLocalizationsMn extends AppLocalizations {
   String get householdShareOff => 'Зөвхөн та энэ бичлэгийг харна.';
 
   @override
+  String get householdRenewerLabel => 'Хэн шинэчилнэ';
+
+  @override
+  String get householdRenewerAnyone => 'Гэр бүлийн хэн ч';
+
+  @override
+  String get householdRenewerHint => 'Сануулгыг зөвхөн тэр хүн авна. Цагтаа шинэчлэгдээгүй бол бусдад мэдэгдэнэ.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name шинэчилнэ';
+  }
+
+  @override
+  String get householdYouRenew => 'Та шинэчилнэ';
+
+  @override
+  String householdRemindAction(String name) {
+    return '$name-д шинэчлэхийг сануулах';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Сануулгыг $name-д илгээлээ';
+  }
+
+  @override
+  String get householdRemindLimit => 'Та өнөөдөр энэ талаар сануулга илгээсэн байна.';
+
+  @override
+  String get householdRemindError => 'Сануулга илгээж чадсангүй. Дахин оролдоно уу.';
+
+  @override
   String get householdSharedBadge => 'Хуваалцсан';
 
   @override
@@ -4954,6 +5001,53 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Хүсэлт илгээх';
+
+  @override
+  String get staffBulkTitle => 'Шинэчлэл хүсэх';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return '30 хоногийн дотор хугацаа дуусах ажилтны баримт: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Хүн бүр шинэ баримтаа байршуулах холбоостой имэйл хүлээн авна.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Илгээсэн хүсэлт: $count-с $sent';
+  }
+
+  @override
+  String get roleAction => 'Албан тушаал ба шаардлагатай баримт';
+
+  @override
+  String get roleNameLabel => 'Албан тушаал';
+
+  @override
+  String get roleNameHint => 'Жишээ нь: Жолооч';
+
+  @override
+  String get roleRequiredTitle => 'Шаардлагатай баримт';
+
+  @override
+  String get roleRequiredHint => 'Энэ хүнд эдгээр баримтаас аль нь дутуу байгааг Vaultara харуулна.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Энэ албан тушаалтай бусдыг ч шинэчлэх ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Дутуу: $names';
+  }
+
+  @override
+  String get roleComplete => 'Шаардлагатай бүх баримт нэмэгдсэн';
+
+  @override
+  String get roleSaved => 'Албан тушаал хадгалагдлаа';
 
   @override
   String get requestUpdateSending => 'Хүсэлтийг илгээж байна';
@@ -7993,6 +8087,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get tourHousehold3Body => 'Бүртгэл бүр хэн нэгнийх байж болно. Түүний нэр бүртгэл болон сануулгад харагдана.';
 
   @override
+  String get tourHouseholdRenewBody => 'Хуваалцсан бүртгэлийг хэн шинэчлэхийг сонгоно уу. Сануулгыг зөвхөн тэр авах ба хэн ч нэг товшилтоор сануулж болно.';
+
+  @override
   String get tourImport1Title => 'Карт скан хийх';
 
   @override
@@ -8033,6 +8130,9 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Ажилтнуудаа нэмж, тэдний гэрчилгээ, зөвшөөрөл, тусгай зөвшөөрлийг нэг дор хадгална уу.';
+
+  @override
+  String get tourBusinessRolesBody => 'Хүн бүрт Жолооч гэх мэт албан тушаалыг шаардлагатай баримттай нь өгнө үү. Юу дутуу байгааг Vaultara харуулна.';
 
   @override
   String get tourBusiness2Title => 'Имэйл сануулга';

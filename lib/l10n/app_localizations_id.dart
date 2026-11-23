@@ -1501,6 +1501,11 @@ class AppLocalizationsId extends AppLocalizations {
   String get familyRemove => 'Keluarkan';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Warga negara $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Keluarkan $name?';
   }
@@ -1568,6 +1573,9 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Setiap orang memiliki catatan dan pengingat sendiri';
+
+  @override
+  String get familyBenefitRenewer => 'Pilih siapa yang memperpanjang setiap catatan bersama, dan ingatkan dengan satu ketukan';
 
   @override
   String get familyBenefitOneSubscription => 'Satu langganan untuk seluruh rumah tangga';
@@ -3188,6 +3196,12 @@ class AppLocalizationsId extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Catatan karyawan dan kendaraan di satu tempat';
 
   @override
+  String get businessBenefitBulk => 'Minta pembaruan dari staf sekaligus, dan dapatkan pemberitahuan saat dokumen habis masa berlakunya';
+
+  @override
+  String get businessBenefitRoles => 'Tetapkan dokumen wajib per peran dan lihat apa yang kurang dari setiap orang';
+
+  @override
   String get businessBenefitPdf => 'Ekspor PDF tim dengan nama perusahaan Anda';
 
   @override
@@ -4371,6 +4385,39 @@ class AppLocalizationsId extends AppLocalizations {
   String get householdShareOff => 'Hanya Anda yang dapat melihat catatan ini.';
 
   @override
+  String get householdRenewerLabel => 'Siapa yang memperpanjang';
+
+  @override
+  String get householdRenewerAnyone => 'Siapa pun di rumah tangga';
+
+  @override
+  String get householdRenewerHint => 'Hanya dia yang mendapat pengingatnya. Yang lain diberi tahu jika tidak diperpanjang tepat waktu.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name memperpanjang';
+  }
+
+  @override
+  String get householdYouRenew => 'Anda yang memperpanjang';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Ingatkan $name untuk memperpanjangnya';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Pengingat dikirim ke $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Anda sudah mengirim pengingat tentang ini hari ini.';
+
+  @override
+  String get householdRemindError => 'Pengingat tidak dapat dikirim. Coba lagi.';
+
+  @override
   String get householdSharedBadge => 'Dibagikan';
 
   @override
@@ -4916,6 +4963,53 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Kirim permintaan';
+
+  @override
+  String get staffBulkTitle => 'Minta pembaruan';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Dokumen staf yang habis dalam 30 hari: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Setiap orang mendapat email dengan tautan untuk mengunggah dokumen barunya.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Permintaan terkirim: $sent dari $count';
+  }
+
+  @override
+  String get roleAction => 'Peran dan dokumen wajib';
+
+  @override
+  String get roleNameLabel => 'Peran';
+
+  @override
+  String get roleNameHint => 'Misalnya: Sopir';
+
+  @override
+  String get roleRequiredTitle => 'Dokumen wajib';
+
+  @override
+  String get roleRequiredHint => 'Vaultara menunjukkan dokumen mana yang belum dimiliki orang ini.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Perbarui juga semua orang lain dengan peran ini ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Kurang: $names';
+  }
+
+  @override
+  String get roleComplete => 'Semua dokumen wajib sudah ditambahkan';
+
+  @override
+  String get roleSaved => 'Peran disimpan';
 
   @override
   String get requestUpdateSending => 'Mengirim permintaan';
@@ -7941,6 +8035,9 @@ class AppLocalizationsId extends AppLocalizations {
   String get tourHousehold3Body => 'Setiap catatan bisa milik seseorang. Namanya muncul di catatan dan pengingatnya.';
 
   @override
+  String get tourHouseholdRenewBody => 'Pilih siapa yang memperpanjang catatan bersama. Hanya dia yang mendapat pengingatnya, dan siapa pun bisa mengingatkannya dengan satu ketukan.';
+
+  @override
   String get tourImport1Title => 'Pindai kartu';
 
   @override
@@ -7981,6 +8078,9 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Tambahkan staf dan simpan sertifikat, izin, dan lisensi mereka di satu tempat.';
+
+  @override
+  String get tourBusinessRolesBody => 'Berikan setiap orang sebuah peran, seperti Sopir, dengan dokumen yang dibutuhkannya. Vaultara menunjukkan apa yang kurang.';
 
   @override
   String get tourBusiness2Title => 'Pengingat email';

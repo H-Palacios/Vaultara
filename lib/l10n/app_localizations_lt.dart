@@ -1516,6 +1516,11 @@ class AppLocalizationsLt extends AppLocalizations {
   String get familyRemove => 'Pašalinti';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country pilietis';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Pašalinti $name?';
   }
@@ -1587,6 +1592,9 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Kiekvienas asmuo turi savo įrašus ir priminimus';
+
+  @override
+  String get familyBenefitRenewer => 'Pasirinkite, kas atnaujina kiekvieną bendrą įrašą, ir priminkite vienu palietimu';
 
   @override
   String get familyBenefitOneSubscription => 'Viena prenumerata visiems namų nariams';
@@ -3268,6 +3276,12 @@ class AppLocalizationsLt extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Darbuotojų ir transporto priemonių įrašai vienoje vietoje';
 
   @override
+  String get businessBenefitBulk => 'Prašykite darbuotojų atnaujinimų vienu kartu ir sužinokite, kai dokumentas nebegalioja';
+
+  @override
+  String get businessBenefitRoles => 'Nustatykite būtinus dokumentus pagal pareigas ir matykite, ko kam trūksta';
+
+  @override
   String get businessBenefitPdf => 'Komandos PDF eksportas su jūsų įmonės pavadinimu';
 
   @override
@@ -4505,6 +4519,39 @@ class AppLocalizationsLt extends AppLocalizations {
   String get householdShareOff => 'Šį įrašą matote tik jūs.';
 
   @override
+  String get householdRenewerLabel => 'Kas atnaujina';
+
+  @override
+  String get householdRenewerAnyone => 'Bet kas iš namų ūkio';
+
+  @override
+  String get householdRenewerHint => 'Priminimus gauna tik šis žmogus. Kiti informuojami, jei laiku neatnaujinama.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return 'Atnaujina $name';
+  }
+
+  @override
+  String get householdYouRenew => 'Atnaujinate jūs';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Priminti $name atnaujinti';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Priminimas išsiųstas: $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Šiandien jau išsiuntėte priminimą apie tai.';
+
+  @override
+  String get householdRemindError => 'Nepavyko išsiųsti priminimo. Bandykite dar kartą.';
+
+  @override
   String get householdSharedBadge => 'Bendrinama';
 
   @override
@@ -5050,6 +5097,53 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Siųsti prašymą';
+
+  @override
+  String get staffBulkTitle => 'Prašyti atnaujinimų';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Darbuotojų dokumentai, kurių galiojimas baigiasi per 30 d.: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Kiekvienas gaus el. laišką su nuoroda naujam dokumentui įkelti.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Išsiųsta užklausų: $sent iš $count';
+  }
+
+  @override
+  String get roleAction => 'Pareigos ir būtini dokumentai';
+
+  @override
+  String get roleNameLabel => 'Pareigos';
+
+  @override
+  String get roleNameHint => 'Pavyzdžiui: Vairuotojas';
+
+  @override
+  String get roleRequiredTitle => 'Būtini dokumentai';
+
+  @override
+  String get roleRequiredHint => 'Vaultara rodo, kurių iš šių dokumentų šiam žmogui trūksta.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Atnaujinti ir visus kitus su šiomis pareigomis ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Trūksta: $names';
+  }
+
+  @override
+  String get roleComplete => 'Visi būtini dokumentai pridėti';
+
+  @override
+  String get roleSaved => 'Pareigos išsaugotos';
 
   @override
   String get requestUpdateSending => 'Siunčiamas prašymas';
@@ -8144,6 +8238,9 @@ class AppLocalizationsLt extends AppLocalizations {
   String get tourHousehold3Body => 'Kiekvienas įrašas gali kam nors priklausyti. Vardas rodomas įraše ir priminimuose.';
 
   @override
+  String get tourHouseholdRenewBody => 'Pasirinkite, kas atnaujina bendrą įrašą. Priminimus gauna tik jis, o bet kas gali priminti vienu palietimu.';
+
+  @override
   String get tourImport1Title => 'Nuskenuokite kortelę';
 
   @override
@@ -8184,6 +8281,9 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Pridėkite darbuotojų ir laikykite jų pažymėjimus, leidimus ir licencijas vienoje vietoje.';
+
+  @override
+  String get tourBusinessRolesBody => 'Suteikite kiekvienam pareigas, pvz., Vairuotojas, su reikiamais dokumentais. Vaultara rodo, ko trūksta.';
 
   @override
   String get tourBusiness2Title => 'Priminimai el. paštu';

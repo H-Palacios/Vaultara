@@ -1504,6 +1504,11 @@ class AppLocalizationsMy extends AppLocalizations {
   String get familyRemove => 'ဖယ်ရှားရန်';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country နိုင်ငံသား';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$name ကို ဖယ်ရှားမလား။';
   }
@@ -1571,6 +1576,9 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'လူတိုင်းတွင် ကိုယ်ပိုင် မှတ်တမ်းနှင့် သတိပေးချက်များ ရှိသည်';
+
+  @override
+  String get familyBenefitRenewer => 'မျှဝေထားသော မှတ်တမ်းတစ်ခုစီကို ဘယ်သူ သက်တမ်းတိုးမလဲ ရွေးပြီး တစ်ချက်နှိပ်ရုံဖြင့် သတိပေးပါ';
 
   @override
   String get familyBenefitOneSubscription => 'အိမ်ထောင်စုတစ်ခုလုံးအတွက် စာရင်းသွင်းမှု တစ်ခုတည်း';
@@ -3191,6 +3199,12 @@ class AppLocalizationsMy extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'ဝန်ထမ်းနှင့် ယာဉ်မှတ်တမ်းများကို တစ်နေရာတည်းတွင်';
 
   @override
+  String get businessBenefitBulk => 'ဝန်ထမ်းများထံ အပ်ဒိတ်ကို တစ်ပြိုင်နက် တောင်းပြီး စာရွက်စာတမ်း သက်တမ်းကုန်လျှင် အသိပေးချက် ရယူပါ';
+
+  @override
+  String get businessBenefitRoles => 'တာဝန်အလိုက် လိုအပ်သော စာရွက်စာတမ်းများ သတ်မှတ်ပြီး လူတိုင်းတွင် ဘာမရှိသည်ကို ကြည့်ပါ';
+
+  @override
   String get businessBenefitPdf => 'သင့်ကုမ္ပဏီအမည်ပါသော အဖွဲ့လိုက် PDF ထုတ်ယူမှု';
 
   @override
@@ -4374,6 +4388,39 @@ class AppLocalizationsMy extends AppLocalizations {
   String get householdShareOff => 'သင်သာ ဤမှတ်တမ်းကို မြင်နိုင်သည်။';
 
   @override
+  String get householdRenewerLabel => 'ဘယ်သူ သက်တမ်းတိုးမလဲ';
+
+  @override
+  String get householdRenewerAnyone => 'အိမ်ထောင်စုထဲက မည်သူမဆို';
+
+  @override
+  String get householdRenewerHint => 'သတိပေးချက်များကို ထိုသူသာ ရရှိမည်။ အချိန်မီ သက်တမ်းမတိုးပါက အခြားသူများကို အသိပေးမည်။';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name သက်တမ်းတိုးမည်';
+  }
+
+  @override
+  String get householdYouRenew => 'သင် သက်တမ်းတိုးမည်';
+
+  @override
+  String householdRemindAction(String name) {
+    return '$name ကို သက်တမ်းတိုးရန် သတိပေးပါ';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return '$name ထံ သတိပေးချက် ပို့ပြီးပါပြီ';
+  }
+
+  @override
+  String get householdRemindLimit => 'ဤအကြောင်း ယနေ့ သတိပေးချက် ပို့ပြီးပါပြီ။';
+
+  @override
+  String get householdRemindError => 'သတိပေးချက် ပို့၍မရပါ။ ထပ်စမ်းကြည့်ပါ။';
+
+  @override
   String get householdSharedBadge => 'မျှဝေထား';
 
   @override
@@ -4919,6 +4966,53 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'တောင်းဆိုမှု ပို့ရန်';
+
+  @override
+  String get staffBulkTitle => 'အပ်ဒိတ် တောင်းရန်';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'ရက် 30 အတွင်း သက်တမ်းကုန်မည့် ဝန်ထမ်းစာရွက်စာတမ်းများ- $count';
+  }
+
+  @override
+  String get staffBulkBody => 'လူတိုင်း စာရွက်စာတမ်းအသစ် တင်ရန် လင့်ခ်ပါသော အီးမေးလ် ရရှိမည်။';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'ပို့ပြီးသော တောင်းဆိုမှုများ- $count ခုအနက် $sent ခု';
+  }
+
+  @override
+  String get roleAction => 'တာဝန်နှင့် လိုအပ်သော စာရွက်စာတမ်းများ';
+
+  @override
+  String get roleNameLabel => 'တာဝန်';
+
+  @override
+  String get roleNameHint => 'ဥပမာ- ယာဉ်မောင်း';
+
+  @override
+  String get roleRequiredTitle => 'လိုအပ်သော စာရွက်စာတမ်းများ';
+
+  @override
+  String get roleRequiredHint => 'ဤလူတွင် မည်သည့်စာရွက်စာတမ်းများ မရှိသေးကြောင်း Vaultara ပြသသည်။';
+
+  @override
+  String roleApplySame(int count) {
+    return 'ဤတာဝန်ရှိ အခြားသူအားလုံးကိုလည်း အပ်ဒိတ်လုပ်ရန် ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'မရှိ- $names';
+  }
+
+  @override
+  String get roleComplete => 'လိုအပ်သော စာရွက်စာတမ်းအားလုံး ထည့်ပြီးပါပြီ';
+
+  @override
+  String get roleSaved => 'တာဝန် သိမ်းပြီးပါပြီ';
 
   @override
   String get requestUpdateSending => 'တောင်းဆိုမှု ပို့နေသည်';
@@ -7944,6 +8038,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String get tourHousehold3Body => 'မှတ်တမ်းတိုင်းသည် တစ်စုံတစ်ယောက်၏ ပိုင်ဆိုင်မှု ဖြစ်နိုင်သည်။ ၎င်းတို့၏အမည်ကို မှတ်တမ်းနှင့် သတိပေးချက်များတွင် ပြသည်။';
 
   @override
+  String get tourHouseholdRenewBody => 'မျှဝေထားသော မှတ်တမ်းကို ဘယ်သူ သက်တမ်းတိုးမလဲ ရွေးပါ။ သတိပေးချက်များကို ထိုသူသာ ရရှိပြီး မည်သူမဆို တစ်ချက်နှိပ်ရုံဖြင့် သတိပေးနိုင်သည်။';
+
+  @override
   String get tourImport1Title => 'ကတ်စကန်ဖတ်ပါ';
 
   @override
@@ -7984,6 +8081,9 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'ဝန်ထမ်းများထည့်ပြီး ၎င်းတို့၏ လက်မှတ်၊ ခွင့်ပြုချက်နှင့် လိုင်စင်များကို တစ်နေရာတည်းတွင် ထားပါ။';
+
+  @override
+  String get tourBusinessRolesBody => 'လူတိုင်းကို ယာဉ်မောင်းကဲ့သို့ တာဝန်တစ်ခုနှင့် ၎င်းလိုအပ်သော စာရွက်စာတမ်းများ ပေးပါ။ မရှိသည့်အရာကို Vaultara ပြသသည်။';
 
   @override
   String get tourBusiness2Title => 'အီးမေးလ် သတိပေးချက်များ';

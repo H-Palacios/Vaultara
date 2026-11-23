@@ -1507,6 +1507,11 @@ class AppLocalizationsSo extends AppLocalizations {
   String get familyRemove => 'Ka saar';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Muwaadin $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Ma ka saaraysaa $name?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Qof kastaa wuxuu leeyahay diiwaannadiisa iyo xasuusiyadiisa';
+
+  @override
+  String get familyBenefitRenewer => 'Dooro cidda cusboonaysiinaysa diiwaan kasta oo la wadaago, oo ku xusuusi hal taabasho';
 
   @override
   String get familyBenefitOneSubscription => 'Hal rukummo oo loogu talagalay qoyska oo dhan';
@@ -3208,6 +3216,12 @@ class AppLocalizationsSo extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Diiwaannada shaqaalaha iyo gawaarida meel gudaha ah';
 
   @override
+  String get businessBenefitBulk => 'Shaqaalaha mar keliya ka codso cusbooneysiinno, oo la soo ogeysii marka dukumenti dhaco';
+
+  @override
+  String get businessBenefitRoles => 'Dejiso dukumentiyada loo baahan yahay door kasta oo arag waxa qof kasta ka maqan';
+
+  @override
   String get businessBenefitPdf => 'Dhoofinta PDF ee kooxda oo leh magaca shirkaddaada';
 
   @override
@@ -4409,6 +4423,39 @@ class AppLocalizationsSo extends AppLocalizations {
   String get householdShareOff => 'Adiga keligaa ayaa arki kara diiwaankan.';
 
   @override
+  String get householdRenewerLabel => 'Yaa cusboonaysiinaya';
+
+  @override
+  String get householdRenewerAnyone => 'Qof kasta oo guriga ka mid ah';
+
+  @override
+  String get householdRenewerHint => 'Isaga oo keliya ayaa hela xusuusinta. Kuwa kale waa la ogeysiiyaa haddii aan waqtigeeda la cusboonaysiin.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name ayaa cusboonaysiinaya';
+  }
+
+  @override
+  String get householdYouRenew => 'Adiga ayaa cusboonaysiinaya';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Xusuusi $name inuu cusboonaysiiyo';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Xusuusin ayaa loo diray $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Maanta horey ayaad xusuusin uga dirtay arrintan.';
+
+  @override
+  String get householdRemindError => 'Xusuusinta lama diri karin. Isku day mar kale.';
+
+  @override
   String get householdSharedBadge => 'La wadaagay';
 
   @override
@@ -4954,6 +5001,53 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Dir codsiga';
+
+  @override
+  String get staffBulkTitle => 'Codso cusbooneysiinno';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Dukumentiyada shaqaalaha ee dhacaya 30 maalmood gudahood: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Qof kastaa wuxuu helayaa iimayl leh link uu ku soo geliyo dukumentigiisa cusub.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Codsiyada la diray: $sent ka mid ah $count';
+  }
+
+  @override
+  String get roleAction => 'Door iyo dukumentiyada loo baahan yahay';
+
+  @override
+  String get roleNameLabel => 'Door';
+
+  @override
+  String get roleNameHint => 'Tusaale: Darawal';
+
+  @override
+  String get roleRequiredTitle => 'Dukumentiyada loo baahan yahay';
+
+  @override
+  String get roleRequiredHint => 'Vaultara wuxuu muujiyaa dukumentiyadan midka uu qofkani ka maqan yahay.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Sidoo kale cusboonaysii dhammaan kuwa kale ee doorkan leh ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Ka maqan: $names';
+  }
+
+  @override
+  String get roleComplete => 'Dhammaan dukumentiyada loo baahan yahay waa la daray';
+
+  @override
+  String get roleSaved => 'Doorka waa la kaydiyay';
 
   @override
   String get requestUpdateSending => 'Codsiga ayaa la dirayaa';
@@ -8002,6 +8096,9 @@ class AppLocalizationsSo extends AppLocalizations {
   String get tourHousehold3Body => 'Diiwaan kastaa wuxuu noqon karaa mid qof leeyahay. Magaciisu wuu ku muuqdaa iyo xusuusinadiisa.';
 
   @override
+  String get tourHouseholdRenewBody => 'Dooro cidda cusboonaysiinaysa diiwaanka la wadaago. Isaga oo keliya ayaa hela xusuusinta, qof kastana wuu ku xusuusin karaa hal taabasho.';
+
+  @override
   String get tourImport1Title => 'Iskaan samee kaar';
 
   @override
@@ -8042,6 +8139,9 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Ku dar shaqaale oo hal meel ku hay shahaadooyinkooda, ogolaanshaha iyo liisannadooda.';
+
+  @override
+  String get tourBusinessRolesBody => 'Qof kasta sii door, sida Darawal, oo leh dukumentiyada uu u baahan yahay. Vaultara wuxuu muujiyaa waxa ka maqan.';
 
   @override
   String get tourBusiness2Title => 'Xusuusin iimayl ah';

@@ -1507,6 +1507,11 @@ class AppLocalizationsPs extends AppLocalizations {
   String get familyRemove => 'لرې کول';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'د $country تبعه';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$name لرې کړئ؟';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'هر کس خپل ریکارډونه او یادونې لري';
+
+  @override
+  String get familyBenefitRenewer => 'وټاکئ چې هر شریک شوی ریکارډ څوک نوی کوي، او په یوه کلیک یې ور یاد کړئ';
 
   @override
   String get familyBenefitOneSubscription => 'د ټولې کورنۍ لپاره یو ګډون';
@@ -3209,6 +3217,12 @@ class AppLocalizationsPs extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'د کارکوونکو او موټرو ریکارډونه په یو ځای کې';
 
   @override
+  String get businessBenefitBulk => 'له کارکوونکو په یو ځل د تازه کولو غوښتنه وکړئ، او کله چې سند پای ته ورسېږي خبر شئ';
+
+  @override
+  String get businessBenefitRoles => 'د هرې دندې لپاره اړین اسناد وټاکئ او وګورئ چې هر چا ته څه نشته';
+
+  @override
   String get businessBenefitPdf => 'د ستاسو د شرکت له نوم سره د ټیم PDF صادرول';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsPs extends AppLocalizations {
   String get householdShareOff => 'دا ریکارډ یوازې تاسو لیدلی شئ.';
 
   @override
+  String get householdRenewerLabel => 'څوک یې نوی کوي';
+
+  @override
+  String get householdRenewerAnyone => 'په کور کې هر څوک';
+
+  @override
+  String get householdRenewerHint => 'یوازې هغه یادونې ترلاسه کوي. که په خپل وخت نوی نشي، نورو ته خبر ورکول کېږي.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name یې نوی کوي';
+  }
+
+  @override
+  String get householdYouRenew => 'تاسو یې نوی کوئ';
+
+  @override
+  String householdRemindAction(String name) {
+    return '$name ته د نوي کولو یادونه وکړئ';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'یادونه $name ته ولېږل شوه';
+  }
+
+  @override
+  String get householdRemindLimit => 'تاسو نن مخکې د دې په اړه یادونه لېږلې ده.';
+
+  @override
+  String get householdRemindError => 'یادونه ونه لېږل شوه. بیا هڅه وکړئ.';
+
+  @override
   String get householdSharedBadge => 'شریک شوی';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'غوښتنه واستوئ';
+
+  @override
+  String get staffBulkTitle => 'د تازه کولو غوښتنه';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'د کارکوونکو اسناد چې په ۳۰ ورځو کې پای ته رسېږي: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'هر څوک یو بریښنالیک ترلاسه کوي چې د نوي سند د پورته کولو لینک لري.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'لېږل شوې غوښتنې: له $count څخه $sent';
+  }
+
+  @override
+  String get roleAction => 'دنده او اړین اسناد';
+
+  @override
+  String get roleNameLabel => 'دنده';
+
+  @override
+  String get roleNameHint => 'د بېلګې په توګه: ډرېور';
+
+  @override
+  String get roleRequiredTitle => 'اړین اسناد';
+
+  @override
+  String get roleRequiredHint => 'Vaultara ښيي چې دې کس ته له دې اسنادو کوم نشته.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'د دې دندې نور ټول هم تازه کړئ ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'نشته: $names';
+  }
+
+  @override
+  String get roleComplete => 'ټول اړین اسناد ورزیات شول';
+
+  @override
+  String get roleSaved => 'دنده خوندي شوه';
 
   @override
   String get requestUpdateSending => 'غوښتنه لیږل کیږي';
@@ -8003,6 +8097,9 @@ class AppLocalizationsPs extends AppLocalizations {
   String get tourHousehold3Body => 'هر ریکارډ د یو چا کېدی شي. نوم یې په ریکارډ او یادونو کې ښکاري.';
 
   @override
+  String get tourHouseholdRenewBody => 'وټاکئ چې شریک شوی ریکارډ څوک نوی کوي. یوازې هغه یادونې ترلاسه کوي، او هر څوک کولی شي په یوه کلیک یې ور یاد کړي.';
+
+  @override
   String get tourImport1Title => 'کارت سکین کړئ';
 
   @override
@@ -8043,6 +8140,9 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'کارکوونکي اضافه کړئ او د هغوی سندونه، اجازې او جوازونه په یو ځای کې وساتئ.';
+
+  @override
+  String get tourBusinessRolesBody => 'هر کس ته لکه ډرېور یوه دنده د اړینو اسنادو سره ورکړئ. Vaultara ښيي چې څه نشته.';
 
   @override
   String get tourBusiness2Title => 'د برېښنالیک یادونې';

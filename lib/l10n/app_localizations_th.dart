@@ -1494,6 +1494,11 @@ class AppLocalizationsTh extends AppLocalizations {
   String get familyRemove => 'นำออก';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'พลเมือง$country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'นำ $name ออกไหม';
   }
@@ -1561,6 +1566,9 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'แต่ละคนมีรายการและการเตือนของตัวเอง';
+
+  @override
+  String get familyBenefitRenewer => 'เลือกว่าใครต่ออายุบันทึกที่แชร์แต่ละรายการ และเตือนได้ด้วยการแตะครั้งเดียว';
 
   @override
   String get familyBenefitOneSubscription => 'สมัครสมาชิกครั้งเดียวสำหรับทั้งครอบครัว';
@@ -3181,6 +3189,12 @@ class AppLocalizationsTh extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'ข้อมูลพนักงานและยานพาหนะรวมไว้ในที่เดียว';
 
   @override
+  String get businessBenefitBulk => 'ขอการอัปเดตจากพนักงานพร้อมกัน และรับแจ้งเมื่อเอกสารหมดอายุ';
+
+  @override
+  String get businessBenefitRoles => 'กำหนดเอกสารที่ต้องมีตามตำแหน่ง และดูว่าแต่ละคนขาดอะไร';
+
+  @override
   String get businessBenefitPdf => 'ส่งออก PDF ของทีมพร้อมชื่อบริษัทของคุณ';
 
   @override
@@ -4364,6 +4378,39 @@ class AppLocalizationsTh extends AppLocalizations {
   String get householdShareOff => 'มีเพียงคุณที่เห็นรายการนี้ได้';
 
   @override
+  String get householdRenewerLabel => 'ใครเป็นคนต่ออายุ';
+
+  @override
+  String get householdRenewerAnyone => 'ใครก็ได้ในบ้าน';
+
+  @override
+  String get householdRenewerHint => 'มีเพียงคนนี้ที่ได้รับการแจ้งเตือน คนอื่นจะได้รับแจ้งถ้าไม่ต่ออายุทันเวลา';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name ต่ออายุ';
+  }
+
+  @override
+  String get householdYouRenew => 'คุณเป็นคนต่ออายุ';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'เตือน $name ให้ต่ออายุ';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'ส่งการเตือนถึง $name แล้ว';
+  }
+
+  @override
+  String get householdRemindLimit => 'วันนี้คุณส่งการเตือนเรื่องนี้ไปแล้ว';
+
+  @override
+  String get householdRemindError => 'ส่งการเตือนไม่ได้ ลองอีกครั้ง';
+
+  @override
   String get householdSharedBadge => 'แชร์แล้ว';
 
   @override
@@ -4909,6 +4956,53 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'ส่งคำขอ';
+
+  @override
+  String get staffBulkTitle => 'ขอการอัปเดต';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'เอกสารพนักงานที่จะหมดอายุภายใน 30 วัน: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'แต่ละคนจะได้รับอีเมลพร้อมลิงก์สำหรับอัปโหลดเอกสารใหม่';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'ส่งคำขอแล้ว: $sent จาก $count';
+  }
+
+  @override
+  String get roleAction => 'ตำแหน่งและเอกสารที่ต้องมี';
+
+  @override
+  String get roleNameLabel => 'ตำแหน่ง';
+
+  @override
+  String get roleNameHint => 'เช่น พนักงานขับรถ';
+
+  @override
+  String get roleRequiredTitle => 'เอกสารที่ต้องมี';
+
+  @override
+  String get roleRequiredHint => 'Vaultara แสดงว่าคนนี้ยังขาดเอกสารใดบ้าง';
+
+  @override
+  String roleApplySame(int count) {
+    return 'อัปเดตทุกคนที่มีตำแหน่งนี้ด้วย ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'ขาด: $names';
+  }
+
+  @override
+  String get roleComplete => 'เพิ่มเอกสารที่ต้องมีครบแล้ว';
+
+  @override
+  String get roleSaved => 'บันทึกตำแหน่งแล้ว';
 
   @override
   String get requestUpdateSending => 'กำลังส่งคำขอ';
@@ -7934,6 +8028,9 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tourHousehold3Body => 'แต่ละรายการเป็นของใครสักคนได้ ชื่อจะแสดงบนรายการและในการแจ้งเตือน';
 
   @override
+  String get tourHouseholdRenewBody => 'เลือกว่าใครต่ออายุบันทึกที่แชร์ มีเพียงคนนั้นที่ได้รับการแจ้งเตือน และใครก็เตือนได้ด้วยการแตะครั้งเดียว';
+
+  @override
   String get tourImport1Title => 'สแกนบัตร';
 
   @override
@@ -7974,6 +8071,9 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'เพิ่มพนักงานและเก็บใบรับรอง ใบอนุญาต และใบประกอบวิชาชีพไว้ที่เดียว';
+
+  @override
+  String get tourBusinessRolesBody => 'กำหนดตำแหน่งให้แต่ละคน เช่น พนักงานขับรถ พร้อมเอกสารที่ต้องมี Vaultara จะแสดงสิ่งที่ขาด';
 
   @override
   String get tourBusiness2Title => 'แจ้งเตือนทางอีเมล';

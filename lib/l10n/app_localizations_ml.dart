@@ -1507,6 +1507,11 @@ class AppLocalizationsMl extends AppLocalizations {
   String get familyRemove => 'നീക്കം ചെയ്യുക';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country പൗരൻ';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$name-നെ നീക്കം ചെയ്യണോ?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'ഓരോരുത്തർക്കും സ്വന്തം റെക്കോർഡുകളും റിമൈൻഡറുകളും';
+
+  @override
+  String get familyBenefitRenewer => 'ഓരോ പങ്കിട്ട റെക്കോർഡും ആര് പുതുക്കണമെന്ന് തിരഞ്ഞെടുക്കൂ, ഒറ്റ ടാപ്പിൽ ഓർമ്മിപ്പിക്കൂ';
 
   @override
   String get familyBenefitOneSubscription => 'വീട്ടിലെ എല്ലാവർക്കും ഒരു സബ്‌സ്‌ക്രിപ്‌ഷൻ';
@@ -3209,6 +3217,12 @@ class AppLocalizationsMl extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'ജീവനക്കാരുടെയും വാഹനങ്ങളുടെയും റെക്കോർഡുകൾ ഒരിടത്ത്';
 
   @override
+  String get businessBenefitBulk => 'ജീവനക്കാരിൽ നിന്ന് ഒരുമിച്ച് അപ്‌ഡേറ്റുകൾ ആവശ്യപ്പെടൂ, രേഖ കാലഹരണപ്പെടുമ്പോൾ അറിയൂ';
+
+  @override
+  String get businessBenefitRoles => 'ഓരോ റോളിനും ആവശ്യമായ രേഖകൾ നിശ്ചയിച്ച് ഓരോരുത്തർക്കും എന്ത് ഇല്ലെന്ന് കാണൂ';
+
+  @override
   String get businessBenefitPdf => 'നിങ്ങളുടെ കമ്പനിയുടെ പേരുള്ള ടീം PDF എക്സ്പോർട്ട്';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsMl extends AppLocalizations {
   String get householdShareOff => 'ഈ റെക്കോർഡ് നിങ്ങൾക്ക് മാത്രമേ കാണാൻ കഴിയൂ.';
 
   @override
+  String get householdRenewerLabel => 'ആര് പുതുക്കും';
+
+  @override
+  String get householdRenewerAnyone => 'വീട്ടിലെ ആരെങ്കിലും';
+
+  @override
+  String get householdRenewerHint => 'അവർക്ക് മാത്രമേ ഓർമ്മപ്പെടുത്തലുകൾ ലഭിക്കൂ. സമയത്ത് പുതുക്കിയില്ലെങ്കിൽ മറ്റുള്ളവരെ അറിയിക്കും.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name പുതുക്കും';
+  }
+
+  @override
+  String get householdYouRenew => 'നിങ്ങൾ പുതുക്കും';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'പുതുക്കാൻ $name-നെ ഓർമ്മിപ്പിക്കുക';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return '$name-ന് ഓർമ്മപ്പെടുത്തൽ അയച്ചു';
+  }
+
+  @override
+  String get householdRemindLimit => 'ഇതിനെക്കുറിച്ച് നിങ്ങൾ ഇന്ന് ഇതിനകം ഓർമ്മപ്പെടുത്തൽ അയച്ചു.';
+
+  @override
+  String get householdRemindError => 'ഓർമ്മപ്പെടുത്തൽ അയയ്ക്കാനായില്ല. വീണ്ടും ശ്രമിക്കുക.';
+
+  @override
   String get householdSharedBadge => 'പങ്കിട്ടത്';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'അഭ്യർത്ഥന അയയ്ക്കുക';
+
+  @override
+  String get staffBulkTitle => 'അപ്‌ഡേറ്റ് ആവശ്യപ്പെടുക';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return '30 ദിവസത്തിനുള്ളിൽ കാലാവധി തീരുന്ന ജീവനക്കാരുടെ രേഖകൾ: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'ഓരോരുത്തർക്കും പുതിയ രേഖ അപ്‌ലോഡ് ചെയ്യാനുള്ള ലിങ്കുള്ള ഇമെയിൽ ലഭിക്കും.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'അയച്ച അഭ്യർത്ഥനകൾ: $count-ൽ $sent';
+  }
+
+  @override
+  String get roleAction => 'റോളും ആവശ്യമായ രേഖകളും';
+
+  @override
+  String get roleNameLabel => 'റോൾ';
+
+  @override
+  String get roleNameHint => 'ഉദാഹരണം: ഡ്രൈവർ';
+
+  @override
+  String get roleRequiredTitle => 'ആവശ്യമായ രേഖകൾ';
+
+  @override
+  String get roleRequiredHint => 'ഈ വ്യക്തിക്ക് ഇവയിൽ ഏതൊക്കെ രേഖകൾ ഇല്ലെന്ന് Vaultara കാണിക്കുന്നു.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'ഈ റോളുള്ള മറ്റെല്ലാവരെയും അപ്‌ഡേറ്റ് ചെയ്യുക ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'ഇല്ല: $names';
+  }
+
+  @override
+  String get roleComplete => 'ആവശ്യമായ എല്ലാ രേഖകളും ചേർത്തു';
+
+  @override
+  String get roleSaved => 'റോൾ സേവ് ചെയ്തു';
 
   @override
   String get requestUpdateSending => 'അഭ്യർത്ഥന അയയ്ക്കുന്നു';
@@ -8003,6 +8097,9 @@ class AppLocalizationsMl extends AppLocalizations {
   String get tourHousehold3Body => 'ഓരോ റെക്കോർഡും ആരുടെയെങ്കിലുമാകാം. അവരുടെ പേര് റെക്കോർഡിലും ഓർമ്മപ്പെടുത്തലുകളിലും കാണാം.';
 
   @override
+  String get tourHouseholdRenewBody => 'പങ്കിട്ട റെക്കോർഡ് ആര് പുതുക്കണമെന്ന് തിരഞ്ഞെടുക്കൂ. അവർക്ക് മാത്രം ഓർമ്മപ്പെടുത്തലുകൾ ലഭിക്കും, ആർക്കും ഒറ്റ ടാപ്പിൽ ഓർമ്മിപ്പിക്കാം.';
+
+  @override
   String get tourImport1Title => 'കാർഡ് സ്കാൻ ചെയ്യുക';
 
   @override
@@ -8043,6 +8140,9 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'ജീവനക്കാരെ ചേർത്ത് അവരുടെ സർട്ടിഫിക്കറ്റുകൾ, പെർമിറ്റുകൾ, ലൈസൻസുകൾ ഒരിടത്ത് സൂക്ഷിക്കുക.';
+
+  @override
+  String get tourBusinessRolesBody => 'ഓരോരുത്തർക്കും ഡ്രൈവർ പോലുള്ള ഒരു റോൾ, അതിന് വേണ്ട രേഖകളോടെ നൽകൂ. എന്താണ് ഇല്ലാത്തതെന്ന് Vaultara കാണിക്കും.';
 
   @override
   String get tourBusiness2Title => 'ഇമെയിൽ ഓർമ്മപ്പെടുത്തലുകൾ';

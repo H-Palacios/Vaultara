@@ -1507,6 +1507,11 @@ class AppLocalizationsZu extends AppLocalizations {
   String get familyRemove => 'Susa';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Isakhamuzi sase-$country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Susa u-$name?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Umuntu ngamunye unamarekhodi akhe nezikhumbuzo zakhe';
+
+  @override
+  String get familyBenefitRenewer => 'Khetha ukuthi ubani ovuselela irekhodi ngalinye okwabelwana ngalo, bese umkhumbuza ngokuthepha kanye';
 
   @override
   String get familyBenefitOneSubscription => 'Okubhaliselwe okukodwa komndeni wonke';
@@ -3209,6 +3217,12 @@ class AppLocalizationsZu extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Amarekhodi abasebenzi nezimoto endaweni eyodwa';
 
   @override
+  String get businessBenefitBulk => 'Cela izibuyekezo kubasebenzi ngesikhathi esisodwa, futhi wazi uma idokhumenti iphelelwa';
+
+  @override
+  String get businessBenefitRoles => 'Setha amadokhumenti adingekayo ngendima ngayinye bese ubona okungekho kumuntu ngamunye';
+
+  @override
   String get businessBenefitPdf => 'Ukuthumela i-PDF yethimba negama lenkampani yakho';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsZu extends AppLocalizations {
   String get householdShareOff => 'Wena wedwa ongabona leli rekhodi.';
 
   @override
+  String get householdRenewerLabel => 'Ubani oyivuselelayo';
+
+  @override
+  String get householdRenewerAnyone => 'Noma ubani ekhaya';
+
+  @override
+  String get householdRenewerHint => 'Nguye kuphela othola izikhumbuzo. Abanye bayaziswa uma ingavuselelwanga ngesikhathi.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return 'Ivuselelwa ngu-$name';
+  }
+
+  @override
+  String get householdYouRenew => 'Wena uyayivuselela';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Khumbuza u-$name ukuthi ayivuselele';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Isikhumbuzo sithunyelwe ku-$name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Usuvele uthumele isikhumbuzo ngalokhu namuhla.';
+
+  @override
+  String get householdRemindError => 'Isikhumbuzo asikwazanga ukuthunyelwa. Zama futhi.';
+
+  @override
   String get householdSharedBadge => 'Kwabiwe';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Thumela isicelo';
+
+  @override
+  String get staffBulkTitle => 'Cela izibuyekezo';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Amadokhumenti abasebenzi aphelelwa phakathi kwezinsuku ezingu-30: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Umuntu ngamunye uthola i-imeyili enesixhumanisi sokulayisha idokhumenti yakhe entsha.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Izicelo ezithunyelwe: $sent kokungu-$count';
+  }
+
+  @override
+  String get roleAction => 'Indima namadokhumenti adingekayo';
+
+  @override
+  String get roleNameLabel => 'Indima';
+
+  @override
+  String get roleNameHint => 'Isibonelo: Umshayeli';
+
+  @override
+  String get roleRequiredTitle => 'Amadokhumenti adingekayo';
+
+  @override
+  String get roleRequiredHint => 'I-Vaultara ibonisa ukuthi yimaphi kulawa madokhumenti angekho kulo muntu.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Buyekeza nabo bonke abanye abanale ndima ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Akukho: $names';
+  }
+
+  @override
+  String get roleComplete => 'Wonke amadokhumenti adingekayo engeziwe';
+
+  @override
+  String get roleSaved => 'Indima ilondoloziwe';
 
   @override
   String get requestUpdateSending => 'Isicelo siyathunyelwa';
@@ -8003,6 +8097,9 @@ class AppLocalizationsZu extends AppLocalizations {
   String get tourHousehold3Body => 'Irekhodi ngalinye lingaba ngelomuntu othile. Igama lakhe livela kulo nasezikhumbuzini.';
 
   @override
+  String get tourHouseholdRenewBody => 'Khetha ukuthi ubani ovuselela irekhodi okwabelwana ngalo. Nguye kuphela othola izikhumbuzo, futhi noma ubani angamkhumbuza ngokuthepha kanye.';
+
+  @override
   String get tourImport1Title => 'Skena ikhadi';
 
   @override
@@ -8043,6 +8140,9 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Engeza abasebenzi bese ugcina izitifiketi zabo, izimvume namalayisense endaweni eyodwa.';
+
+  @override
+  String get tourBusinessRolesBody => 'Nikeza umuntu ngamunye indima, njengoMshayeli, namadokhumenti ayidingayo. I-Vaultara ibonisa okungekho.';
 
   @override
   String get tourBusiness2Title => 'Izikhumbuzi nge-imeyili';

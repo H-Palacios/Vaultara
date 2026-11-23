@@ -1193,6 +1193,15 @@
   "@familyRemove": {
     "description": "Menu item on a person row and confirm button in the remove dialog"
   },
+  "familyCitizenOf": "Citizen of {country}",
+  "@familyCitizenOf": {
+    "description": "Under a person: their nationality. {country} is a flag and a country name.",
+    "placeholders": {
+      "country": {
+        "type": "String"
+      }
+    }
+  },
   "familyRemoveTitle": "Remove {name}?",
   "@familyRemoveTitle": {
     "description": "Title of the dialog confirming a person is removed",
@@ -1282,6 +1291,10 @@
   "familyBenefitOwnRecords": "Each person has their own records and reminders",
   "@familyBenefitOwnRecords": {
     "description": "Family plan benefit, on the upsell card and the plans screen"
+  },
+  "familyBenefitRenewer": "Choose who renews each shared record, and remind them in one tap",
+  "@familyBenefitRenewer": {
+    "description": "Family plan benefit on the Plans screen."
   },
   "familyBenefitOneSubscription": "One subscription for the household",
   "@familyBenefitOneSubscription": {
@@ -3536,6 +3549,14 @@
   "@businessBenefitStaffVehicles": {
     "description": "Business plan benefit"
   },
+  "businessBenefitBulk": "Request staff updates in bulk, and get told when a document expires",
+  "@businessBenefitBulk": {
+    "description": "Business plan benefit on the Plans screen."
+  },
+  "businessBenefitRoles": "Set required documents per role and see what each person is missing",
+  "@businessBenefitRoles": {
+    "description": "Business plan benefit on the Plans screen."
+  },
   "businessBenefitPdf": "Team PDF export with your company name",
   "@businessBenefitPdf": {
     "description": "Business plan benefit"
@@ -5135,6 +5156,57 @@
   "@householdShareOff": {
     "description": "Switch subtitle when sharing is off"
   },
+  "householdRenewerLabel": "Who renews it",
+  "@householdRenewerLabel": {
+    "description": "Label of the field on a shared record that picks the household member who renews it."
+  },
+  "householdRenewerAnyone": "Anyone in the household",
+  "@householdRenewerAnyone": {
+    "description": "Choice in Who renews it: nobody in particular."
+  },
+  "householdRenewerHint": "Only they get its reminders. The others are told if it is not renewed in time.",
+  "@householdRenewerHint": {
+    "description": "Note under Who renews it."
+  },
+  "householdRenewsBadge": "{name} renews",
+  "@householdRenewsBadge": {
+    "description": "Small chip on a shared record card. {name} is a first name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "householdYouRenew": "You renew this",
+  "@householdYouRenew": {
+    "description": "Small chip on a shared record card the user renews."
+  },
+  "householdRemindAction": "Remind {name} to renew it",
+  "@householdRemindAction": {
+    "description": "Action that sends a household member a push. {name} is a first name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "householdReminded": "Reminder sent to {name}",
+  "@householdReminded": {
+    "description": "Shown after the reminder push was sent.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "householdRemindLimit": "You already sent a reminder about this today.",
+  "@householdRemindLimit": {
+    "description": "Shown when a reminder about this record was already sent today."
+  },
+  "householdRemindError": "The reminder could not be sent. Try again.",
+  "@householdRemindError": {
+    "description": "Shown when the reminder push could not be sent."
+  },
   "householdSharedBadge": "Shared",
   "@householdSharedBadge": {
     "description": "Small badge on shared records"
@@ -5918,6 +5990,81 @@
   "requestUpdateSend": "Send request",
   "@requestUpdateSend": {
     "description": ""
+  },
+  "staffBulkTitle": "Request updates",
+  "@staffBulkTitle": {
+    "description": "Business plan tile that sends update requests to several staff at once."
+  },
+  "staffBulkSubtitle": "Staff documents due within 30 days: {count}",
+  "@staffBulkSubtitle": {
+    "description": "Under Request updates. {count} is a number.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "staffBulkBody": "Each person gets an email with a link to upload their new document.",
+  "@staffBulkBody": {
+    "description": "Confirmation text before sending update requests to several staff."
+  },
+  "staffBulkDone": "Requests sent: {sent} of {count}",
+  "@staffBulkDone": {
+    "description": "Shown after sending. {sent} and {count} are numbers.",
+    "placeholders": {
+      "sent": {
+        "type": "int"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "roleAction": "Role and required documents",
+  "@roleAction": {
+    "description": "Menu item and sheet title for a staff role and the documents it needs."
+  },
+  "roleNameLabel": "Role",
+  "@roleNameLabel": {
+    "description": "Field label: the role, such as Driver."
+  },
+  "roleNameHint": "For example: Driver",
+  "@roleNameHint": {
+    "description": "Field hint with an example role."
+  },
+  "roleRequiredTitle": "Required documents",
+  "@roleRequiredTitle": {
+    "description": "Heading above the list of document types."
+  },
+  "roleRequiredHint": "Vaultara shows which of these documents this person is missing.",
+  "@roleRequiredHint": {
+    "description": "Note under Required documents."
+  },
+  "roleApplySame": "Also update everyone else with this role ({count})",
+  "@roleApplySame": {
+    "description": "Checkbox. {count} is how many other people have the same role.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "roleMissing": "Missing: {names}",
+  "@roleMissing": {
+    "description": "Under a person. {names} is a list of document types.",
+    "placeholders": {
+      "names": {
+        "type": "String"
+      }
+    }
+  },
+  "roleComplete": "All required documents added",
+  "@roleComplete": {
+    "description": "Under a person who has every required document."
+  },
+  "roleSaved": "Role saved",
+  "@roleSaved": {
+    "description": "Shown after saving a role."
   },
   "requestUpdateSending": "Sending the request",
   "@requestUpdateSending": {
@@ -9840,6 +9987,10 @@
   "@tourHousehold3Body": {
     "description": "Text of a tutorial step."
   },
+  "tourHouseholdRenewBody": "Choose who renews a shared record. Only they get its reminders, and anyone can remind them in one tap.",
+  "@tourHouseholdRenewBody": {
+    "description": "Text of a tutorial step."
+  },
   "tourImport1Title": "Scan a card",
   "@tourImport1Title": {
     "description": "Title of a tutorial step. Short."
@@ -9894,6 +10045,10 @@
   },
   "tourBusiness1Body": "Add staff and keep their certificates, permits and licences in one place.",
   "@tourBusiness1Body": {
+    "description": "Text of a tutorial step."
+  },
+  "tourBusinessRolesBody": "Give each person a role, like Driver, with the documents it needs. Vaultara shows what is missing.",
+  "@tourBusinessRolesBody": {
     "description": "Text of a tutorial step."
   },
   "tourBusiness2Title": "Email reminders",

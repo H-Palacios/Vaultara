@@ -1514,6 +1514,11 @@ class AppLocalizationsRo extends AppLocalizations {
   String get familyRemove => 'Elimină';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Cetățean al $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Elimini persoana $name?';
   }
@@ -1583,6 +1588,9 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Fiecare persoană are propriile înregistrări și mementouri';
+
+  @override
+  String get familyBenefitRenewer => 'Alege cine reînnoiește fiecare înregistrare partajată și amintește-i cu o atingere';
 
   @override
   String get familyBenefitOneSubscription => 'Un singur abonament pentru toată familia';
@@ -3241,6 +3249,12 @@ class AppLocalizationsRo extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Înregistrările angajaților și ale vehiculelor într-un singur loc';
 
   @override
+  String get businessBenefitBulk => 'Cere actualizări angajaților deodată și află când un document expiră';
+
+  @override
+  String get businessBenefitRoles => 'Setează documentele necesare pe rol și vezi ce îi lipsește fiecăruia';
+
+  @override
   String get businessBenefitPdf => 'Export PDF pentru echipă, cu numele firmei tale';
 
   @override
@@ -4460,6 +4474,39 @@ class AppLocalizationsRo extends AppLocalizations {
   String get householdShareOff => 'Doar tu poți vedea această înregistrare.';
 
   @override
+  String get householdRenewerLabel => 'Cine îl reînnoiește';
+
+  @override
+  String get householdRenewerAnyone => 'Oricine din gospodărie';
+
+  @override
+  String get householdRenewerHint => 'Doar această persoană primește mementourile. Ceilalți sunt anunțați dacă nu este reînnoit la timp.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return 'Îl reînnoiește $name';
+  }
+
+  @override
+  String get householdYouRenew => 'Îl reînnoiești tu';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Amintește-i lui $name să îl reînnoiască';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Memento trimis către $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Ai trimis deja azi un memento despre asta.';
+
+  @override
+  String get householdRemindError => 'Mementoul nu a putut fi trimis. Încearcă din nou.';
+
+  @override
   String get householdSharedBadge => 'Partajat';
 
   @override
@@ -5005,6 +5052,53 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Trimite cererea';
+
+  @override
+  String get staffBulkTitle => 'Cere actualizări';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Documente ale angajaților care expiră în 30 de zile: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Fiecare persoană primește un e-mail cu un link pentru a încărca documentul nou.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Cereri trimise: $sent din $count';
+  }
+
+  @override
+  String get roleAction => 'Rol și documente necesare';
+
+  @override
+  String get roleNameLabel => 'Rol';
+
+  @override
+  String get roleNameHint => 'De exemplu: Șofer';
+
+  @override
+  String get roleRequiredTitle => 'Documente necesare';
+
+  @override
+  String get roleRequiredHint => 'Vaultara arată care dintre aceste documente îi lipsesc acestei persoane.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Actualizează și pe toți ceilalți cu acest rol ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Lipsește: $names';
+  }
+
+  @override
+  String get roleComplete => 'Toate documentele necesare sunt adăugate';
+
+  @override
+  String get roleSaved => 'Rol salvat';
 
   @override
   String get requestUpdateSending => 'Se trimite cererea';
@@ -8080,6 +8174,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tourHousehold3Body => 'Fiecare înregistrare poate aparține cuiva. Numele apare pe ea și în mementouri.';
 
   @override
+  String get tourHouseholdRenewBody => 'Alege cine reînnoiește o înregistrare partajată. Doar această persoană primește mementourile, iar oricine îi poate aminti cu o atingere.';
+
+  @override
   String get tourImport1Title => 'Scanează un card';
 
   @override
@@ -8120,6 +8217,9 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Adaugă angajați și păstrează-le certificatele, permisele și licențele într-un singur loc.';
+
+  @override
+  String get tourBusinessRolesBody => 'Dă fiecărei persoane un rol, de exemplu Șofer, cu documentele de care are nevoie. Vaultara arată ce lipsește.';
 
   @override
   String get tourBusiness2Title => 'Mementouri pe e-mail';

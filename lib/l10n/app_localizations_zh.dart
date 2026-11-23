@@ -1506,6 +1506,11 @@ class AppLocalizationsZh extends AppLocalizations {
   String get familyRemove => '移除';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country公民';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '移除 $name？';
   }
@@ -1573,6 +1578,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => '每个人都有自己的记录和提醒';
+
+  @override
+  String get familyBenefitRenewer => '为每条共享记录指定续期负责人，一键提醒';
 
   @override
   String get familyBenefitOneSubscription => '全家共用一份订阅';
@@ -3193,6 +3201,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get businessBenefitStaffVehicles => '员工和车辆记录集中在一处';
 
   @override
+  String get businessBenefitBulk => '一次性向员工请求更新，证件过期时收到通知';
+
+  @override
+  String get businessBenefitRoles => '按职位设定必需证件，查看每个人缺少什么';
+
+  @override
   String get businessBenefitPdf => '带公司名称的团队 PDF 导出';
 
   @override
@@ -4376,6 +4390,39 @@ class AppLocalizationsZh extends AppLocalizations {
   String get householdShareOff => '只有您能看到这条记录。';
 
   @override
+  String get householdRenewerLabel => '由谁续期';
+
+  @override
+  String get householdRenewerAnyone => '家庭中的任何人';
+
+  @override
+  String get householdRenewerHint => '只有这位成员会收到提醒。如果没有按时续期，其他人会收到通知。';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name 负责续期';
+  }
+
+  @override
+  String get householdYouRenew => '你负责续期';
+
+  @override
+  String householdRemindAction(String name) {
+    return '提醒 $name 续期';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return '已提醒 $name';
+  }
+
+  @override
+  String get householdRemindLimit => '你今天已经为此发过提醒了。';
+
+  @override
+  String get householdRemindError => '无法发送提醒，请重试。';
+
+  @override
   String get householdSharedBadge => '已共享';
 
   @override
@@ -4921,6 +4968,53 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get requestUpdateSend => '发送请求';
+
+  @override
+  String get staffBulkTitle => '请求更新';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return '30 天内到期的员工证件：$count';
+  }
+
+  @override
+  String get staffBulkBody => '每个人都会收到一封邮件，里面有上传新证件的链接。';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return '已发送请求：$sent/$count';
+  }
+
+  @override
+  String get roleAction => '职位和必需证件';
+
+  @override
+  String get roleNameLabel => '职位';
+
+  @override
+  String get roleNameHint => '例如：司机';
+
+  @override
+  String get roleRequiredTitle => '必需证件';
+
+  @override
+  String get roleRequiredHint => 'Vaultara 会显示此人还缺少哪些证件。';
+
+  @override
+  String roleApplySame(int count) {
+    return '同时更新此职位的其他所有人（$count）';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return '缺少：$names';
+  }
+
+  @override
+  String get roleComplete => '必需证件已全部添加';
+
+  @override
+  String get roleSaved => '职位已保存';
 
   @override
   String get requestUpdateSending => '正在发送请求';
@@ -7946,6 +8040,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tourHousehold3Body => '每条记录都可以指定归属人，名字会显示在记录和提醒中。';
 
   @override
+  String get tourHouseholdRenewBody => '为共享记录指定续期负责人。只有这位成员会收到提醒，任何人都可以一键提醒他。';
+
+  @override
   String get tourImport1Title => '扫描卡片';
 
   @override
@@ -7986,6 +8083,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => '添加员工，把他们的证书、许可和执照集中管理。';
+
+  @override
+  String get tourBusinessRolesBody => '为每个人设定职位（例如司机）及所需证件，Vaultara 会显示缺少什么。';
 
   @override
   String get tourBusiness2Title => '邮件提醒';
@@ -11173,6 +11273,11 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get familyRemove => '移除';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country公民';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '移除 $name？';
   }
@@ -11240,6 +11345,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get familyBenefitOwnRecords => '每位成员都有自己的记录和提醒';
+
+  @override
+  String get familyBenefitRenewer => '为每条共享记录指定续期负责人，一键提醒';
 
   @override
   String get familyBenefitOneSubscription => '全家共用一个订阅';
@@ -12860,6 +12968,12 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get businessBenefitStaffVehicles => '员工和车辆记录集中在一处';
 
   @override
+  String get businessBenefitBulk => '一次性向员工请求更新，证件过期时收到通知';
+
+  @override
+  String get businessBenefitRoles => '按职位设定必需证件，查看每个人缺少什么';
+
+  @override
   String get businessBenefitPdf => '带公司名称的团队 PDF 导出';
 
   @override
@@ -14043,6 +14157,39 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get householdShareOff => '只有您能看到此记录。';
 
   @override
+  String get householdRenewerLabel => '由谁续期';
+
+  @override
+  String get householdRenewerAnyone => '家庭中的任何人';
+
+  @override
+  String get householdRenewerHint => '只有这位成员会收到提醒。如果没有按时续期，其他人会收到通知。';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name 负责续期';
+  }
+
+  @override
+  String get householdYouRenew => '你负责续期';
+
+  @override
+  String householdRemindAction(String name) {
+    return '提醒 $name 续期';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return '已提醒 $name';
+  }
+
+  @override
+  String get householdRemindLimit => '你今天已经为此发过提醒了。';
+
+  @override
+  String get householdRemindError => '无法发送提醒，请重试。';
+
+  @override
   String get householdSharedBadge => '已共享';
 
   @override
@@ -14588,6 +14735,53 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get requestUpdateSend => '发送请求';
+
+  @override
+  String get staffBulkTitle => '请求更新';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return '30 天内到期的员工证件：$count';
+  }
+
+  @override
+  String get staffBulkBody => '每个人都会收到一封邮件，里面有上传新证件的链接。';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return '已发送请求：$sent/$count';
+  }
+
+  @override
+  String get roleAction => '职位和必需证件';
+
+  @override
+  String get roleNameLabel => '职位';
+
+  @override
+  String get roleNameHint => '例如：司机';
+
+  @override
+  String get roleRequiredTitle => '必需证件';
+
+  @override
+  String get roleRequiredHint => 'Vaultara 会显示此人还缺少哪些证件。';
+
+  @override
+  String roleApplySame(int count) {
+    return '同时更新此职位的其他所有人（$count）';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return '缺少：$names';
+  }
+
+  @override
+  String get roleComplete => '必需证件已全部添加';
+
+  @override
+  String get roleSaved => '职位已保存';
 
   @override
   String get requestUpdateSending => '正在发送请求';
@@ -17613,6 +17807,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tourHousehold3Body => '每条记录都可以指定归属人，名字会显示在记录和提醒中。';
 
   @override
+  String get tourHouseholdRenewBody => '为共享记录指定续期负责人。只有这位成员会收到提醒，任何人都可以一键提醒他。';
+
+  @override
   String get tourImport1Title => '扫描卡片';
 
   @override
@@ -17653,6 +17850,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get tourBusiness1Body => '添加员工，把他们的证书、许可和执照集中管理。';
+
+  @override
+  String get tourBusinessRolesBody => '为每个人设定职位（例如司机）及所需证件，Vaultara 会显示缺少什么。';
 
   @override
   String get tourBusiness2Title => '邮件提醒';
@@ -20840,6 +21040,11 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get familyRemove => '移除';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country公民';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '要移除 $name 嗎？';
   }
@@ -20907,6 +21112,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get familyBenefitOwnRecords => '每個人都有自己的記錄和提醒';
+
+  @override
+  String get familyBenefitRenewer => '為每筆共用紀錄指定續約負責人，一鍵提醒';
 
   @override
   String get familyBenefitOneSubscription => '全家共用一個訂閱';
@@ -22527,6 +22735,12 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get businessBenefitStaffVehicles => '員工與車輛記錄集中在一處';
 
   @override
+  String get businessBenefitBulk => '一次向員工要求更新，文件過期時收到通知';
+
+  @override
+  String get businessBenefitRoles => '依職位設定必要文件，查看每個人缺少什麼';
+
+  @override
   String get businessBenefitPdf => '附上公司名稱的團隊 PDF 匯出';
 
   @override
@@ -23710,6 +23924,39 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get householdShareOff => '只有您能看到此記錄。';
 
   @override
+  String get householdRenewerLabel => '由誰續約';
+
+  @override
+  String get householdRenewerAnyone => '家中的任何人';
+
+  @override
+  String get householdRenewerHint => '只有這位成員會收到提醒。如果沒有按時續約，其他人會收到通知。';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name 負責續約';
+  }
+
+  @override
+  String get householdYouRenew => '你負責續約';
+
+  @override
+  String householdRemindAction(String name) {
+    return '提醒 $name 續約';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return '已提醒 $name';
+  }
+
+  @override
+  String get householdRemindLimit => '你今天已經為此發過提醒了。';
+
+  @override
+  String get householdRemindError => '無法傳送提醒，請再試一次。';
+
+  @override
   String get householdSharedBadge => '已分享';
 
   @override
@@ -24255,6 +24502,53 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get requestUpdateSend => '傳送請求';
+
+  @override
+  String get staffBulkTitle => '要求更新';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return '30 天內到期的員工文件：$count';
+  }
+
+  @override
+  String get staffBulkBody => '每個人都會收到一封電子郵件，裡面有上傳新文件的連結。';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return '已傳送要求：$sent/$count';
+  }
+
+  @override
+  String get roleAction => '職位和必要文件';
+
+  @override
+  String get roleNameLabel => '職位';
+
+  @override
+  String get roleNameHint => '例如：司機';
+
+  @override
+  String get roleRequiredTitle => '必要文件';
+
+  @override
+  String get roleRequiredHint => 'Vaultara 會顯示此人還缺少哪些文件。';
+
+  @override
+  String roleApplySame(int count) {
+    return '同時更新此職位的其他所有人（$count）';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return '缺少：$names';
+  }
+
+  @override
+  String get roleComplete => '必要文件已全部新增';
+
+  @override
+  String get roleSaved => '職位已儲存';
 
   @override
   String get requestUpdateSending => '正在傳送請求';
@@ -27280,6 +27574,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get tourHousehold3Body => '每筆記錄都可以指定所屬人，名字會顯示在記錄與提醒中。';
 
   @override
+  String get tourHouseholdRenewBody => '為共用紀錄指定續約負責人。只有這位成員會收到提醒，任何人都可以一鍵提醒他。';
+
+  @override
   String get tourImport1Title => '掃描卡片';
 
   @override
@@ -27320,6 +27617,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get tourBusiness1Body => '新增員工，將他們的證書、許可與執照集中管理。';
+
+  @override
+  String get tourBusinessRolesBody => '為每個人設定職位（例如司機）及所需文件，Vaultara 會顯示缺少什麼。';
 
   @override
   String get tourBusiness2Title => '電子郵件提醒';

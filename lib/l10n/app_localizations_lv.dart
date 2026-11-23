@@ -1508,6 +1508,11 @@ class AppLocalizationsLv extends AppLocalizations {
   String get familyRemove => 'Noņemt';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country pilsonis';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Noņemt $name?';
   }
@@ -1577,6 +1582,9 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Katrai personai savi ieraksti un atgādinājumi';
+
+  @override
+  String get familyBenefitRenewer => 'Izvēlies, kas atjauno katru kopīgo ierakstu, un atgādini ar vienu pieskārienu';
 
   @override
   String get familyBenefitOneSubscription => 'Viens abonements visai mājsaimniecībai';
@@ -3234,6 +3242,12 @@ class AppLocalizationsLv extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Darbinieku un transportlīdzekļu ieraksti vienuviet';
 
   @override
+  String get businessBenefitBulk => 'Pieprasi atjauninājumus no darbiniekiem uzreiz un uzzini, kad dokumenta termiņš beidzas';
+
+  @override
+  String get businessBenefitRoles => 'Nosaki obligātos dokumentus katram amatam un redzi, kas kuram trūkst';
+
+  @override
   String get businessBenefitPdf => 'Komandas PDF eksports ar jūsu uzņēmuma nosaukumu';
 
   @override
@@ -4453,6 +4467,39 @@ class AppLocalizationsLv extends AppLocalizations {
   String get householdShareOff => 'Šo ierakstu var redzēt tikai jūs.';
 
   @override
+  String get householdRenewerLabel => 'Kas atjauno';
+
+  @override
+  String get householdRenewerAnyone => 'Ikviens mājsaimniecībā';
+
+  @override
+  String get householdRenewerHint => 'Atgādinājumus saņem tikai viņš. Pārējie tiek informēti, ja netiek atjaunots laikā.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return 'Atjauno $name';
+  }
+
+  @override
+  String get householdYouRenew => 'Tu atjauno';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Atgādināt $name atjaunot';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Atgādinājums nosūtīts: $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Šodien jau nosūtīji atgādinājumu par šo.';
+
+  @override
+  String get householdRemindError => 'Atgādinājumu neizdevās nosūtīt. Mēģini vēlreiz.';
+
+  @override
   String get householdSharedBadge => 'Kopīgots';
 
   @override
@@ -4998,6 +5045,53 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Nosūtīt pieprasījumu';
+
+  @override
+  String get staffBulkTitle => 'Pieprasīt atjauninājumus';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Darbinieku dokumenti, kuru termiņš beidzas 30 dienās: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Katrs saņems e-pastu ar saiti jaunā dokumenta augšupielādei.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Nosūtītie pieprasījumi: $sent no $count';
+  }
+
+  @override
+  String get roleAction => 'Amats un obligātie dokumenti';
+
+  @override
+  String get roleNameLabel => 'Amats';
+
+  @override
+  String get roleNameHint => 'Piemēram: Vadītājs';
+
+  @override
+  String get roleRequiredTitle => 'Obligātie dokumenti';
+
+  @override
+  String get roleRequiredHint => 'Vaultara rāda, kuri no šiem dokumentiem šai personai trūkst.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Atjaunināt arī visus citus ar šo amatu ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Trūkst: $names';
+  }
+
+  @override
+  String get roleComplete => 'Visi obligātie dokumenti ir pievienoti';
+
+  @override
+  String get roleSaved => 'Amats saglabāts';
 
   @override
   String get requestUpdateSending => 'Sūta pieprasījumu';
@@ -8069,6 +8163,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tourHousehold3Body => 'Katrs ieraksts var piederēt kādam. Vārds redzams ierakstā un atgādinājumos.';
 
   @override
+  String get tourHouseholdRenewBody => 'Izvēlies, kas atjauno kopīgo ierakstu. Atgādinājumus saņem tikai viņš, un ikviens var atgādināt ar vienu pieskārienu.';
+
+  @override
   String get tourImport1Title => 'Skenē karti';
 
   @override
@@ -8109,6 +8206,9 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Pievieno darbiniekus un glabā viņu sertifikātus, atļaujas un licences vienuviet.';
+
+  @override
+  String get tourBusinessRolesBody => 'Piešķir katram amatu, piemēram, Vadītājs, ar tam vajadzīgajiem dokumentiem. Vaultara rāda, kas trūkst.';
 
   @override
   String get tourBusiness2Title => 'Atgādinājumi e-pastā';

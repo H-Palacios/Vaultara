@@ -1507,6 +1507,11 @@ class AppLocalizationsGl extends AppLocalizations {
   String get familyRemove => 'Quitar';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Cidadán de $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Queres quitar a $name?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Cada persoa ten os seus propios rexistros e lembretes';
+
+  @override
+  String get familyBenefitRenewer => 'Escolle quen renova cada rexistro compartido e lémbrallo cun toque';
 
   @override
   String get familyBenefitOneSubscription => 'Unha soa subscrición para todo o fogar';
@@ -3209,6 +3217,12 @@ class AppLocalizationsGl extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Rexistros de persoal e vehículos nun só lugar';
 
   @override
+  String get businessBenefitBulk => 'Pide actualizacións ao persoal dunha vez e recibe un aviso cando caduque un documento';
+
+  @override
+  String get businessBenefitRoles => 'Define os documentos necesarios por posto e mira que lle falta a cada persoa';
+
+  @override
   String get businessBenefitPdf => 'Exportación de PDF do equipo co nome da túa empresa';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsGl extends AppLocalizations {
   String get householdShareOff => 'Só ti podes ver este rexistro.';
 
   @override
+  String get householdRenewerLabel => 'Quen o renova';
+
+  @override
+  String get householdRenewerAnyone => 'Calquera do fogar';
+
+  @override
+  String get householdRenewerHint => 'Só esa persoa recibe os recordatorios. Os demais reciben un aviso se non se renova a tempo.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return 'Renóvao $name';
+  }
+
+  @override
+  String get householdYouRenew => 'Renóvalo ti';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Lembrarlle a $name que o renove';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Recordatorio enviado a $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Hoxe xa enviaches un recordatorio sobre isto.';
+
+  @override
+  String get householdRemindError => 'Non se puido enviar o recordatorio. Téntao de novo.';
+
+  @override
   String get householdSharedBadge => 'Compartido';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Enviar solicitude';
+
+  @override
+  String get staffBulkTitle => 'Pedir actualizacións';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Documentos do persoal que caducan en 30 días: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Cada persoa recibe un correo cunha ligazón para subir o documento novo.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Solicitudes enviadas: $sent de $count';
+  }
+
+  @override
+  String get roleAction => 'Posto e documentos necesarios';
+
+  @override
+  String get roleNameLabel => 'Posto';
+
+  @override
+  String get roleNameHint => 'Por exemplo: Condutor';
+
+  @override
+  String get roleRequiredTitle => 'Documentos necesarios';
+
+  @override
+  String get roleRequiredHint => 'Vaultara mostra cales destes documentos lle faltan a esta persoa.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Actualizar tamén aos demais con este posto ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Falta: $names';
+  }
+
+  @override
+  String get roleComplete => 'Están todos os documentos necesarios';
+
+  @override
+  String get roleSaved => 'Posto gardado';
 
   @override
   String get requestUpdateSending => 'Enviando a solicitude';
@@ -8007,6 +8101,9 @@ class AppLocalizationsGl extends AppLocalizations {
   String get tourHousehold3Body => 'Cada rexistro pode ser de alguén. O seu nome aparece nel e nos recordatorios.';
 
   @override
+  String get tourHouseholdRenewBody => 'Escolle quen renova un rexistro compartido. Só esa persoa recibe os recordatorios e calquera pode lembrarllo cun toque.';
+
+  @override
   String get tourImport1Title => 'Escanea unha tarxeta';
 
   @override
@@ -8047,6 +8144,9 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Engade o persoal e garda certificados, permisos e licenzas nun só lugar.';
+
+  @override
+  String get tourBusinessRolesBody => 'Dálle a cada persoa un posto, como Condutor, cos documentos que precisa. Vaultara mostra o que falta.';
 
   @override
   String get tourBusiness2Title => 'Recordatorios por correo';

@@ -1507,6 +1507,11 @@ class AppLocalizationsSw extends AppLocalizations {
   String get familyRemove => 'Ondoa';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Raia wa $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Ungependa kumwondoa $name?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Kila mtu ana rekodi na vikumbusho vyake';
+
+  @override
+  String get familyBenefitRenewer => 'Chagua nani anasasisha kila rekodi inayoshirikiwa, na umkumbushe kwa mguso mmoja';
 
   @override
   String get familyBenefitOneSubscription => 'Usajili mmoja kwa kaya nzima';
@@ -3209,6 +3217,12 @@ class AppLocalizationsSw extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Rekodi za wafanyakazi na magari mahali pamoja';
 
   @override
+  String get businessBenefitBulk => 'Omba masasisho kutoka kwa wafanyakazi kwa pamoja, na upate taarifa hati inapoisha';
+
+  @override
+  String get businessBenefitRoles => 'Weka hati zinazohitajika kwa kila wadhifa na uone kinachokosekana kwa kila mtu';
+
+  @override
   String get businessBenefitPdf => 'Usafirishaji wa PDF wa timu wenye jina la kampuni yako';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsSw extends AppLocalizations {
   String get householdShareOff => 'Wewe pekee unaweza kuona rekodi hii.';
 
   @override
+  String get householdRenewerLabel => 'Nani anaisasisha';
+
+  @override
+  String get householdRenewerAnyone => 'Mtu yeyote nyumbani';
+
+  @override
+  String get householdRenewerHint => 'Ni yeye pekee anayepata vikumbusho. Wengine wanaarifiwa isiposasishwa kwa wakati.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name anaisasisha';
+  }
+
+  @override
+  String get householdYouRenew => 'Wewe ndiye unaisasisha';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Mkumbushe $name aisasishe';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Kikumbusho kimetumwa kwa $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Tayari umetuma kikumbusho kuhusu hili leo.';
+
+  @override
+  String get householdRemindError => 'Kikumbusho hakikuweza kutumwa. Jaribu tena.';
+
+  @override
   String get householdSharedBadge => 'Imeshirikiwa';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Tuma ombi';
+
+  @override
+  String get staffBulkTitle => 'Omba masasisho';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Hati za wafanyakazi zinazoisha ndani ya siku 30: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Kila mtu anapata barua pepe yenye kiungo cha kupakia hati yake mpya.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Maombi yaliyotumwa: $sent kati ya $count';
+  }
+
+  @override
+  String get roleAction => 'Wadhifa na hati zinazohitajika';
+
+  @override
+  String get roleNameLabel => 'Wadhifa';
+
+  @override
+  String get roleNameHint => 'Kwa mfano: Dereva';
+
+  @override
+  String get roleRequiredTitle => 'Hati zinazohitajika';
+
+  @override
+  String get roleRequiredHint => 'Vaultara inaonyesha ni hati zipi kati ya hizi mtu huyu hana.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Sasisha pia wengine wote wenye wadhifa huu ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Haipo: $names';
+  }
+
+  @override
+  String get roleComplete => 'Hati zote zinazohitajika zimeongezwa';
+
+  @override
+  String get roleSaved => 'Wadhifa umehifadhiwa';
 
   @override
   String get requestUpdateSending => 'Inatuma ombi';
@@ -8003,6 +8097,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tourHousehold3Body => 'Kila rekodi inaweza kuwa ya mtu fulani. Jina lake linaonekana juu yake na kwenye vikumbusho.';
 
   @override
+  String get tourHouseholdRenewBody => 'Chagua nani anasasisha rekodi inayoshirikiwa. Ni yeye pekee anayepata vikumbusho, na yeyote anaweza kumkumbusha kwa mguso mmoja.';
+
+  @override
   String get tourImport1Title => 'Changanua kadi';
 
   @override
@@ -8043,6 +8140,9 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Ongeza wafanyakazi na uweke vyeti, vibali na leseni zao mahali pamoja.';
+
+  @override
+  String get tourBusinessRolesBody => 'Mpe kila mtu wadhifa, kama Dereva, pamoja na hati unazohitaji. Vaultara inaonyesha kinachokosekana.';
 
   @override
   String get tourBusiness2Title => 'Vikumbusho kwa barua pepe';

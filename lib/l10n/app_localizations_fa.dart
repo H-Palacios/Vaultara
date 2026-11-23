@@ -1507,6 +1507,11 @@ class AppLocalizationsFa extends AppLocalizations {
   String get familyRemove => 'حذف';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'شهروند $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$name حذف شود؟';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'هر فرد رکوردها و یادآوری‌های خودش را دارد';
+
+  @override
+  String get familyBenefitRenewer => 'انتخاب کنید چه کسی هر سابقه مشترک را تمدید کند و با یک ضربه به او یادآوری کنید';
 
   @override
   String get familyBenefitOneSubscription => 'یک اشتراک برای کل خانوار';
@@ -3209,6 +3217,12 @@ class AppLocalizationsFa extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'رکوردهای کارکنان و خودروها در یک جا';
 
   @override
+  String get businessBenefitBulk => 'از کارکنان یکجا درخواست به‌روزرسانی کنید و از انقضای مدارک باخبر شوید';
+
+  @override
+  String get businessBenefitRoles => 'مدارک لازم هر نقش را تعیین کنید و ببینید هر نفر چه چیزی کم دارد';
+
+  @override
   String get businessBenefitPdf => 'خروجی PDF تیمی با نام شرکت شما';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsFa extends AppLocalizations {
   String get householdShareOff => 'فقط شما می‌توانید این رکورد را ببینید.';
 
   @override
+  String get householdRenewerLabel => 'چه کسی تمدیدش می‌کند';
+
+  @override
+  String get householdRenewerAnyone => 'هر کسی در خانواده';
+
+  @override
+  String get householdRenewerHint => 'فقط او یادآوری‌ها را دریافت می‌کند. اگر به‌موقع تمدید نشود، به بقیه اطلاع داده می‌شود.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name تمدید می‌کند';
+  }
+
+  @override
+  String get householdYouRenew => 'شما تمدید می‌کنید';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'یادآوری به $name برای تمدید';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'یادآوری برای $name فرستاده شد';
+  }
+
+  @override
+  String get householdRemindLimit => 'امروز قبلاً یادآوری‌ای درباره این فرستاده‌اید.';
+
+  @override
+  String get householdRemindError => 'یادآوری فرستاده نشد. دوباره امتحان کنید.';
+
+  @override
   String get householdSharedBadge => 'مشترک';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'ارسال درخواست';
+
+  @override
+  String get staffBulkTitle => 'درخواست به‌روزرسانی';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'مدارک کارکنان که تا ۳۰ روز دیگر منقضی می‌شوند: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'هر نفر ایمیلی با پیوندی برای بارگذاری مدرک جدیدش دریافت می‌کند.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'درخواست‌های فرستاده‌شده: $sent از $count';
+  }
+
+  @override
+  String get roleAction => 'نقش و مدارک لازم';
+
+  @override
+  String get roleNameLabel => 'نقش';
+
+  @override
+  String get roleNameHint => 'مثلاً: راننده';
+
+  @override
+  String get roleRequiredTitle => 'مدارک لازم';
+
+  @override
+  String get roleRequiredHint => 'Vaultara نشان می‌دهد این شخص کدام‌یک از این مدارک را ندارد.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'همه افراد دیگر با این نقش را هم به‌روز کن ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'کم است: $names';
+  }
+
+  @override
+  String get roleComplete => 'همه مدارک لازم اضافه شده‌اند';
+
+  @override
+  String get roleSaved => 'نقش ذخیره شد';
 
   @override
   String get requestUpdateSending => 'در حال ارسال درخواست';
@@ -8003,6 +8097,9 @@ class AppLocalizationsFa extends AppLocalizations {
   String get tourHousehold3Body => 'هر مورد می‌تواند متعلق به کسی باشد. نامش روی مورد و در یادآوری‌ها دیده می‌شود.';
 
   @override
+  String get tourHouseholdRenewBody => 'انتخاب کنید چه کسی یک سابقه مشترک را تمدید کند. فقط او یادآوری‌ها را دریافت می‌کند و هر کسی می‌تواند با یک ضربه به او یادآوری کند.';
+
+  @override
   String get tourImport1Title => 'یک کارت را اسکن کنید';
 
   @override
@@ -8043,6 +8140,9 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'کارکنان را اضافه کنید و گواهی‌ها، مجوزها و پروانه‌هایشان را یکجا نگه دارید.';
+
+  @override
+  String get tourBusinessRolesBody => 'به هر نفر نقشی مثل راننده بدهید، همراه با مدارکی که لازم دارد. Vaultara نشان می‌دهد چه چیزی کم است.';
 
   @override
   String get tourBusiness2Title => 'یادآوری با ایمیل';

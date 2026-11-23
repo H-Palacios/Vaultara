@@ -1507,6 +1507,11 @@ class AppLocalizationsSi extends AppLocalizations {
   String get familyRemove => 'ඉවත් කරන්න';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country පුරවැසි';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$name ඉවත් කරන්නද?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'සෑම කෙනෙකුටම තමන්ගේම වාර්තා සහ මතක් කිරීම්';
+
+  @override
+  String get familyBenefitRenewer => 'එක් එක් බෙදාගත් වාර්තාව කවුද අලුත් කරන්නේ කියා තෝරා, එක් තට්ටුවකින් සිහිපත් කරන්න';
 
   @override
   String get familyBenefitOneSubscription => 'මුළු නිවසටම එක් දායකත්වයක්';
@@ -3208,6 +3216,12 @@ class AppLocalizationsSi extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'කාර්ය මණ්ඩල සහ වාහන වාර්තා එක තැනක';
 
   @override
+  String get businessBenefitBulk => 'කාර්ය මණ්ඩලයෙන් එකවර යාවත්කාලීන ඉල්ලන්න, ලේඛනයක් කල් ඉකුත් වූ විට දැනගන්න';
+
+  @override
+  String get businessBenefitRoles => 'භූමිකාවකට අවශ්‍ය ලේඛන සකසා එක් එක් කෙනාට නැති දේ බලන්න';
+
+  @override
   String get businessBenefitPdf => 'ඔබේ සමාගමේ නම සහිත කණ්ඩායම් PDF අපනයනය';
 
   @override
@@ -4409,6 +4423,39 @@ class AppLocalizationsSi extends AppLocalizations {
   String get householdShareOff => 'මෙම වාර්තාව දැකිය හැක්කේ ඔබට පමණි.';
 
   @override
+  String get householdRenewerLabel => 'කවුද අලුත් කරන්නේ';
+
+  @override
+  String get householdRenewerAnyone => 'නිවසේ ඕනෑම කෙනෙක්';
+
+  @override
+  String get householdRenewerHint => 'සිහිකැඳවීම් ලැබෙන්නේ ඔවුන්ට පමණි. කාලයට අලුත් නොකළහොත් අනෙක් අයට දන්වනු ලැබේ.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name අලුත් කරයි';
+  }
+
+  @override
+  String get householdYouRenew => 'ඔබ අලුත් කරයි';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'අලුත් කිරීමට $name සිහිපත් කරන්න';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return '$name වෙත සිහිකැඳවීම යැවිණි';
+  }
+
+  @override
+  String get householdRemindLimit => 'ඔබ අද මේ ගැන දැනටමත් සිහිකැඳවීමක් යවා ඇත.';
+
+  @override
+  String get householdRemindError => 'සිහිකැඳවීම යැවිය නොහැකි විය. නැවත උත්සාහ කරන්න.';
+
+  @override
   String get householdSharedBadge => 'බෙදාගත්';
 
   @override
@@ -4954,6 +5001,53 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'ඉල්ලීම යවන්න';
+
+  @override
+  String get staffBulkTitle => 'යාවත්කාලීන ඉල්ලන්න';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'දින 30ක් තුළ කල් ඉකුත් වන කාර්ය මණ්ඩල ලේඛන: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'සෑම කෙනෙකුටම නව ලේඛනය උඩුගත කිරීමට සබැඳියක් සහිත ඊමේල් එකක් ලැබේ.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'යැවූ ඉල්ලීම්: $count න් $sent';
+  }
+
+  @override
+  String get roleAction => 'භූමිකාව සහ අවශ්‍ය ලේඛන';
+
+  @override
+  String get roleNameLabel => 'භූමිකාව';
+
+  @override
+  String get roleNameHint => 'උදා: රියදුරු';
+
+  @override
+  String get roleRequiredTitle => 'අවශ්‍ය ලේඛන';
+
+  @override
+  String get roleRequiredHint => 'මෙම පුද්ගලයාට මේවායින් නැති ලේඛන මොනවාදැයි Vaultara පෙන්වයි.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'මෙම භූමිකාව ඇති අනෙක් සියලු දෙනාද යාවත්කාලීන කරන්න ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'නැත: $names';
+  }
+
+  @override
+  String get roleComplete => 'සියලු අවශ්‍ය ලේඛන එක් කර ඇත';
+
+  @override
+  String get roleSaved => 'භූමිකාව සුරැකිණි';
 
   @override
   String get requestUpdateSending => 'ඉල්ලීම යවමින්';
@@ -8002,6 +8096,9 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tourHousehold3Body => 'සෑම වාර්තාවක්ම යමෙකුට අයත් විය හැක. ඔවුන්ගේ නම වාර්තාවේ සහ සිහිකැඳවීම්වල පෙනේ.';
 
   @override
+  String get tourHouseholdRenewBody => 'බෙදාගත් වාර්තාව කවුද අලුත් කරන්නේ කියා තෝරන්න. සිහිකැඳවීම් ලැබෙන්නේ ඔවුන්ට පමණි, ඕනෑම කෙනෙකුට එක් තට්ටුවකින් සිහිපත් කළ හැක.';
+
+  @override
   String get tourImport1Title => 'කාඩ්පතක් ස්කෑන් කරන්න';
 
   @override
@@ -8042,6 +8139,9 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'කාර්ය මණ්ඩලය එක් කර ඔවුන්ගේ සහතික, අවසර සහ බලපත්‍ර එක තැනක තබන්න.';
+
+  @override
+  String get tourBusinessRolesBody => 'සෑම කෙනෙකුටම රියදුරු වැනි භූමිකාවක් එයට අවශ්‍ය ලේඛන සමඟ දෙන්න. නැති දේ Vaultara පෙන්වයි.';
 
   @override
   String get tourBusiness2Title => 'විද්‍යුත් තැපැල් සිහිකැඳවීම්';

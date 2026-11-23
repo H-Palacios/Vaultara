@@ -1507,6 +1507,11 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get familyRemove => 'لابردن';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'هاوڵاتی $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$name لاببرێت؟';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'هەر کەسێک تۆمار و بیرخەرەوەی تایبەتی خۆی هەیە';
+
+  @override
+  String get familyBenefitRenewer => 'هەڵبژێرە کێ هەر تۆمارێکی هاوبەش نوێ دەکاتەوە، و بە یەک دەستلێدان بیری بخەرەوە';
 
   @override
   String get familyBenefitOneSubscription => 'یەک بەشداریکردن بۆ هەموو ماڵەکە';
@@ -3209,6 +3217,12 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'تۆماری کارمەندان و ئۆتۆمبێلەکان لە یەک شوێن';
 
   @override
+  String get businessBenefitBulk => 'بە کۆمەڵ داوای نوێکردنەوە لە کارمەندان بکە، و کاتێک بەڵگەنامەیەک بەسەر دەچێت ئاگادار بە';
+
+  @override
+  String get businessBenefitRoles => 'بەڵگەنامە پێویستەکان بۆ هەر ڕۆڵێک دابنێ و ببینە هەر کەسێک چی نییە';
+
+  @override
   String get businessBenefitPdf => 'هەناردەکردنی PDFی تیم بە ناوی کۆمپانیاکەتەوە';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get householdShareOff => 'تەنها تۆ دەتوانیت ئەم تۆمارە ببینیت.';
 
   @override
+  String get householdRenewerLabel => 'کێ نوێی دەکاتەوە';
+
+  @override
+  String get householdRenewerAnyone => 'هەر کەسێک لە ماڵەکە';
+
+  @override
+  String get householdRenewerHint => 'تەنها ئەو بیرخستنەوەکان وەردەگرێت. ئەگەر لە کاتی خۆیدا نوێ نەکرایەوە، ئەوانی تر ئاگادار دەکرێنەوە.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name نوێی دەکاتەوە';
+  }
+
+  @override
+  String get householdYouRenew => 'تۆ نوێی دەکەیتەوە';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'بیری $name بخەرەوە نوێی بکاتەوە';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'بیرخستنەوە بۆ $name نێردرا';
+  }
+
+  @override
+  String get householdRemindLimit => 'ئەمڕۆ پێشتر بیرخستنەوەیەکت لەبارەی ئەمەوە ناردووە.';
+
+  @override
+  String get householdRemindError => 'بیرخستنەوەکە نەنێردرا. دووبارە هەوڵ بدەوە.';
+
+  @override
   String get householdSharedBadge => 'هاوبەشکراو';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'ناردنی داواکاری';
+
+  @override
+  String get staffBulkTitle => 'داوای نوێکردنەوە بکە';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'بەڵگەنامەکانی کارمەندان کە لە ٣٠ ڕۆژدا بەسەر دەچن: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'هەر کەسێک ئیمەیڵێک وەردەگرێت کە بەستەرێکی تێدایە بۆ بارکردنی بەڵگەنامە نوێیەکەی.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'داواکاری نێردراو: $sent لە $count';
+  }
+
+  @override
+  String get roleAction => 'ڕۆڵ و بەڵگەنامە پێویستەکان';
+
+  @override
+  String get roleNameLabel => 'ڕۆڵ';
+
+  @override
+  String get roleNameHint => 'بۆ نموونە: شۆفێر';
+
+  @override
+  String get roleRequiredTitle => 'بەڵگەنامە پێویستەکان';
+
+  @override
+  String get roleRequiredHint => 'Vaultara پیشان دەدات کام لەم بەڵگەنامانە ئەم کەسە نییەتی.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'هەموو ئەوانی تری ئەم ڕۆڵەش نوێ بکەرەوە ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'نییە: $names';
+  }
+
+  @override
+  String get roleComplete => 'هەموو بەڵگەنامە پێویستەکان زیادکران';
+
+  @override
+  String get roleSaved => 'ڕۆڵ پاشەکەوت کرا';
 
   @override
   String get requestUpdateSending => 'داواکارییەکە دەنێردرێت';
@@ -8003,6 +8097,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get tourHousehold3Body => 'هەر تۆمارێک دەتوانێت هی کەسێک بێت. ناوەکەی لەسەری و لە بیرخەرەوەکاندا دەردەکەوێت.';
 
   @override
+  String get tourHouseholdRenewBody => 'هەڵبژێرە کێ تۆمارێکی هاوبەش نوێ دەکاتەوە. تەنها ئەو بیرخستنەوەکان وەردەگرێت، و هەر کەسێک دەتوانێت بە یەک دەستلێدان بیری بخاتەوە.';
+
+  @override
   String get tourImport1Title => 'کارتێک سکان بکە';
 
   @override
@@ -8043,6 +8140,9 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'کارمەندان زیاد بکە و بڕوانامە، مۆڵەت و ڕێپێدانەکانیان لە یەک شوێندا هەڵبگرە.';
+
+  @override
+  String get tourBusinessRolesBody => 'ڕۆڵێک بدە بە هەر کەسێک، وەک شۆفێر، لەگەڵ ئەو بەڵگەنامانەی پێویستی پێیەتی. Vaultara پیشان دەدات چی نییە.';
 
   @override
   String get tourBusiness2Title => 'بیرخەرەوەی ئیمەیڵ';

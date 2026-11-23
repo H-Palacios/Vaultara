@@ -1507,6 +1507,11 @@ class AppLocalizationsNl extends AppLocalizations {
   String get familyRemove => 'Verwijderen';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Staatsburger van $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$name verwijderen?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Iedereen heeft eigen records en herinneringen';
+
+  @override
+  String get familyBenefitRenewer => 'Kies wie elk gedeeld item verlengt en herinner diegene met één tik';
 
   @override
   String get familyBenefitOneSubscription => 'Eén abonnement voor het hele huishouden';
@@ -3209,6 +3217,12 @@ class AppLocalizationsNl extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Records van personeel en voertuigen op één plek';
 
   @override
+  String get businessBenefitBulk => 'Vraag updates van medewerkers in één keer aan en hoor het wanneer een document verloopt';
+
+  @override
+  String get businessBenefitRoles => 'Stel vereiste documenten per functie in en zie wat iedereen mist';
+
+  @override
   String get businessBenefitPdf => 'PDF-export voor het team met je bedrijfsnaam';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsNl extends AppLocalizations {
   String get householdShareOff => 'Alleen jij kunt dit record zien.';
 
   @override
+  String get householdRenewerLabel => 'Wie verlengt';
+
+  @override
+  String get householdRenewerAnyone => 'Iedereen in het huishouden';
+
+  @override
+  String get householdRenewerHint => 'Alleen die persoon krijgt de herinneringen. De anderen horen het als het niet op tijd verlengd wordt.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name verlengt';
+  }
+
+  @override
+  String get householdYouRenew => 'Jij verlengt';
+
+  @override
+  String householdRemindAction(String name) {
+    return '$name herinneren om te verlengen';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Herinnering verstuurd naar $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Je hebt hier vandaag al een herinnering over verstuurd.';
+
+  @override
+  String get householdRemindError => 'De herinnering kon niet worden verstuurd. Probeer het opnieuw.';
+
+  @override
   String get householdSharedBadge => 'Gedeeld';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Verzoek verzenden';
+
+  @override
+  String get staffBulkTitle => 'Updates aanvragen';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Documenten van medewerkers die binnen 30 dagen verlopen: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Iedereen krijgt een e-mail met een link om het nieuwe document te uploaden.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Verzoeken verstuurd: $sent van $count';
+  }
+
+  @override
+  String get roleAction => 'Functie en vereiste documenten';
+
+  @override
+  String get roleNameLabel => 'Functie';
+
+  @override
+  String get roleNameHint => 'Bijvoorbeeld: Chauffeur';
+
+  @override
+  String get roleRequiredTitle => 'Vereiste documenten';
+
+  @override
+  String get roleRequiredHint => 'Vaultara laat zien welke van deze documenten deze persoon nog mist.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Ook iedereen met deze functie bijwerken ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Ontbreekt: $names';
+  }
+
+  @override
+  String get roleComplete => 'Alle vereiste documenten zijn toegevoegd';
+
+  @override
+  String get roleSaved => 'Functie opgeslagen';
 
   @override
   String get requestUpdateSending => 'Het verzoek wordt verzonden';
@@ -8007,6 +8101,9 @@ class AppLocalizationsNl extends AppLocalizations {
   String get tourHousehold3Body => 'Elk item kan van iemand zijn. Diens naam staat erop en in de herinneringen.';
 
   @override
+  String get tourHouseholdRenewBody => 'Kies wie een gedeeld item verlengt. Alleen die persoon krijgt de herinneringen en iedereen kan diegene met één tik herinneren.';
+
+  @override
   String get tourImport1Title => 'Een pas scannen';
 
   @override
@@ -8047,6 +8144,9 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Voeg personeel toe en bewaar hun certificaten, vergunningen en licenties op één plek.';
+
+  @override
+  String get tourBusinessRolesBody => 'Geef iedereen een functie, zoals Chauffeur, met de documenten die erbij horen. Vaultara laat zien wat ontbreekt.';
 
   @override
   String get tourBusiness2Title => 'Herinneringen per e-mail';

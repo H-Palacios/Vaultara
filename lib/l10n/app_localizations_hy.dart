@@ -1507,6 +1507,11 @@ class AppLocalizationsHy extends AppLocalizations {
   String get familyRemove => 'Հեռացնել';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country-ի քաղաքացի';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Հեռացնե՞լ $name-ին';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Յուրաքանչյուր անձ ունի իր գրառումներն ու հիշեցումները';
+
+  @override
+  String get familyBenefitRenewer => 'Ընտրեք, թե ով է թարմացնում յուրաքանչյուր ընդհանուր գրառում, և հիշեցրեք մեկ հպումով';
 
   @override
   String get familyBenefitOneSubscription => 'Մեկ բաժանորդագրություն ամբողջ ընտանիքի համար';
@@ -3209,6 +3217,12 @@ class AppLocalizationsHy extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Աշխատակիցների և մեքենաների գրառումները մեկ տեղում';
 
   @override
+  String get businessBenefitBulk => 'Խնդրեք աշխատակիցներից թարմացումներ միանգամից և տեղեկացեք, երբ փաստաթղթի ժամկետը լրանա';
+
+  @override
+  String get businessBenefitRoles => 'Սահմանեք պահանջվող փաստաթղթեր ըստ դերի և տեսեք, թե ում ինչ է պակասում';
+
+  @override
   String get businessBenefitPdf => 'Թիմի PDF արտահանում՝ ձեր ընկերության անվամբ';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsHy extends AppLocalizations {
   String get householdShareOff => 'Այս գրառումը կարող եք տեսնել միայն դուք։';
 
   @override
+  String get householdRenewerLabel => 'Ով է այն թարմացնում';
+
+  @override
+  String get householdRenewerAnyone => 'Ընտանիքից ցանկացած մեկը';
+
+  @override
+  String get householdRenewerHint => 'Հիշեցումները ստանում է միայն նա։ Մյուսներին կտեղեկացվի, եթե ժամանակին չթարմացվի։';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return 'Թարմացնում է $name-ը';
+  }
+
+  @override
+  String get householdYouRenew => 'Դուք եք թարմացնում';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Հիշեցնել $name-ին թարմացնել';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Հիշեցումն ուղարկվեց $name-ին';
+  }
+
+  @override
+  String get householdRemindLimit => 'Այսօր արդեն հիշեցում եք ուղարկել այս մասին։';
+
+  @override
+  String get householdRemindError => 'Չհաջողվեց ուղարկել հիշեցումը։ Փորձեք կրկին։';
+
+  @override
   String get householdSharedBadge => 'Կիսված';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Ուղարկել հարցումը';
+
+  @override
+  String get staffBulkTitle => 'Խնդրել թարմացումներ';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return '30 օրվա ընթացքում ժամկետը լրացող աշխատակիցների փաստաթղթեր՝ $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Յուրաքանչյուրը կստանա նամակ՝ նոր փաստաթուղթը վերբեռնելու հղումով։';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Ուղարկված հարցումներ՝ $sent/$count';
+  }
+
+  @override
+  String get roleAction => 'Դեր և պահանջվող փաստաթղթեր';
+
+  @override
+  String get roleNameLabel => 'Դեր';
+
+  @override
+  String get roleNameHint => 'Օրինակ՝ Վարորդ';
+
+  @override
+  String get roleRequiredTitle => 'Պահանջվող փաստաթղթեր';
+
+  @override
+  String get roleRequiredHint => 'Vaultara-ն ցույց է տալիս, թե այս փաստաթղթերից որոնք են պակասում այս մարդու մոտ։';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Թարմացնել նաև այս դերով մյուսներին ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Պակասում է՝ $names';
+  }
+
+  @override
+  String get roleComplete => 'Բոլոր պահանջվող փաստաթղթերն ավելացված են';
+
+  @override
+  String get roleSaved => 'Դերը պահվեց';
 
   @override
   String get requestUpdateSending => 'Հարցումն ուղարկվում է';
@@ -8003,6 +8097,9 @@ class AppLocalizationsHy extends AppLocalizations {
   String get tourHousehold3Body => 'Յուրաքանչյուր գրառում կարող է պատկանել ինչ-որ մեկին։ Նրա անունը երևում է գրառման և հիշեցումների մեջ։';
 
   @override
+  String get tourHouseholdRenewBody => 'Ընտրեք, թե ով է թարմացնում ընդհանուր գրառումը։ Հիշեցումները ստանում է միայն նա, և ցանկացած մեկը կարող է հիշեցնել մեկ հպումով։';
+
+  @override
   String get tourImport1Title => 'Սկանավորեք քարտը';
 
   @override
@@ -8043,6 +8140,9 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Ավելացրեք աշխատակիցներին և պահեք նրանց վկայականները, թույլտվությունները և լիցենզիաները մեկ տեղում։';
+
+  @override
+  String get tourBusinessRolesBody => 'Յուրաքանչյուրին տվեք դեր, օրինակ՝ Վարորդ, իր պահանջվող փաստաթղթերով։ Vaultara-ն ցույց է տալիս, թե ինչ է պակասում։';
 
   @override
   String get tourBusiness2Title => 'Էլփոստով հիշեցումներ';

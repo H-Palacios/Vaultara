@@ -1507,6 +1507,11 @@ class AppLocalizationsSv extends AppLocalizations {
   String get familyRemove => 'Ta bort';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Medborgare i $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Ta bort $name?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Varje person har egna poster och påminnelser';
+
+  @override
+  String get familyBenefitRenewer => 'Välj vem som förnyar varje delad post och påminn dem med ett tryck';
 
   @override
   String get familyBenefitOneSubscription => 'En prenumeration för hela hushållet';
@@ -3208,6 +3216,12 @@ class AppLocalizationsSv extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Personal och fordon på ett ställe';
 
   @override
+  String get businessBenefitBulk => 'Be om uppdateringar från personalen samlat och få veta när ett dokument går ut';
+
+  @override
+  String get businessBenefitRoles => 'Ange nödvändiga dokument per roll och se vad var och en saknar';
+
+  @override
   String get businessBenefitPdf => 'PDF-export för teamet med ditt företagsnamn';
 
   @override
@@ -4409,6 +4423,39 @@ class AppLocalizationsSv extends AppLocalizations {
   String get householdShareOff => 'Bara du kan se den här posten.';
 
   @override
+  String get householdRenewerLabel => 'Vem förnyar';
+
+  @override
+  String get householdRenewerAnyone => 'Vem som helst i hushållet';
+
+  @override
+  String get householdRenewerHint => 'Bara den personen får påminnelserna. De andra får veta om den inte förnyas i tid.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name förnyar';
+  }
+
+  @override
+  String get householdYouRenew => 'Du förnyar';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Påminn $name om att förnya';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Påminnelse skickad till $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Du har redan skickat en påminnelse om detta i dag.';
+
+  @override
+  String get householdRemindError => 'Påminnelsen kunde inte skickas. Försök igen.';
+
+  @override
   String get householdSharedBadge => 'Delad';
 
   @override
@@ -4954,6 +5001,53 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Skicka förfrågan';
+
+  @override
+  String get staffBulkTitle => 'Be om uppdateringar';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Personaldokument som går ut inom 30 dagar: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Varje person får ett mejl med en länk för att ladda upp sitt nya dokument.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Förfrågningar skickade: $sent av $count';
+  }
+
+  @override
+  String get roleAction => 'Roll och nödvändiga dokument';
+
+  @override
+  String get roleNameLabel => 'Roll';
+
+  @override
+  String get roleNameHint => 'Till exempel: Chaufför';
+
+  @override
+  String get roleRequiredTitle => 'Nödvändiga dokument';
+
+  @override
+  String get roleRequiredHint => 'Vaultara visar vilka av dessa dokument personen saknar.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Uppdatera även alla andra med den här rollen ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Saknas: $names';
+  }
+
+  @override
+  String get roleComplete => 'Alla nödvändiga dokument är tillagda';
+
+  @override
+  String get roleSaved => 'Roll sparad';
 
   @override
   String get requestUpdateSending => 'Skickar förfrågan';
@@ -8006,6 +8100,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get tourHousehold3Body => 'Varje post kan tillhöra någon. Namnet visas på posten och i påminnelserna.';
 
   @override
+  String get tourHouseholdRenewBody => 'Välj vem som förnyar en delad post. Bara den personen får påminnelserna, och vem som helst kan påminna med ett tryck.';
+
+  @override
   String get tourImport1Title => 'Skanna ett kort';
 
   @override
@@ -8046,6 +8143,9 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Lägg till personal och samla deras certifikat, tillstånd och licenser på ett ställe.';
+
+  @override
+  String get tourBusinessRolesBody => 'Ge varje person en roll, till exempel Chaufför, med de dokument den kräver. Vaultara visar vad som saknas.';
 
   @override
   String get tourBusiness2Title => 'Påminnelser via e-post';

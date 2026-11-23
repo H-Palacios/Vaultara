@@ -1507,6 +1507,11 @@ class AppLocalizationsTa extends AppLocalizations {
   String get familyRemove => 'அகற்று';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country குடிமகன்';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$name-ஐ அகற்றவா?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'ஒவ்வொருவருக்கும் தனிப் பதிவுகளும் நினைவூட்டல்களும்';
+
+  @override
+  String get familyBenefitRenewer => 'ஒவ்வொரு பகிர்ந்த பதிவையும் யார் புதுப்பிப்பார் என்று தேர்ந்தெடுத்து, ஒரே தட்டலில் நினைவூட்டுங்கள்';
 
   @override
   String get familyBenefitOneSubscription => 'முழு வீட்டுக்கும் ஒரே சந்தா';
@@ -3209,6 +3217,12 @@ class AppLocalizationsTa extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'ஊழியர் மற்றும் வாகனப் பதிவுகள் ஓரிடத்தில்';
 
   @override
+  String get businessBenefitBulk => 'பணியாளர்களிடம் ஒரே நேரத்தில் புதுப்பிப்புகளைக் கேளுங்கள், ஆவணம் காலாவதியாகும்போது அறியுங்கள்';
+
+  @override
+  String get businessBenefitRoles => 'ஒவ்வொரு பணிக்கும் தேவையான ஆவணங்களை அமைத்து, யாரிடம் எது இல்லை என்று பாருங்கள்';
+
+  @override
   String get businessBenefitPdf => 'உங்கள் நிறுவனப் பெயருடன் குழுவுக்கான PDF ஏற்றுமதி';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsTa extends AppLocalizations {
   String get householdShareOff => 'இந்தப் பதிவை நீங்கள் மட்டுமே பார்க்க முடியும்.';
 
   @override
+  String get householdRenewerLabel => 'யார் புதுப்பிப்பார்';
+
+  @override
+  String get householdRenewerAnyone => 'வீட்டில் யார் வேண்டுமானாலும்';
+
+  @override
+  String get householdRenewerHint => 'அவருக்கு மட்டுமே நினைவூட்டல்கள் வரும். நேரத்தில் புதுப்பிக்கப்படாவிட்டால் மற்றவர்களுக்குத் தெரிவிக்கப்படும்.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name புதுப்பிப்பார்';
+  }
+
+  @override
+  String get householdYouRenew => 'நீங்கள் புதுப்பிப்பீர்கள்';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'புதுப்பிக்க $name-க்கு நினைவூட்டு';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return '$name-க்கு நினைவூட்டல் அனுப்பப்பட்டது';
+  }
+
+  @override
+  String get householdRemindLimit => 'இதைப் பற்றி இன்று ஏற்கெனவே நினைவூட்டல் அனுப்பியுள்ளீர்கள்.';
+
+  @override
+  String get householdRemindError => 'நினைவூட்டலை அனுப்ப முடியவில்லை. மீண்டும் முயலவும்.';
+
+  @override
   String get householdSharedBadge => 'பகிரப்பட்டது';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'கோரிக்கையை அனுப்பு';
+
+  @override
+  String get staffBulkTitle => 'புதுப்பிப்புகளைக் கேள்';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return '30 நாட்களுக்குள் காலாவதியாகும் பணியாளர் ஆவணங்கள்: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'ஒவ்வொருவருக்கும் புதிய ஆவணத்தைப் பதிவேற்றும் இணைப்புடன் மின்னஞ்சல் வரும்.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'அனுப்பிய கோரிக்கைகள்: $count-இல் $sent';
+  }
+
+  @override
+  String get roleAction => 'பணி மற்றும் தேவையான ஆவணங்கள்';
+
+  @override
+  String get roleNameLabel => 'பணி';
+
+  @override
+  String get roleNameHint => 'எடுத்துக்காட்டு: ஓட்டுநர்';
+
+  @override
+  String get roleRequiredTitle => 'தேவையான ஆவணங்கள்';
+
+  @override
+  String get roleRequiredHint => 'இவற்றில் எந்த ஆவணங்கள் இந்த நபரிடம் இல்லை என்று Vaultara காட்டும்.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'இந்தப் பணியில் உள்ள மற்ற அனைவரையும் புதுப்பி ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'இல்லை: $names';
+  }
+
+  @override
+  String get roleComplete => 'தேவையான அனைத்து ஆவணங்களும் சேர்க்கப்பட்டன';
+
+  @override
+  String get roleSaved => 'பணி சேமிக்கப்பட்டது';
 
   @override
   String get requestUpdateSending => 'கோரிக்கையை அனுப்புகிறது';
@@ -8003,6 +8097,9 @@ class AppLocalizationsTa extends AppLocalizations {
   String get tourHousehold3Body => 'ஒவ்வொரு பதிவும் யாருக்காவது சொந்தமாக இருக்கலாம். அவர் பெயர் பதிவிலும் நினைவூட்டல்களிலும் தெரியும்.';
 
   @override
+  String get tourHouseholdRenewBody => 'பகிர்ந்த பதிவை யார் புதுப்பிப்பார் என்று தேர்ந்தெடுங்கள். அவருக்கு மட்டுமே நினைவூட்டல்கள் வரும், யார் வேண்டுமானாலும் ஒரே தட்டலில் நினைவூட்டலாம்.';
+
+  @override
   String get tourImport1Title => 'அட்டையை ஸ்கேன் செய்யுங்கள்';
 
   @override
@@ -8043,6 +8140,9 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'பணியாளர்களைச் சேர்த்து அவர்களின் சான்றிதழ்கள், அனுமதிகள் மற்றும் உரிமங்களை ஒரே இடத்தில் வையுங்கள்.';
+
+  @override
+  String get tourBusinessRolesBody => 'ஒவ்வொருவருக்கும் ஓட்டுநர் போன்ற பணியை அதற்குத் தேவையான ஆவணங்களுடன் கொடுங்கள். எது இல்லை என்று Vaultara காட்டும்.';
 
   @override
   String get tourBusiness2Title => 'மின்னஞ்சல் நினைவூட்டல்கள்';

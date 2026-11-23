@@ -1505,6 +1505,11 @@ class AppLocalizationsFil extends AppLocalizations {
   String get familyRemove => 'Alisin';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Mamamayan ng $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Alisin si $name?';
   }
@@ -1572,6 +1577,9 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'May sariling rekord at paalala ang bawat tao';
+
+  @override
+  String get familyBenefitRenewer => 'Piliin kung sino ang magre-renew ng bawat shared na record, at paalalahanan sila sa isang tap';
 
   @override
   String get familyBenefitOneSubscription => 'Isang subscription para sa buong sambahayan';
@@ -3207,6 +3215,12 @@ class AppLocalizationsFil extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Mga rekord ng empleyado at sasakyan sa iisang lugar';
 
   @override
+  String get businessBenefitBulk => 'Humingi ng update sa staff nang sabay-sabay, at maabisuhan kapag nag-expire ang isang dokumento';
+
+  @override
+  String get businessBenefitRoles => 'Itakda ang mga kailangang dokumento bawat tungkulin at tingnan ang kulang ng bawat isa';
+
+  @override
   String get businessBenefitPdf => 'PDF export ng team na may pangalan ng kumpanya mo';
 
   @override
@@ -4408,6 +4422,39 @@ class AppLocalizationsFil extends AppLocalizations {
   String get householdShareOff => 'Ikaw lang ang makakakita ng rekord na ito.';
 
   @override
+  String get householdRenewerLabel => 'Sino ang magre-renew';
+
+  @override
+  String get householdRenewerAnyone => 'Kahit sino sa sambahayan';
+
+  @override
+  String get householdRenewerHint => 'Siya lang ang makakatanggap ng mga paalala. Sasabihan ang iba kapag hindi na-renew sa tamang oras.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return 'Magre-renew si $name';
+  }
+
+  @override
+  String get householdYouRenew => 'Ikaw ang magre-renew';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Paalalahanan si $name na i-renew ito';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Naipadala ang paalala kay $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Nagpadala ka na ng paalala tungkol dito ngayong araw.';
+
+  @override
+  String get householdRemindError => 'Hindi naipadala ang paalala. Subukan ulit.';
+
+  @override
   String get householdSharedBadge => 'Ibinahagi';
 
   @override
@@ -4953,6 +5000,53 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Ipadala ang kahilingan';
+
+  @override
+  String get staffBulkTitle => 'Humingi ng update';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Mga dokumento ng staff na mag-e-expire sa loob ng 30 araw: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Makakatanggap ang bawat isa ng email na may link para i-upload ang bagong dokumento.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Naipadalang request: $sent sa $count';
+  }
+
+  @override
+  String get roleAction => 'Tungkulin at mga kailangang dokumento';
+
+  @override
+  String get roleNameLabel => 'Tungkulin';
+
+  @override
+  String get roleNameHint => 'Halimbawa: Driver';
+
+  @override
+  String get roleRequiredTitle => 'Mga kailangang dokumento';
+
+  @override
+  String get roleRequiredHint => 'Ipinapakita ng Vaultara kung alin sa mga dokumentong ito ang kulang sa taong ito.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'I-update din ang lahat ng iba na may ganitong tungkulin ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Kulang: $names';
+  }
+
+  @override
+  String get roleComplete => 'Naidagdag na ang lahat ng kailangang dokumento';
+
+  @override
+  String get roleSaved => 'Na-save ang tungkulin';
 
   @override
   String get requestUpdateSending => 'Ipinapadala ang kahilingan';
@@ -7997,6 +8091,9 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tourHousehold3Body => 'Bawat record ay maaaring pag-aari ng isang tao. Lumalabas ang kanilang pangalan dito at sa mga paalala.';
 
   @override
+  String get tourHouseholdRenewBody => 'Piliin kung sino ang magre-renew ng shared na record. Siya lang ang makakatanggap ng mga paalala, at kahit sino ay puwedeng magpaalala sa isang tap.';
+
+  @override
   String get tourImport1Title => 'Mag-scan ng card';
 
   @override
@@ -8037,6 +8134,9 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Magdagdag ng staff at itago ang kanilang mga sertipiko, permit at lisensya sa iisang lugar.';
+
+  @override
+  String get tourBusinessRolesBody => 'Bigyan ang bawat tao ng tungkulin, gaya ng Driver, kasama ang mga dokumentong kailangan nito. Ipinapakita ng Vaultara kung ano ang kulang.';
 
   @override
   String get tourBusiness2Title => 'Mga paalala sa email';

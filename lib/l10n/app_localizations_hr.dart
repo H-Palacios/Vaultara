@@ -1510,6 +1510,11 @@ class AppLocalizationsHr extends AppLocalizations {
   String get familyRemove => 'Ukloni';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Državljanin: $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Ukloniti osobu $name?';
   }
@@ -1579,6 +1584,9 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Svaka osoba ima svoje zapise i podsjetnike';
+
+  @override
+  String get familyBenefitRenewer => 'Odaberite tko obnavlja svaki dijeljeni zapis i podsjetite ga jednim dodirom';
 
   @override
   String get familyBenefitOneSubscription => 'Jedna pretplata za cijelo kućanstvo';
@@ -3237,6 +3245,12 @@ class AppLocalizationsHr extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Zapisi o zaposlenicima i vozilima na jednom mjestu';
 
   @override
+  String get businessBenefitBulk => 'Tražite ažuriranja od zaposlenika odjednom i saznajte kada dokument istekne';
+
+  @override
+  String get businessBenefitRoles => 'Postavite obavezne dokumente po ulozi i vidite što kome nedostaje';
+
+  @override
   String get businessBenefitPdf => 'Timski PDF izvoz s nazivom vaše tvrtke';
 
   @override
@@ -4452,6 +4466,39 @@ class AppLocalizationsHr extends AppLocalizations {
   String get householdShareOff => 'Samo vi možete vidjeti ovaj zapis.';
 
   @override
+  String get householdRenewerLabel => 'Tko ga obnavlja';
+
+  @override
+  String get householdRenewerAnyone => 'Bilo tko u kućanstvu';
+
+  @override
+  String get householdRenewerHint => 'Samo ta osoba dobiva podsjetnike. Ostali se obavještavaju ako se ne obnovi na vrijeme.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return 'Obnavlja $name';
+  }
+
+  @override
+  String get householdYouRenew => 'Vi obnavljate';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Podsjeti $name da ga obnovi';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Podsjetnik je poslan: $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Danas ste već poslali podsjetnik za ovo.';
+
+  @override
+  String get householdRemindError => 'Podsjetnik nije poslan. Pokušajte ponovno.';
+
+  @override
   String get householdSharedBadge => 'Podijeljeno';
 
   @override
@@ -4997,6 +5044,53 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Pošalji zahtjev';
+
+  @override
+  String get staffBulkTitle => 'Zatraži ažuriranja';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Dokumenti zaposlenika koji istječu za 30 dana: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Svaka osoba dobiva e-poruku s poveznicom za prijenos novog dokumenta.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Poslani zahtjevi: $sent od $count';
+  }
+
+  @override
+  String get roleAction => 'Uloga i obavezni dokumenti';
+
+  @override
+  String get roleNameLabel => 'Uloga';
+
+  @override
+  String get roleNameHint => 'Na primjer: Vozač';
+
+  @override
+  String get roleRequiredTitle => 'Obavezni dokumenti';
+
+  @override
+  String get roleRequiredHint => 'Vaultara pokazuje koji od ovih dokumenata nedostaju ovoj osobi.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Ažuriraj i sve ostale s ovom ulogom ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Nedostaje: $names';
+  }
+
+  @override
+  String get roleComplete => 'Svi obavezni dokumenti su dodani';
+
+  @override
+  String get roleSaved => 'Uloga je spremljena';
 
   @override
   String get requestUpdateSending => 'Šaljem zahtjev';
@@ -8068,6 +8162,9 @@ class AppLocalizationsHr extends AppLocalizations {
   String get tourHousehold3Body => 'Svaki zapis može pripadati nekome. Ime se prikazuje na zapisu i u podsjetnicima.';
 
   @override
+  String get tourHouseholdRenewBody => 'Odaberite tko obnavlja dijeljeni zapis. Samo ta osoba dobiva podsjetnike, a svatko je može podsjetiti jednim dodirom.';
+
+  @override
   String get tourImport1Title => 'Skenirajte karticu';
 
   @override
@@ -8108,6 +8205,9 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Dodajte zaposlenike i držite njihove certifikate, dozvole i licence na jednom mjestu.';
+
+  @override
+  String get tourBusinessRolesBody => 'Dajte svakoj osobi ulogu, npr. Vozač, s dokumentima koji su joj potrebni. Vaultara pokazuje što nedostaje.';
 
   @override
   String get tourBusiness2Title => 'Podsjetnici e-poštom';

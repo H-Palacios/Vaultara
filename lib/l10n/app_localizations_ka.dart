@@ -1507,6 +1507,11 @@ class AppLocalizationsKa extends AppLocalizations {
   String get familyRemove => 'წაშლა';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country-ის მოქალაქე';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'წავშალოთ $name?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'თითოეულ პირს საკუთარი ჩანაწერები და შეხსენებები აქვს';
+
+  @override
+  String get familyBenefitRenewer => 'აირჩიეთ, ვინ განაახლებს თითოეულ საერთო ჩანაწერს და შეახსენეთ ერთი შეხებით';
 
   @override
   String get familyBenefitOneSubscription => 'ერთი გამოწერა მთელი ოჯახისთვის';
@@ -3209,6 +3217,12 @@ class AppLocalizationsKa extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'თანამშრომლებისა და ავტომობილების ჩანაწერები ერთ ადგილას';
 
   @override
+  String get businessBenefitBulk => 'მოითხოვეთ თანამშრომლებისგან განახლებები ერთდროულად და გაიგეთ, როცა დოკუმენტს ვადა გაუვა';
+
+  @override
+  String get businessBenefitRoles => 'დააყენეთ საჭირო დოკუმენტები როლის მიხედვით და ნახეთ, ვის რა აკლია';
+
+  @override
   String get businessBenefitPdf => 'გუნდის PDF ექსპორტი თქვენი კომპანიის სახელით';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsKa extends AppLocalizations {
   String get householdShareOff => 'ამ ჩანაწერს მხოლოდ თქვენ ხედავთ.';
 
   @override
+  String get householdRenewerLabel => 'ვინ განაახლებს';
+
+  @override
+  String get householdRenewerAnyone => 'ოჯახის ნებისმიერი წევრი';
+
+  @override
+  String get householdRenewerHint => 'შეხსენებებს მხოლოდ ის მიიღებს. დანარჩენებს ეცნობებათ, თუ დროულად არ განახლდება.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return 'განაახლებს $name';
+  }
+
+  @override
+  String get householdYouRenew => 'თქვენ განაახლებთ';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'შეახსენე $name-ს განახლება';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'შეხსენება გაეგზავნა $name-ს';
+  }
+
+  @override
+  String get householdRemindLimit => 'დღეს ამაზე შეხსენება უკვე გაგზავნეთ.';
+
+  @override
+  String get householdRemindError => 'შეხსენება ვერ გაიგზავნა. სცადეთ ხელახლა.';
+
+  @override
   String get householdSharedBadge => 'გაზიარებული';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'მოთხოვნის გაგზავნა';
+
+  @override
+  String get staffBulkTitle => 'განახლებების მოთხოვნა';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'თანამშრომლების დოკუმენტები, რომლებიც 30 დღეში იწურება: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'თითოეული მიიღებს ელფოსტას ახალი დოკუმენტის ასატვირთი ბმულით.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'გაგზავნილი მოთხოვნები: $sent / $count';
+  }
+
+  @override
+  String get roleAction => 'როლი და საჭირო დოკუმენტები';
+
+  @override
+  String get roleNameLabel => 'როლი';
+
+  @override
+  String get roleNameHint => 'მაგალითად: მძღოლი';
+
+  @override
+  String get roleRequiredTitle => 'საჭირო დოკუმენტები';
+
+  @override
+  String get roleRequiredHint => 'Vaultara აჩვენებს, ამ დოკუმენტებიდან რომელი აკლია ამ ადამიანს.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'ამ როლის მქონე სხვებიც განაახლე ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'აკლია: $names';
+  }
+
+  @override
+  String get roleComplete => 'ყველა საჭირო დოკუმენტი დამატებულია';
+
+  @override
+  String get roleSaved => 'როლი შენახულია';
 
   @override
   String get requestUpdateSending => 'მოთხოვნა იგზავნება';
@@ -8003,6 +8097,9 @@ class AppLocalizationsKa extends AppLocalizations {
   String get tourHousehold3Body => 'თითოეული ჩანაწერი შეიძლება ვინმეს ეკუთვნოდეს. მისი სახელი ჩანს ჩანაწერში და შეხსენებებში.';
 
   @override
+  String get tourHouseholdRenewBody => 'აირჩიეთ, ვინ განაახლებს საერთო ჩანაწერს. შეხსენებებს მხოლოდ ის მიიღებს და ნებისმიერს შეუძლია შეახსენოს ერთი შეხებით.';
+
+  @override
   String get tourImport1Title => 'დაასკანერეთ ბარათი';
 
   @override
@@ -8043,6 +8140,9 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'დაამატეთ თანამშრომლები და შეინახეთ მათი სერტიფიკატები, ნებართვები და ლიცენზიები ერთ ადგილას.';
+
+  @override
+  String get tourBusinessRolesBody => 'მიეცით თითოეულს როლი, მაგალითად მძღოლი, საჭირო დოკუმენტებით. Vaultara აჩვენებს, რა აკლია.';
 
   @override
   String get tourBusiness2Title => 'შეხსენებები ელფოსტით';

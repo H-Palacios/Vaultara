@@ -1535,6 +1535,11 @@ class AppLocalizationsPl extends AppLocalizations {
   String get familyRemove => 'Usuń';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Obywatel: $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Usunąć osobę $name?';
   }
@@ -1606,6 +1611,9 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Każda osoba ma własne rekordy i przypomnienia';
+
+  @override
+  String get familyBenefitRenewer => 'Wybierz, kto odnawia każdy wspólny wpis, i przypomnij mu jednym dotknięciem';
 
   @override
   String get familyBenefitOneSubscription => 'Jedna subskrypcja dla całego gospodarstwa domowego';
@@ -3287,6 +3295,12 @@ class AppLocalizationsPl extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Rekordy pracowników i pojazdów w jednym miejscu';
 
   @override
+  String get businessBenefitBulk => 'Proś pracowników o aktualizacje hurtowo i dostawaj informację, gdy dokument wygaśnie';
+
+  @override
+  String get businessBenefitRoles => 'Ustal wymagane dokumenty dla stanowisk i zobacz, czego komu brakuje';
+
+  @override
   String get businessBenefitPdf => 'Zespołowy eksport PDF z nazwą twojej firmy';
 
   @override
@@ -4518,6 +4532,39 @@ class AppLocalizationsPl extends AppLocalizations {
   String get householdShareOff => 'Tylko ty widzisz ten rekord.';
 
   @override
+  String get householdRenewerLabel => 'Kto odnawia';
+
+  @override
+  String get householdRenewerAnyone => 'Ktokolwiek z domowników';
+
+  @override
+  String get householdRenewerHint => 'Tylko ta osoba dostaje przypomnienia. Pozostali dostaną informację, jeśli nie zostanie odnowiony na czas.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return 'Odnawia $name';
+  }
+
+  @override
+  String get householdYouRenew => 'Ty odnawiasz';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Przypomnij $name o odnowieniu';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Wysłano przypomnienie: $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Dziś już wysłano przypomnienie w tej sprawie.';
+
+  @override
+  String get householdRemindError => 'Nie udało się wysłać przypomnienia. Spróbuj ponownie.';
+
+  @override
   String get householdSharedBadge => 'Udostępnione';
 
   @override
@@ -5063,6 +5110,53 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Wyślij prośbę';
+
+  @override
+  String get staffBulkTitle => 'Poproś o aktualizacje';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Dokumenty pracowników wygasające w ciągu 30 dni: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Każda osoba dostanie e-mail z linkiem do przesłania nowego dokumentu.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Wysłane prośby: $sent z $count';
+  }
+
+  @override
+  String get roleAction => 'Stanowisko i wymagane dokumenty';
+
+  @override
+  String get roleNameLabel => 'Stanowisko';
+
+  @override
+  String get roleNameHint => 'Na przykład: Kierowca';
+
+  @override
+  String get roleRequiredTitle => 'Wymagane dokumenty';
+
+  @override
+  String get roleRequiredHint => 'Vaultara pokazuje, których z tych dokumentów brakuje tej osobie.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Zaktualizuj też wszystkich innych na tym stanowisku ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Brakuje: $names';
+  }
+
+  @override
+  String get roleComplete => 'Są wszystkie wymagane dokumenty';
+
+  @override
+  String get roleSaved => 'Zapisano stanowisko';
 
   @override
   String get requestUpdateSending => 'Wysyłanie prośby';
@@ -8157,6 +8251,9 @@ class AppLocalizationsPl extends AppLocalizations {
   String get tourHousehold3Body => 'Każdy wpis może do kogoś należeć. Imię widać we wpisie i w przypomnieniach.';
 
   @override
+  String get tourHouseholdRenewBody => 'Wybierz, kto odnawia wspólny wpis. Tylko ta osoba dostaje przypomnienia, a każdy może jej przypomnieć jednym dotknięciem.';
+
+  @override
   String get tourImport1Title => 'Zeskanuj kartę';
 
   @override
@@ -8197,6 +8294,9 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Dodaj pracowników i trzymaj ich certyfikaty, pozwolenia i licencje w jednym miejscu.';
+
+  @override
+  String get tourBusinessRolesBody => 'Nadaj każdemu stanowisko, np. Kierowca, z wymaganymi dokumentami. Vaultara pokazuje, czego brakuje.';
 
   @override
   String get tourBusiness2Title => 'Przypomnienia e-mailem';

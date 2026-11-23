@@ -1524,6 +1524,11 @@ class AppLocalizationsRu extends AppLocalizations {
   String get familyRemove => 'Удалить';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Гражданство: $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Удалить $name?';
   }
@@ -1595,6 +1600,9 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'У каждого свои записи и напоминания';
+
+  @override
+  String get familyBenefitRenewer => 'Выберите, кто продлевает каждую общую запись, и напоминайте одним нажатием';
 
   @override
   String get familyBenefitOneSubscription => 'Одна подписка на всю семью';
@@ -3276,6 +3284,12 @@ class AppLocalizationsRu extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Записи о сотрудниках и транспорте в одном месте';
 
   @override
+  String get businessBenefitBulk => 'Запрашивайте обновления у сотрудников сразу у всех и узнавайте, когда документ истёк';
+
+  @override
+  String get businessBenefitRoles => 'Задайте обязательные документы для должностей и смотрите, чего кому не хватает';
+
+  @override
   String get businessBenefitPdf => 'Командный экспорт PDF с названием вашей компании';
 
   @override
@@ -4513,6 +4527,39 @@ class AppLocalizationsRu extends AppLocalizations {
   String get householdShareOff => 'Эту запись видите только вы.';
 
   @override
+  String get householdRenewerLabel => 'Кто продлевает';
+
+  @override
+  String get householdRenewerAnyone => 'Любой в семье';
+
+  @override
+  String get householdRenewerHint => 'Напоминания получает только этот человек. Остальным сообщат, если запись не продлят вовремя.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return 'Продлевает: $name';
+  }
+
+  @override
+  String get householdYouRenew => 'Продлеваете вы';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Напомнить $name продлить';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Напоминание отправлено: $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Вы уже отправляли напоминание об этом сегодня.';
+
+  @override
+  String get householdRemindError => 'Не удалось отправить напоминание. Попробуйте ещё раз.';
+
+  @override
   String get householdSharedBadge => 'Общая';
 
   @override
@@ -5058,6 +5105,53 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Отправить запрос';
+
+  @override
+  String get staffBulkTitle => 'Запросить обновления';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Документы сотрудников, истекающие в течение 30 дней: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Каждый получит письмо со ссылкой для загрузки нового документа.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Отправлено запросов: $sent из $count';
+  }
+
+  @override
+  String get roleAction => 'Должность и обязательные документы';
+
+  @override
+  String get roleNameLabel => 'Должность';
+
+  @override
+  String get roleNameHint => 'Например: Водитель';
+
+  @override
+  String get roleRequiredTitle => 'Обязательные документы';
+
+  @override
+  String get roleRequiredHint => 'Vaultara показывает, каких из этих документов не хватает этому человеку.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Обновить и всех остальных с этой должностью ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Не хватает: $names';
+  }
+
+  @override
+  String get roleComplete => 'Все обязательные документы добавлены';
+
+  @override
+  String get roleSaved => 'Должность сохранена';
 
   @override
   String get requestUpdateSending => 'Отправляем запрос';
@@ -8152,6 +8246,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get tourHousehold3Body => 'Каждая запись может принадлежать кому-то. Имя владельца видно в записи и напоминаниях.';
 
   @override
+  String get tourHouseholdRenewBody => 'Выберите, кто продлевает общую запись. Напоминания получает только этот человек, а напомнить ему может любой одним нажатием.';
+
+  @override
   String get tourImport1Title => 'Сканируйте карту';
 
   @override
@@ -8192,6 +8289,9 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Добавьте сотрудников и храните их сертификаты, разрешения и лицензии в одном месте.';
+
+  @override
+  String get tourBusinessRolesBody => 'Укажите каждому должность, например Водитель, с нужными документами. Vaultara покажет, чего не хватает.';
 
   @override
   String get tourBusiness2Title => 'Напоминания по почте';

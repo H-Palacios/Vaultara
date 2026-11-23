@@ -1519,6 +1519,11 @@ class AppLocalizationsCs extends AppLocalizations {
   String get familyRemove => 'Odebrat';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Občan: $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Odebrat osobu $name?';
   }
@@ -1590,6 +1595,9 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Každá osoba má vlastní záznamy a připomenutí';
+
+  @override
+  String get familyBenefitRenewer => 'Vyberte, kdo obnovuje každý sdílený záznam, a připomeňte mu to jedním klepnutím';
 
   @override
   String get familyBenefitOneSubscription => 'Jedno předplatné pro celou domácnost';
@@ -3271,6 +3279,12 @@ class AppLocalizationsCs extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Záznamy zaměstnanců a vozidel na jednom místě';
 
   @override
+  String get businessBenefitBulk => 'Žádejte zaměstnance o aktualizace hromadně a dozvíte se, když dokument vyprší';
+
+  @override
+  String get businessBenefitRoles => 'Nastavte povinné dokumenty pro každou roli a uvidíte, co komu chybí';
+
+  @override
   String get businessBenefitPdf => 'Týmový export do PDF s názvem vaší firmy';
 
   @override
@@ -4508,6 +4522,39 @@ class AppLocalizationsCs extends AppLocalizations {
   String get householdShareOff => 'Tento záznam vidíte jen vy.';
 
   @override
+  String get householdRenewerLabel => 'Kdo ho obnovuje';
+
+  @override
+  String get householdRenewerAnyone => 'Kdokoli z domácnosti';
+
+  @override
+  String get householdRenewerHint => 'Připomenutí dostává jen tento člověk. Ostatní se to dozví, pokud se neobnoví včas.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return 'Obnovuje $name';
+  }
+
+  @override
+  String get householdYouRenew => 'Obnovujete vy';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Připomenout $name, ať ho obnoví';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Připomenutí odesláno: $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Dnes jste už k tomu připomenutí poslali.';
+
+  @override
+  String get householdRemindError => 'Připomenutí se nepodařilo odeslat. Zkuste to znovu.';
+
+  @override
   String get householdSharedBadge => 'Sdíleno';
 
   @override
@@ -5053,6 +5100,53 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Odeslat žádost';
+
+  @override
+  String get staffBulkTitle => 'Požádat o aktualizace';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Dokumenty zaměstnanců s platností do 30 dnů: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Každý dostane e-mail s odkazem na nahrání nového dokumentu.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Odeslané žádosti: $sent z $count';
+  }
+
+  @override
+  String get roleAction => 'Role a povinné dokumenty';
+
+  @override
+  String get roleNameLabel => 'Role';
+
+  @override
+  String get roleNameHint => 'Například: Řidič';
+
+  @override
+  String get roleRequiredTitle => 'Povinné dokumenty';
+
+  @override
+  String get roleRequiredHint => 'Vaultara ukáže, které z těchto dokumentů tomuto člověku chybí.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Aktualizovat i všechny ostatní s touto rolí ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Chybí: $names';
+  }
+
+  @override
+  String get roleComplete => 'Všechny povinné dokumenty jsou přidané';
+
+  @override
+  String get roleSaved => 'Role uložena';
 
   @override
   String get requestUpdateSending => 'Odesílání žádosti';
@@ -8138,6 +8232,9 @@ class AppLocalizationsCs extends AppLocalizations {
   String get tourHousehold3Body => 'Každý záznam může někomu patřit. Jméno se zobrazí v záznamu i v připomínkách.';
 
   @override
+  String get tourHouseholdRenewBody => 'Vyberte, kdo obnovuje sdílený záznam. Připomenutí dostává jen on a kdokoli mu může jedním klepnutím připomenout.';
+
+  @override
   String get tourImport1Title => 'Naskenujte kartu';
 
   @override
@@ -8178,6 +8275,9 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Přidejte zaměstnance a mějte jejich certifikáty, povolení a licence na jednom místě.';
+
+  @override
+  String get tourBusinessRolesBody => 'Dejte každému roli, třeba Řidič, s dokumenty, které potřebuje. Vaultara ukáže, co chybí.';
 
   @override
   String get tourBusiness2Title => 'Připomínky e-mailem';

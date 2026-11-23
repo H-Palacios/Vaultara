@@ -1507,6 +1507,11 @@ class AppLocalizationsEl extends AppLocalizations {
   String get familyRemove => 'Αφαίρεση';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Πολίτης: $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Αφαίρεση του ατόμου $name;';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Κάθε άτομο έχει τις δικές του εγγραφές και υπενθυμίσεις';
+
+  @override
+  String get familyBenefitRenewer => 'Επιλέξτε ποιος ανανεώνει κάθε κοινόχρηστη εγγραφή και υπενθυμίστε του με ένα πάτημα';
 
   @override
   String get familyBenefitOneSubscription => 'Μία συνδρομή για όλο το νοικοκυριό';
@@ -3209,6 +3217,12 @@ class AppLocalizationsEl extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Εγγραφές προσωπικού και οχημάτων σε ένα μέρος';
 
   @override
+  String get businessBenefitBulk => 'Ζητήστε ενημερώσεις από το προσωπικό μαζικά και ενημερωθείτε όταν λήγει ένα έγγραφο';
+
+  @override
+  String get businessBenefitRoles => 'Ορίστε απαιτούμενα έγγραφα ανά ρόλο και δείτε τι λείπει από τον καθένα';
+
+  @override
   String get businessBenefitPdf => 'Εξαγωγή PDF για την ομάδα με την επωνυμία της εταιρείας σας';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsEl extends AppLocalizations {
   String get householdShareOff => 'Μόνο εσείς βλέπετε αυτή την εγγραφή.';
 
   @override
+  String get householdRenewerLabel => 'Ποιος το ανανεώνει';
+
+  @override
+  String get householdRenewerAnyone => 'Οποιοσδήποτε στο νοικοκυριό';
+
+  @override
+  String get householdRenewerHint => 'Μόνο αυτός λαμβάνει τις υπενθυμίσεις. Οι άλλοι ενημερώνονται αν δεν ανανεωθεί εγκαίρως.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return 'Ανανεώνει: $name';
+  }
+
+  @override
+  String get householdYouRenew => 'Το ανανεώνετε εσείς';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Υπενθύμιση στον/στην $name να το ανανεώσει';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Η υπενθύμιση στάλθηκε στον/στην $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Έχετε ήδη στείλει υπενθύμιση για αυτό σήμερα.';
+
+  @override
+  String get householdRemindError => 'Η υπενθύμιση δεν στάλθηκε. Δοκιμάστε ξανά.';
+
+  @override
   String get householdSharedBadge => 'Κοινή';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Αποστολή αιτήματος';
+
+  @override
+  String get staffBulkTitle => 'Αίτημα ενημερώσεων';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Έγγραφα προσωπικού που λήγουν σε 30 ημέρες: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Κάθε άτομο λαμβάνει email με σύνδεσμο για να ανεβάσει το νέο έγγραφο.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Αιτήματα που στάλθηκαν: $sent από $count';
+  }
+
+  @override
+  String get roleAction => 'Ρόλος και απαιτούμενα έγγραφα';
+
+  @override
+  String get roleNameLabel => 'Ρόλος';
+
+  @override
+  String get roleNameHint => 'Για παράδειγμα: Οδηγός';
+
+  @override
+  String get roleRequiredTitle => 'Απαιτούμενα έγγραφα';
+
+  @override
+  String get roleRequiredHint => 'Το Vaultara δείχνει ποια από αυτά τα έγγραφα λείπουν από αυτό το άτομο.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Ενημέρωση και όλων των άλλων με αυτόν τον ρόλο ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Λείπουν: $names';
+  }
+
+  @override
+  String get roleComplete => 'Προστέθηκαν όλα τα απαιτούμενα έγγραφα';
+
+  @override
+  String get roleSaved => 'Ο ρόλος αποθηκεύτηκε';
 
   @override
   String get requestUpdateSending => 'Αποστολή του αιτήματος';
@@ -8007,6 +8101,9 @@ class AppLocalizationsEl extends AppLocalizations {
   String get tourHousehold3Body => 'Κάθε εγγραφή μπορεί να ανήκει σε κάποιον. Το όνομά του φαίνεται σε αυτήν και στις υπενθυμίσεις.';
 
   @override
+  String get tourHouseholdRenewBody => 'Επιλέξτε ποιος ανανεώνει μια κοινόχρηστη εγγραφή. Μόνο αυτός λαμβάνει τις υπενθυμίσεις και οποιοσδήποτε μπορεί να του υπενθυμίσει με ένα πάτημα.';
+
+  @override
   String get tourImport1Title => 'Σαρώστε μια κάρτα';
 
   @override
@@ -8047,6 +8144,9 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Προσθέστε προσωπικό και κρατήστε πιστοποιητικά, άδειες και διπλώματα σε ένα σημείο.';
+
+  @override
+  String get tourBusinessRolesBody => 'Δώστε σε κάθε άτομο έναν ρόλο, π.χ. Οδηγός, με τα έγγραφα που χρειάζεται. Το Vaultara δείχνει τι λείπει.';
 
   @override
   String get tourBusiness2Title => 'Υπενθυμίσεις με email';

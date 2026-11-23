@@ -1507,6 +1507,11 @@ class AppLocalizationsNo extends AppLocalizations {
   String get familyRemove => 'Fjern';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Statsborger av $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Vil du fjerne $name?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Hver person har egne oppføringer og påminnelser';
+
+  @override
+  String get familyBenefitRenewer => 'Velg hvem som fornyer hver delte oppføring, og minn dem på det med ett trykk';
 
   @override
   String get familyBenefitOneSubscription => 'Ett abonnement for hele husstanden';
@@ -3209,6 +3217,12 @@ class AppLocalizationsNo extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Oppføringer for ansatte og kjøretøy på ett sted';
 
   @override
+  String get businessBenefitBulk => 'Be om oppdateringer fra de ansatte samlet, og få beskjed når et dokument utløper';
+
+  @override
+  String get businessBenefitRoles => 'Angi påkrevde dokumenter per rolle, og se hva hver person mangler';
+
+  @override
   String get businessBenefitPdf => 'PDF-eksport for teamet med firmanavnet ditt';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsNo extends AppLocalizations {
   String get householdShareOff => 'Bare du kan se denne oppføringen.';
 
   @override
+  String get householdRenewerLabel => 'Hvem fornyer';
+
+  @override
+  String get householdRenewerAnyone => 'Hvem som helst i husstanden';
+
+  @override
+  String get householdRenewerHint => 'Bare de får påminnelsene. De andre får beskjed hvis den ikke fornyes i tide.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name fornyer';
+  }
+
+  @override
+  String get householdYouRenew => 'Du fornyer';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Minn $name på å fornye den';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Påminnelse sendt til $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Du har allerede sendt en påminnelse om dette i dag.';
+
+  @override
+  String get householdRemindError => 'Påminnelsen kunne ikke sendes. Prøv igjen.';
+
+  @override
   String get householdSharedBadge => 'Delt';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Send forespørsel';
+
+  @override
+  String get staffBulkTitle => 'Be om oppdateringer';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Ansattdokumenter som utløper innen 30 dager: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Hver person får en e-post med en lenke for å laste opp det nye dokumentet.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Forespørsler sendt: $sent av $count';
+  }
+
+  @override
+  String get roleAction => 'Rolle og påkrevde dokumenter';
+
+  @override
+  String get roleNameLabel => 'Rolle';
+
+  @override
+  String get roleNameHint => 'For eksempel: Sjåfør';
+
+  @override
+  String get roleRequiredTitle => 'Påkrevde dokumenter';
+
+  @override
+  String get roleRequiredHint => 'Vaultara viser hvilke av disse dokumentene personen mangler.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Oppdater også alle andre med denne rollen ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Mangler: $names';
+  }
+
+  @override
+  String get roleComplete => 'Alle påkrevde dokumenter er lagt til';
+
+  @override
+  String get roleSaved => 'Rolle lagret';
 
   @override
   String get requestUpdateSending => 'Sender forespørselen';
@@ -8007,6 +8101,9 @@ class AppLocalizationsNo extends AppLocalizations {
   String get tourHousehold3Body => 'Hver oppføring kan tilhøre noen. Navnet vises på oppføringen og i påminnelsene.';
 
   @override
+  String get tourHouseholdRenewBody => 'Velg hvem som fornyer en delt oppføring. Bare de får påminnelsene, og hvem som helst kan minne dem på det med ett trykk.';
+
+  @override
   String get tourImport1Title => 'Skann et kort';
 
   @override
@@ -8047,6 +8144,9 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Legg til ansatte, og samle sertifikater, tillatelser og lisenser på ett sted.';
+
+  @override
+  String get tourBusinessRolesBody => 'Gi hver person en rolle, for eksempel Sjåfør, med dokumentene den krever. Vaultara viser hva som mangler.';
 
   @override
   String get tourBusiness2Title => 'Påminnelser på e-post';

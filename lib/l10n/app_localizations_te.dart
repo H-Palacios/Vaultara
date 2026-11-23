@@ -1507,6 +1507,11 @@ class AppLocalizationsTe extends AppLocalizations {
   String get familyRemove => 'తీసివేయండి';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country పౌరుడు';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$nameను తీసివేయాలా?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'ప్రతి వ్యక్తికి సొంత రికార్డులు మరియు రిమైండర్‌లు';
+
+  @override
+  String get familyBenefitRenewer => 'ప్రతి షేర్ చేసిన రికార్డును ఎవరు పునరుద్ధరించాలో ఎంచుకోండి, ఒక్క ట్యాప్‌తో గుర్తుచేయండి';
 
   @override
   String get familyBenefitOneSubscription => 'ఇంటి మొత్తానికి ఒకే సబ్‌స్క్రిప్షన్';
@@ -3209,6 +3217,12 @@ class AppLocalizationsTe extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'సిబ్బంది మరియు వాహనాల రికార్డులు ఒకే చోట';
 
   @override
+  String get businessBenefitBulk => 'సిబ్బంది నుండి ఒకేసారి అప్‌డేట్‌లు అడగండి, పత్రం గడువు ముగిసినప్పుడు తెలుసుకోండి';
+
+  @override
+  String get businessBenefitRoles => 'ప్రతి పాత్రకు అవసరమైన పత్రాలను సెట్ చేసి, ఎవరి వద్ద ఏమి లేవో చూడండి';
+
+  @override
   String get businessBenefitPdf => 'మీ కంపెనీ పేరుతో టీమ్ PDF ఎగుమతి';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsTe extends AppLocalizations {
   String get householdShareOff => 'ఈ రికార్డును మీరు మాత్రమే చూడగలరు.';
 
   @override
+  String get householdRenewerLabel => 'ఎవరు పునరుద్ధరిస్తారు';
+
+  @override
+  String get householdRenewerAnyone => 'ఇంట్లో ఎవరైనా';
+
+  @override
+  String get householdRenewerHint => 'వారికి మాత్రమే రిమైండర్‌లు వస్తాయి. సమయానికి పునరుద్ధరించకపోతే మిగతావారికి తెలియజేస్తారు.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name పునరుద్ధరిస్తారు';
+  }
+
+  @override
+  String get householdYouRenew => 'మీరు పునరుద్ధరిస్తారు';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'పునరుద్ధరించమని $nameకి గుర్తుచేయి';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return '$nameకి రిమైండర్ పంపబడింది';
+  }
+
+  @override
+  String get householdRemindLimit => 'దీని గురించి మీరు ఈరోజే రిమైండర్ పంపారు.';
+
+  @override
+  String get householdRemindError => 'రిమైండర్ పంపలేకపోయాం. మళ్లీ ప్రయత్నించండి.';
+
+  @override
   String get householdSharedBadge => 'షేర్ చేసినది';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'అభ్యర్థన పంపండి';
+
+  @override
+  String get staffBulkTitle => 'అప్‌డేట్‌లు అడగండి';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return '30 రోజుల్లో గడువు ముగిసే సిబ్బంది పత్రాలు: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'ప్రతి ఒక్కరికీ కొత్త పత్రాన్ని అప్‌లోడ్ చేసే లింక్‌తో ఇమెయిల్ వస్తుంది.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'పంపిన అభ్యర్థనలు: $countలో $sent';
+  }
+
+  @override
+  String get roleAction => 'పాత్ర మరియు అవసరమైన పత్రాలు';
+
+  @override
+  String get roleNameLabel => 'పాత్ర';
+
+  @override
+  String get roleNameHint => 'ఉదాహరణ: డ్రైవర్';
+
+  @override
+  String get roleRequiredTitle => 'అవసరమైన పత్రాలు';
+
+  @override
+  String get roleRequiredHint => 'ఈ వ్యక్తి వద్ద వీటిలో ఏ పత్రాలు లేవో Vaultara చూపిస్తుంది.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'ఈ పాత్ర ఉన్న మిగతా అందరినీ కూడా అప్‌డేట్ చేయండి ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'లేవు: $names';
+  }
+
+  @override
+  String get roleComplete => 'అవసరమైన అన్ని పత్రాలు జోడించబడ్డాయి';
+
+  @override
+  String get roleSaved => 'పాత్ర సేవ్ చేయబడింది';
 
   @override
   String get requestUpdateSending => 'అభ్యర్థనను పంపుతోంది';
@@ -8003,6 +8097,9 @@ class AppLocalizationsTe extends AppLocalizations {
   String get tourHousehold3Body => 'ప్రతి రికార్డ్ ఎవరిదైనా కావచ్చు. వారి పేరు రికార్డ్‌లో మరియు రిమైండర్‌లలో కనిపిస్తుంది.';
 
   @override
+  String get tourHouseholdRenewBody => 'షేర్ చేసిన రికార్డును ఎవరు పునరుద్ధరించాలో ఎంచుకోండి. వారికి మాత్రమే రిమైండర్‌లు వస్తాయి, ఎవరైనా ఒక్క ట్యాప్‌తో గుర్తుచేయవచ్చు.';
+
+  @override
   String get tourImport1Title => 'కార్డ్ స్కాన్ చేయండి';
 
   @override
@@ -8043,6 +8140,9 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'సిబ్బందిని జోడించి వారి సర్టిఫికెట్లు, అనుమతులు మరియు లైసెన్సులను ఒకే చోట ఉంచండి.';
+
+  @override
+  String get tourBusinessRolesBody => 'ప్రతి ఒక్కరికీ డ్రైవర్ వంటి పాత్రను దానికి అవసరమైన పత్రాలతో ఇవ్వండి. ఏమి లేవో Vaultara చూపిస్తుంది.';
 
   @override
   String get tourBusiness2Title => 'ఇమెయిల్ రిమైండర్‌లు';

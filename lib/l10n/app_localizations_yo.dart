@@ -1507,6 +1507,11 @@ class AppLocalizationsYo extends AppLocalizations {
   String get familyRemove => 'Yọ kúrò';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Ọmọ ìlú $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Yọ $name kúrò?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Ènìyàn kọ̀ọ̀kan ní igbasilẹ àti iranti tirẹ̀';
+
+  @override
+  String get familyBenefitRenewer => 'Yan ẹni tí yóò sọ àkọsílẹ̀ àjọpín kọ̀ọ̀kan dọ̀tun, kí o sì rán an létí pẹ̀lú ìfọwọ́kàn kan';
 
   @override
   String get familyBenefitOneSubscription => 'Ìforúkọsílẹ̀ kan fún gbogbo ilé';
@@ -3194,6 +3202,12 @@ class AppLocalizationsYo extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Àwọn igbasilẹ òṣìṣẹ́ àti ọkọ̀ ní ibi kan';
 
   @override
+  String get businessBenefitBulk => 'Béèrè àtúnṣe lọ́wọ́ àwọn òṣìṣẹ́ lẹ́ẹ̀kan, kí o sì gbọ́ nígbà tí ìwé kan bá parí';
+
+  @override
+  String get businessBenefitRoles => 'Ṣètò àwọn ìwé tí a nílò fún ipa kọ̀ọ̀kan kí o sì rí ohun tí ẹnì kọ̀ọ̀kan kò ní';
+
+  @override
   String get businessBenefitPdf => 'Gbigbe PDF ẹgbẹ́ jáde pẹ̀lú orúkọ ilé-iṣẹ́ rẹ';
 
   @override
@@ -4377,6 +4391,39 @@ class AppLocalizationsYo extends AppLocalizations {
   String get householdShareOff => 'Ìwọ nìkan ni o lè rí igbasilẹ yìí.';
 
   @override
+  String get householdRenewerLabel => 'Ta ló ń sọ ọ́ dọ̀tun';
+
+  @override
+  String get householdRenewerAnyone => 'Ẹnikẹ́ni nínú ilé';
+
+  @override
+  String get householdRenewerHint => 'Òun nìkan ló ń gba ìrántí. A ó sọ fún àwọn tó kù tí kò bá di sísọdọ̀tun lásìkò.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name ló ń sọ ọ́ dọ̀tun';
+  }
+
+  @override
+  String get householdYouRenew => 'Ìwọ ló ń sọ ọ́ dọ̀tun';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Rán $name létí láti sọ ọ́ dọ̀tun';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'A ti fi ìrántí ránṣẹ́ sí $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'O ti fi ìrántí nípa èyí ránṣẹ́ lónìí.';
+
+  @override
+  String get householdRemindError => 'A kò lè fi ìrántí náà ránṣẹ́. Gbìyànjú lẹ́ẹ̀kan sí i.';
+
+  @override
   String get householdSharedBadge => 'A pín';
 
   @override
@@ -4922,6 +4969,53 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Fi ìbéèrè ránṣẹ́';
+
+  @override
+  String get staffBulkTitle => 'Béèrè àtúnṣe';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Àwọn ìwé òṣìṣẹ́ tí yóò parí láàárín ọjọ́ 30: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Ẹnì kọ̀ọ̀kan yóò gba ímeèlì pẹ̀lú ọ̀nà asopọ̀ láti gbé ìwé tuntun rẹ̀ sókè.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Àwọn ìbéèrè tí a fi ránṣẹ́: $sent nínú $count';
+  }
+
+  @override
+  String get roleAction => 'Ipa àti àwọn ìwé tí a nílò';
+
+  @override
+  String get roleNameLabel => 'Ipa';
+
+  @override
+  String get roleNameHint => 'Fún àpẹẹrẹ: Awakọ̀';
+
+  @override
+  String get roleRequiredTitle => 'Àwọn ìwé tí a nílò';
+
+  @override
+  String get roleRequiredHint => 'Vaultara ń fi hàn èwo nínú àwọn ìwé wọ̀nyí ni ẹni yìí kò ní.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Ṣe àtúnṣe fún gbogbo àwọn míì tí wọ́n ní ipa yìí ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Kò sí: $names';
+  }
+
+  @override
+  String get roleComplete => 'Gbogbo ìwé tí a nílò ti wà níbẹ̀';
+
+  @override
+  String get roleSaved => 'A ti fi ipa pamọ́';
 
   @override
   String get requestUpdateSending => 'Ń fi ìbéèrè ránṣẹ́';
@@ -7952,6 +8046,9 @@ class AppLocalizationsYo extends AppLocalizations {
   String get tourHousehold3Body => 'Igbasilẹ kọọkan le jẹ ti ẹnikan. Orukọ wọn han lori rẹ ati ninu awọn iranti rẹ.';
 
   @override
+  String get tourHouseholdRenewBody => 'Yan ẹni tí yóò sọ àkọsílẹ̀ àjọpín dọ̀tun. Òun nìkan ló ń gba ìrántí, ẹnikẹ́ni sì lè rán an létí pẹ̀lú ìfọwọ́kàn kan.';
+
+  @override
   String get tourImport1Title => 'Ṣayẹwo kaadi kan';
 
   @override
@@ -7992,6 +8089,9 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Ṣafikun oṣiṣẹ ki o tọju awọn iwe-ẹri, awọn iyọọda ati awọn iwe-aṣẹ wọn ni aaye kan.';
+
+  @override
+  String get tourBusinessRolesBody => 'Fún ẹnì kọ̀ọ̀kan ní ipa, bí Awakọ̀, pẹ̀lú àwọn ìwé tó nílò. Vaultara ń fi ohun tó kù hàn.';
 
   @override
   String get tourBusiness2Title => 'Awọn iranti imeeli';

@@ -1507,6 +1507,11 @@ class AppLocalizationsEt extends AppLocalizations {
   String get familyRemove => 'Eemalda';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country kodanik';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Kas eemaldada $name?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Igal inimesel on oma kirjed ja meeldetuletused';
+
+  @override
+  String get familyBenefitRenewer => 'Vali, kes iga jagatud kirje uuendab, ja tuleta talle ühe puudutusega meelde';
 
   @override
   String get familyBenefitOneSubscription => 'Üks tellimus kogu leibkonnale';
@@ -3209,6 +3217,12 @@ class AppLocalizationsEt extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Töötajate ja sõidukite kirjed ühes kohas';
 
   @override
+  String get businessBenefitBulk => 'Küsi töötajatelt uuendusi korraga ja saa teada, kui dokument aegub';
+
+  @override
+  String get businessBenefitRoles => 'Määra igale rollile nõutavad dokumendid ja vaata, mis kellelgi puudu on';
+
+  @override
   String get businessBenefitPdf => 'Meeskonna PDF-eksport sinu ettevõtte nimega';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsEt extends AppLocalizations {
   String get householdShareOff => 'Seda kirjet näed ainult sina.';
 
   @override
+  String get householdRenewerLabel => 'Kes seda uuendab';
+
+  @override
+  String get householdRenewerAnyone => 'Igaüks leibkonnast';
+
+  @override
+  String get householdRenewerHint => 'Meeldetuletusi saab ainult tema. Teisi teavitatakse, kui seda õigel ajal ei uuendata.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return 'Uuendab $name';
+  }
+
+  @override
+  String get householdYouRenew => 'Sina uuendad';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Tuleta $name meelde seda uuendada';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Meeldetuletus saadetud: $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Saatsid täna selle kohta juba meeldetuletuse.';
+
+  @override
+  String get householdRemindError => 'Meeldetuletust ei saanud saata. Proovi uuesti.';
+
+  @override
   String get householdSharedBadge => 'Jagatud';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Saada taotlus';
+
+  @override
+  String get staffBulkTitle => 'Küsi uuendusi';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Töötajate dokumendid, mis aeguvad 30 päeva jooksul: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Igaüks saab e-kirja lingiga uue dokumendi üleslaadimiseks.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Saadetud päringud: $sent/$count';
+  }
+
+  @override
+  String get roleAction => 'Roll ja nõutavad dokumendid';
+
+  @override
+  String get roleNameLabel => 'Roll';
+
+  @override
+  String get roleNameHint => 'Näiteks: Juht';
+
+  @override
+  String get roleRequiredTitle => 'Nõutavad dokumendid';
+
+  @override
+  String get roleRequiredHint => 'Vaultara näitab, millised neist dokumentidest sellel inimesel puuduvad.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Uuenda ka kõiki teisi selle rolliga ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Puudu: $names';
+  }
+
+  @override
+  String get roleComplete => 'Kõik nõutavad dokumendid on lisatud';
+
+  @override
+  String get roleSaved => 'Roll salvestatud';
 
   @override
   String get requestUpdateSending => 'Taotluse saatmine';
@@ -8007,6 +8101,9 @@ class AppLocalizationsEt extends AppLocalizations {
   String get tourHousehold3Body => 'Iga kirje võib kellelegi kuuluda. Nimi on näha kirjel ja meeldetuletustes.';
 
   @override
+  String get tourHouseholdRenewBody => 'Vali, kes jagatud kirjet uuendab. Meeldetuletusi saab ainult tema ja igaüks saab talle ühe puudutusega meelde tuletada.';
+
+  @override
   String get tourImport1Title => 'Skanni kaarti';
 
   @override
@@ -8047,6 +8144,9 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Lisa töötajad ja hoia nende tunnistusi, lube ja litsentse ühes kohas.';
+
+  @override
+  String get tourBusinessRolesBody => 'Anna igaühele roll, näiteks Juht, koos vajalike dokumentidega. Vaultara näitab, mis puudu on.';
 
   @override
   String get tourBusiness2Title => 'Meeldetuletused e-postiga';

@@ -1494,6 +1494,11 @@ class AppLocalizationsJa extends AppLocalizations {
   String get familyRemove => '削除';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country国籍';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$nameさんを削除しますか？';
   }
@@ -1561,6 +1566,9 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => '一人ひとりに専用の記録とリマインダー';
+
+  @override
+  String get familyBenefitRenewer => '共有記録ごとに更新する人を決めて、ワンタップでリマインド';
 
   @override
   String get familyBenefitOneSubscription => '世帯でひとつのサブスクリプション';
@@ -3181,6 +3189,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'スタッフと車両の記録を一か所で管理';
 
   @override
+  String get businessBenefitBulk => 'スタッフにまとめて更新を依頼し、書類の期限切れを通知で受け取れます';
+
+  @override
+  String get businessBenefitRoles => '役割ごとに必要な書類を設定し、各自に足りないものを確認';
+
+  @override
   String get businessBenefitPdf => '会社名入りのチーム用PDF出力';
 
   @override
@@ -4364,6 +4378,39 @@ class AppLocalizationsJa extends AppLocalizations {
   String get householdShareOff => 'この記録を見られるのはあなただけです。';
 
   @override
+  String get householdRenewerLabel => '更新する人';
+
+  @override
+  String get householdRenewerAnyone => '世帯の誰でも';
+
+  @override
+  String get householdRenewerHint => 'リマインダーが届くのはこの人だけです。期限までに更新されないと、ほかのメンバーに通知されます。';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$nameが更新';
+  }
+
+  @override
+  String get householdYouRenew => 'あなたが更新';
+
+  @override
+  String householdRemindAction(String name) {
+    return '$nameに更新をリマインド';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return '$nameにリマインドを送りました';
+  }
+
+  @override
+  String get householdRemindLimit => '今日はすでにこの件でリマインドを送っています。';
+
+  @override
+  String get householdRemindError => 'リマインドを送れませんでした。もう一度お試しください。';
+
+  @override
   String get householdSharedBadge => '共有中';
 
   @override
@@ -4909,6 +4956,53 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get requestUpdateSend => '依頼を送る';
+
+  @override
+  String get staffBulkTitle => '更新を依頼';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return '30日以内に期限が切れるスタッフの書類: $count';
+  }
+
+  @override
+  String get staffBulkBody => '各スタッフに、新しい書類をアップロードするリンク付きのメールが届きます。';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return '送信した依頼: $count件中$sent件';
+  }
+
+  @override
+  String get roleAction => '役割と必要な書類';
+
+  @override
+  String get roleNameLabel => '役割';
+
+  @override
+  String get roleNameHint => '例: ドライバー';
+
+  @override
+  String get roleRequiredTitle => '必要な書類';
+
+  @override
+  String get roleRequiredHint => 'この人に足りない書類をVaultaraが表示します。';
+
+  @override
+  String roleApplySame(int count) {
+    return '同じ役割のほかの人もまとめて更新（$count人）';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return '不足: $names';
+  }
+
+  @override
+  String get roleComplete => '必要な書類はすべてそろっています';
+
+  @override
+  String get roleSaved => '役割を保存しました';
 
   @override
   String get requestUpdateSending => '依頼を送信しています';
@@ -7934,6 +8028,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tourHousehold3Body => '記録ごとに持ち主を設定でき、名前が記録とリマインダーに表示されます。';
 
   @override
+  String get tourHouseholdRenewBody => '共有記録を更新する人を選びます。リマインダーが届くのはその人だけで、誰でもワンタップでリマインドできます。';
+
+  @override
   String get tourImport1Title => 'カードをスキャン';
 
   @override
@@ -7974,6 +8071,9 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'スタッフを追加し、資格、許可証、免許を一か所で管理します。';
+
+  @override
+  String get tourBusinessRolesBody => 'ドライバーなどの役割と必要な書類を一人ひとりに設定すると、足りないものをVaultaraが表示します。';
 
   @override
   String get tourBusiness2Title => 'メールでリマインダー';

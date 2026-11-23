@@ -1507,6 +1507,11 @@ class AppLocalizationsHa extends AppLocalizations {
   String get familyRemove => 'Cire';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Ɗan ƙasar $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'A cire $name?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Kowane mutum yana da nasa rikodi da tunatarwa';
+
+  @override
+  String get familyBenefitRenewer => 'Zaɓi wanda zai sabunta kowane bayanin da aka raba, ka tunatar da shi da taɓawa ɗaya';
 
   @override
   String get familyBenefitOneSubscription => 'Biyan kuɗi ɗaya ga dukan gida';
@@ -3209,6 +3217,12 @@ class AppLocalizationsHa extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Rikodin ma\'aikata da motoci a wuri ɗaya';
 
   @override
+  String get businessBenefitBulk => 'Nemi sabuntawa daga ma\'aikata gaba ɗaya, kuma a sanar da kai idan takarda ta ƙare';
+
+  @override
+  String get businessBenefitRoles => 'Saita takardun da ake buƙata ga kowane matsayi ka ga abin da kowa ya rasa';
+
+  @override
   String get businessBenefitPdf => 'Fitar da PDF na ƙungiya mai sunan kamfaninka';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsHa extends AppLocalizations {
   String get householdShareOff => 'Kai kaɗai za ka iya ganin wannan rikodin.';
 
   @override
+  String get householdRenewerLabel => 'Wa zai sabunta shi';
+
+  @override
+  String get householdRenewerAnyone => 'Kowa a gidan';
+
+  @override
+  String get householdRenewerHint => 'Shi kaɗai ke samun tunatarwa. Za a sanar da sauran idan ba a sabunta shi a kan lokaci ba.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name zai sabunta';
+  }
+
+  @override
+  String get householdYouRenew => 'Kai ne za ka sabunta';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Tunatar da $name ya sabunta shi';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'An aika tunatarwa zuwa ga $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Ka riga ka aika tunatarwa game da wannan a yau.';
+
+  @override
+  String get householdRemindError => 'Ba a iya aika tunatarwar ba. Sake gwadawa.';
+
+  @override
   String get householdSharedBadge => 'An raba';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Aika buƙata';
+
+  @override
+  String get staffBulkTitle => 'Nemi sabuntawa';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Takardun ma\'aikata da za su ƙare cikin kwanaki 30: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Kowane mutum zai sami imel mai hanyar haɗi don loda sabuwar takardarsa.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Buƙatun da aka aika: $sent cikin $count';
+  }
+
+  @override
+  String get roleAction => 'Matsayi da takardun da ake buƙata';
+
+  @override
+  String get roleNameLabel => 'Matsayi';
+
+  @override
+  String get roleNameHint => 'Misali: Direba';
+
+  @override
+  String get roleRequiredTitle => 'Takardun da ake buƙata';
+
+  @override
+  String get roleRequiredHint => 'Vaultara yana nuna wanne daga cikin waɗannan takardun wannan mutumin bai da shi.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Sabunta kowa da ke da wannan matsayi ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Babu: $names';
+  }
+
+  @override
+  String get roleComplete => 'An ƙara duk takardun da ake buƙata';
+
+  @override
+  String get roleSaved => 'An adana matsayi';
 
   @override
   String get requestUpdateSending => 'Ana aika buƙatar';
@@ -8003,6 +8097,9 @@ class AppLocalizationsHa extends AppLocalizations {
   String get tourHousehold3Body => 'Kowane bayani zai iya zama na wani. Sunansa yana bayyana a kansa da a tunatarwarsa.';
 
   @override
+  String get tourHouseholdRenewBody => 'Zaɓi wanda zai sabunta bayanin da aka raba. Shi kaɗai ke samun tunatarwa, kuma kowa zai iya tunatar da shi da taɓawa ɗaya.';
+
+  @override
   String get tourImport1Title => 'Duba kati';
 
   @override
@@ -8043,6 +8140,9 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Ƙara ma\'aikata ka ajiye takardun shaida, izini da lasisinsu a wuri ɗaya.';
+
+  @override
+  String get tourBusinessRolesBody => 'Ba kowane mutum matsayi, kamar Direba, tare da takardun da yake buƙata. Vaultara yana nuna abin da ya rage.';
 
   @override
   String get tourBusiness2Title => 'Tunatarwa ta imel';

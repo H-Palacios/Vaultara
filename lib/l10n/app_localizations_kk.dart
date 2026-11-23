@@ -1507,6 +1507,11 @@ class AppLocalizationsKk extends AppLocalizations {
   String get familyRemove => 'Алып тастау';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country азаматы';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$name алып тастау керек пе?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Әр адамның өз жазбалары мен еске салғыштары бар';
+
+  @override
+  String get familyBenefitRenewer => 'Әр ортақ жазбаны кім жаңартатынын таңдап, бір түртумен еске салыңыз';
 
   @override
   String get familyBenefitOneSubscription => 'Бүкіл үй-ішіне бір жазылым';
@@ -3209,6 +3217,12 @@ class AppLocalizationsKk extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Қызметкерлер мен көліктердің жазбалары бір жерде';
 
   @override
+  String get businessBenefitBulk => 'Қызметкерлерден жаңартуларды бірден сұраңыз және құжат мерзімі біткенде хабар алыңыз';
+
+  @override
+  String get businessBenefitRoles => 'Әр лауазымға қажетті құжаттарды белгілеп, кімде не жоқ екенін көріңіз';
+
+  @override
   String get businessBenefitPdf => 'Компания атауы бар командалық PDF экспорты';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsKk extends AppLocalizations {
   String get householdShareOff => 'Бұл жазбаны тек сіз көре аласыз.';
 
   @override
+  String get householdRenewerLabel => 'Кім жаңартады';
+
+  @override
+  String get householdRenewerAnyone => 'Отбасындағы кез келген адам';
+
+  @override
+  String get householdRenewerHint => 'Еске салғыштарды тек сол адам алады. Уақытында жаңартылмаса, басқаларға хабарланады.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name жаңартады';
+  }
+
+  @override
+  String get householdYouRenew => 'Сіз жаңартасыз';
+
+  @override
+  String householdRemindAction(String name) {
+    return '$name жаңартуды еске салу';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Еске салғыш $name адамына жіберілді';
+  }
+
+  @override
+  String get householdRemindLimit => 'Бүгін бұл туралы еске салғыш жіберіп қойдыңыз.';
+
+  @override
+  String get householdRemindError => 'Еске салғыш жіберілмеді. Қайталап көріңіз.';
+
+  @override
   String get householdSharedBadge => 'Бөлісілген';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Сұрауды жіберу';
+
+  @override
+  String get staffBulkTitle => 'Жаңартуларды сұрау';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return '30 күн ішінде мерзімі бітетін қызметкер құжаттары: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Әр адам жаңа құжатын жүктеу сілтемесі бар электрондық хат алады.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Жіберілген сұраулар: $count ішінен $sent';
+  }
+
+  @override
+  String get roleAction => 'Лауазым және қажетті құжаттар';
+
+  @override
+  String get roleNameLabel => 'Лауазым';
+
+  @override
+  String get roleNameHint => 'Мысалы: Жүргізуші';
+
+  @override
+  String get roleRequiredTitle => 'Қажетті құжаттар';
+
+  @override
+  String get roleRequiredHint => 'Vaultara бұл адамда осы құжаттардың қайсысы жоқ екенін көрсетеді.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Осы лауазымдағы басқаларды да жаңарту ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Жоқ: $names';
+  }
+
+  @override
+  String get roleComplete => 'Барлық қажетті құжаттар қосылды';
+
+  @override
+  String get roleSaved => 'Лауазым сақталды';
 
   @override
   String get requestUpdateSending => 'Сұрау жіберілуде';
@@ -8003,6 +8097,9 @@ class AppLocalizationsKk extends AppLocalizations {
   String get tourHousehold3Body => 'Әр жазба біреуге тиесілі болуы мүмкін. Оның аты жазбада және еске салғыштарда көрінеді.';
 
   @override
+  String get tourHouseholdRenewBody => 'Ортақ жазбаны кім жаңартатынын таңдаңыз. Еске салғыштарды тек сол алады, ал кез келген адам бір түртумен еске сала алады.';
+
+  @override
   String get tourImport1Title => 'Картаны сканерлеңіз';
 
   @override
@@ -8043,6 +8140,9 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Қызметкерлерді қосып, олардың сертификаттарын, рұқсаттарын және лицензияларын бір жерде сақтаңыз.';
+
+  @override
+  String get tourBusinessRolesBody => 'Әр адамға Жүргізуші сияқты лауазымды оған қажет құжаттармен беріңіз. Vaultara не жетіспейтінін көрсетеді.';
 
   @override
   String get tourBusiness2Title => 'Электрондық пошта еске салғыштары';

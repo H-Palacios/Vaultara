@@ -1507,6 +1507,11 @@ class AppLocalizationsKu extends AppLocalizations {
   String get familyRemove => 'Rake';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Hemwelatiyê $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$name rakî?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Her kes xwedî tomar û bîrxistinên xwe ye';
+
+  @override
+  String get familyBenefitRenewer => 'Hilbijêre kî her tomareke parvekirî nû dike, û bi yek tikandinê bîra wî bîne';
 
   @override
   String get familyBenefitOneSubscription => 'Abonetiyek ji bo tevahiya malê';
@@ -3209,6 +3217,12 @@ class AppLocalizationsKu extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Tomarên karmend û wesayîtan li cihekî';
 
   @override
+  String get businessBenefitBulk => 'Ji karmendan bi hev re nûkirinan bixwaze, û dema belgeyek biqede agahdar bibe';
+
+  @override
+  String get businessBenefitRoles => 'Ji bo her rolî belgeyên pêwîst diyar bike û bibîne ka her kes çi kêm e';
+
+  @override
   String get businessBenefitPdf => 'Derxistina PDF ya tîmê bi navê pargîdaniya te';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsKu extends AppLocalizations {
   String get householdShareOff => 'Tenê tu dikarî vê tomarê bibînî.';
 
   @override
+  String get householdRenewerLabel => 'Kî wê nû dike';
+
+  @override
+  String get householdRenewerAnyone => 'Her kesek di malê de';
+
+  @override
+  String get householdRenewerHint => 'Tenê ew bîrxistinan distîne. Heke di wextê xwe de neyê nûkirin, ên din tên agahdarkirin.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name nû dike';
+  }
+
+  @override
+  String get householdYouRenew => 'Tu nû dikî';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Bîra $name bîne ku nû bike';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Bîrxistin ji $name re hat şandin';
+  }
+
+  @override
+  String get householdRemindLimit => 'Te îro berê bîrxistinek li ser vê şandiye.';
+
+  @override
+  String get householdRemindError => 'Bîrxistin nehat şandin. Dîsa biceribîne.';
+
+  @override
   String get householdSharedBadge => 'Parvekirî';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Daxwazê bişîne';
+
+  @override
+  String get staffBulkTitle => 'Nûkirinan bixwaze';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Belgeyên karmendan ên ku di 30 rojan de diqedin: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Her kes e-nameyek bi girêdanek ji bo barkirina belgeya xwe ya nû distîne.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Daxwazên şandî: $sent ji $count';
+  }
+
+  @override
+  String get roleAction => 'Rol û belgeyên pêwîst';
+
+  @override
+  String get roleNameLabel => 'Rol';
+
+  @override
+  String get roleNameHint => 'Mînak: Ajokar';
+
+  @override
+  String get roleRequiredTitle => 'Belgeyên pêwîst';
+
+  @override
+  String get roleRequiredHint => 'Vaultara nîşan dide ku kîjan ji van belgeyan ji vî kesî kêm in.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Hemû kesên din ên bi vî rolî jî nû bike ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Kêm e: $names';
+  }
+
+  @override
+  String get roleComplete => 'Hemû belgeyên pêwîst hatin zêdekirin';
+
+  @override
+  String get roleSaved => 'Rol hat tomarkirin';
 
   @override
   String get requestUpdateSending => 'Daxwaz tê şandin';
@@ -8003,6 +8097,9 @@ class AppLocalizationsKu extends AppLocalizations {
   String get tourHousehold3Body => 'Her tomar dikare ya kesekî be. Navê wî li ser û di bîrxistinan de xuya dibe.';
 
   @override
+  String get tourHouseholdRenewBody => 'Hilbijêre kî tomareke parvekirî nû dike. Tenê ew bîrxistinan distîne, û her kes dikare bi yek tikandinê bîra wî bîne.';
+
+  @override
   String get tourImport1Title => 'Kartekê bişopîne';
 
   @override
@@ -8043,6 +8140,9 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Karmendan lê zêde bike û belge, destûr û lîsansên wan li yek cihî bigire.';
+
+  @override
+  String get tourBusinessRolesBody => 'Ji her kesî re rolekê bide, wek Ajokar, bi belgeyên ku pêwîst in. Vaultara nîşan dide ka çi kêm e.';
 
   @override
   String get tourBusiness2Title => 'Bîrxistinên e-nameyê';

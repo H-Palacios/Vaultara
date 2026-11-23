@@ -1504,6 +1504,11 @@ class AppLocalizationsKm extends AppLocalizations {
   String get familyRemove => 'ដកចេញ';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'ពលរដ្ឋ $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'ដក $name ចេញឬ?';
   }
@@ -1571,6 +1576,9 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'មនុស្សម្នាក់ៗមានកំណត់ត្រា និងការរំលឹកផ្ទាល់ខ្លួន';
+
+  @override
+  String get familyBenefitRenewer => 'ជ្រើសអ្នកដែលបន្តកំណត់ត្រាដែលបានចែករំលែកនីមួយៗ ហើយរំលឹកគេដោយការចុចតែម្ដង';
 
   @override
   String get familyBenefitOneSubscription => 'ការជាវតែមួយសម្រាប់គ្រួសារទាំងមូល';
@@ -3191,6 +3199,12 @@ class AppLocalizationsKm extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'កំណត់ត្រាបុគ្គលិក និងយានយន្តនៅកន្លែងតែមួយ';
 
   @override
+  String get businessBenefitBulk => 'ស្នើការធ្វើបច្ចុប្បន្នភាពពីបុគ្គលិកក្នុងពេលតែមួយ ហើយទទួលដំណឹងនៅពេលឯកសារផុតកំណត់';
+
+  @override
+  String get businessBenefitRoles => 'កំណត់ឯកសារដែលត្រូវការតាមតួនាទី ហើយមើលថាម្នាក់ៗខ្វះអ្វី';
+
+  @override
   String get businessBenefitPdf => 'ការនាំចេញ PDF របស់ក្រុមជាមួយឈ្មោះក្រុមហ៊ុនរបស់អ្នក';
 
   @override
@@ -4374,6 +4388,39 @@ class AppLocalizationsKm extends AppLocalizations {
   String get householdShareOff => 'មានតែអ្នកប៉ុណ្ណោះដែលអាចមើលឃើញកំណត់ត្រានេះ។';
 
   @override
+  String get householdRenewerLabel => 'អ្នកណាបន្តវា';
+
+  @override
+  String get householdRenewerAnyone => 'អ្នកណាម្នាក់ក្នុងគ្រួសារ';
+
+  @override
+  String get householdRenewerHint => 'មានតែគាត់ទេដែលទទួលការរំលឹក។ អ្នកផ្សេងនឹងត្រូវបានជូនដំណឹង ប្រសិនបើវាមិនត្រូវបានបន្តទាន់ពេល។';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name បន្ត';
+  }
+
+  @override
+  String get householdYouRenew => 'អ្នកបន្តវា';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'រំលឹក $name ឱ្យបន្តវា';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'បានផ្ញើការរំលឹកទៅ $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'អ្នកបានផ្ញើការរំលឹកអំពីរឿងនេះរួចហើយនៅថ្ងៃនេះ។';
+
+  @override
+  String get householdRemindError => 'មិនអាចផ្ញើការរំលឹកបានទេ។ សូមព្យាយាមម្ដងទៀត។';
+
+  @override
   String get householdSharedBadge => 'បានចែករំលែក';
 
   @override
@@ -4919,6 +4966,53 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'ផ្ញើសំណើ';
+
+  @override
+  String get staffBulkTitle => 'ស្នើការធ្វើបច្ចុប្បន្នភាព';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'ឯកសារបុគ្គលិកដែលផុតកំណត់ក្នុង 30 ថ្ងៃ៖ $count';
+  }
+
+  @override
+  String get staffBulkBody => 'ម្នាក់ៗនឹងទទួលអ៊ីមែលដែលមានតំណសម្រាប់ផ្ទុកឡើងឯកសារថ្មីរបស់ពួកគេ។';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'សំណើដែលបានផ្ញើ៖ $sent ក្នុងចំណោម $count';
+  }
+
+  @override
+  String get roleAction => 'តួនាទី និងឯកសារដែលត្រូវការ';
+
+  @override
+  String get roleNameLabel => 'តួនាទី';
+
+  @override
+  String get roleNameHint => 'ឧទាហរណ៍៖ អ្នកបើកបរ';
+
+  @override
+  String get roleRequiredTitle => 'ឯកសារដែលត្រូវការ';
+
+  @override
+  String get roleRequiredHint => 'Vaultara បង្ហាញថាឯកសារណាខ្លះក្នុងចំណោមឯកសារទាំងនេះដែលអ្នកនេះខ្វះ។';
+
+  @override
+  String roleApplySame(int count) {
+    return 'ធ្វើបច្ចុប្បន្នភាពអ្នកផ្សេងទៀតដែលមានតួនាទីនេះផងដែរ ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'ខ្វះ៖ $names';
+  }
+
+  @override
+  String get roleComplete => 'បានបន្ថែមឯកសារដែលត្រូវការទាំងអស់';
+
+  @override
+  String get roleSaved => 'បានរក្សាទុកតួនាទី';
 
   @override
   String get requestUpdateSending => 'កំពុងផ្ញើសំណើ';
@@ -7944,6 +8038,9 @@ class AppLocalizationsKm extends AppLocalizations {
   String get tourHousehold3Body => 'កំណត់ត្រានីមួយៗអាចជារបស់នរណាម្នាក់។ ឈ្មោះបង្ហាញលើកំណត់ត្រា និងក្នុងការរំលឹក។';
 
   @override
+  String get tourHouseholdRenewBody => 'ជ្រើសអ្នកដែលបន្តកំណត់ត្រាដែលបានចែករំលែក។ មានតែគាត់ទេដែលទទួលការរំលឹក ហើយអ្នកណាក៏អាចរំលឹកគាត់ដោយការចុចតែម្ដង។';
+
+  @override
   String get tourImport1Title => 'ស្កេនកាត';
 
   @override
@@ -7984,6 +8081,9 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'បន្ថែមបុគ្គលិក ហើយរក្សាវិញ្ញាបនបត្រ លិខិតអនុញ្ញាត និងអាជ្ញាប័ណ្ណរបស់ពួកគេនៅកន្លែងតែមួយ។';
+
+  @override
+  String get tourBusinessRolesBody => 'ផ្តល់តួនាទីដល់អ្នកម្នាក់ៗ ដូចជាអ្នកបើកបរ ជាមួយឯកសារដែលវាត្រូវការ។ Vaultara បង្ហាញអ្វីដែលខ្វះ។';
 
   @override
   String get tourBusiness2Title => 'ការរំលឹកតាមអ៊ីមែល';

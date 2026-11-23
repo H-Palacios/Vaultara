@@ -1507,6 +1507,11 @@ class AppLocalizationsSq extends AppLocalizations {
   String get familyRemove => 'Hiq';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Shtetas i $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Të hiqet $name?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Çdo person ka regjistrimet dhe kujtesat e veta';
+
+  @override
+  String get familyBenefitRenewer => 'Zgjidh kush e rinovon çdo regjistrim të ndarë dhe kujtoja me një prekje';
 
   @override
   String get familyBenefitOneSubscription => 'Një abonim për gjithë familjen';
@@ -3209,6 +3217,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Regjistrimet e stafit dhe të automjeteve në një vend';
 
   @override
+  String get businessBenefitBulk => 'Kërko përditësime nga stafi njëherësh dhe merr njoftim kur skadon një dokument';
+
+  @override
+  String get businessBenefitRoles => 'Cakto dokumentet e kërkuara për çdo rol dhe shiko çfarë i mungon secilit';
+
+  @override
   String get businessBenefitPdf => 'Eksport PDF për ekipin me emrin e kompanisë suaj';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsSq extends AppLocalizations {
   String get householdShareOff => 'Vetëm ju mund ta shihni këtë regjistrim.';
 
   @override
+  String get householdRenewerLabel => 'Kush e rinovon';
+
+  @override
+  String get householdRenewerAnyone => 'Kushdo në familje';
+
+  @override
+  String get householdRenewerHint => 'Vetëm ky person merr kujtesat. Të tjerët njoftohen nëse nuk rinovohet në kohë.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return 'E rinovon $name';
+  }
+
+  @override
+  String get householdYouRenew => 'E rinovon ti';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Kujtoji $name ta rinovojë';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Kujtesa iu dërgua $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Sot ke dërguar tashmë një kujtesë për këtë.';
+
+  @override
+  String get householdRemindError => 'Kujtesa nuk u dërgua. Provo përsëri.';
+
+  @override
   String get householdSharedBadge => 'I ndarë';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Dërgo kërkesën';
+
+  @override
+  String get staffBulkTitle => 'Kërko përditësime';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Dokumente të stafit që skadojnë brenda 30 ditëve: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Secili merr një email me një lidhje për të ngarkuar dokumentin e ri.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Kërkesa të dërguara: $sent nga $count';
+  }
+
+  @override
+  String get roleAction => 'Roli dhe dokumentet e kërkuara';
+
+  @override
+  String get roleNameLabel => 'Roli';
+
+  @override
+  String get roleNameHint => 'Për shembull: Shofer';
+
+  @override
+  String get roleRequiredTitle => 'Dokumentet e kërkuara';
+
+  @override
+  String get roleRequiredHint => 'Vaultara tregon cilat nga këto dokumente i mungojnë këtij personi.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Përditëso edhe të gjithë të tjerët me këtë rol ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Mungon: $names';
+  }
+
+  @override
+  String get roleComplete => 'Të gjitha dokumentet e kërkuara janë shtuar';
+
+  @override
+  String get roleSaved => 'Roli u ruajt';
 
   @override
   String get requestUpdateSending => 'Po dërgohet kërkesa';
@@ -8007,6 +8101,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tourHousehold3Body => 'Çdo regjistrim mund t\'i përkasë dikujt. Emri shfaqet në të dhe në kujtesa.';
 
   @override
+  String get tourHouseholdRenewBody => 'Zgjidh kush e rinovon një regjistrim të ndarë. Vetëm ky person merr kujtesat dhe kushdo mund t\'ia kujtojë me një prekje.';
+
+  @override
   String get tourImport1Title => 'Skano një kartë';
 
   @override
@@ -8047,6 +8144,9 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Shto stafin dhe mbaj certifikatat, lejet dhe licencat e tyre në një vend.';
+
+  @override
+  String get tourBusinessRolesBody => 'Jepi çdo personi një rol, si Shofer, me dokumentet që kërkon. Vaultara tregon çfarë mungon.';
 
   @override
   String get tourBusiness2Title => 'Kujtesa me email';

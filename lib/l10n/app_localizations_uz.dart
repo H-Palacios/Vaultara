@@ -1507,6 +1507,11 @@ class AppLocalizationsUz extends AppLocalizations {
   String get familyRemove => 'Olib tashlash';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country fuqarosi';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$name olib tashlansinmi?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Har bir kishining oʻz yozuvlari va eslatmalari bor';
+
+  @override
+  String get familyBenefitRenewer => 'Har bir umumiy yozuvni kim yangilashini tanlang va bir bosishda eslating';
 
   @override
   String get familyBenefitOneSubscription => 'Butun xonadon uchun bitta obuna';
@@ -3209,6 +3217,12 @@ class AppLocalizationsUz extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Xodimlar va transport vositalari yozuvlari bir joyda';
 
   @override
+  String get businessBenefitBulk => 'Xodimlardan yangilanishlarni birdaniga so‘rang va hujjat muddati tugaganda xabar oling';
+
+  @override
+  String get businessBenefitRoles => 'Har bir lavozim uchun kerakli hujjatlarni belgilang va kimda nima yo‘qligini ko‘ring';
+
+  @override
   String get businessBenefitPdf => 'Kompaniyangiz nomi bilan jamoa uchun PDF eksport';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsUz extends AppLocalizations {
   String get householdShareOff => 'Bu yozuvni faqat siz koʻra olasiz.';
 
   @override
+  String get householdRenewerLabel => 'Kim yangilaydi';
+
+  @override
+  String get householdRenewerAnyone => 'Xonadondagi istalgan kishi';
+
+  @override
+  String get householdRenewerHint => 'Eslatmalarni faqat u oladi. O‘z vaqtida yangilanmasa, boshqalarga xabar beriladi.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name yangilaydi';
+  }
+
+  @override
+  String get householdYouRenew => 'Siz yangilaysiz';
+
+  @override
+  String householdRemindAction(String name) {
+    return '${name}ga yangilashni eslatish';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Eslatma ${name}ga yuborildi';
+  }
+
+  @override
+  String get householdRemindLimit => 'Bugun bu haqida allaqachon eslatma yuborgansiz.';
+
+  @override
+  String get householdRemindError => 'Eslatmani yuborib bo‘lmadi. Qayta urinib ko‘ring.';
+
+  @override
   String get householdSharedBadge => 'Ulashilgan';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Soʻrov yuborish';
+
+  @override
+  String get staffBulkTitle => 'Yangilanish so‘rash';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return '30 kun ichida muddati tugaydigan xodim hujjatlari: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Har kim yangi hujjatini yuklash havolasi bor xat oladi.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Yuborilgan so‘rovlar: $count tadan $sent ta';
+  }
+
+  @override
+  String get roleAction => 'Lavozim va kerakli hujjatlar';
+
+  @override
+  String get roleNameLabel => 'Lavozim';
+
+  @override
+  String get roleNameHint => 'Masalan: Haydovchi';
+
+  @override
+  String get roleRequiredTitle => 'Kerakli hujjatlar';
+
+  @override
+  String get roleRequiredHint => 'Vaultara bu odamda qaysi hujjatlar yo‘qligini ko‘rsatadi.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Shu lavozimdagi boshqalarni ham yangilash ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Yo‘q: $names';
+  }
+
+  @override
+  String get roleComplete => 'Barcha kerakli hujjatlar qo‘shildi';
+
+  @override
+  String get roleSaved => 'Lavozim saqlandi';
 
   @override
   String get requestUpdateSending => 'Soʻrov yuborilmoqda';
@@ -8003,6 +8097,9 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tourHousehold3Body => 'Har bir yozuv kimgadir tegishli boʻlishi mumkin. Uning ismi yozuvda va eslatmalarda koʻrinadi.';
 
   @override
+  String get tourHouseholdRenewBody => 'Umumiy yozuvni kim yangilashini tanlang. Eslatmalarni faqat u oladi, istalgan kishi esa bir bosishda eslatishi mumkin.';
+
+  @override
   String get tourImport1Title => 'Kartani skanerlang';
 
   @override
@@ -8043,6 +8140,9 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Xodimlarni qoʻshing va ularning sertifikatlari, ruxsatnomalari va litsenziyalarini bir joyda saqlang.';
+
+  @override
+  String get tourBusinessRolesBody => 'Har kimga Haydovchi kabi lavozimni kerakli hujjatlari bilan bering. Vaultara nima yetishmasligini ko‘rsatadi.';
 
   @override
   String get tourBusiness2Title => 'Elektron pochta eslatmalari';

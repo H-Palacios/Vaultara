@@ -1507,6 +1507,11 @@ class AppLocalizationsEu extends AppLocalizations {
   String get familyRemove => 'Kendu';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country(e)ko herritarra';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$name kendu?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Pertsona bakoitzak bere erregistroak eta gogorarazleak ditu';
+
+  @override
+  String get familyBenefitRenewer => 'Aukeratu nork berritzen duen partekatutako erregistro bakoitza, eta gogorarazi ukitu batekin';
 
   @override
   String get familyBenefitOneSubscription => 'Harpidetza bakarra etxe osoarentzat';
@@ -3209,6 +3217,12 @@ class AppLocalizationsEu extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Langileen eta ibilgailuen erregistroak toki batean';
 
   @override
+  String get businessBenefitBulk => 'Eskatu langileei eguneratzeak batera, eta jakin dokumentu bat iraungitzen denean';
+
+  @override
+  String get businessBenefitRoles => 'Ezarri beharrezko dokumentuak rol bakoitzeko eta ikusi zer falta zaion bakoitzari';
+
+  @override
   String get businessBenefitPdf => 'Taldearen PDF esportazioa, zure enpresaren izenarekin';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsEu extends AppLocalizations {
   String get householdShareOff => 'Zuk bakarrik ikus dezakezu erregistro hau.';
 
   @override
+  String get householdRenewerLabel => 'Nork berritzen du';
+
+  @override
+  String get householdRenewerAnyone => 'Etxeko edonork';
+
+  @override
+  String get householdRenewerHint => 'Pertsona horrek bakarrik jasotzen ditu oroigarriak. Besteei abisua ematen zaie garaiz berritzen ez bada.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '${name}k berritzen du';
+  }
+
+  @override
+  String get householdYouRenew => 'Zuk berritzen duzu';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Gogorarazi ${name}ri berritzeko';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Oroigarria bidali zaio ${name}ri';
+  }
+
+  @override
+  String get householdRemindLimit => 'Gaur dagoeneko bidali duzu honi buruzko oroigarri bat.';
+
+  @override
+  String get householdRemindError => 'Ezin izan da oroigarria bidali. Saiatu berriro.';
+
+  @override
   String get householdSharedBadge => 'Partekatua';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Bidali eskaera';
+
+  @override
+  String get staffBulkTitle => 'Eskatu eguneratzeak';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return '30 egunean iraungitzen diren langileen dokumentuak: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Pertsona bakoitzak dokumentu berria igotzeko esteka duen mezu elektroniko bat jasotzen du.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Bidalitako eskaerak: $sent/$count';
+  }
+
+  @override
+  String get roleAction => 'Rola eta beharrezko dokumentuak';
+
+  @override
+  String get roleNameLabel => 'Rola';
+
+  @override
+  String get roleNameHint => 'Adibidez: Gidaria';
+
+  @override
+  String get roleRequiredTitle => 'Beharrezko dokumentuak';
+
+  @override
+  String get roleRequiredHint => 'Vaultarak erakusten du dokumentu hauetatik zein falta zaizkion pertsona honi.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Eguneratu rol hau duten beste guztiak ere ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Falta da: $names';
+  }
+
+  @override
+  String get roleComplete => 'Beharrezko dokumentu guztiak gehitu dira';
+
+  @override
+  String get roleSaved => 'Rola gorde da';
 
   @override
   String get requestUpdateSending => 'Eskaera bidaltzen';
@@ -8007,6 +8101,9 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tourHousehold3Body => 'Erregistro bakoitza norbaitena izan daiteke. Haren izena erregistroan eta oroigarrietan agertzen da.';
 
   @override
+  String get tourHouseholdRenewBody => 'Aukeratu nork berritzen duen partekatutako erregistro bat. Pertsona horrek bakarrik jasotzen ditu oroigarriak, eta edonork gogorarazi diezaioke ukitu batekin.';
+
+  @override
   String get tourImport1Title => 'Eskaneatu txartel bat';
 
   @override
@@ -8047,6 +8144,9 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Gehitu langileak eta gorde haien ziurtagiriak, baimenak eta lizentziak leku bakarrean.';
+
+  @override
+  String get tourBusinessRolesBody => 'Eman pertsona bakoitzari rol bat, Gidaria adibidez, behar dituen dokumentuekin. Vaultarak erakusten du zer falta den.';
 
   @override
   String get tourBusiness2Title => 'Posta bidezko oroigarriak';

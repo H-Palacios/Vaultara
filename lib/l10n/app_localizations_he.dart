@@ -1514,6 +1514,11 @@ class AppLocalizationsHe extends AppLocalizations {
   String get familyRemove => 'הסרה';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'אזרח/ית $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'להסיר את $name?';
   }
@@ -1585,6 +1590,9 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'לכל אדם יש רשומות ותזכורות משלו';
+
+  @override
+  String get familyBenefitRenewer => 'בחרו מי מחדש כל רשומה משותפת, והזכירו לו בהקשה אחת';
 
   @override
   String get familyBenefitOneSubscription => 'מינוי אחד לכל משק הבית';
@@ -3245,6 +3253,12 @@ class AppLocalizationsHe extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'רשומות של עובדים וכלי רכב במקום אחד';
 
   @override
+  String get businessBenefitBulk => 'בקשו עדכונים מהעובדים בבת אחת, וקבלו הודעה כשתוקף מסמך פג';
+
+  @override
+  String get businessBenefitRoles => 'הגדירו מסמכים נדרשים לכל תפקיד וראו מה חסר לכל אחד';
+
+  @override
   String get businessBenefitPdf => 'ייצוא PDF לצוות עם שם החברה שלך';
 
   @override
@@ -4446,6 +4460,39 @@ class AppLocalizationsHe extends AppLocalizations {
   String get householdShareOff => 'רק אתה יכול לראות את הרשומה הזו.';
 
   @override
+  String get householdRenewerLabel => 'מי מחדש';
+
+  @override
+  String get householdRenewerAnyone => 'כל אחד במשק הבית';
+
+  @override
+  String get householdRenewerHint => 'רק הוא מקבל את התזכורות. האחרים מקבלים הודעה אם זה לא חודש בזמן.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name מחדש';
+  }
+
+  @override
+  String get householdYouRenew => 'אתם מחדשים';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'להזכיר ל$name לחדש';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'התזכורת נשלחה ל$name';
+  }
+
+  @override
+  String get householdRemindLimit => 'כבר שלחתם היום תזכורת על זה.';
+
+  @override
+  String get householdRemindError => 'לא ניתן היה לשלוח את התזכורת. נסו שוב.';
+
+  @override
   String get householdSharedBadge => 'משותף';
 
   @override
@@ -4991,6 +5038,53 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'שלח בקשה';
+
+  @override
+  String get staffBulkTitle => 'בקשת עדכונים';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'מסמכי עובדים שתוקפם פג תוך 30 יום: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'כל אחד מקבל אימייל עם קישור להעלאת המסמך החדש.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'בקשות שנשלחו: $sent מתוך $count';
+  }
+
+  @override
+  String get roleAction => 'תפקיד ומסמכים נדרשים';
+
+  @override
+  String get roleNameLabel => 'תפקיד';
+
+  @override
+  String get roleNameHint => 'לדוגמה: נהג';
+
+  @override
+  String get roleRequiredTitle => 'מסמכים נדרשים';
+
+  @override
+  String get roleRequiredHint => 'Vaultara מראה אילו מהמסמכים האלה חסרים לאדם הזה.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'לעדכן גם את כל השאר בתפקיד הזה ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'חסר: $names';
+  }
+
+  @override
+  String get roleComplete => 'כל המסמכים הנדרשים נוספו';
+
+  @override
+  String get roleSaved => 'התפקיד נשמר';
 
   @override
   String get requestUpdateSending => 'שולח את הבקשה';
@@ -8056,6 +8150,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tourHousehold3Body => 'כל רשומה יכולה להיות שייכת למישהו. השם מופיע עליה ובתזכורות.';
 
   @override
+  String get tourHouseholdRenewBody => 'בחרו מי מחדש רשומה משותפת. רק הוא מקבל את התזכורות, וכל אחד יכול להזכיר לו בהקשה אחת.';
+
+  @override
   String get tourImport1Title => 'סרקו כרטיס';
 
   @override
@@ -8096,6 +8193,9 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'הוסיפו עובדים ושמרו את התעודות, ההיתרים והרישיונות שלהם במקום אחד.';
+
+  @override
+  String get tourBusinessRolesBody => 'תנו לכל אחד תפקיד, למשל נהג, עם המסמכים שהוא דורש. Vaultara מראה מה חסר.';
 
   @override
   String get tourBusiness2Title => 'תזכורות במייל';

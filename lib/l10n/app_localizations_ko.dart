@@ -1506,6 +1506,11 @@ class AppLocalizationsKo extends AppLocalizations {
   String get familyRemove => '제거';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country 국적';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$name 님을 제거할까요?';
   }
@@ -1573,6 +1578,9 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => '사람마다 각자의 기록과 알림';
+
+  @override
+  String get familyBenefitRenewer => '공유 기록마다 갱신 담당자를 정하고 한 번에 알림을 보내세요';
 
   @override
   String get familyBenefitOneSubscription => '가족 모두를 위한 하나의 구독';
@@ -3193,6 +3201,12 @@ class AppLocalizationsKo extends AppLocalizations {
   String get businessBenefitStaffVehicles => '직원 및 차량 기록을 한곳에서';
 
   @override
+  String get businessBenefitBulk => '직원에게 업데이트를 한꺼번에 요청하고 서류가 만료되면 알림을 받아요';
+
+  @override
+  String get businessBenefitRoles => '직무별 필수 서류를 정하고 각자 무엇이 빠졌는지 확인하세요';
+
+  @override
   String get businessBenefitPdf => '회사 이름이 들어간 팀 PDF 내보내기';
 
   @override
@@ -4376,6 +4390,39 @@ class AppLocalizationsKo extends AppLocalizations {
   String get householdShareOff => '나만 이 기록을 볼 수 있습니다.';
 
   @override
+  String get householdRenewerLabel => '갱신 담당';
+
+  @override
+  String get householdRenewerAnyone => '가구원 누구나';
+
+  @override
+  String get householdRenewerHint => '이 사람만 알림을 받아요. 제때 갱신되지 않으면 다른 사람들에게 알려요.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name 님이 갱신';
+  }
+
+  @override
+  String get householdYouRenew => '내가 갱신';
+
+  @override
+  String householdRemindAction(String name) {
+    return '$name 님에게 갱신 알림 보내기';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return '$name 님에게 알림을 보냈어요';
+  }
+
+  @override
+  String get householdRemindLimit => '오늘 이미 이 기록에 대한 알림을 보냈어요.';
+
+  @override
+  String get householdRemindError => '알림을 보내지 못했어요. 다시 시도하세요.';
+
+  @override
   String get householdSharedBadge => '공유됨';
 
   @override
@@ -4921,6 +4968,53 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get requestUpdateSend => '요청 보내기';
+
+  @override
+  String get staffBulkTitle => '업데이트 요청';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return '30일 안에 만료되는 직원 서류: $count';
+  }
+
+  @override
+  String get staffBulkBody => '각자에게 새 서류를 올릴 수 있는 링크가 담긴 이메일이 가요.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return '보낸 요청: $count건 중 $sent건';
+  }
+
+  @override
+  String get roleAction => '직무와 필수 서류';
+
+  @override
+  String get roleNameLabel => '직무';
+
+  @override
+  String get roleNameHint => '예: 운전기사';
+
+  @override
+  String get roleRequiredTitle => '필수 서류';
+
+  @override
+  String get roleRequiredHint => '이 사람에게 어떤 서류가 빠졌는지 Vaultara가 보여 줘요.';
+
+  @override
+  String roleApplySame(int count) {
+    return '같은 직무의 다른 사람도 모두 업데이트($count명)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return '누락: $names';
+  }
+
+  @override
+  String get roleComplete => '필수 서류가 모두 있어요';
+
+  @override
+  String get roleSaved => '직무를 저장했어요';
 
   @override
   String get requestUpdateSending => '요청을 보내는 중';
@@ -7946,6 +8040,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tourHousehold3Body => '기록마다 주인을 정할 수 있고, 이름이 기록과 알림에 표시돼요.';
 
   @override
+  String get tourHouseholdRenewBody => '공유 기록의 갱신 담당자를 정하세요. 그 사람만 알림을 받고, 누구나 한 번 탭해서 알릴 수 있어요.';
+
+  @override
   String get tourImport1Title => '카드 스캔';
 
   @override
@@ -7986,6 +8083,9 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => '직원을 추가하고 자격증, 허가증, 면허를 한곳에서 관리하세요.';
+
+  @override
+  String get tourBusinessRolesBody => '각자에게 운전기사 같은 직무와 필요한 서류를 정하세요. 빠진 것을 Vaultara가 보여 줘요.';
 
   @override
   String get tourBusiness2Title => '이메일 알림';

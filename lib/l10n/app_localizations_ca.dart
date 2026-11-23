@@ -1507,6 +1507,11 @@ class AppLocalizationsCa extends AppLocalizations {
   String get familyRemove => 'Elimina';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Ciutadà de $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Vols eliminar $name?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Cada persona té els seus propis registres i recordatoris';
+
+  @override
+  String get familyBenefitRenewer => 'Tria qui renova cada registre compartit i recorda-li-ho amb un toc';
 
   @override
   String get familyBenefitOneSubscription => 'Una sola subscripció per a tota la llar';
@@ -3209,6 +3217,12 @@ class AppLocalizationsCa extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Registres de personal i vehicles en un sol lloc';
 
   @override
+  String get businessBenefitBulk => 'Demana actualitzacions al personal de cop i rep un avís quan caduqui un document';
+
+  @override
+  String get businessBenefitRoles => 'Defineix els documents necessaris per rol i mira què li falta a cadascú';
+
+  @override
   String get businessBenefitPdf => 'Exportació de PDF d\'equip amb el nom de la teva empresa';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsCa extends AppLocalizations {
   String get householdShareOff => 'Només tu pots veure aquest registre.';
 
   @override
+  String get householdRenewerLabel => 'Qui el renova';
+
+  @override
+  String get householdRenewerAnyone => 'Qualsevol persona de la llar';
+
+  @override
+  String get householdRenewerHint => 'Només aquesta persona en rep els recordatoris. Els altres reben un avís si no es renova a temps.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return 'El renova $name';
+  }
+
+  @override
+  String get householdYouRenew => 'El renoves tu';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Recorda a $name que el renovi';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Recordatori enviat a $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Avui ja has enviat un recordatori sobre això.';
+
+  @override
+  String get householdRemindError => 'No s\'ha pogut enviar el recordatori. Torna-ho a provar.';
+
+  @override
   String get householdSharedBadge => 'Compartit';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Envia la sol·licitud';
+
+  @override
+  String get staffBulkTitle => 'Demana actualitzacions';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Documents del personal que caduquen en 30 dies: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Cada persona rep un correu amb un enllaç per pujar el document nou.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Sol·licituds enviades: $sent de $count';
+  }
+
+  @override
+  String get roleAction => 'Rol i documents necessaris';
+
+  @override
+  String get roleNameLabel => 'Rol';
+
+  @override
+  String get roleNameHint => 'Per exemple: Conductor';
+
+  @override
+  String get roleRequiredTitle => 'Documents necessaris';
+
+  @override
+  String get roleRequiredHint => 'Vaultara mostra quins d\'aquests documents li falten a aquesta persona.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Actualitza també la resta amb aquest rol ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Falta: $names';
+  }
+
+  @override
+  String get roleComplete => 'S\'han afegit tots els documents necessaris';
+
+  @override
+  String get roleSaved => 'Rol desat';
 
   @override
   String get requestUpdateSending => 'Enviant la sol·licitud';
@@ -8007,6 +8101,9 @@ class AppLocalizationsCa extends AppLocalizations {
   String get tourHousehold3Body => 'Cada registre pot ser d\'algú. El seu nom hi apareix i als recordatoris.';
 
   @override
+  String get tourHouseholdRenewBody => 'Tria qui renova un registre compartit. Només aquesta persona en rep els recordatoris i qualsevol pot recordar-li-ho amb un toc.';
+
+  @override
   String get tourImport1Title => 'Escaneja una targeta';
 
   @override
@@ -8047,6 +8144,9 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Afegeix el personal i guarda certificats, permisos i llicències en un sol lloc.';
+
+  @override
+  String get tourBusinessRolesBody => 'Dona a cada persona un rol, com ara Conductor, amb els documents que necessita. Vaultara mostra què falta.';
 
   @override
   String get tourBusiness2Title => 'Recordatoris per correu';

@@ -1516,6 +1516,11 @@ class AppLocalizationsGa extends AppLocalizations {
   String get familyRemove => 'Bain';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Saoránach de $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Bain $name?';
   }
@@ -1589,6 +1594,9 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'A thaifid agus a mheabhrúcháin féin ag gach duine';
+
+  @override
+  String get familyBenefitRenewer => 'Roghnaigh cé a athnuann gach taifead roinnte, agus meabhraigh dóibh le tapáil amháin';
 
   @override
   String get familyBenefitOneSubscription => 'Síntiús amháin don teaghlach ar fad';
@@ -3293,6 +3301,12 @@ class AppLocalizationsGa extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Taifid foirne agus feithiclí in aon áit amháin';
 
   @override
+  String get businessBenefitBulk => 'Iarr nuashonruithe ar an bhfoireann le chéile, agus faigh fógra nuair a théann doiciméad in éag';
+
+  @override
+  String get businessBenefitRoles => 'Socraigh doiciméid riachtanacha in aghaidh an róil agus féach cad atá in easnamh ar gach duine';
+
+  @override
   String get businessBenefitPdf => 'Easpórtáil PDF foirne le hainm do chomhlachta';
 
   @override
@@ -4540,6 +4554,39 @@ class AppLocalizationsGa extends AppLocalizations {
   String get householdShareOff => 'Ní fheiceann ach tusa an taifead seo.';
 
   @override
+  String get householdRenewerLabel => 'Cé a athnuann é';
+
+  @override
+  String get householdRenewerAnyone => 'Duine ar bith sa teaghlach';
+
+  @override
+  String get householdRenewerHint => 'Ní fhaigheann ach an duine sin na meabhrúcháin. Cuirtear na daoine eile ar an eolas mura n-athnuaitear in am é.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return 'Athnuann $name é';
+  }
+
+  @override
+  String get householdYouRenew => 'Athnuann tusa é';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Meabhraigh do $name é a athnuachan';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Seoladh meabhrúchán chuig $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Sheol tú meabhrúchán faoi seo inniu cheana.';
+
+  @override
+  String get householdRemindError => 'Níorbh fhéidir an meabhrúchán a sheoladh. Bain triail eile as.';
+
+  @override
   String get householdSharedBadge => 'Roinnte';
 
   @override
@@ -5085,6 +5132,53 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Seol an t-iarratas';
+
+  @override
+  String get staffBulkTitle => 'Iarr nuashonruithe';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Doiciméid foirne a rachaidh in éag laistigh de 30 lá: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Faigheann gach duine ríomhphost le nasc chun a dhoiciméad nua a uaslódáil.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Iarratais seolta: $sent as $count';
+  }
+
+  @override
+  String get roleAction => 'Ról agus doiciméid riachtanacha';
+
+  @override
+  String get roleNameLabel => 'Ról';
+
+  @override
+  String get roleNameHint => 'Mar shampla: Tiománaí';
+
+  @override
+  String get roleRequiredTitle => 'Doiciméid riachtanacha';
+
+  @override
+  String get roleRequiredHint => 'Taispeánann Vaultara cé acu de na doiciméid seo atá in easnamh ar an duine seo.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Nuashonraigh gach duine eile leis an ról seo freisin ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'In easnamh: $names';
+  }
+
+  @override
+  String get roleComplete => 'Cuireadh gach doiciméad riachtanach leis';
+
+  @override
+  String get roleSaved => 'Sábháladh an ról';
 
   @override
   String get requestUpdateSending => 'An t-iarratas á sheoladh';
@@ -8187,6 +8281,9 @@ class AppLocalizationsGa extends AppLocalizations {
   String get tourHousehold3Body => 'Is féidir le gach taifead a bheith ag duine. Taispeántar a ainm air agus ina mheabhrúcháin.';
 
   @override
+  String get tourHouseholdRenewBody => 'Roghnaigh cé a athnuann taifead roinnte. Ní fhaigheann ach an duine sin na meabhrúcháin, agus is féidir le duine ar bith meabhrú dóibh le tapáil amháin.';
+
+  @override
   String get tourImport1Title => 'Scanáil cárta';
 
   @override
@@ -8227,6 +8324,9 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Cuir baill foirne leis agus coinnigh a dteastais, a gceadanna agus a gceadúnais in aon áit amháin.';
+
+  @override
+  String get tourBusinessRolesBody => 'Tabhair ról do gach duine, mar Tiománaí, leis na doiciméid a theastaíonn uaidh. Taispeánann Vaultara a bhfuil in easnamh.';
 
   @override
   String get tourBusiness2Title => 'Meabhrúcháin ríomhphoist';

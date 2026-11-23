@@ -1507,6 +1507,11 @@ class AppLocalizationsAm extends AppLocalizations {
   String get familyRemove => 'አስወግድ';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'የ$country ዜጋ';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$name ይወገድ?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'እያንዳንዱ ሰው የራሱ መዝገቦች እና አስታዋሾች አሉት';
+
+  @override
+  String get familyBenefitRenewer => 'እያንዳንዱን የተጋራ መዝገብ ማን እንደሚያድሰው ይምረጡ፣ በአንድ ንክኪም ያስታውሷቸው';
 
   @override
   String get familyBenefitOneSubscription => 'ለመላው ቤተሰብ አንድ ምዝገባ';
@@ -3209,6 +3217,12 @@ class AppLocalizationsAm extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'የሠራተኞች እና የተሽከርካሪ መዝገቦች በአንድ ቦታ';
 
   @override
+  String get businessBenefitBulk => 'የሠራተኞችን ዝማኔዎች በጅምላ ይጠይቁ፣ ሰነድ ሲያበቃም ይነገርዎታል';
+
+  @override
+  String get businessBenefitRoles => 'በሚና የሚያስፈልጉ ሰነዶችን ያዘጋጁ እና እያንዳንዱ ሰው የጎደለውን ይመልከቱ';
+
+  @override
   String get businessBenefitPdf => 'የቡድን PDF ወደ ውጭ መላክ ከኩባንያዎ ስም ጋር';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsAm extends AppLocalizations {
   String get householdShareOff => 'ይህን መዝገብ ማየት የሚችሉት እርስዎ ብቻ ነዎት።';
 
   @override
+  String get householdRenewerLabel => 'ማን ያድሰዋል';
+
+  @override
+  String get householdRenewerAnyone => 'በቤተሰቡ ውስጥ ያለ ማንኛውም ሰው';
+
+  @override
+  String get householdRenewerHint => 'ማስታወሻዎቹን የሚያገኙት እነሱ ብቻ ናቸው። በጊዜው ካልታደሰ ሌሎቹ ይነገራቸዋል።';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name ያድሰዋል';
+  }
+
+  @override
+  String get householdYouRenew => 'እርስዎ ያድሱታል';
+
+  @override
+  String householdRemindAction(String name) {
+    return '$nameን እንዲያድሱት አስታውስ';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'ማስታወሻ ለ$name ተልኳል';
+  }
+
+  @override
+  String get householdRemindLimit => 'ስለዚህ ዛሬ አስቀድመው ማስታወሻ ልከዋል።';
+
+  @override
+  String get householdRemindError => 'ማስታወሻው መላክ አልተቻለም። እንደገና ይሞክሩ።';
+
+  @override
   String get householdSharedBadge => 'ተጋርቷል';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'ጥያቄ ላክ';
+
+  @override
+  String get staffBulkTitle => 'ዝማኔዎችን ጠይቅ';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'በ30 ቀናት ውስጥ የሚያበቁ የሠራተኞች ሰነዶች፦ $count';
+  }
+
+  @override
+  String get staffBulkBody => 'እያንዳንዱ ሰው አዲሱን ሰነድ ለመስቀል ሊንክ ያለው ኢሜይል ይደርሰዋል።';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'የተላኩ ጥያቄዎች፦ $sent ከ$count';
+  }
+
+  @override
+  String get roleAction => 'ሚና እና የሚያስፈልጉ ሰነዶች';
+
+  @override
+  String get roleNameLabel => 'ሚና';
+
+  @override
+  String get roleNameHint => 'ለምሳሌ፦ ሹፌር';
+
+  @override
+  String get roleRequiredTitle => 'የሚያስፈልጉ ሰነዶች';
+
+  @override
+  String get roleRequiredHint => 'Vaultara ይህ ሰው ከእነዚህ ሰነዶች የትኞቹ እንደጎደሉት ያሳያል።';
+
+  @override
+  String roleApplySame(int count) {
+    return 'ይህ ሚና ያላቸውን ሌሎችም አዘምን ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'የጎደሉ፦ $names';
+  }
+
+  @override
+  String get roleComplete => 'ሁሉም የሚያስፈልጉ ሰነዶች ታክለዋል';
+
+  @override
+  String get roleSaved => 'ሚናው ተቀምጧል';
 
   @override
   String get requestUpdateSending => 'ጥያቄውን በመላክ ላይ';
@@ -8003,6 +8097,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get tourHousehold3Body => 'እያንዳንዱ መዝገብ የአንድ ሰው ሊሆን ይችላል። ስማቸው በመዝገቡ እና በአስታዋሾቹ ላይ ይታያል።';
 
   @override
+  String get tourHouseholdRenewBody => 'የተጋራ መዝገብን ማን እንደሚያድሰው ይምረጡ። ማስታወሻዎቹን የሚያገኙት እነሱ ብቻ ናቸው፣ ማንም ሰው በአንድ ንክኪ ሊያስታውሳቸው ይችላል።';
+
+  @override
   String get tourImport1Title => 'ካርድ ይቃኙ';
 
   @override
@@ -8043,6 +8140,9 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'ሠራተኞችን ያክሉ እና ሰርተፊኬቶቻቸውን፣ ፈቃዶቻቸውን እና ፍቃዶቻቸውን በአንድ ቦታ ያስቀምጡ።';
+
+  @override
+  String get tourBusinessRolesBody => 'ለእያንዳንዱ ሰው እንደ ሹፌር ያለ ሚና ከሚያስፈልጉት ሰነዶች ጋር ይስጡ። Vaultara የጎደለውን ያሳያል።';
 
   @override
   String get tourBusiness2Title => 'የኢሜይል አስታዋሾች';

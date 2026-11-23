@@ -1507,6 +1507,11 @@ class AppLocalizationsFi extends AppLocalizations {
   String get familyRemove => 'Poista';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Kansalaisuus: $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Poistetaanko $name?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Jokaisella on omat tietueet ja muistutukset';
+
+  @override
+  String get familyBenefitRenewer => 'Valitse, kuka uusii kunkin jaetun tietueen, ja muistuta yhdellä napautuksella';
 
   @override
   String get familyBenefitOneSubscription => 'Yksi tilaus koko taloudelle';
@@ -3209,6 +3217,12 @@ class AppLocalizationsFi extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Henkilöstön ja ajoneuvojen tietueet samassa paikassa';
 
   @override
+  String get businessBenefitBulk => 'Pyydä henkilöstöltä päivitykset kerralla ja saat tiedon, kun asiakirja vanhenee';
+
+  @override
+  String get businessBenefitRoles => 'Määritä vaaditut asiakirjat rooleittain ja näe, mitä keneltäkin puuttuu';
+
+  @override
   String get businessBenefitPdf => 'Tiimin PDF-vienti yrityksesi nimellä';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsFi extends AppLocalizations {
   String get householdShareOff => 'Vain sinä näet tämän tietueen.';
 
   @override
+  String get householdRenewerLabel => 'Kuka uusii';
+
+  @override
+  String get householdRenewerAnyone => 'Kuka tahansa kotitaloudesta';
+
+  @override
+  String get householdRenewerHint => 'Vain hän saa muistutukset. Muille kerrotaan, jos sitä ei uusita ajoissa.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return 'Uusii: $name';
+  }
+
+  @override
+  String get householdYouRenew => 'Sinä uusit';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Muistuta henkilöä $name uusimaan se';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Muistutus lähetetty: $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Lähetit tästä jo muistutuksen tänään.';
+
+  @override
+  String get householdRemindError => 'Muistutusta ei voitu lähettää. Yritä uudelleen.';
+
+  @override
   String get householdSharedBadge => 'Jaettu';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Lähetä pyyntö';
+
+  @override
+  String get staffBulkTitle => 'Pyydä päivityksiä';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Henkilöstön asiakirjat, jotka vanhenevat 30 päivän sisällä: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Jokainen saa sähköpostin, jossa on linkki uuden asiakirjan lataamiseen.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Pyyntöjä lähetetty: $sent/$count';
+  }
+
+  @override
+  String get roleAction => 'Rooli ja vaaditut asiakirjat';
+
+  @override
+  String get roleNameLabel => 'Rooli';
+
+  @override
+  String get roleNameHint => 'Esimerkiksi: Kuljettaja';
+
+  @override
+  String get roleRequiredTitle => 'Vaaditut asiakirjat';
+
+  @override
+  String get roleRequiredHint => 'Vaultara näyttää, mitkä näistä asiakirjoista tältä henkilöltä puuttuvat.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Päivitä myös kaikki muut, joilla on tämä rooli ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Puuttuu: $names';
+  }
+
+  @override
+  String get roleComplete => 'Kaikki vaaditut asiakirjat on lisätty';
+
+  @override
+  String get roleSaved => 'Rooli tallennettu';
 
   @override
   String get requestUpdateSending => 'Lähetetään pyyntöä';
@@ -8007,6 +8101,9 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tourHousehold3Body => 'Jokainen tietue voi kuulua jollekulle. Hänen nimensä näkyy tietueessa ja muistutuksissa.';
 
   @override
+  String get tourHouseholdRenewBody => 'Valitse, kuka uusii jaetun tietueen. Vain hän saa muistutukset, ja kuka tahansa voi muistuttaa häntä yhdellä napautuksella.';
+
+  @override
   String get tourImport1Title => 'Skannaa kortti';
 
   @override
@@ -8047,6 +8144,9 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Lisää henkilöstö ja säilytä heidän todistuksensa, lupansa ja lisenssinsä yhdessä paikassa.';
+
+  @override
+  String get tourBusinessRolesBody => 'Anna jokaiselle rooli, kuten Kuljettaja, ja sen vaatimat asiakirjat. Vaultara näyttää, mitä puuttuu.';
 
   @override
   String get tourBusiness2Title => 'Muistutukset sähköpostilla';

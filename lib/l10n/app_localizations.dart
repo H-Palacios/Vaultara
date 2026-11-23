@@ -2827,6 +2827,12 @@ abstract class AppLocalizations {
   /// **'Remove'**
   String get familyRemove;
 
+  /// Under a person: their nationality. {country} is a flag and a country name.
+  ///
+  /// In en, this message translates to:
+  /// **'Citizen of {country}'**
+  String familyCitizenOf(String country);
+
   /// Title of the dialog confirming a person is removed
   ///
   /// In en, this message translates to:
@@ -2916,6 +2922,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Each person has their own records and reminders'**
   String get familyBenefitOwnRecords;
+
+  /// Family plan benefit on the Plans screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose who renews each shared record, and remind them in one tap'**
+  String get familyBenefitRenewer;
 
   /// Family plan benefit, on the upsell card and the plans screen
   ///
@@ -5617,6 +5629,18 @@ abstract class AppLocalizations {
   /// **'Staff and vehicle records in one place'**
   String get businessBenefitStaffVehicles;
 
+  /// Business plan benefit on the Plans screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Request staff updates in bulk, and get told when a document expires'**
+  String get businessBenefitBulk;
+
+  /// Business plan benefit on the Plans screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Set required documents per role and see what each person is missing'**
+  String get businessBenefitRoles;
+
   /// Business plan benefit
   ///
   /// In en, this message translates to:
@@ -7591,6 +7615,60 @@ abstract class AppLocalizations {
   /// **'Only you can see this record.'**
   String get householdShareOff;
 
+  /// Label of the field on a shared record that picks the household member who renews it.
+  ///
+  /// In en, this message translates to:
+  /// **'Who renews it'**
+  String get householdRenewerLabel;
+
+  /// Choice in Who renews it: nobody in particular.
+  ///
+  /// In en, this message translates to:
+  /// **'Anyone in the household'**
+  String get householdRenewerAnyone;
+
+  /// Note under Who renews it.
+  ///
+  /// In en, this message translates to:
+  /// **'Only they get its reminders. The others are told if it is not renewed in time.'**
+  String get householdRenewerHint;
+
+  /// Small chip on a shared record card. {name} is a first name.
+  ///
+  /// In en, this message translates to:
+  /// **'{name} renews'**
+  String householdRenewsBadge(String name);
+
+  /// Small chip on a shared record card the user renews.
+  ///
+  /// In en, this message translates to:
+  /// **'You renew this'**
+  String get householdYouRenew;
+
+  /// Action that sends a household member a push. {name} is a first name.
+  ///
+  /// In en, this message translates to:
+  /// **'Remind {name} to renew it'**
+  String householdRemindAction(String name);
+
+  /// Shown after the reminder push was sent.
+  ///
+  /// In en, this message translates to:
+  /// **'Reminder sent to {name}'**
+  String householdReminded(String name);
+
+  /// Shown when a reminder about this record was already sent today.
+  ///
+  /// In en, this message translates to:
+  /// **'You already sent a reminder about this today.'**
+  String get householdRemindLimit;
+
+  /// Shown when the reminder push could not be sent.
+  ///
+  /// In en, this message translates to:
+  /// **'The reminder could not be sent. Try again.'**
+  String get householdRemindError;
+
   /// Small badge on shared records
   ///
   /// In en, this message translates to:
@@ -8616,6 +8694,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Send request'**
   String get requestUpdateSend;
+
+  /// Business plan tile that sends update requests to several staff at once.
+  ///
+  /// In en, this message translates to:
+  /// **'Request updates'**
+  String get staffBulkTitle;
+
+  /// Under Request updates. {count} is a number.
+  ///
+  /// In en, this message translates to:
+  /// **'Staff documents due within 30 days: {count}'**
+  String staffBulkSubtitle(int count);
+
+  /// Confirmation text before sending update requests to several staff.
+  ///
+  /// In en, this message translates to:
+  /// **'Each person gets an email with a link to upload their new document.'**
+  String get staffBulkBody;
+
+  /// Shown after sending. {sent} and {count} are numbers.
+  ///
+  /// In en, this message translates to:
+  /// **'Requests sent: {sent} of {count}'**
+  String staffBulkDone(int sent, int count);
+
+  /// Menu item and sheet title for a staff role and the documents it needs.
+  ///
+  /// In en, this message translates to:
+  /// **'Role and required documents'**
+  String get roleAction;
+
+  /// Field label: the role, such as Driver.
+  ///
+  /// In en, this message translates to:
+  /// **'Role'**
+  String get roleNameLabel;
+
+  /// Field hint with an example role.
+  ///
+  /// In en, this message translates to:
+  /// **'For example: Driver'**
+  String get roleNameHint;
+
+  /// Heading above the list of document types.
+  ///
+  /// In en, this message translates to:
+  /// **'Required documents'**
+  String get roleRequiredTitle;
+
+  /// Note under Required documents.
+  ///
+  /// In en, this message translates to:
+  /// **'Vaultara shows which of these documents this person is missing.'**
+  String get roleRequiredHint;
+
+  /// Checkbox. {count} is how many other people have the same role.
+  ///
+  /// In en, this message translates to:
+  /// **'Also update everyone else with this role ({count})'**
+  String roleApplySame(int count);
+
+  /// Under a person. {names} is a list of document types.
+  ///
+  /// In en, this message translates to:
+  /// **'Missing: {names}'**
+  String roleMissing(String names);
+
+  /// Under a person who has every required document.
+  ///
+  /// In en, this message translates to:
+  /// **'All required documents added'**
+  String get roleComplete;
+
+  /// Shown after saving a role.
+  ///
+  /// In en, this message translates to:
+  /// **'Role saved'**
+  String get roleSaved;
 
   ///
   ///
@@ -13825,6 +13981,12 @@ abstract class AppLocalizations {
   /// **'Each record can belong to someone. Their name shows on it and in its reminders.'**
   String get tourHousehold3Body;
 
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose who renews a shared record. Only they get its reminders, and anyone can remind them in one tap.'**
+  String get tourHouseholdRenewBody;
+
   /// Title of a tutorial step. Short.
   ///
   /// In en, this message translates to:
@@ -13908,6 +14070,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Add staff and keep their certificates, permits and licences in one place.'**
   String get tourBusiness1Body;
+
+  /// Text of a tutorial step.
+  ///
+  /// In en, this message translates to:
+  /// **'Give each person a role, like Driver, with the documents it needs. Vaultara shows what is missing.'**
+  String get tourBusinessRolesBody;
 
   /// Title of a tutorial step. Short.
   ///

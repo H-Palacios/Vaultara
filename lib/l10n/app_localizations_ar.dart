@@ -1520,6 +1520,11 @@ class AppLocalizationsAr extends AppLocalizations {
   String get familyRemove => 'إزالة';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'مواطن من $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'إزالة $name؟';
   }
@@ -1595,6 +1600,9 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'لكل شخص سجلاته وتذكيراته الخاصة';
+
+  @override
+  String get familyBenefitRenewer => 'اختر من يجدد كل سجل مشترك، وذكّره بنقرة واحدة';
 
   @override
   String get familyBenefitOneSubscription => 'اشتراك واحد للأسرة كلها';
@@ -3313,6 +3321,12 @@ class AppLocalizationsAr extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'سجلات الموظفين والمركبات في مكان واحد';
 
   @override
+  String get businessBenefitBulk => 'اطلب تحديثات الموظفين دفعة واحدة، واعرف عند انتهاء أي مستند';
+
+  @override
+  String get businessBenefitRoles => 'حدد المستندات المطلوبة لكل دور واعرف ما ينقص كل شخص';
+
+  @override
   String get businessBenefitPdf => 'تصدير PDF للفريق باسم شركتك';
 
   @override
@@ -4543,6 +4557,39 @@ class AppLocalizationsAr extends AppLocalizations {
   String get householdShareOff => 'أنت وحدك ترى هذا السجل.';
 
   @override
+  String get householdRenewerLabel => 'من يجدده';
+
+  @override
+  String get householdRenewerAnyone => 'أي شخص في المنزل';
+
+  @override
+  String get householdRenewerHint => 'هو وحده يتلقى تذكيراته. ويُبلَّغ الآخرون إذا لم يُجدَّد في الوقت المحدد.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name يجدده';
+  }
+
+  @override
+  String get householdYouRenew => 'أنت تجدده';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'ذكّر $name بتجديده';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'تم إرسال التذكير إلى $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'لقد أرسلت تذكيرًا بهذا اليوم بالفعل.';
+
+  @override
+  String get householdRemindError => 'تعذر إرسال التذكير. حاول مرة أخرى.';
+
+  @override
   String get householdSharedBadge => 'مشترك';
 
   @override
@@ -5088,6 +5135,53 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'إرسال الطلب';
+
+  @override
+  String get staffBulkTitle => 'طلب التحديثات';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'مستندات الموظفين المستحقة خلال 30 يومًا: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'يتلقى كل شخص بريدًا إلكترونيًا فيه رابط لرفع مستنده الجديد.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'الطلبات المرسلة: $sent من $count';
+  }
+
+  @override
+  String get roleAction => 'الدور والمستندات المطلوبة';
+
+  @override
+  String get roleNameLabel => 'الدور';
+
+  @override
+  String get roleNameHint => 'مثال: سائق';
+
+  @override
+  String get roleRequiredTitle => 'المستندات المطلوبة';
+
+  @override
+  String get roleRequiredHint => 'يعرض Vaultara أيًّا من هذه المستندات ينقص هذا الشخص.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'حدّث أيضًا كل من لديه هذا الدور ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'ناقص: $names';
+  }
+
+  @override
+  String get roleComplete => 'تمت إضافة كل المستندات المطلوبة';
+
+  @override
+  String get roleSaved => 'تم حفظ الدور';
 
   @override
   String get requestUpdateSending => 'جارٍ إرسال الطلب';
@@ -8228,6 +8322,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tourHousehold3Body => 'يمكن أن يخص كل سجل شخصاً ما. يظهر اسمه عليه وفي تذكيراته.';
 
   @override
+  String get tourHouseholdRenewBody => 'اختر من يجدد السجل المشترك. هو وحده يتلقى تذكيراته، ويمكن لأي شخص تذكيره بنقرة واحدة.';
+
+  @override
   String get tourImport1Title => 'امسح بطاقة';
 
   @override
@@ -8268,6 +8365,9 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'أضف الموظفين واحتفظ بشهاداتهم وتصاريحهم ورخصهم في مكان واحد.';
+
+  @override
+  String get tourBusinessRolesBody => 'امنح كل شخص دورًا، مثل سائق، مع المستندات التي يحتاجها. ويعرض Vaultara ما هو ناقص.';
 
   @override
   String get tourBusiness2Title => 'تذكيرات بالبريد الإلكتروني';

@@ -1507,6 +1507,11 @@ class AppLocalizationsGu extends AppLocalizations {
   String get familyRemove => 'દૂર કરો';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$countryના નાગરિક';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$nameને દૂર કરીએ?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'દરેક વ્યક્તિના પોતાના રેકોર્ડ અને રિમાઇન્ડર';
+
+  @override
+  String get familyBenefitRenewer => 'દરેક શેર કરેલો રેકોર્ડ કોણ રિન્યૂ કરશે તે પસંદ કરો, અને એક ટૅપમાં યાદ અપાવો';
 
   @override
   String get familyBenefitOneSubscription => 'આખા ઘર માટે એક જ સબ્સ્ક્રિપ્શન';
@@ -3209,6 +3217,12 @@ class AppLocalizationsGu extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'સ્ટાફ અને વાહનોના રેકોર્ડ એક જ જગ્યાએ';
 
   @override
+  String get businessBenefitBulk => 'સ્ટાફ પાસેથી એકસાથે અપડેટ માંગો, અને દસ્તાવેજ સમાપ્ત થાય ત્યારે જાણો';
+
+  @override
+  String get businessBenefitRoles => 'ભૂમિકા દીઠ જરૂરી દસ્તાવેજો નક્કી કરો અને દરેક પાસે શું ખૂટે છે તે જુઓ';
+
+  @override
   String get businessBenefitPdf => 'તમારી કંપનીના નામ સાથે ટીમ PDF એક્સપોર્ટ';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsGu extends AppLocalizations {
   String get householdShareOff => 'આ રેકોર્ડ ફક્ત તમે જ જોઈ શકો છો.';
 
   @override
+  String get householdRenewerLabel => 'કોણ રિન્યૂ કરશે';
+
+  @override
+  String get householdRenewerAnyone => 'પરિવારમાંથી કોઈ પણ';
+
+  @override
+  String get householdRenewerHint => 'ફક્ત તેમને જ રિમાઇન્ડર મળશે. સમયસર રિન્યૂ ન થાય તો બાકીનાને જાણ કરવામાં આવશે.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name રિન્યૂ કરશે';
+  }
+
+  @override
+  String get householdYouRenew => 'તમે રિન્યૂ કરશો';
+
+  @override
+  String householdRemindAction(String name) {
+    return '$nameને રિન્યૂ કરવાનું યાદ અપાવો';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return '$nameને રિમાઇન્ડર મોકલાયું';
+  }
+
+  @override
+  String get householdRemindLimit => 'તમે આજે આ વિશે પહેલેથી રિમાઇન્ડર મોકલ્યું છે.';
+
+  @override
+  String get householdRemindError => 'રિમાઇન્ડર મોકલી શકાયું નથી. ફરી પ્રયાસ કરો.';
+
+  @override
   String get householdSharedBadge => 'શેર કરેલું';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'વિનંતી મોકલો';
+
+  @override
+  String get staffBulkTitle => 'અપડેટ માંગો';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return '30 દિવસમાં સમાપ્ત થતા સ્ટાફના દસ્તાવેજો: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'દરેક વ્યક્તિને નવો દસ્તાવેજ અપલોડ કરવાની લિંક સાથે ઈમેલ મળશે.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'મોકલેલી વિનંતીઓ: $countમાંથી $sent';
+  }
+
+  @override
+  String get roleAction => 'ભૂમિકા અને જરૂરી દસ્તાવેજો';
+
+  @override
+  String get roleNameLabel => 'ભૂમિકા';
+
+  @override
+  String get roleNameHint => 'ઉદાહરણ: ડ્રાઇવર';
+
+  @override
+  String get roleRequiredTitle => 'જરૂરી દસ્તાવેજો';
+
+  @override
+  String get roleRequiredHint => 'Vaultara બતાવે છે કે આ વ્યક્તિ પાસે આમાંથી કયા દસ્તાવેજો નથી.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'આ ભૂમિકાવાળા બાકીના બધાને પણ અપડેટ કરો ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'ખૂટે છે: $names';
+  }
+
+  @override
+  String get roleComplete => 'બધા જરૂરી દસ્તાવેજો ઉમેરાયા';
+
+  @override
+  String get roleSaved => 'ભૂમિકા સાચવી';
 
   @override
   String get requestUpdateSending => 'વિનંતી મોકલી રહ્યા છીએ';
@@ -8003,6 +8097,9 @@ class AppLocalizationsGu extends AppLocalizations {
   String get tourHousehold3Body => 'દરેક રેકોર્ડ કોઈનો હોઈ શકે છે. તેમનું નામ રેકોર્ડ અને રિમાઇન્ડરમાં દેખાય છે.';
 
   @override
+  String get tourHouseholdRenewBody => 'શેર કરેલો રેકોર્ડ કોણ રિન્યૂ કરશે તે પસંદ કરો. ફક્ત તેમને જ રિમાઇન્ડર મળશે, અને કોઈ પણ એક ટૅપમાં યાદ અપાવી શકે છે.';
+
+  @override
   String get tourImport1Title => 'કાર્ડ સ્કૅન કરો';
 
   @override
@@ -8043,6 +8140,9 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'સ્ટાફ ઉમેરો અને તેમનાં પ્રમાણપત્રો, પરમિટ અને લાઇસન્સ એક જગ્યાએ રાખો.';
+
+  @override
+  String get tourBusinessRolesBody => 'દરેક વ્યક્તિને ડ્રાઇવર જેવી ભૂમિકા, તેને જોઈતા દસ્તાવેજો સાથે આપો. શું ખૂટે છે તે Vaultara બતાવે છે.';
 
   @override
   String get tourBusiness2Title => 'ઇમેઇલ રિમાઇન્ડર';

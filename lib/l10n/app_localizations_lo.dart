@@ -1506,6 +1506,11 @@ class AppLocalizationsLo extends AppLocalizations {
   String get familyRemove => 'ລຶບອອກ';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'ພົນລະເມືອງ $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'ລຶບ $name ອອກບໍ?';
   }
@@ -1573,6 +1578,9 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'ແຕ່ລະຄົນມີບັນທຶກ ແລະ ການເຕືອນຂອງຕົນເອງ';
+
+  @override
+  String get familyBenefitRenewer => 'ເລືອກວ່າໃຜຕໍ່ອາຍຸບັນທຶກທີ່ແບ່ງປັນແຕ່ລະອັນ ແລະ ເຕືອນເຂົາດ້ວຍການແຕະດຽວ';
 
   @override
   String get familyBenefitOneSubscription => 'ການສະໝັກສະມາຊິກດຽວສຳລັບທັງຄອບຄົວ';
@@ -3193,6 +3201,12 @@ class AppLocalizationsLo extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'ບັນທຶກພະນັກງານ ແລະ ຍານພາຫະນະໃນບ່ອນດຽວ';
 
   @override
+  String get businessBenefitBulk => 'ຂໍການອັບເດດຈາກພະນັກງານພ້ອມກັນ ແລະ ຮັບແຈ້ງເມື່ອເອກະສານໝົດອາຍຸ';
+
+  @override
+  String get businessBenefitRoles => 'ກຳນົດເອກະສານທີ່ຕ້ອງການຕາມໜ້າທີ່ ແລະ ເບິ່ງວ່າແຕ່ລະຄົນຂາດຫຍັງ';
+
+  @override
   String get businessBenefitPdf => 'ສົ່ງອອກ PDF ຂອງທີມພ້ອມຊື່ບໍລິສັດຂອງທ່ານ';
 
   @override
@@ -4376,6 +4390,39 @@ class AppLocalizationsLo extends AppLocalizations {
   String get householdShareOff => 'ມີແຕ່ທ່ານເທົ່ານັ້ນທີ່ເຫັນບັນທຶກນີ້';
 
   @override
+  String get householdRenewerLabel => 'ໃຜເປັນຜູ້ຕໍ່ອາຍຸ';
+
+  @override
+  String get householdRenewerAnyone => 'ໃຜກໍໄດ້ໃນຄອບຄົວ';
+
+  @override
+  String get householdRenewerHint => 'ມີແຕ່ຜູ້ນັ້ນທີ່ໄດ້ຮັບການແຈ້ງເຕືອນ. ຄົນອື່ນຈະໄດ້ຮັບແຈ້ງຖ້າບໍ່ໄດ້ຕໍ່ອາຍຸທັນເວລາ.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name ຕໍ່ອາຍຸ';
+  }
+
+  @override
+  String get householdYouRenew => 'ທ່ານເປັນຜູ້ຕໍ່ອາຍຸ';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'ເຕືອນ $name ໃຫ້ຕໍ່ອາຍຸ';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'ສົ່ງການເຕືອນໃຫ້ $name ແລ້ວ';
+  }
+
+  @override
+  String get householdRemindLimit => 'ທ່ານໄດ້ສົ່ງການເຕືອນກ່ຽວກັບເລື່ອງນີ້ແລ້ວໃນມື້ນີ້.';
+
+  @override
+  String get householdRemindError => 'ບໍ່ສາມາດສົ່ງການເຕືອນໄດ້. ລອງໃໝ່.';
+
+  @override
   String get householdSharedBadge => 'ແບ່ງປັນແລ້ວ';
 
   @override
@@ -4921,6 +4968,53 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'ສົ່ງຄຳຂໍ';
+
+  @override
+  String get staffBulkTitle => 'ຂໍການອັບເດດ';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'ເອກະສານພະນັກງານທີ່ໝົດອາຍຸພາຍໃນ 30 ມື້: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'ແຕ່ລະຄົນຈະໄດ້ຮັບອີເມວທີ່ມີລິ້ງເພື່ອອັບໂຫຼດເອກະສານໃໝ່.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'ຄຳຂໍທີ່ສົ່ງແລ້ວ: $sent ຈາກ $count';
+  }
+
+  @override
+  String get roleAction => 'ໜ້າທີ່ ແລະ ເອກະສານທີ່ຕ້ອງການ';
+
+  @override
+  String get roleNameLabel => 'ໜ້າທີ່';
+
+  @override
+  String get roleNameHint => 'ຕົວຢ່າງ: ຄົນຂັບລົດ';
+
+  @override
+  String get roleRequiredTitle => 'ເອກະສານທີ່ຕ້ອງການ';
+
+  @override
+  String get roleRequiredHint => 'Vaultara ສະແດງວ່າເອກະສານໃດທີ່ຄົນນີ້ຍັງຂາດ.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'ອັບເດດທຸກຄົນທີ່ມີໜ້າທີ່ນີ້ນຳ ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'ຂາດ: $names';
+  }
+
+  @override
+  String get roleComplete => 'ເພີ່ມເອກະສານທີ່ຕ້ອງການຄົບແລ້ວ';
+
+  @override
+  String get roleSaved => 'ບັນທຶກໜ້າທີ່ແລ້ວ';
 
   @override
   String get requestUpdateSending => 'ກຳລັງສົ່ງຄຳຂໍ';
@@ -7946,6 +8040,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String get tourHousehold3Body => 'ແຕ່ລະລາຍການເປັນຂອງໃຜຜູ້ໜຶ່ງໄດ້. ຊື່ຈະສະແດງເທິງລາຍການ ແລະ ໃນການແຈ້ງເຕືອນ.';
 
   @override
+  String get tourHouseholdRenewBody => 'ເລືອກວ່າໃຜຕໍ່ອາຍຸບັນທຶກທີ່ແບ່ງປັນ. ມີແຕ່ຜູ້ນັ້ນທີ່ໄດ້ຮັບການແຈ້ງເຕືອນ ແລະ ໃຜກໍສາມາດເຕືອນເຂົາດ້ວຍການແຕະດຽວ.';
+
+  @override
   String get tourImport1Title => 'ສະແກນບັດ';
 
   @override
@@ -7986,6 +8083,9 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'ເພີ່ມພະນັກງານ ແລະ ເກັບໃບຢັ້ງຢືນ, ໃບອະນຸຍາດ ແລະ ໃບຂັບຂີ່ຂອງເຂົາເຈົ້າໄວ້ບ່ອນດຽວ.';
+
+  @override
+  String get tourBusinessRolesBody => 'ໃຫ້ແຕ່ລະຄົນມີໜ້າທີ່ ເຊັ່ນ ຄົນຂັບລົດ ພ້ອມເອກະສານທີ່ຕ້ອງການ. Vaultara ສະແດງສິ່ງທີ່ຂາດ.';
 
   @override
   String get tourBusiness2Title => 'ແຈ້ງເຕືອນທາງອີເມວ';

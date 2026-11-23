@@ -1507,6 +1507,11 @@ class AppLocalizationsHu extends AppLocalizations {
   String get familyRemove => 'Eltávolítás';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country állampolgár';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Eltávolítja: $name?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Mindenkinek saját bejegyzései és emlékeztetői vannak';
+
+  @override
+  String get familyBenefitRenewer => 'Válaszd ki, ki újítja meg az egyes megosztott bejegyzéseket, és emlékeztesd egy koppintással';
 
   @override
   String get familyBenefitOneSubscription => 'Egy előfizetés az egész háztartásnak';
@@ -3209,6 +3217,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Munkatársak és járművek bejegyzései egy helyen';
 
   @override
+  String get businessBenefitBulk => 'Kérj frissítéseket a munkatársaktól egyszerre, és kapj értesítést, ha egy dokumentum lejár';
+
+  @override
+  String get businessBenefitRoles => 'Állítsd be munkakörönként a kötelező dokumentumokat, és lásd, kinek mi hiányzik';
+
+  @override
   String get businessBenefitPdf => 'Csapatos PDF-exportálás a cége nevével';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsHu extends AppLocalizations {
   String get householdShareOff => 'Ezt a bejegyzést csak Ön láthatja.';
 
   @override
+  String get householdRenewerLabel => 'Ki újítja meg';
+
+  @override
+  String get householdRenewerAnyone => 'Bárki a háztartásból';
+
+  @override
+  String get householdRenewerHint => 'Csak ő kapja az emlékeztetőket. A többiek értesítést kapnak, ha nem újítják meg időben.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name újítja meg';
+  }
+
+  @override
+  String get householdYouRenew => 'Te újítod meg';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Emlékeztesd $name személyt a megújításra';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Emlékeztető elküldve: $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Ma már küldtél erről emlékeztetőt.';
+
+  @override
+  String get householdRemindError => 'Az emlékeztetőt nem sikerült elküldeni. Próbáld újra.';
+
+  @override
   String get householdSharedBadge => 'Megosztva';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Kérés küldése';
+
+  @override
+  String get staffBulkTitle => 'Frissítések kérése';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return '30 napon belül lejáró munkatársi dokumentumok: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Mindenki kap egy e-mailt egy linkkel az új dokumentum feltöltéséhez.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Elküldött kérések: $sent / $count';
+  }
+
+  @override
+  String get roleAction => 'Munkakör és kötelező dokumentumok';
+
+  @override
+  String get roleNameLabel => 'Munkakör';
+
+  @override
+  String get roleNameHint => 'Például: Sofőr';
+
+  @override
+  String get roleRequiredTitle => 'Kötelező dokumentumok';
+
+  @override
+  String get roleRequiredHint => 'A Vaultara megmutatja, hogy ezek közül melyik dokumentum hiányzik ettől a személytől.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'A többi ilyen munkakörű személyt is frissítsd ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Hiányzik: $names';
+  }
+
+  @override
+  String get roleComplete => 'Minden kötelező dokumentum megvan';
+
+  @override
+  String get roleSaved => 'Munkakör mentve';
 
   @override
   String get requestUpdateSending => 'Kérés küldése folyamatban';
@@ -8003,6 +8097,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tourHousehold3Body => 'Minden tétel tartozhat valakihez. A neve megjelenik a tételen és az emlékeztetőkben.';
 
   @override
+  String get tourHouseholdRenewBody => 'Válaszd ki, ki újítja meg a megosztott bejegyzést. Csak ő kapja az emlékeztetőket, és bárki emlékeztetheti egy koppintással.';
+
+  @override
   String get tourImport1Title => 'Kártya beolvasása';
 
   @override
@@ -8043,6 +8140,9 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Adj hozzá munkatársakat, és tartsd egy helyen a tanúsítványaikat, engedélyeiket és jogosítványaikat.';
+
+  @override
+  String get tourBusinessRolesBody => 'Adj mindenkinek munkakört, például Sofőr, a szükséges dokumentumokkal. A Vaultara megmutatja, mi hiányzik.';
 
   @override
   String get tourBusiness2Title => 'E-mailes emlékeztetők';

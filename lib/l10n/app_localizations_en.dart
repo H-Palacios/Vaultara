@@ -1507,6 +1507,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get familyRemove => 'Remove';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Citizen of $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Remove $name?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Each person has their own records and reminders';
+
+  @override
+  String get familyBenefitRenewer => 'Choose who renews each shared record, and remind them in one tap';
 
   @override
   String get familyBenefitOneSubscription => 'One subscription for the household';
@@ -3230,6 +3238,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Staff and vehicle records in one place';
 
   @override
+  String get businessBenefitBulk => 'Request staff updates in bulk, and get told when a document expires';
+
+  @override
+  String get businessBenefitRoles => 'Set required documents per role and see what each person is missing';
+
+  @override
   String get businessBenefitPdf => 'Team PDF export with your company name';
 
   @override
@@ -4431,6 +4445,39 @@ class AppLocalizationsEn extends AppLocalizations {
   String get householdShareOff => 'Only you can see this record.';
 
   @override
+  String get householdRenewerLabel => 'Who renews it';
+
+  @override
+  String get householdRenewerAnyone => 'Anyone in the household';
+
+  @override
+  String get householdRenewerHint => 'Only they get its reminders. The others are told if it is not renewed in time.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name renews';
+  }
+
+  @override
+  String get householdYouRenew => 'You renew this';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Remind $name to renew it';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Reminder sent to $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'You already sent a reminder about this today.';
+
+  @override
+  String get householdRemindError => 'The reminder could not be sent. Try again.';
+
+  @override
   String get householdSharedBadge => 'Shared';
 
   @override
@@ -4976,6 +5023,53 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Send request';
+
+  @override
+  String get staffBulkTitle => 'Request updates';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Staff documents due within 30 days: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Each person gets an email with a link to upload their new document.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Requests sent: $sent of $count';
+  }
+
+  @override
+  String get roleAction => 'Role and required documents';
+
+  @override
+  String get roleNameLabel => 'Role';
+
+  @override
+  String get roleNameHint => 'For example: Driver';
+
+  @override
+  String get roleRequiredTitle => 'Required documents';
+
+  @override
+  String get roleRequiredHint => 'Vaultara shows which of these documents this person is missing.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Also update everyone else with this role ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Missing: $names';
+  }
+
+  @override
+  String get roleComplete => 'All required documents added';
+
+  @override
+  String get roleSaved => 'Role saved';
 
   @override
   String get requestUpdateSending => 'Sending the request';
@@ -8028,6 +8122,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tourHousehold3Body => 'Each record can belong to someone. Their name shows on it and in its reminders.';
 
   @override
+  String get tourHouseholdRenewBody => 'Choose who renews a shared record. Only they get its reminders, and anyone can remind them in one tap.';
+
+  @override
   String get tourImport1Title => 'Scan a card';
 
   @override
@@ -8068,6 +8165,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Add staff and keep their certificates, permits and licences in one place.';
+
+  @override
+  String get tourBusinessRolesBody => 'Give each person a role, like Driver, with the documents it needs. Vaultara shows what is missing.';
 
   @override
   String get tourBusiness2Title => 'Email reminders';

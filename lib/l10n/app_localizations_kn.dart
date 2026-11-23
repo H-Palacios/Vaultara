@@ -1507,6 +1507,11 @@ class AppLocalizationsKn extends AppLocalizations {
   String get familyRemove => 'ತೆಗೆದುಹಾಕಿ';
 
   @override
+  String familyCitizenOf(String country) {
+    return '$country ನಾಗರಿಕ';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return '$name ಅವರನ್ನು ತೆಗೆದುಹಾಕಬೇಕೇ?';
   }
@@ -1574,6 +1579,9 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'ಪ್ರತಿಯೊಬ್ಬರಿಗೂ ಅವರದೇ ದಾಖಲೆಗಳು ಮತ್ತು ರಿಮೈಂಡರ್‌ಗಳು';
+
+  @override
+  String get familyBenefitRenewer => 'ಪ್ರತಿ ಹಂಚಿದ ದಾಖಲೆಯನ್ನು ಯಾರು ನವೀಕರಿಸುತ್ತಾರೆ ಎಂದು ಆರಿಸಿ, ಒಂದೇ ಟ್ಯಾಪ್‌ನಲ್ಲಿ ನೆನಪಿಸಿ';
 
   @override
   String get familyBenefitOneSubscription => 'ಇಡೀ ಮನೆಗೆ ಒಂದೇ ಚಂದಾದಾರಿಕೆ';
@@ -3209,6 +3217,12 @@ class AppLocalizationsKn extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'ಸಿಬ್ಬಂದಿ ಮತ್ತು ವಾಹನ ದಾಖಲೆಗಳು ಒಂದೇ ಸ್ಥಳದಲ್ಲಿ';
 
   @override
+  String get businessBenefitBulk => 'ಸಿಬ್ಬಂದಿಯಿಂದ ಒಮ್ಮೆಗೇ ಅಪ್‌ಡೇಟ್ ಕೇಳಿ, ದಾಖಲೆ ಅವಧಿ ಮುಗಿದಾಗ ತಿಳಿಯಿರಿ';
+
+  @override
+  String get businessBenefitRoles => 'ಪ್ರತಿ ಪಾತ್ರಕ್ಕೆ ಅಗತ್ಯ ದಾಖಲೆಗಳನ್ನು ನಿಗದಿಪಡಿಸಿ ಮತ್ತು ಯಾರಿಗೆ ಏನು ಇಲ್ಲ ಎಂದು ನೋಡಿ';
+
+  @override
   String get businessBenefitPdf => 'ನಿಮ್ಮ ಕಂಪನಿಯ ಹೆಸರಿನೊಂದಿಗೆ ತಂಡದ PDF ರಫ್ತು';
 
   @override
@@ -4410,6 +4424,39 @@ class AppLocalizationsKn extends AppLocalizations {
   String get householdShareOff => 'ಈ ದಾಖಲೆಯನ್ನು ನೀವು ಮಾತ್ರ ನೋಡಬಹುದು.';
 
   @override
+  String get householdRenewerLabel => 'ಯಾರು ನವೀಕರಿಸುತ್ತಾರೆ';
+
+  @override
+  String get householdRenewerAnyone => 'ಮನೆಯಲ್ಲಿ ಯಾರಾದರೂ';
+
+  @override
+  String get householdRenewerHint => 'ಅವರಿಗೆ ಮಾತ್ರ ಜ್ಞಾಪನೆಗಳು ಬರುತ್ತವೆ. ಸಮಯಕ್ಕೆ ನವೀಕರಿಸದಿದ್ದರೆ ಇತರರಿಗೆ ತಿಳಿಸಲಾಗುತ್ತದೆ.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return '$name ನವೀಕರಿಸುತ್ತಾರೆ';
+  }
+
+  @override
+  String get householdYouRenew => 'ನೀವು ನವೀಕರಿಸುತ್ತೀರಿ';
+
+  @override
+  String householdRemindAction(String name) {
+    return '$name ಅವರಿಗೆ ನವೀಕರಿಸಲು ನೆನಪಿಸಿ';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return '$name ಅವರಿಗೆ ಜ್ಞಾಪನೆ ಕಳುಹಿಸಲಾಗಿದೆ';
+  }
+
+  @override
+  String get householdRemindLimit => 'ಇದರ ಬಗ್ಗೆ ನೀವು ಇಂದು ಈಗಾಗಲೇ ಜ್ಞಾಪನೆ ಕಳುಹಿಸಿದ್ದೀರಿ.';
+
+  @override
+  String get householdRemindError => 'ಜ್ಞಾಪನೆ ಕಳುಹಿಸಲಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
+
+  @override
   String get householdSharedBadge => 'ಹಂಚಲಾಗಿದೆ';
 
   @override
@@ -4955,6 +5002,53 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'ವಿನಂತಿ ಕಳುಹಿಸಿ';
+
+  @override
+  String get staffBulkTitle => 'ಅಪ್‌ಡೇಟ್ ಕೇಳಿ';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return '30 ದಿನಗಳಲ್ಲಿ ಅವಧಿ ಮುಗಿಯುವ ಸಿಬ್ಬಂದಿ ದಾಖಲೆಗಳು: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'ಪ್ರತಿಯೊಬ್ಬರಿಗೂ ಹೊಸ ದಾಖಲೆ ಅಪ್‌ಲೋಡ್ ಮಾಡುವ ಲಿಂಕ್ ಇರುವ ಇಮೇಲ್ ಬರುತ್ತದೆ.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'ಕಳುಹಿಸಿದ ವಿನಂತಿಗಳು: $count ರಲ್ಲಿ $sent';
+  }
+
+  @override
+  String get roleAction => 'ಪಾತ್ರ ಮತ್ತು ಅಗತ್ಯ ದಾಖಲೆಗಳು';
+
+  @override
+  String get roleNameLabel => 'ಪಾತ್ರ';
+
+  @override
+  String get roleNameHint => 'ಉದಾಹರಣೆ: ಚಾಲಕ';
+
+  @override
+  String get roleRequiredTitle => 'ಅಗತ್ಯ ದಾಖಲೆಗಳು';
+
+  @override
+  String get roleRequiredHint => 'ಈ ವ್ಯಕ್ತಿಗೆ ಇವುಗಳಲ್ಲಿ ಯಾವ ದಾಖಲೆಗಳು ಇಲ್ಲ ಎಂದು Vaultara ತೋರಿಸುತ್ತದೆ.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'ಈ ಪಾತ್ರದ ಇತರ ಎಲ್ಲರನ್ನೂ ಅಪ್‌ಡೇಟ್ ಮಾಡಿ ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'ಇಲ್ಲ: $names';
+  }
+
+  @override
+  String get roleComplete => 'ಎಲ್ಲಾ ಅಗತ್ಯ ದಾಖಲೆಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ';
+
+  @override
+  String get roleSaved => 'ಪಾತ್ರ ಉಳಿಸಲಾಗಿದೆ';
 
   @override
   String get requestUpdateSending => 'ವಿನಂತಿಯನ್ನು ಕಳುಹಿಸಲಾಗುತ್ತಿದೆ';
@@ -8003,6 +8097,9 @@ class AppLocalizationsKn extends AppLocalizations {
   String get tourHousehold3Body => 'ಪ್ರತಿ ದಾಖಲೆಯು ಯಾರಿಗಾದರೂ ಸೇರಿರಬಹುದು. ಅವರ ಹೆಸರು ದಾಖಲೆ ಮತ್ತು ಜ್ಞಾಪನೆಗಳಲ್ಲಿ ಕಾಣುತ್ತದೆ.';
 
   @override
+  String get tourHouseholdRenewBody => 'ಹಂಚಿದ ದಾಖಲೆಯನ್ನು ಯಾರು ನವೀಕರಿಸುತ್ತಾರೆ ಎಂದು ಆರಿಸಿ. ಅವರಿಗೆ ಮಾತ್ರ ಜ್ಞಾಪನೆಗಳು ಬರುತ್ತವೆ, ಯಾರಾದರೂ ಒಂದೇ ಟ್ಯಾಪ್‌ನಲ್ಲಿ ನೆನಪಿಸಬಹುದು.';
+
+  @override
   String get tourImport1Title => 'ಕಾರ್ಡ್ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ';
 
   @override
@@ -8043,6 +8140,9 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'ಸಿಬ್ಬಂದಿಯನ್ನು ಸೇರಿಸಿ ಮತ್ತು ಅವರ ಪ್ರಮಾಣಪತ್ರಗಳು, ಅನುಮತಿಗಳು ಮತ್ತು ಪರವಾನಗಿಗಳನ್ನು ಒಂದೇ ಸ್ಥಳದಲ್ಲಿ ಇಡಿ.';
+
+  @override
+  String get tourBusinessRolesBody => 'ಪ್ರತಿಯೊಬ್ಬರಿಗೂ ಚಾಲಕನಂತಹ ಪಾತ್ರವನ್ನು ಅದಕ್ಕೆ ಬೇಕಾದ ದಾಖಲೆಗಳೊಂದಿಗೆ ನೀಡಿ. ಏನು ಇಲ್ಲ ಎಂದು Vaultara ತೋರಿಸುತ್ತದೆ.';
 
   @override
   String get tourBusiness2Title => 'ಇಮೇಲ್ ಜ್ಞಾಪನೆಗಳು';

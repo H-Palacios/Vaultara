@@ -1514,6 +1514,11 @@ class AppLocalizationsSk extends AppLocalizations {
   String get familyRemove => 'Odstrániť';
 
   @override
+  String familyCitizenOf(String country) {
+    return 'Občan: $country';
+  }
+
+  @override
   String familyRemoveTitle(String name) {
     return 'Odstrániť osobu $name?';
   }
@@ -1585,6 +1590,9 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get familyBenefitOwnRecords => 'Každá osoba má vlastné záznamy a pripomienky';
+
+  @override
+  String get familyBenefitRenewer => 'Vyberte, kto obnovuje každý zdieľaný záznam, a pripomeňte mu to jedným ťuknutím';
 
   @override
   String get familyBenefitOneSubscription => 'Jedno predplatné pre celú domácnosť';
@@ -3266,6 +3274,12 @@ class AppLocalizationsSk extends AppLocalizations {
   String get businessBenefitStaffVehicles => 'Záznamy o zamestnancoch a vozidlách na jednom mieste';
 
   @override
+  String get businessBenefitBulk => 'Žiadajte zamestnancov o aktualizácie hromadne a dozviete sa, keď dokument vyprší';
+
+  @override
+  String get businessBenefitRoles => 'Nastavte povinné dokumenty pre každú rolu a uvidíte, čo komu chýba';
+
+  @override
   String get businessBenefitPdf => 'Tímový export do PDF s názvom vašej firmy';
 
   @override
@@ -4497,6 +4511,39 @@ class AppLocalizationsSk extends AppLocalizations {
   String get householdShareOff => 'Tento záznam vidíte iba vy.';
 
   @override
+  String get householdRenewerLabel => 'Kto ho obnovuje';
+
+  @override
+  String get householdRenewerAnyone => 'Ktokoľvek z domácnosti';
+
+  @override
+  String get householdRenewerHint => 'Pripomienky dostáva len tento človek. Ostatní sa to dozvedia, ak sa neobnoví včas.';
+
+  @override
+  String householdRenewsBadge(String name) {
+    return 'Obnovuje $name';
+  }
+
+  @override
+  String get householdYouRenew => 'Obnovujete vy';
+
+  @override
+  String householdRemindAction(String name) {
+    return 'Pripomenúť $name, nech ho obnoví';
+  }
+
+  @override
+  String householdReminded(String name) {
+    return 'Pripomienka odoslaná: $name';
+  }
+
+  @override
+  String get householdRemindLimit => 'Dnes ste už k tomu pripomienku poslali.';
+
+  @override
+  String get householdRemindError => 'Pripomienku sa nepodarilo odoslať. Skúste to znova.';
+
+  @override
   String get householdSharedBadge => 'Zdieľané';
 
   @override
@@ -5042,6 +5089,53 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get requestUpdateSend => 'Odoslať žiadosť';
+
+  @override
+  String get staffBulkTitle => 'Požiadať o aktualizácie';
+
+  @override
+  String staffBulkSubtitle(int count) {
+    return 'Dokumenty zamestnancov s platnosťou do 30 dní: $count';
+  }
+
+  @override
+  String get staffBulkBody => 'Každý dostane e-mail s odkazom na nahranie nového dokumentu.';
+
+  @override
+  String staffBulkDone(int sent, int count) {
+    return 'Odoslané žiadosti: $sent z $count';
+  }
+
+  @override
+  String get roleAction => 'Rola a povinné dokumenty';
+
+  @override
+  String get roleNameLabel => 'Rola';
+
+  @override
+  String get roleNameHint => 'Napríklad: Vodič';
+
+  @override
+  String get roleRequiredTitle => 'Povinné dokumenty';
+
+  @override
+  String get roleRequiredHint => 'Vaultara ukáže, ktoré z týchto dokumentov tomuto človeku chýbajú.';
+
+  @override
+  String roleApplySame(int count) {
+    return 'Aktualizovať aj všetkých ostatných s touto rolou ($count)';
+  }
+
+  @override
+  String roleMissing(String names) {
+    return 'Chýba: $names';
+  }
+
+  @override
+  String get roleComplete => 'Všetky povinné dokumenty sú pridané';
+
+  @override
+  String get roleSaved => 'Rola uložená';
 
   @override
   String get requestUpdateSending => 'Odosiela sa žiadosť';
@@ -8136,6 +8230,9 @@ class AppLocalizationsSk extends AppLocalizations {
   String get tourHousehold3Body => 'Každý záznam môže niekomu patriť. Meno sa zobrazí v zázname aj v pripomienkach.';
 
   @override
+  String get tourHouseholdRenewBody => 'Vyberte, kto obnovuje zdieľaný záznam. Pripomienky dostáva len on a ktokoľvek mu môže pripomenúť jedným ťuknutím.';
+
+  @override
   String get tourImport1Title => 'Naskenujte kartu';
 
   @override
@@ -8176,6 +8273,9 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get tourBusiness1Body => 'Pridajte zamestnancov a majte ich certifikáty, povolenia a licencie na jednom mieste.';
+
+  @override
+  String get tourBusinessRolesBody => 'Dajte každému rolu, napríklad Vodič, s dokumentmi, ktoré potrebuje. Vaultara ukáže, čo chýba.';
 
   @override
   String get tourBusiness2Title => 'Pripomienky e-mailom';
