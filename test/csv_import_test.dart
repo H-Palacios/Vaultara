@@ -9,8 +9,10 @@ import 'package:vaultara/features/import/logic/import_date_parser.dart';
 import 'package:vaultara/features/import/logic/import_planner.dart';
 
 void main() {
-  DateTime? parse(String raw, [ImportDateOrder order = ImportDateOrder.dayFirst]) =>
-      ImportDateParser.parse(raw, order: order);
+  DateTime? parse(
+    String raw, [
+    ImportDateOrder order = ImportDateOrder.dayFirst,
+  ]) => ImportDateParser.parse(raw, order: order);
 
   group('date parsing', () {
     test('reads ISO dates and timestamps', () {
@@ -24,20 +26,32 @@ void main() {
 
     test('follows the chosen order for slash and dash dates', () {
       expect(parse('12/03/2027'), DateTime(2027, 3, 12));
-      expect(parse('12/03/2027', ImportDateOrder.monthFirst), DateTime(2027, 12, 3));
+      expect(
+        parse('12/03/2027', ImportDateOrder.monthFirst),
+        DateTime(2027, 12, 3),
+      );
       expect(parse('12-03-2027'), DateTime(2027, 3, 12));
       expect(parse('12/03/27'), DateTime(2027, 3, 12));
       expect(parse('12/03/2027 00:00'), DateTime(2027, 3, 12));
-      expect(parse('3/12/2027 9:00 AM', ImportDateOrder.monthFirst), DateTime(2027, 3, 12));
+      expect(
+        parse('3/12/2027 9:00 AM', ImportDateOrder.monthFirst),
+        DateTime(2027, 3, 12),
+      );
     });
 
     test('swaps day and month when only one reading is valid', () {
-      expect(parse('25/12/2027', ImportDateOrder.monthFirst), DateTime(2027, 12, 25));
+      expect(
+        parse('25/12/2027', ImportDateOrder.monthFirst),
+        DateTime(2027, 12, 25),
+      );
       expect(parse('12/25/2027'), DateTime(2027, 12, 25));
     });
 
     test('treats dotted dates as day first', () {
-      expect(parse('12.03.2027', ImportDateOrder.monthFirst), DateTime(2027, 3, 12));
+      expect(
+        parse('12.03.2027', ImportDateOrder.monthFirst),
+        DateTime(2027, 3, 12),
+      );
     });
 
     test('reads month names in several languages', () {
@@ -79,36 +93,35 @@ void main() {
 
   group('date order guess', () {
     test('uses values above 12 as evidence', () {
-      final day = ImportDateParser.guessOrder(
-        <String>['25/12/2027', '01/02/2028'],
-        fallback: ImportDateOrder.monthFirst,
-      );
+      final day = ImportDateParser.guessOrder(<String>[
+        '25/12/2027',
+        '01/02/2028',
+      ], fallback: ImportDateOrder.monthFirst);
       expect(day.order, ImportDateOrder.dayFirst);
       expect(day.ambiguous, isFalse);
 
-      final month = ImportDateParser.guessOrder(
-        <String>['12/25/2027', '01/02/2028'],
-        fallback: ImportDateOrder.dayFirst,
-      );
+      final month = ImportDateParser.guessOrder(<String>[
+        '12/25/2027',
+        '01/02/2028',
+      ], fallback: ImportDateOrder.dayFirst);
       expect(month.order, ImportDateOrder.monthFirst);
       expect(month.ambiguous, isFalse);
     });
 
     test('falls back to the locale when every value is ambiguous', () {
-      final guess = ImportDateParser.guessOrder(
-        <String>['03/04/2027', '05/06/2028'],
-        fallback: ImportDateOrder.monthFirst,
-      );
+      final guess = ImportDateParser.guessOrder(<String>[
+        '03/04/2027',
+        '05/06/2028',
+      ], fallback: ImportDateOrder.monthFirst);
       expect(guess.order, ImportDateOrder.monthFirst);
       expect(guess.ambiguous, isTrue);
       expect(guess.hasNumericDates, isTrue);
     });
 
     test('ignores ISO dates', () {
-      final guess = ImportDateParser.guessOrder(
-        <String>['2027-03-04'],
-        fallback: ImportDateOrder.dayFirst,
-      );
+      final guess = ImportDateParser.guessOrder(<String>[
+        '2027-03-04',
+      ], fallback: ImportDateOrder.dayFirst);
       expect(guess.hasNumericDates, isFalse);
       expect(guess.ambiguous, isFalse);
     });
@@ -122,24 +135,38 @@ void main() {
 
   group('decoding', () {
     test('strips a UTF-8 byte order mark', () {
-      final bytes = Uint8List.fromList(<int>[0xEF, 0xBB, 0xBF, ...utf8.encode('Name\n')]);
+      final bytes = Uint8List.fromList(<int>[
+        0xEF,
+        0xBB,
+        0xBF,
+        ...utf8.encode('Name\n'),
+      ]);
       expect(ImportCsvReader.decode(bytes), 'Name\n');
     });
 
     test('falls back to Latin-1 and Windows-1252', () {
       expect(
-        ImportCsvReader.decode(Uint8List.fromList(latin1.encode('Café;2027-01-01'))),
+        ImportCsvReader.decode(
+          Uint8List.fromList(latin1.encode('Café;2027-01-01')),
+        ),
         'Café;2027-01-01',
       );
-      expect(ImportCsvReader.decode(Uint8List.fromList(<int>[0x80, 0x20, 0x31, 0x32])), '€ 12');
+      expect(
+        ImportCsvReader.decode(
+          Uint8List.fromList(<int>[0x80, 0x20, 0x31, 0x32]),
+        ),
+        '€ 12',
+      );
     });
 
     test('reads UTF-16 with and without a byte order mark', () {
       List<int> le(String s) => <int>[
-            for (final unit in s.codeUnits) ...<int>[unit & 0xFF, unit >> 8],
-          ];
+        for (final unit in s.codeUnits) ...<int>[unit & 0xFF, unit >> 8],
+      ];
       expect(
-        ImportCsvReader.decode(Uint8List.fromList(<int>[0xFF, 0xFE, ...le('Name\tExpiry\n')])),
+        ImportCsvReader.decode(
+          Uint8List.fromList(<int>[0xFF, 0xFE, ...le('Name\tExpiry\n')]),
+        ),
         'Name\tExpiry\n',
       );
       expect(
@@ -149,7 +176,10 @@ void main() {
     });
 
     test('keeps plain UTF-8', () {
-      expect(ImportCsvReader.decode(Uint8List.fromList(utf8.encode('Señor'))), 'Señor');
+      expect(
+        ImportCsvReader.decode(Uint8List.fromList(utf8.encode('Señor'))),
+        'Señor',
+      );
     });
   });
 
@@ -205,10 +235,10 @@ void main() {
 
   group('header detection and mapping', () {
     Map<ImportField, int> map(List<String> headers) => ImportColumns.autoMap(
-          headers: headers,
-          dataRows: <List<String>>[List<String>.filled(headers.length, 'x')],
-          columnCount: headers.length,
-        );
+      headers: headers,
+      dataRows: <List<String>>[List<String>.filled(headers.length, 'x')],
+      columnCount: headers.length,
+    );
 
     test('finds the header row', () {
       expect(
@@ -236,7 +266,10 @@ void main() {
     });
 
     test('matches name and expiry in other languages', () {
-      const expected = <ImportField, int>{ImportField.name: 0, ImportField.expiry: 1};
+      const expected = <ImportField, int>{
+        ImportField.name: 0,
+        ImportField.expiry: 1,
+      };
       expect(map(<String>['Nombre', 'Fecha de vencimiento']), expected);
       expect(map(<String>['Naam', 'Vervaldatum']), expected);
       expect(map(<String>['Name', 'Ablaufdatum']), expected);
@@ -267,22 +300,33 @@ void main() {
     });
 
     test('prefers the most specific header', () {
-      expect(map(<String>['Holder name', 'Document name', 'Expiry', 'Reminder days before expiry']),
-          <ImportField, int>{
-            ImportField.person: 0,
-            ImportField.name: 1,
-            ImportField.expiry: 2,
-            ImportField.reminderDays: 3,
-          });
-      expect(map(<String>['Issue date', 'Name', 'Expiry date (DD/MM/YYYY)']),
-          <ImportField, int>{ImportField.name: 1, ImportField.expiry: 2});
-      expect(map(<String>['Gültig bis', 'Bezeichnung', 'Kategorie', 'Notizen']),
-          <ImportField, int>{
-            ImportField.expiry: 0,
-            ImportField.name: 1,
-            ImportField.category: 2,
-            ImportField.notes: 3,
-          });
+      expect(
+        map(<String>[
+          'Holder name',
+          'Document name',
+          'Expiry',
+          'Reminder days before expiry',
+        ]),
+        <ImportField, int>{
+          ImportField.person: 0,
+          ImportField.name: 1,
+          ImportField.expiry: 2,
+          ImportField.reminderDays: 3,
+        },
+      );
+      expect(
+        map(<String>['Issue date', 'Name', 'Expiry date (DD/MM/YYYY)']),
+        <ImportField, int>{ImportField.name: 1, ImportField.expiry: 2},
+      );
+      expect(
+        map(<String>['Gültig bis', 'Bezeichnung', 'Kategorie', 'Notizen']),
+        <ImportField, int>{
+          ImportField.expiry: 0,
+          ImportField.name: 1,
+          ImportField.category: 2,
+          ImportField.notes: 3,
+        },
+      );
     });
 
     test('maps headerless files by content', () {
@@ -335,7 +379,8 @@ void main() {
     });
 
     test('reads currency symbols and codes', () {
-      ImportCost cost(String raw) => ImportPlanner.parseCost(raw, defaultCurrency: 'ZAR');
+      ImportCost cost(String raw) =>
+          ImportPlanner.parseCost(raw, defaultCurrency: 'ZAR');
       expect(cost('R 450').amount, 450);
       expect(cost('R 450').currency, 'ZAR');
       expect(cost(r'$12.99').currency, 'USD');
@@ -365,7 +410,10 @@ void main() {
           CatalogGroup(
             key: 'id_cards',
             categoryKey: 'personal_identification',
-            labels: <String>['ID cards', ...ImportCatalog.presetGroupAliases['id_cards']!],
+            labels: <String>[
+              'ID cards',
+              ...ImportCatalog.presetGroupAliases['id_cards']!,
+            ],
           ),
         ],
       ),
@@ -398,6 +446,20 @@ void main() {
         ],
       ),
       CatalogCategory(
+        key: 'pets_and_animals',
+        labels: <String>['Pets and animals'],
+        groups: <CatalogGroup>[
+          CatalogGroup(
+            key: 'pet_insurances',
+            categoryKey: 'pets_and_animals',
+            labels: <String>[
+              'Pet insurance',
+              ...ImportCatalog.presetGroupAliases['pet_insurances']!,
+            ],
+          ),
+        ],
+      ),
+      CatalogCategory(
         key: 'property_and_housing',
         labels: <String>['Property and housing'],
         groups: <CatalogGroup>[
@@ -422,15 +484,76 @@ void main() {
     };
 
     final rows = <List<String>>[
-      <String>['Passport', '2027-01-01', '', 'Passports', 'Rico Masri', '', '', '', ''],
+      <String>[
+        'Passport',
+        '2027-01-01',
+        '',
+        'Passports',
+        'Rico Masri',
+        '',
+        '',
+        '',
+        '',
+      ],
       <String>['', '2027-01-01', '', '', '', '', '', '', ''],
       <String>['Visa', '', '', '', '', '', '', '', ''],
       <String>['Visa', 'soon', '', '', '', '', '', '', ''],
-      <String>['Visa', '2028-01-01', '', 'Visas', 'rico', '', 'R 1 200,50', '', '30'],
+      <String>[
+        'Visa',
+        '2028-01-01',
+        '',
+        'Visas',
+        'rico',
+        '',
+        'R 1 200,50',
+        '',
+        '30',
+      ],
       <String>['Visa', '2028-01-01', '', 'Visas', '', '', '', '', ''],
-      <String>['Gym', '2028-01-01', 'Gym stuff', '', 'Ana', '', 'oops', '', 'none'],
-      <String>['Car', '15/02/2028', 'Insurance', 'Car insurance', 'Bob', 'note', '450', 'eur', '7'],
-      <String>['Pet', '15/02/2028', 'Insurance', 'Pet insurance', '', '', '', '', '0'],
+      <String>[
+        'Gym',
+        '2028-01-01',
+        'Gym stuff',
+        '',
+        'Ana',
+        '',
+        'oops',
+        '',
+        'none',
+      ],
+      <String>[
+        'Car',
+        '15/02/2028',
+        'Insurance',
+        'Car insurance',
+        'Bob',
+        'note',
+        '450',
+        'eur',
+        '7',
+      ],
+      <String>[
+        'Ring',
+        '15/02/2028',
+        'Insurance',
+        'Jewellery insurance',
+        '',
+        '',
+        '',
+        '',
+        '0',
+      ],
+      <String>[
+        'Rex',
+        '15/02/2028',
+        'Insurance',
+        'Pet insurance',
+        '',
+        '',
+        '',
+        '',
+        '',
+      ],
     ];
     final lines = <int>[for (var i = 0; i < rows.length; i++) i + 2];
 
@@ -443,7 +566,9 @@ void main() {
     }) {
       return ImportPlanner.build(
         dataRows: data ?? rows,
-        lineNumbers: data == null ? lines : <int>[for (var i = 0; i < data.length; i++) i + 2],
+        lineNumbers: data == null
+            ? lines
+            : <int>[for (var i = 0; i < data.length; i++) i + 2],
         options: ImportOptions(
           mapping: columns ?? mapping,
           dateOrder: ImportDateOrder.dayFirst,
@@ -455,7 +580,11 @@ void main() {
         ),
         catalog: catalog,
         existingKeys: <String>{
-          ImportPlanner.duplicateKey('Passport', 'passports', DateTime(2027, 1, 1)),
+          ImportPlanner.duplicateKey(
+            'Passport',
+            'passports',
+            DateTime(2027, 1, 1),
+          ),
         },
         people: people,
         newGroupKey: (category, label) =>
@@ -466,7 +595,9 @@ void main() {
     test('gives each row a status and reason', () {
       final result = plan();
       expect(
-        result.rows.map((r) => '${r.line}:${r.status.name}:${r.reason?.name}').toList(),
+        result.rows
+            .map((r) => '${r.line}:${r.status.name}:${r.reason?.name}')
+            .toList(),
         <String>[
           '2:skipped:duplicate',
           '3:skipped:noName',
@@ -477,9 +608,10 @@ void main() {
           '8:needsCategory:null',
           '9:ready:null',
           '10:ready:null',
+          '11:ready:null',
         ],
       );
-      expect(result.readyCount, 3);
+      expect(result.readyCount, 4);
       expect(result.skippedCount, 5);
       expect(result.needsCategoryCount, 1);
     });
@@ -498,24 +630,33 @@ void main() {
       final gym = plan().rows[6];
       expect(gym.holderId, isNull);
       expect(gym.reminderDays, isNull);
-      expect(
-        gym.messages.map((m) => m.kind).toList(),
-        <ImportNoteKind>[ImportNoteKind.personNotFound, ImportNoteKind.badCost],
-      );
+      expect(gym.messages.map((m) => m.kind).toList(), <ImportNoteKind>[
+        ImportNoteKind.personNotFound,
+        ImportNoteKind.badCost,
+      ]);
     });
 
-    test('resolves groups by alias and creates new groups in known categories', () {
-      final car = plan().rows[7];
-      expect(car.groupKey, 'vehicle_insurances');
-      expect(car.currency, 'EUR');
-      expect(car.expiry, DateTime(2028, 2, 15));
+    test(
+      'resolves groups by alias and creates new groups in known categories',
+      () {
+        final car = plan().rows[7];
+        expect(car.groupKey, 'vehicle_insurances');
+        expect(car.currency, 'EUR');
+        expect(car.expiry, DateTime(2028, 2, 15));
 
-      final pet = plan().rows[8];
-      expect(pet.categoryKey, 'insurance_and_cover');
-      expect(pet.newGroupLabel, 'Pet Insurance');
-      expect(pet.groupKey, 'insurance_and_cover__pet_insurance');
-      expect(pet.reminderDays, 0);
-    });
+        final ring = plan().rows[8];
+        expect(ring.categoryKey, 'insurance_and_cover');
+        expect(ring.newGroupLabel, 'Jewellery Insurance');
+        expect(ring.groupKey, 'insurance_and_cover__jewellery_insurance');
+        expect(ring.reminderDays, 0);
+
+        // A preset group in another category wins over a new group.
+        final pet = plan().rows[9];
+        expect(pet.categoryKey, 'pets_and_animals');
+        expect(pet.groupKey, 'pet_insurances');
+        expect(pet.newGroupLabel, isNull);
+      },
+    );
 
     test('uses the chosen fallback and premium reminders', () {
       final result = plan(
@@ -534,7 +675,10 @@ void main() {
         data: <List<String>>[
           for (var i = 0; i < 620; i++) <String>['R$i', '2027-01-01'],
         ],
-        columns: const <ImportField, int>{ImportField.name: 0, ImportField.expiry: 1},
+        columns: const <ImportField, int>{
+          ImportField.name: 0,
+          ImportField.expiry: 1,
+        },
       );
       expect(result.rows.length, ImportPlanner.maxRows);
       expect(result.truncated, isTrue);

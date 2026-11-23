@@ -37,7 +37,7 @@ void main() {
 
   group('GroupIdeas', () {
     test('keywords match at the start of a word only', () {
-      expect(GroupIdeas.keysFor('Pets'), contains('vaccinations'));
+      expect(GroupIdeas.keysFor('Pets'), contains('pet_vaccinations'));
       expect(GroupIdeas.keysFor('My cars'), contains('vehicle_registrations'));
       expect(GroupIdeas.keysFor('Education'), isEmpty);
       expect(GroupIdeas.keysFor('Certificates'), isEmpty);
