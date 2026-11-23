@@ -166,7 +166,8 @@ service cloud.firestore {
                                'needsVisa', 'travellers', 'checklist', 'updatedAt',
                                'countries', 'passportRule', 'needsVisaManual',
                                'visaRecords', 'arrivals', 'flights', 'passportChoice',
-                               'purpose', 'places'])
+                               'purpose', 'places', 'pets'])
+        && (!('pets' in d) || (d.pets is list && d.pets.size() <= 10))
         && (!('purpose' in d) || d.purpose in ['holiday', 'family', 'business', 'study', 'work'])
         && (!('driving' in d) || d.driving is bool)
         && (!('needsVisa' in d) || d.needsVisa is bool)
@@ -187,6 +188,26 @@ service cloud.firestore {
             && countryOk(d.countries, 3)
             && countryOk(d.countries, 4)))
         && (!('passportRule' in d) || d.passportRule in ['six', 'three', 'stay']);
+    }
+
+    function validPet() {
+      let d = request.resource.data;
+      return d.keys().hasOnly(['name', 'type', 'customType', 'colourIndex', 'birthDate',
+                               'microchip', 'chipRegistry', 'vetName', 'vetPhone'])
+        && d.name is string && d.name.size() > 0 && d.name.size() <= 40
+        && d.type in ['dog', 'cat', 'ferret', 'rabbit', 'guinea_pig', 'hamster', 'rat', 'mouse',
+                     'gerbil', 'chinchilla', 'hedgehog', 'horse', 'pony', 'donkey',
+                     'parrot', 'budgie', 'cockatiel', 'canary', 'chicken', 'tortoise',
+                     'turtle', 'snake', 'lizard', 'gecko', 'bearded_dragon', 'frog',
+                     'axolotl', 'fish', 'custom']
+        && (!('customType' in d) || (d.type == 'custom' && d.customType is string
+            && d.customType.size() > 0 && d.customType.size() <= 30))
+        && d.colourIndex is int && d.colourIndex >= 0 && d.colourIndex < 8
+        && (!('birthDate' in d) || d.birthDate is timestamp)
+        && (!('microchip' in d) || (d.microchip is string && d.microchip.matches('^[0-9]{9,15}$')))
+        && (!('chipRegistry' in d) || (d.chipRegistry is string && d.chipRegistry.size() <= 60))
+        && (!('vetName' in d) || (d.vetName is string && d.vetName.size() <= 60))
+        && (!('vetPhone' in d) || (d.vetPhone is string && d.vetPhone.matches('^[0-9+() -]{3,30}$')));
     }
 
     function validRenewalPlan() {
@@ -710,6 +731,16 @@ service cloud.firestore {
           && request.resource.data.colourIndex < 8;
       }
 
+      // Pets are kept apart from people, so they never use a member place.
+      // Paid plans add them; a function removes any past the app's limit.
+      match /pets/{petId} {
+        allow read: if isOwner(uid);
+        allow delete: if isVerifiedOwner(uid);
+        allow create, update: if isVerifiedOwner(uid)
+          && isPaidUser(uid)
+          && validPet();
+      }
+
       match /trips/{tripId} {
         allow read: if isOwner(uid);
         allow delete: if isVerifiedOwner(uid);
@@ -889,6 +920,21 @@ service cloud.firestore {
     match /visaLinks/{docId} {
       allow read: if signedIn() && docId == 'all';
       allow write: if false;
+    }
+
+    // Official rules read from government pages. Anyone signed in may read
+    // a country; only the server writes, after its own checks and review.
+    match /officialRules/{country} {
+      allow read: if signedIn() && country.matches('^[A-Z]{2}$');
+      allow write: if false;
+    }
+
+    // Where the rules come from, each reading and its review: server only.
+    match /ruleSources/{docId} {
+      allow read, write: if false;
+    }
+    match /ruleReviews/{docId} {
+      allow read, write: if false;
     }
 
     match /{document=**} {
