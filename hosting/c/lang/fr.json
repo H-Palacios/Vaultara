@@ -1,0 +1,16 @@
+{
+  "page": "Documents du personnel",
+  "loading": "Chargement des documents du personnel…",
+  "heading": "{company} : documents du personnel",
+  "statusOk": "À jour",
+  "statusSoon": "Expire bientôt",
+  "statusExpired": "Expiré",
+  "locked": "Document verrouillé",
+  "live": "En direct depuis Vaultara. Ce lien fonctionne jusqu'au {date}.",
+  "empty": "Aucun document du personnel à afficher pour l'instant.",
+  "errorBody": "Impossible de charger cette page. Vérifiez votre connexion et réessayez.",
+  "expiredTitle": "Ce lien a expiré",
+  "expiredBody": "Les liens partagés ne fonctionnent que pendant peu de temps. Demandez un nouveau lien à la personne qui vous l’a envoyé.",
+  "errorTitle": "Une erreur s’est produite",
+  "retry": "Réessayer"
+}

@@ -1,0 +1,16 @@
+{
+  "page": "Dokumen staf",
+  "loading": "Memuat dokumen staf…",
+  "heading": "{company}: dokumen staf",
+  "statusOk": "Berlaku",
+  "statusSoon": "Segera kedaluwarsa",
+  "statusExpired": "Kedaluwarsa",
+  "locked": "Dokumen terkunci",
+  "live": "Langsung dari Vaultara. Tautan ini berlaku sampai {date}.",
+  "empty": "Belum ada dokumen staf untuk ditampilkan.",
+  "errorBody": "Halaman ini tidak dapat dimuat. Periksa koneksi Anda dan coba lagi.",
+  "expiredTitle": "Tautan ini sudah kedaluwarsa",
+  "expiredBody": "Tautan yang dibagikan hanya berfungsi untuk waktu singkat. Mintalah tautan baru kepada orang yang mengirimkannya.",
+  "errorTitle": "Terjadi kesalahan",
+  "retry": "Coba lagi"
+}

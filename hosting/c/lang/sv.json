@@ -1,0 +1,16 @@
+{
+  "page": "Personaldokument",
+  "loading": "Läser in personaldokument…",
+  "heading": "{company}: personaldokument",
+  "statusOk": "Giltigt",
+  "statusSoon": "Går snart ut",
+  "statusExpired": "Utgånget",
+  "locked": "Låst dokument",
+  "live": "Direkt från Vaultara. Länken fungerar till {date}.",
+  "empty": "Inga personaldokument att visa ännu.",
+  "errorBody": "Sidan kunde inte läsas in. Kontrollera anslutningen och försök igen.",
+  "expiredTitle": "Den här länken har upphört att gälla",
+  "expiredBody": "Delade länkar fungerar bara en kort stund. Be personen som skickade den om en ny länk.",
+  "errorTitle": "Något gick fel",
+  "retry": "Försök igen"
+}

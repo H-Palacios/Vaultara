@@ -1,0 +1,16 @@
+{
+  "page": "Documentos del personal",
+  "loading": "Cargando documentos del personal…",
+  "heading": "{company}: documentos del personal",
+  "statusOk": "Al día",
+  "statusSoon": "Vence pronto",
+  "statusExpired": "Vencido",
+  "locked": "Documento bloqueado",
+  "live": "En directo desde Vaultara. Este enlace funciona hasta el {date}.",
+  "empty": "Aún no hay documentos del personal que mostrar.",
+  "errorBody": "No pudimos cargar esta página. Comprueba tu conexión e inténtalo de nuevo.",
+  "expiredTitle": "Este enlace ha caducado",
+  "expiredBody": "Los enlaces compartidos solo funcionan durante poco tiempo. Pide un enlace nuevo a la persona que te lo envió.",
+  "errorTitle": "Algo salió mal",
+  "retry": "Intentar de nuevo"
+}

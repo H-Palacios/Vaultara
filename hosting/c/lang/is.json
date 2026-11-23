@@ -1,0 +1,16 @@
+{
+  "page": "Skjöl starfsfólks",
+  "loading": "Hleður skjölum starfsfólks…",
+  "heading": "{company}: skjöl starfsfólks",
+  "statusOk": "Í gildi",
+  "statusSoon": "Rennur brátt út",
+  "statusExpired": "Útrunnið",
+  "locked": "Læst skjal",
+  "live": "Beint úr Vaultara. Þessi tengill virkar til {date}.",
+  "empty": "Engin skjöl starfsfólks til að sýna enn.",
+  "errorBody": "Ekki tókst að hlaða síðunni. Athugaðu tenginguna og reyndu aftur.",
+  "expiredTitle": "Þessi tengill er útrunninn",
+  "expiredBody": "Deildir tenglar virka aðeins í stuttan tíma. Biddu þann sem sendi hann um nýjan tengil.",
+  "errorTitle": "Eitthvað fór úrskeiðis",
+  "retry": "Reyna aftur"
+}

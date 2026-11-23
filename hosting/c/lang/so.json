@@ -1,0 +1,16 @@
+{
+  "page": "Dukumentiyada shaqaalaha",
+  "loading": "Waxaa la soo rarayaa dukumentiyada shaqaalaha…",
+  "heading": "{company}: dukumentiyada shaqaalaha",
+  "statusOk": "Ansax",
+  "statusSoon": "Dhowaan dhacaya",
+  "statusExpired": "Dhacay",
+  "locked": "Dukumenti xiran",
+  "live": "Si toos ah Vaultara. Xiriirkani wuu shaqaynayaa ilaa {date}.",
+  "empty": "Weli ma jiraan dukumentiyo shaqaale oo la muujiyo.",
+  "errorBody": "Boggan ma aanan soo rari karin. Hubi xiriirkaaga oo isku day mar kale.",
+  "expiredTitle": "Xiriirkan wuu dhacay",
+  "expiredBody": "Xiriirada la wadaagay waxay shaqeeyaan muddo gaaban oo keliya. Ka codso qofkii kuu soo diray xiriir cusub.",
+  "errorTitle": "Wax baa khaldamay",
+  "retry": "Isku day mar kale"
+}

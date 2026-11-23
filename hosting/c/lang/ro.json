@@ -1,0 +1,16 @@
+{
+  "page": "Documentele angajaților",
+  "loading": "Se încarcă documentele angajaților…",
+  "heading": "{company}: documentele angajaților",
+  "statusOk": "Valabil",
+  "statusSoon": "Expiră curând",
+  "statusExpired": "Expirat",
+  "locked": "Document blocat",
+  "live": "În direct din Vaultara. Acest link funcționează până la {date}.",
+  "empty": "Încă nu există documente ale angajaților de afișat.",
+  "errorBody": "Nu am putut încărca această pagină. Verifică conexiunea și încearcă din nou.",
+  "expiredTitle": "Acest link a expirat",
+  "expiredBody": "Linkurile partajate funcționează doar pentru scurt timp. Cere un link nou persoanei care ți l-a trimis.",
+  "errorTitle": "Ceva nu a mers bine",
+  "retry": "Încearcă din nou"
+}

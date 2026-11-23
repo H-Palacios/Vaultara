@@ -1,0 +1,16 @@
+{
+  "page": "Darbinieku dokumenti",
+  "loading": "Ielādē darbinieku dokumentus…",
+  "heading": "{company}: darbinieku dokumenti",
+  "statusOk": "Derīgs",
+  "statusSoon": "Drīz beigsies",
+  "statusExpired": "Beidzies",
+  "locked": "Bloķēts dokuments",
+  "live": "Tieši no Vaultara. Šī saite darbojas līdz {date}.",
+  "empty": "Vēl nav darbinieku dokumentu, ko parādīt.",
+  "errorBody": "Šo lapu neizdevās ielādēt. Pārbaudi savienojumu un mēģini vēlreiz.",
+  "expiredTitle": "Šīs saites derīguma termiņš ir beidzies",
+  "expiredBody": "Kopīgotās saites darbojas tikai īsu laiku. Palūdziet jaunu saiti personai, kas to nosūtīja.",
+  "errorTitle": "Radās kļūda",
+  "retry": "Mēģināt vēlreiz"
+}

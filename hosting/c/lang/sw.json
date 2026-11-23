@@ -1,0 +1,16 @@
+{
+  "page": "Hati za wafanyakazi",
+  "loading": "Inapakia hati za wafanyakazi…",
+  "heading": "{company}: hati za wafanyakazi",
+  "statusOk": "Halali",
+  "statusSoon": "Itaisha hivi karibuni",
+  "statusExpired": "Imeisha",
+  "locked": "Hati iliyofungwa",
+  "live": "Moja kwa moja kutoka Vaultara. Kiungo hiki kinafanya kazi hadi {date}.",
+  "empty": "Bado hakuna hati za wafanyakazi za kuonyesha.",
+  "errorBody": "Hatukuweza kupakia ukurasa huu. Kagua muunganisho wako na ujaribu tena.",
+  "expiredTitle": "Muda wa kiungo hiki umeisha",
+  "expiredBody": "Viungo vilivyoshirikiwa hufanya kazi kwa muda mfupi tu. Muombe aliyekutumia kiungo kipya.",
+  "errorTitle": "Hitilafu fulani imetokea",
+  "retry": "Jaribu tena"
+}

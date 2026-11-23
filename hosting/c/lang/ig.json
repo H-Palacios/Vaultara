@@ -1,0 +1,16 @@
+{
+  "page": "Akwụkwọ ndị ọrụ",
+  "loading": "Na-ebugo akwụkwọ ndị ọrụ…",
+  "heading": "{company}: akwụkwọ ndị ọrụ",
+  "statusOk": "Dị irè",
+  "statusSoon": "Ga-agwụ n'oge na-adịghị anya",
+  "statusExpired": "Agwụla",
+  "locked": "Akwụkwọ akpọchiri",
+  "live": "Ozugbo site na Vaultara. Njikọ a na-arụ ọrụ ruo {date}.",
+  "empty": "Enweghị akwụkwọ ndị ọrụ a ga-egosi ugbu a.",
+  "errorBody": "Anyị enweghị ike ibugo ibe a. Lelee njikọ ịntanetị gị ma nwaa ọzọ.",
+  "expiredTitle": "Njikọ a agwụla",
+  "expiredBody": "Njikọ e kesara na-arụ ọrụ naanị obere oge. Rịọ onye zitere ya ka o zitere gị njikọ ọhụrụ.",
+  "errorTitle": "Ihe adịghị mma mere",
+  "retry": "Nwaa ọzọ"
+}

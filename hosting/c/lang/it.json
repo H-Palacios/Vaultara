@@ -1,0 +1,16 @@
+{
+  "page": "Documenti del personale",
+  "loading": "Caricamento dei documenti del personale…",
+  "heading": "{company}: documenti del personale",
+  "statusOk": "In regola",
+  "statusSoon": "In scadenza",
+  "statusExpired": "Scaduto",
+  "locked": "Documento bloccato",
+  "live": "In tempo reale da Vaultara. Questo link funziona fino al {date}.",
+  "empty": "Ancora nessun documento del personale da mostrare.",
+  "errorBody": "Non è stato possibile caricare la pagina. Controlla la connessione e riprova.",
+  "expiredTitle": "Questo link è scaduto",
+  "expiredBody": "I link condivisi funzionano solo per poco tempo. Chiedi un nuovo link alla persona che te l'ha inviato.",
+  "errorTitle": "Si è verificato un problema",
+  "retry": "Riprova"
+}

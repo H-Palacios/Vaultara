@@ -1,0 +1,16 @@
+{
+  "page": "Staff documents",
+  "loading": "Loading staff documents...",
+  "heading": "{company}: staff documents",
+  "statusOk": "Up to date",
+  "statusSoon": "Expiring soon",
+  "statusExpired": "Expired",
+  "locked": "Locked document",
+  "live": "Live from Vaultara. This link stops working on {date}.",
+  "empty": "No staff documents to show yet.",
+  "errorBody": "We could not load this page. Check your connection and try again.",
+  "expiredTitle": "This link has expired",
+  "expiredBody": "Shared links only work for a short time. Ask the person who sent it for a new link.",
+  "errorTitle": "Something went wrong",
+  "retry": "Try again"
+}

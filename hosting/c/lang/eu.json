@@ -1,0 +1,16 @@
+{
+  "page": "Langileen dokumentuak",
+  "loading": "Langileen dokumentuak kargatzen…",
+  "heading": "{company}: langileen dokumentuak",
+  "statusOk": "Egunean",
+  "statusSoon": "Laster iraungiko da",
+  "statusExpired": "Iraungita",
+  "locked": "Blokeatutako dokumentua",
+  "live": "Zuzenean Vaultaratik. Esteka honek {date} arte funtzionatzen du.",
+  "empty": "Oraindik ez dago langileen dokumenturik erakusteko.",
+  "errorBody": "Ezin izan dugu orri hau kargatu. Egiaztatu konexioa eta saiatu berriro.",
+  "expiredTitle": "Esteka hau iraungi da",
+  "expiredBody": "Partekatutako estekek denbora laburrez bakarrik funtzionatzen dute. Eskatu esteka berri bat bidali zizun pertsonari.",
+  "errorTitle": "Zerbait gaizki joan da",
+  "retry": "Saiatu berriro"
+}

@@ -1,0 +1,16 @@
+{
+  "page": "Dokumen kakitangan",
+  "loading": "Memuatkan dokumen kakitangan…",
+  "heading": "{company}: dokumen kakitangan",
+  "statusOk": "Sah",
+  "statusSoon": "Akan tamat tidak lama lagi",
+  "statusExpired": "Tamat tempoh",
+  "locked": "Dokumen berkunci",
+  "live": "Terus daripada Vaultara. Pautan ini berfungsi hingga {date}.",
+  "empty": "Belum ada dokumen kakitangan untuk ditunjukkan.",
+  "errorBody": "Halaman ini tidak dapat dimuatkan. Semak sambungan anda dan cuba lagi.",
+  "expiredTitle": "Pautan ini telah tamat tempoh",
+  "expiredBody": "Pautan yang dikongsi hanya berfungsi untuk masa yang singkat. Minta pautan baharu daripada orang yang menghantarnya.",
+  "errorTitle": "Sesuatu tidak kena",
+  "retry": "Cuba lagi"
+}

@@ -1,0 +1,16 @@
+{
+  "page": "Dokumenti zaposlenih",
+  "loading": "Nalaganje dokumentov zaposlenih …",
+  "heading": "{company}: dokumenti zaposlenih",
+  "statusOk": "Veljaven",
+  "statusSoon": "Kmalu poteče",
+  "statusExpired": "Potekel",
+  "locked": "Zaklenjen dokument",
+  "live": "V živo iz Vaultare. Ta povezava deluje do {date}.",
+  "empty": "Ni še dokumentov zaposlenih za prikaz.",
+  "errorBody": "Te strani ni bilo mogoče naložiti. Preverite povezavo in poskusite znova.",
+  "expiredTitle": "Ta povezava je potekla",
+  "expiredBody": "Deljene povezave delujejo le kratek čas. Osebo, ki vam jo je poslala, prosite za novo povezavo.",
+  "errorTitle": "Prišlo je do napake",
+  "retry": "Poskusite znova"
+}

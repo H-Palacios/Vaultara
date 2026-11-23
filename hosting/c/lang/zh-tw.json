@@ -1,0 +1,16 @@
+{
+  "page": "員工證件",
+  "loading": "正在載入員工證件…",
+  "heading": "{company}：員工證件",
+  "statusOk": "有效",
+  "statusSoon": "即將到期",
+  "statusExpired": "已過期",
+  "locked": "已鎖定的證件",
+  "live": "來自 Vaultara 的即時資訊。此連結有效至 {date}。",
+  "empty": "目前沒有可顯示的員工證件。",
+  "errorBody": "無法載入此頁面。請檢查網路後再試一次。",
+  "expiredTitle": "此連結已過期",
+  "expiredBody": "共享連結僅在短時間內有效。請向傳送連結的人索取新連結。",
+  "errorTitle": "發生錯誤",
+  "retry": "再試一次"
+}

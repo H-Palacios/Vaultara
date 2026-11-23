@@ -1,0 +1,16 @@
+{
+  "page": "Töötajate dokumendid",
+  "loading": "Laadin töötajate dokumente…",
+  "heading": "{company}: töötajate dokumendid",
+  "statusOk": "Kehtiv",
+  "statusSoon": "Aegub peagi",
+  "statusExpired": "Aegunud",
+  "locked": "Lukustatud dokument",
+  "live": "Otse Vaultarast. See link töötab kuni {date}.",
+  "empty": "Näidatavaid töötajate dokumente veel pole.",
+  "errorBody": "Seda lehte ei õnnestunud laadida. Kontrolli ühendust ja proovi uuesti.",
+  "expiredTitle": "See link on aegunud",
+  "expiredBody": "Jagatud lingid toimivad ainult lühikest aega. Palu saatjalt uus link.",
+  "errorTitle": "Midagi läks valesti",
+  "retry": "Proovi uuesti"
+}

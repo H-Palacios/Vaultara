@@ -1,0 +1,16 @@
+{
+  "page": "Documentos do persoal",
+  "loading": "Cargando documentos do persoal…",
+  "heading": "{company}: documentos do persoal",
+  "statusOk": "Ao día",
+  "statusSoon": "Caduca pronto",
+  "statusExpired": "Caducado",
+  "locked": "Documento bloqueado",
+  "live": "En directo desde Vaultara. Esta ligazón funciona ata o {date}.",
+  "empty": "Aínda non hai documentos do persoal para mostrar.",
+  "errorBody": "Non puidemos cargar esta páxina. Comproba a conexión e téntao de novo.",
+  "expiredTitle": "Esta ligazón caducou",
+  "expiredBody": "As ligazóns compartidas só funcionan durante pouco tempo. Pídelle unha ligazón nova á persoa que cha enviou.",
+  "errorTitle": "Algo saíu mal",
+  "retry": "Téntao de novo"
+}

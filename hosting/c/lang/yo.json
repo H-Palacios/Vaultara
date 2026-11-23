@@ -1,0 +1,16 @@
+{
+  "page": "Àwọn ìwé òṣìṣẹ́",
+  "loading": "Ń gbé àwọn ìwé òṣìṣẹ́ wá…",
+  "heading": "{company}: àwọn ìwé òṣìṣẹ́",
+  "statusOk": "Ó wúlò",
+  "statusSoon": "Yóò parí láìpẹ́",
+  "statusExpired": "Ti parí",
+  "locked": "Ìwé tí a tì pa",
+  "live": "Tààrà láti Vaultara. Ìjápọ̀ yìí ń ṣiṣẹ́ títí di {date}.",
+  "empty": "Kò sí ìwé òṣìṣẹ́ láti fi hàn síbẹ̀.",
+  "errorBody": "A kò lè gbé ojú-ìwé yìí wá. Ṣàyẹ̀wò ìsopọ̀ rẹ kí o sì gbìyànjú lẹ́ẹ̀kan sí i.",
+  "expiredTitle": "Ọ̀nà asopọ̀ yìí ti parí",
+  "expiredBody": "Àwọn ọ̀nà asopọ̀ tí a pín máa ń ṣiṣẹ́ fún ìgbà díẹ̀ nìkan. Béèrè ọ̀nà asopọ̀ tuntun lọ́wọ́ ẹni tí ó fi ránṣẹ́.",
+  "errorTitle": "Nǹkan kan ṣàṣìṣe",
+  "retry": "Tún gbìyànjú"
+}

@@ -1,0 +1,16 @@
+{
+  "page": "직원 서류",
+  "loading": "직원 서류를 불러오는 중…",
+  "heading": "{company}: 직원 서류",
+  "statusOk": "유효",
+  "statusSoon": "곧 만료",
+  "statusExpired": "만료됨",
+  "locked": "잠긴 서류",
+  "live": "Vaultara에서 실시간으로 보여 줘요. 이 링크는 {date}까지 작동해요.",
+  "empty": "아직 보여 줄 직원 서류가 없어요.",
+  "errorBody": "이 페이지를 불러오지 못했어요. 연결을 확인하고 다시 시도해 주세요.",
+  "expiredTitle": "이 링크가 만료되었습니다",
+  "expiredBody": "공유 링크는 짧은 시간 동안만 작동합니다. 링크를 보낸 사람에게 새 링크를 요청하세요.",
+  "errorTitle": "문제가 발생했습니다",
+  "retry": "다시 시도"
+}

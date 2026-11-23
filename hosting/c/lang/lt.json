@@ -1,0 +1,16 @@
+{
+  "page": "Darbuotojų dokumentai",
+  "loading": "Įkeliami darbuotojų dokumentai…",
+  "heading": "{company}: darbuotojų dokumentai",
+  "statusOk": "Galioja",
+  "statusSoon": "Netrukus baigsis",
+  "statusExpired": "Pasibaigęs",
+  "locked": "Užrakintas dokumentas",
+  "live": "Tiesiogiai iš Vaultara. Ši nuoroda veikia iki {date}.",
+  "empty": "Kol kas nėra darbuotojų dokumentų, kuriuos būtų galima parodyti.",
+  "errorBody": "Šio puslapio įkelti nepavyko. Patikrinkite ryšį ir bandykite dar kartą.",
+  "expiredTitle": "Ši nuoroda nebegalioja",
+  "expiredBody": "Bendrinamos nuorodos veikia tik trumpai. Paprašykite jas atsiuntusio asmens naujos nuorodos.",
+  "errorTitle": "Kažkas nepavyko",
+  "retry": "Bandyti dar kartą"
+}

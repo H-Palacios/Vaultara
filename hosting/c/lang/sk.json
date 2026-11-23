@@ -1,0 +1,16 @@
+{
+  "page": "Doklady zamestnancov",
+  "loading": "Načítavajú sa doklady zamestnancov…",
+  "heading": "{company}: doklady zamestnancov",
+  "statusOk": "Platné",
+  "statusSoon": "Čoskoro vyprší",
+  "statusExpired": "Neplatné",
+  "locked": "Zamknutý doklad",
+  "live": "Naživo z Vaultary. Tento odkaz funguje do {date}.",
+  "empty": "Zatiaľ nie sú žiadne doklady zamestnancov na zobrazenie.",
+  "errorBody": "Túto stránku sa nepodarilo načítať. Skontrolujte pripojenie a skúste to znova.",
+  "expiredTitle": "Platnosť tohto odkazu vypršala",
+  "expiredBody": "Zdieľané odkazy fungujú len krátky čas. Požiadajte osobu, ktorá vám ho poslala, o nový odkaz.",
+  "errorTitle": "Niečo sa pokazilo",
+  "retry": "Skúsiť znova"
+}

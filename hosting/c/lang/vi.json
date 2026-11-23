@@ -1,0 +1,16 @@
+{
+  "page": "Giấy tờ nhân viên",
+  "loading": "Đang tải giấy tờ nhân viên…",
+  "heading": "{company}: giấy tờ nhân viên",
+  "statusOk": "Còn hiệu lực",
+  "statusSoon": "Sắp hết hạn",
+  "statusExpired": "Đã hết hạn",
+  "locked": "Giấy tờ đã khóa",
+  "live": "Trực tiếp từ Vaultara. Liên kết này hoạt động đến {date}.",
+  "empty": "Chưa có giấy tờ nhân viên nào để hiển thị.",
+  "errorBody": "Không tải được trang này. Kiểm tra kết nối và thử lại.",
+  "expiredTitle": "Liên kết này đã hết hạn",
+  "expiredBody": "Liên kết chia sẻ chỉ hoạt động trong thời gian ngắn. Hãy xin người đã gửi liên kết mới.",
+  "errorTitle": "Đã xảy ra lỗi",
+  "retry": "Thử lại"
+}

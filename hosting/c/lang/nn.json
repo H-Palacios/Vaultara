@@ -1,0 +1,16 @@
+{
+  "page": "Dokument for tilsette",
+  "loading": "Lastar inn dokument for tilsette…",
+  "heading": "{company}: dokument for tilsette",
+  "statusOk": "Gyldig",
+  "statusSoon": "Går snart ut",
+  "statusExpired": "Utgått",
+  "locked": "Låst dokument",
+  "live": "Direkte frå Vaultara. Denne lenkja verkar til {date}.",
+  "empty": "Ingen dokument for tilsette å vise enno.",
+  "errorBody": "Vi kunne ikkje laste inn sida. Sjekk tilkoplinga og prøv igjen.",
+  "expiredTitle": "Denne lenka har gått ut",
+  "expiredBody": "Delte lenker verkar berre ei kort stund. Be personen som sende henne, om ei ny lenke.",
+  "errorTitle": "Noko gjekk gale",
+  "retry": "Prøv igjen"
+}

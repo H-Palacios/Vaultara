@@ -1,0 +1,16 @@
+{
+  "page": "Belgeyên karmendan",
+  "loading": "Belgeyên karmendan têne barkirin…",
+  "heading": "{company}: belgeyên karmendan",
+  "statusOk": "Derbasdar",
+  "statusSoon": "Di demek nêzîk de diqede",
+  "statusExpired": "Qediyaye",
+  "locked": "Belgeya kilîtkirî",
+  "live": "Rasterast ji Vaultara. Ev girêdan heta {date} dixebite.",
+  "empty": "Hîn belgeyên karmendan ji bo nîşandanê tune ne.",
+  "errorBody": "Me nikarî vê rûpelê bar bike. Girêdana xwe kontrol bike û dîsa biceribîne.",
+  "expiredTitle": "Dema vê girêdanê derbas bûye",
+  "expiredBody": "Girêdanên parvekirî tenê ji bo demeke kurt dixebitin. Ji kesê ku ew şandiye girêdaneke nû bixwaze.",
+  "errorTitle": "Tiştek xelet çû",
+  "retry": "Dîsa biceribîne"
+}

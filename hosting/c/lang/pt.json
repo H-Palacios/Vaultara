@@ -1,0 +1,16 @@
+{
+  "page": "Documentos dos funcionários",
+  "loading": "A carregar documentos dos funcionários…",
+  "heading": "{company}: documentos dos funcionários",
+  "statusOk": "Em dia",
+  "statusSoon": "Expira em breve",
+  "statusExpired": "Expirado",
+  "locked": "Documento bloqueado",
+  "live": "Em direto do Vaultara. Esta ligação funciona até {date}.",
+  "empty": "Ainda não há documentos de funcionários para mostrar.",
+  "errorBody": "Não foi possível carregar esta página. Verifique a ligação à internet e tente novamente.",
+  "expiredTitle": "Esta ligação expirou",
+  "expiredBody": "As ligações partilhadas só funcionam durante pouco tempo. Peça uma nova ligação à pessoa que a enviou.",
+  "errorTitle": "Algo correu mal",
+  "retry": "Tentar novamente"
+}

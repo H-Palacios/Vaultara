@@ -1,0 +1,16 @@
+{
+  "page": "Doiciméid foirne",
+  "loading": "Doiciméid foirne á lódáil…",
+  "heading": "{company}: doiciméid foirne",
+  "statusOk": "Cothrom le dáta",
+  "statusSoon": "Ag dul in éag go luath",
+  "statusExpired": "Imithe in éag",
+  "locked": "Doiciméad faoi ghlas",
+  "live": "Beo ó Vaultara. Oibríonn an nasc seo go dtí {date}.",
+  "empty": "Níl aon doiciméid foirne le taispeáint fós.",
+  "errorBody": "Níorbh fhéidir an leathanach seo a lódáil. Seiceáil do cheangal agus bain triail eile as.",
+  "expiredTitle": "Tá an nasc seo imithe in éag",
+  "expiredBody": "Ní oibríonn naisc chomhroinnte ach ar feadh tamaill ghearr. Iarr nasc nua ar an duine a sheol chugat é.",
+  "errorTitle": "Tharla earráid",
+  "retry": "Bain triail eile as"
+}

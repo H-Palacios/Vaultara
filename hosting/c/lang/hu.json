@@ -1,0 +1,16 @@
+{
+  "page": "Munkatársi dokumentumok",
+  "loading": "Munkatársi dokumentumok betöltése…",
+  "heading": "{company}: munkatársi dokumentumok",
+  "statusOk": "Érvényes",
+  "statusSoon": "Hamarosan lejár",
+  "statusExpired": "Lejárt",
+  "locked": "Zárolt dokumentum",
+  "live": "Élőben a Vaultarából. Ez a link {date}-ig működik.",
+  "empty": "Még nincs megjeleníthető munkatársi dokumentum.",
+  "errorBody": "Az oldalt nem sikerült betölteni. Ellenőrizd a kapcsolatot, és próbáld újra.",
+  "expiredTitle": "Ez a link lejárt",
+  "expiredBody": "A megosztott linkek csak rövid ideig működnek. Kérjen új linket attól, aki elküldte.",
+  "errorTitle": "Hiba történt",
+  "retry": "Próbálja újra"
+}

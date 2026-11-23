@@ -1,0 +1,16 @@
+{
+  "page": "Dokumenty pracowników",
+  "loading": "Wczytywanie dokumentów pracowników…",
+  "heading": "{company}: dokumenty pracowników",
+  "statusOk": "Ważny",
+  "statusSoon": "Wkrótce wygaśnie",
+  "statusExpired": "Wygasły",
+  "locked": "Zablokowany dokument",
+  "live": "Na żywo z Vaultara. Ten link działa do {date}.",
+  "empty": "Nie ma jeszcze dokumentów pracowników do pokazania.",
+  "errorBody": "Nie udało się wczytać tej strony. Sprawdź połączenie i spróbuj ponownie.",
+  "expiredTitle": "Ten link wygasł",
+  "expiredBody": "Udostępnione linki działają tylko przez krótki czas. Poproś osobę, która go wysłała, o nowy link.",
+  "errorTitle": "Coś poszło nie tak",
+  "retry": "Spróbuj ponownie"
+}

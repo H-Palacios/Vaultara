@@ -1,0 +1,16 @@
+{
+  "page": "Dokumentet e stafit",
+  "loading": "Po ngarkohen dokumentet e stafit…",
+  "heading": "{company}: dokumentet e stafit",
+  "statusOk": "Në rregull",
+  "statusSoon": "Skadon së shpejti",
+  "statusExpired": "Ka skaduar",
+  "locked": "Dokument i kyçur",
+  "live": "Drejtpërdrejt nga Vaultara. Kjo lidhje punon deri më {date}.",
+  "empty": "Ende nuk ka dokumente stafi për të shfaqur.",
+  "errorBody": "Nuk e ngarkuam dot këtë faqe. Kontrollo lidhjen dhe provo përsëri.",
+  "expiredTitle": "Kjo lidhje ka skaduar",
+  "expiredBody": "Lidhjet e ndara funksionojnë vetëm për një kohë të shkurtër. Kërkojini personit që jua dërgoi një lidhje të re.",
+  "errorTitle": "Diçka shkoi keq",
+  "retry": "Provo përsëri"
+}

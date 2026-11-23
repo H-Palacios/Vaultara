@@ -1,0 +1,16 @@
+{
+  "page": "Xodim hujjatlari",
+  "loading": "Xodim hujjatlari yuklanmoqda…",
+  "heading": "{company}: xodim hujjatlari",
+  "statusOk": "Amal qiladi",
+  "statusSoon": "Tez orada tugaydi",
+  "statusExpired": "Muddati o‘tgan",
+  "locked": "Qulflangan hujjat",
+  "live": "To‘g‘ridan-to‘g‘ri Vaultara’dan. Bu havola {date} gacha ishlaydi.",
+  "empty": "Hozircha ko‘rsatiladigan xodim hujjatlari yo‘q.",
+  "errorBody": "Bu sahifani yuklab bo‘lmadi. Ulanishni tekshirib, qayta urinib ko‘ring.",
+  "expiredTitle": "Bu havolaning muddati tugagan",
+  "expiredBody": "Ulashilgan havolalar faqat qisqa vaqt ishlaydi. Uni yuborgan odamdan yangi havola soʻrang.",
+  "errorTitle": "Nimadir xato ketdi",
+  "retry": "Qayta urinish"
+}

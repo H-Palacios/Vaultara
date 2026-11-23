@@ -1,0 +1,16 @@
+{
+  "page": "Dokumenti osoblja",
+  "loading": "Učitavanje dokumenata osoblja…",
+  "heading": "{company}: dokumenti osoblja",
+  "statusOk": "Važeće",
+  "statusSoon": "Uskoro ističe",
+  "statusExpired": "Isteklo",
+  "locked": "Zaključan dokument",
+  "live": "Uživo iz Vaultare. Ovaj link radi do {date}.",
+  "empty": "Još nema dokumenata osoblja za prikaz.",
+  "errorBody": "Nismo mogli da učitamo ovu stranicu. Proverite vezu i pokušajte ponovo.",
+  "expiredTitle": "Ovaj link je istekao",
+  "expiredBody": "Deljeni linkovi rade samo kratko vreme. Zamolite osobu koja vam ga je poslala za novi link.",
+  "errorTitle": "Nešto nije u redu",
+  "retry": "Pokušajte ponovo"
+}

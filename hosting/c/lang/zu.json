@@ -1,0 +1,16 @@
+{
+  "page": "Amadokhumenti abasebenzi",
+  "loading": "Kulayishwa amadokhumenti abasebenzi…",
+  "heading": "{company}: amadokhumenti abasebenzi",
+  "statusOk": "Liyasebenza",
+  "statusSoon": "Lizophelelwa maduze",
+  "statusExpired": "Liphelelwe yisikhathi",
+  "locked": "Idokhumenti ekhiyiwe",
+  "live": "Ngqo ku-Vaultara. Lesi sixhumanisi sisebenza kuze kube ngu-{date}.",
+  "empty": "Awekho amadokhumenti abasebenzi okubonisa okwamanje.",
+  "errorBody": "Asikwazanga ukulayisha leli khasi. Hlola uxhumano lwakho bese uzama futhi.",
+  "expiredTitle": "Lesi sixhumanisi siphelelwe yisikhathi",
+  "expiredBody": "Izixhumanisi ezabelwe zisebenza isikhathi esifushane kuphela. Cela isixhumanisi esisha kumuntu osithumelile.",
+  "errorTitle": "Kukhona okungahambanga kahle",
+  "retry": "Zama futhi"
+}

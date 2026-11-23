@@ -1,0 +1,16 @@
+{
+  "page": "员工证件",
+  "loading": "正在加载员工证件…",
+  "heading": "{company}：员工证件",
+  "statusOk": "有效",
+  "statusSoon": "即将到期",
+  "statusExpired": "已过期",
+  "locked": "已锁定的证件",
+  "live": "来自 Vaultara 的实时信息。此链接有效期至 {date}。",
+  "empty": "暂无可显示的员工证件。",
+  "errorBody": "无法加载此页面。请检查网络后重试。",
+  "expiredTitle": "此链接已过期",
+  "expiredBody": "共享链接仅在短时间内有效。请向发送链接的人索取新链接。",
+  "errorTitle": "出错了",
+  "retry": "重试"
+}

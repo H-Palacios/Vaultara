@@ -1,0 +1,16 @@
+{
+  "page": "Personeelsdocumenten",
+  "loading": "Personeelsdocumenten laden…",
+  "heading": "{company}: personeelsdocumenten",
+  "statusOk": "Geldig",
+  "statusSoon": "Verloopt binnenkort",
+  "statusExpired": "Verlopen",
+  "locked": "Vergrendeld document",
+  "live": "Live uit Vaultara. Deze link werkt tot {date}.",
+  "empty": "Nog geen personeelsdocumenten om te tonen.",
+  "errorBody": "We konden deze pagina niet laden. Controleer je verbinding en probeer het opnieuw.",
+  "expiredTitle": "Deze link is verlopen",
+  "expiredBody": "Gedeelde links werken maar korte tijd. Vraag de persoon die hem stuurde om een nieuwe link.",
+  "errorTitle": "Er is iets misgegaan",
+  "retry": "Opnieuw proberen"
+}

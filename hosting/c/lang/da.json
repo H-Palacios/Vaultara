@@ -1,0 +1,16 @@
+{
+  "page": "Medarbejderdokumenter",
+  "loading": "Indlæser medarbejderdokumenter…",
+  "heading": "{company}: medarbejderdokumenter",
+  "statusOk": "Gyldig",
+  "statusSoon": "Udløber snart",
+  "statusExpired": "Udløbet",
+  "locked": "Låst dokument",
+  "live": "Live fra Vaultara. Dette link virker indtil {date}.",
+  "empty": "Der er endnu ingen medarbejderdokumenter at vise.",
+  "errorBody": "Vi kunne ikke indlæse siden. Tjek din forbindelse, og prøv igen.",
+  "expiredTitle": "Dette link er udløbet",
+  "expiredBody": "Delte links virker kun i kort tid. Bed den person, der sendte det, om et nyt link.",
+  "errorTitle": "Noget gik galt",
+  "retry": "Prøv igen"
+}

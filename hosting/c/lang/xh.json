@@ -1,0 +1,16 @@
+{
+  "page": "Amaxwebhu abasebenzi",
+  "loading": "Kulayishwa amaxwebhu abasebenzi…",
+  "heading": "{company}: amaxwebhu abasebenzi",
+  "statusOk": "Liyasebenza",
+  "statusSoon": "Liza kuphela kungekudala",
+  "statusExpired": "Liphelelwe",
+  "locked": "Uxwebhu olutshixiweyo",
+  "live": "Ngqo kwi-Vaultara. Eli khonkco lisebenza kude kube ngu-{date}.",
+  "empty": "Akukabikho maxwebhu abasebenzi okubonisa.",
+  "errorBody": "Asikwazanga ukulayisha eli phepha. Jonga uqhagamshelo lwakho uze uzame kwakhona.",
+  "expiredTitle": "Eli khonkco liphelelwe lixesha",
+  "expiredBody": "Amakhonkco ekwabelwana ngawo asebenza ixesha elifutshane kuphela. Cela ikhonkco elitsha kumntu olithumeleyo.",
+  "errorTitle": "Kukho into engahambanga kakuhle",
+  "retry": "Zama kwakhona"
+}

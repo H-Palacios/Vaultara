@@ -1,0 +1,16 @@
+{
+  "page": "Mitarbeiterdokumente",
+  "loading": "Mitarbeiterdokumente werden geladen…",
+  "heading": "{company}: Mitarbeiterdokumente",
+  "statusOk": "Gültig",
+  "statusSoon": "Läuft bald ab",
+  "statusExpired": "Abgelaufen",
+  "locked": "Gesperrtes Dokument",
+  "live": "Live aus Vaultara. Dieser Link funktioniert bis {date}.",
+  "empty": "Noch keine Mitarbeiterdokumente zum Anzeigen.",
+  "errorBody": "Diese Seite konnte nicht geladen werden. Prüfe deine Verbindung und versuche es erneut.",
+  "expiredTitle": "Dieser Link ist abgelaufen",
+  "expiredBody": "Geteilte Links funktionieren nur für kurze Zeit. Bitte die Person, die ihn dir geschickt hat, um einen neuen Link.",
+  "errorTitle": "Etwas ist schiefgelaufen",
+  "retry": "Erneut versuchen"
+}

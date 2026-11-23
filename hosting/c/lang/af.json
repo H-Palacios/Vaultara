@@ -1,0 +1,16 @@
+{
+  "page": "Personeeldokumente",
+  "loading": "Laai personeeldokumente…",
+  "heading": "{company}: personeeldokumente",
+  "statusOk": "Op datum",
+  "statusSoon": "Verval binnekort",
+  "statusExpired": "Verval",
+  "locked": "Geslote dokument",
+  "live": "Regstreeks uit Vaultara. Hierdie skakel werk tot {date}.",
+  "empty": "Nog geen personeeldokumente om te wys nie.",
+  "errorBody": "Ons kon nie hierdie bladsy laai nie. Kontroleer jou verbinding en probeer weer.",
+  "expiredTitle": "Hierdie skakel het verval",
+  "expiredBody": "Gedeelde skakels werk net vir 'n kort tydjie. Vra die persoon wat dit gestuur het vir 'n nuwe skakel.",
+  "errorTitle": "Iets het verkeerd geloop",
+  "retry": "Probeer weer"
+}

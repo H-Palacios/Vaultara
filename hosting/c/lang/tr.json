@@ -1,0 +1,16 @@
+{
+  "page": "Personel belgeleri",
+  "loading": "Personel belgeleri yükleniyor…",
+  "heading": "{company}: personel belgeleri",
+  "statusOk": "Geçerli",
+  "statusSoon": "Yakında bitiyor",
+  "statusExpired": "Süresi doldu",
+  "locked": "Kilitli belge",
+  "live": "Doğrudan Vaultara'dan. Bu bağlantı {date} tarihine kadar çalışır.",
+  "empty": "Henüz gösterilecek personel belgesi yok.",
+  "errorBody": "Bu sayfa yüklenemedi. Bağlantını kontrol edip yeniden dene.",
+  "expiredTitle": "Bu bağlantının süresi doldu",
+  "expiredBody": "Paylaşılan bağlantılar yalnızca kısa bir süre çalışır. Gönderen kişiden yeni bir bağlantı isteyin.",
+  "errorTitle": "Bir şeyler ters gitti",
+  "retry": "Tekrar deneyin"
+}

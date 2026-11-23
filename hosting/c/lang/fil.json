@@ -1,0 +1,16 @@
+{
+  "page": "Mga dokumento ng staff",
+  "loading": "Nilo-load ang mga dokumento ng staff…",
+  "heading": "{company}: mga dokumento ng staff",
+  "statusOk": "Updated",
+  "statusSoon": "Mag-e-expire na",
+  "statusExpired": "Expired",
+  "locked": "Naka-lock na dokumento",
+  "live": "Live mula sa Vaultara. Gumagana ang link na ito hanggang {date}.",
+  "empty": "Wala pang dokumento ng staff na maipapakita.",
+  "errorBody": "Hindi namin ma-load ang page na ito. Tingnan ang koneksyon mo at subukan ulit.",
+  "expiredTitle": "Nag-expire na ang link na ito",
+  "expiredBody": "Gumagana lang nang maikling panahon ang mga ibinahaging link. Humingi ng bagong link sa taong nagpadala nito.",
+  "errorTitle": "May nangyaring mali",
+  "retry": "Subukang muli"
+}

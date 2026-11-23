@@ -1,0 +1,16 @@
+{
+  "page": "Ansattdokumenter",
+  "loading": "Laster inn ansattdokumenter…",
+  "heading": "{company}: ansattdokumenter",
+  "statusOk": "Gyldig",
+  "statusSoon": "Utløper snart",
+  "statusExpired": "Utløpt",
+  "locked": "Låst dokument",
+  "live": "Direkte fra Vaultara. Denne lenken virker til {date}.",
+  "empty": "Ingen ansattdokumenter å vise ennå.",
+  "errorBody": "Vi kunne ikke laste inn siden. Sjekk tilkoblingen og prøv igjen.",
+  "expiredTitle": "Denne lenken har utløpt",
+  "expiredBody": "Delte lenker virker bare en kort stund. Be personen som sendte den, om en ny lenke.",
+  "errorTitle": "Noe gikk galt",
+  "retry": "Prøv igjen"
+}

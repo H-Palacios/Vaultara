@@ -1,0 +1,16 @@
+{
+  "page": "Henkilöstön asiakirjat",
+  "loading": "Ladataan henkilöstön asiakirjoja…",
+  "heading": "{company}: henkilöstön asiakirjat",
+  "statusOk": "Voimassa",
+  "statusSoon": "Vanhenee pian",
+  "statusExpired": "Vanhentunut",
+  "locked": "Lukittu asiakirja",
+  "live": "Suoraan Vaultarasta. Tämä linkki toimii {date} asti.",
+  "empty": "Näytettäviä henkilöstön asiakirjoja ei vielä ole.",
+  "errorBody": "Sivua ei voitu ladata. Tarkista yhteys ja yritä uudelleen.",
+  "expiredTitle": "Tämä linkki on vanhentunut",
+  "expiredBody": "Jaetut linkit toimivat vain lyhyen aikaa. Pyydä lähettäjältä uusi linkki.",
+  "errorTitle": "Jokin meni pieleen",
+  "retry": "Yritä uudelleen"
+}

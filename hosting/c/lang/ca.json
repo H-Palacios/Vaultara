@@ -1,0 +1,16 @@
+{
+  "page": "Documents del personal",
+  "loading": "S'estan carregant els documents del personal…",
+  "heading": "{company}: documents del personal",
+  "statusOk": "Al dia",
+  "statusSoon": "Caduca aviat",
+  "statusExpired": "Caducat",
+  "locked": "Document bloquejat",
+  "live": "En directe des de Vaultara. Aquest enllaç funciona fins al {date}.",
+  "empty": "Encara no hi ha documents del personal per mostrar.",
+  "errorBody": "No hem pogut carregar aquesta pàgina. Comprova la connexió i torna-ho a provar.",
+  "expiredTitle": "Aquest enllaç ha caducat",
+  "expiredBody": "Els enllaços compartits només funcionen durant poc temps. Demana un enllaç nou a la persona que te l'ha enviat.",
+  "errorTitle": "Alguna cosa no ha anat bé",
+  "retry": "Torna-ho a provar"
+}

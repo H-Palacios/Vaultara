@@ -1,0 +1,16 @@
+{
+  "page": "Takardun ma'aikata",
+  "loading": "Ana loda takardun ma'aikata…",
+  "heading": "{company}: takardun ma'aikata",
+  "statusOk": "Kan lokaci",
+  "statusSoon": "Zai ƙare ba da daɗewa ba",
+  "statusExpired": "Ya ƙare",
+  "locked": "Takarda a kulle",
+  "live": "Kai tsaye daga Vaultara. Wannan hanya tana aiki har {date}.",
+  "empty": "Babu takardun ma'aikata da za a nuna tukuna.",
+  "errorBody": "Ba mu iya loda wannan shafi ba. Duba haɗinka ka sake gwadawa.",
+  "expiredTitle": "Wannan hanyar haɗi ta ƙare",
+  "expiredBody": "Hanyoyin haɗi da aka raba suna aiki na ɗan lokaci kaɗan kawai. Ka nemi sabuwar hanyar haɗi daga wanda ya aiko maka.",
+  "errorTitle": "Wani abu ya faru ba daidai ba",
+  "retry": "Sake gwadawa"
+}
