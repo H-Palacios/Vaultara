@@ -87,6 +87,52 @@ class PeopleRepository {
     return person;
   }
 
+  /// Adds several people in one write, at most as many as the plan still
+  /// has room for, each with the least used colour. Returns how many were
+  /// added.
+  static Future<int> addMany(
+    List<({String name, String? email})> entries, {
+    required PlanTier tier,
+    required bool emailReminders,
+  }) async {
+    final collection = _collection();
+    if (collection == null || entries.isEmpty) return 0;
+    final room = limitFor(tier) - people.value.length;
+    if (room <= 0) return 0;
+    final uses = List<int>.filled(8, 0);
+    for (final p in people.value) {
+      if (p.colourIndex >= 0 && p.colourIndex < uses.length) {
+        uses[p.colourIndex]++;
+      }
+    }
+    final batch = FirebaseFirestore.instance.batch();
+    var added = 0;
+    for (final entry in entries.take(room)) {
+      final name = entry.name.trim();
+      if (name.isEmpty) continue;
+      var colour = 0;
+      for (var i = 1; i < uses.length; i++) {
+        if (uses[i] < uses[colour]) colour = i;
+      }
+      uses[colour]++;
+      final email = Person.cleanEmail(entry.email);
+      final ref = collection.doc();
+      batch.set(
+        ref,
+        Person(
+          id: ref.id,
+          name: name,
+          colourIndex: colour,
+          email: email,
+          emailReminders: email != null && emailReminders,
+        ).toMap(),
+      );
+      added++;
+    }
+    if (added > 0) await batch.commit();
+    return added;
+  }
+
   static Future<void> rename(Person person, String name) async {
     final collection = _collection();
     final trimmed = name.trim();
