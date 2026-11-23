@@ -29,5 +29,11 @@
   "invalidLinkBody": "אפשר לכבות את הסיכום החודשי ב-Vaultara תחת התראות.",
   "calendarName": "תאריכי תפוגה של Vaultara",
   "calendarEventTitle": "{name} פוקע",
-  "calendarLockedTitle": "רשומה נעולה פוקעת"
+  "calendarLockedTitle": "רשומה נעולה פוקעת",
+  "calendarRenewTitle": "לחדש בקרוב: {name}",
+  "calendarRenewLocked": "לחדש בקרוב רשומה נעולה",
+  "calendarHiddenTitle": "תוקף מסמך פג",
+  "calendarHiddenRenew": "חידוש מסמך מתקרב",
+  "calendarTripTitle": "נסיעה: {name}",
+  "calendarTripHidden": "נסיעה"
 }

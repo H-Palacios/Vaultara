@@ -29,5 +29,11 @@
   "invalidLinkBody": "Tu dikarî kurteya mehane di Vaultara de di bin Agahdarî de bigirî.",
   "calendarName": "Dîrokên bidawîbûnê yên Vaultara",
   "calendarEventTitle": "{name} bidawî dibe",
-  "calendarLockedTitle": "Tomareke kilîtkirî bidawî dibe"
+  "calendarLockedTitle": "Tomareke kilîtkirî bidawî dibe",
+  "calendarRenewTitle": "{name} zû nû bike",
+  "calendarRenewLocked": "Tomareke kilîtkirî zû nû bike",
+  "calendarHiddenTitle": "Dema belgeyê diqede",
+  "calendarHiddenRenew": "Nûkirina belgeyê nêzîk e",
+  "calendarTripTitle": "Rêwîtî: {name}",
+  "calendarTripHidden": "Rêwîtî"
 }

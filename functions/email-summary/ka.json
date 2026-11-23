@@ -29,5 +29,11 @@
   "invalidLinkBody": "ყოველთვიური შეჯამების გამორთვა შეგიძლიათ Vaultara-ში, შეტყობინებებში.",
   "calendarName": "Vaultara-ს ვადის გასვლის თარიღები",
   "calendarEventTitle": "{name} იწურება",
-  "calendarLockedTitle": "ჩაკეტილი ჩანაწერი იწურება"
+  "calendarLockedTitle": "ჩაკეტილი ჩანაწერი იწურება",
+  "calendarRenewTitle": "მალე განაახლეთ {name}",
+  "calendarRenewLocked": "მალე განაახლეთ ჩაკეტილი ჩანაწერი",
+  "calendarHiddenTitle": "დოკუმენტს ვადა გასდის",
+  "calendarHiddenRenew": "დოკუმენტის განახლება ახლოვდება",
+  "calendarTripTitle": "მოგზაურობა: {name}",
+  "calendarTripHidden": "მოგზაურობა"
 }

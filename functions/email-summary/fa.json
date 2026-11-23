@@ -29,5 +29,11 @@
   "invalidLinkBody": "می‌توانید خلاصه ماهانه را در Vaultara از بخش اعلان‌ها خاموش کنید.",
   "calendarName": "تاریخ‌های انقضای Vaultara",
   "calendarEventTitle": "{name} منقضی می‌شود",
-  "calendarLockedTitle": "رکورد قفل‌شده منقضی می‌شود"
+  "calendarLockedTitle": "رکورد قفل‌شده منقضی می‌شود",
+  "calendarRenewTitle": "{name} را به‌زودی تمدید کنید",
+  "calendarRenewLocked": "یک سابقهٔ قفل‌شده را به‌زودی تمدید کنید",
+  "calendarHiddenTitle": "سند منقضی می‌شود",
+  "calendarHiddenRenew": "زمان تمدید سند نزدیک است",
+  "calendarTripTitle": "سفر: {name}",
+  "calendarTripHidden": "سفر"
 }

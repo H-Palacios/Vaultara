@@ -29,5 +29,11 @@
   "invalidLinkBody": "Waxaad damin kartaa soo koobidda bishii Vaultara ee hoos Ogeysiisyada.",
   "calendarName": "Taariikhaha dhicista Vaultara",
   "calendarEventTitle": "{name} wuu dhacayaa",
-  "calendarLockedTitle": "Diiwaan xidhan ayaa dhacaya"
+  "calendarLockedTitle": "Diiwaan xidhan ayaa dhacaya",
+  "calendarRenewTitle": "Dhawaan cusboonaysii {name}",
+  "calendarRenewLocked": "Dhawaan cusboonaysii diiwaan xiran",
+  "calendarHiddenTitle": "Dukumentigu wuu dhacayaa",
+  "calendarHiddenRenew": "Cusboonaysiinta dukumentiga ayaa soo dhow",
+  "calendarTripTitle": "Safar: {name}",
+  "calendarTripHidden": "Safar"
 }

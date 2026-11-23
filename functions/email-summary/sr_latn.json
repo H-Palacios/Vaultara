@@ -29,5 +29,11 @@
   "invalidLinkBody": "Mesečni rezime možete isključiti u aplikaciji Vaultara, u odeljku Obaveštenja.",
   "calendarName": "Datumi isteka u aplikaciji Vaultara",
   "calendarEventTitle": "Ističe: {name}",
-  "calendarLockedTitle": "Ističe zaključan zapis"
+  "calendarLockedTitle": "Ističe zaključan zapis",
+  "calendarRenewTitle": "Obnovite {name} uskoro",
+  "calendarRenewLocked": "Obnovite zaključan zapis uskoro",
+  "calendarHiddenTitle": "Dokument ističe",
+  "calendarHiddenRenew": "Bliži se obnova dokumenta",
+  "calendarTripTitle": "Putovanje: {name}",
+  "calendarTripHidden": "Putovanje"
 }

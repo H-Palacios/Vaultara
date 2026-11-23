@@ -29,5 +29,11 @@
   "invalidLinkBody": "You can turn off the monthly summary in Vaultara under Notifications.",
   "calendarName": "Vaultara expiry dates",
   "calendarEventTitle": "{name} expires",
-  "calendarLockedTitle": "Locked record expires"
+  "calendarLockedTitle": "Locked record expires",
+  "calendarRenewTitle": "Renew {name} soon",
+  "calendarRenewLocked": "Renew a locked record soon",
+  "calendarHiddenTitle": "Document expires",
+  "calendarHiddenRenew": "Document renewal coming up",
+  "calendarTripTitle": "Trip: {name}",
+  "calendarTripHidden": "Trip"
 }

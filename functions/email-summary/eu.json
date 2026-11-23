@@ -29,5 +29,11 @@
   "invalidLinkBody": "Hileroko laburpena desaktibatu dezakezu Vaultaran, Jakinarazpenak atalean.",
   "calendarName": "Vaultara iraungitze-datak",
   "calendarEventTitle": "{name} iraungitzen da",
-  "calendarLockedTitle": "Blokeatutako erregistroa iraungitzen da"
+  "calendarLockedTitle": "Blokeatutako erregistroa iraungitzen da",
+  "calendarRenewTitle": "Berritu {name} laster",
+  "calendarRenewLocked": "Berritu laster blokeatutako erregistro bat",
+  "calendarHiddenTitle": "Dokumentu bat iraungitzen da",
+  "calendarHiddenRenew": "Dokumentu baten berritzea hurbil dago",
+  "calendarTripTitle": "Bidaia: {name}",
+  "calendarTripHidden": "Bidaia"
 }

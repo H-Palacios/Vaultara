@@ -29,5 +29,11 @@
   "invalidLinkBody": "Je kunt het maandelijkse overzicht uitzetten in Vaultara onder Meldingen.",
   "calendarName": "Vaultara-vervaldata",
   "calendarEventTitle": "{name} verloopt",
-  "calendarLockedTitle": "Vergrendeld record verloopt"
+  "calendarLockedTitle": "Vergrendeld record verloopt",
+  "calendarRenewTitle": "{name} binnenkort verlengen",
+  "calendarRenewLocked": "Binnenkort een vergrendeld record verlengen",
+  "calendarHiddenTitle": "Document verloopt",
+  "calendarHiddenRenew": "Verlenging van een document komt eraan",
+  "calendarTripTitle": "Reis: {name}",
+  "calendarTripHidden": "Reis"
 }

@@ -29,5 +29,11 @@
   "invalidLinkBody": "دەتوانیت پوختەی مانگانە لە Vaultara لە بەشی ئاگادارکردنەوەکان بکوژێنیتەوە.",
   "calendarName": "ڕێکەوتەکانی بەسەرچوونی Vaultara",
   "calendarEventTitle": "{name} بەسەر دەچێت",
-  "calendarLockedTitle": "تۆماری قفڵکراو بەسەر دەچێت"
+  "calendarLockedTitle": "تۆماری قفڵکراو بەسەر دەچێت",
+  "calendarRenewTitle": "بەم زووانە {name} نوێ بکەرەوە",
+  "calendarRenewLocked": "بەم زووانە تۆمارێکی داخراو نوێ بکەرەوە",
+  "calendarHiddenTitle": "بەڵگەنامە بەسەردەچێت",
+  "calendarHiddenRenew": "نوێکردنەوەی بەڵگەنامە نزیک دەبێتەوە",
+  "calendarTripTitle": "گەشت: {name}",
+  "calendarTripHidden": "گەشت"
 }

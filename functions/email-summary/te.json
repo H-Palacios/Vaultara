@@ -29,5 +29,11 @@
   "invalidLinkBody": "మీరు Vaultaraలో నోటిఫికేషన్‌ల కింద నెలవారీ సారాంశాన్ని ఆఫ్ చేయవచ్చు.",
   "calendarName": "Vaultara గడువు తేదీలు",
   "calendarEventTitle": "{name} గడువు ముగుస్తుంది",
-  "calendarLockedTitle": "లాక్ చేసిన రికార్డు గడువు ముగుస్తుంది"
+  "calendarLockedTitle": "లాక్ చేసిన రికార్డు గడువు ముగుస్తుంది",
+  "calendarRenewTitle": "{name} త్వరలో పునరుద్ధరించండి",
+  "calendarRenewLocked": "లాక్ చేసిన రికార్డును త్వరలో పునరుద్ధరించండి",
+  "calendarHiddenTitle": "పత్రం గడువు ముగుస్తుంది",
+  "calendarHiddenRenew": "పత్రం పునరుద్ధరణ దగ్గర పడింది",
+  "calendarTripTitle": "ప్రయాణం: {name}",
+  "calendarTripHidden": "ప్రయాణం"
 }

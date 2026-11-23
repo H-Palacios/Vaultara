@@ -29,5 +29,11 @@
   "invalidLinkBody": "ඔබට Vaultara හි දැනුම්දීම් යටතේ මාසික සාරාංශය අක්‍රිය කළ හැක.",
   "calendarName": "Vaultara කල් ඉකුත් වන දින",
   "calendarEventTitle": "{name} කල් ඉකුත් වේ",
-  "calendarLockedTitle": "අගුළු දැමූ වාර්තාවක් කල් ඉකුත් වේ"
+  "calendarLockedTitle": "අගුළු දැමූ වාර්තාවක් කල් ඉකුත් වේ",
+  "calendarRenewTitle": "{name} ඉක්මනින් අලුත් කරන්න",
+  "calendarRenewLocked": "අගුළු දැමූ වාර්තාවක් ඉක්මනින් අලුත් කරන්න",
+  "calendarHiddenTitle": "ලේඛනය කල් ඉකුත් වේ",
+  "calendarHiddenRenew": "ලේඛන අලුත් කිරීම ළඟයි",
+  "calendarTripTitle": "ගමන: {name}",
+  "calendarTripHidden": "ගමන"
 }

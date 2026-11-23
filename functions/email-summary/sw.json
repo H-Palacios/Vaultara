@@ -29,5 +29,11 @@
   "invalidLinkBody": "Unaweza kuzima muhtasari wa kila mwezi kwenye Vaultara chini ya Arifa.",
   "calendarName": "Tarehe za mwisho wa muda za Vaultara",
   "calendarEventTitle": "{name} inaisha muda",
-  "calendarLockedTitle": "Rekodi iliyofungwa inaisha muda"
+  "calendarLockedTitle": "Rekodi iliyofungwa inaisha muda",
+  "calendarRenewTitle": "Huisha {name} hivi karibuni",
+  "calendarRenewLocked": "Huisha rekodi iliyofungwa hivi karibuni",
+  "calendarHiddenTitle": "Hati inaisha muda",
+  "calendarHiddenRenew": "Kuhuisha hati kunakaribia",
+  "calendarTripTitle": "Safari: {name}",
+  "calendarTripHidden": "Safari"
 }

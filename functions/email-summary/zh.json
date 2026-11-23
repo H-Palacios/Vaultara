@@ -29,5 +29,11 @@
   "invalidLinkBody": "您可以在 Vaultara 的通知中关闭每月摘要。",
   "calendarName": "Vaultara 到期日期",
   "calendarEventTitle": "{name} 到期",
-  "calendarLockedTitle": "已锁定的记录到期"
+  "calendarLockedTitle": "已锁定的记录到期",
+  "calendarRenewTitle": "即将续期 {name}",
+  "calendarRenewLocked": "即将续期一条已锁定的记录",
+  "calendarHiddenTitle": "证件即将到期",
+  "calendarHiddenRenew": "证件续期临近",
+  "calendarTripTitle": "旅行：{name}",
+  "calendarTripHidden": "旅行"
 }

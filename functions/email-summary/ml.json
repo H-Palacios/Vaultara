@@ -29,5 +29,11 @@
   "invalidLinkBody": "Vaultara-യിൽ അറിയിപ്പുകൾ എന്നതിന് കീഴിൽ നിങ്ങൾക്ക് പ്രതിമാസ സംഗ്രഹം ഓഫാക്കാം.",
   "calendarName": "Vaultara കാലഹരണ തീയതികൾ",
   "calendarEventTitle": "{name} കാലഹരണപ്പെടുന്നു",
-  "calendarLockedTitle": "ലോക്ക് ചെയ്ത റെക്കോർഡ് കാലഹരണപ്പെടുന്നു"
+  "calendarLockedTitle": "ലോക്ക് ചെയ്ത റെക്കോർഡ് കാലഹരണപ്പെടുന്നു",
+  "calendarRenewTitle": "{name} ഉടൻ പുതുക്കുക",
+  "calendarRenewLocked": "ലോക്ക് ചെയ്ത രേഖ ഉടൻ പുതുക്കുക",
+  "calendarHiddenTitle": "രേഖയുടെ കാലാവധി തീരുന്നു",
+  "calendarHiddenRenew": "രേഖ പുതുക്കൽ അടുത്തു",
+  "calendarTripTitle": "യാത്ര: {name}",
+  "calendarTripHidden": "യാത്ര"
 }

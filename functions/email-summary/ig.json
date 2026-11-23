@@ -29,5 +29,11 @@
   "invalidLinkBody": "Ị nwere ike ịgbanyụ nchịkọta kwa ọnwa na Vaultara n'okpuru Ihe ọkwa.",
   "calendarName": "Ụbọchị ngwụcha Vaultara",
   "calendarEventTitle": "{name} na-agwụ",
-  "calendarLockedTitle": "Ndekọ e kpọchiri na-agwụ"
+  "calendarLockedTitle": "Ndekọ e kpọchiri na-agwụ",
+  "calendarRenewTitle": "Megharịa {name} n'oge na-adịghị anya",
+  "calendarRenewLocked": "Megharịa ndekọ akpọchiri akpọchi n'oge na-adịghị anya",
+  "calendarHiddenTitle": "Akwụkwọ na-agwụ",
+  "calendarHiddenRenew": "Mmeghari akwụkwọ na-abịa nso",
+  "calendarTripTitle": "Njem: {name}",
+  "calendarTripHidden": "Njem"
 }

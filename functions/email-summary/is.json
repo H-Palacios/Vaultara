@@ -29,5 +29,11 @@
   "invalidLinkBody": "Þú getur slökkt á mánaðarlegu samantektinni í Vaultara undir Tilkynningar.",
   "calendarName": "Gildistímar í Vaultara",
   "calendarEventTitle": "{name} rennur út",
-  "calendarLockedTitle": "Læst færsla rennur út"
+  "calendarLockedTitle": "Læst færsla rennur út",
+  "calendarRenewTitle": "Endurnýjaðu {name} bráðum",
+  "calendarRenewLocked": "Endurnýjaðu læsta færslu bráðum",
+  "calendarHiddenTitle": "Skjal rennur út",
+  "calendarHiddenRenew": "Endurnýjun skjals nálgast",
+  "calendarTripTitle": "Ferð: {name}",
+  "calendarTripHidden": "Ferð"
 }

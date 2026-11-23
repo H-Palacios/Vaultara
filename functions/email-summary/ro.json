@@ -29,5 +29,11 @@
   "invalidLinkBody": "Poți dezactiva rezumatul lunar în Vaultara, la Notificări.",
   "calendarName": "Date de expirare Vaultara",
   "calendarEventTitle": "{name} expiră",
-  "calendarLockedTitle": "O înregistrare blocată expiră"
+  "calendarLockedTitle": "O înregistrare blocată expiră",
+  "calendarRenewTitle": "Reînnoiește {name} curând",
+  "calendarRenewLocked": "Reînnoiește curând o înregistrare blocată",
+  "calendarHiddenTitle": "Un document expiră",
+  "calendarHiddenRenew": "Se apropie reînnoirea unui document",
+  "calendarTripTitle": "Călătorie: {name}",
+  "calendarTripHidden": "Călătorie"
 }

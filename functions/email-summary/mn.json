@@ -29,5 +29,11 @@
   "invalidLinkBody": "Та сар бүрийн хураангуйг Vaultara дээр Мэдэгдэл хэсгээс унтрааж болно.",
   "calendarName": "Vaultara дуусах огнонууд",
   "calendarEventTitle": "{name} дуусна",
-  "calendarLockedTitle": "Түгжигдсэн бичлэг дуусна"
+  "calendarLockedTitle": "Түгжигдсэн бичлэг дуусна",
+  "calendarRenewTitle": "{name}-г удахгүй сунгаарай",
+  "calendarRenewLocked": "Түгжигдсэн бүртгэлийг удахгүй сунгаарай",
+  "calendarHiddenTitle": "Баримт бичгийн хугацаа дуусна",
+  "calendarHiddenRenew": "Баримт бичиг сунгах хугацаа ойртож байна",
+  "calendarTripTitle": "Аялал: {name}",
+  "calendarTripHidden": "Аялал"
 }

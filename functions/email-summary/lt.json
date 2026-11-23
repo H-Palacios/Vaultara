@@ -29,5 +29,11 @@
   "invalidLinkBody": "Mėnesio suvestinę galite išjungti Vaultara skiltyje Pranešimai.",
   "calendarName": "Vaultara galiojimo datos",
   "calendarEventTitle": "{name} baigia galioti",
-  "calendarLockedTitle": "Užrakintas įrašas baigia galioti"
+  "calendarLockedTitle": "Užrakintas įrašas baigia galioti",
+  "calendarRenewTitle": "Greitai atnaujinkite: {name}",
+  "calendarRenewLocked": "Greitai atnaujinkite užrakintą įrašą",
+  "calendarHiddenTitle": "Baigiasi dokumento galiojimas",
+  "calendarHiddenRenew": "Artėja dokumento atnaujinimas",
+  "calendarTripTitle": "Kelionė: {name}",
+  "calendarTripHidden": "Kelionė"
 }

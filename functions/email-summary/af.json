@@ -29,5 +29,11 @@
   "invalidLinkBody": "Jy kan die maandelikse opsomming in Vaultara onder Kennisgewings afskakel.",
   "calendarName": "Vaultara-vervaldatums",
   "calendarEventTitle": "{name} verval",
-  "calendarLockedTitle": "Gesluite rekord verval"
+  "calendarLockedTitle": "Gesluite rekord verval",
+  "calendarRenewTitle": "Hernu {name} binnekort",
+  "calendarRenewLocked": "Hernu 'n geslote rekord binnekort",
+  "calendarHiddenTitle": "Dokument verval",
+  "calendarHiddenRenew": "Dokumenthernuwing kom nader",
+  "calendarTripTitle": "Reis: {name}",
+  "calendarTripHidden": "Reis"
 }

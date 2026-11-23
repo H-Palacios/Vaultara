@@ -29,5 +29,11 @@
   "invalidLinkBody": "Mēneša kopsavilkumu varat izslēgt Vaultara sadaļā Paziņojumi.",
   "calendarName": "Vaultara derīguma termiņi",
   "calendarEventTitle": "Beidzas {name}",
-  "calendarLockedTitle": "Beidzas bloķēts ieraksts"
+  "calendarLockedTitle": "Beidzas bloķēts ieraksts",
+  "calendarRenewTitle": "Drīz atjaunojiet: {name}",
+  "calendarRenewLocked": "Drīz atjaunojiet bloķētu ierakstu",
+  "calendarHiddenTitle": "Beidzas dokumenta derīgums",
+  "calendarHiddenRenew": "Tuvojas dokumenta atjaunošana",
+  "calendarTripTitle": "Ceļojums: {name}",
+  "calendarTripHidden": "Ceļojums"
 }

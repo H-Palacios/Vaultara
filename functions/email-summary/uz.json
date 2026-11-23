@@ -29,5 +29,11 @@
   "invalidLinkBody": "Oylik xulosani Vaultara’da Bildirishnomalar boʻlimida oʻchirishingiz mumkin.",
   "calendarName": "Vaultara tugash sanalari",
   "calendarEventTitle": "{name} tugaydi",
-  "calendarLockedTitle": "Qulflangan yozuv tugaydi"
+  "calendarLockedTitle": "Qulflangan yozuv tugaydi",
+  "calendarRenewTitle": "{name} tez orada yangilang",
+  "calendarRenewLocked": "Qulflangan yozuvni tez orada yangilang",
+  "calendarHiddenTitle": "Hujjat muddati tugaydi",
+  "calendarHiddenRenew": "Hujjatni yangilash yaqinlashmoqda",
+  "calendarTripTitle": "Safar: {name}",
+  "calendarTripHidden": "Safar"
 }

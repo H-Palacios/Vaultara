@@ -29,5 +29,11 @@
   "invalidLinkBody": "Vaultara இல் அறிவிப்புகள் பகுதியில் மாதாந்திர சுருக்கத்தை அணைக்கலாம்.",
   "calendarName": "Vaultara காலாவதி தேதிகள்",
   "calendarEventTitle": "{name} காலாவதியாகிறது",
-  "calendarLockedTitle": "பூட்டிய பதிவு காலாவதியாகிறது"
+  "calendarLockedTitle": "பூட்டிய பதிவு காலாவதியாகிறது",
+  "calendarRenewTitle": "{name} விரைவில் புதுப்பிக்கவும்",
+  "calendarRenewLocked": "பூட்டிய பதிவை விரைவில் புதுப்பிக்கவும்",
+  "calendarHiddenTitle": "ஆவணம் காலாவதியாகிறது",
+  "calendarHiddenRenew": "ஆவணப் புதுப்பிப்பு நெருங்குகிறது",
+  "calendarTripTitle": "பயணம்: {name}",
+  "calendarTripHidden": "பயணம்"
 }

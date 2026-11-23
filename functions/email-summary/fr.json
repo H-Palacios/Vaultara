@@ -29,5 +29,11 @@
   "invalidLinkBody": "Vous pouvez désactiver le récapitulatif mensuel dans Vaultara sous Notifications.",
   "calendarName": "Dates d'expiration Vaultara",
   "calendarEventTitle": "{name} expire",
-  "calendarLockedTitle": "Un enregistrement verrouillé expire"
+  "calendarLockedTitle": "Un enregistrement verrouillé expire",
+  "calendarRenewTitle": "Renouveler {name} bientôt",
+  "calendarRenewLocked": "Renouveler bientôt un document verrouillé",
+  "calendarHiddenTitle": "Un document expire",
+  "calendarHiddenRenew": "Renouvellement d'un document à prévoir",
+  "calendarTripTitle": "Voyage : {name}",
+  "calendarTripHidden": "Voyage"
 }

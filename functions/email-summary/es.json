@@ -29,5 +29,11 @@
   "invalidLinkBody": "Puedes desactivar el resumen mensual en Vaultara, en Notificaciones.",
   "calendarName": "Fechas de vencimiento de Vaultara",
   "calendarEventTitle": "Vence {name}",
-  "calendarLockedTitle": "Vence un registro bloqueado"
+  "calendarLockedTitle": "Vence un registro bloqueado",
+  "calendarRenewTitle": "Renueva {name} pronto",
+  "calendarRenewLocked": "Renueva pronto un registro bloqueado",
+  "calendarHiddenTitle": "Vence un documento",
+  "calendarHiddenRenew": "Se acerca la renovación de un documento",
+  "calendarTripTitle": "Viaje: {name}",
+  "calendarTripHidden": "Viaje"
 }

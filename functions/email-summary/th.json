@@ -29,5 +29,11 @@
   "invalidLinkBody": "คุณปิดสรุปรายเดือนได้ใน Vaultara ที่การแจ้งเตือน",
   "calendarName": "วันหมดอายุ Vaultara",
   "calendarEventTitle": "{name} หมดอายุ",
-  "calendarLockedTitle": "รายการที่ล็อกหมดอายุ"
+  "calendarLockedTitle": "รายการที่ล็อกหมดอายุ",
+  "calendarRenewTitle": "ต่ออายุ {name} เร็วๆ นี้",
+  "calendarRenewLocked": "ต่ออายุบันทึกที่ล็อกไว้เร็วๆ นี้",
+  "calendarHiddenTitle": "เอกสารหมดอายุ",
+  "calendarHiddenRenew": "ใกล้ถึงเวลาต่ออายุเอกสาร",
+  "calendarTripTitle": "การเดินทาง: {name}",
+  "calendarTripHidden": "การเดินทาง"
 }

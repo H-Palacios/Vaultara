@@ -29,5 +29,11 @@
   "invalidLinkBody": "Месечни сажетак можете искључити у апликацији Vaultara под Обавештења.",
   "calendarName": "Vaultara датуми истека",
   "calendarEventTitle": "{name} истиче",
-  "calendarLockedTitle": "Закључани запис истиче"
+  "calendarLockedTitle": "Закључани запис истиче",
+  "calendarRenewTitle": "Обновите {name} ускоро",
+  "calendarRenewLocked": "Обновите закључан запис ускоро",
+  "calendarHiddenTitle": "Документ истиче",
+  "calendarHiddenRenew": "Ближи се обнова документа",
+  "calendarTripTitle": "Путовање: {name}",
+  "calendarTripHidden": "Путовање"
 }

@@ -29,5 +29,11 @@
   "invalidLinkBody": "Ви можете вимкнути щомісячний підсумок у Vaultara в розділі «Сповіщення».",
   "calendarName": "Терміни дії Vaultara",
   "calendarEventTitle": "Закінчується: {name}",
-  "calendarLockedTitle": "Закінчується заблокований запис"
+  "calendarLockedTitle": "Закінчується заблокований запис",
+  "calendarRenewTitle": "Скоро поновити: {name}",
+  "calendarRenewLocked": "Скоро поновити закритий запис",
+  "calendarHiddenTitle": "Спливає документ",
+  "calendarHiddenRenew": "Наближається поновлення документа",
+  "calendarTripTitle": "Подорож: {name}",
+  "calendarTripHidden": "Подорож"
 }

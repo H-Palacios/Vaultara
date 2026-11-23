@@ -29,5 +29,11 @@
   "invalidLinkBody": "Можете да изключите месечното резюме във Vaultara, в Известия.",
   "calendarName": "Дати на изтичане във Vaultara",
   "calendarEventTitle": "{name} изтича",
-  "calendarLockedTitle": "Заключен запис изтича"
+  "calendarLockedTitle": "Заключен запис изтича",
+  "calendarRenewTitle": "Подновете {name} скоро",
+  "calendarRenewLocked": "Подновете заключен запис скоро",
+  "calendarHiddenTitle": "Изтича документ",
+  "calendarHiddenRenew": "Наближава подновяване на документ",
+  "calendarTripTitle": "Пътуване: {name}",
+  "calendarTripHidden": "Пътуване"
 }

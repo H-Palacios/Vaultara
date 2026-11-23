@@ -29,5 +29,11 @@
   "invalidLinkBody": "Du kan slå av den månedlige oppsummeringen i Vaultara under Varslinger.",
   "calendarName": "Vaultara-utløpsdatoer",
   "calendarEventTitle": "{name} utløper",
-  "calendarLockedTitle": "Låst oppføring utløper"
+  "calendarLockedTitle": "Låst oppføring utløper",
+  "calendarRenewTitle": "Forny {name} snart",
+  "calendarRenewLocked": "Forny en låst oppføring snart",
+  "calendarHiddenTitle": "Dokument utløper",
+  "calendarHiddenRenew": "Fornyelse av dokument nærmer seg",
+  "calendarTripTitle": "Reise: {name}",
+  "calendarTripHidden": "Reise"
 }

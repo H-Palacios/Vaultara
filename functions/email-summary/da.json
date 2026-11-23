@@ -29,5 +29,11 @@
   "invalidLinkBody": "Du kan slå den månedlige oversigt fra i Vaultara under Meddelelser.",
   "calendarName": "Vaultara-udløbsdatoer",
   "calendarEventTitle": "{name} udløber",
-  "calendarLockedTitle": "Låst post udløber"
+  "calendarLockedTitle": "Låst post udløber",
+  "calendarRenewTitle": "Forny {name} snart",
+  "calendarRenewLocked": "Forny en låst post snart",
+  "calendarHiddenTitle": "Dokument udløber",
+  "calendarHiddenRenew": "Fornyelse af dokument nærmer sig",
+  "calendarTripTitle": "Rejse: {name}",
+  "calendarTripHidden": "Rejse"
 }

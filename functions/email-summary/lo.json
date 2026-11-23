@@ -29,5 +29,11 @@
   "invalidLinkBody": "ທ່ານປິດສະຫຼຸບປະຈຳເດືອນໄດ້ໃນ Vaultara ພາຍໃຕ້ການແຈ້ງເຕືອນ",
   "calendarName": "ວັນໝົດອາຍຸ Vaultara",
   "calendarEventTitle": "{name} ໝົດອາຍຸ",
-  "calendarLockedTitle": "ບັນທຶກທີ່ລັອກໝົດອາຍຸ"
+  "calendarLockedTitle": "ບັນທຶກທີ່ລັອກໝົດອາຍຸ",
+  "calendarRenewTitle": "ຕໍ່ອາຍຸ {name} ໄວໆນີ້",
+  "calendarRenewLocked": "ຕໍ່ອາຍຸບັນທຶກທີ່ລັອກໄວ້ໄວໆນີ້",
+  "calendarHiddenTitle": "ເອກະສານໝົດອາຍຸ",
+  "calendarHiddenRenew": "ການຕໍ່ອາຍຸເອກະສານໃກ້ມາຮອດ",
+  "calendarTripTitle": "ການເດີນທາງ: {name}",
+  "calendarTripHidden": "ການເດີນທາງ"
 }

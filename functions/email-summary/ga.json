@@ -29,5 +29,11 @@
   "invalidLinkBody": "Is féidir leat an achoimre mhíosúil a chur as i Vaultara faoi Fógraí.",
   "calendarName": "Dátaí éaga Vaultara",
   "calendarEventTitle": "Téann {name} in éag",
-  "calendarLockedTitle": "Téann taifead faoi ghlas in éag"
+  "calendarLockedTitle": "Téann taifead faoi ghlas in éag",
+  "calendarRenewTitle": "Athnuaigh {name} go luath",
+  "calendarRenewLocked": "Athnuaigh taifead faoi ghlas go luath",
+  "calendarHiddenTitle": "Rachaidh doiciméad in éag",
+  "calendarHiddenRenew": "Athnuachan doiciméid ag druidim linn",
+  "calendarTripTitle": "Turas: {name}",
+  "calendarTripHidden": "Turas"
 }

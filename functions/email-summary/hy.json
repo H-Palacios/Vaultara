@@ -29,5 +29,11 @@
   "invalidLinkBody": "Ամսական ամփոփումը կարող եք անջատել Vaultara-ում՝ Ծանուցումներ բաժնում։",
   "calendarName": "Vaultara-ի ժամկետների ամսաթվեր",
   "calendarEventTitle": "{name}-ը լրանում է",
-  "calendarLockedTitle": "Կողպված գրառումը լրանում է"
+  "calendarLockedTitle": "Կողպված գրառումը լրանում է",
+  "calendarRenewTitle": "Շուտով երկարաձգեք՝ {name}",
+  "calendarRenewLocked": "Շուտով երկարաձգեք կողպված գրառումը",
+  "calendarHiddenTitle": "Փաստաթղթի ժամկետը լրանում է",
+  "calendarHiddenRenew": "Մոտենում է փաստաթղթի երկարաձգումը",
+  "calendarTripTitle": "Ուղևորություն՝ {name}",
+  "calendarTripHidden": "Ուղևորություն"
 }

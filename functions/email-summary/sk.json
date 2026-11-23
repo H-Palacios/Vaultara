@@ -29,5 +29,11 @@
   "invalidLinkBody": "Mesačný súhrn môžete vypnúť vo Vaultara v časti Oznámenia.",
   "calendarName": "Dátumy platnosti Vaultara",
   "calendarEventTitle": "{name} vyprší",
-  "calendarLockedTitle": "Zamknutý záznam vyprší"
+  "calendarLockedTitle": "Zamknutý záznam vyprší",
+  "calendarRenewTitle": "Čoskoro obnovte {name}",
+  "calendarRenewLocked": "Čoskoro obnovte zamknutý záznam",
+  "calendarHiddenTitle": "Platnosť dokumentu končí",
+  "calendarHiddenRenew": "Blíži sa obnova dokumentu",
+  "calendarTripTitle": "Cesta: {name}",
+  "calendarTripHidden": "Cesta"
 }

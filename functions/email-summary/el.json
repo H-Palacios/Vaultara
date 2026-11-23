@@ -29,5 +29,11 @@
   "invalidLinkBody": "Μπορείτε να απενεργοποιήσετε τη μηνιαία σύνοψη στο Vaultara στις Ειδοποιήσεις.",
   "calendarName": "Ημερομηνίες λήξης Vaultara",
   "calendarEventTitle": "Λήγει: {name}",
-  "calendarLockedTitle": "Λήγει κλειδωμένη εγγραφή"
+  "calendarLockedTitle": "Λήγει κλειδωμένη εγγραφή",
+  "calendarRenewTitle": "Ανανεώστε σύντομα: {name}",
+  "calendarRenewLocked": "Ανανεώστε σύντομα μια κλειδωμένη εγγραφή",
+  "calendarHiddenTitle": "Λήγει έγγραφο",
+  "calendarHiddenRenew": "Πλησιάζει ανανέωση εγγράφου",
+  "calendarTripTitle": "Ταξίδι: {name}",
+  "calendarTripHidden": "Ταξίδι"
 }

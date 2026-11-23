@@ -29,5 +29,11 @@
   "invalidLinkBody": "Выключить ежемесячную сводку можно в Vaultara в разделе «Уведомления».",
   "calendarName": "Даты окончания срока в Vaultara",
   "calendarEventTitle": "Истекает: {name}",
-  "calendarLockedTitle": "Истекает заблокированная запись"
+  "calendarLockedTitle": "Истекает заблокированная запись",
+  "calendarRenewTitle": "Скоро продлить: {name}",
+  "calendarRenewLocked": "Скоро продлить закрытую запись",
+  "calendarHiddenTitle": "Истекает документ",
+  "calendarHiddenRenew": "Скоро продление документа",
+  "calendarTripTitle": "Поездка: {name}",
+  "calendarTripHidden": "Поездка"
 }

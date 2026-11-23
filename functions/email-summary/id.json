@@ -29,5 +29,11 @@
   "invalidLinkBody": "Anda dapat mematikan ringkasan bulanan di Vaultara pada bagian Notifikasi.",
   "calendarName": "Tanggal kedaluwarsa Vaultara",
   "calendarEventTitle": "{name} kedaluwarsa",
-  "calendarLockedTitle": "Catatan terkunci kedaluwarsa"
+  "calendarLockedTitle": "Catatan terkunci kedaluwarsa",
+  "calendarRenewTitle": "Perpanjang {name} segera",
+  "calendarRenewLocked": "Perpanjang catatan terkunci segera",
+  "calendarHiddenTitle": "Dokumen kedaluwarsa",
+  "calendarHiddenRenew": "Perpanjangan dokumen segera tiba",
+  "calendarTripTitle": "Perjalanan: {name}",
+  "calendarTripHidden": "Perjalanan"
 }

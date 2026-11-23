@@ -29,5 +29,11 @@
   "invalidLinkBody": "Unokucima isishwankathelo senyanga kwiVaultara ngaphantsi kwezaziso.",
   "calendarName": "Imihla yokuphelelwa yeVaultara",
   "calendarEventTitle": "I-{name} iyaphelelwa",
-  "calendarLockedTitle": "Irekhodi etshixiweyo iyaphelelwa"
+  "calendarLockedTitle": "Irekhodi etshixiweyo iyaphelelwa",
+  "calendarRenewTitle": "Hlaziya {name} kungekudala",
+  "calendarRenewLocked": "Hlaziya irekhodi etshixiweyo kungekudala",
+  "calendarHiddenTitle": "Uxwebhu luyaphelelwa",
+  "calendarHiddenRenew": "Ukuhlaziywa koxwebhu kuyasondela",
+  "calendarTripTitle": "Uhambo: {name}",
+  "calendarTripHidden": "Uhambo"
 }

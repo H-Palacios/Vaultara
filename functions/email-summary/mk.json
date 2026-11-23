@@ -29,5 +29,11 @@
   "invalidLinkBody": "Месечното резиме можете да го исклучите во Vaultara под Известувања.",
   "calendarName": "Датуми на истекување во Vaultara",
   "calendarEventTitle": "{name} истекува",
-  "calendarLockedTitle": "Заклучен запис истекува"
+  "calendarLockedTitle": "Заклучен запис истекува",
+  "calendarRenewTitle": "Обновете {name} наскоро",
+  "calendarRenewLocked": "Обновете заклучен запис наскоро",
+  "calendarHiddenTitle": "Документ истекува",
+  "calendarHiddenRenew": "Се приближува обнова на документ",
+  "calendarTripTitle": "Патување: {name}",
+  "calendarTripHidden": "Патување"
 }

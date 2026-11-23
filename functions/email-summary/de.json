@@ -29,5 +29,11 @@
   "invalidLinkBody": "Du kannst die monatliche Zusammenfassung in Vaultara unter Benachrichtigungen ausschalten.",
   "calendarName": "Vaultara-Ablaufdaten",
   "calendarEventTitle": "{name} läuft ab",
-  "calendarLockedTitle": "Gesperrter Eintrag läuft ab"
+  "calendarLockedTitle": "Gesperrter Eintrag läuft ab",
+  "calendarRenewTitle": "{name} bald erneuern",
+  "calendarRenewLocked": "Gesperrten Eintrag bald erneuern",
+  "calendarHiddenTitle": "Dokument läuft ab",
+  "calendarHiddenRenew": "Erneuerung eines Dokuments steht an",
+  "calendarTripTitle": "Reise: {name}",
+  "calendarTripHidden": "Reise"
 }

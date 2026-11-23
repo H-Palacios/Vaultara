@@ -29,5 +29,11 @@
   "invalidLinkBody": "يمكنك إيقاف الملخص الشهري في Vaultara ضمن الإشعارات.",
   "calendarName": "تواريخ انتهاء Vaultara",
   "calendarEventTitle": "ينتهي {name}",
-  "calendarLockedTitle": "ينتهي سجل مقفل"
+  "calendarLockedTitle": "ينتهي سجل مقفل",
+  "calendarRenewTitle": "جدّد {name} قريبًا",
+  "calendarRenewLocked": "جدّد سجلًا مقفلًا قريبًا",
+  "calendarHiddenTitle": "تنتهي صلاحية مستند",
+  "calendarHiddenRenew": "موعد تجديد مستند يقترب",
+  "calendarTripTitle": "رحلة: {name}",
+  "calendarTripHidden": "رحلة"
 }

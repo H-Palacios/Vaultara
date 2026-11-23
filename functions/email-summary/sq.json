@@ -29,5 +29,11 @@
   "invalidLinkBody": "Mund ta çaktivizoni përmbledhjen mujore në Vaultara te Njoftimet.",
   "calendarName": "Datat e skadimit të Vaultara",
   "calendarEventTitle": "{name} skadon",
-  "calendarLockedTitle": "Regjistrimi i kyçur skadon"
+  "calendarLockedTitle": "Regjistrimi i kyçur skadon",
+  "calendarRenewTitle": "Rinovo {name} së shpejti",
+  "calendarRenewLocked": "Rinovo së shpejti një regjistrim të kyçur",
+  "calendarHiddenTitle": "Dokumenti skadon",
+  "calendarHiddenRenew": "Rinovimi i dokumentit po afron",
+  "calendarTripTitle": "Udhëtim: {name}",
+  "calendarTripHidden": "Udhëtim"
 }

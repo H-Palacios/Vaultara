@@ -29,5 +29,11 @@
   "invalidLinkBody": "អ្នកអាចបិទសេចក្ដីសង្ខេបប្រចាំខែនៅក្នុង Vaultara ក្រោមការជូនដំណឹង។",
   "calendarName": "កាលបរិច្ឆេទផុតកំណត់ Vaultara",
   "calendarEventTitle": "{name} ផុតកំណត់",
-  "calendarLockedTitle": "កំណត់ត្រាដែលចាក់សោផុតកំណត់"
+  "calendarLockedTitle": "កំណត់ត្រាដែលចាក់សោផុតកំណត់",
+  "calendarRenewTitle": "បន្ត {name} ឆាប់ៗ",
+  "calendarRenewLocked": "បន្តកំណត់ត្រាដែលបានចាក់សោឆាប់ៗ",
+  "calendarHiddenTitle": "ឯកសារផុតកំណត់",
+  "calendarHiddenRenew": "ការបន្តឯកសារជិតមកដល់",
+  "calendarTripTitle": "ការធ្វើដំណើរ៖ {name}",
+  "calendarTripHidden": "ការធ្វើដំណើរ"
 }

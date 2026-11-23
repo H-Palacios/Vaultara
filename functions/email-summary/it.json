@@ -29,5 +29,11 @@
   "invalidLinkBody": "Puoi disattivare il riepilogo mensile in Vaultara, in Notifiche.",
   "calendarName": "Scadenze Vaultara",
   "calendarEventTitle": "{name} scade",
-  "calendarLockedTitle": "Un record bloccato scade"
+  "calendarLockedTitle": "Un record bloccato scade",
+  "calendarRenewTitle": "Rinnova {name} a breve",
+  "calendarRenewLocked": "Rinnova a breve un elemento bloccato",
+  "calendarHiddenTitle": "Un documento scade",
+  "calendarHiddenRenew": "Rinnovo di un documento in arrivo",
+  "calendarTripTitle": "Viaggio: {name}",
+  "calendarTripHidden": "Viaggio"
 }

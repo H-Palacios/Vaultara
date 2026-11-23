@@ -29,5 +29,11 @@
   "invalidLinkBody": "A havi összefoglalót a Vaultarában az Értesítések alatt kapcsolhatja ki.",
   "calendarName": "Vaultara lejárati dátumok",
   "calendarEventTitle": "Lejár: {name}",
-  "calendarLockedTitle": "Zárolt bejegyzés lejár"
+  "calendarLockedTitle": "Zárolt bejegyzés lejár",
+  "calendarRenewTitle": "Hamarosan újítsa meg: {name}",
+  "calendarRenewLocked": "Hamarosan újítson meg egy zárolt bejegyzést",
+  "calendarHiddenTitle": "Lejár egy dokumentum",
+  "calendarHiddenRenew": "Közeleg egy dokumentum megújítása",
+  "calendarTripTitle": "Utazás: {name}",
+  "calendarTripHidden": "Utazás"
 }

@@ -29,5 +29,11 @@
   "invalidLinkBody": "月次サマリーは、Vaultara の通知からオフにできます。",
   "calendarName": "Vaultara の有効期限",
   "calendarEventTitle": "{name}の期限",
-  "calendarLockedTitle": "ロックされた記録の期限"
+  "calendarLockedTitle": "ロックされた記録の期限",
+  "calendarRenewTitle": "{name} をまもなく更新",
+  "calendarRenewLocked": "ロックされた記録をまもなく更新",
+  "calendarHiddenTitle": "書類の期限切れ",
+  "calendarHiddenRenew": "書類の更新が近づいています",
+  "calendarTripTitle": "旅行: {name}",
+  "calendarTripHidden": "旅行"
 }

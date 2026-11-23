@@ -29,5 +29,11 @@
   "invalidLinkBody": "Vaultara의 알림에서 월간 요약을 끌 수 있습니다.",
   "calendarName": "Vaultara 만료일",
   "calendarEventTitle": "{name} 만료",
-  "calendarLockedTitle": "잠긴 기록 만료"
+  "calendarLockedTitle": "잠긴 기록 만료",
+  "calendarRenewTitle": "{name} 곧 갱신",
+  "calendarRenewLocked": "잠긴 기록 곧 갱신",
+  "calendarHiddenTitle": "문서 만료",
+  "calendarHiddenRenew": "문서 갱신 예정",
+  "calendarTripTitle": "여행: {name}",
+  "calendarTripHidden": "여행"
 }

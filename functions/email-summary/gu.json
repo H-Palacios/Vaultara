@@ -29,5 +29,11 @@
   "invalidLinkBody": "તમે Vaultaraમાં નોટિફિકેશન હેઠળ માસિક સારાંશ બંધ કરી શકો છો.",
   "calendarName": "Vaultara એક્સપાયરી તારીખો",
   "calendarEventTitle": "{name} એક્સપાયર થાય છે",
-  "calendarLockedTitle": "લૉક કરેલો રેકોર્ડ એક્સપાયર થાય છે"
+  "calendarLockedTitle": "લૉક કરેલો રેકોર્ડ એક્સપાયર થાય છે",
+  "calendarRenewTitle": "{name} જલદી રિન્યૂ કરો",
+  "calendarRenewLocked": "લૉક કરેલો રેકોર્ડ જલદી રિન્યૂ કરો",
+  "calendarHiddenTitle": "દસ્તાવેજની મુદત પૂરી થાય છે",
+  "calendarHiddenRenew": "દસ્તાવેજ રિન્યૂ કરવાનો સમય નજીક છે",
+  "calendarTripTitle": "પ્રવાસ: {name}",
+  "calendarTripHidden": "પ્રવાસ"
 }

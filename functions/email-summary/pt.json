@@ -29,5 +29,11 @@
   "invalidLinkBody": "Pode desativar o resumo mensal no Vaultara, em Notificações.",
   "calendarName": "Datas de validade do Vaultara",
   "calendarEventTitle": "{name} expira",
-  "calendarLockedTitle": "Registo bloqueado expira"
+  "calendarLockedTitle": "Registo bloqueado expira",
+  "calendarRenewTitle": "Renovar {name} em breve",
+  "calendarRenewLocked": "Renovar em breve um registro bloqueado",
+  "calendarHiddenTitle": "Documento vence",
+  "calendarHiddenRenew": "Renovação de documento se aproxima",
+  "calendarTripTitle": "Viagem: {name}",
+  "calendarTripHidden": "Viagem"
 }

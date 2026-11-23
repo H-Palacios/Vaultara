@@ -29,5 +29,11 @@
   "invalidLinkBody": "በVaultara ውስጥ በማሳወቂያዎች ስር ወርሃዊ ማጠቃለያውን ማጥፋት ይችላሉ።",
   "calendarName": "የVaultara የማብቂያ ቀኖች",
   "calendarEventTitle": "{name} ያበቃል",
-  "calendarLockedTitle": "የተቆለፈ መዝገብ ያበቃል"
+  "calendarLockedTitle": "የተቆለፈ መዝገብ ያበቃል",
+  "calendarRenewTitle": "{name} በቅርቡ ያድሱ",
+  "calendarRenewLocked": "የተቆለፈ መዝገብ በቅርቡ ያድሱ",
+  "calendarHiddenTitle": "ሰነድ ጊዜው ያልፋል",
+  "calendarHiddenRenew": "የሰነድ እድሳት እየቀረበ ነው",
+  "calendarTripTitle": "ጉዞ፦ {name}",
+  "calendarTripHidden": "ጉዞ"
 }

@@ -29,5 +29,11 @@
   "invalidLinkBody": "Voit poistaa kuukausiyhteenvedon käytöstä Vaultarassa kohdassa Ilmoitukset.",
   "calendarName": "Vaultaran vanhentumispäivät",
   "calendarEventTitle": "{name} vanhenee",
-  "calendarLockedTitle": "Lukittu tietue vanhenee"
+  "calendarLockedTitle": "Lukittu tietue vanhenee",
+  "calendarRenewTitle": "Uusi {name} pian",
+  "calendarRenewLocked": "Uusi lukittu tietue pian",
+  "calendarHiddenTitle": "Asiakirja vanhenee",
+  "calendarHiddenRenew": "Asiakirjan uusiminen lähestyy",
+  "calendarTripTitle": "Matka: {name}",
+  "calendarTripHidden": "Matka"
 }

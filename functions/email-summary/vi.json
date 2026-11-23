@@ -29,5 +29,11 @@
   "invalidLinkBody": "Bạn có thể tắt bản tóm tắt hằng tháng trong Vaultara, mục Thông báo.",
   "calendarName": "Ngày hết hạn Vaultara",
   "calendarEventTitle": "{name} hết hạn",
-  "calendarLockedTitle": "Bản ghi bị khóa hết hạn"
+  "calendarLockedTitle": "Bản ghi bị khóa hết hạn",
+  "calendarRenewTitle": "Sắp gia hạn {name}",
+  "calendarRenewLocked": "Sắp gia hạn một hồ sơ đã khóa",
+  "calendarHiddenTitle": "Giấy tờ hết hạn",
+  "calendarHiddenRenew": "Sắp đến hạn gia hạn giấy tờ",
+  "calendarTripTitle": "Chuyến đi: {name}",
+  "calendarTripHidden": "Chuyến đi"
 }

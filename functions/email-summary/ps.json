@@ -29,5 +29,11 @@
   "invalidLinkBody": "تاسو کولی شئ میاشتنی لنډیز په Vaultara کې د خبرتیاوو لاندې بند کړئ.",
   "calendarName": "د Vaultara د پای نېټې",
   "calendarEventTitle": "{name} پای ته رسېږي",
-  "calendarLockedTitle": "تړل شوی ریکارډ پای ته رسېږي"
+  "calendarLockedTitle": "تړل شوی ریکارډ پای ته رسېږي",
+  "calendarRenewTitle": "{name} ژر نوی کړئ",
+  "calendarRenewLocked": "یو قفل شوی ریکارډ ژر نوی کړئ",
+  "calendarHiddenTitle": "سند پای ته رسېږي",
+  "calendarHiddenRenew": "د سند نوي کول نږدې دي",
+  "calendarTripTitle": "سفر: {name}",
+  "calendarTripHidden": "سفر"
 }

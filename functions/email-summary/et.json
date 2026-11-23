@@ -29,5 +29,11 @@
   "invalidLinkBody": "Saad igakuise kokkuvõtte Vaultaras välja lülitada jaotises Teavitused.",
   "calendarName": "Vaultara aegumiskuupäevad",
   "calendarEventTitle": "{name} aegub",
-  "calendarLockedTitle": "Lukustatud kirje aegub"
+  "calendarLockedTitle": "Lukustatud kirje aegub",
+  "calendarRenewTitle": "Uuenda {name} peagi",
+  "calendarRenewLocked": "Uuenda lukustatud kirje peagi",
+  "calendarHiddenTitle": "Dokument aegub",
+  "calendarHiddenRenew": "Dokumendi uuendamine läheneb",
+  "calendarTripTitle": "Reis: {name}",
+  "calendarTripHidden": "Reis"
 }

@@ -29,5 +29,11 @@
   "invalidLinkBody": "Pots desactivar el resum mensual a Vaultara, a Notificacions.",
   "calendarName": "Dates de caducitat de Vaultara",
   "calendarEventTitle": "Caduca {name}",
-  "calendarLockedTitle": "Caduca un registre bloquejat"
+  "calendarLockedTitle": "Caduca un registre bloquejat",
+  "calendarRenewTitle": "Renova {name} aviat",
+  "calendarRenewLocked": "Renova aviat un registre bloquejat",
+  "calendarHiddenTitle": "Un document caduca",
+  "calendarHiddenRenew": "S'acosta la renovació d'un document",
+  "calendarTripTitle": "Viatge: {name}",
+  "calendarTripHidden": "Viatge"
 }

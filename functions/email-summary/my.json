@@ -29,5 +29,11 @@
   "invalidLinkBody": "လစဉ်အကျဉ်းချုပ်ကို Vaultara ၏ အကြောင်းကြားချက်များတွင် ပိတ်နိုင်သည်။",
   "calendarName": "Vaultara သက်တမ်းကုန်ရက်များ",
   "calendarEventTitle": "{name} သက်တမ်းကုန်မည်",
-  "calendarLockedTitle": "လော့ခ်ချထားသော မှတ်တမ်း သက်တမ်းကုန်မည်"
+  "calendarLockedTitle": "လော့ခ်ချထားသော မှတ်တမ်း သက်တမ်းကုန်မည်",
+  "calendarRenewTitle": "{name} ကို မကြာမီ သက်တမ်းတိုးပါ",
+  "calendarRenewLocked": "လော့ခ်ချထားသော မှတ်တမ်းကို မကြာမီ သက်တမ်းတိုးပါ",
+  "calendarHiddenTitle": "စာရွက်စာတမ်း သက်တမ်းကုန်မည်",
+  "calendarHiddenRenew": "စာရွက်စာတမ်း သက်တမ်းတိုးရန် နီးလာပြီ",
+  "calendarTripTitle": "ခရီး: {name}",
+  "calendarTripHidden": "ခရီး"
 }

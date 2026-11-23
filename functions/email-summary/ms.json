@@ -29,5 +29,11 @@
   "invalidLinkBody": "Anda boleh mematikan ringkasan bulanan dalam Vaultara di bawah Pemberitahuan.",
   "calendarName": "Tarikh luput Vaultara",
   "calendarEventTitle": "{name} luput",
-  "calendarLockedTitle": "Rekod dikunci luput"
+  "calendarLockedTitle": "Rekod dikunci luput",
+  "calendarRenewTitle": "Perbaharui {name} tidak lama lagi",
+  "calendarRenewLocked": "Perbaharui rekod berkunci tidak lama lagi",
+  "calendarHiddenTitle": "Dokumen tamat tempoh",
+  "calendarHiddenRenew": "Pembaharuan dokumen semakin hampir",
+  "calendarTripTitle": "Perjalanan: {name}",
+  "calendarTripHidden": "Perjalanan"
 }

@@ -29,5 +29,11 @@
   "invalidLinkBody": "آپ ماہانہ خلاصہ Vaultara میں اطلاعات کے تحت بند کر سکتے ہیں۔",
   "calendarName": "Vaultara کی میعاد ختم ہونے کی تاریخیں",
   "calendarEventTitle": "{name} کی میعاد ختم ہوتی ہے",
-  "calendarLockedTitle": "مقفل ریکارڈ کی میعاد ختم ہوتی ہے"
+  "calendarLockedTitle": "مقفل ریکارڈ کی میعاد ختم ہوتی ہے",
+  "calendarRenewTitle": "{name} جلد تجدید کریں",
+  "calendarRenewLocked": "مقفل ریکارڈ جلد تجدید کریں",
+  "calendarHiddenTitle": "دستاویز کی میعاد ختم ہو رہی ہے",
+  "calendarHiddenRenew": "دستاویز کی تجدید قریب ہے",
+  "calendarTripTitle": "سفر: {name}",
+  "calendarTripHidden": "سفر"
 }

@@ -29,5 +29,11 @@
   "invalidLinkBody": "您可以在 Vaultara 的通知中關閉每月摘要。",
   "calendarName": "Vaultara 到期日期",
   "calendarEventTitle": "{name} 到期",
-  "calendarLockedTitle": "已鎖定的記錄到期"
+  "calendarLockedTitle": "已鎖定的記錄到期",
+  "calendarRenewTitle": "即將續期 {name}",
+  "calendarRenewLocked": "即將續期一筆已鎖定的紀錄",
+  "calendarHiddenTitle": "證件即將到期",
+  "calendarHiddenRenew": "證件續期將至",
+  "calendarTripTitle": "旅行：{name}",
+  "calendarTripHidden": "旅行"
 }

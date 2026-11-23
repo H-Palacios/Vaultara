@@ -29,5 +29,11 @@
   "invalidLinkBody": "Vaultara मा सूचनाहरू अन्तर्गत तपाईं मासिक सारांश बन्द गर्न सक्नुहुन्छ।",
   "calendarName": "Vaultara म्याद समाप्ति मितिहरू",
   "calendarEventTitle": "{name} को म्याद सकिन्छ",
-  "calendarLockedTitle": "लक गरिएको रेकर्डको म्याद सकिन्छ"
+  "calendarLockedTitle": "लक गरिएको रेकर्डको म्याद सकिन्छ",
+  "calendarRenewTitle": "{name} छिट्टै नवीकरण गर्नुहोस्",
+  "calendarRenewLocked": "लक गरिएको रेकर्ड छिट्टै नवीकरण गर्नुहोस्",
+  "calendarHiddenTitle": "कागजातको म्याद सकिँदै",
+  "calendarHiddenRenew": "कागजात नवीकरण नजिकिँदै",
+  "calendarTripTitle": "यात्रा: {name}",
+  "calendarTripHidden": "यात्रा"
 }

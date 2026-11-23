@@ -29,5 +29,11 @@
   "invalidLinkBody": "Айлық қорытындыны Vaultara-да Хабарландырулар бөлімінде өшіруге болады.",
   "calendarName": "Vaultara мерзімдері",
   "calendarEventTitle": "{name} мерзімі аяқталады",
-  "calendarLockedTitle": "Құлыптаулы жазбаның мерзімі аяқталады"
+  "calendarLockedTitle": "Құлыптаулы жазбаның мерзімі аяқталады",
+  "calendarRenewTitle": "{name} жақында жаңартыңыз",
+  "calendarRenewLocked": "Құлыпталған жазбаны жақында жаңартыңыз",
+  "calendarHiddenTitle": "Құжаттың мерзімі бітеді",
+  "calendarHiddenRenew": "Құжатты жаңарту уақыты жақындап қалды",
+  "calendarTripTitle": "Сапар: {name}",
+  "calendarTripHidden": "Сапар"
 }

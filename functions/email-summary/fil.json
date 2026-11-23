@@ -29,5 +29,11 @@
   "invalidLinkBody": "Maaari mong i-off ang buwanang summary sa Vaultara sa ilalim ng Mga Notification.",
   "calendarName": "Mga petsa ng pag-expire sa Vaultara",
   "calendarEventTitle": "Mag-e-expire ang {name}",
-  "calendarLockedTitle": "Mag-e-expire ang naka-lock na rekord"
+  "calendarLockedTitle": "Mag-e-expire ang naka-lock na rekord",
+  "calendarRenewTitle": "I-renew ang {name} sa lalong madaling panahon",
+  "calendarRenewLocked": "I-renew agad ang naka-lock na record",
+  "calendarHiddenTitle": "Mag-e-expire ang dokumento",
+  "calendarHiddenRenew": "Malapit na ang renewal ng dokumento",
+  "calendarTripTitle": "Biyahe: {name}",
+  "calendarTripHidden": "Biyahe"
 }

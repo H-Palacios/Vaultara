@@ -29,5 +29,11 @@
   "invalidLinkBody": "O lè pa àkótán oṣooṣù nínú Vaultara lábẹ́ Awọn ifitonileti.",
   "calendarName": "Àwọn ọjọ́ ìparí Vaultara",
   "calendarEventTitle": "{name} ń parí",
-  "calendarLockedTitle": "Igbasilẹ tí a tì ń parí"
+  "calendarLockedTitle": "Igbasilẹ tí a tì ń parí",
+  "calendarRenewTitle": "Ṣe ìsọdọ̀tun {name} láìpẹ́",
+  "calendarRenewLocked": "Ṣe ìsọdọ̀tun àkọsílẹ̀ tí a tì pa láìpẹ́",
+  "calendarHiddenTitle": "Ìwé ń parí",
+  "calendarHiddenRenew": "Ìsọdọ̀tun ìwé ń sún mọ́",
+  "calendarTripTitle": "Ìrìn àjò: {name}",
+  "calendarTripHidden": "Ìrìn àjò"
 }

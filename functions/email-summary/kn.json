@@ -29,5 +29,11 @@
   "invalidLinkBody": "ನೀವು ಮಾಸಿಕ ಸಾರಾಂಶವನ್ನು Vaultara ನಲ್ಲಿ ಅಧಿಸೂಚನೆಗಳ ಅಡಿಯಲ್ಲಿ ಆಫ್ ಮಾಡಬಹುದು.",
   "calendarName": "Vaultara ಮುಕ್ತಾಯ ದಿನಾಂಕಗಳು",
   "calendarEventTitle": "{name} ಮುಕ್ತಾಯವಾಗುತ್ತದೆ",
-  "calendarLockedTitle": "ಲಾಕ್ ಮಾಡಿದ ದಾಖಲೆ ಮುಕ್ತಾಯವಾಗುತ್ತದೆ"
+  "calendarLockedTitle": "ಲಾಕ್ ಮಾಡಿದ ದಾಖಲೆ ಮುಕ್ತಾಯವಾಗುತ್ತದೆ",
+  "calendarRenewTitle": "{name} ಶೀಘ್ರದಲ್ಲೇ ನವೀಕರಿಸಿ",
+  "calendarRenewLocked": "ಲಾಕ್ ಮಾಡಿದ ದಾಖಲೆಯನ್ನು ಶೀಘ್ರದಲ್ಲೇ ನವೀಕರಿಸಿ",
+  "calendarHiddenTitle": "ದಾಖಲೆಯ ಅವಧಿ ಮುಗಿಯುತ್ತದೆ",
+  "calendarHiddenRenew": "ದಾಖಲೆ ನವೀಕರಣ ಹತ್ತಿರವಾಗಿದೆ",
+  "calendarTripTitle": "ಪ್ರಯಾಣ: {name}",
+  "calendarTripHidden": "ಪ್ರಯಾಣ"
 }

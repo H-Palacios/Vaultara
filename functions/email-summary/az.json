@@ -29,5 +29,11 @@
   "invalidLinkBody": "Aylıq xülasəni Vaultara-da Bildirişlər bölməsində söndürə bilərsiniz.",
   "calendarName": "Vaultara bitmə tarixləri",
   "calendarEventTitle": "{name} müddəti bitir",
-  "calendarLockedTitle": "Kilidli sənədin müddəti bitir"
+  "calendarLockedTitle": "Kilidli sənədin müddəti bitir",
+  "calendarRenewTitle": "{name} tezliklə yeniləyin",
+  "calendarRenewLocked": "Kilidli qeydi tezliklə yeniləyin",
+  "calendarHiddenTitle": "Sənədin müddəti bitir",
+  "calendarHiddenRenew": "Sənədin yenilənməsi yaxınlaşır",
+  "calendarTripTitle": "Səfər: {name}",
+  "calendarTripHidden": "Səfər"
 }

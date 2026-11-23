@@ -29,5 +29,11 @@
   "invalidLinkBody": "Aylık özeti Vaultara uygulamasında Bildirimler bölümünden kapatabilirsiniz.",
   "calendarName": "Vaultara son kullanma tarihleri",
   "calendarEventTitle": "{name} süresi doluyor",
-  "calendarLockedTitle": "Kilitli kaydın süresi doluyor"
+  "calendarLockedTitle": "Kilitli kaydın süresi doluyor",
+  "calendarRenewTitle": "{name} yakında yenile",
+  "calendarRenewLocked": "Kilitli bir kaydı yakında yenile",
+  "calendarHiddenTitle": "Belgenin süresi doluyor",
+  "calendarHiddenRenew": "Belge yenileme yaklaşıyor",
+  "calendarTripTitle": "Seyahat: {name}",
+  "calendarTripHidden": "Seyahat"
 }

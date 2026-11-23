@@ -29,5 +29,11 @@
   "invalidLinkBody": "ਤੁਸੀਂ Vaultara ਵਿੱਚ ਨੋਟੀਫਿਕੇਸ਼ਨਾਂ ਹੇਠ ਮਹੀਨਾਵਾਰ ਸਾਰ ਬੰਦ ਕਰ ਸਕਦੇ ਹੋ।",
   "calendarName": "Vaultara ਮਿਆਦ ਦੀਆਂ ਤਾਰੀਖਾਂ",
   "calendarEventTitle": "{name} ਦੀ ਮਿਆਦ ਖਤਮ ਹੁੰਦੀ ਹੈ",
-  "calendarLockedTitle": "ਲਾਕ ਕੀਤੇ ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਖਤਮ ਹੁੰਦੀ ਹੈ"
+  "calendarLockedTitle": "ਲਾਕ ਕੀਤੇ ਰਿਕਾਰਡ ਦੀ ਮਿਆਦ ਖਤਮ ਹੁੰਦੀ ਹੈ",
+  "calendarRenewTitle": "{name} ਜਲਦੀ ਨਵਿਆਓ",
+  "calendarRenewLocked": "ਲਾਕ ਕੀਤਾ ਰਿਕਾਰਡ ਜਲਦੀ ਨਵਿਆਓ",
+  "calendarHiddenTitle": "ਦਸਤਾਵੇਜ਼ ਦੀ ਮਿਆਦ ਖਤਮ ਹੁੰਦੀ ਹੈ",
+  "calendarHiddenRenew": "ਦਸਤਾਵੇਜ਼ ਨਵਿਆਉਣ ਦਾ ਸਮਾਂ ਨੇੜੇ ਹੈ",
+  "calendarTripTitle": "ਯਾਤਰਾ: {name}",
+  "calendarTripHidden": "ਯਾਤਰਾ"
 }

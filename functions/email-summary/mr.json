@@ -29,5 +29,11 @@
   "invalidLinkBody": "तुम्ही मासिक सारांश Vaultara मध्ये सूचना अंतर्गत बंद करू शकता.",
   "calendarName": "Vaultara मुदतसमाप्तीच्या तारखा",
   "calendarEventTitle": "{name} ची मुदत संपते",
-  "calendarLockedTitle": "लॉक केलेल्या नोंदीची मुदत संपते"
+  "calendarLockedTitle": "लॉक केलेल्या नोंदीची मुदत संपते",
+  "calendarRenewTitle": "{name} लवकर नूतनीकरण करा",
+  "calendarRenewLocked": "लॉक केलेली नोंद लवकर नूतनीकरण करा",
+  "calendarHiddenTitle": "दस्तऐवजाची मुदत संपते",
+  "calendarHiddenRenew": "दस्तऐवज नूतनीकरण जवळ आले",
+  "calendarTripTitle": "प्रवास: {name}",
+  "calendarTripHidden": "प्रवास"
 }

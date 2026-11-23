@@ -29,5 +29,11 @@
   "invalidLinkBody": "Miesięczne podsumowanie możesz wyłączyć w aplikacji Vaultara w sekcji Powiadomienia.",
   "calendarName": "Daty wygaśnięcia Vaultara",
   "calendarEventTitle": "Wygasa: {name}",
-  "calendarLockedTitle": "Wygasa zablokowany rekord"
+  "calendarLockedTitle": "Wygasa zablokowany rekord",
+  "calendarRenewTitle": "Wkrótce odnów: {name}",
+  "calendarRenewLocked": "Wkrótce odnów zablokowany wpis",
+  "calendarHiddenTitle": "Dokument wygasa",
+  "calendarHiddenRenew": "Zbliża się odnowienie dokumentu",
+  "calendarTripTitle": "Podróż: {name}",
+  "calendarTripHidden": "Podróż"
 }

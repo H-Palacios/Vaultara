@@ -29,5 +29,11 @@
   "invalidLinkBody": "Айлык кыскача маалыматты Vaultara'да Билдирмелер бөлүмүнөн өчүрө аласыз.",
   "calendarName": "Vaultara мөөнөт күндөрү",
   "calendarEventTitle": "{name} мөөнөтү бүтөт",
-  "calendarLockedTitle": "Кулпуланган жазуунун мөөнөтү бүтөт"
+  "calendarLockedTitle": "Кулпуланган жазуунун мөөнөтү бүтөт",
+  "calendarRenewTitle": "{name} жакында жаңыртыңыз",
+  "calendarRenewLocked": "Кулпуланган жазууну жакында жаңыртыңыз",
+  "calendarHiddenTitle": "Документтин мөөнөтү бүтөт",
+  "calendarHiddenRenew": "Документти жаңыртуу жакындап калды",
+  "calendarTripTitle": "Сапар: {name}",
+  "calendarTripHidden": "Сапар"
 }

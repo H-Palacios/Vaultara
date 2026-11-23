@@ -29,5 +29,11 @@
   "invalidLinkBody": "Ungasivala isifinyezo senyanga ku-Vaultara ku-Izaziso.",
   "calendarName": "Izinsuku zokuphelelwa ze-Vaultara",
   "calendarEventTitle": "{name} liyaphelelwa",
-  "calendarLockedTitle": "Irekhodi elikhiyiwe liyaphelelwa"
+  "calendarLockedTitle": "Irekhodi elikhiyiwe liyaphelelwa",
+  "calendarRenewTitle": "Vuselela {name} maduze",
+  "calendarRenewLocked": "Vuselela irekhodi elikhiyiwe maduze",
+  "calendarHiddenTitle": "Idokhumenti iyaphelelwa",
+  "calendarHiddenRenew": "Ukuvuselelwa kwedokhumenti kuyasondela",
+  "calendarTripTitle": "Uhambo: {name}",
+  "calendarTripHidden": "Uhambo"
 }

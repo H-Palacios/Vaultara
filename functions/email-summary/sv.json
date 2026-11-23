@@ -29,5 +29,11 @@
   "invalidLinkBody": "Du kan stänga av månadssammanfattningen i Vaultara under Aviseringar.",
   "calendarName": "Utgångsdatum från Vaultara",
   "calendarEventTitle": "{name} går ut",
-  "calendarLockedTitle": "Låst post går ut"
+  "calendarLockedTitle": "Låst post går ut",
+  "calendarRenewTitle": "Förnya {name} snart",
+  "calendarRenewLocked": "Förnya en låst post snart",
+  "calendarHiddenTitle": "Dokument går ut",
+  "calendarHiddenRenew": "Förnyelse av dokument närmar sig",
+  "calendarTripTitle": "Resa: {name}",
+  "calendarTripHidden": "Resa"
 }

@@ -29,5 +29,11 @@
   "invalidLinkBody": "Vaultara-র বিজ্ঞপ্তি অংশ থেকে আপনি মাসিক সারসংক্ষেপ বন্ধ করতে পারবেন।",
   "calendarName": "Vaultara মেয়াদ শেষের তারিখ",
   "calendarEventTitle": "{name}-এর মেয়াদ শেষ",
-  "calendarLockedTitle": "লক করা রেকর্ডের মেয়াদ শেষ"
+  "calendarLockedTitle": "লক করা রেকর্ডের মেয়াদ শেষ",
+  "calendarRenewTitle": "শীঘ্রই {name} নবায়ন করুন",
+  "calendarRenewLocked": "শীঘ্রই একটি লক করা রেকর্ড নবায়ন করুন",
+  "calendarHiddenTitle": "নথির মেয়াদ শেষ হচ্ছে",
+  "calendarHiddenRenew": "নথি নবায়নের সময় আসছে",
+  "calendarTripTitle": "ভ্রমণ: {name}",
+  "calendarTripHidden": "ভ্রমণ"
 }

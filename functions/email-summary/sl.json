@@ -29,5 +29,11 @@
   "invalidLinkBody": "Mesečni povzetek lahko izklopite v aplikaciji Vaultara v razdelku Obvestila.",
   "calendarName": "Datumi poteka v aplikaciji Vaultara",
   "calendarEventTitle": "Poteče: {name}",
-  "calendarLockedTitle": "Poteče zaklenjen zapis"
+  "calendarLockedTitle": "Poteče zaklenjen zapis",
+  "calendarRenewTitle": "Kmalu podaljšajte {name}",
+  "calendarRenewLocked": "Kmalu podaljšajte zaklenjen zapis",
+  "calendarHiddenTitle": "Dokument poteče",
+  "calendarHiddenRenew": "Bliža se podaljšanje dokumenta",
+  "calendarTripTitle": "Potovanje: {name}",
+  "calendarTripHidden": "Potovanje"
 }

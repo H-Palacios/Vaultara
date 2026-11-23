@@ -29,5 +29,11 @@
   "invalidLinkBody": "Za ka iya kashe taƙaitaccen bayanin wata-wata a Vaultara a ƙarƙashin Sanarwoyi.",
   "calendarName": "Ranakun karewa na Vaultara",
   "calendarEventTitle": "{name} zai ƙare",
-  "calendarLockedTitle": "Rikodin da aka kulle zai ƙare"
+  "calendarLockedTitle": "Rikodin da aka kulle zai ƙare",
+  "calendarRenewTitle": "Sabunta {name} nan ba da daɗewa ba",
+  "calendarRenewLocked": "Sabunta bayanin da aka kulle nan ba da daɗewa ba",
+  "calendarHiddenTitle": "Takarda za ta ƙare",
+  "calendarHiddenRenew": "Sabunta takarda na gabatowa",
+  "calendarTripTitle": "Tafiya: {name}",
+  "calendarTripHidden": "Tafiya"
 }

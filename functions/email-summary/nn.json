@@ -29,5 +29,11 @@
   "invalidLinkBody": "Du kan slå av det månadlege samandraget i Vaultara under Varslingar.",
   "calendarName": "Utløpsdatoar i Vaultara",
   "calendarEventTitle": "{name} går ut",
-  "calendarLockedTitle": "Låst oppføring går ut"
+  "calendarLockedTitle": "Låst oppføring går ut",
+  "calendarRenewTitle": "Forny {name} snart",
+  "calendarRenewLocked": "Forny ei låst oppføring snart",
+  "calendarHiddenTitle": "Dokument går ut",
+  "calendarHiddenRenew": "Fornying av dokument nærmar seg",
+  "calendarTripTitle": "Reise: {name}",
+  "calendarTripHidden": "Reise"
 }
