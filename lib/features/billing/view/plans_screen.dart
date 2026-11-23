@@ -251,6 +251,7 @@ class _PlansScreenState extends State<PlansScreen> {
           loc.businessBenefitFamily,
           loc.businessBenefitStaffVehicles,
           loc.businessBenefitRoles,
+          loc.businessBenefitStaffImport,
           loc.businessBenefitBulk,
           loc.businessBenefitPdf,
         ];
@@ -265,6 +266,7 @@ class _PlansScreenState extends State<PlansScreen> {
           loc.planFeatureCustomGroups,
           loc.planFeatureOwnReminderDates,
           loc.planFeaturePhotos(AttachmentRepository.premiumPerRecord),
+          loc.planFeatureBatchScan,
         ];
     }
   }
