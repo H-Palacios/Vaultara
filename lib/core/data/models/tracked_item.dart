@@ -114,6 +114,10 @@ class TrackedItem {
 
   final String? householdId;
   final String? createdBy;
+
+  /// The household member who renews a shared record. Only they get its
+  /// reminders; null means everyone in the household does.
+  final String? assigneeUid;
   final DateTime? createdAt;
   final String? updatedBy;
   final DateTime? updatedAt;
@@ -157,6 +161,7 @@ class TrackedItem {
     this.deletedAt,
     this.householdId,
     this.createdBy,
+    this.assigneeUid,
     this.createdAt,
     this.updatedBy,
     this.updatedAt,
@@ -258,6 +263,8 @@ class TrackedItem {
     String? householdId,
     bool clearHousehold = false,
     String? createdBy,
+    String? assigneeUid,
+    bool clearAssignee = false,
   }) {
     // The place and the older wallet switch stay in step: a new place sets
     // the switch, and turning the switch on or off moves the place.
@@ -315,6 +322,9 @@ class TrackedItem {
       deletedAt: deletedAt ?? this.deletedAt,
       householdId: clearHousehold ? null : (householdId ?? this.householdId),
       createdBy: clearHousehold ? null : (createdBy ?? this.createdBy),
+      assigneeUid: clearHousehold || clearAssignee
+          ? null
+          : (assigneeUid ?? this.assigneeUid),
       createdAt: clearHousehold ? null : createdAt,
       updatedBy: clearHousehold ? null : updatedBy,
       updatedAt: clearHousehold ? null : updatedAt,
@@ -357,6 +367,7 @@ class TrackedItem {
       'isDeleted': isDeleted,
       'deletedAt': deletedAt != null ? Timestamp.fromDate(deletedAt!) : null,
       if (createdBy != null) 'createdBy': createdBy,
+      if (assigneeUid != null) 'assigneeUid': assigneeUid,
     };
   }
 
@@ -470,6 +481,9 @@ class TrackedItem {
       isDeleted: map['isDeleted'] as bool? ?? false,
       deletedAt: deletedAt,
       createdBy: map['createdBy'] is String ? map['createdBy'] as String : null,
+      assigneeUid: map['assigneeUid'] is String
+          ? map['assigneeUid'] as String
+          : null,
       createdAt: _readTime(map['createdAt']),
       updatedBy: map['updatedBy'] is String ? map['updatedBy'] as String : null,
       updatedAt: _readTime(map['updatedAt']),

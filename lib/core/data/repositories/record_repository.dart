@@ -131,6 +131,8 @@ class RecordRepository {
     if (record.isShared) {
       map.remove('reminderBaseId');
       map.addAll(_holderFields(record));
+      // Written even when empty, so choosing "anyone" clears it.
+      map['assigneeUid'] = record.assigneeUid;
     }
     return map;
   }
@@ -233,6 +235,8 @@ class RecordRepository {
     record.leadDays,
     record.holderId,
     record.reminderBaseId,
+    // A new renewer moves the reminders to their phone.
+    record.assigneeUid,
   ].join('|');
 
   static TrackedItem stored(TrackedItem record) {

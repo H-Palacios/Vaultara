@@ -42,6 +42,9 @@ class RecordInput {
   final int? leadDays;
   final bool shared;
 
+  /// The household member who renews it, when it is shared.
+  final String? assigneeUid;
+
   RecordInput({
     required this.name,
     required this.expiryDate,
@@ -69,5 +72,6 @@ class RecordInput {
     this.referenceLockedMask,
     this.leadDays,
     this.shared = false,
+    this.assigneeUid,
   });
 }
