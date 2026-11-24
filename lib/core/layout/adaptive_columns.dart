@@ -44,6 +44,26 @@ abstract class AdaptiveColumnsBase extends StatelessWidget {
   /// Everything, in order, when there is one column.
   List<Widget> get oneColumn;
 
+  /// [column] without the empty spaces at its top. In one column a space
+  /// keeps a part apart from the one above it; at the top of a column
+  /// there is nothing above, and the space would only push that column
+  /// lower than the other.
+  static List<Widget> withoutLeadingSpace(List<Widget> column) {
+    var start = 0;
+    while (start < column.length && _isSpace(column[start])) {
+      start++;
+    }
+    return start == 0 ? column : column.sublist(start);
+  }
+
+  /// A plain gap such as `SizedBox(height: 14)`. A box with a key or a
+  /// width is something on its own and stays.
+  static bool _isSpace(Widget widget) =>
+      widget is SizedBox &&
+      widget.child == null &&
+      widget.width == null &&
+      widget.key == null;
+
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
@@ -53,8 +73,8 @@ abstract class AdaptiveColumnsBase extends StatelessWidget {
           twoColumns: twoColumns,
           child: twoColumns
               ? TwoColumns(
-                  left: firstColumn,
-                  right: secondColumn,
+                  left: withoutLeadingSpace(firstColumn),
+                  right: withoutLeadingSpace(secondColumn),
                   gap: gap,
                   columnAlignment: columnAlignment,
                 )
