@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
-/// The date picker opened on typing, made to fit with the keyboard open.
+/// The one date picker used across Vaultara, so every date field opens the
+/// same way: on the calendar, with the pencil to type a date instead.
+///
+/// With no [initialDate] no day is chosen yet and the calendar opens on the
+/// current month, so an empty field does not suggest a date.
 ///
 /// Flutter's picker has a fixed size and shrinks its space by the keyboard,
 /// so on small or zoomed screens it overflowed. Here it can scroll when
@@ -9,10 +13,10 @@ import 'package:flutter/material.dart';
 /// so the typed date keeps its focus.
 Future<DateTime?> showAppDatePicker({
   required BuildContext context,
-  required DateTime initialDate,
+  DateTime? initialDate,
   required DateTime firstDate,
   required DateTime lastDate,
-  DatePickerEntryMode initialEntryMode = DatePickerEntryMode.input,
+  DatePickerEntryMode initialEntryMode = DatePickerEntryMode.calendar,
   String? helpText,
 }) {
   return showDatePicker(

@@ -1404,10 +1404,12 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
 
     final selected = await showAppDatePicker(
       context: context,
-      initialDate: ExpiryDates.pickerInitial(expiryDate),
+      // An empty field opens on this month with no day chosen.
+      initialDate: expiryDate == null
+          ? null
+          : ExpiryDates.pickerInitial(expiryDate),
       firstDate: ExpiryDates.first(),
       lastDate: ExpiryDates.last(),
-      initialEntryMode: DatePickerEntryMode.input,
     );
 
     if (selected != null && mounted) _setExpiry(selected);

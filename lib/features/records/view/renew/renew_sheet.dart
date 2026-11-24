@@ -158,7 +158,6 @@ class _RenewSheetState extends State<_RenewSheet> {
       initialDate: initial,
       firstDate: earliest,
       lastDate: horizon.isBefore(initial) ? initial : horizon,
-      initialEntryMode: DatePickerEntryMode.input,
     );
     if (picked != null && mounted) {
       setState(() => _newExpiry = DateUtils.dateOnly(picked));
