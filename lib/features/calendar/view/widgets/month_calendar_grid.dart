@@ -7,11 +7,12 @@ import 'package:vaultara/l10n/app_localizations.dart';
 
 /// The month grid.
 ///
-/// Each day shows up to three markers for what expires on it, in the app's
-/// one colour scale: red for a date that has passed, orange within 7 days,
-/// amber within 30 days and green after that. Past dates use a diamond
-/// instead of a dot so colour is not the only signal. A ring around the number marks a
-/// reminder day, and days with four or more records get a light tint.
+/// Each day shows up to three round dots for what expires on it, in the
+/// app's one colour scale: red for a date that has passed, orange within 7
+/// days, amber within 30 days and green after that. They are the same dots
+/// as on the record cards under the grid and in the key below it. A ring
+/// around the number marks a reminder day, and days with four or more
+/// records get a light tint.
 class MonthCalendarGrid extends StatelessWidget {
   /// First day of the month being displayed.
   final DateTime month;
@@ -374,7 +375,6 @@ class _Markers extends StatelessWidget {
     final Color colour = isSelected
         ? Colors.white
         : (isInCurrentMonth ? base : base.withValues(alpha: 0.4));
-    final past = daysFromToday < 0;
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -383,19 +383,11 @@ class _Markers extends StatelessWidget {
         count.clamp(1, _maxDots).toInt(),
         (_) => Padding(
           padding: const EdgeInsets.symmetric(horizontal: 1),
-          child: past
-              ? Transform.rotate(
-                  angle: 0.785398,
-                  child: Container(width: 4.5, height: 4.5, color: colour),
-                )
-              : Container(
-                  width: 5,
-                  height: 5,
-                  decoration: BoxDecoration(
-                    color: colour,
-                    shape: BoxShape.circle,
-                  ),
-                ),
+          child: Container(
+            width: 5,
+            height: 5,
+            decoration: BoxDecoration(color: colour, shape: BoxShape.circle),
+          ),
         ),
       ),
     );
@@ -422,16 +414,11 @@ class CalendarLegend extends StatelessWidget {
       ],
     );
 
+    // The size of the dot on the record cards under the grid.
     Widget dot(Color c) => Container(
-      width: 7,
-      height: 7,
+      width: 8,
+      height: 8,
       decoration: BoxDecoration(color: c, shape: BoxShape.circle),
-    );
-
-    // Past dates use a diamond, as in the grid.
-    final diamond = Transform.rotate(
-      angle: 0.785398,
-      child: Container(width: 6, height: 6, color: RecordStatusColours.expired),
     );
 
     return Wrap(
@@ -439,7 +426,7 @@ class CalendarLegend extends StatelessWidget {
       runSpacing: 6,
       crossAxisAlignment: WrapCrossAlignment.center,
       children: [
-        item(diamond, loc.statusExpired),
+        item(dot(RecordStatusColours.expired), loc.statusExpired),
         item(dot(RecordStatusColours.urgent), loc.legendWithinWeek),
         item(dot(RecordStatusColours.expiringSoon), loc.legendWithinMonth),
         item(dot(RecordStatusColours.valid), loc.legendLater),
