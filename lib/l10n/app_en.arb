@@ -11277,6 +11277,30 @@
   "@petAddChip": {
     "description": "Pet: link that opens the pet with More details open"
   },
+  "teamTitle": "Team",
+  "@teamTitle": {
+    "description": "Team naming and plan cards: teamTitle"
+  },
+  "teamIntro": "Keep track of your staff's records. Their reminders show their name so you know whose record it is.",
+  "@teamIntro": {
+    "description": "Team naming and plan cards: teamIntro"
+  },
+  "teamProfileTileSubtitle": "Your staff and their records",
+  "@teamProfileTileSubtitle": {
+    "description": "Team naming and plan cards: teamProfileTileSubtitle"
+  },
+  "planBenefitEverythingIndividual": "Everything in Individual",
+  "@planBenefitEverythingIndividual": {
+    "description": "Team naming and plan cards: planBenefitEverythingIndividual"
+  },
+  "businessBenefitStaffRecords": "Each staff member has their own records and reminders",
+  "@businessBenefitStaffRecords": {
+    "description": "Team naming and plan cards: businessBenefitStaffRecords"
+  },
+  "planBenefitPetsSolo": "Pets with their own documents, microchip and vet",
+  "@planBenefitPetsSolo": {
+    "description": "Team naming and plan cards: planBenefitPetsSolo"
+  },
   "yoursTag": "Yours",
   "@yoursTag": {
     "description": "Small label on a category or group the user made."
