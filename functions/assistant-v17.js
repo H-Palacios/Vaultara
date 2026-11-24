@@ -106,8 +106,26 @@ module.exports = function build(h) {
   }
 
   const GUIDE = [
-    "Adding pets: when the user asks you to add a pet, call propose_create_pet with its name and kind of animal; add birth_date only when the user said it. When they only ask how to add a pet, say it is in Profile, under People, in Pets, and offer to add it for them; if they want to be shown, play the pets tutorial. If the name or the kind is missing, ask for both in one short question. After the card, say they can add the microchip, vet and documents in the pet's page.",
+    "Adding pets: when the user asks you to add a pet, call propose_create_pet with its name and kind of animal; add birth_date only when the user said it. When they only ask how to add a pet, say it is in Profile, under People, in Pets, and offer to add it for them; if they want to be shown, play the pets tutorial. If the name or the kind is missing, ask for both in one short question. Then add in a few words that the microchip, vet and documents can be added on the pet's page.",
   ];
 
-  return { TOOLS, NAMES, run, step, GUIDE, proposeCreatePet, typeOf };
+  // In this app version pet travel rules moved off the Pets screens into
+  // trips, and the Pets screen lists what needs doing. The protocol 15
+  // guide still describes the older app, so its lines are adjusted here.
+  const PET_SCREEN =
+    " The Pets screen lists the pets, then Needs attention (documents of all pets that expired or expire within 30 days) and Still to add (what each pet still needs, with a button to add each).";
+  function petGuide(lines) {
+    return lines.map((line) => {
+      if (line.startsWith("Pets: Profile > Pets")) return line + PET_SCREEN;
+      if (line.startsWith("Pet travel: Pets > Pet travel rules, or a pet's Pet travel button.")) {
+        return line.replace(
+          "Pet travel: Pets > Pet travel rules, or a pet's Pet travel button.",
+          "Pet travel: the rules come up when a trip is planned; in a trip, the Pets card has a button to the full rules. The Pets screen and a pet's page have no pet travel button.",
+        );
+      }
+      return line.replace("documents, adding a pet and the travel rules.", "documents and adding a pet.");
+    });
+  }
+
+  return { TOOLS, NAMES, run, step, GUIDE, petGuide, proposeCreatePet, typeOf };
 };

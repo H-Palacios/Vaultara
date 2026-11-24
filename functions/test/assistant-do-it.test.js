@@ -46,10 +46,28 @@ const t = require(path.join(__dirname, "..", "assistant"))._test;
     assert.match(prompt, /play the matching tutorial with open_screen screen tutorial when there is one \(add_record for adding a record/, version);
     assert.match(prompt, /There is no Records tab/, version);
     assert.doesNotMatch(prompt, /When the user asks where something is or wants to go there/, version);
+    // It says what will happen and what to tap, not that it made a card.
+    assert.match(prompt, /Do not talk about cards, drafts or preparing something/, version);
+    assert.match(prompt, /Tap Confirm to add him/, version);
+    assert.match(prompt, /In Talk mode, ask them to say yes instead/, version);
+    assert.doesNotMatch(prompt, /Say you prepared it/, version);
+    // Offers and reply buttons say what it will do, not that it makes a card.
+    assert.match(prompt, /The same goes for offers and suggested replies/, version);
+    assert.match(prompt, /never \\?"I can prepare a card\\?"/, version);
+    assert.doesNotMatch(prompt, /say you prepared it/, version);
   }
   assert.match(t.STATIC_PROMPT_V17, /propose_create_pet/);
   assert.doesNotMatch(t.STATIC_PROMPT_V16, /propose_create_pet/);
+  assert.doesNotMatch(t.STATIC_PROMPT_V17, /After the card/);
   assert.match(t.STATIC_PROMPT_V17, /only ask how to add a pet, say it is in Profile, under People, in Pets, and offer to add it for them/);
+
+  // Version 17 knows pet travel moved into trips and what the Pets screen
+  // shows; older apps keep the guide for the screens they have.
+  assert.match(t.STATIC_PROMPT_V17, /The Pets screen and a pet's page have no pet travel button/);
+  assert.match(t.STATIC_PROMPT_V17, /Needs attention \(documents of all pets that expired or expire within 30 days\)/);
+  assert.doesNotMatch(t.STATIC_PROMPT_V17, /Pets > Pet travel rules, or a pet's Pet travel button/);
+  assert.doesNotMatch(t.STATIC_PROMPT_V17, /adding a pet and the travel rules/);
+  assert.match(t.STATIC_PROMPT_V16, /Pets > Pet travel rules, or a pet's Pet travel button/);
 
   // Tutorials are offered when asked to be shown, not for things to do.
   const open = t.TOOLS_V17.find((tool) => tool.name === "open_screen");
@@ -62,6 +80,7 @@ const t = require(path.join(__dirname, "..", "assistant"))._test;
   let actions = [];
   const ok = await t.runTool({ v17: true, userRef: pets }, "propose_create_pet", { name: "Rex", type: "dog" }, actions, t.NAMES_V17);
   assert.strictEqual(ok.status, "draft_ready");
+  assert.match(ok.note, /Do not mention a card or that you prepared it/);
   assert.strictEqual(actions[0].type, "pet_add");
   actions = [];
   const old = await t.runTool({ v16: true, userRef: pets }, "propose_create_pet", { name: "Rex", type: "dog" }, actions, t.NAMES_V16);

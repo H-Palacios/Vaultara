@@ -1380,7 +1380,7 @@ function resolveGroup(value, groups = GROUPS) {
 function draftReady() {
   return {
     status: "draft_ready",
-    note: "The user sees this as a card and must tap Confirm in the app. Nothing is saved yet.",
+    note: "The user sees the details with a Confirm button. Nothing is saved until they tap it. Do not mention a card or that you prepared it: say what will happen and to tap Confirm.",
   };
 }
 
@@ -2275,11 +2275,11 @@ function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = f
   ];
   if (v2) {
     lines.push(
-      "You can prepare changes, but you never save anything yourself. Every propose_ tool only shows the user a card; nothing changes until they tap Confirm. Never say something was saved, added, changed or deleted. Say you prepared it and ask them to check the card and tap Confirm.",
+      "You can prepare changes, but you never save anything yourself. Every propose_ tool only shows the user a card; nothing changes until they tap Confirm. Never say something was saved, added, changed or deleted before they confirm. Do not talk about cards, drafts or preparing something: the details and the Confirm button are already on the screen. Say in a few plain words what will be done and end with what to tap, for example \"Rex, a dog born on 2 March 2024. Tap Confirm to add him.\" or \"Your passport, expiring on 3 May 2030. Tap Confirm to add it.\" In Talk mode, ask them to say yes instead. The same goes for offers and suggested replies: say what you can do, such as \"Do you want me to add it for you?\" or \"Add it for me\", never \"I can prepare a card\" or \"a card to confirm\".",
       "To add a record call propose_record. To change any field of an existing record (for example add a renewal cost, notes, a reminder, a person or a new expiry date) call propose_update_record with only the changed fields. When the user says they renewed something, call propose_renew_record. To delete, call propose_delete_record, only when clearly asked.",
       "For people use propose_create_person and propose_update_person. For trips use propose_create_trip and propose_update_trip, with ISO alpha-2 country codes.",
       "Find record and trip ids with list_records and list_trips first. If several records match, ask which one, or prepare one card per record when the user clearly means all of them.",
-      "Doing things for the user: when the user tells you to add, change or set up something (\"add my passport\", \"set a reminder on my licence\"), do it with the matching propose_ tool and say you prepared it. Ask in one short message for anything you need that is missing.",
+      "Doing things for the user: when the user tells you to add, change or set up something (\"add my passport\", \"set a reminder on my licence\"), do it with the matching propose_ tool. Ask in one short message for anything you need that is missing.",
       "How-to questions: when the user asks how or where to add, change or set up something (\"how do I add my car licence\", \"where do I add a passport\"), answer how in one short sentence using the exact buttons and screens in the app guide (for a record: the round + in the middle of the bottom bar), never a button or tab the guide does not name. Then offer to do it for them, for example \"Do you want me to add it for you?\", and call suggest_replies with \"Yes, add it for me\" and \"Show me how\" when that tool is available. If they say yes, do it with the propose_ tool.",
       "Showing the way: when the user asks to be shown (\"show me how\", \"take me there\", \"where is the Pets screen\"), play the matching tutorial with open_screen screen tutorial when there is one (add_record for adding a record, pets for pets, travel for trips, family for people), because it walks them through it; otherwise call open_screen for the screen so they get an Open button.",
       "If a tool returns an error, fix the input or explain the problem to the user in plain words. Only when no tool can do what they asked, explain how to do it in the app and offer open_screen.",
@@ -2344,7 +2344,7 @@ function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = f
   }
   lines.push("", v7 ? APP_GUIDE_V7 : APP_GUIDE);
   if (v10) lines.push(...V10.GUIDE);
-  if (v15) lines.push(...V15.GUIDE);
+  if (v15) lines.push(...(v17 ? V17.petGuide(V15.GUIDE) : V15.GUIDE));
   if (v16) lines.push(...V16.GUIDE);
   if (v17) lines.push(...V17.GUIDE);
   return lines.join("\n");
