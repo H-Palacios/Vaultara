@@ -216,7 +216,7 @@ class _PlansScreenState extends State<PlansScreen> {
     switch (tier) {
       case PlanTier.family:
         return [
-          loc.familyBenefitPremium,
+          loc.planBenefitEverythingIndividual,
           loc.familyBenefitPeople(PlanRepository.familyPeopleLimit),
           loc.familyBenefitOwnRecords,
           loc.familyBenefitRenewer,
@@ -225,9 +225,13 @@ class _PlansScreenState extends State<PlansScreen> {
           loc.familyBenefitOneSubscription,
         ];
       case PlanTier.business:
+        // Written for a business: no family wording, and pets come with
+        // Everything in Individual rather than being listed again.
         return [
+          loc.planBenefitEverythingIndividual,
           loc.familyBenefitPeople(PlanRepository.businessPeopleLimit),
-          loc.businessBenefitFamily,
+          loc.businessBenefitStaffRecords,
+          loc.familyBenefitRenewer,
           loc.businessBenefitStaffVehicles,
           loc.businessBenefitRoles,
           loc.businessBenefitStaffImport,
@@ -235,8 +239,6 @@ class _PlansScreenState extends State<PlansScreen> {
           loc.businessBenefitBulk,
           loc.businessBenefitPdf,
           loc.businessBenefitHistory,
-          loc.planBenefitPets,
-          loc.planBenefitPetCare,
         ];
       case PlanTier.premium:
       case PlanTier.free:
@@ -250,7 +252,8 @@ class _PlansScreenState extends State<PlansScreen> {
           loc.planFeatureOwnReminderDates,
           loc.planFeaturePhotos(AttachmentRepository.premiumPerRecord),
           loc.planFeatureBatchScan,
-          loc.planBenefitPets,
+          // No members on Individual, so no "not counted as members".
+          loc.planBenefitPetsSolo,
           loc.planBenefitPetCare,
           loc.planBenefitCalendar,
         ];
