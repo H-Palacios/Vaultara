@@ -18,6 +18,7 @@ import 'package:vaultara/features/tools/data/life_plan_repository.dart';
 import 'package:vaultara/features/tools/logic/life_events.dart';
 import 'package:vaultara/features/tools/logic/life_plan_items.dart';
 import 'package:vaultara/features/tools/logic/life_tasks.dart';
+import 'package:vaultara/features/tools/logic/lost_wallet_plan_controller.dart';
 import 'package:vaultara/features/tools/services/life_plan_share.dart';
 import 'package:vaultara/features/tools/services/lost_wallet_report.dart';
 import 'package:vaultara/features/tools/view/life_plan_text.dart';
@@ -62,6 +63,12 @@ class LostWalletPlanView extends StatefulWidget {
 class _LostWalletPlanViewState extends State<LostWalletPlanView>
     with WidgetsBindingObserver {
   late final TextEditingController _case;
+
+  /// Works out every change to the plan; this screen shows it and asks.
+  late final LostWalletPlanController _controller = LostWalletPlanController(
+    current: () => _current,
+    save: _save,
+  );
   bool _showDone = false;
 
   /// The Done heading, so the status card can bring it into view.
@@ -141,8 +148,10 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
     super.dispose();
   }
 
-  Future<void> _save(LifePlan plan) async {
-    if (_preview) return;
+  /// Saves the plan, or nothing in the tutorial's sample, and says so
+  /// when saving failed. True when it was saved.
+  Future<bool> _save(LifePlan plan) async {
+    if (_preview) return true;
     final loc = AppLocalizations.of(context)!;
     final ok = await LifePlanRepository.save(plan);
     if (!ok && mounted) {
@@ -152,6 +161,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
         icon: Icons.error_outline_rounded,
       );
     }
+    return ok;
   }
 
   LifePlan get _current =>
@@ -162,13 +172,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
   /// change (a stolen wallet puts the police report near the top).
   Future<void> _switchLostStolen() async {
     final loc = AppLocalizations.of(context)!;
-    final current = _current;
-    final toStolen = current.variant != LifeEvents.variantStolen;
-    await _save(
-      current.copyWith(
-        variant: toStolen ? LifeEvents.variantStolen : LifeEvents.variantLost,
-      ),
-    );
+    final toStolen = await _controller.switchLostStolen();
     if (!mounted) return;
     ActionFeedbackSnackbar.show(
       context,
@@ -185,16 +189,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
   );
 
   void _mark(LifeRecordItem item, LifeItemStatus? status) {
-    final id = item.record.id;
-    if (id == null) return;
-    var next = _current.withStatus(id, status);
-    if (status == null) {
-      // "Not done yet" also forgets a change Vaultara noticed.
-      final start = Map<String, int>.of(next.start);
-      start[id] = LifePlan.fingerprint(item.record);
-      next = next.copyWith(start: start);
-    }
-    unawaited(_save(next));
+    unawaited(_controller.mark(item, status));
   }
 
   void _toggleRecord(LifeRecordItem item) {
@@ -212,26 +207,10 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
   }
 
   void _toggleTask(LifeTaskItem item) {
-    final task = item.task;
-    if (task != null) {
-      unawaited(_save(_current.withTask(task.name, !item.done)));
-      if (!item.done) {
-        _offerUndo(() => unawaited(_save(_current.withTask(task.name, false))));
-      }
-      return;
+    unawaited(_controller.setStep(item, !item.done));
+    if (!item.done) {
+      _offerUndo(() => unawaited(_controller.setStep(item, false)));
     }
-    final custom = item.custom;
-    if (custom == null) return;
-    void setDone(bool done) => unawaited(
-      _save(
-        _current.withCustom(<LifeCustomTask>[
-          for (final t in _current.custom)
-            t.id == custom.id ? t.copyWith(done: done) : t,
-        ]),
-      ),
-    );
-    setDone(!item.done);
-    if (!item.done) _offerUndo(() => setDone(false));
   }
 
   /// Something ticked moves to Done further down, so a tap by mistake
@@ -250,19 +229,12 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
   }
 
   void _removeCustom(LifeCustomTask task) {
-    unawaited(
-      _save(
-        _current.withCustom(<LifeCustomTask>[
-          for (final t in _current.custom)
-            if (t.id != task.id) t,
-        ]),
-      ),
-    );
+    unawaited(_controller.removeOwnStep(task));
   }
 
   Future<void> _addCustom() async {
     final loc = AppLocalizations.of(context)!;
-    if (_current.custom.length >= LifeTasks.maxCustom) {
+    if (!_controller.canAddOwnStep) {
       ActionFeedbackSnackbar.showInfo(
         context,
         loc.lifePlanOwnStepLimit,
@@ -274,38 +246,17 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
       context: context,
       builder: (_) => const OwnStepDialog(),
     );
-    final clean = text?.trim() ?? '';
-    if (clean.isEmpty || !mounted) return;
-    final current = _current;
-    unawaited(
-      _save(
-        current.withCustom(<LifeCustomTask>[
-          ...current.custom,
-          LifeCustomTask(
-            id: DateTime.now().microsecondsSinceEpoch.toRadixString(36),
-            text: clean.length > LifeTasks.maxCustomLength
-                ? clean.substring(0, LifeTasks.maxCustomLength)
-                : clean,
-          ),
-        ]),
-      ),
-    );
+    if (!mounted) return;
+    _controller.addOwnStep(text);
   }
 
   /// Saving a case number also ticks off reporting it to the police.
   void _saveCase(LifeTaskItem? police) {
     final loc = AppLocalizations.of(context)!;
-    final value = LifePlan.cleanCaseNumber(_case.text);
-    if (value == _current.caseNumber) return;
+    final result = _controller.saveCaseNumber(_case.text, police: police);
+    if (result == CaseNumberResult.unchanged) return;
     FocusScope.of(context).unfocus();
-    var next = value == null
-        ? _current.copyWith(clearCaseNumber: true)
-        : _current.copyWith(caseNumber: value);
-    if (value != null && police != null && !police.done) {
-      next = next.withTask(LifeTask.reportToPolice.name, true);
-    }
-    unawaited(_save(next));
-    if (value != null) {
+    if (result == CaseNumberResult.saved) {
       ActionFeedbackSnackbar.showInfo(context, loc.lostWalletCaseSaved);
     }
   }
@@ -326,7 +277,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
     if (number.isEmpty) return;
     _callingId = recordId;
     if (recordId != null) {
-      unawaited(_save(_current.withCall(recordId, DateTime.now())));
+      unawaited(_controller.noteCall(recordId));
     }
     try {
       await launchUrl(Uri(scheme: 'tel', path: number));
@@ -336,22 +287,7 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
   Future<void> _edit() async {
     final edited = await showLostWalletSheet(context, plan: _current);
     if (edited == null || !mounted) return;
-    // Records in a place that was just added are new to the plan, so
-    // remember how they look now.
-    final before = _current.start.keys.toSet();
-    final start = Map<String, int>.of(edited.start);
-    for (final record in LifePlanItems.matching(
-      edited,
-      RecordRepository.allActive(),
-    )) {
-      final id = record.id;
-      if (id != null &&
-          !before.contains(id) &&
-          start.length < LifePlan.maxItems) {
-        start[id] = LifePlan.fingerprint(record);
-      }
-    }
-    await _save(edited.copyWith(start: start));
+    await _controller.applyEdit(edited, RecordRepository.allActive());
   }
 
   Future<void> _found(LifePlanView view) async {
@@ -437,16 +373,11 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
       },
     );
     if (ok != true || !mounted) return;
-    final now = DateTime.now();
-    await _save(_current.copyWith(foundAt: now, finishedAt: now));
+    await _controller.markFound();
   }
 
   Future<void> _finish(bool finished) async {
-    await _save(
-      finished
-          ? _current.copyWith(finishedAt: DateTime.now())
-          : _current.copyWith(clearFinished: true, clearFound: true),
-    );
+    await _controller.setFinished(finished);
   }
 
   Future<void> _delete() async {
