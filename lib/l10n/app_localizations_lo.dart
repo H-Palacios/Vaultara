@@ -8359,6 +8359,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String get petStillToAdd => 'ຍັງຕ້ອງເພີ່ມ';
 
   @override
+  String get petsNeedsAttention => 'ຕ້ອງໄດ້ເອົາໃຈໃສ່';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'ລຶບ $name ບໍ? ເອກະສານຍັງຢູ່ໃນ Vaultara.';
   }

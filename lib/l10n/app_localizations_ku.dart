@@ -8416,6 +8416,9 @@ class AppLocalizationsKu extends AppLocalizations {
   String get petStillToAdd => 'Hê ne hatine zêdekirin';
 
   @override
+  String get petsNeedsAttention => 'Hewceyê balê ye';
+
+  @override
   String petRemoveConfirm(String name) {
     return '$name were rakirin? Belgeyên wî di Vaultara de dimînin.';
   }

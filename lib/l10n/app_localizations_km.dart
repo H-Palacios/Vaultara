@@ -8357,6 +8357,9 @@ class AppLocalizationsKm extends AppLocalizations {
   String get petStillToAdd => 'នៅត្រូវបន្ថែម';
 
   @override
+  String get petsNeedsAttention => 'ត្រូវការការយកចិត្តទុកដាក់';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'លុប $name? ឯកសាររបស់វានៅតែក្នុង Vaultara។';
   }

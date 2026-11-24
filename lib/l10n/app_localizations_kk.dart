@@ -8416,6 +8416,9 @@ class AppLocalizationsKk extends AppLocalizations {
   String get petStillToAdd => 'Әлі қосылмаған';
 
   @override
+  String get petsNeedsAttention => 'Назар аудару қажет';
+
+  @override
   String petRemoveConfirm(String name) {
     return '$name жойылсын ба? Құжаттары Vaultara-да қалады.';
   }

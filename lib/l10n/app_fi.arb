@@ -2772,6 +2772,7 @@
   "petVetPhone": "Eläinlääkärin puhelin",
   "petDocuments": "Asiakirjat",
   "petStillToAdd": "Vielä lisättävää",
+  "petsNeedsAttention": "Vaatii huomiota",
   "petRemoveConfirm": "Poistetaanko {name}? Asiakirjat jäävät Vaultaraan.",
   "petLostTitle": "Kadonnut lemmikki",
   "petLostSteps": "Ilmoita ensin lemmikkisi kadonneeksi sirurekisteriin. Soita sitten lähellä oleviin eläinlääkäreihin ja eläinsuojiin mikrosirun numeron kanssa ja jaa tuore kuva lähiseudulla ja verkossa.",

@@ -151,7 +151,6 @@ class TutorialStepGroups {
     TutorialStep.petsList,
     TutorialStep.petsDocuments,
     TutorialStep.petsAdd,
-    TutorialStep.petsTravel,
   ];
 
   /// The tours that each walk through one screen, by tutorial id.

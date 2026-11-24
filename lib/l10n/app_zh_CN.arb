@@ -2754,6 +2754,7 @@
   "petVetPhone": "兽医电话",
   "petDocuments": "证件",
   "petStillToAdd": "尚待添加",
+  "petsNeedsAttention": "需要处理",
   "petRemoveConfirm": "删除{name}？证件会保留在 Vaultara 中。",
   "petLostTitle": "宠物走失",
   "petLostSteps": "先向芯片登记机构报告宠物走失。然后带着芯片号码致电附近的兽医和动物收容所，并在本地和网上分享最近的照片。",

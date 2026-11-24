@@ -14575,6 +14575,12 @@ abstract class AppLocalizations {
   /// **'Still to add'**
   String get petStillToAdd;
 
+  /// Pets screen: heading over the pet documents that have expired or expire within 30 days.
+  ///
+  /// In en, this message translates to:
+  /// **'Needs attention'**
+  String get petsNeedsAttention;
+
   /// Pets: petRemoveConfirm
   ///
   /// In en, this message translates to:

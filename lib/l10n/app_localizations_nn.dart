@@ -8420,6 +8420,9 @@ class AppLocalizationsNn extends AppLocalizations {
   String get petStillToAdd => 'Står att å leggje til';
 
   @override
+  String get petsNeedsAttention => 'Treng merksemd';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Fjerne $name? Dokumenta vert verande i Vaultara.';
   }

@@ -8415,6 +8415,9 @@ class AppLocalizationsSi extends AppLocalizations {
   String get petStillToAdd => 'තවම එක් කිරීමට ඇත';
 
   @override
+  String get petsNeedsAttention => 'අවධානය අවශ්‍යයි';
+
+  @override
   String petRemoveConfirm(String name) {
     return '$name ඉවත් කරන්නද? ලේඛන Vaultara හි රැඳේ.';
   }

@@ -8416,6 +8416,9 @@ class AppLocalizationsKa extends AppLocalizations {
   String get petStillToAdd => 'ჯერ კიდევ დასამატებელი';
 
   @override
+  String get petsNeedsAttention => 'საჭიროებს ყურადღებას';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'წაიშალოს $name? დოკუმენტები Vaultara-ში დარჩება.';
   }

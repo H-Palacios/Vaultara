@@ -8416,6 +8416,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String get petStillToAdd => 'Még hozzáadandó';
 
   @override
+  String get petsNeedsAttention => 'Figyelmet igényel';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Eltávolítod: $name? A dokumentumok a Vaultarában maradnak.';
   }

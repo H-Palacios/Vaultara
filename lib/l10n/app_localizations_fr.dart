@@ -8430,6 +8430,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get petStillToAdd => 'Reste à ajouter';
 
   @override
+  String get petsNeedsAttention => 'À traiter';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Retirer $name ? Ses documents restent dans Vaultara.';
   }

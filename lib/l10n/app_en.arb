@@ -10450,6 +10450,10 @@
   "@petStillToAdd": {
     "description": "Pets: petStillToAdd"
   },
+  "petsNeedsAttention": "Needs attention",
+  "@petsNeedsAttention": {
+    "description": "Pets screen: heading over the pet documents that have expired or expire within 30 days."
+  },
   "petRemoveConfirm": "Remove {name}? Their documents stay in Vaultara.",
   "@petRemoveConfirm": {
     "description": "Pets: petRemoveConfirm",

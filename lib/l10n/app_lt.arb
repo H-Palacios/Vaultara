@@ -2772,6 +2772,7 @@
   "petVetPhone": "Veterinaro telefonas",
   "petDocuments": "Dokumentai",
   "petStillToAdd": "Dar reikia pridėti",
+  "petsNeedsAttention": "Reikia dėmesio",
   "petRemoveConfirm": "Pašalinti {name}? Dokumentai liks Vaultaroje.",
   "petLostTitle": "Pasiklydęs augintinis",
   "petLostSteps": "Pirmiausia praneškite mikroschemų registrui, kad augintinis dingo. Tada paskambinkite netoliese esantiems veterinarams ir gyvūnų prieglaudoms nurodydami mikroschemos numerį, ir pasidalykite naujausia nuotrauka apylinkėse ir internete.",

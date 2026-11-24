@@ -8415,6 +8415,9 @@ class AppLocalizationsIs extends AppLocalizations {
   String get petStillToAdd => 'Á eftir að bæta við';
 
   @override
+  String get petsNeedsAttention => 'Þarfnast athygli';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Fjarlægja $name? Skjölin verða áfram í Vaultara.';
   }

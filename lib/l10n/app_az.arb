@@ -2504,6 +2504,7 @@
   "petVetPhone": "Baytarın telefonu",
   "petDocuments": "Sənədlər",
   "petStillToAdd": "Hələ əlavə ediləcək",
+  "petsNeedsAttention": "Diqqət tələb edir",
   "petRemoveConfirm": "{name} silinsin? Sənədləri Vaultara-da qalır.",
   "petLostTitle": "İtmiş ev heyvanı",
   "petLostSteps": "Əvvəlcə ev heyvanınızın itdiyini çip reyestrinə bildirin. Sonra mikroçip nömrəsi ilə yaxınlıqdakı baytarlara və heyvan sığınacaqlarına zəng edin, son şəkli yerli və onlayn paylaşın.",

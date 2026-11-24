@@ -2768,6 +2768,7 @@
   "petVetPhone": "Telefoni i veterinerit",
   "petDocuments": "Dokumente",
   "petStillToAdd": "Ende për t'u shtuar",
+  "petsNeedsAttention": "Kërkon vëmendje",
   "petRemoveConfirm": "Të hiqet {name}? Dokumentet mbeten në Vaultara.",
   "petLostTitle": "Kafshë e humbur",
   "petLostSteps": "Fillimisht njofto regjistrin e çipit se kafsha ka humbur. Pastaj telefono veterinerët dhe strehimoret e kafshëve aty pranë me numrin e mikroçipit dhe ndaj një foto të fundit në zonë dhe në internet.",

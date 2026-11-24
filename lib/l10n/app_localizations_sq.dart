@@ -8420,6 +8420,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get petStillToAdd => 'Ende për t\'u shtuar';
 
   @override
+  String get petsNeedsAttention => 'Kërkon vëmendje';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Të hiqet $name? Dokumentet mbeten në Vaultara.';
   }

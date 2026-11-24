@@ -2792,6 +2792,7 @@
   "petVetPhone": "የእንስሳት ሐኪም ስልክ",
   "petDocuments": "ሰነዶች",
   "petStillToAdd": "ገና የሚጨመሩ",
+  "petsNeedsAttention": "ትኩረት ያስፈልጋል",
   "petRemoveConfirm": "{name} ይወገድ? ሰነዶቹ በVaultara ውስጥ ይቆያሉ።",
   "petLostTitle": "የጠፋ የቤት እንስሳ",
   "petLostSteps": "መጀመሪያ የቤት እንስሳዎ መጥፋቱን ለቺፕ መዝገቡ ያሳውቁ። ከዚያ በአቅራቢያ ያሉ የእንስሳት ሐኪሞችንና የእንስሳት መጠለያዎችን በማይክሮቺፕ ቁጥሩ ይደውሉ፣ እና የቅርብ ጊዜ ፎቶ በአካባቢው እና በመስመር ላይ ያጋሩ።",

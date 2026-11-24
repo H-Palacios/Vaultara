@@ -10,17 +10,19 @@ import 'package:vaultara/features/pets/data/pet.dart';
 import 'package:vaultara/features/pets/data/pet_repository.dart';
 import 'package:vaultara/features/pets/view/pet_detail_screen.dart';
 import 'package:vaultara/features/pets/view/pet_editor_sheet.dart';
-import 'package:vaultara/features/pets/view/pet_travel_screen.dart';
+import 'package:vaultara/features/pets/view/pet_document_actions.dart';
 import 'package:vaultara/features/pets/view/widgets/pet_grid.dart';
-import 'package:vaultara/features/pets/view/widgets/pet_travel_card.dart';
+import 'package:vaultara/features/pets/view/widgets/pets_attention_card.dart';
 import 'package:vaultara/features/pets/view/widgets/pets_empty_card.dart';
 import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 import 'package:vaultara/features/tutorials/data/models/tour_samples.dart';
 import 'package:vaultara/features/tutorials/view/tutorial_target.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
-/// Every pet with its documents, and the pet travel rules. Pets are kept
-/// apart from people, so they never use a member place.
+/// Every pet with its documents, then what needs doing for all of them:
+/// documents that expired or expire soon, and what each pet still needs.
+/// Pet travel rules are not here: they come up when a trip is planned.
+/// Pets are kept apart from people, so they never use a member place.
 class PetsScreen extends StatelessWidget {
   final bool isPremium;
 
@@ -46,13 +48,6 @@ class PetsScreen extends StatelessWidget {
     Navigator.of(context).push(
       MaterialPageRoute<void>(builder: (_) => PetDetailScreen(petId: pet.id)),
     );
-  }
-
-  void _openTravel(BuildContext context) {
-    if (tour) return;
-    Navigator.of(
-      context,
-    ).push(MaterialPageRoute<void>(builder: (_) => const PetTravelScreen()));
   }
 
   @override
@@ -138,11 +133,18 @@ class PetsScreen extends StatelessWidget {
             style: TextStyle(fontSize: 12.5, color: scheme.onSurfaceVariant),
           ),
         ],
-        const SizedBox(height: 22),
-        TutorialTarget(
-          steps: const [TutorialStep.petsTravel],
-          child: PetTravelCard(onTap: () => _openTravel(context)),
-        ),
+        if (pets.isNotEmpty) ...[
+          const SizedBox(height: 24),
+          PetsAttentionCard(
+            pets: pets,
+            records: records,
+            today: DateTime.now(),
+            onOpen: tour ? null : (pet) => _open(context, pet),
+            onAdd: premium && !tour
+                ? (pet, group) => PetDocumentActions.add(context, pet, group)
+                : null,
+          ),
+        ],
       ],
     );
   }

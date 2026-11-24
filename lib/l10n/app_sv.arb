@@ -2747,6 +2747,7 @@
   "petVetPhone": "Veterinärens telefon",
   "petDocuments": "Dokument",
   "petStillToAdd": "Kvar att lägga till",
+  "petsNeedsAttention": "Behöver åtgärdas",
   "petRemoveConfirm": "Ta bort {name}? Dokumenten finns kvar i Vaultara.",
   "petLostTitle": "Borttappat husdjur",
   "petLostSteps": "Anmäl först husdjuret försvunnet till chipregistret. Ring sedan veterinärer och djurhem i närheten med mikrochipnumret, och dela ett nytt foto i området och på nätet.",

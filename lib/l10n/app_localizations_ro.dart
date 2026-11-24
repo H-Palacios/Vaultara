@@ -8493,6 +8493,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get petStillToAdd => 'Mai de adăugat';
 
   @override
+  String get petsNeedsAttention => 'Necesită atenție';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Elimini $name? Documentele rămân în Vaultara.';
   }

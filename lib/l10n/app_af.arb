@@ -2792,6 +2792,7 @@
   "petVetPhone": "Veearts se telefoon",
   "petDocuments": "Dokumente",
   "petStillToAdd": "Nog om by te voeg",
+  "petsNeedsAttention": "Het aandag nodig",
   "petRemoveConfirm": "Verwyder {name}? Die dokumente bly in Vaultara.",
   "petLostTitle": "Troeteldier vermis",
   "petLostSteps": "Meld jou troeteldier eers by die skyfieregister as vermis aan. Bel dan nabygeleë veeartse en dierehawens met die mikroskyfienommer, en deel 'n onlangse foto plaaslik en aanlyn.",

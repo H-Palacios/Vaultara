@@ -2754,6 +2754,7 @@
   "petVetPhone": "Telefon weterynarza",
   "petDocuments": "Dokumenty",
   "petStillToAdd": "Jeszcze do dodania",
+  "petsNeedsAttention": "Wymaga uwagi",
   "petRemoveConfirm": "Usunąć: {name}? Dokumenty zostaną w Vaultara.",
   "petLostTitle": "Zaginione zwierzę",
   "petLostSteps": "Najpierw zgłoś zaginięcie w rejestrze czipa. Potem zadzwoń do pobliskich weterynarzy i schronisk z numerem mikroczipa i udostępnij aktualne zdjęcie w okolicy i w internecie.",

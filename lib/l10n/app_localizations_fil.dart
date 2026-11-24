@@ -8410,6 +8410,9 @@ class AppLocalizationsFil extends AppLocalizations {
   String get petStillToAdd => 'Idadagdag pa';
 
   @override
+  String get petsNeedsAttention => 'Kailangang asikasuhin';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Alisin si $name? Mananatili sa Vaultara ang mga dokumento.';
   }

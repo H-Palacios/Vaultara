@@ -8416,6 +8416,9 @@ class AppLocalizationsHy extends AppLocalizations {
   String get petStillToAdd => 'Դեռ ավելացնելու';
 
   @override
+  String get petsNeedsAttention => 'Ուշադրության կարիք ունի';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Հեռացնե՞լ $name-ին։ Փաստաթղթերը մնում են Vaultara-ում։';
   }

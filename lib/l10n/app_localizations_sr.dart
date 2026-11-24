@@ -8486,6 +8486,9 @@ class AppLocalizationsSr extends AppLocalizations {
   String get petStillToAdd => 'Још за додавање';
 
   @override
+  String get petsNeedsAttention => 'Захтева пажњу';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Уклонити $name? Документи остају у Vaultara.';
   }
@@ -19194,6 +19197,9 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get petStillToAdd => 'Још за додавање';
 
   @override
+  String get petsNeedsAttention => 'Захтева пажњу';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Уклонити $name? Документи остају у Vaultara.';
   }
@@ -29896,6 +29902,9 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get petStillToAdd => 'Još za dodavanje';
+
+  @override
+  String get petsNeedsAttention => 'Zahteva pažnju';
 
   @override
   String petRemoveConfirm(String name) {

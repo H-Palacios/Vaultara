@@ -8420,6 +8420,9 @@ class AppLocalizationsEu extends AppLocalizations {
   String get petStillToAdd => 'Gehitzeko falta dira';
 
   @override
+  String get petsNeedsAttention => 'Arreta behar du';
+
+  @override
   String petRemoveConfirm(String name) {
     return '$name kendu? Dokumentuak Vaultaran geratzen dira.';
   }

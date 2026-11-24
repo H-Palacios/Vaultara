@@ -8469,6 +8469,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get petStillToAdd => 'עוד להוסיף';
 
   @override
+  String get petsNeedsAttention => 'דורש תשומת לב';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'להסיר את $name? המסמכים נשארים ב-Vaultara.';
   }

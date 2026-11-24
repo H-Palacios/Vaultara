@@ -8563,6 +8563,9 @@ class AppLocalizationsUk extends AppLocalizations {
   String get petStillToAdd => 'Ще додати';
 
   @override
+  String get petsNeedsAttention => 'Потребує уваги';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Видалити $name? Документи залишаться у Vaultara.';
   }

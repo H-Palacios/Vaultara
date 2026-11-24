@@ -2759,6 +2759,7 @@
   "petVetPhone": "Telepon dokter hewan",
   "petDocuments": "Dokumen",
   "petStillToAdd": "Belum ditambahkan",
+  "petsNeedsAttention": "Perlu perhatian",
   "petRemoveConfirm": "Hapus {name}? Dokumennya tetap di Vaultara.",
   "petLostTitle": "Hewan hilang",
   "petLostSteps": "Laporkan dulu hewan Anda hilang ke registri chip. Lalu telepon dokter hewan dan penampungan hewan terdekat dengan nomor microchip, dan bagikan foto terbaru di sekitar dan secara online.",

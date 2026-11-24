@@ -8420,6 +8420,9 @@ class AppLocalizationsFi extends AppLocalizations {
   String get petStillToAdd => 'Vielä lisättävää';
 
   @override
+  String get petsNeedsAttention => 'Vaatii huomiota';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Poistetaanko $name? Asiakirjat jäävät Vaultaraan.';
   }

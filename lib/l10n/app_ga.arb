@@ -2766,6 +2766,7 @@
   "petVetPhone": "Fón an tréidlia",
   "petDocuments": "Doiciméid",
   "petStillToAdd": "Fós le cur leis",
+  "petsNeedsAttention": "Teastaíonn aird",
   "petRemoveConfirm": "{name} a bhaint? Fanann na doiciméid in Vaultara.",
   "petLostTitle": "Peata caillte",
   "petLostSteps": "Tuairiscigh do pheata ar iarraidh do chlár na slise ar dtús. Ansin glaoigh ar thréidlianna agus dídeanáin ainmhithe in aice láimhe le huimhir na micrishlise, agus roinn grianghraf le déanaí go háitiúil agus ar líne.",

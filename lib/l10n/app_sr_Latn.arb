@@ -2728,6 +2728,7 @@
   "petVetPhone": "Telefon veterinara",
   "petDocuments": "Dokumenti",
   "petStillToAdd": "Još za dodavanje",
+  "petsNeedsAttention": "Zahteva pažnju",
   "petRemoveConfirm": "Ukloniti {name}? Dokumenti ostaju u Vaultara.",
   "petLostTitle": "Izgubljen ljubimac",
   "petLostSteps": "Prvo prijavite nestanak ljubimca registru čipa. Zatim pozovite obližnje veterinare i prihvatilišta sa brojem mikročipa i podelite nedavnu fotografiju u okolini i na internetu.",

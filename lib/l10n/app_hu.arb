@@ -2772,6 +2772,7 @@
   "petVetPhone": "Állatorvos telefonszáma",
   "petDocuments": "Dokumentumok",
   "petStillToAdd": "Még hozzáadandó",
+  "petsNeedsAttention": "Figyelmet igényel",
   "petRemoveConfirm": "Eltávolítod: {name}? A dokumentumok a Vaultarában maradnak.",
   "petLostTitle": "Elveszett kisállat",
   "petLostSteps": "Először jelentsd az eltűnést a chip-nyilvántartásnak. Utána hívd fel a közeli állatorvosokat és menhelyeket a mikrochip számával, és ossz meg egy friss fotót a környéken és online.",

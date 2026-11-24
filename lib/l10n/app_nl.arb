@@ -2754,6 +2754,7 @@
   "petVetPhone": "Telefoon dierenarts",
   "petDocuments": "Documenten",
   "petStillToAdd": "Nog toe te voegen",
+  "petsNeedsAttention": "Vraagt aandacht",
   "petRemoveConfirm": "{name} verwijderen? De documenten blijven in Vaultara.",
   "petLostTitle": "Huisdier vermist",
   "petLostSteps": "Meld je huisdier eerst als vermist bij het chipregister. Bel daarna dierenartsen en asielen in de buurt met het chipnummer, en deel een recente foto in de buurt en online.",

@@ -8416,6 +8416,9 @@ class AppLocalizationsKn extends AppLocalizations {
   String get petStillToAdd => 'ಇನ್ನೂ ಸೇರಿಸಬೇಕಿದೆ';
 
   @override
+  String get petsNeedsAttention => 'ಗಮನ ಬೇಕು';
+
+  @override
   String petRemoveConfirm(String name) {
     return '$name ತೆಗೆದುಹಾಕಬೇಕೆ? ದಾಖಲೆಗಳು Vaultara ನಲ್ಲೇ ಉಳಿಯುತ್ತವೆ.';
   }

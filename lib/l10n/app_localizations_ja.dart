@@ -8347,6 +8347,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get petStillToAdd => 'まだ追加していないもの';
 
   @override
+  String get petsNeedsAttention => '対応が必要';
+
+  @override
   String petRemoveConfirm(String name) {
     return '$nameを削除しますか？書類はVaultaraに残ります。';
   }

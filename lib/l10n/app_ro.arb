@@ -2754,6 +2754,7 @@
   "petVetPhone": "Telefonul veterinarului",
   "petDocuments": "Documente",
   "petStillToAdd": "Mai de adăugat",
+  "petsNeedsAttention": "Necesită atenție",
   "petRemoveConfirm": "Elimini {name}? Documentele rămân în Vaultara.",
   "petLostTitle": "Animal pierdut",
   "petLostSteps": "Anunță mai întâi registrul cipului că animalul a dispărut. Apoi sună veterinarii și adăposturile din apropiere cu numărul microcipului și distribuie o fotografie recentă în zonă și online.",

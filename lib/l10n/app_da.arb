@@ -2785,6 +2785,7 @@
   "petVetPhone": "Dyrlægens telefon",
   "petDocuments": "Dokumenter",
   "petStillToAdd": "Mangler stadig",
+  "petsNeedsAttention": "Kræver opmærksomhed",
   "petRemoveConfirm": "Fjern {name}? Dokumenterne bliver i Vaultara.",
   "petLostTitle": "Bortløbet kæledyr",
   "petLostSteps": "Meld først dit kæledyr savnet i chipregistret. Ring derefter til dyrlæger og dyreinternater i nærheden med mikrochipnummeret, og del et nyt billede lokalt og online.",

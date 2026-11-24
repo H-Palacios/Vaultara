@@ -8365,6 +8365,9 @@ class AppLocalizationsIg extends AppLocalizations {
   String get petStillToAdd => 'A ka ga-etinye';
 
   @override
+  String get petsNeedsAttention => 'Chọrọ nlebara anya';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Wepụ $name? Akwụkwọ ya ga-anọgide na Vaultara.';
   }

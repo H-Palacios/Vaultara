@@ -8416,6 +8416,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String get petStillToAdd => 'Henüz eklenecek';
 
   @override
+  String get petsNeedsAttention => 'İlgilenilmesi gerekiyor';
+
+  @override
   String petRemoveConfirm(String name) {
     return '$name kaldırılsın mı? Belgeleri Vaultara\'da kalır.';
   }

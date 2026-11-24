@@ -2766,6 +2766,7 @@
   "petVetPhone": "獣医の電話番号",
   "petDocuments": "書類",
   "petStillToAdd": "まだ追加していないもの",
+  "petsNeedsAttention": "対応が必要",
   "petRemoveConfirm": "{name}を削除しますか？書類はVaultaraに残ります。",
   "petLostTitle": "迷子のペット",
   "petLostSteps": "まずチップの登録先に迷子を届け出てください。次にマイクロチップ番号を伝えて近くの動物病院や保護施設に電話し、最近の写真を地域とネットで共有しましょう。",

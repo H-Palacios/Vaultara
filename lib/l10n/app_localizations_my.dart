@@ -8357,6 +8357,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String get petStillToAdd => 'ထည့်ရန် ကျန်သေးသည်';
 
   @override
+  String get petsNeedsAttention => 'ဂရုပြုရန်လိုအပ်သည်';
+
+  @override
   String petRemoveConfirm(String name) {
     return '$name ကို ဖယ်ရှားမလား။ စာရွက်စာတမ်းများ Vaultara တွင် ကျန်ရှိမည်။';
   }

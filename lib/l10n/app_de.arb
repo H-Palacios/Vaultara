@@ -2785,6 +2785,7 @@
   "petVetPhone": "Telefon des Tierarztes",
   "petDocuments": "Dokumente",
   "petStillToAdd": "Noch hinzuzufügen",
+  "petsNeedsAttention": "Braucht Aufmerksamkeit",
   "petRemoveConfirm": "{name} entfernen? Die Dokumente bleiben in Vaultara.",
   "petLostTitle": "Haustier vermisst",
   "petLostSteps": "Melden Sie Ihr Haustier zuerst beim Chip-Register als vermisst. Rufen Sie dann Tierärzte und Tierheime in der Nähe mit der Mikrochipnummer an und teilen Sie ein aktuelles Foto vor Ort und online.",

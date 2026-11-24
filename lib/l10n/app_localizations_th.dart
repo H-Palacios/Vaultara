@@ -8347,6 +8347,9 @@ class AppLocalizationsTh extends AppLocalizations {
   String get petStillToAdd => 'ยังต้องเพิ่ม';
 
   @override
+  String get petsNeedsAttention => 'ต้องดำเนินการ';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'ลบ $name ใช่ไหม เอกสารยังอยู่ใน Vaultara';
   }

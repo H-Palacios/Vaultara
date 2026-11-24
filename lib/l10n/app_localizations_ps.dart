@@ -8416,6 +8416,9 @@ class AppLocalizationsPs extends AppLocalizations {
   String get petStillToAdd => 'لا زیاتول پاتې دي';
 
   @override
+  String get petsNeedsAttention => 'پاملرنې ته اړتیا لري';
+
+  @override
   String petRemoveConfirm(String name) {
     return '$name لرې شي؟ اسناد یې په Vaultara کې پاتې کېږي.';
   }

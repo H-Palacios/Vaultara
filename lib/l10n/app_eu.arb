@@ -2768,6 +2768,7 @@
   "petVetPhone": "Albaitariaren telefonoa",
   "petDocuments": "Dokumentuak",
   "petStillToAdd": "Gehitzeko falta dira",
+  "petsNeedsAttention": "Arreta behar du",
   "petRemoveConfirm": "{name} kendu? Dokumentuak Vaultaran geratzen dira.",
   "petLostTitle": "Galdutako maskota",
   "petLostSteps": "Lehenik, jakinarazi txiparen erregistroari maskota galdu dela. Gero, deitu inguruko albaitari eta animalien babeslekuei mikrotxiparen zenbakiarekin, eta partekatu argazki berri bat inguruan eta sarean.",

@@ -8416,6 +8416,9 @@ class AppLocalizationsBg extends AppLocalizations {
   String get petStillToAdd => 'Още за добавяне';
 
   @override
+  String get petsNeedsAttention => 'Изисква внимание';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Да се премахне ли $name? Документите остават във Vaultara.';
   }

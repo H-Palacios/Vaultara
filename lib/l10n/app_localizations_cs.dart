@@ -8551,6 +8551,9 @@ class AppLocalizationsCs extends AppLocalizations {
   String get petStillToAdd => 'Zbývá přidat';
 
   @override
+  String get petsNeedsAttention => 'Vyžaduje pozornost';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Odebrat $name? Dokumenty zůstanou ve Vaultaře.';
   }

@@ -2761,6 +2761,7 @@
   "petVetPhone": "Teléfono del veterinario",
   "petDocuments": "Documentos",
   "petStillToAdd": "Falta añadir",
+  "petsNeedsAttention": "Requiere atención",
   "petRemoveConfirm": "¿Quitar a {name}? Sus documentos se quedan en Vaultara.",
   "petLostTitle": "Mascota perdida",
   "petLostSteps": "Primero avisa al registro del chip de que tu mascota se ha perdido. Luego llama a veterinarios y refugios de animales cercanos con el número de microchip y comparte una foto reciente en tu zona y en internet.",

@@ -8415,6 +8415,9 @@ class AppLocalizationsSo extends AppLocalizations {
   String get petStillToAdd => 'Weli in lagu daro';
 
   @override
+  String get petsNeedsAttention => 'Waxay u baahan tahay feejignaan';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Ka saar $name? Dukumentiyadiisu waxay ku sii jiri doonaan Vaultara.';
   }

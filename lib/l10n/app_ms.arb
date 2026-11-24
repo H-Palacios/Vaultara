@@ -2754,6 +2754,7 @@
   "petVetPhone": "Telefon doktor haiwan",
   "petDocuments": "Dokumen",
   "petStillToAdd": "Belum ditambah",
+  "petsNeedsAttention": "Perlu perhatian",
   "petRemoveConfirm": "Buang {name}? Dokumennya kekal dalam Vaultara.",
   "petLostTitle": "Haiwan hilang",
   "petLostSteps": "Laporkan dahulu kehilangan haiwan anda kepada pendaftaran cip. Kemudian hubungi doktor haiwan dan pusat perlindungan haiwan berdekatan dengan nombor mikrocip, dan kongsi foto terkini di kawasan anda dan dalam talian.",

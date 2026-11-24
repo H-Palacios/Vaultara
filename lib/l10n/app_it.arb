@@ -2759,6 +2759,7 @@
   "petVetPhone": "Telefono del veterinario",
   "petDocuments": "Documenti",
   "petStillToAdd": "Ancora da aggiungere",
+  "petsNeedsAttention": "Richiede attenzione",
   "petRemoveConfirm": "Rimuovere {name}? I documenti restano in Vaultara.",
   "petLostTitle": "Animale smarrito",
   "petLostSteps": "Segnala prima lo smarrimento all'anagrafe del chip. Poi chiama i veterinari e i rifugi vicini con il numero del microchip e condividi una foto recente in zona e online.",

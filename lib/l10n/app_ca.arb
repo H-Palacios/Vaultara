@@ -2785,6 +2785,7 @@
   "petVetPhone": "Telèfon del veterinari",
   "petDocuments": "Documents",
   "petStillToAdd": "Encara per afegir",
+  "petsNeedsAttention": "Cal atenció",
   "petRemoveConfirm": "Vols treure {name}? Els seus documents es queden a Vaultara.",
   "petLostTitle": "Mascota perduda",
   "petLostSteps": "Primer informa el registre del xip que la teva mascota s'ha perdut. Després truca als veterinaris i refugis d'animals propers amb el número de microxip i comparteix una foto recent al barri i en línia.",

@@ -8354,6 +8354,9 @@ class AppLocalizationsId extends AppLocalizations {
   String get petStillToAdd => 'Belum ditambahkan';
 
   @override
+  String get petsNeedsAttention => 'Perlu perhatian';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Hapus $name? Dokumennya tetap di Vaultara.';
   }

@@ -8419,6 +8419,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get petStillToAdd => 'Kvar att lägga till';
 
   @override
+  String get petsNeedsAttention => 'Behöver åtgärdas';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Ta bort $name? Dokumenten finns kvar i Vaultara.';
   }

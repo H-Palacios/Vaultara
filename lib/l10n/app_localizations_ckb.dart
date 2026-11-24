@@ -8416,6 +8416,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get petStillToAdd => 'هێشتا زیاد نەکراون';
 
   @override
+  String get petsNeedsAttention => 'پێویستی بە سەرنجە';
+
+  @override
   String petRemoveConfirm(String name) {
     return '$name لاببرێت؟ بەڵگەنامەکانی لە Vaultara دەمێننەوە.';
   }

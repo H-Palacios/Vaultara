@@ -8416,6 +8416,9 @@ class AppLocalizationsXh extends AppLocalizations {
   String get petStillToAdd => 'Kusafuneka zongezwe';
 
   @override
+  String get petsNeedsAttention => 'Kufuna ingqalelo';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Susa u-$name? Amaxwebhu akhe ahlala kwi-Vaultara.';
   }

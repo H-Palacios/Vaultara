@@ -8359,6 +8359,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get petStillToAdd => 'Còn cần thêm';
 
   @override
+  String get petsNeedsAttention => 'Cần xử lý';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Xóa $name? Giấy tờ vẫn còn trong Vaultara.';
   }

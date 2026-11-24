@@ -8406,6 +8406,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get petStillToAdd => 'Нэмэх шаардлагатай';
 
   @override
+  String get petsNeedsAttention => 'Анхаарал шаардлагатай';
+
+  @override
   String petRemoveConfirm(String name) {
     return '$name-г хасах уу? Бичиг баримт нь Vaultara-д үлдэнэ.';
   }

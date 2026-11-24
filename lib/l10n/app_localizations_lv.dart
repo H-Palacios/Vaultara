@@ -8482,6 +8482,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String get petStillToAdd => 'Vēl jāpievieno';
 
   @override
+  String get petsNeedsAttention => 'Nepieciešama uzmanība';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Noņemt $name? Dokumenti paliek Vaultara.';
   }

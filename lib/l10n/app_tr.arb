@@ -2754,6 +2754,7 @@
   "petVetPhone": "Veterinerin telefonu",
   "petDocuments": "Belgeler",
   "petStillToAdd": "Henüz eklenecek",
+  "petsNeedsAttention": "İlgilenilmesi gerekiyor",
   "petRemoveConfirm": "{name} kaldırılsın mı? Belgeleri Vaultara'da kalır.",
   "petLostTitle": "Kayıp evcil hayvan",
   "petLostSteps": "Önce çip kaydına evcil hayvanınızın kaybolduğunu bildirin. Sonra mikroçip numarasıyla yakındaki veterinerleri ve hayvan barınaklarını arayın, yeni bir fotoğrafı çevrede ve internette paylaşın.",

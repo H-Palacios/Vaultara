@@ -8416,6 +8416,9 @@ class AppLocalizationsHa extends AppLocalizations {
   String get petStillToAdd => 'Har yanzu za a ƙara';
 
   @override
+  String get petsNeedsAttention => 'Yana bukatar kulawa';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Cire $name? Takardunsa za su zauna a Vaultara.';
   }

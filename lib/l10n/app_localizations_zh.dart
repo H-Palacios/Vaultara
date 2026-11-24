@@ -8359,6 +8359,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get petStillToAdd => '尚待添加';
 
   @override
+  String get petsNeedsAttention => '需要处理';
+
+  @override
   String petRemoveConfirm(String name) {
     return '删除$name？证件会保留在 Vaultara 中。';
   }
@@ -18907,6 +18910,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get petStillToAdd => '尚待添加';
 
   @override
+  String get petsNeedsAttention => '需要处理';
+
+  @override
   String petRemoveConfirm(String name) {
     return '删除$name？证件会保留在 Vaultara 中。';
   }
@@ -29453,6 +29459,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get petStillToAdd => '尚待新增';
+
+  @override
+  String get petsNeedsAttention => '需要處理';
 
   @override
   String petRemoveConfirm(String name) {

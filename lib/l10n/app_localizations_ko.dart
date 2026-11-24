@@ -8359,6 +8359,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get petStillToAdd => '아직 추가할 것';
 
   @override
+  String get petsNeedsAttention => '확인 필요';
+
+  @override
   String petRemoveConfirm(String name) {
     return '$name을(를) 삭제할까요? 서류는 Vaultara에 남아요.';
   }

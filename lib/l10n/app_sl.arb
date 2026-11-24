@@ -2754,6 +2754,7 @@
   "petVetPhone": "Telefon veterinarja",
   "petDocuments": "Dokumenti",
   "petStillToAdd": "Še za dodati",
+  "petsNeedsAttention": "Potrebuje pozornost",
   "petRemoveConfirm": "Odstranim {name}? Dokumenti ostanejo v Vaultari.",
   "petLostTitle": "Izgubljen ljubljenček",
   "petLostSteps": "Najprej prijavite izginotje ljubljenčka registru čipov. Nato pokličite bližnje veterinarje in zavetišča s številko mikročipa ter delite nedavno fotografijo v okolici in na spletu.",

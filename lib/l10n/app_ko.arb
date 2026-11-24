@@ -2754,6 +2754,7 @@
   "petVetPhone": "수의사 전화번호",
   "petDocuments": "서류",
   "petStillToAdd": "아직 추가할 것",
+  "petsNeedsAttention": "확인 필요",
   "petRemoveConfirm": "{name}을(를) 삭제할까요? 서류는 Vaultara에 남아요.",
   "petLostTitle": "잃어버린 반려동물",
   "petLostSteps": "먼저 칩 등록 기관에 실종 신고를 하세요. 그다음 마이크로칩 번호를 알려 주며 가까운 동물병원과 보호소에 전화하고, 최근 사진을 동네와 온라인에 공유하세요.",

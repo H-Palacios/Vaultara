@@ -2766,6 +2766,7 @@
   "petVetPhone": "Téléphone du vétérinaire",
   "petDocuments": "Documents",
   "petStillToAdd": "Reste à ajouter",
+  "petsNeedsAttention": "À traiter",
   "petRemoveConfirm": "Retirer {name} ? Ses documents restent dans Vaultara.",
   "petLostTitle": "Animal perdu",
   "petLostSteps": "Signalez d'abord la perte de votre animal au registre de la puce. Appelez ensuite les vétérinaires et refuges proches avec le numéro de puce, et partagez une photo récente dans le quartier et en ligne.",

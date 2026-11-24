@@ -8416,6 +8416,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get petStillToAdd => 'Bado kuongeza';
 
   @override
+  String get petsNeedsAttention => 'Inahitaji kushughulikiwa';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Ondoa $name? Nyaraka zake zitabaki kwenye Vaultara.';
   }

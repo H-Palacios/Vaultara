@@ -11,7 +11,6 @@ import 'package:vaultara/features/pets/logic/pet_trip_check.dart';
 import 'package:vaultara/features/pets/view/pet_document_actions.dart';
 import 'package:vaultara/features/pets/view/pet_editor_sheet.dart';
 import 'package:vaultara/features/pets/view/pet_text.dart';
-import 'package:vaultara/features/pets/view/pet_travel_screen.dart';
 import 'package:vaultara/features/pets/services/pet_card_pdf.dart';
 import 'package:vaultara/features/pets/view/widgets/lost_pet_sheet.dart';
 import 'package:vaultara/features/pets/view/widgets/pet_care_card.dart';
@@ -22,7 +21,7 @@ import 'package:vaultara/features/pets/view/widgets/pet_vet_card.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 /// One pet: microchip, vet, documents, what is still to add, and help when
-/// the pet is lost or travelling.
+/// the pet is lost. Travel rules come up in a trip that has the pet.
 class PetDetailScreen extends StatelessWidget {
   final String petId;
 
@@ -103,12 +102,6 @@ class _PetDetailBody extends StatelessWidget {
     await PetRepository.remove(pet);
   }
 
-  void _travel(BuildContext context) {
-    Navigator.of(
-      context,
-    ).push(MaterialPageRoute<void>(builder: (_) => PetTravelScreen(pet: pet)));
-  }
-
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
@@ -159,11 +152,6 @@ class _PetDetailBody extends StatelessWidget {
           onPressed: () => showLostPetSheet(context, pet, canEdit: premium),
           icon: const Icon(Icons.search_rounded),
           label: Text(loc.petLostTitle),
-        ),
-        FilledButton.tonalIcon(
-          onPressed: () => _travel(context),
-          icon: const Icon(Icons.flight_rounded),
-          label: Text(loc.petTravelTitle),
         ),
         FilledButton.tonalIcon(
           onPressed: () => PetCardPdf.share(context, pet, records),

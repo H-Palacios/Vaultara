@@ -2785,6 +2785,7 @@
   "petVetPhone": "Telefon veterinara",
   "petDocuments": "Dokumenti",
   "petStillToAdd": "Još za dodati",
+  "petsNeedsAttention": "Treba pažnju",
   "petRemoveConfirm": "Ukloniti {name}? Dokumenti ostaju u Vaultari.",
   "petLostTitle": "Izgubljen ljubimac",
   "petLostSteps": "Prvo prijavite nestanak ljubimca registru čipa. Zatim nazovite obližnje veterinare i azile s brojem mikročipa i podijelite nedavnu fotografiju lokalno i na internetu.",

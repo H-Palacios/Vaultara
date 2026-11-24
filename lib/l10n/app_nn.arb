@@ -2754,6 +2754,7 @@
   "petVetPhone": "Telefonen til veterinæren",
   "petDocuments": "Dokument",
   "petStillToAdd": "Står att å leggje til",
+  "petsNeedsAttention": "Treng merksemd",
   "petRemoveConfirm": "Fjerne {name}? Dokumenta vert verande i Vaultara.",
   "petLostTitle": "Sakna kjæledyr",
   "petLostSteps": "Meld først kjæledyret sakna til brikkeregisteret. Ring så veterinærar og dyreheimar i nærleiken med mikrobrikkenummeret, og del eit nytt bilete lokalt og på nett.",

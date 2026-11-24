@@ -2785,6 +2785,7 @@
   "petVetPhone": "Telefon veterináře",
   "petDocuments": "Dokumenty",
   "petStillToAdd": "Zbývá přidat",
+  "petsNeedsAttention": "Vyžaduje pozornost",
   "petRemoveConfirm": "Odebrat {name}? Dokumenty zůstanou ve Vaultaře.",
   "petLostTitle": "Ztracený mazlíček",
   "petLostSteps": "Nejdřív nahlaste ztrátu mazlíčka do registru čipu. Pak zavolejte okolním veterinářům a útulkům s číslem mikročipu a sdílejte nedávnou fotku v okolí i online.",

@@ -2759,6 +2759,7 @@
   "petVetPhone": "Sími dýralæknis",
   "petDocuments": "Skjöl",
   "petStillToAdd": "Á eftir að bæta við",
+  "petsNeedsAttention": "Þarfnast athygli",
   "petRemoveConfirm": "Fjarlægja {name}? Skjölin verða áfram í Vaultara.",
   "petLostTitle": "Týnt gæludýr",
   "petLostSteps": "Tilkynntu fyrst örmerkjaskránni að gæludýrið sé týnt. Hringdu svo í dýralækna og dýraathvörf í nágrenninu með númer örmerkisins og deildu nýlegri mynd í hverfinu og á netinu.",

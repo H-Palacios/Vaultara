@@ -2747,6 +2747,7 @@
   "petVetPhone": "獸醫電話",
   "petDocuments": "證件",
   "petStillToAdd": "尚待新增",
+  "petsNeedsAttention": "需要處理",
   "petRemoveConfirm": "刪除{name}？證件會保留在 Vaultara 中。",
   "petLostTitle": "寵物走失",
   "petLostSteps": "先向晶片登記機構通報寵物走失。接著帶著晶片號碼打電話給附近的獸醫和動物收容所，並在附近和網路上分享最近的照片。",

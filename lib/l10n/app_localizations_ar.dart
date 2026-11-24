@@ -8641,6 +8641,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get petStillToAdd => 'لم تُضف بعد';
 
   @override
+  String get petsNeedsAttention => 'يحتاج إلى انتباه';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'إزالة $name؟ تبقى مستنداته في Vaultara.';
   }

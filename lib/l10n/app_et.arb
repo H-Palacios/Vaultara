@@ -2919,6 +2919,7 @@
   "petVetPhone": "Loomaarsti telefon",
   "petDocuments": "Dokumendid",
   "petStillToAdd": "Veel lisada",
+  "petsNeedsAttention": "Vajab tähelepanu",
   "petRemoveConfirm": "Eemaldada {name}? Dokumendid jäävad Vaultarasse.",
   "petLostTitle": "Kadunud lemmik",
   "petLostSteps": "Teata kõigepealt kiibiregistrisse, et lemmik on kadunud. Seejärel helista läheduses olevatele loomaarstidele ja varjupaikadele mikrokiibi numbriga ning jaga hiljutist fotot kohapeal ja internetis.",

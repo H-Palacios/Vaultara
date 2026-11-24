@@ -2766,6 +2766,7 @@
   "petVetPhone": "Telepono ng beterinaryo",
   "petDocuments": "Mga dokumento",
   "petStillToAdd": "Idadagdag pa",
+  "petsNeedsAttention": "Kailangang asikasuhin",
   "petRemoveConfirm": "Alisin si {name}? Mananatili sa Vaultara ang mga dokumento.",
   "petLostTitle": "Nawawalang alaga",
   "petLostSteps": "I-report muna sa registry ng chip na nawawala ang alaga mo. Pagkatapos ay tawagan ang mga kalapit na beterinaryo at animal shelter gamit ang numero ng microchip, at magbahagi ng bagong litrato sa lugar at online.",

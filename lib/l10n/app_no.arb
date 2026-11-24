@@ -2761,6 +2761,7 @@
   "petVetPhone": "Veterinærens telefon",
   "petDocuments": "Dokumenter",
   "petStillToAdd": "Gjenstår å legge til",
+  "petsNeedsAttention": "Trenger oppmerksomhet",
   "petRemoveConfirm": "Fjerne {name}? Dokumentene blir værende i Vaultara.",
   "petLostTitle": "Savnet kjæledyr",
   "petLostSteps": "Meld først kjæledyret savnet til brikkeregisteret. Ring så veterinærer og dyrehjem i nærheten med mikrobrikkenummeret, og del et nytt bilde lokalt og på nett.",

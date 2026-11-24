@@ -8481,6 +8481,9 @@ class AppLocalizationsHr extends AppLocalizations {
   String get petStillToAdd => 'Još za dodati';
 
   @override
+  String get petsNeedsAttention => 'Treba pažnju';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Ukloniti $name? Dokumenti ostaju u Vaultari.';
   }

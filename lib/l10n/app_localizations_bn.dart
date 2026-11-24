@@ -8416,6 +8416,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get petStillToAdd => 'এখনও যোগ করা বাকি';
 
   @override
+  String get petsNeedsAttention => 'মনোযোগ প্রয়োজন';
+
+  @override
   String petRemoveConfirm(String name) {
     return '$name সরাবেন? নথিগুলো Vaultara-তে থাকবে।';
   }

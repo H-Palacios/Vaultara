@@ -2754,6 +2754,7 @@
   "petVetPhone": "Điện thoại bác sĩ thú y",
   "petDocuments": "Giấy tờ",
   "petStillToAdd": "Còn cần thêm",
+  "petsNeedsAttention": "Cần xử lý",
   "petRemoveConfirm": "Xóa {name}? Giấy tờ vẫn còn trong Vaultara.",
   "petLostTitle": "Thú cưng bị lạc",
   "petLostSteps": "Trước tiên hãy báo cho nơi đăng ký vi mạch rằng thú cưng đã bị lạc. Sau đó gọi các bác sĩ thú y và trại cứu hộ gần đó kèm số vi mạch, và chia sẻ ảnh gần đây ở khu vực và trên mạng.",

@@ -2754,6 +2754,7 @@
   "petVetPhone": "Simu ya daktari wa mifugo",
   "petDocuments": "Nyaraka",
   "petStillToAdd": "Bado kuongeza",
+  "petsNeedsAttention": "Inahitaji kushughulikiwa",
   "petRemoveConfirm": "Ondoa {name}? Nyaraka zake zitabaki kwenye Vaultara.",
   "petLostTitle": "Mnyama aliyepotea",
   "petLostSteps": "Kwanza ripoti kwa sajili ya chip kwamba mnyama wako amepotea. Kisha piga simu kwa madaktari wa mifugo na makazi ya wanyama yaliyo karibu ukiwa na nambari ya microchip, na shiriki picha ya hivi karibuni eneo lako na mtandaoni.",

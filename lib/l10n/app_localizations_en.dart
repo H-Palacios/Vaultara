@@ -8441,6 +8441,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get petStillToAdd => 'Still to add';
 
   @override
+  String get petsNeedsAttention => 'Needs attention';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Remove $name? Their documents stay in Vaultara.';
   }

@@ -2504,6 +2504,7 @@
   "petVetPhone": "Veterinar telefoni",
   "petDocuments": "Hujjatlar",
   "petStillToAdd": "Hali qo'shilishi kerak",
+  "petsNeedsAttention": "E’tibor talab qiladi",
   "petRemoveConfirm": "{name} o'chirilsinmi? Hujjatlari Vaultara'da qoladi.",
   "petLostTitle": "Yo'qolgan hayvon",
   "petLostSteps": "Avval chip reyestriga hayvoningiz yo'qolganini xabar qiling. Keyin mikrochip raqami bilan yaqin atrofdagi veterinarlar va hayvonlar boshpanalariga qo'ng'iroq qiling, so'nggi suratini mahallada va onlayn ulashing.",

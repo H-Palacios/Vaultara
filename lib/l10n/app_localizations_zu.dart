@@ -8416,6 +8416,9 @@ class AppLocalizationsZu extends AppLocalizations {
   String get petStillToAdd => 'Kusazofakwa';
 
   @override
+  String get petsNeedsAttention => 'Kudinga ukunakwa';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Susa u-$name? Amadokhumenti akhe ahlala ku-Vaultara.';
   }

@@ -8600,6 +8600,9 @@ class AppLocalizationsGa extends AppLocalizations {
   String get petStillToAdd => 'Fós le cur leis';
 
   @override
+  String get petsNeedsAttention => 'Teastaíonn aird';
+
+  @override
   String petRemoveConfirm(String name) {
     return '$name a bhaint? Fanann na doiciméid in Vaultara.';
   }

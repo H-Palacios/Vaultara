@@ -2772,6 +2772,7 @@
   "petVetPhone": "Veterinārārsta tālrunis",
   "petDocuments": "Dokumenti",
   "petStillToAdd": "Vēl jāpievieno",
+  "petsNeedsAttention": "Nepieciešama uzmanība",
   "petRemoveConfirm": "Noņemt {name}? Dokumenti paliek Vaultara.",
   "petLostTitle": "Pazudis mājdzīvnieks",
   "petLostSteps": "Vispirms ziņojiet čipu reģistram, ka mājdzīvnieks ir pazudis. Pēc tam zvaniet tuvējiem veterinārārstiem un dzīvnieku patversmēm ar mikročipa numuru un dalieties ar nesenu foto apkārtnē un tiešsaistē.",

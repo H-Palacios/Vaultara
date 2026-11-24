@@ -8557,6 +8557,9 @@ class AppLocalizationsLt extends AppLocalizations {
   String get petStillToAdd => 'Dar reikia pridėti';
 
   @override
+  String get petsNeedsAttention => 'Reikia dėmesio';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Pašalinti $name? Dokumentai liks Vaultaroje.';
   }

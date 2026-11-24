@@ -8570,6 +8570,9 @@ class AppLocalizationsPl extends AppLocalizations {
   String get petStillToAdd => 'Jeszcze do dodania';
 
   @override
+  String get petsNeedsAttention => 'Wymaga uwagi';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Usunąć: $name? Dokumenty zostaną w Vaultara.';
   }

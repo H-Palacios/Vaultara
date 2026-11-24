@@ -115,8 +115,6 @@ class TutorialStepTexts {
         return loc.petDocuments;
       case TutorialStep.petsAdd:
         return loc.petsAdd;
-      case TutorialStep.petsTravel:
-        return loc.petTravelTitle;
       default:
         return null;
     }
@@ -228,8 +226,6 @@ class TutorialStepTexts {
         return Icons.folder_rounded;
       case TutorialStep.petsAdd:
         return Icons.add_rounded;
-      case TutorialStep.petsTravel:
-        return Icons.flight_rounded;
       default:
         return null;
     }
@@ -411,8 +407,6 @@ class TutorialStepTexts {
         return loc.tourPetsDocsBody;
       case TutorialStep.petsAdd:
         return loc.tourPetsAddBody;
-      case TutorialStep.petsTravel:
-        return loc.tourPetsTravelPlanBody;
     }
   }
 }

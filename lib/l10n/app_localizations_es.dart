@@ -8444,6 +8444,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get petStillToAdd => 'Falta añadir';
 
   @override
+  String get petsNeedsAttention => 'Requiere atención';
+
+  @override
   String petRemoveConfirm(String name) {
     return '¿Quitar a $name? Sus documentos se quedan en Vaultara.';
   }

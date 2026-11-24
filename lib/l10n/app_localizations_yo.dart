@@ -8365,6 +8365,9 @@ class AppLocalizationsYo extends AppLocalizations {
   String get petStillToAdd => 'Ó ṣì kù láti fi kún un';
 
   @override
+  String get petsNeedsAttention => 'Ó nílò àfiyèsí';
+
+  @override
   String petRemoveConfirm(String name) {
     return 'Yọ $name kúrò? Àwọn ìwé rẹ̀ yóò wà nínú Vaultara.';
   }

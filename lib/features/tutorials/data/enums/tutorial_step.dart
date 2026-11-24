@@ -85,5 +85,4 @@ enum TutorialStep {
   petsList,
   petsDocuments,
   petsAdd,
-  petsTravel,
 }

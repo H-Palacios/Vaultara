@@ -2746,6 +2746,7 @@
   "petVetPhone": "Ucingo lukadokotela wezilwane",
   "petDocuments": "Amadokhumenti",
   "petStillToAdd": "Kusazofakwa",
+  "petsNeedsAttention": "Kudinga ukunakwa",
   "petRemoveConfirm": "Susa u-{name}? Amadokhumenti akhe ahlala ku-Vaultara.",
   "petLostTitle": "Isilwane esilahlekile",
   "petLostSteps": "Okokuqala bika kurejista ye-chip ukuthi isilwane sakho silahlekile. Bese ushayela odokotela bezilwane nezindawo zokukhosela izilwane eziseduze nenombolo ye-microchip, wabelane ngesithombe sakamuva endaweni naku-inthanethi.",
