@@ -183,12 +183,14 @@ module.exports = function build(h) {
     "Pet types: the app's list comes first; for anything else (a tarantula, a sugar glider) a helper suggests the proper name, the animal group so travel rules fit, and an emoji (paid plans). A small spelling mistake gets Did you mean. Text that is not an animal needs Keep it before saving.",
     "Pet photos: tap the pet's picture on its page to take or choose a photo (paid plans). It is kept privately, with location details removed.",
     "Care reminders: on a pet's page, chips for flea and tick treatment, deworming (for animals that usually need them) and a vet check-up; each repeats on its own (treatments every 3 months, check-ups yearly by default).",
+    "Adding a pet needs only a name; the microchip number, chip registry, vet and vet's phone are under More details (optional). With no chip number saved, Add chip number appears on the pet's page, in the lost pet sheet and on the microchip step of the travel countdown.",
     "Pet card: Share pet card on a pet's page makes a PDF for a sitter, kennel or vet with the photo, chip, vet and every document date.",
     "Pet travel countdown: on Pet travel rules, choose the travel date (a trip's date is filled in when opened from the trip). Each step shows the latest day it can happen, and Add these dates to my reminders turns them into records for that pet. For questions call get_pet_travel_plan.",
     "Entry details: a trip shows, per country and from its official page, whether a yellow fever certificate is needed, whether drivers need an International Driving Permit (with a nudge if none is saved) and the emergency number, each marked Checked by Vaultara or Not checked yet.",
     "Calendar link (Profile > Export and calendar > Calendar link): it now adds a Renew soon event on each record's reminder day (Google Calendar ignores alerts in subscribed calendars), the user's trips, an option to hide names (Document expires), and choosing which people and categories go in. Google can take up to a day to show changes; Apple and Outlook are faster.",
     "Renewal costs (Insights): besides the year's forecast it shows what was paid for renewals this year, what is still coming in the next 12 months, about how much to put aside each month, and a heads-up before an expensive month. It is about renewals only, not general budgeting.",
-    "Change history (Business owners, Family screen > Change history): who added, changed or deleted shared records and when, exportable as a PDF; notes and document numbers are never kept. For questions call get_change_history.",
+    "On Business accounts the Family screen is called Team (Profile > Team), with the Business tools under their own heading; Family and Individual users still see Family.",
+    "Change history (Business owners, Profile > Team > Change history): who added, changed or deleted shared records and when, exportable as a PDF; notes and document numbers are never kept. For questions call get_change_history.",
   ];
 
   return { TOOLS, NAMES, run, step, GUIDE };
