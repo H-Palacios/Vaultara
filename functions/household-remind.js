@@ -7,32 +7,15 @@ const { onCall } = require("./live-call");
 const { admin, ENFORCE_APP_CHECK, consumeRateLimit } = require("./shared");
 const { displayNameFor, loadMembership } = require("./household");
 const { sendToUser } = require("./push");
+const { ID_PATTERN, membersOf, remindTarget } = require("./household-remind-target");
 
 const CALLABLE = { enforceAppCheck: ENFORCE_APP_CHECK };
-const ID_PATTERN = /^[A-Za-z0-9_-]{1,128}$/;
 const DAY_MS = 24 * 60 * 60 * 1000;
 const ACTIVE_TIERS = new Set(["family", "business"]);
 // One reminder a day per record from each member, and a cap per member so
 // the button cannot be used to flood the household.
 const PER_RECORD_DAY = 1;
 const PER_SENDER_DAY = 20;
-
-function membersOf(house) {
-  return Array.isArray(house?.memberUids)
-    ? house.memberUids.filter((m) => typeof m === "string" && ID_PATTERN.test(m))
-    : [];
-}
-
-// The member a reminder goes to, or null when there is nobody else to
-// remind (the sender is the one responsible, or they have left).
-function remindTarget({ members, sender, creator, assignee }) {
-  const pick = typeof assignee === "string" && members.includes(assignee)
-    ? assignee
-    : typeof creator === "string" && members.includes(creator)
-      ? creator
-      : null;
-  return pick && pick !== sender ? pick : null;
-}
 
 exports.remindMember = onCall(CALLABLE, async (request) => {
   const uid = request.auth?.uid;
