@@ -16,6 +16,7 @@ import 'core/navigation/navigator_key.dart';
 import 'core/services/connection_status.dart';
 import 'core/view/widgets/offline_banner.dart';
 import 'core/theme/app_brand.dart';
+import 'core/theme/app_text_scale.dart';
 import 'core/theme/app_themes.dart';
 import 'core/theme/theme_preference.dart';
 import 'features/auth/services/biometric_preference.dart';
@@ -320,10 +321,7 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
             final media = MediaQuery.of(context);
             return MediaQuery(
               data: media.copyWith(
-                textScaler: media.textScaler.clamp(
-                  minScaleFactor: 0.85,
-                  maxScaleFactor: 1.6,
-                ),
+                textScaler: AppTextScale.clamp(media.textScaler),
               ),
               child: Stack(
                 fit: StackFit.expand,

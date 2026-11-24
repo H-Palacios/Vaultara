@@ -41,7 +41,7 @@ class ProfileUpgradeStrip extends StatelessWidget {
                       ),
                       Text(
                         t.profile_premium_upgrade_subtitle,
-                        maxLines: 1,
+                        maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                         style: TextStyle(
                           color: scheme.onPrimary.withValues(alpha: 0.9),

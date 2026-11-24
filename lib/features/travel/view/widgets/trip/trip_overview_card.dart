@@ -129,8 +129,10 @@ class TripOverviewCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 12),
+              // At most 120 wide, so a long "days to go" at a large font
+              // size wraps instead of pushing the places off the card.
               Container(
-                constraints: const BoxConstraints(minWidth: 84),
+                constraints: const BoxConstraints(minWidth: 84, maxWidth: 120),
                 padding: const EdgeInsets.symmetric(
                   horizontal: 12,
                   vertical: 10,

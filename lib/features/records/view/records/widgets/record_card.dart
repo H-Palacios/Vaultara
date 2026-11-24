@@ -100,7 +100,8 @@ class RecordCard extends StatelessWidget {
           Icon(icon, size: 20, color: iconColour),
           const SizedBox(width: 12),
           Flexible(
-            child: Text(label, maxLines: 1, overflow: TextOverflow.ellipsis),
+            // Two lines, so a long translation is not cut short.
+            child: Text(label, maxLines: 2, overflow: TextOverflow.ellipsis),
           ),
         ],
       ),
