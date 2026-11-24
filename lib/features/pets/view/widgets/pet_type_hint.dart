@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/features/pets/data/pet_emoji.dart';
 import 'package:vaultara/features/travel/view/travel_widgets.dart';
 
 /// The line under the type field: a "Did you mean …?" suggestion to tap, a
@@ -45,7 +46,10 @@ class PetTypeHint extends StatelessWidget {
                     child: CircularProgressIndicator(strokeWidth: 2),
                   )
                 else if (face != null)
-                  Text(face, style: const TextStyle(fontSize: 20))
+                  Text(
+                    PetEmoji.show(face),
+                    style: const TextStyle(fontSize: 20),
+                  )
                 else
                   Icon(
                     warning

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/features/pets/data/pet_emoji.dart';
 import 'package:vaultara/features/pets/data/pet.dart';
 import 'package:vaultara/features/pets/data/pet_photo_repository.dart';
 
@@ -38,7 +39,7 @@ class PetAvatar extends StatelessWidget {
                   gaplessPlayback: true,
                 )
               : Text(
-                  pet.emoji,
+                  PetEmoji.show(pet.emoji),
                   style: TextStyle(fontSize: size * 0.52, height: 1),
                 ),
         );

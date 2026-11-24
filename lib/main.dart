@@ -6,6 +6,7 @@ import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'firebase_options.dart';
+import 'package:vaultara/features/pets/data/pet_emoji.dart';
 import 'package:vaultara/features/reminders/services/reminder_scheduler.dart';
 import 'package:vaultara/features/reminders/services/push_service.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -55,7 +56,11 @@ Future<void> _initAppServices() async {
   AnalyticsService.observer();
 
   FirebaseMessaging.onBackgroundMessage(vaultaraBackgroundPush);
-  await Future.wait<void>([SharedReminderSync.prime(), PlanStore.prime()]);
+  await Future.wait<void>([
+    SharedReminderSync.prime(),
+    PlanStore.prime(),
+    PetEmoji.init(),
+  ]);
   // Time zones and the notification plugin take a moment to load; every
   // reminder call waits for this itself, so the first screen does not.
   unawaited(ReminderScheduler.init());
