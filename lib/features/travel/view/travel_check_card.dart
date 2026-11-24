@@ -4,6 +4,7 @@ import 'package:vaultara/core/l10n/plural_labels.dart';
 import 'package:vaultara/core/util/dates.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/view/widgets/premium_builder.dart';
+import 'package:vaultara/features/travel/data/home_trip_hint.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
 import 'package:vaultara/features/travel/data/trip_repository.dart';
 import 'package:vaultara/features/travel/logic/next_trip.dart';
@@ -15,6 +16,10 @@ import 'package:vaultara/features/travel/view/trip_detail_screen.dart';
 /// The travel card on Home. It follows your trips: an invite to plan one,
 /// then the next trip with its countdown and document status, then the
 /// trip in progress, and back to the invite once you are home.
+///
+/// While the trips load it does not show the invite first and swap it a
+/// moment later: if the card showed a trip last time, it keeps an empty
+/// card of the same size until the trip is there.
 class TravelCheckCard extends StatelessWidget {
   final bool isPremium;
 
@@ -34,13 +39,27 @@ class TravelCheckCard extends StatelessWidget {
       initial: isPremium,
       builder: (context, premium) {
         if (!premium || sample) return _invite(context, premium);
-        return ValueListenableBuilder<List<SavedTrip>>(
-          valueListenable: TripRepository.trips,
-          builder: (context, trips, _) {
-            final trip = NextTrip.pick(trips, DateTime.now());
-            if (trip == null) return _invite(context, premium);
-            return _TripNow(trip: trip);
-          },
+        return ValueListenableBuilder<bool>(
+          valueListenable: TripRepository.loaded,
+          builder: (context, loaded, _) =>
+              ValueListenableBuilder<List<SavedTrip>>(
+                valueListenable: TripRepository.trips,
+                builder: (context, trips, _) {
+                  final trip = NextTrip.pick(trips, DateTime.now());
+                  if (!loaded && trip == null) {
+                    return HomeTripHint.hadTrip
+                        ? const _TripLoading()
+                        : _invite(context, premium);
+                  }
+                  if (trip == null) return _invite(context, premium);
+                  // The status follows the records, so its colour is right
+                  // as soon as they load and after every change.
+                  return ValueListenableBuilder<int>(
+                    valueListenable: RecordRepository.changes,
+                    builder: (context, _, __) => _TripNow(trip: trip),
+                  );
+                },
+              ),
         );
       },
     );
@@ -133,6 +152,59 @@ class TravelCheckCard extends StatelessWidget {
               ),
               const SizedBox(width: 4),
               Icon(Icons.chevron_right_rounded, color: scheme.onSurfaceVariant),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// The card's place while a trip it showed last time is loading: the same
+/// size and colour as the trip card, with no text that could be wrong.
+class _TripLoading extends StatelessWidget {
+  const _TripLoading();
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    Widget bar(double width) => Container(
+      width: width,
+      height: 11,
+      decoration: BoxDecoration(
+        color: scheme.onSurfaceVariant.withValues(alpha: 0.12),
+        borderRadius: BorderRadius.circular(6),
+      ),
+    );
+    return Semantics(
+      key: const ValueKey('travel-card-loading'),
+      container: true,
+      child: Material(
+        color: scheme.surfaceContainerHighest,
+        borderRadius: BorderRadius.circular(20),
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(16, 14, 12, 14),
+          child: Row(
+            children: [
+              Container(
+                width: 42,
+                height: 42,
+                decoration: BoxDecoration(
+                  color: scheme.primary.withValues(alpha: 0.08),
+                  borderRadius: BorderRadius.circular(14),
+                ),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    bar(150),
+                    const SizedBox(height: 9),
+                    bar(110),
+                  ],
+                ),
+              ),
             ],
           ),
         ),

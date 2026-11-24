@@ -16,6 +16,7 @@ import 'features/security/services/analytics_consent.dart';
 import 'app.dart';
 import 'features/billing/data/repositories/plan_repository.dart';
 import 'core/util/temp_files.dart';
+import 'features/travel/data/home_trip_hint.dart';
 
 Future<void> _initAppServices() async {
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
@@ -60,6 +61,7 @@ Future<void> _initAppServices() async {
     SharedReminderSync.prime(),
     PlanStore.prime(),
     PetEmoji.init(),
+    HomeTripHint.prime(),
   ]);
   // Time zones and the notification plugin take a moment to load; every
   // reminder call waits for this itself, so the first screen does not.

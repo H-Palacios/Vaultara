@@ -6,7 +6,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vaultara/core/util/dates.dart';
+import 'package:vaultara/features/travel/data/home_trip_hint.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
+import 'package:vaultara/features/travel/logic/next_trip.dart';
 import 'package:vaultara/features/travel/data/visa_data.dart';
 import 'package:vaultara/features/travel/logic/passport_rules.dart';
 import 'package:vaultara/features/travel/logic/trip_checklist.dart';
@@ -31,6 +33,11 @@ class TripRepository {
   static final ValueNotifier<List<SavedTrip>> trips =
       ValueNotifier<List<SavedTrip>>(const <SavedTrip>[]);
 
+  /// False until the trips are known for the signed-in account, from the
+  /// phone's copy or the server, so Home does not show the wrong card
+  /// while they load.
+  static final ValueNotifier<bool> loaded = ValueNotifier<bool>(false);
+
   static StreamSubscription<QuerySnapshot<Map<String, dynamic>>>? _sub;
   static final Set<String> _visaSyncAttempts = <String>{};
   static String? _uid;
@@ -49,16 +56,37 @@ class TripRepository {
     if (uid == null || uid == _uid) return;
     _sub?.cancel();
     _uid = uid;
-    _sub = _collection()!.snapshots().listen((snap) {
-      final list = snap.docs
-          .map((d) => SavedTrip.fromMap(d.id, d.data()))
-          .whereType<SavedTrip>()
-          .toList()
-        ..sort((a, b) => a.departure.compareTo(b.departure));
-      trips.value = List<SavedTrip>.unmodifiable(list);
+    loaded.value = false;
+    final collection = _collection()!;
+    // The trips Firestore keeps on the phone are read first, so Home shows
+    // the next trip at once instead of waiting for the live listener. An
+    // empty copy may only mean nothing was saved on this phone yet, so it
+    // does not count as loaded.
+    unawaited(
+      collection
+          .get(const GetOptions(source: Source.cache))
+          .then((snap) {
+            if (_uid != uid || loaded.value || snap.docs.isEmpty) return;
+            _show(snap);
+          })
+          .catchError((Object _) {}),
+    );
+    _sub = collection.snapshots().listen((snap) {
+      _show(snap);
       TripReminders.refreshSoon(trips.value);
     }, onError: (Object e, StackTrace s) =>
         ErrorReporter.record(e, s, 'trips_listener'));
+  }
+
+  static void _show(QuerySnapshot<Map<String, dynamic>> snap) {
+    final list = snap.docs
+        .map((d) => SavedTrip.fromMap(d.id, d.data()))
+        .whereType<SavedTrip>()
+        .toList()
+      ..sort((a, b) => a.departure.compareTo(b.departure));
+    trips.value = List<SavedTrip>.unmodifiable(list);
+    loaded.value = true;
+    HomeTripHint.remember(NextTrip.pick(list, DateTime.now()) != null);
   }
 
   static void clearForSignOut() {
@@ -67,6 +95,7 @@ class TripRepository {
     _uid = null;
     _visaSyncAttempts.clear();
     trips.value = const <SavedTrip>[];
+    loaded.value = false;
     TripReminders.reset();
   }
 
