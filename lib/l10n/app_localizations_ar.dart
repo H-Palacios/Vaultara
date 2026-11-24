@@ -9196,6 +9196,24 @@ class AppLocalizationsAr extends AppLocalizations {
   String get petAddChip => 'أضف رقم الشريحة';
 
   @override
+  String get teamTitle => 'الفريق';
+
+  @override
+  String get teamIntro => 'تابع سجلات موظفيك. تُظهر تذكيراتهم أسماءهم لتعرف لمن السجل.';
+
+  @override
+  String get teamProfileTileSubtitle => 'موظفوك وسجلاتهم';
+
+  @override
+  String get planBenefitEverythingIndividual => 'كل مزايا الخطة الفردية';
+
+  @override
+  String get businessBenefitStaffRecords => 'لكل موظف سجلاته وتذكيراته الخاصة';
+
+  @override
+  String get planBenefitPetsSolo => 'حيوانات أليفة بمستنداتها وشريحتها وطبيبها البيطري';
+
+  @override
   String get yoursTag => 'خاص بك';
 
   @override

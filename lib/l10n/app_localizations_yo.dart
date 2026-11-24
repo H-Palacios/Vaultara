@@ -8920,6 +8920,24 @@ class AppLocalizationsYo extends AppLocalizations {
   String get petAddChip => 'Ṣàfikún nọ́mbà ṣípù';
 
   @override
+  String get teamTitle => 'Ẹgbẹ́';
+
+  @override
+  String get teamIntro => 'Tọpinpin àwọn àkọsílẹ̀ òṣìṣẹ́ rẹ. Àwọn ìránnilétí wọn ń fi orúkọ wọn hàn kí o lè mọ ẹni tí àkọsílẹ̀ jẹ́ tirẹ̀.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Àwọn òṣìṣẹ́ rẹ àti àwọn àkọsílẹ̀ wọn';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Gbogbo nǹkan tó wà nínú Ẹnìkọ̀ọ̀kan';
+
+  @override
+  String get businessBenefitStaffRecords => 'Òṣìṣẹ́ kọ̀ọ̀kan ní àwọn àkọsílẹ̀ àti ìránnilétí tirẹ̀';
+
+  @override
+  String get planBenefitPetsSolo => 'Àwọn ẹranko ọ̀sìn pẹ̀lú ìwé, máíkírọ́ṣípù àti dókítà ẹranko tiwọn';
+
+  @override
   String get yoursTag => 'Tìrẹ';
 
   @override

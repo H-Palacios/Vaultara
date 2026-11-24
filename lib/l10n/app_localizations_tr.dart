@@ -8971,6 +8971,24 @@ class AppLocalizationsTr extends AppLocalizations {
   String get petAddChip => 'Çip numarası ekle';
 
   @override
+  String get teamTitle => 'Ekip';
+
+  @override
+  String get teamIntro => 'Çalışanlarınızın kayıtlarını takip edin. Hatırlatıcılarda adları görünür, böylece kaydın kime ait olduğunu bilirsiniz.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Çalışanlarınız ve kayıtları';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Bireysel\'deki her şey';
+
+  @override
+  String get businessBenefitStaffRecords => 'Her çalışanın kendi kayıtları ve hatırlatıcıları vardır';
+
+  @override
+  String get planBenefitPetsSolo => 'Kendi belgeleri, mikroçipi ve veterineri olan evcil hayvanlar';
+
+  @override
   String get yoursTag => 'Sizin';
 
   @override

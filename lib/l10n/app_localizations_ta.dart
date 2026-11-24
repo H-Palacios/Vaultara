@@ -8971,6 +8971,24 @@ class AppLocalizationsTa extends AppLocalizations {
   String get petAddChip => 'சிப் எண்ணைச் சேர்';
 
   @override
+  String get teamTitle => 'குழு';
+
+  @override
+  String get teamIntro => 'உங்கள் பணியாளர்களின் பதிவுகளைக் கண்காணியுங்கள். நினைவூட்டல்களில் அவர்களின் பெயர் தெரிவதால் பதிவு யாருடையது என்று தெரியும்.';
+
+  @override
+  String get teamProfileTileSubtitle => 'உங்கள் பணியாளர்கள் மற்றும் அவர்களின் பதிவுகள்';
+
+  @override
+  String get planBenefitEverythingIndividual => 'தனிப்பட்ட திட்டத்தில் உள்ள அனைத்தும்';
+
+  @override
+  String get businessBenefitStaffRecords => 'ஒவ்வொரு பணியாளருக்கும் சொந்த பதிவுகளும் நினைவூட்டல்களும்';
+
+  @override
+  String get planBenefitPetsSolo => 'சொந்த ஆவணங்கள், மைக்ரோசிப் மற்றும் கால்நடை மருத்துவருடன் செல்லப்பிராணிகள்';
+
+  @override
   String get yoursTag => 'உங்களுடையது';
 
   @override

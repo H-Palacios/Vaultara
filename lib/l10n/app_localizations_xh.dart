@@ -8971,6 +8971,24 @@ class AppLocalizationsXh extends AppLocalizations {
   String get petAddChip => 'Yongeza inombolo yetshiphu';
 
   @override
+  String get teamTitle => 'Iqela';
+
+  @override
+  String get teamIntro => 'Landela iirekhodi zabasebenzi bakho. Izikhumbuzo zabo zibonisa igama labo ukuze wazi ukuba yeyakabani irekhodi.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Abasebenzi bakho neerekhodi zabo';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Yonke into ekwi-Umntu ngamnye';
+
+  @override
+  String get businessBenefitStaffRecords => 'Umsebenzi ngamnye uneerekhodi nezikhumbuzo zakhe';
+
+  @override
+  String get planBenefitPetsSolo => 'Izilwanyana zasekhaya ezinamaxwebhu, imayikhrotshiphu nogqirha wazo';
+
+  @override
   String get yoursTag => 'Okwakho';
 
   @override

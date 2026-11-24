@@ -8975,6 +8975,24 @@ class AppLocalizationsNn extends AppLocalizations {
   String get petAddChip => 'Legg til brikkenummer';
 
   @override
+  String get teamTitle => 'Team';
+
+  @override
+  String get teamIntro => 'Hald oversikt over oppføringane til dei tilsette. Påminningane viser namnet deira, så du veit kven oppføringa høyrer til.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Dei tilsette og oppføringane deira';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Alt i Individuell';
+
+  @override
+  String get businessBenefitStaffRecords => 'Kvar tilsett har eigne oppføringar og påminningar';
+
+  @override
+  String get planBenefitPetsSolo => 'Kjæledyr med eigne dokument, mikrobrikke og veterinær';
+
+  @override
   String get yoursTag => 'Ditt';
 
   @override

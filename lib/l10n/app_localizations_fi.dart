@@ -8975,6 +8975,24 @@ class AppLocalizationsFi extends AppLocalizations {
   String get petAddChip => 'Lisää sirun numero';
 
   @override
+  String get teamTitle => 'Tiimi';
+
+  @override
+  String get teamIntro => 'Pidä kirjaa työntekijöidesi tietueista. Muistutuksissa näkyy heidän nimensä, joten tiedät, kenen tietue on kyseessä.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Työntekijäsi ja heidän tietueensa';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Kaikki Yksittäinen-tilauksen ominaisuudet';
+
+  @override
+  String get businessBenefitStaffRecords => 'Jokaisella työntekijällä on omat tietueet ja muistutukset';
+
+  @override
+  String get planBenefitPetsSolo => 'Lemmikit omine asiakirjoineen, mikrosiruineen ja eläinlääkäreineen';
+
+  @override
   String get yoursTag => 'Oma';
 
   @override

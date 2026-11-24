@@ -8971,6 +8971,24 @@ class AppLocalizationsFa extends AppLocalizations {
   String get petAddChip => 'افزودن شمارهٔ تراشه';
 
   @override
+  String get teamTitle => 'تیم';
+
+  @override
+  String get teamIntro => 'سوابق کارکنانتان را پیگیری کنید. یادآوری‌ها نامشان را نشان می‌دهند تا بدانید سابقه مال کیست.';
+
+  @override
+  String get teamProfileTileSubtitle => 'کارکنان شما و سوابقشان';
+
+  @override
+  String get planBenefitEverythingIndividual => 'همه امکانات طرح فردی';
+
+  @override
+  String get businessBenefitStaffRecords => 'هر کارمند سوابق و یادآوری‌های خودش را دارد';
+
+  @override
+  String get planBenefitPetsSolo => 'حیوانات خانگی با مدارک، ریزتراشه و دامپزشک خودشان';
+
+  @override
   String get yoursTag => 'مال شما';
 
   @override

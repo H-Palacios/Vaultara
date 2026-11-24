@@ -8914,6 +8914,24 @@ class AppLocalizationsZh extends AppLocalizations {
   String get petAddChip => '添加芯片号码';
 
   @override
+  String get teamTitle => '团队';
+
+  @override
+  String get teamIntro => '跟踪员工的记录。提醒中会显示员工姓名，让你知道是谁的记录。';
+
+  @override
+  String get teamProfileTileSubtitle => '你的员工及其记录';
+
+  @override
+  String get planBenefitEverythingIndividual => '包含个人版全部功能';
+
+  @override
+  String get businessBenefitStaffRecords => '每位员工都有自己的记录和提醒';
+
+  @override
+  String get planBenefitPetsSolo => '宠物拥有各自的证件、芯片和兽医信息';
+
+  @override
   String get yoursTag => '我的';
 
   @override
@@ -19441,6 +19459,24 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get petAddChip => '添加芯片号码';
 
   @override
+  String get teamTitle => '团队';
+
+  @override
+  String get teamIntro => '跟踪员工的记录。提醒中会显示员工姓名，让你知道是谁的记录。';
+
+  @override
+  String get teamProfileTileSubtitle => '你的员工及其记录';
+
+  @override
+  String get planBenefitEverythingIndividual => '包含个人版全部功能';
+
+  @override
+  String get businessBenefitStaffRecords => '每位员工都有自己的记录和提醒';
+
+  @override
+  String get planBenefitPetsSolo => '宠物拥有各自的证件、芯片和兽医信息';
+
+  @override
   String get yoursTag => '我的';
 
   @override
@@ -29966,6 +30002,24 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get petAddChip => '新增晶片號碼';
+
+  @override
+  String get teamTitle => '團隊';
+
+  @override
+  String get teamIntro => '追蹤員工的紀錄。提醒會顯示員工姓名，讓你知道是誰的紀錄。';
+
+  @override
+  String get teamProfileTileSubtitle => '你的員工及其紀錄';
+
+  @override
+  String get planBenefitEverythingIndividual => '包含個人方案所有功能';
+
+  @override
+  String get businessBenefitStaffRecords => '每位員工都有自己的紀錄和提醒';
+
+  @override
+  String get planBenefitPetsSolo => '寵物有各自的證件、晶片和獸醫資料';
 
   @override
   String get yoursTag => '我的';

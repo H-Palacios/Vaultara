@@ -8971,6 +8971,24 @@ class AppLocalizationsUr extends AppLocalizations {
   String get petAddChip => 'چپ نمبر شامل کریں';
 
   @override
+  String get teamTitle => 'ٹیم';
+
+  @override
+  String get teamIntro => 'اپنے عملے کے ریکارڈز پر نظر رکھیں۔ ان کی یاد دہانیوں میں نام نظر آتا ہے تاکہ آپ جان سکیں ریکارڈ کس کا ہے۔';
+
+  @override
+  String get teamProfileTileSubtitle => 'آپ کا عملہ اور ان کے ریکارڈز';
+
+  @override
+  String get planBenefitEverythingIndividual => 'انفرادی کی ہر سہولت';
+
+  @override
+  String get businessBenefitStaffRecords => 'ہر ملازم کے اپنے ریکارڈز اور یاد دہانیاں ہیں';
+
+  @override
+  String get planBenefitPetsSolo => 'اپنی دستاویزات، مائیکروچپ اور ویٹرنری ڈاکٹر کے ساتھ پالتو جانور';
+
+  @override
   String get yoursTag => 'آپ کا';
 
   @override

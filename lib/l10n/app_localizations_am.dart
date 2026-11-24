@@ -8971,6 +8971,24 @@ class AppLocalizationsAm extends AppLocalizations {
   String get petAddChip => 'የቺፕ ቁጥር ያክሉ';
 
   @override
+  String get teamTitle => 'ቡድን';
+
+  @override
+  String get teamIntro => 'የሰራተኞችዎን መዝገቦች ይከታተሉ። የማን መዝገብ እንደሆነ እንዲያውቁ አስታዋሾቻቸው ስማቸውን ያሳያሉ።';
+
+  @override
+  String get teamProfileTileSubtitle => 'ሰራተኞችዎ እና መዝገቦቻቸው';
+
+  @override
+  String get planBenefitEverythingIndividual => 'በግለሰብ ያለው ሁሉ';
+
+  @override
+  String get businessBenefitStaffRecords => 'እያንዳንዱ ሰራተኛ የራሱ መዝገቦች እና አስታዋሾች አሉት';
+
+  @override
+  String get planBenefitPetsSolo => 'የራሳቸው ሰነዶች፣ ማይክሮቺፕ እና የእንስሳት ሐኪም ያላቸው የቤት እንስሳት';
+
+  @override
   String get yoursTag => 'የእርስዎ';
 
   @override

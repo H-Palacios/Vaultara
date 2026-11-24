@@ -8970,6 +8970,24 @@ class AppLocalizationsSo extends AppLocalizations {
   String get petAddChip => 'Ku dar lambarka chip-ka';
 
   @override
+  String get teamTitle => 'Koox';
+
+  @override
+  String get teamIntro => 'La soco diiwaannada shaqaalahaaga. Xusuusintoodu waxay muujisaa magacooda si aad u ogaato cidda iska leh.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Shaqaalahaaga iyo diiwaannadooda';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Wax kasta oo Shakhsi ku jira';
+
+  @override
+  String get businessBenefitStaffRecords => 'Shaqaale kastaa wuxuu leeyahay diiwaanno iyo xusuusin u gaar ah';
+
+  @override
+  String get planBenefitPetsSolo => 'Xayawaanno leh dukumentiyadooda, mikrochip iyo dhakhtar xoolo';
+
+  @override
   String get yoursTag => 'Adiga';
 
   @override

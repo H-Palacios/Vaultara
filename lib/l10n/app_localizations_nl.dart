@@ -8975,6 +8975,24 @@ class AppLocalizationsNl extends AppLocalizations {
   String get petAddChip => 'Chipnummer toevoegen';
 
   @override
+  String get teamTitle => 'Team';
+
+  @override
+  String get teamIntro => 'Houd de records van je personeel bij. Hun herinneringen tonen hun naam, zodat je weet van wie het record is.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Je personeel en hun records';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Alles van Individueel';
+
+  @override
+  String get businessBenefitStaffRecords => 'Elke medewerker heeft eigen records en herinneringen';
+
+  @override
+  String get planBenefitPetsSolo => 'Huisdieren met hun eigen documenten, chip en dierenarts';
+
+  @override
   String get yoursTag => 'Van jou';
 
   @override

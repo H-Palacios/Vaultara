@@ -8971,6 +8971,24 @@ class AppLocalizationsZu extends AppLocalizations {
   String get petAddChip => 'Engeza inombolo ye-chip';
 
   @override
+  String get teamTitle => 'Ithimba';
+
+  @override
+  String get teamIntro => 'Landelela amarekhodi abasebenzi bakho. Izikhumbuzo zabo zikhombisa igama labo ukuze wazi ukuthi irekhodi elikabani.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Abasebenzi bakho namarekhodi abo';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Konke okuku-Umuntu ngamunye';
+
+  @override
+  String get businessBenefitStaffRecords => 'Umsebenzi ngamunye unamarekhodi nezikhumbuzo zakhe';
+
+  @override
+  String get planBenefitPetsSolo => 'Izilwane ezinamadokhumenti, i-microchip nodokotela wazo';
+
+  @override
   String get yoursTag => 'Okwakho';
 
   @override

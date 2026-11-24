@@ -8971,6 +8971,24 @@ class AppLocalizationsBg extends AppLocalizations {
   String get petAddChip => 'Добавете номер на чипа';
 
   @override
+  String get teamTitle => 'Екип';
+
+  @override
+  String get teamIntro => 'Следете записите на служителите си. Напомнянията показват името им, за да знаете чий е записът.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Вашите служители и техните записи';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Всичко от Индивидуален';
+
+  @override
+  String get businessBenefitStaffRecords => 'Всеки служител има свои записи и напомняния';
+
+  @override
+  String get planBenefitPetsSolo => 'Любимци със собствени документи, микрочип и ветеринар';
+
+  @override
   String get yoursTag => 'Ваше';
 
   @override

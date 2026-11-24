@@ -8971,6 +8971,24 @@ class AppLocalizationsKu extends AppLocalizations {
   String get petAddChip => 'Hejmara çîpê zêde bike';
 
   @override
+  String get teamTitle => 'Tîm';
+
+  @override
+  String get teamIntro => 'Tomarên karmendên xwe bişopîne. Bîranînên wan navê wan nîşan didin da ku tu bizanî tomar a kê ye.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Karmendên te û tomarên wan';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Her tiştê di Kesane de';
+
+  @override
+  String get businessBenefitStaffRecords => 'Her karmendek tomar û bîranînên xwe hene';
+
+  @override
+  String get planBenefitPetsSolo => 'Heywanên malê bi belge, mîkroçîp û veterînerê xwe';
+
+  @override
   String get yoursTag => 'Ya te';
 
   @override

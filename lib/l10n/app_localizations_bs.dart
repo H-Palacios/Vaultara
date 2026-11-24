@@ -9040,6 +9040,24 @@ class AppLocalizationsBs extends AppLocalizations {
   String get petAddChip => 'Dodajte broj čipa';
 
   @override
+  String get teamTitle => 'Tim';
+
+  @override
+  String get teamIntro => 'Pratite zapise svog osoblja. Podsjetnici prikazuju njihovo ime da znate čiji je zapis.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Vaše osoblje i njihovi zapisi';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Sve što nudi Individualni';
+
+  @override
+  String get businessBenefitStaffRecords => 'Svaki zaposleni ima svoje zapise i podsjetnike';
+
+  @override
+  String get planBenefitPetsSolo => 'Ljubimci sa svojim dokumentima, mikročipom i veterinarom';
+
+  @override
   String get yoursTag => 'Vaše';
 
   @override

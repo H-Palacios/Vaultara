@@ -8914,6 +8914,24 @@ class AppLocalizationsVi extends AppLocalizations {
   String get petAddChip => 'Thêm số vi mạch';
 
   @override
+  String get teamTitle => 'Nhóm';
+
+  @override
+  String get teamIntro => 'Theo dõi hồ sơ của nhân viên. Lời nhắc hiển thị tên của họ để bạn biết hồ sơ là của ai.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Nhân viên của bạn và hồ sơ của họ';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Mọi tính năng của gói Cá nhân';
+
+  @override
+  String get businessBenefitStaffRecords => 'Mỗi nhân viên có hồ sơ và lời nhắc riêng';
+
+  @override
+  String get planBenefitPetsSolo => 'Thú cưng với giấy tờ, vi mạch và bác sĩ thú y riêng';
+
+  @override
   String get yoursTag => 'Của bạn';
 
   @override

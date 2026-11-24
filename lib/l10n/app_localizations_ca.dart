@@ -8975,6 +8975,24 @@ class AppLocalizationsCa extends AppLocalizations {
   String get petAddChip => 'Afegeix el número de xip';
 
   @override
+  String get teamTitle => 'Equip';
+
+  @override
+  String get teamIntro => 'Fes el seguiment dels registres del teu personal. Els recordatoris mostren el seu nom perquè sàpigues de qui és cada registre.';
+
+  @override
+  String get teamProfileTileSubtitle => 'El teu personal i els seus registres';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Tot el que inclou Particular';
+
+  @override
+  String get businessBenefitStaffRecords => 'Cada membre del personal té els seus registres i recordatoris';
+
+  @override
+  String get planBenefitPetsSolo => 'Mascotes amb els seus documents, microxip i veterinari';
+
+  @override
   String get yoursTag => 'Teu';
 
   @override

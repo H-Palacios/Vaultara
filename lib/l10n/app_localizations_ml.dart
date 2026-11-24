@@ -8971,6 +8971,24 @@ class AppLocalizationsMl extends AppLocalizations {
   String get petAddChip => 'ചിപ്പ് നമ്പർ ചേർക്കുക';
 
   @override
+  String get teamTitle => 'ടീം';
+
+  @override
+  String get teamIntro => 'നിങ്ങളുടെ ജീവനക്കാരുടെ രേഖകൾ ശ്രദ്ധിക്കുക. ഓർമ്മപ്പെടുത്തലുകളിൽ അവരുടെ പേര് കാണിക്കുന്നതിനാൽ രേഖ ആരുടേതാണെന്ന് അറിയാം.';
+
+  @override
+  String get teamProfileTileSubtitle => 'നിങ്ങളുടെ ജീവനക്കാരും അവരുടെ രേഖകളും';
+
+  @override
+  String get planBenefitEverythingIndividual => 'വ്യക്തിഗതത്തിലെ എല്ലാം';
+
+  @override
+  String get businessBenefitStaffRecords => 'ഓരോ ജീവനക്കാരനും സ്വന്തം രേഖകളും ഓർമ്മപ്പെടുത്തലുകളും';
+
+  @override
+  String get planBenefitPetsSolo => 'സ്വന്തം രേഖകളും മൈക്രോചിപ്പും മൃഗഡോക്ടറുമുള്ള വളർത്തുമൃഗങ്ങൾ';
+
+  @override
   String get yoursTag => 'നിങ്ങളുടേത്';
 
   @override

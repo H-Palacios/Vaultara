@@ -8902,6 +8902,24 @@ class AppLocalizationsJa extends AppLocalizations {
   String get petAddChip => 'チップ番号を追加';
 
   @override
+  String get teamTitle => 'チーム';
+
+  @override
+  String get teamIntro => 'スタッフの記録を管理しましょう。リマインダーに名前が表示されるので、誰の記録か分かります。';
+
+  @override
+  String get teamProfileTileSubtitle => 'スタッフとその記録';
+
+  @override
+  String get planBenefitEverythingIndividual => '個人プランのすべての機能';
+
+  @override
+  String get businessBenefitStaffRecords => 'スタッフ一人ひとりに専用の記録とリマインダー';
+
+  @override
+  String get planBenefitPetsSolo => 'ペットごとの書類、マイクロチップ、獣医';
+
+  @override
   String get yoursTag => '自分用';
 
   @override

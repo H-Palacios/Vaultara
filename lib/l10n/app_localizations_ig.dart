@@ -8920,6 +8920,24 @@ class AppLocalizationsIg extends AppLocalizations {
   String get petAddChip => 'Tinye nọmba chip';
 
   @override
+  String get teamTitle => 'Otu';
+
+  @override
+  String get teamIntro => 'Soro ndekọ ndị ọrụ gị. Ihe ncheta ha na-egosi aha ha ka ị mara onye nwe ndekọ ahụ.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Ndị ọrụ gị na ndekọ ha';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Ihe niile dị na Onye otu';
+
+  @override
+  String get businessBenefitStaffRecords => 'Onye ọrụ ọ bụla nwere ndekọ na ihe ncheta nke ya';
+
+  @override
+  String get planBenefitPetsSolo => 'Anụ ụlọ nwere akwụkwọ, microchip na dọkịta anụmanụ nke ha';
+
+  @override
   String get yoursTag => 'Nke gị';
 
   @override

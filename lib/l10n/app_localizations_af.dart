@@ -8975,6 +8975,24 @@ class AppLocalizationsAf extends AppLocalizations {
   String get petAddChip => 'Voeg skyfienommer by';
 
   @override
+  String get teamTitle => 'Span';
+
+  @override
+  String get teamIntro => 'Hou rekord van jou personeel se dokumente. Hulle herinnerings wys hul naam sodat jy weet wie s\'n dit is.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Jou personeel en hul rekords';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Alles in Individueel';
+
+  @override
+  String get businessBenefitStaffRecords => 'Elke personeellid het hul eie rekords en herinnerings';
+
+  @override
+  String get planBenefitPetsSolo => 'Troeteldiere met hul eie dokumente, mikroskyfie en veearts';
+
+  @override
   String get yoursTag => 'Joune';
 
   @override

@@ -8971,6 +8971,24 @@ class AppLocalizationsHu extends AppLocalizations {
   String get petAddChip => 'Chipszám hozzáadása';
 
   @override
+  String get teamTitle => 'Csapat';
+
+  @override
+  String get teamIntro => 'Kövesd nyomon a munkatársaid bejegyzéseit. Az emlékeztetőkben a nevük látszik, így tudod, kié a bejegyzés.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Munkatársaid és bejegyzéseik';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Minden, ami az Egyéni csomagban van';
+
+  @override
+  String get businessBenefitStaffRecords => 'Minden munkatársnak saját bejegyzései és emlékeztetői vannak';
+
+  @override
+  String get planBenefitPetsSolo => 'Kisállatok saját dokumentumokkal, mikrochippel és állatorvossal';
+
+  @override
   String get yoursTag => 'Saját';
 
   @override

@@ -8970,6 +8970,24 @@ class AppLocalizationsSi extends AppLocalizations {
   String get petAddChip => 'චිප් අංකය එක් කරන්න';
 
   @override
+  String get teamTitle => 'කණ්ඩායම';
+
+  @override
+  String get teamIntro => 'ඔබේ කාර්ය මණ්ඩලයේ වාර්තා ගැන අවධානයෙන් සිටින්න. සිහිකැඳවීම්වල ඔවුන්ගේ නම පෙන්වන බැවින් වාර්තාව කාගේදැයි ඔබ දනී.';
+
+  @override
+  String get teamProfileTileSubtitle => 'ඔබේ කාර්ය මණ්ඩලය සහ ඔවුන්ගේ වාර්තා';
+
+  @override
+  String get planBenefitEverythingIndividual => 'තනි පුද්ගල හි ඇති සියල්ල';
+
+  @override
+  String get businessBenefitStaffRecords => 'සෑම සේවකයෙකුටම තමන්ගේම වාර්තා සහ සිහිකැඳවීම් ඇත';
+
+  @override
+  String get planBenefitPetsSolo => 'තමන්ගේම ලේඛන, මයික්‍රොචිප් සහ පශු වෛද්‍යවරයා සහිත සුරතල් සතුන්';
+
+  @override
   String get yoursTag => 'ඔබේ';
 
   @override

@@ -8971,6 +8971,24 @@ class AppLocalizationsUz extends AppLocalizations {
   String get petAddChip => 'Chip raqamini qo\'shish';
 
   @override
+  String get teamTitle => 'Jamoa';
+
+  @override
+  String get teamIntro => 'Xodimlaringiz yozuvlarini kuzatib boring. Eslatmalarda ismi ko\'rinadi, shuning uchun yozuv kimniki ekanini bilasiz.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Xodimlaringiz va ularning yozuvlari';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Yakka tarifdagi hamma narsa';
+
+  @override
+  String get businessBenefitStaffRecords => 'Har bir xodimning o\'z yozuvlari va eslatmalari bor';
+
+  @override
+  String get planBenefitPetsSolo => 'O\'z hujjatlari, mikrochipi va veterinari bor uy hayvonlari';
+
+  @override
   String get yoursTag => 'Sizniki';
 
   @override

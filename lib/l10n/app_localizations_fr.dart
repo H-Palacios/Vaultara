@@ -8985,6 +8985,24 @@ class AppLocalizationsFr extends AppLocalizations {
   String get petAddChip => 'Ajouter le numéro de puce';
 
   @override
+  String get teamTitle => 'Équipe';
+
+  @override
+  String get teamIntro => 'Suivez les documents de votre personnel. Leurs rappels affichent leur nom pour que vous sachiez à qui appartient chaque document.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Votre personnel et ses documents';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Tout ce qu\'offre Individuel';
+
+  @override
+  String get businessBenefitStaffRecords => 'Chaque membre du personnel a ses propres documents et rappels';
+
+  @override
+  String get planBenefitPetsSolo => 'Animaux avec leurs propres documents, puce et vétérinaire';
+
+  @override
   String get yoursTag => 'À vous';
 
   @override

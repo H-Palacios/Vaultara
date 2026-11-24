@@ -8975,6 +8975,24 @@ class AppLocalizationsSq extends AppLocalizations {
   String get petAddChip => 'Shto numrin e çipit';
 
   @override
+  String get teamTitle => 'Ekipi';
+
+  @override
+  String get teamIntro => 'Ndiq regjistrimet e stafit tënd. Kujtesat tregojnë emrin e tyre që ta dish i kujt është regjistrimi.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Stafi yt dhe regjistrimet e tyre';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Gjithçka që ka Personal';
+
+  @override
+  String get businessBenefitStaffRecords => 'Çdo anëtar i stafit ka regjistrimet dhe kujtesat e veta';
+
+  @override
+  String get planBenefitPetsSolo => 'Kafshë me dokumentet, mikroçipin dhe veterinerin e tyre';
+
+  @override
   String get yoursTag => 'Juaji';
 
   @override

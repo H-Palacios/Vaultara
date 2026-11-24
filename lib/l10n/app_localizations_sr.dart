@@ -9041,6 +9041,24 @@ class AppLocalizationsSr extends AppLocalizations {
   String get petAddChip => 'Додај број чипа';
 
   @override
+  String get teamTitle => 'Тим';
+
+  @override
+  String get teamIntro => 'Пратите записе свог особља. Подсетници приказују њихово име да знате чији је запис.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Ваше особље и њихови записи';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Све што нуди Појединачни';
+
+  @override
+  String get businessBenefitStaffRecords => 'Сваки запослени има своје записе и подсетнике';
+
+  @override
+  String get planBenefitPetsSolo => 'Љубимци са својим документима, микрочипом и ветеринаром';
+
+  @override
   String get yoursTag => 'Ваше';
 
   @override
@@ -19728,6 +19746,24 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get petAddChip => 'Додај број чипа';
 
   @override
+  String get teamTitle => 'Тим';
+
+  @override
+  String get teamIntro => 'Пратите записе свог особља. Подсетници приказују њихово име да знате чији је запис.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Ваше особље и њихови записи';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Све што нуди Појединачни';
+
+  @override
+  String get businessBenefitStaffRecords => 'Сваки запослени има своје записе и подсетнике';
+
+  @override
+  String get planBenefitPetsSolo => 'Љубимци са својим документима, микрочипом и ветеринаром';
+
+  @override
   String get yoursTag => 'Ваше';
 
   @override
@@ -30409,6 +30445,24 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get petAddChip => 'Dodaj broj čipa';
+
+  @override
+  String get teamTitle => 'Tim';
+
+  @override
+  String get teamIntro => 'Pratite zapise svog osoblja. Podsetnici prikazuju njihovo ime da znate čiji je zapis.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Vaše osoblje i njihovi zapisi';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Sve što nudi Pojedinačni';
+
+  @override
+  String get businessBenefitStaffRecords => 'Svaki zaposleni ima svoje zapise i podsetnike';
+
+  @override
+  String get planBenefitPetsSolo => 'Ljubimci sa svojim dokumentima, mikročipom i veterinarom';
 
   @override
   String get yoursTag => 'Vaše';

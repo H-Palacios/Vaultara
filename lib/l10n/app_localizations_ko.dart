@@ -8914,6 +8914,24 @@ class AppLocalizationsKo extends AppLocalizations {
   String get petAddChip => '칩 번호 추가';
 
   @override
+  String get teamTitle => '팀';
+
+  @override
+  String get teamIntro => '직원의 기록을 관리하세요. 알림에 이름이 표시되어 누구의 기록인지 알 수 있습니다.';
+
+  @override
+  String get teamProfileTileSubtitle => '직원과 직원의 기록';
+
+  @override
+  String get planBenefitEverythingIndividual => '개인 요금제의 모든 기능';
+
+  @override
+  String get businessBenefitStaffRecords => '직원마다 자신의 기록과 알림';
+
+  @override
+  String get planBenefitPetsSolo => '반려동물별 서류, 마이크로칩, 수의사';
+
+  @override
   String get yoursTag => '내 항목';
 
   @override

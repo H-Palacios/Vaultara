@@ -9048,6 +9048,24 @@ class AppLocalizationsRo extends AppLocalizations {
   String get petAddChip => 'Adaugă numărul cipului';
 
   @override
+  String get teamTitle => 'Echipă';
+
+  @override
+  String get teamIntro => 'Urmărește înregistrările personalului tău. Mementourile le arată numele, ca să știi a cui este înregistrarea.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Personalul tău și înregistrările lor';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Tot ce include Personal';
+
+  @override
+  String get businessBenefitStaffRecords => 'Fiecare angajat are propriile înregistrări și mementouri';
+
+  @override
+  String get planBenefitPetsSolo => 'Animale cu propriile documente, microcip și medic veterinar';
+
+  @override
   String get yoursTag => 'Al tău';
 
   @override

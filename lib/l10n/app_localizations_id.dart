@@ -8909,6 +8909,24 @@ class AppLocalizationsId extends AppLocalizations {
   String get petAddChip => 'Tambahkan nomor chip';
 
   @override
+  String get teamTitle => 'Tim';
+
+  @override
+  String get teamIntro => 'Pantau catatan staf Anda. Pengingat mereka menampilkan nama agar Anda tahu catatan itu milik siapa.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Staf Anda dan catatan mereka';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Semua fitur Perorangan';
+
+  @override
+  String get businessBenefitStaffRecords => 'Setiap anggota staf punya catatan dan pengingat sendiri';
+
+  @override
+  String get planBenefitPetsSolo => 'Hewan peliharaan dengan dokumen, microchip, dan dokter hewannya sendiri';
+
+  @override
   String get yoursTag => 'Milik Anda';
 
   @override

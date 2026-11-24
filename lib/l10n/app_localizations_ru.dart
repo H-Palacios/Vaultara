@@ -9120,6 +9120,24 @@ class AppLocalizationsRu extends AppLocalizations {
   String get petAddChip => 'Добавить номер чипа';
 
   @override
+  String get teamTitle => 'Команда';
+
+  @override
+  String get teamIntro => 'Следите за записями сотрудников. В напоминаниях указано их имя, чтобы вы знали, чья это запись.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Ваши сотрудники и их записи';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Всё, что есть в Индивидуальном';
+
+  @override
+  String get businessBenefitStaffRecords => 'У каждого сотрудника свои записи и напоминания';
+
+  @override
+  String get planBenefitPetsSolo => 'Питомцы со своими документами, микрочипом и ветеринаром';
+
+  @override
   String get yoursTag => 'Ваше';
 
   @override

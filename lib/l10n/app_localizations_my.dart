@@ -8912,6 +8912,24 @@ class AppLocalizationsMy extends AppLocalizations {
   String get petAddChip => 'ချစ်နံပါတ် ထည့်ရန်';
 
   @override
+  String get teamTitle => 'အဖွဲ့';
+
+  @override
+  String get teamIntro => 'သင့်ဝန်ထမ်းများ၏ မှတ်တမ်းများကို ခြေရာခံပါ။ သတိပေးချက်များတွင် အမည်ပြသဖြင့် မည်သူ့မှတ်တမ်းဖြစ်သည်ကို သိနိုင်သည်။';
+
+  @override
+  String get teamProfileTileSubtitle => 'သင့်ဝန်ထမ်းများနှင့် ၎င်းတို့၏ မှတ်တမ်းများ';
+
+  @override
+  String get planBenefitEverythingIndividual => 'တစ်ဦးချင်း ပါ အရာအားလုံး';
+
+  @override
+  String get businessBenefitStaffRecords => 'ဝန်ထမ်းတစ်ဦးစီတွင် ကိုယ်ပိုင် မှတ်တမ်းနှင့် သတိပေးချက်များ ရှိသည်';
+
+  @override
+  String get planBenefitPetsSolo => 'ကိုယ်ပိုင် စာရွက်စာတမ်း၊ မိုက်ခရိုချစ်နှင့် တိရစ္ဆာန်ဆရာဝန်ပါသော အိမ်မွေးတိရစ္ဆာန်များ';
+
+  @override
   String get yoursTag => 'သင့်ဟာ';
 
   @override

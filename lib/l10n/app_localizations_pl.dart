@@ -9125,6 +9125,24 @@ class AppLocalizationsPl extends AppLocalizations {
   String get petAddChip => 'Dodaj numer czipa';
 
   @override
+  String get teamTitle => 'Zespół';
+
+  @override
+  String get teamIntro => 'Śledź wpisy swoich pracowników. Przypomnienia pokazują ich imię, więc wiesz, czyj to wpis.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Twoi pracownicy i ich wpisy';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Wszystko, co oferuje Indywidualny';
+
+  @override
+  String get businessBenefitStaffRecords => 'Każdy pracownik ma własne wpisy i przypomnienia';
+
+  @override
+  String get planBenefitPetsSolo => 'Zwierzęta z własnymi dokumentami, mikroczipem i weterynarzem';
+
+  @override
   String get yoursTag => 'Twoje';
 
   @override

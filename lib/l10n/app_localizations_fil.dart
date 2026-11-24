@@ -8965,6 +8965,24 @@ class AppLocalizationsFil extends AppLocalizations {
   String get petAddChip => 'Idagdag ang numero ng chip';
 
   @override
+  String get teamTitle => 'Team';
+
+  @override
+  String get teamIntro => 'Subaybayan ang mga record ng iyong mga tauhan. Makikita ang pangalan nila sa mga paalala para alam mo kung kanino ang record.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Ang iyong mga tauhan at ang kanilang mga record';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Lahat ng nasa Indibidwal';
+
+  @override
+  String get businessBenefitStaffRecords => 'May sariling record at paalala ang bawat tauhan';
+
+  @override
+  String get planBenefitPetsSolo => 'Mga alaga na may sariling dokumento, microchip at beterinaryo';
+
+  @override
   String get yoursTag => 'Iyo';
 
   @override

@@ -15577,6 +15577,42 @@ abstract class AppLocalizations {
   /// **'Add chip number'**
   String get petAddChip;
 
+  /// Team naming and plan cards: teamTitle
+  ///
+  /// In en, this message translates to:
+  /// **'Team'**
+  String get teamTitle;
+
+  /// Team naming and plan cards: teamIntro
+  ///
+  /// In en, this message translates to:
+  /// **'Keep track of your staff\'s records. Their reminders show their name so you know whose record it is.'**
+  String get teamIntro;
+
+  /// Team naming and plan cards: teamProfileTileSubtitle
+  ///
+  /// In en, this message translates to:
+  /// **'Your staff and their records'**
+  String get teamProfileTileSubtitle;
+
+  /// Team naming and plan cards: planBenefitEverythingIndividual
+  ///
+  /// In en, this message translates to:
+  /// **'Everything in Individual'**
+  String get planBenefitEverythingIndividual;
+
+  /// Team naming and plan cards: businessBenefitStaffRecords
+  ///
+  /// In en, this message translates to:
+  /// **'Each staff member has their own records and reminders'**
+  String get businessBenefitStaffRecords;
+
+  /// Team naming and plan cards: planBenefitPetsSolo
+  ///
+  /// In en, this message translates to:
+  /// **'Pets with their own documents, microchip and vet'**
+  String get planBenefitPetsSolo;
+
   /// Small label on a category or group the user made.
   ///
   /// In en, this message translates to:

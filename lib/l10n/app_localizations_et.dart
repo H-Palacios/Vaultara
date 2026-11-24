@@ -8975,6 +8975,24 @@ class AppLocalizationsEt extends AppLocalizations {
   String get petAddChip => 'Lisa kiibi number';
 
   @override
+  String get teamTitle => 'Meeskond';
+
+  @override
+  String get teamIntro => 'Jälgi oma töötajate kirjeid. Meeldetuletused näitavad nende nime, et teaksid, kelle kirje see on.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Sinu töötajad ja nende kirjed';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Kõik, mis on Üksikisiku paketis';
+
+  @override
+  String get businessBenefitStaffRecords => 'Igal töötajal on oma kirjed ja meeldetuletused';
+
+  @override
+  String get planBenefitPetsSolo => 'Lemmikloomad oma dokumentide, mikrokiibi ja loomaarstiga';
+
+  @override
   String get yoursTag => 'Sinu';
 
   @override

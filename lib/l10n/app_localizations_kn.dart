@@ -8971,6 +8971,24 @@ class AppLocalizationsKn extends AppLocalizations {
   String get petAddChip => 'ಚಿಪ್ ಸಂಖ್ಯೆ ಸೇರಿಸಿ';
 
   @override
+  String get teamTitle => 'ತಂಡ';
+
+  @override
+  String get teamIntro => 'ನಿಮ್ಮ ಸಿಬ್ಬಂದಿಯ ದಾಖಲೆಗಳ ಮೇಲೆ ನಿಗಾ ಇಡಿ. ಅವರ ಜ್ಞಾಪನೆಗಳಲ್ಲಿ ಹೆಸರು ಕಾಣುತ್ತದೆ, ಹಾಗಾಗಿ ದಾಖಲೆ ಯಾರದು ಎಂದು ತಿಳಿಯುತ್ತದೆ.';
+
+  @override
+  String get teamProfileTileSubtitle => 'ನಿಮ್ಮ ಸಿಬ್ಬಂದಿ ಮತ್ತು ಅವರ ದಾಖಲೆಗಳು';
+
+  @override
+  String get planBenefitEverythingIndividual => 'ವೈಯಕ್ತಿಕ ಯೋಜನೆಯಲ್ಲಿರುವ ಎಲ್ಲವೂ';
+
+  @override
+  String get businessBenefitStaffRecords => 'ಪ್ರತಿ ಸಿಬ್ಬಂದಿಗೂ ಅವರದೇ ದಾಖಲೆಗಳು ಮತ್ತು ಜ್ಞಾಪನೆಗಳು';
+
+  @override
+  String get planBenefitPetsSolo => 'ತಮ್ಮದೇ ದಾಖಲೆಗಳು, ಮೈಕ್ರೋಚಿಪ್ ಮತ್ತು ಪಶುವೈದ್ಯರಿರುವ ಸಾಕುಪ್ರಾಣಿಗಳು';
+
+  @override
   String get yoursTag => 'ನಿಮ್ಮದು';
 
   @override

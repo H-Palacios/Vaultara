@@ -9037,6 +9037,24 @@ class AppLocalizationsLv extends AppLocalizations {
   String get petAddChip => 'Pievienot čipa numuru';
 
   @override
+  String get teamTitle => 'Komanda';
+
+  @override
+  String get teamIntro => 'Sekojiet savu darbinieku ierakstiem. Atgādinājumos redzams viņu vārds, lai jūs zinātu, kura ieraksts tas ir.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Jūsu darbinieki un viņu ieraksti';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Viss, kas ir Individuālajā';
+
+  @override
+  String get businessBenefitStaffRecords => 'Katram darbiniekam ir savi ieraksti un atgādinājumi';
+
+  @override
+  String get planBenefitPetsSolo => 'Mājdzīvnieki ar saviem dokumentiem, mikročipu un veterinārārstu';
+
+  @override
   String get yoursTag => 'Jūsu';
 
   @override

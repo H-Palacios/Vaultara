@@ -8971,6 +8971,24 @@ class AppLocalizationsKy extends AppLocalizations {
   String get petAddChip => 'Чиптин номерин кошуу';
 
   @override
+  String get teamTitle => 'Команда';
+
+  @override
+  String get teamIntro => 'Кызматкерлериңиздин жазууларын көзөмөлдөңүз. Эскертмелерде алардын аты көрүнөт, жазуу кимдики экенин билесиз.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Кызматкерлериңиз жана алардын жазуулары';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Жеке тарифиндеги баары';
+
+  @override
+  String get businessBenefitStaffRecords => 'Ар бир кызматкердин өз жазуулары жана эскертмелери бар';
+
+  @override
+  String get planBenefitPetsSolo => 'Өз документтери, микрочиби жана ветеринары бар үй жаныбарлары';
+
+  @override
   String get yoursTag => 'Сиздики';
 
   @override

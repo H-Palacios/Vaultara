@@ -8914,6 +8914,24 @@ class AppLocalizationsMs extends AppLocalizations {
   String get petAddChip => 'Tambah nombor cip';
 
   @override
+  String get teamTitle => 'Pasukan';
+
+  @override
+  String get teamIntro => 'Jejaki rekod kakitangan anda. Peringatan mereka menunjukkan nama supaya anda tahu rekod itu milik siapa.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Kakitangan anda dan rekod mereka';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Semua yang ada dalam Individu';
+
+  @override
+  String get businessBenefitStaffRecords => 'Setiap kakitangan mempunyai rekod dan peringatan sendiri';
+
+  @override
+  String get planBenefitPetsSolo => 'Haiwan peliharaan dengan dokumen, mikrocip dan doktor haiwan sendiri';
+
+  @override
   String get yoursTag => 'Milik anda';
 
   @override

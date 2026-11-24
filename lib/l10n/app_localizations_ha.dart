@@ -8971,6 +8971,24 @@ class AppLocalizationsHa extends AppLocalizations {
   String get petAddChip => 'Ƙara lambar chip';
 
   @override
+  String get teamTitle => 'Ƙungiya';
+
+  @override
+  String get teamIntro => 'Bi diddigin bayanan ma\'aikatanka. Tunatarwarsu suna nuna sunansu don ka san na wane ne.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Ma\'aikatanka da bayanansu';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Duk abin da ke cikin Na mutum ɗaya';
+
+  @override
+  String get businessBenefitStaffRecords => 'Kowane ma\'aikaci yana da nasa bayanai da tunatarwa';
+
+  @override
+  String get planBenefitPetsSolo => 'Dabbobin gida da takardunsu, microchip da likitan dabbobi';
+
+  @override
   String get yoursTag => 'Naka';
 
   @override

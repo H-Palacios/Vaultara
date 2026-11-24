@@ -8914,6 +8914,24 @@ class AppLocalizationsLo extends AppLocalizations {
   String get petAddChip => 'ເພີ່ມເລກຊິບ';
 
   @override
+  String get teamTitle => 'ທີມ';
+
+  @override
+  String get teamIntro => 'ຕິດຕາມບັນທຶກຂອງພະນັກງານ. ການແຈ້ງເຕືອນສະແດງຊື່ຂອງພວກເຂົາ ເພື່ອໃຫ້ທ່ານຮູ້ວ່າບັນທຶກເປັນຂອງໃຜ.';
+
+  @override
+  String get teamProfileTileSubtitle => 'ພະນັກງານຂອງທ່ານ ແລະ ບັນທຶກຂອງພວກເຂົາ';
+
+  @override
+  String get planBenefitEverythingIndividual => 'ທຸກຢ່າງໃນ ບຸກຄົນ';
+
+  @override
+  String get businessBenefitStaffRecords => 'ພະນັກງານແຕ່ລະຄົນມີບັນທຶກ ແລະ ການແຈ້ງເຕືອນຂອງຕົນເອງ';
+
+  @override
+  String get planBenefitPetsSolo => 'ສັດລ້ຽງທີ່ມີເອກະສານ, ໄມໂຄຣຊິບ ແລະ ສັດຕະວະແພດຂອງຕົນເອງ';
+
+  @override
   String get yoursTag => 'ຂອງທ່ານ';
 
   @override

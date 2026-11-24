@@ -9112,6 +9112,24 @@ class AppLocalizationsLt extends AppLocalizations {
   String get petAddChip => 'Pridėti mikroschemos numerį';
 
   @override
+  String get teamTitle => 'Komanda';
+
+  @override
+  String get teamIntro => 'Sekite savo darbuotojų įrašus. Priminimuose rodomas jų vardas, kad žinotumėte, kieno tai įrašas.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Jūsų darbuotojai ir jų įrašai';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Viskas, kas yra Asmeninis';
+
+  @override
+  String get businessBenefitStaffRecords => 'Kiekvienas darbuotojas turi savo įrašus ir priminimus';
+
+  @override
+  String get planBenefitPetsSolo => 'Augintiniai su savo dokumentais, mikroschema ir veterinaru';
+
+  @override
   String get yoursTag => 'Jūsų';
 
   @override

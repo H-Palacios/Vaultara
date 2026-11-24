@@ -8971,6 +8971,24 @@ class AppLocalizationsNe extends AppLocalizations {
   String get petAddChip => 'चिप नम्बर थप्नुहोस्';
 
   @override
+  String get teamTitle => 'टिम';
+
+  @override
+  String get teamIntro => 'आफ्ना कर्मचारीका रेकर्डमा नजर राख्नुहोस्। रिमाइन्डरमा उनीहरूको नाम देखिन्छ, त्यसैले रेकर्ड कसको हो थाहा हुन्छ।';
+
+  @override
+  String get teamProfileTileSubtitle => 'तपाईंका कर्मचारी र उनीहरूका रेकर्ड';
+
+  @override
+  String get planBenefitEverythingIndividual => 'व्यक्तिगत योजनाका सबै सुविधा';
+
+  @override
+  String get businessBenefitStaffRecords => 'हरेक कर्मचारीका आफ्नै रेकर्ड र रिमाइन्डर हुन्छन्';
+
+  @override
+  String get planBenefitPetsSolo => 'आफ्नै कागजात, माइक्रोचिप र पशु चिकित्सक भएका घरपालुवा';
+
+  @override
   String get yoursTag => 'तपाईंको';
 
   @override

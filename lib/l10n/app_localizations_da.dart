@@ -8975,6 +8975,24 @@ class AppLocalizationsDa extends AppLocalizations {
   String get petAddChip => 'Tilføj chipnummer';
 
   @override
+  String get teamTitle => 'Team';
+
+  @override
+  String get teamIntro => 'Hold styr på dine medarbejderes poster. Deres påmindelser viser navnet, så du ved, hvis post det er.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Dine medarbejdere og deres poster';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Alt i Enkeltperson';
+
+  @override
+  String get businessBenefitStaffRecords => 'Hver medarbejder har sine egne poster og påmindelser';
+
+  @override
+  String get planBenefitPetsSolo => 'Kæledyr med egne dokumenter, mikrochip og dyrlæge';
+
+  @override
   String get yoursTag => 'Dit';
 
   @override

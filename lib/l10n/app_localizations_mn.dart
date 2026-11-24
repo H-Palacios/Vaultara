@@ -8961,6 +8961,24 @@ class AppLocalizationsMn extends AppLocalizations {
   String get petAddChip => 'Чипийн дугаар нэмэх';
 
   @override
+  String get teamTitle => 'Баг';
+
+  @override
+  String get teamIntro => 'Ажилтнуудынхаа бүртгэлийг хянаарай. Сануулгад нэр нь харагдах тул хэний бүртгэл болохыг мэднэ.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Таны ажилтнууд ба тэдний бүртгэл';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Хувь хүн багцын бүх боломж';
+
+  @override
+  String get businessBenefitStaffRecords => 'Ажилтан бүр өөрийн бүртгэл, сануулгатай';
+
+  @override
+  String get planBenefitPetsSolo => 'Өөрийн бичиг баримт, микрочип, малын эмчтэй тэжээвэр амьтад';
+
+  @override
   String get yoursTag => 'Таных';
 
   @override

@@ -8971,6 +8971,24 @@ class AppLocalizationsPa extends AppLocalizations {
   String get petAddChip => 'ਚਿੱਪ ਨੰਬਰ ਜੋੜੋ';
 
   @override
+  String get teamTitle => 'ਟੀਮ';
+
+  @override
+  String get teamIntro => 'ਆਪਣੇ ਸਟਾਫ਼ ਦੇ ਰਿਕਾਰਡਾਂ \'ਤੇ ਨਜ਼ਰ ਰੱਖੋ। ਉਨ੍ਹਾਂ ਦੇ ਰੀਮਾਈਂਡਰਾਂ ਵਿੱਚ ਨਾਮ ਦਿਸਦਾ ਹੈ, ਤਾਂ ਜੋ ਪਤਾ ਰਹੇ ਕਿ ਰਿਕਾਰਡ ਕਿਸਦਾ ਹੈ।';
+
+  @override
+  String get teamProfileTileSubtitle => 'ਤੁਹਾਡਾ ਸਟਾਫ਼ ਅਤੇ ਉਨ੍ਹਾਂ ਦੇ ਰਿਕਾਰਡ';
+
+  @override
+  String get planBenefitEverythingIndividual => 'ਵਿਅਕਤੀਗਤ ਦੀ ਹਰ ਸਹੂਲਤ';
+
+  @override
+  String get businessBenefitStaffRecords => 'ਹਰ ਸਟਾਫ਼ ਮੈਂਬਰ ਦੇ ਆਪਣੇ ਰਿਕਾਰਡ ਅਤੇ ਰੀਮਾਈਂਡਰ';
+
+  @override
+  String get planBenefitPetsSolo => 'ਆਪਣੇ ਦਸਤਾਵੇਜ਼ਾਂ, ਮਾਈਕ੍ਰੋਚਿੱਪ ਅਤੇ ਪਸ਼ੂ ਡਾਕਟਰ ਵਾਲੇ ਪਾਲਤੂ';
+
+  @override
   String get yoursTag => 'ਤੁਹਾਡਾ';
 
   @override

@@ -9024,6 +9024,24 @@ class AppLocalizationsHe extends AppLocalizations {
   String get petAddChip => 'הוספת מספר שבב';
 
   @override
+  String get teamTitle => 'צוות';
+
+  @override
+  String get teamIntro => 'עקבו אחר הרשומות של העובדים שלכם. בתזכורות מופיע שמם כדי שתדעו של מי הרשומה.';
+
+  @override
+  String get teamProfileTileSubtitle => 'העובדים שלכם והרשומות שלהם';
+
+  @override
+  String get planBenefitEverythingIndividual => 'כל מה שיש באישי';
+
+  @override
+  String get businessBenefitStaffRecords => 'לכל עובד יש רשומות ותזכורות משלו';
+
+  @override
+  String get planBenefitPetsSolo => 'חיות מחמד עם מסמכים, שבב ווטרינר משלהן';
+
+  @override
   String get yoursTag => 'שלך';
 
   @override

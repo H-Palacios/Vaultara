@@ -8912,6 +8912,24 @@ class AppLocalizationsKm extends AppLocalizations {
   String get petAddChip => 'បន្ថែមលេខឈីប';
 
   @override
+  String get teamTitle => 'ក្រុម';
+
+  @override
+  String get teamIntro => 'តាមដានកំណត់ត្រារបស់បុគ្គលិករបស់អ្នក។ ការរំលឹករបស់ពួកគេបង្ហាញឈ្មោះ ដើម្បីឲ្យអ្នកដឹងថាកំណត់ត្រានោះជារបស់អ្នកណា។';
+
+  @override
+  String get teamProfileTileSubtitle => 'បុគ្គលិករបស់អ្នក និងកំណត់ត្រារបស់ពួកគេ';
+
+  @override
+  String get planBenefitEverythingIndividual => 'អ្វីៗទាំងអស់ក្នុង បុគ្គល';
+
+  @override
+  String get businessBenefitStaffRecords => 'បុគ្គលិកម្នាក់ៗមានកំណត់ត្រា និងការរំលឹកផ្ទាល់ខ្លួន';
+
+  @override
+  String get planBenefitPetsSolo => 'សត្វចិញ្ចឹមដែលមានឯកសារ មីក្រូឈីប និងពេទ្យសត្វផ្ទាល់ខ្លួន';
+
+  @override
   String get yoursTag => 'របស់អ្នក';
 
   @override

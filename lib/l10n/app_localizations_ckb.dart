@@ -8971,6 +8971,24 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get petAddChip => 'ژمارەی چیپ زیاد بکە';
 
   @override
+  String get teamTitle => 'تیم';
+
+  @override
+  String get teamIntro => 'تۆمارەکانی کارمەندەکانت بەدوادا بچۆ. بیرخستنەوەکانیان ناویان پیشان دەدەن بۆ ئەوەی بزانیت تۆمارەکە هی کێیە.';
+
+  @override
+  String get teamProfileTileSubtitle => 'کارمەندەکانت و تۆمارەکانیان';
+
+  @override
+  String get planBenefitEverythingIndividual => 'هەموو تایبەتمەندییەکانی تاکەکەسی';
+
+  @override
+  String get businessBenefitStaffRecords => 'هەر کارمەندێک تۆمار و بیرخستنەوەی خۆی هەیە';
+
+  @override
+  String get planBenefitPetsSolo => 'ئاژەڵی ماڵی بە بەڵگەنامە، مایکرۆچیپ و پزیشکی خۆیانەوە';
+
+  @override
   String get yoursTag => 'هی تۆ';
 
   @override

@@ -8996,6 +8996,24 @@ class AppLocalizationsEn extends AppLocalizations {
   String get petAddChip => 'Add chip number';
 
   @override
+  String get teamTitle => 'Team';
+
+  @override
+  String get teamIntro => 'Keep track of your staff\'s records. Their reminders show their name so you know whose record it is.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Your staff and their records';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Everything in Individual';
+
+  @override
+  String get businessBenefitStaffRecords => 'Each staff member has their own records and reminders';
+
+  @override
+  String get planBenefitPetsSolo => 'Pets with their own documents, microchip and vet';
+
+  @override
   String get yoursTag => 'Yours';
 
   @override

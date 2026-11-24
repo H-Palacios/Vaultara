@@ -8975,6 +8975,24 @@ class AppLocalizationsEl extends AppLocalizations {
   String get petAddChip => 'Προσθήκη αριθμού τσιπ';
 
   @override
+  String get teamTitle => 'Ομάδα';
+
+  @override
+  String get teamIntro => 'Παρακολουθήστε τις εγγραφές του προσωπικού σας. Οι υπενθυμίσεις δείχνουν το όνομά τους, ώστε να ξέρετε σε ποιον ανήκει η εγγραφή.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Το προσωπικό σας και οι εγγραφές του';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Όλα όσα περιλαμβάνει το Ατομικό';
+
+  @override
+  String get businessBenefitStaffRecords => 'Κάθε μέλος του προσωπικού έχει τις δικές του εγγραφές και υπενθυμίσεις';
+
+  @override
+  String get planBenefitPetsSolo => 'Κατοικίδια με δικά τους έγγραφα, μικροτσίπ και κτηνίατρο';
+
+  @override
   String get yoursTag => 'Δικό σας';
 
   @override

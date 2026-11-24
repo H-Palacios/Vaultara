@@ -8970,6 +8970,24 @@ class AppLocalizationsIs extends AppLocalizations {
   String get petAddChip => 'Bæta við örmerkisnúmeri';
 
   @override
+  String get teamTitle => 'Teymi';
+
+  @override
+  String get teamIntro => 'Haltu utan um færslur starfsfólksins. Áminningar sýna nafn þess svo þú vitir hver á færsluna.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Starfsfólkið þitt og færslur þess';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Allt sem fylgir Einstaklingur';
+
+  @override
+  String get businessBenefitStaffRecords => 'Hver starfsmaður hefur eigin færslur og áminningar';
+
+  @override
+  String get planBenefitPetsSolo => 'Gæludýr með eigin skjöl, örmerki og dýralækni';
+
+  @override
   String get yoursTag => 'Þitt';
 
   @override

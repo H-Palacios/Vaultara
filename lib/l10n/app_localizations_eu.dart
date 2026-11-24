@@ -8975,6 +8975,24 @@ class AppLocalizationsEu extends AppLocalizations {
   String get petAddChip => 'Gehitu txiparen zenbakia';
 
   @override
+  String get teamTitle => 'Taldea';
+
+  @override
+  String get teamIntro => 'Egin zure langileen erregistroen jarraipena. Gogorarazpenek haien izena erakusten dute, norena den jakin dezazun.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Zure langileak eta haien erregistroak';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Banakakoa planeko guztia';
+
+  @override
+  String get businessBenefitStaffRecords => 'Langile bakoitzak bere erregistroak eta gogorarazpenak ditu';
+
+  @override
+  String get planBenefitPetsSolo => 'Maskotak, beren dokumentu, mikrotxip eta albaitariarekin';
+
+  @override
   String get yoursTag => 'Zurea';
 
   @override

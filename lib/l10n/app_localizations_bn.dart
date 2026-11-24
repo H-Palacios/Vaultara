@@ -8971,6 +8971,24 @@ class AppLocalizationsBn extends AppLocalizations {
   String get petAddChip => 'চিপ নম্বর যোগ করুন';
 
   @override
+  String get teamTitle => 'টিম';
+
+  @override
+  String get teamIntro => 'আপনার কর্মীদের রেকর্ডের হিসাব রাখুন। তাদের রিমাইন্ডারে নাম দেখায়, তাই বুঝবেন রেকর্ডটি কার।';
+
+  @override
+  String get teamProfileTileSubtitle => 'আপনার কর্মী ও তাদের রেকর্ড';
+
+  @override
+  String get planBenefitEverythingIndividual => 'ব্যক্তিগত প্ল্যানের সবকিছু';
+
+  @override
+  String get businessBenefitStaffRecords => 'প্রত্যেক কর্মীর নিজস্ব রেকর্ড ও রিমাইন্ডার থাকে';
+
+  @override
+  String get planBenefitPetsSolo => 'নিজস্ব নথি, মাইক্রোচিপ ও পশু চিকিৎসকসহ পোষা প্রাণী';
+
+  @override
   String get yoursTag => 'আপনার';
 
   @override

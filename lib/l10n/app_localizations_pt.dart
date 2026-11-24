@@ -8976,6 +8976,24 @@ class AppLocalizationsPt extends AppLocalizations {
   String get petAddChip => 'Adicionar número do chip';
 
   @override
+  String get teamTitle => 'Equipe';
+
+  @override
+  String get teamIntro => 'Acompanhe os registros da sua equipe. Os lembretes mostram o nome de cada pessoa para você saber de quem é o registro.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Sua equipe e os registros dela';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Tudo o que o Pessoal inclui';
+
+  @override
+  String get businessBenefitStaffRecords => 'Cada membro da equipe tem seus próprios registros e lembretes';
+
+  @override
+  String get planBenefitPetsSolo => 'Pets com seus próprios documentos, microchip e veterinário';
+
+  @override
   String get yoursTag => 'Seu';
 
   @override

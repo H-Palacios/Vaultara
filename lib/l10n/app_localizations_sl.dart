@@ -9111,6 +9111,24 @@ class AppLocalizationsSl extends AppLocalizations {
   String get petAddChip => 'Dodaj številko čipa';
 
   @override
+  String get teamTitle => 'Ekipa';
+
+  @override
+  String get teamIntro => 'Spremljajte zapise svojih zaposlenih. Opomniki prikazujejo njihovo ime, da veste, čigav je zapis.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Vaši zaposleni in njihovi zapisi';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Vse iz paketa Posameznik';
+
+  @override
+  String get businessBenefitStaffRecords => 'Vsak zaposleni ima svoje zapise in opomnike';
+
+  @override
+  String get planBenefitPetsSolo => 'Ljubljenčki s svojimi dokumenti, mikročipom in veterinarjem';
+
+  @override
   String get yoursTag => 'Vaše';
 
   @override

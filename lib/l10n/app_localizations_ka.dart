@@ -8971,6 +8971,24 @@ class AppLocalizationsKa extends AppLocalizations {
   String get petAddChip => 'ჩიპის ნომრის დამატება';
 
   @override
+  String get teamTitle => 'გუნდი';
+
+  @override
+  String get teamIntro => 'თვალი ადევნეთ თანამშრომლების ჩანაწერებს. შეხსენებებში მათი სახელი ჩანს, რომ იცოდეთ, ვისია ჩანაწერი.';
+
+  @override
+  String get teamProfileTileSubtitle => 'თქვენი თანამშრომლები და მათი ჩანაწერები';
+
+  @override
+  String get planBenefitEverythingIndividual => 'ყველაფერი, რაც ინდივიდუალურშია';
+
+  @override
+  String get businessBenefitStaffRecords => 'ყოველ თანამშრომელს აქვს საკუთარი ჩანაწერები და შეხსენებები';
+
+  @override
+  String get planBenefitPetsSolo => 'შინაური ცხოველები საკუთარი დოკუმენტებით, მიკროჩიპით და ვეტერინარით';
+
+  @override
   String get yoursTag => 'თქვენი';
 
   @override

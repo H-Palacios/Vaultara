@@ -8975,6 +8975,24 @@ class AppLocalizationsGl extends AppLocalizations {
   String get petAddChip => 'Engadir número de chip';
 
   @override
+  String get teamTitle => 'Equipo';
+
+  @override
+  String get teamIntro => 'Leva o control dos rexistros do teu persoal. Os recordatorios amosan o seu nome para que saibas de quen é cada rexistro.';
+
+  @override
+  String get teamProfileTileSubtitle => 'O teu persoal e os seus rexistros';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Todo o de Particular';
+
+  @override
+  String get businessBenefitStaffRecords => 'Cada persoa do persoal ten os seus propios rexistros e recordatorios';
+
+  @override
+  String get planBenefitPetsSolo => 'Mascotas cos seus propios documentos, microchip e veterinario';
+
+  @override
   String get yoursTag => 'Teu';
 
   @override

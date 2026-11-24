@@ -8971,6 +8971,24 @@ class AppLocalizationsHy extends AppLocalizations {
   String get petAddChip => 'Ավելացնել չիպի համարը';
 
   @override
+  String get teamTitle => 'Թիմ';
+
+  @override
+  String get teamIntro => 'Հետևեք ձեր աշխատակիցների գրառումներին։ Հիշեցումները ցույց են տալիս նրանց անունը, որ իմանաք՝ ում գրառումն է։';
+
+  @override
+  String get teamProfileTileSubtitle => 'Ձեր աշխատակիցները և նրանց գրառումները';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Ամբողջը, ինչ կա Անհատականում';
+
+  @override
+  String get businessBenefitStaffRecords => 'Յուրաքանչյուր աշխատակից ունի իր գրառումներն ու հիշեցումները';
+
+  @override
+  String get planBenefitPetsSolo => 'Ընտանի կենդանիներ՝ իրենց փաստաթղթերով, միկրոչիպով և անասնաբույժով';
+
+  @override
   String get yoursTag => 'Ձերը';
 
   @override

@@ -9155,6 +9155,24 @@ class AppLocalizationsGa extends AppLocalizations {
   String get petAddChip => 'Cuir uimhir na slise leis';
 
   @override
+  String get teamTitle => 'Foireann';
+
+  @override
+  String get teamIntro => 'Coinnigh súil ar thaifid do chuid foirne. Taispeánann a meabhrúcháin a n-ainm ionas go mbeidh a fhios agat cé leis an taifead.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Do chuid foirne agus a dtaifid';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Gach rud atá in Aonair';
+
+  @override
+  String get businessBenefitStaffRecords => 'Tá a dtaifid agus a meabhrúcháin féin ag gach ball foirne';
+
+  @override
+  String get planBenefitPetsSolo => 'Peataí lena gcáipéisí, micrishlis agus tréidlia féin';
+
+  @override
   String get yoursTag => 'Leatsa';
 
   @override

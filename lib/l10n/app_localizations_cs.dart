@@ -9106,6 +9106,24 @@ class AppLocalizationsCs extends AppLocalizations {
   String get petAddChip => 'Přidat číslo čipu';
 
   @override
+  String get teamTitle => 'Tým';
+
+  @override
+  String get teamIntro => 'Sledujte záznamy svých zaměstnanců. Připomínky ukazují jejich jméno, takže víte, čí záznam to je.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Vaši zaměstnanci a jejich záznamy';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Vše z tarifu Jednotlivec';
+
+  @override
+  String get businessBenefitStaffRecords => 'Každý zaměstnanec má vlastní záznamy a připomínky';
+
+  @override
+  String get planBenefitPetsSolo => 'Mazlíčci s vlastními doklady, mikročipem a veterinářem';
+
+  @override
   String get yoursTag => 'Vaše';
 
   @override

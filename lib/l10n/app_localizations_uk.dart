@@ -9118,6 +9118,24 @@ class AppLocalizationsUk extends AppLocalizations {
   String get petAddChip => 'Додати номер чипа';
 
   @override
+  String get teamTitle => 'Команда';
+
+  @override
+  String get teamIntro => 'Стежте за записами працівників. У нагадуваннях видно їхнє ім\'я, щоб ви знали, чий це запис.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Ваші працівники та їхні записи';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Усе, що є в Індивідуальному';
+
+  @override
+  String get businessBenefitStaffRecords => 'Кожен працівник має власні записи й нагадування';
+
+  @override
+  String get planBenefitPetsSolo => 'Улюбленці з власними документами, мікрочипом і ветеринаром';
+
+  @override
   String get yoursTag => 'Ваше';
 
   @override

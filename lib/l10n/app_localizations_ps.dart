@@ -8971,6 +8971,24 @@ class AppLocalizationsPs extends AppLocalizations {
   String get petAddChip => 'د چپ شمېره زیاته کړئ';
 
   @override
+  String get teamTitle => 'ټیم';
+
+  @override
+  String get teamIntro => 'د خپلو کارکوونکو ریکارډونه وڅارئ. یادونې یې نوم ښيي ترڅو پوه شئ چې ریکارډ د چا دی.';
+
+  @override
+  String get teamProfileTileSubtitle => 'ستاسو کارکوونکي او د هغوی ریکارډونه';
+
+  @override
+  String get planBenefitEverythingIndividual => 'په انفرادي کې هر څه';
+
+  @override
+  String get businessBenefitStaffRecords => 'هر کارکوونکی خپل ریکارډونه او یادونې لري';
+
+  @override
+  String get planBenefitPetsSolo => 'څاروي د خپلو اسنادو، مایکروچپ او ډاکټر سره';
+
+  @override
   String get yoursTag => 'ستاسو';
 
   @override

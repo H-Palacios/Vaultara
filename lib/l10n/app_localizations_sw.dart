@@ -8971,6 +8971,24 @@ class AppLocalizationsSw extends AppLocalizations {
   String get petAddChip => 'Ongeza nambari ya chip';
 
   @override
+  String get teamTitle => 'Timu';
+
+  @override
+  String get teamIntro => 'Fuatilia rekodi za wafanyakazi wako. Vikumbusho vyao vinaonyesha jina lao ili ujue rekodi ni ya nani.';
+
+  @override
+  String get teamProfileTileSubtitle => 'Wafanyakazi wako na rekodi zao';
+
+  @override
+  String get planBenefitEverythingIndividual => 'Kila kitu kilicho kwenye Binafsi';
+
+  @override
+  String get businessBenefitStaffRecords => 'Kila mfanyakazi ana rekodi na vikumbusho vyake';
+
+  @override
+  String get planBenefitPetsSolo => 'Wanyama wenye hati zao, microchip na daktari wa mifugo';
+
+  @override
   String get yoursTag => 'Yako';
 
   @override
