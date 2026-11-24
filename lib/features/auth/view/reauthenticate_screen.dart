@@ -4,7 +4,8 @@ import 'package:vaultara/l10n/app_localizations.dart';
 
 import 'package:vaultara/core/theme/app_brand.dart';
 import 'package:vaultara/features/auth/services/reauth_service.dart';
-import 'package:vaultara/features/auth/view/widget/branded_background.dart';
+import 'package:vaultara/features/auth/view/widget/auth_card.dart';
+import 'package:vaultara/features/auth/view/widget/auth_page_layout.dart';
 import 'package:vaultara/features/auth/view/widget/auth_brand_header.dart';
 import 'package:vaultara/features/auth/view/widget/auth_error_banner.dart';
 import 'package:vaultara/features/auth/view/widget/biometric_panel.dart';
@@ -184,67 +185,27 @@ class _ReauthenticateScreenState extends State<ReauthenticateScreen> {
         onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
         child: Scaffold(
           backgroundColor: AppBrand.navy,
-          body: Stack(
-            children: [
-              const Positioned.fill(child: BrandedBackground()),
-              SafeArea(
-                child: Center(
-                  child: SingleChildScrollView(
-                    keyboardDismissBehavior:
-                        ScrollViewKeyboardDismissBehavior.onDrag,
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 24,
-                      vertical: 16,
-                    ),
-                    child: ConstrainedBox(
-                      constraints: const BoxConstraints(maxWidth: 420),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          AuthBrandHeader(
-                            title: loc.appName,
-                            subtitle: loc.confirmIdentityTitle,
-                          ),
-                          const SizedBox(height: 22),
-                          Card(
-                            color: AuthLook.of(context).card,
-                            surfaceTintColor: Colors.transparent,
-                            elevation: 10,
-                            shadowColor: Colors.black.withValues(alpha: 0.5),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(18),
-                              side: BorderSide(
-                                color: AuthLook.of(context).cardEdge,
-                              ),
-                            ),
-                            child: Theme(
-                              data: AuthLook.of(context).theme,
-                              child: Padding(
-                                padding: const EdgeInsets.fromLTRB(
-                                  16,
-                                  16,
-                                  16,
-                                  16,
-                                ),
-                                child: Column(
-                                  children: [
-                                    if (_bannerError != null) ...[
-                                      AuthErrorBanner(message: _bannerError!),
-                                      const SizedBox(height: 14),
-                                    ],
-                                    _buildBody(loc, showBiometrics),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
+          body: AuthPageLayout(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+            aside: AuthBrandHeader(
+              title: loc.appName,
+              subtitle: loc.confirmIdentityTitle,
+            ),
+            body: AuthCard(
+              child: Theme(
+                data: AuthLook.of(context).theme,
+                child: Column(
+                  children: [
+                    if (_bannerError != null) ...[
+                      AuthErrorBanner(message: _bannerError!),
+                      const SizedBox(height: 14),
+                    ],
+                    _buildBody(loc, showBiometrics),
+                  ],
                 ),
               ),
-            ],
+            ),
           ),
         ),
       ),

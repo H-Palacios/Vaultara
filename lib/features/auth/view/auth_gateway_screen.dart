@@ -5,7 +5,8 @@ import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/theme/app_brand.dart';
 import 'package:vaultara/features/auth/view/login_screen.dart';
 import 'package:vaultara/features/auth/view/register_screen.dart';
-import 'package:vaultara/features/auth/view/widget/branded_background.dart';
+import 'package:vaultara/features/auth/view/widget/auth_card.dart';
+import 'package:vaultara/features/auth/view/widget/auth_page_layout.dart';
 import 'package:vaultara/features/auth/view/widget/auth_brand_header.dart';
 import 'package:vaultara/features/auth/view/widget/auth_look.dart';
 
@@ -62,9 +63,23 @@ class _AuthGatewayScreenState extends State<AuthGatewayScreen>
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
-    final look = AuthLook.of(context);
+    final sideBySide = AuthPageLayout.sideBySide(context);
 
-    final screenHeight = MediaQuery.of(context).size.height;
+    final tabs = TabBarView(
+      controller: tabController,
+      children: [
+        const RegisterScreen(),
+        LoginScreen(
+          onAuthenticated: widget.onAuthenticated,
+          onCreateAccount: () => tabController.animateTo(0),
+        ),
+      ],
+    );
+
+    // Upright the forms get a fixed share of the height under the logo.
+    // Held sideways they fill the height beside it, so Continue with Google
+    // and the email field are on screen without scrolling.
+    final screenHeight = MediaQuery.sizeOf(context).height;
     final formHeight = (screenHeight * 0.55).clamp(380.0, 520.0);
 
     return AnnotatedRegion<SystemUiOverlayStyle>(
@@ -73,69 +88,27 @@ class _AuthGatewayScreenState extends State<AuthGatewayScreen>
       ),
       child: Scaffold(
         backgroundColor: AppBrand.navy,
-        body: Stack(
-          children: [
-            const Positioned.fill(child: BrandedBackground()),
-            SafeArea(
-              child: Center(
-                child: SingleChildScrollView(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 24,
-                    vertical: 16,
-                  ),
-                  child: ConstrainedBox(
-                    constraints: const BoxConstraints(maxWidth: 420),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        AuthBrandHeader(
-                          title: loc.appName,
-                          subtitle: loc.authTagline,
-                        ),
-                        const SizedBox(height: 22),
-                        Card(
-                          color: look.card,
-                          surfaceTintColor: Colors.transparent,
-                          elevation: 10,
-                          shadowColor: Colors.black.withValues(alpha: 0.5),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(18),
-                            side: BorderSide(color: look.cardEdge),
-                          ),
-                          child: Padding(
-                            padding: const EdgeInsets.fromLTRB(16, 14, 16, 18),
-                            child: Column(
-                              children: [
-                                _TabSelector(
-                                  controller: tabController,
-                                  loc: loc,
-                                ),
-                                const SizedBox(height: 14),
-                                SizedBox(
-                                  height: formHeight,
-                                  child: TabBarView(
-                                    controller: tabController,
-                                    children: [
-                                      const RegisterScreen(),
-                                      LoginScreen(
-                                        onAuthenticated: widget.onAuthenticated,
-                                        onCreateAccount: () =>
-                                            tabController.animateTo(0),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
+        body: AuthPageLayout(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          bodyFillsHeight: true,
+          aside: AuthBrandHeader(
+            title: loc.appName,
+            subtitle: loc.authTagline,
+          ),
+          body: AuthCard(
+            padding: const EdgeInsets.fromLTRB(16, 14, 16, 18),
+            child: Column(
+              mainAxisSize: sideBySide ? MainAxisSize.max : MainAxisSize.min,
+              children: [
+                _TabSelector(controller: tabController, loc: loc),
+                const SizedBox(height: 14),
+                if (sideBySide)
+                  Expanded(child: tabs)
+                else
+                  SizedBox(height: formHeight, child: tabs),
+              ],
             ),
-          ],
+          ),
         ),
       ),
     );
