@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/layout/two_columns.dart';
 import 'package:vaultara/core/view/widgets/app_date_picker.dart';
 import 'package:vaultara/features/pets/view/widgets/date_button.dart';
@@ -132,50 +133,58 @@ class _PetTravelScreenState extends State<PetTravelScreen> {
                   titleMaxLines: 2,
                 ),
                 const SizedBox(height: 14),
-                CountryButton(
-                  icon: Icons.flight_takeoff_rounded,
-                  label: loc.petTravelPick,
-                  country: _to,
-                  onTap: _pickTo,
+                // Where there is room, such as on a phone held sideways, this sits
+                // in two columns, so far less of the page is below the screen.
+                AdaptiveColumns(
+                  left: [
+                    CountryButton(
+                      icon: Icons.flight_takeoff_rounded,
+                      label: loc.petTravelPick,
+                      country: _to,
+                      onTap: _pickTo,
+                    ),
+                    const SizedBox(height: 10),
+                    CountryButton(
+                      icon: Icons.home_rounded,
+                      label: loc.petTravelHome,
+                      country: from,
+                      onTap: _pickFrom,
+                    ),
+                    const SizedBox(height: 12),
+                    PetTypeField(
+                      typeId: _typeId,
+                      customType: _customType,
+                      customGroup: _customGroup,
+                      customEmoji: widget.pet?.customEmoji,
+                      onChanged: (pick) {
+                        // Emptying the field keeps the rules for the last type.
+                        final id = pick.typeId;
+                        if (id == null) return;
+                        setState(() {
+                          _typeId = id;
+                          _customType = pick.customType;
+                          _customGroup = pick.customGroup;
+                        });
+                      },
+                    ),
+                    const SizedBox(height: 20),
+                  ],
+                  right: [
+                    ..._rules(loc),
+                    if (law != null && from != null) ...[
+                      const SizedBox(height: 20),
+                      TravelSectionTitle(
+                        loc.petLawTitle(Countries.name(from)),
+                        icon: Icons.gavel_rounded,
+                      ),
+                      const SizedBox(height: 8),
+                      PetNote(
+                        icon: Icons.memory_rounded,
+                        text: PetText.law(loc, law),
+                      ),
+                    ],
+                  ],
                 ),
-                const SizedBox(height: 10),
-                CountryButton(
-                  icon: Icons.home_rounded,
-                  label: loc.petTravelHome,
-                  country: from,
-                  onTap: _pickFrom,
-                ),
-                const SizedBox(height: 12),
-                PetTypeField(
-                  typeId: _typeId,
-                  customType: _customType,
-                  customGroup: _customGroup,
-                  customEmoji: widget.pet?.customEmoji,
-                  onChanged: (pick) {
-                    // Emptying the field keeps the rules for the last type.
-                    final id = pick.typeId;
-                    if (id == null) return;
-                    setState(() {
-                      _typeId = id;
-                      _customType = pick.customType;
-                      _customGroup = pick.customGroup;
-                    });
-                  },
-                ),
-                const SizedBox(height: 20),
-                ..._rules(loc),
-                if (law != null && from != null) ...[
-                  const SizedBox(height: 20),
-                  TravelSectionTitle(
-                    loc.petLawTitle(Countries.name(from)),
-                    icon: Icons.gavel_rounded,
-                  ),
-                  const SizedBox(height: 8),
-                  PetNote(
-                    icon: Icons.memory_rounded,
-                    text: PetText.law(loc, law),
-                  ),
-                ],
               ],
             ),
           ),

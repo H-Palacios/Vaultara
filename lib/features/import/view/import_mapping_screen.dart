@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/core/view/widgets/screen_header.dart';
@@ -144,51 +145,59 @@ class _ImportMappingScreenState extends State<ImportMappingScreen> {
                       subtitle: widget.fileName.isEmpty ? null : widget.fileName,
                     ),
                     const SizedBox(height: 12),
-                    Text(
-                      loc.csvImportMapIntro,
-                      style: TextStyle(
-                        fontSize: 13.5,
-                        height: 1.4,
-                        color: scheme.onSurfaceVariant,
-                      ),
-                    ),
-                    const SizedBox(height: 12),
-                    Material(
-                      color: scheme.surfaceContainerHighest.withValues(alpha: 0.6),
-                      borderRadius: BorderRadius.circular(14),
-                      child: SwitchListTile.adaptive(
-                        value: _hasHeader,
-                        onChanged: _setHeader,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(14),
-                        ),
-                        title: Text(
-                          loc.csvImportHasHeader,
-                          style: const TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w700,
+                    // Where there is room, such as on a phone held sideways, this sits
+                    // in two columns, so far less of the page is below the screen.
+                    AdaptiveColumns(
+                      left: [
+                        Text(
+                          loc.csvImportMapIntro,
+                          style: TextStyle(
+                            fontSize: 13.5,
+                            height: 1.4,
+                            color: scheme.onSurfaceVariant,
                           ),
                         ),
-                      ),
-                    ),
-                    const SizedBox(height: 18),
-                    for (final field in ImportField.values) ...[
-                      _FieldRow(
-                        key: ValueKey(
-                          'map-${field.name}-${_mapping[field] ?? _none}-$_hasHeader',
+                        const SizedBox(height: 12),
+                        Material(
+                          color: scheme.surfaceContainerHighest.withValues(alpha: 0.6),
+                          borderRadius: BorderRadius.circular(14),
+                          child: SwitchListTile.adaptive(
+                            value: _hasHeader,
+                            onChanged: _setHeader,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(14),
+                            ),
+                            title: Text(
+                              loc.csvImportHasHeader,
+                              style: const TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ),
                         ),
-                        label: ImportLabels.field(loc, field),
-                        required: ImportLabels.isRequired(field),
-                        value: _mapping[field] ?? _none,
-                        columnCount: widget.table.columnCount,
-                        columnName: (c) => _columnName(loc, c),
-                        sample: _mapping[field] == null
-                            ? null
-                            : _sample(_mapping[field]!),
-                        onChanged: (c) => _assign(field, c),
-                      ),
-                      const SizedBox(height: 12),
-                    ],
+                        const SizedBox(height: 18),
+                      ],
+                      right: [
+                        for (final field in ImportField.values) ...[
+                          _FieldRow(
+                            key: ValueKey(
+                              'map-${field.name}-${_mapping[field] ?? _none}-$_hasHeader',
+                            ),
+                            label: ImportLabels.field(loc, field),
+                            required: ImportLabels.isRequired(field),
+                            value: _mapping[field] ?? _none,
+                            columnCount: widget.table.columnCount,
+                            columnName: (c) => _columnName(loc, c),
+                            sample: _mapping[field] == null
+                                ? null
+                                : _sample(_mapping[field]!),
+                            onChanged: (c) => _assign(field, c),
+                          ),
+                          const SizedBox(height: 12),
+                        ],
+                      ],
+                    ),
                   ],
                 ),
               ),

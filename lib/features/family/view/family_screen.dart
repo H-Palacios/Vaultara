@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial_ids.dart';
 import 'package:vaultara/features/tutorials/view/tutorial_hint.dart';
 import 'package:flutter/material.dart';
@@ -252,158 +253,166 @@ class _FamilyScreenState extends State<FamilyScreen> {
                       ScreenHeader(
                         title: team ? loc.teamTitle : loc.familyTitle,
                       ),
-                      const TutorialHint(id: TutorialIds.family),
-                      const SizedBox(height: 12),
-                      Text(
-                        team ? loc.teamIntro : loc.familyIntro,
-                        style: TextStyle(
-                          fontSize: 13,
-                          height: 1.4,
-                          color: scheme.onSurfaceVariant,
-                        ),
-                      ),
-                      const SizedBox(height: 18),
-                      if (tier == PlanTier.business && !tour)
-                        const UpdatesReviewSection(),
-                      ListenableBuilder(
-                        listenable: NationalityRepository.changes,
-                        builder: (context, _) => PersonRow(
-                          key: _meKey,
-                          person: null,
-                          name: loc.familyMe,
-                          recordCount: counts[null] ?? 0,
-                          nationality: tour
-                              ? TourSamples.sampleCountry
-                              : NationalityRepository.mine.value,
-                          residence: tour
-                              ? null
-                              : NationalityRepository.myResidence.value,
-                          onAction: (action) {
-                            // A tour shows made-up people: nothing changes.
-                            if (tour) return;
-                            if (action == PersonAction.nationality) {
-                              VisaActions.pickNationality(context, null);
-                            } else if (action == PersonAction.residence) {
-                              VisaActions.pickResidence(context, null);
-                            }
-                          },
-                        ),
-                      ),
-                      for (final person in people) ...[
-                        const SizedBox(height: 10),
-                        TutorialTarget(
-                          steps: tour
-                              ? const [TutorialStep.businessRoles]
-                              : const <TutorialStep>[],
-                          child: PersonRow(
-                            person: person,
-                            name: person.name,
-                            recordCount: counts[person.id] ?? 0,
-                            nationality: person.nationality,
-                            residence: person.residence,
-                            showRole: tier == PlanTier.business,
-                            missing: tier == PlanTier.business
-                                ? RequiredDocuments.missing(
-                                    person,
-                                    tour
-                                        ? const <TrackedItem>[]
-                                        : RecordRepository.allActive(),
-                                  )
-                                : const <String>[],
-                            onAction: (action) {
-                              if (tour) return;
-                              switch (action) {
-                                case PersonAction.rename:
-                                  _renamePerson(person, tier);
-                                  break;
-                                case PersonAction.role:
-                                  EditRoleAction.run(context, person, people);
-                                  break;
-                                case PersonAction.nationality:
-                                  VisaActions.pickNationality(
-                                    context,
-                                    person.id,
-                                  );
-                                  break;
-                                case PersonAction.residence:
-                                  VisaActions.pickResidence(context, person.id);
-                                  break;
-                                case PersonAction.remove:
-                                  _removePerson(person);
-                                  break;
-                              }
-                            },
-                          ),
-                        ),
-                      ],
-                      const SizedBox(height: 20),
-                      if (tier != null && tier.hasPeople) ...[
-                        _AddSection(
-                          key: _addKey,
-                          limit: PeopleRepository.limitFor(tier),
-                          canAdd:
-                              people.length < PeopleRepository.limitFor(tier),
-                          onAdd: tour ? () {} : () => _addPerson(tier),
-                        ),
-                        if (tier == PlanTier.business) ...[
-                          const SizedBox(height: 24),
+                      // Where there is room, such as on a phone held sideways, this sits
+                      // in two columns, so far less of the page is below the screen.
+                      AdaptiveColumns(
+                        left: [
+                          const TutorialHint(id: TutorialIds.family),
+                          const SizedBox(height: 12),
                           Text(
-                            loc.tutorialsTitleBusiness,
-                            style: const TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w800,
+                            team ? loc.teamIntro : loc.familyIntro,
+                            style: TextStyle(
+                              fontSize: 13,
+                              height: 1.4,
+                              color: scheme.onSurfaceVariant,
                             ),
                           ),
-                          const SizedBox(height: 10),
-                          TutorialTarget(
-                            steps: const [TutorialStep.businessImport],
-                            child: StaffImportTile(enabled: !tour),
+                          const SizedBox(height: 18),
+                          if (tier == PlanTier.business && !tour)
+                            const UpdatesReviewSection(),
+                          ListenableBuilder(
+                            listenable: NationalityRepository.changes,
+                            builder: (context, _) => PersonRow(
+                              key: _meKey,
+                              person: null,
+                              name: loc.familyMe,
+                              recordCount: counts[null] ?? 0,
+                              nationality: tour
+                                  ? TourSamples.sampleCountry
+                                  : NationalityRepository.mine.value,
+                              residence: tour
+                                  ? null
+                                  : NationalityRepository.myResidence.value,
+                              onAction: (action) {
+                                // A tour shows made-up people: nothing changes.
+                                if (tour) return;
+                                if (action == PersonAction.nationality) {
+                                  VisaActions.pickNationality(context, null);
+                                } else if (action == PersonAction.residence) {
+                                  VisaActions.pickResidence(context, null);
+                                }
+                              },
+                            ),
                           ),
-                          if (!tour) ...[
-                            const BulkRequestTile(),
-                            const CompanyNameTile(),
+                          for (final person in people) ...[
+                            const SizedBox(height: 10),
+                            TutorialTarget(
+                              steps: tour
+                                  ? const [TutorialStep.businessRoles]
+                                  : const <TutorialStep>[],
+                              child: PersonRow(
+                                person: person,
+                                name: person.name,
+                                recordCount: counts[person.id] ?? 0,
+                                nationality: person.nationality,
+                                residence: person.residence,
+                                showRole: tier == PlanTier.business,
+                                missing: tier == PlanTier.business
+                                    ? RequiredDocuments.missing(
+                                        person,
+                                        tour
+                                            ? const <TrackedItem>[]
+                                            : RecordRepository.allActive(),
+                                      )
+                                    : const <String>[],
+                                onAction: (action) {
+                                  if (tour) return;
+                                  switch (action) {
+                                    case PersonAction.rename:
+                                      _renamePerson(person, tier);
+                                      break;
+                                    case PersonAction.role:
+                                      EditRoleAction.run(context, person, people);
+                                      break;
+                                    case PersonAction.nationality:
+                                      VisaActions.pickNationality(
+                                        context,
+                                        person.id,
+                                      );
+                                      break;
+                                    case PersonAction.residence:
+                                      VisaActions.pickResidence(context, person.id);
+                                      break;
+                                    case PersonAction.remove:
+                                      _removePerson(person);
+                                      break;
+                                  }
+                                },
+                              ),
+                            ),
                           ],
-                          const SizedBox(height: 12),
-                          const TutorialTarget(
-                            steps: [TutorialStep.businessReport],
-                            child: ComplianceReportTile(),
-                          ),
-                          const SizedBox(height: 12),
-                          TutorialTarget(
-                            steps: const [TutorialStep.businessClientLink],
-                            child: ClientLinkTile(enabled: !tour),
-                          ),
-                          const SizedBox(height: 12),
-                          TutorialTarget(
-                            steps: const [TutorialStep.businessHistory],
-                            child: ChangeHistoryTile(enabled: !tour),
-                          ),
-                        ] else if (!tour) ...[
-                          const SizedBox(height: 16),
-                          _BusinessNudge(
-                            onSeePlan: () => openPlans(
-                              context,
-                              isPremium: true,
-                              initialTier: PlanTier.business,
+                          const SizedBox(height: 20),
+                        ],
+                        right: [
+                          if (tier != null && tier.hasPeople) ...[
+                            _AddSection(
+                              key: _addKey,
+                              limit: PeopleRepository.limitFor(tier),
+                              canAdd:
+                                  people.length < PeopleRepository.limitFor(tier),
+                              onAdd: tour ? () {} : () => _addPerson(tier),
                             ),
+                            if (tier == PlanTier.business) ...[
+                              const SizedBox(height: 24),
+                              Text(
+                                loc.tutorialsTitleBusiness,
+                                style: const TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                              const SizedBox(height: 10),
+                              TutorialTarget(
+                                steps: const [TutorialStep.businessImport],
+                                child: StaffImportTile(enabled: !tour),
+                              ),
+                              if (!tour) ...[
+                                const BulkRequestTile(),
+                                const CompanyNameTile(),
+                              ],
+                              const SizedBox(height: 12),
+                              const TutorialTarget(
+                                steps: [TutorialStep.businessReport],
+                                child: ComplianceReportTile(),
+                              ),
+                              const SizedBox(height: 12),
+                              TutorialTarget(
+                                steps: const [TutorialStep.businessClientLink],
+                                child: ClientLinkTile(enabled: !tour),
+                              ),
+                              const SizedBox(height: 12),
+                              TutorialTarget(
+                                steps: const [TutorialStep.businessHistory],
+                                child: ChangeHistoryTile(enabled: !tour),
+                              ),
+                            ] else if (!tour) ...[
+                              const SizedBox(height: 16),
+                              _BusinessNudge(
+                                onSeePlan: () => openPlans(
+                                  context,
+                                  isPremium: true,
+                                  initialTier: PlanTier.business,
+                                ),
+                              ),
+                            ],
+                          ] else if (tier != null && !tour)
+                            _UpsellCard(
+                              key: _addKey,
+                              onSeePlan: () => openPlans(
+                                context,
+                                isPremium: tier.isPaid,
+                                initialTier: PlanTier.family,
+                              ),
+                            ),
+                          const SizedBox(height: 24),
+                          TutorialTarget(
+                            steps: const [
+                              TutorialStep.householdInvite,
+                              TutorialStep.householdShared,
+                            ],
+                            child: HouseholdSection(tier: tier, tour: tour),
                           ),
                         ],
-                      ] else if (tier != null && !tour)
-                        _UpsellCard(
-                          key: _addKey,
-                          onSeePlan: () => openPlans(
-                            context,
-                            isPremium: tier.isPaid,
-                            initialTier: PlanTier.family,
-                          ),
-                        ),
-                      const SizedBox(height: 24),
-                      TutorialTarget(
-                        steps: const [
-                          TutorialStep.householdInvite,
-                          TutorialStep.householdShared,
-                        ],
-                        child: HouseholdSection(tier: tier, tour: tour),
                       ),
                     ],
                   );

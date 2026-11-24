@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/core/view/widgets/screen_header.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial.dart';
@@ -76,37 +77,45 @@ class _TourScreenState extends State<TourScreen> {
                       onBack: () => Navigator.of(context).maybePop(),
                     ),
                     const SizedBox(height: 16),
-                    _Hero(
-                      finished: finished,
-                      total: chapters.length,
-                      nextTitle: next == null ? null : chapters[next].title,
-                      chapter: next == null ? null : next + 1,
-                      onContinue: next == null
-                          ? null
-                          : () => _play(chapters[next]),
-                      onSkip: next == null
-                          ? null
-                          : () =>
-                                TutorialProgress.markSkipped(chapters[next].id),
-                      onRestart: next != null
-                          ? null
-                          : () => unawaited(
-                              TutorialProgress.resetTour(
-                                chapters.map((c) => c.id),
-                              ),
-                            ),
+                    // Where there is room, such as on a phone held sideways, this sits
+                    // in two columns, so far less of the page is below the screen.
+                    AdaptiveColumns(
+                      left: [
+                        _Hero(
+                          finished: finished,
+                          total: chapters.length,
+                          nextTitle: next == null ? null : chapters[next].title,
+                          chapter: next == null ? null : next + 1,
+                          onContinue: next == null
+                              ? null
+                              : () => _play(chapters[next]),
+                          onSkip: next == null
+                              ? null
+                              : () =>
+                                    TutorialProgress.markSkipped(chapters[next].id),
+                          onRestart: next != null
+                              ? null
+                              : () => unawaited(
+                                  TutorialProgress.resetTour(
+                                    chapters.map((c) => c.id),
+                                  ),
+                                ),
+                        ),
+                        const SizedBox(height: 20),
+                      ],
+                      right: [
+                        for (var i = 0; i < chapters.length; i++)
+                          _ChapterRow(
+                            number: i + 1,
+                            tutorial: chapters[i],
+                            done: done.contains(chapters[i].id),
+                            skipped: skipped.contains(chapters[i].id),
+                            current: i == next,
+                            onTap: () => _play(chapters[i]),
+                            colour: scheme.primary,
+                          ),
+                      ],
                     ),
-                    const SizedBox(height: 20),
-                    for (var i = 0; i < chapters.length; i++)
-                      _ChapterRow(
-                        number: i + 1,
-                        tutorial: chapters[i],
-                        done: done.contains(chapters[i].id),
-                        skipped: skipped.contains(chapters[i].id),
-                        current: i == next,
-                        onTap: () => _play(chapters[i]),
-                        colour: scheme.primary,
-                      ),
                   ],
                 );
               },

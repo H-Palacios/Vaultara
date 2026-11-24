@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/core/view/widgets/screen_header.dart';
@@ -114,116 +115,124 @@ class _ImportScreenState extends State<ImportScreen> {
               ScreenHeader(title: loc.csvImportTitle),
               const TutorialHint(id: TutorialIds.importScan),
               const SizedBox(height: 16),
-              Container(
-                padding: const EdgeInsets.all(18),
-                decoration: BoxDecoration(
-                  color: scheme.primaryContainer.withValues(alpha: 0.45),
-                  borderRadius: BorderRadius.circular(18),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      width: 48,
-                      height: 48,
-                      decoration: BoxDecoration(
-                        color: scheme.primary.withValues(alpha: 0.14),
-                        borderRadius: BorderRadius.circular(14),
-                      ),
-                      child: Icon(
-                        Icons.table_chart_rounded,
-                        color: scheme.primary,
-                        size: 26,
-                      ),
+              // Where there is room, such as on a phone held sideways, this sits
+              // in two columns, so far less of the page is below the screen.
+              AdaptiveColumns(
+                left: [
+                  Container(
+                    padding: const EdgeInsets.all(18),
+                    decoration: BoxDecoration(
+                      color: scheme.primaryContainer.withValues(alpha: 0.45),
+                      borderRadius: BorderRadius.circular(18),
                     ),
-                    const SizedBox(height: 14),
-                    Text(
-                      loc.csvImportIntroLine1,
-                      style: const TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w700,
-                        height: 1.4,
-                      ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 48,
+                          height: 48,
+                          decoration: BoxDecoration(
+                            color: scheme.primary.withValues(alpha: 0.14),
+                            borderRadius: BorderRadius.circular(14),
+                          ),
+                          child: Icon(
+                            Icons.table_chart_rounded,
+                            color: scheme.primary,
+                            size: 26,
+                          ),
+                        ),
+                        const SizedBox(height: 14),
+                        Text(
+                          loc.csvImportIntroLine1,
+                          style: const TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w700,
+                            height: 1.4,
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          loc.csvImportIntroLine2,
+                          style: TextStyle(
+                            fontSize: 13.5,
+                            height: 1.4,
+                            color: scheme.onSurfaceVariant,
+                          ),
+                        ),
+                      ],
                     ),
-                    const SizedBox(height: 8),
-                    Text(
-                      loc.csvImportIntroLine2,
-                      style: TextStyle(
-                        fontSize: 13.5,
-                        height: 1.4,
-                        color: scheme.onSurfaceVariant,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 20),
-              TutorialTarget(
-                steps: const [TutorialStep.importList],
-                child: SizedBox(
-                  height: 52,
-                  child: FilledButton.icon(
-                    onPressed: _reading ? null : _chooseFile,
-                    icon: _reading
-                        ? SizedBox(
-                            width: 18,
-                            height: 18,
-                            child: CircularProgressIndicator(
-                              strokeWidth: 2.4,
-                              color: scheme.onPrimary,
-                            ),
-                          )
-                        : const Icon(Icons.upload_file_rounded),
-                    label: Text(loc.csvImportChooseFile),
                   ),
-                ),
-              ),
-              const SizedBox(height: 12),
-              const TutorialTarget(
-                steps: [TutorialStep.importBatch],
-                child: BatchScanButton(),
-              ),
-              const SizedBox(height: 12),
-              SizedBox(
-                height: 52,
-                child: Builder(
-                  builder: (buttonContext) => OutlinedButton.icon(
-                    onPressed: _sharing
-                        ? null
-                        : () => _shareTemplate(buttonContext),
-                    icon: const Icon(Icons.download_rounded),
-                    label: Text(loc.csvImportGetTemplate),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 28),
-              Text(
-                loc.csvImportColumnsTitle,
-                style: const TextStyle(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-              const SizedBox(height: 10),
-              Wrap(
-                spacing: 8,
-                runSpacing: 8,
-                children: [
-                  for (final field in ImportField.values)
-                    _FieldChip(
-                      label: ImportLabels.field(loc, field),
-                      required: ImportLabels.isRequired(field),
+                  const SizedBox(height: 20),
+                  TutorialTarget(
+                    steps: const [TutorialStep.importList],
+                    child: SizedBox(
+                      height: 52,
+                      child: FilledButton.icon(
+                        onPressed: _reading ? null : _chooseFile,
+                        icon: _reading
+                            ? SizedBox(
+                                width: 18,
+                                height: 18,
+                                child: CircularProgressIndicator(
+                                  strokeWidth: 2.4,
+                                  color: scheme.onPrimary,
+                                ),
+                              )
+                            : const Icon(Icons.upload_file_rounded),
+                        label: Text(loc.csvImportChooseFile),
+                      ),
                     ),
+                  ),
+                  const SizedBox(height: 12),
+                  const TutorialTarget(
+                    steps: [TutorialStep.importBatch],
+                    child: BatchScanButton(),
+                  ),
+                  const SizedBox(height: 12),
+                  SizedBox(
+                    height: 52,
+                    child: Builder(
+                      builder: (buttonContext) => OutlinedButton.icon(
+                        onPressed: _sharing
+                            ? null
+                            : () => _shareTemplate(buttonContext),
+                        icon: const Icon(Icons.download_rounded),
+                        label: Text(loc.csvImportGetTemplate),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 28),
                 ],
-              ),
-              const SizedBox(height: 12),
-              Text(
-                loc.csvImportColumnsHint,
-                style: TextStyle(
-                  fontSize: 12.5,
-                  height: 1.4,
-                  color: scheme.onSurfaceVariant,
-                ),
+                right: [
+                  Text(
+                    loc.csvImportColumnsTitle,
+                    style: const TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: [
+                      for (final field in ImportField.values)
+                        _FieldChip(
+                          label: ImportLabels.field(loc, field),
+                          required: ImportLabels.isRequired(field),
+                        ),
+                    ],
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    loc.csvImportColumnsHint,
+                    style: TextStyle(
+                      fontSize: 12.5,
+                      height: 1.4,
+                      color: scheme.onSurfaceVariant,
+                    ),
+                  ),
+                ],
               ),
             ],
           ),

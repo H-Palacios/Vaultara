@@ -215,69 +215,77 @@ class _HouseholdRecordsScreenState extends State<HouseholdRecordsScreen> {
                   children: [
                     ScreenHeader(title: loc.householdSharedRecordsTitle),
                     const SizedBox(height: 12),
-                    Text(
-                      loc.householdSharedRecordsIntro,
-                      style: TextStyle(
-                        fontSize: 13,
-                        height: 1.4,
-                        color: scheme.onSurfaceVariant,
-                      ),
-                    ),
-                    if (readOnly) ...[
-                      const SizedBox(height: 12),
-                      _Notice(text: loc.householdReadOnly),
-                    ],
-                    if (people.isNotEmpty && !focused) ...[
-                      const SizedBox(height: 12),
-                      Wrap(
-                        spacing: 8,
-                        runSpacing: 8,
-                        children: [
-                          FilterChip(
-                            showCheckmark: false,
-                            label: Text(loc.filterAll),
-                            selected: person == null,
-                            onSelected: (_) => setState(() => _person = null),
-                          ),
-                          for (final name in people)
-                            FilterChip(
-                              showCheckmark: false,
-                              label: Text(name),
-                              selected: person == name,
-                              onSelected: (_) => setState(
-                                () => _person = person == name ? null : name,
-                              ),
-                            ),
-                        ],
-                      ),
-                    ],
-                    const SizedBox(height: 16),
-                    if (records.isEmpty)
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 32),
-                        child: Text(
-                          loc.householdSharedRecordsEmpty,
-                          textAlign: TextAlign.center,
+                    // Where there is room, such as on a phone held sideways, this sits
+                    // in two columns, so far less of the page is below the screen.
+                    AdaptiveColumns(
+                      left: [
+                        Text(
+                          loc.householdSharedRecordsIntro,
                           style: TextStyle(
-                            fontSize: 14,
+                            fontSize: 13,
+                            height: 1.4,
                             color: scheme.onSurfaceVariant,
                           ),
                         ),
-                      )
-                    else
-                      // Where there is room the cards sit in two columns.
-                      AdaptiveList(
-                        items: [
-                          for (final record in records) _card(record, loc),
+                        if (readOnly) ...[
+                          const SizedBox(height: 12),
+                          _Notice(text: loc.householdReadOnly),
                         ],
-                      ),
-                    if (focused && records.isNotEmpty)
-                      Center(
-                        child: TextButton(
-                          onPressed: () => setState(() => _showAll = true),
-                          child: Text(loc.householdShowAllShared),
-                        ),
-                      ),
+                        if (people.isNotEmpty && !focused) ...[
+                          const SizedBox(height: 12),
+                          Wrap(
+                            spacing: 8,
+                            runSpacing: 8,
+                            children: [
+                              FilterChip(
+                                showCheckmark: false,
+                                label: Text(loc.filterAll),
+                                selected: person == null,
+                                onSelected: (_) => setState(() => _person = null),
+                              ),
+                              for (final name in people)
+                                FilterChip(
+                                  showCheckmark: false,
+                                  label: Text(name),
+                                  selected: person == name,
+                                  onSelected: (_) => setState(
+                                    () => _person = person == name ? null : name,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ],
+                        const SizedBox(height: 16),
+                      ],
+                      right: [
+                        if (records.isEmpty)
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 32),
+                            child: Text(
+                              loc.householdSharedRecordsEmpty,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 14,
+                                color: scheme.onSurfaceVariant,
+                              ),
+                            ),
+                          )
+                        else
+                          // Where there is room the cards sit in two columns.
+                          AdaptiveList(
+                            items: [
+                              for (final record in records) _card(record, loc),
+                            ],
+                          ),
+                        if (focused && records.isNotEmpty)
+                          Center(
+                            child: TextButton(
+                              onPressed: () => setState(() => _showAll = true),
+                              child: Text(loc.householdShowAllShared),
+                            ),
+                          ),
+                      ],
+                    ),
                   ],
                 );
               },

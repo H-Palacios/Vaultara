@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
@@ -403,131 +404,139 @@ class _LifePlanScreenState extends State<LifePlanScreen> {
           ),
         ),
         const SizedBox(height: 14),
-        _SummaryCard(plan: plan, view: view),
-        if (view.allDone && !plan.isFinished) ...[
-          const SizedBox(height: 12),
-          _AllDoneCard(onFinish: () => _finish(plan, true)),
-        ],
-        if (urgent.isNotEmpty) ...[
-          _section(
-            loc.lifePlanDoFirst,
-            Icons.priority_high_rounded,
-            urgent.where((t) => !t.done).length,
-            alwaysShow: true,
-            colour: scheme.error,
-          ),
-          for (final task in urgent) _taskRow(plan, view, task),
-        ],
-        TutorialTarget(
-          steps: const [TutorialStep.lifeRecords],
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              if (hasDate) ...[
-                _section(
-                  loc.lifePlanBefore,
-                  Icons.schedule_rounded,
-                  before.length,
-                ),
-                for (final item in before) _recordRow(plan, item),
-                _section(loc.lifePlanAfter, Icons.update_rounded, after.length),
-                for (final item in after) _recordRow(plan, item),
-              ] else ...[
-                _section(
-                  loc.lifePlanToDo,
-                  Icons.checklist_rounded,
-                  open.length,
-                ),
-                for (final item in open) _recordRow(plan, item),
-              ],
+        // Where there is room, such as on a phone held sideways, this sits
+        // in two columns, so far less of the page is below the screen.
+        AdaptiveColumns(
+          left: [
+            _SummaryCard(plan: plan, view: view),
+            if (view.allDone && !plan.isFinished) ...[
+              const SizedBox(height: 12),
+              _AllDoneCard(onFinish: () => _finish(plan, true)),
             ],
-          ),
-        ),
-        TutorialTarget(
-          steps: const [TutorialStep.lifeSteps],
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
+          ],
+          right: [
+            if (urgent.isNotEmpty) ...[
               _section(
-                loc.lifePlanSteps,
-                Icons.format_list_bulleted_rounded,
-                steps.where((t) => !t.done).length,
+                loc.lifePlanDoFirst,
+                Icons.priority_high_rounded,
+                urgent.where((t) => !t.done).length,
                 alwaysShow: true,
+                colour: scheme.error,
               ),
-              // A few are enough to show what steps look like.
-              for (final task in _preview ? steps.take(3) : steps)
-                _taskRow(plan, view, task),
+              for (final task in urgent) _taskRow(plan, view, task),
             ],
-          ),
-        ),
-        Align(
-          alignment: AlignmentDirectional.centerStart,
-          child: TutorialTarget(
-            steps: const [TutorialStep.lifeOwn],
-            child: TextButton.icon(
-              onPressed: () => _addCustom(plan),
-              icon: const Icon(Icons.add_rounded, size: 20),
-              label: Text(loc.lifePlanAddOwnStep),
-            ),
-          ),
-        ),
-        if (done.isNotEmpty || view.removed > 0) ...[
-          const SizedBox(height: 18),
-          InkWell(
-            borderRadius: BorderRadius.circular(12),
-            onTap: () => setState(() => _showDone = !_showDone),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 4),
-              child: Row(
+            TutorialTarget(
+              steps: const [TutorialStep.lifeRecords],
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Icon(Icons.task_alt_rounded, size: 20, color: scheme.primary),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: Text(
-                      '${loc.lifePlanDoneSection} (${done.length + view.removed})',
-                      style: const TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w800,
-                      ),
+                  if (hasDate) ...[
+                    _section(
+                      loc.lifePlanBefore,
+                      Icons.schedule_rounded,
+                      before.length,
                     ),
-                  ),
-                  Icon(
-                    _showDone
-                        ? Icons.expand_less_rounded
-                        : Icons.expand_more_rounded,
-                  ),
+                    for (final item in before) _recordRow(plan, item),
+                    _section(loc.lifePlanAfter, Icons.update_rounded, after.length),
+                    for (final item in after) _recordRow(plan, item),
+                  ] else ...[
+                    _section(
+                      loc.lifePlanToDo,
+                      Icons.checklist_rounded,
+                      open.length,
+                    ),
+                    for (final item in open) _recordRow(plan, item),
+                  ],
                 ],
               ),
             ),
-          ),
-          if (_showDone) ...[
-            for (final item in done) _recordRow(plan, item),
-            if (view.removed > 0)
-              Padding(
-                padding: const EdgeInsets.fromLTRB(4, 4, 4, 8),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.delete_sweep_rounded,
-                      size: 20,
-                      color: scheme.onSurfaceVariant,
-                    ),
-                    const SizedBox(width: 10),
-                    Expanded(
-                      child: Text(
-                        loc.lifePlanRemoved(view.removed),
-                        style: TextStyle(
-                          fontSize: 13,
-                          height: 1.35,
-                          color: scheme.onSurfaceVariant,
-                        ),
-                      ),
-                    ),
-                  ],
+            TutorialTarget(
+              steps: const [TutorialStep.lifeSteps],
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  _section(
+                    loc.lifePlanSteps,
+                    Icons.format_list_bulleted_rounded,
+                    steps.where((t) => !t.done).length,
+                    alwaysShow: true,
+                  ),
+                  // A few are enough to show what steps look like.
+                  for (final task in _preview ? steps.take(3) : steps)
+                    _taskRow(plan, view, task),
+                ],
+              ),
+            ),
+            Align(
+              alignment: AlignmentDirectional.centerStart,
+              child: TutorialTarget(
+                steps: const [TutorialStep.lifeOwn],
+                child: TextButton.icon(
+                  onPressed: () => _addCustom(plan),
+                  icon: const Icon(Icons.add_rounded, size: 20),
+                  label: Text(loc.lifePlanAddOwnStep),
                 ),
               ),
+            ),
+            if (done.isNotEmpty || view.removed > 0) ...[
+              const SizedBox(height: 18),
+              InkWell(
+                borderRadius: BorderRadius.circular(12),
+                onTap: () => setState(() => _showDone = !_showDone),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 4),
+                  child: Row(
+                    children: [
+                      Icon(Icons.task_alt_rounded, size: 20, color: scheme.primary),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          '${loc.lifePlanDoneSection} (${done.length + view.removed})',
+                          style: const TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w800,
+                          ),
+                        ),
+                      ),
+                      Icon(
+                        _showDone
+                            ? Icons.expand_less_rounded
+                            : Icons.expand_more_rounded,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              if (_showDone) ...[
+                for (final item in done) _recordRow(plan, item),
+                if (view.removed > 0)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(4, 4, 4, 8),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.delete_sweep_rounded,
+                          size: 20,
+                          color: scheme.onSurfaceVariant,
+                        ),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: Text(
+                            loc.lifePlanRemoved(view.removed),
+                            style: TextStyle(
+                              fontSize: 13,
+                              height: 1.35,
+                              color: scheme.onSurfaceVariant,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+              ],
+            ],
           ],
-        ],
+        ),
       ],
     );
   }

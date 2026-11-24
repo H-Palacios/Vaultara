@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial_ids.dart';
 import 'package:vaultara/features/tutorials/view/tutorial_hint.dart';
@@ -194,88 +195,96 @@ class _TravelCheckScreenState extends State<TravelCheckScreen> {
                           ScreenHeader(title: loc.travelTitle),
                           const TutorialHint(id: TutorialIds.travel),
                           const SizedBox(height: 16),
-                          TravelReadinessCard(
-                            key: _readinessKey,
-                            isPremium: isPremium,
-                          ),
-                          const SizedBox(height: 18),
-                          if (upcoming.isEmpty)
-                            _EmptyCard(onPlan: _plan, buttonKey: _planKey)
-                          else ...[
-                            Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 4),
-                              child: Text(
-                                loc.travelUpcoming,
-                                style: const TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w800,
-                                ),
+                          // Where there is room, such as on a phone held sideways, this sits
+                          // in two columns, so far less of the page is below the screen.
+                          AdaptiveColumns(
+                            left: [
+                              TravelReadinessCard(
+                                key: _readinessKey,
+                                isPremium: isPremium,
                               ),
-                            ),
-                            const SizedBox(height: 10),
-                            for (final trip in upcoming) ...[
-                              _TripCard(
-                                key: identical(trip, upcoming.first)
-                                    ? _tripCardKey
-                                    : null,
-                                trip: trip,
-                                onTap: () => _open(trip),
-                              ),
-                              const SizedBox(height: 10),
+                              const SizedBox(height: 18),
                             ],
-                            const SizedBox(height: 4),
-                            SizedBox(
-                              key: _planKey,
-                              width: double.infinity,
-                              child: FilledButton.icon(
-                                onPressed: _plan,
-                                icon: const Icon(Icons.add_rounded),
-                                label: Text(loc.travelPlanTrip),
-                              ),
-                            ),
-                          ],
-                          if (past.isNotEmpty) ...[
-                            const SizedBox(height: 18),
-                            InkWell(
-                              borderRadius: BorderRadius.circular(12),
-                              onTap: () => setState(() => _showPast = !_showPast),
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 4,
-                                  vertical: 8,
-                                ),
-                                child: Row(
-                                  children: [
-                                    Expanded(
-                                      child: Text(
-                                        '${loc.travelPast} (${past.length})',
-                                        style: const TextStyle(
-                                          fontSize: 15,
-                                          fontWeight: FontWeight.w700,
-                                        ),
-                                      ),
+                            right: [
+                              if (upcoming.isEmpty)
+                                _EmptyCard(onPlan: _plan, buttonKey: _planKey)
+                              else ...[
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 4),
+                                  child: Text(
+                                    loc.travelUpcoming,
+                                    style: const TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w800,
                                     ),
-                                    Icon(
-                                      _showPast
-                                          ? Icons.expand_less_rounded
-                                          : Icons.expand_more_rounded,
-                                    ),
-                                  ],
+                                  ),
                                 ),
-                              ),
-                            ),
-                            if (_showPast)
-                              for (final trip in past) ...[
-                                const SizedBox(height: 8),
-                                Opacity(
-                                  opacity: 0.7,
-                                  child: _TripCard(
+                                const SizedBox(height: 10),
+                                for (final trip in upcoming) ...[
+                                  _TripCard(
+                                    key: identical(trip, upcoming.first)
+                                        ? _tripCardKey
+                                        : null,
                                     trip: trip,
                                     onTap: () => _open(trip),
                                   ),
+                                  const SizedBox(height: 10),
+                                ],
+                                const SizedBox(height: 4),
+                                SizedBox(
+                                  key: _planKey,
+                                  width: double.infinity,
+                                  child: FilledButton.icon(
+                                    onPressed: _plan,
+                                    icon: const Icon(Icons.add_rounded),
+                                    label: Text(loc.travelPlanTrip),
+                                  ),
                                 ),
                               ],
-                          ],
+                              if (past.isNotEmpty) ...[
+                                const SizedBox(height: 18),
+                                InkWell(
+                                  borderRadius: BorderRadius.circular(12),
+                                  onTap: () => setState(() => _showPast = !_showPast),
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      horizontal: 4,
+                                      vertical: 8,
+                                    ),
+                                    child: Row(
+                                      children: [
+                                        Expanded(
+                                          child: Text(
+                                            '${loc.travelPast} (${past.length})',
+                                            style: const TextStyle(
+                                              fontSize: 15,
+                                              fontWeight: FontWeight.w700,
+                                            ),
+                                          ),
+                                        ),
+                                        Icon(
+                                          _showPast
+                                              ? Icons.expand_less_rounded
+                                              : Icons.expand_more_rounded,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                if (_showPast)
+                                  for (final trip in past) ...[
+                                    const SizedBox(height: 8),
+                                    Opacity(
+                                      opacity: 0.7,
+                                      child: _TripCard(
+                                        trip: trip,
+                                        onTap: () => _open(trip),
+                                      ),
+                                    ),
+                                  ],
+                              ],
+                            ],
+                          ),
                         ],
                       );
                     },

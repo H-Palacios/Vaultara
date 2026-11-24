@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
@@ -188,25 +189,32 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
                     retryLabel: loc.inviteRetry,
                     onRetry: _load,
                   )
-                else ...[
-                  _codeCard(loc, status),
-                  const SizedBox(height: 14),
-                  _howItWorks(loc),
-                  const SizedBox(height: 14),
-                  _progressCard(loc, status),
-                  const SizedBox(height: 14),
-                  _haveCodeCard(loc, status),
-                  if (_failed) ...[
-                    const SizedBox(height: 12),
-                    Text(
-                      loc.inviteLoadError,
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Theme.of(context).colorScheme.error,
-                      ),
-                    ),
-                  ],
-                ],
+                else
+                  // Where there is room, such as on a phone held sideways,
+                  // the code and how it works sit beside the progress.
+                  AdaptiveColumns(
+                    left: [
+                      _codeCard(loc, status),
+                      const SizedBox(height: 14),
+                      _howItWorks(loc),
+                    ],
+                    right: [
+                      const SizedBox(height: 14),
+                      _progressCard(loc, status),
+                      const SizedBox(height: 14),
+                      _haveCodeCard(loc, status),
+                      if (_failed) ...[
+                        const SizedBox(height: 12),
+                        Text(
+                          loc.inviteLoadError,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Theme.of(context).colorScheme.error,
+                          ),
+                        ),
+                      ],
+                    ],
+                  ),
               ],
             ),
           ),

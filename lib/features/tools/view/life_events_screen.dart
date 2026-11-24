@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/features/tutorials/data/models/tutorial_ids.dart';
 import 'package:vaultara/features/tutorials/view/tutorial_hint.dart';
@@ -140,84 +141,92 @@ class _LifeEventsScreenState extends State<LifeEventsScreen> {
         ),
         const TutorialHint(id: TutorialIds.lifeEvents),
         const SizedBox(height: 8),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 4),
-          child: Text(
-            loc.lifeEventsIntro,
-            style: TextStyle(
-              fontSize: 13.5,
-              height: 1.4,
-              color: scheme.onSurfaceVariant,
-            ),
-          ),
-        ),
-        if (active.isNotEmpty) ...[
-          _Heading(loc.lifePlanInProgress),
-          for (final plan in active) ...[
-            LifePlanCard(plan: plan),
-            const SizedBox(height: 10),
-          ],
-        ],
-        TutorialTarget(
-          steps: const [TutorialStep.lifeChoose],
-          child: _Heading(loc.lifePlanStartNew),
-        ),
-        for (final group in LifeEventGroup.values) ...[
-          _GroupLabel(LifeEvents.groupTitle(loc, group)),
-          for (final event in LifeEvents.groups[group]!) ...[
-            if (event == LifeEvent.lostWallet)
-              // Lost my wallet opens its own screen first, with the
-              // check-up, rather than going straight to a plan.
-              _Tile(
-                icon: LifeEvents.icon(event),
-                title: loc.lostWalletTitle,
-                subtitle: active.any((p) => p.event == event)
-                    ? loc.lifePlanInProgress
-                    : loc.lostWalletSubtitle,
-                highlight: active.any((p) => p.event == event),
-                onTap: () => openLostWallet(context),
-              )
-            else
-              _EventTile(
-                event: event,
-                active: active.any((p) => p.event == event),
-              ),
-            const SizedBox(height: 8),
-          ],
-        ],
-        if (finished.isNotEmpty) ...[
-          const SizedBox(height: 14),
-          InkWell(
-            borderRadius: BorderRadius.circular(12),
-            onTap: () => setState(() => _showFinished = !_showFinished),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Text(
-                      '${loc.lifePlanFinishedSection} (${finished.length})',
-                      style: const TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w800,
-                      ),
-                    ),
-                  ),
-                  Icon(
-                    _showFinished
-                        ? Icons.expand_less_rounded
-                        : Icons.expand_more_rounded,
-                  ),
-                ],
+        // Where there is room, such as on a phone held sideways, this sits
+        // in two columns, so far less of the page is below the screen.
+        AdaptiveColumns(
+          left: [
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              child: Text(
+                loc.lifeEventsIntro,
+                style: TextStyle(
+                  fontSize: 13.5,
+                  height: 1.4,
+                  color: scheme.onSurfaceVariant,
+                ),
               ),
             ),
-          ),
-          if (_showFinished)
-            for (final plan in finished) ...[
-              LifePlanCard(plan: plan),
-              const SizedBox(height: 10),
+            if (active.isNotEmpty) ...[
+              _Heading(loc.lifePlanInProgress),
+              for (final plan in active) ...[
+                LifePlanCard(plan: plan),
+                const SizedBox(height: 10),
+              ],
             ],
-        ],
+          ],
+          right: [
+            TutorialTarget(
+              steps: const [TutorialStep.lifeChoose],
+              child: _Heading(loc.lifePlanStartNew),
+            ),
+            for (final group in LifeEventGroup.values) ...[
+              _GroupLabel(LifeEvents.groupTitle(loc, group)),
+              for (final event in LifeEvents.groups[group]!) ...[
+                if (event == LifeEvent.lostWallet)
+                  // Lost my wallet opens its own screen first, with the
+                  // check-up, rather than going straight to a plan.
+                  _Tile(
+                    icon: LifeEvents.icon(event),
+                    title: loc.lostWalletTitle,
+                    subtitle: active.any((p) => p.event == event)
+                        ? loc.lifePlanInProgress
+                        : loc.lostWalletSubtitle,
+                    highlight: active.any((p) => p.event == event),
+                    onTap: () => openLostWallet(context),
+                  )
+                else
+                  _EventTile(
+                    event: event,
+                    active: active.any((p) => p.event == event),
+                  ),
+                const SizedBox(height: 8),
+              ],
+            ],
+            if (finished.isNotEmpty) ...[
+              const SizedBox(height: 14),
+              InkWell(
+                borderRadius: BorderRadius.circular(12),
+                onTap: () => setState(() => _showFinished = !_showFinished),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          '${loc.lifePlanFinishedSection} (${finished.length})',
+                          style: const TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w800,
+                          ),
+                        ),
+                      ),
+                      Icon(
+                        _showFinished
+                            ? Icons.expand_less_rounded
+                            : Icons.expand_more_rounded,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              if (_showFinished)
+                for (final plan in finished) ...[
+                  LifePlanCard(plan: plan),
+                  const SizedBox(height: 10),
+                ],
+            ],
+          ],
+        ),
       ],
     );
   }

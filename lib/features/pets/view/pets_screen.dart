@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/core/view/widgets/premium_builder.dart';
 import 'package:vaultara/core/view/widgets/screen_header.dart';
@@ -100,51 +101,59 @@ class PetsScreen extends StatelessWidget {
       children: [
         ScreenHeader(title: loc.petsTitle, subtitle: loc.petsNotMembers),
         const SizedBox(height: 14),
-        TutorialTarget(
-          steps: const [TutorialStep.petsList],
-          child: pets.isEmpty
-              ? PetsEmptyCard(onAdd: () => _add(context, premium))
-              : PetGrid(
-                  pets: pets,
-                  records: records,
-                  onOpen: (pet) => _open(context, pet),
-                ),
-        ),
-        if (pets.isNotEmpty) ...[
-          const SizedBox(height: 12),
-          Align(
-            alignment: AlignmentDirectional.centerStart,
-            child: TutorialTarget(
-              steps: const [TutorialStep.petsAdd],
-              child: FilledButton.tonalIcon(
-                onPressed: PetRepository.canAdd || tour
-                    ? () => _add(context, premium)
-                    : null,
-                icon: Icon(premium ? Icons.add_rounded : Icons.lock_rounded),
-                label: Text(loc.petsAdd),
-              ),
+        // Where there is room, such as on a phone held sideways, this sits
+        // in two columns, so far less of the page is below the screen.
+        AdaptiveColumns(
+          left: [
+            TutorialTarget(
+              steps: const [TutorialStep.petsList],
+              child: pets.isEmpty
+                  ? PetsEmptyCard(onAdd: () => _add(context, premium))
+                  : PetGrid(
+                      pets: pets,
+                      records: records,
+                      onOpen: (pet) => _open(context, pet),
+                    ),
             ),
-          ),
-        ],
-        if (!premium) ...[
-          const SizedBox(height: 8),
-          Text(
-            loc.petsPremium,
-            style: TextStyle(fontSize: 12.5, color: scheme.onSurfaceVariant),
-          ),
-        ],
-        if (pets.isNotEmpty) ...[
-          const SizedBox(height: 24),
-          PetsAttentionCard(
-            pets: pets,
-            records: records,
-            today: DateTime.now(),
-            onOpen: tour ? null : (pet) => _open(context, pet),
-            onAdd: premium && !tour
-                ? (pet, group) => PetDocumentActions.add(context, pet, group)
-                : null,
-          ),
-        ],
+            if (pets.isNotEmpty) ...[
+              const SizedBox(height: 12),
+              Align(
+                alignment: AlignmentDirectional.centerStart,
+                child: TutorialTarget(
+                  steps: const [TutorialStep.petsAdd],
+                  child: FilledButton.tonalIcon(
+                    onPressed: PetRepository.canAdd || tour
+                        ? () => _add(context, premium)
+                        : null,
+                    icon: Icon(premium ? Icons.add_rounded : Icons.lock_rounded),
+                    label: Text(loc.petsAdd),
+                  ),
+                ),
+              ),
+            ],
+            if (!premium) ...[
+              const SizedBox(height: 8),
+              Text(
+                loc.petsPremium,
+                style: TextStyle(fontSize: 12.5, color: scheme.onSurfaceVariant),
+              ),
+            ],
+          ],
+          right: [
+            if (pets.isNotEmpty) ...[
+              const SizedBox(height: 24),
+              PetsAttentionCard(
+                pets: pets,
+                records: records,
+                today: DateTime.now(),
+                onOpen: tour ? null : (pet) => _open(context, pet),
+                onAdd: premium && !tour
+                    ? (pet, group) => PetDocumentActions.add(context, pet, group)
+                    : null,
+              ),
+            ],
+          ],
+        ),
       ],
     );
   }

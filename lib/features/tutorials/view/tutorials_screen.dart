@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -59,35 +60,43 @@ class _TutorialsScreenState extends State<TutorialsScreen> {
                 children: [
                   ScreenHeader(title: t.tutorialsScreenTitle),
                   const SizedBox(height: 16),
-                  _ProgressCard(
-                    done: done,
-                    total: tutorials.length,
-                    onTour: () => openTour(context),
-                  ),
-                  for (final group in TutorialGroup.values)
-                    if (tutorials.any((x) => x.group == group)) ...[
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(4, 26, 4, 10),
-                        child: Text(
-                          _groupTitle(t, group),
-                          style: const TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w800,
-                          ),
-                        ),
+                  // Where there is room, such as on a phone held sideways, this sits
+                  // in two columns, so far less of the page is below the screen.
+                  AdaptiveColumns(
+                    left: [
+                      _ProgressCard(
+                        done: done,
+                        total: tutorials.length,
+                        onTour: () => openTour(context),
                       ),
-                      for (final tutorial in tutorials.where(
-                        (x) => x.group == group,
-                      ))
-                        _TutorialTile(
-                          tutorial: tutorial,
-                          done: completed.contains(tutorial.id),
-                          onTap: () => TutorialsService.playTutorial(
-                            context,
-                            tutorial.id,
-                          ),
-                        ),
                     ],
+                    right: [
+                      for (final group in TutorialGroup.values)
+                        if (tutorials.any((x) => x.group == group)) ...[
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(4, 26, 4, 10),
+                            child: Text(
+                              _groupTitle(t, group),
+                              style: const TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w800,
+                              ),
+                            ),
+                          ),
+                          for (final tutorial in tutorials.where(
+                            (x) => x.group == group,
+                          ))
+                            _TutorialTile(
+                              tutorial: tutorial,
+                              done: completed.contains(tutorial.id),
+                              onTap: () => TutorialsService.playTutorial(
+                                context,
+                                tutorial.id,
+                              ),
+                            ),
+                        ],
+                    ],
+                  ),
                 ],
               );
             },

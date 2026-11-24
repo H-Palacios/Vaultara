@@ -1,6 +1,7 @@
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:printing/printing.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
@@ -94,61 +95,69 @@ class _ProofPackScreenState extends State<ProofPackScreen> {
                       onBack: () => Navigator.of(context).pop(),
                     ),
                     const SizedBox(height: 8),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 4),
-                      child: Text(
-                        loc.proofPackIntro,
-                        style: TextStyle(
-                          fontSize: 13.5,
-                          height: 1.4,
-                          color: scheme.onSurfaceVariant,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 8),
-                    SwitchListTile.adaptive(
-                      contentPadding: const EdgeInsets.symmetric(horizontal: 4),
-                      value: _photos,
-                      onChanged: (v) => setState(() => _photos = v),
-                      secondary: Icon(Icons.photo_rounded, color: scheme.primary),
-                      title: Text(
-                        loc.proofPackPhotos,
-                        style: const TextStyle(fontWeight: FontWeight.w700),
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    for (final record in records) ...[
-                      Material(
-                        color: scheme.surface,
-                        borderRadius: BorderRadius.circular(14),
-                        child: CheckboxListTile(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(14),
+                    // Where there is room, such as on a phone held sideways, this sits
+                    // in two columns, so far less of the page is below the screen.
+                    AdaptiveColumns(
+                      left: [
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 4),
+                          child: Text(
+                            loc.proofPackIntro,
+                            style: TextStyle(
+                              fontSize: 13.5,
+                              height: 1.4,
+                              color: scheme.onSurfaceVariant,
+                            ),
                           ),
-                          controlAffinity: ListTileControlAffinity.leading,
-                          value: _selected.contains(record.id),
-                          onChanged: _busy
-                              ? null
-                              : (v) => _toggle(record, v ?? false),
+                        ),
+                        const SizedBox(height: 8),
+                        SwitchListTile.adaptive(
+                          contentPadding: const EdgeInsets.symmetric(horizontal: 4),
+                          value: _photos,
+                          onChanged: (v) => setState(() => _photos = v),
+                          secondary: Icon(Icons.photo_rounded, color: scheme.primary),
                           title: Text(
-                            record.name,
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
+                            loc.proofPackPhotos,
                             style: const TextStyle(fontWeight: FontWeight.w700),
                           ),
-                          secondary: record.holderId == null
-                              ? (record.locked
-                                    ? Icon(
-                                        Icons.lock_rounded,
-                                        size: 18,
-                                        color: scheme.onSurfaceVariant,
-                                      )
-                                    : null)
-                              : PersonChip(holderId: record.holderId),
                         ),
-                      ),
-                      const SizedBox(height: 8),
-                    ],
+                        const SizedBox(height: 4),
+                      ],
+                      right: [
+                        for (final record in records) ...[
+                          Material(
+                            color: scheme.surface,
+                            borderRadius: BorderRadius.circular(14),
+                            child: CheckboxListTile(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(14),
+                              ),
+                              controlAffinity: ListTileControlAffinity.leading,
+                              value: _selected.contains(record.id),
+                              onChanged: _busy
+                                  ? null
+                                  : (v) => _toggle(record, v ?? false),
+                              title: Text(
+                                record.name,
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: const TextStyle(fontWeight: FontWeight.w700),
+                              ),
+                              secondary: record.holderId == null
+                                  ? (record.locked
+                                        ? Icon(
+                                            Icons.lock_rounded,
+                                            size: 18,
+                                            color: scheme.onSurfaceVariant,
+                                          )
+                                        : null)
+                                  : PersonChip(holderId: record.holderId),
+                            ),
+                          ),
+                          const SizedBox(height: 8),
+                        ],
+                      ],
+                    ),
                   ],
                 ),
               ),
