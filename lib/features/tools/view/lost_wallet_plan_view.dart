@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -630,103 +631,114 @@ class _LostWalletPlanViewState extends State<LostWalletPlanView>
           ),
         ),
         const SizedBox(height: 14),
-        _StatusCard(
-          plan: plan,
-          view: view,
-          next: nextLine,
-          onFound: () => _found(view),
-          // Only when something sits in Done; ticked steps without a
-          // deadline stay where they are, with their own Undo.
-          onShowDone: done.isNotEmpty || urgent.any((t) => t.done)
-              ? _openDone
-              : null,
-        ),
-        if (trip != null) ...[
-          const SizedBox(height: 12),
-          _InfoCard(
-            icon: Icons.flight_takeoff_rounded,
-            colour: scheme.primary,
-            title: loc.lostWalletAbroadTitle,
-            body: loc.lostWalletAbroadBody(trip.name),
-            action: loc.lostWalletOpenTrip,
-            onAction: () => Navigator.of(context).push(
-              MaterialPageRoute<void>(
-                builder: (_) => TripDetailScreen(tripId: trip.id),
+        // Where there is room, what to block sits on the left and what to
+        // replace, the steps and what is done on the right.
+        AdaptiveColumns(
+          left: [
+            _StatusCard(
+              plan: plan,
+              view: view,
+              next: nextLine,
+              onFound: () => _found(view),
+              // Only when something sits in Done; ticked steps without a
+              // deadline stay where they are, with their own Undo.
+              onShowDone: done.isNotEmpty || urgent.any((t) => t.done)
+                  ? _openDone
+                  : null,
+            ),
+            if (trip != null) ...[
+              const SizedBox(height: 12),
+              _InfoCard(
+                icon: Icons.flight_takeoff_rounded,
+                colour: scheme.primary,
+                title: loc.lostWalletAbroadTitle,
+                body: loc.lostWalletAbroadBody(trip.name),
+                action: loc.lostWalletOpenTrip,
+                onAction: () => Navigator.of(context).push(
+                  MaterialPageRoute<void>(
+                    builder: (_) => TripDetailScreen(tripId: trip.id),
+                  ),
+                ),
+              ),
+            ],
+            if (block.isNotEmpty || urgent.any((t) => !t.done)) ...[
+              TutorialTarget(
+                steps: const [TutorialStep.walletBlock],
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    WalletSection(
+                      title: loc.lostWalletBlockNow,
+                      icon: Icons.block_rounded,
+                      colour: scheme.error,
+                      count: block.length + urgent.where((t) => !t.done).length,
+                      subtitle: loc.lostWalletBlockNowHint,
+                    ),
+                    for (final item in block) _blockRow(item),
+                    for (final task in urgent.where((t) => !t.done))
+                      _taskRow(task),
+                  ],
+                ),
+              ),
+            ],
+            if (stolen) ...[const SizedBox(height: 4), caseCard],
+            if (view.records.isEmpty) ...[
+              const SizedBox(height: 12),
+              _InfoCard(
+                icon: Icons.inventory_2_outlined,
+                colour: scheme.primary,
+                title: loc.lostWalletPlanEmptyTitle,
+                body: loc.lostWalletPlanEmpty,
+              ),
+            ],
+          ],
+          right: [
+            if (replace.isNotEmpty) ...[
+              TutorialTarget(
+                steps: const [TutorialStep.walletReplace],
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    WalletSection(
+                      title: loc.lostWalletReplace,
+                      icon: Icons.autorenew_rounded,
+                      count: replace.length,
+                      subtitle: loc.lostWalletReplaceHint,
+                    ),
+                    for (final item in replace) _replaceRow(item),
+                  ],
+                ),
+              ),
+            ],
+            if (check.isNotEmpty) ...[
+              WalletSection(
+                title: loc.lostWalletCheck,
+                icon: Icons.fact_check_rounded,
+                count: check.length,
+              ),
+              for (final item in check) _checkRow(item),
+            ],
+            if (!stolen) ...[const SizedBox(height: 16), caseCard],
+            WalletSection(
+              title: loc.lifePlanSteps,
+              icon: Icons.format_list_bulleted_rounded,
+              count: steps.where((t) => !t.done).length,
+            ),
+            if (steps.isNotEmpty) _stepList(steps),
+            Align(
+              alignment: AlignmentDirectional.centerStart,
+              child: TextButton.icon(
+                onPressed: _addCustom,
+                icon: const Icon(Icons.add_rounded, size: 20),
+                label: Text(loc.lifePlanAddOwnStep),
               ),
             ),
-          ),
-        ],
-        if (block.isNotEmpty || urgent.any((t) => !t.done)) ...[
-          TutorialTarget(
-            steps: const [TutorialStep.walletBlock],
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                WalletSection(
-                  title: loc.lostWalletBlockNow,
-                  icon: Icons.block_rounded,
-                  colour: scheme.error,
-                  count: block.length + urgent.where((t) => !t.done).length,
-                  subtitle: loc.lostWalletBlockNowHint,
-                ),
-                for (final item in block) _blockRow(item),
-                for (final task in urgent.where((t) => !t.done)) _taskRow(task),
-              ],
-            ),
-          ),
-        ],
-        if (stolen) ...[const SizedBox(height: 4), caseCard],
-        if (view.records.isEmpty) ...[
-          const SizedBox(height: 12),
-          _InfoCard(
-            icon: Icons.inventory_2_outlined,
-            colour: scheme.primary,
-            title: loc.lostWalletPlanEmptyTitle,
-            body: loc.lostWalletPlanEmpty,
-          ),
-        ],
-        if (replace.isNotEmpty) ...[
-          TutorialTarget(
-            steps: const [TutorialStep.walletReplace],
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                WalletSection(
-                  title: loc.lostWalletReplace,
-                  icon: Icons.autorenew_rounded,
-                  count: replace.length,
-                  subtitle: loc.lostWalletReplaceHint,
-                ),
-                for (final item in replace) _replaceRow(item),
-              ],
-            ),
-          ),
-        ],
-        if (check.isNotEmpty) ...[
-          WalletSection(
-            title: loc.lostWalletCheck,
-            icon: Icons.fact_check_rounded,
-            count: check.length,
-          ),
-          for (final item in check) _checkRow(item),
-        ],
-        if (!stolen) ...[const SizedBox(height: 16), caseCard],
-        WalletSection(
-          title: loc.lifePlanSteps,
-          icon: Icons.format_list_bulleted_rounded,
-          count: steps.where((t) => !t.done).length,
+            if (done.isNotEmpty ||
+                urgent.any((t) => t.done) ||
+                view.removed > 0)
+              ..._doneSection(loc, scheme, view, done, urgent),
+          ],
         ),
-        if (steps.isNotEmpty) _stepList(steps),
-        Align(
-          alignment: AlignmentDirectional.centerStart,
-          child: TextButton.icon(
-            onPressed: _addCustom,
-            icon: const Icon(Icons.add_rounded, size: 20),
-            label: Text(loc.lifePlanAddOwnStep),
-          ),
-        ),
-        if (done.isNotEmpty || urgent.any((t) => t.done) || view.removed > 0)
-          ..._doneSection(loc, scheme, view, done, urgent),
       ],
     );
   }

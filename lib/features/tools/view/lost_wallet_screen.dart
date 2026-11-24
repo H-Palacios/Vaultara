@@ -172,7 +172,10 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // The plan uses two columns on a wide screen; the start page keeps
+      // one, narrower column of its own.
       body: WideCentered(
+        maxWidth: WideCentered.twoColumnMaxWidth,
         child: SafeArea(
           child: ValueListenableBuilder<List<LifePlan>>(
             valueListenable: LifePlanRepository.plans,
@@ -255,217 +258,121 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
         )
         .length;
 
-    return ListView(
-      padding: const EdgeInsets.fromLTRB(16, 8, 16, 40),
-      // Kept until the Flutter version in use exports ScrollCacheExtent.
-      // ignore: deprecated_member_use
-      cacheExtent: TutorialController.listCacheExtent,
-      children: [
-        ScreenHeader(
-          title: loc.lostWalletTitle,
-          onBack: () => Navigator.of(context).maybePop(),
-        ),
-        const TutorialHint(id: TutorialIds.lostWallet),
-        const SizedBox(height: 12),
-        TutorialTarget(
-          steps: const [TutorialStep.walletLost],
-          child: _Hero(
-            onLost: () => _start(LifeEvents.variantLost),
-            onStolen: () => _start(LifeEvents.variantStolen),
+    return WideCentered(
+      child: ListView(
+        padding: const EdgeInsets.fromLTRB(16, 8, 16, 40),
+        // Kept until the Flutter version in use exports ScrollCacheExtent.
+        // ignore: deprecated_member_use
+        cacheExtent: TutorialController.listCacheExtent,
+        children: [
+          ScreenHeader(
+            title: loc.lostWalletTitle,
+            onBack: () => Navigator.of(context).maybePop(),
           ),
-        ),
-        WalletSection(
-          title: loc.lostWalletCheckupTitle,
-          icon: Icons.health_and_safety_rounded,
-          subtitle: loc.lostWalletCheckupBody,
-        ),
-        TutorialTarget(
-          steps: const [
-            TutorialStep.walletPrepare,
-            TutorialStep.walletLostNumber,
-          ],
-          child: WalletPanel(
-            padding: const EdgeInsets.fromLTRB(16, 14, 8, 8),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                if (carried.isEmpty)
-                  _Issue(
-                    icon: Icons.touch_app_rounded,
-                    colour: scheme.primary,
-                    text: loc.lostWalletSetPlaceBody,
-                  )
-                else if (noPhoto == 0 && noLine == 0 && travelDocs == 0)
-                  _Issue(
-                    icon: Icons.verified_rounded,
-                    colour: scheme.primary,
-                    text: loc.lostWalletCheckupAllGood,
-                  )
-                else ...[
-                  if (noLine > 0)
-                    _Issue(
-                      icon: Icons.phone_disabled_rounded,
-                      colour: scheme.error,
-                      text: loc.lostWalletIssueLines(noLine),
-                      action: loc.lostWalletAddLine,
-                      onTap: () =>
-                          showCardsWithoutNumber(context, <TrackedItem>[
-                            for (final r in carried)
-                              if (KeptIn.cardGroups.contains(
-                                    r.subcategoryName,
-                                  ) &&
-                                  r.lostLine == null)
-                                r,
-                          ]),
-                    ),
-                  if (noPhoto > 0)
-                    _Issue(
-                      icon: Icons.no_photography_rounded,
-                      colour: const Color(0xFFF59E0B),
-                      text: loc.lostWalletIssuePhotos(noPhoto),
-                    ),
-                  if (travelDocs > 0)
-                    _Issue(
-                      icon: Icons.luggage_rounded,
-                      colour: const Color(0xFFF59E0B),
-                      text: loc.lostWalletIssuePassport(travelDocs),
-                    ),
-                ],
-                const Divider(height: 18),
-                SwitchListTile.adaptive(
-                  contentPadding: const EdgeInsetsDirectional.only(end: 4),
-                  value: _checkOn,
-                  onChanged: _setCheck,
-                  secondary: Icon(
-                    Icons.event_repeat_rounded,
-                    color: scheme.primary,
-                  ),
-                  title: Text(
-                    loc.walletCheckToggle,
-                    style: const TextStyle(
-                      fontSize: 14.5,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                  subtitle: Text(
-                    loc.walletCheckToggleBody,
-                    style: TextStyle(
-                      fontSize: 12.5,
-                      color: scheme.onSurfaceVariant,
-                    ),
-                  ),
-                ),
-              ],
+          const TutorialHint(id: TutorialIds.lostWallet),
+          const SizedBox(height: 12),
+          TutorialTarget(
+            steps: const [TutorialStep.walletLost],
+            child: _Hero(
+              onLost: () => _start(LifeEvents.variantLost),
+              onStolen: () => _start(LifeEvents.variantStolen),
             ),
           ),
-        ),
-        if (carried.any((r) => LifeEvents.blocksFirst(r.subcategoryName)))
-          Padding(
-            padding: const EdgeInsets.only(top: 10),
-            child: WalletPanel(
-              padding: const EdgeInsets.fromLTRB(14, 12, 10, 12),
-              onTap: () => EmergencySheet.share(context),
-              child: Row(
-                children: [
-                  WalletBadge(
-                    icon: Icons.print_rounded,
-                    colour: scheme.primary,
-                    size: 36,
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          loc.lostWalletSheetButton,
-                          style: const TextStyle(
-                            fontSize: 14.5,
-                            fontWeight: FontWeight.w800,
-                          ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          loc.lostWalletSheetHint,
-                          style: TextStyle(
-                            fontSize: 12.5,
-                            height: 1.35,
-                            color: scheme.onSurfaceVariant,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Icon(
-                    Icons.chevron_right_rounded,
-                    color: scheme.onSurfaceVariant,
-                  ),
-                ],
-              ),
-            ),
-          ),
-        WalletSection(
-          title: loc.lostWalletWhatsInside,
-          icon: Icons.account_balance_wallet_rounded,
-          count: carried.length,
-        ),
-        if (carried.isEmpty)
-          WalletPanel(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                WalletBadge(
-                  icon: Icons.account_balance_wallet_rounded,
-                  colour: scheme.primary,
-                ),
-                const SizedBox(height: 12),
-                Text(
-                  loc.lostWalletEmptyTitle,
-                  style: const TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w800,
-                  ),
-                ),
-                const SizedBox(height: 6),
-                Text(
-                  loc.lostWalletSetPlaceBody,
-                  style: TextStyle(
-                    fontSize: 13.5,
-                    height: 1.4,
-                    color: scheme.onSurfaceVariant,
-                  ),
-                ),
-              ],
-            ),
-          )
-        else
-          for (final place in KeptIn.carried)
-            if (carried.any((r) => r.place == place)) ...[
-              _PlaceLabel(
-                place: place,
-                count: carried.where((r) => r.place == place).length,
-              ),
-              for (final record in carried.where((r) => r.place == place))
-                _CarriedRow(record: record, onTap: () => _openRecord(record)),
-            ],
-        if (history.isNotEmpty) ...[
           WalletSection(
-            title: loc.lostWalletHistory,
-            icon: Icons.history_rounded,
-            count: history.length,
+            title: loc.lostWalletCheckupTitle,
+            icon: Icons.health_and_safety_rounded,
+            subtitle: loc.lostWalletCheckupBody,
           ),
-          for (final plan in history)
+          TutorialTarget(
+            steps: const [
+              TutorialStep.walletPrepare,
+              TutorialStep.walletLostNumber,
+            ],
+            child: WalletPanel(
+              padding: const EdgeInsets.fromLTRB(16, 14, 8, 8),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  if (carried.isEmpty)
+                    _Issue(
+                      icon: Icons.touch_app_rounded,
+                      colour: scheme.primary,
+                      text: loc.lostWalletSetPlaceBody,
+                    )
+                  else if (noPhoto == 0 && noLine == 0 && travelDocs == 0)
+                    _Issue(
+                      icon: Icons.verified_rounded,
+                      colour: scheme.primary,
+                      text: loc.lostWalletCheckupAllGood,
+                    )
+                  else ...[
+                    if (noLine > 0)
+                      _Issue(
+                        icon: Icons.phone_disabled_rounded,
+                        colour: scheme.error,
+                        text: loc.lostWalletIssueLines(noLine),
+                        action: loc.lostWalletAddLine,
+                        onTap: () =>
+                            showCardsWithoutNumber(context, <TrackedItem>[
+                              for (final r in carried)
+                                if (KeptIn.cardGroups.contains(
+                                      r.subcategoryName,
+                                    ) &&
+                                    r.lostLine == null)
+                                  r,
+                            ]),
+                      ),
+                    if (noPhoto > 0)
+                      _Issue(
+                        icon: Icons.no_photography_rounded,
+                        colour: const Color(0xFFF59E0B),
+                        text: loc.lostWalletIssuePhotos(noPhoto),
+                      ),
+                    if (travelDocs > 0)
+                      _Issue(
+                        icon: Icons.luggage_rounded,
+                        colour: const Color(0xFFF59E0B),
+                        text: loc.lostWalletIssuePassport(travelDocs),
+                      ),
+                  ],
+                  const Divider(height: 18),
+                  SwitchListTile.adaptive(
+                    contentPadding: const EdgeInsetsDirectional.only(end: 4),
+                    value: _checkOn,
+                    onChanged: _setCheck,
+                    secondary: Icon(
+                      Icons.event_repeat_rounded,
+                      color: scheme.primary,
+                    ),
+                    title: Text(
+                      loc.walletCheckToggle,
+                      style: const TextStyle(
+                        fontSize: 14.5,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    subtitle: Text(
+                      loc.walletCheckToggleBody,
+                      style: TextStyle(
+                        fontSize: 12.5,
+                        color: scheme.onSurfaceVariant,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          if (carried.any((r) => LifeEvents.blocksFirst(r.subcategoryName)))
             Padding(
-              padding: const EdgeInsets.only(bottom: 8),
+              padding: const EdgeInsets.only(top: 10),
               child: WalletPanel(
                 padding: const EdgeInsets.fromLTRB(14, 12, 10, 12),
-                onTap: () => openLostWallet(context, planId: plan.id),
+                onTap: () => EmergencySheet.share(context),
                 child: Row(
                   children: [
                     WalletBadge(
-                      icon: plan.isFound
-                          ? Icons.check_circle_rounded
-                          : Icons.task_alt_rounded,
+                      icon: Icons.print_rounded,
                       colour: scheme.primary,
                       size: 36,
                     ),
@@ -475,7 +382,7 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            LifePlanText.title(loc, plan),
+                            loc.lostWalletSheetButton,
                             style: const TextStyle(
                               fontSize: 14.5,
                               fontWeight: FontWeight.w800,
@@ -483,13 +390,10 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
                           ),
                           const SizedBox(height: 2),
                           Text(
-                            <String>[
-                              if (plan.date != null)
-                                LifePlanText.date(context, plan.date!),
-                              if (plan.isFound) loc.lostWalletFound,
-                            ].join(' · '),
+                            loc.lostWalletSheetHint,
                             style: TextStyle(
                               fontSize: 12.5,
+                              height: 1.35,
                               color: scheme.onSurfaceVariant,
                             ),
                           ),
@@ -504,8 +408,109 @@ class _LostWalletScreenState extends State<LostWalletScreen> {
                 ),
               ),
             ),
+          WalletSection(
+            title: loc.lostWalletWhatsInside,
+            icon: Icons.account_balance_wallet_rounded,
+            count: carried.length,
+          ),
+          if (carried.isEmpty)
+            WalletPanel(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  WalletBadge(
+                    icon: Icons.account_balance_wallet_rounded,
+                    colour: scheme.primary,
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    loc.lostWalletEmptyTitle,
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    loc.lostWalletSetPlaceBody,
+                    style: TextStyle(
+                      fontSize: 13.5,
+                      height: 1.4,
+                      color: scheme.onSurfaceVariant,
+                    ),
+                  ),
+                ],
+              ),
+            )
+          else
+            for (final place in KeptIn.carried)
+              if (carried.any((r) => r.place == place)) ...[
+                _PlaceLabel(
+                  place: place,
+                  count: carried.where((r) => r.place == place).length,
+                ),
+                for (final record in carried.where((r) => r.place == place))
+                  _CarriedRow(record: record, onTap: () => _openRecord(record)),
+              ],
+          if (history.isNotEmpty) ...[
+            WalletSection(
+              title: loc.lostWalletHistory,
+              icon: Icons.history_rounded,
+              count: history.length,
+            ),
+            for (final plan in history)
+              Padding(
+                padding: const EdgeInsets.only(bottom: 8),
+                child: WalletPanel(
+                  padding: const EdgeInsets.fromLTRB(14, 12, 10, 12),
+                  onTap: () => openLostWallet(context, planId: plan.id),
+                  child: Row(
+                    children: [
+                      WalletBadge(
+                        icon: plan.isFound
+                            ? Icons.check_circle_rounded
+                            : Icons.task_alt_rounded,
+                        colour: scheme.primary,
+                        size: 36,
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              LifePlanText.title(loc, plan),
+                              style: const TextStyle(
+                                fontSize: 14.5,
+                                fontWeight: FontWeight.w800,
+                              ),
+                            ),
+                            const SizedBox(height: 2),
+                            Text(
+                              <String>[
+                                if (plan.date != null)
+                                  LifePlanText.date(context, plan.date!),
+                                if (plan.isFound) loc.lostWalletFound,
+                              ].join(' · '),
+                              style: TextStyle(
+                                fontSize: 12.5,
+                                color: scheme.onSurfaceVariant,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Icon(
+                        Icons.chevron_right_rounded,
+                        color: scheme.onSurfaceVariant,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+          ],
         ],
-      ],
+      ),
     );
   }
 

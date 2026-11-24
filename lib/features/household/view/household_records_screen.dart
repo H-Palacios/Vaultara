@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -133,6 +134,44 @@ class _HouseholdRecordsScreenState extends State<HouseholdRecordsScreen> {
     if (mounted) setState(() {});
   }
 
+  /// One shared record's card, with what the user may do to it.
+  Widget _card(TrackedItem record, AppLocalizations loc) {
+    return RecordCard(
+      record: record,
+      showSharedBadge: false,
+      status: RecordStatus.of(record, loc),
+      onEdit: () => RecordLock.guard(
+        context,
+        record,
+        () => _edit(record),
+      ),
+      onRenew: () => RecordLock.guard(
+        context,
+        record,
+        () => _renew(record),
+      ),
+      onDelete: () => RecordLock.guard(
+        context,
+        record,
+        () => _delete(record),
+      ),
+      onViewNotes: (record.notes?.trim() ?? '').isEmpty
+          ? null
+          : () => RecordLock.guard(
+                context,
+                record,
+                () => RecordNotesDialog.show(
+                  context,
+                  title: record.name,
+                  notes: record.notes!.trim(),
+                ),
+              ),
+      onHowToRenew: () => _guide(record),
+      onAddToCalendar: () =>
+          CalendarExport.addOne(context, record),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
@@ -140,6 +179,7 @@ class _HouseholdRecordsScreenState extends State<HouseholdRecordsScreen> {
 
     return Scaffold(
       body: WideCentered(
+        maxWidth: WideCentered.twoColumnMaxWidth,
         child: SafeArea(
           child: ValueListenableBuilder<int>(
             valueListenable: HouseholdRepository.revision,
@@ -225,41 +265,12 @@ class _HouseholdRecordsScreenState extends State<HouseholdRecordsScreen> {
                         ),
                       )
                     else
-                      for (final record in records)
-                        RecordCard(
-                          record: record,
-                          showSharedBadge: false,
-                          status: RecordStatus.of(record, loc),
-                          onEdit: () => RecordLock.guard(
-                            context,
-                            record,
-                            () => _edit(record),
-                          ),
-                          onRenew: () => RecordLock.guard(
-                            context,
-                            record,
-                            () => _renew(record),
-                          ),
-                          onDelete: () => RecordLock.guard(
-                            context,
-                            record,
-                            () => _delete(record),
-                          ),
-                          onViewNotes: (record.notes?.trim() ?? '').isEmpty
-                              ? null
-                              : () => RecordLock.guard(
-                                    context,
-                                    record,
-                                    () => RecordNotesDialog.show(
-                                      context,
-                                      title: record.name,
-                                      notes: record.notes!.trim(),
-                                    ),
-                                  ),
-                          onHowToRenew: () => _guide(record),
-                          onAddToCalendar: () =>
-                              CalendarExport.addOne(context, record),
-                        ),
+                      // Where there is room the cards sit in two columns.
+                      AdaptiveList(
+                        items: [
+                          for (final record in records) _card(record, loc),
+                        ],
+                      ),
                     if (focused && records.isNotEmpty)
                       Center(
                         child: TextButton(
