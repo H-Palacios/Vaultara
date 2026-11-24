@@ -1,3 +1,4 @@
+import 'package:vaultara/core/layout/beside_list.dart';
 import 'package:vaultara/features/reminders/view/notification_ask_sheet.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/core/errors/error_reporter.dart';
@@ -473,10 +474,11 @@ class _RecordsScreenState extends State<RecordsScreen> {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) return Center(child: Text(loc.notLoggedIn));
 
-    final edgePad = (MediaQuery.of(context).size.width * 0.05).clamp(
-      16.0,
-      40.0,
-    );
+    // Held sideways the page is two narrower columns, so the edges stay
+    // small instead of growing with the width.
+    final edgePad = BesideList.sideBySide(context)
+        ? 12.0
+        : (MediaQuery.of(context).size.width * 0.05).clamp(16.0, 40.0);
     const maxContentWidth = 720.0;
     final groupName = CategoryResolver.groupLabel(context, widget.groupKey);
 
@@ -655,96 +657,106 @@ class _RecordsScreenState extends State<RecordsScreen> {
                           }
 
                           final groupEmpty = all.isEmpty;
+                          final hasControls =
+                              !groupEmpty ||
+                              (focused != null && focused.isNotEmpty);
 
                           return Column(
                             children: [
-                              constrained(
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                                  children: [
-                                    if (!groupEmpty) ...[
-                                      if (all.length > _searchFrom ||
-                                          _searchController.text.isNotEmpty)
-                                        Padding(
-                                          padding: const EdgeInsets.fromLTRB(
-                                            0,
-                                            12,
-                                            0,
-                                            4,
-                                          ),
-                                          child: SearchField(
-                                            controller: _searchController,
-                                            hintText: loc.searchRecords,
-                                            onChanged: () => setState(() {}),
-                                          ),
-                                        ),
-                                      Padding(
-                                        padding: const EdgeInsets.fromLTRB(
-                                          0,
-                                          8,
-                                          0,
-                                          4,
-                                        ),
-                                        child: Row(
-                                          children: [
-                                            Expanded(
-                                              child: PersonFilterChips(
-                                                padding: EdgeInsets.zero,
-                                                records: all,
-                                                value: _person,
-                                                onChanged: (value) => setState(
-                                                  () => _person = value,
-                                                ),
+                              Expanded(
+                                // Held sideways the search and the filters
+                                // sit beside the records, so the list keeps
+                                // the whole height.
+                                child: BesideList(
+                                  controls: hasControls
+                                      ? constrained(
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                                      children: [
+                                        if (!groupEmpty) ...[
+                                          if (all.length > _searchFrom ||
+                                              _searchController.text.isNotEmpty)
+                                            Padding(
+                                              padding: const EdgeInsets.fromLTRB(
+                                                0,
+                                                12,
+                                                0,
+                                                4,
+                                              ),
+                                              child: SearchField(
+                                                controller: _searchController,
+                                                hintText: loc.searchRecords,
+                                                onChanged: () => setState(() {}),
                                               ),
                                             ),
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                    if (focused != null && focused.isNotEmpty)
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional.centerStart,
-                                        child: TextButton.icon(
-                                          onPressed: () =>
-                                              setState(() => _focusId = null),
-                                          icon: const Icon(
-                                            Icons.unfold_more_rounded,
-                                            size: 18,
+                                          Padding(
+                                            padding: const EdgeInsets.fromLTRB(
+                                              0,
+                                              8,
+                                              0,
+                                              4,
+                                            ),
+                                            child: Row(
+                                              children: [
+                                                Expanded(
+                                                  child: PersonFilterChips(
+                                                    padding: EdgeInsets.zero,
+                                                    records: all,
+                                                    value: _person,
+                                                    onChanged: (value) => setState(
+                                                      () => _person = value,
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
                                           ),
-                                          label: Text(
-                                            loc.recordsShowAll(all.length),
+                                        ],
+                                        if (focused != null && focused.isNotEmpty)
+                                          Align(
+                                            alignment:
+                                                AlignmentDirectional.centerStart,
+                                            child: TextButton.icon(
+                                              onPressed: () =>
+                                                  setState(() => _focusId = null),
+                                              icon: const Icon(
+                                                Icons.unfold_more_rounded,
+                                                size: 18,
+                                              ),
+                                              label: Text(
+                                                loc.recordsShowAll(all.length),
+                                              ),
+                                            ),
                                           ),
-                                        ),
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              Expanded(
-                                child: constrained(
-                                  groupEmpty
-                                      ? _EmptyGroup(
-                                          groupName: groupName,
-                                          onScan: () =>
-                                              _openAddRecordSheet(scan: true),
-                                        )
-                                      : result.isEmpty
-                                      ? SearchEmptyState(
-                                          reason: result.emptyReason,
-                                          noMatchesText: loc.recordsNoMatch(
-                                            result.query,
+                                      ],
+                                    ),
+                                  )
+                                      : null,
+                                  list: constrained(
+                                    groupEmpty
+                                        ? _EmptyGroup(
+                                            groupName: groupName,
+                                            onScan: () =>
+                                                _openAddRecordSheet(scan: true),
+                                          )
+                                        : result.isEmpty
+                                        ? SearchEmptyState(
+                                            reason: result.emptyReason,
+                                            noMatchesText: loc.recordsNoMatch(
+                                              result.query,
+                                            ),
+                                            emptyText: loc.noRecordsYet,
+                                          )
+                                        : ListView(
+                                            padding: const EdgeInsets.fromLTRB(
+                                              0,
+                                              8,
+                                              0,
+                                              16,
+                                            ),
+                                            children: children,
                                           ),
-                                          emptyText: loc.noRecordsYet,
-                                        )
-                                      : ListView(
-                                          padding: const EdgeInsets.fromLTRB(
-                                            0,
-                                            8,
-                                            0,
-                                            16,
-                                          ),
-                                          children: children,
-                                        ),
+                                  ),
                                 ),
                               ),
                               if (_selecting)

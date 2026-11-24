@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/beside_list.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -122,64 +123,67 @@ class _RecentlyDeletedScreenState extends State<RecentlyDeletedScreen>
           ),
         ),
         body: WideCentered(
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16, 12, 16, 6),
-                child: HintBanner(text: loc.recentlyDeletedBanner(tabLabel)),
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(16, 6, 16, 4),
-                child: SearchField(
-                  controller: _searchController,
-                  hintText: loc.searchDeletedHint(tabLabel),
-                  onChanged: () => setState(() {}),
+          child: BesideList(
+            // Held sideways the note and the search sit beside the list, so
+            // the list keeps the height left under the tabs.
+            controls: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 12, 16, 6),
+                  child: HintBanner(text: loc.recentlyDeletedBanner(tabLabel)),
                 ),
-              ),
-              Expanded(
-                child: ListenableBuilder(
-                  listenable: _controller,
-                  builder: (context, _) => TabBarView(
-                    controller: _tabController,
-                    children: [
-                      DeletedTab<CategoryItem>(
-                        future: _controller.categories,
-                        labelOf: _labels.forCategory,
-                        query: query,
-                        target: DeleteTarget.category,
-                        emptyText: loc.noDeletedItems(loc.categories),
-                        noMatchesText: loc.categoriesNoMatch(query),
-                        onRestore: _controller.restoreCategory,
-                        onDeleteForever: _controller.deleteCategory,
-                      ),
-                      DeletedTab<DeletedGroup>(
-                        future: _controller.groups,
-                        labelOf: _labels.forGroup,
-                        query: query,
-                        target: DeleteTarget.subcategory,
-                        emptyText: loc.noDeletedItems(loc.groups),
-                        noMatchesText: loc.groupsNoMatch(query),
-                        onRestore: _controller.restoreGroup,
-                        onDeleteForever: _controller.deleteGroup,
-                      ),
-                      DeletedTab<TrackedItem>(
-                        future: _controller.records,
-                        labelOf: (record) => record.name,
-                        subtitleOf: (record) => _recordLine(record, loc),
-                        daysLeftOf: _daysLeft,
-                        query: query,
-                        target: DeleteTarget.item,
-                        emptyText: loc.noDeletedItems(loc.records),
-                        noMatchesText: loc.recordsNoMatch(query),
-                        onRestore: _controller.restoreRecord,
-                        onDeleteForever: _controller.deleteRecord,
-                        canDeleteForever: RecordRepository.canDelete,
-                      ),
-                    ],
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 6, 16, 4),
+                  child: SearchField(
+                    controller: _searchController,
+                    hintText: loc.searchDeletedHint(tabLabel),
+                    onChanged: () => setState(() {}),
                   ),
                 ),
+              ],
+            ),
+            list: ListenableBuilder(
+              listenable: _controller,
+              builder: (context, _) => TabBarView(
+                controller: _tabController,
+                children: [
+                  DeletedTab<CategoryItem>(
+                    future: _controller.categories,
+                    labelOf: _labels.forCategory,
+                    query: query,
+                    target: DeleteTarget.category,
+                    emptyText: loc.noDeletedItems(loc.categories),
+                    noMatchesText: loc.categoriesNoMatch(query),
+                    onRestore: _controller.restoreCategory,
+                    onDeleteForever: _controller.deleteCategory,
+                  ),
+                  DeletedTab<DeletedGroup>(
+                    future: _controller.groups,
+                    labelOf: _labels.forGroup,
+                    query: query,
+                    target: DeleteTarget.subcategory,
+                    emptyText: loc.noDeletedItems(loc.groups),
+                    noMatchesText: loc.groupsNoMatch(query),
+                    onRestore: _controller.restoreGroup,
+                    onDeleteForever: _controller.deleteGroup,
+                  ),
+                  DeletedTab<TrackedItem>(
+                    future: _controller.records,
+                    labelOf: (record) => record.name,
+                    subtitleOf: (record) => _recordLine(record, loc),
+                    daysLeftOf: _daysLeft,
+                    query: query,
+                    target: DeleteTarget.item,
+                    emptyText: loc.noDeletedItems(loc.records),
+                    noMatchesText: loc.recordsNoMatch(query),
+                    onRestore: _controller.restoreRecord,
+                    onDeleteForever: _controller.deleteRecord,
+                    canDeleteForever: RecordRepository.canDelete,
+                  ),
+                ],
               ),
-            ],
+            ),
           ),
         ),
       ),
