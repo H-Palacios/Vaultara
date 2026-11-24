@@ -74,6 +74,17 @@ const t = require(path.join(__dirname, "..", "assistant"))._test;
   assert.doesNotMatch(t.STATIC_PROMPT_V17, /adding a pet and the travel rules/);
   assert.match(t.STATIC_PROMPT_V16, /Pets > Pet travel rules, or a pet's Pet travel button/);
 
+  // Version 18 adds the trip check, the to-do list, Remind and Proof pack.
+  for (const name of ["check_trip_ready", "get_to_do", "propose_remind", "propose_proof_pack"]) {
+    assert.ok(t.NAMES_V18.has(name), name);
+    assert.ok(!t.NAMES_V17.has(name), name);
+  }
+  for (const name of t.NAMES_V17) assert.ok(t.NAMES_V18.has(name), `v18 keeps ${name}`);
+  assert.strictEqual(t.TOOLS_V18[t.TOOLS_V18.length - 1].name, "suggest_replies");
+  assert.match(t.STATIC_PROMPT_V18, /Fix it in time/);
+  assert.match(t.STATIC_PROMPT_V18, /Lost or stolen in Talk mode/);
+  assert.doesNotMatch(t.STATIC_PROMPT_V17, /check_trip_ready/);
+
   // Tutorials are offered when asked to be shown, not for things to do.
   const open = t.TOOLS_V17.find((tool) => tool.name === "open_screen");
   assert.match(open.description, /asks to be shown how to do something/);

@@ -823,6 +823,16 @@ const TOOLS_V17 = [
   SUGGEST_REPLIES,
 ];
 const NAMES_V17 = new Set(TOOLS_V17.map((t) => t.name));
+// Protocol 18: trip readiness with deadlines, the to-do list, reminding a
+// household member and the Proof pack.
+const { displayNameFor } = require("./household");
+const V18 = require("./assistant-v18")({ admin, str, isoDay, pushAction, draftReady, displayNameFor });
+const TOOLS_V18 = [
+  ...TOOLS_V17.filter((t) => t.name !== "suggest_replies"),
+  ...V18.TOOLS.map(V17.withFields),
+  SUGGEST_REPLIES,
+];
+const NAMES_V18 = new Set(TOOLS_V18.map((t) => t.name));
 let webSearchOff = false;
 
 // Sent when a turn ended with no words and no card.
@@ -2254,7 +2264,9 @@ async function runToolCore(ctx, name, input, actions) {
         const v16 = ctx.v16 ? await V16.run(ctx, name, input) : undefined;
         if (v16 !== undefined) return v16;
         const v17 = ctx.v17 ? await V17.run(ctx, name, input, actions) : undefined;
-        return v17 === undefined ? { error: "Unknown tool." } : v17;
+        if (v17 !== undefined) return v17;
+        const v18 = ctx.v18 ? await V18.run(ctx, name, input, actions) : undefined;
+        return v18 === undefined ? { error: "Unknown tool." } : v18;
       }
     }
   } catch (err) {
@@ -2264,7 +2276,7 @@ async function runToolCore(ctx, name, input, actions) {
 }
 
 // Built once when the module loads, so it may only use its own arguments.
-function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false, v10 = false, v13 = false, v14 = false, v15 = false, v16 = false, v17 = false) {
+function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false, v10 = false, v13 = false, v14 = false, v15 = false, v16 = false, v17 = false, v18 = false) {
   const lines = [
     "You are the Vaultara assistant inside the Vaultara app, which tracks expiry dates of documents, cards, licences, permits and policies.",
     "Help with the user's own records, people, trips and renewals in Vaultara, and answer questions about how the app works and where things are. Politely decline unrelated topics in one sentence.",
@@ -2354,6 +2366,7 @@ function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = f
   if (v15) lines.push(...(v17 ? V17.petGuide(V15.GUIDE) : V15.GUIDE));
   if (v16) lines.push(...V16.GUIDE);
   if (v17) lines.push(...V17.GUIDE);
+  if (v18) lines.push(...V18.GUIDE);
   return lines.join("\n");
 }
 
@@ -2370,6 +2383,7 @@ const STATIC_PROMPT_V14 = staticPrompt(true, true, true, true, true, true, true,
 const STATIC_PROMPT_V15 = staticPrompt(true, true, true, true, true, true, true, true, true, true);
 const STATIC_PROMPT_V16 = staticPrompt(true, true, true, true, true, true, true, true, true, true, true);
 const STATIC_PROMPT_V17 = staticPrompt(true, true, true, true, true, true, true, true, true, true, true, true);
+const STATIC_PROMPT_V18 = staticPrompt(true, true, true, true, true, true, true, true, true, true, true, true, true);
 
 function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false, v10 = false) {
   const date = dayToDate(ctx.today);
@@ -2438,7 +2452,7 @@ function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false,
   return [
     {
       type: "text",
-      text: ctx.v17 && v10 ? STATIC_PROMPT_V17 : ctx.v16 && v10 ? STATIC_PROMPT_V16 : ctx.v15 && v10 ? STATIC_PROMPT_V15 : ctx.v14 && v10 ? STATIC_PROMPT_V14 : ctx.v13 && v10 ? STATIC_PROMPT_V13 : v10 ? STATIC_PROMPT_V10 : v7 ? STATIC_PROMPT_V7 : v6 ? STATIC_PROMPT_V6 : v5 ? STATIC_PROMPT_V5 : v4 ? STATIC_PROMPT_V4 : v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1,
+      text: ctx.v18 && v10 ? STATIC_PROMPT_V18 : ctx.v17 && v10 ? STATIC_PROMPT_V17 : ctx.v16 && v10 ? STATIC_PROMPT_V16 : ctx.v15 && v10 ? STATIC_PROMPT_V15 : ctx.v14 && v10 ? STATIC_PROMPT_V14 : ctx.v13 && v10 ? STATIC_PROMPT_V13 : v10 ? STATIC_PROMPT_V10 : v7 ? STATIC_PROMPT_V7 : v6 ? STATIC_PROMPT_V6 : v5 ? STATIC_PROMPT_V5 : v4 ? STATIC_PROMPT_V4 : v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1,
       cache_control: { type: "ephemeral" },
     },
     { type: "text", text: dynamic.join("\n") },
@@ -2535,7 +2549,9 @@ async function stepFor(ctx, name, input) {
       const v16 = ctx.v16 ? await V16.step(ctx, name) : undefined;
       if (v16 !== undefined) return v16;
       const v17 = ctx.v17 ? V17.step(ctx, name, input) : undefined;
-      return v17 === undefined ? step ?? null : v17;
+      if (v17 !== undefined) return v17;
+      const v18 = ctx.v18 ? V18.step(ctx, name, input) : undefined;
+      return v18 === undefined ? step ?? null : v18;
     }
   }
 }
@@ -2764,6 +2780,7 @@ exports.askVaultara = onCall(
     const v15 = version >= 15 && intent === "chat";
     const v16 = version >= 16 && intent === "chat";
     const v17 = version >= 17 && intent === "chat";
+    const v18 = version >= 18 && intent === "chat";
     const v7 = version >= 7 && intent === "chat";
     const v8 = version >= 8 && intent === "chat";
     const v9 = version >= 9;
@@ -2810,15 +2827,16 @@ exports.askVaultara = onCall(
     ctx.v15 = v15;
     ctx.v16 = v16;
     ctx.v17 = v17;
+    ctx.v18 = v18;
     ctx.talk = v12 && request.data?.mode === "talk";
     ctx.webSearch = v12 && !webSearchOff && process.env.ASSISTANT_WEB_SEARCH !== "off";
     ctx.learned = v11 ? await ctx.learnedWords() : [];
     ctx.lifePlanList = v7 ? await ctx.activeLifePlans() : [];
     const system = systemPrompt(ctx, lang, intent, v2, v3, v4, v5, v6, v7, v10);
-    const baseTools = v17 ? TOOLS_V17 : v16 ? TOOLS_V16 : v15 ? TOOLS_V15 : v14 ? TOOLS_V14 : v13 ? TOOLS_V13 : v12 ? TOOLS_V12 : v11 ? TOOLS_V11 : v10 ? TOOLS_V10 : v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
+    const baseTools = v18 ? TOOLS_V18 : v17 ? TOOLS_V17 : v16 ? TOOLS_V16 : v15 ? TOOLS_V15 : v14 ? TOOLS_V14 : v13 ? TOOLS_V13 : v12 ? TOOLS_V12 : v11 ? TOOLS_V11 : v10 ? TOOLS_V10 : v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
     const groupTools = v9 ? withGroupsV9(baseTools) : baseTools;
     const tools = ctx.webSearch ? [...groupTools, COACH_MODULE.WEB_SEARCH_TOOL] : groupTools;
-    const allowed = v17 ? NAMES_V17 : v16 ? NAMES_V16 : v15 ? NAMES_V15 : v14 ? NAMES_V14 : v13 ? NAMES_V13 : v12 ? NAMES_V12 : v11 ? NAMES_V11 : v10 ? NAMES_V10 : v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
+    const allowed = v18 ? NAMES_V18 : v17 ? NAMES_V17 : v16 ? NAMES_V16 : v15 ? NAMES_V15 : v14 ? NAMES_V14 : v13 ? NAMES_V13 : v12 ? NAMES_V12 : v11 ? NAMES_V11 : v10 ? NAMES_V10 : v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
     const progress = new RunProgress(uid, v3 ? runId : null);
     let replies = [];
     const conversation = messages.map((m) => ({ role: m.role, content: m.content }));
@@ -3026,6 +3044,9 @@ exports._test = {
   NAMES_V16,
   TOOLS_V17,
   NAMES_V17,
+  TOOLS_V18,
+  NAMES_V18,
   STATIC_PROMPT_V16,
   STATIC_PROMPT_V17,
+  STATIC_PROMPT_V18,
 };
