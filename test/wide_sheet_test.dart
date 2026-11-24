@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
+import 'package:vaultara/core/view/widgets/app_side_sheet.dart';
 
 const _tabletSideways = Size(1280, 800);
+const _tabletUpright = Size(800, 1280);
 const _sevenUpright = Size(600, 960);
 const _phone = Size(412, 915);
 const _phoneSideways = Size(915, 412);
@@ -266,6 +268,84 @@ void main() {
     ) async {
       expect((await pageSize(tester, _phone)).width, _phone.width);
       expect((await pageSize(tester, _sevenUpright)).width, _sevenUpright.width);
+    });
+  });
+
+  group('how wide a sheet opens', () {
+    Future<double> sheetWidth(
+      WidgetTester tester,
+      Size screen,
+      WideSheetStyle style,
+    ) async {
+      var width = 0.0;
+      await _openSheet(
+        tester,
+        screen,
+        style: style,
+        builder: (sheetContext) => LayoutBuilder(
+          builder: (context, box) {
+            width = box.maxWidth;
+            return const Text('Save');
+          },
+        ),
+      );
+      return width;
+    }
+
+    testWidgets('a long form gets 760 beside a 10-inch tablet held sideways', (
+      tester,
+    ) async {
+      expect(
+        await sheetWidth(tester, _tabletSideways, WideSheetStyle.form),
+        AppSideSheet.formWidth,
+      );
+      expect(find.byType(BottomSheet), findsNothing);
+    });
+
+    testWidgets('a shorter form keeps the 520 side sheet', (tester) async {
+      expect(
+        await sheetWidth(tester, _tabletSideways, WideSheetStyle.side),
+        AppSideSheet.width,
+      );
+    });
+
+    testWidgets('held upright, a 10-inch tablet gives a long form 760', (
+      tester,
+    ) async {
+      expect(
+        await sheetWidth(tester, _tabletUpright, WideSheetStyle.form),
+        AppSheet.formMaxWidth,
+      );
+      expect(find.byType(BottomSheet), findsOneWidget);
+    });
+
+    testWidgets('on a phone turned sideways a form opens from the side', (
+      tester,
+    ) async {
+      final width = await sheetWidth(
+        tester,
+        _phoneSideways,
+        WideSheetStyle.form,
+      );
+      expect(find.byType(BottomSheet), findsNothing);
+      // Most of the screen, but the page behind still shows.
+      expect(width, _phoneSideways.width * AppSideSheet.maxScreenShare);
+      expect(
+        tester.getTopLeft(find.text('Save')).dx,
+        greaterThan(_phoneSideways.width / 3),
+      );
+    });
+
+    testWidgets('a 7-inch tablet held upright keeps the bottom sheet', (
+      tester,
+    ) async {
+      final width = await sheetWidth(
+        tester,
+        _sevenUpright,
+        WideSheetStyle.form,
+      );
+      expect(find.byType(BottomSheet), findsOneWidget);
+      expect(width, _sevenUpright.width);
     });
   });
 }

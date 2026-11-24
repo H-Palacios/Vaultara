@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:vaultara/core/layout/adaptive_columns.dart';
+import 'package:vaultara/features/records/view/editor/editor_more_details.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 /// Puts [child] in a scrolling area [width] wide, as in a sheet or a page.
@@ -26,6 +27,36 @@ Widget _box(String key, double height) =>
 
 Rect _rect(WidgetTester tester, String key) =>
     tester.getRect(find.byKey(Key(key)));
+
+/// More details in the second column of a form [width] wide, with what it
+/// asks the form to do recorded in [toggles].
+Widget _form(
+  double width,
+  List<bool> toggles, {
+  bool openInTwoColumns = true,
+}) {
+  var expanded = false;
+  return _host(
+    width,
+    StatefulBuilder(
+      builder: (context, setState) => AdaptiveColumns(
+        left: [_box('main', 200)],
+        right: [
+          EditorMoreDetails(
+            expanded: expanded,
+            filledCount: 0,
+            openInTwoColumns: openInTwoColumns,
+            onToggle: (open) {
+              toggles.add(open);
+              setState(() => expanded = open);
+            },
+            children: const [Text('Chip number')],
+          ),
+        ],
+      ),
+    ),
+  );
+}
 
 void main() {
   group('AdaptiveColumns', () {
@@ -134,6 +165,42 @@ void main() {
         expect(card.top, _rect(tester, 'card ${i - 1}').bottom);
         expect(card.left, 0);
       }
+    });
+  });
+
+  group('More details in a form', () {
+    testWidgets('opens by itself once when it has a column of its own', (
+      tester,
+    ) async {
+      final toggles = <bool>[];
+      await tester.pumpWidget(_form(728, toggles));
+      await tester.pumpAndSettle();
+      expect(toggles, [true]);
+      expect(find.text('Chip number'), findsOneWidget);
+
+      // Closed by hand, it stays closed.
+      await tester.tap(find.text('More details'));
+      await tester.pumpAndSettle();
+      expect(toggles, [true, false]);
+      expect(find.text('Chip number'), findsNothing);
+    });
+
+    testWidgets('stays closed in one column, as on a phone', (tester) async {
+      final toggles = <bool>[];
+      await tester.pumpWidget(_form(400, toggles));
+      await tester.pumpAndSettle();
+      expect(toggles, isEmpty);
+      expect(find.text('Chip number'), findsNothing);
+    });
+
+    testWidgets('a form can keep it closed even in two columns', (
+      tester,
+    ) async {
+      final toggles = <bool>[];
+      await tester.pumpWidget(_form(728, toggles, openInTwoColumns: false));
+      await tester.pumpAndSettle();
+      expect(toggles, isEmpty);
+      expect(find.text('Chip number'), findsNothing);
     });
   });
 }

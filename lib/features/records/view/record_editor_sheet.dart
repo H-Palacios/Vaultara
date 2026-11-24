@@ -73,6 +73,7 @@ import 'package:vaultara/features/assistant/logic/group_suggester.dart';
 import 'package:vaultara/features/assistant/view/describe_record_sheet.dart';
 import 'package:vaultara/features/assistant/view/widgets/editor_assist_widgets.dart';
 import 'package:vaultara/features/billing/view/open_plans.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
 import 'package:vaultara/features/household/view/renewer_picker.dart';
 
@@ -105,6 +106,7 @@ Future<void> showRecordEditorSheet({
     enableDrag: false,
     showDragHandle: false,
     keepHeightWithKeyboard: true,
+    wideStyle: WideSheetStyle.form,
     builder: (sheetContext) {
       return _RecordEditorSheet(
         mode: mode,
@@ -1933,9 +1935,10 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
                   fit: keyboardOpen ? FlexFit.tight : FlexFit.loose,
                   child: SingleChildScrollView(
                     padding: const EdgeInsets.fromLTRB(16, 14, 16, 16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
+                    // In a wide sheet, what every record needs sits on the
+                    // left and More details on the right.
+                    child: AdaptiveColumns(
+                      left: [
                         IgnorePointer(
                           ignoring: isAnyTutorialMode,
                           child: Column(
@@ -2118,6 +2121,8 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
                                 setState(() => assigneeUid = uid),
                           ),
                         const SizedBox(height: 8),
+                      ],
+                      right: [
                         IgnorePointer(
                           ignoring: isAnyTutorialMode,
                           child: KeyedSubtree(

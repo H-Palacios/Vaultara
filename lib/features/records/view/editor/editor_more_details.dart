@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
-class EditorMoreDetails extends StatelessWidget {
+class EditorMoreDetails extends StatefulWidget {
   final bool expanded;
   final int filledCount;
   final ValueChanged<bool> onToggle;
@@ -10,6 +11,11 @@ class EditorMoreDetails extends StatelessWidget {
   /// The grey line under the title. Defaults to what the record form holds.
   final String? subtitle;
 
+  /// Opens the section the first time the form shows it in a second
+  /// column, where it has room beside the main fields. Closing it after
+  /// that keeps it closed.
+  final bool openInTwoColumns;
+
   const EditorMoreDetails({
     super.key,
     required this.expanded,
@@ -17,12 +23,38 @@ class EditorMoreDetails extends StatelessWidget {
     required this.onToggle,
     required this.children,
     this.subtitle,
+    this.openInTwoColumns = true,
   });
+
+  @override
+  State<EditorMoreDetails> createState() => _EditorMoreDetailsState();
+}
+
+class _EditorMoreDetailsState extends State<EditorMoreDetails> {
+  /// Set the first time the section is seen in two columns, so it opens
+  /// itself once and never again.
+  bool _seenInTwoColumns = false;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (!widget.openInTwoColumns || _seenInTwoColumns) return;
+    if (!AdaptiveColumns.twoColumnsOf(context)) return;
+    _seenInTwoColumns = true;
+    if (widget.expanded) return;
+    // The form owns whether the section is open, so it is asked to open
+    // it, after this frame.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted && !widget.expanded) widget.onToggle(true);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
+    final expanded = widget.expanded;
+    final filledCount = widget.filledCount;
 
     return Container(
       decoration: BoxDecoration(
@@ -34,7 +66,7 @@ class EditorMoreDetails extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           InkWell(
-            onTap: () => onToggle(!expanded),
+            onTap: () => widget.onToggle(!expanded),
             child: Padding(
               padding: const EdgeInsets.fromLTRB(14, 12, 10, 12),
               child: Row(
@@ -54,7 +86,7 @@ class EditorMoreDetails extends StatelessWidget {
                         ),
                         const SizedBox(height: 2),
                         Text(
-                          subtitle ?? loc.editorMoreDetailsHint,
+                          widget.subtitle ?? loc.editorMoreDetailsHint,
                           style: TextStyle(
                             fontSize: 12.5,
                             color: scheme.onSurfaceVariant,
@@ -104,7 +136,7 @@ class EditorMoreDetails extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(12, 4, 12, 12),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: children,
+                      children: widget.children,
                     ),
                   )
                 : const SizedBox(width: double.infinity),

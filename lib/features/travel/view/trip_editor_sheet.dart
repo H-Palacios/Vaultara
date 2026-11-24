@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/view/widgets/app_date_picker.dart';
 import 'package:vaultara/core/data/models/person.dart';
 import 'package:vaultara/core/data/repositories/people_repository.dart';
@@ -28,6 +29,7 @@ Future<SavedTrip?> showTripEditorSheet(
     context: context,
     showDragHandle: false,
     enableDrag: false,
+    wideStyle: WideSheetStyle.form,
     builder: (_) => _TripEditorSheet(trip: trip),
   );
 }
@@ -795,9 +797,10 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
               Flexible(
                 child: SingleChildScrollView(
                   padding: const EdgeInsets.fromLTRB(16, 14, 16, 16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
+                  // In a wide sheet where and when sit on the left, and why,
+                  // the flights and the trip's name on the right.
+                  child: AdaptiveColumns(
+                    left: [
                       _destinationField(loc, scheme),
                       if (_nameError != null) ...[
                         const SizedBox(height: 6),
@@ -888,6 +891,8 @@ class _TripEditorSheetState extends State<_TripEditorSheet> {
                             _who(loc, scheme, people),
                       ),
                       const SizedBox(height: 16),
+                    ],
+                    right: [
                       TripPurposePicker(
                         value: _purpose,
                         onChanged: (p) => setState(() => _purpose = p),

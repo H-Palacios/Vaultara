@@ -5,11 +5,22 @@ import 'package:vaultara/core/view/widgets/app_sheet_frame.dart';
 
 /// A sheet that slides in from the side and takes the full height of the
 /// screen, so a long form keeps its fields above the keyboard and the page
-/// behind it stays in view. Used on a 10-inch tablet held sideways.
+/// behind it stays in view. Used on phones and tablets held sideways.
 class AppSideSheet {
   const AppSideSheet._();
 
   static const double width = 520;
+
+  /// Width for a long form shown in two columns.
+  static const double formWidth = 760;
+
+  /// Most of the screen a side sheet may cover, so the page behind it
+  /// always shows.
+  static const double maxScreenShare = 0.62;
+
+  /// How wide the sheet is on a screen [screenWidth] wide.
+  static double widthFor(double screenWidth, {bool form = false}) =>
+      math.min(form ? formWidth : width, screenWidth * maxScreenShare);
 
   /// Room at the top, where a bottom sheet has its drag handle.
   static const double topSpace = 20;
@@ -21,6 +32,7 @@ class AppSideSheet {
     bool useRootNavigator = false,
     Color? backgroundColor,
     bool keepHeightWithKeyboard = false,
+    bool form = false,
   }) {
     final animate = !MediaQuery.of(context).disableAnimations;
 
@@ -53,7 +65,7 @@ class AppSideSheet {
               ),
             ),
             child: SizedBox(
-              width: math.min(width, media.size.width * 0.6),
+              width: widthFor(media.size.width, form: form),
               height: media.size.height,
               child: SafeArea(
                 bottom: false,

@@ -8,14 +8,20 @@ import 'package:vaultara/core/view/widgets/wide_sheet_style.dart';
 export 'package:vaultara/core/view/widgets/app_sheet_frame.dart';
 export 'package:vaultara/core/view/widgets/wide_sheet_style.dart';
 
-/// Opens every sheet in the app. Phones and 7-inch tablets get a bottom
-/// sheet. A 10-inch tablet held sideways gets a side sheet for forms, or a
-/// centred dialog for short choices, as [wideStyle] says.
+/// Opens every sheet in the app. Screens held upright get a bottom sheet.
+/// Screens held sideways (a phone turned sideways or a tablet) get a side
+/// sheet for forms, or a centred dialog for short choices, as [wideStyle]
+/// says. A long form ([WideSheetStyle.form]) gets a wider sheet, so on a
+/// tablet its fields can sit in two columns.
 class AppSheet {
   const AppSheet._();
 
   static const double maxHeightFactor = 0.9;
   static const double maxWidth = 640;
+
+  /// Widest bottom sheet for a long form, so a 10-inch tablet held upright
+  /// (about 800 wide) can show it in two columns.
+  static const double formMaxWidth = 760;
 
   static Future<T?> show<T>({
     required BuildContext context,
@@ -32,6 +38,7 @@ class AppSheet {
     if (WideLayout.of(context)) {
       switch (wideStyle) {
         case WideSheetStyle.side:
+        case WideSheetStyle.form:
           return AppSideSheet.show<T>(
             context: context,
             builder: builder,
@@ -39,6 +46,7 @@ class AppSheet {
             useRootNavigator: useRootNavigator,
             backgroundColor: backgroundColor,
             keepHeightWithKeyboard: keepHeightWithKeyboard,
+            form: wideStyle == WideSheetStyle.form,
           );
         case WideSheetStyle.dialog:
           return AppSheetDialog.show<T>(
@@ -63,7 +71,7 @@ class AppSheet {
       shape: shape,
       backgroundColor: backgroundColor,
       constraints: BoxConstraints(
-        maxWidth: maxWidth,
+        maxWidth: wideStyle == WideSheetStyle.form ? formMaxWidth : maxWidth,
         maxHeight: height * maxHeightFactor,
       ),
       builder: (sheetContext) => AppSheetFrame(

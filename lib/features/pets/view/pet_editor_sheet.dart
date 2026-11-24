@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/core/view/widgets/app_date_picker.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
@@ -24,6 +25,7 @@ Future<Pet?> showPetEditorSheet(
     context: context,
     showDragHandle: false,
     enableDrag: false,
+    wideStyle: WideSheetStyle.form,
     builder: (_) => _PetEditorSheet(pet: pet, openDetails: openDetails),
   );
 }
@@ -205,101 +207,111 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
               style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800),
             ),
             const SizedBox(height: 4),
-            _field(
-              _name,
-              loc.familyNameLabel,
-              loc.petNameHint,
-              max: Pet.maxName,
-              error: _nameError,
-              caps: TextCapitalization.words,
-            ),
-            const SizedBox(height: 12),
-            PetTypeField(
-              typeId: _typeId,
-              customType: _customType,
-              customGroup: _customGroup,
-              customEmoji: _customEmoji,
-              useHelper: true,
-              onChanged: (pick) => setState(() {
-                _typeId = pick.typeId;
-                _customType = pick.customType;
-                _customGroup = pick.customGroup;
-                _customEmoji = pick.customEmoji;
-                _typeBlocked = pick.blocked;
-              }),
-            ),
-            const SizedBox(height: 12),
-            Material(
-              color: AppInputDecorations.fillFor(scheme),
-              borderRadius: BorderRadius.circular(14),
-              child: ListTile(
-                shape: RoundedRectangleBorder(
+            // In a wide sheet the name, type and birthday sit on the left
+            // and More details on the right.
+            AdaptiveColumns(
+              left: [
+                _field(
+                  _name,
+                  loc.familyNameLabel,
+                  loc.petNameHint,
+                  max: Pet.maxName,
+                  error: _nameError,
+                  caps: TextCapitalization.words,
+                ),
+                const SizedBox(height: 12),
+                PetTypeField(
+                  typeId: _typeId,
+                  customType: _customType,
+                  customGroup: _customGroup,
+                  customEmoji: _customEmoji,
+                  useHelper: true,
+                  onChanged: (pick) => setState(() {
+                    _typeId = pick.typeId;
+                    _customType = pick.customType;
+                    _customGroup = pick.customGroup;
+                    _customEmoji = pick.customEmoji;
+                    _typeBlocked = pick.blocked;
+                  }),
+                ),
+                const SizedBox(height: 12),
+                Material(
+                  color: AppInputDecorations.fillFor(scheme),
                   borderRadius: BorderRadius.circular(14),
+                  child: ListTile(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(14),
+                    ),
+                    leading: const Icon(Icons.cake_rounded),
+                    title: Text(
+                      loc.petBirthday,
+                      style: const TextStyle(fontWeight: FontWeight.w600),
+                    ),
+                    subtitle: Text(
+                      born == null
+                          ? loc.petBirthdayHint
+                          : TravelText.date(context, born),
+                    ),
+                    trailing: born == null
+                        ? const Icon(Icons.chevron_right_rounded)
+                        : IconButton(
+                            tooltip: loc.familyRemove,
+                            icon: const Icon(Icons.close_rounded),
+                            onPressed: () => setState(() => _born = null),
+                          ),
+                    onTap: _pickBirthday,
+                  ),
                 ),
-                leading: const Icon(Icons.cake_rounded),
-                title: Text(
-                  loc.petBirthday,
-                  style: const TextStyle(fontWeight: FontWeight.w600),
-                ),
-                subtitle: Text(
-                  born == null
-                      ? loc.petBirthdayHint
-                      : TravelText.date(context, born),
-                ),
-                trailing: born == null
-                    ? const Icon(Icons.chevron_right_rounded)
-                    : IconButton(
-                        tooltip: loc.familyRemove,
-                        icon: const Icon(Icons.close_rounded),
-                        onPressed: () => setState(() => _born = null),
-                      ),
-                onTap: _pickBirthday,
-              ),
-            ),
-            const SizedBox(height: 12),
-            EditorMoreDetails(
-              expanded: _details,
-              filledCount: _detailsFilled,
-              subtitle: loc.petMoreDetailsHint,
-              onToggle: (open) => setState(() => _details = open),
-              children: [
-                _field(
-                  _chip,
-                  loc.petChipNumber,
-                  loc.petChipHint,
-                  keyboard: TextInputType.number,
-                  max: 20,
-                  error: _chipError,
-                  icon: Icons.memory_rounded,
-                  formatters: [
-                    FilteringTextInputFormatter.allow(RegExp(r'[0-9 \-]')),
-                  ],
-                ),
-                _field(
-                  _registry,
-                  loc.petChipRegistry,
-                  loc.petRegistryHint,
-                  max: Pet.maxRegistry,
-                  icon: Icons.storage_rounded,
-                  caps: TextCapitalization.words,
-                ),
-                _field(
-                  _vet,
-                  loc.petVetName,
-                  loc.petVetHint,
-                  max: Pet.maxVet,
-                  icon: Icons.local_hospital_rounded,
-                  caps: TextCapitalization.words,
-                ),
-                _field(
-                  _phone,
-                  loc.petVetPhone,
-                  loc.petVetPhoneHint,
-                  keyboard: TextInputType.phone,
-                  max: Pet.maxPhone,
-                  icon: Icons.call_rounded,
-                  formatters: [
-                    FilteringTextInputFormatter.allow(RegExp(r'[0-9+()\- ]')),
+                const SizedBox(height: 12),
+              ],
+              right: [
+                EditorMoreDetails(
+                  expanded: _details,
+                  filledCount: _detailsFilled,
+                  subtitle: loc.petMoreDetailsHint,
+                  onToggle: (open) => setState(() => _details = open),
+                  children: [
+                    _field(
+                      _chip,
+                      loc.petChipNumber,
+                      loc.petChipHint,
+                      keyboard: TextInputType.number,
+                      max: 20,
+                      error: _chipError,
+                      icon: Icons.memory_rounded,
+                      formatters: [
+                        FilteringTextInputFormatter.allow(RegExp(r'[0-9 \-]')),
+                      ],
+                    ),
+                    _field(
+                      _registry,
+                      loc.petChipRegistry,
+                      loc.petRegistryHint,
+                      max: Pet.maxRegistry,
+                      icon: Icons.storage_rounded,
+                      caps: TextCapitalization.words,
+                    ),
+                    _field(
+                      _vet,
+                      loc.petVetName,
+                      loc.petVetHint,
+                      max: Pet.maxVet,
+                      icon: Icons.local_hospital_rounded,
+                      caps: TextCapitalization.words,
+                    ),
+                    _field(
+                      _phone,
+                      loc.petVetPhone,
+                      loc.petVetPhoneHint,
+                      keyboard: TextInputType.phone,
+                      max: Pet.maxPhone,
+                      icon: Icons.call_rounded,
+                      formatters: [
+                        FilteringTextInputFormatter.allow(
+                          RegExp(r'[0-9+()\- ]'),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ],
