@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vaultara/features/household/logic/renewer_rules.dart';
@@ -40,7 +41,13 @@ class NotificationPrefs {
 
   static const String _docId = 'notifications';
 
-  static String? _uid() => FirebaseAuth.instance.currentUser?.uid;
+  /// The signed-in account, or null when there is none. Also null when
+  /// Firebase has not been started, as in tests, instead of throwing.
+  static String? _uid() {
+    if (Firebase.apps.isEmpty) return null;
+    return FirebaseAuth.instance.currentUser?.uid;
+  }
+
   static String _key(String uid, NotificationKind kind) =>
       'notif_${kind.field}_$uid';
 
