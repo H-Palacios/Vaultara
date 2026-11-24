@@ -8,6 +8,7 @@ import 'package:vaultara/features/change_history/data/change_entry.dart';
 import 'package:vaultara/features/costs/data/fx_rates.dart';
 import 'package:vaultara/features/costs/logic/renewal_savings.dart';
 import 'package:vaultara/features/pets/data/pet.dart';
+import 'package:vaultara/features/pets/data/pet_emoji.dart';
 import 'package:vaultara/features/pets/data/pet_entry.dart';
 import 'package:vaultara/features/pets/logic/pet_document_groups.dart';
 import 'package:vaultara/features/pets/logic/pet_travel_plan.dart';
@@ -140,6 +141,25 @@ void main() {
         isEmpty,
       );
     });
+  });
+
+  group('Pet emoji on older phones', () {
+    test(
+      'keeps the original where it can be drawn and swaps it where it cannot',
+      () {
+        const parrot = '\u{1F99C}';
+        const otter = '\u{1F9A6}';
+        const dog = '\u{1F415}';
+        expect(PetEmoji.forSdk(parrot, 27), '\u{1F426}');
+        expect(PetEmoji.forSdk(parrot, 28), parrot);
+        expect(PetEmoji.forSdk(otter, 28), '\u{1F43E}');
+        expect(PetEmoji.forSdk(otter, 29), otter);
+        expect(PetEmoji.forSdk('\u{1F994}', 26), '\u{1F43E}');
+        expect(PetEmoji.forSdk(dog, 24), dog);
+        // iPhone, or a version that could not be read: always the original.
+        expect(PetEmoji.forSdk(parrot, null), parrot);
+      },
+    );
   });
 
   group('Pet type guess', () {
