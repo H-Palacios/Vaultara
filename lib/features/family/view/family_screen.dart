@@ -16,6 +16,8 @@ import 'package:vaultara/core/view/widgets/screen_header.dart';
 import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
 import 'package:vaultara/features/billing/view/open_plans.dart';
 import 'package:vaultara/features/billing/view/widgets/company_name_tile.dart';
+import 'package:vaultara/features/family/logic/team_wording.dart';
+import 'package:vaultara/features/household/data/household_repository.dart';
 import 'package:vaultara/features/household/view/household_section.dart';
 import 'package:vaultara/features/staff/services/staff_email_service.dart';
 import 'package:vaultara/features/staff/view/compliance_report_tile.dart';
@@ -237,17 +239,23 @@ class _FamilyScreenState extends State<FamilyScreen> {
                   final counts = tour
                       ? TourSamples.recordCounts
                       : _countsFor(people);
+                  final team = TeamWording.isTeam(
+                    tier,
+                    tour ? null : HouseholdRepository.household.value,
+                  );
                   return ListView(
                     padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
                     // Kept until the Flutter version in use exports ScrollCacheExtent.
                     // ignore: deprecated_member_use
                     cacheExtent: TutorialController.listCacheExtent,
                     children: [
-                      ScreenHeader(title: loc.familyTitle),
+                      ScreenHeader(
+                        title: team ? loc.teamTitle : loc.familyTitle,
+                      ),
                       const TutorialHint(id: TutorialIds.family),
                       const SizedBox(height: 12),
                       Text(
-                        loc.familyIntro,
+                        team ? loc.teamIntro : loc.familyIntro,
                         style: TextStyle(
                           fontSize: 13,
                           height: 1.4,
@@ -338,7 +346,15 @@ class _FamilyScreenState extends State<FamilyScreen> {
                           onAdd: tour ? () {} : () => _addPerson(tier),
                         ),
                         if (tier == PlanTier.business) ...[
-                          const SizedBox(height: 16),
+                          const SizedBox(height: 24),
+                          Text(
+                            loc.tutorialsTitleBusiness,
+                            style: const TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                          const SizedBox(height: 10),
                           TutorialTarget(
                             steps: const [TutorialStep.businessImport],
                             child: StaffImportTile(enabled: !tour),
@@ -458,7 +474,7 @@ class _UpsellCard extends StatelessWidget {
     final loc = AppLocalizations.of(context)!;
 
     final benefits = <String>[
-      loc.familyBenefitPremium,
+      loc.planBenefitEverythingIndividual,
       loc.familyBenefitPeople(PlanRepository.familyPeopleLimit),
       loc.familyBenefitOwnRecords,
       loc.familyBenefitOneSubscription,

@@ -1,3 +1,5 @@
+import 'package:vaultara/features/family/logic/team_wording.dart';
+import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
 import 'package:vaultara/features/pets/view/pets_screen.dart';
 import 'package:vaultara/features/rules_review/services/rule_review_service.dart';
 import 'package:vaultara/features/rules_review/view/rules_review_screen.dart';
@@ -58,6 +60,9 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
+  // One listener for the plan, so the people entry can say Team for
+  // Business accounts.
+  final Stream<PlanTier> _tierStream = PlanRepository.tierStream();
   // The last known notification state, kept for the whole session. The tile
   // used to start as "turned off" on every visit and flip a moment later,
   // telling people with reminders on that they were off. Now it starts as
@@ -254,13 +259,26 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 children: [
                   ValueListenableBuilder<HouseholdInfo?>(
                     valueListenable: HouseholdRepository.household,
-                    builder: (context, household, _) => SettingsTile(
-                      icon: Icons.family_restroom_rounded,
-                      title: t.familyProfileTileTitle,
-                      subtitle: household == null
-                          ? t.familyProfileTileSubtitle
-                          : t.householdProfileTileSubtitle,
-                      onTap: () => _push(const FamilyScreen()),
+                    builder: (context, household, _) => StreamBuilder<PlanTier>(
+                      stream: _tierStream,
+                      builder: (context, tierSnap) {
+                        final team = TeamWording.isTeam(
+                          tierSnap.data,
+                          household,
+                        );
+                        return SettingsTile(
+                          icon: team
+                              ? Icons.groups_rounded
+                              : Icons.family_restroom_rounded,
+                          title: team ? t.teamTitle : t.familyProfileTileTitle,
+                          subtitle: team
+                              ? t.teamProfileTileSubtitle
+                              : household == null
+                              ? t.familyProfileTileSubtitle
+                              : t.householdProfileTileSubtitle,
+                          onTap: () => _push(const FamilyScreen()),
+                        );
+                      },
                     ),
                   ),
                   // Pets are kept apart from people, so they never use a
