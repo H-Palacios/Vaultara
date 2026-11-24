@@ -27,8 +27,8 @@ import 'package:vaultara/features/insights/services/tts_service.dart';
 import 'package:vaultara/features/insights/view/widgets/expiry_timeline_card.dart';
 import 'package:vaultara/features/insights/view/widgets/smart_insight_card.dart';
 import 'package:vaultara/features/insights/view/widgets/smart_insight_stack.dart';
-import 'package:vaultara/core/layout/two_columns.dart';
-import 'package:vaultara/core/layout/screen_size.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
+import 'package:vaultara/core/layout/wide_layout.dart';
 import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 import 'package:vaultara/features/records/view/record_editor_launcher.dart';
 import 'package:vaultara/features/records/logic/record_lock.dart';
@@ -426,7 +426,9 @@ class _InsightsScreenState extends State<InsightsScreen>
     final recapCost = recap?.costLastWeek;
     final recapCurrency = recap?.currency;
 
-    final wide = ScreenSize.twoColumns(context);
+    // The side bar takes the round + button's place, as on Home, so the
+    // page gets the same wider margins there.
+    final sideBar = WideLayout.of(context);
 
     final filter = <Widget>[
       if (!widget.isTutorialMode)
@@ -461,34 +463,40 @@ class _InsightsScreenState extends State<InsightsScreen>
       ],
     ];
 
-    // On a wide screen the top insights are listed one under the other;
-    // on a narrow one they are swiped one at a time.
+    // With a column of its own the top insights are listed one under the
+    // other; on a narrow screen they are swiped one at a time.
     final smart = Container(
       key: _smartCardKey,
-      child: wide
-          ? SmartInsightStack(
-              insights: insights,
-              speakerKey: _speakerKey,
-              canSpeak: widget.isTutorialMode || _ttsReady,
-              isSpeaking: _tts.speaking,
-              onPlay: () => _handlePlay(speechText),
-              onPause: _handlePause,
-              onAction: widget.isTutorialMode ? null : _handleInsightAction,
-              onSnooze: widget.isTutorialMode ? null : _snooze,
-              onAsk: widget.isTutorialMode || !widget.isPremium ? null : _ask,
-            )
-          : SmartInsightCard(
-              insights: insights,
-              speakerKey: _speakerKey,
-              canSpeak: widget.isTutorialMode || _ttsReady,
-              isSpeaking: _tts.speaking,
-              isPaused: _tts.paused,
-              onPlay: () => _handlePlay(speechText),
-              onPause: _handlePause,
-              onAction: widget.isTutorialMode ? null : _handleInsightAction,
-              onSnooze: widget.isTutorialMode ? null : _snooze,
-              onAsk: widget.isTutorialMode || !widget.isPremium ? null : _ask,
-            ),
+      child: Builder(
+        builder: (context) => AdaptiveColumns.twoColumnsOf(context)
+            ? SmartInsightStack(
+                insights: insights,
+                speakerKey: _speakerKey,
+                canSpeak: widget.isTutorialMode || _ttsReady,
+                isSpeaking: _tts.speaking,
+                onPlay: () => _handlePlay(speechText),
+                onPause: _handlePause,
+                onAction: widget.isTutorialMode ? null : _handleInsightAction,
+                onSnooze: widget.isTutorialMode ? null : _snooze,
+                onAsk: widget.isTutorialMode || !widget.isPremium
+                    ? null
+                    : _ask,
+              )
+            : SmartInsightCard(
+                insights: insights,
+                speakerKey: _speakerKey,
+                canSpeak: widget.isTutorialMode || _ttsReady,
+                isSpeaking: _tts.speaking,
+                isPaused: _tts.paused,
+                onPlay: () => _handlePlay(speechText),
+                onPause: _handlePause,
+                onAction: widget.isTutorialMode ? null : _handleInsightAction,
+                onSnooze: widget.isTutorialMode ? null : _snooze,
+                onAsk: widget.isTutorialMode || !widget.isPremium
+                    ? null
+                    : _ask,
+              ),
+      ),
     );
 
     final timelineCard = Container(
@@ -535,28 +543,19 @@ class _InsightsScreenState extends State<InsightsScreen>
       // Kept until the Flutter version in use exports ScrollCacheExtent.
       // ignore: deprecated_member_use
       cacheExtent: TutorialController.listCacheExtent,
-      padding: wide
+      padding: sideBar
           ? const EdgeInsets.fromLTRB(24, 16, 24, 16)
           : const EdgeInsets.all(16),
-      children: wide
-          ? [
-              const SizedBox(height: 8),
-              ...filter,
-              TwoColumns(
-                left: [...overview, smart],
-                right: [timelineCard, const SizedBox(height: 16), ...costs],
-              ),
-            ]
-          : [
-              const SizedBox(height: 8),
-              ...filter,
-              ...overview,
-              smart,
-              const SizedBox(height: 16),
-              timelineCard,
-              const SizedBox(height: 16),
-              ...costs,
-            ],
+      children: [
+        const SizedBox(height: 8),
+        ...filter,
+        // Where there is room the overview and insights sit on the left
+        // and the timeline and costs on the right.
+        AdaptiveColumns(
+          left: [...overview, smart, const SizedBox(height: 16)],
+          right: [timelineCard, const SizedBox(height: 16), ...costs],
+        ),
+      ],
     );
 
     return PopScope(

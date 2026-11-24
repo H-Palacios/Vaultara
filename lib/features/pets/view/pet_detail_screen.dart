@@ -181,8 +181,10 @@ class _PetDetailBody extends StatelessWidget {
       ],
     );
 
-    // Tablets (7-inch sideways, 10-inch either way): details on the left,
-    // documents on the right. Phones and 7-inch upright keep one column.
+    // Tablets and phones turned sideways: details on the left, documents
+    // on the right. The order differs from the phone's, so this page
+    // chooses by ScreenSize instead of AdaptiveColumns. Phones and 7-inch
+    // tablets held upright keep one column.
     if (ScreenSize.twoColumns(context)) {
       return ListView(
         padding: const EdgeInsets.fromLTRB(24, 8, 24, 32),

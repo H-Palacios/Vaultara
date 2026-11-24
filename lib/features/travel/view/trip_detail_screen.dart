@@ -224,9 +224,11 @@ class _TripDetailScreenState extends State<TripDetailScreen> {
     final menu = _menu(loc, trip);
     final actions = TripActionButtons(trip: trip, results: results);
 
-    // A 10-inch tablet held sideways: the journey on the left, the records
-    // and checklist on the right, and the buttons up in the header. Phones
-    // and smaller tablets keep the single column below, unchanged.
+    // A wide screen (a tablet, or a phone turned sideways): the journey on
+    // the left, the records and checklist on the right, and the buttons up
+    // in the header. The order differs from the phone's, so this page
+    // chooses by ScreenSize instead of AdaptiveColumns. Phones held upright
+    // keep the single column below, unchanged.
     if (ScreenSize.twoColumns(context)) {
       return ListView(
         padding: const EdgeInsets.fromLTRB(24, 8, 24, 32),
