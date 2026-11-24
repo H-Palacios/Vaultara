@@ -47,6 +47,10 @@ class AssistantStepLabel {
         return name == null
             ? loc.assistantStepPeople
             : loc.assistantStepPersonAdd(name);
+      case 'pet_add':
+        return name == null
+            ? loc.assistantStepPets
+            : loc.assistantStepPersonAdd(name);
       case 'person_edit':
         return name == null
             ? loc.assistantStepPeople

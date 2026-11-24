@@ -29,6 +29,7 @@ class AssistantStep {
     'record_renew',
     'record_delete',
     'person_add',
+    'pet_add',
     'person_edit',
     'person_me',
     'trip_add',

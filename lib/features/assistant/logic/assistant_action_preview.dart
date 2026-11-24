@@ -15,6 +15,8 @@ import 'package:vaultara/features/assistant/logic/assistant_action_launcher.dart
 import 'package:vaultara/features/assistant/logic/assistant_settings.dart';
 import 'package:vaultara/features/costs/logic/cost_format.dart';
 import 'package:vaultara/features/costs/view/cost_field.dart';
+import 'package:vaultara/features/pets/data/pet_type.dart';
+import 'package:vaultara/features/pets/view/pet_text.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/data/nationality_repository.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
@@ -123,6 +125,8 @@ class AssistantActionPreview {
         return 'record_details';
       case AssistantActionType.share:
         return 'share';
+      case AssistantActionType.petAdd:
+        return 'pet_add';
     }
   }
 
@@ -143,6 +147,8 @@ class AssistantActionPreview {
         return _delete(f, action);
       case AssistantActionType.personAdd:
         return _personAdd(f, action);
+      case AssistantActionType.petAdd:
+        return _petAdd(f, action);
       case AssistantActionType.personEdit:
         return _personEdit(f, action);
       case AssistantActionType.tripAdd:
@@ -818,6 +824,32 @@ class AssistantActionPreview {
     return AssistantActionPreview(
       title: loc.familyAddTitle,
       icon: Icons.person_add_alt_1_rounded,
+      subject: action.name ?? '',
+      rows: rows,
+    );
+  }
+
+  /// The new pet's name, with its type and birthday as rows.
+  static AssistantActionPreview _petAdd(_Formatter f, AssistantAction action) {
+    final loc = f.loc;
+    final type = action.petType;
+    final rows = <AssistantChangeRow>[
+      if (type != null)
+        AssistantChangeRow(
+          label: loc.petTypeLabel,
+          after: type == PetTypes.custom
+              ? (action.petCustomType ?? '')
+              : PetText.typeLabel(loc, type),
+        ),
+      if (action.petBirth != null)
+        AssistantChangeRow(
+          label: loc.petBirthday,
+          after: f.date(action.petBirth!),
+        ),
+    ];
+    return AssistantActionPreview(
+      title: loc.petsAdd,
+      icon: Icons.pets_rounded,
       subject: action.name ?? '',
       rows: rows,
     );

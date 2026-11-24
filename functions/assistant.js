@@ -662,7 +662,7 @@ function withTutorials(tool) {
       tool.description +
       " tutorial plays a short in-app tutorial; give its key as id: " +
       TUTORIALS.join(", ") +
-      ". When the user asks how to do something in Vaultara or how a feature works, answer in one or two sentences and offer the matching tutorial with screen tutorial.",
+      ". When the user asks how a feature works or asks to be shown how to do something, answer in one or two sentences and offer the matching tutorial with screen tutorial. When they ask how to add or change something of their own, also offer to do it for them.",
     input_schema: {
       ...tool.input_schema,
       properties: {
@@ -815,6 +815,14 @@ const TOOLS_V16 = [
   SUGGEST_REPLIES,
 ];
 const NAMES_V16 = new Set(TOOLS_V16.map((t) => t.name));
+// Protocol 17: adding a pet from the chat.
+const V17 = require("./assistant-v17")({ str, pushAction, draftReady });
+const TOOLS_V17 = [
+  ...TOOLS_V16.filter((t) => t.name !== "suggest_replies"),
+  ...V17.TOOLS,
+  SUGGEST_REPLIES,
+];
+const NAMES_V17 = new Set(TOOLS_V17.map((t) => t.name));
 let webSearchOff = false;
 
 // Sent when a turn ended with no words and no card.
@@ -868,7 +876,7 @@ function learnedRecordIds(ctx, query) {
 const APP_GUIDE = [
   "How Vaultara works. Use this to answer questions about the app. If something is not covered here or by the tools, say you are not sure instead of guessing.",
   "- Vaultara tracks expiry dates of records (passports, ID cards, licences, permits, visas, insurance policies, bank and store cards, leases, subscriptions, medical aid cards, prescriptions, vaccinations, memberships and warranties) and reminds the user before they expire.",
-  "- Bottom tabs: Home, Categories (all records, sorted into categories and groups), Insights and Calendar. The round + button in the middle adds a record.",
+  "- Bottom tabs: Home, Categories (all records, sorted into categories and groups), Insights and Calendar. The round + button in the middle of the bottom bar adds a record. On a tablet held sideways the tabs are in a bar on the left, with the + at its top. There is no Records tab.",
   "- Home: search bar for records, the Ask Vaultara button (sparkle icon), the profile picture which opens Profile, a greeting by first name, Next expiry (the record that expires next with how long is left, Renew and Renewal checklist, and a chip for expired records), then Coming up: how many records expire in the next 30 days, with See all, and up to five rows grouped under Within 7 days and Within 30 days. Each row has a coloured dot, the name, the date and how many days are left, and a \"Start renewing by\" line for records with a lead time. Tap a row to open the record. When nothing is due in 30 days it says \"All clear until\" the next expiry date. Locked records show only \"Locked record\", pinned categories, and the \"Planning a trip?\" card which opens Travel check. Pull down to refresh. The overall numbers (records, expired, due in 30 days, no reminder) are at the top of Insights.",
   "- Adding a record: tap +, choose a category and group, enter the name and expiry date and choose a reminder. A passport, ID or licence disc can be scanned to fill the form; scanning happens on the phone. \"More details\" has: Repeats, Renewal takes about, notes, renewal cost, whose record it is, photos and PDF files, Lock this record, In my wallet, and Shared with household.",
   "- Editing: open the record in Categories and tap it. Record cards also offer Renew (mark as renewed with the new expiry date and cost, kept in the renewal history), a renewal guide with a checklist, sharing as a link, and Delete.",
@@ -2237,7 +2245,9 @@ async function runTool(ctx, name, input, actions, allowed) {
         const pets = ctx.v15 ? await V15.run(ctx, name, input) : undefined;
         if (pets !== undefined) return pets;
         const v16 = ctx.v16 ? await V16.run(ctx, name, input) : undefined;
-        return v16 === undefined ? { error: "Unknown tool." } : v16;
+        if (v16 !== undefined) return v16;
+        const v17 = ctx.v17 ? await V17.run(ctx, name, input, actions) : undefined;
+        return v17 === undefined ? { error: "Unknown tool." } : v17;
       }
     }
   } catch (err) {
@@ -2247,7 +2257,7 @@ async function runTool(ctx, name, input, actions, allowed) {
 }
 
 // Built once when the module loads, so it may only use its own arguments.
-function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false, v10 = false, v13 = false, v14 = false, v15 = false, v16 = false) {
+function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false, v10 = false, v13 = false, v14 = false, v15 = false, v16 = false, v17 = false) {
   const lines = [
     "You are the Vaultara assistant inside the Vaultara app, which tracks expiry dates of documents, cards, licences, permits and policies.",
     "Help with the user's own records, people, trips and renewals in Vaultara, and answer questions about how the app works and where things are. Politely decline unrelated topics in one sentence.",
@@ -2269,8 +2279,10 @@ function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = f
       "To add a record call propose_record. To change any field of an existing record (for example add a renewal cost, notes, a reminder, a person or a new expiry date) call propose_update_record with only the changed fields. When the user says they renewed something, call propose_renew_record. To delete, call propose_delete_record, only when clearly asked.",
       "For people use propose_create_person and propose_update_person. For trips use propose_create_trip and propose_update_trip, with ISO alpha-2 country codes.",
       "Find record and trip ids with list_records and list_trips first. If several records match, ask which one, or prepare one card per record when the user clearly means all of them.",
-      "When the user asks where something is or wants to go there, explain briefly and call open_screen so they get an Open button.",
-      "If a tool returns an error, fix the input or explain the problem to the user in plain words. If something cannot be done with the tools, explain how to do it in the app and offer open_screen.",
+      "Doing things for the user: when the user tells you to add, change or set up something (\"add my passport\", \"set a reminder on my licence\"), do it with the matching propose_ tool and say you prepared it. Ask in one short message for anything you need that is missing.",
+      "How-to questions: when the user asks how or where to add, change or set up something (\"how do I add my car licence\", \"where do I add a passport\"), answer how in one short sentence using the exact buttons and screens in the app guide (for a record: the round + in the middle of the bottom bar), never a button or tab the guide does not name. Then offer to do it for them, for example \"Do you want me to add it for you?\", and call suggest_replies with \"Yes, add it for me\" and \"Show me how\" when that tool is available. If they say yes, do it with the propose_ tool.",
+      "Showing the way: when the user asks to be shown (\"show me how\", \"take me there\", \"where is the Pets screen\"), play the matching tutorial with open_screen screen tutorial when there is one (add_record for adding a record, pets for pets, travel for trips, family for people), because it walks them through it; otherwise call open_screen for the screen so they get an Open button.",
+      "If a tool returns an error, fix the input or explain the problem to the user in plain words. Only when no tool can do what they asked, explain how to do it in the app and offer open_screen.",
       "If the user wants to add a record but gave no expiry date, you may still call propose_record without expiry_date and tell them to pick the date."
     );
     if (v3) {
@@ -2334,6 +2346,7 @@ function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = f
   if (v10) lines.push(...V10.GUIDE);
   if (v15) lines.push(...V15.GUIDE);
   if (v16) lines.push(...V16.GUIDE);
+  if (v17) lines.push(...V17.GUIDE);
   return lines.join("\n");
 }
 
@@ -2349,6 +2362,7 @@ const STATIC_PROMPT_V13 = staticPrompt(true, true, true, true, true, true, true,
 const STATIC_PROMPT_V14 = staticPrompt(true, true, true, true, true, true, true, true, true);
 const STATIC_PROMPT_V15 = staticPrompt(true, true, true, true, true, true, true, true, true, true);
 const STATIC_PROMPT_V16 = staticPrompt(true, true, true, true, true, true, true, true, true, true, true);
+const STATIC_PROMPT_V17 = staticPrompt(true, true, true, true, true, true, true, true, true, true, true, true);
 
 function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false, v10 = false) {
   const date = dayToDate(ctx.today);
@@ -2417,7 +2431,7 @@ function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false,
   return [
     {
       type: "text",
-      text: ctx.v16 && v10 ? STATIC_PROMPT_V16 : ctx.v15 && v10 ? STATIC_PROMPT_V15 : ctx.v14 && v10 ? STATIC_PROMPT_V14 : ctx.v13 && v10 ? STATIC_PROMPT_V13 : v10 ? STATIC_PROMPT_V10 : v7 ? STATIC_PROMPT_V7 : v6 ? STATIC_PROMPT_V6 : v5 ? STATIC_PROMPT_V5 : v4 ? STATIC_PROMPT_V4 : v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1,
+      text: ctx.v17 && v10 ? STATIC_PROMPT_V17 : ctx.v16 && v10 ? STATIC_PROMPT_V16 : ctx.v15 && v10 ? STATIC_PROMPT_V15 : ctx.v14 && v10 ? STATIC_PROMPT_V14 : ctx.v13 && v10 ? STATIC_PROMPT_V13 : v10 ? STATIC_PROMPT_V10 : v7 ? STATIC_PROMPT_V7 : v6 ? STATIC_PROMPT_V6 : v5 ? STATIC_PROMPT_V5 : v4 ? STATIC_PROMPT_V4 : v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1,
       cache_control: { type: "ephemeral" },
     },
     { type: "text", text: dynamic.join("\n") },
@@ -2512,7 +2526,9 @@ async function stepFor(ctx, name, input) {
       const pets = ctx.v15 ? await V15.step(ctx, name) : undefined;
       if (pets !== undefined) return pets;
       const v16 = ctx.v16 ? await V16.step(ctx, name) : undefined;
-      return v16 === undefined ? step ?? null : v16;
+      if (v16 !== undefined) return v16;
+      const v17 = ctx.v17 ? V17.step(ctx, name, input) : undefined;
+      return v17 === undefined ? step ?? null : v17;
     }
   }
 }
@@ -2740,6 +2756,7 @@ exports.askVaultara = onCall(
     const v14 = version >= 14 && intent === "chat";
     const v15 = version >= 15 && intent === "chat";
     const v16 = version >= 16 && intent === "chat";
+    const v17 = version >= 17 && intent === "chat";
     const v7 = version >= 7 && intent === "chat";
     const v8 = version >= 8 && intent === "chat";
     const v9 = version >= 9;
@@ -2785,15 +2802,16 @@ exports.askVaultara = onCall(
     ctx.v14 = v14;
     ctx.v15 = v15;
     ctx.v16 = v16;
+    ctx.v17 = v17;
     ctx.talk = v12 && request.data?.mode === "talk";
     ctx.webSearch = v12 && !webSearchOff && process.env.ASSISTANT_WEB_SEARCH !== "off";
     ctx.learned = v11 ? await ctx.learnedWords() : [];
     ctx.lifePlanList = v7 ? await ctx.activeLifePlans() : [];
     const system = systemPrompt(ctx, lang, intent, v2, v3, v4, v5, v6, v7, v10);
-    const baseTools = v16 ? TOOLS_V16 : v15 ? TOOLS_V15 : v14 ? TOOLS_V14 : v13 ? TOOLS_V13 : v12 ? TOOLS_V12 : v11 ? TOOLS_V11 : v10 ? TOOLS_V10 : v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
+    const baseTools = v17 ? TOOLS_V17 : v16 ? TOOLS_V16 : v15 ? TOOLS_V15 : v14 ? TOOLS_V14 : v13 ? TOOLS_V13 : v12 ? TOOLS_V12 : v11 ? TOOLS_V11 : v10 ? TOOLS_V10 : v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
     const groupTools = v9 ? withGroupsV9(baseTools) : baseTools;
     const tools = ctx.webSearch ? [...groupTools, COACH_MODULE.WEB_SEARCH_TOOL] : groupTools;
-    const allowed = v16 ? NAMES_V16 : v15 ? NAMES_V15 : v14 ? NAMES_V14 : v13 ? NAMES_V13 : v12 ? NAMES_V12 : v11 ? NAMES_V11 : v10 ? NAMES_V10 : v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
+    const allowed = v17 ? NAMES_V17 : v16 ? NAMES_V16 : v15 ? NAMES_V15 : v14 ? NAMES_V14 : v13 ? NAMES_V13 : v12 ? NAMES_V12 : v11 ? NAMES_V11 : v10 ? NAMES_V10 : v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
     const progress = new RunProgress(uid, v3 ? runId : null);
     let replies = [];
     const conversation = messages.map((m) => ({ role: m.role, content: m.content }));
@@ -2997,4 +3015,10 @@ exports._test = {
   COMPLEX_HINTS,
   TOOLS_V12,
   NAMES_V12,
+  TOOLS_V16,
+  NAMES_V16,
+  TOOLS_V17,
+  NAMES_V17,
+  STATIC_PROMPT_V16,
+  STATIC_PROMPT_V17,
 };

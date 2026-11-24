@@ -83,7 +83,7 @@ class AssistantService {
   static const int maxTurns = 20;
   static const int maxChars = 2000;
   static const int maxContextChars = 16000;
-  static const int protocolVersion = 16;
+  static const int protocolVersion = 17;
 
   static FirebaseFunctions get _functions =>
       FirebaseFunctions.instanceFor(region: region);

@@ -24,6 +24,8 @@ import 'package:vaultara/features/guides/data/renewal_plan.dart';
 import 'package:vaultara/features/guides/logic/renewal_checklist.dart';
 import 'package:vaultara/features/guides/services/renewal_plan_store.dart';
 import 'package:vaultara/features/household/logic/household_access.dart';
+import 'package:vaultara/features/pets/data/pet.dart';
+import 'package:vaultara/features/pets/data/pet_repository.dart';
 import 'package:vaultara/features/records/logic/record_defaults.dart';
 import 'package:vaultara/features/records/logic/record_lock.dart';
 import 'package:vaultara/features/records/logic/record_match.dart';
@@ -264,6 +266,8 @@ class AssistantActionLauncher {
           return await _saveDetails(context, action, slot);
         case AssistantActionType.share:
           return await _share(context, action, slot);
+        case AssistantActionType.petAdd:
+          return await _addPet(context, action, slot);
       }
     } catch (_) {
       if (context.mounted) {
@@ -1138,6 +1142,49 @@ class AssistantActionLauncher {
         context,
         loc.familyAdded(person.name),
         icon: Icons.person_add_alt_1_rounded,
+      );
+    }
+    return AssistantApplyResult.applied;
+  }
+
+  /// Saves the pet from the card, as the Pets screen would. Undo removes it
+  /// again.
+  static Future<AssistantApplyResult> _addPet(
+    BuildContext context,
+    AssistantAction action,
+    _UndoSlot slot,
+  ) async {
+    final loc = AppLocalizations.of(context)!;
+    final name = action.name;
+    final type = action.petType;
+    if (name == null || type == null || !PetRepository.canAdd) {
+      _info(context, loc.assistantActionFailed);
+      return AssistantApplyResult.failed;
+    }
+    final pet = await PetRepository.add(
+      Pet(
+        id: '',
+        name: name,
+        typeId: type,
+        customType: action.petCustomType,
+        birthDate: action.petBirth,
+      ),
+    );
+    if (pet == null) {
+      if (context.mounted) _info(context, loc.assistantActionFailed);
+      return AssistantApplyResult.failed;
+    }
+    slot.undo = () async {
+      final current = PetRepository.byId(pet.id);
+      if (current == null) return false;
+      await PetRepository.remove(current);
+      return true;
+    };
+    if (context.mounted) {
+      ActionFeedbackSnackbar.showInfo(
+        context,
+        loc.familyAdded(pet.name),
+        icon: Icons.pets_rounded,
       );
     }
     return AssistantApplyResult.applied;

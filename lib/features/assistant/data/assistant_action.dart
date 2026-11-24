@@ -1,5 +1,7 @@
 import 'package:vaultara/core/data/models/kept_in.dart';
 import 'package:vaultara/features/guides/data/renewal_plan.dart';
+import 'package:vaultara/features/pets/data/pet.dart';
+import 'package:vaultara/features/pets/data/pet_type.dart';
 import 'package:vaultara/features/records/data/models/record_prefill.dart';
 import 'package:vaultara/features/travel/data/saved_trip.dart';
 import 'package:vaultara/features/travel/data/trip_purpose.dart';
@@ -28,6 +30,7 @@ enum AssistantActionType {
   planStep,
   recordDetails,
   share,
+  petAdd,
 }
 
 enum AssistantActionState { pending, busy, applied, opened, cancelled }
@@ -349,6 +352,12 @@ class AssistantAction {
   /// makes it private again.
   final bool shareOn;
 
+  /// A new pet card: one of the app's pet type ids, or custom with the
+  /// user's own word in [petCustomType], and the birthday when given.
+  final String? petType;
+  final String? petCustomType;
+  final DateTime? petBirth;
+
   const AssistantAction({
     required this.type,
     this.name,
@@ -417,6 +426,9 @@ class AssistantAction {
     this.setsProvider = false,
     this.detailsProvider,
     this.previousProvider,
+    this.petType,
+    this.petCustomType,
+    this.petBirth,
   });
 
   bool get isOpen => type == AssistantActionType.open;
@@ -587,6 +599,8 @@ class AssistantAction {
         return _fromDelete(raw);
       case 'person_add':
         return _fromPersonAdd(raw);
+      case 'pet_add':
+        return _fromPetAdd(raw);
       case 'person_edit':
         return _fromPersonEdit(raw);
       case 'trip_add':
@@ -884,6 +898,28 @@ class AssistantAction {
       hasNationality: country(raw['nationality']) != null,
       residence: country(raw['residence']),
       hasResidence: country(raw['residence']) != null,
+    );
+  }
+
+  /// A pet needs a name and a type: an id the app knows, or custom with a
+  /// word. A birthday in the future is dropped.
+  static AssistantAction? _fromPetAdd(Map<dynamic, dynamic> raw) {
+    final name = text(raw['name'], Pet.maxName);
+    final type = raw['petType'];
+    if (name == null || type is! String) return null;
+    final known = PetTypes.all.any((t) => t.id == type);
+    final custom = type == PetTypes.custom
+        ? text(raw['customType'], Pet.maxCustomType)
+        : null;
+    if (!known && custom == null) return null;
+    final born = date(raw['birthDate']);
+    final today = DateTime.now();
+    return AssistantAction(
+      type: AssistantActionType.petAdd,
+      name: name,
+      petType: known ? type : PetTypes.custom,
+      petCustomType: custom,
+      petBirth: born != null && !born.isAfter(today) ? born : null,
     );
   }
 

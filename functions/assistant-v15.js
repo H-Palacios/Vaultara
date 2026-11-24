@@ -99,7 +99,7 @@ module.exports = function build(h) {
   async function listPets(ctx) {
     const pets = await petDocs(ctx);
     if (!pets.length) {
-      return { pets: [], note: "No pets yet. Pets are added in Profile > Pets (paid plans) and never use a member place." };
+      return { pets: [], note: "No pets yet. If the user wants to add one and propose_create_pet is available, prepare it with that tool. Pets never use a member place." };
     }
     const records = (await ctx.records()).filter((r) => !r.shared && r.categoryKey === PET_CATEGORY);
     const today = new Date();
