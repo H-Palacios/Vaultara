@@ -69,7 +69,7 @@ class PetRulesCard extends StatelessWidget {
         ),
         const SizedBox(height: 6),
         Material(
-          color: scheme.surfaceContainerHighest,
+          color: scheme.surface,
           borderRadius: BorderRadius.circular(18),
           child: Padding(
             padding: const EdgeInsets.fromLTRB(14, 8, 14, 8),

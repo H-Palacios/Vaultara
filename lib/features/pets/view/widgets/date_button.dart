@@ -23,7 +23,7 @@ class DateButton extends StatelessWidget {
     final scheme = Theme.of(context).colorScheme;
     final day = date;
     return Material(
-      color: scheme.surfaceContainerHighest,
+      color: scheme.surface,
       borderRadius: BorderRadius.circular(16),
       child: InkWell(
         borderRadius: BorderRadius.circular(16),

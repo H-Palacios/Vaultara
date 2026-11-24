@@ -12,7 +12,7 @@ class PetsEmptyCard extends StatelessWidget {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
     return Material(
-      color: scheme.surfaceContainerHighest,
+      color: scheme.surface,
       borderRadius: BorderRadius.circular(20),
       child: Padding(
         padding: const EdgeInsets.fromLTRB(18, 22, 18, 18),

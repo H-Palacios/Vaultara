@@ -22,7 +22,7 @@ class PetInfoCard extends StatelessWidget {
     final scheme = Theme.of(context).colorScheme;
     final loc = AppLocalizations.of(context)!;
     return Material(
-      color: scheme.surfaceContainerHighest,
+      color: scheme.surface,
       borderRadius: BorderRadius.circular(20),
       child: Padding(
         padding: const EdgeInsets.fromLTRB(16, 12, 8, 14),

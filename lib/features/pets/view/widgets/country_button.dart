@@ -22,7 +22,7 @@ class CountryButton extends StatelessWidget {
     final scheme = Theme.of(context).colorScheme;
     final code = country;
     return Material(
-      color: scheme.surfaceContainerHighest,
+      color: scheme.surface,
       borderRadius: BorderRadius.circular(16),
       child: InkWell(
         borderRadius: BorderRadius.circular(16),

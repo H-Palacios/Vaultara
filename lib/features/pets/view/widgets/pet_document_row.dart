@@ -21,7 +21,7 @@ class PetDocumentRow extends StatelessWidget {
         ? scheme.error
         : (days <= 30 ? TravelText.warningColour : TravelText.okColour);
     return Material(
-      color: scheme.surfaceContainerHighest,
+      color: scheme.surface,
       borderRadius: BorderRadius.circular(16),
       child: InkWell(
         borderRadius: BorderRadius.circular(16),

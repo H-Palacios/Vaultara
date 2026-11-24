@@ -167,7 +167,7 @@ class _PetPlanCardState extends State<PetPlanCard> {
         TravelSectionTitle(loc.petPlanTitle, icon: Icons.event_note_rounded),
         const SizedBox(height: 6),
         Material(
-          color: scheme.surfaceContainerHighest,
+          color: scheme.surface,
           borderRadius: BorderRadius.circular(18),
           child: Padding(
             padding: const EdgeInsets.fromLTRB(14, 8, 14, 10),

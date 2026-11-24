@@ -24,7 +24,7 @@ class PetStatusRow extends StatelessWidget {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
     return Material(
-      color: scheme.surfaceContainerHighest,
+      color: scheme.surface,
       borderRadius: BorderRadius.circular(18),
       child: InkWell(
         borderRadius: BorderRadius.circular(18),
