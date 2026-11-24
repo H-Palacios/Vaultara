@@ -8,10 +8,12 @@ import 'package:vaultara/core/layout/two_columns.dart';
 /// two columns beside the side bar on a tablet and one on a phone held
 /// upright.
 ///
-/// [AdaptiveColumns] takes two lists of different things; [AdaptiveList]
-/// takes one list of things that are all alike. Widgets inside either can
-/// ask [AdaptiveColumns.twoColumnsOf] which layout they are in, so they can
-/// adapt without these widgets knowing about them.
+/// [AdaptiveColumns] takes two lists of different things; [AdaptiveAside]
+/// takes a main part with something that sits in the middle of it on a
+/// phone; [AdaptiveList] takes one list of things that are all alike.
+/// Widgets inside any of them can ask [AdaptiveColumns.twoColumnsOf] which
+/// layout they are in, so they can adapt without these widgets knowing
+/// about them.
 abstract class AdaptiveColumnsBase extends StatelessWidget {
   /// Space between the two columns.
   final double gap;
@@ -81,8 +83,8 @@ class AdaptiveColumns extends AdaptiveColumnsBase {
     super.columnAlignment = CrossAxisAlignment.stretch,
   });
 
-  /// Whether the nearest [AdaptiveColumns] or [AdaptiveList] above
-  /// [context] shows two columns. False outside one.
+  /// Whether the nearest [AdaptiveColumnsBase] above [context] shows two
+  /// columns. False outside one.
   static bool twoColumnsOf(BuildContext context) =>
       context
           .dependOnInheritedWidgetOfExactType<_AdaptiveColumnsScope>()
@@ -97,6 +99,34 @@ class AdaptiveColumns extends AdaptiveColumnsBase {
 
   @override
   List<Widget> get oneColumn => [...left, ...right];
+}
+
+/// A main part with one part that sits in its middle on a phone, such as a
+/// renewal plan's summary and its steps: on a phone [above], then [beside],
+/// then [below]; where there is room [above] and [below] in the first
+/// column and [beside] in the second.
+class AdaptiveAside extends AdaptiveColumnsBase {
+  final List<Widget> above;
+  final List<Widget> beside;
+  final List<Widget> below;
+
+  const AdaptiveAside({
+    super.key,
+    required this.above,
+    required this.beside,
+    this.below = const [],
+    super.gap = 24,
+    super.columnAlignment = CrossAxisAlignment.stretch,
+  });
+
+  @override
+  List<Widget> get firstColumn => [...above, ...below];
+
+  @override
+  List<Widget> get secondColumn => beside;
+
+  @override
+  List<Widget> get oneColumn => [...above, ...beside, ...below];
 }
 
 /// A list of things that are all alike, such as record cards: one column

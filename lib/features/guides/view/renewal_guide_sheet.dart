@@ -22,6 +22,8 @@ Future<void> showRenewalGuide(
   final markRenewed = await AppSheet.show<bool>(
     context: context,
     showDragHandle: true,
+    // Wide enough on a tablet for the plan's steps beside its summary.
+    wideStyle: WideSheetStyle.form,
     builder: (_) => DraggableScrollableSheet(
       expand: false,
       // Opens at full height: the guide is long and was cut off at three

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/data/repositories/people_repository.dart';
 import 'package:vaultara/core/util/safe_locale.dart';
 import 'package:vaultara/features/assistant/view/ask_vaultara_screen.dart';
@@ -239,107 +240,114 @@ class _RenewalPlanSectionState extends State<RenewalPlanSection> {
         borderRadius: BorderRadius.circular(14),
         border: Border.all(color: scheme.primary.withValues(alpha: 0.35)),
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              Icon(Icons.checklist_rounded, color: scheme.primary),
-              const SizedBox(width: 10),
-              Expanded(
-                child: Text(
-                  loc.coachPlanTitle,
-                  style: const TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w800,
+      // Where the sheet has room, the summary sits on the left and the
+      // steps on the right; on a phone the steps stay in the middle.
+      child: AdaptiveAside(
+        columnAlignment: CrossAxisAlignment.start,
+        above: [
+            Row(
+              children: [
+                Icon(Icons.checklist_rounded, color: scheme.primary),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Text(
+                    loc.coachPlanTitle,
+                    style: const TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w800,
+                    ),
                   ),
                 ),
+                Text(
+                  loc.guideProgress(plan.done.length, plan.steps.length),
+                  style: TextStyle(
+                    fontSize: 12.5,
+                    fontWeight: FontWeight.w700,
+                    color: scheme.primary,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 10),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(99),
+              child: LinearProgressIndicator(
+                value: plan.steps.isEmpty
+                    ? 0
+                    : plan.done.length / plan.steps.length,
+                minHeight: 6,
+                backgroundColor: scheme.primary.withValues(alpha: 0.12),
               ),
-              Text(
-                loc.guideProgress(plan.done.length, plan.steps.length),
-                style: TextStyle(
-                  fontSize: 12.5,
-                  fontWeight: FontWeight.w700,
-                  color: scheme.primary,
+            ),
+            const SizedBox(height: 6),
+            if (country != null || plan.applyIn != null || plan.checked != null)
+              Padding(
+                padding: const EdgeInsets.only(top: 4),
+                child: Wrap(
+                  spacing: 12,
+                  runSpacing: 2,
+                  children: [
+                    if (country != null)
+                      Text(
+                        '${Countries.flag(country)} ${Countries.name(country)}'
+                            .trim(),
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: scheme.onSurfaceVariant,
+                        ),
+                      ),
+                    if (plan.livesIn != null &&
+                        plan.applyIn != null &&
+                        plan.livesIn != plan.applyIn &&
+                        plan.livesIn != country)
+                      Text(
+                        '${loc.visaResidenceTitle}: '
+                        '${Countries.flag(plan.livesIn!)} '
+                        '${Countries.name(plan.livesIn!)}',
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: scheme.onSurfaceVariant,
+                        ),
+                      ),
+                    if (plan.applyIn != null && plan.applyIn != country)
+                      Text(
+                        '${loc.coachApplyInLabel}: '
+                        '${Countries.flag(plan.applyIn!)} '
+                        '${Countries.name(plan.applyIn!)}',
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: scheme.onSurfaceVariant,
+                        ),
+                      ),
+                    if (plan.checked != null)
+                      Text(
+                        loc.coachCheckedOn(
+                          _date(
+                            loc,
+                            RenewalAppointment.parseDay(plan.checked)!,
+                          ),
+                        ),
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: scheme.onSurfaceVariant,
+                        ),
+                      ),
+                  ],
                 ),
               ),
-            ],
-          ),
-          const SizedBox(height: 10),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(99),
-            child: LinearProgressIndicator(
-              value: plan.steps.isEmpty
-                  ? 0
-                  : plan.done.length / plan.steps.length,
-              minHeight: 6,
-              backgroundColor: scheme.primary.withValues(alpha: 0.12),
-            ),
-          ),
-          const SizedBox(height: 6),
-          if (country != null || plan.applyIn != null || plan.checked != null)
-            Padding(
-              padding: const EdgeInsets.only(top: 4),
-              child: Wrap(
-                spacing: 12,
-                runSpacing: 2,
-                children: [
-                  if (country != null)
-                    Text(
-                      '${Countries.flag(country)} ${Countries.name(country)}'
-                          .trim(),
-                      style: TextStyle(
-                        fontSize: 13,
-                        color: scheme.onSurfaceVariant,
-                      ),
-                    ),
-                  if (plan.livesIn != null &&
-                      plan.applyIn != null &&
-                      plan.livesIn != plan.applyIn &&
-                      plan.livesIn != country)
-                    Text(
-                      '${loc.visaResidenceTitle}: '
-                      '${Countries.flag(plan.livesIn!)} '
-                      '${Countries.name(plan.livesIn!)}',
-                      style: TextStyle(
-                        fontSize: 13,
-                        color: scheme.onSurfaceVariant,
-                      ),
-                    ),
-                  if (plan.applyIn != null && plan.applyIn != country)
-                    Text(
-                      '${loc.coachApplyInLabel}: '
-                      '${Countries.flag(plan.applyIn!)} '
-                      '${Countries.name(plan.applyIn!)}',
-                      style: TextStyle(
-                        fontSize: 13,
-                        color: scheme.onSurfaceVariant,
-                      ),
-                    ),
-                  if (plan.checked != null)
-                    Text(
-                      loc.coachCheckedOn(
-                        _date(loc, RenewalAppointment.parseDay(plan.checked)!),
-                      ),
-                      style: TextStyle(
-                        fontSize: 13,
-                        color: scheme.onSurfaceVariant,
-                      ),
-                    ),
-                ],
+            ..._whoAndSource(loc, scheme),
+            if (plan.applyReason != null &&
+                plan.livesIn != null &&
+                plan.applyIn != plan.livesIn) ...[
+              const SizedBox(height: 4),
+              Text(
+                plan.applyReason!,
+                style: TextStyle(fontSize: 13, color: scheme.onSurfaceVariant),
               ),
-            ),
-          ..._whoAndSource(loc, scheme),
-          if (plan.applyReason != null &&
-              plan.livesIn != null &&
-              plan.applyIn != plan.livesIn) ...[
-            const SizedBox(height: 4),
-            Text(
-              plan.applyReason!,
-              style: TextStyle(fontSize: 13, color: scheme.onSurfaceVariant),
-            ),
-          ],
+            ],
           const SizedBox(height: 8),
+        ],
+        beside: [
           for (var i = 0; i < plan.steps.length; i++)
             _StepRow(
               number: i + 1,
@@ -349,145 +357,149 @@ class _RenewalPlanSectionState extends State<RenewalPlanSection> {
               last: i == plan.steps.length - 1,
               onToggle: () => _toggle(i),
             ),
-          if (plan.fee != null || plan.processing != null) ...[
-            const SizedBox(height: 6),
-            if (plan.fee != null)
-              _InfoLine(
-                icon: Icons.payments_outlined,
-                label: loc.coachFeeLabel,
-                value: plan.fee!,
-              ),
-            if (plan.processing != null)
-              _InfoLine(
-                icon: Icons.hourglass_bottom_rounded,
-                label: loc.coachProcessingLabel,
-                value: plan.processing!,
-              ),
-          ],
-          if (appointment != null) ...[
-            const SizedBox(height: 8),
-            Container(
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: scheme.surfaceContainerHighest.withValues(alpha: 0.6),
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Icon(Icons.event_available_rounded, color: scheme.primary),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          loc.coachAppointmentTitle,
-                          style: const TextStyle(
-                            fontSize: 13,
-                            fontWeight: FontWeight.w800,
-                          ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          appointment.time == null
-                              ? _date(loc, appointment.day)
-                              : '${_date(loc, appointment.day)}, '
-                                    '${MaterialLocalizations.of(context).formatTimeOfDay(appointment.time!, alwaysUse24HourFormat: MediaQuery.maybeOf(context)?.alwaysUse24HourFormat ?? false)}',
-                        ),
-                        if (appointment.place != null)
+        ],
+        below: [
+            if (plan.fee != null || plan.processing != null) ...[
+              const SizedBox(height: 6),
+              if (plan.fee != null)
+                _InfoLine(
+                  icon: Icons.payments_outlined,
+                  label: loc.coachFeeLabel,
+                  value: plan.fee!,
+                ),
+              if (plan.processing != null)
+                _InfoLine(
+                  icon: Icons.hourglass_bottom_rounded,
+                  label: loc.coachProcessingLabel,
+                  value: plan.processing!,
+                ),
+            ],
+            if (appointment != null) ...[
+              const SizedBox(height: 8),
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: scheme.surfaceContainerHighest.withValues(alpha: 0.6),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Icon(Icons.event_available_rounded, color: scheme.primary),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
                           Text(
-                            appointment.place!,
-                            style: TextStyle(color: scheme.onSurfaceVariant),
-                          ),
-                        if (appointment.bring.isNotEmpty) ...[
-                          const SizedBox(height: 4),
-                          Text(
-                            loc.appointmentBring(appointment.bring.join(', ')),
-                            style: TextStyle(
+                            loc.coachAppointmentTitle,
+                            style: const TextStyle(
                               fontSize: 13,
-                              color: scheme.onSurfaceVariant,
+                              fontWeight: FontWeight.w800,
                             ),
                           ),
+                          const SizedBox(height: 2),
+                          Text(
+                            appointment.time == null
+                                ? _date(loc, appointment.day)
+                                : '${_date(loc, appointment.day)}, '
+                                      '${MaterialLocalizations.of(context).formatTimeOfDay(appointment.time!, alwaysUse24HourFormat: MediaQuery.maybeOf(context)?.alwaysUse24HourFormat ?? false)}',
+                          ),
+                          if (appointment.place != null)
+                            Text(
+                              appointment.place!,
+                              style: TextStyle(color: scheme.onSurfaceVariant),
+                            ),
+                          if (appointment.bring.isNotEmpty) ...[
+                            const SizedBox(height: 4),
+                            Text(
+                              loc.appointmentBring(
+                                appointment.bring.join(', '),
+                              ),
+                              style: TextStyle(
+                                fontSize: 13,
+                                color: scheme.onSurfaceVariant,
+                              ),
+                            ),
+                          ],
                         ],
-                      ],
+                      ),
                     ),
-                  ),
-                  IconButton(
-                    tooltip: loc.coachAppointmentRemove,
-                    onPressed: _saving ? null : _removeAppointment,
-                    icon: const Icon(Icons.close_rounded, size: 18),
-                  ),
-                ],
-              ),
-            ),
-          ],
-          if (plan.bookingUrl != null) ...[
-            const SizedBox(height: 10),
-            FilledButton.tonalIcon(
-              onPressed: () => openOfficialLink(context, plan.bookingUrl!),
-              icon: const Icon(Icons.open_in_new_rounded),
-              label: Text(loc.coachBookOnSite),
-            ),
-            const SizedBox(height: 2),
-            Text(
-              loc.coachBookNote,
-              style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
-            ),
-          ],
-          if (plan.sources.isNotEmpty) ...[
-            const SizedBox(height: 8),
-            AssistantSourceLinks(sources: plan.sources, asList: true),
-          ],
-          Text(
-            loc.coachRulesChange,
-            style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
-          ),
-          const SizedBox(height: 6),
-          Row(
-            children: [
-              Expanded(
-                child: Text(
-                  loc.coachWasRight,
-                  style: const TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-              IconButton(
-                tooltip: loc.assistantHelpful,
-                onPressed: _saving ? null : () => _rate(1),
-                icon: Icon(
-                  plan.rating > 0
-                      ? Icons.thumb_up_alt_rounded
-                      : Icons.thumb_up_alt_outlined,
-                  size: 20,
-                  color: plan.rating > 0 ? scheme.primary : null,
-                ),
-              ),
-              IconButton(
-                tooltip: loc.assistantNotHelpful,
-                onPressed: _saving ? null : () => _rate(-1),
-                icon: Icon(
-                  plan.rating < 0
-                      ? Icons.thumb_down_alt_rounded
-                      : Icons.thumb_down_alt_outlined,
-                  size: 20,
-                  color: plan.rating < 0 ? scheme.error : null,
+                    IconButton(
+                      tooltip: loc.coachAppointmentRemove,
+                      onPressed: _saving ? null : _removeAppointment,
+                      icon: const Icon(Icons.close_rounded, size: 18),
+                    ),
+                  ],
                 ),
               ),
             ],
-          ),
-          if (!widget.record.locked)
-            Align(
-              alignment: AlignmentDirectional.centerStart,
-              child: TextButton.icon(
-                onPressed: _askCoach,
-                icon: const Icon(Icons.auto_awesome_rounded, size: 18),
-                label: Text(loc.coachAskNext),
+            if (plan.bookingUrl != null) ...[
+              const SizedBox(height: 10),
+              FilledButton.tonalIcon(
+                onPressed: () => openOfficialLink(context, plan.bookingUrl!),
+                icon: const Icon(Icons.open_in_new_rounded),
+                label: Text(loc.coachBookOnSite),
               ),
+              const SizedBox(height: 2),
+              Text(
+                loc.coachBookNote,
+                style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
+              ),
+            ],
+            if (plan.sources.isNotEmpty) ...[
+              const SizedBox(height: 8),
+              AssistantSourceLinks(sources: plan.sources, asList: true),
+            ],
+            Text(
+              loc.coachRulesChange,
+              style: TextStyle(fontSize: 12, color: scheme.onSurfaceVariant),
             ),
+            const SizedBox(height: 6),
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    loc.coachWasRight,
+                    style: const TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+                IconButton(
+                  tooltip: loc.assistantHelpful,
+                  onPressed: _saving ? null : () => _rate(1),
+                  icon: Icon(
+                    plan.rating > 0
+                        ? Icons.thumb_up_alt_rounded
+                        : Icons.thumb_up_alt_outlined,
+                    size: 20,
+                    color: plan.rating > 0 ? scheme.primary : null,
+                  ),
+                ),
+                IconButton(
+                  tooltip: loc.assistantNotHelpful,
+                  onPressed: _saving ? null : () => _rate(-1),
+                  icon: Icon(
+                    plan.rating < 0
+                        ? Icons.thumb_down_alt_rounded
+                        : Icons.thumb_down_alt_outlined,
+                    size: 20,
+                    color: plan.rating < 0 ? scheme.error : null,
+                  ),
+                ),
+              ],
+            ),
+            if (!widget.record.locked)
+              Align(
+                alignment: AlignmentDirectional.centerStart,
+                child: TextButton.icon(
+                  onPressed: _askCoach,
+                  icon: const Icon(Icons.auto_awesome_rounded, size: 18),
+                  label: Text(loc.coachAskNext),
+                ),
+              ),
         ],
       ),
     );

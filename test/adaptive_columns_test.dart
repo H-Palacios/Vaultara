@@ -126,6 +126,46 @@ void main() {
     });
   });
 
+  group('AdaptiveAside', () {
+    Future<void> pump(WidgetTester tester, double width) {
+      return tester.pumpWidget(
+        _host(
+          width,
+          AdaptiveAside(
+            above: [_box('summary', 120)],
+            beside: [_box('steps', 400)],
+            below: [_box('feedback', 60)],
+          ),
+        ),
+      );
+    }
+
+    testWidgets('with room, the steps sit beside the summary', (
+      tester,
+    ) async {
+      await pump(tester, 728);
+      final summary = _rect(tester, 'summary');
+      final steps = _rect(tester, 'steps');
+      final feedback = _rect(tester, 'feedback');
+      expect(steps.top, summary.top);
+      expect(steps.left, greaterThan(summary.right));
+      // What comes after the steps on a phone goes under the summary.
+      expect(feedback.top, summary.bottom);
+      expect(feedback.left, summary.left);
+    });
+
+    testWidgets('on a phone the steps stay between summary and feedback', (
+      tester,
+    ) async {
+      await pump(tester, 400);
+      final summary = _rect(tester, 'summary');
+      final steps = _rect(tester, 'steps');
+      final feedback = _rect(tester, 'feedback');
+      expect(steps.top, summary.bottom);
+      expect(feedback.top, steps.bottom);
+    });
+  });
+
   group('AdaptiveList', () {
     Future<void> pump(WidgetTester tester, double width) {
       return tester.pumpWidget(
