@@ -4,13 +4,15 @@ import 'package:vaultara/features/pets/data/pet.dart';
 import 'package:vaultara/features/pets/data/pet_entry.dart';
 import 'package:vaultara/features/pets/logic/pet_travel_plan.dart';
 import 'package:vaultara/features/pets/services/pet_plan_reminders.dart';
+import 'package:vaultara/features/pets/view/pet_editor_sheet.dart';
 import 'package:vaultara/features/pets/view/pet_text.dart';
 import 'package:vaultara/features/travel/view/travel_widgets.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 /// The countdown to a trip: each step with the latest day it can happen,
 /// soonest first, steps already too late in amber, and a button that adds
-/// the dates to the pet's reminders.
+/// the dates to the pet's reminders. With no chip number saved, the chip
+/// step offers "Add chip number" and the plan updates once it is saved.
 class PetPlanCard extends StatefulWidget {
   final Pet? pet;
   final PetEntry entry;
@@ -31,9 +33,27 @@ class PetPlanCard extends StatefulWidget {
 
 class _PetPlanCardState extends State<PetPlanCard> {
   bool _busy = false;
+  Pet? _pet;
+
+  @override
+  void initState() {
+    super.initState();
+    _pet = widget.pet;
+  }
+
+  @override
+  void didUpdateWidget(PetPlanCard old) {
+    super.didUpdateWidget(old);
+    if (old.pet != widget.pet) _pet = widget.pet;
+  }
+
+  Future<void> _addChip(Pet pet) async {
+    final saved = await addPetChipNumber(context, pet);
+    if (saved != null && mounted) setState(() => _pet = saved);
+  }
 
   Future<void> _add(List<PetPlanStep> steps) async {
-    final pet = widget.pet;
+    final pet = _pet;
     if (pet == null) return;
     final loc = AppLocalizations.of(context)!;
     setState(() => _busy = true);
@@ -56,7 +76,8 @@ class _PetPlanCardState extends State<PetPlanCard> {
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
-    final pet = widget.pet ?? const Pet(id: '', name: '');
+    final saved = _pet;
+    final pet = saved ?? const Pet(id: '', name: '');
     final steps = PetTravelPlan.build(
       entry: widget.entry,
       departure: widget.departure,
@@ -64,7 +85,7 @@ class _PetPlanCardState extends State<PetPlanCard> {
     );
     final canAdd =
         widget.canAddReminders &&
-        widget.pet != null &&
+        saved != null &&
         PetTravelPlan.remindable(steps).isNotEmpty;
 
     Widget row(PetPlanStep step) {
@@ -119,6 +140,19 @@ class _PetPlanCardState extends State<PetPlanCard> {
                       color: colour,
                     ),
                   ),
+                  if (step.rule == PetRule.chip &&
+                      !step.done &&
+                      saved != null &&
+                      widget.canAddReminders)
+                    TextButton.icon(
+                      onPressed: () => _addChip(saved),
+                      icon: const Icon(Icons.add_rounded, size: 18),
+                      label: Text(loc.petAddChip),
+                      style: TextButton.styleFrom(
+                        padding: EdgeInsets.zero,
+                        visualDensity: VisualDensity.compact,
+                      ),
+                    ),
                 ],
               ),
             ),

@@ -2,22 +2,32 @@ import 'package:flutter/material.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
 import 'package:vaultara/features/pets/data/pet.dart';
 import 'package:vaultara/features/pets/view/pet_avatar.dart';
+import 'package:vaultara/features/pets/view/pet_editor_sheet.dart';
 import 'package:vaultara/features/pets/view/pet_phone.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 /// What to do straight away when a pet goes missing, with the chip number
-/// and the vet's number to hand.
-Future<void> showLostPetSheet(BuildContext context, Pet pet) {
-  return AppSheet.show<void>(
+/// and the vet's number to hand. With no chip number saved it offers
+/// "Add chip number", which closes the sheet and opens the pet's details.
+Future<void> showLostPetSheet(
+  BuildContext context,
+  Pet pet, {
+  bool canEdit = false,
+}) async {
+  final addChip = await AppSheet.show<bool>(
     context: context,
-    builder: (_) => _LostPetSheet(pet: pet),
+    builder: (_) => _LostPetSheet(pet: pet, canEdit: canEdit),
   );
+  if (addChip == true && context.mounted) {
+    await addPetChipNumber(context, pet);
+  }
 }
 
 class _LostPetSheet extends StatelessWidget {
   final Pet pet;
+  final bool canEdit;
 
-  const _LostPetSheet({required this.pet});
+  const _LostPetSheet({required this.pet, required this.canEdit});
 
   @override
   Widget build(BuildContext context) {
@@ -69,14 +79,25 @@ class _LostPetSheet extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 4),
-                    SelectableText(
-                      chip ?? loc.leadNotSet,
-                      style: const TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.w900,
-                        letterSpacing: 1.2,
+                    if (chip == null && canEdit)
+                      TextButton.icon(
+                        onPressed: () => Navigator.of(context).pop(true),
+                        icon: const Icon(Icons.add_rounded, size: 18),
+                        label: Text(loc.petAddChip),
+                        style: TextButton.styleFrom(
+                          padding: EdgeInsets.zero,
+                          visualDensity: VisualDensity.compact,
+                        ),
+                      )
+                    else
+                      SelectableText(
+                        chip ?? loc.leadNotSet,
+                        style: const TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.w900,
+                          letterSpacing: 1.2,
+                        ),
                       ),
-                    ),
                     if (pet.chipRegistry != null) ...[
                       const SizedBox(height: 4),
                       Text(

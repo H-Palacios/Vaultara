@@ -129,7 +129,11 @@ class _PetDetailBody extends StatelessWidget {
       trailing: premium ? menu : null,
     );
     final edit = premium ? () => _edit(context) : null;
-    final chip = PetChipCard(pet: pet, onEdit: edit);
+    final chip = PetChipCard(
+      pet: pet,
+      onEdit: edit,
+      onAddChip: premium ? () => addPetChipNumber(context, pet) : null,
+    );
     final vet = PetVetCard(pet: pet, onEdit: edit);
     final docs = PetDocuments(
       pet: pet,
@@ -152,7 +156,7 @@ class _PetDetailBody extends StatelessWidget {
       runSpacing: 10,
       children: [
         FilledButton.tonalIcon(
-          onPressed: () => showLostPetSheet(context, pet),
+          onPressed: () => showLostPetSheet(context, pet, canEdit: premium),
           icon: const Icon(Icons.search_rounded),
           label: Text(loc.petLostTitle),
         ),

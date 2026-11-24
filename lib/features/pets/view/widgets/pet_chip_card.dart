@@ -15,7 +15,15 @@ class PetChipCard extends StatelessWidget {
   final Pet pet;
   final VoidCallback? onEdit;
 
-  const PetChipCard({super.key, required this.pet, this.onEdit});
+  /// Shown as "Add chip number" when no number is saved.
+  final VoidCallback? onAddChip;
+
+  const PetChipCard({
+    super.key,
+    required this.pet,
+    this.onEdit,
+    this.onAddChip,
+  });
 
   Future<void> _copy(BuildContext context, String chip) async {
     final loc = AppLocalizations.of(context)!;
@@ -42,26 +50,40 @@ class PetChipCard extends StatelessWidget {
       title: loc.petChipNumber,
       onEdit: onEdit,
       children: [
-        Row(
-          children: [
-            Expanded(
-              child: SelectableText(
-                chip ?? loc.leadNotSet,
-                style: TextStyle(
-                  fontSize: chip == null ? 14 : 18,
-                  fontWeight: FontWeight.w800,
-                  letterSpacing: chip == null ? 0 : 1,
-                ),
+        if (chip == null && onAddChip != null)
+          Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: TextButton.icon(
+              onPressed: onAddChip,
+              icon: const Icon(Icons.add_rounded, size: 18),
+              label: Text(loc.petAddChip),
+              style: TextButton.styleFrom(
+                padding: EdgeInsets.zero,
+                visualDensity: VisualDensity.compact,
               ),
             ),
-            if (chip != null)
-              IconButton(
-                tooltip: loc.assistantCopy,
-                icon: const Icon(Icons.copy_rounded, size: 19),
-                onPressed: () => _copy(context, chip),
+          )
+        else
+          Row(
+            children: [
+              Expanded(
+                child: SelectableText(
+                  chip ?? loc.leadNotSet,
+                  style: TextStyle(
+                    fontSize: chip == null ? 14 : 18,
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: chip == null ? 0 : 1,
+                  ),
+                ),
               ),
-          ],
-        ),
+              if (chip != null)
+                IconButton(
+                  tooltip: loc.assistantCopy,
+                  icon: const Icon(Icons.copy_rounded, size: 19),
+                  onPressed: () => _copy(context, chip),
+                ),
+            ],
+          ),
         if (pet.chipRegistry != null) ...[
           const SizedBox(height: 4),
           Text(
