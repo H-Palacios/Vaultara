@@ -1,12 +1,14 @@
 import 'package:flutter/widgets.dart';
 
-/// Sizes for laying out a page on phones, 7-inch and 10-inch tablets.
+/// Sizes for laying out a page on phones, 7-inch and 10-inch tablets, held
+/// either way.
 ///
-/// - Phones: one column.
+/// - Phones held upright: one column.
 /// - 7-inch tablets held upright (about 600 wide): one column, with cards
 ///   side by side where they are small, such as a grid of pets.
-/// - 7-inch tablets held sideways (about 960 wide) and 10-inch tablets
-///   (about 800 upright, 1280 sideways): two columns.
+/// - Phones turned sideways (about 915 wide), 7-inch tablets held sideways
+///   (about 960), and 10-inch tablets either way (about 800 upright, 1280
+///   sideways): two columns.
 class ScreenSize {
   const ScreenSize._();
 
@@ -23,7 +25,10 @@ class ScreenSize {
   static bool grid(BuildContext context) => widthOf(context) >= gridWidth;
 
   static bool twoColumns(BuildContext context) =>
-      widthOf(context) >= twoColumnWidth;
+      fitsTwoColumns(MediaQuery.sizeOf(context));
+
+  /// The same rule as [twoColumns], for a size without a context.
+  static bool fitsTwoColumns(Size size) => size.width >= twoColumnWidth;
 
   /// Side padding that grows a little on tablets.
   static double padding(BuildContext context) =>

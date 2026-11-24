@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 import 'package:vaultara/core/data/models/category_item.dart';
@@ -296,133 +297,135 @@ class _GroupsScreenState extends State<GroupsScreen> {
     }
 
     return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(8, 8, 8, 0),
-              child: ScreenHeader(
-                title: widget.category.label,
-                titleMaxLines: 2,
-                trailing: Padding(
-                  padding: const EdgeInsets.only(right: 8),
-                  child: HeaderAddButton(
-                    label: loc.addGroupTitle,
-                    onPressed: _openAddGroupSheet,
+      body: WideCentered(
+        child: SafeArea(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(8, 8, 8, 0),
+                child: ScreenHeader(
+                  title: widget.category.label,
+                  titleMaxLines: 2,
+                  trailing: Padding(
+                    padding: const EdgeInsets.only(right: 8),
+                    child: HeaderAddButton(
+                      label: loc.addGroupTitle,
+                      onPressed: _openAddGroupSheet,
+                    ),
                   ),
                 ),
               ),
-            ),
-            Expanded(
-              child: _loading
-                  ? const Center(child: CircularProgressIndicator())
-                  : Scrollbar(
-                      controller: _scrollController,
-                      child: CustomScrollView(
+              Expanded(
+                child: _loading
+                    ? const Center(child: CircularProgressIndicator())
+                    : Scrollbar(
                         controller: _scrollController,
-                        physics: const BouncingScrollPhysics(),
-                        slivers: [
-                          SliverToBoxAdapter(
-                            child: Center(
-                              child: ConstrainedBox(
-                                constraints: BoxConstraints(maxWidth: maxWidth),
-                                child: Column(
-                                  crossAxisAlignment:
-                                      CrossAxisAlignment.stretch,
-                                  children: [
-                                    if (showSearch)
-                                      Padding(
-                                        padding: const EdgeInsets.fromLTRB(
-                                          16,
-                                          12,
-                                          16,
-                                          4,
-                                        ),
-                                        child: SearchField(
-                                          controller: _searchController,
-                                          hintText: loc.searchGroups,
-                                          onChanged: () => setState(() {}),
-                                        ),
-                                      ),
-                                    const SizedBox(height: 10),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
-                          if (result.isEmpty)
-                            SliverFillRemaining(
-                              hasScrollBody: false,
-                              child: SearchEmptyState(
-                                reason: result.emptyReason,
-                                noMatchesText: loc.groupsNoMatch(result.query),
-                                emptyText: loc.noGroupFound,
-                              ),
-                            )
-                          else
+                        child: CustomScrollView(
+                          controller: _scrollController,
+                          physics: const BouncingScrollPhysics(),
+                          slivers: [
                             SliverToBoxAdapter(
                               child: Center(
                                 child: ConstrainedBox(
-                                  constraints: BoxConstraints(
-                                    maxWidth: maxWidth,
-                                  ),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(16),
-                                    child: Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.stretch,
-                                      children: [
-                                        for (final key in used)
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                              bottom: 10,
-                                            ),
-                                            child: _groupCard(key),
+                                  constraints: BoxConstraints(maxWidth: maxWidth),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.stretch,
+                                    children: [
+                                      if (showSearch)
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                            16,
+                                            12,
+                                            16,
+                                            4,
                                           ),
-                                        if (unused.isNotEmpty) ...[
-                                          if (used.isNotEmpty)
-                                            Padding(
-                                              padding:
-                                                  const EdgeInsets.fromLTRB(
-                                                    4,
-                                                    14,
-                                                    4,
-                                                    8,
-                                                  ),
-                                              child: Text(
-                                                loc.groupsNoRecordsSection,
-                                                style: TextStyle(
-                                                  fontSize: 13,
-                                                  fontWeight: FontWeight.w700,
-                                                  color: Theme.of(
-                                                    context,
-                                                  ).colorScheme.onSurfaceVariant,
-                                                ),
-                                              ),
-                                            ),
-                                          for (final key in unused)
+                                          child: SearchField(
+                                            controller: _searchController,
+                                            hintText: loc.searchGroups,
+                                            onChanged: () => setState(() {}),
+                                          ),
+                                        ),
+                                      const SizedBox(height: 10),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                            if (result.isEmpty)
+                              SliverFillRemaining(
+                                hasScrollBody: false,
+                                child: SearchEmptyState(
+                                  reason: result.emptyReason,
+                                  noMatchesText: loc.groupsNoMatch(result.query),
+                                  emptyText: loc.noGroupFound,
+                                ),
+                              )
+                            else
+                              SliverToBoxAdapter(
+                                child: Center(
+                                  child: ConstrainedBox(
+                                    constraints: BoxConstraints(
+                                      maxWidth: maxWidth,
+                                    ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(16),
+                                      child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.stretch,
+                                        children: [
+                                          for (final key in used)
                                             Padding(
                                               padding: const EdgeInsets.only(
-                                                bottom: 6,
+                                                bottom: 10,
                                               ),
-                                              child: _groupCard(
-                                                key,
-                                                compact: used.isNotEmpty,
-                                              ),
+                                              child: _groupCard(key),
                                             ),
+                                          if (unused.isNotEmpty) ...[
+                                            if (used.isNotEmpty)
+                                              Padding(
+                                                padding:
+                                                    const EdgeInsets.fromLTRB(
+                                                      4,
+                                                      14,
+                                                      4,
+                                                      8,
+                                                    ),
+                                                child: Text(
+                                                  loc.groupsNoRecordsSection,
+                                                  style: TextStyle(
+                                                    fontSize: 13,
+                                                    fontWeight: FontWeight.w700,
+                                                    color: Theme.of(
+                                                      context,
+                                                    ).colorScheme.onSurfaceVariant,
+                                                  ),
+                                                ),
+                                              ),
+                                            for (final key in unused)
+                                              Padding(
+                                                padding: const EdgeInsets.only(
+                                                  bottom: 6,
+                                                ),
+                                                child: _groupCard(
+                                                  key,
+                                                  compact: used.isNotEmpty,
+                                                ),
+                                              ),
+                                          ],
                                         ],
-                                      ],
+                                      ),
                                     ),
                                   ),
                                 ),
                               ),
-                            ),
-                          const SliverToBoxAdapter(child: SizedBox(height: 24)),
-                        ],
+                            const SliverToBoxAdapter(child: SizedBox(height: 24)),
+                          ],
+                        ),
                       ),
-                    ),
-            ),
-          ],
+              ),
+            ],
+          ),
         ),
       ),
     );

@@ -1,22 +1,26 @@
 import 'package:flutter/widgets.dart';
 
-/// Decides when a screen uses its wide tablet layout: a 10-inch tablet held
-/// sideways. Phones, 7-inch tablets and 10-inch tablets held upright keep
-/// the phone layout.
+/// Decides when the app uses its sideways layout: the side bar instead of
+/// the curved bottom bar, and sheets that slide in from the side instead of
+/// up from the bottom.
+///
+/// Any screen held sideways that is wide enough counts: a phone turned
+/// sideways (about 915 by 412), a 7-inch tablet (about 960 by 600) and a
+/// 10-inch tablet (about 1280 by 800). A screen held upright keeps the
+/// bottom bar, because there the bar takes little of the height and is
+/// easy to reach with a thumb.
+///
+/// Whether a page shows one column or two is a separate question, decided
+/// by its width alone, in ScreenSize.twoColumns.
 class WideLayout {
   const WideLayout._();
 
-  /// Narrowest width, in logical pixels, for the wide layout. A 10-inch
-  /// tablet held sideways is about 1280 wide.
-  static const double minWidth = 840;
-
-  /// The shorter side must be at least this, so a 7-inch tablet (about 600)
-  /// or a phone turned sideways never counts as wide. A 10-inch tablet's
-  /// shorter side is about 800.
-  static const double minShortestSide = 700;
+  /// Narrowest width, in logical pixels, for the sideways layout. Small
+  /// phones turned sideways are still about 640 wide.
+  static const double minWidth = 640;
 
   static bool fits(Size size) =>
-      size.width >= minWidth && size.shortestSide >= minShortestSide;
+      size.width > size.height && size.width >= minWidth;
 
   static bool of(BuildContext context) => fits(MediaQuery.sizeOf(context));
 }

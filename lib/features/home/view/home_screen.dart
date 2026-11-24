@@ -7,7 +7,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
-import 'package:vaultara/core/layout/two_columns.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/layout/wide_layout.dart';
 import 'package:vaultara/core/view/widgets/premium_builder.dart';
 import 'package:vaultara/core/view/widgets/search_field.dart';
@@ -164,7 +164,9 @@ class HomeScreenState extends State<HomeScreen>
     final loc = AppLocalizations.of(context)!;
 
     final overview = HomeOverviewLoader.cached ?? const HomeOverview.empty();
-    final wide = WideLayout.of(context);
+    // The side bar replaces the round + button, so the list needs no room
+    // at the bottom for it.
+    final sideBar = WideLayout.of(context);
 
     final nextUp = TutorialTarget(
       steps: const [TutorialStep.homeNextUp],
@@ -203,7 +205,7 @@ class HomeScreenState extends State<HomeScreen>
           // Kept until the Flutter version in use exports ScrollCacheExtent.
           // ignore: deprecated_member_use
           cacheExtent: TutorialController.listCacheExtent,
-          padding: wide
+          padding: sideBar
               ? const EdgeInsets.fromLTRB(24, 8, 24, 32)
               : const EdgeInsets.fromLTRB(16, 8, 16, 120),
           children: [
@@ -270,16 +272,13 @@ class HomeScreenState extends State<HomeScreen>
             ] else
               WhatsNewCard(newUser: widget.isNewUser),
             const SizedBox(height: 20),
-            // On a 10-inch tablet held sideways, what is next sits on the
-            // left and pinned categories, travel and plans on the right.
-            if (wide)
-              TwoColumns(left: [nextUp], right: [pinned, ...rest])
-            else ...[
-              nextUp,
-              const SizedBox(height: 16),
-              pinned,
-              ...rest,
-            ],
+            // Where there is room (a tablet, or a phone turned sideways),
+            // what is next sits on the left and pinned categories, travel
+            // and plans on the right.
+            AdaptiveColumns(
+              left: [nextUp, const SizedBox(height: 16)],
+              right: [pinned, ...rest],
+            ),
           ],
         ),
       ),

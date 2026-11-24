@@ -4,7 +4,9 @@ import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 const _tabletSideways = Size(1280, 800);
+const _sevenUpright = Size(600, 960);
 const _phone = Size(412, 915);
+const _phoneSideways = Size(915, 412);
 
 void _useScreen(WidgetTester tester, Size size, {double keyboard = 0}) {
   tester.view.devicePixelRatio = 2;
@@ -214,12 +216,19 @@ void main() {
   });
 
   group('WideCentered', () {
-    Future<Size> pageSize(WidgetTester tester, Size screen) async {
+    Future<Size> pageSize(
+      WidgetTester tester,
+      Size screen, {
+      double maxWidth = WideCentered.oneColumnMaxWidth,
+    }) async {
       _useScreen(tester, screen);
       await tester.pumpWidget(
-        const MaterialApp(
+        MaterialApp(
           home: Scaffold(
-            body: WideCentered(child: SizedBox.expand(key: Key('page'))),
+            body: WideCentered(
+              maxWidth: maxWidth,
+              child: const SizedBox.expand(key: Key('page')),
+            ),
           ),
         ),
       );
@@ -230,17 +239,33 @@ void main() {
       tester,
     ) async {
       final size = await pageSize(tester, _tabletSideways);
-      expect(size.width, WideCentered.maxWidth);
+      expect(size.width, WideCentered.oneColumnMaxWidth);
       expect(size.height, _tabletSideways.height);
       final left = tester.getTopLeft(find.byKey(const Key('page'))).dx;
-      expect(left, (_tabletSideways.width - WideCentered.maxWidth) / 2);
+      expect(left, (_tabletSideways.width - WideCentered.oneColumnMaxWidth) / 2);
     });
 
-    testWidgets('changes nothing on a phone or a 7-inch tablet', (
+    testWidgets('a phone turned sideways is centred the same way', (
+      tester,
+    ) async {
+      final size = await pageSize(tester, _phoneSideways);
+      expect(size.width, WideCentered.oneColumnMaxWidth);
+    });
+
+    testWidgets('a page in two columns may use up to 1200', (tester) async {
+      final size = await pageSize(
+        tester,
+        _tabletSideways,
+        maxWidth: WideCentered.twoColumnMaxWidth,
+      );
+      expect(size.width, WideCentered.twoColumnMaxWidth);
+    });
+
+    testWidgets('changes nothing on a phone or a 7-inch tablet held upright', (
       tester,
     ) async {
       expect((await pageSize(tester, _phone)).width, _phone.width);
-      expect((await pageSize(tester, const Size(960, 600))).width, 960);
+      expect((await pageSize(tester, _sevenUpright)).width, _sevenUpright.width);
     });
   });
 }

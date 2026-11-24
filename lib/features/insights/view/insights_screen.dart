@@ -28,7 +28,7 @@ import 'package:vaultara/features/insights/view/widgets/expiry_timeline_card.dar
 import 'package:vaultara/features/insights/view/widgets/smart_insight_card.dart';
 import 'package:vaultara/features/insights/view/widgets/smart_insight_stack.dart';
 import 'package:vaultara/core/layout/two_columns.dart';
-import 'package:vaultara/core/layout/wide_layout.dart';
+import 'package:vaultara/core/layout/screen_size.dart';
 import 'package:vaultara/features/tutorials/data/enums/tutorial_step.dart';
 import 'package:vaultara/features/records/view/record_editor_launcher.dart';
 import 'package:vaultara/features/records/logic/record_lock.dart';
@@ -426,7 +426,7 @@ class _InsightsScreenState extends State<InsightsScreen>
     final recapCost = recap?.costLastWeek;
     final recapCurrency = recap?.currency;
 
-    final wide = WideLayout.of(context);
+    final wide = ScreenSize.twoColumns(context);
 
     final filter = <Widget>[
       if (!widget.isTutorialMode)
@@ -461,8 +461,8 @@ class _InsightsScreenState extends State<InsightsScreen>
       ],
     ];
 
-    // On a 10-inch tablet held sideways the top insights are listed one
-    // under the other; everywhere else they are swiped one at a time.
+    // On a wide screen the top insights are listed one under the other;
+    // on a narrow one they are swiped one at a time.
     final smart = Container(
       key: _smartCardKey,
       child: wide

@@ -1,4 +1,5 @@
 import 'package:vaultara/features/reminders/view/notification_ask_sheet.dart';
+import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/core/errors/error_reporter.dart';
 import 'package:vaultara/core/view/widgets/load_error_view.dart';
 import 'package:vaultara/features/records/logic/record_lock.dart';
@@ -490,279 +491,281 @@ class _RecordsScreenState extends State<RecordsScreen> {
     );
 
     return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(8, 8, 8, 0),
-              child: ScreenHeader(
-                title: groupName,
-                titleMaxLines: 2,
-                trailing: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    HeaderAddButton(
-                      label: loc.addRecord,
-                      onPressed: _openAddRecordSheet,
-                    ),
-                    PopupMenuButton<_RecordsMenu>(
-                      tooltip: loc.recordMenuMore,
-                      icon: Icon(
-                        Icons.more_vert_rounded,
-                        color: scheme.onSurface,
+      body: WideCentered(
+        child: SafeArea(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(8, 8, 8, 0),
+                child: ScreenHeader(
+                  title: groupName,
+                  titleMaxLines: 2,
+                  trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      HeaderAddButton(
+                        label: loc.addRecord,
+                        onPressed: _openAddRecordSheet,
                       ),
-                      onSelected: (choice) {
-                        switch (choice) {
-                          case _RecordsMenu.sortExpiry:
-                            setState(() => _sortByName = false);
-                          case _RecordsMenu.sortName:
-                            setState(() => _sortByName = true);
-                          case _RecordsMenu.select:
-                            setState(() {
-                              _selecting = true;
-                              _selected.clear();
-                            });
-                        }
-                      },
-                      itemBuilder: (_) => [
-                        CheckedPopupMenuItem(
-                          value: _RecordsMenu.sortExpiry,
-                          checked: !_sortByName,
-                          child: Text(loc.recordsSortExpiry),
+                      PopupMenuButton<_RecordsMenu>(
+                        tooltip: loc.recordMenuMore,
+                        icon: Icon(
+                          Icons.more_vert_rounded,
+                          color: scheme.onSurface,
                         ),
-                        CheckedPopupMenuItem(
-                          value: _RecordsMenu.sortName,
-                          checked: _sortByName,
-                          child: Text(loc.recordsSortName),
-                        ),
-                        const PopupMenuDivider(),
-                        PopupMenuItem(
-                          value: _RecordsMenu.select,
-                          child: Text(loc.recordsSelect),
-                        ),
-                      ],
-                    ),
-                  ],
+                        onSelected: (choice) {
+                          switch (choice) {
+                            case _RecordsMenu.sortExpiry:
+                              setState(() => _sortByName = false);
+                            case _RecordsMenu.sortName:
+                              setState(() => _sortByName = true);
+                            case _RecordsMenu.select:
+                              setState(() {
+                                _selecting = true;
+                                _selected.clear();
+                              });
+                          }
+                        },
+                        itemBuilder: (_) => [
+                          CheckedPopupMenuItem(
+                            value: _RecordsMenu.sortExpiry,
+                            checked: !_sortByName,
+                            child: Text(loc.recordsSortExpiry),
+                          ),
+                          CheckedPopupMenuItem(
+                            value: _RecordsMenu.sortName,
+                            checked: _sortByName,
+                            child: Text(loc.recordsSortName),
+                          ),
+                          const PopupMenuDivider(),
+                          PopupMenuItem(
+                            value: _RecordsMenu.select,
+                            child: Text(loc.recordsSelect),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
-            ),
-            Expanded(
-              child: ValueListenableBuilder<int>(
-                valueListenable: HouseholdRepository.revision,
-                builder: (context, _, __) =>
-                    StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
-                      stream: _stream ??= ErrorReporter.watch(
-                        FirebaseFirestore.instance
-                            .collection('users/${user.uid}/records')
-                            .where(
-                              'categoryKey',
-                              isEqualTo: widget.category.key,
-                            )
-                            .where(
-                              'subcategoryName',
-                              isEqualTo: widget.groupKey,
-                            )
-                            .snapshots(),
-                        'records_stream',
-                      ),
-                      builder: (context, snapshot) {
-                        if (snapshot.hasError && !snapshot.hasData) {
-                          return LoadErrorView(
-                            onRetry: () => setState(() => _stream = null),
-                          );
-                        }
-                        if (!snapshot.hasData) {
-                          return const Center(
-                            child: CircularProgressIndicator(),
-                          );
-                        }
+              Expanded(
+                child: ValueListenableBuilder<int>(
+                  valueListenable: HouseholdRepository.revision,
+                  builder: (context, _, __) =>
+                      StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
+                        stream: _stream ??= ErrorReporter.watch(
+                          FirebaseFirestore.instance
+                              .collection('users/${user.uid}/records')
+                              .where(
+                                'categoryKey',
+                                isEqualTo: widget.category.key,
+                              )
+                              .where(
+                                'subcategoryName',
+                                isEqualTo: widget.groupKey,
+                              )
+                              .snapshots(),
+                          'records_stream',
+                        ),
+                        builder: (context, snapshot) {
+                          if (snapshot.hasError && !snapshot.hasData) {
+                            return LoadErrorView(
+                              onRetry: () => setState(() => _stream = null),
+                            );
+                          }
+                          if (!snapshot.hasData) {
+                            return const Center(
+                              child: CircularProgressIndicator(),
+                            );
+                          }
 
-                        final byId = <String, TrackedItem>{};
-                        for (final d in snapshot.data!.docs) {
-                          final record = TrackedItem.fromMap(d.id, d.data());
-                          if (record.isDeleted != true) byId[d.id] = record;
-                        }
-                        for (final record in RecordRepository.sharedIn(
-                          widget.category.key,
-                          widget.groupKey,
-                        )) {
-                          final id = record.id;
-                          if (id != null) byId[id] = record;
-                        }
-                        final all = byId.values.toList();
-                        var records = all
-                            .where((r) => PersonFilterChips.matches(r, _person))
-                            .toList();
-
-                        final focused = _focusId != null
-                            ? records.where((r) => r.id == _focusId).toList()
-                            : null;
-                        if (focused != null && focused.isNotEmpty) {
-                          records = focused;
-                        }
-
-                        if (_sortByName) {
-                          records.sort(
-                            (a, b) => a.name.toLowerCase().compareTo(
-                              b.name.toLowerCase(),
-                            ),
-                          );
-                        } else {
-                          // Soonest-expiring first. Expired dates sort to the top,
-                          // which is where they belong in an expiry tracker.
-                          records.sort(
-                            (a, b) => a.expiryDate.compareTo(b.expiryDate),
-                          );
-                        }
-
-                        final result = TextSearch.run<TrackedItem>(
-                          items: records,
-                          query: _searchController.text,
-                          textOf: (r) =>
-                              r.locked ? r.name : '${r.name} ${r.notes ?? ''}',
-                          fuzzy: true,
-                        );
-
-                        final showSections =
-                            !_sortByName &&
-                            !result.hasQuery &&
-                            result.matches.length > 1;
-
-                        final children = <Widget>[];
-                        if (showSections) {
-                          for (final section in RecordSections.split(
-                            result.matches,
-                            daysLeft: RecordStatus.daysLeftFor,
-                            soonDays:
-                                ItemLifecycleManager.expiringThresholdDays,
+                          final byId = <String, TrackedItem>{};
+                          for (final d in snapshot.data!.docs) {
+                            final record = TrackedItem.fromMap(d.id, d.data());
+                            if (record.isDeleted != true) byId[d.id] = record;
+                          }
+                          for (final record in RecordRepository.sharedIn(
+                            widget.category.key,
+                            widget.groupKey,
                           )) {
-                            children.add(
-                              _SectionHeader(
-                                title: _sectionTitle(loc, section.key),
-                                count: section.value.length,
+                            final id = record.id;
+                            if (id != null) byId[id] = record;
+                          }
+                          final all = byId.values.toList();
+                          var records = all
+                              .where((r) => PersonFilterChips.matches(r, _person))
+                              .toList();
+
+                          final focused = _focusId != null
+                              ? records.where((r) => r.id == _focusId).toList()
+                              : null;
+                          if (focused != null && focused.isNotEmpty) {
+                            records = focused;
+                          }
+
+                          if (_sortByName) {
+                            records.sort(
+                              (a, b) => a.name.toLowerCase().compareTo(
+                                b.name.toLowerCase(),
                               ),
                             );
-                            for (final record in section.value) {
+                          } else {
+                            // Soonest-expiring first. Expired dates sort to the top,
+                            // which is where they belong in an expiry tracker.
+                            records.sort(
+                              (a, b) => a.expiryDate.compareTo(b.expiryDate),
+                            );
+                          }
+
+                          final result = TextSearch.run<TrackedItem>(
+                            items: records,
+                            query: _searchController.text,
+                            textOf: (r) =>
+                                r.locked ? r.name : '${r.name} ${r.notes ?? ''}',
+                            fuzzy: true,
+                          );
+
+                          final showSections =
+                              !_sortByName &&
+                              !result.hasQuery &&
+                              result.matches.length > 1;
+
+                          final children = <Widget>[];
+                          if (showSections) {
+                            for (final section in RecordSections.split(
+                              result.matches,
+                              daysLeft: RecordStatus.daysLeftFor,
+                              soonDays:
+                                  ItemLifecycleManager.expiringThresholdDays,
+                            )) {
+                              children.add(
+                                _SectionHeader(
+                                  title: _sectionTitle(loc, section.key),
+                                  count: section.value.length,
+                                ),
+                              );
+                              for (final record in section.value) {
+                                children.add(_recordCard(record, loc));
+                              }
+                            }
+                          } else {
+                            for (final record in result.matches) {
                               children.add(_recordCard(record, loc));
                             }
                           }
-                        } else {
-                          for (final record in result.matches) {
-                            children.add(_recordCard(record, loc));
-                          }
-                        }
 
-                        final groupEmpty = all.isEmpty;
+                          final groupEmpty = all.isEmpty;
 
-                        return Column(
-                          children: [
-                            constrained(
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.stretch,
-                                children: [
-                                  if (!groupEmpty) ...[
-                                    if (all.length > _searchFrom ||
-                                        _searchController.text.isNotEmpty)
-                                      Padding(
-                                        padding: const EdgeInsets.fromLTRB(
-                                          0,
-                                          12,
-                                          0,
-                                          4,
-                                        ),
-                                        child: SearchField(
-                                          controller: _searchController,
-                                          hintText: loc.searchRecords,
-                                          onChanged: () => setState(() {}),
-                                        ),
-                                      ),
-                                    Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                        0,
-                                        8,
-                                        0,
-                                        4,
-                                      ),
-                                      child: Row(
-                                        children: [
-                                          Expanded(
-                                            child: PersonFilterChips(
-                                              padding: EdgeInsets.zero,
-                                              records: all,
-                                              value: _person,
-                                              onChanged: (value) => setState(
-                                                () => _person = value,
-                                              ),
-                                            ),
+                          return Column(
+                            children: [
+                              constrained(
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                                  children: [
+                                    if (!groupEmpty) ...[
+                                      if (all.length > _searchFrom ||
+                                          _searchController.text.isNotEmpty)
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                            0,
+                                            12,
+                                            0,
+                                            4,
                                           ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                  if (focused != null && focused.isNotEmpty)
-                                    Align(
-                                      alignment:
-                                          AlignmentDirectional.centerStart,
-                                      child: TextButton.icon(
-                                        onPressed: () =>
-                                            setState(() => _focusId = null),
-                                        icon: const Icon(
-                                          Icons.unfold_more_rounded,
-                                          size: 18,
+                                          child: SearchField(
+                                            controller: _searchController,
+                                            hintText: loc.searchRecords,
+                                            onChanged: () => setState(() {}),
+                                          ),
                                         ),
-                                        label: Text(
-                                          loc.recordsShowAll(all.length),
-                                        ),
-                                      ),
-                                    ),
-                                ],
-                              ),
-                            ),
-                            Expanded(
-                              child: constrained(
-                                groupEmpty
-                                    ? _EmptyGroup(
-                                        groupName: groupName,
-                                        onScan: () =>
-                                            _openAddRecordSheet(scan: true),
-                                      )
-                                    : result.isEmpty
-                                    ? SearchEmptyState(
-                                        reason: result.emptyReason,
-                                        noMatchesText: loc.recordsNoMatch(
-                                          result.query,
-                                        ),
-                                        emptyText: loc.noRecordsYet,
-                                      )
-                                    : ListView(
+                                      Padding(
                                         padding: const EdgeInsets.fromLTRB(
                                           0,
                                           8,
                                           0,
-                                          16,
+                                          4,
                                         ),
-                                        children: children,
+                                        child: Row(
+                                          children: [
+                                            Expanded(
+                                              child: PersonFilterChips(
+                                                padding: EdgeInsets.zero,
+                                                records: all,
+                                                value: _person,
+                                                onChanged: (value) => setState(
+                                                  () => _person = value,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
                                       ),
+                                    ],
+                                    if (focused != null && focused.isNotEmpty)
+                                      Align(
+                                        alignment:
+                                            AlignmentDirectional.centerStart,
+                                        child: TextButton.icon(
+                                          onPressed: () =>
+                                              setState(() => _focusId = null),
+                                          icon: const Icon(
+                                            Icons.unfold_more_rounded,
+                                            size: 18,
+                                          ),
+                                          label: Text(
+                                            loc.recordsShowAll(all.length),
+                                          ),
+                                        ),
+                                      ),
+                                  ],
+                                ),
                               ),
-                            ),
-                            if (_selecting)
-                              _SelectionBar(
-                                count: _selected.length,
-                                onMove: _selected.isEmpty
-                                    ? null
-                                    : () => _moveSelected(all),
-                                onDelete: _selected.isEmpty
-                                    ? null
-                                    : () => _deleteSelected(all),
-                                onClose: _stopSelecting,
+                              Expanded(
+                                child: constrained(
+                                  groupEmpty
+                                      ? _EmptyGroup(
+                                          groupName: groupName,
+                                          onScan: () =>
+                                              _openAddRecordSheet(scan: true),
+                                        )
+                                      : result.isEmpty
+                                      ? SearchEmptyState(
+                                          reason: result.emptyReason,
+                                          noMatchesText: loc.recordsNoMatch(
+                                            result.query,
+                                          ),
+                                          emptyText: loc.noRecordsYet,
+                                        )
+                                      : ListView(
+                                          padding: const EdgeInsets.fromLTRB(
+                                            0,
+                                            8,
+                                            0,
+                                            16,
+                                          ),
+                                          children: children,
+                                        ),
+                                ),
                               ),
-                          ],
-                        );
-                      },
-                    ),
+                              if (_selecting)
+                                _SelectionBar(
+                                  count: _selected.length,
+                                  onMove: _selected.isEmpty
+                                      ? null
+                                      : () => _moveSelected(all),
+                                  onDelete: _selected.isEmpty
+                                      ? null
+                                      : () => _deleteSelected(all),
+                                  onClose: _stopSelecting,
+                                ),
+                            ],
+                          );
+                        },
+                      ),
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

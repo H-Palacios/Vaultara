@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vaultara/core/layout/wide_layout.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/features/pets/view/widgets/official_rules_link.dart';
 import 'package:vaultara/features/rules_review/data/rule_review.dart';
 import 'package:vaultara/features/rules_review/view/widgets/rule_values.dart';
@@ -53,7 +53,6 @@ class RuleReviewCard extends StatelessWidget {
 
     final now = column(loc.rulesReviewNow, review.checked, false);
     final next = column(loc.rulesReviewNew, review.data, true);
-    final wide = WideLayout.of(context);
 
     return Material(
       color: scheme.surfaceContainerHighest,
@@ -76,20 +75,11 @@ class RuleReviewCard extends StatelessWidget {
               style: TextStyle(fontSize: 13, color: scheme.onSurfaceVariant),
             ),
             const SizedBox(height: 14),
-            if (wide)
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Expanded(child: now),
-                  const SizedBox(width: 20),
-                  Expanded(child: next),
-                ],
-              )
-            else ...[
-              now,
-              const SizedBox(height: 12),
-              next,
-            ],
+            AdaptiveColumns(
+              gap: 20,
+              left: [now, const SizedBox(height: 12)],
+              right: [next],
+            ),
             if (review.dropped.isNotEmpty) ...[
               const SizedBox(height: 6),
               Text(

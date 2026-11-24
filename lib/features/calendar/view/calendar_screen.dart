@@ -4,8 +4,7 @@ import 'package:intl/intl.dart' hide TextDirection;
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
-import 'package:vaultara/core/layout/two_columns.dart';
-import 'package:vaultara/core/layout/wide_layout.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/services/records_live_sync.dart';
 import 'package:vaultara/core/util/safe_locale.dart';
 import 'package:vaultara/features/costs/logic/cost_forecast.dart';
@@ -297,7 +296,6 @@ class _CalendarScreenState extends State<CalendarScreen>
     final next = index.nextAfter(_selectedDay ?? _today);
     final animate = !MediaQuery.of(context).disableAnimations;
     final selectedDay = _selectedDay;
-    final wide = WideLayout.of(context);
 
     final header = Row(
       children: [
@@ -449,19 +447,15 @@ class _CalendarScreenState extends State<CalendarScreen>
                   value: person,
                   onChanged: (value) => setState(() => _person = value),
                 ),
-                // On a 10-inch tablet held sideways the month sits on the
-                // left and the chosen day's records on the right.
-                if (_view == _CalendarView.month && wide)
-                  TwoColumns(
+                // Where there is room the month sits on the left and the
+                // chosen day's records on the right.
+                if (_view == _CalendarView.month)
+                  AdaptiveColumns(
                     columnAlignment: CrossAxisAlignment.start,
-                    left: monthGrid,
+                    left: [...monthGrid, const SizedBox(height: 14)],
                     right: dayView,
                   )
-                else if (_view == _CalendarView.month) ...[
-                  ...monthGrid,
-                  const SizedBox(height: 14),
-                  ...dayView,
-                ] else
+                else
                   CalendarListView(
                     index: index,
                     today: _today,

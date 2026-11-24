@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:vaultara/core/layout/screen_size.dart';
 import 'package:vaultara/core/layout/two_columns.dart';
 import 'package:vaultara/core/layout/wide_layout.dart';
 import 'package:vaultara/features/insights/data/models/smart_insight.dart';
@@ -31,22 +32,37 @@ SmartInsight _insight(int i) => SmartInsight(
 
 void main() {
   group('WideLayout', () {
-    test('only a 10-inch tablet held sideways is wide', () {
+    test('any screen held sideways and at least 640 wide gets the side bar', () {
       // Phone, upright and sideways.
       expect(WideLayout.fits(const Size(412, 915)), isFalse);
-      expect(WideLayout.fits(const Size(915, 412)), isFalse);
+      expect(WideLayout.fits(const Size(915, 412)), isTrue);
       // 7-inch tablet, upright and sideways.
       expect(WideLayout.fits(const Size(600, 960)), isFalse);
-      expect(WideLayout.fits(const Size(960, 600)), isFalse);
+      expect(WideLayout.fits(const Size(960, 600)), isTrue);
       // 10-inch tablet, upright and sideways.
       expect(WideLayout.fits(const Size(800, 1280)), isFalse);
       expect(WideLayout.fits(const Size(1280, 800)), isTrue);
     });
 
-    test('the cut-off is exact, so a slightly smaller screen stays a phone', () {
-      expect(WideLayout.fits(const Size(840, 700)), isTrue);
-      expect(WideLayout.fits(const Size(839, 700)), isFalse);
-      expect(WideLayout.fits(const Size(840, 699)), isFalse);
+    test('the cut-off is exact, and a square screen keeps the bottom bar', () {
+      expect(WideLayout.fits(const Size(640, 360)), isTrue);
+      expect(WideLayout.fits(const Size(639, 360)), isFalse);
+      expect(WideLayout.fits(const Size(900, 900)), isFalse);
+    });
+  });
+
+  group('ScreenSize', () {
+    test('pages use two columns from 760 wide, whichever way it is held', () {
+      // Phones upright and 7-inch tablets upright: one column.
+      expect(ScreenSize.fitsTwoColumns(const Size(412, 915)), isFalse);
+      expect(ScreenSize.fitsTwoColumns(const Size(600, 960)), isFalse);
+      // A phone turned sideways, a 7-inch tablet sideways and a 10-inch
+      // tablet either way: two columns.
+      expect(ScreenSize.fitsTwoColumns(const Size(915, 412)), isTrue);
+      expect(ScreenSize.fitsTwoColumns(const Size(960, 600)), isTrue);
+      expect(ScreenSize.fitsTwoColumns(const Size(800, 1280)), isTrue);
+      expect(ScreenSize.fitsTwoColumns(const Size(1280, 800)), isTrue);
+      expect(ScreenSize.fitsTwoColumns(const Size(759, 400)), isFalse);
     });
   });
 
@@ -216,5 +232,59 @@ void main() {
     );
     await tester.tap(find.text('Calendar'), warnIfMissed: false);
     expect(opened, isNull);
+  });
+
+  Future<void> pumpRail(
+    WidgetTester tester,
+    Size screen, {
+    double cutOut = 0,
+    ValueChanged<int>? onTap,
+  }) async {
+    tester.view.devicePixelRatio = 2;
+    tester.view.physicalSize = screen * 2;
+    if (cutOut > 0) tester.view.padding = FakeViewPadding(left: cutOut * 2);
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(
+      _host(
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            SideNavRail(
+              currentIndex: 0,
+              isTutorialActive: false,
+              onTap: onTap ?? (_) {},
+              addButton: const SizedBox(width: 56, height: 56),
+            ),
+            const Expanded(child: SizedBox()),
+          ],
+        ),
+      ),
+    );
+  }
+
+  testWidgets('on a phone turned sideways the side bar fits and every tab works', (
+    tester,
+  ) async {
+    int? opened;
+    await pumpRail(tester, const Size(780, 360), onTap: (i) => opened = i);
+    // Nothing spills over the bottom of a short screen.
+    expect(tester.takeException(), isNull);
+    final calendar = tester.getRect(find.text('Calendar'));
+    expect(calendar.bottom, lessThanOrEqualTo(360));
+    await tester.tap(find.text('Calendar'));
+    expect(opened, 3);
+  });
+
+  testWidgets('the side bar grows by the camera cut-out on its side', (
+    tester,
+  ) async {
+    await pumpRail(tester, const Size(915, 412), cutOut: 40);
+    expect(
+      tester.getSize(find.byType(SideNavRail)).width,
+      SideNavRail.width + 40,
+    );
+    // The labels keep their full width beside the cut-out.
+    expect(tester.getTopLeft(find.text('Home')).dx, greaterThanOrEqualTo(40));
+    expect(tester.takeException(), isNull);
   });
 }

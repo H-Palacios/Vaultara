@@ -271,9 +271,12 @@ class ShellState extends State<Shell> {
       children: buildShellPages(this),
     );
 
-    // A 10-inch tablet held sideways gets the side bar, with the + at its
-    // top. Phones and 7-inch tablets keep the curved bottom bar below.
+    // A phone or tablet held sideways gets the side bar, with the + at its
+    // top. Held upright, they keep the curved bottom bar below.
     if (WideLayout.of(context)) {
+      // The side bar already keeps clear of a camera cut-out on its side,
+      // so the pages beside it do not leave room for it a second time.
+      final rtl = Directionality.of(context) == TextDirection.rtl;
       return Scaffold(
         body: Row(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -284,7 +287,14 @@ class ShellState extends State<Shell> {
               onTap: onNavTap,
               addButton: SideNavAddButton(shell: this),
             ),
-            Expanded(child: pages),
+            Expanded(
+              child: MediaQuery.removePadding(
+                context: context,
+                removeLeft: !rtl,
+                removeRight: rtl,
+                child: pages,
+              ),
+            ),
           ],
         ),
       );
