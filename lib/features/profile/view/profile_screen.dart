@@ -4,6 +4,7 @@ import 'package:vaultara/features/pets/view/pets_screen.dart';
 import 'package:vaultara/features/rules_review/services/rule_review_service.dart';
 import 'package:vaultara/features/rules_review/view/rules_review_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -201,12 +202,232 @@ class _ProfileScreenState extends State<ProfileScreen> {
           color: Theme.of(context).colorScheme.onSurfaceVariant,
         );
 
+  /// Home country, account and security, people and your data: the
+  /// first column on a wide screen, the top of the page on a phone.
+  List<Widget> _accountSections(AppLocalizations t) => [
+    _Section(
+      title: t.homeSectionTitle,
+      children: const [HomeCountryTiles()],
+    ),
+
+    _Section(
+      title: t.profileSectionAccountSecurity,
+      children: [
+        SettingsTile(
+          icon: Icons.manage_accounts_rounded,
+          title: t.profile_account_management_title,
+          subtitle: t.profile_account_management_subtitle,
+          onTap: () => _push(const AccountScreen()),
+        ),
+        SettingsTile(
+          icon: Icons.security_rounded,
+          title: t.secTitle,
+          subtitle: t.secProfileSubtitle,
+          onTap: () => _push(const SecurityPrivacyScreen()),
+        ),
+        SettingsTile(
+          icon: Icons.notifications_active_rounded,
+          title: t.notificationsTitle,
+          subtitle: _notificationSubtitle(t),
+          onTap: _openNotificationSettings,
+        ),
+      ],
+    ),
+
+    _Section(
+      title: t.profileSectionPeople,
+      children: [
+        ValueListenableBuilder<HouseholdInfo?>(
+          valueListenable: HouseholdRepository.household,
+          builder: (context, household, _) => StreamBuilder<PlanTier>(
+            stream: _tierStream,
+            builder: (context, tierSnap) {
+              final team = TeamWording.isTeam(
+                tierSnap.data,
+                household,
+              );
+              return SettingsTile(
+                icon: team
+                    ? Icons.groups_rounded
+                    : Icons.family_restroom_rounded,
+                title: team ? t.teamTitle : t.familyProfileTileTitle,
+                subtitle: team
+                    ? t.teamProfileTileSubtitle
+                    : household == null
+                    ? t.familyProfileTileSubtitle
+                    : t.householdProfileTileSubtitle,
+                onTap: () => _push(const FamilyScreen()),
+              );
+            },
+          ),
+        ),
+        // Pets are kept apart from people, so they never use a
+        // member place.
+        PremiumBuilder(
+          initial: widget.isPremium,
+          builder: (context, isPremium) => SettingsTile(
+            icon: Icons.pets_rounded,
+            title: t.petsTitle,
+            subtitle: t.petsTileSubtitle,
+            trailing: _lock(isPremium),
+            onTap: () => _push(PetsScreen(isPremium: isPremium)),
+          ),
+        ),
+        const InviteFriendsTile(),
+        FutureBuilder<bool>(
+          future: _isAdmin,
+          builder: (context, snap) => snap.data == true
+              ? SettingsTile(
+                  icon: Icons.fact_check_rounded,
+                  title: t.rulesReviewTitle,
+                  subtitle: t.rulesReviewSubtitle,
+                  onTap: () => _push(const RulesReviewScreen()),
+                )
+              : const SizedBox.shrink(),
+        ),
+      ],
+    ),
+
+    _Section(
+      title: t.profileSectionYourData,
+      children: [
+        SettingsTile(
+          icon: Icons.restore_rounded,
+          title: t.recentlyDeletedTitle,
+          subtitle: t.recoveryCentreSubtitle,
+          onTap: _openRecentlyDeleted,
+        ),
+        SettingsTile(
+          icon: Icons.upload_file_rounded,
+          title: t.csvImportTileTitle,
+          subtitle: t.csvImportTileSubtitle,
+          onTap: () => ImportScreen.open(context),
+        ),
+        SettingsTile(
+          icon: Icons.ios_share_rounded,
+          title: t.exportCalendarScreenTitle,
+          subtitle: t.exportCalendarTileSubtitle,
+          onTap: () => _push(
+            ExportCalendarScreen(isPremium: widget.isPremium),
+          ),
+        ),
+      ],
+    ),
+  ];
+
+  /// Tools, preferences, help, the plan card and Sign out: the second
+  /// column on a wide screen, the rest of the page on a phone.
+  List<Widget> _toolSections(AppLocalizations t) => [
+    _Section(
+      title: t.smartToolsSection,
+      children: [
+        // The standout feature, highlighted at the top of Tools.
+        PremiumBuilder(
+          initial: widget.isPremium,
+          builder: (context, isPremium) => _Highlighted(
+            child: SettingsTile(
+              icon: Icons.auto_awesome_rounded,
+              title: t.assistantTitle,
+              subtitle: t.assistantTileSubtitle,
+              trailing: _lock(isPremium),
+              onTap: () =>
+                  openAskVaultara(context, isPremium: isPremium),
+            ),
+          ),
+        ),
+        SettingsTile(
+          key: _lostWalletKey,
+          icon: Icons.account_balance_wallet_rounded,
+          title: t.lostWalletTitle,
+          subtitle: t.lostWalletSubtitle,
+          onTap: () => _push(const LostWalletScreen()),
+        ),
+        SettingsTile(
+          key: _lifeEventsKey,
+          icon: Icons.event_note_rounded,
+          title: t.lifeEventsTitle,
+          subtitle: t.lifeEventsSubtitle,
+          onTap: () => _push(const LifeEventsScreen()),
+        ),
+        PremiumBuilder(
+          key: _proofPackKey,
+          initial: widget.isPremium,
+          builder: (context, isPremium) => SettingsTile(
+            icon: Icons.folder_shared_rounded,
+            title: t.proofPackTitle,
+            subtitle: t.proofPackSubtitle,
+            trailing: _lock(isPremium),
+            onTap: () => isPremium
+                ? _push(const ProofPackScreen())
+                : openPlans(context),
+          ),
+        ),
+        SettingsTile(
+          key: _sharedLinksKey,
+          icon: Icons.link_rounded,
+          title: t.sharedLinksTitle,
+          subtitle: t.sharedLinksSubtitle,
+          onTap: () => _push(const SharedLinksScreen()),
+        ),
+      ],
+    ),
+
+    _Section(
+      title: t.profileSectionPreferences,
+      children: [
+        ValueListenableBuilder<String?>(
+          valueListenable: DisplayCurrency.chosen,
+          builder: (context, _, __) =>
+              ValueListenableBuilder<ThemeMode>(
+                valueListenable: ThemePreference.mode,
+                builder: (context, _, __) => SettingsTile(
+                  icon: Icons.palette_outlined,
+                  title: t.displayTitle,
+                  subtitle: DisplaySettingsScreen.summary(context),
+                  onTap: _openDisplay,
+                ),
+              ),
+        ),
+      ],
+    ),
+
+    _Section(
+      title: t.profileHelpSectionTitle,
+      children: [
+        SettingsTile(
+          icon: Icons.help_outline_rounded,
+          title: t.profileHelpSectionTitle,
+          subtitle: t.helpTileSubtitle,
+          onTap: () => _push(HelpScreen(isPremium: widget.isPremium)),
+        ),
+      ],
+    ),
+
+    // Paid plans keep the subscription card, with Manage subscription.
+    if (widget.isPremium) ...[
+      ValueListenableBuilder<String?>(
+        valueListenable: HouseholdRepository.planSource,
+        builder: (context, source, _) => PremiumCard(
+          isPremium: widget.isPremium,
+          planSource: source,
+          onUpgrade: _openPlans,
+          onManageSubscription: _openSubscriptionManagement,
+        ),
+      ),
+      const SizedBox(height: 8),
+    ],
+    const SizedBox(height: 24),
+    const SignOutButton(),
+    const SizedBox(height: 16),
+  ];
+
   @override
   Widget build(BuildContext context) {
     final t = AppLocalizations.of(context)!;
 
     return Scaffold(
       body: WideCentered(
+        maxWidth: WideCentered.twoColumnMaxWidth,
         child: SafeArea(
           child: ListView(
             padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
@@ -225,216 +446,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ],
               const SizedBox(height: 20),
 
-              _Section(
-                title: t.homeSectionTitle,
-                children: const [HomeCountryTiles()],
+              // Where there is room, such as on a phone turned sideways,
+              // the sections sit in two columns, so far less of the page is
+              // below the screen.
+              AdaptiveColumns(
+                left: _accountSections(t),
+                right: _toolSections(t),
               ),
-
-              _Section(
-                title: t.profileSectionAccountSecurity,
-                children: [
-                  SettingsTile(
-                    icon: Icons.manage_accounts_rounded,
-                    title: t.profile_account_management_title,
-                    subtitle: t.profile_account_management_subtitle,
-                    onTap: () => _push(const AccountScreen()),
-                  ),
-                  SettingsTile(
-                    icon: Icons.security_rounded,
-                    title: t.secTitle,
-                    subtitle: t.secProfileSubtitle,
-                    onTap: () => _push(const SecurityPrivacyScreen()),
-                  ),
-                  SettingsTile(
-                    icon: Icons.notifications_active_rounded,
-                    title: t.notificationsTitle,
-                    subtitle: _notificationSubtitle(t),
-                    onTap: _openNotificationSettings,
-                  ),
-                ],
-              ),
-
-              _Section(
-                title: t.profileSectionPeople,
-                children: [
-                  ValueListenableBuilder<HouseholdInfo?>(
-                    valueListenable: HouseholdRepository.household,
-                    builder: (context, household, _) => StreamBuilder<PlanTier>(
-                      stream: _tierStream,
-                      builder: (context, tierSnap) {
-                        final team = TeamWording.isTeam(
-                          tierSnap.data,
-                          household,
-                        );
-                        return SettingsTile(
-                          icon: team
-                              ? Icons.groups_rounded
-                              : Icons.family_restroom_rounded,
-                          title: team ? t.teamTitle : t.familyProfileTileTitle,
-                          subtitle: team
-                              ? t.teamProfileTileSubtitle
-                              : household == null
-                              ? t.familyProfileTileSubtitle
-                              : t.householdProfileTileSubtitle,
-                          onTap: () => _push(const FamilyScreen()),
-                        );
-                      },
-                    ),
-                  ),
-                  // Pets are kept apart from people, so they never use a
-                  // member place.
-                  PremiumBuilder(
-                    initial: widget.isPremium,
-                    builder: (context, isPremium) => SettingsTile(
-                      icon: Icons.pets_rounded,
-                      title: t.petsTitle,
-                      subtitle: t.petsTileSubtitle,
-                      trailing: _lock(isPremium),
-                      onTap: () => _push(PetsScreen(isPremium: isPremium)),
-                    ),
-                  ),
-                  const InviteFriendsTile(),
-                  FutureBuilder<bool>(
-                    future: _isAdmin,
-                    builder: (context, snap) => snap.data == true
-                        ? SettingsTile(
-                            icon: Icons.fact_check_rounded,
-                            title: t.rulesReviewTitle,
-                            subtitle: t.rulesReviewSubtitle,
-                            onTap: () => _push(const RulesReviewScreen()),
-                          )
-                        : const SizedBox.shrink(),
-                  ),
-                ],
-              ),
-
-              _Section(
-                title: t.profileSectionYourData,
-                children: [
-                  SettingsTile(
-                    icon: Icons.restore_rounded,
-                    title: t.recentlyDeletedTitle,
-                    subtitle: t.recoveryCentreSubtitle,
-                    onTap: _openRecentlyDeleted,
-                  ),
-                  SettingsTile(
-                    icon: Icons.upload_file_rounded,
-                    title: t.csvImportTileTitle,
-                    subtitle: t.csvImportTileSubtitle,
-                    onTap: () => ImportScreen.open(context),
-                  ),
-                  SettingsTile(
-                    icon: Icons.ios_share_rounded,
-                    title: t.exportCalendarScreenTitle,
-                    subtitle: t.exportCalendarTileSubtitle,
-                    onTap: () => _push(
-                      ExportCalendarScreen(isPremium: widget.isPremium),
-                    ),
-                  ),
-                ],
-              ),
-
-              _Section(
-                title: t.smartToolsSection,
-                children: [
-                  // The standout feature, highlighted at the top of Tools.
-                  PremiumBuilder(
-                    initial: widget.isPremium,
-                    builder: (context, isPremium) => _Highlighted(
-                      child: SettingsTile(
-                        icon: Icons.auto_awesome_rounded,
-                        title: t.assistantTitle,
-                        subtitle: t.assistantTileSubtitle,
-                        trailing: _lock(isPremium),
-                        onTap: () =>
-                            openAskVaultara(context, isPremium: isPremium),
-                      ),
-                    ),
-                  ),
-                  SettingsTile(
-                    key: _lostWalletKey,
-                    icon: Icons.account_balance_wallet_rounded,
-                    title: t.lostWalletTitle,
-                    subtitle: t.lostWalletSubtitle,
-                    onTap: () => _push(const LostWalletScreen()),
-                  ),
-                  SettingsTile(
-                    key: _lifeEventsKey,
-                    icon: Icons.event_note_rounded,
-                    title: t.lifeEventsTitle,
-                    subtitle: t.lifeEventsSubtitle,
-                    onTap: () => _push(const LifeEventsScreen()),
-                  ),
-                  PremiumBuilder(
-                    key: _proofPackKey,
-                    initial: widget.isPremium,
-                    builder: (context, isPremium) => SettingsTile(
-                      icon: Icons.folder_shared_rounded,
-                      title: t.proofPackTitle,
-                      subtitle: t.proofPackSubtitle,
-                      trailing: _lock(isPremium),
-                      onTap: () => isPremium
-                          ? _push(const ProofPackScreen())
-                          : openPlans(context),
-                    ),
-                  ),
-                  SettingsTile(
-                    key: _sharedLinksKey,
-                    icon: Icons.link_rounded,
-                    title: t.sharedLinksTitle,
-                    subtitle: t.sharedLinksSubtitle,
-                    onTap: () => _push(const SharedLinksScreen()),
-                  ),
-                ],
-              ),
-
-              _Section(
-                title: t.profileSectionPreferences,
-                children: [
-                  ValueListenableBuilder<String?>(
-                    valueListenable: DisplayCurrency.chosen,
-                    builder: (context, _, __) =>
-                        ValueListenableBuilder<ThemeMode>(
-                          valueListenable: ThemePreference.mode,
-                          builder: (context, _, __) => SettingsTile(
-                            icon: Icons.palette_outlined,
-                            title: t.displayTitle,
-                            subtitle: DisplaySettingsScreen.summary(context),
-                            onTap: _openDisplay,
-                          ),
-                        ),
-                  ),
-                ],
-              ),
-
-              _Section(
-                title: t.profileHelpSectionTitle,
-                children: [
-                  SettingsTile(
-                    icon: Icons.help_outline_rounded,
-                    title: t.profileHelpSectionTitle,
-                    subtitle: t.helpTileSubtitle,
-                    onTap: () => _push(HelpScreen(isPremium: widget.isPremium)),
-                  ),
-                ],
-              ),
-
-              // Paid plans keep the subscription card, with Manage subscription.
-              if (widget.isPremium) ...[
-                ValueListenableBuilder<String?>(
-                  valueListenable: HouseholdRepository.planSource,
-                  builder: (context, source, _) => PremiumCard(
-                    isPremium: widget.isPremium,
-                    planSource: source,
-                    onUpgrade: _openPlans,
-                    onManageSubscription: _openSubscriptionManagement,
-                  ),
-                ),
-                const SizedBox(height: 8),
-              ],
-              const SizedBox(height: 24),
-              const SignOutButton(),
-              const SizedBox(height: 16),
             ],
           ),
         ),
