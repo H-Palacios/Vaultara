@@ -11241,6 +11241,42 @@
   "@tripEntryTitle": {
     "description": "Pets, calendar, costs and change history: tripEntryTitle"
   },
+  "petNameHint": "Enter pet name",
+  "@petNameHint": {
+    "description": "Pet editor field hints: petNameHint"
+  },
+  "petTypeFieldHint": "Enter type of pet",
+  "@petTypeFieldHint": {
+    "description": "Pet editor field hints: petTypeFieldHint"
+  },
+  "petBirthdayHint": "Select date of birth",
+  "@petBirthdayHint": {
+    "description": "Pet editor field hints: petBirthdayHint"
+  },
+  "petChipHint": "Enter microchip number",
+  "@petChipHint": {
+    "description": "Pet editor field hints: petChipHint"
+  },
+  "petRegistryHint": "Enter chip registry",
+  "@petRegistryHint": {
+    "description": "Pet editor field hints: petRegistryHint"
+  },
+  "petVetHint": "Enter vet's name",
+  "@petVetHint": {
+    "description": "Pet editor field hints: petVetHint"
+  },
+  "petVetPhoneHint": "Enter vet's phone number",
+  "@petVetPhoneHint": {
+    "description": "Pet editor field hints: petVetPhoneHint"
+  },
+  "petMoreDetailsHint": "Microchip, chip registry and vet (optional)",
+  "@petMoreDetailsHint": {
+    "description": "Pet editor: what More details holds"
+  },
+  "petAddChip": "Add chip number",
+  "@petAddChip": {
+    "description": "Pet: link that opens the pet with More details open"
+  },
   "yoursTag": "Yours",
   "@yoursTag": {
     "description": "Small label on a category or group the user made."
