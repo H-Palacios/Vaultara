@@ -2664,6 +2664,7 @@
   "tripEntryTitle": "પ્રવેશની વિગતો",
   "petNameHint": "પાલતુ પ્રાણીનું નામ દાખલ કરો",
   "petTypeFieldHint": "પાલતુ પ્રાણીનો પ્રકાર દાખલ કરો",
+  "petTypeRequired": "પાલતુ પ્રાણીનો પ્રકાર પસંદ કરો",
   "petBirthdayHint": "જન્મ તારીખ પસંદ કરો",
   "petChipHint": "માઇક્રોચિપ નંબર દાખલ કરો",
   "petRegistryHint": "ચિપ રજિસ્ટ્રી દાખલ કરો",

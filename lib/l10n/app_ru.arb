@@ -2889,6 +2889,7 @@
   "tripEntryTitle": "Сведения о въезде",
   "petNameHint": "Введите кличку питомца",
   "petTypeFieldHint": "Введите вид питомца",
+  "petTypeRequired": "Выберите вид питомца",
   "petBirthdayHint": "Выберите дату рождения",
   "petChipHint": "Введите номер микрочипа",
   "petRegistryHint": "Введите реестр чипа",

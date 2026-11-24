@@ -151,11 +151,16 @@ class _PetTravelScreenState extends State<PetTravelScreen> {
                   customType: _customType,
                   customGroup: _customGroup,
                   customEmoji: widget.pet?.customEmoji,
-                  onChanged: (pick) => setState(() {
-                    _typeId = pick.typeId;
-                    _customType = pick.customType;
-                    _customGroup = pick.customGroup;
-                  }),
+                  onChanged: (pick) {
+                    // Emptying the field keeps the rules for the last type.
+                    final id = pick.typeId;
+                    if (id == null) return;
+                    setState(() {
+                      _typeId = id;
+                      _customType = pick.customType;
+                      _customGroup = pick.customGroup;
+                    });
+                  },
                 ),
                 const SizedBox(height: 20),
                 ..._rules(loc),

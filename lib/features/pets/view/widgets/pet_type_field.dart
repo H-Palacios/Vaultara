@@ -14,10 +14,11 @@ import 'package:vaultara/features/pets/view/widgets/pet_type_hint.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 /// The chosen pet type: one Vaultara offers, or the user's own word with
-/// the group and emoji the type helper suggested. [blocked] is true while
-/// the text cannot be saved (symbols, or "not an animal" not confirmed).
+/// the group and emoji the type helper suggested. [typeId] is null when the
+/// field was emptied. [blocked] is true while the text cannot be saved
+/// (symbols, or "not an animal" not confirmed).
 typedef PetTypePick = ({
-  String typeId,
+  String? typeId,
   String? customType,
   PetGroup? customGroup,
   String? customEmoji,
@@ -32,12 +33,16 @@ typedef PetTypePick = ({
 ///    (paid plans): "Did you mean Tarantula?", with the animal group so
 ///    travel rules fit. Text that is not an animal needs "Keep it" first.
 class PetTypeField extends StatefulWidget {
-  final String typeId;
+  /// Null for a new pet, so no type is chosen for the user.
+  final String? typeId;
   final String? customType;
   final PetGroup? customGroup;
   final String? customEmoji;
   final bool useHelper;
   final ValueChanged<PetTypePick> onChanged;
+
+  /// Shown under the field, for example when no type is chosen on save.
+  final String? errorText;
 
   const PetTypeField({
     super.key,
@@ -47,6 +52,7 @@ class PetTypeField extends StatefulWidget {
     this.customGroup,
     this.customEmoji,
     this.useHelper = false,
+    this.errorText,
   });
 
   @override
@@ -56,7 +62,8 @@ class PetTypeField extends StatefulWidget {
 enum _Hint { none, typo, checking, suggest, own, notAnimal, junk }
 
 class _PetTypeFieldState extends State<PetTypeField> {
-  late String _emoji;
+  /// Null while no type is chosen: the field shows the paw icon.
+  String? _emoji;
   TextEditingController? _controller;
   Timer? _debounce;
   _Hint _hint = _Hint.none;
@@ -68,9 +75,12 @@ class _PetTypeFieldState extends State<PetTypeField> {
   @override
   void initState() {
     super.initState();
-    _emoji = widget.typeId == PetTypes.custom && widget.customEmoji != null
-        ? widget.customEmoji!
-        : PetTypes.emojiOf(widget.typeId);
+    final id = widget.typeId;
+    _emoji = id == null
+        ? null
+        : (id == PetTypes.custom && widget.customEmoji != null
+              ? widget.customEmoji!
+              : PetTypes.emojiOf(id));
   }
 
   @override
@@ -80,7 +90,7 @@ class _PetTypeFieldState extends State<PetTypeField> {
   }
 
   void _emit(
-    String id, {
+    String? id, {
     String? own,
     PetGroup? group,
     String? emoji,
@@ -100,10 +110,13 @@ class _PetTypeFieldState extends State<PetTypeField> {
     _asked++;
     _kept = false;
     final clean = text.trim();
-    // An empty field keeps the last choice, so a pet never loses its type
-    // while the user is retyping it.
+    // An empty field has no type, so it cannot be saved with an old one.
     if (clean.isEmpty) {
-      setState(() => _hint = _Hint.none);
+      setState(() {
+        _hint = _Hint.none;
+        _emoji = null;
+      });
+      _emit(null);
       return;
     }
     if (PetTypeGuess.junk(clean)) {
@@ -265,9 +278,13 @@ class _PetTypeFieldState extends State<PetTypeField> {
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final labels = PetText.typeLabels(loc);
-    final initial = widget.typeId == PetTypes.custom
-        ? (widget.customType ?? '')
-        : PetText.typeLabel(loc, widget.typeId);
+    final id = widget.typeId;
+    final initial = id == null
+        ? ''
+        : (id == PetTypes.custom
+              ? (widget.customType ?? '')
+              : PetText.typeLabel(loc, id));
+    final emoji = _emoji;
     final hint = _hintRow(loc, labels);
 
     return Column(
@@ -288,28 +305,37 @@ class _PetTypeFieldState extends State<PetTypeField> {
           },
           fieldViewBuilder: (context, controller, focus, onSubmit) {
             _controller = controller;
-            return TextField(
-              controller: controller,
-              focusNode: focus,
-              textCapitalization: TextCapitalization.sentences,
-              inputFormatters: [
-                LengthLimitingTextInputFormatter(Pet.maxCustomType),
-              ],
-              onChanged: (text) => _typed(text, labels),
-              onSubmitted: (_) => onSubmit(),
-              decoration: AppInputDecorations.field(
-                context,
-                labelText: loc.petTypeLabel,
-                hintText: loc.petTypeFieldHint,
-                showLabel: true,
-                prefixIcon: Padding(
-                  padding: const EdgeInsets.all(12),
-                  child: Text(
-                    PetEmoji.show(_emoji),
-                    style: const TextStyle(fontSize: 20),
-                  ),
-                ),
-              ).copyWith(helperText: loc.petTypeHint, helperMaxLines: 2),
+            // Like the record form: the hint while empty, the label above
+            // once the field is tapped or filled.
+            return ListenableBuilder(
+              listenable: Listenable.merge([focus, controller]),
+              builder: (context, _) => TextField(
+                controller: controller,
+                focusNode: focus,
+                textCapitalization: TextCapitalization.sentences,
+                inputFormatters: [
+                  LengthLimitingTextInputFormatter(Pet.maxCustomType),
+                ],
+                onChanged: (text) => _typed(text, labels),
+                onSubmitted: (_) => onSubmit(),
+                decoration: AppInputDecorations.field(
+                  context,
+                  labelText: loc.petTypeLabel,
+                  hintText: loc.petTypeFieldHint,
+                  showLabel: controller.text.isNotEmpty,
+                  focused: focus.hasFocus,
+                  errorText: widget.errorText,
+                  prefixIcon: emoji == null
+                      ? const Icon(Icons.pets_rounded)
+                      : Padding(
+                          padding: const EdgeInsets.all(12),
+                          child: Text(
+                            PetEmoji.show(emoji),
+                            style: const TextStyle(fontSize: 20),
+                          ),
+                        ),
+                ).copyWith(helperText: loc.petTypeHint, helperMaxLines: 2),
+              ),
             );
           },
           optionsViewBuilder: (context, onSelected, options) {

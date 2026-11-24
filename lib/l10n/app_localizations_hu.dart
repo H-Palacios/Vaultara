@@ -8953,6 +8953,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String get petBirthdayHint => 'Válaszd ki a születési dátumot';
 
   @override
+  String get petTypeRequired => 'Válaszd ki a kisállat fajtáját';
+
+  @override
   String get petChipHint => 'Add meg a mikrochip számát';
 
   @override

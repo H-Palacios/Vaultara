@@ -2921,6 +2921,7 @@
   "tripEntryTitle": "Innreiseopplysninger",
   "petNameHint": "Skriv inn kjæledyrets navn",
   "petTypeFieldHint": "Skriv inn type kjæledyr",
+  "petTypeRequired": "Velg type kjæledyr",
   "petBirthdayHint": "Velg fødselsdato",
   "petChipHint": "Skriv inn mikrobrikkenummer",
   "petRegistryHint": "Skriv inn brikkeregister",

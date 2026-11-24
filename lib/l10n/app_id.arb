@@ -2919,6 +2919,7 @@
   "tripEntryTitle": "Detail masuk",
   "petNameHint": "Masukkan nama hewan peliharaan",
   "petTypeFieldHint": "Masukkan jenis hewan peliharaan",
+  "petTypeRequired": "Pilih jenis hewan peliharaan",
   "petBirthdayHint": "Pilih tanggal lahir",
   "petChipHint": "Masukkan nomor microchip",
   "petRegistryHint": "Masukkan registri chip",

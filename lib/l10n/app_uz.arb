@@ -2664,6 +2664,7 @@
   "tripEntryTitle": "Kirish ma'lumotlari",
   "petNameHint": "Uy hayvoni ismini kiriting",
   "petTypeFieldHint": "Uy hayvoni turini kiriting",
+  "petTypeRequired": "Uy hayvoni turini tanlang",
   "petBirthdayHint": "Tug'ilgan sanani tanlang",
   "petChipHint": "Mikrochip raqamini kiriting",
   "petRegistryHint": "Chip reyestrini kiriting",

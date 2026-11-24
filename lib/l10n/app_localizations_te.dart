@@ -8953,6 +8953,9 @@ class AppLocalizationsTe extends AppLocalizations {
   String get petBirthdayHint => 'పుట్టిన తేదీని ఎంచుకోండి';
 
   @override
+  String get petTypeRequired => 'పెంపుడు జంతువు రకాన్ని ఎంచుకోండి';
+
+  @override
   String get petChipHint => 'మైక్రోచిప్ నంబర్ నమోదు చేయండి';
 
   @override

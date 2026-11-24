@@ -2926,6 +2926,7 @@
   "tripEntryTitle": "Conditions d'entrée",
   "petNameHint": "Saisir le nom de l’animal",
   "petTypeFieldHint": "Saisir le type d’animal",
+  "petTypeRequired": "Choisissez le type d’animal",
   "petBirthdayHint": "Sélectionner la date de naissance",
   "petChipHint": "Saisir le numéro de puce",
   "petRegistryHint": "Saisir le registre de la puce",

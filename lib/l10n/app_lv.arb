@@ -2932,6 +2932,7 @@
   "tripEntryTitle": "Ieceļošanas informācija",
   "petNameHint": "Ievadiet mājdzīvnieka vārdu",
   "petTypeFieldHint": "Ievadiet mājdzīvnieka sugu",
+  "petTypeRequired": "Izvēlieties mājdzīvnieka sugu",
   "petBirthdayHint": "Izvēlieties dzimšanas datumu",
   "petChipHint": "Ievadiet mikročipa numuru",
   "petRegistryHint": "Ievadiet čipu reģistru",

@@ -2914,6 +2914,7 @@
   "tripEntryTitle": "Àwọn àlàyé ìwọlé",
   "petNameHint": "Tẹ orúkọ ẹranko ọ̀sìn",
   "petTypeFieldHint": "Tẹ irú ẹranko ọ̀sìn",
+  "petTypeRequired": "Yan irú ẹranko ọ̀sìn",
   "petBirthdayHint": "Yan ọjọ́ ìbí",
   "petChipHint": "Tẹ nọ́mbà máíkírọ́ṣípù",
   "petRegistryHint": "Tẹ ibi ìforúkọsílẹ̀ ṣípù",

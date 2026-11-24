@@ -2931,6 +2931,7 @@
   "tripEntryTitle": "รายละเอียดการเข้าประเทศ",
   "petNameHint": "ป้อนชื่อสัตว์เลี้ยง",
   "petTypeFieldHint": "ป้อนประเภทสัตว์เลี้ยง",
+  "petTypeRequired": "เลือกประเภทสัตว์เลี้ยง",
   "petBirthdayHint": "เลือกวันเกิด",
   "petChipHint": "ป้อนหมายเลขไมโครชิป",
   "petRegistryHint": "ป้อนทะเบียนชิป",

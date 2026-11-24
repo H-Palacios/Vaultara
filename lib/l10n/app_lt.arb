@@ -2932,6 +2932,7 @@
   "tripEntryTitle": "Atvykimo informacija",
   "petNameHint": "Įveskite augintinio vardą",
   "petTypeFieldHint": "Įveskite augintinio rūšį",
+  "petTypeRequired": "Pasirinkite augintinio rūšį",
   "petBirthdayHint": "Pasirinkite gimimo datą",
   "petChipHint": "Įveskite mikroschemos numerį",
   "petRegistryHint": "Įveskite schemų registrą",

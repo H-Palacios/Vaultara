@@ -8953,6 +8953,9 @@ class AppLocalizationsBg extends AppLocalizations {
   String get petBirthdayHint => 'Изберете дата на раждане';
 
   @override
+  String get petTypeRequired => 'Изберете вида на любимеца';
+
+  @override
   String get petChipHint => 'Въведете номера на микрочипа';
 
   @override

@@ -8952,6 +8952,9 @@ class AppLocalizationsIs extends AppLocalizations {
   String get petBirthdayHint => 'Veldu fæðingardag';
 
   @override
+  String get petTypeRequired => 'Veldu tegund gæludýrs';
+
+  @override
   String get petChipHint => 'Sláðu inn örmerkisnúmer';
 
   @override

@@ -55,7 +55,14 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
   late final TextEditingController _registry;
   late final TextEditingController _vet;
   late final TextEditingController _phone;
-  late String _typeId;
+  final TextEditingController _bornText = TextEditingController();
+
+  /// One per text field, so each field floats its label when tapped, as in
+  /// the record form.
+  final Map<TextEditingController, FocusNode> _focus = {};
+
+  /// Null until the user chooses a type; a new pet starts with none.
+  String? _typeId;
   String? _customType;
   PetGroup? _customGroup;
   String? _customEmoji;
@@ -63,6 +70,7 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
   DateTime? _born;
   String? _nameError;
   String? _chipError;
+  String? _typeError;
   late bool _details;
   late final String _start;
 
@@ -75,21 +83,47 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
     _registry = TextEditingController(text: pet?.chipRegistry ?? '');
     _vet = TextEditingController(text: pet?.vetName ?? '');
     _phone = TextEditingController(text: pet?.vetPhone ?? '');
-    _typeId = pet?.typeId ?? PetTypes.dogId;
+    _typeId = pet?.typeId;
     _customType = pet?.customType;
     _customGroup = pet?.customGroup;
     _customEmoji = pet?.customEmoji;
     _born = pet?.birthDate;
     _details = widget.openDetails;
+    for (final c in [_name, _chip, _registry, _vet, _phone]) {
+      _focus[c] = FocusNode()
+        ..addListener(() {
+          if (mounted) setState(() {});
+        });
+    }
     _start = _signature();
   }
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _showBorn();
+  }
+
+  @override
   void dispose() {
-    for (final c in [_name, _chip, _registry, _vet, _phone]) {
+    for (final c in [_name, _chip, _registry, _vet, _phone, _bornText]) {
       c.dispose();
     }
+    for (final f in _focus.values) {
+      f.dispose();
+    }
     super.dispose();
+  }
+
+  /// Writes the chosen birthday into its field, or empties it.
+  void _showBorn() {
+    final born = _born;
+    _bornText.text = born == null ? '' : TravelText.date(context, born);
+  }
+
+  void _setBorn(DateTime? day) {
+    setState(() => _born = day);
+    _showBorn();
   }
 
   int get _detailsFilled => [
@@ -114,33 +148,35 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
 
   Future<void> _pickBirthday() async {
     final now = DateTime.now();
+    // No day is chosen until the user picks one.
     final picked = await showAppDatePicker(
       context: context,
-      initialDate: _born ?? DateTime(now.year - 1, now.month, now.day),
+      initialDate: _born,
       firstDate: DateTime(now.year - 40),
       lastDate: now,
-      initialEntryMode: DatePickerEntryMode.calendarOnly,
       helpText: AppLocalizations.of(context)!.petBirthday,
     );
-    if (picked != null && mounted) setState(() => _born = picked);
+    if (picked != null && mounted) _setBorn(DateUtils.dateOnly(picked));
   }
 
   void _save() {
     final loc = AppLocalizations.of(context)!;
     final name = Pet.cleanText(_name.text, Pet.maxName);
     final chipOk = Pet.chipOk(_chip.text);
+    final typeId = _typeId;
     setState(() {
       _nameError = name == null ? loc.familyNameRequired : null;
+      _typeError = typeId == null ? loc.petTypeRequired : null;
       _chipError = chipOk ? null : loc.petChipInvalid;
       if (!chipOk) _details = true;
     });
-    if (name == null || !chipOk || _typeBlocked) return;
+    if (name == null || typeId == null || !chipOk || _typeBlocked) return;
     final base = widget.pet ?? const Pet(id: '', name: '');
     Navigator.of(context).pop(
       Pet(
         id: base.id,
         name: name,
-        typeId: _typeId,
+        typeId: typeId,
         customType: _customType,
         birthDate: _born,
         microchip: Pet.cleanChip(_chip.text),
@@ -166,10 +202,12 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
     List<TextInputFormatter> formatters = const [],
     TextCapitalization caps = TextCapitalization.none,
   }) {
+    final focus = _focus[controller]!;
     return Padding(
       padding: const EdgeInsets.only(top: 12),
       child: TextField(
         controller: controller,
+        focusNode: focus,
         keyboardType: keyboard,
         textCapitalization: caps,
         inputFormatters: [LengthLimitingTextInputFormatter(max), ...formatters],
@@ -179,6 +217,7 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
           labelText: label,
           hintText: hint,
           showLabel: controller.text.isNotEmpty,
+          focused: focus.hasFocus,
           errorText: error,
           prefixIcon: icon == null ? null : Icon(icon),
         ),
@@ -217,6 +256,7 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
                   loc.petNameHint,
                   max: Pet.maxName,
                   error: _nameError,
+                  icon: Icons.badge_rounded,
                   caps: TextCapitalization.words,
                 ),
                 const SizedBox(height: 12),
@@ -226,8 +266,10 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
                   customGroup: _customGroup,
                   customEmoji: _customEmoji,
                   useHelper: true,
+                  errorText: _typeError,
                   onChanged: (pick) => setState(() {
                     _typeId = pick.typeId;
+                    if (pick.typeId != null) _typeError = null;
                     _customType = pick.customType;
                     _customGroup = pick.customGroup;
                     _customEmoji = pick.customEmoji;
@@ -235,31 +277,27 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
                   }),
                 ),
                 const SizedBox(height: 12),
-                Material(
-                  color: AppInputDecorations.fillFor(scheme),
-                  borderRadius: BorderRadius.circular(14),
-                  child: ListTile(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(14),
-                    ),
-                    leading: const Icon(Icons.cake_rounded),
-                    title: Text(
-                      loc.petBirthday,
-                      style: const TextStyle(fontWeight: FontWeight.w600),
-                    ),
-                    subtitle: Text(
-                      born == null
-                          ? loc.petBirthdayHint
-                          : TravelText.date(context, born),
-                    ),
-                    trailing: born == null
-                        ? const Icon(Icons.chevron_right_rounded)
+                // The same kind of date field as the record form: a hint
+                // while empty, the label above once a date is chosen.
+                TextField(
+                  key: const ValueKey('pet-birthday'),
+                  controller: _bornText,
+                  readOnly: true,
+                  onTap: _pickBirthday,
+                  decoration: AppInputDecorations.field(
+                    context,
+                    labelText: loc.petBirthday,
+                    hintText: loc.petBirthdayHint,
+                    showLabel: born != null,
+                    prefixIcon: const Icon(Icons.cake_rounded),
+                    suffixIcon: born == null
+                        ? const Icon(Icons.arrow_drop_down_rounded)
                         : IconButton(
                             tooltip: loc.familyRemove,
                             icon: const Icon(Icons.close_rounded),
-                            onPressed: () => setState(() => _born = null),
+                            onPressed: () => _setBorn(null),
                           ),
-                    onTap: _pickBirthday,
+                    suffixIconColor: scheme.onSurfaceVariant,
                   ),
                 ),
                 const SizedBox(height: 12),

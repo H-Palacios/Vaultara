@@ -2664,6 +2664,7 @@
   "tripEntryTitle": "ಪ್ರವೇಶದ ವಿವರಗಳು",
   "petNameHint": "ಸಾಕುಪ್ರಾಣಿಯ ಹೆಸರು ನಮೂದಿಸಿ",
   "petTypeFieldHint": "ಸಾಕುಪ್ರಾಣಿಯ ಪ್ರಕಾರ ನಮೂದಿಸಿ",
+  "petTypeRequired": "ಸಾಕುಪ್ರಾಣಿಯ ಪ್ರಕಾರ ಆಯ್ಕೆಮಾಡಿ",
   "petBirthdayHint": "ಹುಟ್ಟಿದ ದಿನಾಂಕ ಆಯ್ಕೆಮಾಡಿ",
   "petChipHint": "ಮೈಕ್ರೋಚಿಪ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ",
   "petRegistryHint": "ಚಿಪ್ ನೋಂದಣಿ ನಮೂದಿಸಿ",

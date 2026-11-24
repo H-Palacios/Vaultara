@@ -2952,6 +2952,7 @@
   "tripEntryTitle": "Toegangsbesonderhede",
   "petNameHint": "Voer troeteldier se naam in",
   "petTypeFieldHint": "Voer soort troeteldier in",
+  "petTypeRequired": "Kies die soort troeteldier",
   "petBirthdayHint": "Kies geboortedatum",
   "petChipHint": "Voer mikroskyfienommer in",
   "petRegistryHint": "Voer skyfieregister in",

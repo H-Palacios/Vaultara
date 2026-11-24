@@ -2926,6 +2926,7 @@
   "tripEntryTitle": "प्रवेश की जानकारी",
   "petNameHint": "पालतू का नाम दर्ज करें",
   "petTypeFieldHint": "पालतू का प्रकार दर्ज करें",
+  "petTypeRequired": "पालतू का प्रकार चुनें",
   "petBirthdayHint": "जन्म तिथि चुनें",
   "petChipHint": "माइक्रोचिप नंबर दर्ज करें",
   "petRegistryHint": "चिप रजिस्ट्री दर्ज करें",

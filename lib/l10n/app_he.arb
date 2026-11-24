@@ -2919,6 +2919,7 @@
   "tripEntryTitle": "פרטי כניסה",
   "petNameHint": "הזינו את שם חיית המחמד",
   "petTypeFieldHint": "הזינו את סוג חיית המחמד",
+  "petTypeRequired": "בחרו את סוג חיית המחמד",
   "petBirthdayHint": "בחרו תאריך לידה",
   "petChipHint": "הזינו את מספר השבב",
   "petRegistryHint": "הזינו את מאגר השבבים",

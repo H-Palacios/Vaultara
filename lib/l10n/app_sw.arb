@@ -2914,6 +2914,7 @@
   "tripEntryTitle": "Maelezo ya kuingia",
   "petNameHint": "Weka jina la mnyama",
   "petTypeFieldHint": "Weka aina ya mnyama",
+  "petTypeRequired": "Chagua aina ya mnyama",
   "petBirthdayHint": "Chagua tarehe ya kuzaliwa",
   "petChipHint": "Weka nambari ya microchip",
   "petRegistryHint": "Weka sajili ya chip",

@@ -2921,6 +2921,7 @@
   "tripEntryTitle": "ਦਾਖ਼ਲੇ ਦੇ ਵੇਰਵੇ",
   "petNameHint": "ਪਾਲਤੂ ਦਾ ਨਾਮ ਦਰਜ ਕਰੋ",
   "petTypeFieldHint": "ਪਾਲਤੂ ਦੀ ਕਿਸਮ ਦਰਜ ਕਰੋ",
+  "petTypeRequired": "ਪਾਲਤੂ ਦੀ ਕਿਸਮ ਚੁਣੋ",
   "petBirthdayHint": "ਜਨਮ ਮਿਤੀ ਚੁਣੋ",
   "petChipHint": "ਮਾਈਕ੍ਰੋਚਿੱਪ ਨੰਬਰ ਦਰਜ ਕਰੋ",
   "petRegistryHint": "ਚਿੱਪ ਰਜਿਸਟਰੀ ਦਰਜ ਕਰੋ",

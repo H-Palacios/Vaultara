@@ -2914,6 +2914,7 @@
   "tripEntryTitle": "Hûrguliyên ketinê",
   "petNameHint": "Navê heywanê binivîse",
   "petTypeFieldHint": "Cureyê heywanê binivîse",
+  "petTypeRequired": "Cureyê heywanê hilbijêre",
   "petBirthdayHint": "Dîroka jidayikbûnê hilbijêre",
   "petChipHint": "Hejmara mîkroçîpê binivîse",
   "petRegistryHint": "Tomara çîpê binivîse",

@@ -15535,6 +15535,12 @@ abstract class AppLocalizations {
   /// **'Enter type of pet'**
   String get petTypeFieldHint;
 
+  /// Pet editor: shown under Type of pet when the user saves without choosing one.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose the type of pet'**
+  String get petTypeRequired;
+
   /// Pet editor field hints: petBirthdayHint
   ///
   /// In en, this message translates to:

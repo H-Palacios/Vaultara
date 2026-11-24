@@ -9030,6 +9030,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get petBirthdayHint => 'Selectează data nașterii';
 
   @override
+  String get petTypeRequired => 'Alege tipul de animal';
+
+  @override
   String get petChipHint => 'Introdu numărul microcipului';
 
   @override

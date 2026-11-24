@@ -2926,6 +2926,7 @@
   "tripEntryTitle": "Sonraí iontrála",
   "petNameHint": "Cuir isteach ainm an pheata",
   "petTypeFieldHint": "Cuir isteach cineál an pheata",
+  "petTypeRequired": "Roghnaigh cineál an pheata",
   "petBirthdayHint": "Roghnaigh dáta breithe",
   "petChipHint": "Cuir isteach uimhir an mhicrishlis",
   "petRegistryHint": "Cuir isteach clár na sliseanna",

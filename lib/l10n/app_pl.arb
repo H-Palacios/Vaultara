@@ -2914,6 +2914,7 @@
   "tripEntryTitle": "Informacje o wjeździe",
   "petNameHint": "Wpisz imię zwierzęcia",
   "petTypeFieldHint": "Wpisz gatunek zwierzęcia",
+  "petTypeRequired": "Wybierz gatunek zwierzęcia",
   "petBirthdayHint": "Wybierz datę urodzenia",
   "petChipHint": "Wpisz numer mikroczipa",
   "petRegistryHint": "Wpisz rejestr czipów",

@@ -2952,6 +2952,7 @@
   "tripEntryTitle": "تفاصيل الدخول",
   "petNameHint": "أدخل اسم الحيوان الأليف",
   "petTypeFieldHint": "أدخل نوع الحيوان الأليف",
+  "petTypeRequired": "اختر نوع الحيوان الأليف",
   "petBirthdayHint": "حدد تاريخ الميلاد",
   "petChipHint": "أدخل رقم الشريحة الإلكترونية",
   "petRegistryHint": "أدخل سجل الشريحة",

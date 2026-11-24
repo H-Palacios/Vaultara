@@ -2945,6 +2945,7 @@
   "tripEntryTitle": "প্রবেশের তথ্য",
   "petNameHint": "পোষা প্রাণীর নাম লিখুন",
   "petTypeFieldHint": "পোষা প্রাণীর ধরন লিখুন",
+  "petTypeRequired": "পোষা প্রাণীর ধরন বেছে নিন",
   "petBirthdayHint": "জন্মতারিখ নির্বাচন করুন",
   "petChipHint": "মাইক্রোচিপ নম্বর লিখুন",
   "petRegistryHint": "চিপ রেজিস্ট্রি লিখুন",

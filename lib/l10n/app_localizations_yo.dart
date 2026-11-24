@@ -8902,6 +8902,9 @@ class AppLocalizationsYo extends AppLocalizations {
   String get petBirthdayHint => 'Yan ọjọ́ ìbí';
 
   @override
+  String get petTypeRequired => 'Yan irú ẹranko ọ̀sìn';
+
+  @override
   String get petChipHint => 'Tẹ nọ́mbà máíkírọ́ṣípù';
 
   @override

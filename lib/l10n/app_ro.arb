@@ -2914,6 +2914,7 @@
   "tripEntryTitle": "Detalii de intrare",
   "petNameHint": "Introdu numele animalului",
   "petTypeFieldHint": "Introdu tipul de animal",
+  "petTypeRequired": "Alege tipul de animal",
   "petBirthdayHint": "Selectează data nașterii",
   "petChipHint": "Introdu numărul microcipului",
   "petRegistryHint": "Introdu registrul cipului",

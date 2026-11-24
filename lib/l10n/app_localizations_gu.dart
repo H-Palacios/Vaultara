@@ -8953,6 +8953,9 @@ class AppLocalizationsGu extends AppLocalizations {
   String get petBirthdayHint => 'જન્મ તારીખ પસંદ કરો';
 
   @override
+  String get petTypeRequired => 'પાલતુ પ્રાણીનો પ્રકાર પસંદ કરો';
+
+  @override
   String get petChipHint => 'માઇક્રોચિપ નંબર દાખલ કરો';
 
   @override

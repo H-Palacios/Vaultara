@@ -9137,6 +9137,9 @@ class AppLocalizationsGa extends AppLocalizations {
   String get petBirthdayHint => 'Roghnaigh dáta breithe';
 
   @override
+  String get petTypeRequired => 'Roghnaigh cineál an pheata';
+
+  @override
   String get petChipHint => 'Cuir isteach uimhir an mhicrishlis';
 
   @override

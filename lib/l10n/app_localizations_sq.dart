@@ -8957,6 +8957,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get petBirthdayHint => 'Zgjidh datën e lindjes';
 
   @override
+  String get petTypeRequired => 'Zgjidh llojin e kafshës';
+
+  @override
   String get petChipHint => 'Fut numrin e mikroçipit';
 
   @override

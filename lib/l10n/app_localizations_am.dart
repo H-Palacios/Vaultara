@@ -8953,6 +8953,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get petBirthdayHint => 'የልደት ቀን ይምረጡ';
 
   @override
+  String get petTypeRequired => 'የቤት እንስሳውን አይነት ይምረጡ';
+
+  @override
   String get petChipHint => 'የማይክሮቺፕ ቁጥር ያስገቡ';
 
   @override

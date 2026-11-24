@@ -8953,6 +8953,9 @@ class AppLocalizationsKy extends AppLocalizations {
   String get petBirthdayHint => 'Туулган күнүн тандаңыз';
 
   @override
+  String get petTypeRequired => 'Жаныбардын түрүн тандаңыз';
+
+  @override
   String get petChipHint => 'Микрочиптин номерин киргизиңиз';
 
   @override

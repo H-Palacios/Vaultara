@@ -2932,6 +2932,7 @@
   "tripEntryTitle": "Maahantulon tiedot",
   "petNameHint": "Anna lemmikin nimi",
   "petTypeFieldHint": "Anna lemmikin laji",
+  "petTypeRequired": "Valitse lemmikin laji",
   "petBirthdayHint": "Valitse syntymäpäivä",
   "petChipHint": "Anna mikrosirun numero",
   "petRegistryHint": "Anna sirurekisteri",

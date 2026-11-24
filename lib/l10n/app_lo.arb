@@ -2932,6 +2932,7 @@
   "tripEntryTitle": "ລາຍລະອຽດການເຂົ້າປະເທດ",
   "petNameHint": "ປ້ອນຊື່ສັດລ້ຽງ",
   "petTypeFieldHint": "ປ້ອນປະເພດສັດລ້ຽງ",
+  "petTypeRequired": "ເລືອກປະເພດສັດລ້ຽງ",
   "petBirthdayHint": "ເລືອກວັນເກີດ",
   "petChipHint": "ປ້ອນເລກໄມໂຄຣຊິບ",
   "petRegistryHint": "ປ້ອນທະບຽນຊິບ",

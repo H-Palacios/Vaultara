@@ -8894,6 +8894,9 @@ class AppLocalizationsKm extends AppLocalizations {
   String get petBirthdayHint => 'ជ្រើសថ្ងៃខែឆ្នាំកំណើត';
 
   @override
+  String get petTypeRequired => 'ជ្រើសរើសប្រភេទសត្វចិញ្ចឹម';
+
+  @override
   String get petChipHint => 'បញ្ចូលលេខមីក្រូឈីប';
 
   @override

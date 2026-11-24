@@ -2952,6 +2952,7 @@
   "tripEntryTitle": "የመግቢያ ዝርዝሮች",
   "petNameHint": "የቤት እንስሳውን ስም ያስገቡ",
   "petTypeFieldHint": "የቤት እንስሳውን አይነት ያስገቡ",
+  "petTypeRequired": "የቤት እንስሳውን አይነት ይምረጡ",
   "petBirthdayHint": "የልደት ቀን ይምረጡ",
   "petChipHint": "የማይክሮቺፕ ቁጥር ያስገቡ",
   "petRegistryHint": "የቺፕ መዝገብ ያስገቡ",

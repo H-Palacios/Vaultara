@@ -8953,6 +8953,9 @@ class AppLocalizationsFa extends AppLocalizations {
   String get petBirthdayHint => 'تاریخ تولد را انتخاب کنید';
 
   @override
+  String get petTypeRequired => 'نوع حیوان خانگی را انتخاب کنید';
+
+  @override
   String get petChipHint => 'شمارهٔ ریزتراشه را وارد کنید';
 
   @override

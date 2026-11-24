@@ -8957,6 +8957,9 @@ class AppLocalizationsEt extends AppLocalizations {
   String get petBirthdayHint => 'Vali sünnikuupäev';
 
   @override
+  String get petTypeRequired => 'Vali lemmiklooma liik';
+
+  @override
   String get petChipHint => 'Sisesta mikrokiibi number';
 
   @override

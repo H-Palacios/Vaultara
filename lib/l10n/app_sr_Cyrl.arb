@@ -2888,6 +2888,7 @@
   "tripEntryTitle": "Подаци о уласку",
   "petNameHint": "Унесите име љубимца",
   "petTypeFieldHint": "Унесите врсту љубимца",
+  "petTypeRequired": "Изаберите врсту љубимца",
   "petBirthdayHint": "Изаберите датум рођења",
   "petChipHint": "Унесите број микрочипа",
   "petRegistryHint": "Унесите регистар чипа",

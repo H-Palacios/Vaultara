@@ -8953,6 +8953,9 @@ class AppLocalizationsXh extends AppLocalizations {
   String get petBirthdayHint => 'Khetha umhla wokuzalwa';
 
   @override
+  String get petTypeRequired => 'Khetha uhlobo lwesilwanyana';
+
+  @override
   String get petChipHint => 'Faka inombolo yemayikhrotshiphu';
 
   @override

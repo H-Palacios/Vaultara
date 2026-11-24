@@ -8953,6 +8953,9 @@ class AppLocalizationsHa extends AppLocalizations {
   String get petBirthdayHint => 'Zaɓi ranar haihuwa';
 
   @override
+  String get petTypeRequired => 'Zaɓi nau\'in dabbar gida';
+
+  @override
   String get petChipHint => 'Shigar da lambar microchip';
 
   @override

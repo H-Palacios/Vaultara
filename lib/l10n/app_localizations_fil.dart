@@ -8947,6 +8947,9 @@ class AppLocalizationsFil extends AppLocalizations {
   String get petBirthdayHint => 'Piliin ang petsa ng kapanganakan';
 
   @override
+  String get petTypeRequired => 'Piliin ang uri ng alaga';
+
+  @override
   String get petChipHint => 'Ilagay ang numero ng microchip';
 
   @override

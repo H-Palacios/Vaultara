@@ -8956,6 +8956,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get petBirthdayHint => 'Välj födelsedatum';
 
   @override
+  String get petTypeRequired => 'Välj typ av husdjur';
+
+  @override
   String get petChipHint => 'Ange mikrochipnummer';
 
   @override

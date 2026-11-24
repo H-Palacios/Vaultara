@@ -2928,6 +2928,7 @@
   "tripEntryTitle": "Detajet e hyrjes",
   "petNameHint": "Fut emrin e kafshës",
   "petTypeFieldHint": "Fut llojin e kafshës",
+  "petTypeRequired": "Zgjidh llojin e kafshës",
   "petBirthdayHint": "Zgjidh datën e lindjes",
   "petChipHint": "Fut numrin e mikroçipit",
   "petRegistryHint": "Fut regjistrin e çipit",

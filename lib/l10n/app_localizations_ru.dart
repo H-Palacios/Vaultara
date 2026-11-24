@@ -9102,6 +9102,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get petBirthdayHint => 'Выберите дату рождения';
 
   @override
+  String get petTypeRequired => 'Выберите вид питомца';
+
+  @override
   String get petChipHint => 'Введите номер микрочипа';
 
   @override

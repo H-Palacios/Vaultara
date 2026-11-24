@@ -2914,6 +2914,7 @@
   "tripEntryTitle": "Inreisgegevens",
   "petNameHint": "Voer de naam van het huisdier in",
   "petTypeFieldHint": "Voer het soort huisdier in",
+  "petTypeRequired": "Kies het soort huisdier",
   "petBirthdayHint": "Selecteer de geboortedatum",
   "petChipHint": "Voer het chipnummer in",
   "petRegistryHint": "Voer het chipregister in",

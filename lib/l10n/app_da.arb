@@ -2945,6 +2945,7 @@
   "tripEntryTitle": "Indrejseoplysninger",
   "petNameHint": "Indtast kæledyrets navn",
   "petTypeFieldHint": "Indtast type kæledyr",
+  "petTypeRequired": "Vælg type kæledyr",
   "petBirthdayHint": "Vælg fødselsdato",
   "petChipHint": "Indtast mikrochipnummer",
   "petRegistryHint": "Indtast chipregister",

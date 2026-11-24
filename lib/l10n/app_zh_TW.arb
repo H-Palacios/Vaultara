@@ -2907,6 +2907,7 @@
   "tripEntryTitle": "入境資訊",
   "petNameHint": "輸入寵物名字",
   "petTypeFieldHint": "輸入寵物種類",
+  "petTypeRequired": "選擇寵物種類",
   "petBirthdayHint": "選擇出生日期",
   "petChipHint": "輸入晶片號碼",
   "petRegistryHint": "輸入晶片登記單位",

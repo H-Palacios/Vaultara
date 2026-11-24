@@ -8953,6 +8953,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get petBirthdayHint => 'بەرواری لەدایکبوون هەڵبژێرە';
 
   @override
+  String get petTypeRequired => 'جۆری ئاژەڵەکە هەڵبژێرە';
+
+  @override
   String get petChipHint => 'ژمارەی مایکرۆچیپ بنووسە';
 
   @override

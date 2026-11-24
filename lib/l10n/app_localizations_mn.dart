@@ -8943,6 +8943,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get petBirthdayHint => 'Төрсөн огноог сонгоно уу';
 
   @override
+  String get petTypeRequired => 'Тэжээвэр амьтны төрлийг сонгоно уу';
+
+  @override
   String get petChipHint => 'Микрочипийн дугаарыг оруулна уу';
 
   @override

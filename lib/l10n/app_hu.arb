@@ -2932,6 +2932,7 @@
   "tripEntryTitle": "Beutazási adatok",
   "petNameHint": "Add meg a kisállat nevét",
   "petTypeFieldHint": "Add meg a kisállat fajtáját",
+  "petTypeRequired": "Válaszd ki a kisállat fajtáját",
   "petBirthdayHint": "Válaszd ki a születési dátumot",
   "petChipHint": "Add meg a mikrochip számát",
   "petRegistryHint": "Add meg a chipnyilvántartót",

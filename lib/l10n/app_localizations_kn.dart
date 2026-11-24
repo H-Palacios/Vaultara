@@ -8953,6 +8953,9 @@ class AppLocalizationsKn extends AppLocalizations {
   String get petBirthdayHint => 'ಹುಟ್ಟಿದ ದಿನಾಂಕ ಆಯ್ಕೆಮಾಡಿ';
 
   @override
+  String get petTypeRequired => 'ಸಾಕುಪ್ರಾಣಿಯ ಪ್ರಕಾರ ಆಯ್ಕೆಮಾಡಿ';
+
+  @override
   String get petChipHint => 'ಮೈಕ್ರೋಚಿಪ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ';
 
   @override

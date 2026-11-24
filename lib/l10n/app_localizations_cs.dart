@@ -9088,6 +9088,9 @@ class AppLocalizationsCs extends AppLocalizations {
   String get petBirthdayHint => 'Vyberte datum narození';
 
   @override
+  String get petTypeRequired => 'Vyberte druh zvířete';
+
+  @override
   String get petChipHint => 'Zadejte číslo mikročipu';
 
   @override

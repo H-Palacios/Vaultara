@@ -2945,6 +2945,7 @@
   "tripEntryTitle": "Dades d'entrada",
   "petNameHint": "Introdueix el nom de la mascota",
   "petTypeFieldHint": "Introdueix el tipus de mascota",
+  "petTypeRequired": "Tria el tipus de mascota",
   "petBirthdayHint": "Selecciona la data de naixement",
   "petChipHint": "Introdueix el número de microxip",
   "petRegistryHint": "Introdueix el registre del xip",

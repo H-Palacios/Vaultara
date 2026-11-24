@@ -2907,6 +2907,7 @@
   "tripEntryTitle": "Inreseuppgifter",
   "petNameHint": "Ange husdjurets namn",
   "petTypeFieldHint": "Ange typ av husdjur",
+  "petTypeRequired": "Välj typ av husdjur",
   "petBirthdayHint": "Välj födelsedatum",
   "petChipHint": "Ange mikrochipnummer",
   "petRegistryHint": "Ange chipregister",

@@ -8953,6 +8953,9 @@ class AppLocalizationsKa extends AppLocalizations {
   String get petBirthdayHint => 'აირჩიეთ დაბადების თარიღი';
 
   @override
+  String get petTypeRequired => 'აირჩიეთ შინაური ცხოველის სახეობა';
+
+  @override
   String get petChipHint => 'შეიყვანეთ მიკროჩიპის ნომერი';
 
   @override

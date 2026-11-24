@@ -2921,6 +2921,7 @@
   "tripEntryTitle": "Datos de entrada",
   "petNameHint": "Introduce el nombre de la mascota",
   "petTypeFieldHint": "Introduce el tipo de mascota",
+  "petTypeRequired": "Elige el tipo de mascota",
   "petBirthdayHint": "Selecciona la fecha de nacimiento",
   "petChipHint": "Introduce el número de microchip",
   "petRegistryHint": "Introduce el registro del chip",

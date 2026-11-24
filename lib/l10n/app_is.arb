@@ -2919,6 +2919,7 @@
   "tripEntryTitle": "Upplýsingar um komu",
   "petNameHint": "Sláðu inn nafn gæludýrsins",
   "petTypeFieldHint": "Sláðu inn tegund gæludýrs",
+  "petTypeRequired": "Veldu tegund gæludýrs",
   "petBirthdayHint": "Veldu fæðingardag",
   "petChipHint": "Sláðu inn örmerkisnúmer",
   "petRegistryHint": "Sláðu inn örmerkjaskrá",

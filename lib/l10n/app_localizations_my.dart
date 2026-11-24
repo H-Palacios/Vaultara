@@ -8894,6 +8894,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String get petBirthdayHint => 'မွေးနေ့ ရွေးပါ';
 
   @override
+  String get petTypeRequired => 'အိမ်မွေးတိရစ္ဆာန်အမျိုးအစား ရွေးပါ';
+
+  @override
   String get petChipHint => 'မိုက်ခရိုချစ်နံပါတ် ထည့်ပါ';
 
   @override

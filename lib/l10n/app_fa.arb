@@ -2926,6 +2926,7 @@
   "tripEntryTitle": "جزئیات ورود",
   "petNameHint": "نام حیوان خانگی را وارد کنید",
   "petTypeFieldHint": "نوع حیوان خانگی را وارد کنید",
+  "petTypeRequired": "نوع حیوان خانگی را انتخاب کنید",
   "petBirthdayHint": "تاریخ تولد را انتخاب کنید",
   "petChipHint": "شمارهٔ ریزتراشه را وارد کنید",
   "petRegistryHint": "ثبت تراشه را وارد کنید",

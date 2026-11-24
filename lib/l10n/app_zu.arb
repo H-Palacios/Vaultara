@@ -2906,6 +2906,7 @@
   "tripEntryTitle": "Imininingwane yokungena",
   "petNameHint": "Faka igama lesilwane",
   "petTypeFieldHint": "Faka uhlobo lwesilwane",
+  "petTypeRequired": "Khetha uhlobo lwesilwane",
   "petBirthdayHint": "Khetha usuku lokuzalwa",
   "petChipHint": "Faka inombolo ye-microchip",
   "petRegistryHint": "Faka irejista ye-chip",

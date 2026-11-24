@@ -2914,6 +2914,7 @@
   "tripEntryTitle": "Iinkcukacha zokungena",
   "petNameHint": "Faka igama lesilwanyana",
   "petTypeFieldHint": "Faka uhlobo lwesilwanyana",
+  "petTypeRequired": "Khetha uhlobo lwesilwanyana",
   "petBirthdayHint": "Khetha umhla wokuzalwa",
   "petChipHint": "Faka inombolo yemayikhrotshiphu",
   "petRegistryHint": "Faka irejista yetshiphu",

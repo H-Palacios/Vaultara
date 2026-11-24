@@ -8964,6 +8964,9 @@ class AppLocalizationsIt extends AppLocalizations {
   String get petBirthdayHint => 'Seleziona la data di nascita';
 
   @override
+  String get petTypeRequired => 'Scegli il tipo di animale';
+
+  @override
   String get petChipHint => 'Inserisci il numero del microchip';
 
   @override

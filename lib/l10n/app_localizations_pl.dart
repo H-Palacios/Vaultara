@@ -9107,6 +9107,9 @@ class AppLocalizationsPl extends AppLocalizations {
   String get petBirthdayHint => 'Wybierz datę urodzenia';
 
   @override
+  String get petTypeRequired => 'Wybierz gatunek zwierzęcia';
+
+  @override
   String get petChipHint => 'Wpisz numer mikroczipa';
 
   @override

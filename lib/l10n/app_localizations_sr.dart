@@ -9023,6 +9023,9 @@ class AppLocalizationsSr extends AppLocalizations {
   String get petBirthdayHint => 'Изаберите датум рођења';
 
   @override
+  String get petTypeRequired => 'Изаберите врсту љубимца';
+
+  @override
   String get petChipHint => 'Унесите број микрочипа';
 
   @override
@@ -19728,6 +19731,9 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get petBirthdayHint => 'Изаберите датум рођења';
 
   @override
+  String get petTypeRequired => 'Изаберите врсту љубимца';
+
+  @override
   String get petChipHint => 'Унесите број микрочипа';
 
   @override
@@ -30427,6 +30433,9 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get petBirthdayHint => 'Izaberite datum rođenja';
+
+  @override
+  String get petTypeRequired => 'Izaberite vrstu ljubimca';
 
   @override
   String get petChipHint => 'Unesite broj mikročipa';

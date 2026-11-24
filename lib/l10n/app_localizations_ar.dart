@@ -9178,6 +9178,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get petBirthdayHint => 'حدد تاريخ الميلاد';
 
   @override
+  String get petTypeRequired => 'اختر نوع الحيوان الأليف';
+
+  @override
   String get petChipHint => 'أدخل رقم الشريحة الإلكترونية';
 
   @override

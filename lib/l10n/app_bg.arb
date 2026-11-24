@@ -2664,6 +2664,7 @@
   "tripEntryTitle": "Данни за влизане",
   "petNameHint": "Въведете името на любимеца",
   "petTypeFieldHint": "Въведете вида на любимеца",
+  "petTypeRequired": "Изберете вида на любимеца",
   "petBirthdayHint": "Изберете дата на раждане",
   "petChipHint": "Въведете номера на микрочипа",
   "petRegistryHint": "Въведете регистъра на чипа",

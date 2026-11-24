@@ -8953,6 +8953,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String get petBirthdayHint => 'Doğum tarihini seçin';
 
   @override
+  String get petTypeRequired => 'Evcil hayvanın türünü seçin';
+
+  @override
   String get petChipHint => 'Mikroçip numarasını girin';
 
   @override

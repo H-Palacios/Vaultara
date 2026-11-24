@@ -2914,6 +2914,7 @@
   "tripEntryTitle": "Podatki o vstopu",
   "petNameHint": "Vnesite ime ljubljenčka",
   "petTypeFieldHint": "Vnesite vrsto ljubljenčka",
+  "petTypeRequired": "Izberite vrsto ljubljenčka",
   "petBirthdayHint": "Izberite datum rojstva",
   "petChipHint": "Vnesite številko mikročipa",
   "petRegistryHint": "Vnesite register čipov",

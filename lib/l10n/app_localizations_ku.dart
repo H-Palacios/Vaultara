@@ -8953,6 +8953,9 @@ class AppLocalizationsKu extends AppLocalizations {
   String get petBirthdayHint => 'Dîroka jidayikbûnê hilbijêre';
 
   @override
+  String get petTypeRequired => 'Cureyê heywanê hilbijêre';
+
+  @override
   String get petChipHint => 'Hejmara mîkroçîpê binivîse';
 
   @override

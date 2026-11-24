@@ -2664,6 +2664,7 @@
   "tripEntryTitle": "ព័ត៌មានលម្អិតនៃការចូល",
   "petNameHint": "បញ្ចូលឈ្មោះសត្វចិញ្ចឹម",
   "petTypeFieldHint": "បញ្ចូលប្រភេទសត្វចិញ្ចឹម",
+  "petTypeRequired": "ជ្រើសរើសប្រភេទសត្វចិញ្ចឹម",
   "petBirthdayHint": "ជ្រើសថ្ងៃខែឆ្នាំកំណើត",
   "petChipHint": "បញ្ចូលលេខមីក្រូឈីប",
   "petRegistryHint": "បញ្ចូលបញ្ជីឈីប",

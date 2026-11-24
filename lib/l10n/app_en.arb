@@ -11249,6 +11249,10 @@
   "@petTypeFieldHint": {
     "description": "Pet editor field hints: petTypeFieldHint"
   },
+  "petTypeRequired": "Choose the type of pet",
+  "@petTypeRequired": {
+    "description": "Pet editor: shown under Type of pet when the user saves without choosing one."
+  },
   "petBirthdayHint": "Select date of birth",
   "@petBirthdayHint": {
     "description": "Pet editor field hints: petBirthdayHint"

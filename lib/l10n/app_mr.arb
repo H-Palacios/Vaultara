@@ -2664,6 +2664,7 @@
   "tripEntryTitle": "प्रवेशाचे तपशील",
   "petNameHint": "पाळीव प्राण्याचे नाव प्रविष्ट करा",
   "petTypeFieldHint": "पाळीव प्राण्याचा प्रकार प्रविष्ट करा",
+  "petTypeRequired": "पाळीव प्राण्याचा प्रकार निवडा",
   "petBirthdayHint": "जन्मतारीख निवडा",
   "petChipHint": "मायक्रोचिप क्रमांक प्रविष्ट करा",
   "petRegistryHint": "चिप नोंदणी प्रविष्ट करा",

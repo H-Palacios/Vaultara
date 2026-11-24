@@ -2926,6 +2926,7 @@
   "tripEntryTitle": "Mga detalye sa pagpasok",
   "petNameHint": "Ilagay ang pangalan ng alaga",
   "petTypeFieldHint": "Ilagay ang uri ng alaga",
+  "petTypeRequired": "Piliin ang uri ng alaga",
   "petBirthdayHint": "Piliin ang petsa ng kapanganakan",
   "petChipHint": "Ilagay ang numero ng microchip",
   "petRegistryHint": "Ilagay ang chip registry",

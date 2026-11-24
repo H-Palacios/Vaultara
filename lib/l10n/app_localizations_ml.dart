@@ -8953,6 +8953,9 @@ class AppLocalizationsMl extends AppLocalizations {
   String get petBirthdayHint => 'ജനനത്തീയതി തിരഞ്ഞെടുക്കുക';
 
   @override
+  String get petTypeRequired => 'വളർത്തുമൃഗത്തിന്റെ തരം തിരഞ്ഞെടുക്കുക';
+
+  @override
   String get petChipHint => 'മൈക്രോചിപ്പ് നമ്പർ നൽകുക';
 
   @override

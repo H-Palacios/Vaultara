@@ -8952,6 +8952,9 @@ class AppLocalizationsSi extends AppLocalizations {
   String get petBirthdayHint => 'උපන් දිනය තෝරන්න';
 
   @override
+  String get petTypeRequired => 'සුරතල් සතාගේ වර්ගය තෝරන්න';
+
+  @override
   String get petChipHint => 'මයික්‍රොචිප් අංකය ඇතුළු කරන්න';
 
   @override

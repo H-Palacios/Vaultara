@@ -8896,6 +8896,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get petBirthdayHint => '选择出生日期';
 
   @override
+  String get petTypeRequired => '选择宠物种类';
+
+  @override
   String get petChipHint => '输入芯片号码';
 
   @override
@@ -19441,6 +19444,9 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get petBirthdayHint => '选择出生日期';
 
   @override
+  String get petTypeRequired => '选择宠物种类';
+
+  @override
   String get petChipHint => '输入芯片号码';
 
   @override
@@ -29984,6 +29990,9 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get petBirthdayHint => '選擇出生日期';
+
+  @override
+  String get petTypeRequired => '選擇寵物種類';
 
   @override
   String get petChipHint => '輸入晶片號碼';

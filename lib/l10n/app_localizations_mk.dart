@@ -8951,6 +8951,9 @@ class AppLocalizationsMk extends AppLocalizations {
   String get petBirthdayHint => 'Изберете датум на раѓање';
 
   @override
+  String get petTypeRequired => 'Изберете го видот на миленикот';
+
+  @override
   String get petChipHint => 'Внесете го бројот на микрочипот';
 
   @override

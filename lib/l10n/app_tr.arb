@@ -2914,6 +2914,7 @@
   "tripEntryTitle": "Giriş ayrıntıları",
   "petNameHint": "Evcil hayvanın adını girin",
   "petTypeFieldHint": "Evcil hayvanın türünü girin",
+  "petTypeRequired": "Evcil hayvanın türünü seçin",
   "petBirthdayHint": "Doğum tarihini seçin",
   "petChipHint": "Mikroçip numarasını girin",
   "petRegistryHint": "Çip kayıt kuruluşunu girin",

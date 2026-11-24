@@ -2945,6 +2945,7 @@
   "tripEntryTitle": "Einreisedetails",
   "petNameHint": "Gib den Namen des Haustiers ein",
   "petTypeFieldHint": "Gib die Tierart ein",
+  "petTypeRequired": "Wähle die Tierart",
   "petBirthdayHint": "Geburtsdatum auswählen",
   "petChipHint": "Gib die Mikrochipnummer ein",
   "petRegistryHint": "Gib das Chip-Register ein",

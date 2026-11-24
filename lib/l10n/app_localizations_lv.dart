@@ -9019,6 +9019,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String get petBirthdayHint => 'Izvēlieties dzimšanas datumu';
 
   @override
+  String get petTypeRequired => 'Izvēlieties mājdzīvnieka sugu';
+
+  @override
   String get petChipHint => 'Ievadiet mikročipa numuru';
 
   @override

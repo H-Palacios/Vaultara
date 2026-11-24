@@ -8896,6 +8896,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String get petBirthdayHint => 'ເລືອກວັນເກີດ';
 
   @override
+  String get petTypeRequired => 'ເລືອກປະເພດສັດລ້ຽງ';
+
+  @override
   String get petChipHint => 'ປ້ອນເລກໄມໂຄຣຊິບ';
 
   @override

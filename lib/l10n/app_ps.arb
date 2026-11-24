@@ -2914,6 +2914,7 @@
   "tripEntryTitle": "د ننوتلو جزئیات",
   "petNameHint": "د څاروي نوم دننه کړئ",
   "petTypeFieldHint": "د څاروي ډول دننه کړئ",
+  "petTypeRequired": "د څاروي ډول وټاکئ",
   "petBirthdayHint": "د زېږېدو نېټه وټاکئ",
   "petChipHint": "د مایکروچپ شمېره دننه کړئ",
   "petRegistryHint": "د چپ ثبت دننه کړئ",

@@ -8957,6 +8957,9 @@ class AppLocalizationsEu extends AppLocalizations {
   String get petBirthdayHint => 'Hautatu jaiotze-data';
 
   @override
+  String get petTypeRequired => 'Aukeratu maskota mota';
+
+  @override
   String get petChipHint => 'Idatzi mikrotxiparen zenbakia';
 
   @override

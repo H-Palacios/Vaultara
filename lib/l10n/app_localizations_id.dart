@@ -8891,6 +8891,9 @@ class AppLocalizationsId extends AppLocalizations {
   String get petBirthdayHint => 'Pilih tanggal lahir';
 
   @override
+  String get petTypeRequired => 'Pilih jenis hewan peliharaan';
+
+  @override
   String get petChipHint => 'Masukkan nomor microchip';
 
   @override

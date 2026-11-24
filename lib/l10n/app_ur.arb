@@ -2914,6 +2914,7 @@
   "tripEntryTitle": "داخلے کی تفصیلات",
   "petNameHint": "پالتو جانور کا نام درج کریں",
   "petTypeFieldHint": "پالتو جانور کی قسم درج کریں",
+  "petTypeRequired": "پالتو جانور کی قسم منتخب کریں",
   "petBirthdayHint": "تاریخ پیدائش منتخب کریں",
   "petChipHint": "مائیکروچپ نمبر درج کریں",
   "petRegistryHint": "چپ رجسٹری درج کریں",

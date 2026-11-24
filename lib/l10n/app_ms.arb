@@ -2914,6 +2914,7 @@
   "tripEntryTitle": "Butiran kemasukan",
   "petNameHint": "Masukkan nama haiwan peliharaan",
   "petTypeFieldHint": "Masukkan jenis haiwan peliharaan",
+  "petTypeRequired": "Pilih jenis haiwan peliharaan",
   "petBirthdayHint": "Pilih tarikh lahir",
   "petChipHint": "Masukkan nombor mikrocip",
   "petRegistryHint": "Masukkan pendaftaran cip",

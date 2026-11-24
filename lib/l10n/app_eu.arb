@@ -2928,6 +2928,7 @@
   "tripEntryTitle": "Sarrera-xehetasunak",
   "petNameHint": "Idatzi maskotaren izena",
   "petTypeFieldHint": "Idatzi maskota mota",
+  "petTypeRequired": "Aukeratu maskota mota",
   "petBirthdayHint": "Hautatu jaiotze-data",
   "petChipHint": "Idatzi mikrotxiparen zenbakia",
   "petRegistryHint": "Idatzi txiparen erregistroa",

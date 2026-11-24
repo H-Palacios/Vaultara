@@ -2914,6 +2914,7 @@
   "tripEntryTitle": "入境信息",
   "petNameHint": "输入宠物名字",
   "petTypeFieldHint": "输入宠物种类",
+  "petTypeRequired": "选择宠物种类",
   "petBirthdayHint": "选择出生日期",
   "petChipHint": "输入芯片号码",
   "petRegistryHint": "输入芯片登记机构",

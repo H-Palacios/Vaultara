@@ -8953,6 +8953,9 @@ class AppLocalizationsTa extends AppLocalizations {
   String get petBirthdayHint => 'பிறந்த தேதியைத் தேர்ந்தெடுக்கவும்';
 
   @override
+  String get petTypeRequired => 'செல்லப்பிராணியின் வகையைத் தேர்ந்தெடுக்கவும்';
+
+  @override
   String get petChipHint => 'மைக்ரோசிப் எண்ணை உள்ளிடவும்';
 
   @override

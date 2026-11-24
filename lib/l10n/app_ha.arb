@@ -2926,6 +2926,7 @@
   "tripEntryTitle": "Bayanan shiga",
   "petNameHint": "Shigar da sunan dabbar gida",
   "petTypeFieldHint": "Shigar da nau'in dabbar gida",
+  "petTypeRequired": "Zaɓi nau'in dabbar gida",
   "petBirthdayHint": "Zaɓi ranar haihuwa",
   "petChipHint": "Shigar da lambar microchip",
   "petRegistryHint": "Shigar da rajistar chip",

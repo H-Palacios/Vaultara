@@ -8957,6 +8957,9 @@ class AppLocalizationsAf extends AppLocalizations {
   String get petBirthdayHint => 'Kies geboortedatum';
 
   @override
+  String get petTypeRequired => 'Kies die soort troeteldier';
+
+  @override
   String get petChipHint => 'Voer mikroskyfienommer in';
 
   @override

@@ -8884,6 +8884,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get petBirthdayHint => '生年月日を選択';
 
   @override
+  String get petTypeRequired => 'ペットの種類を選んでください';
+
+  @override
   String get petChipHint => 'マイクロチップ番号を入力してください';
 
   @override

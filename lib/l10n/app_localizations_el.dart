@@ -8957,6 +8957,9 @@ class AppLocalizationsEl extends AppLocalizations {
   String get petBirthdayHint => 'Επιλέξτε ημερομηνία γέννησης';
 
   @override
+  String get petTypeRequired => 'Επιλέξτε το είδος του κατοικιδίου';
+
+  @override
   String get petChipHint => 'Εισαγάγετε τον αριθμό μικροτσίπ';
 
   @override

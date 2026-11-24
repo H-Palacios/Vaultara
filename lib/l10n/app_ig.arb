@@ -2919,6 +2919,7 @@
   "tripEntryTitle": "Nkọwa ịbanye",
   "petNameHint": "Tinye aha anụ ụlọ",
   "petTypeFieldHint": "Tinye ụdị anụ ụlọ",
+  "petTypeRequired": "Họrọ ụdị anụ ụlọ",
   "petBirthdayHint": "Họrọ ụbọchị ọmụmụ",
   "petChipHint": "Tinye nọmba microchip",
   "petRegistryHint": "Tinye ndekọ chip",

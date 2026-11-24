@@ -8953,6 +8953,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get petBirthdayHint => 'জন্মতারিখ নির্বাচন করুন';
 
   @override
+  String get petTypeRequired => 'পোষা প্রাণীর ধরন বেছে নিন';
+
+  @override
   String get petChipHint => 'মাইক্রোচিপ নম্বর লিখুন';
 
   @override

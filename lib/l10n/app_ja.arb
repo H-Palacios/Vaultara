@@ -2926,6 +2926,7 @@
   "tripEntryTitle": "入国の詳細",
   "petNameHint": "ペットの名前を入力してください",
   "petTypeFieldHint": "ペットの種類を入力してください",
+  "petTypeRequired": "ペットの種類を選んでください",
   "petBirthdayHint": "生年月日を選択",
   "petChipHint": "マイクロチップ番号を入力してください",
   "petRegistryHint": "チップの登録先を入力してください",

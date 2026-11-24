@@ -8896,6 +8896,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get petBirthdayHint => '생년월일 선택';
 
   @override
+  String get petTypeRequired => '반려동물 종류를 선택하세요';
+
+  @override
   String get petChipHint => '마이크로칩 번호 입력';
 
   @override

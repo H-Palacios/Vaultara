@@ -8953,6 +8953,9 @@ class AppLocalizationsNe extends AppLocalizations {
   String get petBirthdayHint => 'जन्म मिति छान्नुहोस्';
 
   @override
+  String get petTypeRequired => 'घरपालुवाको प्रकार छान्नुहोस्';
+
+  @override
   String get petChipHint => 'माइक्रोचिप नम्बर प्रविष्ट गर्नुहोस्';
 
   @override

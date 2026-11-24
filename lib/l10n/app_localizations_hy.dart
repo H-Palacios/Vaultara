@@ -8953,6 +8953,9 @@ class AppLocalizationsHy extends AppLocalizations {
   String get petBirthdayHint => 'Ընտրեք ծննդյան ամսաթիվը';
 
   @override
+  String get petTypeRequired => 'Ընտրեք ընտանի կենդանու տեսակը';
+
+  @override
   String get petChipHint => 'Մուտքագրեք միկրոչիպի համարը';
 
   @override

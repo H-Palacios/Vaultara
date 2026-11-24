@@ -8953,6 +8953,9 @@ class AppLocalizationsZu extends AppLocalizations {
   String get petBirthdayHint => 'Khetha usuku lokuzalwa';
 
   @override
+  String get petTypeRequired => 'Khetha uhlobo lwesilwane';
+
+  @override
   String get petChipHint => 'Faka inombolo ye-microchip';
 
   @override

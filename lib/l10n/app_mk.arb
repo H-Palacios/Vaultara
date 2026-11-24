@@ -2932,6 +2932,7 @@
   "tripEntryTitle": "Податоци за влез",
   "petNameHint": "Внесете го името на миленикот",
   "petTypeFieldHint": "Внесете го видот на миленикот",
+  "petTypeRequired": "Изберете го видот на миленикот",
   "petBirthdayHint": "Изберете датум на раѓање",
   "petChipHint": "Внесете го бројот на микрочипот",
   "petRegistryHint": "Внесете го регистарот на чипот",

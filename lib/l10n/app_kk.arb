@@ -2932,6 +2932,7 @@
   "tripEntryTitle": "Кіру мәліметтері",
   "petNameHint": "Үй жануарының атын енгізіңіз",
   "petTypeFieldHint": "Үй жануарының түрін енгізіңіз",
+  "petTypeRequired": "Үй жануарының түрін таңдаңыз",
   "petBirthdayHint": "Туған күнін таңдаңыз",
   "petChipHint": "Микрочип нөмірін енгізіңіз",
   "petRegistryHint": "Чип тізілімін енгізіңіз",

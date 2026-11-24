@@ -8953,6 +8953,9 @@ class AppLocalizationsPs extends AppLocalizations {
   String get petBirthdayHint => 'د زېږېدو نېټه وټاکئ';
 
   @override
+  String get petTypeRequired => 'د څاروي ډول وټاکئ';
+
+  @override
   String get petChipHint => 'د مایکروچپ شمېره دننه کړئ';
 
   @override

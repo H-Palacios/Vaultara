@@ -8953,6 +8953,9 @@ class AppLocalizationsUz extends AppLocalizations {
   String get petBirthdayHint => 'Tug\'ilgan sanani tanlang';
 
   @override
+  String get petTypeRequired => 'Uy hayvoni turini tanlang';
+
+  @override
   String get petChipHint => 'Mikrochip raqamini kiriting';
 
   @override

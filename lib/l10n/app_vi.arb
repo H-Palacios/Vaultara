@@ -2914,6 +2914,7 @@
   "tripEntryTitle": "Thông tin nhập cảnh",
   "petNameHint": "Nhập tên thú cưng",
   "petTypeFieldHint": "Nhập loại thú cưng",
+  "petTypeRequired": "Chọn loại thú cưng",
   "petBirthdayHint": "Chọn ngày sinh",
   "petChipHint": "Nhập số vi mạch",
   "petRegistryHint": "Nhập nơi đăng ký vi mạch",

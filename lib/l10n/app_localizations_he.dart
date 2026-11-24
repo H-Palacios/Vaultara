@@ -9006,6 +9006,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get petBirthdayHint => 'בחרו תאריך לידה';
 
   @override
+  String get petTypeRequired => 'בחרו את סוג חיית המחמד';
+
+  @override
   String get petChipHint => 'הזינו את מספר השבב';
 
   @override

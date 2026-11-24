@@ -8896,6 +8896,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get petBirthdayHint => 'Chọn ngày sinh';
 
   @override
+  String get petTypeRequired => 'Chọn loại thú cưng';
+
+  @override
   String get petChipHint => 'Nhập số vi mạch';
 
   @override

@@ -9094,6 +9094,9 @@ class AppLocalizationsLt extends AppLocalizations {
   String get petBirthdayHint => 'Pasirinkite gimimo datą';
 
   @override
+  String get petTypeRequired => 'Pasirinkite augintinio rūšį';
+
+  @override
   String get petChipHint => 'Įveskite mikroschemos numerį';
 
   @override

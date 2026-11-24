@@ -2932,6 +2932,7 @@
   "tripEntryTitle": "Кирүү маалыматтары",
   "petNameHint": "Жаныбардын атын киргизиңиз",
   "petTypeFieldHint": "Жаныбардын түрүн киргизиңиз",
+  "petTypeRequired": "Жаныбардын түрүн тандаңыз",
   "petBirthdayHint": "Туулган күнүн тандаңыз",
   "petChipHint": "Микрочиптин номерин киргизиңиз",
   "petRegistryHint": "Чип реестрин киргизиңиз",

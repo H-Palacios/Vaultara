@@ -2914,6 +2914,7 @@
   "tripEntryTitle": "ඇතුළුවීමේ විස්තර",
   "petNameHint": "සුරතල් සතාගේ නම ඇතුළු කරන්න",
   "petTypeFieldHint": "සුරතල් සතාගේ වර්ගය ඇතුළු කරන්න",
+  "petTypeRequired": "සුරතල් සතාගේ වර්ගය තෝරන්න",
   "petBirthdayHint": "උපන් දිනය තෝරන්න",
   "petChipHint": "මයික්‍රොචිප් අංකය ඇතුළු කරන්න",
   "petRegistryHint": "චිප් ලේඛනය ඇතුළු කරන්න",

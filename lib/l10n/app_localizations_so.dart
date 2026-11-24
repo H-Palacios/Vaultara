@@ -8952,6 +8952,9 @@ class AppLocalizationsSo extends AppLocalizations {
   String get petBirthdayHint => 'Dooro taariikhda dhalashada';
 
   @override
+  String get petTypeRequired => 'Dooro nooca xayawaanka';
+
+  @override
   String get petChipHint => 'Geli lambarka mikrochip-ka';
 
   @override

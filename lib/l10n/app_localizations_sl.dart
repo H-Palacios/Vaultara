@@ -9093,6 +9093,9 @@ class AppLocalizationsSl extends AppLocalizations {
   String get petBirthdayHint => 'Izberite datum rojstva';
 
   @override
+  String get petTypeRequired => 'Izberite vrsto ljubljenčka';
+
+  @override
   String get petChipHint => 'Vnesite številko mikročipa';
 
   @override

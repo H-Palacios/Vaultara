@@ -8953,6 +8953,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get petBirthdayHint => 'Chagua tarehe ya kuzaliwa';
 
   @override
+  String get petTypeRequired => 'Chagua aina ya mnyama';
+
+  @override
   String get petChipHint => 'Weka nambari ya microchip';
 
   @override

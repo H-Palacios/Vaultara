@@ -2914,6 +2914,7 @@
   "tripEntryTitle": "وردەکاریی چوونەژوورەوە",
   "petNameHint": "ناوی ئاژەڵەکە بنووسە",
   "petTypeFieldHint": "جۆری ئاژەڵەکە بنووسە",
+  "petTypeRequired": "جۆری ئاژەڵەکە هەڵبژێرە",
   "petBirthdayHint": "بەرواری لەدایکبوون هەڵبژێرە",
   "petChipHint": "ژمارەی مایکرۆچیپ بنووسە",
   "petRegistryHint": "تۆماری چیپ بنووسە",

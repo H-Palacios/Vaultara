@@ -8957,6 +8957,9 @@ class AppLocalizationsNn extends AppLocalizations {
   String get petBirthdayHint => 'Vel fødselsdato';
 
   @override
+  String get petTypeRequired => 'Vel type kjæledyr';
+
+  @override
   String get petChipHint => 'Skriv inn mikrobrikkenummer';
 
   @override

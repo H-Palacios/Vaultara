@@ -9100,6 +9100,9 @@ class AppLocalizationsUk extends AppLocalizations {
   String get petBirthdayHint => 'Виберіть дату народження';
 
   @override
+  String get petTypeRequired => 'Виберіть вид улюбленця';
+
+  @override
   String get petChipHint => 'Введіть номер мікрочипа';
 
   @override

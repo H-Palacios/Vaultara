@@ -3079,6 +3079,7 @@
   "tripEntryTitle": "Sisenemise andmed",
   "petNameHint": "Sisesta lemmiklooma nimi",
   "petTypeFieldHint": "Sisesta lemmiklooma liik",
+  "petTypeRequired": "Vali lemmiklooma liik",
   "petBirthdayHint": "Vali sünnikuupäev",
   "petChipHint": "Sisesta mikrokiibi number",
   "petRegistryHint": "Sisesta kiibiregister",

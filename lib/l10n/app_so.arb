@@ -2914,6 +2914,7 @@
   "tripEntryTitle": "Faahfaahinta gelitaanka",
   "petNameHint": "Geli magaca xayawaanka",
   "petTypeFieldHint": "Geli nooca xayawaanka",
+  "petTypeRequired": "Dooro nooca xayawaanka",
   "petBirthdayHint": "Dooro taariikhda dhalashada",
   "petChipHint": "Geli lambarka mikrochip-ka",
   "petRegistryHint": "Geli diiwaanka chip-ka",
