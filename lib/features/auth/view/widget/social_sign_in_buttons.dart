@@ -82,8 +82,8 @@ class SocialButtonStyle {
   );
 }
 
-/// "Continue with Google" and, on iPhone and iPad, "Continue with Apple",
-/// followed by an "or" divider. A tap signs in or creates the account in one
+/// On iPhone and iPad "Continue with Apple" then "Continue with Google";
+/// on Android "Continue with Google" only. Then an "or" divider. A tap signs in or creates the account in one
 /// step, with no password and no question about whether the email exists.
 class SocialSignInButtons extends StatefulWidget {
   final VoidCallback onSignedIn;
@@ -182,17 +182,20 @@ class _SocialSignInButtonsState extends State<SocialSignInButtons> {
 
     return Column(
       children: [
-        _button(
-          provider: SocialProvider.google,
-          label: loc.socialContinueGoogle,
-        ),
+        // On iPhone and iPad most people sign in with their Apple ID, so
+        // Apple comes first, the same size as Google. Android has no Apple
+        // ID, so it shows Google only.
         if (SocialSignInButtons.showsApple) ...[
-          const SizedBox(height: 10),
           _button(
             provider: SocialProvider.apple,
             label: loc.socialContinueApple,
           ),
+          const SizedBox(height: 10),
         ],
+        _button(
+          provider: SocialProvider.google,
+          label: loc.socialContinueGoogle,
+        ),
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 14),
           child: Row(
