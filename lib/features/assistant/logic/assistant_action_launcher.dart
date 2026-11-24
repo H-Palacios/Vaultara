@@ -17,6 +17,8 @@ import 'package:vaultara/core/util/text_normaliser.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
 import 'package:vaultara/features/assistant/logic/assistant_navigator.dart';
+import 'package:vaultara/features/assistant/logic/assistant_proof_pack_action.dart';
+import 'package:vaultara/features/assistant/logic/assistant_remind_action.dart';
 import 'package:vaultara/features/assistant/logic/assistant_settings.dart';
 import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
 import 'package:vaultara/features/costs/view/cost_field.dart';
@@ -268,6 +270,10 @@ class AssistantActionLauncher {
           return await _share(context, action, slot);
         case AssistantActionType.petAdd:
           return await _addPet(context, action, slot);
+        case AssistantActionType.proofPack:
+          return AssistantProofPackAction.open(context, action);
+        case AssistantActionType.remind:
+          return await AssistantRemindAction.send(context, action);
       }
     } catch (_) {
       if (context.mounted) {

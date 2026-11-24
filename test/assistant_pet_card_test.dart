@@ -36,8 +36,8 @@ Future<AssistantActionPreview> _preview(
 
 void main() {
   group('Ask Vaultara adds a pet', () {
-    test('the app asks the server for protocol 17, which can add pets', () {
-      expect(AssistantService.protocolVersion, 17);
+    test('the app asks the server for protocol 17 or newer, which can add pets', () {
+      expect(AssistantService.protocolVersion, greaterThanOrEqualTo(17));
     });
 
     test('a pet card from the chat keeps name, type and birthday', () {

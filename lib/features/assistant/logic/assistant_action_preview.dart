@@ -128,6 +128,10 @@ class AssistantActionPreview {
         return 'share';
       case AssistantActionType.petAdd:
         return 'pet_add';
+      case AssistantActionType.proofPack:
+        return 'proof_pack';
+      case AssistantActionType.remind:
+        return 'remind';
     }
   }
 
@@ -150,6 +154,16 @@ class AssistantActionPreview {
         return _personAdd(f, action);
       case AssistantActionType.petAdd:
         return _petAdd(f, action);
+      case AssistantActionType.proofPack:
+        return _proofPack(f, action);
+      case AssistantActionType.remind:
+        return AssistantActionPreview(
+          title: f.loc.householdRemindAction(action.person ?? ''),
+          icon: Icons.notifications_active_rounded,
+          subject: _recordName(f.loc, null, action.name),
+          rows: const <AssistantChangeRow>[],
+          private: action.name == null,
+        );
       case AssistantActionType.personEdit:
         return _personEdit(f, action);
       case AssistantActionType.tripAdd:
@@ -827,6 +841,36 @@ class AssistantActionPreview {
       icon: Icons.person_add_alt_1_rounded,
       subject: action.name ?? '',
       rows: rows,
+    );
+  }
+
+  /// The records going into the Proof pack, each on its own line.
+  static AssistantActionPreview _proofPack(
+    _Formatter f,
+    AssistantAction action,
+  ) {
+    final loc = f.loc;
+    final names = <String>[];
+    for (var i = 0; i < action.recordIds.length; i++) {
+      final record = RecordRepository.findById(action.recordIds[i]);
+      if (record != null && record.locked) continue;
+      final name =
+          record?.name ??
+          (i < action.recordNames.length ? action.recordNames[i] : null);
+      if (name != null) names.add(name);
+    }
+    return AssistantActionPreview(
+      title: loc.proofPackTitle,
+      icon: Icons.picture_as_pdf_rounded,
+      subject: loc.proofPackCreate(names.length),
+      rows: <AssistantChangeRow>[
+        AssistantChangeRow(
+          label: loc.proofPackColRecord,
+          after: names.join('\n'),
+          wide: true,
+        ),
+      ],
+      note: loc.proofPackSubtitle,
     );
   }
 

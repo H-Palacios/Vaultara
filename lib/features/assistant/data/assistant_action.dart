@@ -31,6 +31,8 @@ enum AssistantActionType {
   recordDetails,
   share,
   petAdd,
+  proofPack,
+  remind,
 }
 
 enum AssistantActionState { pending, busy, applied, opened, cancelled }
@@ -613,6 +615,20 @@ class AssistantAction {
         return _fromPersonAdd(raw);
       case 'pet_add':
         return _fromPetAdd(raw);
+      case 'proof_pack':
+        return _fromProofPack(raw);
+      case 'remind':
+        {
+          final id = text(raw['recordId'], 200);
+          final person = text(raw['person'], 40);
+          if (id == null || person == null) return null;
+          return AssistantAction(
+            type: AssistantActionType.remind,
+            recordId: id,
+            name: text(raw['name'], 60),
+            person: person,
+          );
+        }
       case 'person_edit':
         return _fromPersonEdit(raw);
       case 'trip_add':
@@ -791,6 +807,9 @@ class AssistantAction {
 
   static const int maxMove = 25;
 
+  /// The most records the server puts in a Proof pack card.
+  static const int maxProofPack = 20;
+
   static AssistantAction? _fromMove(Map<dynamic, dynamic> raw) {
     final ids = <String>[];
     final rawIds = raw['recordIds'];
@@ -932,6 +951,35 @@ class AssistantAction {
       petType: known ? type : PetTypes.custom,
       petCustomType: custom,
       petBirth: born != null && !born.isAfter(today) ? born : null,
+    );
+  }
+
+  /// Records for a Proof pack: their ids, and names to show while a record
+  /// is not on this phone yet.
+  static AssistantAction? _fromProofPack(Map<dynamic, dynamic> raw) {
+    final ids = <String>[];
+    final rawIds = raw['recordIds'];
+    if (rawIds is List) {
+      for (final item in rawIds) {
+        final id = text(item, 200);
+        if (id != null && !ids.contains(id)) ids.add(id);
+        if (ids.length >= maxProofPack) break;
+      }
+    }
+    if (ids.isEmpty) return null;
+    final names = <String>[];
+    final rawNames = raw['names'];
+    if (rawNames is List) {
+      for (final item in rawNames) {
+        final n = text(item, 60);
+        if (n != null) names.add(n);
+        if (names.length >= maxProofPack) break;
+      }
+    }
+    return AssistantAction(
+      type: AssistantActionType.proofPack,
+      recordIds: ids,
+      recordNames: names,
     );
   }
 
