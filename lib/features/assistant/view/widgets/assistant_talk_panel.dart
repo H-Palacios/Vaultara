@@ -40,121 +40,240 @@ class AssistantTalkPanel extends StatelessWidget {
     }
   }
 
+  /// Below this height, such as a phone held sideways, the panel puts the
+  /// button beside the words instead of above them, so the chat keeps
+  /// most of the screen.
+  static const double compactHeight = 500;
+
+  static bool compact(BuildContext context) =>
+      MediaQuery.sizeOf(context).height < compactHeight;
+
+  @override
+  Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+    return ValueListenableBuilder<TalkPhase>(
+      valueListenable: phase,
+      builder: (context, current, _) {
+        final header = _TalkHeader(
+          phase: current,
+          onPhoto: onPhoto,
+          onEnd: onEnd,
+        );
+        final status = _TalkStatus(text: label(loc, current));
+        if (compact(context)) {
+          return Row(
+            children: [
+              _TalkOrb(
+                phase: current,
+                level: level,
+                label: label(loc, current),
+                onTap: onOrb,
+                size: 64,
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    header,
+                    status,
+                    _TalkCaption(
+                      caption: caption,
+                      align: TextAlign.start,
+                      maxLines: 2,
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          );
+        }
+        return Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            header,
+            const SizedBox(height: 4),
+            _TalkOrb(
+              phase: current,
+              level: level,
+              label: label(loc, current),
+              onTap: onOrb,
+              size: 84,
+            ),
+            const SizedBox(height: 10),
+            status,
+            const SizedBox(height: 4),
+            _TalkCaption(caption: caption),
+          ],
+        );
+      },
+    );
+  }
+}
+
+/// "Talk", the camera button and End.
+class _TalkHeader extends StatelessWidget {
+  final TalkPhase phase;
+  final VoidCallback? onPhoto;
+  final VoidCallback onEnd;
+
+  const _TalkHeader({
+    required this.phase,
+    required this.onPhoto,
+    required this.onEnd,
+  });
+
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
-    return ValueListenableBuilder<TalkPhase>(
-      valueListenable: phase,
-      builder: (context, current, _) => Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Row(
-            children: [
-              Icon(
-                Icons.record_voice_over_rounded,
-                size: 18,
-                color: scheme.primary,
+    final photo = onPhoto;
+    return Row(
+      children: [
+        Icon(Icons.record_voice_over_rounded, size: 18, color: scheme.primary),
+        const SizedBox(width: 8),
+        Expanded(
+          child: Text(
+            loc.talkTitle,
+            style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
+          ),
+        ),
+        if (photo != null)
+          IconButton(
+            tooltip: loc.assistantPhotoButton,
+            onPressed: phase == TalkPhase.thinking ? null : photo,
+            icon: const Icon(Icons.photo_camera_outlined),
+          ),
+        TextButton.icon(
+          onPressed: onEnd,
+          icon: const Icon(Icons.close_rounded, size: 18),
+          label: Text(loc.talkEnd),
+        ),
+      ],
+    );
+  }
+}
+
+/// The large button that follows the voice.
+class _TalkOrb extends StatelessWidget {
+  final TalkPhase phase;
+  final ValueListenable<double> level;
+  final String label;
+  final VoidCallback onTap;
+  final double size;
+
+  const _TalkOrb({
+    required this.phase,
+    required this.level,
+    required this.label,
+    required this.onTap,
+    required this.size,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    return Semantics(
+      button: true,
+      label: label,
+      child: GestureDetector(
+        onTap: onTap,
+        child: ValueListenableBuilder<double>(
+          valueListenable: level,
+          builder: (context, value, _) {
+            final listening = phase == TalkPhase.listening;
+            final double scale = listening
+                ? 1 + value.clamp(0.0, 1.0).toDouble() * 0.25
+                : 1.0;
+            return AnimatedScale(
+              scale: scale,
+              duration: const Duration(milliseconds: 120),
+              child: Container(
+                key: const ValueKey('talk-orb'),
+                width: size,
+                height: size,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: phase == TalkPhase.idle
+                      ? scheme.primary.withValues(alpha: 0.12)
+                      : scheme.primary,
+                  boxShadow: listening || phase == TalkPhase.speaking
+                      ? <BoxShadow>[
+                          BoxShadow(
+                            color: scheme.primary.withValues(alpha: 0.35),
+                            blurRadius: 18,
+                            spreadRadius: 2,
+                          ),
+                        ]
+                      : const <BoxShadow>[],
+                ),
+                child: _OrbIcon(phase: phase),
               ),
-              const SizedBox(width: 8),
-              Expanded(
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+
+/// Listening, Thinking, Speaking or Tap to speak.
+class _TalkStatus extends StatelessWidget {
+  final String text;
+
+  const _TalkStatus({required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text,
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        fontSize: 13,
+        fontWeight: FontWeight.w700,
+        color: Theme.of(context).colorScheme.primary,
+      ),
+    );
+  }
+}
+
+/// What is being heard or said.
+class _TalkCaption extends StatelessWidget {
+  final ValueListenable<String> caption;
+  final TextAlign align;
+  final int maxLines;
+
+  const _TalkCaption({
+    required this.caption,
+    this.align = TextAlign.center,
+    this.maxLines = 3,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    return ValueListenableBuilder<String>(
+      valueListenable: caption,
+      builder: (context, text, _) => AnimatedSize(
+        duration: const Duration(milliseconds: 160),
+        child: text.trim().isEmpty
+            ? const SizedBox(height: 4)
+            : Padding(
+                padding: const EdgeInsets.fromLTRB(8, 2, 8, 4),
                 child: Text(
-                  loc.talkTitle,
-                  style: const TextStyle(
+                  text,
+                  textAlign: align,
+                  maxLines: maxLines,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
                     fontSize: 14,
-                    fontWeight: FontWeight.w800,
+                    height: 1.35,
+                    color: scheme.onSurfaceVariant,
                   ),
                 ),
               ),
-              if (onPhoto != null)
-                IconButton(
-                  tooltip: loc.assistantPhotoButton,
-                  onPressed: current == TalkPhase.thinking ? null : onPhoto,
-                  icon: const Icon(Icons.photo_camera_outlined),
-                ),
-              TextButton.icon(
-                onPressed: onEnd,
-                icon: const Icon(Icons.close_rounded, size: 18),
-                label: Text(loc.talkEnd),
-              ),
-            ],
-          ),
-          const SizedBox(height: 4),
-          Semantics(
-            button: true,
-            label: label(loc, current),
-            child: GestureDetector(
-              onTap: onOrb,
-              child: ValueListenableBuilder<double>(
-                valueListenable: level,
-                builder: (context, value, _) {
-                  final listening = current == TalkPhase.listening;
-                  final double scale = listening
-                      ? 1 + value.clamp(0.0, 1.0).toDouble() * 0.25
-                      : 1.0;
-                  return AnimatedScale(
-                    scale: scale,
-                    duration: const Duration(milliseconds: 120),
-                    child: Container(
-                      width: 84,
-                      height: 84,
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: current == TalkPhase.idle
-                            ? scheme.primary.withValues(alpha: 0.12)
-                            : scheme.primary,
-                        boxShadow: listening || current == TalkPhase.speaking
-                            ? <BoxShadow>[
-                                BoxShadow(
-                                  color: scheme.primary.withValues(alpha: 0.35),
-                                  blurRadius: 18,
-                                  spreadRadius: 2,
-                                ),
-                              ]
-                            : const <BoxShadow>[],
-                      ),
-                      child: _OrbIcon(phase: current),
-                    ),
-                  );
-                },
-              ),
-            ),
-          ),
-          const SizedBox(height: 10),
-          Text(
-            label(loc, current),
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 13,
-              fontWeight: FontWeight.w700,
-              color: scheme.primary,
-            ),
-          ),
-          const SizedBox(height: 4),
-          ValueListenableBuilder<String>(
-            valueListenable: caption,
-            builder: (context, text, _) => AnimatedSize(
-              duration: const Duration(milliseconds: 160),
-              child: text.trim().isEmpty
-                  ? const SizedBox(height: 4)
-                  : Padding(
-                      padding: const EdgeInsets.fromLTRB(8, 2, 8, 4),
-                      child: Text(
-                        text,
-                        textAlign: TextAlign.center,
-                        maxLines: 3,
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                          fontSize: 14,
-                          height: 1.35,
-                          color: scheme.onSurfaceVariant,
-                        ),
-                      ),
-                    ),
-            ),
-          ),
-        ],
       ),
     );
   }
