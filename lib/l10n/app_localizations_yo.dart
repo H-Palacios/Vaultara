@@ -8893,6 +8893,33 @@ class AppLocalizationsYo extends AppLocalizations {
   String get tripEntryTitle => 'Àwọn àlàyé ìwọlé';
 
   @override
+  String get petNameHint => 'Tẹ orúkọ ẹranko ọ̀sìn';
+
+  @override
+  String get petTypeFieldHint => 'Tẹ irú ẹranko ọ̀sìn';
+
+  @override
+  String get petBirthdayHint => 'Yan ọjọ́ ìbí';
+
+  @override
+  String get petChipHint => 'Tẹ nọ́mbà máíkírọ́ṣípù';
+
+  @override
+  String get petRegistryHint => 'Tẹ ibi ìforúkọsílẹ̀ ṣípù';
+
+  @override
+  String get petVetHint => 'Tẹ orúkọ dókítà ẹranko';
+
+  @override
+  String get petVetPhoneHint => 'Tẹ nọ́mbà fóònù dókítà ẹranko';
+
+  @override
+  String get petMoreDetailsHint => 'Máíkírọ́ṣípù, ibi ìforúkọsílẹ̀ ṣípù àti dókítà ẹranko (àṣàyàn)';
+
+  @override
+  String get petAddChip => 'Ṣàfikún nọ́mbà ṣípù';
+
+  @override
   String get yoursTag => 'Tìrẹ';
 
   @override

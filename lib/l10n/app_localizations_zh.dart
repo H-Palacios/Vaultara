@@ -8887,6 +8887,33 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tripEntryTitle => '入境信息';
 
   @override
+  String get petNameHint => '输入宠物名字';
+
+  @override
+  String get petTypeFieldHint => '输入宠物种类';
+
+  @override
+  String get petBirthdayHint => '选择出生日期';
+
+  @override
+  String get petChipHint => '输入芯片号码';
+
+  @override
+  String get petRegistryHint => '输入芯片登记机构';
+
+  @override
+  String get petVetHint => '输入兽医姓名';
+
+  @override
+  String get petVetPhoneHint => '输入兽医电话';
+
+  @override
+  String get petMoreDetailsHint => '芯片、芯片登记机构和兽医（可选）';
+
+  @override
+  String get petAddChip => '添加芯片号码';
+
+  @override
   String get yoursTag => '我的';
 
   @override
@@ -19387,6 +19414,33 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get tripEntryTitle => '入境信息';
 
   @override
+  String get petNameHint => '输入宠物名字';
+
+  @override
+  String get petTypeFieldHint => '输入宠物种类';
+
+  @override
+  String get petBirthdayHint => '选择出生日期';
+
+  @override
+  String get petChipHint => '输入芯片号码';
+
+  @override
+  String get petRegistryHint => '输入芯片登记机构';
+
+  @override
+  String get petVetHint => '输入兽医姓名';
+
+  @override
+  String get petVetPhoneHint => '输入兽医电话';
+
+  @override
+  String get petMoreDetailsHint => '芯片、芯片登记机构和兽医（可选）';
+
+  @override
+  String get petAddChip => '添加芯片号码';
+
+  @override
   String get yoursTag => '我的';
 
   @override
@@ -29885,6 +29939,33 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get tripEntryTitle => '入境資訊';
+
+  @override
+  String get petNameHint => '輸入寵物名字';
+
+  @override
+  String get petTypeFieldHint => '輸入寵物種類';
+
+  @override
+  String get petBirthdayHint => '選擇出生日期';
+
+  @override
+  String get petChipHint => '輸入晶片號碼';
+
+  @override
+  String get petRegistryHint => '輸入晶片登記單位';
+
+  @override
+  String get petVetHint => '輸入獸醫姓名';
+
+  @override
+  String get petVetPhoneHint => '輸入獸醫電話';
+
+  @override
+  String get petMoreDetailsHint => '晶片、晶片登記單位和獸醫（選填）';
+
+  @override
+  String get petAddChip => '新增晶片號碼';
 
   @override
   String get yoursTag => '我的';

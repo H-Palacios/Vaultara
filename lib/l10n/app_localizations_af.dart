@@ -8948,6 +8948,33 @@ class AppLocalizationsAf extends AppLocalizations {
   String get tripEntryTitle => 'Toegangsbesonderhede';
 
   @override
+  String get petNameHint => 'Voer troeteldier se naam in';
+
+  @override
+  String get petTypeFieldHint => 'Voer soort troeteldier in';
+
+  @override
+  String get petBirthdayHint => 'Kies geboortedatum';
+
+  @override
+  String get petChipHint => 'Voer mikroskyfienommer in';
+
+  @override
+  String get petRegistryHint => 'Voer skyfieregister in';
+
+  @override
+  String get petVetHint => 'Voer veearts se naam in';
+
+  @override
+  String get petVetPhoneHint => 'Voer veearts se telefoonnommer in';
+
+  @override
+  String get petMoreDetailsHint => 'Mikroskyfie, skyfieregister en veearts (opsioneel)';
+
+  @override
+  String get petAddChip => 'Voeg skyfienommer by';
+
+  @override
   String get yoursTag => 'Joune';
 
   @override

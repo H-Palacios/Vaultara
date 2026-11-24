@@ -8944,6 +8944,33 @@ class AppLocalizationsSw extends AppLocalizations {
   String get tripEntryTitle => 'Maelezo ya kuingia';
 
   @override
+  String get petNameHint => 'Weka jina la mnyama';
+
+  @override
+  String get petTypeFieldHint => 'Weka aina ya mnyama';
+
+  @override
+  String get petBirthdayHint => 'Chagua tarehe ya kuzaliwa';
+
+  @override
+  String get petChipHint => 'Weka nambari ya microchip';
+
+  @override
+  String get petRegistryHint => 'Weka sajili ya chip';
+
+  @override
+  String get petVetHint => 'Weka jina la daktari wa mifugo';
+
+  @override
+  String get petVetPhoneHint => 'Weka nambari ya simu ya daktari wa mifugo';
+
+  @override
+  String get petMoreDetailsHint => 'Microchip, sajili ya chip na daktari wa mifugo (si lazima)';
+
+  @override
+  String get petAddChip => 'Ongeza nambari ya chip';
+
+  @override
   String get yoursTag => 'Yako';
 
   @override

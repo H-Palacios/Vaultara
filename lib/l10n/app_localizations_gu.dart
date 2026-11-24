@@ -8944,6 +8944,33 @@ class AppLocalizationsGu extends AppLocalizations {
   String get tripEntryTitle => 'પ્રવેશની વિગતો';
 
   @override
+  String get petNameHint => 'પાલતુ પ્રાણીનું નામ દાખલ કરો';
+
+  @override
+  String get petTypeFieldHint => 'પાલતુ પ્રાણીનો પ્રકાર દાખલ કરો';
+
+  @override
+  String get petBirthdayHint => 'જન્મ તારીખ પસંદ કરો';
+
+  @override
+  String get petChipHint => 'માઇક્રોચિપ નંબર દાખલ કરો';
+
+  @override
+  String get petRegistryHint => 'ચિપ રજિસ્ટ્રી દાખલ કરો';
+
+  @override
+  String get petVetHint => 'પશુચિકિત્સકનું નામ દાખલ કરો';
+
+  @override
+  String get petVetPhoneHint => 'પશુચિકિત્સકનો ફોન નંબર દાખલ કરો';
+
+  @override
+  String get petMoreDetailsHint => 'માઇક્રોચિપ, ચિપ રજિસ્ટ્રી અને પશુચિકિત્સક (વૈકલ્પિક)';
+
+  @override
+  String get petAddChip => 'ચિપ નંબર ઉમેરો';
+
+  @override
   String get yoursTag => 'તમારું';
 
   @override

@@ -9091,6 +9091,33 @@ class AppLocalizationsUk extends AppLocalizations {
   String get tripEntryTitle => 'Відомості про в\'їзд';
 
   @override
+  String get petNameHint => 'Введіть кличку улюбленця';
+
+  @override
+  String get petTypeFieldHint => 'Введіть вид улюбленця';
+
+  @override
+  String get petBirthdayHint => 'Виберіть дату народження';
+
+  @override
+  String get petChipHint => 'Введіть номер мікрочипа';
+
+  @override
+  String get petRegistryHint => 'Введіть реєстр чипа';
+
+  @override
+  String get petVetHint => 'Введіть ім\'я ветеринара';
+
+  @override
+  String get petVetPhoneHint => 'Введіть телефон ветеринара';
+
+  @override
+  String get petMoreDetailsHint => 'Мікрочип, реєстр чипа і ветеринар (необов\'язково)';
+
+  @override
+  String get petAddChip => 'Додати номер чипа';
+
+  @override
   String get yoursTag => 'Ваше';
 
   @override

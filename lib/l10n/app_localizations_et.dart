@@ -8948,6 +8948,33 @@ class AppLocalizationsEt extends AppLocalizations {
   String get tripEntryTitle => 'Sisenemise andmed';
 
   @override
+  String get petNameHint => 'Sisesta lemmiklooma nimi';
+
+  @override
+  String get petTypeFieldHint => 'Sisesta lemmiklooma liik';
+
+  @override
+  String get petBirthdayHint => 'Vali sünnikuupäev';
+
+  @override
+  String get petChipHint => 'Sisesta mikrokiibi number';
+
+  @override
+  String get petRegistryHint => 'Sisesta kiibiregister';
+
+  @override
+  String get petVetHint => 'Sisesta loomaarsti nimi';
+
+  @override
+  String get petVetPhoneHint => 'Sisesta loomaarsti telefoninumber';
+
+  @override
+  String get petMoreDetailsHint => 'Mikrokiip, kiibiregister ja loomaarst (valikuline)';
+
+  @override
+  String get petAddChip => 'Lisa kiibi number';
+
+  @override
   String get yoursTag => 'Sinu';
 
   @override

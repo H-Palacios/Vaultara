@@ -8885,6 +8885,33 @@ class AppLocalizationsKm extends AppLocalizations {
   String get tripEntryTitle => 'ព័ត៌មានលម្អិតនៃការចូល';
 
   @override
+  String get petNameHint => 'បញ្ចូលឈ្មោះសត្វចិញ្ចឹម';
+
+  @override
+  String get petTypeFieldHint => 'បញ្ចូលប្រភេទសត្វចិញ្ចឹម';
+
+  @override
+  String get petBirthdayHint => 'ជ្រើសថ្ងៃខែឆ្នាំកំណើត';
+
+  @override
+  String get petChipHint => 'បញ្ចូលលេខមីក្រូឈីប';
+
+  @override
+  String get petRegistryHint => 'បញ្ចូលបញ្ជីឈីប';
+
+  @override
+  String get petVetHint => 'បញ្ចូលឈ្មោះពេទ្យសត្វ';
+
+  @override
+  String get petVetPhoneHint => 'បញ្ចូលលេខទូរសព្ទពេទ្យសត្វ';
+
+  @override
+  String get petMoreDetailsHint => 'មីក្រូឈីប បញ្ជីឈីប និងពេទ្យសត្វ (ស្រេចចិត្ត)';
+
+  @override
+  String get petAddChip => 'បន្ថែមលេខឈីប';
+
+  @override
   String get yoursTag => 'របស់អ្នក';
 
   @override

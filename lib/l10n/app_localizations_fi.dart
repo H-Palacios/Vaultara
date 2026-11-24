@@ -8948,6 +8948,33 @@ class AppLocalizationsFi extends AppLocalizations {
   String get tripEntryTitle => 'Maahantulon tiedot';
 
   @override
+  String get petNameHint => 'Anna lemmikin nimi';
+
+  @override
+  String get petTypeFieldHint => 'Anna lemmikin laji';
+
+  @override
+  String get petBirthdayHint => 'Valitse syntymäpäivä';
+
+  @override
+  String get petChipHint => 'Anna mikrosirun numero';
+
+  @override
+  String get petRegistryHint => 'Anna sirurekisteri';
+
+  @override
+  String get petVetHint => 'Anna eläinlääkärin nimi';
+
+  @override
+  String get petVetPhoneHint => 'Anna eläinlääkärin puhelinnumero';
+
+  @override
+  String get petMoreDetailsHint => 'Mikrosiru, sirurekisteri ja eläinlääkäri (valinnainen)';
+
+  @override
+  String get petAddChip => 'Lisää sirun numero';
+
+  @override
   String get yoursTag => 'Oma';
 
   @override

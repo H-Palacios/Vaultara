@@ -8875,6 +8875,33 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tripEntryTitle => '入国の詳細';
 
   @override
+  String get petNameHint => 'ペットの名前を入力してください';
+
+  @override
+  String get petTypeFieldHint => 'ペットの種類を入力してください';
+
+  @override
+  String get petBirthdayHint => '生年月日を選択';
+
+  @override
+  String get petChipHint => 'マイクロチップ番号を入力してください';
+
+  @override
+  String get petRegistryHint => 'チップの登録先を入力してください';
+
+  @override
+  String get petVetHint => '獣医の名前を入力してください';
+
+  @override
+  String get petVetPhoneHint => '獣医の電話番号を入力してください';
+
+  @override
+  String get petMoreDetailsHint => 'マイクロチップ、チップの登録先、獣医（任意）';
+
+  @override
+  String get petAddChip => 'チップ番号を追加';
+
+  @override
   String get yoursTag => '自分用';
 
   @override

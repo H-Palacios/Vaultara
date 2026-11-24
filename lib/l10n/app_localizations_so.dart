@@ -8943,6 +8943,33 @@ class AppLocalizationsSo extends AppLocalizations {
   String get tripEntryTitle => 'Faahfaahinta gelitaanka';
 
   @override
+  String get petNameHint => 'Geli magaca xayawaanka';
+
+  @override
+  String get petTypeFieldHint => 'Geli nooca xayawaanka';
+
+  @override
+  String get petBirthdayHint => 'Dooro taariikhda dhalashada';
+
+  @override
+  String get petChipHint => 'Geli lambarka mikrochip-ka';
+
+  @override
+  String get petRegistryHint => 'Geli diiwaanka chip-ka';
+
+  @override
+  String get petVetHint => 'Geli magaca dhakhtarka xoolaha';
+
+  @override
+  String get petVetPhoneHint => 'Geli lambarka taleefanka dhakhtarka xoolaha';
+
+  @override
+  String get petMoreDetailsHint => 'Mikrochip, diiwaanka chip-ka iyo dhakhtarka xoolaha (ikhtiyaari)';
+
+  @override
+  String get petAddChip => 'Ku dar lambarka chip-ka';
+
+  @override
   String get yoursTag => 'Adiga';
 
   @override

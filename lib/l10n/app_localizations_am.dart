@@ -8944,6 +8944,33 @@ class AppLocalizationsAm extends AppLocalizations {
   String get tripEntryTitle => 'የመግቢያ ዝርዝሮች';
 
   @override
+  String get petNameHint => 'የቤት እንስሳውን ስም ያስገቡ';
+
+  @override
+  String get petTypeFieldHint => 'የቤት እንስሳውን አይነት ያስገቡ';
+
+  @override
+  String get petBirthdayHint => 'የልደት ቀን ይምረጡ';
+
+  @override
+  String get petChipHint => 'የማይክሮቺፕ ቁጥር ያስገቡ';
+
+  @override
+  String get petRegistryHint => 'የቺፕ መዝገብ ያስገቡ';
+
+  @override
+  String get petVetHint => 'የእንስሳት ሐኪም ስም ያስገቡ';
+
+  @override
+  String get petVetPhoneHint => 'የእንስሳት ሐኪም ስልክ ቁጥር ያስገቡ';
+
+  @override
+  String get petMoreDetailsHint => 'ማይክሮቺፕ፣ የቺፕ መዝገብ እና የእንስሳት ሐኪም (አማራጭ)';
+
+  @override
+  String get petAddChip => 'የቺፕ ቁጥር ያክሉ';
+
+  @override
   String get yoursTag => 'የእርስዎ';
 
   @override

@@ -8944,6 +8944,33 @@ class AppLocalizationsHy extends AppLocalizations {
   String get tripEntryTitle => 'Մուտքի մանրամասներ';
 
   @override
+  String get petNameHint => 'Մուտքագրեք ընտանի կենդանու անունը';
+
+  @override
+  String get petTypeFieldHint => 'Մուտքագրեք ընտանի կենդանու տեսակը';
+
+  @override
+  String get petBirthdayHint => 'Ընտրեք ծննդյան ամսաթիվը';
+
+  @override
+  String get petChipHint => 'Մուտքագրեք միկրոչիպի համարը';
+
+  @override
+  String get petRegistryHint => 'Մուտքագրեք չիպի ռեեստրը';
+
+  @override
+  String get petVetHint => 'Մուտքագրեք անասնաբույժի անունը';
+
+  @override
+  String get petVetPhoneHint => 'Մուտքագրեք անասնաբույժի հեռախոսահամարը';
+
+  @override
+  String get petMoreDetailsHint => 'Միկրոչիպ, չիպի ռեեստր և անասնաբույժ (ըստ ցանկության)';
+
+  @override
+  String get petAddChip => 'Ավելացնել չիպի համարը';
+
+  @override
   String get yoursTag => 'Ձերը';
 
   @override

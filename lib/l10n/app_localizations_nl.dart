@@ -8948,6 +8948,33 @@ class AppLocalizationsNl extends AppLocalizations {
   String get tripEntryTitle => 'Inreisgegevens';
 
   @override
+  String get petNameHint => 'Voer de naam van het huisdier in';
+
+  @override
+  String get petTypeFieldHint => 'Voer het soort huisdier in';
+
+  @override
+  String get petBirthdayHint => 'Selecteer de geboortedatum';
+
+  @override
+  String get petChipHint => 'Voer het chipnummer in';
+
+  @override
+  String get petRegistryHint => 'Voer het chipregister in';
+
+  @override
+  String get petVetHint => 'Voer de naam van de dierenarts in';
+
+  @override
+  String get petVetPhoneHint => 'Voer het telefoonnummer van de dierenarts in';
+
+  @override
+  String get petMoreDetailsHint => 'Chip, chipregister en dierenarts (optioneel)';
+
+  @override
+  String get petAddChip => 'Chipnummer toevoegen';
+
+  @override
   String get yoursTag => 'Van jou';
 
   @override

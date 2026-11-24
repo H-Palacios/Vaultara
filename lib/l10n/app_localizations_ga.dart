@@ -9128,6 +9128,33 @@ class AppLocalizationsGa extends AppLocalizations {
   String get tripEntryTitle => 'Sonraí iontrála';
 
   @override
+  String get petNameHint => 'Cuir isteach ainm an pheata';
+
+  @override
+  String get petTypeFieldHint => 'Cuir isteach cineál an pheata';
+
+  @override
+  String get petBirthdayHint => 'Roghnaigh dáta breithe';
+
+  @override
+  String get petChipHint => 'Cuir isteach uimhir an mhicrishlis';
+
+  @override
+  String get petRegistryHint => 'Cuir isteach clár na sliseanna';
+
+  @override
+  String get petVetHint => 'Cuir isteach ainm an tréidlia';
+
+  @override
+  String get petVetPhoneHint => 'Cuir isteach uimhir ghutháin an tréidlia';
+
+  @override
+  String get petMoreDetailsHint => 'Micrishlis, clár na sliseanna agus tréidlia (roghnach)';
+
+  @override
+  String get petAddChip => 'Cuir uimhir na slise leis';
+
+  @override
   String get yoursTag => 'Leatsa';
 
   @override

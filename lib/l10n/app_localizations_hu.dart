@@ -8944,6 +8944,33 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tripEntryTitle => 'Beutazási adatok';
 
   @override
+  String get petNameHint => 'Add meg a kisállat nevét';
+
+  @override
+  String get petTypeFieldHint => 'Add meg a kisállat fajtáját';
+
+  @override
+  String get petBirthdayHint => 'Válaszd ki a születési dátumot';
+
+  @override
+  String get petChipHint => 'Add meg a mikrochip számát';
+
+  @override
+  String get petRegistryHint => 'Add meg a chipnyilvántartót';
+
+  @override
+  String get petVetHint => 'Add meg az állatorvos nevét';
+
+  @override
+  String get petVetPhoneHint => 'Add meg az állatorvos telefonszámát';
+
+  @override
+  String get petMoreDetailsHint => 'Mikrochip, chipnyilvántartó és állatorvos (nem kötelező)';
+
+  @override
+  String get petAddChip => 'Chipszám hozzáadása';
+
+  @override
   String get yoursTag => 'Saját';
 
   @override

@@ -8893,6 +8893,33 @@ class AppLocalizationsIg extends AppLocalizations {
   String get tripEntryTitle => 'Nkọwa ịbanye';
 
   @override
+  String get petNameHint => 'Tinye aha anụ ụlọ';
+
+  @override
+  String get petTypeFieldHint => 'Tinye ụdị anụ ụlọ';
+
+  @override
+  String get petBirthdayHint => 'Họrọ ụbọchị ọmụmụ';
+
+  @override
+  String get petChipHint => 'Tinye nọmba microchip';
+
+  @override
+  String get petRegistryHint => 'Tinye ndekọ chip';
+
+  @override
+  String get petVetHint => 'Tinye aha dọkịta anụmanụ';
+
+  @override
+  String get petVetPhoneHint => 'Tinye nọmba ekwentị dọkịta anụmanụ';
+
+  @override
+  String get petMoreDetailsHint => 'Microchip, ndekọ chip na dọkịta anụmanụ (nhọrọ)';
+
+  @override
+  String get petAddChip => 'Tinye nọmba chip';
+
+  @override
   String get yoursTag => 'Nke gị';
 
   @override

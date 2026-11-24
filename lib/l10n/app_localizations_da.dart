@@ -8948,6 +8948,33 @@ class AppLocalizationsDa extends AppLocalizations {
   String get tripEntryTitle => 'Indrejseoplysninger';
 
   @override
+  String get petNameHint => 'Indtast kæledyrets navn';
+
+  @override
+  String get petTypeFieldHint => 'Indtast type kæledyr';
+
+  @override
+  String get petBirthdayHint => 'Vælg fødselsdato';
+
+  @override
+  String get petChipHint => 'Indtast mikrochipnummer';
+
+  @override
+  String get petRegistryHint => 'Indtast chipregister';
+
+  @override
+  String get petVetHint => 'Indtast dyrlægens navn';
+
+  @override
+  String get petVetPhoneHint => 'Indtast dyrlægens telefonnummer';
+
+  @override
+  String get petMoreDetailsHint => 'Mikrochip, chipregister og dyrlæge (valgfrit)';
+
+  @override
+  String get petAddChip => 'Tilføj chipnummer';
+
+  @override
   String get yoursTag => 'Dit';
 
   @override

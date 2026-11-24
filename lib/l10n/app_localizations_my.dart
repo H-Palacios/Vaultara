@@ -8885,6 +8885,33 @@ class AppLocalizationsMy extends AppLocalizations {
   String get tripEntryTitle => 'ဝင်ရောက်မှု အသေးစိတ်';
 
   @override
+  String get petNameHint => 'အိမ်မွေးတိရစ္ဆာန်အမည် ထည့်ပါ';
+
+  @override
+  String get petTypeFieldHint => 'အိမ်မွေးတိရစ္ဆာန်အမျိုးအစား ထည့်ပါ';
+
+  @override
+  String get petBirthdayHint => 'မွေးနေ့ ရွေးပါ';
+
+  @override
+  String get petChipHint => 'မိုက်ခရိုချစ်နံပါတ် ထည့်ပါ';
+
+  @override
+  String get petRegistryHint => 'ချစ်မှတ်ပုံတင်ဌာန ထည့်ပါ';
+
+  @override
+  String get petVetHint => 'တိရစ္ဆာန်ဆရာဝန်အမည် ထည့်ပါ';
+
+  @override
+  String get petVetPhoneHint => 'တိရစ္ဆာန်ဆရာဝန်ဖုန်းနံပါတ် ထည့်ပါ';
+
+  @override
+  String get petMoreDetailsHint => 'မိုက်ခရိုချစ်၊ ချစ်မှတ်ပုံတင်ဌာနနှင့် တိရစ္ဆာန်ဆရာဝန် (မဖြစ်မနေ မဟုတ်)';
+
+  @override
+  String get petAddChip => 'ချစ်နံပါတ် ထည့်ရန်';
+
+  @override
   String get yoursTag => 'သင့်ဟာ';
 
   @override

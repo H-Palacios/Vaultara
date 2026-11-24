@@ -8944,6 +8944,33 @@ class AppLocalizationsZu extends AppLocalizations {
   String get tripEntryTitle => 'Imininingwane yokungena';
 
   @override
+  String get petNameHint => 'Faka igama lesilwane';
+
+  @override
+  String get petTypeFieldHint => 'Faka uhlobo lwesilwane';
+
+  @override
+  String get petBirthdayHint => 'Khetha usuku lokuzalwa';
+
+  @override
+  String get petChipHint => 'Faka inombolo ye-microchip';
+
+  @override
+  String get petRegistryHint => 'Faka irejista ye-chip';
+
+  @override
+  String get petVetHint => 'Faka igama likadokotela wezilwane';
+
+  @override
+  String get petVetPhoneHint => 'Faka inombolo yocingo kadokotela wezilwane';
+
+  @override
+  String get petMoreDetailsHint => 'I-microchip, irejista ye-chip nodokotela wezilwane (ongakukhetha)';
+
+  @override
+  String get petAddChip => 'Engeza inombolo ye-chip';
+
+  @override
   String get yoursTag => 'Okwakho';
 
   @override

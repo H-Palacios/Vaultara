@@ -8997,6 +8997,33 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tripEntryTitle => 'פרטי כניסה';
 
   @override
+  String get petNameHint => 'הזינו את שם חיית המחמד';
+
+  @override
+  String get petTypeFieldHint => 'הזינו את סוג חיית המחמד';
+
+  @override
+  String get petBirthdayHint => 'בחרו תאריך לידה';
+
+  @override
+  String get petChipHint => 'הזינו את מספר השבב';
+
+  @override
+  String get petRegistryHint => 'הזינו את מאגר השבבים';
+
+  @override
+  String get petVetHint => 'הזינו את שם הווטרינר';
+
+  @override
+  String get petVetPhoneHint => 'הזינו את הטלפון של הווטרינר';
+
+  @override
+  String get petMoreDetailsHint => 'שבב, מאגר שבבים ווטרינר (רשות)';
+
+  @override
+  String get petAddChip => 'הוספת מספר שבב';
+
+  @override
   String get yoursTag => 'שלך';
 
   @override

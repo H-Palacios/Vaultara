@@ -8887,6 +8887,33 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tripEntryTitle => 'Thông tin nhập cảnh';
 
   @override
+  String get petNameHint => 'Nhập tên thú cưng';
+
+  @override
+  String get petTypeFieldHint => 'Nhập loại thú cưng';
+
+  @override
+  String get petBirthdayHint => 'Chọn ngày sinh';
+
+  @override
+  String get petChipHint => 'Nhập số vi mạch';
+
+  @override
+  String get petRegistryHint => 'Nhập nơi đăng ký vi mạch';
+
+  @override
+  String get petVetHint => 'Nhập tên bác sĩ thú y';
+
+  @override
+  String get petVetPhoneHint => 'Nhập số điện thoại bác sĩ thú y';
+
+  @override
+  String get petMoreDetailsHint => 'Vi mạch, nơi đăng ký vi mạch và bác sĩ thú y (không bắt buộc)';
+
+  @override
+  String get petAddChip => 'Thêm số vi mạch';
+
+  @override
   String get yoursTag => 'Của bạn';
 
   @override

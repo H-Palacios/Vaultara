@@ -8944,6 +8944,33 @@ class AppLocalizationsKu extends AppLocalizations {
   String get tripEntryTitle => 'Hûrguliyên ketinê';
 
   @override
+  String get petNameHint => 'Navê heywanê binivîse';
+
+  @override
+  String get petTypeFieldHint => 'Cureyê heywanê binivîse';
+
+  @override
+  String get petBirthdayHint => 'Dîroka jidayikbûnê hilbijêre';
+
+  @override
+  String get petChipHint => 'Hejmara mîkroçîpê binivîse';
+
+  @override
+  String get petRegistryHint => 'Tomara çîpê binivîse';
+
+  @override
+  String get petVetHint => 'Navê veterîner binivîse';
+
+  @override
+  String get petVetPhoneHint => 'Hejmara telefonê ya veterîner binivîse';
+
+  @override
+  String get petMoreDetailsHint => 'Mîkroçîp, tomara çîpê û veterîner (vebijarkî)';
+
+  @override
+  String get petAddChip => 'Hejmara çîpê zêde bike';
+
+  @override
   String get yoursTag => 'Ya te';
 
   @override

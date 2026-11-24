@@ -9098,6 +9098,33 @@ class AppLocalizationsPl extends AppLocalizations {
   String get tripEntryTitle => 'Informacje o wjeździe';
 
   @override
+  String get petNameHint => 'Wpisz imię zwierzęcia';
+
+  @override
+  String get petTypeFieldHint => 'Wpisz gatunek zwierzęcia';
+
+  @override
+  String get petBirthdayHint => 'Wybierz datę urodzenia';
+
+  @override
+  String get petChipHint => 'Wpisz numer mikroczipa';
+
+  @override
+  String get petRegistryHint => 'Wpisz rejestr czipów';
+
+  @override
+  String get petVetHint => 'Wpisz nazwisko weterynarza';
+
+  @override
+  String get petVetPhoneHint => 'Wpisz telefon weterynarza';
+
+  @override
+  String get petMoreDetailsHint => 'Mikroczip, rejestr czipów i weterynarz (opcjonalnie)';
+
+  @override
+  String get petAddChip => 'Dodaj numer czipa';
+
+  @override
   String get yoursTag => 'Twoje';
 
   @override

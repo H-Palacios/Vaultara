@@ -8944,6 +8944,33 @@ class AppLocalizationsAz extends AppLocalizations {
   String get tripEntryTitle => 'Giriş məlumatları';
 
   @override
+  String get petNameHint => 'Ev heyvanının adını daxil edin';
+
+  @override
+  String get petTypeFieldHint => 'Ev heyvanının növünü daxil edin';
+
+  @override
+  String get petBirthdayHint => 'Doğum tarixini seçin';
+
+  @override
+  String get petChipHint => 'Mikroçip nömrəsini daxil edin';
+
+  @override
+  String get petRegistryHint => 'Çip reyestrini daxil edin';
+
+  @override
+  String get petVetHint => 'Baytarın adını daxil edin';
+
+  @override
+  String get petVetPhoneHint => 'Baytarın telefon nömrəsini daxil edin';
+
+  @override
+  String get petMoreDetailsHint => 'Mikroçip, çip reyestri və baytar (istəyə bağlı)';
+
+  @override
+  String get petAddChip => 'Çip nömrəsini əlavə edin';
+
+  @override
   String get yoursTag => 'Sizin';
 
   @override

@@ -8948,6 +8948,33 @@ class AppLocalizationsCa extends AppLocalizations {
   String get tripEntryTitle => 'Dades d\'entrada';
 
   @override
+  String get petNameHint => 'Introdueix el nom de la mascota';
+
+  @override
+  String get petTypeFieldHint => 'Introdueix el tipus de mascota';
+
+  @override
+  String get petBirthdayHint => 'Selecciona la data de naixement';
+
+  @override
+  String get petChipHint => 'Introdueix el número de microxip';
+
+  @override
+  String get petRegistryHint => 'Introdueix el registre del xip';
+
+  @override
+  String get petVetHint => 'Introdueix el nom del veterinari';
+
+  @override
+  String get petVetPhoneHint => 'Introdueix el telèfon del veterinari';
+
+  @override
+  String get petMoreDetailsHint => 'Microxip, registre del xip i veterinari (opcional)';
+
+  @override
+  String get petAddChip => 'Afegeix el número de xip';
+
+  @override
   String get yoursTag => 'Teu';
 
   @override

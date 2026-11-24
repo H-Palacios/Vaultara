@@ -9009,6 +9009,33 @@ class AppLocalizationsHr extends AppLocalizations {
   String get tripEntryTitle => 'Podaci o ulasku';
 
   @override
+  String get petNameHint => 'Unesite ime ljubimca';
+
+  @override
+  String get petTypeFieldHint => 'Unesite vrstu ljubimca';
+
+  @override
+  String get petBirthdayHint => 'Odaberite datum rođenja';
+
+  @override
+  String get petChipHint => 'Unesite broj mikročipa';
+
+  @override
+  String get petRegistryHint => 'Unesite registar čipa';
+
+  @override
+  String get petVetHint => 'Unesite ime veterinara';
+
+  @override
+  String get petVetPhoneHint => 'Unesite broj telefona veterinara';
+
+  @override
+  String get petMoreDetailsHint => 'Mikročip, registar čipa i veterinar (neobavezno)';
+
+  @override
+  String get petAddChip => 'Dodajte broj čipa';
+
+  @override
   String get yoursTag => 'Vaše';
 
   @override

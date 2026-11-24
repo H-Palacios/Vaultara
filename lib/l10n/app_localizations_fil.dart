@@ -8938,6 +8938,33 @@ class AppLocalizationsFil extends AppLocalizations {
   String get tripEntryTitle => 'Mga detalye sa pagpasok';
 
   @override
+  String get petNameHint => 'Ilagay ang pangalan ng alaga';
+
+  @override
+  String get petTypeFieldHint => 'Ilagay ang uri ng alaga';
+
+  @override
+  String get petBirthdayHint => 'Piliin ang petsa ng kapanganakan';
+
+  @override
+  String get petChipHint => 'Ilagay ang numero ng microchip';
+
+  @override
+  String get petRegistryHint => 'Ilagay ang chip registry';
+
+  @override
+  String get petVetHint => 'Ilagay ang pangalan ng beterinaryo';
+
+  @override
+  String get petVetPhoneHint => 'Ilagay ang numero ng telepono ng beterinaryo';
+
+  @override
+  String get petMoreDetailsHint => 'Microchip, chip registry at beterinaryo (opsyonal)';
+
+  @override
+  String get petAddChip => 'Idagdag ang numero ng chip';
+
+  @override
   String get yoursTag => 'Iyo';
 
   @override

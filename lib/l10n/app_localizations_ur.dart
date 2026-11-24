@@ -8944,6 +8944,33 @@ class AppLocalizationsUr extends AppLocalizations {
   String get tripEntryTitle => 'داخلے کی تفصیلات';
 
   @override
+  String get petNameHint => 'پالتو جانور کا نام درج کریں';
+
+  @override
+  String get petTypeFieldHint => 'پالتو جانور کی قسم درج کریں';
+
+  @override
+  String get petBirthdayHint => 'تاریخ پیدائش منتخب کریں';
+
+  @override
+  String get petChipHint => 'مائیکروچپ نمبر درج کریں';
+
+  @override
+  String get petRegistryHint => 'چپ رجسٹری درج کریں';
+
+  @override
+  String get petVetHint => 'ویٹرنری ڈاکٹر کا نام درج کریں';
+
+  @override
+  String get petVetPhoneHint => 'ویٹرنری ڈاکٹر کا فون نمبر درج کریں';
+
+  @override
+  String get petMoreDetailsHint => 'مائیکروچپ، چپ رجسٹری اور ویٹرنری ڈاکٹر (اختیاری)';
+
+  @override
+  String get petAddChip => 'چپ نمبر شامل کریں';
+
+  @override
   String get yoursTag => 'آپ کا';
 
   @override

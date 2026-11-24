@@ -8944,6 +8944,33 @@ class AppLocalizationsTe extends AppLocalizations {
   String get tripEntryTitle => 'ప్రవేశ వివరాలు';
 
   @override
+  String get petNameHint => 'పెంపుడు జంతువు పేరు నమోదు చేయండి';
+
+  @override
+  String get petTypeFieldHint => 'పెంపుడు జంతువు రకం నమోదు చేయండి';
+
+  @override
+  String get petBirthdayHint => 'పుట్టిన తేదీని ఎంచుకోండి';
+
+  @override
+  String get petChipHint => 'మైక్రోచిప్ నంబర్ నమోదు చేయండి';
+
+  @override
+  String get petRegistryHint => 'చిప్ రిజిస్ట్రీ నమోదు చేయండి';
+
+  @override
+  String get petVetHint => 'పశువైద్యుని పేరు నమోదు చేయండి';
+
+  @override
+  String get petVetPhoneHint => 'పశువైద్యుని ఫోన్ నంబర్ నమోదు చేయండి';
+
+  @override
+  String get petMoreDetailsHint => 'మైక్రోచిప్, చిప్ రిజిస్ట్రీ మరియు పశువైద్యుడు (ఐచ్ఛికం)';
+
+  @override
+  String get petAddChip => 'చిప్ నంబర్ జోడించండి';
+
+  @override
   String get yoursTag => 'మీది';
 
   @override

@@ -8944,6 +8944,33 @@ class AppLocalizationsTa extends AppLocalizations {
   String get tripEntryTitle => 'நுழைவு விவரங்கள்';
 
   @override
+  String get petNameHint => 'செல்லப்பிராணியின் பெயரை உள்ளிடவும்';
+
+  @override
+  String get petTypeFieldHint => 'செல்லப்பிராணியின் வகையை உள்ளிடவும்';
+
+  @override
+  String get petBirthdayHint => 'பிறந்த தேதியைத் தேர்ந்தெடுக்கவும்';
+
+  @override
+  String get petChipHint => 'மைக்ரோசிப் எண்ணை உள்ளிடவும்';
+
+  @override
+  String get petRegistryHint => 'சிப் பதிவகத்தை உள்ளிடவும்';
+
+  @override
+  String get petVetHint => 'கால்நடை மருத்துவரின் பெயரை உள்ளிடவும்';
+
+  @override
+  String get petVetPhoneHint => 'கால்நடை மருத்துவரின் தொலைபேசி எண்ணை உள்ளிடவும்';
+
+  @override
+  String get petMoreDetailsHint => 'மைக்ரோசிப், சிப் பதிவகம் மற்றும் கால்நடை மருத்துவர் (விருப்பத்தேர்வு)';
+
+  @override
+  String get petAddChip => 'சிப் எண்ணைச் சேர்';
+
+  @override
   String get yoursTag => 'உங்களுடையது';
 
   @override

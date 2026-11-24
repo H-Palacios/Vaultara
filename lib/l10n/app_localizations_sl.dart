@@ -9084,6 +9084,33 @@ class AppLocalizationsSl extends AppLocalizations {
   String get tripEntryTitle => 'Podatki o vstopu';
 
   @override
+  String get petNameHint => 'Vnesite ime ljubljenčka';
+
+  @override
+  String get petTypeFieldHint => 'Vnesite vrsto ljubljenčka';
+
+  @override
+  String get petBirthdayHint => 'Izberite datum rojstva';
+
+  @override
+  String get petChipHint => 'Vnesite številko mikročipa';
+
+  @override
+  String get petRegistryHint => 'Vnesite register čipov';
+
+  @override
+  String get petVetHint => 'Vnesite ime veterinarja';
+
+  @override
+  String get petVetPhoneHint => 'Vnesite telefonsko številko veterinarja';
+
+  @override
+  String get petMoreDetailsHint => 'Mikročip, register čipov in veterinar (neobvezno)';
+
+  @override
+  String get petAddChip => 'Dodaj številko čipa';
+
+  @override
   String get yoursTag => 'Vaše';
 
   @override

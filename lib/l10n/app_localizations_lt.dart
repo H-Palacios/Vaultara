@@ -9085,6 +9085,33 @@ class AppLocalizationsLt extends AppLocalizations {
   String get tripEntryTitle => 'Atvykimo informacija';
 
   @override
+  String get petNameHint => 'Įveskite augintinio vardą';
+
+  @override
+  String get petTypeFieldHint => 'Įveskite augintinio rūšį';
+
+  @override
+  String get petBirthdayHint => 'Pasirinkite gimimo datą';
+
+  @override
+  String get petChipHint => 'Įveskite mikroschemos numerį';
+
+  @override
+  String get petRegistryHint => 'Įveskite schemų registrą';
+
+  @override
+  String get petVetHint => 'Įveskite veterinaro vardą';
+
+  @override
+  String get petVetPhoneHint => 'Įveskite veterinaro telefono numerį';
+
+  @override
+  String get petMoreDetailsHint => 'Mikroschema, schemų registras ir veterinaras (neprivaloma)';
+
+  @override
+  String get petAddChip => 'Pridėti mikroschemos numerį';
+
+  @override
   String get yoursTag => 'Jūsų';
 
   @override

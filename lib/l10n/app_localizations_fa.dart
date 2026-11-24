@@ -8944,6 +8944,33 @@ class AppLocalizationsFa extends AppLocalizations {
   String get tripEntryTitle => 'جزئیات ورود';
 
   @override
+  String get petNameHint => 'نام حیوان خانگی را وارد کنید';
+
+  @override
+  String get petTypeFieldHint => 'نوع حیوان خانگی را وارد کنید';
+
+  @override
+  String get petBirthdayHint => 'تاریخ تولد را انتخاب کنید';
+
+  @override
+  String get petChipHint => 'شمارهٔ ریزتراشه را وارد کنید';
+
+  @override
+  String get petRegistryHint => 'ثبت تراشه را وارد کنید';
+
+  @override
+  String get petVetHint => 'نام دامپزشک را وارد کنید';
+
+  @override
+  String get petVetPhoneHint => 'شمارهٔ تلفن دامپزشک را وارد کنید';
+
+  @override
+  String get petMoreDetailsHint => 'ریزتراشه، ثبت تراشه و دامپزشک (اختیاری)';
+
+  @override
+  String get petAddChip => 'افزودن شمارهٔ تراشه';
+
+  @override
   String get yoursTag => 'مال شما';
 
   @override

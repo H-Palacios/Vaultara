@@ -8944,6 +8944,33 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get tripEntryTitle => 'وردەکاریی چوونەژوورەوە';
 
   @override
+  String get petNameHint => 'ناوی ئاژەڵەکە بنووسە';
+
+  @override
+  String get petTypeFieldHint => 'جۆری ئاژەڵەکە بنووسە';
+
+  @override
+  String get petBirthdayHint => 'بەرواری لەدایکبوون هەڵبژێرە';
+
+  @override
+  String get petChipHint => 'ژمارەی مایکرۆچیپ بنووسە';
+
+  @override
+  String get petRegistryHint => 'تۆماری چیپ بنووسە';
+
+  @override
+  String get petVetHint => 'ناوی پزیشکی ئاژەڵ بنووسە';
+
+  @override
+  String get petVetPhoneHint => 'ژمارەی تەلەفۆنی پزیشکی ئاژەڵ بنووسە';
+
+  @override
+  String get petMoreDetailsHint => 'مایکرۆچیپ، تۆماری چیپ و پزیشکی ئاژەڵ (ئارەزوومەندانە)';
+
+  @override
+  String get petAddChip => 'ژمارەی چیپ زیاد بکە';
+
+  @override
   String get yoursTag => 'هی تۆ';
 
   @override

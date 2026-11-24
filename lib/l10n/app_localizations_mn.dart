@@ -8934,6 +8934,33 @@ class AppLocalizationsMn extends AppLocalizations {
   String get tripEntryTitle => 'Нэвтрэх мэдээлэл';
 
   @override
+  String get petNameHint => 'Тэжээвэр амьтны нэрийг оруулна уу';
+
+  @override
+  String get petTypeFieldHint => 'Тэжээвэр амьтны төрлийг оруулна уу';
+
+  @override
+  String get petBirthdayHint => 'Төрсөн огноог сонгоно уу';
+
+  @override
+  String get petChipHint => 'Микрочипийн дугаарыг оруулна уу';
+
+  @override
+  String get petRegistryHint => 'Чипийн бүртгэлийг оруулна уу';
+
+  @override
+  String get petVetHint => 'Малын эмчийн нэрийг оруулна уу';
+
+  @override
+  String get petVetPhoneHint => 'Малын эмчийн утасны дугаарыг оруулна уу';
+
+  @override
+  String get petMoreDetailsHint => 'Микрочип, чипийн бүртгэл ба малын эмч (заавал биш)';
+
+  @override
+  String get petAddChip => 'Чипийн дугаар нэмэх';
+
+  @override
   String get yoursTag => 'Таных';
 
   @override

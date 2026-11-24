@@ -8887,6 +8887,33 @@ class AppLocalizationsMs extends AppLocalizations {
   String get tripEntryTitle => 'Butiran kemasukan';
 
   @override
+  String get petNameHint => 'Masukkan nama haiwan peliharaan';
+
+  @override
+  String get petTypeFieldHint => 'Masukkan jenis haiwan peliharaan';
+
+  @override
+  String get petBirthdayHint => 'Pilih tarikh lahir';
+
+  @override
+  String get petChipHint => 'Masukkan nombor mikrocip';
+
+  @override
+  String get petRegistryHint => 'Masukkan pendaftaran cip';
+
+  @override
+  String get petVetHint => 'Masukkan nama doktor haiwan';
+
+  @override
+  String get petVetPhoneHint => 'Masukkan nombor telefon doktor haiwan';
+
+  @override
+  String get petMoreDetailsHint => 'Mikrocip, pendaftaran cip dan doktor haiwan (pilihan)';
+
+  @override
+  String get petAddChip => 'Tambah nombor cip';
+
+  @override
   String get yoursTag => 'Milik anda';
 
   @override

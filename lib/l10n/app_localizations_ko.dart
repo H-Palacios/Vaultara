@@ -8887,6 +8887,33 @@ class AppLocalizationsKo extends AppLocalizations {
   String get tripEntryTitle => '입국 정보';
 
   @override
+  String get petNameHint => '반려동물 이름 입력';
+
+  @override
+  String get petTypeFieldHint => '반려동물 종류 입력';
+
+  @override
+  String get petBirthdayHint => '생년월일 선택';
+
+  @override
+  String get petChipHint => '마이크로칩 번호 입력';
+
+  @override
+  String get petRegistryHint => '칩 등록 기관 입력';
+
+  @override
+  String get petVetHint => '수의사 이름 입력';
+
+  @override
+  String get petVetPhoneHint => '수의사 전화번호 입력';
+
+  @override
+  String get petMoreDetailsHint => '마이크로칩, 칩 등록 기관, 수의사(선택)';
+
+  @override
+  String get petAddChip => '칩 번호 추가';
+
+  @override
   String get yoursTag => '내 항목';
 
   @override

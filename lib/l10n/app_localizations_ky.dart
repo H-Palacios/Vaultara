@@ -8944,6 +8944,33 @@ class AppLocalizationsKy extends AppLocalizations {
   String get tripEntryTitle => 'Кирүү маалыматтары';
 
   @override
+  String get petNameHint => 'Жаныбардын атын киргизиңиз';
+
+  @override
+  String get petTypeFieldHint => 'Жаныбардын түрүн киргизиңиз';
+
+  @override
+  String get petBirthdayHint => 'Туулган күнүн тандаңыз';
+
+  @override
+  String get petChipHint => 'Микрочиптин номерин киргизиңиз';
+
+  @override
+  String get petRegistryHint => 'Чип реестрин киргизиңиз';
+
+  @override
+  String get petVetHint => 'Ветеринардын атын киргизиңиз';
+
+  @override
+  String get petVetPhoneHint => 'Ветеринардын телефон номерин киргизиңиз';
+
+  @override
+  String get petMoreDetailsHint => 'Микрочип, чип реестри жана ветеринар (милдеттүү эмес)';
+
+  @override
+  String get petAddChip => 'Чиптин номерин кошуу';
+
+  @override
   String get yoursTag => 'Сиздики';
 
   @override

@@ -15523,6 +15523,60 @@ abstract class AppLocalizations {
   /// **'Entry details'**
   String get tripEntryTitle;
 
+  /// Pet editor field hints: petNameHint
+  ///
+  /// In en, this message translates to:
+  /// **'Enter pet name'**
+  String get petNameHint;
+
+  /// Pet editor field hints: petTypeFieldHint
+  ///
+  /// In en, this message translates to:
+  /// **'Enter type of pet'**
+  String get petTypeFieldHint;
+
+  /// Pet editor field hints: petBirthdayHint
+  ///
+  /// In en, this message translates to:
+  /// **'Select date of birth'**
+  String get petBirthdayHint;
+
+  /// Pet editor field hints: petChipHint
+  ///
+  /// In en, this message translates to:
+  /// **'Enter microchip number'**
+  String get petChipHint;
+
+  /// Pet editor field hints: petRegistryHint
+  ///
+  /// In en, this message translates to:
+  /// **'Enter chip registry'**
+  String get petRegistryHint;
+
+  /// Pet editor field hints: petVetHint
+  ///
+  /// In en, this message translates to:
+  /// **'Enter vet\'s name'**
+  String get petVetHint;
+
+  /// Pet editor field hints: petVetPhoneHint
+  ///
+  /// In en, this message translates to:
+  /// **'Enter vet\'s phone number'**
+  String get petVetPhoneHint;
+
+  /// Pet editor: what More details holds
+  ///
+  /// In en, this message translates to:
+  /// **'Microchip, chip registry and vet (optional)'**
+  String get petMoreDetailsHint;
+
+  /// Pet: link that opens the pet with More details open
+  ///
+  /// In en, this message translates to:
+  /// **'Add chip number'**
+  String get petAddChip;
+
   /// Small label on a category or group the user made.
   ///
   /// In en, this message translates to:

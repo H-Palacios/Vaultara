@@ -8944,6 +8944,33 @@ class AppLocalizationsBn extends AppLocalizations {
   String get tripEntryTitle => 'প্রবেশের তথ্য';
 
   @override
+  String get petNameHint => 'পোষা প্রাণীর নাম লিখুন';
+
+  @override
+  String get petTypeFieldHint => 'পোষা প্রাণীর ধরন লিখুন';
+
+  @override
+  String get petBirthdayHint => 'জন্মতারিখ নির্বাচন করুন';
+
+  @override
+  String get petChipHint => 'মাইক্রোচিপ নম্বর লিখুন';
+
+  @override
+  String get petRegistryHint => 'চিপ রেজিস্ট্রি লিখুন';
+
+  @override
+  String get petVetHint => 'পশু চিকিৎসকের নাম লিখুন';
+
+  @override
+  String get petVetPhoneHint => 'পশু চিকিৎসকের ফোন নম্বর লিখুন';
+
+  @override
+  String get petMoreDetailsHint => 'মাইক্রোচিপ, চিপ রেজিস্ট্রি ও পশু চিকিৎসক (ঐচ্ছিক)';
+
+  @override
+  String get petAddChip => 'চিপ নম্বর যোগ করুন';
+
+  @override
   String get yoursTag => 'আপনার';
 
   @override

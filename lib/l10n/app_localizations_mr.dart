@@ -8944,6 +8944,33 @@ class AppLocalizationsMr extends AppLocalizations {
   String get tripEntryTitle => 'प्रवेशाचे तपशील';
 
   @override
+  String get petNameHint => 'पाळीव प्राण्याचे नाव प्रविष्ट करा';
+
+  @override
+  String get petTypeFieldHint => 'पाळीव प्राण्याचा प्रकार प्रविष्ट करा';
+
+  @override
+  String get petBirthdayHint => 'जन्मतारीख निवडा';
+
+  @override
+  String get petChipHint => 'मायक्रोचिप क्रमांक प्रविष्ट करा';
+
+  @override
+  String get petRegistryHint => 'चिप नोंदणी प्रविष्ट करा';
+
+  @override
+  String get petVetHint => 'पशुवैद्यांचे नाव प्रविष्ट करा';
+
+  @override
+  String get petVetPhoneHint => 'पशुवैद्यांचा फोन नंबर प्रविष्ट करा';
+
+  @override
+  String get petMoreDetailsHint => 'मायक्रोचिप, चिप नोंदणी आणि पशुवैद्य (पर्यायी)';
+
+  @override
+  String get petAddChip => 'चिप क्रमांक जोडा';
+
+  @override
   String get yoursTag => 'तुमचे';
 
   @override

@@ -9021,6 +9021,33 @@ class AppLocalizationsRo extends AppLocalizations {
   String get tripEntryTitle => 'Detalii de intrare';
 
   @override
+  String get petNameHint => 'Introdu numele animalului';
+
+  @override
+  String get petTypeFieldHint => 'Introdu tipul de animal';
+
+  @override
+  String get petBirthdayHint => 'Selectează data nașterii';
+
+  @override
+  String get petChipHint => 'Introdu numărul microcipului';
+
+  @override
+  String get petRegistryHint => 'Introdu registrul cipului';
+
+  @override
+  String get petVetHint => 'Introdu numele medicului veterinar';
+
+  @override
+  String get petVetPhoneHint => 'Introdu telefonul medicului veterinar';
+
+  @override
+  String get petMoreDetailsHint => 'Microcip, registrul cipului și medic veterinar (opțional)';
+
+  @override
+  String get petAddChip => 'Adaugă numărul cipului';
+
+  @override
   String get yoursTag => 'Al tău';
 
   @override

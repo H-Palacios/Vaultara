@@ -8947,6 +8947,33 @@ class AppLocalizationsSv extends AppLocalizations {
   String get tripEntryTitle => 'Inreseuppgifter';
 
   @override
+  String get petNameHint => 'Ange husdjurets namn';
+
+  @override
+  String get petTypeFieldHint => 'Ange typ av husdjur';
+
+  @override
+  String get petBirthdayHint => 'Välj födelsedatum';
+
+  @override
+  String get petChipHint => 'Ange mikrochipnummer';
+
+  @override
+  String get petRegistryHint => 'Ange chipregister';
+
+  @override
+  String get petVetHint => 'Ange veterinärens namn';
+
+  @override
+  String get petVetPhoneHint => 'Ange veterinärens telefonnummer';
+
+  @override
+  String get petMoreDetailsHint => 'Mikrochip, chipregister och veterinär (valfritt)';
+
+  @override
+  String get petAddChip => 'Lägg till chipnummer';
+
+  @override
   String get yoursTag => 'Ditt';
 
   @override

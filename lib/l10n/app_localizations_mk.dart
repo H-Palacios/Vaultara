@@ -8942,6 +8942,33 @@ class AppLocalizationsMk extends AppLocalizations {
   String get tripEntryTitle => 'Податоци за влез';
 
   @override
+  String get petNameHint => 'Внесете го името на миленикот';
+
+  @override
+  String get petTypeFieldHint => 'Внесете го видот на миленикот';
+
+  @override
+  String get petBirthdayHint => 'Изберете датум на раѓање';
+
+  @override
+  String get petChipHint => 'Внесете го бројот на микрочипот';
+
+  @override
+  String get petRegistryHint => 'Внесете го регистарот на чипот';
+
+  @override
+  String get petVetHint => 'Внесете го името на ветеринарот';
+
+  @override
+  String get petVetPhoneHint => 'Внесете го телефонот на ветеринарот';
+
+  @override
+  String get petMoreDetailsHint => 'Микрочип, регистар на чипот и ветеринар (незадолжително)';
+
+  @override
+  String get petAddChip => 'Додај број на чип';
+
+  @override
   String get yoursTag => 'Ваше';
 
   @override

@@ -8948,6 +8948,33 @@ class AppLocalizationsNo extends AppLocalizations {
   String get tripEntryTitle => 'Innreiseopplysninger';
 
   @override
+  String get petNameHint => 'Skriv inn kjæledyrets navn';
+
+  @override
+  String get petTypeFieldHint => 'Skriv inn type kjæledyr';
+
+  @override
+  String get petBirthdayHint => 'Velg fødselsdato';
+
+  @override
+  String get petChipHint => 'Skriv inn mikrobrikkenummer';
+
+  @override
+  String get petRegistryHint => 'Skriv inn brikkeregister';
+
+  @override
+  String get petVetHint => 'Skriv inn veterinærens navn';
+
+  @override
+  String get petVetPhoneHint => 'Skriv inn veterinærens telefonnummer';
+
+  @override
+  String get petMoreDetailsHint => 'Mikrobrikke, brikkeregister og veterinær (valgfritt)';
+
+  @override
+  String get petAddChip => 'Legg til brikkenummer';
+
+  @override
   String get yoursTag => 'Ditt';
 
   @override

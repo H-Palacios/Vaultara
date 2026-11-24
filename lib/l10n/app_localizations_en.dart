@@ -8969,6 +8969,33 @@ class AppLocalizationsEn extends AppLocalizations {
   String get tripEntryTitle => 'Entry details';
 
   @override
+  String get petNameHint => 'Enter pet name';
+
+  @override
+  String get petTypeFieldHint => 'Enter type of pet';
+
+  @override
+  String get petBirthdayHint => 'Select date of birth';
+
+  @override
+  String get petChipHint => 'Enter microchip number';
+
+  @override
+  String get petRegistryHint => 'Enter chip registry';
+
+  @override
+  String get petVetHint => 'Enter vet\'s name';
+
+  @override
+  String get petVetPhoneHint => 'Enter vet\'s phone number';
+
+  @override
+  String get petMoreDetailsHint => 'Microchip, chip registry and vet (optional)';
+
+  @override
+  String get petAddChip => 'Add chip number';
+
+  @override
   String get yoursTag => 'Yours';
 
   @override

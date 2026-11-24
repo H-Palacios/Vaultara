@@ -9014,6 +9014,33 @@ class AppLocalizationsSr extends AppLocalizations {
   String get tripEntryTitle => 'Подаци о уласку';
 
   @override
+  String get petNameHint => 'Унесите име љубимца';
+
+  @override
+  String get petTypeFieldHint => 'Унесите врсту љубимца';
+
+  @override
+  String get petBirthdayHint => 'Изаберите датум рођења';
+
+  @override
+  String get petChipHint => 'Унесите број микрочипа';
+
+  @override
+  String get petRegistryHint => 'Унесите регистар чипа';
+
+  @override
+  String get petVetHint => 'Унесите име ветеринара';
+
+  @override
+  String get petVetPhoneHint => 'Унесите телефон ветеринара';
+
+  @override
+  String get petMoreDetailsHint => 'Микрочип, регистар чипа и ветеринар (необавезно)';
+
+  @override
+  String get petAddChip => 'Додај број чипа';
+
+  @override
   String get yoursTag => 'Ваше';
 
   @override
@@ -19674,6 +19701,33 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get tripEntryTitle => 'Подаци о уласку';
 
   @override
+  String get petNameHint => 'Унесите име љубимца';
+
+  @override
+  String get petTypeFieldHint => 'Унесите врсту љубимца';
+
+  @override
+  String get petBirthdayHint => 'Изаберите датум рођења';
+
+  @override
+  String get petChipHint => 'Унесите број микрочипа';
+
+  @override
+  String get petRegistryHint => 'Унесите регистар чипа';
+
+  @override
+  String get petVetHint => 'Унесите име ветеринара';
+
+  @override
+  String get petVetPhoneHint => 'Унесите телефон ветеринара';
+
+  @override
+  String get petMoreDetailsHint => 'Микрочип, регистар чипа и ветеринар (необавезно)';
+
+  @override
+  String get petAddChip => 'Додај број чипа';
+
+  @override
   String get yoursTag => 'Ваше';
 
   @override
@@ -30328,6 +30382,33 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get tripEntryTitle => 'Podaci o ulasku';
+
+  @override
+  String get petNameHint => 'Unesite ime ljubimca';
+
+  @override
+  String get petTypeFieldHint => 'Unesite vrstu ljubimca';
+
+  @override
+  String get petBirthdayHint => 'Izaberite datum rođenja';
+
+  @override
+  String get petChipHint => 'Unesite broj mikročipa';
+
+  @override
+  String get petRegistryHint => 'Unesite registar čipa';
+
+  @override
+  String get petVetHint => 'Unesite ime veterinara';
+
+  @override
+  String get petVetPhoneHint => 'Unesite telefon veterinara';
+
+  @override
+  String get petMoreDetailsHint => 'Mikročip, registar čipa i veterinar (neobavezno)';
+
+  @override
+  String get petAddChip => 'Dodaj broj čipa';
 
   @override
   String get yoursTag => 'Vaše';

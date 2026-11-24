@@ -9093,6 +9093,33 @@ class AppLocalizationsRu extends AppLocalizations {
   String get tripEntryTitle => 'Сведения о въезде';
 
   @override
+  String get petNameHint => 'Введите кличку питомца';
+
+  @override
+  String get petTypeFieldHint => 'Введите вид питомца';
+
+  @override
+  String get petBirthdayHint => 'Выберите дату рождения';
+
+  @override
+  String get petChipHint => 'Введите номер микрочипа';
+
+  @override
+  String get petRegistryHint => 'Введите реестр чипа';
+
+  @override
+  String get petVetHint => 'Введите имя ветеринара';
+
+  @override
+  String get petVetPhoneHint => 'Введите телефон ветеринара';
+
+  @override
+  String get petMoreDetailsHint => 'Микрочип, реестр чипа и ветеринар (необязательно)';
+
+  @override
+  String get petAddChip => 'Добавить номер чипа';
+
+  @override
   String get yoursTag => 'Ваше';
 
   @override

@@ -8943,6 +8943,33 @@ class AppLocalizationsSi extends AppLocalizations {
   String get tripEntryTitle => 'ඇතුළුවීමේ විස්තර';
 
   @override
+  String get petNameHint => 'සුරතල් සතාගේ නම ඇතුළු කරන්න';
+
+  @override
+  String get petTypeFieldHint => 'සුරතල් සතාගේ වර්ගය ඇතුළු කරන්න';
+
+  @override
+  String get petBirthdayHint => 'උපන් දිනය තෝරන්න';
+
+  @override
+  String get petChipHint => 'මයික්‍රොචිප් අංකය ඇතුළු කරන්න';
+
+  @override
+  String get petRegistryHint => 'චිප් ලේඛනය ඇතුළු කරන්න';
+
+  @override
+  String get petVetHint => 'පශු වෛද්‍යවරයාගේ නම ඇතුළු කරන්න';
+
+  @override
+  String get petVetPhoneHint => 'පශු වෛද්‍යවරයාගේ දුරකථන අංකය ඇතුළු කරන්න';
+
+  @override
+  String get petMoreDetailsHint => 'මයික්‍රොචිප්, චිප් ලේඛනය සහ පශු වෛද්‍යවරයා (විකල්ප)';
+
+  @override
+  String get petAddChip => 'චිප් අංකය එක් කරන්න';
+
+  @override
   String get yoursTag => 'ඔබේ';
 
   @override

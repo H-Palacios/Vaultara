@@ -8944,6 +8944,33 @@ class AppLocalizationsUz extends AppLocalizations {
   String get tripEntryTitle => 'Kirish ma\'lumotlari';
 
   @override
+  String get petNameHint => 'Uy hayvoni ismini kiriting';
+
+  @override
+  String get petTypeFieldHint => 'Uy hayvoni turini kiriting';
+
+  @override
+  String get petBirthdayHint => 'Tug\'ilgan sanani tanlang';
+
+  @override
+  String get petChipHint => 'Mikrochip raqamini kiriting';
+
+  @override
+  String get petRegistryHint => 'Chip reyestrini kiriting';
+
+  @override
+  String get petVetHint => 'Veterinar ismini kiriting';
+
+  @override
+  String get petVetPhoneHint => 'Veterinar telefon raqamini kiriting';
+
+  @override
+  String get petMoreDetailsHint => 'Mikrochip, chip reyestri va veterinar (ixtiyoriy)';
+
+  @override
+  String get petAddChip => 'Chip raqamini qo\'shish';
+
+  @override
   String get yoursTag => 'Sizniki';
 
   @override

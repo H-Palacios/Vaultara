@@ -8944,6 +8944,33 @@ class AppLocalizationsMl extends AppLocalizations {
   String get tripEntryTitle => 'പ്രവേശന വിവരങ്ങൾ';
 
   @override
+  String get petNameHint => 'വളർത്തുമൃഗത്തിന്റെ പേര് നൽകുക';
+
+  @override
+  String get petTypeFieldHint => 'വളർത്തുമൃഗത്തിന്റെ തരം നൽകുക';
+
+  @override
+  String get petBirthdayHint => 'ജനനത്തീയതി തിരഞ്ഞെടുക്കുക';
+
+  @override
+  String get petChipHint => 'മൈക്രോചിപ്പ് നമ്പർ നൽകുക';
+
+  @override
+  String get petRegistryHint => 'ചിപ്പ് രജിസ്ട്രി നൽകുക';
+
+  @override
+  String get petVetHint => 'മൃഗഡോക്ടറുടെ പേര് നൽകുക';
+
+  @override
+  String get petVetPhoneHint => 'മൃഗഡോക്ടറുടെ ഫോൺ നമ്പർ നൽകുക';
+
+  @override
+  String get petMoreDetailsHint => 'മൈക്രോചിപ്പ്, ചിപ്പ് രജിസ്ട്രി, മൃഗഡോക്ടർ (ഓപ്ഷണൽ)';
+
+  @override
+  String get petAddChip => 'ചിപ്പ് നമ്പർ ചേർക്കുക';
+
+  @override
   String get yoursTag => 'നിങ്ങളുടേത്';
 
   @override

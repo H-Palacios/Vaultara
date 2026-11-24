@@ -8958,6 +8958,33 @@ class AppLocalizationsFr extends AppLocalizations {
   String get tripEntryTitle => 'Conditions d\'entrée';
 
   @override
+  String get petNameHint => 'Saisir le nom de l’animal';
+
+  @override
+  String get petTypeFieldHint => 'Saisir le type d’animal';
+
+  @override
+  String get petBirthdayHint => 'Sélectionner la date de naissance';
+
+  @override
+  String get petChipHint => 'Saisir le numéro de puce';
+
+  @override
+  String get petRegistryHint => 'Saisir le registre de la puce';
+
+  @override
+  String get petVetHint => 'Saisir le nom du vétérinaire';
+
+  @override
+  String get petVetPhoneHint => 'Saisir le téléphone du vétérinaire';
+
+  @override
+  String get petMoreDetailsHint => 'Puce, registre de la puce et vétérinaire (facultatif)';
+
+  @override
+  String get petAddChip => 'Ajouter le numéro de puce';
+
+  @override
   String get yoursTag => 'À vous';
 
   @override

@@ -8948,6 +8948,33 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tripEntryTitle => 'Detajet e hyrjes';
 
   @override
+  String get petNameHint => 'Fut emrin e kafshës';
+
+  @override
+  String get petTypeFieldHint => 'Fut llojin e kafshës';
+
+  @override
+  String get petBirthdayHint => 'Zgjidh datën e lindjes';
+
+  @override
+  String get petChipHint => 'Fut numrin e mikroçipit';
+
+  @override
+  String get petRegistryHint => 'Fut regjistrin e çipit';
+
+  @override
+  String get petVetHint => 'Fut emrin e veterinerit';
+
+  @override
+  String get petVetPhoneHint => 'Fut telefonin e veterinerit';
+
+  @override
+  String get petMoreDetailsHint => 'Mikroçipi, regjistri i çipit dhe veterineri (opsionale)';
+
+  @override
+  String get petAddChip => 'Shto numrin e çipit';
+
+  @override
   String get yoursTag => 'Juaji';
 
   @override

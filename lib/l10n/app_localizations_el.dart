@@ -8948,6 +8948,33 @@ class AppLocalizationsEl extends AppLocalizations {
   String get tripEntryTitle => 'Στοιχεία εισόδου';
 
   @override
+  String get petNameHint => 'Εισαγάγετε το όνομα του κατοικιδίου';
+
+  @override
+  String get petTypeFieldHint => 'Εισαγάγετε το είδος του κατοικιδίου';
+
+  @override
+  String get petBirthdayHint => 'Επιλέξτε ημερομηνία γέννησης';
+
+  @override
+  String get petChipHint => 'Εισαγάγετε τον αριθμό μικροτσίπ';
+
+  @override
+  String get petRegistryHint => 'Εισαγάγετε το μητρώο του τσιπ';
+
+  @override
+  String get petVetHint => 'Εισαγάγετε το όνομα του κτηνιάτρου';
+
+  @override
+  String get petVetPhoneHint => 'Εισαγάγετε το τηλέφωνο του κτηνιάτρου';
+
+  @override
+  String get petMoreDetailsHint => 'Μικροτσίπ, μητρώο τσιπ και κτηνίατρος (προαιρετικά)';
+
+  @override
+  String get petAddChip => 'Προσθήκη αριθμού τσιπ';
+
+  @override
   String get yoursTag => 'Δικό σας';
 
   @override

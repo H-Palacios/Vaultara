@@ -8948,6 +8948,33 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tripEntryTitle => 'Sarrera-xehetasunak';
 
   @override
+  String get petNameHint => 'Idatzi maskotaren izena';
+
+  @override
+  String get petTypeFieldHint => 'Idatzi maskota mota';
+
+  @override
+  String get petBirthdayHint => 'Hautatu jaiotze-data';
+
+  @override
+  String get petChipHint => 'Idatzi mikrotxiparen zenbakia';
+
+  @override
+  String get petRegistryHint => 'Idatzi txiparen erregistroa';
+
+  @override
+  String get petVetHint => 'Idatzi albaitariaren izena';
+
+  @override
+  String get petVetPhoneHint => 'Idatzi albaitariaren telefono-zenbakia';
+
+  @override
+  String get petMoreDetailsHint => 'Mikrotxipa, txiparen erregistroa eta albaitaria (aukerakoa)';
+
+  @override
+  String get petAddChip => 'Gehitu txiparen zenbakia';
+
+  @override
   String get yoursTag => 'Zurea';
 
   @override

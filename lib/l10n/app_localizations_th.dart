@@ -8875,6 +8875,33 @@ class AppLocalizationsTh extends AppLocalizations {
   String get tripEntryTitle => 'รายละเอียดการเข้าประเทศ';
 
   @override
+  String get petNameHint => 'ป้อนชื่อสัตว์เลี้ยง';
+
+  @override
+  String get petTypeFieldHint => 'ป้อนประเภทสัตว์เลี้ยง';
+
+  @override
+  String get petBirthdayHint => 'เลือกวันเกิด';
+
+  @override
+  String get petChipHint => 'ป้อนหมายเลขไมโครชิป';
+
+  @override
+  String get petRegistryHint => 'ป้อนทะเบียนชิป';
+
+  @override
+  String get petVetHint => 'ป้อนชื่อสัตวแพทย์';
+
+  @override
+  String get petVetPhoneHint => 'ป้อนเบอร์โทรสัตวแพทย์';
+
+  @override
+  String get petMoreDetailsHint => 'ไมโครชิป ทะเบียนชิป และสัตวแพทย์ (ไม่บังคับ)';
+
+  @override
+  String get petAddChip => 'เพิ่มหมายเลขชิป';
+
+  @override
   String get yoursTag => 'ของคุณ';
 
   @override

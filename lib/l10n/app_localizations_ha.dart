@@ -8944,6 +8944,33 @@ class AppLocalizationsHa extends AppLocalizations {
   String get tripEntryTitle => 'Bayanan shiga';
 
   @override
+  String get petNameHint => 'Shigar da sunan dabbar gida';
+
+  @override
+  String get petTypeFieldHint => 'Shigar da nau\'in dabbar gida';
+
+  @override
+  String get petBirthdayHint => 'Zaɓi ranar haihuwa';
+
+  @override
+  String get petChipHint => 'Shigar da lambar microchip';
+
+  @override
+  String get petRegistryHint => 'Shigar da rajistar chip';
+
+  @override
+  String get petVetHint => 'Shigar da sunan likitan dabbobi';
+
+  @override
+  String get petVetPhoneHint => 'Shigar da lambar wayar likitan dabbobi';
+
+  @override
+  String get petMoreDetailsHint => 'Microchip, rajistar chip da likitan dabbobi (na zaɓi)';
+
+  @override
+  String get petAddChip => 'Ƙara lambar chip';
+
+  @override
   String get yoursTag => 'Naka';
 
   @override

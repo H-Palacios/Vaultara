@@ -8943,6 +8943,33 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tripEntryTitle => 'Upplýsingar um komu';
 
   @override
+  String get petNameHint => 'Sláðu inn nafn gæludýrsins';
+
+  @override
+  String get petTypeFieldHint => 'Sláðu inn tegund gæludýrs';
+
+  @override
+  String get petBirthdayHint => 'Veldu fæðingardag';
+
+  @override
+  String get petChipHint => 'Sláðu inn örmerkisnúmer';
+
+  @override
+  String get petRegistryHint => 'Sláðu inn örmerkjaskrá';
+
+  @override
+  String get petVetHint => 'Sláðu inn nafn dýralæknis';
+
+  @override
+  String get petVetPhoneHint => 'Sláðu inn símanúmer dýralæknis';
+
+  @override
+  String get petMoreDetailsHint => 'Örmerki, örmerkjaskrá og dýralæknir (valfrjálst)';
+
+  @override
+  String get petAddChip => 'Bæta við örmerkisnúmeri';
+
+  @override
   String get yoursTag => 'Þitt';
 
   @override

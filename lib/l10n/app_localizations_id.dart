@@ -8882,6 +8882,33 @@ class AppLocalizationsId extends AppLocalizations {
   String get tripEntryTitle => 'Detail masuk';
 
   @override
+  String get petNameHint => 'Masukkan nama hewan peliharaan';
+
+  @override
+  String get petTypeFieldHint => 'Masukkan jenis hewan peliharaan';
+
+  @override
+  String get petBirthdayHint => 'Pilih tanggal lahir';
+
+  @override
+  String get petChipHint => 'Masukkan nomor microchip';
+
+  @override
+  String get petRegistryHint => 'Masukkan registri chip';
+
+  @override
+  String get petVetHint => 'Masukkan nama dokter hewan';
+
+  @override
+  String get petVetPhoneHint => 'Masukkan nomor telepon dokter hewan';
+
+  @override
+  String get petMoreDetailsHint => 'Microchip, registri chip, dan dokter hewan (opsional)';
+
+  @override
+  String get petAddChip => 'Tambahkan nomor chip';
+
+  @override
   String get yoursTag => 'Milik Anda';
 
   @override

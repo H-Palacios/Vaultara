@@ -9010,6 +9010,33 @@ class AppLocalizationsLv extends AppLocalizations {
   String get tripEntryTitle => 'Ieceļošanas informācija';
 
   @override
+  String get petNameHint => 'Ievadiet mājdzīvnieka vārdu';
+
+  @override
+  String get petTypeFieldHint => 'Ievadiet mājdzīvnieka sugu';
+
+  @override
+  String get petBirthdayHint => 'Izvēlieties dzimšanas datumu';
+
+  @override
+  String get petChipHint => 'Ievadiet mikročipa numuru';
+
+  @override
+  String get petRegistryHint => 'Ievadiet čipu reģistru';
+
+  @override
+  String get petVetHint => 'Ievadiet veterinārārsta vārdu';
+
+  @override
+  String get petVetPhoneHint => 'Ievadiet veterinārārsta tālruņa numuru';
+
+  @override
+  String get petMoreDetailsHint => 'Mikročips, čipu reģistrs un veterinārārsts (nav obligāti)';
+
+  @override
+  String get petAddChip => 'Pievienot čipa numuru';
+
+  @override
   String get yoursTag => 'Jūsu';
 
   @override

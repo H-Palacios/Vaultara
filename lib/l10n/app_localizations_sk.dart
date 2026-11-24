@@ -9077,6 +9077,33 @@ class AppLocalizationsSk extends AppLocalizations {
   String get tripEntryTitle => 'Údaje o vstupe';
 
   @override
+  String get petNameHint => 'Zadajte meno zvieraťa';
+
+  @override
+  String get petTypeFieldHint => 'Zadajte druh zvieraťa';
+
+  @override
+  String get petBirthdayHint => 'Vyberte dátum narodenia';
+
+  @override
+  String get petChipHint => 'Zadajte číslo mikročipu';
+
+  @override
+  String get petRegistryHint => 'Zadajte register čipov';
+
+  @override
+  String get petVetHint => 'Zadajte meno veterinára';
+
+  @override
+  String get petVetPhoneHint => 'Zadajte telefón veterinára';
+
+  @override
+  String get petMoreDetailsHint => 'Mikročip, register čipov a veterinár (nepovinné)';
+
+  @override
+  String get petAddChip => 'Pridať číslo čipu';
+
+  @override
   String get yoursTag => 'Vaše';
 
   @override

@@ -8887,6 +8887,33 @@ class AppLocalizationsLo extends AppLocalizations {
   String get tripEntryTitle => 'ລາຍລະອຽດການເຂົ້າປະເທດ';
 
   @override
+  String get petNameHint => 'ປ້ອນຊື່ສັດລ້ຽງ';
+
+  @override
+  String get petTypeFieldHint => 'ປ້ອນປະເພດສັດລ້ຽງ';
+
+  @override
+  String get petBirthdayHint => 'ເລືອກວັນເກີດ';
+
+  @override
+  String get petChipHint => 'ປ້ອນເລກໄມໂຄຣຊິບ';
+
+  @override
+  String get petRegistryHint => 'ປ້ອນທະບຽນຊິບ';
+
+  @override
+  String get petVetHint => 'ປ້ອນຊື່ສັດຕະວະແພດ';
+
+  @override
+  String get petVetPhoneHint => 'ປ້ອນເບີໂທສັດຕະວະແພດ';
+
+  @override
+  String get petMoreDetailsHint => 'ໄມໂຄຣຊິບ, ທະບຽນຊິບ ແລະ ສັດຕະວະແພດ (ບໍ່ບັງຄັບ)';
+
+  @override
+  String get petAddChip => 'ເພີ່ມເລກຊິບ';
+
+  @override
   String get yoursTag => 'ຂອງທ່ານ';
 
   @override

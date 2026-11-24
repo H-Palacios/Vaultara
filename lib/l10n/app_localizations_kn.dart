@@ -8944,6 +8944,33 @@ class AppLocalizationsKn extends AppLocalizations {
   String get tripEntryTitle => 'ಪ್ರವೇಶದ ವಿವರಗಳು';
 
   @override
+  String get petNameHint => 'ಸಾಕುಪ್ರಾಣಿಯ ಹೆಸರು ನಮೂದಿಸಿ';
+
+  @override
+  String get petTypeFieldHint => 'ಸಾಕುಪ್ರಾಣಿಯ ಪ್ರಕಾರ ನಮೂದಿಸಿ';
+
+  @override
+  String get petBirthdayHint => 'ಹುಟ್ಟಿದ ದಿನಾಂಕ ಆಯ್ಕೆಮಾಡಿ';
+
+  @override
+  String get petChipHint => 'ಮೈಕ್ರೋಚಿಪ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ';
+
+  @override
+  String get petRegistryHint => 'ಚಿಪ್ ನೋಂದಣಿ ನಮೂದಿಸಿ';
+
+  @override
+  String get petVetHint => 'ಪಶುವೈದ್ಯರ ಹೆಸರು ನಮೂದಿಸಿ';
+
+  @override
+  String get petVetPhoneHint => 'ಪಶುವೈದ್ಯರ ಫೋನ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ';
+
+  @override
+  String get petMoreDetailsHint => 'ಮೈಕ್ರೋಚಿಪ್, ಚಿಪ್ ನೋಂದಣಿ ಮತ್ತು ಪಶುವೈದ್ಯ (ಐಚ್ಛಿಕ)';
+
+  @override
+  String get petAddChip => 'ಚಿಪ್ ಸಂಖ್ಯೆ ಸೇರಿಸಿ';
+
+  @override
   String get yoursTag => 'ನಿಮ್ಮದು';
 
   @override

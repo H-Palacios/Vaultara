@@ -8944,6 +8944,33 @@ class AppLocalizationsKa extends AppLocalizations {
   String get tripEntryTitle => 'შესვლის დეტალები';
 
   @override
+  String get petNameHint => 'შეიყვანეთ შინაური ცხოველის სახელი';
+
+  @override
+  String get petTypeFieldHint => 'შეიყვანეთ შინაური ცხოველის სახეობა';
+
+  @override
+  String get petBirthdayHint => 'აირჩიეთ დაბადების თარიღი';
+
+  @override
+  String get petChipHint => 'შეიყვანეთ მიკროჩიპის ნომერი';
+
+  @override
+  String get petRegistryHint => 'შეიყვანეთ ჩიპის რეესტრი';
+
+  @override
+  String get petVetHint => 'შეიყვანეთ ვეტერინარის სახელი';
+
+  @override
+  String get petVetPhoneHint => 'შეიყვანეთ ვეტერინარის ტელეფონის ნომერი';
+
+  @override
+  String get petMoreDetailsHint => 'მიკროჩიპი, ჩიპის რეესტრი და ვეტერინარი (არასავალდებულო)';
+
+  @override
+  String get petAddChip => 'ჩიპის ნომრის დამატება';
+
+  @override
   String get yoursTag => 'თქვენი';
 
   @override

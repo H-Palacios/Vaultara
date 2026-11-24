@@ -9169,6 +9169,33 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tripEntryTitle => 'تفاصيل الدخول';
 
   @override
+  String get petNameHint => 'أدخل اسم الحيوان الأليف';
+
+  @override
+  String get petTypeFieldHint => 'أدخل نوع الحيوان الأليف';
+
+  @override
+  String get petBirthdayHint => 'حدد تاريخ الميلاد';
+
+  @override
+  String get petChipHint => 'أدخل رقم الشريحة الإلكترونية';
+
+  @override
+  String get petRegistryHint => 'أدخل سجل الشريحة';
+
+  @override
+  String get petVetHint => 'أدخل اسم الطبيب البيطري';
+
+  @override
+  String get petVetPhoneHint => 'أدخل رقم هاتف الطبيب البيطري';
+
+  @override
+  String get petMoreDetailsHint => 'الشريحة الإلكترونية وسجل الشريحة والطبيب البيطري (اختياري)';
+
+  @override
+  String get petAddChip => 'أضف رقم الشريحة';
+
+  @override
   String get yoursTag => 'خاص بك';
 
   @override

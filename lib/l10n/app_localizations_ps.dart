@@ -8944,6 +8944,33 @@ class AppLocalizationsPs extends AppLocalizations {
   String get tripEntryTitle => 'د ننوتلو جزئیات';
 
   @override
+  String get petNameHint => 'د څاروي نوم دننه کړئ';
+
+  @override
+  String get petTypeFieldHint => 'د څاروي ډول دننه کړئ';
+
+  @override
+  String get petBirthdayHint => 'د زېږېدو نېټه وټاکئ';
+
+  @override
+  String get petChipHint => 'د مایکروچپ شمېره دننه کړئ';
+
+  @override
+  String get petRegistryHint => 'د چپ ثبت دننه کړئ';
+
+  @override
+  String get petVetHint => 'د ډاکټر نوم دننه کړئ';
+
+  @override
+  String get petVetPhoneHint => 'د ډاکټر د تلیفون شمېره دننه کړئ';
+
+  @override
+  String get petMoreDetailsHint => 'مایکروچپ، د چپ ثبت او ډاکټر (اختیاري)';
+
+  @override
+  String get petAddChip => 'د چپ شمېره زیاته کړئ';
+
+  @override
   String get yoursTag => 'ستاسو';
 
   @override
