@@ -7,12 +7,16 @@ class EditorMoreDetails extends StatelessWidget {
   final ValueChanged<bool> onToggle;
   final List<Widget> children;
 
+  /// The grey line under the title. Defaults to what the record form holds.
+  final String? subtitle;
+
   const EditorMoreDetails({
     super.key,
     required this.expanded,
     required this.filledCount,
     required this.onToggle,
     required this.children,
+    this.subtitle,
   });
 
   @override
@@ -50,7 +54,7 @@ class EditorMoreDetails extends StatelessWidget {
                         ),
                         const SizedBox(height: 2),
                         Text(
-                          loc.editorMoreDetailsHint,
+                          subtitle ?? loc.editorMoreDetailsHint,
                           style: TextStyle(
                             fontSize: 12.5,
                             color: scheme.onSurfaceVariant,

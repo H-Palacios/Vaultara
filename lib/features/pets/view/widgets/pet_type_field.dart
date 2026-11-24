@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:vaultara/features/pets/data/pet_emoji.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/features/pets/data/pet.dart';
 import 'package:vaultara/features/pets/data/pet_type.dart';
@@ -299,11 +300,14 @@ class _PetTypeFieldState extends State<PetTypeField> {
               decoration: AppInputDecorations.field(
                 context,
                 labelText: loc.petTypeLabel,
-                hintText: loc.petTypeLabel,
+                hintText: loc.petTypeFieldHint,
                 showLabel: true,
                 prefixIcon: Padding(
                   padding: const EdgeInsets.all(12),
-                  child: Text(_emoji, style: const TextStyle(fontSize: 20)),
+                  child: Text(
+                    PetEmoji.show(_emoji),
+                    style: const TextStyle(fontSize: 20),
+                  ),
                 ),
               ).copyWith(helperText: loc.petTypeHint, helperMaxLines: 2),
             );
@@ -329,7 +333,7 @@ class _PetTypeFieldState extends State<PetTypeField> {
                         ListTile(
                           dense: true,
                           leading: Text(
-                            choice.emoji,
+                            PetEmoji.show(choice.emoji),
                             style: const TextStyle(fontSize: 20),
                           ),
                           title: Text(choice.label),

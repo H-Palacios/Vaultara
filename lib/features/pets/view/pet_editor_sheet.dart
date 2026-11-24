@@ -6,24 +6,42 @@ import 'package:vaultara/core/view/widgets/app_sheet.dart';
 import 'package:vaultara/core/view/widgets/unsaved_changes_guard.dart';
 import 'package:vaultara/features/pets/data/pet.dart';
 import 'package:vaultara/features/pets/data/pet_type.dart';
+import 'package:vaultara/features/pets/data/pet_repository.dart';
 import 'package:vaultara/features/pets/view/widgets/pet_type_field.dart';
+import 'package:vaultara/features/records/view/editor/editor_more_details.dart';
 import 'package:vaultara/features/travel/view/travel_widgets.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 /// Adds or edits a pet. Returns the filled-in pet, or null when closed.
-Future<Pet?> showPetEditorSheet(BuildContext context, {Pet? pet}) {
+/// The microchip, registry and vet sit under More details, closed unless
+/// [openDetails] is set.
+Future<Pet?> showPetEditorSheet(
+  BuildContext context, {
+  Pet? pet,
+  bool openDetails = false,
+}) {
   return AppSheet.show<Pet>(
     context: context,
     showDragHandle: false,
     enableDrag: false,
-    builder: (_) => _PetEditorSheet(pet: pet),
+    builder: (_) => _PetEditorSheet(pet: pet, openDetails: openDetails),
   );
+}
+
+/// Opens a saved pet with More details open, for the "Add chip number"
+/// links, and saves what the user enters. Returns the saved pet, or null.
+Future<Pet?> addPetChipNumber(BuildContext context, Pet pet) async {
+  final edited = await showPetEditorSheet(context, pet: pet, openDetails: true);
+  if (edited == null) return null;
+  await PetRepository.save(edited);
+  return edited;
 }
 
 class _PetEditorSheet extends StatefulWidget {
   final Pet? pet;
+  final bool openDetails;
 
-  const _PetEditorSheet({this.pet});
+  const _PetEditorSheet({this.pet, this.openDetails = false});
 
   @override
   State<_PetEditorSheet> createState() => _PetEditorSheetState();
@@ -43,6 +61,7 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
   DateTime? _born;
   String? _nameError;
   String? _chipError;
+  late bool _details;
   late final String _start;
 
   @override
@@ -59,6 +78,7 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
     _customGroup = pet?.customGroup;
     _customEmoji = pet?.customEmoji;
     _born = pet?.birthDate;
+    _details = widget.openDetails;
     _start = _signature();
   }
 
@@ -69,6 +89,13 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
     }
     super.dispose();
   }
+
+  int get _detailsFilled => [
+    _chip,
+    _registry,
+    _vet,
+    _phone,
+  ].where((c) => c.text.trim().isNotEmpty).length;
 
   String _signature() => <Object?>[
     _name.text.trim(),
@@ -103,6 +130,7 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
     setState(() {
       _nameError = name == null ? loc.familyNameRequired : null;
       _chipError = chipOk ? null : loc.petChipInvalid;
+      if (!chipOk) _details = true;
     });
     if (name == null || !chipOk || _typeBlocked) return;
     final base = widget.pet ?? const Pet(id: '', name: '');
@@ -127,7 +155,8 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
 
   Widget _field(
     TextEditingController controller,
-    String label, {
+    String label,
+    String hint, {
     TextInputType? keyboard,
     int max = 60,
     String? error,
@@ -146,7 +175,7 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
         decoration: AppInputDecorations.field(
           context,
           labelText: label,
-          hintText: label,
+          hintText: hint,
           showLabel: controller.text.isNotEmpty,
           errorText: error,
           prefixIcon: icon == null ? null : Icon(icon),
@@ -179,6 +208,7 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
             _field(
               _name,
               loc.familyNameLabel,
+              loc.petNameHint,
               max: Pet.maxName,
               error: _nameError,
               caps: TextCapitalization.words,
@@ -213,7 +243,7 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
                 ),
                 subtitle: Text(
                   born == null
-                      ? loc.leadNotSet
+                      ? loc.petBirthdayHint
                       : TravelText.date(context, born),
                 ),
                 trailing: born == null
@@ -226,39 +256,52 @@ class _PetEditorSheetState extends State<_PetEditorSheet> {
                 onTap: _pickBirthday,
               ),
             ),
-            _field(
-              _chip,
-              loc.petChipNumber,
-              keyboard: TextInputType.number,
-              max: 20,
-              error: _chipError,
-              icon: Icons.memory_rounded,
-              formatters: [
-                FilteringTextInputFormatter.allow(RegExp(r'[0-9 \-]')),
-              ],
-            ),
-            _field(
-              _registry,
-              loc.petChipRegistry,
-              max: Pet.maxRegistry,
-              icon: Icons.storage_rounded,
-              caps: TextCapitalization.words,
-            ),
-            _field(
-              _vet,
-              loc.petVetName,
-              max: Pet.maxVet,
-              icon: Icons.local_hospital_rounded,
-              caps: TextCapitalization.words,
-            ),
-            _field(
-              _phone,
-              loc.petVetPhone,
-              keyboard: TextInputType.phone,
-              max: Pet.maxPhone,
-              icon: Icons.call_rounded,
-              formatters: [
-                FilteringTextInputFormatter.allow(RegExp(r'[0-9+()\- ]')),
+            const SizedBox(height: 12),
+            EditorMoreDetails(
+              expanded: _details,
+              filledCount: _detailsFilled,
+              subtitle: loc.petMoreDetailsHint,
+              onToggle: (open) => setState(() => _details = open),
+              children: [
+                _field(
+                  _chip,
+                  loc.petChipNumber,
+                  loc.petChipHint,
+                  keyboard: TextInputType.number,
+                  max: 20,
+                  error: _chipError,
+                  icon: Icons.memory_rounded,
+                  formatters: [
+                    FilteringTextInputFormatter.allow(RegExp(r'[0-9 \-]')),
+                  ],
+                ),
+                _field(
+                  _registry,
+                  loc.petChipRegistry,
+                  loc.petRegistryHint,
+                  max: Pet.maxRegistry,
+                  icon: Icons.storage_rounded,
+                  caps: TextCapitalization.words,
+                ),
+                _field(
+                  _vet,
+                  loc.petVetName,
+                  loc.petVetHint,
+                  max: Pet.maxVet,
+                  icon: Icons.local_hospital_rounded,
+                  caps: TextCapitalization.words,
+                ),
+                _field(
+                  _phone,
+                  loc.petVetPhone,
+                  loc.petVetPhoneHint,
+                  keyboard: TextInputType.phone,
+                  max: Pet.maxPhone,
+                  icon: Icons.call_rounded,
+                  formatters: [
+                    FilteringTextInputFormatter.allow(RegExp(r'[0-9+()\- ]')),
+                  ],
+                ),
               ],
             ),
             const SizedBox(height: 18),
