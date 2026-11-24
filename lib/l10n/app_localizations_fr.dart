@@ -4914,7 +4914,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get assistantEmptyReply => 'Je n’ai pas trouvé de réponse. Essayez de poser la question autrement.';
 
   @override
-  String get assistantDraftReady => 'J’ai préparé ceci pour vous. Vérifiez-le et touchez Confirmer.';
+  String get assistantDraftReady =>
+      'Voici les détails. Touchez Confirmer pour les enregistrer.';
 
   @override
   String get assistantNewChat => 'Nouvelle conversation';
@@ -6680,6 +6681,31 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Suis-je prêt pour mon voyage : $place ?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Ajouter les vaccins de ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Ajouter la puce électronique de ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Ajouter l\'assurance animal de ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Ajouter un passeport pour ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Ensuite : ${step}. Dites oui pour le faire.';
   }
 
   @override
@@ -10380,7 +10406,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get talkNoVoice => 'Votre téléphone n\'a pas de voix pour cette langue : les réponses s\'affichent mais ne sont pas lues.';
 
   @override
-  String get talkNotDone => 'Cela n\'a pas abouti. Regardez la carte à l\'écran.';
+  String get talkNotDone =>
+      'Cela n\'a pas fonctionné. Vérifiez les détails à l\'écran.';
 
   @override
   String get talkReady => 'Je vous écoute.';

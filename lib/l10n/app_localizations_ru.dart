@@ -5012,7 +5012,8 @@ class AppLocalizationsRu extends AppLocalizations {
   String get assistantEmptyReply => 'Я не нашёл ответ. Попробуйте спросить по-другому.';
 
   @override
-  String get assistantDraftReady => 'Я подготовил это для вас. Проверьте и нажмите Подтвердить.';
+  String get assistantDraftReady =>
+      'Вот данные. Нажмите Подтвердить, чтобы сохранить.';
 
   @override
   String get assistantNewChat => 'Новый чат';
@@ -6809,6 +6810,31 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Готов ли я к поездке: $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Добавить прививки для ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Добавить микрочип для ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Добавить страховку питомца для ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Добавить паспорт для ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Дальше: ${step}. Скажите да, и я сделаю.';
   }
 
   @override
@@ -10548,7 +10574,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get talkNoVoice => 'В телефоне нет голоса для этого языка, поэтому ответы показываются, но не читаются вслух.';
 
   @override
-  String get talkNotDone => 'Не получилось. Проверьте карточку на экране.';
+  String get talkNotDone => 'Не получилось. Проверьте данные на экране.';
 
   @override
   String get talkReady => 'Я слушаю.';

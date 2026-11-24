@@ -4909,7 +4909,8 @@ class AppLocalizationsDa extends AppLocalizations {
   String get assistantEmptyReply => 'Jeg kunne ikke finde et svar. Prøv at spørge på en anden måde.';
 
   @override
-  String get assistantDraftReady => 'Jeg har forberedt dette til dig. Tjek det, og tryk på Bekræft.';
+  String get assistantDraftReady =>
+      'Her er detaljerne. Tryk på Bekræft for at gemme dem.';
 
   @override
   String get assistantNewChat => 'Ny samtale';
@@ -6672,6 +6673,31 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Er jeg klar til min rejse til $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Tilføj vaccinationer for ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Tilføj mikrochippen for ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Tilføj kæledyrsforsikring for ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Tilføj et pas for ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Næste: ${step}. Sig ja for at gøre det.';
   }
 
   @override
@@ -10370,7 +10396,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get talkNoVoice => 'Din telefon har ingen stemme til dette sprog, så svar vises, men læses ikke op.';
 
   @override
-  String get talkNotDone => 'Det gik ikke igennem. Tjek kortet på skærmen.';
+  String get talkNotDone => 'Det gik ikke igennem. Tjek detaljerne på skærmen.';
 
   @override
   String get talkReady => 'Jeg lytter.';

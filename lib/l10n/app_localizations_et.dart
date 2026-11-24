@@ -4909,7 +4909,8 @@ class AppLocalizationsEt extends AppLocalizations {
   String get assistantEmptyReply => 'Ma ei leidnud vastust. Proovi küsida teisiti.';
 
   @override
-  String get assistantDraftReady => 'Valmistasin selle sulle ette. Vaata üle ja puuduta Kinnita.';
+  String get assistantDraftReady =>
+      'Siin on üksikasjad. Salvestamiseks puuduta Kinnita.';
 
   @override
   String get assistantNewChat => 'Uus vestlus';
@@ -6672,6 +6673,31 @@ class AppLocalizationsEt extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Kas olen reisiks valmis: $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Lisa vaktsineerimised: ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Lisa mikrokiip: ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Lisa lemmikloomakindlustus: ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Lisa pass: ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Järgmiseks: ${step}. Ütle jah, et seda teha.';
   }
 
   @override
@@ -10370,7 +10396,8 @@ class AppLocalizationsEt extends AppLocalizations {
   String get talkNoVoice => 'Telefonil pole selle keele häält, seega vastused kuvatakse, kuid neid ei loeta ette.';
 
   @override
-  String get talkNotDone => 'See ei õnnestunud. Vaata ekraanil olevat kaarti.';
+  String get talkNotDone =>
+      'See ei õnnestunud. Vaata ekraanil olevaid üksikasju.';
 
   @override
   String get talkReady => 'Kuulan.';

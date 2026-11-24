@@ -4909,7 +4909,8 @@ class AppLocalizationsNl extends AppLocalizations {
   String get assistantEmptyReply => 'Ik kon geen antwoord vinden. Probeer het anders te vragen.';
 
   @override
-  String get assistantDraftReady => 'Ik heb dit voor je voorbereid. Controleer het en tik op Bevestigen.';
+  String get assistantDraftReady =>
+      'Hier zijn de gegevens. Tik op Bevestigen om ze op te slaan.';
 
   @override
   String get assistantNewChat => 'Nieuwe chat';
@@ -6672,6 +6673,31 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Ben ik klaar voor mijn reis naar $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Vaccinaties voor ${name} toevoegen';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Microchip voor ${name} toevoegen';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Dierenverzekering voor ${name} toevoegen';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Paspoort voor ${name} toevoegen';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Volgende: ${step}. Zeg ja om het te doen.';
   }
 
   @override
@@ -10370,7 +10396,8 @@ class AppLocalizationsNl extends AppLocalizations {
   String get talkNoVoice => 'Je telefoon heeft geen stem voor deze taal, dus antwoorden worden getoond maar niet voorgelezen.';
 
   @override
-  String get talkNotDone => 'Dat is niet gelukt. Bekijk de kaart op het scherm.';
+  String get talkNotDone =>
+      'Dat is niet gelukt. Controleer de gegevens op het scherm.';
 
   @override
   String get talkReady => 'Ik luister.';

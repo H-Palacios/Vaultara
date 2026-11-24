@@ -1646,7 +1646,7 @@
   "assistantPremiumBody": "Passez à Premium pour poser des questions sur vos enregistrements, voyages et réglages, et faire des modifications avec des mots simples.",
   "assistantSeePlans": "Voir les formules",
   "assistantEmptyReply": "Je n’ai pas trouvé de réponse. Essayez de poser la question autrement.",
-  "assistantDraftReady": "J’ai préparé ceci pour vous. Vérifiez-le et touchez Confirmer.",
+  "assistantDraftReady": "Voici les détails. Touchez Confirmer pour les enregistrer.",
   "assistantNewChat": "Nouvelle conversation",
   "assistantPrivacyNote": "Les réponses utilisent l’IA. Votre question et seulement les détails d’enregistrement nécessaires pour y répondre sont envoyés à notre fournisseur d’IA. Les notes des enregistrements verrouillés ne sont jamais envoyées. Rien n’est enregistré tant que vous n’avez pas confirmé.",
   "assistantActionAddTitle": "Nouvel enregistrement",
@@ -2122,6 +2122,11 @@
   "assistantSuggestRenew": "Aide-moi à renouveler {name}",
   "assistantSuggestExpired": "{name} a expiré. Que dois-je faire ?",
   "assistantSuggestTripReady": "Suis-je prêt pour mon voyage : {place} ?",
+  "assistantNextPetVaccines": "Ajouter les vaccins de {name}",
+  "assistantNextPetChip": "Ajouter la puce électronique de {name}",
+  "assistantNextPetInsurance": "Ajouter l'assurance animal de {name}",
+  "assistantNextPersonPassport": "Ajouter un passeport pour {name}",
+  "talkNextStep": "Ensuite : {step}. Dites oui pour le faire.",
   "assistantSuggestPlanTrip": "Aide-moi à planifier un voyage",
   "assistantFieldCountryCount": "{count, plural, =1{Pays} other{Pays}}",
   "assistantSettingTitle": "Modifier un réglage",
@@ -4037,7 +4042,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Cela n'a pas abouti. Regardez la carte à l'écran.",
+  "talkNotDone": "Cela n'a pas fonctionné. Vérifiez les détails à l'écran.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

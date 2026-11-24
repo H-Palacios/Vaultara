@@ -1665,7 +1665,7 @@
   "assistantPremiumBody": "Nadogradite da biste pitali o svojim zapisima, putovanjima i postavkama i pravili promjene običnim riječima.",
   "assistantSeePlans": "Pogledaj pakete",
   "assistantEmptyReply": "Odgovor nije pronađen. Pokušajte pitati na drugi način.",
-  "assistantDraftReady": "Ovo je pripremljeno za vas. Provjerite i dodirnite Potvrdi.",
+  "assistantDraftReady": "Evo detalja. Dodirnite Potvrdi da ih sačuvate.",
   "assistantNewChat": "Novi razgovor",
   "assistantPrivacyNote": "Odgovori koriste AI. Vaše pitanje i samo podaci o zapisima potrebni za odgovor šalju se našem AI pružatelju. Bilješke zaključanih zapisa se nikada ne šalju. Ništa se ne sprema dok ne potvrdite.",
   "assistantActionAddTitle": "Novi zapis",
@@ -2141,6 +2141,11 @@
   "assistantSuggestRenew": "Pomozi mi da obnovim {name}",
   "assistantSuggestExpired": "{name} je istekao. Šta da radim?",
   "assistantSuggestTripReady": "Jesam li spreman za putovanje u {place}?",
+  "assistantNextPetVaccines": "Dodajte vakcinacije za {name}",
+  "assistantNextPetChip": "Dodajte mikročip za {name}",
+  "assistantNextPetInsurance": "Dodajte osiguranje ljubimca za {name}",
+  "assistantNextPersonPassport": "Dodajte pasoš za {name}",
+  "talkNextStep": "Sljedeće: {step}. Recite da da to uradite.",
   "assistantSuggestPlanTrip": "Pomozi mi da isplaniram putovanje",
   "assistantFieldCountryCount": "{count, plural, =1{Država} other{Države}}",
   "assistantSettingTitle": "Promijeni postavku",
@@ -4056,7 +4061,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Nije uspjelo. Provjerite karticu na ekranu.",
+  "talkNotDone": "To nije uspjelo. Provjerite detalje na ekranu.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

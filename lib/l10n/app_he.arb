@@ -1639,7 +1639,7 @@
   "assistantPremiumBody": "שדרג לפרימיום כדי לשאול על הרשומות, הנסיעות וההגדרות שלך ולבצע שינויים במילים פשוטות.",
   "assistantSeePlans": "לצפייה בתוכניות",
   "assistantEmptyReply": "לא מצאתי תשובה. נסה לשאול בדרך אחרת.",
-  "assistantDraftReady": "הכנתי את זה בשבילך. בדוק ולחץ על אשר.",
+  "assistantDraftReady": "הנה הפרטים. הקישו על אשר כדי לשמור אותם.",
   "assistantNewChat": "צ'אט חדש",
   "assistantPrivacyNote": "התשובות משתמשות בבינה מלאכותית. השאלה שלך ופרטי הרשומות הנחוצים למענה בלבד נשלחים לספק הבינה המלאכותית שלנו. הערות של רשומות נעולות אף פעם לא נשלחות. שום דבר לא נשמר עד שתאשר.",
   "assistantActionAddTitle": "רשומה חדשה",
@@ -2115,6 +2115,11 @@
   "assistantSuggestRenew": "עזור לי לחדש את {name}",
   "assistantSuggestExpired": "פג התוקף של {name}. מה עליי לעשות?",
   "assistantSuggestTripReady": "האם אני מוכן לנסיעה ל־{place}?",
+  "assistantNextPetVaccines": "הוספת חיסונים עבור {name}",
+  "assistantNextPetChip": "הוספת השבב עבור {name}",
+  "assistantNextPetInsurance": "הוספת ביטוח חיית מחמד עבור {name}",
+  "assistantNextPersonPassport": "הוספת דרכון עבור {name}",
+  "talkNextStep": "הבא: {step}. אמרו כן כדי לבצע.",
   "assistantSuggestPlanTrip": "עזור לי לתכנן נסיעה",
   "assistantFieldCountryCount": "{count, plural, =1{מדינה} other{מדינות}}",
   "assistantSettingTitle": "שינוי הגדרה",
@@ -4030,7 +4035,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "זה לא עבר. בדקו את הכרטיס במסך.",
+  "talkNotDone": "זה לא הצליח. בדקו את הפרטים במסך.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

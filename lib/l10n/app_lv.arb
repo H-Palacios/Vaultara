@@ -1652,7 +1652,7 @@
   "assistantPremiumBody": "Jauniniet plānu, lai jautātu par saviem ierakstiem, ceļojumiem un iestatījumiem un veiktu izmaiņas vienkāršiem vārdiem.",
   "assistantSeePlans": "Skatīt plānus",
   "assistantEmptyReply": "Neizdevās atrast atbildi. Pamēģiniet jautāt citādi.",
-  "assistantDraftReady": "Es to sagatavoju jums. Pārbaudiet un pieskarieties Apstiprināt.",
+  "assistantDraftReady": "Lūk, informācija. Pieskarieties Apstiprināt, lai to saglabātu.",
   "assistantNewChat": "Jauna saruna",
   "assistantPrivacyNote": "Atbildēs tiek izmantots mākslīgais intelekts. Mūsu MI pakalpojumu sniedzējam tiek nosūtīts jūsu jautājums un tikai tās ieraksta detaļas, kas vajadzīgas atbildei. Bloķēto ierakstu piezīmes netiek sūtītas nekad. Nekas netiek saglabāts, kamēr jūs to neapstiprināsiet.",
   "assistantActionAddTitle": "Jauns ieraksts",
@@ -2128,6 +2128,11 @@
   "assistantSuggestRenew": "Palīdzi man atjaunot: {name}",
   "assistantSuggestExpired": "{name} derīgums ir beidzies. Ko man darīt?",
   "assistantSuggestTripReady": "Vai esmu gatavs ceļojumam: {place}?",
+  "assistantNextPetVaccines": "Pievienot vakcinācijas: {name}",
+  "assistantNextPetChip": "Pievienot mikročipu: {name}",
+  "assistantNextPetInsurance": "Pievienot mājdzīvnieka apdrošināšanu: {name}",
+  "assistantNextPersonPassport": "Pievienot pasi: {name}",
+  "talkNextStep": "Tālāk: {step}. Sakiet jā, lai to izdarītu.",
   "assistantSuggestPlanTrip": "Palīdzi man plānot ceļojumu",
   "assistantFieldCountryCount": "{count, plural, =1{Valsts} other{Valstis}}",
   "assistantSettingTitle": "Mainīt iestatījumu",
@@ -4043,7 +4048,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Neizdevās. Pārbaudiet karti ekrānā.",
+  "talkNotDone": "Tas neizdevās. Pārbaudiet informāciju ekrānā.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

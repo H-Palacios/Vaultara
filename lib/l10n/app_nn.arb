@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "Oppgrader for å spørje om oppføringane, reisene og innstillingane dine og gjere endringar med enkle ord.",
   "assistantSeePlans": "Sjå abonnement",
   "assistantEmptyReply": "Eg fann ikkje noko svar. Prøv å spørje på ein annan måte.",
-  "assistantDraftReady": "Eg har førebudd dette til deg. Sjekk det og trykk på Stadfest.",
+  "assistantDraftReady": "Her er detaljane. Trykk på Stadfest for å lagre dei.",
   "assistantNewChat": "Ny samtale",
   "assistantPrivacyNote": "Svara bruker KI. Spørsmålet ditt og berre dei detaljane frå oppføringane som trengst for å svare, blir sende til KI-leverandøren vår. Notat frå låste oppføringar blir aldri sende. Ingenting blir lagra før du stadfestar.",
   "assistantActionAddTitle": "Ny oppføring",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "Hjelp meg å fornye {name}",
   "assistantSuggestExpired": "{name} har gått ut. Kva gjer eg?",
   "assistantSuggestTripReady": "Er eg klar for reisa til {place}?",
+  "assistantNextPetVaccines": "Legg til vaksinar for {name}",
+  "assistantNextPetChip": "Legg til mikrobrikka for {name}",
+  "assistantNextPetInsurance": "Legg til dyreforsikring for {name}",
+  "assistantNextPersonPassport": "Legg til eit pass for {name}",
+  "talkNextStep": "Neste: {step}. Sei ja for å gjere det.",
   "assistantSuggestPlanTrip": "Hjelp meg å planleggje ei reise",
   "assistantFieldCountryCount": "{count, plural, =1{Land} other{Land}}",
   "assistantSettingTitle": "Endra ei innstilling",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Det gjekk ikkje. Sjekk kortet på skjermen.",
+  "talkNotDone": "Det gjekk ikkje gjennom. Sjekk detaljane på skjermen.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

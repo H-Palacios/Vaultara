@@ -4996,7 +4996,8 @@ class AppLocalizationsSk extends AppLocalizations {
   String get assistantEmptyReply => 'Nenašla som odpoveď. Skúste sa opýtať inak.';
 
   @override
-  String get assistantDraftReady => 'Pripravila som to pre vás. Skontrolujte to a ťuknite na Potvrdiť.';
+  String get assistantDraftReady =>
+      'Tu sú podrobnosti. Klepnutím na Potvrdiť ich uložíte.';
 
   @override
   String get assistantNewChat => 'Nový chat';
@@ -6793,6 +6794,31 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Som pripravený na cestu do $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Pridať očkovania pre ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Pridať mikročip pre ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Pridať poistenie zvieraťa pre ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Pridať pas pre ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Ďalej: ${step}. Povedzte áno a urobím to.';
   }
 
   @override
@@ -10526,7 +10552,8 @@ class AppLocalizationsSk extends AppLocalizations {
   String get talkNoVoice => 'Telefón nemá hlas pre tento jazyk, takže odpovede sa zobrazia, ale neprečítajú.';
 
   @override
-  String get talkNotDone => 'Nepodarilo sa. Skontrolujte kartu na obrazovke.';
+  String get talkNotDone =>
+      'To sa nepodarilo. Skontrolujte podrobnosti na obrazovke.';
 
   @override
   String get talkReady => 'Počúvam.';

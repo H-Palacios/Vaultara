@@ -1384,7 +1384,7 @@
   "assistantPremiumBody": "Yozuvlaringiz, sayohatlaringiz va sozlamalaringiz haqida soʻrash hamda oddiy soʻzlar bilan oʻzgartirish uchun Premiumga oʻting.",
   "assistantSeePlans": "Tariflarni koʻrish",
   "assistantEmptyReply": "Javob topa olmadim. Boshqacha qilib soʻrab koʻring.",
-  "assistantDraftReady": "Buni siz uchun tayyorladim. Tekshiring va Tasdiqlash tugmasini bosing.",
+  "assistantDraftReady": "Mana tafsilotlar. Saqlash uchun Tasdiqlashni bosing.",
   "assistantNewChat": "Yangi suhbat",
   "assistantPrivacyNote": "Javoblar sunʼiy intellektdan foydalanadi. Savolingiz va javob berish uchun zarur boʻlgan yozuv maʼlumotlarigina sunʼiy intellekt provayderimizga yuboriladi. Qulflangan yozuvlarning qaydlari hech qachon yuborilmaydi. Siz tasdiqlamaguningizcha hech narsa saqlanmaydi.",
   "assistantActionAddTitle": "Yangi yozuv",
@@ -1860,6 +1860,11 @@
   "assistantSuggestRenew": "{name} yangilashga yordam ber",
   "assistantSuggestExpired": "{name} muddati tugadi. Nima qilay?",
   "assistantSuggestTripReady": "{place} sayohatiga tayyormanmi?",
+  "assistantNextPetVaccines": "{name} uchun emlashlarni qo‘shish",
+  "assistantNextPetChip": "{name} uchun mikrochipni qo‘shish",
+  "assistantNextPetInsurance": "{name} uchun uy hayvoni sug‘urtasini qo‘shish",
+  "assistantNextPersonPassport": "{name} uchun pasport qo‘shish",
+  "talkNextStep": "Keyingisi: {step}. Bajarish uchun ha deng.",
   "assistantSuggestPlanTrip": "Sayohat rejalashtirishga yordam ber",
   "assistantFieldCountryCount": "{count, plural, =1{Davlat} other{Davlatlar}}",
   "assistantSettingTitle": "Sozlamani o'zgartirish",
@@ -3775,7 +3780,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Bo‘lmadi. Ekrandagi kartani tekshiring.",
+  "talkNotDone": "Bu amalga oshmadi. Ekrandagi tafsilotlarni tekshiring.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

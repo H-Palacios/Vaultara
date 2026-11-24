@@ -4876,7 +4876,8 @@ class AppLocalizationsIg extends AppLocalizations {
   String get assistantEmptyReply => 'Achọtaghị m azịza. Gbalịa ịjụ n’ụzọ ọzọ.';
 
   @override
-  String get assistantDraftReady => 'Ekwadebere m nke a maka gị. Lelee ya wee pịa Kwado.';
+  String get assistantDraftReady =>
+      'Nke a bụ nkọwa ya. Pịa Kwado iji chekwaa ha.';
 
   @override
   String get assistantNewChat => 'Mkparịta ụka ọhụrụ';
@@ -6622,6 +6623,31 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Adị m njikere maka njem m gaa $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Tinye ọgwụ mgbochi maka ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Tinye microchip maka ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Tinye mkpuchi anụ ụlọ maka ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Tinye paspọtụ maka ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Ọzọ: ${step}. Kwuo ee ka e mee ya.';
   }
 
   @override
@@ -10313,7 +10339,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get talkNoVoice => 'Ekwentị gị enweghị olu maka asụsụ a, ya mere a na-egosi azịza mana a naghị agụpụta ha.';
 
   @override
-  String get talkNotDone => 'Ọ gaghị. Lelee kaadị dị na ihuenyo.';
+  String get talkNotDone => 'Nke ahụ agaghị. Lelee nkọwa dị na ihuenyo.';
 
   @override
   String get talkReady => 'Ana m ege ntị.';

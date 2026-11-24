@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "உங்கள் பதிவுகள், பயணங்கள், அமைப்புகள் பற்றிக் கேட்கவும் எளிய சொற்களில் மாற்றங்கள் செய்யவும் மேம்படுத்துங்கள்.",
   "assistantSeePlans": "திட்டங்களைப் பார்",
   "assistantEmptyReply": "என்னால் பதிலைக் கண்டுபிடிக்க முடியவில்லை. வேறு விதமாகக் கேட்டுப் பாருங்கள்.",
-  "assistantDraftReady": "இதை உங்களுக்காகத் தயார் செய்தேன். சரிபார்த்து உறுதிப்படுத்து என்பதைத் தட்டவும்.",
+  "assistantDraftReady": "இதோ விவரங்கள். சேமிக்க உறுதிப்படுத்து என்பதைத் தட்டவும்.",
   "assistantNewChat": "புதிய அரட்டை",
   "assistantPrivacyNote": "பதில்கள் AI-ஐப் பயன்படுத்துகின்றன. உங்கள் கேள்வியும், பதிலளிக்கத் தேவையான பதிவு விவரங்களும் மட்டுமே எங்கள் AI வழங்குநருக்கு அனுப்பப்படும். பூட்டிய பதிவுகளின் குறிப்புகள் ஒருபோதும் அனுப்பப்படாது. நீங்கள் உறுதிப்படுத்தும் வரை எதுவும் சேமிக்கப்படாது.",
   "assistantActionAddTitle": "புதிய பதிவு",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "{name} புதுப்பிக்க உதவு",
   "assistantSuggestExpired": "{name} காலாவதியானது. நான் என்ன செய்வது?",
   "assistantSuggestTripReady": "{place} பயணத்திற்கு நான் தயாரா?",
+  "assistantNextPetVaccines": "{name}க்கு தடுப்பூசிகளைச் சேர்க்கவும்",
+  "assistantNextPetChip": "{name}க்கு மைக்ரோசிப்பைச் சேர்க்கவும்",
+  "assistantNextPetInsurance": "{name}க்கு செல்லப்பிராணி காப்பீட்டைச் சேர்க்கவும்",
+  "assistantNextPersonPassport": "{name}க்கு கடவுச்சீட்டைச் சேர்க்கவும்",
+  "talkNextStep": "அடுத்து: {step}. செய்ய ஆம் என்று சொல்லுங்கள்.",
   "assistantSuggestPlanTrip": "பயணம் திட்டமிட உதவு",
   "assistantFieldCountryCount": "{count, plural, =1{நாடு} other{நாடுகள்}}",
   "assistantSettingTitle": "அமைப்பை மாற்று",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "அது நடக்கவில்லை. திரையில் உள்ள அட்டையைப் பாருங்கள்.",
+  "talkNotDone": "அது நடக்கவில்லை. திரையில் உள்ள விவரங்களைப் பார்க்கவும்.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

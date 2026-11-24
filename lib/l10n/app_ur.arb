@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "اپنے ریکارڈز، سفر اور سیٹنگز کے بارے میں پوچھنے اور آسان الفاظ میں تبدیلیاں کرنے کے لیے اپ گریڈ کریں۔",
   "assistantSeePlans": "پلانز دیکھیں",
   "assistantEmptyReply": "کوئی جواب نہیں ملا۔ کسی اور طریقے سے پوچھ کر دیکھیں۔",
-  "assistantDraftReady": "یہ آپ کے لیے تیار کیا گیا ہے۔ اسے جانچیں اور تصدیق کریں پر ٹیپ کریں۔",
+  "assistantDraftReady": "یہ رہی تفصیلات۔ محفوظ کرنے کے لیے تصدیق کریں پر ٹیپ کریں۔",
   "assistantNewChat": "نئی گفتگو",
   "assistantPrivacyNote": "جوابات AI استعمال کرتے ہیں۔ آپ کا سوال اور جواب کے لیے درکار صرف ریکارڈ کی تفصیلات ہمارے AI فراہم کنندہ کو بھیجی جاتی ہیں۔ مقفل ریکارڈز کے نوٹس کبھی نہیں بھیجے جاتے۔ آپ کے تصدیق کرنے تک کچھ محفوظ نہیں ہوتا۔",
   "assistantActionAddTitle": "نیا ریکارڈ",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "{name} کی تجدید میں مدد کریں",
   "assistantSuggestExpired": "{name} کی میعاد ختم ہو گئی ہے۔ میں کیا کروں؟",
   "assistantSuggestTripReady": "کیا میں {place} کے سفر کے لیے تیار ہوں؟",
+  "assistantNextPetVaccines": "{name} کے لیے ویکسین شامل کریں",
+  "assistantNextPetChip": "{name} کے لیے مائیکروچپ شامل کریں",
+  "assistantNextPetInsurance": "{name} کے لیے پالتو جانور کا بیمہ شامل کریں",
+  "assistantNextPersonPassport": "{name} کے لیے پاسپورٹ شامل کریں",
+  "talkNextStep": "اگلا: {step}۔ کرنے کے لیے ہاں کہیں۔",
   "assistantSuggestPlanTrip": "سفر کی منصوبہ بندی میں مدد کریں",
   "assistantFieldCountryCount": "{count, plural, =1{ملک} other{ممالک}}",
   "assistantSettingTitle": "ترتیب بدلیں",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "یہ نہیں ہو سکا۔ اسکرین پر کارڈ دیکھیں۔",
+  "talkNotDone": "یہ نہیں ہو سکا۔ اسکرین پر تفصیلات دیکھیں۔",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

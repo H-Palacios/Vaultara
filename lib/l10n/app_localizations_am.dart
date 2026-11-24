@@ -4909,7 +4909,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get assistantEmptyReply => 'መልስ ማግኘት አልቻልኩም። በሌላ መንገድ ለመጠየቅ ይሞክሩ።';
 
   @override
-  String get assistantDraftReady => 'ይህንን አዘጋጅቼልዎታለሁ። ያረጋግጡት እና አረጋግጥ ይንኩ።';
+  String get assistantDraftReady => 'ዝርዝሩ ይኸውና። ለማስቀመጥ አረጋግጥን ይንኩ።';
 
   @override
   String get assistantNewChat => 'አዲስ ውይይት';
@@ -6672,6 +6672,31 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'ወደ $place ለምሄደው ጉዞ ዝግጁ ነኝ?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'ለ${name} ክትባቶችን ያክሉ';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'ለ${name} ማይክሮቺፑን ያክሉ';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'ለ${name} የቤት እንስሳ ኢንሹራንስ ያክሉ';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'ለ${name} ፓስፖርት ያክሉ';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'ቀጣይ፦ ${step}። ለማድረግ አዎ ይበሉ።';
   }
 
   @override
@@ -10363,7 +10388,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get talkNoVoice => 'ስልክዎ ለዚህ ቋንቋ ድምፅ የለውም፣ ስለዚህ መልሶች ይታያሉ ግን አይነበቡም።';
 
   @override
-  String get talkNotDone => 'አልተሳካም። በማያ ገጹ ላይ ያለውን ካርድ ይመልከቱ።';
+  String get talkNotDone => 'አልተሳካም። በማያ ገጹ ላይ ያለውን ዝርዝር ይመልከቱ።';
 
   @override
   String get talkReady => 'እያዳመጥኩ ነው።';

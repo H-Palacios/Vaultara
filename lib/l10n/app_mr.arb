@@ -1384,7 +1384,7 @@
   "assistantPremiumBody": "तुमच्या नोंदी, प्रवास आणि सेटिंग्जबद्दल विचारण्यासाठी आणि सोप्या शब्दांत बदल करण्यासाठी Premium वर अपग्रेड करा.",
   "assistantSeePlans": "प्लॅन पाहा",
   "assistantEmptyReply": "मला उत्तर सापडले नाही. वेगळ्या पद्धतीने विचारून पाहा.",
-  "assistantDraftReady": "हे तुमच्यासाठी तयार केले आहे. तपासा आणि पुष्टी करा वर टॅप करा.",
+  "assistantDraftReady": "हे तपशील आहेत. जतन करण्यासाठी पुष्टी करा वर टॅप करा.",
   "assistantNewChat": "नवीन चॅट",
   "assistantPrivacyNote": "उत्तरे AI वापरतात. तुमचा प्रश्न आणि उत्तर देण्यासाठी आवश्यक असलेले नोंदीचे तपशीलच आमच्या AI पुरवठादाराला पाठवले जातात. लॉक केलेल्या नोंदींच्या टिपा कधीही पाठवल्या जात नाहीत. तुम्ही पुष्टी करेपर्यंत काहीही सेव्ह केले जात नाही.",
   "assistantActionAddTitle": "नवीन नोंद",
@@ -1860,6 +1860,11 @@
   "assistantSuggestRenew": "{name} नूतनीकरणासाठी मदत करा",
   "assistantSuggestExpired": "{name} ची मुदत संपली आहे. मी काय करू?",
   "assistantSuggestTripReady": "{place} प्रवासासाठी मी तयार आहे का?",
+  "assistantNextPetVaccines": "{name} साठी लसी जोडा",
+  "assistantNextPetChip": "{name} साठी मायक्रोचिप जोडा",
+  "assistantNextPetInsurance": "{name} साठी पाळीव प्राणी विमा जोडा",
+  "assistantNextPersonPassport": "{name} साठी पासपोर्ट जोडा",
+  "talkNextStep": "पुढे: {step}. करण्यासाठी हो म्हणा.",
   "assistantSuggestPlanTrip": "प्रवासाची योजना करायला मदत करा",
   "assistantFieldCountryCount": "{count, plural, =1{देश} other{देश}}",
   "assistantSettingTitle": "सेटिंग बदला",
@@ -3775,7 +3780,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "ते झाले नाही. स्क्रीनवरील कार्ड पाहा.",
+  "talkNotDone": "ते झाले नाही. स्क्रीनवरील तपशील तपासा.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

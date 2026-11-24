@@ -4908,7 +4908,8 @@ class AppLocalizationsSi extends AppLocalizations {
   String get assistantEmptyReply => 'මට පිළිතුරක් සොයාගත නොහැකි විය. වෙනත් ආකාරයකින් අසා බලන්න.';
 
   @override
-  String get assistantDraftReady => 'මම මෙය ඔබට සකස් කළා. එය පරීක්ෂා කර තහවුරු කරන්න ඔබන්න.';
+  String get assistantDraftReady =>
+      'මෙන්න විස්තර. සුරැකීමට තහවුරු කරන්න තට්ටු කරන්න.';
 
   @override
   String get assistantNewChat => 'නව සංවාදය';
@@ -6671,6 +6672,31 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return '$place ගමනට මම සූදානම්ද?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return '${name} සඳහා එන්නත් එක් කරන්න';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return '${name} සඳහා මයික්‍රොචිප් එක් කරන්න';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return '${name} සඳහා සුරතල් සත්ව රක්ෂණය එක් කරන්න';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return '${name} සඳහා ගමන් බලපත්‍රයක් එක් කරන්න';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'ඊළඟට: ${step}. එය කිරීමට ඔව් කියන්න.';
   }
 
   @override
@@ -10364,7 +10390,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String get talkNoVoice => 'ඔබේ දුරකථනයේ මෙම භාෂාවට හඬක් නැත, එබැවින් පිළිතුරු පෙන්වයි නමුත් කියවන්නේ නැත.';
 
   @override
-  String get talkNotDone => 'එය සිදු නොවීය. තිරයේ කාඩ්පත බලන්න.';
+  String get talkNotDone => 'එය සාර්ථක නොවීය. තිරයේ ඇති විස්තර පරීක්ෂා කරන්න.';
 
   @override
   String get talkReady => 'මම සවන් දෙනවා.';

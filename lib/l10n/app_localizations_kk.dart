@@ -4909,7 +4909,8 @@ class AppLocalizationsKk extends AppLocalizations {
   String get assistantEmptyReply => 'Жауап таба алмадым. Басқаша сұрап көріңіз.';
 
   @override
-  String get assistantDraftReady => 'Мұны сізге арнап дайындадым. Тексеріп, Растау түймесін басыңыз.';
+  String get assistantDraftReady =>
+      'Мәліметтер осында. Сақтау үшін Растау түймесін түртіңіз.';
 
   @override
   String get assistantNewChat => 'Жаңа чат';
@@ -6672,6 +6673,31 @@ class AppLocalizationsKk extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return '$place сапарына дайынмын ба?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return '${name} үшін екпелерді қосу';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return '${name} үшін микрочипті қосу';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return '${name} үшін үй жануарын сақтандыруды қосу';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return '${name} үшін төлқұжат қосу';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Келесі: ${step}. Орындау үшін иә деңіз.';
   }
 
   @override
@@ -10364,7 +10390,8 @@ class AppLocalizationsKk extends AppLocalizations {
   String get talkNoVoice => 'Телефоныңызда бұл тілге дауыс жоқ, сондықтан жауаптар көрсетіледі, бірақ оқылмайды.';
 
   @override
-  String get talkNotDone => 'Болмады. Экрандағы картаны тексеріңіз.';
+  String get talkNotDone =>
+      'Бұл орындалмады. Экрандағы мәліметтерді тексеріңіз.';
 
   @override
   String get talkReady => 'Тыңдап тұрмын.';

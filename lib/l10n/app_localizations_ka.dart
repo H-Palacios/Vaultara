@@ -4909,7 +4909,8 @@ class AppLocalizationsKa extends AppLocalizations {
   String get assistantEmptyReply => 'პასუხი ვერ ვიპოვე. სცადეთ სხვანაირად ჰკითხოთ.';
 
   @override
-  String get assistantDraftReady => 'ეს თქვენთვის მოვამზადე. შეამოწმეთ და დააჭირეთ დადასტურებას.';
+  String get assistantDraftReady =>
+      'აი დეტალები. შესანახად შეეხეთ დადასტურებას.';
 
   @override
   String get assistantNewChat => 'ახალი ჩატი';
@@ -6672,6 +6673,31 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'მზად ვარ მოგზაურობისთვის: $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'დაამატეთ ვაქცინაციები: ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'დაამატეთ მიკროჩიპი: ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'დაამატეთ შინაური ცხოველის დაზღვევა: ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'დაამატეთ პასპორტი: ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'შემდეგი: ${step}. გასაკეთებლად თქვით დიახ.';
   }
 
   @override
@@ -10365,7 +10391,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get talkNoVoice => 'თქვენს ტელეფონს ამ ენის ხმა არ აქვს, ამიტომ პასუხები ჩანს, მაგრამ არ იკითხება.';
 
   @override
-  String get talkNotDone => 'ვერ მოხერხდა. შეამოწმეთ ბარათი ეკრანზე.';
+  String get talkNotDone => 'ვერ შესრულდა. შეამოწმეთ დეტალები ეკრანზე.';
 
   @override
   String get talkReady => 'გისმენთ.';

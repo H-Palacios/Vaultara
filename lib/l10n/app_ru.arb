@@ -1609,7 +1609,7 @@
   "assistantPremiumBody": "Перейдите на платный план, чтобы спрашивать о своих записях, поездках и настройках и вносить изменения простыми словами.",
   "assistantSeePlans": "Посмотреть планы",
   "assistantEmptyReply": "Я не нашёл ответ. Попробуйте спросить по-другому.",
-  "assistantDraftReady": "Я подготовил это для вас. Проверьте и нажмите Подтвердить.",
+  "assistantDraftReady": "Вот данные. Нажмите Подтвердить, чтобы сохранить.",
   "assistantNewChat": "Новый чат",
   "assistantPrivacyNote": "Ответы создаёт ИИ. Ваш вопрос и только те данные записей, которые нужны для ответа, отправляются нашему поставщику ИИ. Заметки заблокированных записей не отправляются никогда. Ничего не сохраняется, пока вы не подтвердите.",
   "assistantActionAddTitle": "Новая запись",
@@ -2085,6 +2085,11 @@
   "assistantSuggestRenew": "Помоги продлить «{name}»",
   "assistantSuggestExpired": "Срок «{name}» истёк. Что делать?",
   "assistantSuggestTripReady": "Готов ли я к поездке: {place}?",
+  "assistantNextPetVaccines": "Добавить прививки для {name}",
+  "assistantNextPetChip": "Добавить микрочип для {name}",
+  "assistantNextPetInsurance": "Добавить страховку питомца для {name}",
+  "assistantNextPersonPassport": "Добавить паспорт для {name}",
+  "talkNextStep": "Дальше: {step}. Скажите да, и я сделаю.",
   "assistantSuggestPlanTrip": "Помоги спланировать поездку",
   "assistantFieldCountryCount": "{count, plural, =1{Страна} other{Страны}}",
   "assistantSettingTitle": "Изменить настройку",
@@ -4000,7 +4005,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Не получилось. Проверьте карточку на экране.",
+  "talkNotDone": "Не получилось. Проверьте данные на экране.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

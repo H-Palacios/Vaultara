@@ -1799,7 +1799,7 @@
   "assistantPremiumBody": "Uuenda Premiumile, et küsida oma kirjete, reiside ja seadete kohta ning teha muudatusi lihtsate sõnadega.",
   "assistantSeePlans": "Vaata pakette",
   "assistantEmptyReply": "Ma ei leidnud vastust. Proovi küsida teisiti.",
-  "assistantDraftReady": "Valmistasin selle sulle ette. Vaata üle ja puuduta Kinnita.",
+  "assistantDraftReady": "Siin on üksikasjad. Salvestamiseks puuduta Kinnita.",
   "assistantNewChat": "Uus vestlus",
   "assistantPrivacyNote": "Vastused kasutavad tehisintellekti. Sinu küsimus ja ainult vastamiseks vajalikud kirje andmed saadetakse meie tehisintellekti pakkujale. Lukustatud kirjete märkmeid ei saadeta kunagi. Midagi ei salvestata, enne kui sa kinnitad.",
   "assistantActionAddTitle": "Uus kirje",
@@ -2275,6 +2275,11 @@
   "assistantSuggestRenew": "Aita mul uuendada: {name}",
   "assistantSuggestExpired": "{name} on aegunud. Mida teha?",
   "assistantSuggestTripReady": "Kas olen reisiks valmis: {place}?",
+  "assistantNextPetVaccines": "Lisa vaktsineerimised: {name}",
+  "assistantNextPetChip": "Lisa mikrokiip: {name}",
+  "assistantNextPetInsurance": "Lisa lemmikloomakindlustus: {name}",
+  "assistantNextPersonPassport": "Lisa pass: {name}",
+  "talkNextStep": "Järgmiseks: {step}. Ütle jah, et seda teha.",
   "assistantSuggestPlanTrip": "Aita mul reisi planeerida",
   "assistantFieldCountryCount": "{count, plural, =1{Riik} other{Riigid}}",
   "assistantSettingTitle": "Muuda seadet",
@@ -4190,7 +4195,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "See ei õnnestunud. Vaata ekraanil olevat kaarti.",
+  "talkNotDone": "See ei õnnestunud. Vaata ekraanil olevaid üksikasju.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

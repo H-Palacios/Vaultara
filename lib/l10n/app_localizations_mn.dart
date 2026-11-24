@@ -4908,7 +4908,8 @@ class AppLocalizationsMn extends AppLocalizations {
   String get assistantEmptyReply => 'Хариулт олдсонгүй. Өөрөөр асуугаад үзээрэй.';
 
   @override
-  String get assistantDraftReady => 'Үүнийг таны төлөө бэлдлээ. Шалгаад Баталгаажуулах дээр дарна уу.';
+  String get assistantDraftReady =>
+      'Дэлгэрэнгүй мэдээлэл энд байна. Хадгалахын тулд Баталгаажуулах дээр дарна уу.';
 
   @override
   String get assistantNewChat => 'Шинэ чат';
@@ -6662,6 +6663,31 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Би $place руу аялахад бэлэн үү?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return '${name}-д вакцин нэмэх';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return '${name}-д микрочип нэмэх';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return '${name}-д тэжээвэр амьтны даатгал нэмэх';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return '${name}-д паспорт нэмэх';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Дараагийнх: ${step}. Хийхийн тулд тийм гэж хэлээрэй.';
   }
 
   @override
@@ -10355,7 +10381,8 @@ class AppLocalizationsMn extends AppLocalizations {
   String get talkNoVoice => 'Таны утсанд энэ хэлний дуу хоолой байхгүй тул хариулт харагдах ч уншигдахгүй.';
 
   @override
-  String get talkNotDone => 'Болсонгүй. Дэлгэц дээрх картыг шалгана уу.';
+  String get talkNotDone =>
+      'Амжилтгүй боллоо. Дэлгэц дээрх мэдээллийг шалгана уу.';
 
   @override
   String get talkReady => 'Би сонсож байна.';

@@ -1646,7 +1646,7 @@
   "assistantPremiumBody": "ارتقا دهید تا درباره رکوردها، سفرها و تنظیماتتان بپرسید و با کلمات ساده تغییر ایجاد کنید.",
   "assistantSeePlans": "مشاهده طرح‌ها",
   "assistantEmptyReply": "پاسخی پیدا نشد. سؤال را به شکل دیگری بپرسید.",
-  "assistantDraftReady": "این برای شما آماده شد. آن را بررسی کنید و روی تأیید بزنید.",
+  "assistantDraftReady": "این هم جزئیات. برای ذخیره، تأیید را بزنید.",
   "assistantNewChat": "گفتگوی جدید",
   "assistantPrivacyNote": "پاسخ‌ها از هوش مصنوعی استفاده می‌کنند. سؤال شما و فقط جزئیات رکوردهای لازم برای پاسخ به ارائه‌دهنده هوش مصنوعی ما ارسال می‌شود. یادداشت‌های رکوردهای قفل‌شده هرگز ارسال نمی‌شوند. تا تأیید نکنید چیزی ذخیره نمی‌شود.",
   "assistantActionAddTitle": "رکورد جدید",
@@ -2122,6 +2122,11 @@
   "assistantSuggestRenew": "کمکم کن {name} را تمدید کنم",
   "assistantSuggestExpired": "{name} منقضی شده است. چه کار کنم؟",
   "assistantSuggestTripReady": "آیا برای سفرم به {place} آماده‌ام؟",
+  "assistantNextPetVaccines": "افزودن واکسن‌ها برای {name}",
+  "assistantNextPetChip": "افزودن میکروچیپ برای {name}",
+  "assistantNextPetInsurance": "افزودن بیمه حیوان خانگی برای {name}",
+  "assistantNextPersonPassport": "افزودن گذرنامه برای {name}",
+  "talkNextStep": "بعدی: {step}. برای انجامش بگویید بله.",
   "assistantSuggestPlanTrip": "کمکم کن یک سفر برنامه‌ریزی کنم",
   "assistantFieldCountryCount": "{count, plural, =1{کشور} other{کشورها}}",
   "assistantSettingTitle": "تغییر یک تنظیم",
@@ -4037,7 +4042,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "انجام نشد. کارت روی صفحه را بررسی کنید.",
+  "talkNotDone": "انجام نشد. جزئیات روی صفحه را بررسی کنید.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

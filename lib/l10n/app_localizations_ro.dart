@@ -4959,7 +4959,8 @@ class AppLocalizationsRo extends AppLocalizations {
   String get assistantEmptyReply => 'Nu am găsit un răspuns. Încearcă să întrebi în alt fel.';
 
   @override
-  String get assistantDraftReady => 'Am pregătit asta pentru tine. Verifică și apasă Confirmă.';
+  String get assistantDraftReady =>
+      'Iată detaliile. Atinge Confirmă pentru a le salva.';
 
   @override
   String get assistantNewChat => 'Conversație nouă';
@@ -6739,6 +6740,31 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Sunt pregătit pentru călătoria în $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Adaugă vaccinările pentru ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Adaugă microcipul pentru ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Adaugă asigurarea animalului pentru ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Adaugă un pașaport pentru ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Următorul pas: ${step}. Spune da ca să-l fac.';
   }
 
   @override
@@ -10452,7 +10478,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get talkNoVoice => 'Telefonul nu are voce pentru această limbă, așa că răspunsurile apar, dar nu sunt citite.';
 
   @override
-  String get talkNotDone => 'Nu a mers. Verifică cardul de pe ecran.';
+  String get talkNotDone => 'Nu a mers. Verifică detaliile de pe ecran.';
 
   @override
   String get talkReady => 'Te ascult.';

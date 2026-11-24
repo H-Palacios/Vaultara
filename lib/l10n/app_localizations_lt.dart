@@ -5004,7 +5004,8 @@ class AppLocalizationsLt extends AppLocalizations {
   String get assistantEmptyReply => 'Neradau atsakymo. Pabandykite paklausti kitaip.';
 
   @override
-  String get assistantDraftReady => 'Tai paruošiau jums. Patikrinkite ir palieskite Patvirtinti.';
+  String get assistantDraftReady =>
+      'Štai informacija. Bakstelėkite Patvirtinti, kad išsaugotumėte.';
 
   @override
   String get assistantNewChat => 'Naujas pokalbis';
@@ -6801,6 +6802,31 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Ar esu pasiruošęs kelionei: $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Pridėti skiepus: ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Pridėti mikroschemą: ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Pridėti augintinio draudimą: ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Pridėti pasą: ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Toliau: ${step}. Pasakykite taip ir tai padarysiu.';
   }
 
   @override
@@ -10524,7 +10550,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get talkNoVoice => 'Telefone nėra šios kalbos balso, todėl atsakymai rodomi, bet neskaitomi.';
 
   @override
-  String get talkNotDone => 'Nepavyko. Patikrinkite kortelę ekrane.';
+  String get talkNotDone => 'Nepavyko. Patikrinkite informaciją ekrane.';
 
   @override
   String get talkReady => 'Klausausi.';

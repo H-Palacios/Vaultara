@@ -4909,7 +4909,8 @@ class AppLocalizationsBg extends AppLocalizations {
   String get assistantEmptyReply => 'Не намерих отговор. Опитайте да попитате по друг начин.';
 
   @override
-  String get assistantDraftReady => 'Подготвих това за вас. Проверете го и натиснете Потвърждаване.';
+  String get assistantDraftReady =>
+      'Ето подробностите. Докоснете Потвърждаване, за да ги запазите.';
 
   @override
   String get assistantNewChat => 'Нов чат';
@@ -6672,6 +6673,31 @@ class AppLocalizationsBg extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Готов ли съм за пътуването до $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Добавете ваксинации за ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Добавете микрочипа за ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Добавете застраховка за ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Добавете паспорт за ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Следва: ${step}. Кажете да, за да го направите.';
   }
 
   @override
@@ -10366,7 +10392,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get talkNoVoice => 'Телефонът ви няма глас за този език, затова отговорите се показват, но не се четат.';
 
   @override
-  String get talkNotDone => 'Не мина. Проверете картата на екрана.';
+  String get talkNotDone => 'Това не мина. Проверете подробностите на екрана.';
 
   @override
   String get talkReady => 'Слушам.';

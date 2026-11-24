@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "Yiya kwi-Premium ukuze ubuze ngeerekhodi, uhambo neesetingi zakho kwaye wenze utshintsho ngamazwi alula.",
   "assistantSeePlans": "Jonga iiplani",
   "assistantEmptyReply": "Andifumananga mpendulo. Zama ukubuza ngenye indlela.",
-  "assistantDraftReady": "Ndikulungiselele oku. Kujonge uze ucofe Qinisekisa.",
+  "assistantDraftReady": "Nazi iinkcukacha. Cofa Qinisekisa ukuze uzigcine.",
   "assistantNewChat": "Incoko entsha",
   "assistantPrivacyNote": "Iimpendulo zisebenzisa i-AI. Umbuzo wakho kunye neenkcukacha zerekhodi ezifunekayo kuphela ukuphendula zithunyelwa kumboneleli wethu we-AI. Amanqaku eerekhodi ezitshixiweyo akaze athunyelwe. Akukho nto igcinwayo de uqinisekise.",
   "assistantActionAddTitle": "Irekhodi entsha",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "Ndincede ndivuselele i-{name}",
   "assistantSuggestExpired": "I-{name} iphelelwe lixesha. Ndenze ntoni?",
   "assistantSuggestTripReady": "Ingaba ndilungele uhambo lwam oluya e-{place}?",
+  "assistantNextPetVaccines": "Yongeza izitofu zika-{name}",
+  "assistantNextPetChip": "Yongeza i-microchip ka-{name}",
+  "assistantNextPetInsurance": "Yongeza i-inshorensi yesilwanyana ka-{name}",
+  "assistantNextPersonPassport": "Yongeza ipasipoti ka-{name}",
+  "talkNextStep": "Okulandelayo: {step}. Yithi ewe ukuze ndikwenze.",
   "assistantSuggestPlanTrip": "Ndincede ndicwangcise uhambo",
   "assistantFieldCountryCount": "{count, plural, =1{Ilizwe} other{Amazwe}}",
   "assistantSettingTitle": "Tshintsha isetingi",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Akuphumelelanga. Jonga ikhadi kwisikrini.",
+  "talkNotDone": "Oko akuphumelelanga. Jonga iinkcukacha kwiskrini.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

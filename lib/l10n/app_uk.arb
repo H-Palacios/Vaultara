@@ -1651,7 +1651,7 @@
   "assistantPremiumBody": "Перейдіть на вищий тариф, щоб запитувати про свої записи, поїздки й налаштування та вносити зміни простими словами.",
   "assistantSeePlans": "Переглянути тарифи",
   "assistantEmptyReply": "Відповіді не знайдено. Спробуйте запитати інакше.",
-  "assistantDraftReady": "Це підготовлено для вас. Перевірте й натисніть Підтвердити.",
+  "assistantDraftReady": "Ось дані. Торкніться Підтвердити, щоб зберегти.",
   "assistantNewChat": "Новий чат",
   "assistantPrivacyNote": "Відповіді створює ШІ. Нашому постачальнику ШІ надсилається лише ваше запитання та ті дані записів, які потрібні для відповіді. Нотатки заблокованих записів не надсилаються ніколи. Нічого не зберігається, доки ви не підтвердите.",
   "assistantActionAddTitle": "Новий запис",
@@ -2127,6 +2127,11 @@
   "assistantSuggestRenew": "Допоможи поновити «{name}»",
   "assistantSuggestExpired": "Термін «{name}» минув. Що робити?",
   "assistantSuggestTripReady": "Чи готовий я до поїздки: {place}?",
+  "assistantNextPetVaccines": "Додати щеплення для {name}",
+  "assistantNextPetChip": "Додати мікрочип для {name}",
+  "assistantNextPetInsurance": "Додати страховку улюбленця для {name}",
+  "assistantNextPersonPassport": "Додати паспорт для {name}",
+  "talkNextStep": "Далі: {step}. Скажіть так, і я це зроблю.",
   "assistantSuggestPlanTrip": "Допоможи спланувати поїздку",
   "assistantFieldCountryCount": "{count, plural, =1{Країна} other{Країни}}",
   "assistantSettingTitle": "Змінити налаштування",
@@ -4042,7 +4047,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Не вдалося. Перевірте картку на екрані.",
+  "talkNotDone": "Не вдалося. Перевірте дані на екрані.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

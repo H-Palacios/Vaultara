@@ -4952,7 +4952,8 @@ class AppLocalizationsLv extends AppLocalizations {
   String get assistantEmptyReply => 'Neizdevās atrast atbildi. Pamēģiniet jautāt citādi.';
 
   @override
-  String get assistantDraftReady => 'Es to sagatavoju jums. Pārbaudiet un pieskarieties Apstiprināt.';
+  String get assistantDraftReady =>
+      'Lūk, informācija. Pieskarieties Apstiprināt, lai to saglabātu.';
 
   @override
   String get assistantNewChat => 'Jauna saruna';
@@ -6732,6 +6733,31 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Vai esmu gatavs ceļojumam: $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Pievienot vakcinācijas: ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Pievienot mikročipu: ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Pievienot mājdzīvnieka apdrošināšanu: ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Pievienot pasi: ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Tālāk: ${step}. Sakiet jā, lai to izdarītu.';
   }
 
   @override
@@ -10437,7 +10463,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get talkNoVoice => 'Tālrunim nav balss šai valodai, tāpēc atbildes tiek rādītas, bet netiek nolasītas.';
 
   @override
-  String get talkNotDone => 'Neizdevās. Pārbaudiet karti ekrānā.';
+  String get talkNotDone => 'Tas neizdevās. Pārbaudiet informāciju ekrānā.';
 
   @override
   String get talkReady => 'Klausos.';

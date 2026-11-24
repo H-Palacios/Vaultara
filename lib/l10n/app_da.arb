@@ -1665,7 +1665,7 @@
   "assistantPremiumBody": "Opgrader for at spørge om dine poster, rejser og indstillinger og lave ændringer med almindelige ord.",
   "assistantSeePlans": "Se abonnementer",
   "assistantEmptyReply": "Jeg kunne ikke finde et svar. Prøv at spørge på en anden måde.",
-  "assistantDraftReady": "Jeg har forberedt dette til dig. Tjek det, og tryk på Bekræft.",
+  "assistantDraftReady": "Her er detaljerne. Tryk på Bekræft for at gemme dem.",
   "assistantNewChat": "Ny samtale",
   "assistantPrivacyNote": "Svar bruger AI. Dit spørgsmål og kun de postdetaljer, der skal bruges til svaret, sendes til vores AI-udbyder. Noter fra låste poster sendes aldrig. Intet gemmes, før du bekræfter.",
   "assistantActionAddTitle": "Ny post",
@@ -2141,6 +2141,11 @@
   "assistantSuggestRenew": "Hjælp mig med at forny {name}",
   "assistantSuggestExpired": "{name} er udløbet. Hvad gør jeg?",
   "assistantSuggestTripReady": "Er jeg klar til min rejse til {place}?",
+  "assistantNextPetVaccines": "Tilføj vaccinationer for {name}",
+  "assistantNextPetChip": "Tilføj mikrochippen for {name}",
+  "assistantNextPetInsurance": "Tilføj kæledyrsforsikring for {name}",
+  "assistantNextPersonPassport": "Tilføj et pas for {name}",
+  "talkNextStep": "Næste: {step}. Sig ja for at gøre det.",
   "assistantSuggestPlanTrip": "Hjælp mig med at planlægge en rejse",
   "assistantFieldCountryCount": "{count, plural, =1{Land} other{Lande}}",
   "assistantSettingTitle": "Skift en indstilling",
@@ -4056,7 +4061,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Det gik ikke igennem. Tjek kortet på skærmen.",
+  "talkNotDone": "Det gik ikke igennem. Tjek detaljerne på skærmen.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

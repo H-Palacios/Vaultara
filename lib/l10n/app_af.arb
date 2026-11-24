@@ -1672,7 +1672,7 @@
   "assistantPremiumBody": "Gradeer op om oor jou rekords, reise en instellings te vra en veranderinge in gewone woorde te maak.",
   "assistantSeePlans": "Sien planne",
   "assistantEmptyReply": "Ek kon nie 'n antwoord vind nie. Probeer op 'n ander manier vra.",
-  "assistantDraftReady": "Ek het dit vir jou voorberei. Gaan dit na en tik Bevestig.",
+  "assistantDraftReady": "Hier is die besonderhede. Tik Bevestig om dit te stoor.",
   "assistantNewChat": "Nuwe gesprek",
   "assistantPrivacyNote": "Antwoorde gebruik KI. Jou vraag en net die rekordbesonderhede wat nodig is om te antwoord, word na ons KI-verskaffer gestuur. Notas van gesluite rekords word nooit gestuur nie. Niks word gestoor voordat jy bevestig nie.",
   "assistantActionAddTitle": "Nuwe rekord",
@@ -2148,6 +2148,11 @@
   "assistantSuggestRenew": "Help my om {name} te hernu",
   "assistantSuggestExpired": "{name} het verval. Wat moet ek doen?",
   "assistantSuggestTripReady": "Is ek gereed vir my reis na {place}?",
+  "assistantNextPetVaccines": "Voeg inentings vir {name} by",
+  "assistantNextPetChip": "Voeg die mikroskyfie vir {name} by",
+  "assistantNextPetInsurance": "Voeg troeteldierversekering vir {name} by",
+  "assistantNextPersonPassport": "Voeg 'n paspoort vir {name} by",
+  "talkNextStep": "Volgende: {step}. Sê ja om dit te doen.",
   "assistantSuggestPlanTrip": "Help my om 'n reis te beplan",
   "assistantFieldCountryCount": "{count, plural, =1{Land} other{Lande}}",
   "assistantSettingTitle": "Verander 'n instelling",
@@ -4063,7 +4068,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Dit het nie deurgegaan nie. Kyk na die kaart op die skerm.",
+  "talkNotDone": "Dit het nie deurgegaan nie. Kyk na die besonderhede op die skerm.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

@@ -12,6 +12,8 @@ import 'package:vaultara/features/assistant/data/assistant_action.dart';
 import 'package:vaultara/features/assistant/data/assistant_message.dart';
 import 'package:vaultara/features/assistant/logic/assistant_card_restore.dart';
 import 'package:vaultara/features/assistant/logic/assistant_action_launcher.dart';
+import 'package:vaultara/features/assistant/logic/assistant_card_notes.dart';
+import 'package:vaultara/features/assistant/logic/assistant_next_step.dart';
 import 'package:vaultara/features/assistant/logic/assistant_action_preview.dart';
 import 'package:vaultara/features/assistant/logic/assistant_navigator.dart';
 import 'package:vaultara/features/assistant/logic/assistant_step_label.dart';
@@ -45,7 +47,6 @@ import 'package:vaultara/features/billing/view/open_plans.dart';
 import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
 import 'package:vaultara/features/assistant/logic/assistant_plain_text.dart';
 import 'package:vaultara/features/insights/services/tts_service.dart';
-import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/services/location_country.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/features/assistant/logic/assistant_limit.dart';
@@ -141,6 +142,11 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
   Timer? _talkSilence;
   Timer? _talkIdle;
   bool _talkConfirming = false;
+
+  /// The next step Talk mode just offered after a confirm, waiting for a
+  /// yes or no.
+  AssistantNextStep? _talkNext;
+
   bool _talkHandling = false;
 
   /// How long a pause ends what the user is saying.
@@ -338,7 +344,16 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       final sources = message.isUser || message.sources.isEmpty
           ? ''
           : '\n\n[Sources: ${message.sources.map((s) => s.url).join(' ')}]';
-      turns.add(AssistantTurn(fromUser: message.isUser, text: '$text$sources'));
+      // What the answer showed to confirm, and whether it was confirmed,
+      // so the assistant never adds a confirmed thing twice and can
+      // correct one still waiting.
+      final shown = message.isUser
+          ? null
+          : AssistantCardNotes.line([...message.archived, ...message.proposals]);
+      final cards = shown == null ? '' : '\n\n$shown';
+      turns.add(
+        AssistantTurn(fromUser: message.isUser, text: '$text$sources$cards'),
+      );
     }
     return turns;
   }
@@ -488,11 +503,39 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
           ..sources = result.sources;
     setState(() {
       _busy = false;
+      _replaceWaiting(message);
       _messages.add(message);
     });
     _saveAssistantMessage(message);
     _scrollToEnd();
     return message;
+  }
+
+  /// A card the assistant made to correct one still waiting for Confirm
+  /// takes its place: the older card is hidden, so only the corrected
+  /// details can be confirmed.
+  void _replaceWaiting(AssistantMessage next) {
+    for (final action in next.actions) {
+      if (!action.replaces || action.isOpen) continue;
+      for (var m = _messages.length - 1; m >= 0; m--) {
+        final earlier = _messages[m];
+        if (earlier.isUser || earlier.isFailure) continue;
+        var found = -1;
+        for (var i = earlier.actions.length - 1; i >= 0; i--) {
+          if (earlier.actionStates[i] == AssistantActionState.pending &&
+              !earlier.replaced.contains(i) &&
+              earlier.actions[i].sameTargetAs(action)) {
+            found = i;
+            break;
+          }
+        }
+        if (found < 0) continue;
+        earlier.actionStates[found] = AssistantActionState.cancelled;
+        earlier.replaced.add(found);
+        _setStatus(earlier, found, 'replaced');
+        break;
+      }
+    }
   }
 
   /// Stops waiting for the current answer. The function is asked to stop
@@ -714,6 +757,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     _talkSilence?.cancel();
     _talkIdle?.cancel();
     _talkConfirming = false;
+    _talkNext = null;
     _talkHandling = false;
     unawaited(_talkVoice.stop());
     if (_voice.open.value) unawaited(_voice.cancel());
@@ -843,6 +887,20 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       if (_talkLive(token)) _exitTalk();
       return;
     }
+    // A yes to the next step offered after a confirm carries it out.
+    final next = _talkNext;
+    _talkNext = null;
+    if (next != null) {
+      if (TalkWords.isYes(heard, loc.talkYesWords)) {
+        await _talkSend(next.label, prompt: next.prompt, token: token);
+        return;
+      }
+      if (TalkWords.isNo(heard, loc.talkNoWords)) {
+        await _talkSay(loc.talkSkipped, token);
+        await _talkListen(token);
+        return;
+      }
+    }
     final confirming = _talkConfirming;
     _talkConfirming = false;
     final last = _messages.isEmpty ? null : _messages.last;
@@ -859,7 +917,16 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
               last.actionStates[i] == AssistantActionState.applied ||
               last.actionStates[i] == AssistantActionState.opened,
         );
-        await _talkSay(done ? loc.talkDone : loc.talkNotDone, token);
+        // After it is done, Talk mode offers the next step out loud, as
+        // the chat does with a reply button.
+        final next = done ? _talkNextFor(last, pending) : null;
+        _talkNext = next;
+        await _talkSay(
+          next == null
+              ? (done ? loc.talkDone : loc.talkNotDone)
+              : '${loc.talkDone} ${loc.talkNextStep(next.label)}',
+          token,
+        );
         await _talkListen(token);
         return;
       }
@@ -873,6 +940,16 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       }
     }
     await _talkSend(heard, token: token);
+  }
+
+  /// The first next step for the cards just confirmed in Talk mode.
+  AssistantNextStep? _talkNextFor(AssistantMessage message, List<int> done) {
+    final loc = AppLocalizations.of(context)!;
+    for (final i in done) {
+      final steps = AssistantNextSteps.after(loc, message.actions[i]);
+      if (steps.isNotEmpty) return steps.first;
+    }
+    return null;
   }
 
   /// The big button: interrupts Vaultara, sends what was said straight
@@ -1008,7 +1085,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
           message.actionStates[index] = AssistantActionState.applied;
           message.undos[index] = applied.undo;
           _setStatus(message, index, 'applied');
-          _offerTripCheck(message, action);
+          _offerNextSteps(message, action);
           if (action.type == AssistantActionType.location) {
             // Carry on the conversation now that the country is known.
             WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -1033,16 +1110,18 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     });
   }
 
-  /// After a new trip is saved, offer the readiness check as a reply.
-  void _offerTripCheck(AssistantMessage message, AssistantAction action) {
-    if (action.type != AssistantActionType.tripAdd) return;
+  /// Once something is added from the chat, the obvious next step is
+  /// offered as a reply: a new pet's first documents, a new person's
+  /// passport, or checking a new trip.
+  void _offerNextSteps(AssistantMessage message, AssistantAction action) {
     final loc = AppLocalizations.of(context)!;
-    final place = action.countries.isNotEmpty
-        ? Countries.names(action.countries)
-        : action.name;
-    if (place == null || place.isEmpty) return;
-    final ask = loc.assistantSuggestTripReady(place);
-    if (!message.replies.contains(ask)) message.replies.insert(0, ask);
+    final steps = AssistantNextSteps.after(loc, action);
+    for (final step in steps.reversed) {
+      message.replies.remove(step.label);
+      message.replies.insert(0, step.label);
+      final prompt = step.prompt;
+      if (prompt != null) message.replyPrompts[step.label] = prompt;
+    }
     while (message.replies.length > AssistantReply.maxReplies) {
       message.replies.removeLast();
     }
@@ -1512,6 +1591,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     for (var i = 0; i < message.actions.length && !batch; i++) {
       final action = message.actions[i];
       final index = i;
+      if (message.replaced.contains(i)) continue;
       if (action.isOpen) {
         extras.add(
           AssistantOpenButton(onPressed: () => _confirm(message, index)),
@@ -1529,6 +1609,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       );
     }
     for (final proposal in message.archived) {
+      if (proposal.status == 'replaced') continue;
       if (proposal.type == 'open') {
         final screen = proposal.summary;
         if (!AssistantAction.screens.contains(screen) ||
@@ -1607,7 +1688,8 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
           AssistantReplyChips(
             replies: message.replies,
             enabled: !_busy,
-            onTap: (reply) => _send(reply),
+            onTap: (reply) =>
+                _send(reply, prompt: message.replyPrompts[reply]),
           ),
       ],
     );

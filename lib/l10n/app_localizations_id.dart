@@ -4870,7 +4870,8 @@ class AppLocalizationsId extends AppLocalizations {
   String get assistantEmptyReply => 'Saya tidak menemukan jawaban. Coba bertanya dengan cara lain.';
 
   @override
-  String get assistantDraftReady => 'Saya sudah menyiapkan ini untuk Anda. Periksa lalu ketuk Konfirmasi.';
+  String get assistantDraftReady =>
+      'Ini detailnya. Ketuk Konfirmasi untuk menyimpannya.';
 
   @override
   String get assistantNewChat => 'Obrolan baru';
@@ -6616,6 +6617,31 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Apakah saya siap untuk perjalanan ke $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Tambahkan vaksinasi untuk ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Tambahkan microchip untuk ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Tambahkan asuransi hewan untuk ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Tambahkan paspor untuk ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Berikutnya: ${step}. Katakan ya untuk melakukannya.';
   }
 
   @override
@@ -10296,7 +10322,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get talkNoVoice => 'Ponsel Anda tidak punya suara untuk bahasa ini, jadi jawaban ditampilkan tetapi tidak dibacakan.';
 
   @override
-  String get talkNotDone => 'Itu gagal. Periksa kartu di layar.';
+  String get talkNotDone => 'Itu tidak berhasil. Periksa detail di layar.';
 
   @override
   String get talkReady => 'Saya mendengarkan.';

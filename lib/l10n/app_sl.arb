@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "Nadgradite paket, da boste lahko spraševali o svojih zapisih, potovanjih in nastavitvah ter spreminjali s preprostimi besedami.",
   "assistantSeePlans": "Ogled paketov",
   "assistantEmptyReply": "Odgovora nisem našla. Poskusite vprašati drugače.",
-  "assistantDraftReady": "To sem pripravila za vas. Preverite in tapnite Potrdi.",
+  "assistantDraftReady": "Tukaj so podrobnosti. Tapnite Potrdi, da jih shranite.",
   "assistantNewChat": "Nov klepet",
   "assistantPrivacyNote": "Odgovori uporabljajo umetno inteligenco. Našemu ponudniku umetne inteligence se pošljeta vaše vprašanje in samo tiste podrobnosti zapisa, ki so potrebne za odgovor. Opombe zaklenjenih zapisov se nikoli ne pošljejo. Nič se ne shrani, dokler tega ne potrdite.",
   "assistantActionAddTitle": "Nov zapis",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "Pomagaj mi obnoviti {name}",
   "assistantSuggestExpired": "{name} je potekel. Kaj naj naredim?",
   "assistantSuggestTripReady": "Ali sem pripravljen na potovanje v {place}?",
+  "assistantNextPetVaccines": "Dodaj cepljenja za {name}",
+  "assistantNextPetChip": "Dodaj mikročip za {name}",
+  "assistantNextPetInsurance": "Dodaj zavarovanje ljubljenčka za {name}",
+  "assistantNextPersonPassport": "Dodaj potni list za {name}",
+  "talkNextStep": "Naprej: {step}. Recite da in to bom naredil.",
   "assistantSuggestPlanTrip": "Pomagaj mi načrtovati potovanje",
   "assistantFieldCountryCount": "{count, plural, =1{Država} other{Države}}",
   "assistantSettingTitle": "Spremeni nastavitev",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Ni uspelo. Preverite kartico na zaslonu.",
+  "talkNotDone": "To ni uspelo. Preverite podrobnosti na zaslonu.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

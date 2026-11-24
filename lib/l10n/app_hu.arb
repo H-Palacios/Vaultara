@@ -1652,7 +1652,7 @@
   "assistantPremiumBody": "Frissítsen Premiumra, hogy kérdezhessen a bejegyzéseiről, utazásairól és beállításairól, és egyszerű szavakkal módosíthasson.",
   "assistantSeePlans": "Csomagok megtekintése",
   "assistantEmptyReply": "Nem találtam választ. Próbálja meg másképp megfogalmazni a kérdést.",
-  "assistantDraftReady": "Ezt elkészítettem Önnek. Ellenőrizze, és koppintson a Megerősítés gombra.",
+  "assistantDraftReady": "Itt vannak a részletek. Mentéshez koppints a Megerősítés gombra.",
   "assistantNewChat": "Új csevegés",
   "assistantPrivacyNote": "A válaszok mesterséges intelligenciát használnak. A kérdése és csak a válaszhoz szükséges bejegyzésadatok kerülnek elküldésre az MI-szolgáltatónknak. A zárolt bejegyzések jegyzeteit soha nem küldjük el. Semmi nem kerül mentésre, amíg Ön meg nem erősíti.",
   "assistantActionAddTitle": "Új bejegyzés",
@@ -2128,6 +2128,11 @@
   "assistantSuggestRenew": "Segíts megújítani: {name}",
   "assistantSuggestExpired": "{name} lejárt. Mit tegyek?",
   "assistantSuggestTripReady": "Készen állok az utazásra: {place}?",
+  "assistantNextPetVaccines": "Oltások hozzáadása: {name}",
+  "assistantNextPetChip": "Mikrochip hozzáadása: {name}",
+  "assistantNextPetInsurance": "Kisállat-biztosítás hozzáadása: {name}",
+  "assistantNextPersonPassport": "Útlevél hozzáadása: {name}",
+  "talkNextStep": "Következő: {step}. Mondd, hogy igen, és megcsinálom.",
   "assistantSuggestPlanTrip": "Segíts megtervezni egy utazást",
   "assistantFieldCountryCount": "{count, plural, =1{Ország} other{Országok}}",
   "assistantSettingTitle": "Beállítás módosítása",
@@ -4043,7 +4048,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Ez nem sikerült. Nézze meg a kártyát a képernyőn.",
+  "talkNotDone": "Ez nem sikerült. Nézd meg a részleteket a képernyőn.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

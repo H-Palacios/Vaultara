@@ -4909,7 +4909,8 @@ class AppLocalizationsXh extends AppLocalizations {
   String get assistantEmptyReply => 'Andifumananga mpendulo. Zama ukubuza ngenye indlela.';
 
   @override
-  String get assistantDraftReady => 'Ndikulungiselele oku. Kujonge uze ucofe Qinisekisa.';
+  String get assistantDraftReady =>
+      'Nazi iinkcukacha. Cofa Qinisekisa ukuze uzigcine.';
 
   @override
   String get assistantNewChat => 'Incoko entsha';
@@ -6672,6 +6673,31 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Ingaba ndilungele uhambo lwam oluya e-$place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Yongeza izitofu zika-${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Yongeza i-microchip ka-${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Yongeza i-inshorensi yesilwanyana ka-${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Yongeza ipasipoti ka-${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Okulandelayo: ${step}. Yithi ewe ukuze ndikwenze.';
   }
 
   @override
@@ -10365,7 +10391,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get talkNoVoice => 'Ifowuni yakho ayinalizwi lolu lwimi, ngoko iimpendulo ziyaboniswa kodwa azifundwa.';
 
   @override
-  String get talkNotDone => 'Akuphumelelanga. Jonga ikhadi kwisikrini.';
+  String get talkNotDone => 'Oko akuphumelelanga. Jonga iinkcukacha kwiskrini.';
 
   @override
   String get talkReady => 'Ndiyamamela.';

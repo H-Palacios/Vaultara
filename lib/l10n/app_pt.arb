@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "Atualize para perguntar sobre os seus registos, viagens e definições e fazer alterações por palavras simples.",
   "assistantSeePlans": "Ver planos",
   "assistantEmptyReply": "Não consegui encontrar uma resposta. Tente perguntar de outra forma.",
-  "assistantDraftReady": "Preparei isto para si. Verifique e toque em Confirmar.",
+  "assistantDraftReady": "Aqui estão os detalhes. Toque em Confirmar para salvar.",
   "assistantNewChat": "Nova conversa",
   "assistantPrivacyNote": "As respostas usam IA. A sua pergunta e apenas os detalhes dos registos necessários para responder são enviados ao nosso fornecedor de IA. As notas dos registos bloqueados nunca são enviadas. Nada é guardado até confirmar.",
   "assistantActionAddTitle": "Novo registo",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "Ajuda-me a renovar {name}",
   "assistantSuggestExpired": "{name} expirou. O que faço?",
   "assistantSuggestTripReady": "Estou pronto para a minha viagem a {place}?",
+  "assistantNextPetVaccines": "Adicionar vacinas de {name}",
+  "assistantNextPetChip": "Adicionar o microchip de {name}",
+  "assistantNextPetInsurance": "Adicionar o seguro do animal de {name}",
+  "assistantNextPersonPassport": "Adicionar um passaporte para {name}",
+  "talkNextStep": "A seguir: {step}. Diga sim para fazer.",
   "assistantSuggestPlanTrip": "Ajuda-me a planear uma viagem",
   "assistantFieldCountryCount": "{count, plural, =1{País} other{Países}}",
   "assistantSettingTitle": "Alterar uma definição",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Não foi possível. Veja o cartão no ecrã.",
+  "talkNotDone": "Não deu certo. Confira os detalhes na tela.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

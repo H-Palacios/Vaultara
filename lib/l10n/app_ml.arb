@@ -1384,7 +1384,7 @@
   "assistantPremiumBody": "നിങ്ങളുടെ റെക്കോർഡുകൾ, യാത്രകൾ, ക്രമീകരണങ്ങൾ എന്നിവയെക്കുറിച്ച് ചോദിക്കാനും ലളിതമായ വാക്കുകളിൽ മാറ്റങ്ങൾ വരുത്താനും അപ്‌ഗ്രേഡ് ചെയ്യുക.",
   "assistantSeePlans": "പ്ലാനുകൾ കാണുക",
   "assistantEmptyReply": "എനിക്ക് ഉത്തരം കണ്ടെത്താനായില്ല. മറ്റൊരു രീതിയിൽ ചോദിച്ചു നോക്കുക.",
-  "assistantDraftReady": "ഞാൻ ഇത് നിങ്ങൾക്കായി തയ്യാറാക്കി. ഇത് പരിശോധിച്ച് സ്ഥിരീകരിക്കുക എന്നതിൽ ടാപ്പ് ചെയ്യുക.",
+  "assistantDraftReady": "വിശദാംശങ്ങൾ ഇതാ. സംരക്ഷിക്കാൻ സ്ഥിരീകരിക്കുക ടാപ്പ് ചെയ്യുക.",
   "assistantNewChat": "പുതിയ ചാറ്റ്",
   "assistantPrivacyNote": "ഉത്തരങ്ങൾ AI ഉപയോഗിച്ച് തയ്യാറാക്കുന്നു. നിങ്ങളുടെ ചോദ്യവും ഉത്തരം നൽകാൻ ആവശ്യമായ റെക്കോർഡ് വിവരങ്ങളും മാത്രമാണ് ഞങ്ങളുടെ AI ദാതാവിന് അയയ്ക്കുന്നത്. ലോക്ക് ചെയ്ത റെക്കോർഡുകളുടെ കുറിപ്പുകൾ ഒരിക്കലും അയയ്ക്കില്ല. നിങ്ങൾ സ്ഥിരീകരിക്കുന്നതുവരെ ഒന്നും സംരക്ഷിക്കില്ല.",
   "assistantActionAddTitle": "പുതിയ റെക്കോർഡ്",
@@ -1860,6 +1860,11 @@
   "assistantSuggestRenew": "{name} പുതുക്കാൻ സഹായിക്കൂ",
   "assistantSuggestExpired": "{name} കാലാവധി കഴിഞ്ഞു. ഞാൻ എന്ത് ചെയ്യണം?",
   "assistantSuggestTripReady": "{place}-ലേക്കുള്ള യാത്രയ്ക്ക് ഞാൻ തയ്യാറാണോ?",
+  "assistantNextPetVaccines": "{name} ന് വാക്സിനുകൾ ചേർക്കുക",
+  "assistantNextPetChip": "{name} ന് മൈക്രോചിപ്പ് ചേർക്കുക",
+  "assistantNextPetInsurance": "{name} ന് വളർത്തുമൃഗ ഇൻഷുറൻസ് ചേർക്കുക",
+  "assistantNextPersonPassport": "{name} ന് പാസ്‌പോർട്ട് ചേർക്കുക",
+  "talkNextStep": "അടുത്തത്: {step}. ചെയ്യാൻ അതെ എന്ന് പറയുക.",
   "assistantSuggestPlanTrip": "ഒരു യാത്ര പ്ലാൻ ചെയ്യാൻ സഹായിക്കൂ",
   "assistantFieldCountryCount": "{count, plural, =1{രാജ്യം} other{രാജ്യങ്ങൾ}}",
   "assistantSettingTitle": "ഒരു ക്രമീകരണം മാറ്റുക",
@@ -3775,7 +3780,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "അത് നടന്നില്ല. സ്ക്രീനിലെ കാർഡ് പരിശോധിക്കുക.",
+  "talkNotDone": "അത് നടന്നില്ല. സ്ക്രീനിലെ വിശദാംശങ്ങൾ പരിശോധിക്കുക.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

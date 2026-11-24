@@ -1652,7 +1652,7 @@
   "assistantPremiumBody": "Жазууларыңыз, сапарларыңыз жана жөндөөлөрүңүз тууралуу суроо жана жөнөкөй сөздөр менен өзгөртүү үчүн планды жогорулатыңыз.",
   "assistantSeePlans": "Пландарды көрүү",
   "assistantEmptyReply": "Жооп табылган жок. Башкача сурап көрүңүз.",
-  "assistantDraftReady": "Муну сиз үчүн даярдадым. Текшерип, Ырастоо баскычын басыңыз.",
+  "assistantDraftReady": "Мына маалыматтар. Сактоо үчүн Тастыктоо баскычын басыңыз.",
   "assistantNewChat": "Жаңы чат",
   "assistantPrivacyNote": "Жооптор жасалма интеллект менен түзүлөт. Сурооңуз жана жооп берүү үчүн зарыл болгон жазуулардын маалыматы гана биздин жасалма интеллект камсыздоочусуна жөнөтүлөт. Кулпуланган жазуулардын эскертмелери эч качан жөнөтүлбөйт. Сиз ырастамайынча эч нерсе сакталбайт.",
   "assistantActionAddTitle": "Жаңы жазуу",
@@ -2128,6 +2128,11 @@
   "assistantSuggestRenew": "{name} жаңыртууга жардам бер",
   "assistantSuggestExpired": "{name} мөөнөтү бүттү. Эмне кылышым керек?",
   "assistantSuggestTripReady": "{place} сапарына даярмынбы?",
+  "assistantNextPetVaccines": "{name} үчүн эмдөөлөрдү кошуу",
+  "assistantNextPetChip": "{name} үчүн микрочипти кошуу",
+  "assistantNextPetInsurance": "{name} үчүн жаныбардын камсыздандыруусун кошуу",
+  "assistantNextPersonPassport": "{name} үчүн паспорт кошуу",
+  "talkNextStep": "Кийинки: {step}. Аткаруу үчүн ооба деңиз.",
   "assistantSuggestPlanTrip": "Сапар пландоого жардам бер",
   "assistantFieldCountryCount": "{count, plural, =1{Өлкө} other{Өлкөлөр}}",
   "assistantSettingTitle": "Жөндөөнү өзгөртүү",
@@ -4043,7 +4048,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Болгон жок. Экрандагы картаны текшериңиз.",
+  "talkNotDone": "Бул аткарылган жок. Экрандагы маалыматтарды текшериңиз.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

@@ -127,5 +127,94 @@ module.exports = function build(h) {
     });
   }
 
-  return { TOOLS, NAMES, run, step, GUIDE, petGuide, proposeCreatePet, typeOf };
+  // ---------------------------------------------------------------------
+  // Every propose_ tool can say it corrects the card still waiting for
+  // Confirm, so the app swaps the old card for the new one. propose_record
+  // can also file a document under a pet.
+
+  const PET_GROUPS = [
+    "pet_vaccinations", "pet_licences", "pet_microchips", "pet_insurances", "pet_passports", "pet_treatments", "pet_checkups",
+  ];
+  const PET_GROUP_WORDS = [
+    [/vaccin|rabies|jab|shot|booster|inocul/, "pet_vaccinations"],
+    [/licen[cs]|dog tag|registration/, "pet_licences"],
+    [/chip/, "pet_microchips"],
+    [/insur|cover|policy/, "pet_insurances"],
+    [/passport|travel|health cert/, "pet_passports"],
+    [/flea|tick|worm|parasite|treatment|medic|pill|tablet/, "pet_treatments"],
+    [/check|vet visit|exam|dental|groom|annual/, "pet_checkups"],
+  ];
+
+  function petGroup(raw) {
+    const word = fold(raw);
+    if (!word) return null;
+    const key = word.replace(/ /g, "_");
+    if (PET_GROUPS.includes(key)) return key;
+    if (PET_GROUPS.includes(`pet_${key}`)) return `pet_${key}`;
+    for (const [pattern, group] of PET_GROUP_WORDS) if (pattern.test(word)) return group;
+    return null;
+  }
+
+  async function findPet(ctx, raw) {
+    const wanted = fold(raw);
+    if (!wanted) return null;
+    const snap = await ctx.userRef.collection("pets").limit(MAX_PETS + 1).get();
+    const pets = snap.docs.map((d) => ({ id: d.id, name: str((d.data() || {}).name, NAME_MAX) })).filter((p) => p.name);
+    return pets.find((p) => fold(p.name) === wanted) ||
+      pets.find((p) => fold(p.name).split(" ")[0] === wanted.split(" ")[0]) ||
+      null;
+  }
+
+  const CORRECTS = {
+    type: "boolean",
+    description: "true only when this corrects what is still waiting for Confirm from your last answer (the user changed a detail). The app then replaces it. Give every detail again, not only the change.",
+  };
+  const PET = {
+    type: "string",
+    description: "For a pet's document: the pet's name from list_pets. Use a pet group (pet_vaccinations, pet_licences, pet_microchips, pet_insurances, pet_passports, pet_treatments, pet_checkups) and leave person out.",
+  };
+
+  function withFields(tool) {
+    if (!tool.name.startsWith("propose_")) return tool;
+    const properties = { ...tool.input_schema.properties, corrects_waiting: CORRECTS };
+    if (tool.name === "propose_record") properties.pet = PET;
+    return { ...tool, input_schema: { ...tool.input_schema, properties } };
+  }
+
+  // Runs [run] for a tool, handling the fields withFields added.
+  async function around(ctx, name, input, actions, run) {
+    if (!name.startsWith("propose_") || !input || typeof input !== "object") return run(name, input);
+    const corrects = input.corrects_waiting === true;
+    const args = { ...input };
+    delete args.corrects_waiting;
+    let pet = null;
+    if (name === "propose_record" && str(args.pet)) {
+      pet = await findPet(ctx, args.pet);
+      if (!pet) return { error: "No pet with that name. Call list_pets first, or add the pet with propose_create_pet." };
+      const group = petGroup(args.group);
+      if (!group) return { error: `For a pet use one of these groups: ${PET_GROUPS.join(", ")}.` };
+      args.group = group;
+      delete args.person;
+    }
+    delete args.pet;
+    const before = actions.length;
+    const result = await run(name, args);
+    for (let i = before; i < actions.length; i++) {
+      if (pet) {
+        actions[i].personId = pet.id;
+        actions[i].person = pet.name;
+      }
+      if (corrects) actions[i].replaces = true;
+    }
+    return result;
+  }
+
+  GUIDE.push(
+    "Cards in the chat: an earlier answer can end with a line from the app in square brackets, starting [Shown:, that says what was shown with a Confirm button and whether it is waiting for Confirm, confirmed, cancelled or replaced. Use it to know what is already saved, and never write such a line yourself.",
+    "Corrections: when the user changes a detail of something still waiting for Confirm (\"no, the 3rd of March\", \"call him Max\"), call the same propose_ tool again with every detail, not only the change, and corrects_waiting true. The app replaces the waiting one. When it was already confirmed, change the saved item with the update tool instead of adding it again.",
+    "Pet documents: to add a vaccination, licence, insurance, microchip registration, pet passport, treatment or check-up for a pet, call propose_record with pet set to the pet's name and the matching pet group.",
+    "A user message starting [The app] The user tapped comes from a button the app showed after something was confirmed. Do what it says, asking only for what is missing."
+  );
+
+  return { TOOLS, NAMES, run, step, GUIDE, petGuide, proposeCreatePet, typeOf, withFields, around, petGroup };
 };

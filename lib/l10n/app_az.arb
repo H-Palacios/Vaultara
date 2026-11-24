@@ -1384,7 +1384,7 @@
   "assistantPremiumBody": "Sənədləriniz, səfərləriniz və ayarlarınız haqqında soruşmaq və sadə sözlərlə dəyişiklik etmək üçün planınızı yüksəldin.",
   "assistantSeePlans": "Planlara bax",
   "assistantEmptyReply": "Cavab tapa bilmədim. Sualı başqa cür verməyə çalışın.",
-  "assistantDraftReady": "Bunu sizin üçün hazırladım. Yoxlayın və Təsdiq et düyməsinə toxunun.",
+  "assistantDraftReady": "Təfərrüatlar buradadır. Saxlamaq üçün Təsdiq et düyməsinə toxunun.",
   "assistantNewChat": "Yeni söhbət",
   "assistantPrivacyNote": "Cavablarda süni intellektdən istifadə olunur. Sualınız və cavab üçün lazım olan sənəd məlumatları süni intellekt təminatçımıza göndərilir. Kilidli sənədlərin qeydləri heç vaxt göndərilmir. Siz təsdiq etməyincə heç nə saxlanmır.",
   "assistantActionAddTitle": "Yeni sənəd",
@@ -1860,6 +1860,11 @@
   "assistantSuggestRenew": "{name} sənədini yeniləməyə kömək et",
   "assistantSuggestExpired": "{name} vaxtı keçib. Nə etməliyəm?",
   "assistantSuggestTripReady": "{place} səfərimə hazıramı?",
+  "assistantNextPetVaccines": "{name} üçün peyvəndləri əlavə edin",
+  "assistantNextPetChip": "{name} üçün mikroçipi əlavə edin",
+  "assistantNextPetInsurance": "{name} üçün ev heyvanı sığortasını əlavə edin",
+  "assistantNextPersonPassport": "{name} üçün pasport əlavə edin",
+  "talkNextStep": "Növbəti: {step}. Etmək üçün bəli deyin.",
   "assistantSuggestPlanTrip": "Səfər planlamağa kömək et",
   "assistantFieldCountryCount": "{count, plural, =1{Ölkə} other{Ölkələr}}",
   "assistantSettingTitle": "Ayarı dəyişin",
@@ -3775,7 +3780,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Alınmadı. Ekrandakı kartı yoxlayın.",
+  "talkNotDone": "Alınmadı. Ekrandakı təfərrüatları yoxlayın.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

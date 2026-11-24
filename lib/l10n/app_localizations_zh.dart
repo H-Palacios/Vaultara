@@ -4875,7 +4875,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get assistantEmptyReply => '我没有找到答案。请换一种方式提问。';
 
   @override
-  String get assistantDraftReady => '我已为您准备好。请检查后点按确认。';
+  String get assistantDraftReady => '详情如下。点按“确认”即可保存。';
 
   @override
   String get assistantNewChat => '新对话';
@@ -6621,6 +6621,31 @@ class AppLocalizationsZh extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return '我准备好去$place旅行了吗？';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return '为${name}添加疫苗接种';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return '为${name}添加芯片';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return '为${name}添加宠物保险';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return '为${name}添加护照';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return '下一步：${step}。说“是”即可完成。';
   }
 
   @override
@@ -10301,7 +10326,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get talkNoVoice => '您的手机没有这种语言的语音，因此只显示回答，不朗读。';
 
   @override
-  String get talkNotDone => '没有成功。请查看屏幕上的卡片。';
+  String get talkNotDone => '未能完成。请查看屏幕上的详情。';
 
   @override
   String get talkReady => '我在听。';
@@ -15426,7 +15451,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get assistantEmptyReply => '我没有找到答案。请换一种方式提问。';
 
   @override
-  String get assistantDraftReady => '我已为您准备好。请核对后点按“确认”。';
+  String get assistantDraftReady => '详情如下。点按“确认”即可保存。';
 
   @override
   String get assistantNewChat => '新对话';
@@ -17172,6 +17197,31 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   @override
   String assistantSuggestTripReady(String place) {
     return '我准备好去$place旅行了吗？';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return '为${name}添加疫苗接种';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return '为${name}添加芯片';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return '为${name}添加宠物保险';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return '为${name}添加护照';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return '下一步：${step}。说“是”即可完成。';
   }
 
   @override
@@ -20852,7 +20902,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get talkNoVoice => '您的手机没有这种语言的语音，因此只显示回答，不朗读。';
 
   @override
-  String get talkNotDone => '没有成功。请查看屏幕上的卡片。';
+  String get talkNotDone => '未能完成。请查看屏幕上的详情。';
 
   @override
   String get talkReady => '我在听。';
@@ -25977,7 +26027,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get assistantEmptyReply => '我找不到答案。請換個方式問問看。';
 
   @override
-  String get assistantDraftReady => '我已替您準備好了。請確認內容後點一下「確認」。';
+  String get assistantDraftReady => '詳情如下。點按「確認」即可儲存。';
 
   @override
   String get assistantNewChat => '新對話';
@@ -27723,6 +27773,31 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   @override
   String assistantSuggestTripReady(String place) {
     return '我準備好前往$place的旅程了嗎？';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return '為${name}新增疫苗接種';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return '為${name}新增晶片';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return '為${name}新增寵物保險';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return '為${name}新增護照';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return '下一步：${step}。說「是」即可完成。';
   }
 
   @override
@@ -31403,7 +31478,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get talkNoVoice => '您的手機沒有這種語言的語音，因此只顯示回答，不朗讀。';
 
   @override
-  String get talkNotDone => '沒有成功。請查看螢幕上的卡片。';
+  String get talkNotDone => '未能完成。請查看螢幕上的詳情。';
 
   @override
   String get talkReady => '我在聽。';

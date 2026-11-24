@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "U beddel Premium si aad u weydiiso diiwaannadaada, safarradaada iyo dejintaada oo aad isbeddel ugu sameyso erayo fudud.",
   "assistantSeePlans": "Eeg qorshayaasha",
   "assistantEmptyReply": "Jawaab ma helin. Isku day inaad si kale u weydiiso.",
-  "assistantDraftReady": "Tan waan kuu diyaariyay. Hubi oo taabo Xaqiiji.",
+  "assistantDraftReady": "Kuwani waa faahfaahinta. Taabo Xaqiiji si aad u kaydiso.",
   "assistantNewChat": "Wada hadal cusub",
   "assistantPrivacyNote": "Jawaabuhu waxay isticmaalaan AI. Su'aashaada iyo kaliya faahfaahinta diiwaanka ee loo baahan yahay jawaabta ayaa loo diraa bixiyaha AI-ga ee annaga. Qoraallada diiwaannada xiran waligood lama diro. Waxba lama keydiyo ilaa aad xaqiijiso.",
   "assistantActionAddTitle": "Diiwaan cusub",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "I caawi inaan cusboonaysiiyo {name}",
   "assistantSuggestExpired": "{name} wuu dhacay. Maxaan sameeyaa?",
   "assistantSuggestTripReady": "Ma u diyaarsanahay safarkayga {place}?",
+  "assistantNextPetVaccines": "Ku dar tallaalada {name}",
+  "assistantNextPetChip": "Ku dar microchip-ka {name}",
+  "assistantNextPetInsurance": "Ku dar caymiska xayawaanka {name}",
+  "assistantNextPersonPassport": "Ku dar baasaboor {name}",
+  "talkNextStep": "Xiga: {step}. Dheh haa si loo sameeyo.",
   "assistantSuggestPlanTrip": "I caawi inaan qorsheeyo safar",
   "assistantFieldCountryCount": "{count, plural, =1{Waddan} other{Waddammo}}",
   "assistantSettingTitle": "Beddel goob",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Ma dhicin. Hubi kaarka shaashadda.",
+  "talkNotDone": "Taasi ma dhicin. Hubi faahfaahinta shaashadda.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

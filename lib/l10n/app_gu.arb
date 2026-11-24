@@ -1384,7 +1384,7 @@
   "assistantPremiumBody": "તમારા રેકોર્ડ, ટ્રિપ અને સેટિંગ્સ વિશે પૂછવા અને સરળ શબ્દોમાં ફેરફારો કરવા માટે અપગ્રેડ કરો.",
   "assistantSeePlans": "પ્લાન જુઓ",
   "assistantEmptyReply": "મને જવાબ મળ્યો નહીં. બીજી રીતે પૂછી જુઓ.",
-  "assistantDraftReady": "મેં આ તમારા માટે તૈયાર કર્યું છે. તપાસો અને કન્ફર્મ કરો પર ટૅપ કરો.",
+  "assistantDraftReady": "આ રહી વિગતો. સાચવવા માટે કન્ફર્મ કરો પર ટૅપ કરો.",
   "assistantNewChat": "નવી ચેટ",
   "assistantPrivacyNote": "જવાબો AI નો ઉપયોગ કરે છે. તમારો પ્રશ્ન અને જવાબ માટે જરૂરી રેકોર્ડની વિગતો જ અમારા AI પ્રદાતાને મોકલાય છે. લૉક કરેલા રેકોર્ડની નોંધ ક્યારેય મોકલાતી નથી. તમે કન્ફર્મ કરો ત્યાં સુધી કંઈ સાચવાતું નથી.",
   "assistantActionAddTitle": "નવો રેકોર્ડ",
@@ -1860,6 +1860,11 @@
   "assistantSuggestRenew": "{name} રિન્યૂ કરવામાં મદદ કરો",
   "assistantSuggestExpired": "{name}ની મુદત પૂરી થઈ ગઈ છે. હું શું કરું?",
   "assistantSuggestTripReady": "શું હું {place}ની ટ્રિપ માટે તૈયાર છું?",
+  "assistantNextPetVaccines": "{name} માટે રસીઓ ઉમેરો",
+  "assistantNextPetChip": "{name} માટે માઇક્રોચિપ ઉમેરો",
+  "assistantNextPetInsurance": "{name} માટે પાળતુ પ્રાણી વીમો ઉમેરો",
+  "assistantNextPersonPassport": "{name} માટે પાસપોર્ટ ઉમેરો",
+  "talkNextStep": "આગળ: {step}. તે કરવા હા કહો.",
   "assistantSuggestPlanTrip": "ટ્રિપનું આયોજન કરવામાં મદદ કરો",
   "assistantFieldCountryCount": "{count, plural, =1{દેશ} other{દેશો}}",
   "assistantSettingTitle": "સેટિંગ બદલો",
@@ -3775,7 +3780,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "તે થયું નહીં. સ્ક્રીન પરનું કાર્ડ જુઓ.",
+  "talkNotDone": "તે થયું નહીં. સ્ક્રીન પરની વિગતો તપાસો.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

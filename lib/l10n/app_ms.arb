@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "Naik taraf untuk bertanya tentang rekod, perjalanan dan tetapan anda serta membuat perubahan dengan kata-kata biasa.",
   "assistantSeePlans": "Lihat pelan",
   "assistantEmptyReply": "Saya tidak dapat mencari jawapan. Cuba tanya dengan cara lain.",
-  "assistantDraftReady": "Saya telah menyediakan ini untuk anda. Semak dan ketik Sahkan.",
+  "assistantDraftReady": "Ini butirannya. Ketik Sahkan untuk menyimpannya.",
   "assistantNewChat": "Sembang baharu",
   "assistantPrivacyNote": "Jawapan menggunakan AI. Soalan anda dan hanya butiran rekod yang diperlukan untuk menjawab dihantar kepada penyedia AI kami. Nota rekod yang dikunci tidak pernah dihantar. Tiada apa-apa disimpan sehingga anda mengesahkan.",
   "assistantActionAddTitle": "Rekod baharu",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "Bantu saya memperbaharui {name}",
   "assistantSuggestExpired": "{name} telah tamat tempoh. Apa yang perlu saya buat?",
   "assistantSuggestTripReady": "Adakah saya bersedia untuk perjalanan ke {place}?",
+  "assistantNextPetVaccines": "Tambah vaksinasi untuk {name}",
+  "assistantNextPetChip": "Tambah mikrocip untuk {name}",
+  "assistantNextPetInsurance": "Tambah insurans haiwan untuk {name}",
+  "assistantNextPersonPassport": "Tambah pasport untuk {name}",
+  "talkNextStep": "Seterusnya: {step}. Sebut ya untuk melakukannya.",
   "assistantSuggestPlanTrip": "Bantu saya merancang perjalanan",
   "assistantFieldCountryCount": "{count, plural, =1{Negara} other{Negara}}",
   "assistantSettingTitle": "Tukar tetapan",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Itu tidak berjaya. Semak kad pada skrin.",
+  "talkNotDone": "Itu tidak berjaya. Semak butiran pada skrin.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

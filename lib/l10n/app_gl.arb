@@ -1646,7 +1646,7 @@
   "assistantPremiumBody": "Pasa a Premium para preguntar polos teus rexistros, viaxes e axustes, e facer cambios con palabras sinxelas.",
   "assistantSeePlans": "Ver plans",
   "assistantEmptyReply": "Non atopei unha resposta. Proba a preguntar doutro xeito.",
-  "assistantDraftReady": "Preparei isto para ti. Revísao e toca Confirmar.",
+  "assistantDraftReady": "Aquí tes os detalles. Toca Confirmar para gardalos.",
   "assistantNewChat": "Novo chat",
   "assistantPrivacyNote": "As respostas usan IA. A túa pregunta e só os datos dos rexistros necesarios para responder envíanse ao noso provedor de IA. As notas dos rexistros bloqueados nunca se envían. Non se garda nada ata que confirmes.",
   "assistantActionAddTitle": "Novo rexistro",
@@ -2122,6 +2122,11 @@
   "assistantSuggestRenew": "Axúdame a renovar {name}",
   "assistantSuggestExpired": "{name} caducou. Que fago?",
   "assistantSuggestTripReady": "Estou listo para a miña viaxe a {place}?",
+  "assistantNextPetVaccines": "Engadir as vacinas de {name}",
+  "assistantNextPetChip": "Engadir o microchip de {name}",
+  "assistantNextPetInsurance": "Engadir o seguro de mascota de {name}",
+  "assistantNextPersonPassport": "Engadir un pasaporte para {name}",
+  "talkNextStep": "Seguinte: {step}. Di si para facelo.",
   "assistantSuggestPlanTrip": "Axúdame a planificar unha viaxe",
   "assistantFieldCountryCount": "{count, plural, =1{País} other{Países}}",
   "assistantSettingTitle": "Cambiar un axuste",
@@ -4037,7 +4042,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Non se puido facer. Revisa a tarxeta na pantalla.",
+  "talkNotDone": "Non se puido facer. Revisa os detalles na pantalla.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

@@ -4909,7 +4909,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get assistantEmptyReply => 'Nem találtam választ. Próbálja meg másképp megfogalmazni a kérdést.';
 
   @override
-  String get assistantDraftReady => 'Ezt elkészítettem Önnek. Ellenőrizze, és koppintson a Megerősítés gombra.';
+  String get assistantDraftReady =>
+      'Itt vannak a részletek. Mentéshez koppints a Megerősítés gombra.';
 
   @override
   String get assistantNewChat => 'Új csevegés';
@@ -6672,6 +6673,31 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Készen állok az utazásra: $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Oltások hozzáadása: ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Mikrochip hozzáadása: ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Kisállat-biztosítás hozzáadása: ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Útlevél hozzáadása: ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Következő: ${step}. Mondd, hogy igen, és megcsinálom.';
   }
 
   @override
@@ -10365,7 +10391,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get talkNoVoice => 'A telefonon nincs hang ehhez a nyelvhez, ezért a válaszok megjelennek, de nincsenek felolvasva.';
 
   @override
-  String get talkNotDone => 'Ez nem sikerült. Nézze meg a kártyát a képernyőn.';
+  String get talkNotDone =>
+      'Ez nem sikerült. Nézd meg a részleteket a képernyőn.';
 
   @override
   String get talkReady => 'Figyelek.';

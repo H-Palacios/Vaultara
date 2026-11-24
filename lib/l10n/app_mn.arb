@@ -1652,7 +1652,7 @@
   "assistantPremiumBody": "Бичлэг, аялал, тохиргоогоо асууж, энгийн үгээр өөрчлөлт хийхийн тулд шинэчилнэ үү.",
   "assistantSeePlans": "Багцуудыг харах",
   "assistantEmptyReply": "Хариулт олдсонгүй. Өөрөөр асуугаад үзээрэй.",
-  "assistantDraftReady": "Үүнийг таны төлөө бэлдлээ. Шалгаад Баталгаажуулах дээр дарна уу.",
+  "assistantDraftReady": "Дэлгэрэнгүй мэдээлэл энд байна. Хадгалахын тулд Баталгаажуулах дээр дарна уу.",
   "assistantNewChat": "Шинэ чат",
   "assistantPrivacyNote": "Хариулт AI ашигладаг. Таны асуулт болон хариулахад шаардлагатай бичлэгийн мэдээллийг л манай AI үйлчилгээ үзүүлэгч рүү илгээнэ. Түгжигдсэн бичлэгийн тэмдэглэлийг хэзээ ч илгээдэггүй. Та баталгаажуулах хүртэл юу ч хадгалагдахгүй.",
   "assistantActionAddTitle": "Шинэ бичлэг",
@@ -2128,6 +2128,11 @@
   "assistantSuggestRenew": "{name}-г сунгахад туслаач",
   "assistantSuggestExpired": "{name}-н хугацаа дууссан. Би юу хийх вэ?",
   "assistantSuggestTripReady": "Би {place} руу аялахад бэлэн үү?",
+  "assistantNextPetVaccines": "{name}-д вакцин нэмэх",
+  "assistantNextPetChip": "{name}-д микрочип нэмэх",
+  "assistantNextPetInsurance": "{name}-д тэжээвэр амьтны даатгал нэмэх",
+  "assistantNextPersonPassport": "{name}-д паспорт нэмэх",
+  "talkNextStep": "Дараагийнх: {step}. Хийхийн тулд тийм гэж хэлээрэй.",
   "assistantSuggestPlanTrip": "Аялал төлөвлөхөд туслаач",
   "assistantFieldCountryCount": "{count, plural, =1{Улс} other{Улсууд}}",
   "assistantSettingTitle": "Тохиргоо өөрчлөх",
@@ -4043,7 +4048,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Болсонгүй. Дэлгэц дээрх картыг шалгана уу.",
+  "talkNotDone": "Амжилтгүй боллоо. Дэлгэц дээрх мэдээллийг шалгана уу.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

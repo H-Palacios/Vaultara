@@ -1665,7 +1665,7 @@
   "assistantPremiumBody": "Wechsle zu Premium, um nach deinen Einträgen, Reisen und Einstellungen zu fragen und Änderungen in einfachen Worten vorzunehmen.",
   "assistantSeePlans": "Tarife ansehen",
   "assistantEmptyReply": "Ich konnte keine Antwort finden. Versuche es mit einer anderen Frage.",
-  "assistantDraftReady": "Ich habe das für dich vorbereitet. Prüfe es und tippe auf Bestätigen.",
+  "assistantDraftReady": "Hier sind die Angaben. Tippe auf Bestätigen, um sie zu speichern.",
   "assistantNewChat": "Neuer Chat",
   "assistantPrivacyNote": "Antworten nutzen KI. Deine Frage und nur die Angaben zu Einträgen, die zur Antwort nötig sind, werden an unseren KI-Anbieter gesendet. Notizen gesperrter Einträge werden nie gesendet. Nichts wird gespeichert, bis du bestätigst.",
   "assistantActionAddTitle": "Neuer Eintrag",
@@ -2141,6 +2141,11 @@
   "assistantSuggestRenew": "Hilf mir, {name} zu erneuern",
   "assistantSuggestExpired": "{name} ist abgelaufen. Was soll ich tun?",
   "assistantSuggestTripReady": "Bin ich bereit für meine Reise nach {place}?",
+  "assistantNextPetVaccines": "Impfungen für {name} hinzufügen",
+  "assistantNextPetChip": "Mikrochip für {name} hinzufügen",
+  "assistantNextPetInsurance": "Tierversicherung für {name} hinzufügen",
+  "assistantNextPersonPassport": "Reisepass für {name} hinzufügen",
+  "talkNextStep": "Als Nächstes: {step}. Sag ja, dann mache ich es.",
   "assistantSuggestPlanTrip": "Hilf mir, eine Reise zu planen",
   "assistantFieldCountryCount": "{count, plural, =1{Land} other{Länder}}",
   "assistantSettingTitle": "Einstellung ändern",
@@ -4056,7 +4061,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Das hat nicht geklappt. Sieh dir die Karte auf dem Bildschirm an.",
+  "talkNotDone": "Das hat nicht geklappt. Prüfe die Angaben auf dem Bildschirm.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

@@ -4909,7 +4909,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get assistantEmptyReply => 'نەمتوانی وەڵامێک بدۆزمەوە. بە شێوازێکی تر بپرسە.';
 
   @override
-  String get assistantDraftReady => 'ئەمەم بۆ ئامادە کردوویت. بیپشکنە و پەنجە بنێ بە پشتڕاستکردنەوە.';
+  String get assistantDraftReady =>
+      'ئەمە وردەکارییەکانە. بۆ پاشەکەوتکردن پشتڕاستکردنەوە دابگرە.';
 
   @override
   String get assistantNewChat => 'گفتوگۆی نوێ';
@@ -6672,6 +6673,31 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'ئایا ئامادەم بۆ گەشتەکەم بۆ $place؟';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'ڤاکسینەکان بۆ ${name} زیاد بکە';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'مایکرۆچیپەکە بۆ ${name} زیاد بکە';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'بیمەی ئاژەڵ بۆ ${name} زیاد بکە';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'پاسپۆرتێک بۆ ${name} زیاد بکە';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'دواتر: ${step}. بڵێ بەڵێ بۆ ئەنجامدانی.';
   }
 
   @override
@@ -10364,7 +10390,8 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get talkNoVoice => 'مۆبایلەکەت دەنگی ئەم زمانەی نییە، بۆیە وەڵامەکان پیشان دەدرێن بەڵام ناخوێندرێنەوە.';
 
   @override
-  String get talkNotDone => 'سەرکەوتوو نەبوو. کارتەکەی سەر شاشە بپشکنە.';
+  String get talkNotDone =>
+      'سەرکەوتوو نەبوو. وردەکارییەکانی سەر شاشەکە بپشکنە.';
 
   @override
   String get talkReady => 'گوێ دەگرم.';

@@ -4907,7 +4907,8 @@ class AppLocalizationsFil extends AppLocalizations {
   String get assistantEmptyReply => 'Wala akong nahanap na sagot. Subukang magtanong sa ibang paraan.';
 
   @override
-  String get assistantDraftReady => 'Inihanda ko ito para sa iyo. Suriin ito at i-tap ang Kumpirmahin.';
+  String get assistantDraftReady =>
+      'Narito ang mga detalye. I-tap ang Kumpirmahin para i-save ang mga ito.';
 
   @override
   String get assistantNewChat => 'Bagong chat';
@@ -6668,6 +6669,31 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Handa na ba ako sa biyahe ko sa $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Magdagdag ng mga bakuna para kay ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Idagdag ang microchip para kay ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Magdagdag ng pet insurance para kay ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Magdagdag ng pasaporte para kay ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Susunod: ${step}. Sabihin ang oo para gawin ito.';
   }
 
   @override
@@ -10358,7 +10384,8 @@ class AppLocalizationsFil extends AppLocalizations {
   String get talkNoVoice => 'Walang boses ang telepono mo para sa wikang ito, kaya ipinapakita ang mga sagot pero hindi binabasa.';
 
   @override
-  String get talkNotDone => 'Hindi natuloy. Tingnan ang card sa screen.';
+  String get talkNotDone =>
+      'Hindi ito natuloy. Tingnan ang mga detalye sa screen.';
 
   @override
   String get talkReady => 'Nakikinig ako.';

@@ -4909,7 +4909,8 @@ class AppLocalizationsEu extends AppLocalizations {
   String get assistantEmptyReply => 'Ez dut erantzunik aurkitu. Saiatu beste modu batean galdetzen.';
 
   @override
-  String get assistantDraftReady => 'Hau zuretzat prestatu dut. Egiaztatu eta sakatu Berretsi.';
+  String get assistantDraftReady =>
+      'Hona hemen xehetasunak. Sakatu Berretsi gordetzeko.';
 
   @override
   String get assistantNewChat => 'Txat berria';
@@ -6672,6 +6673,31 @@ class AppLocalizationsEu extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Prest nago $place(e)rako bidaiarako?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Gehitu ${name}(r)en txertoak';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Gehitu ${name}(r)en mikrotxipa';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Gehitu ${name}(r)en maskota-asegurua';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Gehitu pasaporte bat ${name}(r)entzat';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Hurrengoa: ${step}. Esan bai egiteko.';
   }
 
   @override
@@ -10370,7 +10396,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get talkNoVoice => 'Telefonoak ez du hizkuntza honetarako ahotsik, beraz erantzunak erakusten dira baina ez dira irakurtzen.';
 
   @override
-  String get talkNotDone => 'Ez da egin. Begiratu pantailako txartela.';
+  String get talkNotDone => 'Ez da egin. Begiratu pantailako xehetasunak.';
 
   @override
   String get talkReady => 'Entzuten ari naiz.';

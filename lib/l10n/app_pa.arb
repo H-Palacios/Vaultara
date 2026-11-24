@@ -1641,7 +1641,7 @@
   "assistantPremiumBody": "ਆਪਣੇ ਰਿਕਾਰਡਾਂ, ਯਾਤਰਾਵਾਂ ਅਤੇ ਸੈਟਿੰਗਾਂ ਬਾਰੇ ਪੁੱਛਣ ਅਤੇ ਆਮ ਸ਼ਬਦਾਂ ਵਿੱਚ ਬਦਲਾਅ ਕਰਨ ਲਈ ਅੱਪਗ੍ਰੇਡ ਕਰੋ।",
   "assistantSeePlans": "ਪਲਾਨ ਦੇਖੋ",
   "assistantEmptyReply": "ਮੈਨੂੰ ਜਵਾਬ ਨਹੀਂ ਮਿਲਿਆ। ਕਿਸੇ ਹੋਰ ਤਰੀਕੇ ਨਾਲ ਪੁੱਛ ਕੇ ਦੇਖੋ।",
-  "assistantDraftReady": "ਮੈਂ ਇਹ ਤੁਹਾਡੇ ਲਈ ਤਿਆਰ ਕੀਤਾ ਹੈ। ਇਸ ਨੂੰ ਜਾਂਚੋ ਅਤੇ ਪੁਸ਼ਟੀ ਕਰੋ 'ਤੇ ਟੈਪ ਕਰੋ।",
+  "assistantDraftReady": "ਇਹ ਰਹੇ ਵੇਰਵੇ। ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਪੁਸ਼ਟੀ ਕਰੋ 'ਤੇ ਟੈਪ ਕਰੋ।",
   "assistantNewChat": "ਨਵੀਂ ਚੈਟ",
   "assistantPrivacyNote": "ਜਵਾਬ AI ਨਾਲ ਬਣਦੇ ਹਨ। ਤੁਹਾਡਾ ਸਵਾਲ ਅਤੇ ਜਵਾਬ ਦੇਣ ਲਈ ਲੋੜੀਂਦੇ ਰਿਕਾਰਡ ਦੇ ਵੇਰਵੇ ਹੀ ਸਾਡੇ AI ਪ੍ਰਦਾਤਾ ਨੂੰ ਭੇਜੇ ਜਾਂਦੇ ਹਨ। ਲਾਕ ਕੀਤੇ ਰਿਕਾਰਡਾਂ ਦੇ ਨੋਟ ਕਦੇ ਨਹੀਂ ਭੇਜੇ ਜਾਂਦੇ। ਤੁਹਾਡੇ ਪੁਸ਼ਟੀ ਕਰਨ ਤੱਕ ਕੁਝ ਵੀ ਸੰਭਾਲਿਆ ਨਹੀਂ ਜਾਂਦਾ।",
   "assistantActionAddTitle": "ਨਵਾਂ ਰਿਕਾਰਡ",
@@ -2117,6 +2117,11 @@
   "assistantSuggestRenew": "{name} ਨਵਿਆਉਣ ਵਿੱਚ ਮਦਦ ਕਰੋ",
   "assistantSuggestExpired": "{name} ਦੀ ਮਿਆਦ ਖਤਮ ਹੋ ਗਈ ਹੈ। ਮੈਂ ਕੀ ਕਰਾਂ?",
   "assistantSuggestTripReady": "ਕੀ ਮੈਂ {place} ਦੀ ਯਾਤਰਾ ਲਈ ਤਿਆਰ ਹਾਂ?",
+  "assistantNextPetVaccines": "{name} ਲਈ ਟੀਕੇ ਸ਼ਾਮਲ ਕਰੋ",
+  "assistantNextPetChip": "{name} ਲਈ ਮਾਈਕ੍ਰੋਚਿੱਪ ਸ਼ਾਮਲ ਕਰੋ",
+  "assistantNextPetInsurance": "{name} ਲਈ ਪਾਲਤੂ ਬੀਮਾ ਸ਼ਾਮਲ ਕਰੋ",
+  "assistantNextPersonPassport": "{name} ਲਈ ਪਾਸਪੋਰਟ ਸ਼ਾਮਲ ਕਰੋ",
+  "talkNextStep": "ਅੱਗੇ: {step}। ਕਰਨ ਲਈ ਹਾਂ ਕਹੋ।",
   "assistantSuggestPlanTrip": "ਯਾਤਰਾ ਦੀ ਯੋਜਨਾ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰੋ",
   "assistantFieldCountryCount": "{count, plural, =1{ਦੇਸ਼} other{ਦੇਸ਼}}",
   "assistantSettingTitle": "ਸੈਟਿੰਗ ਬਦਲੋ",
@@ -4032,7 +4037,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "ਇਹ ਨਹੀਂ ਹੋਇਆ। ਸਕ੍ਰੀਨ 'ਤੇ ਕਾਰਡ ਵੇਖੋ।",
+  "talkNotDone": "ਇਹ ਨਹੀਂ ਹੋਇਆ। ਸਕ੍ਰੀਨ 'ਤੇ ਵੇਰਵੇ ਦੇਖੋ।",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

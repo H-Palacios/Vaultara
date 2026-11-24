@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "د خپلو ریکارډونو، سفرونو او تنظیماتو په اړه د پوښتنې او په ساده ټکو د بدلون لپاره پریمیم ته لوړ شئ.",
   "assistantSeePlans": "پلانونه وګورئ",
   "assistantEmptyReply": "ما ځواب ونه موند. په بل ډول وپوښتئ.",
-  "assistantDraftReady": "دا ستاسو لپاره چمتو شو. وګورئ او تایید کړئ ټک کړئ.",
+  "assistantDraftReady": "دا جزئیات دي. د خوندي کولو لپاره تایید کړئ کېکاږئ.",
   "assistantNewChat": "نوې خبرې اترې",
   "assistantPrivacyNote": "ځوابونه AI کاروي. ستاسو پوښتنه او یوازې هغه د ریکارډ جزئیات چې د ځواب لپاره اړین دي زموږ AI چمتو کوونکي ته لیږل کیږي. د بند شویو ریکارډونو یادښتونه هیڅکله نه لیږل کیږي. تر هغه چې تاسو تایید نه کړئ، هېڅ نه خوندي کیږي.",
   "assistantActionAddTitle": "نوی ریکارډ",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "د {name} په نوي کولو کې مې مرسته وکړه",
   "assistantSuggestExpired": "د {name} موده پای ته رسېدلې. څه وکړم؟",
   "assistantSuggestTripReady": "ایا زه {place} ته د سفر لپاره چمتو یم؟",
+  "assistantNextPetVaccines": "د {name} لپاره واکسینونه اضافه کړئ",
+  "assistantNextPetChip": "د {name} لپاره مایکروچیپ اضافه کړئ",
+  "assistantNextPetInsurance": "د {name} لپاره د څاروي بیمه اضافه کړئ",
+  "assistantNextPersonPassport": "د {name} لپاره پاسپورټ اضافه کړئ",
+  "talkNextStep": "بل: {step}. د کولو لپاره هو ووایاست.",
   "assistantSuggestPlanTrip": "د سفر په پلان کې مې مرسته وکړه",
   "assistantFieldCountryCount": "{count, plural, =1{هېواد} other{هېوادونه}}",
   "assistantSettingTitle": "یوه تنظیم بدل کړئ",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "ونشو. په سکرین کارت وګورئ.",
+  "talkNotDone": "دا ونه شو. په پرده کې جزئیات وګورئ.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

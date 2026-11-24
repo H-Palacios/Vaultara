@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "Treci la Premium ca să întrebi despre înregistrările, călătoriile și setările tale și să faci modificări pe înțelesul tuturor.",
   "assistantSeePlans": "Vezi planurile",
   "assistantEmptyReply": "Nu am găsit un răspuns. Încearcă să întrebi în alt fel.",
-  "assistantDraftReady": "Am pregătit asta pentru tine. Verifică și apasă Confirmă.",
+  "assistantDraftReady": "Iată detaliile. Atinge Confirmă pentru a le salva.",
   "assistantNewChat": "Conversație nouă",
   "assistantPrivacyNote": "Răspunsurile folosesc AI. Întrebarea ta și doar detaliile înregistrărilor necesare pentru răspuns sunt trimise furnizorului nostru de AI. Notele înregistrărilor blocate nu sunt trimise niciodată. Nimic nu se salvează până nu confirmi.",
   "assistantActionAddTitle": "Înregistrare nouă",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "Ajută-mă să reînnoiesc {name}",
   "assistantSuggestExpired": "{name} a expirat. Ce fac?",
   "assistantSuggestTripReady": "Sunt pregătit pentru călătoria în {place}?",
+  "assistantNextPetVaccines": "Adaugă vaccinările pentru {name}",
+  "assistantNextPetChip": "Adaugă microcipul pentru {name}",
+  "assistantNextPetInsurance": "Adaugă asigurarea animalului pentru {name}",
+  "assistantNextPersonPassport": "Adaugă un pașaport pentru {name}",
+  "talkNextStep": "Următorul pas: {step}. Spune da ca să-l fac.",
   "assistantSuggestPlanTrip": "Ajută-mă să planific o călătorie",
   "assistantFieldCountryCount": "{count, plural, =1{Țară} other{Țări}}",
   "assistantSettingTitle": "Schimbă o setare",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Nu a mers. Verifică cardul de pe ecran.",
+  "talkNotDone": "Nu a mers. Verifică detaliile de pe ecran.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

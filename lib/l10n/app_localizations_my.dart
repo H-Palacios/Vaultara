@@ -4873,7 +4873,8 @@ class AppLocalizationsMy extends AppLocalizations {
   String get assistantEmptyReply => 'အဖြေ မတွေ့ပါ။ တစ်မျိုးပြောင်း၍ မေးကြည့်ပါ။';
 
   @override
-  String get assistantDraftReady => 'ဤအရာကို သင့်အတွက် ပြင်ဆင်ထားပါသည်။ စစ်ဆေးပြီး အတည်ပြုရန် ကို နှိပ်ပါ။';
+  String get assistantDraftReady =>
+      'အသေးစိတ်များ ဤနေရာတွင်ရှိသည်။ သိမ်းရန် အတည်ပြုရန် ကိုနှိပ်ပါ။';
 
   @override
   String get assistantNewChat => 'စကားပြောခန်း အသစ်';
@@ -6619,6 +6620,31 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return '$place ခရီးအတွက် ကျွန်ုပ် အဆင်သင့်ဖြစ်ပြီလား?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return '${name} အတွက် ကာကွယ်ဆေးများ ထည့်ပါ';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return '${name} အတွက် မိုက်ခရိုချစ် ထည့်ပါ';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return '${name} အတွက် အိမ်မွေးတိရစ္ဆာန် အာမခံ ထည့်ပါ';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return '${name} အတွက် ပတ်စပို့ ထည့်ပါ';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'နောက်တစ်ခု- ${step}။ လုပ်ရန် ဟုတ်ကဲ့ ဟုပြောပါ။';
   }
 
   @override
@@ -10299,7 +10325,8 @@ class AppLocalizationsMy extends AppLocalizations {
   String get talkNoVoice => 'သင့်ဖုန်းတွင် ဤဘာသာစကားအတွက် အသံမရှိသဖြင့် အဖြေများကို ပြသော်လည်း ဖတ်မပြပါ။';
 
   @override
-  String get talkNotDone => 'မအောင်မြင်ပါ။ မျက်နှာပြင်ရှိ ကတ်ကို စစ်ဆေးပါ။';
+  String get talkNotDone =>
+      'မအောင်မြင်ပါ။ မျက်နှာပြင်ပေါ်ရှိ အသေးစိတ်ကို စစ်ဆေးပါ။';
 
   @override
   String get talkReady => 'နားထောင်နေပါတယ်။';

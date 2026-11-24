@@ -1639,7 +1639,7 @@
   "assistantPremiumBody": "Passa a Premium per fare domande sui tuoi record, viaggi e impostazioni e apportare modifiche con parole semplici.",
   "assistantSeePlans": "Vedi i piani",
   "assistantEmptyReply": "Non ho trovato una risposta. Prova a chiedere in un altro modo.",
-  "assistantDraftReady": "Ho preparato questo per te. Controllalo e tocca Conferma.",
+  "assistantDraftReady": "Ecco i dettagli. Tocca Conferma per salvarli.",
   "assistantNewChat": "Nuova chat",
   "assistantPrivacyNote": "Le risposte usano l'IA. La tua domanda e solo i dettagli dei record necessari per rispondere vengono inviati al nostro fornitore di IA. Le note dei record bloccati non vengono mai inviate. Nulla viene salvato finché non confermi.",
   "assistantActionAddTitle": "Nuovo record",
@@ -2115,6 +2115,11 @@
   "assistantSuggestRenew": "Aiutami a rinnovare {name}",
   "assistantSuggestExpired": "{name} è scaduto. Cosa faccio?",
   "assistantSuggestTripReady": "Sono pronto per il viaggio: {place}?",
+  "assistantNextPetVaccines": "Aggiungi le vaccinazioni di {name}",
+  "assistantNextPetChip": "Aggiungi il microchip di {name}",
+  "assistantNextPetInsurance": "Aggiungi l'assicurazione animale di {name}",
+  "assistantNextPersonPassport": "Aggiungi un passaporto per {name}",
+  "talkNextStep": "Poi: {step}. Di' sì per farlo.",
   "assistantSuggestPlanTrip": "Aiutami a pianificare un viaggio",
   "assistantFieldCountryCount": "{count, plural, =1{Paese} other{Paesi}}",
   "assistantSettingTitle": "Cambia un'impostazione",
@@ -4030,7 +4035,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Non è andata a buon fine. Controlla la scheda sullo schermo.",
+  "talkNotDone": "Non è andato a buon fine. Controlla i dettagli sullo schermo.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

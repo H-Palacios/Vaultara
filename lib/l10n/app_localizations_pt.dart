@@ -4910,7 +4910,8 @@ class AppLocalizationsPt extends AppLocalizations {
   String get assistantEmptyReply => 'Não consegui encontrar uma resposta. Tente perguntar de outra forma.';
 
   @override
-  String get assistantDraftReady => 'Preparei isto para si. Verifique e toque em Confirmar.';
+  String get assistantDraftReady =>
+      'Aqui estão os detalhes. Toque em Confirmar para salvar.';
 
   @override
   String get assistantNewChat => 'Nova conversa';
@@ -6673,6 +6674,31 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Estou pronto para a minha viagem a $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Adicionar vacinas de ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Adicionar o microchip de ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Adicionar o seguro do animal de ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Adicionar um passaporte para ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'A seguir: ${step}. Diga sim para fazer.';
   }
 
   @override
@@ -10371,7 +10397,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get talkNoVoice => 'O telefone não tem voz para este idioma, por isso as respostas aparecem mas não são lidas.';
 
   @override
-  String get talkNotDone => 'Não foi possível. Veja o cartão no ecrã.';
+  String get talkNotDone => 'Não deu certo. Confira os detalhes na tela.';
 
   @override
   String get talkReady => 'Estou a ouvir.';

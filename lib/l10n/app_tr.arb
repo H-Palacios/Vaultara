@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "Kayıtlarınız, seyahatleriniz ve ayarlarınız hakkında sormak ve basit sözcüklerle değişiklik yapmak için Premium'a geçin.",
   "assistantSeePlans": "Planları gör",
   "assistantEmptyReply": "Bir yanıt bulamadım. Farklı bir şekilde sormayı deneyin.",
-  "assistantDraftReady": "Bunu sizin için hazırladım. Kontrol edin ve Doğrula'ya dokunun.",
+  "assistantDraftReady": "İşte ayrıntılar. Kaydetmek için Doğrula'ya dokunun.",
   "assistantNewChat": "Yeni sohbet",
   "assistantPrivacyNote": "Yanıtlar yapay zekâ kullanır. Sorunuz ve yalnızca yanıt için gereken kayıt ayrıntıları yapay zekâ sağlayıcımıza gönderilir. Kilitli kayıtların notları asla gönderilmez. Siz doğrulayana kadar hiçbir şey kaydedilmez.",
   "assistantActionAddTitle": "Yeni kayıt",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "{name} yenilememe yardım et",
   "assistantSuggestExpired": "{name} süresi doldu. Ne yapmalıyım?",
   "assistantSuggestTripReady": "{place} seyahatime hazır mıyım?",
+  "assistantNextPetVaccines": "{name} için aşıları ekle",
+  "assistantNextPetChip": "{name} için mikroçipi ekle",
+  "assistantNextPetInsurance": "{name} için evcil hayvan sigortası ekle",
+  "assistantNextPersonPassport": "{name} için pasaport ekle",
+  "talkNextStep": "Sıradaki: {step}. Yapmam için evet deyin.",
   "assistantSuggestPlanTrip": "Seyahat planlamama yardım et",
   "assistantFieldCountryCount": "{count, plural, =1{Ülke} other{Ülkeler}}",
   "assistantSettingTitle": "Bir ayarı değiştir",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Olmadı. Ekrandaki kartı kontrol edin.",
+  "talkNotDone": "Bu gerçekleşmedi. Ekrandaki ayrıntıları kontrol edin.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

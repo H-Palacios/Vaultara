@@ -1627,7 +1627,7 @@
   "assistantPremiumBody": "Uppgradera för att fråga om dina poster, resor och inställningar och göra ändringar med vanliga ord.",
   "assistantSeePlans": "Visa planer",
   "assistantEmptyReply": "Jag hittade inget svar. Försök fråga på ett annat sätt.",
-  "assistantDraftReady": "Jag har förberett det här åt dig. Granska det och tryck på Bekräfta.",
+  "assistantDraftReady": "Här är uppgifterna. Tryck på Bekräfta för att spara dem.",
   "assistantNewChat": "Ny chatt",
   "assistantPrivacyNote": "Svaren använder AI. Din fråga och bara de uppgifter om poster som behövs för svaret skickas till vår AI-leverantör. Anteckningar från låsta poster skickas aldrig. Inget sparas förrän du bekräftar.",
   "assistantActionAddTitle": "Ny post",
@@ -2103,6 +2103,11 @@
   "assistantSuggestRenew": "Hjälp mig att förnya {name}",
   "assistantSuggestExpired": "{name} har gått ut. Vad gör jag?",
   "assistantSuggestTripReady": "Är jag redo för resan till {place}?",
+  "assistantNextPetVaccines": "Lägg till vaccinationer för {name}",
+  "assistantNextPetChip": "Lägg till mikrochippet för {name}",
+  "assistantNextPetInsurance": "Lägg till djurförsäkring för {name}",
+  "assistantNextPersonPassport": "Lägg till ett pass för {name}",
+  "talkNextStep": "Nästa: {step}. Säg ja så gör jag det.",
   "assistantSuggestPlanTrip": "Hjälp mig att planera en resa",
   "assistantFieldCountryCount": "{count, plural, =1{Land} other{Länder}}",
   "assistantSettingTitle": "Ändra en inställning",
@@ -4018,7 +4023,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Det gick inte igenom. Kolla kortet på skärmen.",
+  "talkNotDone": "Det gick inte igenom. Kontrollera uppgifterna på skärmen.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

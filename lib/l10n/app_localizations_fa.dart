@@ -4909,7 +4909,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get assistantEmptyReply => 'پاسخی پیدا نشد. سؤال را به شکل دیگری بپرسید.';
 
   @override
-  String get assistantDraftReady => 'این برای شما آماده شد. آن را بررسی کنید و روی تأیید بزنید.';
+  String get assistantDraftReady =>
+      'این هم جزئیات. برای ذخیره، تأیید را بزنید.';
 
   @override
   String get assistantNewChat => 'گفتگوی جدید';
@@ -6672,6 +6673,31 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'آیا برای سفرم به $place آماده‌ام؟';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'افزودن واکسن‌ها برای ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'افزودن میکروچیپ برای ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'افزودن بیمه حیوان خانگی برای ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'افزودن گذرنامه برای ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'بعدی: ${step}. برای انجامش بگویید بله.';
   }
 
   @override
@@ -10364,7 +10390,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get talkNoVoice => 'تلفن شما صدایی برای این زبان ندارد، پس پاسخ‌ها نمایش داده می‌شوند اما خوانده نمی‌شوند.';
 
   @override
-  String get talkNotDone => 'انجام نشد. کارت روی صفحه را بررسی کنید.';
+  String get talkNotDone => 'انجام نشد. جزئیات روی صفحه را بررسی کنید.';
 
   @override
   String get talkReady => 'گوش می‌دهم.';

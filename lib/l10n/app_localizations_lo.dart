@@ -4875,7 +4875,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get assistantEmptyReply => 'ຂ້ອຍຫາຄຳຕອບບໍ່ພົບ. ລອງຖາມດ້ວຍວິທີອື່ນ.';
 
   @override
-  String get assistantDraftReady => 'ຂ້ອຍກຽມສິ່ງນີ້ໃຫ້ທ່ານແລ້ວ. ກວດເບິ່ງແລ້ວແຕະ ຢືນຢັນ.';
+  String get assistantDraftReady => 'ນີ້ແມ່ນລາຍລະອຽດ. ແຕະ ຢືນຢັນ ເພື່ອບັນທຶກ.';
 
   @override
   String get assistantNewChat => 'ແຊັດໃໝ່';
@@ -6621,6 +6621,31 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'ຂ້ອຍພ້ອມສຳລັບການເດີນທາງໄປ $place ແລ້ວບໍ?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'ເພີ່ມການສັກຢາກັນພະຍາດສຳລັບ ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'ເພີ່ມໄມໂຄຣຊິບສຳລັບ ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'ເພີ່ມປະກັນໄພສັດລ້ຽງສຳລັບ ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'ເພີ່ມໜັງສືຜ່ານແດນສຳລັບ ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'ຕໍ່ໄປ: ${step}. ເວົ້າວ່າ ແມ່ນ ເພື່ອເຮັດ.';
   }
 
   @override
@@ -10301,7 +10326,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String get talkNoVoice => 'ໂທລະສັບຂອງທ່ານບໍ່ມີສຽງສຳລັບພາສານີ້, ສະນັ້ນຄຳຕອບຈະສະແດງແຕ່ບໍ່ອ່ານອອກສຽງ.';
 
   @override
-  String get talkNotDone => 'ບໍ່ສຳເລັດ. ກວດບັດໃນໜ້າຈໍ.';
+  String get talkNotDone => 'ບໍ່ສຳເລັດ. ກວດເບິ່ງລາຍລະອຽດຢູ່ໜ້າຈໍ.';
 
   @override
   String get talkReady => 'ຂ້ອຍກຳລັງຟັງ.';

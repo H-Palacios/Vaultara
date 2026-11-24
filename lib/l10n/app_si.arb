@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "ඔබේ වාර්තා, ගමන් සහ සැකසුම් ගැන ඇසීමට සහ සරල වචනවලින් වෙනස් කිරීමට උසස් කරන්න.",
   "assistantSeePlans": "සැලසුම් බලන්න",
   "assistantEmptyReply": "මට පිළිතුරක් සොයාගත නොහැකි විය. වෙනත් ආකාරයකින් අසා බලන්න.",
-  "assistantDraftReady": "මම මෙය ඔබට සකස් කළා. එය පරීක්ෂා කර තහවුරු කරන්න ඔබන්න.",
+  "assistantDraftReady": "මෙන්න විස්තර. සුරැකීමට තහවුරු කරන්න තට්ටු කරන්න.",
   "assistantNewChat": "නව සංවාදය",
   "assistantPrivacyNote": "පිළිතුරු සඳහා AI භාවිත වේ. ඔබේ ප්‍රශ්නය සහ පිළිතුරු දීමට අවශ්‍ය වාර්තා විස්තර පමණක් අපගේ AI සපයන්නාට යවනු ලැබේ. අගුළු දමා ඇති වාර්තාවල සටහන් කිසිවිටෙකත් නොයවයි. ඔබ තහවුරු කරන තුරු කිසිවක් සුරකින්නේ නැත.",
   "assistantActionAddTitle": "නව වාර්තාව",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "{name} අලුත් කිරීමට උදව් කරන්න",
   "assistantSuggestExpired": "{name} කල් ඉකුත් වී ඇත. මම කුමක් කරන්නද?",
   "assistantSuggestTripReady": "{place} ගමනට මම සූදානම්ද?",
+  "assistantNextPetVaccines": "{name} සඳහා එන්නත් එක් කරන්න",
+  "assistantNextPetChip": "{name} සඳහා මයික්‍රොචිප් එක් කරන්න",
+  "assistantNextPetInsurance": "{name} සඳහා සුරතල් සත්ව රක්ෂණය එක් කරන්න",
+  "assistantNextPersonPassport": "{name} සඳහා ගමන් බලපත්‍රයක් එක් කරන්න",
+  "talkNextStep": "ඊළඟට: {step}. එය කිරීමට ඔව් කියන්න.",
   "assistantSuggestPlanTrip": "ගමනක් සැලසුම් කිරීමට උදව් කරන්න",
   "assistantFieldCountryCount": "{count, plural, =1{රට} other{රටවල්}}",
   "assistantSettingTitle": "සැකසුමක් වෙනස් කරන්න",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "එය සිදු නොවීය. තිරයේ කාඩ්පත බලන්න.",
+  "talkNotDone": "එය සාර්ථක නොවීය. තිරයේ ඇති විස්තර පරීක්ෂා කරන්න.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

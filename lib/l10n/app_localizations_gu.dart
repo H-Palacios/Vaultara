@@ -4909,7 +4909,8 @@ class AppLocalizationsGu extends AppLocalizations {
   String get assistantEmptyReply => 'મને જવાબ મળ્યો નહીં. બીજી રીતે પૂછી જુઓ.';
 
   @override
-  String get assistantDraftReady => 'મેં આ તમારા માટે તૈયાર કર્યું છે. તપાસો અને કન્ફર્મ કરો પર ટૅપ કરો.';
+  String get assistantDraftReady =>
+      'આ રહી વિગતો. સાચવવા માટે કન્ફર્મ કરો પર ટૅપ કરો.';
 
   @override
   String get assistantNewChat => 'નવી ચેટ';
@@ -6672,6 +6673,31 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'શું હું $placeની ટ્રિપ માટે તૈયાર છું?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return '${name} માટે રસીઓ ઉમેરો';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return '${name} માટે માઇક્રોચિપ ઉમેરો';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return '${name} માટે પાળતુ પ્રાણી વીમો ઉમેરો';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return '${name} માટે પાસપોર્ટ ઉમેરો';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'આગળ: ${step}. તે કરવા હા કહો.';
   }
 
   @override
@@ -10365,7 +10391,7 @@ class AppLocalizationsGu extends AppLocalizations {
   String get talkNoVoice => 'તમારા ફોનમાં આ ભાષાનો અવાજ નથી, તેથી જવાબો દેખાય છે પણ વાંચવામાં આવતા નથી.';
 
   @override
-  String get talkNotDone => 'તે થયું નહીં. સ્ક્રીન પરનું કાર્ડ જુઓ.';
+  String get talkNotDone => 'તે થયું નહીં. સ્ક્રીન પરની વિગતો તપાસો.';
 
   @override
   String get talkReady => 'હું સાંભળું છું.';

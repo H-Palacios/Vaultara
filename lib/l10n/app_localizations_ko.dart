@@ -4875,7 +4875,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get assistantEmptyReply => '답을 찾지 못했습니다. 다른 방법으로 질문해 보세요.';
 
   @override
-  String get assistantDraftReady => '이 내용을 준비했습니다. 확인한 후 확인을 누르세요.';
+  String get assistantDraftReady => '세부 정보입니다. 저장하려면 확인을 탭하세요.';
 
   @override
   String get assistantNewChat => '새 대화';
@@ -6621,6 +6621,31 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return '$place 여행 준비가 됐나요?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return '${name}의 예방접종 추가';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return '${name}의 마이크로칩 추가';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return '${name}의 반려동물 보험 추가';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return '${name}의 여권 추가';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return '다음: ${step}. 진행하려면 네라고 말하세요.';
   }
 
   @override
@@ -10301,7 +10326,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get talkNoVoice => '휴대폰에 이 언어의 음성이 없어 답변은 표시되지만 읽어 주지 않습니다.';
 
   @override
-  String get talkNotDone => '처리되지 않았습니다. 화면의 카드를 확인하세요.';
+  String get talkNotDone => '처리되지 않았습니다. 화면의 세부 정보를 확인하세요.';
 
   @override
   String get talkReady => '듣고 있어요.';

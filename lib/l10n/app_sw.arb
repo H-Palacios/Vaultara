@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "Pandisha daraja ili uulize kuhusu rekodi, safari na mipangilio yako na ufanye mabadiliko kwa maneno rahisi.",
   "assistantSeePlans": "Angalia mipango",
   "assistantEmptyReply": "Sikupata jibu. Jaribu kuuliza kwa njia nyingine.",
-  "assistantDraftReady": "Nimekuandalia hii. Ikague kisha ugonge Thibitisha.",
+  "assistantDraftReady": "Haya ndiyo maelezo. Gusa Thibitisha ili kuyahifadhi.",
   "assistantNewChat": "Mazungumzo mapya",
   "assistantPrivacyNote": "Majibu hutumia AI. Swali lako na maelezo ya rekodi yanayohitajika tu kujibu hutumwa kwa mtoa huduma wetu wa AI. Maelezo ya rekodi zilizofungwa hayatumwi kamwe. Hakuna kitu kinachohifadhiwa hadi uthibitishe.",
   "assistantActionAddTitle": "Rekodi mpya",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "Nisaidie kusasisha {name}",
   "assistantSuggestExpired": "{name} imeisha muda. Nifanye nini?",
   "assistantSuggestTripReady": "Je, niko tayari kwa safari yangu ya {place}?",
+  "assistantNextPetVaccines": "Ongeza chanjo za {name}",
+  "assistantNextPetChip": "Ongeza microchip ya {name}",
+  "assistantNextPetInsurance": "Ongeza bima ya mnyama ya {name}",
+  "assistantNextPersonPassport": "Ongeza pasipoti ya {name}",
+  "talkNextStep": "Kinachofuata: {step}. Sema ndiyo ili nifanye.",
   "assistantSuggestPlanTrip": "Nisaidie kupanga safari",
   "assistantFieldCountryCount": "{count, plural, =1{Nchi} other{Nchi}}",
   "assistantSettingTitle": "Badilisha mpangilio",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Haikufanikiwa. Angalia kadi kwenye skrini.",
+  "talkNotDone": "Hilo halikufanikiwa. Angalia maelezo kwenye skrini.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

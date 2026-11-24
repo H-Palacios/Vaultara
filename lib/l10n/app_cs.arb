@@ -1665,7 +1665,7 @@
   "assistantPremiumBody": "Přejděte na Premium, abyste se mohli ptát na své záznamy, cesty a nastavení a provádět změny jednoduchými slovy.",
   "assistantSeePlans": "Zobrazit plány",
   "assistantEmptyReply": "Odpověď se nepodařilo najít. Zkuste se zeptat jinak.",
-  "assistantDraftReady": "Tohle je pro vás připraveno. Zkontrolujte to a klepněte na Potvrdit.",
+  "assistantDraftReady": "Tady jsou podrobnosti. Klepnutím na Potvrdit je uložíte.",
   "assistantNewChat": "Nový chat",
   "assistantPrivacyNote": "Odpovědi využívají AI. Naší službě AI se odešle vaše otázka a jen ty údaje o záznamech, které jsou k odpovědi potřeba. Poznámky zamčených záznamů se nikdy neodesílají. Nic se neuloží, dokud to nepotvrdíte.",
   "assistantActionAddTitle": "Nový záznam",
@@ -2141,6 +2141,11 @@
   "assistantSuggestRenew": "Pomoz mi obnovit {name}",
   "assistantSuggestExpired": "Platnost {name} vypršela. Co mám dělat?",
   "assistantSuggestTripReady": "Jsem připraven na cestu do {place}?",
+  "assistantNextPetVaccines": "Přidat očkování pro {name}",
+  "assistantNextPetChip": "Přidat mikročip pro {name}",
+  "assistantNextPetInsurance": "Přidat pojištění zvířete pro {name}",
+  "assistantNextPersonPassport": "Přidat pas pro {name}",
+  "talkNextStep": "Další krok: {step}. Řekněte ano a udělám to.",
   "assistantSuggestPlanTrip": "Pomoz mi naplánovat cestu",
   "assistantFieldCountryCount": "{count, plural, =1{Země} other{Země}}",
   "assistantSettingTitle": "Změnit nastavení",
@@ -4056,7 +4061,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Nepodařilo se. Zkontrolujte kartu na obrazovce.",
+  "talkNotDone": "To se nepovedlo. Zkontrolujte podrobnosti na obrazovce.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

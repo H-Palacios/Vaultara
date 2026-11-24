@@ -4945,7 +4945,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get assistantEmptyReply => 'לא מצאתי תשובה. נסה לשאול בדרך אחרת.';
 
   @override
-  String get assistantDraftReady => 'הכנתי את זה בשבילך. בדוק ולחץ על אשר.';
+  String get assistantDraftReady => 'הנה הפרטים. הקישו על אשר כדי לשמור אותם.';
 
   @override
   String get assistantNewChat => 'צ\'אט חדש';
@@ -6719,6 +6719,31 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'האם אני מוכן לנסיעה ל־$place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'הוספת חיסונים עבור ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'הוספת השבב עבור ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'הוספת ביטוח חיית מחמד עבור ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'הוספת דרכון עבור ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'הבא: ${step}. אמרו כן כדי לבצע.';
   }
 
   @override
@@ -10429,7 +10454,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get talkNoVoice => 'אין בטלפון שלך קול לשפה הזו, לכן התשובות מוצגות אך לא מוקראות.';
 
   @override
-  String get talkNotDone => 'זה לא עבר. בדקו את הכרטיס במסך.';
+  String get talkNotDone => 'זה לא הצליח. בדקו את הפרטים במסך.';
 
   @override
   String get talkReady => 'אני מקשיב.';

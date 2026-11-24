@@ -4909,7 +4909,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get assistantEmptyReply => 'En löytänyt vastausta. Yritä kysyä toisella tavalla.';
 
   @override
-  String get assistantDraftReady => 'Valmistelin tämän sinulle. Tarkista se ja napauta Vahvista.';
+  String get assistantDraftReady =>
+      'Tässä tiedot. Tallenna napauttamalla Vahvista.';
 
   @override
   String get assistantNewChat => 'Uusi keskustelu';
@@ -6672,6 +6673,31 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Olenko valmis matkalle: $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Lisää rokotukset: ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Lisää mikrosiru: ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Lisää lemmikkivakuutus: ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Lisää passi: ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Seuraavaksi: ${step}. Sano kyllä, niin teen sen.';
   }
 
   @override
@@ -10369,7 +10395,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get talkNoVoice => 'Puhelimessa ei ole ääntä tälle kielelle, joten vastaukset näytetään mutta niitä ei lueta ääneen.';
 
   @override
-  String get talkNotDone => 'Se ei onnistunut. Tarkista kortti näytöltä.';
+  String get talkNotDone => 'Se ei onnistunut. Tarkista tiedot näytöltä.';
 
   @override
   String get talkReady => 'Kuuntelen.';

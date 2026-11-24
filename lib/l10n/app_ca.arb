@@ -1665,7 +1665,7 @@
   "assistantPremiumBody": "Passa a Premium per preguntar sobre els teus registres, viatges i configuració, i fer canvis amb paraules senzilles.",
   "assistantSeePlans": "Veure els plans",
   "assistantEmptyReply": "No he trobat cap resposta. Prova de preguntar-ho d’una altra manera.",
-  "assistantDraftReady": "Ho he preparat per a tu. Revisa-ho i toca Confirma.",
+  "assistantDraftReady": "Aquí tens els detalls. Toca Confirma per desar-los.",
   "assistantNewChat": "Xat nou",
   "assistantPrivacyNote": "Les respostes fan servir IA. La teva pregunta i només els detalls dels registres necessaris per respondre s’envien al nostre proveïdor d’IA. Les notes dels registres bloquejats mai no s’envien. No es desa res fins que ho confirmis.",
   "assistantActionAddTitle": "Registre nou",
@@ -2141,6 +2141,11 @@
   "assistantSuggestRenew": "Ajuda'm a renovar {name}",
   "assistantSuggestExpired": "{name} ha caducat. Què he de fer?",
   "assistantSuggestTripReady": "Estic preparat per al viatge a {place}?",
+  "assistantNextPetVaccines": "Afegeix les vacunes de {name}",
+  "assistantNextPetChip": "Afegeix el microxip de {name}",
+  "assistantNextPetInsurance": "Afegeix l'assegurança de mascota de {name}",
+  "assistantNextPersonPassport": "Afegeix un passaport per a {name}",
+  "talkNextStep": "Següent: {step}. Digues sí per fer-ho.",
   "assistantSuggestPlanTrip": "Ajuda'm a planificar un viatge",
   "assistantFieldCountryCount": "{count, plural, =1{País} other{Països}}",
   "assistantSettingTitle": "Canvia una opció",
@@ -4056,7 +4061,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "No s'ha pogut fer. Revisa la targeta de la pantalla.",
+  "talkNotDone": "No s'ha pogut fer. Revisa els detalls a la pantalla.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

@@ -4909,7 +4909,8 @@ class AppLocalizationsZu extends AppLocalizations {
   String get assistantEmptyReply => 'Angitholanga mpendulo. Zama ukubuza ngenye indlela.';
 
   @override
-  String get assistantDraftReady => 'Ngikulungisele lokhu. Kuhlole bese uthinta Qinisekisa.';
+  String get assistantDraftReady =>
+      'Nansi imininingwane. Thepha Qinisekisa ukuze uyilondoloze.';
 
   @override
   String get assistantNewChat => 'Ingxoxo entsha';
@@ -6672,6 +6673,31 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Ngabe ngilungele uhambo lwami oluya e-$place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Engeza imigomo ka-${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Engeza i-microchip ka-${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Engeza umshwalense wesilwane ka-${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Engeza iphasipoti ka-${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Okulandelayo: ${step}. Yisho yebo ukuze ngikwenze.';
   }
 
   @override
@@ -10365,7 +10391,8 @@ class AppLocalizationsZu extends AppLocalizations {
   String get talkNoVoice => 'Ifoni yakho ayinalo izwi lalolu limi, ngakho izimpendulo ziyaboniswa kodwa azifundwa.';
 
   @override
-  String get talkNotDone => 'Akuphumelelanga. Bheka ikhadi esikrinini.';
+  String get talkNotDone =>
+      'Lokho akuphumelelanga. Hlola imininingwane esikrinini.';
 
   @override
   String get talkReady => 'Ngiyalalela.';

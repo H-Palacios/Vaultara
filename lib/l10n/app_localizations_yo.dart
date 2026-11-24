@@ -4876,7 +4876,8 @@ class AppLocalizationsYo extends AppLocalizations {
   String get assistantEmptyReply => 'Mi ò rí ìdáhùn. Gbìyànjú láti béèrè ní ọ̀nà mìíràn.';
 
   @override
-  String get assistantDraftReady => 'Mo ti ṣètò èyí fún ọ. Yẹ̀ ẹ́ wò kí o sì tẹ Jẹ́rìísí.';
+  String get assistantDraftReady =>
+      'Àwọn àlàyé nìyí. Tẹ Jẹ́risi láti fi wọ́n pamọ́.';
 
   @override
   String get assistantNewChat => 'Ìbánisọ̀rọ̀ tuntun';
@@ -6622,6 +6623,31 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Ṣé mo ti ṣetán fún ìrìn àjò mi sí $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Ṣafikun àwọn abẹ́rẹ́ àjẹsára fún ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Ṣafikun microchip fún ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Ṣafikun ìbánigbófò ẹranko fún ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Ṣafikun ìwé ìrìnnà fún ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Èyí tó kàn: ${step}. Sọ bẹ́ẹ̀ni láti ṣe é.';
   }
 
   @override
@@ -10313,7 +10339,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get talkNoVoice => 'Fóònù rẹ kò ní ohùn fún èdè yìí, nítorí náà a ń fi ìdáhùn hàn ṣùgbọ́n a kì í kà wọ́n.';
 
   @override
-  String get talkNotDone => 'Kò ṣẹlẹ̀. Ṣàyẹ̀wò káàdì lórí ìbòjú.';
+  String get talkNotDone => 'Ìyẹn kò ṣe é ṣe. Ṣàyẹ̀wò àwọn àlàyé lórí ìbòjú.';
 
   @override
   String get talkReady => 'Mo ń gbọ́.';

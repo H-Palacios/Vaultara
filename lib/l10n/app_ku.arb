@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "Biçe Premium da ku li ser tomar, rêwîtî û mîhengên xwe bipirsî û bi gotinên sade guhertinan bikî.",
   "assistantSeePlans": "Planan bibîne",
   "assistantEmptyReply": "Min bersiv nedît. Bi awayekî din bipirse.",
-  "assistantDraftReady": "Min ev ji bo te amade kir. Kontrol bike û li Piştrast bike bitikîne.",
+  "assistantDraftReady": "Ev hûrgulî ne. Ji bo tomarkirinê li Piştrast bike bitikîne.",
   "assistantNewChat": "Sohbeta nû",
   "assistantPrivacyNote": "Bersiv AI bikar tînin. Pirsa te û tenê hûrguliyên tomarê yên ji bo bersivdanê pêwist ji pêşkêşkarê me yê AI re têne şandin. Nîşeyên tomarên kilîtkirî tu carî nayên şandin. Heta tu piştrast nekî tu tişt nayê tomarkirin.",
   "assistantActionAddTitle": "Tomara nû",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "Alîkariya min bike ku {name} nû bikim",
   "assistantSuggestExpired": "Dema {name} qediya. Ez çi bikim?",
   "assistantSuggestTripReady": "Ez ji bo rêwîtiya xwe ya {place} amade me?",
+  "assistantNextPetVaccines": "Derziyan ji bo {name} zêde bike",
+  "assistantNextPetChip": "Mîkroçîpê ji bo {name} zêde bike",
+  "assistantNextPetInsurance": "Sîgorteya heywanê ji bo {name} zêde bike",
+  "assistantNextPersonPassport": "Pasaportekê ji bo {name} zêde bike",
+  "talkNextStep": "Paşê: {step}. Ji bo kirinê bêje erê.",
   "assistantSuggestPlanTrip": "Alîkariya min bike ku rêwîtiyekê plan bikim",
   "assistantFieldCountryCount": "{count, plural, =1{Welat} other{Welat}}",
   "assistantSettingTitle": "Mîhengekê biguherîne",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Ev nebû. Karta li ser ekranê kontrol bike.",
+  "talkNotDone": "Ev pêk nehat. Hûrguliyên li ser ekranê kontrol bike.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

@@ -1626,7 +1626,7 @@
   "assistantPremiumBody": "Thuthukela ku-Premium ukuze ubuze ngamarekhodi akho, uhambo nezilungiselelo futhi wenze izinguquko ngamagama alula.",
   "assistantSeePlans": "Bona izinhlelo",
   "assistantEmptyReply": "Angitholanga mpendulo. Zama ukubuza ngenye indlela.",
-  "assistantDraftReady": "Ngikulungisele lokhu. Kuhlole bese uthinta Qinisekisa.",
+  "assistantDraftReady": "Nansi imininingwane. Thepha Qinisekisa ukuze uyilondoloze.",
   "assistantNewChat": "Ingxoxo entsha",
   "assistantPrivacyNote": "Izimpendulo zisebenzisa i-AI. Umbuzo wakho nemininingwane yerekhodi edingekayo kuphela ukuphendula kuthunyelwa kumhlinzeki wethu we-AI. Amanothi amarekhodi avaliwe awathunyelwa neze. Akukho okugcinwayo uze uqinisekise.",
   "assistantActionAddTitle": "Irekhodi elisha",
@@ -2102,6 +2102,11 @@
   "assistantSuggestRenew": "Ngisize ngivuselele i-{name}",
   "assistantSuggestExpired": "I-{name} iphelelwe yisikhathi. Ngenzeni?",
   "assistantSuggestTripReady": "Ngabe ngilungele uhambo lwami oluya e-{place}?",
+  "assistantNextPetVaccines": "Engeza imigomo ka-{name}",
+  "assistantNextPetChip": "Engeza i-microchip ka-{name}",
+  "assistantNextPetInsurance": "Engeza umshwalense wesilwane ka-{name}",
+  "assistantNextPersonPassport": "Engeza iphasipoti ka-{name}",
+  "talkNextStep": "Okulandelayo: {step}. Yisho yebo ukuze ngikwenze.",
   "assistantSuggestPlanTrip": "Ngisize ngihlele uhambo",
   "assistantFieldCountryCount": "{count, plural, =1{Izwe} other{Amazwe}}",
   "assistantSettingTitle": "Shintsha isilungiselelo",
@@ -4017,7 +4022,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Akuphumelelanga. Bheka ikhadi esikrinini.",
+  "talkNotDone": "Lokho akuphumelelanga. Hlola imininingwane esikrinini.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

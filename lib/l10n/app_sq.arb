@@ -1648,7 +1648,7 @@
   "assistantPremiumBody": "Kaloni në një plan më të lartë për të pyetur për regjistrimet, udhëtimet dhe cilësimet tuaja dhe për të bërë ndryshime me fjalë të thjeshta.",
   "assistantSeePlans": "Shiko planet",
   "assistantEmptyReply": "Nuk gjeta dot një përgjigje. Provoni ta pyesni ndryshe.",
-  "assistantDraftReady": "E përgatita këtë për ju. Kontrollojeni dhe prekni Konfirmo.",
+  "assistantDraftReady": "Ja detajet. Prek Konfirmo për t'i ruajtur.",
   "assistantNewChat": "Bisedë e re",
   "assistantPrivacyNote": "Përgjigjet përdorin AI. Pyetja juaj dhe vetëm detajet e regjistrimit që duhen për t'u përgjigjur i dërgohen ofruesit tonë të AI. Shënimet e regjistrimeve të kyçura nuk dërgohen kurrë. Asgjë nuk ruhet derisa ta konfirmoni.",
   "assistantActionAddTitle": "Regjistrim i ri",
@@ -2124,6 +2124,11 @@
   "assistantSuggestRenew": "Më ndihmo të rinovoj {name}",
   "assistantSuggestExpired": "{name} ka skaduar. Çfarë të bëj?",
   "assistantSuggestTripReady": "A jam gati për udhëtimin në {place}?",
+  "assistantNextPetVaccines": "Shto vaksinat për {name}",
+  "assistantNextPetChip": "Shto mikroçipin për {name}",
+  "assistantNextPetInsurance": "Shto sigurimin e kafshës për {name}",
+  "assistantNextPersonPassport": "Shto një pasaportë për {name}",
+  "talkNextStep": "Më pas: {step}. Thuaj po për ta bërë.",
   "assistantSuggestPlanTrip": "Më ndihmo të planifikoj një udhëtim",
   "assistantFieldCountryCount": "{count, plural, =1{Shteti} other{Shtetet}}",
   "assistantSettingTitle": "Ndrysho një cilësim",
@@ -4039,7 +4044,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Nuk u krye. Kontrolloni kartën në ekran.",
+  "talkNotDone": "Kjo nuk funksionoi. Kontrollo detajet në ekran.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

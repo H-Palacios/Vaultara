@@ -8524,7 +8524,7 @@ abstract class AppLocalizations {
   /// Shown when the assistant returns a draft record without text. Confirm is the button on the card.
   ///
   /// In en, this message translates to:
-  /// **'I prepared this for you. Check it and tap Confirm.'**
+  /// **'Here are the details. Tap Confirm to save them.'**
   String get assistantDraftReady;
 
   /// Tooltip of the button that clears the conversation.
@@ -11376,6 +11376,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Am I ready for my trip to {place}?'**
   String assistantSuggestTripReady(String place);
+
+  /// Ask Vaultara: a reply button after a pet was added from the chat; tapping it asks to add the pet's vaccinations. name is the pet's name.
+  ///
+  /// In en, this message translates to:
+  /// **'Add vaccinations for {name}'**
+  String assistantNextPetVaccines(String name);
+
+  /// Ask Vaultara: a reply button after a pet was added from the chat; tapping it asks to add the pet's microchip registration. name is the pet's name.
+  ///
+  /// In en, this message translates to:
+  /// **'Add the microchip for {name}'**
+  String assistantNextPetChip(String name);
+
+  /// Ask Vaultara: a reply button after a pet was added from the chat; tapping it asks to add the pet's insurance. name is the pet's name.
+  ///
+  /// In en, this message translates to:
+  /// **'Add pet insurance for {name}'**
+  String assistantNextPetInsurance(String name);
+
+  /// Ask Vaultara: a reply button after a person was added from the chat; tapping it asks to add their passport. name is the person's name.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a passport for {name}'**
+  String assistantNextPersonPassport(String name);
+
+  /// Talk mode: said after something was confirmed, offering the next step. step is the text of a reply button, such as Add vaccinations for Rex.
+  ///
+  /// In en, this message translates to:
+  /// **'Next: {step}. Say yes to do it.'**
+  String talkNextStep(String step);
 
   /// Starter question when the user has no upcoming trip. Sent as the user's message.
   ///
@@ -17728,7 +17758,7 @@ abstract class AppLocalizations {
   /// talkNotDone
   ///
   /// In en, this message translates to:
-  /// **'That did not go through. Check the card on the screen.'**
+  /// **'That did not go through. Check the details on the screen.'**
   String get talkNotDone;
 
   /// talkReady

@@ -1652,7 +1652,7 @@
   "assistantPremiumBody": "Pereikite prie Premium, kad galėtumėte klausti apie savo įrašus, keliones ir nustatymus bei keisti juos paprastais žodžiais.",
   "assistantSeePlans": "Peržiūrėti planus",
   "assistantEmptyReply": "Neradau atsakymo. Pabandykite paklausti kitaip.",
-  "assistantDraftReady": "Tai paruošiau jums. Patikrinkite ir palieskite Patvirtinti.",
+  "assistantDraftReady": "Štai informacija. Bakstelėkite Patvirtinti, kad išsaugotumėte.",
   "assistantNewChat": "Naujas pokalbis",
   "assistantPrivacyNote": "Atsakymai naudoja dirbtinį intelektą. Jūsų klausimas ir tik atsakymui reikalinga įrašų informacija siunčiami mūsų DI paslaugų teikėjui. Užrakintų įrašų pastabos niekada nesiunčiamos. Nieko neišsaugome, kol nepatvirtinate.",
   "assistantActionAddTitle": "Naujas įrašas",
@@ -2128,6 +2128,11 @@
   "assistantSuggestRenew": "Padėk man atnaujinti: {name}",
   "assistantSuggestExpired": "{name} galiojimas baigėsi. Ką daryti?",
   "assistantSuggestTripReady": "Ar esu pasiruošęs kelionei: {place}?",
+  "assistantNextPetVaccines": "Pridėti skiepus: {name}",
+  "assistantNextPetChip": "Pridėti mikroschemą: {name}",
+  "assistantNextPetInsurance": "Pridėti augintinio draudimą: {name}",
+  "assistantNextPersonPassport": "Pridėti pasą: {name}",
+  "talkNextStep": "Toliau: {step}. Pasakykite taip ir tai padarysiu.",
   "assistantSuggestPlanTrip": "Padėk man suplanuoti kelionę",
   "assistantFieldCountryCount": "{count, plural, =1{Šalis} other{Šalys}}",
   "assistantSettingTitle": "Keisti nustatymą",
@@ -4043,7 +4048,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Nepavyko. Patikrinkite kortelę ekrane.",
+  "talkNotDone": "Nepavyko. Patikrinkite informaciją ekrane.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

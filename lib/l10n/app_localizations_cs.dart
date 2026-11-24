@@ -5007,7 +5007,8 @@ class AppLocalizationsCs extends AppLocalizations {
   String get assistantEmptyReply => 'Odpověď se nepodařilo najít. Zkuste se zeptat jinak.';
 
   @override
-  String get assistantDraftReady => 'Tohle je pro vás připraveno. Zkontrolujte to a klepněte na Potvrdit.';
+  String get assistantDraftReady =>
+      'Tady jsou podrobnosti. Klepnutím na Potvrdit je uložíte.';
 
   @override
   String get assistantNewChat => 'Nový chat';
@@ -6795,6 +6796,31 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Jsem připraven na cestu do $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Přidat očkování pro ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Přidat mikročip pro ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Přidat pojištění zvířete pro ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Přidat pas pro ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Další krok: ${step}. Řekněte ano a udělám to.';
   }
 
   @override
@@ -10528,7 +10554,8 @@ class AppLocalizationsCs extends AppLocalizations {
   String get talkNoVoice => 'Telefon nemá hlas pro tento jazyk, takže odpovědi se zobrazí, ale nepřečtou.';
 
   @override
-  String get talkNotDone => 'Nepodařilo se. Zkontrolujte kartu na obrazovce.';
+  String get talkNotDone =>
+      'To se nepovedlo. Zkontrolujte podrobnosti na obrazovce.';
 
   @override
   String get talkReady => 'Poslouchám.';

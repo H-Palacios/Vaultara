@@ -4908,7 +4908,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get assistantEmptyReply => 'Ég fann ekkert svar. Prófaðu að spyrja á annan hátt.';
 
   @override
-  String get assistantDraftReady => 'Ég útbjó þetta fyrir þig. Yfirfarðu það og ýttu á Staðfesta.';
+  String get assistantDraftReady =>
+      'Hér eru upplýsingarnar. Ýttu á Staðfesta til að vista þær.';
 
   @override
   String get assistantNewChat => 'Nýtt spjall';
@@ -6671,6 +6672,31 @@ class AppLocalizationsIs extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Er ég tilbúin/n fyrir ferðina til $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Bæta við bólusetningum fyrir ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Bæta við örmerki fyrir ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Bæta við gæludýratryggingu fyrir ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Bæta við vegabréfi fyrir ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Næst: ${step}. Segðu já til að gera það.';
   }
 
   @override
@@ -10364,7 +10390,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get talkNoVoice => 'Síminn er ekki með rödd fyrir þetta tungumál, svo svör birtast en eru ekki lesin upp.';
 
   @override
-  String get talkNotDone => 'Það tókst ekki. Skoðaðu spjaldið á skjánum.';
+  String get talkNotDone =>
+      'Þetta tókst ekki. Skoðaðu upplýsingarnar á skjánum.';
 
   @override
   String get talkReady => 'Ég hlusta.';

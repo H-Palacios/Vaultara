@@ -4909,7 +4909,8 @@ class AppLocalizationsTr extends AppLocalizations {
   String get assistantEmptyReply => 'Bir yanıt bulamadım. Farklı bir şekilde sormayı deneyin.';
 
   @override
-  String get assistantDraftReady => 'Bunu sizin için hazırladım. Kontrol edin ve Doğrula\'ya dokunun.';
+  String get assistantDraftReady =>
+      'İşte ayrıntılar. Kaydetmek için Doğrula\'ya dokunun.';
 
   @override
   String get assistantNewChat => 'Yeni sohbet';
@@ -6672,6 +6673,31 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return '$place seyahatime hazır mıyım?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return '${name} için aşıları ekle';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return '${name} için mikroçipi ekle';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return '${name} için evcil hayvan sigortası ekle';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return '${name} için pasaport ekle';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Sıradaki: ${step}. Yapmam için evet deyin.';
   }
 
   @override
@@ -10365,7 +10391,8 @@ class AppLocalizationsTr extends AppLocalizations {
   String get talkNoVoice => 'Telefonunuzda bu dil için ses yok, bu yüzden yanıtlar gösterilir ama okunmaz.';
 
   @override
-  String get talkNotDone => 'Olmadı. Ekrandaki kartı kontrol edin.';
+  String get talkNotDone =>
+      'Bu gerçekleşmedi. Ekrandaki ayrıntıları kontrol edin.';
 
   @override
   String get talkReady => 'Dinliyorum.';

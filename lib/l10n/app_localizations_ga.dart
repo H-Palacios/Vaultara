@@ -5039,7 +5039,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get assistantEmptyReply => 'Níor aimsigh mé freagra. Bain triail as ceist a chur ar bhealach eile.';
 
   @override
-  String get assistantDraftReady => 'D’ullmhaigh mé é seo duit. Seiceáil é agus tapáil Deimhnigh.';
+  String get assistantDraftReady =>
+      'Seo na sonraí. Tapáil Deimhnigh chun iad a shábháil.';
 
   @override
   String get assistantNewChat => 'Comhrá nua';
@@ -6853,6 +6854,31 @@ class AppLocalizationsGa extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'An bhfuil mé réidh do mo thuras go $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Cuir vacsaínithe le haghaidh ${name} leis';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Cuir an micrishlis le haghaidh ${name} leis';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Cuir árachas peata le haghaidh ${name} leis';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Cuir pas le haghaidh ${name} leis';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Ar aghaidh: ${step}. Abair tá chun é a dhéanamh.';
   }
 
   @override
@@ -10573,7 +10599,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get talkNoVoice => 'Níl guth ag do ghuthán don teanga seo, mar sin taispeántar freagraí ach ní léitear iad.';
 
   @override
-  String get talkNotDone => 'Níor éirigh leis. Seiceáil an cárta ar an scáileán.';
+  String get talkNotDone =>
+      'Níor éirigh leis sin. Seiceáil na sonraí ar an scáileán.';
 
   @override
   String get talkReady => 'Táim ag éisteacht.';

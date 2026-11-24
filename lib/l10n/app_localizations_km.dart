@@ -4873,7 +4873,8 @@ class AppLocalizationsKm extends AppLocalizations {
   String get assistantEmptyReply => 'រកមិនឃើញចម្លើយទេ។ សូមសាកសួរតាមរបៀបផ្សេង។';
 
   @override
-  String get assistantDraftReady => 'នេះត្រូវបានរៀបចំសម្រាប់អ្នក។ សូមពិនិត្យ រួចចុច បញ្ជាក់។';
+  String get assistantDraftReady =>
+      'នេះជាព័ត៌មានលម្អិត។ ចុច បញ្ជាក់ ដើម្បីរក្សាទុក។';
 
   @override
   String get assistantNewChat => 'ការជជែកថ្មី';
@@ -6619,6 +6620,31 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'តើខ្ញុំរួចរាល់សម្រាប់ដំណើរទៅ $place ហើយឬនៅ?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'បន្ថែមការចាក់វ៉ាក់សាំងសម្រាប់ ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'បន្ថែមមីក្រូឈីបសម្រាប់ ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'បន្ថែមការធានារ៉ាប់រងសត្វចិញ្ចឹមសម្រាប់ ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'បន្ថែមលិខិតឆ្លងដែនសម្រាប់ ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'បន្ទាប់៖ ${step}។ និយាយថា បាទ/ចាស ដើម្បីធ្វើវា។';
   }
 
   @override
@@ -10299,7 +10325,8 @@ class AppLocalizationsKm extends AppLocalizations {
   String get talkNoVoice => 'ទូរសព្ទរបស់អ្នកគ្មានសំឡេងសម្រាប់ភាសានេះទេ ដូច្នេះចម្លើយត្រូវបានបង្ហាញ ប៉ុន្តែមិនអានឮទេ។';
 
   @override
-  String get talkNotDone => 'មិនបានសម្រេច។ សូមពិនិត្យកាតនៅលើអេក្រង់។';
+  String get talkNotDone =>
+      'វាមិនបានសម្រេចទេ។ សូមពិនិត្យព័ត៌មានលម្អិតនៅលើអេក្រង់។';
 
   @override
   String get talkReady => 'ខ្ញុំកំពុងស្តាប់។';

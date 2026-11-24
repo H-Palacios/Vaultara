@@ -4909,7 +4909,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get assistantEmptyReply => 'Nuk gjeta dot një përgjigje. Provoni ta pyesni ndryshe.';
 
   @override
-  String get assistantDraftReady => 'E përgatita këtë për ju. Kontrollojeni dhe prekni Konfirmo.';
+  String get assistantDraftReady =>
+      'Ja detajet. Prek Konfirmo për t\'i ruajtur.';
 
   @override
   String get assistantNewChat => 'Bisedë e re';
@@ -6672,6 +6673,31 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'A jam gati për udhëtimin në $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Shto vaksinat për ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Shto mikroçipin për ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Shto sigurimin e kafshës për ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Shto një pasaportë për ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Më pas: ${step}. Thuaj po për ta bërë.';
   }
 
   @override
@@ -10370,7 +10396,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String get talkNoVoice => 'Telefoni nuk ka zë për këtë gjuhë, prandaj përgjigjet shfaqen, por nuk lexohen.';
 
   @override
-  String get talkNotDone => 'Nuk u krye. Kontrolloni kartën në ekran.';
+  String get talkNotDone => 'Kjo nuk funksionoi. Kontrollo detajet në ekran.';
 
   @override
   String get talkReady => 'Po dëgjoj.';

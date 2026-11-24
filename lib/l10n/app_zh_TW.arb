@@ -1627,7 +1627,7 @@
   "assistantPremiumBody": "升級後，即可詢問記錄、旅程和設定，並用簡單的話進行變更。",
   "assistantSeePlans": "查看方案",
   "assistantEmptyReply": "我找不到答案。請換個方式問問看。",
-  "assistantDraftReady": "我已替您準備好了。請確認內容後點一下「確認」。",
+  "assistantDraftReady": "詳情如下。點按「確認」即可儲存。",
   "assistantNewChat": "新對話",
   "assistantPrivacyNote": "回答會使用 AI。您的問題和回答所需的記錄詳細資料會傳送給我們的 AI 服務供應商。已鎖定記錄的備註一律不會傳送。在您確認之前，不會儲存任何內容。",
   "assistantActionAddTitle": "新記錄",
@@ -2103,6 +2103,11 @@
   "assistantSuggestRenew": "幫我續期{name}",
   "assistantSuggestExpired": "{name}已過期。我該怎麼辦？",
   "assistantSuggestTripReady": "我準備好前往{place}的旅程了嗎？",
+  "assistantNextPetVaccines": "為{name}新增疫苗接種",
+  "assistantNextPetChip": "為{name}新增晶片",
+  "assistantNextPetInsurance": "為{name}新增寵物保險",
+  "assistantNextPersonPassport": "為{name}新增護照",
+  "talkNextStep": "下一步：{step}。說「是」即可完成。",
   "assistantSuggestPlanTrip": "幫我規劃旅程",
   "assistantFieldCountryCount": "{count, plural, =1{國家} other{國家}}",
   "assistantSettingTitle": "變更設定",
@@ -4018,7 +4023,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "沒有成功。請查看螢幕上的卡片。",
+  "talkNotDone": "未能完成。請查看螢幕上的詳情。",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

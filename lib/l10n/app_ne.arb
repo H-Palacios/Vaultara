@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "आफ्ना रेकर्ड, यात्रा र सेटिङबारे सोध्न र सरल शब्दमा परिवर्तन गर्न अपग्रेड गर्नुहोस्।",
   "assistantSeePlans": "योजनाहरू हेर्नुहोस्",
   "assistantEmptyReply": "मैले उत्तर भेट्टाउन सकिनँ। अर्कै तरिकाले सोधेर हेर्नुहोस्।",
-  "assistantDraftReady": "मैले यो तपाईंका लागि तयार गरेँ। जाँचेर पुष्टि गर्नुहोस् थिच्नुहोस्।",
+  "assistantDraftReady": "यी विवरणहरू हुन्। सुरक्षित गर्न पुष्टि गर्नुहोस् ट्याप गर्नुहोस्।",
   "assistantNewChat": "नयाँ च्याट",
   "assistantPrivacyNote": "जवाफहरूमा AI प्रयोग हुन्छ। तपाईंको प्रश्न र जवाफका लागि चाहिने रेकर्डको विवरण मात्र हाम्रो AI प्रदायकलाई पठाइन्छ। लक गरिएका रेकर्डका टिपोट कहिल्यै पठाइँदैनन्। तपाईंले पुष्टि नगरेसम्म केही पनि सुरक्षित गरिँदैन।",
   "assistantActionAddTitle": "नयाँ रेकर्ड",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "{name} नवीकरण गर्न मद्दत गर्नुहोस्",
   "assistantSuggestExpired": "{name} को म्याद सकियो। म के गरूँ?",
   "assistantSuggestTripReady": "के म {place} को यात्राका लागि तयार छु?",
+  "assistantNextPetVaccines": "{name} का लागि खोपहरू थप्नुहोस्",
+  "assistantNextPetChip": "{name} का लागि माइक्रोचिप थप्नुहोस्",
+  "assistantNextPetInsurance": "{name} का लागि घरपालुवा बीमा थप्नुहोस्",
+  "assistantNextPersonPassport": "{name} का लागि राहदानी थप्नुहोस्",
+  "talkNextStep": "अर्को: {step}। गर्न हो भन्नुहोस्।",
   "assistantSuggestPlanTrip": "यात्राको योजना बनाउन मद्दत गर्नुहोस्",
   "assistantFieldCountryCount": "{count, plural, =1{देश} other{देशहरू}}",
   "assistantSettingTitle": "सेटिङ बदल्नुहोस्",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "भएन। स्क्रिनको कार्ड हेर्नुहोस्।",
+  "talkNotDone": "त्यो भएन। स्क्रिनमा विवरणहरू जाँच गर्नुहोस्।",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

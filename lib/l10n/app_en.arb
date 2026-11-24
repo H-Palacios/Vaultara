@@ -5858,7 +5858,7 @@
   "@assistantEmptyReply": {
     "description": "Shown when the assistant returns no text."
   },
-  "assistantDraftReady": "I prepared this for you. Check it and tap Confirm.",
+  "assistantDraftReady": "Here are the details. Tap Confirm to save them.",
   "@assistantDraftReady": {
     "description": "Shown when the assistant returns a draft record without text. Confirm is the button on the card."
   },
@@ -8377,6 +8377,51 @@
     "description": "Starter question for an upcoming trip. Sent as the user's message. place is one or more country names or the trip name.",
     "placeholders": {
       "place": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantNextPetVaccines": "Add vaccinations for {name}",
+  "@assistantNextPetVaccines": {
+    "description": "Ask Vaultara: a reply button after a pet was added from the chat; tapping it asks to add the pet's vaccinations. name is the pet's name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantNextPetChip": "Add the microchip for {name}",
+  "@assistantNextPetChip": {
+    "description": "Ask Vaultara: a reply button after a pet was added from the chat; tapping it asks to add the pet's microchip registration. name is the pet's name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantNextPetInsurance": "Add pet insurance for {name}",
+  "@assistantNextPetInsurance": {
+    "description": "Ask Vaultara: a reply button after a pet was added from the chat; tapping it asks to add the pet's insurance. name is the pet's name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "assistantNextPersonPassport": "Add a passport for {name}",
+  "@assistantNextPersonPassport": {
+    "description": "Ask Vaultara: a reply button after a person was added from the chat; tapping it asks to add their passport. name is the person's name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "talkNextStep": "Next: {step}. Say yes to do it.",
+  "@talkNextStep": {
+    "description": "Talk mode: said after something was confirmed, offering the next step. step is the text of a reply button, such as Add vaccinations for Rex.",
+    "placeholders": {
+      "step": {
         "type": "String"
       }
     }
@@ -13191,7 +13236,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "That did not go through. Check the card on the screen.",
+  "talkNotDone": "That did not go through. Check the details on the screen.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

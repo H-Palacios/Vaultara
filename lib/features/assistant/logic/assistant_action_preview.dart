@@ -15,6 +15,7 @@ import 'package:vaultara/features/assistant/logic/assistant_action_launcher.dart
 import 'package:vaultara/features/assistant/logic/assistant_settings.dart';
 import 'package:vaultara/features/costs/logic/cost_format.dart';
 import 'package:vaultara/features/costs/view/cost_field.dart';
+import 'package:vaultara/features/pets/data/pet_repository.dart';
 import 'package:vaultara/features/pets/data/pet_type.dart';
 import 'package:vaultara/features/pets/view/pet_text.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
@@ -1178,7 +1179,11 @@ class _Formatter {
 
   String person(String? id, String? fallback) {
     if (id == null) return loc.familyMe;
-    return PeopleRepository.byId(id)?.name ?? fallback ?? loc.familyMe;
+    // A pet's documents name the pet as whose record it is.
+    return PeopleRepository.byId(id)?.name ??
+        PetRepository.byId(id)?.name ??
+        fallback ??
+        loc.familyMe;
   }
 
   String onOff(bool value) =>

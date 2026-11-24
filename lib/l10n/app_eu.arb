@@ -1648,7 +1648,7 @@
   "assistantPremiumBody": "Eguneratu plana zure erregistroei, bidaiei eta ezarpenei buruz galdetzeko eta aldaketak hitz xumeetan egiteko.",
   "assistantSeePlans": "Ikusi planak",
   "assistantEmptyReply": "Ez dut erantzunik aurkitu. Saiatu beste modu batean galdetzen.",
-  "assistantDraftReady": "Hau zuretzat prestatu dut. Egiaztatu eta sakatu Berretsi.",
+  "assistantDraftReady": "Hona hemen xehetasunak. Sakatu Berretsi gordetzeko.",
   "assistantNewChat": "Txat berria",
   "assistantPrivacyNote": "Erantzunak AA bidez sortzen dira. Zure galdera eta erantzuteko behar diren erregistro-xehetasunak bakarrik bidaltzen zaizkio gure AA hornitzaileari. Blokeatutako erregistroen oharrak ez dira inoiz bidaltzen. Ez da ezer gordetzen zuk berretsi arte.",
   "assistantActionAddTitle": "Erregistro berria",
@@ -2124,6 +2124,11 @@
   "assistantSuggestRenew": "Lagundu {name} berritzen",
   "assistantSuggestExpired": "{name} iraungi da. Zer egin behar dut?",
   "assistantSuggestTripReady": "Prest nago {place}(e)rako bidaiarako?",
+  "assistantNextPetVaccines": "Gehitu {name}(r)en txertoak",
+  "assistantNextPetChip": "Gehitu {name}(r)en mikrotxipa",
+  "assistantNextPetInsurance": "Gehitu {name}(r)en maskota-asegurua",
+  "assistantNextPersonPassport": "Gehitu pasaporte bat {name}(r)entzat",
+  "talkNextStep": "Hurrengoa: {step}. Esan bai egiteko.",
   "assistantSuggestPlanTrip": "Lagundu bidaia bat planifikatzen",
   "assistantFieldCountryCount": "{count, plural, =1{Herrialdea} other{Herrialdeak}}",
   "assistantSettingTitle": "Aldatu ezarpen bat",
@@ -4039,7 +4044,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Ez da egin. Begiratu pantailako txartela.",
+  "talkNotDone": "Ez da egin. Begiratu pantailako xehetasunak.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

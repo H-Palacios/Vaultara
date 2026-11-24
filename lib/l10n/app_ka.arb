@@ -1652,7 +1652,7 @@
   "assistantPremiumBody": "გადადით პრემიუმზე, რომ ჰკითხოთ თქვენს ჩანაწერებზე, მოგზაურობებსა და პარამეტრებზე და ცვლილებები მარტივი სიტყვებით შეიტანოთ.",
   "assistantSeePlans": "გეგმების ნახვა",
   "assistantEmptyReply": "პასუხი ვერ ვიპოვე. სცადეთ სხვანაირად ჰკითხოთ.",
-  "assistantDraftReady": "ეს თქვენთვის მოვამზადე. შეამოწმეთ და დააჭირეთ დადასტურებას.",
+  "assistantDraftReady": "აი დეტალები. შესანახად შეეხეთ დადასტურებას.",
   "assistantNewChat": "ახალი ჩატი",
   "assistantPrivacyNote": "პასუხები ხელოვნურ ინტელექტს იყენებს. თქვენი შეკითხვა და მხოლოდ პასუხისთვის საჭირო ჩანაწერის დეტალები იგზავნება ჩვენს ხელოვნური ინტელექტის პროვაიდერთან. ჩაკეტილი ჩანაწერების შენიშვნები არასდროს იგზავნება. არაფერი ინახება, სანამ არ დაადასტურებთ.",
   "assistantActionAddTitle": "ახალი ჩანაწერი",
@@ -2128,6 +2128,11 @@
   "assistantSuggestRenew": "დამეხმარე განახლებაში: {name}",
   "assistantSuggestExpired": "{name}-ს ვადა გაუვიდა. რა ვქნა?",
   "assistantSuggestTripReady": "მზად ვარ მოგზაურობისთვის: {place}?",
+  "assistantNextPetVaccines": "დაამატეთ ვაქცინაციები: {name}",
+  "assistantNextPetChip": "დაამატეთ მიკროჩიპი: {name}",
+  "assistantNextPetInsurance": "დაამატეთ შინაური ცხოველის დაზღვევა: {name}",
+  "assistantNextPersonPassport": "დაამატეთ პასპორტი: {name}",
+  "talkNextStep": "შემდეგი: {step}. გასაკეთებლად თქვით დიახ.",
   "assistantSuggestPlanTrip": "დამეხმარე მოგზაურობის დაგეგმვაში",
   "assistantFieldCountryCount": "{count, plural, =1{ქვეყანა} other{ქვეყნები}}",
   "assistantSettingTitle": "პარამეტრის შეცვლა",
@@ -4043,7 +4048,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "ვერ მოხერხდა. შეამოწმეთ ბარათი ეკრანზე.",
+  "talkNotDone": "ვერ შესრულდა. შეამოწმეთ დეტალები ეკრანზე.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

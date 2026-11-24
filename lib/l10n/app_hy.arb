@@ -1648,7 +1648,7 @@
   "assistantPremiumBody": "Անցեք Premium՝ ձեր գրառումների, ճամփորդությունների և կարգավորումների մասին հարցնելու և պարզ խոսքերով փոփոխություններ անելու համար։",
   "assistantSeePlans": "Տեսնել փաթեթները",
   "assistantEmptyReply": "Չկարողացա պատասխան գտնել։ Փորձեք հարցնել այլ կերպ։",
-  "assistantDraftReady": "Սա պատրաստել եմ ձեզ համար։ Ստուգեք և հպեք Հաստատել։",
+  "assistantDraftReady": "Ահա մանրամասները։ Պահելու համար հպեք Հաստատել։",
   "assistantNewChat": "Նոր զրույց",
   "assistantPrivacyNote": "Պատասխանները կազմվում են արհեստական բանականությամբ։ Ձեր հարցը և միայն պատասխանի համար անհրաժեշտ գրառումների տվյալները ուղարկվում են մեր AI մատակարարին։ Կողպված գրառումների նշումները երբեք չեն ուղարկվում։ Ոչինչ չի պահպանվում, մինչև դուք չհաստատեք։",
   "assistantActionAddTitle": "Նոր գրառում",
@@ -2124,6 +2124,11 @@
   "assistantSuggestRenew": "Օգնիր թարմացնել {name}-ը",
   "assistantSuggestExpired": "{name}-ի ժամկետը լրացել է։ Ի՞նչ անեմ։",
   "assistantSuggestTripReady": "Պատրա՞ստ եմ ճամփորդությանը՝ {place}",
+  "assistantNextPetVaccines": "Ավելացնել պատվաստումներ {name}-ի համար",
+  "assistantNextPetChip": "Ավելացնել միկրոչիպը {name}-ի համար",
+  "assistantNextPetInsurance": "Ավելացնել կենդանու ապահովագրություն {name}-ի համար",
+  "assistantNextPersonPassport": "Ավելացնել անձնագիր {name}-ի համար",
+  "talkNextStep": "Հաջորդը՝ {step}։ Ասեք այո՝ անելու համար։",
   "assistantSuggestPlanTrip": "Օգնիր պլանավորել ճամփորդություն",
   "assistantFieldCountryCount": "{count, plural, =1{Երկիր} other{Երկրներ}}",
   "assistantSettingTitle": "Փոխել կարգավորումը",
@@ -4039,7 +4044,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Չստացվեց։ Ստուգեք էկրանի քարտը։",
+  "talkNotDone": "Չստացվեց։ Ստուգեք մանրամասները էկրանին։",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

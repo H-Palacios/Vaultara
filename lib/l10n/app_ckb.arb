@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "بەرزی بکەرەوە بۆ ئەوەی لەبارەی تۆمار، گەشت و ڕێکخستنەکانتەوە بپرسیت و بە وشەی ئاسایی گۆڕانکاری بکەیت.",
   "assistantSeePlans": "بینینی پلانەکان",
   "assistantEmptyReply": "نەمتوانی وەڵامێک بدۆزمەوە. بە شێوازێکی تر بپرسە.",
-  "assistantDraftReady": "ئەمەم بۆ ئامادە کردوویت. بیپشکنە و پەنجە بنێ بە پشتڕاستکردنەوە.",
+  "assistantDraftReady": "ئەمە وردەکارییەکانە. بۆ پاشەکەوتکردن پشتڕاستکردنەوە دابگرە.",
   "assistantNewChat": "گفتوگۆی نوێ",
   "assistantPrivacyNote": "وەڵامەکان زیرەکی دەستکرد بەکاردەهێنن. پرسیارەکەت و تەنیا ئەو وردەکارییانەی تۆمار کە بۆ وەڵامدانەوە پێویستن دەنێردرێن بۆ دابینکەری زیرەکی دەستکردی ئێمە. تێبینییەکانی تۆمارە قفڵکراوەکان هەرگیز ناناردرێن. هیچ شتێک پاشەکەوت ناکرێت تا پشتڕاستی نەکەیتەوە.",
   "assistantActionAddTitle": "تۆماری نوێ",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "یارمەتیم بدە {name} نوێ بکەمەوە",
   "assistantSuggestExpired": "{name} بەسەرچووە. چی بکەم؟",
   "assistantSuggestTripReady": "ئایا ئامادەم بۆ گەشتەکەم بۆ {place}؟",
+  "assistantNextPetVaccines": "ڤاکسینەکان بۆ {name} زیاد بکە",
+  "assistantNextPetChip": "مایکرۆچیپەکە بۆ {name} زیاد بکە",
+  "assistantNextPetInsurance": "بیمەی ئاژەڵ بۆ {name} زیاد بکە",
+  "assistantNextPersonPassport": "پاسپۆرتێک بۆ {name} زیاد بکە",
+  "talkNextStep": "دواتر: {step}. بڵێ بەڵێ بۆ ئەنجامدانی.",
   "assistantSuggestPlanTrip": "یارمەتیم بدە گەشتێک پلان بکەم",
   "assistantFieldCountryCount": "{count, plural, =1{وڵات} other{وڵاتەکان}}",
   "assistantSettingTitle": "ڕێکخستنێک بگۆڕە",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "سەرکەوتوو نەبوو. کارتەکەی سەر شاشە بپشکنە.",
+  "talkNotDone": "سەرکەوتوو نەبوو. وردەکارییەکانی سەر شاشەکە بپشکنە.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

@@ -4875,7 +4875,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get assistantEmptyReply => 'Saya tidak dapat mencari jawapan. Cuba tanya dengan cara lain.';
 
   @override
-  String get assistantDraftReady => 'Saya telah menyediakan ini untuk anda. Semak dan ketik Sahkan.';
+  String get assistantDraftReady =>
+      'Ini butirannya. Ketik Sahkan untuk menyimpannya.';
 
   @override
   String get assistantNewChat => 'Sembang baharu';
@@ -6621,6 +6622,31 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Adakah saya bersedia untuk perjalanan ke $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Tambah vaksinasi untuk ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Tambah mikrocip untuk ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Tambah insurans haiwan untuk ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Tambah pasport untuk ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Seterusnya: ${step}. Sebut ya untuk melakukannya.';
   }
 
   @override
@@ -10301,7 +10327,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get talkNoVoice => 'Telefon anda tiada suara untuk bahasa ini, jadi jawapan dipaparkan tetapi tidak dibacakan.';
 
   @override
-  String get talkNotDone => 'Itu tidak berjaya. Semak kad pada skrin.';
+  String get talkNotDone => 'Itu tidak berjaya. Semak butiran pada skrin.';
 
   @override
   String get talkReady => 'Saya mendengar.';

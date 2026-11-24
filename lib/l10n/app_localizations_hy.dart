@@ -4909,7 +4909,8 @@ class AppLocalizationsHy extends AppLocalizations {
   String get assistantEmptyReply => 'Չկարողացա պատասխան գտնել։ Փորձեք հարցնել այլ կերպ։';
 
   @override
-  String get assistantDraftReady => 'Սա պատրաստել եմ ձեզ համար։ Ստուգեք և հպեք Հաստատել։';
+  String get assistantDraftReady =>
+      'Ահա մանրամասները։ Պահելու համար հպեք Հաստատել։';
 
   @override
   String get assistantNewChat => 'Նոր զրույց';
@@ -6672,6 +6673,31 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Պատրա՞ստ եմ ճամփորդությանը՝ $place';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Ավելացնել պատվաստումներ ${name}-ի համար';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Ավելացնել միկրոչիպը ${name}-ի համար';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Ավելացնել կենդանու ապահովագրություն ${name}-ի համար';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Ավելացնել անձնագիր ${name}-ի համար';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Հաջորդը՝ ${step}։ Ասեք այո՝ անելու համար։';
   }
 
   @override
@@ -10365,7 +10391,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get talkNoVoice => 'Ձեր հեռախոսը այս լեզվի ձայն չունի, ուստի պատասխանները ցուցադրվում են, բայց չեն կարդացվում։';
 
   @override
-  String get talkNotDone => 'Չստացվեց։ Ստուգեք էկրանի քարտը։';
+  String get talkNotDone => 'Չստացվեց։ Ստուգեք մանրամասները էկրանին։';
 
   @override
   String get talkReady => 'Լսում եմ։';

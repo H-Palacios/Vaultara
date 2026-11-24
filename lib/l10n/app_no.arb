@@ -1641,7 +1641,7 @@
   "assistantPremiumBody": "Oppgrader til Premium for å spørre om oppføringene, reisene og innstillingene dine og gjøre endringer med enkle ord.",
   "assistantSeePlans": "Se abonnementer",
   "assistantEmptyReply": "Jeg fant ikke noe svar. Prøv å spørre på en annen måte.",
-  "assistantDraftReady": "Jeg har laget dette til deg. Sjekk det og trykk på Bekreft.",
+  "assistantDraftReady": "Her er detaljene. Trykk på Bekreft for å lagre dem.",
   "assistantNewChat": "Ny samtale",
   "assistantPrivacyNote": "Svarene bruker KI. Spørsmålet ditt og bare detaljene om oppføringene som trengs for å svare, sendes til KI-leverandøren vår. Notater i låste oppføringer sendes aldri. Ingenting lagres før du bekrefter.",
   "assistantActionAddTitle": "Ny oppføring",
@@ -2117,6 +2117,11 @@
   "assistantSuggestRenew": "Hjelp meg å fornye {name}",
   "assistantSuggestExpired": "{name} har utløpt. Hva gjør jeg?",
   "assistantSuggestTripReady": "Er jeg klar for reisen til {place}?",
+  "assistantNextPetVaccines": "Legg til vaksiner for {name}",
+  "assistantNextPetChip": "Legg til mikrobrikken for {name}",
+  "assistantNextPetInsurance": "Legg til dyreforsikring for {name}",
+  "assistantNextPersonPassport": "Legg til et pass for {name}",
+  "talkNextStep": "Neste: {step}. Si ja for å gjøre det.",
   "assistantSuggestPlanTrip": "Hjelp meg å planlegge en reise",
   "assistantFieldCountryCount": "{count, plural, =1{Land} other{Land}}",
   "assistantSettingTitle": "Endre en innstilling",
@@ -4032,7 +4037,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Det gikk ikke. Sjekk kortet på skjermen.",
+  "talkNotDone": "Det gikk ikke gjennom. Sjekk detaljene på skjermen.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

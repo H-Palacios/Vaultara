@@ -4909,7 +4909,8 @@ class AppLocalizationsCa extends AppLocalizations {
   String get assistantEmptyReply => 'No he trobat cap resposta. Prova de preguntar-ho d’una altra manera.';
 
   @override
-  String get assistantDraftReady => 'Ho he preparat per a tu. Revisa-ho i toca Confirma.';
+  String get assistantDraftReady =>
+      'Aquí tens els detalls. Toca Confirma per desar-los.';
 
   @override
   String get assistantNewChat => 'Xat nou';
@@ -6672,6 +6673,31 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Estic preparat per al viatge a $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Afegeix les vacunes de ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Afegeix el microxip de ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Afegeix l\'assegurança de mascota de ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Afegeix un passaport per a ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Següent: ${step}. Digues sí per fer-ho.';
   }
 
   @override
@@ -10370,7 +10396,8 @@ class AppLocalizationsCa extends AppLocalizations {
   String get talkNoVoice => 'El telèfon no té veu per a aquest idioma, així que les respostes es mostren però no es llegeixen.';
 
   @override
-  String get talkNotDone => 'No s\'ha pogut fer. Revisa la targeta de la pantalla.';
+  String get talkNotDone =>
+      'No s\'ha pogut fer. Revisa els detalls a la pantalla.';
 
   @override
   String get talkReady => 'T\'escolto.';

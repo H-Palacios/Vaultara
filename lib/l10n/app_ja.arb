@@ -1646,7 +1646,7 @@
   "assistantPremiumBody": "アップグレードすると、記録、旅行、設定について質問したり、ふだんの言葉で変更したりできます。",
   "assistantSeePlans": "プランを見る",
   "assistantEmptyReply": "答えが見つかりませんでした。別の言い方で聞いてみてください。",
-  "assistantDraftReady": "こちらを準備しました。内容を確認して、確認をタップしてください。",
+  "assistantDraftReady": "詳細はこちらです。保存するには「確認」をタップしてください。",
   "assistantNewChat": "新しいチャット",
   "assistantPrivacyNote": "回答にはAIを使用します。質問と、回答に必要な記録の詳細だけが、AIの提供元に送信されます。ロックされた記録のメモは送信されません。確認するまで何も保存されません。",
   "assistantActionAddTitle": "新しい記録",
@@ -2122,6 +2122,11 @@
   "assistantSuggestRenew": "{name}の更新を手伝って",
   "assistantSuggestExpired": "{name}の期限が切れました。どうすればいいですか？",
   "assistantSuggestTripReady": "{place}への旅行の準備はできていますか？",
+  "assistantNextPetVaccines": "{name}のワクチン接種を追加",
+  "assistantNextPetChip": "{name}のマイクロチップを追加",
+  "assistantNextPetInsurance": "{name}のペット保険を追加",
+  "assistantNextPersonPassport": "{name}のパスポートを追加",
+  "talkNextStep": "次は：{step}。進めるには「はい」と言ってください。",
   "assistantSuggestPlanTrip": "旅行の計画を手伝って",
   "assistantFieldCountryCount": "{count, plural, =1{国} other{国}}",
   "assistantSettingTitle": "設定を変更",
@@ -4037,7 +4042,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "うまくいきませんでした。画面のカードを確認してください。",
+  "talkNotDone": "うまくいきませんでした。画面の詳細を確認してください。",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

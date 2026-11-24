@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "Prejdite na vyšší tarif, aby ste sa mohli pýtať na svoje záznamy, cesty a nastavenia a robiť zmeny jednoduchými slovami.",
   "assistantSeePlans": "Zobraziť tarify",
   "assistantEmptyReply": "Nenašla som odpoveď. Skúste sa opýtať inak.",
-  "assistantDraftReady": "Pripravila som to pre vás. Skontrolujte to a ťuknite na Potvrdiť.",
+  "assistantDraftReady": "Tu sú podrobnosti. Klepnutím na Potvrdiť ich uložíte.",
   "assistantNewChat": "Nový chat",
   "assistantPrivacyNote": "Odpovede využívajú AI. Vaša otázka a iba údaje o záznamoch potrebné na odpoveď sa odosielajú nášmu poskytovateľovi AI. Poznámky zamknutých záznamov sa nikdy neodosielajú. Nič sa neuloží, kým nepotvrdíte.",
   "assistantActionAddTitle": "Nový záznam",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "Pomôž mi obnoviť {name}",
   "assistantSuggestExpired": "Platnosť {name} vypršala. Čo mám robiť?",
   "assistantSuggestTripReady": "Som pripravený na cestu do {place}?",
+  "assistantNextPetVaccines": "Pridať očkovania pre {name}",
+  "assistantNextPetChip": "Pridať mikročip pre {name}",
+  "assistantNextPetInsurance": "Pridať poistenie zvieraťa pre {name}",
+  "assistantNextPersonPassport": "Pridať pas pre {name}",
+  "talkNextStep": "Ďalej: {step}. Povedzte áno a urobím to.",
   "assistantSuggestPlanTrip": "Pomôž mi naplánovať cestu",
   "assistantFieldCountryCount": "{count, plural, =1{Krajina} other{Krajiny}}",
   "assistantSettingTitle": "Zmeniť nastavenie",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Nepodarilo sa. Skontrolujte kartu na obrazovke.",
+  "talkNotDone": "To sa nepodarilo. Skontrolujte podrobnosti na obrazovke.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

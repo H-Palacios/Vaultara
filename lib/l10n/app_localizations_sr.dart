@@ -4956,7 +4956,8 @@ class AppLocalizationsSr extends AppLocalizations {
   String get assistantEmptyReply => 'Одговор није пронађен. Покушајте да питате на други начин.';
 
   @override
-  String get assistantDraftReady => 'Ово је припремљено за вас. Проверите и додирните Потврдите.';
+  String get assistantDraftReady =>
+      'Ево детаља. Додирните Потврдите да их сачувате.';
 
   @override
   String get assistantNewChat => 'Нови разговор';
@@ -6736,6 +6737,31 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Да ли сам спреман за путовање у $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Додај вакцинације за ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Додај микрочип за ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Додај осигурање љубимца за ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Додај пасош за ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Следеће: ${step}. Реците да и урадићу то.';
   }
 
   @override
@@ -10450,7 +10476,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get talkNoVoice => 'Ваш телефон нема глас за овај језик, па се одговори приказују, али не читају.';
 
   @override
-  String get talkNotDone => 'Није успело. Проверите картицу на екрану.';
+  String get talkNotDone => 'То није успело. Проверите детаље на екрану.';
 
   @override
   String get talkReady => 'Слушам.';
@@ -15667,7 +15693,8 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get assistantEmptyReply => 'Одговор није пронађен. Покушајте да питате на други начин.';
 
   @override
-  String get assistantDraftReady => 'Ово је припремљено за вас. Проверите и додирните Потврди.';
+  String get assistantDraftReady =>
+      'Ево детаља. Додирните Потврдите да их сачувате.';
 
   @override
   String get assistantNewChat => 'Нови разговор';
@@ -17447,6 +17474,31 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Да ли сам спреман за путовање у $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Додај вакцинације за ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Додај микрочип за ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Додај осигурање љубимца за ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Додај пасош за ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Следеће: ${step}. Реците да и урадићу то.';
   }
 
   @override
@@ -21161,7 +21213,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get talkNoVoice => 'Ваш телефон нема глас за овај језик, па се одговори приказују, али не читају.';
 
   @override
-  String get talkNotDone => 'Није успело. Проверите картицу на екрану.';
+  String get talkNotDone => 'То није успело. Проверите детаље на екрану.';
 
   @override
   String get talkReady => 'Слушам.';
@@ -26374,7 +26426,8 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get assistantEmptyReply => 'Nisam mogao da pronađem odgovor. Pokušajte da pitate na drugi način.';
 
   @override
-  String get assistantDraftReady => 'Ovo sam pripremio za vas. Proverite i dodirnite Potvrdite.';
+  String get assistantDraftReady =>
+      'Evo detalja. Dodirnite Potvrdite da ih sačuvate.';
 
   @override
   String get assistantNewChat => 'Novi razgovor';
@@ -28154,6 +28207,31 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Da li sam spreman za putovanje u $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Dodaj vakcinacije za ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Dodaj mikročip za ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Dodaj osiguranje ljubimca za ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Dodaj pasoš za ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Sledeće: ${step}. Recite da i uradiću to.';
   }
 
   @override
@@ -31868,7 +31946,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get talkNoVoice => 'Vaš telefon nema glas za ovaj jezik, pa se odgovori prikazuju, ali ne čitaju.';
 
   @override
-  String get talkNotDone => 'Nije uspelo. Proverite karticu na ekranu.';
+  String get talkNotDone => 'To nije uspelo. Proverite detalje na ekranu.';
 
   @override
   String get talkReady => 'Slušam.';

@@ -1672,7 +1672,7 @@
   "assistantPremiumBody": "ስለ መዝገቦችዎ፣ ጉዞዎችዎ እና ቅንብሮችዎ ለመጠየቅ እና በቀላል ቃላት ለውጦችን ለማድረግ ያሻሽሉ።",
   "assistantSeePlans": "እቅዶችን ይመልከቱ",
   "assistantEmptyReply": "መልስ ማግኘት አልቻልኩም። በሌላ መንገድ ለመጠየቅ ይሞክሩ።",
-  "assistantDraftReady": "ይህንን አዘጋጅቼልዎታለሁ። ያረጋግጡት እና አረጋግጥ ይንኩ።",
+  "assistantDraftReady": "ዝርዝሩ ይኸውና። ለማስቀመጥ አረጋግጥን ይንኩ።",
   "assistantNewChat": "አዲስ ውይይት",
   "assistantPrivacyNote": "መልሶች AI ይጠቀማሉ። ጥያቄዎ እና ለመመለስ የሚያስፈልጉ የመዝገብ ዝርዝሮች ብቻ ወደ AI አቅራቢያችን ይላካሉ። የተቆለፉ መዝገቦች ማስታወሻዎች በፍጹም አይላኩም። እስኪያረጋግጡ ድረስ ምንም አይቀመጥም።",
   "assistantActionAddTitle": "አዲስ መዝገብ",
@@ -2148,6 +2148,11 @@
   "assistantSuggestRenew": "{name}ን ለማደስ እርዱኝ",
   "assistantSuggestExpired": "{name} ጊዜው አልፏል። ምን ላድርግ?",
   "assistantSuggestTripReady": "ወደ {place} ለምሄደው ጉዞ ዝግጁ ነኝ?",
+  "assistantNextPetVaccines": "ለ{name} ክትባቶችን ያክሉ",
+  "assistantNextPetChip": "ለ{name} ማይክሮቺፑን ያክሉ",
+  "assistantNextPetInsurance": "ለ{name} የቤት እንስሳ ኢንሹራንስ ያክሉ",
+  "assistantNextPersonPassport": "ለ{name} ፓስፖርት ያክሉ",
+  "talkNextStep": "ቀጣይ፦ {step}። ለማድረግ አዎ ይበሉ።",
   "assistantSuggestPlanTrip": "ጉዞ ለማቀድ እርዱኝ",
   "assistantFieldCountryCount": "{count, plural, =1{አገር} other{አገሮች}}",
   "assistantSettingTitle": "ቅንብር ይቀይሩ",
@@ -4063,7 +4068,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "አልተሳካም። በማያ ገጹ ላይ ያለውን ካርድ ይመልከቱ።",
+  "talkNotDone": "አልተሳካም። በማያ ገጹ ላይ ያለውን ዝርዝር ይመልከቱ።",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

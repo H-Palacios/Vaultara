@@ -1651,7 +1651,7 @@
   "assistantPremiumBody": "อัปเกรดเพื่อถามเรื่องรายการ ทริป และการตั้งค่าของคุณ และแก้ไขด้วยภาษาง่าย ๆ",
   "assistantSeePlans": "ดูแผน",
   "assistantEmptyReply": "ฉันหาคำตอบไม่พบ ลองถามด้วยวิธีอื่น",
-  "assistantDraftReady": "ฉันเตรียมสิ่งนี้ไว้ให้คุณแล้ว ตรวจสอบแล้วแตะ ยืนยัน",
+  "assistantDraftReady": "นี่คือรายละเอียด แตะยืนยันเพื่อบันทึก",
   "assistantNewChat": "แชตใหม่",
   "assistantPrivacyNote": "คำตอบใช้ AI คำถามของคุณและเฉพาะรายละเอียดของรายการที่จำเป็นต่อการตอบจะถูกส่งไปยังผู้ให้บริการ AI ของเรา บันทึกของรายการที่ล็อกจะไม่ถูกส่งเลย จะไม่มีการบันทึกอะไรจนกว่าคุณจะยืนยัน",
   "assistantActionAddTitle": "รายการใหม่",
@@ -2127,6 +2127,11 @@
   "assistantSuggestRenew": "ช่วยต่ออายุ {name}",
   "assistantSuggestExpired": "{name} หมดอายุแล้ว ต้องทำอย่างไร",
   "assistantSuggestTripReady": "ฉันพร้อมสำหรับทริปไป {place} หรือยัง",
+  "assistantNextPetVaccines": "เพิ่มการฉีดวัคซีนของ {name}",
+  "assistantNextPetChip": "เพิ่มไมโครชิปของ {name}",
+  "assistantNextPetInsurance": "เพิ่มประกันสัตว์เลี้ยงของ {name}",
+  "assistantNextPersonPassport": "เพิ่มหนังสือเดินทางของ {name}",
+  "talkNextStep": "ต่อไป: {step} พูดว่าใช่เพื่อทำต่อ",
   "assistantSuggestPlanTrip": "ช่วยวางแผนทริป",
   "assistantFieldCountryCount": "{count, plural, =1{ประเทศ} other{ประเทศ}}",
   "assistantSettingTitle": "เปลี่ยนการตั้งค่า",
@@ -4042,7 +4047,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "ไม่สำเร็จ ตรวจสอบการ์ดบนหน้าจอ",
+  "talkNotDone": "ไม่สำเร็จ ตรวจสอบรายละเอียดบนหน้าจอ",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

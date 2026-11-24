@@ -4909,7 +4909,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get assistantEmptyReply => 'Ban sami amsa ba. Gwada yin tambayar ta wata hanya dabam.';
 
   @override
-  String get assistantDraftReady => 'Na shirya maka wannan. Duba shi ka taɓa Tabbatar.';
+  String get assistantDraftReady => 'Ga bayanan. Matsa Tabbatar don adana su.';
 
   @override
   String get assistantNewChat => 'Sabuwar hira';
@@ -6672,6 +6672,31 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Na shirya don tafiyata zuwa $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Ƙara allurar rigakafi ga ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Ƙara microchip ga ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Ƙara inshorar dabba ga ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Ƙara fasfo ga ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Na gaba: ${step}. Ka ce eh don yin sa.';
   }
 
   @override
@@ -10365,7 +10390,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get talkNoVoice => 'Wayarka ba ta da murya don wannan harshen, don haka ana nuna amsoshi amma ba a karanta su.';
 
   @override
-  String get talkNotDone => 'Bai yi nasara ba. Duba katin da ke kan allo.';
+  String get talkNotDone =>
+      'Hakan bai yi nasara ba. Duba bayanan da ke kan allo.';
 
   @override
   String get talkReady => 'Ina saurara.';

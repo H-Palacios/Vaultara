@@ -1384,7 +1384,7 @@
   "assistantPremiumBody": "ನಿಮ್ಮ ದಾಖಲೆಗಳು, ಪ್ರಯಾಣಗಳು ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳ ಬಗ್ಗೆ ಕೇಳಲು ಮತ್ತು ಸರಳ ಮಾತುಗಳಲ್ಲಿ ಬದಲಾವಣೆ ಮಾಡಲು Premium ಗೆ ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಿ.",
   "assistantSeePlans": "ಪ್ಲಾನ್‌ಗಳನ್ನು ನೋಡಿ",
   "assistantEmptyReply": "ನನಗೆ ಉತ್ತರ ಸಿಗಲಿಲ್ಲ. ಬೇರೆ ರೀತಿಯಲ್ಲಿ ಕೇಳಿ ನೋಡಿ.",
-  "assistantDraftReady": "ನಿಮಗಾಗಿ ಇದನ್ನು ಸಿದ್ಧಪಡಿಸಿದ್ದೇನೆ. ಪರಿಶೀಲಿಸಿ ಮತ್ತು ದೃಢೀಕರಿಸಿ ಒತ್ತಿ.",
+  "assistantDraftReady": "ವಿವರಗಳು ಇಲ್ಲಿವೆ. ಉಳಿಸಲು ದೃಢೀಕರಿಸಿ ಟ್ಯಾಪ್ ಮಾಡಿ.",
   "assistantNewChat": "ಹೊಸ ಚಾಟ್",
   "assistantPrivacyNote": "ಉತ್ತರಗಳು AI ಬಳಸುತ್ತವೆ. ನಿಮ್ಮ ಪ್ರಶ್ನೆ ಮತ್ತು ಉತ್ತರಿಸಲು ಬೇಕಾದ ದಾಖಲೆಯ ವಿವರಗಳು ಮಾತ್ರ ನಮ್ಮ AI ಪೂರೈಕೆದಾರರಿಗೆ ಕಳುಹಿಸಲಾಗುತ್ತದೆ. ಲಾಕ್ ಮಾಡಿದ ದಾಖಲೆಗಳ ಟಿಪ್ಪಣಿಗಳನ್ನು ಎಂದಿಗೂ ಕಳುಹಿಸಲಾಗುವುದಿಲ್ಲ. ನೀವು ದೃಢೀಕರಿಸುವವರೆಗೆ ಏನನ್ನೂ ಉಳಿಸಲಾಗುವುದಿಲ್ಲ.",
   "assistantActionAddTitle": "ಹೊಸ ದಾಖಲೆ",
@@ -1860,6 +1860,11 @@
   "assistantSuggestRenew": "{name} ನವೀಕರಿಸಲು ನನಗೆ ಸಹಾಯ ಮಾಡಿ",
   "assistantSuggestExpired": "{name} ಅವಧಿ ಮುಗಿದಿದೆ. ನಾನು ಏನು ಮಾಡಲಿ?",
   "assistantSuggestTripReady": "{place} ಪ್ರಯಾಣಕ್ಕೆ ನಾನು ಸಿದ್ಧನಿದ್ದೇನೆಯೇ?",
+  "assistantNextPetVaccines": "{name} ಗಾಗಿ ಲಸಿಕೆಗಳನ್ನು ಸೇರಿಸಿ",
+  "assistantNextPetChip": "{name} ಗಾಗಿ ಮೈಕ್ರೋಚಿಪ್ ಸೇರಿಸಿ",
+  "assistantNextPetInsurance": "{name} ಗಾಗಿ ಸಾಕುಪ್ರಾಣಿ ವಿಮೆ ಸೇರಿಸಿ",
+  "assistantNextPersonPassport": "{name} ಗಾಗಿ ಪಾಸ್‌ಪೋರ್ಟ್ ಸೇರಿಸಿ",
+  "talkNextStep": "ಮುಂದೆ: {step}. ಮಾಡಲು ಹೌದು ಎನ್ನಿ.",
   "assistantSuggestPlanTrip": "ಪ್ರಯಾಣ ಯೋಜಿಸಲು ನನಗೆ ಸಹಾಯ ಮಾಡಿ",
   "assistantFieldCountryCount": "{count, plural, =1{ದೇಶ} other{ದೇಶಗಳು}}",
   "assistantSettingTitle": "ಸೆಟ್ಟಿಂಗ್ ಬದಲಾಯಿಸಿ",
@@ -3775,7 +3780,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "ಆಗಲಿಲ್ಲ. ಪರದೆಯ ಮೇಲಿನ ಕಾರ್ಡ್ ನೋಡಿ.",
+  "talkNotDone": "ಅದು ಆಗಲಿಲ್ಲ. ಪರದೆಯಲ್ಲಿನ ವಿವರಗಳನ್ನು ಪರಿಶೀಲಿಸಿ.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

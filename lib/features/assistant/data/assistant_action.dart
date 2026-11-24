@@ -561,6 +561,18 @@ class AssistantAction {
   /// The map this card was read from, with plain string keys.
   Map<String, dynamic>? get sent => _sent[this];
 
+  /// The server made this card to correct one still waiting for Confirm
+  /// in an earlier answer, which it replaces.
+  bool get replaces => sent?['replaces'] == true;
+
+  /// True when [other] is the same kind of card about the same thing, so
+  /// this card can replace it.
+  bool sameTargetAs(AssistantAction other) =>
+      type == other.type &&
+      recordId == other.recordId &&
+      tripId == other.tripId &&
+      (type != AssistantActionType.personEdit || personId == other.personId);
+
   static AssistantAction? fromMap(Object? raw) {
     final action = _parse(raw);
     if (action != null && raw is Map) {

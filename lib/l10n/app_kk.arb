@@ -1652,7 +1652,7 @@
   "assistantPremiumBody": "Жазбаларыңыз, сапарларыңыз бен баптауларыңыз туралы сұрап, қарапайым сөзбен өзгеріс енгізу үшін тарифті жаңартыңыз.",
   "assistantSeePlans": "Тарифтерді көру",
   "assistantEmptyReply": "Жауап таба алмадым. Басқаша сұрап көріңіз.",
-  "assistantDraftReady": "Мұны сізге арнап дайындадым. Тексеріп, Растау түймесін басыңыз.",
+  "assistantDraftReady": "Мәліметтер осында. Сақтау үшін Растау түймесін түртіңіз.",
   "assistantNewChat": "Жаңа чат",
   "assistantPrivacyNote": "Жауаптар AI көмегімен жасалады. Сұрағыңыз бен жауап беруге қажет жазба мәліметтері ғана біздің AI провайдерімізге жіберіледі. Құлыпталған жазбалардың ескертпелері ешқашан жіберілмейді. Сіз растамайынша ештеңе сақталмайды.",
   "assistantActionAddTitle": "Жаңа жазба",
@@ -2128,6 +2128,11 @@
   "assistantSuggestRenew": "{name} жаңартуға көмектес",
   "assistantSuggestExpired": "{name} мерзімі өтті. Не істеуім керек?",
   "assistantSuggestTripReady": "{place} сапарына дайынмын ба?",
+  "assistantNextPetVaccines": "{name} үшін екпелерді қосу",
+  "assistantNextPetChip": "{name} үшін микрочипті қосу",
+  "assistantNextPetInsurance": "{name} үшін үй жануарын сақтандыруды қосу",
+  "assistantNextPersonPassport": "{name} үшін төлқұжат қосу",
+  "talkNextStep": "Келесі: {step}. Орындау үшін иә деңіз.",
   "assistantSuggestPlanTrip": "Сапар жоспарлауға көмектес",
   "assistantFieldCountryCount": "{count, plural, =1{Ел} other{Елдер}}",
   "assistantSettingTitle": "Параметрді өзгерту",
@@ -4043,7 +4048,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Болмады. Экрандағы картаны тексеріңіз.",
+  "talkNotDone": "Бұл орындалмады. Экрандағы мәліметтерді тексеріңіз.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

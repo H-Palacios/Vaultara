@@ -4875,7 +4875,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get assistantEmptyReply => 'Tôi không tìm được câu trả lời. Hãy thử hỏi theo cách khác.';
 
   @override
-  String get assistantDraftReady => 'Tôi đã soạn sẵn mục này cho bạn. Hãy kiểm tra và nhấn Xác nhận.';
+  String get assistantDraftReady =>
+      'Đây là thông tin chi tiết. Chạm Xác nhận để lưu.';
 
   @override
   String get assistantNewChat => 'Cuộc trò chuyện mới';
@@ -6621,6 +6622,31 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Tôi đã sẵn sàng cho chuyến đi đến $place chưa?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Thêm tiêm phòng cho ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Thêm vi mạch cho ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Thêm bảo hiểm thú cưng cho ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Thêm hộ chiếu cho ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Tiếp theo: ${step}. Nói có để thực hiện.';
   }
 
   @override
@@ -10301,7 +10327,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get talkNoVoice => 'Điện thoại không có giọng đọc cho ngôn ngữ này, nên câu trả lời được hiển thị nhưng không đọc.';
 
   @override
-  String get talkNotDone => 'Không thực hiện được. Hãy xem thẻ trên màn hình.';
+  String get talkNotDone =>
+      'Việc đó chưa thực hiện được. Hãy kiểm tra thông tin trên màn hình.';
 
   @override
   String get talkReady => 'Tôi đang nghe.';

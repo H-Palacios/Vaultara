@@ -1646,7 +1646,7 @@
   "assistantPremiumBody": "Uasghrádaigh chun ceisteanna a chur faoi do thaifid, do thurais agus do shocruithe agus athruithe a dhéanamh i bhfocail shimplí.",
   "assistantSeePlans": "Féach ar na pleananna",
   "assistantEmptyReply": "Níor aimsigh mé freagra. Bain triail as ceist a chur ar bhealach eile.",
-  "assistantDraftReady": "D’ullmhaigh mé é seo duit. Seiceáil é agus tapáil Deimhnigh.",
+  "assistantDraftReady": "Seo na sonraí. Tapáil Deimhnigh chun iad a shábháil.",
   "assistantNewChat": "Comhrá nua",
   "assistantPrivacyNote": "Úsáideann na freagraí AI. Seoltar do cheist agus na sonraí taifid amháin atá riachtanach don fhreagra chuig ár soláthraí AI. Ní sheoltar nótaí de thaifid faoi ghlas choíche. Ní shábháiltear aon rud go dtí go ndeimhníonn tú é.",
   "assistantActionAddTitle": "Taifead nua",
@@ -2122,6 +2122,11 @@
   "assistantSuggestRenew": "Cabhraigh liom {name} a athnuachan",
   "assistantSuggestExpired": "Tá {name} imithe in éag. Cad a dhéanfaidh mé?",
   "assistantSuggestTripReady": "An bhfuil mé réidh do mo thuras go {place}?",
+  "assistantNextPetVaccines": "Cuir vacsaínithe le haghaidh {name} leis",
+  "assistantNextPetChip": "Cuir an micrishlis le haghaidh {name} leis",
+  "assistantNextPetInsurance": "Cuir árachas peata le haghaidh {name} leis",
+  "assistantNextPersonPassport": "Cuir pas le haghaidh {name} leis",
+  "talkNextStep": "Ar aghaidh: {step}. Abair tá chun é a dhéanamh.",
   "assistantSuggestPlanTrip": "Cabhraigh liom turas a phleanáil",
   "assistantFieldCountryCount": "{count, plural, =1{Tír} other{Tíortha}}",
   "assistantSettingTitle": "Athraigh socrú",
@@ -4037,7 +4042,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Níor éirigh leis. Seiceáil an cárta ar an scáileán.",
+  "talkNotDone": "Níor éirigh leis sin. Seiceáil na sonraí ar an scáileán.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

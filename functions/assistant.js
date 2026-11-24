@@ -818,7 +818,7 @@ const NAMES_V16 = new Set(TOOLS_V16.map((t) => t.name));
 // Protocol 17: adding a pet from the chat.
 const V17 = require("./assistant-v17")({ str, pushAction, draftReady });
 const TOOLS_V17 = [
-  ...TOOLS_V16.filter((t) => t.name !== "suggest_replies"),
+  ...TOOLS_V16.filter((t) => t.name !== "suggest_replies").map(V17.withFields),
   ...V17.TOOLS,
   SUGGEST_REPLIES,
 ];
@@ -2187,6 +2187,13 @@ function proposeSetting(input, actions, settings = SETTINGS) {
 
 async function runTool(ctx, name, input, actions, allowed) {
   if (!allowed.has(name)) return { error: "Unknown tool." };
+  if (ctx.v17) {
+    return V17.around(ctx, name, input, actions, (n, i) => runToolCore(ctx, n, i, actions));
+  }
+  return runToolCore(ctx, name, input, actions);
+}
+
+async function runToolCore(ctx, name, input, actions) {
   try {
     switch (name) {
       case "list_records":

@@ -1639,7 +1639,7 @@
   "assistantPremiumBody": "Tingkatkan ke Premium untuk bertanya tentang catatan, perjalanan, dan pengaturan Anda, serta membuat perubahan dengan kata-kata biasa.",
   "assistantSeePlans": "Lihat paket",
   "assistantEmptyReply": "Saya tidak menemukan jawaban. Coba bertanya dengan cara lain.",
-  "assistantDraftReady": "Saya sudah menyiapkan ini untuk Anda. Periksa lalu ketuk Konfirmasi.",
+  "assistantDraftReady": "Ini detailnya. Ketuk Konfirmasi untuk menyimpannya.",
   "assistantNewChat": "Obrolan baru",
   "assistantPrivacyNote": "Jawaban memakai AI. Pertanyaan Anda dan hanya detail catatan yang diperlukan untuk menjawabnya dikirim ke penyedia AI kami. Catatan dari catatan yang terkunci tidak pernah dikirim. Tidak ada yang disimpan sampai Anda mengonfirmasi.",
   "assistantActionAddTitle": "Catatan baru",
@@ -2115,6 +2115,11 @@
   "assistantSuggestRenew": "Bantu saya memperpanjang {name}",
   "assistantSuggestExpired": "{name} sudah kedaluwarsa. Apa yang harus saya lakukan?",
   "assistantSuggestTripReady": "Apakah saya siap untuk perjalanan ke {place}?",
+  "assistantNextPetVaccines": "Tambahkan vaksinasi untuk {name}",
+  "assistantNextPetChip": "Tambahkan microchip untuk {name}",
+  "assistantNextPetInsurance": "Tambahkan asuransi hewan untuk {name}",
+  "assistantNextPersonPassport": "Tambahkan paspor untuk {name}",
+  "talkNextStep": "Berikutnya: {step}. Katakan ya untuk melakukannya.",
   "assistantSuggestPlanTrip": "Bantu saya merencanakan perjalanan",
   "assistantFieldCountryCount": "{count, plural, =1{Negara} other{Negara}}",
   "assistantSettingTitle": "Ubah pengaturan",
@@ -4030,7 +4035,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Itu gagal. Periksa kartu di layar.",
+  "talkNotDone": "Itu tidak berhasil. Periksa detail di layar.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

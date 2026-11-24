@@ -1639,7 +1639,7 @@
   "assistantPremiumBody": "Uppfærðu til að spyrja um færslurnar þínar, ferðir og stillingar og gera breytingar með einföldum orðum.",
   "assistantSeePlans": "Skoða áskriftir",
   "assistantEmptyReply": "Ég fann ekkert svar. Prófaðu að spyrja á annan hátt.",
-  "assistantDraftReady": "Ég útbjó þetta fyrir þig. Yfirfarðu það og ýttu á Staðfesta.",
+  "assistantDraftReady": "Hér eru upplýsingarnar. Ýttu á Staðfesta til að vista þær.",
   "assistantNewChat": "Nýtt spjall",
   "assistantPrivacyNote": "Svörin nota gervigreind. Spurningin þín og aðeins þær upplýsingar um færslur sem þarf til að svara eru sendar til gervigreindarþjónustu okkar. Athugasemdir í læstum færslum eru aldrei sendar. Ekkert er vistað fyrr en þú staðfestir.",
   "assistantActionAddTitle": "Ný færsla",
@@ -2115,6 +2115,11 @@
   "assistantSuggestRenew": "Hjálpaðu mér að endurnýja {name}",
   "assistantSuggestExpired": "{name} er útrunnið. Hvað geri ég?",
   "assistantSuggestTripReady": "Er ég tilbúin/n fyrir ferðina til {place}?",
+  "assistantNextPetVaccines": "Bæta við bólusetningum fyrir {name}",
+  "assistantNextPetChip": "Bæta við örmerki fyrir {name}",
+  "assistantNextPetInsurance": "Bæta við gæludýratryggingu fyrir {name}",
+  "assistantNextPersonPassport": "Bæta við vegabréfi fyrir {name}",
+  "talkNextStep": "Næst: {step}. Segðu já til að gera það.",
   "assistantSuggestPlanTrip": "Hjálpaðu mér að skipuleggja ferð",
   "assistantFieldCountryCount": "{count, plural, =1{Land} other{Lönd}}",
   "assistantSettingTitle": "Breyta stillingu",
@@ -4030,7 +4035,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Það tókst ekki. Skoðaðu spjaldið á skjánum.",
+  "talkNotDone": "Þetta tókst ekki. Skoðaðu upplýsingarnar á skjánum.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

@@ -1651,7 +1651,7 @@
   "assistantPremiumBody": "మీ రికార్డులు, ట్రిప్‌లు మరియు సెట్టింగ్‌ల గురించి అడగడానికి మరియు సులభమైన మాటల్లో మార్పులు చేయడానికి అప్‌గ్రేడ్ చేయండి.",
   "assistantSeePlans": "ప్లాన్‌లు చూడండి",
   "assistantEmptyReply": "నాకు సమాధానం దొరకలేదు. వేరే విధంగా అడిగి చూడండి.",
-  "assistantDraftReady": "దీన్ని మీ కోసం సిద్ధం చేశాను. తనిఖీ చేసి నిర్ధారించండి నొక్కండి.",
+  "assistantDraftReady": "వివరాలు ఇవే. సేవ్ చేయడానికి నిర్ధారించండి నొక్కండి.",
   "assistantNewChat": "కొత్త చాట్",
   "assistantPrivacyNote": "సమాధానాలు AIని ఉపయోగిస్తాయి. మీ ప్రశ్న మరియు సమాధానానికి అవసరమైన రికార్డు వివరాలు మాత్రమే మా AI ప్రొవైడర్‌కు పంపబడతాయి. లాక్ చేసిన రికార్డుల నోట్స్ ఎప్పటికీ పంపబడవు. మీరు నిర్ధారించే వరకు ఏదీ సేవ్ చేయబడదు.",
   "assistantActionAddTitle": "కొత్త రికార్డు",
@@ -2127,6 +2127,11 @@
   "assistantSuggestRenew": "{name} పునరుద్ధరించడంలో సహాయం చేయి",
   "assistantSuggestExpired": "{name} గడువు ముగిసింది. నేను ఏమి చేయాలి?",
   "assistantSuggestTripReady": "{place} ట్రిప్‌కు నేను సిద్ధంగా ఉన్నానా?",
+  "assistantNextPetVaccines": "{name} కోసం టీకాలు జోడించండి",
+  "assistantNextPetChip": "{name} కోసం మైక్రోచిప్ జోడించండి",
+  "assistantNextPetInsurance": "{name} కోసం పెంపుడు జంతువు బీమా జోడించండి",
+  "assistantNextPersonPassport": "{name} కోసం పాస్‌పోర్ట్ జోడించండి",
+  "talkNextStep": "తర్వాత: {step}. చేయడానికి అవును అనండి.",
   "assistantSuggestPlanTrip": "ట్రిప్ ప్లాన్ చేయడంలో సహాయం చేయి",
   "assistantFieldCountryCount": "{count, plural, =1{దేశం} other{దేశాలు}}",
   "assistantSettingTitle": "సెట్టింగ్ మార్చండి",
@@ -4042,7 +4047,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "అది జరగలేదు. స్క్రీన్‌పై కార్డ్ చూడండి.",
+  "talkNotDone": "అది జరగలేదు. స్క్రీన్‌పై వివరాలు చూడండి.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

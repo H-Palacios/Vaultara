@@ -1641,7 +1641,7 @@
   "assistantPremiumBody": "Αναβαθμίστε για να ρωτάτε για τις εγγραφές, τα ταξίδια και τις ρυθμίσεις σας και να κάνετε αλλαγές με απλά λόγια.",
   "assistantSeePlans": "Δείτε τα προγράμματα",
   "assistantEmptyReply": "Δεν βρήκα απάντηση. Δοκιμάστε να ρωτήσετε με άλλον τρόπο.",
-  "assistantDraftReady": "Το ετοίμασα για εσάς. Ελέγξτε το και πατήστε Επιβεβαίωση.",
+  "assistantDraftReady": "Ορίστε τα στοιχεία. Πατήστε Επιβεβαίωση για αποθήκευση.",
   "assistantNewChat": "Νέα συνομιλία",
   "assistantPrivacyNote": "Οι απαντήσεις χρησιμοποιούν τεχνητή νοημοσύνη. Η ερώτησή σας και μόνο οι λεπτομέρειες εγγραφών που χρειάζονται για την απάντηση στέλνονται στον πάροχο τεχνητής νοημοσύνης μας. Οι σημειώσεις των κλειδωμένων εγγραφών δεν στέλνονται ποτέ. Τίποτα δεν αποθηκεύεται μέχρι να επιβεβαιώσετε.",
   "assistantActionAddTitle": "Νέα εγγραφή",
@@ -2117,6 +2117,11 @@
   "assistantSuggestRenew": "Βοήθησέ με να ανανεώσω: {name}",
   "assistantSuggestExpired": "Το {name} έληξε. Τι να κάνω;",
   "assistantSuggestTripReady": "Είμαι έτοιμος για το ταξίδι: {place};",
+  "assistantNextPetVaccines": "Προσθήκη εμβολίων για {name}",
+  "assistantNextPetChip": "Προσθήκη μικροτσίπ για {name}",
+  "assistantNextPetInsurance": "Προσθήκη ασφάλισης κατοικιδίου για {name}",
+  "assistantNextPersonPassport": "Προσθήκη διαβατηρίου για {name}",
+  "talkNextStep": "Επόμενο: {step}. Πείτε ναι για να γίνει.",
   "assistantSuggestPlanTrip": "Βοήθησέ με να σχεδιάσω ένα ταξίδι",
   "assistantFieldCountryCount": "{count, plural, =1{Χώρα} other{Χώρες}}",
   "assistantSettingTitle": "Αλλαγή ρύθμισης",
@@ -4032,7 +4037,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Δεν ολοκληρώθηκε. Δείτε την κάρτα στην οθόνη.",
+  "talkNotDone": "Δεν ολοκληρώθηκε. Ελέγξτε τα στοιχεία στην οθόνη.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

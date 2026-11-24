@@ -1384,7 +1384,7 @@
   "assistantPremiumBody": "Преминете към Premium, за да питате за записите, пътуванията и настройките си и да правите промени с прости думи.",
   "assistantSeePlans": "Вижте плановете",
   "assistantEmptyReply": "Не намерих отговор. Опитайте да попитате по друг начин.",
-  "assistantDraftReady": "Подготвих това за вас. Проверете го и натиснете Потвърждаване.",
+  "assistantDraftReady": "Ето подробностите. Докоснете Потвърждаване, за да ги запазите.",
   "assistantNewChat": "Нов чат",
   "assistantPrivacyNote": "Отговорите използват ИИ. Въпросът ви и само данните за записите, нужни за отговора, се изпращат на нашия доставчик на ИИ. Бележките на заключените записи никога не се изпращат. Нищо не се запазва, докато не потвърдите.",
   "assistantActionAddTitle": "Нов запис",
@@ -1860,6 +1860,11 @@
   "assistantSuggestRenew": "Помогни ми да подновя {name}",
   "assistantSuggestExpired": "{name} е изтекъл. Какво да направя?",
   "assistantSuggestTripReady": "Готов ли съм за пътуването до {place}?",
+  "assistantNextPetVaccines": "Добавете ваксинации за {name}",
+  "assistantNextPetChip": "Добавете микрочипа за {name}",
+  "assistantNextPetInsurance": "Добавете застраховка за {name}",
+  "assistantNextPersonPassport": "Добавете паспорт за {name}",
+  "talkNextStep": "Следва: {step}. Кажете да, за да го направите.",
   "assistantSuggestPlanTrip": "Помогни ми да планирам пътуване",
   "assistantFieldCountryCount": "{count, plural, =1{Държава} other{Държави}}",
   "assistantSettingTitle": "Промяна на настройка",
@@ -3775,7 +3780,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Не мина. Проверете картата на екрана.",
+  "talkNotDone": "Това не мина. Проверете подробностите на екрана.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

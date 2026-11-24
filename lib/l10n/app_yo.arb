@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "Gòkè sí ètò tó ga jù láti béèrè nípa àwọn igbasilẹ, ìrìn àjò àti ètò rẹ, kí o sì ṣe àyípadà ní èdè tó rọrùn.",
   "assistantSeePlans": "Wo àwọn ètò",
   "assistantEmptyReply": "Mi ò rí ìdáhùn. Gbìyànjú láti béèrè ní ọ̀nà mìíràn.",
-  "assistantDraftReady": "Mo ti ṣètò èyí fún ọ. Yẹ̀ ẹ́ wò kí o sì tẹ Jẹ́rìísí.",
+  "assistantDraftReady": "Àwọn àlàyé nìyí. Tẹ Jẹ́risi láti fi wọ́n pamọ́.",
   "assistantNewChat": "Ìbánisọ̀rọ̀ tuntun",
   "assistantPrivacyNote": "AI ni ó ń dáhùn. Ìbéèrè rẹ àti àwọn àlàyé igbasilẹ tí a nílò láti dáhùn nìkan ni a ń fi ránṣẹ́ sí olùpèsè AI wa. A kì í fi àwọn àkọsílẹ̀ àwọn igbasilẹ tí a ti tì ránṣẹ́ rárá. A kò ní fi nǹkan kankan pamọ́ títí tí o fi jẹ́rìísí.",
   "assistantActionAddTitle": "Igbasilẹ tuntun",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "Ràn mí lọ́wọ́ láti sọ {name} di tuntun",
   "assistantSuggestExpired": "{name} ti parí. Kí ni kí n ṣe?",
   "assistantSuggestTripReady": "Ṣé mo ti ṣetán fún ìrìn àjò mi sí {place}?",
+  "assistantNextPetVaccines": "Ṣafikun àwọn abẹ́rẹ́ àjẹsára fún {name}",
+  "assistantNextPetChip": "Ṣafikun microchip fún {name}",
+  "assistantNextPetInsurance": "Ṣafikun ìbánigbófò ẹranko fún {name}",
+  "assistantNextPersonPassport": "Ṣafikun ìwé ìrìnnà fún {name}",
+  "talkNextStep": "Èyí tó kàn: {step}. Sọ bẹ́ẹ̀ni láti ṣe é.",
   "assistantSuggestPlanTrip": "Ràn mí lọ́wọ́ láti gbèrò ìrìn àjò",
   "assistantFieldCountryCount": "{count, plural, =1{Orílẹ̀-èdè} other{Àwọn orílẹ̀-èdè}}",
   "assistantSettingTitle": "Yí ètò kan padà",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Kò ṣẹlẹ̀. Ṣàyẹ̀wò káàdì lórí ìbòjú.",
+  "talkNotDone": "Ìyẹn kò ṣe é ṣe. Ṣàyẹ̀wò àwọn àlàyé lórí ìbòjú.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

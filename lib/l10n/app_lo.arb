@@ -1652,7 +1652,7 @@
   "assistantPremiumBody": "ອັບເກຣດເພື່ອຖາມກ່ຽວກັບບັນທຶກ, ການເດີນທາງ ແລະ ການຕັ້ງຄ່າຂອງທ່ານ ແລະ ປ່ຽນແປງດ້ວຍຄຳເວົ້າງ່າຍໆ.",
   "assistantSeePlans": "ເບິ່ງແພັກເກັດ",
   "assistantEmptyReply": "ຂ້ອຍຫາຄຳຕອບບໍ່ພົບ. ລອງຖາມດ້ວຍວິທີອື່ນ.",
-  "assistantDraftReady": "ຂ້ອຍກຽມສິ່ງນີ້ໃຫ້ທ່ານແລ້ວ. ກວດເບິ່ງແລ້ວແຕະ ຢືນຢັນ.",
+  "assistantDraftReady": "ນີ້ແມ່ນລາຍລະອຽດ. ແຕະ ຢືນຢັນ ເພື່ອບັນທຶກ.",
   "assistantNewChat": "ແຊັດໃໝ່",
   "assistantPrivacyNote": "ຄຳຕອບໃຊ້ AI. ຄຳຖາມຂອງທ່ານ ແລະ ສະເພາະລາຍລະອຽດບັນທຶກທີ່ຈຳເປັນໃນການຕອບຖືກສົ່ງໄປຍັງຜູ້ໃຫ້ບໍລິການ AI ຂອງພວກເຮົາ. ບັນທຶກຍ່ອຍຂອງບັນທຶກທີ່ລັອກຈະບໍ່ຖືກສົ່ງເດັດຂາດ. ຈະບໍ່ມີຫຍັງຖືກບັນທຶກຈົນກວ່າທ່ານຢືນຢັນ.",
   "assistantActionAddTitle": "ບັນທຶກໃໝ່",
@@ -2128,6 +2128,11 @@
   "assistantSuggestRenew": "ຊ່ວຍຂ້ອຍຕໍ່ອາຍຸ {name}",
   "assistantSuggestExpired": "{name} ໝົດອາຍຸແລ້ວ. ຂ້ອຍຄວນເຮັດແນວໃດ?",
   "assistantSuggestTripReady": "ຂ້ອຍພ້ອມສຳລັບການເດີນທາງໄປ {place} ແລ້ວບໍ?",
+  "assistantNextPetVaccines": "ເພີ່ມການສັກຢາກັນພະຍາດສຳລັບ {name}",
+  "assistantNextPetChip": "ເພີ່ມໄມໂຄຣຊິບສຳລັບ {name}",
+  "assistantNextPetInsurance": "ເພີ່ມປະກັນໄພສັດລ້ຽງສຳລັບ {name}",
+  "assistantNextPersonPassport": "ເພີ່ມໜັງສືຜ່ານແດນສຳລັບ {name}",
+  "talkNextStep": "ຕໍ່ໄປ: {step}. ເວົ້າວ່າ ແມ່ນ ເພື່ອເຮັດ.",
   "assistantSuggestPlanTrip": "ຊ່ວຍຂ້ອຍວາງແຜນການເດີນທາງ",
   "assistantFieldCountryCount": "{count, plural, =1{ປະເທດ} other{ປະເທດ}}",
   "assistantSettingTitle": "ປ່ຽນການຕັ້ງຄ່າ",
@@ -4043,7 +4048,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "ບໍ່ສຳເລັດ. ກວດບັດໃນໜ້າຈໍ.",
+  "talkNotDone": "ບໍ່ສຳເລັດ. ກວດເບິ່ງລາຍລະອຽດຢູ່ໜ້າຈໍ.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

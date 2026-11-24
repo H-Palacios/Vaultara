@@ -4909,7 +4909,8 @@ class AppLocalizationsPs extends AppLocalizations {
   String get assistantEmptyReply => 'ما ځواب ونه موند. په بل ډول وپوښتئ.';
 
   @override
-  String get assistantDraftReady => 'دا ستاسو لپاره چمتو شو. وګورئ او تایید کړئ ټک کړئ.';
+  String get assistantDraftReady =>
+      'دا جزئیات دي. د خوندي کولو لپاره تایید کړئ کېکاږئ.';
 
   @override
   String get assistantNewChat => 'نوې خبرې اترې';
@@ -6672,6 +6673,31 @@ class AppLocalizationsPs extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'ایا زه $place ته د سفر لپاره چمتو یم؟';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'د ${name} لپاره واکسینونه اضافه کړئ';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'د ${name} لپاره مایکروچیپ اضافه کړئ';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'د ${name} لپاره د څاروي بیمه اضافه کړئ';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'د ${name} لپاره پاسپورټ اضافه کړئ';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'بل: ${step}. د کولو لپاره هو ووایاست.';
   }
 
   @override
@@ -10365,7 +10391,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String get talkNoVoice => 'ستاسو تلیفون د دې ژبې غږ نه لري، نو ځوابونه ښودل کېږي خو نه لوستل کېږي.';
 
   @override
-  String get talkNotDone => 'ونشو. په سکرین کارت وګورئ.';
+  String get talkNotDone => 'دا ونه شو. په پرده کې جزئیات وګورئ.';
 
   @override
   String get talkReady => 'زه اورم.';

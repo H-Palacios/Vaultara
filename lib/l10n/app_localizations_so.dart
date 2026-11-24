@@ -4908,7 +4908,8 @@ class AppLocalizationsSo extends AppLocalizations {
   String get assistantEmptyReply => 'Jawaab ma helin. Isku day inaad si kale u weydiiso.';
 
   @override
-  String get assistantDraftReady => 'Tan waan kuu diyaariyay. Hubi oo taabo Xaqiiji.';
+  String get assistantDraftReady =>
+      'Kuwani waa faahfaahinta. Taabo Xaqiiji si aad u kaydiso.';
 
   @override
   String get assistantNewChat => 'Wada hadal cusub';
@@ -6671,6 +6672,31 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Ma u diyaarsanahay safarkayga $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Ku dar tallaalada ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Ku dar microchip-ka ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Ku dar caymiska xayawaanka ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Ku dar baasaboor ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Xiga: ${step}. Dheh haa si loo sameeyo.';
   }
 
   @override
@@ -10364,7 +10390,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get talkNoVoice => 'Taleefankaagu ma laha cod luqaddan, sidaas darteed jawaabaha waa la muujiyaa laakiin lama akhriyo.';
 
   @override
-  String get talkNotDone => 'Ma dhicin. Hubi kaarka shaashadda.';
+  String get talkNotDone => 'Taasi ma dhicin. Hubi faahfaahinta shaashadda.';
 
   @override
   String get talkReady => 'Waan dhegeysanayaa.';

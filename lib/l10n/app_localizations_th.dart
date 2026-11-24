@@ -4863,7 +4863,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get assistantEmptyReply => 'ฉันหาคำตอบไม่พบ ลองถามด้วยวิธีอื่น';
 
   @override
-  String get assistantDraftReady => 'ฉันเตรียมสิ่งนี้ไว้ให้คุณแล้ว ตรวจสอบแล้วแตะ ยืนยัน';
+  String get assistantDraftReady => 'นี่คือรายละเอียด แตะยืนยันเพื่อบันทึก';
 
   @override
   String get assistantNewChat => 'แชตใหม่';
@@ -6609,6 +6609,31 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'ฉันพร้อมสำหรับทริปไป $place หรือยัง';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'เพิ่มการฉีดวัคซีนของ ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'เพิ่มไมโครชิปของ ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'เพิ่มประกันสัตว์เลี้ยงของ ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'เพิ่มหนังสือเดินทางของ ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'ต่อไป: ${step} พูดว่าใช่เพื่อทำต่อ';
   }
 
   @override
@@ -10289,7 +10314,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get talkNoVoice => 'โทรศัพท์ของคุณไม่มีเสียงสำหรับภาษานี้ จึงแสดงคำตอบแต่ไม่อ่านออกเสียง';
 
   @override
-  String get talkNotDone => 'ไม่สำเร็จ ตรวจสอบการ์ดบนหน้าจอ';
+  String get talkNotDone => 'ไม่สำเร็จ ตรวจสอบรายละเอียดบนหน้าจอ';
 
   @override
   String get talkReady => 'ฉันกำลังฟังอยู่';

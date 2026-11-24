@@ -1665,7 +1665,7 @@
   "assistantPremiumBody": "আপনার রেকর্ড, ভ্রমণ ও সেটিংস সম্পর্কে জিজ্ঞাসা করতে এবং সহজ ভাষায় পরিবর্তন করতে আপগ্রেড করুন।",
   "assistantSeePlans": "প্ল্যান দেখুন",
   "assistantEmptyReply": "আমি উত্তর খুঁজে পাইনি। অন্যভাবে জিজ্ঞাসা করে দেখুন।",
-  "assistantDraftReady": "আমি এটি আপনার জন্য তৈরি করেছি। এটি দেখে নিশ্চিত করুন-এ ট্যাপ করুন।",
+  "assistantDraftReady": "এই যে বিস্তারিত। সংরক্ষণ করতে নিশ্চিত করুন চাপুন।",
   "assistantNewChat": "নতুন চ্যাট",
   "assistantPrivacyNote": "উত্তরগুলো AI দিয়ে তৈরি হয়। আপনার প্রশ্ন এবং উত্তর দিতে যতটুকু রেকর্ডের বিবরণ দরকার শুধু ততটুকুই আমাদের AI প্রদানকারীর কাছে পাঠানো হয়। লক করা রেকর্ডের নোট কখনোই পাঠানো হয় না। আপনি নিশ্চিত না করা পর্যন্ত কিছুই সংরক্ষণ করা হয় না।",
   "assistantActionAddTitle": "নতুন রেকর্ড",
@@ -2141,6 +2141,11 @@
   "assistantSuggestRenew": "{name} নবায়ন করতে সাহায্য করুন",
   "assistantSuggestExpired": "{name}-এর মেয়াদ শেষ হয়েছে। আমি কী করব?",
   "assistantSuggestTripReady": "{place}-এ ভ্রমণের জন্য আমি কি প্রস্তুত?",
+  "assistantNextPetVaccines": "{name}-এর জন্য টিকা যোগ করুন",
+  "assistantNextPetChip": "{name}-এর জন্য মাইক্রোচিপ যোগ করুন",
+  "assistantNextPetInsurance": "{name}-এর জন্য পোষা প্রাণীর বিমা যোগ করুন",
+  "assistantNextPersonPassport": "{name}-এর জন্য পাসপোর্ট যোগ করুন",
+  "talkNextStep": "এরপর: {step}। করতে হ্যাঁ বলুন।",
   "assistantSuggestPlanTrip": "একটি ভ্রমণের পরিকল্পনা করতে সাহায্য করুন",
   "assistantFieldCountryCount": "{count, plural, =1{দেশ} other{দেশগুলো}}",
   "assistantSettingTitle": "একটি সেটিং বদলান",
@@ -4056,7 +4061,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "হয়নি। স্ক্রিনের কার্ডটি দেখুন।",
+  "talkNotDone": "এটি হয়নি। স্ক্রিনে বিস্তারিত দেখে নিন।",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

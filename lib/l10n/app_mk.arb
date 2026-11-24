@@ -1652,7 +1652,7 @@
   "assistantPremiumBody": "Надградете на Премиум за да прашувате за вашите записи, патувања и поставки и да правите промени со едноставни зборови.",
   "assistantSeePlans": "Види ги плановите",
   "assistantEmptyReply": "Не најдов одговор. Обидете се да прашате на поинаков начин.",
-  "assistantDraftReady": "Го подготвив ова за вас. Проверете го и допрете Потврди.",
+  "assistantDraftReady": "Еве ги деталите. Допрете Потврди за да ги зачувате.",
   "assistantNewChat": "Нов разговор",
   "assistantPrivacyNote": "Одговорите користат вештачка интелигенција. Вашето прашање и само деталите за записите потребни за одговорот се испраќаат до нашиот давател на вештачка интелигенција. Белешките на заклучените записи никогаш не се испраќаат. Ништо не се зачувува додека не потврдите.",
   "assistantActionAddTitle": "Нов запис",
@@ -2128,6 +2128,11 @@
   "assistantSuggestRenew": "Помогни ми да го обновам {name}",
   "assistantSuggestExpired": "{name} истече. Што да правам?",
   "assistantSuggestTripReady": "Дали сум подготвен за патувањето во {place}?",
+  "assistantNextPetVaccines": "Додај вакцинации за {name}",
+  "assistantNextPetChip": "Додај микрочип за {name}",
+  "assistantNextPetInsurance": "Додај осигурување за миленик за {name}",
+  "assistantNextPersonPassport": "Додај пасош за {name}",
+  "talkNextStep": "Следно: {step}. Кажете да за да го направам.",
   "assistantSuggestPlanTrip": "Помогни ми да испланирам патување",
   "assistantFieldCountryCount": "{count, plural, =1{Земја} other{Земји}}",
   "assistantSettingTitle": "Промени поставка",
@@ -4043,7 +4048,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Не успеа. Проверете ја картичката на екранот.",
+  "talkNotDone": "Тоа не успеа. Проверете ги деталите на екранот.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

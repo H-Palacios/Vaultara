@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "Nâng cấp để hỏi về bản ghi, chuyến đi và cài đặt của bạn, và thay đổi bằng lời thường.",
   "assistantSeePlans": "Xem các gói",
   "assistantEmptyReply": "Tôi không tìm được câu trả lời. Hãy thử hỏi theo cách khác.",
-  "assistantDraftReady": "Tôi đã soạn sẵn mục này cho bạn. Hãy kiểm tra và nhấn Xác nhận.",
+  "assistantDraftReady": "Đây là thông tin chi tiết. Chạm Xác nhận để lưu.",
   "assistantNewChat": "Cuộc trò chuyện mới",
   "assistantPrivacyNote": "Câu trả lời dùng AI. Câu hỏi của bạn và chỉ những chi tiết bản ghi cần để trả lời sẽ được gửi đến nhà cung cấp AI của chúng tôi. Ghi chú của bản ghi bị khóa không bao giờ được gửi. Không có gì được lưu cho đến khi bạn xác nhận.",
   "assistantActionAddTitle": "Bản ghi mới",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "Giúp tôi gia hạn {name}",
   "assistantSuggestExpired": "{name} đã hết hạn. Tôi nên làm gì?",
   "assistantSuggestTripReady": "Tôi đã sẵn sàng cho chuyến đi đến {place} chưa?",
+  "assistantNextPetVaccines": "Thêm tiêm phòng cho {name}",
+  "assistantNextPetChip": "Thêm vi mạch cho {name}",
+  "assistantNextPetInsurance": "Thêm bảo hiểm thú cưng cho {name}",
+  "assistantNextPersonPassport": "Thêm hộ chiếu cho {name}",
+  "talkNextStep": "Tiếp theo: {step}. Nói có để thực hiện.",
   "assistantSuggestPlanTrip": "Giúp tôi lên kế hoạch chuyến đi",
   "assistantFieldCountryCount": "{count, plural, =1{Quốc gia} other{Quốc gia}}",
   "assistantSettingTitle": "Thay đổi cài đặt",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Không thực hiện được. Hãy xem thẻ trên màn hình.",
+  "talkNotDone": "Việc đó chưa thực hiện được. Hãy kiểm tra thông tin trên màn hình.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

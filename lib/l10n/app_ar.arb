@@ -1672,7 +1672,7 @@
   "assistantPremiumBody": "قم بالترقية لتسأل عن سجلاتك ورحلاتك وإعداداتك وتجري التغييرات بكلمات بسيطة.",
   "assistantSeePlans": "عرض الخطط",
   "assistantEmptyReply": "لم أجد إجابة. حاول السؤال بطريقة مختلفة.",
-  "assistantDraftReady": "جهّزت هذا لك. راجعه ثم اضغط على تأكيد.",
+  "assistantDraftReady": "هذه هي التفاصيل. اضغط تأكيد لحفظها.",
   "assistantNewChat": "محادثة جديدة",
   "assistantPrivacyNote": "تعتمد الإجابات على الذكاء الاصطناعي. يُرسَل سؤالك وتفاصيل السجلات اللازمة للإجابة فقط إلى مزوّد الذكاء الاصطناعي لدينا. لا تُرسَل أبدًا ملاحظات السجلات المقفلة. لا يُحفظ شيء حتى تؤكد.",
   "assistantActionAddTitle": "سجل جديد",
@@ -2148,6 +2148,11 @@
   "assistantSuggestRenew": "ساعدني في تجديد {name}",
   "assistantSuggestExpired": "انتهت صلاحية {name}. ماذا أفعل؟",
   "assistantSuggestTripReady": "هل أنا مستعد لرحلتي إلى {place}؟",
+  "assistantNextPetVaccines": "أضف التطعيمات لـ {name}",
+  "assistantNextPetChip": "أضف الشريحة الإلكترونية لـ {name}",
+  "assistantNextPetInsurance": "أضف تأمين الحيوان الأليف لـ {name}",
+  "assistantNextPersonPassport": "أضف جواز سفر لـ {name}",
+  "talkNextStep": "التالي: {step}. قل نعم للقيام بذلك.",
   "assistantSuggestPlanTrip": "ساعدني في التخطيط لرحلة",
   "assistantFieldCountryCount": "{count, plural, =1{الدولة} other{الدول}}",
   "assistantSettingTitle": "تغيير إعداد",
@@ -4063,7 +4068,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "لم يتم ذلك. راجع البطاقة على الشاشة.",
+  "talkNotDone": "لم يتم ذلك. تحقق من التفاصيل على الشاشة.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

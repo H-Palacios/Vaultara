@@ -13,6 +13,8 @@ class StoredProposal {
     'applied',
     'opened',
     'cancelled',
+    // Corrected by a newer card later in the chat; no longer shown.
+    'replaced',
   ];
 
   final String type;
@@ -126,6 +128,15 @@ class AssistantMessage {
 
   /// Tap-able replies under the answer. Only the newest answer shows them.
   final List<String> replies;
+
+  /// What the app sends instead of a reply's own words when it is tapped,
+  /// for the next-step replies it adds itself. Kept only while the chat is
+  /// open.
+  final Map<String, String> replyPrompts = <String, String>{};
+
+  /// Cards replaced by a corrected card in a later answer. They are not
+  /// shown any more.
+  final Set<int> replaced = <int>{};
 
   /// Cards in a combined card that the user unticked.
   final Set<int> unchecked = <int>{};

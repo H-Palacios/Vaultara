@@ -5003,7 +5003,8 @@ class AppLocalizationsSl extends AppLocalizations {
   String get assistantEmptyReply => 'Odgovora nisem našla. Poskusite vprašati drugače.';
 
   @override
-  String get assistantDraftReady => 'To sem pripravila za vas. Preverite in tapnite Potrdi.';
+  String get assistantDraftReady =>
+      'Tukaj so podrobnosti. Tapnite Potrdi, da jih shranite.';
 
   @override
   String get assistantNewChat => 'Nov klepet';
@@ -6800,6 +6801,31 @@ class AppLocalizationsSl extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Ali sem pripravljen na potovanje v $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Dodaj cepljenja za ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Dodaj mikročip za ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Dodaj zavarovanje ljubljenčka za ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Dodaj potni list za ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Naprej: ${step}. Recite da in to bom naredil.';
   }
 
   @override
@@ -10533,7 +10559,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get talkNoVoice => 'Telefon nima glasu za ta jezik, zato so odgovori prikazani, a ne prebrani.';
 
   @override
-  String get talkNotDone => 'Ni uspelo. Preverite kartico na zaslonu.';
+  String get talkNotDone => 'To ni uspelo. Preverite podrobnosti na zaslonu.';
 
   @override
   String get talkReady => 'Poslušam.';

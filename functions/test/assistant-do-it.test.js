@@ -28,6 +28,11 @@ const t = require(path.join(__dirname, "..", "assistant"))._test;
   assert.ok(!t.NAMES_V16.has("propose_create_pet"));
   for (const name of t.NAMES_V16) assert.ok(t.NAMES_V17.has(name), `v17 keeps ${name}`);
   assert.strictEqual(t.TOOLS_V17[t.TOOLS_V17.length - 1].name, "suggest_replies", "suggest_replies stays last");
+  // Version 17 can correct a waiting card and file a record under a pet.
+  const record17 = t.TOOLS_V17.find((tool) => tool.name === "propose_record");
+  const record16 = t.TOOLS_V16.find((tool) => tool.name === "propose_record");
+  assert.ok(record17.input_schema.properties.corrects_waiting && record17.input_schema.properties.pet);
+  assert.ok(!record16.input_schema.properties.corrects_waiting && !record16.input_schema.properties.pet);
 
   // Every app that can prepare changes: a request is done, a how-to question
   // gets a short answer and an offer to do it, and the way is shown only

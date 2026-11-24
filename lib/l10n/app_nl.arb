@@ -1634,7 +1634,7 @@
   "assistantPremiumBody": "Upgrade om vragen te stellen over je records, reizen en instellingen en wijzigingen te maken in gewone taal.",
   "assistantSeePlans": "Bekijk abonnementen",
   "assistantEmptyReply": "Ik kon geen antwoord vinden. Probeer het anders te vragen.",
-  "assistantDraftReady": "Ik heb dit voor je voorbereid. Controleer het en tik op Bevestigen.",
+  "assistantDraftReady": "Hier zijn de gegevens. Tik op Bevestigen om ze op te slaan.",
   "assistantNewChat": "Nieuwe chat",
   "assistantPrivacyNote": "Antwoorden gebruiken AI. Je vraag en alleen de recorddetails die nodig zijn voor het antwoord worden naar onze AI-aanbieder gestuurd. Notities van vergrendelde records worden nooit verstuurd. Er wordt niets opgeslagen tot je bevestigt.",
   "assistantActionAddTitle": "Nieuw record",
@@ -2110,6 +2110,11 @@
   "assistantSuggestRenew": "Help me {name} te verlengen",
   "assistantSuggestExpired": "{name} is verlopen. Wat moet ik doen?",
   "assistantSuggestTripReady": "Ben ik klaar voor mijn reis naar {place}?",
+  "assistantNextPetVaccines": "Vaccinaties voor {name} toevoegen",
+  "assistantNextPetChip": "Microchip voor {name} toevoegen",
+  "assistantNextPetInsurance": "Dierenverzekering voor {name} toevoegen",
+  "assistantNextPersonPassport": "Paspoort voor {name} toevoegen",
+  "talkNextStep": "Volgende: {step}. Zeg ja om het te doen.",
   "assistantSuggestPlanTrip": "Help me een reis te plannen",
   "assistantFieldCountryCount": "{count, plural, =1{Land} other{Landen}}",
   "assistantSettingTitle": "Instelling wijzigen",
@@ -4025,7 +4030,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Dat is niet gelukt. Bekijk de kaart op het scherm.",
+  "talkNotDone": "Dat is niet gelukt. Controleer de gegevens op het scherm.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

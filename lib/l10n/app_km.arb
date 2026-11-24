@@ -1384,7 +1384,7 @@
   "assistantPremiumBody": "ដំឡើងកម្រិតដើម្បីសួរអំពីកំណត់ត្រា ដំណើរ និងការកំណត់របស់អ្នក ហើយធ្វើការផ្លាស់ប្តូរដោយប្រើពាក្យសាមញ្ញ។",
   "assistantSeePlans": "មើលគម្រោង",
   "assistantEmptyReply": "រកមិនឃើញចម្លើយទេ។ សូមសាកសួរតាមរបៀបផ្សេង។",
-  "assistantDraftReady": "នេះត្រូវបានរៀបចំសម្រាប់អ្នក។ សូមពិនិត្យ រួចចុច បញ្ជាក់។",
+  "assistantDraftReady": "នេះជាព័ត៌មានលម្អិត។ ចុច បញ្ជាក់ ដើម្បីរក្សាទុក។",
   "assistantNewChat": "ការជជែកថ្មី",
   "assistantPrivacyNote": "ចម្លើយប្រើ AI។ សំណួររបស់អ្នក និងតែព័ត៌មានលម្អិតកំណត់ត្រាដែលចាំបាច់ដើម្បីឆ្លើយ ត្រូវបានផ្ញើទៅអ្នកផ្តល់សេវា AI របស់យើង។ កំណត់ចំណាំនៃកំណត់ត្រាដែលបានចាក់សោមិនត្រូវបានផ្ញើទេ។ គ្មានអ្វីត្រូវបានរក្សាទុកទេ រហូតដល់អ្នកបញ្ជាក់។",
   "assistantActionAddTitle": "កំណត់ត្រាថ្មី",
@@ -1860,6 +1860,11 @@
   "assistantSuggestRenew": "ជួយខ្ញុំបន្ត {name}",
   "assistantSuggestExpired": "{name} បានផុតកំណត់។ តើខ្ញុំគួរធ្វើអ្វី?",
   "assistantSuggestTripReady": "តើខ្ញុំរួចរាល់សម្រាប់ដំណើរទៅ {place} ហើយឬនៅ?",
+  "assistantNextPetVaccines": "បន្ថែមការចាក់វ៉ាក់សាំងសម្រាប់ {name}",
+  "assistantNextPetChip": "បន្ថែមមីក្រូឈីបសម្រាប់ {name}",
+  "assistantNextPetInsurance": "បន្ថែមការធានារ៉ាប់រងសត្វចិញ្ចឹមសម្រាប់ {name}",
+  "assistantNextPersonPassport": "បន្ថែមលិខិតឆ្លងដែនសម្រាប់ {name}",
+  "talkNextStep": "បន្ទាប់៖ {step}។ និយាយថា បាទ/ចាស ដើម្បីធ្វើវា។",
   "assistantSuggestPlanTrip": "ជួយខ្ញុំរៀបចំផែនការដំណើរ",
   "assistantFieldCountryCount": "{count, plural, =1{ប្រទេស} other{ប្រទេស}}",
   "assistantSettingTitle": "ប្ដូរការកំណត់",
@@ -3775,7 +3780,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "មិនបានសម្រេច។ សូមពិនិត្យកាតនៅលើអេក្រង់។",
+  "talkNotDone": "វាមិនបានសម្រេចទេ។ សូមពិនិត្យព័ត៌មានលម្អិតនៅលើអេក្រង់។",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

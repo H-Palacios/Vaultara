@@ -1652,7 +1652,7 @@
   "assistantPremiumBody": "Päivitä Premiumiin, niin voit kysyä tietueistasi, matkoistasi ja asetuksistasi ja tehdä muutoksia tavallisin sanoin.",
   "assistantSeePlans": "Näytä tilaukset",
   "assistantEmptyReply": "En löytänyt vastausta. Yritä kysyä toisella tavalla.",
-  "assistantDraftReady": "Valmistelin tämän sinulle. Tarkista se ja napauta Vahvista.",
+  "assistantDraftReady": "Tässä tiedot. Tallenna napauttamalla Vahvista.",
   "assistantNewChat": "Uusi keskustelu",
   "assistantPrivacyNote": "Vastaukset käyttävät tekoälyä. Kysymyksesi ja vain vastaamiseen tarvittavat tietueen tiedot lähetetään tekoälypalveluntarjoajallemme. Lukittujen tietueiden muistiinpanoja ei koskaan lähetetä. Mitään ei tallenneta, ennen kuin vahvistat.",
   "assistantActionAddTitle": "Uusi tietue",
@@ -2128,6 +2128,11 @@
   "assistantSuggestRenew": "Auta minua uusimaan {name}",
   "assistantSuggestExpired": "{name} on vanhentunut. Mitä teen?",
   "assistantSuggestTripReady": "Olenko valmis matkalle: {place}?",
+  "assistantNextPetVaccines": "Lisää rokotukset: {name}",
+  "assistantNextPetChip": "Lisää mikrosiru: {name}",
+  "assistantNextPetInsurance": "Lisää lemmikkivakuutus: {name}",
+  "assistantNextPersonPassport": "Lisää passi: {name}",
+  "talkNextStep": "Seuraavaksi: {step}. Sano kyllä, niin teen sen.",
   "assistantSuggestPlanTrip": "Auta minua suunnittelemaan matka",
   "assistantFieldCountryCount": "{count, plural, =1{Maa} other{Maat}}",
   "assistantSettingTitle": "Muuta asetusta",
@@ -4043,7 +4048,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Se ei onnistunut. Tarkista kortti näytöltä.",
+  "talkNotDone": "Se ei onnistunut. Tarkista tiedot näytöltä.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },

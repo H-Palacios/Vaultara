@@ -4909,7 +4909,8 @@ class AppLocalizationsSw extends AppLocalizations {
   String get assistantEmptyReply => 'Sikupata jibu. Jaribu kuuliza kwa njia nyingine.';
 
   @override
-  String get assistantDraftReady => 'Nimekuandalia hii. Ikague kisha ugonge Thibitisha.';
+  String get assistantDraftReady =>
+      'Haya ndiyo maelezo. Gusa Thibitisha ili kuyahifadhi.';
 
   @override
   String get assistantNewChat => 'Mazungumzo mapya';
@@ -6672,6 +6673,31 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Je, niko tayari kwa safari yangu ya $place?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Ongeza chanjo za ${name}';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Ongeza microchip ya ${name}';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Ongeza bima ya mnyama ya ${name}';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Ongeza pasipoti ya ${name}';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Kinachofuata: ${step}. Sema ndiyo ili nifanye.';
   }
 
   @override
@@ -10365,7 +10391,8 @@ class AppLocalizationsSw extends AppLocalizations {
   String get talkNoVoice => 'Simu yako haina sauti ya lugha hii, kwa hivyo majibu yanaonyeshwa lakini hayasomwi.';
 
   @override
-  String get talkNotDone => 'Haikufanikiwa. Angalia kadi kwenye skrini.';
+  String get talkNotDone =>
+      'Hilo halikufanikiwa. Angalia maelezo kwenye skrini.';
 
   @override
   String get talkReady => 'Ninasikiliza.';

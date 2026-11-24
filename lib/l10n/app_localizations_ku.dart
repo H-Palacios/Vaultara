@@ -4909,7 +4909,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get assistantEmptyReply => 'Min bersiv nedît. Bi awayekî din bipirse.';
 
   @override
-  String get assistantDraftReady => 'Min ev ji bo te amade kir. Kontrol bike û li Piştrast bike bitikîne.';
+  String get assistantDraftReady =>
+      'Ev hûrgulî ne. Ji bo tomarkirinê li Piştrast bike bitikîne.';
 
   @override
   String get assistantNewChat => 'Sohbeta nû';
@@ -6672,6 +6673,31 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String assistantSuggestTripReady(String place) {
     return 'Ez ji bo rêwîtiya xwe ya $place amade me?';
+  }
+
+  @override
+  String assistantNextPetVaccines(String name) {
+    return 'Derziyan ji bo ${name} zêde bike';
+  }
+
+  @override
+  String assistantNextPetChip(String name) {
+    return 'Mîkroçîpê ji bo ${name} zêde bike';
+  }
+
+  @override
+  String assistantNextPetInsurance(String name) {
+    return 'Sîgorteya heywanê ji bo ${name} zêde bike';
+  }
+
+  @override
+  String assistantNextPersonPassport(String name) {
+    return 'Pasaportekê ji bo ${name} zêde bike';
+  }
+
+  @override
+  String talkNextStep(String step) {
+    return 'Paşê: ${step}. Ji bo kirinê bêje erê.';
   }
 
   @override
@@ -10365,7 +10391,8 @@ class AppLocalizationsKu extends AppLocalizations {
   String get talkNoVoice => 'Telefona te ji bo vê zimanî deng tune, ji ber vê bersiv têne nîşandan lê nayên xwendin.';
 
   @override
-  String get talkNotDone => 'Ev nebû. Karta li ser ekranê kontrol bike.';
+  String get talkNotDone =>
+      'Ev pêk nehat. Hûrguliyên li ser ekranê kontrol bike.';
 
   @override
   String get talkReady => 'Ez guhdarî dikim.';

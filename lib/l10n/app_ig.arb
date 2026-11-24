@@ -1639,7 +1639,7 @@
   "assistantPremiumBody": "Bulie ọkwa ka ị jụọ banyere ndekọ gị, njem gị na ntọala gị, ma mee mgbanwe n’okwu dị mfe.",
   "assistantSeePlans": "Lee atụmatụ",
   "assistantEmptyReply": "Achọtaghị m azịza. Gbalịa ịjụ n’ụzọ ọzọ.",
-  "assistantDraftReady": "Ekwadebere m nke a maka gị. Lelee ya wee pịa Kwado.",
+  "assistantDraftReady": "Nke a bụ nkọwa ya. Pịa Kwado iji chekwaa ha.",
   "assistantNewChat": "Mkparịta ụka ọhụrụ",
   "assistantPrivacyNote": "AI na-enye azịza. A na-ezigara onye na-enye anyị AI ajụjụ gị na naanị nkọwa ndekọ ndị dị mkpa iji zaa ya. A naghị ezipụ ndetu nke ndekọ ndị a kpọchiri akpọchi ma ọlị. Ọ nweghị ihe a na-echekwa ruo mgbe ị kwadoro.",
   "assistantActionAddTitle": "Ndekọ ọhụrụ",
@@ -2115,6 +2115,11 @@
   "assistantSuggestRenew": "Nyere m aka imeghari {name}",
   "assistantSuggestExpired": "{name} agwụla. Gịnị ka m ga-eme?",
   "assistantSuggestTripReady": "Adị m njikere maka njem m gaa {place}?",
+  "assistantNextPetVaccines": "Tinye ọgwụ mgbochi maka {name}",
+  "assistantNextPetChip": "Tinye microchip maka {name}",
+  "assistantNextPetInsurance": "Tinye mkpuchi anụ ụlọ maka {name}",
+  "assistantNextPersonPassport": "Tinye paspọtụ maka {name}",
+  "talkNextStep": "Ọzọ: {step}. Kwuo ee ka e mee ya.",
   "assistantSuggestPlanTrip": "Nyere m aka hazie njem",
   "assistantFieldCountryCount": "{count, plural, =1{Mba} other{Mba dị iche iche}}",
   "assistantSettingTitle": "Gbanwee ntọala",
@@ -4030,7 +4035,7 @@
   "@talkNoVoice": {
     "description": "talkNoVoice"
   },
-  "talkNotDone": "Ọ gaghị. Lelee kaadị dị na ihuenyo.",
+  "talkNotDone": "Nke ahụ agaghị. Lelee nkọwa dị na ihuenyo.",
   "@talkNotDone": {
     "description": "talkNotDone"
   },
