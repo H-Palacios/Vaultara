@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
@@ -111,99 +112,107 @@ class _RecoveryKeyEntryScreenState extends State<RecoveryKeyEntryScreen> {
                 onBack: () => Navigator.of(context).pop(false),
               ),
               const SizedBox(height: 24),
-              Center(
-                child: Container(
-                  width: 64,
-                  height: 64,
-                  decoration: BoxDecoration(
-                    color: scheme.primary.withValues(alpha: 0.12),
-                    shape: BoxShape.circle,
-                  ),
-                  child: Icon(
-                    Icons.key_rounded,
-                    size: 32,
-                    color: scheme.primary,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 16),
-              Text(
-                loc.photoLockEntryBody,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 14,
-                  height: 1.4,
-                  color: scheme.onSurfaceVariant,
-                ),
-              ),
-              const SizedBox(height: 20),
-              TextField(
-                controller: _controller,
-                focusNode: _focus,
-                enabled: !_busy,
-                autocorrect: false,
-                enableSuggestions: false,
-                textCapitalization: TextCapitalization.characters,
-                keyboardType: TextInputType.visiblePassword,
-                textInputAction: TextInputAction.done,
-                minLines: 1,
-                maxLines: 3,
-                onChanged: (_) {
-                  if (_error != null) setState(() => _error = null);
-                },
-                onSubmitted: (_) => _unlock(),
-                style: const TextStyle(
-                  fontFamily: 'monospace',
-                  fontSize: 16,
-                  fontWeight: FontWeight.w600,
-                  letterSpacing: 1.2,
-                ),
-                decoration: AppInputDecorations.field(
-                  context,
-                  labelText: loc.photoLockEntryLabel,
-                  hintText: loc.photoLockEntryHint,
-                  focused: _focus.hasFocus,
-                  forceLabel: _controller.text.isNotEmpty,
-                  errorText: _error,
-                  prefixIcon: const Icon(Icons.key_rounded),
-                ),
-              ),
-              const SizedBox(height: 20),
-              Row(
-                children: [
-                  Expanded(
-                    child: TextButton(
-                      onPressed:
-                          _busy ? null : () => Navigator.of(context).pop(false),
-                      child: Text(loc.cancel),
+              // Where there is room, such as on a phone held sideways, this sits
+              // in two columns, so far less of the page is below the screen.
+              AdaptiveColumns(
+                left: [
+                  Center(
+                    child: Container(
+                      width: 64,
+                      height: 64,
+                      decoration: BoxDecoration(
+                        color: scheme.primary.withValues(alpha: 0.12),
+                        shape: BoxShape.circle,
+                      ),
+                      child: Icon(
+                        Icons.key_rounded,
+                        size: 32,
+                        color: scheme.primary,
+                      ),
                     ),
                   ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    flex: 2,
-                    child: FilledButton.icon(
-                      onPressed: _busy ? null : _unlock,
-                      icon: _busy
-                          ? const SizedBox(
-                              width: 18,
-                              height: 18,
-                              child: CircularProgressIndicator(strokeWidth: 2),
-                            )
-                          : const Icon(Icons.lock_open_rounded),
-                      label: Text(loc.photoLockUnlock),
+                  const SizedBox(height: 16),
+                  Text(
+                    loc.photoLockEntryBody,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 14,
+                      height: 1.4,
+                      color: scheme.onSurfaceVariant,
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                ],
+                right: [
+                  TextField(
+                    controller: _controller,
+                    focusNode: _focus,
+                    enabled: !_busy,
+                    autocorrect: false,
+                    enableSuggestions: false,
+                    textCapitalization: TextCapitalization.characters,
+                    keyboardType: TextInputType.visiblePassword,
+                    textInputAction: TextInputAction.done,
+                    minLines: 1,
+                    maxLines: 3,
+                    onChanged: (_) {
+                      if (_error != null) setState(() => _error = null);
+                    },
+                    onSubmitted: (_) => _unlock(),
+                    style: const TextStyle(
+                      fontFamily: 'monospace',
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                      letterSpacing: 1.2,
+                    ),
+                    decoration: AppInputDecorations.field(
+                      context,
+                      labelText: loc.photoLockEntryLabel,
+                      hintText: loc.photoLockEntryHint,
+                      focused: _focus.hasFocus,
+                      forceLabel: _controller.text.isNotEmpty,
+                      errorText: _error,
+                      prefixIcon: const Icon(Icons.key_rounded),
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: TextButton(
+                          onPressed:
+                              _busy ? null : () => Navigator.of(context).pop(false),
+                          child: Text(loc.cancel),
+                        ),
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        flex: 2,
+                        child: FilledButton.icon(
+                          onPressed: _busy ? null : _unlock,
+                          icon: _busy
+                              ? const SizedBox(
+                                  width: 18,
+                                  height: 18,
+                                  child: CircularProgressIndicator(strokeWidth: 2),
+                                )
+                              : const Icon(Icons.lock_open_rounded),
+                          label: Text(loc.photoLockUnlock),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 24),
+                  Text(
+                    loc.photoLockLostKey,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 12.5,
+                      height: 1.4,
+                      color: scheme.onSurfaceVariant,
                     ),
                   ),
                 ],
-              ),
-              const SizedBox(height: 24),
-              Text(
-                loc.photoLockLostKey,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 12.5,
-                  height: 1.4,
-                  color: scheme.onSurfaceVariant,
-                ),
               ),
             ],
           ),

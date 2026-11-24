@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:vaultara/features/security/logic/identity_gate.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
@@ -336,9 +337,10 @@ class _EncryptedPhotosScreenState extends State<EncryptedPhotosScreen> {
     final pending = _pending ?? 0;
     final busy = _migrating || _turningOff;
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
+    // Where there is room, such as on a phone held sideways, the two
+    // parts sit side by side.
+    return AdaptiveColumns(
+      left: [
         PhotoLockPanel(
           child: _statusHeader(
             icon: Icons.verified_user_rounded,
@@ -383,6 +385,8 @@ class _EncryptedPhotosScreenState extends State<EncryptedPhotosScreen> {
           ),
           const SizedBox(height: 14),
         ],
+      ],
+      right: [
         const PhotoLockPanel(child: PhotoLockPoints()),
         const SizedBox(height: 20),
         OutlinedButton.icon(

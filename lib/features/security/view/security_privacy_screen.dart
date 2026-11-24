@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/features/auth/view/two_step/backup_codes_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
@@ -276,148 +277,156 @@ class _SecurityPrivacyScreenState extends State<SecurityPrivacyScreen> {
                 ScreenHeader(title: loc.secTitle),
                 const TutorialHint(id: TutorialIds.photosSecurity),
                 const SizedBox(height: 16),
-                SecurityCheckupCard(result: checkup, onAction: _onCheckupAction),
-                const SizedBox(height: 24),
-                _SectionHeader(text: loc.secSectionSignIn),
-                if (hasPassword) ...[
-                  SettingsTile(
-                    icon: Icons.password_rounded,
-                    title: loc.changePasswordTitle,
-                    subtitle: loc.secChangePasswordSubtitle,
-                    onTap: _changePassword,
-                  ),
-                  const SizedBox(height: 12),
-                ],
-                SettingsTile(
-                  icon: twoStepOn
-                      ? Icons.verified_user_rounded
-                      : Icons.shield_outlined,
-                  title: loc.twoStepTitle,
-                  subtitle: twoStepOn ? loc.twoStepTileOn : loc.twoStepTileOff,
-                  onTap: () => _push(const TwoStepScreen()),
-                ),
-                const SizedBox(height: 12),
-                SettingsTile(
-                  icon: Icons.devices_rounded,
-                  title: loc.secDevicesTitle,
-                  subtitle: loc.secDevicesSubtitle,
-                  onTap: () => _push(const DevicesScreen()),
-                ),
-                const SizedBox(height: 12),
-                SettingsTile(
-                  icon: Icons.history_rounded,
-                  title: loc.secHistoryTitle,
-                  subtitle: loc.secHistorySubtitle,
-                  onTap: () => _push(const SecurityHistoryScreen()),
-                ),
-                const SizedBox(height: 24),
-                _SectionHeader(text: loc.secSectionAppProtection),
-                TutorialTarget(
-                  steps: const [TutorialStep.photosAppLock],
-                  child: SettingsTile(
-                    icon: Icons.lock_outline_rounded,
-                    title: loc.profileAppLockTitle,
-                    subtitle: _appLock
-                        ? loc.profile_biometric_on
-                        : loc.profile_biometric_off,
-                    trailing: _switch(_appLock, _loadingLock ? null : _setAppLock),
-                    onTap: _loadingLock ? null : () => _setAppLock(!_appLock),
-                  ),
-                ),
-                const SizedBox(height: 12),
-                ValueListenableBuilder<AutoLockDelay>(
-                  valueListenable: AutoLockPreference.delay,
-                  builder: (context, delay, _) => SettingsTile(
-                    icon: Icons.timer_outlined,
-                    title: loc.secAutoLockTitle,
-                    subtitle: _appLock
-                        ? autoLockLabel(loc, delay)
-                        : loc.secAutoLockNeedsAppLock,
-                    onTap: _appLock ? _chooseAutoLock : null,
-                  ),
-                ),
-                const SizedBox(height: 12),
-                const TutorialTarget(
-                  steps: [TutorialStep.photosEncrypt],
-                  child: EncryptedPhotosTile(),
-                ),
-                const SizedBox(height: 12),
-                ValueListenableBuilder<bool>(
-                  valueListenable: PrivacyScreen.hideInRecents,
-                  builder: (context, value, _) => SettingsTile(
-                    icon: Icons.visibility_off_outlined,
-                    title: loc.secHideInRecentsTitle,
-                    subtitle: loc.secHideInRecentsSubtitle,
-                    trailing: _switch(value, PrivacyScreen.setHideInRecents),
-                    onTap: () => PrivacyScreen.setHideInRecents(!value),
-                  ),
-                ),
-                if (PrivacyScreen.isAndroid) ...[
-                  const SizedBox(height: 12),
-                  ValueListenableBuilder<bool>(
-                    valueListenable: PrivacyScreen.blockScreenshots,
-                    builder: (context, value, _) => SettingsTile(
-                      icon: Icons.screenshot_monitor_rounded,
-                      title: loc.secBlockScreenshotsTitle,
-                      subtitle: loc.secBlockScreenshotsSubtitle,
-                      trailing: _switch(value, PrivacyScreen.setBlockScreenshots),
-                      onTap: () => PrivacyScreen.setBlockScreenshots(!value),
+                // Where there is room, such as on a phone held sideways, this sits
+                // in two columns, so far less of the page is below the screen.
+                AdaptiveColumns(
+                  left: [
+                    SecurityCheckupCard(result: checkup, onAction: _onCheckupAction),
+                    const SizedBox(height: 24),
+                    _SectionHeader(text: loc.secSectionSignIn),
+                    if (hasPassword) ...[
+                      SettingsTile(
+                        icon: Icons.password_rounded,
+                        title: loc.changePasswordTitle,
+                        subtitle: loc.secChangePasswordSubtitle,
+                        onTap: _changePassword,
+                      ),
+                      const SizedBox(height: 12),
+                    ],
+                    SettingsTile(
+                      icon: twoStepOn
+                          ? Icons.verified_user_rounded
+                          : Icons.shield_outlined,
+                      title: loc.twoStepTitle,
+                      subtitle: twoStepOn ? loc.twoStepTileOn : loc.twoStepTileOff,
+                      onTap: () => _push(const TwoStepScreen()),
                     ),
-                  ),
-                ],
-                const SizedBox(height: 24),
-                _SectionHeader(text: loc.secSectionPrivacy),
-                ValueListenableBuilder<bool>(
-                  valueListenable: LocationCountry.enabled,
-                  builder: (context, value, _) => SettingsTile(
-                    icon: Icons.my_location_rounded,
-                    title: loc.secLocationTitle,
-                    subtitle: loc.secLocationSubtitle,
-                    trailing: _switch(value, _setLocation),
-                    onTap: () => _setLocation(!value),
-                  ),
-                ),
-                const SizedBox(height: 12),
-                ValueListenableBuilder<bool>(
-                  valueListenable: AnalyticsConsent.enabled,
-                  builder: (context, value, _) => SettingsTile(
-                    icon: Icons.insights_rounded,
-                    title: loc.secAnalyticsTitle,
-                    subtitle: loc.secAnalyticsSubtitle,
-                    trailing: _switch(value, AnalyticsConsent.setChoice),
-                    onTap: () => AnalyticsConsent.setChoice(!value),
-                  ),
-                ),
-                const SizedBox(height: 12),
-                SettingsTile(
-                  icon: Icons.privacy_tip_outlined,
-                  title: loc.secPrivacyPolicy,
-                  subtitle: loc.secOpensInBrowser,
-                  trailing: const Icon(Icons.open_in_new_rounded, size: 18),
-                  onTap: () => unawaited(LegalConsent.openPrivacy()),
-                ),
-                const SizedBox(height: 12),
-                SettingsTile(
-                  icon: Icons.gavel_rounded,
-                  title: loc.secTermsOfService,
-                  subtitle: loc.secOpensInBrowser,
-                  trailing: const Icon(Icons.open_in_new_rounded, size: 18),
-                  onTap: () => unawaited(LegalConsent.openTerms()),
-                ),
-                const SizedBox(height: 12),
-                SettingsTile(
-                  icon: Icons.download_rounded,
-                  title: loc.dataExportTitle,
-                  subtitle: loc.dataExportSubtitle,
-                  onTap: () => DataExport.exportAll(context),
-                ),
-                const SizedBox(height: 12),
-                SettingsTile(
-                  icon: Icons.delete_forever_rounded,
-                  title: loc.deleteAccountTitle,
-                  subtitle: loc.deleteAccountSubtitle,
-                  destructive: true,
-                  onTap: _openDeleteAccount,
+                    const SizedBox(height: 12),
+                    SettingsTile(
+                      icon: Icons.devices_rounded,
+                      title: loc.secDevicesTitle,
+                      subtitle: loc.secDevicesSubtitle,
+                      onTap: () => _push(const DevicesScreen()),
+                    ),
+                    const SizedBox(height: 12),
+                    SettingsTile(
+                      icon: Icons.history_rounded,
+                      title: loc.secHistoryTitle,
+                      subtitle: loc.secHistorySubtitle,
+                      onTap: () => _push(const SecurityHistoryScreen()),
+                    ),
+                    const SizedBox(height: 24),
+                    _SectionHeader(text: loc.secSectionAppProtection),
+                    TutorialTarget(
+                      steps: const [TutorialStep.photosAppLock],
+                      child: SettingsTile(
+                        icon: Icons.lock_outline_rounded,
+                        title: loc.profileAppLockTitle,
+                        subtitle: _appLock
+                            ? loc.profile_biometric_on
+                            : loc.profile_biometric_off,
+                        trailing: _switch(_appLock, _loadingLock ? null : _setAppLock),
+                        onTap: _loadingLock ? null : () => _setAppLock(!_appLock),
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    ValueListenableBuilder<AutoLockDelay>(
+                      valueListenable: AutoLockPreference.delay,
+                      builder: (context, delay, _) => SettingsTile(
+                        icon: Icons.timer_outlined,
+                        title: loc.secAutoLockTitle,
+                        subtitle: _appLock
+                            ? autoLockLabel(loc, delay)
+                            : loc.secAutoLockNeedsAppLock,
+                        onTap: _appLock ? _chooseAutoLock : null,
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    const TutorialTarget(
+                      steps: [TutorialStep.photosEncrypt],
+                      child: EncryptedPhotosTile(),
+                    ),
+                    const SizedBox(height: 12),
+                    ValueListenableBuilder<bool>(
+                      valueListenable: PrivacyScreen.hideInRecents,
+                      builder: (context, value, _) => SettingsTile(
+                        icon: Icons.visibility_off_outlined,
+                        title: loc.secHideInRecentsTitle,
+                        subtitle: loc.secHideInRecentsSubtitle,
+                        trailing: _switch(value, PrivacyScreen.setHideInRecents),
+                        onTap: () => PrivacyScreen.setHideInRecents(!value),
+                      ),
+                    ),
+                    if (PrivacyScreen.isAndroid) ...[
+                      const SizedBox(height: 12),
+                      ValueListenableBuilder<bool>(
+                        valueListenable: PrivacyScreen.blockScreenshots,
+                        builder: (context, value, _) => SettingsTile(
+                          icon: Icons.screenshot_monitor_rounded,
+                          title: loc.secBlockScreenshotsTitle,
+                          subtitle: loc.secBlockScreenshotsSubtitle,
+                          trailing: _switch(value, PrivacyScreen.setBlockScreenshots),
+                          onTap: () => PrivacyScreen.setBlockScreenshots(!value),
+                        ),
+                      ),
+                    ],
+                    const SizedBox(height: 24),
+                  ],
+                  right: [
+                    _SectionHeader(text: loc.secSectionPrivacy),
+                    ValueListenableBuilder<bool>(
+                      valueListenable: LocationCountry.enabled,
+                      builder: (context, value, _) => SettingsTile(
+                        icon: Icons.my_location_rounded,
+                        title: loc.secLocationTitle,
+                        subtitle: loc.secLocationSubtitle,
+                        trailing: _switch(value, _setLocation),
+                        onTap: () => _setLocation(!value),
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    ValueListenableBuilder<bool>(
+                      valueListenable: AnalyticsConsent.enabled,
+                      builder: (context, value, _) => SettingsTile(
+                        icon: Icons.insights_rounded,
+                        title: loc.secAnalyticsTitle,
+                        subtitle: loc.secAnalyticsSubtitle,
+                        trailing: _switch(value, AnalyticsConsent.setChoice),
+                        onTap: () => AnalyticsConsent.setChoice(!value),
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    SettingsTile(
+                      icon: Icons.privacy_tip_outlined,
+                      title: loc.secPrivacyPolicy,
+                      subtitle: loc.secOpensInBrowser,
+                      trailing: const Icon(Icons.open_in_new_rounded, size: 18),
+                      onTap: () => unawaited(LegalConsent.openPrivacy()),
+                    ),
+                    const SizedBox(height: 12),
+                    SettingsTile(
+                      icon: Icons.gavel_rounded,
+                      title: loc.secTermsOfService,
+                      subtitle: loc.secOpensInBrowser,
+                      trailing: const Icon(Icons.open_in_new_rounded, size: 18),
+                      onTap: () => unawaited(LegalConsent.openTerms()),
+                    ),
+                    const SizedBox(height: 12),
+                    SettingsTile(
+                      icon: Icons.download_rounded,
+                      title: loc.dataExportTitle,
+                      subtitle: loc.dataExportSubtitle,
+                      onTap: () => DataExport.exportAll(context),
+                    ),
+                    const SizedBox(height: 12),
+                    SettingsTile(
+                      icon: Icons.delete_forever_rounded,
+                      title: loc.deleteAccountTitle,
+                      subtitle: loc.deleteAccountSubtitle,
+                      destructive: true,
+                      onTap: _openDeleteAccount,
+                    ),
+                  ],
                 ),
               ],
             ),

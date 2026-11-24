@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:vaultara/core/layout/adaptive_columns.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:flutter/services.dart';
 import 'package:local_auth/local_auth.dart';
@@ -315,9 +316,10 @@ class _TotpSetupScreenState extends State<TotpSetupScreen> {
     ColorScheme scheme,
     TotpSetup setup,
   ) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
+    // Where there is room, such as on a phone held sideways, the two
+    // parts sit side by side.
+    return AdaptiveColumns(
+      left: [
         _Panel(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -415,6 +417,8 @@ class _TotpSetupScreenState extends State<TotpSetupScreen> {
           ),
         ),
         const SizedBox(height: 14),
+      ],
+      right: [
         _Panel(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
