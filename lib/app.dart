@@ -157,6 +157,7 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
     if (_gatewayShown) {
       _gatewayShown = false;
       _unlocked = true;
+      _waitForHome = false;
     }
 
     // Started before the lock screen and the shell, so Home's first parts
@@ -283,10 +284,14 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
     } catch (_) {}
 
     if (!mounted) return;
-    setState(() => _unlocked = true);
+    setState(() {
+      _unlocked = true;
+      _waitForHome = false;
+    });
   }
 
   void _onSignedInManually() {
+    _waitForHome = false;
     _settle();
     _gatewayShown = false;
     if (mounted) setState(() => _unlocked = true);
@@ -308,9 +313,14 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
   Widget _shell(String uid) => HomeWarmGate(
     key: ValueKey(uid),
     uid: uid,
+    wait: _waitForHome,
     waiting: _splash(),
     child: Shell(key: ValueKey(uid)),
   );
+
+  /// True only while the app is opening with the logo showing. Signing in
+  /// or unlocking clears it, so the logo never comes back after either.
+  bool _waitForHome = true;
 
   Widget _splash() => Scaffold(
     backgroundColor: AppBrand.navy,
