@@ -1160,6 +1160,8 @@
   "planTabIndividual": "Asmeninis",
   "planTabBusiness": "Verslo",
   "planGetPremium": "Gauti Premium",
+  "individualPlanBuy": "Įsigyti Asmeninį planą",
+  "individualPlanSwitch": "Pereiti prie Asmeninio plano",
   "businessPlanBuy": "Gauti Verslo planą",
   "businessPlanSwitch": "Pereiti prie Verslo plano",
   "planSwitchToYearly": "Pereiti prie metinio",

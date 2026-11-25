@@ -3193,7 +3193,13 @@ class AppLocalizationsLv extends AppLocalizations {
   String get businessPlanBuy => 'Iegūt uzņēmumu plānu';
 
   @override
+  String get individualPlanBuy => 'Iegūt Individuālo';
+
+  @override
   String get businessPlanSwitch => 'Pāriet uz uzņēmumu plānu';
+
+  @override
+  String get individualPlanSwitch => 'Pārslēgties uz Individuālo';
 
   @override
   String get planSwitchToYearly => 'Pāriet uz gada plānu';

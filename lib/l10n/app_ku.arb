@@ -1142,6 +1142,8 @@
   "planTabIndividual": "Kesane",
   "planTabBusiness": "Karsazî",
   "planGetPremium": "Premium bistîne",
+  "individualPlanBuy": "Kesane bistîne",
+  "individualPlanSwitch": "Derbasî Kesane bibe",
   "businessPlanBuy": "Karsazî bistîne",
   "businessPlanSwitch": "Biçe Karsazî",
   "planSwitchToYearly": "Biçe salane",

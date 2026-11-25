@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/features/profile/data/avatar_repository.dart';
 import 'package:vaultara/features/profile/data/user_profile.dart';
 import 'package:vaultara/features/profile/view/widgets/profile_avatar_button.dart';
+import 'package:vaultara/features/profile/view/widgets/profile_plan_badge.dart';
 
 class ProfileHeaderCard extends StatelessWidget {
   final UserProfile? profile;
@@ -17,7 +17,6 @@ class ProfileHeaderCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final t = AppLocalizations.of(context)!;
     final scheme = Theme.of(context).colorScheme;
 
     final name = profile?.fullName ?? '';
@@ -25,11 +24,6 @@ class ProfileHeaderCard extends StatelessWidget {
     final initials = name.isNotEmpty
         ? profile!.initials
         : AvatarRepository.initialsOf(name, email);
-
-    final planLabel = isPremium ? t.plan_premium : t.plan_free;
-    final planColor = isPremium ? scheme.primary : scheme.secondaryContainer;
-    final planTextColor =
-        isPremium ? scheme.onPrimary : scheme.onSecondaryContainer;
 
     return Container(
       padding: const EdgeInsets.all(16),
@@ -66,34 +60,7 @@ class ProfileHeaderCard extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-            decoration: BoxDecoration(
-              color: planColor,
-              borderRadius: BorderRadius.circular(999),
-            ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                if (isPremium) ...[
-                  Icon(
-                    Icons.verified_rounded,
-                    size: 14,
-                    color: planTextColor,
-                  ),
-                  const SizedBox(width: 6),
-                ],
-                Text(
-                  planLabel,
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w800,
-                    color: planTextColor,
-                  ),
-                ),
-              ],
-            ),
-          ),
+          ProfilePlanBadge(isPremium: isPremium),
         ],
       ),
     );

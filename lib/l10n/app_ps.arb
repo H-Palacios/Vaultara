@@ -1142,6 +1142,8 @@
   "planTabIndividual": "انفرادي",
   "planTabBusiness": "سوداګري",
   "planGetPremium": "پریمیم ترلاسه کړئ",
+  "individualPlanBuy": "د انفرادي پلان واخلئ",
+  "individualPlanSwitch": "د انفرادي پلان ته واوړئ",
   "businessPlanBuy": "سوداګري ترلاسه کړئ",
   "businessPlanSwitch": "سوداګرۍ ته واوړئ",
   "planSwitchToYearly": "کلنۍ ته واوړئ",

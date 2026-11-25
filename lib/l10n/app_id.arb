@@ -1147,6 +1147,8 @@
   "planTabIndividual": "Perorangan",
   "planTabBusiness": "Bisnis",
   "planGetPremium": "Dapatkan Premium",
+  "individualPlanBuy": "Dapatkan Perorangan",
+  "individualPlanSwitch": "Beralih ke Perorangan",
   "businessPlanBuy": "Dapatkan Bisnis",
   "businessPlanSwitch": "Beralih ke Bisnis",
   "planSwitchToYearly": "Beralih ke tahunan",

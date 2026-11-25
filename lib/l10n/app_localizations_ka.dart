@@ -3170,7 +3170,13 @@ class AppLocalizationsKa extends AppLocalizations {
   String get businessPlanBuy => 'ბიზნესის შეძენა';
 
   @override
+  String get individualPlanBuy => 'ინდივიდუალურის შეძენა';
+
+  @override
   String get businessPlanSwitch => 'ბიზნესზე გადასვლა';
+
+  @override
+  String get individualPlanSwitch => 'ინდივიდუალურზე გადასვლა';
 
   @override
   String get planSwitchToYearly => 'წლიურზე გადასვლა';

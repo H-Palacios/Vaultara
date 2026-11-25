@@ -1159,6 +1159,8 @@
   "planTabIndividual": "వ్యక్తిగత",
   "planTabBusiness": "వ్యాపారం",
   "planGetPremium": "Premium పొందండి",
+  "individualPlanBuy": "వ్యక్తిగత ప్లాన్ పొందండి",
+  "individualPlanSwitch": "వ్యక్తిగత ప్లాన్‌కి మారండి",
   "businessPlanBuy": "వ్యాపారం పొందండి",
   "businessPlanSwitch": "వ్యాపారానికి మారండి",
   "planSwitchToYearly": "వార్షికానికి మారండి",

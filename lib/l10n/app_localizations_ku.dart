@@ -3170,7 +3170,13 @@ class AppLocalizationsKu extends AppLocalizations {
   String get businessPlanBuy => 'Karsazî bistîne';
 
   @override
+  String get individualPlanBuy => 'Kesane bistîne';
+
+  @override
   String get businessPlanSwitch => 'Biçe Karsazî';
+
+  @override
+  String get individualPlanSwitch => 'Derbasî Kesane bibe';
 
   @override
   String get planSwitchToYearly => 'Biçe salane';

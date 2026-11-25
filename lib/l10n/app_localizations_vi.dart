@@ -3156,7 +3156,13 @@ class AppLocalizationsVi extends AppLocalizations {
   String get businessPlanBuy => 'Nhận gói Doanh nghiệp';
 
   @override
+  String get individualPlanBuy => 'Mua gói Cá nhân';
+
+  @override
   String get businessPlanSwitch => 'Chuyển sang Doanh nghiệp';
+
+  @override
+  String get individualPlanSwitch => 'Chuyển sang gói Cá nhân';
 
   @override
   String get planSwitchToYearly => 'Chuyển sang hàng năm';

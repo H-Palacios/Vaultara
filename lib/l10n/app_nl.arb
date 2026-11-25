@@ -1142,6 +1142,8 @@
   "planTabIndividual": "Individueel",
   "planTabBusiness": "Zakelijk",
   "planGetPremium": "Premium nemen",
+  "individualPlanBuy": "Kies Individueel",
+  "individualPlanSwitch": "Stap over naar Individueel",
   "businessPlanBuy": "Zakelijk nemen",
   "businessPlanSwitch": "Overstappen naar Zakelijk",
   "planSwitchToYearly": "Overstappen op jaarlijks",

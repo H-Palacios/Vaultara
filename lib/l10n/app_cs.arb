@@ -1173,6 +1173,8 @@
   "planTabIndividual": "Jednotlivec",
   "planTabBusiness": "Business",
   "planGetPremium": "Získat Premium",
+  "individualPlanBuy": "Získat tarif Jednotlivec",
+  "individualPlanSwitch": "Přejít na tarif Jednotlivec",
   "businessPlanBuy": "Získat Business",
   "businessPlanSwitch": "Přejít na Business",
   "planSwitchToYearly": "Přejít na roční platbu",

@@ -892,6 +892,8 @@
   "planTabIndividual": "បុគ្គល",
   "planTabBusiness": "អាជីវកម្ម",
   "planGetPremium": "ទទួលយក Premium",
+  "individualPlanBuy": "យកគម្រោងបុគ្គល",
+  "individualPlanSwitch": "ប្ដូរទៅគម្រោងបុគ្គល",
   "businessPlanBuy": "ទទួលយកអាជីវកម្ម",
   "businessPlanSwitch": "ប្តូរទៅអាជីវកម្ម",
   "planSwitchToYearly": "ប្តូរទៅប្រចាំឆ្នាំ",

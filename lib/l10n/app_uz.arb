@@ -892,6 +892,8 @@
   "planTabIndividual": "Yakka",
   "planTabBusiness": "Business",
   "planGetPremium": "Premiumga oʻtish",
+  "individualPlanBuy": "Yakka tarifini olish",
+  "individualPlanSwitch": "Yakka tarifiga oʻtish",
   "businessPlanBuy": "Businessga oʻtish",
   "businessPlanSwitch": "Businessga oʻtish",
   "planSwitchToYearly": "Yillikka oʻtish",

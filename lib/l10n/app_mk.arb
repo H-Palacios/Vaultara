@@ -1160,6 +1160,8 @@
   "planTabIndividual": "Поединечен",
   "planTabBusiness": "Бизнис",
   "planGetPremium": "Земи Премиум",
+  "individualPlanBuy": "Земи Поединечен",
+  "individualPlanSwitch": "Префрли се на Поединечен",
   "businessPlanBuy": "Земи Бизнис",
   "businessPlanSwitch": "Префрли се на Бизнис",
   "planSwitchToYearly": "Префрли се на годишно плаќање",

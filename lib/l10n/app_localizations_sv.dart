@@ -3169,7 +3169,13 @@ class AppLocalizationsSv extends AppLocalizations {
   String get businessPlanBuy => 'Skaffa Företag';
 
   @override
+  String get individualPlanBuy => 'Skaffa Enskild';
+
+  @override
   String get businessPlanSwitch => 'Byt till Företag';
+
+  @override
+  String get individualPlanSwitch => 'Byt till Enskild';
 
   @override
   String get planSwitchToYearly => 'Byt till årsvis';

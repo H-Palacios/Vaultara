@@ -3170,7 +3170,13 @@ class AppLocalizationsDa extends AppLocalizations {
   String get businessPlanBuy => 'Få Business';
 
   @override
+  String get individualPlanBuy => 'Få Enkeltperson';
+
+  @override
   String get businessPlanSwitch => 'Skift til Business';
+
+  @override
+  String get individualPlanSwitch => 'Skift til Enkeltperson';
 
   @override
   String get planSwitchToYearly => 'Skift til årlig';

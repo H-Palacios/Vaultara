@@ -3170,7 +3170,13 @@ class AppLocalizationsFi extends AppLocalizations {
   String get businessPlanBuy => 'Hanki Business';
 
   @override
+  String get individualPlanBuy => 'Hanki Yksittäinen';
+
+  @override
   String get businessPlanSwitch => 'Vaihda Business-tilaukseen';
+
+  @override
+  String get individualPlanSwitch => 'Vaihda Yksittäinen-tilaukseen';
 
   @override
   String get planSwitchToYearly => 'Vaihda vuosittaiseen';

@@ -1142,6 +1142,8 @@
   "planTabIndividual": "Bireysel",
   "planTabBusiness": "Business",
   "planGetPremium": "Premium'u al",
+  "individualPlanBuy": "Bireysel'i edinin",
+  "individualPlanSwitch": "Bireysel'e geçin",
   "businessPlanBuy": "Business'ı al",
   "businessPlanSwitch": "Business'a geç",
   "planSwitchToYearly": "Yıllık plana geç",

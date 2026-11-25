@@ -1160,6 +1160,8 @@
   "planTabIndividual": "Yksittäinen",
   "planTabBusiness": "Business",
   "planGetPremium": "Hanki Premium",
+  "individualPlanBuy": "Hanki Yksittäinen",
+  "individualPlanSwitch": "Vaihda Yksittäinen-tilaukseen",
   "businessPlanBuy": "Hanki Business",
   "businessPlanSwitch": "Vaihda Business-tilaukseen",
   "planSwitchToYearly": "Vaihda vuosittaiseen",

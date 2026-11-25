@@ -1173,6 +1173,8 @@
   "planTabIndividual": "Individualni",
   "planTabBusiness": "Poslovni",
   "planGetPremium": "Nabavi Premium",
+  "individualPlanBuy": "Uzmi Individualni",
+  "individualPlanSwitch": "Pređi na Individualni",
   "businessPlanBuy": "Nabavi Poslovni",
   "businessPlanSwitch": "Pređi na Poslovni",
   "planSwitchToYearly": "Pređi na godišnje",

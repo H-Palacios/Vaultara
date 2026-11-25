@@ -3489,6 +3489,14 @@
   "@planGetPremium": {
     "description": "Main button to subscribe to Premium when no free trial is available"
   },
+  "individualPlanBuy": "Get Individual",
+  "@individualPlanBuy": {
+    "description": "Button on the Individual plan card that buys it, like Get Family."
+  },
+  "individualPlanSwitch": "Switch to Individual",
+  "@individualPlanSwitch": {
+    "description": "Button on the Individual plan card for someone on another paid plan, like Switch to Family."
+  },
   "businessPlanBuy": "Get Business",
   "@businessPlanBuy": {
     "description": "Main button to subscribe to Business when no free trial is available"

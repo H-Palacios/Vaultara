@@ -3170,7 +3170,13 @@ class AppLocalizationsNn extends AppLocalizations {
   String get businessPlanBuy => 'Skaff Business';
 
   @override
+  String get individualPlanBuy => 'Skaff Individuell';
+
+  @override
   String get businessPlanSwitch => 'Byt til Business';
+
+  @override
+  String get individualPlanSwitch => 'Byt til Individuell';
 
   @override
   String get planSwitchToYearly => 'Byt til årleg';

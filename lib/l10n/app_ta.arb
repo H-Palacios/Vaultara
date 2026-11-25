@@ -1142,6 +1142,8 @@
   "planTabIndividual": "தனிப்பட்ட",
   "planTabBusiness": "வணிகம்",
   "planGetPremium": "ப்ரீமியம் பெறு",
+  "individualPlanBuy": "தனிப்பட்ட திட்டம் பெறு",
+  "individualPlanSwitch": "தனிப்பட்ட திட்டத்துக்கு மாறு",
   "businessPlanBuy": "வணிகத் திட்டம் பெறு",
   "businessPlanSwitch": "வணிகத் திட்டத்துக்கு மாறு",
   "planSwitchToYearly": "ஆண்டுவாரிக்கு மாறு",

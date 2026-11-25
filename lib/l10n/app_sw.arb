@@ -1142,6 +1142,8 @@
   "planTabIndividual": "Binafsi",
   "planTabBusiness": "Biashara",
   "planGetPremium": "Pata Premium",
+  "individualPlanBuy": "Pata Binafsi",
+  "individualPlanSwitch": "Hamia Binafsi",
   "businessPlanBuy": "Pata Biashara",
   "businessPlanSwitch": "Hamia Biashara",
   "planSwitchToYearly": "Hamia ya kila mwaka",

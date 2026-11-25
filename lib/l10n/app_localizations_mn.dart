@@ -3169,7 +3169,13 @@ class AppLocalizationsMn extends AppLocalizations {
   String get businessPlanBuy => 'Бизнес багц авах';
 
   @override
+  String get individualPlanBuy => 'Хувь хүн багц авах';
+
+  @override
   String get businessPlanSwitch => 'Бизнес багц руу шилжих';
+
+  @override
+  String get individualPlanSwitch => 'Хувь хүн багц руу шилжих';
 
   @override
   String get planSwitchToYearly => 'Жилээр төлөх рүү шилжих';

@@ -892,6 +892,8 @@
   "planTabIndividual": "वैयक्तिक",
   "planTabBusiness": "Business",
   "planGetPremium": "Premium घ्या",
+  "individualPlanBuy": "वैयक्तिक प्लॅन घ्या",
+  "individualPlanSwitch": "वैयक्तिक प्लॅनवर स्विच करा",
   "businessPlanBuy": "Business घ्या",
   "businessPlanSwitch": "Business वर स्विच करा",
   "planSwitchToYearly": "वार्षिक वर स्विच करा",

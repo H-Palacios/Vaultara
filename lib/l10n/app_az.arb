@@ -892,6 +892,8 @@
   "planTabIndividual": "Fərdi",
   "planTabBusiness": "Biznes",
   "planGetPremium": "Premium əldə et",
+  "individualPlanBuy": "Fərdi planını al",
+  "individualPlanSwitch": "Fərdi planına keç",
   "businessPlanBuy": "Biznes əldə et",
   "businessPlanSwitch": "Biznesə keç",
   "planSwitchToYearly": "İllik plana keç",

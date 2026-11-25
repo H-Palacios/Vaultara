@@ -3170,7 +3170,13 @@ class AppLocalizationsCa extends AppLocalizations {
   String get businessPlanBuy => 'Obté Business';
 
   @override
+  String get individualPlanBuy => 'Obtén Particular';
+
+  @override
   String get businessPlanSwitch => 'Passa a Business';
+
+  @override
+  String get individualPlanSwitch => 'Canvia a Particular';
 
   @override
   String get planSwitchToYearly => 'Passa a anual';

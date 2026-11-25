@@ -1147,6 +1147,8 @@
   "planTabIndividual": "Einstaklingur",
   "planTabBusiness": "Fyrirtæki",
   "planGetPremium": "Fá Premium",
+  "individualPlanBuy": "Fá Einstaklingsáskrift",
+  "individualPlanSwitch": "Skipta yfir í Einstaklingsáskrift",
   "businessPlanBuy": "Fá Fyrirtæki",
   "businessPlanSwitch": "Skipta yfir í Fyrirtæki",
   "planSwitchToYearly": "Skipta yfir í árlega",

@@ -3170,7 +3170,13 @@ class AppLocalizationsNl extends AppLocalizations {
   String get businessPlanBuy => 'Zakelijk nemen';
 
   @override
+  String get individualPlanBuy => 'Kies Individueel';
+
+  @override
   String get businessPlanSwitch => 'Overstappen naar Zakelijk';
+
+  @override
+  String get individualPlanSwitch => 'Stap over naar Individueel';
 
   @override
   String get planSwitchToYearly => 'Overstappen op jaarlijks';

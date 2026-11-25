@@ -1142,6 +1142,8 @@
   "planTabIndividual": "තනි පුද්ගල",
   "planTabBusiness": "ව්‍යාපාර",
   "planGetPremium": "Premium ලබා ගන්න",
+  "individualPlanBuy": "තනි පුද්ගල ලබා ගන්න",
+  "individualPlanSwitch": "තනි පුද්ගල වෙත මාරු වන්න",
   "businessPlanBuy": "ව්‍යාපාර සැලසුම ලබා ගන්න",
   "businessPlanSwitch": "ව්‍යාපාර සැලසුමට මාරු වන්න",
   "planSwitchToYearly": "වාර්ෂිකයට මාරු වන්න",

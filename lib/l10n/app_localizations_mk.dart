@@ -3168,7 +3168,13 @@ class AppLocalizationsMk extends AppLocalizations {
   String get businessPlanBuy => 'Земи Бизнис';
 
   @override
+  String get individualPlanBuy => 'Земи Поединечен';
+
+  @override
   String get businessPlanSwitch => 'Префрли се на Бизнис';
+
+  @override
+  String get individualPlanSwitch => 'Префрли се на Поединечен';
 
   @override
   String get planSwitchToYearly => 'Префрли се на годишно плаќање';

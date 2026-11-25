@@ -1160,6 +1160,8 @@
   "planTabIndividual": "Хувь хүн",
   "planTabBusiness": "Бизнес",
   "planGetPremium": "Premium авах",
+  "individualPlanBuy": "Хувь хүн багц авах",
+  "individualPlanSwitch": "Хувь хүн багц руу шилжих",
   "businessPlanBuy": "Бизнес багц авах",
   "businessPlanSwitch": "Бизнес багц руу шилжих",
   "planSwitchToYearly": "Жилээр төлөх рүү шилжих",

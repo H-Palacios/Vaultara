@@ -3170,7 +3170,13 @@ class AppLocalizationsKy extends AppLocalizations {
   String get businessPlanBuy => 'Бизнес тарифин алуу';
 
   @override
+  String get individualPlanBuy => 'Жеке тарифин алуу';
+
+  @override
   String get businessPlanSwitch => 'Бизнес тарифине өтүү';
+
+  @override
+  String get individualPlanSwitch => 'Жеке тарифине өтүү';
 
   @override
   String get planSwitchToYearly => 'Жылдык төлөмгө өтүү';

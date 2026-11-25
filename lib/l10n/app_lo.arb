@@ -1160,6 +1160,8 @@
   "planTabIndividual": "ບຸກຄົນ",
   "planTabBusiness": "ທຸລະກິດ",
   "planGetPremium": "ຮັບ ພຣີເມຍມ",
+  "individualPlanBuy": "ຮັບແພັກເກດບຸກຄົນ",
+  "individualPlanSwitch": "ປ່ຽນເປັນແພັກເກດບຸກຄົນ",
   "businessPlanBuy": "ຮັບແພັກເກດທຸລະກິດ",
   "businessPlanSwitch": "ປ່ຽນເປັນແພັກເກດທຸລະກິດ",
   "planSwitchToYearly": "ປ່ຽນເປັນລາຍປີ",

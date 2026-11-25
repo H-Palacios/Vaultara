@@ -3170,7 +3170,13 @@ class AppLocalizationsBg extends AppLocalizations {
   String get businessPlanBuy => 'Вземете Business';
 
   @override
+  String get individualPlanBuy => 'Вземете Индивидуален';
+
+  @override
   String get businessPlanSwitch => 'Преминете към Business';
+
+  @override
+  String get individualPlanSwitch => 'Преминете към Индивидуален';
 
   @override
   String get planSwitchToYearly => 'Преминете към годишно';

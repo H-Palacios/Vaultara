@@ -1142,6 +1142,8 @@
   "planTabIndividual": "व्यक्तिगत",
   "planTabBusiness": "व्यवसाय",
   "planGetPremium": "प्रिमियम लिनुहोस्",
+  "individualPlanBuy": "व्यक्तिगत लिनुहोस्",
+  "individualPlanSwitch": "व्यक्तिगतमा स्विच गर्नुहोस्",
   "businessPlanBuy": "व्यवसाय लिनुहोस्",
   "businessPlanSwitch": "व्यवसायमा बदल्नुहोस्",
   "planSwitchToYearly": "वार्षिकमा बदल्नुहोस्",

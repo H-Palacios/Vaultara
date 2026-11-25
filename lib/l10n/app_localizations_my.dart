@@ -3154,7 +3154,13 @@ class AppLocalizationsMy extends AppLocalizations {
   String get businessPlanBuy => 'စီးပွားရေးအစီအစဉ် ရယူရန်';
 
   @override
+  String get individualPlanBuy => 'တစ်ဦးချင်း ရယူရန်';
+
+  @override
   String get businessPlanSwitch => 'စီးပွားရေးအစီအစဉ်သို့ ပြောင်းရန်';
+
+  @override
+  String get individualPlanSwitch => 'တစ်ဦးချင်းသို့ ပြောင်းရန်';
 
   @override
   String get planSwitchToYearly => 'နှစ်စဉ်သို့ ပြောင်းရန်';

@@ -3170,7 +3170,13 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get businessPlanBuy => 'پلانی بازرگانی وەربگرە';
 
   @override
+  String get individualPlanBuy => 'وەرگرتنی تاکەکەسی';
+
+  @override
   String get businessPlanSwitch => 'گۆڕین بۆ بازرگانی';
+
+  @override
+  String get individualPlanSwitch => 'گۆڕین بۆ تاکەکەسی';
 
   @override
   String get planSwitchToYearly => 'گۆڕین بۆ ساڵانە';

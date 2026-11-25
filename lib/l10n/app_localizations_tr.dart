@@ -3170,7 +3170,13 @@ class AppLocalizationsTr extends AppLocalizations {
   String get businessPlanBuy => 'Business\'ı al';
 
   @override
+  String get individualPlanBuy => 'Bireysel\'i edinin';
+
+  @override
   String get businessPlanSwitch => 'Business\'a geç';
+
+  @override
+  String get individualPlanSwitch => 'Bireysel\'e geçin';
 
   @override
   String get planSwitchToYearly => 'Yıllık plana geç';

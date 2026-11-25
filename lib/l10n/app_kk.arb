@@ -1160,6 +1160,8 @@
   "planTabIndividual": "Жеке",
   "planTabBusiness": "Бизнес",
   "planGetPremium": "Premium алу",
+  "individualPlanBuy": "Жеке тарифін алу",
+  "individualPlanSwitch": "Жеке тарифіне ауысу",
   "businessPlanBuy": "Бизнес алу",
   "businessPlanSwitch": "Бизнеске ауысу",
   "planSwitchToYearly": "Жылдыққа ауысу",

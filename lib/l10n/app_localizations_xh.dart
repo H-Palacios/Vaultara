@@ -3170,7 +3170,13 @@ class AppLocalizationsXh extends AppLocalizations {
   String get businessPlanBuy => 'Fumana isicwangciso seShishini';
 
   @override
+  String get individualPlanBuy => 'Fumana u-Umntu ngamnye';
+
+  @override
   String get businessPlanSwitch => 'Tshintshela kwisicwangciso seShishini';
+
+  @override
+  String get individualPlanSwitch => 'Tshintshela ku-Umntu ngamnye';
 
   @override
   String get planSwitchToYearly => 'Tshintshela ngonyaka';

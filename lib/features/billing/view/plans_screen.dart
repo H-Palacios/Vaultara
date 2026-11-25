@@ -268,7 +268,9 @@ class _PlansScreenState extends State<PlansScreen> {
         return loc.businessPlanBuy;
       case PlanTier.premium:
       case PlanTier.free:
-        return loc.planGetPremium;
+        // Named like the other two cards, so the button says which plan
+        // it buys.
+        return loc.individualPlanBuy;
     }
   }
 
@@ -280,7 +282,7 @@ class _PlansScreenState extends State<PlansScreen> {
         return loc.businessPlanSwitch;
       case PlanTier.premium:
       case PlanTier.free:
-        return loc.planSwitchToPremium;
+        return loc.individualPlanSwitch;
     }
   }
 

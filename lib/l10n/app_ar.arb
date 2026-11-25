@@ -1180,6 +1180,8 @@
   "planTabIndividual": "فردي",
   "planTabBusiness": "الأعمال",
   "planGetPremium": "احصل على Premium",
+  "individualPlanBuy": "احصل على الخطة الفردية",
+  "individualPlanSwitch": "انتقل إلى الخطة الفردية",
   "businessPlanBuy": "احصل على خطة الأعمال",
   "businessPlanSwitch": "التحويل إلى خطة الأعمال",
   "planSwitchToYearly": "التحويل إلى الدفع السنوي",

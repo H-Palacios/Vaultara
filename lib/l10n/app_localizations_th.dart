@@ -3144,7 +3144,13 @@ class AppLocalizationsTh extends AppLocalizations {
   String get businessPlanBuy => 'สมัครแผนธุรกิจ';
 
   @override
+  String get individualPlanBuy => 'รับแผนรายบุคคล';
+
+  @override
   String get businessPlanSwitch => 'เปลี่ยนเป็นแผนธุรกิจ';
+
+  @override
+  String get individualPlanSwitch => 'เปลี่ยนเป็นแผนรายบุคคล';
 
   @override
   String get planSwitchToYearly => 'เปลี่ยนเป็นรายปี';

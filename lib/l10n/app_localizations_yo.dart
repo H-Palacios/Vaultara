@@ -3157,7 +3157,13 @@ class AppLocalizationsYo extends AppLocalizations {
   String get businessPlanBuy => 'Gba Iṣòwò';
 
   @override
+  String get individualPlanBuy => 'Gba Ẹnìkọ̀ọ̀kan';
+
+  @override
   String get businessPlanSwitch => 'Yípadà sí Iṣòwò';
+
+  @override
+  String get individualPlanSwitch => 'Yípadà sí Ẹnìkọ̀ọ̀kan';
 
   @override
   String get planSwitchToYearly => 'Yípadà sí ìsanwó lọ́dọọdún';

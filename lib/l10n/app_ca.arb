@@ -1173,6 +1173,8 @@
   "planTabIndividual": "Particular",
   "planTabBusiness": "Business",
   "planGetPremium": "Obté Premium",
+  "individualPlanBuy": "Obtén Particular",
+  "individualPlanSwitch": "Canvia a Particular",
   "businessPlanBuy": "Obté Business",
   "businessPlanSwitch": "Passa a Business",
   "planSwitchToYearly": "Passa a anual",

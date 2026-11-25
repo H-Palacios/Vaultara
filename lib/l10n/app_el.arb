@@ -1149,6 +1149,8 @@
   "planTabIndividual": "Ατομικό",
   "planTabBusiness": "Επαγγελματικό",
   "planGetPremium": "Αποκτήστε το Premium",
+  "individualPlanBuy": "Αποκτήστε το Ατομικό",
+  "individualPlanSwitch": "Μεταβείτε στο Ατομικό",
   "businessPlanBuy": "Αποκτήστε το Επαγγελματικό",
   "businessPlanSwitch": "Αλλαγή σε Επαγγελματικό",
   "planSwitchToYearly": "Αλλαγή σε ετήσια χρέωση",

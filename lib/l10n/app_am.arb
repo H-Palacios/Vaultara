@@ -1180,6 +1180,8 @@
   "planTabIndividual": "ግለሰብ",
   "planTabBusiness": "ንግድ",
   "planGetPremium": "Premium ያግኙ",
+  "individualPlanBuy": "ግለሰብ ያግኙ",
+  "individualPlanSwitch": "ወደ ግለሰብ ይቀይሩ",
   "businessPlanBuy": "የንግድ ዕቅድ ያግኙ",
   "businessPlanSwitch": "ወደ ንግድ ዕቅድ ይቀይሩ",
   "planSwitchToYearly": "ወደ ዓመታዊ ይቀይሩ",

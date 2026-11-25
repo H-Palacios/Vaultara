@@ -3170,7 +3170,13 @@ class AppLocalizationsHu extends AppLocalizations {
   String get businessPlanBuy => 'Üzleti csomag megszerzése';
 
   @override
+  String get individualPlanBuy => 'Egyéni csomag megszerzése';
+
+  @override
   String get businessPlanSwitch => 'Váltás az Üzleti csomagra';
+
+  @override
+  String get individualPlanSwitch => 'Váltás az Egyéni csomagra';
 
   @override
   String get planSwitchToYearly => 'Váltás éves fizetésre';

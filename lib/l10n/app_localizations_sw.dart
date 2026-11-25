@@ -3170,7 +3170,13 @@ class AppLocalizationsSw extends AppLocalizations {
   String get businessPlanBuy => 'Pata Biashara';
 
   @override
+  String get individualPlanBuy => 'Pata Binafsi';
+
+  @override
   String get businessPlanSwitch => 'Hamia Biashara';
+
+  @override
+  String get individualPlanSwitch => 'Hamia Binafsi';
 
   @override
   String get planSwitchToYearly => 'Hamia ya kila mwaka';

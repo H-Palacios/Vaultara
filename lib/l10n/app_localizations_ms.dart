@@ -3156,7 +3156,13 @@ class AppLocalizationsMs extends AppLocalizations {
   String get businessPlanBuy => 'Dapatkan Perniagaan';
 
   @override
+  String get individualPlanBuy => 'Dapatkan Individu';
+
+  @override
   String get businessPlanSwitch => 'Tukar ke Perniagaan';
+
+  @override
+  String get individualPlanSwitch => 'Tukar ke Individu';
 
   @override
   String get planSwitchToYearly => 'Tukar ke tahunan';

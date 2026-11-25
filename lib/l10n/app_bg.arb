@@ -892,6 +892,8 @@
   "planTabIndividual": "Индивидуален",
   "planTabBusiness": "Business",
   "planGetPremium": "Вземете Premium",
+  "individualPlanBuy": "Вземете Индивидуален",
+  "individualPlanSwitch": "Преминете към Индивидуален",
   "businessPlanBuy": "Вземете Business",
   "businessPlanSwitch": "Преминете към Business",
   "planSwitchToYearly": "Преминете към годишно",

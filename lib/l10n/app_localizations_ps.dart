@@ -3170,7 +3170,13 @@ class AppLocalizationsPs extends AppLocalizations {
   String get businessPlanBuy => 'سوداګري ترلاسه کړئ';
 
   @override
+  String get individualPlanBuy => 'د انفرادي پلان واخلئ';
+
+  @override
   String get businessPlanSwitch => 'سوداګرۍ ته واوړئ';
+
+  @override
+  String get individualPlanSwitch => 'د انفرادي پلان ته واوړئ';
 
   @override
   String get planSwitchToYearly => 'کلنۍ ته واوړئ';

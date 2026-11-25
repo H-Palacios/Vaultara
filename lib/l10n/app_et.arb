@@ -1307,6 +1307,8 @@
   "planTabIndividual": "Üksikisik",
   "planTabBusiness": "Business",
   "planGetPremium": "Hangi Premium",
+  "individualPlanBuy": "Hangi Üksikisik",
+  "individualPlanSwitch": "Mine üle Üksikisik paketile",
   "businessPlanBuy": "Hangi Business",
   "businessPlanSwitch": "Lülitu paketile Business",
   "planSwitchToYearly": "Lülitu aastamaksele",

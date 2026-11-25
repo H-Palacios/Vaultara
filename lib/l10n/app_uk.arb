@@ -1159,6 +1159,8 @@
   "planTabIndividual": "Індивідуальний",
   "planTabBusiness": "Бізнес",
   "planGetPremium": "Отримати Premium",
+  "individualPlanBuy": "Отримати «Індивідуальний»",
+  "individualPlanSwitch": "Перейти на «Індивідуальний»",
   "businessPlanBuy": "Отримати Бізнес",
   "businessPlanSwitch": "Перейти на Бізнес",
   "planSwitchToYearly": "Перейти на річну оплату",

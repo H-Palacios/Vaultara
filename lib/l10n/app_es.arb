@@ -1149,6 +1149,8 @@
   "planTabIndividual": "Personal",
   "planTabBusiness": "Empresa",
   "planGetPremium": "Obtener Premium",
+  "individualPlanBuy": "Obtener Personal",
+  "individualPlanSwitch": "Cambiar a Personal",
   "businessPlanBuy": "Obtener Empresa",
   "businessPlanSwitch": "Cambiar a Empresa",
   "planSwitchToYearly": "Cambiar a anual",

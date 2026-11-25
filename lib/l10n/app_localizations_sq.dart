@@ -3170,7 +3170,13 @@ class AppLocalizationsSq extends AppLocalizations {
   String get businessPlanBuy => 'Merrni Biznes';
 
   @override
+  String get individualPlanBuy => 'Merrni Personal';
+
+  @override
   String get businessPlanSwitch => 'Kaloni në Biznes';
+
+  @override
+  String get individualPlanSwitch => 'Kaloni në Personal';
 
   @override
   String get planSwitchToYearly => 'Kaloni në vjetor';

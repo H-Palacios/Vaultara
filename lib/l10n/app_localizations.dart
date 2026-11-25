@@ -5569,6 +5569,18 @@ abstract class AppLocalizations {
   /// **'Get Premium'**
   String get planGetPremium;
 
+  /// Button on the Individual plan card that buys it, like Get Family.
+  ///
+  /// In en, this message translates to:
+  /// **'Get Individual'**
+  String get individualPlanBuy;
+
+  /// Button on the Individual plan card for someone on another paid plan, like Switch to Family.
+  ///
+  /// In en, this message translates to:
+  /// **'Switch to Individual'**
+  String get individualPlanSwitch;
+
   /// Main button to subscribe to Business when no free trial is available
   ///
   /// In en, this message translates to:

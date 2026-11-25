@@ -1142,6 +1142,8 @@
   "planTabIndividual": "Umntu ngamnye",
   "planTabBusiness": "Ishishini",
   "planGetPremium": "Fumana i-Premium",
+  "individualPlanBuy": "Fumana u-Umntu ngamnye",
+  "individualPlanSwitch": "Tshintshela ku-Umntu ngamnye",
   "businessPlanBuy": "Fumana isicwangciso seShishini",
   "businessPlanSwitch": "Tshintshela kwisicwangciso seShishini",
   "planSwitchToYearly": "Tshintshela ngonyaka",

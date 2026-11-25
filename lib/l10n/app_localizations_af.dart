@@ -3170,7 +3170,13 @@ class AppLocalizationsAf extends AppLocalizations {
   String get businessPlanBuy => 'Kry Besigheid';
 
   @override
+  String get individualPlanBuy => 'Kry Individueel';
+
+  @override
   String get businessPlanSwitch => 'Skakel oor na Besigheid';
+
+  @override
+  String get individualPlanSwitch => 'Skakel oor na Individueel';
 
   @override
   String get planSwitchToYearly => 'Skakel oor na jaarliks';

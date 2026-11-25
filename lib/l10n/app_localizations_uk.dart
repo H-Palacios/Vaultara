@@ -3231,7 +3231,13 @@ class AppLocalizationsUk extends AppLocalizations {
   String get businessPlanBuy => 'Отримати Бізнес';
 
   @override
+  String get individualPlanBuy => 'Отримати «Індивідуальний»';
+
+  @override
   String get businessPlanSwitch => 'Перейти на Бізнес';
+
+  @override
+  String get individualPlanSwitch => 'Перейти на «Індивідуальний»';
 
   @override
   String get planSwitchToYearly => 'Перейти на річну оплату';

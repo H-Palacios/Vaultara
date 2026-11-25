@@ -3170,7 +3170,13 @@ class AppLocalizationsTe extends AppLocalizations {
   String get businessPlanBuy => 'వ్యాపారం పొందండి';
 
   @override
+  String get individualPlanBuy => 'వ్యక్తిగత ప్లాన్ పొందండి';
+
+  @override
   String get businessPlanSwitch => 'వ్యాపారానికి మారండి';
+
+  @override
+  String get individualPlanSwitch => 'వ్యక్తిగత ప్లాన్‌కి మారండి';
 
   @override
   String get planSwitchToYearly => 'వార్షికానికి మారండి';

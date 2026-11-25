@@ -3170,7 +3170,13 @@ class AppLocalizationsKn extends AppLocalizations {
   String get businessPlanBuy => 'Business ಪಡೆಯಿರಿ';
 
   @override
+  String get individualPlanBuy => 'ವೈಯಕ್ತಿಕ ಪಡೆಯಿರಿ';
+
+  @override
   String get businessPlanSwitch => 'Business ಗೆ ಬದಲಿಸಿ';
+
+  @override
+  String get individualPlanSwitch => 'ವೈಯಕ್ತಿಕಕ್ಕೆ ಬದಲಿಸಿ';
 
   @override
   String get planSwitchToYearly => 'ವಾರ್ಷಿಕಕ್ಕೆ ಬದಲಿಸಿ';

@@ -892,6 +892,8 @@
   "planTabIndividual": "വ്യക്തിഗതം",
   "planTabBusiness": "ബിസിനസ്",
   "planGetPremium": "Premium നേടുക",
+  "individualPlanBuy": "വ്യക്തിഗതം നേടുക",
+  "individualPlanSwitch": "വ്യക്തിഗതത്തിലേക്ക് മാറുക",
   "businessPlanBuy": "ബിസിനസ് നേടുക",
   "businessPlanSwitch": "ബിസിനസിലേക്ക് മാറുക",
   "planSwitchToYearly": "വാർഷികത്തിലേക്ക് മാറുക",

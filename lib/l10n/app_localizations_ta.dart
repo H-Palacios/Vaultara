@@ -3170,7 +3170,13 @@ class AppLocalizationsTa extends AppLocalizations {
   String get businessPlanBuy => 'வணிகத் திட்டம் பெறு';
 
   @override
+  String get individualPlanBuy => 'தனிப்பட்ட திட்டம் பெறு';
+
+  @override
   String get businessPlanSwitch => 'வணிகத் திட்டத்துக்கு மாறு';
+
+  @override
+  String get individualPlanSwitch => 'தனிப்பட்ட திட்டத்துக்கு மாறு';
 
   @override
   String get planSwitchToYearly => 'ஆண்டுவாரிக்கு மாறு';

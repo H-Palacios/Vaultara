@@ -3248,7 +3248,13 @@ class AppLocalizationsGa extends AppLocalizations {
   String get businessPlanBuy => 'Faigh Gnó';
 
   @override
+  String get individualPlanBuy => 'Faigh Aonair';
+
+  @override
   String get businessPlanSwitch => 'Athraigh go Gnó';
+
+  @override
+  String get individualPlanSwitch => 'Athraigh go Aonair';
 
   @override
   String get planSwitchToYearly => 'Athraigh go bliantúil';

@@ -1142,6 +1142,8 @@
   "planTabIndividual": "Personal",
   "planTabBusiness": "Business",
   "planGetPremium": "Treci la Premium",
+  "individualPlanBuy": "Treci la Personal",
+  "individualPlanSwitch": "Treci la Personal",
   "businessPlanBuy": "Treci la Business",
   "businessPlanSwitch": "Treci la Business",
   "planSwitchToYearly": "Treci la anual",

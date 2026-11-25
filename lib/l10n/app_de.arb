@@ -1173,6 +1173,8 @@
   "planTabIndividual": "Einzeln",
   "planTabBusiness": "Business",
   "planGetPremium": "Premium holen",
+  "individualPlanBuy": "Einzelplan holen",
+  "individualPlanSwitch": "Zum Einzelplan wechseln",
   "businessPlanBuy": "Business holen",
   "businessPlanSwitch": "Zu Business wechseln",
   "planSwitchToYearly": "Zu jährlich wechseln",

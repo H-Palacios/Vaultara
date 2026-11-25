@@ -1156,6 +1156,8 @@
   "planTabIndividual": "Banakakoa",
   "planTabBusiness": "Enpresa",
   "planGetPremium": "Lortu Premium",
+  "individualPlanBuy": "Lortu Banakakoa",
+  "individualPlanSwitch": "Aldatu Banakakoa planera",
   "businessPlanBuy": "Lortu Enpresa",
   "businessPlanSwitch": "Aldatu Enpresara",
   "planSwitchToYearly": "Aldatu urtekora",

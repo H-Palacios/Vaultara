@@ -3225,7 +3225,13 @@ class AppLocalizationsLt extends AppLocalizations {
   String get businessPlanBuy => 'Gauti Verslo planą';
 
   @override
+  String get individualPlanBuy => 'Įsigyti Asmeninį planą';
+
+  @override
   String get businessPlanSwitch => 'Pereiti prie Verslo plano';
+
+  @override
+  String get individualPlanSwitch => 'Pereiti prie Asmeninio plano';
 
   @override
   String get planSwitchToYearly => 'Pereiti prie metinio';

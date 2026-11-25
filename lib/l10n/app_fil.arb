@@ -1154,6 +1154,8 @@
   "planTabIndividual": "Indibidwal",
   "planTabBusiness": "Negosyo",
   "planGetPremium": "Kunin ang Premium",
+  "individualPlanBuy": "Kunin ang Indibidwal",
+  "individualPlanSwitch": "Lumipat sa Indibidwal",
   "businessPlanBuy": "Kunin ang Negosyo",
   "businessPlanSwitch": "Lumipat sa Negosyo",
   "planSwitchToYearly": "Lumipat sa taunan",

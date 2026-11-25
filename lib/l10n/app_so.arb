@@ -1142,6 +1142,8 @@
   "planTabIndividual": "Shakhsi",
   "planTabBusiness": "Business",
   "planGetPremium": "Hel Premium",
+  "individualPlanBuy": "Hel Shakhsi",
+  "individualPlanSwitch": "U beddel Shakhsi",
   "businessPlanBuy": "Hel Business",
   "businessPlanSwitch": "U beddel Business",
   "planSwitchToYearly": "U beddel sanad kasta",

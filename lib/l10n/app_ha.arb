@@ -1154,6 +1154,8 @@
   "planTabIndividual": "Na mutum ɗaya",
   "planTabBusiness": "Kasuwanci",
   "planGetPremium": "Samu Premium",
+  "individualPlanBuy": "Samu Na mutum ɗaya",
+  "individualPlanSwitch": "Koma zuwa Na mutum ɗaya",
   "businessPlanBuy": "Samu Kasuwanci",
   "businessPlanSwitch": "Koma zuwa Kasuwanci",
   "planSwitchToYearly": "Koma na kowace shekara",

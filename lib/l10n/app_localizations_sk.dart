@@ -3223,7 +3223,13 @@ class AppLocalizationsSk extends AppLocalizations {
   String get businessPlanBuy => 'Získať tarifu Firma';
 
   @override
+  String get individualPlanBuy => 'Získať tarifu Jednotlivec';
+
+  @override
   String get businessPlanSwitch => 'Prejsť na tarifu Firma';
+
+  @override
+  String get individualPlanSwitch => 'Prejsť na tarifu Jednotlivec';
 
   @override
   String get planSwitchToYearly => 'Prejsť na ročnú platbu';

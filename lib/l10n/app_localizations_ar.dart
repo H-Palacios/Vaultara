@@ -3268,7 +3268,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String get businessPlanBuy => 'احصل على خطة الأعمال';
 
   @override
+  String get individualPlanBuy => 'احصل على الخطة الفردية';
+
+  @override
   String get businessPlanSwitch => 'التحويل إلى خطة الأعمال';
+
+  @override
+  String get individualPlanSwitch => 'انتقل إلى الخطة الفردية';
 
   @override
   String get planSwitchToYearly => 'التحويل إلى الدفع السنوي';

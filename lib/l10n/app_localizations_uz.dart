@@ -3170,7 +3170,13 @@ class AppLocalizationsUz extends AppLocalizations {
   String get businessPlanBuy => 'Businessga oʻtish';
 
   @override
+  String get individualPlanBuy => 'Yakka tarifini olish';
+
+  @override
   String get businessPlanSwitch => 'Businessga oʻtish';
+
+  @override
+  String get individualPlanSwitch => 'Yakka tarifiga oʻtish';
 
   @override
   String get planSwitchToYearly => 'Yillikka oʻtish';

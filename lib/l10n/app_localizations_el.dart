@@ -3170,7 +3170,13 @@ class AppLocalizationsEl extends AppLocalizations {
   String get businessPlanBuy => 'Αποκτήστε το Επαγγελματικό';
 
   @override
+  String get individualPlanBuy => 'Αποκτήστε το Ατομικό';
+
+  @override
   String get businessPlanSwitch => 'Αλλαγή σε Επαγγελματικό';
+
+  @override
+  String get individualPlanSwitch => 'Μεταβείτε στο Ατομικό';
 
   @override
   String get planSwitchToYearly => 'Αλλαγή σε ετήσια χρέωση';

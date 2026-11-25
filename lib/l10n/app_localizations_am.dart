@@ -3170,7 +3170,13 @@ class AppLocalizationsAm extends AppLocalizations {
   String get businessPlanBuy => 'የንግድ ዕቅድ ያግኙ';
 
   @override
+  String get individualPlanBuy => 'ግለሰብ ያግኙ';
+
+  @override
   String get businessPlanSwitch => 'ወደ ንግድ ዕቅድ ይቀይሩ';
+
+  @override
+  String get individualPlanSwitch => 'ወደ ግለሰብ ይቀይሩ';
 
   @override
   String get planSwitchToYearly => 'ወደ ዓመታዊ ይቀይሩ';

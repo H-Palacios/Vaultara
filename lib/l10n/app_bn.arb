@@ -1173,6 +1173,8 @@
   "planTabIndividual": "ব্যক্তিগত",
   "planTabBusiness": "বিজনেস",
   "planGetPremium": "প্রিমিয়াম নিন",
+  "individualPlanBuy": "ব্যক্তিগত প্ল্যান নিন",
+  "individualPlanSwitch": "ব্যক্তিগত প্ল্যানে যান",
   "businessPlanBuy": "বিজনেস নিন",
   "businessPlanSwitch": "বিজনেসে যান",
   "planSwitchToYearly": "বার্ষিক প্ল্যানে যান",

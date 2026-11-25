@@ -3170,7 +3170,13 @@ class AppLocalizationsEu extends AppLocalizations {
   String get businessPlanBuy => 'Lortu Enpresa';
 
   @override
+  String get individualPlanBuy => 'Lortu Banakakoa';
+
+  @override
   String get businessPlanSwitch => 'Aldatu Enpresara';
+
+  @override
+  String get individualPlanSwitch => 'Aldatu Banakakoa planera';
 
   @override
   String get planSwitchToYearly => 'Aldatu urtekora';

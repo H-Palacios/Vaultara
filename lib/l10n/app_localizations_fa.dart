@@ -3170,7 +3170,13 @@ class AppLocalizationsFa extends AppLocalizations {
   String get businessPlanBuy => 'تهیه طرح کسب‌وکار';
 
   @override
+  String get individualPlanBuy => 'تهیه طرح فردی';
+
+  @override
   String get businessPlanSwitch => 'تغییر به طرح کسب‌وکار';
+
+  @override
+  String get individualPlanSwitch => 'تغییر به طرح فردی';
 
   @override
   String get planSwitchToYearly => 'تغییر به سالانه';

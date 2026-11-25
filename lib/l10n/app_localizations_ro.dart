@@ -3200,7 +3200,13 @@ class AppLocalizationsRo extends AppLocalizations {
   String get businessPlanBuy => 'Treci la Business';
 
   @override
+  String get individualPlanBuy => 'Treci la Personal';
+
+  @override
   String get businessPlanSwitch => 'Treci la Business';
+
+  @override
+  String get individualPlanSwitch => 'Treci la Personal';
 
   @override
   String get planSwitchToYearly => 'Treci la anual';

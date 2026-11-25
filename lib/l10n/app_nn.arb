@@ -1142,6 +1142,8 @@
   "planTabIndividual": "Individuell",
   "planTabBusiness": "Business",
   "planGetPremium": "Skaff Premium",
+  "individualPlanBuy": "Skaff Individuell",
+  "individualPlanSwitch": "Byt til Individuell",
   "businessPlanBuy": "Skaff Business",
   "businessPlanSwitch": "Byt til Business",
   "planSwitchToYearly": "Byt til årleg",

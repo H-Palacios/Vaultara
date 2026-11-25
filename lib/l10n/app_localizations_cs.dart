@@ -3228,7 +3228,13 @@ class AppLocalizationsCs extends AppLocalizations {
   String get businessPlanBuy => 'Získat Business';
 
   @override
+  String get individualPlanBuy => 'Získat tarif Jednotlivec';
+
+  @override
   String get businessPlanSwitch => 'Přejít na Business';
+
+  @override
+  String get individualPlanSwitch => 'Přejít na tarif Jednotlivec';
 
   @override
   String get planSwitchToYearly => 'Přejít na roční platbu';

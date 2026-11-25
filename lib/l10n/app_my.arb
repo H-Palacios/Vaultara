@@ -892,6 +892,8 @@
   "planTabIndividual": "တစ်ဦးချင်း",
   "planTabBusiness": "စီးပွားရေး",
   "planGetPremium": "Premium ရယူရန်",
+  "individualPlanBuy": "တစ်ဦးချင်း ရယူရန်",
+  "individualPlanSwitch": "တစ်ဦးချင်းသို့ ပြောင်းရန်",
   "businessPlanBuy": "စီးပွားရေးအစီအစဉ် ရယူရန်",
   "businessPlanSwitch": "စီးပွားရေးအစီအစဉ်သို့ ပြောင်းရန်",
   "planSwitchToYearly": "နှစ်စဉ်သို့ ပြောင်းရန်",

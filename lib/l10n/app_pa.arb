@@ -1149,6 +1149,8 @@
   "planTabIndividual": "ਵਿਅਕਤੀਗਤ",
   "planTabBusiness": "ਬਿਜ਼ਨਸ",
   "planGetPremium": "Premium ਲਓ",
+  "individualPlanBuy": "ਵਿਅਕਤੀਗਤ ਪਲਾਨ ਲਓ",
+  "individualPlanSwitch": "ਵਿਅਕਤੀਗਤ ਪਲਾਨ ’ਤੇ ਸਵਿੱਚ ਕਰੋ",
   "businessPlanBuy": "ਬਿਜ਼ਨਸ ਪਲਾਨ ਲਓ",
   "businessPlanSwitch": "ਬਿਜ਼ਨਸ ਪਲਾਨ ਉੱਤੇ ਜਾਓ",
   "planSwitchToYearly": "ਸਾਲਾਨਾ ਉੱਤੇ ਜਾਓ",

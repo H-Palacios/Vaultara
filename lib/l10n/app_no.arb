@@ -1149,6 +1149,8 @@
   "planTabIndividual": "Individuell",
   "planTabBusiness": "Business",
   "planGetPremium": "Få Premium",
+  "individualPlanBuy": "Få Individuell",
+  "individualPlanSwitch": "Bytt til Individuell",
   "businessPlanBuy": "Få Business",
   "businessPlanSwitch": "Bytt til Business",
   "planSwitchToYearly": "Bytt til årlig",

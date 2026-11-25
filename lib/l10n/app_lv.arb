@@ -1160,6 +1160,8 @@
   "planTabIndividual": "Individuālais",
   "planTabBusiness": "Uzņēmumiem",
   "planGetPremium": "Iegūt Premium",
+  "individualPlanBuy": "Iegūt Individuālo",
+  "individualPlanSwitch": "Pārslēgties uz Individuālo",
   "businessPlanBuy": "Iegūt uzņēmumu plānu",
   "businessPlanSwitch": "Pāriet uz uzņēmumu plānu",
   "planSwitchToYearly": "Pāriet uz gada plānu",

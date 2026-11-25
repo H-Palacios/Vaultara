@@ -3170,7 +3170,13 @@ class AppLocalizationsGl extends AppLocalizations {
   String get businessPlanBuy => 'Obter Empresa';
 
   @override
+  String get individualPlanBuy => 'Obter Particular';
+
+  @override
   String get businessPlanSwitch => 'Cambiar a Empresa';
+
+  @override
+  String get individualPlanSwitch => 'Cambiar a Particular';
 
   @override
   String get planSwitchToYearly => 'Cambiar a anual';

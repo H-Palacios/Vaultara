@@ -3170,7 +3170,13 @@ class AppLocalizationsHa extends AppLocalizations {
   String get businessPlanBuy => 'Samu Kasuwanci';
 
   @override
+  String get individualPlanBuy => 'Samu Na mutum ɗaya';
+
+  @override
   String get businessPlanSwitch => 'Koma zuwa Kasuwanci';
+
+  @override
+  String get individualPlanSwitch => 'Koma zuwa Na mutum ɗaya';
 
   @override
   String get planSwitchToYearly => 'Koma na kowace shekara';

@@ -1156,6 +1156,8 @@
   "planTabIndividual": "Անհատական",
   "planTabBusiness": "Բիզնես",
   "planGetPremium": "Ձեռք բերել Premium",
+  "individualPlanBuy": "Ձեռք բերել Անհատականը",
+  "individualPlanSwitch": "Անցնել Անհատականին",
   "businessPlanBuy": "Ձեռք բերել Բիզնեսը",
   "businessPlanSwitch": "Անցնել Բիզնեսին",
   "planSwitchToYearly": "Անցնել տարեկանին",

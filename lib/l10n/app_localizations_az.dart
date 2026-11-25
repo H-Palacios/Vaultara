@@ -3170,7 +3170,13 @@ class AppLocalizationsAz extends AppLocalizations {
   String get businessPlanBuy => 'Biznes əldə et';
 
   @override
+  String get individualPlanBuy => 'Fərdi planını al';
+
+  @override
   String get businessPlanSwitch => 'Biznesə keç';
+
+  @override
+  String get individualPlanSwitch => 'Fərdi planına keç';
 
   @override
   String get planSwitchToYearly => 'İllik plana keç';

@@ -3233,7 +3233,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get businessPlanBuy => 'Получить Бизнес';
 
   @override
+  String get individualPlanBuy => 'Подключить «Индивидуальный»';
+
+  @override
   String get businessPlanSwitch => 'Перейти на Бизнес';
+
+  @override
+  String get individualPlanSwitch => 'Перейти на «Индивидуальный»';
 
   @override
   String get planSwitchToYearly => 'Перейти на годовую оплату';

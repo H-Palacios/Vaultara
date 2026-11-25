@@ -1142,6 +1142,8 @@
   "planTabIndividual": "Cá nhân",
   "planTabBusiness": "Doanh nghiệp",
   "planGetPremium": "Nhận Premium",
+  "individualPlanBuy": "Mua gói Cá nhân",
+  "individualPlanSwitch": "Chuyển sang gói Cá nhân",
   "businessPlanBuy": "Nhận gói Doanh nghiệp",
   "businessPlanSwitch": "Chuyển sang Doanh nghiệp",
   "planSwitchToYearly": "Chuyển sang hàng năm",

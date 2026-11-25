@@ -3170,7 +3170,13 @@ class AppLocalizationsGu extends AppLocalizations {
   String get businessPlanBuy => 'બિઝનેસ પ્લાન મેળવો';
 
   @override
+  String get individualPlanBuy => 'વ્યક્તિગત પ્લાન મેળવો';
+
+  @override
   String get businessPlanSwitch => 'બિઝનેસ પ્લાન પર સ્વિચ કરો';
+
+  @override
+  String get individualPlanSwitch => 'વ્યક્તિગત પ્લાન પર સ્વિચ કરો';
 
   @override
   String get planSwitchToYearly => 'વાર્ષિક પર સ્વિચ કરો';

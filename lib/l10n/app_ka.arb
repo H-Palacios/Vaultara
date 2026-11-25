@@ -1160,6 +1160,8 @@
   "planTabIndividual": "ინდივიდუალური",
   "planTabBusiness": "ბიზნესი",
   "planGetPremium": "Premium-ის შეძენა",
+  "individualPlanBuy": "ინდივიდუალურის შეძენა",
+  "individualPlanSwitch": "ინდივიდუალურზე გადასვლა",
   "businessPlanBuy": "ბიზნესის შეძენა",
   "businessPlanSwitch": "ბიზნესზე გადასვლა",
   "planSwitchToYearly": "წლიურზე გადასვლა",

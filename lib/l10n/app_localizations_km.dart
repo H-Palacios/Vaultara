@@ -3154,7 +3154,13 @@ class AppLocalizationsKm extends AppLocalizations {
   String get businessPlanBuy => 'ទទួលយកអាជីវកម្ម';
 
   @override
+  String get individualPlanBuy => 'យកគម្រោងបុគ្គល';
+
+  @override
   String get businessPlanSwitch => 'ប្តូរទៅអាជីវកម្ម';
+
+  @override
+  String get individualPlanSwitch => 'ប្ដូរទៅគម្រោងបុគ្គល';
 
   @override
   String get planSwitchToYearly => 'ប្តូរទៅប្រចាំឆ្នាំ';

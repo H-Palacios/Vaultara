@@ -1147,6 +1147,8 @@
   "planTabIndividual": "Pojedinačni",
   "planTabBusiness": "Poslovni",
   "planGetPremium": "Nabavi Premium",
+  "individualPlanBuy": "Odaberi Pojedinačni",
+  "individualPlanSwitch": "Prijeđi na Pojedinačni",
   "businessPlanBuy": "Nabavi Poslovni",
   "businessPlanSwitch": "Prijeđi na Poslovni",
   "planSwitchToYearly": "Prijeđi na godišnje plaćanje",

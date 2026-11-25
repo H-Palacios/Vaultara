@@ -1135,6 +1135,8 @@
   "planTabIndividual": "Enskild",
   "planTabBusiness": "Företag",
   "planGetPremium": "Skaffa Premium",
+  "individualPlanBuy": "Skaffa Enskild",
+  "individualPlanSwitch": "Byt till Enskild",
   "businessPlanBuy": "Skaffa Företag",
   "businessPlanSwitch": "Byt till Företag",
   "planSwitchToYearly": "Byt till årsvis",

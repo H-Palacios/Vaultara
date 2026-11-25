@@ -3169,7 +3169,13 @@ class AppLocalizationsSo extends AppLocalizations {
   String get businessPlanBuy => 'Hel Business';
 
   @override
+  String get individualPlanBuy => 'Hel Shakhsi';
+
+  @override
   String get businessPlanSwitch => 'U beddel Business';
+
+  @override
+  String get individualPlanSwitch => 'U beddel Shakhsi';
 
   @override
   String get planSwitchToYearly => 'U beddel sanad kasta';

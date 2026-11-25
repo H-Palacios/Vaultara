@@ -1142,6 +1142,8 @@
   "planTabIndividual": "个人版",
   "planTabBusiness": "企业版",
   "planGetPremium": "获取高级版",
+  "individualPlanBuy": "购买个人版",
+  "individualPlanSwitch": "切换到个人版",
   "businessPlanBuy": "获取企业版",
   "businessPlanSwitch": "切换到企业版",
   "planSwitchToYearly": "切换为按年计费",

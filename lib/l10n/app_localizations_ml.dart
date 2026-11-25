@@ -3170,7 +3170,13 @@ class AppLocalizationsMl extends AppLocalizations {
   String get businessPlanBuy => 'ബിസിനസ് നേടുക';
 
   @override
+  String get individualPlanBuy => 'വ്യക്തിഗതം നേടുക';
+
+  @override
   String get businessPlanSwitch => 'ബിസിനസിലേക്ക് മാറുക';
+
+  @override
+  String get individualPlanSwitch => 'വ്യക്തിഗതത്തിലേക്ക് മാറുക';
 
   @override
   String get planSwitchToYearly => 'വാർഷികത്തിലേക്ക് മാറുക';

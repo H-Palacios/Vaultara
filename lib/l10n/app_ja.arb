@@ -1154,6 +1154,8 @@
   "planTabIndividual": "個人",
   "planTabBusiness": "ビジネス",
   "planGetPremium": "プレミアムに加入",
+  "individualPlanBuy": "個人を購入",
+  "individualPlanSwitch": "個人に切り替え",
   "businessPlanBuy": "ビジネスに加入",
   "businessPlanSwitch": "ビジネスに切り替える",
   "planSwitchToYearly": "年払いに切り替える",

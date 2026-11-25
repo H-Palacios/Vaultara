@@ -3156,7 +3156,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get businessPlanBuy => '비즈니스 시작하기';
 
   @override
+  String get individualPlanBuy => '개인 요금제 시작';
+
+  @override
   String get businessPlanSwitch => '비즈니스로 전환';
+
+  @override
+  String get individualPlanSwitch => '개인 요금제로 전환';
 
   @override
   String get planSwitchToYearly => '연간 결제로 전환';

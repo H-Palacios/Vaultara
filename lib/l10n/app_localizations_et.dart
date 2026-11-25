@@ -3170,7 +3170,13 @@ class AppLocalizationsEt extends AppLocalizations {
   String get businessPlanBuy => 'Hangi Business';
 
   @override
+  String get individualPlanBuy => 'Hangi Üksikisik';
+
+  @override
   String get businessPlanSwitch => 'Lülitu paketile Business';
+
+  @override
+  String get individualPlanSwitch => 'Mine üle Üksikisik paketile';
 
   @override
   String get planSwitchToYearly => 'Lülitu aastamaksele';

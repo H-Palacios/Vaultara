@@ -3157,7 +3157,13 @@ class AppLocalizationsIg extends AppLocalizations {
   String get businessPlanBuy => 'Nweta Azụmahịa';
 
   @override
+  String get individualPlanBuy => 'Nweta Onye otu';
+
+  @override
   String get businessPlanSwitch => 'Gbanwee gaa Azụmahịa';
+
+  @override
+  String get individualPlanSwitch => 'Gbanwee gaa na Onye otu';
 
   @override
   String get planSwitchToYearly => 'Gbanwee gaa nke afọ ọ bụla';

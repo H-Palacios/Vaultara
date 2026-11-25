@@ -3170,7 +3170,13 @@ class AppLocalizationsNe extends AppLocalizations {
   String get businessPlanBuy => 'व्यवसाय लिनुहोस्';
 
   @override
+  String get individualPlanBuy => 'व्यक्तिगत लिनुहोस्';
+
+  @override
   String get businessPlanSwitch => 'व्यवसायमा बदल्नुहोस्';
+
+  @override
+  String get individualPlanSwitch => 'व्यक्तिगतमा स्विच गर्नुहोस्';
 
   @override
   String get planSwitchToYearly => 'वार्षिकमा बदल्नुहोस्';

@@ -1142,6 +1142,8 @@
   "planTabIndividual": "Indywidualny",
   "planTabBusiness": "Firmowy",
   "planGetPremium": "Wybierz Premium",
+  "individualPlanBuy": "Wybierz Indywidualny",
+  "individualPlanSwitch": "Przejdź na Indywidualny",
   "businessPlanBuy": "Wybierz Firmowy",
   "businessPlanSwitch": "Przejdź na plan Firmowy",
   "planSwitchToYearly": "Przejdź na płatność roczną",

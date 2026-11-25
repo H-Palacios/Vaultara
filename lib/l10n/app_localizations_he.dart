@@ -3206,7 +3206,13 @@ class AppLocalizationsHe extends AppLocalizations {
   String get businessPlanBuy => 'קבל עסקי';
 
   @override
+  String get individualPlanBuy => 'שדרג לאישי';
+
+  @override
   String get businessPlanSwitch => 'עבור לעסקי';
+
+  @override
+  String get individualPlanSwitch => 'עבור לאישי';
 
   @override
   String get planSwitchToYearly => 'עבור לתשלום שנתי';

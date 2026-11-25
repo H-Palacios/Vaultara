@@ -3168,7 +3168,13 @@ class AppLocalizationsFil extends AppLocalizations {
   String get businessPlanBuy => 'Kunin ang Negosyo';
 
   @override
+  String get individualPlanBuy => 'Kunin ang Indibidwal';
+
+  @override
   String get businessPlanSwitch => 'Lumipat sa Negosyo';
+
+  @override
+  String get individualPlanSwitch => 'Lumipat sa Indibidwal';
 
   @override
   String get planSwitchToYearly => 'Lumipat sa taunan';

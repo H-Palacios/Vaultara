@@ -1154,6 +1154,8 @@
   "planTabIndividual": "व्यक्तिगत",
   "planTabBusiness": "बिज़नेस",
   "planGetPremium": "Premium लें",
+  "individualPlanBuy": "व्यक्तिगत प्लान लें",
+  "individualPlanSwitch": "व्यक्तिगत प्लान पर स्विच करें",
   "businessPlanBuy": "बिज़नेस प्लान लें",
   "businessPlanSwitch": "बिज़नेस प्लान पर जाएँ",
   "planSwitchToYearly": "वार्षिक पर जाएँ",

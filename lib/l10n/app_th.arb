@@ -1159,6 +1159,8 @@
   "planTabIndividual": "รายบุคคล",
   "planTabBusiness": "ธุรกิจ",
   "planGetPremium": "สมัคร Premium",
+  "individualPlanBuy": "รับแผนรายบุคคล",
+  "individualPlanSwitch": "เปลี่ยนเป็นแผนรายบุคคล",
   "businessPlanBuy": "สมัครแผนธุรกิจ",
   "businessPlanSwitch": "เปลี่ยนเป็นแผนธุรกิจ",
   "planSwitchToYearly": "เปลี่ยนเป็นรายปี",

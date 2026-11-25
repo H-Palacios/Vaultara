@@ -3170,7 +3170,13 @@ class AppLocalizationsZu extends AppLocalizations {
   String get businessPlanBuy => 'Thola i-Business';
 
   @override
+  String get individualPlanBuy => 'Thola i-Umuntu ngamunye';
+
+  @override
   String get businessPlanSwitch => 'Shintshela ku-Business';
+
+  @override
+  String get individualPlanSwitch => 'Shintshela ku-Umuntu ngamunye';
 
   @override
   String get planSwitchToYearly => 'Shintshela kokwenyanga zonke';

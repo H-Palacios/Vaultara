@@ -1156,6 +1156,8 @@
   "planTabIndividual": "Personal",
   "planTabBusiness": "Biznes",
   "planGetPremium": "Merrni Premium",
+  "individualPlanBuy": "Merrni Personal",
+  "individualPlanSwitch": "Kaloni në Personal",
   "businessPlanBuy": "Merrni Biznes",
   "businessPlanSwitch": "Kaloni në Biznes",
   "planSwitchToYearly": "Kaloni në vjetor",

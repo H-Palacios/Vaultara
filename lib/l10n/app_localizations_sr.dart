@@ -3197,7 +3197,13 @@ class AppLocalizationsSr extends AppLocalizations {
   String get businessPlanBuy => 'Набави Пословни';
 
   @override
+  String get individualPlanBuy => 'Изабери Појединачни';
+
+  @override
   String get businessPlanSwitch => 'Пређи на Пословни';
+
+  @override
+  String get individualPlanSwitch => 'Пређи на Појединачни';
 
   @override
   String get planSwitchToYearly => 'Пређи на годишње';
@@ -13934,7 +13940,13 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get businessPlanBuy => 'Узми Business';
 
   @override
+  String get individualPlanBuy => 'Узми Појединачни';
+
+  @override
   String get businessPlanSwitch => 'Пређи на Business';
+
+  @override
+  String get individualPlanSwitch => 'Пређи на Појединачни';
 
   @override
   String get planSwitchToYearly => 'Пређи на годишње';
@@ -24671,7 +24683,13 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get businessPlanBuy => 'Nabavi Poslovni';
 
   @override
+  String get individualPlanBuy => 'Uzmi Pojedinačni';
+
+  @override
   String get businessPlanSwitch => 'Pređi na Poslovni';
+
+  @override
+  String get individualPlanSwitch => 'Pređi na Pojedinačni';
 
   @override
   String get planSwitchToYearly => 'Pređi na godišnje plaćanje';

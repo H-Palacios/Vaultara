@@ -3170,7 +3170,13 @@ class AppLocalizationsHy extends AppLocalizations {
   String get businessPlanBuy => 'Ձեռք բերել Բիզնեսը';
 
   @override
+  String get individualPlanBuy => 'Ձեռք բերել Անհատականը';
+
+  @override
   String get businessPlanSwitch => 'Անցնել Բիզնեսին';
+
+  @override
+  String get individualPlanSwitch => 'Անցնել Անհատականին';
 
   @override
   String get planSwitchToYearly => 'Անցնել տարեկանին';

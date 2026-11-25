@@ -3156,7 +3156,13 @@ class AppLocalizationsLo extends AppLocalizations {
   String get businessPlanBuy => 'ຮັບແພັກເກດທຸລະກິດ';
 
   @override
+  String get individualPlanBuy => 'ຮັບແພັກເກດບຸກຄົນ';
+
+  @override
   String get businessPlanSwitch => 'ປ່ຽນເປັນແພັກເກດທຸລະກິດ';
+
+  @override
+  String get individualPlanSwitch => 'ປ່ຽນເປັນແພັກເກດບຸກຄົນ';
 
   @override
   String get planSwitchToYearly => 'ປ່ຽນເປັນລາຍປີ';

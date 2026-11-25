@@ -3169,7 +3169,13 @@ class AppLocalizationsSi extends AppLocalizations {
   String get businessPlanBuy => 'ව්‍යාපාර සැලසුම ලබා ගන්න';
 
   @override
+  String get individualPlanBuy => 'තනි පුද්ගල ලබා ගන්න';
+
+  @override
   String get businessPlanSwitch => 'ව්‍යාපාර සැලසුමට මාරු වන්න';
+
+  @override
+  String get individualPlanSwitch => 'තනි පුද්ගල වෙත මාරු වන්න';
 
   @override
   String get planSwitchToYearly => 'වාර්ෂිකයට මාරු වන්න';

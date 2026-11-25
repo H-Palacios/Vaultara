@@ -3224,7 +3224,13 @@ class AppLocalizationsSl extends AppLocalizations {
   String get businessPlanBuy => 'Pridobi Poslovni paket';
 
   @override
+  String get individualPlanBuy => 'Pridobi paket Posameznik';
+
+  @override
   String get businessPlanSwitch => 'Preklopi na Poslovni paket';
+
+  @override
+  String get individualPlanSwitch => 'Preklopi na paket Posameznik';
 
   @override
   String get planSwitchToYearly => 'Preklopi na letno';

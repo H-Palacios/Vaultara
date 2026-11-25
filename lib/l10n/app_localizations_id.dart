@@ -3151,7 +3151,13 @@ class AppLocalizationsId extends AppLocalizations {
   String get businessPlanBuy => 'Dapatkan Bisnis';
 
   @override
+  String get individualPlanBuy => 'Dapatkan Perorangan';
+
+  @override
   String get businessPlanSwitch => 'Beralih ke Bisnis';
+
+  @override
+  String get individualPlanSwitch => 'Beralih ke Perorangan';
 
   @override
   String get planSwitchToYearly => 'Beralih ke tahunan';

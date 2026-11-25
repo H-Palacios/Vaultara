@@ -3156,7 +3156,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get businessPlanBuy => '获取企业版';
 
   @override
+  String get individualPlanBuy => '购买个人版';
+
+  @override
   String get businessPlanSwitch => '切换到企业版';
+
+  @override
+  String get individualPlanSwitch => '切换到个人版';
 
   @override
   String get planSwitchToYearly => '切换为按年计费';
@@ -13732,7 +13738,13 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get businessPlanBuy => '购买企业版';
 
   @override
+  String get individualPlanBuy => '购买个人版';
+
+  @override
   String get businessPlanSwitch => '切换到企业版';
+
+  @override
+  String get individualPlanSwitch => '切换到个人版';
 
   @override
   String get planSwitchToYearly => '切换到按年计费';
@@ -24308,7 +24320,13 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get businessPlanBuy => '取得商務版';
 
   @override
+  String get individualPlanBuy => '取得個人';
+
+  @override
   String get businessPlanSwitch => '切換至商務版';
+
+  @override
+  String get individualPlanSwitch => '切換至個人';
 
   @override
   String get planSwitchToYearly => '切換為按年計費';

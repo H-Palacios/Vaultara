@@ -1154,6 +1154,8 @@
   "planTabIndividual": "Aonair",
   "planTabBusiness": "Gnó",
   "planGetPremium": "Faigh Premium",
+  "individualPlanBuy": "Faigh Aonair",
+  "individualPlanSwitch": "Athraigh go Aonair",
   "businessPlanBuy": "Faigh Gnó",
   "businessPlanSwitch": "Athraigh go Gnó",
   "planSwitchToYearly": "Athraigh go bliantúil",

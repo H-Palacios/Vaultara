@@ -1142,6 +1142,8 @@
   "planTabIndividual": "Enkeltperson",
   "planTabBusiness": "Bedrift",
   "planGetPremium": "Skaff deg Premium",
+  "individualPlanBuy": "Få Enkeltperson",
+  "individualPlanSwitch": "Bytt til Enkeltperson",
   "businessPlanBuy": "Skaff deg Bedrift",
   "businessPlanSwitch": "Bytt til Bedrift",
   "planSwitchToYearly": "Bytt til årlig",

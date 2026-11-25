@@ -3170,7 +3170,13 @@ class AppLocalizationsPa extends AppLocalizations {
   String get businessPlanBuy => 'ਬਿਜ਼ਨਸ ਪਲਾਨ ਲਓ';
 
   @override
+  String get individualPlanBuy => 'ਵਿਅਕਤੀਗਤ ਪਲਾਨ ਲਓ';
+
+  @override
   String get businessPlanSwitch => 'ਬਿਜ਼ਨਸ ਪਲਾਨ ਉੱਤੇ ਜਾਓ';
+
+  @override
+  String get individualPlanSwitch => 'ਵਿਅਕਤੀਗਤ ਪਲਾਨ ’ਤੇ ਸਵਿੱਚ ਕਰੋ';
 
   @override
   String get planSwitchToYearly => 'ਸਾਲਾਨਾ ਉੱਤੇ ਜਾਓ';

@@ -1142,6 +1142,8 @@
   "planTabIndividual": "Posameznik",
   "planTabBusiness": "Poslovni",
   "planGetPremium": "Pridobi Premium",
+  "individualPlanBuy": "Pridobi paket Posameznik",
+  "individualPlanSwitch": "Preklopi na paket Posameznik",
   "businessPlanBuy": "Pridobi Poslovni paket",
   "businessPlanSwitch": "Preklopi na Poslovni paket",
   "planSwitchToYearly": "Preklopi na letno",

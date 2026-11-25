@@ -3144,7 +3144,13 @@ class AppLocalizationsJa extends AppLocalizations {
   String get businessPlanBuy => 'ビジネスに加入';
 
   @override
+  String get individualPlanBuy => '個人を購入';
+
+  @override
   String get businessPlanSwitch => 'ビジネスに切り替える';
+
+  @override
+  String get individualPlanSwitch => '個人に切り替え';
 
   @override
   String get planSwitchToYearly => '年払いに切り替える';

@@ -1154,6 +1154,8 @@
   "planTabIndividual": "فردی",
   "planTabBusiness": "کسب‌وکار",
   "planGetPremium": "تهیه Premium",
+  "individualPlanBuy": "تهیه طرح فردی",
+  "individualPlanSwitch": "تغییر به طرح فردی",
   "businessPlanBuy": "تهیه طرح کسب‌وکار",
   "businessPlanSwitch": "تغییر به طرح کسب‌وکار",
   "planSwitchToYearly": "تغییر به سالانه",

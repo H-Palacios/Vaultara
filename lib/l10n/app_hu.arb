@@ -1160,6 +1160,8 @@
   "planTabIndividual": "Egyéni",
   "planTabBusiness": "Üzleti",
   "planGetPremium": "Premium megszerzése",
+  "individualPlanBuy": "Egyéni csomag megszerzése",
+  "individualPlanSwitch": "Váltás az Egyéni csomagra",
   "businessPlanBuy": "Üzleti csomag megszerzése",
   "businessPlanSwitch": "Váltás az Üzleti csomagra",
   "planSwitchToYearly": "Váltás éves fizetésre",

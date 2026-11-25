@@ -1142,6 +1142,8 @@
   "planTabIndividual": "개인",
   "planTabBusiness": "비즈니스",
   "planGetPremium": "프리미엄 시작하기",
+  "individualPlanBuy": "개인 요금제 시작",
+  "individualPlanSwitch": "개인 요금제로 전환",
   "businessPlanBuy": "비즈니스 시작하기",
   "businessPlanSwitch": "비즈니스로 전환",
   "planSwitchToYearly": "연간 결제로 전환",

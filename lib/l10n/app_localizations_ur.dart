@@ -3170,7 +3170,13 @@ class AppLocalizationsUr extends AppLocalizations {
   String get businessPlanBuy => 'کاروبار پلان لیں';
 
   @override
+  String get individualPlanBuy => 'انفرادی پلان لیں';
+
+  @override
   String get businessPlanSwitch => 'کاروبار پلان پر سوئچ کریں';
+
+  @override
+  String get individualPlanSwitch => 'انفرادی پلان پر سوئچ کریں';
 
   @override
   String get planSwitchToYearly => 'سالانہ پر سوئچ کریں';
