@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
+import 'package:vaultara/features/auth/services/google_account_picker.dart';
 import 'package:vaultara/features/auth/services/new_account_setup.dart';
 import 'package:vaultara/features/auth/view/two_step/mfa_challenge_sheet.dart';
 
@@ -15,10 +16,12 @@ enum SocialSignInOutcome {
   failed,
 }
 
-/// Sign in with Google or Apple through Firebase's own provider flow, so no
-/// extra packages are needed. New accounts get the same profile setup as an
-/// email sign-up; the terms are accepted on the consent sheet the app shows
-/// after the first sign-in.
+/// Sign in with Google or Apple. Google uses the phone's own account
+/// picker (GoogleAccountPicker), and Firebase's Google page only when the
+/// picker cannot run. Apple uses Firebase's provider flow, which on iPhone
+/// and iPad is Apple's own sheet. New accounts get the same profile setup
+/// as an email sign-up; the terms are accepted on the consent sheet the app
+/// shows after the first sign-in.
 class SocialSignIn {
   SocialSignIn._();
 
@@ -42,7 +45,7 @@ class SocialSignIn {
     UserCredential credential;
     try {
       credential = await MfaChallenge.run(
-        () => FirebaseAuth.instance.signInWithProvider(_providerFor(provider)),
+        () => _signInWith(provider),
         context: context,
       );
     } on FirebaseAuthException catch (e) {
@@ -74,6 +77,21 @@ class SocialSignIn {
       // Settings if this did not finish.
     }
     return SocialSignInOutcome.signedIn;
+  }
+
+  static Future<UserCredential> _signInWith(SocialProvider provider) async {
+    if (provider == SocialProvider.google) {
+      final pick = await GoogleAccountPicker.pick();
+      switch (pick.result) {
+        case GooglePickResult.picked:
+          return FirebaseAuth.instance.signInWithCredential(pick.credential!);
+        case GooglePickResult.cancelled:
+          throw FirebaseAuthException(code: 'cancelled');
+        case GooglePickResult.unavailable:
+          break;
+      }
+    }
+    return FirebaseAuth.instance.signInWithProvider(_providerFor(provider));
   }
 
   static SocialSignInOutcome outcomeFor(String code) {

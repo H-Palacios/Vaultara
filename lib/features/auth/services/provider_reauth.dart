@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/widgets.dart';
+import 'package:vaultara/features/auth/services/google_account_picker.dart';
 import 'package:vaultara/features/auth/services/social_sign_in.dart';
 import 'package:vaultara/features/auth/view/two_step/mfa_challenge_sheet.dart';
 
@@ -51,9 +52,31 @@ class ProviderReauth {
     }
 
     final credential = await MfaChallenge.run(
-      () => user.reauthenticateWithProvider(authProvider),
+      () => _confirmWith(user, provider, authProvider),
       context: context,
     );
     return credential.additionalUserInfo?.authorizationCode;
+  }
+
+  /// Google is confirmed through the phone's account picker when it can
+  /// run, like signing in; Apple, and Google without the picker, through
+  /// Firebase's provider flow.
+  static Future<UserCredential> _confirmWith(
+    User user,
+    SocialProvider provider,
+    AuthProvider authProvider,
+  ) async {
+    if (provider == SocialProvider.google) {
+      final pick = await GoogleAccountPicker.pick();
+      switch (pick.result) {
+        case GooglePickResult.picked:
+          return user.reauthenticateWithCredential(pick.credential!);
+        case GooglePickResult.cancelled:
+          throw FirebaseAuthException(code: 'cancelled');
+        case GooglePickResult.unavailable:
+          break;
+      }
+    }
+    return user.reauthenticateWithProvider(authProvider);
   }
 }

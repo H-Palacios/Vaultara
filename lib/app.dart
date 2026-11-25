@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'package:vaultara/features/auth/services/google_account_picker.dart';
 import 'package:vaultara/features/home/data/home_warm_up.dart';
 import 'package:vaultara/features/home/view/widgets/home_warm_gate.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -185,6 +186,8 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
     WidgetsBinding.instance.addPostFrameCallback((_) => AuthRoot.onSignedOut());
 
     HomeWarmUp.reset();
+    // So the next Continue with Google lists the accounts again.
+    unawaited(GoogleAccountPicker.forget());
     _rememberedUid = null;
     _reconciledUid = null;
     _unlocked = false;
