@@ -37,11 +37,14 @@ class AssistantNextSteps {
           typeId: type,
           customType: action.petCustomType,
         );
+        // What came on the card with the pet is not offered again.
+        final details = action.petDetails;
+        final added = {for (final d in details.documents) d.groupKey};
         final groups = PetDocumentGroups.stillToAdd(
           const [],
-          hasChipNumber: false,
+          hasChipNumber: details.microchip != null,
           group: pet.group,
-        );
+        ).where((g) => !added.contains(g));
         return <AssistantNextStep>[
           for (final group in groups.take(max))
             AssistantNextStep(

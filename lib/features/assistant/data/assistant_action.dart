@@ -1,4 +1,5 @@
 import 'package:vaultara/core/data/models/kept_in.dart';
+import 'package:vaultara/features/assistant/data/assistant_pet_details.dart';
 import 'package:vaultara/features/guides/data/renewal_plan.dart';
 import 'package:vaultara/features/pets/data/pet.dart';
 import 'package:vaultara/features/pets/data/pet_type.dart';
@@ -33,6 +34,12 @@ enum AssistantActionType {
   petAdd,
   proofPack,
   remind,
+
+  /// From app version 19: removing a pet, deleting a trip and removing a
+  /// person, each by [AssistantAction.targetId] with its name.
+  petDelete,
+  tripDelete,
+  personDelete,
 }
 
 enum AssistantActionState { pending, busy, applied, opened, cancelled }
@@ -360,6 +367,9 @@ class AssistantAction {
   final String? petCustomType;
   final DateTime? petBirth;
 
+  /// A new pet's microchip, registry, vet and documents.
+  final AssistantPetDetails petDetails;
+
   const AssistantAction({
     required this.type,
     this.name,
@@ -431,6 +441,7 @@ class AssistantAction {
     this.petType,
     this.petCustomType,
     this.petBirth,
+    this.petDetails = AssistantPetDetails.none,
   });
 
   bool get isOpen => type == AssistantActionType.open;
@@ -615,6 +626,12 @@ class AssistantAction {
         return _fromPersonAdd(raw);
       case 'pet_add':
         return _fromPetAdd(raw);
+      case 'pet_delete':
+        return _fromRemove(raw, AssistantActionType.petDelete, Pet.maxName);
+      case 'trip_delete':
+        return _fromRemove(raw, AssistantActionType.tripDelete, 80);
+      case 'person_delete':
+        return _fromRemove(raw, AssistantActionType.personDelete, 40);
       case 'proof_pack':
         return _fromProofPack(raw);
       case 'remind':
@@ -951,6 +968,22 @@ class AssistantAction {
       petType: known ? type : PetTypes.custom,
       petCustomType: custom,
       petBirth: born != null && !born.isAfter(today) ? born : null,
+      petDetails: AssistantPetDetails.fromRaw(raw, _parse),
+    );
+  }
+
+  /// A pet, trip or person to remove: its id, and its name to show.
+  static AssistantAction? _fromRemove(
+    Map<dynamic, dynamic> raw,
+    AssistantActionType type,
+    int maxName,
+  ) {
+    final id = text(raw['id'], 200);
+    if (id == null) return null;
+    return AssistantAction(
+      type: type,
+      targetId: id,
+      name: text(raw['name'], maxName),
     );
   }
 
@@ -1092,13 +1125,15 @@ class AssistantAction {
         .toList();
   }
 
-  RecordPrefill toPrefill() => RecordPrefill(
+  /// The add record form filled from this card. [holderId] gives the
+  /// holder when it is not on the card, such as a pet saved just now.
+  RecordPrefill toPrefill({String? holderId}) => RecordPrefill(
     name: name,
     categoryKey: categoryKey,
     groupKey: groupKey,
     groupText: group,
     expiryDate: expiryDate,
-    holderId: personId,
+    holderId: holderId ?? personId,
     notes: notes,
   );
 }

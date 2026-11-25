@@ -132,6 +132,12 @@ class AssistantActionPreview {
         return 'proof_pack';
       case AssistantActionType.remind:
         return 'remind';
+      case AssistantActionType.petDelete:
+        return 'pet_delete';
+      case AssistantActionType.tripDelete:
+        return 'trip_delete';
+      case AssistantActionType.personDelete:
+        return 'person_delete';
     }
   }
 
@@ -154,6 +160,10 @@ class AssistantActionPreview {
         return _personAdd(f, action);
       case AssistantActionType.petAdd:
         return _petAdd(f, action);
+      case AssistantActionType.petDelete:
+      case AssistantActionType.tripDelete:
+      case AssistantActionType.personDelete:
+        return _remove(f, action);
       case AssistantActionType.proofPack:
         return _proofPack(f, action);
       case AssistantActionType.remind:
@@ -874,10 +884,12 @@ class AssistantActionPreview {
     );
   }
 
-  /// The new pet's name, with its type and birthday as rows.
+  /// The new pet's name, with its type, birthday, microchip, registry and
+  /// vet as rows, then each document it comes with and its date.
   static AssistantActionPreview _petAdd(_Formatter f, AssistantAction action) {
     final loc = f.loc;
     final type = action.petType;
+    final details = action.petDetails;
     final rows = <AssistantChangeRow>[
       if (type != null)
         AssistantChangeRow(
@@ -891,6 +903,28 @@ class AssistantActionPreview {
           label: loc.petBirthday,
           after: f.date(action.petBirth!),
         ),
+      if (details.microchip != null)
+        AssistantChangeRow(
+          label: loc.petChipNumber,
+          after: details.microchip!,
+        ),
+      if (details.chipRegistry != null)
+        AssistantChangeRow(
+          label: loc.petChipRegistry,
+          after: details.chipRegistry!,
+        ),
+      if (details.vetName != null)
+        AssistantChangeRow(label: loc.petVetName, after: details.vetName!),
+      if (details.vetPhone != null)
+        AssistantChangeRow(label: loc.petVetPhone, after: details.vetPhone!),
+      for (final document in details.documents)
+        AssistantChangeRow(
+          label: document.name ?? '',
+          after: document.expiryDate == null
+              ? loc.assistantActionNoDate
+              : f.date(document.expiryDate!),
+          wide: true,
+        ),
     ];
     return AssistantActionPreview(
       title: loc.petsAdd,
@@ -898,6 +932,49 @@ class AssistantActionPreview {
       subject: action.name ?? '',
       rows: rows,
     );
+  }
+
+  /// Removing a pet, a trip or a person: the card says what stays, in the
+  /// words their own screens use when asking.
+  static AssistantActionPreview _remove(_Formatter f, AssistantAction action) {
+    final loc = f.loc;
+    final name = action.name ?? '';
+    switch (action.type) {
+      case AssistantActionType.tripDelete:
+        final trip = action.targetId == null
+            ? null
+            : TripRepository.byId(action.targetId!);
+        return AssistantActionPreview(
+          title: loc.travelDeleteTrip,
+          icon: Icons.delete_outline_rounded,
+          subject: trip?.name ?? name,
+          rows: const <AssistantChangeRow>[],
+          note: loc.travelDeleteTripConfirm,
+          destructive: true,
+        );
+      case AssistantActionType.personDelete:
+        final person = PeopleRepository.byId(action.targetId);
+        final shown = person?.name ?? name;
+        return AssistantActionPreview(
+          title: loc.familyRemove,
+          icon: Icons.person_remove_alt_1_rounded,
+          subject: shown,
+          rows: const <AssistantChangeRow>[],
+          note: loc.familyRemoveBody(shown),
+          destructive: true,
+        );
+      default:
+        final pet = PetRepository.byId(action.targetId);
+        final shown = pet?.name ?? name;
+        return AssistantActionPreview(
+          title: loc.familyRemove,
+          icon: Icons.pets_rounded,
+          subject: shown,
+          rows: const <AssistantChangeRow>[],
+          note: loc.petRemoveConfirm(shown),
+          destructive: true,
+        );
+    }
   }
 
   static AssistantActionPreview _personEdit(

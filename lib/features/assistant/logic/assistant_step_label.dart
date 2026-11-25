@@ -40,6 +40,9 @@ class AssistantStepLabel {
             ? loc.assistantStepRecordGeneric
             : loc.assistantStepRecordRenew(name);
       case 'record_delete':
+      case 'pet_delete':
+      case 'trip_delete':
+      case 'person_delete':
         return name == null
             ? loc.assistantStepRecordGeneric
             : loc.assistantStepRecordDelete(name);

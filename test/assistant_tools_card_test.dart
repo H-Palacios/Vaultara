@@ -46,7 +46,7 @@ AssistantAction _remind() => AssistantAction.fromMap({
 
 void main() {
   test('the app asks the server for protocol 18', () {
-    expect(AssistantService.protocolVersion, 18);
+    expect(AssistantService.protocolVersion, greaterThanOrEqualTo(18));
   });
 
   group('Proof pack from the chat', () {

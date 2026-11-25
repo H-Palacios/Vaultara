@@ -1,3 +1,4 @@
+import 'package:vaultara/features/family/logic/record_holder.dart';
 import 'package:vaultara/features/records/logic/record_details.dart';
 import 'package:vaultara/core/data/repositories/attachment_repository.dart';
 import 'package:vaultara/features/reminders/view/notification_ask_sheet.dart';
@@ -19,6 +20,7 @@ import 'package:vaultara/features/assistant/data/assistant_action.dart';
 import 'package:vaultara/features/assistant/logic/assistant_navigator.dart';
 import 'package:vaultara/features/assistant/logic/assistant_proof_pack_action.dart';
 import 'package:vaultara/features/assistant/logic/assistant_remind_action.dart';
+import 'package:vaultara/features/assistant/logic/assistant_remove_action.dart';
 import 'package:vaultara/features/assistant/logic/assistant_settings.dart';
 import 'package:vaultara/features/billing/data/repositories/plan_repository.dart';
 import 'package:vaultara/features/costs/view/cost_field.dart';
@@ -72,21 +74,30 @@ class AssistantActionLauncher {
         false;
   }
 
-  static bool canAddDirectly(AssistantAction action) {
+  static bool canAddDirectly(AssistantAction action) =>
+      _addable(action, holderId: action.personId);
+
+  /// Whether [action] can be saved as it is, for [holderId]: a name, a
+  /// date, a built-in group, a holder on this phone, and no record like it.
+  static bool _addable(
+    AssistantAction action, {
+    required String? holderId,
+    bool holderJustSaved = false,
+  }) {
     final name = action.name;
     final groupKey = action.groupKey;
     if (name == null || action.expiryDate == null || groupKey == null) {
       return false;
     }
     if (!_presetGroup(action.categoryKey, groupKey)) return false;
-    final personId = action.personId;
-    if (personId != null && PeopleRepository.byId(personId) == null) {
-      return false;
-    }
+    // A pet's document belongs to the pet, which is kept apart from the
+    // people. Looking only among the people sent every pet document to the
+    // add record form instead of saving it.
+    if (!holderJustSaved && !RecordHolder.known(holderId)) return false;
     final duplicate = RecordMatch.duplicateOf(
       name: normaliseTitleCase(name),
       groupKey: groupKey,
-      holderId: personId,
+      holderId: holderId,
     );
     return duplicate == null;
   }
@@ -98,6 +109,17 @@ class AssistantActionLauncher {
 
   static TrackedItem? newRecord(BuildContext context, AssistantAction action) {
     if (!canAddDirectly(action)) return null;
+    return _record(context, action, holderId: action.personId);
+  }
+
+  /// The record [action] describes, for [holderId]. Only for a card that
+  /// passed [_addable].
+  static TrackedItem _record(
+    BuildContext context,
+    AssistantAction action, {
+    required String? holderId,
+    int? reminderBaseId,
+  }) {
     final groupKey = action.groupKey!;
     final categoryKey = action.categoryKey!;
     final defaults = RecordDefaults.forGroup(groupKey);
@@ -112,7 +134,7 @@ class AssistantActionLauncher {
       reminderOffsetDays: action.hasReminder
           ? action.reminderDays
           : RecordDefaults.reminderDays,
-      holderId: action.personId,
+      holderId: holderId,
       renewalCost: cost,
       costCurrency: cost == null
           ? null
@@ -121,10 +143,15 @@ class AssistantActionLauncher {
       locked: action.locked,
       inWallet: action.inWallet ?? defaults.inWallet,
       leadDays: action.leadDays ?? defaults.leadDays,
-      issuedIn: RecordDetails.defaultCountry(groupKey, action.personId),
-      reminderBaseId: DateTime.now().millisecondsSinceEpoch % 2147483647,
+      issuedIn: RecordDetails.defaultCountry(groupKey, holderId),
+      reminderBaseId:
+          reminderBaseId ?? DateTime.now().millisecondsSinceEpoch % 2147483647,
     );
   }
+
+  /// Room for one record's reminders, as the import leaves between records,
+  /// so records saved together never share a reminder.
+  static const int _reminderIdSpacing = 10;
 
   static void _info(BuildContext context, String message) {
     ActionFeedbackSnackbar.showInfo(
@@ -274,6 +301,14 @@ class AssistantActionLauncher {
           return AssistantProofPackAction.open(context, action);
         case AssistantActionType.remind:
           return await AssistantRemindAction.send(context, action);
+        case AssistantActionType.petDelete:
+        case AssistantActionType.tripDelete:
+        case AssistantActionType.personDelete:
+          return await AssistantRemoveAction.run(
+            context,
+            action,
+            onUndo: (undo) => slot.undo = undo,
+          );
       }
     } catch (_) {
       if (context.mounted) {
@@ -930,7 +965,7 @@ class AssistantActionLauncher {
     }
 
     final personId = changes.personId?.value;
-    if (personId != null && PeopleRepository.byId(personId) == null) {
+    if (!RecordHolder.known(personId)) {
       _info(context, loc.assistantPersonMissing);
       return AssistantApplyResult.failed;
     }
@@ -1167,6 +1202,7 @@ class AssistantActionLauncher {
       _info(context, loc.assistantActionFailed);
       return AssistantApplyResult.failed;
     }
+    final details = action.petDetails;
     final pet = await PetRepository.add(
       Pet(
         id: '',
@@ -1174,26 +1210,103 @@ class AssistantActionLauncher {
         typeId: type,
         customType: action.petCustomType,
         birthDate: action.petBirth,
+        microchip: details.microchip,
+        chipRegistry: details.chipRegistry,
+        vetName: details.vetName,
+        vetPhone: details.vetPhone,
       ),
     );
     if (pet == null) {
       if (context.mounted) _info(context, loc.assistantActionFailed);
       return AssistantApplyResult.failed;
     }
+    if (!context.mounted) return AssistantApplyResult.applied;
+    final saved = await _addPetDocuments(context, details.documents, pet);
     slot.undo = () async {
+      for (final record in saved) {
+        final id = record.id;
+        final current = id == null ? null : RecordRepository.findById(id);
+        if (current == null) continue;
+        await RecordRepository.softDeleteRecord(current);
+        await RecordRepository.permanentlyDeleteRecord(current);
+      }
       final current = PetRepository.byId(pet.id);
-      if (current == null) return false;
-      await PetRepository.remove(current);
+      if (current != null) await PetRepository.remove(current);
+      _refreshHome();
       return true;
     };
-    if (context.mounted) {
-      ActionFeedbackSnackbar.showInfo(
+    if (!context.mounted) return AssistantApplyResult.applied;
+    ActionFeedbackSnackbar.showInfo(
+      context,
+      loc.familyAdded(pet.name),
+      icon: Icons.pets_rounded,
+    );
+    // A document without a date cannot be saved yet: the first one opens
+    // in the add record form for the pet, as a record card does.
+    final undated = details.documents.where((d) => d.expiryDate == null);
+    final shell = ShellState.current;
+    if (undated.isNotEmpty && shell != null) {
+      openAddRecord(
         context,
-        loc.familyAdded(pet.name),
-        icon: Icons.pets_rounded,
+        shell,
+        prefill: undated.first.toPrefill(holderId: pet.id),
       );
     }
     return AssistantApplyResult.applied;
+  }
+
+  /// Saves a new pet's documents with the pet as holder, and their
+  /// reminders. One the pet already has, or without a date, is left out.
+  static Future<List<TrackedItem>> _addPetDocuments(
+    BuildContext context,
+    List<AssistantAction> documents,
+    Pet pet,
+  ) async {
+    final shell = ShellState.current;
+    final saved = <TrackedItem>[];
+    if (shell == null || documents.isEmpty) return saved;
+    final base = DateTime.now().millisecondsSinceEpoch % 2147483647;
+    for (var i = 0; i < documents.length; i++) {
+      final document = documents[i];
+      if (!_addable(document, holderId: pet.id, holderJustSaved: true)) {
+        continue;
+      }
+      if (!context.mounted) break;
+      final record = _record(
+        context,
+        document,
+        holderId: pet.id,
+        reminderBaseId: (base + i * _reminderIdSpacing) % 2147483647,
+      );
+      final ok = await RecordRepository.addRecord(
+        record,
+        isPremium: shell.isPremium,
+      );
+      if (ok) saved.add(RecordRepository.stored(record));
+    }
+    if (saved.isEmpty) return saved;
+    _refreshHome();
+    if (!context.mounted) return saved;
+    final loc = AppLocalizations.of(context)!;
+    var allScheduled = true;
+    for (final record in saved) {
+      final scheduled = await ReminderScheduler.tryScheduleForItem(
+        loc: loc,
+        item: record,
+        firstName: _firstName(shell),
+      );
+      if (!scheduled && record.reminderOffsetDays != null) allScheduled = false;
+    }
+    // Asked once for all of them, not once a document.
+    if (!allScheduled && context.mounted) {
+      await NotificationAsk.afterReminderSet(
+        context,
+        onOpenSettings: () {
+          ReminderScheduler.openSystemNotificationSettings();
+        },
+      );
+    }
+    return saved;
   }
 
   static Future<AssistantApplyResult> _editPerson(
