@@ -5,6 +5,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'package:vaultara/features/home/data/home_warm_up.dart';
+import 'package:vaultara/features/home/view/widgets/home_warm_gate.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 import 'core/analytics/analytics_service.dart';
@@ -157,6 +159,10 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
       _unlocked = true;
     }
 
+    // Started before the lock screen and the shell, so Home's first parts
+    // are being read while those show.
+    HomeWarmUp.start(uid);
+
     if (_rememberedUid != uid) {
       _rememberedUid = uid;
       BiometricPreference.rememberUid(uid);
@@ -177,6 +183,7 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
     // screen shows straight away instead of after pressing back.
     WidgetsBinding.instance.addPostFrameCallback((_) => AuthRoot.onSignedOut());
 
+    HomeWarmUp.reset();
     _rememberedUid = null;
     _reconciledUid = null;
     _unlocked = false;
@@ -296,6 +303,15 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
     });
   }
 
+  /// The app for [uid]. Home's first parts are read while the logo shows
+  /// (see HomeWarmUp), so Home opens with them instead of filling in.
+  Widget _shell(String uid) => HomeWarmGate(
+    key: ValueKey(uid),
+    uid: uid,
+    waiting: _splash(),
+    child: Shell(key: ValueKey(uid)),
+  );
+
   Widget _splash() => Scaffold(
     backgroundColor: AppBrand.navy,
     body: Center(child: Image.asset(AppBrand.logoAsset, width: 140)),
@@ -414,9 +430,7 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
 
                 _onUserSeen(user.uid);
 
-                if (_unlocked) {
-                  return Shell(key: ValueKey(refreshedUser.uid));
-                }
+                if (_unlocked) return _shell(refreshedUser.uid);
 
                 return FutureBuilder<bool>(
                   future: _biometricsFor(refreshedUser.uid),
@@ -431,7 +445,7 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
                       );
                     }
 
-                    return Shell(key: ValueKey(refreshedUser.uid));
+                    return _shell(refreshedUser.uid);
                   },
                 );
               },
