@@ -833,6 +833,15 @@ const TOOLS_V18 = [
   SUGGEST_REPLIES,
 ];
 const NAMES_V18 = new Set(TOOLS_V18.map((t) => t.name));
+// Protocol 19: a pet with its chip, vet and documents on one card, and
+// deleting pets, trips and people.
+const V19 = require("./assistant-v19")({ str, pushAction, draftReady, norm, v17: V17, proposeRecord });
+const TOOLS_V19 = [
+  ...TOOLS_V18.filter((t) => t.name !== "suggest_replies" && !V19.NAMES.has(t.name)),
+  ...V19.TOOLS.map(V17.withFields),
+  SUGGEST_REPLIES,
+];
+const NAMES_V19 = new Set(TOOLS_V19.map((t) => t.name));
 let webSearchOff = false;
 
 // Sent when a turn ended with no words and no card.
@@ -2197,6 +2206,9 @@ function proposeSetting(input, actions, settings = SETTINGS) {
 
 async function runTool(ctx, name, input, actions, allowed) {
   if (!allowed.has(name)) return { error: "Unknown tool." };
+  if (ctx.v19 && V19.NAMES.has(name)) {
+    return V17.around(ctx, name, input, actions, (n, i) => V19.run(ctx, n, i, actions));
+  }
   if (ctx.v17) {
     return V17.around(ctx, name, input, actions, (n, i) => runToolCore(ctx, n, i, actions));
   }
@@ -2276,7 +2288,7 @@ async function runToolCore(ctx, name, input, actions) {
 }
 
 // Built once when the module loads, so it may only use its own arguments.
-function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false, v10 = false, v13 = false, v14 = false, v15 = false, v16 = false, v17 = false, v18 = false) {
+function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false, v10 = false, v13 = false, v14 = false, v15 = false, v16 = false, v17 = false, v18 = false, v19 = false) {
   const lines = [
     "You are the Vaultara assistant inside the Vaultara app, which tracks expiry dates of documents, cards, licences, permits and policies.",
     "Help with the user's own records, people, trips and renewals in Vaultara, and answer questions about how the app works and where things are. Politely decline unrelated topics in one sentence.",
@@ -2365,8 +2377,9 @@ function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = f
   if (v10) lines.push(...V10.GUIDE);
   if (v15) lines.push(...(v17 ? V17.petGuide(V15.GUIDE) : V15.GUIDE));
   if (v16) lines.push(...V16.GUIDE);
-  if (v17) lines.push(...V17.GUIDE);
+  if (v17) lines.push(...(v19 ? V17.GUIDE.map(petDetailsLine) : V17.GUIDE));
   if (v18) lines.push(...V18.GUIDE);
+  if (v19) lines.push(...V19.GUIDE);
   return lines.join("\n");
 }
 
@@ -2384,6 +2397,17 @@ const STATIC_PROMPT_V15 = staticPrompt(true, true, true, true, true, true, true,
 const STATIC_PROMPT_V16 = staticPrompt(true, true, true, true, true, true, true, true, true, true, true);
 const STATIC_PROMPT_V17 = staticPrompt(true, true, true, true, true, true, true, true, true, true, true, true);
 const STATIC_PROMPT_V18 = staticPrompt(true, true, true, true, true, true, true, true, true, true, true, true, true);
+const STATIC_PROMPT_V19 = staticPrompt(true, true, true, true, true, true, true, true, true, true, true, true, true, true);
+
+// From protocol 19 a new pet's chip, vet and documents go on its card, so
+// the protocol 17 line saying they are added later on the pet's page is
+// changed to say so.
+function petDetailsLine(line) {
+  return line.replace(
+    "Then add in a few words that the microchip, vet and documents can be added on the pet's page.",
+    "Put any microchip, registry, vet and documents the user gave in the same call (see Adding a pet with details); when they gave none, add in a few words that these can be added on the pet's page.",
+  );
+}
 
 function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false, v10 = false) {
   const date = dayToDate(ctx.today);
@@ -2452,7 +2476,7 @@ function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false,
   return [
     {
       type: "text",
-      text: ctx.v18 && v10 ? STATIC_PROMPT_V18 : ctx.v17 && v10 ? STATIC_PROMPT_V17 : ctx.v16 && v10 ? STATIC_PROMPT_V16 : ctx.v15 && v10 ? STATIC_PROMPT_V15 : ctx.v14 && v10 ? STATIC_PROMPT_V14 : ctx.v13 && v10 ? STATIC_PROMPT_V13 : v10 ? STATIC_PROMPT_V10 : v7 ? STATIC_PROMPT_V7 : v6 ? STATIC_PROMPT_V6 : v5 ? STATIC_PROMPT_V5 : v4 ? STATIC_PROMPT_V4 : v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1,
+      text: ctx.v19 && v10 ? STATIC_PROMPT_V19 : ctx.v18 && v10 ? STATIC_PROMPT_V18 : ctx.v17 && v10 ? STATIC_PROMPT_V17 : ctx.v16 && v10 ? STATIC_PROMPT_V16 : ctx.v15 && v10 ? STATIC_PROMPT_V15 : ctx.v14 && v10 ? STATIC_PROMPT_V14 : ctx.v13 && v10 ? STATIC_PROMPT_V13 : v10 ? STATIC_PROMPT_V10 : v7 ? STATIC_PROMPT_V7 : v6 ? STATIC_PROMPT_V6 : v5 ? STATIC_PROMPT_V5 : v4 ? STATIC_PROMPT_V4 : v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1,
       cache_control: { type: "ephemeral" },
     },
     { type: "text", text: dynamic.join("\n") },
@@ -2550,6 +2574,8 @@ async function stepFor(ctx, name, input) {
       if (v16 !== undefined) return v16;
       const v17 = ctx.v17 ? V17.step(ctx, name, input) : undefined;
       if (v17 !== undefined) return v17;
+      const v19 = ctx.v19 ? V19.step(ctx, name, input) : undefined;
+      if (v19 !== undefined) return v19;
       const v18 = ctx.v18 ? V18.step(ctx, name, input) : undefined;
       return v18 === undefined ? step ?? null : v18;
     }
@@ -2781,6 +2807,7 @@ exports.askVaultara = onCall(
     const v16 = version >= 16 && intent === "chat";
     const v17 = version >= 17 && intent === "chat";
     const v18 = version >= 18 && intent === "chat";
+    const v19 = version >= 19 && intent === "chat";
     const v7 = version >= 7 && intent === "chat";
     const v8 = version >= 8 && intent === "chat";
     const v9 = version >= 9;
@@ -2828,15 +2855,16 @@ exports.askVaultara = onCall(
     ctx.v16 = v16;
     ctx.v17 = v17;
     ctx.v18 = v18;
+    ctx.v19 = v19;
     ctx.talk = v12 && request.data?.mode === "talk";
     ctx.webSearch = v12 && !webSearchOff && process.env.ASSISTANT_WEB_SEARCH !== "off";
     ctx.learned = v11 ? await ctx.learnedWords() : [];
     ctx.lifePlanList = v7 ? await ctx.activeLifePlans() : [];
     const system = systemPrompt(ctx, lang, intent, v2, v3, v4, v5, v6, v7, v10);
-    const baseTools = v18 ? TOOLS_V18 : v17 ? TOOLS_V17 : v16 ? TOOLS_V16 : v15 ? TOOLS_V15 : v14 ? TOOLS_V14 : v13 ? TOOLS_V13 : v12 ? TOOLS_V12 : v11 ? TOOLS_V11 : v10 ? TOOLS_V10 : v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
+    const baseTools = v19 ? TOOLS_V19 : v18 ? TOOLS_V18 : v17 ? TOOLS_V17 : v16 ? TOOLS_V16 : v15 ? TOOLS_V15 : v14 ? TOOLS_V14 : v13 ? TOOLS_V13 : v12 ? TOOLS_V12 : v11 ? TOOLS_V11 : v10 ? TOOLS_V10 : v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
     const groupTools = v9 ? withGroupsV9(baseTools) : baseTools;
     const tools = ctx.webSearch ? [...groupTools, COACH_MODULE.WEB_SEARCH_TOOL] : groupTools;
-    const allowed = v18 ? NAMES_V18 : v17 ? NAMES_V17 : v16 ? NAMES_V16 : v15 ? NAMES_V15 : v14 ? NAMES_V14 : v13 ? NAMES_V13 : v12 ? NAMES_V12 : v11 ? NAMES_V11 : v10 ? NAMES_V10 : v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
+    const allowed = v19 ? NAMES_V19 : v18 ? NAMES_V18 : v17 ? NAMES_V17 : v16 ? NAMES_V16 : v15 ? NAMES_V15 : v14 ? NAMES_V14 : v13 ? NAMES_V13 : v12 ? NAMES_V12 : v11 ? NAMES_V11 : v10 ? NAMES_V10 : v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
     const progress = new RunProgress(uid, v3 ? runId : null);
     let replies = [];
     const conversation = messages.map((m) => ({ role: m.role, content: m.content }));
@@ -3024,6 +3052,7 @@ exports.forgetAssistantWords = onCall(CALLABLE, async (request) => {
 exports._test = {
   runTool,
   UserData,
+  GROUPS_V9,
   groupMatches,
   resolveGroup,
   TOOLS_V10,
@@ -3046,7 +3075,10 @@ exports._test = {
   NAMES_V17,
   TOOLS_V18,
   NAMES_V18,
+  TOOLS_V19,
+  NAMES_V19,
   STATIC_PROMPT_V16,
   STATIC_PROMPT_V17,
   STATIC_PROMPT_V18,
+  STATIC_PROMPT_V19,
 };
