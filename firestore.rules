@@ -28,7 +28,7 @@ service cloud.firestore {
     function profileKeys() {
       return ['firstName', 'lastName', 'fullName', 'email', 'createdAt',
               'updatedAt', 'recordsMigrated', 'groupsMigrated', 'companyName',
-              'avatarPath', 'avatarVersion', 'monthlySummary',
+              'avatarPath', 'avatarVersion', 'monthlySummary', 'monthAhead',
               'preferredLanguage', 'utcOffsetMinutes', 'nationality',
               'complianceReport', 'residence', 'consent', 'analyticsConsent',
               'extraPassports', 'passportRecords'];
@@ -110,6 +110,7 @@ service cloud.firestore {
     function summaryPrefsOk() {
       let d = request.resource.data;
       return (!('monthlySummary' in d) || d.monthlySummary is bool)
+        && (!('monthAhead' in d) || d.monthAhead is bool)
         && (!('complianceReport' in d) || d.complianceReport is bool)
         && (!('preferredLanguage' in d) || d.preferredLanguage == null
             || (d.preferredLanguage is string
@@ -586,12 +587,27 @@ service cloud.firestore {
 
     function assistantProposalsOk(d) {
       return !('proposals' in d)
-        || (d.proposals is list && d.proposals.size() <= 5
+        || (d.proposals is list && d.proposals.size() <= 20
             && assistantProposalOk(d.proposals, 0)
             && assistantProposalOk(d.proposals, 1)
             && assistantProposalOk(d.proposals, 2)
             && assistantProposalOk(d.proposals, 3)
-            && assistantProposalOk(d.proposals, 4));
+            && assistantProposalOk(d.proposals, 4)
+            && assistantProposalOk(d.proposals, 5)
+            && assistantProposalOk(d.proposals, 6)
+            && assistantProposalOk(d.proposals, 7)
+            && assistantProposalOk(d.proposals, 8)
+            && assistantProposalOk(d.proposals, 9)
+            && assistantProposalOk(d.proposals, 10)
+            && assistantProposalOk(d.proposals, 11)
+            && assistantProposalOk(d.proposals, 12)
+            && assistantProposalOk(d.proposals, 13)
+            && assistantProposalOk(d.proposals, 14)
+            && assistantProposalOk(d.proposals, 15)
+            && assistantProposalOk(d.proposals, 16)
+            && assistantProposalOk(d.proposals, 17)
+            && assistantProposalOk(d.proposals, 18)
+            && assistantProposalOk(d.proposals, 19));
     }
 
     function validAssistantFeedback() {

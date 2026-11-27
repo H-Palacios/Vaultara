@@ -533,3 +533,6 @@ exports.revokeShareLink = onCall(CALLABLE, async (request) => {
 
   return { revoked: true };
 });exports.onAssistantReportCreated = require("./assistant-reports").onAssistantReportCreated;
+exports.sendSupportEmail = require("./support-mail").sendSupportEmail;
+exports.emailHouseholdInvite = require("./household-invite-mail").emailHouseholdInvite;
+exports.monthAheadJob = require("./month-ahead").monthAheadJob;

@@ -983,3 +983,4 @@ exports.parseUserAgent = parseUserAgent;
 exports.maskIp = maskIp;
 exports.maskEmail = maskEmail;
 exports.deviceKey = deviceKey;
+exports.deviceLabelFrom = deviceLabelFrom;

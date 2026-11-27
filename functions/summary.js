@@ -537,3 +537,4 @@ exports.summaryUnsubscribe = onRequest(
 
 
 exports.summaryLinkSecret = summaryLinkSecret;
+exports.formatMoney = formatMoney;
