@@ -10740,4 +10740,79 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Det är öppet på skärmen. Gör klart där och tryck sedan för att prata igen.';
+
+  @override
+  String get assistantUndoTitle => 'Ångra den senaste ändringen';
+
+  @override
+  String get assistantUndoNothing => 'Det finns inget i den här chatten att ångra.';
+
+  @override
+  String get assistantSecurityFixNote => 'Säkerhet och integritet öppnas och startar den här åtgärden.';
+
+  @override
+  String get assistantStopLinksTitle => 'Stäng av delningslänkar';
+
+  @override
+  String get assistantStopLinksExpired => 'Utgångna länkar och länkar som aldrig öppnats';
+
+  @override
+  String get assistantStopLinksAll => 'Alla delningslänkar';
+
+  @override
+  String get assistantStopLinksNote => 'Ingen kan öppna de här länkarna igen. Dina poster förblir som de är.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Avstängda länkar: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Spara chattar i';
+
+  @override
+  String get chatKeepWeek => '1 vecka';
+
+  @override
+  String get chatKeepMonth => '1 månad';
+
+  @override
+  String get chatKeepThreeMonths => '3 månader';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Chattar sparas i ditt konto så att du kan komma tillbaka till dem, och raderas sedan automatiskt. Spara chattar i: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Spara inte den här chatten';
+
+  @override
+  String get chatNotSaved => 'Den här chatten sparas inte. Det som hade sparats av den är raderat.';
+
+  @override
+  String get chatForgetTitle => 'Glöm den här chatten';
+
+  @override
+  String get chatForgetNote => 'Chatten raderas från ditt konto och tas bort från skärmen.';
+
+  @override
+  String get secretPassword => 'Lösenord hör aldrig hemma i chatten, och Ask Vaultara behöver aldrig något. Meddelandet skickades inte och sparades inte.';
+
+  @override
+  String get secretCode => 'Engångskoder hör aldrig hemma i chatten. Vaultara ber aldrig om dem, så ge ingen kod till någon som ber om den. Meddelandet skickades inte och sparades inte.';
+
+  @override
+  String get secretCard => 'Kortnummer hör aldrig hemma i chatten. Vill du hålla koll på ett kort, lägg till det som en post med utgångsdatum. Meddelandet skickades inte och sparades inte.';
+
+  @override
+  String numberEnding(String last) {
+    return 'nummer som slutar på $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Jag fick en säkerhetsvarning. Var det jag, och vad ska jag göra?';
+
+  @override
+  String get assistantStepScam => 'Kontrollerar meddelandet';
 }

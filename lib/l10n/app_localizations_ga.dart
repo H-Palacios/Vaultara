@@ -10944,4 +10944,79 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Tá sé oscailte ar do scáileán. Críochnaigh ansin, ansin tapáil chun labhairt arís.';
+
+  @override
+  String get assistantUndoTitle => 'Cealaigh an t-athrú deireanach';
+
+  @override
+  String get assistantUndoNothing => 'Níl aon rud sa chomhrá seo le cealú.';
+
+  @override
+  String get assistantSecurityFixNote => 'Osclaítear Slándáil agus príobháideachas agus tosaíonn sé an socrú seo.';
+
+  @override
+  String get assistantStopLinksTitle => 'Múch naisc chomhroinnte';
+
+  @override
+  String get assistantStopLinksExpired => 'Naisc imithe in éag agus naisc nár osclaíodh riamh';
+
+  @override
+  String get assistantStopLinksAll => 'Gach nasc comhroinnte';
+
+  @override
+  String get assistantStopLinksNote => 'Ní féidir le duine ar bith na naisc seo a oscailt arís. Fanann do thaifid mar atá siad.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Naisc múchta: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Coinnigh comhráite ar feadh';
+
+  @override
+  String get chatKeepWeek => '1 seachtain';
+
+  @override
+  String get chatKeepMonth => '1 mhí';
+
+  @override
+  String get chatKeepThreeMonths => '3 mhí';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Sábháiltear comhráite i do chuntas ionas gur féidir leat filleadh orthu, agus ansin scriostar iad go huathoibríoch. Coinnigh comhráite ar feadh: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Ná sábháil an comhrá seo';
+
+  @override
+  String get chatNotSaved => 'Níl an comhrá seo á shábháil. Scriosadh a raibh sábháilte de.';
+
+  @override
+  String get chatForgetTitle => 'Déan dearmad ar an gcomhrá seo';
+
+  @override
+  String get chatForgetNote => 'Scriostar an comhrá as do chuntas agus glantar den scáileán é.';
+
+  @override
+  String get secretPassword => 'Ní théann pasfhocail isteach sa chomhrá riamh, agus ní bhíonn ceann de dhíth ar Ask Vaultara riamh. Níor seoladh ná níor sábháladh an teachtaireacht seo.';
+
+  @override
+  String get secretCode => 'Ní théann cóid aonuaire isteach sa chomhrá riamh. Ní iarrann Vaultara iad riamh, mar sin ná tabhair ceann d\'aon duine a iarrann é. Níor seoladh ná níor sábháladh an teachtaireacht seo.';
+
+  @override
+  String get secretCard => 'Ní théann uimhreacha cártaí isteach sa chomhrá riamh. Chun cárta a leanúint, cuir leis é mar thaifead lena dháta éaga. Níor seoladh ná níor sábháladh an teachtaireacht seo.';
+
+  @override
+  String numberEnding(String last) {
+    return 'uimhir dar críoch $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Fuair mé foláireamh slándála. An mise a bhí ann, agus cad ba cheart dom a dhéanamh?';
+
+  @override
+  String get assistantStepScam => 'Ag seiceáil na teachtaireachta';
 }

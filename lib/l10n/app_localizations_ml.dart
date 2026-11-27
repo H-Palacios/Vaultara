@@ -10736,4 +10736,79 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'അത് നിങ്ങളുടെ സ്ക്രീനിൽ തുറന്നിരിക്കുന്നു. അവിടെ പൂർത്തിയാക്കി, വീണ്ടും സംസാരിക്കാൻ ടാപ്പ് ചെയ്യുക.';
+
+  @override
+  String get assistantUndoTitle => 'അവസാന മാറ്റം പഴയപടിയാക്കുക';
+
+  @override
+  String get assistantUndoNothing => 'ഈ ചാറ്റിൽ പഴയപടിയാക്കാൻ ഒന്നുമില്ല.';
+
+  @override
+  String get assistantSecurityFixNote => 'സുരക്ഷയും സ്വകാര്യതയും തുറന്ന് ഈ തിരുത്തൽ ആരംഭിക്കുന്നു.';
+
+  @override
+  String get assistantStopLinksTitle => 'ഷെയർ ലിങ്കുകൾ ഓഫാക്കുക';
+
+  @override
+  String get assistantStopLinksExpired => 'കാലഹരണപ്പെട്ട ലിങ്കുകളും ഒരിക്കലും തുറക്കാത്ത ലിങ്കുകളും';
+
+  @override
+  String get assistantStopLinksAll => 'എല്ലാ ഷെയർ ലിങ്കുകളും';
+
+  @override
+  String get assistantStopLinksNote => 'ഇനി ആർക്കും ഈ ലിങ്കുകൾ തുറക്കാനാവില്ല. നിങ്ങളുടെ രേഖകൾ അതേപടി തുടരും.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'ഓഫാക്കിയ ലിങ്കുകൾ: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'ചാറ്റുകൾ സൂക്ഷിക്കേണ്ട കാലം';
+
+  @override
+  String get chatKeepWeek => '1 ആഴ്ച';
+
+  @override
+  String get chatKeepMonth => '1 മാസം';
+
+  @override
+  String get chatKeepThreeMonths => '3 മാസം';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'നിങ്ങൾക്ക് വീണ്ടും വരാൻ ചാറ്റുകൾ അക്കൗണ്ടിൽ സൂക്ഷിക്കുന്നു, പിന്നെ സ്വയം ഇല്ലാതാക്കുന്നു. ചാറ്റുകൾ സൂക്ഷിക്കേണ്ട കാലം: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'ഈ ചാറ്റ് സൂക്ഷിക്കരുത്';
+
+  @override
+  String get chatNotSaved => 'ഈ ചാറ്റ് സൂക്ഷിക്കുന്നില്ല. ഇതിൽ സൂക്ഷിച്ചിരുന്നത് ഇല്ലാതാക്കി.';
+
+  @override
+  String get chatForgetTitle => 'ഈ ചാറ്റ് മറക്കുക';
+
+  @override
+  String get chatForgetNote => 'ചാറ്റ് നിങ്ങളുടെ അക്കൗണ്ടിൽ നിന്നും സ്ക്രീനിൽ നിന്നും ഇല്ലാതാകുന്നു.';
+
+  @override
+  String get secretPassword => 'പാസ്‌വേഡുകൾ ഒരിക്കലും ചാറ്റിൽ എഴുതരുത്, Ask Vaultara-യ്ക്ക് ഒരിക്കലും പാസ്‌വേഡ് ആവശ്യമില്ല. ഈ സന്ദേശം അയച്ചിട്ടില്ല, സൂക്ഷിച്ചിട്ടുമില്ല.';
+
+  @override
+  String get secretCode => 'ഒറ്റത്തവണ കോഡുകൾ ഒരിക്കലും ചാറ്റിൽ എഴുതരുത്. Vaultara ഒരിക്കലും അവ ചോദിക്കില്ല, അതിനാൽ ചോദിക്കുന്ന ആർക്കും കോഡ് നൽകരുത്. ഈ സന്ദേശം അയച്ചിട്ടില്ല, സൂക്ഷിച്ചിട്ടുമില്ല.';
+
+  @override
+  String get secretCard => 'കാർഡ് നമ്പറുകൾ ഒരിക്കലും ചാറ്റിൽ എഴുതരുത്. ഒരു കാർഡ് ശ്രദ്ധിക്കാൻ കാലാവധി തീയതിയോടെ അത് രേഖയായി ചേർക്കുക. ഈ സന്ദേശം അയച്ചിട്ടില്ല, സൂക്ഷിച്ചിട്ടുമില്ല.';
+
+  @override
+  String numberEnding(String last) {
+    return '$last ൽ അവസാനിക്കുന്ന നമ്പർ';
+  }
+
+  @override
+  String get securityAlertQuestion => 'എനിക്ക് ഒരു സുരക്ഷാ മുന്നറിയിപ്പ് കിട്ടി. അത് ഞാനായിരുന്നോ, ഞാൻ എന്ത് ചെയ്യണം?';
+
+  @override
+  String get assistantStepScam => 'സന്ദേശം പരിശോധിക്കുന്നു';
 }

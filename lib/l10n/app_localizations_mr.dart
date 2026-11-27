@@ -10736,4 +10736,79 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'ते तुमच्या स्क्रीनवर उघडले आहे. तिथे पूर्ण करा, मग पुन्हा बोलण्यासाठी टॅप करा.';
+
+  @override
+  String get assistantUndoTitle => 'शेवटचा बदल पूर्ववत करा';
+
+  @override
+  String get assistantUndoNothing => 'या चॅटमध्ये पूर्ववत करण्यासारखे काहीही नाही.';
+
+  @override
+  String get assistantSecurityFixNote => 'सुरक्षा आणि गोपनीयता उघडते आणि ही दुरुस्ती सुरू करते.';
+
+  @override
+  String get assistantStopLinksTitle => 'शेअर लिंक बंद करा';
+
+  @override
+  String get assistantStopLinksExpired => 'कालबाह्य लिंक आणि कधीही न उघडलेल्या लिंक';
+
+  @override
+  String get assistantStopLinksAll => 'सर्व शेअर लिंक';
+
+  @override
+  String get assistantStopLinksNote => 'आता कोणीही या लिंक उघडू शकणार नाही. तुमचे रेकॉर्ड जसे आहेत तसेच राहतील.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'बंद केलेल्या लिंक: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'चॅट इतका काळ ठेवा';
+
+  @override
+  String get chatKeepWeek => '1 आठवडा';
+
+  @override
+  String get chatKeepMonth => '1 महिना';
+
+  @override
+  String get chatKeepThreeMonths => '3 महिने';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'चॅट तुमच्या खात्यात जतन होतात जेणेकरून तुम्ही त्यांच्याकडे परत येऊ शकता, नंतर आपोआप हटवले जातात. चॅट इतका काळ ठेवा: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'हा चॅट जतन करू नका';
+
+  @override
+  String get chatNotSaved => 'हा चॅट जतन होत नाही. त्यातील जे जतन झाले होते ते हटवले.';
+
+  @override
+  String get chatForgetTitle => 'हा चॅट विसरा';
+
+  @override
+  String get chatForgetNote => 'चॅट तुमच्या खात्यातून हटवला जातो आणि स्क्रीनवरून साफ होतो.';
+
+  @override
+  String get secretPassword => 'पासवर्ड कधीही चॅटमध्ये लिहू नका, आणि Ask Vaultara ला कधीही पासवर्डची गरज नसते. हा संदेश पाठवला किंवा जतन केला नाही.';
+
+  @override
+  String get secretCode => 'एकवेळचे कोड कधीही चॅटमध्ये लिहू नका. Vaultara ते कधीही मागत नाही, म्हणून मागणाऱ्या कोणालाही कोड देऊ नका. हा संदेश पाठवला किंवा जतन केला नाही.';
+
+  @override
+  String get secretCard => 'कार्ड नंबर कधीही चॅटमध्ये लिहू नका. एखाद्या कार्डवर लक्ष ठेवण्यासाठी ते कालबाह्य तारखेसह रेकॉर्ड म्हणून जोडा. हा संदेश पाठवला किंवा जतन केला नाही.';
+
+  @override
+  String numberEnding(String last) {
+    return '$last ने संपणारा नंबर';
+  }
+
+  @override
+  String get securityAlertQuestion => 'मला सुरक्षा सूचना मिळाली. तो मी होतो का, आणि मी काय करावे?';
+
+  @override
+  String get assistantStepScam => 'संदेश तपासत आहे';
 }

@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Deze maand te verlengen: {count}, ongeveer {cost}. Tik om te zien wat je moet doen.",
   "monthAheadBodyCountTrips": "Deze maand te verlengen: {count}. Reizen in de komende 6 weken: {trips}. Tik om te zien wat je moet doen.",
   "monthAheadBodyCostTrips": "Deze maand te verlengen: {count}, ongeveer {cost}. Reizen in de komende 6 weken: {trips}. Tik om te zien wat je moet doen.",
-  "monthAheadBodyTrips": "Deze maand hoeft niets verlengd te worden. Reizen in de komende 6 weken: {trips}. Tik om te zien wat je moet doen."
+  "monthAheadBodyTrips": "Deze maand hoeft niets verlengd te worden. Reizen in de komende 6 weken: {trips}. Tik om te zien wat je moet doen.",
+  "securityTwoStepOffTitle": "Inloggen in twee stappen is uitgezet",
+  "securityTwoStepOffBody": "Was jij dit niet? Open Vaultara nu om je account te beveiligen."
 }

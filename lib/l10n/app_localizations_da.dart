@@ -10741,4 +10741,79 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Det er åbent på skærmen. Gør det færdigt der, og tryk så for at tale igen.';
+
+  @override
+  String get assistantUndoTitle => 'Fortryd den seneste ændring';
+
+  @override
+  String get assistantUndoNothing => 'Der er intet i denne chat at fortryde.';
+
+  @override
+  String get assistantSecurityFixNote => 'Sikkerhed og privatliv åbnes og starter denne rettelse.';
+
+  @override
+  String get assistantStopLinksTitle => 'Slå delingslinks fra';
+
+  @override
+  String get assistantStopLinksExpired => 'Udløbne links og links, der aldrig er åbnet';
+
+  @override
+  String get assistantStopLinksAll => 'Alle delingslinks';
+
+  @override
+  String get assistantStopLinksNote => 'Ingen kan åbne disse links igen. Dine poster forbliver, som de er.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Links slået fra: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Gem chats i';
+
+  @override
+  String get chatKeepWeek => '1 uge';
+
+  @override
+  String get chatKeepMonth => '1 måned';
+
+  @override
+  String get chatKeepThreeMonths => '3 måneder';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Chats gemmes på din konto, så du kan vende tilbage til dem, og slettes derefter automatisk. Gem chats i: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Gem ikke denne chat';
+
+  @override
+  String get chatNotSaved => 'Denne chat gemmes ikke. Det, der var gemt af den, er slettet.';
+
+  @override
+  String get chatForgetTitle => 'Glem denne chat';
+
+  @override
+  String get chatForgetNote => 'Chatten slettes fra din konto og fjernes fra skærmen.';
+
+  @override
+  String get secretPassword => 'Adgangskoder hører aldrig til i chatten, og Ask Vaultara har aldrig brug for en. Beskeden blev hverken sendt eller gemt.';
+
+  @override
+  String get secretCode => 'Engangskoder hører aldrig til i chatten. Vaultara beder aldrig om dem, så giv ikke en til nogen, der beder om den. Beskeden blev hverken sendt eller gemt.';
+
+  @override
+  String get secretCard => 'Kortnumre hører aldrig til i chatten. Vil du holde øje med et kort, så tilføj det som en post med udløbsdato. Beskeden blev hverken sendt eller gemt.';
+
+  @override
+  String numberEnding(String last) {
+    return 'nummer, der slutter på $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Jeg fik en sikkerhedsadvarsel. Var det mig, og hvad skal jeg gøre?';
+
+  @override
+  String get assistantStepScam => 'Tjekker beskeden';
 }

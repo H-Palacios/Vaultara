@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Para renovar este mes: {count}, uns {cost}. Toca para ver que facer.",
   "monthAheadBodyCountTrips": "Para renovar este mes: {count}. Viaxes nas próximas 6 semanas: {trips}. Toca para ver que facer.",
   "monthAheadBodyCostTrips": "Para renovar este mes: {count}, uns {cost}. Viaxes nas próximas 6 semanas: {trips}. Toca para ver que facer.",
-  "monthAheadBodyTrips": "Nada que renovar este mes. Viaxes nas próximas 6 semanas: {trips}. Toca para ver que facer."
+  "monthAheadBodyTrips": "Nada que renovar este mes. Viaxes nas próximas 6 semanas: {trips}. Toca para ver que facer.",
+  "securityTwoStepOffTitle": "Desactivouse o inicio de sesión en dous pasos",
+  "securityTwoStepOffBody": "Se non fuches ti, abre Vaultara agora para protexer a túa conta."
 }

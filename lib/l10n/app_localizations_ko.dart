@@ -10672,4 +10672,79 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => '화면에 열려 있습니다. 거기서 마친 다음 탭해서 다시 말씀하세요.';
+
+  @override
+  String get assistantUndoTitle => '마지막 변경 실행 취소';
+
+  @override
+  String get assistantUndoNothing => '이 채팅에서 실행 취소할 항목이 없습니다.';
+
+  @override
+  String get assistantSecurityFixNote => '보안 및 개인정보 보호가 열리고 이 조치를 시작합니다.';
+
+  @override
+  String get assistantStopLinksTitle => '공유 링크 끄기';
+
+  @override
+  String get assistantStopLinksExpired => '만료된 링크와 한 번도 열리지 않은 링크';
+
+  @override
+  String get assistantStopLinksAll => '모든 공유 링크';
+
+  @override
+  String get assistantStopLinksNote => '아무도 이 링크를 다시 열 수 없습니다. 기록은 그대로 유지됩니다.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return '끈 링크: $count개.';
+  }
+
+  @override
+  String get chatKeepTitle => '채팅 보관 기간';
+
+  @override
+  String get chatKeepWeek => '1주';
+
+  @override
+  String get chatKeepMonth => '1개월';
+
+  @override
+  String get chatKeepThreeMonths => '3개월';
+
+  @override
+  String chatKeepNote(String period) {
+    return '채팅은 다시 볼 수 있도록 계정에 저장되었다가 자동으로 삭제됩니다. 채팅 보관 기간: $period.';
+  }
+
+  @override
+  String get chatDontSave => '이 채팅 저장 안 함';
+
+  @override
+  String get chatNotSaved => '이 채팅은 저장되지 않습니다. 저장되어 있던 내용은 삭제되었습니다.';
+
+  @override
+  String get chatForgetTitle => '이 채팅 잊기';
+
+  @override
+  String get chatForgetNote => '채팅이 계정과 화면에서 삭제됩니다.';
+
+  @override
+  String get secretPassword => '비밀번호는 절대 채팅에 쓰지 마세요. Ask Vaultara는 비밀번호가 필요하지 않습니다. 이 메시지는 전송되거나 저장되지 않았습니다.';
+
+  @override
+  String get secretCode => '일회용 코드는 절대 채팅에 쓰지 마세요. Vaultara는 코드를 요청하지 않으니 요청하는 사람에게 주지 마세요. 이 메시지는 전송되거나 저장되지 않았습니다.';
+
+  @override
+  String get secretCard => '카드 번호는 절대 채팅에 쓰지 마세요. 카드를 관리하려면 만료일과 함께 기록으로 추가하세요. 이 메시지는 전송되거나 저장되지 않았습니다.';
+
+  @override
+  String numberEnding(String last) {
+    return '$last(으)로 끝나는 번호';
+  }
+
+  @override
+  String get securityAlertQuestion => '보안 알림을 받았어요. 제가 한 건가요, 어떻게 해야 하나요?';
+
+  @override
+  String get assistantStepScam => '메시지 확인 중';
 }

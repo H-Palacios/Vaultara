@@ -10740,4 +10740,79 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Dit is oop op jou skerm. Maak daar klaar en tik dan om weer te praat.';
+
+  @override
+  String get assistantUndoTitle => 'Ontdoen die laaste verandering';
+
+  @override
+  String get assistantUndoNothing => 'Niks uit hierdie klets kan ontdoen word nie.';
+
+  @override
+  String get assistantSecurityFixNote => 'Sekuriteit en privaatheid maak oop en begin hierdie regstelling.';
+
+  @override
+  String get assistantStopLinksTitle => 'Skakel deelskakels af';
+
+  @override
+  String get assistantStopLinksExpired => 'Verstreke skakels en skakels wat nooit oopgemaak is nie';
+
+  @override
+  String get assistantStopLinksAll => 'Elke deelskakel';
+
+  @override
+  String get assistantStopLinksNote => 'Niemand kan hierdie skakels weer oopmaak nie. Jou rekords bly soos hulle is.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Skakels afgeskakel: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Hou kletse vir';
+
+  @override
+  String get chatKeepWeek => '1 week';
+
+  @override
+  String get chatKeepMonth => '1 maand';
+
+  @override
+  String get chatKeepThreeMonths => '3 maande';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Kletse word in jou rekening gestoor sodat jy later daarna kan terugkeer, en dan outomaties uitgevee. Hou kletse vir: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Moenie hierdie klets stoor nie';
+
+  @override
+  String get chatNotSaved => 'Hierdie klets word nie gestoor nie. Wat daarvan gestoor is, is uitgevee.';
+
+  @override
+  String get chatForgetTitle => 'Vergeet hierdie klets';
+
+  @override
+  String get chatForgetNote => 'Die klets word uit jou rekening uitgevee en van die skerm verwyder.';
+
+  @override
+  String get secretPassword => 'Wagwoorde gaan nooit in die klets nie, en Ask Vaultara het nooit een nodig nie. Hierdie boodskap is nie gestuur of gestoor nie.';
+
+  @override
+  String get secretCode => 'Eenmalige kodes gaan nooit in die klets nie. Vaultara vra nooit daarvoor nie, so moet dit vir niemand gee wat daarvoor vra nie. Hierdie boodskap is nie gestuur of gestoor nie.';
+
+  @override
+  String get secretCard => 'Kaartnommers gaan nooit in die klets nie. Om \'n kaart dop te hou, voeg dit by as \'n rekord met sy vervaldatum. Hierdie boodskap is nie gestuur of gestoor nie.';
+
+  @override
+  String numberEnding(String last) {
+    return 'nommer wat eindig op $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Ek het \'n sekuriteitswaarskuwing gekry. Was dit ek, en wat moet ek doen?';
+
+  @override
+  String get assistantStepScam => 'Kontroleer die boodskap';
 }

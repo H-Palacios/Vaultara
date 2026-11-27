@@ -10672,6 +10672,81 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => '已在屏幕上打开。请在那里完成，然后轻点再次说话。';
+
+  @override
+  String get assistantUndoTitle => '撤销上一次更改';
+
+  @override
+  String get assistantUndoNothing => '此对话中没有可撤销的内容。';
+
+  @override
+  String get assistantSecurityFixNote => '将打开“安全与隐私”并开始此项修复。';
+
+  @override
+  String get assistantStopLinksTitle => '关闭分享链接';
+
+  @override
+  String get assistantStopLinksExpired => '已过期和从未打开过的链接';
+
+  @override
+  String get assistantStopLinksAll => '所有分享链接';
+
+  @override
+  String get assistantStopLinksNote => '任何人都无法再打开这些链接。你的记录保持不变。';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return '已关闭的链接：$count。';
+  }
+
+  @override
+  String get chatKeepTitle => '对话保留时间';
+
+  @override
+  String get chatKeepWeek => '1周';
+
+  @override
+  String get chatKeepMonth => '1个月';
+
+  @override
+  String get chatKeepThreeMonths => '3个月';
+
+  @override
+  String chatKeepNote(String period) {
+    return '对话会保存在你的账户中以便日后查看，然后自动删除。对话保留时间：$period。';
+  }
+
+  @override
+  String get chatDontSave => '不保存此对话';
+
+  @override
+  String get chatNotSaved => '此对话不会被保存。已保存的部分已删除。';
+
+  @override
+  String get chatForgetTitle => '忘记此对话';
+
+  @override
+  String get chatForgetNote => '对话将从你的账户和屏幕上删除。';
+
+  @override
+  String get secretPassword => '请勿在对话中输入密码，Ask Vaultara 从不需要密码。此消息未发送也未保存。';
+
+  @override
+  String get secretCode => '请勿在对话中输入一次性验证码。Vaultara 从不索要验证码，所以不要把它告诉任何索要的人。此消息未发送也未保存。';
+
+  @override
+  String get secretCard => '请勿在对话中输入卡号。若要跟踪一张卡，请将它连同到期日添加为记录。此消息未发送也未保存。';
+
+  @override
+  String numberEnding(String last) {
+    return '尾号为$last的号码';
+  }
+
+  @override
+  String get securityAlertQuestion => '我收到了一条安全提醒。是我本人操作的吗？我该怎么做？';
+
+  @override
+  String get assistantStepScam => '正在检查消息';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -21330,6 +21405,81 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get talkFinishOnScreen => '已在屏幕上打开。请在那里完成，然后轻点再次说话。';
+
+  @override
+  String get assistantUndoTitle => '撤销上一次更改';
+
+  @override
+  String get assistantUndoNothing => '此对话中没有可撤销的内容。';
+
+  @override
+  String get assistantSecurityFixNote => '将打开“安全与隐私”并开始此项修复。';
+
+  @override
+  String get assistantStopLinksTitle => '关闭分享链接';
+
+  @override
+  String get assistantStopLinksExpired => '已过期和从未打开过的链接';
+
+  @override
+  String get assistantStopLinksAll => '所有分享链接';
+
+  @override
+  String get assistantStopLinksNote => '任何人都无法再打开这些链接。你的记录保持不变。';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return '已关闭的链接：$count。';
+  }
+
+  @override
+  String get chatKeepTitle => '对话保留时间';
+
+  @override
+  String get chatKeepWeek => '1周';
+
+  @override
+  String get chatKeepMonth => '1个月';
+
+  @override
+  String get chatKeepThreeMonths => '3个月';
+
+  @override
+  String chatKeepNote(String period) {
+    return '对话会保存在你的账户中以便日后查看，然后自动删除。对话保留时间：$period。';
+  }
+
+  @override
+  String get chatDontSave => '不保存此对话';
+
+  @override
+  String get chatNotSaved => '此对话不会被保存。已保存的部分已删除。';
+
+  @override
+  String get chatForgetTitle => '忘记此对话';
+
+  @override
+  String get chatForgetNote => '对话将从你的账户和屏幕上删除。';
+
+  @override
+  String get secretPassword => '请勿在对话中输入密码，Ask Vaultara 从不需要密码。此消息未发送也未保存。';
+
+  @override
+  String get secretCode => '请勿在对话中输入一次性验证码。Vaultara 从不索要验证码，所以不要把它告诉任何索要的人。此消息未发送也未保存。';
+
+  @override
+  String get secretCard => '请勿在对话中输入卡号。若要跟踪一张卡，请将它连同到期日添加为记录。此消息未发送也未保存。';
+
+  @override
+  String numberEnding(String last) {
+    return '尾号为$last的号码';
+  }
+
+  @override
+  String get securityAlertQuestion => '我收到了一条安全提醒。是我本人操作的吗？我该怎么做？';
+
+  @override
+  String get assistantStepScam => '正在检查消息';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -31988,4 +32138,79 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get talkFinishOnScreen => '已在螢幕上開啟。請在那裡完成，再輕觸繼續說話。';
+
+  @override
+  String get assistantUndoTitle => '復原上一次變更';
+
+  @override
+  String get assistantUndoNothing => '這段對話中沒有可復原的內容。';
+
+  @override
+  String get assistantSecurityFixNote => '將開啟「安全與隱私」並開始此項修正。';
+
+  @override
+  String get assistantStopLinksTitle => '關閉分享連結';
+
+  @override
+  String get assistantStopLinksExpired => '已過期和從未開啟過的連結';
+
+  @override
+  String get assistantStopLinksAll => '所有分享連結';
+
+  @override
+  String get assistantStopLinksNote => '任何人都無法再開啟這些連結。你的紀錄保持不變。';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return '已關閉的連結：$count。';
+  }
+
+  @override
+  String get chatKeepTitle => '對話保留時間';
+
+  @override
+  String get chatKeepWeek => '1週';
+
+  @override
+  String get chatKeepMonth => '1個月';
+
+  @override
+  String get chatKeepThreeMonths => '3個月';
+
+  @override
+  String chatKeepNote(String period) {
+    return '對話會儲存在你的帳戶中以便日後查看，之後自動刪除。對話保留時間：$period。';
+  }
+
+  @override
+  String get chatDontSave => '不要儲存這段對話';
+
+  @override
+  String get chatNotSaved => '這段對話不會儲存。已儲存的部分已刪除。';
+
+  @override
+  String get chatForgetTitle => '忘記這段對話';
+
+  @override
+  String get chatForgetNote => '對話將從你的帳戶和螢幕上刪除。';
+
+  @override
+  String get secretPassword => '請勿在對話中輸入密碼，Ask Vaultara 從不需要密碼。這則訊息未傳送也未儲存。';
+
+  @override
+  String get secretCode => '請勿在對話中輸入一次性驗證碼。Vaultara 從不索取驗證碼，所以不要告訴任何索取的人。這則訊息未傳送也未儲存。';
+
+  @override
+  String get secretCard => '請勿在對話中輸入卡號。若要追蹤一張卡，請連同到期日新增為紀錄。這則訊息未傳送也未儲存。';
+
+  @override
+  String numberEnding(String last) {
+    return '末四碼為$last的號碼';
+  }
+
+  @override
+  String get securityAlertQuestion => '我收到一則安全通知。是我本人嗎？我該怎麼做？';
+
+  @override
+  String get assistantStepScam => '正在檢查訊息';
 }

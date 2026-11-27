@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Za podaljšanje ta mesec: {count}, približno {cost}. Tapnite, da vidite, kaj storiti.",
   "monthAheadBodyCountTrips": "Za podaljšanje ta mesec: {count}. Potovanja v naslednjih 6 tednih: {trips}. Tapnite, da vidite, kaj storiti.",
   "monthAheadBodyCostTrips": "Za podaljšanje ta mesec: {count}, približno {cost}. Potovanja v naslednjih 6 tednih: {trips}. Tapnite, da vidite, kaj storiti.",
-  "monthAheadBodyTrips": "Ta mesec ni treba ničesar podaljšati. Potovanja v naslednjih 6 tednih: {trips}. Tapnite, da vidite, kaj storiti."
+  "monthAheadBodyTrips": "Ta mesec ni treba ničesar podaljšati. Potovanja v naslednjih 6 tednih: {trips}. Tapnite, da vidite, kaj storiti.",
+  "securityTwoStepOffTitle": "Prijava v dveh korakih je bila izklopljena",
+  "securityTwoStepOffBody": "Če to niste bili vi, takoj odprite Vaultara in zavarujte račun."
 }

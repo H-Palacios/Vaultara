@@ -10736,4 +10736,79 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'તે તમારી સ્ક્રીન પર ખુલ્લું છે. ત્યાં પૂરું કરો, પછી ફરી બોલવા માટે ટૅપ કરો.';
+
+  @override
+  String get assistantUndoTitle => 'છેલ્લો ફેરફાર પૂર્વવત્ કરો';
+
+  @override
+  String get assistantUndoNothing => 'આ ચેટમાં પૂર્વવત્ કરવા જેવું કંઈ નથી.';
+
+  @override
+  String get assistantSecurityFixNote => 'સુરક્ષા અને ગોપનીયતા ખુલે છે અને આ સુધારો શરૂ કરે છે.';
+
+  @override
+  String get assistantStopLinksTitle => 'શેર લિંક બંધ કરો';
+
+  @override
+  String get assistantStopLinksExpired => 'સમાપ્ત થયેલી લિંક અને ક્યારેય ન ખોલાયેલી લિંક';
+
+  @override
+  String get assistantStopLinksAll => 'બધી શેર લિંક';
+
+  @override
+  String get assistantStopLinksNote => 'હવે કોઈ આ લિંક ખોલી શકશે નહીં. તમારા રેકોર્ડ જેમ છે તેમ જ રહેશે.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'બંધ કરેલી લિંક: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'ચેટ આટલો સમય રાખો';
+
+  @override
+  String get chatKeepWeek => '1 અઠવાડિયું';
+
+  @override
+  String get chatKeepMonth => '1 મહિનો';
+
+  @override
+  String get chatKeepThreeMonths => '3 મહિના';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'ચેટ તમારા એકાઉન્ટમાં સાચવાય છે જેથી તમે ફરી તેના પર આવી શકો, પછી આપમેળે કાઢી નખાય છે. ચેટ આટલો સમય રાખો: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'આ ચેટ સાચવશો નહીં';
+
+  @override
+  String get chatNotSaved => 'આ ચેટ સાચવાતી નથી. તેમાંથી જે સાચવેલું હતું તે કાઢી નખાયું.';
+
+  @override
+  String get chatForgetTitle => 'આ ચેટ ભૂલી જાઓ';
+
+  @override
+  String get chatForgetNote => 'ચેટ તમારા એકાઉન્ટમાંથી કાઢી નખાય છે અને સ્ક્રીન પરથી હટી જાય છે.';
+
+  @override
+  String get secretPassword => 'પાસવર્ડ ક્યારેય ચેટમાં લખાતા નથી, અને Ask Vaultara ને ક્યારેય પાસવર્ડની જરૂર નથી. આ સંદેશ મોકલાયો કે સાચવાયો નથી.';
+
+  @override
+  String get secretCode => 'એક વખતના કોડ ક્યારેય ચેટમાં લખાતા નથી. Vaultara ક્યારેય તે માગતું નથી, તેથી માગનાર કોઈને કોડ આપશો નહીં. આ સંદેશ મોકલાયો કે સાચવાયો નથી.';
+
+  @override
+  String get secretCard => 'કાર્ડ નંબર ક્યારેય ચેટમાં લખાતા નથી. કોઈ કાર્ડ પર નજર રાખવા માટે તેને સમાપ્તિ તારીખ સાથે રેકોર્ડ તરીકે ઉમેરો. આ સંદેશ મોકલાયો કે સાચવાયો નથી.';
+
+  @override
+  String numberEnding(String last) {
+    return '$last થી પૂરો થતો નંબર';
+  }
+
+  @override
+  String get securityAlertQuestion => 'મને સુરક્ષા ચેતવણી મળી. શું તે હું હતો, અને મારે શું કરવું જોઈએ?';
+
+  @override
+  String get assistantStepScam => 'સંદેશ તપાસી રહ્યા છીએ';
 }

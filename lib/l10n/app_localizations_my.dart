@@ -10670,4 +10670,79 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'သင့်မျက်နှာပြင်ပေါ်တွင် ဖွင့်ထားပါသည်။ ထိုနေရာတွင် ပြီးအောင်လုပ်ပြီး ထပ်ပြောရန် နှိပ်ပါ။';
+
+  @override
+  String get assistantUndoTitle => 'နောက်ဆုံးပြောင်းလဲမှုကို ပြန်ဖျက်ရန်';
+
+  @override
+  String get assistantUndoNothing => 'ဤချက်တွင် ပြန်ဖျက်စရာ မရှိပါ။';
+
+  @override
+  String get assistantSecurityFixNote => 'လုံခြုံရေးနှင့် ကိုယ်ရေးကိုယ်တာ ပွင့်လာပြီး ဤပြင်ဆင်မှုကို စတင်ပါမည်။';
+
+  @override
+  String get assistantStopLinksTitle => 'မျှဝေလင့်ခ်များကို ပိတ်ရန်';
+
+  @override
+  String get assistantStopLinksExpired => 'သက်တမ်းကုန်လင့်ခ်များနှင့် တစ်ခါမှ မဖွင့်ရသေးသော လင့်ခ်များ';
+
+  @override
+  String get assistantStopLinksAll => 'မျှဝေလင့်ခ်အားလုံး';
+
+  @override
+  String get assistantStopLinksNote => 'ဤလင့်ခ်များကို မည်သူမျှ ထပ်မဖွင့်နိုင်တော့ပါ။ သင့်မှတ်တမ်းများ မူလအတိုင်း ရှိနေပါမည်။';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'ပိတ်ထားသော လင့်ခ်များ- $count။';
+  }
+
+  @override
+  String get chatKeepTitle => 'ချက်များကို သိမ်းထားမည့်ကာလ';
+
+  @override
+  String get chatKeepWeek => '၁ ပတ်';
+
+  @override
+  String get chatKeepMonth => '၁ လ';
+
+  @override
+  String get chatKeepThreeMonths => '၃ လ';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'ချက်များကို ပြန်လာကြည့်နိုင်ရန် သင့်အကောင့်တွင် သိမ်းထားပြီး နောက်တွင် အလိုအလျောက် ဖျက်ပါသည်။ ချက်များကို သိမ်းထားမည့်ကာလ- $period။';
+  }
+
+  @override
+  String get chatDontSave => 'ဤချက်ကို မသိမ်းပါနှင့်';
+
+  @override
+  String get chatNotSaved => 'ဤချက်ကို မသိမ်းပါ။ ယခင်သိမ်းထားသည်များကို ဖျက်ပြီးပါပြီ။';
+
+  @override
+  String get chatForgetTitle => 'ဤချက်ကို မေ့ပစ်ရန်';
+
+  @override
+  String get chatForgetNote => 'ချက်ကို သင့်အကောင့်မှ ဖျက်ပြီး မျက်နှာပြင်မှ ရှင်းပါသည်။';
+
+  @override
+  String get secretPassword => 'စကားဝှက်များကို ချက်တွင် ဘယ်တော့မှ မရေးပါ၊ Ask Vaultara သည် စကားဝှက် ဘယ်တော့မှ မလိုပါ။ ဤမက်ဆေ့ချ်ကို မပို့ မသိမ်းခဲ့ပါ။';
+
+  @override
+  String get secretCode => 'တစ်ကြိမ်သုံးကုဒ်များကို ချက်တွင် ဘယ်တော့မှ မရေးပါ။ Vaultara က ဘယ်တော့မှ မတောင်းပါ၊ ထို့ကြောင့် တောင်းသူ မည်သူ့ကိုမျှ ကုဒ် မပေးပါနှင့်။ ဤမက်ဆေ့ချ်ကို မပို့ မသိမ်းခဲ့ပါ။';
+
+  @override
+  String get secretCard => 'ကတ်နံပါတ်များကို ချက်တွင် ဘယ်တော့မှ မရေးပါ။ ကတ်တစ်ခုကို စောင့်ကြည့်ရန် သက်တမ်းကုန်ရက်နှင့်အတူ မှတ်တမ်းအဖြစ် ထည့်ပါ။ ဤမက်ဆေ့ချ်ကို မပို့ မသိမ်းခဲ့ပါ။';
+
+  @override
+  String numberEnding(String last) {
+    return '$last ဖြင့် အဆုံးသတ်သော နံပါတ်';
+  }
+
+  @override
+  String get securityAlertQuestion => 'လုံခြုံရေးသတိပေးချက် ရခဲ့သည်။ ကျွန်ုပ်ဖြစ်ခဲ့သလား၊ ဘာလုပ်သင့်သလဲ။';
+
+  @override
+  String get assistantStepScam => 'မက်ဆေ့ချ်ကို စစ်ဆေးနေသည်';
 }

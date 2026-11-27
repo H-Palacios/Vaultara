@@ -10904,4 +10904,79 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Odprto je na zaslonu. Dokončajte tam, nato tapnite, da znova govorite.';
+
+  @override
+  String get assistantUndoTitle => 'Razveljavi zadnjo spremembo';
+
+  @override
+  String get assistantUndoNothing => 'V tem klepetu ni ničesar za razveljavitev.';
+
+  @override
+  String get assistantSecurityFixNote => 'Odpre se Varnost in zasebnost in začne ta popravek.';
+
+  @override
+  String get assistantStopLinksTitle => 'Izklopi povezave za deljenje';
+
+  @override
+  String get assistantStopLinksExpired => 'Potekle povezave in povezave, ki jih ni nihče odprl';
+
+  @override
+  String get assistantStopLinksAll => 'Vse povezave za deljenje';
+
+  @override
+  String get assistantStopLinksNote => 'Teh povezav nihče več ne bo mogel odpreti. Vaši zapisi ostanejo, kot so.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Izklopljene povezave: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Hrani klepete';
+
+  @override
+  String get chatKeepWeek => '1 teden';
+
+  @override
+  String get chatKeepMonth => '1 mesec';
+
+  @override
+  String get chatKeepThreeMonths => '3 mesece';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Klepeti se shranijo v vaš račun, da se lahko vrnete k njim, nato pa se samodejno izbrišejo. Hrani klepete: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Ne shrani tega klepeta';
+
+  @override
+  String get chatNotSaved => 'Ta klepet se ne shranjuje. Kar je bilo shranjeno, je izbrisano.';
+
+  @override
+  String get chatForgetTitle => 'Pozabi ta klepet';
+
+  @override
+  String get chatForgetNote => 'Klepet se izbriše iz vašega računa in počisti z zaslona.';
+
+  @override
+  String get secretPassword => 'Gesla nikoli ne sodijo v klepet in Ask Vaultara gesla nikoli ne potrebuje. To sporočilo ni bilo poslano ali shranjeno.';
+
+  @override
+  String get secretCode => 'Enkratne kode nikoli ne sodijo v klepet. Vaultara jih nikoli ne zahteva, zato kode ne dajte nikomur, ki jo zahteva. To sporočilo ni bilo poslano ali shranjeno.';
+
+  @override
+  String get secretCard => 'Številke kartic nikoli ne sodijo v klepet. Če želite slediti kartici, jo dodajte kot zapis z datumom veljavnosti. To sporočilo ni bilo poslano ali shranjeno.';
+
+  @override
+  String numberEnding(String last) {
+    return 'številka, ki se konča s $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Prejel sem varnostno opozorilo. Sem bil to jaz in kaj naj naredim?';
+
+  @override
+  String get assistantStepScam => 'Preverjanje sporočila';
 }

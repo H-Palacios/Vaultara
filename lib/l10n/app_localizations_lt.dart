@@ -10895,4 +10895,79 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Tai atidaryta ekrane. Užbaikite ten, tada palieskite, kad vėl kalbėtumėte.';
+
+  @override
+  String get assistantUndoTitle => 'Atšaukti paskutinį pakeitimą';
+
+  @override
+  String get assistantUndoNothing => 'Šiame pokalbyje nėra ko atšaukti.';
+
+  @override
+  String get assistantSecurityFixNote => 'Atsidaro Sauga ir privatumas ir pradedamas šis taisymas.';
+
+  @override
+  String get assistantStopLinksTitle => 'Išjungti bendrinimo nuorodas';
+
+  @override
+  String get assistantStopLinksExpired => 'Pasibaigusios ir niekada neatidarytos nuorodos';
+
+  @override
+  String get assistantStopLinksAll => 'Visos bendrinimo nuorodos';
+
+  @override
+  String get assistantStopLinksNote => 'Niekas nebegalės atidaryti šių nuorodų. Tavo įrašai lieka tokie, kokie yra.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Išjungta nuorodų: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Laikyti pokalbius';
+
+  @override
+  String get chatKeepWeek => '1 savaitė';
+
+  @override
+  String get chatKeepMonth => '1 mėnuo';
+
+  @override
+  String get chatKeepThreeMonths => '3 mėnesiai';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Pokalbiai saugomi tavo paskyroje, kad galėtum prie jų grįžti, o vėliau ištrinami automatiškai. Laikyti pokalbius: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Neišsaugoti šio pokalbio';
+
+  @override
+  String get chatNotSaved => 'Šis pokalbis neišsaugomas. Tai, kas iš jo buvo išsaugota, ištrinta.';
+
+  @override
+  String get chatForgetTitle => 'Pamiršti šį pokalbį';
+
+  @override
+  String get chatForgetNote => 'Pokalbis ištrinamas iš tavo paskyros ir pašalinamas iš ekrano.';
+
+  @override
+  String get secretPassword => 'Slaptažodžiai niekada nerašomi pokalbyje, o Ask Vaultara jo niekada neprireikia. Ši žinutė nebuvo išsiųsta ir išsaugota.';
+
+  @override
+  String get secretCode => 'Vienkartiniai kodai niekada nerašomi pokalbyje. Vaultara jų niekada neprašo, todėl neduok kodo niekam, kas jo prašo. Ši žinutė nebuvo išsiųsta ir išsaugota.';
+
+  @override
+  String get secretCard => 'Kortelių numeriai niekada nerašomi pokalbyje. Norėdamas sekti kortelę, pridėk ją kaip įrašą su galiojimo data. Ši žinutė nebuvo išsiųsta ir išsaugota.';
+
+  @override
+  String numberEnding(String last) {
+    return 'numeris, kuris baigiasi $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Gavau saugos įspėjimą. Ar tai buvau aš, ir ką turėčiau daryti?';
+
+  @override
+  String get assistantStepScam => 'Tikrinama žinutė';
 }

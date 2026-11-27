@@ -10800,4 +10800,79 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'זה פתוח על המסך. סיים שם ואז הקש כדי לדבר שוב.';
+
+  @override
+  String get assistantUndoTitle => 'ביטול השינוי האחרון';
+
+  @override
+  String get assistantUndoNothing => 'אין בצ\'אט הזה שום דבר לבטל.';
+
+  @override
+  String get assistantSecurityFixNote => 'אבטחה ופרטיות נפתח ומתחיל את התיקון הזה.';
+
+  @override
+  String get assistantStopLinksTitle => 'כיבוי קישורי שיתוף';
+
+  @override
+  String get assistantStopLinksExpired => 'קישורים שפג תוקפם וקישורים שאף פעם לא נפתחו';
+
+  @override
+  String get assistantStopLinksAll => 'כל קישורי השיתוף';
+
+  @override
+  String get assistantStopLinksNote => 'אף אחד לא יוכל לפתוח את הקישורים האלה שוב. הרשומות שלך נשארות כמו שהן.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'קישורים שכובו: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'שמירת צ\'אטים למשך';
+
+  @override
+  String get chatKeepWeek => 'שבוע';
+
+  @override
+  String get chatKeepMonth => 'חודש';
+
+  @override
+  String get chatKeepThreeMonths => '3 חודשים';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'הצ\'אטים נשמרים בחשבון שלך כדי שתוכל לחזור אליהם, ואחר כך נמחקים אוטומטית. שמירת צ\'אטים למשך: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'לא לשמור את הצ\'אט הזה';
+
+  @override
+  String get chatNotSaved => 'הצ\'אט הזה לא נשמר. מה שנשמר ממנו נמחק.';
+
+  @override
+  String get chatForgetTitle => 'לשכוח את הצ\'אט הזה';
+
+  @override
+  String get chatForgetNote => 'הצ\'אט נמחק מהחשבון שלך ומהמסך.';
+
+  @override
+  String get secretPassword => 'סיסמאות אף פעם לא נכנסות לצ\'אט, ו-Ask Vaultara אף פעם לא צריך סיסמה. ההודעה לא נשלחה ולא נשמרה.';
+
+  @override
+  String get secretCode => 'קודים חד-פעמיים אף פעם לא נכנסים לצ\'אט. Vaultara אף פעם לא מבקש אותם, אז אל תמסור קוד לאף אחד שמבקש אותו. ההודעה לא נשלחה ולא נשמרה.';
+
+  @override
+  String get secretCard => 'מספרי כרטיסים אף פעם לא נכנסים לצ\'אט. כדי לעקוב אחרי כרטיס, הוסף אותו כרשומה עם תאריך התפוגה. ההודעה לא נשלחה ולא נשמרה.';
+
+  @override
+  String numberEnding(String last) {
+    return 'מספר שמסתיים ב-$last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'קיבלתי התראת אבטחה. זה הייתי אני, ומה עליי לעשות?';
+
+  @override
+  String get assistantStepScam => 'בודק את ההודעה';
 }

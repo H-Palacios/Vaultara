@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "K obnovení tento měsíc: {count}, asi {cost}. Klepněte a podívejte se, co udělat.",
   "monthAheadBodyCountTrips": "K obnovení tento měsíc: {count}. Cesty v příštích 6 týdnech: {trips}. Klepněte a podívejte se, co udělat.",
   "monthAheadBodyCostTrips": "K obnovení tento měsíc: {count}, asi {cost}. Cesty v příštích 6 týdnech: {trips}. Klepněte a podívejte se, co udělat.",
-  "monthAheadBodyTrips": "Tento měsíc není co obnovovat. Cesty v příštích 6 týdnech: {trips}. Klepněte a podívejte se, co udělat."
+  "monthAheadBodyTrips": "Tento měsíc není co obnovovat. Cesty v příštích 6 týdnech: {trips}. Klepněte a podívejte se, co udělat.",
+  "securityTwoStepOffTitle": "Dvoufázové přihlášení bylo vypnuto",
+  "securityTwoStepOffBody": "Pokud jste to nebyli vy, otevřete hned Vaultara a zabezpečte účet."
 }

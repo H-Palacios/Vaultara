@@ -10672,4 +10672,79 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Ia terbuka pada skrin anda. Selesaikan di sana, kemudian ketik untuk bercakap lagi.';
+
+  @override
+  String get assistantUndoTitle => 'Buat asal perubahan terakhir';
+
+  @override
+  String get assistantUndoNothing => 'Tiada apa-apa dalam sembang ini untuk dibuat asal.';
+
+  @override
+  String get assistantSecurityFixNote => 'Keselamatan dan privasi dibuka dan memulakan pembetulan ini.';
+
+  @override
+  String get assistantStopLinksTitle => 'Matikan pautan perkongsian';
+
+  @override
+  String get assistantStopLinksExpired => 'Pautan tamat tempoh dan pautan yang tidak pernah dibuka';
+
+  @override
+  String get assistantStopLinksAll => 'Semua pautan perkongsian';
+
+  @override
+  String get assistantStopLinksNote => 'Tiada sesiapa boleh membuka pautan ini lagi. Rekod anda kekal seperti sedia ada.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Pautan dimatikan: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Simpan sembang selama';
+
+  @override
+  String get chatKeepWeek => '1 minggu';
+
+  @override
+  String get chatKeepMonth => '1 bulan';
+
+  @override
+  String get chatKeepThreeMonths => '3 bulan';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Sembang disimpan dalam akaun anda supaya anda boleh kembali kepadanya, kemudian dipadam secara automatik. Simpan sembang selama: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Jangan simpan sembang ini';
+
+  @override
+  String get chatNotSaved => 'Sembang ini tidak disimpan. Bahagian yang telah disimpan sudah dipadam.';
+
+  @override
+  String get chatForgetTitle => 'Lupakan sembang ini';
+
+  @override
+  String get chatForgetNote => 'Sembang dipadam daripada akaun anda dan dikosongkan daripada skrin.';
+
+  @override
+  String get secretPassword => 'Kata laluan tidak pernah ditulis dalam sembang, dan Ask Vaultara tidak pernah memerlukannya. Mesej ini tidak dihantar atau disimpan.';
+
+  @override
+  String get secretCode => 'Kod sekali guna tidak pernah ditulis dalam sembang. Vaultara tidak pernah memintanya, jadi jangan berikan kepada sesiapa yang meminta. Mesej ini tidak dihantar atau disimpan.';
+
+  @override
+  String get secretCard => 'Nombor kad tidak pernah ditulis dalam sembang. Untuk menjejak kad, tambahkannya sebagai rekod dengan tarikh tamat tempohnya. Mesej ini tidak dihantar atau disimpan.';
+
+  @override
+  String numberEnding(String last) {
+    return 'nombor berakhir dengan $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Saya menerima amaran keselamatan. Adakah itu saya, dan apa yang perlu saya buat?';
+
+  @override
+  String get assistantStepScam => 'Menyemak mesej';
 }

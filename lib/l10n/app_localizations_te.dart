@@ -10736,4 +10736,79 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'ఇది మీ స్క్రీన్‌పై తెరిచి ఉంది. అక్కడ పూర్తి చేసి, మళ్లీ మాట్లాడటానికి నొక్కండి.';
+
+  @override
+  String get assistantUndoTitle => 'చివరి మార్పును రద్దు చేయండి';
+
+  @override
+  String get assistantUndoNothing => 'ఈ చాట్‌లో రద్దు చేయడానికి ఏమీ లేదు.';
+
+  @override
+  String get assistantSecurityFixNote => 'భద్రత మరియు గోప్యత తెరుచుకుని ఈ సవరణను ప్రారంభిస్తుంది.';
+
+  @override
+  String get assistantStopLinksTitle => 'షేర్ లింక్‌లను ఆఫ్ చేయండి';
+
+  @override
+  String get assistantStopLinksExpired => 'గడువు ముగిసిన లింక్‌లు మరియు ఎప్పుడూ తెరవని లింక్‌లు';
+
+  @override
+  String get assistantStopLinksAll => 'అన్ని షేర్ లింక్‌లు';
+
+  @override
+  String get assistantStopLinksNote => 'ఇకపై ఎవరూ ఈ లింక్‌లను తెరవలేరు. మీ రికార్డులు అలాగే ఉంటాయి.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'ఆఫ్ చేసిన లింక్‌లు: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'చాట్‌లను ఉంచే వ్యవధి';
+
+  @override
+  String get chatKeepWeek => '1 వారం';
+
+  @override
+  String get chatKeepMonth => '1 నెల';
+
+  @override
+  String get chatKeepThreeMonths => '3 నెలలు';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'మీరు మళ్లీ రావడానికి చాట్‌లు మీ ఖాతాలో సేవ్ అవుతాయి, తర్వాత ఆటోమేటిక్‌గా తొలగించబడతాయి. చాట్‌లను ఉంచే వ్యవధి: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'ఈ చాట్‌ను సేవ్ చేయవద్దు';
+
+  @override
+  String get chatNotSaved => 'ఈ చాట్ సేవ్ కావడం లేదు. దీనిలో సేవ్ అయినది తొలగించబడింది.';
+
+  @override
+  String get chatForgetTitle => 'ఈ చాట్‌ను మర్చిపోండి';
+
+  @override
+  String get chatForgetNote => 'చాట్ మీ ఖాతా నుండి మరియు స్క్రీన్ నుండి తొలగించబడుతుంది.';
+
+  @override
+  String get secretPassword => 'పాస్‌వర్డ్‌లు ఎప్పుడూ చాట్‌లో రాయబడవు, Ask Vaultara కి ఎప్పుడూ పాస్‌వర్డ్ అవసరం లేదు. ఈ సందేశం పంపబడలేదు, సేవ్ కాలేదు.';
+
+  @override
+  String get secretCode => 'ఒకసారి కోడ్‌లు ఎప్పుడూ చాట్‌లో రాయబడవు. Vaultara వాటిని ఎప్పుడూ అడగదు, కాబట్టి అడిగే ఎవరికీ కోడ్ ఇవ్వకండి. ఈ సందేశం పంపబడలేదు, సేవ్ కాలేదు.';
+
+  @override
+  String get secretCard => 'కార్డ్ నంబర్‌లు ఎప్పుడూ చాట్‌లో రాయబడవు. ఒక కార్డ్‌ను గమనించడానికి దాన్ని గడువు తేదీతో రికార్డ్‌గా జోడించండి. ఈ సందేశం పంపబడలేదు, సేవ్ కాలేదు.';
+
+  @override
+  String numberEnding(String last) {
+    return '$last తో ముగిసే నంబర్';
+  }
+
+  @override
+  String get securityAlertQuestion => 'నాకు భద్రతా హెచ్చరిక వచ్చింది. అది నేనేనా, నేను ఏం చేయాలి?';
+
+  @override
+  String get assistantStepScam => 'సందేశాన్ని తనిఖీ చేస్తోంది';
 }

@@ -10736,4 +10736,79 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'دا ستاسو په سکرین پرانیستل شوی. هلته یې بشپړ کړئ، بیا د بیا خبرو لپاره ټک وکړئ.';
+
+  @override
+  String get assistantUndoTitle => 'وروستی بدلون بېرته واخلئ';
+
+  @override
+  String get assistantUndoNothing => 'په دې چټ کې د بېرته اخیستو لپاره هېڅ نشته.';
+
+  @override
+  String get assistantSecurityFixNote => 'امنیت او محرمیت پرانیستل کېږي او دا سمون پیلوي.';
+
+  @override
+  String get assistantStopLinksTitle => 'د شریکولو لینکونه بند کړئ';
+
+  @override
+  String get assistantStopLinksExpired => 'پای ته رسېدلي لینکونه او هغه لینکونه چې هېڅکله نه دي پرانیستل شوي';
+
+  @override
+  String get assistantStopLinksAll => 'د شریکولو ټول لینکونه';
+
+  @override
+  String get assistantStopLinksNote => 'هېڅوک به دا لینکونه بیا پرانیستلی نه شي. ستاسو ریکارډونه همداسې پاتې کېږي.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'بند شوي لینکونه: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'چټونه وساتئ';
+
+  @override
+  String get chatKeepWeek => '۱ اونۍ';
+
+  @override
+  String get chatKeepMonth => '۱ میاشت';
+
+  @override
+  String get chatKeepThreeMonths => '۳ میاشتې';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'چټونه ستاسو په حساب کې خوندي کېږي چې بېرته ورته راشئ، بیا په خپله ړنګېږي. چټونه وساتئ: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'دا چټ مه خوندي کوئ';
+
+  @override
+  String get chatNotSaved => 'دا چټ نه خوندي کېږي. څه چې ترې خوندي شوي وو، ړنګ شول.';
+
+  @override
+  String get chatForgetTitle => 'دا چټ هېر کړئ';
+
+  @override
+  String get chatForgetNote => 'چټ ستاسو له حساب او پردې څخه ړنګېږي.';
+
+  @override
+  String get secretPassword => 'پاسورډونه هېڅکله په چټ کې نه لیکل کېږي، او Ask Vaultara هېڅکله پاسورډ ته اړتیا نه لري. دا پیغام نه لېږل شوی او نه خوندي شوی.';
+
+  @override
+  String get secretCode => 'د یو ځل کوډونه هېڅکله په چټ کې نه لیکل کېږي. Vaultara هېڅکله دا نه غواړي، نو کوډ هېچا ته مه ورکوئ چې یې غواړي. دا پیغام نه لېږل شوی او نه خوندي شوی.';
+
+  @override
+  String get secretCard => 'د کارت شمېرې هېڅکله په چټ کې نه لیکل کېږي. د یو کارت د تعقیب لپاره، هغه د پای نېټې سره د ریکارډ په توګه ورزیات کړئ. دا پیغام نه لېږل شوی او نه خوندي شوی.';
+
+  @override
+  String numberEnding(String last) {
+    return 'هغه شمېره چې په $last پای ته رسېږي';
+  }
+
+  @override
+  String get securityAlertQuestion => 'ما امنیتي خبرتیا ترلاسه کړه. ایا دا زه وم، او څه وکړم؟';
+
+  @override
+  String get assistantStepScam => 'پیغام کتل کېږي';
 }

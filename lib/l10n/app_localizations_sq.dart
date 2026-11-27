@@ -10741,4 +10741,79 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Është hapur në ekran. Përfundoni atje, pastaj prekni për të folur përsëri.';
+
+  @override
+  String get assistantUndoTitle => 'Zhbëj ndryshimin e fundit';
+
+  @override
+  String get assistantUndoNothing => 'Nuk ka asgjë për të zhbërë në këtë bisedë.';
+
+  @override
+  String get assistantSecurityFixNote => 'Hapet Siguria dhe privatësia dhe nis këtë rregullim.';
+
+  @override
+  String get assistantStopLinksTitle => 'Çaktivizo lidhjet e ndarjes';
+
+  @override
+  String get assistantStopLinksExpired => 'Lidhje të skaduara dhe lidhje që nuk janë hapur kurrë';
+
+  @override
+  String get assistantStopLinksAll => 'Të gjitha lidhjet e ndarjes';
+
+  @override
+  String get assistantStopLinksNote => 'Askush nuk mund t\'i hapë më këto lidhje. Të dhënat e tua mbeten siç janë.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Lidhje të çaktivizuara: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Mbaji bisedat për';
+
+  @override
+  String get chatKeepWeek => '1 javë';
+
+  @override
+  String get chatKeepMonth => '1 muaj';
+
+  @override
+  String get chatKeepThreeMonths => '3 muaj';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Bisedat ruhen në llogarinë tënde që të kthehesh te to, pastaj fshihen automatikisht. Mbaji bisedat për: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Mos e ruaj këtë bisedë';
+
+  @override
+  String get chatNotSaved => 'Kjo bisedë nuk ruhet. Ajo që ishte ruajtur prej saj u fshi.';
+
+  @override
+  String get chatForgetTitle => 'Harroje këtë bisedë';
+
+  @override
+  String get chatForgetNote => 'Biseda fshihet nga llogaria jote dhe pastrohet nga ekrani.';
+
+  @override
+  String get secretPassword => 'Fjalëkalimet nuk shkruhen kurrë në bisedë, dhe Ask Vaultara nuk ka nevojë kurrë për to. Ky mesazh nuk u dërgua dhe nuk u ruajt.';
+
+  @override
+  String get secretCode => 'Kodet njëpërdorimshe nuk shkruhen kurrë në bisedë. Vaultara nuk i kërkon kurrë, ndaj mos ia jep askujt që i kërkon. Ky mesazh nuk u dërgua dhe nuk u ruajt.';
+
+  @override
+  String get secretCard => 'Numrat e kartave nuk shkruhen kurrë në bisedë. Për të ndjekur një kartë, shtoje si të dhënë me datën e skadimit. Ky mesazh nuk u dërgua dhe nuk u ruajt.';
+
+  @override
+  String numberEnding(String last) {
+    return 'numër që mbaron me $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Mora një sinjalizim sigurie. A isha unë, dhe çfarë duhet të bëj?';
+
+  @override
+  String get assistantStepScam => 'Po kontrollohet mesazhi';
 }

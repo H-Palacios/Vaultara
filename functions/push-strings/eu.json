@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Hilabete honetan berritzeko: {count}, {cost} inguru. Sakatu zer egin ikusteko.",
   "monthAheadBodyCountTrips": "Hilabete honetan berritzeko: {count}. Hurrengo 6 asteetako bidaiak: {trips}. Sakatu zer egin ikusteko.",
   "monthAheadBodyCostTrips": "Hilabete honetan berritzeko: {count}, {cost} inguru. Hurrengo 6 asteetako bidaiak: {trips}. Sakatu zer egin ikusteko.",
-  "monthAheadBodyTrips": "Ez dago ezer berritzeko hilabete honetan. Hurrengo 6 asteetako bidaiak: {trips}. Sakatu zer egin ikusteko."
+  "monthAheadBodyTrips": "Ez dago ezer berritzeko hilabete honetan. Hurrengo 6 asteetako bidaiak: {trips}. Sakatu zer egin ikusteko.",
+  "securityTwoStepOffTitle": "Bi urratseko saio-hasiera desaktibatu da",
+  "securityTwoStepOffBody": "Zu izan ez bazara, ireki Vaultara orain zure kontua babesteko."
 }

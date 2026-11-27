@@ -10736,4 +10736,79 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'ಅದು ನಿಮ್ಮ ಪರದೆಯಲ್ಲಿ ತೆರೆದಿದೆ. ಅಲ್ಲಿ ಮುಗಿಸಿ, ನಂತರ ಮತ್ತೆ ಮಾತನಾಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ.';
+
+  @override
+  String get assistantUndoTitle => 'ಕೊನೆಯ ಬದಲಾವಣೆಯನ್ನು ರದ್ದುಮಾಡಿ';
+
+  @override
+  String get assistantUndoNothing => 'ಈ ಚಾಟ್‌ನಲ್ಲಿ ರದ್ದುಮಾಡಲು ಏನೂ ಇಲ್ಲ.';
+
+  @override
+  String get assistantSecurityFixNote => 'ಭದ್ರತೆ ಮತ್ತು ಗೌಪ್ಯತೆ ತೆರೆಯುತ್ತದೆ ಮತ್ತು ಈ ಸರಿಪಡಿಸುವಿಕೆಯನ್ನು ಪ್ರಾರಂಭಿಸುತ್ತದೆ.';
+
+  @override
+  String get assistantStopLinksTitle => 'ಹಂಚಿಕೆ ಲಿಂಕ್‌ಗಳನ್ನು ಆಫ್ ಮಾಡಿ';
+
+  @override
+  String get assistantStopLinksExpired => 'ಅವಧಿ ಮುಗಿದ ಲಿಂಕ್‌ಗಳು ಮತ್ತು ಎಂದೂ ತೆರೆಯದ ಲಿಂಕ್‌ಗಳು';
+
+  @override
+  String get assistantStopLinksAll => 'ಎಲ್ಲಾ ಹಂಚಿಕೆ ಲಿಂಕ್‌ಗಳು';
+
+  @override
+  String get assistantStopLinksNote => 'ಇನ್ನು ಯಾರೂ ಈ ಲಿಂಕ್‌ಗಳನ್ನು ತೆರೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ. ನಿಮ್ಮ ದಾಖಲೆಗಳು ಹಾಗೆಯೇ ಇರುತ್ತವೆ.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'ಆಫ್ ಮಾಡಿದ ಲಿಂಕ್‌ಗಳು: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'ಚಾಟ್‌ಗಳನ್ನು ಇಟ್ಟುಕೊಳ್ಳುವ ಅವಧಿ';
+
+  @override
+  String get chatKeepWeek => '1 ವಾರ';
+
+  @override
+  String get chatKeepMonth => '1 ತಿಂಗಳು';
+
+  @override
+  String get chatKeepThreeMonths => '3 ತಿಂಗಳು';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'ನೀವು ಮತ್ತೆ ಬರಲು ಚಾಟ್‌ಗಳು ನಿಮ್ಮ ಖಾತೆಯಲ್ಲಿ ಉಳಿಸಲ್ಪಡುತ್ತವೆ, ನಂತರ ತಾನಾಗಿ ಅಳಿಸಲ್ಪಡುತ್ತವೆ. ಚಾಟ್‌ಗಳನ್ನು ಇಟ್ಟುಕೊಳ್ಳುವ ಅವಧಿ: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'ಈ ಚಾಟ್ ಉಳಿಸಬೇಡಿ';
+
+  @override
+  String get chatNotSaved => 'ಈ ಚಾಟ್ ಉಳಿಸಲಾಗುತ್ತಿಲ್ಲ. ಇದರಲ್ಲಿ ಉಳಿಸಿದ್ದನ್ನು ಅಳಿಸಲಾಗಿದೆ.';
+
+  @override
+  String get chatForgetTitle => 'ಈ ಚಾಟ್ ಮರೆತುಬಿಡಿ';
+
+  @override
+  String get chatForgetNote => 'ಚಾಟ್ ನಿಮ್ಮ ಖಾತೆಯಿಂದ ಅಳಿಸಲ್ಪಡುತ್ತದೆ ಮತ್ತು ಪರದೆಯಿಂದ ತೆರವಾಗುತ್ತದೆ.';
+
+  @override
+  String get secretPassword => 'ಪಾಸ್‌ವರ್ಡ್‌ಗಳನ್ನು ಎಂದಿಗೂ ಚಾಟ್‌ನಲ್ಲಿ ಬರೆಯಬೇಡಿ, Ask Vaultara ಗೆ ಎಂದಿಗೂ ಪಾಸ್‌ವರ್ಡ್ ಬೇಕಾಗಿಲ್ಲ. ಈ ಸಂದೇಶವನ್ನು ಕಳುಹಿಸಲಾಗಿಲ್ಲ, ಉಳಿಸಲಾಗಿಲ್ಲ.';
+
+  @override
+  String get secretCode => 'ಒಮ್ಮೆ ಬಳಸುವ ಕೋಡ್‌ಗಳನ್ನು ಎಂದಿಗೂ ಚಾಟ್‌ನಲ್ಲಿ ಬರೆಯಬೇಡಿ. Vaultara ಎಂದಿಗೂ ಅವುಗಳನ್ನು ಕೇಳುವುದಿಲ್ಲ, ಆದ್ದರಿಂದ ಕೇಳುವ ಯಾರಿಗೂ ಕೋಡ್ ನೀಡಬೇಡಿ. ಈ ಸಂದೇಶವನ್ನು ಕಳುಹಿಸಲಾಗಿಲ್ಲ, ಉಳಿಸಲಾಗಿಲ್ಲ.';
+
+  @override
+  String get secretCard => 'ಕಾರ್ಡ್ ಸಂಖ್ಯೆಗಳನ್ನು ಎಂದಿಗೂ ಚಾಟ್‌ನಲ್ಲಿ ಬರೆಯಬೇಡಿ. ಕಾರ್ಡ್ ಮೇಲೆ ಗಮನವಿಡಲು ಅದನ್ನು ಅವಧಿ ಮುಗಿಯುವ ದಿನಾಂಕದೊಂದಿಗೆ ದಾಖಲೆಯಾಗಿ ಸೇರಿಸಿ. ಈ ಸಂದೇಶವನ್ನು ಕಳುಹಿಸಲಾಗಿಲ್ಲ, ಉಳಿಸಲಾಗಿಲ್ಲ.';
+
+  @override
+  String numberEnding(String last) {
+    return '$last ನಿಂದ ಕೊನೆಗೊಳ್ಳುವ ಸಂಖ್ಯೆ';
+  }
+
+  @override
+  String get securityAlertQuestion => 'ನನಗೆ ಭದ್ರತಾ ಎಚ್ಚರಿಕೆ ಬಂದಿದೆ. ಅದು ನಾನೇ ಆಗಿದ್ದೆನೇ, ಮತ್ತು ನಾನು ಏನು ಮಾಡಬೇಕು?';
+
+  @override
+  String get assistantStepScam => 'ಸಂದೇಶ ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ';
 }

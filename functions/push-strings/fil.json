@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Ire-renew ngayong buwan: {count}, mga {cost}. I-tap para makita ang gagawin.",
   "monthAheadBodyCountTrips": "Ire-renew ngayong buwan: {count}. Mga biyahe sa susunod na 6 na linggo: {trips}. I-tap para makita ang gagawin.",
   "monthAheadBodyCostTrips": "Ire-renew ngayong buwan: {count}, mga {cost}. Mga biyahe sa susunod na 6 na linggo: {trips}. I-tap para makita ang gagawin.",
-  "monthAheadBodyTrips": "Walang ire-renew ngayong buwan. Mga biyahe sa susunod na 6 na linggo: {trips}. I-tap para makita ang gagawin."
+  "monthAheadBodyTrips": "Walang ire-renew ngayong buwan. Mga biyahe sa susunod na 6 na linggo: {trips}. I-tap para makita ang gagawin.",
+  "securityTwoStepOffTitle": "Na-off ang two-step sign-in",
+  "securityTwoStepOffBody": "Kung hindi ikaw ito, buksan ang Vaultara ngayon para protektahan ang iyong account."
 }

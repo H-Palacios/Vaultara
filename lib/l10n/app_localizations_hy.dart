@@ -10736,4 +10736,79 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Այն բացված է ձեր էկրանին։ Ավարտեք այնտեղ, ապա հպեք՝ նորից խոսելու համար։';
+
+  @override
+  String get assistantUndoTitle => 'Չեղարկել վերջին փոփոխությունը';
+
+  @override
+  String get assistantUndoNothing => 'Այս զրույցում չեղարկելու բան չկա։';
+
+  @override
+  String get assistantSecurityFixNote => 'Բացվում է «Անվտանգություն և գաղտնիություն»-ը և սկսում այս ուղղումը։';
+
+  @override
+  String get assistantStopLinksTitle => 'Անջատել տարածման հղումները';
+
+  @override
+  String get assistantStopLinksExpired => 'Ժամկետանց հղումներ և երբեք չբացված հղումներ';
+
+  @override
+  String get assistantStopLinksAll => 'Տարածման բոլոր հղումները';
+
+  @override
+  String get assistantStopLinksNote => 'Այլևս ոչ ոք չի կարող բացել այս հղումները։ Ձեր գրառումները մնում են անփոփոխ։';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Անջատված հղումներ՝ $count։';
+  }
+
+  @override
+  String get chatKeepTitle => 'Պահել զրույցները';
+
+  @override
+  String get chatKeepWeek => '1 շաբաթ';
+
+  @override
+  String get chatKeepMonth => '1 ամիս';
+
+  @override
+  String get chatKeepThreeMonths => '3 ամիս';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Զրույցները պահվում են ձեր հաշվում, որպեսզի կարողանաք վերադառնալ դրանց, ապա ինքնաշխատ ջնջվում են։ Պահել զրույցները՝ $period։';
+  }
+
+  @override
+  String get chatDontSave => 'Չպահել այս զրույցը';
+
+  @override
+  String get chatNotSaved => 'Այս զրույցը չի պահվում։ Պահված մասը ջնջված է։';
+
+  @override
+  String get chatForgetTitle => 'Մոռանալ այս զրույցը';
+
+  @override
+  String get chatForgetNote => 'Զրույցը ջնջվում է ձեր հաշվից և էկրանից։';
+
+  @override
+  String get secretPassword => 'Գաղտնաբառերը երբեք չեն գրվում զրույցում, և Ask Vaultara-ին երբեք գաղտնաբառ պետք չէ։ Այս հաղորդագրությունը չի ուղարկվել և չի պահվել։';
+
+  @override
+  String get secretCode => 'Մեկանգամյա կոդերը երբեք չեն գրվում զրույցում։ Vaultara-ն երբեք դրանք չի խնդրում, ուստի կոդ մի տվեք ոչ մեկին, ով այն խնդրում է։ Այս հաղորդագրությունը չի ուղարկվել և չի պահվել։';
+
+  @override
+  String get secretCard => 'Քարտերի համարները երբեք չեն գրվում զրույցում։ Քարտին հետևելու համար ավելացրեք այն որպես գրառում՝ ժամկետի ավարտի ամսաթվով։ Այս հաղորդագրությունը չի ուղարկվել և չի պահվել։';
+
+  @override
+  String numberEnding(String last) {
+    return '$last-ով ավարտվող համար';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Ստացա անվտանգության ծանուցում։ Ես էի, և ի՞նչ անեմ։';
+
+  @override
+  String get assistantStepScam => 'Ստուգվում է հաղորդագրությունը';
 }

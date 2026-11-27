@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "À renouveler ce mois-ci : {count}, environ {cost}. Touchez pour voir quoi faire.",
   "monthAheadBodyCountTrips": "À renouveler ce mois-ci : {count}. Voyages dans les 6 prochaines semaines : {trips}. Touchez pour voir quoi faire.",
   "monthAheadBodyCostTrips": "À renouveler ce mois-ci : {count}, environ {cost}. Voyages dans les 6 prochaines semaines : {trips}. Touchez pour voir quoi faire.",
-  "monthAheadBodyTrips": "Rien à renouveler ce mois-ci. Voyages dans les 6 prochaines semaines : {trips}. Touchez pour voir quoi faire."
+  "monthAheadBodyTrips": "Rien à renouveler ce mois-ci. Voyages dans les 6 prochaines semaines : {trips}. Touchez pour voir quoi faire.",
+  "securityTwoStepOffTitle": "La connexion en deux étapes a été désactivée",
+  "securityTwoStepOffBody": "Si ce n'était pas vous, ouvrez Vaultara maintenant pour sécuriser votre compte."
 }

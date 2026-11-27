@@ -10736,4 +10736,79 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Ekranınızda açık. Orada tamamlayın, sonra tekrar konuşmak için dokunun.';
+
+  @override
+  String get assistantUndoTitle => 'Son değişikliği geri al';
+
+  @override
+  String get assistantUndoNothing => 'Bu sohbette geri alınacak bir şey yok.';
+
+  @override
+  String get assistantSecurityFixNote => 'Güvenlik ve gizlilik açılır ve bu düzeltmeyi başlatır.';
+
+  @override
+  String get assistantStopLinksTitle => 'Paylaşım bağlantılarını kapat';
+
+  @override
+  String get assistantStopLinksExpired => 'Süresi dolmuş ve hiç açılmamış bağlantılar';
+
+  @override
+  String get assistantStopLinksAll => 'Tüm paylaşım bağlantıları';
+
+  @override
+  String get assistantStopLinksNote => 'Bu bağlantıları artık kimse açamaz. Kayıtlarınız olduğu gibi kalır.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Kapatılan bağlantılar: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Sohbetleri sakla';
+
+  @override
+  String get chatKeepWeek => '1 hafta';
+
+  @override
+  String get chatKeepMonth => '1 ay';
+
+  @override
+  String get chatKeepThreeMonths => '3 ay';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Sohbetler, geri dönebilmeniz için hesabınıza kaydedilir ve sonra otomatik olarak silinir. Sohbetleri sakla: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Bu sohbeti kaydetme';
+
+  @override
+  String get chatNotSaved => 'Bu sohbet kaydedilmiyor. Daha önce kaydedilen kısmı silindi.';
+
+  @override
+  String get chatForgetTitle => 'Bu sohbeti unut';
+
+  @override
+  String get chatForgetNote => 'Sohbet hesabınızdan silinir ve ekrandan kaldırılır.';
+
+  @override
+  String get secretPassword => 'Şifreler asla sohbete yazılmaz ve Ask Vaultara\'nın hiçbir zaman şifreye ihtiyacı olmaz. Bu mesaj gönderilmedi ve kaydedilmedi.';
+
+  @override
+  String get secretCode => 'Tek kullanımlık kodlar asla sohbete yazılmaz. Vaultara bunları asla istemez, bu yüzden isteyen kimseye kod vermeyin. Bu mesaj gönderilmedi ve kaydedilmedi.';
+
+  @override
+  String get secretCard => 'Kart numaraları asla sohbete yazılmaz. Bir kartı takip etmek için son kullanma tarihiyle kayıt olarak ekleyin. Bu mesaj gönderilmedi ve kaydedilmedi.';
+
+  @override
+  String numberEnding(String last) {
+    return '$last ile biten numara';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Bir güvenlik uyarısı aldım. Ben miydim ve ne yapmalıyım?';
+
+  @override
+  String get assistantStepScam => 'Mesaj kontrol ediliyor';
 }

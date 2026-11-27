@@ -10913,4 +10913,79 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Це відкрито на екрані. Завершіть там, потім торкніться, щоб знову говорити.';
+
+  @override
+  String get assistantUndoTitle => 'Скасувати останню зміну';
+
+  @override
+  String get assistantUndoNothing => 'У цьому чаті нічого скасовувати.';
+
+  @override
+  String get assistantSecurityFixNote => 'Відкриється «Безпека та конфіденційність» і почнеться це виправлення.';
+
+  @override
+  String get assistantStopLinksTitle => 'Вимкнути посилання для доступу';
+
+  @override
+  String get assistantStopLinksExpired => 'Прострочені посилання й посилання, які ніхто не відкривав';
+
+  @override
+  String get assistantStopLinksAll => 'Усі посилання для доступу';
+
+  @override
+  String get assistantStopLinksNote => 'Ніхто більше не зможе відкрити ці посилання. Ваші записи залишаться без змін.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Вимкнено посилань: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Зберігати чати';
+
+  @override
+  String get chatKeepWeek => '1 тиждень';
+
+  @override
+  String get chatKeepMonth => '1 місяць';
+
+  @override
+  String get chatKeepThreeMonths => '3 місяці';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Чати зберігаються у вашому акаунті, щоб до них можна було повернутися, а потім автоматично видаляються. Зберігати чати: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Не зберігати цей чат';
+
+  @override
+  String get chatNotSaved => 'Цей чат не зберігається. Те, що було збережено, видалено.';
+
+  @override
+  String get chatForgetTitle => 'Забути цей чат';
+
+  @override
+  String get chatForgetNote => 'Чат видаляється з вашого акаунта й з екрана.';
+
+  @override
+  String get secretPassword => 'Паролі ніколи не пишуть у чат, і Ask Vaultara пароль ніколи не потрібен. Це повідомлення не надіслано й не збережено.';
+
+  @override
+  String get secretCode => 'Одноразові коди ніколи не пишуть у чат. Vaultara ніколи їх не просить, тож не давайте код тому, хто його просить. Це повідомлення не надіслано й не збережено.';
+
+  @override
+  String get secretCard => 'Номери карток ніколи не пишуть у чат. Щоб стежити за карткою, додайте її як запис із терміном дії. Це повідомлення не надіслано й не збережено.';
+
+  @override
+  String numberEnding(String last) {
+    return 'номер, що закінчується на $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Я отримав попередження про безпеку. Це був я, і що мені робити?';
+
+  @override
+  String get assistantStepScam => 'Перевіряю повідомлення';
 }

@@ -10735,4 +10735,79 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'روی صفحهٔ شما باز است. همان‌جا تمامش کنید و بعد برای صحبت دوباره ضربه بزنید.';
+
+  @override
+  String get assistantUndoTitle => 'لغو آخرین تغییر';
+
+  @override
+  String get assistantUndoNothing => 'در این گفتگو چیزی برای لغو کردن نیست.';
+
+  @override
+  String get assistantSecurityFixNote => 'امنیت و حریم خصوصی باز می‌شود و این اصلاح را شروع می‌کند.';
+
+  @override
+  String get assistantStopLinksTitle => 'خاموش کردن پیوندهای اشتراک';
+
+  @override
+  String get assistantStopLinksExpired => 'پیوندهای منقضی و پیوندهایی که هرگز باز نشده‌اند';
+
+  @override
+  String get assistantStopLinksAll => 'همه پیوندهای اشتراک';
+
+  @override
+  String get assistantStopLinksNote => 'دیگر هیچ‌کس نمی‌تواند این پیوندها را باز کند. سوابق شما همان‌طور می‌مانند.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'پیوندهای خاموش‌شده: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'نگه‌داشتن گفتگوها به مدت';
+
+  @override
+  String get chatKeepWeek => '۱ هفته';
+
+  @override
+  String get chatKeepMonth => '۱ ماه';
+
+  @override
+  String get chatKeepThreeMonths => '۳ ماه';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'گفتگوها در حساب شما ذخیره می‌شوند تا بتوانید به آن‌ها برگردید، و سپس خودکار حذف می‌شوند. نگه‌داشتن گفتگوها به مدت: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'این گفتگو ذخیره نشود';
+
+  @override
+  String get chatNotSaved => 'این گفتگو ذخیره نمی‌شود. آنچه از آن ذخیره شده بود حذف شد.';
+
+  @override
+  String get chatForgetTitle => 'فراموش کردن این گفتگو';
+
+  @override
+  String get chatForgetNote => 'گفتگو از حساب شما و از صفحه پاک می‌شود.';
+
+  @override
+  String get secretPassword => 'رمز عبور هرگز در گفتگو نوشته نمی‌شود و Ask Vaultara هرگز به آن نیاز ندارد. این پیام فرستاده یا ذخیره نشد.';
+
+  @override
+  String get secretCode => 'کدهای یک‌بارمصرف هرگز در گفتگو نوشته نمی‌شوند. Vaultara هرگز آن‌ها را نمی‌خواهد، پس کد را به کسی که آن را می‌خواهد ندهید. این پیام فرستاده یا ذخیره نشد.';
+
+  @override
+  String get secretCard => 'شماره کارت هرگز در گفتگو نوشته نمی‌شود. برای پیگیری یک کارت، آن را به‌صورت یک سابقه با تاریخ انقضا اضافه کنید. این پیام فرستاده یا ذخیره نشد.';
+
+  @override
+  String numberEnding(String last) {
+    return 'شماره‌ای که به $last ختم می‌شود';
+  }
+
+  @override
+  String get securityAlertQuestion => 'یک هشدار امنیتی گرفتم. آیا خودم بودم و چه کار باید بکنم؟';
+
+  @override
+  String get assistantStepScam => 'در حال بررسی پیام';
 }

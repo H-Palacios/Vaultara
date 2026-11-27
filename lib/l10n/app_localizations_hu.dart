@@ -10736,4 +10736,79 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Megnyílt a képernyőn. Fejezze be ott, majd koppintson, hogy újra beszéljen.';
+
+  @override
+  String get assistantUndoTitle => 'Az utolsó módosítás visszavonása';
+
+  @override
+  String get assistantUndoNothing => 'Ebben a csevegésben nincs mit visszavonni.';
+
+  @override
+  String get assistantSecurityFixNote => 'Megnyílik a Biztonság és adatvédelem, és elindítja ezt a javítást.';
+
+  @override
+  String get assistantStopLinksTitle => 'Megosztási linkek kikapcsolása';
+
+  @override
+  String get assistantStopLinksExpired => 'Lejárt linkek és soha meg nem nyitott linkek';
+
+  @override
+  String get assistantStopLinksAll => 'Minden megosztási link';
+
+  @override
+  String get assistantStopLinksNote => 'Ezeket a linkeket többé senki sem nyithatja meg. A tételeid változatlanok maradnak.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Kikapcsolt linkek: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Csevegések megőrzése';
+
+  @override
+  String get chatKeepWeek => '1 hét';
+
+  @override
+  String get chatKeepMonth => '1 hónap';
+
+  @override
+  String get chatKeepThreeMonths => '3 hónap';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'A csevegések a fiókodba kerülnek, hogy visszatérhess hozzájuk, aztán automatikusan törlődnek. Csevegések megőrzése: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Ne mentse ezt a csevegést';
+
+  @override
+  String get chatNotSaved => 'Ez a csevegés nincs mentve. Ami korábban mentve volt belőle, törlődött.';
+
+  @override
+  String get chatForgetTitle => 'Csevegés elfelejtése';
+
+  @override
+  String get chatForgetNote => 'A csevegés törlődik a fiókodból és a képernyőről.';
+
+  @override
+  String get secretPassword => 'Jelszó soha nem kerül a csevegésbe, és az Ask Vaultarának soha nincs rá szüksége. Az üzenetet nem küldtük el és nem mentettük.';
+
+  @override
+  String get secretCode => 'Egyszeri kód soha nem kerül a csevegésbe. A Vaultara soha nem kér ilyet, ezért ne add meg senkinek, aki kéri. Az üzenetet nem küldtük el és nem mentettük.';
+
+  @override
+  String get secretCard => 'Kártyaszám soha nem kerül a csevegésbe. Ha egy kártyát követni szeretnél, add hozzá tételként a lejárati dátummal. Az üzenetet nem küldtük el és nem mentettük.';
+
+  @override
+  String numberEnding(String last) {
+    return '$last végű szám';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Biztonsági figyelmeztetést kaptam. Én voltam, és mit tegyek?';
+
+  @override
+  String get assistantStepScam => 'Üzenet ellenőrzése';
 }

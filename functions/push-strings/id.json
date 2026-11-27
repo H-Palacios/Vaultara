@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Perlu diperpanjang bulan ini: {count}, sekitar {cost}. Ketuk untuk melihat yang perlu dilakukan.",
   "monthAheadBodyCountTrips": "Perlu diperpanjang bulan ini: {count}. Perjalanan dalam 6 minggu ke depan: {trips}. Ketuk untuk melihat yang perlu dilakukan.",
   "monthAheadBodyCostTrips": "Perlu diperpanjang bulan ini: {count}, sekitar {cost}. Perjalanan dalam 6 minggu ke depan: {trips}. Ketuk untuk melihat yang perlu dilakukan.",
-  "monthAheadBodyTrips": "Tidak ada yang perlu diperpanjang bulan ini. Perjalanan dalam 6 minggu ke depan: {trips}. Ketuk untuk melihat yang perlu dilakukan."
+  "monthAheadBodyTrips": "Tidak ada yang perlu diperpanjang bulan ini. Perjalanan dalam 6 minggu ke depan: {trips}. Ketuk untuk melihat yang perlu dilakukan.",
+  "securityTwoStepOffTitle": "Masuk dua langkah dimatikan",
+  "securityTwoStepOffBody": "Jika ini bukan Anda, buka Vaultara sekarang untuk mengamankan akun Anda."
 }

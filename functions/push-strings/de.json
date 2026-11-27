@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Diesen Monat zu erneuern: {count}, etwa {cost}. Tippe, um zu sehen, was zu tun ist.",
   "monthAheadBodyCountTrips": "Diesen Monat zu erneuern: {count}. Reisen in den nächsten 6 Wochen: {trips}. Tippe, um zu sehen, was zu tun ist.",
   "monthAheadBodyCostTrips": "Diesen Monat zu erneuern: {count}, etwa {cost}. Reisen in den nächsten 6 Wochen: {trips}. Tippe, um zu sehen, was zu tun ist.",
-  "monthAheadBodyTrips": "Diesen Monat ist nichts zu erneuern. Reisen in den nächsten 6 Wochen: {trips}. Tippe, um zu sehen, was zu tun ist."
+  "monthAheadBodyTrips": "Diesen Monat ist nichts zu erneuern. Reisen in den nächsten 6 Wochen: {trips}. Tippe, um zu sehen, was zu tun ist.",
+  "securityTwoStepOffTitle": "Die Anmeldung in zwei Schritten wurde deaktiviert",
+  "securityTwoStepOffBody": "Wenn du das nicht warst, öffne jetzt Vaultara, um dein Konto zu schützen."
 }

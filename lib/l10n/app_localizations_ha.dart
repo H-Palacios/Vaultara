@@ -10736,4 +10736,79 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Yana buɗe a allonka. Ka gama a can, sannan ka taɓa don sake magana.';
+
+  @override
+  String get assistantUndoTitle => 'Soke canjin ƙarshe';
+
+  @override
+  String get assistantUndoNothing => 'Babu abin da za a soke a wannan hira.';
+
+  @override
+  String get assistantSecurityFixNote => 'Tsaro da sirri zai buɗe kuma ya fara wannan gyara.';
+
+  @override
+  String get assistantStopLinksTitle => 'Kashe hanyoyin raba';
+
+  @override
+  String get assistantStopLinksExpired => 'Hanyoyin da suka ƙare da waɗanda ba a taɓa buɗewa ba';
+
+  @override
+  String get assistantStopLinksAll => 'Duk hanyoyin raba';
+
+  @override
+  String get assistantStopLinksNote => 'Babu wanda zai iya buɗe waɗannan hanyoyin kuma. Bayananka za su kasance yadda suke.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Hanyoyin da aka kashe: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Ajiye hirarraki na';
+
+  @override
+  String get chatKeepWeek => 'Mako 1';
+
+  @override
+  String get chatKeepMonth => 'Wata 1';
+
+  @override
+  String get chatKeepThreeMonths => 'Watanni 3';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Ana ajiye hirarraki a asusunka don ka iya komawa gare su, sannan a goge su kai tsaye. Ajiye hirarraki na: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Kada ka ajiye wannan hira';
+
+  @override
+  String get chatNotSaved => 'Ba a ajiye wannan hira. An goge abin da aka ajiye daga cikinta.';
+
+  @override
+  String get chatForgetTitle => 'Manta da wannan hira';
+
+  @override
+  String get chatForgetNote => 'Ana goge hirar daga asusunka kuma a cire ta daga allo.';
+
+  @override
+  String get secretPassword => 'Ba a taɓa rubuta kalmar sirri a cikin hira ba, kuma Ask Vaultara ba ta taɓa buƙatar ta. Ba a aika ko ajiye wannan saƙo ba.';
+
+  @override
+  String get secretCode => 'Ba a taɓa rubuta lambobin amfani sau ɗaya a cikin hira ba. Vaultara ba ta taɓa neman su ba, don haka kada ka ba kowa da ya nemi lamba. Ba a aika ko ajiye wannan saƙo ba.';
+
+  @override
+  String get secretCard => 'Ba a taɓa rubuta lambobin kati a cikin hira ba. Don bin diddigin kati, ƙara shi a matsayin bayani tare da ranar ƙarewarsa. Ba a aika ko ajiye wannan saƙo ba.';
+
+  @override
+  String numberEnding(String last) {
+    return 'lambar da ta ƙare da $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Na sami gargaɗin tsaro. Ni ne ko? Me ya kamata in yi?';
+
+  @override
+  String get assistantStepScam => 'Ana duba saƙon';
 }

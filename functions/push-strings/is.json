@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Til að endurnýja í þessum mánuði: {count}, um {cost}. Ýttu til að sjá hvað þarf að gera.",
   "monthAheadBodyCountTrips": "Til að endurnýja í þessum mánuði: {count}. Ferðir næstu 6 vikurnar: {trips}. Ýttu til að sjá hvað þarf að gera.",
   "monthAheadBodyCostTrips": "Til að endurnýja í þessum mánuði: {count}, um {cost}. Ferðir næstu 6 vikurnar: {trips}. Ýttu til að sjá hvað þarf að gera.",
-  "monthAheadBodyTrips": "Ekkert að endurnýja í þessum mánuði. Ferðir næstu 6 vikurnar: {trips}. Ýttu til að sjá hvað þarf að gera."
+  "monthAheadBodyTrips": "Ekkert að endurnýja í þessum mánuði. Ferðir næstu 6 vikurnar: {trips}. Ýttu til að sjá hvað þarf að gera.",
+  "securityTwoStepOffTitle": "Slökkt var á tveggja þrepa innskráningu",
+  "securityTwoStepOffBody": "Ef þetta varst ekki þú skaltu opna Vaultara núna og tryggja reikninginn þinn."
 }

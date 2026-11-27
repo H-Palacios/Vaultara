@@ -10741,4 +10741,79 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Es ist auf deinem Bildschirm geöffnet. Schließ es dort ab und tippe dann, um wieder zu sprechen.';
+
+  @override
+  String get assistantUndoTitle => 'Letzte Änderung rückgängig machen';
+
+  @override
+  String get assistantUndoNothing => 'In diesem Chat gibt es nichts zum Rückgängigmachen.';
+
+  @override
+  String get assistantSecurityFixNote => 'Sicherheit und Datenschutz wird geöffnet und startet diese Korrektur.';
+
+  @override
+  String get assistantStopLinksTitle => 'Freigabelinks deaktivieren';
+
+  @override
+  String get assistantStopLinksExpired => 'Abgelaufene und nie geöffnete Links';
+
+  @override
+  String get assistantStopLinksAll => 'Alle Freigabelinks';
+
+  @override
+  String get assistantStopLinksNote => 'Niemand kann diese Links wieder öffnen. Deine Einträge bleiben, wie sie sind.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Deaktivierte Links: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Chats behalten für';
+
+  @override
+  String get chatKeepWeek => '1 Woche';
+
+  @override
+  String get chatKeepMonth => '1 Monat';
+
+  @override
+  String get chatKeepThreeMonths => '3 Monate';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Chats werden in deinem Konto gespeichert, damit du später zurückkommen kannst, und dann automatisch gelöscht. Chats behalten für: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Diesen Chat nicht speichern';
+
+  @override
+  String get chatNotSaved => 'Dieser Chat wird nicht gespeichert. Was davon gespeichert war, wurde gelöscht.';
+
+  @override
+  String get chatForgetTitle => 'Diesen Chat vergessen';
+
+  @override
+  String get chatForgetNote => 'Der Chat wird aus deinem Konto gelöscht und vom Bildschirm entfernt.';
+
+  @override
+  String get secretPassword => 'Passwörter gehören nie in den Chat, und Ask Vaultara braucht nie eins. Diese Nachricht wurde weder gesendet noch gespeichert.';
+
+  @override
+  String get secretCode => 'Einmalcodes gehören nie in den Chat. Vaultara fragt nie danach, also gib niemandem einen, der danach fragt. Diese Nachricht wurde weder gesendet noch gespeichert.';
+
+  @override
+  String get secretCard => 'Kartennummern gehören nie in den Chat. Um eine Karte zu verfolgen, füge sie als Eintrag mit Ablaufdatum hinzu. Diese Nachricht wurde weder gesendet noch gespeichert.';
+
+  @override
+  String numberEnding(String last) {
+    return 'Nummer mit Endung $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Ich habe eine Sicherheitswarnung bekommen. War ich das, und was soll ich tun?';
+
+  @override
+  String get assistantStepScam => 'Nachricht wird geprüft';
 }

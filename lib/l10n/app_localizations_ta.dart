@@ -10736,4 +10736,79 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'இது உங்கள் திரையில் திறந்துள்ளது. அங்கே முடித்துவிட்டு, மீண்டும் பேசத் தட்டவும்.';
+
+  @override
+  String get assistantUndoTitle => 'கடைசி மாற்றத்தைச் செயல்தவிர்';
+
+  @override
+  String get assistantUndoNothing => 'இந்த அரட்டையில் செயல்தவிர்க்க எதுவும் இல்லை.';
+
+  @override
+  String get assistantSecurityFixNote => 'பாதுகாப்பு மற்றும் தனியுரிமை திறந்து இந்தத் திருத்தத்தைத் தொடங்கும்.';
+
+  @override
+  String get assistantStopLinksTitle => 'பகிர்வு இணைப்புகளை முடக்கு';
+
+  @override
+  String get assistantStopLinksExpired => 'காலாவதியான இணைப்புகளும் ஒருபோதும் திறக்கப்படாத இணைப்புகளும்';
+
+  @override
+  String get assistantStopLinksAll => 'அனைத்து பகிர்வு இணைப்புகளும்';
+
+  @override
+  String get assistantStopLinksNote => 'இனி யாரும் இந்த இணைப்புகளைத் திறக்க முடியாது. உங்கள் பதிவுகள் அப்படியே இருக்கும்.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'முடக்கப்பட்ட இணைப்புகள்: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'அரட்டைகளை வைத்திருக்கும் காலம்';
+
+  @override
+  String get chatKeepWeek => '1 வாரம்';
+
+  @override
+  String get chatKeepMonth => '1 மாதம்';
+
+  @override
+  String get chatKeepThreeMonths => '3 மாதங்கள்';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'நீங்கள் மீண்டும் வர அரட்டைகள் உங்கள் கணக்கில் சேமிக்கப்படும், பின்னர் தானாக நீக்கப்படும். அரட்டைகளை வைத்திருக்கும் காலம்: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'இந்த அரட்டையைச் சேமிக்க வேண்டாம்';
+
+  @override
+  String get chatNotSaved => 'இந்த அரட்டை சேமிக்கப்படவில்லை. இதில் சேமிக்கப்பட்டது நீக்கப்பட்டது.';
+
+  @override
+  String get chatForgetTitle => 'இந்த அரட்டையை மறந்துவிடு';
+
+  @override
+  String get chatForgetNote => 'அரட்டை உங்கள் கணக்கிலிருந்தும் திரையிலிருந்தும் நீக்கப்படும்.';
+
+  @override
+  String get secretPassword => 'கடவுச்சொற்கள் ஒருபோதும் அரட்டையில் எழுதப்படாது, Ask Vaultara-க்கு ஒருபோதும் கடவுச்சொல் தேவையில்லை. இந்தச் செய்தி அனுப்பப்படவோ சேமிக்கப்படவோ இல்லை.';
+
+  @override
+  String get secretCode => 'ஒருமுறை குறியீடுகள் ஒருபோதும் அரட்டையில் எழுதப்படாது. Vaultara ஒருபோதும் அவற்றைக் கேட்காது, எனவே கேட்கும் யாருக்கும் குறியீட்டைக் கொடுக்காதீர்கள். இந்தச் செய்தி அனுப்பப்படவோ சேமிக்கப்படவோ இல்லை.';
+
+  @override
+  String get secretCard => 'அட்டை எண்கள் ஒருபோதும் அரட்டையில் எழுதப்படாது. ஒரு அட்டையைக் கவனிக்க, காலாவதி தேதியுடன் அதைப் பதிவாகச் சேர்க்கவும். இந்தச் செய்தி அனுப்பப்படவோ சேமிக்கப்படவோ இல்லை.';
+
+  @override
+  String numberEnding(String last) {
+    return '$last இல் முடியும் எண்';
+  }
+
+  @override
+  String get securityAlertQuestion => 'எனக்கு ஒரு பாதுகாப்பு எச்சரிக்கை வந்தது. அது நானா, நான் என்ன செய்ய வேண்டும்?';
+
+  @override
+  String get assistantStepScam => 'செய்தி சரிபார்க்கப்படுகிறது';
 }

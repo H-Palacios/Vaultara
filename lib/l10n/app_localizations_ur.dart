@@ -10736,4 +10736,79 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'یہ آپ کی اسکرین پر کھلا ہے۔ وہیں مکمل کریں، پھر دوبارہ بات کرنے کے لیے تھپتھپائیں۔';
+
+  @override
+  String get assistantUndoTitle => 'آخری تبدیلی واپس لیں';
+
+  @override
+  String get assistantUndoNothing => 'اس چیٹ میں واپس لینے کے لیے کچھ نہیں ہے۔';
+
+  @override
+  String get assistantSecurityFixNote => 'سیکیورٹی اور رازداری کھلتا ہے اور یہ درستی شروع کرتا ہے۔';
+
+  @override
+  String get assistantStopLinksTitle => 'شیئر لنکس بند کریں';
+
+  @override
+  String get assistantStopLinksExpired => 'ختم شدہ لنکس اور وہ لنکس جو کبھی نہیں کھلے';
+
+  @override
+  String get assistantStopLinksAll => 'تمام شیئر لنکس';
+
+  @override
+  String get assistantStopLinksNote => 'اب کوئی بھی یہ لنکس نہیں کھول سکے گا۔ آپ کے ریکارڈ جیسے ہیں ویسے ہی رہیں گے۔';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'بند کیے گئے لنکس: $count۔';
+  }
+
+  @override
+  String get chatKeepTitle => 'چیٹس رکھیں';
+
+  @override
+  String get chatKeepWeek => '1 ہفتہ';
+
+  @override
+  String get chatKeepMonth => '1 مہینہ';
+
+  @override
+  String get chatKeepThreeMonths => '3 مہینے';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'چیٹس آپ کے اکاؤنٹ میں محفوظ ہوتی ہیں تاکہ آپ ان پر واپس آ سکیں، پھر خود بخود حذف ہو جاتی ہیں۔ چیٹس رکھیں: $period۔';
+  }
+
+  @override
+  String get chatDontSave => 'یہ چیٹ محفوظ نہ کریں';
+
+  @override
+  String get chatNotSaved => 'یہ چیٹ محفوظ نہیں ہو رہی۔ اس کا جو حصہ محفوظ تھا وہ حذف ہو گیا۔';
+
+  @override
+  String get chatForgetTitle => 'یہ چیٹ بھول جائیں';
+
+  @override
+  String get chatForgetNote => 'چیٹ آپ کے اکاؤنٹ سے حذف ہو جاتی ہے اور اسکرین سے ہٹ جاتی ہے۔';
+
+  @override
+  String get secretPassword => 'پاس ورڈ کبھی چیٹ میں نہیں لکھے جاتے، اور Ask Vaultara کو کبھی پاس ورڈ کی ضرورت نہیں ہوتی۔ یہ پیغام نہ بھیجا گیا نہ محفوظ ہوا۔';
+
+  @override
+  String get secretCode => 'ایک بار کے کوڈ کبھی چیٹ میں نہیں لکھے جاتے۔ Vaultara کبھی ان کا مطالبہ نہیں کرتا، اس لیے جو بھی مانگے اسے کوڈ نہ دیں۔ یہ پیغام نہ بھیجا گیا نہ محفوظ ہوا۔';
+
+  @override
+  String get secretCard => 'کارڈ نمبر کبھی چیٹ میں نہیں لکھے جاتے۔ کسی کارڈ پر نظر رکھنے کے لیے اسے میعاد ختم ہونے کی تاریخ کے ساتھ ریکارڈ کے طور پر شامل کریں۔ یہ پیغام نہ بھیجا گیا نہ محفوظ ہوا۔';
+
+  @override
+  String numberEnding(String last) {
+    return 'نمبر جس کے آخر میں $last ہے';
+  }
+
+  @override
+  String get securityAlertQuestion => 'مجھے سیکیورٹی الرٹ ملا ہے۔ کیا یہ میں تھا، اور مجھے کیا کرنا چاہیے؟';
+
+  @override
+  String get assistantStepScam => 'پیغام چیک ہو رہا ہے';
 }

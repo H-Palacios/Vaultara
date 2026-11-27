@@ -10735,4 +10735,79 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Shaashaddaada ayuu ka furan yahay. Halkaas ku dhammee, kadib taabo si aad mar kale u hadasho.';
+
+  @override
+  String get assistantUndoTitle => 'Ka noqo isbeddelkii ugu dambeeyay';
+
+  @override
+  String get assistantUndoNothing => 'Wax laga noqdo kuma jiraan sheekadan.';
+
+  @override
+  String get assistantSecurityFixNote => 'Amniga iyo asturnaanta ayaa furmaya oo bilaabaya hagaajintan.';
+
+  @override
+  String get assistantStopLinksTitle => 'Dami xiriirinnada wadaagga';
+
+  @override
+  String get assistantStopLinksExpired => 'Xiriirinno dhacay iyo kuwo aan weligood la furin';
+
+  @override
+  String get assistantStopLinksAll => 'Dhammaan xiriirinnada wadaagga';
+
+  @override
+  String get assistantStopLinksNote => 'Qofna mar dambe ma furi karo xiriirinnadan. Diiwaannadaadu sidooda ayay ahaanayaan.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Xiriirinnada la damiyay: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Hay sheekooyinka muddo';
+
+  @override
+  String get chatKeepWeek => '1 toddobaad';
+
+  @override
+  String get chatKeepMonth => '1 bil';
+
+  @override
+  String get chatKeepThreeMonths => '3 bilood';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Sheekooyinka waxaa lagu kaydiyaa akoonkaaga si aad ugu soo noqoto, kadibna si toos ah ayaa loo tirtiraa. Hay sheekooyinka muddo: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Ha kaydin sheekadan';
+
+  @override
+  String get chatNotSaved => 'Sheekadan lama kaydinayo. Wixii laga kaydiyay waa la tirtiray.';
+
+  @override
+  String get chatForgetTitle => 'Illow sheekadan';
+
+  @override
+  String get chatForgetNote => 'Sheekada waa laga tirtiraa akoonkaaga waana laga nadiifiyaa shaashadda.';
+
+  @override
+  String get secretPassword => 'Furaha sirta weligiis laguma qoro sheekada, Ask Vaultara-na weligeed uma baahna. Fariintan lama dirin lamana kaydin.';
+
+  @override
+  String get secretCode => 'Koodhadhka hal mar weligood laguma qoro sheekada. Vaultara weligeed ma weydiiso, ee qofna ha siin kood haddii uu weydiisto. Fariintan lama dirin lamana kaydin.';
+
+  @override
+  String get secretCard => 'Lambarrada kaarka weligood laguma qoro sheekada. Si aad kaar ula socoto, ku dar diiwaan ahaan taariikhda uu dhacayo. Fariintan lama dirin lamana kaydin.';
+
+  @override
+  String numberEnding(String last) {
+    return 'lambar ku dhammaanaya $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Waxaan helay digniin amni. Ma aniga ayaa ahaa, maxaanse sameeyaa?';
+
+  @override
+  String get assistantStepScam => 'Fariinta waa la hubinayaa';
 }

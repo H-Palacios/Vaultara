@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Bu oy yangilash kerak: {count}, taxminan {cost}. Nima qilish kerakligini koʻrish uchun bosing.",
   "monthAheadBodyCountTrips": "Bu oy yangilash kerak: {count}. Keyingi 6 haftadagi safarlar: {trips}. Nima qilish kerakligini koʻrish uchun bosing.",
   "monthAheadBodyCostTrips": "Bu oy yangilash kerak: {count}, taxminan {cost}. Keyingi 6 haftadagi safarlar: {trips}. Nima qilish kerakligini koʻrish uchun bosing.",
-  "monthAheadBodyTrips": "Bu oy yangilash kerak boʻlgan narsa yoʻq. Keyingi 6 haftadagi safarlar: {trips}. Nima qilish kerakligini koʻrish uchun bosing."
+  "monthAheadBodyTrips": "Bu oy yangilash kerak boʻlgan narsa yoʻq. Keyingi 6 haftadagi safarlar: {trips}. Nima qilish kerakligini koʻrish uchun bosing.",
+  "securityTwoStepOffTitle": "Ikki bosqichli kirish oʻchirildi",
+  "securityTwoStepOffBody": "Agar bu siz boʻlmasangiz, hisobingizni himoya qilish uchun hozir Vaultara'ni oching."
 }

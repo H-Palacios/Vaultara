@@ -10670,4 +10670,79 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'វាបើកនៅលើអេក្រង់របស់អ្នក។ សូមបញ្ចប់នៅទីនោះ រួចចុចដើម្បីនិយាយម្តងទៀត។';
+
+  @override
+  String get assistantUndoTitle => 'មិនធ្វើការផ្លាស់ប្ដូរចុងក្រោយវិញ';
+
+  @override
+  String get assistantUndoNothing => 'គ្មានអ្វីក្នុងការជជែកនេះដែលអាចមិនធ្វើវិញបានទេ។';
+
+  @override
+  String get assistantSecurityFixNote => 'សុវត្ថិភាព និងឯកជនភាពនឹងបើក ហើយចាប់ផ្ដើមការជួសជុលនេះ។';
+
+  @override
+  String get assistantStopLinksTitle => 'បិទតំណចែករំលែក';
+
+  @override
+  String get assistantStopLinksExpired => 'តំណដែលផុតកំណត់ និងតំណដែលមិនដែលបានបើក';
+
+  @override
+  String get assistantStopLinksAll => 'តំណចែករំលែកទាំងអស់';
+
+  @override
+  String get assistantStopLinksNote => 'គ្មាននរណាអាចបើកតំណទាំងនេះបានទៀតទេ។ កំណត់ត្រារបស់អ្នកនៅដដែល។';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'តំណដែលបានបិទ៖ $count។';
+  }
+
+  @override
+  String get chatKeepTitle => 'រក្សាការជជែករយៈពេល';
+
+  @override
+  String get chatKeepWeek => '1 សប្ដាហ៍';
+
+  @override
+  String get chatKeepMonth => '1 ខែ';
+
+  @override
+  String get chatKeepThreeMonths => '3 ខែ';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'ការជជែកត្រូវបានរក្សាទុកក្នុងគណនីរបស់អ្នក ដើម្បីឱ្យអ្នកអាចត្រឡប់មកវិញបាន បន្ទាប់មកត្រូវបានលុបដោយស្វ័យប្រវត្តិ។ រក្សាការជជែករយៈពេល៖ $period។';
+  }
+
+  @override
+  String get chatDontSave => 'កុំរក្សាទុកការជជែកនេះ';
+
+  @override
+  String get chatNotSaved => 'ការជជែកនេះមិនត្រូវបានរក្សាទុកទេ។ អ្វីដែលបានរក្សាទុកពីវាត្រូវបានលុបហើយ។';
+
+  @override
+  String get chatForgetTitle => 'បំភ្លេចការជជែកនេះ';
+
+  @override
+  String get chatForgetNote => 'ការជជែកត្រូវបានលុបចេញពីគណនីរបស់អ្នក និងពីអេក្រង់។';
+
+  @override
+  String get secretPassword => 'ពាក្យសម្ងាត់មិនត្រូវសរសេរក្នុងការជជែកទេ ហើយ Ask Vaultara មិនដែលត្រូវការពាក្យសម្ងាត់ទេ។ សារនេះមិនត្រូវបានផ្ញើ ឬរក្សាទុកទេ។';
+
+  @override
+  String get secretCode => 'លេខកូដប្រើម្ដងមិនត្រូវសរសេរក្នុងការជជែកទេ។ Vaultara មិនដែលសុំវាទេ ដូច្នេះកុំឱ្យលេខកូដដល់នរណាដែលសុំ។ សារនេះមិនត្រូវបានផ្ញើ ឬរក្សាទុកទេ។';
+
+  @override
+  String get secretCard => 'លេខកាតមិនត្រូវសរសេរក្នុងការជជែកទេ។ ដើម្បីតាមដានកាត សូមបន្ថែមវាជាកំណត់ត្រាជាមួយកាលបរិច្ឆេទផុតកំណត់។ សារនេះមិនត្រូវបានផ្ញើ ឬរក្សាទុកទេ។';
+
+  @override
+  String numberEnding(String last) {
+    return 'លេខដែលបញ្ចប់ដោយ $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'ខ្ញុំបានទទួលការជូនដំណឹងសុវត្ថិភាព។ តើនោះជាខ្ញុំឬ ហើយខ្ញុំគួរធ្វើអ្វី?';
+
+  @override
+  String get assistantStepScam => 'កំពុងពិនិត្យសារ';
 }

@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Per renovar aquest mes: {count}, uns {cost}. Toca per veure què has de fer.",
   "monthAheadBodyCountTrips": "Per renovar aquest mes: {count}. Viatges en les properes 6 setmanes: {trips}. Toca per veure què has de fer.",
   "monthAheadBodyCostTrips": "Per renovar aquest mes: {count}, uns {cost}. Viatges en les properes 6 setmanes: {trips}. Toca per veure què has de fer.",
-  "monthAheadBodyTrips": "Res per renovar aquest mes. Viatges en les properes 6 setmanes: {trips}. Toca per veure què has de fer."
+  "monthAheadBodyTrips": "Res per renovar aquest mes. Viatges en les properes 6 setmanes: {trips}. Toca per veure què has de fer.",
+  "securityTwoStepOffTitle": "S'ha desactivat l'inici de sessió en dos passos",
+  "securityTwoStepOffBody": "Si no has estat tu, obre Vaultara ara per protegir el teu compte."
 }

@@ -10918,4 +10918,79 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Jest otwarte na ekranie. Dokończ tam, a potem dotknij, aby znowu mówić.';
+
+  @override
+  String get assistantUndoTitle => 'Cofnij ostatnią zmianę';
+
+  @override
+  String get assistantUndoNothing => 'W tym czacie nie ma nic do cofnięcia.';
+
+  @override
+  String get assistantSecurityFixNote => 'Otwiera się Bezpieczeństwo i prywatność i rozpoczyna tę poprawkę.';
+
+  @override
+  String get assistantStopLinksTitle => 'Wyłącz linki udostępniania';
+
+  @override
+  String get assistantStopLinksExpired => 'Wygasłe linki i linki nigdy nieotwarte';
+
+  @override
+  String get assistantStopLinksAll => 'Wszystkie linki udostępniania';
+
+  @override
+  String get assistantStopLinksNote => 'Nikt nie otworzy już tych linków. Twoje wpisy pozostają bez zmian.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Wyłączone linki: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Przechowuj czaty przez';
+
+  @override
+  String get chatKeepWeek => '1 tydzień';
+
+  @override
+  String get chatKeepMonth => '1 miesiąc';
+
+  @override
+  String get chatKeepThreeMonths => '3 miesiące';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Czaty są zapisywane na Twoim koncie, żebyś mógł do nich wrócić, a potem usuwane automatycznie. Przechowuj czaty przez: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Nie zapisuj tego czatu';
+
+  @override
+  String get chatNotSaved => 'Ten czat nie jest zapisywany. To, co z niego zapisano, zostało usunięte.';
+
+  @override
+  String get chatForgetTitle => 'Zapomnij ten czat';
+
+  @override
+  String get chatForgetNote => 'Czat zostaje usunięty z Twojego konta i z ekranu.';
+
+  @override
+  String get secretPassword => 'Hasła nigdy nie trafiają do czatu, a Ask Vaultara nigdy go nie potrzebuje. Ta wiadomość nie została wysłana ani zapisana.';
+
+  @override
+  String get secretCode => 'Kody jednorazowe nigdy nie trafiają do czatu. Vaultara nigdy o nie nie prosi, więc nie podawaj kodu nikomu, kto o niego prosi. Ta wiadomość nie została wysłana ani zapisana.';
+
+  @override
+  String get secretCard => 'Numery kart nigdy nie trafiają do czatu. Aby śledzić kartę, dodaj ją jako wpis z datą ważności. Ta wiadomość nie została wysłana ani zapisana.';
+
+  @override
+  String numberEnding(String last) {
+    return 'numer kończący się na $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Dostałem alert bezpieczeństwa. Czy to byłem ja i co mam zrobić?';
+
+  @override
+  String get assistantStepScam => 'Sprawdzanie wiadomości';
 }

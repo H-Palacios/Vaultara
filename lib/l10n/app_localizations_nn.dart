@@ -10741,4 +10741,79 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Det er ope på skjermen. Gjer det ferdig der, og trykk så for å snakke igjen.';
+
+  @override
+  String get assistantUndoTitle => 'Angre den siste endringa';
+
+  @override
+  String get assistantUndoNothing => 'Det er ingenting i denne chatten å angre.';
+
+  @override
+  String get assistantSecurityFixNote => 'Tryggleik og personvern opnar seg og startar denne rettinga.';
+
+  @override
+  String get assistantStopLinksTitle => 'Slå av delingslenkjer';
+
+  @override
+  String get assistantStopLinksExpired => 'Utgåtte lenkjer og lenkjer som aldri er opna';
+
+  @override
+  String get assistantStopLinksAll => 'Alle delingslenkjer';
+
+  @override
+  String get assistantStopLinksNote => 'Ingen kan opne desse lenkjene igjen. Oppføringane dine blir som dei er.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Lenkjer slått av: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Behald chattar i';
+
+  @override
+  String get chatKeepWeek => '1 veke';
+
+  @override
+  String get chatKeepMonth => '1 månad';
+
+  @override
+  String get chatKeepThreeMonths => '3 månader';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Chattar blir lagra på kontoen din så du kan kome tilbake til dei, og blir sletta automatisk etterpå. Behald chattar i: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Ikkje lagre denne chatten';
+
+  @override
+  String get chatNotSaved => 'Denne chatten blir ikkje lagra. Det som var lagra av han, er sletta.';
+
+  @override
+  String get chatForgetTitle => 'Gløym denne chatten';
+
+  @override
+  String get chatForgetNote => 'Chatten blir sletta frå kontoen din og fjerna frå skjermen.';
+
+  @override
+  String get secretPassword => 'Passord høyrer aldri heime i chatten, og Ask Vaultara treng aldri eitt. Meldinga vart verken send eller lagra.';
+
+  @override
+  String get secretCode => 'Eingongskodar høyrer aldri heime i chatten. Vaultara ber aldri om dei, så ikkje gi ein til nokon som ber om han. Meldinga vart verken send eller lagra.';
+
+  @override
+  String get secretCard => 'Kortnummer høyrer aldri heime i chatten. Vil du følgje med på eit kort, legg det til som ei oppføring med utløpsdato. Meldinga vart verken send eller lagra.';
+
+  @override
+  String numberEnding(String last) {
+    return 'nummer som sluttar på $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Eg fekk eit tryggleiksvarsel. Var det meg, og kva bør eg gjere?';
+
+  @override
+  String get assistantStepScam => 'Sjekkar meldinga';
 }

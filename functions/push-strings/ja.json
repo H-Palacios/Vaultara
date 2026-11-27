@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "今月更新するもの：{count} 件、約 {cost}。タップしてやることを確認。",
   "monthAheadBodyCountTrips": "今月更新するもの：{count} 件。今後 6 週間の旅行：{trips} 件。タップしてやることを確認。",
   "monthAheadBodyCostTrips": "今月更新するもの：{count} 件、約 {cost}。今後 6 週間の旅行：{trips} 件。タップしてやることを確認。",
-  "monthAheadBodyTrips": "今月更新するものはありません。今後 6 週間の旅行：{trips} 件。タップしてやることを確認。"
+  "monthAheadBodyTrips": "今月更新するものはありません。今後 6 週間の旅行：{trips} 件。タップしてやることを確認。",
+  "securityTwoStepOffTitle": "2段階ログインがオフになりました",
+  "securityTwoStepOffBody": "心当たりがない場合は、今すぐVaultaraを開いてアカウントを保護してください。"
 }

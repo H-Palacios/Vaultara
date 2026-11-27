@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Vya kusasisha mwezi huu: {count}, takriban {cost}. Gusa ili uone cha kufanya.",
   "monthAheadBodyCountTrips": "Vya kusasisha mwezi huu: {count}. Safari katika wiki 6 zijazo: {trips}. Gusa ili uone cha kufanya.",
   "monthAheadBodyCostTrips": "Vya kusasisha mwezi huu: {count}, takriban {cost}. Safari katika wiki 6 zijazo: {trips}. Gusa ili uone cha kufanya.",
-  "monthAheadBodyTrips": "Hakuna cha kusasisha mwezi huu. Safari katika wiki 6 zijazo: {trips}. Gusa ili uone cha kufanya."
+  "monthAheadBodyTrips": "Hakuna cha kusasisha mwezi huu. Safari katika wiki 6 zijazo: {trips}. Gusa ili uone cha kufanya.",
+  "securityTwoStepOffTitle": "Kuingia kwa hatua mbili kumezimwa",
+  "securityTwoStepOffBody": "Ikiwa si wewe, fungua Vaultara sasa ili kulinda akaunti yako."
 }

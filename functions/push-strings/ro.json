@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "De reînnoit luna aceasta: {count}, aproximativ {cost}. Atinge pentru a vedea ce ai de făcut.",
   "monthAheadBodyCountTrips": "De reînnoit luna aceasta: {count}. Călătorii în următoarele 6 săptămâni: {trips}. Atinge pentru a vedea ce ai de făcut.",
   "monthAheadBodyCostTrips": "De reînnoit luna aceasta: {count}, aproximativ {cost}. Călătorii în următoarele 6 săptămâni: {trips}. Atinge pentru a vedea ce ai de făcut.",
-  "monthAheadBodyTrips": "Nimic de reînnoit luna aceasta. Călătorii în următoarele 6 săptămâni: {trips}. Atinge pentru a vedea ce ai de făcut."
+  "monthAheadBodyTrips": "Nimic de reînnoit luna aceasta. Călătorii în următoarele 6 săptămâni: {trips}. Atinge pentru a vedea ce ai de făcut.",
+  "securityTwoStepOffTitle": "Conectarea în doi pași a fost dezactivată",
+  "securityTwoStepOffBody": "Dacă nu ai fost tu, deschide acum Vaultara ca să-ți protejezi contul."
 }

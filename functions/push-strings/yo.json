@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Láti sọ dọ̀tun ní oṣù yìí: {count}, nǹkan bí {cost}. Tẹ̀ ẹ́ láti rí ohun tí o máa ṣe.",
   "monthAheadBodyCountTrips": "Láti sọ dọ̀tun ní oṣù yìí: {count}. Ìrìn àjò ní ọ̀sẹ̀ 6 tó ń bọ̀: {trips}. Tẹ̀ ẹ́ láti rí ohun tí o máa ṣe.",
   "monthAheadBodyCostTrips": "Láti sọ dọ̀tun ní oṣù yìí: {count}, nǹkan bí {cost}. Ìrìn àjò ní ọ̀sẹ̀ 6 tó ń bọ̀: {trips}. Tẹ̀ ẹ́ láti rí ohun tí o máa ṣe.",
-  "monthAheadBodyTrips": "Kò sí ohun tí a máa sọ dọ̀tun ní oṣù yìí. Ìrìn àjò ní ọ̀sẹ̀ 6 tó ń bọ̀: {trips}. Tẹ̀ ẹ́ láti rí ohun tí o máa ṣe."
+  "monthAheadBodyTrips": "Kò sí ohun tí a máa sọ dọ̀tun ní oṣù yìí. Ìrìn àjò ní ọ̀sẹ̀ 6 tó ń bọ̀: {trips}. Tẹ̀ ẹ́ láti rí ohun tí o máa ṣe.",
+  "securityTwoStepOffTitle": "A ti pa ìwọlé onígbésẹ̀-méjì",
+  "securityTwoStepOffBody": "Tí kì í bá ṣe ìwọ, ṣí Vaultara báyìí láti dáàbò bo àkáǹtì rẹ."
 }

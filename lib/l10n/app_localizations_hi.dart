@@ -10736,4 +10736,79 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'यह आपकी स्क्रीन पर खुला है। वहीं पूरा करें, फिर दोबारा बोलने के लिए टैप करें।';
+
+  @override
+  String get assistantUndoTitle => 'आखिरी बदलाव पूर्ववत करें';
+
+  @override
+  String get assistantUndoNothing => 'इस चैट में पूर्ववत करने के लिए कुछ नहीं है।';
+
+  @override
+  String get assistantSecurityFixNote => 'सुरक्षा और गोपनीयता खुलती है और यह सुधार शुरू करती है।';
+
+  @override
+  String get assistantStopLinksTitle => 'शेयर लिंक बंद करें';
+
+  @override
+  String get assistantStopLinksExpired => 'समाप्त लिंक और ऐसे लिंक जो कभी नहीं खुले';
+
+  @override
+  String get assistantStopLinksAll => 'सभी शेयर लिंक';
+
+  @override
+  String get assistantStopLinksNote => 'अब कोई भी ये लिंक नहीं खोल पाएगा। आपके रिकॉर्ड जैसे हैं वैसे ही रहेंगे।';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'बंद किए गए लिंक: $count।';
+  }
+
+  @override
+  String get chatKeepTitle => 'चैट इतने समय रखें';
+
+  @override
+  String get chatKeepWeek => '1 सप्ताह';
+
+  @override
+  String get chatKeepMonth => '1 महीना';
+
+  @override
+  String get chatKeepThreeMonths => '3 महीने';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'चैट आपके खाते में सहेजी जाती हैं ताकि आप उन पर लौट सकें, फिर अपने आप हट जाती हैं। चैट इतने समय रखें: $period।';
+  }
+
+  @override
+  String get chatDontSave => 'यह चैट न सहेजें';
+
+  @override
+  String get chatNotSaved => 'यह चैट सहेजी नहीं जा रही। इसका जो हिस्सा सहेजा गया था वह हटा दिया गया।';
+
+  @override
+  String get chatForgetTitle => 'यह चैट भूल जाएँ';
+
+  @override
+  String get chatForgetNote => 'चैट आपके खाते से हटा दी जाती है और स्क्रीन से साफ़ हो जाती है।';
+
+  @override
+  String get secretPassword => 'पासवर्ड कभी चैट में नहीं लिखे जाते, और Ask Vaultara को कभी पासवर्ड की ज़रूरत नहीं होती। यह संदेश न भेजा गया, न सहेजा गया।';
+
+  @override
+  String get secretCode => 'एक बार के कोड कभी चैट में नहीं लिखे जाते। Vaultara कभी इन्हें नहीं माँगता, इसलिए माँगने वाले किसी को भी कोड न दें। यह संदेश न भेजा गया, न सहेजा गया।';
+
+  @override
+  String get secretCard => 'कार्ड नंबर कभी चैट में नहीं लिखे जाते। किसी कार्ड पर नज़र रखने के लिए उसे समाप्ति तिथि के साथ रिकॉर्ड के रूप में जोड़ें। यह संदेश न भेजा गया, न सहेजा गया।';
+
+  @override
+  String numberEnding(String last) {
+    return '$last पर खत्म होने वाला नंबर';
+  }
+
+  @override
+  String get securityAlertQuestion => 'मुझे एक सुरक्षा अलर्ट मिला। क्या वह मैं था, और मुझे क्या करना चाहिए?';
+
+  @override
+  String get assistantStepScam => 'संदेश जाँचा जा रहा है';
 }

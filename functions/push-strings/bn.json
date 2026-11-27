@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "এই মাসে নবায়ন: {count}, প্রায় {cost}। কী করতে হবে দেখতে ট্যাপ করুন।",
   "monthAheadBodyCountTrips": "এই মাসে নবায়ন: {count}। পরের ৬ সপ্তাহে ভ্রমণ: {trips}। কী করতে হবে দেখতে ট্যাপ করুন।",
   "monthAheadBodyCostTrips": "এই মাসে নবায়ন: {count}, প্রায় {cost}। পরের ৬ সপ্তাহে ভ্রমণ: {trips}। কী করতে হবে দেখতে ট্যাপ করুন।",
-  "monthAheadBodyTrips": "এই মাসে নবায়নের কিছু নেই। পরের ৬ সপ্তাহে ভ্রমণ: {trips}। কী করতে হবে দেখতে ট্যাপ করুন।"
+  "monthAheadBodyTrips": "এই মাসে নবায়নের কিছু নেই। পরের ৬ সপ্তাহে ভ্রমণ: {trips}। কী করতে হবে দেখতে ট্যাপ করুন।",
+  "securityTwoStepOffTitle": "দুই-ধাপের সাইন-ইন বন্ধ করা হয়েছে",
+  "securityTwoStepOffBody": "এটা আপনি না হলে, অ্যাকাউন্ট সুরক্ষিত করতে এখনই Vaultara খুলুন।"
 }

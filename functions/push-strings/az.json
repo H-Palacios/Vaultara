@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Bu ay yenilənəcək: {count}, təxminən {cost}. Nə etməli olduğunuzu görmək üçün toxunun.",
   "monthAheadBodyCountTrips": "Bu ay yenilənəcək: {count}. Növbəti 6 həftədə səfərlər: {trips}. Nə etməli olduğunuzu görmək üçün toxunun.",
   "monthAheadBodyCostTrips": "Bu ay yenilənəcək: {count}, təxminən {cost}. Növbəti 6 həftədə səfərlər: {trips}. Nə etməli olduğunuzu görmək üçün toxunun.",
-  "monthAheadBodyTrips": "Bu ay yenilənəcək heç nə yoxdur. Növbəti 6 həftədə səfərlər: {trips}. Nə etməli olduğunuzu görmək üçün toxunun."
+  "monthAheadBodyTrips": "Bu ay yenilənəcək heç nə yoxdur. Növbəti 6 həftədə səfərlər: {trips}. Nə etməli olduğunuzu görmək üçün toxunun.",
+  "securityTwoStepOffTitle": "İki addımlı giriş söndürüldü",
+  "securityTwoStepOffBody": "Bu siz deyildinizsə, hesabınızı qorumaq üçün indi Vaultara-nı açın."
 }

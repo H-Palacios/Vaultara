@@ -10897,4 +10897,79 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Je to otvorené na obrazovke. Dokončite to tam a potom ťuknite, aby ste znova hovorili.';
+
+  @override
+  String get assistantUndoTitle => 'Vrátiť poslednú zmenu';
+
+  @override
+  String get assistantUndoNothing => 'V tomto chate nie je čo vrátiť.';
+
+  @override
+  String get assistantSecurityFixNote => 'Otvorí sa Zabezpečenie a súkromie a spustí túto opravu.';
+
+  @override
+  String get assistantStopLinksTitle => 'Vypnúť odkazy na zdieľanie';
+
+  @override
+  String get assistantStopLinksExpired => 'Vypršané odkazy a odkazy, ktoré nikto neotvoril';
+
+  @override
+  String get assistantStopLinksAll => 'Všetky odkazy na zdieľanie';
+
+  @override
+  String get assistantStopLinksNote => 'Tieto odkazy už nikto neotvorí. Vaše záznamy zostanú bez zmeny.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Vypnuté odkazy: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Uchovávať chaty';
+
+  @override
+  String get chatKeepWeek => '1 týždeň';
+
+  @override
+  String get chatKeepMonth => '1 mesiac';
+
+  @override
+  String get chatKeepThreeMonths => '3 mesiace';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Chaty sa ukladajú do vášho účtu, aby ste sa k nim mohli vrátiť, a potom sa automaticky vymažú. Uchovávať chaty: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Neukladať tento chat';
+
+  @override
+  String get chatNotSaved => 'Tento chat sa neukladá. Čo z neho bolo uložené, je vymazané.';
+
+  @override
+  String get chatForgetTitle => 'Zabudnúť tento chat';
+
+  @override
+  String get chatForgetNote => 'Chat sa vymaže z vášho účtu a zmizne z obrazovky.';
+
+  @override
+  String get secretPassword => 'Heslá do chatu nikdy nepatria a Ask Vaultara heslo nikdy nepotrebuje. Táto správa nebola odoslaná ani uložená.';
+
+  @override
+  String get secretCode => 'Jednorazové kódy do chatu nikdy nepatria. Vaultara o ne nikdy nežiada, preto ich nedávajte nikomu, kto o ne žiada. Táto správa nebola odoslaná ani uložená.';
+
+  @override
+  String get secretCard => 'Čísla kariet do chatu nikdy nepatria. Ak chcete kartu sledovať, pridajte ju ako záznam s dátumom platnosti. Táto správa nebola odoslaná ani uložená.';
+
+  @override
+  String numberEnding(String last) {
+    return 'číslo končiace na $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Dostal som bezpečnostné upozornenie. Bol som to ja a čo mám robiť?';
+
+  @override
+  String get assistantStepScam => 'Kontrola správy';
 }

@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Om hierdie maand te hernu: {count}, ongeveer {cost}. Tik om te sien wat om te doen.",
   "monthAheadBodyCountTrips": "Om hierdie maand te hernu: {count}. Reise in die volgende 6 weke: {trips}. Tik om te sien wat om te doen.",
   "monthAheadBodyCostTrips": "Om hierdie maand te hernu: {count}, ongeveer {cost}. Reise in die volgende 6 weke: {trips}. Tik om te sien wat om te doen.",
-  "monthAheadBodyTrips": "Niks om hierdie maand te hernu nie. Reise in die volgende 6 weke: {trips}. Tik om te sien wat om te doen."
+  "monthAheadBodyTrips": "Niks om hierdie maand te hernu nie. Reise in die volgende 6 weke: {trips}. Tik om te sien wat om te doen.",
+  "securityTwoStepOffTitle": "Tweestap-aanmelding is afgeskakel",
+  "securityTwoStepOffBody": "As dit nie jy was nie, maak Vaultara nou oop om jou rekening te beveilig."
 }

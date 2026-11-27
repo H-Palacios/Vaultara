@@ -10808,4 +10808,79 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Tas ir atvērts ekrānā. Pabeidziet tur, pēc tam pieskarieties, lai runātu vēlreiz.';
+
+  @override
+  String get assistantUndoTitle => 'Atsaukt pēdējo izmaiņu';
+
+  @override
+  String get assistantUndoNothing => 'Šajā tērzēšanā nav nekā, ko atsaukt.';
+
+  @override
+  String get assistantSecurityFixNote => 'Atveras Drošība un privātums un sāk šo labojumu.';
+
+  @override
+  String get assistantStopLinksTitle => 'Izslēgt kopīgošanas saites';
+
+  @override
+  String get assistantStopLinksExpired => 'Beigušās saites un nekad neatvērtas saites';
+
+  @override
+  String get assistantStopLinksAll => 'Visas kopīgošanas saites';
+
+  @override
+  String get assistantStopLinksNote => 'Neviens vairs nevarēs atvērt šīs saites. Tavi ieraksti paliek nemainīti.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Izslēgtas saites: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Glabāt tērzēšanas';
+
+  @override
+  String get chatKeepWeek => '1 nedēļa';
+
+  @override
+  String get chatKeepMonth => '1 mēnesis';
+
+  @override
+  String get chatKeepThreeMonths => '3 mēneši';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Tērzēšanas tiek saglabātas tavā kontā, lai tu varētu pie tām atgriezties, un pēc tam automātiski izdzēstas. Glabāt tērzēšanas: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Nesaglabāt šo tērzēšanu';
+
+  @override
+  String get chatNotSaved => 'Šī tērzēšana netiek saglabāta. Tas, kas no tās bija saglabāts, ir izdzēsts.';
+
+  @override
+  String get chatForgetTitle => 'Aizmirst šo tērzēšanu';
+
+  @override
+  String get chatForgetNote => 'Tērzēšana tiek izdzēsta no tava konta un notīrīta no ekrāna.';
+
+  @override
+  String get secretPassword => 'Paroles nekad nav jāraksta tērzēšanā, un Ask Vaultara parole nekad nav vajadzīga. Šī ziņa netika nosūtīta un saglabāta.';
+
+  @override
+  String get secretCode => 'Vienreizējie kodi nekad nav jāraksta tērzēšanā. Vaultara tos nekad neprasa, tāpēc nedod kodu nevienam, kas to prasa. Šī ziņa netika nosūtīta un saglabāta.';
+
+  @override
+  String get secretCard => 'Kartes numuri nekad nav jāraksta tērzēšanā. Lai sekotu kartei, pievieno to kā ierakstu ar derīguma termiņu. Šī ziņa netika nosūtīta un saglabāta.';
+
+  @override
+  String numberEnding(String last) {
+    return 'numurs, kas beidzas ar $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Saņēmu drošības brīdinājumu. Vai tas biju es, un ko man darīt?';
+
+  @override
+  String get assistantStepScam => 'Pārbauda ziņu';
 }

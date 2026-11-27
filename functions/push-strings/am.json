@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "በዚህ ወር የሚታደሱ፦ {count}፣ በግምት {cost}። ምን ማድረግ እንዳለብዎት ለማየት ይንኩ።",
   "monthAheadBodyCountTrips": "በዚህ ወር የሚታደሱ፦ {count}። በሚቀጥሉት 6 ሳምንታት ጉዞዎች፦ {trips}። ምን ማድረግ እንዳለብዎት ለማየት ይንኩ።",
   "monthAheadBodyCostTrips": "በዚህ ወር የሚታደሱ፦ {count}፣ በግምት {cost}። በሚቀጥሉት 6 ሳምንታት ጉዞዎች፦ {trips}። ምን ማድረግ እንዳለብዎት ለማየት ይንኩ።",
-  "monthAheadBodyTrips": "በዚህ ወር የሚታደስ ነገር የለም። በሚቀጥሉት 6 ሳምንታት ጉዞዎች፦ {trips}። ምን ማድረግ እንዳለብዎት ለማየት ይንኩ።"
+  "monthAheadBodyTrips": "በዚህ ወር የሚታደስ ነገር የለም። በሚቀጥሉት 6 ሳምንታት ጉዞዎች፦ {trips}። ምን ማድረግ እንዳለብዎት ለማየት ይንኩ።",
+  "securityTwoStepOffTitle": "ባለሁለት ደረጃ መግቢያ ጠፍቷል",
+  "securityTwoStepOffBody": "ይህ እርስዎ ካልነበሩ መለያዎን ለመጠበቅ አሁኑኑ Vaultaraን ይክፈቱ።"
 }

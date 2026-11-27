@@ -10740,4 +10740,79 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Se on auki näytölläsi. Viimeistele se siellä ja napauta sitten puhuaksesi uudelleen.';
+
+  @override
+  String get assistantUndoTitle => 'Kumoa viimeisin muutos';
+
+  @override
+  String get assistantUndoNothing => 'Tästä keskustelusta ei ole mitään kumottavaa.';
+
+  @override
+  String get assistantSecurityFixNote => 'Turvallisuus ja yksityisyys avautuu ja aloittaa tämän korjauksen.';
+
+  @override
+  String get assistantStopLinksTitle => 'Poista jakolinkit käytöstä';
+
+  @override
+  String get assistantStopLinksExpired => 'Vanhentuneet ja koskaan avaamattomat linkit';
+
+  @override
+  String get assistantStopLinksAll => 'Kaikki jakolinkit';
+
+  @override
+  String get assistantStopLinksNote => 'Kukaan ei voi enää avata näitä linkkejä. Tietosi pysyvät ennallaan.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Käytöstä poistetut linkit: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Säilytä keskustelut';
+
+  @override
+  String get chatKeepWeek => '1 viikko';
+
+  @override
+  String get chatKeepMonth => '1 kuukausi';
+
+  @override
+  String get chatKeepThreeMonths => '3 kuukautta';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Keskustelut tallennetaan tilillesi, jotta voit palata niihin, ja poistetaan sitten automaattisesti. Säilytä keskustelut: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Älä tallenna tätä keskustelua';
+
+  @override
+  String get chatNotSaved => 'Tätä keskustelua ei tallenneta. Siitä jo tallennettu on poistettu.';
+
+  @override
+  String get chatForgetTitle => 'Unohda tämä keskustelu';
+
+  @override
+  String get chatForgetNote => 'Keskustelu poistetaan tililtäsi ja näytöltä.';
+
+  @override
+  String get secretPassword => 'Salasanat eivät koskaan kuulu keskusteluun, eikä Ask Vaultara tarvitse sellaista koskaan. Viestiä ei lähetetty eikä tallennettu.';
+
+  @override
+  String get secretCode => 'Kertakäyttökoodit eivät koskaan kuulu keskusteluun. Vaultara ei koskaan pyydä niitä, joten älä anna koodia kenellekään, joka sitä pyytää. Viestiä ei lähetetty eikä tallennettu.';
+
+  @override
+  String get secretCard => 'Korttinumerot eivät koskaan kuulu keskusteluun. Jos haluat seurata korttia, lisää se tietona viimeisen voimassaolopäivän kanssa. Viestiä ei lähetetty eikä tallennettu.';
+
+  @override
+  String numberEnding(String last) {
+    return 'numero, jonka lopussa on $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Sain tietoturvahälytyksen. Olinko se minä, ja mitä minun pitäisi tehdä?';
+
+  @override
+  String get assistantStepScam => 'Tarkistetaan viestiä';
 }

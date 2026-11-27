@@ -10736,4 +10736,79 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'ეკრანზე გაიხსნა. დაასრულეთ იქ, შემდეგ შეეხეთ, რომ ისევ ისაუბროთ.';
+
+  @override
+  String get assistantUndoTitle => 'ბოლო ცვლილების გაუქმება';
+
+  @override
+  String get assistantUndoNothing => 'ამ ჩატში გასაუქმებელი არაფერია.';
+
+  @override
+  String get assistantSecurityFixNote => 'იხსნება „უსაფრთხოება და კონფიდენციალურობა“ და იწყებს ამ გასწორებას.';
+
+  @override
+  String get assistantStopLinksTitle => 'გაზიარების ბმულების გამორთვა';
+
+  @override
+  String get assistantStopLinksExpired => 'ვადაგასული ბმულები და ბმულები, რომლებიც არასოდეს გახსნილა';
+
+  @override
+  String get assistantStopLinksAll => 'გაზიარების ყველა ბმული';
+
+  @override
+  String get assistantStopLinksNote => 'ამ ბმულებს ვეღარავინ გახსნის. თქვენი ჩანაწერები უცვლელი რჩება.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'გამორთული ბმულები: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'ჩატების შენახვა';
+
+  @override
+  String get chatKeepWeek => '1 კვირა';
+
+  @override
+  String get chatKeepMonth => '1 თვე';
+
+  @override
+  String get chatKeepThreeMonths => '3 თვე';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'ჩატები ინახება თქვენს ანგარიშზე, რომ მათ დაუბრუნდეთ, შემდეგ კი ავტომატურად იშლება. ჩატების შენახვა: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'ამ ჩატის არშენახვა';
+
+  @override
+  String get chatNotSaved => 'ეს ჩატი არ ინახება. რაც მისგან შენახული იყო, წაიშალა.';
+
+  @override
+  String get chatForgetTitle => 'ამ ჩატის დავიწყება';
+
+  @override
+  String get chatForgetNote => 'ჩატი იშლება თქვენი ანგარიშიდან და ეკრანიდან.';
+
+  @override
+  String get secretPassword => 'პაროლები ჩატში არასოდეს იწერება და Ask Vaultara-ს პაროლი არასოდეს სჭირდება. ეს შეტყობინება არ გაიგზავნა და არ შეინახა.';
+
+  @override
+  String get secretCode => 'ერთჯერადი კოდები ჩატში არასოდეს იწერება. Vaultara მათ არასოდეს ითხოვს, ამიტომ კოდი არავის მისცეთ, ვინც მას ითხოვს. ეს შეტყობინება არ გაიგზავნა და არ შეინახა.';
+
+  @override
+  String get secretCard => 'ბარათის ნომრები ჩატში არასოდეს იწერება. ბარათის თვალყურის სადევნებლად დაამატეთ ის ჩანაწერად ვადის გასვლის თარიღით. ეს შეტყობინება არ გაიგზავნა და არ შეინახა.';
+
+  @override
+  String numberEnding(String last) {
+    return 'ნომერი, რომელიც მთავრდება $last-ით';
+  }
+
+  @override
+  String get securityAlertQuestion => 'უსაფრთხოების გაფრთხილება მივიღე. მე ვიყავი და რა უნდა გავაკეთო?';
+
+  @override
+  String get assistantStepScam => 'შეტყობინების შემოწმება';
 }

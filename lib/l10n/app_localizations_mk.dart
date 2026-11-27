@@ -10735,4 +10735,79 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Отворено е на екранот. Завршете таму, потоа допрете за повторно да зборувате.';
+
+  @override
+  String get assistantUndoTitle => 'Врати ја последната промена';
+
+  @override
+  String get assistantUndoNothing => 'Во овој разговор нема ништо за враќање.';
+
+  @override
+  String get assistantSecurityFixNote => 'Се отвора „Безбедност и приватност“ и ја започнува оваа поправка.';
+
+  @override
+  String get assistantStopLinksTitle => 'Исклучи ги врските за споделување';
+
+  @override
+  String get assistantStopLinksExpired => 'Истечени врски и врски што никој не ги отворил';
+
+  @override
+  String get assistantStopLinksAll => 'Сите врски за споделување';
+
+  @override
+  String get assistantStopLinksNote => 'Никој повеќе не може да ги отвори овие врски. Вашите записи остануваат исти.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Исклучени врски: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Чувај разговори';
+
+  @override
+  String get chatKeepWeek => '1 недела';
+
+  @override
+  String get chatKeepMonth => '1 месец';
+
+  @override
+  String get chatKeepThreeMonths => '3 месеци';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Разговорите се зачувуваат во вашата сметка за да можете да се вратите на нив, а потоа автоматски се бришат. Чувај разговори: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Не го зачувувај овој разговор';
+
+  @override
+  String get chatNotSaved => 'Овој разговор не се зачувува. Она што беше зачувано е избришано.';
+
+  @override
+  String get chatForgetTitle => 'Заборави го овој разговор';
+
+  @override
+  String get chatForgetNote => 'Разговорот се брише од вашата сметка и од екранот.';
+
+  @override
+  String get secretPassword => 'Лозинки никогаш не се пишуваат во разговорот, а на Ask Vaultara никогаш не му треба лозинка. Пораката не е испратена ниту зачувана.';
+
+  @override
+  String get secretCode => 'Еднократни кодови никогаш не се пишуваат во разговорот. Vaultara никогаш не ги бара, затоа не давајте код никому што го бара. Пораката не е испратена ниту зачувана.';
+
+  @override
+  String get secretCard => 'Броеви на картички никогаш не се пишуваат во разговорот. За да следите картичка, додајте ја како запис со датумот на истекување. Пораката не е испратена ниту зачувана.';
+
+  @override
+  String numberEnding(String last) {
+    return 'број што завршува на $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Добив безбедносно предупредување. Дали бев јас и што треба да направам?';
+
+  @override
+  String get assistantStepScam => 'Се проверува пораката';
 }

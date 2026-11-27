@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Megújítandó ebben a hónapban: {count}, kb. {cost}. Koppintson, és nézze meg, mi a teendő.",
   "monthAheadBodyCountTrips": "Megújítandó ebben a hónapban: {count}. Utazások a következő 6 hétben: {trips}. Koppintson, és nézze meg, mi a teendő.",
   "monthAheadBodyCostTrips": "Megújítandó ebben a hónapban: {count}, kb. {cost}. Utazások a következő 6 hétben: {trips}. Koppintson, és nézze meg, mi a teendő.",
-  "monthAheadBodyTrips": "Ebben a hónapban nincs mit megújítani. Utazások a következő 6 hétben: {trips}. Koppintson, és nézze meg, mi a teendő."
+  "monthAheadBodyTrips": "Ebben a hónapban nincs mit megújítani. Utazások a következő 6 hétben: {trips}. Koppintson, és nézze meg, mi a teendő.",
+  "securityTwoStepOffTitle": "A kétlépcsős bejelentkezés ki lett kapcsolva",
+  "securityTwoStepOffBody": "Ha nem te voltál, nyisd meg most a Vaultarát, és védd meg a fiókodat."
 }

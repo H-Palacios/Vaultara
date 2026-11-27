@@ -10735,4 +10735,79 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Ekranınızda açıqdır. Orada tamamlayın, sonra yenidən danışmaq üçün toxunun.';
+
+  @override
+  String get assistantUndoTitle => 'Son dəyişikliyi geri al';
+
+  @override
+  String get assistantUndoNothing => 'Bu söhbətdə geri alınacaq heç nə yoxdur.';
+
+  @override
+  String get assistantSecurityFixNote => 'Təhlükəsizlik və məxfilik açılır və bu düzəlişi başladır.';
+
+  @override
+  String get assistantStopLinksTitle => 'Paylaşım keçidlərini söndür';
+
+  @override
+  String get assistantStopLinksExpired => 'Vaxtı bitmiş və heç açılmamış keçidlər';
+
+  @override
+  String get assistantStopLinksAll => 'Bütün paylaşım keçidləri';
+
+  @override
+  String get assistantStopLinksNote => 'Artıq heç kim bu keçidləri aça bilməz. Qeydləriniz olduğu kimi qalır.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Söndürülən keçidlər: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Söhbətləri saxla';
+
+  @override
+  String get chatKeepWeek => '1 həftə';
+
+  @override
+  String get chatKeepMonth => '1 ay';
+
+  @override
+  String get chatKeepThreeMonths => '3 ay';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Söhbətlər geri qayıda biləsiniz deyə hesabınızda saxlanılır, sonra avtomatik silinir. Söhbətləri saxla: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Bu söhbəti saxlama';
+
+  @override
+  String get chatNotSaved => 'Bu söhbət saxlanılmır. Ondan saxlanılmış hissə silindi.';
+
+  @override
+  String get chatForgetTitle => 'Bu söhbəti unut';
+
+  @override
+  String get chatForgetNote => 'Söhbət hesabınızdan silinir və ekrandan təmizlənir.';
+
+  @override
+  String get secretPassword => 'Parollar heç vaxt söhbətə yazılmır və Ask Vaultara-nın heç vaxt parola ehtiyacı olmur. Bu mesaj göndərilmədi və saxlanılmadı.';
+
+  @override
+  String get secretCode => 'Birdəfəlik kodlar heç vaxt söhbətə yazılmır. Vaultara onları heç vaxt istəmir, ona görə də istəyən heç kimə kod verməyin. Bu mesaj göndərilmədi və saxlanılmadı.';
+
+  @override
+  String get secretCard => 'Kart nömrələri heç vaxt söhbətə yazılmır. Kartı izləmək üçün onu bitmə tarixi ilə qeyd kimi əlavə edin. Bu mesaj göndərilmədi və saxlanılmadı.';
+
+  @override
+  String numberEnding(String last) {
+    return '$last ilə bitən nömrə';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Təhlükəsizlik xəbərdarlığı aldım. Bu mən idim, və nə etməliyəm?';
+
+  @override
+  String get assistantStepScam => 'Mesaj yoxlanılır';
 }

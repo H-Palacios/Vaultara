@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Za obnovu ovaj mjesec: {count}, oko {cost}. Dodirnite da vidite što učiniti.",
   "monthAheadBodyCountTrips": "Za obnovu ovaj mjesec: {count}. Putovanja u sljedećih 6 tjedana: {trips}. Dodirnite da vidite što učiniti.",
   "monthAheadBodyCostTrips": "Za obnovu ovaj mjesec: {count}, oko {cost}. Putovanja u sljedećih 6 tjedana: {trips}. Dodirnite da vidite što učiniti.",
-  "monthAheadBodyTrips": "Ovaj mjesec nema ništa za obnovu. Putovanja u sljedećih 6 tjedana: {trips}. Dodirnite da vidite što učiniti."
+  "monthAheadBodyTrips": "Ovaj mjesec nema ništa za obnovu. Putovanja u sljedećih 6 tjedana: {trips}. Dodirnite da vidite što učiniti.",
+  "securityTwoStepOffTitle": "Prijava u dva koraka je isključena",
+  "securityTwoStepOffBody": "Ako to niste bili vi, odmah otvorite Vaultara i zaštitite račun."
 }

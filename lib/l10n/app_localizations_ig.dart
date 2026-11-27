@@ -10684,4 +10684,79 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Ọ meghere na ihuenyo gị. Mechaa ya ebe ahụ, wee pịa ka ị kwuo okwu ọzọ.';
+
+  @override
+  String get assistantUndoTitle => 'Wepụ mgbanwe ikpeazụ';
+
+  @override
+  String get assistantUndoNothing => 'Ọ dịghị ihe a ga-ewepụ na mkparịta ụka a.';
+
+  @override
+  String get assistantSecurityFixNote => 'Nchekwa na nzuzo na-emepe ma bido ndozi a.';
+
+  @override
+  String get assistantStopLinksTitle => 'Gbanyụọ njikọ nkekọrịta';
+
+  @override
+  String get assistantStopLinksExpired => 'Njikọ gwụrụ agwụ na njikọ a na-emeghe mgbe ọ bụla';
+
+  @override
+  String get assistantStopLinksAll => 'Njikọ nkekọrịta niile';
+
+  @override
+  String get assistantStopLinksNote => 'Ọ dịghị onye ga-emepe njikọ ndị a ọzọ. Ndekọ gị ga-anọ ka ha dị.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Njikọ e gbanyụrụ: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Debe mkparịta ụka maka';
+
+  @override
+  String get chatKeepWeek => 'Izu 1';
+
+  @override
+  String get chatKeepMonth => 'Ọnwa 1';
+
+  @override
+  String get chatKeepThreeMonths => 'Ọnwa 3';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'A na-echekwa mkparịta ụka n\'akaụntụ gị ka ị nwee ike ịlọghachi na ha, mgbe ahụ a na-ehichapụ ha n\'onwe ha. Debe mkparịta ụka maka: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Echekwala mkparịta ụka a';
+
+  @override
+  String get chatNotSaved => 'A naghị echekwa mkparịta ụka a. E hichapụrụ ihe e chekwara na ya.';
+
+  @override
+  String get chatForgetTitle => 'Chefuo mkparịta ụka a';
+
+  @override
+  String get chatForgetNote => 'A na-ehichapụ mkparịta ụka ahụ n\'akaụntụ gị ma wepụ ya na ihuenyo.';
+
+  @override
+  String get secretPassword => 'A naghị ede okwuntughe na mkparịta ụka, Ask Vaultara anaghịkwa achọ ya. E zighị ma ọ bụ chekwaa ozi a.';
+
+  @override
+  String get secretCode => 'A naghị ede koodu otu oge na mkparịta ụka. Vaultara anaghị arịọ ha, ya mere enyela onye ọ bụla rịọrọ ya koodu. E zighị ma ọ bụ chekwaa ozi a.';
+
+  @override
+  String get secretCard => 'A naghị ede nọmba kaadị na mkparịta ụka. Iji soro kaadị, tinye ya dị ka ndekọ na ụbọchị ọ ga-agwụ. E zighị ma ọ bụ chekwaa ozi a.';
+
+  @override
+  String numberEnding(String last) {
+    return 'nọmba na-akwụsị na $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Enwetara m ọkwa nchekwa. Ọ bụ m? Gịnị ka m kwesịrị ime?';
+
+  @override
+  String get assistantStepScam => 'Na-elele ozi ahụ';
 }

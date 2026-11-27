@@ -10736,4 +10736,79 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'ਇਹ ਤੁਹਾਡੀ ਸਕ੍ਰੀਨ \'ਤੇ ਖੁੱਲ੍ਹਾ ਹੈ। ਉੱਥੇ ਪੂਰਾ ਕਰੋ, ਫਿਰ ਦੁਬਾਰਾ ਬੋਲਣ ਲਈ ਟੈਪ ਕਰੋ।';
+
+  @override
+  String get assistantUndoTitle => 'ਆਖਰੀ ਬਦਲਾਅ ਵਾਪਸ ਲਓ';
+
+  @override
+  String get assistantUndoNothing => 'ਇਸ ਚੈਟ ਵਿੱਚ ਵਾਪਸ ਲੈਣ ਲਈ ਕੁਝ ਨਹੀਂ ਹੈ।';
+
+  @override
+  String get assistantSecurityFixNote => 'ਸੁਰੱਖਿਆ ਅਤੇ ਪਰਦੇਦਾਰੀ ਖੁੱਲ੍ਹਦੀ ਹੈ ਅਤੇ ਇਹ ਸੁਧਾਰ ਸ਼ੁਰੂ ਕਰਦੀ ਹੈ।';
+
+  @override
+  String get assistantStopLinksTitle => 'ਸ਼ੇਅਰ ਲਿੰਕ ਬੰਦ ਕਰੋ';
+
+  @override
+  String get assistantStopLinksExpired => 'ਮਿਆਦ ਪੁੱਗੇ ਲਿੰਕ ਅਤੇ ਕਦੇ ਨਾ ਖੋਲ੍ਹੇ ਗਏ ਲਿੰਕ';
+
+  @override
+  String get assistantStopLinksAll => 'ਸਾਰੇ ਸ਼ੇਅਰ ਲਿੰਕ';
+
+  @override
+  String get assistantStopLinksNote => 'ਹੁਣ ਕੋਈ ਵੀ ਇਹ ਲਿੰਕ ਨਹੀਂ ਖੋਲ੍ਹ ਸਕੇਗਾ। ਤੁਹਾਡੇ ਰਿਕਾਰਡ ਜਿਵੇਂ ਹਨ ਉਵੇਂ ਹੀ ਰਹਿਣਗੇ।';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'ਬੰਦ ਕੀਤੇ ਲਿੰਕ: $count।';
+  }
+
+  @override
+  String get chatKeepTitle => 'ਚੈਟਾਂ ਇੰਨਾ ਸਮਾਂ ਰੱਖੋ';
+
+  @override
+  String get chatKeepWeek => '1 ਹਫ਼ਤਾ';
+
+  @override
+  String get chatKeepMonth => '1 ਮਹੀਨਾ';
+
+  @override
+  String get chatKeepThreeMonths => '3 ਮਹੀਨੇ';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'ਚੈਟਾਂ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਸੰਭਾਲੀਆਂ ਜਾਂਦੀਆਂ ਹਨ ਤਾਂ ਜੋ ਤੁਸੀਂ ਉਨ੍ਹਾਂ \'ਤੇ ਵਾਪਸ ਆ ਸਕੋ, ਫਿਰ ਆਪਣੇ ਆਪ ਮਿਟ ਜਾਂਦੀਆਂ ਹਨ। ਚੈਟਾਂ ਇੰਨਾ ਸਮਾਂ ਰੱਖੋ: $period।';
+  }
+
+  @override
+  String get chatDontSave => 'ਇਹ ਚੈਟ ਨਾ ਸੰਭਾਲੋ';
+
+  @override
+  String get chatNotSaved => 'ਇਹ ਚੈਟ ਸੰਭਾਲੀ ਨਹੀਂ ਜਾ ਰਹੀ। ਇਸ ਦਾ ਜੋ ਸੰਭਾਲਿਆ ਗਿਆ ਸੀ ਉਹ ਮਿਟਾ ਦਿੱਤਾ ਗਿਆ।';
+
+  @override
+  String get chatForgetTitle => 'ਇਹ ਚੈਟ ਭੁੱਲ ਜਾਓ';
+
+  @override
+  String get chatForgetNote => 'ਚੈਟ ਤੁਹਾਡੇ ਖਾਤੇ ਤੋਂ ਮਿਟਾ ਦਿੱਤੀ ਜਾਂਦੀ ਹੈ ਅਤੇ ਸਕ੍ਰੀਨ ਤੋਂ ਹਟ ਜਾਂਦੀ ਹੈ।';
+
+  @override
+  String get secretPassword => 'ਪਾਸਵਰਡ ਕਦੇ ਵੀ ਚੈਟ ਵਿੱਚ ਨਹੀਂ ਲਿਖੇ ਜਾਂਦੇ, ਅਤੇ Ask Vaultara ਨੂੰ ਕਦੇ ਪਾਸਵਰਡ ਦੀ ਲੋੜ ਨਹੀਂ ਹੁੰਦੀ। ਇਹ ਸੁਨੇਹਾ ਨਾ ਭੇਜਿਆ ਗਿਆ ਨਾ ਸੰਭਾਲਿਆ ਗਿਆ।';
+
+  @override
+  String get secretCode => 'ਇੱਕ ਵਾਰ ਦੇ ਕੋਡ ਕਦੇ ਵੀ ਚੈਟ ਵਿੱਚ ਨਹੀਂ ਲਿਖੇ ਜਾਂਦੇ। Vaultara ਕਦੇ ਇਹ ਨਹੀਂ ਮੰਗਦਾ, ਇਸ ਲਈ ਮੰਗਣ ਵਾਲੇ ਕਿਸੇ ਨੂੰ ਕੋਡ ਨਾ ਦਿਓ। ਇਹ ਸੁਨੇਹਾ ਨਾ ਭੇਜਿਆ ਗਿਆ ਨਾ ਸੰਭਾਲਿਆ ਗਿਆ।';
+
+  @override
+  String get secretCard => 'ਕਾਰਡ ਨੰਬਰ ਕਦੇ ਵੀ ਚੈਟ ਵਿੱਚ ਨਹੀਂ ਲਿਖੇ ਜਾਂਦੇ। ਕਿਸੇ ਕਾਰਡ \'ਤੇ ਨਜ਼ਰ ਰੱਖਣ ਲਈ ਉਸ ਨੂੰ ਮਿਆਦ ਦੀ ਤਾਰੀਖ ਨਾਲ ਰਿਕਾਰਡ ਵਜੋਂ ਜੋੜੋ। ਇਹ ਸੁਨੇਹਾ ਨਾ ਭੇਜਿਆ ਗਿਆ ਨਾ ਸੰਭਾਲਿਆ ਗਿਆ।';
+
+  @override
+  String numberEnding(String last) {
+    return '$last \'ਤੇ ਖਤਮ ਹੋਣ ਵਾਲਾ ਨੰਬਰ';
+  }
+
+  @override
+  String get securityAlertQuestion => 'ਮੈਨੂੰ ਸੁਰੱਖਿਆ ਚੇਤਾਵਨੀ ਮਿਲੀ। ਕੀ ਉਹ ਮੈਂ ਸੀ, ਅਤੇ ਮੈਨੂੰ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?';
+
+  @override
+  String get assistantStepScam => 'ਸੁਨੇਹਾ ਜਾਂਚਿਆ ਜਾ ਰਿਹਾ ਹੈ';
 }

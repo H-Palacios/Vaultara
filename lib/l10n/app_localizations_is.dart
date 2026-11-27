@@ -10735,4 +10735,79 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Það er opið á skjánum. Kláraðu þar og ýttu svo til að tala aftur.';
+
+  @override
+  String get assistantUndoTitle => 'Afturkalla síðustu breytingu';
+
+  @override
+  String get assistantUndoNothing => 'Það er ekkert í þessu spjalli til að afturkalla.';
+
+  @override
+  String get assistantSecurityFixNote => 'Öryggi og persónuvernd opnast og hefur þessa lagfæringu.';
+
+  @override
+  String get assistantStopLinksTitle => 'Slökkva á deilitenglum';
+
+  @override
+  String get assistantStopLinksExpired => 'Útrunnir tenglar og tenglar sem aldrei voru opnaðir';
+
+  @override
+  String get assistantStopLinksAll => 'Allir deilitenglar';
+
+  @override
+  String get assistantStopLinksNote => 'Enginn getur opnað þessa tengla aftur. Færslurnar þínar haldast óbreyttar.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Tenglar sem slökkt var á: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Geyma spjall í';
+
+  @override
+  String get chatKeepWeek => '1 viku';
+
+  @override
+  String get chatKeepMonth => '1 mánuð';
+
+  @override
+  String get chatKeepThreeMonths => '3 mánuði';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Spjall er vistað á reikningnum þínum svo þú getir snúið aftur að því og síðan eytt sjálfkrafa. Geyma spjall í: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Ekki vista þetta spjall';
+
+  @override
+  String get chatNotSaved => 'Þetta spjall er ekki vistað. Því sem hafði verið vistað af því hefur verið eytt.';
+
+  @override
+  String get chatForgetTitle => 'Gleyma þessu spjalli';
+
+  @override
+  String get chatForgetNote => 'Spjallinu er eytt af reikningnum þínum og það hreinsað af skjánum.';
+
+  @override
+  String get secretPassword => 'Lykilorð eiga aldrei heima í spjallinu og Ask Vaultara þarf aldrei á þeim að halda. Þessi skilaboð voru hvorki send né vistuð.';
+
+  @override
+  String get secretCode => 'Einnota kóðar eiga aldrei heima í spjallinu. Vaultara biður aldrei um þá, svo ekki gefa neinum kóða sem biður um hann. Þessi skilaboð voru hvorki send né vistuð.';
+
+  @override
+  String get secretCard => 'Kortanúmer eiga aldrei heima í spjallinu. Til að fylgjast með korti skaltu bæta því við sem færslu með gildistíma. Þessi skilaboð voru hvorki send né vistuð.';
+
+  @override
+  String numberEnding(String last) {
+    return 'númer sem endar á $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Ég fékk öryggisviðvörun. Var þetta ég, og hvað ætti ég að gera?';
+
+  @override
+  String get assistantStepScam => 'Athugar skilaboðin';
 }

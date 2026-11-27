@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Cần gia hạn tháng này: {count}, khoảng {cost}. Chạm để xem cần làm gì.",
   "monthAheadBodyCountTrips": "Cần gia hạn tháng này: {count}. Chuyến đi trong 6 tuần tới: {trips}. Chạm để xem cần làm gì.",
   "monthAheadBodyCostTrips": "Cần gia hạn tháng này: {count}, khoảng {cost}. Chuyến đi trong 6 tuần tới: {trips}. Chạm để xem cần làm gì.",
-  "monthAheadBodyTrips": "Tháng này không có gì cần gia hạn. Chuyến đi trong 6 tuần tới: {trips}. Chạm để xem cần làm gì."
+  "monthAheadBodyTrips": "Tháng này không có gì cần gia hạn. Chuyến đi trong 6 tuần tới: {trips}. Chạm để xem cần làm gì.",
+  "securityTwoStepOffTitle": "Đăng nhập hai bước đã bị tắt",
+  "securityTwoStepOffBody": "Nếu không phải bạn, hãy mở Vaultara ngay để bảo vệ tài khoản."
 }

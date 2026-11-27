@@ -10736,4 +10736,79 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Imefunguka kwenye skrini yako. Maliza hapo, kisha gusa ili uzungumze tena.';
+
+  @override
+  String get assistantUndoTitle => 'Tendua badiliko la mwisho';
+
+  @override
+  String get assistantUndoNothing => 'Hakuna cha kutendua katika gumzo hili.';
+
+  @override
+  String get assistantSecurityFixNote => 'Usalama na faragha inafunguka na kuanza marekebisho haya.';
+
+  @override
+  String get assistantStopLinksTitle => 'Zima viungo vya kushiriki';
+
+  @override
+  String get assistantStopLinksExpired => 'Viungo vilivyoisha muda na ambavyo havijawahi kufunguliwa';
+
+  @override
+  String get assistantStopLinksAll => 'Viungo vyote vya kushiriki';
+
+  @override
+  String get assistantStopLinksNote => 'Hakuna atakayeweza kufungua viungo hivi tena. Rekodi zako zinabaki kama zilivyo.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Viungo vilivyozimwa: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Hifadhi magumzo kwa';
+
+  @override
+  String get chatKeepWeek => 'Wiki 1';
+
+  @override
+  String get chatKeepMonth => 'Mwezi 1';
+
+  @override
+  String get chatKeepThreeMonths => 'Miezi 3';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Magumzo huhifadhiwa kwenye akaunti yako ili urudi kwayo, kisha hufutwa kiotomatiki. Hifadhi magumzo kwa: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Usihifadhi gumzo hili';
+
+  @override
+  String get chatNotSaved => 'Gumzo hili halihifadhiwi. Kilichokuwa kimehifadhiwa kimefutwa.';
+
+  @override
+  String get chatForgetTitle => 'Sahau gumzo hili';
+
+  @override
+  String get chatForgetNote => 'Gumzo linafutwa kwenye akaunti yako na kuondolewa kwenye skrini.';
+
+  @override
+  String get secretPassword => 'Manenosiri kamwe hayaandikwi kwenye gumzo, na Ask Vaultara kamwe haihitaji moja. Ujumbe huu haukutumwa wala kuhifadhiwa.';
+
+  @override
+  String get secretCode => 'Misimbo ya mara moja kamwe haiandikwi kwenye gumzo. Vaultara kamwe haiiombi, kwa hivyo usimpe mtu yeyote anayeiomba. Ujumbe huu haukutumwa wala kuhifadhiwa.';
+
+  @override
+  String get secretCard => 'Namba za kadi kamwe haziandikwi kwenye gumzo. Ili kufuatilia kadi, iongeze kama rekodi pamoja na tarehe yake ya kuisha. Ujumbe huu haukutumwa wala kuhifadhiwa.';
+
+  @override
+  String numberEnding(String last) {
+    return 'namba inayoishia na $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Nimepokea tahadhari ya usalama. Je, nilikuwa mimi, na nifanye nini?';
+
+  @override
+  String get assistantStepScam => 'Inakagua ujumbe';
 }

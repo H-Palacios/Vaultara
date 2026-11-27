@@ -10667,4 +10667,79 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Sudah terbuka di layar Anda. Selesaikan di sana, lalu ketuk untuk bicara lagi.';
+
+  @override
+  String get assistantUndoTitle => 'Batalkan perubahan terakhir';
+
+  @override
+  String get assistantUndoNothing => 'Tidak ada yang bisa dibatalkan dari obrolan ini.';
+
+  @override
+  String get assistantSecurityFixNote => 'Keamanan dan privasi terbuka dan memulai perbaikan ini.';
+
+  @override
+  String get assistantStopLinksTitle => 'Matikan tautan berbagi';
+
+  @override
+  String get assistantStopLinksExpired => 'Tautan kedaluwarsa dan tautan yang tidak pernah dibuka';
+
+  @override
+  String get assistantStopLinksAll => 'Semua tautan berbagi';
+
+  @override
+  String get assistantStopLinksNote => 'Tidak ada yang bisa membuka tautan ini lagi. Catatan Anda tetap seperti apa adanya.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Tautan dimatikan: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Simpan obrolan selama';
+
+  @override
+  String get chatKeepWeek => '1 minggu';
+
+  @override
+  String get chatKeepMonth => '1 bulan';
+
+  @override
+  String get chatKeepThreeMonths => '3 bulan';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Obrolan disimpan di akun Anda agar bisa dibuka lagi, lalu dihapus otomatis. Simpan obrolan selama: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Jangan simpan obrolan ini';
+
+  @override
+  String get chatNotSaved => 'Obrolan ini tidak disimpan. Bagian yang sudah tersimpan telah dihapus.';
+
+  @override
+  String get chatForgetTitle => 'Lupakan obrolan ini';
+
+  @override
+  String get chatForgetNote => 'Obrolan dihapus dari akun Anda dan dari layar.';
+
+  @override
+  String get secretPassword => 'Kata sandi tidak pernah ditulis di obrolan, dan Ask Vaultara tidak pernah memerlukannya. Pesan ini tidak dikirim dan tidak disimpan.';
+
+  @override
+  String get secretCode => 'Kode sekali pakai tidak pernah ditulis di obrolan. Vaultara tidak pernah memintanya, jadi jangan berikan kepada siapa pun yang meminta. Pesan ini tidak dikirim dan tidak disimpan.';
+
+  @override
+  String get secretCard => 'Nomor kartu tidak pernah ditulis di obrolan. Untuk memantau kartu, tambahkan sebagai catatan dengan tanggal kedaluwarsanya. Pesan ini tidak dikirim dan tidak disimpan.';
+
+  @override
+  String numberEnding(String last) {
+    return 'nomor berakhiran $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Saya menerima peringatan keamanan. Apakah itu saya, dan apa yang harus saya lakukan?';
+
+  @override
+  String get assistantStepScam => 'Memeriksa pesan';
 }

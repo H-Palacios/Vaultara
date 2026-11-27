@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Por renovar este mes: {count}, unos {cost}. Toca para ver qué hacer.",
   "monthAheadBodyCountTrips": "Por renovar este mes: {count}. Viajes en las próximas 6 semanas: {trips}. Toca para ver qué hacer.",
   "monthAheadBodyCostTrips": "Por renovar este mes: {count}, unos {cost}. Viajes en las próximas 6 semanas: {trips}. Toca para ver qué hacer.",
-  "monthAheadBodyTrips": "Nada que renovar este mes. Viajes en las próximas 6 semanas: {trips}. Toca para ver qué hacer."
+  "monthAheadBodyTrips": "Nada que renovar este mes. Viajes en las próximas 6 semanas: {trips}. Toca para ver qué hacer.",
+  "securityTwoStepOffTitle": "Se desactivó el inicio de sesión en dos pasos",
+  "securityTwoStepOffBody": "Si no fuiste tú, abre Vaultara ahora para proteger tu cuenta."
 }

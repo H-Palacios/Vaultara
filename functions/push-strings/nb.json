@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Skal fornyes denne måneden: {count}, omtrent {cost}. Trykk for å se hva du må gjøre.",
   "monthAheadBodyCountTrips": "Skal fornyes denne måneden: {count}. Reiser de neste 6 ukene: {trips}. Trykk for å se hva du må gjøre.",
   "monthAheadBodyCostTrips": "Skal fornyes denne måneden: {count}, omtrent {cost}. Reiser de neste 6 ukene: {trips}. Trykk for å se hva du må gjøre.",
-  "monthAheadBodyTrips": "Ingenting skal fornyes denne måneden. Reiser de neste 6 ukene: {trips}. Trykk for å se hva du må gjøre."
+  "monthAheadBodyTrips": "Ingenting skal fornyes denne måneden. Reiser de neste 6 ukene: {trips}. Trykk for å se hva du må gjøre.",
+  "securityTwoStepOffTitle": "Pålogging i to trinn ble slått av",
+  "securityTwoStepOffBody": "Hvis dette ikke var deg, åpne Vaultara nå for å sikre kontoen din."
 }

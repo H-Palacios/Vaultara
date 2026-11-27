@@ -10821,6 +10821,81 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Отворено је на екрану. Завршите тамо, а затим додирните да поново разговарате.';
+
+  @override
+  String get assistantUndoTitle => 'Поништи последњу промену';
+
+  @override
+  String get assistantUndoNothing => 'У овом разговору нема ничега за поништавање.';
+
+  @override
+  String get assistantSecurityFixNote => 'Отвара се Безбедност и приватност и покреће ову исправку.';
+
+  @override
+  String get assistantStopLinksTitle => 'Искључи линкове за дељење';
+
+  @override
+  String get assistantStopLinksExpired => 'Истекли линкови и линкови које нико није отворио';
+
+  @override
+  String get assistantStopLinksAll => 'Сви линкови за дељење';
+
+  @override
+  String get assistantStopLinksNote => 'Нико више не може да отвори ове линкове. Ваши записи остају какви јесу.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Искључени линкови: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Чувај разговоре';
+
+  @override
+  String get chatKeepWeek => '1 недеља';
+
+  @override
+  String get chatKeepMonth => '1 месец';
+
+  @override
+  String get chatKeepThreeMonths => '3 месеца';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Разговори се чувају на вашем налогу да бисте могли да им се вратите, а затим се аутоматски бришу. Чувај разговоре: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Не чувај овај разговор';
+
+  @override
+  String get chatNotSaved => 'Овај разговор се не чува. Оно што је било сачувано је избрисано.';
+
+  @override
+  String get chatForgetTitle => 'Заборави овај разговор';
+
+  @override
+  String get chatForgetNote => 'Разговор се брише са вашег налога и уклања са екрана.';
+
+  @override
+  String get secretPassword => 'Лозинке никад не иду у разговор, а Аск Vaultara никад не треба лозинку. Ова порука није послата ни сачувана.';
+
+  @override
+  String get secretCode => 'Једнократни кодови никад не иду у разговор. Vaultara их никад не тражи, па не дајте код никоме ко га тражи. Ова порука није послата ни сачувана.';
+
+  @override
+  String get secretCard => 'Бројеви картица никад не иду у разговор. Да бисте пратили картицу, додајте је као запис са датумом истека. Ова порука није послата ни сачувана.';
+
+  @override
+  String numberEnding(String last) {
+    return 'број који се завршава на $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Добио сам безбедносно упозорење. Да ли сам то био ја и шта треба да урадим?';
+
+  @override
+  String get assistantStepScam => 'Провера поруке';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -21639,6 +21714,81 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String get talkFinishOnScreen => 'Отворено је на екрану. Завршите тамо, а затим додирните да поново разговарате.';
+
+  @override
+  String get assistantUndoTitle => 'Поништи последњу промену';
+
+  @override
+  String get assistantUndoNothing => 'У овом разговору нема ничега за поништавање.';
+
+  @override
+  String get assistantSecurityFixNote => 'Отвара се Безбедност и приватност и покреће ову исправку.';
+
+  @override
+  String get assistantStopLinksTitle => 'Искључи линкове за дељење';
+
+  @override
+  String get assistantStopLinksExpired => 'Истекли линкови и линкови које нико није отворио';
+
+  @override
+  String get assistantStopLinksAll => 'Сви линкови за дељење';
+
+  @override
+  String get assistantStopLinksNote => 'Нико више не може да отвори ове линкове. Ваши записи остају какви јесу.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Искључени линкови: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Чувај разговоре';
+
+  @override
+  String get chatKeepWeek => '1 недеља';
+
+  @override
+  String get chatKeepMonth => '1 месец';
+
+  @override
+  String get chatKeepThreeMonths => '3 месеца';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Разговори се чувају на вашем налогу да бисте могли да им се вратите, а затим се аутоматски бришу. Чувај разговоре: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Не чувај овај разговор';
+
+  @override
+  String get chatNotSaved => 'Овај разговор се не чува. Оно што је било сачувано је избрисано.';
+
+  @override
+  String get chatForgetTitle => 'Заборави овај разговор';
+
+  @override
+  String get chatForgetNote => 'Разговор се брише са вашег налога и уклања са екрана.';
+
+  @override
+  String get secretPassword => 'Лозинке никад не иду у разговор, а Аск Vaultara никад не треба лозинку. Ова порука није послата ни сачувана.';
+
+  @override
+  String get secretCode => 'Једнократни кодови никад не иду у разговор. Vaultara их никад не тражи, па не дајте код никоме ко га тражи. Ова порука није послата ни сачувана.';
+
+  @override
+  String get secretCard => 'Бројеви картица никад не иду у разговор. Да бисте пратили картицу, додајте је као запис са датумом истека. Ова порука није послата ни сачувана.';
+
+  @override
+  String numberEnding(String last) {
+    return 'број који се завршава на $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Добио сам безбедносно упозорење. Да ли сам то био ја и шта треба да урадим?';
+
+  @override
+  String get assistantStepScam => 'Провера поруке';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -32453,4 +32603,79 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String get talkFinishOnScreen => 'Otvoreno je na ekranu. Završite tamo, a zatim dodirnite da ponovo razgovarate.';
+
+  @override
+  String get assistantUndoTitle => 'Poništi poslednju promenu';
+
+  @override
+  String get assistantUndoNothing => 'U ovom razgovoru nema ničega za poništavanje.';
+
+  @override
+  String get assistantSecurityFixNote => 'Otvara se Bezbednost i privatnost i pokreće ovu ispravku.';
+
+  @override
+  String get assistantStopLinksTitle => 'Isključi linkove za deljenje';
+
+  @override
+  String get assistantStopLinksExpired => 'Istekli linkovi i linkovi koje niko nije otvorio';
+
+  @override
+  String get assistantStopLinksAll => 'Svi linkovi za deljenje';
+
+  @override
+  String get assistantStopLinksNote => 'Niko više ne može da otvori ove linkove. Vaši zapisi ostaju kakvi jesu.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Isključeni linkovi: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Čuvaj razgovore';
+
+  @override
+  String get chatKeepWeek => '1 nedelja';
+
+  @override
+  String get chatKeepMonth => '1 mesec';
+
+  @override
+  String get chatKeepThreeMonths => '3 meseca';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Razgovori se čuvaju na vašem nalogu da biste mogli da im se vratite, a zatim se automatski brišu. Čuvaj razgovore: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Ne čuvaj ovaj razgovor';
+
+  @override
+  String get chatNotSaved => 'Ovaj razgovor se ne čuva. Ono što je bilo sačuvano je izbrisano.';
+
+  @override
+  String get chatForgetTitle => 'Zaboravi ovaj razgovor';
+
+  @override
+  String get chatForgetNote => 'Razgovor se briše sa vašeg naloga i uklanja sa ekrana.';
+
+  @override
+  String get secretPassword => 'Lozinke nikad ne idu u razgovor, a Ask Vaultara nikad ne treba lozinku. Ova poruka nije poslata ni sačuvana.';
+
+  @override
+  String get secretCode => 'Jednokratni kodovi nikad ne idu u razgovor. Vaultara ih nikad ne traži, pa ne dajte kod nikome ko ga traži. Ova poruka nije poslata ni sačuvana.';
+
+  @override
+  String get secretCard => 'Brojevi kartica nikad ne idu u razgovor. Da biste pratili karticu, dodajte je kao zapis sa datumom isteka. Ova poruka nije poslata ni sačuvana.';
+
+  @override
+  String numberEnding(String last) {
+    return 'broj koji se završava na $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Dobio sam bezbednosno upozorenje. Da li sam to bio ja i šta treba da uradim?';
+
+  @override
+  String get assistantStepScam => 'Provera poruke';
 }

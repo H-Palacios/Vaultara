@@ -10734,4 +10734,79 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'በማያ ገጽዎ ላይ ተከፍቷል። እዚያ ይጨርሱ፣ ከዚያ እንደገና ለመናገር ይንኩ።';
+
+  @override
+  String get assistantUndoTitle => 'የመጨረሻውን ለውጥ ቀልብስ';
+
+  @override
+  String get assistantUndoNothing => 'በዚህ ውይይት ውስጥ የሚቀለበስ ነገር የለም።';
+
+  @override
+  String get assistantSecurityFixNote => 'ደህንነት እና ግላዊነት ይከፈትና ይህን ማስተካከያ ይጀምራል።';
+
+  @override
+  String get assistantStopLinksTitle => 'የማጋሪያ አገናኞችን አጥፋ';
+
+  @override
+  String get assistantStopLinksExpired => 'ጊዜያቸው ያለፈ አገናኞች እና ፈጽሞ ያልተከፈቱ አገናኞች';
+
+  @override
+  String get assistantStopLinksAll => 'ሁሉም የማጋሪያ አገናኞች';
+
+  @override
+  String get assistantStopLinksNote => 'ከእንግዲህ ማንም እነዚህን አገናኞች መክፈት አይችልም። መዝገቦችዎ እንዳሉ ይቆያሉ።';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'የጠፉ አገናኞች: $count።';
+  }
+
+  @override
+  String get chatKeepTitle => 'ውይይቶችን አቆይ ለ';
+
+  @override
+  String get chatKeepWeek => '1 ሳምንት';
+
+  @override
+  String get chatKeepMonth => '1 ወር';
+
+  @override
+  String get chatKeepThreeMonths => '3 ወር';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'ውይይቶች ተመልሰው እንዲመጡባቸው በመለያዎ ውስጥ ይቀመጣሉ፣ ከዚያም በራስ-ሰር ይሰረዛሉ። ውይይቶችን አቆይ ለ: $period።';
+  }
+
+  @override
+  String get chatDontSave => 'ይህን ውይይት አታስቀምጥ';
+
+  @override
+  String get chatNotSaved => 'ይህ ውይይት እየተቀመጠ አይደለም። ከሱ የተቀመጠው ተሰርዟል።';
+
+  @override
+  String get chatForgetTitle => 'ይህን ውይይት እርሳ';
+
+  @override
+  String get chatForgetNote => 'ውይይቱ ከመለያዎ ይሰረዛል እና ከማያ ገጹ ይጠፋል።';
+
+  @override
+  String get secretPassword => 'የይለፍ ቃሎች ፈጽሞ በውይይቱ ውስጥ አይጻፉም፣ Ask Vaultara ደግሞ ፈጽሞ የይለፍ ቃል አያስፈልገውም። ይህ መልዕክት አልተላከም አልተቀመጠምም።';
+
+  @override
+  String get secretCode => 'የአንድ ጊዜ ኮዶች ፈጽሞ በውይይቱ ውስጥ አይጻፉም። Vaultara ፈጽሞ አይጠይቃቸውም፣ ስለዚህ ለሚጠይቅ ማንም ኮድ አይስጡ። ይህ መልዕክት አልተላከም አልተቀመጠምም።';
+
+  @override
+  String get secretCard => 'የካርድ ቁጥሮች ፈጽሞ በውይይቱ ውስጥ አይጻፉም። ካርድን ለመከታተል ከማብቂያ ቀኑ ጋር እንደ መዝገብ ያክሉት። ይህ መልዕክት አልተላከም አልተቀመጠምም።';
+
+  @override
+  String numberEnding(String last) {
+    return 'በ$last የሚያልቅ ቁጥር';
+  }
+
+  @override
+  String get securityAlertQuestion => 'የደህንነት ማስጠንቀቂያ ደረሰኝ። እኔ ነበርኩ? ምን ማድረግ አለብኝ?';
+
+  @override
+  String get assistantStepScam => 'መልዕክቱን በመፈተሽ ላይ';
 }

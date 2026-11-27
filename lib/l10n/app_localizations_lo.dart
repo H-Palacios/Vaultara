@@ -10672,4 +10672,79 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'ມັນເປີດຢູ່ໜ້າຈໍຂອງທ່ານ. ເຮັດໃຫ້ສຳເລັດຢູ່ບ່ອນນັ້ນ ແລ້ວແຕະເພື່ອເວົ້າອີກຄັ້ງ.';
+
+  @override
+  String get assistantUndoTitle => 'ຍົກເລີກການປ່ຽນແປງຫຼ້າສຸດ';
+
+  @override
+  String get assistantUndoNothing => 'ບໍ່ມີຫຍັງໃນການສົນທະນານີ້ໃຫ້ຍົກເລີກ.';
+
+  @override
+  String get assistantSecurityFixNote => 'ຄວາມປອດໄພ ແລະ ຄວາມເປັນສ່ວນຕົວຈະເປີດ ແລະ ເລີ່ມການແກ້ໄຂນີ້.';
+
+  @override
+  String get assistantStopLinksTitle => 'ປິດລິ້ງແບ່ງປັນ';
+
+  @override
+  String get assistantStopLinksExpired => 'ລິ້ງທີ່ໝົດອາຍຸ ແລະ ລິ້ງທີ່ບໍ່ເຄີຍຖືກເປີດ';
+
+  @override
+  String get assistantStopLinksAll => 'ລິ້ງແບ່ງປັນທັງໝົດ';
+
+  @override
+  String get assistantStopLinksNote => 'ບໍ່ມີໃຜເປີດລິ້ງເຫຼົ່ານີ້ໄດ້ອີກ. ບັນທຶກຂອງທ່ານຍັງຄືເກົ່າ.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'ລິ້ງທີ່ປິດແລ້ວ: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'ເກັບການສົນທະນາໄວ້';
+
+  @override
+  String get chatKeepWeek => '1 ອາທິດ';
+
+  @override
+  String get chatKeepMonth => '1 ເດືອນ';
+
+  @override
+  String get chatKeepThreeMonths => '3 ເດືອນ';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'ການສົນທະນາຖືກບັນທຶກໃນບັນຊີຂອງທ່ານເພື່ອໃຫ້ກັບມາເບິ່ງໄດ້, ແລ້ວຈະຖືກລຶບອັດຕະໂນມັດ. ເກັບການສົນທະນາໄວ້: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'ຢ່າບັນທຶກການສົນທະນານີ້';
+
+  @override
+  String get chatNotSaved => 'ການສົນທະນານີ້ບໍ່ຖືກບັນທຶກ. ສ່ວນທີ່ເຄີຍບັນທຶກໄວ້ຖືກລຶບແລ້ວ.';
+
+  @override
+  String get chatForgetTitle => 'ລືມການສົນທະນານີ້';
+
+  @override
+  String get chatForgetNote => 'ການສົນທະນາຖືກລຶບອອກຈາກບັນຊີ ແລະ ໜ້າຈໍຂອງທ່ານ.';
+
+  @override
+  String get secretPassword => 'ລະຫັດຜ່ານບໍ່ເຄີຍຂຽນໃນການສົນທະນາ, ແລະ Ask Vaultara ບໍ່ເຄີຍຕ້ອງການລະຫັດຜ່ານ. ຂໍ້ຄວາມນີ້ບໍ່ໄດ້ສົ່ງ ຫຼື ບັນທຶກ.';
+
+  @override
+  String get secretCode => 'ລະຫັດໃຊ້ຄັ້ງດຽວບໍ່ເຄີຍຂຽນໃນການສົນທະນາ. Vaultara ບໍ່ເຄີຍຂໍມັນ, ສະນັ້ນຢ່າໃຫ້ລະຫັດແກ່ໃຜທີ່ຂໍ. ຂໍ້ຄວາມນີ້ບໍ່ໄດ້ສົ່ງ ຫຼື ບັນທຶກ.';
+
+  @override
+  String get secretCard => 'ເລກບັດບໍ່ເຄີຍຂຽນໃນການສົນທະນາ. ເພື່ອຕິດຕາມບັດ, ໃຫ້ເພີ່ມເປັນບັນທຶກພ້ອມວັນໝົດອາຍຸ. ຂໍ້ຄວາມນີ້ບໍ່ໄດ້ສົ່ງ ຫຼື ບັນທຶກ.';
+
+  @override
+  String numberEnding(String last) {
+    return 'ເລກທີ່ລົງທ້າຍດ້ວຍ $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'ຂ້ອຍໄດ້ຮັບການແຈ້ງເຕືອນຄວາມປອດໄພ. ນັ້ນແມ່ນຂ້ອຍບໍ, ແລະ ຂ້ອຍຄວນເຮັດແນວໃດ?';
+
+  @override
+  String get assistantStepScam => 'ກຳລັງກວດຂໍ້ຄວາມ';
 }

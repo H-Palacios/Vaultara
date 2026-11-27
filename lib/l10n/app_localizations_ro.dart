@@ -10823,4 +10823,79 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Este deschis pe ecran. Termină acolo, apoi atinge ca să vorbești din nou.';
+
+  @override
+  String get assistantUndoTitle => 'Anulează ultima modificare';
+
+  @override
+  String get assistantUndoNothing => 'Nu e nimic de anulat din această conversație.';
+
+  @override
+  String get assistantSecurityFixNote => 'Se deschide Securitate și confidențialitate și pornește această remediere.';
+
+  @override
+  String get assistantStopLinksTitle => 'Dezactivează linkurile de partajare';
+
+  @override
+  String get assistantStopLinksExpired => 'Linkuri expirate și linkuri neaccesate niciodată';
+
+  @override
+  String get assistantStopLinksAll => 'Toate linkurile de partajare';
+
+  @override
+  String get assistantStopLinksNote => 'Nimeni nu mai poate deschide aceste linkuri. Înregistrările tale rămân la fel.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Linkuri dezactivate: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Păstrează conversațiile';
+
+  @override
+  String get chatKeepWeek => '1 săptămână';
+
+  @override
+  String get chatKeepMonth => '1 lună';
+
+  @override
+  String get chatKeepThreeMonths => '3 luni';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Conversațiile se salvează în contul tău ca să poți reveni la ele, apoi se șterg automat. Păstrează conversațiile: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Nu salva această conversație';
+
+  @override
+  String get chatNotSaved => 'Această conversație nu se salvează. Ce se salvase din ea a fost șters.';
+
+  @override
+  String get chatForgetTitle => 'Uită această conversație';
+
+  @override
+  String get chatForgetNote => 'Conversația se șterge din contul tău și de pe ecran.';
+
+  @override
+  String get secretPassword => 'Parolele nu se scriu niciodată în conversație, iar Ask Vaultara nu are nevoie niciodată de una. Mesajul nu a fost trimis și nici salvat.';
+
+  @override
+  String get secretCode => 'Codurile unice nu se scriu niciodată în conversație. Vaultara nu le cere niciodată, deci nu da un cod nimănui care ți-l cere. Mesajul nu a fost trimis și nici salvat.';
+
+  @override
+  String get secretCard => 'Numerele de card nu se scriu niciodată în conversație. Ca să urmărești un card, adaugă-l ca înregistrare cu data de expirare. Mesajul nu a fost trimis și nici salvat.';
+
+  @override
+  String numberEnding(String last) {
+    return 'număr care se termină în $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Am primit o alertă de securitate. Am fost eu și ce ar trebui să fac?';
+
+  @override
+  String get assistantStepScam => 'Se verifică mesajul';
 }

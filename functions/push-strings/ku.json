@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Ji bo nûkirinê vê mehê: {count}, nêzîkî {cost}. Bitepîne da ku bibînî çi bikî.",
   "monthAheadBodyCountTrips": "Ji bo nûkirinê vê mehê: {count}. Rêwîtiyên di 6 hefteyên pêş de: {trips}. Bitepîne da ku bibînî çi bikî.",
   "monthAheadBodyCostTrips": "Ji bo nûkirinê vê mehê: {count}, nêzîkî {cost}. Rêwîtiyên di 6 hefteyên pêş de: {trips}. Bitepîne da ku bibînî çi bikî.",
-  "monthAheadBodyTrips": "Vê mehê tiştek ji bo nûkirinê tune. Rêwîtiyên di 6 hefteyên pêş de: {trips}. Bitepîne da ku bibînî çi bikî."
+  "monthAheadBodyTrips": "Vê mehê tiştek ji bo nûkirinê tune. Rêwîtiyên di 6 hefteyên pêş de: {trips}. Bitepîne da ku bibînî çi bikî.",
+  "securityTwoStepOffTitle": "Têketina du-gavî hat girtin",
+  "securityTwoStepOffBody": "Heke ne tu bûyî, niha Vaultara veke da ku hesabê xwe biparêzî."
 }

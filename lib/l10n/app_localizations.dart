@@ -18378,6 +18378,144 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'It\'s open on your screen. Finish there, then tap to talk again.'**
   String get talkFinishOnScreen;
+
+  /// Ask Vaultara card title: undo the last change made from this chat.
+  ///
+  /// In en, this message translates to:
+  /// **'Undo the last change'**
+  String get assistantUndoTitle;
+
+  /// Ask Vaultara undo card and snack bar: no change from this chat can be undone.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing from this chat can be undone.'**
+  String get assistantUndoNothing;
+
+  /// Ask Vaultara security fix card: Confirm opens the Security and privacy screen and starts that check-up fix.
+  ///
+  /// In en, this message translates to:
+  /// **'Security and privacy opens and starts this fix.'**
+  String get assistantSecurityFixNote;
+
+  /// Ask Vaultara card title: turn off share links so nobody can open them.
+  ///
+  /// In en, this message translates to:
+  /// **'Turn off share links'**
+  String get assistantStopLinksTitle;
+
+  /// Ask Vaultara turn off links card: which links, the expired ones and the ones nobody opened.
+  ///
+  /// In en, this message translates to:
+  /// **'Expired links and links never opened'**
+  String get assistantStopLinksExpired;
+
+  /// Ask Vaultara turn off links card: which links, all of them.
+  ///
+  /// In en, this message translates to:
+  /// **'Every share link'**
+  String get assistantStopLinksAll;
+
+  /// Ask Vaultara turn off links card: what Confirm does.
+  ///
+  /// In en, this message translates to:
+  /// **'Nobody can open these links again. Your records stay as they are.'**
+  String get assistantStopLinksNote;
+
+  /// Snack bar after share links were turned off. {count} is how many.
+  ///
+  /// In en, this message translates to:
+  /// **'Links turned off: {count}.'**
+  String assistantStopLinksDone(int count);
+
+  /// Ask Vaultara chats panel menu item and sheet title: how long saved chats are kept. Followed by a choice such as 1 week.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep chats for'**
+  String get chatKeepTitle;
+
+  /// How long chats are kept: one week.
+  ///
+  /// In en, this message translates to:
+  /// **'1 week'**
+  String get chatKeepWeek;
+
+  /// How long chats are kept: one month.
+  ///
+  /// In en, this message translates to:
+  /// **'1 month'**
+  String get chatKeepMonth;
+
+  /// How long chats are kept: three months.
+  ///
+  /// In en, this message translates to:
+  /// **'3 months'**
+  String get chatKeepThreeMonths;
+
+  /// Ask Vaultara chats panel footer. {period} is one of the keep choices, such as 1 week.
+  ///
+  /// In en, this message translates to:
+  /// **'Chats are saved to your account so you can come back to them, then deleted automatically. Keep chats for: {period}.'**
+  String chatKeepNote(String period);
+
+  /// Ask Vaultara: menu item and card title to stop saving the open chat.
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t save this chat'**
+  String get chatDontSave;
+
+  /// Ask Vaultara: the open chat is no longer saved and what was saved is deleted.
+  ///
+  /// In en, this message translates to:
+  /// **'This chat isn\'t saved. What was saved of it is deleted.'**
+  String get chatNotSaved;
+
+  /// Ask Vaultara card title: delete the open chat from the account.
+  ///
+  /// In en, this message translates to:
+  /// **'Forget this chat'**
+  String get chatForgetTitle;
+
+  /// Ask Vaultara forget chat card: what Confirm does.
+  ///
+  /// In en, this message translates to:
+  /// **'The chat is deleted from your account and cleared from the screen.'**
+  String get chatForgetNote;
+
+  /// Shown in Ask Vaultara instead of sending a message that has a password in it.
+  ///
+  /// In en, this message translates to:
+  /// **'Passwords never go in the chat, and Ask Vaultara never needs one. This message wasn\'t sent or saved.'**
+  String get secretPassword;
+
+  /// Shown in Ask Vaultara instead of sending a message that has a one-time code in it.
+  ///
+  /// In en, this message translates to:
+  /// **'One-time codes never go in the chat. Vaultara never asks for them, so don\'t give one to anyone who does. This message wasn\'t sent or saved.'**
+  String get secretCode;
+
+  /// Shown in Ask Vaultara instead of sending a message that has a card number in it.
+  ///
+  /// In en, this message translates to:
+  /// **'Card numbers never go in the chat. To track a card, add it as a record with its expiry date. This message wasn\'t sent or saved.'**
+  String get secretCard;
+
+  /// Read aloud in Talk mode instead of a long ID or passport number. {last} is its last four characters, spoken one by one.
+  ///
+  /// In en, this message translates to:
+  /// **'number ending in {last}'**
+  String numberEnding(String last);
+
+  /// Sent to Ask Vaultara when a security alert notification is tapped, as if the user typed it.
+  ///
+  /// In en, this message translates to:
+  /// **'I got a security alert. Was it me, and what should I do?'**
+  String get securityAlertQuestion;
+
+  /// Ask Vaultara status while it checks a message for signs of a scam.
+  ///
+  /// In en, this message translates to:
+  /// **'Checking the message'**
+  String get assistantStepScam;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -10736,4 +10736,79 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Ekraningizda ochiq. U yerda tugating, soʻng yana gapirish uchun bosing.';
+
+  @override
+  String get assistantUndoTitle => 'Oxirgi oʻzgarishni bekor qilish';
+
+  @override
+  String get assistantUndoNothing => 'Bu suhbatda bekor qilinadigan hech narsa yoʻq.';
+
+  @override
+  String get assistantSecurityFixNote => 'Xavfsizlik va maxfiylik ochiladi va bu tuzatishni boshlaydi.';
+
+  @override
+  String get assistantStopLinksTitle => 'Ulashish havolalarini oʻchirish';
+
+  @override
+  String get assistantStopLinksExpired => 'Muddati oʻtgan va hech qachon ochilmagan havolalar';
+
+  @override
+  String get assistantStopLinksAll => 'Barcha ulashish havolalari';
+
+  @override
+  String get assistantStopLinksNote => 'Endi bu havolalarni hech kim ocha olmaydi. Yozuvlaringiz oʻzgarishsiz qoladi.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Oʻchirilgan havolalar: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Suhbatlarni saqlash';
+
+  @override
+  String get chatKeepWeek => '1 hafta';
+
+  @override
+  String get chatKeepMonth => '1 oy';
+
+  @override
+  String get chatKeepThreeMonths => '3 oy';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Suhbatlar qaytib kelishingiz uchun hisobingizda saqlanadi, keyin avtomatik oʻchiriladi. Suhbatlarni saqlash: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Bu suhbatni saqlamaslik';
+
+  @override
+  String get chatNotSaved => 'Bu suhbat saqlanmayapti. Undan saqlangan qism oʻchirildi.';
+
+  @override
+  String get chatForgetTitle => 'Bu suhbatni unutish';
+
+  @override
+  String get chatForgetNote => 'Suhbat hisobingizdan va ekrandan oʻchiriladi.';
+
+  @override
+  String get secretPassword => 'Parollar hech qachon suhbatga yozilmaydi, Ask Vaultara esa hech qachon parolga muhtoj emas. Bu xabar yuborilmadi va saqlanmadi.';
+
+  @override
+  String get secretCode => 'Bir martalik kodlar hech qachon suhbatga yozilmaydi. Vaultara ularni hech qachon soʻramaydi, shuning uchun soʻragan hech kimga kod bermang. Bu xabar yuborilmadi va saqlanmadi.';
+
+  @override
+  String get secretCard => 'Karta raqamlari hech qachon suhbatga yozilmaydi. Kartani kuzatish uchun uni amal qilish muddati bilan yozuv sifatida qoʻshing. Bu xabar yuborilmadi va saqlanmadi.';
+
+  @override
+  String numberEnding(String last) {
+    return '$last bilan tugaydigan raqam';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Xavfsizlik ogohlantirishini oldim. Bu men edimmi va nima qilishim kerak?';
+
+  @override
+  String get assistantStepScam => 'Xabar tekshirilmoqda';
 }

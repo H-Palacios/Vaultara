@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Šomēnes jāatjauno: {count}, aptuveni {cost}. Pieskarieties, lai redzētu, kas jādara.",
   "monthAheadBodyCountTrips": "Šomēnes jāatjauno: {count}. Braucieni nākamajās 6 nedēļās: {trips}. Pieskarieties, lai redzētu, kas jādara.",
   "monthAheadBodyCostTrips": "Šomēnes jāatjauno: {count}, aptuveni {cost}. Braucieni nākamajās 6 nedēļās: {trips}. Pieskarieties, lai redzētu, kas jādara.",
-  "monthAheadBodyTrips": "Šomēnes nekas nav jāatjauno. Braucieni nākamajās 6 nedēļās: {trips}. Pieskarieties, lai redzētu, kas jādara."
+  "monthAheadBodyTrips": "Šomēnes nekas nav jāatjauno. Braucieni nākamajās 6 nedēļās: {trips}. Pieskarieties, lai redzētu, kas jādara.",
+  "securityTwoStepOffTitle": "Divpakāpju pierakstīšanās tika izslēgta",
+  "securityTwoStepOffBody": "Ja tas nebiji tu, atver Vaultara tagad, lai aizsargātu savu kontu."
 }

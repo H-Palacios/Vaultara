@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Do odnowienia w tym miesiącu: {count}, około {cost}. Dotknij, aby zobaczyć, co zrobić.",
   "monthAheadBodyCountTrips": "Do odnowienia w tym miesiącu: {count}. Podróże w ciągu 6 tygodni: {trips}. Dotknij, aby zobaczyć, co zrobić.",
   "monthAheadBodyCostTrips": "Do odnowienia w tym miesiącu: {count}, około {cost}. Podróże w ciągu 6 tygodni: {trips}. Dotknij, aby zobaczyć, co zrobić.",
-  "monthAheadBodyTrips": "W tym miesiącu nie ma nic do odnowienia. Podróże w ciągu 6 tygodni: {trips}. Dotknij, aby zobaczyć, co zrobić."
+  "monthAheadBodyTrips": "W tym miesiącu nie ma nic do odnowienia. Podróże w ciągu 6 tygodni: {trips}. Dotknij, aby zobaczyć, co zrobić.",
+  "securityTwoStepOffTitle": "Logowanie dwuetapowe zostało wyłączone",
+  "securityTwoStepOffBody": "Jeśli to nie Ty, otwórz teraz Vaultara i zabezpiecz konto."
 }

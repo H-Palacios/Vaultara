@@ -10741,4 +10741,79 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Άνοιξε στην οθόνη σας. Ολοκληρώστε εκεί και μετά πατήστε για να μιλήσετε ξανά.';
+
+  @override
+  String get assistantUndoTitle => 'Αναίρεση της τελευταίας αλλαγής';
+
+  @override
+  String get assistantUndoNothing => 'Δεν υπάρχει τίποτα για αναίρεση σε αυτή τη συνομιλία.';
+
+  @override
+  String get assistantSecurityFixNote => 'Ανοίγει η Ασφάλεια και απόρρητο και ξεκινά αυτή τη διόρθωση.';
+
+  @override
+  String get assistantStopLinksTitle => 'Απενεργοποίηση συνδέσμων κοινοποίησης';
+
+  @override
+  String get assistantStopLinksExpired => 'Σύνδεσμοι που έληξαν και σύνδεσμοι που δεν άνοιξαν ποτέ';
+
+  @override
+  String get assistantStopLinksAll => 'Όλοι οι σύνδεσμοι κοινοποίησης';
+
+  @override
+  String get assistantStopLinksNote => 'Κανείς δεν θα μπορεί πια να ανοίξει αυτούς τους συνδέσμους. Οι εγγραφές σας μένουν ως έχουν.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Σύνδεσμοι που απενεργοποιήθηκαν: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Διατήρηση συνομιλιών για';
+
+  @override
+  String get chatKeepWeek => '1 εβδομάδα';
+
+  @override
+  String get chatKeepMonth => '1 μήνας';
+
+  @override
+  String get chatKeepThreeMonths => '3 μήνες';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Οι συνομιλίες αποθηκεύονται στον λογαριασμό σας για να μπορείτε να επιστρέψετε σε αυτές και μετά διαγράφονται αυτόματα. Διατήρηση συνομιλιών για: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Να μην αποθηκευτεί αυτή η συνομιλία';
+
+  @override
+  String get chatNotSaved => 'Αυτή η συνομιλία δεν αποθηκεύεται. Ό,τι είχε αποθηκευτεί διαγράφηκε.';
+
+  @override
+  String get chatForgetTitle => 'Διαγραφή αυτής της συνομιλίας';
+
+  @override
+  String get chatForgetNote => 'Η συνομιλία διαγράφεται από τον λογαριασμό σας και από την οθόνη.';
+
+  @override
+  String get secretPassword => 'Οι κωδικοί πρόσβασης δεν μπαίνουν ποτέ στη συνομιλία και το Ask Vaultara δεν χρειάζεται ποτέ κανέναν. Το μήνυμα δεν στάλθηκε ούτε αποθηκεύτηκε.';
+
+  @override
+  String get secretCode => 'Οι κωδικοί μίας χρήσης δεν μπαίνουν ποτέ στη συνομιλία. Το Vaultara δεν τους ζητά ποτέ, οπότε μην τους δίνετε σε κανέναν που τους ζητά. Το μήνυμα δεν στάλθηκε ούτε αποθηκεύτηκε.';
+
+  @override
+  String get secretCard => 'Οι αριθμοί καρτών δεν μπαίνουν ποτέ στη συνομιλία. Για να παρακολουθείτε μια κάρτα, προσθέστε τη ως εγγραφή με την ημερομηνία λήξης. Το μήνυμα δεν στάλθηκε ούτε αποθηκεύτηκε.';
+
+  @override
+  String numberEnding(String last) {
+    return 'αριθμός που λήγει σε $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Έλαβα ειδοποίηση ασφαλείας. Ήμουν εγώ και τι πρέπει να κάνω;';
+
+  @override
+  String get assistantStepScam => 'Έλεγχος του μηνύματος';
 }

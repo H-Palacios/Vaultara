@@ -10726,4 +10726,79 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Таны дэлгэц дээр нээгдсэн. Тэнд дуусгаад, дахин ярихын тулд товшино уу.';
+
+  @override
+  String get assistantUndoTitle => 'Сүүлийн өөрчлөлтийг буцаах';
+
+  @override
+  String get assistantUndoNothing => 'Энэ чатад буцаах зүйл алга.';
+
+  @override
+  String get assistantSecurityFixNote => '«Аюулгүй байдал ба нууцлал» нээгдэж энэ засварыг эхлүүлнэ.';
+
+  @override
+  String get assistantStopLinksTitle => 'Хуваалцах холбоосыг унтраах';
+
+  @override
+  String get assistantStopLinksExpired => 'Хугацаа нь дууссан болон хэзээ ч нээгдээгүй холбоосууд';
+
+  @override
+  String get assistantStopLinksAll => 'Бүх хуваалцах холбоос';
+
+  @override
+  String get assistantStopLinksNote => 'Эдгээр холбоосыг хэн ч дахин нээх боломжгүй. Таны бүртгэлүүд хэвээрээ үлдэнэ.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Унтраасан холбоос: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Чатыг хадгалах хугацаа';
+
+  @override
+  String get chatKeepWeek => '1 долоо хоног';
+
+  @override
+  String get chatKeepMonth => '1 сар';
+
+  @override
+  String get chatKeepThreeMonths => '3 сар';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Чатууд та дахин эргэж ирэхийн тулд таны бүртгэлд хадгалагдаж, дараа нь автоматаар устгагдана. Чатыг хадгалах хугацаа: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Энэ чатыг бүү хадгал';
+
+  @override
+  String get chatNotSaved => 'Энэ чат хадгалагдахгүй. Үүнээс хадгалагдсан хэсгийг устгасан.';
+
+  @override
+  String get chatForgetTitle => 'Энэ чатыг мартах';
+
+  @override
+  String get chatForgetNote => 'Чат таны бүртгэлээс болон дэлгэцээс устгагдана.';
+
+  @override
+  String get secretPassword => 'Нууц үгийг хэзээ ч чатад бичдэггүй, Ask Vaultara-д хэзээ ч нууц үг хэрэггүй. Энэ мессежийг илгээгээгүй, хадгалаагүй.';
+
+  @override
+  String get secretCode => 'Нэг удаагийн кодыг хэзээ ч чатад бичдэггүй. Vaultara хэзээ ч тэднийг асуудаггүй тул асуусан хэнд ч код бүү өг. Энэ мессежийг илгээгээгүй, хадгалаагүй.';
+
+  @override
+  String get secretCard => 'Картын дугаарыг хэзээ ч чатад бичдэггүй. Картыг хянахын тулд дуусах огноотой нь бүртгэл болгон нэмнэ үү. Энэ мессежийг илгээгээгүй, хадгалаагүй.';
+
+  @override
+  String numberEnding(String last) {
+    return '$last-аар төгсдөг дугаар';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Надад аюулгүй байдлын сэрэмжлүүлэг ирсэн. Энэ би байсан уу, би юу хийх ёстой вэ?';
+
+  @override
+  String get assistantStepScam => 'Мессежийг шалгаж байна';
 }

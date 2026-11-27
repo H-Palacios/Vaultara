@@ -10672,4 +10672,79 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Đã mở trên màn hình của bạn. Hãy hoàn tất ở đó, rồi chạm để nói tiếp.';
+
+  @override
+  String get assistantUndoTitle => 'Hoàn tác thay đổi gần nhất';
+
+  @override
+  String get assistantUndoNothing => 'Không có gì trong cuộc trò chuyện này để hoàn tác.';
+
+  @override
+  String get assistantSecurityFixNote => 'Bảo mật và quyền riêng tư sẽ mở và bắt đầu sửa mục này.';
+
+  @override
+  String get assistantStopLinksTitle => 'Tắt liên kết chia sẻ';
+
+  @override
+  String get assistantStopLinksExpired => 'Liên kết đã hết hạn và liên kết chưa từng được mở';
+
+  @override
+  String get assistantStopLinksAll => 'Tất cả liên kết chia sẻ';
+
+  @override
+  String get assistantStopLinksNote => 'Không ai có thể mở lại các liên kết này. Hồ sơ của bạn vẫn giữ nguyên.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Liên kết đã tắt: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Giữ cuộc trò chuyện trong';
+
+  @override
+  String get chatKeepWeek => '1 tuần';
+
+  @override
+  String get chatKeepMonth => '1 tháng';
+
+  @override
+  String get chatKeepThreeMonths => '3 tháng';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Cuộc trò chuyện được lưu vào tài khoản để bạn quay lại xem, sau đó tự động bị xóa. Giữ cuộc trò chuyện trong: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Không lưu cuộc trò chuyện này';
+
+  @override
+  String get chatNotSaved => 'Cuộc trò chuyện này không được lưu. Phần đã lưu trước đó đã bị xóa.';
+
+  @override
+  String get chatForgetTitle => 'Quên cuộc trò chuyện này';
+
+  @override
+  String get chatForgetNote => 'Cuộc trò chuyện bị xóa khỏi tài khoản và khỏi màn hình.';
+
+  @override
+  String get secretPassword => 'Mật khẩu không bao giờ được ghi vào cuộc trò chuyện, và Ask Vaultara không bao giờ cần mật khẩu. Tin nhắn này không được gửi hay lưu.';
+
+  @override
+  String get secretCode => 'Mã dùng một lần không bao giờ được ghi vào cuộc trò chuyện. Vaultara không bao giờ hỏi mã, vì vậy đừng đưa mã cho bất kỳ ai hỏi. Tin nhắn này không được gửi hay lưu.';
+
+  @override
+  String get secretCard => 'Số thẻ không bao giờ được ghi vào cuộc trò chuyện. Để theo dõi thẻ, hãy thêm thẻ làm hồ sơ cùng ngày hết hạn. Tin nhắn này không được gửi hay lưu.';
+
+  @override
+  String numberEnding(String last) {
+    return 'số kết thúc bằng $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Tôi nhận được cảnh báo bảo mật. Đó có phải là tôi không, và tôi nên làm gì?';
+
+  @override
+  String get assistantStepScam => 'Đang kiểm tra tin nhắn';
 }

@@ -10736,4 +10736,79 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Li ser ekrana te vekirî ye. Li wir biqedîne, paşê bitepîne da ku dîsa biaxivî.';
+
+  @override
+  String get assistantUndoTitle => 'Guhertina dawî betal bike';
+
+  @override
+  String get assistantUndoNothing => 'Di vê sohbetê de tiştek tune ku betal bibe.';
+
+  @override
+  String get assistantSecurityFixNote => 'Ewlehî û nepenî vedibe û vê sererastkirinê dest pê dike.';
+
+  @override
+  String get assistantStopLinksTitle => 'Girêdanên parvekirinê bigire';
+
+  @override
+  String get assistantStopLinksExpired => 'Girêdanên qediyayî û girêdanên ku qet nehatine vekirin';
+
+  @override
+  String get assistantStopLinksAll => 'Hemû girêdanên parvekirinê';
+
+  @override
+  String get assistantStopLinksNote => 'Êdî kes nikare van girêdanan veke. Tomarên te wekî xwe dimînin.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Girêdanên hatine girtin: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Sohbetan bihêle ji bo';
+
+  @override
+  String get chatKeepWeek => '1 hefte';
+
+  @override
+  String get chatKeepMonth => '1 meh';
+
+  @override
+  String get chatKeepThreeMonths => '3 meh';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Sohbet di hesabê te de têne tomarkirin da ku tu vegerî ser wan, paşê bixweber têne jêbirin. Sohbetan bihêle ji bo: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Vê sohbetê tomar neke';
+
+  @override
+  String get chatNotSaved => 'Ev sohbet nayê tomarkirin. Ya ku jê hatibû tomarkirin hat jêbirin.';
+
+  @override
+  String get chatForgetTitle => 'Vê sohbetê ji bîr bike';
+
+  @override
+  String get chatForgetNote => 'Sohbet ji hesabê te tê jêbirin û ji ekranê tê paqijkirin.';
+
+  @override
+  String get secretPassword => 'Şîfre qet di sohbetê de nayên nivîsandin, û Ask Vaultara qet pêdiviya wê nîne. Ev peyam nehat şandin û nehat tomarkirin.';
+
+  @override
+  String get secretCode => 'Kodên yekcarî qet di sohbetê de nayên nivîsandin. Vaultara qet wan naxwaze, ji ber vê yekê kodê nede kesê ku wê dixwaze. Ev peyam nehat şandin û nehat tomarkirin.';
+
+  @override
+  String get secretCard => 'Hejmarên kartê qet di sohbetê de nayên nivîsandin. Ji bo şopandina kartekê, wê wekî tomarek bi dîroka qedandinê lê zêde bike. Ev peyam nehat şandin û nehat tomarkirin.';
+
+  @override
+  String numberEnding(String last) {
+    return 'hejmara ku bi $last diqede';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Min hişyariyeke ewlehiyê wergirt. Ma ez bûm, û divê ez çi bikim?';
+
+  @override
+  String get assistantStepScam => 'Peyam tê kontrolkirin';
 }

@@ -10816,4 +10816,79 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Otvoreno je na zaslonu. Završite tamo, a zatim dodirnite da ponovno razgovarate.';
+
+  @override
+  String get assistantUndoTitle => 'Poništi zadnju promjenu';
+
+  @override
+  String get assistantUndoNothing => 'U ovom razgovoru nema ničega za poništiti.';
+
+  @override
+  String get assistantSecurityFixNote => 'Otvara se Sigurnost i privatnost i pokreće ovaj popravak.';
+
+  @override
+  String get assistantStopLinksTitle => 'Isključi poveznice za dijeljenje';
+
+  @override
+  String get assistantStopLinksExpired => 'Istekle poveznice i poveznice koje nitko nije otvorio';
+
+  @override
+  String get assistantStopLinksAll => 'Sve poveznice za dijeljenje';
+
+  @override
+  String get assistantStopLinksNote => 'Nitko više ne može otvoriti ove poveznice. Vaši zapisi ostaju kakvi jesu.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Isključene poveznice: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Čuvaj razgovore';
+
+  @override
+  String get chatKeepWeek => '1 tjedan';
+
+  @override
+  String get chatKeepMonth => '1 mjesec';
+
+  @override
+  String get chatKeepThreeMonths => '3 mjeseca';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Razgovori se spremaju na vaš račun da im se možete vratiti, a zatim se automatski brišu. Čuvaj razgovore: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Ne spremaj ovaj razgovor';
+
+  @override
+  String get chatNotSaved => 'Ovaj se razgovor ne sprema. Ono što je bilo spremljeno je izbrisano.';
+
+  @override
+  String get chatForgetTitle => 'Zaboravi ovaj razgovor';
+
+  @override
+  String get chatForgetNote => 'Razgovor se briše s vašeg računa i uklanja sa zaslona.';
+
+  @override
+  String get secretPassword => 'Lozinke nikad ne idu u razgovor, a Ask Vaultara nikad ne treba lozinku. Ova poruka nije poslana ni spremljena.';
+
+  @override
+  String get secretCode => 'Jednokratni kodovi nikad ne idu u razgovor. Vaultara ih nikad ne traži, pa ne dajte kod nikome tko ga traži. Ova poruka nije poslana ni spremljena.';
+
+  @override
+  String get secretCard => 'Brojevi kartica nikad ne idu u razgovor. Za praćenje kartice dodajte je kao zapis s datumom isteka. Ova poruka nije poslana ni spremljena.';
+
+  @override
+  String numberEnding(String last) {
+    return 'broj koji završava na $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Dobio sam sigurnosno upozorenje. Jesam li to bio ja i što trebam učiniti?';
+
+  @override
+  String get assistantStepScam => 'Provjera poruke';
 }

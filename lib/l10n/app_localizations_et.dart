@@ -10741,4 +10741,79 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'See on sinu ekraanil avatud. Lõpeta seal ja puuduta siis, et uuesti rääkida.';
+
+  @override
+  String get assistantUndoTitle => 'Võta viimane muudatus tagasi';
+
+  @override
+  String get assistantUndoNothing => 'Selles vestluses pole midagi tagasi võtta.';
+
+  @override
+  String get assistantSecurityFixNote => 'Avaneb Turvalisus ja privaatsus ning alustab selle parandusega.';
+
+  @override
+  String get assistantStopLinksTitle => 'Lülita jagamislingid välja';
+
+  @override
+  String get assistantStopLinksExpired => 'Aegunud lingid ja lingid, mida pole kunagi avatud';
+
+  @override
+  String get assistantStopLinksAll => 'Kõik jagamislingid';
+
+  @override
+  String get assistantStopLinksNote => 'Keegi ei saa neid linke enam avada. Sinu kirjed jäävad samaks.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Välja lülitatud linke: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Hoia vestlusi';
+
+  @override
+  String get chatKeepWeek => '1 nädal';
+
+  @override
+  String get chatKeepMonth => '1 kuu';
+
+  @override
+  String get chatKeepThreeMonths => '3 kuud';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Vestlused salvestatakse sinu kontole, et saaksid nende juurde tagasi tulla, ja kustutatakse seejärel automaatselt. Hoia vestlusi: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Ära salvesta seda vestlust';
+
+  @override
+  String get chatNotSaved => 'Seda vestlust ei salvestata. Mis sellest oli salvestatud, on kustutatud.';
+
+  @override
+  String get chatForgetTitle => 'Unusta see vestlus';
+
+  @override
+  String get chatForgetNote => 'Vestlus kustutatakse sinu kontolt ja eemaldatakse ekraanilt.';
+
+  @override
+  String get secretPassword => 'Paroolid ei kuulu kunagi vestlusesse ja Ask Vaultara ei vaja kunagi parooli. Seda sõnumit ei saadetud ega salvestatud.';
+
+  @override
+  String get secretCode => 'Ühekordsed koodid ei kuulu kunagi vestlusesse. Vaultara ei küsi neid kunagi, nii et ära anna koodi kellelegi, kes seda küsib. Seda sõnumit ei saadetud ega salvestatud.';
+
+  @override
+  String get secretCard => 'Kaardinumbrid ei kuulu kunagi vestlusesse. Kaardi jälgimiseks lisa see kirjena koos aegumiskuupäevaga. Seda sõnumit ei saadetud ega salvestatud.';
+
+  @override
+  String numberEnding(String last) {
+    return 'number, mis lõpeb $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Sain turvahoiatuse. Kas see olin mina ja mida ma peaksin tegema?';
+
+  @override
+  String get assistantStepScam => 'Sõnumi kontrollimine';
 }

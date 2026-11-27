@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Skal fornyes denne måned: {count}, ca. {cost}. Tryk for at se, hvad du skal gøre.",
   "monthAheadBodyCountTrips": "Skal fornyes denne måned: {count}. Rejser de næste 6 uger: {trips}. Tryk for at se, hvad du skal gøre.",
   "monthAheadBodyCostTrips": "Skal fornyes denne måned: {count}, ca. {cost}. Rejser de næste 6 uger: {trips}. Tryk for at se, hvad du skal gøre.",
-  "monthAheadBodyTrips": "Intet skal fornyes denne måned. Rejser de næste 6 uger: {trips}. Tryk for at se, hvad du skal gøre."
+  "monthAheadBodyTrips": "Intet skal fornyes denne måned. Rejser de næste 6 uger: {trips}. Tryk for at se, hvad du skal gøre.",
+  "securityTwoStepOffTitle": "Login i to trin er slået fra",
+  "securityTwoStepOffBody": "Hvis det ikke var dig, så åbn Vaultara nu og beskyt din konto."
 }

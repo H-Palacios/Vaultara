@@ -13736,5 +13736,115 @@
   "talkFinishOnScreen": "It's open on your screen. Finish there, then tap to talk again.",
   "@talkFinishOnScreen": {
     "description": "Talk mode, said aloud after a confirmed card opened another screen or app (Your devices, the calendar, the share sheet) where the user finishes. Talk mode then stops listening until they tap."
+  },
+  "assistantUndoTitle": "Undo the last change",
+  "@assistantUndoTitle": {
+    "description": "Ask Vaultara card title: undo the last change made from this chat."
+  },
+  "assistantUndoNothing": "Nothing from this chat can be undone.",
+  "@assistantUndoNothing": {
+    "description": "Ask Vaultara undo card and snack bar: no change from this chat can be undone."
+  },
+  "assistantSecurityFixNote": "Security and privacy opens and starts this fix.",
+  "@assistantSecurityFixNote": {
+    "description": "Ask Vaultara security fix card: Confirm opens the Security and privacy screen and starts that check-up fix."
+  },
+  "assistantStopLinksTitle": "Turn off share links",
+  "@assistantStopLinksTitle": {
+    "description": "Ask Vaultara card title: turn off share links so nobody can open them."
+  },
+  "assistantStopLinksExpired": "Expired links and links never opened",
+  "@assistantStopLinksExpired": {
+    "description": "Ask Vaultara turn off links card: which links, the expired ones and the ones nobody opened."
+  },
+  "assistantStopLinksAll": "Every share link",
+  "@assistantStopLinksAll": {
+    "description": "Ask Vaultara turn off links card: which links, all of them."
+  },
+  "assistantStopLinksNote": "Nobody can open these links again. Your records stay as they are.",
+  "@assistantStopLinksNote": {
+    "description": "Ask Vaultara turn off links card: what Confirm does."
+  },
+  "assistantStopLinksDone": "Links turned off: {count}.",
+  "@assistantStopLinksDone": {
+    "description": "Snack bar after share links were turned off. {count} is how many.",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "chatKeepTitle": "Keep chats for",
+  "@chatKeepTitle": {
+    "description": "Ask Vaultara chats panel menu item and sheet title: how long saved chats are kept. Followed by a choice such as 1 week."
+  },
+  "chatKeepWeek": "1 week",
+  "@chatKeepWeek": {
+    "description": "How long chats are kept: one week."
+  },
+  "chatKeepMonth": "1 month",
+  "@chatKeepMonth": {
+    "description": "How long chats are kept: one month."
+  },
+  "chatKeepThreeMonths": "3 months",
+  "@chatKeepThreeMonths": {
+    "description": "How long chats are kept: three months."
+  },
+  "chatKeepNote": "Chats are saved to your account so you can come back to them, then deleted automatically. Keep chats for: {period}.",
+  "@chatKeepNote": {
+    "description": "Ask Vaultara chats panel footer. {period} is one of the keep choices, such as 1 week.",
+    "placeholders": {
+      "period": {
+        "type": "String",
+        "example": "3 months"
+      }
+    }
+  },
+  "chatDontSave": "Don't save this chat",
+  "@chatDontSave": {
+    "description": "Ask Vaultara: menu item and card title to stop saving the open chat."
+  },
+  "chatNotSaved": "This chat isn't saved. What was saved of it is deleted.",
+  "@chatNotSaved": {
+    "description": "Ask Vaultara: the open chat is no longer saved and what was saved is deleted."
+  },
+  "chatForgetTitle": "Forget this chat",
+  "@chatForgetTitle": {
+    "description": "Ask Vaultara card title: delete the open chat from the account."
+  },
+  "chatForgetNote": "The chat is deleted from your account and cleared from the screen.",
+  "@chatForgetNote": {
+    "description": "Ask Vaultara forget chat card: what Confirm does."
+  },
+  "secretPassword": "Passwords never go in the chat, and Ask Vaultara never needs one. This message wasn't sent or saved.",
+  "@secretPassword": {
+    "description": "Shown in Ask Vaultara instead of sending a message that has a password in it."
+  },
+  "secretCode": "One-time codes never go in the chat. Vaultara never asks for them, so don't give one to anyone who does. This message wasn't sent or saved.",
+  "@secretCode": {
+    "description": "Shown in Ask Vaultara instead of sending a message that has a one-time code in it."
+  },
+  "secretCard": "Card numbers never go in the chat. To track a card, add it as a record with its expiry date. This message wasn't sent or saved.",
+  "@secretCard": {
+    "description": "Shown in Ask Vaultara instead of sending a message that has a card number in it."
+  },
+  "numberEnding": "number ending in {last}",
+  "@numberEnding": {
+    "description": "Read aloud in Talk mode instead of a long ID or passport number. {last} is its last four characters, spoken one by one.",
+    "placeholders": {
+      "last": {
+        "type": "String",
+        "example": "6 7 8 9"
+      }
+    }
+  },
+  "securityAlertQuestion": "I got a security alert. Was it me, and what should I do?",
+  "@securityAlertQuestion": {
+    "description": "Sent to Ask Vaultara when a security alert notification is tapped, as if the user typed it."
+  },
+  "assistantStepScam": "Checking the message",
+  "@assistantStepScam": {
+    "description": "Ask Vaultara status while it checks a message for signs of a scam."
   }
 }

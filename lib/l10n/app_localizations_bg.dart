@@ -10737,4 +10737,79 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Отворено е на екрана. Довършете там и докоснете, за да говорите отново.';
+
+  @override
+  String get assistantUndoTitle => 'Отмяна на последната промяна';
+
+  @override
+  String get assistantUndoNothing => 'В този чат няма нищо за отмяна.';
+
+  @override
+  String get assistantSecurityFixNote => 'Отваря се „Сигурност и поверителност“ и започва тази поправка.';
+
+  @override
+  String get assistantStopLinksTitle => 'Изключване на връзките за споделяне';
+
+  @override
+  String get assistantStopLinksExpired => 'Изтекли връзки и връзки, които никой не е отварял';
+
+  @override
+  String get assistantStopLinksAll => 'Всички връзки за споделяне';
+
+  @override
+  String get assistantStopLinksNote => 'Никой вече няма да може да отвори тези връзки. Записите ви остават същите.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Изключени връзки: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Пазене на чатовете';
+
+  @override
+  String get chatKeepWeek => '1 седмица';
+
+  @override
+  String get chatKeepMonth => '1 месец';
+
+  @override
+  String get chatKeepThreeMonths => '3 месеца';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Чатовете се запазват в профила ви, за да можете да се върнете към тях, след което се изтриват автоматично. Пазене на чатовете: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Без запазване на този чат';
+
+  @override
+  String get chatNotSaved => 'Този чат не се запазва. Запазеното от него е изтрито.';
+
+  @override
+  String get chatForgetTitle => 'Забравяне на този чат';
+
+  @override
+  String get chatForgetNote => 'Чатът се изтрива от профила ви и от екрана.';
+
+  @override
+  String get secretPassword => 'Пароли никога не се пишат в чата и Ask Vaultara никога не се нуждае от парола. Съобщението не е изпратено, нито запазено.';
+
+  @override
+  String get secretCode => 'Еднократни кодове никога не се пишат в чата. Vaultara никога не ги иска, затова не давайте код на никого, който го иска. Съобщението не е изпратено, нито запазено.';
+
+  @override
+  String get secretCard => 'Номера на карти никога не се пишат в чата. За да следите карта, добавете я като запис с датата на изтичане. Съобщението не е изпратено, нито запазено.';
+
+  @override
+  String numberEnding(String last) {
+    return 'номер, завършващ на $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Получих предупреждение за сигурност. Аз ли бях и какво да направя?';
+
+  @override
+  String get assistantStepScam => 'Проверка на съобщението';
 }

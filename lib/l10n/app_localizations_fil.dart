@@ -10729,4 +10729,79 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Nakabukas na ito sa screen mo. Tapusin mo roon, saka i-tap para makipag-usap ulit.';
+
+  @override
+  String get assistantUndoTitle => 'I-undo ang huling pagbabago';
+
+  @override
+  String get assistantUndoNothing => 'Walang maa-undo mula sa chat na ito.';
+
+  @override
+  String get assistantSecurityFixNote => 'Bubukas ang Seguridad at privacy at sisimulan ang ayos na ito.';
+
+  @override
+  String get assistantStopLinksTitle => 'I-off ang mga share link';
+
+  @override
+  String get assistantStopLinksExpired => 'Mga link na nag-expire at mga link na hindi kailanman binuksan';
+
+  @override
+  String get assistantStopLinksAll => 'Lahat ng share link';
+
+  @override
+  String get assistantStopLinksNote => 'Wala nang makakapagbukas ng mga link na ito. Mananatili ang iyong mga record.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Mga link na na-off: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Itago ang mga chat nang';
+
+  @override
+  String get chatKeepWeek => '1 linggo';
+
+  @override
+  String get chatKeepMonth => '1 buwan';
+
+  @override
+  String get chatKeepThreeMonths => '3 buwan';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Naka-save ang mga chat sa iyong account para mabalikan mo, saka awtomatikong binubura. Itago ang mga chat nang: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Huwag i-save ang chat na ito';
+
+  @override
+  String get chatNotSaved => 'Hindi sine-save ang chat na ito. Nabura na ang na-save mula rito.';
+
+  @override
+  String get chatForgetTitle => 'Kalimutan ang chat na ito';
+
+  @override
+  String get chatForgetNote => 'Binubura ang chat sa iyong account at inaalis sa screen.';
+
+  @override
+  String get secretPassword => 'Hindi kailanman isinusulat ang password sa chat, at hindi kailanman kailangan ng Ask Vaultara ng password. Hindi naipadala o na-save ang mensaheng ito.';
+
+  @override
+  String get secretCode => 'Hindi kailanman isinusulat ang one-time code sa chat. Hindi ito kailanman hinihingi ng Vaultara, kaya huwag itong ibigay sa sinumang humihingi. Hindi naipadala o na-save ang mensaheng ito.';
+
+  @override
+  String get secretCard => 'Hindi kailanman isinusulat ang numero ng card sa chat. Para subaybayan ang isang card, idagdag ito bilang record kasama ang petsa ng pag-expire. Hindi naipadala o na-save ang mensaheng ito.';
+
+  @override
+  String numberEnding(String last) {
+    return 'numerong nagtatapos sa $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Nakatanggap ako ng security alert. Ako ba iyon, at ano ang dapat kong gawin?';
+
+  @override
+  String get assistantStepScam => 'Sinusuri ang mensahe';
 }

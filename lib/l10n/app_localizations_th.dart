@@ -10660,4 +10660,79 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'เปิดอยู่บนหน้าจอแล้ว ทำให้เสร็จที่นั่น แล้วแตะเพื่อพูดอีกครั้ง';
+
+  @override
+  String get assistantUndoTitle => 'เลิกทำการเปลี่ยนแปลงล่าสุด';
+
+  @override
+  String get assistantUndoNothing => 'ไม่มีอะไรในแชทนี้ให้เลิกทำ';
+
+  @override
+  String get assistantSecurityFixNote => 'ความปลอดภัยและความเป็นส่วนตัวจะเปิดขึ้นและเริ่มการแก้ไขนี้';
+
+  @override
+  String get assistantStopLinksTitle => 'ปิดลิงก์แชร์';
+
+  @override
+  String get assistantStopLinksExpired => 'ลิงก์ที่หมดอายุและลิงก์ที่ไม่เคยถูกเปิด';
+
+  @override
+  String get assistantStopLinksAll => 'ลิงก์แชร์ทั้งหมด';
+
+  @override
+  String get assistantStopLinksNote => 'จะไม่มีใครเปิดลิงก์เหล่านี้ได้อีก บันทึกของคุณยังคงเหมือนเดิม';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'ลิงก์ที่ปิดแล้ว: $count';
+  }
+
+  @override
+  String get chatKeepTitle => 'เก็บแชทไว้';
+
+  @override
+  String get chatKeepWeek => '1 สัปดาห์';
+
+  @override
+  String get chatKeepMonth => '1 เดือน';
+
+  @override
+  String get chatKeepThreeMonths => '3 เดือน';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'แชทจะถูกบันทึกในบัญชีของคุณเพื่อให้กลับมาดูได้ แล้วจะถูกลบโดยอัตโนมัติ เก็บแชทไว้: $period';
+  }
+
+  @override
+  String get chatDontSave => 'ไม่ต้องบันทึกแชทนี้';
+
+  @override
+  String get chatNotSaved => 'แชทนี้ไม่ถูกบันทึก ส่วนที่เคยบันทึกไว้ถูกลบแล้ว';
+
+  @override
+  String get chatForgetTitle => 'ลืมแชทนี้';
+
+  @override
+  String get chatForgetNote => 'แชทจะถูกลบออกจากบัญชีและหน้าจอของคุณ';
+
+  @override
+  String get secretPassword => 'ห้ามพิมพ์รหัสผ่านในแชท และ Ask Vaultara ไม่เคยต้องใช้รหัสผ่าน ข้อความนี้ไม่ได้ถูกส่งหรือบันทึก';
+
+  @override
+  String get secretCode => 'ห้ามพิมพ์รหัสแบบใช้ครั้งเดียวในแชท Vaultara ไม่เคยขอรหัสเหล่านี้ ดังนั้นอย่าให้รหัสกับใครที่ขอ ข้อความนี้ไม่ได้ถูกส่งหรือบันทึก';
+
+  @override
+  String get secretCard => 'ห้ามพิมพ์หมายเลขบัตรในแชท หากต้องการติดตามบัตร ให้เพิ่มเป็นบันทึกพร้อมวันหมดอายุ ข้อความนี้ไม่ได้ถูกส่งหรือบันทึก';
+
+  @override
+  String numberEnding(String last) {
+    return 'หมายเลขลงท้ายด้วย $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'ฉันได้รับการแจ้งเตือนความปลอดภัย นั่นคือฉันหรือเปล่า และฉันควรทำอย่างไร';
+
+  @override
+  String get assistantStepScam => 'กำลังตรวจสอบข้อความ';
 }

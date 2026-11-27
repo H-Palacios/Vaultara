@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "לחידוש החודש: {count}, בערך {cost}. הקש כדי לראות מה לעשות.",
   "monthAheadBodyCountTrips": "לחידוש החודש: {count}. נסיעות ב-6 השבועות הקרובים: {trips}. הקש כדי לראות מה לעשות.",
   "monthAheadBodyCostTrips": "לחידוש החודש: {count}, בערך {cost}. נסיעות ב-6 השבועות הקרובים: {trips}. הקש כדי לראות מה לעשות.",
-  "monthAheadBodyTrips": "אין מה לחדש החודש. נסיעות ב-6 השבועות הקרובים: {trips}. הקש כדי לראות מה לעשות."
+  "monthAheadBodyTrips": "אין מה לחדש החודש. נסיעות ב-6 השבועות הקרובים: {trips}. הקש כדי לראות מה לעשות.",
+  "securityTwoStepOffTitle": "הכניסה בשני שלבים כובתה",
+  "securityTwoStepOffBody": "אם זה לא היית אתה, פתח את Vaultara עכשיו כדי לאבטח את החשבון."
 }

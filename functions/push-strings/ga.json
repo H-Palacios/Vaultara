@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Le hathnuachan an mhí seo: {count}, thart ar {cost}. Tapáil chun a fheiceáil cad atá le déanamh.",
   "monthAheadBodyCountTrips": "Le hathnuachan an mhí seo: {count}. Turais sna 6 seachtaine atá romhainn: {trips}. Tapáil chun a fheiceáil cad atá le déanamh.",
   "monthAheadBodyCostTrips": "Le hathnuachan an mhí seo: {count}, thart ar {cost}. Turais sna 6 seachtaine atá romhainn: {trips}. Tapáil chun a fheiceáil cad atá le déanamh.",
-  "monthAheadBodyTrips": "Níl aon rud le hathnuachan an mhí seo. Turais sna 6 seachtaine atá romhainn: {trips}. Tapáil chun a fheiceáil cad atá le déanamh."
+  "monthAheadBodyTrips": "Níl aon rud le hathnuachan an mhí seo. Turais sna 6 seachtaine atá romhainn: {trips}. Tapáil chun a fheiceáil cad atá le déanamh.",
+  "securityTwoStepOffTitle": "Múchadh síniú isteach dhá chéim",
+  "securityTwoStepOffBody": "Murarbh tusa a bhí ann, oscail Vaultara anois chun do chuntas a dhaingniú."
 }

@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Uusittavaa tässä kuussa: {count}, noin {cost}. Napauta ja katso, mitä tehdä.",
   "monthAheadBodyCountTrips": "Uusittavaa tässä kuussa: {count}. Matkoja seuraavan 6 viikon aikana: {trips}. Napauta ja katso, mitä tehdä.",
   "monthAheadBodyCostTrips": "Uusittavaa tässä kuussa: {count}, noin {cost}. Matkoja seuraavan 6 viikon aikana: {trips}. Napauta ja katso, mitä tehdä.",
-  "monthAheadBodyTrips": "Ei uusittavaa tässä kuussa. Matkoja seuraavan 6 viikon aikana: {trips}. Napauta ja katso, mitä tehdä."
+  "monthAheadBodyTrips": "Ei uusittavaa tässä kuussa. Matkoja seuraavan 6 viikon aikana: {trips}. Napauta ja katso, mitä tehdä.",
+  "securityTwoStepOffTitle": "Kaksivaiheinen kirjautuminen poistettiin käytöstä",
+  "securityTwoStepOffBody": "Jos se et ollut sinä, avaa Vaultara nyt ja suojaa tilisi."
 }

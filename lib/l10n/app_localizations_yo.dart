@@ -10684,4 +10684,79 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Ó ti ṣí sílẹ̀ lórí ìbòjú rẹ. Parí rẹ̀ níbẹ̀, lẹ́yìn náà tẹ̀ ẹ́ láti tún sọ̀rọ̀.';
+
+  @override
+  String get assistantUndoTitle => 'Fagilé ìyípadà tó kẹ́yìn';
+
+  @override
+  String get assistantUndoNothing => 'Kò sí ohun tí a lè fagilé nínú ìjíròrò yìí.';
+
+  @override
+  String get assistantSecurityFixNote => 'Ààbò àti àṣírí yóò ṣí, yóò sì bẹ̀rẹ̀ àtúnṣe yìí.';
+
+  @override
+  String get assistantStopLinksTitle => 'Pa àwọn ìjápọ̀ pínpín';
+
+  @override
+  String get assistantStopLinksExpired => 'Àwọn ìjápọ̀ tí ó ti parí àti àwọn tí a kò ṣí rí';
+
+  @override
+  String get assistantStopLinksAll => 'Gbogbo ìjápọ̀ pínpín';
+
+  @override
+  String get assistantStopLinksNote => 'Kò sí ẹni tí yóò lè ṣí àwọn ìjápọ̀ wọ̀nyí mọ́. Àwọn àkọsílẹ̀ rẹ yóò wà bí wọ́n ṣe wà.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Àwọn ìjápọ̀ tí a pa: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Tọ́jú ìjíròrò fún';
+
+  @override
+  String get chatKeepWeek => 'Ọ̀sẹ̀ 1';
+
+  @override
+  String get chatKeepMonth => 'Oṣù 1';
+
+  @override
+  String get chatKeepThreeMonths => 'Oṣù 3';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'A máa ń fi ìjíròrò pamọ́ sínú àkáǹtì rẹ kí o lè padà sí wọn, lẹ́yìn náà a ó pa wọ́n rẹ́ fúnra wọn. Tọ́jú ìjíròrò fún: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Má ṣe fi ìjíròrò yìí pamọ́';
+
+  @override
+  String get chatNotSaved => 'A kò fi ìjíròrò yìí pamọ́. A ti pa ohun tí a fi pamọ́ nínú rẹ̀ rẹ́.';
+
+  @override
+  String get chatForgetTitle => 'Gbàgbé ìjíròrò yìí';
+
+  @override
+  String get chatForgetNote => 'A ó pa ìjíròrò náà rẹ́ kúrò nínú àkáǹtì rẹ àti lójú ìbòjú.';
+
+  @override
+  String get secretPassword => 'A kì í kọ ọ̀rọ̀ aṣínà sínú ìjíròrò, Ask Vaultara kò sì nílò ọ̀kan rí. A kò fi ìfiránṣẹ́ yìí ránṣẹ́ tàbí pamọ́.';
+
+  @override
+  String get secretCode => 'A kì í kọ kóòdù ẹ̀ẹ̀kan sínú ìjíròrò. Vaultara kò béèrè fún wọn rí, nítorí náà má ṣe fún ẹnikẹ́ni tó bá béèrè. A kò fi ìfiránṣẹ́ yìí ránṣẹ́ tàbí pamọ́.';
+
+  @override
+  String get secretCard => 'A kì í kọ nọ́ńbà káàdì sínú ìjíròrò. Láti tọpinpin káàdì, fi kún un gẹ́gẹ́ bí àkọsílẹ̀ pẹ̀lú ọjọ́ ìparí rẹ̀. A kò fi ìfiránṣẹ́ yìí ránṣẹ́ tàbí pamọ́.';
+
+  @override
+  String numberEnding(String last) {
+    return 'nọ́ńbà tó parí pẹ̀lú $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Mo gba ìkìlọ̀ ààbò. Ṣé èmi ni, kí ni kí n ṣe?';
+
+  @override
+  String get assistantStepScam => 'A ń ṣàyẹ̀wò ìfiránṣẹ́ náà';
 }

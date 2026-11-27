@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Da rinnovare questo mese: {count}, circa {cost}. Tocca per vedere cosa fare.",
   "monthAheadBodyCountTrips": "Da rinnovare questo mese: {count}. Viaggi nelle prossime 6 settimane: {trips}. Tocca per vedere cosa fare.",
   "monthAheadBodyCostTrips": "Da rinnovare questo mese: {count}, circa {cost}. Viaggi nelle prossime 6 settimane: {trips}. Tocca per vedere cosa fare.",
-  "monthAheadBodyTrips": "Niente da rinnovare questo mese. Viaggi nelle prossime 6 settimane: {trips}. Tocca per vedere cosa fare."
+  "monthAheadBodyTrips": "Niente da rinnovare questo mese. Viaggi nelle prossime 6 settimane: {trips}. Tocca per vedere cosa fare.",
+  "securityTwoStepOffTitle": "L'accesso in due passaggi è stato disattivato",
+  "securityTwoStepOffBody": "Se non sei stato tu, apri subito Vaultara per proteggere il tuo account."
 }

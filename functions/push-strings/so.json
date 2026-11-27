@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Si loo cusboonaysiiyo bishan: {count}, qiyaastii {cost}. Taabo si aad u aragto waxa la sameeyo.",
   "monthAheadBodyCountTrips": "Si loo cusboonaysiiyo bishan: {count}. Safarrada 6-da toddobaad ee soo socda: {trips}. Taabo si aad u aragto waxa la sameeyo.",
   "monthAheadBodyCostTrips": "Si loo cusboonaysiiyo bishan: {count}, qiyaastii {cost}. Safarrada 6-da toddobaad ee soo socda: {trips}. Taabo si aad u aragto waxa la sameeyo.",
-  "monthAheadBodyTrips": "Wax la cusboonaysiinayo ma jiro bishan. Safarrada 6-da toddobaad ee soo socda: {trips}. Taabo si aad u aragto waxa la sameeyo."
+  "monthAheadBodyTrips": "Wax la cusboonaysiinayo ma jiro bishan. Safarrada 6-da toddobaad ee soo socda: {trips}. Taabo si aad u aragto waxa la sameeyo.",
+  "securityTwoStepOffTitle": "Gelitaanka laba-tallaabo waa la damiyay",
+  "securityTwoStepOffBody": "Haddii aanad adigu ahayn, hadda fur Vaultara si aad u sugto akoonkaaga."
 }

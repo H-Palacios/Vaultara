@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Atnaujinti šį mėnesį: {count}, apie {cost}. Palieskite ir pažiūrėkite, ką daryti.",
   "monthAheadBodyCountTrips": "Atnaujinti šį mėnesį: {count}. Kelionės per ateinančias 6 savaites: {trips}. Palieskite ir pažiūrėkite, ką daryti.",
   "monthAheadBodyCostTrips": "Atnaujinti šį mėnesį: {count}, apie {cost}. Kelionės per ateinančias 6 savaites: {trips}. Palieskite ir pažiūrėkite, ką daryti.",
-  "monthAheadBodyTrips": "Šį mėnesį nieko nereikia atnaujinti. Kelionės per ateinančias 6 savaites: {trips}. Palieskite ir pažiūrėkite, ką daryti."
+  "monthAheadBodyTrips": "Šį mėnesį nieko nereikia atnaujinti. Kelionės per ateinančias 6 savaites: {trips}. Palieskite ir pažiūrėkite, ką daryti.",
+  "securityTwoStepOffTitle": "Dviejų veiksmų prisijungimas išjungtas",
+  "securityTwoStepOffBody": "Jei tai buvai ne tu, atidaryk Vaultara dabar ir apsaugok paskyrą."
 }

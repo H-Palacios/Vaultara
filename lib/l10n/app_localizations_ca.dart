@@ -10741,4 +10741,79 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Està obert a la pantalla. Acaba-ho allà i després toca per tornar a parlar.';
+
+  @override
+  String get assistantUndoTitle => 'Desfés l\'últim canvi';
+
+  @override
+  String get assistantUndoNothing => 'No hi ha res d\'aquest xat per desfer.';
+
+  @override
+  String get assistantSecurityFixNote => 'S\'obre Seguretat i privadesa i comença aquesta correcció.';
+
+  @override
+  String get assistantStopLinksTitle => 'Desactiva els enllaços per compartir';
+
+  @override
+  String get assistantStopLinksExpired => 'Enllaços caducats i enllaços que no s\'han obert mai';
+
+  @override
+  String get assistantStopLinksAll => 'Tots els enllaços per compartir';
+
+  @override
+  String get assistantStopLinksNote => 'Ningú no podrà tornar a obrir aquests enllaços. Els teus registres queden igual.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Enllaços desactivats: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Conserva els xats durant';
+
+  @override
+  String get chatKeepWeek => '1 setmana';
+
+  @override
+  String get chatKeepMonth => '1 mes';
+
+  @override
+  String get chatKeepThreeMonths => '3 mesos';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Els xats es desen al teu compte perquè hi puguis tornar i després s\'esborren automàticament. Conserva els xats durant: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'No desis aquest xat';
+
+  @override
+  String get chatNotSaved => 'Aquest xat no es desa. El que s\'havia desat s\'ha esborrat.';
+
+  @override
+  String get chatForgetTitle => 'Oblida aquest xat';
+
+  @override
+  String get chatForgetNote => 'El xat s\'esborra del teu compte i desapareix de la pantalla.';
+
+  @override
+  String get secretPassword => 'Les contrasenyes no van mai al xat, i Ask Vaultara no en necessita mai cap. Aquest missatge no s\'ha enviat ni desat.';
+
+  @override
+  String get secretCode => 'Els codis d\'un sol ús no van mai al xat. Vaultara no te\'ls demana mai, així que no en donis cap a qui te\'l demani. Aquest missatge no s\'ha enviat ni desat.';
+
+  @override
+  String get secretCard => 'Els números de targeta no van mai al xat. Per seguir una targeta, afegeix-la com a registre amb la data de caducitat. Aquest missatge no s\'ha enviat ni desat.';
+
+  @override
+  String numberEnding(String last) {
+    return 'número acabat en $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'He rebut una alerta de seguretat. Era jo, i què he de fer?';
+
+  @override
+  String get assistantStepScam => 'S\'està revisant el missatge';
 }

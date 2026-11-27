@@ -10741,4 +10741,79 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Zure pantailan irekita dago. Amaitu han, eta sakatu berriro hitz egiteko.';
+
+  @override
+  String get assistantUndoTitle => 'Desegin azken aldaketa';
+
+  @override
+  String get assistantUndoNothing => 'Txat honetan ez dago desegiteko ezer.';
+
+  @override
+  String get assistantSecurityFixNote => 'Segurtasuna eta pribatutasuna irekiko da eta konponketa hau hasiko du.';
+
+  @override
+  String get assistantStopLinksTitle => 'Desaktibatu partekatzeko estekak';
+
+  @override
+  String get assistantStopLinksExpired => 'Iraungitako estekak eta inoiz ireki gabeko estekak';
+
+  @override
+  String get assistantStopLinksAll => 'Partekatzeko esteka guztiak';
+
+  @override
+  String get assistantStopLinksNote => 'Inork ezingo ditu esteka hauek berriro ireki. Zure erregistroak dauden bezala geratzen dira.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Desaktibatutako estekak: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Gorde txatak';
+
+  @override
+  String get chatKeepWeek => 'Aste 1';
+
+  @override
+  String get chatKeepMonth => 'Hilabete 1';
+
+  @override
+  String get chatKeepThreeMonths => '3 hilabete';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Txatak zure kontuan gordetzen dira haietara itzuli ahal izateko, eta gero automatikoki ezabatzen dira. Gorde txatak: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Ez gorde txat hau';
+
+  @override
+  String get chatNotSaved => 'Txat hau ez da gordetzen. Gordeta zegoena ezabatu da.';
+
+  @override
+  String get chatForgetTitle => 'Ahaztu txat hau';
+
+  @override
+  String get chatForgetNote => 'Txata zure kontutik ezabatu eta pantailatik kentzen da.';
+
+  @override
+  String get secretPassword => 'Pasahitzak ez dira inoiz txatean idazten, eta Ask Vaultarak ez du inoiz pasahitzik behar. Mezu hau ez da bidali ez gorde.';
+
+  @override
+  String get secretCode => 'Erabilera bakarreko kodeak ez dira inoiz txatean idazten. Vaultarak ez ditu inoiz eskatzen, beraz ez eman koderik eskatzen dizunari. Mezu hau ez da bidali ez gorde.';
+
+  @override
+  String get secretCard => 'Txartel-zenbakiak ez dira inoiz txatean idazten. Txartel bat jarraitzeko, gehitu erregistro gisa iraungitze-datarekin. Mezu hau ez da bidali ez gorde.';
+
+  @override
+  String numberEnding(String last) {
+    return '$last amaiera duen zenbakia';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Segurtasun-alerta bat jaso dut. Ni izan nintzen, eta zer egin behar dut?';
+
+  @override
+  String get assistantStepScam => 'Mezua egiaztatzen';
 }

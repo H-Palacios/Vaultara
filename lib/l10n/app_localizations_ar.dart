@@ -10994,4 +10994,79 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'إنه مفتوح على شاشتك. أكمل هناك، ثم انقر للتحدث مرة أخرى.';
+
+  @override
+  String get assistantUndoTitle => 'تراجع عن آخر تغيير';
+
+  @override
+  String get assistantUndoNothing => 'لا يوجد شيء في هذه المحادثة للتراجع عنه.';
+
+  @override
+  String get assistantSecurityFixNote => 'يُفتح الأمان والخصوصية ويبدأ هذا الإصلاح.';
+
+  @override
+  String get assistantStopLinksTitle => 'إيقاف روابط المشاركة';
+
+  @override
+  String get assistantStopLinksExpired => 'الروابط المنتهية والروابط التي لم تُفتح أبدًا';
+
+  @override
+  String get assistantStopLinksAll => 'كل روابط المشاركة';
+
+  @override
+  String get assistantStopLinksNote => 'لن يتمكن أحد من فتح هذه الروابط مرة أخرى. تبقى سجلاتك كما هي.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'الروابط التي أُوقفت: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'الاحتفاظ بالمحادثات لمدة';
+
+  @override
+  String get chatKeepWeek => 'أسبوع واحد';
+
+  @override
+  String get chatKeepMonth => 'شهر واحد';
+
+  @override
+  String get chatKeepThreeMonths => '3 أشهر';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'تُحفظ المحادثات في حسابك لتعود إليها، ثم تُحذف تلقائيًا. الاحتفاظ بالمحادثات لمدة: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'لا تحفظ هذه المحادثة';
+
+  @override
+  String get chatNotSaved => 'هذه المحادثة لا تُحفظ. حُذف ما كان محفوظًا منها.';
+
+  @override
+  String get chatForgetTitle => 'انسَ هذه المحادثة';
+
+  @override
+  String get chatForgetNote => 'تُحذف المحادثة من حسابك وتُزال من الشاشة.';
+
+  @override
+  String get secretPassword => 'كلمات المرور لا تُكتب في المحادثة أبدًا، ولا يحتاج Ask Vaultara إلى كلمة مرور أبدًا. لم تُرسل هذه الرسالة ولم تُحفظ.';
+
+  @override
+  String get secretCode => 'الرموز لمرة واحدة لا تُكتب في المحادثة أبدًا. لا يطلبها Vaultara أبدًا، فلا تعطِ رمزًا لأي شخص يطلبه. لم تُرسل هذه الرسالة ولم تُحفظ.';
+
+  @override
+  String get secretCard => 'أرقام البطاقات لا تُكتب في المحادثة أبدًا. لمتابعة بطاقة، أضفها كسجل مع تاريخ انتهائها. لم تُرسل هذه الرسالة ولم تُحفظ.';
+
+  @override
+  String numberEnding(String last) {
+    return 'رقم ينتهي بـ $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'وصلني تنبيه أمني. هل كنت أنا، وماذا عليّ أن أفعل؟';
+
+  @override
+  String get assistantStepScam => 'جارٍ فحص الرسالة';
 }

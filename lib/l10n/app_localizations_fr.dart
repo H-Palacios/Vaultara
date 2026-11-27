@@ -10751,4 +10751,79 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'C’est ouvert à l’écran. Terminez-y, puis touchez pour parler à nouveau.';
+
+  @override
+  String get assistantUndoTitle => 'Annuler la dernière modification';
+
+  @override
+  String get assistantUndoNothing => 'Rien dans ce chat ne peut être annulé.';
+
+  @override
+  String get assistantSecurityFixNote => 'Sécurité et confidentialité s\'ouvre et lance cette correction.';
+
+  @override
+  String get assistantStopLinksTitle => 'Désactiver les liens de partage';
+
+  @override
+  String get assistantStopLinksExpired => 'Liens expirés et liens jamais ouverts';
+
+  @override
+  String get assistantStopLinksAll => 'Tous les liens de partage';
+
+  @override
+  String get assistantStopLinksNote => 'Personne ne pourra plus ouvrir ces liens. Vos fiches restent inchangées.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Liens désactivés : $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Garder les chats pendant';
+
+  @override
+  String get chatKeepWeek => '1 semaine';
+
+  @override
+  String get chatKeepMonth => '1 mois';
+
+  @override
+  String get chatKeepThreeMonths => '3 mois';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Les chats sont enregistrés dans votre compte pour que vous puissiez y revenir, puis supprimés automatiquement. Garder les chats pendant : $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Ne pas enregistrer ce chat';
+
+  @override
+  String get chatNotSaved => 'Ce chat n\'est pas enregistré. Ce qui en avait été enregistré est supprimé.';
+
+  @override
+  String get chatForgetTitle => 'Oublier ce chat';
+
+  @override
+  String get chatForgetNote => 'Le chat est supprimé de votre compte et effacé de l\'écran.';
+
+  @override
+  String get secretPassword => 'Les mots de passe n\'ont jamais leur place dans le chat, et Ask Vaultara n\'en a jamais besoin. Ce message n\'a été ni envoyé ni enregistré.';
+
+  @override
+  String get secretCode => 'Les codes à usage unique n\'ont jamais leur place dans le chat. Vaultara ne les demande jamais, alors n\'en donnez à personne qui les demande. Ce message n\'a été ni envoyé ni enregistré.';
+
+  @override
+  String get secretCard => 'Les numéros de carte n\'ont jamais leur place dans le chat. Pour suivre une carte, ajoutez-la comme fiche avec sa date d\'expiration. Ce message n\'a été ni envoyé ni enregistré.';
+
+  @override
+  String numberEnding(String last) {
+    return 'numéro se terminant par $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'J\'ai reçu une alerte de sécurité. Était-ce moi, et que dois-je faire ?';
+
+  @override
+  String get assistantStepScam => 'Vérification du message';
 }

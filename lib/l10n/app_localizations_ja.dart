@@ -10660,4 +10660,79 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => '画面に開いています。そこで完了してから、タップしてもう一度話してください。';
+
+  @override
+  String get assistantUndoTitle => '最後の変更を元に戻す';
+
+  @override
+  String get assistantUndoNothing => 'このチャットで元に戻せるものはありません。';
+
+  @override
+  String get assistantSecurityFixNote => 'セキュリティとプライバシーが開き、この対策を始めます。';
+
+  @override
+  String get assistantStopLinksTitle => '共有リンクをオフにする';
+
+  @override
+  String get assistantStopLinksExpired => '期限切れのリンクと一度も開かれていないリンク';
+
+  @override
+  String get assistantStopLinksAll => 'すべての共有リンク';
+
+  @override
+  String get assistantStopLinksNote => 'これらのリンクは誰も開けなくなります。記録はそのまま残ります。';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'オフにしたリンク：$count。';
+  }
+
+  @override
+  String get chatKeepTitle => 'チャットの保存期間';
+
+  @override
+  String get chatKeepWeek => '1週間';
+
+  @override
+  String get chatKeepMonth => '1か月';
+
+  @override
+  String get chatKeepThreeMonths => '3か月';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'チャットはあとで見返せるようにアカウントに保存され、その後自動で削除されます。チャットの保存期間：$period。';
+  }
+
+  @override
+  String get chatDontSave => 'このチャットを保存しない';
+
+  @override
+  String get chatNotSaved => 'このチャットは保存されません。保存済みの部分は削除されました。';
+
+  @override
+  String get chatForgetTitle => 'このチャットを忘れる';
+
+  @override
+  String get chatForgetNote => 'チャットはアカウントから削除され、画面からも消えます。';
+
+  @override
+  String get secretPassword => 'パスワードはチャットに書かないでください。Ask Vaultaraがパスワードを必要とすることはありません。このメッセージは送信も保存もされていません。';
+
+  @override
+  String get secretCode => 'ワンタイムコードはチャットに書かないでください。Vaultaraがコードを求めることはないので、求めてくる相手には教えないでください。このメッセージは送信も保存もされていません。';
+
+  @override
+  String get secretCard => 'カード番号はチャットに書かないでください。カードを管理するには、有効期限付きの記録として追加してください。このメッセージは送信も保存もされていません。';
+
+  @override
+  String numberEnding(String last) {
+    return '末尾が$lastの番号';
+  }
+
+  @override
+  String get securityAlertQuestion => 'セキュリティ通知が届きました。自分によるものですか？どうすればいいですか？';
+
+  @override
+  String get assistantStepScam => 'メッセージを確認しています';
 }

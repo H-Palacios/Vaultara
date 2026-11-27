@@ -10735,4 +10735,79 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'එය ඔබගේ තිරයේ විවෘතව ඇත. එහි අවසන් කර, නැවත කතා කිරීමට තට්ටු කරන්න.';
+
+  @override
+  String get assistantUndoTitle => 'අවසන් වෙනස අහෝසි කරන්න';
+
+  @override
+  String get assistantUndoNothing => 'මෙම කතාබහේ අහෝසි කිරීමට කිසිවක් නැත.';
+
+  @override
+  String get assistantSecurityFixNote => 'ආරක්ෂාව සහ පෞද්ගලිකත්වය විවෘත වී මෙම නිවැරදි කිරීම අරඹයි.';
+
+  @override
+  String get assistantStopLinksTitle => 'බෙදාගැනීමේ සබැඳි අක්‍රිය කරන්න';
+
+  @override
+  String get assistantStopLinksExpired => 'කල් ඉකුත් වූ සබැඳි සහ කිසිදා විවෘත නොකළ සබැඳි';
+
+  @override
+  String get assistantStopLinksAll => 'සියලු බෙදාගැනීමේ සබැඳි';
+
+  @override
+  String get assistantStopLinksNote => 'තවදුරටත් කිසිවෙකුට මෙම සබැඳි විවෘත කළ නොහැක. ඔබේ වාර්තා එලෙසම පවතී.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'අක්‍රිය කළ සබැඳි: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'කතාබහ තබා ගන්නා කාලය';
+
+  @override
+  String get chatKeepWeek => 'සති 1';
+
+  @override
+  String get chatKeepMonth => 'මාස 1';
+
+  @override
+  String get chatKeepThreeMonths => 'මාස 3';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'ඔබට නැවත පැමිණිය හැකි වන සේ කතාබහ ඔබේ ගිණුමේ සුරැකේ, පසුව ස්වයංක්‍රීයව මැකේ. කතාබහ තබා ගන්නා කාලය: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'මෙම කතාබහ සුරකින්න එපා';
+
+  @override
+  String get chatNotSaved => 'මෙම කතාබහ සුරැකෙන්නේ නැත. එයින් සුරැකී තිබූ දේ මකා දමා ඇත.';
+
+  @override
+  String get chatForgetTitle => 'මෙම කතාබහ අමතක කරන්න';
+
+  @override
+  String get chatForgetNote => 'කතාබහ ඔබේ ගිණුමෙන් මකා තිරයෙන් ඉවත් වේ.';
+
+  @override
+  String get secretPassword => 'මුරපද කිසිදා කතාබහේ ලියන්නේ නැත, Ask Vaultara ට කිසිදා මුරපදයක් අවශ්‍ය නැත. මෙම පණිවිඩය යැවූයේවත් සුරැකූයේවත් නැත.';
+
+  @override
+  String get secretCode => 'එක් වරක කේත කිසිදා කතාබහේ ලියන්නේ නැත. Vaultara කිසිදා ඒවා ඉල්ලන්නේ නැත, එබැවින් ඉල්ලන කිසිවෙකුට කේතයක් දෙන්න එපා. මෙම පණිවිඩය යැවූයේවත් සුරැකූයේවත් නැත.';
+
+  @override
+  String get secretCard => 'කාඩ්පත් අංක කිසිදා කතාබහේ ලියන්නේ නැත. කාඩ්පතක් ගැන අවධානයෙන් සිටීමට එය කල් ඉකුත් වන දිනය සමඟ වාර්තාවක් ලෙස එක් කරන්න. මෙම පණිවිඩය යැවූයේවත් සුරැකූයේවත් නැත.';
+
+  @override
+  String numberEnding(String last) {
+    return '$last න් අවසන් වන අංකය';
+  }
+
+  @override
+  String get securityAlertQuestion => 'මට ආරක්ෂක අනතුරු ඇඟවීමක් ලැබුණා. ඒ මමද, මා කළ යුත්තේ කුමක්ද?';
+
+  @override
+  String get assistantStepScam => 'පණිවිඩය පරීක්ෂා කරමින්';
 }

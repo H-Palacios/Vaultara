@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "للتجديد هذا الشهر: {count}، بحوالي {cost}. انقر لترى ما عليك فعله.",
   "monthAheadBodyCountTrips": "للتجديد هذا الشهر: {count}. رحلات خلال الأسابيع الستة القادمة: {trips}. انقر لترى ما عليك فعله.",
   "monthAheadBodyCostTrips": "للتجديد هذا الشهر: {count}، بحوالي {cost}. رحلات خلال الأسابيع الستة القادمة: {trips}. انقر لترى ما عليك فعله.",
-  "monthAheadBodyTrips": "لا شيء للتجديد هذا الشهر. رحلات خلال الأسابيع الستة القادمة: {trips}. انقر لترى ما عليك فعله."
+  "monthAheadBodyTrips": "لا شيء للتجديد هذا الشهر. رحلات خلال الأسابيع الستة القادمة: {trips}. انقر لترى ما عليك فعله.",
+  "securityTwoStepOffTitle": "تم إيقاف تسجيل الدخول بخطوتين",
+  "securityTwoStepOffBody": "إذا لم تكن أنت، فافتح Vaultara الآن لتأمين حسابك."
 }

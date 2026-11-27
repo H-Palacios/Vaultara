@@ -10741,4 +10741,79 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Het staat open op je scherm. Rond het daar af en tik dan om weer te praten.';
+
+  @override
+  String get assistantUndoTitle => 'Laatste wijziging ongedaan maken';
+
+  @override
+  String get assistantUndoNothing => 'Er is niets uit deze chat om ongedaan te maken.';
+
+  @override
+  String get assistantSecurityFixNote => 'Beveiliging en privacy gaat open en start deze oplossing.';
+
+  @override
+  String get assistantStopLinksTitle => 'Deellinks uitzetten';
+
+  @override
+  String get assistantStopLinksExpired => 'Verlopen links en links die nooit zijn geopend';
+
+  @override
+  String get assistantStopLinksAll => 'Alle deellinks';
+
+  @override
+  String get assistantStopLinksNote => 'Niemand kan deze links nog openen. Je gegevens blijven zoals ze zijn.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Links uitgezet: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Chats bewaren voor';
+
+  @override
+  String get chatKeepWeek => '1 week';
+
+  @override
+  String get chatKeepMonth => '1 maand';
+
+  @override
+  String get chatKeepThreeMonths => '3 maanden';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Chats worden in je account bewaard zodat je er later op terug kunt komen, en daarna automatisch verwijderd. Chats bewaren voor: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Deze chat niet bewaren';
+
+  @override
+  String get chatNotSaved => 'Deze chat wordt niet bewaard. Wat ervan bewaard was, is verwijderd.';
+
+  @override
+  String get chatForgetTitle => 'Deze chat vergeten';
+
+  @override
+  String get chatForgetNote => 'De chat wordt uit je account verwijderd en van het scherm gehaald.';
+
+  @override
+  String get secretPassword => 'Wachtwoorden horen nooit in de chat, en Ask Vaultara heeft er nooit een nodig. Dit bericht is niet verzonden of bewaard.';
+
+  @override
+  String get secretCode => 'Eenmalige codes horen nooit in de chat. Vaultara vraagt er nooit om, dus geef er geen aan iemand die erom vraagt. Dit bericht is niet verzonden of bewaard.';
+
+  @override
+  String get secretCard => 'Kaartnummers horen nooit in de chat. Wil je een kaart bijhouden, voeg hem dan toe als gegeven met de vervaldatum. Dit bericht is niet verzonden of bewaard.';
+
+  @override
+  String numberEnding(String last) {
+    return 'nummer eindigend op $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Ik kreeg een beveiligingsmelding. Was ik dat, en wat moet ik doen?';
+
+  @override
+  String get assistantStepScam => 'Bericht controleren';
 }

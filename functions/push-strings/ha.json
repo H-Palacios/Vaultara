@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Abin sabuntawa a wannan watan: {count}, kusan {cost}. Taɓa don ganin abin da za a yi.",
   "monthAheadBodyCountTrips": "Abin sabuntawa a wannan watan: {count}. Tafiye-tafiye a makonni 6 masu zuwa: {trips}. Taɓa don ganin abin da za a yi.",
   "monthAheadBodyCostTrips": "Abin sabuntawa a wannan watan: {count}, kusan {cost}. Tafiye-tafiye a makonni 6 masu zuwa: {trips}. Taɓa don ganin abin da za a yi.",
-  "monthAheadBodyTrips": "Babu abin sabuntawa a wannan watan. Tafiye-tafiye a makonni 6 masu zuwa: {trips}. Taɓa don ganin abin da za a yi."
+  "monthAheadBodyTrips": "Babu abin sabuntawa a wannan watan. Tafiye-tafiye a makonni 6 masu zuwa: {trips}. Taɓa don ganin abin da za a yi.",
+  "securityTwoStepOffTitle": "An kashe shiga mai matakai biyu",
+  "securityTwoStepOffBody": "Idan ba kai ba ne, buɗe Vaultara yanzu don kare asusunka."
 }

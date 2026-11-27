@@ -10735,4 +10735,79 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'এটি আপনার স্ক্রিনে খোলা আছে। সেখানে শেষ করুন, তারপর আবার কথা বলতে ট্যাপ করুন।';
+
+  @override
+  String get assistantUndoTitle => 'শেষ পরিবর্তন পূর্বাবস্থায় ফেরান';
+
+  @override
+  String get assistantUndoNothing => 'এই চ্যাটে পূর্বাবস্থায় ফেরানোর মতো কিছু নেই।';
+
+  @override
+  String get assistantSecurityFixNote => 'নিরাপত্তা ও গোপনীয়তা খোলে এবং এই সংশোধন শুরু করে।';
+
+  @override
+  String get assistantStopLinksTitle => 'শেয়ার লিংক বন্ধ করুন';
+
+  @override
+  String get assistantStopLinksExpired => 'মেয়াদোত্তীর্ণ লিংক এবং যে লিংক কখনো খোলা হয়নি';
+
+  @override
+  String get assistantStopLinksAll => 'সব শেয়ার লিংক';
+
+  @override
+  String get assistantStopLinksNote => 'কেউ আর এই লিংকগুলো খুলতে পারবে না। আপনার রেকর্ড যেমন আছে তেমনই থাকবে।';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'বন্ধ করা লিংক: $count।';
+  }
+
+  @override
+  String get chatKeepTitle => 'চ্যাট রাখুন';
+
+  @override
+  String get chatKeepWeek => '১ সপ্তাহ';
+
+  @override
+  String get chatKeepMonth => '১ মাস';
+
+  @override
+  String get chatKeepThreeMonths => '৩ মাস';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'চ্যাটগুলো আপনার অ্যাকাউন্টে সংরক্ষিত হয় যাতে আপনি সেগুলোতে ফিরে আসতে পারেন, তারপর নিজে থেকে মুছে যায়। চ্যাট রাখুন: $period।';
+  }
+
+  @override
+  String get chatDontSave => 'এই চ্যাট সংরক্ষণ করবেন না';
+
+  @override
+  String get chatNotSaved => 'এই চ্যাট সংরক্ষিত হচ্ছে না। এর যা সংরক্ষিত ছিল তা মুছে ফেলা হয়েছে।';
+
+  @override
+  String get chatForgetTitle => 'এই চ্যাট ভুলে যান';
+
+  @override
+  String get chatForgetNote => 'চ্যাটটি আপনার অ্যাকাউন্ট থেকে মুছে যায় এবং স্ক্রিন থেকে সরে যায়।';
+
+  @override
+  String get secretPassword => 'পাসওয়ার্ড কখনো চ্যাটে লেখা হয় না, এবং Ask Vaultara-র কখনো পাসওয়ার্ড লাগে না। এই বার্তা পাঠানো বা সংরক্ষণ করা হয়নি।';
+
+  @override
+  String get secretCode => 'এককালীন কোড কখনো চ্যাটে লেখা হয় না। Vaultara কখনো এগুলো চায় না, তাই যে চায় তাকে কোড দেবেন না। এই বার্তা পাঠানো বা সংরক্ষণ করা হয়নি।';
+
+  @override
+  String get secretCard => 'কার্ড নম্বর কখনো চ্যাটে লেখা হয় না। কোনো কার্ডের খেয়াল রাখতে সেটিকে মেয়াদ শেষের তারিখসহ রেকর্ড হিসেবে যোগ করুন। এই বার্তা পাঠানো বা সংরক্ষণ করা হয়নি।';
+
+  @override
+  String numberEnding(String last) {
+    return '$last দিয়ে শেষ হওয়া নম্বর';
+  }
+
+  @override
+  String get securityAlertQuestion => 'আমি একটি নিরাপত্তা সতর্কতা পেয়েছি। এটা কি আমি ছিলাম, আর আমার কী করা উচিত?';
+
+  @override
+  String get assistantStepScam => 'বার্তা পরীক্ষা করা হচ্ছে';
 }

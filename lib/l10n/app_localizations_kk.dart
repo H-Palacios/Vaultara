@@ -10735,4 +10735,79 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Экраныңызда ашық тұр. Сонда аяқтап, қайта сөйлеу үшін түртіңіз.';
+
+  @override
+  String get assistantUndoTitle => 'Соңғы өзгерісті болдырмау';
+
+  @override
+  String get assistantUndoNothing => 'Бұл чатта болдырмайтын ештеңе жоқ.';
+
+  @override
+  String get assistantSecurityFixNote => '«Қауіпсіздік және құпиялылық» ашылып, осы түзетуді бастайды.';
+
+  @override
+  String get assistantStopLinksTitle => 'Бөлісу сілтемелерін өшіру';
+
+  @override
+  String get assistantStopLinksExpired => 'Мерзімі өткен және ешқашан ашылмаған сілтемелер';
+
+  @override
+  String get assistantStopLinksAll => 'Барлық бөлісу сілтемелері';
+
+  @override
+  String get assistantStopLinksNote => 'Енді бұл сілтемелерді ешкім аша алмайды. Жазбаларыңыз өзгеріссіз қалады.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Өшірілген сілтемелер: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Чаттарды сақтау';
+
+  @override
+  String get chatKeepWeek => '1 апта';
+
+  @override
+  String get chatKeepMonth => '1 ай';
+
+  @override
+  String get chatKeepThreeMonths => '3 ай';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Чаттар қайта оралуыңыз үшін аккаунтыңызда сақталады, кейін автоматты түрде жойылады. Чаттарды сақтау: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Бұл чатты сақтамау';
+
+  @override
+  String get chatNotSaved => 'Бұл чат сақталмайды. Одан сақталғаны жойылды.';
+
+  @override
+  String get chatForgetTitle => 'Бұл чатты ұмыту';
+
+  @override
+  String get chatForgetNote => 'Чат аккаунтыңыздан және экраннан жойылады.';
+
+  @override
+  String get secretPassword => 'Құпиясөздер ешқашан чатқа жазылмайды, ал Ask Vaultara-ға ешқашан құпиясөз керек емес. Бұл хабар жіберілмеді және сақталмады.';
+
+  @override
+  String get secretCode => 'Бір реттік кодтар ешқашан чатқа жазылмайды. Vaultara оларды ешқашан сұрамайды, сондықтан сұраған ешкімге код бермеңіз. Бұл хабар жіберілмеді және сақталмады.';
+
+  @override
+  String get secretCard => 'Карта нөмірлері ешқашан чатқа жазылмайды. Картаны қадағалау үшін оны мерзімі бітетін күнімен жазба ретінде қосыңыз. Бұл хабар жіберілмеді және сақталмады.';
+
+  @override
+  String numberEnding(String last) {
+    return '$last деп аяқталатын нөмір';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Қауіпсіздік ескертуін алдым. Бұл мен болдым ба және не істеуім керек?';
+
+  @override
+  String get assistantStepScam => 'Хабар тексерілуде';
 }

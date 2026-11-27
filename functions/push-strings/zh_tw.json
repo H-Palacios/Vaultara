@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "本月需續約：{count} 項，約 {cost}。輕觸查看要做的事。",
   "monthAheadBodyCountTrips": "本月需續約：{count} 項。未來 6 週的旅程：{trips} 個。輕觸查看要做的事。",
   "monthAheadBodyCostTrips": "本月需續約：{count} 項，約 {cost}。未來 6 週的旅程：{trips} 個。輕觸查看要做的事。",
-  "monthAheadBodyTrips": "本月沒有需要續約的項目。未來 6 週的旅程：{trips} 個。輕觸查看要做的事。"
+  "monthAheadBodyTrips": "本月沒有需要續約的項目。未來 6 週的旅程：{trips} 個。輕觸查看要做的事。",
+  "securityTwoStepOffTitle": "兩步驟登入已關閉",
+  "securityTwoStepOffBody": "如果不是你本人，請立即開啟 Vaultara 保護你的帳戶。"
 }

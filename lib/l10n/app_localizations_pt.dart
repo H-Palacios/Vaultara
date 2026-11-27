@@ -10742,4 +10742,79 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Está aberto no ecrã. Termine aí e depois toque para voltar a falar.';
+
+  @override
+  String get assistantUndoTitle => 'Desfazer a última alteração';
+
+  @override
+  String get assistantUndoNothing => 'Não há nada desta conversa para desfazer.';
+
+  @override
+  String get assistantSecurityFixNote => 'Segurança e privacidade abre e inicia esta correção.';
+
+  @override
+  String get assistantStopLinksTitle => 'Desativar links de partilha';
+
+  @override
+  String get assistantStopLinksExpired => 'Links expirados e links nunca abertos';
+
+  @override
+  String get assistantStopLinksAll => 'Todos os links de partilha';
+
+  @override
+  String get assistantStopLinksNote => 'Ninguém poderá voltar a abrir estes links. Os seus registos ficam como estão.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Links desativados: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Guardar conversas durante';
+
+  @override
+  String get chatKeepWeek => '1 semana';
+
+  @override
+  String get chatKeepMonth => '1 mês';
+
+  @override
+  String get chatKeepThreeMonths => '3 meses';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'As conversas são guardadas na sua conta para que possa voltar a elas e depois apagadas automaticamente. Guardar conversas durante: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Não guardar esta conversa';
+
+  @override
+  String get chatNotSaved => 'Esta conversa não é guardada. O que tinha sido guardado foi apagado.';
+
+  @override
+  String get chatForgetTitle => 'Esquecer esta conversa';
+
+  @override
+  String get chatForgetNote => 'A conversa é apagada da sua conta e removida do ecrã.';
+
+  @override
+  String get secretPassword => 'As palavras-passe nunca vão para a conversa, e o Ask Vaultara nunca precisa de uma. Esta mensagem não foi enviada nem guardada.';
+
+  @override
+  String get secretCode => 'Os códigos de utilização única nunca vão para a conversa. O Vaultara nunca os pede, por isso não os dê a ninguém que os peça. Esta mensagem não foi enviada nem guardada.';
+
+  @override
+  String get secretCard => 'Os números de cartão nunca vão para a conversa. Para acompanhar um cartão, adicione-o como registo com a data de validade. Esta mensagem não foi enviada nem guardada.';
+
+  @override
+  String numberEnding(String last) {
+    return 'número terminado em $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Recebi um alerta de segurança. Fui eu, e o que devo fazer?';
+
+  @override
+  String get assistantStepScam => 'A verificar a mensagem';
 }

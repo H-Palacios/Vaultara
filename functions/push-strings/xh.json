@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Ezihlaziywayo kule nyanga: {count}, malunga ne-{cost}. Cofa ukubona okufuneka ukwenze.",
   "monthAheadBodyCountTrips": "Ezihlaziywayo kule nyanga: {count}. Uhambo kwiiveki ezi-6 ezizayo: {trips}. Cofa ukubona okufuneka ukwenze.",
   "monthAheadBodyCostTrips": "Ezihlaziywayo kule nyanga: {count}, malunga ne-{cost}. Uhambo kwiiveki ezi-6 ezizayo: {trips}. Cofa ukubona okufuneka ukwenze.",
-  "monthAheadBodyTrips": "Akukho nto ihlaziywayo kule nyanga. Uhambo kwiiveki ezi-6 ezizayo: {trips}. Cofa ukubona okufuneka ukwenze."
+  "monthAheadBodyTrips": "Akukho nto ihlaziywayo kule nyanga. Uhambo kwiiveki ezi-6 ezizayo: {trips}. Cofa ukubona okufuneka ukwenze.",
+  "securityTwoStepOffTitle": "Ukungena ngamanyathelo amabini kucinyiwe",
+  "securityTwoStepOffBody": "Ukuba ibingenguwe, vula i-Vaultara ngoku ukhusele i-akhawunti yakho."
 }

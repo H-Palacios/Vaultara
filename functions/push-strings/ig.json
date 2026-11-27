@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Ihe a ga-emeghari n'ọnwa a: {count}, ihe dịka {cost}. Pịa ka ịhụ ihe ị ga-eme.",
   "monthAheadBodyCountTrips": "Ihe a ga-emeghari n'ọnwa a: {count}. Njem n'ime izu 6 na-abịa: {trips}. Pịa ka ịhụ ihe ị ga-eme.",
   "monthAheadBodyCostTrips": "Ihe a ga-emeghari n'ọnwa a: {count}, ihe dịka {cost}. Njem n'ime izu 6 na-abịa: {trips}. Pịa ka ịhụ ihe ị ga-eme.",
-  "monthAheadBodyTrips": "Ọ dịghị ihe a ga-emeghari n'ọnwa a. Njem n'ime izu 6 na-abịa: {trips}. Pịa ka ịhụ ihe ị ga-eme."
+  "monthAheadBodyTrips": "Ọ dịghị ihe a ga-emeghari n'ọnwa a. Njem n'ime izu 6 na-abịa: {trips}. Pịa ka ịhụ ihe ị ga-eme.",
+  "securityTwoStepOffTitle": "Agbanyụọla nbanye nzọụkwụ abụọ",
+  "securityTwoStepOffBody": "Ọ bụrụ na ọ bụghị gị, mepee Vaultara ugbu a iji chekwaa akaụntụ gị."
 }

@@ -10735,4 +10735,79 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'لەسەر شاشەکەت کراوەتەوە. لەوێ تەواوی بکە، پاشان دەست لێ بدە بۆ ئەوەی دووبارە قسە بکەیت.';
+
+  @override
+  String get assistantUndoTitle => 'دوایین گۆڕانکاری هەڵبوەشێنەوە';
+
+  @override
+  String get assistantUndoNothing => 'لەم گفتوگۆیەدا هیچ شتێک نییە بۆ هەڵوەشاندنەوە.';
+
+  @override
+  String get assistantSecurityFixNote => 'ئاسایش و تایبەتمەندی دەکرێتەوە و ئەم چاککردنە دەست پێ دەکات.';
+
+  @override
+  String get assistantStopLinksTitle => 'بەستەرەکانی هاوبەشکردن بکوژێنەوە';
+
+  @override
+  String get assistantStopLinksExpired => 'بەستەرە بەسەرچووەکان و ئەوانەی هەرگیز نەکراونەتەوە';
+
+  @override
+  String get assistantStopLinksAll => 'هەموو بەستەرەکانی هاوبەشکردن';
+
+  @override
+  String get assistantStopLinksNote => 'کەس ناتوانێت ئەم بەستەرانە جارێکی تر بکاتەوە. تۆمارەکانت وەک خۆیان دەمێننەوە.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'بەستەرە کوژێنراوەکان: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'گفتوگۆکان بهێڵەوە بۆ';
+
+  @override
+  String get chatKeepWeek => '١ هەفتە';
+
+  @override
+  String get chatKeepMonth => '١ مانگ';
+
+  @override
+  String get chatKeepThreeMonths => '٣ مانگ';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'گفتوگۆکان لە هەژمارەکەتدا پاشەکەوت دەکرێن بۆ ئەوەی بگەڕێیتەوە سەریان، پاشان خۆکارانە دەسڕدرێنەوە. گفتوگۆکان بهێڵەوە بۆ: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'ئەم گفتوگۆیە پاشەکەوت مەکە';
+
+  @override
+  String get chatNotSaved => 'ئەم گفتوگۆیە پاشەکەوت ناکرێت. ئەوەی لێی پاشەکەوت کرابوو سڕایەوە.';
+
+  @override
+  String get chatForgetTitle => 'ئەم گفتوگۆیە لەبیر بکە';
+
+  @override
+  String get chatForgetNote => 'گفتوگۆکە لە هەژمارەکەت و لە شاشەکە دەسڕدرێتەوە.';
+
+  @override
+  String get secretPassword => 'وشەی نهێنی هەرگیز لە گفتوگۆدا نانووسرێت، و Ask Vaultara هەرگیز پێویستی پێی نییە. ئەم نامەیە نەنێردرا و پاشەکەوت نەکرا.';
+
+  @override
+  String get secretCode => 'کۆدی یەکجاری هەرگیز لە گفتوگۆدا نانووسرێت. Vaultara هەرگیز داوایان ناکات، بۆیە کۆد مەدە بە کەسێک کە داوای دەکات. ئەم نامەیە نەنێردرا و پاشەکەوت نەکرا.';
+
+  @override
+  String get secretCard => 'ژمارەی کارت هەرگیز لە گفتوگۆدا نانووسرێت. بۆ بەدواداچوونی کارتێک، وەک تۆمارێک لەگەڵ ڕێکەوتی بەسەرچوونی زیادی بکە. ئەم نامەیە نەنێردرا و پاشەکەوت نەکرا.';
+
+  @override
+  String numberEnding(String last) {
+    return 'ژمارەیەک کە بە $last کۆتایی دێت';
+  }
+
+  @override
+  String get securityAlertQuestion => 'ئاگادارکردنەوەیەکی ئاسایشم پێ گەیشت. ئایا من بووم، و چی بکەم؟';
+
+  @override
+  String get assistantStepScam => 'پشکنینی نامەکە';
 }

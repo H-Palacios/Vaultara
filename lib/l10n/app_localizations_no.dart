@@ -10741,4 +10741,79 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Det er åpent på skjermen. Gjør det ferdig der, og trykk så for å snakke igjen.';
+
+  @override
+  String get assistantUndoTitle => 'Angre den siste endringen';
+
+  @override
+  String get assistantUndoNothing => 'Det er ingenting i denne chatten å angre.';
+
+  @override
+  String get assistantSecurityFixNote => 'Sikkerhet og personvern åpnes og starter denne rettingen.';
+
+  @override
+  String get assistantStopLinksTitle => 'Slå av delingslenker';
+
+  @override
+  String get assistantStopLinksExpired => 'Utløpte lenker og lenker som aldri er åpnet';
+
+  @override
+  String get assistantStopLinksAll => 'Alle delingslenker';
+
+  @override
+  String get assistantStopLinksNote => 'Ingen kan åpne disse lenkene igjen. Oppføringene dine blir som de er.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Lenker slått av: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Behold chatter i';
+
+  @override
+  String get chatKeepWeek => '1 uke';
+
+  @override
+  String get chatKeepMonth => '1 måned';
+
+  @override
+  String get chatKeepThreeMonths => '3 måneder';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Chatter lagres på kontoen din så du kan komme tilbake til dem, og slettes deretter automatisk. Behold chatter i: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Ikke lagre denne chatten';
+
+  @override
+  String get chatNotSaved => 'Denne chatten lagres ikke. Det som var lagret av den, er slettet.';
+
+  @override
+  String get chatForgetTitle => 'Glem denne chatten';
+
+  @override
+  String get chatForgetNote => 'Chatten slettes fra kontoen din og fjernes fra skjermen.';
+
+  @override
+  String get secretPassword => 'Passord hører aldri hjemme i chatten, og Ask Vaultara trenger aldri ett. Meldingen ble verken sendt eller lagret.';
+
+  @override
+  String get secretCode => 'Engangskoder hører aldri hjemme i chatten. Vaultara ber aldri om dem, så ikke gi en til noen som ber om den. Meldingen ble verken sendt eller lagret.';
+
+  @override
+  String get secretCard => 'Kortnumre hører aldri hjemme i chatten. Vil du følge med på et kort, legg det til som en oppføring med utløpsdato. Meldingen ble verken sendt eller lagret.';
+
+  @override
+  String numberEnding(String last) {
+    return 'nummer som slutter på $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Jeg fikk et sikkerhetsvarsel. Var det meg, og hva bør jeg gjøre?';
+
+  @override
+  String get assistantStepScam => 'Sjekker meldingen';
 }

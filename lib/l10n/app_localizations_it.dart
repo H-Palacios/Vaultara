@@ -10748,4 +10748,79 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'È aperto sullo schermo. Completa lì, poi tocca per parlare di nuovo.';
+
+  @override
+  String get assistantUndoTitle => 'Annulla l\'ultima modifica';
+
+  @override
+  String get assistantUndoNothing => 'Non c\'è niente da annullare in questa chat.';
+
+  @override
+  String get assistantSecurityFixNote => 'Si apre Sicurezza e privacy e avvia questa correzione.';
+
+  @override
+  String get assistantStopLinksTitle => 'Disattiva i link di condivisione';
+
+  @override
+  String get assistantStopLinksExpired => 'Link scaduti e link mai aperti';
+
+  @override
+  String get assistantStopLinksAll => 'Tutti i link di condivisione';
+
+  @override
+  String get assistantStopLinksNote => 'Nessuno potrà più aprire questi link. I tuoi documenti restano come sono.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Link disattivati: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Conserva le chat per';
+
+  @override
+  String get chatKeepWeek => '1 settimana';
+
+  @override
+  String get chatKeepMonth => '1 mese';
+
+  @override
+  String get chatKeepThreeMonths => '3 mesi';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Le chat vengono salvate nel tuo account per poterci tornare, poi eliminate automaticamente. Conserva le chat per: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Non salvare questa chat';
+
+  @override
+  String get chatNotSaved => 'Questa chat non viene salvata. Quello che era stato salvato è stato eliminato.';
+
+  @override
+  String get chatForgetTitle => 'Dimentica questa chat';
+
+  @override
+  String get chatForgetNote => 'La chat viene eliminata dal tuo account e tolta dallo schermo.';
+
+  @override
+  String get secretPassword => 'Le password non vanno mai nella chat, e Ask Vaultara non ne ha mai bisogno. Questo messaggio non è stato inviato né salvato.';
+
+  @override
+  String get secretCode => 'I codici monouso non vanno mai nella chat. Vaultara non li chiede mai, quindi non darli a nessuno che li chieda. Questo messaggio non è stato inviato né salvato.';
+
+  @override
+  String get secretCard => 'I numeri di carta non vanno mai nella chat. Per seguire una carta, aggiungila come documento con la data di scadenza. Questo messaggio non è stato inviato né salvato.';
+
+  @override
+  String numberEnding(String last) {
+    return 'numero che termina con $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Ho ricevuto un avviso di sicurezza. Ero io, e cosa devo fare?';
+
+  @override
+  String get assistantStepScam => 'Controllo del messaggio';
 }

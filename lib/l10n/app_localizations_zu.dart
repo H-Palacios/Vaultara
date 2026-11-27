@@ -10736,4 +10736,79 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Kuvulekile esikrinini sakho. Qedela lapho, bese uthepha ukuze ukhulume futhi.';
+
+  @override
+  String get assistantUndoTitle => 'Hlehlisa ushintsho lokugcina';
+
+  @override
+  String get assistantUndoNothing => 'Ayikho into engahlehliswa kule ngxoxo.';
+
+  @override
+  String get assistantSecurityFixNote => 'Ukuphepha nobumfihlo kuyavuleka kuqale lokhu kulungisa.';
+
+  @override
+  String get assistantStopLinksTitle => 'Vala izixhumanisi zokwabelana';
+
+  @override
+  String get assistantStopLinksExpired => 'Izixhumanisi eziphelelwe yisikhathi nalezo ezingakaze zivulwe';
+
+  @override
+  String get assistantStopLinksAll => 'Zonke izixhumanisi zokwabelana';
+
+  @override
+  String get assistantStopLinksNote => 'Akekho ozophinde avule lezi zixhumanisi. Amarekhodi akho ahlala enjalo.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Izixhumanisi ezivaliwe: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Gcina izingxoxo isikhathi';
+
+  @override
+  String get chatKeepWeek => 'Iviki elingu-1';
+
+  @override
+  String get chatKeepMonth => 'Inyanga engu-1';
+
+  @override
+  String get chatKeepThreeMonths => 'Izinyanga ezi-3';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Izingxoxo zigcinwa ku-akhawunti yakho ukuze ubuyele kuzo, bese zisuswa ngokuzenzakalela. Gcina izingxoxo isikhathi: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Ungayigcini le ngxoxo';
+
+  @override
+  String get chatNotSaved => 'Le ngxoxo ayigcinwa. Lokho obekugciniwe kuyo kususiwe.';
+
+  @override
+  String get chatForgetTitle => 'Khohlwa le ngxoxo';
+
+  @override
+  String get chatForgetNote => 'Ingxoxo isuswa ku-akhawunti yakho futhi isuswe esikrinini.';
+
+  @override
+  String get secretPassword => 'Amaphasiwedi awabhalwa engxoxweni, futhi i-Ask Vaultara ayilidingi iphasiwedi. Lo mlayezo awuthunyelwanga futhi awugcinwanga.';
+
+  @override
+  String get secretCode => 'Amakhodi esikhathi esisodwa awabhalwa engxoxweni. I-Vaultara ayiwaceli, ngakho ungalinikezi noma ubani olicelayo. Lo mlayezo awuthunyelwanga futhi awugcinwanga.';
+
+  @override
+  String get secretCard => 'Izinombolo zamakhadi azibhalwa engxoxweni. Ukuze ulandele ikhadi, lengeze njengerekhodi nosuku lokuphelelwa kwalo. Lo mlayezo awuthunyelwanga futhi awugcinwanga.';
+
+  @override
+  String numberEnding(String last) {
+    return 'inombolo egcina ngo-$last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Ngithole isexwayiso sokuphepha. Bengiyimi yini, futhi kufanele ngenzeni?';
+
+  @override
+  String get assistantStepScam => 'Kuhlolwa umlayezo';
 }

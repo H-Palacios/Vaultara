@@ -10736,4 +10736,79 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'यो तपाईंको स्क्रिनमा खुला छ। त्यहीँ पूरा गर्नुहोस्, अनि फेरि बोल्न ट्याप गर्नुहोस्।';
+
+  @override
+  String get assistantUndoTitle => 'अन्तिम परिवर्तन पूर्ववत गर्नुहोस्';
+
+  @override
+  String get assistantUndoNothing => 'यो च्याटमा पूर्ववत गर्ने केही छैन।';
+
+  @override
+  String get assistantSecurityFixNote => 'सुरक्षा र गोपनीयता खुल्छ र यो सुधार सुरु गर्छ।';
+
+  @override
+  String get assistantStopLinksTitle => 'सेयर लिंकहरू बन्द गर्नुहोस्';
+
+  @override
+  String get assistantStopLinksExpired => 'म्याद सकिएका लिंक र कहिल्यै नखोलिएका लिंक';
+
+  @override
+  String get assistantStopLinksAll => 'सबै सेयर लिंक';
+
+  @override
+  String get assistantStopLinksNote => 'अब कसैले पनि यी लिंक खोल्न सक्दैन। तपाईंका रेकर्डहरू जस्ताको तस्तै रहन्छन्।';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'बन्द गरिएका लिंक: $count।';
+  }
+
+  @override
+  String get chatKeepTitle => 'च्याटहरू यति समय राख्नुहोस्';
+
+  @override
+  String get chatKeepWeek => '१ हप्ता';
+
+  @override
+  String get chatKeepMonth => '१ महिना';
+
+  @override
+  String get chatKeepThreeMonths => '३ महिना';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'च्याटहरू तपाईंको खातामा सुरक्षित हुन्छन् ताकि तपाईं फेरि फर्कन सक्नुहोस्, त्यसपछि आफैं मेटिन्छन्। च्याटहरू यति समय राख्नुहोस्: $period।';
+  }
+
+  @override
+  String get chatDontSave => 'यो च्याट सुरक्षित नगर्नुहोस्';
+
+  @override
+  String get chatNotSaved => 'यो च्याट सुरक्षित भइरहेको छैन। यसको जति सुरक्षित थियो त्यो मेटियो।';
+
+  @override
+  String get chatForgetTitle => 'यो च्याट बिर्सनुहोस्';
+
+  @override
+  String get chatForgetNote => 'च्याट तपाईंको खाताबाट मेटिन्छ र स्क्रिनबाट हट्छ।';
+
+  @override
+  String get secretPassword => 'पासवर्ड कहिल्यै च्याटमा लेखिँदैन, र Ask Vaultara लाई कहिल्यै पासवर्ड चाहिँदैन। यो सन्देश पठाइएन र सुरक्षित गरिएन।';
+
+  @override
+  String get secretCode => 'एक पटकका कोड कहिल्यै च्याटमा लेखिँदैनन्। Vaultara ले कहिल्यै यी माग्दैन, त्यसैले माग्ने कसैलाई कोड नदिनुहोस्। यो सन्देश पठाइएन र सुरक्षित गरिएन।';
+
+  @override
+  String get secretCard => 'कार्ड नम्बर कहिल्यै च्याटमा लेखिँदैनन्। कार्डमा नजर राख्न यसलाई म्याद सकिने मितिसहित रेकर्डको रूपमा थप्नुहोस्। यो सन्देश पठाइएन र सुरक्षित गरिएन।';
+
+  @override
+  String numberEnding(String last) {
+    return '$last मा अन्त्य हुने नम्बर';
+  }
+
+  @override
+  String get securityAlertQuestion => 'मलाई सुरक्षा सूचना आयो। के त्यो म नै थिएँ, र मैले के गर्नुपर्छ?';
+
+  @override
+  String get assistantStepScam => 'सन्देश जाँच गर्दै';
 }

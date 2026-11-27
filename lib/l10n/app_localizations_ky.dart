@@ -10735,4 +10735,79 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'Экраныңызда ачык турат. Ошол жерде бүтүрүп, кайра сүйлөө үчүн басыңыз.';
+
+  @override
+  String get assistantUndoTitle => 'Акыркы өзгөртүүнү жокко чыгаруу';
+
+  @override
+  String get assistantUndoNothing => 'Бул чатта жокко чыгара турган эч нерсе жок.';
+
+  @override
+  String get assistantSecurityFixNote => '«Коопсуздук жана купуялык» ачылып, ушул оңдоону баштайт.';
+
+  @override
+  String get assistantStopLinksTitle => 'Бөлүшүү шилтемелерин өчүрүү';
+
+  @override
+  String get assistantStopLinksExpired => 'Мөөнөтү бүткөн жана эч качан ачылбаган шилтемелер';
+
+  @override
+  String get assistantStopLinksAll => 'Бардык бөлүшүү шилтемелери';
+
+  @override
+  String get assistantStopLinksNote => 'Эми бул шилтемелерди эч ким ача албайт. Жазууларыңыз өзгөрүүсүз калат.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Өчүрүлгөн шилтемелер: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Чаттарды сактоо';
+
+  @override
+  String get chatKeepWeek => '1 жума';
+
+  @override
+  String get chatKeepMonth => '1 ай';
+
+  @override
+  String get chatKeepThreeMonths => '3 ай';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Чаттар кайра кайрылышыңыз үчүн аккаунтуңузда сакталат, андан кийин автоматтык түрдө өчүрүлөт. Чаттарды сактоо: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Бул чатты сактабоо';
+
+  @override
+  String get chatNotSaved => 'Бул чат сакталбайт. Андан сакталганы өчүрүлдү.';
+
+  @override
+  String get chatForgetTitle => 'Бул чатты унутуу';
+
+  @override
+  String get chatForgetNote => 'Чат аккаунтуңуздан жана экрандан өчүрүлөт.';
+
+  @override
+  String get secretPassword => 'Сырсөздөр эч качан чатка жазылбайт, ал эми Ask Vaultara\'га эч качан сырсөз керек эмес. Бул билдирүү жөнөтүлгөн жок жана сакталган жок.';
+
+  @override
+  String get secretCode => 'Бир жолку коддор эч качан чатка жазылбайт. Vaultara аларды эч качан сурабайт, ошондуктан сураган эч кимге код бербеңиз. Бул билдирүү жөнөтүлгөн жок жана сакталган жок.';
+
+  @override
+  String get secretCard => 'Карта номерлери эч качан чатка жазылбайт. Картаны көзөмөлдөө үчүн аны мөөнөтү бүткөн күнү менен жазуу катары кошуңуз. Бул билдирүү жөнөтүлгөн жок жана сакталган жок.';
+
+  @override
+  String numberEnding(String last) {
+    return '$last менен бүткөн номер';
+  }
+
+  @override
+  String get securityAlertQuestion => 'Коопсуздук эскертүүсүн алдым. Бул мен болдумбу жана эмне кылышым керек?';
+
+  @override
+  String get assistantStepScam => 'Билдирүү текшерилүүдө';
 }

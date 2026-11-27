@@ -10761,4 +10761,79 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get talkFinishOnScreen => 'It\'s open on your screen. Finish there, then tap to talk again.';
+
+  @override
+  String get assistantUndoTitle => 'Undo the last change';
+
+  @override
+  String get assistantUndoNothing => 'Nothing from this chat can be undone.';
+
+  @override
+  String get assistantSecurityFixNote => 'Security and privacy opens and starts this fix.';
+
+  @override
+  String get assistantStopLinksTitle => 'Turn off share links';
+
+  @override
+  String get assistantStopLinksExpired => 'Expired links and links never opened';
+
+  @override
+  String get assistantStopLinksAll => 'Every share link';
+
+  @override
+  String get assistantStopLinksNote => 'Nobody can open these links again. Your records stay as they are.';
+
+  @override
+  String assistantStopLinksDone(int count) {
+    return 'Links turned off: $count.';
+  }
+
+  @override
+  String get chatKeepTitle => 'Keep chats for';
+
+  @override
+  String get chatKeepWeek => '1 week';
+
+  @override
+  String get chatKeepMonth => '1 month';
+
+  @override
+  String get chatKeepThreeMonths => '3 months';
+
+  @override
+  String chatKeepNote(String period) {
+    return 'Chats are saved to your account so you can come back to them, then deleted automatically. Keep chats for: $period.';
+  }
+
+  @override
+  String get chatDontSave => 'Don\'t save this chat';
+
+  @override
+  String get chatNotSaved => 'This chat isn\'t saved. What was saved of it is deleted.';
+
+  @override
+  String get chatForgetTitle => 'Forget this chat';
+
+  @override
+  String get chatForgetNote => 'The chat is deleted from your account and cleared from the screen.';
+
+  @override
+  String get secretPassword => 'Passwords never go in the chat, and Ask Vaultara never needs one. This message wasn\'t sent or saved.';
+
+  @override
+  String get secretCode => 'One-time codes never go in the chat. Vaultara never asks for them, so don\'t give one to anyone who does. This message wasn\'t sent or saved.';
+
+  @override
+  String get secretCard => 'Card numbers never go in the chat. To track a card, add it as a record with its expiry date. This message wasn\'t sent or saved.';
+
+  @override
+  String numberEnding(String last) {
+    return 'number ending in $last';
+  }
+
+  @override
+  String get securityAlertQuestion => 'I got a security alert. Was it me, and what should I do?';
+
+  @override
+  String get assistantStepScam => 'Checking the message';
 }

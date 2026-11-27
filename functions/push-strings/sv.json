@@ -32,5 +32,7 @@
   "monthAheadBodyCost": "Att förnya den här månaden: {count}, cirka {cost}. Tryck för att se vad du ska göra.",
   "monthAheadBodyCountTrips": "Att förnya den här månaden: {count}. Resor de kommande 6 veckorna: {trips}. Tryck för att se vad du ska göra.",
   "monthAheadBodyCostTrips": "Att förnya den här månaden: {count}, cirka {cost}. Resor de kommande 6 veckorna: {trips}. Tryck för att se vad du ska göra.",
-  "monthAheadBodyTrips": "Inget att förnya den här månaden. Resor de kommande 6 veckorna: {trips}. Tryck för att se vad du ska göra."
+  "monthAheadBodyTrips": "Inget att förnya den här månaden. Resor de kommande 6 veckorna: {trips}. Tryck för att se vad du ska göra.",
+  "securityTwoStepOffTitle": "Inloggning i två steg har stängts av",
+  "securityTwoStepOffBody": "Om det inte var du, öppna Vaultara nu och skydda ditt konto."
 }
