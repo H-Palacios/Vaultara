@@ -374,10 +374,16 @@ exports.createShareLink = onCall(CALLABLE, async (request) => {
   const now = Date.now();
   const expiresAtMs = now + hours * 60 * 60 * 1000;
 
+  // Who the link is for, in the user's words ("my travel agent"), so
+  // Shared links and Ask Vaultara can say who can still see it.
+  const label = typeof request.data?.label === "string" ? request.data.label.trim().slice(0, 40) : "";
+
   await db.collection("shares").doc(token).set({
     uid,
     recordId,
     name: String(record.name || ""),
+    ...(label ? { label } : {}),
+    opens: 0,
     expiryDate: admin.firestore.Timestamp.fromDate(expiryDay),
     groupKey: String(record.subcategoryName || ""),
     attachments,
@@ -471,6 +477,12 @@ exports.getShare = onRequest({ cors: SHARE_ALLOWED_ORIGINS, maxInstances: 20 }, 
 
     const expiry = toDate(data.expiryDate);
 
+    // Counted for "who can see my stuff". Best effort: a failed count never
+    // stops the page from opening.
+    ref
+      .update({ opens: admin.firestore.FieldValue.increment(1), lastOpenedAt: admin.firestore.Timestamp.now() })
+      .catch(() => {});
+
     res.status(200).json({
       name: String(data.name || ""),
       expiryDate: expiry ? expiry.toISOString() : null,
@@ -536,3 +548,4 @@ exports.revokeShareLink = onCall(CALLABLE, async (request) => {
 exports.sendSupportEmail = require("./support-mail").sendSupportEmail;
 exports.emailHouseholdInvite = require("./household-invite-mail").emailHouseholdInvite;
 exports.monthAheadJob = require("./month-ahead").monthAheadJob;
+exports.revokeShareLinks = require("./share-links").revokeShareLinks;

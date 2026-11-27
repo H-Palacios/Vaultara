@@ -28,7 +28,7 @@ service cloud.firestore {
     function profileKeys() {
       return ['firstName', 'lastName', 'fullName', 'email', 'createdAt',
               'updatedAt', 'recordsMigrated', 'groupsMigrated', 'companyName',
-              'avatarPath', 'avatarVersion', 'monthlySummary', 'monthAhead',
+              'avatarPath', 'avatarVersion', 'monthlySummary', 'monthAhead', 'chatKeepDays',
               'preferredLanguage', 'utcOffsetMinutes', 'nationality',
               'complianceReport', 'residence', 'consent', 'analyticsConsent',
               'extraPassports', 'passportRecords'];
@@ -111,6 +111,7 @@ service cloud.firestore {
       let d = request.resource.data;
       return (!('monthlySummary' in d) || d.monthlySummary is bool)
         && (!('monthAhead' in d) || d.monthAhead is bool)
+        && (!('chatKeepDays' in d) || d.chatKeepDays in [7, 30, 90])
         && (!('complianceReport' in d) || d.complianceReport is bool)
         && (!('preferredLanguage' in d) || d.preferredLanguage == null
             || (d.preferredLanguage is string
@@ -552,9 +553,11 @@ service cloud.firestore {
             && request.resource.data[field].matches('^[a-z_]{1,24}$'));
     }
 
+    // Chats are kept for a week, a month or three months, as the user
+    // chooses (chatKeepDays), and then deleted by the expireAt policy.
     function assistantExpiryOk(d) {
       return d.expireAt is timestamp
-        && d.expireAt > request.time + duration.value(88, 'd')
+        && d.expireAt > request.time + duration.value(6, 'd')
         && d.expireAt < request.time + duration.value(92, 'd');
     }
 

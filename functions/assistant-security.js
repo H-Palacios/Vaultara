@@ -12,6 +12,15 @@ const MAX_DEVICES = 15;
 const MAX_EVENTS = 30;
 const HISTORY_DAYS = 90;
 const DAY_MS = 24 * 60 * 60 * 1000;
+// Sign-ins before 05:00 where the user is count as odd hours.
+const ODD_HOUR_END = 5;
+
+// The time of day where the user is, from their UTC offset in minutes.
+function localTime(ms, offsetMinutes) {
+  const local = new Date(ms + (offsetMinutes || 0) * 60 * 1000);
+  const hour = local.getUTCHours();
+  return { hour, time: `${String(hour).padStart(2, "0")}:${String(local.getUTCMinutes()).padStart(2, "0")}` };
+}
 
 // What each kind of event in Security history means, in plain words.
 const EVENT_MEANINGS = {
@@ -49,7 +58,7 @@ module.exports = function build(h) {
   const SECURITY_HISTORY = {
     name: "security_history",
     description:
-      `What happened to the account in the last ${HISTORY_DAYS} days, newest first, as in Security history: sign-ins (with the device), password, email and two-step changes, sign-outs, data downloads and share links. Use it with list_devices for "has anyone else signed in to my account".`,
+      `What happened to the account in the last ${HISTORY_DAYS} days, newest first, as in Security history: sign-ins (with the device, the local time, whether it was at an odd hour and whether it came from a network not seen before), password, email and two-step changes, sign-outs, data downloads and share links. Use it with list_devices for "has anyone else signed in to my account" and "was I hacked".`,
     input_schema: { type: "object", properties: {} },
   };
 
@@ -92,19 +101,32 @@ module.exports = function build(h) {
   async function securityHistory(ctx) {
     const since = Date.now() - HISTORY_DAYS * DAY_MS;
     const snap = await ctx.userRef.collection("securityEvents").orderBy("at", "desc").limit(MAX_EVENTS).get();
-    const events = [];
+    const rows = [];
     for (const doc of snap.docs) {
       const data = doc.data() || {};
       const at = toMillis(data.at);
       if (at === null || at < since) continue;
-      const type = str(data.type, 40);
-      events.push({
-        date: day(at, ctx),
-        what: EVENT_MEANINGS[type] || type,
-        device: str(data.device, 120) || null,
-      });
+      rows.push({ at, type: str(data.type, 40), device: str(data.device, 120) || null, network: str(data.ip, 60) || null });
     }
-    return { days: HISTORY_DAYS, events };
+    // Newest first. A sign-in is from a new network when no older event in
+    // the list came from it; the network itself is never shown.
+    const events = rows.map((row, i) => {
+      const local = localTime(row.at, ctx.offset);
+      const older = rows.slice(i + 1);
+      return {
+        date: day(row.at, ctx),
+        time: local.time,
+        odd_hour: local.hour < ODD_HOUR_END,
+        what: EVENT_MEANINGS[row.type] || row.type,
+        device: row.device,
+        new_network: row.network && older.length ? !older.some((o) => o.network === row.network) : null,
+      };
+    });
+    return {
+      days: HISTORY_DAYS,
+      events,
+      note: "For \"was I hacked\": point out sign-ins on new devices, from a new network (new_network) and at odd hours (odd_hour, between midnight and 5 in the morning where the user is). Each can still be the user, so ask if they recognise it. Never guess it was someone else.",
+    };
   }
 
   function proposeSignOutOthers(actions) {

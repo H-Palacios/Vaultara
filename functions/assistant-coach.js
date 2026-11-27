@@ -604,6 +604,7 @@ module.exports = function build(h) {
 
 module.exports.WEB_SEARCH_TOOL = WEB_SEARCH_TOOL;
 module.exports.TALK_PROMPT = TALK_PROMPT;
+module.exports.recordKind = recordKind;
 module.exports.COACH_PROMPT = COACH_PROMPT;
 module.exports.HISTORY_PROMPT = HISTORY_PROMPT;
 module.exports.citationsOf = citationsOf;

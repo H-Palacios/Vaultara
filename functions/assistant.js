@@ -33,6 +33,7 @@ const MAX_TOKENS = 1600;
 const MAX_ITERATIONS = 8;
 const MAX_RESULTS = 50;
 const MAX_ACTIONS = 8;
+const { scrubSecrets } = require("./secret-scrub");
 // The id Vaultara gives a phone (DeviceRegistry), 32 hex characters.
 const DEVICE_ID_PATTERN = /^[0-9a-f]{32}$/;
 const MAX_LEARNED_WORDS = 100;
@@ -866,6 +867,26 @@ const TOOLS_V20 = [
   SUGGEST_REPLIES,
 ];
 const NAMES_V20 = new Set(TOOLS_V20.map((t) => t.name));
+// Protocol 21: scam check, lost wallet help, the renewal guide, cost
+// forecast, tidy-up, undo from the chat, family overview, the security
+// check-up, share links, chat privacy and the guard for scanned text.
+const V21 = require("./assistant-v21")({
+  admin,
+  str,
+  isoDay,
+  dayNumber,
+  toMillis,
+  pushAction,
+  draftReady,
+  resolveGroup,
+  LOCKED_LABEL,
+});
+const TOOLS_V21 = [
+  ...TOOLS_V20.filter((t) => t.name !== "suggest_replies"),
+  ...V21.TOOLS.map(V17.withFields),
+  SUGGEST_REPLIES,
+];
+const NAMES_V21 = new Set(TOOLS_V21.map((t) => t.name));
 let webSearchOff = false;
 
 // Sent when a turn ended with no words and no card.
@@ -2230,6 +2251,13 @@ function proposeSetting(input, actions, settings = SETTINGS) {
 
 async function runTool(ctx, name, input, actions, allowed) {
   if (!allowed.has(name)) return { error: "Unknown tool." };
+  if (ctx.v21) {
+    const blocked = V21.guardTool(name, ctx.latestUserText);
+    if (blocked) return blocked;
+  }
+  if (ctx.v21 && V21.NAMES.has(name)) {
+    return V17.around(ctx, name, input, actions, (n, i) => V21.run(ctx, n, i, actions));
+  }
   if (ctx.v20 && V20.NAMES.has(name)) {
     return V17.around(ctx, name, input, actions, (n, i) => V20.run(ctx, n, i, actions));
   }
@@ -2315,7 +2343,7 @@ async function runToolCore(ctx, name, input, actions) {
 }
 
 // Built once when the module loads, so it may only use its own arguments.
-function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false, v10 = false, v13 = false, v14 = false, v15 = false, v16 = false, v17 = false, v18 = false, v19 = false, v20 = false) {
+function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = false, v10 = false, v13 = false, v14 = false, v15 = false, v16 = false, v17 = false, v18 = false, v19 = false, v20 = false, v21 = false) {
   const lines = [
     "You are the Vaultara assistant inside the Vaultara app, which tracks expiry dates of documents, cards, licences, permits and policies.",
     "Help with the user's own records, people, trips and renewals in Vaultara, and answer questions about how the app works and where things are. Politely decline unrelated topics in one sentence.",
@@ -2408,6 +2436,7 @@ function staticPrompt(v2, v3 = false, v4 = false, v5 = false, v6 = false, v7 = f
   if (v18) lines.push(...V18.GUIDE);
   if (v19) lines.push(...V19.GUIDE);
   if (v20) lines.push(...V20.GUIDE);
+  if (v21) lines.push(...V21.GUIDE);
   return lines.join("\n");
 }
 
@@ -2427,6 +2456,7 @@ const STATIC_PROMPT_V17 = staticPrompt(true, true, true, true, true, true, true,
 const STATIC_PROMPT_V18 = staticPrompt(true, true, true, true, true, true, true, true, true, true, true, true, true);
 const STATIC_PROMPT_V19 = staticPrompt(true, true, true, true, true, true, true, true, true, true, true, true, true, true);
 const STATIC_PROMPT_V20 = staticPrompt(true, true, true, true, true, true, true, true, true, true, true, true, true, true, true);
+const STATIC_PROMPT_V21 = staticPrompt(true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true);
 
 // From protocol 19 a new pet's chip, vet and documents go on its card, so
 // the protocol 17 line saying they are added later on the pet's page is
@@ -2497,6 +2527,7 @@ function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false,
     dynamic.push(COACH_MODULE.HISTORY_PROMPT);
     if (ctx.talk) dynamic.push(COACH_MODULE.TALK_PROMPT);
     if (ctx.talk && ctx.v20) dynamic.push(V20.TALK_GUIDE);
+    if (ctx.talk && ctx.v21) dynamic.push(V21.TALK_GUIDE);
   }
   if (ctx.v20) {
     dynamic.push(ctx.userData?.monthAhead === true ? "The month ahead notification is on." : "The month ahead notification is off.");
@@ -2509,7 +2540,7 @@ function systemPrompt(ctx, lang, intent, v2, v3 = false, v4 = false, v5 = false,
   return [
     {
       type: "text",
-      text: ctx.v20 && v10 ? STATIC_PROMPT_V20 : ctx.v19 && v10 ? STATIC_PROMPT_V19 : ctx.v18 && v10 ? STATIC_PROMPT_V18 : ctx.v17 && v10 ? STATIC_PROMPT_V17 : ctx.v16 && v10 ? STATIC_PROMPT_V16 : ctx.v15 && v10 ? STATIC_PROMPT_V15 : ctx.v14 && v10 ? STATIC_PROMPT_V14 : ctx.v13 && v10 ? STATIC_PROMPT_V13 : v10 ? STATIC_PROMPT_V10 : v7 ? STATIC_PROMPT_V7 : v6 ? STATIC_PROMPT_V6 : v5 ? STATIC_PROMPT_V5 : v4 ? STATIC_PROMPT_V4 : v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1,
+      text: ctx.v21 && v10 ? STATIC_PROMPT_V21 : ctx.v20 && v10 ? STATIC_PROMPT_V20 : ctx.v19 && v10 ? STATIC_PROMPT_V19 : ctx.v18 && v10 ? STATIC_PROMPT_V18 : ctx.v17 && v10 ? STATIC_PROMPT_V17 : ctx.v16 && v10 ? STATIC_PROMPT_V16 : ctx.v15 && v10 ? STATIC_PROMPT_V15 : ctx.v14 && v10 ? STATIC_PROMPT_V14 : ctx.v13 && v10 ? STATIC_PROMPT_V13 : v10 ? STATIC_PROMPT_V10 : v7 ? STATIC_PROMPT_V7 : v6 ? STATIC_PROMPT_V6 : v5 ? STATIC_PROMPT_V5 : v4 ? STATIC_PROMPT_V4 : v3 ? STATIC_PROMPT_V3 : v2 ? STATIC_PROMPT_V2 : STATIC_PROMPT_V1,
       cache_control: { type: "ephemeral" },
     },
     { type: "text", text: dynamic.join("\n") },
@@ -2607,6 +2638,8 @@ async function stepFor(ctx, name, input) {
       if (v16 !== undefined) return v16;
       const v17 = ctx.v17 ? V17.step(ctx, name, input) : undefined;
       if (v17 !== undefined) return v17;
+      const v21 = ctx.v21 ? V21.step(ctx, name, input) : undefined;
+      if (v21 !== undefined) return v21;
       const v20 = ctx.v20 ? V20.step(ctx, name, input) : undefined;
       if (v20 !== undefined) return v20;
       const v19 = ctx.v19 ? V19.step(ctx, name, input) : undefined;
@@ -2661,6 +2694,9 @@ const SMART_TOOLS = new Set([
   "propose_renewal_plan",
   "propose_records",
   "security_history",
+  "scam_check",
+  "tidy_records",
+  "cost_forecast",
 ]);
 
 function lastUserText(messages) {
@@ -2829,6 +2865,9 @@ exports.askVaultara = onCall(
 
     const messages = cleanMessages(request.data?.messages);
     if (!messages) throw new HttpsError("invalid-argument", "bad-messages");
+    // Passwords, one-time codes and card numbers are removed before the
+    // chat is read, whatever app version sent it.
+    for (const m of messages) m.content = scrubSecrets(m.content).text;
     const intent = request.data?.intent === "propose" ? "propose" : "chat";
     const version = Number(request.data?.v) || 1;
     const v2 = version >= 2;
@@ -2846,6 +2885,7 @@ exports.askVaultara = onCall(
     const v18 = version >= 18 && intent === "chat";
     const v19 = version >= 19 && intent === "chat";
     const v20 = version >= 20 && intent === "chat";
+    const v21 = version >= 21 && intent === "chat";
     const v7 = version >= 7 && intent === "chat";
     const v8 = version >= 8 && intent === "chat";
     const v9 = version >= 9;
@@ -2895,6 +2935,12 @@ exports.askVaultara = onCall(
     ctx.v18 = v18;
     ctx.v19 = v19;
     ctx.v20 = v20;
+    ctx.v21 = v21;
+    // Version 21: the phone's security check-up (which items are still to
+    // do), and the latest message, so text read from a photo can never ask
+    // for a change.
+    ctx.checkup = v21 ? V21.readCheckup(request.data?.security) : null;
+    ctx.latestUserText = V21.latestUserText(messages);
     // This phone, so Ask Vaultara can tell it apart in the devices list.
     ctx.deviceId = v20 && typeof request.data?.device === "string" && DEVICE_ID_PATTERN.test(request.data.device) ? request.data.device : null;
     ctx.talk = v12 && request.data?.mode === "talk";
@@ -2902,10 +2948,10 @@ exports.askVaultara = onCall(
     ctx.learned = v11 ? await ctx.learnedWords() : [];
     ctx.lifePlanList = v7 ? await ctx.activeLifePlans() : [];
     const system = systemPrompt(ctx, lang, intent, v2, v3, v4, v5, v6, v7, v10);
-    const baseTools = v20 ? TOOLS_V20 : v19 ? TOOLS_V19 : v18 ? TOOLS_V18 : v17 ? TOOLS_V17 : v16 ? TOOLS_V16 : v15 ? TOOLS_V15 : v14 ? TOOLS_V14 : v13 ? TOOLS_V13 : v12 ? TOOLS_V12 : v11 ? TOOLS_V11 : v10 ? TOOLS_V10 : v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
+    const baseTools = v21 ? TOOLS_V21 : v20 ? TOOLS_V20 : v19 ? TOOLS_V19 : v18 ? TOOLS_V18 : v17 ? TOOLS_V17 : v16 ? TOOLS_V16 : v15 ? TOOLS_V15 : v14 ? TOOLS_V14 : v13 ? TOOLS_V13 : v12 ? TOOLS_V12 : v11 ? TOOLS_V11 : v10 ? TOOLS_V10 : v8 ? TOOLS_V8 : v7 ? TOOLS_V7 : v6 ? TOOLS_V6 : v5 ? TOOLS_V5 : v4 ? TOOLS_V4 : v3 ? TOOLS_V3 : v2 ? TOOLS_V2 : TOOLS_V1;
     const groupTools = v9 ? withGroupsV9(baseTools) : baseTools;
     const tools = ctx.webSearch ? [...groupTools, COACH_MODULE.WEB_SEARCH_TOOL] : groupTools;
-    const allowed = v20 ? NAMES_V20 : v19 ? NAMES_V19 : v18 ? NAMES_V18 : v17 ? NAMES_V17 : v16 ? NAMES_V16 : v15 ? NAMES_V15 : v14 ? NAMES_V14 : v13 ? NAMES_V13 : v12 ? NAMES_V12 : v11 ? NAMES_V11 : v10 ? NAMES_V10 : v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
+    const allowed = v21 ? NAMES_V21 : v20 ? NAMES_V20 : v19 ? NAMES_V19 : v18 ? NAMES_V18 : v17 ? NAMES_V17 : v16 ? NAMES_V16 : v15 ? NAMES_V15 : v14 ? NAMES_V14 : v13 ? NAMES_V13 : v12 ? NAMES_V12 : v11 ? NAMES_V11 : v10 ? NAMES_V10 : v8 ? NAMES_V8 : v7 ? NAMES_V7 : v6 ? NAMES_V6 : v5 ? NAMES_V5 : v4 ? NAMES_V4 : v3 ? NAMES_V3 : v2 ? NAMES_V2 : NAMES_V1;
     const progress = new RunProgress(uid, v3 ? runId : null);
     let replies = [];
     const conversation = messages.map((m) => ({ role: m.role, content: m.content }));
@@ -3121,11 +3167,14 @@ exports._test = {
   TOOLS_V20,
   NAMES_V20,
   SETTINGS_V20,
+  TOOLS_V21,
+  NAMES_V21,
   STATIC_PROMPT_V16,
   STATIC_PROMPT_V17,
   STATIC_PROMPT_V18,
   STATIC_PROMPT_V19,
   STATIC_PROMPT_V20,
+  STATIC_PROMPT_V21,
   helpers: { str, pushAction, draftReady },
   systemPrompt,
 };

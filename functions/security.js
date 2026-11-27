@@ -626,6 +626,19 @@ exports.beforeSignin = beforeUserSignedIn({ maxInstances: 100, timeoutSeconds: 7
   }
 });
 
+// The push for a security alert. Both open Ask Vaultara (type "security").
+function securityPush(type, device) {
+  if (type === "twoStepDisabled") {
+    return { titleKey: "securityTwoStepOffTitle", bodyKey: "securityTwoStepOffBody", params: {}, data: { type: "security" } };
+  }
+  return {
+    titleKey: "securityNewSignInTitle",
+    bodyKey: device ? "securityNewSignInBody" : "securityNewSignInBodyNoDevice",
+    params: device ? { device } : {},
+    data: { type: "security" },
+  };
+}
+
 function pushModule() {
   try {
     const mod = require("./push");
@@ -680,18 +693,15 @@ exports.onSecurityAlertCreated = onDocumentCreated(
       }
     }
 
-    if (type === "newSignIn") {
+    // The push opens Ask Vaultara in the app, which explains what happened
+    // and offers the fix (type "security").
+    if (type === "newSignIn" || type === "twoStepDisabled") {
       const push = pushModule();
       if (push) {
         try {
           await push.sendToUser(
             uid,
-            {
-              titleKey: "securityNewSignInTitle",
-              bodyKey: claimed.device ? "securityNewSignInBody" : "securityNewSignInBodyNoDevice",
-              params: claimed.device ? { device: claimed.device } : {},
-              data: { type: "security" },
-            },
+            securityPush(type, claimed.device),
             { updatedBefore: atMs }
           );
         } catch (err) {
@@ -984,3 +994,4 @@ exports.maskIp = maskIp;
 exports.maskEmail = maskEmail;
 exports.deviceKey = deviceKey;
 exports.deviceLabelFrom = deviceLabelFrom;
+exports.securityPush = securityPush;
