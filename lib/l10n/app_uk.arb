@@ -4423,5 +4423,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Написати в підтримку Vorkalis",
+  "assistantSupportMessage": "Повідомлення",
+  "assistantSupportNote": "Додаються версія застосунку, телефон, система, мова й тариф. Підтримка відповість на адресу, з якою ви входите.",
+  "assistantSupportSent": "Надіслано в підтримку Vorkalis. Відповідь на {email} має надійти протягом одного робочого дня.",
+  "assistantSupportLimit": "Сьогодні ви вже кілька разів писали в підтримку. Спробуйте завтра або напишіть напряму на support@vorkalis.com.",
+  "assistantSupportVerify": "Спершу підтвердьте адресу електронної пошти, щоб підтримка могла вам відповісти.",
+  "assistantSupportFailed": "Не вдалося надіслати лист. Спробуйте пізніше або напишіть напряму на support@vorkalis.com.",
+  "assistantInviteTitle": "Запросити до домогосподарства",
+  "assistantInviteNote": "Vaultara надішле цій людині посилання-запрошення поштою. Воно діє один раз протягом 7 днів.",
+  "assistantInviteSent": "Запрошення надіслано на {email}.",
+  "assistantInviteFailed": "Не вдалося надіслати запрошення. Спробуйте ще раз або поділіться запрошенням зі свого домогосподарства.",
+  "assistantCalendarNote": "Відкриється застосунок календаря з подією та нагадуванням за 7 днів.",
+  "assistantSendLinkTitle": "Надіслати захищене посилання",
+  "assistantSendLinkWorks": "Посилання діє",
+  "assistantSendLinkHours": "{hours} год",
+  "assistantSendLinkNote": "Надсилається лише посилання, ніколи самі дані. Ви обираєте, як його надіслати, і можете зупинити його раніше в розділі «{sharedLinks}».",
+  "monthAheadTitle": "Місяць наперед",
+  "monthAheadSubtitle": "1-го числа {assistant} надсилає, що потрібно поновити, скільки це коштує, і ваші найближчі поїздки",
+  "monthAheadQuestion": "Що мені треба зробити цього місяця?",
+  "assistantStepSupport": "Пишу ваш лист",
+  "assistantStepSecurity": "Перевіряю безпеку вашого облікового запису",
+  "talkFinishOnScreen": "Це відкрито на екрані. Завершіть там, потім торкніться, щоб знову говорити."
 }

@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Staff document expired",
   "staffOverdueYesterday": "{name} for {person} expired yesterday and has not been renewed.",
   "staffOverdueWeek": "{name} for {person} expired a week ago and has still not been renewed.",
-  "staffOverdueMany": "{count} staff documents expired and have not been renewed: {names}."
+  "staffOverdueMany": "{count} staff documents expired and have not been renewed: {names}.",
+  "monthAheadTitle": "Your month ahead",
+  "monthAheadBodyCount": "To renew this month: {count}. Tap to see what to do.",
+  "monthAheadBodyCost": "To renew this month: {count}, about {cost}. Tap to see what to do.",
+  "monthAheadBodyCountTrips": "To renew this month: {count}. Trips in the next 6 weeks: {trips}. Tap to see what to do.",
+  "monthAheadBodyCostTrips": "To renew this month: {count}, about {cost}. Trips in the next 6 weeks: {trips}. Tap to see what to do.",
+  "monthAheadBodyTrips": "Nothing to renew this month. Trips in the next 6 weeks: {trips}. Tap to see what to do."
 }

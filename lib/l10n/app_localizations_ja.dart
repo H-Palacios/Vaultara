@@ -3141,16 +3141,16 @@ class AppLocalizationsJa extends AppLocalizations {
   String get planGetPremium => 'プレミアムに加入';
 
   @override
-  String get businessPlanBuy => 'ビジネスに加入';
-
-  @override
   String get individualPlanBuy => '個人を購入';
 
   @override
-  String get businessPlanSwitch => 'ビジネスに切り替える';
+  String get individualPlanSwitch => '個人に切り替え';
 
   @override
-  String get individualPlanSwitch => '個人に切り替え';
+  String get businessPlanBuy => 'ビジネスに加入';
+
+  @override
+  String get businessPlanSwitch => 'ビジネスに切り替える';
 
   @override
   String get planSwitchToYearly => '年払いに切り替える';
@@ -6619,27 +6619,27 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return '${name}のワクチン接種を追加';
+    return '$nameのワクチン接種を追加';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return '${name}のマイクロチップを追加';
+    return '$nameのマイクロチップを追加';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return '${name}のペット保険を追加';
+    return '$nameのペット保険を追加';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return '${name}のパスポートを追加';
+    return '$nameのパスポートを追加';
   }
 
   @override
   String talkNextStep(String step) {
-    return '次は：${step}。進めるには「はい」と言ってください。';
+    return '次は：$step。進めるには「はい」と言ってください。';
   }
 
   @override
@@ -8915,10 +8915,10 @@ class AppLocalizationsJa extends AppLocalizations {
   String get petTypeFieldHint => 'ペットの種類を入力してください';
 
   @override
-  String get petBirthdayHint => '生年月日を選択';
+  String get petTypeRequired => 'ペットの種類を選んでください';
 
   @override
-  String get petTypeRequired => 'ペットの種類を選んでください';
+  String get petBirthdayHint => '生年月日を選択';
 
   @override
   String get petChipHint => 'マイクロチップ番号を入力してください';
@@ -10584,4 +10584,80 @@ class AppLocalizationsJa extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return '今日の「Vaultaraに聞く」の上限に達しました。明日の $time にリセットされます。Vaultara のほかの機能はいつも通り使えます。';
   }
+
+  @override
+  String get assistantSupportTitle => 'Vorkalis サポートにメール';
+
+  @override
+  String get assistantSupportMessage => 'メッセージ';
+
+  @override
+  String get assistantSupportNote => 'アプリのバージョン、端末、OS、言語、プランが追加されます。サポートはサインインに使っているメールアドレスに返信します。';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Vorkalis サポートに送信しました。1 営業日以内に $email に返信が届く予定です。';
+  }
+
+  @override
+  String get assistantSupportLimit => '今日はすでに何度かサポートにメールしています。明日もう一度お試しいただくか、support@vorkalis.com に直接お送りください。';
+
+  @override
+  String get assistantSupportVerify => 'サポートが返信できるよう、先にメールアドレスを確認してください。';
+
+  @override
+  String get assistantSupportFailed => 'メールを送信できませんでした。後でもう一度お試しいただくか、support@vorkalis.com に直接お送りください。';
+
+  @override
+  String get assistantInviteTitle => '世帯に招待';
+
+  @override
+  String get assistantInviteNote => 'Vaultara から招待リンクをメールで送ります。リンクは 1 回、7 日間使えます。';
+
+  @override
+  String assistantInviteSent(String email) {
+    return '$email に招待を送信しました。';
+  }
+
+  @override
+  String get assistantInviteFailed => '招待を送信できませんでした。もう一度お試しいただくか、世帯の画面から招待を共有してください。';
+
+  @override
+  String get assistantCalendarNote => 'カレンダーアプリが予定と 7 日前の通知付きで開きます。';
+
+  @override
+  String get assistantSendLinkTitle => '安全なリンクを送る';
+
+  @override
+  String get assistantSendLinkWorks => 'リンクの有効期間';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours 時間';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return '送られるのはリンクだけで、詳細そのものは送られません。送り方はご自身で選べ、$sharedLinks で早めに停止することもできます。';
+  }
+
+  @override
+  String get monthAheadTitle => '今月の予定';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return '毎月 1 日に $assistant が、更新が必要なもの、その費用、今後の旅行をお知らせします';
+  }
+
+  @override
+  String get monthAheadQuestion => '今月は何をすればいいですか？';
+
+  @override
+  String get assistantStepSupport => 'メールを作成しています';
+
+  @override
+  String get assistantStepSecurity => 'アカウントのセキュリティを確認しています';
+
+  @override
+  String get talkFinishOnScreen => '画面に開いています。そこで完了してから、タップしてもう一度話してください。';
 }

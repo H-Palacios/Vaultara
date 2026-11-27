@@ -4156,5 +4156,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Пишете на поддръжката на Vorkalis",
+  "assistantSupportMessage": "Съобщение",
+  "assistantSupportNote": "Добавят се версията на приложението, телефонът, системата, езикът и планът. Поддръжката отговаря на имейла, с който влизате.",
+  "assistantSupportSent": "Изпратено до поддръжката на Vorkalis. Трябва да получите отговор на {email} до един работен ден.",
+  "assistantSupportLimit": "Днес вече писахте няколко пъти на поддръжката. Опитайте утре или пишете направо на support@vorkalis.com.",
+  "assistantSupportVerify": "Първо потвърдете имейл адреса си, за да може поддръжката да ви отговори.",
+  "assistantSupportFailed": "Имейлът не можа да бъде изпратен. Опитайте по-късно или пишете направо на support@vorkalis.com.",
+  "assistantInviteTitle": "Поканете в домакинството си",
+  "assistantInviteNote": "Vaultara им изпраща по имейл връзка с покана. Тя работи веднъж, в рамките на 7 дни.",
+  "assistantInviteSent": "Поканата е изпратена до {email}.",
+  "assistantInviteFailed": "Поканата не можа да бъде изпратена. Опитайте отново или споделете покана от домакинството си.",
+  "assistantCalendarNote": "Приложението ви за календар се отваря със събитието и напомняне 7 дни преди това.",
+  "assistantSendLinkTitle": "Изпратете защитена връзка",
+  "assistantSendLinkWorks": "Връзката важи",
+  "assistantSendLinkHours": "{hours} ч",
+  "assistantSendLinkNote": "Изпраща се само връзка, никога самите данни. Вие избирате как да я изпратите и можете да я спрете по-рано в „{sharedLinks}“.",
+  "monthAheadTitle": "Месецът напред",
+  "monthAheadSubtitle": "На 1-во число {assistant} ви изпраща какво трябва да подновите, колко струва и предстоящите ви пътувания",
+  "monthAheadQuestion": "Какво трябва да направя този месец?",
+  "assistantStepSupport": "Пиша имейла ви",
+  "assistantStepSecurity": "Проверявам сигурността на акаунта ви",
+  "talkFinishOnScreen": "Отворено е на екрана. Довършете там и докоснете, за да говорите отново."
 }

@@ -26,5 +26,11 @@
   "staffOverdueTitle": "ਸਟਾਫ਼ ਦਾ ਦਸਤਾਵੇਜ਼ ਖ਼ਤਮ ਹੋ ਗਿਆ",
   "staffOverdueYesterday": "{person} ਦਾ {name} ਕੱਲ੍ਹ ਖ਼ਤਮ ਹੋ ਗਿਆ ਅਤੇ ਨਵਿਆਇਆ ਨਹੀਂ ਗਿਆ।",
   "staffOverdueWeek": "{person} ਦਾ {name} ਇੱਕ ਹਫ਼ਤਾ ਪਹਿਲਾਂ ਖ਼ਤਮ ਹੋ ਗਿਆ ਅਤੇ ਅਜੇ ਵੀ ਨਵਿਆਇਆ ਨਹੀਂ ਗਿਆ।",
-  "staffOverdueMany": "ਸਟਾਫ਼ ਦੇ {count} ਦਸਤਾਵੇਜ਼ ਖ਼ਤਮ ਹੋ ਗਏ ਹਨ ਅਤੇ ਨਵਿਆਏ ਨਹੀਂ ਗਏ: {names}।"
+  "staffOverdueMany": "ਸਟਾਫ਼ ਦੇ {count} ਦਸਤਾਵੇਜ਼ ਖ਼ਤਮ ਹੋ ਗਏ ਹਨ ਅਤੇ ਨਵਿਆਏ ਨਹੀਂ ਗਏ: {names}।",
+  "monthAheadTitle": "ਤੁਹਾਡਾ ਆਉਣ ਵਾਲਾ ਮਹੀਨਾ",
+  "monthAheadBodyCount": "ਇਸ ਮਹੀਨੇ ਨਵਿਆਉਣਾ: {count}। ਕੀ ਕਰਨਾ ਹੈ ਦੇਖਣ ਲਈ ਟੈਪ ਕਰੋ।",
+  "monthAheadBodyCost": "ਇਸ ਮਹੀਨੇ ਨਵਿਆਉਣਾ: {count}, ਲਗਭਗ {cost}। ਕੀ ਕਰਨਾ ਹੈ ਦੇਖਣ ਲਈ ਟੈਪ ਕਰੋ।",
+  "monthAheadBodyCountTrips": "ਇਸ ਮਹੀਨੇ ਨਵਿਆਉਣਾ: {count}। ਅਗਲੇ 6 ਹਫ਼ਤਿਆਂ ਦੀਆਂ ਯਾਤਰਾਵਾਂ: {trips}। ਕੀ ਕਰਨਾ ਹੈ ਦੇਖਣ ਲਈ ਟੈਪ ਕਰੋ।",
+  "monthAheadBodyCostTrips": "ਇਸ ਮਹੀਨੇ ਨਵਿਆਉਣਾ: {count}, ਲਗਭਗ {cost}। ਅਗਲੇ 6 ਹਫ਼ਤਿਆਂ ਦੀਆਂ ਯਾਤਰਾਵਾਂ: {trips}। ਕੀ ਕਰਨਾ ਹੈ ਦੇਖਣ ਲਈ ਟੈਪ ਕਰੋ।",
+  "monthAheadBodyTrips": "ਇਸ ਮਹੀਨੇ ਨਵਿਆਉਣ ਲਈ ਕੁਝ ਨਹੀਂ। ਅਗਲੇ 6 ਹਫ਼ਤਿਆਂ ਦੀਆਂ ਯਾਤਰਾਵਾਂ: {trips}। ਕੀ ਕਰਨਾ ਹੈ ਦੇਖਣ ਲਈ ਟੈਪ ਕਰੋ।"
 }

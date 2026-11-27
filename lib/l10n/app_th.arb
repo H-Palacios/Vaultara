@@ -4423,5 +4423,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "ส่งอีเมลถึงฝ่ายสนับสนุน Vorkalis",
+  "assistantSupportMessage": "ข้อความ",
+  "assistantSupportNote": "ระบบจะเพิ่มเวอร์ชันแอป โทรศัพท์ ระบบปฏิบัติการ ภาษา และแพ็กเกจ ฝ่ายสนับสนุนจะตอบกลับไปยังอีเมลที่คุณใช้ลงชื่อเข้าใช้",
+  "assistantSupportSent": "ส่งถึงฝ่ายสนับสนุน Vorkalis แล้ว คุณน่าจะได้รับคำตอบที่ {email} ภายใน 1 วันทำการ",
+  "assistantSupportLimit": "วันนี้คุณส่งอีเมลถึงฝ่ายสนับสนุนหลายครั้งแล้ว ลองอีกครั้งพรุ่งนี้ หรือเขียนถึง support@vorkalis.com โดยตรง",
+  "assistantSupportVerify": "ยืนยันที่อยู่อีเมลของคุณก่อน เพื่อให้ฝ่ายสนับสนุนตอบกลับคุณได้",
+  "assistantSupportFailed": "ส่งอีเมลไม่ได้ ลองอีกครั้งภายหลัง หรือเขียนถึง support@vorkalis.com โดยตรง",
+  "assistantInviteTitle": "เชิญเข้าครัวเรือนของคุณ",
+  "assistantInviteNote": "Vaultara จะส่งลิงก์คำเชิญทางอีเมลให้พวกเขา ใช้ได้ครั้งเดียว ภายใน 7 วัน",
+  "assistantInviteSent": "ส่งคำเชิญไปที่ {email} แล้ว",
+  "assistantInviteFailed": "ส่งคำเชิญไม่ได้ ลองอีกครั้ง หรือแชร์คำเชิญจากครัวเรือนของคุณแทน",
+  "assistantCalendarNote": "แอปปฏิทินของคุณจะเปิดพร้อมกิจกรรมและการแจ้งเตือนล่วงหน้า 7 วัน",
+  "assistantSendLinkTitle": "ส่งลิงก์ที่ปลอดภัย",
+  "assistantSendLinkWorks": "ลิงก์ใช้ได้",
+  "assistantSendLinkHours": "{hours} ชม.",
+  "assistantSendLinkNote": "ส่งเพียงลิงก์เท่านั้น ไม่ส่งรายละเอียดเอง คุณเลือกวิธีส่งได้ และหยุดลิงก์ก่อนได้ใน {sharedLinks}",
+  "monthAheadTitle": "เดือนข้างหน้า",
+  "monthAheadSubtitle": "ทุกวันที่ 1 {assistant} จะส่งรายการที่ต้องต่ออายุ ค่าใช้จ่าย และทริปที่กำลังจะมาถึงของคุณ",
+  "monthAheadQuestion": "เดือนนี้ฉันต้องทำอะไรบ้าง",
+  "assistantStepSupport": "กำลังเขียนอีเมลของคุณ",
+  "assistantStepSecurity": "กำลังตรวจสอบความปลอดภัยของบัญชีของคุณ",
+  "talkFinishOnScreen": "เปิดอยู่บนหน้าจอแล้ว ทำให้เสร็จที่นั่น แล้วแตะเพื่อพูดอีกครั้ง"
 }

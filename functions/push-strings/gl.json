@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Caducou un documento do persoal",
   "staffOverdueYesterday": "{name} de {person} caducou onte e non se renovou.",
   "staffOverdueWeek": "{name} de {person} caducou hai unha semana e aínda non se renovou.",
-  "staffOverdueMany": "Caducaron {count} documentos do persoal e non se renovaron: {names}."
+  "staffOverdueMany": "Caducaron {count} documentos do persoal e non se renovaron: {names}.",
+  "monthAheadTitle": "O teu mes que vén",
+  "monthAheadBodyCount": "Para renovar este mes: {count}. Toca para ver que facer.",
+  "monthAheadBodyCost": "Para renovar este mes: {count}, uns {cost}. Toca para ver que facer.",
+  "monthAheadBodyCountTrips": "Para renovar este mes: {count}. Viaxes nas próximas 6 semanas: {trips}. Toca para ver que facer.",
+  "monthAheadBodyCostTrips": "Para renovar este mes: {count}, uns {cost}. Viaxes nas próximas 6 semanas: {trips}. Toca para ver que facer.",
+  "monthAheadBodyTrips": "Nada que renovar este mes. Viaxes nas próximas 6 semanas: {trips}. Toca para ver que facer."
 }

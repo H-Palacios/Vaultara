@@ -3167,16 +3167,16 @@ class AppLocalizationsKa extends AppLocalizations {
   String get planGetPremium => 'Premium-ის შეძენა';
 
   @override
-  String get businessPlanBuy => 'ბიზნესის შეძენა';
-
-  @override
   String get individualPlanBuy => 'ინდივიდუალურის შეძენა';
 
   @override
-  String get businessPlanSwitch => 'ბიზნესზე გადასვლა';
+  String get individualPlanSwitch => 'ინდივიდუალურზე გადასვლა';
 
   @override
-  String get individualPlanSwitch => 'ინდივიდუალურზე გადასვლა';
+  String get businessPlanBuy => 'ბიზნესის შეძენა';
+
+  @override
+  String get businessPlanSwitch => 'ბიზნესზე გადასვლა';
 
   @override
   String get planSwitchToYearly => 'წლიურზე გადასვლა';
@@ -4915,8 +4915,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String get assistantEmptyReply => 'პასუხი ვერ ვიპოვე. სცადეთ სხვანაირად ჰკითხოთ.';
 
   @override
-  String get assistantDraftReady =>
-      'აი დეტალები. შესანახად შეეხეთ დადასტურებას.';
+  String get assistantDraftReady => 'აი დეტალები. შესანახად შეეხეთ დადასტურებას.';
 
   @override
   String get assistantNewChat => 'ახალი ჩატი';
@@ -6683,27 +6682,27 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'დაამატეთ ვაქცინაციები: ${name}';
+    return 'დაამატეთ ვაქცინაციები: $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'დაამატეთ მიკროჩიპი: ${name}';
+    return 'დაამატეთ მიკროჩიპი: $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'დაამატეთ შინაური ცხოველის დაზღვევა: ${name}';
+    return 'დაამატეთ შინაური ცხოველის დაზღვევა: $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'დაამატეთ პასპორტი: ${name}';
+    return 'დაამატეთ პასპორტი: $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'შემდეგი: ${step}. გასაკეთებლად თქვით დიახ.';
+    return 'შემდეგი: $step. გასაკეთებლად თქვით დიახ.';
   }
 
   @override
@@ -8985,10 +8984,10 @@ class AppLocalizationsKa extends AppLocalizations {
   String get petTypeFieldHint => 'შეიყვანეთ შინაური ცხოველის სახეობა';
 
   @override
-  String get petBirthdayHint => 'აირჩიეთ დაბადების თარიღი';
+  String get petTypeRequired => 'აირჩიეთ შინაური ცხოველის სახეობა';
 
   @override
-  String get petTypeRequired => 'აირჩიეთ შინაური ცხოველის სახეობა';
+  String get petBirthdayHint => 'აირჩიეთ დაბადების თარიღი';
 
   @override
   String get petChipHint => 'შეიყვანეთ მიკროჩიპის ნომერი';
@@ -10661,4 +10660,80 @@ class AppLocalizationsKa extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'მიაღწიეთ \"ჰკითხეთ Vaultara-ს\"-ს დღევანდელ ლიმიტს. ის განახლდება ხვალ $time-ზე. Vaultara-ში დანარჩენი ყველაფერი ჩვეულებრივ მუშაობს.';
   }
+
+  @override
+  String get assistantSupportTitle => 'მისწერეთ Vorkalis-ის მხარდაჭერას';
+
+  @override
+  String get assistantSupportMessage => 'შეტყობინება';
+
+  @override
+  String get assistantSupportNote => 'ემატება აპის ვერსია, ტელეფონი, სისტემა, ენა და გეგმა. მხარდაჭერა გიპასუხებთ იმ ელფოსტაზე, რომლითაც შედიხართ.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'გაიგზავნა Vorkalis-ის მხარდაჭერაში. პასუხი $email-ზე ერთ სამუშაო დღეში უნდა მიიღოთ.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'დღეს მხარდაჭერას უკვე რამდენჯერმე მისწერეთ. სცადეთ ხვალ ან პირდაპირ მისწერეთ support@vorkalis.com-ს.';
+
+  @override
+  String get assistantSupportVerify => 'ჯერ დაადასტურეთ ელფოსტის მისამართი, რომ მხარდაჭერამ შეძლოს პასუხის გაცემა.';
+
+  @override
+  String get assistantSupportFailed => 'წერილის გაგზავნა ვერ მოხერხდა. სცადეთ მოგვიანებით ან პირდაპირ მისწერეთ support@vorkalis.com-ს.';
+
+  @override
+  String get assistantInviteTitle => 'მოწვევა თქვენს ოჯახში';
+
+  @override
+  String get assistantInviteNote => 'Vaultara მათ ელფოსტით მოწვევის ბმულს გაუგზავნის. ის ერთხელ მუშაობს, 7 დღის განმავლობაში.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'მოწვევა გაიგზავნა: $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'მოწვევის გაგზავნა ვერ მოხერხდა. სცადეთ ხელახლა ან გააზიარეთ მოწვევა თქვენი ოჯახიდან.';
+
+  @override
+  String get assistantCalendarNote => 'გაიხსნება კალენდრის აპი მოვლენით და შეხსენებით 7 დღით ადრე.';
+
+  @override
+  String get assistantSendLinkTitle => 'უსაფრთხო ბმულის გაგზავნა';
+
+  @override
+  String get assistantSendLinkWorks => 'ბმული მოქმედებს';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours სთ';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'იგზავნება მხოლოდ ბმული, არასოდეს თავად მონაცემები. თქვენ ირჩევთ, როგორ გაგზავნოთ, და შეგიძლიათ ადრე შეწყვიტოთ განყოფილებაში „$sharedLinks“.';
+  }
+
+  @override
+  String get monthAheadTitle => 'მომავალი თვე';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'ყოველი თვის 1-ში $assistant გიგზავნით, რა უნდა განაახლოთ, რა ღირს და თქვენს მომავალ მოგზაურობებს';
+  }
+
+  @override
+  String get monthAheadQuestion => 'რა უნდა გავაკეთო ამ თვეში?';
+
+  @override
+  String get assistantStepSupport => 'ვწერ თქვენს წერილს';
+
+  @override
+  String get assistantStepSecurity => 'ვამოწმებ თქვენი ანგარიშის უსაფრთხოებას';
+
+  @override
+  String get talkFinishOnScreen => 'ეკრანზე გაიხსნა. დაასრულეთ იქ, შემდეგ შეეხეთ, რომ ისევ ისაუბროთ.';
 }

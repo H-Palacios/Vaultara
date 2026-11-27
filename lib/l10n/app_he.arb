@@ -4411,5 +4411,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "שליחת אימייל לתמיכה של Vorkalis",
+  "assistantSupportMessage": "הודעה",
+  "assistantSupportNote": "גרסת האפליקציה, הטלפון, המערכת, השפה והתוכנית מתווספים. התמיכה עונה לכתובת האימייל שאיתה אתה מתחבר.",
+  "assistantSupportSent": "נשלח לתמיכה של Vorkalis. תשובה אמורה להגיע אל {email} תוך יום עבודה אחד.",
+  "assistantSupportLimit": "כבר כתבת לתמיכה כמה פעמים היום. נסה שוב מחר, או כתוב ישירות אל support@vorkalis.com.",
+  "assistantSupportVerify": "קודם אמת את כתובת האימייל שלך, כדי שהתמיכה תוכל לענות לך.",
+  "assistantSupportFailed": "לא ניתן היה לשלוח את האימייל. נסה שוב מאוחר יותר, או כתוב ישירות אל support@vorkalis.com.",
+  "assistantInviteTitle": "הזמנה למשק הבית שלך",
+  "assistantInviteNote": "Vaultara שולחת להם באימייל קישור הזמנה. הוא עובד פעם אחת, למשך 7 ימים.",
+  "assistantInviteSent": "ההזמנה נשלחה אל {email}.",
+  "assistantInviteFailed": "לא ניתן היה לשלוח את ההזמנה. נסה שוב, או שתף הזמנה ממשק הבית שלך במקום זאת.",
+  "assistantCalendarNote": "אפליקציית היומן נפתחת עם האירוע ועם תזכורת 7 ימים לפני.",
+  "assistantSendLinkTitle": "שליחת קישור מאובטח",
+  "assistantSendLinkWorks": "הקישור פעיל למשך",
+  "assistantSendLinkHours": "{hours} שע׳",
+  "assistantSendLinkNote": "נשלח רק קישור, אף פעם לא הפרטים עצמם. אתה בוחר איך לשלוח אותו, ואפשר לעצור אותו מוקדם יותר ב{sharedLinks}.",
+  "monthAheadTitle": "החודש הקרוב",
+  "monthAheadSubtitle": "ב-1 לחודש, {assistant} שולח מה צריך לחדש, כמה זה עולה והנסיעות הקרובות שלך",
+  "monthAheadQuestion": "מה אני צריך לעשות החודש?",
+  "assistantStepSupport": "כותב את האימייל שלך",
+  "assistantStepSecurity": "בודק את אבטחת החשבון שלך",
+  "talkFinishOnScreen": "זה פתוח על המסך. סיים שם ואז הקש כדי לדבר שוב."
 }

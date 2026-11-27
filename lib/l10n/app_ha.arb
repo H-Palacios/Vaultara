@@ -4418,5 +4418,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Aika imel ga tallafin Vorkalis",
+  "assistantSupportMessage": "Saƙo",
+  "assistantSupportNote": "Ana ƙara sigar manhaja, waya, tsari, harshe da tsarin biyan kuɗi. Tallafi yana amsawa ga imel ɗin da kake shiga da shi.",
+  "assistantSupportSent": "An aika ga tallafin Vorkalis. Ya kamata ka sami amsa a {email} cikin kwanan aiki ɗaya.",
+  "assistantSupportLimit": "Ka riga ka aika wa tallafi imel sau da yawa a yau. Sake gwadawa gobe, ko ka rubuta kai tsaye zuwa support@vorkalis.com.",
+  "assistantSupportVerify": "Da farko ka tabbatar da adireshin imel ɗinka, don tallafi ya iya amsa maka.",
+  "assistantSupportFailed": "Ba a iya aika imel ɗin ba. Sake gwadawa daga baya, ko ka rubuta kai tsaye zuwa support@vorkalis.com.",
+  "assistantInviteTitle": "Gayyata zuwa gidanka",
+  "assistantInviteNote": "Vaultara tana aika musu hanyar haɗin gayyata ta imel. Tana aiki sau ɗaya, na kwanaki 7.",
+  "assistantInviteSent": "An aika gayyata zuwa {email}.",
+  "assistantInviteFailed": "Ba a iya aika gayyatar ba. Sake gwadawa, ko ka raba gayyata daga gidanka a maimakon haka.",
+  "assistantCalendarNote": "Manhajar kalandarka za ta buɗe da taron da tunatarwa kwanaki 7 kafin.",
+  "assistantSendLinkTitle": "Aika hanyar haɗi mai tsaro",
+  "assistantSendLinkWorks": "Hanyar haɗin tana aiki na",
+  "assistantSendLinkHours": "{hours} awa",
+  "assistantSendLinkNote": "Hanyar haɗi kawai ake aikawa, ba cikakkun bayanai ba. Kai ke zaɓar yadda za ka aika ta, kuma za ka iya dakatar da ita da wuri a {sharedLinks}.",
+  "monthAheadTitle": "Wata mai zuwa",
+  "monthAheadSubtitle": "A ranar 1 ga kowane wata, {assistant} yana aika abin da za a sabunta, kuɗinsa da tafiye-tafiyenka masu zuwa",
+  "monthAheadQuestion": "Me ya kamata in yi wannan watan?",
+  "assistantStepSupport": "Ana rubuta imel ɗinka",
+  "assistantStepSecurity": "Ana duba tsaron asusunka",
+  "talkFinishOnScreen": "Yana buɗe a allonka. Ka gama a can, sannan ka taɓa don sake magana."
 }

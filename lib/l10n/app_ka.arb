@@ -4424,5 +4424,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "მისწერეთ Vorkalis-ის მხარდაჭერას",
+  "assistantSupportMessage": "შეტყობინება",
+  "assistantSupportNote": "ემატება აპის ვერსია, ტელეფონი, სისტემა, ენა და გეგმა. მხარდაჭერა გიპასუხებთ იმ ელფოსტაზე, რომლითაც შედიხართ.",
+  "assistantSupportSent": "გაიგზავნა Vorkalis-ის მხარდაჭერაში. პასუხი {email}-ზე ერთ სამუშაო დღეში უნდა მიიღოთ.",
+  "assistantSupportLimit": "დღეს მხარდაჭერას უკვე რამდენჯერმე მისწერეთ. სცადეთ ხვალ ან პირდაპირ მისწერეთ support@vorkalis.com-ს.",
+  "assistantSupportVerify": "ჯერ დაადასტურეთ ელფოსტის მისამართი, რომ მხარდაჭერამ შეძლოს პასუხის გაცემა.",
+  "assistantSupportFailed": "წერილის გაგზავნა ვერ მოხერხდა. სცადეთ მოგვიანებით ან პირდაპირ მისწერეთ support@vorkalis.com-ს.",
+  "assistantInviteTitle": "მოწვევა თქვენს ოჯახში",
+  "assistantInviteNote": "Vaultara მათ ელფოსტით მოწვევის ბმულს გაუგზავნის. ის ერთხელ მუშაობს, 7 დღის განმავლობაში.",
+  "assistantInviteSent": "მოწვევა გაიგზავნა: {email}.",
+  "assistantInviteFailed": "მოწვევის გაგზავნა ვერ მოხერხდა. სცადეთ ხელახლა ან გააზიარეთ მოწვევა თქვენი ოჯახიდან.",
+  "assistantCalendarNote": "გაიხსნება კალენდრის აპი მოვლენით და შეხსენებით 7 დღით ადრე.",
+  "assistantSendLinkTitle": "უსაფრთხო ბმულის გაგზავნა",
+  "assistantSendLinkWorks": "ბმული მოქმედებს",
+  "assistantSendLinkHours": "{hours} სთ",
+  "assistantSendLinkNote": "იგზავნება მხოლოდ ბმული, არასოდეს თავად მონაცემები. თქვენ ირჩევთ, როგორ გაგზავნოთ, და შეგიძლიათ ადრე შეწყვიტოთ განყოფილებაში „{sharedLinks}“.",
+  "monthAheadTitle": "მომავალი თვე",
+  "monthAheadSubtitle": "ყოველი თვის 1-ში {assistant} გიგზავნით, რა უნდა განაახლოთ, რა ღირს და თქვენს მომავალ მოგზაურობებს",
+  "monthAheadQuestion": "რა უნდა გავაკეთო ამ თვეში?",
+  "assistantStepSupport": "ვწერ თქვენს წერილს",
+  "assistantStepSecurity": "ვამოწმებ თქვენი ანგარიშის უსაფრთხოებას",
+  "talkFinishOnScreen": "ეკრანზე გაიხსნა. დაასრულეთ იქ, შემდეგ შეეხეთ, რომ ისევ ისაუბროთ."
 }

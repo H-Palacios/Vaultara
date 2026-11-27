@@ -3167,16 +3167,16 @@ class AppLocalizationsEt extends AppLocalizations {
   String get planGetPremium => 'Hangi Premium';
 
   @override
-  String get businessPlanBuy => 'Hangi Business';
-
-  @override
   String get individualPlanBuy => 'Hangi Üksikisik';
 
   @override
-  String get businessPlanSwitch => 'Lülitu paketile Business';
+  String get individualPlanSwitch => 'Mine üle Üksikisik paketile';
 
   @override
-  String get individualPlanSwitch => 'Mine üle Üksikisik paketile';
+  String get businessPlanBuy => 'Hangi Business';
+
+  @override
+  String get businessPlanSwitch => 'Lülitu paketile Business';
 
   @override
   String get planSwitchToYearly => 'Lülitu aastamaksele';
@@ -4915,8 +4915,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get assistantEmptyReply => 'Ma ei leidnud vastust. Proovi küsida teisiti.';
 
   @override
-  String get assistantDraftReady =>
-      'Siin on üksikasjad. Salvestamiseks puuduta Kinnita.';
+  String get assistantDraftReady => 'Siin on üksikasjad. Salvestamiseks puuduta Kinnita.';
 
   @override
   String get assistantNewChat => 'Uus vestlus';
@@ -6683,27 +6682,27 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Lisa vaktsineerimised: ${name}';
+    return 'Lisa vaktsineerimised: $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Lisa mikrokiip: ${name}';
+    return 'Lisa mikrokiip: $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Lisa lemmikloomakindlustus: ${name}';
+    return 'Lisa lemmikloomakindlustus: $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Lisa pass: ${name}';
+    return 'Lisa pass: $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Järgmiseks: ${step}. Ütle jah, et seda teha.';
+    return 'Järgmiseks: $step. Ütle jah, et seda teha.';
   }
 
   @override
@@ -8989,10 +8988,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get petTypeFieldHint => 'Sisesta lemmiklooma liik';
 
   @override
-  String get petBirthdayHint => 'Vali sünnikuupäev';
+  String get petTypeRequired => 'Vali lemmiklooma liik';
 
   @override
-  String get petTypeRequired => 'Vali lemmiklooma liik';
+  String get petBirthdayHint => 'Vali sünnikuupäev';
 
   @override
   String get petChipHint => 'Sisesta mikrokiibi number';
@@ -10402,8 +10401,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get talkNoVoice => 'Telefonil pole selle keele häält, seega vastused kuvatakse, kuid neid ei loeta ette.';
 
   @override
-  String get talkNotDone =>
-      'See ei õnnestunud. Vaata ekraanil olevaid üksikasju.';
+  String get talkNotDone => 'See ei õnnestunud. Vaata ekraanil olevaid üksikasju.';
 
   @override
   String get talkReady => 'Kuulan.';
@@ -10667,4 +10665,80 @@ class AppLocalizationsEt extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Jõudsid tänase „Küsi Vaultaralt“ piirini. See uueneb homme kell $time. Kõik muu Vaultaras töötab tavapäraselt.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Kirjuta Vorkalise toele';
+
+  @override
+  String get assistantSupportMessage => 'Sõnum';
+
+  @override
+  String get assistantSupportNote => 'Lisatakse rakenduse versioon, telefon, süsteem, keel ja pakett. Tugi vastab e-posti aadressile, millega sisse logid.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Saadetud Vorkalise toele. Peaksid saama vastuse aadressile $email ühe tööpäeva jooksul.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Oled täna juba mitu korda toele kirjutanud. Proovi homme uuesti või kirjuta ise aadressile support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Kinnita esmalt oma e-posti aadress, et tugi saaks sulle vastata.';
+
+  @override
+  String get assistantSupportFailed => 'E-kirja ei õnnestunud saata. Proovi hiljem uuesti või kirjuta ise aadressile support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Kutsu oma leibkonda';
+
+  @override
+  String get assistantInviteNote => 'Vaultara saadab neile e-kirjaga kutselingi. See töötab ühe korra, 7 päeva jooksul.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Kutse saadetud aadressile $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Kutset ei õnnestunud saata. Proovi uuesti või jaga kutset hoopis oma leibkonnast.';
+
+  @override
+  String get assistantCalendarNote => 'Sinu kalendrirakendus avaneb sündmusega ja meeldetuletusega 7 päeva varem.';
+
+  @override
+  String get assistantSendLinkTitle => 'Saada turvaline link';
+
+  @override
+  String get assistantSendLinkWorks => 'Link kehtib';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours h';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Saadetakse ainult link, mitte kunagi andmeid ennast. Sina valid, kuidas see saata, ja saad selle varem lõpetada jaotises $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Eelseisev kuu';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Iga kuu 1. päeval saadab $assistant, mida uuendada, mis see maksab ja sinu eelseisvad reisid';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Mida ma pean sel kuul tegema?';
+
+  @override
+  String get assistantStepSupport => 'Kirjutan sinu e-kirja';
+
+  @override
+  String get assistantStepSecurity => 'Kontrollin sinu konto turvalisust';
+
+  @override
+  String get talkFinishOnScreen => 'See on sinu ekraanil avatud. Lõpeta seal ja puuduta siis, et uuesti rääkida.';
 }

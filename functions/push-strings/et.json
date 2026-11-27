@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Töötaja dokument aegus",
   "staffOverdueYesterday": "{person} {name} aegus eile ja seda pole uuendatud.",
   "staffOverdueWeek": "{person} {name} aegus nädal tagasi ja seda pole ikka veel uuendatud.",
-  "staffOverdueMany": "{count} töötaja dokumenti aegusid ja neid pole uuendatud: {names}."
+  "staffOverdueMany": "{count} töötaja dokumenti aegusid ja neid pole uuendatud: {names}.",
+  "monthAheadTitle": "Sinu eelseisev kuu",
+  "monthAheadBodyCount": "Sel kuul uuendada: {count}. Puuduta, et näha, mida teha.",
+  "monthAheadBodyCost": "Sel kuul uuendada: {count}, umbes {cost}. Puuduta, et näha, mida teha.",
+  "monthAheadBodyCountTrips": "Sel kuul uuendada: {count}. Reisid järgmise 6 nädala jooksul: {trips}. Puuduta, et näha, mida teha.",
+  "monthAheadBodyCostTrips": "Sel kuul uuendada: {count}, umbes {cost}. Reisid järgmise 6 nädala jooksul: {trips}. Puuduta, et näha, mida teha.",
+  "monthAheadBodyTrips": "Sel kuul pole midagi uuendada. Reisid järgmise 6 nädala jooksul: {trips}. Puuduta, et näha, mida teha."
 }

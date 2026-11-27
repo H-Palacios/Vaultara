@@ -26,5 +26,11 @@
   "staffOverdueTitle": "સ્ટાફનો દસ્તાવેજ સમાપ્ત થયો",
   "staffOverdueYesterday": "{person}નો {name} ગઈકાલે સમાપ્ત થયો અને રિન્યૂ થયો નથી.",
   "staffOverdueWeek": "{person}નો {name} એક અઠવાડિયા પહેલાં સમાપ્ત થયો અને હજુ રિન્યૂ થયો નથી.",
-  "staffOverdueMany": "સ્ટાફના {count} દસ્તાવેજો સમાપ્ત થયા છે અને રિન્યૂ થયા નથી: {names}."
+  "staffOverdueMany": "સ્ટાફના {count} દસ્તાવેજો સમાપ્ત થયા છે અને રિન્યૂ થયા નથી: {names}.",
+  "monthAheadTitle": "તમારો આવનારો મહિનો",
+  "monthAheadBodyCount": "આ મહિને રિન્યૂ કરવાનું: {count}. શું કરવું તે જોવા ટૅપ કરો.",
+  "monthAheadBodyCost": "આ મહિને રિન્યૂ કરવાનું: {count}, આશરે {cost}. શું કરવું તે જોવા ટૅપ કરો.",
+  "monthAheadBodyCountTrips": "આ મહિને રિન્યૂ કરવાનું: {count}. આગામી 6 અઠવાડિયાની મુસાફરીઓ: {trips}. શું કરવું તે જોવા ટૅપ કરો.",
+  "monthAheadBodyCostTrips": "આ મહિને રિન્યૂ કરવાનું: {count}, આશરે {cost}. આગામી 6 અઠવાડિયાની મુસાફરીઓ: {trips}. શું કરવું તે જોવા ટૅપ કરો.",
+  "monthAheadBodyTrips": "આ મહિને રિન્યૂ કરવાનું કંઈ નથી. આગામી 6 અઠવાડિયાની મુસાફરીઓ: {trips}. શું કરવું તે જોવા ટૅપ કરો."
 }

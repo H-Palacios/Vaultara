@@ -4444,5 +4444,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "E-pos Vorkalis-ondersteuning",
+  "assistantSupportMessage": "Boodskap",
+  "assistantSupportNote": "Jou programweergawe, foon, stelsel, taal en plan word bygevoeg. Ondersteuning antwoord na die e-posadres waarmee jy aanmeld.",
+  "assistantSupportSent": "Gestuur na Vorkalis-ondersteuning. Jy behoort binne een werksdag 'n antwoord by {email} te kry.",
+  "assistantSupportLimit": "Jy het vandag al 'n paar keer vir ondersteuning ge-e-pos. Probeer môre weer, of skryf self aan support@vorkalis.com.",
+  "assistantSupportVerify": "Bevestig eers jou e-posadres sodat ondersteuning jou kan antwoord.",
+  "assistantSupportFailed": "Die e-pos kon nie gestuur word nie. Probeer later weer, of skryf self aan support@vorkalis.com.",
+  "assistantInviteTitle": "Nooi na jou huishouding",
+  "assistantInviteNote": "Vaultara e-pos vir hulle 'n uitnodigingskakel. Dit werk een keer, vir 7 dae.",
+  "assistantInviteSent": "Uitnodiging gestuur na {email}.",
+  "assistantInviteFailed": "Die uitnodiging kon nie gestuur word nie. Probeer weer, of deel eerder 'n uitnodiging vanaf jou huishouding.",
+  "assistantCalendarNote": "Jou kalenderprogram maak oop met die gebeurtenis, met 'n alarm 7 dae vooraf.",
+  "assistantSendLinkTitle": "Stuur 'n veilige skakel",
+  "assistantSendLinkWorks": "Skakel werk vir",
+  "assistantSendLinkHours": "{hours} h",
+  "assistantSendLinkNote": "Net 'n skakel word gestuur, nooit die besonderhede self nie. Jy kies hoe om dit te stuur, en kan dit vroeër stop in {sharedLinks}.",
+  "monthAheadTitle": "Maand vorentoe",
+  "monthAheadSubtitle": "Op die 1ste stuur {assistant} wat hernu moet word, wat dit kos en jou komende reise",
+  "monthAheadQuestion": "Wat moet ek hierdie maand doen?",
+  "assistantStepSupport": "Skryf jou e-pos",
+  "assistantStepSecurity": "Kontroleer jou rekening se sekuriteit",
+  "talkFinishOnScreen": "Dit is oop op jou skerm. Maak daar klaar en tik dan om weer te praat."
 }

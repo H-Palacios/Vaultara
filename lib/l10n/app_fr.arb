@@ -4418,5 +4418,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Écrire au support Vorkalis",
+  "assistantSupportMessage": "Message",
+  "assistantSupportNote": "La version de l’app, le téléphone, le système, la langue et l’abonnement sont ajoutés. Le support répond à l’adresse e-mail avec laquelle vous vous connectez.",
+  "assistantSupportSent": "Envoyé au support Vorkalis. Vous devriez recevoir une réponse à {email} sous un jour ouvré.",
+  "assistantSupportLimit": "Vous avez déjà écrit plusieurs fois au support aujourd’hui. Réessayez demain, ou écrivez vous-même à support@vorkalis.com.",
+  "assistantSupportVerify": "Confirmez d’abord votre adresse e-mail pour que le support puisse vous répondre.",
+  "assistantSupportFailed": "L’e-mail n’a pas pu être envoyé. Réessayez plus tard, ou écrivez vous-même à support@vorkalis.com.",
+  "assistantInviteTitle": "Inviter dans votre foyer",
+  "assistantInviteNote": "Vaultara lui envoie un lien d’invitation par e-mail. Il fonctionne une fois, pendant 7 jours.",
+  "assistantInviteSent": "Invitation envoyée à {email}.",
+  "assistantInviteFailed": "L’invitation n’a pas pu être envoyée. Réessayez, ou partagez plutôt une invitation depuis votre foyer.",
+  "assistantCalendarNote": "Votre app de calendrier s’ouvre avec l’événement et une alarme 7 jours avant.",
+  "assistantSendLinkTitle": "Envoyer un lien sécurisé",
+  "assistantSendLinkWorks": "Lien valable",
+  "assistantSendLinkHours": "{hours} h",
+  "assistantSendLinkNote": "Seul un lien est envoyé, jamais les informations elles-mêmes. Vous choisissez comment l’envoyer et pouvez l’arrêter plus tôt dans {sharedLinks}.",
+  "monthAheadTitle": "Le mois à venir",
+  "monthAheadSubtitle": "Le 1er, {assistant} vous envoie ce qu’il faut renouveler, ce que cela coûte et vos prochains voyages",
+  "monthAheadQuestion": "Que dois-je faire ce mois-ci ?",
+  "assistantStepSupport": "Rédaction de votre e-mail",
+  "assistantStepSecurity": "Vérification de la sécurité de votre compte",
+  "talkFinishOnScreen": "C’est ouvert à l’écran. Terminez-y, puis touchez pour parler à nouveau."
 }

@@ -18246,6 +18246,138 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You\'ve reached today\'s Ask Vaultara limit. It resets tomorrow at {time}. Everything else in Vaultara works as usual.'**
   String assistantLimitTomorrow(String time);
+
+  /// Ask Vaultara card title: an email to Vorkalis support written from the chat, sent only after Confirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Email Vorkalis support'**
+  String get assistantSupportTitle;
+
+  /// Ask Vaultara support email card: label of the row with the email itself.
+  ///
+  /// In en, this message translates to:
+  /// **'Message'**
+  String get assistantSupportMessage;
+
+  /// Ask Vaultara support email card: what is added to the email and where the reply goes.
+  ///
+  /// In en, this message translates to:
+  /// **'Your app version, phone, system, language and plan are added. Support replies to the email you sign in with.'**
+  String get assistantSupportNote;
+
+  /// Snack bar after a support email from Ask Vaultara was sent. {email} is the address the reply goes to.
+  ///
+  /// In en, this message translates to:
+  /// **'Sent to Vorkalis support. You should get a reply at {email} within one working day.'**
+  String assistantSupportSent(String email);
+
+  /// Snack bar: too many support emails from Ask Vaultara today.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'ve emailed support several times today. Try again tomorrow, or write to support@vorkalis.com yourself.'**
+  String get assistantSupportLimit;
+
+  /// Snack bar: the email address must be verified before support can be emailed from Ask Vaultara.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify your email address first, so support can reply to you.'**
+  String get assistantSupportVerify;
+
+  /// Snack bar: the support email from Ask Vaultara could not be sent.
+  ///
+  /// In en, this message translates to:
+  /// **'The email couldn\'t be sent. Try again later, or write to support@vorkalis.com yourself.'**
+  String get assistantSupportFailed;
+
+  /// Ask Vaultara card title: invite someone to the household by email.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite to your household'**
+  String get assistantInviteTitle;
+
+  /// Ask Vaultara household invite card: what the person receives.
+  ///
+  /// In en, this message translates to:
+  /// **'Vaultara emails them an invite link. It works once, for 7 days.'**
+  String get assistantInviteNote;
+
+  /// Snack bar after a household invite was emailed. {email} is their address.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite sent to {email}.'**
+  String assistantInviteSent(String email);
+
+  /// Snack bar: the household invite from Ask Vaultara could not be emailed.
+  ///
+  /// In en, this message translates to:
+  /// **'The invite couldn\'t be sent. Try again, or share an invite from your household instead.'**
+  String get assistantInviteFailed;
+
+  /// Ask Vaultara Add to calendar card: what happens on Confirm.
+  ///
+  /// In en, this message translates to:
+  /// **'Your calendar app opens with the event, with an alarm 7 days before.'**
+  String get assistantCalendarNote;
+
+  /// Ask Vaultara card title: send one record to someone as a secure share link.
+  ///
+  /// In en, this message translates to:
+  /// **'Send a secure link'**
+  String get assistantSendLinkTitle;
+
+  /// Ask Vaultara secure link card: label of the row with how long the link works.
+  ///
+  /// In en, this message translates to:
+  /// **'Link works for'**
+  String get assistantSendLinkWorks;
+
+  /// Ask Vaultara secure link card: how long the link works, short. {hours} is 1 to 72.
+  ///
+  /// In en, this message translates to:
+  /// **'{hours} h'**
+  String assistantSendLinkHours(int hours);
+
+  /// Ask Vaultara secure link card: only a link is sent. {sharedLinks} is the translated name of the Shared links screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Only a link is sent, never the details themselves. You choose how to send it, and can stop it early in {sharedLinks}.'**
+  String assistantSendLinkNote(String sharedLinks);
+
+  /// Notifications screen: switch for the month ahead notification from Ask Vaultara on the 1st of each month.
+  ///
+  /// In en, this message translates to:
+  /// **'Month ahead'**
+  String get monthAheadTitle;
+
+  /// Notifications screen: under the month ahead switch. {assistant} is the translated name Ask Vaultara.
+  ///
+  /// In en, this message translates to:
+  /// **'On the 1st, {assistant} sends what to renew, what it costs and your trips coming up'**
+  String monthAheadSubtitle(String assistant);
+
+  /// Sent to Ask Vaultara when the month ahead notification is tapped, as if the user typed it.
+  ///
+  /// In en, this message translates to:
+  /// **'What do I need to do this month?'**
+  String get monthAheadQuestion;
+
+  /// Ask Vaultara status while it writes a support email.
+  ///
+  /// In en, this message translates to:
+  /// **'Writing your email'**
+  String get assistantStepSupport;
+
+  /// Ask Vaultara status while it reads the devices and security history.
+  ///
+  /// In en, this message translates to:
+  /// **'Checking your account\'s security'**
+  String get assistantStepSecurity;
+
+  /// Talk mode, said aloud after a confirmed card opened another screen or app (Your devices, the calendar, the share sheet) where the user finishes. Talk mode then stops listening until they tap.
+  ///
+  /// In en, this message translates to:
+  /// **'It\'s open on your screen. Finish there, then tap to talk again.'**
+  String get talkFinishOnScreen;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

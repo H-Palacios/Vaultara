@@ -3154,16 +3154,16 @@ class AppLocalizationsYo extends AppLocalizations {
   String get planGetPremium => 'Gba Premium';
 
   @override
-  String get businessPlanBuy => 'Gba Iṣòwò';
-
-  @override
   String get individualPlanBuy => 'Gba Ẹnìkọ̀ọ̀kan';
 
   @override
-  String get businessPlanSwitch => 'Yípadà sí Iṣòwò';
+  String get individualPlanSwitch => 'Yípadà sí Ẹnìkọ̀ọ̀kan';
 
   @override
-  String get individualPlanSwitch => 'Yípadà sí Ẹnìkọ̀ọ̀kan';
+  String get businessPlanBuy => 'Gba Iṣòwò';
+
+  @override
+  String get businessPlanSwitch => 'Yípadà sí Iṣòwò';
 
   @override
   String get planSwitchToYearly => 'Yípadà sí ìsanwó lọ́dọọdún';
@@ -4882,8 +4882,7 @@ class AppLocalizationsYo extends AppLocalizations {
   String get assistantEmptyReply => 'Mi ò rí ìdáhùn. Gbìyànjú láti béèrè ní ọ̀nà mìíràn.';
 
   @override
-  String get assistantDraftReady =>
-      'Àwọn àlàyé nìyí. Tẹ Jẹ́risi láti fi wọ́n pamọ́.';
+  String get assistantDraftReady => 'Àwọn àlàyé nìyí. Tẹ Jẹ́risi láti fi wọ́n pamọ́.';
 
   @override
   String get assistantNewChat => 'Ìbánisọ̀rọ̀ tuntun';
@@ -6633,27 +6632,27 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Ṣafikun àwọn abẹ́rẹ́ àjẹsára fún ${name}';
+    return 'Ṣafikun àwọn abẹ́rẹ́ àjẹsára fún $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Ṣafikun microchip fún ${name}';
+    return 'Ṣafikun microchip fún $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Ṣafikun ìbánigbófò ẹranko fún ${name}';
+    return 'Ṣafikun ìbánigbófò ẹranko fún $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Ṣafikun ìwé ìrìnnà fún ${name}';
+    return 'Ṣafikun ìwé ìrìnnà fún $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Èyí tó kàn: ${step}. Sọ bẹ́ẹ̀ni láti ṣe é.';
+    return 'Èyí tó kàn: $step. Sọ bẹ́ẹ̀ni láti ṣe é.';
   }
 
   @override
@@ -8934,10 +8933,10 @@ class AppLocalizationsYo extends AppLocalizations {
   String get petTypeFieldHint => 'Tẹ irú ẹranko ọ̀sìn';
 
   @override
-  String get petBirthdayHint => 'Yan ọjọ́ ìbí';
+  String get petTypeRequired => 'Yan irú ẹranko ọ̀sìn';
 
   @override
-  String get petTypeRequired => 'Yan irú ẹranko ọ̀sìn';
+  String get petBirthdayHint => 'Yan ọjọ́ ìbí';
 
   @override
   String get petChipHint => 'Tẹ nọ́mbà máíkírọ́ṣípù';
@@ -10609,4 +10608,80 @@ class AppLocalizationsYo extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'O ti dé òpin \"Béèrè Vaultara\" ti òní. Yóò tún bẹ̀rẹ̀ ní ọ̀la ní $time. Gbogbo nǹkan mìíràn nínú Vaultara ń ṣiṣẹ́ bí ó ti máa ń ṣe.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Fi ímeèlì ránṣẹ́ sí ìrànlọ́wọ́ Vorkalis';
+
+  @override
+  String get assistantSupportMessage => 'Ìfiránṣẹ́';
+
+  @override
+  String get assistantSupportNote => 'A ó fi ẹ̀yà áàpù, fóònù, sístẹ́mù, èdè àti ètò kún un. Ìrànlọ́wọ́ máa ń fèsì sí ímeèlì tí o fi ń wọlé.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'A ti fi ránṣẹ́ sí ìrànlọ́wọ́ Vorkalis. O yẹ kí o gba èsì ní $email láàrín ọjọ́ iṣẹ́ kan.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'O ti fi ímeèlì ránṣẹ́ sí ìrànlọ́wọ́ lọ́pọ̀ ìgbà lónìí. Gbìyànjú lọ́la, tàbí kọ̀wé tààrà sí support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Kọ́kọ́ jẹ́rìí àdírẹ́sì ímeèlì rẹ kí ìrànlọ́wọ́ lè fèsì sí ọ.';
+
+  @override
+  String get assistantSupportFailed => 'A kò lè fi ímeèlì náà ránṣẹ́. Gbìyànjú lẹ́yìn náà, tàbí kọ̀wé tààrà sí support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Pè wọ́n sí ilé rẹ';
+
+  @override
+  String get assistantInviteNote => 'Vaultara máa ń fi ọ̀nà asopọ̀ ìpè ránṣẹ́ sí wọn nípasẹ̀ ímeèlì. Ó ń ṣiṣẹ́ lẹ́ẹ̀kan, fún ọjọ́ 7.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'A ti fi ìpè ránṣẹ́ sí $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'A kò lè fi ìpè náà ránṣẹ́. Gbìyànjú lẹ́ẹ̀kan sí i, tàbí pín ìpè láti ilé rẹ dípò bẹ́ẹ̀.';
+
+  @override
+  String get assistantCalendarNote => 'Áàpù kàlẹ́ńdà rẹ yóò ṣí pẹ̀lú ìṣẹ̀lẹ̀ náà àti ìránnilétí ọjọ́ 7 ṣáájú.';
+
+  @override
+  String get assistantSendLinkTitle => 'Fi ọ̀nà asopọ̀ tó ní ààbò ránṣẹ́';
+
+  @override
+  String get assistantSendLinkWorks => 'Ọ̀nà asopọ̀ náà ń ṣiṣẹ́ fún';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return 'Wákàtí $hours';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Ọ̀nà asopọ̀ nìkan ni a ń fi ránṣẹ́, kì í ṣe àwọn àlàyé fúnra wọn. Ìwọ ni o yan bí o ṣe máa fi ránṣẹ́, o sì lè dá a dúró ṣáájú ní $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Oṣù tó ń bọ̀';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Ní ọjọ́ kìíní oṣù, $assistant máa ń fi ohun tí o máa sọ dọ̀tun, iye owó rẹ̀ àti àwọn ìrìn àjò rẹ tó ń bọ̀ ránṣẹ́';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Kí ni mo gbọ́dọ̀ ṣe ní oṣù yìí?';
+
+  @override
+  String get assistantStepSupport => 'À ń kọ ímeèlì rẹ';
+
+  @override
+  String get assistantStepSecurity => 'À ń ṣàyẹ̀wò ààbò àkáǹtì rẹ';
+
+  @override
+  String get talkFinishOnScreen => 'Ó ti ṣí sílẹ̀ lórí ìbòjú rẹ. Parí rẹ̀ níbẹ̀, lẹ́yìn náà tẹ̀ ẹ́ láti tún sọ̀rọ̀.';
 }

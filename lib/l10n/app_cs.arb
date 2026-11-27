@@ -4437,5 +4437,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Napsat podpoře Vorkalis",
+  "assistantSupportMessage": "Zpráva",
+  "assistantSupportNote": "Přidá se verze aplikace, telefon, systém, jazyk a tarif. Podpora odpoví na e-mail, kterým se přihlašujete.",
+  "assistantSupportSent": "Odesláno podpoře Vorkalis. Odpověď na {email} byste měli dostat do jednoho pracovního dne.",
+  "assistantSupportLimit": "Dnes jste podpoře psali už několikrát. Zkuste to zítra, nebo napište přímo na support@vorkalis.com.",
+  "assistantSupportVerify": "Nejdřív ověřte svou e-mailovou adresu, aby vám podpora mohla odpovědět.",
+  "assistantSupportFailed": "E-mail se nepodařilo odeslat. Zkuste to později, nebo napište přímo na support@vorkalis.com.",
+  "assistantInviteTitle": "Pozvat do vaší domácnosti",
+  "assistantInviteNote": "Vaultara jim e-mailem pošle odkaz s pozvánkou. Funguje jednou, po dobu 7 dnů.",
+  "assistantInviteSent": "Pozvánka odeslána na {email}.",
+  "assistantInviteFailed": "Pozvánku se nepodařilo odeslat. Zkuste to znovu, nebo místo toho sdílejte pozvánku ze své domácnosti.",
+  "assistantCalendarNote": "Otevře se vaše kalendářová aplikace s událostí a připomenutím 7 dní předem.",
+  "assistantSendLinkTitle": "Poslat bezpečný odkaz",
+  "assistantSendLinkWorks": "Odkaz platí",
+  "assistantSendLinkHours": "{hours} h",
+  "assistantSendLinkNote": "Posílá se jen odkaz, nikdy samotné údaje. Vy vyberete, jak ho poslat, a můžete ho ukončit dříve v části {sharedLinks}.",
+  "monthAheadTitle": "Nadcházející měsíc",
+  "monthAheadSubtitle": "Prvního dne v měsíci vám {assistant} pošle, co je třeba obnovit, kolik to stojí a vaše nadcházející cesty",
+  "monthAheadQuestion": "Co musím tento měsíc udělat?",
+  "assistantStepSupport": "Píšu váš e-mail",
+  "assistantStepSecurity": "Kontroluji zabezpečení vašeho účtu",
+  "talkFinishOnScreen": "Je to otevřené na obrazovce. Dokončete to tam a pak klepněte, abyste znovu mluvili."
 }

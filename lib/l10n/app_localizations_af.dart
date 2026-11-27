@@ -3167,16 +3167,16 @@ class AppLocalizationsAf extends AppLocalizations {
   String get planGetPremium => 'Kry Premium';
 
   @override
-  String get businessPlanBuy => 'Kry Besigheid';
-
-  @override
   String get individualPlanBuy => 'Kry Individueel';
 
   @override
-  String get businessPlanSwitch => 'Skakel oor na Besigheid';
+  String get individualPlanSwitch => 'Skakel oor na Individueel';
 
   @override
-  String get individualPlanSwitch => 'Skakel oor na Individueel';
+  String get businessPlanBuy => 'Kry Besigheid';
+
+  @override
+  String get businessPlanSwitch => 'Skakel oor na Besigheid';
 
   @override
   String get planSwitchToYearly => 'Skakel oor na jaarliks';
@@ -4915,8 +4915,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get assistantEmptyReply => 'Ek kon nie \'n antwoord vind nie. Probeer op \'n ander manier vra.';
 
   @override
-  String get assistantDraftReady =>
-      'Hier is die besonderhede. Tik Bevestig om dit te stoor.';
+  String get assistantDraftReady => 'Hier is die besonderhede. Tik Bevestig om dit te stoor.';
 
   @override
   String get assistantNewChat => 'Nuwe gesprek';
@@ -6683,27 +6682,27 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Voeg inentings vir ${name} by';
+    return 'Voeg inentings vir $name by';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Voeg die mikroskyfie vir ${name} by';
+    return 'Voeg die mikroskyfie vir $name by';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Voeg troeteldierversekering vir ${name} by';
+    return 'Voeg troeteldierversekering vir $name by';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Voeg \'n paspoort vir ${name} by';
+    return 'Voeg \'n paspoort vir $name by';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Volgende: ${step}. Sê ja om dit te doen.';
+    return 'Volgende: $step. Sê ja om dit te doen.';
   }
 
   @override
@@ -8989,10 +8988,10 @@ class AppLocalizationsAf extends AppLocalizations {
   String get petTypeFieldHint => 'Voer soort troeteldier in';
 
   @override
-  String get petBirthdayHint => 'Kies geboortedatum';
+  String get petTypeRequired => 'Kies die soort troeteldier';
 
   @override
-  String get petTypeRequired => 'Kies die soort troeteldier';
+  String get petBirthdayHint => 'Kies geboortedatum';
 
   @override
   String get petChipHint => 'Voer mikroskyfienommer in';
@@ -10401,8 +10400,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String get talkNoVoice => 'Jou foon het nie \'n stem vir hierdie taal nie, dus word antwoorde gewys maar nie voorgelees nie.';
 
   @override
-  String get talkNotDone =>
-      'Dit het nie deurgegaan nie. Kyk na die besonderhede op die skerm.';
+  String get talkNotDone => 'Dit het nie deurgegaan nie. Kyk na die besonderhede op die skerm.';
 
   @override
   String get talkReady => 'Ek luister.';
@@ -10666,4 +10664,80 @@ class AppLocalizationsAf extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Jy het vandag se limiet vir \"Vra Vaultara\" bereik. Dit begin môre om $time weer. Alles anders in Vaultara werk soos gewoonlik.';
   }
+
+  @override
+  String get assistantSupportTitle => 'E-pos Vorkalis-ondersteuning';
+
+  @override
+  String get assistantSupportMessage => 'Boodskap';
+
+  @override
+  String get assistantSupportNote => 'Jou programweergawe, foon, stelsel, taal en plan word bygevoeg. Ondersteuning antwoord na die e-posadres waarmee jy aanmeld.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Gestuur na Vorkalis-ondersteuning. Jy behoort binne een werksdag \'n antwoord by $email te kry.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Jy het vandag al \'n paar keer vir ondersteuning ge-e-pos. Probeer môre weer, of skryf self aan support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Bevestig eers jou e-posadres sodat ondersteuning jou kan antwoord.';
+
+  @override
+  String get assistantSupportFailed => 'Die e-pos kon nie gestuur word nie. Probeer later weer, of skryf self aan support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Nooi na jou huishouding';
+
+  @override
+  String get assistantInviteNote => 'Vaultara e-pos vir hulle \'n uitnodigingskakel. Dit werk een keer, vir 7 dae.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Uitnodiging gestuur na $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Die uitnodiging kon nie gestuur word nie. Probeer weer, of deel eerder \'n uitnodiging vanaf jou huishouding.';
+
+  @override
+  String get assistantCalendarNote => 'Jou kalenderprogram maak oop met die gebeurtenis, met \'n alarm 7 dae vooraf.';
+
+  @override
+  String get assistantSendLinkTitle => 'Stuur \'n veilige skakel';
+
+  @override
+  String get assistantSendLinkWorks => 'Skakel werk vir';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours h';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Net \'n skakel word gestuur, nooit die besonderhede self nie. Jy kies hoe om dit te stuur, en kan dit vroeër stop in $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Maand vorentoe';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Op die 1ste stuur $assistant wat hernu moet word, wat dit kos en jou komende reise';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Wat moet ek hierdie maand doen?';
+
+  @override
+  String get assistantStepSupport => 'Skryf jou e-pos';
+
+  @override
+  String get assistantStepSecurity => 'Kontroleer jou rekening se sekuriteit';
+
+  @override
+  String get talkFinishOnScreen => 'Dit is oop op jou skerm. Maak daar klaar en tik dan om weer te praat.';
 }

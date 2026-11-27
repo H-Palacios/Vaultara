@@ -3166,16 +3166,16 @@ class AppLocalizationsIs extends AppLocalizations {
   String get planGetPremium => 'Fá Premium';
 
   @override
-  String get businessPlanBuy => 'Fá Fyrirtæki';
-
-  @override
   String get individualPlanBuy => 'Fá Einstaklingsáskrift';
 
   @override
-  String get businessPlanSwitch => 'Skipta yfir í Fyrirtæki';
+  String get individualPlanSwitch => 'Skipta yfir í Einstaklingsáskrift';
 
   @override
-  String get individualPlanSwitch => 'Skipta yfir í Einstaklingsáskrift';
+  String get businessPlanBuy => 'Fá Fyrirtæki';
+
+  @override
+  String get businessPlanSwitch => 'Skipta yfir í Fyrirtæki';
 
   @override
   String get planSwitchToYearly => 'Skipta yfir í árlega';
@@ -4914,8 +4914,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get assistantEmptyReply => 'Ég fann ekkert svar. Prófaðu að spyrja á annan hátt.';
 
   @override
-  String get assistantDraftReady =>
-      'Hér eru upplýsingarnar. Ýttu á Staðfesta til að vista þær.';
+  String get assistantDraftReady => 'Hér eru upplýsingarnar. Ýttu á Staðfesta til að vista þær.';
 
   @override
   String get assistantNewChat => 'Nýtt spjall';
@@ -6682,27 +6681,27 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Bæta við bólusetningum fyrir ${name}';
+    return 'Bæta við bólusetningum fyrir $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Bæta við örmerki fyrir ${name}';
+    return 'Bæta við örmerki fyrir $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Bæta við gæludýratryggingu fyrir ${name}';
+    return 'Bæta við gæludýratryggingu fyrir $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Bæta við vegabréfi fyrir ${name}';
+    return 'Bæta við vegabréfi fyrir $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Næst: ${step}. Segðu já til að gera það.';
+    return 'Næst: $step. Segðu já til að gera það.';
   }
 
   @override
@@ -8984,10 +8983,10 @@ class AppLocalizationsIs extends AppLocalizations {
   String get petTypeFieldHint => 'Sláðu inn tegund gæludýrs';
 
   @override
-  String get petBirthdayHint => 'Veldu fæðingardag';
+  String get petTypeRequired => 'Veldu tegund gæludýrs';
 
   @override
-  String get petTypeRequired => 'Veldu tegund gæludýrs';
+  String get petBirthdayHint => 'Veldu fæðingardag';
 
   @override
   String get petChipHint => 'Sláðu inn örmerkisnúmer';
@@ -10396,8 +10395,7 @@ class AppLocalizationsIs extends AppLocalizations {
   String get talkNoVoice => 'Síminn er ekki með rödd fyrir þetta tungumál, svo svör birtast en eru ekki lesin upp.';
 
   @override
-  String get talkNotDone =>
-      'Þetta tókst ekki. Skoðaðu upplýsingarnar á skjánum.';
+  String get talkNotDone => 'Þetta tókst ekki. Skoðaðu upplýsingarnar á skjánum.';
 
   @override
   String get talkReady => 'Ég hlusta.';
@@ -10661,4 +10659,80 @@ class AppLocalizationsIs extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Þú hefur náð hámarki dagsins í „Spyrðu Vaultara“. Það endurstillist á morgun kl. $time. Allt annað í Vaultara virkar eins og venjulega.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Senda Vorkalis-þjónustu tölvupóst';
+
+  @override
+  String get assistantSupportMessage => 'Skilaboð';
+
+  @override
+  String get assistantSupportNote => 'Útgáfa appsins, sími, kerfi, tungumál og áskrift bætast við. Þjónustan svarar á netfangið sem þú skráir þig inn með.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Sent til Vorkalis-þjónustu. Þú ættir að fá svar á $email innan eins virks dags.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Þú hefur þegar sent þjónustunni póst nokkrum sinnum í dag. Reyndu aftur á morgun, eða skrifaðu beint á support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Staðfestu fyrst netfangið þitt svo þjónustan geti svarað þér.';
+
+  @override
+  String get assistantSupportFailed => 'Ekki tókst að senda tölvupóstinn. Reyndu aftur síðar, eða skrifaðu beint á support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Bjóða á heimilið þitt';
+
+  @override
+  String get assistantInviteNote => 'Vaultara sendir þeim boðstengil í tölvupósti. Hann virkar einu sinni, í 7 daga.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Boð sent á $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Ekki tókst að senda boðið. Reyndu aftur, eða deildu frekar boði frá heimilinu þínu.';
+
+  @override
+  String get assistantCalendarNote => 'Dagatalsappið þitt opnast með viðburðinum og áminningu 7 dögum áður.';
+
+  @override
+  String get assistantSendLinkTitle => 'Senda öruggan tengil';
+
+  @override
+  String get assistantSendLinkWorks => 'Tengillinn virkar í';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours klst.';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Aðeins tengill er sendur, aldrei upplýsingarnar sjálfar. Þú velur hvernig hann er sendur og getur stöðvað hann fyrr í $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Mánuðurinn fram undan';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Þann 1. sendir $assistant hvað þarf að endurnýja, hvað það kostar og ferðirnar þínar fram undan';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Hvað þarf ég að gera í þessum mánuði?';
+
+  @override
+  String get assistantStepSupport => 'Skrifa tölvupóstinn þinn';
+
+  @override
+  String get assistantStepSecurity => 'Athuga öryggi aðgangsins þíns';
+
+  @override
+  String get talkFinishOnScreen => 'Það er opið á skjánum. Kláraðu þar og ýttu svo til að tala aftur.';
 }

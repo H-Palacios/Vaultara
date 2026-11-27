@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Documento di un dipendente scaduto",
   "staffOverdueYesterday": "{name} di {person} è scaduto ieri e non è stato rinnovato.",
   "staffOverdueWeek": "{name} di {person} è scaduto una settimana fa e non è ancora stato rinnovato.",
-  "staffOverdueMany": "{count} documenti del personale sono scaduti e non sono stati rinnovati: {names}."
+  "staffOverdueMany": "{count} documenti del personale sono scaduti e non sono stati rinnovati: {names}.",
+  "monthAheadTitle": "Il tuo mese in arrivo",
+  "monthAheadBodyCount": "Da rinnovare questo mese: {count}. Tocca per vedere cosa fare.",
+  "monthAheadBodyCost": "Da rinnovare questo mese: {count}, circa {cost}. Tocca per vedere cosa fare.",
+  "monthAheadBodyCountTrips": "Da rinnovare questo mese: {count}. Viaggi nelle prossime 6 settimane: {trips}. Tocca per vedere cosa fare.",
+  "monthAheadBodyCostTrips": "Da rinnovare questo mese: {count}, circa {cost}. Viaggi nelle prossime 6 settimane: {trips}. Tocca per vedere cosa fare.",
+  "monthAheadBodyTrips": "Niente da rinnovare questo mese. Viaggi nelle prossime 6 settimane: {trips}. Tocca per vedere cosa fare."
 }

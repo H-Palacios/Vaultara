@@ -4156,5 +4156,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Vorkalis ಬೆಂಬಲಕ್ಕೆ ಇಮೇಲ್ ಮಾಡಿ",
+  "assistantSupportMessage": "ಸಂದೇಶ",
+  "assistantSupportNote": "ಆ್ಯಪ್ ಆವೃತ್ತಿ, ಫೋನ್, ಸಿಸ್ಟಮ್, ಭಾಷೆ ಮತ್ತು ಪ್ಲಾನ್ ಸೇರಿಸಲಾಗುತ್ತದೆ. ನೀವು ಸೈನ್ ಇನ್ ಮಾಡುವ ಇಮೇಲ್‌ಗೆ ಬೆಂಬಲ ಉತ್ತರಿಸುತ್ತದೆ.",
+  "assistantSupportSent": "Vorkalis ಬೆಂಬಲಕ್ಕೆ ಕಳುಹಿಸಲಾಗಿದೆ. ಒಂದು ಕೆಲಸದ ದಿನದಲ್ಲಿ {email} ಗೆ ಉತ್ತರ ಬರಬೇಕು.",
+  "assistantSupportLimit": "ನೀವು ಇಂದು ಈಗಾಗಲೇ ಹಲವು ಬಾರಿ ಬೆಂಬಲಕ್ಕೆ ಇಮೇಲ್ ಮಾಡಿದ್ದೀರಿ. ನಾಳೆ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ನೇರವಾಗಿ support@vorkalis.com ಗೆ ಬರೆಯಿರಿ.",
+  "assistantSupportVerify": "ಬೆಂಬಲ ನಿಮಗೆ ಉತ್ತರಿಸಲು ಮೊದಲು ನಿಮ್ಮ ಇಮೇಲ್ ವಿಳಾಸವನ್ನು ಪರಿಶೀಲಿಸಿ.",
+  "assistantSupportFailed": "ಇಮೇಲ್ ಕಳುಹಿಸಲಾಗಲಿಲ್ಲ. ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ನೇರವಾಗಿ support@vorkalis.com ಗೆ ಬರೆಯಿರಿ.",
+  "assistantInviteTitle": "ನಿಮ್ಮ ಮನೆಗೆ ಆಹ್ವಾನಿಸಿ",
+  "assistantInviteNote": "Vaultara ಅವರಿಗೆ ಇಮೇಲ್ ಮೂಲಕ ಆಹ್ವಾನ ಲಿಂಕ್ ಕಳುಹಿಸುತ್ತದೆ. ಅದು ಒಮ್ಮೆ, 7 ದಿನಗಳವರೆಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ.",
+  "assistantInviteSent": "ಆಹ್ವಾನವನ್ನು {email} ಗೆ ಕಳುಹಿಸಲಾಗಿದೆ.",
+  "assistantInviteFailed": "ಆಹ್ವಾನ ಕಳುಹಿಸಲಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ಅದರ ಬದಲು ನಿಮ್ಮ ಮನೆಯಿಂದ ಆಹ್ವಾನ ಹಂಚಿಕೊಳ್ಳಿ.",
+  "assistantCalendarNote": "ನಿಮ್ಮ ಕ್ಯಾಲೆಂಡರ್ ಆ್ಯಪ್ ಈವೆಂಟ್ ಮತ್ತು 7 ದಿನ ಮೊದಲಿನ ಜ್ಞಾಪನೆಯೊಂದಿಗೆ ತೆರೆಯುತ್ತದೆ.",
+  "assistantSendLinkTitle": "ಸುರಕ್ಷಿತ ಲಿಂಕ್ ಕಳುಹಿಸಿ",
+  "assistantSendLinkWorks": "ಲಿಂಕ್ ಅವಧಿ",
+  "assistantSendLinkHours": "{hours} ಗಂ",
+  "assistantSendLinkNote": "ಕೇವಲ ಲಿಂಕ್ ಮಾತ್ರ ಕಳುಹಿಸಲಾಗುತ್ತದೆ, ವಿವರಗಳನ್ನು ಎಂದಿಗೂ ಅಲ್ಲ. ಅದನ್ನು ಹೇಗೆ ಕಳುಹಿಸಬೇಕೆಂದು ನೀವು ಆಯ್ಕೆ ಮಾಡುತ್ತೀರಿ ಮತ್ತು {sharedLinks} ನಲ್ಲಿ ಅದನ್ನು ಮೊದಲೇ ನಿಲ್ಲಿಸಬಹುದು.",
+  "monthAheadTitle": "ಮುಂದಿನ ತಿಂಗಳು",
+  "monthAheadSubtitle": "ಪ್ರತಿ ತಿಂಗಳ 1 ರಂದು {assistant} ಏನನ್ನು ನವೀಕರಿಸಬೇಕು, ಅದರ ವೆಚ್ಚ ಮತ್ತು ನಿಮ್ಮ ಮುಂಬರುವ ಪ್ರವಾಸಗಳನ್ನು ಕಳುಹಿಸುತ್ತದೆ",
+  "monthAheadQuestion": "ಈ ತಿಂಗಳು ನಾನು ಏನು ಮಾಡಬೇಕು?",
+  "assistantStepSupport": "ನಿಮ್ಮ ಇಮೇಲ್ ಬರೆಯಲಾಗುತ್ತಿದೆ",
+  "assistantStepSecurity": "ನಿಮ್ಮ ಖಾತೆಯ ಸುರಕ್ಷತೆ ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ",
+  "talkFinishOnScreen": "ಅದು ನಿಮ್ಮ ಪರದೆಯಲ್ಲಿ ತೆರೆದಿದೆ. ಅಲ್ಲಿ ಮುಗಿಸಿ, ನಂತರ ಮತ್ತೆ ಮಾತನಾಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ."
 }

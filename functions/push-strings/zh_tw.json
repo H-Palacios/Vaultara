@@ -26,5 +26,11 @@
   "staffOverdueTitle": "員工文件已過期",
   "staffOverdueYesterday": "{person} 的 {name} 昨天已過期，尚未續約。",
   "staffOverdueWeek": "{person} 的 {name} 一週前已過期，仍未續約。",
-  "staffOverdueMany": "{count} 份員工文件已過期且未續約：{names}。"
+  "staffOverdueMany": "{count} 份員工文件已過期且未續約：{names}。",
+  "monthAheadTitle": "你的本月概覽",
+  "monthAheadBodyCount": "本月需續約：{count} 項。輕觸查看要做的事。",
+  "monthAheadBodyCost": "本月需續約：{count} 項，約 {cost}。輕觸查看要做的事。",
+  "monthAheadBodyCountTrips": "本月需續約：{count} 項。未來 6 週的旅程：{trips} 個。輕觸查看要做的事。",
+  "monthAheadBodyCostTrips": "本月需續約：{count} 項，約 {cost}。未來 6 週的旅程：{trips} 個。輕觸查看要做的事。",
+  "monthAheadBodyTrips": "本月沒有需要續約的項目。未來 6 週的旅程：{trips} 個。輕觸查看要做的事。"
 }

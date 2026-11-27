@@ -3167,16 +3167,16 @@ class AppLocalizationsTa extends AppLocalizations {
   String get planGetPremium => 'ப்ரீமியம் பெறு';
 
   @override
-  String get businessPlanBuy => 'வணிகத் திட்டம் பெறு';
-
-  @override
   String get individualPlanBuy => 'தனிப்பட்ட திட்டம் பெறு';
 
   @override
-  String get businessPlanSwitch => 'வணிகத் திட்டத்துக்கு மாறு';
+  String get individualPlanSwitch => 'தனிப்பட்ட திட்டத்துக்கு மாறு';
 
   @override
-  String get individualPlanSwitch => 'தனிப்பட்ட திட்டத்துக்கு மாறு';
+  String get businessPlanBuy => 'வணிகத் திட்டம் பெறு';
+
+  @override
+  String get businessPlanSwitch => 'வணிகத் திட்டத்துக்கு மாறு';
 
   @override
   String get planSwitchToYearly => 'ஆண்டுவாரிக்கு மாறு';
@@ -4915,8 +4915,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get assistantEmptyReply => 'என்னால் பதிலைக் கண்டுபிடிக்க முடியவில்லை. வேறு விதமாகக் கேட்டுப் பாருங்கள்.';
 
   @override
-  String get assistantDraftReady =>
-      'இதோ விவரங்கள். சேமிக்க உறுதிப்படுத்து என்பதைத் தட்டவும்.';
+  String get assistantDraftReady => 'இதோ விவரங்கள். சேமிக்க உறுதிப்படுத்து என்பதைத் தட்டவும்.';
 
   @override
   String get assistantNewChat => 'புதிய அரட்டை';
@@ -6683,27 +6682,27 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return '${name}க்கு தடுப்பூசிகளைச் சேர்க்கவும்';
+    return '$nameக்கு தடுப்பூசிகளைச் சேர்க்கவும்';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return '${name}க்கு மைக்ரோசிப்பைச் சேர்க்கவும்';
+    return '$nameக்கு மைக்ரோசிப்பைச் சேர்க்கவும்';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return '${name}க்கு செல்லப்பிராணி காப்பீட்டைச் சேர்க்கவும்';
+    return '$nameக்கு செல்லப்பிராணி காப்பீட்டைச் சேர்க்கவும்';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return '${name}க்கு கடவுச்சீட்டைச் சேர்க்கவும்';
+    return '$nameக்கு கடவுச்சீட்டைச் சேர்க்கவும்';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'அடுத்து: ${step}. செய்ய ஆம் என்று சொல்லுங்கள்.';
+    return 'அடுத்து: $step. செய்ய ஆம் என்று சொல்லுங்கள்.';
   }
 
   @override
@@ -8985,10 +8984,10 @@ class AppLocalizationsTa extends AppLocalizations {
   String get petTypeFieldHint => 'செல்லப்பிராணியின் வகையை உள்ளிடவும்';
 
   @override
-  String get petBirthdayHint => 'பிறந்த தேதியைத் தேர்ந்தெடுக்கவும்';
+  String get petTypeRequired => 'செல்லப்பிராணியின் வகையைத் தேர்ந்தெடுக்கவும்';
 
   @override
-  String get petTypeRequired => 'செல்லப்பிராணியின் வகையைத் தேர்ந்தெடுக்கவும்';
+  String get petBirthdayHint => 'பிறந்த தேதியைத் தேர்ந்தெடுக்கவும்';
 
   @override
   String get petChipHint => 'மைக்ரோசிப் எண்ணை உள்ளிடவும்';
@@ -10397,8 +10396,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get talkNoVoice => 'உங்கள் போனில் இந்த மொழிக்கு குரல் இல்லை, எனவே பதில்கள் காட்டப்படும் ஆனால் வாசிக்கப்படாது.';
 
   @override
-  String get talkNotDone =>
-      'அது நடக்கவில்லை. திரையில் உள்ள விவரங்களைப் பார்க்கவும்.';
+  String get talkNotDone => 'அது நடக்கவில்லை. திரையில் உள்ள விவரங்களைப் பார்க்கவும்.';
 
   @override
   String get talkReady => 'கேட்கிறேன்.';
@@ -10662,4 +10660,80 @@ class AppLocalizationsTa extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'இன்றைய \"Vaultara-விடம் கேளுங்கள்\" வரம்பை அடைந்துவிட்டீர்கள். அது நாளை $timeக்கு மீட்டமைக்கப்படும். Vaultara-வில் மற்ற அனைத்தும் வழக்கம்போல் இயங்கும்.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Vorkalis ஆதரவுக்கு மின்னஞ்சல் அனுப்பு';
+
+  @override
+  String get assistantSupportMessage => 'செய்தி';
+
+  @override
+  String get assistantSupportNote => 'ஆப் பதிப்பு, ஃபோன், சிஸ்டம், மொழி, திட்டம் சேர்க்கப்படும். நீங்கள் உள்நுழையும் மின்னஞ்சலுக்கே ஆதரவு பதிலளிக்கும்.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Vorkalis ஆதரவுக்கு அனுப்பப்பட்டது. ஒரு வேலை நாளுக்குள் $email க்கு பதில் வர வேண்டும்.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'இன்று ஏற்கனவே பலமுறை ஆதரவுக்கு மின்னஞ்சல் அனுப்பியுள்ளீர்கள். நாளை மீண்டும் முயலுங்கள் அல்லது நேரடியாக support@vorkalis.com க்கு எழுதுங்கள்.';
+
+  @override
+  String get assistantSupportVerify => 'ஆதரவு உங்களுக்குப் பதிலளிக்க, முதலில் உங்கள் மின்னஞ்சல் முகவரியைச் சரிபார்க்கவும்.';
+
+  @override
+  String get assistantSupportFailed => 'மின்னஞ்சலை அனுப்ப முடியவில்லை. பிறகு மீண்டும் முயலுங்கள் அல்லது நேரடியாக support@vorkalis.com க்கு எழுதுங்கள்.';
+
+  @override
+  String get assistantInviteTitle => 'உங்கள் வீட்டுக்கு அழைக்கவும்';
+
+  @override
+  String get assistantInviteNote => 'Vaultara அவர்களுக்கு மின்னஞ்சலில் அழைப்பு இணைப்பை அனுப்பும். அது ஒருமுறை, 7 நாட்களுக்கு வேலை செய்யும்.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'அழைப்பு $email க்கு அனுப்பப்பட்டது.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'அழைப்பை அனுப்ப முடியவில்லை. மீண்டும் முயலுங்கள் அல்லது அதற்குப் பதிலாக உங்கள் வீட்டிலிருந்து அழைப்பைப் பகிருங்கள்.';
+
+  @override
+  String get assistantCalendarNote => 'நிகழ்வுடனும் 7 நாட்களுக்கு முந்தைய நினைவூட்டலுடனும் உங்கள் நாட்காட்டி ஆப் திறக்கும்.';
+
+  @override
+  String get assistantSendLinkTitle => 'பாதுகாப்பான இணைப்பை அனுப்பு';
+
+  @override
+  String get assistantSendLinkWorks => 'இணைப்பு செல்லுபடி';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours மணி';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'இணைப்பு மட்டுமே அனுப்பப்படும், விவரங்கள் ஒருபோதும் இல்லை. எப்படி அனுப்புவது என்பதை நீங்கள் தேர்வு செய்யலாம், $sharedLinks இல் அதை முன்பே நிறுத்தலாம்.';
+  }
+
+  @override
+  String get monthAheadTitle => 'வரும் மாதம்';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'ஒவ்வொரு மாதமும் 1 ஆம் தேதி $assistant எதைப் புதுப்பிக்க வேண்டும், அதன் செலவு மற்றும் உங்கள் வரவிருக்கும் பயணங்களை அனுப்பும்';
+  }
+
+  @override
+  String get monthAheadQuestion => 'இந்த மாதம் நான் என்ன செய்ய வேண்டும்?';
+
+  @override
+  String get assistantStepSupport => 'உங்கள் மின்னஞ்சல் எழுதப்படுகிறது';
+
+  @override
+  String get assistantStepSecurity => 'உங்கள் கணக்கின் பாதுகாப்பு சரிபார்க்கப்படுகிறது';
+
+  @override
+  String get talkFinishOnScreen => 'இது உங்கள் திரையில் திறந்துள்ளது. அங்கே முடித்துவிட்டு, மீண்டும் பேசத் தட்டவும்.';
 }

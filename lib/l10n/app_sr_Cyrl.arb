@@ -4380,5 +4380,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Пиши подршци Vorkalis",
+  "assistantSupportMessage": "Порука",
+  "assistantSupportNote": "Додају се верзија апликације, телефон, систем, језик и пакет. Подршка одговара на имејл адресу којом се пријављујете.",
+  "assistantSupportSent": "Послато подршци Vorkalis. Одговор на {email} требало би да добијете у року од једног радног дана.",
+  "assistantSupportLimit": "Данас сте подршци већ писали неколико пута. Покушајте сутра или пишите директно на support@vorkalis.com.",
+  "assistantSupportVerify": "Прво потврдите своју имејл адресу како би вам подршка могла одговорити.",
+  "assistantSupportFailed": "Имејл није могао да се пошаље. Покушајте касније или пишите директно на support@vorkalis.com.",
+  "assistantInviteTitle": "Позови у своје домаћинство",
+  "assistantInviteNote": "Vaultara им имејлом шаље линк са позивницом. Важи једном, 7 дана.",
+  "assistantInviteSent": "Позивница послата на {email}.",
+  "assistantInviteFailed": "Позивница није могла да се пошаље. Покушајте поново или радије поделите позивницу из свог домаћинства.",
+  "assistantCalendarNote": "Отвара се ваша апликација за календар са догађајем и подсетником 7 дана раније.",
+  "assistantSendLinkTitle": "Пошаљи безбедан линк",
+  "assistantSendLinkWorks": "Линк важи",
+  "assistantSendLinkHours": "{hours} ч",
+  "assistantSendLinkNote": "Шаље се само линк, никад сами подаци. Ви бирате како да га пошаљете и можете га раније зауставити у делу {sharedLinks}.",
+  "monthAheadTitle": "Месец пред вама",
+  "monthAheadSubtitle": "Првог у месецу {assistant} вам шаље шта треба обновити, колико то кошта и ваша предстојећа путовања",
+  "monthAheadQuestion": "Шта треба да урадим овог месеца?",
+  "assistantStepSupport": "Пишем ваш имејл",
+  "assistantStepSecurity": "Проверавам безбедност вашег налога",
+  "talkFinishOnScreen": "Отворено је на екрану. Завршите тамо, а затим додирните да поново разговарате."
 }

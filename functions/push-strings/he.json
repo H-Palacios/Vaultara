@@ -26,5 +26,11 @@
   "staffOverdueTitle": "פג תוקף מסמך של עובד",
   "staffOverdueYesterday": "תוקף {name} של {person} פג אתמול והוא לא חודש.",
   "staffOverdueWeek": "תוקף {name} של {person} פג לפני שבוע והוא עדיין לא חודש.",
-  "staffOverdueMany": "תוקפם של {count} מסמכי עובדים פג והם לא חודשו: {names}."
+  "staffOverdueMany": "תוקפם של {count} מסמכי עובדים פג והם לא חודשו: {names}.",
+  "monthAheadTitle": "החודש הקרוב שלך",
+  "monthAheadBodyCount": "לחידוש החודש: {count}. הקש כדי לראות מה לעשות.",
+  "monthAheadBodyCost": "לחידוש החודש: {count}, בערך {cost}. הקש כדי לראות מה לעשות.",
+  "monthAheadBodyCountTrips": "לחידוש החודש: {count}. נסיעות ב-6 השבועות הקרובים: {trips}. הקש כדי לראות מה לעשות.",
+  "monthAheadBodyCostTrips": "לחידוש החודש: {count}, בערך {cost}. נסיעות ב-6 השבועות הקרובים: {trips}. הקש כדי לראות מה לעשות.",
+  "monthAheadBodyTrips": "אין מה לחדש החודש. נסיעות ב-6 השבועות הקרובים: {trips}. הקש כדי לראות מה לעשות."
 }

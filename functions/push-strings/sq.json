@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Dokumenti i një punonjësi skadoi",
   "staffOverdueYesterday": "{name} i {person} skadoi dje dhe nuk është rinovuar.",
   "staffOverdueWeek": "{name} i {person} skadoi një javë më parë dhe ende nuk është rinovuar.",
-  "staffOverdueMany": "{count} dokumente të stafit kanë skaduar dhe nuk janë rinovuar: {names}."
+  "staffOverdueMany": "{count} dokumente të stafit kanë skaduar dhe nuk janë rinovuar: {names}.",
+  "monthAheadTitle": "Muaji juaj që vjen",
+  "monthAheadBodyCount": "Për t'u rinovuar këtë muaj: {count}. Prekni për të parë çfarë të bëni.",
+  "monthAheadBodyCost": "Për t'u rinovuar këtë muaj: {count}, rreth {cost}. Prekni për të parë çfarë të bëni.",
+  "monthAheadBodyCountTrips": "Për t'u rinovuar këtë muaj: {count}. Udhëtime në 6 javët e ardhshme: {trips}. Prekni për të parë çfarë të bëni.",
+  "monthAheadBodyCostTrips": "Për t'u rinovuar këtë muaj: {count}, rreth {cost}. Udhëtime në 6 javët e ardhshme: {trips}. Prekni për të parë çfarë të bëni.",
+  "monthAheadBodyTrips": "Asgjë për t'u rinovuar këtë muaj. Udhëtime në 6 javët e ardhshme: {trips}. Prekni për të parë çfarë të bëni."
 }

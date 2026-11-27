@@ -4424,5 +4424,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Lähetä sähköpostia Vorkalis-tukeen",
+  "assistantSupportMessage": "Viesti",
+  "assistantSupportNote": "Sovelluksen versio, puhelin, järjestelmä, kieli ja tilaus lisätään. Tuki vastaa sähköpostiosoitteeseen, jolla kirjaudut.",
+  "assistantSupportSent": "Lähetetty Vorkalis-tukeen. Saat vastauksen osoitteeseen {email} yhden arkipäivän kuluessa.",
+  "assistantSupportLimit": "Olet jo lähettänyt tukeen viestin useita kertoja tänään. Yritä huomenna uudelleen tai kirjoita itse osoitteeseen support@vorkalis.com.",
+  "assistantSupportVerify": "Vahvista ensin sähköpostiosoitteesi, jotta tuki voi vastata sinulle.",
+  "assistantSupportFailed": "Sähköpostia ei voitu lähettää. Yritä myöhemmin uudelleen tai kirjoita itse osoitteeseen support@vorkalis.com.",
+  "assistantInviteTitle": "Kutsu kotitalouteesi",
+  "assistantInviteNote": "Vaultara lähettää heille kutsulinkin sähköpostilla. Se toimii kerran, 7 päivän ajan.",
+  "assistantInviteSent": "Kutsu lähetetty osoitteeseen {email}.",
+  "assistantInviteFailed": "Kutsua ei voitu lähettää. Yritä uudelleen tai jaa kutsu kotitaloudestasi.",
+  "assistantCalendarNote": "Kalenterisovelluksesi avautuu tapahtuman kanssa, ja muistutus tulee 7 päivää ennen.",
+  "assistantSendLinkTitle": "Lähetä turvallinen linkki",
+  "assistantSendLinkWorks": "Linkki toimii",
+  "assistantSendLinkHours": "{hours} t",
+  "assistantSendLinkNote": "Vain linkki lähetetään, ei koskaan itse tietoja. Valitset itse, miten lähetät sen, ja voit lopettaa sen aiemmin kohdassa {sharedLinks}.",
+  "monthAheadTitle": "Tuleva kuukausi",
+  "monthAheadSubtitle": "Kuun 1. päivänä {assistant} kertoo, mitä pitää uusia, mitä se maksaa ja tulevat matkasi",
+  "monthAheadQuestion": "Mitä minun pitää tehdä tässä kuussa?",
+  "assistantStepSupport": "Kirjoitetaan sähköpostiasi",
+  "assistantStepSecurity": "Tarkistetaan tilisi turvallisuutta",
+  "talkFinishOnScreen": "Se on auki näytölläsi. Viimeistele se siellä ja napauta sitten puhuaksesi uudelleen."
 }

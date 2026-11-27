@@ -4418,5 +4418,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Vorkalis सहायता को ईमेल करें",
+  "assistantSupportMessage": "संदेश",
+  "assistantSupportNote": "ऐप वर्ज़न, फ़ोन, सिस्टम, भाषा और प्लान जोड़े जाते हैं। सहायता उसी ईमेल पर जवाब देती है जिससे आप साइन इन करते हैं।",
+  "assistantSupportSent": "Vorkalis सहायता को भेज दिया गया। आपको एक कार्यदिवस में {email} पर जवाब मिलना चाहिए।",
+  "assistantSupportLimit": "आप आज पहले ही कई बार सहायता को ईमेल कर चुके हैं। कल फिर कोशिश करें या सीधे support@vorkalis.com पर लिखें।",
+  "assistantSupportVerify": "पहले अपना ईमेल पता सत्यापित करें, ताकि सहायता आपको जवाब दे सके।",
+  "assistantSupportFailed": "ईमेल भेजा नहीं जा सका। बाद में फिर कोशिश करें या सीधे support@vorkalis.com पर लिखें।",
+  "assistantInviteTitle": "अपने परिवार में आमंत्रित करें",
+  "assistantInviteNote": "Vaultara उन्हें ईमेल से आमंत्रण लिंक भेजता है। यह एक बार, 7 दिनों तक काम करता है।",
+  "assistantInviteSent": "आमंत्रण {email} पर भेज दिया गया।",
+  "assistantInviteFailed": "आमंत्रण भेजा नहीं जा सका। फिर कोशिश करें, या इसके बजाय अपने परिवार से आमंत्रण साझा करें।",
+  "assistantCalendarNote": "आपका कैलेंडर ऐप इवेंट और 7 दिन पहले के रिमाइंडर के साथ खुलता है।",
+  "assistantSendLinkTitle": "सुरक्षित लिंक भेजें",
+  "assistantSendLinkWorks": "लिंक की अवधि",
+  "assistantSendLinkHours": "{hours} घं",
+  "assistantSendLinkNote": "सिर्फ़ एक लिंक भेजा जाता है, विवरण कभी नहीं। आप चुनते हैं कि इसे कैसे भेजें, और {sharedLinks} में इसे पहले भी बंद कर सकते हैं।",
+  "monthAheadTitle": "आने वाला महीना",
+  "monthAheadSubtitle": "हर महीने की 1 तारीख़ को {assistant} बताता है कि क्या नवीनीकृत करना है, उसकी लागत कितनी है और आपकी आने वाली यात्राएँ",
+  "monthAheadQuestion": "इस महीने मुझे क्या करना है?",
+  "assistantStepSupport": "आपका ईमेल लिखा जा रहा है",
+  "assistantStepSecurity": "आपके खाते की सुरक्षा जाँची जा रही है",
+  "talkFinishOnScreen": "यह आपकी स्क्रीन पर खुला है। वहीं पूरा करें, फिर दोबारा बोलने के लिए टैप करें।"
 }

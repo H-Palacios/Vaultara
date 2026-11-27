@@ -4406,5 +4406,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Napísať podpore Vorkalis",
+  "assistantSupportMessage": "Správa",
+  "assistantSupportNote": "Pridá sa verzia aplikácie, telefón, systém, jazyk a plán. Podpora odpovie na e-mail, ktorým sa prihlasujete.",
+  "assistantSupportSent": "Odoslané podpore Vorkalis. Odpoveď na {email} by ste mali dostať do jedného pracovného dňa.",
+  "assistantSupportLimit": "Dnes ste podpore písali už niekoľkokrát. Skúste to zajtra alebo napíšte priamo na support@vorkalis.com.",
+  "assistantSupportVerify": "Najprv overte svoju e-mailovú adresu, aby vám podpora mohla odpovedať.",
+  "assistantSupportFailed": "E-mail sa nepodarilo odoslať. Skúste to neskôr alebo napíšte priamo na support@vorkalis.com.",
+  "assistantInviteTitle": "Pozvať do vašej domácnosti",
+  "assistantInviteNote": "Vaultara im e-mailom pošle odkaz s pozvánkou. Funguje raz, počas 7 dní.",
+  "assistantInviteSent": "Pozvánka odoslaná na {email}.",
+  "assistantInviteFailed": "Pozvánku sa nepodarilo odoslať. Skúste to znova alebo namiesto toho zdieľajte pozvánku zo svojej domácnosti.",
+  "assistantCalendarNote": "Otvorí sa vaša aplikácia kalendára s udalosťou a pripomenutím 7 dní vopred.",
+  "assistantSendLinkTitle": "Poslať bezpečný odkaz",
+  "assistantSendLinkWorks": "Odkaz platí",
+  "assistantSendLinkHours": "{hours} h",
+  "assistantSendLinkNote": "Posiela sa iba odkaz, nikdy samotné údaje. Vy vyberiete, ako ho poslať, a môžete ho ukončiť skôr v časti {sharedLinks}.",
+  "monthAheadTitle": "Nadchádzajúci mesiac",
+  "monthAheadSubtitle": "Prvého v mesiaci vám {assistant} pošle, čo treba obnoviť, koľko to stojí a vaše nadchádzajúce cesty",
+  "monthAheadQuestion": "Čo musím tento mesiac urobiť?",
+  "assistantStepSupport": "Píšem váš e-mail",
+  "assistantStepSecurity": "Kontrolujem zabezpečenie vášho účtu",
+  "talkFinishOnScreen": "Je to otvorené na obrazovke. Dokončite to tam a potom ťuknite, aby ste znova hovorili."
 }

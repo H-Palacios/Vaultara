@@ -3153,16 +3153,16 @@ class AppLocalizationsVi extends AppLocalizations {
   String get planGetPremium => 'Nhận Premium';
 
   @override
-  String get businessPlanBuy => 'Nhận gói Doanh nghiệp';
-
-  @override
   String get individualPlanBuy => 'Mua gói Cá nhân';
 
   @override
-  String get businessPlanSwitch => 'Chuyển sang Doanh nghiệp';
+  String get individualPlanSwitch => 'Chuyển sang gói Cá nhân';
 
   @override
-  String get individualPlanSwitch => 'Chuyển sang gói Cá nhân';
+  String get businessPlanBuy => 'Nhận gói Doanh nghiệp';
+
+  @override
+  String get businessPlanSwitch => 'Chuyển sang Doanh nghiệp';
 
   @override
   String get planSwitchToYearly => 'Chuyển sang hàng năm';
@@ -4881,8 +4881,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get assistantEmptyReply => 'Tôi không tìm được câu trả lời. Hãy thử hỏi theo cách khác.';
 
   @override
-  String get assistantDraftReady =>
-      'Đây là thông tin chi tiết. Chạm Xác nhận để lưu.';
+  String get assistantDraftReady => 'Đây là thông tin chi tiết. Chạm Xác nhận để lưu.';
 
   @override
   String get assistantNewChat => 'Cuộc trò chuyện mới';
@@ -6632,27 +6631,27 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Thêm tiêm phòng cho ${name}';
+    return 'Thêm tiêm phòng cho $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Thêm vi mạch cho ${name}';
+    return 'Thêm vi mạch cho $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Thêm bảo hiểm thú cưng cho ${name}';
+    return 'Thêm bảo hiểm thú cưng cho $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Thêm hộ chiếu cho ${name}';
+    return 'Thêm hộ chiếu cho $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Tiếp theo: ${step}. Nói có để thực hiện.';
+    return 'Tiếp theo: $step. Nói có để thực hiện.';
   }
 
   @override
@@ -8928,10 +8927,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get petTypeFieldHint => 'Nhập loại thú cưng';
 
   @override
-  String get petBirthdayHint => 'Chọn ngày sinh';
+  String get petTypeRequired => 'Chọn loại thú cưng';
 
   @override
-  String get petTypeRequired => 'Chọn loại thú cưng';
+  String get petBirthdayHint => 'Chọn ngày sinh';
 
   @override
   String get petChipHint => 'Nhập số vi mạch';
@@ -10333,8 +10332,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get talkNoVoice => 'Điện thoại không có giọng đọc cho ngôn ngữ này, nên câu trả lời được hiển thị nhưng không đọc.';
 
   @override
-  String get talkNotDone =>
-      'Việc đó chưa thực hiện được. Hãy kiểm tra thông tin trên màn hình.';
+  String get talkNotDone => 'Việc đó chưa thực hiện được. Hãy kiểm tra thông tin trên màn hình.';
 
   @override
   String get talkReady => 'Tôi đang nghe.';
@@ -10598,4 +10596,80 @@ class AppLocalizationsVi extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Bạn đã đạt giới hạn \"Hỏi Vaultara\" hôm nay. Giới hạn đặt lại vào ngày mai lúc $time. Mọi thứ khác trong Vaultara vẫn hoạt động bình thường.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Gửi email cho hỗ trợ Vorkalis';
+
+  @override
+  String get assistantSupportMessage => 'Tin nhắn';
+
+  @override
+  String get assistantSupportNote => 'Phiên bản ứng dụng, điện thoại, hệ thống, ngôn ngữ và gói được thêm vào. Bộ phận hỗ trợ trả lời đến email bạn dùng để đăng nhập.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Đã gửi cho hỗ trợ Vorkalis. Bạn sẽ nhận được trả lời tại $email trong vòng một ngày làm việc.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Hôm nay bạn đã gửi email cho hỗ trợ vài lần. Hãy thử lại vào ngày mai hoặc viết trực tiếp tới support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Hãy xác minh địa chỉ email trước để bộ phận hỗ trợ có thể trả lời bạn.';
+
+  @override
+  String get assistantSupportFailed => 'Không gửi được email. Hãy thử lại sau hoặc viết trực tiếp tới support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Mời vào hộ gia đình của bạn';
+
+  @override
+  String get assistantInviteNote => 'Vaultara gửi cho họ đường liên kết mời qua email. Liên kết dùng được một lần, trong 7 ngày.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Đã gửi lời mời tới $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Không gửi được lời mời. Hãy thử lại hoặc chia sẻ lời mời từ hộ gia đình của bạn.';
+
+  @override
+  String get assistantCalendarNote => 'Ứng dụng lịch của bạn sẽ mở với sự kiện và lời nhắc trước 7 ngày.';
+
+  @override
+  String get assistantSendLinkTitle => 'Gửi đường liên kết an toàn';
+
+  @override
+  String get assistantSendLinkWorks => 'Liên kết có hiệu lực';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours giờ';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Chỉ một đường liên kết được gửi, không bao giờ là thông tin chi tiết. Bạn chọn cách gửi và có thể dừng sớm trong $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Tháng tới';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Vào ngày 1, $assistant gửi những gì cần gia hạn, chi phí và các chuyến đi sắp tới của bạn';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Tháng này tôi cần làm gì?';
+
+  @override
+  String get assistantStepSupport => 'Đang viết email của bạn';
+
+  @override
+  String get assistantStepSecurity => 'Đang kiểm tra bảo mật tài khoản của bạn';
+
+  @override
+  String get talkFinishOnScreen => 'Đã mở trên màn hình của bạn. Hãy hoàn tất ở đó, rồi chạm để nói tiếp.';
 }

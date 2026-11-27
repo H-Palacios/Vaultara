@@ -4156,5 +4156,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Vorkalis સપોર્ટને ઇમેઇલ કરો",
+  "assistantSupportMessage": "સંદેશ",
+  "assistantSupportNote": "ઍપ વર્ઝન, ફોન, સિસ્ટમ, ભાષા અને પ્લાન ઉમેરવામાં આવે છે. સપોર્ટ એ જ ઇમેઇલ પર જવાબ આપે છે જેનાથી તમે સાઇન ઇન કરો છો.",
+  "assistantSupportSent": "Vorkalis સપોર્ટને મોકલ્યું. તમને એક કામકાજના દિવસમાં {email} પર જવાબ મળવો જોઈએ.",
+  "assistantSupportLimit": "તમે આજે પહેલેથી જ ઘણી વાર સપોર્ટને ઇમેઇલ કર્યો છે. કાલે ફરી પ્રયાસ કરો અથવા સીધા support@vorkalis.com પર લખો.",
+  "assistantSupportVerify": "પહેલાં તમારું ઇમેઇલ સરનામું ચકાસો, જેથી સપોર્ટ તમને જવાબ આપી શકે.",
+  "assistantSupportFailed": "ઇમેઇલ મોકલી શકાયો નહીં. પછીથી ફરી પ્રયાસ કરો અથવા સીધા support@vorkalis.com પર લખો.",
+  "assistantInviteTitle": "તમારા પરિવારમાં આમંત્રિત કરો",
+  "assistantInviteNote": "Vaultara તેમને ઇમેઇલથી આમંત્રણ લિંક મોકલે છે. તે એક વાર, 7 દિવસ માટે કામ કરે છે.",
+  "assistantInviteSent": "આમંત્રણ {email} પર મોકલ્યું.",
+  "assistantInviteFailed": "આમંત્રણ મોકલી શકાયું નહીં. ફરી પ્રયાસ કરો, અથવા તેના બદલે તમારા પરિવારમાંથી આમંત્રણ શેર કરો.",
+  "assistantCalendarNote": "તમારી કૅલેન્ડર ઍપ ઇવેન્ટ અને 7 દિવસ પહેલાંના રિમાઇન્ડર સાથે ખુલે છે.",
+  "assistantSendLinkTitle": "સુરક્ષિત લિંક મોકલો",
+  "assistantSendLinkWorks": "લિંકની અવધિ",
+  "assistantSendLinkHours": "{hours} કલાક",
+  "assistantSendLinkNote": "ફક્ત એક લિંક મોકલાય છે, વિગતો ક્યારેય નહીં. તેને કેવી રીતે મોકલવી તે તમે પસંદ કરો છો, અને {sharedLinks}માં તેને વહેલી બંધ કરી શકો છો.",
+  "monthAheadTitle": "આવનારો મહિનો",
+  "monthAheadSubtitle": "દર મહિનાની 1 તારીખે {assistant} જણાવે છે કે શું રિન્યૂ કરવાનું છે, તેનો ખર્ચ કેટલો છે અને તમારી આવનારી મુસાફરીઓ",
+  "monthAheadQuestion": "આ મહિને મારે શું કરવાનું છે?",
+  "assistantStepSupport": "તમારો ઇમેઇલ લખાઈ રહ્યો છે",
+  "assistantStepSecurity": "તમારા એકાઉન્ટની સુરક્ષા તપાસાઈ રહી છે",
+  "talkFinishOnScreen": "તે તમારી સ્ક્રીન પર ખુલ્લું છે. ત્યાં પૂરું કરો, પછી ફરી બોલવા માટે ટૅપ કરો."
 }

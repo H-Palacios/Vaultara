@@ -3167,16 +3167,16 @@ class AppLocalizationsXh extends AppLocalizations {
   String get planGetPremium => 'Fumana i-Premium';
 
   @override
-  String get businessPlanBuy => 'Fumana isicwangciso seShishini';
-
-  @override
   String get individualPlanBuy => 'Fumana u-Umntu ngamnye';
 
   @override
-  String get businessPlanSwitch => 'Tshintshela kwisicwangciso seShishini';
+  String get individualPlanSwitch => 'Tshintshela ku-Umntu ngamnye';
 
   @override
-  String get individualPlanSwitch => 'Tshintshela ku-Umntu ngamnye';
+  String get businessPlanBuy => 'Fumana isicwangciso seShishini';
+
+  @override
+  String get businessPlanSwitch => 'Tshintshela kwisicwangciso seShishini';
 
   @override
   String get planSwitchToYearly => 'Tshintshela ngonyaka';
@@ -4915,8 +4915,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String get assistantEmptyReply => 'Andifumananga mpendulo. Zama ukubuza ngenye indlela.';
 
   @override
-  String get assistantDraftReady =>
-      'Nazi iinkcukacha. Cofa Qinisekisa ukuze uzigcine.';
+  String get assistantDraftReady => 'Nazi iinkcukacha. Cofa Qinisekisa ukuze uzigcine.';
 
   @override
   String get assistantNewChat => 'Incoko entsha';
@@ -6683,27 +6682,27 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Yongeza izitofu zika-${name}';
+    return 'Yongeza izitofu zika-$name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Yongeza i-microchip ka-${name}';
+    return 'Yongeza i-microchip ka-$name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Yongeza i-inshorensi yesilwanyana ka-${name}';
+    return 'Yongeza i-inshorensi yesilwanyana ka-$name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Yongeza ipasipoti ka-${name}';
+    return 'Yongeza ipasipoti ka-$name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Okulandelayo: ${step}. Yithi ewe ukuze ndikwenze.';
+    return 'Okulandelayo: $step. Yithi ewe ukuze ndikwenze.';
   }
 
   @override
@@ -8985,10 +8984,10 @@ class AppLocalizationsXh extends AppLocalizations {
   String get petTypeFieldHint => 'Faka uhlobo lwesilwanyana';
 
   @override
-  String get petBirthdayHint => 'Khetha umhla wokuzalwa';
+  String get petTypeRequired => 'Khetha uhlobo lwesilwanyana';
 
   @override
-  String get petTypeRequired => 'Khetha uhlobo lwesilwanyana';
+  String get petBirthdayHint => 'Khetha umhla wokuzalwa';
 
   @override
   String get petChipHint => 'Faka inombolo yemayikhrotshiphu';
@@ -10661,4 +10660,80 @@ class AppLocalizationsXh extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Ufikelele kumda wanamhlanje we-\"Buza iVaultara\". Uqala kwakhona ngomso ngo-$time. Yonke enye into kwiVaultara isebenza njengesiqhelo.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Thumela i-imeyile kwinkxaso yeVorkalis';
+
+  @override
+  String get assistantSupportMessage => 'Umyalezo';
+
+  @override
+  String get assistantSupportNote => 'Kongezwa uguqulelo lwe-app, ifowuni, inkqubo, ulwimi necebo. Inkxaso iphendula kwi-imeyile ongena ngayo.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Ithunyelwe kwinkxaso yeVorkalis. Kufuneka ufumane impendulo ku-$email kwisuku olunye lokusebenza.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Sele uyithumelele inkxaso i-imeyile amaxesha aliqela namhlanje. Zama kwakhona ngomso, okanye ubhalele ngqo ku-support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Qala uqinisekise idilesi yakho ye-imeyile ukuze inkxaso ikwazi ukukuphendula.';
+
+  @override
+  String get assistantSupportFailed => 'I-imeyile ayikwazanga ukuthunyelwa. Zama kwakhona kamva, okanye ubhalele ngqo ku-support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Mema ekhayeni lakho';
+
+  @override
+  String get assistantInviteNote => 'IVaultara ibathumelela ikhonkco lesimemo nge-imeyile. Lisebenza kanye, iintsuku ezi-7.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Isimemo sithunyelwe ku-$email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Isimemo asikwazanga ukuthunyelwa. Zama kwakhona, okanye wabelane ngesimemo esivela ekhayeni lakho endaweni yoko.';
+
+  @override
+  String get assistantCalendarNote => 'I-app yakho yekhalenda iza kuvuleka nesiganeko kunye nesikhumbuzo kwiintsuku ezi-7 ngaphambili.';
+
+  @override
+  String get assistantSendLinkTitle => 'Thumela ikhonkco elikhuselekileyo';
+
+  @override
+  String get assistantSendLinkWorks => 'Ikhonkco lisebenza';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours iiyure';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Kuthunyelwa ikhonkco kuphela, hayi iinkcukacha ngokwazo. Wena ukhetha indlela yokulithumela, kwaye ungalimisa kwangethuba ku-$sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Inyanga ezayo';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Ngomhla woku-1, i-$assistant ithumela okufuneka kuhlaziywe, ixabiso lako kunye nohambo lwakho oluzayo';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Yintoni ekufuneka ndiyenze kule nyanga?';
+
+  @override
+  String get assistantStepSupport => 'Ibhala i-imeyile yakho';
+
+  @override
+  String get assistantStepSecurity => 'Ijonga ukhuseleko lweakhawunti yakho';
+
+  @override
+  String get talkFinishOnScreen => 'Ivulekile kwisikrini sakho. Gqiba apho, emva koko ucofe ukuze uthethe kwakhona.';
 }

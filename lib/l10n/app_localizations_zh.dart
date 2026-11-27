@@ -3153,16 +3153,16 @@ class AppLocalizationsZh extends AppLocalizations {
   String get planGetPremium => '获取高级版';
 
   @override
-  String get businessPlanBuy => '获取企业版';
-
-  @override
   String get individualPlanBuy => '购买个人版';
 
   @override
-  String get businessPlanSwitch => '切换到企业版';
+  String get individualPlanSwitch => '切换到个人版';
 
   @override
-  String get individualPlanSwitch => '切换到个人版';
+  String get businessPlanBuy => '获取企业版';
+
+  @override
+  String get businessPlanSwitch => '切换到企业版';
 
   @override
   String get planSwitchToYearly => '切换为按年计费';
@@ -6631,27 +6631,27 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return '为${name}添加疫苗接种';
+    return '为$name添加疫苗接种';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return '为${name}添加芯片';
+    return '为$name添加芯片';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return '为${name}添加宠物保险';
+    return '为$name添加宠物保险';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return '为${name}添加护照';
+    return '为$name添加护照';
   }
 
   @override
   String talkNextStep(String step) {
-    return '下一步：${step}。说“是”即可完成。';
+    return '下一步：$step。说“是”即可完成。';
   }
 
   @override
@@ -8927,10 +8927,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get petTypeFieldHint => '输入宠物种类';
 
   @override
-  String get petBirthdayHint => '选择出生日期';
+  String get petTypeRequired => '选择宠物种类';
 
   @override
-  String get petTypeRequired => '选择宠物种类';
+  String get petBirthdayHint => '选择出生日期';
 
   @override
   String get petChipHint => '输入芯片号码';
@@ -10596,6 +10596,82 @@ class AppLocalizationsZh extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return '你已达到今天的 “询问 Vaultara” 上限。将在明天 $time 重置。Vaultara 的其他功能照常可用。';
   }
+
+  @override
+  String get assistantSupportTitle => '给 Vorkalis 支持发邮件';
+
+  @override
+  String get assistantSupportMessage => '消息';
+
+  @override
+  String get assistantSupportNote => '将附上应用版本、手机、系统、语言和套餐。支持团队会回复到你登录所用的邮箱。';
+
+  @override
+  String assistantSupportSent(String email) {
+    return '已发送给 Vorkalis 支持。你应会在 1 个工作日内通过 $email 收到回复。';
+  }
+
+  @override
+  String get assistantSupportLimit => '你今天已经给支持发了好几封邮件。请明天再试，或直接写信至 support@vorkalis.com。';
+
+  @override
+  String get assistantSupportVerify => '请先验证你的邮箱地址，以便支持团队回复你。';
+
+  @override
+  String get assistantSupportFailed => '邮件无法发送。请稍后再试，或直接写信至 support@vorkalis.com。';
+
+  @override
+  String get assistantInviteTitle => '邀请加入你的家庭组';
+
+  @override
+  String get assistantInviteNote => 'Vaultara 会通过邮件向对方发送邀请链接。链接可使用一次，有效期 7 天。';
+
+  @override
+  String assistantInviteSent(String email) {
+    return '已向 $email 发送邀请。';
+  }
+
+  @override
+  String get assistantInviteFailed => '邀请无法发送。请重试，或改为从你的家庭组分享邀请。';
+
+  @override
+  String get assistantCalendarNote => '日历应用将打开该事件，并在 7 天前提醒。';
+
+  @override
+  String get assistantSendLinkTitle => '发送安全链接';
+
+  @override
+  String get assistantSendLinkWorks => '链接有效期';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours 小时';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return '只发送链接，绝不发送详细信息本身。你可以选择发送方式，也可以在“$sharedLinks”中提前停用。';
+  }
+
+  @override
+  String get monthAheadTitle => '本月概览';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return '每月 1 日，$assistant 会告诉你需要续期的项目、费用以及即将到来的行程';
+  }
+
+  @override
+  String get monthAheadQuestion => '这个月我需要做什么？';
+
+  @override
+  String get assistantStepSupport => '正在撰写你的邮件';
+
+  @override
+  String get assistantStepSecurity => '正在检查你的账户安全';
+
+  @override
+  String get talkFinishOnScreen => '已在屏幕上打开。请在那里完成，然后轻点再次说话。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -13735,16 +13811,16 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get planGetPremium => '获取 Premium';
 
   @override
-  String get businessPlanBuy => '购买企业版';
-
-  @override
   String get individualPlanBuy => '购买个人版';
 
   @override
-  String get businessPlanSwitch => '切换到企业版';
+  String get individualPlanSwitch => '切换到个人版';
 
   @override
-  String get individualPlanSwitch => '切换到个人版';
+  String get businessPlanBuy => '购买企业版';
+
+  @override
+  String get businessPlanSwitch => '切换到企业版';
 
   @override
   String get planSwitchToYearly => '切换到按年计费';
@@ -17213,27 +17289,27 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return '为${name}添加疫苗接种';
+    return '为$name添加疫苗接种';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return '为${name}添加芯片';
+    return '为$name添加芯片';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return '为${name}添加宠物保险';
+    return '为$name添加宠物保险';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return '为${name}添加护照';
+    return '为$name添加护照';
   }
 
   @override
   String talkNextStep(String step) {
-    return '下一步：${step}。说“是”即可完成。';
+    return '下一步：$step。说“是”即可完成。';
   }
 
   @override
@@ -19509,10 +19585,10 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String get petTypeFieldHint => '输入宠物种类';
 
   @override
-  String get petBirthdayHint => '选择出生日期';
+  String get petTypeRequired => '选择宠物种类';
 
   @override
-  String get petTypeRequired => '选择宠物种类';
+  String get petBirthdayHint => '选择出生日期';
 
   @override
   String get petChipHint => '输入芯片号码';
@@ -21178,6 +21254,82 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String assistantLimitTomorrow(String time) {
     return '你已达到今天的 “询问 Vaultara” 上限。将在明天 $time 重置。Vaultara 的其他功能照常可用。';
   }
+
+  @override
+  String get assistantSupportTitle => '给 Vorkalis 支持发邮件';
+
+  @override
+  String get assistantSupportMessage => '消息';
+
+  @override
+  String get assistantSupportNote => '将附上应用版本、手机、系统、语言和套餐。支持团队会回复到你登录所用的邮箱。';
+
+  @override
+  String assistantSupportSent(String email) {
+    return '已发送给 Vorkalis 支持。你应会在 1 个工作日内通过 $email 收到回复。';
+  }
+
+  @override
+  String get assistantSupportLimit => '你今天已经给支持发了好几封邮件。请明天再试，或直接写信至 support@vorkalis.com。';
+
+  @override
+  String get assistantSupportVerify => '请先验证你的邮箱地址，以便支持团队回复你。';
+
+  @override
+  String get assistantSupportFailed => '邮件无法发送。请稍后再试，或直接写信至 support@vorkalis.com。';
+
+  @override
+  String get assistantInviteTitle => '邀请加入你的家庭组';
+
+  @override
+  String get assistantInviteNote => 'Vaultara 会通过邮件向对方发送邀请链接。链接可使用一次，有效期 7 天。';
+
+  @override
+  String assistantInviteSent(String email) {
+    return '已向 $email 发送邀请。';
+  }
+
+  @override
+  String get assistantInviteFailed => '邀请无法发送。请重试，或改为从你的家庭组分享邀请。';
+
+  @override
+  String get assistantCalendarNote => '日历应用将打开该事件，并在 7 天前提醒。';
+
+  @override
+  String get assistantSendLinkTitle => '发送安全链接';
+
+  @override
+  String get assistantSendLinkWorks => '链接有效期';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours 小时';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return '只发送链接，绝不发送详细信息本身。你可以选择发送方式，也可以在“$sharedLinks”中提前停用。';
+  }
+
+  @override
+  String get monthAheadTitle => '本月概览';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return '每月 1 日，$assistant 会告诉你需要续期的项目、费用以及即将到来的行程';
+  }
+
+  @override
+  String get monthAheadQuestion => '这个月我需要做什么？';
+
+  @override
+  String get assistantStepSupport => '正在撰写你的邮件';
+
+  @override
+  String get assistantStepSecurity => '正在检查你的账户安全';
+
+  @override
+  String get talkFinishOnScreen => '已在屏幕上打开。请在那里完成，然后轻点再次说话。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -24317,16 +24469,16 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get planGetPremium => '取得進階版';
 
   @override
-  String get businessPlanBuy => '取得商務版';
-
-  @override
   String get individualPlanBuy => '取得個人';
 
   @override
-  String get businessPlanSwitch => '切換至商務版';
+  String get individualPlanSwitch => '切換至個人';
 
   @override
-  String get individualPlanSwitch => '切換至個人';
+  String get businessPlanBuy => '取得商務版';
+
+  @override
+  String get businessPlanSwitch => '切換至商務版';
 
   @override
   String get planSwitchToYearly => '切換為按年計費';
@@ -27795,27 +27947,27 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return '為${name}新增疫苗接種';
+    return '為$name新增疫苗接種';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return '為${name}新增晶片';
+    return '為$name新增晶片';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return '為${name}新增寵物保險';
+    return '為$name新增寵物保險';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return '為${name}新增護照';
+    return '為$name新增護照';
   }
 
   @override
   String talkNextStep(String step) {
-    return '下一步：${step}。說「是」即可完成。';
+    return '下一步：$step。說「是」即可完成。';
   }
 
   @override
@@ -30091,10 +30243,10 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String get petTypeFieldHint => '輸入寵物種類';
 
   @override
-  String get petBirthdayHint => '選擇出生日期';
+  String get petTypeRequired => '選擇寵物種類';
 
   @override
-  String get petTypeRequired => '選擇寵物種類';
+  String get petBirthdayHint => '選擇出生日期';
 
   @override
   String get petChipHint => '輸入晶片號碼';
@@ -31760,4 +31912,80 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String assistantLimitTomorrow(String time) {
     return '你已達到今天的 「詢問 Vaultara」 上限。將在明天 $time 重設。Vaultara 的其他功能照常可用。';
   }
+
+  @override
+  String get assistantSupportTitle => '寄信給 Vorkalis 支援';
+
+  @override
+  String get assistantSupportMessage => '訊息';
+
+  @override
+  String get assistantSupportNote => '會附上 App 版本、手機、系統、語言和方案。支援團隊會回覆到你登入所用的電子郵件。';
+
+  @override
+  String assistantSupportSent(String email) {
+    return '已寄給 Vorkalis 支援。你應會在 1 個工作天內於 $email 收到回覆。';
+  }
+
+  @override
+  String get assistantSupportLimit => '你今天已經寄信給支援好幾次了。請明天再試，或直接寫信到 support@vorkalis.com。';
+
+  @override
+  String get assistantSupportVerify => '請先驗證你的電子郵件地址，支援團隊才能回覆你。';
+
+  @override
+  String get assistantSupportFailed => '無法寄出郵件。請稍後再試，或直接寫信到 support@vorkalis.com。';
+
+  @override
+  String get assistantInviteTitle => '邀請加入你的家庭空間';
+
+  @override
+  String get assistantInviteNote => 'Vaultara 會用電子郵件寄送邀請連結給對方。連結可使用一次，有效期 7 天。';
+
+  @override
+  String assistantInviteSent(String email) {
+    return '已寄送邀請給 $email。';
+  }
+
+  @override
+  String get assistantInviteFailed => '無法寄出邀請。請再試一次，或改從你的家庭空間分享邀請。';
+
+  @override
+  String get assistantCalendarNote => '行事曆 App 會開啟該活動，並在 7 天前提醒。';
+
+  @override
+  String get assistantSendLinkTitle => '傳送安全連結';
+
+  @override
+  String get assistantSendLinkWorks => '連結有效期';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours 小時';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return '只會傳送連結，絕不傳送詳細資料本身。你可以選擇傳送方式，也能在「$sharedLinks」中提早停用。';
+  }
+
+  @override
+  String get monthAheadTitle => '本月概覽';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return '每月 1 日，$assistant 會告訴你需要續約的項目、費用和即將到來的旅程';
+  }
+
+  @override
+  String get monthAheadQuestion => '這個月我需要做什麼？';
+
+  @override
+  String get assistantStepSupport => '正在撰寫你的郵件';
+
+  @override
+  String get assistantStepSecurity => '正在檢查你的帳戶安全';
+
+  @override
+  String get talkFinishOnScreen => '已在螢幕上開啟。請在那裡完成，再輕觸繼續說話。';
 }

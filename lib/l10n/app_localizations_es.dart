@@ -3182,16 +3182,16 @@ class AppLocalizationsEs extends AppLocalizations {
   String get planGetPremium => 'Obtener Premium';
 
   @override
-  String get businessPlanBuy => 'Obtener Empresa';
-
-  @override
   String get individualPlanBuy => 'Obtener Personal';
 
   @override
-  String get businessPlanSwitch => 'Cambiar a Empresa';
+  String get individualPlanSwitch => 'Cambiar a Personal';
 
   @override
-  String get individualPlanSwitch => 'Cambiar a Personal';
+  String get businessPlanBuy => 'Obtener Empresa';
+
+  @override
+  String get businessPlanSwitch => 'Cambiar a Empresa';
 
   @override
   String get planSwitchToYearly => 'Cambiar a anual';
@@ -4930,8 +4930,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get assistantEmptyReply => 'No pude encontrar una respuesta. Prueba a preguntar de otra manera.';
 
   @override
-  String get assistantDraftReady =>
-      'Aquí tienes los detalles. Toca Confirmar para guardarlos.';
+  String get assistantDraftReady => 'Aquí tienes los detalles. Toca Confirmar para guardarlos.';
 
   @override
   String get assistantNewChat => 'Chat nuevo';
@@ -6707,27 +6706,27 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Añadir vacunas de ${name}';
+    return 'Añadir vacunas de $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Añadir el microchip de ${name}';
+    return 'Añadir el microchip de $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Añadir el seguro de mascota de ${name}';
+    return 'Añadir el seguro de mascota de $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Añadir un pasaporte para ${name}';
+    return 'Añadir un pasaporte para $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Siguiente: ${step}. Di sí para hacerlo.';
+    return 'Siguiente: $step. Di sí para hacerlo.';
   }
 
   @override
@@ -9013,10 +9012,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String get petTypeFieldHint => 'Introduce el tipo de mascota';
 
   @override
-  String get petBirthdayHint => 'Selecciona la fecha de nacimiento';
+  String get petTypeRequired => 'Elige el tipo de mascota';
 
   @override
-  String get petTypeRequired => 'Elige el tipo de mascota';
+  String get petBirthdayHint => 'Selecciona la fecha de nacimiento';
 
   @override
   String get petChipHint => 'Introduce el número de microchip';
@@ -10426,8 +10425,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get talkNoVoice => 'Tu teléfono no tiene voz para este idioma, así que las respuestas se muestran pero no se leen.';
 
   @override
-  String get talkNotDone =>
-      'No se pudo hacer. Revisa los detalles en la pantalla.';
+  String get talkNotDone => 'No se pudo hacer. Revisa los detalles en la pantalla.';
 
   @override
   String get talkReady => 'Te escucho.';
@@ -10691,4 +10689,80 @@ class AppLocalizationsEs extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Has llegado al límite de hoy de \"Pregunta a Vaultara\". Se renueva mañana a las $time. Todo lo demás en Vaultara funciona con normalidad.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Escribir al soporte de Vorkalis';
+
+  @override
+  String get assistantSupportMessage => 'Mensaje';
+
+  @override
+  String get assistantSupportNote => 'Se añaden la versión de la app, el teléfono, el sistema, el idioma y el plan. Soporte responde al correo con el que inicias sesión.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Enviado al soporte de Vorkalis. Deberías recibir respuesta en $email en un día hábil.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Ya escribiste al soporte varias veces hoy. Inténtalo mañana o escribe tú mismo a support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Primero verifica tu correo electrónico para que soporte pueda responderte.';
+
+  @override
+  String get assistantSupportFailed => 'No se pudo enviar el correo. Inténtalo más tarde o escribe tú mismo a support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Invitar a tu hogar';
+
+  @override
+  String get assistantInviteNote => 'Vaultara le envía por correo un enlace de invitación. Funciona una vez, durante 7 días.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Invitación enviada a $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'No se pudo enviar la invitación. Inténtalo de nuevo o comparte una invitación desde tu hogar.';
+
+  @override
+  String get assistantCalendarNote => 'Tu app de calendario se abre con el evento y una alarma 7 días antes.';
+
+  @override
+  String get assistantSendLinkTitle => 'Enviar un enlace seguro';
+
+  @override
+  String get assistantSendLinkWorks => 'El enlace funciona';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours h';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Solo se envía un enlace, nunca los datos en sí. Tú eliges cómo enviarlo y puedes detenerlo antes en $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'El mes que viene';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'El día 1, $assistant te envía lo que hay que renovar, lo que cuesta y tus próximos viajes';
+  }
+
+  @override
+  String get monthAheadQuestion => '¿Qué tengo que hacer este mes?';
+
+  @override
+  String get assistantStepSupport => 'Escribiendo tu correo';
+
+  @override
+  String get assistantStepSecurity => 'Revisando la seguridad de tu cuenta';
+
+  @override
+  String get talkFinishOnScreen => 'Está abierto en tu pantalla. Termina ahí y luego toca para volver a hablar.';
 }

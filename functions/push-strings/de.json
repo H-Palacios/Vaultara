@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Dokument eines Mitarbeitenden abgelaufen",
   "staffOverdueYesterday": "{name} von {person} ist gestern abgelaufen und wurde nicht verlängert.",
   "staffOverdueWeek": "{name} von {person} ist vor einer Woche abgelaufen und wurde noch immer nicht verlängert.",
-  "staffOverdueMany": "{count} Dokumente von Mitarbeitenden sind abgelaufen und nicht verlängert: {names}."
+  "staffOverdueMany": "{count} Dokumente von Mitarbeitenden sind abgelaufen und nicht verlängert: {names}.",
+  "monthAheadTitle": "Dein Monat im Überblick",
+  "monthAheadBodyCount": "Diesen Monat zu erneuern: {count}. Tippe, um zu sehen, was zu tun ist.",
+  "monthAheadBodyCost": "Diesen Monat zu erneuern: {count}, etwa {cost}. Tippe, um zu sehen, was zu tun ist.",
+  "monthAheadBodyCountTrips": "Diesen Monat zu erneuern: {count}. Reisen in den nächsten 6 Wochen: {trips}. Tippe, um zu sehen, was zu tun ist.",
+  "monthAheadBodyCostTrips": "Diesen Monat zu erneuern: {count}, etwa {cost}. Reisen in den nächsten 6 Wochen: {trips}. Tippe, um zu sehen, was zu tun ist.",
+  "monthAheadBodyTrips": "Diesen Monat ist nichts zu erneuern. Reisen in den nächsten 6 Wochen: {trips}. Tippe, um zu sehen, was zu tun ist."
 }

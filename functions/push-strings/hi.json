@@ -26,5 +26,11 @@
   "staffOverdueTitle": "स्टाफ़ का दस्तावेज़ समाप्त हो गया",
   "staffOverdueYesterday": "{person} का {name} कल समाप्त हो गया और रिन्यू नहीं हुआ।",
   "staffOverdueWeek": "{person} का {name} एक हफ़्ते पहले समाप्त हो गया और अब तक रिन्यू नहीं हुआ।",
-  "staffOverdueMany": "स्टाफ़ के {count} दस्तावेज़ समाप्त हो गए हैं और रिन्यू नहीं हुए: {names}।"
+  "staffOverdueMany": "स्टाफ़ के {count} दस्तावेज़ समाप्त हो गए हैं और रिन्यू नहीं हुए: {names}।",
+  "monthAheadTitle": "आपका आने वाला महीना",
+  "monthAheadBodyCount": "इस महीने नवीनीकरण: {count}। क्या करना है देखने के लिए टैप करें।",
+  "monthAheadBodyCost": "इस महीने नवीनीकरण: {count}, लगभग {cost}। क्या करना है देखने के लिए टैप करें।",
+  "monthAheadBodyCountTrips": "इस महीने नवीनीकरण: {count}। अगले 6 हफ़्तों में यात्राएँ: {trips}। क्या करना है देखने के लिए टैप करें।",
+  "monthAheadBodyCostTrips": "इस महीने नवीनीकरण: {count}, लगभग {cost}। अगले 6 हफ़्तों में यात्राएँ: {trips}। क्या करना है देखने के लिए टैप करें।",
+  "monthAheadBodyTrips": "इस महीने नवीनीकरण के लिए कुछ नहीं। अगले 6 हफ़्तों में यात्राएँ: {trips}। क्या करना है देखने के लिए टैप करें।"
 }

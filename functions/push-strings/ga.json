@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Chuaigh doiciméad fostaí in éag",
   "staffOverdueYesterday": "Chuaigh {name} le haghaidh {person} in éag inné agus níor athnuadh é.",
   "staffOverdueWeek": "Chuaigh {name} le haghaidh {person} in éag seachtain ó shin agus níor athnuadh fós é.",
-  "staffOverdueMany": "Chuaigh {count} doiciméad foirne in éag agus níor athnuadh iad: {names}."
+  "staffOverdueMany": "Chuaigh {count} doiciméad foirne in éag agus níor athnuadh iad: {names}.",
+  "monthAheadTitle": "An mhí romhat",
+  "monthAheadBodyCount": "Le hathnuachan an mhí seo: {count}. Tapáil chun a fheiceáil cad atá le déanamh.",
+  "monthAheadBodyCost": "Le hathnuachan an mhí seo: {count}, thart ar {cost}. Tapáil chun a fheiceáil cad atá le déanamh.",
+  "monthAheadBodyCountTrips": "Le hathnuachan an mhí seo: {count}. Turais sna 6 seachtaine atá romhainn: {trips}. Tapáil chun a fheiceáil cad atá le déanamh.",
+  "monthAheadBodyCostTrips": "Le hathnuachan an mhí seo: {count}, thart ar {cost}. Turais sna 6 seachtaine atá romhainn: {trips}. Tapáil chun a fheiceáil cad atá le déanamh.",
+  "monthAheadBodyTrips": "Níl aon rud le hathnuachan an mhí seo. Turais sna 6 seachtaine atá romhainn: {trips}. Tapáil chun a fheiceáil cad atá le déanamh."
 }

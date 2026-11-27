@@ -4399,5 +4399,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Mejla Vorkalis support",
+  "assistantSupportMessage": "Meddelande",
+  "assistantSupportNote": "Appversion, telefon, system, språk och abonnemang läggs till. Supporten svarar till e-postadressen du loggar in med.",
+  "assistantSupportSent": "Skickat till Vorkalis support. Du bör få svar till {email} inom en arbetsdag.",
+  "assistantSupportLimit": "Du har redan mejlat supporten flera gånger i dag. Försök igen i morgon, eller skriv själv till support@vorkalis.com.",
+  "assistantSupportVerify": "Bekräfta din e-postadress först, så att supporten kan svara dig.",
+  "assistantSupportFailed": "Mejlet kunde inte skickas. Försök igen senare, eller skriv själv till support@vorkalis.com.",
+  "assistantInviteTitle": "Bjud in till ditt hushåll",
+  "assistantInviteNote": "Vaultara mejlar en inbjudningslänk till dem. Den fungerar en gång, i 7 dagar.",
+  "assistantInviteSent": "Inbjudan skickad till {email}.",
+  "assistantInviteFailed": "Inbjudan kunde inte skickas. Försök igen, eller dela en inbjudan från ditt hushåll i stället.",
+  "assistantCalendarNote": "Din kalenderapp öppnas med händelsen och en påminnelse 7 dagar innan.",
+  "assistantSendLinkTitle": "Skicka en säker länk",
+  "assistantSendLinkWorks": "Länken gäller i",
+  "assistantSendLinkHours": "{hours} tim",
+  "assistantSendLinkNote": "Bara en länk skickas, aldrig själva uppgifterna. Du väljer hur den skickas och kan stoppa den tidigare under {sharedLinks}.",
+  "monthAheadTitle": "Månaden framöver",
+  "monthAheadSubtitle": "Den 1:a skickar {assistant} vad som ska förnyas, vad det kostar och dina kommande resor",
+  "monthAheadQuestion": "Vad behöver jag göra den här månaden?",
+  "assistantStepSupport": "Skriver ditt mejl",
+  "assistantStepSecurity": "Kontrollerar ditt kontos säkerhet",
+  "talkFinishOnScreen": "Det är öppet på skärmen. Gör klart där och tryck sedan för att prata igen."
 }

@@ -3167,16 +3167,16 @@ class AppLocalizationsNn extends AppLocalizations {
   String get planGetPremium => 'Skaff Premium';
 
   @override
-  String get businessPlanBuy => 'Skaff Business';
-
-  @override
   String get individualPlanBuy => 'Skaff Individuell';
 
   @override
-  String get businessPlanSwitch => 'Byt til Business';
+  String get individualPlanSwitch => 'Byt til Individuell';
 
   @override
-  String get individualPlanSwitch => 'Byt til Individuell';
+  String get businessPlanBuy => 'Skaff Business';
+
+  @override
+  String get businessPlanSwitch => 'Byt til Business';
 
   @override
   String get planSwitchToYearly => 'Byt til årleg';
@@ -4915,8 +4915,7 @@ class AppLocalizationsNn extends AppLocalizations {
   String get assistantEmptyReply => 'Eg fann ikkje noko svar. Prøv å spørje på ein annan måte.';
 
   @override
-  String get assistantDraftReady =>
-      'Her er detaljane. Trykk på Stadfest for å lagre dei.';
+  String get assistantDraftReady => 'Her er detaljane. Trykk på Stadfest for å lagre dei.';
 
   @override
   String get assistantNewChat => 'Ny samtale';
@@ -6683,27 +6682,27 @@ class AppLocalizationsNn extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Legg til vaksinar for ${name}';
+    return 'Legg til vaksinar for $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Legg til mikrobrikka for ${name}';
+    return 'Legg til mikrobrikka for $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Legg til dyreforsikring for ${name}';
+    return 'Legg til dyreforsikring for $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Legg til eit pass for ${name}';
+    return 'Legg til eit pass for $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Neste: ${step}. Sei ja for å gjere det.';
+    return 'Neste: $step. Sei ja for å gjere det.';
   }
 
   @override
@@ -8989,10 +8988,10 @@ class AppLocalizationsNn extends AppLocalizations {
   String get petTypeFieldHint => 'Skriv inn type kjæledyr';
 
   @override
-  String get petBirthdayHint => 'Vel fødselsdato';
+  String get petTypeRequired => 'Vel type kjæledyr';
 
   @override
-  String get petTypeRequired => 'Vel type kjæledyr';
+  String get petBirthdayHint => 'Vel fødselsdato';
 
   @override
   String get petChipHint => 'Skriv inn mikrobrikkenummer';
@@ -10402,8 +10401,7 @@ class AppLocalizationsNn extends AppLocalizations {
   String get talkNoVoice => 'Telefonen har inga stemme for dette språket, så svara blir viste, men ikkje lesne opp.';
 
   @override
-  String get talkNotDone =>
-      'Det gjekk ikkje gjennom. Sjekk detaljane på skjermen.';
+  String get talkNotDone => 'Det gjekk ikkje gjennom. Sjekk detaljane på skjermen.';
 
   @override
   String get talkReady => 'Eg lyttar.';
@@ -10667,4 +10665,80 @@ class AppLocalizationsNn extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Du har nådd dagens grense for \"Spør Vaultara\". Ho blir nullstilt i morgon kl. $time. Alt anna i Vaultara fungerer som vanleg.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Send e-post til Vorkalis-støtte';
+
+  @override
+  String get assistantSupportMessage => 'Melding';
+
+  @override
+  String get assistantSupportNote => 'Appversjon, telefon, system, språk og abonnement vert lagde til. Støtte svarar til e-postadressa du loggar inn med.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Sendt til Vorkalis-støtte. Du bør få svar på $email innan éin vyrkedag.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Du har alt sendt e-post til støtte fleire gonger i dag. Prøv igjen i morgon, eller skriv sjølv til support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Stadfest e-postadressa di først, så støtte kan svare deg.';
+
+  @override
+  String get assistantSupportFailed => 'E-posten kunne ikkje sendast. Prøv igjen seinare, eller skriv sjølv til support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Inviter til hushaldet ditt';
+
+  @override
+  String get assistantInviteNote => 'Vaultara sender dei ei invitasjonslenkje på e-post. Ho verkar éin gong, i 7 dagar.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Invitasjon sendt til $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Invitasjonen kunne ikkje sendast. Prøv igjen, eller del heller ein invitasjon frå hushaldet ditt.';
+
+  @override
+  String get assistantCalendarNote => 'Kalenderappen din vert opna med hendinga og ei påminning 7 dagar før.';
+
+  @override
+  String get assistantSendLinkTitle => 'Send ei trygg lenkje';
+
+  @override
+  String get assistantSendLinkWorks => 'Lenkja verkar i';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours t';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Berre ei lenkje vert sendt, aldri sjølve opplysningane. Du vel korleis ho vert sendt, og kan stoppe ho tidlegare under $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Månaden framover';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Den 1. sender $assistant kva som må fornyast, kva det kostar og reisene dine som kjem';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Kva må eg gjere denne månaden?';
+
+  @override
+  String get assistantStepSupport => 'Skriv e-posten din';
+
+  @override
+  String get assistantStepSecurity => 'Sjekkar tryggleiken på kontoen din';
+
+  @override
+  String get talkFinishOnScreen => 'Det er ope på skjermen. Gjer det ferdig der, og trykk så for å snakke igjen.';
 }

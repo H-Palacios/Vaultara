@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Document van medewerker verlopen",
   "staffOverdueYesterday": "{name} van {person} is gisteren verlopen en niet verlengd.",
   "staffOverdueWeek": "{name} van {person} is een week geleden verlopen en nog steeds niet verlengd.",
-  "staffOverdueMany": "{count} documenten van medewerkers zijn verlopen en niet verlengd: {names}."
+  "staffOverdueMany": "{count} documenten van medewerkers zijn verlopen en niet verlengd: {names}.",
+  "monthAheadTitle": "Je maand vooruit",
+  "monthAheadBodyCount": "Deze maand te verlengen: {count}. Tik om te zien wat je moet doen.",
+  "monthAheadBodyCost": "Deze maand te verlengen: {count}, ongeveer {cost}. Tik om te zien wat je moet doen.",
+  "monthAheadBodyCountTrips": "Deze maand te verlengen: {count}. Reizen in de komende 6 weken: {trips}. Tik om te zien wat je moet doen.",
+  "monthAheadBodyCostTrips": "Deze maand te verlengen: {count}, ongeveer {cost}. Reizen in de komende 6 weken: {trips}. Tik om te zien wat je moet doen.",
+  "monthAheadBodyTrips": "Deze maand hoeft niets verlengd te worden. Reizen in de komende 6 weken: {trips}. Tik om te zien wat je moet doen."
 }

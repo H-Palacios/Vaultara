@@ -4406,5 +4406,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Vorkalis desteğine e-posta gönder",
+  "assistantSupportMessage": "Mesaj",
+  "assistantSupportNote": "Uygulama sürümü, telefon, sistem, dil ve plan eklenir. Destek, oturum açtığınız e-posta adresine yanıt verir.",
+  "assistantSupportSent": "Vorkalis desteğine gönderildi. Bir iş günü içinde {email} adresine yanıt almanız gerekir.",
+  "assistantSupportLimit": "Bugün desteğe zaten birkaç kez yazdınız. Yarın tekrar deneyin veya doğrudan support@vorkalis.com adresine yazın.",
+  "assistantSupportVerify": "Desteğin size yanıt verebilmesi için önce e-posta adresinizi doğrulayın.",
+  "assistantSupportFailed": "E-posta gönderilemedi. Daha sonra tekrar deneyin veya doğrudan support@vorkalis.com adresine yazın.",
+  "assistantInviteTitle": "Hanenize davet edin",
+  "assistantInviteNote": "Vaultara onlara e-postayla bir davet bağlantısı gönderir. Bir kez, 7 gün boyunca çalışır.",
+  "assistantInviteSent": "Davet {email} adresine gönderildi.",
+  "assistantInviteFailed": "Davet gönderilemedi. Tekrar deneyin veya bunun yerine hanenizden bir davet paylaşın.",
+  "assistantCalendarNote": "Takvim uygulamanız etkinlikle ve 7 gün önceden bir hatırlatıcıyla açılır.",
+  "assistantSendLinkTitle": "Güvenli bağlantı gönder",
+  "assistantSendLinkWorks": "Bağlantı geçerlilik süresi",
+  "assistantSendLinkHours": "{hours} sa",
+  "assistantSendLinkNote": "Yalnızca bir bağlantı gönderilir, bilgilerin kendisi asla. Nasıl göndereceğinizi siz seçersiniz ve {sharedLinks} bölümünden daha erken durdurabilirsiniz.",
+  "monthAheadTitle": "Önümüzdeki ay",
+  "monthAheadSubtitle": "Her ayın 1'inde {assistant}, yenilenmesi gerekenleri, maliyetini ve yaklaşan seyahatlerinizi gönderir",
+  "monthAheadQuestion": "Bu ay ne yapmam gerekiyor?",
+  "assistantStepSupport": "E-postanız yazılıyor",
+  "assistantStepSecurity": "Hesabınızın güvenliği kontrol ediliyor",
+  "talkFinishOnScreen": "Ekranınızda açık. Orada tamamlayın, sonra tekrar konuşmak için dokunun."
 }

@@ -3166,16 +3166,16 @@ class AppLocalizationsSo extends AppLocalizations {
   String get planGetPremium => 'Hel Premium';
 
   @override
-  String get businessPlanBuy => 'Hel Business';
-
-  @override
   String get individualPlanBuy => 'Hel Shakhsi';
 
   @override
-  String get businessPlanSwitch => 'U beddel Business';
+  String get individualPlanSwitch => 'U beddel Shakhsi';
 
   @override
-  String get individualPlanSwitch => 'U beddel Shakhsi';
+  String get businessPlanBuy => 'Hel Business';
+
+  @override
+  String get businessPlanSwitch => 'U beddel Business';
 
   @override
   String get planSwitchToYearly => 'U beddel sanad kasta';
@@ -4914,8 +4914,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String get assistantEmptyReply => 'Jawaab ma helin. Isku day inaad si kale u weydiiso.';
 
   @override
-  String get assistantDraftReady =>
-      'Kuwani waa faahfaahinta. Taabo Xaqiiji si aad u kaydiso.';
+  String get assistantDraftReady => 'Kuwani waa faahfaahinta. Taabo Xaqiiji si aad u kaydiso.';
 
   @override
   String get assistantNewChat => 'Wada hadal cusub';
@@ -6682,27 +6681,27 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Ku dar tallaalada ${name}';
+    return 'Ku dar tallaalada $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Ku dar microchip-ka ${name}';
+    return 'Ku dar microchip-ka $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Ku dar caymiska xayawaanka ${name}';
+    return 'Ku dar caymiska xayawaanka $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Ku dar baasaboor ${name}';
+    return 'Ku dar baasaboor $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Xiga: ${step}. Dheh haa si loo sameeyo.';
+    return 'Xiga: $step. Dheh haa si loo sameeyo.';
   }
 
   @override
@@ -8984,10 +8983,10 @@ class AppLocalizationsSo extends AppLocalizations {
   String get petTypeFieldHint => 'Geli nooca xayawaanka';
 
   @override
-  String get petBirthdayHint => 'Dooro taariikhda dhalashada';
+  String get petTypeRequired => 'Dooro nooca xayawaanka';
 
   @override
-  String get petTypeRequired => 'Dooro nooca xayawaanka';
+  String get petBirthdayHint => 'Dooro taariikhda dhalashada';
 
   @override
   String get petChipHint => 'Geli lambarka mikrochip-ka';
@@ -10660,4 +10659,80 @@ class AppLocalizationsSo extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Waxaad gaartay xadka maanta ee \"Weydii Vaultara\". Wuxuu dib u bilaabanayaa berri $time. Wax kasta oo kale oo Vaultara ah si caadi ah ayay u shaqeeyaan.';
   }
+
+  @override
+  String get assistantSupportTitle => 'U dir iimayl taageerada Vorkalis';
+
+  @override
+  String get assistantSupportMessage => 'Fariin';
+
+  @override
+  String get assistantSupportNote => 'Waxaa lagu daraa nooca app-ka, taleefanka, nidaamka, luqadda iyo qorshaha. Taageeradu waxay ku jawaabtaa iimaylka aad ku gasho.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Waxaa loo diray taageerada Vorkalis. Waa inaad jawaab ka heshaa $email gudaha hal maalin oo shaqo.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Maanta dhowr jeer ayaad iimayl u dirtay taageerada. Isku day berri, ama si toos ah ugu qor support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Marka hore xaqiiji ciwaanka iimaylkaaga si ay taageeradu kuugu jawaabto.';
+
+  @override
+  String get assistantSupportFailed => 'Iimaylka lama diri karin. Isku day mar dambe, ama si toos ah ugu qor support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Ku casuun gurigaaga';
+
+  @override
+  String get assistantInviteNote => 'Vaultara waxay iimayl ugu dirtaa xiriirinta casuumaadda. Hal mar ayay shaqaysaa, 7 maalmood.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Casuumaadda waxaa loo diray $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Casuumaadda lama diri karin. Isku day mar kale, ama beddelkeeda la wadaag casuumaad gurigaaga.';
+
+  @override
+  String get assistantCalendarNote => 'App-ka kalandarkaagu wuxuu ku furmayaa dhacdada iyo xasuusin 7 maalmood ka hor.';
+
+  @override
+  String get assistantSendLinkTitle => 'Dir xiriirin ammaan ah';
+
+  @override
+  String get assistantSendLinkWorks => 'Xiriirintu waxay shaqaysaa';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours saac';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Xiriirin keliya ayaa la diraa, marnaba faahfaahinta lafteeda. Adiga ayaa dooranaya sida aad u dirayso, waxaadna hore ugu joojin kartaa $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Bisha soo socota';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return '1-da bil kasta, $assistant wuxuu soo diraa waxa la cusboonaysiinayo, qiimahooda iyo safarradaada soo socda';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Maxaan sameeyaa bishan?';
+
+  @override
+  String get assistantStepSupport => 'Iimaylkaaga waa la qorayaa';
+
+  @override
+  String get assistantStepSecurity => 'Amniga akoonkaaga waa la hubinayaa';
+
+  @override
+  String get talkFinishOnScreen => 'Shaashaddaada ayuu ka furan yahay. Halkaas ku dhammee, kadib taabo si aad mar kale u hadasho.';
 }

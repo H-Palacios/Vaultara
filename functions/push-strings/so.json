@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Dukumentiga shaqaalaha wuu dhacay",
   "staffOverdueYesterday": "{name} ee {person} shalay ayuu dhacay lamana cusboonaysiin.",
   "staffOverdueWeek": "{name} ee {person} toddobaad ka hor ayuu dhacay weli lama cusboonaysiin.",
-  "staffOverdueMany": "{count} dukumenti oo shaqaale ah ayaa dhacay lamana cusboonaysiin: {names}."
+  "staffOverdueMany": "{count} dukumenti oo shaqaale ah ayaa dhacay lamana cusboonaysiin: {names}.",
+  "monthAheadTitle": "Bishaada soo socota",
+  "monthAheadBodyCount": "Si loo cusboonaysiiyo bishan: {count}. Taabo si aad u aragto waxa la sameeyo.",
+  "monthAheadBodyCost": "Si loo cusboonaysiiyo bishan: {count}, qiyaastii {cost}. Taabo si aad u aragto waxa la sameeyo.",
+  "monthAheadBodyCountTrips": "Si loo cusboonaysiiyo bishan: {count}. Safarrada 6-da toddobaad ee soo socda: {trips}. Taabo si aad u aragto waxa la sameeyo.",
+  "monthAheadBodyCostTrips": "Si loo cusboonaysiiyo bishan: {count}, qiyaastii {cost}. Safarrada 6-da toddobaad ee soo socda: {trips}. Taabo si aad u aragto waxa la sameeyo.",
+  "monthAheadBodyTrips": "Wax la cusboonaysiinayo ma jiro bishan. Safarrada 6-da toddobaad ee soo socda: {trips}. Taabo si aad u aragto waxa la sameeyo."
 }

@@ -3222,16 +3222,16 @@ class AppLocalizationsLt extends AppLocalizations {
   String get planGetPremium => 'Gauti Premium';
 
   @override
-  String get businessPlanBuy => 'Gauti Verslo planą';
-
-  @override
   String get individualPlanBuy => 'Įsigyti Asmeninį planą';
 
   @override
-  String get businessPlanSwitch => 'Pereiti prie Verslo plano';
+  String get individualPlanSwitch => 'Pereiti prie Asmeninio plano';
 
   @override
-  String get individualPlanSwitch => 'Pereiti prie Asmeninio plano';
+  String get businessPlanBuy => 'Gauti Verslo planą';
+
+  @override
+  String get businessPlanSwitch => 'Pereiti prie Verslo plano';
 
   @override
   String get planSwitchToYearly => 'Pereiti prie metinio';
@@ -5010,8 +5010,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get assistantEmptyReply => 'Neradau atsakymo. Pabandykite paklausti kitaip.';
 
   @override
-  String get assistantDraftReady =>
-      'Štai informacija. Bakstelėkite Patvirtinti, kad išsaugotumėte.';
+  String get assistantDraftReady => 'Štai informacija. Bakstelėkite Patvirtinti, kad išsaugotumėte.';
 
   @override
   String get assistantNewChat => 'Naujas pokalbis';
@@ -6812,27 +6811,27 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Pridėti skiepus: ${name}';
+    return 'Pridėti skiepus: $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Pridėti mikroschemą: ${name}';
+    return 'Pridėti mikroschemą: $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Pridėti augintinio draudimą: ${name}';
+    return 'Pridėti augintinio draudimą: $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Pridėti pasą: ${name}';
+    return 'Pridėti pasą: $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Toliau: ${step}. Pasakykite taip ir tai padarysiu.';
+    return 'Toliau: $step. Pasakykite taip ir tai padarysiu.';
   }
 
   @override
@@ -9126,10 +9125,10 @@ class AppLocalizationsLt extends AppLocalizations {
   String get petTypeFieldHint => 'Įveskite augintinio rūšį';
 
   @override
-  String get petBirthdayHint => 'Pasirinkite gimimo datą';
+  String get petTypeRequired => 'Pasirinkite augintinio rūšį';
 
   @override
-  String get petTypeRequired => 'Pasirinkite augintinio rūšį';
+  String get petBirthdayHint => 'Pasirinkite gimimo datą';
 
   @override
   String get petChipHint => 'Įveskite mikroschemos numerį';
@@ -10820,4 +10819,80 @@ class AppLocalizationsLt extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Pasiekėte šiandienos „Klauskite Vaultara“ ribą. Ji atsinaujina rytoj $time. Visa kita Vaultara veikia kaip įprastai.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Rašyti Vorkalis pagalbai';
+
+  @override
+  String get assistantSupportMessage => 'Žinutė';
+
+  @override
+  String get assistantSupportNote => 'Pridedama programėlės versija, telefonas, sistema, kalba ir planas. Pagalba atsako el. pašto adresu, kuriuo prisijungiate.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Išsiųsta Vorkalis pagalbai. Atsakymą adresu $email turėtumėte gauti per vieną darbo dieną.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Šiandien pagalbai jau rašėte kelis kartus. Bandykite rytoj arba patys parašykite adresu support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Pirmiausia patvirtinkite savo el. pašto adresą, kad pagalba galėtų jums atsakyti.';
+
+  @override
+  String get assistantSupportFailed => 'Laiško išsiųsti nepavyko. Bandykite vėliau arba patys parašykite adresu support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Pakviesti į jūsų namų ūkį';
+
+  @override
+  String get assistantInviteNote => 'Vaultara išsiunčia jiems kvietimo nuorodą el. paštu. Ji veikia vieną kartą, 7 dienas.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Kvietimas išsiųstas adresu $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Kvietimo išsiųsti nepavyko. Bandykite dar kartą arba pasidalykite kvietimu iš savo namų ūkio.';
+
+  @override
+  String get assistantCalendarNote => 'Jūsų kalendoriaus programėlė atsidaro su įvykiu ir priminimu likus 7 dienoms.';
+
+  @override
+  String get assistantSendLinkTitle => 'Siųsti saugią nuorodą';
+
+  @override
+  String get assistantSendLinkWorks => 'Nuoroda galioja';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours val.';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Siunčiama tik nuoroda, niekada ne patys duomenys. Jūs pasirenkate, kaip ją išsiųsti, ir galite ją sustabdyti anksčiau skiltyje $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Ateinantis mėnuo';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Kiekvieno mėnesio 1 d. $assistant atsiunčia, ką reikia atnaujinti, kiek tai kainuos ir jūsų artėjančias keliones';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Ką turiu padaryti šį mėnesį?';
+
+  @override
+  String get assistantStepSupport => 'Rašomas jūsų laiškas';
+
+  @override
+  String get assistantStepSecurity => 'Tikrinamas jūsų paskyros saugumas';
+
+  @override
+  String get talkFinishOnScreen => 'Tai atidaryta ekrane. Užbaikite ten, tada palieskite, kad vėl kalbėtumėte.';
 }

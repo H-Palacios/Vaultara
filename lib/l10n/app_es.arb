@@ -4413,5 +4413,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Escribir al soporte de Vorkalis",
+  "assistantSupportMessage": "Mensaje",
+  "assistantSupportNote": "Se añaden la versión de la app, el teléfono, el sistema, el idioma y el plan. Soporte responde al correo con el que inicias sesión.",
+  "assistantSupportSent": "Enviado al soporte de Vorkalis. Deberías recibir respuesta en {email} en un día hábil.",
+  "assistantSupportLimit": "Ya escribiste al soporte varias veces hoy. Inténtalo mañana o escribe tú mismo a support@vorkalis.com.",
+  "assistantSupportVerify": "Primero verifica tu correo electrónico para que soporte pueda responderte.",
+  "assistantSupportFailed": "No se pudo enviar el correo. Inténtalo más tarde o escribe tú mismo a support@vorkalis.com.",
+  "assistantInviteTitle": "Invitar a tu hogar",
+  "assistantInviteNote": "Vaultara le envía por correo un enlace de invitación. Funciona una vez, durante 7 días.",
+  "assistantInviteSent": "Invitación enviada a {email}.",
+  "assistantInviteFailed": "No se pudo enviar la invitación. Inténtalo de nuevo o comparte una invitación desde tu hogar.",
+  "assistantCalendarNote": "Tu app de calendario se abre con el evento y una alarma 7 días antes.",
+  "assistantSendLinkTitle": "Enviar un enlace seguro",
+  "assistantSendLinkWorks": "El enlace funciona",
+  "assistantSendLinkHours": "{hours} h",
+  "assistantSendLinkNote": "Solo se envía un enlace, nunca los datos en sí. Tú eliges cómo enviarlo y puedes detenerlo antes en {sharedLinks}.",
+  "monthAheadTitle": "El mes que viene",
+  "monthAheadSubtitle": "El día 1, {assistant} te envía lo que hay que renovar, lo que cuesta y tus próximos viajes",
+  "monthAheadQuestion": "¿Qué tengo que hacer este mes?",
+  "assistantStepSupport": "Escribiendo tu correo",
+  "assistantStepSecurity": "Revisando la seguridad de tu cuenta",
+  "talkFinishOnScreen": "Está abierto en tu pantalla. Termina ahí y luego toca para volver a hablar."
 }

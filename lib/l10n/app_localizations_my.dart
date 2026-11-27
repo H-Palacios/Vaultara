@@ -3151,16 +3151,16 @@ class AppLocalizationsMy extends AppLocalizations {
   String get planGetPremium => 'Premium ရယူရန်';
 
   @override
-  String get businessPlanBuy => 'စီးပွားရေးအစီအစဉ် ရယူရန်';
-
-  @override
   String get individualPlanBuy => 'တစ်ဦးချင်း ရယူရန်';
 
   @override
-  String get businessPlanSwitch => 'စီးပွားရေးအစီအစဉ်သို့ ပြောင်းရန်';
+  String get individualPlanSwitch => 'တစ်ဦးချင်းသို့ ပြောင်းရန်';
 
   @override
-  String get individualPlanSwitch => 'တစ်ဦးချင်းသို့ ပြောင်းရန်';
+  String get businessPlanBuy => 'စီးပွားရေးအစီအစဉ် ရယူရန်';
+
+  @override
+  String get businessPlanSwitch => 'စီးပွားရေးအစီအစဉ်သို့ ပြောင်းရန်';
 
   @override
   String get planSwitchToYearly => 'နှစ်စဉ်သို့ ပြောင်းရန်';
@@ -4879,8 +4879,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get assistantEmptyReply => 'အဖြေ မတွေ့ပါ။ တစ်မျိုးပြောင်း၍ မေးကြည့်ပါ။';
 
   @override
-  String get assistantDraftReady =>
-      'အသေးစိတ်များ ဤနေရာတွင်ရှိသည်။ သိမ်းရန် အတည်ပြုရန် ကိုနှိပ်ပါ။';
+  String get assistantDraftReady => 'အသေးစိတ်များ ဤနေရာတွင်ရှိသည်။ သိမ်းရန် အတည်ပြုရန် ကိုနှိပ်ပါ။';
 
   @override
   String get assistantNewChat => 'စကားပြောခန်း အသစ်';
@@ -6630,27 +6629,27 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return '${name} အတွက် ကာကွယ်ဆေးများ ထည့်ပါ';
+    return '$name အတွက် ကာကွယ်ဆေးများ ထည့်ပါ';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return '${name} အတွက် မိုက်ခရိုချစ် ထည့်ပါ';
+    return '$name အတွက် မိုက်ခရိုချစ် ထည့်ပါ';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return '${name} အတွက် အိမ်မွေးတိရစ္ဆာန် အာမခံ ထည့်ပါ';
+    return '$name အတွက် အိမ်မွေးတိရစ္ဆာန် အာမခံ ထည့်ပါ';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return '${name} အတွက် ပတ်စပို့ ထည့်ပါ';
+    return '$name အတွက် ပတ်စပို့ ထည့်ပါ';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'နောက်တစ်ခု- ${step}။ လုပ်ရန် ဟုတ်ကဲ့ ဟုပြောပါ။';
+    return 'နောက်တစ်ခု- $step။ လုပ်ရန် ဟုတ်ကဲ့ ဟုပြောပါ။';
   }
 
   @override
@@ -8926,10 +8925,10 @@ class AppLocalizationsMy extends AppLocalizations {
   String get petTypeFieldHint => 'အိမ်မွေးတိရစ္ဆာန်အမျိုးအစား ထည့်ပါ';
 
   @override
-  String get petBirthdayHint => 'မွေးနေ့ ရွေးပါ';
+  String get petTypeRequired => 'အိမ်မွေးတိရစ္ဆာန်အမျိုးအစား ရွေးပါ';
 
   @override
-  String get petTypeRequired => 'အိမ်မွေးတိရစ္ဆာန်အမျိုးအစား ရွေးပါ';
+  String get petBirthdayHint => 'မွေးနေ့ ရွေးပါ';
 
   @override
   String get petChipHint => 'မိုက်ခရိုချစ်နံပါတ် ထည့်ပါ';
@@ -10331,8 +10330,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String get talkNoVoice => 'သင့်ဖုန်းတွင် ဤဘာသာစကားအတွက် အသံမရှိသဖြင့် အဖြေများကို ပြသော်လည်း ဖတ်မပြပါ။';
 
   @override
-  String get talkNotDone =>
-      'မအောင်မြင်ပါ။ မျက်နှာပြင်ပေါ်ရှိ အသေးစိတ်ကို စစ်ဆေးပါ။';
+  String get talkNotDone => 'မအောင်မြင်ပါ။ မျက်နှာပြင်ပေါ်ရှိ အသေးစိတ်ကို စစ်ဆေးပါ။';
 
   @override
   String get talkReady => 'နားထောင်နေပါတယ်။';
@@ -10596,4 +10594,80 @@ class AppLocalizationsMy extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'ယနေ့အတွက် \"Vaultara ကို မေးရန်\" ကန့်သတ်ချက်သို့ ရောက်ပါပြီ။ မနက်ဖြန် $time တွင် ပြန်စပါမည်။ Vaultara ရှိ အခြားအရာအားလုံး ပုံမှန်အတိုင်း အလုပ်လုပ်ပါသည်။';
   }
+
+  @override
+  String get assistantSupportTitle => 'Vorkalis အကူအညီသို့ အီးမေးလ်ပို့ရန်';
+
+  @override
+  String get assistantSupportMessage => 'စာ';
+
+  @override
+  String get assistantSupportNote => 'အက်ပ်ဗားရှင်း၊ ဖုန်း၊ စနစ်၊ ဘာသာစကားနှင့် အစီအစဉ်ကို ထည့်ပေးပါသည်။ သင်ဝင်ရောက်သည့် အီးမေးလ်သို့ အကူအညီက ပြန်ကြားပါမည်။';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Vorkalis အကူအညီသို့ ပို့ပြီးပါပြီ။ အလုပ်ရက် တစ်ရက်အတွင်း $email သို့ ပြန်ကြားချက် ရရှိသင့်ပါသည်။';
+  }
+
+  @override
+  String get assistantSupportLimit => 'ယနေ့ အကူအညီသို့ အကြိမ်ကြိမ် အီးမေးလ်ပို့ပြီးပါပြီ။ မနက်ဖြန် ထပ်စမ်းပါ သို့မဟုတ် support@vorkalis.com သို့ တိုက်ရိုက်ရေးပါ။';
+
+  @override
+  String get assistantSupportVerify => 'အကူအညီက သင့်ကို ပြန်ကြားနိုင်ရန် သင့်အီးမေးလ်လိပ်စာကို ဦးစွာ အတည်ပြုပါ။';
+
+  @override
+  String get assistantSupportFailed => 'အီးမေးလ် ပို့၍မရပါ။ နောက်မှ ထပ်စမ်းပါ သို့မဟုတ် support@vorkalis.com သို့ တိုက်ရိုက်ရေးပါ။';
+
+  @override
+  String get assistantInviteTitle => 'သင့်အိမ်ထောင်စုသို့ ဖိတ်ရန်';
+
+  @override
+  String get assistantInviteNote => 'Vaultara က သူတို့ထံ ဖိတ်ကြားချက်လင့်ခ်ကို အီးမေးလ်ဖြင့် ပို့ပါမည်။ ၎င်းကို တစ်ကြိမ်၊ ၇ ရက်အတွင်း သုံးနိုင်ပါသည်။';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'ဖိတ်ကြားချက်ကို $email သို့ ပို့ပြီးပါပြီ။';
+  }
+
+  @override
+  String get assistantInviteFailed => 'ဖိတ်ကြားချက် ပို့၍မရပါ။ ထပ်စမ်းပါ သို့မဟုတ် သင့်အိမ်ထောင်စုမှ ဖိတ်ကြားချက်ကို မျှဝေပါ။';
+
+  @override
+  String get assistantCalendarNote => 'သင့်ပြက္ခဒိန်အက်ပ်သည် ပွဲနှင့် ၇ ရက်ကြိုသတိပေးချက်ဖြင့် ပွင့်လာပါမည်။';
+
+  @override
+  String get assistantSendLinkTitle => 'လုံခြုံသော လင့်ခ်ပို့ရန်';
+
+  @override
+  String get assistantSendLinkWorks => 'လင့်ခ် သက်တမ်း';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours နာရီ';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'လင့်ခ်တစ်ခုသာ ပို့ပြီး အသေးစိတ်ကို ဘယ်တော့မှ မပို့ပါ။ မည်သို့ပို့မည်ကို သင်ရွေးနိုင်ပြီး $sharedLinks တွင် စောစောရပ်နိုင်ပါသည်။';
+  }
+
+  @override
+  String get monthAheadTitle => 'လာမည့်လ';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'လစဉ် ၁ ရက်နေ့တွင် $assistant က သက်တမ်းတိုးရမည့်အရာ၊ ကုန်ကျစရိတ်နှင့် လာမည့်ခရီးများကို ပို့ပေးပါသည်';
+  }
+
+  @override
+  String get monthAheadQuestion => 'ဒီလ ဘာလုပ်ရမလဲ?';
+
+  @override
+  String get assistantStepSupport => 'သင့်အီးမေးလ်ကို ရေးနေသည်';
+
+  @override
+  String get assistantStepSecurity => 'သင့်အကောင့်လုံခြုံရေးကို စစ်ဆေးနေသည်';
+
+  @override
+  String get talkFinishOnScreen => 'သင့်မျက်နှာပြင်ပေါ်တွင် ဖွင့်ထားပါသည်။ ထိုနေရာတွင် ပြီးအောင်လုပ်ပြီး ထပ်ပြောရန် နှိပ်ပါ။';
 }

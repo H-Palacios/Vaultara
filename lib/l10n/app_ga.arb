@@ -4418,5 +4418,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Seol ríomhphost chuig tacaíocht Vorkalis",
+  "assistantSupportMessage": "Teachtaireacht",
+  "assistantSupportNote": "Cuirtear leagan na haipe, an fón, an córas, an teanga agus an plean leis. Freagraíonn an fhoireann tacaíochta chuig an ríomhphost a úsáideann tú chun síniú isteach.",
+  "assistantSupportSent": "Seolta chuig tacaíocht Vorkalis. Ba cheart freagra a fháil ag {email} laistigh de lá oibre amháin.",
+  "assistantSupportLimit": "Tá ríomhphost seolta agat chuig an tacaíocht cúpla uair inniu cheana. Bain triail eile as amárach, nó scríobh go díreach chuig support@vorkalis.com.",
+  "assistantSupportVerify": "Deimhnigh do sheoladh ríomhphoist ar dtús, ionas gur féidir leis an tacaíocht freagra a thabhairt ort.",
+  "assistantSupportFailed": "Níorbh fhéidir an ríomhphost a sheoladh. Bain triail eile as níos déanaí, nó scríobh go díreach chuig support@vorkalis.com.",
+  "assistantInviteTitle": "Tabhair cuireadh chuig do líon tí",
+  "assistantInviteNote": "Seolann Vaultara nasc cuiridh chucu i ríomhphost. Oibríonn sé uair amháin, ar feadh 7 lá.",
+  "assistantInviteSent": "Cuireadh seolta chuig {email}.",
+  "assistantInviteFailed": "Níorbh fhéidir an cuireadh a sheoladh. Bain triail eile as, nó roinn cuireadh ó do líon tí ina ionad.",
+  "assistantCalendarNote": "Osclaíonn d'aip féilire leis an imeacht agus meabhrúchán 7 lá roimh ré.",
+  "assistantSendLinkTitle": "Seol nasc slán",
+  "assistantSendLinkWorks": "Oibríonn an nasc ar feadh",
+  "assistantSendLinkHours": "{hours} u",
+  "assistantSendLinkNote": "Ní sheoltar ach nasc, riamh na sonraí féin. Roghnaíonn tú conas é a sheoladh, agus is féidir leat é a stopadh níos luaithe in {sharedLinks}.",
+  "monthAheadTitle": "An mhí romhat",
+  "monthAheadSubtitle": "Ar an 1ú, seolann {assistant} cad atá le hathnuachan, cé mhéad a chosnóidh sé agus na turais atá romhat",
+  "monthAheadQuestion": "Cad atá le déanamh agam an mhí seo?",
+  "assistantStepSupport": "Do ríomhphost á scríobh",
+  "assistantStepSecurity": "Slándáil do chuntais á seiceáil",
+  "talkFinishOnScreen": "Tá sé oscailte ar do scáileán. Críochnaigh ansin, ansin tapáil chun labhairt arís."
 }

@@ -4156,5 +4156,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "ផ្ញើអ៊ីមែលទៅផ្នែកជំនួយ Vorkalis",
+  "assistantSupportMessage": "សារ",
+  "assistantSupportNote": "កំណែកម្មវិធី ទូរសព្ទ ប្រព័ន្ធ ភាសា និងគម្រោងត្រូវបានបន្ថែម។ ផ្នែកជំនួយឆ្លើយតបទៅអ៊ីមែលដែលអ្នកប្រើដើម្បីចូល។",
+  "assistantSupportSent": "បានផ្ញើទៅផ្នែកជំនួយ Vorkalis។ អ្នកគួរតែទទួលបានការឆ្លើយតបនៅ {email} ក្នុងរយៈពេលមួយថ្ងៃធ្វើការ។",
+  "assistantSupportLimit": "ថ្ងៃនេះ អ្នកបានផ្ញើអ៊ីមែលទៅផ្នែកជំនួយច្រើនដងហើយ។ សូមព្យាយាមម្តងទៀតនៅថ្ងៃស្អែក ឬសរសេរដោយផ្ទាល់ទៅ support@vorkalis.com។",
+  "assistantSupportVerify": "សូមផ្ទៀងផ្ទាត់អាសយដ្ឋានអ៊ីមែលរបស់អ្នកជាមុនសិន ដើម្បីឱ្យផ្នែកជំនួយអាចឆ្លើយតបអ្នកបាន។",
+  "assistantSupportFailed": "មិនអាចផ្ញើអ៊ីមែលបានទេ។ សូមព្យាយាមម្តងទៀតពេលក្រោយ ឬសរសេរដោយផ្ទាល់ទៅ support@vorkalis.com។",
+  "assistantInviteTitle": "អញ្ជើញចូលគ្រួសាររបស់អ្នក",
+  "assistantInviteNote": "Vaultara ផ្ញើតំណអញ្ជើញទៅពួកគេតាមអ៊ីមែល។ វាដំណើរការម្តង រយៈពេល 7 ថ្ងៃ។",
+  "assistantInviteSent": "បានផ្ញើការអញ្ជើញទៅ {email}។",
+  "assistantInviteFailed": "មិនអាចផ្ញើការអញ្ជើញបានទេ។ សូមព្យាយាមម្តងទៀត ឬចែករំលែកការអញ្ជើញពីគ្រួសាររបស់អ្នកជំនួសវិញ។",
+  "assistantCalendarNote": "កម្មវិធីប្រតិទិនរបស់អ្នកនឹងបើកជាមួយព្រឹត្តិការណ៍ និងការរំលឹក 7 ថ្ងៃមុន។",
+  "assistantSendLinkTitle": "ផ្ញើតំណដែលមានសុវត្ថិភាព",
+  "assistantSendLinkWorks": "តំណមានសុពលភាព",
+  "assistantSendLinkHours": "{hours} ម៉ោង",
+  "assistantSendLinkNote": "មានតែតំណប៉ុណ្ណោះដែលត្រូវបានផ្ញើ មិនមែនព័ត៌មានលម្អិតទេ។ អ្នកជ្រើសរើសរបៀបផ្ញើ ហើយអាចបញ្ឈប់វាមុនបាននៅក្នុង {sharedLinks}។",
+  "monthAheadTitle": "ខែខាងមុខ",
+  "monthAheadSubtitle": "នៅថ្ងៃទី 1 {assistant} ផ្ញើអ្វីដែលត្រូវបន្ត តម្លៃ និងដំណើរដែលនឹងមកដល់របស់អ្នក",
+  "monthAheadQuestion": "តើខ្ញុំត្រូវធ្វើអ្វីខ្លះនៅខែនេះ?",
+  "assistantStepSupport": "កំពុងសរសេរអ៊ីមែលរបស់អ្នក",
+  "assistantStepSecurity": "កំពុងពិនិត្យសុវត្ថិភាពគណនីរបស់អ្នក",
+  "talkFinishOnScreen": "វាបើកនៅលើអេក្រង់របស់អ្នក។ សូមបញ្ចប់នៅទីនោះ រួចចុចដើម្បីនិយាយម្តងទៀត។"
 }

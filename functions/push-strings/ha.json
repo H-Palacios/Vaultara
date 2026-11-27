@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Takardar ma'aikaci ta ƙare",
   "staffOverdueYesterday": "{name} na {person} ya ƙare jiya kuma ba a sabunta shi ba.",
   "staffOverdueWeek": "{name} na {person} ya ƙare mako guda da ya wuce kuma har yanzu ba a sabunta shi ba.",
-  "staffOverdueMany": "Takardun ma'aikata {count} sun ƙare kuma ba a sabunta su ba: {names}."
+  "staffOverdueMany": "Takardun ma'aikata {count} sun ƙare kuma ba a sabunta su ba: {names}.",
+  "monthAheadTitle": "Watanka mai zuwa",
+  "monthAheadBodyCount": "Abin sabuntawa a wannan watan: {count}. Taɓa don ganin abin da za a yi.",
+  "monthAheadBodyCost": "Abin sabuntawa a wannan watan: {count}, kusan {cost}. Taɓa don ganin abin da za a yi.",
+  "monthAheadBodyCountTrips": "Abin sabuntawa a wannan watan: {count}. Tafiye-tafiye a makonni 6 masu zuwa: {trips}. Taɓa don ganin abin da za a yi.",
+  "monthAheadBodyCostTrips": "Abin sabuntawa a wannan watan: {count}, kusan {cost}. Tafiye-tafiye a makonni 6 masu zuwa: {trips}. Taɓa don ganin abin da za a yi.",
+  "monthAheadBodyTrips": "Babu abin sabuntawa a wannan watan. Tafiye-tafiye a makonni 6 masu zuwa: {trips}. Taɓa don ganin abin da za a yi."
 }

@@ -3154,16 +3154,16 @@ class AppLocalizationsIg extends AppLocalizations {
   String get planGetPremium => 'Nweta Premium';
 
   @override
-  String get businessPlanBuy => 'Nweta Azụmahịa';
-
-  @override
   String get individualPlanBuy => 'Nweta Onye otu';
 
   @override
-  String get businessPlanSwitch => 'Gbanwee gaa Azụmahịa';
+  String get individualPlanSwitch => 'Gbanwee gaa na Onye otu';
 
   @override
-  String get individualPlanSwitch => 'Gbanwee gaa na Onye otu';
+  String get businessPlanBuy => 'Nweta Azụmahịa';
+
+  @override
+  String get businessPlanSwitch => 'Gbanwee gaa Azụmahịa';
 
   @override
   String get planSwitchToYearly => 'Gbanwee gaa nke afọ ọ bụla';
@@ -4882,8 +4882,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String get assistantEmptyReply => 'Achọtaghị m azịza. Gbalịa ịjụ n’ụzọ ọzọ.';
 
   @override
-  String get assistantDraftReady =>
-      'Nke a bụ nkọwa ya. Pịa Kwado iji chekwaa ha.';
+  String get assistantDraftReady => 'Nke a bụ nkọwa ya. Pịa Kwado iji chekwaa ha.';
 
   @override
   String get assistantNewChat => 'Mkparịta ụka ọhụrụ';
@@ -6633,27 +6632,27 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Tinye ọgwụ mgbochi maka ${name}';
+    return 'Tinye ọgwụ mgbochi maka $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Tinye microchip maka ${name}';
+    return 'Tinye microchip maka $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Tinye mkpuchi anụ ụlọ maka ${name}';
+    return 'Tinye mkpuchi anụ ụlọ maka $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Tinye paspọtụ maka ${name}';
+    return 'Tinye paspọtụ maka $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Ọzọ: ${step}. Kwuo ee ka e mee ya.';
+    return 'Ọzọ: $step. Kwuo ee ka e mee ya.';
   }
 
   @override
@@ -8934,10 +8933,10 @@ class AppLocalizationsIg extends AppLocalizations {
   String get petTypeFieldHint => 'Tinye ụdị anụ ụlọ';
 
   @override
-  String get petBirthdayHint => 'Họrọ ụbọchị ọmụmụ';
+  String get petTypeRequired => 'Họrọ ụdị anụ ụlọ';
 
   @override
-  String get petTypeRequired => 'Họrọ ụdị anụ ụlọ';
+  String get petBirthdayHint => 'Họrọ ụbọchị ọmụmụ';
 
   @override
   String get petChipHint => 'Tinye nọmba microchip';
@@ -10609,4 +10608,80 @@ class AppLocalizationsIg extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'I ruola oke \"Jụọ Vaultara\" nke taa. Ọ ga-amalite ọzọ echi n\'elekere $time. Ihe ndị ọzọ niile na Vaultara na-arụ ọrụ dịka ọ na-adị.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Ziga nkwado Vorkalis email';
+
+  @override
+  String get assistantSupportMessage => 'Ozi';
+
+  @override
+  String get assistantSupportNote => 'A na-agbakwunye ụdị ngwa, ekwentị, sistemụ, asụsụ na atụmatụ. Nkwado na-aza na email ị ji abanye.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'E zigara ya nkwado Vorkalis. Ị ga-enweta azịza na $email n\'ime otu ụbọchị ọrụ.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Ị zigalarị nkwado email ọtụtụ ugboro taa. Nwaa ọzọ echi, ma ọ bụ dee ozugbo na support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Buru ụzọ kwado adreesị email gị ka nkwado nwee ike ịza gị.';
+
+  @override
+  String get assistantSupportFailed => 'Enweghị ike iziga email ahụ. Nwaa ọzọ ma emechaa, ma ọ bụ dee ozugbo na support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Kpọọ ha n\'ụlọ gị';
+
+  @override
+  String get assistantInviteNote => 'Vaultara na-eziga ha njikọ òkù site na email. Ọ na-arụ ọrụ otu ugboro, ruo ụbọchị 7.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'E zigara òkù na $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Enweghị ike iziga òkù ahụ. Nwaa ọzọ, ma ọ bụ kesaa òkù site n\'ụlọ gị kama.';
+
+  @override
+  String get assistantCalendarNote => 'Ngwa kalenda gị ga-emepe na ihe omume ahụ na ncheta ụbọchị 7 tupu ya.';
+
+  @override
+  String get assistantSendLinkTitle => 'Ziga njikọ echekwara';
+
+  @override
+  String get assistantSendLinkWorks => 'Njikọ ahụ na-arụ ọrụ maka';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return 'Awa $hours';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Ọ bụ naanị njikọ ka a na-eziga, ọ dịghị mgbe a na-eziga nkọwa n\'onwe ha. Ị na-ahọrọ otu ị ga-esi ziga ya, ma nwee ike ịkwụsị ya n\'oge na $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Ọnwa na-abịa';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Na ụbọchị 1 nke ọnwa ọ bụla, $assistant na-eziga ihe ị ga-emeghari, ego ọ ga-efu na njem gị na-abịa';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Gịnị ka m kwesịrị ime n\'ọnwa a?';
+
+  @override
+  String get assistantStepSupport => 'A na-ede email gị';
+
+  @override
+  String get assistantStepSecurity => 'A na-elele nchekwa akaụntụ gị';
+
+  @override
+  String get talkFinishOnScreen => 'Ọ meghere na ihuenyo gị. Mechaa ya ebe ahụ, wee pịa ka ị kwuo okwu ọzọ.';
 }

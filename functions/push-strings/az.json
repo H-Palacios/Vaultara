@@ -26,5 +26,11 @@
   "staffOverdueTitle": "İşçi sənədinin müddəti bitdi",
   "staffOverdueYesterday": "{person} üçün {name} dünən bitdi və yenilənməyib.",
   "staffOverdueWeek": "{person} üçün {name} bir həftə əvvəl bitdi və hələ də yenilənməyib.",
-  "staffOverdueMany": "{count} işçi sənədinin müddəti bitib və yenilənməyib: {names}."
+  "staffOverdueMany": "{count} işçi sənədinin müddəti bitib və yenilənməyib: {names}.",
+  "monthAheadTitle": "Qarşıdakı ayınız",
+  "monthAheadBodyCount": "Bu ay yenilənəcək: {count}. Nə etməli olduğunuzu görmək üçün toxunun.",
+  "monthAheadBodyCost": "Bu ay yenilənəcək: {count}, təxminən {cost}. Nə etməli olduğunuzu görmək üçün toxunun.",
+  "monthAheadBodyCountTrips": "Bu ay yenilənəcək: {count}. Növbəti 6 həftədə səfərlər: {trips}. Nə etməli olduğunuzu görmək üçün toxunun.",
+  "monthAheadBodyCostTrips": "Bu ay yenilənəcək: {count}, təxminən {cost}. Növbəti 6 həftədə səfərlər: {trips}. Nə etməli olduğunuzu görmək üçün toxunun.",
+  "monthAheadBodyTrips": "Bu ay yenilənəcək heç nə yoxdur. Növbəti 6 həftədə səfərlər: {trips}. Nə etməli olduğunuzu görmək üçün toxunun."
 }

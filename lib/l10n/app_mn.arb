@@ -4424,5 +4424,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Vorkalis-ийн дэмжлэгт имэйл бичих",
+  "assistantSupportMessage": "Зурвас",
+  "assistantSupportNote": "Аппын хувилбар, утас, систем, хэл, багц нэмэгдэнэ. Дэмжлэг таны нэвтэрдэг имэйл рүү хариу бичнэ.",
+  "assistantSupportSent": "Vorkalis-ийн дэмжлэг рүү илгээлээ. Нэг ажлын өдрийн дотор {email} хаяг руу хариу ирэх ёстой.",
+  "assistantSupportLimit": "Та өнөөдөр дэмжлэг рүү хэд хэдэн удаа бичсэн байна. Маргааш дахин оролдох эсвэл шууд support@vorkalis.com руу бичээрэй.",
+  "assistantSupportVerify": "Дэмжлэг танд хариу бичих боломжтой байхын тулд эхлээд имэйл хаягаа баталгаажуулна уу.",
+  "assistantSupportFailed": "Имэйл илгээж чадсангүй. Дараа дахин оролдох эсвэл шууд support@vorkalis.com руу бичээрэй.",
+  "assistantInviteTitle": "Өрхдөө урих",
+  "assistantInviteNote": "Vaultara тэдэнд имэйлээр урилгын холбоос илгээнэ. Энэ нь нэг удаа, 7 хоног ажиллана.",
+  "assistantInviteSent": "Урилгыг {email} руу илгээлээ.",
+  "assistantInviteFailed": "Урилгыг илгээж чадсангүй. Дахин оролдох эсвэл оронд нь өрхөөсөө урилга хуваалцаарай.",
+  "assistantCalendarNote": "Таны хуанлийн апп үйл явдал болон 7 хоногийн өмнөх сануулгатайгаар нээгдэнэ.",
+  "assistantSendLinkTitle": "Аюулгүй холбоос илгээх",
+  "assistantSendLinkWorks": "Холбоос хүчинтэй",
+  "assistantSendLinkHours": "{hours} ц",
+  "assistantSendLinkNote": "Зөвхөн холбоос илгээгдэнэ, мэдээлэл өөрөө хэзээ ч биш. Хэрхэн илгээхээ та сонгох ба «{sharedLinks}» хэсгээс эрт зогсоож болно.",
+  "monthAheadTitle": "Ирэх сар",
+  "monthAheadSubtitle": "Сар бүрийн 1-нд {assistant} юуг сунгах, ямар зардал гарах болон таны удахгүй болох аяллуудыг илгээнэ",
+  "monthAheadQuestion": "Энэ сард би юу хийх ёстой вэ?",
+  "assistantStepSupport": "Таны имэйлийг бичиж байна",
+  "assistantStepSecurity": "Таны бүртгэлийн аюулгүй байдлыг шалгаж байна",
+  "talkFinishOnScreen": "Таны дэлгэц дээр нээгдсэн. Тэнд дуусгаад, дахин ярихын тулд товшино уу."
 }

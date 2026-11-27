@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Dokumen staf habis masa berlakunya",
   "staffOverdueYesterday": "{name} milik {person} habis kemarin dan belum diperpanjang.",
   "staffOverdueWeek": "{name} milik {person} habis seminggu lalu dan masih belum diperpanjang.",
-  "staffOverdueMany": "{count} dokumen staf telah habis dan belum diperpanjang: {names}."
+  "staffOverdueMany": "{count} dokumen staf telah habis dan belum diperpanjang: {names}.",
+  "monthAheadTitle": "Bulan mendatang Anda",
+  "monthAheadBodyCount": "Perlu diperpanjang bulan ini: {count}. Ketuk untuk melihat yang perlu dilakukan.",
+  "monthAheadBodyCost": "Perlu diperpanjang bulan ini: {count}, sekitar {cost}. Ketuk untuk melihat yang perlu dilakukan.",
+  "monthAheadBodyCountTrips": "Perlu diperpanjang bulan ini: {count}. Perjalanan dalam 6 minggu ke depan: {trips}. Ketuk untuk melihat yang perlu dilakukan.",
+  "monthAheadBodyCostTrips": "Perlu diperpanjang bulan ini: {count}, sekitar {cost}. Perjalanan dalam 6 minggu ke depan: {trips}. Ketuk untuk melihat yang perlu dilakukan.",
+  "monthAheadBodyTrips": "Tidak ada yang perlu diperpanjang bulan ini. Perjalanan dalam 6 minggu ke depan: {trips}. Ketuk untuk melihat yang perlu dilakukan."
 }

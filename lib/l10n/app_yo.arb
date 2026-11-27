@@ -4406,5 +4406,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Fi ímeèlì ránṣẹ́ sí ìrànlọ́wọ́ Vorkalis",
+  "assistantSupportMessage": "Ìfiránṣẹ́",
+  "assistantSupportNote": "A ó fi ẹ̀yà áàpù, fóònù, sístẹ́mù, èdè àti ètò kún un. Ìrànlọ́wọ́ máa ń fèsì sí ímeèlì tí o fi ń wọlé.",
+  "assistantSupportSent": "A ti fi ránṣẹ́ sí ìrànlọ́wọ́ Vorkalis. O yẹ kí o gba èsì ní {email} láàrín ọjọ́ iṣẹ́ kan.",
+  "assistantSupportLimit": "O ti fi ímeèlì ránṣẹ́ sí ìrànlọ́wọ́ lọ́pọ̀ ìgbà lónìí. Gbìyànjú lọ́la, tàbí kọ̀wé tààrà sí support@vorkalis.com.",
+  "assistantSupportVerify": "Kọ́kọ́ jẹ́rìí àdírẹ́sì ímeèlì rẹ kí ìrànlọ́wọ́ lè fèsì sí ọ.",
+  "assistantSupportFailed": "A kò lè fi ímeèlì náà ránṣẹ́. Gbìyànjú lẹ́yìn náà, tàbí kọ̀wé tààrà sí support@vorkalis.com.",
+  "assistantInviteTitle": "Pè wọ́n sí ilé rẹ",
+  "assistantInviteNote": "Vaultara máa ń fi ọ̀nà asopọ̀ ìpè ránṣẹ́ sí wọn nípasẹ̀ ímeèlì. Ó ń ṣiṣẹ́ lẹ́ẹ̀kan, fún ọjọ́ 7.",
+  "assistantInviteSent": "A ti fi ìpè ránṣẹ́ sí {email}.",
+  "assistantInviteFailed": "A kò lè fi ìpè náà ránṣẹ́. Gbìyànjú lẹ́ẹ̀kan sí i, tàbí pín ìpè láti ilé rẹ dípò bẹ́ẹ̀.",
+  "assistantCalendarNote": "Áàpù kàlẹ́ńdà rẹ yóò ṣí pẹ̀lú ìṣẹ̀lẹ̀ náà àti ìránnilétí ọjọ́ 7 ṣáájú.",
+  "assistantSendLinkTitle": "Fi ọ̀nà asopọ̀ tó ní ààbò ránṣẹ́",
+  "assistantSendLinkWorks": "Ọ̀nà asopọ̀ náà ń ṣiṣẹ́ fún",
+  "assistantSendLinkHours": "Wákàtí {hours}",
+  "assistantSendLinkNote": "Ọ̀nà asopọ̀ nìkan ni a ń fi ránṣẹ́, kì í ṣe àwọn àlàyé fúnra wọn. Ìwọ ni o yan bí o ṣe máa fi ránṣẹ́, o sì lè dá a dúró ṣáájú ní {sharedLinks}.",
+  "monthAheadTitle": "Oṣù tó ń bọ̀",
+  "monthAheadSubtitle": "Ní ọjọ́ kìíní oṣù, {assistant} máa ń fi ohun tí o máa sọ dọ̀tun, iye owó rẹ̀ àti àwọn ìrìn àjò rẹ tó ń bọ̀ ránṣẹ́",
+  "monthAheadQuestion": "Kí ni mo gbọ́dọ̀ ṣe ní oṣù yìí?",
+  "assistantStepSupport": "À ń kọ ímeèlì rẹ",
+  "assistantStepSecurity": "À ń ṣàyẹ̀wò ààbò àkáǹtì rẹ",
+  "talkFinishOnScreen": "Ó ti ṣí sílẹ̀ lórí ìbòjú rẹ. Parí rẹ̀ níbẹ̀, lẹ́yìn náà tẹ̀ ẹ́ láti tún sọ̀rọ̀."
 }

@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Ìwé òṣìṣẹ́ kan ti parí",
   "staffOverdueYesterday": "{name} ti {person} parí lánàá, kò sì tíì di sísọdọ̀tun.",
   "staffOverdueWeek": "{name} ti {person} parí ní ọ̀sẹ̀ kan sẹ́yìn, kò sì tíì di sísọdọ̀tun.",
-  "staffOverdueMany": "Ìwé òṣìṣẹ́ {count} ti parí, wọn kò sì tíì di sísọdọ̀tun: {names}."
+  "staffOverdueMany": "Ìwé òṣìṣẹ́ {count} ti parí, wọn kò sì tíì di sísọdọ̀tun: {names}.",
+  "monthAheadTitle": "Oṣù rẹ tó ń bọ̀",
+  "monthAheadBodyCount": "Láti sọ dọ̀tun ní oṣù yìí: {count}. Tẹ̀ ẹ́ láti rí ohun tí o máa ṣe.",
+  "monthAheadBodyCost": "Láti sọ dọ̀tun ní oṣù yìí: {count}, nǹkan bí {cost}. Tẹ̀ ẹ́ láti rí ohun tí o máa ṣe.",
+  "monthAheadBodyCountTrips": "Láti sọ dọ̀tun ní oṣù yìí: {count}. Ìrìn àjò ní ọ̀sẹ̀ 6 tó ń bọ̀: {trips}. Tẹ̀ ẹ́ láti rí ohun tí o máa ṣe.",
+  "monthAheadBodyCostTrips": "Láti sọ dọ̀tun ní oṣù yìí: {count}, nǹkan bí {cost}. Ìrìn àjò ní ọ̀sẹ̀ 6 tó ń bọ̀: {trips}. Tẹ̀ ẹ́ láti rí ohun tí o máa ṣe.",
+  "monthAheadBodyTrips": "Kò sí ohun tí a máa sọ dọ̀tun ní oṣù yìí. Ìrìn àjò ní ọ̀sẹ̀ 6 tó ń bọ̀: {trips}. Tẹ̀ ẹ́ láti rí ohun tí o máa ṣe."
 }

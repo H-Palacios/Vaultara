@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Lejárt egy munkatárs dokumentuma",
   "staffOverdueYesterday": "{person} – {name} tegnap lejárt, és nem újították meg.",
   "staffOverdueWeek": "{person} – {name} egy hete lejárt, és még mindig nincs megújítva.",
-  "staffOverdueMany": "{count} munkatársi dokumentum lejárt és nincs megújítva: {names}."
+  "staffOverdueMany": "{count} munkatársi dokumentum lejárt és nincs megújítva: {names}.",
+  "monthAheadTitle": "Az Ön előtt álló hónap",
+  "monthAheadBodyCount": "Megújítandó ebben a hónapban: {count}. Koppintson, és nézze meg, mi a teendő.",
+  "monthAheadBodyCost": "Megújítandó ebben a hónapban: {count}, kb. {cost}. Koppintson, és nézze meg, mi a teendő.",
+  "monthAheadBodyCountTrips": "Megújítandó ebben a hónapban: {count}. Utazások a következő 6 hétben: {trips}. Koppintson, és nézze meg, mi a teendő.",
+  "monthAheadBodyCostTrips": "Megújítandó ebben a hónapban: {count}, kb. {cost}. Utazások a következő 6 hétben: {trips}. Koppintson, és nézze meg, mi a teendő.",
+  "monthAheadBodyTrips": "Ebben a hónapban nincs mit megújítani. Utazások a következő 6 hétben: {trips}. Koppintson, és nézze meg, mi a teendő."
 }

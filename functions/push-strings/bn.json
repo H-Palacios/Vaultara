@@ -26,5 +26,11 @@
   "staffOverdueTitle": "কর্মীর নথির মেয়াদ শেষ",
   "staffOverdueYesterday": "{person}-এর {name}-এর মেয়াদ গতকাল শেষ হয়েছে এবং নবায়ন হয়নি।",
   "staffOverdueWeek": "{person}-এর {name}-এর মেয়াদ এক সপ্তাহ আগে শেষ হয়েছে এবং এখনও নবায়ন হয়নি।",
-  "staffOverdueMany": "{count}টি কর্মীর নথির মেয়াদ শেষ হয়েছে এবং নবায়ন হয়নি: {names}।"
+  "staffOverdueMany": "{count}টি কর্মীর নথির মেয়াদ শেষ হয়েছে এবং নবায়ন হয়নি: {names}।",
+  "monthAheadTitle": "আপনার আসন্ন মাস",
+  "monthAheadBodyCount": "এই মাসে নবায়ন: {count}। কী করতে হবে দেখতে ট্যাপ করুন।",
+  "monthAheadBodyCost": "এই মাসে নবায়ন: {count}, প্রায় {cost}। কী করতে হবে দেখতে ট্যাপ করুন।",
+  "monthAheadBodyCountTrips": "এই মাসে নবায়ন: {count}। পরের ৬ সপ্তাহে ভ্রমণ: {trips}। কী করতে হবে দেখতে ট্যাপ করুন।",
+  "monthAheadBodyCostTrips": "এই মাসে নবায়ন: {count}, প্রায় {cost}। পরের ৬ সপ্তাহে ভ্রমণ: {trips}। কী করতে হবে দেখতে ট্যাপ করুন।",
+  "monthAheadBodyTrips": "এই মাসে নবায়নের কিছু নেই। পরের ৬ সপ্তাহে ভ্রমণ: {trips}। কী করতে হবে দেখতে ট্যাপ করুন।"
 }

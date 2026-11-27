@@ -4406,5 +4406,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "د Vorkalis ملاتړ ته برېښنالیک ولیکئ",
+  "assistantSupportMessage": "پیغام",
+  "assistantSupportNote": "د اپ نسخه، تلیفون، سیسټم، ژبه او پلان ورزیاتیږي. ملاتړ هغه برېښنالیک ته ځواب ورکوي چې تاسو پرې ننوځئ.",
+  "assistantSupportSent": "د Vorkalis ملاتړ ته ولېږل شو. باید په یوه کاري ورځ کې په {email} ځواب ترلاسه کړئ.",
+  "assistantSupportLimit": "تاسو نن څو ځله ملاتړ ته لیکلي دي. سبا بیا هڅه وکړئ یا مستقیم support@vorkalis.com ته ولیکئ.",
+  "assistantSupportVerify": "لومړی خپل برېښنالیک پته تایید کړئ، ترڅو ملاتړ تاسو ته ځواب درکړي.",
+  "assistantSupportFailed": "برېښنالیک ونه لېږل شو. وروسته بیا هڅه وکړئ یا مستقیم support@vorkalis.com ته ولیکئ.",
+  "assistantInviteTitle": "خپلې کورنۍ ته بلنه ورکړئ",
+  "assistantInviteNote": "Vaultara هغوی ته د برېښنالیک له لارې د بلنې لینک لېږي. یو ځل، د ۷ ورځو لپاره کار کوي.",
+  "assistantInviteSent": "بلنه {email} ته ولېږل شوه.",
+  "assistantInviteFailed": "بلنه ونه لېږل شوه. بیا هڅه وکړئ یا پر ځای یې له خپلې کورنۍ څخه بلنه شریکه کړئ.",
+  "assistantCalendarNote": "ستاسو د کلیز اپ له پېښې او ۷ ورځې مخکې یادونې سره پرانیستل کیږي.",
+  "assistantSendLinkTitle": "خوندي لینک ولېږئ",
+  "assistantSendLinkWorks": "لینک اعتبار لري",
+  "assistantSendLinkHours": "{hours} ساعته",
+  "assistantSendLinkNote": "یوازې لینک لېږل کیږي، هېڅکله پخپله جزئیات نه. تاسو ټاکئ چې څنګه یې ولېږئ، او کولای شئ په {sharedLinks} کې یې مخکې ودروئ.",
+  "monthAheadTitle": "راتلونکې میاشت",
+  "monthAheadSubtitle": "د هرې میاشتې په لومړۍ نېټه {assistant} لېږي چې څه باید نوي شي، څومره لګښت لري او ستاسو راتلونکي سفرونه",
+  "monthAheadQuestion": "زه باید پدې میاشت کې څه وکړم؟",
+  "assistantStepSupport": "ستاسو برېښنالیک لیکل کیږي",
+  "assistantStepSecurity": "ستاسو د حساب امنیت کتل کیږي",
+  "talkFinishOnScreen": "دا ستاسو په سکرین پرانیستل شوی. هلته یې بشپړ کړئ، بیا د بیا خبرو لپاره ټک وکړئ."
 }

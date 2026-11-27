@@ -4156,5 +4156,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Vorkalis yordam xizmatiga yozish",
+  "assistantSupportMessage": "Xabar",
+  "assistantSupportNote": "Ilova versiyasi, telefon, tizim, til va tarif qoʻshiladi. Yordam xizmati siz kiradigan elektron pochtaga javob beradi.",
+  "assistantSupportSent": "Vorkalis yordam xizmatiga yuborildi. Bir ish kuni ichida {email} manziliga javob olishingiz kerak.",
+  "assistantSupportLimit": "Bugun yordam xizmatiga bir necha marta yozdingiz. Ertaga qayta urinib koʻring yoki toʻgʻridan-toʻgʻri support@vorkalis.com manziliga yozing.",
+  "assistantSupportVerify": "Yordam xizmati javob bera olishi uchun avval elektron pochta manzilingizni tasdiqlang.",
+  "assistantSupportFailed": "Xat yuborilmadi. Keyinroq qayta urinib koʻring yoki toʻgʻridan-toʻgʻri support@vorkalis.com manziliga yozing.",
+  "assistantInviteTitle": "Xonadoningizga taklif qilish",
+  "assistantInviteNote": "Vaultara ularga elektron pochta orqali taklif havolasini yuboradi. U bir marta, 7 kun davomida ishlaydi.",
+  "assistantInviteSent": "Taklif {email} manziliga yuborildi.",
+  "assistantInviteFailed": "Taklif yuborilmadi. Qayta urinib koʻring yoki uning oʻrniga xonadoningizdan taklif ulashing.",
+  "assistantCalendarNote": "Taqvim ilovangiz tadbir va 7 kun oldingi eslatma bilan ochiladi.",
+  "assistantSendLinkTitle": "Xavfsiz havola yuborish",
+  "assistantSendLinkWorks": "Havola amal qiladi",
+  "assistantSendLinkHours": "{hours} soat",
+  "assistantSendLinkNote": "Faqat havola yuboriladi, maʼlumotlarning oʻzi hech qachon. Qanday yuborishni oʻzingiz tanlaysiz va uni {sharedLinks} boʻlimida oldinroq toʻxtatishingiz mumkin.",
+  "monthAheadTitle": "Oldindagi oy",
+  "monthAheadSubtitle": "Har oyning 1-sanasida {assistant} nimani yangilash kerakligi, narxi va oldindagi safarlaringizni yuboradi",
+  "monthAheadQuestion": "Bu oy nima qilishim kerak?",
+  "assistantStepSupport": "Xatingiz yozilmoqda",
+  "assistantStepSecurity": "Hisobingiz xavfsizligi tekshirilmoqda",
+  "talkFinishOnScreen": "Ekraningizda ochiq. U yerda tugating, soʻng yana gapirish uchun bosing."
 }

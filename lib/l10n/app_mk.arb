@@ -4424,5 +4424,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Пишете до поддршката на Vorkalis",
+  "assistantSupportMessage": "Порака",
+  "assistantSupportNote": "Се додаваат верзијата на апликацијата, телефонот, системот, јазикот и планот. Поддршката одговара на е-поштата со која се најавувате.",
+  "assistantSupportSent": "Испратено до поддршката на Vorkalis. Треба да добиете одговор на {email} во рок од еден работен ден.",
+  "assistantSupportLimit": "Денес веќе неколку пати пишавте до поддршката. Обидете се утре или пишете директно на support@vorkalis.com.",
+  "assistantSupportVerify": "Прво потврдете ја вашата е-пошта за поддршката да може да ви одговори.",
+  "assistantSupportFailed": "Е-поштата не можеше да се испрати. Обидете се подоцна или пишете директно на support@vorkalis.com.",
+  "assistantInviteTitle": "Поканете во вашето домаќинство",
+  "assistantInviteNote": "Vaultara им испраќа линк за покана по е-пошта. Работи еднаш, 7 дена.",
+  "assistantInviteSent": "Поканата е испратена на {email}.",
+  "assistantInviteFailed": "Поканата не можеше да се испрати. Обидете се повторно или споделете покана од вашето домаќинство.",
+  "assistantCalendarNote": "Вашата апликација за календар се отвора со настанот и потсетник 7 дена пред тоа.",
+  "assistantSendLinkTitle": "Испратете безбеден линк",
+  "assistantSendLinkWorks": "Линкот важи",
+  "assistantSendLinkHours": "{hours} ч",
+  "assistantSendLinkNote": "Се испраќа само линк, никогаш самите податоци. Вие избирате како да го испратите и можете да го запрете порано во „{sharedLinks}“.",
+  "monthAheadTitle": "Месецот пред вас",
+  "monthAheadSubtitle": "На 1-ви {assistant} ви испраќа што треба да обновите, колку чини и вашите претстојни патувања",
+  "monthAheadQuestion": "Што треба да направам овој месец?",
+  "assistantStepSupport": "Ја пишувам вашата е-пошта",
+  "assistantStepSecurity": "Ја проверувам безбедноста на вашата сметка",
+  "talkFinishOnScreen": "Отворено е на екранот. Завршете таму, потоа допрете за повторно да зборувате."
 }

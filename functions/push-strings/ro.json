@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Documentul unui angajat a expirat",
   "staffOverdueYesterday": "{name} pentru {person} a expirat ieri și nu a fost reînnoit.",
   "staffOverdueWeek": "{name} pentru {person} a expirat acum o săptămână și încă nu a fost reînnoit.",
-  "staffOverdueMany": "{count} documente ale angajaților au expirat și nu au fost reînnoite: {names}."
+  "staffOverdueMany": "{count} documente ale angajaților au expirat și nu au fost reînnoite: {names}.",
+  "monthAheadTitle": "Luna ta care vine",
+  "monthAheadBodyCount": "De reînnoit luna aceasta: {count}. Atinge pentru a vedea ce ai de făcut.",
+  "monthAheadBodyCost": "De reînnoit luna aceasta: {count}, aproximativ {cost}. Atinge pentru a vedea ce ai de făcut.",
+  "monthAheadBodyCountTrips": "De reînnoit luna aceasta: {count}. Călătorii în următoarele 6 săptămâni: {trips}. Atinge pentru a vedea ce ai de făcut.",
+  "monthAheadBodyCostTrips": "De reînnoit luna aceasta: {count}, aproximativ {cost}. Călătorii în următoarele 6 săptămâni: {trips}. Atinge pentru a vedea ce ai de făcut.",
+  "monthAheadBodyTrips": "Nimic de reînnoit luna aceasta. Călătorii în următoarele 6 săptămâni: {trips}. Atinge pentru a vedea ce ai de făcut."
 }

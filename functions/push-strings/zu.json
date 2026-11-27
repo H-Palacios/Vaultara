@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Idokhumenti yomsebenzi iphelelwe",
   "staffOverdueYesterday": "I-{name} ka-{person} iphelelwe izolo futhi ayivuselelwanga.",
   "staffOverdueWeek": "I-{name} ka-{person} iphelelwe esontweni eledlule futhi ayikavuselelwa.",
-  "staffOverdueMany": "Amadokhumenti abasebenzi angu-{count} aphelelwe futhi awavuselelwanga: {names}."
+  "staffOverdueMany": "Amadokhumenti abasebenzi angu-{count} aphelelwe futhi awavuselelwanga: {names}.",
+  "monthAheadTitle": "Inyanga yakho ezayo",
+  "monthAheadBodyCount": "Okuzovuselelwa kule nyanga: {count}. Thepha ukuze ubone okufanele ukwenze.",
+  "monthAheadBodyCost": "Okuzovuselelwa kule nyanga: {count}, cishe {cost}. Thepha ukuze ubone okufanele ukwenze.",
+  "monthAheadBodyCountTrips": "Okuzovuselelwa kule nyanga: {count}. Uhambo emavikini angu-6 ezayo: {trips}. Thepha ukuze ubone okufanele ukwenze.",
+  "monthAheadBodyCostTrips": "Okuzovuselelwa kule nyanga: {count}, cishe {cost}. Uhambo emavikini angu-6 ezayo: {trips}. Thepha ukuze ubone okufanele ukwenze.",
+  "monthAheadBodyTrips": "Akukho okuzovuselelwa kule nyanga. Uhambo emavikini angu-6 ezayo: {trips}. Thepha ukuze ubone okufanele ukwenze."
 }

@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Қызметкер құжатының мерзімі бітті",
   "staffOverdueYesterday": "{person} үшін {name} кеше бітті және жаңартылмады.",
   "staffOverdueWeek": "{person} үшін {name} бір апта бұрын бітті және әлі жаңартылмады.",
-  "staffOverdueMany": "{count} қызметкер құжатының мерзімі бітті және жаңартылмады: {names}."
+  "staffOverdueMany": "{count} қызметкер құжатының мерзімі бітті және жаңартылмады: {names}.",
+  "monthAheadTitle": "Алдағы айыңыз",
+  "monthAheadBodyCount": "Осы айда жаңарту: {count}. Не істеу керегін көру үшін түртіңіз.",
+  "monthAheadBodyCost": "Осы айда жаңарту: {count}, шамамен {cost}. Не істеу керегін көру үшін түртіңіз.",
+  "monthAheadBodyCountTrips": "Осы айда жаңарту: {count}. Алдағы 6 аптадағы сапарлар: {trips}. Не істеу керегін көру үшін түртіңіз.",
+  "monthAheadBodyCostTrips": "Осы айда жаңарту: {count}, шамамен {cost}. Алдағы 6 аптадағы сапарлар: {trips}. Не істеу керегін көру үшін түртіңіз.",
+  "monthAheadBodyTrips": "Осы айда жаңартатын ештеңе жоқ. Алдағы 6 аптадағы сапарлар: {trips}. Не істеу керегін көру үшін түртіңіз."
 }

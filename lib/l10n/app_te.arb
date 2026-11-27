@@ -4423,5 +4423,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Vorkalis సపోర్ట్‌కు ఇమెయిల్ చేయండి",
+  "assistantSupportMessage": "సందేశం",
+  "assistantSupportNote": "యాప్ వెర్షన్, ఫోన్, సిస్టమ్, భాష, ప్లాన్ జోడించబడతాయి. మీరు సైన్ ఇన్ చేసే ఇమెయిల్‌కే సపోర్ట్ సమాధానం ఇస్తుంది.",
+  "assistantSupportSent": "Vorkalis సపోర్ట్‌కు పంపబడింది. ఒక పని దినంలో {email} కు సమాధానం రావాలి.",
+  "assistantSupportLimit": "మీరు ఈ రోజు ఇప్పటికే చాలాసార్లు సపోర్ట్‌కు ఇమెయిల్ చేశారు. రేపు మళ్లీ ప్రయత్నించండి లేదా నేరుగా support@vorkalis.com కు రాయండి.",
+  "assistantSupportVerify": "సపోర్ట్ మీకు సమాధానం ఇవ్వగలిగేలా ముందుగా మీ ఇమెయిల్ చిరునామాను ధృవీకరించండి.",
+  "assistantSupportFailed": "ఇమెయిల్ పంపడం సాధ్యం కాలేదు. తర్వాత మళ్లీ ప్రయత్నించండి లేదా నేరుగా support@vorkalis.com కు రాయండి.",
+  "assistantInviteTitle": "మీ ఇంటికి ఆహ్వానించండి",
+  "assistantInviteNote": "Vaultara వారికి ఇమెయిల్ ద్వారా ఆహ్వాన లింక్ పంపుతుంది. అది ఒకసారి, 7 రోజుల పాటు పని చేస్తుంది.",
+  "assistantInviteSent": "ఆహ్వానం {email} కు పంపబడింది.",
+  "assistantInviteFailed": "ఆహ్వానం పంపడం సాధ్యం కాలేదు. మళ్లీ ప్రయత్నించండి లేదా దానికి బదులుగా మీ ఇంటి నుండి ఆహ్వానాన్ని షేర్ చేయండి.",
+  "assistantCalendarNote": "మీ క్యాలెండర్ యాప్ ఈవెంట్ మరియు 7 రోజుల ముందు రిమైండర్‌తో తెరుచుకుంటుంది.",
+  "assistantSendLinkTitle": "సురక్షిత లింక్ పంపండి",
+  "assistantSendLinkWorks": "లింక్ చెల్లుబాటు",
+  "assistantSendLinkHours": "{hours} గం",
+  "assistantSendLinkNote": "లింక్ మాత్రమే పంపబడుతుంది, వివరాలు ఎప్పుడూ కాదు. దాన్ని ఎలా పంపాలో మీరు ఎంచుకుంటారు, {sharedLinks} లో ముందుగానే ఆపవచ్చు.",
+  "monthAheadTitle": "రాబోయే నెల",
+  "monthAheadSubtitle": "ప్రతి నెల 1న {assistant} ఏమి పునరుద్ధరించాలి, దాని ఖర్చు మరియు మీ రాబోయే ప్రయాణాలను పంపుతుంది",
+  "monthAheadQuestion": "ఈ నెల నేను ఏమి చేయాలి?",
+  "assistantStepSupport": "మీ ఇమెయిల్ రాస్తోంది",
+  "assistantStepSecurity": "మీ ఖాతా భద్రతను తనిఖీ చేస్తోంది",
+  "talkFinishOnScreen": "ఇది మీ స్క్రీన్‌పై తెరిచి ఉంది. అక్కడ పూర్తి చేసి, మళ్లీ మాట్లాడటానికి నొక్కండి."
 }

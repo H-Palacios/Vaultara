@@ -3167,16 +3167,16 @@ class AppLocalizationsHu extends AppLocalizations {
   String get planGetPremium => 'Premium megszerzése';
 
   @override
-  String get businessPlanBuy => 'Üzleti csomag megszerzése';
-
-  @override
   String get individualPlanBuy => 'Egyéni csomag megszerzése';
 
   @override
-  String get businessPlanSwitch => 'Váltás az Üzleti csomagra';
+  String get individualPlanSwitch => 'Váltás az Egyéni csomagra';
 
   @override
-  String get individualPlanSwitch => 'Váltás az Egyéni csomagra';
+  String get businessPlanBuy => 'Üzleti csomag megszerzése';
+
+  @override
+  String get businessPlanSwitch => 'Váltás az Üzleti csomagra';
 
   @override
   String get planSwitchToYearly => 'Váltás éves fizetésre';
@@ -4915,8 +4915,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get assistantEmptyReply => 'Nem találtam választ. Próbálja meg másképp megfogalmazni a kérdést.';
 
   @override
-  String get assistantDraftReady =>
-      'Itt vannak a részletek. Mentéshez koppints a Megerősítés gombra.';
+  String get assistantDraftReady => 'Itt vannak a részletek. Mentéshez koppints a Megerősítés gombra.';
 
   @override
   String get assistantNewChat => 'Új csevegés';
@@ -6683,27 +6682,27 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Oltások hozzáadása: ${name}';
+    return 'Oltások hozzáadása: $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Mikrochip hozzáadása: ${name}';
+    return 'Mikrochip hozzáadása: $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Kisállat-biztosítás hozzáadása: ${name}';
+    return 'Kisállat-biztosítás hozzáadása: $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Útlevél hozzáadása: ${name}';
+    return 'Útlevél hozzáadása: $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Következő: ${step}. Mondd, hogy igen, és megcsinálom.';
+    return 'Következő: $step. Mondd, hogy igen, és megcsinálom.';
   }
 
   @override
@@ -8985,10 +8984,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get petTypeFieldHint => 'Add meg a kisállat fajtáját';
 
   @override
-  String get petBirthdayHint => 'Válaszd ki a születési dátumot';
+  String get petTypeRequired => 'Válaszd ki a kisállat fajtáját';
 
   @override
-  String get petTypeRequired => 'Válaszd ki a kisállat fajtáját';
+  String get petBirthdayHint => 'Válaszd ki a születési dátumot';
 
   @override
   String get petChipHint => 'Add meg a mikrochip számát';
@@ -10397,8 +10396,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get talkNoVoice => 'A telefonon nincs hang ehhez a nyelvhez, ezért a válaszok megjelennek, de nincsenek felolvasva.';
 
   @override
-  String get talkNotDone =>
-      'Ez nem sikerült. Nézd meg a részleteket a képernyőn.';
+  String get talkNotDone => 'Ez nem sikerült. Nézd meg a részleteket a képernyőn.';
 
   @override
   String get talkReady => 'Figyelek.';
@@ -10662,4 +10660,80 @@ class AppLocalizationsHu extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Elérted a „Kérdezze a Vaultarát” mai korlátját. Holnap $time-kor újraindul. A Vaultara minden más része a megszokott módon működik.';
   }
+
+  @override
+  String get assistantSupportTitle => 'E-mail a Vorkalis ügyfélszolgálatának';
+
+  @override
+  String get assistantSupportMessage => 'Üzenet';
+
+  @override
+  String get assistantSupportNote => 'Hozzáadjuk az alkalmazás verzióját, a telefont, a rendszert, a nyelvet és a csomagot. Az ügyfélszolgálat arra az e-mail-címre válaszol, amellyel bejelentkezik.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Elküldve a Vorkalis ügyfélszolgálatának. Egy munkanapon belül választ kap a(z) $email címre.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Ma már többször írt az ügyfélszolgálatnak. Próbálja újra holnap, vagy írjon közvetlenül a support@vorkalis.com címre.';
+
+  @override
+  String get assistantSupportVerify => 'Először erősítse meg e-mail-címét, hogy az ügyfélszolgálat válaszolhasson.';
+
+  @override
+  String get assistantSupportFailed => 'Az e-mailt nem sikerült elküldeni. Próbálja később, vagy írjon közvetlenül a support@vorkalis.com címre.';
+
+  @override
+  String get assistantInviteTitle => 'Meghívás a háztartásába';
+
+  @override
+  String get assistantInviteNote => 'A Vaultara e-mailben meghívólinket küld nekik. Egyszer működik, 7 napig.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Meghívó elküldve ide: $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'A meghívót nem sikerült elküldeni. Próbálja újra, vagy inkább ossza meg a meghívót a háztartásából.';
+
+  @override
+  String get assistantCalendarNote => 'Megnyílik a naptáralkalmazás az eseménnyel és egy 7 nappal korábbi emlékeztetővel.';
+
+  @override
+  String get assistantSendLinkTitle => 'Biztonságos link küldése';
+
+  @override
+  String get assistantSendLinkWorks => 'A link érvényes';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours óra';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Csak egy link megy el, maguk az adatok soha. Ön dönti el, hogyan küldi, és korábban le is állíthatja itt: $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Az előttünk álló hónap';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Minden hónap 1-jén a(z) $assistant elküldi, mit kell megújítani, mennyibe kerül, és a közelgő utazásait';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Mit kell tennem ebben a hónapban?';
+
+  @override
+  String get assistantStepSupport => 'Írom az e-mailjét';
+
+  @override
+  String get assistantStepSecurity => 'Ellenőrzöm a fiókja biztonságát';
+
+  @override
+  String get talkFinishOnScreen => 'Megnyílt a képernyőn. Fejezze be ott, majd koppintson, hogy újra beszéljen.';
 }

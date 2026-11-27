@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Dokument zaměstnance vypršel",
   "staffOverdueYesterday": "{name} pro {person} vypršel včera a nebyl obnoven.",
   "staffOverdueWeek": "{name} pro {person} vypršel před týdnem a stále nebyl obnoven.",
-  "staffOverdueMany": "Vypršelo {count} dokumentů zaměstnanců a nebyly obnoveny: {names}."
+  "staffOverdueMany": "Vypršelo {count} dokumentů zaměstnanců a nebyly obnoveny: {names}.",
+  "monthAheadTitle": "Váš nadcházející měsíc",
+  "monthAheadBodyCount": "K obnovení tento měsíc: {count}. Klepněte a podívejte se, co udělat.",
+  "monthAheadBodyCost": "K obnovení tento měsíc: {count}, asi {cost}. Klepněte a podívejte se, co udělat.",
+  "monthAheadBodyCountTrips": "K obnovení tento měsíc: {count}. Cesty v příštích 6 týdnech: {trips}. Klepněte a podívejte se, co udělat.",
+  "monthAheadBodyCostTrips": "K obnovení tento měsíc: {count}, asi {cost}. Cesty v příštích 6 týdnech: {trips}. Klepněte a podívejte se, co udělat.",
+  "monthAheadBodyTrips": "Tento měsíc není co obnovovat. Cesty v příštích 6 týdnech: {trips}. Klepněte a podívejte se, co udělat."
 }

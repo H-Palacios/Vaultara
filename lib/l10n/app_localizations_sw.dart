@@ -3167,16 +3167,16 @@ class AppLocalizationsSw extends AppLocalizations {
   String get planGetPremium => 'Pata Premium';
 
   @override
-  String get businessPlanBuy => 'Pata Biashara';
-
-  @override
   String get individualPlanBuy => 'Pata Binafsi';
 
   @override
-  String get businessPlanSwitch => 'Hamia Biashara';
+  String get individualPlanSwitch => 'Hamia Binafsi';
 
   @override
-  String get individualPlanSwitch => 'Hamia Binafsi';
+  String get businessPlanBuy => 'Pata Biashara';
+
+  @override
+  String get businessPlanSwitch => 'Hamia Biashara';
 
   @override
   String get planSwitchToYearly => 'Hamia ya kila mwaka';
@@ -4915,8 +4915,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get assistantEmptyReply => 'Sikupata jibu. Jaribu kuuliza kwa njia nyingine.';
 
   @override
-  String get assistantDraftReady =>
-      'Haya ndiyo maelezo. Gusa Thibitisha ili kuyahifadhi.';
+  String get assistantDraftReady => 'Haya ndiyo maelezo. Gusa Thibitisha ili kuyahifadhi.';
 
   @override
   String get assistantNewChat => 'Mazungumzo mapya';
@@ -6683,27 +6682,27 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Ongeza chanjo za ${name}';
+    return 'Ongeza chanjo za $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Ongeza microchip ya ${name}';
+    return 'Ongeza microchip ya $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Ongeza bima ya mnyama ya ${name}';
+    return 'Ongeza bima ya mnyama ya $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Ongeza pasipoti ya ${name}';
+    return 'Ongeza pasipoti ya $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Kinachofuata: ${step}. Sema ndiyo ili nifanye.';
+    return 'Kinachofuata: $step. Sema ndiyo ili nifanye.';
   }
 
   @override
@@ -8985,10 +8984,10 @@ class AppLocalizationsSw extends AppLocalizations {
   String get petTypeFieldHint => 'Weka aina ya mnyama';
 
   @override
-  String get petBirthdayHint => 'Chagua tarehe ya kuzaliwa';
+  String get petTypeRequired => 'Chagua aina ya mnyama';
 
   @override
-  String get petTypeRequired => 'Chagua aina ya mnyama';
+  String get petBirthdayHint => 'Chagua tarehe ya kuzaliwa';
 
   @override
   String get petChipHint => 'Weka nambari ya microchip';
@@ -10397,8 +10396,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String get talkNoVoice => 'Simu yako haina sauti ya lugha hii, kwa hivyo majibu yanaonyeshwa lakini hayasomwi.';
 
   @override
-  String get talkNotDone =>
-      'Hilo halikufanikiwa. Angalia maelezo kwenye skrini.';
+  String get talkNotDone => 'Hilo halikufanikiwa. Angalia maelezo kwenye skrini.';
 
   @override
   String get talkReady => 'Ninasikiliza.';
@@ -10662,4 +10660,80 @@ class AppLocalizationsSw extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Umefikia kikomo cha leo cha \"Uliza Vaultara\". Kitaanza upya kesho saa $time. Kila kitu kingine katika Vaultara kinafanya kazi kama kawaida.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Tuma barua pepe kwa usaidizi wa Vorkalis';
+
+  @override
+  String get assistantSupportMessage => 'Ujumbe';
+
+  @override
+  String get assistantSupportNote => 'Toleo la programu, simu, mfumo, lugha na mpango huongezwa. Usaidizi hujibu kwa barua pepe unayoingia nayo.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Imetumwa kwa usaidizi wa Vorkalis. Unapaswa kupata jibu kwenye $email ndani ya siku moja ya kazi.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Umeshatuma barua pepe kwa usaidizi mara kadhaa leo. Jaribu tena kesho, au andika moja kwa moja kwa support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Thibitisha anwani yako ya barua pepe kwanza ili usaidizi uweze kukujibu.';
+
+  @override
+  String get assistantSupportFailed => 'Barua pepe haikuweza kutumwa. Jaribu tena baadaye, au andika moja kwa moja kwa support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Alika kwenye kaya yako';
+
+  @override
+  String get assistantInviteNote => 'Vaultara huwatumia kiungo cha mwaliko kwa barua pepe. Kinafanya kazi mara moja, kwa siku 7.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Mwaliko umetumwa kwa $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Mwaliko haukuweza kutumwa. Jaribu tena, au shiriki mwaliko kutoka kwa kaya yako badala yake.';
+
+  @override
+  String get assistantCalendarNote => 'Programu yako ya kalenda itafunguka na tukio pamoja na kikumbusho siku 7 kabla.';
+
+  @override
+  String get assistantSendLinkTitle => 'Tuma kiungo salama';
+
+  @override
+  String get assistantSendLinkWorks => 'Kiungo kinafanya kazi kwa';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return 'Saa $hours';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Kiungo pekee ndicho hutumwa, kamwe si maelezo yenyewe. Unachagua jinsi ya kukituma, na unaweza kukisimamisha mapema katika $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Mwezi ujao';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Tarehe 1 kila mwezi, $assistant hutuma vitu vya kusasisha, gharama yake na safari zako zijazo';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Nifanye nini mwezi huu?';
+
+  @override
+  String get assistantStepSupport => 'Inaandika barua pepe yako';
+
+  @override
+  String get assistantStepSecurity => 'Inaangalia usalama wa akaunti yako';
+
+  @override
+  String get talkFinishOnScreen => 'Imefunguka kwenye skrini yako. Maliza hapo, kisha gusa ili uzungumze tena.';
 }

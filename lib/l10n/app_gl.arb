@@ -4418,5 +4418,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Escribir ao soporte de Vorkalis",
+  "assistantSupportMessage": "Mensaxe",
+  "assistantSupportNote": "Engádense a versión da app, o teléfono, o sistema, o idioma e o plan. O soporte responde ao correo co que inicias sesión.",
+  "assistantSupportSent": "Enviado ao soporte de Vorkalis. Deberías recibir resposta en {email} nun día hábil.",
+  "assistantSupportLimit": "Hoxe xa escribiches ao soporte varias veces. Téntao mañá ou escribe directamente a support@vorkalis.com.",
+  "assistantSupportVerify": "Primeiro confirma o teu enderezo de correo para que o soporte poida responderche.",
+  "assistantSupportFailed": "Non se puido enviar o correo. Téntao máis tarde ou escribe directamente a support@vorkalis.com.",
+  "assistantInviteTitle": "Convidar ao teu fogar",
+  "assistantInviteNote": "Vaultara envíalle por correo unha ligazón de convite. Funciona unha vez, durante 7 días.",
+  "assistantInviteSent": "Convite enviado a {email}.",
+  "assistantInviteFailed": "Non se puido enviar o convite. Téntao de novo ou comparte un convite desde o teu fogar.",
+  "assistantCalendarNote": "A túa app de calendario ábrese co evento e unha alarma 7 días antes.",
+  "assistantSendLinkTitle": "Enviar unha ligazón segura",
+  "assistantSendLinkWorks": "A ligazón funciona",
+  "assistantSendLinkHours": "{hours} h",
+  "assistantSendLinkNote": "Só se envía unha ligazón, nunca os datos en si. Ti escolles como enviala e podes detela antes en {sharedLinks}.",
+  "monthAheadTitle": "O mes que vén",
+  "monthAheadSubtitle": "O día 1, {assistant} envíache o que hai que renovar, canto custa e as túas próximas viaxes",
+  "monthAheadQuestion": "Que teño que facer este mes?",
+  "assistantStepSupport": "Escribindo o teu correo",
+  "assistantStepSecurity": "Comprobando a seguridade da túa conta",
+  "talkFinishOnScreen": "Está aberto na pantalla. Remata alí e despois toca para volver falar."
 }

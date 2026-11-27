@@ -4413,5 +4413,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Email στην υποστήριξη Vorkalis",
+  "assistantSupportMessage": "Μήνυμα",
+  "assistantSupportNote": "Προστίθενται η έκδοση της εφαρμογής, το τηλέφωνο, το σύστημα, η γλώσσα και το πρόγραμμα. Η υποστήριξη απαντά στο email με το οποίο συνδέεστε.",
+  "assistantSupportSent": "Στάλθηκε στην υποστήριξη Vorkalis. Θα λάβετε απάντηση στο {email} μέσα σε μία εργάσιμη ημέρα.",
+  "assistantSupportLimit": "Έχετε ήδη γράψει αρκετές φορές σήμερα στην υποστήριξη. Δοκιμάστε αύριο ή γράψτε απευθείας στο support@vorkalis.com.",
+  "assistantSupportVerify": "Επιβεβαιώστε πρώτα τη διεύθυνση email σας, ώστε να μπορεί να σας απαντήσει η υποστήριξη.",
+  "assistantSupportFailed": "Το email δεν στάλθηκε. Δοκιμάστε αργότερα ή γράψτε απευθείας στο support@vorkalis.com.",
+  "assistantInviteTitle": "Πρόσκληση στο νοικοκυριό σας",
+  "assistantInviteNote": "Το Vaultara τους στέλνει με email έναν σύνδεσμο πρόσκλησης. Λειτουργεί μία φορά, για 7 ημέρες.",
+  "assistantInviteSent": "Η πρόσκληση στάλθηκε στο {email}.",
+  "assistantInviteFailed": "Η πρόσκληση δεν στάλθηκε. Δοκιμάστε ξανά ή μοιραστείτε καλύτερα μια πρόσκληση από το νοικοκυριό σας.",
+  "assistantCalendarNote": "Η εφαρμογή ημερολογίου ανοίγει με το συμβάν και μια υπενθύμιση 7 ημέρες πριν.",
+  "assistantSendLinkTitle": "Αποστολή ασφαλούς συνδέσμου",
+  "assistantSendLinkWorks": "Ο σύνδεσμος ισχύει για",
+  "assistantSendLinkHours": "{hours} ώρ.",
+  "assistantSendLinkNote": "Στέλνεται μόνο ένας σύνδεσμος, ποτέ τα ίδια τα στοιχεία. Εσείς επιλέγετε πώς θα σταλεί και μπορείτε να τον σταματήσετε νωρίτερα στο «{sharedLinks}».",
+  "monthAheadTitle": "Ο μήνας που έρχεται",
+  "monthAheadSubtitle": "Την 1η του μήνα, το {assistant} σας στέλνει τι πρέπει να ανανεώσετε, πόσο κοστίζει και τα επόμενα ταξίδια σας",
+  "monthAheadQuestion": "Τι πρέπει να κάνω αυτόν τον μήνα;",
+  "assistantStepSupport": "Γράφω το email σας",
+  "assistantStepSecurity": "Ελέγχω την ασφάλεια του λογαριασμού σας",
+  "talkFinishOnScreen": "Άνοιξε στην οθόνη σας. Ολοκληρώστε εκεί και μετά πατήστε για να μιλήσετε ξανά."
 }

@@ -4420,5 +4420,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Գրել Vorkalis-ի աջակցությանը",
+  "assistantSupportMessage": "Հաղորդագրություն",
+  "assistantSupportNote": "Ավելացվում են հավելվածի տարբերակը, հեռախոսը, համակարգը, լեզուն և պլանը։ Աջակցությունը պատասխանում է այն էլ. փոստին, որով մուտք եք գործում։",
+  "assistantSupportSent": "Ուղարկվեց Vorkalis-ի աջակցությանը։ Պատասխանը {email} հասցեին պետք է ստանաք մեկ աշխատանքային օրվա ընթացքում։",
+  "assistantSupportLimit": "Այսօր արդեն մի քանի անգամ գրել եք աջակցությանը։ Փորձեք վաղը կամ գրեք ուղղակի support@vorkalis.com հասցեին։",
+  "assistantSupportVerify": "Նախ հաստատեք ձեր էլ. փոստի հասցեն, որպեսզի աջակցությունը կարողանա պատասխանել։",
+  "assistantSupportFailed": "Նամակը չհաջողվեց ուղարկել։ Փորձեք ավելի ուշ կամ գրեք ուղղակի support@vorkalis.com հասցեին։",
+  "assistantInviteTitle": "Հրավիրել ձեր տնային տնտեսություն",
+  "assistantInviteNote": "Vaultara-ն նրանց էլ. փոստով հրավերի հղում է ուղարկում։ Այն գործում է մեկ անգամ՝ 7 օր։",
+  "assistantInviteSent": "Հրավերն ուղարկվեց {email} հասցեին։",
+  "assistantInviteFailed": "Հրավերը չհաջողվեց ուղարկել։ Կրկին փորձեք կամ հրավերը կիսվեք ձեր տնային տնտեսությունից։",
+  "assistantCalendarNote": "Կբացվի ձեր օրացույցի հավելվածը՝ իրադարձությամբ և 7 օր առաջ հիշեցմամբ։",
+  "assistantSendLinkTitle": "Ուղարկել անվտանգ հղում",
+  "assistantSendLinkWorks": "Հղումը գործում է",
+  "assistantSendLinkHours": "{hours} ժ",
+  "assistantSendLinkNote": "Ուղարկվում է միայն հղում, երբեք՝ տվյալներն իրենք։ Դուք եք ընտրում, թե ինչպես ուղարկել, և կարող եք այն ավելի շուտ դադարեցնել «{sharedLinks}» բաժնում։",
+  "monthAheadTitle": "Առաջիկա ամիսը",
+  "monthAheadSubtitle": "Ամսի 1-ին {assistant}-ն ուղարկում է, թե ինչ պետք է թարմացնել, որքան կարժենա և ձեր առաջիկա ուղևորությունները",
+  "monthAheadQuestion": "Ի՞նչ պետք է անեմ այս ամիս",
+  "assistantStepSupport": "Գրում եմ ձեր նամակը",
+  "assistantStepSecurity": "Ստուգում եմ ձեր հաշվի անվտանգությունը",
+  "talkFinishOnScreen": "Այն բացված է ձեր էկրանին։ Ավարտեք այնտեղ, ապա հպեք՝ նորից խոսելու համար։"
 }

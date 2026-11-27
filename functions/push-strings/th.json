@@ -26,5 +26,11 @@
   "staffOverdueTitle": "เอกสารพนักงานหมดอายุ",
   "staffOverdueYesterday": "{name} ของ {person} หมดอายุเมื่อวานและยังไม่ได้ต่ออายุ",
   "staffOverdueWeek": "{name} ของ {person} หมดอายุเมื่อสัปดาห์ก่อนและยังไม่ได้ต่ออายุ",
-  "staffOverdueMany": "เอกสารพนักงาน {count} รายการหมดอายุและยังไม่ได้ต่ออายุ: {names}"
+  "staffOverdueMany": "เอกสารพนักงาน {count} รายการหมดอายุและยังไม่ได้ต่ออายุ: {names}",
+  "monthAheadTitle": "เดือนข้างหน้าของคุณ",
+  "monthAheadBodyCount": "ต้องต่ออายุเดือนนี้: {count} แตะเพื่อดูว่าต้องทำอะไร",
+  "monthAheadBodyCost": "ต้องต่ออายุเดือนนี้: {count} ประมาณ {cost} แตะเพื่อดูว่าต้องทำอะไร",
+  "monthAheadBodyCountTrips": "ต้องต่ออายุเดือนนี้: {count} ทริปใน 6 สัปดาห์ข้างหน้า: {trips} แตะเพื่อดูว่าต้องทำอะไร",
+  "monthAheadBodyCostTrips": "ต้องต่ออายุเดือนนี้: {count} ประมาณ {cost} ทริปใน 6 สัปดาห์ข้างหน้า: {trips} แตะเพื่อดูว่าต้องทำอะไร",
+  "monthAheadBodyTrips": "เดือนนี้ไม่มีอะไรต้องต่ออายุ ทริปใน 6 สัปดาห์ข้างหน้า: {trips} แตะเพื่อดูว่าต้องทำอะไร"
 }

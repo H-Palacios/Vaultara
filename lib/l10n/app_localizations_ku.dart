@@ -3167,16 +3167,16 @@ class AppLocalizationsKu extends AppLocalizations {
   String get planGetPremium => 'Premium bistîne';
 
   @override
-  String get businessPlanBuy => 'Karsazî bistîne';
-
-  @override
   String get individualPlanBuy => 'Kesane bistîne';
 
   @override
-  String get businessPlanSwitch => 'Biçe Karsazî';
+  String get individualPlanSwitch => 'Derbasî Kesane bibe';
 
   @override
-  String get individualPlanSwitch => 'Derbasî Kesane bibe';
+  String get businessPlanBuy => 'Karsazî bistîne';
+
+  @override
+  String get businessPlanSwitch => 'Biçe Karsazî';
 
   @override
   String get planSwitchToYearly => 'Biçe salane';
@@ -4915,8 +4915,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get assistantEmptyReply => 'Min bersiv nedît. Bi awayekî din bipirse.';
 
   @override
-  String get assistantDraftReady =>
-      'Ev hûrgulî ne. Ji bo tomarkirinê li Piştrast bike bitikîne.';
+  String get assistantDraftReady => 'Ev hûrgulî ne. Ji bo tomarkirinê li Piştrast bike bitikîne.';
 
   @override
   String get assistantNewChat => 'Sohbeta nû';
@@ -6683,27 +6682,27 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Derziyan ji bo ${name} zêde bike';
+    return 'Derziyan ji bo $name zêde bike';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Mîkroçîpê ji bo ${name} zêde bike';
+    return 'Mîkroçîpê ji bo $name zêde bike';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Sîgorteya heywanê ji bo ${name} zêde bike';
+    return 'Sîgorteya heywanê ji bo $name zêde bike';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Pasaportekê ji bo ${name} zêde bike';
+    return 'Pasaportekê ji bo $name zêde bike';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Paşê: ${step}. Ji bo kirinê bêje erê.';
+    return 'Paşê: $step. Ji bo kirinê bêje erê.';
   }
 
   @override
@@ -8985,10 +8984,10 @@ class AppLocalizationsKu extends AppLocalizations {
   String get petTypeFieldHint => 'Cureyê heywanê binivîse';
 
   @override
-  String get petBirthdayHint => 'Dîroka jidayikbûnê hilbijêre';
+  String get petTypeRequired => 'Cureyê heywanê hilbijêre';
 
   @override
-  String get petTypeRequired => 'Cureyê heywanê hilbijêre';
+  String get petBirthdayHint => 'Dîroka jidayikbûnê hilbijêre';
 
   @override
   String get petChipHint => 'Hejmara mîkroçîpê binivîse';
@@ -10397,8 +10396,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String get talkNoVoice => 'Telefona te ji bo vê zimanî deng tune, ji ber vê bersiv têne nîşandan lê nayên xwendin.';
 
   @override
-  String get talkNotDone =>
-      'Ev pêk nehat. Hûrguliyên li ser ekranê kontrol bike.';
+  String get talkNotDone => 'Ev pêk nehat. Hûrguliyên li ser ekranê kontrol bike.';
 
   @override
   String get talkReady => 'Ez guhdarî dikim.';
@@ -10662,4 +10660,80 @@ class AppLocalizationsKu extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Te gihîşt sînorê îro yê \"Ji Vaultara bipirse\". Ew sibê di $time de nû dibe. Her tiştê din di Vaultara de wekî her car dixebite.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Ji piştgiriya Vorkalis re e-name binivîse';
+
+  @override
+  String get assistantSupportMessage => 'Peyam';
+
+  @override
+  String get assistantSupportNote => 'Guhertoya sepanê, telefon, pergal, ziman û plan têne zêdekirin. Piştgirî bersivê dide wê e-nameyê ku tu pê têdikevî.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Ji piştgiriya Vorkalis re hat şandin. Divê di nav rojeke kar de bersiv bigihîje $email.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Te îro çend caran ji piştgiriyê re nivîsand. Sibê dîsa biceribîne an rasterast ji support@vorkalis.com re binivîse.';
+
+  @override
+  String get assistantSupportVerify => 'Pêşî navnîşana e-nameya xwe piştrast bike, da ku piştgirî bikaribe bersiva te bide.';
+
+  @override
+  String get assistantSupportFailed => 'E-name nehat şandin. Paşê dîsa biceribîne an rasterast ji support@vorkalis.com re binivîse.';
+
+  @override
+  String get assistantInviteTitle => 'Vexwîne malbata xwe';
+
+  @override
+  String get assistantInviteNote => 'Vaultara bi e-nameyê girêdaneke vexwendinê ji wan re dişîne. Carekê, 7 rojan dixebite.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Vexwendin ji $email re hat şandin.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Vexwendin nehat şandin. Dîsa biceribîne an li şûnê vexwendinekê ji malbata xwe parve bike.';
+
+  @override
+  String get assistantCalendarNote => 'Sepana salnameyê bi bûyerê û bîranîneke 7 roj berê vedibe.';
+
+  @override
+  String get assistantSendLinkTitle => 'Girêdaneke ewle bişîne';
+
+  @override
+  String get assistantSendLinkWorks => 'Girêdan dixebite ji bo';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours st';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Tenê girêdanek tê şandin, qet ne hûrgilî bi xwe. Tu hildibijêrî ka çawa bişînî, û dikarî zûtir di $sharedLinks de rawestînî.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Meha pêş';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Di 1ê her mehê de $assistant dişîne ka çi divê were nûkirin, çiqas lê tê û rêwîtiyên te yên pêş';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Divê ez vê mehê çi bikim?';
+
+  @override
+  String get assistantStepSupport => 'E-nameya te tê nivîsandin';
+
+  @override
+  String get assistantStepSecurity => 'Ewlehiya hesabê te tê kontrolkirin';
+
+  @override
+  String get talkFinishOnScreen => 'Li ser ekrana te vekirî ye. Li wir biqedîne, paşê bitepîne da ku dîsa biaxivî.';
 }

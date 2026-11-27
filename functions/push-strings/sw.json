@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Hati ya mfanyakazi imeisha",
   "staffOverdueYesterday": "{name} ya {person} iliisha jana na haijasasishwa.",
   "staffOverdueWeek": "{name} ya {person} iliisha wiki moja iliyopita na bado haijasasishwa.",
-  "staffOverdueMany": "Hati {count} za wafanyakazi zimeisha na hazijasasishwa: {names}."
+  "staffOverdueMany": "Hati {count} za wafanyakazi zimeisha na hazijasasishwa: {names}.",
+  "monthAheadTitle": "Mwezi wako ujao",
+  "monthAheadBodyCount": "Vya kusasisha mwezi huu: {count}. Gusa ili uone cha kufanya.",
+  "monthAheadBodyCost": "Vya kusasisha mwezi huu: {count}, takriban {cost}. Gusa ili uone cha kufanya.",
+  "monthAheadBodyCountTrips": "Vya kusasisha mwezi huu: {count}. Safari katika wiki 6 zijazo: {trips}. Gusa ili uone cha kufanya.",
+  "monthAheadBodyCostTrips": "Vya kusasisha mwezi huu: {count}, takriban {cost}. Safari katika wiki 6 zijazo: {trips}. Gusa ili uone cha kufanya.",
+  "monthAheadBodyTrips": "Hakuna cha kusasisha mwezi huu. Safari katika wiki 6 zijazo: {trips}. Gusa ili uone cha kufanya."
 }

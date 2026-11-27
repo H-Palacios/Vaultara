@@ -3167,16 +3167,16 @@ class AppLocalizationsUr extends AppLocalizations {
   String get planGetPremium => 'Premium لیں';
 
   @override
-  String get businessPlanBuy => 'کاروبار پلان لیں';
-
-  @override
   String get individualPlanBuy => 'انفرادی پلان لیں';
 
   @override
-  String get businessPlanSwitch => 'کاروبار پلان پر سوئچ کریں';
+  String get individualPlanSwitch => 'انفرادی پلان پر سوئچ کریں';
 
   @override
-  String get individualPlanSwitch => 'انفرادی پلان پر سوئچ کریں';
+  String get businessPlanBuy => 'کاروبار پلان لیں';
+
+  @override
+  String get businessPlanSwitch => 'کاروبار پلان پر سوئچ کریں';
 
   @override
   String get planSwitchToYearly => 'سالانہ پر سوئچ کریں';
@@ -4915,8 +4915,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get assistantEmptyReply => 'کوئی جواب نہیں ملا۔ کسی اور طریقے سے پوچھ کر دیکھیں۔';
 
   @override
-  String get assistantDraftReady =>
-      'یہ رہی تفصیلات۔ محفوظ کرنے کے لیے تصدیق کریں پر ٹیپ کریں۔';
+  String get assistantDraftReady => 'یہ رہی تفصیلات۔ محفوظ کرنے کے لیے تصدیق کریں پر ٹیپ کریں۔';
 
   @override
   String get assistantNewChat => 'نئی گفتگو';
@@ -6683,27 +6682,27 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return '${name} کے لیے ویکسین شامل کریں';
+    return '$name کے لیے ویکسین شامل کریں';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return '${name} کے لیے مائیکروچپ شامل کریں';
+    return '$name کے لیے مائیکروچپ شامل کریں';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return '${name} کے لیے پالتو جانور کا بیمہ شامل کریں';
+    return '$name کے لیے پالتو جانور کا بیمہ شامل کریں';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return '${name} کے لیے پاسپورٹ شامل کریں';
+    return '$name کے لیے پاسپورٹ شامل کریں';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'اگلا: ${step}۔ کرنے کے لیے ہاں کہیں۔';
+    return 'اگلا: $step۔ کرنے کے لیے ہاں کہیں۔';
   }
 
   @override
@@ -8985,10 +8984,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get petTypeFieldHint => 'پالتو جانور کی قسم درج کریں';
 
   @override
-  String get petBirthdayHint => 'تاریخ پیدائش منتخب کریں';
+  String get petTypeRequired => 'پالتو جانور کی قسم منتخب کریں';
 
   @override
-  String get petTypeRequired => 'پالتو جانور کی قسم منتخب کریں';
+  String get petBirthdayHint => 'تاریخ پیدائش منتخب کریں';
 
   @override
   String get petChipHint => 'مائیکروچپ نمبر درج کریں';
@@ -10661,4 +10660,80 @@ class AppLocalizationsUr extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'آپ آج کی \"Vaultara سے پوچھیں\" حد تک پہنچ گئے ہیں۔ یہ کل $time پر دوبارہ شروع ہوگی۔ Vaultara میں باقی سب کچھ معمول کے مطابق چلتا ہے۔';
   }
+
+  @override
+  String get assistantSupportTitle => 'Vorkalis سپورٹ کو ای میل کریں';
+
+  @override
+  String get assistantSupportMessage => 'پیغام';
+
+  @override
+  String get assistantSupportNote => 'ایپ ورژن، فون، سسٹم، زبان اور پلان شامل کیے جاتے ہیں۔ سپورٹ اسی ای میل پر جواب دیتی ہے جس سے آپ سائن ان کرتے ہیں۔';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Vorkalis سپورٹ کو بھیج دیا گیا۔ آپ کو ایک کاروباری دن میں $email پر جواب ملنا چاہیے۔';
+  }
+
+  @override
+  String get assistantSupportLimit => 'آپ آج پہلے ہی کئی بار سپورٹ کو ای میل کر چکے ہیں۔ کل دوبارہ کوشش کریں یا براہ راست support@vorkalis.com پر لکھیں۔';
+
+  @override
+  String get assistantSupportVerify => 'پہلے اپنا ای میل ایڈریس تصدیق کریں تاکہ سپورٹ آپ کو جواب دے سکے۔';
+
+  @override
+  String get assistantSupportFailed => 'ای میل نہیں بھیجی جا سکی۔ بعد میں دوبارہ کوشش کریں یا براہ راست support@vorkalis.com پر لکھیں۔';
+
+  @override
+  String get assistantInviteTitle => 'اپنے گھرانے میں مدعو کریں';
+
+  @override
+  String get assistantInviteNote => 'Vaultara انہیں ای میل پر دعوتی لنک بھیجتا ہے۔ یہ ایک بار، 7 دن کے لیے کام کرتا ہے۔';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'دعوت $email پر بھیج دی گئی۔';
+  }
+
+  @override
+  String get assistantInviteFailed => 'دعوت نہیں بھیجی جا سکی۔ دوبارہ کوشش کریں یا اس کے بجائے اپنے گھرانے سے دعوت شیئر کریں۔';
+
+  @override
+  String get assistantCalendarNote => 'آپ کی کیلنڈر ایپ ایونٹ اور 7 دن پہلے کی یاددہانی کے ساتھ کھلتی ہے۔';
+
+  @override
+  String get assistantSendLinkTitle => 'محفوظ لنک بھیجیں';
+
+  @override
+  String get assistantSendLinkWorks => 'لنک کی مدت';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours گھنٹے';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'صرف لنک بھیجا جاتا ہے، تفصیلات کبھی نہیں۔ آپ چنتے ہیں کہ اسے کیسے بھیجیں، اور $sharedLinks میں اسے جلد روک سکتے ہیں۔';
+  }
+
+  @override
+  String get monthAheadTitle => 'آنے والا مہینہ';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'ہر مہینے کی 1 تاریخ کو $assistant بھیجتا ہے کہ کیا تجدید کرنا ہے، اس کی لاگت کتنی ہے اور آپ کے آنے والے سفر';
+  }
+
+  @override
+  String get monthAheadQuestion => 'اس مہینے مجھے کیا کرنا ہے؟';
+
+  @override
+  String get assistantStepSupport => 'آپ کی ای میل لکھی جا رہی ہے';
+
+  @override
+  String get assistantStepSecurity => 'آپ کے اکاؤنٹ کی سیکیورٹی چیک کی جا رہی ہے';
+
+  @override
+  String get talkFinishOnScreen => 'یہ آپ کی اسکرین پر کھلا ہے۔ وہیں مکمل کریں، پھر دوبارہ بات کرنے کے لیے تھپتھپائیں۔';
 }

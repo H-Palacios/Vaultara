@@ -4406,5 +4406,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Tuma barua pepe kwa usaidizi wa Vorkalis",
+  "assistantSupportMessage": "Ujumbe",
+  "assistantSupportNote": "Toleo la programu, simu, mfumo, lugha na mpango huongezwa. Usaidizi hujibu kwa barua pepe unayoingia nayo.",
+  "assistantSupportSent": "Imetumwa kwa usaidizi wa Vorkalis. Unapaswa kupata jibu kwenye {email} ndani ya siku moja ya kazi.",
+  "assistantSupportLimit": "Umeshatuma barua pepe kwa usaidizi mara kadhaa leo. Jaribu tena kesho, au andika moja kwa moja kwa support@vorkalis.com.",
+  "assistantSupportVerify": "Thibitisha anwani yako ya barua pepe kwanza ili usaidizi uweze kukujibu.",
+  "assistantSupportFailed": "Barua pepe haikuweza kutumwa. Jaribu tena baadaye, au andika moja kwa moja kwa support@vorkalis.com.",
+  "assistantInviteTitle": "Alika kwenye kaya yako",
+  "assistantInviteNote": "Vaultara huwatumia kiungo cha mwaliko kwa barua pepe. Kinafanya kazi mara moja, kwa siku 7.",
+  "assistantInviteSent": "Mwaliko umetumwa kwa {email}.",
+  "assistantInviteFailed": "Mwaliko haukuweza kutumwa. Jaribu tena, au shiriki mwaliko kutoka kwa kaya yako badala yake.",
+  "assistantCalendarNote": "Programu yako ya kalenda itafunguka na tukio pamoja na kikumbusho siku 7 kabla.",
+  "assistantSendLinkTitle": "Tuma kiungo salama",
+  "assistantSendLinkWorks": "Kiungo kinafanya kazi kwa",
+  "assistantSendLinkHours": "Saa {hours}",
+  "assistantSendLinkNote": "Kiungo pekee ndicho hutumwa, kamwe si maelezo yenyewe. Unachagua jinsi ya kukituma, na unaweza kukisimamisha mapema katika {sharedLinks}.",
+  "monthAheadTitle": "Mwezi ujao",
+  "monthAheadSubtitle": "Tarehe 1 kila mwezi, {assistant} hutuma vitu vya kusasisha, gharama yake na safari zako zijazo",
+  "monthAheadQuestion": "Nifanye nini mwezi huu?",
+  "assistantStepSupport": "Inaandika barua pepe yako",
+  "assistantStepSecurity": "Inaangalia usalama wa akaunti yako",
+  "talkFinishOnScreen": "Imefunguka kwenye skrini yako. Maliza hapo, kisha gusa ili uzungumze tena."
 }

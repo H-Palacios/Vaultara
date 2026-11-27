@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Skjal starfsmanns rann út",
   "staffOverdueYesterday": "{name} fyrir {person} rann út í gær og hefur ekki verið endurnýjað.",
   "staffOverdueWeek": "{name} fyrir {person} rann út fyrir viku og hefur enn ekki verið endurnýjað.",
-  "staffOverdueMany": "{count} skjöl starfsfólks hafa runnið út og ekki verið endurnýjuð: {names}."
+  "staffOverdueMany": "{count} skjöl starfsfólks hafa runnið út og ekki verið endurnýjuð: {names}.",
+  "monthAheadTitle": "Mánuðurinn þinn fram undan",
+  "monthAheadBodyCount": "Til að endurnýja í þessum mánuði: {count}. Ýttu til að sjá hvað þarf að gera.",
+  "monthAheadBodyCost": "Til að endurnýja í þessum mánuði: {count}, um {cost}. Ýttu til að sjá hvað þarf að gera.",
+  "monthAheadBodyCountTrips": "Til að endurnýja í þessum mánuði: {count}. Ferðir næstu 6 vikurnar: {trips}. Ýttu til að sjá hvað þarf að gera.",
+  "monthAheadBodyCostTrips": "Til að endurnýja í þessum mánuði: {count}, um {cost}. Ferðir næstu 6 vikurnar: {trips}. Ýttu til að sjá hvað þarf að gera.",
+  "monthAheadBodyTrips": "Ekkert að endurnýja í þessum mánuði. Ferðir næstu 6 vikurnar: {trips}. Ýttu til að sjá hvað þarf að gera."
 }

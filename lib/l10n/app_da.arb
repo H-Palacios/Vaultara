@@ -4437,5 +4437,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Skriv til Vorkalis-support",
+  "assistantSupportMessage": "Besked",
+  "assistantSupportNote": "Appversion, telefon, system, sprog og abonnement tilføjes. Supporten svarer til den e-mail, du logger ind med.",
+  "assistantSupportSent": "Sendt til Vorkalis-support. Du bør få svar på {email} inden for én hverdag.",
+  "assistantSupportLimit": "Du har allerede skrevet til supporten flere gange i dag. Prøv igen i morgen, eller skriv selv til support@vorkalis.com.",
+  "assistantSupportVerify": "Bekræft først din e-mailadresse, så supporten kan svare dig.",
+  "assistantSupportFailed": "E-mailen kunne ikke sendes. Prøv igen senere, eller skriv selv til support@vorkalis.com.",
+  "assistantInviteTitle": "Inviter til din husstand",
+  "assistantInviteNote": "Vaultara sender dem et invitationslink på e-mail. Det virker én gang, i 7 dage.",
+  "assistantInviteSent": "Invitation sendt til {email}.",
+  "assistantInviteFailed": "Invitationen kunne ikke sendes. Prøv igen, eller del i stedet en invitation fra din husstand.",
+  "assistantCalendarNote": "Din kalenderapp åbner med begivenheden og en påmindelse 7 dage før.",
+  "assistantSendLinkTitle": "Send et sikkert link",
+  "assistantSendLinkWorks": "Linket virker i",
+  "assistantSendLinkHours": "{hours} t",
+  "assistantSendLinkNote": "Der sendes kun et link, aldrig selve oplysningerne. Du vælger, hvordan det sendes, og kan stoppe det tidligere under {sharedLinks}.",
+  "monthAheadTitle": "Måneden frem",
+  "monthAheadSubtitle": "Den 1. sender {assistant}, hvad der skal fornyes, hvad det koster, og dine kommende rejser",
+  "monthAheadQuestion": "Hvad skal jeg nå denne måned?",
+  "assistantStepSupport": "Skriver din e-mail",
+  "assistantStepSecurity": "Tjekker din kontos sikkerhed",
+  "talkFinishOnScreen": "Det er åbent på skærmen. Gør det færdigt der, og tryk så for at tale igen."
 }

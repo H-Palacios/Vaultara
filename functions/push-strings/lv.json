@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Darbinieka dokumenta termiņš beidzies",
   "staffOverdueYesterday": "{person} {name} termiņš beidzās vakar, un tas nav atjaunots.",
   "staffOverdueWeek": "{person} {name} termiņš beidzās pirms nedēļas, un tas joprojām nav atjaunots.",
-  "staffOverdueMany": "{count} darbinieku dokumentiem beidzies termiņš, un tie nav atjaunoti: {names}."
+  "staffOverdueMany": "{count} darbinieku dokumentiem beidzies termiņš, un tie nav atjaunoti: {names}.",
+  "monthAheadTitle": "Jūsu gaidāmais mēnesis",
+  "monthAheadBodyCount": "Šomēnes jāatjauno: {count}. Pieskarieties, lai redzētu, kas jādara.",
+  "monthAheadBodyCost": "Šomēnes jāatjauno: {count}, aptuveni {cost}. Pieskarieties, lai redzētu, kas jādara.",
+  "monthAheadBodyCountTrips": "Šomēnes jāatjauno: {count}. Braucieni nākamajās 6 nedēļās: {trips}. Pieskarieties, lai redzētu, kas jādara.",
+  "monthAheadBodyCostTrips": "Šomēnes jāatjauno: {count}, aptuveni {cost}. Braucieni nākamajās 6 nedēļās: {trips}. Pieskarieties, lai redzētu, kas jādara.",
+  "monthAheadBodyTrips": "Šomēnes nekas nav jāatjauno. Braucieni nākamajās 6 nedēļās: {trips}. Pieskarieties, lai redzētu, kas jādara."
 }

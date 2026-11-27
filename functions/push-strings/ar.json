@@ -26,5 +26,11 @@
   "staffOverdueTitle": "انتهى مستند موظف",
   "staffOverdueYesterday": "انتهى {name} الخاص بـ{person} أمس ولم يُجدَّد.",
   "staffOverdueWeek": "انتهى {name} الخاص بـ{person} قبل أسبوع وما زال غير مجدد.",
-  "staffOverdueMany": "انتهت {count} من مستندات الموظفين ولم تُجدَّد: {names}."
+  "staffOverdueMany": "انتهت {count} من مستندات الموظفين ولم تُجدَّد: {names}.",
+  "monthAheadTitle": "شهرك القادم",
+  "monthAheadBodyCount": "للتجديد هذا الشهر: {count}. انقر لترى ما عليك فعله.",
+  "monthAheadBodyCost": "للتجديد هذا الشهر: {count}، بحوالي {cost}. انقر لترى ما عليك فعله.",
+  "monthAheadBodyCountTrips": "للتجديد هذا الشهر: {count}. رحلات خلال الأسابيع الستة القادمة: {trips}. انقر لترى ما عليك فعله.",
+  "monthAheadBodyCostTrips": "للتجديد هذا الشهر: {count}، بحوالي {cost}. رحلات خلال الأسابيع الستة القادمة: {trips}. انقر لترى ما عليك فعله.",
+  "monthAheadBodyTrips": "لا شيء للتجديد هذا الشهر. رحلات خلال الأسابيع الستة القادمة: {trips}. انقر لترى ما عليك فعله."
 }

@@ -4406,5 +4406,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Napisz do pomocy Vorkalis",
+  "assistantSupportMessage": "Wiadomość",
+  "assistantSupportNote": "Dodawane są wersja aplikacji, telefon, system, język i plan. Pomoc odpowiada na adres e-mail, którym się logujesz.",
+  "assistantSupportSent": "Wysłano do pomocy Vorkalis. Odpowiedź na {email} powinna przyjść w ciągu jednego dnia roboczego.",
+  "assistantSupportLimit": "Dzisiaj do pomocy wysłano już kilka wiadomości. Spróbuj jutro albo napisz bezpośrednio na support@vorkalis.com.",
+  "assistantSupportVerify": "Najpierw potwierdź swój adres e-mail, aby pomoc mogła Ci odpowiedzieć.",
+  "assistantSupportFailed": "Nie udało się wysłać e-maila. Spróbuj później albo napisz bezpośrednio na support@vorkalis.com.",
+  "assistantInviteTitle": "Zaproś do gospodarstwa domowego",
+  "assistantInviteNote": "Vaultara wyśle tej osobie e-mailem link z zaproszeniem. Działa jeden raz, przez 7 dni.",
+  "assistantInviteSent": "Wysłano zaproszenie na {email}.",
+  "assistantInviteFailed": "Nie udało się wysłać zaproszenia. Spróbuj ponownie albo udostępnij zaproszenie ze swojego gospodarstwa domowego.",
+  "assistantCalendarNote": "Otworzy się aplikacja kalendarza z wydarzeniem i przypomnieniem 7 dni wcześniej.",
+  "assistantSendLinkTitle": "Wyślij bezpieczny link",
+  "assistantSendLinkWorks": "Link działa przez",
+  "assistantSendLinkHours": "{hours} godz.",
+  "assistantSendLinkNote": "Wysyłany jest tylko link, nigdy same dane. Ty wybierasz, jak go wysłać, i możesz go wcześniej zatrzymać w sekcji {sharedLinks}.",
+  "monthAheadTitle": "Nadchodzący miesiąc",
+  "monthAheadSubtitle": "Pierwszego dnia miesiąca {assistant} wysyła, co trzeba odnowić, ile to kosztuje i Twoje nadchodzące podróże",
+  "monthAheadQuestion": "Co muszę zrobić w tym miesiącu?",
+  "assistantStepSupport": "Piszę Twój e-mail",
+  "assistantStepSecurity": "Sprawdzam bezpieczeństwo Twojego konta",
+  "talkFinishOnScreen": "Jest otwarte na ekranie. Dokończ tam, a potem dotknij, aby znowu mówić."
 }

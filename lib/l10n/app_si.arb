@@ -4406,5 +4406,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Vorkalis සහාය වෙත ඊමේල් කරන්න",
+  "assistantSupportMessage": "පණිවිඩය",
+  "assistantSupportNote": "යෙදුම් අනුවාදය, දුරකථනය, පද්ධතිය, භාෂාව සහ සැලැස්ම එක් කෙරේ. ඔබ පුරනය වන ඊමේල් ලිපිනයට සහාය පිළිතුරු දෙයි.",
+  "assistantSupportSent": "Vorkalis සහාය වෙත යැව්වා. එක් වැඩ කරන දිනයක් ඇතුළත {email} වෙත පිළිතුරක් ලැබිය යුතුය.",
+  "assistantSupportLimit": "ඔබ අද දැනටමත් කිහිප වතාවක් සහාය වෙත ඊමේල් කර ඇත. හෙට නැවත උත්සාහ කරන්න හෝ සෘජුවම support@vorkalis.com වෙත ලියන්න.",
+  "assistantSupportVerify": "සහායට ඔබට පිළිතුරු දිය හැකි වන පරිදි පළමුව ඔබගේ ඊමේල් ලිපිනය තහවුරු කරන්න.",
+  "assistantSupportFailed": "ඊමේල් යැවිය නොහැකි විය. පසුව නැවත උත්සාහ කරන්න හෝ සෘජුවම support@vorkalis.com වෙත ලියන්න.",
+  "assistantInviteTitle": "ඔබගේ නිවසට ආරාධනා කරන්න",
+  "assistantInviteNote": "Vaultara ඔවුන්ට ඊමේල් මගින් ආරාධනා සබැඳියක් යවයි. එය එක් වරක්, දින 7ක් ක්‍රියා කරයි.",
+  "assistantInviteSent": "ආරාධනාව {email} වෙත යැව්වා.",
+  "assistantInviteFailed": "ආරාධනාව යැවිය නොහැකි විය. නැවත උත්සාහ කරන්න, නැතහොත් ඒ වෙනුවට ඔබගේ නිවසින් ආරාධනාවක් බෙදාගන්න.",
+  "assistantCalendarNote": "ඔබගේ දින දසුන් යෙදුම සිදුවීම සහ දින 7කට පෙර සිහිකැඳවීමක් සමඟ විවෘත වේ.",
+  "assistantSendLinkTitle": "ආරක්ෂිත සබැඳියක් යවන්න",
+  "assistantSendLinkWorks": "සබැඳිය වලංගු වන්නේ",
+  "assistantSendLinkHours": "පැය {hours}",
+  "assistantSendLinkNote": "යවන්නේ සබැඳියක් පමණි, විස්තර කිසි විටෙකත් නොවේ. එය යවන ආකාරය ඔබ තෝරයි, {sharedLinks} තුළ එය කලින් නැවැත්විය හැක.",
+  "monthAheadTitle": "ඉදිරි මාසය",
+  "monthAheadSubtitle": "සෑම මසකම 1 වැනිදා {assistant} අලුත් කළ යුතු දේ, එහි වියදම සහ ඔබගේ ඉදිරි ගමන් යවයි",
+  "monthAheadQuestion": "මේ මාසයේ මා කළ යුත්තේ කුමක්ද?",
+  "assistantStepSupport": "ඔබගේ ඊමේල් ලියමින්",
+  "assistantStepSecurity": "ඔබගේ ගිණුමේ ආරක්ෂාව පරීක්ෂා කරමින්",
+  "talkFinishOnScreen": "එය ඔබගේ තිරයේ විවෘතව ඇත. එහි අවසන් කර, නැවත කතා කිරීමට තට්ටු කරන්න."
 }

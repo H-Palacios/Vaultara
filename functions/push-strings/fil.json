@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Nag-expire ang dokumento ng staff",
   "staffOverdueYesterday": "Nag-expire kahapon ang {name} ni {person} at hindi pa na-renew.",
   "staffOverdueWeek": "Nag-expire isang linggo na ang nakalipas ang {name} ni {person} at hindi pa rin na-renew.",
-  "staffOverdueMany": "{count} dokumento ng staff ang nag-expire at hindi pa na-renew: {names}."
+  "staffOverdueMany": "{count} dokumento ng staff ang nag-expire at hindi pa na-renew: {names}.",
+  "monthAheadTitle": "Ang darating mong buwan",
+  "monthAheadBodyCount": "Ire-renew ngayong buwan: {count}. I-tap para makita ang gagawin.",
+  "monthAheadBodyCost": "Ire-renew ngayong buwan: {count}, mga {cost}. I-tap para makita ang gagawin.",
+  "monthAheadBodyCountTrips": "Ire-renew ngayong buwan: {count}. Mga biyahe sa susunod na 6 na linggo: {trips}. I-tap para makita ang gagawin.",
+  "monthAheadBodyCostTrips": "Ire-renew ngayong buwan: {count}, mga {cost}. Mga biyahe sa susunod na 6 na linggo: {trips}. I-tap para makita ang gagawin.",
+  "monthAheadBodyTrips": "Walang ire-renew ngayong buwan. Mga biyahe sa susunod na 6 na linggo: {trips}. I-tap para makita ang gagawin."
 }

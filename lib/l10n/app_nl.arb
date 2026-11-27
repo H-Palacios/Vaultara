@@ -4406,5 +4406,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "E-mail Vorkalis-support",
+  "assistantSupportMessage": "Bericht",
+  "assistantSupportNote": "Je appversie, telefoon, systeem, taal en abonnement worden toegevoegd. Support antwoordt naar het e-mailadres waarmee je inlogt.",
+  "assistantSupportSent": "Verstuurd naar Vorkalis-support. Je krijgt binnen één werkdag een antwoord op {email}.",
+  "assistantSupportLimit": "Je hebt support vandaag al een paar keer gemaild. Probeer het morgen opnieuw, of schrijf zelf naar support@vorkalis.com.",
+  "assistantSupportVerify": "Bevestig eerst je e-mailadres, zodat support je kan antwoorden.",
+  "assistantSupportFailed": "De e-mail kon niet worden verstuurd. Probeer het later opnieuw, of schrijf zelf naar support@vorkalis.com.",
+  "assistantInviteTitle": "Uitnodigen voor je huishouden",
+  "assistantInviteNote": "Vaultara mailt ze een uitnodigingslink. Die werkt één keer, 7 dagen lang.",
+  "assistantInviteSent": "Uitnodiging verstuurd naar {email}.",
+  "assistantInviteFailed": "De uitnodiging kon niet worden verstuurd. Probeer het opnieuw, of deel in plaats daarvan een uitnodiging vanuit je huishouden.",
+  "assistantCalendarNote": "Je agenda-app opent met de afspraak, met een melding 7 dagen van tevoren.",
+  "assistantSendLinkTitle": "Een veilige link sturen",
+  "assistantSendLinkWorks": "Link werkt",
+  "assistantSendLinkHours": "{hours} u",
+  "assistantSendLinkNote": "Er wordt alleen een link gestuurd, nooit de gegevens zelf. Jij kiest hoe je hem stuurt, en je kunt hem eerder stoppen in {sharedLinks}.",
+  "monthAheadTitle": "Maand vooruit",
+  "monthAheadSubtitle": "Op de 1e stuurt {assistant} wat je moet verlengen, wat het kost en je komende reizen",
+  "monthAheadQuestion": "Wat moet ik deze maand doen?",
+  "assistantStepSupport": "Je e-mail wordt geschreven",
+  "assistantStepSecurity": "Beveiliging van je account controleren",
+  "talkFinishOnScreen": "Het staat open op je scherm. Rond het daar af en tik dan om weer te praten."
 }

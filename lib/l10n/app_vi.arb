@@ -4406,5 +4406,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Gửi email cho hỗ trợ Vorkalis",
+  "assistantSupportMessage": "Tin nhắn",
+  "assistantSupportNote": "Phiên bản ứng dụng, điện thoại, hệ thống, ngôn ngữ và gói được thêm vào. Bộ phận hỗ trợ trả lời đến email bạn dùng để đăng nhập.",
+  "assistantSupportSent": "Đã gửi cho hỗ trợ Vorkalis. Bạn sẽ nhận được trả lời tại {email} trong vòng một ngày làm việc.",
+  "assistantSupportLimit": "Hôm nay bạn đã gửi email cho hỗ trợ vài lần. Hãy thử lại vào ngày mai hoặc viết trực tiếp tới support@vorkalis.com.",
+  "assistantSupportVerify": "Hãy xác minh địa chỉ email trước để bộ phận hỗ trợ có thể trả lời bạn.",
+  "assistantSupportFailed": "Không gửi được email. Hãy thử lại sau hoặc viết trực tiếp tới support@vorkalis.com.",
+  "assistantInviteTitle": "Mời vào hộ gia đình của bạn",
+  "assistantInviteNote": "Vaultara gửi cho họ đường liên kết mời qua email. Liên kết dùng được một lần, trong 7 ngày.",
+  "assistantInviteSent": "Đã gửi lời mời tới {email}.",
+  "assistantInviteFailed": "Không gửi được lời mời. Hãy thử lại hoặc chia sẻ lời mời từ hộ gia đình của bạn.",
+  "assistantCalendarNote": "Ứng dụng lịch của bạn sẽ mở với sự kiện và lời nhắc trước 7 ngày.",
+  "assistantSendLinkTitle": "Gửi đường liên kết an toàn",
+  "assistantSendLinkWorks": "Liên kết có hiệu lực",
+  "assistantSendLinkHours": "{hours} giờ",
+  "assistantSendLinkNote": "Chỉ một đường liên kết được gửi, không bao giờ là thông tin chi tiết. Bạn chọn cách gửi và có thể dừng sớm trong {sharedLinks}.",
+  "monthAheadTitle": "Tháng tới",
+  "monthAheadSubtitle": "Vào ngày 1, {assistant} gửi những gì cần gia hạn, chi phí và các chuyến đi sắp tới của bạn",
+  "monthAheadQuestion": "Tháng này tôi cần làm gì?",
+  "assistantStepSupport": "Đang viết email của bạn",
+  "assistantStepSecurity": "Đang kiểm tra bảo mật tài khoản của bạn",
+  "talkFinishOnScreen": "Đã mở trên màn hình của bạn. Hãy hoàn tất ở đó, rồi chạm để nói tiếp."
 }

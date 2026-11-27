@@ -4424,5 +4424,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Rakstīt Vorkalis atbalstam",
+  "assistantSupportMessage": "Ziņa",
+  "assistantSupportNote": "Tiek pievienota lietotnes versija, tālrunis, sistēma, valoda un plāns. Atbalsts atbild uz e-pasta adresi, ar kuru piesakāties.",
+  "assistantSupportSent": "Nosūtīts Vorkalis atbalstam. Atbilde uz {email} jāsaņem vienas darba dienas laikā.",
+  "assistantSupportLimit": "Šodien jau vairākkārt rakstījāt atbalstam. Mēģiniet vēlreiz rīt vai rakstiet paši uz support@vorkalis.com.",
+  "assistantSupportVerify": "Vispirms apstipriniet savu e-pasta adresi, lai atbalsts varētu jums atbildēt.",
+  "assistantSupportFailed": "E-pastu neizdevās nosūtīt. Mēģiniet vēlāk vai rakstiet paši uz support@vorkalis.com.",
+  "assistantInviteTitle": "Uzaicināt uz jūsu mājsaimniecību",
+  "assistantInviteNote": "Vaultara nosūta viņiem uzaicinājuma saiti e-pastā. Tā darbojas vienu reizi, 7 dienas.",
+  "assistantInviteSent": "Uzaicinājums nosūtīts uz {email}.",
+  "assistantInviteFailed": "Uzaicinājumu neizdevās nosūtīt. Mēģiniet vēlreiz vai kopīgojiet uzaicinājumu no savas mājsaimniecības.",
+  "assistantCalendarNote": "Jūsu kalendāra lietotne atveras ar notikumu un atgādinājumu 7 dienas iepriekš.",
+  "assistantSendLinkTitle": "Nosūtīt drošu saiti",
+  "assistantSendLinkWorks": "Saite darbojas",
+  "assistantSendLinkHours": "{hours} h",
+  "assistantSendLinkNote": "Tiek nosūtīta tikai saite, nekad paši dati. Jūs izvēlaties, kā to nosūtīt, un varat to apturēt agrāk sadaļā {sharedLinks}.",
+  "monthAheadTitle": "Gaidāmais mēnesis",
+  "monthAheadSubtitle": "Katra mēneša 1. datumā {assistant} nosūta, kas jāatjauno, cik tas maksā un jūsu gaidāmos braucienus",
+  "monthAheadQuestion": "Kas man jāizdara šajā mēnesī?",
+  "assistantStepSupport": "Rakstu jūsu e-pastu",
+  "assistantStepSecurity": "Pārbaudu jūsu konta drošību",
+  "talkFinishOnScreen": "Tas ir atvērts ekrānā. Pabeidziet tur, pēc tam pieskarieties, lai runātu vēlreiz."
 }

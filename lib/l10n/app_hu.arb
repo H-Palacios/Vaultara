@@ -4424,5 +4424,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "E-mail a Vorkalis ügyfélszolgálatának",
+  "assistantSupportMessage": "Üzenet",
+  "assistantSupportNote": "Hozzáadjuk az alkalmazás verzióját, a telefont, a rendszert, a nyelvet és a csomagot. Az ügyfélszolgálat arra az e-mail-címre válaszol, amellyel bejelentkezik.",
+  "assistantSupportSent": "Elküldve a Vorkalis ügyfélszolgálatának. Egy munkanapon belül választ kap a(z) {email} címre.",
+  "assistantSupportLimit": "Ma már többször írt az ügyfélszolgálatnak. Próbálja újra holnap, vagy írjon közvetlenül a support@vorkalis.com címre.",
+  "assistantSupportVerify": "Először erősítse meg e-mail-címét, hogy az ügyfélszolgálat válaszolhasson.",
+  "assistantSupportFailed": "Az e-mailt nem sikerült elküldeni. Próbálja később, vagy írjon közvetlenül a support@vorkalis.com címre.",
+  "assistantInviteTitle": "Meghívás a háztartásába",
+  "assistantInviteNote": "A Vaultara e-mailben meghívólinket küld nekik. Egyszer működik, 7 napig.",
+  "assistantInviteSent": "Meghívó elküldve ide: {email}.",
+  "assistantInviteFailed": "A meghívót nem sikerült elküldeni. Próbálja újra, vagy inkább ossza meg a meghívót a háztartásából.",
+  "assistantCalendarNote": "Megnyílik a naptáralkalmazás az eseménnyel és egy 7 nappal korábbi emlékeztetővel.",
+  "assistantSendLinkTitle": "Biztonságos link küldése",
+  "assistantSendLinkWorks": "A link érvényes",
+  "assistantSendLinkHours": "{hours} óra",
+  "assistantSendLinkNote": "Csak egy link megy el, maguk az adatok soha. Ön dönti el, hogyan küldi, és korábban le is állíthatja itt: {sharedLinks}.",
+  "monthAheadTitle": "Az előttünk álló hónap",
+  "monthAheadSubtitle": "Minden hónap 1-jén a(z) {assistant} elküldi, mit kell megújítani, mennyibe kerül, és a közelgő utazásait",
+  "monthAheadQuestion": "Mit kell tennem ebben a hónapban?",
+  "assistantStepSupport": "Írom az e-mailjét",
+  "assistantStepSecurity": "Ellenőrzöm a fiókja biztonságát",
+  "talkFinishOnScreen": "Megnyílt a képernyőn. Fejezze be ott, majd koppintson, hogy újra beszéljen."
 }

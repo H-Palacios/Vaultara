@@ -26,5 +26,11 @@
   "staffOverdueTitle": "කාර්ය මණ්ඩල ලේඛනයක් කල් ඉකුත් විය",
   "staffOverdueYesterday": "{person} ගේ {name} ඊයේ කල් ඉකුත් වූ අතර අලුත් කර නැත.",
   "staffOverdueWeek": "{person} ගේ {name} සතියකට පෙර කල් ඉකුත් වූ අතර තවමත් අලුත් කර නැත.",
-  "staffOverdueMany": "කාර්ය මණ්ඩල ලේඛන {count}ක් කල් ඉකුත් වී ඇති අතර අලුත් කර නැත: {names}."
+  "staffOverdueMany": "කාර්ය මණ්ඩල ලේඛන {count}ක් කල් ඉකුත් වී ඇති අතර අලුත් කර නැත: {names}.",
+  "monthAheadTitle": "ඔබගේ ඉදිරි මාසය",
+  "monthAheadBodyCount": "මේ මාසයේ අලුත් කිරීමට: {count}. කළ යුතු දේ බැලීමට තට්ටු කරන්න.",
+  "monthAheadBodyCost": "මේ මාසයේ අලුත් කිරීමට: {count}, ආසන්න වශයෙන් {cost}. කළ යුතු දේ බැලීමට තට්ටු කරන්න.",
+  "monthAheadBodyCountTrips": "මේ මාසයේ අලුත් කිරීමට: {count}. ඉදිරි සති 6 තුළ ගමන්: {trips}. කළ යුතු දේ බැලීමට තට්ටු කරන්න.",
+  "monthAheadBodyCostTrips": "මේ මාසයේ අලුත් කිරීමට: {count}, ආසන්න වශයෙන් {cost}. ඉදිරි සති 6 තුළ ගමන්: {trips}. කළ යුතු දේ බැලීමට තට්ටු කරන්න.",
+  "monthAheadBodyTrips": "මේ මාසයේ අලුත් කිරීමට කිසිවක් නැත. ඉදිරි සති 6 තුළ ගමන්: {trips}. කළ යුතු දේ බැලීමට තට්ටු කරන්න."
 }

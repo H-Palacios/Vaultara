@@ -4156,5 +4156,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Vorkalis dəstəyinə yazın",
+  "assistantSupportMessage": "Mesaj",
+  "assistantSupportNote": "Tətbiqin versiyası, telefon, sistem, dil və plan əlavə olunur. Dəstək daxil olduğunuz e-poçt ünvanına cavab verir.",
+  "assistantSupportSent": "Vorkalis dəstəyinə göndərildi. Bir iş günü ərzində {email} ünvanına cavab almalısınız.",
+  "assistantSupportLimit": "Bu gün artıq bir neçə dəfə dəstəyə yazmısınız. Sabah yenidən cəhd edin və ya birbaşa support@vorkalis.com ünvanına yazın.",
+  "assistantSupportVerify": "Dəstəyin sizə cavab verə bilməsi üçün əvvəlcə e-poçt ünvanınızı təsdiqləyin.",
+  "assistantSupportFailed": "E-poçt göndərilmədi. Sonra yenidən cəhd edin və ya birbaşa support@vorkalis.com ünvanına yazın.",
+  "assistantInviteTitle": "Ev təsərrüfatınıza dəvət edin",
+  "assistantInviteNote": "Vaultara onlara e-poçtla dəvət keçidi göndərir. O, bir dəfə, 7 gün ərzində işləyir.",
+  "assistantInviteSent": "Dəvət {email} ünvanına göndərildi.",
+  "assistantInviteFailed": "Dəvət göndərilmədi. Yenidən cəhd edin və ya əvəzində ev təsərrüfatınızdan dəvət paylaşın.",
+  "assistantCalendarNote": "Təqvim tətbiqiniz hadisə və 7 gün əvvəlki xatırlatma ilə açılır.",
+  "assistantSendLinkTitle": "Təhlükəsiz keçid göndərin",
+  "assistantSendLinkWorks": "Keçid etibarlıdır",
+  "assistantSendLinkHours": "{hours} saat",
+  "assistantSendLinkNote": "Yalnız keçid göndərilir, məlumatların özü heç vaxt. Necə göndərəcəyinizi siz seçirsiniz və onu {sharedLinks} bölməsində daha tez dayandıra bilərsiniz.",
+  "monthAheadTitle": "Qarşıdakı ay",
+  "monthAheadSubtitle": "Hər ayın 1-də {assistant} nəyi yeniləməli olduğunuzu, qiymətini və qarşıdakı səfərlərinizi göndərir",
+  "monthAheadQuestion": "Bu ay nə etməliyəm?",
+  "assistantStepSupport": "E-poçtunuz yazılır",
+  "assistantStepSecurity": "Hesabınızın təhlükəsizliyi yoxlanılır",
+  "talkFinishOnScreen": "Ekranınızda açıqdır. Orada tamamlayın, sonra yenidən danışmaq üçün toxunun."
 }

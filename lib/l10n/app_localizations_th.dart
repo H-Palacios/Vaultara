@@ -3141,16 +3141,16 @@ class AppLocalizationsTh extends AppLocalizations {
   String get planGetPremium => 'สมัคร Premium';
 
   @override
-  String get businessPlanBuy => 'สมัครแผนธุรกิจ';
-
-  @override
   String get individualPlanBuy => 'รับแผนรายบุคคล';
 
   @override
-  String get businessPlanSwitch => 'เปลี่ยนเป็นแผนธุรกิจ';
+  String get individualPlanSwitch => 'เปลี่ยนเป็นแผนรายบุคคล';
 
   @override
-  String get individualPlanSwitch => 'เปลี่ยนเป็นแผนรายบุคคล';
+  String get businessPlanBuy => 'สมัครแผนธุรกิจ';
+
+  @override
+  String get businessPlanSwitch => 'เปลี่ยนเป็นแผนธุรกิจ';
 
   @override
   String get planSwitchToYearly => 'เปลี่ยนเป็นรายปี';
@@ -6619,27 +6619,27 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'เพิ่มการฉีดวัคซีนของ ${name}';
+    return 'เพิ่มการฉีดวัคซีนของ $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'เพิ่มไมโครชิปของ ${name}';
+    return 'เพิ่มไมโครชิปของ $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'เพิ่มประกันสัตว์เลี้ยงของ ${name}';
+    return 'เพิ่มประกันสัตว์เลี้ยงของ $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'เพิ่มหนังสือเดินทางของ ${name}';
+    return 'เพิ่มหนังสือเดินทางของ $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'ต่อไป: ${step} พูดว่าใช่เพื่อทำต่อ';
+    return 'ต่อไป: $step พูดว่าใช่เพื่อทำต่อ';
   }
 
   @override
@@ -8915,10 +8915,10 @@ class AppLocalizationsTh extends AppLocalizations {
   String get petTypeFieldHint => 'ป้อนประเภทสัตว์เลี้ยง';
 
   @override
-  String get petBirthdayHint => 'เลือกวันเกิด';
+  String get petTypeRequired => 'เลือกประเภทสัตว์เลี้ยง';
 
   @override
-  String get petTypeRequired => 'เลือกประเภทสัตว์เลี้ยง';
+  String get petBirthdayHint => 'เลือกวันเกิด';
 
   @override
   String get petChipHint => 'ป้อนหมายเลขไมโครชิป';
@@ -10584,4 +10584,80 @@ class AppLocalizationsTh extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'คุณใช้ \"ถาม Vaultara\" ครบขีดจำกัดของวันนี้แล้ว จะรีเซ็ตพรุ่งนี้เวลา $time ส่วนอื่นทั้งหมดใน Vaultara ยังใช้งานได้ตามปกติ';
   }
+
+  @override
+  String get assistantSupportTitle => 'ส่งอีเมลถึงฝ่ายสนับสนุน Vorkalis';
+
+  @override
+  String get assistantSupportMessage => 'ข้อความ';
+
+  @override
+  String get assistantSupportNote => 'ระบบจะเพิ่มเวอร์ชันแอป โทรศัพท์ ระบบปฏิบัติการ ภาษา และแพ็กเกจ ฝ่ายสนับสนุนจะตอบกลับไปยังอีเมลที่คุณใช้ลงชื่อเข้าใช้';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'ส่งถึงฝ่ายสนับสนุน Vorkalis แล้ว คุณน่าจะได้รับคำตอบที่ $email ภายใน 1 วันทำการ';
+  }
+
+  @override
+  String get assistantSupportLimit => 'วันนี้คุณส่งอีเมลถึงฝ่ายสนับสนุนหลายครั้งแล้ว ลองอีกครั้งพรุ่งนี้ หรือเขียนถึง support@vorkalis.com โดยตรง';
+
+  @override
+  String get assistantSupportVerify => 'ยืนยันที่อยู่อีเมลของคุณก่อน เพื่อให้ฝ่ายสนับสนุนตอบกลับคุณได้';
+
+  @override
+  String get assistantSupportFailed => 'ส่งอีเมลไม่ได้ ลองอีกครั้งภายหลัง หรือเขียนถึง support@vorkalis.com โดยตรง';
+
+  @override
+  String get assistantInviteTitle => 'เชิญเข้าครัวเรือนของคุณ';
+
+  @override
+  String get assistantInviteNote => 'Vaultara จะส่งลิงก์คำเชิญทางอีเมลให้พวกเขา ใช้ได้ครั้งเดียว ภายใน 7 วัน';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'ส่งคำเชิญไปที่ $email แล้ว';
+  }
+
+  @override
+  String get assistantInviteFailed => 'ส่งคำเชิญไม่ได้ ลองอีกครั้ง หรือแชร์คำเชิญจากครัวเรือนของคุณแทน';
+
+  @override
+  String get assistantCalendarNote => 'แอปปฏิทินของคุณจะเปิดพร้อมกิจกรรมและการแจ้งเตือนล่วงหน้า 7 วัน';
+
+  @override
+  String get assistantSendLinkTitle => 'ส่งลิงก์ที่ปลอดภัย';
+
+  @override
+  String get assistantSendLinkWorks => 'ลิงก์ใช้ได้';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours ชม.';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'ส่งเพียงลิงก์เท่านั้น ไม่ส่งรายละเอียดเอง คุณเลือกวิธีส่งได้ และหยุดลิงก์ก่อนได้ใน $sharedLinks';
+  }
+
+  @override
+  String get monthAheadTitle => 'เดือนข้างหน้า';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'ทุกวันที่ 1 $assistant จะส่งรายการที่ต้องต่ออายุ ค่าใช้จ่าย และทริปที่กำลังจะมาถึงของคุณ';
+  }
+
+  @override
+  String get monthAheadQuestion => 'เดือนนี้ฉันต้องทำอะไรบ้าง';
+
+  @override
+  String get assistantStepSupport => 'กำลังเขียนอีเมลของคุณ';
+
+  @override
+  String get assistantStepSecurity => 'กำลังตรวจสอบความปลอดภัยของบัญชีของคุณ';
+
+  @override
+  String get talkFinishOnScreen => 'เปิดอยู่บนหน้าจอแล้ว ทำให้เสร็จที่นั่น แล้วแตะเพื่อพูดอีกครั้ง';
 }

@@ -26,5 +26,11 @@
   "staffOverdueTitle": "कर्मचारीको कागजातको म्याद सकियो",
   "staffOverdueYesterday": "{person} को {name} हिजो सकियो र नवीकरण भएको छैन।",
   "staffOverdueWeek": "{person} को {name} एक हप्ता अघि सकियो र अझै नवीकरण भएको छैन।",
-  "staffOverdueMany": "कर्मचारीका {count} कागजातको म्याद सकियो र नवीकरण भएको छैन: {names}।"
+  "staffOverdueMany": "कर्मचारीका {count} कागजातको म्याद सकियो र नवीकरण भएको छैन: {names}।",
+  "monthAheadTitle": "तपाईंको आउँदो महिना",
+  "monthAheadBodyCount": "यो महिना नवीकरण गर्नुपर्ने: {count}। के गर्ने हेर्न ट्याप गर्नुहोस्।",
+  "monthAheadBodyCost": "यो महिना नवीकरण गर्नुपर्ने: {count}, लगभग {cost}। के गर्ने हेर्न ट्याप गर्नुहोस्।",
+  "monthAheadBodyCountTrips": "यो महिना नवीकरण गर्नुपर्ने: {count}। अर्को ६ हप्ताका यात्राहरू: {trips}। के गर्ने हेर्न ट्याप गर्नुहोस्।",
+  "monthAheadBodyCostTrips": "यो महिना नवीकरण गर्नुपर्ने: {count}, लगभग {cost}। अर्को ६ हप्ताका यात्राहरू: {trips}। के गर्ने हेर्न ट्याप गर्नुहोस्।",
+  "monthAheadBodyTrips": "यो महिना नवीकरण गर्नुपर्ने केही छैन। अर्को ६ हप्ताका यात्राहरू: {trips}। के गर्ने हेर्न ट्याप गर्नुहोस्।"
 }

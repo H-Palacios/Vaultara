@@ -26,5 +26,11 @@
   "staffOverdueTitle": "员工证件已过期",
   "staffOverdueYesterday": "{person} 的 {name} 昨天已过期，尚未续期。",
   "staffOverdueWeek": "{person} 的 {name} 一周前已过期，仍未续期。",
-  "staffOverdueMany": "{count} 份员工证件已过期且未续期：{names}。"
+  "staffOverdueMany": "{count} 份员工证件已过期且未续期：{names}。",
+  "monthAheadTitle": "你的本月概览",
+  "monthAheadBodyCount": "本月需续期：{count} 项。轻点查看要做的事。",
+  "monthAheadBodyCost": "本月需续期：{count} 项，约 {cost}。轻点查看要做的事。",
+  "monthAheadBodyCountTrips": "本月需续期：{count} 项。未来 6 周的行程：{trips} 个。轻点查看要做的事。",
+  "monthAheadBodyCostTrips": "本月需续期：{count} 项，约 {cost}。未来 6 周的行程：{trips} 个。轻点查看要做的事。",
+  "monthAheadBodyTrips": "本月没有需要续期的项目。未来 6 周的行程：{trips} 个。轻点查看要做的事。"
 }

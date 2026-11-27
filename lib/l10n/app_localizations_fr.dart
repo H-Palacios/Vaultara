@@ -3172,16 +3172,16 @@ class AppLocalizationsFr extends AppLocalizations {
   String get planGetPremium => 'Obtenir Premium';
 
   @override
-  String get businessPlanBuy => 'Obtenir Entreprise';
-
-  @override
   String get individualPlanBuy => 'Passer à Individuel';
 
   @override
-  String get businessPlanSwitch => 'Passer à Entreprise';
+  String get individualPlanSwitch => 'Passer à Individuel';
 
   @override
-  String get individualPlanSwitch => 'Passer à Individuel';
+  String get businessPlanBuy => 'Obtenir Entreprise';
+
+  @override
+  String get businessPlanSwitch => 'Passer à Entreprise';
 
   @override
   String get planSwitchToYearly => 'Passer à l’annuel';
@@ -4920,8 +4920,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get assistantEmptyReply => 'Je n’ai pas trouvé de réponse. Essayez de poser la question autrement.';
 
   @override
-  String get assistantDraftReady =>
-      'Voici les détails. Touchez Confirmer pour les enregistrer.';
+  String get assistantDraftReady => 'Voici les détails. Touchez Confirmer pour les enregistrer.';
 
   @override
   String get assistantNewChat => 'Nouvelle conversation';
@@ -6691,27 +6690,27 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Ajouter les vaccins de ${name}';
+    return 'Ajouter les vaccins de $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Ajouter la puce électronique de ${name}';
+    return 'Ajouter la puce électronique de $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Ajouter l\'assurance animal de ${name}';
+    return 'Ajouter l\'assurance animal de $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Ajouter un passeport pour ${name}';
+    return 'Ajouter un passeport pour $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Ensuite : ${step}. Dites oui pour le faire.';
+    return 'Ensuite : $step. Dites oui pour le faire.';
   }
 
   @override
@@ -8999,10 +8998,10 @@ class AppLocalizationsFr extends AppLocalizations {
   String get petTypeFieldHint => 'Saisir le type d’animal';
 
   @override
-  String get petBirthdayHint => 'Sélectionner la date de naissance';
+  String get petTypeRequired => 'Choisissez le type d’animal';
 
   @override
-  String get petTypeRequired => 'Choisissez le type d’animal';
+  String get petBirthdayHint => 'Sélectionner la date de naissance';
 
   @override
   String get petChipHint => 'Saisir le numéro de puce';
@@ -10412,8 +10411,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get talkNoVoice => 'Votre téléphone n\'a pas de voix pour cette langue : les réponses s\'affichent mais ne sont pas lues.';
 
   @override
-  String get talkNotDone =>
-      'Cela n\'a pas fonctionné. Vérifiez les détails à l\'écran.';
+  String get talkNotDone => 'Cela n\'a pas fonctionné. Vérifiez les détails à l\'écran.';
 
   @override
   String get talkReady => 'Je vous écoute.';
@@ -10677,4 +10675,80 @@ class AppLocalizationsFr extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Vous avez atteint la limite du jour de « Demander à Vaultara ». Elle se réinitialise demain à $time. Tout le reste de Vaultara fonctionne normalement.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Écrire au support Vorkalis';
+
+  @override
+  String get assistantSupportMessage => 'Message';
+
+  @override
+  String get assistantSupportNote => 'La version de l’app, le téléphone, le système, la langue et l’abonnement sont ajoutés. Le support répond à l’adresse e-mail avec laquelle vous vous connectez.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Envoyé au support Vorkalis. Vous devriez recevoir une réponse à $email sous un jour ouvré.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Vous avez déjà écrit plusieurs fois au support aujourd’hui. Réessayez demain, ou écrivez vous-même à support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Confirmez d’abord votre adresse e-mail pour que le support puisse vous répondre.';
+
+  @override
+  String get assistantSupportFailed => 'L’e-mail n’a pas pu être envoyé. Réessayez plus tard, ou écrivez vous-même à support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Inviter dans votre foyer';
+
+  @override
+  String get assistantInviteNote => 'Vaultara lui envoie un lien d’invitation par e-mail. Il fonctionne une fois, pendant 7 jours.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Invitation envoyée à $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'L’invitation n’a pas pu être envoyée. Réessayez, ou partagez plutôt une invitation depuis votre foyer.';
+
+  @override
+  String get assistantCalendarNote => 'Votre app de calendrier s’ouvre avec l’événement et une alarme 7 jours avant.';
+
+  @override
+  String get assistantSendLinkTitle => 'Envoyer un lien sécurisé';
+
+  @override
+  String get assistantSendLinkWorks => 'Lien valable';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours h';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Seul un lien est envoyé, jamais les informations elles-mêmes. Vous choisissez comment l’envoyer et pouvez l’arrêter plus tôt dans $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Le mois à venir';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Le 1er, $assistant vous envoie ce qu’il faut renouveler, ce que cela coûte et vos prochains voyages';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Que dois-je faire ce mois-ci ?';
+
+  @override
+  String get assistantStepSupport => 'Rédaction de votre e-mail';
+
+  @override
+  String get assistantStepSecurity => 'Vérification de la sécurité de votre compte';
+
+  @override
+  String get talkFinishOnScreen => 'C’est ouvert à l’écran. Terminez-y, puis touchez pour parler à nouveau.';
 }

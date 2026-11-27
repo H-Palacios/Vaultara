@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Venció un documento del personal",
   "staffOverdueYesterday": "{name} de {person} venció ayer y no se ha renovado.",
   "staffOverdueWeek": "{name} de {person} venció hace una semana y aún no se ha renovado.",
-  "staffOverdueMany": "Vencieron {count} documentos del personal y no se han renovado: {names}."
+  "staffOverdueMany": "Vencieron {count} documentos del personal y no se han renovado: {names}.",
+  "monthAheadTitle": "Tu mes por delante",
+  "monthAheadBodyCount": "Por renovar este mes: {count}. Toca para ver qué hacer.",
+  "monthAheadBodyCost": "Por renovar este mes: {count}, unos {cost}. Toca para ver qué hacer.",
+  "monthAheadBodyCountTrips": "Por renovar este mes: {count}. Viajes en las próximas 6 semanas: {trips}. Toca para ver qué hacer.",
+  "monthAheadBodyCostTrips": "Por renovar este mes: {count}, unos {cost}. Viajes en las próximas 6 semanas: {trips}. Toca para ver qué hacer.",
+  "monthAheadBodyTrips": "Nada que renovar este mes. Viajes en las próximas 6 semanas: {trips}. Toca para ver qué hacer."
 }

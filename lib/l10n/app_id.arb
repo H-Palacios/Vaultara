@@ -4411,5 +4411,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Email dukungan Vorkalis",
+  "assistantSupportMessage": "Pesan",
+  "assistantSupportNote": "Versi aplikasi, ponsel, sistem, bahasa, dan paket ditambahkan. Dukungan membalas ke email yang Anda gunakan untuk masuk.",
+  "assistantSupportSent": "Terkirim ke dukungan Vorkalis. Anda seharusnya menerima balasan di {email} dalam satu hari kerja.",
+  "assistantSupportLimit": "Anda sudah beberapa kali mengirim email ke dukungan hari ini. Coba lagi besok, atau tulis langsung ke support@vorkalis.com.",
+  "assistantSupportVerify": "Verifikasi alamat email Anda dulu agar dukungan dapat membalas Anda.",
+  "assistantSupportFailed": "Email tidak dapat dikirim. Coba lagi nanti, atau tulis langsung ke support@vorkalis.com.",
+  "assistantInviteTitle": "Undang ke rumah tangga Anda",
+  "assistantInviteNote": "Vaultara mengirimi mereka tautan undangan lewat email. Tautan ini berfungsi sekali, selama 7 hari.",
+  "assistantInviteSent": "Undangan terkirim ke {email}.",
+  "assistantInviteFailed": "Undangan tidak dapat dikirim. Coba lagi, atau bagikan undangan dari rumah tangga Anda.",
+  "assistantCalendarNote": "Aplikasi kalender Anda terbuka dengan acara dan pengingat 7 hari sebelumnya.",
+  "assistantSendLinkTitle": "Kirim tautan aman",
+  "assistantSendLinkWorks": "Tautan berlaku",
+  "assistantSendLinkHours": "{hours} jam",
+  "assistantSendLinkNote": "Hanya tautan yang dikirim, bukan detailnya. Anda memilih cara mengirimnya, dan bisa menghentikannya lebih awal di {sharedLinks}.",
+  "monthAheadTitle": "Bulan mendatang",
+  "monthAheadSubtitle": "Setiap tanggal 1, {assistant} mengirimkan apa yang perlu diperpanjang, biayanya, dan perjalanan Anda yang akan datang",
+  "monthAheadQuestion": "Apa yang perlu saya lakukan bulan ini?",
+  "assistantStepSupport": "Menulis email Anda",
+  "assistantStepSecurity": "Memeriksa keamanan akun Anda",
+  "talkFinishOnScreen": "Sudah terbuka di layar Anda. Selesaikan di sana, lalu ketuk untuk bicara lagi."
 }

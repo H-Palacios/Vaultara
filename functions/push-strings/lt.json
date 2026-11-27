@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Baigėsi darbuotojo dokumento galiojimas",
   "staffOverdueYesterday": "{person} {name} galiojimas baigėsi vakar ir jis neatnaujintas.",
   "staffOverdueWeek": "{person} {name} galiojimas baigėsi prieš savaitę ir jis vis dar neatnaujintas.",
-  "staffOverdueMany": "Baigėsi {count} darbuotojų dokumentų galiojimas ir jie neatnaujinti: {names}."
+  "staffOverdueMany": "Baigėsi {count} darbuotojų dokumentų galiojimas ir jie neatnaujinti: {names}.",
+  "monthAheadTitle": "Jūsų ateinantis mėnuo",
+  "monthAheadBodyCount": "Atnaujinti šį mėnesį: {count}. Palieskite ir pažiūrėkite, ką daryti.",
+  "monthAheadBodyCost": "Atnaujinti šį mėnesį: {count}, apie {cost}. Palieskite ir pažiūrėkite, ką daryti.",
+  "monthAheadBodyCountTrips": "Atnaujinti šį mėnesį: {count}. Kelionės per ateinančias 6 savaites: {trips}. Palieskite ir pažiūrėkite, ką daryti.",
+  "monthAheadBodyCostTrips": "Atnaujinti šį mėnesį: {count}, apie {cost}. Kelionės per ateinančias 6 savaites: {trips}. Palieskite ir pažiūrėkite, ką daryti.",
+  "monthAheadBodyTrips": "Šį mėnesį nieko nereikia atnaujinti. Kelionės per ateinančias 6 savaites: {trips}. Palieskite ir pažiūrėkite, ką daryti."
 }

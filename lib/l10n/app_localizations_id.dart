@@ -3148,16 +3148,16 @@ class AppLocalizationsId extends AppLocalizations {
   String get planGetPremium => 'Dapatkan Premium';
 
   @override
-  String get businessPlanBuy => 'Dapatkan Bisnis';
-
-  @override
   String get individualPlanBuy => 'Dapatkan Perorangan';
 
   @override
-  String get businessPlanSwitch => 'Beralih ke Bisnis';
+  String get individualPlanSwitch => 'Beralih ke Perorangan';
 
   @override
-  String get individualPlanSwitch => 'Beralih ke Perorangan';
+  String get businessPlanBuy => 'Dapatkan Bisnis';
+
+  @override
+  String get businessPlanSwitch => 'Beralih ke Bisnis';
 
   @override
   String get planSwitchToYearly => 'Beralih ke tahunan';
@@ -4876,8 +4876,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get assistantEmptyReply => 'Saya tidak menemukan jawaban. Coba bertanya dengan cara lain.';
 
   @override
-  String get assistantDraftReady =>
-      'Ini detailnya. Ketuk Konfirmasi untuk menyimpannya.';
+  String get assistantDraftReady => 'Ini detailnya. Ketuk Konfirmasi untuk menyimpannya.';
 
   @override
   String get assistantNewChat => 'Obrolan baru';
@@ -6627,27 +6626,27 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Tambahkan vaksinasi untuk ${name}';
+    return 'Tambahkan vaksinasi untuk $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Tambahkan microchip untuk ${name}';
+    return 'Tambahkan microchip untuk $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Tambahkan asuransi hewan untuk ${name}';
+    return 'Tambahkan asuransi hewan untuk $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Tambahkan paspor untuk ${name}';
+    return 'Tambahkan paspor untuk $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Berikutnya: ${step}. Katakan ya untuk melakukannya.';
+    return 'Berikutnya: $step. Katakan ya untuk melakukannya.';
   }
 
   @override
@@ -8923,10 +8922,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get petTypeFieldHint => 'Masukkan jenis hewan peliharaan';
 
   @override
-  String get petBirthdayHint => 'Pilih tanggal lahir';
+  String get petTypeRequired => 'Pilih jenis hewan peliharaan';
 
   @override
-  String get petTypeRequired => 'Pilih jenis hewan peliharaan';
+  String get petBirthdayHint => 'Pilih tanggal lahir';
 
   @override
   String get petChipHint => 'Masukkan nomor microchip';
@@ -10592,4 +10591,80 @@ class AppLocalizationsId extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Anda telah mencapai batas \"Tanya Vaultara\" hari ini. Batas ini diatur ulang besok pukul $time. Semua fitur lain di Vaultara tetap berjalan seperti biasa.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Email dukungan Vorkalis';
+
+  @override
+  String get assistantSupportMessage => 'Pesan';
+
+  @override
+  String get assistantSupportNote => 'Versi aplikasi, ponsel, sistem, bahasa, dan paket ditambahkan. Dukungan membalas ke email yang Anda gunakan untuk masuk.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Terkirim ke dukungan Vorkalis. Anda seharusnya menerima balasan di $email dalam satu hari kerja.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Anda sudah beberapa kali mengirim email ke dukungan hari ini. Coba lagi besok, atau tulis langsung ke support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Verifikasi alamat email Anda dulu agar dukungan dapat membalas Anda.';
+
+  @override
+  String get assistantSupportFailed => 'Email tidak dapat dikirim. Coba lagi nanti, atau tulis langsung ke support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Undang ke rumah tangga Anda';
+
+  @override
+  String get assistantInviteNote => 'Vaultara mengirimi mereka tautan undangan lewat email. Tautan ini berfungsi sekali, selama 7 hari.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Undangan terkirim ke $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Undangan tidak dapat dikirim. Coba lagi, atau bagikan undangan dari rumah tangga Anda.';
+
+  @override
+  String get assistantCalendarNote => 'Aplikasi kalender Anda terbuka dengan acara dan pengingat 7 hari sebelumnya.';
+
+  @override
+  String get assistantSendLinkTitle => 'Kirim tautan aman';
+
+  @override
+  String get assistantSendLinkWorks => 'Tautan berlaku';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours jam';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Hanya tautan yang dikirim, bukan detailnya. Anda memilih cara mengirimnya, dan bisa menghentikannya lebih awal di $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Bulan mendatang';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Setiap tanggal 1, $assistant mengirimkan apa yang perlu diperpanjang, biayanya, dan perjalanan Anda yang akan datang';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Apa yang perlu saya lakukan bulan ini?';
+
+  @override
+  String get assistantStepSupport => 'Menulis email Anda';
+
+  @override
+  String get assistantStepSecurity => 'Memeriksa keamanan akun Anda';
+
+  @override
+  String get talkFinishOnScreen => 'Sudah terbuka di layar Anda. Selesaikan di sana, lalu ketuk untuk bicara lagi.';
 }

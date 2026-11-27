@@ -4437,5 +4437,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Escriu al suport de Vorkalis",
+  "assistantSupportMessage": "Missatge",
+  "assistantSupportNote": "S'hi afegeixen la versió de l'app, el telèfon, el sistema, l'idioma i el pla. El suport respon a l'adreça amb què inicies la sessió.",
+  "assistantSupportSent": "Enviat al suport de Vorkalis. Hauries de rebre resposta a {email} en un dia laborable.",
+  "assistantSupportLimit": "Avui ja has escrit al suport diverses vegades. Torna-ho a provar demà o escriu directament a support@vorkalis.com.",
+  "assistantSupportVerify": "Primer confirma la teva adreça electrònica perquè el suport et pugui respondre.",
+  "assistantSupportFailed": "No s'ha pogut enviar el correu. Torna-ho a provar més tard o escriu directament a support@vorkalis.com.",
+  "assistantInviteTitle": "Convida a la teva llar",
+  "assistantInviteNote": "Vaultara li envia per correu un enllaç d'invitació. Funciona una vegada, durant 7 dies.",
+  "assistantInviteSent": "Invitació enviada a {email}.",
+  "assistantInviteFailed": "No s'ha pogut enviar la invitació. Torna-ho a provar o comparteix una invitació des de la teva llar.",
+  "assistantCalendarNote": "L'app de calendari s'obre amb l'esdeveniment i una alarma 7 dies abans.",
+  "assistantSendLinkTitle": "Envia un enllaç segur",
+  "assistantSendLinkWorks": "L'enllaç funciona",
+  "assistantSendLinkHours": "{hours} h",
+  "assistantSendLinkNote": "Només s'envia un enllaç, mai les dades en si. Tu tries com enviar-lo i el pots aturar abans a {sharedLinks}.",
+  "monthAheadTitle": "El mes que ve",
+  "monthAheadSubtitle": "El dia 1, {assistant} t'envia què cal renovar, quant costa i els teus propers viatges",
+  "monthAheadQuestion": "Què he de fer aquest mes?",
+  "assistantStepSupport": "Escrivint el teu correu",
+  "assistantStepSecurity": "Comprovant la seguretat del teu compte",
+  "talkFinishOnScreen": "Està obert a la pantalla. Acaba-ho allà i després toca per tornar a parlar."
 }

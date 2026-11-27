@@ -26,5 +26,11 @@
   "staffOverdueTitle": "የሠራተኛ ሰነድ ጊዜው አልፏል",
   "staffOverdueYesterday": "የ{person} {name} ትናንት ጊዜው አልፏል እና አልታደሰም።",
   "staffOverdueWeek": "የ{person} {name} ከአንድ ሳምንት በፊት ጊዜው አልፏል እና አሁንም አልታደሰም።",
-  "staffOverdueMany": "{count} የሠራተኛ ሰነዶች ጊዜያቸው አልፏል እና አልታደሱም፦ {names}።"
+  "staffOverdueMany": "{count} የሠራተኛ ሰነዶች ጊዜያቸው አልፏል እና አልታደሱም፦ {names}።",
+  "monthAheadTitle": "የሚመጣው ወርዎ",
+  "monthAheadBodyCount": "በዚህ ወር የሚታደሱ፦ {count}። ምን ማድረግ እንዳለብዎት ለማየት ይንኩ።",
+  "monthAheadBodyCost": "በዚህ ወር የሚታደሱ፦ {count}፣ በግምት {cost}። ምን ማድረግ እንዳለብዎት ለማየት ይንኩ።",
+  "monthAheadBodyCountTrips": "በዚህ ወር የሚታደሱ፦ {count}። በሚቀጥሉት 6 ሳምንታት ጉዞዎች፦ {trips}። ምን ማድረግ እንዳለብዎት ለማየት ይንኩ።",
+  "monthAheadBodyCostTrips": "በዚህ ወር የሚታደሱ፦ {count}፣ በግምት {cost}። በሚቀጥሉት 6 ሳምንታት ጉዞዎች፦ {trips}። ምን ማድረግ እንዳለብዎት ለማየት ይንኩ።",
+  "monthAheadBodyTrips": "በዚህ ወር የሚታደስ ነገር የለም። በሚቀጥሉት 6 ሳምንታት ጉዞዎች፦ {trips}። ምን ማድረግ እንዳለብዎት ለማየት ይንኩ።"
 }

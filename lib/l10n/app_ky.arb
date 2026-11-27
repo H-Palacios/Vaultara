@@ -4424,5 +4424,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Vorkalis колдоо кызматына жазуу",
+  "assistantSupportMessage": "Билдирүү",
+  "assistantSupportNote": "Колдонмонун версиясы, телефон, система, тил жана план кошулат. Колдоо кызматы сиз кирген электрондук почтага жооп берет.",
+  "assistantSupportSent": "Vorkalis колдоо кызматына жөнөтүлдү. Бир иш күнүнүн ичинде {email} дарегине жооп келиши керек.",
+  "assistantSupportLimit": "Бүгүн колдоо кызматына бир нече жолу жаздыңыз. Эртең кайра аракет кылыңыз же түз эле support@vorkalis.com дарегине жазыңыз.",
+  "assistantSupportVerify": "Колдоо кызматы жооп бере алышы үчүн адегенде электрондук почтаңызды ырастаңыз.",
+  "assistantSupportFailed": "Кат жөнөтүлгөн жок. Кийинчерээк кайра аракет кылыңыз же түз эле support@vorkalis.com дарегине жазыңыз.",
+  "assistantInviteTitle": "Үй-бүлөңүзгө чакыруу",
+  "assistantInviteNote": "Vaultara аларга электрондук почта аркылуу чакыруу шилтемесин жөнөтөт. Ал бир жолу, 7 күн иштейт.",
+  "assistantInviteSent": "Чакыруу {email} дарегине жөнөтүлдү.",
+  "assistantInviteFailed": "Чакыруу жөнөтүлгөн жок. Кайра аракет кылыңыз же анын ордуна үй-бүлөңүздөн чакыруу бөлүшүңүз.",
+  "assistantCalendarNote": "Жылнаама колдонмосу окуя жана 7 күн мурунку эскертме менен ачылат.",
+  "assistantSendLinkTitle": "Коопсуз шилтеме жөнөтүү",
+  "assistantSendLinkWorks": "Шилтеме жарактуу",
+  "assistantSendLinkHours": "{hours} саат",
+  "assistantSendLinkNote": "Шилтеме гана жөнөтүлөт, маалыматтардын өзү эч качан. Кантип жөнөтүүнү өзүңүз тандайсыз жана аны «{sharedLinks}» бөлүмүндө эртерээк токтото аласыз.",
+  "monthAheadTitle": "Алдыдагы ай",
+  "monthAheadSubtitle": "Ар айдын 1-күнү {assistant} эмнени жаңыртуу керектигин, анын баасын жана алдыдагы сапарларыңызды жөнөтөт",
+  "monthAheadQuestion": "Бул айда эмне кылышым керек?",
+  "assistantStepSupport": "Катыңыз жазылууда",
+  "assistantStepSecurity": "Аккаунтуңуздун коопсуздугу текшерилүүдө",
+  "talkFinishOnScreen": "Экраныңызда ачык турат. Ошол жерде бүтүрүп, кайра сүйлөө үчүн басыңыз."
 }

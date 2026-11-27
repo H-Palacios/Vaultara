@@ -3190,16 +3190,16 @@ class AppLocalizationsLv extends AppLocalizations {
   String get planGetPremium => 'Iegūt Premium';
 
   @override
-  String get businessPlanBuy => 'Iegūt uzņēmumu plānu';
-
-  @override
   String get individualPlanBuy => 'Iegūt Individuālo';
 
   @override
-  String get businessPlanSwitch => 'Pāriet uz uzņēmumu plānu';
+  String get individualPlanSwitch => 'Pārslēgties uz Individuālo';
 
   @override
-  String get individualPlanSwitch => 'Pārslēgties uz Individuālo';
+  String get businessPlanBuy => 'Iegūt uzņēmumu plānu';
+
+  @override
+  String get businessPlanSwitch => 'Pāriet uz uzņēmumu plānu';
 
   @override
   String get planSwitchToYearly => 'Pāriet uz gada plānu';
@@ -4958,8 +4958,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get assistantEmptyReply => 'Neizdevās atrast atbildi. Pamēģiniet jautāt citādi.';
 
   @override
-  String get assistantDraftReady =>
-      'Lūk, informācija. Pieskarieties Apstiprināt, lai to saglabātu.';
+  String get assistantDraftReady => 'Lūk, informācija. Pieskarieties Apstiprināt, lai to saglabātu.';
 
   @override
   String get assistantNewChat => 'Jauna saruna';
@@ -6743,27 +6742,27 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Pievienot vakcinācijas: ${name}';
+    return 'Pievienot vakcinācijas: $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Pievienot mikročipu: ${name}';
+    return 'Pievienot mikročipu: $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Pievienot mājdzīvnieka apdrošināšanu: ${name}';
+    return 'Pievienot mājdzīvnieka apdrošināšanu: $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Pievienot pasi: ${name}';
+    return 'Pievienot pasi: $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Tālāk: ${step}. Sakiet jā, lai to izdarītu.';
+    return 'Tālāk: $step. Sakiet jā, lai to izdarītu.';
   }
 
   @override
@@ -9051,10 +9050,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get petTypeFieldHint => 'Ievadiet mājdzīvnieka sugu';
 
   @override
-  String get petBirthdayHint => 'Izvēlieties dzimšanas datumu';
+  String get petTypeRequired => 'Izvēlieties mājdzīvnieka sugu';
 
   @override
-  String get petTypeRequired => 'Izvēlieties mājdzīvnieka sugu';
+  String get petBirthdayHint => 'Izvēlieties dzimšanas datumu';
 
   @override
   String get petChipHint => 'Ievadiet mikročipa numuru';
@@ -10733,4 +10732,80 @@ class AppLocalizationsLv extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Esat sasniedzis šodienas “Jautāt Vaultara” limitu. Tas atjaunojas rīt plkst. $time. Viss pārējais Vaultara darbojas kā parasti.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Rakstīt Vorkalis atbalstam';
+
+  @override
+  String get assistantSupportMessage => 'Ziņa';
+
+  @override
+  String get assistantSupportNote => 'Tiek pievienota lietotnes versija, tālrunis, sistēma, valoda un plāns. Atbalsts atbild uz e-pasta adresi, ar kuru piesakāties.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Nosūtīts Vorkalis atbalstam. Atbilde uz $email jāsaņem vienas darba dienas laikā.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Šodien jau vairākkārt rakstījāt atbalstam. Mēģiniet vēlreiz rīt vai rakstiet paši uz support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Vispirms apstipriniet savu e-pasta adresi, lai atbalsts varētu jums atbildēt.';
+
+  @override
+  String get assistantSupportFailed => 'E-pastu neizdevās nosūtīt. Mēģiniet vēlāk vai rakstiet paši uz support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Uzaicināt uz jūsu mājsaimniecību';
+
+  @override
+  String get assistantInviteNote => 'Vaultara nosūta viņiem uzaicinājuma saiti e-pastā. Tā darbojas vienu reizi, 7 dienas.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Uzaicinājums nosūtīts uz $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Uzaicinājumu neizdevās nosūtīt. Mēģiniet vēlreiz vai kopīgojiet uzaicinājumu no savas mājsaimniecības.';
+
+  @override
+  String get assistantCalendarNote => 'Jūsu kalendāra lietotne atveras ar notikumu un atgādinājumu 7 dienas iepriekš.';
+
+  @override
+  String get assistantSendLinkTitle => 'Nosūtīt drošu saiti';
+
+  @override
+  String get assistantSendLinkWorks => 'Saite darbojas';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours h';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Tiek nosūtīta tikai saite, nekad paši dati. Jūs izvēlaties, kā to nosūtīt, un varat to apturēt agrāk sadaļā $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Gaidāmais mēnesis';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Katra mēneša 1. datumā $assistant nosūta, kas jāatjauno, cik tas maksā un jūsu gaidāmos braucienus';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Kas man jāizdara šajā mēnesī?';
+
+  @override
+  String get assistantStepSupport => 'Rakstu jūsu e-pastu';
+
+  @override
+  String get assistantStepSecurity => 'Pārbaudu jūsu konta drošību';
+
+  @override
+  String get talkFinishOnScreen => 'Tas ir atvērts ekrānā. Pabeidziet tur, pēc tam pieskarieties, lai runātu vēlreiz.';
 }

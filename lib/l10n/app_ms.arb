@@ -4406,5 +4406,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "E-mel sokongan Vorkalis",
+  "assistantSupportMessage": "Mesej",
+  "assistantSupportNote": "Versi apl, telefon, sistem, bahasa dan pelan ditambah. Sokongan membalas ke e-mel yang anda gunakan untuk log masuk.",
+  "assistantSupportSent": "Dihantar kepada sokongan Vorkalis. Anda sepatutnya menerima balasan di {email} dalam satu hari bekerja.",
+  "assistantSupportLimit": "Anda sudah beberapa kali menghantar e-mel kepada sokongan hari ini. Cuba lagi esok, atau tulis terus ke support@vorkalis.com.",
+  "assistantSupportVerify": "Sahkan alamat e-mel anda dahulu supaya sokongan boleh membalas anda.",
+  "assistantSupportFailed": "E-mel tidak dapat dihantar. Cuba lagi nanti, atau tulis terus ke support@vorkalis.com.",
+  "assistantInviteTitle": "Jemput ke isi rumah anda",
+  "assistantInviteNote": "Vaultara menghantar pautan jemputan melalui e-mel kepada mereka. Ia berfungsi sekali, selama 7 hari.",
+  "assistantInviteSent": "Jemputan dihantar kepada {email}.",
+  "assistantInviteFailed": "Jemputan tidak dapat dihantar. Cuba lagi, atau kongsi jemputan daripada isi rumah anda.",
+  "assistantCalendarNote": "Apl kalendar anda dibuka dengan acara dan peringatan 7 hari sebelumnya.",
+  "assistantSendLinkTitle": "Hantar pautan selamat",
+  "assistantSendLinkWorks": "Pautan sah",
+  "assistantSendLinkHours": "{hours} jam",
+  "assistantSendLinkNote": "Hanya pautan yang dihantar, bukan butirannya. Anda pilih cara menghantarnya, dan boleh menghentikannya lebih awal di {sharedLinks}.",
+  "monthAheadTitle": "Bulan akan datang",
+  "monthAheadSubtitle": "Setiap 1 haribulan, {assistant} menghantar apa yang perlu diperbaharui, kosnya dan perjalanan anda yang akan datang",
+  "monthAheadQuestion": "Apa yang perlu saya buat bulan ini?",
+  "assistantStepSupport": "Menulis e-mel anda",
+  "assistantStepSecurity": "Menyemak keselamatan akaun anda",
+  "talkFinishOnScreen": "Ia terbuka pada skrin anda. Selesaikan di sana, kemudian ketik untuk bercakap lagi."
 }

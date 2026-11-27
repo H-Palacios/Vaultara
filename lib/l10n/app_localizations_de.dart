@@ -3167,16 +3167,16 @@ class AppLocalizationsDe extends AppLocalizations {
   String get planGetPremium => 'Premium holen';
 
   @override
-  String get businessPlanBuy => 'Business holen';
-
-  @override
   String get individualPlanBuy => 'Einzelplan holen';
 
   @override
-  String get businessPlanSwitch => 'Zu Business wechseln';
+  String get individualPlanSwitch => 'Zum Einzelplan wechseln';
 
   @override
-  String get individualPlanSwitch => 'Zum Einzelplan wechseln';
+  String get businessPlanBuy => 'Business holen';
+
+  @override
+  String get businessPlanSwitch => 'Zu Business wechseln';
 
   @override
   String get planSwitchToYearly => 'Zu jährlich wechseln';
@@ -4915,8 +4915,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get assistantEmptyReply => 'Ich konnte keine Antwort finden. Versuche es mit einer anderen Frage.';
 
   @override
-  String get assistantDraftReady =>
-      'Hier sind die Angaben. Tippe auf Bestätigen, um sie zu speichern.';
+  String get assistantDraftReady => 'Hier sind die Angaben. Tippe auf Bestätigen, um sie zu speichern.';
 
   @override
   String get assistantNewChat => 'Neuer Chat';
@@ -6683,27 +6682,27 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Impfungen für ${name} hinzufügen';
+    return 'Impfungen für $name hinzufügen';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Mikrochip für ${name} hinzufügen';
+    return 'Mikrochip für $name hinzufügen';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Tierversicherung für ${name} hinzufügen';
+    return 'Tierversicherung für $name hinzufügen';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Reisepass für ${name} hinzufügen';
+    return 'Reisepass für $name hinzufügen';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Als Nächstes: ${step}. Sag ja, dann mache ich es.';
+    return 'Als Nächstes: $step. Sag ja, dann mache ich es.';
   }
 
   @override
@@ -8989,10 +8988,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get petTypeFieldHint => 'Gib die Tierart ein';
 
   @override
-  String get petBirthdayHint => 'Geburtsdatum auswählen';
+  String get petTypeRequired => 'Wähle die Tierart';
 
   @override
-  String get petTypeRequired => 'Wähle die Tierart';
+  String get petBirthdayHint => 'Geburtsdatum auswählen';
 
   @override
   String get petChipHint => 'Gib die Mikrochipnummer ein';
@@ -10402,8 +10401,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get talkNoVoice => 'Dein Telefon hat keine Stimme für diese Sprache, daher werden Antworten angezeigt, aber nicht vorgelesen.';
 
   @override
-  String get talkNotDone =>
-      'Das hat nicht geklappt. Prüfe die Angaben auf dem Bildschirm.';
+  String get talkNotDone => 'Das hat nicht geklappt. Prüfe die Angaben auf dem Bildschirm.';
 
   @override
   String get talkReady => 'Ich höre zu.';
@@ -10667,4 +10665,80 @@ class AppLocalizationsDe extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Du hast das heutige Limit für „Vaultara fragen“ erreicht. Es setzt sich morgen um $time zurück. Alles andere in Vaultara funktioniert wie gewohnt.';
   }
+
+  @override
+  String get assistantSupportTitle => 'E-Mail an den Vorkalis-Support';
+
+  @override
+  String get assistantSupportMessage => 'Nachricht';
+
+  @override
+  String get assistantSupportNote => 'App-Version, Handy, System, Sprache und Tarif werden hinzugefügt. Der Support antwortet an die E-Mail-Adresse, mit der du dich anmeldest.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'An den Vorkalis-Support gesendet. Du solltest innerhalb eines Werktags eine Antwort an $email erhalten.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Du hast dem Support heute schon mehrmals geschrieben. Versuche es morgen erneut oder schreib selbst an support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Bestätige zuerst deine E-Mail-Adresse, damit der Support dir antworten kann.';
+
+  @override
+  String get assistantSupportFailed => 'Die E-Mail konnte nicht gesendet werden. Versuche es später erneut oder schreib selbst an support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'In deinen Haushalt einladen';
+
+  @override
+  String get assistantInviteNote => 'Vaultara schickt ihnen einen Einladungslink per E-Mail. Er funktioniert einmal, 7 Tage lang.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Einladung an $email gesendet.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Die Einladung konnte nicht gesendet werden. Versuche es erneut oder teile stattdessen eine Einladung aus deinem Haushalt.';
+
+  @override
+  String get assistantCalendarNote => 'Deine Kalender-App öffnet sich mit dem Termin und einer Erinnerung 7 Tage vorher.';
+
+  @override
+  String get assistantSendLinkTitle => 'Sicheren Link senden';
+
+  @override
+  String get assistantSendLinkWorks => 'Link gültig für';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours Std.';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Es wird nur ein Link gesendet, nie die Angaben selbst. Du wählst, wie du ihn sendest, und kannst ihn unter $sharedLinks früher beenden.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Monatsvorschau';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Am 1. schickt dir $assistant, was zu erneuern ist, was es kostet und deine anstehenden Reisen';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Was muss ich diesen Monat erledigen?';
+
+  @override
+  String get assistantStepSupport => 'Deine E-Mail wird geschrieben';
+
+  @override
+  String get assistantStepSecurity => 'Sicherheit deines Kontos wird geprüft';
+
+  @override
+  String get talkFinishOnScreen => 'Es ist auf deinem Bildschirm geöffnet. Schließ es dort ab und tippe dann, um wieder zu sprechen.';
 }

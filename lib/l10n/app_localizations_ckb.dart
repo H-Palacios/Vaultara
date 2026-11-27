@@ -3167,16 +3167,16 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get planGetPremium => 'پرێمیۆم وەربگرە';
 
   @override
-  String get businessPlanBuy => 'پلانی بازرگانی وەربگرە';
-
-  @override
   String get individualPlanBuy => 'وەرگرتنی تاکەکەسی';
 
   @override
-  String get businessPlanSwitch => 'گۆڕین بۆ بازرگانی';
+  String get individualPlanSwitch => 'گۆڕین بۆ تاکەکەسی';
 
   @override
-  String get individualPlanSwitch => 'گۆڕین بۆ تاکەکەسی';
+  String get businessPlanBuy => 'پلانی بازرگانی وەربگرە';
+
+  @override
+  String get businessPlanSwitch => 'گۆڕین بۆ بازرگانی';
 
   @override
   String get planSwitchToYearly => 'گۆڕین بۆ ساڵانە';
@@ -4915,8 +4915,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get assistantEmptyReply => 'نەمتوانی وەڵامێک بدۆزمەوە. بە شێوازێکی تر بپرسە.';
 
   @override
-  String get assistantDraftReady =>
-      'ئەمە وردەکارییەکانە. بۆ پاشەکەوتکردن پشتڕاستکردنەوە دابگرە.';
+  String get assistantDraftReady => 'ئەمە وردەکارییەکانە. بۆ پاشەکەوتکردن پشتڕاستکردنەوە دابگرە.';
 
   @override
   String get assistantNewChat => 'گفتوگۆی نوێ';
@@ -6683,27 +6682,27 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'ڤاکسینەکان بۆ ${name} زیاد بکە';
+    return 'ڤاکسینەکان بۆ $name زیاد بکە';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'مایکرۆچیپەکە بۆ ${name} زیاد بکە';
+    return 'مایکرۆچیپەکە بۆ $name زیاد بکە';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'بیمەی ئاژەڵ بۆ ${name} زیاد بکە';
+    return 'بیمەی ئاژەڵ بۆ $name زیاد بکە';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'پاسپۆرتێک بۆ ${name} زیاد بکە';
+    return 'پاسپۆرتێک بۆ $name زیاد بکە';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'دواتر: ${step}. بڵێ بەڵێ بۆ ئەنجامدانی.';
+    return 'دواتر: $step. بڵێ بەڵێ بۆ ئەنجامدانی.';
   }
 
   @override
@@ -8985,10 +8984,10 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get petTypeFieldHint => 'جۆری ئاژەڵەکە بنووسە';
 
   @override
-  String get petBirthdayHint => 'بەرواری لەدایکبوون هەڵبژێرە';
+  String get petTypeRequired => 'جۆری ئاژەڵەکە هەڵبژێرە';
 
   @override
-  String get petTypeRequired => 'جۆری ئاژەڵەکە هەڵبژێرە';
+  String get petBirthdayHint => 'بەرواری لەدایکبوون هەڵبژێرە';
 
   @override
   String get petChipHint => 'ژمارەی مایکرۆچیپ بنووسە';
@@ -10396,8 +10395,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get talkNoVoice => 'مۆبایلەکەت دەنگی ئەم زمانەی نییە، بۆیە وەڵامەکان پیشان دەدرێن بەڵام ناخوێندرێنەوە.';
 
   @override
-  String get talkNotDone =>
-      'سەرکەوتوو نەبوو. وردەکارییەکانی سەر شاشەکە بپشکنە.';
+  String get talkNotDone => 'سەرکەوتوو نەبوو. وردەکارییەکانی سەر شاشەکە بپشکنە.';
 
   @override
   String get talkReady => 'گوێ دەگرم.';
@@ -10661,4 +10659,80 @@ class AppLocalizationsCkb extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'گەیشتیتە سنووری ئەمڕۆی «لە Vaultara بپرسە». سبەی لە $time نوێ دەبێتەوە. هەموو شتێکی تری Vaultara وەک هەمیشە کار دەکات.';
   }
+
+  @override
+  String get assistantSupportTitle => 'ئیمەیڵ بۆ پشتگیریی Vorkalis';
+
+  @override
+  String get assistantSupportMessage => 'نامە';
+
+  @override
+  String get assistantSupportNote => 'وەشانی ئەپ، مۆبایل، سیستەم، زمان و پلان زیاد دەکرێن. پشتگیری وەڵام بۆ ئەو ئیمەیڵە دەنێرێت کە پێی دەچیتە ژوورەوە.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'بۆ پشتگیریی Vorkalis نێردرا. دەبێت لە ماوەی یەک ڕۆژی کاردا وەڵام لە $email وەربگریت.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'ئەمڕۆ چەند جار بۆ پشتگیری نووسیوتە. سبەی دووبارە هەوڵ بدەرەوە یان ڕاستەوخۆ بۆ support@vorkalis.com بنووسە.';
+
+  @override
+  String get assistantSupportVerify => 'سەرەتا ئیمەیڵەکەت پشتڕاست بکەرەوە بۆ ئەوەی پشتگیری بتوانێت وەڵامت بداتەوە.';
+
+  @override
+  String get assistantSupportFailed => 'ئیمەیڵەکە نەنێردرا. دواتر هەوڵ بدەرەوە یان ڕاستەوخۆ بۆ support@vorkalis.com بنووسە.';
+
+  @override
+  String get assistantInviteTitle => 'بانگهێشت بۆ خێزانەکەت';
+
+  @override
+  String get assistantInviteNote => 'Vaultara بەستەرێکی بانگهێشتیان بە ئیمەیڵ بۆ دەنێرێت. یەک جار، بۆ ماوەی 7 ڕۆژ کار دەکات.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'بانگهێشت بۆ $email نێردرا.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'بانگهێشتەکە نەنێردرا. دووبارە هەوڵ بدەرەوە یان لە جیاتی ئەوە بانگهێشتێک لە خێزانەکەتەوە هاوبەش بکە.';
+
+  @override
+  String get assistantCalendarNote => 'ئەپی ڕۆژژمێرەکەت لەگەڵ ڕووداوەکە و بیرخەرەوەیەک 7 ڕۆژ پێشتر دەکرێتەوە.';
+
+  @override
+  String get assistantSendLinkTitle => 'ناردنی بەستەرێکی پارێزراو';
+
+  @override
+  String get assistantSendLinkWorks => 'بەستەر کار دەکات بۆ';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours کاتژمێر';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'تەنها بەستەرێک دەنێردرێت، هەرگیز خودی وردەکارییەکان نا. خۆت هەڵدەبژێریت چۆن بینێریت، و دەتوانیت زووتر لە $sharedLinks ڕایبگریت.';
+  }
+
+  @override
+  String get monthAheadTitle => 'مانگی داهاتوو';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'لە یەکی هەموو مانگێکدا $assistant دەنێرێت چی پێویستی بە نوێکردنەوە هەیە، تێچووەکەی و گەشتە داهاتووەکانت';
+  }
+
+  @override
+  String get monthAheadQuestion => 'ئەم مانگە چی بکەم؟';
+
+  @override
+  String get assistantStepSupport => 'ئیمەیڵەکەت دەنووسرێت';
+
+  @override
+  String get assistantStepSecurity => 'پاراستنی هەژمارەکەت دەپشکنرێت';
+
+  @override
+  String get talkFinishOnScreen => 'لەسەر شاشەکەت کراوەتەوە. لەوێ تەواوی بکە، پاشان دەست لێ بدە بۆ ئەوەی دووبارە قسە بکەیت.';
 }

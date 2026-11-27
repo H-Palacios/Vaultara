@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Dokument zaposlenega je potekel",
   "staffOverdueYesterday": "{name} za {person} je potekel včeraj in ni obnovljen.",
   "staffOverdueWeek": "{name} za {person} je potekel pred tednom in še vedno ni obnovljen.",
-  "staffOverdueMany": "Poteklo je {count} dokumentov zaposlenih, ki niso obnovljeni: {names}."
+  "staffOverdueMany": "Poteklo je {count} dokumentov zaposlenih, ki niso obnovljeni: {names}.",
+  "monthAheadTitle": "Vaš prihodnji mesec",
+  "monthAheadBodyCount": "Za podaljšanje ta mesec: {count}. Tapnite, da vidite, kaj storiti.",
+  "monthAheadBodyCost": "Za podaljšanje ta mesec: {count}, približno {cost}. Tapnite, da vidite, kaj storiti.",
+  "monthAheadBodyCountTrips": "Za podaljšanje ta mesec: {count}. Potovanja v naslednjih 6 tednih: {trips}. Tapnite, da vidite, kaj storiti.",
+  "monthAheadBodyCostTrips": "Za podaljšanje ta mesec: {count}, približno {cost}. Potovanja v naslednjih 6 tednih: {trips}. Tapnite, da vidite, kaj storiti.",
+  "monthAheadBodyTrips": "Ta mesec ni treba ničesar podaljšati. Potovanja v naslednjih 6 tednih: {trips}. Tapnite, da vidite, kaj storiti."
 }

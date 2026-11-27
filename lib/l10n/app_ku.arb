@@ -4406,5 +4406,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Ji piştgiriya Vorkalis re e-name binivîse",
+  "assistantSupportMessage": "Peyam",
+  "assistantSupportNote": "Guhertoya sepanê, telefon, pergal, ziman û plan têne zêdekirin. Piştgirî bersivê dide wê e-nameyê ku tu pê têdikevî.",
+  "assistantSupportSent": "Ji piştgiriya Vorkalis re hat şandin. Divê di nav rojeke kar de bersiv bigihîje {email}.",
+  "assistantSupportLimit": "Te îro çend caran ji piştgiriyê re nivîsand. Sibê dîsa biceribîne an rasterast ji support@vorkalis.com re binivîse.",
+  "assistantSupportVerify": "Pêşî navnîşana e-nameya xwe piştrast bike, da ku piştgirî bikaribe bersiva te bide.",
+  "assistantSupportFailed": "E-name nehat şandin. Paşê dîsa biceribîne an rasterast ji support@vorkalis.com re binivîse.",
+  "assistantInviteTitle": "Vexwîne malbata xwe",
+  "assistantInviteNote": "Vaultara bi e-nameyê girêdaneke vexwendinê ji wan re dişîne. Carekê, 7 rojan dixebite.",
+  "assistantInviteSent": "Vexwendin ji {email} re hat şandin.",
+  "assistantInviteFailed": "Vexwendin nehat şandin. Dîsa biceribîne an li şûnê vexwendinekê ji malbata xwe parve bike.",
+  "assistantCalendarNote": "Sepana salnameyê bi bûyerê û bîranîneke 7 roj berê vedibe.",
+  "assistantSendLinkTitle": "Girêdaneke ewle bişîne",
+  "assistantSendLinkWorks": "Girêdan dixebite ji bo",
+  "assistantSendLinkHours": "{hours} st",
+  "assistantSendLinkNote": "Tenê girêdanek tê şandin, qet ne hûrgilî bi xwe. Tu hildibijêrî ka çawa bişînî, û dikarî zûtir di {sharedLinks} de rawestînî.",
+  "monthAheadTitle": "Meha pêş",
+  "monthAheadSubtitle": "Di 1ê her mehê de {assistant} dişîne ka çi divê were nûkirin, çiqas lê tê û rêwîtiyên te yên pêş",
+  "monthAheadQuestion": "Divê ez vê mehê çi bikim?",
+  "assistantStepSupport": "E-nameya te tê nivîsandin",
+  "assistantStepSecurity": "Ewlehiya hesabê te tê kontrolkirin",
+  "talkFinishOnScreen": "Li ser ekrana te vekirî ye. Li wir biqedîne, paşê bitepîne da ku dîsa biaxivî."
 }

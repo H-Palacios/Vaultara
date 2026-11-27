@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Document d'un employé expiré",
   "staffOverdueYesterday": "{name} de {person} a expiré hier et n'a pas été renouvelé.",
   "staffOverdueWeek": "{name} de {person} a expiré il y a une semaine et n'est toujours pas renouvelé.",
-  "staffOverdueMany": "{count} documents du personnel ont expiré sans être renouvelés : {names}."
+  "staffOverdueMany": "{count} documents du personnel ont expiré sans être renouvelés : {names}.",
+  "monthAheadTitle": "Votre mois à venir",
+  "monthAheadBodyCount": "À renouveler ce mois-ci : {count}. Touchez pour voir quoi faire.",
+  "monthAheadBodyCost": "À renouveler ce mois-ci : {count}, environ {cost}. Touchez pour voir quoi faire.",
+  "monthAheadBodyCountTrips": "À renouveler ce mois-ci : {count}. Voyages dans les 6 prochaines semaines : {trips}. Touchez pour voir quoi faire.",
+  "monthAheadBodyCostTrips": "À renouveler ce mois-ci : {count}, environ {cost}. Voyages dans les 6 prochaines semaines : {trips}. Touchez pour voir quoi faire.",
+  "monthAheadBodyTrips": "Rien à renouveler ce mois-ci. Voyages dans les 6 prochaines semaines : {trips}. Touchez pour voir quoi faire."
 }

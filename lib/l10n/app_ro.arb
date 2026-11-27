@@ -4406,5 +4406,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Scrie suportului Vorkalis",
+  "assistantSupportMessage": "Mesaj",
+  "assistantSupportNote": "Se adaugă versiunea aplicației, telefonul, sistemul, limba și abonamentul. Suportul răspunde la adresa de e-mail cu care te conectezi.",
+  "assistantSupportSent": "Trimis la suportul Vorkalis. Ar trebui să primești un răspuns la {email} în cel mult o zi lucrătoare.",
+  "assistantSupportLimit": "Ai scris deja de mai multe ori azi suportului. Încearcă mâine sau scrie direct la support@vorkalis.com.",
+  "assistantSupportVerify": "Confirmă mai întâi adresa de e-mail, ca suportul să îți poată răspunde.",
+  "assistantSupportFailed": "E-mailul nu a putut fi trimis. Încearcă mai târziu sau scrie direct la support@vorkalis.com.",
+  "assistantInviteTitle": "Invită în gospodăria ta",
+  "assistantInviteNote": "Vaultara îi trimite pe e-mail un link de invitație. Funcționează o singură dată, timp de 7 zile.",
+  "assistantInviteSent": "Invitație trimisă la {email}.",
+  "assistantInviteFailed": "Invitația nu a putut fi trimisă. Încearcă din nou sau trimite mai bine o invitație din gospodăria ta.",
+  "assistantCalendarNote": "Aplicația de calendar se deschide cu evenimentul și o alarmă cu 7 zile înainte.",
+  "assistantSendLinkTitle": "Trimite un link securizat",
+  "assistantSendLinkWorks": "Linkul funcționează",
+  "assistantSendLinkHours": "{hours} h",
+  "assistantSendLinkNote": "Se trimite doar un link, niciodată datele în sine. Tu alegi cum îl trimiți și îl poți opri mai devreme în {sharedLinks}.",
+  "monthAheadTitle": "Luna care vine",
+  "monthAheadSubtitle": "Pe 1 ale lunii, {assistant} îți trimite ce trebuie reînnoit, cât costă și călătoriile tale următoare",
+  "monthAheadQuestion": "Ce trebuie să fac luna aceasta?",
+  "assistantStepSupport": "Îți scriu e-mailul",
+  "assistantStepSecurity": "Verific securitatea contului tău",
+  "talkFinishOnScreen": "Este deschis pe ecran. Termină acolo, apoi atinge ca să vorbești din nou."
 }

@@ -4406,5 +4406,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "U dir iimayl taageerada Vorkalis",
+  "assistantSupportMessage": "Fariin",
+  "assistantSupportNote": "Waxaa lagu daraa nooca app-ka, taleefanka, nidaamka, luqadda iyo qorshaha. Taageeradu waxay ku jawaabtaa iimaylka aad ku gasho.",
+  "assistantSupportSent": "Waxaa loo diray taageerada Vorkalis. Waa inaad jawaab ka heshaa {email} gudaha hal maalin oo shaqo.",
+  "assistantSupportLimit": "Maanta dhowr jeer ayaad iimayl u dirtay taageerada. Isku day berri, ama si toos ah ugu qor support@vorkalis.com.",
+  "assistantSupportVerify": "Marka hore xaqiiji ciwaanka iimaylkaaga si ay taageeradu kuugu jawaabto.",
+  "assistantSupportFailed": "Iimaylka lama diri karin. Isku day mar dambe, ama si toos ah ugu qor support@vorkalis.com.",
+  "assistantInviteTitle": "Ku casuun gurigaaga",
+  "assistantInviteNote": "Vaultara waxay iimayl ugu dirtaa xiriirinta casuumaadda. Hal mar ayay shaqaysaa, 7 maalmood.",
+  "assistantInviteSent": "Casuumaadda waxaa loo diray {email}.",
+  "assistantInviteFailed": "Casuumaadda lama diri karin. Isku day mar kale, ama beddelkeeda la wadaag casuumaad gurigaaga.",
+  "assistantCalendarNote": "App-ka kalandarkaagu wuxuu ku furmayaa dhacdada iyo xasuusin 7 maalmood ka hor.",
+  "assistantSendLinkTitle": "Dir xiriirin ammaan ah",
+  "assistantSendLinkWorks": "Xiriirintu waxay shaqaysaa",
+  "assistantSendLinkHours": "{hours} saac",
+  "assistantSendLinkNote": "Xiriirin keliya ayaa la diraa, marnaba faahfaahinta lafteeda. Adiga ayaa dooranaya sida aad u dirayso, waxaadna hore ugu joojin kartaa {sharedLinks}.",
+  "monthAheadTitle": "Bisha soo socota",
+  "monthAheadSubtitle": "1-da bil kasta, {assistant} wuxuu soo diraa waxa la cusboonaysiinayo, qiimahooda iyo safarradaada soo socda",
+  "monthAheadQuestion": "Maxaan sameeyaa bishan?",
+  "assistantStepSupport": "Iimaylkaaga waa la qorayaa",
+  "assistantStepSecurity": "Amniga akoonkaaga waa la hubinayaa",
+  "talkFinishOnScreen": "Shaashaddaada ayuu ka furan yahay. Halkaas ku dhammee, kadib taabo si aad mar kale u hadasho."
 }

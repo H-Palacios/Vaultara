@@ -4418,5 +4418,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Mag-email sa suporta ng Vorkalis",
+  "assistantSupportMessage": "Mensahe",
+  "assistantSupportNote": "Idinadagdag ang bersyon ng app, telepono, system, wika at plan. Sumasagot ang suporta sa email na ginagamit mo sa pag-sign in.",
+  "assistantSupportSent": "Naipadala sa suporta ng Vorkalis. Dapat kang makatanggap ng sagot sa {email} sa loob ng isang araw ng trabaho.",
+  "assistantSupportLimit": "Ilang beses ka nang nag-email sa suporta ngayong araw. Subukan ulit bukas, o direktang sumulat sa support@vorkalis.com.",
+  "assistantSupportVerify": "I-verify muna ang iyong email address para masagot ka ng suporta.",
+  "assistantSupportFailed": "Hindi naipadala ang email. Subukan ulit mamaya, o direktang sumulat sa support@vorkalis.com.",
+  "assistantInviteTitle": "Mag-imbita sa iyong sambahayan",
+  "assistantInviteNote": "Magpapadala ang Vaultara ng link ng imbitasyon sa email nila. Gumagana ito nang isang beses, sa loob ng 7 araw.",
+  "assistantInviteSent": "Naipadala ang imbitasyon sa {email}.",
+  "assistantInviteFailed": "Hindi naipadala ang imbitasyon. Subukan ulit, o magbahagi na lang ng imbitasyon mula sa iyong sambahayan.",
+  "assistantCalendarNote": "Bubukas ang iyong calendar app kasama ang event at paalala 7 araw bago nito.",
+  "assistantSendLinkTitle": "Magpadala ng ligtas na link",
+  "assistantSendLinkWorks": "Tagal ng link",
+  "assistantSendLinkHours": "{hours} oras",
+  "assistantSendLinkNote": "Link lang ang ipinapadala, hindi kailanman ang mismong detalye. Ikaw ang pipili kung paano ito ipapadala, at puwede mo itong ihinto nang mas maaga sa {sharedLinks}.",
+  "monthAheadTitle": "Darating na buwan",
+  "monthAheadSubtitle": "Tuwing ika-1, ipinapadala ng {assistant} kung ano ang ire-renew, magkano ito at ang mga darating mong biyahe",
+  "monthAheadQuestion": "Ano ang kailangan kong gawin ngayong buwan?",
+  "assistantStepSupport": "Isinusulat ang iyong email",
+  "assistantStepSecurity": "Sinusuri ang seguridad ng iyong account",
+  "talkFinishOnScreen": "Nakabukas na ito sa screen mo. Tapusin mo roon, saka i-tap para makipag-usap ulit."
 }

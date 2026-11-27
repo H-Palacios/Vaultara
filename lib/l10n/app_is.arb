@@ -4411,5 +4411,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Senda Vorkalis-þjónustu tölvupóst",
+  "assistantSupportMessage": "Skilaboð",
+  "assistantSupportNote": "Útgáfa appsins, sími, kerfi, tungumál og áskrift bætast við. Þjónustan svarar á netfangið sem þú skráir þig inn með.",
+  "assistantSupportSent": "Sent til Vorkalis-þjónustu. Þú ættir að fá svar á {email} innan eins virks dags.",
+  "assistantSupportLimit": "Þú hefur þegar sent þjónustunni póst nokkrum sinnum í dag. Reyndu aftur á morgun, eða skrifaðu beint á support@vorkalis.com.",
+  "assistantSupportVerify": "Staðfestu fyrst netfangið þitt svo þjónustan geti svarað þér.",
+  "assistantSupportFailed": "Ekki tókst að senda tölvupóstinn. Reyndu aftur síðar, eða skrifaðu beint á support@vorkalis.com.",
+  "assistantInviteTitle": "Bjóða á heimilið þitt",
+  "assistantInviteNote": "Vaultara sendir þeim boðstengil í tölvupósti. Hann virkar einu sinni, í 7 daga.",
+  "assistantInviteSent": "Boð sent á {email}.",
+  "assistantInviteFailed": "Ekki tókst að senda boðið. Reyndu aftur, eða deildu frekar boði frá heimilinu þínu.",
+  "assistantCalendarNote": "Dagatalsappið þitt opnast með viðburðinum og áminningu 7 dögum áður.",
+  "assistantSendLinkTitle": "Senda öruggan tengil",
+  "assistantSendLinkWorks": "Tengillinn virkar í",
+  "assistantSendLinkHours": "{hours} klst.",
+  "assistantSendLinkNote": "Aðeins tengill er sendur, aldrei upplýsingarnar sjálfar. Þú velur hvernig hann er sendur og getur stöðvað hann fyrr í {sharedLinks}.",
+  "monthAheadTitle": "Mánuðurinn fram undan",
+  "monthAheadSubtitle": "Þann 1. sendir {assistant} hvað þarf að endurnýja, hvað það kostar og ferðirnar þínar fram undan",
+  "monthAheadQuestion": "Hvað þarf ég að gera í þessum mánuði?",
+  "assistantStepSupport": "Skrifa tölvupóstinn þinn",
+  "assistantStepSecurity": "Athuga öryggi aðgangsins þíns",
+  "talkFinishOnScreen": "Það er opið á skjánum. Kláraðu þar og ýttu svo til að tala aftur."
 }

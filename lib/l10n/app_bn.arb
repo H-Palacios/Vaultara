@@ -4437,5 +4437,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Vorkalis সহায়তায় ইমেল করুন",
+  "assistantSupportMessage": "বার্তা",
+  "assistantSupportNote": "অ্যাপ সংস্করণ, ফোন, সিস্টেম, ভাষা ও প্ল্যান যোগ করা হয়। আপনি যে ইমেল দিয়ে সাইন ইন করেন, সহায়তা সেখানে উত্তর দেয়।",
+  "assistantSupportSent": "Vorkalis সহায়তায় পাঠানো হয়েছে। এক কার্যদিবসের মধ্যে {email}-এ উত্তর পাওয়ার কথা।",
+  "assistantSupportLimit": "আজ আপনি ইতিমধ্যে কয়েকবার সহায়তায় ইমেল করেছেন। আগামীকাল আবার চেষ্টা করুন বা সরাসরি support@vorkalis.com-এ লিখুন।",
+  "assistantSupportVerify": "আগে আপনার ইমেল ঠিকানা যাচাই করুন, যাতে সহায়তা আপনাকে উত্তর দিতে পারে।",
+  "assistantSupportFailed": "ইমেল পাঠানো যায়নি। পরে আবার চেষ্টা করুন বা সরাসরি support@vorkalis.com-এ লিখুন।",
+  "assistantInviteTitle": "আপনার পরিবারে আমন্ত্রণ জানান",
+  "assistantInviteNote": "Vaultara তাদের ইমেলে একটি আমন্ত্রণ লিংক পাঠায়। এটি একবার, ৭ দিনের জন্য কাজ করে।",
+  "assistantInviteSent": "আমন্ত্রণ {email}-এ পাঠানো হয়েছে।",
+  "assistantInviteFailed": "আমন্ত্রণ পাঠানো যায়নি। আবার চেষ্টা করুন, বা এর বদলে আপনার পরিবার থেকে আমন্ত্রণ শেয়ার করুন।",
+  "assistantCalendarNote": "আপনার ক্যালেন্ডার অ্যাপ ইভেন্ট ও ৭ দিন আগের রিমাইন্ডার সহ খুলবে।",
+  "assistantSendLinkTitle": "নিরাপদ লিংক পাঠান",
+  "assistantSendLinkWorks": "লিংকের মেয়াদ",
+  "assistantSendLinkHours": "{hours} ঘ",
+  "assistantSendLinkNote": "শুধু একটি লিংক পাঠানো হয়, বিবরণ কখনো নয়। কীভাবে পাঠাবেন তা আপনি বেছে নেন, আর {sharedLinks}-এ আগেই এটি বন্ধ করতে পারেন।",
+  "monthAheadTitle": "আসন্ন মাস",
+  "monthAheadSubtitle": "প্রতি মাসের ১ তারিখে {assistant} জানায় কী নবায়ন করতে হবে, খরচ কত আর আপনার আসন্ন ভ্রমণগুলো",
+  "monthAheadQuestion": "এই মাসে আমাকে কী করতে হবে?",
+  "assistantStepSupport": "আপনার ইমেল লেখা হচ্ছে",
+  "assistantStepSecurity": "আপনার অ্যাকাউন্টের নিরাপত্তা পরীক্ষা করা হচ্ছে",
+  "talkFinishOnScreen": "এটি আপনার স্ক্রিনে খোলা আছে। সেখানে শেষ করুন, তারপর আবার কথা বলতে ট্যাপ করুন।"
 }

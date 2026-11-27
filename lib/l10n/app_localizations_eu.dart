@@ -3167,16 +3167,16 @@ class AppLocalizationsEu extends AppLocalizations {
   String get planGetPremium => 'Lortu Premium';
 
   @override
-  String get businessPlanBuy => 'Lortu Enpresa';
-
-  @override
   String get individualPlanBuy => 'Lortu Banakakoa';
 
   @override
-  String get businessPlanSwitch => 'Aldatu Enpresara';
+  String get individualPlanSwitch => 'Aldatu Banakakoa planera';
 
   @override
-  String get individualPlanSwitch => 'Aldatu Banakakoa planera';
+  String get businessPlanBuy => 'Lortu Enpresa';
+
+  @override
+  String get businessPlanSwitch => 'Aldatu Enpresara';
 
   @override
   String get planSwitchToYearly => 'Aldatu urtekora';
@@ -4915,8 +4915,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get assistantEmptyReply => 'Ez dut erantzunik aurkitu. Saiatu beste modu batean galdetzen.';
 
   @override
-  String get assistantDraftReady =>
-      'Hona hemen xehetasunak. Sakatu Berretsi gordetzeko.';
+  String get assistantDraftReady => 'Hona hemen xehetasunak. Sakatu Berretsi gordetzeko.';
 
   @override
   String get assistantNewChat => 'Txat berria';
@@ -6683,27 +6682,27 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Gehitu ${name}(r)en txertoak';
+    return 'Gehitu $name(r)en txertoak';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Gehitu ${name}(r)en mikrotxipa';
+    return 'Gehitu $name(r)en mikrotxipa';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Gehitu ${name}(r)en maskota-asegurua';
+    return 'Gehitu $name(r)en maskota-asegurua';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Gehitu pasaporte bat ${name}(r)entzat';
+    return 'Gehitu pasaporte bat $name(r)entzat';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Hurrengoa: ${step}. Esan bai egiteko.';
+    return 'Hurrengoa: $step. Esan bai egiteko.';
   }
 
   @override
@@ -8989,10 +8988,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get petTypeFieldHint => 'Idatzi maskota mota';
 
   @override
-  String get petBirthdayHint => 'Hautatu jaiotze-data';
+  String get petTypeRequired => 'Aukeratu maskota mota';
 
   @override
-  String get petTypeRequired => 'Aukeratu maskota mota';
+  String get petBirthdayHint => 'Hautatu jaiotze-data';
 
   @override
   String get petChipHint => 'Idatzi mikrotxiparen zenbakia';
@@ -10666,4 +10665,80 @@ class AppLocalizationsEu extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Gaurko \"Galdetu Vaultarari\" muga gainditu duzu. Bihar ${time}etan berrezartzen da. Vaultarako gainerako guztiak ohi bezala funtzionatzen du.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Idatzi Vorkalis-en laguntzari';
+
+  @override
+  String get assistantSupportMessage => 'Mezua';
+
+  @override
+  String get assistantSupportNote => 'Aplikazioaren bertsioa, telefonoa, sistema, hizkuntza eta plana gehitzen dira. Laguntzak saioa hasteko erabiltzen duzun helbidera erantzungo dizu.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Vorkalis-en laguntzara bidalita. Lanegun batean erantzuna jaso beharko zenuke $email helbidean.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Gaur dagoeneko hainbat aldiz idatzi diozu laguntzari. Saiatu bihar, edo idatzi zuzenean support@vorkalis.com helbidera.';
+
+  @override
+  String get assistantSupportVerify => 'Lehenik egiaztatu zure helbide elektronikoa, laguntzak erantzun ahal izan diezazun.';
+
+  @override
+  String get assistantSupportFailed => 'Ezin izan da mezua bidali. Saiatu geroago, edo idatzi zuzenean support@vorkalis.com helbidera.';
+
+  @override
+  String get assistantInviteTitle => 'Gonbidatu zure etxeko taldera';
+
+  @override
+  String get assistantInviteNote => 'Vaultarak gonbidapen-esteka bat bidaliko die posta elektronikoz. Behin funtzionatzen du, 7 egunez.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Gonbidapena bidali da $email helbidera.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Ezin izan da gonbidapena bidali. Saiatu berriro, edo partekatu gonbidapen bat zure etxeko taldetik.';
+
+  @override
+  String get assistantCalendarNote => 'Zure egutegi-aplikazioa gertaerarekin irekiko da, 7 egun lehenagoko alarmarekin.';
+
+  @override
+  String get assistantSendLinkTitle => 'Bidali esteka segurua';
+
+  @override
+  String get assistantSendLinkWorks => 'Estekak iraupena';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours h';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Esteka bat bakarrik bidaltzen da, inoiz ez datuak berak. Zuk aukeratzen duzu nola bidali, eta lehenago geldi dezakezu $sharedLinks atalean.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Datorren hilabetea';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Hilaren 1ean, $assistant-k berritu beharrekoa, zenbat kostatzen den eta zure hurrengo bidaiak bidaltzen ditu';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Zer egin behar dut hilabete honetan?';
+
+  @override
+  String get assistantStepSupport => 'Zure mezua idazten';
+
+  @override
+  String get assistantStepSecurity => 'Zure kontuaren segurtasuna egiaztatzen';
+
+  @override
+  String get talkFinishOnScreen => 'Zure pantailan irekita dago. Amaitu han, eta sakatu berriro hitz egiteko.';
 }

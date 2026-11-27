@@ -4571,5 +4571,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Kirjuta Vorkalise toele",
+  "assistantSupportMessage": "Sõnum",
+  "assistantSupportNote": "Lisatakse rakenduse versioon, telefon, süsteem, keel ja pakett. Tugi vastab e-posti aadressile, millega sisse logid.",
+  "assistantSupportSent": "Saadetud Vorkalise toele. Peaksid saama vastuse aadressile {email} ühe tööpäeva jooksul.",
+  "assistantSupportLimit": "Oled täna juba mitu korda toele kirjutanud. Proovi homme uuesti või kirjuta ise aadressile support@vorkalis.com.",
+  "assistantSupportVerify": "Kinnita esmalt oma e-posti aadress, et tugi saaks sulle vastata.",
+  "assistantSupportFailed": "E-kirja ei õnnestunud saata. Proovi hiljem uuesti või kirjuta ise aadressile support@vorkalis.com.",
+  "assistantInviteTitle": "Kutsu oma leibkonda",
+  "assistantInviteNote": "Vaultara saadab neile e-kirjaga kutselingi. See töötab ühe korra, 7 päeva jooksul.",
+  "assistantInviteSent": "Kutse saadetud aadressile {email}.",
+  "assistantInviteFailed": "Kutset ei õnnestunud saata. Proovi uuesti või jaga kutset hoopis oma leibkonnast.",
+  "assistantCalendarNote": "Sinu kalendrirakendus avaneb sündmusega ja meeldetuletusega 7 päeva varem.",
+  "assistantSendLinkTitle": "Saada turvaline link",
+  "assistantSendLinkWorks": "Link kehtib",
+  "assistantSendLinkHours": "{hours} h",
+  "assistantSendLinkNote": "Saadetakse ainult link, mitte kunagi andmeid ennast. Sina valid, kuidas see saata, ja saad selle varem lõpetada jaotises {sharedLinks}.",
+  "monthAheadTitle": "Eelseisev kuu",
+  "monthAheadSubtitle": "Iga kuu 1. päeval saadab {assistant}, mida uuendada, mis see maksab ja sinu eelseisvad reisid",
+  "monthAheadQuestion": "Mida ma pean sel kuul tegema?",
+  "assistantStepSupport": "Kirjutan sinu e-kirja",
+  "assistantStepSecurity": "Kontrollin sinu konto turvalisust",
+  "talkFinishOnScreen": "See on sinu ekraanil avatud. Lõpeta seal ja puuduta siis, et uuesti rääkida."
 }

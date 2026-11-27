@@ -3194,16 +3194,16 @@ class AppLocalizationsSr extends AppLocalizations {
   String get planGetPremium => 'Набави Premium';
 
   @override
-  String get businessPlanBuy => 'Набави Пословни';
-
-  @override
   String get individualPlanBuy => 'Изабери Појединачни';
 
   @override
-  String get businessPlanSwitch => 'Пређи на Пословни';
+  String get individualPlanSwitch => 'Пређи на Појединачни';
 
   @override
-  String get individualPlanSwitch => 'Пређи на Појединачни';
+  String get businessPlanBuy => 'Набави Пословни';
+
+  @override
+  String get businessPlanSwitch => 'Пређи на Пословни';
 
   @override
   String get planSwitchToYearly => 'Пређи на годишње';
@@ -4962,8 +4962,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String get assistantEmptyReply => 'Одговор није пронађен. Покушајте да питате на други начин.';
 
   @override
-  String get assistantDraftReady =>
-      'Ево детаља. Додирните Потврдите да их сачувате.';
+  String get assistantDraftReady => 'Ево детаља. Додирните Потврдите да их сачувате.';
 
   @override
   String get assistantNewChat => 'Нови разговор';
@@ -6747,27 +6746,27 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Додај вакцинације за ${name}';
+    return 'Додај вакцинације за $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Додај микрочип за ${name}';
+    return 'Додај микрочип за $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Додај осигурање љубимца за ${name}';
+    return 'Додај осигурање љубимца за $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Додај пасош за ${name}';
+    return 'Додај пасош за $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Следеће: ${step}. Реците да и урадићу то.';
+    return 'Следеће: $step. Реците да и урадићу то.';
   }
 
   @override
@@ -9055,10 +9054,10 @@ class AppLocalizationsSr extends AppLocalizations {
   String get petTypeFieldHint => 'Унесите врсту љубимца';
 
   @override
-  String get petBirthdayHint => 'Изаберите датум рођења';
+  String get petTypeRequired => 'Изаберите врсту љубимца';
 
   @override
-  String get petTypeRequired => 'Изаберите врсту љубимца';
+  String get petBirthdayHint => 'Изаберите датум рођења';
 
   @override
   String get petChipHint => 'Унесите број микрочипа';
@@ -10746,6 +10745,82 @@ class AppLocalizationsSr extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Достигли сте данашње ограничење за „Питајте Vaultara“. Обнавља се сутра у $time. Све остало у Vaultari ради као и обично.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Пиши подршци Vorkalis';
+
+  @override
+  String get assistantSupportMessage => 'Порука';
+
+  @override
+  String get assistantSupportNote => 'Додају се верзија апликације, телефон, систем, језик и пакет. Подршка одговара на имејл адресу којом се пријављујете.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Послато подршци Vorkalis. Одговор на $email требало би да добијете у року од једног радног дана.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Данас сте подршци већ писали неколико пута. Покушајте сутра или пишите директно на support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Прво потврдите своју имејл адресу како би вам подршка могла одговорити.';
+
+  @override
+  String get assistantSupportFailed => 'Имејл није могао да се пошаље. Покушајте касније или пишите директно на support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Позови у своје домаћинство';
+
+  @override
+  String get assistantInviteNote => 'Vaultara им имејлом шаље линк са позивницом. Важи једном, 7 дана.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Позивница послата на $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Позивница није могла да се пошаље. Покушајте поново или радије поделите позивницу из свог домаћинства.';
+
+  @override
+  String get assistantCalendarNote => 'Отвара се ваша апликација за календар са догађајем и подсетником 7 дана раније.';
+
+  @override
+  String get assistantSendLinkTitle => 'Пошаљи безбедан линк';
+
+  @override
+  String get assistantSendLinkWorks => 'Линк важи';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours ч';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Шаље се само линк, никад сами подаци. Ви бирате како да га пошаљете и можете га раније зауставити у делу $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Месец пред вама';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Првог у месецу $assistant вам шаље шта треба обновити, колико то кошта и ваша предстојећа путовања';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Шта треба да урадим овог месеца?';
+
+  @override
+  String get assistantStepSupport => 'Пишем ваш имејл';
+
+  @override
+  String get assistantStepSecurity => 'Проверавам безбедност вашег налога';
+
+  @override
+  String get talkFinishOnScreen => 'Отворено је на екрану. Завршите тамо, а затим додирните да поново разговарате.';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -13937,16 +14012,16 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get planGetPremium => 'Узми Premium';
 
   @override
-  String get businessPlanBuy => 'Узми Business';
-
-  @override
   String get individualPlanBuy => 'Узми Појединачни';
 
   @override
-  String get businessPlanSwitch => 'Пређи на Business';
+  String get individualPlanSwitch => 'Пређи на Појединачни';
 
   @override
-  String get individualPlanSwitch => 'Пређи на Појединачни';
+  String get businessPlanBuy => 'Узми Business';
+
+  @override
+  String get businessPlanSwitch => 'Пређи на Business';
 
   @override
   String get planSwitchToYearly => 'Пређи на годишње';
@@ -15705,8 +15780,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get assistantEmptyReply => 'Одговор није пронађен. Покушајте да питате на други начин.';
 
   @override
-  String get assistantDraftReady =>
-      'Ево детаља. Додирните Потврдите да их сачувате.';
+  String get assistantDraftReady => 'Ево детаља. Додирните Потврдите да их сачувате.';
 
   @override
   String get assistantNewChat => 'Нови разговор';
@@ -17490,27 +17564,27 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Додај вакцинације за ${name}';
+    return 'Додај вакцинације за $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Додај микрочип за ${name}';
+    return 'Додај микрочип за $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Додај осигурање љубимца за ${name}';
+    return 'Додај осигурање љубимца за $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Додај пасош за ${name}';
+    return 'Додај пасош за $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Следеће: ${step}. Реците да и урадићу то.';
+    return 'Следеће: $step. Реците да и урадићу то.';
   }
 
   @override
@@ -19798,10 +19872,10 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String get petTypeFieldHint => 'Унесите врсту љубимца';
 
   @override
-  String get petBirthdayHint => 'Изаберите датум рођења';
+  String get petTypeRequired => 'Изаберите врсту љубимца';
 
   @override
-  String get petTypeRequired => 'Изаберите врсту љубимца';
+  String get petBirthdayHint => 'Изаберите датум рођења';
 
   @override
   String get petChipHint => 'Унесите број микрочипа';
@@ -21489,6 +21563,82 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String assistantLimitTomorrow(String time) {
     return 'Достигли сте данашње ограничење за „Питајте Vaultara“. Обнавља се сутра у $time. Све остало у Vaultari ради као и обично.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Пиши подршци Vorkalis';
+
+  @override
+  String get assistantSupportMessage => 'Порука';
+
+  @override
+  String get assistantSupportNote => 'Додају се верзија апликације, телефон, систем, језик и пакет. Подршка одговара на имејл адресу којом се пријављујете.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Послато подршци Vorkalis. Одговор на $email требало би да добијете у року од једног радног дана.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Данас сте подршци већ писали неколико пута. Покушајте сутра или пишите директно на support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Прво потврдите своју имејл адресу како би вам подршка могла одговорити.';
+
+  @override
+  String get assistantSupportFailed => 'Имејл није могао да се пошаље. Покушајте касније или пишите директно на support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Позови у своје домаћинство';
+
+  @override
+  String get assistantInviteNote => 'Vaultara им имејлом шаље линк са позивницом. Важи једном, 7 дана.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Позивница послата на $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Позивница није могла да се пошаље. Покушајте поново или радије поделите позивницу из свог домаћинства.';
+
+  @override
+  String get assistantCalendarNote => 'Отвара се ваша апликација за календар са догађајем и подсетником 7 дана раније.';
+
+  @override
+  String get assistantSendLinkTitle => 'Пошаљи безбедан линк';
+
+  @override
+  String get assistantSendLinkWorks => 'Линк важи';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours ч';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Шаље се само линк, никад сами подаци. Ви бирате како да га пошаљете и можете га раније зауставити у делу $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Месец пред вама';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Првог у месецу $assistant вам шаље шта треба обновити, колико то кошта и ваша предстојећа путовања';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Шта треба да урадим овог месеца?';
+
+  @override
+  String get assistantStepSupport => 'Пишем ваш имејл';
+
+  @override
+  String get assistantStepSecurity => 'Проверавам безбедност вашег налога';
+
+  @override
+  String get talkFinishOnScreen => 'Отворено је на екрану. Завршите тамо, а затим додирните да поново разговарате.';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -24680,16 +24830,16 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get planGetPremium => 'Nabavi Premium';
 
   @override
-  String get businessPlanBuy => 'Nabavi Poslovni';
-
-  @override
   String get individualPlanBuy => 'Uzmi Pojedinačni';
 
   @override
-  String get businessPlanSwitch => 'Pređi na Poslovni';
+  String get individualPlanSwitch => 'Pređi na Pojedinačni';
 
   @override
-  String get individualPlanSwitch => 'Pređi na Pojedinačni';
+  String get businessPlanBuy => 'Nabavi Poslovni';
+
+  @override
+  String get businessPlanSwitch => 'Pređi na Poslovni';
 
   @override
   String get planSwitchToYearly => 'Pređi na godišnje plaćanje';
@@ -26444,8 +26594,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get assistantEmptyReply => 'Nisam mogao da pronađem odgovor. Pokušajte da pitate na drugi način.';
 
   @override
-  String get assistantDraftReady =>
-      'Evo detalja. Dodirnite Potvrdite da ih sačuvate.';
+  String get assistantDraftReady => 'Evo detalja. Dodirnite Potvrdite da ih sačuvate.';
 
   @override
   String get assistantNewChat => 'Novi razgovor';
@@ -28229,27 +28378,27 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Dodaj vakcinacije za ${name}';
+    return 'Dodaj vakcinacije za $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Dodaj mikročip za ${name}';
+    return 'Dodaj mikročip za $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Dodaj osiguranje ljubimca za ${name}';
+    return 'Dodaj osiguranje ljubimca za $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Dodaj pasoš za ${name}';
+    return 'Dodaj pasoš za $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Sledeće: ${step}. Recite da i uradiću to.';
+    return 'Sledeće: $step. Recite da i uradiću to.';
   }
 
   @override
@@ -30537,10 +30686,10 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String get petTypeFieldHint => 'Unesite vrstu ljubimca';
 
   @override
-  String get petBirthdayHint => 'Izaberite datum rođenja';
+  String get petTypeRequired => 'Izaberite vrstu ljubimca';
 
   @override
-  String get petTypeRequired => 'Izaberite vrstu ljubimca';
+  String get petBirthdayHint => 'Izaberite datum rođenja';
 
   @override
   String get petChipHint => 'Unesite broj mikročipa';
@@ -32228,4 +32377,80 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String assistantLimitTomorrow(String time) {
     return 'Dostigli ste današnje ograničenje za „Pitaj Vaultaru“. Obnavlja se sutra u $time. Sve ostalo u Vaultari radi kao i obično.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Piši podršci Vorkalis';
+
+  @override
+  String get assistantSupportMessage => 'Poruka';
+
+  @override
+  String get assistantSupportNote => 'Dodaju se verzija aplikacije, telefon, sistem, jezik i paket. Podrška odgovara na imejl adresu kojom se prijavljujete.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Poslato podršci Vorkalis. Odgovor na $email trebalo bi da dobijete u roku od jednog radnog dana.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Danas ste podršci već pisali nekoliko puta. Pokušajte sutra ili pišite direktno na support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Prvo potvrdite svoju imejl adresu kako bi vam podrška mogla odgovoriti.';
+
+  @override
+  String get assistantSupportFailed => 'Imejl nije mogao da se pošalje. Pokušajte kasnije ili pišite direktno na support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Pozovi u svoje domaćinstvo';
+
+  @override
+  String get assistantInviteNote => 'Vaultara im imejlom šalje link sa pozivnicom. Važi jednom, 7 dana.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Pozivnica poslata na $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Pozivnica nije mogla da se pošalje. Pokušajte ponovo ili radije podelite pozivnicu iz svog domaćinstva.';
+
+  @override
+  String get assistantCalendarNote => 'Otvara se vaša aplikacija za kalendar sa događajem i podsetnikom 7 dana ranije.';
+
+  @override
+  String get assistantSendLinkTitle => 'Pošalji bezbedan link';
+
+  @override
+  String get assistantSendLinkWorks => 'Link važi';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours č';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Šalje se samo link, nikad sami podaci. Vi birate kako da ga pošaljete i možete ga ranije zaustaviti u delu $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Mesec pred vama';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Prvog u mesecu $assistant vam šalje šta treba obnoviti, koliko to košta i vaša predstojeća putovanja';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Šta treba da uradim ovog meseca?';
+
+  @override
+  String get assistantStepSupport => 'Pišem vaš imejl';
+
+  @override
+  String get assistantStepSecurity => 'Proveravam bezbednost vašeg naloga';
+
+  @override
+  String get talkFinishOnScreen => 'Otvoreno je na ekranu. Završite tamo, a zatim dodirnite da ponovo razgovarate.';
 }

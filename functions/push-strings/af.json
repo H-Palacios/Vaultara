@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Personeeldokument het verval",
   "staffOverdueYesterday": "{name} vir {person} het gister verval en is nie hernu nie.",
   "staffOverdueWeek": "{name} vir {person} het 'n week gelede verval en is steeds nie hernu nie.",
-  "staffOverdueMany": "{count} personeeldokumente het verval en is nie hernu nie: {names}."
+  "staffOverdueMany": "{count} personeeldokumente het verval en is nie hernu nie: {names}.",
+  "monthAheadTitle": "Jou maand vorentoe",
+  "monthAheadBodyCount": "Om hierdie maand te hernu: {count}. Tik om te sien wat om te doen.",
+  "monthAheadBodyCost": "Om hierdie maand te hernu: {count}, ongeveer {cost}. Tik om te sien wat om te doen.",
+  "monthAheadBodyCountTrips": "Om hierdie maand te hernu: {count}. Reise in die volgende 6 weke: {trips}. Tik om te sien wat om te doen.",
+  "monthAheadBodyCostTrips": "Om hierdie maand te hernu: {count}, ongeveer {cost}. Reise in die volgende 6 weke: {trips}. Tik om te sien wat om te doen.",
+  "monthAheadBodyTrips": "Niks om hierdie maand te hernu nie. Reise in die volgende 6 weke: {trips}. Tik om te sien wat om te doen."
 }

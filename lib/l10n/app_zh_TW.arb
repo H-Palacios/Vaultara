@@ -4399,5 +4399,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "寄信給 Vorkalis 支援",
+  "assistantSupportMessage": "訊息",
+  "assistantSupportNote": "會附上 App 版本、手機、系統、語言和方案。支援團隊會回覆到你登入所用的電子郵件。",
+  "assistantSupportSent": "已寄給 Vorkalis 支援。你應會在 1 個工作天內於 {email} 收到回覆。",
+  "assistantSupportLimit": "你今天已經寄信給支援好幾次了。請明天再試，或直接寫信到 support@vorkalis.com。",
+  "assistantSupportVerify": "請先驗證你的電子郵件地址，支援團隊才能回覆你。",
+  "assistantSupportFailed": "無法寄出郵件。請稍後再試，或直接寫信到 support@vorkalis.com。",
+  "assistantInviteTitle": "邀請加入你的家庭空間",
+  "assistantInviteNote": "Vaultara 會用電子郵件寄送邀請連結給對方。連結可使用一次，有效期 7 天。",
+  "assistantInviteSent": "已寄送邀請給 {email}。",
+  "assistantInviteFailed": "無法寄出邀請。請再試一次，或改從你的家庭空間分享邀請。",
+  "assistantCalendarNote": "行事曆 App 會開啟該活動，並在 7 天前提醒。",
+  "assistantSendLinkTitle": "傳送安全連結",
+  "assistantSendLinkWorks": "連結有效期",
+  "assistantSendLinkHours": "{hours} 小時",
+  "assistantSendLinkNote": "只會傳送連結，絕不傳送詳細資料本身。你可以選擇傳送方式，也能在「{sharedLinks}」中提早停用。",
+  "monthAheadTitle": "本月概覽",
+  "monthAheadSubtitle": "每月 1 日，{assistant} 會告訴你需要續約的項目、費用和即將到來的旅程",
+  "monthAheadQuestion": "這個月我需要做什麼？",
+  "assistantStepSupport": "正在撰寫你的郵件",
+  "assistantStepSecurity": "正在檢查你的帳戶安全",
+  "talkFinishOnScreen": "已在螢幕上開啟。請在那裡完成，再輕觸繼續說話。"
 }

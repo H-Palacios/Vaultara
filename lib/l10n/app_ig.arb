@@ -4411,5 +4411,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Ziga nkwado Vorkalis email",
+  "assistantSupportMessage": "Ozi",
+  "assistantSupportNote": "A na-agbakwunye ụdị ngwa, ekwentị, sistemụ, asụsụ na atụmatụ. Nkwado na-aza na email ị ji abanye.",
+  "assistantSupportSent": "E zigara ya nkwado Vorkalis. Ị ga-enweta azịza na {email} n'ime otu ụbọchị ọrụ.",
+  "assistantSupportLimit": "Ị zigalarị nkwado email ọtụtụ ugboro taa. Nwaa ọzọ echi, ma ọ bụ dee ozugbo na support@vorkalis.com.",
+  "assistantSupportVerify": "Buru ụzọ kwado adreesị email gị ka nkwado nwee ike ịza gị.",
+  "assistantSupportFailed": "Enweghị ike iziga email ahụ. Nwaa ọzọ ma emechaa, ma ọ bụ dee ozugbo na support@vorkalis.com.",
+  "assistantInviteTitle": "Kpọọ ha n'ụlọ gị",
+  "assistantInviteNote": "Vaultara na-eziga ha njikọ òkù site na email. Ọ na-arụ ọrụ otu ugboro, ruo ụbọchị 7.",
+  "assistantInviteSent": "E zigara òkù na {email}.",
+  "assistantInviteFailed": "Enweghị ike iziga òkù ahụ. Nwaa ọzọ, ma ọ bụ kesaa òkù site n'ụlọ gị kama.",
+  "assistantCalendarNote": "Ngwa kalenda gị ga-emepe na ihe omume ahụ na ncheta ụbọchị 7 tupu ya.",
+  "assistantSendLinkTitle": "Ziga njikọ echekwara",
+  "assistantSendLinkWorks": "Njikọ ahụ na-arụ ọrụ maka",
+  "assistantSendLinkHours": "Awa {hours}",
+  "assistantSendLinkNote": "Ọ bụ naanị njikọ ka a na-eziga, ọ dịghị mgbe a na-eziga nkọwa n'onwe ha. Ị na-ahọrọ otu ị ga-esi ziga ya, ma nwee ike ịkwụsị ya n'oge na {sharedLinks}.",
+  "monthAheadTitle": "Ọnwa na-abịa",
+  "monthAheadSubtitle": "Na ụbọchị 1 nke ọnwa ọ bụla, {assistant} na-eziga ihe ị ga-emeghari, ego ọ ga-efu na njem gị na-abịa",
+  "monthAheadQuestion": "Gịnị ka m kwesịrị ime n'ọnwa a?",
+  "assistantStepSupport": "A na-ede email gị",
+  "assistantStepSecurity": "A na-elele nchekwa akaụntụ gị",
+  "talkFinishOnScreen": "Ọ meghere na ihuenyo gị. Mechaa ya ebe ahụ, wee pịa ka ị kwuo okwu ọzọ."
 }

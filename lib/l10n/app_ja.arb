@@ -4418,5 +4418,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Vorkalis サポートにメール",
+  "assistantSupportMessage": "メッセージ",
+  "assistantSupportNote": "アプリのバージョン、端末、OS、言語、プランが追加されます。サポートはサインインに使っているメールアドレスに返信します。",
+  "assistantSupportSent": "Vorkalis サポートに送信しました。1 営業日以内に {email} に返信が届く予定です。",
+  "assistantSupportLimit": "今日はすでに何度かサポートにメールしています。明日もう一度お試しいただくか、support@vorkalis.com に直接お送りください。",
+  "assistantSupportVerify": "サポートが返信できるよう、先にメールアドレスを確認してください。",
+  "assistantSupportFailed": "メールを送信できませんでした。後でもう一度お試しいただくか、support@vorkalis.com に直接お送りください。",
+  "assistantInviteTitle": "世帯に招待",
+  "assistantInviteNote": "Vaultara から招待リンクをメールで送ります。リンクは 1 回、7 日間使えます。",
+  "assistantInviteSent": "{email} に招待を送信しました。",
+  "assistantInviteFailed": "招待を送信できませんでした。もう一度お試しいただくか、世帯の画面から招待を共有してください。",
+  "assistantCalendarNote": "カレンダーアプリが予定と 7 日前の通知付きで開きます。",
+  "assistantSendLinkTitle": "安全なリンクを送る",
+  "assistantSendLinkWorks": "リンクの有効期間",
+  "assistantSendLinkHours": "{hours} 時間",
+  "assistantSendLinkNote": "送られるのはリンクだけで、詳細そのものは送られません。送り方はご自身で選べ、{sharedLinks} で早めに停止することもできます。",
+  "monthAheadTitle": "今月の予定",
+  "monthAheadSubtitle": "毎月 1 日に {assistant} が、更新が必要なもの、その費用、今後の旅行をお知らせします",
+  "monthAheadQuestion": "今月は何をすればいいですか？",
+  "assistantStepSupport": "メールを作成しています",
+  "assistantStepSecurity": "アカウントのセキュリティを確認しています",
+  "talkFinishOnScreen": "画面に開いています。そこで完了してから、タップしてもう一度話してください。"
 }

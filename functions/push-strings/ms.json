@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Dokumen kakitangan telah tamat tempoh",
   "staffOverdueYesterday": "{name} untuk {person} tamat semalam dan belum diperbaharui.",
   "staffOverdueWeek": "{name} untuk {person} tamat seminggu lalu dan masih belum diperbaharui.",
-  "staffOverdueMany": "{count} dokumen kakitangan telah tamat tempoh dan belum diperbaharui: {names}."
+  "staffOverdueMany": "{count} dokumen kakitangan telah tamat tempoh dan belum diperbaharui: {names}.",
+  "monthAheadTitle": "Bulan anda yang akan datang",
+  "monthAheadBodyCount": "Perlu diperbaharui bulan ini: {count}. Ketik untuk melihat apa yang perlu dibuat.",
+  "monthAheadBodyCost": "Perlu diperbaharui bulan ini: {count}, kira-kira {cost}. Ketik untuk melihat apa yang perlu dibuat.",
+  "monthAheadBodyCountTrips": "Perlu diperbaharui bulan ini: {count}. Perjalanan dalam 6 minggu akan datang: {trips}. Ketik untuk melihat apa yang perlu dibuat.",
+  "monthAheadBodyCostTrips": "Perlu diperbaharui bulan ini: {count}, kira-kira {cost}. Perjalanan dalam 6 minggu akan datang: {trips}. Ketik untuk melihat apa yang perlu dibuat.",
+  "monthAheadBodyTrips": "Tiada apa perlu diperbaharui bulan ini. Perjalanan dalam 6 minggu akan datang: {trips}. Ketik untuk melihat apa yang perlu dibuat."
 }

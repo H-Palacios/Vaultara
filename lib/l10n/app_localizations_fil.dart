@@ -3165,16 +3165,16 @@ class AppLocalizationsFil extends AppLocalizations {
   String get planGetPremium => 'Kunin ang Premium';
 
   @override
-  String get businessPlanBuy => 'Kunin ang Negosyo';
-
-  @override
   String get individualPlanBuy => 'Kunin ang Indibidwal';
 
   @override
-  String get businessPlanSwitch => 'Lumipat sa Negosyo';
+  String get individualPlanSwitch => 'Lumipat sa Indibidwal';
 
   @override
-  String get individualPlanSwitch => 'Lumipat sa Indibidwal';
+  String get businessPlanBuy => 'Kunin ang Negosyo';
+
+  @override
+  String get businessPlanSwitch => 'Lumipat sa Negosyo';
 
   @override
   String get planSwitchToYearly => 'Lumipat sa taunan';
@@ -4913,8 +4913,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get assistantEmptyReply => 'Wala akong nahanap na sagot. Subukang magtanong sa ibang paraan.';
 
   @override
-  String get assistantDraftReady =>
-      'Narito ang mga detalye. I-tap ang Kumpirmahin para i-save ang mga ito.';
+  String get assistantDraftReady => 'Narito ang mga detalye. I-tap ang Kumpirmahin para i-save ang mga ito.';
 
   @override
   String get assistantNewChat => 'Bagong chat';
@@ -6679,27 +6678,27 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Magdagdag ng mga bakuna para kay ${name}';
+    return 'Magdagdag ng mga bakuna para kay $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Idagdag ang microchip para kay ${name}';
+    return 'Idagdag ang microchip para kay $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Magdagdag ng pet insurance para kay ${name}';
+    return 'Magdagdag ng pet insurance para kay $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Magdagdag ng pasaporte para kay ${name}';
+    return 'Magdagdag ng pasaporte para kay $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Susunod: ${step}. Sabihin ang oo para gawin ito.';
+    return 'Susunod: $step. Sabihin ang oo para gawin ito.';
   }
 
   @override
@@ -8979,10 +8978,10 @@ class AppLocalizationsFil extends AppLocalizations {
   String get petTypeFieldHint => 'Ilagay ang uri ng alaga';
 
   @override
-  String get petBirthdayHint => 'Piliin ang petsa ng kapanganakan';
+  String get petTypeRequired => 'Piliin ang uri ng alaga';
 
   @override
-  String get petTypeRequired => 'Piliin ang uri ng alaga';
+  String get petBirthdayHint => 'Piliin ang petsa ng kapanganakan';
 
   @override
   String get petChipHint => 'Ilagay ang numero ng microchip';
@@ -10390,8 +10389,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String get talkNoVoice => 'Walang boses ang telepono mo para sa wikang ito, kaya ipinapakita ang mga sagot pero hindi binabasa.';
 
   @override
-  String get talkNotDone =>
-      'Hindi ito natuloy. Tingnan ang mga detalye sa screen.';
+  String get talkNotDone => 'Hindi ito natuloy. Tingnan ang mga detalye sa screen.';
 
   @override
   String get talkReady => 'Nakikinig ako.';
@@ -10655,4 +10653,80 @@ class AppLocalizationsFil extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Naabot mo na ang limit ngayong araw ng \"Magtanong sa Vaultara\". Magre-reset ito bukas sa $time. Gumagana pa rin nang normal ang lahat ng iba pa sa Vaultara.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Mag-email sa suporta ng Vorkalis';
+
+  @override
+  String get assistantSupportMessage => 'Mensahe';
+
+  @override
+  String get assistantSupportNote => 'Idinadagdag ang bersyon ng app, telepono, system, wika at plan. Sumasagot ang suporta sa email na ginagamit mo sa pag-sign in.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Naipadala sa suporta ng Vorkalis. Dapat kang makatanggap ng sagot sa $email sa loob ng isang araw ng trabaho.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Ilang beses ka nang nag-email sa suporta ngayong araw. Subukan ulit bukas, o direktang sumulat sa support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'I-verify muna ang iyong email address para masagot ka ng suporta.';
+
+  @override
+  String get assistantSupportFailed => 'Hindi naipadala ang email. Subukan ulit mamaya, o direktang sumulat sa support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Mag-imbita sa iyong sambahayan';
+
+  @override
+  String get assistantInviteNote => 'Magpapadala ang Vaultara ng link ng imbitasyon sa email nila. Gumagana ito nang isang beses, sa loob ng 7 araw.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Naipadala ang imbitasyon sa $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Hindi naipadala ang imbitasyon. Subukan ulit, o magbahagi na lang ng imbitasyon mula sa iyong sambahayan.';
+
+  @override
+  String get assistantCalendarNote => 'Bubukas ang iyong calendar app kasama ang event at paalala 7 araw bago nito.';
+
+  @override
+  String get assistantSendLinkTitle => 'Magpadala ng ligtas na link';
+
+  @override
+  String get assistantSendLinkWorks => 'Tagal ng link';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours oras';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Link lang ang ipinapadala, hindi kailanman ang mismong detalye. Ikaw ang pipili kung paano ito ipapadala, at puwede mo itong ihinto nang mas maaga sa $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Darating na buwan';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Tuwing ika-1, ipinapadala ng $assistant kung ano ang ire-renew, magkano ito at ang mga darating mong biyahe';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Ano ang kailangan kong gawin ngayong buwan?';
+
+  @override
+  String get assistantStepSupport => 'Isinusulat ang iyong email';
+
+  @override
+  String get assistantStepSecurity => 'Sinusuri ang seguridad ng iyong account';
+
+  @override
+  String get talkFinishOnScreen => 'Nakabukas na ito sa screen mo. Tapusin mo roon, saka i-tap para makipag-usap ulit.';
 }

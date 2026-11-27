@@ -3167,16 +3167,16 @@ class AppLocalizationsMl extends AppLocalizations {
   String get planGetPremium => 'Premium നേടുക';
 
   @override
-  String get businessPlanBuy => 'ബിസിനസ് നേടുക';
-
-  @override
   String get individualPlanBuy => 'വ്യക്തിഗതം നേടുക';
 
   @override
-  String get businessPlanSwitch => 'ബിസിനസിലേക്ക് മാറുക';
+  String get individualPlanSwitch => 'വ്യക്തിഗതത്തിലേക്ക് മാറുക';
 
   @override
-  String get individualPlanSwitch => 'വ്യക്തിഗതത്തിലേക്ക് മാറുക';
+  String get businessPlanBuy => 'ബിസിനസ് നേടുക';
+
+  @override
+  String get businessPlanSwitch => 'ബിസിനസിലേക്ക് മാറുക';
 
   @override
   String get planSwitchToYearly => 'വാർഷികത്തിലേക്ക് മാറുക';
@@ -4915,8 +4915,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get assistantEmptyReply => 'എനിക്ക് ഉത്തരം കണ്ടെത്താനായില്ല. മറ്റൊരു രീതിയിൽ ചോദിച്ചു നോക്കുക.';
 
   @override
-  String get assistantDraftReady =>
-      'വിശദാംശങ്ങൾ ഇതാ. സംരക്ഷിക്കാൻ സ്ഥിരീകരിക്കുക ടാപ്പ് ചെയ്യുക.';
+  String get assistantDraftReady => 'വിശദാംശങ്ങൾ ഇതാ. സംരക്ഷിക്കാൻ സ്ഥിരീകരിക്കുക ടാപ്പ് ചെയ്യുക.';
 
   @override
   String get assistantNewChat => 'പുതിയ ചാറ്റ്';
@@ -6683,27 +6682,27 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return '${name} ന് വാക്സിനുകൾ ചേർക്കുക';
+    return '$name ന് വാക്സിനുകൾ ചേർക്കുക';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return '${name} ന് മൈക്രോചിപ്പ് ചേർക്കുക';
+    return '$name ന് മൈക്രോചിപ്പ് ചേർക്കുക';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return '${name} ന് വളർത്തുമൃഗ ഇൻഷുറൻസ് ചേർക്കുക';
+    return '$name ന് വളർത്തുമൃഗ ഇൻഷുറൻസ് ചേർക്കുക';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return '${name} ന് പാസ്‌പോർട്ട് ചേർക്കുക';
+    return '$name ന് പാസ്‌പോർട്ട് ചേർക്കുക';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'അടുത്തത്: ${step}. ചെയ്യാൻ അതെ എന്ന് പറയുക.';
+    return 'അടുത്തത്: $step. ചെയ്യാൻ അതെ എന്ന് പറയുക.';
   }
 
   @override
@@ -8985,10 +8984,10 @@ class AppLocalizationsMl extends AppLocalizations {
   String get petTypeFieldHint => 'വളർത്തുമൃഗത്തിന്റെ തരം നൽകുക';
 
   @override
-  String get petBirthdayHint => 'ജനനത്തീയതി തിരഞ്ഞെടുക്കുക';
+  String get petTypeRequired => 'വളർത്തുമൃഗത്തിന്റെ തരം തിരഞ്ഞെടുക്കുക';
 
   @override
-  String get petTypeRequired => 'വളർത്തുമൃഗത്തിന്റെ തരം തിരഞ്ഞെടുക്കുക';
+  String get petBirthdayHint => 'ജനനത്തീയതി തിരഞ്ഞെടുക്കുക';
 
   @override
   String get petChipHint => 'മൈക്രോചിപ്പ് നമ്പർ നൽകുക';
@@ -10397,8 +10396,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String get talkNoVoice => 'നിങ്ങളുടെ ഫോണിൽ ഈ ഭാഷയ്ക്ക് ശബ്ദമില്ല, അതിനാൽ ഉത്തരങ്ങൾ കാണിക്കും പക്ഷേ വായിക്കില്ല.';
 
   @override
-  String get talkNotDone =>
-      'അത് നടന്നില്ല. സ്ക്രീനിലെ വിശദാംശങ്ങൾ പരിശോധിക്കുക.';
+  String get talkNotDone => 'അത് നടന്നില്ല. സ്ക്രീനിലെ വിശദാംശങ്ങൾ പരിശോധിക്കുക.';
 
   @override
   String get talkReady => 'ഞാൻ കേൾക്കുന്നു.';
@@ -10662,4 +10660,80 @@ class AppLocalizationsMl extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'ഇന്നത്തെ \"Vaultara-യോട് ചോദിക്കുക\" പരിധിയിൽ എത്തി. അത് നാളെ $time-ന് പുനഃസജ്ജമാകും. Vaultara-യിലെ മറ്റെല്ലാം പതിവുപോലെ പ്രവർത്തിക്കും.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Vorkalis സപ്പോർട്ടിന് ഇമെയിൽ ചെയ്യുക';
+
+  @override
+  String get assistantSupportMessage => 'സന്ദേശം';
+
+  @override
+  String get assistantSupportNote => 'ആപ്പ് പതിപ്പ്, ഫോൺ, സിസ്റ്റം, ഭാഷ, പ്ലാൻ എന്നിവ ചേർക്കും. നിങ്ങൾ സൈൻ ഇൻ ചെയ്യുന്ന ഇമെയിലിലേക്കാണ് സപ്പോർട്ട് മറുപടി നൽകുക.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Vorkalis സപ്പോർട്ടിലേക്ക് അയച്ചു. ഒരു പ്രവൃത്തിദിവസത്തിനുള്ളിൽ $email ൽ മറുപടി ലഭിക്കും.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'ഇന്ന് നിങ്ങൾ ഇതിനകം പലതവണ സപ്പോർട്ടിന് ഇമെയിൽ ചെയ്തു. നാളെ വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ നേരിട്ട് support@vorkalis.com ലേക്ക് എഴുതുക.';
+
+  @override
+  String get assistantSupportVerify => 'സപ്പോർട്ടിന് മറുപടി നൽകാൻ ആദ്യം നിങ്ങളുടെ ഇമെയിൽ വിലാസം സ്ഥിരീകരിക്കുക.';
+
+  @override
+  String get assistantSupportFailed => 'ഇമെയിൽ അയയ്ക്കാനായില്ല. പിന്നീട് വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ നേരിട്ട് support@vorkalis.com ലേക്ക് എഴുതുക.';
+
+  @override
+  String get assistantInviteTitle => 'നിങ്ങളുടെ കുടുംബത്തിലേക്ക് ക്ഷണിക്കുക';
+
+  @override
+  String get assistantInviteNote => 'Vaultara അവർക്ക് ഇമെയിലിൽ ഒരു ക്ഷണ ലിങ്ക് അയയ്ക്കും. അത് ഒരിക്കൽ, 7 ദിവസത്തേക്ക് പ്രവർത്തിക്കും.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'ക്ഷണം $email ലേക്ക് അയച്ചു.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'ക്ഷണം അയയ്ക്കാനായില്ല. വീണ്ടും ശ്രമിക്കുക, അല്ലെങ്കിൽ പകരം നിങ്ങളുടെ കുടുംബത്തിൽ നിന്ന് ഒരു ക്ഷണം പങ്കിടുക.';
+
+  @override
+  String get assistantCalendarNote => 'ഇവന്റും 7 ദിവസം മുമ്പുള്ള ഓർമ്മപ്പെടുത്തലുമായി നിങ്ങളുടെ കലണ്ടർ ആപ്പ് തുറക്കും.';
+
+  @override
+  String get assistantSendLinkTitle => 'സുരക്ഷിത ലിങ്ക് അയയ്ക്കുക';
+
+  @override
+  String get assistantSendLinkWorks => 'ലിങ്കിന്റെ കാലാവധി';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours മ';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'ഒരു ലിങ്ക് മാത്രമേ അയയ്ക്കൂ, വിവരങ്ങൾ ഒരിക്കലും അല്ല. എങ്ങനെ അയയ്ക്കണമെന്ന് നിങ്ങൾ തീരുമാനിക്കുന്നു, $sharedLinks ൽ അത് നേരത്തെ നിർത്താം.';
+  }
+
+  @override
+  String get monthAheadTitle => 'വരാനിരിക്കുന്ന മാസം';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'എല്ലാ മാസവും 1-ന് $assistant എന്ത് പുതുക്കണം, അതിന്റെ ചെലവ്, നിങ്ങളുടെ വരാനിരിക്കുന്ന യാത്രകൾ എന്നിവ അയയ്ക്കും';
+  }
+
+  @override
+  String get monthAheadQuestion => 'ഈ മാസം ഞാൻ എന്ത് ചെയ്യണം?';
+
+  @override
+  String get assistantStepSupport => 'നിങ്ങളുടെ ഇമെയിൽ എഴുതുന്നു';
+
+  @override
+  String get assistantStepSecurity => 'നിങ്ങളുടെ അക്കൗണ്ടിന്റെ സുരക്ഷ പരിശോധിക്കുന്നു';
+
+  @override
+  String get talkFinishOnScreen => 'അത് നിങ്ങളുടെ സ്ക്രീനിൽ തുറന്നിരിക്കുന്നു. അവിടെ പൂർത്തിയാക്കി, വീണ്ടും സംസാരിക്കാൻ ടാപ്പ് ചെയ്യുക.';
 }

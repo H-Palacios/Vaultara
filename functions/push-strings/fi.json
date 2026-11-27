@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Työntekijän asiakirja vanheni",
   "staffOverdueYesterday": "{person}: {name} vanheni eilen, eikä sitä ole uusittu.",
   "staffOverdueWeek": "{person}: {name} vanheni viikko sitten, eikä sitä ole vieläkään uusittu.",
-  "staffOverdueMany": "{count} työntekijän asiakirjaa on vanhentunut uusimatta: {names}."
+  "staffOverdueMany": "{count} työntekijän asiakirjaa on vanhentunut uusimatta: {names}.",
+  "monthAheadTitle": "Tuleva kuukautesi",
+  "monthAheadBodyCount": "Uusittavaa tässä kuussa: {count}. Napauta ja katso, mitä tehdä.",
+  "monthAheadBodyCost": "Uusittavaa tässä kuussa: {count}, noin {cost}. Napauta ja katso, mitä tehdä.",
+  "monthAheadBodyCountTrips": "Uusittavaa tässä kuussa: {count}. Matkoja seuraavan 6 viikon aikana: {trips}. Napauta ja katso, mitä tehdä.",
+  "monthAheadBodyCostTrips": "Uusittavaa tässä kuussa: {count}, noin {cost}. Matkoja seuraavan 6 viikon aikana: {trips}. Napauta ja katso, mitä tehdä.",
+  "monthAheadBodyTrips": "Ei uusittavaa tässä kuussa. Matkoja seuraavan 6 viikon aikana: {trips}. Napauta ja katso, mitä tehdä."
 }

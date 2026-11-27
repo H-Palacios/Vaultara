@@ -4406,5 +4406,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Thumela i-imeyile kwinkxaso yeVorkalis",
+  "assistantSupportMessage": "Umyalezo",
+  "assistantSupportNote": "Kongezwa uguqulelo lwe-app, ifowuni, inkqubo, ulwimi necebo. Inkxaso iphendula kwi-imeyile ongena ngayo.",
+  "assistantSupportSent": "Ithunyelwe kwinkxaso yeVorkalis. Kufuneka ufumane impendulo ku-{email} kwisuku olunye lokusebenza.",
+  "assistantSupportLimit": "Sele uyithumelele inkxaso i-imeyile amaxesha aliqela namhlanje. Zama kwakhona ngomso, okanye ubhalele ngqo ku-support@vorkalis.com.",
+  "assistantSupportVerify": "Qala uqinisekise idilesi yakho ye-imeyile ukuze inkxaso ikwazi ukukuphendula.",
+  "assistantSupportFailed": "I-imeyile ayikwazanga ukuthunyelwa. Zama kwakhona kamva, okanye ubhalele ngqo ku-support@vorkalis.com.",
+  "assistantInviteTitle": "Mema ekhayeni lakho",
+  "assistantInviteNote": "IVaultara ibathumelela ikhonkco lesimemo nge-imeyile. Lisebenza kanye, iintsuku ezi-7.",
+  "assistantInviteSent": "Isimemo sithunyelwe ku-{email}.",
+  "assistantInviteFailed": "Isimemo asikwazanga ukuthunyelwa. Zama kwakhona, okanye wabelane ngesimemo esivela ekhayeni lakho endaweni yoko.",
+  "assistantCalendarNote": "I-app yakho yekhalenda iza kuvuleka nesiganeko kunye nesikhumbuzo kwiintsuku ezi-7 ngaphambili.",
+  "assistantSendLinkTitle": "Thumela ikhonkco elikhuselekileyo",
+  "assistantSendLinkWorks": "Ikhonkco lisebenza",
+  "assistantSendLinkHours": "{hours} iiyure",
+  "assistantSendLinkNote": "Kuthunyelwa ikhonkco kuphela, hayi iinkcukacha ngokwazo. Wena ukhetha indlela yokulithumela, kwaye ungalimisa kwangethuba ku-{sharedLinks}.",
+  "monthAheadTitle": "Inyanga ezayo",
+  "monthAheadSubtitle": "Ngomhla woku-1, i-{assistant} ithumela okufuneka kuhlaziywe, ixabiso lako kunye nohambo lwakho oluzayo",
+  "monthAheadQuestion": "Yintoni ekufuneka ndiyenze kule nyanga?",
+  "assistantStepSupport": "Ibhala i-imeyile yakho",
+  "assistantStepSecurity": "Ijonga ukhuseleko lweakhawunti yakho",
+  "talkFinishOnScreen": "Ivulekile kwisikrini sakho. Gqiba apho, emva koko ucofe ukuze uthethe kwakhona."
 }

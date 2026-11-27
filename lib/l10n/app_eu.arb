@@ -4420,5 +4420,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Idatzi Vorkalis-en laguntzari",
+  "assistantSupportMessage": "Mezua",
+  "assistantSupportNote": "Aplikazioaren bertsioa, telefonoa, sistema, hizkuntza eta plana gehitzen dira. Laguntzak saioa hasteko erabiltzen duzun helbidera erantzungo dizu.",
+  "assistantSupportSent": "Vorkalis-en laguntzara bidalita. Lanegun batean erantzuna jaso beharko zenuke {email} helbidean.",
+  "assistantSupportLimit": "Gaur dagoeneko hainbat aldiz idatzi diozu laguntzari. Saiatu bihar, edo idatzi zuzenean support@vorkalis.com helbidera.",
+  "assistantSupportVerify": "Lehenik egiaztatu zure helbide elektronikoa, laguntzak erantzun ahal izan diezazun.",
+  "assistantSupportFailed": "Ezin izan da mezua bidali. Saiatu geroago, edo idatzi zuzenean support@vorkalis.com helbidera.",
+  "assistantInviteTitle": "Gonbidatu zure etxeko taldera",
+  "assistantInviteNote": "Vaultarak gonbidapen-esteka bat bidaliko die posta elektronikoz. Behin funtzionatzen du, 7 egunez.",
+  "assistantInviteSent": "Gonbidapena bidali da {email} helbidera.",
+  "assistantInviteFailed": "Ezin izan da gonbidapena bidali. Saiatu berriro, edo partekatu gonbidapen bat zure etxeko taldetik.",
+  "assistantCalendarNote": "Zure egutegi-aplikazioa gertaerarekin irekiko da, 7 egun lehenagoko alarmarekin.",
+  "assistantSendLinkTitle": "Bidali esteka segurua",
+  "assistantSendLinkWorks": "Estekak iraupena",
+  "assistantSendLinkHours": "{hours} h",
+  "assistantSendLinkNote": "Esteka bat bakarrik bidaltzen da, inoiz ez datuak berak. Zuk aukeratzen duzu nola bidali, eta lehenago geldi dezakezu {sharedLinks} atalean.",
+  "monthAheadTitle": "Datorren hilabetea",
+  "monthAheadSubtitle": "Hilaren 1ean, {assistant}-k berritu beharrekoa, zenbat kostatzen den eta zure hurrengo bidaiak bidaltzen ditu",
+  "monthAheadQuestion": "Zer egin behar dut hilabete honetan?",
+  "assistantStepSupport": "Zure mezua idazten",
+  "assistantStepSecurity": "Zure kontuaren segurtasuna egiaztatzen",
+  "talkFinishOnScreen": "Zure pantailan irekita dago. Amaitu han, eta sakatu berriro hitz egiteko."
 }

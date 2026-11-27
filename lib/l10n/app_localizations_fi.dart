@@ -3167,16 +3167,16 @@ class AppLocalizationsFi extends AppLocalizations {
   String get planGetPremium => 'Hanki Premium';
 
   @override
-  String get businessPlanBuy => 'Hanki Business';
-
-  @override
   String get individualPlanBuy => 'Hanki Yksittäinen';
 
   @override
-  String get businessPlanSwitch => 'Vaihda Business-tilaukseen';
+  String get individualPlanSwitch => 'Vaihda Yksittäinen-tilaukseen';
 
   @override
-  String get individualPlanSwitch => 'Vaihda Yksittäinen-tilaukseen';
+  String get businessPlanBuy => 'Hanki Business';
+
+  @override
+  String get businessPlanSwitch => 'Vaihda Business-tilaukseen';
 
   @override
   String get planSwitchToYearly => 'Vaihda vuosittaiseen';
@@ -4915,8 +4915,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get assistantEmptyReply => 'En löytänyt vastausta. Yritä kysyä toisella tavalla.';
 
   @override
-  String get assistantDraftReady =>
-      'Tässä tiedot. Tallenna napauttamalla Vahvista.';
+  String get assistantDraftReady => 'Tässä tiedot. Tallenna napauttamalla Vahvista.';
 
   @override
   String get assistantNewChat => 'Uusi keskustelu';
@@ -6683,27 +6682,27 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Lisää rokotukset: ${name}';
+    return 'Lisää rokotukset: $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Lisää mikrosiru: ${name}';
+    return 'Lisää mikrosiru: $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Lisää lemmikkivakuutus: ${name}';
+    return 'Lisää lemmikkivakuutus: $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Lisää passi: ${name}';
+    return 'Lisää passi: $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Seuraavaksi: ${step}. Sano kyllä, niin teen sen.';
+    return 'Seuraavaksi: $step. Sano kyllä, niin teen sen.';
   }
 
   @override
@@ -8989,10 +8988,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String get petTypeFieldHint => 'Anna lemmikin laji';
 
   @override
-  String get petBirthdayHint => 'Valitse syntymäpäivä';
+  String get petTypeRequired => 'Valitse lemmikin laji';
 
   @override
-  String get petTypeRequired => 'Valitse lemmikin laji';
+  String get petBirthdayHint => 'Valitse syntymäpäivä';
 
   @override
   String get petChipHint => 'Anna mikrosirun numero';
@@ -10665,4 +10664,80 @@ class AppLocalizationsFi extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Tämän päivän palvelun ”Kysy Vaultaralta” raja on täynnä. Se nollautuu huomenna klo $time. Kaikki muu Vaultarassa toimii tavalliseen tapaan.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Lähetä sähköpostia Vorkalis-tukeen';
+
+  @override
+  String get assistantSupportMessage => 'Viesti';
+
+  @override
+  String get assistantSupportNote => 'Sovelluksen versio, puhelin, järjestelmä, kieli ja tilaus lisätään. Tuki vastaa sähköpostiosoitteeseen, jolla kirjaudut.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Lähetetty Vorkalis-tukeen. Saat vastauksen osoitteeseen $email yhden arkipäivän kuluessa.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Olet jo lähettänyt tukeen viestin useita kertoja tänään. Yritä huomenna uudelleen tai kirjoita itse osoitteeseen support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Vahvista ensin sähköpostiosoitteesi, jotta tuki voi vastata sinulle.';
+
+  @override
+  String get assistantSupportFailed => 'Sähköpostia ei voitu lähettää. Yritä myöhemmin uudelleen tai kirjoita itse osoitteeseen support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Kutsu kotitalouteesi';
+
+  @override
+  String get assistantInviteNote => 'Vaultara lähettää heille kutsulinkin sähköpostilla. Se toimii kerran, 7 päivän ajan.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Kutsu lähetetty osoitteeseen $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Kutsua ei voitu lähettää. Yritä uudelleen tai jaa kutsu kotitaloudestasi.';
+
+  @override
+  String get assistantCalendarNote => 'Kalenterisovelluksesi avautuu tapahtuman kanssa, ja muistutus tulee 7 päivää ennen.';
+
+  @override
+  String get assistantSendLinkTitle => 'Lähetä turvallinen linkki';
+
+  @override
+  String get assistantSendLinkWorks => 'Linkki toimii';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours t';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Vain linkki lähetetään, ei koskaan itse tietoja. Valitset itse, miten lähetät sen, ja voit lopettaa sen aiemmin kohdassa $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Tuleva kuukausi';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Kuun 1. päivänä $assistant kertoo, mitä pitää uusia, mitä se maksaa ja tulevat matkasi';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Mitä minun pitää tehdä tässä kuussa?';
+
+  @override
+  String get assistantStepSupport => 'Kirjoitetaan sähköpostiasi';
+
+  @override
+  String get assistantStepSecurity => 'Tarkistetaan tilisi turvallisuutta';
+
+  @override
+  String get talkFinishOnScreen => 'Se on auki näytölläsi. Viimeistele se siellä ja napauta sitten puhuaksesi uudelleen.';
 }

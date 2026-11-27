@@ -3167,16 +3167,16 @@ class AppLocalizationsHa extends AppLocalizations {
   String get planGetPremium => 'Samu Premium';
 
   @override
-  String get businessPlanBuy => 'Samu Kasuwanci';
-
-  @override
   String get individualPlanBuy => 'Samu Na mutum ɗaya';
 
   @override
-  String get businessPlanSwitch => 'Koma zuwa Kasuwanci';
+  String get individualPlanSwitch => 'Koma zuwa Na mutum ɗaya';
 
   @override
-  String get individualPlanSwitch => 'Koma zuwa Na mutum ɗaya';
+  String get businessPlanBuy => 'Samu Kasuwanci';
+
+  @override
+  String get businessPlanSwitch => 'Koma zuwa Kasuwanci';
 
   @override
   String get planSwitchToYearly => 'Koma na kowace shekara';
@@ -6682,27 +6682,27 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Ƙara allurar rigakafi ga ${name}';
+    return 'Ƙara allurar rigakafi ga $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Ƙara microchip ga ${name}';
+    return 'Ƙara microchip ga $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Ƙara inshorar dabba ga ${name}';
+    return 'Ƙara inshorar dabba ga $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Ƙara fasfo ga ${name}';
+    return 'Ƙara fasfo ga $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Na gaba: ${step}. Ka ce eh don yin sa.';
+    return 'Na gaba: $step. Ka ce eh don yin sa.';
   }
 
   @override
@@ -8984,10 +8984,10 @@ class AppLocalizationsHa extends AppLocalizations {
   String get petTypeFieldHint => 'Shigar da nau\'in dabbar gida';
 
   @override
-  String get petBirthdayHint => 'Zaɓi ranar haihuwa';
+  String get petTypeRequired => 'Zaɓi nau\'in dabbar gida';
 
   @override
-  String get petTypeRequired => 'Zaɓi nau\'in dabbar gida';
+  String get petBirthdayHint => 'Zaɓi ranar haihuwa';
 
   @override
   String get petChipHint => 'Shigar da lambar microchip';
@@ -10396,8 +10396,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get talkNoVoice => 'Wayarka ba ta da murya don wannan harshen, don haka ana nuna amsoshi amma ba a karanta su.';
 
   @override
-  String get talkNotDone =>
-      'Hakan bai yi nasara ba. Duba bayanan da ke kan allo.';
+  String get talkNotDone => 'Hakan bai yi nasara ba. Duba bayanan da ke kan allo.';
 
   @override
   String get talkReady => 'Ina saurara.';
@@ -10661,4 +10660,80 @@ class AppLocalizationsHa extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Ka kai iyakar \"Tambayi Vaultara\" ta yau. Za ta sake farawa gobe da ƙarfe $time. Komai a cikin Vaultara yana aiki kamar yadda aka saba.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Aika imel ga tallafin Vorkalis';
+
+  @override
+  String get assistantSupportMessage => 'Saƙo';
+
+  @override
+  String get assistantSupportNote => 'Ana ƙara sigar manhaja, waya, tsari, harshe da tsarin biyan kuɗi. Tallafi yana amsawa ga imel ɗin da kake shiga da shi.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'An aika ga tallafin Vorkalis. Ya kamata ka sami amsa a $email cikin kwanan aiki ɗaya.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Ka riga ka aika wa tallafi imel sau da yawa a yau. Sake gwadawa gobe, ko ka rubuta kai tsaye zuwa support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Da farko ka tabbatar da adireshin imel ɗinka, don tallafi ya iya amsa maka.';
+
+  @override
+  String get assistantSupportFailed => 'Ba a iya aika imel ɗin ba. Sake gwadawa daga baya, ko ka rubuta kai tsaye zuwa support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Gayyata zuwa gidanka';
+
+  @override
+  String get assistantInviteNote => 'Vaultara tana aika musu hanyar haɗin gayyata ta imel. Tana aiki sau ɗaya, na kwanaki 7.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'An aika gayyata zuwa $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Ba a iya aika gayyatar ba. Sake gwadawa, ko ka raba gayyata daga gidanka a maimakon haka.';
+
+  @override
+  String get assistantCalendarNote => 'Manhajar kalandarka za ta buɗe da taron da tunatarwa kwanaki 7 kafin.';
+
+  @override
+  String get assistantSendLinkTitle => 'Aika hanyar haɗi mai tsaro';
+
+  @override
+  String get assistantSendLinkWorks => 'Hanyar haɗin tana aiki na';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours awa';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Hanyar haɗi kawai ake aikawa, ba cikakkun bayanai ba. Kai ke zaɓar yadda za ka aika ta, kuma za ka iya dakatar da ita da wuri a $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Wata mai zuwa';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'A ranar 1 ga kowane wata, $assistant yana aika abin da za a sabunta, kuɗinsa da tafiye-tafiyenka masu zuwa';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Me ya kamata in yi wannan watan?';
+
+  @override
+  String get assistantStepSupport => 'Ana rubuta imel ɗinka';
+
+  @override
+  String get assistantStepSecurity => 'Ana duba tsaron asusunka';
+
+  @override
+  String get talkFinishOnScreen => 'Yana buɗe a allonka. Ka gama a can, sannan ka taɓa don sake magana.';
 }

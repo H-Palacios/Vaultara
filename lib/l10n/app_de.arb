@@ -4437,5 +4437,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "E-Mail an den Vorkalis-Support",
+  "assistantSupportMessage": "Nachricht",
+  "assistantSupportNote": "App-Version, Handy, System, Sprache und Tarif werden hinzugefügt. Der Support antwortet an die E-Mail-Adresse, mit der du dich anmeldest.",
+  "assistantSupportSent": "An den Vorkalis-Support gesendet. Du solltest innerhalb eines Werktags eine Antwort an {email} erhalten.",
+  "assistantSupportLimit": "Du hast dem Support heute schon mehrmals geschrieben. Versuche es morgen erneut oder schreib selbst an support@vorkalis.com.",
+  "assistantSupportVerify": "Bestätige zuerst deine E-Mail-Adresse, damit der Support dir antworten kann.",
+  "assistantSupportFailed": "Die E-Mail konnte nicht gesendet werden. Versuche es später erneut oder schreib selbst an support@vorkalis.com.",
+  "assistantInviteTitle": "In deinen Haushalt einladen",
+  "assistantInviteNote": "Vaultara schickt ihnen einen Einladungslink per E-Mail. Er funktioniert einmal, 7 Tage lang.",
+  "assistantInviteSent": "Einladung an {email} gesendet.",
+  "assistantInviteFailed": "Die Einladung konnte nicht gesendet werden. Versuche es erneut oder teile stattdessen eine Einladung aus deinem Haushalt.",
+  "assistantCalendarNote": "Deine Kalender-App öffnet sich mit dem Termin und einer Erinnerung 7 Tage vorher.",
+  "assistantSendLinkTitle": "Sicheren Link senden",
+  "assistantSendLinkWorks": "Link gültig für",
+  "assistantSendLinkHours": "{hours} Std.",
+  "assistantSendLinkNote": "Es wird nur ein Link gesendet, nie die Angaben selbst. Du wählst, wie du ihn sendest, und kannst ihn unter {sharedLinks} früher beenden.",
+  "monthAheadTitle": "Monatsvorschau",
+  "monthAheadSubtitle": "Am 1. schickt dir {assistant}, was zu erneuern ist, was es kostet und deine anstehenden Reisen",
+  "monthAheadQuestion": "Was muss ich diesen Monat erledigen?",
+  "assistantStepSupport": "Deine E-Mail wird geschrieben",
+  "assistantStepSecurity": "Sicherheit deines Kontos wird geprüft",
+  "talkFinishOnScreen": "Es ist auf deinem Bildschirm geöffnet. Schließ es dort ab und tippe dann, um wieder zu sprechen."
 }

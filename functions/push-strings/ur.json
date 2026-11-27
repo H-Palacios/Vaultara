@@ -26,5 +26,11 @@
   "staffOverdueTitle": "عملے کی دستاویز ختم ہو گئی",
   "staffOverdueYesterday": "{person} کی {name} کل ختم ہو گئی اور تجدید نہیں ہوئی۔",
   "staffOverdueWeek": "{person} کی {name} ایک ہفتہ پہلے ختم ہو گئی اور ابھی تک تجدید نہیں ہوئی۔",
-  "staffOverdueMany": "عملے کی {count} دستاویزات ختم ہو گئی ہیں اور تجدید نہیں ہوئی: {names}۔"
+  "staffOverdueMany": "عملے کی {count} دستاویزات ختم ہو گئی ہیں اور تجدید نہیں ہوئی: {names}۔",
+  "monthAheadTitle": "آپ کا آنے والا مہینہ",
+  "monthAheadBodyCount": "اس مہینے تجدید کے لیے: {count}۔ کیا کرنا ہے دیکھنے کے لیے تھپتھپائیں۔",
+  "monthAheadBodyCost": "اس مہینے تجدید کے لیے: {count}، تقریباً {cost}۔ کیا کرنا ہے دیکھنے کے لیے تھپتھپائیں۔",
+  "monthAheadBodyCountTrips": "اس مہینے تجدید کے لیے: {count}۔ اگلے 6 ہفتوں میں سفر: {trips}۔ کیا کرنا ہے دیکھنے کے لیے تھپتھپائیں۔",
+  "monthAheadBodyCostTrips": "اس مہینے تجدید کے لیے: {count}، تقریباً {cost}۔ اگلے 6 ہفتوں میں سفر: {trips}۔ کیا کرنا ہے دیکھنے کے لیے تھپتھپائیں۔",
+  "monthAheadBodyTrips": "اس مہینے تجدید کے لیے کچھ نہیں۔ اگلے 6 ہفتوں میں سفر: {trips}۔ کیا کرنا ہے دیکھنے کے لیے تھپتھپائیں۔"
 }

@@ -13618,5 +13618,123 @@
         "example": "14:05"
       }
     }
+  },
+  "assistantSupportTitle": "Email Vorkalis support",
+  "@assistantSupportTitle": {
+    "description": "Ask Vaultara card title: an email to Vorkalis support written from the chat, sent only after Confirm."
+  },
+  "assistantSupportMessage": "Message",
+  "@assistantSupportMessage": {
+    "description": "Ask Vaultara support email card: label of the row with the email itself."
+  },
+  "assistantSupportNote": "Your app version, phone, system, language and plan are added. Support replies to the email you sign in with.",
+  "@assistantSupportNote": {
+    "description": "Ask Vaultara support email card: what is added to the email and where the reply goes."
+  },
+  "assistantSupportSent": "Sent to Vorkalis support. You should get a reply at {email} within one working day.",
+  "@assistantSupportSent": {
+    "description": "Snack bar after a support email from Ask Vaultara was sent. {email} is the address the reply goes to.",
+    "placeholders": {
+      "email": {
+        "type": "String",
+        "example": "rico@example.com"
+      }
+    }
+  },
+  "assistantSupportLimit": "You've emailed support several times today. Try again tomorrow, or write to support@vorkalis.com yourself.",
+  "@assistantSupportLimit": {
+    "description": "Snack bar: too many support emails from Ask Vaultara today."
+  },
+  "assistantSupportVerify": "Verify your email address first, so support can reply to you.",
+  "@assistantSupportVerify": {
+    "description": "Snack bar: the email address must be verified before support can be emailed from Ask Vaultara."
+  },
+  "assistantSupportFailed": "The email couldn't be sent. Try again later, or write to support@vorkalis.com yourself.",
+  "@assistantSupportFailed": {
+    "description": "Snack bar: the support email from Ask Vaultara could not be sent."
+  },
+  "assistantInviteTitle": "Invite to your household",
+  "@assistantInviteTitle": {
+    "description": "Ask Vaultara card title: invite someone to the household by email."
+  },
+  "assistantInviteNote": "Vaultara emails them an invite link. It works once, for 7 days.",
+  "@assistantInviteNote": {
+    "description": "Ask Vaultara household invite card: what the person receives."
+  },
+  "assistantInviteSent": "Invite sent to {email}.",
+  "@assistantInviteSent": {
+    "description": "Snack bar after a household invite was emailed. {email} is their address.",
+    "placeholders": {
+      "email": {
+        "type": "String",
+        "example": "thandi@gmail.com"
+      }
+    }
+  },
+  "assistantInviteFailed": "The invite couldn't be sent. Try again, or share an invite from your household instead.",
+  "@assistantInviteFailed": {
+    "description": "Snack bar: the household invite from Ask Vaultara could not be emailed."
+  },
+  "assistantCalendarNote": "Your calendar app opens with the event, with an alarm 7 days before.",
+  "@assistantCalendarNote": {
+    "description": "Ask Vaultara Add to calendar card: what happens on Confirm."
+  },
+  "assistantSendLinkTitle": "Send a secure link",
+  "@assistantSendLinkTitle": {
+    "description": "Ask Vaultara card title: send one record to someone as a secure share link."
+  },
+  "assistantSendLinkWorks": "Link works for",
+  "@assistantSendLinkWorks": {
+    "description": "Ask Vaultara secure link card: label of the row with how long the link works."
+  },
+  "assistantSendLinkHours": "{hours} h",
+  "@assistantSendLinkHours": {
+    "description": "Ask Vaultara secure link card: how long the link works, short. {hours} is 1 to 72.",
+    "placeholders": {
+      "hours": {
+        "type": "int",
+        "example": "24"
+      }
+    }
+  },
+  "assistantSendLinkNote": "Only a link is sent, never the details themselves. You choose how to send it, and can stop it early in {sharedLinks}.",
+  "@assistantSendLinkNote": {
+    "description": "Ask Vaultara secure link card: only a link is sent. {sharedLinks} is the translated name of the Shared links screen.",
+    "placeholders": {
+      "sharedLinks": {
+        "type": "String",
+        "example": "Shared links"
+      }
+    }
+  },
+  "monthAheadTitle": "Month ahead",
+  "@monthAheadTitle": {
+    "description": "Notifications screen: switch for the month ahead notification from Ask Vaultara on the 1st of each month."
+  },
+  "monthAheadSubtitle": "On the 1st, {assistant} sends what to renew, what it costs and your trips coming up",
+  "@monthAheadSubtitle": {
+    "description": "Notifications screen: under the month ahead switch. {assistant} is the translated name Ask Vaultara.",
+    "placeholders": {
+      "assistant": {
+        "type": "String",
+        "example": "Ask Vaultara"
+      }
+    }
+  },
+  "monthAheadQuestion": "What do I need to do this month?",
+  "@monthAheadQuestion": {
+    "description": "Sent to Ask Vaultara when the month ahead notification is tapped, as if the user typed it."
+  },
+  "assistantStepSupport": "Writing your email",
+  "@assistantStepSupport": {
+    "description": "Ask Vaultara status while it writes a support email."
+  },
+  "assistantStepSecurity": "Checking your account's security",
+  "@assistantStepSecurity": {
+    "description": "Ask Vaultara status while it reads the devices and security history."
+  },
+  "talkFinishOnScreen": "It's open on your screen. Finish there, then tap to talk again.",
+  "@talkFinishOnScreen": {
+    "description": "Talk mode, said aloud after a confirmed card opened another screen or app (Your devices, the calendar, the share sheet) where the user finishes. Talk mode then stops listening until they tap."
   }
 }

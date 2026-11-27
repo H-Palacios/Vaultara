@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Personaledokument udløbet",
   "staffOverdueYesterday": "{name} for {person} udløb i går og er ikke fornyet.",
   "staffOverdueWeek": "{name} for {person} udløb for en uge siden og er stadig ikke fornyet.",
-  "staffOverdueMany": "{count} personaledokumenter er udløbet og ikke fornyet: {names}."
+  "staffOverdueMany": "{count} personaledokumenter er udløbet og ikke fornyet: {names}.",
+  "monthAheadTitle": "Din måned frem",
+  "monthAheadBodyCount": "Skal fornyes denne måned: {count}. Tryk for at se, hvad du skal gøre.",
+  "monthAheadBodyCost": "Skal fornyes denne måned: {count}, ca. {cost}. Tryk for at se, hvad du skal gøre.",
+  "monthAheadBodyCountTrips": "Skal fornyes denne måned: {count}. Rejser de næste 6 uger: {trips}. Tryk for at se, hvad du skal gøre.",
+  "monthAheadBodyCostTrips": "Skal fornyes denne måned: {count}, ca. {cost}. Rejser de næste 6 uger: {trips}. Tryk for at se, hvad du skal gøre.",
+  "monthAheadBodyTrips": "Intet skal fornyes denne måned. Rejser de næste 6 uger: {trips}. Tryk for at se, hvad du skal gøre."
 }

@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Giấy tờ của nhân viên đã hết hạn",
   "staffOverdueYesterday": "{name} của {person} đã hết hạn hôm qua và chưa được gia hạn.",
   "staffOverdueWeek": "{name} của {person} đã hết hạn một tuần trước và vẫn chưa được gia hạn.",
-  "staffOverdueMany": "{count} giấy tờ của nhân viên đã hết hạn và chưa được gia hạn: {names}."
+  "staffOverdueMany": "{count} giấy tờ của nhân viên đã hết hạn và chưa được gia hạn: {names}.",
+  "monthAheadTitle": "Tháng tới của bạn",
+  "monthAheadBodyCount": "Cần gia hạn tháng này: {count}. Chạm để xem cần làm gì.",
+  "monthAheadBodyCost": "Cần gia hạn tháng này: {count}, khoảng {cost}. Chạm để xem cần làm gì.",
+  "monthAheadBodyCountTrips": "Cần gia hạn tháng này: {count}. Chuyến đi trong 6 tuần tới: {trips}. Chạm để xem cần làm gì.",
+  "monthAheadBodyCostTrips": "Cần gia hạn tháng này: {count}, khoảng {cost}. Chuyến đi trong 6 tuần tới: {trips}. Chạm để xem cần làm gì.",
+  "monthAheadBodyTrips": "Tháng này không có gì cần gia hạn. Chuyến đi trong 6 tuần tới: {trips}. Chạm để xem cần làm gì."
 }

@@ -4381,5 +4381,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Написать в поддержку Vorkalis",
+  "assistantSupportMessage": "Сообщение",
+  "assistantSupportNote": "Добавляются версия приложения, телефон, система, язык и тариф. Поддержка ответит на адрес, с которым вы входите.",
+  "assistantSupportSent": "Отправлено в поддержку Vorkalis. Ответ на {email} должен прийти в течение одного рабочего дня.",
+  "assistantSupportLimit": "Сегодня вы уже несколько раз писали в поддержку. Попробуйте завтра или напишите напрямую на support@vorkalis.com.",
+  "assistantSupportVerify": "Сначала подтвердите адрес электронной почты, чтобы поддержка могла вам ответить.",
+  "assistantSupportFailed": "Не удалось отправить письмо. Попробуйте позже или напишите напрямую на support@vorkalis.com.",
+  "assistantInviteTitle": "Пригласить в домохозяйство",
+  "assistantInviteNote": "Vaultara отправит этому человеку ссылку-приглашение по почте. Она работает один раз в течение 7 дней.",
+  "assistantInviteSent": "Приглашение отправлено на {email}.",
+  "assistantInviteFailed": "Не удалось отправить приглашение. Попробуйте ещё раз или поделитесь приглашением из своего домохозяйства.",
+  "assistantCalendarNote": "Откроется приложение календаря с событием и напоминанием за 7 дней.",
+  "assistantSendLinkTitle": "Отправить защищённую ссылку",
+  "assistantSendLinkWorks": "Ссылка действует",
+  "assistantSendLinkHours": "{hours} ч",
+  "assistantSendLinkNote": "Отправляется только ссылка, никогда сами данные. Вы выбираете, как её отправить, и можете остановить её раньше в разделе «{sharedLinks}».",
+  "monthAheadTitle": "Месяц вперёд",
+  "monthAheadSubtitle": "1-го числа {assistant} присылает, что нужно продлить, сколько это стоит и ваши ближайшие поездки",
+  "monthAheadQuestion": "Что мне нужно сделать в этом месяце?",
+  "assistantStepSupport": "Пишу ваше письмо",
+  "assistantStepSecurity": "Проверяю безопасность вашего аккаунта",
+  "talkFinishOnScreen": "Это открыто на экране. Завершите там, затем нажмите, чтобы снова говорить."
 }

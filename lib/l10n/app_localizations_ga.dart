@@ -3245,16 +3245,16 @@ class AppLocalizationsGa extends AppLocalizations {
   String get planGetPremium => 'Faigh Premium';
 
   @override
-  String get businessPlanBuy => 'Faigh Gnó';
-
-  @override
   String get individualPlanBuy => 'Faigh Aonair';
 
   @override
-  String get businessPlanSwitch => 'Athraigh go Gnó';
+  String get individualPlanSwitch => 'Athraigh go Aonair';
 
   @override
-  String get individualPlanSwitch => 'Athraigh go Aonair';
+  String get businessPlanBuy => 'Faigh Gnó';
+
+  @override
+  String get businessPlanSwitch => 'Athraigh go Gnó';
 
   @override
   String get planSwitchToYearly => 'Athraigh go bliantúil';
@@ -5045,8 +5045,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get assistantEmptyReply => 'Níor aimsigh mé freagra. Bain triail as ceist a chur ar bhealach eile.';
 
   @override
-  String get assistantDraftReady =>
-      'Seo na sonraí. Tapáil Deimhnigh chun iad a shábháil.';
+  String get assistantDraftReady => 'Seo na sonraí. Tapáil Deimhnigh chun iad a shábháil.';
 
   @override
   String get assistantNewChat => 'Comhrá nua';
@@ -6864,27 +6863,27 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Cuir vacsaínithe le haghaidh ${name} leis';
+    return 'Cuir vacsaínithe le haghaidh $name leis';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Cuir an micrishlis le haghaidh ${name} leis';
+    return 'Cuir an micrishlis le haghaidh $name leis';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Cuir árachas peata le haghaidh ${name} leis';
+    return 'Cuir árachas peata le haghaidh $name leis';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Cuir pas le haghaidh ${name} leis';
+    return 'Cuir pas le haghaidh $name leis';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Ar aghaidh: ${step}. Abair tá chun é a dhéanamh.';
+    return 'Ar aghaidh: $step. Abair tá chun é a dhéanamh.';
   }
 
   @override
@@ -9169,10 +9168,10 @@ class AppLocalizationsGa extends AppLocalizations {
   String get petTypeFieldHint => 'Cuir isteach cineál an pheata';
 
   @override
-  String get petBirthdayHint => 'Roghnaigh dáta breithe';
+  String get petTypeRequired => 'Roghnaigh cineál an pheata';
 
   @override
-  String get petTypeRequired => 'Roghnaigh cineál an pheata';
+  String get petBirthdayHint => 'Roghnaigh dáta breithe';
 
   @override
   String get petChipHint => 'Cuir isteach uimhir an mhicrishlis';
@@ -10605,8 +10604,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get talkNoVoice => 'Níl guth ag do ghuthán don teanga seo, mar sin taispeántar freagraí ach ní léitear iad.';
 
   @override
-  String get talkNotDone =>
-      'Níor éirigh leis sin. Seiceáil na sonraí ar an scáileán.';
+  String get talkNotDone => 'Níor éirigh leis sin. Seiceáil na sonraí ar an scáileán.';
 
   @override
   String get talkReady => 'Táim ag éisteacht.';
@@ -10870,4 +10868,80 @@ class AppLocalizationsGa extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Shroich tú teorainn an lae inniu de \"Fiafraigh de Vaultara\". Athshocraítear í amárach ag $time. Oibríonn gach rud eile in Vaultara mar is gnáth.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Seol ríomhphost chuig tacaíocht Vorkalis';
+
+  @override
+  String get assistantSupportMessage => 'Teachtaireacht';
+
+  @override
+  String get assistantSupportNote => 'Cuirtear leagan na haipe, an fón, an córas, an teanga agus an plean leis. Freagraíonn an fhoireann tacaíochta chuig an ríomhphost a úsáideann tú chun síniú isteach.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Seolta chuig tacaíocht Vorkalis. Ba cheart freagra a fháil ag $email laistigh de lá oibre amháin.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Tá ríomhphost seolta agat chuig an tacaíocht cúpla uair inniu cheana. Bain triail eile as amárach, nó scríobh go díreach chuig support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Deimhnigh do sheoladh ríomhphoist ar dtús, ionas gur féidir leis an tacaíocht freagra a thabhairt ort.';
+
+  @override
+  String get assistantSupportFailed => 'Níorbh fhéidir an ríomhphost a sheoladh. Bain triail eile as níos déanaí, nó scríobh go díreach chuig support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Tabhair cuireadh chuig do líon tí';
+
+  @override
+  String get assistantInviteNote => 'Seolann Vaultara nasc cuiridh chucu i ríomhphost. Oibríonn sé uair amháin, ar feadh 7 lá.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Cuireadh seolta chuig $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Níorbh fhéidir an cuireadh a sheoladh. Bain triail eile as, nó roinn cuireadh ó do líon tí ina ionad.';
+
+  @override
+  String get assistantCalendarNote => 'Osclaíonn d\'aip féilire leis an imeacht agus meabhrúchán 7 lá roimh ré.';
+
+  @override
+  String get assistantSendLinkTitle => 'Seol nasc slán';
+
+  @override
+  String get assistantSendLinkWorks => 'Oibríonn an nasc ar feadh';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours u';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Ní sheoltar ach nasc, riamh na sonraí féin. Roghnaíonn tú conas é a sheoladh, agus is féidir leat é a stopadh níos luaithe in $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'An mhí romhat';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Ar an 1ú, seolann $assistant cad atá le hathnuachan, cé mhéad a chosnóidh sé agus na turais atá romhat';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Cad atá le déanamh agam an mhí seo?';
+
+  @override
+  String get assistantStepSupport => 'Do ríomhphost á scríobh';
+
+  @override
+  String get assistantStepSecurity => 'Slándáil do chuntais á seiceáil';
+
+  @override
+  String get talkFinishOnScreen => 'Tá sé oscailte ar do scáileán. Críochnaigh ansin, ansin tapáil chun labhairt arís.';
 }

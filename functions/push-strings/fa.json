@@ -26,5 +26,11 @@
   "staffOverdueTitle": "مدرک کارمند منقضی شد",
   "staffOverdueYesterday": "{name} متعلق به {person} دیروز منقضی شد و تمدید نشده است.",
   "staffOverdueWeek": "{name} متعلق به {person} یک هفته پیش منقضی شد و هنوز تمدید نشده است.",
-  "staffOverdueMany": "{count} مدرک کارمند منقضی شده و تمدید نشده‌اند: {names}."
+  "staffOverdueMany": "{count} مدرک کارمند منقضی شده و تمدید نشده‌اند: {names}.",
+  "monthAheadTitle": "ماه پیش روی شما",
+  "monthAheadBodyCount": "برای تمدید در این ماه: {count}. برای دیدن کارهای لازم ضربه بزنید.",
+  "monthAheadBodyCost": "برای تمدید در این ماه: {count}، حدود {cost}. برای دیدن کارهای لازم ضربه بزنید.",
+  "monthAheadBodyCountTrips": "برای تمدید در این ماه: {count}. سفرها در ۶ هفتهٔ آینده: {trips}. برای دیدن کارهای لازم ضربه بزنید.",
+  "monthAheadBodyCostTrips": "برای تمدید در این ماه: {count}، حدود {cost}. سفرها در ۶ هفتهٔ آینده: {trips}. برای دیدن کارهای لازم ضربه بزنید.",
+  "monthAheadBodyTrips": "این ماه چیزی برای تمدید نیست. سفرها در ۶ هفتهٔ آینده: {trips}. برای دیدن کارهای لازم ضربه بزنید."
 }

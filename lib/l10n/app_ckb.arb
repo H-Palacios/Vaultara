@@ -4406,5 +4406,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "ئیمەیڵ بۆ پشتگیریی Vorkalis",
+  "assistantSupportMessage": "نامە",
+  "assistantSupportNote": "وەشانی ئەپ، مۆبایل، سیستەم، زمان و پلان زیاد دەکرێن. پشتگیری وەڵام بۆ ئەو ئیمەیڵە دەنێرێت کە پێی دەچیتە ژوورەوە.",
+  "assistantSupportSent": "بۆ پشتگیریی Vorkalis نێردرا. دەبێت لە ماوەی یەک ڕۆژی کاردا وەڵام لە {email} وەربگریت.",
+  "assistantSupportLimit": "ئەمڕۆ چەند جار بۆ پشتگیری نووسیوتە. سبەی دووبارە هەوڵ بدەرەوە یان ڕاستەوخۆ بۆ support@vorkalis.com بنووسە.",
+  "assistantSupportVerify": "سەرەتا ئیمەیڵەکەت پشتڕاست بکەرەوە بۆ ئەوەی پشتگیری بتوانێت وەڵامت بداتەوە.",
+  "assistantSupportFailed": "ئیمەیڵەکە نەنێردرا. دواتر هەوڵ بدەرەوە یان ڕاستەوخۆ بۆ support@vorkalis.com بنووسە.",
+  "assistantInviteTitle": "بانگهێشت بۆ خێزانەکەت",
+  "assistantInviteNote": "Vaultara بەستەرێکی بانگهێشتیان بە ئیمەیڵ بۆ دەنێرێت. یەک جار، بۆ ماوەی 7 ڕۆژ کار دەکات.",
+  "assistantInviteSent": "بانگهێشت بۆ {email} نێردرا.",
+  "assistantInviteFailed": "بانگهێشتەکە نەنێردرا. دووبارە هەوڵ بدەرەوە یان لە جیاتی ئەوە بانگهێشتێک لە خێزانەکەتەوە هاوبەش بکە.",
+  "assistantCalendarNote": "ئەپی ڕۆژژمێرەکەت لەگەڵ ڕووداوەکە و بیرخەرەوەیەک 7 ڕۆژ پێشتر دەکرێتەوە.",
+  "assistantSendLinkTitle": "ناردنی بەستەرێکی پارێزراو",
+  "assistantSendLinkWorks": "بەستەر کار دەکات بۆ",
+  "assistantSendLinkHours": "{hours} کاتژمێر",
+  "assistantSendLinkNote": "تەنها بەستەرێک دەنێردرێت، هەرگیز خودی وردەکارییەکان نا. خۆت هەڵدەبژێریت چۆن بینێریت، و دەتوانیت زووتر لە {sharedLinks} ڕایبگریت.",
+  "monthAheadTitle": "مانگی داهاتوو",
+  "monthAheadSubtitle": "لە یەکی هەموو مانگێکدا {assistant} دەنێرێت چی پێویستی بە نوێکردنەوە هەیە، تێچووەکەی و گەشتە داهاتووەکانت",
+  "monthAheadQuestion": "ئەم مانگە چی بکەم؟",
+  "assistantStepSupport": "ئیمەیڵەکەت دەنووسرێت",
+  "assistantStepSecurity": "پاراستنی هەژمارەکەت دەپشکنرێت",
+  "talkFinishOnScreen": "لەسەر شاشەکەت کراوەتەوە. لەوێ تەواوی بکە، پاشان دەست لێ بدە بۆ ئەوەی دووبارە قسە بکەیت."
 }

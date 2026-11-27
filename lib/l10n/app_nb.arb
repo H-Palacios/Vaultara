@@ -4406,5 +4406,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Send e-post til Vorkalis-støtte",
+  "assistantSupportMessage": "Melding",
+  "assistantSupportNote": "Appversjon, telefon, system, språk og abonnement legges til. Støtte svarer til e-postadressen du logger inn med.",
+  "assistantSupportSent": "Sendt til Vorkalis-støtte. Du bør få svar på {email} innen én virkedag.",
+  "assistantSupportLimit": "Du har allerede sendt e-post til støtte flere ganger i dag. Prøv igjen i morgen, eller skriv selv til support@vorkalis.com.",
+  "assistantSupportVerify": "Bekreft e-postadressen din først, så støtte kan svare deg.",
+  "assistantSupportFailed": "E-posten kunne ikke sendes. Prøv igjen senere, eller skriv selv til support@vorkalis.com.",
+  "assistantInviteTitle": "Inviter til husstanden din",
+  "assistantInviteNote": "Vaultara sender dem en invitasjonslenke på e-post. Den virker én gang, i 7 dager.",
+  "assistantInviteSent": "Invitasjon sendt til {email}.",
+  "assistantInviteFailed": "Invitasjonen kunne ikke sendes. Prøv igjen, eller del heller en invitasjon fra husstanden din.",
+  "assistantCalendarNote": "Kalenderappen din åpnes med hendelsen og en påminnelse 7 dager før.",
+  "assistantSendLinkTitle": "Send en sikker lenke",
+  "assistantSendLinkWorks": "Lenken virker i",
+  "assistantSendLinkHours": "{hours} t",
+  "assistantSendLinkNote": "Bare en lenke sendes, aldri selve opplysningene. Du velger hvordan den sendes, og kan stoppe den tidligere under {sharedLinks}.",
+  "monthAheadTitle": "Måneden fremover",
+  "monthAheadSubtitle": "Den 1. sender {assistant} hva som må fornyes, hva det koster og reisene dine som kommer",
+  "monthAheadQuestion": "Hva må jeg gjøre denne måneden?",
+  "assistantStepSupport": "Skriver e-posten din",
+  "assistantStepSecurity": "Sjekker sikkerheten på kontoen din",
+  "talkFinishOnScreen": "Det er åpent på skjermen. Gjør det ferdig der, og trykk så for å snakke igjen."
 }

@@ -3153,16 +3153,16 @@ class AppLocalizationsKo extends AppLocalizations {
   String get planGetPremium => '프리미엄 시작하기';
 
   @override
-  String get businessPlanBuy => '비즈니스 시작하기';
-
-  @override
   String get individualPlanBuy => '개인 요금제 시작';
 
   @override
-  String get businessPlanSwitch => '비즈니스로 전환';
+  String get individualPlanSwitch => '개인 요금제로 전환';
 
   @override
-  String get individualPlanSwitch => '개인 요금제로 전환';
+  String get businessPlanBuy => '비즈니스 시작하기';
+
+  @override
+  String get businessPlanSwitch => '비즈니스로 전환';
 
   @override
   String get planSwitchToYearly => '연간 결제로 전환';
@@ -6631,27 +6631,27 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return '${name}의 예방접종 추가';
+    return '$name의 예방접종 추가';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return '${name}의 마이크로칩 추가';
+    return '$name의 마이크로칩 추가';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return '${name}의 반려동물 보험 추가';
+    return '$name의 반려동물 보험 추가';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return '${name}의 여권 추가';
+    return '$name의 여권 추가';
   }
 
   @override
   String talkNextStep(String step) {
-    return '다음: ${step}. 진행하려면 네라고 말하세요.';
+    return '다음: $step. 진행하려면 네라고 말하세요.';
   }
 
   @override
@@ -8927,10 +8927,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get petTypeFieldHint => '반려동물 종류 입력';
 
   @override
-  String get petBirthdayHint => '생년월일 선택';
+  String get petTypeRequired => '반려동물 종류를 선택하세요';
 
   @override
-  String get petTypeRequired => '반려동물 종류를 선택하세요';
+  String get petBirthdayHint => '생년월일 선택';
 
   @override
   String get petChipHint => '마이크로칩 번호 입력';
@@ -10596,4 +10596,80 @@ class AppLocalizationsKo extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return '오늘의 \"Vaultara에 물어보기\" 한도에 도달했어요. 내일 $time에 초기화돼요. Vaultara의 다른 기능은 평소처럼 사용할 수 있어요.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Vorkalis 지원팀에 이메일 보내기';
+
+  @override
+  String get assistantSupportMessage => '메시지';
+
+  @override
+  String get assistantSupportNote => '앱 버전, 휴대폰, 시스템, 언어, 요금제가 추가됩니다. 지원팀은 로그인에 사용하는 이메일로 답장합니다.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Vorkalis 지원팀에 보냈습니다. 영업일 기준 1일 이내에 $email(으)로 답장을 받으실 수 있습니다.';
+  }
+
+  @override
+  String get assistantSupportLimit => '오늘 이미 지원팀에 여러 번 이메일을 보냈습니다. 내일 다시 시도하거나 support@vorkalis.com으로 직접 보내세요.';
+
+  @override
+  String get assistantSupportVerify => '지원팀이 답장할 수 있도록 먼저 이메일 주소를 인증하세요.';
+
+  @override
+  String get assistantSupportFailed => '이메일을 보내지 못했습니다. 나중에 다시 시도하거나 support@vorkalis.com으로 직접 보내세요.';
+
+  @override
+  String get assistantInviteTitle => '내 가구에 초대';
+
+  @override
+  String get assistantInviteNote => 'Vaultara가 초대 링크를 이메일로 보냅니다. 링크는 7일 동안 한 번 사용할 수 있습니다.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return '$email(으)로 초대를 보냈습니다.';
+  }
+
+  @override
+  String get assistantInviteFailed => '초대를 보내지 못했습니다. 다시 시도하거나 가구 화면에서 초대를 공유하세요.';
+
+  @override
+  String get assistantCalendarNote => '일정과 7일 전 알림이 포함된 상태로 캘린더 앱이 열립니다.';
+
+  @override
+  String get assistantSendLinkTitle => '안전한 링크 보내기';
+
+  @override
+  String get assistantSendLinkWorks => '링크 유효 기간';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours시간';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return '링크만 전송되며 세부 정보 자체는 전송되지 않습니다. 보내는 방법은 직접 선택하고 $sharedLinks에서 미리 중지할 수 있습니다.';
+  }
+
+  @override
+  String get monthAheadTitle => '다가오는 한 달';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return '매월 1일 $assistant이(가) 갱신할 항목, 비용, 다가오는 여행을 알려 드립니다';
+  }
+
+  @override
+  String get monthAheadQuestion => '이번 달에 무엇을 해야 하나요?';
+
+  @override
+  String get assistantStepSupport => '이메일을 작성하는 중';
+
+  @override
+  String get assistantStepSecurity => '계정 보안을 확인하는 중';
+
+  @override
+  String get talkFinishOnScreen => '화면에 열려 있습니다. 거기서 마친 다음 탭해서 다시 말씀하세요.';
 }

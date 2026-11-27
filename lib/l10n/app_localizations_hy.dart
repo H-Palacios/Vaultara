@@ -3167,16 +3167,16 @@ class AppLocalizationsHy extends AppLocalizations {
   String get planGetPremium => 'Ձեռք բերել Premium';
 
   @override
-  String get businessPlanBuy => 'Ձեռք բերել Բիզնեսը';
-
-  @override
   String get individualPlanBuy => 'Ձեռք բերել Անհատականը';
 
   @override
-  String get businessPlanSwitch => 'Անցնել Բիզնեսին';
+  String get individualPlanSwitch => 'Անցնել Անհատականին';
 
   @override
-  String get individualPlanSwitch => 'Անցնել Անհատականին';
+  String get businessPlanBuy => 'Ձեռք բերել Բիզնեսը';
+
+  @override
+  String get businessPlanSwitch => 'Անցնել Բիզնեսին';
 
   @override
   String get planSwitchToYearly => 'Անցնել տարեկանին';
@@ -4915,8 +4915,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String get assistantEmptyReply => 'Չկարողացա պատասխան գտնել։ Փորձեք հարցնել այլ կերպ։';
 
   @override
-  String get assistantDraftReady =>
-      'Ահա մանրամասները։ Պահելու համար հպեք Հաստատել։';
+  String get assistantDraftReady => 'Ահա մանրամասները։ Պահելու համար հպեք Հաստատել։';
 
   @override
   String get assistantNewChat => 'Նոր զրույց';
@@ -6683,27 +6682,27 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Ավելացնել պատվաստումներ ${name}-ի համար';
+    return 'Ավելացնել պատվաստումներ $name-ի համար';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Ավելացնել միկրոչիպը ${name}-ի համար';
+    return 'Ավելացնել միկրոչիպը $name-ի համար';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Ավելացնել կենդանու ապահովագրություն ${name}-ի համար';
+    return 'Ավելացնել կենդանու ապահովագրություն $name-ի համար';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Ավելացնել անձնագիր ${name}-ի համար';
+    return 'Ավելացնել անձնագիր $name-ի համար';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Հաջորդը՝ ${step}։ Ասեք այո՝ անելու համար։';
+    return 'Հաջորդը՝ $step։ Ասեք այո՝ անելու համար։';
   }
 
   @override
@@ -8985,10 +8984,10 @@ class AppLocalizationsHy extends AppLocalizations {
   String get petTypeFieldHint => 'Մուտքագրեք ընտանի կենդանու տեսակը';
 
   @override
-  String get petBirthdayHint => 'Ընտրեք ծննդյան ամսաթիվը';
+  String get petTypeRequired => 'Ընտրեք ընտանի կենդանու տեսակը';
 
   @override
-  String get petTypeRequired => 'Ընտրեք ընտանի կենդանու տեսակը';
+  String get petBirthdayHint => 'Ընտրեք ծննդյան ամսաթիվը';
 
   @override
   String get petChipHint => 'Մուտքագրեք միկրոչիպի համարը';
@@ -10661,4 +10660,80 @@ class AppLocalizationsHy extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Հասել եք \"Հարցրեք Vaultara-ին\"-ի այսօրվա սահմանին։ Այն թարմացվում է վաղը ժամը $time-ին։ Vaultara-ի մնացած ամեն ինչ աշխատում է սովորականի պես։';
   }
+
+  @override
+  String get assistantSupportTitle => 'Գրել Vorkalis-ի աջակցությանը';
+
+  @override
+  String get assistantSupportMessage => 'Հաղորդագրություն';
+
+  @override
+  String get assistantSupportNote => 'Ավելացվում են հավելվածի տարբերակը, հեռախոսը, համակարգը, լեզուն և պլանը։ Աջակցությունը պատասխանում է այն էլ. փոստին, որով մուտք եք գործում։';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Ուղարկվեց Vorkalis-ի աջակցությանը։ Պատասխանը $email հասցեին պետք է ստանաք մեկ աշխատանքային օրվա ընթացքում։';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Այսօր արդեն մի քանի անգամ գրել եք աջակցությանը։ Փորձեք վաղը կամ գրեք ուղղակի support@vorkalis.com հասցեին։';
+
+  @override
+  String get assistantSupportVerify => 'Նախ հաստատեք ձեր էլ. փոստի հասցեն, որպեսզի աջակցությունը կարողանա պատասխանել։';
+
+  @override
+  String get assistantSupportFailed => 'Նամակը չհաջողվեց ուղարկել։ Փորձեք ավելի ուշ կամ գրեք ուղղակի support@vorkalis.com հասցեին։';
+
+  @override
+  String get assistantInviteTitle => 'Հրավիրել ձեր տնային տնտեսություն';
+
+  @override
+  String get assistantInviteNote => 'Vaultara-ն նրանց էլ. փոստով հրավերի հղում է ուղարկում։ Այն գործում է մեկ անգամ՝ 7 օր։';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Հրավերն ուղարկվեց $email հասցեին։';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Հրավերը չհաջողվեց ուղարկել։ Կրկին փորձեք կամ հրավերը կիսվեք ձեր տնային տնտեսությունից։';
+
+  @override
+  String get assistantCalendarNote => 'Կբացվի ձեր օրացույցի հավելվածը՝ իրադարձությամբ և 7 օր առաջ հիշեցմամբ։';
+
+  @override
+  String get assistantSendLinkTitle => 'Ուղարկել անվտանգ հղում';
+
+  @override
+  String get assistantSendLinkWorks => 'Հղումը գործում է';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours ժ';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Ուղարկվում է միայն հղում, երբեք՝ տվյալներն իրենք։ Դուք եք ընտրում, թե ինչպես ուղարկել, և կարող եք այն ավելի շուտ դադարեցնել «$sharedLinks» բաժնում։';
+  }
+
+  @override
+  String get monthAheadTitle => 'Առաջիկա ամիսը';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Ամսի 1-ին $assistant-ն ուղարկում է, թե ինչ պետք է թարմացնել, որքան կարժենա և ձեր առաջիկա ուղևորությունները';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Ի՞նչ պետք է անեմ այս ամիս';
+
+  @override
+  String get assistantStepSupport => 'Գրում եմ ձեր նամակը';
+
+  @override
+  String get assistantStepSecurity => 'Ստուգում եմ ձեր հաշվի անվտանգությունը';
+
+  @override
+  String get talkFinishOnScreen => 'Այն բացված է ձեր էկրանին։ Ավարտեք այնտեղ, ապա հպեք՝ նորից խոսելու համար։';
 }

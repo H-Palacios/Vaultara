@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Dokument pracownika wygasł",
   "staffOverdueYesterday": "{name} ({person}) wygasł wczoraj i nie został odnowiony.",
   "staffOverdueWeek": "{name} ({person}) wygasł tydzień temu i nadal nie został odnowiony.",
-  "staffOverdueMany": "Wygasło {count} dokumentów pracowników, które nie zostały odnowione: {names}."
+  "staffOverdueMany": "Wygasło {count} dokumentów pracowników, które nie zostały odnowione: {names}.",
+  "monthAheadTitle": "Twój nadchodzący miesiąc",
+  "monthAheadBodyCount": "Do odnowienia w tym miesiącu: {count}. Dotknij, aby zobaczyć, co zrobić.",
+  "monthAheadBodyCost": "Do odnowienia w tym miesiącu: {count}, około {cost}. Dotknij, aby zobaczyć, co zrobić.",
+  "monthAheadBodyCountTrips": "Do odnowienia w tym miesiącu: {count}. Podróże w ciągu 6 tygodni: {trips}. Dotknij, aby zobaczyć, co zrobić.",
+  "monthAheadBodyCostTrips": "Do odnowienia w tym miesiącu: {count}, około {cost}. Podróże w ciągu 6 tygodni: {trips}. Dotknij, aby zobaczyć, co zrobić.",
+  "monthAheadBodyTrips": "W tym miesiącu nie ma nic do odnowienia. Podróże w ciągu 6 tygodni: {trips}. Dotknij, aby zobaczyć, co zrobić."
 }

@@ -4424,5 +4424,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "ສົ່ງອີເມວຫາຝ່າຍຊ່ວຍເຫຼືອ Vorkalis",
+  "assistantSupportMessage": "ຂໍ້ຄວາມ",
+  "assistantSupportNote": "ຈະເພີ່ມເວີຊັນແອັບ, ໂທລະສັບ, ລະບົບ, ພາສາ ແລະ ແພັກເກດ. ຝ່າຍຊ່ວຍເຫຼືອຈະຕອບກັບໄປທີ່ອີເມວທີ່ທ່ານໃຊ້ເຂົ້າສູ່ລະບົບ.",
+  "assistantSupportSent": "ສົ່ງຫາຝ່າຍຊ່ວຍເຫຼືອ Vorkalis ແລ້ວ. ທ່ານຄວນໄດ້ຮັບຄຳຕອບທີ່ {email} ພາຍໃນໜຶ່ງມື້ເຮັດວຽກ.",
+  "assistantSupportLimit": "ມື້ນີ້ທ່ານໄດ້ສົ່ງອີເມວຫາຝ່າຍຊ່ວຍເຫຼືອຫຼາຍເທື່ອແລ້ວ. ລອງໃໝ່ມື້ອື່ນ ຫຼື ຂຽນຫາ support@vorkalis.com ໂດຍກົງ.",
+  "assistantSupportVerify": "ກະລຸນາຢືນຢັນທີ່ຢູ່ອີເມວຂອງທ່ານກ່ອນ ເພື່ອໃຫ້ຝ່າຍຊ່ວຍເຫຼືອຕອບທ່ານໄດ້.",
+  "assistantSupportFailed": "ສົ່ງອີເມວບໍ່ໄດ້. ລອງໃໝ່ພາຍຫຼັງ ຫຼື ຂຽນຫາ support@vorkalis.com ໂດຍກົງ.",
+  "assistantInviteTitle": "ເຊີນເຂົ້າຄົວເຮືອນຂອງທ່ານ",
+  "assistantInviteNote": "Vaultara ຈະສົ່ງລິ້ງເຊີນທາງອີເມວໃຫ້ເຂົາເຈົ້າ. ໃຊ້ໄດ້ຄັ້ງດຽວ, ພາຍໃນ 7 ມື້.",
+  "assistantInviteSent": "ສົ່ງຄຳເຊີນໄປທີ່ {email} ແລ້ວ.",
+  "assistantInviteFailed": "ສົ່ງຄຳເຊີນບໍ່ໄດ້. ລອງໃໝ່ ຫຼື ແບ່ງປັນຄຳເຊີນຈາກຄົວເຮືອນຂອງທ່ານແທນ.",
+  "assistantCalendarNote": "ແອັບປະຕິທິນຂອງທ່ານຈະເປີດພ້ອມກິດຈະກຳ ແລະ ການແຈ້ງເຕືອນລ່ວງໜ້າ 7 ມື້.",
+  "assistantSendLinkTitle": "ສົ່ງລິ້ງທີ່ປອດໄພ",
+  "assistantSendLinkWorks": "ລິ້ງໃຊ້ໄດ້",
+  "assistantSendLinkHours": "{hours} ຊມ.",
+  "assistantSendLinkNote": "ສົ່ງພຽງແຕ່ລິ້ງ, ບໍ່ເຄີຍສົ່ງລາຍລະອຽດເອງ. ທ່ານເລືອກວິທີສົ່ງໄດ້ ແລະ ຢຸດມັນກ່ອນໄດ້ໃນ {sharedLinks}.",
+  "monthAheadTitle": "ເດືອນຂ້າງໜ້າ",
+  "monthAheadSubtitle": "ທຸກວັນທີ 1, {assistant} ຈະສົ່ງສິ່ງທີ່ຕ້ອງຕໍ່ອາຍຸ, ຄ່າໃຊ້ຈ່າຍ ແລະ ການເດີນທາງທີ່ກຳລັງຈະມາຂອງທ່ານ",
+  "monthAheadQuestion": "ເດືອນນີ້ຂ້ອຍຕ້ອງເຮັດຫຍັງແດ່?",
+  "assistantStepSupport": "ກຳລັງຂຽນອີເມວຂອງທ່ານ",
+  "assistantStepSecurity": "ກຳລັງກວດຄວາມປອດໄພຂອງບັນຊີທ່ານ",
+  "talkFinishOnScreen": "ມັນເປີດຢູ່ໜ້າຈໍຂອງທ່ານ. ເຮັດໃຫ້ສຳເລັດຢູ່ບ່ອນນັ້ນ ແລ້ວແຕະເພື່ອເວົ້າອີກຄັ້ງ."
 }

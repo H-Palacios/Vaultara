@@ -4406,5 +4406,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Vorkalis سپورٹ کو ای میل کریں",
+  "assistantSupportMessage": "پیغام",
+  "assistantSupportNote": "ایپ ورژن، فون، سسٹم، زبان اور پلان شامل کیے جاتے ہیں۔ سپورٹ اسی ای میل پر جواب دیتی ہے جس سے آپ سائن ان کرتے ہیں۔",
+  "assistantSupportSent": "Vorkalis سپورٹ کو بھیج دیا گیا۔ آپ کو ایک کاروباری دن میں {email} پر جواب ملنا چاہیے۔",
+  "assistantSupportLimit": "آپ آج پہلے ہی کئی بار سپورٹ کو ای میل کر چکے ہیں۔ کل دوبارہ کوشش کریں یا براہ راست support@vorkalis.com پر لکھیں۔",
+  "assistantSupportVerify": "پہلے اپنا ای میل ایڈریس تصدیق کریں تاکہ سپورٹ آپ کو جواب دے سکے۔",
+  "assistantSupportFailed": "ای میل نہیں بھیجی جا سکی۔ بعد میں دوبارہ کوشش کریں یا براہ راست support@vorkalis.com پر لکھیں۔",
+  "assistantInviteTitle": "اپنے گھرانے میں مدعو کریں",
+  "assistantInviteNote": "Vaultara انہیں ای میل پر دعوتی لنک بھیجتا ہے۔ یہ ایک بار، 7 دن کے لیے کام کرتا ہے۔",
+  "assistantInviteSent": "دعوت {email} پر بھیج دی گئی۔",
+  "assistantInviteFailed": "دعوت نہیں بھیجی جا سکی۔ دوبارہ کوشش کریں یا اس کے بجائے اپنے گھرانے سے دعوت شیئر کریں۔",
+  "assistantCalendarNote": "آپ کی کیلنڈر ایپ ایونٹ اور 7 دن پہلے کی یاددہانی کے ساتھ کھلتی ہے۔",
+  "assistantSendLinkTitle": "محفوظ لنک بھیجیں",
+  "assistantSendLinkWorks": "لنک کی مدت",
+  "assistantSendLinkHours": "{hours} گھنٹے",
+  "assistantSendLinkNote": "صرف لنک بھیجا جاتا ہے، تفصیلات کبھی نہیں۔ آپ چنتے ہیں کہ اسے کیسے بھیجیں، اور {sharedLinks} میں اسے جلد روک سکتے ہیں۔",
+  "monthAheadTitle": "آنے والا مہینہ",
+  "monthAheadSubtitle": "ہر مہینے کی 1 تاریخ کو {assistant} بھیجتا ہے کہ کیا تجدید کرنا ہے، اس کی لاگت کتنی ہے اور آپ کے آنے والے سفر",
+  "monthAheadQuestion": "اس مہینے مجھے کیا کرنا ہے؟",
+  "assistantStepSupport": "آپ کی ای میل لکھی جا رہی ہے",
+  "assistantStepSecurity": "آپ کے اکاؤنٹ کی سیکیورٹی چیک کی جا رہی ہے",
+  "talkFinishOnScreen": "یہ آپ کی اسکرین پر کھلا ہے۔ وہیں مکمل کریں، پھر دوبارہ بات کرنے کے لیے تھپتھپائیں۔"
 }

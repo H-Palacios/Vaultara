@@ -4444,5 +4444,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "ለVorkalis ድጋፍ ኢሜይል ይላኩ",
+  "assistantSupportMessage": "መልዕክት",
+  "assistantSupportNote": "የመተግበሪያው ስሪት፣ ስልክ፣ ሲስተም፣ ቋንቋ እና ዕቅድ ይታከላሉ። ድጋፍ በሚገቡበት ኢሜይል ምላሽ ይሰጣል።",
+  "assistantSupportSent": "ለVorkalis ድጋፍ ተልኳል። በአንድ የሥራ ቀን ውስጥ በ{email} ምላሽ ሊደርስዎት ይገባል።",
+  "assistantSupportLimit": "ዛሬ ለድጋፍ ብዙ ጊዜ ኢሜይል ልከዋል። ነገ እንደገና ይሞክሩ ወይም በቀጥታ ወደ support@vorkalis.com ይጻፉ።",
+  "assistantSupportVerify": "ድጋፍ ምላሽ እንዲሰጥዎት መጀመሪያ የኢሜይል አድራሻዎን ያረጋግጡ።",
+  "assistantSupportFailed": "ኢሜይሉ ሊላክ አልቻለም። ቆይተው እንደገና ይሞክሩ ወይም በቀጥታ ወደ support@vorkalis.com ይጻፉ።",
+  "assistantInviteTitle": "ወደ የቤት ቡድንዎ ይጋብዙ",
+  "assistantInviteNote": "Vaultara የግብዣ ሊንክ በኢሜይል ይልክላቸዋል። አንድ ጊዜ፣ ለ7 ቀናት ይሠራል።",
+  "assistantInviteSent": "ግብዣው ወደ {email} ተልኳል።",
+  "assistantInviteFailed": "ግብዣው ሊላክ አልቻለም። እንደገና ይሞክሩ ወይም በምትኩ ከቤት ቡድንዎ ግብዣ ያጋሩ።",
+  "assistantCalendarNote": "የቀን መቁጠሪያ መተግበሪያዎ ከክስተቱ እና ከ7 ቀን በፊት ማስታወሻ ጋር ይከፈታል።",
+  "assistantSendLinkTitle": "ደህንነቱ የተጠበቀ ሊንክ ይላኩ",
+  "assistantSendLinkWorks": "ሊንኩ የሚሠራው ለ",
+  "assistantSendLinkHours": "{hours} ሰዓት",
+  "assistantSendLinkNote": "የሚላከው ሊንክ ብቻ ነው፣ ዝርዝሮቹ ፈጽሞ አይላኩም። እንዴት እንደሚልኩት እርስዎ ይመርጣሉ፣ እና በ{sharedLinks} ቀድመው ማቆም ይችላሉ።",
+  "monthAheadTitle": "የሚመጣው ወር",
+  "monthAheadSubtitle": "በየወሩ 1ኛ ቀን {assistant} ምን ማደስ እንዳለብዎት፣ ወጪውን እና የሚመጡ ጉዞዎችዎን ይልካል",
+  "monthAheadQuestion": "በዚህ ወር ምን ማድረግ አለብኝ?",
+  "assistantStepSupport": "ኢሜይልዎ እየተጻፈ ነው",
+  "assistantStepSecurity": "የመለያዎ ደህንነት እየተፈተሸ ነው",
+  "talkFinishOnScreen": "በማያ ገጽዎ ላይ ተከፍቷል። እዚያ ይጨርሱ፣ ከዚያ እንደገና ለመናገር ይንኩ።"
 }

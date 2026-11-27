@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Tilsettdokument har gått ut",
   "staffOverdueYesterday": "{name} for {person} gjekk ut i går og er ikkje fornya.",
   "staffOverdueWeek": "{name} for {person} gjekk ut for ei veke sidan og er framleis ikkje fornya.",
-  "staffOverdueMany": "{count} tilsettdokument har gått ut og er ikkje fornya: {names}."
+  "staffOverdueMany": "{count} tilsettdokument har gått ut og er ikkje fornya: {names}.",
+  "monthAheadTitle": "Månaden din framover",
+  "monthAheadBodyCount": "Skal fornyast denne månaden: {count}. Trykk for å sjå kva du må gjere.",
+  "monthAheadBodyCost": "Skal fornyast denne månaden: {count}, om lag {cost}. Trykk for å sjå kva du må gjere.",
+  "monthAheadBodyCountTrips": "Skal fornyast denne månaden: {count}. Reiser dei neste 6 vekene: {trips}. Trykk for å sjå kva du må gjere.",
+  "monthAheadBodyCostTrips": "Skal fornyast denne månaden: {count}, om lag {cost}. Reiser dei neste 6 vekene: {trips}. Trykk for å sjå kva du må gjere.",
+  "monthAheadBodyTrips": "Ingenting skal fornyast denne månaden. Reiser dei neste 6 vekene: {trips}. Trykk for å sjå kva du må gjere."
 }

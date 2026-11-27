@@ -3167,16 +3167,16 @@ class AppLocalizationsAm extends AppLocalizations {
   String get planGetPremium => 'Premium ያግኙ';
 
   @override
-  String get businessPlanBuy => 'የንግድ ዕቅድ ያግኙ';
-
-  @override
   String get individualPlanBuy => 'ግለሰብ ያግኙ';
 
   @override
-  String get businessPlanSwitch => 'ወደ ንግድ ዕቅድ ይቀይሩ';
+  String get individualPlanSwitch => 'ወደ ግለሰብ ይቀይሩ';
 
   @override
-  String get individualPlanSwitch => 'ወደ ግለሰብ ይቀይሩ';
+  String get businessPlanBuy => 'የንግድ ዕቅድ ያግኙ';
+
+  @override
+  String get businessPlanSwitch => 'ወደ ንግድ ዕቅድ ይቀይሩ';
 
   @override
   String get planSwitchToYearly => 'ወደ ዓመታዊ ይቀይሩ';
@@ -6682,27 +6682,27 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'ለ${name} ክትባቶችን ያክሉ';
+    return 'ለ$name ክትባቶችን ያክሉ';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'ለ${name} ማይክሮቺፑን ያክሉ';
+    return 'ለ$name ማይክሮቺፑን ያክሉ';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'ለ${name} የቤት እንስሳ ኢንሹራንስ ያክሉ';
+    return 'ለ$name የቤት እንስሳ ኢንሹራንስ ያክሉ';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'ለ${name} ፓስፖርት ያክሉ';
+    return 'ለ$name ፓስፖርት ያክሉ';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'ቀጣይ፦ ${step}። ለማድረግ አዎ ይበሉ።';
+    return 'ቀጣይ፦ $step። ለማድረግ አዎ ይበሉ።';
   }
 
   @override
@@ -8984,10 +8984,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get petTypeFieldHint => 'የቤት እንስሳውን አይነት ያስገቡ';
 
   @override
-  String get petBirthdayHint => 'የልደት ቀን ይምረጡ';
+  String get petTypeRequired => 'የቤት እንስሳውን አይነት ይምረጡ';
 
   @override
-  String get petTypeRequired => 'የቤት እንስሳውን አይነት ይምረጡ';
+  String get petBirthdayHint => 'የልደት ቀን ይምረጡ';
 
   @override
   String get petChipHint => 'የማይክሮቺፕ ቁጥር ያስገቡ';
@@ -10658,4 +10658,80 @@ class AppLocalizationsAm extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'የዛሬውን የ\"Vaultaraን ይጠይቁ\" ገደብ ደርሰዋል። ነገ በ$time እንደገና ይጀምራል። በVaultara ውስጥ ያለው ሌላው ሁሉ እንደተለመደው ይሰራል።';
   }
+
+  @override
+  String get assistantSupportTitle => 'ለVorkalis ድጋፍ ኢሜይል ይላኩ';
+
+  @override
+  String get assistantSupportMessage => 'መልዕክት';
+
+  @override
+  String get assistantSupportNote => 'የመተግበሪያው ስሪት፣ ስልክ፣ ሲስተም፣ ቋንቋ እና ዕቅድ ይታከላሉ። ድጋፍ በሚገቡበት ኢሜይል ምላሽ ይሰጣል።';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'ለVorkalis ድጋፍ ተልኳል። በአንድ የሥራ ቀን ውስጥ በ$email ምላሽ ሊደርስዎት ይገባል።';
+  }
+
+  @override
+  String get assistantSupportLimit => 'ዛሬ ለድጋፍ ብዙ ጊዜ ኢሜይል ልከዋል። ነገ እንደገና ይሞክሩ ወይም በቀጥታ ወደ support@vorkalis.com ይጻፉ።';
+
+  @override
+  String get assistantSupportVerify => 'ድጋፍ ምላሽ እንዲሰጥዎት መጀመሪያ የኢሜይል አድራሻዎን ያረጋግጡ።';
+
+  @override
+  String get assistantSupportFailed => 'ኢሜይሉ ሊላክ አልቻለም። ቆይተው እንደገና ይሞክሩ ወይም በቀጥታ ወደ support@vorkalis.com ይጻፉ።';
+
+  @override
+  String get assistantInviteTitle => 'ወደ የቤት ቡድንዎ ይጋብዙ';
+
+  @override
+  String get assistantInviteNote => 'Vaultara የግብዣ ሊንክ በኢሜይል ይልክላቸዋል። አንድ ጊዜ፣ ለ7 ቀናት ይሠራል።';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'ግብዣው ወደ $email ተልኳል።';
+  }
+
+  @override
+  String get assistantInviteFailed => 'ግብዣው ሊላክ አልቻለም። እንደገና ይሞክሩ ወይም በምትኩ ከቤት ቡድንዎ ግብዣ ያጋሩ።';
+
+  @override
+  String get assistantCalendarNote => 'የቀን መቁጠሪያ መተግበሪያዎ ከክስተቱ እና ከ7 ቀን በፊት ማስታወሻ ጋር ይከፈታል።';
+
+  @override
+  String get assistantSendLinkTitle => 'ደህንነቱ የተጠበቀ ሊንክ ይላኩ';
+
+  @override
+  String get assistantSendLinkWorks => 'ሊንኩ የሚሠራው ለ';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours ሰዓት';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'የሚላከው ሊንክ ብቻ ነው፣ ዝርዝሮቹ ፈጽሞ አይላኩም። እንዴት እንደሚልኩት እርስዎ ይመርጣሉ፣ እና በ$sharedLinks ቀድመው ማቆም ይችላሉ።';
+  }
+
+  @override
+  String get monthAheadTitle => 'የሚመጣው ወር';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'በየወሩ 1ኛ ቀን $assistant ምን ማደስ እንዳለብዎት፣ ወጪውን እና የሚመጡ ጉዞዎችዎን ይልካል';
+  }
+
+  @override
+  String get monthAheadQuestion => 'በዚህ ወር ምን ማድረግ አለብኝ?';
+
+  @override
+  String get assistantStepSupport => 'ኢሜይልዎ እየተጻፈ ነው';
+
+  @override
+  String get assistantStepSecurity => 'የመለያዎ ደህንነት እየተፈተሸ ነው';
+
+  @override
+  String get talkFinishOnScreen => 'በማያ ገጽዎ ላይ ተከፍቷል። እዚያ ይጨርሱ፣ ከዚያ እንደገና ለመናገር ይንኩ።';
 }

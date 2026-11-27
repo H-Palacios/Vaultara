@@ -4398,5 +4398,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Thumela i-imeyili kusekelo lwe-Vorkalis",
+  "assistantSupportMessage": "Umlayezo",
+  "assistantSupportNote": "Kwengezwa inguqulo ye-app, ifoni, isistimu, ulimi nohlelo. Usekelo luphendula ku-imeyili ongena ngayo.",
+  "assistantSupportSent": "Kuthunyelwe kusekelo lwe-Vorkalis. Kufanele uthole impendulo ku-{email} phakathi kosuku olulodwa lokusebenza.",
+  "assistantSupportLimit": "Usuthumele usekelo i-imeyili izikhathi eziningana namuhla. Zama futhi kusasa, noma ubhalele ngqo ku-support@vorkalis.com.",
+  "assistantSupportVerify": "Qala uqinisekise ikheli lakho le-imeyili ukuze usekelo lukwazi ukukuphendula.",
+  "assistantSupportFailed": "I-imeyili ayikwazanga ukuthunyelwa. Zama futhi kamuva, noma ubhalele ngqo ku-support@vorkalis.com.",
+  "assistantInviteTitle": "Mema emzini wakho",
+  "assistantInviteNote": "I-Vaultara ibathumelela isixhumanisi sesimemo nge-imeyili. Sisebenza kanye, izinsuku ezingu-7.",
+  "assistantInviteSent": "Isimemo sithunyelwe ku-{email}.",
+  "assistantInviteFailed": "Isimemo asikwazanga ukuthunyelwa. Zama futhi, noma wabelane ngesimemo esivela emzini wakho esikhundleni salokho.",
+  "assistantCalendarNote": "I-app yakho yekhalenda izovuleka nomcimbi kanye nesikhumbuzo ezinsukwini ezingu-7 ngaphambili.",
+  "assistantSendLinkTitle": "Thumela isixhumanisi esivikelekile",
+  "assistantSendLinkWorks": "Isixhumanisi sisebenza",
+  "assistantSendLinkHours": "{hours} amahora",
+  "assistantSendLinkNote": "Kuthunyelwa isixhumanisi kuphela, hhayi imininingwane uqobo. Wena ukhetha ukuthi usithumela kanjani, futhi ungasimisa kusenesikhathi ku-{sharedLinks}.",
+  "monthAheadTitle": "Inyanga ezayo",
+  "monthAheadSubtitle": "Ngosuku loku-1, i-{assistant} ithumela okufanele kuvuselelwe, intengo yakho kanye nohambo lwakho oluzayo",
+  "monthAheadQuestion": "Yini okufanele ngiyenze kule nyanga?",
+  "assistantStepSupport": "Ibhala i-imeyili yakho",
+  "assistantStepSecurity": "Ihlola ukuphepha kwe-akhawunti yakho",
+  "talkFinishOnScreen": "Kuvulekile esikrinini sakho. Qedela lapho, bese uthepha ukuze ukhulume futhi."
 }

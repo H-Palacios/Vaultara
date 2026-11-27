@@ -3203,16 +3203,16 @@ class AppLocalizationsHe extends AppLocalizations {
   String get planGetPremium => 'קבל Premium';
 
   @override
-  String get businessPlanBuy => 'קבל עסקי';
-
-  @override
   String get individualPlanBuy => 'שדרג לאישי';
 
   @override
-  String get businessPlanSwitch => 'עבור לעסקי';
+  String get individualPlanSwitch => 'עבור לאישי';
 
   @override
-  String get individualPlanSwitch => 'עבור לאישי';
+  String get businessPlanBuy => 'קבל עסקי';
+
+  @override
+  String get businessPlanSwitch => 'עבור לעסקי';
 
   @override
   String get planSwitchToYearly => 'עבור לתשלום שנתי';
@@ -6729,27 +6729,27 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'הוספת חיסונים עבור ${name}';
+    return 'הוספת חיסונים עבור $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'הוספת השבב עבור ${name}';
+    return 'הוספת השבב עבור $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'הוספת ביטוח חיית מחמד עבור ${name}';
+    return 'הוספת ביטוח חיית מחמד עבור $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'הוספת דרכון עבור ${name}';
+    return 'הוספת דרכון עבור $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'הבא: ${step}. אמרו כן כדי לבצע.';
+    return 'הבא: $step. אמרו כן כדי לבצע.';
   }
 
   @override
@@ -9037,10 +9037,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get petTypeFieldHint => 'הזינו את סוג חיית המחמד';
 
   @override
-  String get petBirthdayHint => 'בחרו תאריך לידה';
+  String get petTypeRequired => 'בחרו את סוג חיית המחמד';
 
   @override
-  String get petTypeRequired => 'בחרו את סוג חיית המחמד';
+  String get petBirthdayHint => 'בחרו תאריך לידה';
 
   @override
   String get petChipHint => 'הזינו את מספר השבב';
@@ -10724,4 +10724,80 @@ class AppLocalizationsHe extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'הגעתם למגבלה היומית של \"שאל את Vaultara\". היא מתאפסת מחר ב-$time. כל השאר ב-Vaultara עובד כרגיל.';
   }
+
+  @override
+  String get assistantSupportTitle => 'שליחת אימייל לתמיכה של Vorkalis';
+
+  @override
+  String get assistantSupportMessage => 'הודעה';
+
+  @override
+  String get assistantSupportNote => 'גרסת האפליקציה, הטלפון, המערכת, השפה והתוכנית מתווספים. התמיכה עונה לכתובת האימייל שאיתה אתה מתחבר.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'נשלח לתמיכה של Vorkalis. תשובה אמורה להגיע אל $email תוך יום עבודה אחד.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'כבר כתבת לתמיכה כמה פעמים היום. נסה שוב מחר, או כתוב ישירות אל support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'קודם אמת את כתובת האימייל שלך, כדי שהתמיכה תוכל לענות לך.';
+
+  @override
+  String get assistantSupportFailed => 'לא ניתן היה לשלוח את האימייל. נסה שוב מאוחר יותר, או כתוב ישירות אל support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'הזמנה למשק הבית שלך';
+
+  @override
+  String get assistantInviteNote => 'Vaultara שולחת להם באימייל קישור הזמנה. הוא עובד פעם אחת, למשך 7 ימים.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'ההזמנה נשלחה אל $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'לא ניתן היה לשלוח את ההזמנה. נסה שוב, או שתף הזמנה ממשק הבית שלך במקום זאת.';
+
+  @override
+  String get assistantCalendarNote => 'אפליקציית היומן נפתחת עם האירוע ועם תזכורת 7 ימים לפני.';
+
+  @override
+  String get assistantSendLinkTitle => 'שליחת קישור מאובטח';
+
+  @override
+  String get assistantSendLinkWorks => 'הקישור פעיל למשך';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours שע׳';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'נשלח רק קישור, אף פעם לא הפרטים עצמם. אתה בוחר איך לשלוח אותו, ואפשר לעצור אותו מוקדם יותר ב$sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'החודש הקרוב';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'ב-1 לחודש, $assistant שולח מה צריך לחדש, כמה זה עולה והנסיעות הקרובות שלך';
+  }
+
+  @override
+  String get monthAheadQuestion => 'מה אני צריך לעשות החודש?';
+
+  @override
+  String get assistantStepSupport => 'כותב את האימייל שלך';
+
+  @override
+  String get assistantStepSecurity => 'בודק את אבטחת החשבון שלך';
+
+  @override
+  String get talkFinishOnScreen => 'זה פתוח על המסך. סיים שם ואז הקש כדי לדבר שוב.';
 }

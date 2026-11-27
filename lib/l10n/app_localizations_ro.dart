@@ -3197,16 +3197,16 @@ class AppLocalizationsRo extends AppLocalizations {
   String get planGetPremium => 'Treci la Premium';
 
   @override
-  String get businessPlanBuy => 'Treci la Business';
-
-  @override
   String get individualPlanBuy => 'Treci la Personal';
 
   @override
-  String get businessPlanSwitch => 'Treci la Business';
+  String get individualPlanSwitch => 'Treci la Personal';
 
   @override
-  String get individualPlanSwitch => 'Treci la Personal';
+  String get businessPlanBuy => 'Treci la Business';
+
+  @override
+  String get businessPlanSwitch => 'Treci la Business';
 
   @override
   String get planSwitchToYearly => 'Treci la anual';
@@ -4965,8 +4965,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get assistantEmptyReply => 'Nu am găsit un răspuns. Încearcă să întrebi în alt fel.';
 
   @override
-  String get assistantDraftReady =>
-      'Iată detaliile. Atinge Confirmă pentru a le salva.';
+  String get assistantDraftReady => 'Iată detaliile. Atinge Confirmă pentru a le salva.';
 
   @override
   String get assistantNewChat => 'Conversație nouă';
@@ -6750,27 +6749,27 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String assistantNextPetVaccines(String name) {
-    return 'Adaugă vaccinările pentru ${name}';
+    return 'Adaugă vaccinările pentru $name';
   }
 
   @override
   String assistantNextPetChip(String name) {
-    return 'Adaugă microcipul pentru ${name}';
+    return 'Adaugă microcipul pentru $name';
   }
 
   @override
   String assistantNextPetInsurance(String name) {
-    return 'Adaugă asigurarea animalului pentru ${name}';
+    return 'Adaugă asigurarea animalului pentru $name';
   }
 
   @override
   String assistantNextPersonPassport(String name) {
-    return 'Adaugă un pașaport pentru ${name}';
+    return 'Adaugă un pașaport pentru $name';
   }
 
   @override
   String talkNextStep(String step) {
-    return 'Următorul pas: ${step}. Spune da ca să-l fac.';
+    return 'Următorul pas: $step. Spune da ca să-l fac.';
   }
 
   @override
@@ -9062,10 +9061,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get petTypeFieldHint => 'Introdu tipul de animal';
 
   @override
-  String get petBirthdayHint => 'Selectează data nașterii';
+  String get petTypeRequired => 'Alege tipul de animal';
 
   @override
-  String get petTypeRequired => 'Alege tipul de animal';
+  String get petBirthdayHint => 'Selectează data nașterii';
 
   @override
   String get petChipHint => 'Introdu numărul microcipului';
@@ -10748,4 +10747,80 @@ class AppLocalizationsRo extends AppLocalizations {
   String assistantLimitTomorrow(String time) {
     return 'Ai atins limita de azi pentru „Întreabă Vaultara”. Se resetează mâine la $time. Tot restul din Vaultara funcționează ca de obicei.';
   }
+
+  @override
+  String get assistantSupportTitle => 'Scrie suportului Vorkalis';
+
+  @override
+  String get assistantSupportMessage => 'Mesaj';
+
+  @override
+  String get assistantSupportNote => 'Se adaugă versiunea aplicației, telefonul, sistemul, limba și abonamentul. Suportul răspunde la adresa de e-mail cu care te conectezi.';
+
+  @override
+  String assistantSupportSent(String email) {
+    return 'Trimis la suportul Vorkalis. Ar trebui să primești un răspuns la $email în cel mult o zi lucrătoare.';
+  }
+
+  @override
+  String get assistantSupportLimit => 'Ai scris deja de mai multe ori azi suportului. Încearcă mâine sau scrie direct la support@vorkalis.com.';
+
+  @override
+  String get assistantSupportVerify => 'Confirmă mai întâi adresa de e-mail, ca suportul să îți poată răspunde.';
+
+  @override
+  String get assistantSupportFailed => 'E-mailul nu a putut fi trimis. Încearcă mai târziu sau scrie direct la support@vorkalis.com.';
+
+  @override
+  String get assistantInviteTitle => 'Invită în gospodăria ta';
+
+  @override
+  String get assistantInviteNote => 'Vaultara îi trimite pe e-mail un link de invitație. Funcționează o singură dată, timp de 7 zile.';
+
+  @override
+  String assistantInviteSent(String email) {
+    return 'Invitație trimisă la $email.';
+  }
+
+  @override
+  String get assistantInviteFailed => 'Invitația nu a putut fi trimisă. Încearcă din nou sau trimite mai bine o invitație din gospodăria ta.';
+
+  @override
+  String get assistantCalendarNote => 'Aplicația de calendar se deschide cu evenimentul și o alarmă cu 7 zile înainte.';
+
+  @override
+  String get assistantSendLinkTitle => 'Trimite un link securizat';
+
+  @override
+  String get assistantSendLinkWorks => 'Linkul funcționează';
+
+  @override
+  String assistantSendLinkHours(int hours) {
+    return '$hours h';
+  }
+
+  @override
+  String assistantSendLinkNote(String sharedLinks) {
+    return 'Se trimite doar un link, niciodată datele în sine. Tu alegi cum îl trimiți și îl poți opri mai devreme în $sharedLinks.';
+  }
+
+  @override
+  String get monthAheadTitle => 'Luna care vine';
+
+  @override
+  String monthAheadSubtitle(String assistant) {
+    return 'Pe 1 ale lunii, $assistant îți trimite ce trebuie reînnoit, cât costă și călătoriile tale următoare';
+  }
+
+  @override
+  String get monthAheadQuestion => 'Ce trebuie să fac luna aceasta?';
+
+  @override
+  String get assistantStepSupport => 'Îți scriu e-mailul';
+
+  @override
+  String get assistantStepSecurity => 'Verific securitatea contului tău';
+
+  @override
+  String get talkFinishOnScreen => 'Este deschis pe ecran. Termină acolo, apoi atinge ca să vorbești din nou.';
 }

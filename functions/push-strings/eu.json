@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Langile baten dokumentua iraungi da",
   "staffOverdueYesterday": "{person}(r)en {name} atzo iraungi zen eta ez da berritu.",
   "staffOverdueWeek": "{person}(r)en {name} duela astebete iraungi zen eta oraindik ez da berritu.",
-  "staffOverdueMany": "Langileen {count} dokumentu iraungi dira eta ez dira berritu: {names}."
+  "staffOverdueMany": "Langileen {count} dokumentu iraungi dira eta ez dira berritu: {names}.",
+  "monthAheadTitle": "Zure datorren hilabetea",
+  "monthAheadBodyCount": "Hilabete honetan berritzeko: {count}. Sakatu zer egin ikusteko.",
+  "monthAheadBodyCost": "Hilabete honetan berritzeko: {count}, {cost} inguru. Sakatu zer egin ikusteko.",
+  "monthAheadBodyCountTrips": "Hilabete honetan berritzeko: {count}. Hurrengo 6 asteetako bidaiak: {trips}. Sakatu zer egin ikusteko.",
+  "monthAheadBodyCostTrips": "Hilabete honetan berritzeko: {count}, {cost} inguru. Hurrengo 6 asteetako bidaiak: {trips}. Sakatu zer egin ikusteko.",
+  "monthAheadBodyTrips": "Ez dago ezer berritzeko hilabete honetan. Hurrengo 6 asteetako bidaiak: {trips}. Sakatu zer egin ikusteko."
 }

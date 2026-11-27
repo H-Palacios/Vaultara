@@ -26,5 +26,11 @@
   "staffOverdueTitle": "Personaldokument har gått ut",
   "staffOverdueYesterday": "{name} för {person} gick ut i går och har inte förnyats.",
   "staffOverdueWeek": "{name} för {person} gick ut för en vecka sedan och har fortfarande inte förnyats.",
-  "staffOverdueMany": "{count} personaldokument har gått ut och inte förnyats: {names}."
+  "staffOverdueMany": "{count} personaldokument har gått ut och inte förnyats: {names}.",
+  "monthAheadTitle": "Din månad framöver",
+  "monthAheadBodyCount": "Att förnya den här månaden: {count}. Tryck för att se vad du ska göra.",
+  "monthAheadBodyCost": "Att förnya den här månaden: {count}, cirka {cost}. Tryck för att se vad du ska göra.",
+  "monthAheadBodyCountTrips": "Att förnya den här månaden: {count}. Resor de kommande 6 veckorna: {trips}. Tryck för att se vad du ska göra.",
+  "monthAheadBodyCostTrips": "Att förnya den här månaden: {count}, cirka {cost}. Resor de kommande 6 veckorna: {trips}. Tryck för att se vad du ska göra.",
+  "monthAheadBodyTrips": "Inget att förnya den här månaden. Resor de kommande 6 veckorna: {trips}. Tryck för att se vad du ska göra."
 }

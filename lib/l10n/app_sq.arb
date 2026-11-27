@@ -4420,5 +4420,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Shkruajini mbështetjes së Vorkalis",
+  "assistantSupportMessage": "Mesazhi",
+  "assistantSupportNote": "Shtohen versioni i aplikacionit, telefoni, sistemi, gjuha dhe plani. Mbështetja përgjigjet në email-in me të cilin hyni.",
+  "assistantSupportSent": "U dërgua te mbështetja e Vorkalis. Duhet të merrni përgjigje në {email} brenda një dite pune.",
+  "assistantSupportLimit": "Sot i keni shkruar tashmë disa herë mbështetjes. Provoni nesër ose shkruani drejtpërdrejt në support@vorkalis.com.",
+  "assistantSupportVerify": "Fillimisht konfirmoni adresën tuaj të email-it, që mbështetja t'ju përgjigjet.",
+  "assistantSupportFailed": "Email-i nuk u dërgua dot. Provoni më vonë ose shkruani drejtpërdrejt në support@vorkalis.com.",
+  "assistantInviteTitle": "Ftoni në grupin tuaj të shtëpisë",
+  "assistantInviteNote": "Vaultara u dërgon me email një lidhje ftese. Funksionon një herë, për 7 ditë.",
+  "assistantInviteSent": "Ftesa u dërgua në {email}.",
+  "assistantInviteFailed": "Ftesa nuk u dërgua dot. Provoni përsëri ose ndani më mirë një ftesë nga grupi juaj i shtëpisë.",
+  "assistantCalendarNote": "Aplikacioni juaj i kalendarit hapet me ngjarjen dhe një alarm 7 ditë më parë.",
+  "assistantSendLinkTitle": "Dërgoni një lidhje të sigurt",
+  "assistantSendLinkWorks": "Lidhja vlen për",
+  "assistantSendLinkHours": "{hours} orë",
+  "assistantSendLinkNote": "Dërgohet vetëm një lidhje, kurrë vetë të dhënat. Ju zgjidhni si ta dërgoni dhe mund ta ndalni më herët te {sharedLinks}.",
+  "monthAheadTitle": "Muaji që vjen",
+  "monthAheadSubtitle": "Më 1 të muajit, {assistant} ju dërgon çfarë duhet rinovuar, sa kushton dhe udhëtimet tuaja të ardhshme",
+  "monthAheadQuestion": "Çfarë duhet të bëj këtë muaj?",
+  "assistantStepSupport": "Po shkruaj email-in tuaj",
+  "assistantStepSecurity": "Po kontrolloj sigurinë e llogarisë suaj",
+  "talkFinishOnScreen": "Është hapur në ekran. Përfundoni atje, pastaj prekni për të folur përsëri."
 }

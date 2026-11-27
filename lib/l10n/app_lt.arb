@@ -4424,5 +4424,27 @@
         "example": "14:05"
       }
     }
-  }
+  },
+  "assistantSupportTitle": "Rašyti Vorkalis pagalbai",
+  "assistantSupportMessage": "Žinutė",
+  "assistantSupportNote": "Pridedama programėlės versija, telefonas, sistema, kalba ir planas. Pagalba atsako el. pašto adresu, kuriuo prisijungiate.",
+  "assistantSupportSent": "Išsiųsta Vorkalis pagalbai. Atsakymą adresu {email} turėtumėte gauti per vieną darbo dieną.",
+  "assistantSupportLimit": "Šiandien pagalbai jau rašėte kelis kartus. Bandykite rytoj arba patys parašykite adresu support@vorkalis.com.",
+  "assistantSupportVerify": "Pirmiausia patvirtinkite savo el. pašto adresą, kad pagalba galėtų jums atsakyti.",
+  "assistantSupportFailed": "Laiško išsiųsti nepavyko. Bandykite vėliau arba patys parašykite adresu support@vorkalis.com.",
+  "assistantInviteTitle": "Pakviesti į jūsų namų ūkį",
+  "assistantInviteNote": "Vaultara išsiunčia jiems kvietimo nuorodą el. paštu. Ji veikia vieną kartą, 7 dienas.",
+  "assistantInviteSent": "Kvietimas išsiųstas adresu {email}.",
+  "assistantInviteFailed": "Kvietimo išsiųsti nepavyko. Bandykite dar kartą arba pasidalykite kvietimu iš savo namų ūkio.",
+  "assistantCalendarNote": "Jūsų kalendoriaus programėlė atsidaro su įvykiu ir priminimu likus 7 dienoms.",
+  "assistantSendLinkTitle": "Siųsti saugią nuorodą",
+  "assistantSendLinkWorks": "Nuoroda galioja",
+  "assistantSendLinkHours": "{hours} val.",
+  "assistantSendLinkNote": "Siunčiama tik nuoroda, niekada ne patys duomenys. Jūs pasirenkate, kaip ją išsiųsti, ir galite ją sustabdyti anksčiau skiltyje {sharedLinks}.",
+  "monthAheadTitle": "Ateinantis mėnuo",
+  "monthAheadSubtitle": "Kiekvieno mėnesio 1 d. {assistant} atsiunčia, ką reikia atnaujinti, kiek tai kainuos ir jūsų artėjančias keliones",
+  "monthAheadQuestion": "Ką turiu padaryti šį mėnesį?",
+  "assistantStepSupport": "Rašomas jūsų laiškas",
+  "assistantStepSecurity": "Tikrinamas jūsų paskyros saugumas",
+  "talkFinishOnScreen": "Tai atidaryta ekrane. Užbaikite ten, tada palieskite, kad vėl kalbėtumėte."
 }
