@@ -18,12 +18,17 @@ class AssistantOpenChat {
   static String? chatId;
   static final List<AssistantMessage> messages = <AssistantMessage>[];
 
+  /// The user asked for this chat not to be saved. Cleared when a new or
+  /// another chat is opened.
+  static bool dontSave = false;
+
   /// Forgets the open chat when a different account is signed in.
   static void claim(String? user) {
     if (userId == user) return;
     userId = user;
     opened = false;
     chatId = null;
+    dontSave = false;
     messages.clear();
   }
 }

@@ -1,6 +1,7 @@
 import 'package:vaultara/core/data/models/kept_in.dart';
 import 'package:vaultara/features/assistant/data/assistant_pet_details.dart';
 import 'package:vaultara/features/assistant/data/assistant_v20_cards.dart';
+import 'package:vaultara/features/assistant/data/assistant_v21_cards.dart';
 import 'package:vaultara/features/guides/data/renewal_plan.dart';
 import 'package:vaultara/features/pets/data/pet.dart';
 import 'package:vaultara/features/pets/data/pet_type.dart';
@@ -50,6 +51,15 @@ enum AssistantActionType {
   signOutOthers,
   calendarAdd,
   sendLink,
+
+  /// From app version 21: undo the last change from this chat, fix one
+  /// security check-up gap, turn off share links, open a record's renewal
+  /// guide, and change how this chat is kept.
+  undo,
+  securityFix,
+  stopLinks,
+  renewalGuide,
+  chatPrivacy,
 }
 
 enum AssistantActionState { pending, busy, applied, opened, cancelled }
@@ -394,6 +404,11 @@ class AssistantAction {
   /// A secure link card: how many hours the link works.
   final int? hours;
 
+  /// Version 21 cards: the check-up item to fix, which share links to turn
+  /// off, or the chat privacy change; and how many links that is.
+  final String? option;
+  final int? count;
+
   const AssistantAction({
     required this.type,
     this.name,
@@ -470,6 +485,8 @@ class AssistantAction {
     this.message,
     this.email,
     this.hours,
+    this.option,
+    this.count,
   });
 
   bool get isOpen => type == AssistantActionType.open;
@@ -814,7 +831,7 @@ class AssistantAction {
           );
         }
     }
-    return AssistantV20Cards.parse(raw);
+    return AssistantV20Cards.parse(raw) ?? AssistantV21Cards.parse(raw);
   }
 
   static AssistantAction? _fromRenewalPlan(Map<dynamic, dynamic> raw) {

@@ -34,6 +34,7 @@ class AssistantSendLinkAction {
       record,
       hours: action.hours ?? ShareLinkService.defaultHours,
       isPremium: ShellState.current?.isPremium,
+      label: action.person,
     );
     return AssistantApplyResult.opened;
   }

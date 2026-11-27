@@ -47,6 +47,7 @@ class ShareLinkService {
     TrackedItem record, {
     int hours = defaultHours,
     bool? isPremium,
+    String? label,
   }) async {
     final loc = AppLocalizations.of(context)!;
     final premium = isPremium ?? await SharingSupport.isPremium();
@@ -79,7 +80,12 @@ class ShareLinkService {
       result = await SharingSupport.withProgress<ShareLinkResult>(
         context,
         loc.shareLinkCreating,
-        () => create(record, hours: hours, includePhotos: includePhotos),
+        () => create(
+          record,
+          hours: hours,
+          includePhotos: includePhotos,
+          label: label,
+        ),
       );
     } on FirebaseFunctionsException catch (e) {
       needsPlan = e.code == 'permission-denied';
@@ -197,10 +203,13 @@ class ShareLinkService {
     return out;
   }
 
+  /// [label] says who the link is for ("my travel agent"), so Ask
+  /// Vaultara can later say who can still see the record.
   static Future<ShareLinkResult> create(
     TrackedItem record, {
     int hours = defaultHours,
     bool includePhotos = false,
+    String? label,
   }) async {
     final int safeHours = hours < 1 ? 1 : (hours > 72 ? 72 : hours);
     final expiry = record.expiryDate;
@@ -215,6 +224,7 @@ class ShareLinkService {
         'expiryDay': expiryDay,
         'includePhotos':
             includePhotos && !record.attachments.any((a) => a.encrypted),
+        if (label != null && label.trim().isNotEmpty) 'label': label.trim(),
       },
     );
 
@@ -239,6 +249,17 @@ class ShareLinkService {
       expiresAt:
           parsed ?? DateTime.now().add(Duration(hours: safeHours)),
     );
+  }
+
+  /// Turns off many links at once: [scope] expired_or_unused or all.
+  /// Returns how many were turned off.
+  static Future<int> revokeMany(String scope) async {
+    final response = await _functions
+        .httpsCallable('revokeShareLinks')
+        .call(<String, dynamic>{'scope': scope});
+    final data = response.data;
+    final count = data is Map ? data['revoked'] : null;
+    return count is int ? count : 0;
   }
 
   static Future<bool> revoke(String token) async {

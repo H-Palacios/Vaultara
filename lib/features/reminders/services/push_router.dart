@@ -25,6 +25,10 @@ class PushRouter {
   /// this month.
   static const String typeMonthAhead = 'monthAhead';
 
+  /// A security alert (new sign-in, two-step turned off): opens Ask
+  /// Vaultara and asks it what happened and what to do.
+  static const String typeSecurity = 'security';
+
   static const String _kind = 'vaultaraOpen';
   static const List<String> _keys = <String>['type', 'recordId', 'householdId'];
   static final RegExp _idPattern = RegExp(r'^[A-Za-z0-9_-]{1,128}$');
@@ -85,7 +89,8 @@ class PushRouter {
       type == typeHousehold ||
       type == typeHome ||
       type == typeUpdateRequest ||
-      type == typeMonthAhead;
+      type == typeMonthAhead ||
+      type == typeSecurity;
 
   static Future<void> _drain() async {
     if (_draining) return;
@@ -139,16 +144,25 @@ class PushRouter {
     ));
   }
 
-  static void _openMonthAhead(ShellState shell) {
+  /// The question a push of this type asks Ask Vaultara, or null when it
+  /// does not open Ask Vaultara.
+  static String? askFor(AppLocalizations loc, String? type) {
+    if (type == typeMonthAhead) return loc.monthAheadQuestion;
+    if (type == typeSecurity) return loc.securityAlertQuestion;
+    return null;
+  }
+
+  static void _openAsk(ShellState shell, String type) {
     final navigator = Navigator.of(shell.context);
     navigator.popUntil((route) => route.isFirst);
     final loc = AppLocalizations.of(shell.context);
+    final question = loc == null ? null : askFor(loc, type);
     unawaited(navigator.push(
       MaterialPageRoute<void>(
         builder: (_) => AskVaultaraScreen(
           isPremium: shell.isPremium,
-          sharedText: loc?.monthAheadQuestion,
-          sendShared: loc != null,
+          sharedText: question,
+          sendShared: question != null,
         ),
       ),
     ));
@@ -169,8 +183,8 @@ class PushRouter {
       return;
     }
 
-    if (type == typeMonthAhead) {
-      _openMonthAhead(shell);
+    if (type == typeMonthAhead || type == typeSecurity) {
+      _openAsk(shell, type!);
       return;
     }
 

@@ -52,6 +52,13 @@ import 'package:vaultara/features/insights/services/tts_service.dart';
 import 'package:vaultara/features/travel/services/location_country.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/features/assistant/logic/assistant_limit.dart';
+import 'package:vaultara/features/assistant/logic/assistant_chat_hooks.dart';
+import 'package:vaultara/features/assistant/logic/assistant_chat_safety.dart';
+import 'package:vaultara/features/assistant/logic/assistant_number_mask.dart';
+import 'package:vaultara/features/assistant/logic/assistant_secret_guard.dart';
+import 'package:vaultara/features/assistant/services/assistant_chat_privacy.dart';
+import 'package:vaultara/features/assistant/services/assistant_security_snapshot.dart';
+import 'package:vaultara/features/security/logic/identity_gate.dart';
 
 Future<void> openAskVaultara(
   BuildContext context, {
@@ -164,6 +171,9 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     _voice.problem.addListener(_onVoiceProblem);
     if (widget.tour) return;
     AssistantOpenChat.claim(AssistantChatStore.userId);
+    _registerHooks();
+    AssistantSecuritySnapshot.refresh();
+    AssistantChatPrivacy.load();
     final shared = widget.sharedText?.trim() ?? '';
     final firstOpen = !AssistantOpenChat.opened;
     AssistantOpenChat.opened = true;
@@ -188,6 +198,41 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     if (widget.startTalk) {
       WidgetsBinding.instance.addPostFrameCallback((_) => _enterTalk());
     }
+  }
+
+  /// Lets cards undo the last change, stop saving this chat, or forget it.
+  void _registerHooks() {
+    AssistantChatHooks.claim(this);
+    AssistantChatHooks.latestUndo = () =>
+        AssistantChatSafety.latestUndo(_messages)?.summary;
+    AssistantChatHooks.undoLatest = () async {
+      final spot = AssistantChatSafety.latestUndo(_messages);
+      if (spot == null || !mounted) return false;
+      return _runUndo(spot.message, spot.index);
+    };
+    AssistantChatHooks.stopSaving = () async {
+      AssistantOpenChat.dontSave = true;
+      final id = _chatId;
+      if (id != null) await AssistantChatStore.delete(id);
+      _chatId = null;
+      return true;
+    };
+    AssistantChatHooks.forget = () async {
+      final id = _chatId;
+      if (id != null) await AssistantChatStore.delete(id);
+      // The card's own answer is still on its way out, so the screen is
+      // cleared once Confirm has finished.
+      WidgetsBinding.instance.addPostFrameCallback((_) => _forgetOpenChat());
+      return true;
+    };
+  }
+
+  /// A message with a password, code or card number is not sent or saved.
+  /// The user is told where it is entered safely instead.
+  String? _secretWarning(String text) {
+    final secret = AssistantSecretGuard.find(text);
+    if (secret == null) return null;
+    return AssistantSecretGuard.message(AppLocalizations.of(context)!, secret);
   }
 
   /// After the app starts, reopens the last chat if it is recent.
@@ -229,6 +274,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     _talkToken++;
     _talkSilence?.cancel();
     _talkIdle?.cancel();
+    AssistantChatHooks.release(this);
     _talkVoice.dispose();
     _talkPhase.dispose();
     _talkCaption.dispose();
@@ -301,7 +347,12 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     }
     _pendingSpeech = message;
     setState(() => _speakingMessage = message);
-    await _tts.speak(AssistantPlainText.speech(message.text));
+    await _tts.speak(
+      AssistantNumberMask.speech(
+        AppLocalizations.of(context)!,
+        AssistantPlainText.speech(message.text),
+      ),
+    );
   }
 
   void _prefillSharedText() {
@@ -361,6 +412,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
   }
 
   void _saveUserMessage(AssistantMessage message) {
+    if (AssistantOpenChat.dontSave) return;
     var chatId = _chatId;
     final first = chatId == null;
     chatId ??= AssistantChatStore.newChatId();
@@ -379,6 +431,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
   }
 
   void _saveAssistantMessage(AssistantMessage message) {
+    if (AssistantOpenChat.dontSave) return;
     final chatId = _chatId;
     if (chatId == null) return;
     final id = AssistantChatStore.newMessageId(chatId);
@@ -423,6 +476,19 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     if (trimmed.isEmpty || _busy || _loadingChat) return null;
     if (_voice.open.value) await _voice.finish();
     if (!mounted) return null;
+
+    final warning = _secretWarning(trimmed);
+    if (warning != null) {
+      setState(() {
+        _messages.add(
+          AssistantMessage(role: AssistantRole.assistant, text: warning),
+        );
+        _input.clear();
+        _voiceBase = '';
+      });
+      _scrollToEnd();
+      return null;
+    }
 
     final message = AssistantMessage(
       role: AssistantRole.user,
@@ -789,6 +855,16 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     required int token,
   }) async {
     if (!_talkLive(token)) return;
+    final warning = _secretWarning(text);
+    if (warning != null) {
+      // Not shown as heard either: the caption would put it on screen.
+      await _send(text, prompt: prompt);
+      _talkCaption.value = warning;
+      await _talkSay(warning, token);
+      _talkConfirming = false;
+      if (_talkLive(token)) await _talkListen(token);
+      return;
+    }
     _talkPhase.value = TalkPhase.thinking;
     _talkCaption.value = text;
     final reply = await _send(text, prompt: prompt);
@@ -816,11 +892,16 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
   Future<void> _talkAnswer(AssistantMessage message, int token) async {
     if (!_talkLive(token)) return;
     final loc = AppLocalizations.of(context)!;
-    final speech = AssistantPlainText.speech(message.text).trim();
+    final speech = AssistantNumberMask.speech(
+      loc,
+      AssistantPlainText.speech(message.text),
+    ).trim();
     final pending = _pendingCards(message);
     final asks =
         speech.endsWith('?') || speech.endsWith('？') || speech.endsWith('؟');
-    _talkCaption.value = AssistantPlainText.clean(message.text).trim();
+    _talkCaption.value = AssistantNumberMask.hide(
+      AssistantPlainText.clean(message.text),
+    ).trim();
     await _talkSay(
       pending.isNotEmpty && !asks ? '$speech ${loc.talkConfirmAsk}' : speech,
       token,
@@ -1095,6 +1176,11 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     }
     final previous = message.actionStates[index];
     if (previous == AssistantActionState.busy) return;
+    if (AssistantChatSafety.needsIdentity(message, index) &&
+        !await IdentityGate.device(context)) {
+      return;
+    }
+    if (!mounted) return;
     setState(() => message.actionStates[index] = AssistantActionState.busy);
     final applied = await AssistantActionLauncher.applyWithUndo(
       context,
@@ -1200,6 +1286,12 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
   }
 
   Future<void> _confirmBatch(AssistantMessage message) async {
+    // Asked once for the whole set, before anything changes.
+    if (AssistantChatSafety.batchNeedsIdentity(message) &&
+        !await IdentityGate.device(context)) {
+      return;
+    }
+    if (!mounted) return;
     for (var i = 0; i < message.actions.length; i++) {
       if (message.actionStates[i] != AssistantActionState.pending) continue;
       if (message.unchecked.contains(i)) {
@@ -1299,6 +1391,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
 
   void _newChat() {
     if (_busy) return;
+    AssistantOpenChat.dontSave = false;
     _voice.cancel();
     AssistantPhotoDraft.clear();
     setState(() {
@@ -1338,6 +1431,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
 
   Future<void> _loadChat(String chatId, {bool quiet = false}) async {
     final loc = AppLocalizations.of(context)!;
+    AssistantOpenChat.dontSave = false;
     _voice.cancel();
     setState(() {
       _loadingChat = true;
@@ -1398,6 +1492,9 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
               onOpenChat: _openChat,
               onDeleted: _chatDeleted,
               onDeletedAll: _allChatsDeleted,
+              onDontSave: _chatId == null || AssistantOpenChat.dontSave
+                  ? null
+                  : AssistantChatHooks.stopSaving,
             ),
       body: WideCentered(
         child: SafeArea(
@@ -1560,7 +1657,9 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     if (message.isUser) {
       return AssistantBubble(
         fromUser: true,
-        child: SelectableText(message.text),
+        child: AssistantNumberMask.find(message.text).isEmpty
+            ? SelectableText(message.text)
+            : AssistantLinkedText(text: message.text),
       );
     }
 
@@ -1672,7 +1771,9 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
         Align(
           alignment: AlignmentDirectional.centerStart,
           child: AssistantMessageTools(
-            text: AssistantPlainText.clean(message.text),
+            text: AssistantNumberMask.hide(
+              AssistantPlainText.clean(message.text),
+            ),
             rating: message.rating,
             onRate: (rating) => _rate(message, rating),
             onSpeak: () => _speak(message),

@@ -1,19 +1,28 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
+import 'package:vaultara/features/assistant/logic/assistant_number_mask.dart';
 import 'package:vaultara/features/assistant/logic/assistant_plain_text.dart';
+import 'package:vaultara/features/security/logic/identity_gate.dart';
 
 /// An answer where the names of the user's records can be tapped to open
 /// that record. Locked records and names shared by several records are
 /// left as plain text, so a tap never opens the wrong one.
+///
+/// ID, passport and account numbers show as ••••6789 until they are tapped
+/// and the user confirms it is them.
 class AssistantLinkedText extends StatefulWidget {
   final String text;
-  final ValueChanged<String> onOpenRecord;
+  final ValueChanged<String>? onOpenRecord;
+
+  /// Asks the user to confirm it is them before numbers are shown.
+  final Future<bool> Function(BuildContext context) confirm;
 
   const AssistantLinkedText({
     super.key,
     required this.text,
-    required this.onOpenRecord,
+    this.onOpenRecord,
+    this.confirm = IdentityGate.device,
   });
 
   static const int minName = 3;
@@ -43,13 +52,31 @@ class AssistantLinkedText extends StatefulWidget {
 class _Match {
   final int start;
   final int end;
-  final String id;
+
+  /// The record to open, or null for a hidden number.
+  final String? id;
 
   const _Match(this.start, this.end, this.id);
 }
 
 class _AssistantLinkedTextState extends State<AssistantLinkedText> {
   final List<TapGestureRecognizer> _recognizers = <TapGestureRecognizer>[];
+  bool _revealed = false;
+  bool _asking = false;
+
+  @override
+  void didUpdateWidget(covariant AssistantLinkedText oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.text != widget.text) _revealed = false;
+  }
+
+  Future<void> _reveal() async {
+    if (_asking) return;
+    _asking = true;
+    final ok = await widget.confirm(context);
+    _asking = false;
+    if (ok && mounted) setState(() => _revealed = true);
+  }
 
   static final RegExp _wordChar = RegExp(r'[\p{L}\p{N}]', unicode: true);
 
@@ -72,13 +99,22 @@ class _AssistantLinkedTextState extends State<AssistantLinkedText> {
   }
 
   List<_Match> _matches(String text) {
-    final names = AssistantLinkedText.linkable();
-    if (names.isEmpty) return const <_Match>[];
+    final taken = List<bool>.filled(text.length, false);
+    final out = <_Match>[];
+    if (!_revealed) {
+      for (final n in AssistantNumberMask.find(text)) {
+        for (var i = n.start; i < n.end; i++) {
+          taken[i] = true;
+        }
+        out.add(_Match(n.start, n.end, null));
+      }
+    }
+    final names = widget.onOpenRecord == null
+        ? const <String, String>{}
+        : AssistantLinkedText.linkable();
     final lower = text.toLowerCase();
     final keys = names.keys.toList()
       ..sort((a, b) => b.length.compareTo(a.length));
-    final taken = List<bool>.filled(text.length, false);
-    final out = <_Match>[];
     for (final key in keys) {
       var from = 0;
       while (true) {
@@ -112,12 +148,18 @@ class _AssistantLinkedTextState extends State<AssistantLinkedText> {
       if (m.start > cursor) {
         spans.add(TextSpan(text: text.substring(cursor, m.start)));
       }
+      final id = m.id;
+      final value = text.substring(m.start, m.end);
       final recognizer = TapGestureRecognizer()
-        ..onTap = () => widget.onOpenRecord(m.id);
+        ..onTap = id == null
+            ? () {
+                _reveal();
+              }
+            : () => widget.onOpenRecord?.call(id);
       _recognizers.add(recognizer);
       spans.add(
         TextSpan(
-          text: text.substring(m.start, m.end),
+          text: id == null ? MaskedNumber(0, 0, value).hidden : value,
           recognizer: recognizer,
           style: TextStyle(
             color: scheme.primary,

@@ -48,6 +48,7 @@ class AssistantStep {
     'person_delete',
     'support',
     'security',
+    'scam',
   ];
 
   static AssistantStep? fromMap(Map<String, dynamic>? data) {

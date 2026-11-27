@@ -3,7 +3,9 @@ import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
+import 'package:vaultara/features/assistant/data/assistant_action.dart';
 import 'package:vaultara/features/assistant/data/assistant_message.dart';
+import 'package:vaultara/features/assistant/services/assistant_chat_privacy.dart';
 
 class AssistantChatSummary {
   final String id;
@@ -39,6 +41,7 @@ class AssistantChatStore {
   static const int maxSummary = 200;
   static const int maxChats = 100;
   static const int maxMessages = 200;
+  /// How long chats are kept when the user has not chosen (three months).
   static const Duration keepFor = Duration(days: 90);
 
   static FirebaseFirestore get _db => FirebaseFirestore.instance;
@@ -49,7 +52,9 @@ class AssistantChatStore {
     return _db.collection('users').doc(uid).collection('assistantChats');
   }
 
-  static Timestamp _expiry() => Timestamp.fromDate(DateTime.now().add(keepFor));
+  static Timestamp _expiry() => Timestamp.fromDate(
+    DateTime.now().add(Duration(days: AssistantChatPrivacy.keepDays)),
+  );
 
   static String _clip(String text, int max) {
     final trimmed = text.trim();
@@ -87,7 +92,7 @@ class AssistantChatStore {
       'expireAt': _expiry(),
       if (proposals.isNotEmpty)
         'proposals': proposals
-            .take(5)
+            .take(AssistantAction.maxBatch)
             .map((p) => p.withSummary(summaryFrom(p.summary)).toMap())
             .toList(),
     };
@@ -245,6 +250,23 @@ class AssistantChatStore {
     final chatRef = chats.doc(chatId);
     await _deleteMessages(chatRef);
     await chatRef.delete();
+  }
+
+  /// Deletes chats last written to more than [age] ago, when the user
+  /// keeps chats for less time than they were saved for.
+  static Future<int> deleteOlderThan(Duration age) async {
+    final chats = _chats();
+    if (chats == null) return 0;
+    final before = Timestamp.fromDate(DateTime.now().subtract(age));
+    final snap = await chats
+        .where('updatedAt', isLessThan: before)
+        .limit(maxChats)
+        .get();
+    for (final doc in snap.docs) {
+      await _deleteMessages(doc.reference);
+      await doc.reference.delete();
+    }
+    return snap.docs.length;
   }
 
   static Future<void> deleteAll() async {

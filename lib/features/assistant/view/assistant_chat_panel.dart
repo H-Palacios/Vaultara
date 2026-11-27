@@ -3,7 +3,9 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
+import 'package:vaultara/features/assistant/services/assistant_chat_privacy.dart';
 import 'package:vaultara/features/assistant/services/assistant_chat_store.dart';
+import 'package:vaultara/features/assistant/view/widgets/assistant_keep_chats_sheet.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 /// The side panel in Ask Vaultara with the saved chats, grouped by day, the
@@ -19,6 +21,10 @@ class AssistantChatPanel extends StatefulWidget {
   /// Called after every chat is deleted.
   final VoidCallback onDeletedAll;
 
+  /// Stops saving the open chat and removes what was saved of it. Null
+  /// when there is no chat open.
+  final Future<bool> Function()? onDontSave;
+
   const AssistantChatPanel({
     super.key,
     required this.currentChatId,
@@ -26,6 +32,7 @@ class AssistantChatPanel extends StatefulWidget {
     required this.onOpenChat,
     required this.onDeleted,
     required this.onDeletedAll,
+    this.onDontSave,
   });
 
   @override
@@ -184,6 +191,60 @@ class _AssistantChatPanelState extends State<AssistantChatPanel> {
     _chats = _chats?.where((c) => c.id != id).toList();
   }
 
+  Future<void> _keepFor() async {
+    final loc = AppLocalizations.of(context)!;
+    final days = await AssistantKeepChatsSheet.show(context);
+    if (days == null || !mounted) return;
+    setState(() => _working = true);
+    final done = await _run(() => AssistantChatPrivacy.setKeepDays(days));
+    if (!mounted) return;
+    setState(() => _working = false);
+    if (done) await _load(quiet: true);
+    if (!mounted) return;
+    ActionFeedbackSnackbar.showInfo(
+      context,
+      done
+          ? '${loc.chatKeepTitle}: ${AssistantChatPrivacy.periodLabel(loc, days)}'
+          : loc.assistantActionFailed,
+      icon: done ? Icons.history_toggle_off_rounded : Icons.error_outline_rounded,
+    );
+  }
+
+  Future<void> _dontSave() async {
+    final loc = AppLocalizations.of(context)!;
+    final stop = widget.onDontSave;
+    if (stop == null) return;
+    setState(() => _working = true);
+    var done = false;
+    try {
+      done = await stop().timeout(_writeWait);
+    } catch (_) {
+      done = false;
+    }
+    if (!mounted) return;
+    setState(() => _working = false);
+    if (done) await _load(quiet: true);
+    if (!mounted) return;
+    ActionFeedbackSnackbar.showInfo(
+      context,
+      done ? loc.chatNotSaved : loc.assistantActionFailed,
+      icon: done ? Icons.visibility_off_rounded : Icons.error_outline_rounded,
+    );
+  }
+
+  void _onMenu(String value) {
+    switch (value) {
+      case 'words':
+        _forgetWords();
+      case 'keep':
+        _keepFor();
+      case 'dontSave':
+        _dontSave();
+      default:
+        _deleteAll();
+    }
+  }
+
   Future<void> _deleteAll() async {
     final loc = AppLocalizations.of(context)!;
     final ok = await _confirm(
@@ -263,12 +324,20 @@ class _AssistantChatPanelState extends State<AssistantChatPanel> {
                   ),
                   PopupMenuButton<String>(
                     enabled: !_working,
-                    onSelected: (value) =>
-                        value == 'words' ? _forgetWords() : _deleteAll(),
+                    onSelected: _onMenu,
                     itemBuilder: (_) => [
                       PopupMenuItem<String>(
                         value: 'words',
                         child: Text(loc.assistantForgetWords),
+                      ),
+                      PopupMenuItem<String>(
+                        value: 'keep',
+                        child: Text(loc.chatKeepTitle),
+                      ),
+                      PopupMenuItem<String>(
+                        value: 'dontSave',
+                        enabled: widget.onDontSave != null,
+                        child: Text(loc.chatDontSave),
                       ),
                       PopupMenuItem<String>(
                         value: 'all',
@@ -302,7 +371,12 @@ class _AssistantChatPanelState extends State<AssistantChatPanel> {
             Padding(
               padding: const EdgeInsets.fromLTRB(20, 8, 20, 12),
               child: Text(
-                loc.assistantHistoryNote,
+                loc.chatKeepNote(
+                  AssistantChatPrivacy.periodLabel(
+                    loc,
+                    AssistantChatPrivacy.keepDays,
+                  ),
+                ),
                 style: TextStyle(
                   fontSize: 12,
                   height: 1.35,

@@ -15,6 +15,7 @@ import 'package:vaultara/features/assistant/logic/assistant_action_launcher.dart
 import 'package:vaultara/features/assistant/logic/assistant_photo_draft.dart';
 import 'package:vaultara/features/assistant/logic/assistant_settings.dart';
 import 'package:vaultara/features/assistant/logic/assistant_v20_previews.dart';
+import 'package:vaultara/features/assistant/logic/assistant_v21_previews.dart';
 import 'package:vaultara/features/costs/logic/cost_format.dart';
 import 'package:vaultara/features/costs/view/cost_field.dart';
 import 'package:vaultara/features/pets/data/pet_repository.dart';
@@ -150,6 +151,16 @@ class AssistantActionPreview {
         return 'calendar_add';
       case AssistantActionType.sendLink:
         return 'send_link';
+      case AssistantActionType.undo:
+        return 'undo';
+      case AssistantActionType.securityFix:
+        return 'security_fix';
+      case AssistantActionType.stopLinks:
+        return 'stop_links';
+      case AssistantActionType.renewalGuide:
+        return 'renewal_guide';
+      case AssistantActionType.chatPrivacy:
+        return 'chat_privacy';
     }
   }
 
@@ -184,6 +195,12 @@ class AssistantActionPreview {
       case AssistantActionType.calendarAdd:
       case AssistantActionType.sendLink:
         return AssistantV20Previews.build(f.loc, action);
+      case AssistantActionType.undo:
+      case AssistantActionType.securityFix:
+      case AssistantActionType.stopLinks:
+      case AssistantActionType.renewalGuide:
+      case AssistantActionType.chatPrivacy:
+        return AssistantV21Previews.build(f.loc, action);
       case AssistantActionType.remind:
         return AssistantActionPreview(
           title: f.loc.householdRemindAction(action.person ?? ''),

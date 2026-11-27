@@ -6,6 +6,7 @@ import 'package:vaultara/features/assistant/data/assistant_action.dart';
 import 'package:vaultara/features/guides/data/renewal_plan.dart';
 import 'package:vaultara/features/assistant/logic/assistant_limit.dart';
 import 'package:vaultara/features/security/services/device_registry.dart';
+import 'package:vaultara/features/assistant/services/assistant_security_snapshot.dart';
 
 enum AssistantFailure {
   offline,
@@ -84,7 +85,7 @@ class AssistantService {
   static const int maxTurns = 20;
   static const int maxChars = 2000;
   static const int maxContextChars = 16000;
-  static const int protocolVersion = 20;
+  static const int protocolVersion = 21;
 
   static FirebaseFunctions get _functions =>
       FirebaseFunctions.instanceFor(region: region);
@@ -142,6 +143,8 @@ class AssistantService {
         'locale': locale,
         'v': protocolVersion,
         if (device != null) 'device': device,
+        if (AssistantSecuritySnapshot.current != null)
+          'security': AssistantSecuritySnapshot.current,
         if (propose) 'intent': 'propose',
         if (runId != null) 'runId': runId,
         if (here != null) 'here': here,

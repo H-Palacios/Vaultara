@@ -54,7 +54,11 @@ String autoLockLabel(AppLocalizations loc, AutoLockDelay delay) {
 }
 
 class SecurityPrivacyScreen extends StatefulWidget {
-  const SecurityPrivacyScreen({super.key});
+  /// Starts this check-up fix as soon as the screen opens, the same as its
+  /// button in the check-up, as when an Ask Vaultara card is confirmed.
+  final CheckupItem? startFix;
+
+  const SecurityPrivacyScreen({super.key, this.startFix});
 
   @override
   State<SecurityPrivacyScreen> createState() => _SecurityPrivacyScreenState();
@@ -73,6 +77,12 @@ class _SecurityPrivacyScreenState extends State<SecurityPrivacyScreen> {
     super.initState();
     PhotoKeyStore.status.addListener(_onPhotoStatus);
     _load();
+    final fix = widget.startFix;
+    if (fix != null) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) _onCheckupAction(fix);
+      });
+    }
   }
 
   @override

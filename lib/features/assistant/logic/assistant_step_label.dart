@@ -93,6 +93,8 @@ class AssistantStepLabel {
         return loc.assistantStepSupport;
       case 'security':
         return loc.assistantStepSecurity;
+      case 'scam':
+        return loc.assistantStepScam;
     }
     return loc.assistantStepThinking;
   }
