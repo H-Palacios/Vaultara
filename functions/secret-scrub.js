@@ -3,6 +3,8 @@
 // on the server, for older apps and anything that slips past: they are
 // replaced before the chat is read.
 
+const { isNationalId } = require("./id-number-check");
+
 const CARD = /\b(?:\d[ -]?){12,18}\d\b/g;
 const CODE_WORDS = "(?:otp|one[- ]time (?:code|pin|password)|verification code|security code|auth(?:entication)? code|login code|sign[- ]in code|pin)";
 // Only a code given right after its name ("OTP 123456", "PIN is 1234"),
@@ -35,6 +37,9 @@ function scrubSecrets(text) {
   let out = text.replace(CARD, (match) => {
     const digits = match.replace(/\D/g, "");
     if (digits.length < 13 || digits.length > 19 || !luhn(digits)) return match;
+    // A South African ID number (and a JMBG) also passes the card check; its
+    // birth date and citizenship digit tell it apart, and it is not removed.
+    if (isNationalId(digits)) return match;
     found.add("card");
     return "[card number removed]";
   });
