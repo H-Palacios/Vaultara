@@ -18,6 +18,8 @@ import 'package:vaultara/core/util/text_normaliser.dart';
 import 'package:vaultara/core/view/widgets/action_feedback_snackbar.dart';
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
 import 'package:vaultara/features/assistant/logic/assistant_navigator.dart';
+import 'package:vaultara/features/assistant/logic/assistant_photo_draft.dart';
+import 'package:vaultara/features/assistant/logic/assistant_v20_launcher.dart';
 import 'package:vaultara/features/assistant/logic/assistant_proof_pack_action.dart';
 import 'package:vaultara/features/assistant/logic/assistant_remind_action.dart';
 import 'package:vaultara/features/assistant/logic/assistant_remove_action.dart';
@@ -218,10 +220,6 @@ class AssistantActionLauncher {
     };
   }
 
-  /// A photo the user took in the chat, attached to the next record added
-  /// from a card. Cleared once used.
-  static String? pendingPhotoPath;
-
   static Future<AssistantApplyResult> apply(
     BuildContext context,
     AssistantAction action,
@@ -309,6 +307,12 @@ class AssistantActionLauncher {
             action,
             onUndo: (undo) => slot.undo = undo,
           );
+        case AssistantActionType.supportEmail:
+        case AssistantActionType.householdInvite:
+        case AssistantActionType.signOutOthers:
+        case AssistantActionType.calendarAdd:
+        case AssistantActionType.sendLink:
+          return await AssistantV20Launcher.run(context, action);
       }
     } catch (_) {
       if (context.mounted) {
@@ -879,10 +883,21 @@ class AssistantActionLauncher {
     final shell = ShellState.current;
     if (shell == null) return AssistantApplyResult.failed;
 
-    final record = newRecord(context, action);
+    final made = newRecord(context, action);
+    // A number read from a photo in the chat goes on this record, saved
+    // the same way as one typed in the form.
+    final number = AssistantPhotoDraft.number;
+    final record = made == null || number == null
+        ? made
+        : made.copyWith(reference: number);
     if (record == null ||
         !RecordRepository.canAddRecord(isPremium: shell.isPremium)) {
-      openAddRecord(context, shell, prefill: action.toPrefill());
+      AssistantPhotoDraft.takeNumber();
+      openAddRecord(
+        context,
+        shell,
+        prefill: action.toPrefill(reference: number),
+      );
       return record == null
           ? AssistantApplyResult.opened
           : AssistantApplyResult.failed;
@@ -903,15 +918,19 @@ class AssistantActionLauncher {
       return ok ? AssistantApplyResult.applied : AssistantApplyResult.failed;
     }
     if (!ok) {
-      openAddRecord(context, shell, prefill: action.toPrefill());
+      openAddRecord(
+        context,
+        shell,
+        prefill: action.toPrefill(reference: AssistantPhotoDraft.takeNumber()),
+      );
       return AssistantApplyResult.failed;
     }
+    AssistantPhotoDraft.takeNumber();
     _refreshHome();
     var added = RecordRepository.stored(record);
     // The photo from the chat goes on the new record, within the plan's
     // photo limit.
-    final photo = pendingPhotoPath;
-    pendingPhotoPath = null;
+    final photo = AssistantPhotoDraft.takePhoto();
     if (photo != null &&
         photo.isNotEmpty &&
         added.attachments.length <

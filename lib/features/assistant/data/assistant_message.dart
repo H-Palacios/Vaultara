@@ -108,7 +108,7 @@ class StoredProposal {
     return raw
         .map(StoredProposal.fromMap)
         .whereType<StoredProposal>()
-        .take(AssistantAction.maxActions)
+        .take(AssistantAction.maxBatch)
         .toList();
   }
 }

@@ -1,5 +1,6 @@
 import 'package:vaultara/core/data/models/kept_in.dart';
 import 'package:vaultara/features/assistant/data/assistant_pet_details.dart';
+import 'package:vaultara/features/assistant/data/assistant_v20_cards.dart';
 import 'package:vaultara/features/guides/data/renewal_plan.dart';
 import 'package:vaultara/features/pets/data/pet.dart';
 import 'package:vaultara/features/pets/data/pet_type.dart';
@@ -40,6 +41,15 @@ enum AssistantActionType {
   petDelete,
   tripDelete,
   personDelete,
+
+  /// From app version 20: an email to Vorkalis support, a household invite
+  /// sent by email, signing out the other devices, one record in the phone's
+  /// calendar, and a secure link to send one record.
+  supportEmail,
+  householdInvite,
+  signOutOthers,
+  calendarAdd,
+  sendLink,
 }
 
 enum AssistantActionState { pending, busy, applied, opened, cancelled }
@@ -214,6 +224,10 @@ class AssistantTripChanges {
 
 class AssistantAction {
   static const int maxActions = 5;
+
+  /// The most records one "add many" card can carry, as on the server.
+  /// Only cards that all add records may go past [maxActions].
+  static const int maxBatch = 20;
   static const String me = 'me';
 
   /// Settings Ask Vaultara may change after the user confirms. Security
@@ -228,6 +242,7 @@ class AssistantAction {
     'monthly_summary',
     'reminder_time',
     'after_expiry',
+    'month_ahead',
   ];
 
   static const Set<String> onlyOn = <String>{
@@ -370,6 +385,15 @@ class AssistantAction {
   /// A new pet's microchip, registry, vet and documents.
   final AssistantPetDetails petDetails;
 
+  /// An email card: its subject and message (support), or the address an
+  /// invite goes to.
+  final String? subject;
+  final String? message;
+  final String? email;
+
+  /// A secure link card: how many hours the link works.
+  final int? hours;
+
   const AssistantAction({
     required this.type,
     this.name,
@@ -442,6 +466,10 @@ class AssistantAction {
     this.petCustomType,
     this.petBirth,
     this.petDetails = AssistantPetDetails.none,
+    this.subject,
+    this.message,
+    this.email,
+    this.hours,
   });
 
   bool get isOpen => type == AssistantActionType.open;
@@ -786,7 +814,7 @@ class AssistantAction {
           );
         }
     }
-    return null;
+    return AssistantV20Cards.parse(raw);
   }
 
   static AssistantAction? _fromRenewalPlan(Map<dynamic, dynamic> raw) {
@@ -1118,22 +1146,32 @@ class AssistantAction {
 
   static List<AssistantAction> listFrom(Object? raw) {
     if (raw is! List) return const <AssistantAction>[];
-    return raw
+    final cards = AssistantV20Cards.expand(raw)
         .map(AssistantAction.fromMap)
         .whereType<AssistantAction>()
-        .take(maxActions)
         .toList();
+    return cards.take(limitFor(cards)).toList();
   }
+
+  /// How many of [cards] one answer shows: up to [maxBatch] when every card
+  /// adds a record, as one card with ticks, otherwise up to [maxActions].
+  static int limitFor(List<AssistantAction> cards) =>
+      cards.every((c) => c.type == AssistantActionType.add)
+      ? maxBatch
+      : maxActions;
 
   /// The add record form filled from this card. [holderId] gives the
   /// holder when it is not on the card, such as a pet saved just now.
-  RecordPrefill toPrefill({String? holderId}) => RecordPrefill(
-    name: name,
-    categoryKey: categoryKey,
-    groupKey: groupKey,
-    groupText: group,
-    expiryDate: expiryDate,
-    holderId: holderId ?? personId,
-    notes: notes,
-  );
+  /// [reference] is a number read from a photo on this phone.
+  RecordPrefill toPrefill({String? holderId, String? reference}) =>
+      RecordPrefill(
+        name: name,
+        categoryKey: categoryKey,
+        groupKey: groupKey,
+        groupText: group,
+        expiryDate: expiryDate,
+        holderId: holderId ?? personId,
+        notes: notes,
+        reference: reference,
+      );
 }

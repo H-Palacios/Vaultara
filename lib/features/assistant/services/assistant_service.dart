@@ -5,6 +5,7 @@ import 'package:cloud_functions/cloud_functions.dart';
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
 import 'package:vaultara/features/guides/data/renewal_plan.dart';
 import 'package:vaultara/features/assistant/logic/assistant_limit.dart';
+import 'package:vaultara/features/security/services/device_registry.dart';
 
 enum AssistantFailure {
   offline,
@@ -83,10 +84,20 @@ class AssistantService {
   static const int maxTurns = 20;
   static const int maxChars = 2000;
   static const int maxContextChars = 16000;
-  static const int protocolVersion = 19;
+  static const int protocolVersion = 20;
 
   static FirebaseFunctions get _functions =>
       FirebaseFunctions.instanceFor(region: region);
+
+  /// This phone's id, so Ask Vaultara can say which device in the list is
+  /// this one. Left out when it cannot be read.
+  static Future<String?> _deviceId() async {
+    try {
+      return await DeviceRegistry.deviceId();
+    } catch (_) {
+      return null;
+    }
+  }
 
   static String clip(String text) {
     final trimmed = text.trim();
@@ -125,10 +136,12 @@ class AssistantService {
         // Answers that search official sites can take longer.
         options: HttpsCallableOptions(timeout: const Duration(seconds: 120)),
       );
+      final device = await _deviceId();
       final response = await callable.call(<String, dynamic>{
         'messages': recent.map((t) => t.toMap()).toList(),
         'locale': locale,
         'v': protocolVersion,
+        if (device != null) 'device': device,
         if (propose) 'intent': 'propose',
         if (runId != null) 'runId': runId,
         if (here != null) 'here': here,

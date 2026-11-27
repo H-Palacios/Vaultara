@@ -89,6 +89,10 @@ class AssistantStepLabel {
         return loc.assistantStepLifePlan;
       case 'life_plan_update':
         return loc.assistantStepLifePlanUpdate;
+      case 'support':
+        return loc.assistantStepSupport;
+      case 'security':
+        return loc.assistantStepSecurity;
     }
     return loc.assistantStepThinking;
   }

@@ -19,7 +19,11 @@ import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/core/view/widgets/app_sheet.dart';
 
 class DevicesScreen extends StatefulWidget {
-  const DevicesScreen({super.key});
+  /// Starts "Sign out of all other devices" as soon as the screen opens,
+  /// with its usual questions, as when Ask Vaultara's card is confirmed.
+  final bool signOutOthers;
+
+  const DevicesScreen({super.key, this.signOutOthers = false});
 
   @override
   State<DevicesScreen> createState() => _DevicesScreenState();
@@ -39,6 +43,11 @@ class _DevicesScreenState extends State<DevicesScreen> {
     DeviceRegistry.deviceId().then((id) {
       if (mounted) setState(() => _thisId = id);
     });
+    if (widget.signOutOthers) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) _signOutOthers();
+      });
+    }
   }
 
   void _retryLoad() {

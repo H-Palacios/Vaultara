@@ -12,7 +12,9 @@ import 'package:vaultara/core/util/safe_locale.dart';
 import 'package:vaultara/features/assistant/data/assistant_action.dart';
 import 'package:vaultara/features/assistant/data/assistant_message.dart';
 import 'package:vaultara/features/assistant/logic/assistant_action_launcher.dart';
+import 'package:vaultara/features/assistant/logic/assistant_photo_draft.dart';
 import 'package:vaultara/features/assistant/logic/assistant_settings.dart';
+import 'package:vaultara/features/assistant/logic/assistant_v20_previews.dart';
 import 'package:vaultara/features/costs/logic/cost_format.dart';
 import 'package:vaultara/features/costs/view/cost_field.dart';
 import 'package:vaultara/features/pets/data/pet_repository.dart';
@@ -138,6 +140,16 @@ class AssistantActionPreview {
         return 'trip_delete';
       case AssistantActionType.personDelete:
         return 'person_delete';
+      case AssistantActionType.supportEmail:
+        return 'support_email';
+      case AssistantActionType.householdInvite:
+        return 'household_invite';
+      case AssistantActionType.signOutOthers:
+        return 'sign_out_others';
+      case AssistantActionType.calendarAdd:
+        return 'calendar_add';
+      case AssistantActionType.sendLink:
+        return 'send_link';
     }
   }
 
@@ -166,6 +178,12 @@ class AssistantActionPreview {
         return _remove(f, action);
       case AssistantActionType.proofPack:
         return _proofPack(f, action);
+      case AssistantActionType.supportEmail:
+      case AssistantActionType.householdInvite:
+      case AssistantActionType.signOutOthers:
+      case AssistantActionType.calendarAdd:
+      case AssistantActionType.sendLink:
+        return AssistantV20Previews.build(f.loc, action);
       case AssistantActionType.remind:
         return AssistantActionPreview(
           title: f.loc.householdRemindAction(action.person ?? ''),
@@ -571,6 +589,11 @@ class AssistantActionPreview {
           after: f.notes(action.notes),
         ),
       );
+    }
+    // A number read from a photo in the chat, kept on this phone.
+    final number = AssistantPhotoDraft.maskedNumber;
+    if (number != null) {
+      rows.add(AssistantChangeRow(label: loc.detailsReference, after: number));
     }
     if (record != null) {
       if (record.renewalCost != null) {

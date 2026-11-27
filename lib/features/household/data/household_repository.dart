@@ -424,6 +424,22 @@ class HouseholdRepository {
     );
   }
 
+  /// Emails an invite made with [createInvite] to [email], with the same
+  /// subject and message the Household screen shares.
+  static Future<void> emailInvite({
+    required String code,
+    required String email,
+    required String subject,
+    required String message,
+  }) async {
+    await _call('emailHouseholdInvite', <String, dynamic>{
+      'code': code,
+      'email': email,
+      'subject': subject,
+      'message': message,
+    });
+  }
+
   static Future<void> revokeInvite(String code) async {
     await _call('revokeInvite', <String, dynamic>{'code': code});
   }

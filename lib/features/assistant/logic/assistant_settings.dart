@@ -8,6 +8,7 @@ import 'package:vaultara/features/assistant/data/assistant_action.dart';
 import 'package:vaultara/features/auth/services/biometric_preference.dart';
 import 'package:vaultara/features/platform/privacy_screen.dart';
 import 'package:vaultara/features/reminders/services/daily_digest_service.dart';
+import 'package:vaultara/features/reminders/services/month_ahead_service.dart';
 import 'package:vaultara/features/reminders/services/monthly_summary_service.dart';
 import 'package:vaultara/features/reminders/services/notification_prefs.dart';
 import 'package:vaultara/features/reminders/services/push_service.dart';
@@ -54,6 +55,8 @@ class AssistantSettings {
         return loc.reminderTimeTitle;
       case 'after_expiry':
         return loc.notifAfterExpiryTitle;
+      case 'month_ahead':
+        return loc.monthAheadTitle;
     }
     return '';
   }
@@ -76,6 +79,8 @@ class AssistantSettings {
         return Icons.schedule_rounded;
       case 'after_expiry':
         return Icons.event_busy_rounded;
+      case 'month_ahead':
+        return Icons.auto_awesome_rounded;
     }
     return Icons.settings_rounded;
   }
@@ -177,6 +182,21 @@ class AssistantSettings {
         final kindOn = action.settingOn;
         if (kindOn == null) break;
         return _kind(context, setting, NotificationKind.afterExpiry, kindOn);
+      case 'month_ahead':
+        final aheadOn = action.settingOn;
+        if (aheadOn == null) break;
+        final bool aheadWanted = aheadOn;
+        final aheadLocale = AppLocalizations.of(context)!.localeName;
+        final aheadBefore = await MonthAheadService.enabledStream().first
+            .timeout(const Duration(seconds: 6), onTimeout: () => !aheadWanted);
+        if (!context.mounted) break;
+        return _toggle(
+          context,
+          setting,
+          aheadBefore,
+          aheadWanted,
+          (value) => MonthAheadService.setEnabled(value, aheadLocale),
+        );
     }
     return const AssistantSettingResult(AssistantSettingOutcome.failed);
   }

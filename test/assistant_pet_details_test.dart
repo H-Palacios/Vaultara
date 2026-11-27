@@ -87,7 +87,7 @@ void main() {
 
   test('the app asks for protocol 19, which sends the pet details and the '
       'remove cards', () {
-    expect(AssistantService.protocolVersion, 19);
+    expect(AssistantService.protocolVersion, greaterThanOrEqualTo(19));
   });
 
   group('One card for a pet and everything said about her', () {

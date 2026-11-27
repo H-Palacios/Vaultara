@@ -7,6 +7,10 @@ class RecordPrefill {
   final String? holderId;
   final String? notes;
 
+  /// A document number read from a photo on this phone. It goes in the
+  /// reference number field and is never sent anywhere first.
+  final String? reference;
+
   const RecordPrefill({
     this.name,
     this.categoryKey,
@@ -15,6 +19,7 @@ class RecordPrefill {
     this.expiryDate,
     this.holderId,
     this.notes,
+    this.reference,
   });
 
   bool get isEmpty =>
@@ -23,5 +28,6 @@ class RecordPrefill {
       (groupText == null || groupText!.trim().isEmpty) &&
       expiryDate == null &&
       holderId == null &&
-      (notes == null || notes!.trim().isEmpty);
+      (notes == null || notes!.trim().isEmpty) &&
+      (reference == null || reference!.trim().isEmpty);
 }

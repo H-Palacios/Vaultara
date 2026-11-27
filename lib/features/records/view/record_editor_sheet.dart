@@ -1320,6 +1320,13 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
           : joined;
       moreDetailsOpen = true;
     }
+
+    final String? reference = TrackedItem.cleanReference(p.reference);
+    if (reference != null &&
+        (overwrite || referenceController.text.trim().isEmpty)) {
+      referenceController.text = reference;
+      moreDetailsOpen = true;
+    }
   }
 
   Future<void> _describeToFill() async {

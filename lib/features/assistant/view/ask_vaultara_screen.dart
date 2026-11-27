@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'package:vaultara/features/scan/services/document_reader.dart';
 import 'package:vaultara/features/scan/services/document_scanner.dart';
+import 'package:vaultara/features/assistant/logic/assistant_photo_draft.dart';
+import 'package:vaultara/features/assistant/logic/assistant_hand_off.dart';
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/layout/wide_centered.dart';
 import 'package:flutter/services.dart';
@@ -230,7 +232,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     _talkVoice.dispose();
     _talkPhase.dispose();
     _talkCaption.dispose();
-    AssistantActionLauncher.pendingPhotoPath = null;
+    AssistantPhotoDraft.clear();
     final run = _run;
     if (_busy && run != null) {
       // Leaving stops the answer. The chat keeps a note so it can be
@@ -611,9 +613,12 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       );
       return;
     }
-    AssistantActionLauncher.pendingPhotoPath = outcome.hasImage
-        ? outcome.imagePath
-        : null;
+    // The number stays on this phone, like the photo. The server only
+    // hears that one was read, so it can say it goes on the record.
+    AssistantPhotoDraft.keep(
+      photo: outcome.hasImage ? outcome.imagePath : null,
+      number: result.documentNumber,
+    );
     final lines = <String>['[Photo]'];
     if (result.groupKey != null) lines.add('Kind: ${result.groupKey}');
     if (result.suggestedName != null) {
@@ -626,6 +631,9 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     }
     if (result.issuingCountry != null) {
       lines.add('Issued by: ${result.issuingCountry}');
+    }
+    if (AssistantPhotoDraft.number != null) {
+      lines.add('Number: read, kept on the phone');
     }
     if (text.isNotEmpty) {
       lines.add(
@@ -917,6 +925,21 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
               last.actionStates[i] == AssistantActionState.applied ||
               last.actionStates[i] == AssistantActionState.opened,
         );
+        // A card that opened another screen or app is finished there, so
+        // Talk mode says so and waits for a tap instead of listening.
+        final handedOff = pending.any(
+          (i) =>
+              last.actionStates[i] == AssistantActionState.opened &&
+              AssistantHandOff.handsOff(last.actions[i]),
+        );
+        if (handedOff) {
+          await _talkSay(loc.talkFinishOnScreen, token);
+          if (_talkLive(token)) {
+            _talkPhase.value = TalkPhase.idle;
+            _talkCaption.value = loc.talkFinishOnScreen;
+          }
+          return;
+        }
         // After it is done, Talk mode offers the next step out loud, as
         // the chat does with a reply button.
         final next = done ? _talkNextFor(last, pending) : null;
@@ -1277,7 +1300,7 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
   void _newChat() {
     if (_busy) return;
     _voice.cancel();
-    AssistantActionLauncher.pendingPhotoPath = null;
+    AssistantPhotoDraft.clear();
     setState(() {
       _messages.clear();
       _input.clear();

@@ -32,6 +32,7 @@ import '../services/reminder_sound_prefs.dart';
 import 'reminder_sound_names.dart';
 import 'reminder_sound_sheet.dart';
 import 'battery_warning_card.dart';
+import 'month_ahead_tile.dart';
 
 class NotificationSettingsScreen extends StatefulWidget {
   const NotificationSettingsScreen({super.key});
@@ -436,6 +437,12 @@ class _NotificationSettingsScreenState extends State<NotificationSettingsScreen>
                           title: t.notifAfterExpiryTitle,
                           subtitle: t.notifAfterExpirySubtitle,
                         ),
+                        // Ask Vaultara is on paid plans, so is its month
+                        // ahead.
+                        if (_tier.isPaid) ...[
+                          const SizedBox(height: 12),
+                          const MonthAheadTile(),
+                        ],
                       ],
                     ),
                   ),

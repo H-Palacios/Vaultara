@@ -6,9 +6,11 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 import 'package:vaultara/core/data/category_resolver.dart';
 import 'package:vaultara/core/data/repositories/record_repository.dart';
+import 'package:vaultara/features/assistant/view/ask_vaultara_screen.dart';
 import 'package:vaultara/features/family/view/family_screen.dart';
 import 'package:vaultara/features/household/view/household_records_screen.dart';
 import 'package:vaultara/features/records/view/records/records_screen.dart';
+import 'package:vaultara/l10n/app_localizations.dart';
 import 'package:vaultara/shell/shell_state.dart';
 
 class PushRouter {
@@ -18,6 +20,10 @@ class PushRouter {
   static const String typeHousehold = 'household';
   static const String typeHome = 'home';
   static const String typeUpdateRequest = 'updateRequest';
+
+  /// The month ahead on the 1st: opens Ask Vaultara and asks it what to do
+  /// this month.
+  static const String typeMonthAhead = 'monthAhead';
 
   static const String _kind = 'vaultaraOpen';
   static const List<String> _keys = <String>['type', 'recordId', 'householdId'];
@@ -68,15 +74,18 @@ class PushRouter {
   static void open(Map<String, dynamic> data) {
     final cleaned = _clean(data);
     final type = cleaned['type'];
-    if (type != typeRecord &&
-        type != typeHousehold &&
-        type != typeHome &&
-        type != typeUpdateRequest) {
-      return;
-    }
+    if (!opens(type)) return;
     _pending = cleaned;
     unawaited(_drain());
   }
+
+  /// Whether a push of this type opens something in the app.
+  static bool opens(String? type) =>
+      type == typeRecord ||
+      type == typeHousehold ||
+      type == typeHome ||
+      type == typeUpdateRequest ||
+      type == typeMonthAhead;
 
   static Future<void> _drain() async {
     if (_draining) return;
@@ -130,6 +139,21 @@ class PushRouter {
     ));
   }
 
+  static void _openMonthAhead(ShellState shell) {
+    final navigator = Navigator.of(shell.context);
+    navigator.popUntil((route) => route.isFirst);
+    final loc = AppLocalizations.of(shell.context);
+    unawaited(navigator.push(
+      MaterialPageRoute<void>(
+        builder: (_) => AskVaultaraScreen(
+          isPremium: shell.isPremium,
+          sharedText: loc?.monthAheadQuestion,
+          sendShared: loc != null,
+        ),
+      ),
+    ));
+  }
+
   static void _perform(ShellState shell, Map<String, String> data) {
     final context = shell.context;
     final type = data['type'];
@@ -142,6 +166,11 @@ class PushRouter {
 
     if (type == typeUpdateRequest) {
       _openFamily(shell);
+      return;
+    }
+
+    if (type == typeMonthAhead) {
+      _openMonthAhead(shell);
       return;
     }
 
