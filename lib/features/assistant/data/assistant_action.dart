@@ -2,6 +2,7 @@ import 'package:vaultara/core/data/models/kept_in.dart';
 import 'package:vaultara/features/assistant/data/assistant_pet_details.dart';
 import 'package:vaultara/features/assistant/data/assistant_v20_cards.dart';
 import 'package:vaultara/features/assistant/data/assistant_v21_cards.dart';
+import 'package:vaultara/features/assistant/data/assistant_v22_cards.dart';
 import 'package:vaultara/features/guides/data/renewal_plan.dart';
 import 'package:vaultara/features/pets/data/pet.dart';
 import 'package:vaultara/features/pets/data/pet_type.dart';
@@ -60,6 +61,10 @@ enum AssistantActionType {
   stopLinks,
   renewalGuide,
   chatPrivacy,
+
+  /// From app version 22: fix part of the ID or passport number the chat is
+  /// working on, without saying the whole number again.
+  numberFix,
 }
 
 enum AssistantActionState { pending, busy, applied, opened, cancelled }
@@ -409,6 +414,21 @@ class AssistantAction {
   final String? option;
   final int? count;
 
+  /// A number fix card: where the change goes (after, before, start, end
+  /// or position), the part the user named, the position, the digits to
+  /// add, put in or remove, and the document's country and kind.
+  final String? editPlace;
+  final String? editAnchor;
+  final int? editPosition;
+  final String? editDigits;
+  final String? editCountry;
+  final String? editKind;
+
+  /// A second place to insert in the same number, solved together.
+  final String? editPlace2;
+  final String? editAnchor2;
+  final String? editDigits2;
+
   const AssistantAction({
     required this.type,
     this.name,
@@ -487,6 +507,15 @@ class AssistantAction {
     this.hours,
     this.option,
     this.count,
+    this.editPlace,
+    this.editAnchor,
+    this.editPosition,
+    this.editDigits,
+    this.editCountry,
+    this.editKind,
+    this.editPlace2,
+    this.editAnchor2,
+    this.editDigits2,
   });
 
   bool get isOpen => type == AssistantActionType.open;
@@ -831,7 +860,9 @@ class AssistantAction {
           );
         }
     }
-    return AssistantV20Cards.parse(raw) ?? AssistantV21Cards.parse(raw);
+    return AssistantV20Cards.parse(raw) ??
+        AssistantV21Cards.parse(raw) ??
+        AssistantV22Cards.parse(raw);
   }
 
   static AssistantAction? _fromRenewalPlan(Map<dynamic, dynamic> raw) {

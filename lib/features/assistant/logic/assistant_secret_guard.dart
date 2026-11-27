@@ -1,3 +1,4 @@
+import 'package:vaultara/features/records/logic/id_number_check.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
 
 /// What kind of secret a message holds.
@@ -44,7 +45,12 @@ class AssistantSecretGuard {
   static AssistantSecret? find(String text) {
     for (final match in _card.allMatches(text)) {
       final digits = match.group(0)!.replaceAll(RegExp(r'\D'), '');
-      if (digits.length >= 13 && digits.length <= 19 && luhn(digits)) {
+      // A South African ID number also passes the card check; its birth
+      // date and citizenship digit tell it apart.
+      if (digits.length >= 13 &&
+          digits.length <= 19 &&
+          luhn(digits) &&
+          !IdNumberCheck.isNationalId(digits)) {
         return AssistantSecret.card;
       }
     }

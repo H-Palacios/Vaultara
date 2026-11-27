@@ -29,6 +29,15 @@ class ScanParseResult {
   /// The check digits in the code lines agreed with what was read.
   final bool mrzVerified;
 
+  /// From the code lines, for checking the document against itself: the
+  /// holder's birth date (when its check digit agreed) and the optional
+  /// personal number, such as a South African ID number.
+  final DateTime? birthDate;
+  final String? personalNumber;
+
+  /// A vehicle's VIN from a licence disc's barcode.
+  final String? vin;
+
   /// Other future dates printed on the document, soonest first, so the person
   /// can switch to one with a tap when the filled in date is the wrong one.
   final List<DateTime> otherDates;
@@ -53,6 +62,9 @@ class ScanParseResult {
     this.matchedPersonName,
     this.mrzVerified = false,
     this.otherDates = const <DateTime>[],
+    this.birthDate,
+    this.personalNumber,
+    this.vin,
   });
 
   static const ScanParseResult empty = ScanParseResult();
@@ -118,6 +130,9 @@ class ScanParseResult {
       matchedPersonName: matchedPersonName ?? this.matchedPersonName,
       mrzVerified: mrzVerified,
       otherDates: otherDates ?? this.otherDates,
+      birthDate: birthDate,
+      personalNumber: personalNumber,
+      vin: vin,
     );
   }
 
@@ -533,6 +548,8 @@ class ScanParser {
       otherDates: source == ScanDateSource.mrz
           ? const <DateTime>[]
           : otherDatesIn(lower, today, monthFirst, chosen: expiry),
+      birthDate: mrz != null && mrz.birthValid ? mrz.birthDate : null,
+      personalNumber: mrz?.personalNumber,
     );
   }
 
@@ -581,6 +598,7 @@ class ScanParser {
       vehicleMake: disc.make,
       vehicleModel: disc.model,
       vehicleColour: disc.colour,
+      vin: disc.vin,
     );
   }
 

@@ -16,6 +16,8 @@ import 'package:vaultara/features/assistant/logic/assistant_photo_draft.dart';
 import 'package:vaultara/features/assistant/logic/assistant_settings.dart';
 import 'package:vaultara/features/assistant/logic/assistant_v20_previews.dart';
 import 'package:vaultara/features/assistant/logic/assistant_v21_previews.dart';
+import 'package:vaultara/features/assistant/logic/assistant_v22_previews.dart';
+import 'package:vaultara/features/records/view/editor/id_number_message.dart';
 import 'package:vaultara/features/costs/logic/cost_format.dart';
 import 'package:vaultara/features/costs/view/cost_field.dart';
 import 'package:vaultara/features/pets/data/pet_repository.dart';
@@ -81,6 +83,13 @@ class AssistantActionPreview {
     summary: private ? '$title: ${loc.assistantLockedRecord}' : summary,
     status: status,
   );
+
+  /// Two notes in one, either of which may be missing.
+  static String? _joinNotes(String? first, String? second) {
+    if (first == null) return second;
+    if (second == null) return first;
+    return '$first $second';
+  }
 
   static String storedType(AssistantActionType type) {
     switch (type) {
@@ -161,6 +170,8 @@ class AssistantActionPreview {
         return 'renewal_guide';
       case AssistantActionType.chatPrivacy:
         return 'chat_privacy';
+      case AssistantActionType.numberFix:
+        return 'number_fix';
     }
   }
 
@@ -201,6 +212,8 @@ class AssistantActionPreview {
       case AssistantActionType.renewalGuide:
       case AssistantActionType.chatPrivacy:
         return AssistantV21Previews.build(f.loc, action);
+      case AssistantActionType.numberFix:
+        return AssistantV22Previews.build(f.loc, action);
       case AssistantActionType.remind:
         return AssistantActionPreview(
           title: f.loc.householdRemindAction(action.person ?? ''),
@@ -612,6 +625,11 @@ class AssistantActionPreview {
     if (number != null) {
       rows.add(AssistantChangeRow(label: loc.detailsReference, after: number));
     }
+    // What the phone found when it checked that number.
+    final check = number == null ? null : AssistantPhotoDraft.check;
+    final checkNote = check == null || check.ok
+        ? null
+        : IdNumberMessage.of(loc, check);
     if (record != null) {
       if (record.renewalCost != null) {
         rows.add(
@@ -659,7 +677,10 @@ class AssistantActionPreview {
       icon: Icons.note_add_rounded,
       subject: action.name ?? '',
       rows: rows,
-      note: record == null ? loc.assistantActionOpensForm : null,
+      note: _joinNotes(
+        checkNote,
+        record == null ? loc.assistantActionOpensForm : null,
+      ),
     );
   }
 

@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:vaultara/core/data/models/tracked_item.dart';
 import 'package:vaultara/core/theme/app_input_decorations.dart';
+import 'package:vaultara/features/records/logic/id_cross_check.dart';
+import 'package:vaultara/features/records/logic/id_number_check.dart';
+import 'package:vaultara/features/records/logic/id_number_duplicates.dart';
 import 'package:vaultara/features/records/logic/record_details.dart';
+import 'package:vaultara/features/records/view/editor/id_number_message.dart';
 import 'package:vaultara/features/travel/data/countries.dart';
 import 'package:vaultara/features/travel/view/country_picker_sheet.dart';
 import 'package:vaultara/l10n/app_localizations.dart';
@@ -279,6 +283,11 @@ class _EditorProviderFieldState extends State<EditorProviderField> {
 
 /// A policy, card or document number. Hidden while typing unless shown,
 /// kept with the record and never sent to Ask Vaultara. Optional.
+///
+/// For ID cards and passports with a country set, the number is checked
+/// against that country's rules (length, characters, check digit, birth
+/// date) and the field says what is wrong. It never stops the save: some
+/// cards carry a different number.
 class EditorReferenceField extends StatefulWidget {
   final TextEditingController controller;
   final bool enabled;
@@ -287,12 +296,30 @@ class EditorReferenceField extends StatefulWidget {
   /// Set when the saved number is encrypted and this phone cannot open it.
   final String? lockedMask;
 
+  /// The record's group and country, which choose the rules.
+  final String? group;
+  final String? country;
+
+  /// The record being edited, so its own number is not taken for another
+  /// record's.
+  final String? recordId;
+
+  /// What a scan of the document said about itself, and the record's
+  /// expiry date, for checking the number against the rest of it.
+  final IdDocumentFacts? facts;
+  final DateTime? expiry;
+
   const EditorReferenceField({
     super.key,
     required this.controller,
     required this.enabled,
     required this.onChanged,
     this.lockedMask,
+    this.group,
+    this.country,
+    this.recordId,
+    this.facts,
+    this.expiry,
   });
 
   @override
@@ -301,14 +328,143 @@ class EditorReferenceField extends StatefulWidget {
 
 class _EditorReferenceFieldState extends State<EditorReferenceField> {
   bool _shown = false;
+  final FocusNode _focus = FocusNode();
+
+  @override
+  void initState() {
+    super.initState();
+    // "Too short" waits until the user leaves the field, so it does not
+    // show while they are still typing.
+    _focus.addListener(_refresh);
+  }
+
+  void _refresh() {
+    if (mounted) setState(() {});
+  }
+
+  @override
+  void dispose() {
+    _focus.removeListener(_refresh);
+    _focus.dispose();
+    super.dispose();
+  }
+
+  IdCheckResult? _check() {
+    final kind = IdNumberCheck.kindForGroup(
+      widget.group,
+      widget.controller.text,
+    );
+    if (kind == null) return null;
+    final result = IdNumberCheck.check(
+      widget.country,
+      kind,
+      widget.controller.text,
+    );
+    if (result == null) return null;
+    if (result.outcome == IdCheckOutcome.tooShort && _focus.hasFocus) {
+      return null;
+    }
+    return result;
+  }
+
+  /// Puts a hint's fixed number in the field.
+  void _use(String fixed) {
+    widget.controller.text = fixed;
+    widget.controller.selection = TextSelection.collapsed(
+      offset: fixed.length,
+    );
+    widget.onChanged(fixed);
+    setState(() {});
+  }
 
   @override
   Widget build(BuildContext context) {
     final loc = AppLocalizations.of(context)!;
+    final scheme = Theme.of(context).colorScheme;
+    final check = widget.lockedMask != null &&
+            widget.controller.text.trim().isEmpty
+        ? null
+        : _check();
+    final hints = check == null || check.ok
+        ? const <IdHint>[]
+        : IdNumberCheck.diagnose(
+            widget.country,
+            check.kind,
+            widget.controller.text,
+          );
+    final duplicate = check == null
+        ? null
+        : IdNumberDuplicates.otherWith(
+            widget.controller.text,
+            exceptId: widget.recordId,
+          );
+    final kind = IdNumberCheck.kindForGroup(
+      widget.group,
+      widget.controller.text,
+    );
+    final cross = kind == null || widget.controller.text.trim().isEmpty
+        ? const <IdCrossNote>[]
+        : IdCrossCheck.run(
+            country: widget.country,
+            kind: kind,
+            number: widget.controller.text,
+            facts: widget.facts,
+            expiry: widget.expiry,
+          );
+    final notes = <String>[
+      for (final hint in hints) IdNumberMessage.hint(loc, hint),
+      for (final note in cross)
+        IdNumberMessage.cross(loc, note, widget.country),
+      if (duplicate != null)
+        loc.idHintDuplicate(
+          duplicate.locked ? loc.assistantLockedRecord : duplicate.name,
+        ),
+    ];
+    String? fixed;
+    for (final hint in hints) {
+      if (hint.fixed != null) {
+        fixed = hint.fixed;
+        break;
+      }
+    }
+    final field = _field(context, loc, scheme, check);
+    if (notes.isEmpty) return field;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        field,
+        for (final note in notes)
+          Padding(
+            padding: const EdgeInsetsDirectional.fromSTEB(14, 0, 14, 4),
+            child: Text(
+              note,
+              style: TextStyle(fontSize: 12.5, color: scheme.onSurfaceVariant),
+            ),
+          ),
+        if (fixed != null && widget.enabled)
+          Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: TextButton.icon(
+              onPressed: () => _use(fixed!),
+              icon: const Icon(Icons.auto_fix_high_rounded, size: 18),
+              label: Text(loc.idHintUse),
+            ),
+          ),
+      ],
+    );
+  }
+
+  Widget _field(
+    BuildContext context,
+    AppLocalizations loc,
+    ColorScheme scheme,
+    IdCheckResult? check,
+  ) {
     return Padding(
       padding: const EdgeInsets.only(top: 6, bottom: 4),
       child: TextField(
         controller: widget.controller,
+        focusNode: _focus,
         enabled: widget.enabled,
         obscureText: !_shown,
         obscuringCharacter: '•',
@@ -324,12 +480,19 @@ class _EditorReferenceFieldState extends State<EditorReferenceField> {
               prefixIcon: const Icon(Icons.tag_rounded),
             ).copyWith(
               hintText: loc.detailsReferenceHint,
-              helperText:
-                  widget.lockedMask != null &&
-                      widget.controller.text.trim().isEmpty
+              helperText: check != null
+                  ? IdNumberMessage.of(loc, check)
+                  : widget.lockedMask != null &&
+                        widget.controller.text.trim().isEmpty
                   ? loc.detailsReferenceLocked(widget.lockedMask!)
                   : loc.detailsReferenceHelper,
-              helperMaxLines: 3,
+              helperStyle: check == null
+                  ? null
+                  : TextStyle(
+                      color: check.ok ? scheme.primary : scheme.error,
+                      fontWeight: FontWeight.w600,
+                    ),
+              helperMaxLines: 4,
               counterText: '',
               suffixIcon: IconButton(
                 tooltip: _shown

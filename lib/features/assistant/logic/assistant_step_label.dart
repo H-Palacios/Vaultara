@@ -95,6 +95,8 @@ class AssistantStepLabel {
         return loc.assistantStepSecurity;
       case 'scam':
         return loc.assistantStepScam;
+      case 'id_check':
+        return loc.assistantStepIdCheck;
     }
     return loc.assistantStepThinking;
   }

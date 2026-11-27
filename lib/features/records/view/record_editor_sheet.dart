@@ -1,3 +1,4 @@
+import 'package:vaultara/features/records/logic/id_cross_check.dart';
 import 'package:vaultara/features/pets/data/pet.dart';
 import 'package:vaultara/features/pets/data/pet_repository.dart';
 import 'package:vaultara/features/pets/logic/pet_document_groups.dart';
@@ -195,6 +196,10 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
   late final TextEditingController expiryController;
 
   DateTime? expiryDate;
+
+  /// What the last scan read from the document's own lines, for checking
+  /// the number against it. Stays on the phone.
+  IdDocumentFacts? scannedFacts;
   String? selectedCategoryKey;
   String? selectedSubcategory;
   int? reminderOffsetDays;
@@ -825,9 +830,23 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
       }
     }
 
+    scannedFacts = IdDocumentFacts(
+      birthDate: r.birthDate,
+      personalNumber: r.personalNumber,
+      documentNumber: r.documentNumber,
+      vin: r.vin,
+    );
+
     // The document number goes in the reference number field, which is
     // hidden on screen and never sent to Ask Vaultara, not in the notes.
-    final String? number = TrackedItem.cleanReference(r.documentNumber);
+    final String? number = TrackedItem.cleanReference(
+      IdCrossCheck.preferredNumber(
+        group: r.groupKey,
+        country: Countries.fromMrz(r.issuingCountry),
+        documentNumber: r.documentNumber,
+        personalNumber: r.personalNumber,
+      ),
+    );
     if (number != null && referenceController.text.trim().isEmpty) {
       referenceController.text = number;
       appliedNumber = number;
@@ -1799,6 +1818,11 @@ class _RecordEditorSheetState extends State<_RecordEditorSheet> {
           enabled: !isSaving,
           onChanged: (_) => setState(() {}),
           lockedMask: widget.initialInput?.referenceLockedMask,
+          group: selectedSubcategory,
+          country: countryKind == null ? null : issuedIn,
+          recordId: widget.editedRecord?.id,
+          facts: scannedFacts,
+          expiry: expiryDate,
         ),
         const SizedBox(height: 10),
       ],

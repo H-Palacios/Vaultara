@@ -40,6 +40,29 @@ class AssistantNumberMask {
     return out;
   }
 
+  // Up to 3 letters, then digits that may be split by single spaces or
+  // dashes, then maybe a letter: A12345678, 800101 5009 087, 131052-308T.
+  static final RegExp _spaced = RegExp(
+    r'(?<![A-Za-z0-9])[A-Za-z]{0,3}\d(?:[ \-]?\d){4,28}[A-Za-z]?(?![A-Za-z0-9])',
+  );
+
+  /// The longest ID-like number in [text], with its spaces and dashes taken
+  /// out ("800101 5009 087" is one number), or null. Dates are left out.
+  static String? longestNumber(String text) {
+    String? best;
+    for (final match in _spaced.allMatches(text)) {
+      final value = match.group(0)!.replaceAll(RegExp(r'[ \-]'), '');
+      if (_digit.allMatches(value).length < minDigits) continue;
+      if (value.length < minLength - 1) continue;
+      if (RegExp(r'^\d{4}\d{2}\d{2}$').hasMatch(value) &&
+          RegExp(r'\d{4}-\d{2}-\d{2}').hasMatch(match.group(0)!)) {
+        continue;
+      }
+      if (best == null || value.length > best.length) best = value;
+    }
+    return best;
+  }
+
   /// The text with every long number shown as ••••6789.
   static String hide(String text) {
     final numbers = find(text);

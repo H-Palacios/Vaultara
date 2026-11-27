@@ -1,0 +1,893 @@
+// Made from functions/id-number-rules.json by the v22 update script. The
+// server and the app read the same rules; functions/test/assistant-v22.test.js
+// checks that this copy matches. Change the JSON file, then copy it here.
+const String idNumberRulesJson = r'''
+{
+ "AE": {
+  "id": {
+   "example": "784-1980-1234567-1",
+   "lengths": [
+    15
+   ],
+   "pattern": "^784\\d{12}$"
+  },
+  "name": "United Arab Emirates"
+ },
+ "AR": {
+  "id": {
+   "example": "12345678",
+   "lengths": [
+    7,
+    8
+   ]
+  },
+  "name": "Argentina"
+ },
+ "AU": {
+  "name": "Australia",
+  "passport": {
+   "example": "PA1234567",
+   "lengths": [
+    8,
+    9
+   ],
+   "pattern": "^[A-Z]{1,2}\\d{7}$"
+  },
+  "validity": {
+   "passport": {
+    "childUnder": 16,
+    "childYears": 5,
+    "years": 10
+   }
+  }
+ },
+ "BA": {
+  "id": {
+   "cardNumber": true,
+   "check": "jmbg",
+   "date": {
+    "at": 0,
+    "format": "DDMMYYY"
+   },
+   "example": "0101006500006",
+   "lengths": [
+    13
+   ]
+  },
+  "name": "Bosnia and Herzegovina"
+ },
+ "BD": {
+  "id": {
+   "example": "1234567890",
+   "lengths": [
+    10,
+    13,
+    17
+   ]
+  },
+  "name": "Bangladesh"
+ },
+ "BE": {
+  "id": {
+   "cardNumber": true,
+   "check": "be_nn",
+   "example": "93.05.18-223.61",
+   "lengths": [
+    11
+   ]
+  },
+  "name": "Belgium"
+ },
+ "BG": {
+  "id": {
+   "cardNumber": true,
+   "check": "bg_egn",
+   "example": "7523169263",
+   "lengths": [
+    10
+   ]
+  },
+  "name": "Bulgaria"
+ },
+ "BR": {
+  "id": {
+   "cardNumber": true,
+   "check": "br_cpf",
+   "example": "529.982.247-25",
+   "lengths": [
+    11
+   ]
+  },
+  "name": "Brazil"
+ },
+ "BW": {
+  "id": {
+   "example": "123412345",
+   "lengths": [
+    9
+   ]
+  },
+  "name": "Botswana"
+ },
+ "CA": {
+  "name": "Canada",
+  "passport": {
+   "example": "AB123456",
+   "lengths": [
+    8
+   ],
+   "pattern": "^[A-Z]{2}\\d{6}$"
+  },
+  "validity": {
+   "passport": {
+    "childUnder": 16,
+    "childYears": 5,
+    "years": 10
+   }
+  }
+ },
+ "CH": {
+  "id": {
+   "cardNumber": true,
+   "check": "ch_ahv",
+   "example": "756.9217.0769.85",
+   "lengths": [
+    13
+   ],
+   "pattern": "^756\\d{10}$"
+  },
+  "name": "Switzerland"
+ },
+ "CL": {
+  "id": {
+   "cardNumber": true,
+   "check": "cl_rut",
+   "example": "12.345.678-5",
+   "lengths": [
+    8,
+    9
+   ],
+   "pattern": "^\\d{7,8}[0-9K]$"
+  },
+  "name": "Chile"
+ },
+ "CN": {
+  "id": {
+   "check": "cn_resident",
+   "date": {
+    "at": 6,
+    "format": "YYYYMMDD"
+   },
+   "example": "11010519491231002X",
+   "lengths": [
+    18
+   ],
+   "pattern": "^\\d{17}[0-9X]$"
+  },
+  "name": "China"
+ },
+ "CO": {
+  "id": {
+   "example": "1234567890",
+   "lengths": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  "name": "Colombia"
+ },
+ "CZ": {
+  "id": {
+   "cardNumber": true,
+   "check": "cz_rc",
+   "example": "736028/5163",
+   "lengths": [
+    9,
+    10
+   ]
+  },
+  "name": "Czechia"
+ },
+ "DE": {
+  "name": "Germany",
+  "passport": {
+   "example": "C01X00T47",
+   "lengths": [
+    9
+   ],
+   "pattern": "^[CFGHJKLMNPRTVWXYZ0-9]{9}$"
+  },
+  "validity": {
+   "passport": {
+    "childUnder": 24,
+    "childYears": 6,
+    "years": 10
+   }
+  }
+ },
+ "DK": {
+  "id": {
+   "cardNumber": true,
+   "date": {
+    "at": 0,
+    "format": "DDMMYY"
+   },
+   "example": "010180-1234",
+   "lengths": [
+    10
+   ]
+  },
+  "name": "Denmark"
+ },
+ "EE": {
+  "id": {
+   "cardNumber": true,
+   "check": "ee_ik",
+   "date": {
+    "at": 1,
+    "format": "YYMMDD"
+   },
+   "example": "37605030299",
+   "lengths": [
+    11
+   ],
+   "pattern": "^[1-6]\\d{10}$"
+  },
+  "name": "Estonia"
+ },
+ "EG": {
+  "id": {
+   "date": {
+    "at": 1,
+    "format": "YYMMDD"
+   },
+   "example": "29001011234567",
+   "lengths": [
+    14
+   ],
+   "pattern": "^[23]\\d{13}$"
+  },
+  "name": "Egypt"
+ },
+ "ES": {
+  "id": {
+   "check": "es_dni",
+   "example": "12345678Z",
+   "lengths": [
+    9
+   ],
+   "pattern": "^(\\d{8}|[XYZ]\\d{7})[A-Z]$"
+  },
+  "name": "Spain"
+ },
+ "FI": {
+  "id": {
+   "cardNumber": true,
+   "chars": "A-Z0-9+\\-",
+   "check": "fi_hetu",
+   "date": {
+    "at": 0,
+    "format": "DDMMYY"
+   },
+   "example": "131052-308T",
+   "keepDash": true,
+   "lengths": [
+    11
+   ],
+   "pattern": "^\\d{6}[-+A-FU-Y]\\d{3}[0-9A-Y]$"
+  },
+  "name": "Finland"
+ },
+ "FR": {
+  "name": "France",
+  "validity": {
+   "passport": {
+    "childUnder": 18,
+    "childYears": 5,
+    "years": 10
+   }
+  }
+ },
+ "GB": {
+  "licence": {
+   "example": "MORGA753116SM9IJ",
+   "lengths": [
+    16
+   ],
+   "pattern": "^[A-Z9]{5}\\d{6}[A-Z9]{2}\\d[A-Z]{2}$"
+  },
+  "name": "United Kingdom",
+  "passport": {
+   "example": "123456789",
+   "lengths": [
+    9
+   ]
+  },
+  "validity": {
+   "licence": {
+    "years": 10
+   },
+   "passport": {
+    "childUnder": 16,
+    "childYears": 5,
+    "years": 10
+   }
+  }
+ },
+ "GH": {
+  "id": {
+   "example": "GHA-123456789-0",
+   "lengths": [
+    13
+   ],
+   "pattern": "^GHA\\d{10}$"
+  },
+  "name": "Ghana"
+ },
+ "HK": {
+  "id": {
+   "check": "hk_id",
+   "example": "A123456(3)",
+   "lengths": [
+    8,
+    9
+   ],
+   "pattern": "^[A-Z]{1,2}\\d{6}[0-9A]$"
+  },
+  "name": "Hong Kong"
+ },
+ "HR": {
+  "id": {
+   "cardNumber": true,
+   "check": "hr_oib",
+   "example": "69435151530",
+   "lengths": [
+    11
+   ]
+  },
+  "name": "Croatia"
+ },
+ "ID": {
+  "id": {
+   "example": "3171234567890001",
+   "lengths": [
+    16
+   ]
+  },
+  "name": "Indonesia"
+ },
+ "IE": {
+  "name": "Ireland",
+  "validity": {
+   "passport": {
+    "childUnder": 18,
+    "childYears": 5,
+    "years": 10
+   }
+  }
+ },
+ "IL": {
+  "id": {
+   "check": "luhn",
+   "example": "123456782",
+   "lengths": [
+    9
+   ],
+   "pad": true
+  },
+  "name": "Israel"
+ },
+ "IN": {
+  "id": {
+   "check": "verhoeff",
+   "example": "2341 2341 2346",
+   "lengths": [
+    12
+   ],
+   "pattern": "^[2-9]\\d{11}$"
+  },
+  "name": "India",
+  "passport": {
+   "example": "J8369854",
+   "lengths": [
+    8
+   ],
+   "pattern": "^[A-Z]\\d{7}$"
+  },
+  "validity": {
+   "passport": {
+    "childUnder": 18,
+    "childYears": 5,
+    "years": 10
+   }
+  }
+ },
+ "IR": {
+  "id": {
+   "check": "ir_code",
+   "example": "0499370899",
+   "lengths": [
+    10
+   ]
+  },
+  "name": "Iran"
+ },
+ "IS": {
+  "id": {
+   "cardNumber": true,
+   "check": "is_kt",
+   "date": {
+    "at": 0,
+    "format": "DDMMYY"
+   },
+   "example": "120174-3399",
+   "lengths": [
+    10
+   ]
+  },
+  "name": "Iceland"
+ },
+ "IT": {
+  "id": {
+   "cardNumber": true,
+   "example": "RSSMRA80A01H501U",
+   "lengths": [
+    16
+   ],
+   "pattern": "^[A-Z]{6}[0-9LMNPQRSTUV]{2}[ABCDEHLMPRST][0-9LMNPQRSTUV]{2}[A-Z][0-9LMNPQRSTUV]{3}[A-Z]$"
+  },
+  "name": "Italy"
+ },
+ "JP": {
+  "id": {
+   "check": "jp_mynumber",
+   "example": "123456789018",
+   "lengths": [
+    12
+   ]
+  },
+  "name": "Japan"
+ },
+ "KE": {
+  "id": {
+   "example": "12345678",
+   "lengths": [
+    7,
+    8
+   ]
+  },
+  "name": "Kenya"
+ },
+ "KR": {
+  "id": {
+   "date": {
+    "at": 0,
+    "format": "YYMMDD"
+   },
+   "example": "800101-1234567",
+   "lengths": [
+    13
+   ]
+  },
+  "name": "South Korea"
+ },
+ "KZ": {
+  "id": {
+   "date": {
+    "at": 0,
+    "format": "YYMMDD"
+   },
+   "example": "800101300123",
+   "lengths": [
+    12
+   ]
+  },
+  "name": "Kazakhstan"
+ },
+ "LK": {
+  "id": {
+   "example": "199012345678",
+   "lengths": [
+    10,
+    12
+   ],
+   "pattern": "^(\\d{9}[VX]|\\d{12})$"
+  },
+  "name": "Sri Lanka"
+ },
+ "LT": {
+  "id": {
+   "cardNumber": true,
+   "check": "ee_ik",
+   "date": {
+    "at": 1,
+    "format": "YYMMDD"
+   },
+   "example": "38703181745",
+   "lengths": [
+    11
+   ],
+   "pattern": "^[1-6]\\d{10}$"
+  },
+  "name": "Lithuania"
+ },
+ "LV": {
+  "id": {
+   "cardNumber": true,
+   "example": "321234-56789",
+   "lengths": [
+    11
+   ]
+  },
+  "name": "Latvia"
+ },
+ "MA": {
+  "id": {
+   "example": "AB123456",
+   "lengths": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "pattern": "^[A-Z]{1,2}\\d{1,6}$"
+  },
+  "name": "Morocco"
+ },
+ "ME": {
+  "id": {
+   "cardNumber": true,
+   "check": "jmbg",
+   "date": {
+    "at": 0,
+    "format": "DDMMYYY"
+   },
+   "example": "0101006500006",
+   "lengths": [
+    13
+   ]
+  },
+  "name": "Montenegro"
+ },
+ "MK": {
+  "id": {
+   "cardNumber": true,
+   "check": "jmbg",
+   "date": {
+    "at": 0,
+    "format": "DDMMYYY"
+   },
+   "example": "0101006500006",
+   "lengths": [
+    13
+   ]
+  },
+  "name": "North Macedonia"
+ },
+ "MX": {
+  "id": {
+   "date": {
+    "at": 4,
+    "format": "YYMMDD"
+   },
+   "example": "GOMC800101HDFRRR09",
+   "lengths": [
+    18
+   ],
+   "pattern": "^[A-Z]{4}\\d{6}[HMX][A-Z]{5}[A-Z0-9]\\d$"
+  },
+  "name": "Mexico"
+ },
+ "MY": {
+  "id": {
+   "date": {
+    "at": 0,
+    "format": "YYMMDD"
+   },
+   "example": "800101-14-5678",
+   "lengths": [
+    12
+   ]
+  },
+  "name": "Malaysia"
+ },
+ "NA": {
+  "id": {
+   "date": {
+    "at": 0,
+    "format": "YYMMDD"
+   },
+   "example": "85010100123",
+   "lengths": [
+    11
+   ]
+  },
+  "name": "Namibia"
+ },
+ "NG": {
+  "id": {
+   "example": "12345678901",
+   "lengths": [
+    11
+   ]
+  },
+  "name": "Nigeria",
+  "passport": {
+   "example": "A12345678",
+   "lengths": [
+    9
+   ],
+   "pattern": "^[A-Z]\\d{8}$"
+  },
+  "validity": {
+   "passport": {
+    "years": 10
+   }
+  }
+ },
+ "NL": {
+  "id": {
+   "cardNumber": true,
+   "check": "nl_bsn",
+   "example": "111222333",
+   "lengths": [
+    9
+   ]
+  },
+  "name": "Netherlands"
+ },
+ "NO": {
+  "id": {
+   "cardNumber": true,
+   "check": "no_fnr",
+   "example": "01010100131",
+   "lengths": [
+    11
+   ]
+  },
+  "name": "Norway"
+ },
+ "NZ": {
+  "name": "New Zealand",
+  "validity": {
+   "passport": {
+    "childUnder": 16,
+    "childYears": 5,
+    "years": 10
+   }
+  }
+ },
+ "PE": {
+  "id": {
+   "example": "12345678",
+   "lengths": [
+    8
+   ]
+  },
+  "name": "Peru"
+ },
+ "PH": {
+  "id": {
+   "example": "1234-5678-9012",
+   "lengths": [
+    12,
+    16
+   ]
+  },
+  "name": "Philippines"
+ },
+ "PK": {
+  "id": {
+   "example": "12345-1234567-1",
+   "lengths": [
+    13
+   ]
+  },
+  "name": "Pakistan"
+ },
+ "PL": {
+  "id": {
+   "cardNumber": true,
+   "check": "pl_pesel",
+   "example": "44051401359",
+   "lengths": [
+    11
+   ]
+  },
+  "name": "Poland"
+ },
+ "RO": {
+  "id": {
+   "cardNumber": true,
+   "check": "ro_cnp",
+   "date": {
+    "at": 1,
+    "format": "YYMMDD"
+   },
+   "example": "1800101221144",
+   "lengths": [
+    13
+   ],
+   "pattern": "^[1-9]\\d{12}$"
+  },
+  "name": "Romania"
+ },
+ "RS": {
+  "id": {
+   "cardNumber": true,
+   "check": "jmbg",
+   "date": {
+    "at": 0,
+    "format": "DDMMYYY"
+   },
+   "example": "0101006500006",
+   "lengths": [
+    13
+   ]
+  },
+  "name": "Serbia"
+ },
+ "RU": {
+  "id": {
+   "example": "4510 123456",
+   "lengths": [
+    10
+   ]
+  },
+  "name": "Russia"
+ },
+ "SA": {
+  "id": {
+   "example": "1012345678",
+   "lengths": [
+    10
+   ],
+   "pattern": "^[12]\\d{9}$"
+  },
+  "name": "Saudi Arabia"
+ },
+ "SE": {
+  "id": {
+   "cardNumber": true,
+   "check": "se_pnr",
+   "example": "811228-9874",
+   "lengths": [
+    10,
+    12
+   ]
+  },
+  "name": "Sweden"
+ },
+ "SG": {
+  "id": {
+   "example": "S1234567D",
+   "lengths": [
+    9
+   ],
+   "pattern": "^[STFGM]\\d{7}[A-Z]$"
+  },
+  "name": "Singapore"
+ },
+ "SI": {
+  "id": {
+   "cardNumber": true,
+   "check": "jmbg",
+   "date": {
+    "at": 0,
+    "format": "DDMMYYY"
+   },
+   "example": "0101006500006",
+   "lengths": [
+    13
+   ]
+  },
+  "name": "Slovenia"
+ },
+ "SK": {
+  "id": {
+   "cardNumber": true,
+   "check": "cz_rc",
+   "example": "736028/5163",
+   "lengths": [
+    9,
+    10
+   ]
+  },
+  "name": "Slovakia"
+ },
+ "TH": {
+  "id": {
+   "check": "th_id",
+   "example": "1234567890121",
+   "lengths": [
+    13
+   ]
+  },
+  "name": "Thailand"
+ },
+ "TR": {
+  "id": {
+   "cardNumber": true,
+   "check": "tr_tc",
+   "example": "10000000146",
+   "lengths": [
+    11
+   ]
+  },
+  "name": "Turkey"
+ },
+ "TW": {
+  "id": {
+   "example": "A123456789",
+   "lengths": [
+    10
+   ],
+   "pattern": "^[A-Z][1289]\\d{8}$"
+  },
+  "name": "Taiwan"
+ },
+ "US": {
+  "name": "United States",
+  "passport": {
+   "example": "A12345678",
+   "lengths": [
+    9
+   ],
+   "pattern": "^[A-Z0-9]{9}$"
+  },
+  "validity": {
+   "passport": {
+    "childUnder": 16,
+    "childYears": 5,
+    "years": 10
+   }
+  }
+ },
+ "VN": {
+  "id": {
+   "example": "001080012345",
+   "lengths": [
+    12
+   ]
+  },
+  "name": "Vietnam"
+ },
+ "ZA": {
+  "id": {
+   "check": "za",
+   "date": {
+    "at": 0,
+    "format": "YYMMDD"
+   },
+   "example": "8001015009087",
+   "lengths": [
+    13
+   ]
+  },
+  "name": "South Africa",
+  "passport": {
+   "example": "A01234567",
+   "lengths": [
+    9
+   ],
+   "pattern": "^([A-Z]\\d{8}|\\d{9})$"
+  },
+  "validity": {
+   "licence": {
+    "years": 5
+   },
+   "passport": {
+    "childUnder": 16,
+    "childYears": 5,
+    "years": 10
+   }
+  }
+ }
+}
+''';

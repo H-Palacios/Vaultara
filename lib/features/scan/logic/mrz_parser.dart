@@ -18,6 +18,10 @@ class MrzResult {
   final String? issuingCountry;
   final String? nationality;
 
+  /// The optional data field: on South African passports and smart ID
+  /// cards, the holder's ID number. Null when empty.
+  final String? personalNumber;
+
   const MrzResult({
     required this.format,
     required this.documentType,
@@ -33,6 +37,7 @@ class MrzResult {
     required this.givenNames,
     required this.issuingCountry,
     required this.nationality,
+    this.personalNumber,
   });
 
   bool get hasName => surname.isNotEmpty || givenNames.isNotEmpty;
@@ -307,6 +312,7 @@ class MrzParser {
       givenNames: names.given,
       issuingCountry: l1 == null ? null : countryCode(l1.substring(2, 5)),
       nationality: countryCode(l2.substring(10, 13)),
+      personalNumber: length == 44 ? optionalData(l2.substring(28, 42)) : null,
     );
   }
 
@@ -386,6 +392,9 @@ class MrzParser {
       givenNames: names.given,
       issuingCountry: countryCode(l1.substring(2, 5)),
       nationality: countryCode(l2.substring(15, 18)),
+      personalNumber:
+          optionalData(l1.substring(15, 30)) ??
+          optionalData(l2.substring(18, 29)),
     );
   }
 
@@ -396,6 +405,15 @@ class MrzParser {
         l2.substring(18, 29);
     final int expected = checkValue(fixDigits(l2.substring(29, 30)));
     return expected >= 0 && checkDigit(composite) == expected;
+  }
+
+  /// An optional data field without its filler, or null when empty or
+  /// too short to be a number.
+  static String? optionalData(String field) {
+    final value = field.replaceAll('<', '').trim();
+    if (value.length < 6) return null;
+    if (!RegExp(r'^[A-Z0-9]+$').hasMatch(value)) return null;
+    return value;
   }
 
   static MrzDocumentType typeForCode(String code) {

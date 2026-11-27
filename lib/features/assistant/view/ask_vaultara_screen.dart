@@ -56,9 +56,12 @@ import 'package:vaultara/features/assistant/logic/assistant_chat_hooks.dart';
 import 'package:vaultara/features/assistant/logic/assistant_chat_safety.dart';
 import 'package:vaultara/features/assistant/logic/assistant_number_mask.dart';
 import 'package:vaultara/features/assistant/logic/assistant_secret_guard.dart';
+import 'package:vaultara/features/assistant/logic/assistant_spoken_digits.dart';
 import 'package:vaultara/features/assistant/services/assistant_chat_privacy.dart';
 import 'package:vaultara/features/assistant/services/assistant_security_snapshot.dart';
 import 'package:vaultara/features/security/logic/identity_gate.dart';
+import 'package:vaultara/features/records/logic/id_cross_check.dart';
+import 'package:vaultara/features/travel/data/countries.dart';
 
 Future<void> openAskVaultara(
   BuildContext context, {
@@ -490,6 +493,11 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
       return null;
     }
 
+    // A number the user types stays on this phone too, so a fix card can
+    // change part of it and the next record can take it.
+    final typedNumber = AssistantNumberMask.longestNumber(trimmed);
+    if (typedNumber != null) AssistantPhotoDraft.keepTyped(typedNumber);
+
     final message = AssistantMessage(
       role: AssistantRole.user,
       text: AssistantService.clip(trimmed),
@@ -683,7 +691,21 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     // hears that one was read, so it can say it goes on the record.
     AssistantPhotoDraft.keep(
       photo: outcome.hasImage ? outcome.imagePath : null,
-      number: result.documentNumber,
+      number: IdCrossCheck.preferredNumber(
+        group: result.groupKey,
+        country: Countries.fromMrz(result.issuingCountry),
+        documentNumber: result.documentNumber,
+        personalNumber: result.personalNumber,
+      ),
+      group: result.groupKey,
+      country: Countries.fromMrz(result.issuingCountry),
+      facts: IdDocumentFacts(
+        documentNumber: result.documentNumber,
+        birthDate: result.birthDate,
+        personalNumber: result.personalNumber,
+        vin: result.vin,
+      ),
+      expiry: result.expiryDate,
     );
     final lines = <String>['[Photo]'];
     if (result.groupKey != null) lines.add('Kind: ${result.groupKey}');
@@ -700,6 +722,8 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
     }
     if (AssistantPhotoDraft.number != null) {
       lines.add('Number: read, kept on the phone');
+      final check = AssistantPhotoDraft.checkLine;
+      if (check != null) lines.add(check);
     }
     if (text.isNotEmpty) {
       lines.add(
@@ -850,11 +874,16 @@ class _AskVaultaraScreenState extends State<AskVaultaraScreen> {
   }
 
   Future<void> _talkSend(
-    String text, {
+    String heard, {
     String? prompt,
     required int token,
   }) async {
     if (!_talkLive(token)) return;
+    // "Eight oh oh one, double five" said aloud becomes digits.
+    final text = AssistantSpokenDigits.normalize(
+      heard,
+      Localizations.localeOf(context).languageCode,
+    );
     final warning = _secretWarning(text);
     if (warning != null) {
       // Not shown as heard either: the caption would put it on screen.

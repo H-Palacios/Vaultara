@@ -21,6 +21,7 @@ import 'package:vaultara/features/assistant/logic/assistant_navigator.dart';
 import 'package:vaultara/features/assistant/logic/assistant_photo_draft.dart';
 import 'package:vaultara/features/assistant/logic/assistant_v20_launcher.dart';
 import 'package:vaultara/features/assistant/logic/assistant_v21_launcher.dart';
+import 'package:vaultara/features/assistant/logic/assistant_v22_launcher.dart';
 import 'package:vaultara/features/assistant/logic/assistant_proof_pack_action.dart';
 import 'package:vaultara/features/assistant/logic/assistant_remind_action.dart';
 import 'package:vaultara/features/assistant/logic/assistant_remove_action.dart';
@@ -320,6 +321,12 @@ class AssistantActionLauncher {
         case AssistantActionType.renewalGuide:
         case AssistantActionType.chatPrivacy:
           return await AssistantV21Launcher.run(
+            context,
+            action,
+            onUndo: (undo) => slot.undo = undo,
+          );
+        case AssistantActionType.numberFix:
+          return await AssistantV22Launcher.run(
             context,
             action,
             onUndo: (undo) => slot.undo = undo,
