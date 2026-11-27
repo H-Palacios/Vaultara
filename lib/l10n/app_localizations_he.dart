@@ -10875,4 +10875,159 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'בודק את ההודעה';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'קצר מדי למספר זהות מהמדינה הזו ($country): $count מתוך $expected. בדוק אם חסרה ספרה.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'ארוך מדי למספר זהות מהמדינה הזו ($country): $count מתוך $expected. בדוק אם יש ספרה מיותרת.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'קצר מדי למספר דרכון מהמדינה הזו ($country): $count מתוך $expected. בדוק אם חסרה ספרה או אות.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'ארוך מדי למספר דרכון מהמדינה הזו ($country): $count מתוך $expected. בדוק אם יש ספרה או אות מיותרת.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'זה לא נראה כמו מספר מהמדינה הזו ($country). הוא אמור להיראות כך: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'זה לא נראה כמו מספר מהמדינה הזו ($country). בדוק את האותיות והספרות.';
+  }
+
+  @override
+  String get idCheckDigit => 'ספרת הביקורת לא מתאימה, כך שאולי ספרה אחת שגויה או ששתיים התחלפו.';
+
+  @override
+  String get idCheckDate => 'תאריך הלידה במספר הזה אינו תאריך אמיתי. בדוק את הספרות האלה.';
+
+  @override
+  String get idCheckCardNote => 'אם זה המספר של הכרטיס עצמו ולא מספר הזהות, אפשר להתעלם מזה.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'זה מתאים לתבנית המספרים של המדינה הזו ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'בודק את המספר';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'החלפת הספרות $first ו-$second הופכת אותו לתקין.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'הוספת $digit כספרה $position הופכת אותו לתקין.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'הסרת ספרה $position הופכת אותו לתקין.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" הוא כנראה \"$fixed\" שנקרא לא נכון. עם השינוי הזה הוא תקין.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'הוא תקין למדינה אחרת: $countries. בדוק את המדינה ברשומה.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'המספר הזה כבר מופיע ברשומה אחרת: $record.';
+  }
+
+  @override
+  String get idHintUse => 'השתמש בתיקון הזה';
+
+  @override
+  String get assistantNumberFixTitle => 'תיקון המספר';
+
+  @override
+  String get assistantNumberFixNothing => 'אין בצ\'אט הזה מספר לתקן.';
+
+  @override
+  String get assistantNumberFixNotFound => 'החלק הזה לא נמצא במספר, או שהוא מופיע יותר מפעם אחת. תאר אחרת את הספרות שסביבו.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'אף ספרה אחת לא מתאימה שם. אמור איזו ספרה חסרה.';
+
+  @override
+  String get assistantNumberFixNote => 'המספר נשאר בטלפון הזה.';
+
+  @override
+  String get assistantNumberFixDone => 'המספר עודכן.';
+
+  @override
+  String get assistantNumberFixChange => 'שינוי';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'מספר הזהות בשורות הקוד של המסמך שונה. הוא מסתיים ב-$last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'המספר בשורות הקוד של המסמך שונה. הוא מסתיים ב-$last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'מספר השלדה (VIN) במדבקת הרישוי שונה. הוא מסתיים ב-$last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'תאריך הלידה במספר הזה אינו זה שבמסמך ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'מסמכים כאלה מהמדינה הזו ($country) תקפים $years שנים לכל היותר. בדוק את תאריך התפוגה.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'לילד, המסמך הזה תקף $years שנים. בדוק את תאריך התפוגה.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'למספר שלדה (VIN) יש 17 תווים. לזה יש $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'במספר שלדה יש רק אותיות וספרות, ואף פעם לא I, O או Q.';
+
+  @override
+  String get idCheckVinDigit => 'ספרת הביקורת (התו ה-9) לא מתאימה. למכוניות לצפון אמריקה תמיד יש אותה; לאחרות אולי לא.';
+
+  @override
+  String get idCheckVinOk => 'זה מתאים לתבנית מספר השלדה ולספרת הביקורת שלו.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'קצר מדי למספר רישיון נהיגה מהמדינה הזו ($country): $count מתוך $expected. בדוק אם חסרה ספרה או אות.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'ארוך מדי למספר רישיון נהיגה מהמדינה הזו ($country): $count מתוך $expected. בדוק אם יש ספרה או אות מיותרת.';
+  }
 }

@@ -10810,4 +10810,159 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Се проверува пораката';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Премногу краток за матичен број од оваа земја ($country): $count од $expected. Проверете дали недостасува цифра.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Премногу долг за матичен број од оваа земја ($country): $count од $expected. Проверете дали има вишок цифра.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Премногу краток за број на пасош од оваа земја ($country): $count од $expected. Проверете дали недостасува цифра или буква.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Премногу долг за број на пасош од оваа земја ($country): $count од $expected. Проверете дали има вишок цифра или буква.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Ова не личи на број од оваа земја ($country). Треба да изгледа вака: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Ова не личи на број од оваа земја ($country). Проверете ги буквите и цифрите.';
+  }
+
+  @override
+  String get idCheckDigit => 'Контролната цифра не се совпаѓа, па можеби некоја цифра е погрешна или две се заменети.';
+
+  @override
+  String get idCheckDate => 'Датумот на раѓање во овој број не е вистински датум. Проверете ги тие цифри.';
+
+  @override
+  String get idCheckCardNote => 'Ако ова е сопствениот број на картичката, а не матичниот број, можете да го занемарите.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Ова одговара на форматот на броеви од оваа земја ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Се проверува бројот';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Ако ги замените цифрите $first и $second, бројот е валиден.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Ако додадете $digit како цифра $position, бројот е валиден.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Ако ја отстраните цифрата $position, бројот е валиден.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '„$read“ веројатно е погрешно прочитано „$fixed“. Со оваа промена бројот е валиден.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Валиден е за друга земја: $countries. Проверете ја земјата во записот.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Овој број веќе е во друг запис: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Користи ја оваа поправка';
+
+  @override
+  String get assistantNumberFixTitle => 'Поправи го бројот';
+
+  @override
+  String get assistantNumberFixNothing => 'Во овој разговор нема број за поправка.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Тој дел го нема во бројот или се појавува повеќе пати. Опишете ги цифрите околу него поинаку.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Таму не одговара ниту една цифра. Кажете која цифра недостасува.';
+
+  @override
+  String get assistantNumberFixNote => 'Бројот останува на овој телефон.';
+
+  @override
+  String get assistantNumberFixDone => 'Бројот е ажуриран.';
+
+  @override
+  String get assistantNumberFixChange => 'Промена';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Матичниот број во кодните редови на документот е различен. Завршува на $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Бројот во кодните редови на документот е различен. Завршува на $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'VIN на регистрациската налепница е различен. Завршува на $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Датумот на раѓање во овој број не е оној од документот ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Ваквите документи од оваа земја ($country) важат најмногу $years години. Проверете го датумот на истекување.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'За дете овој документ важи $years години. Проверете го датумот на истекување.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN има 17 знаци. Овој има $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN има само букви и цифри и никогаш I, O или Q.';
+
+  @override
+  String get idCheckVinDigit => 'Контролната цифра (9. знак) не се совпаѓа. Возилата за Северна Америка секогаш ја имаат, другите можеби не.';
+
+  @override
+  String get idCheckVinOk => 'Ова одговара на форматот на VIN и неговата контролна цифра.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Премногу краток за број на возачка дозвола од оваа земја ($country): $count од $expected. Проверете дали недостасува цифра или буква.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Премногу долг за број на возачка дозвола од оваа земја ($country): $count од $expected. Проверете дали има вишок цифра или буква.';
+  }
 }

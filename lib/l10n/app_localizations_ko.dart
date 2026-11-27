@@ -10747,4 +10747,159 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get assistantStepScam => '메시지 확인 중';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return '이 나라의 신분증 번호로는 너무 짧습니다($country): $expected 중 $count. 빠진 숫자가 없는지 확인하세요.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return '이 나라의 신분증 번호로는 너무 깁니다($country): $expected 중 $count. 숫자가 하나 더 들어가지 않았는지 확인하세요.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return '이 나라의 여권 번호로는 너무 짧습니다($country): $expected 중 $count. 빠진 숫자나 문자가 없는지 확인하세요.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return '이 나라의 여권 번호로는 너무 깁니다($country): $expected 중 $count. 숫자나 문자가 더 들어가지 않았는지 확인하세요.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return '이 나라의 번호 형식이 아닙니다($country). 이런 모양이어야 합니다: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return '이 나라의 번호 형식이 아닙니다($country). 문자와 숫자를 확인하세요.';
+  }
+
+  @override
+  String get idCheckDigit => '검증 숫자가 맞지 않습니다. 숫자 하나가 틀렸거나 두 개가 바뀌었을 수 있습니다.';
+
+  @override
+  String get idCheckDate => '이 번호의 생년월일이 실제 날짜가 아닙니다. 그 숫자를 확인하세요.';
+
+  @override
+  String get idCheckCardNote => '신분증 번호가 아니라 카드 자체의 번호라면 무시해도 됩니다.';
+
+  @override
+  String idCheckOk(String country) {
+    return '이 나라의 번호 형식과 맞습니다($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => '번호 확인 중';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return '$first번째와 $second번째 숫자를 바꾸면 올바른 번호가 됩니다.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return '$position번째 자리에 $digit을(를) 넣으면 올바른 번호가 됩니다.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return '$position번째 숫자를 지우면 올바른 번호가 됩니다.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\"은(는) \"$fixed\"을(를) 잘못 읽은 것 같습니다. 이렇게 고치면 올바른 번호입니다.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return '다른 나라의 번호로는 올바릅니다: $countries. 기록의 나라를 확인하세요.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return '이 번호는 이미 다른 기록에 있습니다: $record.';
+  }
+
+  @override
+  String get idHintUse => '이 수정 사용';
+
+  @override
+  String get assistantNumberFixTitle => '번호 고치기';
+
+  @override
+  String get assistantNumberFixNothing => '이 채팅에는 고칠 번호가 없습니다.';
+
+  @override
+  String get assistantNumberFixNotFound => '그 부분이 번호에 없거나 두 번 이상 나옵니다. 앞뒤 숫자를 다르게 말해 주세요.';
+
+  @override
+  String get assistantNumberFixNoDigit => '그 자리에 맞는 숫자가 하나로 정해지지 않습니다. 빠진 숫자를 말해 주세요.';
+
+  @override
+  String get assistantNumberFixNote => '번호는 이 휴대폰에만 남습니다.';
+
+  @override
+  String get assistantNumberFixDone => '번호가 업데이트되었습니다.';
+
+  @override
+  String get assistantNumberFixChange => '변경';
+
+  @override
+  String idCrossPersonal(String last) {
+    return '문서 코드 줄의 신분 번호가 다릅니다. 끝자리는 $last입니다.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return '문서 코드 줄의 번호가 다릅니다. 끝자리는 $last입니다.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return '등록 스티커의 VIN이 다릅니다. 끝자리는 $last입니다.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return '이 번호의 생년월일이 문서의 날짜($date)와 다릅니다.';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return '이 나라($country)의 이런 문서는 최대 $years년 유효합니다. 만료일을 확인하세요.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return '어린이의 경우 이 문서는 $years년 유효합니다. 만료일을 확인하세요.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN은 17자입니다. 이것은 $count자입니다.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN은 영문자와 숫자로만 되어 있고 I, O, Q는 쓰지 않습니다.';
+
+  @override
+  String get idCheckVinDigit => '검사 문자(9번째 문자)가 맞지 않습니다. 북미용으로 만든 차에는 항상 있고, 다른 차에는 없을 수도 있습니다.';
+
+  @override
+  String get idCheckVinOk => 'VIN 형식과 검사 문자가 맞습니다.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return '이 나라($country) 운전면허 번호로는 너무 짧습니다: $expected자 중 $count자. 빠진 숫자나 문자가 있는지 확인하세요.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return '이 나라($country) 운전면허 번호로는 너무 깁니다: $expected자 중 $count자. 남는 숫자나 문자가 있는지 확인하세요.';
+  }
 }

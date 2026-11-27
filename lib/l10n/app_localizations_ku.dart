@@ -10811,4 +10811,159 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Peyam tê kontrolkirin';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Ji bo hejmara nasnameyê ya vî welatî pir kurt e ($country): $count ji $expected. Binêre ka reqemek kêm e.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Ji bo hejmara nasnameyê ya vî welatî pir dirêj e ($country): $count ji $expected. Binêre ka reqemek zêde heye.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Ji bo hejmara pasaportê ya vî welatî pir kurt e ($country): $count ji $expected. Binêre ka reqemek an tîpek kêm e.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Ji bo hejmara pasaportê ya vî welatî pir dirêj e ($country): $count ji $expected. Binêre ka reqemek an tîpek zêde heye.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Ev wekî hejmareke ji vî welatî xuya nake ($country). Divê wiha be: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Ev wekî hejmareke ji vî welatî xuya nake ($country). Tîp û reqeman kontrol bike.';
+  }
+
+  @override
+  String get idCheckDigit => 'Reqema kontrolê li hev nayê, ji ber vê yekê dibe ku reqemek xelet be an du reqem cih guhertibin.';
+
+  @override
+  String get idCheckDate => 'Dîroka jidayikbûnê di vê hejmarê de ne dîrokeke rastîn e. Wan reqeman kontrol bike.';
+
+  @override
+  String get idCheckCardNote => 'Heke ev hejmara kartê bi xwe be û ne hejmara nasnameyê, tu dikarî guh nedî vê.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Ev li gorî forma hejmarên vî welatî ye ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Hejmar tê kontrolkirin';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Guhertina cihê reqemên $first û $second wê derbasdar dike.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Zêdekirina $digit wekî reqema $position wê derbasdar dike.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Rakirina reqema $position wê derbasdar dike.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" belkî \"$fixed\"ek e ku xelet hatiye xwendin. Bi vê guhertinê derbasdar e.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Ji bo welatekî din derbasdar e: $countries. Welatê tomarê kontrol bike.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Ev hejmar jixwe di tomareke din de ye: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Vê sererastkirinê bi kar bîne';
+
+  @override
+  String get assistantNumberFixTitle => 'Hejmarê rast bike';
+
+  @override
+  String get assistantNumberFixNothing => 'Di vê sohbetê de hejmareke ku were rastkirin tune.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Ew beş di hejmarê de tune, an ji carekê zêdetir heye. Reqemên li dora wê bi awayekî din bibêje.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Tu reqemeke tenê li wir nayê. Bibêje kîjan reqem kêm e.';
+
+  @override
+  String get assistantNumberFixNote => 'Hejmar li ser vê telefonê dimîne.';
+
+  @override
+  String get assistantNumberFixDone => 'Hejmar hat nûkirin.';
+
+  @override
+  String get assistantNumberFixChange => 'Guhertin';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Hejmara nasnameyê di rêzên kodê yên belgeyê de cuda ye. Bi $last diqede.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Hejmar di rêzên kodê yên belgeyê de cuda ye. Bi $last diqede.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'VIN li ser etîketa destûrê cuda ye. Bi $last diqede.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Dîroka jidayikbûnê di vê hejmarê de ne ya belgeyê ye ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Belgeyên wiha ji vî welatî ($country) herî zêde $years salan derbasdar in. Dîroka qedandinê kontrol bike.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Ji bo zarokekî ev belge $years salan derbasdar e. Dîroka qedandinê kontrol bike.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN 17 tîp in. Ev $count e.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'Di VIN de tenê tîp û reqem hene, qet I, O an Q tune.';
+
+  @override
+  String get idCheckVinDigit => 'Reqema kontrolê (tîpa 9an) li hev nayê. Erebeyên ji bo Amerîkaya Bakur her tim xwedî wê ne; yên din belkî ne.';
+
+  @override
+  String get idCheckVinOk => 'Ev li gorî forma VIN û reqema wê ya kontrolê ye.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Ji bo hejmara ehliyeta ajotinê ya vî welatî pir kurt e ($country): $count ji $expected. Binêre ka reqemek an tîpek kêm e.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Ji bo hejmara ehliyeta ajotinê ya vî welatî pir dirêj e ($country): $count ji $expected. Binêre ka reqemek an tîpek zêde heye.';
+  }
 }

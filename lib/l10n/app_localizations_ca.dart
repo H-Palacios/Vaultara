@@ -10816,4 +10816,159 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'S\'està revisant el missatge';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Massa curt per a un número d\'identitat d\'aquest país ($country): $count de $expected. Comprova si hi falta una xifra.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Massa llarg per a un número d\'identitat d\'aquest país ($country): $count de $expected. Comprova si hi sobra una xifra.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Massa curt per a un número de passaport d\'aquest país ($country): $count de $expected. Comprova si hi falta una xifra o una lletra.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Massa llarg per a un número de passaport d\'aquest país ($country): $count de $expected. Comprova si hi sobra una xifra o una lletra.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'No sembla un número d\'aquest país ($country). Hauria de ser així: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'No sembla un número d\'aquest país ($country). Comprova les lletres i les xifres.';
+  }
+
+  @override
+  String get idCheckDigit => 'La xifra de control no coincideix: potser una xifra és incorrecta o dues estan intercanviades.';
+
+  @override
+  String get idCheckDate => 'La data de naixement d\'aquest número no és una data real. Comprova aquestes xifres.';
+
+  @override
+  String get idCheckCardNote => 'Si és el número propi de la targeta i no el número d\'identitat, ho pots ignorar.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Coincideix amb el format de número d\'aquest país ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'S\'està comprovant el número';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Si intercanvies les xifres $first i $second, és vàlid.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Si afegeixes $digit com a xifra $position, és vàlid.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Si treus la xifra $position, és vàlid.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '«$read» probablement és un «$fixed» mal llegit. Amb aquest canvi és vàlid.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'És vàlid per a un altre país: $countries. Comprova el país del registre.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Aquest número ja és en un altre registre: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Fes servir aquesta correcció';
+
+  @override
+  String get assistantNumberFixTitle => 'Corregeix el número';
+
+  @override
+  String get assistantNumberFixNothing => 'No hi ha cap número en aquest xat per corregir.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Aquesta part no és al número, o hi surt més d\'una vegada. Digues d\'una altra manera les xifres del voltant.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Cap xifra sola no hi encaixa. Digues quina xifra falta.';
+
+  @override
+  String get assistantNumberFixNote => 'El número es queda en aquest telèfon.';
+
+  @override
+  String get assistantNumberFixDone => 'Número actualitzat.';
+
+  @override
+  String get assistantNumberFixChange => 'Canvi';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'El número d\'identitat de les línies de codi del document és diferent. Acaba en $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'El número de les línies de codi del document és diferent. Acaba en $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'El VIN de l\'adhesiu de matriculació és diferent. Acaba en $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'La data de naixement d\'aquest número no és la del document ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Aquests documents d\'aquest país ($country) duren com a màxim $years anys. Comprova la data de caducitat.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Per a un infant, aquest document dura $years anys. Comprova la data de caducitat.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'Un VIN té 17 caràcters. Aquest en té $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'Un VIN només té lletres i xifres, i mai I, O ni Q.';
+
+  @override
+  String get idCheckVinDigit => 'La xifra de control (el 9è caràcter) no coincideix. Els cotxes fets per a l\'Amèrica del Nord sempre en tenen; els altres potser no.';
+
+  @override
+  String get idCheckVinOk => 'Coincideix amb el format VIN i la seva xifra de control.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Massa curt per a un número de permís de conduir d\'aquest país ($country): $count de $expected. Comprova si hi falta una xifra o una lletra.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Massa llarg per a un número de permís de conduir d\'aquest país ($country): $count de $expected. Comprova si hi sobra una xifra o una lletra.';
+  }
 }

@@ -18516,6 +18516,228 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Checking the message'**
   String get assistantStepScam;
+
+  /// Record form, under the number field of an ID card: the number is shorter than the country's ID numbers. {country} is the country name in English; {count} is how many characters were typed; {expected} is the length the country uses, such as 13 or 7-8.
+  ///
+  /// In en, this message translates to:
+  /// **'Too short for an ID number from this country ({country}): {count} of {expected}. Check for a missing digit.'**
+  String idCheckShortId(String country, String count, String expected);
+
+  /// Record form, under the number field of an ID card: the number is longer than the country's ID numbers. Placeholders as idCheckShortId.
+  ///
+  /// In en, this message translates to:
+  /// **'Too long for an ID number from this country ({country}): {count} of {expected}. Check for an extra digit.'**
+  String idCheckLongId(String country, String count, String expected);
+
+  /// Record form, under the number field of a passport: the number is shorter than the country's passport numbers. Placeholders as idCheckShortId.
+  ///
+  /// In en, this message translates to:
+  /// **'Too short for a passport number from this country ({country}): {count} of {expected}. Check for a missing digit or letter.'**
+  String idCheckShortPassport(String country, String count, String expected);
+
+  /// Record form, under the number field of a passport: the number is longer than the country's passport numbers. Placeholders as idCheckShortId.
+  ///
+  /// In en, this message translates to:
+  /// **'Too long for a passport number from this country ({country}): {count} of {expected}. Check for an extra digit or letter.'**
+  String idCheckLongPassport(String country, String count, String expected);
+
+  /// Record form: the number has the wrong mix of letters and digits for the country. {example} is a made-up number in the right format.
+  ///
+  /// In en, this message translates to:
+  /// **'This doesn\'t look like a number from this country ({country}). It should look like {example}.'**
+  String idCheckFormat(String country, String example);
+
+  /// Record form: the number has the wrong mix of letters and digits for the country, when there is no example to show.
+  ///
+  /// In en, this message translates to:
+  /// **'This doesn\'t look like a number from this country ({country}). Check the letters and digits.'**
+  String idCheckFormatNoExample(String country);
+
+  /// Record form: the ID number fails its check digit.
+  ///
+  /// In en, this message translates to:
+  /// **'The check digit doesn\'t match, so a digit may be wrong or two may be swapped.'**
+  String get idCheckDigit;
+
+  /// Record form: the birth date written inside the ID number is not a real date.
+  ///
+  /// In en, this message translates to:
+  /// **'The birth date in this number isn\'t a real date. Check those digits.'**
+  String get idCheckDate;
+
+  /// Added after an ID number problem, for countries whose ID card also has its own card number.
+  ///
+  /// In en, this message translates to:
+  /// **'If this is the card\'s own number, not the ID number, you can ignore this.'**
+  String get idCheckCardNote;
+
+  /// Record form, under the number field: the number matches the country's format.
+  ///
+  /// In en, this message translates to:
+  /// **'This matches the number format for this country ({country}).'**
+  String idCheckOk(String country);
+
+  /// Ask Vaultara status while it checks an ID or passport number.
+  ///
+  /// In en, this message translates to:
+  /// **'Checking the number'**
+  String get assistantStepIdCheck;
+
+  /// Under an ID number that fails its check: swapping two digits next to each other makes it valid. {first} and {second} are digit positions counting from 1.
+  ///
+  /// In en, this message translates to:
+  /// **'Swapping digits {first} and {second} makes it valid.'**
+  String idHintSwap(String first, String second);
+
+  /// Under an ID number that is one digit short: adding this digit at this position makes it valid. {position} counts from 1.
+  ///
+  /// In en, this message translates to:
+  /// **'Adding {digit} as digit {position} makes it valid.'**
+  String idHintMissing(String digit, String position);
+
+  /// Under an ID number that is one digit too long: removing the digit at this position makes it valid.
+  ///
+  /// In en, this message translates to:
+  /// **'Removing digit {position} makes it valid.'**
+  String idHintExtra(String position);
+
+  /// Under a number read from a photo: a letter was probably a digit that looks like it (O and 0, S and 5).
+  ///
+  /// In en, this message translates to:
+  /// **'\"{read}\" is probably a misread \"{fixed}\". With that change it is valid.'**
+  String idHintLookAlike(String read, String fixed);
+
+  /// Under an ID number: it fits the rules of another country, or several that share one rule. {countries} is a list of country names.
+  ///
+  /// In en, this message translates to:
+  /// **'It is valid for another country: {countries}. Check the country on the record.'**
+  String idHintOtherCountry(String countries);
+
+  /// Under a number: another record already has the same number. {record} is that record's name.
+  ///
+  /// In en, this message translates to:
+  /// **'This number is already on another record: {record}.'**
+  String idHintDuplicate(String record);
+
+  /// Button under a number: put in the fixed number the hint describes.
+  ///
+  /// In en, this message translates to:
+  /// **'Use this fix'**
+  String get idHintUse;
+
+  /// Ask Vaultara card title: change part of the ID or passport number in the chat.
+  ///
+  /// In en, this message translates to:
+  /// **'Fix the number'**
+  String get assistantNumberFixTitle;
+
+  /// Ask Vaultara number fix card: no number has been typed or read in this chat.
+  ///
+  /// In en, this message translates to:
+  /// **'There\'s no number in this chat to fix.'**
+  String get assistantNumberFixNothing;
+
+  /// Ask Vaultara number fix card: the digits the user named are not in the number, or appear twice.
+  ///
+  /// In en, this message translates to:
+  /// **'That part isn\'t in the number, or it\'s there more than once. Name the digits around it another way.'**
+  String get assistantNumberFixNotFound;
+
+  /// Ask Vaultara number fix card: the phone could not work out a single digit that fits where the user said one is missing.
+  ///
+  /// In en, this message translates to:
+  /// **'No single digit fits there. Say which digit is missing.'**
+  String get assistantNumberFixNoDigit;
+
+  /// Ask Vaultara number fix card: the whole number is never sent anywhere.
+  ///
+  /// In en, this message translates to:
+  /// **'The number stays on this phone.'**
+  String get assistantNumberFixNote;
+
+  /// Snack bar after a number fix card was confirmed.
+  ///
+  /// In en, this message translates to:
+  /// **'Number updated.'**
+  String get assistantNumberFixDone;
+
+  /// Row label on the number fix card, showing the change, like 5009 [0].
+  ///
+  /// In en, this message translates to:
+  /// **'Change'**
+  String get assistantNumberFixChange;
+
+  /// Under an ID number: the personal number in the scanned code lines (MRZ) is different. {last} is its last four digits.
+  ///
+  /// In en, this message translates to:
+  /// **'The ID number in the document\'s code lines is different. It ends in {last}.'**
+  String idCrossPersonal(String last);
+
+  /// Under a document number: the number in the scanned code lines (MRZ) is different. {last} is its last four characters.
+  ///
+  /// In en, this message translates to:
+  /// **'The number in the document\'s code lines is different. It ends in {last}.'**
+  String idCrossDocument(String last);
+
+  /// Under a VIN: the VIN on the scanned licence disc is different. {last} is its last four characters.
+  ///
+  /// In en, this message translates to:
+  /// **'The VIN on the licence disc is different. It ends in {last}.'**
+  String idCrossVin(String last);
+
+  /// Under an ID number: the birth date inside the number is not the birth date read from the document. {date} is that date.
+  ///
+  /// In en, this message translates to:
+  /// **'The birth date in this number isn\'t the one on the document ({date}).'**
+  String idCrossBirth(String date);
+
+  /// Under an expiry date: it is further away than this kind of document lasts in this country.
+  ///
+  /// In en, this message translates to:
+  /// **'Documents like this from this country ({country}) last at most {years} years. Check the expiry date.'**
+  String idDateTooFar(String country, String years);
+
+  /// Under an expiry date: the holder is a child, and child documents last fewer years.
+  ///
+  /// In en, this message translates to:
+  /// **'For a child, this document lasts {years} years. Check the expiry date.'**
+  String idDateChild(String years);
+
+  /// Under a VIN that is not 17 characters long.
+  ///
+  /// In en, this message translates to:
+  /// **'A VIN has 17 characters. This one has {count}.'**
+  String idCheckVinLength(String count);
+
+  /// Under a VIN with a character a VIN never has.
+  ///
+  /// In en, this message translates to:
+  /// **'A VIN has only letters and digits, and never I, O or Q.'**
+  String get idCheckVinFormat;
+
+  /// Under a VIN whose check digit (9th character) does not match.
+  ///
+  /// In en, this message translates to:
+  /// **'The check digit (the 9th character) doesn\'t match. Cars made for North America always have one; others may not.'**
+  String get idCheckVinDigit;
+
+  /// Under a VIN that passes the format and check digit.
+  ///
+  /// In en, this message translates to:
+  /// **'This matches the VIN format and its check digit.'**
+  String get idCheckVinOk;
+
+  /// Under a driving licence number that is too short for its country.
+  ///
+  /// In en, this message translates to:
+  /// **'Too short for a driving licence number from this country ({country}): {count} of {expected}. Check for a missing digit or letter.'**
+  String idCheckShortLicence(String country, String count, String expected);
+
+  /// Under a driving licence number that is too long for its country.
+  ///
+  /// In en, this message translates to:
+  /// **'Too long for a driving licence number from this country ({country}): {count} of {expected}. Check for an extra digit or letter.'**
+  String idCheckLongLicence(String country, String count, String expected);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

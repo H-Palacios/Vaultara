@@ -10883,4 +10883,159 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Pārbauda ziņu';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Par īsu šīs valsts personas kodam ($country): $count no $expected. Pārbaudi, vai netrūkst cipara.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Par garu šīs valsts personas kodam ($country): $count no $expected. Pārbaudi, vai nav lieka cipara.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Par īsu šīs valsts pases numuram ($country): $count no $expected. Pārbaudi, vai netrūkst cipara vai burta.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Par garu šīs valsts pases numuram ($country): $count no $expected. Pārbaudi, vai nav lieka cipara vai burta.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Tas neizskatās pēc šīs valsts numura ($country). Tam vajadzētu izskatīties šādi: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Tas neizskatās pēc šīs valsts numura ($country). Pārbaudi burtus un ciparus.';
+  }
+
+  @override
+  String get idCheckDigit => 'Kontrolcipars nesakrīt, tāpēc kāds cipars var būt nepareizs vai divi samainīti.';
+
+  @override
+  String get idCheckDate => 'Dzimšanas datums šajā numurā nav īsts datums. Pārbaudi šos ciparus.';
+
+  @override
+  String get idCheckCardNote => 'Ja tas ir kartes numurs, nevis personas kods, vari to neņemt vērā.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Tas atbilst šīs valsts numura formātam ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Pārbauda numuru';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Ja samaini ciparus $first un $second, tas ir derīgs.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Ja pievieno $digit kā $position. ciparu, tas ir derīgs.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Ja noņem $position. ciparu, tas ir derīgs.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" droši vien ir nepareizi nolasīts \"$fixed\". Ar šo izmaiņu tas ir derīgs.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Tas ir derīgs citai valstij: $countries. Pārbaudi ieraksta valsti.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Šis numurs jau ir citā ierakstā: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Izmantot šo labojumu';
+
+  @override
+  String get assistantNumberFixTitle => 'Labot numuru';
+
+  @override
+  String get assistantNumberFixNothing => 'Šajā tērzēšanā nav numura, ko labot.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Šīs daļas numurā nav, vai tā ir vairāk nekā vienreiz. Apraksti ciparus ap to citādi.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Tur neder neviens atsevišķs cipars. Pasaki, kurš cipars trūkst.';
+
+  @override
+  String get assistantNumberFixNote => 'Numurs paliek šajā tālrunī.';
+
+  @override
+  String get assistantNumberFixDone => 'Numurs atjaunināts.';
+
+  @override
+  String get assistantNumberFixChange => 'Izmaiņa';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Personas kods dokumenta koda rindās ir cits. Tas beidzas ar $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Numurs dokumenta koda rindās ir cits. Tas beidzas ar $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'VIN uz reģistrācijas uzlīmes ir cits. Tas beidzas ar $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Dzimšanas datums šajā numurā nav tas, kas dokumentā ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Šādi dokumenti no šīs valsts ($country) ir derīgi ne ilgāk kā $years gadus. Pārbaudi derīguma termiņu.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Bērnam šis dokuments ir derīgs $years gadus. Pārbaudi derīguma termiņu.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN ir 17 rakstzīmes. Šim ir $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN ir tikai burti un cipari, un nekad I, O vai Q.';
+
+  @override
+  String get idCheckVinDigit => 'Kontrolcipars (9. rakstzīme) nesakrīt. Ziemeļamerikai ražotām automašīnām tas ir vienmēr; citām var nebūt.';
+
+  @override
+  String get idCheckVinOk => 'Tas atbilst VIN formātam un tā kontrolciparam.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Par īsu šīs valsts vadītāja apliecības numuram ($country): $count no $expected. Pārbaudi, vai netrūkst cipara vai burta.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Par garu šīs valsts vadītāja apliecības numuram ($country): $count no $expected. Pārbaudi, vai nav lieka cipara vai burta.';
+  }
 }

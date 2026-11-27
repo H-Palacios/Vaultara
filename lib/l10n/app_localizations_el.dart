@@ -10816,4 +10816,159 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Έλεγχος του μηνύματος';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Πολύ σύντομος για αριθμό ταυτότητας αυτής της χώρας ($country): $count από $expected. Ελέγξτε αν λείπει ψηφίο.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Πολύ μεγάλος για αριθμό ταυτότητας αυτής της χώρας ($country): $count από $expected. Ελέγξτε αν υπάρχει επιπλέον ψηφίο.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Πολύ σύντομος για αριθμό διαβατηρίου αυτής της χώρας ($country): $count από $expected. Ελέγξτε αν λείπει ψηφίο ή γράμμα.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Πολύ μεγάλος για αριθμό διαβατηρίου αυτής της χώρας ($country): $count από $expected. Ελέγξτε αν υπάρχει επιπλέον ψηφίο ή γράμμα.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Δεν μοιάζει με αριθμό αυτής της χώρας ($country). Θα έπρεπε να μοιάζει έτσι: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Δεν μοιάζει με αριθμό αυτής της χώρας ($country). Ελέγξτε τα γράμματα και τα ψηφία.';
+  }
+
+  @override
+  String get idCheckDigit => 'Το ψηφίο ελέγχου δεν ταιριάζει, οπότε ίσως κάποιο ψηφίο είναι λάθος ή δύο έχουν αντιμετατεθεί.';
+
+  @override
+  String get idCheckDate => 'Η ημερομηνία γέννησης σε αυτόν τον αριθμό δεν είναι πραγματική. Ελέγξτε αυτά τα ψηφία.';
+
+  @override
+  String get idCheckCardNote => 'Αν αυτός είναι ο αριθμός της ίδιας της κάρτας και όχι ο αριθμός ταυτότητας, μπορείτε να το αγνοήσετε.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Ταιριάζει με τη μορφή αριθμών αυτής της χώρας ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Έλεγχος του αριθμού';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Αν αντιμεταθέσετε τα ψηφία $first και $second, είναι έγκυρος.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Αν προσθέσετε το $digit ως ψηφίο $position, είναι έγκυρος.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Αν αφαιρέσετε το ψηφίο $position, είναι έγκυρος.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return 'Το «$read» μάλλον είναι «$fixed» που διαβάστηκε λάθος. Με αυτή την αλλαγή είναι έγκυρος.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Είναι έγκυρος για άλλη χώρα: $countries. Ελέγξτε τη χώρα στην εγγραφή.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Αυτός ο αριθμός υπάρχει ήδη σε άλλη εγγραφή: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Χρήση αυτής της διόρθωσης';
+
+  @override
+  String get assistantNumberFixTitle => 'Διόρθωση αριθμού';
+
+  @override
+  String get assistantNumberFixNothing => 'Δεν υπάρχει αριθμός σε αυτή τη συνομιλία για διόρθωση.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Αυτό το κομμάτι δεν υπάρχει στον αριθμό ή υπάρχει πάνω από μία φορά. Πείτε αλλιώς τα ψηφία γύρω του.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Κανένα ψηφίο δεν ταιριάζει εκεί. Πείτε ποιο ψηφίο λείπει.';
+
+  @override
+  String get assistantNumberFixNote => 'Ο αριθμός μένει σε αυτό το τηλέφωνο.';
+
+  @override
+  String get assistantNumberFixDone => 'Ο αριθμός ενημερώθηκε.';
+
+  @override
+  String get assistantNumberFixChange => 'Αλλαγή';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Ο αριθμός ταυτότητας στις γραμμές κώδικα του εγγράφου είναι διαφορετικός. Λήγει σε $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Ο αριθμός στις γραμμές κώδικα του εγγράφου είναι διαφορετικός. Λήγει σε $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'Το VIN στο σήμα κυκλοφορίας είναι διαφορετικό. Λήγει σε $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Η ημερομηνία γέννησης σε αυτόν τον αριθμό δεν είναι αυτή του εγγράφου ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Τέτοια έγγραφα από αυτή τη χώρα ($country) ισχύουν το πολύ $years χρόνια. Ελέγξτε την ημερομηνία λήξης.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Για παιδί αυτό το έγγραφο ισχύει $years χρόνια. Ελέγξτε την ημερομηνία λήξης.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'Ένα VIN έχει 17 χαρακτήρες. Αυτό έχει $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'Ένα VIN έχει μόνο γράμματα και ψηφία, ποτέ I, O ή Q.';
+
+  @override
+  String get idCheckVinDigit => 'Το ψηφίο ελέγχου (ο 9ος χαρακτήρας) δεν ταιριάζει. Τα αυτοκίνητα για τη Βόρεια Αμερική το έχουν πάντα· άλλα ίσως όχι.';
+
+  @override
+  String get idCheckVinOk => 'Ταιριάζει με τη μορφή VIN και το ψηφίο ελέγχου του.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Πολύ σύντομος για αριθμό διπλώματος οδήγησης αυτής της χώρας ($country): $count από $expected. Ελέγξτε αν λείπει ψηφίο ή γράμμα.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Πολύ μεγάλος για αριθμό διπλώματος οδήγησης αυτής της χώρας ($country): $count από $expected. Ελέγξτε αν υπάρχει επιπλέον ψηφίο ή γράμμα.';
+  }
 }

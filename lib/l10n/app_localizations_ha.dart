@@ -10811,4 +10811,159 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Ana duba saƙon';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Ya yi gajere ga lambar shaida ta wannan ƙasa ($country): $count cikin $expected. Duba ko akwai lamba da ta ɓace.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Ya yi tsawo ga lambar shaida ta wannan ƙasa ($country): $count cikin $expected. Duba ko akwai ƙarin lamba.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Ya yi gajere ga lambar fasfo ta wannan ƙasa ($country): $count cikin $expected. Duba ko akwai lamba ko harafi da ya ɓace.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Ya yi tsawo ga lambar fasfo ta wannan ƙasa ($country): $count cikin $expected. Duba ko akwai ƙarin lamba ko harafi.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Wannan bai yi kama da lamba daga wannan ƙasa ba ($country). Ya kamata ya yi kama da haka: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Wannan bai yi kama da lamba daga wannan ƙasa ba ($country). Duba haruffa da lambobi.';
+  }
+
+  @override
+  String get idCheckDigit => 'Lambar dubawa ba ta dace ba, don haka wata lamba na iya zama kuskure ko biyu sun musanya wuri.';
+
+  @override
+  String get idCheckDate => 'Ranar haihuwa a cikin wannan lamba ba ranar gaske ba ce. Duba waɗannan lambobi.';
+
+  @override
+  String get idCheckCardNote => 'Idan wannan lambar katin ce ba lambar shaida ba, za ka iya watsi da wannan.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Wannan ya dace da tsarin lambobin wannan ƙasa ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Ana duba lambar';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Idan ka musanya lambobi $first da $second, zai zama daidai.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Idan ka ƙara $digit a matsayin lamba ta $position, zai zama daidai.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Idan ka cire lamba ta $position, zai zama daidai.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" mai yiwuwa \"$fixed\" ne da aka karanta ba daidai ba. Da wannan canji zai zama daidai.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Daidai ne ga wata ƙasa: $countries. Duba ƙasar da ke kan bayanin.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Wannan lambar tana kan wani bayani riga: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Yi amfani da wannan gyara';
+
+  @override
+  String get assistantNumberFixTitle => 'Gyara lambar';
+
+  @override
+  String get assistantNumberFixNothing => 'Babu lambar da za a gyara a wannan hira.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Wannan sashi ba ya cikin lambar, ko yana nan fiye da sau ɗaya. Faɗi lambobin da ke kewaye da shi ta wata hanya.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Babu lamba ɗaya da ta dace a wurin. Faɗi wace lamba ce ta ɓace.';
+
+  @override
+  String get assistantNumberFixNote => 'Lambar tana kan wannan wayar.';
+
+  @override
+  String get assistantNumberFixDone => 'An sabunta lambar.';
+
+  @override
+  String get assistantNumberFixChange => 'Canji';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Lambar shaida a layukan lambar takardar daban ce. Tana ƙarewa da $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Lambar a layukan lambar takardar daban ce. Tana ƙarewa da $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'VIN a kan faifan lasisi daban ne. Yana ƙarewa da $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Ranar haihuwa a wannan lambar ba ita ce a takardar ba ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Takardu irin wannan daga wannan ƙasa ($country) suna aiki shekaru $years a mafi yawa. Duba ranar ƙarewa.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Ga yaro, wannan takarda tana aiki shekaru $years. Duba ranar ƙarewa.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN yana da haruffa 17. Wannan yana da $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN yana da haruffa da lambobi kawai, kuma ba ya taɓa samun I, O ko Q.';
+
+  @override
+  String get idCheckVinDigit => 'Lambar dubawa (hali na 9) ba ta dace ba. Motocin da aka yi don Arewacin Amurka koyaushe suna da ita; wasu ƙila ba su da ita.';
+
+  @override
+  String get idCheckVinOk => 'Wannan ya dace da tsarin VIN da lambar dubawarsa.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Ya yi gajere ga lambar lasisin tuƙi daga wannan ƙasa ($country): $count cikin $expected. Duba ko akwai lamba ko harafi da ya ɓace.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Ya yi tsawo ga lambar lasisin tuƙi daga wannan ƙasa ($country): $count cikin $expected. Duba ko akwai ƙarin lamba ko harafi.';
+  }
 }

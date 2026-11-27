@@ -10811,4 +10811,159 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'پیغام چیک ہو رہا ہے';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'اس ملک کے شناختی نمبر کے لیے بہت چھوٹا ہے ($country): $count میں سے $expected۔ دیکھیں کوئی ہندسہ تو نہیں رہ گیا۔';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'اس ملک کے شناختی نمبر کے لیے بہت لمبا ہے ($country): $count میں سے $expected۔ دیکھیں کوئی ہندسہ زیادہ تو نہیں۔';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'اس ملک کے پاسپورٹ نمبر کے لیے بہت چھوٹا ہے ($country): $count میں سے $expected۔ دیکھیں کوئی ہندسہ یا حرف تو نہیں رہ گیا۔';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'اس ملک کے پاسپورٹ نمبر کے لیے بہت لمبا ہے ($country): $count میں سے $expected۔ دیکھیں کوئی ہندسہ یا حرف زیادہ تو نہیں۔';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'یہ اس ملک کے نمبر جیسا نہیں لگتا ($country)۔ اسے ایسا ہونا چاہیے: $example۔';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'یہ اس ملک کے نمبر جیسا نہیں لگتا ($country)۔ حروف اور ہندسے چیک کریں۔';
+  }
+
+  @override
+  String get idCheckDigit => 'چیک ہندسہ میل نہیں کھاتا، اس لیے کوئی ہندسہ غلط ہو سکتا ہے یا دو کی جگہ بدل گئی ہو۔';
+
+  @override
+  String get idCheckDate => 'اس نمبر میں تاریخِ پیدائش اصل تاریخ نہیں ہے۔ وہ ہندسے چیک کریں۔';
+
+  @override
+  String get idCheckCardNote => 'اگر یہ کارڈ کا اپنا نمبر ہے، شناختی نمبر نہیں، تو آپ اسے نظر انداز کر سکتے ہیں۔';
+
+  @override
+  String idCheckOk(String country) {
+    return 'یہ اس ملک کے نمبر کے فارمیٹ سے ملتا ہے ($country)۔';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'نمبر چیک ہو رہا ہے';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'ہندسے $first اور $second کی جگہ بدلنے سے یہ درست ہو جاتا ہے۔';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return '$digit کو ہندسہ $position کے طور پر شامل کرنے سے یہ درست ہو جاتا ہے۔';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'ہندسہ $position ہٹانے سے یہ درست ہو جاتا ہے۔';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" غالباً غلط پڑھا گیا \"$fixed\" ہے۔ اس تبدیلی سے یہ درست ہو جاتا ہے۔';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'یہ کسی اور ملک کے لیے درست ہے: $countries۔ ریکارڈ میں ملک چیک کریں۔';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'یہ نمبر پہلے ہی کسی اور ریکارڈ میں ہے: $record۔';
+  }
+
+  @override
+  String get idHintUse => 'یہ درستی استعمال کریں';
+
+  @override
+  String get assistantNumberFixTitle => 'نمبر درست کریں';
+
+  @override
+  String get assistantNumberFixNothing => 'اس چیٹ میں درست کرنے کے لیے کوئی نمبر نہیں ہے۔';
+
+  @override
+  String get assistantNumberFixNotFound => 'یہ حصہ نمبر میں نہیں ہے، یا ایک سے زیادہ بار ہے۔ اس کے آس پاس کے ہندسے کسی اور طرح بتائیں۔';
+
+  @override
+  String get assistantNumberFixNoDigit => 'وہاں کوئی ایک ہندسہ فٹ نہیں ہوتا۔ بتائیں کون سا ہندسہ رہ گیا ہے۔';
+
+  @override
+  String get assistantNumberFixNote => 'نمبر اسی فون پر رہتا ہے۔';
+
+  @override
+  String get assistantNumberFixDone => 'نمبر اپ ڈیٹ ہو گیا۔';
+
+  @override
+  String get assistantNumberFixChange => 'تبدیلی';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'دستاویز کی کوڈ لائنوں میں شناختی نمبر مختلف ہے۔ یہ $last پر ختم ہوتا ہے۔';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'دستاویز کی کوڈ لائنوں میں نمبر مختلف ہے۔ یہ $last پر ختم ہوتا ہے۔';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'لائسنس ڈسک پر VIN مختلف ہے۔ یہ $last پر ختم ہوتا ہے۔';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'اس نمبر میں تاریخِ پیدائش دستاویز والی نہیں ہے ($date)۔';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'اس ملک ($country) کی ایسی دستاویزات زیادہ سے زیادہ $years سال چلتی ہیں۔ میعاد ختم ہونے کی تاریخ چیک کریں۔';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'بچے کے لیے یہ دستاویز $years سال چلتی ہے۔ میعاد ختم ہونے کی تاریخ چیک کریں۔';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN میں 17 حروف ہوتے ہیں۔ اس میں $count ہیں۔';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN میں صرف حروف اور ہندسے ہوتے ہیں، کبھی I، O یا Q نہیں۔';
+
+  @override
+  String get idCheckVinDigit => 'چیک ہندسہ (نواں حرف) میل نہیں کھاتا۔ شمالی امریکہ کے لیے بنی گاڑیوں میں یہ ہمیشہ ہوتا ہے؛ دوسروں میں شاید نہ ہو۔';
+
+  @override
+  String get idCheckVinOk => 'یہ VIN کے فارمیٹ اور اس کے چیک ہندسے سے ملتا ہے۔';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'اس ملک کے ڈرائیونگ لائسنس نمبر کے لیے بہت چھوٹا ہے ($country): $count میں سے $expected۔ دیکھیں کوئی ہندسہ یا حرف تو نہیں رہ گیا۔';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'اس ملک کے ڈرائیونگ لائسنس نمبر کے لیے بہت لمبا ہے ($country): $count میں سے $expected۔ دیکھیں کوئی ہندسہ یا حرف زیادہ تو نہیں۔';
+  }
 }

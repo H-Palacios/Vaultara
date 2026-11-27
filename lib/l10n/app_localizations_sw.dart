@@ -10811,4 +10811,159 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Inakagua ujumbe';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Ni fupi mno kwa nambari ya utambulisho ya nchi hii ($country): $count kati ya $expected. Angalia kama tarakimu imekosekana.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Ni ndefu mno kwa nambari ya utambulisho ya nchi hii ($country): $count kati ya $expected. Angalia kama kuna tarakimu ya ziada.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Ni fupi mno kwa nambari ya pasipoti ya nchi hii ($country): $count kati ya $expected. Angalia kama tarakimu au herufi imekosekana.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Ni ndefu mno kwa nambari ya pasipoti ya nchi hii ($country): $count kati ya $expected. Angalia kama kuna tarakimu au herufi ya ziada.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Hii haionekani kama nambari ya nchi hii ($country). Inapaswa kuonekana hivi: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Hii haionekani kama nambari ya nchi hii ($country). Angalia herufi na tarakimu.';
+  }
+
+  @override
+  String get idCheckDigit => 'Tarakimu ya ukaguzi hailingani, kwa hivyo tarakimu moja inaweza kuwa si sahihi au mbili zimebadilishana nafasi.';
+
+  @override
+  String get idCheckDate => 'Tarehe ya kuzaliwa katika nambari hii si tarehe halisi. Angalia tarakimu hizo.';
+
+  @override
+  String get idCheckCardNote => 'Ikiwa hii ni nambari ya kadi yenyewe, si nambari ya utambulisho, unaweza kupuuza hili.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Hii inalingana na muundo wa nambari wa nchi hii ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Inakagua nambari';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Ukibadilisha nafasi za tarakimu $first na $second, itakuwa sahihi.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Ukiongeza $digit kama tarakimu ya $position, itakuwa sahihi.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Ukiondoa tarakimu ya $position, itakuwa sahihi.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" huenda ni \"$fixed\" iliyosomwa vibaya. Kwa badiliko hilo ni sahihi.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Ni sahihi kwa nchi nyingine: $countries. Angalia nchi kwenye rekodi.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Nambari hii tayari iko kwenye rekodi nyingine: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Tumia marekebisho haya';
+
+  @override
+  String get assistantNumberFixTitle => 'Rekebisha nambari';
+
+  @override
+  String get assistantNumberFixNothing => 'Hakuna nambari ya kurekebisha katika gumzo hili.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Sehemu hiyo haipo kwenye nambari, au iko zaidi ya mara moja. Taja tarakimu zinazoizunguka kwa njia nyingine.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Hakuna tarakimu moja inayofaa hapo. Sema ni tarakimu gani imekosekana.';
+
+  @override
+  String get assistantNumberFixNote => 'Nambari inabaki kwenye simu hii.';
+
+  @override
+  String get assistantNumberFixDone => 'Nambari imesasishwa.';
+
+  @override
+  String get assistantNumberFixChange => 'Badiliko';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Namba ya utambulisho katika mistari ya msimbo ya hati ni tofauti. Inaishia na $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Namba katika mistari ya msimbo ya hati ni tofauti. Inaishia na $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'VIN kwenye diski ya leseni ni tofauti. Inaishia na $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Tarehe ya kuzaliwa katika namba hii si ile iliyo kwenye hati ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Hati kama hii kutoka nchi hii ($country) hudumu miaka $years zaidi. Angalia tarehe ya kuisha.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Kwa mtoto, hati hii hudumu miaka $years. Angalia tarehe ya kuisha.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN ina herufi 17. Hii ina $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN ina herufi na tarakimu tu, na kamwe haina I, O au Q.';
+
+  @override
+  String get idCheckVinDigit => 'Tarakimu ya ukaguzi (herufi ya 9) hailingani. Magari yaliyotengenezwa kwa Amerika Kaskazini huwa nayo kila mara; mengine huenda yasiwe nayo.';
+
+  @override
+  String get idCheckVinOk => 'Hii inalingana na muundo wa VIN na tarakimu yake ya ukaguzi.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Fupi mno kwa namba ya leseni ya udereva kutoka nchi hii ($country): $count kati ya $expected. Angalia kama tarakimu au herufi imekosekana.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Ndefu mno kwa namba ya leseni ya udereva kutoka nchi hii ($country): $count kati ya $expected. Angalia kama kuna tarakimu au herufi ya ziada.';
+  }
 }

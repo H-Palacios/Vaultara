@@ -10974,4 +10974,159 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Kontrola zprávy';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Příliš krátké na identifikační číslo z této země ($country): $count z $expected. Zkontrolujte, jestli nechybí číslice.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Příliš dlouhé na identifikační číslo z této země ($country): $count z $expected. Zkontrolujte, jestli tam není číslice navíc.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Příliš krátké na číslo pasu z této země ($country): $count z $expected. Zkontrolujte, jestli nechybí číslice nebo písmeno.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Příliš dlouhé na číslo pasu z této země ($country): $count z $expected. Zkontrolujte, jestli tam není číslice nebo písmeno navíc.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Nevypadá to jako číslo z této země ($country). Mělo by vypadat takto: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Nevypadá to jako číslo z této země ($country). Zkontrolujte písmena a číslice.';
+  }
+
+  @override
+  String get idCheckDigit => 'Kontrolní číslice nesedí, takže některá číslice může být špatně nebo jsou dvě prohozené.';
+
+  @override
+  String get idCheckDate => 'Datum narození v tomto čísle není skutečné datum. Zkontrolujte tyto číslice.';
+
+  @override
+  String get idCheckCardNote => 'Pokud je to vlastní číslo karty, a ne identifikační číslo, můžete to ignorovat.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Odpovídá to formátu čísel této země ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Kontrola čísla';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Po prohození číslic $first a $second je platné.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Po přidání $digit jako číslice $position je platné.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Po odebrání číslice $position je platné.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" je nejspíš špatně přečtené \"$fixed\". S touto změnou je platné.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Je platné pro jinou zemi: $countries. Zkontrolujte zemi u záznamu.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Toto číslo už je u jiného záznamu: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Použít tuto opravu';
+
+  @override
+  String get assistantNumberFixTitle => 'Opravit číslo';
+
+  @override
+  String get assistantNumberFixNothing => 'V tomto chatu není žádné číslo k opravě.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Tato část v čísle není, nebo je tam vícekrát. Popište číslice kolem ní jinak.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Žádná jednotlivá číslice tam nesedí. Řekněte, která číslice chybí.';
+
+  @override
+  String get assistantNumberFixNote => 'Číslo zůstává v tomto telefonu.';
+
+  @override
+  String get assistantNumberFixDone => 'Číslo aktualizováno.';
+
+  @override
+  String get assistantNumberFixChange => 'Změna';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Identifikační číslo v kódových řádcích dokladu je jiné. Končí na $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Číslo v kódových řádcích dokladu je jiné. Končí na $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'VIN na registrační nálepce je jiné. Končí na $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Datum narození v tomto čísle není to z dokladu ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Takové doklady z této země ($country) platí nejvýše $years let. Zkontrolujte datum platnosti.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Pro dítě tento doklad platí $years let. Zkontrolujte datum platnosti.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN má 17 znaků. Tento má $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN má jen písmena a číslice, nikdy I, O ani Q.';
+
+  @override
+  String get idCheckVinDigit => 'Kontrolní číslice (9. znak) nesedí. Auta pro Severní Ameriku ji mají vždy, jiná ji mít nemusí.';
+
+  @override
+  String get idCheckVinOk => 'Odpovídá to formátu VIN a jeho kontrolní číslici.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Příliš krátké na číslo řidičského průkazu z této země ($country): $count z $expected. Zkontrolujte, jestli nechybí číslice nebo písmeno.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Příliš dlouhé na číslo řidičského průkazu z této země ($country): $count z $expected. Zkontrolujte, jestli tam není číslice nebo písmeno navíc.';
+  }
 }

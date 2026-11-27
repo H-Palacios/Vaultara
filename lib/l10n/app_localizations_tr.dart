@@ -10811,4 +10811,159 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Mesaj kontrol ediliyor';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Bu ülkenin kimlik numarası için çok kısa ($country): $count/$expected. Eksik bir rakam olup olmadığını kontrol edin.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Bu ülkenin kimlik numarası için çok uzun ($country): $count/$expected. Fazladan bir rakam olup olmadığını kontrol edin.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Bu ülkenin pasaport numarası için çok kısa ($country): $count/$expected. Eksik bir rakam veya harf olup olmadığını kontrol edin.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Bu ülkenin pasaport numarası için çok uzun ($country): $count/$expected. Fazladan bir rakam veya harf olup olmadığını kontrol edin.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Bu, bu ülkeden bir numaraya benzemiyor ($country). Şöyle görünmeli: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Bu, bu ülkeden bir numaraya benzemiyor ($country). Harfleri ve rakamları kontrol edin.';
+  }
+
+  @override
+  String get idCheckDigit => 'Kontrol hanesi tutmuyor; bir rakam yanlış olabilir ya da iki rakamın yeri değişmiş olabilir.';
+
+  @override
+  String get idCheckDate => 'Bu numaradaki doğum tarihi gerçek bir tarih değil. O rakamları kontrol edin.';
+
+  @override
+  String get idCheckCardNote => 'Bu, kimlik numarası değil de kartın kendi numarasıysa bunu görmezden gelebilirsiniz.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Bu ülkenin numara biçimine uyuyor ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Numara kontrol ediliyor';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return '$first. ve $second. rakamların yerini değiştirirsen geçerli olur.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return '$digit rakamını $position. sıraya eklersen geçerli olur.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return '$position. rakamı silersen geçerli olur.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" büyük olasılıkla yanlış okunmuş bir \"$fixed\". Bu değişiklikle geçerli olur.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Başka bir ülke için geçerli: $countries. Kayıttaki ülkeyi kontrol edin.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Bu numara zaten başka bir kayıtta var: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Bu düzeltmeyi kullan';
+
+  @override
+  String get assistantNumberFixTitle => 'Numarayı düzelt';
+
+  @override
+  String get assistantNumberFixNothing => 'Bu sohbette düzeltilecek numara yok.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Bu kısım numarada yok ya da birden fazla kez geçiyor. Etrafındaki rakamları başka şekilde söyleyin.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Oraya tek bir rakam uymuyor. Hangi rakamın eksik olduğunu söyleyin.';
+
+  @override
+  String get assistantNumberFixNote => 'Numara bu telefonda kalır.';
+
+  @override
+  String get assistantNumberFixDone => 'Numara güncellendi.';
+
+  @override
+  String get assistantNumberFixChange => 'Değişiklik';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Belgenin kod satırlarındaki kimlik numarası farklı. $last ile bitiyor.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Belgenin kod satırlarındaki numara farklı. $last ile bitiyor.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'Ruhsat etiketindeki şasi numarası (VIN) farklı. $last ile bitiyor.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Bu numaradaki doğum tarihi belgedeki değil ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Bu ülkeden ($country) bu tür belgeler en fazla $years yıl geçerlidir. Son geçerlilik tarihini kontrol edin.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Bir çocuk için bu belge $years yıl geçerlidir. Son geçerlilik tarihini kontrol edin.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'Bir şasi numarası (VIN) 17 karakterdir. Bu numara $count karakter.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'Şasi numarasında yalnızca harf ve rakam olur, asla I, O veya Q olmaz.';
+
+  @override
+  String get idCheckVinDigit => 'Kontrol hanesi (9. karakter) tutmuyor. Kuzey Amerika için üretilen arabalarda hep vardır; diğerlerinde olmayabilir.';
+
+  @override
+  String get idCheckVinOk => 'Bu, şasi numarası biçimine ve kontrol hanesine uyuyor.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Bu ülkenin ehliyet numarası için çok kısa ($country): $count/$expected. Eksik bir rakam veya harf olup olmadığını kontrol edin.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Bu ülkenin ehliyet numarası için çok uzun ($country): $count/$expected. Fazladan bir rakam veya harf olup olmadığını kontrol edin.';
+  }
 }

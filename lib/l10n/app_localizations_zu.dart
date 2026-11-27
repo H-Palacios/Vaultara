@@ -10811,4 +10811,159 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Kuhlolwa umlayezo';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Imfushane kakhulu kunombolo kamazisi yaleli zwe ($country): $count kokungu-$expected. Hlola ukuthi asikho isibalo esishodayo.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Inde kakhulu kunombolo kamazisi yaleli zwe ($country): $count kokungu-$expected. Hlola ukuthi asikho isibalo esengeziwe.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Imfushane kakhulu kunombolo yephasipoti yaleli zwe ($country): $count kokungu-$expected. Hlola ukuthi asikho isibalo noma uhlamvu olushodayo.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Inde kakhulu kunombolo yephasipoti yaleli zwe ($country): $count kokungu-$expected. Hlola ukuthi asikho isibalo noma uhlamvu olwengeziwe.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Lokhu akubukeki njengenombolo yaleli zwe ($country). Kufanele ibukeke kanje: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Lokhu akubukeki njengenombolo yaleli zwe ($country). Hlola izinhlamvu nezibalo.';
+  }
+
+  @override
+  String get idCheckDigit => 'Isibalo sokuhlola asihambisani, ngakho isibalo esisodwa singaba yiphutha noma ezimbili zishintshene izindawo.';
+
+  @override
+  String get idCheckDate => 'Usuku lokuzalwa kule nombolo akulona usuku lwangempela. Hlola lezo zibalo.';
+
+  @override
+  String get idCheckCardNote => 'Uma lena kuyinombolo yekhadi uqobo, hhayi inombolo kamazisi, ungakushaya indiva lokhu.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Lokhu kuhambisana nefomethi yezinombolo zaleli zwe ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Kuhlolwa inombolo';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Uma ushintshanisa izibalo $first no-$second, izoba yiqiniso.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Uma wengeza u-$digit njengesibalo $position, izoba yiqiniso.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Uma ususa isibalo $position, izoba yiqiniso.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" kungenzeka ngu-\"$fixed\" ofundwe kabi. Ngalolu shintsho iyiqiniso.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Iyiqiniso kwelinye izwe: $countries. Hlola izwe kurekhodi.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Le nombolo isivele ikwelinye irekhodi: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Sebenzisa lokhu kulungisa';
+
+  @override
+  String get assistantNumberFixTitle => 'Lungisa inombolo';
+
+  @override
+  String get assistantNumberFixNothing => 'Ayikho inombolo okufanele ilungiswe kule ngxoxo.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Leyo ngxenye ayikho enombolweni, noma ikhona ngaphezu kwesisodwa. Chaza izibalo ezizungezile ngenye indlela.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Asikho isibalo esisodwa esifanele lapho. Yisho ukuthi yisiphi isibalo esishodayo.';
+
+  @override
+  String get assistantNumberFixNote => 'Inombolo ihlala kule foni.';
+
+  @override
+  String get assistantNumberFixDone => 'Inombolo ibuyekeziwe.';
+
+  @override
+  String get assistantNumberFixChange => 'Ushintsho';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Inombolo kamazisi emigqeni yekhodi yedokhumenti ihlukile. Iphela ngo-$last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Inombolo esemigqeni yekhodi yedokhumenti ihlukile. Iphela ngo-$last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'I-VIN esediskini yelayisensi ihlukile. Iphela ngo-$last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Usuku lokuzalwa kule nombolo akulona olusedokhumentini ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Amadokhumenti anjena avela kuleli zwe ($country) ahlala iminyaka engeqile ku-$years. Hlola usuku lokuphelelwa.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Engane, le dokhumenti ihlala iminyaka engu-$years. Hlola usuku lokuphelelwa.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'I-VIN inezinhlamvu ezingu-17. Le inezingu-$count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'I-VIN inezinhlamvu nezinombolo kuphela, futhi ayinayo i-I, O noma Q.';
+
+  @override
+  String get idCheckVinDigit => 'Idijithi yokuhlola (uhlamvu lwe-9) ayihambisani. Izimoto ezenzelwe iNyakatho Melika zihlala zinayo; ezinye kungenzeka zingabi nayo.';
+
+  @override
+  String get idCheckVinOk => 'Lokhu kuhambisana nefomethi ye-VIN nedijithi yayo yokuhlola.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Mfushane kakhulu enombolweni yelayisensi yokushayela yaleli zwe ($country): $count kwezingu-$expected. Hlola ukuthi ayikho idijithi noma uhlamvu olushodayo.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Inde kakhulu enombolweni yelayisensi yokushayela yaleli zwe ($country): $count kwezingu-$expected. Hlola ukuthi ayikho idijithi noma uhlamvu olwengeziwe.';
+  }
 }

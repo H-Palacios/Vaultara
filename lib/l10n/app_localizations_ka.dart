@@ -10811,4 +10811,159 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'შეტყობინების შემოწმება';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'ზედმეტად მოკლეა ამ ქვეყნის პირადი ნომრისთვის ($country): $count/$expected. შეამოწმეთ, ხომ არ აკლია ციფრი.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'ზედმეტად გრძელია ამ ქვეყნის პირადი ნომრისთვის ($country): $count/$expected. შეამოწმეთ, ხომ არ არის ზედმეტი ციფრი.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'ზედმეტად მოკლეა ამ ქვეყნის პასპორტის ნომრისთვის ($country): $count/$expected. შეამოწმეთ, ხომ არ აკლია ციფრი ან ასო.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'ზედმეტად გრძელია ამ ქვეყნის პასპორტის ნომრისთვის ($country): $count/$expected. შეამოწმეთ, ხომ არ არის ზედმეტი ციფრი ან ასო.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'ეს არ ჰგავს ამ ქვეყნის ნომერს ($country). ასე უნდა გამოიყურებოდეს: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'ეს არ ჰგავს ამ ქვეყნის ნომერს ($country). შეამოწმეთ ასოები და ციფრები.';
+  }
+
+  @override
+  String get idCheckDigit => 'საკონტროლო ციფრი არ ემთხვევა, ამიტომ რომელიმე ციფრი შეიძლება არასწორი იყოს ან ორი ადგილშენაცვლებული.';
+
+  @override
+  String get idCheckDate => 'ამ ნომერში დაბადების თარიღი ნამდვილი თარიღი არ არის. შეამოწმეთ ეს ციფრები.';
+
+  @override
+  String get idCheckCardNote => 'თუ ეს ბარათის საკუთარი ნომერია და არა პირადი ნომერი, შეგიძლიათ ყურადღება არ მიაქციოთ.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'ეს ემთხვევა ამ ქვეყნის ნომრის ფორმატს ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'ნომრის შემოწმება';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'თუ $first-ე და $second-ე ციფრებს ადგილს გაუცვლით, ნომერი სწორი იქნება.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'თუ $digit-ს დაამატებთ $position-ე ციფრად, ნომერი სწორი იქნება.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'თუ $position-ე ციფრს წაშლით, ნომერი სწორი იქნება.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '„$read“ ალბათ არასწორად წაკითხული „$fixed“-ია. ამ ცვლილებით ნომერი სწორია.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'სწორია სხვა ქვეყნისთვის: $countries. შეამოწმეთ ჩანაწერის ქვეყანა.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'ეს ნომერი უკვე არის სხვა ჩანაწერში: $record.';
+  }
+
+  @override
+  String get idHintUse => 'ამ გასწორების გამოყენება';
+
+  @override
+  String get assistantNumberFixTitle => 'ნომრის გასწორება';
+
+  @override
+  String get assistantNumberFixNothing => 'ამ ჩატში გასასწორებელი ნომერი არ არის.';
+
+  @override
+  String get assistantNumberFixNotFound => 'ეს ნაწილი ნომერში არ არის ან რამდენჯერმე გვხვდება. მის გარშემო ციფრები სხვაგვარად თქვით.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'იქ არცერთი ციფრი არ ერგება. თქვით, რომელი ციფრი აკლია.';
+
+  @override
+  String get assistantNumberFixNote => 'ნომერი ამ ტელეფონზე რჩება.';
+
+  @override
+  String get assistantNumberFixDone => 'ნომერი განახლდა.';
+
+  @override
+  String get assistantNumberFixChange => 'ცვლილება';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'დოკუმენტის კოდის ხაზებში პირადი ნომერი განსხვავებულია. ის მთავრდება $last-ით.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'დოკუმენტის კოდის ხაზებში ნომერი განსხვავებულია. ის მთავრდება $last-ით.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'რეგისტრაციის სტიკერზე VIN განსხვავებულია. ის მთავრდება $last-ით.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'ამ ნომერში დაბადების თარიღი დოკუმენტისას არ ემთხვევა ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'ამ ქვეყნის ($country) ასეთი დოკუმენტები მოქმედებს მაქსიმუმ $years წელი. შეამოწმეთ ვადის გასვლის თარიღი.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'ბავშვისთვის ეს დოკუმენტი მოქმედებს $years წელი. შეამოწმეთ ვადის გასვლის თარიღი.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN-ს აქვს 17 სიმბოლო. ამას აქვს $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN-ში მხოლოდ ასოები და ციფრებია და არასოდეს I, O ან Q.';
+
+  @override
+  String get idCheckVinDigit => 'საკონტროლო სიმბოლო (მე-9) არ ემთხვევა. ჩრდილოეთ ამერიკისთვის დამზადებულ მანქანებს ის ყოველთვის აქვთ, სხვებს შეიძლება არა.';
+
+  @override
+  String get idCheckVinOk => 'ეს ემთხვევა VIN-ის ფორმატს და მის საკონტროლო სიმბოლოს.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'ზედმეტად მოკლეა ამ ქვეყნის მართვის მოწმობის ნომრისთვის ($country): $count/$expected. შეამოწმეთ, ხომ არ აკლია ციფრი ან ასო.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'ზედმეტად გრძელია ამ ქვეყნის მართვის მოწმობის ნომრისთვის ($country): $count/$expected. შეამოწმეთ, ხომ არ არის ზედმეტი ციფრი ან ასო.';
+  }
 }

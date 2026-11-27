@@ -10735,4 +10735,159 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'กำลังตรวจสอบข้อความ';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'สั้นเกินไปสำหรับเลขประจำตัวของประเทศนี้ ($country): $count จาก $expected ตรวจดูว่ามีตัวเลขขาดหายไปหรือไม่';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'ยาวเกินไปสำหรับเลขประจำตัวของประเทศนี้ ($country): $count จาก $expected ตรวจดูว่ามีตัวเลขเกินมาหรือไม่';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'สั้นเกินไปสำหรับเลขหนังสือเดินทางของประเทศนี้ ($country): $count จาก $expected ตรวจดูว่ามีตัวเลขหรือตัวอักษรขาดหายไปหรือไม่';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'ยาวเกินไปสำหรับเลขหนังสือเดินทางของประเทศนี้ ($country): $count จาก $expected ตรวจดูว่ามีตัวเลขหรือตัวอักษรเกินมาหรือไม่';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'ดูไม่เหมือนหมายเลขของประเทศนี้ ($country) ควรมีลักษณะแบบนี้: $example';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'ดูไม่เหมือนหมายเลขของประเทศนี้ ($country) ตรวจสอบตัวอักษรและตัวเลข';
+  }
+
+  @override
+  String get idCheckDigit => 'เลขตรวจสอบไม่ตรงกัน อาจมีตัวเลขผิดหนึ่งตัวหรือสลับกันสองตัว';
+
+  @override
+  String get idCheckDate => 'วันเกิดในหมายเลขนี้ไม่ใช่วันที่จริง ตรวจสอบตัวเลขเหล่านั้น';
+
+  @override
+  String get idCheckCardNote => 'หากนี่เป็นหมายเลขของบัตรเอง ไม่ใช่เลขประจำตัว คุณไม่ต้องสนใจข้อความนี้';
+
+  @override
+  String idCheckOk(String country) {
+    return 'ตรงกับรูปแบบหมายเลขของประเทศนี้ ($country)';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'กำลังตรวจสอบหมายเลข';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'สลับหลักที่ $first กับหลักที่ $second แล้วหมายเลขจะถูกต้อง';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'เพิ่ม $digit เป็นหลักที่ $position แล้วหมายเลขจะถูกต้อง';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'ลบหลักที่ $position แล้วหมายเลขจะถูกต้อง';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" น่าจะเป็น \"$fixed\" ที่อ่านผิด เมื่อแก้แล้วหมายเลขจะถูกต้อง';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'หมายเลขนี้ถูกต้องสำหรับประเทศอื่น: $countries ตรวจสอบประเทศในบันทึก';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'หมายเลขนี้มีอยู่ในบันทึกอื่นแล้ว: $record';
+  }
+
+  @override
+  String get idHintUse => 'ใช้การแก้ไขนี้';
+
+  @override
+  String get assistantNumberFixTitle => 'แก้หมายเลข';
+
+  @override
+  String get assistantNumberFixNothing => 'ไม่มีหมายเลขในแชทนี้ให้แก้';
+
+  @override
+  String get assistantNumberFixNotFound => 'ไม่มีส่วนนั้นในหมายเลข หรือมีมากกว่าหนึ่งครั้ง บอกตัวเลขรอบ ๆ ด้วยวิธีอื่น';
+
+  @override
+  String get assistantNumberFixNoDigit => 'ไม่มีตัวเลขใดตัวเดียวที่ใส่ตรงนั้นได้ บอกว่าตัวเลขใดหายไป';
+
+  @override
+  String get assistantNumberFixNote => 'หมายเลขอยู่ในโทรศัพท์เครื่องนี้';
+
+  @override
+  String get assistantNumberFixDone => 'อัปเดตหมายเลขแล้ว';
+
+  @override
+  String get assistantNumberFixChange => 'การเปลี่ยนแปลง';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'เลขประจำตัวในบรรทัดรหัสของเอกสารไม่ตรงกัน ลงท้ายด้วย $last';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'เลขในบรรทัดรหัสของเอกสารไม่ตรงกัน ลงท้ายด้วย $last';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'VIN บนป้ายภาษีรถไม่ตรงกัน ลงท้ายด้วย $last';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'วันเกิดในเลขนี้ไม่ตรงกับวันเกิดในเอกสาร ($date)';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'เอกสารแบบนี้จากประเทศนี้ ($country) มีอายุไม่เกิน $years ปี โปรดตรวจสอบวันหมดอายุ';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'สำหรับเด็ก เอกสารนี้มีอายุ $years ปี โปรดตรวจสอบวันหมดอายุ';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN มี 17 ตัวอักษร อันนี้มี $count';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN มีแค่ตัวอักษรและตัวเลข และไม่มี I, O หรือ Q เลย';
+
+  @override
+  String get idCheckVinDigit => 'ตัวตรวจสอบ (ตัวที่ 9) ไม่ตรงกัน รถที่ผลิตสำหรับอเมริกาเหนือมีเสมอ รถอื่นอาจไม่มี';
+
+  @override
+  String get idCheckVinOk => 'ตรงกับรูปแบบ VIN และตัวตรวจสอบ';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'สั้นเกินไปสำหรับเลขใบขับขี่ของประเทศนี้ ($country): $count จาก $expected โปรดตรวจว่ามีตัวเลขหรือตัวอักษรหายไปหรือไม่';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'ยาวเกินไปสำหรับเลขใบขับขี่ของประเทศนี้ ($country): $count จาก $expected โปรดตรวจว่ามีตัวเลขหรือตัวอักษรเกินหรือไม่';
+  }
 }

@@ -10970,4 +10970,159 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Tikrinama žinutė';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Per trumpas šios šalies asmens kodui ($country): $count iš $expected. Patikrink, ar netrūksta skaitmens.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Per ilgas šios šalies asmens kodui ($country): $count iš $expected. Patikrink, ar nėra papildomo skaitmens.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Per trumpas šios šalies paso numeriui ($country): $count iš $expected. Patikrink, ar netrūksta skaitmens ar raidės.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Per ilgas šios šalies paso numeriui ($country): $count iš $expected. Patikrink, ar nėra papildomo skaitmens ar raidės.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Tai neatrodo kaip šios šalies numeris ($country). Jis turėtų atrodyti taip: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Tai neatrodo kaip šios šalies numeris ($country). Patikrink raides ir skaitmenis.';
+  }
+
+  @override
+  String get idCheckDigit => 'Kontrolinis skaitmuo nesutampa, todėl kuris nors skaitmuo gali būti neteisingas arba du sukeisti.';
+
+  @override
+  String get idCheckDate => 'Gimimo data šiame numeryje nėra tikra data. Patikrink tuos skaitmenis.';
+
+  @override
+  String get idCheckCardNote => 'Jei tai kortelės numeris, o ne asmens kodas, gali į tai nekreipti dėmesio.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Tai atitinka šios šalies numerio formatą ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Tikrinamas numeris';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Sukeitus $first ir $second skaitmenis, jis tinkamas.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Pridėjus $digit kaip $position-ąjį skaitmenį, jis tinkamas.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Pašalinus $position-ąjį skaitmenį, jis tinkamas.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" tikriausiai yra neteisingai nuskaitytas \"$fixed\". Su šiuo pakeitimu jis tinkamas.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Jis tinkamas kitai šaliai: $countries. Patikrink įrašo šalį.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Šis numeris jau yra kitame įraše: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Naudoti šį pataisymą';
+
+  @override
+  String get assistantNumberFixTitle => 'Pataisyti numerį';
+
+  @override
+  String get assistantNumberFixNothing => 'Šiame pokalbyje nėra numerio, kurį reikėtų taisyti.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Tos dalies numeryje nėra arba ji yra daugiau nei kartą. Apibūdink aplinkinius skaitmenis kitaip.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Ten netinka nė vienas skaitmuo. Pasakyk, kurio skaitmens trūksta.';
+
+  @override
+  String get assistantNumberFixNote => 'Numeris lieka šiame telefone.';
+
+  @override
+  String get assistantNumberFixDone => 'Numeris atnaujintas.';
+
+  @override
+  String get assistantNumberFixChange => 'Pakeitimas';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Asmens kodas dokumento kodo eilutėse yra kitas. Jis baigiasi $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Numeris dokumento kodo eilutėse yra kitas. Jis baigiasi $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'VIN registracijos lipduke yra kitas. Jis baigiasi $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Gimimo data šiame numeryje nėra ta, kuri dokumente ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Tokie dokumentai iš šios šalies ($country) galioja ne ilgiau kaip $years m. Patikrink galiojimo datą.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Vaikui šis dokumentas galioja $years m. Patikrink galiojimo datą.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN turi 17 simbolių. Šis turi $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN turi tik raides ir skaitmenis, niekada I, O ar Q.';
+
+  @override
+  String get idCheckVinDigit => 'Kontrolinis skaitmuo (9-asis simbolis) nesutampa. Šiaurės Amerikai pagaminti automobiliai jį turi visada; kiti gali neturėti.';
+
+  @override
+  String get idCheckVinOk => 'Tai atitinka VIN formatą ir jo kontrolinį skaitmenį.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Per trumpas šios šalies vairuotojo pažymėjimo numeriui ($country): $count iš $expected. Patikrink, ar netrūksta skaitmens ar raidės.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Per ilgas šios šalies vairuotojo pažymėjimo numeriui ($country): $count iš $expected. Patikrink, ar nėra papildomo skaitmens ar raidės.';
+  }
 }

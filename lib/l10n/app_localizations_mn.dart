@@ -10801,4 +10801,159 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Мессежийг шалгаж байна';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Энэ улсын хувийн дугаарт хэт богино байна ($country): $count/$expected. Цифр дутуу эсэхийг шалгана уу.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Энэ улсын хувийн дугаарт хэт урт байна ($country): $count/$expected. Илүү цифр байгаа эсэхийг шалгана уу.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Энэ улсын паспортын дугаарт хэт богино байна ($country): $count/$expected. Цифр эсвэл үсэг дутуу эсэхийг шалгана уу.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Энэ улсын паспортын дугаарт хэт урт байна ($country): $count/$expected. Илүү цифр эсвэл үсэг байгаа эсэхийг шалгана уу.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Энэ нь энэ улсын дугаартай адилгүй байна ($country). Иймэрхүү байх ёстой: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Энэ нь энэ улсын дугаартай адилгүй байна ($country). Үсэг, цифрээ шалгана уу.';
+  }
+
+  @override
+  String get idCheckDigit => 'Хяналтын цифр таарахгүй байна, тиймээс нэг цифр буруу эсвэл хоёр нь байраа сольсон байж магадгүй.';
+
+  @override
+  String get idCheckDate => 'Энэ дугаар дахь төрсөн огноо бодит огноо биш байна. Тэдгээр цифрийг шалгана уу.';
+
+  @override
+  String get idCheckCardNote => 'Хэрэв энэ нь хувийн дугаар биш, картын өөрийн дугаар бол үүнийг үл тоож болно.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Энэ улсын дугаарын хэлбэрт таарч байна ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Дугаарыг шалгаж байна';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return '$first, $second-р цифрын байрыг солибол зөв болно.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return '$digit-г $position-р цифр болгон нэмбэл зөв болно.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return '$position-р цифрыг хасвал зөв болно.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '«$read» нь буруу уншигдсан «$fixed» байж магадгүй. Энэ өөрчлөлтөөр зөв болно.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Энэ нь өөр улсад зөв: $countries. Бүртгэлийн улсыг шалгана уу.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Энэ дугаар өөр бүртгэлд аль хэдийн байна: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Энэ засварыг ашиглах';
+
+  @override
+  String get assistantNumberFixTitle => 'Дугаарыг засах';
+
+  @override
+  String get assistantNumberFixNothing => 'Энэ чатад засах дугаар алга.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Тэр хэсэг дугаарт алга, эсвэл нэгээс олон удаа байна. Түүний орчмын цифрийг өөрөөр хэлнэ үү.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Тэнд нэг ч цифр таарахгүй. Аль цифр дутуу байгааг хэлнэ үү.';
+
+  @override
+  String get assistantNumberFixNote => 'Дугаар энэ утсанд үлдэнэ.';
+
+  @override
+  String get assistantNumberFixDone => 'Дугаар шинэчлэгдлээ.';
+
+  @override
+  String get assistantNumberFixChange => 'Өөрчлөлт';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Баримт бичгийн кодын мөрөн дэх иргэний дугаар өөр байна. $last-ээр төгсдөг.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Баримт бичгийн кодын мөрөн дэх дугаар өөр байна. $last-ээр төгсдөг.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'Тээврийн хэрэгслийн шошгон дээрх VIN өөр байна. $last-ээр төгсдөг.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Энэ дугаар дахь төрсөн огноо баримт бичигт байгаатай таарахгүй ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Энэ улсын ($country) ийм баримт бичиг хамгийн ихдээ $years жил хүчинтэй. Дуусах огноог шалгана уу.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Хүүхдийн хувьд энэ баримт бичиг $years жил хүчинтэй. Дуусах огноог шалгана уу.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN нь 17 тэмдэгттэй. Үүнд $count байна.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN нь зөвхөн үсэг, цифртэй бөгөөд хэзээ ч I, O, Q байдаггүй.';
+
+  @override
+  String get idCheckVinDigit => 'Шалгах тэмдэгт (9 дэх) таарахгүй байна. Хойд Америкт зориулсан машинд үргэлж байдаг; бусдад байхгүй байж болно.';
+
+  @override
+  String get idCheckVinOk => 'Энэ нь VIN-ий хэлбэр болон шалгах тэмдэгттэй таарч байна.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Энэ улсын жолооны үнэмлэхийн дугаарт хэт богино ($country): $count/$expected. Цифр эсвэл үсэг дутуу эсэхийг шалгана уу.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Энэ улсын жолооны үнэмлэхийн дугаарт хэт урт ($country): $count/$expected. Илүү цифр эсвэл үсэг байгаа эсэхийг шалгана уу.';
+  }
 }

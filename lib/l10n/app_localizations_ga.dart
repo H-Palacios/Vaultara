@@ -11019,4 +11019,159 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Ag seiceáil na teachtaireachta';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Ró-ghearr d\'uimhir aitheantais ón tír seo ($country): $count as $expected. Seiceáil an bhfuil digit in easnamh.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Ró-fhada d\'uimhir aitheantais ón tír seo ($country): $count as $expected. Seiceáil an bhfuil digit breise ann.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Ró-ghearr d\'uimhir phas ón tír seo ($country): $count as $expected. Seiceáil an bhfuil digit nó litir in easnamh.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Ró-fhada d\'uimhir phas ón tír seo ($country): $count as $expected. Seiceáil an bhfuil digit nó litir bhreise ann.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Ní cosúil le huimhir ón tír seo é ($country). Ba cheart go mbeadh sé mar seo: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Ní cosúil le huimhir ón tír seo é ($country). Seiceáil na litreacha agus na digití.';
+  }
+
+  @override
+  String get idCheckDigit => 'Ní hionann an digit seiceála, mar sin d\'fhéadfadh digit a bheith mícheart nó dhá cheann a bheith malartaithe.';
+
+  @override
+  String get idCheckDate => 'Ní fíordháta é an dáta breithe san uimhir seo. Seiceáil na digití sin.';
+
+  @override
+  String get idCheckCardNote => 'Más uimhir an chárta féin í seo agus ní an uimhir aitheantais, is féidir neamhaird a dhéanamh de seo.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Tá sé seo ag teacht le formáid uimhreacha na tíre seo ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Ag seiceáil na huimhreach';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Má mhalartaíonn tú digití $first agus $second, tá sé bailí.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Má chuireann tú $digit isteach mar dhigit $position, tá sé bailí.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Má bhaineann tú digit $position amach, tá sé bailí.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return 'Is dócha gur \"$fixed\" a léadh mícheart é \"$read\". Leis an athrú sin tá sé bailí.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Tá sé bailí do thír eile: $countries. Seiceáil an tír ar an taifead.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Tá an uimhir seo ar thaifead eile cheana: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Úsáid an ceartú seo';
+
+  @override
+  String get assistantNumberFixTitle => 'Ceartaigh an uimhir';
+
+  @override
+  String get assistantNumberFixNothing => 'Níl aon uimhir sa chomhrá seo le ceartú.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Níl an chuid sin san uimhir, nó tá sí ann níos mó ná uair amháin. Ainmnigh na digití timpeall uirthi ar bhealach eile.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Ní oireann aon digit amháin ansin. Abair cén digit atá in easnamh.';
+
+  @override
+  String get assistantNumberFixNote => 'Fanann an uimhir ar an bhfón seo.';
+
+  @override
+  String get assistantNumberFixDone => 'Uimhir nuashonraithe.';
+
+  @override
+  String get assistantNumberFixChange => 'Athrú';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Tá an uimhir aitheantais i línte cóid na cáipéise difriúil. Críochnaíonn sí le $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Tá an uimhir i línte cóid na cáipéise difriúil. Críochnaíonn sí le $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'Tá an VIN ar an diosca ceadúnais difriúil. Críochnaíonn sé le $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Ní hé an dáta breithe san uimhir seo an ceann atá ar an gcáipéis ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Maireann cáipéisí mar seo ón tír seo ($country) $years bliain ar a mhéad. Seiceáil an dáta éaga.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Do pháiste, maireann an cháipéis seo $years bliain. Seiceáil an dáta éaga.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'Tá 17 gcarachtar i VIN. Tá $count sa cheann seo.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'Níl ach litreacha agus digití i VIN, agus ní bhíonn I, O ná Q riamh ann.';
+
+  @override
+  String get idCheckVinDigit => 'Ní hionann an digit seiceála (an 9ú carachtar). Bíonn ceann i gcónaí ag gluaisteáin do Mheiriceá Thuaidh; b\'fhéidir nach mbíonn ag cinn eile.';
+
+  @override
+  String get idCheckVinOk => 'Tá sé seo ag teacht le formáid VIN agus lena dhigit seiceála.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Ró-ghearr d\'uimhir cheadúnas tiomána ón tír seo ($country): $count as $expected. Seiceáil an bhfuil digit nó litir in easnamh.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Ró-fhada d\'uimhir cheadúnas tiomána ón tír seo ($country): $count as $expected. Seiceáil an bhfuil digit nó litir bhreise ann.';
+  }
 }

@@ -13846,5 +13846,353 @@
   "assistantStepScam": "Checking the message",
   "@assistantStepScam": {
     "description": "Ask Vaultara status while it checks a message for signs of a scam."
+  },
+  "idCheckShortId": "Too short for an ID number from this country ({country}): {count} of {expected}. Check for a missing digit.",
+  "@idCheckShortId": {
+    "description": "Record form, under the number field of an ID card: the number is shorter than the country's ID numbers. {country} is the country name in English; {count} is how many characters were typed; {expected} is the length the country uses, such as 13 or 7-8.",
+    "placeholders": {
+      "country": {
+        "type": "String",
+        "example": "South Africa"
+      },
+      "count": {
+        "type": "String",
+        "example": "11"
+      },
+      "expected": {
+        "type": "String",
+        "example": "13"
+      }
+    }
+  },
+  "idCheckLongId": "Too long for an ID number from this country ({country}): {count} of {expected}. Check for an extra digit.",
+  "@idCheckLongId": {
+    "description": "Record form, under the number field of an ID card: the number is longer than the country's ID numbers. Placeholders as idCheckShortId.",
+    "placeholders": {
+      "country": {
+        "type": "String",
+        "example": "South Africa"
+      },
+      "count": {
+        "type": "String",
+        "example": "14"
+      },
+      "expected": {
+        "type": "String",
+        "example": "13"
+      }
+    }
+  },
+  "idCheckShortPassport": "Too short for a passport number from this country ({country}): {count} of {expected}. Check for a missing digit or letter.",
+  "@idCheckShortPassport": {
+    "description": "Record form, under the number field of a passport: the number is shorter than the country's passport numbers. Placeholders as idCheckShortId.",
+    "placeholders": {
+      "country": {
+        "type": "String",
+        "example": "India"
+      },
+      "count": {
+        "type": "String",
+        "example": "7"
+      },
+      "expected": {
+        "type": "String",
+        "example": "8"
+      }
+    }
+  },
+  "idCheckLongPassport": "Too long for a passport number from this country ({country}): {count} of {expected}. Check for an extra digit or letter.",
+  "@idCheckLongPassport": {
+    "description": "Record form, under the number field of a passport: the number is longer than the country's passport numbers. Placeholders as idCheckShortId.",
+    "placeholders": {
+      "country": {
+        "type": "String",
+        "example": "India"
+      },
+      "count": {
+        "type": "String",
+        "example": "9"
+      },
+      "expected": {
+        "type": "String",
+        "example": "8"
+      }
+    }
+  },
+  "idCheckFormat": "This doesn't look like a number from this country ({country}). It should look like {example}.",
+  "@idCheckFormat": {
+    "description": "Record form: the number has the wrong mix of letters and digits for the country. {example} is a made-up number in the right format.",
+    "placeholders": {
+      "country": {
+        "type": "String",
+        "example": "Spain"
+      },
+      "example": {
+        "type": "String",
+        "example": "12345678Z"
+      }
+    }
+  },
+  "idCheckFormatNoExample": "This doesn't look like a number from this country ({country}). Check the letters and digits.",
+  "@idCheckFormatNoExample": {
+    "description": "Record form: the number has the wrong mix of letters and digits for the country, when there is no example to show.",
+    "placeholders": {
+      "country": {
+        "type": "String",
+        "example": "Canada"
+      }
+    }
+  },
+  "idCheckDigit": "The check digit doesn't match, so a digit may be wrong or two may be swapped.",
+  "@idCheckDigit": {
+    "description": "Record form: the ID number fails its check digit."
+  },
+  "idCheckDate": "The birth date in this number isn't a real date. Check those digits.",
+  "@idCheckDate": {
+    "description": "Record form: the birth date written inside the ID number is not a real date."
+  },
+  "idCheckCardNote": "If this is the card's own number, not the ID number, you can ignore this.",
+  "@idCheckCardNote": {
+    "description": "Added after an ID number problem, for countries whose ID card also has its own card number."
+  },
+  "idCheckOk": "This matches the number format for this country ({country}).",
+  "@idCheckOk": {
+    "description": "Record form, under the number field: the number matches the country's format.",
+    "placeholders": {
+      "country": {
+        "type": "String",
+        "example": "South Africa"
+      }
+    }
+  },
+  "assistantStepIdCheck": "Checking the number",
+  "@assistantStepIdCheck": {
+    "description": "Ask Vaultara status while it checks an ID or passport number."
+  },
+  "idHintSwap": "Swapping digits {first} and {second} makes it valid.",
+  "@idHintSwap": {
+    "description": "Under an ID number that fails its check: swapping two digits next to each other makes it valid. {first} and {second} are digit positions counting from 1.",
+    "placeholders": {
+      "first": {
+        "type": "String",
+        "example": "7"
+      },
+      "second": {
+        "type": "String",
+        "example": "8"
+      }
+    }
+  },
+  "idHintMissing": "Adding {digit} as digit {position} makes it valid.",
+  "@idHintMissing": {
+    "description": "Under an ID number that is one digit short: adding this digit at this position makes it valid. {position} counts from 1.",
+    "placeholders": {
+      "digit": {
+        "type": "String",
+        "example": "0"
+      },
+      "position": {
+        "type": "String",
+        "example": "11"
+      }
+    }
+  },
+  "idHintExtra": "Removing digit {position} makes it valid.",
+  "@idHintExtra": {
+    "description": "Under an ID number that is one digit too long: removing the digit at this position makes it valid.",
+    "placeholders": {
+      "position": {
+        "type": "String",
+        "example": "12"
+      }
+    }
+  },
+  "idHintLookAlike": "\"{read}\" is probably a misread \"{fixed}\". With that change it is valid.",
+  "@idHintLookAlike": {
+    "description": "Under a number read from a photo: a letter was probably a digit that looks like it (O and 0, S and 5).",
+    "placeholders": {
+      "read": {
+        "type": "String",
+        "example": "O"
+      },
+      "fixed": {
+        "type": "String",
+        "example": "0"
+      }
+    }
+  },
+  "idHintOtherCountry": "It is valid for another country: {countries}. Check the country on the record.",
+  "@idHintOtherCountry": {
+    "description": "Under an ID number: it fits the rules of another country, or several that share one rule. {countries} is a list of country names.",
+    "placeholders": {
+      "countries": {
+        "type": "String",
+        "example": "Serbia, Slovenia"
+      }
+    }
+  },
+  "idHintDuplicate": "This number is already on another record: {record}.",
+  "@idHintDuplicate": {
+    "description": "Under a number: another record already has the same number. {record} is that record's name.",
+    "placeholders": {
+      "record": {
+        "type": "String",
+        "example": "ID card"
+      }
+    }
+  },
+  "idHintUse": "Use this fix",
+  "@idHintUse": {
+    "description": "Button under a number: put in the fixed number the hint describes."
+  },
+  "assistantNumberFixTitle": "Fix the number",
+  "@assistantNumberFixTitle": {
+    "description": "Ask Vaultara card title: change part of the ID or passport number in the chat."
+  },
+  "assistantNumberFixNothing": "There's no number in this chat to fix.",
+  "@assistantNumberFixNothing": {
+    "description": "Ask Vaultara number fix card: no number has been typed or read in this chat."
+  },
+  "assistantNumberFixNotFound": "That part isn't in the number, or it's there more than once. Name the digits around it another way.",
+  "@assistantNumberFixNotFound": {
+    "description": "Ask Vaultara number fix card: the digits the user named are not in the number, or appear twice."
+  },
+  "assistantNumberFixNoDigit": "No single digit fits there. Say which digit is missing.",
+  "@assistantNumberFixNoDigit": {
+    "description": "Ask Vaultara number fix card: the phone could not work out a single digit that fits where the user said one is missing."
+  },
+  "assistantNumberFixNote": "The number stays on this phone.",
+  "@assistantNumberFixNote": {
+    "description": "Ask Vaultara number fix card: the whole number is never sent anywhere."
+  },
+  "assistantNumberFixDone": "Number updated.",
+  "@assistantNumberFixDone": {
+    "description": "Snack bar after a number fix card was confirmed."
+  },
+  "assistantNumberFixChange": "Change",
+  "@assistantNumberFixChange": {
+    "description": "Row label on the number fix card, showing the change, like 5009 [0]."
+  },
+  "idCrossPersonal": "The ID number in the document's code lines is different. It ends in {last}.",
+  "@idCrossPersonal": {
+    "description": "Under an ID number: the personal number in the scanned code lines (MRZ) is different. {last} is its last four digits.",
+    "placeholders": {
+      "last": {
+        "type": "String",
+        "example": "9087"
+      }
+    }
+  },
+  "idCrossDocument": "The number in the document's code lines is different. It ends in {last}.",
+  "@idCrossDocument": {
+    "description": "Under a document number: the number in the scanned code lines (MRZ) is different. {last} is its last four characters.",
+    "placeholders": {
+      "last": {
+        "type": "String",
+        "example": "4821"
+      }
+    }
+  },
+  "idCrossVin": "The VIN on the licence disc is different. It ends in {last}.",
+  "@idCrossVin": {
+    "description": "Under a VIN: the VIN on the scanned licence disc is different. {last} is its last four characters.",
+    "placeholders": {
+      "last": {
+        "type": "String",
+        "example": "2788"
+      }
+    }
+  },
+  "idCrossBirth": "The birth date in this number isn't the one on the document ({date}).",
+  "@idCrossBirth": {
+    "description": "Under an ID number: the birth date inside the number is not the birth date read from the document. {date} is that date.",
+    "placeholders": {
+      "date": {
+        "type": "String",
+        "example": "1980-01-01"
+      }
+    }
+  },
+  "idDateTooFar": "Documents like this from this country ({country}) last at most {years} years. Check the expiry date.",
+  "@idDateTooFar": {
+    "description": "Under an expiry date: it is further away than this kind of document lasts in this country.",
+    "placeholders": {
+      "country": {
+        "type": "String",
+        "example": "South Africa"
+      },
+      "years": {
+        "type": "String",
+        "example": "10"
+      }
+    }
+  },
+  "idDateChild": "For a child, this document lasts {years} years. Check the expiry date.",
+  "@idDateChild": {
+    "description": "Under an expiry date: the holder is a child, and child documents last fewer years.",
+    "placeholders": {
+      "years": {
+        "type": "String",
+        "example": "5"
+      }
+    }
+  },
+  "idCheckVinLength": "A VIN has 17 characters. This one has {count}.",
+  "@idCheckVinLength": {
+    "description": "Under a VIN that is not 17 characters long.",
+    "placeholders": {
+      "count": {
+        "type": "String",
+        "example": "16"
+      }
+    }
+  },
+  "idCheckVinFormat": "A VIN has only letters and digits, and never I, O or Q.",
+  "@idCheckVinFormat": {
+    "description": "Under a VIN with a character a VIN never has."
+  },
+  "idCheckVinDigit": "The check digit (the 9th character) doesn't match. Cars made for North America always have one; others may not.",
+  "@idCheckVinDigit": {
+    "description": "Under a VIN whose check digit (9th character) does not match."
+  },
+  "idCheckVinOk": "This matches the VIN format and its check digit.",
+  "@idCheckVinOk": {
+    "description": "Under a VIN that passes the format and check digit."
+  },
+  "idCheckShortLicence": "Too short for a driving licence number from this country ({country}): {count} of {expected}. Check for a missing digit or letter.",
+  "@idCheckShortLicence": {
+    "description": "Under a driving licence number that is too short for its country.",
+    "placeholders": {
+      "country": {
+        "type": "String",
+        "example": "United Kingdom"
+      },
+      "count": {
+        "type": "String",
+        "example": "15"
+      },
+      "expected": {
+        "type": "String",
+        "example": "16"
+      }
+    }
+  },
+  "idCheckLongLicence": "Too long for a driving licence number from this country ({country}): {count} of {expected}. Check for an extra digit or letter.",
+  "@idCheckLongLicence": {
+    "description": "Under a driving licence number that is too long for its country.",
+    "placeholders": {
+      "country": {
+        "type": "String",
+        "example": "United Kingdom"
+      },
+      "count": {
+        "type": "String",
+        "example": "17"
+      },
+      "expected": {
+        "type": "String",
+        "example": "16"
+      }
+    }
   }
 }

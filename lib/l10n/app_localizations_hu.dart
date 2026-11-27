@@ -10811,4 +10811,159 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Üzenet ellenőrzése';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Túl rövid az ország személyi azonosítójához ($country): $count / $expected. Nézd meg, nem hiányzik-e egy számjegy.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Túl hosszú az ország személyi azonosítójához ($country): $count / $expected. Nézd meg, nincs-e benne egy fölösleges számjegy.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Túl rövid az ország útlevélszámához ($country): $count / $expected. Nézd meg, nem hiányzik-e egy számjegy vagy betű.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Túl hosszú az ország útlevélszámához ($country): $count / $expected. Nézd meg, nincs-e benne fölösleges számjegy vagy betű.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Ez nem úgy néz ki, mint egy szám ebből az országból ($country). Így kellene kinéznie: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Ez nem úgy néz ki, mint egy szám ebből az országból ($country). Ellenőrizd a betűket és a számjegyeket.';
+  }
+
+  @override
+  String get idCheckDigit => 'Az ellenőrző számjegy nem egyezik, így egy számjegy hibás lehet, vagy kettő fel van cserélve.';
+
+  @override
+  String get idCheckDate => 'A számban lévő születési dátum nem valódi dátum. Ellenőrizd ezeket a számjegyeket.';
+
+  @override
+  String get idCheckCardNote => 'Ha ez a kártya saját száma, és nem a személyi azonosító, figyelmen kívül hagyhatod.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Ez megfelel az ország számformátumának ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Szám ellenőrzése';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Ha felcseréled a(z) $first. és $second. számjegyet, érvényes.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Ha beírod a(z) $digit számot $position. számjegynek, érvényes.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Ha törlöd a(z) $position. számjegyet, érvényes.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return 'A(z) „$read” valószínűleg rosszul beolvasott „$fixed”. Ezzel a javítással érvényes.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Egy másik országban érvényes: $countries. Ellenőrizd a tétel országát.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Ez a szám már szerepel egy másik tételnél: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Javítás használata';
+
+  @override
+  String get assistantNumberFixTitle => 'Szám javítása';
+
+  @override
+  String get assistantNumberFixNothing => 'Ebben a csevegésben nincs javítható szám.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Ez a rész nincs a számban, vagy többször is szerepel. Írd le másképp a körülötte lévő számjegyeket.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Oda egyetlen számjegy sem illik. Mondd meg, melyik számjegy hiányzik.';
+
+  @override
+  String get assistantNumberFixNote => 'A szám ezen a telefonon marad.';
+
+  @override
+  String get assistantNumberFixDone => 'Szám frissítve.';
+
+  @override
+  String get assistantNumberFixChange => 'Változás';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'A dokumentum kódsoraiban más személyi azonosító áll. $last végű.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'A dokumentum kódsoraiban más szám áll. $last végű.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'A forgalmi matricán más alvázszám (VIN) áll. $last végű.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'A számban lévő születési dátum nem az, ami a dokumentumon van ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Az ilyen dokumentumok ebből az országból ($country) legfeljebb $years évig érvényesek. Ellenőrizd a lejárati dátumot.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Gyereknek ez a dokumentum $years évig érvényes. Ellenőrizd a lejárati dátumot.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'Az alvázszám (VIN) 17 karakteres. Ez $count karakteres.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'Az alvázszámban csak betűk és számjegyek vannak, de soha nincs I, O vagy Q.';
+
+  @override
+  String get idCheckVinDigit => 'Az ellenőrző karakter (a 9.) nem egyezik. Az Észak-Amerikába gyártott autóknál mindig van; másoknál lehet, hogy nincs.';
+
+  @override
+  String get idCheckVinOk => 'Ez megfelel az alvázszám formátumának és ellenőrző karakterének.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Túl rövid az ország jogosítványszámához ($country): $count / $expected. Nézd meg, nem hiányzik-e egy számjegy vagy betű.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Túl hosszú az ország jogosítványszámához ($country): $count / $expected. Nézd meg, nincs-e benne fölösleges számjegy vagy betű.';
+  }
 }

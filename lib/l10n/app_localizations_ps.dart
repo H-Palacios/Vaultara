@@ -10811,4 +10811,159 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'پیغام کتل کېږي';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'د دې هېواد د پېژند شمېرې لپاره ډېر لنډ دی ($country): $count له $expected. وګورئ چې کومه عدد پاتې نه وي.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'د دې هېواد د پېژند شمېرې لپاره ډېر اوږد دی ($country): $count له $expected. وګورئ چې اضافي عدد نه وي.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'د دې هېواد د پاسپورټ شمېرې لپاره ډېر لنډ دی ($country): $count له $expected. وګورئ چې عدد یا توری پاتې نه وي.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'د دې هېواد د پاسپورټ شمېرې لپاره ډېر اوږد دی ($country): $count له $expected. وګورئ چې اضافي عدد یا توری نه وي.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'دا د دې هېواد شمېرې ته ورته نه ښکاري ($country). باید داسې وي: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'دا د دې هېواد شمېرې ته ورته نه ښکاري ($country). توري او عددونه وګورئ.';
+  }
+
+  @override
+  String get idCheckDigit => 'د کنټرول عدد سم نه دی، نو ښايي یو عدد غلط وي یا دوه ځای بدل شوي وي.';
+
+  @override
+  String get idCheckDate => 'په دې شمېره کې د زېږون نېټه رښتینې نېټه نه ده. هغه عددونه وګورئ.';
+
+  @override
+  String get idCheckCardNote => 'که دا د کارت خپله شمېره وي، نه د پېژند شمېره، کولی شئ له پامه یې وغورځوئ.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'دا د دې هېواد د شمېرې بڼې سره سمون لري ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'شمېره کتل کېږي';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'د $first او $second عددونو ځای بدلول یې سم کوي.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'د $digit اضافه کول د $position عدد په توګه یې سم کوي.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'د $position عدد لرې کول یې سم کوي.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" ښايي غلط لوستل شوی \"$fixed\" وي. په دې بدلون سره سم دی.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'د بل هېواد لپاره سم دی: $countries. په ریکارډ کې هېواد وګورئ.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'دا شمېره دمخه په بل ریکارډ کې ده: $record.';
+  }
+
+  @override
+  String get idHintUse => 'دا سمون وکاروئ';
+
+  @override
+  String get assistantNumberFixTitle => 'شمېره سمه کړئ';
+
+  @override
+  String get assistantNumberFixNothing => 'په دې چټ کې د سمولو لپاره شمېره نشته.';
+
+  @override
+  String get assistantNumberFixNotFound => 'دا برخه په شمېره کې نشته، یا له یو ځل ډېر راغلې. شاوخوا عددونه په بل ډول ووایاست.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'هلته هېڅ یو عدد نه برابرېږي. ووایاست کوم عدد پاتې دی.';
+
+  @override
+  String get assistantNumberFixNote => 'شمېره په همدې تلیفون کې پاتې کېږي.';
+
+  @override
+  String get assistantNumberFixDone => 'شمېره تازه شوه.';
+
+  @override
+  String get assistantNumberFixChange => 'بدلون';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'د سند د کوډ په کرښو کې د پېژند شمېره بله ده. په $last پای ته رسېږي.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'د سند د کوډ په کرښو کې شمېره بله ده. په $last پای ته رسېږي.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'د جواز پر سټیکر د VIN شمېره بله ده. په $last پای ته رسېږي.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'په دې شمېره کې د زېږون نېټه د سند نه ده ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'د دې هېواد ($country) داسې سندونه تر $years کلونو پورې اعتبار لري. د پای نېټه وګورئ.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'د ماشوم لپاره دا سند $years کاله اعتبار لري. د پای نېټه وګورئ.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN ۱۷ توري لري. دا $count لري.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN یوازې توري او عددونه لري، هېڅکله I، O یا Q نه.';
+
+  @override
+  String get idCheckVinDigit => 'د کنټرول عدد (نهم توری) سم نه دی. د شمالي امریکا لپاره جوړ شوي موټر یې تل لري؛ نور ښايي ونه لري.';
+
+  @override
+  String get idCheckVinOk => 'دا د VIN بڼې او د هغه د کنټرول عدد سره سمون لري.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'د دې هېواد د موټر چلولو جواز شمېرې لپاره ډېر لنډ دی ($country): $count له $expected. وګورئ چې عدد یا توری پاتې نه وي.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'د دې هېواد د موټر چلولو جواز شمېرې لپاره ډېر اوږد دی ($country): $count له $expected. وګورئ چې اضافي عدد یا توری نه وي.';
+  }
 }

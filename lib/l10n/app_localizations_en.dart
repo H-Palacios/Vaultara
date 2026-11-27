@@ -10836,4 +10836,159 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Checking the message';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Too short for an ID number from this country ($country): $count of $expected. Check for a missing digit.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Too long for an ID number from this country ($country): $count of $expected. Check for an extra digit.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Too short for a passport number from this country ($country): $count of $expected. Check for a missing digit or letter.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Too long for a passport number from this country ($country): $count of $expected. Check for an extra digit or letter.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'This doesn\'t look like a number from this country ($country). It should look like $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'This doesn\'t look like a number from this country ($country). Check the letters and digits.';
+  }
+
+  @override
+  String get idCheckDigit => 'The check digit doesn\'t match, so a digit may be wrong or two may be swapped.';
+
+  @override
+  String get idCheckDate => 'The birth date in this number isn\'t a real date. Check those digits.';
+
+  @override
+  String get idCheckCardNote => 'If this is the card\'s own number, not the ID number, you can ignore this.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'This matches the number format for this country ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Checking the number';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Swapping digits $first and $second makes it valid.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Adding $digit as digit $position makes it valid.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Removing digit $position makes it valid.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" is probably a misread \"$fixed\". With that change it is valid.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'It is valid for another country: $countries. Check the country on the record.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'This number is already on another record: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Use this fix';
+
+  @override
+  String get assistantNumberFixTitle => 'Fix the number';
+
+  @override
+  String get assistantNumberFixNothing => 'There\'s no number in this chat to fix.';
+
+  @override
+  String get assistantNumberFixNotFound => 'That part isn\'t in the number, or it\'s there more than once. Name the digits around it another way.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'No single digit fits there. Say which digit is missing.';
+
+  @override
+  String get assistantNumberFixNote => 'The number stays on this phone.';
+
+  @override
+  String get assistantNumberFixDone => 'Number updated.';
+
+  @override
+  String get assistantNumberFixChange => 'Change';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'The ID number in the document\'s code lines is different. It ends in $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'The number in the document\'s code lines is different. It ends in $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'The VIN on the licence disc is different. It ends in $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'The birth date in this number isn\'t the one on the document ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Documents like this from this country ($country) last at most $years years. Check the expiry date.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'For a child, this document lasts $years years. Check the expiry date.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'A VIN has 17 characters. This one has $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'A VIN has only letters and digits, and never I, O or Q.';
+
+  @override
+  String get idCheckVinDigit => 'The check digit (the 9th character) doesn\'t match. Cars made for North America always have one; others may not.';
+
+  @override
+  String get idCheckVinOk => 'This matches the VIN format and its check digit.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Too short for a driving licence number from this country ($country): $count of $expected. Check for a missing digit or letter.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Too long for a driving licence number from this country ($country): $count of $expected. Check for an extra digit or letter.';
+  }
 }

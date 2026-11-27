@@ -10823,4 +10823,159 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Controllo del messaggio';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Troppo corto per un numero d\'identità di questo paese ($country): $count su $expected. Controlla se manca una cifra.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Troppo lungo per un numero d\'identità di questo paese ($country): $count su $expected. Controlla se c\'è una cifra in più.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Troppo corto per un numero di passaporto di questo paese ($country): $count su $expected. Controlla se manca una cifra o una lettera.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Troppo lungo per un numero di passaporto di questo paese ($country): $count su $expected. Controlla se c\'è una cifra o una lettera in più.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Non sembra un numero di questo paese ($country). Dovrebbe essere così: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Non sembra un numero di questo paese ($country). Controlla lettere e cifre.';
+  }
+
+  @override
+  String get idCheckDigit => 'La cifra di controllo non corrisponde: forse una cifra è sbagliata o due sono invertite.';
+
+  @override
+  String get idCheckDate => 'La data di nascita in questo numero non è una data reale. Controlla quelle cifre.';
+
+  @override
+  String get idCheckCardNote => 'Se è il numero proprio della carta e non il numero d\'identità, puoi ignorarlo.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Corrisponde al formato dei numeri di questo paese ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Controllo del numero';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Scambiando le cifre $first e $second è valido.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Aggiungendo $digit come cifra $position è valido.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Togliendo la cifra $position è valido.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" è probabilmente un \"$fixed\" letto male. Con questa modifica è valido.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'È valido per un altro paese: $countries. Controlla il paese del documento.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Questo numero è già in un altro documento: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Usa questa correzione';
+
+  @override
+  String get assistantNumberFixTitle => 'Correggi il numero';
+
+  @override
+  String get assistantNumberFixNothing => 'In questa chat non c\'è nessun numero da correggere.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Quella parte non è nel numero, o c\'è più di una volta. Indica le cifre intorno in un altro modo.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Lì non va bene nessuna cifra singola. Di\' quale cifra manca.';
+
+  @override
+  String get assistantNumberFixNote => 'Il numero resta su questo telefono.';
+
+  @override
+  String get assistantNumberFixDone => 'Numero aggiornato.';
+
+  @override
+  String get assistantNumberFixChange => 'Modifica';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Il numero d\'identità nelle righe di codice del documento è diverso. Finisce con $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Il numero nelle righe di codice del documento è diverso. Finisce con $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'Il VIN sul talloncino è diverso. Finisce con $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'La data di nascita in questo numero non è quella del documento ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Documenti come questo di questo paese ($country) durano al massimo $years anni. Controlla la data di scadenza.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Per un bambino questo documento dura $years anni. Controlla la data di scadenza.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'Un VIN ha 17 caratteri. Questo ne ha $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'Un VIN ha solo lettere e cifre, e mai I, O o Q.';
+
+  @override
+  String get idCheckVinDigit => 'La cifra di controllo (il 9° carattere) non corrisponde. Le auto per il Nord America ce l\'hanno sempre; le altre forse no.';
+
+  @override
+  String get idCheckVinOk => 'Corrisponde al formato VIN e alla sua cifra di controllo.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Troppo corto per un numero di patente di questo paese ($country): $count su $expected. Controlla se manca una cifra o una lettera.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Troppo lungo per un numero di patente di questo paese ($country): $count su $expected. Controlla se c\'è una cifra o una lettera in più.';
+  }
 }

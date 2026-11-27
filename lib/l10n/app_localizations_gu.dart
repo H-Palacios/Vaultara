@@ -10811,4 +10811,159 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'સંદેશ તપાસી રહ્યા છીએ';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'આ દેશના ઓળખ નંબર માટે ખૂબ ટૂંકો ($country): $expected માંથી $count. કોઈ અંક ખૂટે છે કે નહીં તે તપાસો.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'આ દેશના ઓળખ નંબર માટે ખૂબ લાંબો ($country): $expected માંથી $count. કોઈ વધારાનો અંક છે કે નહીં તે તપાસો.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'આ દેશના પાસપોર્ટ નંબર માટે ખૂબ ટૂંકો ($country): $expected માંથી $count. કોઈ અંક કે અક્ષર ખૂટે છે કે નહીં તે તપાસો.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'આ દેશના પાસપોર્ટ નંબર માટે ખૂબ લાંબો ($country): $expected માંથી $count. કોઈ વધારાનો અંક કે અક્ષર છે કે નહીં તે તપાસો.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'આ આ દેશના નંબર જેવો લાગતો નથી ($country). તે આવો દેખાવો જોઈએ: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'આ આ દેશના નંબર જેવો લાગતો નથી ($country). અક્ષરો અને અંકો તપાસો.';
+  }
+
+  @override
+  String get idCheckDigit => 'ચકાસણી અંક મેળ ખાતો નથી, તેથી કોઈ અંક ખોટો હોઈ શકે અથવા બે અંકોની જગ્યા બદલાઈ હોઈ શકે.';
+
+  @override
+  String get idCheckDate => 'આ નંબરમાં જન્મ તારીખ સાચી તારીખ નથી. તે અંકો તપાસો.';
+
+  @override
+  String get idCheckCardNote => 'જો આ કાર્ડનો પોતાનો નંબર હોય, ઓળખ નંબર નહીં, તો તમે આને અવગણી શકો.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'આ આ દેશના નંબર ફોર્મેટ સાથે મેળ ખાય છે ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'નંબર તપાસી રહ્યા છીએ';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'અંક $first અને $secondની જગ્યા બદલવાથી તે સાચો થાય છે.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return '$digit ને અંક $position તરીકે ઉમેરવાથી તે સાચો થાય છે.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'અંક $position કાઢવાથી તે સાચો થાય છે.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" કદાચ ખોટી રીતે વંચાયેલો \"$fixed\" છે. આ ફેરફારથી તે સાચો થાય છે.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'તે બીજા દેશ માટે સાચો છે: $countries. રેકોર્ડનો દેશ તપાસો.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'આ નંબર પહેલેથી બીજા રેકોર્ડમાં છે: $record.';
+  }
+
+  @override
+  String get idHintUse => 'આ સુધારો વાપરો';
+
+  @override
+  String get assistantNumberFixTitle => 'નંબર સુધારો';
+
+  @override
+  String get assistantNumberFixNothing => 'આ ચેટમાં સુધારવા માટે કોઈ નંબર નથી.';
+
+  @override
+  String get assistantNumberFixNotFound => 'તે ભાગ નંબરમાં નથી, અથવા એકથી વધુ વાર છે. તેની આસપાસના અંકો બીજી રીતે કહો.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'ત્યાં કોઈ એક અંક બેસતો નથી. કયો અંક ખૂટે છે તે કહો.';
+
+  @override
+  String get assistantNumberFixNote => 'નંબર આ ફોન પર જ રહે છે.';
+
+  @override
+  String get assistantNumberFixDone => 'નંબર અપડેટ થયો.';
+
+  @override
+  String get assistantNumberFixChange => 'ફેરફાર';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'દસ્તાવેજની કોડ લાઇનમાં ઓળખ નંબર અલગ છે. તે $last થી પૂરો થાય છે.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'દસ્તાવેજની કોડ લાઇનમાં નંબર અલગ છે. તે $last થી પૂરો થાય છે.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'લાઇસન્સ ડિસ્ક પરનો VIN અલગ છે. તે $last થી પૂરો થાય છે.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'આ નંબરમાંની જન્મ તારીખ દસ્તાવેજ પરની નથી ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'આ દેશ ($country) ના આવા દસ્તાવેજ વધુમાં વધુ $years વર્ષ ચાલે છે. સમાપ્તિ તારીખ તપાસો.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'બાળક માટે આ દસ્તાવેજ $years વર્ષ ચાલે છે. સમાપ્તિ તારીખ તપાસો.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN માં 17 અક્ષર હોય છે. આમાં $count છે.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN માં ફક્ત અક્ષરો અને અંકો હોય છે, ક્યારેય I, O કે Q નહીં.';
+
+  @override
+  String get idCheckVinDigit => 'ચકાસણી અક્ષર (9મો અક્ષર) મેળ ખાતો નથી. ઉત્તર અમેરિકા માટે બનેલી ગાડીઓમાં તે હંમેશા હોય છે; બીજીમાં કદાચ ન હોય.';
+
+  @override
+  String get idCheckVinOk => 'આ VIN ફોર્મેટ અને તેના ચકાસણી અક્ષર સાથે મેળ ખાય છે.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'આ દેશના ડ્રાઇવિંગ લાઇસન્સ નંબર માટે ખૂબ ટૂંકો ($country): $expected માંથી $count. કોઈ અંક કે અક્ષર ખૂટે છે કે નહીં તે તપાસો.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'આ દેશના ડ્રાઇવિંગ લાઇસન્સ નંબર માટે ખૂબ લાંબો ($country): $expected માંથી $count. કોઈ વધારાનો અંક કે અક્ષર છે કે નહીં તે તપાસો.';
+  }
 }

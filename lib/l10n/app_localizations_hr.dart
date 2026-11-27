@@ -10891,4 +10891,159 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Provjera poruke';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Prekratko za identifikacijski broj iz ove zemlje ($country): $count od $expected. Provjerite nedostaje li znamenka.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Predugo za identifikacijski broj iz ove zemlje ($country): $count od $expected. Provjerite ima li znamenka viška.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Prekratko za broj putovnice iz ove zemlje ($country): $count od $expected. Provjerite nedostaje li znamenka ili slovo.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Predugo za broj putovnice iz ove zemlje ($country): $count od $expected. Provjerite ima li znamenka ili slovo viška.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Ovo ne izgleda kao broj iz ove zemlje ($country). Trebao bi izgledati ovako: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Ovo ne izgleda kao broj iz ove zemlje ($country). Provjerite slova i znamenke.';
+  }
+
+  @override
+  String get idCheckDigit => 'Kontrolna znamenka se ne slaže, pa je možda neka znamenka pogrešna ili su dvije zamijenjene.';
+
+  @override
+  String get idCheckDate => 'Datum rođenja u ovom broju nije stvarni datum. Provjerite te znamenke.';
+
+  @override
+  String get idCheckCardNote => 'Ako je ovo broj same iskaznice, a ne identifikacijski broj, možete ovo zanemariti.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Ovo odgovara obliku brojeva ove zemlje ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Provjera broja';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Ako zamijenite znamenke $first i $second, broj je valjan.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Ako dodate $digit kao znamenku $position, broj je valjan.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Ako uklonite znamenku $position, broj je valjan.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" je vjerojatno pogrešno pročitano \"$fixed\". S tom promjenom broj je valjan.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Valjan je za drugu zemlju: $countries. Provjerite zemlju na zapisu.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Ovaj broj već je na drugom zapisu: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Upotrijebi ovaj ispravak';
+
+  @override
+  String get assistantNumberFixTitle => 'Ispravi broj';
+
+  @override
+  String get assistantNumberFixNothing => 'U ovom razgovoru nema broja za ispravak.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Tog dijela nema u broju ili se pojavljuje više puta. Opišite znamenke oko njega drukčije.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Tu ne odgovara nijedna pojedinačna znamenka. Recite koja znamenka nedostaje.';
+
+  @override
+  String get assistantNumberFixNote => 'Broj ostaje na ovom telefonu.';
+
+  @override
+  String get assistantNumberFixDone => 'Broj ažuriran.';
+
+  @override
+  String get assistantNumberFixChange => 'Promjena';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Identifikacijski broj u kodnim redcima dokumenta je drukčiji. Završava na $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Broj u kodnim redcima dokumenta je drukčiji. Završava na $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'VIN na registracijskoj naljepnici je drukčiji. Završava na $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Datum rođenja u ovom broju nije onaj s dokumenta ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Takvi dokumenti iz ove zemlje ($country) vrijede najviše $years godina. Provjerite datum isteka.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Za dijete ovaj dokument vrijedi $years godina. Provjerite datum isteka.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN ima 17 znakova. Ovaj ima $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN ima samo slova i znamenke, nikad I, O ni Q.';
+
+  @override
+  String get idCheckVinDigit => 'Kontrolna znamenka (9. znak) se ne slaže. Automobili za Sjevernu Ameriku je uvijek imaju, drugi možda ne.';
+
+  @override
+  String get idCheckVinOk => 'Ovo odgovara obliku VIN-a i njegovoj kontrolnoj znamenki.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Prekratko za broj vozačke dozvole iz ove zemlje ($country): $count od $expected. Provjerite nedostaje li znamenka ili slovo.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Predugo za broj vozačke dozvole iz ove zemlje ($country): $count od $expected. Provjerite ima li znamenka ili slovo viška.';
+  }
 }

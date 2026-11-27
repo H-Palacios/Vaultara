@@ -11069,4 +11069,159 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'جارٍ فحص الرسالة';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'قصير جدًا لرقم هوية من هذا البلد ($country): $count من $expected. تحقق مما إذا كان هناك رقم ناقص.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'طويل جدًا لرقم هوية من هذا البلد ($country): $count من $expected. تحقق مما إذا كان هناك رقم زائد.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'قصير جدًا لرقم جواز سفر من هذا البلد ($country): $count من $expected. تحقق مما إذا كان هناك رقم أو حرف ناقص.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'طويل جدًا لرقم جواز سفر من هذا البلد ($country): $count من $expected. تحقق مما إذا كان هناك رقم أو حرف زائد.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'لا يبدو هذا رقمًا من هذا البلد ($country). يجب أن يبدو هكذا: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'لا يبدو هذا رقمًا من هذا البلد ($country). تحقق من الحروف والأرقام.';
+  }
+
+  @override
+  String get idCheckDigit => 'رقم التحقق غير مطابق، لذا قد يكون أحد الأرقام خاطئًا أو تم تبديل رقمين.';
+
+  @override
+  String get idCheckDate => 'تاريخ الميلاد في هذا الرقم ليس تاريخًا حقيقيًا. تحقق من تلك الأرقام.';
+
+  @override
+  String get idCheckCardNote => 'إذا كان هذا رقم البطاقة نفسها وليس رقم الهوية، يمكنك تجاهل ذلك.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'يطابق تنسيق أرقام هذا البلد ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'جارٍ التحقق من الرقم';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'تبديل الرقمين $first و$second يجعله صحيحًا.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'إضافة $digit في الخانة $position تجعله صحيحًا.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'حذف الرقم في الخانة $position يجعله صحيحًا.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return 'على الأرجح أن \"$read\" هو \"$fixed\" قُرئ خطأً. بهذا التغيير يصبح صحيحًا.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'هو صحيح لبلد آخر: $countries. تحقق من البلد في السجل.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'هذا الرقم موجود بالفعل في سجل آخر: $record.';
+  }
+
+  @override
+  String get idHintUse => 'استخدم هذا التصحيح';
+
+  @override
+  String get assistantNumberFixTitle => 'تصحيح الرقم';
+
+  @override
+  String get assistantNumberFixNothing => 'لا يوجد رقم في هذه المحادثة لتصحيحه.';
+
+  @override
+  String get assistantNumberFixNotFound => 'هذا الجزء غير موجود في الرقم، أو يتكرر أكثر من مرة. صِف الأرقام المحيطة به بطريقة أخرى.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'لا يناسب أي رقم واحد هناك. قل أي رقم ناقص.';
+
+  @override
+  String get assistantNumberFixNote => 'يبقى الرقم على هذا الهاتف.';
+
+  @override
+  String get assistantNumberFixDone => 'تم تحديث الرقم.';
+
+  @override
+  String get assistantNumberFixChange => 'التغيير';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'رقم الهوية في أسطر الرمز في المستند مختلف. ينتهي بـ $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'الرقم في أسطر الرمز في المستند مختلف. ينتهي بـ $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'رقم الهيكل (VIN) على ملصق الترخيص مختلف. ينتهي بـ $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'تاريخ الميلاد في هذا الرقم ليس الموجود في المستند ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'مستندات كهذه من هذا البلد ($country) صالحة $years سنوات على الأكثر. تحقق من تاريخ الانتهاء.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'للطفل، هذا المستند صالح $years سنوات. تحقق من تاريخ الانتهاء.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'يتكون رقم الهيكل (VIN) من 17 خانة. هذا فيه $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'رقم الهيكل فيه أحرف وأرقام فقط، ولا يحتوي أبدًا على I أو O أو Q.';
+
+  @override
+  String get idCheckVinDigit => 'رقم التحقق (الخانة التاسعة) غير مطابق. السيارات المصنوعة لأمريكا الشمالية تحمله دائمًا، وغيرها قد لا تحمله.';
+
+  @override
+  String get idCheckVinOk => 'يطابق تنسيق رقم الهيكل ورقم التحقق فيه.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'قصير جدًا لرقم رخصة قيادة من هذا البلد ($country): $count من $expected. تحقق مما إذا كان هناك رقم أو حرف ناقص.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'طويل جدًا لرقم رخصة قيادة من هذا البلد ($country): $count من $expected. تحقق مما إذا كان هناك رقم أو حرف زائد.';
+  }
 }

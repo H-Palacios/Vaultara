@@ -10898,4 +10898,159 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Se verifică mesajul';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Prea scurt pentru un cod de identificare din această țară ($country): $count din $expected. Verifică dacă lipsește o cifră.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Prea lung pentru un cod de identificare din această țară ($country): $count din $expected. Verifică dacă e o cifră în plus.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Prea scurt pentru un număr de pașaport din această țară ($country): $count din $expected. Verifică dacă lipsește o cifră sau o literă.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Prea lung pentru un număr de pașaport din această țară ($country): $count din $expected. Verifică dacă e o cifră sau o literă în plus.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Nu arată ca un număr din această țară ($country). Ar trebui să arate așa: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Nu arată ca un număr din această țară ($country). Verifică literele și cifrele.';
+  }
+
+  @override
+  String get idCheckDigit => 'Cifra de control nu se potrivește, deci o cifră poate fi greșită sau două pot fi inversate.';
+
+  @override
+  String get idCheckDate => 'Data nașterii din acest număr nu este o dată reală. Verifică acele cifre.';
+
+  @override
+  String get idCheckCardNote => 'Dacă acesta este numărul propriu al cărții, nu codul de identificare, poți ignora.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Se potrivește cu formatul numerelor din această țară ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Se verifică numărul';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Dacă inversezi cifrele $first și $second, numărul e valid.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Dacă adaugi $digit drept cifra $position, numărul e valid.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Dacă scoți cifra $position, numărul e valid.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '„$read” este probabil un „$fixed” citit greșit. Cu această schimbare numărul e valid.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Este valid pentru altă țară: $countries. Verifică țara din înregistrare.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Acest număr este deja în altă înregistrare: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Folosește această corectare';
+
+  @override
+  String get assistantNumberFixTitle => 'Corectează numărul';
+
+  @override
+  String get assistantNumberFixNothing => 'Nu există niciun număr de corectat în această conversație.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Partea aceea nu e în număr sau apare de mai multe ori. Numește altfel cifrele din jurul ei.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Nicio cifră nu se potrivește acolo. Spune ce cifră lipsește.';
+
+  @override
+  String get assistantNumberFixNote => 'Numărul rămâne pe acest telefon.';
+
+  @override
+  String get assistantNumberFixDone => 'Număr actualizat.';
+
+  @override
+  String get assistantNumberFixChange => 'Modificare';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Codul de identificare din liniile de cod ale documentului este altul. Se termină în $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Numărul din liniile de cod ale documentului este altul. Se termină în $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'VIN-ul de pe eticheta de înmatriculare este altul. Se termină în $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Data nașterii din acest număr nu este cea din document ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Astfel de documente din această țară ($country) sunt valabile cel mult $years ani. Verifică data expirării.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Pentru un copil, acest document este valabil $years ani. Verifică data expirării.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'Un VIN are 17 caractere. Acesta are $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'Un VIN are doar litere și cifre, niciodată I, O sau Q.';
+
+  @override
+  String get idCheckVinDigit => 'Cifra de control (al 9-lea caracter) nu se potrivește. Mașinile făcute pentru America de Nord au mereu una; altele poate nu.';
+
+  @override
+  String get idCheckVinOk => 'Se potrivește cu formatul VIN și cu cifra lui de control.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Prea scurt pentru un număr de permis de conducere din această țară ($country): $count din $expected. Verifică dacă lipsește o cifră sau o literă.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Prea lung pentru un număr de permis de conducere din această țară ($country): $count din $expected. Verifică dacă e o cifră sau o literă în plus.';
+  }
 }

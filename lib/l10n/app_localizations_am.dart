@@ -10809,4 +10809,159 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'መልዕክቱን በመፈተሽ ላይ';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'ለዚህ አገር የመታወቂያ ቁጥር በጣም አጭር ነው ($country)፦ $count ከ$expected። የጎደለ አሃዝ እንዳለ ያረጋግጡ።';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'ለዚህ አገር የመታወቂያ ቁጥር በጣም ረጅም ነው ($country)፦ $count ከ$expected። ተጨማሪ አሃዝ እንዳለ ያረጋግጡ።';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'ለዚህ አገር የፓስፖርት ቁጥር በጣም አጭር ነው ($country)፦ $count ከ$expected። የጎደለ አሃዝ ወይም ፊደል እንዳለ ያረጋግጡ።';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'ለዚህ አገር የፓስፖርት ቁጥር በጣም ረጅም ነው ($country)፦ $count ከ$expected። ተጨማሪ አሃዝ ወይም ፊደል እንዳለ ያረጋግጡ።';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'ይህ የዚህ አገር ቁጥር አይመስልም ($country)። እንደዚህ መሆን አለበት፦ $example።';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'ይህ የዚህ አገር ቁጥር አይመስልም ($country)። ፊደሎቹንና አሃዞቹን ያረጋግጡ።';
+  }
+
+  @override
+  String get idCheckDigit => 'የማረጋገጫ አሃዙ አይዛመድም፣ ስለዚህ አንድ አሃዝ የተሳሳተ ወይም ሁለት ቦታ የተቀያየሩ ሊሆኑ ይችላሉ።';
+
+  @override
+  String get idCheckDate => 'በዚህ ቁጥር ውስጥ ያለው የልደት ቀን እውነተኛ ቀን አይደለም። እነዚያን አሃዞች ያረጋግጡ።';
+
+  @override
+  String get idCheckCardNote => 'ይህ የመታወቂያ ቁጥሩ ሳይሆን የካርዱ የራሱ ቁጥር ከሆነ፣ ችላ ማለት ይችላሉ።';
+
+  @override
+  String idCheckOk(String country) {
+    return 'ይህ ከዚህ አገር የቁጥር ቅርጸት ጋር ይዛመዳል ($country)።';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'ቁጥሩን በማረጋገጥ ላይ';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'አሃዝ $first እና $secondን ቦታ ብትቀያይሩ ትክክል ይሆናል።';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return '$digitን እንደ አሃዝ $position ብትጨምሩ ትክክል ይሆናል።';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'አሃዝ $positionን ብታስወግዱ ትክክል ይሆናል።';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" ምናልባት በስህተት የተነበበ \"$fixed\" ነው። በዚህ ለውጥ ትክክል ይሆናል።';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'ለሌላ አገር ትክክል ነው፦ $countries። በመዝገቡ ላይ ያለውን አገር ያረጋግጡ።';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'ይህ ቁጥር በሌላ መዝገብ ላይ አስቀድሞ አለ፦ $record።';
+  }
+
+  @override
+  String get idHintUse => 'ይህን ማስተካከያ ተጠቀም';
+
+  @override
+  String get assistantNumberFixTitle => 'ቁጥሩን አስተካክል';
+
+  @override
+  String get assistantNumberFixNothing => 'በዚህ ውይይት ውስጥ የሚስተካከል ቁጥር የለም።';
+
+  @override
+  String get assistantNumberFixNotFound => 'ያ ክፍል በቁጥሩ ውስጥ የለም፣ ወይም ከአንድ ጊዜ በላይ አለ። ዙሪያውን ያሉትን አሃዞች በሌላ መንገድ ይንገሩ።';
+
+  @override
+  String get assistantNumberFixNoDigit => 'እዚያ የሚገጥም አንድም አሃዝ የለም። የትኛው አሃዝ እንደጎደለ ይንገሩ።';
+
+  @override
+  String get assistantNumberFixNote => 'ቁጥሩ በዚህ ስልክ ላይ ይቆያል።';
+
+  @override
+  String get assistantNumberFixDone => 'ቁጥሩ ተዘምኗል።';
+
+  @override
+  String get assistantNumberFixChange => 'ለውጥ';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'በሰነዱ የኮድ መስመሮች ውስጥ ያለው መታወቂያ ቁጥር የተለየ ነው። በ$last ያበቃል።';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'በሰነዱ የኮድ መስመሮች ውስጥ ያለው ቁጥር የተለየ ነው። በ$last ያበቃል።';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'በፈቃድ ዲስኩ ላይ ያለው VIN የተለየ ነው። በ$last ያበቃል።';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'በዚህ ቁጥር ውስጥ ያለው የትውልድ ቀን በሰነዱ ላይ ያለው አይደለም ($date)።';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'ከዚህ አገር ($country) የሚመጡ እንዲህ ያሉ ሰነዶች ቢበዛ $years ዓመት ያገለግላሉ። የማብቂያ ቀኑን ያረጋግጡ።';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'ለልጅ ይህ ሰነድ $years ዓመት ያገለግላል። የማብቂያ ቀኑን ያረጋግጡ።';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN 17 ቁምፊዎች አሉት። ይህ $count አለው።';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN ፊደሎችና አሃዞች ብቻ አሉት፤ I፣ O ወይም Q በጭራሽ የለውም።';
+
+  @override
+  String get idCheckVinDigit => 'የማረጋገጫ ቁምፊው (9ኛው) አይዛመድም። ለሰሜን አሜሪካ የተሠሩ መኪኖች ሁልጊዜ አላቸው፤ ሌሎች ላይኖራቸው ይችላል።';
+
+  @override
+  String get idCheckVinOk => 'ይህ ከVIN ቅርጸትና ከማረጋገጫ ቁምፊው ጋር ይዛመዳል።';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'ለዚህ አገር የመንጃ ፈቃድ ቁጥር በጣም አጭር ነው ($country)፦ $count ከ$expected። የጎደለ አሃዝ ወይም ፊደል ካለ ያረጋግጡ።';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'ለዚህ አገር የመንጃ ፈቃድ ቁጥር በጣም ረጅም ነው ($country)፦ $count ከ$expected። ትርፍ አሃዝ ወይም ፊደል ካለ ያረጋግጡ።';
+  }
 }

@@ -10810,4 +10810,159 @@ class AppLocalizationsIs extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Athugar skilaboðin';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Of stutt fyrir kennitölu frá þessu landi ($country): $count af $expected. Athugaðu hvort tölustaf vanti.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Of langt fyrir kennitölu frá þessu landi ($country): $count af $expected. Athugaðu hvort aukatölustafur sé í því.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Of stutt fyrir vegabréfsnúmer frá þessu landi ($country): $count af $expected. Athugaðu hvort tölustaf eða bókstaf vanti.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Of langt fyrir vegabréfsnúmer frá þessu landi ($country): $count af $expected. Athugaðu hvort auka tölustafur eða bókstafur sé í því.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Þetta lítur ekki út eins og númer frá þessu landi ($country). Það ætti að líta svona út: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Þetta lítur ekki út eins og númer frá þessu landi ($country). Athugaðu bókstafina og tölustafina.';
+  }
+
+  @override
+  String get idCheckDigit => 'Vartalan passar ekki, svo tölustafur gæti verið rangur eða tveir hafa víxlast.';
+
+  @override
+  String get idCheckDate => 'Fæðingardagurinn í númerinu er ekki raunveruleg dagsetning. Athugaðu þá tölustafi.';
+
+  @override
+  String get idCheckCardNote => 'Ef þetta er eigið númer kortsins en ekki kennitalan geturðu hunsað þetta.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Þetta passar við númerasnið þessa lands ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Athugar númerið';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Ef þú víxlar tölustöfum $first og $second er það gilt.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Ef þú bætir $digit við sem tölustaf $position er það gilt.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Ef þú fjarlægir tölustaf $position er það gilt.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" er líklega rangt lesið \"$fixed\". Með þeirri breytingu er það gilt.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Það er gilt fyrir annað land: $countries. Athugaðu landið í færslunni.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Þetta númer er þegar í annarri færslu: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Nota þessa leiðréttingu';
+
+  @override
+  String get assistantNumberFixTitle => 'Laga númerið';
+
+  @override
+  String get assistantNumberFixNothing => 'Það er ekkert númer í þessu spjalli til að laga.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Sá hluti er ekki í númerinu, eða kemur oftar en einu sinni fyrir. Lýstu tölustöfunum í kring á annan hátt.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Enginn einn tölustafur passar þar. Segðu hvaða tölustaf vantar.';
+
+  @override
+  String get assistantNumberFixNote => 'Númerið verður áfram í þessum síma.';
+
+  @override
+  String get assistantNumberFixDone => 'Númer uppfært.';
+
+  @override
+  String get assistantNumberFixChange => 'Breyting';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Kennitalan í kóðalínum skjalsins er önnur. Hún endar á $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Númerið í kóðalínum skjalsins er annað. Það endar á $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'VIN-númerið á skráningarmiðanum er annað. Það endar á $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Fæðingardagurinn í þessu númeri er ekki sá sem er á skjalinu ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Skjöl af þessu tagi frá þessu landi ($country) gilda í mesta lagi $years ár. Athugaðu gildistímann.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Fyrir barn gildir þetta skjal í $years ár. Athugaðu gildistímann.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN-númer er 17 stafir. Þetta er $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN-númer hefur aðeins bókstafi og tölustafi, aldrei I, O eða Q.';
+
+  @override
+  String get idCheckVinDigit => 'Vartalan (9. stafurinn) passar ekki. Bílar fyrir Norður-Ameríku hafa alltaf eina; aðrir ekki endilega.';
+
+  @override
+  String get idCheckVinOk => 'Þetta passar við VIN-snið og vartölu þess.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Of stutt fyrir ökuskírteinisnúmer frá þessu landi ($country): $count af $expected. Athugaðu hvort tölustaf eða bókstaf vanti.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Of langt fyrir ökuskírteinisnúmer frá þessu landi ($country): $count af $expected. Athugaðu hvort auka tölustafur eða bókstafur sé í því.';
+  }
 }

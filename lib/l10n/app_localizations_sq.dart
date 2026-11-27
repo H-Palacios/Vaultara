@@ -10816,4 +10816,159 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Po kontrollohet mesazhi';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Shumë i shkurtër për një numër identiteti nga ky vend ($country): $count nga $expected. Kontrollo nëse mungon një shifër.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Shumë i gjatë për një numër identiteti nga ky vend ($country): $count nga $expected. Kontrollo nëse ka një shifër të tepërt.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Shumë i shkurtër për një numër pasaporte nga ky vend ($country): $count nga $expected. Kontrollo nëse mungon një shifër ose shkronjë.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Shumë i gjatë për një numër pasaporte nga ky vend ($country): $count nga $expected. Kontrollo nëse ka një shifër ose shkronjë të tepërt.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Kjo nuk duket si një numër nga ky vend ($country). Duhet të duket kështu: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Kjo nuk duket si një numër nga ky vend ($country). Kontrollo shkronjat dhe shifrat.';
+  }
+
+  @override
+  String get idCheckDigit => 'Shifra e kontrollit nuk përputhet, ndaj një shifër mund të jetë gabim ose dy janë ndërruar.';
+
+  @override
+  String get idCheckDate => 'Data e lindjes në këtë numër nuk është datë e vërtetë. Kontrollo ato shifra.';
+
+  @override
+  String get idCheckCardNote => 'Nëse ky është numri i vetë kartës dhe jo numri i identitetit, mund ta shpërfillësh.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Përputhet me formatin e numrave të këtij vendi ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Po kontrollohet numri';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Nëse ndërron shifrat $first dhe $second, numri është i vlefshëm.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Nëse shton $digit si shifrën $position, numri është i vlefshëm.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Nëse heq shifrën $position, numri është i vlefshëm.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" ka të ngjarë të jetë një \"$fixed\" i lexuar gabim. Me këtë ndryshim numri është i vlefshëm.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Është i vlefshëm për një vend tjetër: $countries. Kontrollo vendin në të dhënë.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Ky numër është tashmë në një të dhënë tjetër: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Përdor këtë rregullim';
+
+  @override
+  String get assistantNumberFixTitle => 'Rregullo numrin';
+
+  @override
+  String get assistantNumberFixNothing => 'Nuk ka numër për të rregulluar në këtë bisedë.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Ajo pjesë nuk është në numër, ose është më shumë se një herë. Thuaji ndryshe shifrat përreth.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Asnjë shifër e vetme nuk përshtatet aty. Thuaj cila shifër mungon.';
+
+  @override
+  String get assistantNumberFixNote => 'Numri mbetet në këtë telefon.';
+
+  @override
+  String get assistantNumberFixDone => 'Numri u përditësua.';
+
+  @override
+  String get assistantNumberFixChange => 'Ndryshim';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Numri i identitetit në rreshtat e kodit të dokumentit është tjetër. Mbaron me $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Numri në rreshtat e kodit të dokumentit është tjetër. Mbaron me $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'VIN-i në etiketën e regjistrimit është tjetër. Mbaron me $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Data e lindjes në këtë numër nuk është ajo e dokumentit ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Dokumente të tilla nga ky vend ($country) vlejnë më së shumti $years vjet. Kontrollo datën e skadimit.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Për një fëmijë ky dokument vlen $years vjet. Kontrollo datën e skadimit.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'Një VIN ka 17 karaktere. Ky ka $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'Një VIN ka vetëm shkronja dhe shifra, dhe kurrë I, O ose Q.';
+
+  @override
+  String get idCheckVinDigit => 'Shifra e kontrollit (karakteri i 9-të) nuk përputhet. Makinat për Amerikën e Veriut e kanë gjithmonë; të tjerat mund të mos e kenë.';
+
+  @override
+  String get idCheckVinOk => 'Përputhet me formatin VIN dhe shifrën e tij të kontrollit.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Shumë i shkurtër për një numër patente nga ky vend ($country): $count nga $expected. Kontrollo nëse mungon një shifër ose shkronjë.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Shumë i gjatë për një numër patente nga ky vend ($country): $count nga $expected. Kontrollo nëse ka një shifër ose shkronjë të tepërt.';
+  }
 }

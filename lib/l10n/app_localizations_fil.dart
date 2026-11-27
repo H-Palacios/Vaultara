@@ -10804,4 +10804,159 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Sinusuri ang mensahe';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Masyadong maikli para sa ID number mula sa bansang ito ($country): $count sa $expected. Tingnan kung may kulang na digit.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Masyadong mahaba para sa ID number mula sa bansang ito ($country): $count sa $expected. Tingnan kung may sobrang digit.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Masyadong maikli para sa passport number mula sa bansang ito ($country): $count sa $expected. Tingnan kung may kulang na digit o letra.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Masyadong mahaba para sa passport number mula sa bansang ito ($country): $count sa $expected. Tingnan kung may sobrang digit o letra.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Hindi ito mukhang numero mula sa bansang ito ($country). Dapat ganito ang itsura: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Hindi ito mukhang numero mula sa bansang ito ($country). Tingnan ang mga letra at digit.';
+  }
+
+  @override
+  String get idCheckDigit => 'Hindi tugma ang check digit, kaya maaaring mali ang isang digit o nagkapalit ang dalawa.';
+
+  @override
+  String get idCheckDate => 'Hindi totoong petsa ang petsa ng kapanganakan sa numerong ito. Tingnan ang mga digit na iyon.';
+
+  @override
+  String get idCheckCardNote => 'Kung ito ang sariling numero ng card at hindi ang ID number, puwede mo itong balewalain.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Tugma ito sa format ng numero ng bansang ito ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Sinusuri ang numero';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Kapag pinagpalit ang digit $first at $second, valid na ito.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Kapag idinagdag ang $digit bilang digit $position, valid na ito.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Kapag tinanggal ang digit $position, valid na ito.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return 'Ang \"$read\" ay malamang na maling pagbasa ng \"$fixed\". Sa pagbabagong iyon, valid na ito.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Valid ito para sa ibang bansa: $countries. Tingnan ang bansa sa record.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Nasa ibang record na ang numerong ito: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Gamitin ang ayos na ito';
+
+  @override
+  String get assistantNumberFixTitle => 'Ayusin ang numero';
+
+  @override
+  String get assistantNumberFixNothing => 'Walang numerong maaayos sa chat na ito.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Wala ang bahaging iyon sa numero, o higit sa isang beses ito lumalabas. Sabihin sa ibang paraan ang mga digit sa paligid nito.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Walang iisang digit na babagay doon. Sabihin kung aling digit ang kulang.';
+
+  @override
+  String get assistantNumberFixNote => 'Nananatili ang numero sa teleponong ito.';
+
+  @override
+  String get assistantNumberFixDone => 'Na-update ang numero.';
+
+  @override
+  String get assistantNumberFixChange => 'Pagbabago';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Iba ang ID number sa mga code line ng dokumento. Nagtatapos ito sa $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Iba ang numero sa mga code line ng dokumento. Nagtatapos ito sa $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'Iba ang VIN sa license disc. Nagtatapos ito sa $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Hindi tugma ang petsa ng kapanganakan sa numerong ito sa nasa dokumento ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Ang mga dokumentong tulad nito mula sa bansang ito ($country) ay tumatagal nang hanggang $years taon. Suriin ang petsa ng pag-expire.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Para sa bata, tumatagal ang dokumentong ito nang $years taon. Suriin ang petsa ng pag-expire.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'May 17 character ang VIN. Ang isang ito ay may $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'Letra at digit lang ang VIN, at hindi kailanman I, O o Q.';
+
+  @override
+  String get idCheckVinDigit => 'Hindi tugma ang check digit (ika-9 na character). Laging mayroon nito ang mga kotseng gawa para sa North America; ang iba ay maaaring wala.';
+
+  @override
+  String get idCheckVinOk => 'Tugma ito sa format ng VIN at sa check digit nito.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Masyadong maikli para sa numero ng lisensya sa pagmamaneho mula sa bansang ito ($country): $count sa $expected. Tingnan kung may kulang na digit o letra.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Masyadong mahaba para sa numero ng lisensya sa pagmamaneho mula sa bansang ito ($country): $count sa $expected. Tingnan kung may sobrang digit o letra.';
+  }
 }

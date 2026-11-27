@@ -10811,4 +10811,159 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Ստուգվում է հաղորդագրությունը';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Չափազանց կարճ է այս երկրի անձնական համարի համար ($country)՝ $count/$expected։ Ստուգեք՝ արդյոք թվանշան չի պակասում։';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Չափազանց երկար է այս երկրի անձնական համարի համար ($country)՝ $count/$expected։ Ստուգեք՝ արդյոք ավելորդ թվանշան չկա։';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Չափազանց կարճ է այս երկրի անձնագրի համարի համար ($country)՝ $count/$expected։ Ստուգեք՝ արդյոք թվանշան կամ տառ չի պակասում։';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Չափազանց երկար է այս երկրի անձնագրի համարի համար ($country)՝ $count/$expected։ Ստուգեք՝ արդյոք ավելորդ թվանշան կամ տառ չկա։';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Սա նման չէ այս երկրի համարի ($country)։ Այն պետք է այսպես լինի՝ $example։';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Սա նման չէ այս երկրի համարի ($country)։ Ստուգեք տառերն ու թվանշանները։';
+  }
+
+  @override
+  String get idCheckDigit => 'Ստուգիչ թվանշանը չի համընկնում, ուստի թվանշաններից մեկը կարող է սխալ լինել կամ երկուսը տեղերով փոխված։';
+
+  @override
+  String get idCheckDate => 'Այս համարի ծննդյան ամսաթիվն իրական ամսաթիվ չէ։ Ստուգեք այդ թվանշանները։';
+
+  @override
+  String get idCheckCardNote => 'Եթե սա քարտի սեփական համարն է, ոչ թե անձնական համարը, կարող եք անտեսել։';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Սա համապատասխանում է այս երկրի համարների ձևաչափին ($country)։';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Համարը ստուգվում է';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Եթե $first-րդ և $second-րդ թվանշանների տեղերը փոխեք, այն վավեր կլինի։';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Եթե $digit-ն ավելացնեք որպես $position-րդ թվանշան, այն վավեր կլինի։';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Եթե հեռացնեք $position-րդ թվանշանը, այն վավեր կլինի։';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '«$read»-ն հավանաբար սխալ կարդացված «$fixed» է։ Այդ փոփոխությամբ այն վավեր է։';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Այն վավեր է այլ երկրի համար՝ $countries։ Ստուգեք գրառման երկիրը։';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Այս համարն արդեն կա մեկ այլ գրառման մեջ՝ $record։';
+  }
+
+  @override
+  String get idHintUse => 'Կիրառել այս ուղղումը';
+
+  @override
+  String get assistantNumberFixTitle => 'Ուղղել համարը';
+
+  @override
+  String get assistantNumberFixNothing => 'Այս զրույցում ուղղելու համար չկա։';
+
+  @override
+  String get assistantNumberFixNotFound => 'Այդ մասը համարում չկա կամ մեկից ավելի անգամ կա։ Նրա շուրջ թվանշանները այլ կերպ ասեք։';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Այնտեղ ոչ մի թվանշան չի համապատասխանում։ Ասեք, որ թվանշանն է պակասում։';
+
+  @override
+  String get assistantNumberFixNote => 'Համարը մնում է այս հեռախոսում։';
+
+  @override
+  String get assistantNumberFixDone => 'Համարը թարմացվեց։';
+
+  @override
+  String get assistantNumberFixChange => 'Փոփոխություն';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Փաստաթղթի կոդային տողերում անձնական համարը տարբեր է։ Այն ավարտվում է $last-ով։';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Փաստաթղթի կոդային տողերում համարը տարբեր է։ Այն ավարտվում է $last-ով։';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'Գրանցման պիտակի VIN-ը տարբեր է։ Այն ավարտվում է $last-ով։';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Այս համարի ծննդյան ամսաթիվը փաստաթղթինը չէ ($date)։';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Այս երկրի ($country) նման փաստաթղթերը գործում են առավելագույնը $years տարի։ Ստուգեք ժամկետի ավարտը։';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Երեխայի համար այս փաստաթուղթը գործում է $years տարի։ Ստուգեք ժամկետի ավարտը։';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN-ն ունի 17 նիշ։ Սա ունի $count։';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN-ն ունի միայն տառեր և թվանշաններ, և երբեք I, O կամ Q։';
+
+  @override
+  String get idCheckVinDigit => 'Ստուգիչ նիշը (9-րդը) չի համընկնում։ Հյուսիսային Ամերիկայի համար արված մեքենաները միշտ ունեն այն, մյուսները՝ գուցե ոչ։';
+
+  @override
+  String get idCheckVinOk => 'Սա համապատասխանում է VIN-ի ձևաչափին և ստուգիչ նիշին։';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Չափազանց կարճ է այս երկրի վարորդական իրավունքի համարի համար ($country)՝ $count/$expected։ Ստուգեք՝ արդյոք թվանշան կամ տառ չի պակասում։';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Չափազանց երկար է այս երկրի վարորդական իրավունքի համարի համար ($country)՝ $count/$expected։ Ստուգեք՝ արդյոք ավելորդ թվանշան կամ տառ չկա։';
+  }
 }

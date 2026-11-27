@@ -10759,4 +10759,159 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Na-elele ozi ahụ';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Ọ dị mkpụmkpụ maka nọmba njirimara nke obodo a ($country): $count n\'ime $expected. Lelee ma ọnụọgụ ọ fọdụrụ.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Ọ dị ogologo maka nọmba njirimara nke obodo a ($country): $count n\'ime $expected. Lelee ma enwere ọnụọgụ gabigara ókè.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Ọ dị mkpụmkpụ maka nọmba paspọtụ nke obodo a ($country): $count n\'ime $expected. Lelee ma ọnụọgụ ma ọ bụ mkpụrụedemede fọdụrụ.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Ọ dị ogologo maka nọmba paspọtụ nke obodo a ($country): $count n\'ime $expected. Lelee ma enwere ọnụọgụ ma ọ bụ mkpụrụedemede gabigara ókè.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Nke a adịghị ka nọmba si obodo a ($country). O kwesịrị ịdị otu a: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Nke a adịghị ka nọmba si obodo a ($country). Lelee mkpụrụedemede na ọnụọgụ.';
+  }
+
+  @override
+  String get idCheckDigit => 'Ọnụọgụ nlele adabaghị, ya mere otu ọnụọgụ nwere ike ịbụ ihe na-ezighị ezi ma ọ bụ abụọ gbanwere ọnọdụ.';
+
+  @override
+  String get idCheckDate => 'Ụbọchị ọmụmụ dị na nọmba a abụghị ezigbo ụbọchị. Lelee ọnụọgụ ndị ahụ.';
+
+  @override
+  String get idCheckCardNote => 'Ọ bụrụ na nke a bụ nọmba kaadị n\'onwe ya, ọ bụghị nọmba njirimara, ị nwere ike ileghara ya anya.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Nke a dabara n\'ụdị nọmba obodo a ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Na-elele nọmba ahụ';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Ọ bụrụ na ị gbanwee ọnọdụ ọnụọgụ $first na $second, ọ ga-adị mma.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Ọ bụrụ na ị tinye $digit dị ka ọnụọgụ $position, ọ ga-adị mma.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Ọ bụrụ na ị wepụ ọnụọgụ $position, ọ ga-adị mma.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" nwere ike ịbụ \"$fixed\" a gụrụ n\'ụzọ na-ezighị ezi. Site na mgbanwe a ọ dị mma.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Ọ dị mma maka obodo ọzọ: $countries. Lelee obodo dị na ndekọ ahụ.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Nọmba a adịlarị na ndekọ ọzọ: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Jiri ndozi a';
+
+  @override
+  String get assistantNumberFixTitle => 'Dozie nọmba ahụ';
+
+  @override
+  String get assistantNumberFixNothing => 'Ọ dịghị nọmba a ga-edozi na mkparịta ụka a.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Akụkụ ahụ adịghị na nọmba ahụ, ma ọ bụ ọ dị karịa otu ugboro. Kọwaa ọnụọgụ gbara ya gburugburu n\'ụzọ ọzọ.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Ọ dịghị otu ọnụọgụ dabara ebe ahụ. Kwuo ọnụọgụ ọ fọdụrụ.';
+
+  @override
+  String get assistantNumberFixNote => 'Nọmba ahụ na-anọ na ekwentị a.';
+
+  @override
+  String get assistantNumberFixDone => 'Emelitela nọmba ahụ.';
+
+  @override
+  String get assistantNumberFixChange => 'Mgbanwe';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Nọmba njirimara dị n\'ahịrị koodu nke akwụkwọ ahụ dị iche. Ọ na-ejedebe na $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Nọmba dị n\'ahịrị koodu nke akwụkwọ ahụ dị iche. Ọ na-ejedebe na $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'VIN dị na diski ikike ahụ dị iche. Ọ na-ejedebe na $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Ụbọchị ọmụmụ dị na nọmba a abụghị nke dị n\'akwụkwọ ahụ ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Akwụkwọ dị otú a si obodo a ($country) na-adịru kacha afọ $years. Lelee ụbọchị ọ ga-agwụ.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Maka nwatakịrị, akwụkwọ a na-adịru afọ $years. Lelee ụbọchị ọ ga-agwụ.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN nwere mkpụrụ 17. Nke a nwere $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN nwere naanị mkpụrụedemede na ọnụọgụ, ọ dịghị mgbe ọ na-enwe I, O ma ọ bụ Q.';
+
+  @override
+  String get idCheckVinDigit => 'Ọnụọgụ nlele (mkpụrụ nke 9) adabaghị. Ụgbọala e mere maka North America na-enwe ya mgbe niile; ndị ọzọ nwere ike ọ gaghị enwe.';
+
+  @override
+  String get idCheckVinOk => 'Nke a dabara n\'usoro VIN na ọnụọgụ nlele ya.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'O dị mkpụmkpụ maka nọmba akwụkwọ ikike ịnya ụgbọala si obodo a ($country): $count n\'ime $expected. Lelee ma ọnụọgụ ma ọ bụ mkpụrụedemede efuola.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'O toro ogologo maka nọmba akwụkwọ ikike ịnya ụgbọala si obodo a ($country): $count n\'ime $expected. Lelee ma ọnụọgụ ma ọ bụ mkpụrụedemede gafere.';
+  }
 }

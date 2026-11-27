@@ -10747,6 +10747,161 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get assistantStepScam => '正在检查消息';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return '作为该国身份证号码太短（$country）：$count/$expected。请检查是否漏了数字。';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return '作为该国身份证号码太长（$country）：$count/$expected。请检查是否多了数字。';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return '作为该国护照号码太短（$country）：$count/$expected。请检查是否漏了数字或字母。';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return '作为该国护照号码太长（$country）：$count/$expected。请检查是否多了数字或字母。';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return '这看起来不像该国的号码（$country）。正确格式类似：$example。';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return '这看起来不像该国的号码（$country）。请检查字母和数字。';
+  }
+
+  @override
+  String get idCheckDigit => '校验位不匹配，可能有一位数字错误或两位数字顺序颠倒。';
+
+  @override
+  String get idCheckDate => '该号码中的出生日期不是真实日期。请检查这些数字。';
+
+  @override
+  String get idCheckCardNote => '如果这是证件本身的卡号，而不是身份号码，可以忽略此提示。';
+
+  @override
+  String idCheckOk(String country) {
+    return '符合该国的号码格式（$country）。';
+  }
+
+  @override
+  String get assistantStepIdCheck => '正在检查号码';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return '把第$first位和第$second位数字对调后号码有效。';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return '在第$position位加上$digit后号码有效。';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return '删掉第$position位后号码有效。';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '“$read”很可能是误读的“$fixed”。这样修改后号码有效。';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return '它符合其他国家的号码规则：$countries。请检查记录中的国家。';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return '这个号码已在另一条记录中：$record。';
+  }
+
+  @override
+  String get idHintUse => '使用此修正';
+
+  @override
+  String get assistantNumberFixTitle => '修正号码';
+
+  @override
+  String get assistantNumberFixNothing => '此对话中没有可修正的号码。';
+
+  @override
+  String get assistantNumberFixNotFound => '号码中没有这一部分，或出现了不止一次。请换一种方式说出它前后的数字。';
+
+  @override
+  String get assistantNumberFixNoDigit => '那里没有唯一合适的数字。请说出缺少的是哪个数字。';
+
+  @override
+  String get assistantNumberFixNote => '号码只保存在这部手机上。';
+
+  @override
+  String get assistantNumberFixDone => '号码已更新。';
+
+  @override
+  String get assistantNumberFixChange => '修改';
+
+  @override
+  String idCrossPersonal(String last) {
+    return '证件代码行中的身份号码不同。尾号是 $last。';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return '证件代码行中的号码不同。尾号是 $last。';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return '行驶证贴纸上的 VIN 不同。尾号是 $last。';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return '这个号码里的出生日期和证件上的 ($date) 不一致。';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return '这个国家 ($country) 的这类证件最长有效 $years 年。请检查到期日期。';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return '儿童的这类证件有效期是 $years 年。请检查到期日期。';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN 有 17 个字符。这个有 $count 个。';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN 只有字母和数字，从不包含 I、O 或 Q。';
+
+  @override
+  String get idCheckVinDigit => '校验位 (第 9 个字符) 不匹配。为北美制造的汽车一定有校验位；其他汽车可能没有。';
+
+  @override
+  String get idCheckVinOk => '这符合 VIN 格式和校验位。';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return '作为这个国家 ($country) 的驾驶证号码太短：$count/$expected。请检查是否少了数字或字母。';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return '作为这个国家 ($country) 的驾驶证号码太长：$count/$expected。请检查是否多了数字或字母。';
+  }
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -21480,6 +21635,161 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get assistantStepScam => '正在检查消息';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return '作为该国身份证号码太短（$country）：$count/$expected。请检查是否漏了数字。';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return '作为该国身份证号码太长（$country）：$count/$expected。请检查是否多了数字。';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return '作为该国护照号码太短（$country）：$count/$expected。请检查是否漏了数字或字母。';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return '作为该国护照号码太长（$country）：$count/$expected。请检查是否多了数字或字母。';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return '这看起来不像该国的号码（$country）。正确格式类似：$example。';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return '这看起来不像该国的号码（$country）。请检查字母和数字。';
+  }
+
+  @override
+  String get idCheckDigit => '校验位不匹配，可能有一位数字错误或两位数字顺序颠倒。';
+
+  @override
+  String get idCheckDate => '该号码中的出生日期不是真实日期。请检查这些数字。';
+
+  @override
+  String get idCheckCardNote => '如果这是证件本身的卡号，而不是身份号码，可以忽略此提示。';
+
+  @override
+  String idCheckOk(String country) {
+    return '符合该国的号码格式（$country）。';
+  }
+
+  @override
+  String get assistantStepIdCheck => '正在检查号码';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return '把第$first位和第$second位数字对调后号码有效。';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return '在第$position位加上$digit后号码有效。';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return '删掉第$position位后号码有效。';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '“$read”很可能是误读的“$fixed”。这样修改后号码有效。';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return '它符合其他国家的号码规则：$countries。请检查记录中的国家。';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return '这个号码已在另一条记录中：$record。';
+  }
+
+  @override
+  String get idHintUse => '使用此修正';
+
+  @override
+  String get assistantNumberFixTitle => '修正号码';
+
+  @override
+  String get assistantNumberFixNothing => '此对话中没有可修正的号码。';
+
+  @override
+  String get assistantNumberFixNotFound => '号码中没有这一部分，或出现了不止一次。请换一种方式说出它前后的数字。';
+
+  @override
+  String get assistantNumberFixNoDigit => '那里没有唯一合适的数字。请说出缺少的是哪个数字。';
+
+  @override
+  String get assistantNumberFixNote => '号码只保存在这部手机上。';
+
+  @override
+  String get assistantNumberFixDone => '号码已更新。';
+
+  @override
+  String get assistantNumberFixChange => '修改';
+
+  @override
+  String idCrossPersonal(String last) {
+    return '证件代码行中的身份号码不同。尾号是 $last。';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return '证件代码行中的号码不同。尾号是 $last。';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return '行驶证贴纸上的 VIN 不同。尾号是 $last。';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return '这个号码里的出生日期和证件上的 ($date) 不一致。';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return '这个国家 ($country) 的这类证件最长有效 $years 年。请检查到期日期。';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return '儿童的这类证件有效期是 $years 年。请检查到期日期。';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN 有 17 个字符。这个有 $count 个。';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN 只有字母和数字，从不包含 I、O 或 Q。';
+
+  @override
+  String get idCheckVinDigit => '校验位 (第 9 个字符) 不匹配。为北美制造的汽车一定有校验位；其他汽车可能没有。';
+
+  @override
+  String get idCheckVinOk => '这符合 VIN 格式和校验位。';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return '作为这个国家 ($country) 的驾驶证号码太短：$count/$expected。请检查是否少了数字或字母。';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return '作为这个国家 ($country) 的驾驶证号码太长：$count/$expected。请检查是否多了数字或字母。';
+  }
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -32213,4 +32523,159 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
 
   @override
   String get assistantStepScam => '正在檢查訊息';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return '作為該國身分證號碼太短（$country）：$count/$expected。請檢查是否漏了數字。';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return '作為該國身分證號碼太長（$country）：$count/$expected。請檢查是否多了數字。';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return '作為該國護照號碼太短（$country）：$count/$expected。請檢查是否漏了數字或字母。';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return '作為該國護照號碼太長（$country）：$count/$expected。請檢查是否多了數字或字母。';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return '這看起來不像該國的號碼（$country）。正確格式類似：$example。';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return '這看起來不像該國的號碼（$country）。請檢查字母和數字。';
+  }
+
+  @override
+  String get idCheckDigit => '檢查碼不符，可能有一位數字錯誤或兩位數字順序顛倒。';
+
+  @override
+  String get idCheckDate => '這個號碼中的出生日期不是真實日期。請檢查這些數字。';
+
+  @override
+  String get idCheckCardNote => '如果這是證件本身的卡號，而不是身分號碼，可以忽略此提示。';
+
+  @override
+  String idCheckOk(String country) {
+    return '符合該國的號碼格式（$country）。';
+  }
+
+  @override
+  String get assistantStepIdCheck => '正在檢查號碼';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return '把第$first位和第$second位數字對調後號碼有效。';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return '在第$position位加上$digit後號碼有效。';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return '刪掉第$position位後號碼有效。';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '「$read」很可能是誤讀的「$fixed」。這樣修改後號碼有效。';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return '它符合其他國家的號碼規則：$countries。請檢查紀錄中的國家。';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return '這個號碼已在另一筆紀錄中：$record。';
+  }
+
+  @override
+  String get idHintUse => '使用此修正';
+
+  @override
+  String get assistantNumberFixTitle => '修正號碼';
+
+  @override
+  String get assistantNumberFixNothing => '這段對話中沒有可修正的號碼。';
+
+  @override
+  String get assistantNumberFixNotFound => '號碼中沒有這一部分，或出現了不只一次。請換一種方式說出它前後的數字。';
+
+  @override
+  String get assistantNumberFixNoDigit => '那裡沒有唯一合適的數字。請說出缺少的是哪個數字。';
+
+  @override
+  String get assistantNumberFixNote => '號碼只保存在這支手機上。';
+
+  @override
+  String get assistantNumberFixDone => '號碼已更新。';
+
+  @override
+  String get assistantNumberFixChange => '修改';
+
+  @override
+  String idCrossPersonal(String last) {
+    return '證件代碼行中的身分號碼不同。尾號是 $last。';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return '證件代碼行中的號碼不同。尾號是 $last。';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return '行照貼紙上的 VIN 不同。尾號是 $last。';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return '這個號碼裡的出生日期和證件上的 ($date) 不一致。';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return '這個國家 ($country) 的這類證件最長有效 $years 年。請檢查到期日期。';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return '兒童的這類證件有效期是 $years 年。請檢查到期日期。';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN 有 17 個字元。這個有 $count 個。';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN 只有字母和數字，從不包含 I、O 或 Q。';
+
+  @override
+  String get idCheckVinDigit => '檢查碼 (第 9 個字元) 不符。為北美製造的汽車一定有檢查碼；其他汽車可能沒有。';
+
+  @override
+  String get idCheckVinOk => '這符合 VIN 格式和檢查碼。';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return '作為這個國家 ($country) 的駕照號碼太短：$count/$expected。請檢查是否少了數字或字母。';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return '作為這個國家 ($country) 的駕照號碼太長：$count/$expected。請檢查是否多了數字或字母。';
+  }
 }

@@ -10759,4 +10759,159 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'A ń ṣàyẹ̀wò ìfiránṣẹ́ náà';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Ó kúrú jù fún nọ́ńbà ìdánimọ̀ orílẹ̀-èdè yìí ($country): $count nínú $expected. Ṣàyẹ̀wò bóyá díjítì kan sọnù.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Ó gùn jù fún nọ́ńbà ìdánimọ̀ orílẹ̀-èdè yìí ($country): $count nínú $expected. Ṣàyẹ̀wò bóyá díjítì àfikún wà.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Ó kúrú jù fún nọ́ńbà ìwé ìrìnnà orílẹ̀-èdè yìí ($country): $count nínú $expected. Ṣàyẹ̀wò bóyá díjítì tàbí lẹ́tà kan sọnù.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Ó gùn jù fún nọ́ńbà ìwé ìrìnnà orílẹ̀-èdè yìí ($country): $count nínú $expected. Ṣàyẹ̀wò bóyá díjítì tàbí lẹ́tà àfikún wà.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Èyí kò jọ nọ́ńbà láti orílẹ̀-èdè yìí ($country). Ó yẹ kí ó rí báyìí: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Èyí kò jọ nọ́ńbà láti orílẹ̀-èdè yìí ($country). Ṣàyẹ̀wò àwọn lẹ́tà àti díjítì.';
+  }
+
+  @override
+  String get idCheckDigit => 'Díjítì àyẹ̀wò kò bá a mu, nítorí náà díjítì kan lè jẹ́ àṣìṣe tàbí méjì ti pààrọ̀ ipò.';
+
+  @override
+  String get idCheckDate => 'Ọjọ́ ìbí tó wà nínú nọ́ńbà yìí kì í ṣe ọjọ́ gidi. Ṣàyẹ̀wò àwọn díjítì yẹn.';
+
+  @override
+  String get idCheckCardNote => 'Tí èyí bá jẹ́ nọ́ńbà káàdì fúnra rẹ̀, kì í ṣe nọ́ńbà ìdánimọ̀, o lè fojú fò ó.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Èyí bá ìlànà nọ́ńbà orílẹ̀-èdè yìí mu ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'A ń ṣàyẹ̀wò nọ́ńbà náà';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Tí o bá pààrọ̀ ipò díjítì $first àti $second, yóò tọ̀nà.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Tí o bá fi $digit kún un gẹ́gẹ́ bí díjítì $position, yóò tọ̀nà.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Tí o bá yọ díjítì $position kúrò, yóò tọ̀nà.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" ṣeé ṣe kó jẹ́ \"$fixed\" tí a kà ní àṣìṣe. Pẹ̀lú àyípadà yìí ó tọ̀nà.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Ó tọ̀nà fún orílẹ̀-èdè mìíràn: $countries. Ṣàyẹ̀wò orílẹ̀-èdè tó wà lórí àkọsílẹ̀.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Nọ́ńbà yìí ti wà lórí àkọsílẹ̀ mìíràn: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Lo àtúnṣe yìí';
+
+  @override
+  String get assistantNumberFixTitle => 'Ṣàtúnṣe nọ́ńbà náà';
+
+  @override
+  String get assistantNumberFixNothing => 'Kò sí nọ́ńbà láti ṣàtúnṣe nínú ìjíròrò yìí.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Apá yẹn kò sí nínú nọ́ńbà náà, tàbí ó wà ju ẹ̀ẹ̀kan lọ. Sọ àwọn díjítì tó yí i ká ní ọ̀nà mìíràn.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Kò sí díjítì kan tó bá ibẹ̀ mu. Sọ díjítì tó sọnù.';
+
+  @override
+  String get assistantNumberFixNote => 'Nọ́ńbà náà wà lórí fóònù yìí.';
+
+  @override
+  String get assistantNumberFixDone => 'A ti ṣàtúnṣe nọ́ńbà náà.';
+
+  @override
+  String get assistantNumberFixChange => 'Àyípadà';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Nọ́mbà ìdánimọ̀ nínú àwọn ìlà kóòdù ìwé náà yàtọ̀. Ó parí sí $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Nọ́mbà nínú àwọn ìlà kóòdù ìwé náà yàtọ̀. Ó parí sí $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'VIN tó wà lórí disiki ìwé àṣẹ náà yàtọ̀. Ó parí sí $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Ọjọ́ ìbí nínú nọ́mbà yìí kì í ṣe èyí tó wà lórí ìwé náà ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Irú ìwé bẹ́ẹ̀ láti orílẹ̀-èdè yìí ($country) máa ń pẹ́ ọdún $years jù lọ. Ṣàyẹ̀wò ọjọ́ tí yóò parí.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Fún ọmọdé, ìwé yìí máa ń pẹ́ ọdún $years. Ṣàyẹ̀wò ọjọ́ tí yóò parí.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN ní àmì 17. Èyí ní $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN ní lẹ́tà àti díjítì nìkan, kò sì ní I, O tàbí Q rárá.';
+
+  @override
+  String get idCheckVinDigit => 'Díjítì àyẹ̀wò (àmì kẹsàn-án) kò bá a mu. Ọkọ̀ tí a ṣe fún Àríwá Amẹ́ríkà máa ń ní i nígbà gbogbo; àwọn mìíràn lè má ní i.';
+
+  @override
+  String get idCheckVinOk => 'Èyí bá ìlànà VIN àti díjítì àyẹ̀wò rẹ̀ mu.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Ó kúrú jù fún nọ́mbà ìwé àṣẹ awakọ̀ láti orílẹ̀-èdè yìí ($country): $count nínú $expected. Ṣàyẹ̀wò bóyá díjítì tàbí lẹ́tà kan sọnù.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Ó gùn jù fún nọ́mbà ìwé àṣẹ awakọ̀ láti orílẹ̀-èdè yìí ($country): $count nínú $expected. Ṣàyẹ̀wò bóyá díjítì tàbí lẹ́tà kan pọ̀ jù.';
+  }
 }

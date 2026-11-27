@@ -10816,4 +10816,159 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Bericht controleren';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Te kort voor een identiteitsnummer uit dit land ($country): $count van $expected. Controleer of er een cijfer ontbreekt.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Te lang voor een identiteitsnummer uit dit land ($country): $count van $expected. Controleer of er een cijfer te veel is.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Te kort voor een paspoortnummer uit dit land ($country): $count van $expected. Controleer of er een cijfer of letter ontbreekt.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Te lang voor een paspoortnummer uit dit land ($country): $count van $expected. Controleer of er een cijfer of letter te veel is.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Dit lijkt niet op een nummer uit dit land ($country). Het hoort er zo uit te zien: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Dit lijkt niet op een nummer uit dit land ($country). Controleer de letters en cijfers.';
+  }
+
+  @override
+  String get idCheckDigit => 'Het controlecijfer klopt niet. Misschien is een cijfer fout of zijn er twee omgedraaid.';
+
+  @override
+  String get idCheckDate => 'De geboortedatum in dit nummer is geen echte datum. Controleer die cijfers.';
+
+  @override
+  String get idCheckCardNote => 'Als dit het eigen nummer van de kaart is en niet het identiteitsnummer, kun je dit negeren.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Dit klopt met het nummerformaat van dit land ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Nummer controleren';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Als je cijfers $first en $second omwisselt, is het geldig.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Als je $digit toevoegt als cijfer $position, is het geldig.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Als je cijfer $position weghaalt, is het geldig.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" is waarschijnlijk een verkeerd gelezen \"$fixed\". Met die wijziging is het geldig.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Het is geldig voor een ander land: $countries. Controleer het land bij het gegeven.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Dit nummer staat al bij een ander gegeven: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Deze correctie gebruiken';
+
+  @override
+  String get assistantNumberFixTitle => 'Nummer corrigeren';
+
+  @override
+  String get assistantNumberFixNothing => 'Er is geen nummer in deze chat om te corrigeren.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Dat deel staat niet in het nummer, of komt er meer dan eens in voor. Noem de cijfers eromheen op een andere manier.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Daar past geen enkel cijfer. Zeg welk cijfer ontbreekt.';
+
+  @override
+  String get assistantNumberFixNote => 'Het nummer blijft op deze telefoon.';
+
+  @override
+  String get assistantNumberFixDone => 'Nummer bijgewerkt.';
+
+  @override
+  String get assistantNumberFixChange => 'Wijziging';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Het identiteitsnummer in de codereeksen van het document is anders. Het eindigt op $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Het nummer in de codereeksen van het document is anders. Het eindigt op $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'Het VIN op de kentekenschijf is anders. Het eindigt op $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'De geboortedatum in dit nummer is niet die op het document ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Zulke documenten uit dit land ($country) zijn hoogstens $years jaar geldig. Controleer de vervaldatum.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Voor een kind is dit document $years jaar geldig. Controleer de vervaldatum.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'Een VIN heeft 17 tekens. Dit heeft er $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'Een VIN heeft alleen letters en cijfers, en nooit I, O of Q.';
+
+  @override
+  String get idCheckVinDigit => 'Het controlecijfer (het 9e teken) klopt niet. Auto\'s voor Noord-Amerika hebben er altijd een; andere misschien niet.';
+
+  @override
+  String get idCheckVinOk => 'Dit klopt met het VIN-formaat en het controlecijfer.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Te kort voor een rijbewijsnummer uit dit land ($country): $count van $expected. Controleer of er een cijfer of letter ontbreekt.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Te lang voor een rijbewijsnummer uit dit land ($country): $count van $expected. Controleer of er een cijfer of letter te veel is.';
+  }
 }

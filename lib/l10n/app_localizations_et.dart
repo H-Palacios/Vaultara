@@ -10816,4 +10816,159 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Sõnumi kontrollimine';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Selle riigi isikukoodi jaoks liiga lühike ($country): $count/$expected. Kontrolli, kas mõni number puudub.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Selle riigi isikukoodi jaoks liiga pikk ($country): $count/$expected. Kontrolli, kas mõni number on üleliigne.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Selle riigi passinumbri jaoks liiga lühike ($country): $count/$expected. Kontrolli, kas mõni number või täht puudub.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Selle riigi passinumbri jaoks liiga pikk ($country): $count/$expected. Kontrolli, kas mõni number või täht on üleliigne.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'See ei näe välja nagu selle riigi number ($country). See peaks välja nägema nii: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'See ei näe välja nagu selle riigi number ($country). Kontrolli tähti ja numbreid.';
+  }
+
+  @override
+  String get idCheckDigit => 'Kontrollnumber ei klapi, nii et mõni number võib olla vale või kaks võivad olla vahetuses.';
+
+  @override
+  String get idCheckDate => 'Selle numbri sünnikuupäev ei ole päris kuupäev. Kontrolli neid numbreid.';
+
+  @override
+  String get idCheckCardNote => 'Kui see on kaardi enda number, mitte isikukood, võid seda eirata.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'See vastab selle riigi numbrivormingule ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Numbri kontrollimine';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Kui vahetad numbrid $first ja $second, on see kehtiv.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Kui lisad $digit numbriks $position, on see kehtiv.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Kui eemaldad numbri $position, on see kehtiv.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" on tõenäoliselt valesti loetud \"$fixed\". Selle muudatusega on see kehtiv.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'See kehtib teise riigi jaoks: $countries. Kontrolli kirje riiki.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'See number on juba teises kirjes: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Kasuta seda parandust';
+
+  @override
+  String get assistantNumberFixTitle => 'Paranda number';
+
+  @override
+  String get assistantNumberFixNothing => 'Selles vestluses pole parandamiseks numbrit.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Seda osa numbris pole või see on seal mitu korda. Kirjelda selle ümber olevaid numbreid teisiti.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Sinna ei sobi ükski üksik number. Ütle, milline number puudub.';
+
+  @override
+  String get assistantNumberFixNote => 'Number jääb sellesse telefoni.';
+
+  @override
+  String get assistantNumberFixDone => 'Number uuendatud.';
+
+  @override
+  String get assistantNumberFixChange => 'Muudatus';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Dokumendi koodiridade isikukood on erinev. See lõpeb $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Dokumendi koodiridade number on erinev. See lõpeb $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'Registreerimiskleebise VIN on erinev. See lõpeb $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Selle numbri sünnikuupäev ei ole sama mis dokumendil ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Sellised dokumendid sellest riigist ($country) kehtivad kõige rohkem $years aastat. Kontrolli aegumiskuupäeva.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Lapsel kehtib see dokument $years aastat. Kontrolli aegumiskuupäeva.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN-is on 17 märki. Selles on $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN-is on ainult tähed ja numbrid, kunagi I, O ega Q.';
+
+  @override
+  String get idCheckVinDigit => 'Kontrollmärk (9. märk) ei klapi. Põhja-Ameerika jaoks tehtud autodel on see alati; teistel ei pruugi olla.';
+
+  @override
+  String get idCheckVinOk => 'See vastab VIN-vormingule ja selle kontrollmärgile.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Selle riigi juhiloa numbri jaoks liiga lühike ($country): $count/$expected. Kontrolli, kas mõni number või täht puudub.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Selle riigi juhiloa numbri jaoks liiga pikk ($country): $count/$expected. Kontrolli, kas mõni number või täht on üleliigne.';
+  }
 }

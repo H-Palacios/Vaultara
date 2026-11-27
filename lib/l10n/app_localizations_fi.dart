@@ -10815,4 +10815,159 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Tarkistetaan viestiä';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Liian lyhyt tämän maan henkilönumeroksi ($country): $count/$expected. Tarkista, puuttuuko numero.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Liian pitkä tämän maan henkilönumeroksi ($country): $count/$expected. Tarkista, onko mukana ylimääräinen numero.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Liian lyhyt tämän maan passin numeroksi ($country): $count/$expected. Tarkista, puuttuuko numero tai kirjain.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Liian pitkä tämän maan passin numeroksi ($country): $count/$expected. Tarkista, onko mukana ylimääräinen numero tai kirjain.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Tämä ei näytä tämän maan numerolta ($country). Sen pitäisi näyttää tältä: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Tämä ei näytä tämän maan numerolta ($country). Tarkista kirjaimet ja numerot.';
+  }
+
+  @override
+  String get idCheckDigit => 'Tarkistusmerkki ei täsmää, joten jokin numero voi olla väärin tai kaksi voi olla vaihtanut paikkaa.';
+
+  @override
+  String get idCheckDate => 'Numeron syntymäaika ei ole todellinen päivämäärä. Tarkista nuo numerot.';
+
+  @override
+  String get idCheckCardNote => 'Jos tämä on kortin oma numero eikä henkilönumero, voit jättää tämän huomiotta.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Tämä vastaa tämän maan numeromuotoa ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Tarkistetaan numeroa';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Kun vaihdat numerot $first ja $second, se on kelvollinen.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Kun lisäät $digit numeroksi $position, se on kelvollinen.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Kun poistat numeron $position, se on kelvollinen.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" on luultavasti väärin luettu \"$fixed\". Tällä muutoksella se on kelvollinen.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Se on kelvollinen toisessa maassa: $countries. Tarkista tiedon maa.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Tämä numero on jo toisessa tiedossa: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Käytä tätä korjausta';
+
+  @override
+  String get assistantNumberFixTitle => 'Korjaa numero';
+
+  @override
+  String get assistantNumberFixNothing => 'Tässä keskustelussa ei ole korjattavaa numeroa.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Sitä osaa ei ole numerossa, tai se on siinä useammin kuin kerran. Kuvaile sen ympärillä olevat numerot toisin.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Siihen ei sovi yksittäistä numeroa. Kerro, mikä numero puuttuu.';
+
+  @override
+  String get assistantNumberFixNote => 'Numero pysyy tässä puhelimessa.';
+
+  @override
+  String get assistantNumberFixDone => 'Numero päivitetty.';
+
+  @override
+  String get assistantNumberFixChange => 'Muutos';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Asiakirjan koodiriveillä oleva henkilönumero on eri. Se päättyy $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Asiakirjan koodiriveillä oleva numero on eri. Se päättyy $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'Ajoneuvotarran valmistenumero (VIN) on eri. Se päättyy $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Tämän numeron syntymäaika ei ole sama kuin asiakirjassa ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Tällaiset asiakirjat tästä maasta ($country) ovat voimassa enintään $years vuotta. Tarkista viimeinen voimassaolopäivä.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Lapsella tämä asiakirja on voimassa $years vuotta. Tarkista viimeinen voimassaolopäivä.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN-numerossa on 17 merkkiä. Tässä on $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN-numerossa on vain kirjaimia ja numeroita, eikä koskaan I, O tai Q.';
+
+  @override
+  String get idCheckVinDigit => 'Tarkistusmerkki (9. merkki) ei täsmää. Pohjois-Amerikkaan tehdyissä autoissa se on aina; muissa ei välttämättä.';
+
+  @override
+  String get idCheckVinOk => 'Tämä vastaa VIN-muotoa ja sen tarkistusmerkkiä.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Liian lyhyt tämän maan ajokortin numeroksi ($country): $count/$expected. Tarkista, puuttuuko numero tai kirjain.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Liian pitkä tämän maan ajokortin numeroksi ($country): $count/$expected. Tarkista, onko mukana ylimääräinen numero tai kirjain.';
+  }
 }

@@ -10745,4 +10745,159 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'မက်ဆေ့ချ်ကို စစ်ဆေးနေသည်';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'ဤနိုင်ငံ၏ မှတ်ပုံတင်နံပါတ်အတွက် တိုလွန်းသည် ($country)- $expected တွင် $count။ ဂဏန်းတစ်လုံး ကျန်နေသလား စစ်ပါ။';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'ဤနိုင်ငံ၏ မှတ်ပုံတင်နံပါတ်အတွက် ရှည်လွန်းသည် ($country)- $expected တွင် $count။ ဂဏန်းပိုနေသလား စစ်ပါ။';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'ဤနိုင်ငံ၏ ပတ်စ်ပို့နံပါတ်အတွက် တိုလွန်းသည် ($country)- $expected တွင် $count။ ဂဏန်း သို့မဟုတ် စာလုံး ကျန်နေသလား စစ်ပါ။';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'ဤနိုင်ငံ၏ ပတ်စ်ပို့နံပါတ်အတွက် ရှည်လွန်းသည် ($country)- $expected တွင် $count။ ဂဏန်း သို့မဟုတ် စာလုံး ပိုနေသလား စစ်ပါ။';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'ဤနိုင်ငံ၏ နံပါတ်နှင့် မတူပါ ($country)။ ဤသို့ ဖြစ်သင့်သည်- $example။';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'ဤနိုင်ငံ၏ နံပါတ်နှင့် မတူပါ ($country)။ စာလုံးနှင့် ဂဏန်းများကို စစ်ပါ။';
+  }
+
+  @override
+  String get idCheckDigit => 'စစ်ဆေးဂဏန်း မကိုက်ညီပါ၊ ထို့ကြောင့် ဂဏန်းတစ်လုံး မှားနေခြင်း သို့မဟုတ် နှစ်လုံး နေရာလဲနေခြင်း ဖြစ်နိုင်သည်။';
+
+  @override
+  String get idCheckDate => 'ဤနံပါတ်ရှိ မွေးသက္ကရာဇ်သည် တကယ့်ရက်စွဲ မဟုတ်ပါ။ ထိုဂဏန်းများကို စစ်ပါ။';
+
+  @override
+  String get idCheckCardNote => 'ဤသည် မှတ်ပုံတင်နံပါတ်မဟုတ်ဘဲ ကတ်၏ကိုယ်ပိုင်နံပါတ် ဖြစ်ပါက လျစ်လျူရှုနိုင်သည်။';
+
+  @override
+  String idCheckOk(String country) {
+    return 'ဤနိုင်ငံ၏ နံပါတ်ပုံစံနှင့် ကိုက်ညီသည် ($country)။';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'နံပါတ်ကို စစ်ဆေးနေသည်';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return '$first နှင့် $second မြောက် ဂဏန်းများကို နေရာလဲလျှင် မှန်ကန်ပါမည်။';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return '$digit ကို $position မြောက် ဂဏန်းအဖြစ် ထည့်လျှင် မှန်ကန်ပါမည်။';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return '$position မြောက် ဂဏန်းကို ဖယ်လျှင် မှန်ကန်ပါမည်။';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" သည် မှားဖတ်ထားသော \"$fixed\" ဖြစ်နိုင်သည်။ ထိုပြောင်းလဲမှုဖြင့် မှန်ကန်သည်။';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'အခြားနိုင်ငံအတွက် မှန်ကန်သည်- $countries။ မှတ်တမ်းရှိ နိုင်ငံကို စစ်ပါ။';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'ဤနံပါတ်သည် အခြားမှတ်တမ်းတွင် ရှိပြီးသားဖြစ်သည်- $record။';
+  }
+
+  @override
+  String get idHintUse => 'ဤပြင်ဆင်ချက်ကို သုံးပါ';
+
+  @override
+  String get assistantNumberFixTitle => 'နံပါတ်ကို ပြင်ပါ';
+
+  @override
+  String get assistantNumberFixNothing => 'ဤချက်တွင် ပြင်စရာ နံပါတ် မရှိပါ။';
+
+  @override
+  String get assistantNumberFixNotFound => 'ထိုအပိုင်းသည် နံပါတ်ထဲ မရှိပါ၊ သို့မဟုတ် တစ်ကြိမ်ထက်ပို ပါနေသည်။ ၎င်းပတ်လည်ရှိ ဂဏန်းများကို အခြားနည်းဖြင့် ပြောပါ။';
+
+  @override
+  String get assistantNumberFixNoDigit => 'ထိုနေရာတွင် မည်သည့်ဂဏန်းတစ်လုံးမျှ မကိုက်ညီပါ။ မည်သည့်ဂဏန်း ကျန်နေသလဲ ပြောပါ။';
+
+  @override
+  String get assistantNumberFixNote => 'နံပါတ်သည် ဤဖုန်းပေါ်တွင်သာ ရှိနေမည်။';
+
+  @override
+  String get assistantNumberFixDone => 'နံပါတ်ကို အပ်ဒိတ်လုပ်ပြီးပါပြီ။';
+
+  @override
+  String get assistantNumberFixChange => 'ပြောင်းလဲမှု';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'စာရွက်စာတမ်း၏ ကုဒ်စာကြောင်းများရှိ မှတ်ပုံတင်နံပါတ် မတူပါ။ $last ဖြင့် ဆုံးသည်။';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'စာရွက်စာတမ်း၏ ကုဒ်စာကြောင်းများရှိ နံပါတ် မတူပါ။ $last ဖြင့် ဆုံးသည်။';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'လိုင်စင်ပြားပေါ်ရှိ VIN မတူပါ။ $last ဖြင့် ဆုံးသည်။';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'ဤနံပါတ်ရှိ မွေးသက္ကရာဇ်သည် စာရွက်စာတမ်းပေါ်ရှိ ရက်စွဲ မဟုတ်ပါ ($date)။';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'ဤနိုင်ငံ ($country) မှ ဤကဲ့သို့ စာရွက်စာတမ်းများသည် အများဆုံး $years နှစ် သက်တမ်းရှိသည်။ သက်တမ်းကုန်ရက်ကို စစ်ဆေးပါ။';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'ကလေးအတွက် ဤစာရွက်စာတမ်းသည် $years နှစ် သက်တမ်းရှိသည်။ သက်တမ်းကုန်ရက်ကို စစ်ဆေးပါ။';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN တွင် စာလုံး 17 လုံး ရှိသည်။ ဤတစ်ခုတွင် $count ရှိသည်။';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN တွင် စာလုံးနှင့် ဂဏန်းများသာ ပါပြီး I, O သို့မဟုတ် Q ဘယ်တော့မှ မပါပါ။';
+
+  @override
+  String get idCheckVinDigit => 'စစ်ဆေးဂဏန်း (9 လုံးမြောက်) မကိုက်ညီပါ။ မြောက်အမေရိကအတွက် ထုတ်သောကားများတွင် အမြဲပါသည်; အခြားကားများတွင် မပါနိုင်ပါ။';
+
+  @override
+  String get idCheckVinOk => 'ဤနံပါတ်သည် VIN ပုံစံနှင့် ၎င်း၏ စစ်ဆေးဂဏန်းနှင့် ကိုက်ညီသည်။';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'ဤနိုင်ငံ၏ ယာဉ်မောင်းလိုင်စင်နံပါတ်အတွက် တိုလွန်းသည် ($country): $expected တွင် $count။ ဂဏန်း သို့မဟုတ် စာလုံး ကျန်နေသလား စစ်ပါ။';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'ဤနိုင်ငံ၏ ယာဉ်မောင်းလိုင်စင်နံပါတ်အတွက် ရှည်လွန်းသည် ($country): $expected တွင် $count။ ဂဏန်း သို့မဟုတ် စာလုံး ပိုနေသလား စစ်ပါ။';
+  }
 }

@@ -10810,4 +10810,159 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Хабар тексерілуде';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Бұл елдің жеке нөмірі үшін тым қысқа ($country): $count/$expected. Цифр жетіспей ме, тексеріңіз.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Бұл елдің жеке нөмірі үшін тым ұзын ($country): $count/$expected. Артық цифр бар ма, тексеріңіз.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Бұл елдің паспорт нөмірі үшін тым қысқа ($country): $count/$expected. Цифр не әріп жетіспей ме, тексеріңіз.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Бұл елдің паспорт нөмірі үшін тым ұзын ($country): $count/$expected. Артық цифр не әріп бар ма, тексеріңіз.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Бұл осы елдің нөміріне ұқсамайды ($country). Ол былай болуы керек: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Бұл осы елдің нөміріне ұқсамайды ($country). Әріптер мен цифрларды тексеріңіз.';
+  }
+
+  @override
+  String get idCheckDigit => 'Бақылау цифры сәйкес емес, сондықтан бір цифр қате немесе екеуінің орны ауысқан болуы мүмкін.';
+
+  @override
+  String get idCheckDate => 'Бұл нөмірдегі туған күн нақты күн емес. Сол цифрларды тексеріңіз.';
+
+  @override
+  String get idCheckCardNote => 'Егер бұл жеке нөмір емес, картаның өз нөмірі болса, мән бермеуге болады.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Бұл елдің нөмір пішіміне сәйкес келеді ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Нөмір тексерілуде';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return '$first және $second цифрлардың орнын ауыстырсаңыз, нөмір дұрыс болады.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return '$digit цифрын $position-орынға қоссаңыз, нөмір дұрыс болады.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return '$position-цифрды алып тастасаңыз, нөмір дұрыс болады.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '«$read» қате оқылған «$fixed» болуы мүмкін. Осы өзгеріспен нөмір дұрыс.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Ол басқа ел үшін дұрыс: $countries. Жазбадағы елді тексеріңіз.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Бұл нөмір басқа жазбада бұрыннан бар: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Осы түзетуді қолдану';
+
+  @override
+  String get assistantNumberFixTitle => 'Нөмірді түзету';
+
+  @override
+  String get assistantNumberFixNothing => 'Бұл чатта түзететін нөмір жоқ.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Ол бөлік нөмірде жоқ немесе бірнеше рет кездеседі. Айналасындағы цифрларды басқаша айтыңыз.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Ол жерге бірде-бір цифр сәйкес келмейді. Қай цифр жетіспейтінін айтыңыз.';
+
+  @override
+  String get assistantNumberFixNote => 'Нөмір осы телефонда қалады.';
+
+  @override
+  String get assistantNumberFixDone => 'Нөмір жаңартылды.';
+
+  @override
+  String get assistantNumberFixChange => 'Өзгеріс';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Құжаттың код жолдарындағы жеке нөмір басқа. Ол $last деп аяқталады.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Құжаттың код жолдарындағы нөмір басқа. Ол $last деп аяқталады.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'Лицензия дискісіндегі VIN басқа. Ол $last деп аяқталады.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Бұл нөмірдегі туған күн құжаттағы емес ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Бұл елдің ($country) мұндай құжаттары ең көбі $years жыл жарамды. Мерзімнің аяқталу күнін тексеріңіз.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Бала үшін бұл құжат $years жыл жарамды. Мерзімнің аяқталу күнін тексеріңіз.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN 17 таңбадан тұрады. Мұнда $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN тек әріптер мен цифрлардан тұрады, ешқашан I, O немесе Q болмайды.';
+
+  @override
+  String get idCheckVinDigit => 'Бақылау таңбасы (9-шы таңба) сәйкес емес. Солтүстік Америкаға жасалған көліктерде ол әрқашан болады; басқаларында болмауы мүмкін.';
+
+  @override
+  String get idCheckVinOk => 'Бұл VIN пішіміне және оның бақылау таңбасына сәйкес келеді.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Бұл елдің жүргізуші куәлігі нөмірі үшін тым қысқа ($country): $count/$expected. Цифр не әріп түсіп қалмағанын тексеріңіз.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Бұл елдің жүргізуші куәлігі нөмірі үшін тым ұзын ($country): $count/$expected. Артық цифр не әріп жоқ екенін тексеріңіз.';
+  }
 }

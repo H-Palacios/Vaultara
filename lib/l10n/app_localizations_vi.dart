@@ -10747,4 +10747,159 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Đang kiểm tra tin nhắn';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Quá ngắn cho số định danh của nước này ($country): $count/$expected. Kiểm tra xem có thiếu chữ số không.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Quá dài cho số định danh của nước này ($country): $count/$expected. Kiểm tra xem có thừa chữ số không.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Quá ngắn cho số hộ chiếu của nước này ($country): $count/$expected. Kiểm tra xem có thiếu chữ số hoặc chữ cái không.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Quá dài cho số hộ chiếu của nước này ($country): $count/$expected. Kiểm tra xem có thừa chữ số hoặc chữ cái không.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Số này không giống số của nước này ($country). Nó phải trông như sau: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Số này không giống số của nước này ($country). Hãy kiểm tra chữ cái và chữ số.';
+  }
+
+  @override
+  String get idCheckDigit => 'Chữ số kiểm tra không khớp, nên có thể một chữ số sai hoặc hai chữ số bị đổi chỗ.';
+
+  @override
+  String get idCheckDate => 'Ngày sinh trong số này không phải là ngày có thật. Hãy kiểm tra các chữ số đó.';
+
+  @override
+  String get idCheckCardNote => 'Nếu đây là số riêng của thẻ, không phải số định danh, bạn có thể bỏ qua.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Số này khớp với định dạng số của nước này ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Đang kiểm tra số';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Đổi chỗ chữ số thứ $first và thứ $second thì số hợp lệ.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Thêm $digit làm chữ số thứ $position thì số hợp lệ.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Bỏ chữ số thứ $position thì số hợp lệ.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" có lẽ là \"$fixed\" bị đọc nhầm. Với thay đổi đó số hợp lệ.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Số này hợp lệ với nước khác: $countries. Hãy kiểm tra nước trong hồ sơ.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Số này đã có trong một hồ sơ khác: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Dùng cách sửa này';
+
+  @override
+  String get assistantNumberFixTitle => 'Sửa số';
+
+  @override
+  String get assistantNumberFixNothing => 'Không có số nào trong cuộc trò chuyện này để sửa.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Phần đó không có trong số, hoặc xuất hiện nhiều lần. Hãy nói các chữ số xung quanh theo cách khác.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Không có chữ số nào khớp ở đó. Hãy nói chữ số nào bị thiếu.';
+
+  @override
+  String get assistantNumberFixNote => 'Số vẫn nằm trên điện thoại này.';
+
+  @override
+  String get assistantNumberFixDone => 'Đã cập nhật số.';
+
+  @override
+  String get assistantNumberFixChange => 'Thay đổi';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Số định danh trong các dòng mã của giấy tờ khác. Số đó kết thúc bằng $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Số trong các dòng mã của giấy tờ khác. Số đó kết thúc bằng $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'Số VIN trên tem đăng ký khác. Số đó kết thúc bằng $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Ngày sinh trong số này không phải ngày trên giấy tờ ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Giấy tờ loại này của nước này ($country) có hạn tối đa $years năm. Hãy kiểm tra ngày hết hạn.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Với trẻ em, giấy tờ này có hạn $years năm. Hãy kiểm tra ngày hết hạn.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'Số VIN có 17 ký tự. Số này có $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'Số VIN chỉ có chữ cái và chữ số, và không bao giờ có I, O hoặc Q.';
+
+  @override
+  String get idCheckVinDigit => 'Ký tự kiểm tra (ký tự thứ 9) không khớp. Xe sản xuất cho Bắc Mỹ luôn có ký tự này; xe khác có thể không có.';
+
+  @override
+  String get idCheckVinOk => 'Số này khớp với định dạng VIN và ký tự kiểm tra của nó.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Quá ngắn cho số giấy phép lái xe của nước này ($country): $count trên $expected. Hãy kiểm tra xem có thiếu chữ số hoặc chữ cái không.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Quá dài cho số giấy phép lái xe của nước này ($country): $count trên $expected. Hãy kiểm tra xem có thừa chữ số hoặc chữ cái không.';
+  }
 }

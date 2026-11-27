@@ -10816,4 +10816,159 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Mezua egiaztatzen';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Laburregia herrialde honetako identifikazio-zenbaki baterako ($country): $count/$expected. Egiaztatu digiturik falta den.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Luzeegia herrialde honetako identifikazio-zenbaki baterako ($country): $count/$expected. Egiaztatu digitu bat soberan dagoen.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Laburregia herrialde honetako pasaporte-zenbaki baterako ($country): $count/$expected. Egiaztatu digitu edo letrarik falta den.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Luzeegia herrialde honetako pasaporte-zenbaki baterako ($country): $count/$expected. Egiaztatu digitu edo letra bat soberan dagoen.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Ez dirudi herrialde honetako zenbaki bat ($country). Honela izan beharko luke: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Ez dirudi herrialde honetako zenbaki bat ($country). Egiaztatu letrak eta digituak.';
+  }
+
+  @override
+  String get idCheckDigit => 'Kontrol-digitua ez dator bat; agian digitu bat okerra da edo bi trukatuta daude.';
+
+  @override
+  String get idCheckDate => 'Zenbaki honetako jaiotze-data ez da benetako data bat. Egiaztatu digitu horiek.';
+
+  @override
+  String get idCheckCardNote => 'Txartelaren beraren zenbakia bada eta ez identifikazio-zenbakia, ez egin kasurik.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Herrialde honetako zenbaki-formatuarekin bat dator ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Zenbakia egiaztatzen';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return '$first. eta $second. digituak trukatuz gero, baliozkoa da.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return '$digit $position. digitu gisa gehituz gero, baliozkoa da.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return '$position. digitua kenduz gero, baliozkoa da.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" ziurrenik gaizki irakurritako \"$fixed\" bat da. Aldaketa horrekin baliozkoa da.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Beste herrialde baterako baliozkoa da: $countries. Egiaztatu erregistroko herrialdea.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Zenbaki hau beste erregistro batean dago jada: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Erabili zuzenketa hau';
+
+  @override
+  String get assistantNumberFixTitle => 'Zuzendu zenbakia';
+
+  @override
+  String get assistantNumberFixNothing => 'Txat honetan ez dago zuzentzeko zenbakirik.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Zati hori ez dago zenbakian, edo behin baino gehiagotan dago. Esan bere inguruko digituak beste modu batera.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Ez da digitu bakar bat ere egokitzen hor. Esan zein digitu falta den.';
+
+  @override
+  String get assistantNumberFixNote => 'Zenbakia telefono honetan geratzen da.';
+
+  @override
+  String get assistantNumberFixDone => 'Zenbakia eguneratuta.';
+
+  @override
+  String get assistantNumberFixChange => 'Aldaketa';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Dokumentuaren kode-lerroetako identifikazio-zenbakia desberdina da. $last zenbakiaz amaitzen da.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Dokumentuaren kode-lerroetako zenbakia desberdina da. $last zenbakiaz amaitzen da.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'Matrikula-zigiluko VINa desberdina da. $last zenbakiaz amaitzen da.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Zenbaki honetako jaiotze-data ez da dokumentukoa ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Herrialde honetako ($country) horrelako dokumentuek gehienez $years urte balio dute. Egiaztatu iraungitze-data.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Haur batentzat dokumentu honek $years urte balio du. Egiaztatu iraungitze-data.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN batek 17 karaktere ditu. Honek $count ditu.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN batek letrak eta digituak baino ez ditu, eta inoiz ez I, O edo Q.';
+
+  @override
+  String get idCheckVinDigit => 'Kontrol-digitua (9. karakterea) ez dator bat. Ipar Amerikarako autoek beti dute; besteek agian ez.';
+
+  @override
+  String get idCheckVinOk => 'VIN formatuarekin eta bere kontrol-digituarekin bat dator.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Laburregia herrialde honetako gidabaimen-zenbaki baterako ($country): $count/$expected. Egiaztatu digitu edo letrarik falta den.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Luzeegia herrialde honetako gidabaimen-zenbaki baterako ($country): $count/$expected. Egiaztatu digitu edo letra bat soberan dagoen.';
+  }
 }

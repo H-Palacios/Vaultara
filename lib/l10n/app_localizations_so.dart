@@ -10810,4 +10810,159 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Fariinta waa la hubinayaa';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Aad buu ugu gaaban yahay lambarka aqoonsiga dalkan ($country): $count ka mid ah $expected. Hubi in tiro ka maqan tahay.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Aad buu ugu dheer yahay lambarka aqoonsiga dalkan ($country): $count ka mid ah $expected. Hubi in tiro dheeraad ah jirto.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Aad buu ugu gaaban yahay lambarka baasaboorka dalkan ($country): $count ka mid ah $expected. Hubi in tiro ama xaraf ka maqan yahay.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Aad buu ugu dheer yahay lambarka baasaboorka dalkan ($country): $count ka mid ah $expected. Hubi in tiro ama xaraf dheeraad ah jiro.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Tani uma eka lambar ka timid dalkan ($country). Waa inay sidan u ekaato: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Tani uma eka lambar ka timid dalkan ($country). Hubi xarfaha iyo tirooyinka.';
+  }
+
+  @override
+  String get idCheckDigit => 'Tirada hubinta isma waafaqsana, markaa tiro ayaa khaldan ama laba ayaa meel isku beddeshay.';
+
+  @override
+  String get idCheckDate => 'Taariikhda dhalashada ee lambarkan maaha taariikh dhab ah. Hubi tirooyinkaas.';
+
+  @override
+  String get idCheckCardNote => 'Haddii tani tahay lambarka kaarka laftiisa oo aysan ahayn lambarka aqoonsiga, waad iska indha tiri kartaa.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Tani waxay la jaanqaadaysaa qaabka lambarrada dalkan ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Lambarka waa la hubinayaa';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Haddii aad isku beddesho tirooyinka $first iyo $second, waa sax.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Haddii aad ku darto $digit sida tirada $position, waa sax.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Haddii aad ka saarto tirada $position, waa sax.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" waxay u badan tahay \"$fixed\" si khaldan loo akhriyay. Isbeddelkaas waa sax.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Waa sax dal kale: $countries. Hubi dalka ku qoran diiwaanka.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Lambarkan horay ayuu ugu jiraa diiwaan kale: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Isticmaal saxitaankan';
+
+  @override
+  String get assistantNumberFixTitle => 'Sax lambarka';
+
+  @override
+  String get assistantNumberFixNothing => 'Sheekadan kuma jiro lambar la saxo.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Qaybtaas kuma jirto lambarka, ama in ka badan hal mar ayay ku jirtaa. Si kale u sheeg tirooyinka ku hareeraysan.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Hal tiro oo keliya halkaas kuma habboona. Sheeg tirada maqan.';
+
+  @override
+  String get assistantNumberFixNote => 'Lambarku wuxuu ku jiraa taleefankan.';
+
+  @override
+  String get assistantNumberFixDone => 'Lambarka waa la cusboonaysiiyay.';
+
+  @override
+  String get assistantNumberFixChange => 'Isbeddel';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Lambarka aqoonsiga ee ku jira xariiqyada koodhka dukumentiga waa ka duwan yahay. Wuxuu ku dhammaadaa $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Lambarka ku jira xariiqyada koodhka dukumentiga waa ka duwan yahay. Wuxuu ku dhammaadaa $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'VIN-ka ku yaal saxanka liisanka waa ka duwan yahay. Wuxuu ku dhammaadaa $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Taariikhda dhalashada ee lambarkan ma aha tan dukumentiga ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Dukumentiyada noocan ah ee dalkan ($country) ugu badnaan waxay socdaan $years sano. Hubi taariikhda dhicitaanka.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Ilmo ahaan, dukumentigan wuxuu socdaa $years sano. Hubi taariikhda dhicitaanka.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN wuxuu leeyahay 17 xaraf. Kan wuxuu leeyahay $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN wuxuu leeyahay xarfo iyo tirooyin oo keliya, waligiis ma laha I, O ama Q.';
+
+  @override
+  String get idCheckVinDigit => 'Tirada hubinta (xarafka 9aad) isma waafaqsana. Baabuurta loo sameeyay Waqooyiga Ameerika had iyo jeer way leeyihiin; kuwa kale laga yaabaa inaysan lahayn.';
+
+  @override
+  String get idCheckVinOk => 'Kani wuxuu waafaqsan yahay qaabka VIN iyo tiradiisa hubinta.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Aad buu ugu gaaban yahay lambarka liisanka darawalnimada ee dalkan ($country): $count ka mid ah $expected. Hubi in tiro ama xaraf maqan yahay.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Aad buu ugu dheer yahay lambarka liisanka darawalnimada ee dalkan ($country): $count ka mid ah $expected. Hubi in tiro ama xaraf dheeraad ah jiro.';
+  }
 }

@@ -10810,4 +10810,159 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'در حال بررسی پیام';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'برای شماره شناسایی این کشور خیلی کوتاه است ($country): $count از $expected. ببینید رقمی جا نیفتاده باشد.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'برای شماره شناسایی این کشور خیلی بلند است ($country): $count از $expected. ببینید رقم اضافه‌ای نباشد.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'برای شماره گذرنامه این کشور خیلی کوتاه است ($country): $count از $expected. ببینید رقم یا حرفی جا نیفتاده باشد.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'برای شماره گذرنامه این کشور خیلی بلند است ($country): $count از $expected. ببینید رقم یا حرف اضافه‌ای نباشد.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'این شبیه شماره‌ای از این کشور نیست ($country). باید این شکلی باشد: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'این شبیه شماره‌ای از این کشور نیست ($country). حروف و ارقام را بررسی کنید.';
+  }
+
+  @override
+  String get idCheckDigit => 'رقم کنترل مطابقت ندارد، پس شاید یک رقم اشتباه باشد یا دو رقم جابه‌جا شده باشند.';
+
+  @override
+  String get idCheckDate => 'تاریخ تولد در این شماره تاریخ واقعی نیست. آن ارقام را بررسی کنید.';
+
+  @override
+  String get idCheckCardNote => 'اگر این شماره خود کارت است و نه شماره شناسایی، می‌توانید نادیده بگیرید.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'با قالب شماره‌های این کشور مطابقت دارد ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'در حال بررسی شماره';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'با جابه‌جا کردن رقم‌های $first و $second معتبر می‌شود.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'با افزودن $digit به‌عنوان رقم $position معتبر می‌شود.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'با حذف رقم $position معتبر می‌شود.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '«$read» احتمالاً «$fixed» است که اشتباه خوانده شده. با این تغییر معتبر می‌شود.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'برای کشور دیگری معتبر است: $countries. کشور سابقه را بررسی کنید.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'این شماره از قبل در سابقه دیگری هست: $record.';
+  }
+
+  @override
+  String get idHintUse => 'استفاده از این اصلاح';
+
+  @override
+  String get assistantNumberFixTitle => 'اصلاح شماره';
+
+  @override
+  String get assistantNumberFixNothing => 'در این گفتگو شماره‌ای برای اصلاح نیست.';
+
+  @override
+  String get assistantNumberFixNotFound => 'این بخش در شماره نیست یا بیش از یک بار آمده. رقم‌های اطرافش را طور دیگری بگویید.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'هیچ رقمی به‌تنهایی آنجا جور نمی‌شود. بگویید کدام رقم جا افتاده.';
+
+  @override
+  String get assistantNumberFixNote => 'شماره روی همین گوشی می‌ماند.';
+
+  @override
+  String get assistantNumberFixDone => 'شماره به‌روز شد.';
+
+  @override
+  String get assistantNumberFixChange => 'تغییر';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'شماره شناسایی در خطوط کد سند فرق دارد. به $last ختم می‌شود.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'شماره در خطوط کد سند فرق دارد. به $last ختم می‌شود.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'شماره شاسی (VIN) روی برچسب مجوز فرق دارد. به $last ختم می‌شود.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'تاریخ تولد در این شماره با سند یکی نیست ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'این نوع سند از این کشور ($country) حداکثر $years سال اعتبار دارد. تاریخ انقضا را بررسی کنید.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'برای کودک، این سند $years سال اعتبار دارد. تاریخ انقضا را بررسی کنید.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'شماره شاسی (VIN) ۱۷ نویسه دارد. این یکی $count دارد.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'شماره شاسی فقط حرف و رقم دارد و هرگز I، O یا Q ندارد.';
+
+  @override
+  String get idCheckVinDigit => 'رقم کنترل (نویسه نهم) مطابقت ندارد. خودروهای ساخت آمریکای شمالی همیشه آن را دارند؛ بقیه شاید نه.';
+
+  @override
+  String get idCheckVinOk => 'با قالب شماره شاسی و رقم کنترل آن مطابقت دارد.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'برای شماره گواهینامه رانندگی این کشور خیلی کوتاه است ($country): $count از $expected. ببینید رقم یا حرفی جا نیفتاده باشد.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'برای شماره گواهینامه رانندگی این کشور خیلی بلند است ($country): $count از $expected. ببینید رقم یا حرف اضافه‌ای نباشد.';
+  }
 }

@@ -10811,4 +10811,159 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Xabar tekshirilmoqda';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Bu davlatning shaxsiy raqami uchun juda qisqa ($country): $count/$expected. Raqam tushib qolmaganini tekshiring.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Bu davlatning shaxsiy raqami uchun juda uzun ($country): $count/$expected. Ortiqcha raqam yoʻqligini tekshiring.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Bu davlatning pasport raqami uchun juda qisqa ($country): $count/$expected. Raqam yoki harf tushib qolmaganini tekshiring.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Bu davlatning pasport raqami uchun juda uzun ($country): $count/$expected. Ortiqcha raqam yoki harf yoʻqligini tekshiring.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Bu ushbu davlatning raqamiga oʻxshamaydi ($country). U shunday boʻlishi kerak: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Bu ushbu davlatning raqamiga oʻxshamaydi ($country). Harflar va raqamlarni tekshiring.';
+  }
+
+  @override
+  String get idCheckDigit => 'Nazorat raqami mos kelmaydi, demak bitta raqam xato yoki ikkitasining oʻrni almashgan boʻlishi mumkin.';
+
+  @override
+  String get idCheckDate => 'Bu raqamdagi tugʻilgan sana haqiqiy sana emas. Oʻsha raqamlarni tekshiring.';
+
+  @override
+  String get idCheckCardNote => 'Agar bu shaxsiy raqam emas, kartaning oʻz raqami boʻlsa, eʼtibor bermasangiz ham boʻladi.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Bu davlatning raqam formatiga mos keladi ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Raqam tekshirilmoqda';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return '$first va $second-raqamlarning oʻrnini almashtirsangiz, toʻgʻri boʻladi.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return '$digit ni $position-raqam sifatida qoʻshsangiz, toʻgʻri boʻladi.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return '$position-raqamni olib tashlasangiz, toʻgʻri boʻladi.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" ehtimol notoʻgʻri oʻqilgan \"$fixed\". Shu oʻzgarish bilan toʻgʻri.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'U boshqa davlat uchun toʻgʻri: $countries. Yozuvdagi davlatni tekshiring.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Bu raqam allaqachon boshqa yozuvda bor: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Ushbu tuzatishdan foydalanish';
+
+  @override
+  String get assistantNumberFixTitle => 'Raqamni tuzatish';
+
+  @override
+  String get assistantNumberFixNothing => 'Bu suhbatda tuzatiladigan raqam yoʻq.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Bu qism raqamda yoʻq yoki bir necha marta uchraydi. Uning atrofidagi raqamlarni boshqacha ayting.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'U yerga hech bir raqam toʻgʻri kelmaydi. Qaysi raqam tushib qolganini ayting.';
+
+  @override
+  String get assistantNumberFixNote => 'Raqam shu telefonda qoladi.';
+
+  @override
+  String get assistantNumberFixDone => 'Raqam yangilandi.';
+
+  @override
+  String get assistantNumberFixChange => 'Oʻzgarish';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Hujjatning kod qatorlaridagi shaxsiy raqam boshqacha. U $last bilan tugaydi.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Hujjatning kod qatorlaridagi raqam boshqacha. U $last bilan tugaydi.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'Litsenziya diskidagi VIN boshqacha. U $last bilan tugaydi.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Bu raqamdagi tug\'ilgan sana hujjatdagisi emas ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Bu mamlakatdan ($country) bunday hujjatlar ko\'pi bilan $years yil amal qiladi. Muddati tugash sanasini tekshiring.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Bola uchun bu hujjat $years yil amal qiladi. Muddati tugash sanasini tekshiring.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN 17 belgidan iborat. Bunda $count ta.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN faqat harflar va raqamlardan iborat, hech qachon I, O yoki Q bo\'lmaydi.';
+
+  @override
+  String get idCheckVinDigit => 'Tekshiruv belgisi (9-belgi) mos emas. Shimoliy Amerika uchun ishlab chiqarilgan mashinalarda u doim bo\'ladi; boshqalarida bo\'lmasligi mumkin.';
+
+  @override
+  String get idCheckVinOk => 'Bu VIN formatiga va uning tekshiruv belgisiga mos keladi.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Bu mamlakat haydovchilik guvohnomasi raqami uchun juda qisqa ($country): $count/$expected. Raqam yoki harf tushib qolmaganini tekshiring.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Bu mamlakat haydovchilik guvohnomasi raqami uchun juda uzun ($country): $count/$expected. Ortiqcha raqam yoki harf yo\'qligini tekshiring.';
+  }
 }

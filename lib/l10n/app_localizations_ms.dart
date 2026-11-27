@@ -10747,4 +10747,159 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'Menyemak mesej';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'Terlalu pendek untuk nombor pengenalan dari negara ini ($country): $count daripada $expected. Semak jika ada digit yang tertinggal.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'Terlalu panjang untuk nombor pengenalan dari negara ini ($country): $count daripada $expected. Semak jika ada digit berlebihan.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'Terlalu pendek untuk nombor pasport dari negara ini ($country): $count daripada $expected. Semak jika ada digit atau huruf yang tertinggal.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'Terlalu panjang untuk nombor pasport dari negara ini ($country): $count daripada $expected. Semak jika ada digit atau huruf berlebihan.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'Ini tidak kelihatan seperti nombor dari negara ini ($country). Ia sepatutnya begini: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'Ini tidak kelihatan seperti nombor dari negara ini ($country). Semak huruf dan digitnya.';
+  }
+
+  @override
+  String get idCheckDigit => 'Digit semakan tidak sepadan, jadi mungkin satu digit salah atau dua digit tertukar.';
+
+  @override
+  String get idCheckDate => 'Tarikh lahir dalam nombor ini bukan tarikh sebenar. Semak digit tersebut.';
+
+  @override
+  String get idCheckCardNote => 'Jika ini nombor kad itu sendiri, bukan nombor pengenalan, anda boleh abaikan.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'Ini sepadan dengan format nombor negara ini ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'Menyemak nombor';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'Menukar digit ke-$first dan ke-$second menjadikannya sah.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'Menambah $digit sebagai digit ke-$position menjadikannya sah.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'Membuang digit ke-$position menjadikannya sah.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" mungkin \"$fixed\" yang tersalah baca. Dengan perubahan itu nombornya sah.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'Nombor ini sah untuk negara lain: $countries. Semak negara dalam rekod.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'Nombor ini sudah ada dalam rekod lain: $record.';
+  }
+
+  @override
+  String get idHintUse => 'Guna pembetulan ini';
+
+  @override
+  String get assistantNumberFixTitle => 'Betulkan nombor';
+
+  @override
+  String get assistantNumberFixNothing => 'Tiada nombor dalam sembang ini untuk dibetulkan.';
+
+  @override
+  String get assistantNumberFixNotFound => 'Bahagian itu tiada dalam nombor, atau ada lebih sekali. Sebut digit di sekelilingnya dengan cara lain.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'Tiada satu digit pun yang sesuai di situ. Sebut digit mana yang tertinggal.';
+
+  @override
+  String get assistantNumberFixNote => 'Nombor kekal di telefon ini.';
+
+  @override
+  String get assistantNumberFixDone => 'Nombor dikemas kini.';
+
+  @override
+  String get assistantNumberFixChange => 'Perubahan';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'Nombor pengenalan dalam baris kod dokumen berbeza. Ia berakhir dengan $last.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'Nombor dalam baris kod dokumen berbeza. Ia berakhir dengan $last.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'VIN pada cakera lesen berbeza. Ia berakhir dengan $last.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'Tarikh lahir dalam nombor ini bukan yang ada pada dokumen ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'Dokumen seperti ini dari negara ini ($country) sah paling lama $years tahun. Semak tarikh tamat tempoh.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'Untuk kanak-kanak, dokumen ini sah $years tahun. Semak tarikh tamat tempoh.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN mempunyai 17 aksara. Yang ini mempunyai $count.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN hanya mengandungi huruf dan digit, dan tidak pernah I, O atau Q.';
+
+  @override
+  String get idCheckVinDigit => 'Digit semak (aksara ke-9) tidak sepadan. Kereta yang dibuat untuk Amerika Utara sentiasa memilikinya; yang lain mungkin tidak.';
+
+  @override
+  String get idCheckVinOk => 'Ini sepadan dengan format VIN dan digit semaknya.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'Terlalu pendek untuk nombor lesen memandu dari negara ini ($country): $count daripada $expected. Semak jika ada digit atau huruf yang tertinggal.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'Terlalu panjang untuk nombor lesen memandu dari negara ini ($country): $count daripada $expected. Semak jika ada digit atau huruf yang berlebihan.';
+  }
 }

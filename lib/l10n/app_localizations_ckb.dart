@@ -10810,4 +10810,159 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get assistantStepScam => 'پشکنینی نامەکە';
+
+  @override
+  String idCheckShortId(String country, String count, String expected) {
+    return 'زۆر کورتە بۆ ژمارەی ناسنامەی ئەم وڵاتە ($country): $count لە $expected. بپشکنە ژمارەیەک کەم نییە.';
+  }
+
+  @override
+  String idCheckLongId(String country, String count, String expected) {
+    return 'زۆر درێژە بۆ ژمارەی ناسنامەی ئەم وڵاتە ($country): $count لە $expected. بپشکنە ژمارەیەکی زیادە نییە.';
+  }
+
+  @override
+  String idCheckShortPassport(String country, String count, String expected) {
+    return 'زۆر کورتە بۆ ژمارەی پاسپۆرتی ئەم وڵاتە ($country): $count لە $expected. بپشکنە ژمارە یان پیتێک کەم نییە.';
+  }
+
+  @override
+  String idCheckLongPassport(String country, String count, String expected) {
+    return 'زۆر درێژە بۆ ژمارەی پاسپۆرتی ئەم وڵاتە ($country): $count لە $expected. بپشکنە ژمارە یان پیتێکی زیادە نییە.';
+  }
+
+  @override
+  String idCheckFormat(String country, String example) {
+    return 'ئەمە لە ژمارەیەکی ئەم وڵاتە ناچێت ($country). دەبێت بەم شێوەیە بێت: $example.';
+  }
+
+  @override
+  String idCheckFormatNoExample(String country) {
+    return 'ئەمە لە ژمارەیەکی ئەم وڵاتە ناچێت ($country). پیت و ژمارەکان بپشکنە.';
+  }
+
+  @override
+  String get idCheckDigit => 'ژمارەی پشکنین ناگونجێت، کەواتە لەوانەیە ژمارەیەک هەڵە بێت یان دووان شوێنیان گۆڕابێت.';
+
+  @override
+  String get idCheckDate => 'بەرواری لەدایکبوون لەم ژمارەیەدا بەروارێکی ڕاستەقینە نییە. ئەو ژمارانە بپشکنە.';
+
+  @override
+  String get idCheckCardNote => 'ئەگەر ئەمە ژمارەی خودی کارتەکەیە نەک ژمارەی ناسنامە، دەتوانیت گوێی پێ نەدەیت.';
+
+  @override
+  String idCheckOk(String country) {
+    return 'ئەمە لەگەڵ شێوازی ژمارەکانی ئەم وڵاتە دەگونجێت ($country).';
+  }
+
+  @override
+  String get assistantStepIdCheck => 'پشکنینی ژمارەکە';
+
+  @override
+  String idHintSwap(String first, String second) {
+    return 'گۆڕینەوەی شوێنی ژمارەکانی $first و $second دروستی دەکات.';
+  }
+
+  @override
+  String idHintMissing(String digit, String position) {
+    return 'زیادکردنی $digit وەک ژمارەی $position دروستی دەکات.';
+  }
+
+  @override
+  String idHintExtra(String position) {
+    return 'لابردنی ژمارەی $position دروستی دەکات.';
+  }
+
+  @override
+  String idHintLookAlike(String read, String fixed) {
+    return '\"$read\" لەوانەیە \"$fixed\"ێک بێت کە بە هەڵە خوێندراوەتەوە. بەم گۆڕانکارییە دروستە.';
+  }
+
+  @override
+  String idHintOtherCountry(String countries) {
+    return 'بۆ وڵاتێکی تر دروستە: $countries. وڵاتی تۆمارەکە بپشکنە.';
+  }
+
+  @override
+  String idHintDuplicate(String record) {
+    return 'ئەم ژمارەیە پێشتر لە تۆمارێکی تردایە: $record.';
+  }
+
+  @override
+  String get idHintUse => 'ئەم چاککردنە بەکاربهێنە';
+
+  @override
+  String get assistantNumberFixTitle => 'ژمارەکە چاک بکە';
+
+  @override
+  String get assistantNumberFixNothing => 'لەم گفتوگۆیەدا هیچ ژمارەیەک نییە بۆ چاککردن.';
+
+  @override
+  String get assistantNumberFixNotFound => 'ئەو بەشە لە ژمارەکەدا نییە، یان زیاتر لە جارێک هاتووە. ژمارەکانی دەوروبەری بە شێوەیەکی تر بڵێ.';
+
+  @override
+  String get assistantNumberFixNoDigit => 'هیچ تاکە ژمارەیەک لەوێ ناگونجێت. بڵێ کام ژمارە کەمە.';
+
+  @override
+  String get assistantNumberFixNote => 'ژمارەکە لەسەر ئەم تەلەفۆنە دەمێنێتەوە.';
+
+  @override
+  String get assistantNumberFixDone => 'ژمارەکە نوێ کرایەوە.';
+
+  @override
+  String get assistantNumberFixChange => 'گۆڕانکاری';
+
+  @override
+  String idCrossPersonal(String last) {
+    return 'ژمارەی ناسنامە لە هێڵەکانی کۆدی بەڵگەنامەکەدا جیاوازە. بە $last کۆتایی دێت.';
+  }
+
+  @override
+  String idCrossDocument(String last) {
+    return 'ژمارەکە لە هێڵەکانی کۆدی بەڵگەنامەکەدا جیاوازە. بە $last کۆتایی دێت.';
+  }
+
+  @override
+  String idCrossVin(String last) {
+    return 'ژمارەی شاسی (VIN) لەسەر لکێنەری مۆڵەتەکە جیاوازە. بە $last کۆتایی دێت.';
+  }
+
+  @override
+  String idCrossBirth(String date) {
+    return 'بەرواری لەدایکبوون لەم ژمارەیەدا هی بەڵگەنامەکە نییە ($date).';
+  }
+
+  @override
+  String idDateTooFar(String country, String years) {
+    return 'بەڵگەنامەی وا لەم وڵاتە ($country) زۆرترین $years ساڵ کار دەکات. بەرواری بەسەرچوون بپشکنە.';
+  }
+
+  @override
+  String idDateChild(String years) {
+    return 'بۆ منداڵ، ئەم بەڵگەنامەیە $years ساڵ کار دەکات. بەرواری بەسەرچوون بپشکنە.';
+  }
+
+  @override
+  String idCheckVinLength(String count) {
+    return 'VIN ١٧ پیتی هەیە. ئەمە $countی هەیە.';
+  }
+
+  @override
+  String get idCheckVinFormat => 'VIN تەنها پیت و ژمارەی تێدایە، هەرگیز I، O یان Q.';
+
+  @override
+  String get idCheckVinDigit => 'ژمارەی پشکنین (پیتی نۆیەم) ناگونجێت. ئۆتۆمبێلی دروستکراو بۆ ئەمریکای باکوور هەمیشە هەیانە؛ ئەوانی تر لەوانەیە نا.';
+
+  @override
+  String get idCheckVinOk => 'ئەمە لەگەڵ شێوازی VIN و ژمارەی پشکنینەکەی دەگونجێت.';
+
+  @override
+  String idCheckShortLicence(String country, String count, String expected) {
+    return 'زۆر کورتە بۆ ژمارەی مۆڵەتی شۆفێری ئەم وڵاتە ($country): $count لە $expected. بپشکنە ژمارە یان پیتێک کەم نییە.';
+  }
+
+  @override
+  String idCheckLongLicence(String country, String count, String expected) {
+    return 'زۆر درێژە بۆ ژمارەی مۆڵەتی شۆفێری ئەم وڵاتە ($country): $count لە $expected. بپشکنە ژمارە یان پیتێکی زیادە نییە.';
+  }
 }
