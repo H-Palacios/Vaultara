@@ -1,3 +1,6 @@
+import 'dart:convert';
+import 'dart:typed_data';
+
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:vaultara/features/support/services/support_email_service.dart';
 
@@ -37,22 +40,41 @@ class SupportRequestService {
     required String message,
     String? recordName,
     String plan = '',
+    Uint8List? screenshot,
   }) async {
     final details = await SupportEmailService.details(plan: plan);
     try {
       final response = await _functions.httpsCallable('sendSupportEmail').call(
-        <String, dynamic>{
-          'subject': subject,
-          'message': message,
-          'details': details,
-          if (recordName != null) 'recordName': recordName,
-        },
+        payload(
+          subject: subject,
+          message: message,
+          details: details,
+          recordName: recordName,
+          screenshot: screenshot,
+        ),
       );
       return sentFrom(response.data);
     } on FirebaseFunctionsException catch (e) {
       throw SupportRequestException(errorFor(e.code));
     }
   }
+
+  /// What is sent to the function. A screenshot goes as base64, which the
+  /// server checks is a real JPEG or PNG. Kept apart so it can be tested.
+  static Map<String, dynamic> payload({
+    required String subject,
+    required String message,
+    required String details,
+    String? recordName,
+    Uint8List? screenshot,
+  }) => <String, dynamic>{
+    'subject': subject,
+    'message': message,
+    'details': details,
+    if (recordName != null) 'recordName': recordName,
+    if (screenshot != null && screenshot.isNotEmpty)
+      'screenshot': base64Encode(screenshot),
+  };
 
   /// Reads the function's answer. Kept apart so it can be tested.
   static SupportRequestSent sentFrom(Object? data) {
