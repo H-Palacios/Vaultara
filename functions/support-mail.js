@@ -18,33 +18,65 @@ const SUBJECT_MAX = 120;
 const MESSAGE_MAX = 2000;
 const DETAILS_MAX = 600;
 const NAME_MAX = 60;
+// One optional screenshot (protocol 23), checked to really be a picture.
+const SCREENSHOT_MAX_BYTES = 2 * 1024 * 1024;
+const SCREENSHOT_MAX_CHARS = Math.ceil(SCREENSHOT_MAX_BYTES / 3) * 4;
+const BASE64 = /^[A-Za-z0-9+/]+={0,2}$/;
+
+// The screenshot as an attachment, or null when there is none. Anything
+// that is not a JPEG or PNG of at most 2 MB is refused, so nothing else can
+// be sent to support this way.
+function readScreenshot(raw) {
+  if (raw === undefined || raw === null || raw === "") return { none: true };
+  if (typeof raw !== "string" || raw.length > SCREENSHOT_MAX_CHARS || raw.length % 4 !== 0 || !BASE64.test(raw)) {
+    return { bad: true };
+  }
+  const bytes = Buffer.from(raw, "base64");
+  if (bytes.length === 0 || bytes.length > SCREENSHOT_MAX_BYTES) return { bad: true };
+  const jpeg = bytes[0] === 0xff && bytes[1] === 0xd8 && bytes[2] === 0xff;
+  const png = bytes.slice(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]));
+  if (!jpeg && !png) return { bad: true };
+  return {
+    attachment: {
+      filename: png ? "screenshot.png" : "screenshot.jpg",
+      content: bytes,
+      contentType: png ? "image/png" : "image/jpeg",
+    },
+  };
+}
 
 // The email support receives. Kept apart from sending so it can be tested.
-function buildSupportEmail({ uid, email, subject, message, details, recordName }) {
+function buildSupportEmail({ uid, email, subject, message, details, recordName, screenshot }) {
   const lines = [
     message,
     "",
     "---",
     details || null,
     recordName ? `Record: ${recordName}` : null,
+    screenshot ? "Screenshot: attached" : null,
     `Reply to: ${email}`,
     `User ID: ${uid}`,
     "Sent from Ask Vaultara after the user confirmed it.",
   ].filter((line) => line !== null);
-  return {
+  const mail = {
     from: SMTP_FROM,
     to: SUPPORT_TO,
     replyTo: email,
     subject: `[Ask Vaultara] ${subject}`,
     text: lines.join("\n"),
   };
+  if (screenshot) mail.attachments = [screenshot];
+  return mail;
 }
 
 function readRequest(data) {
   const subject = oneLine(data?.subject, SUBJECT_MAX);
   const message = clean(data?.message, MESSAGE_MAX);
   if (!subject || message.length < 10) return null;
+  const shot = readScreenshot(data?.screenshot);
+  if (shot.bad) return null;
   return {
+    screenshot: shot.attachment || null,
     subject,
     message,
     details: clean(data?.details, DETAILS_MAX),
@@ -79,4 +111,4 @@ exports.sendSupportEmail = onCall(
   }
 );
 
-exports._test = { buildSupportEmail, readRequest };
+exports._test = { buildSupportEmail, readRequest, readScreenshot, SCREENSHOT_MAX_BYTES };
