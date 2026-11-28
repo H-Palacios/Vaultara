@@ -4077,7 +4077,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "એક રેકોર્ડ જાતે રિન્યૂ થયો",
+  "rolledTitleLocked": "એક લૉક કરેલો રેકોર્ડ જાતે રિન્યૂ થયો",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4238,5 +4238,10 @@
   "idCheckVinDigit": "ચકાસણી અક્ષર (9મો અક્ષર) મેળ ખાતો નથી. ઉત્તર અમેરિકા માટે બનેલી ગાડીઓમાં તે હંમેશા હોય છે; બીજીમાં કદાચ ન હોય.",
   "idCheckVinOk": "આ VIN ફોર્મેટ અને તેના ચકાસણી અક્ષર સાથે મેળ ખાય છે.",
   "idCheckShortLicence": "આ દેશના ડ્રાઇવિંગ લાઇસન્સ નંબર માટે ખૂબ ટૂંકો ({country}): {expected} માંથી {count}. કોઈ અંક કે અક્ષર ખૂટે છે કે નહીં તે તપાસો.",
-  "idCheckLongLicence": "આ દેશના ડ્રાઇવિંગ લાઇસન્સ નંબર માટે ખૂબ લાંબો ({country}): {expected} માંથી {count}. કોઈ વધારાનો અંક કે અક્ષર છે કે નહીં તે તપાસો."
+  "idCheckLongLicence": "આ દેશના ડ્રાઇવિંગ લાઇસન્સ નંબર માટે ખૂબ લાંબો ({country}): {expected} માંથી {count}. કોઈ વધારાનો અંક કે અક્ષર છે કે નહીં તે તપાસો.",
+  "supportShotTitle": "સ્ક્રીનશૉટ ઉમેરશો?",
+  "supportShotBody": "સ્ક્રીનશૉટ સપોર્ટને સમસ્યા જોવામાં મદદ કરે છે. ખાતરી કરો કે તેમાં ઓળખ નંબર, પાસવર્ડ કે બેંકની વિગતો ન દેખાય.",
+  "supportShotAdd": "સ્ક્રીનશૉટ ઉમેરો",
+  "supportShotSkip": "તેના વિના મોકલો",
+  "supportShotUnusable": "આ સ્ક્રીનશૉટ વાપરી શકાતો નથી. બીજો અજમાવો અથવા તેના વિના મોકલો."
 }

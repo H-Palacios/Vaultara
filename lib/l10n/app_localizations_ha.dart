@@ -10612,7 +10612,7 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Wani rikodi ya sabunta kansa';
+  String get rolledTitleLocked => 'Wani rikodi mai kullewa ya sabunta kansa';
 
   @override
   String get digestGroupedSubtitle => 'Tunatarwa na rana ɗaya suna zuwa a matsayin sanarwa ɗaya a lokacin tunatarwarka. Rikodin da zai ƙare gobe, yau ko ya riga ya ƙare suna samun nasu.';
@@ -10966,4 +10966,19 @@ class AppLocalizationsHa extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Ya yi tsawo ga lambar lasisin tuƙi daga wannan ƙasa ($country): $count cikin $expected. Duba ko akwai ƙarin lamba ko harafi.';
   }
+
+  @override
+  String get supportShotTitle => 'A ƙara hoton allo?';
+
+  @override
+  String get supportShotBody => 'Hoton allo yana taimaka wa masu tallafi su ga matsalar. Tabbatar bai nuna lambobin shaida, kalmomin sirri ko bayanan banki ba.';
+
+  @override
+  String get supportShotAdd => 'Ƙara hoton allo';
+
+  @override
+  String get supportShotSkip => 'Aika ba tare da shi ba';
+
+  @override
+  String get supportShotUnusable => 'Ba za a iya amfani da wannan hoton allo ba. Gwada wani, ko aika ba tare da shi ba.';
 }

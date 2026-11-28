@@ -4365,7 +4365,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "تجدد سجل تلقائيًا",
+  "rolledTitleLocked": "تجدد سجل مقفل تلقائيًا",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4526,5 +4526,10 @@
   "idCheckVinDigit": "رقم التحقق (الخانة التاسعة) غير مطابق. السيارات المصنوعة لأمريكا الشمالية تحمله دائمًا، وغيرها قد لا تحمله.",
   "idCheckVinOk": "يطابق تنسيق رقم الهيكل ورقم التحقق فيه.",
   "idCheckShortLicence": "قصير جدًا لرقم رخصة قيادة من هذا البلد ({country}): {count} من {expected}. تحقق مما إذا كان هناك رقم أو حرف ناقص.",
-  "idCheckLongLicence": "طويل جدًا لرقم رخصة قيادة من هذا البلد ({country}): {count} من {expected}. تحقق مما إذا كان هناك رقم أو حرف زائد."
+  "idCheckLongLicence": "طويل جدًا لرقم رخصة قيادة من هذا البلد ({country}): {count} من {expected}. تحقق مما إذا كان هناك رقم أو حرف زائد.",
+  "supportShotTitle": "إضافة لقطة شاشة؟",
+  "supportShotBody": "تساعد لقطة الشاشة فريق الدعم على رؤية المشكلة. تأكد من أنها لا تُظهر أرقام هوية أو كلمات مرور أو بيانات مصرفية.",
+  "supportShotAdd": "إضافة لقطة شاشة",
+  "supportShotSkip": "إرسال بدونها",
+  "supportShotUnusable": "لا يمكن استخدام لقطة الشاشة هذه. جرّب لقطة أخرى أو أرسل بدونها."
 }

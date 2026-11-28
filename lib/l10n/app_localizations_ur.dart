@@ -10612,7 +10612,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'ایک ریکارڈ خود بخود تجدید ہو گیا';
+  String get rolledTitleLocked => 'ایک مقفل ریکارڈ خود بخود تجدید ہو گیا';
 
   @override
   String get digestGroupedSubtitle => 'ایک ہی دن کی یاددہانیاں آپ کے وقت پر ایک اطلاع کے طور پر آتی ہیں۔ کل، آج ختم ہونے والے یا ختم ہو چکے ریکارڈ اب بھی الگ آتے ہیں۔';
@@ -10966,4 +10966,19 @@ class AppLocalizationsUr extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'اس ملک کے ڈرائیونگ لائسنس نمبر کے لیے بہت لمبا ہے ($country): $count میں سے $expected۔ دیکھیں کوئی ہندسہ یا حرف زیادہ تو نہیں۔';
   }
+
+  @override
+  String get supportShotTitle => 'اسکرین شاٹ شامل کریں؟';
+
+  @override
+  String get supportShotBody => 'اسکرین شاٹ سپورٹ کو مسئلہ دیکھنے میں مدد دیتا ہے۔ یقینی بنائیں کہ اس میں شناختی نمبر، پاس ورڈ یا بینک کی تفصیلات نظر نہ آئیں۔';
+
+  @override
+  String get supportShotAdd => 'اسکرین شاٹ شامل کریں';
+
+  @override
+  String get supportShotSkip => 'اس کے بغیر بھیجیں';
+
+  @override
+  String get supportShotUnusable => 'یہ اسکرین شاٹ استعمال نہیں ہو سکتا۔ کوئی اور آزمائیں یا اس کے بغیر بھیجیں۔';
 }

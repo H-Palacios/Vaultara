@@ -10616,7 +10616,7 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'En post förnyades av sig själv';
+  String get rolledTitleLocked => 'En låst post förnyades av sig själv';
 
   @override
   String get digestGroupedSubtitle => 'Påminnelser samma dag kommer som en avisering vid din påminnelsetid. Poster som går ut i morgon, i dag eller redan har gått ut får fortfarande sin egen.';
@@ -10970,4 +10970,19 @@ class AppLocalizationsSv extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'För långt för ett körkortsnummer från det här landet ($country): $count av $expected. Kontrollera om det finns en siffra eller bokstav för mycket.';
   }
+
+  @override
+  String get supportShotTitle => 'Lägga till en skärmbild?';
+
+  @override
+  String get supportShotBody => 'En skärmbild hjälper supporten att se problemet. Kontrollera att den inte visar ID-nummer, lösenord eller bankuppgifter.';
+
+  @override
+  String get supportShotAdd => 'Lägg till skärmbild';
+
+  @override
+  String get supportShotSkip => 'Skicka utan';
+
+  @override
+  String get supportShotUnusable => 'Den skärmbilden kan inte användas. Prova en annan, eller skicka utan.';
 }

@@ -4358,7 +4358,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Záznam se obnovil sám",
+  "rolledTitleLocked": "Zamčený záznam se obnovil sám",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4519,5 +4519,10 @@
   "idCheckVinDigit": "Kontrolní číslice (9. znak) nesedí. Auta pro Severní Ameriku ji mají vždy, jiná ji mít nemusí.",
   "idCheckVinOk": "Odpovídá to formátu VIN a jeho kontrolní číslici.",
   "idCheckShortLicence": "Příliš krátké na číslo řidičského průkazu z této země ({country}): {count} z {expected}. Zkontrolujte, jestli nechybí číslice nebo písmeno.",
-  "idCheckLongLicence": "Příliš dlouhé na číslo řidičského průkazu z této země ({country}): {count} z {expected}. Zkontrolujte, jestli tam není číslice nebo písmeno navíc."
+  "idCheckLongLicence": "Příliš dlouhé na číslo řidičského průkazu z této země ({country}): {count} z {expected}. Zkontrolujte, jestli tam není číslice nebo písmeno navíc.",
+  "supportShotTitle": "Přidat snímek obrazovky?",
+  "supportShotBody": "Snímek obrazovky pomůže podpoře vidět problém. Zkontrolujte, že na něm nejsou čísla dokladů, hesla ani bankovní údaje.",
+  "supportShotAdd": "Přidat snímek",
+  "supportShotSkip": "Odeslat bez",
+  "supportShotUnusable": "Tento snímek nelze použít. Zkuste jiný, nebo odešlete bez."
 }

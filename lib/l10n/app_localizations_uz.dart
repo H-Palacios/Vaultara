@@ -10612,7 +10612,7 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Yozuv o\'zi yangilandi';
+  String get rolledTitleLocked => 'Qulflangan yozuv o\'zi yangilandi';
 
   @override
   String get digestGroupedSubtitle => 'Bir kundagi eslatmalar eslatma vaqtingizda bitta bildirishnoma bo\'lib keladi. Ertaga, bugun muddati tugaydigan yoki tugagan yozuvlar alohida keladi.';
@@ -10966,4 +10966,19 @@ class AppLocalizationsUz extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Bu mamlakat haydovchilik guvohnomasi raqami uchun juda uzun ($country): $count/$expected. Ortiqcha raqam yoki harf yo\'qligini tekshiring.';
   }
+
+  @override
+  String get supportShotTitle => 'Skrinshot qo\'shilsinmi?';
+
+  @override
+  String get supportShotBody => 'Skrinshot yordam xizmatiga muammoni ko\'rishga yordam beradi. Unda shaxsiy raqamlar, parollar yoki bank ma\'lumotlari ko\'rinmasligini tekshiring.';
+
+  @override
+  String get supportShotAdd => 'Skrinshot qo\'shish';
+
+  @override
+  String get supportShotSkip => 'Usiz yuborish';
+
+  @override
+  String get supportShotUnusable => 'Bu skrinshotdan foydalanib bo\'lmaydi. Boshqasini sinab ko\'ring yoki usiz yuboring.';
 }

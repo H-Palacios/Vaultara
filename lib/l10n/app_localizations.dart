@@ -18166,7 +18166,7 @@ abstract class AppLocalizations {
   /// rolledTitleLocked
   ///
   /// In en, this message translates to:
-  /// **'A record renewed by itself'**
+  /// **'A locked record renewed by itself'**
   String get rolledTitleLocked;
 
   /// digestGroupedSubtitle
@@ -18738,6 +18738,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Too long for a driving licence number from this country ({country}): {count} of {expected}. Check for an extra digit or letter.'**
   String idCheckLongLicence(String country, String count, String expected);
+
+  /// Title of the sheet shown after the user confirms a support email from Ask Vaultara.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a screenshot?'**
+  String get supportShotTitle;
+
+  /// Under the title: why a screenshot helps, and what it must not show.
+  ///
+  /// In en, this message translates to:
+  /// **'A screenshot helps support see the problem. Check that it shows no ID numbers, passwords or bank details.'**
+  String get supportShotBody;
+
+  /// Button: pick a screenshot from the gallery to send with the support email.
+  ///
+  /// In en, this message translates to:
+  /// **'Add screenshot'**
+  String get supportShotAdd;
+
+  /// Button: send the support email without a screenshot.
+  ///
+  /// In en, this message translates to:
+  /// **'Send without'**
+  String get supportShotSkip;
+
+  /// Shown when the chosen screenshot cannot be read or is over 2 MB.
+  ///
+  /// In en, this message translates to:
+  /// **'That screenshot can\'t be used. Try another one, or send without.'**
+  String get supportShotUnusable;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

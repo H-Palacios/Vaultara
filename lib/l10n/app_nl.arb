@@ -4327,7 +4327,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Een item is vanzelf verlengd",
+  "rolledTitleLocked": "Een vergrendeld item is vanzelf verlengd",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4488,5 +4488,10 @@
   "idCheckVinDigit": "Het controlecijfer (het 9e teken) klopt niet. Auto's voor Noord-Amerika hebben er altijd een; andere misschien niet.",
   "idCheckVinOk": "Dit klopt met het VIN-formaat en het controlecijfer.",
   "idCheckShortLicence": "Te kort voor een rijbewijsnummer uit dit land ({country}): {count} van {expected}. Controleer of er een cijfer of letter ontbreekt.",
-  "idCheckLongLicence": "Te lang voor een rijbewijsnummer uit dit land ({country}): {count} van {expected}. Controleer of er een cijfer of letter te veel is."
+  "idCheckLongLicence": "Te lang voor een rijbewijsnummer uit dit land ({country}): {count} van {expected}. Controleer of er een cijfer of letter te veel is.",
+  "supportShotTitle": "Screenshot toevoegen?",
+  "supportShotBody": "Een screenshot helpt support het probleem te zien. Controleer dat er geen ID-nummers, wachtwoorden of bankgegevens op staan.",
+  "supportShotAdd": "Screenshot toevoegen",
+  "supportShotSkip": "Zonder versturen",
+  "supportShotUnusable": "Die screenshot kan niet worden gebruikt. Probeer een andere, of verstuur zonder."
 }

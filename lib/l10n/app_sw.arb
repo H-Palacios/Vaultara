@@ -4327,7 +4327,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Rekodi imejihuisha yenyewe",
+  "rolledTitleLocked": "Rekodi iliyofungwa imejihuisha yenyewe",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4488,5 +4488,10 @@
   "idCheckVinDigit": "Tarakimu ya ukaguzi (herufi ya 9) hailingani. Magari yaliyotengenezwa kwa Amerika Kaskazini huwa nayo kila mara; mengine huenda yasiwe nayo.",
   "idCheckVinOk": "Hii inalingana na muundo wa VIN na tarakimu yake ya ukaguzi.",
   "idCheckShortLicence": "Fupi mno kwa namba ya leseni ya udereva kutoka nchi hii ({country}): {count} kati ya {expected}. Angalia kama tarakimu au herufi imekosekana.",
-  "idCheckLongLicence": "Ndefu mno kwa namba ya leseni ya udereva kutoka nchi hii ({country}): {count} kati ya {expected}. Angalia kama kuna tarakimu au herufi ya ziada."
+  "idCheckLongLicence": "Ndefu mno kwa namba ya leseni ya udereva kutoka nchi hii ({country}): {count} kati ya {expected}. Angalia kama kuna tarakimu au herufi ya ziada.",
+  "supportShotTitle": "Ongeza picha ya skrini?",
+  "supportShotBody": "Picha ya skrini husaidia timu ya usaidizi kuona tatizo. Hakikisha haionyeshi namba za utambulisho, nenosiri au maelezo ya benki.",
+  "supportShotAdd": "Ongeza picha ya skrini",
+  "supportShotSkip": "Tuma bila picha",
+  "supportShotUnusable": "Picha hiyo ya skrini haiwezi kutumika. Jaribu nyingine, au tuma bila picha."
 }

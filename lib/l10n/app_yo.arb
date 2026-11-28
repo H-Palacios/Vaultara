@@ -4327,7 +4327,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Àkọsílẹ̀ kan ti sọ ara rẹ̀ di tuntun",
+  "rolledTitleLocked": "Igbasilẹ tí a tì kan ti sọ ara rẹ̀ di tuntun",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4488,5 +4488,10 @@
   "idCheckVinDigit": "Díjítì àyẹ̀wò (àmì kẹsàn-án) kò bá a mu. Ọkọ̀ tí a ṣe fún Àríwá Amẹ́ríkà máa ń ní i nígbà gbogbo; àwọn mìíràn lè má ní i.",
   "idCheckVinOk": "Èyí bá ìlànà VIN àti díjítì àyẹ̀wò rẹ̀ mu.",
   "idCheckShortLicence": "Ó kúrú jù fún nọ́mbà ìwé àṣẹ awakọ̀ láti orílẹ̀-èdè yìí ({country}): {count} nínú {expected}. Ṣàyẹ̀wò bóyá díjítì tàbí lẹ́tà kan sọnù.",
-  "idCheckLongLicence": "Ó gùn jù fún nọ́mbà ìwé àṣẹ awakọ̀ láti orílẹ̀-èdè yìí ({country}): {count} nínú {expected}. Ṣàyẹ̀wò bóyá díjítì tàbí lẹ́tà kan pọ̀ jù."
+  "idCheckLongLicence": "Ó gùn jù fún nọ́mbà ìwé àṣẹ awakọ̀ láti orílẹ̀-èdè yìí ({country}): {count} nínú {expected}. Ṣàyẹ̀wò bóyá díjítì tàbí lẹ́tà kan pọ̀ jù.",
+  "supportShotTitle": "Ṣe kí a fi àwòrán ojú ìbojú kún un?",
+  "supportShotBody": "Àwòrán ojú ìbojú máa ń ran àwọn olùrànlọ́wọ́ lọ́wọ́ láti rí ìṣòro náà. Rí i dájú pé kò fi nọ́mbà ìdánimọ̀, ọ̀rọ̀ aṣínà tàbí àlàyé báǹkì hàn.",
+  "supportShotAdd": "Fi àwòrán kún un",
+  "supportShotSkip": "Fi ránṣẹ́ láìsí i",
+  "supportShotUnusable": "A kò lè lo àwòrán ojú ìbojú yìí. Gbìyànjú òmíràn, tàbí fi ránṣẹ́ láìsí i."
 }

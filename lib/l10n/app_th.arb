@@ -4344,7 +4344,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "รายการหนึ่งต่ออายุเองแล้ว",
+  "rolledTitleLocked": "รายการที่ล็อกหนึ่งรายการต่ออายุเองแล้ว",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4505,5 +4505,10 @@
   "idCheckVinDigit": "ตัวตรวจสอบ (ตัวที่ 9) ไม่ตรงกัน รถที่ผลิตสำหรับอเมริกาเหนือมีเสมอ รถอื่นอาจไม่มี",
   "idCheckVinOk": "ตรงกับรูปแบบ VIN และตัวตรวจสอบ",
   "idCheckShortLicence": "สั้นเกินไปสำหรับเลขใบขับขี่ของประเทศนี้ ({country}): {count} จาก {expected} โปรดตรวจว่ามีตัวเลขหรือตัวอักษรหายไปหรือไม่",
-  "idCheckLongLicence": "ยาวเกินไปสำหรับเลขใบขับขี่ของประเทศนี้ ({country}): {count} จาก {expected} โปรดตรวจว่ามีตัวเลขหรือตัวอักษรเกินหรือไม่"
+  "idCheckLongLicence": "ยาวเกินไปสำหรับเลขใบขับขี่ของประเทศนี้ ({country}): {count} จาก {expected} โปรดตรวจว่ามีตัวเลขหรือตัวอักษรเกินหรือไม่",
+  "supportShotTitle": "เพิ่มภาพหน้าจอไหม",
+  "supportShotBody": "ภาพหน้าจอช่วยให้ทีมช่วยเหลือเห็นปัญหา ตรวจดูให้แน่ใจว่าไม่มีเลขบัตรประชาชน รหัสผ่าน หรือข้อมูลธนาคาร",
+  "supportShotAdd": "เพิ่มภาพหน้าจอ",
+  "supportShotSkip": "ส่งโดยไม่มีภาพ",
+  "supportShotUnusable": "ใช้ภาพหน้าจอนี้ไม่ได้ ลองภาพอื่นหรือส่งโดยไม่มีภาพ"
 }

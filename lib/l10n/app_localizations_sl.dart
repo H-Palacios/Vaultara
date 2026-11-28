@@ -10780,7 +10780,7 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Zapis se je podaljšal sam';
+  String get rolledTitleLocked => 'Zaklenjen zapis se je podaljšal sam';
 
   @override
   String get digestGroupedSubtitle => 'Opomniki za isti dan pridejo kot eno obvestilo ob času opomnikov. Zapisi, ki potečejo jutri, danes ali so že potekli, še vedno dobijo svojega.';
@@ -11134,4 +11134,19 @@ class AppLocalizationsSl extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Predolgo za številko vozniškega dovoljenja iz te države ($country): $count od $expected. Preverite, ali je števka ali črka odveč.';
   }
+
+  @override
+  String get supportShotTitle => 'Dodam posnetek zaslona?';
+
+  @override
+  String get supportShotBody => 'Posnetek zaslona podpori pomaga videti težavo. Preverite, da ne prikazuje številk dokumentov, gesel ali bančnih podatkov.';
+
+  @override
+  String get supportShotAdd => 'Dodaj posnetek';
+
+  @override
+  String get supportShotSkip => 'Pošlji brez';
+
+  @override
+  String get supportShotUnusable => 'Tega posnetka ni mogoče uporabiti. Poskusite z drugim ali pošljite brez.';
 }

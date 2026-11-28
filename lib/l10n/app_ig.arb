@@ -4332,7 +4332,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Ndekọ meghariri onwe ya",
+  "rolledTitleLocked": "Ndekọ a kpọchiri akpọchi meghariri onwe ya",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4493,5 +4493,10 @@
   "idCheckVinDigit": "Ọnụọgụ nlele (mkpụrụ nke 9) adabaghị. Ụgbọala e mere maka North America na-enwe ya mgbe niile; ndị ọzọ nwere ike ọ gaghị enwe.",
   "idCheckVinOk": "Nke a dabara n'usoro VIN na ọnụọgụ nlele ya.",
   "idCheckShortLicence": "O dị mkpụmkpụ maka nọmba akwụkwọ ikike ịnya ụgbọala si obodo a ({country}): {count} n'ime {expected}. Lelee ma ọnụọgụ ma ọ bụ mkpụrụedemede efuola.",
-  "idCheckLongLicence": "O toro ogologo maka nọmba akwụkwọ ikike ịnya ụgbọala si obodo a ({country}): {count} n'ime {expected}. Lelee ma ọnụọgụ ma ọ bụ mkpụrụedemede gafere."
+  "idCheckLongLicence": "O toro ogologo maka nọmba akwụkwọ ikike ịnya ụgbọala si obodo a ({country}): {count} n'ime {expected}. Lelee ma ọnụọgụ ma ọ bụ mkpụrụedemede gafere.",
+  "supportShotTitle": "Tinye foto ihuenyo?",
+  "supportShotBody": "Foto ihuenyo na-enyere ndị nkwado aka ịhụ nsogbu ahụ. Hụ na o gosighị nọmba njirimara, okwuntughe ma ọ bụ nkọwa ụlọ akụ.",
+  "supportShotAdd": "Tinye foto ihuenyo",
+  "supportShotSkip": "Zipu na-enweghị ya",
+  "supportShotUnusable": "A pụghị iji foto ihuenyo a. Gbalịa nke ọzọ, ma ọ bụ zipu na-enweghị ya."
 }

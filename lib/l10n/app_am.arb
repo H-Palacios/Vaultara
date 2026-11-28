@@ -4365,7 +4365,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "አንድ መዝገብ በራሱ ታድሷል",
+  "rolledTitleLocked": "የተቆለፈ መዝገብ በራሱ ታድሷል",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4526,5 +4526,10 @@
   "idCheckVinDigit": "የማረጋገጫ ቁምፊው (9ኛው) አይዛመድም። ለሰሜን አሜሪካ የተሠሩ መኪኖች ሁልጊዜ አላቸው፤ ሌሎች ላይኖራቸው ይችላል።",
   "idCheckVinOk": "ይህ ከVIN ቅርጸትና ከማረጋገጫ ቁምፊው ጋር ይዛመዳል።",
   "idCheckShortLicence": "ለዚህ አገር የመንጃ ፈቃድ ቁጥር በጣም አጭር ነው ({country})፦ {count} ከ{expected}። የጎደለ አሃዝ ወይም ፊደል ካለ ያረጋግጡ።",
-  "idCheckLongLicence": "ለዚህ አገር የመንጃ ፈቃድ ቁጥር በጣም ረጅም ነው ({country})፦ {count} ከ{expected}። ትርፍ አሃዝ ወይም ፊደል ካለ ያረጋግጡ።"
+  "idCheckLongLicence": "ለዚህ አገር የመንጃ ፈቃድ ቁጥር በጣም ረጅም ነው ({country})፦ {count} ከ{expected}። ትርፍ አሃዝ ወይም ፊደል ካለ ያረጋግጡ።",
+  "supportShotTitle": "የማያ ገጽ ቅጽበታዊ ፎቶ ይጨመር?",
+  "supportShotBody": "የማያ ገጽ ፎቶ ድጋፍ ሰጪዎች ችግሩን እንዲያዩ ይረዳል። የመታወቂያ ቁጥሮች፣ የይለፍ ቃሎች ወይም የባንክ ዝርዝሮች እንዳይታዩ ያረጋግጡ።",
+  "supportShotAdd": "ፎቶ አክል",
+  "supportShotSkip": "ያለ እሱ ላክ",
+  "supportShotUnusable": "ይህን ፎቶ መጠቀም አይቻልም። ሌላ ይሞክሩ ወይም ያለ እሱ ይላኩ።"
 }

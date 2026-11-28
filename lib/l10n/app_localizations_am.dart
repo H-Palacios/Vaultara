@@ -10610,7 +10610,7 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'አንድ መዝገብ በራሱ ታድሷል';
+  String get rolledTitleLocked => 'የተቆለፈ መዝገብ በራሱ ታድሷል';
 
   @override
   String get digestGroupedSubtitle => 'በአንድ ቀን የሚወድቁ ማስታወሻዎች በማስታወሻ ሰዓትዎ እንደ አንድ ማሳወቂያ ይመጣሉ። ነገ ወይም ዛሬ የሚያበቁ ወይም ያበቁ መዝገቦች አሁንም የራሳቸውን ያገኛሉ።';
@@ -10964,4 +10964,19 @@ class AppLocalizationsAm extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'ለዚህ አገር የመንጃ ፈቃድ ቁጥር በጣም ረጅም ነው ($country)፦ $count ከ$expected። ትርፍ አሃዝ ወይም ፊደል ካለ ያረጋግጡ።';
   }
+
+  @override
+  String get supportShotTitle => 'የማያ ገጽ ቅጽበታዊ ፎቶ ይጨመር?';
+
+  @override
+  String get supportShotBody => 'የማያ ገጽ ፎቶ ድጋፍ ሰጪዎች ችግሩን እንዲያዩ ይረዳል። የመታወቂያ ቁጥሮች፣ የይለፍ ቃሎች ወይም የባንክ ዝርዝሮች እንዳይታዩ ያረጋግጡ።';
+
+  @override
+  String get supportShotAdd => 'ፎቶ አክል';
+
+  @override
+  String get supportShotSkip => 'ያለ እሱ ላክ';
+
+  @override
+  String get supportShotUnusable => 'ይህን ፎቶ መጠቀም አይቻልም። ሌላ ይሞክሩ ወይም ያለ እሱ ይላኩ።';
 }

@@ -4077,7 +4077,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Bir qeyd öz-özünə yeniləndi",
+  "rolledTitleLocked": "Kilidli qeyd öz-özünə yeniləndi",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4238,5 +4238,10 @@
   "idCheckVinDigit": "Yoxlama simvolu (9-cu simvol) uyğun gəlmir. Şimali Amerika üçün hazırlanan avtomobillərdə həmişə olur; digərlərində olmaya bilər.",
   "idCheckVinOk": "Bu VIN formatına və onun yoxlama simvoluna uyğundur.",
   "idCheckShortLicence": "Bu ölkənin sürücülük vəsiqəsi nömrəsi üçün çox qısadır ({country}): {count}/{expected}. Rəqəm və ya hərf çatışmadığını yoxlayın.",
-  "idCheckLongLicence": "Bu ölkənin sürücülük vəsiqəsi nömrəsi üçün çox uzundur ({country}): {count}/{expected}. Artıq rəqəm və ya hərf olub-olmadığını yoxlayın."
+  "idCheckLongLicence": "Bu ölkənin sürücülük vəsiqəsi nömrəsi üçün çox uzundur ({country}): {count}/{expected}. Artıq rəqəm və ya hərf olub-olmadığını yoxlayın.",
+  "supportShotTitle": "Ekran görüntüsü əlavə edilsin?",
+  "supportShotBody": "Ekran görüntüsü dəstək komandasına problemi görməyə kömək edir. Orada şəxsiyyət nömrələri, şifrələr və ya bank məlumatları görünmədiyini yoxlayın.",
+  "supportShotAdd": "Ekran görüntüsü əlavə et",
+  "supportShotSkip": "Onsuz göndər",
+  "supportShotUnusable": "Bu ekran görüntüsündən istifadə etmək olmur. Başqasını sınayın və ya onsuz göndərin."
 }

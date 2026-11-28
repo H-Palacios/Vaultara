@@ -4327,7 +4327,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Tomarek xwe nû kir",
+  "rolledTitleLocked": "Tomareke kilîtkirî xwe nû kir",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4488,5 +4488,10 @@
   "idCheckVinDigit": "Reqema kontrolê (tîpa 9an) li hev nayê. Erebeyên ji bo Amerîkaya Bakur her tim xwedî wê ne; yên din belkî ne.",
   "idCheckVinOk": "Ev li gorî forma VIN û reqema wê ya kontrolê ye.",
   "idCheckShortLicence": "Ji bo hejmara ehliyeta ajotinê ya vî welatî pir kurt e ({country}): {count} ji {expected}. Binêre ka reqemek an tîpek kêm e.",
-  "idCheckLongLicence": "Ji bo hejmara ehliyeta ajotinê ya vî welatî pir dirêj e ({country}): {count} ji {expected}. Binêre ka reqemek an tîpek zêde heye."
+  "idCheckLongLicence": "Ji bo hejmara ehliyeta ajotinê ya vî welatî pir dirêj e ({country}): {count} ji {expected}. Binêre ka reqemek an tîpek zêde heye.",
+  "supportShotTitle": "Wêneyeke ekranê lê were zêdekirin?",
+  "supportShotBody": "Wêneya ekranê alîkarî dide piştgiriyê ku pirsgirêkê bibîne. Piştrast bike ku tê de hejmarên nasnameyê, şîfre an agahiyên bankê xuya nabin.",
+  "supportShotAdd": "Wêneya ekranê zêde bike",
+  "supportShotSkip": "Bêyî wê bişîne",
+  "supportShotUnusable": "Ev wêneya ekranê nayê bikaranîn. Yeke din biceribîne an bêyî wê bişîne."
 }

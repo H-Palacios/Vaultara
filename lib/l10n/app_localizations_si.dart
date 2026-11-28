@@ -10611,7 +10611,7 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'වාර්තාවක් තමන්ම අලුත් විය';
+  String get rolledTitleLocked => 'අගුළු දමා ඇති වාර්තාවක් තමන්ම අලුත් විය';
 
   @override
   String get digestGroupedSubtitle => 'එකම දවසේ මතක් කිරීම් ඔබේ මතක් කිරීමේ වේලාවට එක් දැනුම්දීමක් ලෙස එයි. හෙට, අද කල් ඉකුත් වන හෝ ඉකුත් වූ වාර්තා තවමත් වෙනම එයි.';
@@ -10965,4 +10965,19 @@ class AppLocalizationsSi extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'මෙම රටේ රියදුරු බලපත්‍ර අංකයකට දිග වැඩියි ($country): $expected න් $count. අමතර ඉලක්කමක් හෝ අකුරක් ඇති දැයි බලන්න.';
   }
+
+  @override
+  String get supportShotTitle => 'තිර රුවක් එක් කරන්නද?';
+
+  @override
+  String get supportShotBody => 'තිර රුවක් සහාය කණ්ඩායමට ගැටලුව දැකීමට උදව් කරයි. එහි හැඳුනුම් අංක, මුරපද හෝ බැංකු විස්තර නොපෙන්වන බව තහවුරු කරන්න.';
+
+  @override
+  String get supportShotAdd => 'තිර රුව එක් කරන්න';
+
+  @override
+  String get supportShotSkip => 'එය නැතිව යවන්න';
+
+  @override
+  String get supportShotUnusable => 'මෙම තිර රුව භාවිත කළ නොහැක. වෙනත් එකක් උත්සාහ කරන්න, නැතහොත් එය නැතිව යවන්න.';
 }

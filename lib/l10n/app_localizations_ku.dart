@@ -10612,7 +10612,7 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Tomarek xwe nû kir';
+  String get rolledTitleLocked => 'Tomareke kilîtkirî xwe nû kir';
 
   @override
   String get digestGroupedSubtitle => 'Bîranînên heman rojê wekî yek agahdarî di dema bîranîna te de tên. Tomarên ku sibê, îro diqedin an qediyane hîn jî bi serê xwe tên.';
@@ -10966,4 +10966,19 @@ class AppLocalizationsKu extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Ji bo hejmara ehliyeta ajotinê ya vî welatî pir dirêj e ($country): $count ji $expected. Binêre ka reqemek an tîpek zêde heye.';
   }
+
+  @override
+  String get supportShotTitle => 'Wêneyeke ekranê lê were zêdekirin?';
+
+  @override
+  String get supportShotBody => 'Wêneya ekranê alîkarî dide piştgiriyê ku pirsgirêkê bibîne. Piştrast bike ku tê de hejmarên nasnameyê, şîfre an agahiyên bankê xuya nabin.';
+
+  @override
+  String get supportShotAdd => 'Wêneya ekranê zêde bike';
+
+  @override
+  String get supportShotSkip => 'Bêyî wê bişîne';
+
+  @override
+  String get supportShotUnusable => 'Ev wêneya ekranê nayê bikaranîn. Yeke din biceribîne an bêyî wê bişîne.';
 }

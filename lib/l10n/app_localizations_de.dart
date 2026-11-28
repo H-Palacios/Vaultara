@@ -10617,7 +10617,7 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Ein Eintrag hat sich selbst verlängert';
+  String get rolledTitleLocked => 'Ein gesperrter Eintrag hat sich selbst verlängert';
 
   @override
   String get digestGroupedSubtitle => 'Erinnerungen am selben Tag kommen als eine Mitteilung zu deiner Erinnerungszeit. Einträge, die morgen oder heute ablaufen oder abgelaufen sind, kommen weiter einzeln.';
@@ -10971,4 +10971,19 @@ class AppLocalizationsDe extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Zu lang für eine Führerscheinnummer aus diesem Land ($country): $count von $expected. Prüfe, ob eine Ziffer oder ein Buchstabe zu viel ist.';
   }
+
+  @override
+  String get supportShotTitle => 'Screenshot hinzufügen?';
+
+  @override
+  String get supportShotBody => 'Ein Screenshot hilft dem Support, das Problem zu sehen. Achte darauf, dass er keine Ausweisnummern, Passwörter oder Bankdaten zeigt.';
+
+  @override
+  String get supportShotAdd => 'Screenshot hinzufügen';
+
+  @override
+  String get supportShotSkip => 'Ohne senden';
+
+  @override
+  String get supportShotUnusable => 'Dieser Screenshot kann nicht verwendet werden. Versuche einen anderen oder sende ohne.';
 }

@@ -4320,7 +4320,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "有一筆紀錄已自動續期",
+  "rolledTitleLocked": "有一筆已鎖定的紀錄已自動續期",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4481,5 +4481,10 @@
   "idCheckVinDigit": "檢查碼 (第 9 個字元) 不符。為北美製造的汽車一定有檢查碼；其他汽車可能沒有。",
   "idCheckVinOk": "這符合 VIN 格式和檢查碼。",
   "idCheckShortLicence": "作為這個國家 ({country}) 的駕照號碼太短：{count}/{expected}。請檢查是否少了數字或字母。",
-  "idCheckLongLicence": "作為這個國家 ({country}) 的駕照號碼太長：{count}/{expected}。請檢查是否多了數字或字母。"
+  "idCheckLongLicence": "作為這個國家 ({country}) 的駕照號碼太長：{count}/{expected}。請檢查是否多了數字或字母。",
+  "supportShotTitle": "要加入螢幕截圖嗎？",
+  "supportShotBody": "截圖能幫助客服看到問題。請確認截圖中沒有證件號碼、密碼或銀行資料。",
+  "supportShotAdd": "加入截圖",
+  "supportShotSkip": "不加截圖傳送",
+  "supportShotUnusable": "這張截圖無法使用。請換一張，或不加截圖傳送。"
 }

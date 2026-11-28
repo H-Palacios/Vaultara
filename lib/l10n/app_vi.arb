@@ -4327,7 +4327,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Một mục đã tự gia hạn",
+  "rolledTitleLocked": "Một bản ghi bị khóa đã tự gia hạn",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4488,5 +4488,10 @@
   "idCheckVinDigit": "Ký tự kiểm tra (ký tự thứ 9) không khớp. Xe sản xuất cho Bắc Mỹ luôn có ký tự này; xe khác có thể không có.",
   "idCheckVinOk": "Số này khớp với định dạng VIN và ký tự kiểm tra của nó.",
   "idCheckShortLicence": "Quá ngắn cho số giấy phép lái xe của nước này ({country}): {count} trên {expected}. Hãy kiểm tra xem có thiếu chữ số hoặc chữ cái không.",
-  "idCheckLongLicence": "Quá dài cho số giấy phép lái xe của nước này ({country}): {count} trên {expected}. Hãy kiểm tra xem có thừa chữ số hoặc chữ cái không."
+  "idCheckLongLicence": "Quá dài cho số giấy phép lái xe của nước này ({country}): {count} trên {expected}. Hãy kiểm tra xem có thừa chữ số hoặc chữ cái không.",
+  "supportShotTitle": "Thêm ảnh chụp màn hình?",
+  "supportShotBody": "Ảnh chụp màn hình giúp bộ phận hỗ trợ thấy được vấn đề. Hãy kiểm tra để ảnh không hiện số giấy tờ, mật khẩu hay thông tin ngân hàng.",
+  "supportShotAdd": "Thêm ảnh chụp màn hình",
+  "supportShotSkip": "Gửi không kèm ảnh",
+  "supportShotUnusable": "Không dùng được ảnh chụp màn hình này. Hãy thử ảnh khác hoặc gửi không kèm ảnh."
 }

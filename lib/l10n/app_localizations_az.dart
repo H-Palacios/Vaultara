@@ -10611,7 +10611,7 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Bir qeyd öz-özünə yeniləndi';
+  String get rolledTitleLocked => 'Kilidli qeyd öz-özünə yeniləndi';
 
   @override
   String get digestGroupedSubtitle => 'Eyni gündəki xatırlatmalar xatırlatma vaxtınızda bir bildiriş kimi gəlir. Sabah, bu gün bitən və ya artıq bitmiş qeydlər yenə ayrıca gəlir.';
@@ -10965,4 +10965,19 @@ class AppLocalizationsAz extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Bu ölkənin sürücülük vəsiqəsi nömrəsi üçün çox uzundur ($country): $count/$expected. Artıq rəqəm və ya hərf olub-olmadığını yoxlayın.';
   }
+
+  @override
+  String get supportShotTitle => 'Ekran görüntüsü əlavə edilsin?';
+
+  @override
+  String get supportShotBody => 'Ekran görüntüsü dəstək komandasına problemi görməyə kömək edir. Orada şəxsiyyət nömrələri, şifrələr və ya bank məlumatları görünmədiyini yoxlayın.';
+
+  @override
+  String get supportShotAdd => 'Ekran görüntüsü əlavə et';
+
+  @override
+  String get supportShotSkip => 'Onsuz göndər';
+
+  @override
+  String get supportShotUnusable => 'Bu ekran görüntüsündən istifadə etmək olmur. Başqasını sınayın və ya onsuz göndərin.';
 }

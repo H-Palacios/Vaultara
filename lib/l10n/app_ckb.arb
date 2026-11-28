@@ -4327,7 +4327,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "تۆمارێک خۆی نوێ بووەوە",
+  "rolledTitleLocked": "تۆمارێکی قفڵکراو خۆی نوێ بووەوە",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4488,5 +4488,10 @@
   "idCheckVinDigit": "ژمارەی پشکنین (پیتی نۆیەم) ناگونجێت. ئۆتۆمبێلی دروستکراو بۆ ئەمریکای باکوور هەمیشە هەیانە؛ ئەوانی تر لەوانەیە نا.",
   "idCheckVinOk": "ئەمە لەگەڵ شێوازی VIN و ژمارەی پشکنینەکەی دەگونجێت.",
   "idCheckShortLicence": "زۆر کورتە بۆ ژمارەی مۆڵەتی شۆفێری ئەم وڵاتە ({country}): {count} لە {expected}. بپشکنە ژمارە یان پیتێک کەم نییە.",
-  "idCheckLongLicence": "زۆر درێژە بۆ ژمارەی مۆڵەتی شۆفێری ئەم وڵاتە ({country}): {count} لە {expected}. بپشکنە ژمارە یان پیتێکی زیادە نییە."
+  "idCheckLongLicence": "زۆر درێژە بۆ ژمارەی مۆڵەتی شۆفێری ئەم وڵاتە ({country}): {count} لە {expected}. بپشکنە ژمارە یان پیتێکی زیادە نییە.",
+  "supportShotTitle": "وێنەی شاشە زیاد بکرێت؟",
+  "supportShotBody": "وێنەی شاشە یارمەتی پشتگیری دەدات کێشەکە ببینێت. دڵنیابە کە ژمارەی ناسنامە، وشەی نهێنی یان زانیاری بانکی تێدا دیار نییە.",
+  "supportShotAdd": "زیادکردنی وێنەی شاشە",
+  "supportShotSkip": "بەبێ ئەو بینێرە",
+  "supportShotUnusable": "ناتوانرێت ئەم وێنەیە بەکاربهێنرێت. یەکێکی تر تاقی بکەرەوە یان بەبێ ئەو بینێرە."
 }

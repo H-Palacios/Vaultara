@@ -10616,7 +10616,7 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Tietue uusiutui itsestään';
+  String get rolledTitleLocked => 'Lukittu tietue uusiutui itsestään';
 
   @override
   String get digestGroupedSubtitle => 'Saman päivän muistutukset tulevat yhtenä ilmoituksena muistutusaikaasi. Huomenna tai tänään vanhenevat ja vanhentuneet saavat silti omansa.';
@@ -10970,4 +10970,19 @@ class AppLocalizationsFi extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Liian pitkä tämän maan ajokortin numeroksi ($country): $count/$expected. Tarkista, onko mukana ylimääräinen numero tai kirjain.';
   }
+
+  @override
+  String get supportShotTitle => 'Lisätäänkö kuvakaappaus?';
+
+  @override
+  String get supportShotBody => 'Kuvakaappaus auttaa tukea näkemään ongelman. Tarkista, ettei siinä näy henkilötunnuksia, salasanoja tai pankkitietoja.';
+
+  @override
+  String get supportShotAdd => 'Lisää kuvakaappaus';
+
+  @override
+  String get supportShotSkip => 'Lähetä ilman';
+
+  @override
+  String get supportShotUnusable => 'Tätä kuvakaappausta ei voi käyttää. Kokeile toista tai lähetä ilman.';
 }

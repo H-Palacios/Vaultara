@@ -4339,7 +4339,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Wani rikodi ya sabunta kansa",
+  "rolledTitleLocked": "Wani rikodi mai kullewa ya sabunta kansa",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4500,5 +4500,10 @@
   "idCheckVinDigit": "Lambar dubawa (hali na 9) ba ta dace ba. Motocin da aka yi don Arewacin Amurka koyaushe suna da ita; wasu ƙila ba su da ita.",
   "idCheckVinOk": "Wannan ya dace da tsarin VIN da lambar dubawarsa.",
   "idCheckShortLicence": "Ya yi gajere ga lambar lasisin tuƙi daga wannan ƙasa ({country}): {count} cikin {expected}. Duba ko akwai lamba ko harafi da ya ɓace.",
-  "idCheckLongLicence": "Ya yi tsawo ga lambar lasisin tuƙi daga wannan ƙasa ({country}): {count} cikin {expected}. Duba ko akwai ƙarin lamba ko harafi."
+  "idCheckLongLicence": "Ya yi tsawo ga lambar lasisin tuƙi daga wannan ƙasa ({country}): {count} cikin {expected}. Duba ko akwai ƙarin lamba ko harafi.",
+  "supportShotTitle": "A ƙara hoton allo?",
+  "supportShotBody": "Hoton allo yana taimaka wa masu tallafi su ga matsalar. Tabbatar bai nuna lambobin shaida, kalmomin sirri ko bayanan banki ba.",
+  "supportShotAdd": "Ƙara hoton allo",
+  "supportShotSkip": "Aika ba tare da shi ba",
+  "supportShotUnusable": "Ba za a iya amfani da wannan hoton allo ba. Gwada wani, ko aika ba tare da shi ba."
 }

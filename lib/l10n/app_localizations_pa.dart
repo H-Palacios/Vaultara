@@ -10612,7 +10612,7 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'ਇੱਕ ਰਿਕਾਰਡ ਆਪਣੇ ਆਪ ਨਵਿਆਇਆ ਗਿਆ';
+  String get rolledTitleLocked => 'ਇੱਕ ਲਾਕ ਕੀਤਾ ਰਿਕਾਰਡ ਆਪਣੇ ਆਪ ਨਵਿਆਇਆ ਗਿਆ';
 
   @override
   String get digestGroupedSubtitle => 'ਇੱਕੋ ਦਿਨ ਦੀਆਂ ਯਾਦ-ਦਹਾਨੀਆਂ ਤੁਹਾਡੇ ਸਮੇਂ ਤੇ ਇੱਕ ਸੂਚਨਾ ਵਜੋਂ ਆਉਂਦੀਆਂ ਹਨ। ਕੱਲ੍ਹ, ਅੱਜ ਖਤਮ ਹੋਣ ਵਾਲੇ ਜਾਂ ਖਤਮ ਹੋ ਚੁੱਕੇ ਰਿਕਾਰਡ ਨੂੰ ਅਜੇ ਵੀ ਵੱਖਰੀ ਸੂਚਨਾ ਮਿਲਦੀ ਹੈ।';
@@ -10966,4 +10966,19 @@ class AppLocalizationsPa extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'ਇਸ ਦੇਸ਼ ਦੇ ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਨੰਬਰ ਲਈ ਬਹੁਤ ਲੰਮਾ ($country): $expected ਵਿੱਚੋਂ $count। ਦੇਖੋ ਕੋਈ ਵਾਧੂ ਅੰਕ ਜਾਂ ਅੱਖਰ ਤਾਂ ਨਹੀਂ।';
   }
+
+  @override
+  String get supportShotTitle => 'ਸਕ੍ਰੀਨਸ਼ਾਟ ਜੋੜਨਾ ਹੈ?';
+
+  @override
+  String get supportShotBody => 'ਸਕ੍ਰੀਨਸ਼ਾਟ ਸਹਾਇਤਾ ਟੀਮ ਨੂੰ ਸਮੱਸਿਆ ਦੇਖਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ। ਪੱਕਾ ਕਰੋ ਕਿ ਇਸ ਵਿੱਚ ਪਛਾਣ ਨੰਬਰ, ਪਾਸਵਰਡ ਜਾਂ ਬੈਂਕ ਵੇਰਵੇ ਨਾ ਦਿਖਣ।';
+
+  @override
+  String get supportShotAdd => 'ਸਕ੍ਰੀਨਸ਼ਾਟ ਜੋੜੋ';
+
+  @override
+  String get supportShotSkip => 'ਇਸ ਤੋਂ ਬਿਨਾਂ ਭੇਜੋ';
+
+  @override
+  String get supportShotUnusable => 'ਇਹ ਸਕ੍ਰੀਨਸ਼ਾਟ ਵਰਤਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ। ਕੋਈ ਹੋਰ ਅਜ਼ਮਾਓ ਜਾਂ ਇਸ ਤੋਂ ਬਿਨਾਂ ਭੇਜੋ।';
 }

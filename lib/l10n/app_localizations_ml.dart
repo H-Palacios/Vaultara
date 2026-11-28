@@ -10612,7 +10612,7 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'ഒരു രേഖ തനിയെ പുതുക്കി';
+  String get rolledTitleLocked => 'ലോക്ക് ചെയ്ത ഒരു രേഖ തനിയെ പുതുക്കി';
 
   @override
   String get digestGroupedSubtitle => 'ഒരേ ദിവസത്തെ ഓർമ്മപ്പെടുത്തലുകൾ നിങ്ങളുടെ സമയത്ത് ഒറ്റ അറിയിപ്പായി വരും. നാളെയോ ഇന്നോ കാലാവധി തീരുന്നവയും തീർന്നവയും ഇപ്പോഴും വെവ്വേറെ വരും.';
@@ -10966,4 +10966,19 @@ class AppLocalizationsMl extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'ഈ രാജ്യത്തെ ഡ്രൈവിംഗ് ലൈസൻസ് നമ്പറിന് വളരെ നീളം ($country): $expected ൽ $count. അധിക അക്കമോ അക്ഷരമോ ഉണ്ടോ എന്ന് നോക്കുക.';
   }
+
+  @override
+  String get supportShotTitle => 'സ്ക്രീൻഷോട്ട് ചേർക്കണോ?';
+
+  @override
+  String get supportShotBody => 'സ്ക്രീൻഷോട്ട് പിന്തുണാ ടീമിനെ പ്രശ്നം കാണാൻ സഹായിക്കും. അതിൽ തിരിച്ചറിയൽ നമ്പറുകളോ പാസ്‌വേഡുകളോ ബാങ്ക് വിവരങ്ങളോ കാണുന്നില്ലെന്ന് ഉറപ്പാക്കുക.';
+
+  @override
+  String get supportShotAdd => 'സ്ക്രീൻഷോട്ട് ചേർക്കുക';
+
+  @override
+  String get supportShotSkip => 'അതില്ലാതെ അയയ്ക്കുക';
+
+  @override
+  String get supportShotUnusable => 'ഈ സ്ക്രീൻഷോട്ട് ഉപയോഗിക്കാനാവില്ല. മറ്റൊന്ന് പരീക്ഷിക്കുക, അല്ലെങ്കിൽ അതില്ലാതെ അയയ്ക്കുക.';
 }

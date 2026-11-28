@@ -10548,7 +10548,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => '기록이 자동 갱신됨';
+  String get rolledTitleLocked => '잠긴 기록이 자동 갱신됨';
 
   @override
   String get digestGroupedSubtitle => '같은 날의 알림은 알림 시간에 하나로 묶여 도착합니다. 내일이나 오늘 만료되거나 이미 만료된 항목은 따로 알려 드립니다.';
@@ -10902,4 +10902,19 @@ class AppLocalizationsKo extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return '이 나라($country) 운전면허 번호로는 너무 깁니다: $expected자 중 $count자. 남는 숫자나 문자가 있는지 확인하세요.';
   }
+
+  @override
+  String get supportShotTitle => '스크린샷을 추가할까요?';
+
+  @override
+  String get supportShotBody => '스크린샷이 있으면 지원팀이 문제를 보기 쉽습니다. 신분증 번호, 비밀번호, 은행 정보가 보이지 않는지 확인하세요.';
+
+  @override
+  String get supportShotAdd => '스크린샷 추가';
+
+  @override
+  String get supportShotSkip => '없이 보내기';
+
+  @override
+  String get supportShotUnusable => '이 스크린샷은 사용할 수 없습니다. 다른 것을 선택하거나 없이 보내세요.';
 }

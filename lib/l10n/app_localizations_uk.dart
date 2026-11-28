@@ -10789,7 +10789,7 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Запис поновився сам';
+  String get rolledTitleLocked => 'Заблокований запис поновився сам';
 
   @override
   String get digestGroupedSubtitle => 'Нагадування на один день приходять одним сповіщенням у ваш час нагадувань. Записи, що спливають завтра, сьогодні або вже спливли, і далі приходять окремо.';
@@ -11143,4 +11143,19 @@ class AppLocalizationsUk extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Задовгий для номера посвідчення водія цієї країни ($country): $count з $expected. Перевірте, чи немає зайвої цифри або літери.';
   }
+
+  @override
+  String get supportShotTitle => 'Додати знімок екрана?';
+
+  @override
+  String get supportShotBody => 'Знімок екрана допоможе підтримці побачити проблему. Перевірте, що на ньому немає номерів документів, паролів чи банківських даних.';
+
+  @override
+  String get supportShotAdd => 'Додати знімок';
+
+  @override
+  String get supportShotSkip => 'Надіслати без нього';
+
+  @override
+  String get supportShotUnusable => 'Цей знімок не можна використати. Спробуйте інший або надішліть без нього.';
 }

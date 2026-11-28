@@ -10605,7 +10605,7 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Kusang na-renew ang isang record';
+  String get rolledTitleLocked => 'Kusang na-renew ang isang naka-lock na record';
 
   @override
   String get digestGroupedSubtitle => 'Ang mga paalala sa parehong araw ay dumarating bilang isang notification sa oras ng iyong paalala. Ang mga mag-e-expire bukas, ngayon o expired na ay may sariling notification pa rin.';
@@ -10959,4 +10959,19 @@ class AppLocalizationsFil extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Masyadong mahaba para sa numero ng lisensya sa pagmamaneho mula sa bansang ito ($country): $count sa $expected. Tingnan kung may sobrang digit o letra.';
   }
+
+  @override
+  String get supportShotTitle => 'Magdagdag ng screenshot?';
+
+  @override
+  String get supportShotBody => 'Nakakatulong ang screenshot para makita ng support ang problema. Tiyaking walang makikitang ID number, password o detalye ng bangko.';
+
+  @override
+  String get supportShotAdd => 'Magdagdag ng screenshot';
+
+  @override
+  String get supportShotSkip => 'Ipadala nang wala';
+
+  @override
+  String get supportShotUnusable => 'Hindi magagamit ang screenshot na iyon. Subukan ang iba, o ipadala nang wala.';
 }

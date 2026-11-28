@@ -10624,7 +10624,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Un elemento si è rinnovato da solo';
+  String get rolledTitleLocked => 'Un elemento bloccato si è rinnovato da solo';
 
   @override
   String get digestGroupedSubtitle => 'I promemoria dello stesso giorno arrivano come un\'unica notifica all\'orario dei promemoria. Quelli in scadenza domani, oggi o già scaduti arrivano comunque da soli.';
@@ -10978,4 +10978,19 @@ class AppLocalizationsIt extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Troppo lungo per un numero di patente di questo paese ($country): $count su $expected. Controlla se c\'è una cifra o una lettera in più.';
   }
+
+  @override
+  String get supportShotTitle => 'Aggiungere uno screenshot?';
+
+  @override
+  String get supportShotBody => 'Uno screenshot aiuta l\'assistenza a vedere il problema. Controlla che non mostri numeri di documenti, password o dati bancari.';
+
+  @override
+  String get supportShotAdd => 'Aggiungi screenshot';
+
+  @override
+  String get supportShotSkip => 'Invia senza';
+
+  @override
+  String get supportShotUnusable => 'Quello screenshot non si può usare. Provane un altro o invia senza.';
 }

@@ -10611,7 +10611,7 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Запис се обнови сам';
+  String get rolledTitleLocked => 'Заклучен запис се обнови сам';
 
   @override
   String get digestGroupedSubtitle => 'Потсетниците за ист ден доаѓаат како едно известување во времето за потсетници. Записите што истекуваат утре, денес или истекле добиваат свое.';
@@ -10965,4 +10965,19 @@ class AppLocalizationsMk extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Премногу долг за број на возачка дозвола од оваа земја ($country): $count од $expected. Проверете дали има вишок цифра или буква.';
   }
+
+  @override
+  String get supportShotTitle => 'Да додадете слика од екранот?';
+
+  @override
+  String get supportShotBody => 'Сликата од екранот ѝ помага на поддршката да го види проблемот. Проверете дека не прикажува броеви на документи, лозинки или банкарски податоци.';
+
+  @override
+  String get supportShotAdd => 'Додај слика';
+
+  @override
+  String get supportShotSkip => 'Испрати без';
+
+  @override
+  String get supportShotUnusable => 'Таа слика не може да се користи. Обидете се со друга или испратете без.';
 }

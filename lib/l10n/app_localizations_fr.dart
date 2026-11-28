@@ -10627,7 +10627,7 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Un élément s\'est renouvelé seul';
+  String get rolledTitleLocked => 'Un enregistrement verrouillé s\'est renouvelé seul';
 
   @override
   String get digestGroupedSubtitle => 'Les rappels du même jour arrivent en une seule notification à votre heure de rappel. Ceux qui expirent demain, aujourd\'hui ou ont expiré arrivent toujours seuls.';
@@ -10981,4 +10981,19 @@ class AppLocalizationsFr extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Trop long pour un numéro de permis de conduire de ce pays ($country) : $count sur $expected. Vérifiez s\'il y a un chiffre ou une lettre en trop.';
   }
+
+  @override
+  String get supportShotTitle => 'Ajouter une capture d\'écran ?';
+
+  @override
+  String get supportShotBody => 'Une capture d\'écran aide le support à voir le problème. Vérifiez qu\'elle ne montre aucun numéro d\'identité, mot de passe ou coordonnées bancaires.';
+
+  @override
+  String get supportShotAdd => 'Ajouter une capture';
+
+  @override
+  String get supportShotSkip => 'Envoyer sans';
+
+  @override
+  String get supportShotUnusable => 'Cette capture d\'écran ne peut pas être utilisée. Essayez-en une autre ou envoyez sans.';
 }

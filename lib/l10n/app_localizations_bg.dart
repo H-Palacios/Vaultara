@@ -10613,7 +10613,7 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Запис се поднови сам';
+  String get rolledTitleLocked => 'Заключен запис се поднови сам';
 
   @override
   String get digestGroupedSubtitle => 'Напомнянията за един и същи ден идват като едно известие в часа за напомняне. Записите, изтичащи утре, днес или вече изтекли, получават свое.';
@@ -10967,4 +10967,19 @@ class AppLocalizationsBg extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Твърде дълъг за номер на шофьорска книжка от тази държава ($country): $count от $expected. Проверете дали няма излишна цифра или буква.';
   }
+
+  @override
+  String get supportShotTitle => 'Да добавите ли екранна снимка?';
+
+  @override
+  String get supportShotBody => 'Екранната снимка помага на поддръжката да види проблема. Проверете, че на нея няма номера на документи, пароли или банкови данни.';
+
+  @override
+  String get supportShotAdd => 'Добави снимка';
+
+  @override
+  String get supportShotSkip => 'Изпрати без';
+
+  @override
+  String get supportShotUnusable => 'Тази снимка не може да се използва. Опитайте с друга или изпратете без.';
 }

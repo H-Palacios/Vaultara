@@ -4334,7 +4334,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "ਇੱਕ ਰਿਕਾਰਡ ਆਪਣੇ ਆਪ ਨਵਿਆਇਆ ਗਿਆ",
+  "rolledTitleLocked": "ਇੱਕ ਲਾਕ ਕੀਤਾ ਰਿਕਾਰਡ ਆਪਣੇ ਆਪ ਨਵਿਆਇਆ ਗਿਆ",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4495,5 +4495,10 @@
   "idCheckVinDigit": "ਜਾਂਚ ਅੰਕ (9ਵਾਂ ਅੱਖਰ) ਮੇਲ ਨਹੀਂ ਖਾਂਦਾ। ਉੱਤਰੀ ਅਮਰੀਕਾ ਲਈ ਬਣੀਆਂ ਕਾਰਾਂ ਵਿੱਚ ਇਹ ਹਮੇਸ਼ਾ ਹੁੰਦਾ ਹੈ; ਹੋਰਾਂ ਵਿੱਚ ਸ਼ਾਇਦ ਨਾ ਹੋਵੇ।",
   "idCheckVinOk": "ਇਹ VIN ਫਾਰਮੈਟ ਅਤੇ ਇਸਦੇ ਜਾਂਚ ਅੰਕ ਨਾਲ ਮੇਲ ਖਾਂਦਾ ਹੈ।",
   "idCheckShortLicence": "ਇਸ ਦੇਸ਼ ਦੇ ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਨੰਬਰ ਲਈ ਬਹੁਤ ਛੋਟਾ ({country}): {expected} ਵਿੱਚੋਂ {count}। ਦੇਖੋ ਕੋਈ ਅੰਕ ਜਾਂ ਅੱਖਰ ਰਹਿ ਤਾਂ ਨਹੀਂ ਗਿਆ।",
-  "idCheckLongLicence": "ਇਸ ਦੇਸ਼ ਦੇ ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਨੰਬਰ ਲਈ ਬਹੁਤ ਲੰਮਾ ({country}): {expected} ਵਿੱਚੋਂ {count}। ਦੇਖੋ ਕੋਈ ਵਾਧੂ ਅੰਕ ਜਾਂ ਅੱਖਰ ਤਾਂ ਨਹੀਂ।"
+  "idCheckLongLicence": "ਇਸ ਦੇਸ਼ ਦੇ ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਨੰਬਰ ਲਈ ਬਹੁਤ ਲੰਮਾ ({country}): {expected} ਵਿੱਚੋਂ {count}। ਦੇਖੋ ਕੋਈ ਵਾਧੂ ਅੰਕ ਜਾਂ ਅੱਖਰ ਤਾਂ ਨਹੀਂ।",
+  "supportShotTitle": "ਸਕ੍ਰੀਨਸ਼ਾਟ ਜੋੜਨਾ ਹੈ?",
+  "supportShotBody": "ਸਕ੍ਰੀਨਸ਼ਾਟ ਸਹਾਇਤਾ ਟੀਮ ਨੂੰ ਸਮੱਸਿਆ ਦੇਖਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ। ਪੱਕਾ ਕਰੋ ਕਿ ਇਸ ਵਿੱਚ ਪਛਾਣ ਨੰਬਰ, ਪਾਸਵਰਡ ਜਾਂ ਬੈਂਕ ਵੇਰਵੇ ਨਾ ਦਿਖਣ।",
+  "supportShotAdd": "ਸਕ੍ਰੀਨਸ਼ਾਟ ਜੋੜੋ",
+  "supportShotSkip": "ਇਸ ਤੋਂ ਬਿਨਾਂ ਭੇਜੋ",
+  "supportShotUnusable": "ਇਹ ਸਕ੍ਰੀਨਸ਼ਾਟ ਵਰਤਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ। ਕੋਈ ਹੋਰ ਅਜ਼ਮਾਓ ਜਾਂ ਇਸ ਤੋਂ ਬਿਨਾਂ ਭੇਜੋ।"
 }

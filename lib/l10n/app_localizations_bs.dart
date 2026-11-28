@@ -10696,7 +10696,7 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Zapis se sam obnovio';
+  String get rolledTitleLocked => 'Zaključan zapis se sam obnovio';
 
   @override
   String get digestGroupedSubtitle => 'Podsjetnici za isti dan stižu kao jedno obavještenje u vrijeme podsjetnika. Zapisi koji ističu sutra, danas ili su istekli i dalje dobijaju svoje.';
@@ -11050,4 +11050,19 @@ class AppLocalizationsBs extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Predugo za broj vozačke dozvole iz ove zemlje ($country): $count od $expected. Provjerite da li ima cifra ili slovo viška.';
   }
+
+  @override
+  String get supportShotTitle => 'Dodati snimak ekrana?';
+
+  @override
+  String get supportShotBody => 'Snimak ekrana pomaže podršci da vidi problem. Provjerite da ne prikazuje brojeve dokumenata, lozinke ni bankovne podatke.';
+
+  @override
+  String get supportShotAdd => 'Dodaj snimak';
+
+  @override
+  String get supportShotSkip => 'Pošalji bez';
+
+  @override
+  String get supportShotUnusable => 'Taj snimak se ne može koristiti. Pokušajte s drugim ili pošaljite bez.';
 }

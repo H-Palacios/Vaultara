@@ -4327,7 +4327,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Irekhodi izihlaziyile",
+  "rolledTitleLocked": "Irekhodi etshixiweyo izihlaziyile",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4488,5 +4488,10 @@
   "idCheckVinDigit": "Idijithi yokujonga (unobumba we-9) ayihambelani. Iimoto ezenzelwe uMntla Merika zihlala zinayo; ezinye zisenokungabi nayo.",
   "idCheckVinOk": "Oku kuhambelana nefomathi ye-VIN nedijithi yayo yokujonga.",
   "idCheckShortLicence": "Imfutshane kakhulu kwinombolo yelayisenisi yokuqhuba yeli lizwe ({country}): {count} kwezi-{expected}. Jonga ukuba akukho dijithi okanye unobumba olahlekileyo.",
-  "idCheckLongLicence": "Inde kakhulu kwinombolo yelayisenisi yokuqhuba yeli lizwe ({country}): {count} kwezi-{expected}. Jonga ukuba akukho dijithi okanye unobumba ongaphezulu."
+  "idCheckLongLicence": "Inde kakhulu kwinombolo yelayisenisi yokuqhuba yeli lizwe ({country}): {count} kwezi-{expected}. Jonga ukuba akukho dijithi okanye unobumba ongaphezulu.",
+  "supportShotTitle": "Ufuna ukongeza umfanekiso wesikrini?",
+  "supportShotBody": "Umfanekiso wesikrini unceda inkxaso ibone ingxaki. Qinisekisa ukuba awubonisi iinombolo zesazisi, iipasiwedi okanye iinkcukacha zebhanki.",
+  "supportShotAdd": "Yongeza umfanekiso",
+  "supportShotSkip": "Thumela ngaphandle kwawo",
+  "supportShotUnusable": "Lo mfanekiso wesikrini awunakusetyenziswa. Zama omnye, okanye uthumele ngaphandle kwawo."
 }

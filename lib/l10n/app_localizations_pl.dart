@@ -10794,7 +10794,7 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Wpis odnowił się sam';
+  String get rolledTitleLocked => 'Zablokowany wpis odnowił się sam';
 
   @override
   String get digestGroupedSubtitle => 'Przypomnienia z tego samego dnia przychodzą jako jedno powiadomienie o twojej godzinie. Wpisy wygasające jutro, dziś lub już wygasłe nadal dostają własne.';
@@ -11148,4 +11148,19 @@ class AppLocalizationsPl extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Za długi na numer prawa jazdy z tego kraju ($country): $count z $expected. Sprawdź, czy nie ma dodatkowej cyfry lub litery.';
   }
+
+  @override
+  String get supportShotTitle => 'Dodać zrzut ekranu?';
+
+  @override
+  String get supportShotBody => 'Zrzut ekranu pomaga pomocy technicznej zobaczyć problem. Sprawdź, czy nie widać na nim numerów dokumentów, haseł ani danych bankowych.';
+
+  @override
+  String get supportShotAdd => 'Dodaj zrzut ekranu';
+
+  @override
+  String get supportShotSkip => 'Wyślij bez';
+
+  @override
+  String get supportShotUnusable => 'Tego zrzutu ekranu nie można użyć. Spróbuj innego lub wyślij bez.';
 }

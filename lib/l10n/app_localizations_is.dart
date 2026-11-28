@@ -10611,7 +10611,7 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Færsla endurnýjaðist sjálf';
+  String get rolledTitleLocked => 'Læst færsla endurnýjaðist sjálf';
 
   @override
   String get digestGroupedSubtitle => 'Áminningar sama dags koma sem ein tilkynning á áminningartíma þínum. Færslur sem renna út á morgun, í dag eða eru útrunnar fá samt sína eigin.';
@@ -10965,4 +10965,19 @@ class AppLocalizationsIs extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Of langt fyrir ökuskírteinisnúmer frá þessu landi ($country): $count af $expected. Athugaðu hvort auka tölustafur eða bókstafur sé í því.';
   }
+
+  @override
+  String get supportShotTitle => 'Bæta við skjámynd?';
+
+  @override
+  String get supportShotBody => 'Skjámynd hjálpar þjónustuverinu að sjá vandann. Gættu þess að hún sýni engin kennitölunúmer, lykilorð eða bankaupplýsingar.';
+
+  @override
+  String get supportShotAdd => 'Bæta við skjámynd';
+
+  @override
+  String get supportShotSkip => 'Senda án';
+
+  @override
+  String get supportShotUnusable => 'Ekki er hægt að nota þessa skjámynd. Prófaðu aðra eða sendu án.';
 }

@@ -4358,7 +4358,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Ein Eintrag hat sich selbst verlängert",
+  "rolledTitleLocked": "Ein gesperrter Eintrag hat sich selbst verlängert",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4519,5 +4519,10 @@
   "idCheckVinDigit": "Die Prüfziffer (das 9. Zeichen) stimmt nicht. Autos für Nordamerika haben immer eine, andere vielleicht nicht.",
   "idCheckVinOk": "Das passt zum FIN-Format und zu ihrer Prüfziffer.",
   "idCheckShortLicence": "Zu kurz für eine Führerscheinnummer aus diesem Land ({country}): {count} von {expected}. Prüfe, ob eine Ziffer oder ein Buchstabe fehlt.",
-  "idCheckLongLicence": "Zu lang für eine Führerscheinnummer aus diesem Land ({country}): {count} von {expected}. Prüfe, ob eine Ziffer oder ein Buchstabe zu viel ist."
+  "idCheckLongLicence": "Zu lang für eine Führerscheinnummer aus diesem Land ({country}): {count} von {expected}. Prüfe, ob eine Ziffer oder ein Buchstabe zu viel ist.",
+  "supportShotTitle": "Screenshot hinzufügen?",
+  "supportShotBody": "Ein Screenshot hilft dem Support, das Problem zu sehen. Achte darauf, dass er keine Ausweisnummern, Passwörter oder Bankdaten zeigt.",
+  "supportShotAdd": "Screenshot hinzufügen",
+  "supportShotSkip": "Ohne senden",
+  "supportShotUnusable": "Dieser Screenshot kann nicht verwendet werden. Versuche einen anderen oder sende ohne."
 }

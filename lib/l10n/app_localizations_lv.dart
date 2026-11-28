@@ -10684,7 +10684,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Ieraksts atjaunojās pats';
+  String get rolledTitleLocked => 'Bloķēts ieraksts atjaunojās pats';
 
   @override
   String get digestGroupedSubtitle => 'Vienas dienas atgādinājumi pienāk kā viens paziņojums jūsu atgādinājumu laikā. Ieraksti, kam termiņš beidzas rīt, šodien vai jau beidzies, joprojām saņem savu.';
@@ -11038,4 +11038,19 @@ class AppLocalizationsLv extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Par garu šīs valsts vadītāja apliecības numuram ($country): $count no $expected. Pārbaudi, vai nav lieka cipara vai burta.';
   }
+
+  @override
+  String get supportShotTitle => 'Pievienot ekrānuzņēmumu?';
+
+  @override
+  String get supportShotBody => 'Ekrānuzņēmums palīdz atbalstam redzēt problēmu. Pārbaudiet, vai tajā nav redzami personas kodi, paroles vai bankas dati.';
+
+  @override
+  String get supportShotAdd => 'Pievienot ekrānuzņēmumu';
+
+  @override
+  String get supportShotSkip => 'Sūtīt bez';
+
+  @override
+  String get supportShotUnusable => 'Šo ekrānuzņēmumu nevar izmantot. Mēģiniet citu vai sūtiet bez.';
 }

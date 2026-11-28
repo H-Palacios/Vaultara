@@ -10612,7 +10612,7 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'یو ریکارډ پخپله نوی شو';
+  String get rolledTitleLocked => 'یو بند شوی ریکارډ پخپله نوی شو';
 
   @override
   String get digestGroupedSubtitle => 'د یوې ورځې یادونې ستاسو د یادونې په وخت کې د یوه خبرتیا په توګه راځي. هغه ریکارډونه چې سبا، نن پای ته رسېږي یا رسېدلي، لا هم جلا راځي.';
@@ -10966,4 +10966,19 @@ class AppLocalizationsPs extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'د دې هېواد د موټر چلولو جواز شمېرې لپاره ډېر اوږد دی ($country): $count له $expected. وګورئ چې اضافي عدد یا توری نه وي.';
   }
+
+  @override
+  String get supportShotTitle => 'د سکرین انځور ورزیات کړو؟';
+
+  @override
+  String get supportShotBody => 'د سکرین انځور ملاتړ سره مرسته کوي چې ستونزه ووینې. ډاډ ترلاسه کړئ چې د پېژند شمېرې، پټنومونه یا د بانک معلومات پکې نه ښکاري.';
+
+  @override
+  String get supportShotAdd => 'د سکرین انځور ورزیات کړئ';
+
+  @override
+  String get supportShotSkip => 'پرته له هغه ولېږئ';
+
+  @override
+  String get supportShotUnusable => 'دا انځور نه شي کارول کېدای. بل یو هڅه وکړئ یا پرته له هغه ولېږئ.';
 }

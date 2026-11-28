@@ -10612,7 +10612,7 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'ఒక రికార్డ్ తనంతట తానే పునరుద్ధరించబడింది';
+  String get rolledTitleLocked => 'ఒక లాక్ చేసిన రికార్డ్ తనంతట తానే పునరుద్ధరించబడింది';
 
   @override
   String get digestGroupedSubtitle => 'ఒకే రోజు రిమైండర్‌లు మీ రిమైండర్ సమయంలో ఒకే నోటిఫికేషన్‌గా వస్తాయి. రేపు, ఈరోజు గడువు ముగిసే లేదా ముగిసిన రికార్డులకు ఇప్పటికీ వేరుగా వస్తుంది.';
@@ -10966,4 +10966,19 @@ class AppLocalizationsTe extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'ఈ దేశపు డ్రైవింగ్ లైసెన్స్ సంఖ్యకు చాలా పొడవు ($country): $expected లో $count. అదనపు అంకె లేదా అక్షరం ఉందేమో చూడండి.';
   }
+
+  @override
+  String get supportShotTitle => 'స్క్రీన్‌షాట్ జోడించాలా?';
+
+  @override
+  String get supportShotBody => 'స్క్రీన్‌షాట్ సపోర్ట్ బృందానికి సమస్యను చూడటంలో సహాయపడుతుంది. అందులో గుర్తింపు సంఖ్యలు, పాస్‌వర్డ్‌లు లేదా బ్యాంక్ వివరాలు కనిపించకుండా చూసుకోండి.';
+
+  @override
+  String get supportShotAdd => 'స్క్రీన్‌షాట్ జోడించు';
+
+  @override
+  String get supportShotSkip => 'అది లేకుండా పంపు';
+
+  @override
+  String get supportShotUnusable => 'ఈ స్క్రీన్‌షాట్‌ను ఉపయోగించలేము. మరొకటి ప్రయత్నించండి లేదా అది లేకుండా పంపండి.';
 }

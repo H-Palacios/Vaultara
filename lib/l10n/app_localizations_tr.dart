@@ -10612,7 +10612,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Bir kayıt kendiliğinden yenilendi';
+  String get rolledTitleLocked => 'Kilitli bir kayıt kendiliğinden yenilendi';
 
   @override
   String get digestGroupedSubtitle => 'Aynı günkü hatırlatıcılar hatırlatma saatinizde tek bildirim olarak gelir. Yarın, bugün süresi dolan veya dolmuş kayıtlar yine ayrı gelir.';
@@ -10966,4 +10966,19 @@ class AppLocalizationsTr extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Bu ülkenin ehliyet numarası için çok uzun ($country): $count/$expected. Fazladan bir rakam veya harf olup olmadığını kontrol edin.';
   }
+
+  @override
+  String get supportShotTitle => 'Ekran görüntüsü eklensin mi?';
+
+  @override
+  String get supportShotBody => 'Ekran görüntüsü, destek ekibinin sorunu görmesine yardımcı olur. Kimlik numarası, şifre veya banka bilgisi göstermediğinden emin olun.';
+
+  @override
+  String get supportShotAdd => 'Ekran görüntüsü ekle';
+
+  @override
+  String get supportShotSkip => 'Eklemeden gönder';
+
+  @override
+  String get supportShotUnusable => 'Bu ekran görüntüsü kullanılamıyor. Başka birini deneyin veya eklemeden gönderin.';
 }

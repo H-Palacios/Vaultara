@@ -10617,7 +10617,7 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Një regjistrim u rinovua vetë';
+  String get rolledTitleLocked => 'Një regjistrim i kyçur u rinovua vetë';
 
   @override
   String get digestGroupedSubtitle => 'Kujtesat e së njëjtës ditë vijnë si një njoftim në orën e kujtesave. Regjistrimet që skadojnë nesër, sot ose kanë skaduar vijnë ende veçmas.';
@@ -10971,4 +10971,19 @@ class AppLocalizationsSq extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Shumë i gjatë për një numër patente nga ky vend ($country): $count nga $expected. Kontrollo nëse ka një shifër ose shkronjë të tepërt.';
   }
+
+  @override
+  String get supportShotTitle => 'Të shtohet një pamje ekrani?';
+
+  @override
+  String get supportShotBody => 'Një pamje ekrani e ndihmon mbështetjen të shohë problemin. Kontrollo që të mos shfaqë numra identiteti, fjalëkalime ose të dhëna bankare.';
+
+  @override
+  String get supportShotAdd => 'Shto pamje ekrani';
+
+  @override
+  String get supportShotSkip => 'Dërgo pa të';
+
+  @override
+  String get supportShotUnusable => 'Kjo pamje ekrani nuk mund të përdoret. Provo një tjetër ose dërgo pa të.';
 }

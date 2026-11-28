@@ -10611,7 +10611,7 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Жазуу өзү жаңыланды';
+  String get rolledTitleLocked => 'Кулпуланган жазуу өзү жаңыланды';
 
   @override
   String get digestGroupedSubtitle => 'Бир күндөгү эскертүүлөр эскертүү убагыңызда бир билдирүү болуп келет. Эртең, бүгүн мөөнөтү бүтүүчү же бүткөн жазуулар өзүнчө келет.';
@@ -10965,4 +10965,19 @@ class AppLocalizationsKy extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Бул өлкөнүн айдоочулук күбөлүк номери үчүн өтө узун ($country): $count/$expected. Ашыкча сан же тамга жоктугун текшериңиз.';
   }
+
+  @override
+  String get supportShotTitle => 'Скриншот кошосузбу?';
+
+  @override
+  String get supportShotBody => 'Скриншот колдоо кызматына көйгөйдү көрүүгө жардам берет. Анда инсандык номерлер, сырсөздөр же банк маалыматтары көрүнбөгөнүн текшериңиз.';
+
+  @override
+  String get supportShotAdd => 'Скриншот кошуу';
+
+  @override
+  String get supportShotSkip => 'Ансыз жөнөтүү';
+
+  @override
+  String get supportShotUnusable => 'Бул скриншотту колдонууга болбойт. Башкасын байкап көрүңүз же ансыз жөнөтүңүз.';
 }

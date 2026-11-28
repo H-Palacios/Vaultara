@@ -4339,7 +4339,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Un rexistro renovouse só",
+  "rolledTitleLocked": "Un rexistro bloqueado renovouse só",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4500,5 +4500,10 @@
   "idCheckVinDigit": "A cifra de control (o 9.º carácter) non coincide. Os coches feitos para América do Norte sempre a teñen; outros quizais non.",
   "idCheckVinOk": "Coincide co formato VIN e a súa cifra de control.",
   "idCheckShortLicence": "Demasiado curto para un número de permiso de conducir deste país ({country}): {count} de {expected}. Comproba se falta unha cifra ou unha letra.",
-  "idCheckLongLicence": "Demasiado longo para un número de permiso de conducir deste país ({country}): {count} de {expected}. Comproba se sobra unha cifra ou unha letra."
+  "idCheckLongLicence": "Demasiado longo para un número de permiso de conducir deste país ({country}): {count} de {expected}. Comproba se sobra unha cifra ou unha letra.",
+  "supportShotTitle": "Engadir unha captura de pantalla?",
+  "supportShotBody": "Unha captura axuda ao soporte a ver o problema. Comproba que non mostre números de identidade, contrasinais nin datos bancarios.",
+  "supportShotAdd": "Engadir captura",
+  "supportShotSkip": "Enviar sen",
+  "supportShotUnusable": "Esa captura non se pode usar. Proba con outra ou envía sen ela."
 }

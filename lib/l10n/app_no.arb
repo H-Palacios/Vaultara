@@ -4334,7 +4334,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "En oppføring ble fornyet av seg selv",
+  "rolledTitleLocked": "En låst oppføring ble fornyet av seg selv",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4495,5 +4495,10 @@
   "idCheckVinDigit": "Kontrollsifferet (9. tegn) stemmer ikke. Biler for Nord-Amerika har alltid ett; andre har kanskje ikke.",
   "idCheckVinOk": "Dette stemmer med VIN-formatet og kontrollsifferet.",
   "idCheckShortLicence": "For kort for et førerkortnummer fra dette landet ({country}): {count} av {expected}. Sjekk om et siffer eller en bokstav mangler.",
-  "idCheckLongLicence": "For langt for et førerkortnummer fra dette landet ({country}): {count} av {expected}. Sjekk om det er et siffer eller en bokstav for mye."
+  "idCheckLongLicence": "For langt for et førerkortnummer fra dette landet ({country}): {count} av {expected}. Sjekk om det er et siffer eller en bokstav for mye.",
+  "supportShotTitle": "Legge til et skjermbilde?",
+  "supportShotBody": "Et skjermbilde hjelper kundestøtte med å se problemet. Sjekk at det ikke viser ID-numre, passord eller bankopplysninger.",
+  "supportShotAdd": "Legg til skjermbilde",
+  "supportShotSkip": "Send uten",
+  "supportShotUnusable": "Det skjermbildet kan ikke brukes. Prøv et annet, eller send uten."
 }

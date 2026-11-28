@@ -10560,7 +10560,7 @@ class AppLocalizationsYo extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Àkọsílẹ̀ kan ti sọ ara rẹ̀ di tuntun';
+  String get rolledTitleLocked => 'Igbasilẹ tí a tì kan ti sọ ara rẹ̀ di tuntun';
 
   @override
   String get digestGroupedSubtitle => 'Àwọn ìrántí ọjọ́ kan náà máa ń wá gẹ́gẹ́ bí ìkìlọ̀ kan ní àkókò ìrántí rẹ. Àwọn àkọsílẹ̀ tí yóò parí ní ọ̀la, lónìí tàbí tí ó ti parí ṣì máa ń gba tiwọn.';
@@ -10914,4 +10914,19 @@ class AppLocalizationsYo extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Ó gùn jù fún nọ́mbà ìwé àṣẹ awakọ̀ láti orílẹ̀-èdè yìí ($country): $count nínú $expected. Ṣàyẹ̀wò bóyá díjítì tàbí lẹ́tà kan pọ̀ jù.';
   }
+
+  @override
+  String get supportShotTitle => 'Ṣe kí a fi àwòrán ojú ìbojú kún un?';
+
+  @override
+  String get supportShotBody => 'Àwòrán ojú ìbojú máa ń ran àwọn olùrànlọ́wọ́ lọ́wọ́ láti rí ìṣòro náà. Rí i dájú pé kò fi nọ́mbà ìdánimọ̀, ọ̀rọ̀ aṣínà tàbí àlàyé báǹkì hàn.';
+
+  @override
+  String get supportShotAdd => 'Fi àwòrán kún un';
+
+  @override
+  String get supportShotSkip => 'Fi ránṣẹ́ láìsí i';
+
+  @override
+  String get supportShotUnusable => 'A kò lè lo àwòrán ojú ìbojú yìí. Gbìyànjú òmíràn, tàbí fi ránṣẹ́ láìsí i.';
 }

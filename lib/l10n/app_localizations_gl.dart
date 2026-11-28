@@ -10617,7 +10617,7 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Un rexistro renovouse só';
+  String get rolledTitleLocked => 'Un rexistro bloqueado renovouse só';
 
   @override
   String get digestGroupedSubtitle => 'Os recordatorios do mesmo día chegan como unha soa notificación á túa hora de recordatorio. Os que caducan mañá, hoxe ou xa caducaron seguen chegando por separado.';
@@ -10971,4 +10971,19 @@ class AppLocalizationsGl extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Demasiado longo para un número de permiso de conducir deste país ($country): $count de $expected. Comproba se sobra unha cifra ou unha letra.';
   }
+
+  @override
+  String get supportShotTitle => 'Engadir unha captura de pantalla?';
+
+  @override
+  String get supportShotBody => 'Unha captura axuda ao soporte a ver o problema. Comproba que non mostre números de identidade, contrasinais nin datos bancarios.';
+
+  @override
+  String get supportShotAdd => 'Engadir captura';
+
+  @override
+  String get supportShotSkip => 'Enviar sen';
+
+  @override
+  String get supportShotUnusable => 'Esa captura non se pode usar. Proba con outra ou envía sen ela.';
 }

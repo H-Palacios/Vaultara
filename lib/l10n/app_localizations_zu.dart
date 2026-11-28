@@ -10612,7 +10612,7 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Irekhodi izivuselele';
+  String get rolledTitleLocked => 'Irekhodi elivaliwe lizivuselele';
 
   @override
   String get digestGroupedSubtitle => 'Izikhumbuzo zosuku olufanayo zifika njengesaziso esisodwa ngesikhathi sakho sesikhumbuzo. Amarekhodi aphelelwa kusasa, namuhla noma aphelelwe asathola awawo.';
@@ -10966,4 +10966,19 @@ class AppLocalizationsZu extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Inde kakhulu enombolweni yelayisensi yokushayela yaleli zwe ($country): $count kwezingu-$expected. Hlola ukuthi ayikho idijithi noma uhlamvu olwengeziwe.';
   }
+
+  @override
+  String get supportShotTitle => 'Ufuna ukwengeza isithombe-skrini?';
+
+  @override
+  String get supportShotBody => 'Isithombe-skrini sisiza abosizo babone inkinga. Qiniseka ukuthi asibonisi izinombolo zikamazisi, amaphasiwedi noma imininingwane yebhange.';
+
+  @override
+  String get supportShotAdd => 'Engeza isithombe-skrini';
+
+  @override
+  String get supportShotSkip => 'Thumela ngaphandle kwaso';
+
+  @override
+  String get supportShotUnusable => 'Lesi sithombe-skrini asikwazi ukusetshenziswa. Zama esinye, noma uthumele ngaphandle kwaso.';
 }

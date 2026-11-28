@@ -10697,7 +10697,7 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Запис се сам обновио';
+  String get rolledTitleLocked => 'Закључан запис се сам обновио';
 
   @override
   String get digestGroupedSubtitle => 'Подсетници за исти дан стижу као једно обавештење у време подсетника. Записи који истичу сутра, данас или су истекли и даље добијају своје.';
@@ -11051,6 +11051,21 @@ class AppLocalizationsSr extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Предугачко за број возачке дозволе из ове земље ($country): $count од $expected. Проверите да ли има цифра или слово вишка.';
   }
+
+  @override
+  String get supportShotTitle => 'Додати снимак екрана?';
+
+  @override
+  String get supportShotBody => 'Снимак екрана помаже подршци да види проблем. Проверите да не приказује бројеве докумената, лозинке ни банковне податке.';
+
+  @override
+  String get supportShotAdd => 'Додај снимак';
+
+  @override
+  String get supportShotSkip => 'Пошаљи без';
+
+  @override
+  String get supportShotUnusable => 'Тај снимак не може да се користи. Покушајте са другим или пошаљите без.';
 }
 
 /// The translations for Serbian, using the Cyrillic script (`sr_Cyrl`).
@@ -21745,7 +21760,7 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   }
 
   @override
-  String get rolledTitleLocked => 'Запис се сам обновио';
+  String get rolledTitleLocked => 'Закључан запис се сам обновио';
 
   @override
   String get digestGroupedSubtitle => 'Подсетници за исти дан стижу као једно обавештење у време подсетника. Записи који истичу сутра, данас или су истекли и даље добијају своје.';
@@ -22099,6 +22114,21 @@ class AppLocalizationsSrCyrl extends AppLocalizationsSr {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Предугачко за број возачке дозволе из ове земље ($country): $count од $expected. Проверите да ли има цифра или слово вишка.';
   }
+
+  @override
+  String get supportShotTitle => 'Додати снимак екрана?';
+
+  @override
+  String get supportShotBody => 'Снимак екрана помаже подршци да види проблем. Проверите да не приказује бројеве докумената, лозинке ни банковне податке.';
+
+  @override
+  String get supportShotAdd => 'Додај снимак';
+
+  @override
+  String get supportShotSkip => 'Пошаљи без';
+
+  @override
+  String get supportShotUnusable => 'Тај снимак не може да се користи. Покушајте са другим или пошаљите без.';
 }
 
 /// The translations for Serbian, using the Latin script (`sr_Latn`).
@@ -32789,7 +32819,7 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   }
 
   @override
-  String get rolledTitleLocked => 'Zapis se sam obnovio';
+  String get rolledTitleLocked => 'Zaključan zapis se sam obnovio';
 
   @override
   String get digestGroupedSubtitle => 'Podsetnici za isti dan stižu kao jedno obaveštenje u vreme podsetnika. Zapisi koji ističu sutra, danas ili su istekli i dalje dobijaju svoje.';
@@ -33143,4 +33173,19 @@ class AppLocalizationsSrLatn extends AppLocalizationsSr {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Predugačko za broj vozačke dozvole iz ove zemlje ($country): $count od $expected. Proverite da li ima cifra ili slovo viška.';
   }
+
+  @override
+  String get supportShotTitle => 'Dodati snimak ekrana?';
+
+  @override
+  String get supportShotBody => 'Snimak ekrana pomaže podršci da vidi problem. Proverite da ne prikazuje brojeve dokumenata, lozinke ni bankovne podatke.';
+
+  @override
+  String get supportShotAdd => 'Dodaj snimak';
+
+  @override
+  String get supportShotSkip => 'Pošalji bez';
+
+  @override
+  String get supportShotUnusable => 'Taj snimak ne može da se koristi. Pokušajte sa drugim ili pošaljite bez.';
 }

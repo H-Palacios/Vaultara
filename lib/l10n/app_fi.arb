@@ -4345,7 +4345,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Tietue uusiutui itsestään",
+  "rolledTitleLocked": "Lukittu tietue uusiutui itsestään",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4506,5 +4506,10 @@
   "idCheckVinDigit": "Tarkistusmerkki (9. merkki) ei täsmää. Pohjois-Amerikkaan tehdyissä autoissa se on aina; muissa ei välttämättä.",
   "idCheckVinOk": "Tämä vastaa VIN-muotoa ja sen tarkistusmerkkiä.",
   "idCheckShortLicence": "Liian lyhyt tämän maan ajokortin numeroksi ({country}): {count}/{expected}. Tarkista, puuttuuko numero tai kirjain.",
-  "idCheckLongLicence": "Liian pitkä tämän maan ajokortin numeroksi ({country}): {count}/{expected}. Tarkista, onko mukana ylimääräinen numero tai kirjain."
+  "idCheckLongLicence": "Liian pitkä tämän maan ajokortin numeroksi ({country}): {count}/{expected}. Tarkista, onko mukana ylimääräinen numero tai kirjain.",
+  "supportShotTitle": "Lisätäänkö kuvakaappaus?",
+  "supportShotBody": "Kuvakaappaus auttaa tukea näkemään ongelman. Tarkista, ettei siinä näy henkilötunnuksia, salasanoja tai pankkitietoja.",
+  "supportShotAdd": "Lisää kuvakaappaus",
+  "supportShotSkip": "Lähetä ilman",
+  "supportShotUnusable": "Tätä kuvakaappausta ei voi käyttää. Kokeile toista tai lähetä ilman."
 }

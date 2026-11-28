@@ -10546,7 +10546,7 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'မှတ်တမ်းတစ်ခု အလိုအလျောက် သက်တမ်းတိုးသွားသည်';
+  String get rolledTitleLocked => 'လော့ခ်ချထားသော မှတ်တမ်းတစ်ခု အလိုအလျောက် သက်တမ်းတိုးသွားသည်';
 
   @override
   String get digestGroupedSubtitle => 'တစ်နေ့တည်းရှိ သတိပေးချက်များကို သင့်သတိပေးချိန်တွင် အသိပေးချက်တစ်ခုအဖြစ် ပို့ပါမည်။ မနက်ဖြန်၊ ယနေ့ သက်တမ်းကုန်မည့် သို့ ကုန်ပြီးသော မှတ်တမ်းများကို သီးခြားပို့ပါမည်။';
@@ -10900,4 +10900,19 @@ class AppLocalizationsMy extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'ဤနိုင်ငံ၏ ယာဉ်မောင်းလိုင်စင်နံပါတ်အတွက် ရှည်လွန်းသည် ($country): $expected တွင် $count။ ဂဏန်း သို့မဟုတ် စာလုံး ပိုနေသလား စစ်ပါ။';
   }
+
+  @override
+  String get supportShotTitle => 'မျက်နှာပြင်ဓာတ်ပုံ ထည့်မလား။';
+
+  @override
+  String get supportShotBody => 'မျက်နှာပြင်ဓာတ်ပုံက အကူအညီအဖွဲ့ကို ပြဿနာမြင်အောင် ကူညီပေးသည်။ ၎င်းတွင် မှတ်ပုံတင်နံပါတ်၊ စကားဝှက် သို့မဟုတ် ဘဏ်အချက်အလက် မပါကြောင်း စစ်ဆေးပါ။';
+
+  @override
+  String get supportShotAdd => 'ဓာတ်ပုံ ထည့်ရန်';
+
+  @override
+  String get supportShotSkip => 'မပါဘဲ ပို့ရန်';
+
+  @override
+  String get supportShotUnusable => 'ဤမျက်နှာပြင်ဓာတ်ပုံကို အသုံးမပြုနိုင်ပါ။ အခြားတစ်ပုံ စမ်းကြည့်ပါ သို့မဟုတ် မပါဘဲ ပို့ပါ။';
 }

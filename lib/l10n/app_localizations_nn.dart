@@ -10617,7 +10617,7 @@ class AppLocalizationsNn extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Ei oppføring vart fornya av seg sjølv';
+  String get rolledTitleLocked => 'Ei låst oppføring vart fornya av seg sjølv';
 
   @override
   String get digestGroupedSubtitle => 'Påminningar same dag kjem som eitt varsel på påminningstidspunktet ditt. Oppføringar som går ut i morgon, i dag eller har gått ut, får framleis sitt eige.';
@@ -10971,4 +10971,19 @@ class AppLocalizationsNn extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'For langt for eit førarkortnummer frå dette landet ($country): $count av $expected. Sjekk om det er eit siffer eller ein bokstav for mykje.';
   }
+
+  @override
+  String get supportShotTitle => 'Leggje til eit skjermbilete?';
+
+  @override
+  String get supportShotBody => 'Eit skjermbilete hjelper kundestøtta å sjå problemet. Sjekk at det ikkje viser ID-nummer, passord eller bankopplysningar.';
+
+  @override
+  String get supportShotAdd => 'Legg til skjermbilete';
+
+  @override
+  String get supportShotSkip => 'Send utan';
+
+  @override
+  String get supportShotUnusable => 'Det skjermbiletet kan ikkje brukast. Prøv eit anna, eller send utan.';
 }

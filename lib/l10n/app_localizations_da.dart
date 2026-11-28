@@ -10617,7 +10617,7 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'En post er fornyet af sig selv';
+  String get rolledTitleLocked => 'En låst post er fornyet af sig selv';
 
   @override
   String get digestGroupedSubtitle => 'Påmindelser samme dag kommer som én notifikation på dit påmindelsestidspunkt. Poster, der udløber i morgen, i dag eller er udløbet, får stadig deres egen.';
@@ -10971,4 +10971,19 @@ class AppLocalizationsDa extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'For langt til et kørekortnummer fra dette land ($country): $count af $expected. Tjek, om der er et ciffer eller bogstav for meget.';
   }
+
+  @override
+  String get supportShotTitle => 'Tilføj et skærmbillede?';
+
+  @override
+  String get supportShotBody => 'Et skærmbillede hjælper support med at se problemet. Tjek, at det ikke viser ID-numre, adgangskoder eller bankoplysninger.';
+
+  @override
+  String get supportShotAdd => 'Tilføj skærmbillede';
+
+  @override
+  String get supportShotSkip => 'Send uden';
+
+  @override
+  String get supportShotUnusable => 'Det skærmbillede kan ikke bruges. Prøv et andet, eller send uden.';
 }

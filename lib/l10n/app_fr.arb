@@ -4339,7 +4339,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Un élément s'est renouvelé seul",
+  "rolledTitleLocked": "Un enregistrement verrouillé s'est renouvelé seul",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4500,5 +4500,10 @@
   "idCheckVinDigit": "Le chiffre de contrôle (9e caractère) ne correspond pas. Les voitures faites pour l'Amérique du Nord en ont toujours un ; les autres pas forcément.",
   "idCheckVinOk": "Cela correspond au format VIN et à son chiffre de contrôle.",
   "idCheckShortLicence": "Trop court pour un numéro de permis de conduire de ce pays ({country}) : {count} sur {expected}. Vérifiez s'il manque un chiffre ou une lettre.",
-  "idCheckLongLicence": "Trop long pour un numéro de permis de conduire de ce pays ({country}) : {count} sur {expected}. Vérifiez s'il y a un chiffre ou une lettre en trop."
+  "idCheckLongLicence": "Trop long pour un numéro de permis de conduire de ce pays ({country}) : {count} sur {expected}. Vérifiez s'il y a un chiffre ou une lettre en trop.",
+  "supportShotTitle": "Ajouter une capture d'écran ?",
+  "supportShotBody": "Une capture d'écran aide le support à voir le problème. Vérifiez qu'elle ne montre aucun numéro d'identité, mot de passe ou coordonnées bancaires.",
+  "supportShotAdd": "Ajouter une capture",
+  "supportShotSkip": "Envoyer sans",
+  "supportShotUnusable": "Cette capture d'écran ne peut pas être utilisée. Essayez-en une autre ou envoyez sans."
 }

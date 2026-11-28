@@ -4332,7 +4332,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Un elemento si è rinnovato da solo",
+  "rolledTitleLocked": "Un elemento bloccato si è rinnovato da solo",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4493,5 +4493,10 @@
   "idCheckVinDigit": "La cifra di controllo (il 9° carattere) non corrisponde. Le auto per il Nord America ce l'hanno sempre; le altre forse no.",
   "idCheckVinOk": "Corrisponde al formato VIN e alla sua cifra di controllo.",
   "idCheckShortLicence": "Troppo corto per un numero di patente di questo paese ({country}): {count} su {expected}. Controlla se manca una cifra o una lettera.",
-  "idCheckLongLicence": "Troppo lungo per un numero di patente di questo paese ({country}): {count} su {expected}. Controlla se c'è una cifra o una lettera in più."
+  "idCheckLongLicence": "Troppo lungo per un numero di patente di questo paese ({country}): {count} su {expected}. Controlla se c'è una cifra o una lettera in più.",
+  "supportShotTitle": "Aggiungere uno screenshot?",
+  "supportShotBody": "Uno screenshot aiuta l'assistenza a vedere il problema. Controlla che non mostri numeri di documenti, password o dati bancari.",
+  "supportShotAdd": "Aggiungi screenshot",
+  "supportShotSkip": "Invia senza",
+  "supportShotUnusable": "Quello screenshot non si può usare. Provane un altro o invia senza."
 }

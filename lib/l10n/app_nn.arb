@@ -4327,7 +4327,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Ei oppføring vart fornya av seg sjølv",
+  "rolledTitleLocked": "Ei låst oppføring vart fornya av seg sjølv",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4488,5 +4488,10 @@
   "idCheckVinDigit": "Kontrollsifferet (9. teikn) stemmer ikkje. Bilar for Nord-Amerika har alltid eitt; andre har kanskje ikkje.",
   "idCheckVinOk": "Dette stemmer med VIN-formatet og kontrollsifferet.",
   "idCheckShortLicence": "For kort for eit førarkortnummer frå dette landet ({country}): {count} av {expected}. Sjekk om eit siffer eller ein bokstav manglar.",
-  "idCheckLongLicence": "For langt for eit førarkortnummer frå dette landet ({country}): {count} av {expected}. Sjekk om det er eit siffer eller ein bokstav for mykje."
+  "idCheckLongLicence": "For langt for eit førarkortnummer frå dette landet ({country}): {count} av {expected}. Sjekk om det er eit siffer eller ein bokstav for mykje.",
+  "supportShotTitle": "Leggje til eit skjermbilete?",
+  "supportShotBody": "Eit skjermbilete hjelper kundestøtta å sjå problemet. Sjekk at det ikkje viser ID-nummer, passord eller bankopplysningar.",
+  "supportShotAdd": "Legg til skjermbilete",
+  "supportShotSkip": "Send utan",
+  "supportShotUnusable": "Det skjermbiletet kan ikkje brukast. Prøv eit anna, eller send utan."
 }

@@ -10617,7 +10617,7 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Μια εγγραφή ανανεώθηκε μόνη της';
+  String get rolledTitleLocked => 'Μια κλειδωμένη εγγραφή ανανεώθηκε μόνη της';
 
   @override
   String get digestGroupedSubtitle => 'Οι υπενθυμίσεις της ίδιας μέρας έρχονται ως μία ειδοποίηση στην ώρα υπενθύμισης. Όσες λήγουν αύριο, σήμερα ή έχουν λήξει έρχονται ξεχωριστά.';
@@ -10971,4 +10971,19 @@ class AppLocalizationsEl extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Πολύ μεγάλος για αριθμό διπλώματος οδήγησης αυτής της χώρας ($country): $count από $expected. Ελέγξτε αν υπάρχει επιπλέον ψηφίο ή γράμμα.';
   }
+
+  @override
+  String get supportShotTitle => 'Να προστεθεί στιγμιότυπο οθόνης;';
+
+  @override
+  String get supportShotBody => 'Ένα στιγμιότυπο βοηθά την υποστήριξη να δει το πρόβλημα. Ελέγξτε ότι δεν δείχνει αριθμούς ταυτότητας, κωδικούς ή τραπεζικά στοιχεία.';
+
+  @override
+  String get supportShotAdd => 'Προσθήκη στιγμιότυπου';
+
+  @override
+  String get supportShotSkip => 'Αποστολή χωρίς';
+
+  @override
+  String get supportShotUnusable => 'Αυτό το στιγμιότυπο δεν μπορεί να χρησιμοποιηθεί. Δοκιμάστε άλλο ή στείλτε χωρίς.';
 }

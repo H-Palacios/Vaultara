@@ -10612,7 +10612,7 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Գրառումը թարմացվեց ինքնուրույն';
+  String get rolledTitleLocked => 'Կողպված գրառումը թարմացվեց ինքնուրույն';
 
   @override
   String get digestGroupedSubtitle => 'Նույն օրվա հիշեցումները գալիս են որպես մեկ ծանուցում ձեր հիշեցման ժամին։ Վաղը, այսօր ավարտվող կամ ավարտված գրառումները դեռ առանձին են գալիս։';
@@ -10966,4 +10966,19 @@ class AppLocalizationsHy extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Չափազանց երկար է այս երկրի վարորդական իրավունքի համարի համար ($country)՝ $count/$expected։ Ստուգեք՝ արդյոք ավելորդ թվանշան կամ տառ չկա։';
   }
+
+  @override
+  String get supportShotTitle => 'Ավելացնե՞լ էկրանի նկար։';
+
+  @override
+  String get supportShotBody => 'Էկրանի նկարն օգնում է աջակցման թիմին տեսնել խնդիրը։ Ստուգեք, որ դրանում չերևան անձնագրի համարներ, գաղտնաբառեր կամ բանկային տվյալներ։';
+
+  @override
+  String get supportShotAdd => 'Ավելացնել նկար';
+
+  @override
+  String get supportShotSkip => 'Ուղարկել առանց';
+
+  @override
+  String get supportShotUnusable => 'Այդ նկարը չի կարող օգտագործվել։ Փորձեք մեկ ուրիշը կամ ուղարկեք առանց։';
 }

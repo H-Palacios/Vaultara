@@ -4358,7 +4358,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "En post er fornyet af sig selv",
+  "rolledTitleLocked": "En låst post er fornyet af sig selv",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4519,5 +4519,10 @@
   "idCheckVinDigit": "Kontrolcifferet (9. tegn) passer ikke. Biler til Nordamerika har altid et; andre har måske ikke.",
   "idCheckVinOk": "Det passer med VIN-formatet og kontrolcifferet.",
   "idCheckShortLicence": "For kort til et kørekortnummer fra dette land ({country}): {count} af {expected}. Tjek, om der mangler et ciffer eller bogstav.",
-  "idCheckLongLicence": "For langt til et kørekortnummer fra dette land ({country}): {count} af {expected}. Tjek, om der er et ciffer eller bogstav for meget."
+  "idCheckLongLicence": "For langt til et kørekortnummer fra dette land ({country}): {count} af {expected}. Tjek, om der er et ciffer eller bogstav for meget.",
+  "supportShotTitle": "Tilføj et skærmbillede?",
+  "supportShotBody": "Et skærmbillede hjælper support med at se problemet. Tjek, at det ikke viser ID-numre, adgangskoder eller bankoplysninger.",
+  "supportShotAdd": "Tilføj skærmbillede",
+  "supportShotSkip": "Send uden",
+  "supportShotUnusable": "Det skærmbillede kan ikke bruges. Prøv et andet, eller send uden."
 }

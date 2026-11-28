@@ -4358,7 +4358,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Un registre s'ha renovat sol",
+  "rolledTitleLocked": "Un registre bloquejat s'ha renovat sol",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4519,5 +4519,10 @@
   "idCheckVinDigit": "La xifra de control (el 9è caràcter) no coincideix. Els cotxes fets per a l'Amèrica del Nord sempre en tenen; els altres potser no.",
   "idCheckVinOk": "Coincideix amb el format VIN i la seva xifra de control.",
   "idCheckShortLicence": "Massa curt per a un número de permís de conduir d'aquest país ({country}): {count} de {expected}. Comprova si hi falta una xifra o una lletra.",
-  "idCheckLongLicence": "Massa llarg per a un número de permís de conduir d'aquest país ({country}): {count} de {expected}. Comprova si hi sobra una xifra o una lletra."
+  "idCheckLongLicence": "Massa llarg per a un número de permís de conduir d'aquest país ({country}): {count} de {expected}. Comprova si hi sobra una xifra o una lletra.",
+  "supportShotTitle": "Afegir una captura de pantalla?",
+  "supportShotBody": "Una captura ajuda el suport a veure el problema. Comproveu que no mostri números d'identitat, contrasenyes ni dades bancàries.",
+  "supportShotAdd": "Afegeix una captura",
+  "supportShotSkip": "Envia sense",
+  "supportShotUnusable": "Aquesta captura no es pot fer servir. Proveu-ne una altra o envieu sense."
 }

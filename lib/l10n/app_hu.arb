@@ -4345,7 +4345,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Egy tétel magától megújult",
+  "rolledTitleLocked": "Egy zárolt tétel magától megújult",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4506,5 +4506,10 @@
   "idCheckVinDigit": "Az ellenőrző karakter (a 9.) nem egyezik. Az Észak-Amerikába gyártott autóknál mindig van; másoknál lehet, hogy nincs.",
   "idCheckVinOk": "Ez megfelel az alvázszám formátumának és ellenőrző karakterének.",
   "idCheckShortLicence": "Túl rövid az ország jogosítványszámához ({country}): {count} / {expected}. Nézd meg, nem hiányzik-e egy számjegy vagy betű.",
-  "idCheckLongLicence": "Túl hosszú az ország jogosítványszámához ({country}): {count} / {expected}. Nézd meg, nincs-e benne fölösleges számjegy vagy betű."
+  "idCheckLongLicence": "Túl hosszú az ország jogosítványszámához ({country}): {count} / {expected}. Nézd meg, nincs-e benne fölösleges számjegy vagy betű.",
+  "supportShotTitle": "Hozzáad egy képernyőképet?",
+  "supportShotBody": "A képernyőkép segít az ügyfélszolgálatnak látni a problémát. Ellenőrizze, hogy nem látszanak rajta igazolványszámok, jelszavak vagy banki adatok.",
+  "supportShotAdd": "Képernyőkép hozzáadása",
+  "supportShotSkip": "Küldés nélküle",
+  "supportShotUnusable": "Ez a képernyőkép nem használható. Próbáljon másikat, vagy küldje nélküle."
 }

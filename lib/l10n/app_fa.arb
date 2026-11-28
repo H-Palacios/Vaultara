@@ -4339,7 +4339,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "یک مورد خودش تمدید شد",
+  "rolledTitleLocked": "یک رکورد قفل‌شده خودش تمدید شد",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4500,5 +4500,10 @@
   "idCheckVinDigit": "رقم کنترل (نویسه نهم) مطابقت ندارد. خودروهای ساخت آمریکای شمالی همیشه آن را دارند؛ بقیه شاید نه.",
   "idCheckVinOk": "با قالب شماره شاسی و رقم کنترل آن مطابقت دارد.",
   "idCheckShortLicence": "برای شماره گواهینامه رانندگی این کشور خیلی کوتاه است ({country}): {count} از {expected}. ببینید رقم یا حرفی جا نیفتاده باشد.",
-  "idCheckLongLicence": "برای شماره گواهینامه رانندگی این کشور خیلی بلند است ({country}): {count} از {expected}. ببینید رقم یا حرف اضافه‌ای نباشد."
+  "idCheckLongLicence": "برای شماره گواهینامه رانندگی این کشور خیلی بلند است ({country}): {count} از {expected}. ببینید رقم یا حرف اضافه‌ای نباشد.",
+  "supportShotTitle": "اسکرین‌شات اضافه شود؟",
+  "supportShotBody": "اسکرین‌شات به پشتیبانی کمک می‌کند مشکل را ببیند. مطمئن شوید شماره شناسایی، رمز عبور یا اطلاعات بانکی در آن دیده نمی‌شود.",
+  "supportShotAdd": "افزودن اسکرین‌شات",
+  "supportShotSkip": "ارسال بدون آن",
+  "supportShotUnusable": "از این اسکرین‌شات نمی‌توان استفاده کرد. یکی دیگر را امتحان کنید یا بدون آن بفرستید."
 }

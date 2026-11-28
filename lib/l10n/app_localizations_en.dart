@@ -10637,7 +10637,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'A record renewed by itself';
+  String get rolledTitleLocked => 'A locked record renewed by itself';
 
   @override
   String get digestGroupedSubtitle => 'Reminders on the same day come as one notification at your reminder time. Records due tomorrow, due today or expired still get their own.';
@@ -10991,4 +10991,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Too long for a driving licence number from this country ($country): $count of $expected. Check for an extra digit or letter.';
   }
+
+  @override
+  String get supportShotTitle => 'Add a screenshot?';
+
+  @override
+  String get supportShotBody => 'A screenshot helps support see the problem. Check that it shows no ID numbers, passwords or bank details.';
+
+  @override
+  String get supportShotAdd => 'Add screenshot';
+
+  @override
+  String get supportShotSkip => 'Send without';
+
+  @override
+  String get supportShotUnusable => 'That screenshot can\'t be used. Try another one, or send without.';
 }

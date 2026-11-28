@@ -4332,7 +4332,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Færsla endurnýjaðist sjálf",
+  "rolledTitleLocked": "Læst færsla endurnýjaðist sjálf",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4493,5 +4493,10 @@
   "idCheckVinDigit": "Vartalan (9. stafurinn) passar ekki. Bílar fyrir Norður-Ameríku hafa alltaf eina; aðrir ekki endilega.",
   "idCheckVinOk": "Þetta passar við VIN-snið og vartölu þess.",
   "idCheckShortLicence": "Of stutt fyrir ökuskírteinisnúmer frá þessu landi ({country}): {count} af {expected}. Athugaðu hvort tölustaf eða bókstaf vanti.",
-  "idCheckLongLicence": "Of langt fyrir ökuskírteinisnúmer frá þessu landi ({country}): {count} af {expected}. Athugaðu hvort auka tölustafur eða bókstafur sé í því."
+  "idCheckLongLicence": "Of langt fyrir ökuskírteinisnúmer frá þessu landi ({country}): {count} af {expected}. Athugaðu hvort auka tölustafur eða bókstafur sé í því.",
+  "supportShotTitle": "Bæta við skjámynd?",
+  "supportShotBody": "Skjámynd hjálpar þjónustuverinu að sjá vandann. Gættu þess að hún sýni engin kennitölunúmer, lykilorð eða bankaupplýsingar.",
+  "supportShotAdd": "Bæta við skjámynd",
+  "supportShotSkip": "Senda án",
+  "supportShotUnusable": "Ekki er hægt að nota þessa skjámynd. Prófaðu aðra eða sendu án."
 }

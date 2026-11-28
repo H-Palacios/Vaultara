@@ -10560,7 +10560,7 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Ndekọ meghariri onwe ya';
+  String get rolledTitleLocked => 'Ndekọ a kpọchiri akpọchi meghariri onwe ya';
 
   @override
   String get digestGroupedSubtitle => 'Ihe ncheta n\'otu ụbọchị na-abịa dịka otu ọkwa n\'oge ncheta gị. Ndekọ ga-agwụ echi, taa ma ọ bụ nke gwụchara ka na-enweta nke ha.';
@@ -10914,4 +10914,19 @@ class AppLocalizationsIg extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'O toro ogologo maka nọmba akwụkwọ ikike ịnya ụgbọala si obodo a ($country): $count n\'ime $expected. Lelee ma ọnụọgụ ma ọ bụ mkpụrụedemede gafere.';
   }
+
+  @override
+  String get supportShotTitle => 'Tinye foto ihuenyo?';
+
+  @override
+  String get supportShotBody => 'Foto ihuenyo na-enyere ndị nkwado aka ịhụ nsogbu ahụ. Hụ na o gosighị nọmba njirimara, okwuntughe ma ọ bụ nkọwa ụlọ akụ.';
+
+  @override
+  String get supportShotAdd => 'Tinye foto ihuenyo';
+
+  @override
+  String get supportShotSkip => 'Zipu na-enweghị ya';
+
+  @override
+  String get supportShotUnusable => 'A pụghị iji foto ihuenyo a. Gbalịa nke ọzọ, ma ọ bụ zipu na-enweghị ya.';
 }

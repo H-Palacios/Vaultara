@@ -4327,7 +4327,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Wpis odnowił się sam",
+  "rolledTitleLocked": "Zablokowany wpis odnowił się sam",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4488,5 +4488,10 @@
   "idCheckVinDigit": "Cyfra kontrolna (9. znak) się nie zgadza. Auta dla Ameryki Północnej zawsze ją mają; inne mogą nie mieć.",
   "idCheckVinOk": "To pasuje do formatu VIN i jego cyfry kontrolnej.",
   "idCheckShortLicence": "Za krótki na numer prawa jazdy z tego kraju ({country}): {count} z {expected}. Sprawdź, czy nie brakuje cyfry lub litery.",
-  "idCheckLongLicence": "Za długi na numer prawa jazdy z tego kraju ({country}): {count} z {expected}. Sprawdź, czy nie ma dodatkowej cyfry lub litery."
+  "idCheckLongLicence": "Za długi na numer prawa jazdy z tego kraju ({country}): {count} z {expected}. Sprawdź, czy nie ma dodatkowej cyfry lub litery.",
+  "supportShotTitle": "Dodać zrzut ekranu?",
+  "supportShotBody": "Zrzut ekranu pomaga pomocy technicznej zobaczyć problem. Sprawdź, czy nie widać na nim numerów dokumentów, haseł ani danych bankowych.",
+  "supportShotAdd": "Dodaj zrzut ekranu",
+  "supportShotSkip": "Wyślij bez",
+  "supportShotUnusable": "Tego zrzutu ekranu nie można użyć. Spróbuj innego lub wyślij bez."
 }

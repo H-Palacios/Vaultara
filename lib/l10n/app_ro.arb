@@ -4327,7 +4327,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "O înregistrare s-a reînnoit singură",
+  "rolledTitleLocked": "O înregistrare blocată s-a reînnoit singură",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4488,5 +4488,10 @@
   "idCheckVinDigit": "Cifra de control (al 9-lea caracter) nu se potrivește. Mașinile făcute pentru America de Nord au mereu una; altele poate nu.",
   "idCheckVinOk": "Se potrivește cu formatul VIN și cu cifra lui de control.",
   "idCheckShortLicence": "Prea scurt pentru un număr de permis de conducere din această țară ({country}): {count} din {expected}. Verifică dacă lipsește o cifră sau o literă.",
-  "idCheckLongLicence": "Prea lung pentru un număr de permis de conducere din această țară ({country}): {count} din {expected}. Verifică dacă e o cifră sau o literă în plus."
+  "idCheckLongLicence": "Prea lung pentru un număr de permis de conducere din această țară ({country}): {count} din {expected}. Verifică dacă e o cifră sau o literă în plus.",
+  "supportShotTitle": "Adăugați o captură de ecran?",
+  "supportShotBody": "O captură de ecran ajută echipa de asistență să vadă problema. Verificați să nu arate numere de acte, parole sau date bancare.",
+  "supportShotAdd": "Adaugă captură",
+  "supportShotSkip": "Trimite fără",
+  "supportShotUnusable": "Captura nu poate fi folosită. Încercați alta sau trimiteți fără."
 }

@@ -10771,7 +10771,7 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Įrašas atsinaujino pats';
+  String get rolledTitleLocked => 'Užrakintas įrašas atsinaujino pats';
 
   @override
   String get digestGroupedSubtitle => 'Tos pačios dienos priminimai ateina vienu pranešimu jūsų priminimų laiku. Rytoj, šiandien besibaigiantys ar pasibaigę įrašai vis tiek gauna savo.';
@@ -11125,4 +11125,19 @@ class AppLocalizationsLt extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Per ilgas šios šalies vairuotojo pažymėjimo numeriui ($country): $count iš $expected. Patikrink, ar nėra papildomo skaitmens ar raidės.';
   }
+
+  @override
+  String get supportShotTitle => 'Pridėti ekrano kopiją?';
+
+  @override
+  String get supportShotBody => 'Ekrano kopija padeda pagalbos komandai pamatyti problemą. Patikrinkite, ar joje nematyti asmens kodų, slaptažodžių ar banko duomenų.';
+
+  @override
+  String get supportShotAdd => 'Pridėti ekrano kopiją';
+
+  @override
+  String get supportShotSkip => 'Siųsti be jos';
+
+  @override
+  String get supportShotUnusable => 'Šios ekrano kopijos negalima naudoti. Pabandykite kitą arba siųskite be jos.';
 }

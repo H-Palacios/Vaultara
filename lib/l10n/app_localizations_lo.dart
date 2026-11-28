@@ -10548,7 +10548,7 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'ບັນທຶກໜຶ່ງຕໍ່ອາຍຸເອງແລ້ວ';
+  String get rolledTitleLocked => 'ບັນທຶກທີ່ລັອກໜຶ່ງຕໍ່ອາຍຸເອງແລ້ວ';
 
   @override
   String get digestGroupedSubtitle => 'ການແຈ້ງເຕືອນມື້ດຽວກັນຈະມາເປັນການແຈ້ງເຕືອນດຽວໃນເວລາເຕືອນຂອງທ່ານ. ລາຍການທີ່ໝົດອາຍຸມື້ອື່ນ, ມື້ນີ້ ຫຼື ໝົດແລ້ວ ຍັງມາແຍກ.';
@@ -10902,4 +10902,19 @@ class AppLocalizationsLo extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'ຍາວເກີນໄປສຳລັບເລກໃບຂັບຂີ່ຈາກປະເທດນີ້ ($country): $count ຈາກ $expected. ກວດເບິ່ງວ່າມີຕົວເລກ ຫຼື ຕົວອັກສອນເກີນບໍ່.';
   }
+
+  @override
+  String get supportShotTitle => 'ເພີ່ມພາບໜ້າຈໍບໍ່?';
+
+  @override
+  String get supportShotBody => 'ພາບໜ້າຈໍຊ່ວຍໃຫ້ທີມຊ່ວຍເຫຼືອເຫັນບັນຫາ. ກວດໃຫ້ແນ່ໃຈວ່າບໍ່ມີເລກບັດປະຈຳຕົວ, ລະຫັດຜ່ານ ຫຼື ຂໍ້ມູນທະນາຄານ.';
+
+  @override
+  String get supportShotAdd => 'ເພີ່ມພາບໜ້າຈໍ';
+
+  @override
+  String get supportShotSkip => 'ສົ່ງໂດຍບໍ່ມີພາບ';
+
+  @override
+  String get supportShotUnusable => 'ໃຊ້ພາບໜ້າຈໍນີ້ບໍ່ໄດ້. ລອງພາບອື່ນ ຫຼື ສົ່ງໂດຍບໍ່ມີພາບ.';
 }

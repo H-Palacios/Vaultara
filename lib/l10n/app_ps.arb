@@ -4327,7 +4327,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "یو ریکارډ پخپله نوی شو",
+  "rolledTitleLocked": "یو بند شوی ریکارډ پخپله نوی شو",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4488,5 +4488,10 @@
   "idCheckVinDigit": "د کنټرول عدد (نهم توری) سم نه دی. د شمالي امریکا لپاره جوړ شوي موټر یې تل لري؛ نور ښايي ونه لري.",
   "idCheckVinOk": "دا د VIN بڼې او د هغه د کنټرول عدد سره سمون لري.",
   "idCheckShortLicence": "د دې هېواد د موټر چلولو جواز شمېرې لپاره ډېر لنډ دی ({country}): {count} له {expected}. وګورئ چې عدد یا توری پاتې نه وي.",
-  "idCheckLongLicence": "د دې هېواد د موټر چلولو جواز شمېرې لپاره ډېر اوږد دی ({country}): {count} له {expected}. وګورئ چې اضافي عدد یا توری نه وي."
+  "idCheckLongLicence": "د دې هېواد د موټر چلولو جواز شمېرې لپاره ډېر اوږد دی ({country}): {count} له {expected}. وګورئ چې اضافي عدد یا توری نه وي.",
+  "supportShotTitle": "د سکرین انځور ورزیات کړو؟",
+  "supportShotBody": "د سکرین انځور ملاتړ سره مرسته کوي چې ستونزه ووینې. ډاډ ترلاسه کړئ چې د پېژند شمېرې، پټنومونه یا د بانک معلومات پکې نه ښکاري.",
+  "supportShotAdd": "د سکرین انځور ورزیات کړئ",
+  "supportShotSkip": "پرته له هغه ولېږئ",
+  "supportShotUnusable": "دا انځور نه شي کارول کېدای. بل یو هڅه وکړئ یا پرته له هغه ولېږئ."
 }

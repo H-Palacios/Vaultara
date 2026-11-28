@@ -10543,7 +10543,7 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Sebuah catatan diperpanjang sendiri';
+  String get rolledTitleLocked => 'Sebuah catatan terkunci diperpanjang sendiri';
 
   @override
   String get digestGroupedSubtitle => 'Pengingat di hari yang sama datang sebagai satu notifikasi pada jam pengingat Anda. Yang jatuh tempo besok, hari ini, atau sudah kedaluwarsa tetap datang sendiri.';
@@ -10897,4 +10897,19 @@ class AppLocalizationsId extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Terlalu panjang untuk nomor SIM dari negara ini ($country): $count dari $expected. Periksa apakah ada angka atau huruf yang berlebih.';
   }
+
+  @override
+  String get supportShotTitle => 'Tambahkan tangkapan layar?';
+
+  @override
+  String get supportShotBody => 'Tangkapan layar membantu tim dukungan melihat masalahnya. Pastikan tidak menampilkan nomor identitas, kata sandi, atau data bank.';
+
+  @override
+  String get supportShotAdd => 'Tambahkan tangkapan layar';
+
+  @override
+  String get supportShotSkip => 'Kirim tanpa';
+
+  @override
+  String get supportShotUnusable => 'Tangkapan layar itu tidak bisa dipakai. Coba yang lain, atau kirim tanpa.';
 }

@@ -4327,7 +4327,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Diiwaan ayaa iskiis u cusboonaaday",
+  "rolledTitleLocked": "Diiwaan xiran ayaa iskiis u cusboonaaday",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4488,5 +4488,10 @@
   "idCheckVinDigit": "Tirada hubinta (xarafka 9aad) isma waafaqsana. Baabuurta loo sameeyay Waqooyiga Ameerika had iyo jeer way leeyihiin; kuwa kale laga yaabaa inaysan lahayn.",
   "idCheckVinOk": "Kani wuxuu waafaqsan yahay qaabka VIN iyo tiradiisa hubinta.",
   "idCheckShortLicence": "Aad buu ugu gaaban yahay lambarka liisanka darawalnimada ee dalkan ({country}): {count} ka mid ah {expected}. Hubi in tiro ama xaraf maqan yahay.",
-  "idCheckLongLicence": "Aad buu ugu dheer yahay lambarka liisanka darawalnimada ee dalkan ({country}): {count} ka mid ah {expected}. Hubi in tiro ama xaraf dheeraad ah jiro."
+  "idCheckLongLicence": "Aad buu ugu dheer yahay lambarka liisanka darawalnimada ee dalkan ({country}): {count} ka mid ah {expected}. Hubi in tiro ama xaraf dheeraad ah jiro.",
+  "supportShotTitle": "Ma lagu daraa sawir shaashadeed?",
+  "supportShotBody": "Sawirka shaashaddu wuxuu taageerada ka caawiyaa inay dhibaatada arkaan. Hubi inuusan muujinayn lambarro aqoonsi, furayaal ama faahfaahin bangi.",
+  "supportShotAdd": "Ku dar sawir shaashadeed",
+  "supportShotSkip": "Dir isaga la'aantiis",
+  "supportShotUnusable": "Sawirkan lama isticmaali karo. Isku day mid kale, ama dir isaga la'aantiis."
 }

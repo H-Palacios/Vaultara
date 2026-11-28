@@ -13539,7 +13539,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "A record renewed by itself",
+  "rolledTitleLocked": "A locked record renewed by itself",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -14194,5 +14194,25 @@
         "example": "16"
       }
     }
+  },
+  "supportShotTitle": "Add a screenshot?",
+  "@supportShotTitle": {
+    "description": "Title of the sheet shown after the user confirms a support email from Ask Vaultara."
+  },
+  "supportShotBody": "A screenshot helps support see the problem. Check that it shows no ID numbers, passwords or bank details.",
+  "@supportShotBody": {
+    "description": "Under the title: why a screenshot helps, and what it must not show."
+  },
+  "supportShotAdd": "Add screenshot",
+  "@supportShotAdd": {
+    "description": "Button: pick a screenshot from the gallery to send with the support email."
+  },
+  "supportShotSkip": "Send without",
+  "@supportShotSkip": {
+    "description": "Button: send the support email without a screenshot."
+  },
+  "supportShotUnusable": "That screenshot can't be used. Try another one, or send without.",
+  "@supportShotUnusable": {
+    "description": "Shown when the chosen screenshot cannot be read or is over 2 MB."
   }
 }

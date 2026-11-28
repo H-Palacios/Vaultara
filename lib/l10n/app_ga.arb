@@ -4339,7 +4339,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "D'athnuaigh taifead é féin",
+  "rolledTitleLocked": "D'athnuaigh taifead faoi ghlas é féin",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4500,5 +4500,10 @@
   "idCheckVinDigit": "Ní hionann an digit seiceála (an 9ú carachtar). Bíonn ceann i gcónaí ag gluaisteáin do Mheiriceá Thuaidh; b'fhéidir nach mbíonn ag cinn eile.",
   "idCheckVinOk": "Tá sé seo ag teacht le formáid VIN agus lena dhigit seiceála.",
   "idCheckShortLicence": "Ró-ghearr d'uimhir cheadúnas tiomána ón tír seo ({country}): {count} as {expected}. Seiceáil an bhfuil digit nó litir in easnamh.",
-  "idCheckLongLicence": "Ró-fhada d'uimhir cheadúnas tiomána ón tír seo ({country}): {count} as {expected}. Seiceáil an bhfuil digit nó litir bhreise ann."
+  "idCheckLongLicence": "Ró-fhada d'uimhir cheadúnas tiomána ón tír seo ({country}): {count} as {expected}. Seiceáil an bhfuil digit nó litir bhreise ann.",
+  "supportShotTitle": "Gabháil scáileáin a chur leis?",
+  "supportShotBody": "Cabhraíonn gabháil scáileáin le tacaíocht an fhadhb a fheiceáil. Seiceáil nach dtaispeánann sí uimhreacha aitheantais, pasfhocail ná sonraí bainc.",
+  "supportShotAdd": "Cuir gabháil leis",
+  "supportShotSkip": "Seol gan í",
+  "supportShotUnusable": "Ní féidir an ghabháil scáileáin sin a úsáid. Bain triail as ceann eile, nó seol gan í."
 }

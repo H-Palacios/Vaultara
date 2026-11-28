@@ -10611,7 +10611,7 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Жазба өздігінен жаңартылды';
+  String get rolledTitleLocked => 'Құлыпталған жазба өздігінен жаңартылды';
 
   @override
   String get digestGroupedSubtitle => 'Бір күндегі еске салғыштар еске салу уақытыңызда бір хабарлама болып келеді. Ертең, бүгін мерзімі бітетін немесе біткен жазбалар бөлек келеді.';
@@ -10965,4 +10965,19 @@ class AppLocalizationsKk extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Бұл елдің жүргізуші куәлігі нөмірі үшін тым ұзын ($country): $count/$expected. Артық цифр не әріп жоқ екенін тексеріңіз.';
   }
+
+  @override
+  String get supportShotTitle => 'Скриншот қосу керек пе?';
+
+  @override
+  String get supportShotBody => 'Скриншот қолдау қызметіне мәселені көруге көмектеседі. Онда жеке куәлік нөмірлері, құпиясөздер немесе банк деректері көрінбейтінін тексеріңіз.';
+
+  @override
+  String get supportShotAdd => 'Скриншот қосу';
+
+  @override
+  String get supportShotSkip => 'Онсыз жіберу';
+
+  @override
+  String get supportShotUnusable => 'Бұл скриншотты пайдалану мүмкін емес. Басқасын көріңіз немесе онсыз жіберіңіз.';
 }

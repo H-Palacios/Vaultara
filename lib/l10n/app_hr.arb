@@ -4332,7 +4332,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Zapis se sam obnovio",
+  "rolledTitleLocked": "Zaključan zapis se sam obnovio",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4493,5 +4493,10 @@
   "idCheckVinDigit": "Kontrolna znamenka (9. znak) se ne slaže. Automobili za Sjevernu Ameriku je uvijek imaju, drugi možda ne.",
   "idCheckVinOk": "Ovo odgovara obliku VIN-a i njegovoj kontrolnoj znamenki.",
   "idCheckShortLicence": "Prekratko za broj vozačke dozvole iz ove zemlje ({country}): {count} od {expected}. Provjerite nedostaje li znamenka ili slovo.",
-  "idCheckLongLicence": "Predugo za broj vozačke dozvole iz ove zemlje ({country}): {count} od {expected}. Provjerite ima li znamenka ili slovo viška."
+  "idCheckLongLicence": "Predugo za broj vozačke dozvole iz ove zemlje ({country}): {count} od {expected}. Provjerite ima li znamenka ili slovo viška.",
+  "supportShotTitle": "Dodati snimku zaslona?",
+  "supportShotBody": "Snimka zaslona pomaže podršci vidjeti problem. Provjerite da ne prikazuje brojeve isprava, lozinke ni bankovne podatke.",
+  "supportShotAdd": "Dodaj snimku",
+  "supportShotSkip": "Pošalji bez",
+  "supportShotUnusable": "Ta snimka ne može se koristiti. Pokušajte s drugom ili pošaljite bez."
 }

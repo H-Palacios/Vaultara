@@ -4319,7 +4319,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Irekhodi izivuselele",
+  "rolledTitleLocked": "Irekhodi elivaliwe lizivuselele",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4480,5 +4480,10 @@
   "idCheckVinDigit": "Idijithi yokuhlola (uhlamvu lwe-9) ayihambisani. Izimoto ezenzelwe iNyakatho Melika zihlala zinayo; ezinye kungenzeka zingabi nayo.",
   "idCheckVinOk": "Lokhu kuhambisana nefomethi ye-VIN nedijithi yayo yokuhlola.",
   "idCheckShortLicence": "Mfushane kakhulu enombolweni yelayisensi yokushayela yaleli zwe ({country}): {count} kwezingu-{expected}. Hlola ukuthi ayikho idijithi noma uhlamvu olushodayo.",
-  "idCheckLongLicence": "Inde kakhulu enombolweni yelayisensi yokushayela yaleli zwe ({country}): {count} kwezingu-{expected}. Hlola ukuthi ayikho idijithi noma uhlamvu olwengeziwe."
+  "idCheckLongLicence": "Inde kakhulu enombolweni yelayisensi yokushayela yaleli zwe ({country}): {count} kwezingu-{expected}. Hlola ukuthi ayikho idijithi noma uhlamvu olwengeziwe.",
+  "supportShotTitle": "Ufuna ukwengeza isithombe-skrini?",
+  "supportShotBody": "Isithombe-skrini sisiza abosizo babone inkinga. Qiniseka ukuthi asibonisi izinombolo zikamazisi, amaphasiwedi noma imininingwane yebhange.",
+  "supportShotAdd": "Engeza isithombe-skrini",
+  "supportShotSkip": "Thumela ngaphandle kwaso",
+  "supportShotUnusable": "Lesi sithombe-skrini asikwazi ukusetshenziswa. Zama esinye, noma uthumele ngaphandle kwaso."
 }

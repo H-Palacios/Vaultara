@@ -10617,7 +10617,7 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Erregistro bat berez berritu da';
+  String get rolledTitleLocked => 'Erregistro blokeatu bat berez berritu da';
 
   @override
   String get digestGroupedSubtitle => 'Egun bereko oroigarriak jakinarazpen bakar gisa iristen dira zure oroigarri-orduan. Bihar edo gaur iraungitzen direnek edo iraungitakoek berea jasotzen dute.';
@@ -10971,4 +10971,19 @@ class AppLocalizationsEu extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Luzeegia herrialde honetako gidabaimen-zenbaki baterako ($country): $count/$expected. Egiaztatu digitu edo letra bat soberan dagoen.';
   }
+
+  @override
+  String get supportShotTitle => 'Pantaila-argazki bat gehitu?';
+
+  @override
+  String get supportShotBody => 'Pantaila-argazki batek arazoa ikusten laguntzen dio laguntza-taldeari. Egiaztatu ez duela NAN zenbakirik, pasahitzik edo banku-daturik erakusten.';
+
+  @override
+  String get supportShotAdd => 'Gehitu pantaila-argazkia';
+
+  @override
+  String get supportShotSkip => 'Bidali gabe';
+
+  @override
+  String get supportShotUnusable => 'Pantaila-argazki hori ezin da erabili. Saiatu beste batekin, edo bidali gabe.';
 }

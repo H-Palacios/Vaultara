@@ -4077,7 +4077,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Yozuv o'zi yangilandi",
+  "rolledTitleLocked": "Qulflangan yozuv o'zi yangilandi",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4238,5 +4238,10 @@
   "idCheckVinDigit": "Tekshiruv belgisi (9-belgi) mos emas. Shimoliy Amerika uchun ishlab chiqarilgan mashinalarda u doim bo'ladi; boshqalarida bo'lmasligi mumkin.",
   "idCheckVinOk": "Bu VIN formatiga va uning tekshiruv belgisiga mos keladi.",
   "idCheckShortLicence": "Bu mamlakat haydovchilik guvohnomasi raqami uchun juda qisqa ({country}): {count}/{expected}. Raqam yoki harf tushib qolmaganini tekshiring.",
-  "idCheckLongLicence": "Bu mamlakat haydovchilik guvohnomasi raqami uchun juda uzun ({country}): {count}/{expected}. Ortiqcha raqam yoki harf yo'qligini tekshiring."
+  "idCheckLongLicence": "Bu mamlakat haydovchilik guvohnomasi raqami uchun juda uzun ({country}): {count}/{expected}. Ortiqcha raqam yoki harf yo'qligini tekshiring.",
+  "supportShotTitle": "Skrinshot qo'shilsinmi?",
+  "supportShotBody": "Skrinshot yordam xizmatiga muammoni ko'rishga yordam beradi. Unda shaxsiy raqamlar, parollar yoki bank ma'lumotlari ko'rinmasligini tekshiring.",
+  "supportShotAdd": "Skrinshot qo'shish",
+  "supportShotSkip": "Usiz yuborish",
+  "supportShotUnusable": "Bu skrinshotdan foydalanib bo'lmaydi. Boshqasini sinab ko'ring yoki usiz yuboring."
 }

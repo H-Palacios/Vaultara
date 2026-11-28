@@ -10611,7 +10611,7 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'یک مورد خودش تمدید شد';
+  String get rolledTitleLocked => 'یک رکورد قفل‌شده خودش تمدید شد';
 
   @override
   String get digestGroupedSubtitle => 'یادآوری‌های یک روز به‌صورت یک اعلان در زمان یادآوری شما می‌آیند. مواردی که فردا یا امروز منقضی می‌شوند یا منقضی شده‌اند جداگانه می‌آیند.';
@@ -10965,4 +10965,19 @@ class AppLocalizationsFa extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'برای شماره گواهینامه رانندگی این کشور خیلی بلند است ($country): $count از $expected. ببینید رقم یا حرف اضافه‌ای نباشد.';
   }
+
+  @override
+  String get supportShotTitle => 'اسکرین‌شات اضافه شود؟';
+
+  @override
+  String get supportShotBody => 'اسکرین‌شات به پشتیبانی کمک می‌کند مشکل را ببیند. مطمئن شوید شماره شناسایی، رمز عبور یا اطلاعات بانکی در آن دیده نمی‌شود.';
+
+  @override
+  String get supportShotAdd => 'افزودن اسکرین‌شات';
+
+  @override
+  String get supportShotSkip => 'ارسال بدون آن';
+
+  @override
+  String get supportShotUnusable => 'از این اسکرین‌شات نمی‌توان استفاده کرد. یکی دیگر را امتحان کنید یا بدون آن بفرستید.';
 }

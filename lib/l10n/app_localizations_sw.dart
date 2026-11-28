@@ -10612,7 +10612,7 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Rekodi imejihuisha yenyewe';
+  String get rolledTitleLocked => 'Rekodi iliyofungwa imejihuisha yenyewe';
 
   @override
   String get digestGroupedSubtitle => 'Vikumbusho vya siku moja huja kama arifa moja wakati wako wa kukumbusha. Rekodi zinazoisha kesho, leo au zilizoisha bado hupata zao.';
@@ -10966,4 +10966,19 @@ class AppLocalizationsSw extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Ndefu mno kwa namba ya leseni ya udereva kutoka nchi hii ($country): $count kati ya $expected. Angalia kama kuna tarakimu au herufi ya ziada.';
   }
+
+  @override
+  String get supportShotTitle => 'Ongeza picha ya skrini?';
+
+  @override
+  String get supportShotBody => 'Picha ya skrini husaidia timu ya usaidizi kuona tatizo. Hakikisha haionyeshi namba za utambulisho, nenosiri au maelezo ya benki.';
+
+  @override
+  String get supportShotAdd => 'Ongeza picha ya skrini';
+
+  @override
+  String get supportShotSkip => 'Tuma bila picha';
+
+  @override
+  String get supportShotUnusable => 'Picha hiyo ya skrini haiwezi kutumika. Jaribu nyingine, au tuma bila picha.';
 }

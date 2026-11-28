@@ -10617,7 +10617,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Een item is vanzelf verlengd';
+  String get rolledTitleLocked => 'Een vergrendeld item is vanzelf verlengd';
 
   @override
   String get digestGroupedSubtitle => 'Herinneringen op dezelfde dag komen als één melding op je herinneringstijd. Items die morgen of vandaag verlopen of al verlopen zijn, krijgen nog steeds hun eigen melding.';
@@ -10971,4 +10971,19 @@ class AppLocalizationsNl extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Te lang voor een rijbewijsnummer uit dit land ($country): $count van $expected. Controleer of er een cijfer of letter te veel is.';
   }
+
+  @override
+  String get supportShotTitle => 'Screenshot toevoegen?';
+
+  @override
+  String get supportShotBody => 'Een screenshot helpt support het probleem te zien. Controleer dat er geen ID-nummers, wachtwoorden of bankgegevens op staan.';
+
+  @override
+  String get supportShotAdd => 'Screenshot toevoegen';
+
+  @override
+  String get supportShotSkip => 'Zonder versturen';
+
+  @override
+  String get supportShotUnusable => 'Die screenshot kan niet worden gebruikt. Probeer een andere, of verstuur zonder.';
 }

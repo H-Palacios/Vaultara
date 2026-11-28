@@ -10536,7 +10536,7 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'รายการหนึ่งต่ออายุเองแล้ว';
+  String get rolledTitleLocked => 'รายการที่ล็อกหนึ่งรายการต่ออายุเองแล้ว';
 
   @override
   String get digestGroupedSubtitle => 'การแจ้งเตือนในวันเดียวกันจะรวมเป็นการแจ้งเตือนเดียวตามเวลาที่ตั้งไว้ รายการที่หมดอายุพรุ่งนี้ วันนี้ หรือหมดอายุแล้ว ยังแจ้งแยกเหมือนเดิม';
@@ -10890,4 +10890,19 @@ class AppLocalizationsTh extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'ยาวเกินไปสำหรับเลขใบขับขี่ของประเทศนี้ ($country): $count จาก $expected โปรดตรวจว่ามีตัวเลขหรือตัวอักษรเกินหรือไม่';
   }
+
+  @override
+  String get supportShotTitle => 'เพิ่มภาพหน้าจอไหม';
+
+  @override
+  String get supportShotBody => 'ภาพหน้าจอช่วยให้ทีมช่วยเหลือเห็นปัญหา ตรวจดูให้แน่ใจว่าไม่มีเลขบัตรประชาชน รหัสผ่าน หรือข้อมูลธนาคาร';
+
+  @override
+  String get supportShotAdd => 'เพิ่มภาพหน้าจอ';
+
+  @override
+  String get supportShotSkip => 'ส่งโดยไม่มีภาพ';
+
+  @override
+  String get supportShotUnusable => 'ใช้ภาพหน้าจอนี้ไม่ได้ ลองภาพอื่นหรือส่งโดยไม่มีภาพ';
 }

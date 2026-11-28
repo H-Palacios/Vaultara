@@ -4365,7 +4365,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "'n Rekord het vanself hernu",
+  "rolledTitleLocked": "'n Gesluite rekord het vanself hernu",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4526,5 +4526,10 @@
   "idCheckVinDigit": "Die kontrolesyfer (die 9de karakter) pas nie. Motors wat vir Noord-Amerika gemaak is, het altyd een; ander dalk nie.",
   "idCheckVinOk": "Dit pas by die VIN-formaat en sy kontrolesyfer.",
   "idCheckShortLicence": "Te kort vir 'n rybewysnommer van hierdie land ({country}): {count} van {expected}. Kyk of 'n syfer of letter ontbreek.",
-  "idCheckLongLicence": "Te lank vir 'n rybewysnommer van hierdie land ({country}): {count} van {expected}. Kyk vir 'n ekstra syfer of letter."
+  "idCheckLongLicence": "Te lank vir 'n rybewysnommer van hierdie land ({country}): {count} van {expected}. Kyk vir 'n ekstra syfer of letter.",
+  "supportShotTitle": "Voeg 'n skermskoot by?",
+  "supportShotBody": "'n Skermskoot help ondersteuning om die probleem te sien. Maak seker dit wys geen ID-nommers, wagwoorde of bankbesonderhede nie.",
+  "supportShotAdd": "Voeg skermskoot by",
+  "supportShotSkip": "Stuur sonder",
+  "supportShotUnusable": "Daardie skermskoot kan nie gebruik word nie. Probeer 'n ander een, of stuur sonder."
 }

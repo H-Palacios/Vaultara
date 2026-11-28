@@ -10546,7 +10546,7 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'កំណត់ត្រាមួយបានបន្តដោយខ្លួនឯង';
+  String get rolledTitleLocked => 'កំណត់ត្រាដែលបានចាក់សោមួយបានបន្តដោយខ្លួនឯង';
 
   @override
   String get digestGroupedSubtitle => 'ការរំលឹកនៅថ្ងៃតែមួយមកជាការជូនដំណឹងតែមួយនៅម៉ោងរំលឹករបស់អ្នក។ កំណត់ត្រាដែលផុតកំណត់ថ្ងៃស្អែក ថ្ងៃនេះ ឬផុតកំណត់ហើយ នៅតែមកដាច់ដោយឡែក។';
@@ -10900,4 +10900,19 @@ class AppLocalizationsKm extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'វែងពេកសម្រាប់លេខប័ណ្ណបើកបរពីប្រទេសនេះ ($country): $count ក្នុង $expected។ សូមពិនិត្យថាមានលេខ ឬអក្សរលើសឬទេ។';
   }
+
+  @override
+  String get supportShotTitle => 'បន្ថែមរូបថតអេក្រង់ទេ?';
+
+  @override
+  String get supportShotBody => 'រូបថតអេក្រង់ជួយក្រុមជំនួយឱ្យមើលឃើញបញ្ហា។ សូមពិនិត្យថាវាមិនបង្ហាញលេខអត្តសញ្ញាណ ពាក្យសម្ងាត់ ឬព័ត៌មានធនាគារ។';
+
+  @override
+  String get supportShotAdd => 'បន្ថែមរូបថតអេក្រង់';
+
+  @override
+  String get supportShotSkip => 'ផ្ញើដោយគ្មានវា';
+
+  @override
+  String get supportShotUnusable => 'មិនអាចប្រើរូបថតអេក្រង់នេះបានទេ។ សាកល្បងមួយផ្សេងទៀត ឬផ្ញើដោយគ្មានវា។';
 }

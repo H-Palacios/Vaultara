@@ -10870,7 +10870,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'تجدد سجل تلقائيًا';
+  String get rolledTitleLocked => 'تجدد سجل مقفل تلقائيًا';
 
   @override
   String get digestGroupedSubtitle => 'تصل التذكيرات في اليوم نفسه كإشعار واحد في وقت التذكير. السجلات المستحقة غدًا أو اليوم أو المنتهية تحصل على إشعار خاص بها.';
@@ -11224,4 +11224,19 @@ class AppLocalizationsAr extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'طويل جدًا لرقم رخصة قيادة من هذا البلد ($country): $count من $expected. تحقق مما إذا كان هناك رقم أو حرف زائد.';
   }
+
+  @override
+  String get supportShotTitle => 'إضافة لقطة شاشة؟';
+
+  @override
+  String get supportShotBody => 'تساعد لقطة الشاشة فريق الدعم على رؤية المشكلة. تأكد من أنها لا تُظهر أرقام هوية أو كلمات مرور أو بيانات مصرفية.';
+
+  @override
+  String get supportShotAdd => 'إضافة لقطة شاشة';
+
+  @override
+  String get supportShotSkip => 'إرسال بدونها';
+
+  @override
+  String get supportShotUnusable => 'لا يمكن استخدام لقطة الشاشة هذه. جرّب لقطة أخرى أو أرسل بدونها.';
 }

@@ -10775,7 +10775,7 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Záznam se obnovil sám';
+  String get rolledTitleLocked => 'Zamčený záznam se obnovil sám';
 
   @override
   String get digestGroupedSubtitle => 'Připomínky ze stejného dne přijdou jako jedno oznámení v čase připomínek. Záznamy, které vyprší zítra, dnes nebo už vypršely, dostanou vlastní.';
@@ -11129,4 +11129,19 @@ class AppLocalizationsCs extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Příliš dlouhé na číslo řidičského průkazu z této země ($country): $count z $expected. Zkontrolujte, jestli tam není číslice nebo písmeno navíc.';
   }
+
+  @override
+  String get supportShotTitle => 'Přidat snímek obrazovky?';
+
+  @override
+  String get supportShotBody => 'Snímek obrazovky pomůže podpoře vidět problém. Zkontrolujte, že na něm nejsou čísla dokladů, hesla ani bankovní údaje.';
+
+  @override
+  String get supportShotAdd => 'Přidat snímek';
+
+  @override
+  String get supportShotSkip => 'Odeslat bez';
+
+  @override
+  String get supportShotUnusable => 'Tento snímek nelze použít. Zkuste jiný, nebo odešlete bez.';
 }

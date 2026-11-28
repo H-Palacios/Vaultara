@@ -4332,7 +4332,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Sebuah catatan diperpanjang sendiri",
+  "rolledTitleLocked": "Sebuah catatan terkunci diperpanjang sendiri",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4493,5 +4493,10 @@
   "idCheckVinDigit": "Digit pemeriksa (karakter ke-9) tidak cocok. Mobil buatan untuk Amerika Utara selalu memilikinya; yang lain mungkin tidak.",
   "idCheckVinOk": "Ini cocok dengan format VIN dan digit pemeriksanya.",
   "idCheckShortLicence": "Terlalu pendek untuk nomor SIM dari negara ini ({country}): {count} dari {expected}. Periksa apakah ada angka atau huruf yang hilang.",
-  "idCheckLongLicence": "Terlalu panjang untuk nomor SIM dari negara ini ({country}): {count} dari {expected}. Periksa apakah ada angka atau huruf yang berlebih."
+  "idCheckLongLicence": "Terlalu panjang untuk nomor SIM dari negara ini ({country}): {count} dari {expected}. Periksa apakah ada angka atau huruf yang berlebih.",
+  "supportShotTitle": "Tambahkan tangkapan layar?",
+  "supportShotBody": "Tangkapan layar membantu tim dukungan melihat masalahnya. Pastikan tidak menampilkan nomor identitas, kata sandi, atau data bank.",
+  "supportShotAdd": "Tambahkan tangkapan layar",
+  "supportShotSkip": "Kirim tanpa",
+  "supportShotUnusable": "Tangkapan layar itu tidak bisa dipakai. Coba yang lain, atau kirim tanpa."
 }

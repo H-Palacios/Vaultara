@@ -10616,7 +10616,7 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => '\'n Rekord het vanself hernu';
+  String get rolledTitleLocked => '\'n Gesluite rekord het vanself hernu';
 
   @override
   String get digestGroupedSubtitle => 'Herinneringe op dieselfde dag kom as een kennisgewing op jou herinneringstyd. Rekords wat môre of vandag verval, of reeds verval het, kry steeds hul eie.';
@@ -10970,4 +10970,19 @@ class AppLocalizationsAf extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Te lank vir \'n rybewysnommer van hierdie land ($country): $count van $expected. Kyk vir \'n ekstra syfer of letter.';
   }
+
+  @override
+  String get supportShotTitle => 'Voeg \'n skermskoot by?';
+
+  @override
+  String get supportShotBody => '\'n Skermskoot help ondersteuning om die probleem te sien. Maak seker dit wys geen ID-nommers, wagwoorde of bankbesonderhede nie.';
+
+  @override
+  String get supportShotAdd => 'Voeg skermskoot by';
+
+  @override
+  String get supportShotSkip => 'Stuur sonder';
+
+  @override
+  String get supportShotUnusable => 'Daardie skermskoot kan nie gebruik word nie. Probeer \'n ander een, of stuur sonder.';
 }

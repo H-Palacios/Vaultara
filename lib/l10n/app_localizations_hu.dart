@@ -10612,7 +10612,7 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Egy tétel magától megújult';
+  String get rolledTitleLocked => 'Egy zárolt tétel magától megújult';
 
   @override
   String get digestGroupedSubtitle => 'Az egy napra eső emlékeztetők egy értesítésként érkeznek az emlékeztetési időben. A holnap, ma lejáró vagy lejárt tételek továbbra is külön jönnek.';
@@ -10966,4 +10966,19 @@ class AppLocalizationsHu extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Túl hosszú az ország jogosítványszámához ($country): $count / $expected. Nézd meg, nincs-e benne fölösleges számjegy vagy betű.';
   }
+
+  @override
+  String get supportShotTitle => 'Hozzáad egy képernyőképet?';
+
+  @override
+  String get supportShotBody => 'A képernyőkép segít az ügyfélszolgálatnak látni a problémát. Ellenőrizze, hogy nem látszanak rajta igazolványszámok, jelszavak vagy banki adatok.';
+
+  @override
+  String get supportShotAdd => 'Képernyőkép hozzáadása';
+
+  @override
+  String get supportShotSkip => 'Küldés nélküle';
+
+  @override
+  String get supportShotUnusable => 'Ez a képernyőkép nem használható. Próbáljon másikat, vagy küldje nélküle.';
 }

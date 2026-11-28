@@ -10611,7 +10611,7 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Diiwaan ayaa iskiis u cusboonaaday';
+  String get rolledTitleLocked => 'Diiwaan xiran ayaa iskiis u cusboonaaday';
 
   @override
   String get digestGroupedSubtitle => 'Xusuusinta isla maalinta waxay u yimaadaan hal ogeysiis waqtiga xusuusintaada. Diiwaannada dhacaya berri, maanta ama dhacay weli waxay helaan kooda.';
@@ -10965,4 +10965,19 @@ class AppLocalizationsSo extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Aad buu ugu dheer yahay lambarka liisanka darawalnimada ee dalkan ($country): $count ka mid ah $expected. Hubi in tiro ama xaraf dheeraad ah jiro.';
   }
+
+  @override
+  String get supportShotTitle => 'Ma lagu daraa sawir shaashadeed?';
+
+  @override
+  String get supportShotBody => 'Sawirka shaashaddu wuxuu taageerada ka caawiyaa inay dhibaatada arkaan. Hubi inuusan muujinayn lambarro aqoonsi, furayaal ama faahfaahin bangi.';
+
+  @override
+  String get supportShotAdd => 'Ku dar sawir shaashadeed';
+
+  @override
+  String get supportShotSkip => 'Dir isaga la\'aantiis';
+
+  @override
+  String get supportShotUnusable => 'Sawirkan lama isticmaali karo. Isku day mid kale, ama dir isaga la\'aantiis.';
 }

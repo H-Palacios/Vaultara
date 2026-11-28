@@ -4332,7 +4332,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "רשומה התחדשה לבד",
+  "rolledTitleLocked": "רשומה נעולה התחדשה לבד",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4493,5 +4493,10 @@
   "idCheckVinDigit": "ספרת הביקורת (התו ה-9) לא מתאימה. למכוניות לצפון אמריקה תמיד יש אותה; לאחרות אולי לא.",
   "idCheckVinOk": "זה מתאים לתבנית מספר השלדה ולספרת הביקורת שלו.",
   "idCheckShortLicence": "קצר מדי למספר רישיון נהיגה מהמדינה הזו ({country}): {count} מתוך {expected}. בדוק אם חסרה ספרה או אות.",
-  "idCheckLongLicence": "ארוך מדי למספר רישיון נהיגה מהמדינה הזו ({country}): {count} מתוך {expected}. בדוק אם יש ספרה או אות מיותרת."
+  "idCheckLongLicence": "ארוך מדי למספר רישיון נהיגה מהמדינה הזו ({country}): {count} מתוך {expected}. בדוק אם יש ספרה או אות מיותרת.",
+  "supportShotTitle": "להוסיף צילום מסך?",
+  "supportShotBody": "צילום מסך עוזר לתמיכה לראות את הבעיה. ודאו שלא מופיעים בו מספרי זהות, סיסמאות או פרטי בנק.",
+  "supportShotAdd": "הוספת צילום מסך",
+  "supportShotSkip": "שליחה בלי",
+  "supportShotUnusable": "אי אפשר להשתמש בצילום המסך הזה. נסו אחר או שלחו בלי."
 }

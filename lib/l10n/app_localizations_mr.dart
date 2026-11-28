@@ -10612,7 +10612,7 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'एक नोंद आपोआप नूतनीकृत झाली';
+  String get rolledTitleLocked => 'एक लॉक केलेली नोंद आपोआप नूतनीकृत झाली';
 
   @override
   String get digestGroupedSubtitle => 'एकाच दिवसाची स्मरणपत्रे तुमच्या स्मरण वेळेला एका सूचनेत येतात. उद्या, आज संपणाऱ्या किंवा संपलेल्या नोंदींना अजूनही स्वतंत्र सूचना मिळते.';
@@ -10966,4 +10966,19 @@ class AppLocalizationsMr extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'या देशाच्या वाहन परवाना क्रमांकासाठी खूप मोठा ($country): $expected पैकी $count. एखादा जास्तीचा अंक किंवा अक्षर आहे का ते तपासा.';
   }
+
+  @override
+  String get supportShotTitle => 'स्क्रीनशॉट जोडायचा?';
+
+  @override
+  String get supportShotBody => 'स्क्रीनशॉटमुळे सहाय्य टीमला समस्या दिसते. त्यात ओळख क्रमांक, पासवर्ड किंवा बँक तपशील दिसत नाहीत ना ते तपासा.';
+
+  @override
+  String get supportShotAdd => 'स्क्रीनशॉट जोडा';
+
+  @override
+  String get supportShotSkip => 'त्याशिवाय पाठवा';
+
+  @override
+  String get supportShotUnusable => 'हा स्क्रीनशॉट वापरता येत नाही. दुसरा वापरून पाहा किंवा त्याशिवाय पाठवा.';
 }

@@ -10617,7 +10617,7 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Kirje uuenes ise';
+  String get rolledTitleLocked => 'Lukustatud kirje uuenes ise';
 
   @override
   String get digestGroupedSubtitle => 'Sama päeva meeldetuletused tulevad ühe teatena sinu meeldetuletuse ajal. Homme või täna aeguvad ja aegunud kirjed saavad ikka oma teate.';
@@ -10971,4 +10971,19 @@ class AppLocalizationsEt extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Selle riigi juhiloa numbri jaoks liiga pikk ($country): $count/$expected. Kontrolli, kas mõni number või täht on üleliigne.';
   }
+
+  @override
+  String get supportShotTitle => 'Kas lisada ekraanipilt?';
+
+  @override
+  String get supportShotBody => 'Ekraanipilt aitab toel probleemi näha. Kontrolli, et sellel ei oleks isikukoode, paroole ega pangaandmeid.';
+
+  @override
+  String get supportShotAdd => 'Lisa ekraanipilt';
+
+  @override
+  String get supportShotSkip => 'Saada ilma';
+
+  @override
+  String get supportShotUnusable => 'Seda ekraanipilti ei saa kasutada. Proovi teist või saada ilma.';
 }

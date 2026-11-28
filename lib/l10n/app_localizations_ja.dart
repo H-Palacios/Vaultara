@@ -10536,7 +10536,7 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => '記録が自動で更新されました';
+  String get rolledTitleLocked => 'ロックされた記録が自動で更新されました';
 
   @override
   String get digestGroupedSubtitle => '同じ日のリマインダーは、リマインダー時刻に1つの通知にまとめて届きます。明日や今日が期限のもの、期限切れのものは個別に届きます。';
@@ -10890,4 +10890,19 @@ class AppLocalizationsJa extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'この国 ($country) の運転免許証番号としては長すぎます: $expected 文字中 $count 文字。余分な数字か文字がないか確認してください。';
   }
+
+  @override
+  String get supportShotTitle => 'スクリーンショットを追加しますか?';
+
+  @override
+  String get supportShotBody => 'スクリーンショットがあるとサポートが問題を確認しやすくなります。身分証の番号、パスワード、銀行情報が写っていないか確認してください。';
+
+  @override
+  String get supportShotAdd => 'スクリーンショットを追加';
+
+  @override
+  String get supportShotSkip => '追加せずに送信';
+
+  @override
+  String get supportShotUnusable => 'このスクリーンショットは使えません。別のものを選ぶか、追加せずに送信してください。';
 }

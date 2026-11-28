@@ -10612,7 +10612,7 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'ஒரு பதிவு தானாக புதுப்பிக்கப்பட்டது';
+  String get rolledTitleLocked => 'ஒரு பூட்டிய பதிவு தானாக புதுப்பிக்கப்பட்டது';
 
   @override
   String get digestGroupedSubtitle => 'ஒரே நாளின் நினைவூட்டல்கள் உங்கள் நினைவூட்டல் நேரத்தில் ஒரே அறிவிப்பாக வரும். நாளை, இன்று காலாவதியாகும் அல்லது காலாவதியானவை இன்னும் தனியாக வரும்.';
@@ -10966,4 +10966,19 @@ class AppLocalizationsTa extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'இந்த நாட்டின் ஓட்டுநர் உரிம எண்ணுக்கு மிக நீளமானது ($country): $expected இல் $count. கூடுதல் இலக்கம் அல்லது எழுத்து உள்ளதா எனப் பார்க்கவும்.';
   }
+
+  @override
+  String get supportShotTitle => 'திரைப்பிடிப்பைச் சேர்க்கவா?';
+
+  @override
+  String get supportShotBody => 'திரைப்பிடிப்பு ஆதரவுக் குழு சிக்கலைப் பார்க்க உதவும். அதில் அடையாள எண்கள், கடவுச்சொற்கள் அல்லது வங்கி விவரங்கள் தெரியவில்லை என்பதைச் சரிபார்க்கவும்.';
+
+  @override
+  String get supportShotAdd => 'திரைப்பிடிப்பைச் சேர்';
+
+  @override
+  String get supportShotSkip => 'அது இல்லாமல் அனுப்பு';
+
+  @override
+  String get supportShotUnusable => 'இந்தத் திரைப்பிடிப்பைப் பயன்படுத்த முடியாது. வேறொன்றை முயலவும் அல்லது அது இல்லாமல் அனுப்பவும்.';
 }

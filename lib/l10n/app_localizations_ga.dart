@@ -10820,7 +10820,7 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'D\'athnuaigh taifead é féin';
+  String get rolledTitleLocked => 'D\'athnuaigh taifead faoi ghlas é féin';
 
   @override
   String get digestGroupedSubtitle => 'Tagann meabhrúcháin an lae chéanna mar fhógra amháin ag d\'am meabhrúcháin. Faigheann taifid a théann in éag amárach, inniu nó atá imithe in éag a gcuid féin fós.';
@@ -11174,4 +11174,19 @@ class AppLocalizationsGa extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Ró-fhada d\'uimhir cheadúnas tiomána ón tír seo ($country): $count as $expected. Seiceáil an bhfuil digit nó litir bhreise ann.';
   }
+
+  @override
+  String get supportShotTitle => 'Gabháil scáileáin a chur leis?';
+
+  @override
+  String get supportShotBody => 'Cabhraíonn gabháil scáileáin le tacaíocht an fhadhb a fheiceáil. Seiceáil nach dtaispeánann sí uimhreacha aitheantais, pasfhocail ná sonraí bainc.';
+
+  @override
+  String get supportShotAdd => 'Cuir gabháil leis';
+
+  @override
+  String get supportShotSkip => 'Seol gan í';
+
+  @override
+  String get supportShotUnusable => 'Ní féidir an ghabháil scáileáin sin a úsáid. Bain triail as ceann eile, nó seol gan í.';
 }

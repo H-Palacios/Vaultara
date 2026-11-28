@@ -10548,7 +10548,7 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Một mục đã tự gia hạn';
+  String get rolledTitleLocked => 'Một bản ghi bị khóa đã tự gia hạn';
 
   @override
   String get digestGroupedSubtitle => 'Các lời nhắc cùng ngày sẽ gộp thành một thông báo vào giờ nhắc của bạn. Mục hết hạn ngày mai, hôm nay hoặc đã hết hạn vẫn được báo riêng.';
@@ -10902,4 +10902,19 @@ class AppLocalizationsVi extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Quá dài cho số giấy phép lái xe của nước này ($country): $count trên $expected. Hãy kiểm tra xem có thừa chữ số hoặc chữ cái không.';
   }
+
+  @override
+  String get supportShotTitle => 'Thêm ảnh chụp màn hình?';
+
+  @override
+  String get supportShotBody => 'Ảnh chụp màn hình giúp bộ phận hỗ trợ thấy được vấn đề. Hãy kiểm tra để ảnh không hiện số giấy tờ, mật khẩu hay thông tin ngân hàng.';
+
+  @override
+  String get supportShotAdd => 'Thêm ảnh chụp màn hình';
+
+  @override
+  String get supportShotSkip => 'Gửi không kèm ảnh';
+
+  @override
+  String get supportShotUnusable => 'Không dùng được ảnh chụp màn hình này. Hãy thử ảnh khác hoặc gửi không kèm ảnh.';
 }

@@ -4339,7 +4339,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Kusang na-renew ang isang record",
+  "rolledTitleLocked": "Kusang na-renew ang isang naka-lock na record",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4500,5 +4500,10 @@
   "idCheckVinDigit": "Hindi tugma ang check digit (ika-9 na character). Laging mayroon nito ang mga kotseng gawa para sa North America; ang iba ay maaaring wala.",
   "idCheckVinOk": "Tugma ito sa format ng VIN at sa check digit nito.",
   "idCheckShortLicence": "Masyadong maikli para sa numero ng lisensya sa pagmamaneho mula sa bansang ito ({country}): {count} sa {expected}. Tingnan kung may kulang na digit o letra.",
-  "idCheckLongLicence": "Masyadong mahaba para sa numero ng lisensya sa pagmamaneho mula sa bansang ito ({country}): {count} sa {expected}. Tingnan kung may sobrang digit o letra."
+  "idCheckLongLicence": "Masyadong mahaba para sa numero ng lisensya sa pagmamaneho mula sa bansang ito ({country}): {count} sa {expected}. Tingnan kung may sobrang digit o letra.",
+  "supportShotTitle": "Magdagdag ng screenshot?",
+  "supportShotBody": "Nakakatulong ang screenshot para makita ng support ang problema. Tiyaking walang makikitang ID number, password o detalye ng bangko.",
+  "supportShotAdd": "Magdagdag ng screenshot",
+  "supportShotSkip": "Ipadala nang wala",
+  "supportShotUnusable": "Hindi magagamit ang screenshot na iyon. Subukan ang iba, o ipadala nang wala."
 }

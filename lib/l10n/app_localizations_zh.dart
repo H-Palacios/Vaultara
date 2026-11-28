@@ -10548,7 +10548,7 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => '有一条记录已自动续期';
+  String get rolledTitleLocked => '有一条已锁定的记录已自动续期';
 
   @override
   String get digestGroupedSubtitle => '同一天的提醒会在你的提醒时间合并为一条通知。明天或今天到期、或已过期的记录仍会单独提醒。';
@@ -10902,6 +10902,21 @@ class AppLocalizationsZh extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return '作为这个国家 ($country) 的驾驶证号码太长：$count/$expected。请检查是否多了数字或字母。';
   }
+
+  @override
+  String get supportShotTitle => '要添加截图吗？';
+
+  @override
+  String get supportShotBody => '截图能帮助客服看到问题。请确认截图中没有证件号码、密码或银行信息。';
+
+  @override
+  String get supportShotAdd => '添加截图';
+
+  @override
+  String get supportShotSkip => '不加截图发送';
+
+  @override
+  String get supportShotUnusable => '这张截图无法使用。请换一张，或不加截图发送。';
 }
 
 /// The translations for Chinese, as used in China (`zh_CN`).
@@ -21436,7 +21451,7 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   }
 
   @override
-  String get rolledTitleLocked => '有一条记录已自动续期';
+  String get rolledTitleLocked => '有一条已锁定的记录已自动续期';
 
   @override
   String get digestGroupedSubtitle => '同一天的提醒会在你的提醒时间合并为一条通知。明天或今天到期、或已过期的记录仍会单独提醒。';
@@ -21790,6 +21805,21 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
   String idCheckLongLicence(String country, String count, String expected) {
     return '作为这个国家 ($country) 的驾驶证号码太长：$count/$expected。请检查是否多了数字或字母。';
   }
+
+  @override
+  String get supportShotTitle => '要添加截图吗？';
+
+  @override
+  String get supportShotBody => '截图能帮助客服看到问题。请确认截图中没有证件号码、密码或银行信息。';
+
+  @override
+  String get supportShotAdd => '添加截图';
+
+  @override
+  String get supportShotSkip => '不加截图发送';
+
+  @override
+  String get supportShotUnusable => '这张截图无法使用。请换一张，或不加截图发送。';
 }
 
 /// The translations for Chinese, as used in Taiwan (`zh_TW`).
@@ -32324,7 +32354,7 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   }
 
   @override
-  String get rolledTitleLocked => '有一筆紀錄已自動續期';
+  String get rolledTitleLocked => '有一筆已鎖定的紀錄已自動續期';
 
   @override
   String get digestGroupedSubtitle => '同一天的提醒會在你的提醒時間合併為一則通知。明天或今天到期、或已過期的紀錄仍會單獨提醒。';
@@ -32678,4 +32708,19 @@ class AppLocalizationsZhTw extends AppLocalizationsZh {
   String idCheckLongLicence(String country, String count, String expected) {
     return '作為這個國家 ($country) 的駕照號碼太長：$count/$expected。請檢查是否多了數字或字母。';
   }
+
+  @override
+  String get supportShotTitle => '要加入螢幕截圖嗎？';
+
+  @override
+  String get supportShotBody => '截圖能幫助客服看到問題。請確認截圖中沒有證件號碼、密碼或銀行資料。';
+
+  @override
+  String get supportShotAdd => '加入截圖';
+
+  @override
+  String get supportShotSkip => '不加截圖傳送';
+
+  @override
+  String get supportShotUnusable => '這張截圖無法使用。請換一張，或不加截圖傳送。';
 }

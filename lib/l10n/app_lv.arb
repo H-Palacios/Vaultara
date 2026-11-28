@@ -4345,7 +4345,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Ieraksts atjaunojās pats",
+  "rolledTitleLocked": "Bloķēts ieraksts atjaunojās pats",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4506,5 +4506,10 @@
   "idCheckVinDigit": "Kontrolcipars (9. rakstzīme) nesakrīt. Ziemeļamerikai ražotām automašīnām tas ir vienmēr; citām var nebūt.",
   "idCheckVinOk": "Tas atbilst VIN formātam un tā kontrolciparam.",
   "idCheckShortLicence": "Par īsu šīs valsts vadītāja apliecības numuram ({country}): {count} no {expected}. Pārbaudi, vai netrūkst cipara vai burta.",
-  "idCheckLongLicence": "Par garu šīs valsts vadītāja apliecības numuram ({country}): {count} no {expected}. Pārbaudi, vai nav lieka cipara vai burta."
+  "idCheckLongLicence": "Par garu šīs valsts vadītāja apliecības numuram ({country}): {count} no {expected}. Pārbaudi, vai nav lieka cipara vai burta.",
+  "supportShotTitle": "Pievienot ekrānuzņēmumu?",
+  "supportShotBody": "Ekrānuzņēmums palīdz atbalstam redzēt problēmu. Pārbaudiet, vai tajā nav redzami personas kodi, paroles vai bankas dati.",
+  "supportShotAdd": "Pievienot ekrānuzņēmumu",
+  "supportShotSkip": "Sūtīt bez",
+  "supportShotUnusable": "Šo ekrānuzņēmumu nevar izmantot. Mēģiniet citu vai sūtiet bez."
 }

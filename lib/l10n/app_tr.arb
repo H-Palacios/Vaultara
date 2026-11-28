@@ -4327,7 +4327,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Bir kayıt kendiliğinden yenilendi",
+  "rolledTitleLocked": "Kilitli bir kayıt kendiliğinden yenilendi",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4488,5 +4488,10 @@
   "idCheckVinDigit": "Kontrol hanesi (9. karakter) tutmuyor. Kuzey Amerika için üretilen arabalarda hep vardır; diğerlerinde olmayabilir.",
   "idCheckVinOk": "Bu, şasi numarası biçimine ve kontrol hanesine uyuyor.",
   "idCheckShortLicence": "Bu ülkenin ehliyet numarası için çok kısa ({country}): {count}/{expected}. Eksik bir rakam veya harf olup olmadığını kontrol edin.",
-  "idCheckLongLicence": "Bu ülkenin ehliyet numarası için çok uzun ({country}): {count}/{expected}. Fazladan bir rakam veya harf olup olmadığını kontrol edin."
+  "idCheckLongLicence": "Bu ülkenin ehliyet numarası için çok uzun ({country}): {count}/{expected}. Fazladan bir rakam veya harf olup olmadığını kontrol edin.",
+  "supportShotTitle": "Ekran görüntüsü eklensin mi?",
+  "supportShotBody": "Ekran görüntüsü, destek ekibinin sorunu görmesine yardımcı olur. Kimlik numarası, şifre veya banka bilgisi göstermediğinden emin olun.",
+  "supportShotAdd": "Ekran görüntüsü ekle",
+  "supportShotSkip": "Eklemeden gönder",
+  "supportShotUnusable": "Bu ekran görüntüsü kullanılamıyor. Başka birini deneyin veya eklemeden gönderin."
 }

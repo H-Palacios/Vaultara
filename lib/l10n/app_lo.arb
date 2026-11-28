@@ -4345,7 +4345,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "ບັນທຶກໜຶ່ງຕໍ່ອາຍຸເອງແລ້ວ",
+  "rolledTitleLocked": "ບັນທຶກທີ່ລັອກໜຶ່ງຕໍ່ອາຍຸເອງແລ້ວ",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4506,5 +4506,10 @@
   "idCheckVinDigit": "ຕົວກວດສອບ (ຕົວທີ 9) ບໍ່ກົງກັນ. ລົດທີ່ຜະລິດສຳລັບອາເມລິກາເໜືອມີສະເໝີ; ລົດອື່ນອາດບໍ່ມີ.",
   "idCheckVinOk": "ອັນນີ້ກົງກັບຮູບແບບ VIN ແລະ ຕົວກວດສອບຂອງມັນ.",
   "idCheckShortLicence": "ສັ້ນເກີນໄປສຳລັບເລກໃບຂັບຂີ່ຈາກປະເທດນີ້ ({country}): {count} ຈາກ {expected}. ກວດເບິ່ງວ່າມີຕົວເລກ ຫຼື ຕົວອັກສອນຂາດບໍ່.",
-  "idCheckLongLicence": "ຍາວເກີນໄປສຳລັບເລກໃບຂັບຂີ່ຈາກປະເທດນີ້ ({country}): {count} ຈາກ {expected}. ກວດເບິ່ງວ່າມີຕົວເລກ ຫຼື ຕົວອັກສອນເກີນບໍ່."
+  "idCheckLongLicence": "ຍາວເກີນໄປສຳລັບເລກໃບຂັບຂີ່ຈາກປະເທດນີ້ ({country}): {count} ຈາກ {expected}. ກວດເບິ່ງວ່າມີຕົວເລກ ຫຼື ຕົວອັກສອນເກີນບໍ່.",
+  "supportShotTitle": "ເພີ່ມພາບໜ້າຈໍບໍ່?",
+  "supportShotBody": "ພາບໜ້າຈໍຊ່ວຍໃຫ້ທີມຊ່ວຍເຫຼືອເຫັນບັນຫາ. ກວດໃຫ້ແນ່ໃຈວ່າບໍ່ມີເລກບັດປະຈຳຕົວ, ລະຫັດຜ່ານ ຫຼື ຂໍ້ມູນທະນາຄານ.",
+  "supportShotAdd": "ເພີ່ມພາບໜ້າຈໍ",
+  "supportShotSkip": "ສົ່ງໂດຍບໍ່ມີພາບ",
+  "supportShotUnusable": "ໃຊ້ພາບໜ້າຈໍນີ້ບໍ່ໄດ້. ລອງພາບອື່ນ ຫຼື ສົ່ງໂດຍບໍ່ມີພາບ."
 }

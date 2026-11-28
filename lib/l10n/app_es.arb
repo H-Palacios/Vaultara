@@ -4334,7 +4334,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Un registro se renovó solo",
+  "rolledTitleLocked": "Un registro bloqueado se renovó solo",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4495,5 +4495,10 @@
   "idCheckVinDigit": "El dígito de control (el 9.º carácter) no coincide. Los coches hechos para Norteamérica siempre lo tienen; otros puede que no.",
   "idCheckVinOk": "Coincide con el formato VIN y su dígito de control.",
   "idCheckShortLicence": "Demasiado corto para un número de licencia de conducir de este país ({country}): {count} de {expected}. Revisa si falta un dígito o una letra.",
-  "idCheckLongLicence": "Demasiado largo para un número de licencia de conducir de este país ({country}): {count} de {expected}. Revisa si sobra un dígito o una letra."
+  "idCheckLongLicence": "Demasiado largo para un número de licencia de conducir de este país ({country}): {count} de {expected}. Revisa si sobra un dígito o una letra.",
+  "supportShotTitle": "¿Añadir una captura de pantalla?",
+  "supportShotBody": "Una captura ayuda al soporte a ver el problema. Comprueba que no muestre números de identidad, contraseñas ni datos bancarios.",
+  "supportShotAdd": "Añadir captura",
+  "supportShotSkip": "Enviar sin captura",
+  "supportShotUnusable": "Esa captura no se puede usar. Prueba con otra o envía sin captura."
 }

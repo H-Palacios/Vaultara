@@ -10602,7 +10602,7 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Нэг бичлэг өөрөө сунгагдлаа';
+  String get rolledTitleLocked => 'Түгжигдсэн нэг бичлэг өөрөө сунгагдлаа';
 
   @override
   String get digestGroupedSubtitle => 'Нэг өдрийн сануулгууд таны сануулах цагт нэг мэдэгдэл болж ирнэ. Маргааш, өнөөдөр дуусах эсвэл дууссан бичлэгүүд тус тусдаа ирсээр байна.';
@@ -10956,4 +10956,19 @@ class AppLocalizationsMn extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Энэ улсын жолооны үнэмлэхийн дугаарт хэт урт ($country): $count/$expected. Илүү цифр эсвэл үсэг байгаа эсэхийг шалгана уу.';
   }
+
+  @override
+  String get supportShotTitle => 'Дэлгэцийн зураг нэмэх үү?';
+
+  @override
+  String get supportShotBody => 'Дэлгэцийн зураг нь тусламжийн багт асуудлыг харахад тусалдаг. Үүнд иргэний үнэмлэхийн дугаар, нууц үг, банкны мэдээлэл харагдахгүй байгааг шалгана уу.';
+
+  @override
+  String get supportShotAdd => 'Зураг нэмэх';
+
+  @override
+  String get supportShotSkip => 'Зураггүй илгээх';
+
+  @override
+  String get supportShotUnusable => 'Энэ дэлгэцийн зургийг ашиглах боломжгүй. Өөр зураг сонгох эсвэл зураггүй илгээнэ үү.';
 }

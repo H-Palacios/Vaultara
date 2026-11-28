@@ -10612,7 +10612,7 @@ class AppLocalizationsNe extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'एउटा रेकर्ड आफैं नवीकरण भयो';
+  String get rolledTitleLocked => 'लक गरिएको एउटा रेकर्ड आफैं नवीकरण भयो';
 
   @override
   String get digestGroupedSubtitle => 'एउटै दिनका रिमाइन्डरहरू तपाईंको रिमाइन्डर समयमा एउटा सूचनाको रूपमा आउँछन्। भोलि, आज सकिने वा सकिएका रेकर्डले अझै छुट्टै सूचना पाउँछन्।';
@@ -10966,4 +10966,19 @@ class AppLocalizationsNe extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'यो देशको सवारी चालक अनुमतिपत्र नम्बरका लागि धेरै लामो ($country): $expected मध्ये $count। कुनै अंक वा अक्षर बढी छ कि हेर्नुहोस्।';
   }
+
+  @override
+  String get supportShotTitle => 'स्क्रिनसट थप्ने?';
+
+  @override
+  String get supportShotBody => 'स्क्रिनसटले सहायता टोलीलाई समस्या हेर्न मद्दत गर्छ। यसमा परिचय नम्बर, पासवर्ड वा बैंक विवरण नदेखिएको जाँच गर्नुहोस्।';
+
+  @override
+  String get supportShotAdd => 'स्क्रिनसट थप्नुहोस्';
+
+  @override
+  String get supportShotSkip => 'बिना पठाउनुहोस्';
+
+  @override
+  String get supportShotUnusable => 'यो स्क्रिनसट प्रयोग गर्न मिल्दैन। अर्को प्रयास गर्नुहोस् वा बिना पठाउनुहोस्।';
 }

@@ -10699,7 +10699,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'O înregistrare s-a reînnoit singură';
+  String get rolledTitleLocked => 'O înregistrare blocată s-a reînnoit singură';
 
   @override
   String get digestGroupedSubtitle => 'Mementourile din aceeași zi vin ca o singură notificare la ora mementourilor. Cele care expiră mâine, azi sau au expirat vin în continuare separat.';
@@ -11053,4 +11053,19 @@ class AppLocalizationsRo extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Prea lung pentru un număr de permis de conducere din această țară ($country): $count din $expected. Verifică dacă e o cifră sau o literă în plus.';
   }
+
+  @override
+  String get supportShotTitle => 'Adăugați o captură de ecran?';
+
+  @override
+  String get supportShotBody => 'O captură de ecran ajută echipa de asistență să vadă problema. Verificați să nu arate numere de acte, parole sau date bancare.';
+
+  @override
+  String get supportShotAdd => 'Adaugă captură';
+
+  @override
+  String get supportShotSkip => 'Trimite fără';
+
+  @override
+  String get supportShotUnusable => 'Captura nu poate fi folosită. Încercați alta sau trimiteți fără.';
 }

@@ -4320,7 +4320,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "En post förnyades av sig själv",
+  "rolledTitleLocked": "En låst post förnyades av sig själv",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4481,5 +4481,10 @@
   "idCheckVinDigit": "Kontrollsiffran (det 9:e tecknet) stämmer inte. Bilar för Nordamerika har alltid en, andra kanske inte.",
   "idCheckVinOk": "Det här stämmer med VIN-formatet och kontrollsiffran.",
   "idCheckShortLicence": "För kort för ett körkortsnummer från det här landet ({country}): {count} av {expected}. Kontrollera om en siffra eller bokstav saknas.",
-  "idCheckLongLicence": "För långt för ett körkortsnummer från det här landet ({country}): {count} av {expected}. Kontrollera om det finns en siffra eller bokstav för mycket."
+  "idCheckLongLicence": "För långt för ett körkortsnummer från det här landet ({country}): {count} av {expected}. Kontrollera om det finns en siffra eller bokstav för mycket.",
+  "supportShotTitle": "Lägga till en skärmbild?",
+  "supportShotBody": "En skärmbild hjälper supporten att se problemet. Kontrollera att den inte visar ID-nummer, lösenord eller bankuppgifter.",
+  "supportShotAdd": "Lägg till skärmbild",
+  "supportShotSkip": "Skicka utan",
+  "supportShotUnusable": "Den skärmbilden kan inte användas. Prova en annan, eller skicka utan."
 }

@@ -4327,7 +4327,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "기록이 자동 갱신됨",
+  "rolledTitleLocked": "잠긴 기록이 자동 갱신됨",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4488,5 +4488,10 @@
   "idCheckVinDigit": "검사 문자(9번째 문자)가 맞지 않습니다. 북미용으로 만든 차에는 항상 있고, 다른 차에는 없을 수도 있습니다.",
   "idCheckVinOk": "VIN 형식과 검사 문자가 맞습니다.",
   "idCheckShortLicence": "이 나라({country}) 운전면허 번호로는 너무 짧습니다: {expected}자 중 {count}자. 빠진 숫자나 문자가 있는지 확인하세요.",
-  "idCheckLongLicence": "이 나라({country}) 운전면허 번호로는 너무 깁니다: {expected}자 중 {count}자. 남는 숫자나 문자가 있는지 확인하세요."
+  "idCheckLongLicence": "이 나라({country}) 운전면허 번호로는 너무 깁니다: {expected}자 중 {count}자. 남는 숫자나 문자가 있는지 확인하세요.",
+  "supportShotTitle": "스크린샷을 추가할까요?",
+  "supportShotBody": "스크린샷이 있으면 지원팀이 문제를 보기 쉽습니다. 신분증 번호, 비밀번호, 은행 정보가 보이지 않는지 확인하세요.",
+  "supportShotAdd": "스크린샷 추가",
+  "supportShotSkip": "없이 보내기",
+  "supportShotUnusable": "이 스크린샷은 사용할 수 없습니다. 다른 것을 선택하거나 없이 보내세요."
 }

@@ -4327,7 +4327,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Satu rekod diperbaharui sendiri",
+  "rolledTitleLocked": "Satu rekod yang dikunci diperbaharui sendiri",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4488,5 +4488,10 @@
   "idCheckVinDigit": "Digit semak (aksara ke-9) tidak sepadan. Kereta yang dibuat untuk Amerika Utara sentiasa memilikinya; yang lain mungkin tidak.",
   "idCheckVinOk": "Ini sepadan dengan format VIN dan digit semaknya.",
   "idCheckShortLicence": "Terlalu pendek untuk nombor lesen memandu dari negara ini ({country}): {count} daripada {expected}. Semak jika ada digit atau huruf yang tertinggal.",
-  "idCheckLongLicence": "Terlalu panjang untuk nombor lesen memandu dari negara ini ({country}): {count} daripada {expected}. Semak jika ada digit atau huruf yang berlebihan."
+  "idCheckLongLicence": "Terlalu panjang untuk nombor lesen memandu dari negara ini ({country}): {count} daripada {expected}. Semak jika ada digit atau huruf yang berlebihan.",
+  "supportShotTitle": "Tambah tangkapan skrin?",
+  "supportShotBody": "Tangkapan skrin membantu pasukan sokongan melihat masalah itu. Pastikan ia tidak menunjukkan nombor pengenalan, kata laluan atau butiran bank.",
+  "supportShotAdd": "Tambah tangkapan skrin",
+  "supportShotSkip": "Hantar tanpanya",
+  "supportShotUnusable": "Tangkapan skrin itu tidak boleh digunakan. Cuba yang lain, atau hantar tanpanya."
 }

@@ -10548,7 +10548,7 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Satu rekod diperbaharui sendiri';
+  String get rolledTitleLocked => 'Satu rekod yang dikunci diperbaharui sendiri';
 
   @override
   String get digestGroupedSubtitle => 'Peringatan pada hari yang sama datang sebagai satu pemberitahuan pada masa peringatan anda. Rekod yang tamat esok, hari ini atau sudah tamat masih datang sendiri.';
@@ -10902,4 +10902,19 @@ class AppLocalizationsMs extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Terlalu panjang untuk nombor lesen memandu dari negara ini ($country): $count daripada $expected. Semak jika ada digit atau huruf yang berlebihan.';
   }
+
+  @override
+  String get supportShotTitle => 'Tambah tangkapan skrin?';
+
+  @override
+  String get supportShotBody => 'Tangkapan skrin membantu pasukan sokongan melihat masalah itu. Pastikan ia tidak menunjukkan nombor pengenalan, kata laluan atau butiran bank.';
+
+  @override
+  String get supportShotAdd => 'Tambah tangkapan skrin';
+
+  @override
+  String get supportShotSkip => 'Hantar tanpanya';
+
+  @override
+  String get supportShotUnusable => 'Tangkapan skrin itu tidak boleh digunakan. Cuba yang lain, atau hantar tanpanya.';
 }

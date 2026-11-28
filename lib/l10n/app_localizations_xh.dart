@@ -10612,7 +10612,7 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'Irekhodi izihlaziyile';
+  String get rolledTitleLocked => 'Irekhodi etshixiweyo izihlaziyile';
 
   @override
   String get digestGroupedSubtitle => 'Izikhumbuzo zosuku olunye zifika njengesaziso esinye ngexesha lakho lesikhumbuzo. Iirekhodi eziphelelwa ngomso, namhlanje okanye eziphelelweyo zisafumana ezazo.';
@@ -10966,4 +10966,19 @@ class AppLocalizationsXh extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'Inde kakhulu kwinombolo yelayisenisi yokuqhuba yeli lizwe ($country): $count kwezi-$expected. Jonga ukuba akukho dijithi okanye unobumba ongaphezulu.';
   }
+
+  @override
+  String get supportShotTitle => 'Ufuna ukongeza umfanekiso wesikrini?';
+
+  @override
+  String get supportShotBody => 'Umfanekiso wesikrini unceda inkxaso ibone ingxaki. Qinisekisa ukuba awubonisi iinombolo zesazisi, iipasiwedi okanye iinkcukacha zebhanki.';
+
+  @override
+  String get supportShotAdd => 'Yongeza umfanekiso';
+
+  @override
+  String get supportShotSkip => 'Thumela ngaphandle kwawo';
+
+  @override
+  String get supportShotUnusable => 'Lo mfanekiso wesikrini awunakusetyenziswa. Zama omnye, okanye uthumele ngaphandle kwawo.';
 }

@@ -4341,7 +4341,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Një regjistrim u rinovua vetë",
+  "rolledTitleLocked": "Një regjistrim i kyçur u rinovua vetë",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4502,5 +4502,10 @@
   "idCheckVinDigit": "Shifra e kontrollit (karakteri i 9-të) nuk përputhet. Makinat për Amerikën e Veriut e kanë gjithmonë; të tjerat mund të mos e kenë.",
   "idCheckVinOk": "Përputhet me formatin VIN dhe shifrën e tij të kontrollit.",
   "idCheckShortLicence": "Shumë i shkurtër për një numër patente nga ky vend ({country}): {count} nga {expected}. Kontrollo nëse mungon një shifër ose shkronjë.",
-  "idCheckLongLicence": "Shumë i gjatë për një numër patente nga ky vend ({country}): {count} nga {expected}. Kontrollo nëse ka një shifër ose shkronjë të tepërt."
+  "idCheckLongLicence": "Shumë i gjatë për një numër patente nga ky vend ({country}): {count} nga {expected}. Kontrollo nëse ka një shifër ose shkronjë të tepërt.",
+  "supportShotTitle": "Të shtohet një pamje ekrani?",
+  "supportShotBody": "Një pamje ekrani e ndihmon mbështetjen të shohë problemin. Kontrollo që të mos shfaqë numra identiteti, fjalëkalime ose të dhëna bankare.",
+  "supportShotAdd": "Shto pamje ekrani",
+  "supportShotSkip": "Dërgo pa të",
+  "supportShotUnusable": "Kjo pamje ekrani nuk mund të përdoret. Provo një tjetër ose dërgo pa të."
 }

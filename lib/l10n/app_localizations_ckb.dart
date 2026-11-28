@@ -10611,7 +10611,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'تۆمارێک خۆی نوێ بووەوە';
+  String get rolledTitleLocked => 'تۆمارێکی قفڵکراو خۆی نوێ بووەوە';
 
   @override
   String get digestGroupedSubtitle => 'بیرخەرەوەکانی هەمان ڕۆژ وەک یەک ئاگادارکردنەوە لە کاتی بیرخستنەوەکەت دێن. تۆمارەکانی سبەی، ئەمڕۆ یان بەسەرچوو هێشتا جیا دێن.';
@@ -10965,4 +10965,19 @@ class AppLocalizationsCkb extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'زۆر درێژە بۆ ژمارەی مۆڵەتی شۆفێری ئەم وڵاتە ($country): $count لە $expected. بپشکنە ژمارە یان پیتێکی زیادە نییە.';
   }
+
+  @override
+  String get supportShotTitle => 'وێنەی شاشە زیاد بکرێت؟';
+
+  @override
+  String get supportShotBody => 'وێنەی شاشە یارمەتی پشتگیری دەدات کێشەکە ببینێت. دڵنیابە کە ژمارەی ناسنامە، وشەی نهێنی یان زانیاری بانکی تێدا دیار نییە.';
+
+  @override
+  String get supportShotAdd => 'زیادکردنی وێنەی شاشە';
+
+  @override
+  String get supportShotSkip => 'بەبێ ئەو بینێرە';
+
+  @override
+  String get supportShotUnusable => 'ناتوانرێت ئەم وێنەیە بەکاربهێنرێت. یەکێکی تر تاقی بکەرەوە یان بەبێ ئەو بینێرە.';
 }

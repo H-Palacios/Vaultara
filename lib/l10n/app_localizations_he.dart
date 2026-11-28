@@ -10676,7 +10676,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'רשומה התחדשה לבד';
+  String get rolledTitleLocked => 'רשומה נעולה התחדשה לבד';
 
   @override
   String get digestGroupedSubtitle => 'תזכורות באותו יום מגיעות כהתראה אחת בשעת התזכורת שלך. רשומות שפגות מחר, היום או שכבר פגו עדיין מקבלות התראה משלהן.';
@@ -11030,4 +11030,19 @@ class AppLocalizationsHe extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'ארוך מדי למספר רישיון נהיגה מהמדינה הזו ($country): $count מתוך $expected. בדוק אם יש ספרה או אות מיותרת.';
   }
+
+  @override
+  String get supportShotTitle => 'להוסיף צילום מסך?';
+
+  @override
+  String get supportShotBody => 'צילום מסך עוזר לתמיכה לראות את הבעיה. ודאו שלא מופיעים בו מספרי זהות, סיסמאות או פרטי בנק.';
+
+  @override
+  String get supportShotAdd => 'הוספת צילום מסך';
+
+  @override
+  String get supportShotSkip => 'שליחה בלי';
+
+  @override
+  String get supportShotUnusable => 'אי אפשר להשתמש בצילום המסך הזה. נסו אחר או שלחו בלי.';
 }

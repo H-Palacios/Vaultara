@@ -4327,7 +4327,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "有一条记录已自动续期",
+  "rolledTitleLocked": "有一条已锁定的记录已自动续期",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4488,5 +4488,10 @@
   "idCheckVinDigit": "校验位 (第 9 个字符) 不匹配。为北美制造的汽车一定有校验位；其他汽车可能没有。",
   "idCheckVinOk": "这符合 VIN 格式和校验位。",
   "idCheckShortLicence": "作为这个国家 ({country}) 的驾驶证号码太短：{count}/{expected}。请检查是否少了数字或字母。",
-  "idCheckLongLicence": "作为这个国家 ({country}) 的驾驶证号码太长：{count}/{expected}。请检查是否多了数字或字母。"
+  "idCheckLongLicence": "作为这个国家 ({country}) 的驾驶证号码太长：{count}/{expected}。请检查是否多了数字或字母。",
+  "supportShotTitle": "要添加截图吗？",
+  "supportShotBody": "截图能帮助客服看到问题。请确认截图中没有证件号码、密码或银行信息。",
+  "supportShotAdd": "添加截图",
+  "supportShotSkip": "不加截图发送",
+  "supportShotUnusable": "这张截图无法使用。请换一张，或不加截图发送。"
 }

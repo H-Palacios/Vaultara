@@ -4339,7 +4339,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "記録が自動で更新されました",
+  "rolledTitleLocked": "ロックされた記録が自動で更新されました",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4500,5 +4500,10 @@
   "idCheckVinDigit": "チェックディジット (9 文字目) が合いません。北米向けの車には必ずありますが、それ以外にはない場合があります。",
   "idCheckVinOk": "VIN の形式とチェックディジットに合っています。",
   "idCheckShortLicence": "この国 ({country}) の運転免許証番号としては短すぎます: {expected} 文字中 {count} 文字。数字か文字が抜けていないか確認してください。",
-  "idCheckLongLicence": "この国 ({country}) の運転免許証番号としては長すぎます: {expected} 文字中 {count} 文字。余分な数字か文字がないか確認してください。"
+  "idCheckLongLicence": "この国 ({country}) の運転免許証番号としては長すぎます: {expected} 文字中 {count} 文字。余分な数字か文字がないか確認してください。",
+  "supportShotTitle": "スクリーンショットを追加しますか?",
+  "supportShotBody": "スクリーンショットがあるとサポートが問題を確認しやすくなります。身分証の番号、パスワード、銀行情報が写っていないか確認してください。",
+  "supportShotAdd": "スクリーンショットを追加",
+  "supportShotSkip": "追加せずに送信",
+  "supportShotUnusable": "このスクリーンショットは使えません。別のものを選ぶか、追加せずに送信してください。"
 }

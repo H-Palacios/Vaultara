@@ -4327,7 +4327,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Zapis se je podaljšal sam",
+  "rolledTitleLocked": "Zaklenjen zapis se je podaljšal sam",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4488,5 +4488,10 @@
   "idCheckVinDigit": "Kontrolna števka (9. znak) se ne ujema. Avtomobili za Severno Ameriko jo imajo vedno, drugi morda ne.",
   "idCheckVinOk": "To se ujema z obliko VIN in njegovo kontrolno števko.",
   "idCheckShortLicence": "Prekratko za številko vozniškega dovoljenja iz te države ({country}): {count} od {expected}. Preverite, ali manjka števka ali črka.",
-  "idCheckLongLicence": "Predolgo za številko vozniškega dovoljenja iz te države ({country}): {count} od {expected}. Preverite, ali je števka ali črka odveč."
+  "idCheckLongLicence": "Predolgo za številko vozniškega dovoljenja iz te države ({country}): {count} od {expected}. Preverite, ali je števka ali črka odveč.",
+  "supportShotTitle": "Dodam posnetek zaslona?",
+  "supportShotBody": "Posnetek zaslona podpori pomaga videti težavo. Preverite, da ne prikazuje številk dokumentov, gesel ali bančnih podatkov.",
+  "supportShotAdd": "Dodaj posnetek",
+  "supportShotSkip": "Pošlji brez",
+  "supportShotUnusable": "Tega posnetka ni mogoče uporabiti. Poskusite z drugim ali pošljite brez."
 }

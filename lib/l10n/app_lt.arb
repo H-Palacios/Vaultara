@@ -4345,7 +4345,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Įrašas atsinaujino pats",
+  "rolledTitleLocked": "Užrakintas įrašas atsinaujino pats",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4506,5 +4506,10 @@
   "idCheckVinDigit": "Kontrolinis skaitmuo (9-asis simbolis) nesutampa. Šiaurės Amerikai pagaminti automobiliai jį turi visada; kiti gali neturėti.",
   "idCheckVinOk": "Tai atitinka VIN formatą ir jo kontrolinį skaitmenį.",
   "idCheckShortLicence": "Per trumpas šios šalies vairuotojo pažymėjimo numeriui ({country}): {count} iš {expected}. Patikrink, ar netrūksta skaitmens ar raidės.",
-  "idCheckLongLicence": "Per ilgas šios šalies vairuotojo pažymėjimo numeriui ({country}): {count} iš {expected}. Patikrink, ar nėra papildomo skaitmens ar raidės."
+  "idCheckLongLicence": "Per ilgas šios šalies vairuotojo pažymėjimo numeriui ({country}): {count} iš {expected}. Patikrink, ar nėra papildomo skaitmens ar raidės.",
+  "supportShotTitle": "Pridėti ekrano kopiją?",
+  "supportShotBody": "Ekrano kopija padeda pagalbos komandai pamatyti problemą. Patikrinkite, ar joje nematyti asmens kodų, slaptažodžių ar banko duomenų.",
+  "supportShotAdd": "Pridėti ekrano kopiją",
+  "supportShotSkip": "Siųsti be jos",
+  "supportShotUnusable": "Šios ekrano kopijos negalima naudoti. Pabandykite kitą arba siųskite be jos."
 }

@@ -10612,7 +10612,7 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
-  String get rolledTitleLocked => 'ჩანაწერი თავად განახლდა';
+  String get rolledTitleLocked => 'ჩაკეტილი ჩანაწერი თავად განახლდა';
 
   @override
   String get digestGroupedSubtitle => 'ერთი დღის შეხსენებები ერთ შეტყობინებად მოდის შეხსენების დროს. ხვალ, დღეს ვადაგასული ან უკვე ვადაგასული ჩანაწერები კვლავ ცალკე მოდის.';
@@ -10966,4 +10966,19 @@ class AppLocalizationsKa extends AppLocalizations {
   String idCheckLongLicence(String country, String count, String expected) {
     return 'ზედმეტად გრძელია ამ ქვეყნის მართვის მოწმობის ნომრისთვის ($country): $count/$expected. შეამოწმეთ, ხომ არ არის ზედმეტი ციფრი ან ასო.';
   }
+
+  @override
+  String get supportShotTitle => 'დავამატოთ ეკრანის ანაბეჭდი?';
+
+  @override
+  String get supportShotBody => 'ეკრანის ანაბეჭდი მხარდაჭერას პრობლემის დანახვაში ეხმარება. შეამოწმეთ, რომ მასზე არ ჩანდეს პირადი ნომრები, პაროლები ან საბანკო მონაცემები.';
+
+  @override
+  String get supportShotAdd => 'ანაბეჭდის დამატება';
+
+  @override
+  String get supportShotSkip => 'გაგზავნა მის გარეშე';
+
+  @override
+  String get supportShotUnusable => 'ამ ანაბეჭდის გამოყენება შეუძლებელია. სცადეთ სხვა ან გაგზავნეთ მის გარეშე.';
 }

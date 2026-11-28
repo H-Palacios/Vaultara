@@ -4492,7 +4492,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "Kirje uuenes ise",
+  "rolledTitleLocked": "Lukustatud kirje uuenes ise",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4653,5 +4653,10 @@
   "idCheckVinDigit": "Kontrollmärk (9. märk) ei klapi. Põhja-Ameerika jaoks tehtud autodel on see alati; teistel ei pruugi olla.",
   "idCheckVinOk": "See vastab VIN-vormingule ja selle kontrollmärgile.",
   "idCheckShortLicence": "Selle riigi juhiloa numbri jaoks liiga lühike ({country}): {count}/{expected}. Kontrolli, kas mõni number või täht puudub.",
-  "idCheckLongLicence": "Selle riigi juhiloa numbri jaoks liiga pikk ({country}): {count}/{expected}. Kontrolli, kas mõni number või täht on üleliigne."
+  "idCheckLongLicence": "Selle riigi juhiloa numbri jaoks liiga pikk ({country}): {count}/{expected}. Kontrolli, kas mõni number või täht on üleliigne.",
+  "supportShotTitle": "Kas lisada ekraanipilt?",
+  "supportShotBody": "Ekraanipilt aitab toel probleemi näha. Kontrolli, et sellel ei oleks isikukoode, paroole ega pangaandmeid.",
+  "supportShotAdd": "Lisa ekraanipilt",
+  "supportShotSkip": "Saada ilma",
+  "supportShotUnusable": "Seda ekraanipilti ei saa kasutada. Proovi teist või saada ilma."
 }

@@ -4327,7 +4327,7 @@
   "@rolledTitle": {
     "description": "rolledTitle"
   },
-  "rolledTitleLocked": "වාර්තාවක් තමන්ම අලුත් විය",
+  "rolledTitleLocked": "අගුළු දමා ඇති වාර්තාවක් තමන්ම අලුත් විය",
   "@rolledTitleLocked": {
     "description": "rolledTitleLocked"
   },
@@ -4488,5 +4488,10 @@
   "idCheckVinDigit": "පරීක්ෂණ අක්ෂරය (9 වැන්න) නොගැළපේ. උතුරු ඇමරිකාවට සෑදූ මෝටර් රථවල එය සැමවිටම ඇත; අනෙක්වල නොතිබිය හැක.",
   "idCheckVinOk": "මෙය VIN ආකෘතියට සහ එහි පරීක්ෂණ අක්ෂරයට ගැළපේ.",
   "idCheckShortLicence": "මෙම රටේ රියදුරු බලපත්‍ර අංකයකට කෙටි වැඩියි ({country}): {expected} න් {count}. ඉලක්කමක් හෝ අකුරක් අඩු දැයි බලන්න.",
-  "idCheckLongLicence": "මෙම රටේ රියදුරු බලපත්‍ර අංකයකට දිග වැඩියි ({country}): {expected} න් {count}. අමතර ඉලක්කමක් හෝ අකුරක් ඇති දැයි බලන්න."
+  "idCheckLongLicence": "මෙම රටේ රියදුරු බලපත්‍ර අංකයකට දිග වැඩියි ({country}): {expected} න් {count}. අමතර ඉලක්කමක් හෝ අකුරක් ඇති දැයි බලන්න.",
+  "supportShotTitle": "තිර රුවක් එක් කරන්නද?",
+  "supportShotBody": "තිර රුවක් සහාය කණ්ඩායමට ගැටලුව දැකීමට උදව් කරයි. එහි හැඳුනුම් අංක, මුරපද හෝ බැංකු විස්තර නොපෙන්වන බව තහවුරු කරන්න.",
+  "supportShotAdd": "තිර රුව එක් කරන්න",
+  "supportShotSkip": "එය නැතිව යවන්න",
+  "supportShotUnusable": "මෙම තිර රුව භාවිත කළ නොහැක. වෙනත් එකක් උත්සාහ කරන්න, නැතහොත් එය නැතිව යවන්න."
 }
